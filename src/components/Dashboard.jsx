@@ -73,11 +73,6 @@ const Dashboard = ({ students, onAddStudent }) => {
         </div>
 
         <div className="app-page__actions">
-          <div className="app-page__actions-row" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
-            <button className="app-icon-button" onClick={logout} title="Sign Out">
-              <LogOut size={20} />
-            </button>
-          </div>
           <div className="app-input">
             <Search size={18} />
             <input type="text" placeholder="Search..." />
