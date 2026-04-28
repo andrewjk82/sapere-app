@@ -12,8 +12,16 @@ const Settings = () => {
   const [loading, setLoading] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [profile, setProfile] = useState(null);
+  const [editData, setEditData] = useState({
+    firstName: '',
+    lastName: '',
+    phone: '',
+    address: '',
+    school: '',
+    year: ''
+  });
 
-  const displayName = useMemo(() => user?.displayName || user?.email?.split('@')[0] || 'Account', [user]);
+  const displayName = useMemo(() => profile?.firstName ? `${profile.firstName} ${profile.lastName}` : (user?.displayName || user?.email?.split('@')[0] || 'Account'), [profile, user]);
   const fallbackUrl = useMemo(() => {
     if (user?.photoURL) return user.photoURL;
     return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || 'sapere')}`;
@@ -27,7 +35,18 @@ const Settings = () => {
     if (!user?.uid) return undefined;
     const ref = doc(db, 'users', user.uid);
     return onSnapshot(ref, (snap) => {
-      setProfile(snap.exists() ? snap.data() : null);
+      const data = snap.exists() ? snap.data() : null;
+      setProfile(data);
+      if (data) {
+        setEditData({
+          firstName: data.firstName || '',
+          lastName: data.lastName || '',
+          phone: data.phone || '',
+          address: data.address || '',
+          school: data.school || '',
+          year: data.year || ''
+        });
+      }
     });
   }, [user?.uid]);
 
@@ -41,6 +60,26 @@ const Settings = () => {
       setMessage('Password reset email sent.');
     } catch (e) {
       setError(e?.message || 'Could not send reset email.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSaveProfile = async () => {
+    if (!user?.uid) return;
+    try {
+      setError('');
+      setMessage('');
+      setLoading(true);
+      await setDoc(doc(db, 'users', user.uid), {
+        ...editData,
+        displayName: `${editData.firstName} ${editData.lastName}`,
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+      setMessage('Profile updated successfully!');
+    } catch (e) {
+      setError('Failed to update profile.');
+      console.error(e);
     } finally {
       setLoading(false);
     }
@@ -66,7 +105,7 @@ const Settings = () => {
       <div className="app-grid app-grid--content">
         <section className="app-panel page-card">
           <div className="page-card__header">
-            <h3>Profile</h3>
+            <h3>Profile & Personal Info</h3>
             {isAdmin && (
               <span className="page-pill">
                 <ShieldCheck size={14} />
@@ -75,9 +114,10 @@ const Settings = () => {
             )}
           </div>
 
-          <div className="settings-profile">
+          <div className="settings-profile" style={{ marginBottom: '2rem' }}>
             <div className="settings-profile__avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
               <img src={avatarUrl} alt="Avatar" />
+              <div className="avatar-overlay">Change</div>
             </div>
             <div>
               <strong>{displayName}</strong>
@@ -85,23 +125,76 @@ const Settings = () => {
             </div>
           </div>
 
-          <div className="settings-list">
-            <div className="settings-item">
-              <div className="settings-item__icon"><User size={18} /></div>
-              <div className="settings-item__main">
-                <strong>Name</strong>
-                <p className="settings-muted">Managed by your sign-in provider.</p>
-              </div>
-              <span className="page-pill">Read-only</span>
+          <div className="app-form-grid">
+            <div className="app-form-field">
+              <label>Given Name</label>
+              <input 
+                type="text" 
+                value={editData.firstName} 
+                onChange={(e) => setEditData({...editData, firstName: e.target.value})} 
+                placeholder="First name"
+              />
+            </div>
+            <div className="app-form-field">
+              <label>Surname</label>
+              <input 
+                type="text" 
+                value={editData.lastName} 
+                onChange={(e) => setEditData({...editData, lastName: e.target.value})} 
+                placeholder="Last name"
+              />
+            </div>
+            <div className="app-form-field">
+              <label>Phone Number</label>
+              <input 
+                type="text" 
+                value={editData.phone} 
+                onChange={(e) => setEditData({...editData, phone: e.target.value})} 
+                placeholder="04xx xxx xxx"
+              />
+            </div>
+            
+            {profile?.role === 'student' && (
+              <>
+                <div className="app-form-field">
+                  <label>Year / Grade</label>
+                  <input 
+                    type="text" 
+                    value={editData.year} 
+                    onChange={(e) => setEditData({...editData, year: e.target.value})} 
+                    placeholder="e.g. Year 10"
+                  />
+                </div>
+                <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+                  <label>School Name</label>
+                  <input 
+                    type="text" 
+                    value={editData.school} 
+                    onChange={(e) => setEditData({...editData, school: e.target.value})} 
+                    placeholder="e.g. Central High"
+                  />
+                </div>
+              </>
+            )}
+
+            <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+              <label>Home Address</label>
+              <input 
+                type="text" 
+                value={editData.address} 
+                onChange={(e) => setEditData({...editData, address: e.target.value})} 
+                placeholder="Full street address"
+              />
             </div>
 
-            <div className="settings-item">
-              <div className="settings-item__icon"><Mail size={18} /></div>
-              <div className="settings-item__main">
-                <strong>Email</strong>
-                <p className="settings-muted">Used for account verification and notifications.</p>
-              </div>
-              <span className="page-pill">Read-only</span>
+            <div style={{ marginTop: '1rem', gridColumn: 'span 2' }}>
+              <button 
+                className="app-button app-button--primary" 
+                onClick={handleSaveProfile}
+                disabled={loading}
+              >
+                {loading ? 'Saving...' : 'Save Changes'}
+              </button>
             </div>
           </div>
         </section>
@@ -117,10 +210,11 @@ const Settings = () => {
             </div>
 
             <div className="settings-actions">
-              <button className="app-button app-button--secondary" onClick={handleResetPassword} disabled={loading}>
+              <button className="app-button app-button--secondary" onClick={handleResetPassword} disabled={loading} style={{ width: '100%' }}>
                 Send password reset email
               </button>
-              <button className="app-button app-button--primary" onClick={logout} disabled={loading}>
+              <div style={{ height: '8px' }} />
+              <button className="app-button app-button--primary" onClick={logout} disabled={loading} style={{ width: '100%' }}>
                 <LogOut size={18} />
                 Sign out
               </button>
@@ -135,8 +229,8 @@ const Settings = () => {
                 Coming soon
               </span>
             </div>
-            <div className="app-empty">
-              Next step: session reminders, student follow-ups, and weekly summaries — all aligned to the same premium theme.
+            <div className="app-empty" style={{ fontSize: '0.82rem' }}>
+              Next step: session reminders, student follow-ups, and weekly summaries.
             </div>
           </section>
         </aside>
