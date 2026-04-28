@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Lock, AlertCircle, ArrowRight, CheckCircle2, User, Users, GraduationCap, School, Phone, MapPin, Plus, Trash2, Globe } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, setDoc } from 'firebase/firestore';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
 
 const Signup = ({ onToggleMode }) => {
@@ -96,12 +96,12 @@ const Signup = ({ onToggleMode }) => {
       const userData = {
         uid: user.uid,
         email: user.email,
-        role,
+        role: role || 'student',
         firstName: profileData.firstName,
         lastName: profileData.lastName,
         displayName: `${profileData.firstName} ${profileData.lastName}`,
-        createdAt: new Date().toISOString(),
-        ...(role === 'student' ? {
+        updatedAt: serverTimestamp(),
+        ...(role === 'student' || !role ? {
           year: profileData.year,
           school: profileData.school,
           phone: profileData.phone,
@@ -112,8 +112,11 @@ const Signup = ({ onToggleMode }) => {
         })
       };
 
-      // 3. Save to Firestore
-      await setDoc(doc(db, 'users', user.uid), userData);
+      // Add createdAt only if it doesn't exist (handled by Firestore logic via merge if needed)
+      userData.createdAt = serverTimestamp();
+
+      // 3. Save to Firestore with merge: true to protect data
+      await setDoc(doc(db, 'users', user.uid), userData, { merge: true });
 
       setMessage('Welcome to Sapere! Your profile has been created.');
     } catch (err) {
