@@ -1223,7 +1223,7 @@
     width: 100%;
   }
 
-  .app-page__actions > * {
+  .app-page__actions > *:not(.app-icon-button):not(.app-avatar) {
     width: 100%;
   }
 
