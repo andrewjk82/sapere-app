@@ -67,7 +67,7 @@ const Dashboard = ({ students, onAddStudent }) => {
           )}
         </div>
         <div className="app-page__actions">
-          <div className="app-page__actions-row">
+          <div className="app-page__actions-row" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
             <button className="app-icon-button">
               <Bell size={20} />
             </button>
