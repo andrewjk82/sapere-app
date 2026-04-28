@@ -79,13 +79,13 @@ const Dashboard = ({ students, onAddStudent }) => {
               <div className="vision-card__content" style={{ zIndex: 1 }}>
                 <p style={{ 
                   fontSize: '1.4rem', 
-                  fontWeight: 600, 
+                  fontWeight: 800, 
                   opacity: 1, 
                   textTransform: 'uppercase', 
                   letterSpacing: '0.12em', 
                   marginBottom: '12px', 
                   color: 'white',
-                  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 2px 10px rgba(0,0,0,0.5)' 
+                  textShadow: '-0.8px -0.8px 0 #000, 0.8px -0.8px 0 #000, -0.8px 0.8px 0 #000, 0.8px 0.8px 0 #000, 0 2px 10px rgba(0,0,0,0.4)' 
                 }}>
                   {getGreeting()} 👋
                 </p>
@@ -95,7 +95,8 @@ const Dashboard = ({ students, onAddStudent }) => {
                   margin: 0, 
                   lineHeight: 1.0, 
                   color: '#1a1c2c',
-                  textShadow: '-1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff, 1.5px 1.5px 0 #fff, 0 4px 20px rgba(0,0,0,0.3)' 
+                  letterSpacing: '-0.02em',
+                  textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 4px 20px rgba(0,0,0,0.2)' 
                 }}>
                   {userName}
                 </h1>
