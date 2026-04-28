@@ -5,7 +5,7 @@ import { studentService } from '../services/studentService';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
-const StudentList = ({ students, onAddStudent }) => {
+const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [activeStudent, setActiveStudent] = useState(null);
@@ -122,10 +122,7 @@ const StudentList = ({ students, onAddStudent }) => {
                 </span>
                 <button 
                   className="app-button app-button--secondary app-button--sm"
-                  onClick={() => {
-                    setProfileStudent(student);
-                    setProfileOpen(true);
-                  }}
+                  onClick={() => onSelectStudent(student.id)}
                 >
                   View Profile
                 </button>

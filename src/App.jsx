@@ -8,6 +8,7 @@ import StudentList from './components/StudentList';
 import Schedule from './components/Schedule';
 import Curriculum from './components/Curriculum';
 import Settings from './components/Settings';
+import StudentDetail from './components/StudentDetail';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
@@ -18,6 +19,7 @@ function App() {
   const { user, isAdmin, logout } = useAuth();
   const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
   const [activeTab, setActiveTab] = useState('Dashboard');
+  const [selectedStudentId, setSelectedStudentId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState('login');
   
@@ -164,11 +166,26 @@ function App() {
       );
     }
 
+    if (selectedStudentId) {
+      return (
+        <StudentDetail 
+          studentId={selectedStudentId} 
+          onBack={() => setSelectedStudentId(null)} 
+        />
+      );
+    }
+
     switch (activeTab) {
       case 'Dashboard':
         return <Dashboard students={students} onAddStudent={() => setIsModalOpen(true)} />;
       case 'Students':
-        return <StudentList students={students} onAddStudent={() => setIsModalOpen(true)} />;
+        return (
+          <StudentList 
+            students={students} 
+            onAddStudent={() => setIsModalOpen(true)} 
+            onSelectStudent={(id) => setSelectedStudentId(id)}
+          />
+        );
       case 'Schedule':
         return <Schedule />;
       case 'Curriculum':
