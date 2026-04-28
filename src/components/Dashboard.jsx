@@ -6,7 +6,7 @@ import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 
 const Dashboard = ({ students, onAddStudent }) => {
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
   const userName = user?.displayName || user?.email?.split('@')[0] || 'Andrew';
 
   // Calculate dynamic stats
@@ -30,12 +30,16 @@ const Dashboard = ({ students, onAddStudent }) => {
       >
         <div className="app-page__title">
           <h2>Welcome back, {userName}</h2>
-          <p>You have {totalStudents} students registered and ready for review.</p>
+          {isAdmin ? (
+            <p>You have {totalStudents} students registered and ready for review.</p>
+          ) : (
+            <p>Ready to continue your learning journey today?</p>
+          )}
         </div>
         <div className="app-page__actions">
           <div className="app-input">
             <Search size={18} />
-            <input type="text" placeholder="Search students..." />
+            <input type="text" placeholder="Search..." />
           </div>
           <button className="app-icon-button">
             <Bell size={20} />
@@ -52,67 +56,83 @@ const Dashboard = ({ students, onAddStudent }) => {
         transition={{ duration: 0.4 }}
         className="app-page"
       >
-        <div className="app-grid app-grid--stats">
-          {displayStats.map((stat, index) => (
-            <StatCard key={index} {...stat} iconName={stat.icon} />
-          ))}
-        </div>
+        {isAdmin && (
+          <div className="app-grid app-grid--stats">
+            {displayStats.map((stat, index) => (
+              <StatCard key={index} {...stat} iconName={stat.icon} />
+            ))}
+          </div>
+        )}
 
         <div className="app-grid app-grid--content">
-          <div className="app-panel dashboard-card">
-            <div className="dashboard-card__header">
-              <h3>Recent Students</h3>
-              <button>View all</button>
-            </div>
-            <div className="activity-list">
-              {students.length > 0 ? (
-                students.slice(0, 5).map(student => (
-                  <StudentRow key={student.id} {...student} />
-                ))
-              ) : (
-                <div className="app-empty">
-                  No students added yet.
+          {isAdmin ? (
+            <>
+              <div className="app-panel dashboard-card">
+                <div className="dashboard-card__header">
+                  <h3>Recent Students</h3>
+                  <button>View all</button>
                 </div>
-              )}
-            </div>
-          </div>
-
-          <div className="app-page">
-            <div className="app-panel dashboard-card">
-              <div className="dashboard-card__header">
-                <h3>Quick Actions</h3>
+                <div className="activity-list">
+                  {students.length > 0 ? (
+                    students.slice(0, 5).map(student => (
+                      <StudentRow key={student.id} {...student} />
+                    ))
+                  ) : (
+                    <div className="app-empty">
+                      No students added yet.
+                    </div>
+                  )}
+                </div>
               </div>
+
               <div className="app-page">
-                <button 
-                  onClick={onAddStudent}
-                  className="app-button app-button--primary"
-                >
-                  <Plus size={20} />
-                  Add New Student
-                </button>
-                <button className="app-button app-button--secondary">Schedule Lesson</button>
-                <button className="app-button app-button--secondary">Record Progress</button>
-              </div>
-            </div>
-
-            <div className="app-panel dashboard-card">
-              <div className="dashboard-card__header">
-                <h3>Recent Activity</h3>
-              </div>
-              <div className="activity-list">
-                {students.slice(0, 3).map(s => (
-                  <div key={s.id} className="activity-item">
-                    <strong>New student: {s.name}</strong>
-                    <p>{s.level} • {s.subject}</p>
+                <div className="app-panel dashboard-card">
+                  <div className="dashboard-card__header">
+                    <h3>Quick Actions</h3>
                   </div>
-                ))}
-                {students.length === 0 && <div className="app-empty">No recent activity.</div>}
+                  <div className="app-page">
+                    <button 
+                      onClick={onAddStudent}
+                      className="app-button app-button--primary"
+                    >
+                      <Plus size={20} />
+                      Add New Student
+                    </button>
+                    <button className="app-button app-button--secondary">Schedule Lesson</button>
+                    <button className="app-button app-button--secondary">Record Progress</button>
+                  </div>
+                </div>
+
+                <div className="app-panel dashboard-card">
+                  <div className="dashboard-card__header">
+                    <h3>Recent Activity</h3>
+                  </div>
+                  <div className="activity-list">
+                    {students.slice(0, 3).map(s => (
+                      <div key={s.id} className="activity-item">
+                        <strong>New student: {s.name}</strong>
+                        <p>{s.level} • {s.subject}</p>
+                      </div>
+                    ))}
+                    {students.length === 0 && <div className="app-empty">No recent activity.</div>}
+                  </div>
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2' }}>
+              <div className="dashboard-card__header">
+                <h3>My Learning Status</h3>
+              </div>
+              <div className="app-empty">
+                Your personalized learning dashboard is being prepared. Stay tuned!
               </div>
             </div>
-          </div>
+          )}
         </div>
       </motion.div>
     </div>
+
   );
 };
 
