@@ -34,22 +34,67 @@ export const studentService = {
   },
 
   // 실시간 학생 목록 구독
-  subscribeToStudents(tutorId, callback, onError) {
-    const q = query(
-      collection(db, COLLECTION_NAME), 
-      where("tutorId", "==", tutorId)
-    );
+  subscribeToStudents(tutorId, callback, onError, isAdmin = false) {
+    // 1. Manual students query
+    const studentsRef = collection(db, COLLECTION_NAME);
+    const manualQuery = query(studentsRef, where("tutorId", "==", tutorId));
 
-    return onSnapshot(q, (snapshot) => {
-      const students = snapshot.docs.map(doc => ({
+    // For combined results
+    let manualStudents = [];
+    let registeredStudents = [];
+
+    const updateAll = () => {
+      // Merge and normalize
+      const combined = [
+        ...manualStudents,
+        ...registeredStudents
+      ].sort((a, b) => {
+        const nameA = a.name || a.displayName || "";
+        const nameB = b.name || b.displayName || "";
+        return nameA.localeCompare(nameB);
+      });
+      callback(combined);
+    };
+
+    // Unsubscribe from manual students
+    const unsubManual = onSnapshot(manualQuery, (snapshot) => {
+      manualStudents = snapshot.docs.map(doc => ({
         id: doc.id,
+        source: 'manual',
         ...doc.data()
       }));
-      callback(students);
-    }, (error) => {
-      console.error("Error subscribing to students: ", error);
-      if (typeof onError === 'function') onError(error);
-    });
+      updateAll();
+    }, onError);
+
+    // 2. If admin, also subscribe to registered student users
+    let unsubUsers = () => {};
+    if (isAdmin) {
+      const usersRef = collection(db, "users");
+      const usersQuery = query(usersRef, where("role", "==", "student"));
+      
+      unsubUsers = onSnapshot(usersQuery, (snapshot) => {
+        registeredStudents = snapshot.docs.map(doc => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            source: 'registered',
+            name: data.displayName || `${data.firstName} ${data.lastName}` || data.email,
+            level: data.year || "Year ?",
+            subject: "Registered Student", // Or from a specific field if available
+            status: "Active",
+            email: data.email,
+            ...data
+          };
+        });
+        updateAll();
+      }, onError);
+    }
+
+    // Return a function to unsubscribe from both
+    return () => {
+      unsubManual();
+      unsubUsers();
+    };
   },
 
   // 학생 정보 수정

@@ -51,10 +51,11 @@ function App() {
           );
           console.error(err);
         },
+        isAdmin
       );
       return () => unsubscribe();
     }
-  }, [user]);
+  }, [user, isAdmin]);
 
   const handleAddStudent = async () => {
     if (!newStudent.name || !newStudent.subject) return;
