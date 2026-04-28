@@ -62,26 +62,43 @@ const StudentList = ({ students, onAddStudent }) => {
               <div className="student-card__top">
                 <div className="student-card__main">
                   <div
-                    className="student-card__avatar clickable-avatar"
-                    onClick={() => {
-                      setActiveStudent(student);
-                      setAvatarOpen(true);
+                    className="student-card__avatar"
+                    style={{ 
+                      width: '80px', 
+                      height: '80px', 
+                      borderRadius: '20px', 
+                      overflow: 'hidden', 
+                      background: '#f1f5f9',
+                      border: '1px solid rgba(0,0,0,0.05)'
                     }}
-                    role="button"
-                    tabIndex={0}
                   >
-                    {student.avatarUrl ? (
-                      <img src={student.avatarUrl} alt={`${student.name} avatar`} style={{ width: '92%', height: '92%', objectFit: 'contain' }} />
-                    ) : (
-                      student.name?.charAt(0) || 'S'
-                    )}
+                    <img 
+                      src={student.dreamImageUrl || student.avatarUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=200'} 
+                      alt={student.name} 
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                    />
                   </div>
-                  <div>
-                    <h3>{student.name}</h3>
-                    <p className="student-card__meta">{student.level} • {student.subject}</p>
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1a1c2c', margin: '0 0 4px 0' }}>{student.name}</h3>
+                    <p className="student-card__meta" style={{ marginBottom: '12px' }}>{student.level} • {student.school || student.subject}</p>
+                    
+                    <div className="student-card__progress-wrapper" style={{ 
+                      background: 'rgba(99, 102, 241, 0.05)', 
+                      padding: '8px 16px', 
+                      borderRadius: '12px', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      gap: '12px',
+                      border: '1px solid rgba(99, 102, 241, 0.1)'
+                    }}>
+                      <div className="student-card__progress-track" style={{ flex: 1, height: '8px', background: 'rgba(0,0,0,0.05)', borderRadius: '4px', overflow: 'hidden' }}>
+                        <div className="student-card__progress-fill" style={{ width: '54%', height: '100%', background: '#a78bfa', borderRadius: '4px' }}></div>
+                      </div>
+                      <span style={{ fontWeight: 800, color: '#475569', fontSize: '0.9rem' }}>54%</span>
+                    </div>
                   </div>
                 </div>
-                <button className="student-card__menu">
+                <button className="app-icon-button" style={{ alignSelf: 'flex-start' }}>
                   <MoreVertical size={20} />
                 </button>
               </div>
