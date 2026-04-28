@@ -58,11 +58,29 @@
   padding: 32px;
 }
 
+.auth-copy--centered {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.auth-copy--centered h1 {
+  margin-bottom: 0;
+}
+
+/* Center the brand when the copy is centered */
+.auth-copy--centered ~ .auth-form,
+.auth-copy--centered ~ .auth-divider,
+.auth-copy--centered ~ .auth-social,
+.auth-copy--centered ~ .auth-footer {
+  /* Ensure form elements are also tidy */
+}
+
 .auth-brand {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .auth-brand__logo {
@@ -80,6 +98,7 @@
 .auth-brand__name,
 .auth-brand__tag {
   margin: 0;
+  text-align: left; /* Keep text left-aligned relative to logo */
 }
 
 .auth-brand__name {
@@ -91,10 +110,6 @@
 .auth-brand__tag {
   font-size: 0.83rem;
   color: #8677a5;
-}
-
-.auth-copy {
-  margin-bottom: 28px;
 }
 
 .auth-eyebrow {

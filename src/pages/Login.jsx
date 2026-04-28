@@ -36,9 +36,9 @@ const Login = ({ onToggleMode }) => {
 
   return (
     <AuthLayout
-      eyebrow="Welcome back"
-      title="Sign in to your tutor suite."
-      description="A quieter, cleaner workspace for managing students, sessions, and progress."
+      eyebrow=""
+      title="Sign In"
+      description=""
       sideLabel="Luxury made simple"
       sideTitle="Run your tutoring business with calm confidence."
       sideDescription="Soft surfaces, thoughtful structure, and the clarity to focus on every student."

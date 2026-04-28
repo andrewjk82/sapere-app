@@ -36,10 +36,10 @@ const AuthLayout = ({
             </div>
           </div>
 
-          <div className="auth-copy">
-            <span className="auth-eyebrow">{eyebrow}</span>
+          <div className="auth-copy auth-copy--centered">
+            {eyebrow && <span className="auth-eyebrow">{eyebrow}</span>}
             <h1>{title}</h1>
-            <p>{description}</p>
+            {description && <p>{description}</p>}
           </div>
 
           {children}
