@@ -72,28 +72,20 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
       </nav>
 
       <div className="app-sidebar__footer">
-        <div className="app-panel app-sidebar__profile">
-          <div className="app-sidebar__profile-top">
-            <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
+        <div className="app-panel app-sidebar__profile" style={{ padding: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+            <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0} style={{ width: '42px', height: '42px' }}>
               <img src={avatarUrl} alt="Avatar" />
             </div>
-            <div>
-              <p className="app-sidebar__profile-name">{profile?.firstName || user?.displayName || user?.email?.split('@')[0]}</p>
-              {isAdmin && (
-                <span className="app-sidebar__profile-meta">
-                  <ShieldCheck size={10} />
-                  Admin
-                </span>
-              )}
-            </div>
+            <button 
+              onClick={logout}
+              className="app-icon-button"
+              style={{ width: '42px', height: '42px', borderRadius: '12px' }}
+              title="Sign Out"
+            >
+              <LogOut size={18} />
+            </button>
           </div>
-          <button 
-            onClick={logout}
-            className="app-link-button"
-          >
-            <LogOut size={14} />
-            <span>Sign Out</span>
-          </button>
         </div>
       </div>
 
