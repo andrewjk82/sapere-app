@@ -65,8 +65,8 @@ const AuthLayout = ({
             <div className="auth-showcase__panel-header">
               <div className="auth-showcase__avatar" />
               <div>
-                <strong>Elegant workflow</strong>
-                <span>Built for focused tutoring teams</span>
+                <strong>Daily Academic Habit</strong>
+                <span>Empowering consistent growth</span>
               </div>
             </div>
 

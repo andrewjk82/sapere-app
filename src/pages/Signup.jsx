@@ -106,17 +106,17 @@ const Signup = ({ onToggleMode }) => {
         step === 2 ? "Enter your email and a secure password." :
         "Tell us a bit more to complete your setup."
       }
-      sideLabel="Role-based Workspace"
-      sideTitle={role === 'parent' ? "Tailored for Parents" : "Built for Students"}
-      sideDescription="A smart, unified space that grows with every learner's journey."
+      sideLabel="Consistency is Key"
+      sideTitle="Build a powerful academic routine, every day."
+      sideDescription="From real-time schedule tracking to personalized daily practice, Sapere turns consistency into academic excellence."
       sideStats={[
-        { value: 'Smart', label: 'role detection' },
-        { value: 'Multi', label: 'student support' },
+        { value: 'Daily', label: 'problem sets' },
+        { value: 'Sync', label: 'schedule updates' },
       ]}
       sidePoints={[
-        'Personalized dashboard based on your role',
-        'Real-time updates for parents with multiple children',
-        'Academic tracking and seamless planning',
+        'Stay on top of tasks with an integrated calendar',
+        'Master concepts through consistent daily practice',
+        'Cultivate a routine that leads to academic excellence',
       ]}
     >
       {error && (

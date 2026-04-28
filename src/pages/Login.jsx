@@ -75,17 +75,17 @@ const Login = ({ onToggleMode }) => {
       eyebrow=""
       title="Sign in"
       description=""
-      sideLabel="Luxury made simple"
-      sideTitle="Run your tutoring business with calm confidence."
-      sideDescription="Soft surfaces, thoughtful structure, and the clarity to focus on every student."
+      sideLabel="Academic Growth"
+      sideTitle="Nurture steady progress through daily habits."
+      sideDescription="Our platform ensures children stay engaged with their studies through structured schedules and rewarding daily challenges."
       sideStats={[
-        { value: '24/7', label: 'smooth access' },
-        { value: '1 hub', label: 'for students and planning' },
+        { value: 'Habit', label: 'forming tasks' },
+        { value: 'Smart', label: 'schedule tracking' },
       ]}
       sidePoints={[
-        'Track learner progress in one elegant dashboard',
-        'Keep class notes, schedules, and records in sync',
-        'Present a premium experience from the first login',
+        'Integrated schedule checking to never miss a lesson',
+        'Daily problem solving designed for long-term retention',
+        'Tools that help children build independent study habits',
       ]}
     >
       {error && (
