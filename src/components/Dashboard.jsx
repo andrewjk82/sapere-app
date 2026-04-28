@@ -91,6 +91,41 @@ const Dashboard = ({ students, onAddStudent }) => {
         transition={{ duration: 0.4 }}
         className="app-page"
       >
+        {!isAdmin && (
+          <div className="vision-card-wrapper" style={{ marginBottom: '24px' }}>
+            <div className="app-panel vision-card" style={{ 
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: '460px',
+              borderRadius: '36px',
+              position: 'relative',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-end',
+              padding: '48px',
+              color: 'white',
+              overflow: 'hidden',
+              boxShadow: '0 30px 70px rgba(0,0,0,0.25)',
+              border: 'none'
+            }}>
+              <div className="vision-card__content" style={{ zIndex: 1 }}>
+                <p style={{ fontSize: '1.4rem', fontWeight: 600, opacity: 0.95, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '12px', textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
+                  {getGreeting()} 👋
+                </p>
+                <h1 style={{ fontSize: '4.5rem', fontWeight: 900, margin: 0, lineHeight: 1.0, textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}>
+                  {userName}
+                </h1>
+                {profile?.dreamJob && (
+                  <div style={{ marginTop: '24px', padding: '10px 20px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)', borderRadius: '16px', display: 'inline-block', border: '1px solid rgba(255,255,255,0.2)' }}>
+                    <span style={{ fontWeight: 800, fontSize: '1.1rem' }}>FUTURE {profile.dreamJob.toUpperCase()}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
         {isAdmin && (
           <div className="app-grid app-grid--stats">
             {displayStats.map((stat, index) => (
