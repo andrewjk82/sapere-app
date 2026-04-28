@@ -1,14 +1,35 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { db } from '../firebase/config';
+import { doc, onSnapshot, setDoc } from 'firebase/firestore';
+import AvatarPickerModal from './AvatarPickerModal';
 
 const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [avatarOpen, setAvatarOpen] = useState(false);
+  const [profile, setProfile] = useState(null);
 
   const displayName = useMemo(() => user?.displayName || user?.email?.split('@')[0] || 'Account', [user]);
+  const fallbackUrl = useMemo(() => {
+    if (user?.photoURL) return user.photoURL;
+    return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || 'sapere')}`;
+  }, [user?.photoURL, user?.email]);
+
+  const avatarUrl = profile?.avatarUrl || (profile?.avatarStyle && profile?.avatarSeed
+    ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
+    : fallbackUrl);
+
+  useEffect(() => {
+    if (!user?.uid) return undefined;
+    const ref = doc(db, 'users', user.uid);
+    return onSnapshot(ref, (snap) => {
+      setProfile(snap.exists() ? snap.data() : null);
+    });
+  }, [user?.uid]);
 
   const handleResetPassword = async () => {
     if (!user?.email) return;
@@ -55,8 +76,8 @@ const Settings = () => {
           </div>
 
           <div className="settings-profile">
-            <div className="settings-profile__avatar">
-              <img src={user?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.email}`} alt="Avatar" />
+            <div className="settings-profile__avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
+              <img src={avatarUrl} alt="Avatar" />
             </div>
             <div>
               <strong>{displayName}</strong>
@@ -120,6 +141,24 @@ const Settings = () => {
           </section>
         </aside>
       </div>
+
+      <AvatarPickerModal
+        open={avatarOpen}
+        title="My Persona"
+        subtitle="Choose your face"
+        initialStyle={profile?.avatarStyle || 'avataaars'}
+        initialSeed={profile?.avatarSeed || (user?.email?.split('@')[0] ?? '')}
+        onClose={() => setAvatarOpen(false)}
+        onApply={async ({ avatarStyle, avatarSeed, avatarUrl: nextUrl }) => {
+          if (!user?.uid) return;
+          await setDoc(
+            doc(db, 'users', user.uid),
+            { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() },
+            { merge: true },
+          );
+          setAvatarOpen(false);
+        }}
+      />
     </div>
   );
 };

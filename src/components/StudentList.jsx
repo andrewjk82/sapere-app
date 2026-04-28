@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen } from 'lucide-react';
+import { studentService } from '../services/studentService';
+import AvatarPickerModal from './AvatarPickerModal';
 
 const StudentList = ({ students, onAddStudent }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [avatarOpen, setAvatarOpen] = useState(false);
+  const [activeStudent, setActiveStudent] = useState(null);
   
   const filteredStudents = students.filter(s => 
     s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -54,8 +58,20 @@ const StudentList = ({ students, onAddStudent }) => {
             >
               <div className="student-card__top">
                 <div className="student-card__main">
-                  <div className="student-card__avatar">
-                    {student.name?.charAt(0) || 'S'}
+                  <div
+                    className="student-card__avatar clickable-avatar"
+                    onClick={() => {
+                      setActiveStudent(student);
+                      setAvatarOpen(true);
+                    }}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    {student.avatarUrl ? (
+                      <img src={student.avatarUrl} alt={`${student.name} avatar`} style={{ width: '92%', height: '92%', objectFit: 'contain' }} />
+                    ) : (
+                      student.name?.charAt(0) || 'S'
+                    )}
                   </div>
                   <div>
                     <h3>{student.name}</h3>
@@ -94,6 +110,29 @@ const StudentList = ({ students, onAddStudent }) => {
           </div>
         )}
       </div>
+
+      <AvatarPickerModal
+        open={avatarOpen}
+        title={activeStudent ? `${activeStudent.name}'s Persona` : 'Student Persona'}
+        subtitle="Choose an avatar for this student"
+        initialStyle={activeStudent?.avatarStyle || 'avataaars'}
+        initialSeed={activeStudent?.avatarSeed || (activeStudent?.name?.split(' ')?.[0] ?? '')}
+        onClose={() => {
+          setAvatarOpen(false);
+          setActiveStudent(null);
+        }}
+        onApply={async ({ avatarStyle, avatarSeed, avatarUrl }) => {
+          if (!activeStudent?.id) return;
+          await studentService.updateStudent(activeStudent.id, {
+            avatarStyle,
+            avatarSeed,
+            avatarUrl,
+            updatedAt: new Date().toISOString(),
+          });
+          setAvatarOpen(false);
+          setActiveStudent(null);
+        }}
+      />
     </div>
   );
 };
