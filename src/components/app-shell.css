@@ -1206,25 +1206,40 @@
     border-radius: 14px;
   }
 
-  .app-sidebar__item span {
-    font-size: 0.7rem;
-    line-height: 1;
-  }
+.app-page__actions-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-  .app-page__header,
-  .app-page__actions,
-  .student-card__footer,
-  .student-row {
+/* Header actions wrap */
+.app-page__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .app-page__header {
     flex-direction: column;
     align-items: stretch;
   }
 
   .app-page__actions {
-    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
   }
 
-  .app-page__actions > *:not(.app-icon-button):not(.app-avatar) {
-    width: 100%;
+  .app-page__actions-row {
+    justify-content: flex-start;
+  }
+
+  .student-card__footer,
+  .student-row {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .app-grid--stats,

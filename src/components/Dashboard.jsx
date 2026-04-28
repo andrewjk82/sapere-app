@@ -67,19 +67,21 @@ const Dashboard = ({ students, onAddStudent }) => {
           )}
         </div>
         <div className="app-page__actions">
+          <div className="app-page__actions-row">
+            <button className="app-icon-button">
+              <Bell size={20} />
+            </button>
+            <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
+              <img src={avatarUrl} alt="Profile" />
+            </div>
+            <button className="app-icon-button" onClick={logout} title="Sign Out">
+              <LogOut size={20} />
+            </button>
+          </div>
           <div className="app-input">
             <Search size={18} />
             <input type="text" placeholder="Search..." />
           </div>
-          <button className="app-icon-button">
-            <Bell size={20} />
-          </button>
-          <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
-            <img src={avatarUrl} alt="Profile" />
-          </div>
-          <button className="app-icon-button" onClick={logout} title="Sign Out">
-            <LogOut size={20} />
-          </button>
         </div>
       </motion.header>
 
