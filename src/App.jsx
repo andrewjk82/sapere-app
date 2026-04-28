@@ -23,6 +23,7 @@ function App() {
   
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState('');
   
   // New Student Form State
   const [newStudent, setNewStudent] = useState({
@@ -34,10 +35,23 @@ function App() {
   useEffect(() => {
     if (user) {
       setLoading(true);
-      const unsubscribe = studentService.subscribeToStudents(user.uid, (data) => {
-        setStudents(data);
-        setLoading(false);
-      });
+      setLoadError('');
+      const unsubscribe = studentService.subscribeToStudents(
+        user.uid,
+        (data) => {
+          setStudents(data);
+          setLoadError('');
+          setLoading(false);
+        },
+        (err) => {
+          setStudents([]);
+          setLoading(false);
+          setLoadError(
+            'We couldn’t load your students. This usually means Firestore is disabled or your Firestore security rules are blocking reads.',
+          );
+          console.error(err);
+        },
+      );
       return () => unsubscribe();
     }
   }, [user]);
@@ -119,6 +133,32 @@ function App() {
       return (
         <div className="app-loading">
           <div className="app-spinner"></div>
+        </div>
+      );
+    }
+
+    if (loadError) {
+      return (
+        <div className="app-page">
+          <div className="app-page__header">
+            <div className="app-page__title">
+              <h2>Something needs attention</h2>
+              <p>{loadError}</p>
+            </div>
+          </div>
+          <div className="app-panel page-card">
+            <div className="app-empty">
+              If you just enabled Firestore or updated rules, refresh the page.
+            </div>
+            <div style={{ marginTop: 12, display: 'grid', gap: 12 }}>
+              <button className="app-button app-button--primary" onClick={() => window.location.reload()}>
+                Refresh
+              </button>
+              <button className="app-button app-button--secondary" onClick={logout}>
+                Sign out
+              </button>
+            </div>
+          </div>
         </div>
       );
     }

@@ -34,7 +34,7 @@ export const studentService = {
   },
 
   // 실시간 학생 목록 구독
-  subscribeToStudents(tutorId, callback) {
+  subscribeToStudents(tutorId, callback, onError) {
     const q = query(
       collection(db, COLLECTION_NAME), 
       where("tutorId", "==", tutorId),
@@ -49,6 +49,7 @@ export const studentService = {
       callback(students);
     }, (error) => {
       console.error("Error subscribing to students: ", error);
+      if (typeof onError === 'function') onError(error);
     });
   },
 
