@@ -14,11 +14,12 @@ const Signup = ({ onToggleMode }) => {
   
   // Profile Data
   const [profileData, setProfileData] = useState({
+    firstName: '',
+    lastName: '',
     year: '',
     school: '',
     phone: '',
     address: '',
-    parentName: '',
     students: [{ name: '', year: '', school: '', phone: '', address: '' }]
   });
 
@@ -96,6 +97,9 @@ const Signup = ({ onToggleMode }) => {
         uid: user.uid,
         email: user.email,
         role,
+        firstName: profileData.firstName,
+        lastName: profileData.lastName,
+        displayName: `${profileData.firstName} ${profileData.lastName}`,
         createdAt: new Date().toISOString(),
         ...(role === 'student' ? {
           year: profileData.year,
@@ -103,7 +107,7 @@ const Signup = ({ onToggleMode }) => {
           phone: profileData.phone,
           address: profileData.address
         } : {
-          parentName: profileData.parentName,
+          phone: profileData.phone,
           students: profileData.students
         })
       };
@@ -213,78 +217,102 @@ const Signup = ({ onToggleMode }) => {
           </div>
         )}
 
-        {step === 3 && role === 'student' && (
+        {step === 3 && (
           <div className="auth-scroll-container">
-            <div className="auth-field">
-              <label>Year / Grade</label>
-              <div className="auth-input">
-                <GraduationCap size={18} />
-                <input required value={profileData.year} onChange={(e) => setProfileData({...profileData, year: e.target.value})} placeholder="e.g. Year 10" />
+            <div className="auth-field-row">
+              <div className="auth-field">
+                <label>Given Name</label>
+                <div className="auth-input">
+                  <User size={18} />
+                  <input required value={profileData.firstName} onChange={(e) => setProfileData({...profileData, firstName: e.target.value})} placeholder="First name" />
+                </div>
+              </div>
+              <div className="auth-field">
+                <label>Surname</label>
+                <div className="auth-input">
+                  <User size={18} />
+                  <input required value={profileData.lastName} onChange={(e) => setProfileData({...profileData, lastName: e.target.value})} placeholder="Last name" />
+                </div>
               </div>
             </div>
-            <div className="auth-field">
-              <label>School Name</label>
-              <div className="auth-input">
-                <School size={18} />
-                <input required value={profileData.school} onChange={(e) => setProfileData({...profileData, school: e.target.value})} placeholder="e.g. Central High" />
-              </div>
-            </div>
-            <div className="auth-field">
-              <label>Phone Number</label>
-              <div className="auth-input">
-                <Phone size={18} />
-                <input required value={profileData.phone} onChange={(e) => setProfileData({...profileData, phone: e.target.value})} placeholder="04xx xxx xxx" />
-              </div>
-            </div>
-            <div className="auth-field">
-              <label>Home Address</label>
-              <div className="auth-input">
-                <MapPin size={18} />
-                <input required value={profileData.address} onChange={(e) => setProfileData({...profileData, address: e.target.value})} placeholder="Full street address" />
-              </div>
-            </div>
-          </div>
-        )}
 
-        {step === 3 && role === 'parent' && (
-          <div className="auth-scroll-container">
-            <div className="auth-field">
-              <label>Parent/Guardian Full Name</label>
-              <div className="auth-input">
-                <User size={18} />
-                <input required value={profileData.parentName} onChange={(e) => setProfileData({...profileData, parentName: e.target.value})} placeholder="Your full name" />
-              </div>
-            </div>
-            
-            <div className="auth-section-divider">Student Information</div>
-            
-            {profileData.students.map((student, index) => (
-              <div key={index} className="auth-student-entry">
-                <div className="auth-student-entry__header">
-                  <strong>Student #{index + 1}</strong>
-                  {profileData.students.length > 1 && (
-                    <button type="button" onClick={() => removeStudent(index)} className="auth-remove-btn">
-                      <Trash2 size={16} />
-                    </button>
-                  )}
+            {role === 'student' ? (
+              <>
+                <div className="auth-field">
+                  <label>Year / Grade</label>
+                  <div className="auth-input">
+                    <GraduationCap size={18} />
+                    <input required value={profileData.year} onChange={(e) => setProfileData({...profileData, year: e.target.value})} placeholder="e.g. Year 10" />
+                  </div>
                 </div>
                 <div className="auth-field">
-                  <input required value={student.name} onChange={(e) => updateStudentField(index, 'name', e.target.value)} placeholder="Student's full name" />
+                  <label>School Name</label>
+                  <div className="auth-input">
+                    <School size={18} />
+                    <input required value={profileData.school} onChange={(e) => setProfileData({...profileData, school: e.target.value})} placeholder="e.g. Central High" />
+                  </div>
                 </div>
-                <div className="auth-field-row">
-                  <input required value={student.year} onChange={(e) => updateStudentField(index, 'year', e.target.value)} placeholder="Year/Grade" />
-                  <input required value={student.school} onChange={(e) => updateStudentField(index, 'school', e.target.value)} placeholder="School" />
-                </div>
-                <div className="auth-field">
-                  <input required value={student.phone} onChange={(e) => updateStudentField(index, 'phone', e.target.value)} placeholder="Student's phone" />
+              </>
+            ) : (
+              <div className="auth-field">
+                <label>Parent Phone Number</label>
+                <div className="auth-input">
+                  <Phone size={18} />
+                  <input required value={profileData.phone} onChange={(e) => setProfileData({...profileData, phone: e.target.value})} placeholder="04xx xxx xxx" />
                 </div>
               </div>
-            ))}
-            
-            <button type="button" onClick={addStudent} className="auth-add-btn">
-              <Plus size={16} />
-              Add another student
-            </button>
+            )}
+
+            {role === 'student' && (
+              <>
+                <div className="auth-field">
+                  <label>Phone Number</label>
+                  <div className="auth-input">
+                    <Phone size={18} />
+                    <input required value={profileData.phone} onChange={(e) => setProfileData({...profileData, phone: e.target.value})} placeholder="04xx xxx xxx" />
+                  </div>
+                </div>
+                <div className="auth-field">
+                  <label>Home Address</label>
+                  <div className="auth-input">
+                    <MapPin size={18} />
+                    <input required value={profileData.address} onChange={(e) => setProfileData({...profileData, address: e.target.value})} placeholder="Full street address" />
+                  </div>
+                </div>
+              </>
+            )}
+
+            {role === 'parent' && (
+              <>
+                <div className="auth-section-divider">Student Information</div>
+                {profileData.students.map((student, index) => (
+                  <div key={index} className="auth-student-entry">
+                    <div className="auth-student-entry__header">
+                      <strong>Student #{index + 1}</strong>
+                      {profileData.students.length > 1 && (
+                        <button type="button" onClick={() => removeStudent(index)} className="auth-remove-btn">
+                          <Trash2 size={16} />
+                        </button>
+                      )}
+                    </div>
+                    <div className="auth-field">
+                      <input required value={student.name} onChange={(e) => updateStudentField(index, 'name', e.target.value)} placeholder="Student's full name" />
+                    </div>
+                    <div className="auth-field-row">
+                      <input required value={student.year} onChange={(e) => updateStudentField(index, 'year', e.target.value)} placeholder="Year/Grade" />
+                      <input required value={student.school} onChange={(e) => updateStudentField(index, 'school', e.target.value)} placeholder="School" />
+                    </div>
+                    <div className="auth-field">
+                      <input required value={student.phone} onChange={(e) => updateStudentField(index, 'phone', e.target.value)} placeholder="Student's phone" />
+                    </div>
+                  </div>
+                ))}
+                <button type="button" onClick={addStudent} className="auth-add-btn">
+                  <Plus size={16} />
+                  Add another student
+                </button>
+              </>
+            )}
           </div>
         )}
 
