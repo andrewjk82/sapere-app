@@ -15,14 +15,10 @@ import { useAuth } from '../context/AuthContext';
 const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
   <button 
     onClick={onClick}
-    className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 ${
-      active 
-        ? 'bg-accent text-bg-deep shadow-glow' 
-        : 'text-text-secondary hover:bg-glass hover:text-text-primary'
-    }`}
+    className={`app-sidebar__item ${active ? 'is-active' : ''}`}
   >
     <Icon size={20} />
-    <span className="font-medium">{label}</span>
+    <span>{label}</span>
   </button>
 );
 
@@ -30,22 +26,22 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   const { user, isAdmin, logout } = useAuth();
 
   return (
-    <aside className="w-72 border-r border-border p-6 flex flex-col gap-8 h-full sticky top-0">
+    <aside className="app-sidebar">
       <motion.div 
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="flex items-center gap-3 px-2"
+        className="app-sidebar__brand"
       >
-        <div className="w-10 h-10 rounded-xl overflow-hidden shadow-glow">
-          <img src="/logo.jpg" alt="Sapere Logo" className="w-full h-full object-cover" />
+        <div className="app-sidebar__logo">
+          <img src="/logo.png?v=1" alt="Sapere Logo" />
         </div>
         <div>
-          <h1 className="text-xl font-bold font-heading leading-tight">Sapere</h1>
-          <p className="text-[10px] text-accent uppercase tracking-widest font-bold">Academia</p>
+          <h1>Sapere</h1>
+          <p>Academia</p>
         </div>
       </motion.div>
 
-      <nav className="flex flex-col gap-2 flex-grow">
+      <nav className="app-sidebar__nav">
         <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} />
         <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} />
         <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} />
@@ -53,27 +49,27 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         <SidebarItem icon={Settings} label="Settings" active={activeTab === 'Settings'} onClick={() => setActiveTab('Settings')} />
       </nav>
 
-      <div className="flex flex-col gap-6">
+      <div className="app-sidebar__footer">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="glass-card p-4 bg-accent/5 border-accent/10"
+          className="app-panel app-sidebar__upgrade"
         >
-          <p className="text-xs text-text-secondary mb-2">Upgrade to Pro</p>
-          <p className="text-sm font-semibold mb-3">Unlimited Students</p>
-          <button className="w-full py-2 bg-accent text-bg-deep rounded-lg text-xs font-bold hover:scale-[1.02] transition-transform">Upgrade Now</button>
+          <p className="app-sidebar__eyebrow">Upgrade to Pro</p>
+          <p className="app-sidebar__title">Unlimited students and a more polished workflow</p>
+          <button className="app-button app-button--primary">Upgrade now</button>
         </motion.div>
 
-        <div className="glass-card p-4 flex flex-col gap-3">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center overflow-hidden border border-accent/20">
+        <div className="app-panel app-sidebar__profile">
+          <div className="app-sidebar__profile-top">
+            <div className="app-avatar">
               <img src={user?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.email}`} alt="Avatar" />
             </div>
-            <div className="flex-grow min-w-0">
-              <p className="text-xs font-bold truncate">{user?.displayName || user?.email?.split('@')[0]}</p>
+            <div>
+              <p className="app-sidebar__profile-name">{user?.displayName || user?.email?.split('@')[0]}</p>
               {isAdmin && (
-                <span className="flex items-center gap-1 text-[10px] text-accent font-bold uppercase tracking-widest">
+                <span className="app-sidebar__profile-meta">
                   <ShieldCheck size={10} />
                   Admin
                 </span>
@@ -82,7 +78,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           </div>
           <button 
             onClick={logout}
-            className="flex items-center gap-2 text-xs text-text-secondary hover:text-accent transition-colors w-full px-1"
+            className="app-link-button"
           >
             <LogOut size={14} />
             <span>Sign Out</span>

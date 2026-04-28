@@ -7,7 +7,9 @@ import Dashboard from './components/Dashboard';
 import StudentList from './components/StudentList';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import { LogOut, ShieldCheck, AlertCircle } from 'lucide-react';
+import AuthLayout from './pages/AuthLayout';
+import { AlertCircle, ArrowRight } from 'lucide-react';
+import './components/app-shell.css';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
@@ -67,31 +69,51 @@ function App() {
 
   if (!user.emailVerified && user.providerData[0].providerId === 'password') {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4 bg-bg-deep">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
+      <AuthLayout
+        eyebrow="One last step"
+        title="Verify your email"
+        description={`We've sent a verification email to ${user.email}. Please confirm it to access the platform.`}
+        sideLabel="Secure onboarding"
+        sideTitle="A polished start for every family."
+        sideDescription="Your account stays protected while keeping the setup flow calm, clean, and aligned with the Sapere look."
+        sideStats={[
+          { value: 'Secure', label: 'email confirmation' },
+          { value: '1 min', label: 'to complete setup' },
+        ]}
+        sidePoints={[
+          'Check your inbox and spam folder for the verification email',
+          'Return after confirming to unlock the full platform',
+          'Use the same email address you signed up with',
+        ]}
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="glass-card p-8 w-full max-w-md border-amber-500/20 text-center"
+          className="auth-verify-card"
         >
-          <div className="w-16 h-16 bg-amber-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <AlertCircle className="text-amber-500" size={32} />
+          <div className="auth-verify-card__icon">
+            <AlertCircle size={30} />
           </div>
-          <h2 className="text-2xl font-bold mb-4">Verify Your Email</h2>
-          <p className="text-text-secondary mb-8">
-            We've sent a verification email to <strong>{user.email}</strong>. 
-            Please verify your email to access the platform.
-          </p>
-          <button onClick={logout} className="btn-secondary w-full">Sign Out & Try Again</button>
+          <div className="auth-verify-card__copy">
+            <h2>Email sent successfully</h2>
+            <p>
+              Verify <strong>{user.email}</strong> to continue into your account.
+            </p>
+          </div>
+          <button onClick={logout} className="auth-submit">
+            Sign out and try again
+            <ArrowRight size={18} />
+          </button>
         </motion.div>
-      </div>
+      </AuthLayout>
     );
   }
 
   const renderContent = () => {
     if (loading) {
       return (
-        <div className="flex-grow flex items-center justify-center">
-          <div className="w-8 h-8 border-4 border-accent border-t-transparent rounded-full animate-spin"></div>
+        <div className="app-loading">
+          <div className="app-spinner"></div>
         </div>
       );
     }
@@ -103,7 +125,7 @@ function App() {
         return <StudentList students={students} onAddStudent={() => setIsModalOpen(true)} />;
       default:
         return (
-          <div className="flex-grow p-8 flex items-center justify-center text-text-secondary">
+          <div className="app-placeholder">
             {activeTab} section is under development.
           </div>
         );
@@ -111,52 +133,49 @@ function App() {
   };
 
   return (
-    <div className="flex min-h-screen bg-bg-deep selection:bg-accent/30 text-text-primary">
+    <div className="app-shell">
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="flex-grow flex flex-col h-screen overflow-hidden">
+      <div className="app-shell__main">
         {renderContent()}
       </div>
 
       <AnimatePresence>
         {isModalOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="app-modal">
             <motion.div 
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
               onClick={() => setIsModalOpen(false)}
-              className="absolute inset-0 bg-bg-deep/80 backdrop-blur-sm"
+              className="app-modal__backdrop"
             />
             <motion.div 
               initial={{ opacity: 0, scale: 0.9, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative glass-card p-8 w-full max-w-md border-accent/20"
+              className="app-panel app-modal__card"
             >
-              <h3 className="text-2xl font-bold mb-6 font-heading">Add New Student</h3>
-              <div className="flex flex-col gap-4">
-                <div>
-                  <label className="text-xs text-text-secondary uppercase font-bold mb-1 block">Full Name</label>
+              <h3>Add New Student</h3>
+              <div className="app-form-grid">
+                <div className="app-form-field">
+                  <label>Full Name</label>
                   <input 
                     type="text" 
                     value={newStudent.name}
                     onChange={(e) => setNewStudent({...newStudent, name: e.target.value})}
-                    className="w-full bg-glass border border-glass-border rounded-xl py-3 px-4 focus:outline-none focus:border-accent text-text-primary transition-colors" 
                     placeholder="e.g. John Doe" 
                   />
                 </div>
-                <div>
-                  <label className="text-xs text-text-secondary uppercase font-bold mb-1 block">Subject</label>
+                <div className="app-form-field">
+                  <label>Subject</label>
                   <input 
                     type="text" 
                     value={newStudent.subject}
                     onChange={(e) => setNewStudent({...newStudent, subject: e.target.value})}
-                    className="w-full bg-glass border border-glass-border rounded-xl py-3 px-4 focus:outline-none focus:border-accent text-text-primary transition-colors" 
                     placeholder="e.g. Mathematics" 
                   />
                 </div>
-                <div>
-                  <label className="text-xs text-text-secondary uppercase font-bold mb-1 block">Level</label>
+                <div className="app-form-field">
+                  <label>Level</label>
                   <select 
                     value={newStudent.level}
                     onChange={(e) => setNewStudent({...newStudent, level: e.target.value})}
-                    className="w-full bg-glass border border-glass-border rounded-xl py-3 px-4 focus:outline-none focus:border-accent text-text-primary transition-colors appearance-none cursor-pointer"
                   >
                     <option value="Year 7">Year 7</option>
                     <option value="Year 8">Year 8</option>
@@ -167,7 +186,7 @@ function App() {
                   </select>
                 </div>
                 <button 
-                  className="btn-primary w-full justify-center mt-4"
+                  className="app-button app-button--primary"
                   onClick={handleAddStudent}
                 >
                   Save Student

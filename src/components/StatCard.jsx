@@ -18,18 +18,18 @@ const StatCard = ({ label, value, iconName, trend }) => {
   const Icon = iconMap[iconName] || Info;
   
   return (
-    <div className="glass-card p-6 flex flex-col gap-4">
-      <div className="flex justify-between items-start">
-        <div className="p-3 bg-glass rounded-lg border border-glass-border">
-          <Icon className="text-accent" size={24} />
+    <div className="app-panel stat-card">
+      <div className="stat-card__top">
+        <div className="stat-card__icon">
+          <Icon size={24} />
         </div>
         {trend && (
-          <span className="text-emerald-400 text-sm font-medium">+{trend}%</span>
+          <span className="status-badge status-badge--active">+{trend}%</span>
         )}
       </div>
       <div>
-        <p className="text-text-secondary text-sm">{label}</p>
-        <h3 className="text-2xl font-bold mt-1">{value}</h3>
+        <p className="stat-card__label">{label}</p>
+        <h3 className="stat-card__value">{value}</h3>
       </div>
     </div>
   );

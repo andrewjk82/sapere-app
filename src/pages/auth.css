@@ -382,6 +382,40 @@
   font-weight: 700;
 }
 
+.auth-verify-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 26px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 244, 255, 0.88));
+  border: 1px solid rgba(167, 139, 250, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.auth-verify-card__icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  color: #7c3aed;
+  background: linear-gradient(135deg, rgba(243, 232, 255, 0.95), rgba(224, 231, 255, 0.9));
+  box-shadow: 0 14px 30px rgba(139, 92, 246, 0.14);
+}
+
+.auth-verify-card__copy h2 {
+  margin: 0 0 10px;
+  font-size: 1.45rem;
+  color: #24163f;
+}
+
+.auth-verify-card__copy p {
+  margin: 0;
+  color: #6f6288;
+  line-height: 1.7;
+}
+
 /* Role Selection Grid */
 .auth-role-grid {
   display: grid;
