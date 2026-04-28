@@ -6,8 +6,8 @@ import { doc, setDoc } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
 
 const Signup = ({ onToggleMode }) => {
-  const [step, setStep] = useState(() => Number(sessionStorage.getItem('pendingSignupStep')) || 1);
-  const [role, setRole] = useState(() => sessionStorage.getItem('pendingSignupRole') || ''); // 'student' or 'parent'
+  const [step, setStep] = useState(1);
+  const [role, setRole] = useState(''); // 'student' or 'parent'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -28,38 +28,28 @@ const Signup = ({ onToggleMode }) => {
   const { signup, loginWithGoogle } = useAuth();
 
   const handleNextStep = () => {
-    if (step === 1 && !role) return setError('Please select your role');
-    if (step === 2) {
+    if (step === 1) {
+      if (!email || !password) return setError('Please enter credentials');
       if (password !== confirmPassword) return setError('Passwords do not match');
       if (password.length < 6) return setError('Password must be at least 6 characters');
     }
+    if (step === 2 && !role) return setError('Please select your role');
+    
     setError('');
-    if (step === 1) {
-      sessionStorage.setItem('pendingSignupRole', role);
-    }
-    sessionStorage.setItem('pendingSignupStep', String(step + 1));
     setStep(step + 1);
   };
 
-  const handlePrevStep = () => {
-    const previousStep = step - 1;
-    sessionStorage.setItem('pendingSignupStep', String(previousStep));
-    setStep(previousStep);
-  };
+  const handlePrevStep = () => setStep(step - 1);
 
-  const handleGoogleSignup = async (selectedRole) => {
+  const handleGoogleAuth = async () => {
     try {
       setError('');
       setLoading(true);
-      setRole(selectedRole);
-      sessionStorage.setItem('pendingSignupRole', selectedRole);
-      sessionStorage.setItem('pendingSignupStep', '3');
       await loginWithGoogle();
-      setStep(3);
+      // Move to Step 2 (Role Selection) after authentication
+      setStep(2);
     } catch (err) {
-      sessionStorage.removeItem('pendingSignupRole');
-      sessionStorage.removeItem('pendingSignupStep');
-      setError('Google signup failed');
+      setError('Google authentication failed');
       console.error(err);
     } finally {
       setLoading(false);
@@ -91,18 +81,11 @@ const Signup = ({ onToggleMode }) => {
       setError('');
       setLoading(true);
       
-      // 1. Create Auth Account (only if using email/pass, for Google they are already authed)
-      let user;
-      const currentUser = db.app.options ? null : null; // Check if already authed via Google
-
-      // Note: useAuth provides the currentUser via the user state, 
-      // but for simplicity in this flow, we'll assume if they reach Step 3 and click submit, 
-      // we save their current uid to Firestore.
-      
-      // However, to be safe, let's just use the current Auth state's user
+      // 1. Get Current Auth User
       const { auth } = await import('../firebase/config');
-      user = auth.currentUser;
+      let user = auth.currentUser;
 
+      // If not authenticated (Email/Pass flow), create the account now
       if (!user) {
         const userCredential = await signup(email, password);
         user = userCredential.user;
@@ -127,10 +110,8 @@ const Signup = ({ onToggleMode }) => {
 
       // 3. Save to Firestore
       await setDoc(doc(db, 'users', user.uid), userData);
-      sessionStorage.removeItem('pendingSignupRole');
-      sessionStorage.removeItem('pendingSignupStep');
 
-      setMessage('Account created successfully! Welcome to Sapere.');
+      setMessage('Welcome to Sapere! Your profile has been created.');
     } catch (err) {
       setError(err.message);
       console.error(err);
@@ -142,11 +123,11 @@ const Signup = ({ onToggleMode }) => {
   return (
     <AuthLayout
       eyebrow={`Step ${step} of 3`}
-      title={step === 1 ? "Who are you?" : step === 2 ? "Set up credentials" : "Profile details"}
+      title={step === 1 ? "Create Account" : step === 2 ? "Who are you?" : "Complete Profile"}
       description={
-        step === 1 ? "Select your role to personalize your experience." :
-        step === 2 ? "Enter your email and a secure password." :
-        "Tell us a bit more to complete your setup."
+        step === 1 ? "Join our academic community today." :
+        step === 2 ? "Tell us your role to personalize your workspace." :
+        "We're almost there! Enter your final details."
       }
       sideLabel="Consistency is Key"
       sideTitle="Build a powerful academic routine, every day."
@@ -177,29 +158,6 @@ const Signup = ({ onToggleMode }) => {
 
       <form onSubmit={step === 3 ? handleSubmit : (e) => e.preventDefault()} className="auth-form">
         {step === 1 && (
-          <div className="auth-role-grid">
-            <button 
-              type="button" 
-              className={`auth-role-card ${role === 'student' ? 'active' : ''}`}
-              onClick={() => setRole('student')}
-            >
-              <div className="auth-role-card__icon"><GraduationCap size={28} /></div>
-              <strong>Student</strong>
-              <span>Individual learning workspace</span>
-            </button>
-            <button 
-              type="button" 
-              className={`auth-role-card ${role === 'parent' ? 'active' : ''}`}
-              onClick={() => setRole('parent')}
-            >
-              <div className="auth-role-card__icon"><Users size={28} /></div>
-              <strong>Parent</strong>
-              <span>Manage multiple students</span>
-            </button>
-          </div>
-        )}
-
-        {step === 2 && (
           <>
             <div className="auth-field">
               <label htmlFor="signup-email">Email address</label>
@@ -225,27 +183,34 @@ const Signup = ({ onToggleMode }) => {
 
             <div className="auth-divider">or</div>
 
-            <div className="auth-google-grid">
-              <button
-                type="button"
-                onClick={() => handleGoogleSignup('student')}
-                disabled={loading}
-                className={`auth-social auth-social--role ${role === 'student' ? 'active' : ''}`}
-              >
-                <Globe size={18} />
-                <span>Student with Google</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleGoogleSignup('parent')}
-                disabled={loading}
-                className={`auth-social auth-social--role ${role === 'parent' ? 'active' : ''}`}
-              >
-                <Globe size={18} />
-                <span>Parent with Google</span>
-              </button>
-            </div>
+            <button type="button" onClick={handleGoogleAuth} disabled={loading} className="auth-social">
+              <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="auth-social__icon" />
+              <span>Continue with Google</span>
+            </button>
           </>
+        )}
+
+        {step === 2 && (
+          <div className="auth-role-grid">
+            <button 
+              type="button" 
+              className={`auth-role-card ${role === 'student' ? 'active' : ''}`}
+              onClick={() => setRole('student')}
+            >
+              <div className="auth-role-card__icon"><GraduationCap size={28} /></div>
+              <strong>Student</strong>
+              <span>Individual learning workspace</span>
+            </button>
+            <button 
+              type="button" 
+              className={`auth-role-card ${role === 'parent' ? 'active' : ''}`}
+              onClick={() => setRole('parent')}
+            >
+              <div className="auth-role-card__icon"><Users size={28} /></div>
+              <strong>Parent</strong>
+              <span>Manage multiple students</span>
+            </button>
+          </div>
         )}
 
         {step === 3 && role === 'student' && (
@@ -336,7 +301,7 @@ const Signup = ({ onToggleMode }) => {
             </button>
           ) : (
             <button type="submit" disabled={loading} className="auth-submit">
-              {loading ? 'Creating account...' : 'Complete setup'}
+              {loading ? 'Finalizing...' : 'Complete Setup'}
               <ArrowRight size={18} />
             </button>
           )}
