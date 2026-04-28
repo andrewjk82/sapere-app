@@ -37,8 +37,7 @@ export const studentService = {
   subscribeToStudents(tutorId, callback, onError) {
     const q = query(
       collection(db, COLLECTION_NAME), 
-      where("tutorId", "==", tutorId),
-      orderBy("createdAt", "desc")
+      where("tutorId", "==", tutorId)
     );
 
     return onSnapshot(q, (snapshot) => {
