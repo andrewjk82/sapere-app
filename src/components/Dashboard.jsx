@@ -52,126 +52,127 @@ const Dashboard = ({ students, onAddStudent }) => {
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="app-page"
-    >
-      {!isAdmin && (
-        <div className="vision-card-wrapper" style={{ marginBottom: '24px' }}>
-          <div className="app-panel vision-card" style={{ 
-            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '460px',
-            borderRadius: '36px',
-            position: 'relative',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-            padding: '48px',
-            color: 'white',
-            overflow: 'hidden',
-            boxShadow: '0 30px 70px rgba(0,0,0,0.25)',
-            border: 'none'
-          }}>
-            <div className="vision-card__content" style={{ zIndex: 1 }}>
-              <p style={{ fontSize: '1.4rem', fontWeight: 600, opacity: 0.95, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '12px', textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
-                {getGreeting()} 👋
-              </p>
-              <h1 style={{ fontSize: '4.5rem', fontWeight: 900, margin: 0, lineHeight: 1.0, textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}>
-                {userName}
-              </h1>
-              {profile?.dreamJob && (
-                <div style={{ marginTop: '24px', padding: '10px 20px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)', borderRadius: '16px', display: 'inline-block', border: '1px solid rgba(255,255,255,0.2)' }}>
-                  <span style={{ fontWeight: 800, fontSize: '1.1rem' }}>FUTURE {profile.dreamJob.toUpperCase()}</span>
-                </div>
-              )}
-            </div>
-          </div>
-          
-          <div className="app-input" style={{ marginTop: '24px', maxWidth: '100%' }}>
-            <Search size={18} />
-            <input type="text" placeholder="Search my courses, students, and more..." style={{ padding: '16px 0' }} />
-          </div>
-        </div>
-      )}
-
-      {isAdmin && (
-        <div className="app-grid app-grid--stats">
-          {displayStats.map((stat, index) => (
-            <StatCard key={index} {...stat} iconName={stat.icon} />
-          ))}
-        </div>
-      )}
-
-      <div className="app-grid app-grid--content">
-        {isAdmin ? (
-          <>
-            <div className="app-panel dashboard-card">
-              <div className="dashboard-card__header">
-                <h3>Recent Students</h3>
-                <button>View all</button>
-              </div>
-              <div className="activity-list">
-                {students.length > 0 ? (
-                  students.slice(0, 5).map(student => (
-                    <StudentRow key={student.id} {...student} />
-                  ))
-                ) : (
-                  <div className="app-empty">
-                    No students added yet.
+    <>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="app-page"
+      >
+        {!isAdmin && (
+          <div className="vision-card-wrapper" style={{ marginBottom: '24px' }}>
+            <div className="app-panel vision-card" style={{ 
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: '460px',
+              borderRadius: '36px',
+              position: 'relative',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-end',
+              padding: '48px',
+              color: 'white',
+              overflow: 'hidden',
+              boxShadow: '0 30px 70px rgba(0,0,0,0.25)',
+              border: 'none'
+            }}>
+              <div className="vision-card__content" style={{ zIndex: 1 }}>
+                <p style={{ fontSize: '1.4rem', fontWeight: 600, opacity: 0.95, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '12px', textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
+                  {getGreeting()} 👋
+                </p>
+                <h1 style={{ fontSize: '4.5rem', fontWeight: 900, margin: 0, lineHeight: 1.0, textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}>
+                  {userName}
+                </h1>
+                {profile?.dreamJob && (
+                  <div style={{ marginTop: '24px', padding: '10px 20px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)', borderRadius: '16px', display: 'inline-block', border: '1px solid rgba(255,255,255,0.2)' }}>
+                    <span style={{ fontWeight: 800, fontSize: '1.1rem' }}>FUTURE {profile.dreamJob.toUpperCase()}</span>
                   </div>
                 )}
               </div>
             </div>
-
-            <div className="app-page-column">
-              <div className="app-panel dashboard-card">
-                <div className="dashboard-card__header">
-                  <h3>Quick Actions</h3>
-                </div>
-                <div className="app-action-buttons" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  <button 
-                    onClick={onAddStudent}
-                    className="app-button app-button--primary"
-                  >
-                    <Plus size={20} />
-                    Add New Student
-                  </button>
-                  <button className="app-button app-button--secondary">Schedule Lesson</button>
-                  <button className="app-button app-button--secondary">Record Progress</button>
-                </div>
-              </div>
-
-              <div className="app-panel dashboard-card">
-                <div className="dashboard-card__header">
-                  <h3>Recent Activity</h3>
-                </div>
-                <div className="activity-list">
-                  {students.slice(0, 3).map(s => (
-                    <div key={s.id} className="activity-item">
-                      <strong>New student: {s.name}</strong>
-                      <p>{s.level} • {s.subject}</p>
-                    </div>
-                  ))}
-                  {students.length === 0 && <div className="app-empty">No recent activity.</div>}
-                </div>
-              </div>
-            </div>
-          </>
-        ) : (
-          <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2' }}>
-            <div className="dashboard-card__header">
-              <h3>My Learning Status</h3>
-            </div>
-            <div className="app-empty">
-              Your personalized learning dashboard is being prepared. Stay tuned!
+            
+            <div className="app-input" style={{ marginTop: '24px', maxWidth: '100%' }}>
+              <Search size={18} />
+              <input type="text" placeholder="Search my courses, students, and more..." style={{ padding: '16px 0' }} />
             </div>
           </div>
         )}
-      </div>
-    </motion.div>
+
+        {isAdmin && (
+          <div className="app-grid app-grid--stats">
+            {displayStats.map((stat, index) => (
+              <StatCard key={index} {...stat} iconName={stat.icon} />
+            ))}
+          </div>
+        )}
+
+        <div className="app-grid app-grid--content">
+          {isAdmin ? (
+            <>
+              <div className="app-panel dashboard-card">
+                <div className="dashboard-card__header">
+                  <h3>Recent Students</h3>
+                  <button>View all</button>
+                </div>
+                <div className="activity-list">
+                  {students.length > 0 ? (
+                    students.slice(0, 5).map(student => (
+                      <StudentRow key={student.id} {...student} />
+                    ))
+                  ) : (
+                    <div className="app-empty">
+                      No students added yet.
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              <div className="app-page-column">
+                <div className="app-panel dashboard-card">
+                  <div className="dashboard-card__header">
+                    <h3>Quick Actions</h3>
+                  </div>
+                  <div className="app-action-buttons" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    <button 
+                      onClick={onAddStudent}
+                      className="app-button app-button--primary"
+                    >
+                      <Plus size={20} />
+                      Add New Student
+                    </button>
+                    <button className="app-button app-button--secondary">Schedule Lesson</button>
+                    <button className="app-button app-button--secondary">Record Progress</button>
+                  </div>
+                </div>
+
+                <div className="app-panel dashboard-card">
+                  <div className="dashboard-card__header">
+                    <h3>Recent Activity</h3>
+                  </div>
+                  <div className="activity-list">
+                    {students.slice(0, 3).map(s => (
+                      <div key={s.id} className="activity-item">
+                        <strong>New student: {s.name}</strong>
+                        <p>{s.level} • {s.subject}</p>
+                      </div>
+                    ))}
+                    {students.length === 0 && <div className="app-empty">No recent activity.</div>}
+                  </div>
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2' }}>
+              <div className="dashboard-card__header">
+                <h3>My Learning Status</h3>
+              </div>
+              <div className="app-empty">
+                Your personalized learning dashboard is being prepared. Stay tuned!
+              </div>
+            </div>
+          )}
+        </div>
+      </motion.div>
 
       <AvatarPickerModal
         open={avatarOpen}
@@ -190,9 +191,7 @@ const Dashboard = ({ students, onAddStudent }) => {
           setAvatarOpen(false);
         }}
       />
-    </div>
-
-
+    </>
   );
 };
 
