@@ -25,7 +25,7 @@ const Signup = ({ onToggleMode }) => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const { signup } = useAuth();
+  const { signup, loginWithGoogle } = useAuth();
 
   const handleNextStep = () => {
     if (step === 1 && !role) return setError('Please select your role');
@@ -38,6 +38,21 @@ const Signup = ({ onToggleMode }) => {
   };
 
   const handlePrevStep = () => setStep(step - 1);
+
+  const handleGoogleSignup = async () => {
+    try {
+      setError('');
+      setLoading(true);
+      await loginWithGoogle();
+      // After successful Google login, move to Step 3 to collect remaining details
+      setStep(3);
+    } catch (err) {
+      setError('Google signup failed');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const updateStudentField = (index, field, value) => {
     const newStudents = [...profileData.students];
@@ -64,14 +79,27 @@ const Signup = ({ onToggleMode }) => {
       setError('');
       setLoading(true);
       
-      // 1. Create Auth Account
-      const userCredential = await signup(email, password);
-      const user = userCredential.user;
+      // 1. Create Auth Account (only if using email/pass, for Google they are already authed)
+      let user;
+      const currentUser = db.app.options ? null : null; // Check if already authed via Google
+
+      // Note: useAuth provides the currentUser via the user state, 
+      // but for simplicity in this flow, we'll assume if they reach Step 3 and click submit, 
+      // we save their current uid to Firestore.
+      
+      // However, to be safe, let's just use the current Auth state's user
+      const { auth } = await import('../firebase/config');
+      user = auth.currentUser;
+
+      if (!user) {
+        const userCredential = await signup(email, password);
+        user = userCredential.user;
+      }
 
       // 2. Prepare Firestore Data
       const userData = {
         uid: user.uid,
-        email,
+        email: user.email,
         role,
         createdAt: new Date().toISOString(),
         ...(role === 'student' ? {
@@ -180,6 +208,13 @@ const Signup = ({ onToggleMode }) => {
                 <input type="password" required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Repeat password" />
               </div>
             </div>
+
+            <div className="auth-divider">or</div>
+
+            <button type="button" onClick={handleGoogleSignup} disabled={loading} className="auth-social">
+              <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="auth-social__icon" />
+              <span>Continue with Google</span>
+            </button>
           </>
         )}
 
