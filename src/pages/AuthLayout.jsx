@@ -32,7 +32,7 @@ const AuthLayout = ({
             </div>
             <div>
               <p className="auth-brand__name">Sapere Aude Academia</p>
-              <p className="auth-brand__tag">Private tutor workspace</p>
+              <p className="auth-brand__tag">Dare to know</p>
             </div>
           </div>
 
