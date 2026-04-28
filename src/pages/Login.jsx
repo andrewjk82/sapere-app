@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Lock, EyeOff, Globe } from 'lucide-react';
+import { Mail, Lock, Globe, AlertCircle, ChevronRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const Login = ({ onToggleMode }) => {
@@ -35,108 +35,102 @@ const Login = ({ onToggleMode }) => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFF8F1] flex items-center justify-center p-4 font-sans">
-      <div className="w-full max-w-5xl bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px]">
-        
-        {/* Left: Login Form Area */}
-        <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col items-center justify-center">
-          <div className="w-full max-w-md">
-            <h1 className="text-4xl font-bold text-[#4D4D4D] text-center mb-12">Welcome Back!!</h1>
+    <div className="min-h-screen bg-bg-deep flex items-center justify-center p-6 relative overflow-hidden font-sans">
+      {/* Background Decorative Elements */}
+      <div className="absolute top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-accent/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[-10%] left-[-10%] w-[30vw] h-[30vw] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute top-[20%] left-[5%] w-[10vw] h-[10vw] bg-accent/30 rounded-full blur-[60px] pointer-events-none animate-pulse"></div>
 
-            {error && (
-              <div className="mb-6 p-3 bg-red-50 text-red-500 text-xs rounded-xl text-center border border-red-100 font-bold">
-                {error}
-              </div>
-            )}
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-full max-w-md glass-panel p-10 rounded-[2.5rem] relative z-10"
+      >
+        {/* Logo and Welcome */}
+        <div className="flex flex-col items-center mb-10">
+          <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center shadow-md border border-accent/10 mb-6 overflow-hidden">
+            <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
+          </div>
+          <h1 className="text-4xl font-black text-primary tracking-tight mb-2">Welcome</h1>
+          <p className="text-secondary font-medium text-sm">Elite Tutor Management System</p>
+        </div>
 
-            <form onSubmit={handleSubmit} className="space-y-10">
-              {/* Email Input with Label on Border */}
-              <div className="relative">
-                <div className="absolute -top-3 left-6 bg-white px-2 z-10">
-                  <span className="text-sm font-bold text-[#8C8C8C]">Email</span>
-                </div>
-                <div className="relative border border-[#CCCCCC] rounded-[1.5rem] flex items-center px-5 py-4 focus-within:border-[#F9E3D2] transition-colors">
-                  <Mail className="text-[#8C8C8C] mr-3" size={20} />
-                  <input 
-                    type="email" required value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-transparent outline-none text-[#4D4D4D] text-sm font-medium"
-                    placeholder="email@gmail.com"
-                  />
-                </div>
-              </div>
+        {error && (
+          <motion.div 
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="mb-8 p-4 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center gap-3 text-red-500 text-sm font-bold"
+          >
+            <AlertCircle size={18} />
+            <span>{error}</span>
+          </motion.div>
+        )}
 
-              {/* Password Input with Label on Border */}
-              <div className="relative">
-                <div className="absolute -top-3 left-6 bg-white px-2 z-10">
-                  <span className="text-sm font-bold text-[#8C8C8C]">Password</span>
-                </div>
-                <div className="relative border border-[#CCCCCC] rounded-[1.5rem] flex items-center px-5 py-4 focus-within:border-[#F9E3D2] transition-colors">
-                  <Lock className="text-[#8C8C8C] mr-3" size={20} />
-                  <input 
-                    type="password" required value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className="w-full bg-transparent outline-none text-[#4D4D4D] text-sm font-medium pr-10"
-                    placeholder="Enter your password"
-                  />
-                  <EyeOff className="absolute right-5 text-[#CCCCCC] cursor-pointer" size={20} />
-                </div>
-              </div>
-
-              <div className="flex justify-end pr-2 -mt-6">
-                <button type="button" className="text-sm font-bold text-[#8C8C8C] hover:text-[#4D4D4D] transition-colors">Forgot Password?</button>
-              </div>
-
-              <button 
-                type="submit" disabled={loading}
-                className="w-full bg-[#F9E3D2] text-[#9C724F] py-5 rounded-full text-lg font-bold shadow-sm hover:bg-[#F2D7C5] transition-all mt-6"
-              >
-                {loading ? 'Logging in...' : 'Login'}
-              </button>
-            </form>
-
-            <div className="mt-12 flex flex-col items-center gap-8">
-              <span className="text-xs text-[#CCCCCC] font-bold">- or -</span>
-              
-              <div className="flex gap-10">
-                <button onClick={handleGoogleLogin} className="transition-transform hover:scale-110">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" className="w-6 h-6" alt="Google" />
-                </button>
-                <button className="transition-transform hover:scale-110">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" className="w-6 h-6" alt="Facebook" />
-                </button>
-                <button className="transition-transform hover:scale-110">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" className="w-6 h-6" alt="Apple" />
-                </button>
-              </div>
-
-              <p className="text-sm font-medium text-[#CCCCCC]">
-                Don't have an account? 
-                <button onClick={onToggleMode} className="text-[#9C724F] font-bold hover:underline ml-1">Sign up</button>
-              </p>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="space-y-2">
+            <label className="text-xs font-black text-secondary uppercase tracking-widest px-4">Email Address</label>
+            <div className="relative group">
+              <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
+              <input 
+                type="email" required value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="pl-14"
+                placeholder="name@example.com"
+              />
             </div>
           </div>
-        </div>
 
-        {/* Right: Illustration Area (Stable Layout) */}
-        <div className="hidden md:flex md:w-1/2 bg-[#FFF8F1] items-center justify-center p-12 relative">
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-[85%] h-[85%] bg-[#FCE8D8] rounded-t-full"></div>
+          <div className="space-y-2">
+            <label className="text-xs font-black text-secondary uppercase tracking-widest px-4">Password</label>
+            <div className="relative group">
+              <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
+              <input 
+                type="password" required value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="pl-14"
+                placeholder="••••••••"
+              />
+            </div>
           </div>
-          <div className="relative z-10 w-full max-w-[450px]">
-            <img src="/tutor.png" alt="Tutor" className="w-full h-auto drop-shadow-2xl" />
-          </div>
-        </div>
 
-        {/* Mobile Illustration (Top) */}
-        <div className="md:hidden w-full bg-[#FFF8F1] pt-12 pb-4 flex justify-center">
-          <div className="relative w-48 h-48">
-            <div className="absolute inset-0 bg-[#FCE8D8] rounded-full"></div>
-            <img src="/tutor.png" alt="Tutor" className="relative z-10 w-full h-full object-contain" />
+          <div className="flex justify-end">
+            <button type="button" className="text-xs font-bold text-accent hover:underline">Forgot password?</button>
           </div>
-        </div>
 
-      </div>
+          <button 
+            type="submit" disabled={loading}
+            className="btn-primary flex items-center justify-center gap-2 group"
+          >
+            {loading ? 'Authenticating...' : (
+              <>
+                SIGN IN
+                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </>
+            )}
+          </button>
+        </form>
+
+        <div className="mt-10 flex flex-col items-center gap-8">
+          <div className="relative w-full flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-accent/20"></div></div>
+            <span className="relative bg-white/20 backdrop-blur-md px-4 text-[10px] font-black text-slate-400 uppercase tracking-widest">Or login with</span>
+          </div>
+
+          <button 
+            onClick={handleGoogleLogin}
+            className="w-full py-4 bg-white/50 hover:bg-white border border-accent/10 rounded-full flex items-center justify-center gap-3 transition-all shadow-sm"
+          >
+            <Globe size={20} className="text-accent" />
+            <span className="font-bold text-primary text-sm">Google Account</span>
+          </button>
+
+          <p className="text-center text-secondary text-sm font-medium">
+            Don't have an account? 
+            <button onClick={onToggleMode} className="text-accent font-black hover:underline ml-2">Sign Up Now</button>
+          </p>
+        </div>
+      </motion.div>
     </div>
   );
 };
