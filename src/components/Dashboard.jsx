@@ -21,6 +21,8 @@ const Dashboard = ({ students, onAddStudent }) => {
     });
   }, [user?.uid]);
 
+  const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
+
   useEffect(() => {
     if (!user?.uid || !profile || isAdmin) return;
 
@@ -53,8 +55,6 @@ const Dashboard = ({ students, onAddStudent }) => {
       }
     }
   }, [user?.uid, profile, isAdmin, userName]);
-
-  const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
 
   const fallbackUrl = useMemo(() => {
     if (user?.photoURL) return user.photoURL;
