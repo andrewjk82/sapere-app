@@ -108,6 +108,12 @@ export const studentService = {
     return await updateDoc(docRef, data);
   },
 
+  // 가입 학생(유저) 정보 수정
+  async updateRegisteredUser(userId, data) {
+    const docRef = doc(db, "users", userId);
+    return await updateDoc(docRef, data);
+  },
+
   // 학생 삭제
   async deleteStudent(studentId) {
     const docRef = doc(db, COLLECTION_NAME, studentId);

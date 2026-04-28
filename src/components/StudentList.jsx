@@ -3,11 +3,14 @@ import { motion } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import AvatarPickerModal from './AvatarPickerModal';
+import StudentProfileModal from './StudentProfileModal';
 
 const StudentList = ({ students, onAddStudent }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [activeStudent, setActiveStudent] = useState(null);
+  const [profileOpen, setProfileOpen] = useState(false);
+  const [profileStudent, setProfileStudent] = useState(null);
   
   const filteredStudents = students.filter(s => 
     s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -100,7 +103,15 @@ const StudentList = ({ students, onAddStudent }) => {
                 }`}>
                   {student.status || 'Active'}
                 </span>
-                <button>View Profile</button>
+                <button 
+                  className="app-button app-button--secondary app-button--sm"
+                  onClick={() => {
+                    setProfileStudent(student);
+                    setProfileOpen(true);
+                  }}
+                >
+                  View Profile
+                </button>
               </div>
             </motion.div>
           ))
@@ -110,6 +121,15 @@ const StudentList = ({ students, onAddStudent }) => {
           </div>
         )}
       </div>
+
+      <StudentProfileModal 
+        open={profileOpen}
+        student={profileStudent}
+        onClose={() => {
+          setProfileOpen(false);
+          setProfileStudent(null);
+        }}
+      />
 
       <AvatarPickerModal
         open={avatarOpen}
