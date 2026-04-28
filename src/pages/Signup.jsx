@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Mail, Lock, AlertCircle, ArrowRight, CheckCircle2, User, Users, GraduationCap, School, Phone, MapPin, Plus, Trash2 } from 'lucide-react';
+import { Mail, Lock, AlertCircle, ArrowRight, CheckCircle2, User, Users, GraduationCap, School, Phone, MapPin, Plus, Trash2, Globe } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
 import { doc, setDoc } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
 
 const Signup = ({ onToggleMode }) => {
-  const [step, setStep] = useState(1);
-  const [role, setRole] = useState(''); // 'student' or 'parent'
+  const [step, setStep] = useState(() => Number(sessionStorage.getItem('pendingSignupStep')) || 1);
+  const [role, setRole] = useState(() => sessionStorage.getItem('pendingSignupRole') || ''); // 'student' or 'parent'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -34,19 +34,31 @@ const Signup = ({ onToggleMode }) => {
       if (password.length < 6) return setError('Password must be at least 6 characters');
     }
     setError('');
+    if (step === 1) {
+      sessionStorage.setItem('pendingSignupRole', role);
+    }
+    sessionStorage.setItem('pendingSignupStep', String(step + 1));
     setStep(step + 1);
   };
 
-  const handlePrevStep = () => setStep(step - 1);
+  const handlePrevStep = () => {
+    const previousStep = step - 1;
+    sessionStorage.setItem('pendingSignupStep', String(previousStep));
+    setStep(previousStep);
+  };
 
-  const handleGoogleSignup = async () => {
+  const handleGoogleSignup = async (selectedRole) => {
     try {
       setError('');
       setLoading(true);
+      setRole(selectedRole);
+      sessionStorage.setItem('pendingSignupRole', selectedRole);
+      sessionStorage.setItem('pendingSignupStep', '3');
       await loginWithGoogle();
-      // After successful Google login, move to Step 3 to collect remaining details
       setStep(3);
     } catch (err) {
+      sessionStorage.removeItem('pendingSignupRole');
+      sessionStorage.removeItem('pendingSignupStep');
       setError('Google signup failed');
       console.error(err);
     } finally {
@@ -115,6 +127,8 @@ const Signup = ({ onToggleMode }) => {
 
       // 3. Save to Firestore
       await setDoc(doc(db, 'users', user.uid), userData);
+      sessionStorage.removeItem('pendingSignupRole');
+      sessionStorage.removeItem('pendingSignupStep');
 
       setMessage('Account created successfully! Welcome to Sapere.');
     } catch (err) {
@@ -188,33 +202,49 @@ const Signup = ({ onToggleMode }) => {
         {step === 2 && (
           <>
             <div className="auth-field">
-              <label>Email address</label>
+              <label htmlFor="signup-email">Email address</label>
               <div className="auth-input">
                 <Mail size={18} />
-                <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
+                <input id="signup-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
               </div>
             </div>
             <div className="auth-field">
-              <label>Password</label>
+              <label htmlFor="signup-password">Password</label>
               <div className="auth-input">
                 <Lock size={18} />
-                <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="min. 6 characters" />
+                <input id="signup-password" type="password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="min. 6 characters" />
               </div>
             </div>
             <div className="auth-field">
-              <label>Confirm password</label>
+              <label htmlFor="signup-confirm-password">Confirm password</label>
               <div className="auth-input">
                 <Lock size={18} />
-                <input type="password" required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Repeat password" />
+                <input id="signup-confirm-password" type="password" required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Repeat password" />
               </div>
             </div>
 
-            <div className="auth-divider">or</div>
+            <div className="auth-divider">or sign up with Google</div>
 
-            <button type="button" onClick={handleGoogleSignup} disabled={loading} className="auth-social">
-              <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="auth-social__icon" />
-              <span>Continue with Google</span>
-            </button>
+            <div className="auth-google-grid">
+              <button
+                type="button"
+                onClick={() => handleGoogleSignup('student')}
+                disabled={loading}
+                className={`auth-social auth-social--role ${role === 'student' ? 'active' : ''}`}
+              >
+                <Globe size={18} />
+                <span>Student with Google</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleGoogleSignup('parent')}
+                disabled={loading}
+                className={`auth-social auth-social--role ${role === 'parent' ? 'active' : ''}`}
+              >
+                <Globe size={18} />
+                <span>Parent with Google</span>
+              </button>
+            </div>
           </>
         )}
 

@@ -11,6 +11,7 @@ import { LogOut, ShieldCheck, AlertCircle } from 'lucide-react';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
+  const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
   const [activeTab, setActiveTab] = useState('Dashboard');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState('login');
@@ -58,6 +59,10 @@ function App() {
         )}
       </AnimatePresence>
     );
+  }
+
+  if (hasPendingSignup) {
+    return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
   }
 
   if (!user.emailVerified && user.providerData[0].providerId === 'password') {
