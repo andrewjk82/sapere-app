@@ -110,7 +110,32 @@
   box-shadow: 0 24px 60px rgba(91, 33, 182, 0.08);
 }
 
+.settings-display-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.settings-display-item label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #8b7aa7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.settings-display-item p {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #24163f;
+}
+
+/* Page card and general layout */
 .page-card {
+  border-radius: 20px;
   padding: 24px;
 }
 

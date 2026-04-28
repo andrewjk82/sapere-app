@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User } from 'lucide-react';
+import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc } from 'firebase/firestore';
@@ -11,6 +11,7 @@ const Settings = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState(null);
   const [editData, setEditData] = useState({
     firstName: '',
@@ -77,12 +78,27 @@ const Settings = () => {
         updatedAt: new Date().toISOString()
       }, { merge: true });
       setMessage('Profile updated successfully!');
+      setIsEditing(false);
     } catch (e) {
       setError('Failed to update profile.');
       console.error(e);
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleCancel = () => {
+    if (profile) {
+      setEditData({
+        firstName: profile.firstName || '',
+        lastName: profile.lastName || '',
+        phone: profile.phone || '',
+        address: profile.address || '',
+        school: profile.school || '',
+        year: profile.year || ''
+      });
+    }
+    setIsEditing(false);
   };
 
   return (
@@ -106,12 +122,23 @@ const Settings = () => {
         <section className="app-panel page-card">
           <div className="page-card__header">
             <h3>Profile & Personal Info</h3>
-            {isAdmin && (
-              <span className="page-pill">
-                <ShieldCheck size={14} />
-                Admin
-              </span>
-            )}
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              {isAdmin && (
+                <span className="page-pill">
+                  <ShieldCheck size={14} />
+                  Admin
+                </span>
+              )}
+              {!isEditing && (
+                <button 
+                  className="app-icon-button" 
+                  onClick={() => setIsEditing(true)}
+                  title="Edit Profile"
+                >
+                  <Pencil size={18} />
+                </button>
+              )}
+            </div>
           </div>
 
           <div className="settings-profile" style={{ marginBottom: '2rem' }}>
@@ -125,78 +152,116 @@ const Settings = () => {
             </div>
           </div>
 
-          <div className="app-form-grid">
-            <div className="app-form-field">
-              <label>Given Name</label>
-              <input 
-                type="text" 
-                value={editData.firstName} 
-                onChange={(e) => setEditData({...editData, firstName: e.target.value})} 
-                placeholder="First name"
-              />
-            </div>
-            <div className="app-form-field">
-              <label>Surname</label>
-              <input 
-                type="text" 
-                value={editData.lastName} 
-                onChange={(e) => setEditData({...editData, lastName: e.target.value})} 
-                placeholder="Last name"
-              />
-            </div>
-            <div className="app-form-field">
-              <label>Phone Number</label>
-              <input 
-                type="text" 
-                value={editData.phone} 
-                onChange={(e) => setEditData({...editData, phone: e.target.value})} 
-                placeholder="04xx xxx xxx"
-              />
-            </div>
-            
-            {profile?.role === 'student' && (
-              <>
-                <div className="app-form-field">
-                  <label>Year / Grade</label>
-                  <input 
-                    type="text" 
-                    value={editData.year} 
-                    onChange={(e) => setEditData({...editData, year: e.target.value})} 
-                    placeholder="e.g. Year 10"
-                  />
-                </div>
-                <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
-                  <label>School Name</label>
-                  <input 
-                    type="text" 
-                    value={editData.school} 
-                    onChange={(e) => setEditData({...editData, school: e.target.value})} 
-                    placeholder="e.g. Central High"
-                  />
-                </div>
-              </>
-            )}
+          {isEditing ? (
+            <div className="app-form-grid">
+              <div className="app-form-field">
+                <label>Given Name</label>
+                <input 
+                  type="text" 
+                  value={editData.firstName} 
+                  onChange={(e) => setEditData({...editData, firstName: e.target.value})} 
+                  placeholder="First name"
+                />
+              </div>
+              <div className="app-form-field">
+                <label>Surname</label>
+                <input 
+                  type="text" 
+                  value={editData.lastName} 
+                  onChange={(e) => setEditData({...editData, lastName: e.target.value})} 
+                  placeholder="Last name"
+                />
+              </div>
+              <div className="app-form-field">
+                <label>Phone Number</label>
+                <input 
+                  type="text" 
+                  value={editData.phone} 
+                  onChange={(e) => setEditData({...editData, phone: e.target.value})} 
+                  placeholder="04xx xxx xxx"
+                />
+              </div>
+              
+              {profile?.role === 'student' && (
+                <>
+                  <div className="app-form-field">
+                    <label>Year / Grade</label>
+                    <input 
+                      type="text" 
+                      value={editData.year} 
+                      onChange={(e) => setEditData({...editData, year: e.target.value})} 
+                      placeholder="e.g. Year 10"
+                    />
+                  </div>
+                  <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+                    <label>School Name</label>
+                    <input 
+                      type="text" 
+                      value={editData.school} 
+                      onChange={(e) => setEditData({...editData, school: e.target.value})} 
+                      placeholder="e.g. Central High"
+                    />
+                  </div>
+                </>
+              )}
 
-            <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
-              <label>Home Address</label>
-              <input 
-                type="text" 
-                value={editData.address} 
-                onChange={(e) => setEditData({...editData, address: e.target.value})} 
-                placeholder="Full street address"
-              />
-            </div>
+              <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+                <label>Home Address</label>
+                <input 
+                  type="text" 
+                  value={editData.address} 
+                  onChange={(e) => setEditData({...editData, address: e.target.value})} 
+                  placeholder="Full street address"
+                />
+              </div>
 
-            <div style={{ marginTop: '1rem', gridColumn: 'span 2' }}>
-              <button 
-                className="app-button app-button--primary" 
-                onClick={handleSaveProfile}
-                disabled={loading}
-              >
-                {loading ? 'Saving...' : 'Save Changes'}
-              </button>
+              <div style={{ marginTop: '1rem', gridColumn: 'span 2', display: 'flex', gap: '12px' }}>
+                <button 
+                  className="app-button app-button--primary" 
+                  onClick={handleSaveProfile}
+                  disabled={loading}
+                >
+                  <Check size={18} />
+                  {loading ? 'Saving...' : 'Save Changes'}
+                </button>
+                <button 
+                  className="app-button app-button--secondary" 
+                  onClick={handleCancel}
+                  disabled={loading}
+                >
+                  <X size={18} />
+                  Cancel
+                </button>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="settings-display-grid">
+              <div className="settings-display-item">
+                <label>Full Name</label>
+                <p>{profile?.firstName} {profile?.lastName}</p>
+              </div>
+              <div className="settings-display-item">
+                <label>Phone Number</label>
+                <p>{profile?.phone || 'Not set'}</p>
+              </div>
+              {profile?.role === 'student' && (
+                <>
+                  <div className="settings-display-item">
+                    <label>Year / Grade</label>
+                    <p>{profile?.year || 'Not set'}</p>
+                  </div>
+                  <div className="settings-display-item">
+                    <label>School</label>
+                    <p>{profile?.school || 'Not set'}</p>
+                  </div>
+                </>
+              )}
+              <div className="settings-display-item" style={{ gridColumn: 'span 2' }}>
+                <label>Home Address</label>
+                <p>{profile?.address || 'Not set'}</p>
+              </div>
+            </div>
+          )}
         </section>
 
         <aside className="app-page">
