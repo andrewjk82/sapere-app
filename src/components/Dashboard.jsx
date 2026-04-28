@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Plus, Search, Bell, Users, Clock, CheckCircle2, GraduationCap } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
+import { db } from '../firebase/config';
+import { doc, onSnapshot } from 'firebase/firestore';
 
 const Dashboard = ({ students, onAddStudent }) => {
   const { user, isAdmin } = useAuth();
-  const userName = user?.displayName || user?.email?.split('@')[0] || 'Andrew';
+  const [profile, setProfile] = useState(null);
+
+  useEffect(() => {
+    if (!user?.uid) return undefined;
+    const ref = doc(db, 'users', user.uid);
+    return onSnapshot(ref, (snap) => {
+      setProfile(snap.exists() ? snap.data() : null);
+    });
+  }, [user?.uid]);
+
+  const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
 
   // Calculate dynamic stats
   const totalStudents = students.length;
