@@ -5,7 +5,8 @@ import {
   createUserWithEmailAndPassword, 
   signOut, 
   signInWithPopup,
-  sendEmailVerification
+  sendEmailVerification,
+  sendPasswordResetEmail
 } from 'firebase/auth';
 import { auth, googleProvider, ADMIN_EMAIL } from '../firebase/config';
 
@@ -46,13 +47,18 @@ export const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
   const value = {
     user,
     isAdmin,
     signup,
     login,
     loginWithGoogle,
-    logout
+    logout,
+    resetPassword
   };
 
   return (

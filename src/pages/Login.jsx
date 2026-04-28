@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, Globe, AlertCircle, ArrowRight } from 'lucide-react';
+import { Mail, Lock, Globe, AlertCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import AuthLayout from './AuthLayout';
 
@@ -7,13 +7,15 @@ const Login = ({ onToggleMode }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const { login, loginWithGoogle } = useAuth();
+  const { login, loginWithGoogle, resetPassword } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setError('');
+      setMessage('');
       setLoading(true);
       await login(email, password);
     } catch (err) {
@@ -24,9 +26,30 @@ const Login = ({ onToggleMode }) => {
     }
   };
 
+  const handleForgotPassword = async () => {
+    if (!email) {
+      return setError('Please enter your email address first');
+    }
+    try {
+      setError('');
+      setLoading(true);
+      await resetPassword(email);
+      setMessage('Password reset email sent! Check your inbox.');
+    } catch (err) {
+      setError('Failed to send reset email. Check if the email is correct.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleForgotEmail = () => {
+    setMessage('Please contact support@sapere.edu to recover your account email.');
+  };
+
   const handleGoogleLogin = async () => {
     try {
       setError('');
+      setMessage('');
       await loginWithGoogle();
     } catch (err) {
       setError('Google login failed');
@@ -59,6 +82,13 @@ const Login = ({ onToggleMode }) => {
         </div>
       )}
 
+      {message && (
+        <div className="auth-message auth-message--success">
+          <CheckCircle2 size={18} />
+          <span>{message}</span>
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} className="auth-form">
         <div className="auth-field">
           <label htmlFor="login-email">Email address</label>
@@ -73,13 +103,13 @@ const Login = ({ onToggleMode }) => {
               placeholder="you@example.com"
             />
           </div>
+          <button type="button" onClick={handleForgotEmail} className="auth-help-link">
+            Forgot email?
+          </button>
         </div>
 
         <div className="auth-field">
-          <div className="auth-field__row">
-            <label htmlFor="login-password">Password</label>
-            <button type="button" className="auth-link">Forgot?</button>
-          </div>
+          <label htmlFor="login-password">Password</label>
           <div className="auth-input">
             <Lock size={18} />
             <input
@@ -91,6 +121,9 @@ const Login = ({ onToggleMode }) => {
               placeholder="Enter your password"
             />
           </div>
+          <button type="button" onClick={handleForgotPassword} className="auth-help-link">
+            Forgot password?
+          </button>
         </div>
 
         <button type="submit" disabled={loading} className="auth-submit">
