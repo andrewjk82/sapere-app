@@ -58,22 +58,22 @@ const Dashboard = ({ students, onAddStudent }) => {
         animate={{ opacity: 1, y: 0 }}
         className="app-page__header"
       >
-        <div className="app-page__title">
-          <h2>{getGreeting()}, {userName}</h2>
-          {isAdmin ? (
-            <p>You have {totalStudents} students registered and ready for review.</p>
-          ) : (
-            <p>Ready to continue your learning journey today?</p>
-          )}
+        <div className="app-page__greeting-container" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0} style={{ width: '54px', height: '54px' }}>
+            <img src={avatarUrl} alt="Profile" />
+          </div>
+          <div className="app-page__title">
+            <h2>{getGreeting()}, {userName}</h2>
+            {isAdmin ? (
+              <p>You have {totalStudents} students registered and ready for review.</p>
+            ) : (
+              <p>Ready to continue your learning journey today?</p>
+            )}
+          </div>
         </div>
+
         <div className="app-page__actions">
           <div className="app-page__actions-row" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
-            <button className="app-icon-button">
-              <Bell size={20} />
-            </button>
-            <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
-              <img src={avatarUrl} alt="Profile" />
-            </div>
             <button className="app-icon-button" onClick={logout} title="Sign Out">
               <LogOut size={20} />
             </button>
