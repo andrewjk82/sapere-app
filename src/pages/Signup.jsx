@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Lock, Globe, AlertCircle, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Mail, Lock, Globe, AlertCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const Signup = ({ onToggleMode }) => {
@@ -32,75 +32,87 @@ const Signup = ({ onToggleMode }) => {
   };
 
   return (
-    <div className="min-h-screen bg-bg-deep flex items-center justify-center p-6 relative overflow-hidden font-sans">
-      <div className="absolute top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-accent/20 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-[-10%] left-[-10%] w-[30vw] h-[30vw] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
-
+    <div className="min-h-screen bg-[#FFFFFF] flex flex-col items-center justify-center p-6 font-sans antialiased text-[#111827]">
       <motion.div 
-        initial={{ opacity: 0, scale: 0.95, y: 20 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        className="w-full max-w-md glass-panel p-10 rounded-[2.5rem] relative z-10"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="w-full max-w-[400px] flex flex-col items-center"
       >
-        <div className="flex flex-col items-center mb-8">
-          <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-md border border-accent/10 mb-4 overflow-hidden">
+        <div className="mb-10 flex flex-col items-center">
+          <div className="w-14 h-14 rounded-2xl overflow-hidden mb-6 grayscale">
             <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
           </div>
-          <h1 className="text-3xl font-black text-primary tracking-tight mb-2">Create Account</h1>
-          <p className="text-secondary font-medium text-sm">Join the elite tutor community</p>
+          <h1 className="text-3xl font-black tracking-tight mb-2">Create Account</h1>
+          <p className="text-slate-400 font-medium text-sm">Start your journey with us</p>
         </div>
 
         {error && (
-          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center gap-3 text-red-500 text-sm font-bold">
-            <AlertCircle size={18} />
+          <div className="w-full mb-6 p-4 bg-red-50 border border-red-100 rounded-xl flex items-center gap-3 text-red-600 text-sm font-semibold">
+            <AlertCircle size={16} />
             <span>{error}</span>
           </div>
         )}
 
         {message && (
-          <div className="mb-6 p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl flex items-center gap-3 text-emerald-600 text-sm font-bold">
-            <CheckCircle2 size={18} />
+          <div className="w-full mb-6 p-4 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center gap-3 text-emerald-600 text-sm font-semibold">
+            <CheckCircle2 size={16} />
             <span>{message}</span>
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-1">
-            <label className="text-[10px] font-black text-secondary uppercase tracking-widest px-4">Email</label>
-            <div className="relative group">
-              <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
-              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="pl-14" placeholder="name@example.com" />
+        <form onSubmit={handleSubmit} className="w-full space-y-4">
+          <div className="space-y-1 group">
+            <div className="relative">
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#8B5CF6] transition-colors" size={18} />
+              <input 
+                type="email" required value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full bg-[#F9FAFB] border border-[#F3F4F6] rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:bg-white focus:border-[#8B5CF6]/30 focus:ring-4 focus:ring-[#8B5CF6]/5 text-sm font-medium transition-all"
+                placeholder="Email address"
+              />
             </div>
           </div>
 
-          <div className="space-y-1">
-            <label className="text-[10px] font-black text-secondary uppercase tracking-widest px-4">Password</label>
-            <div className="relative group">
-              <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
-              <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} className="pl-14" placeholder="Create password" />
+          <div className="space-y-1 group">
+            <div className="relative">
+              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#8B5CF6] transition-colors" size={18} />
+              <input 
+                type="password" required value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full bg-[#F9FAFB] border border-[#F3F4F6] rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:bg-white focus:border-[#8B5CF6]/30 focus:ring-4 focus:ring-[#8B5CF6]/5 text-sm font-medium transition-all"
+                placeholder="Password"
+              />
             </div>
           </div>
 
-          <div className="space-y-1">
-            <label className="text-[10px] font-black text-secondary uppercase tracking-widest px-4">Confirm</label>
-            <div className="relative group">
-              <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
-              <input type="password" required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="pl-14" placeholder="Confirm password" />
+          <div className="space-y-1 group">
+            <div className="relative">
+              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#8B5CF6] transition-colors" size={18} />
+              <input 
+                type="password" required value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                className="w-full bg-[#F9FAFB] border border-[#F3F4F6] rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:bg-white focus:border-[#8B5CF6]/30 focus:ring-4 focus:ring-[#8B5CF6]/5 text-sm font-medium transition-all"
+                placeholder="Confirm password"
+              />
             </div>
           </div>
 
-          <button type="submit" disabled={loading} className="btn-primary flex items-center justify-center gap-2 group mt-4">
+          <button 
+            type="submit" disabled={loading}
+            className="w-full bg-[#8B5CF6] text-white py-4 rounded-xl text-sm font-bold shadow-sm hover:bg-[#7C3AED] hover:shadow-lg hover:shadow-[#8B5CF6]/20 transition-all flex items-center justify-center gap-2 group mt-2"
+          >
             {loading ? 'Creating Account...' : (
               <>
-                SIGN UP NOW
-                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                Create Account
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </>
             )}
           </button>
         </form>
 
-        <p className="text-center text-secondary text-sm font-medium mt-10">
+        <p className="mt-10 text-slate-400 text-sm font-medium text-center">
           Already have an account? 
-          <button onClick={onToggleMode} className="text-accent font-black hover:underline ml-2">Sign In</button>
+          <button onClick={onToggleMode} className="text-[#8B5CF6] font-bold hover:underline ml-2">Sign In</button>
         </p>
       </motion.div>
     </div>

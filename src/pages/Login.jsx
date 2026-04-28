@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Lock, Globe, AlertCircle, ChevronRight } from 'lucide-react';
+import { Mail, Lock, Globe, AlertCircle, ArrowRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const Login = ({ onToggleMode }) => {
@@ -35,101 +35,93 @@ const Login = ({ onToggleMode }) => {
   };
 
   return (
-    <div className="min-h-screen bg-bg-deep flex items-center justify-center p-6 relative overflow-hidden font-sans">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-accent/20 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-[-10%] left-[-10%] w-[30vw] h-[30vw] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute top-[20%] left-[5%] w-[10vw] h-[10vw] bg-accent/30 rounded-full blur-[60px] pointer-events-none animate-pulse"></div>
-
+    <div className="min-h-screen bg-[#FFFFFF] flex flex-col items-center justify-center p-6 font-sans antialiased text-[#111827]">
       <motion.div 
-        initial={{ opacity: 0, scale: 0.95, y: 20 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="w-full max-w-md glass-panel p-10 rounded-[2.5rem] relative z-10"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="w-full max-w-[400px] flex flex-col items-center"
       >
-        {/* Logo and Welcome */}
-        <div className="flex flex-col items-center mb-10">
-          <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center shadow-md border border-accent/10 mb-6 overflow-hidden">
+        {/* Minimal Branding */}
+        <div className="mb-12 flex flex-col items-center">
+          <div className="w-16 h-16 rounded-2xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-700">
             <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
           </div>
-          <h1 className="text-4xl font-black text-primary tracking-tight mb-2">Welcome</h1>
-          <p className="text-secondary font-medium text-sm">Elite Tutor Management System</p>
+          <h1 className="text-3xl font-black tracking-tight mb-2">Sapere Aude</h1>
+          <p className="text-slate-400 font-medium text-sm">Empowering elite education</p>
         </div>
 
         {error && (
-          <motion.div 
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="mb-8 p-4 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center gap-3 text-red-500 text-sm font-bold"
-          >
-            <AlertCircle size={18} />
+          <div className="w-full mb-6 p-4 bg-red-50 border border-red-100 rounded-xl flex items-center gap-3 text-red-600 text-sm font-semibold">
+            <AlertCircle size={16} />
             <span>{error}</span>
-          </motion.div>
+          </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="space-y-2">
-            <label className="text-xs font-black text-secondary uppercase tracking-widest px-4">Email Address</label>
+        {/* Login Form */}
+        <form onSubmit={handleSubmit} className="w-full space-y-5">
+          <div className="space-y-1">
             <div className="relative group">
-              <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#8B5CF6] transition-colors" size={18} />
               <input 
                 type="email" required value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="pl-14"
-                placeholder="name@example.com"
+                className="w-full bg-[#F9FAFB] border border-[#F3F4F6] rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:bg-white focus:border-[#8B5CF6]/30 focus:ring-4 focus:ring-[#8B5CF6]/5 text-sm font-medium transition-all"
+                placeholder="Email address"
               />
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-xs font-black text-secondary uppercase tracking-widest px-4">Password</label>
+          <div className="space-y-1">
             <div className="relative group">
-              <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-accent transition-colors" size={18} />
+              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-[#8B5CF6] transition-colors" size={18} />
               <input 
                 type="password" required value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="pl-14"
-                placeholder="••••••••"
+                className="w-full bg-[#F9FAFB] border border-[#F3F4F6] rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:bg-white focus:border-[#8B5CF6]/30 focus:ring-4 focus:ring-[#8B5CF6]/5 text-sm font-medium transition-all"
+                placeholder="Password"
               />
             </div>
           </div>
 
           <div className="flex justify-end">
-            <button type="button" className="text-xs font-bold text-accent hover:underline">Forgot password?</button>
+            <button type="button" className="text-xs font-semibold text-slate-400 hover:text-[#8B5CF6] transition-colors">Forgot password?</button>
           </div>
 
           <button 
             type="submit" disabled={loading}
-            className="btn-primary flex items-center justify-center gap-2 group"
+            className="w-full bg-[#8B5CF6] text-white py-4 rounded-xl text-sm font-bold shadow-sm hover:bg-[#7C3AED] hover:shadow-lg hover:shadow-[#8B5CF6]/20 transition-all flex items-center justify-center gap-2 group"
           >
-            {loading ? 'Authenticating...' : (
+            {loading ? 'Processing...' : (
               <>
-                SIGN IN
-                <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                Continue
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </>
             )}
           </button>
         </form>
 
-        <div className="mt-10 flex flex-col items-center gap-8">
-          <div className="relative w-full flex items-center justify-center">
-            <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-accent/20"></div></div>
-            <span className="relative bg-white/20 backdrop-blur-md px-4 text-[10px] font-black text-slate-400 uppercase tracking-widest">Or login with</span>
-          </div>
-
-          <button 
-            onClick={handleGoogleLogin}
-            className="w-full py-4 bg-white/50 hover:bg-white border border-accent/10 rounded-full flex items-center justify-center gap-3 transition-all shadow-sm"
-          >
-            <Globe size={20} className="text-accent" />
-            <span className="font-bold text-primary text-sm">Google Account</span>
-          </button>
-
-          <p className="text-center text-secondary text-sm font-medium">
-            Don't have an account? 
-            <button onClick={onToggleMode} className="text-accent font-black hover:underline ml-2">Sign Up Now</button>
-          </p>
+        {/* Divider */}
+        <div className="w-full mt-10 mb-8 flex items-center gap-4">
+          <div className="flex-grow h-[1px] bg-slate-100"></div>
+          <span className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Or</span>
+          <div className="flex-grow h-[1px] bg-slate-100"></div>
         </div>
+
+        {/* Social Login */}
+        <button 
+          onClick={handleGoogleLogin}
+          className="w-full py-3.5 bg-white border border-slate-100 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-50 transition-all text-sm font-semibold text-slate-600"
+        >
+          <Globe size={18} className="text-[#8B5CF6]" />
+          Sign in with Google
+        </button>
+
+        {/* Footer Link */}
+        <p className="mt-12 text-slate-400 text-sm font-medium">
+          New here? 
+          <button onClick={onToggleMode} className="text-[#8B5CF6] font-bold hover:underline ml-2">Create an account</button>
+        </p>
       </motion.div>
     </div>
   );
