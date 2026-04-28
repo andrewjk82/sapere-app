@@ -145,13 +145,13 @@
 .auth-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 24px; /* Increased gap */
 }
 
 .auth-field {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .auth-field__row {
@@ -194,7 +194,7 @@
 
 .auth-input input {
   width: 100%;
-  padding: 16px 18px 16px 46px;
+  padding: 18px 20px 18px 48px; /* Slightly more padding */
   border-radius: 18px;
   border: 1px solid rgba(167, 139, 250, 0.18);
   background: rgba(255, 255, 255, 0.85);
@@ -241,6 +241,7 @@
   font: inherit;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  width: 100%; /* Force full width for both */
 }
 
 .auth-submit {
@@ -248,8 +249,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 16px 18px;
-  margin-top: 4px;
+  padding: 18px;
+  margin-top: 8px;
   color: white;
   font-weight: 700;
   background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 55%, #7c3aed 100%);
@@ -271,7 +272,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  margin: 6px 0 2px;
+  margin: 32px 0 16px; /* Increased vertical space */
   color: #9f8cc0;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
@@ -291,11 +292,12 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 15px 18px;
+  padding: 18px;
   color: #43335f;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(167, 139, 250, 0.16);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.05);
 }
 
 .auth-social__icon {
