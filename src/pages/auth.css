@@ -359,6 +359,213 @@
   font-weight: 700;
 }
 
+/* Role Selection Grid */
+.auth-role-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.auth-role-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 24px;
+  background: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.04);
+}
+
+.auth-role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.08);
+  border-color: rgba(196, 181, 253, 0.3);
+}
+
+.auth-role-card.active {
+  border-color: #8b5cf6;
+  background: rgba(245, 243, 255, 0.5);
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.12);
+}
+
+.auth-role-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: #f5f3ff;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  color: #8b5cf6;
+  transition: all 0.3s ease;
+}
+
+.auth-role-card.active .auth-role-card__icon {
+  background: #8b5cf6;
+  color: white;
+}
+
+.auth-role-card strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #24163f;
+  margin-bottom: 4px;
+}
+
+.auth-role-card span {
+  font-size: 0.8rem;
+  color: #8677a5;
+  line-height: 1.4;
+}
+
+/* Multi-step Layout */
+.auth-scroll-container {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-scroll-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.auth-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.auth-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(196, 181, 253, 0.4);
+  border-radius: 10px;
+}
+
+.auth-step-actions {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.auth-back-btn {
+  padding: 0 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  background: white;
+  color: #56456f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-back-btn:hover {
+  background: #f9f8ff;
+  border-color: rgba(167, 139, 250, 0.4);
+}
+
+/* Parent/Student Details */
+.auth-section-divider {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #9f8cc0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 12px 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(167, 139, 250, 0.2), transparent);
+}
+
+.auth-student-entry {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(167, 139, 250, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-student-entry__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.auth-student-entry__header strong {
+  font-size: 0.85rem;
+  color: #7c3aed;
+}
+
+.auth-remove-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 0;
+  background: rgba(244, 63, 94, 0.08);
+  color: #e11d48;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-remove-btn:hover {
+  background: #e11d48;
+  color: white;
+}
+
+.auth-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10px;
+}
+
+.auth-field-row input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  background: white;
+  font-size: 0.9rem;
+}
+
+.auth-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px dashed rgba(139, 92, 246, 0.4);
+  background: rgba(245, 243, 255, 0.4);
+  color: #6d28d9;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.auth-add-btn:hover {
+  background: rgba(245, 243, 255, 0.8);
+  border-style: solid;
+}
+
 .auth-showcase {
   position: relative;
   border-radius: 36px;
