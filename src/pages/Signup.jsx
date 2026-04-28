@@ -223,7 +223,7 @@ const Signup = ({ onToggleMode }) => {
               </div>
             </div>
 
-            <div className="auth-divider">or sign up with Google</div>
+            <div className="auth-divider">or</div>
 
             <div className="auth-google-grid">
               <button
