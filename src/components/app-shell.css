@@ -1210,14 +1210,21 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 /* Header actions wrap */
 .app-page__actions {
   display: flex;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  justify-content: flex-end; /* Align to the right by default */
+  gap: 20px;
+  flex: 1;
+}
+
+.app-input {
+  max-width: 400px;
+  width: 100%;
 }
 
 @media (max-width: 720px) {
@@ -1227,13 +1234,19 @@
   }
 
   .app-page__actions {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Icons on top, Search on bottom */
     align-items: stretch;
     gap: 16px;
+    width: 100%;
   }
 
   .app-page__actions-row {
     justify-content: flex-start;
+  }
+
+  .app-input {
+    max-width: none;
+    width: 100%;
   }
 
   .student-card__footer,
