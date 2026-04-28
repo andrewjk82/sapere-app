@@ -177,7 +177,13 @@ function App() {
 
     switch (activeTab) {
       case 'Dashboard':
-        return <Dashboard students={students} onAddStudent={() => setIsModalOpen(true)} />;
+        return (
+          <Dashboard 
+            students={students} 
+            onAddStudent={() => setIsModalOpen(true)} 
+            onSelectStudent={(id) => setSelectedStudentId(id)}
+          />
+        );
       case 'Students':
         return (
           <StudentList 

@@ -8,7 +8,7 @@ import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
-const Dashboard = ({ students, onAddStudent }) => {
+const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
   const { user, isAdmin, logout } = useAuth();
   const [profile, setProfile] = useState(null);
   const [avatarOpen, setAvatarOpen] = useState(false);
@@ -176,7 +176,11 @@ const Dashboard = ({ students, onAddStudent }) => {
                 <div className="activity-list">
                   {students.length > 0 ? (
                     students.slice(0, 5).map(student => (
-                      <StudentRow key={student.id} {...student} />
+                      <StudentRow 
+                        key={student.id} 
+                        {...student} 
+                        onClick={() => onSelectStudent(student.id)} 
+                      />
                     ))
                   ) : (
                     <div className="app-empty">
