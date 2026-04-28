@@ -74,12 +74,12 @@ const Dashboard = ({ students, onAddStudent }) => {
           <button className="app-icon-button">
             <Bell size={20} />
           </button>
-          <button className="app-icon-button" onClick={logout} title="Sign Out">
-            <LogOut size={20} />
-          </button>
           <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
             <img src={avatarUrl} alt="Profile" />
           </div>
+          <button className="app-icon-button" onClick={logout} title="Sign Out">
+            <LogOut size={20} />
+          </button>
         </div>
       </motion.header>
 
