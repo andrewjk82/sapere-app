@@ -53,39 +53,7 @@ const Dashboard = ({ students, onAddStudent }) => {
 
   return (
     <div className="app-page">
-      <motion.header 
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="app-page__header"
-      >
-        <div className="app-page__greeting-container" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0} style={{ width: '54px', height: '54px' }}>
-            <img src={avatarUrl} alt="Profile" />
-          </div>
-          <div className="app-page__title">
-            <h2>{getGreeting()}, {userName}</h2>
-            {isAdmin ? (
-              <p>You have {totalStudents} students registered and ready for review.</p>
-            ) : (
-              <p>Ready to continue your learning journey today?</p>
-            )}
-          </div>
-        </div>
-
-        <div className="app-page__actions">
-          <div className="app-input">
-            <Search size={18} />
-            <input type="text" placeholder="Search..." />
-          </div>
-        </div>
-      </motion.header>
-
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4 }}
-        className="app-page"
-      >
+      <div className="app-page">
         {!isAdmin && (
           <div className="vision-card-wrapper" style={{ marginBottom: '24px' }}>
             <div className="app-panel vision-card" style={{ 
@@ -117,6 +85,11 @@ const Dashboard = ({ students, onAddStudent }) => {
                   </div>
                 )}
               </div>
+            </div>
+            
+            <div className="app-input" style={{ marginTop: '24px', maxWidth: '100%' }}>
+              <Search size={18} />
+              <input type="text" placeholder="Search my courses, students, and more..." style={{ padding: '16px 0' }} />
             </div>
           </div>
         )}
