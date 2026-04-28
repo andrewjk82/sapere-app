@@ -74,22 +74,23 @@ export const studentService = {
     let unsubUsers = () => {};
     if (isAdmin) {
       const usersRef = collection(db, "users");
-      const usersQuery = query(usersRef, where("role", "==", "student"));
-      
-      unsubUsers = onSnapshot(usersQuery, (snapshot) => {
-        registeredStudents = snapshot.docs.map(doc => {
-          const data = doc.data();
-          return {
-            id: doc.id,
-            source: 'registered',
-            name: data.displayName || `${data.firstName} ${data.lastName}` || data.email,
-            level: data.year || "Year ?",
-            subject: "Registered Student", // Or from a specific field if available
-            status: "Active",
-            email: data.email,
-            ...data
-          };
-        });
+      // Fetch all users and filter in memory to handle missing 'role' fields
+      unsubUsers = onSnapshot(usersRef, (snapshot) => {
+        registeredStudents = snapshot.docs
+          .map(doc => ({ id: doc.id, ...doc.data() }))
+          .filter(data => data.email !== "andrewjk82@gmail.com") // Filter out admin
+          .map(data => {
+            return {
+              id: data.id,
+              source: 'registered',
+              name: data.displayName || `${data.firstName} ${data.lastName}` || data.email,
+              level: data.year || "Year ?",
+              subject: data.role === 'parent' ? "Parent Account" : "Registered Student",
+              status: "Active",
+              email: data.email,
+              ...data
+            };
+          });
         updateAll();
       }, onError);
     }
