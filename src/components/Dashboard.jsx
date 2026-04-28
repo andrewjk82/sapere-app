@@ -21,6 +21,13 @@ const Dashboard = ({ students, onAddStudent }) => {
     { label: "Hours Tutored", value: `${Math.round(totalLessons * 1.5)}h`, icon: "Clock" },
   ];
 
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good morning";
+    if (hour < 18) return "Good afternoon";
+    return "Good evening";
+  };
+
   return (
     <div className="app-page">
       <motion.header 
@@ -29,7 +36,7 @@ const Dashboard = ({ students, onAddStudent }) => {
         className="app-page__header"
       >
         <div className="app-page__title">
-          <h2>Welcome back, {userName}</h2>
+          <h2>{getGreeting()}, {userName}</h2>
           {isAdmin ? (
             <p>You have {totalStudents} students registered and ready for review.</p>
           ) : (
