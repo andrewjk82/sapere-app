@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Lock, Globe, AlertCircle, ChevronRight } from 'lucide-react';
+import { Mail, Lock, Globe, AlertCircle, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const Login = ({ onToggleMode }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { login, loginWithGoogle } = useAuth();
@@ -35,115 +36,117 @@ const Login = ({ onToggleMode }) => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans overflow-hidden">
-      {/* 1. Header with Gradient Background */}
-      <div className="relative h-80 w-full bg-accent flex flex-col items-center justify-center">
-        {/* Simple Gradient Circle */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-        
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="relative z-10 flex flex-col items-center"
-        >
-          <div className="w-24 h-24 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/40 mb-3 bg-white">
-            <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
-          </div>
-          <h1 className="text-white text-3xl font-black tracking-tight">SAPERE AUDE</h1>
-          <p className="text-white/90 text-xs font-black uppercase tracking-widest">Academia</p>
-        </motion.div>
-
-        {/* CSS Wave Effect */}
-        <div 
-          className="absolute bottom-0 left-0 w-full h-16 bg-white" 
-          style={{ borderRadius: '100% 100% 0 0 / 100% 100% 0 0' }}
-        ></div>
-      </div>
-
-      {/* 2. Form Content Area */}
-      <div className="flex-grow flex flex-col items-center px-8 relative z-20">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="w-full max-w-md"
-        >
-          <div className="mb-10 text-center">
-            <h2 className="text-4xl font-black text-text-primary mb-2">Welcome!</h2>
-            <p className="text-slate-400 font-medium text-sm">Please sign in to your account</p>
+    <div className="min-h-screen bg-cream flex items-center justify-center p-4 md:p-8 font-sans">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="w-full max-w-4xl bg-white rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[600px]"
+      >
+        {/* Left Side: Login Form */}
+        <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <div className="mb-10">
+            <h1 className="text-4xl font-black text-primary mb-2">Welcome Back!!</h1>
+            <p className="text-secondary font-medium">Please login to your account</p>
           </div>
 
           {error && (
-            <div className="mb-8 p-4 bg-red-50 border border-red-100 rounded-2xl flex items-center gap-3 text-red-500 text-sm font-bold">
+            <div className="mb-6 p-4 bg-red-50 border border-red-100 rounded-2xl flex items-center gap-3 text-red-500 text-sm font-bold">
               <AlertCircle size={18} />
               <span>{error}</span>
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-2 group">
-              <label className="text-xs text-slate-400 uppercase font-black tracking-widest px-4">Email Address</label>
+            <div className="space-y-2">
+              <label className="text-sm font-bold text-primary px-2">Email</label>
               <div className="relative">
-                <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300 transition-colors" size={20} />
+                <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-secondary" size={18} />
                 <input 
                   type="email" required value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-slate-50 border-2 border-slate-50 rounded-full py-4 pl-14 pr-6 focus:outline-none focus:bg-white text-text-primary font-bold transition-all shadow-sm"
-                  placeholder="name@example.com"
+                  className="w-full pl-14 bg-cream/30 border-transparent focus:bg-white transition-all"
+                  placeholder="email@gmail.com"
                 />
               </div>
             </div>
 
-            <div className="space-y-2 group">
-              <label className="text-xs text-slate-400 uppercase font-black tracking-widest px-4">Password</label>
+            <div className="space-y-2">
+              <label className="text-sm font-bold text-primary px-2">Password</label>
               <div className="relative">
-                <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300 transition-colors" size={20} />
+                <Lock className="absolute left-5 top-1/2 -translate-y-1/2 text-secondary" size={18} />
                 <input 
                   type="password" required value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-slate-50 border-2 border-slate-50 rounded-full py-4 pl-14 pr-6 focus:outline-none focus:bg-white text-text-primary font-bold transition-all shadow-sm"
-                  placeholder="••••••••"
+                  className="w-full pl-14 pr-12 bg-cream/30 border-transparent focus:bg-white transition-all"
+                  placeholder="Enter your password"
                 />
+                <button 
+                  type="button" 
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-5 top-1/2 -translate-y-1/2 text-secondary hover:text-primary transition-colors"
+                >
+                  {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
               </div>
             </div>
 
-            <div className="flex justify-end pr-2">
-              <button type="button" className="text-xs font-black text-accent hover:underline">Forgot Password?</button>
+            <div className="flex justify-end">
+              <button type="button" className="text-xs font-bold text-secondary hover:text-primary transition-colors">Forgot Password?</button>
             </div>
 
             <button 
               type="submit" disabled={loading}
-              className="w-full bg-accent text-white py-5 rounded-full text-lg font-black tracking-wider shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group mt-4"
+              className="btn-primary w-full py-4 rounded-full text-lg shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
-              {loading ? 'AUTHENTICATING...' : (
-                <>
-                  SIGN IN
-                  <ChevronRight size={20} className="transition-transform group-hover:translate-x-1" />
-                </>
-              )}
+              {loading ? 'Logging in...' : 'Login'}
             </button>
           </form>
 
-          <div className="mt-12 space-y-8 pb-10">
-            <div className="relative flex items-center justify-center">
-              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-slate-100"></div></div>
-              <span className="relative bg-white px-6 text-xs font-black text-slate-300 uppercase tracking-widest">Or login with</span>
+          <div className="mt-8 flex flex-col items-center gap-6">
+            <div className="flex items-center gap-4 w-full">
+              <div className="flex-grow border-t border-cream"></div>
+              <span className="text-xs text-secondary font-bold">- or -</span>
+              <div className="flex-grow border-t border-cream"></div>
             </div>
 
-            <button 
-              onClick={handleGoogleLogin}
-              className="w-full py-4 bg-white border-2 border-slate-100 rounded-full flex items-center justify-center gap-3 hover:bg-slate-50 transition-all shadow-sm"
-            >
-              <Globe size={20} className="text-accent" />
-              <span className="font-black text-text-primary text-sm">Google Account</span>
-            </button>
+            <div className="flex gap-4">
+              <button onClick={handleGoogleLogin} className="w-12 h-12 bg-cream/30 rounded-full flex items-center justify-center hover:bg-cream/50 transition-all">
+                <Globe size={20} className="text-primary" />
+              </button>
+              {/* Other social icons could go here */}
+            </div>
 
-            <p className="text-center text-slate-400 text-sm font-medium">
+            <p className="text-sm font-medium text-secondary">
               Don't have an account? 
-              <button onClick={onToggleMode} className="text-accent font-black hover:underline ml-2">Sign Up Now</button>
+              <button onClick={onToggleMode} className="text-[#EBC4AC] font-bold hover:underline ml-1">Sign up</button>
             </p>
           </div>
-        </motion.div>
-      </div>
+        </div>
+
+        {/* Right Side: 3D Illustration */}
+        <div className="hidden md:flex md:w-1/2 bg-cream items-center justify-center relative p-12">
+          {/* Decorative Arch */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-[80%] h-[80%] bg-[#FCE8D8] rounded-t-full"></div>
+          </div>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2 }}
+            className="relative z-10 w-full"
+          >
+            <img src="/tutor.png" alt="Tutor Illustration" className="w-full h-auto drop-shadow-2xl" />
+          </motion.div>
+        </div>
+
+        {/* Mobile Illustration (appears at top for mobile) */}
+        <div className="md:hidden w-full bg-cream p-8 flex justify-center">
+          <div className="relative w-48 h-48">
+            <div className="absolute inset-0 bg-[#FCE8D8] rounded-full"></div>
+            <img src="/tutor.png" alt="Tutor" className="relative z-10 w-full h-full object-contain" />
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };
