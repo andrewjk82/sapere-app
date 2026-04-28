@@ -36,8 +36,8 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         animate={{ opacity: 1, x: 0 }}
         className="flex items-center gap-3 px-2"
       >
-        <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center shadow-glow">
-          <GraduationCap className="text-bg-deep" size={24} />
+        <div className="w-10 h-10 rounded-xl overflow-hidden shadow-glow">
+          <img src="/logo.jpg" alt="Sapere Logo" className="w-full h-full object-cover" />
         </div>
         <div>
           <h1 className="text-xl font-bold font-heading leading-tight">Sapere</h1>

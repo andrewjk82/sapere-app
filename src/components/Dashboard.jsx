@@ -28,9 +28,14 @@ const Dashboard = ({ students, onAddStudent }) => {
         animate={{ opacity: 1, y: 0 }}
         className="flex justify-between items-center mb-10"
       >
-        <div>
-          <h2 className="text-3xl font-bold">Welcome back, Tutor {userName}</h2>
-          <p className="text-text-secondary">You have {totalStudents} students registered.</p>
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm border border-glass-border">
+            <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold">Welcome back, Tutor {userName}</h2>
+            <p className="text-text-secondary">You have {totalStudents} students registered.</p>
+          </div>
         </div>
         <div className="flex items-center gap-4">
           <div className="relative">
