@@ -37,7 +37,11 @@ export const studentService = {
   subscribeToStudents(tutorId, callback, onError, isAdmin = false) {
     // 1. Manual students query
     const studentsRef = collection(db, COLLECTION_NAME);
-    const manualQuery = query(studentsRef, where("tutorId", "==", tutorId));
+    
+    // If admin, get ALL manual students. Otherwise, only get those for this tutor.
+    const manualQuery = isAdmin 
+      ? query(studentsRef) 
+      : query(studentsRef, where("tutorId", "==", tutorId));
 
     // For combined results
     let manualStudents = [];
