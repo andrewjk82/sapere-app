@@ -106,8 +106,8 @@ const Login = ({ onToggleMode }) => {
       <div className="auth-divider">or</div>
 
       <button onClick={handleGoogleLogin} className="auth-social">
-        <Globe size={18} />
-        <span>Google</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="auth-social__icon" />
+        <span>Continue with Google</span>
       </button>
 
       <p className="auth-footer">

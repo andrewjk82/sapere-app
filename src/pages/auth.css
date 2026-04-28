@@ -290,12 +290,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   padding: 15px 18px;
   color: #43335f;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(167, 139, 250, 0.16);
+}
+
+.auth-social__icon {
+  width: 18px;
+  height: 18px;
+  object-contain: contain;
 }
 
 .auth-footer {
