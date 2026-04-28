@@ -58,7 +58,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="glass-card p-4 bg-amber-500/5 border-amber-500/10"
+          className="glass-card p-4 bg-accent/5 border-accent/10"
         >
           <p className="text-xs text-text-secondary mb-2">Upgrade to Pro</p>
           <p className="text-sm font-semibold mb-3">Unlimited Students</p>
@@ -82,7 +82,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           </div>
           <button 
             onClick={logout}
-            className="flex items-center gap-2 text-xs text-text-secondary hover:text-red-400 transition-colors w-full px-1"
+            className="flex items-center gap-2 text-xs text-text-secondary hover:text-accent transition-colors w-full px-1"
           >
             <LogOut size={14} />
             <span>Sign Out</span>
