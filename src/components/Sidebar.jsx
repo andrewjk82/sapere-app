@@ -58,7 +58,6 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         </div>
         <div>
           <h1>Sapere Aude Academia</h1>
-          <p>Dare to know</p>
         </div>
       </motion.div>
 
