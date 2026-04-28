@@ -70,7 +70,9 @@ function App() {
     return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
   }
 
-  if (!user.emailVerified && user.providerData[0].providerId === 'password') {
+  const isPasswordProvider = user?.providerData?.some((p) => p?.providerId === 'password');
+
+  if (!user.emailVerified && isPasswordProvider) {
     return (
       <AuthLayout
         eyebrow="One last step"
