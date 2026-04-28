@@ -21,6 +21,39 @@ const Dashboard = ({ students, onAddStudent }) => {
     });
   }, [user?.uid]);
 
+  useEffect(() => {
+    if (!user?.uid || !profile || isAdmin) return;
+
+    const currentYear = new Date().getFullYear();
+    const lastPromoted = profile.lastPromotedYear;
+
+    // First time setup: if lastPromotedYear doesn't exist, set it to current year
+    if (!lastPromoted) {
+      setDoc(doc(db, 'users', user.uid), { lastPromotedYear: currentYear }, { merge: true });
+      return;
+    }
+
+    // If a new calendar year has started
+    if (currentYear > lastPromoted) {
+      const yearStr = profile.year;
+      if (yearStr) {
+        const match = yearStr.match(/\d+/);
+        if (match) {
+          const num = parseInt(match[0], 10);
+          const nextYear = yearStr.replace(match[0], (num + 1).toString());
+          
+          setDoc(doc(db, 'users', user.uid), { 
+            year: nextYear, 
+            lastPromotedYear: currentYear,
+            updatedAt: new Date().toISOString() 
+          }, { merge: true });
+          
+          console.log(`Auto-promoted ${userName} from ${yearStr} to ${nextYear}`);
+        }
+      }
+    }
+  }, [user?.uid, profile, isAdmin, userName]);
+
   const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
 
   const fallbackUrl = useMemo(() => {

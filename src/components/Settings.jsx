@@ -182,7 +182,7 @@ const Settings = () => {
                 />
               </div>
               
-              {profile?.role === 'student' && (
+              {profile?.role !== 'parent' && !isAdmin && (
                 <>
                   <div className="app-form-field">
                     <label>Year / Grade</label>
@@ -244,7 +244,7 @@ const Settings = () => {
                 <label>Phone Number</label>
                 <p>{profile?.phone || 'Not set'}</p>
               </div>
-              {profile?.role === 'student' && (
+              {profile?.role !== 'parent' && !isAdmin && (
                 <>
                   <div className="settings-display-item">
                     <label>Year / Grade</label>
