@@ -20,7 +20,9 @@ const StudentProfileModal = ({ open, student, onClose }) => {
         school: student.school || '',
         phone: student.phone || '',
         address: student.address || '',
-        status: student.status || 'Active'
+        status: student.status || 'Active',
+        dreamImageUrl: student.dreamImageUrl || '',
+        dreamJob: student.dreamJob || ''
       });
       setIsEditing(false);
     }
@@ -121,7 +123,7 @@ const StudentProfileModal = ({ open, student, onClose }) => {
                 </div>
               </div>
 
-              <div className="profile-hero__actions">
+      <div className="profile-hero__actions">
                 {!isEditing ? (
                   <button className="app-button app-button--secondary" onClick={() => setIsEditing(true)}>
                     <Pencil size={16} />
@@ -142,6 +144,34 @@ const StudentProfileModal = ({ open, student, onClose }) => {
             </div>
 
             <div className="app-form-grid" style={{ gap: '24px' }}>
+              <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Vision Board Image URL
+                </label>
+                {isEditing ? (
+                  <input 
+                    value={editData.dreamImageUrl} 
+                    onChange={e => setEditData({...editData, dreamImageUrl: e.target.value})} 
+                    placeholder="https://images.unsplash.com/..."
+                  />
+                ) : (
+                  <div style={{ marginTop: '8px', borderRadius: '16px', overflow: 'hidden', height: '120px', border: '1px solid rgba(0,0,0,0.05)' }}>
+                    <img src={student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=600'} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Vision Board" />
+                  </div>
+                )}
+              </div>
+
+              <div className="app-form-field">
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Future Dream / Job
+                </label>
+                {isEditing ? (
+                  <input value={editData.dreamJob} onChange={e => setEditData({...editData, dreamJob: e.target.value})} placeholder="e.g. Doctor, Artist" />
+                ) : (
+                  <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '8px 0', color: '#6366f1' }}>{student.dreamJob || 'Not set'}</p>
+                )}
+              </div>
+
               <div className="app-form-field">
                 <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   <GraduationCap size={14} /> Year / Level

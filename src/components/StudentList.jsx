@@ -73,7 +73,7 @@ const StudentList = ({ students, onAddStudent }) => {
                     }}
                   >
                     <img 
-                      src={student.dreamImageUrl || student.avatarUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=200'} 
+                      src={student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=200'} 
                       alt={student.name} 
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                     />
