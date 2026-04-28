@@ -5,6 +5,9 @@ import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import StudentList from './components/StudentList';
+import Schedule from './components/Schedule';
+import Curriculum from './components/Curriculum';
+import Settings from './components/Settings';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
@@ -123,6 +126,12 @@ function App() {
         return <Dashboard students={students} onAddStudent={() => setIsModalOpen(true)} />;
       case 'Students':
         return <StudentList students={students} onAddStudent={() => setIsModalOpen(true)} />;
+      case 'Schedule':
+        return <Schedule />;
+      case 'Curriculum':
+        return <Curriculum />;
+      case 'Settings':
+        return <Settings />;
       default:
         return (
           <div className="app-placeholder">
