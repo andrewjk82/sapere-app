@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Plus, Search, Bell, Users, Clock, CheckCircle2, GraduationCap } from 'lucide-react';
+import { Plus, Search, Bell, Users, Clock, CheckCircle2, GraduationCap, LogOut } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc } from 'firebase/firestore';
+import AvatarPickerModal from './AvatarPickerModal';
 
 const Dashboard = ({ students, onAddStudent }) => {
-  const { user, isAdmin } = useAuth();
+  const { user, isAdmin, logout } = useAuth();
   const [profile, setProfile] = useState(null);
+  const [avatarOpen, setAvatarOpen] = useState(false);
 
   useEffect(() => {
     if (!user?.uid) return undefined;
@@ -20,6 +22,15 @@ const Dashboard = ({ students, onAddStudent }) => {
   }, [user?.uid]);
 
   const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
+
+  const fallbackUrl = useMemo(() => {
+    if (user?.photoURL) return user.photoURL;
+    return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || 'sapere')}`;
+  }, [user?.photoURL, user?.email]);
+
+  const avatarUrl = profile?.avatarUrl || (profile?.avatarStyle && profile?.avatarSeed
+    ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
+    : fallbackUrl);
 
   // Calculate dynamic stats
   const totalStudents = students.length;
@@ -63,8 +74,11 @@ const Dashboard = ({ students, onAddStudent }) => {
           <button className="app-icon-button">
             <Bell size={20} />
           </button>
-          <div className="app-avatar">
-            <img src={user?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.email}`} alt="Profile" />
+          <button className="app-icon-button" onClick={logout} title="Sign Out">
+            <LogOut size={20} />
+          </button>
+          <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0}>
+            <img src={avatarUrl} alt="Profile" />
           </div>
         </div>
       </motion.header>
@@ -150,7 +164,26 @@ const Dashboard = ({ students, onAddStudent }) => {
           )}
         </div>
       </motion.div>
+
+      <AvatarPickerModal
+        open={avatarOpen}
+        title="My Persona"
+        subtitle="Choose your face"
+        initialStyle={profile?.avatarStyle || 'avataaars'}
+        initialSeed={profile?.avatarSeed || (user?.email?.split('@')[0] ?? '')}
+        onClose={() => setAvatarOpen(false)}
+        onApply={async ({ avatarStyle, avatarSeed, avatarUrl: nextUrl }) => {
+          if (!user?.uid) return;
+          await setDoc(
+            doc(db, 'users', user.uid),
+            { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() },
+            { merge: true },
+          );
+          setAvatarOpen(false);
+        }}
+      />
     </div>
+
 
   );
 };
