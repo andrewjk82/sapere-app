@@ -40,7 +40,7 @@ const Signup = ({ onToggleMode }) => {
         className="glass-card p-8 w-full max-w-md border-accent/10"
       >
         <div className="flex flex-col items-center mb-8">
-          <div className="w-20 h-20 rounded-2xl overflow-hidden shadow-glow mb-4">
+          <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-glow mb-4">
             <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-3xl font-bold font-heading">Create Account</h1>
