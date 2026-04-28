@@ -35,111 +35,110 @@ const Login = ({ onToggleMode }) => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white overflow-hidden relative">
-      {/* Top Wave Background */}
-      <div className="absolute top-0 left-0 w-full h-[40vh] bg-accent overflow-hidden">
-        <svg 
-          className="absolute bottom-0 w-full" 
-          viewBox="0 0 1440 320" 
-          preserveAspectRatio="none"
-          fill="#ffffff"
-        >
-          <path d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+    <div className="min-h-screen flex flex-col bg-bg-deep font-sans">
+      {/* Curved Header Background */}
+      <div className="relative w-full h-80 bg-accent flex flex-col items-center justify-center overflow-hidden">
+        {/* Background Decorative Circles */}
+        <div className="absolute top-[-50px] right-[-50px] w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+        
+        {/* Logo and Title */}
         <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="relative z-10 flex flex-col items-center justify-center h-full pb-20"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="relative z-10 flex flex-col items-center"
         >
-          <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 mb-4">
+          <div className="w-24 h-24 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 mb-4 bg-white">
             <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
           </div>
-          <h1 className="text-white text-2xl font-bold font-heading tracking-tight">SAPERE AUDE</h1>
-          <p className="text-white/80 text-xs font-bold uppercase tracking-[0.2em]">Academia</p>
+          <h1 className="text-white text-3xl font-bold font-heading tracking-tight mb-1">SAPERE AUDE</h1>
+          <p className="text-white/80 text-[10px] font-bold uppercase tracking-[0.3em]">Academia</p>
         </motion.div>
+
+        {/* Bottom Curve (CSS version for stability) */}
+        <div className="absolute bottom-0 left-0 w-full h-16 bg-bg-deep" style={{ borderRadius: '50% 50% 0 0 / 100% 100% 0 0' }}></div>
       </div>
 
-      {/* Login Form Section */}
-      <div className="flex-grow flex items-end justify-center relative z-20 pb-10">
+      {/* Main Login Card Area */}
+      <div className="flex-grow bg-bg-deep px-6 -mt-8 relative z-20 pb-12">
         <motion.div 
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="w-full max-w-md px-8"
+          className="max-w-md mx-auto"
         >
-          <div className="mb-8">
+          <div className="mb-10 text-center">
             <h2 className="text-4xl font-bold text-text-primary mb-2">Sign in</h2>
-            <p className="text-text-secondary text-sm">Please login to continue</p>
+            <p className="text-text-secondary text-sm">Please login to access your dashboard</p>
           </div>
 
           {error && (
-            <div className="mb-6 p-4 bg-red-50 border border-red-100 rounded-xl flex items-center gap-3 text-red-500 text-sm">
+            <motion.div 
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="mb-8 p-4 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center gap-3 text-red-500 text-sm"
+            >
               <AlertCircle size={18} />
               <span>{error}</span>
-            </div>
+            </motion.div>
           )}
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <label className="text-xs text-text-secondary uppercase font-bold px-1">Email</label>
-              <div className="relative group">
-                <Mail className="absolute left-0 top-1/2 -translate-y-1/2 text-text-secondary group-focus-within:text-accent transition-colors" size={20} />
+          <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+            <div className="space-y-2 group">
+              <label className="text-[10px] text-text-secondary uppercase font-black tracking-widest px-1">Email Address</label>
+              <div className="relative border-b-2 border-slate-200 group-focus-within:border-accent transition-all duration-300">
+                <Mail className="absolute left-0 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-accent" size={18} />
                 <input 
-                  type="email" 
-                  required
-                  value={email}
+                  type="email" required value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-transparent border-b-2 border-slate-100 py-3 pl-8 pr-4 focus:outline-none focus:border-accent text-text-primary transition-all placeholder:text-slate-300"
-                  placeholder="Enter your email"
+                  className="w-full bg-transparent py-4 pl-8 pr-2 focus:outline-none text-text-primary font-medium"
+                  placeholder="name@example.com"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <label className="text-xs text-text-secondary uppercase font-bold px-1">Password</label>
-              <div className="relative group">
-                <Lock className="absolute left-0 top-1/2 -translate-y-1/2 text-text-secondary group-focus-within:text-accent transition-colors" size={20} />
+            <div className="space-y-2 group">
+              <label className="text-[10px] text-text-secondary uppercase font-black tracking-widest px-1">Password</label>
+              <div className="relative border-b-2 border-slate-200 group-focus-within:border-accent transition-all duration-300">
+                <Lock className="absolute left-0 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-accent" size={18} />
                 <input 
-                  type="password" 
-                  required
-                  value={password}
+                  type="password" required value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-transparent border-b-2 border-slate-100 py-3 pl-8 pr-4 focus:outline-none focus:border-accent text-text-primary transition-all placeholder:text-slate-300"
-                  placeholder="Enter your password"
+                  className="w-full bg-transparent py-4 pl-8 pr-2 focus:outline-none text-text-primary font-medium"
+                  placeholder="••••••••"
                 />
               </div>
             </div>
 
-            <div className="flex justify-end">
-              <button type="button" className="text-xs font-bold text-accent hover:underline">Forgot Password?</button>
+            <div className="flex justify-end -mt-4">
+              <button type="button" className="text-xs font-bold text-accent hover:underline">Forgot password?</button>
             </div>
 
             <button 
-              type="submit" 
-              disabled={loading}
-              className="btn-primary w-full justify-center py-4 rounded-2xl text-lg font-bold shadow-xl active:scale-[0.98] mt-4"
+              type="submit" disabled={loading}
+              className="btn-primary w-full justify-center py-5 rounded-2xl text-lg font-black tracking-wide shadow-glow hover:scale-[1.02] active:scale-[0.98] mt-4"
             >
-              {loading ? 'Logging in...' : 'LOGIN'}
+              {loading ? 'AUTHENTICATING...' : 'SIGN IN'}
             </button>
           </form>
 
-          <div className="mt-8 flex flex-col items-center gap-6">
-            <div className="flex items-center gap-4 w-full">
-              <div className="flex-grow border-t border-slate-100"></div>
-              <span className="text-xs text-slate-400 uppercase font-bold">Social Login</span>
-              <div className="flex-grow border-t border-slate-100"></div>
+          {/* Social and Footer */}
+          <div className="mt-12 space-y-8">
+            <div className="relative flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-slate-200"></div></div>
+              <span className="relative bg-bg-deep px-4 text-[10px] font-black text-slate-400 uppercase tracking-widest">Or continue with</span>
             </div>
 
             <button 
               onClick={handleGoogleLogin}
-              className="w-full py-3 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-100 transition-all"
+              className="w-full py-4 bg-white border-2 border-slate-100 rounded-2xl flex items-center justify-center gap-3 hover:border-accent/20 hover:bg-accent/5 transition-all shadow-sm group"
             >
-              <Globe size={20} className="text-accent" />
-              <span className="font-bold text-text-primary text-sm">Sign in with Google</span>
+              <Globe size={20} className="text-accent group-hover:rotate-12 transition-transform" />
+              <span className="font-bold text-text-primary">Google Account</span>
             </button>
 
-            <p className="text-center text-slate-400 text-sm">
-              Don't have an account? 
-              <button onClick={onToggleMode} className="text-accent font-bold hover:underline ml-2">Sign up</button>
+            <p className="text-center text-text-secondary text-sm">
+              New here? 
+              <button onClick={onToggleMode} className="text-accent font-black hover:underline ml-2">Create Account</button>
             </p>
           </div>
         </motion.div>
