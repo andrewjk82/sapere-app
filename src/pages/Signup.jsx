@@ -33,9 +33,9 @@ const Signup = ({ onToggleMode }) => {
 
   return (
     <AuthLayout
-      eyebrow="Create account"
-      title="Begin with a polished first impression."
-      description="Set up your account in a calm, minimal space designed around elegance and clarity."
+      eyebrow=""
+      title="Create account"
+      description=""
       sideLabel="Lavender premium theme"
       sideTitle="Create a refined home for every student relationship."
       sideDescription="A modern sign-up experience that feels soft, trustworthy, and distinctly high-end."
