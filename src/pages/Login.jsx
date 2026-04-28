@@ -37,7 +37,7 @@ const Login = ({ onToggleMode }) => {
   return (
     <AuthLayout
       eyebrow=""
-      title="Sign In"
+      title="Sign in"
       description=""
       sideLabel="Luxury made simple"
       sideTitle="Run your tutoring business with calm confidence."
@@ -103,7 +103,7 @@ const Login = ({ onToggleMode }) => {
         </button>
       </form>
 
-      <div className="auth-divider">or continue with</div>
+      <div className="auth-divider">or</div>
 
       <button onClick={handleGoogleLogin} className="auth-social">
         <Globe size={18} />
