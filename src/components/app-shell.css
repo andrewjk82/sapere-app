@@ -44,15 +44,18 @@
 
 .app-sidebar__brand h1 {
   margin: 0;
-  font-size: 1.35rem;
-  line-height: 1.1;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #24163f;
+  line-height: 1.15;
 }
 
 .app-sidebar__brand p {
   margin: 4px 0 0;
-  color: #8b5cf6;
-  font-size: 0.82rem;
+  color: #8b7aa7;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .app-sidebar__nav {

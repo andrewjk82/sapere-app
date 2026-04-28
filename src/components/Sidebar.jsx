@@ -57,8 +57,8 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           <img src="/logo.png?v=1" alt="Sapere Logo" />
         </div>
         <div>
-          <h1>Sapere</h1>
-          <p>Academia</p>
+          <h1>Sapere Aude Academia</h1>
+          <p>Dare to know</p>
         </div>
       </motion.div>
 
