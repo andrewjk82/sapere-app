@@ -6,10 +6,20 @@ import AuthLayout from './AuthLayout';
 const Login = ({ onToggleMode }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const { login, loginWithGoogle, resetPassword } = useAuth();
+
+  // Load saved email on mount
+  React.useEffect(() => {
+    const savedEmail = localStorage.getItem('sapere_remembered_email');
+    if (savedEmail) {
+      setEmail(savedEmail);
+      setRememberMe(true);
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,6 +28,13 @@ const Login = ({ onToggleMode }) => {
       setMessage('');
       setLoading(true);
       await login(email, password);
+      
+      // Save or remove email based on rememberMe
+      if (rememberMe) {
+        localStorage.setItem('sapere_remembered_email', email);
+      } else {
+        localStorage.removeItem('sapere_remembered_email');
+      }
     } catch (err) {
       setError('Invalid email or password');
       console.error(err);
@@ -40,10 +57,6 @@ const Login = ({ onToggleMode }) => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleForgotEmail = () => {
-    setMessage('Please contact support@sapere.edu to recover your account email.');
   };
 
   const handleGoogleLogin = async () => {
@@ -103,9 +116,15 @@ const Login = ({ onToggleMode }) => {
               placeholder="you@example.com"
             />
           </div>
-          <button type="button" onClick={handleForgotEmail} className="auth-help-link">
-            Forgot email?
-          </button>
+          <div className="auth-remember">
+            <input
+              id="remember-me"
+              type="checkbox"
+              checked={rememberMe}
+              onChange={(e) => setRememberMe(e.target.checked)}
+            />
+            <label htmlFor="remember-me">Remember me</label>
+          </div>
         </div>
 
         <div className="auth-field">
