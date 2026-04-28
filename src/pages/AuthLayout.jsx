@@ -27,7 +27,9 @@ const AuthLayout = ({
           transition={{ duration: 0.45, ease: 'easeOut' }}
         >
           <div className="auth-brand">
-            <div className="auth-brand__logo">S</div>
+            <div className="auth-brand__logo">
+              <img src="/logo.png?v=1" alt="Logo" className="w-full h-full object-contain" />
+            </div>
             <div>
               <p className="auth-brand__name">Sapere Aude Academia</p>
               <p className="auth-brand__tag">Private tutor workspace</p>
