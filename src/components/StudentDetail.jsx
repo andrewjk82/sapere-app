@@ -15,7 +15,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const fileInputRef = useRef(null);
   const [isEditing, setIsEditing] = useState(false);
   const [sessionForm, setSessionForm] = useState({
-    date: '28/04/2026',
+    date: new Date().toISOString().split('T')[0],
     focus: '',
     start: '04:00 pm',
     end: '05:00 pm',
@@ -149,7 +149,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
       alert("Session booked successfully!");
       setSessionForm({
-        date: new Date().toLocaleDateString('en-GB'),
+        date: new Date().toISOString().split('T')[0],
         focus: '',
         start: '04:00 pm',
         end: '05:00 pm',
@@ -297,7 +297,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Date</label>
             <div className="app-input" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white' }}>
               <Calendar size={18} />
-              <input type="text" value={sessionForm.date} onChange={e => setSessionForm({...sessionForm, date: e.target.value})} style={{ border: 0, padding: '14px 0', width: '100%', outline: 'none' }} />
+              <input type="date" value={sessionForm.date} onChange={e => setSessionForm({...sessionForm, date: e.target.value})} style={{ border: 0, padding: '14px 0', width: '100%', outline: 'none', cursor: 'pointer', fontFamily: 'inherit' }} />
             </div>
           </div>
           <div className="app-form-field">
