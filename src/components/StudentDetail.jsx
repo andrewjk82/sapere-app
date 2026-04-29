@@ -45,27 +45,39 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     try {
       setUploading(true);
+      console.log("Starting upload for file:", file.name);
       
-      // 1. Storage Reference 생성 (tutor-pro 방식 그대로!)
       const storageRef = ref(storage, `vision-boards/${studentId}/${Date.now()}_${file.name}`);
-      
-      // 2. 파일 업로드
-      const snapshot = await uploadBytes(storageRef, file);
-      
-      // 3. URL 가져오기
-      const downloadURL = await getDownloadURL(snapshot.ref);
-      
-      // 4. Firestore 업데이트
-      const collectionName = student.source === 'manual' ? 'students' : 'users';
-      const studentRef = doc(db, collectionName, studentId);
-      await setDoc(studentRef, { dreamImageUrl: downloadURL }, { merge: true });
-      
-      setStudent(prev => ({ ...prev, dreamImageUrl: downloadURL }));
-      alert("Vision board image uploaded successfully! ✨");
+      const uploadTask = uploadBytesResumable(storageRef, file);
+
+      uploadTask.on('state_changed', 
+        (snapshot) => {
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log(`Upload is ${progress}% done`);
+        }, 
+        (error) => {
+          console.error("Upload error details:", error);
+          alert(`Upload failed: ${error.message}. Please check if Storage is enabled in Firebase Console.`);
+          setUploading(false);
+        }, 
+        async () => {
+          console.log("Upload successful! Getting URL...");
+          const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+          console.log("URL obtained:", downloadURL);
+          
+          const collectionName = student.source === 'manual' ? 'students' : 'users';
+          const studentRef = doc(db, collectionName, studentId);
+          await setDoc(studentRef, { dreamImageUrl: downloadURL }, { merge: true });
+          
+          setStudent(prev => ({ ...prev, dreamImageUrl: downloadURL }));
+          console.log("Firestore updated!");
+          alert("Vision board image updated! ✨");
+          setUploading(false);
+        }
+      );
     } catch (error) {
-      console.error("Upload failed:", error);
-      alert("Upload failed. Make sure your Firebase Storage is active and security rules are set to public.");
-    } finally {
+      console.error("Initiation error:", error);
+      alert(`Critical error: ${error.message}`);
       setUploading(false);
     }
   };
