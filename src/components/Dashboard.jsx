@@ -102,13 +102,29 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
     if (!newSession.studentId || !newSession.subject) return;
     setIsSubmitting(true);
     try {
-      await addDoc(collection(db, 'sessions'), {
-        ...newSession,
-        isHomeworkCompleted: false,
-        createdAt: new Date().toISOString()
-      });
+      const sessionsToCreate = [];
+      
+      // If recurring, create 10 weeks of sessions. Otherwise, just 1.
+      const count = newSession.recurring ? 10 : 1;
+      const baseDate = new Date(newSession.date);
+
+      for (let i = 0; i < count; i++) {
+        const nextDate = new Date(baseDate);
+        nextDate.setDate(baseDate.getDate() + (i * 7));
+        
+        sessionsToCreate.push({
+          ...newSession,
+          date: nextDate.toISOString().split('T')[0],
+          isHomeworkCompleted: false,
+          createdAt: new Date().toISOString()
+        });
+      }
+
+      // Add all to Firestore
+      await Promise.all(sessionsToCreate.map(s => addDoc(collection(db, 'sessions'), s)));
+
       setShowScheduleModal(false);
-      setNewSession({ studentId: '', studentName: '', subject: '', date: new Date().toISOString().split('T')[0], startTime: '10:00 AM', endTime: '11:30 AM', notes: '', homework: '' });
+      setNewSession({ studentId: '', studentName: '', subject: '', date: new Date().toISOString().split('T')[0], startTime: '10:00 AM', endTime: '11:30 AM', notes: '', homework: '', recurring: false });
     } catch (err) {
       console.error('Error creating session:', err);
     } finally {
@@ -224,7 +240,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               <div className="app-panel dashboard-card">
                 <div className="dashboard-card__header">
                   <h3>Recent Students</h3>
-                  <button>View all</button>
+                  <button onClick={() => setActiveTab('Students')}>View all</button>
                 </div>
                 <div className="activity-list">
                   {students.length > 0 ? (
@@ -409,6 +425,29 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                       style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
                     />
                   </div>
+                </div>
+
+                {/* Recurring Checkbox */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '4px' }}>
+                  <div 
+                    onClick={() => setNewSession({...newSession, recurring: !newSession.recurring})}
+                    style={{ 
+                      width: '24px', 
+                      height: '24px', 
+                      borderRadius: '6px', 
+                      border: '2px solid', 
+                      borderColor: newSession.recurring ? '#6366f1' : '#cbd5e1', 
+                      background: newSession.recurring ? '#6366f1' : 'transparent', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      color: 'white', 
+                      cursor: 'pointer' 
+                    }}
+                  >
+                    {newSession.recurring && <Check size={14} />}
+                  </div>
+                  <span style={{ fontWeight: 700, color: '#334155', fontSize: '0.9rem' }}>Recurring Weekly (for 10 weeks)</span>
                 </div>
 
                 {/* Submit */}
