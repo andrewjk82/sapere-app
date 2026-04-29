@@ -1,18 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { 
-  ChevronLeft, Calendar, Clock, BookOpen, 
-  MessageSquare, Trophy, Edit3, Upload, 
-  Mail, Phone, Check, Repeat, BarChart3,
-  Search, BookText, ArrowLeft
+  ChevronLeft, Calendar, BookOpen, 
+  MessageSquare, Trophy, 
+  Mail, Phone, Check
 } from 'lucide-react';
-import { db, storage } from '../firebase/config';
+import { db } from '../firebase/config';
 import { 
   doc, updateDoc, onSnapshot, collection, 
-  addDoc, query, where, orderBy, getDoc, 
-  setDoc, serverTimestamp 
+  addDoc, serverTimestamp 
 } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 
 const StudentDetail = ({ studentId, onBack }) => {
@@ -59,54 +56,46 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   useEffect(() => {
-    const fetchStudent = async () => {
-      if (!studentId) return;
-      try {
-        setLoading(true);
-        // We listen to the specific student document
-        const unsub = onSnapshot(doc(db, 'users', studentId), (snap) => {
-          if (snap.exists()) {
-            const data = snap.data();
-            setStudent({ id: snap.id, ...data });
-            setAssignedChapters(data.assignedChapters || []);
-            setEditForm({
-              name: data.name || data.firstName || '',
-              email: data.email || '',
-              phone: data.phone || '',
-              level: data.level || data.year || '',
-              subject: data.subject || data.school || '',
-              assignedYear: data.assignedYear || data.level || data.year || 'Year 11',
-              assignedCourse: data.assignedCourse || 'Advanced'
-            });
-          } else {
-            // Fallback for manual students
-            const manualUnsub = onSnapshot(doc(db, 'students', studentId), (mSnap) => {
-              if (mSnap.exists()) {
-                const mData = mSnap.data();
-                setStudent({ id: mSnap.id, ...mData });
-                setAssignedChapters(mData.assignedChapters || []);
-                setEditForm({
-                  name: mData.name || '',
-                  email: mData.email || '',
-                  phone: mData.phone || '',
-                  level: mData.level || mData.year || '',
-                  subject: mData.subject || mData.school || '',
-                  assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
-                  assignedCourse: mData.assignedCourse || 'Advanced'
-                });
-              }
-            });
-            return manualUnsub;
-          }
+    if (!studentId) return;
+
+    const unsubUsers = onSnapshot(doc(db, 'users', studentId), (snap) => {
+      if (snap.exists()) {
+        const data = snap.data();
+        setStudent({ id: snap.id, ...data });
+        setAssignedChapters(data.assignedChapters || []);
+        setEditForm({
+          name: data.name || data.firstName || '',
+          email: data.email || '',
+          phone: data.phone || '',
+          level: data.level || data.year || '',
+          subject: data.subject || data.school || '',
+          assignedYear: data.assignedYear || data.level || data.year || 'Year 11',
+          assignedCourse: data.assignedCourse || 'Advanced'
         });
-        return unsub;
-      } catch (error) {
-        console.error("Error fetching student detail:", error);
-      } finally {
         setLoading(false);
+      } else {
+        const unsubStudents = onSnapshot(doc(db, 'students', studentId), (mSnap) => {
+          if (mSnap.exists()) {
+            const mData = mSnap.data();
+            setStudent({ id: mSnap.id, source: 'manual', ...mData });
+            setAssignedChapters(mData.assignedChapters || []);
+            setEditForm({
+              name: mData.name || '',
+              email: mData.email || '',
+              phone: mData.phone || '',
+              level: mData.level || mData.year || '',
+              subject: mData.subject || mData.school || '',
+              assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
+              assignedCourse: mData.assignedCourse || 'Advanced'
+            });
+          }
+          setLoading(false);
+        });
+        return () => unsubStudents();
       }
-    };
-    fetchStudent();
+    });
+
+    return () => unsubUsers();
   }, [studentId]);
 
   const handleUpdateProfile = async () => {
@@ -120,10 +109,8 @@ const StudentDetail = ({ studentId, onBack }) => {
       };
       await updateDoc(studentRef, updateData);
       setIsEditing(false);
-      alert("Profile updated!");
     } catch (error) {
       console.error("Update error:", error);
-      alert("Failed to update profile.");
     }
   };
 

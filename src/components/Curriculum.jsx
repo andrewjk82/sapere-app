@@ -176,7 +176,8 @@ const Curriculum = () => {
             paddingBottom: '40px'
           }}>
             {displayData.length > 0 ? displayData.map(chapter => {
-              const p = Math.round((chapter.completed / chapter.modules) * 100);
+              const completed = chapter.completed || 0;
+              const p = chapter.modules > 0 ? Math.round((completed / chapter.modules) * 100) : 0;
               return (
                 <div 
                   key={chapter.id} 
