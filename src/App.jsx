@@ -311,14 +311,53 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Global Mobile Top Capsule Menu - Rendered at bottom of DOM for max visibility */}
-      <div className="mobile-user-capsule">
-        <div className="app-avatar" style={{ width: '36px', height: '36px' }}>
-          <img src={avatarUrl} alt="Avatar" />
+      {/* Global Mobile Top Capsule Menu - Max Priority Visibility */}
+      <div 
+        className="mobile-user-capsule"
+        style={{
+          display: 'flex',
+          position: 'fixed',
+          top: '30px',
+          left: '20px',
+          zIndex: 2147483647,
+          background: 'white',
+          padding: '8px 16px',
+          borderRadius: '999px',
+          border: '2px solid rgba(99, 102, 241, 0.5)',
+          boxShadow: '0 15px 35px rgba(0,0,0,0.3)',
+          alignItems: 'center',
+          gap: '12px',
+          pointerEvents: 'auto',
+          visibility: 'visible'
+        }}
+      >
+        <div 
+          className="app-avatar" 
+          onClick={() => {
+            // Force avatar picker even on mobile
+            const sidebarBtn = document.querySelector('.clickable-avatar');
+            if (sidebarBtn) sidebarBtn.click();
+          }}
+          style={{ width: '32px', height: '32px', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer' }}
+        >
+          <img src={avatarUrl} alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
-        <div className="mobile-user-capsule__divider" />
-        <button onClick={logout} className="mobile-logout-btn">
+        <div style={{ width: '1px', height: '20px', background: '#e2e8f0' }} />
+        <button 
+          onClick={logout} 
+          style={{ 
+            background: 'transparent', 
+            border: 0, 
+            color: '#ef4444', 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '6px',
+            cursor: 'pointer',
+            padding: '4px'
+          }}
+        >
           <LogOut size={18} />
+          <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em' }}>LOGOUT</span>
         </button>
       </div>
     </div>

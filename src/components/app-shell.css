@@ -1509,42 +1509,6 @@
    ========================================================================== */
 .mobile-user-capsule {
   display: none !important;
-  position: fixed !important;
-  top: 24px !important;
-  left: 20px !important;
-  z-index: 999999 !important;
-  background: white !important;
-  padding: 8px !important;
-  border-radius: 999px !important;
-  border: 1px solid rgba(167, 139, 250, 0.3) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
-  align-items: center !important;
-  gap: 10px !important;
-}
-
-.mobile-user-capsule__divider {
-  width: 1px;
-  height: 20px;
-  background: rgba(167, 139, 250, 0.15);
-}
-
-.mobile-logout-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  border: 0;
-  background: transparent;
-  color: #6366f1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.mobile-logout-btn:active {
-  background: rgba(99, 102, 241, 0.1);
-  transform: scale(0.92);
 }
 
 @media (max-width: 1024px) {
