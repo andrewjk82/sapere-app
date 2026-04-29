@@ -313,46 +313,12 @@ function App() {
 
       {/* Global Mobile Top Capsule Menu - Portal to Body for Absolute Visibility */}
       {createPortal(
-        <div 
-          className="mobile-user-capsule"
-          style={{
-            display: window.innerWidth <= 1024 ? 'flex' : 'none',
-            position: 'fixed',
-            top: '24px',
-            left: '20px',
-            zIndex: 2147483647,
-            background: 'rgba(255, 255, 255, 0.9)',
-            backdropFilter: 'blur(12px)',
-            WebkitBackdropFilter: 'blur(12px)',
-            padding: '6px',
-            borderRadius: '999px',
-            border: '1px solid rgba(167, 139, 250, 0.3)',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
-            alignItems: 'center',
-            gap: '8px',
-            pointerEvents: 'auto'
-          }}
-        >
-          <div 
-            style={{ width: '36px', height: '36px', borderRadius: '50%', overflow: 'hidden' }}
-          >
-            <img src={avatarUrl} alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <div className="mobile-user-capsule">
+          <div className="mobile-user-capsule__avatar">
+            <img src={avatarUrl} alt="Avatar" />
           </div>
-          <div style={{ width: '1px', height: '20px', background: 'rgba(0,0,0,0.1)' }} />
-          <button 
-            onClick={logout} 
-            style={{ 
-              background: 'transparent', 
-              border: 0, 
-              color: '#6366f1', 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center',
-              width: '36px',
-              height: '36px',
-              cursor: 'pointer'
-            }}
-          >
+          <div className="mobile-user-capsule__divider" />
+          <button onClick={logout} className="mobile-user-capsule__logout">
             <LogOut size={20} />
           </button>
         </div>,
