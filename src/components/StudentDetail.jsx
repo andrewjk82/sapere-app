@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { 
   ChevronLeft, Calendar, BookOpen, 
   MessageSquare, Trophy, 
-  Mail, Phone, Check, Settings
+  Mail, Phone, Check, Settings, Clock
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { 
@@ -258,7 +258,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         return (
           <div style={styles.card}>
             <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>BOOK NEW SESSION</div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Date</label>
                 <div className="app-input" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white' }}>
@@ -268,6 +268,18 @@ const StudentDetail = ({ studentId, onBack }) => {
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Focus Subject</label>
                 <input type="text" value={sessionForm.focus} onChange={e => setSessionForm({...sessionForm, focus: e.target.value})} placeholder="e.g. Algebra" style={{ width: '100%', padding: '14px 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', outline: 'none' }} />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Start Time</label>
+                <div className="app-input" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white' }}>
+                  <Clock size={18} /><input type="text" value={sessionForm.start} onChange={e => setSessionForm({...sessionForm, start: e.target.value})} placeholder="04:00 pm" style={{ border: 0, padding: '14px 0', width: '100%', outline: 'none' }} />
+                </div>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>End Time</label>
+                <div className="app-input" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white' }}>
+                  <Clock size={18} /><input type="text" value={sessionForm.end} onChange={e => setSessionForm({...sessionForm, end: e.target.value})} placeholder="05:00 pm" style={{ border: 0, padding: '14px 0', width: '100%', outline: 'none' }} />
+                </div>
               </div>
             </div>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
