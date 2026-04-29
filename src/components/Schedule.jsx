@@ -18,7 +18,7 @@ const Schedule = () => {
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener('resize', handleResize);
-    return () => window.removeResizeListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   // ── Fetch sessions from Firestore ──────────────────────────────────────────
