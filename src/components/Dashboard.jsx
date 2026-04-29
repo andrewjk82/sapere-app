@@ -379,12 +379,15 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                     <h3>Recent Activity</h3>
                   </div>
                   <div className="activity-list">
-                    {students.slice(0, 3).map(s => (
-                      <div key={s.id} className="activity-item">
-                        <strong>New student: {s.name}</strong>
-                        <p>{s.level} • {s.subject}</p>
-                      </div>
-                    ))}
+                    {students.slice(0, 3).map(s => {
+                      const dName = s.name || (s.firstName ? `${s.firstName} ${s.lastName || ''}` : 'New Student');
+                      return (
+                        <div key={s.id} className="activity-item" style={{ cursor: 'pointer' }} onClick={() => onSelectStudent(s.id)}>
+                          <strong>{dName}</strong>
+                          <p>{s.level || s.year || 'N/A'} • {s.subject || s.school || 'N/A'}</p>
+                        </div>
+                      );
+                    })}
                     {students.length === 0 && <div className="app-empty">No recent activity.</div>}
                   </div>
                 </div>
