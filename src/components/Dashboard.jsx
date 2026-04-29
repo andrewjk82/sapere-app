@@ -1,17 +1,29 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { Plus, Search, Bell, Users, Clock, CheckCircle2, GraduationCap, LogOut } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, collection, addDoc, query } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
-const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
-  const { user, isAdmin, logout } = useAuth();
+const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) => {
+  const { user, isAdmin } = useAuth();
   const [profile, setProfile] = useState(null);
   const [avatarOpen, setAvatarOpen] = useState(false);
+  const [showScheduleModal, setShowScheduleModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [newSession, setNewSession] = useState({
+    studentId: '',
+    studentName: '',
+    subject: '',
+    date: new Date().toISOString().split('T')[0],
+    startTime: '10:00 AM',
+    endTime: '11:30 AM',
+    notes: '',
+    homework: ''
+  });
 
   useEffect(() => {
     if (!user?.uid) return undefined;
@@ -76,6 +88,25 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
     { label: "Total Lessons", value: totalLessons.toString(), icon: "CheckCircle2" },
     { label: "Hours Tutored", value: `${Math.round(totalLessons * 1.5)}h`, icon: "Clock" },
   ];
+
+  const handleCreateSession = async (e) => {
+    e.preventDefault();
+    if (!newSession.studentId || !newSession.subject) return;
+    setIsSubmitting(true);
+    try {
+      await addDoc(collection(db, 'sessions'), {
+        ...newSession,
+        isHomeworkCompleted: false,
+        createdAt: new Date().toISOString()
+      });
+      setShowScheduleModal(false);
+      setNewSession({ studentId: '', studentName: '', subject: '', date: new Date().toISOString().split('T')[0], startTime: '10:00 AM', endTime: '11:30 AM', notes: '', homework: '' });
+    } catch (err) {
+      console.error('Error creating session:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const getGreeting = () => {
     const hour = new Date().getHours();
@@ -214,7 +245,9 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
                       <Plus size={20} />
                       Add New Student
                     </button>
-                    <button className="app-button app-button--secondary">Schedule Lesson</button>
+                    <button className="app-button app-button--secondary" onClick={() => setShowScheduleModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
+                      <Calendar size={18} /> Schedule Lesson
+                    </button>
                     <button className="app-button app-button--secondary">Record Progress</button>
                   </div>
                 </div>
@@ -265,6 +298,121 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
           setAvatarOpen(false);
         }}
       />
+
+      {/* ── Schedule Lesson Modal ── */}
+      <AnimatePresence>
+        {showScheduleModal && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setShowScheduleModal(false)}
+              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.55)', backdropFilter: 'blur(4px)' }}
+            />
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              style={{ position: 'relative', width: '100%', maxWidth: '460px', backgroundColor: '#fff', borderRadius: '28px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.18)' }}
+            >
+              {/* Modal header */}
+              <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '28px 32px', color: '#fff' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
+                    <h3 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900 }}>Schedule Lesson</h3>
+                    <p style={{ margin: 0, opacity: 0.85, fontSize: '0.9rem', fontWeight: 600 }}>Create a new session for a student</p>
+                  </div>
+                  <button onClick={() => setShowScheduleModal(false)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '34px', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                    <X size={18} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Modal body */}
+              <form onSubmit={handleCreateSession} style={{ padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+
+                {/* Student selector */}
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Student</label>
+                  <select
+                    required
+                    value={newSession.studentId}
+                    onChange={e => {
+                      const selected = students.find(s => s.id === e.target.value);
+                      setNewSession({ ...newSession, studentId: e.target.value, studentName: selected?.name || '' });
+                    }}
+                    style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box', appearance: 'none', cursor: 'pointer' }}
+                  >
+                    <option value="">Select a student...</option>
+                    {students.map(s => (
+                      <option key={s.id} value={s.id}>{s.name} — {s.subject || ''} ({s.level || ''})</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Subject */}
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Subject</label>
+                  <input
+                    required
+                    type="text"
+                    placeholder="e.g. Mathematics"
+                    value={newSession.subject}
+                    onChange={e => setNewSession({ ...newSession, subject: e.target.value })}
+                    style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
+                  />
+                </div>
+
+                {/* Date */}
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Date</label>
+                  <input
+                    required
+                    type="date"
+                    value={newSession.date}
+                    onChange={e => setNewSession({ ...newSession, date: e.target.value })}
+                    style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
+                  />
+                </div>
+
+                {/* Start / End time */}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Start Time</label>
+                    <input
+                      required
+                      type="text"
+                      placeholder="10:00 AM"
+                      value={newSession.startTime}
+                      onChange={e => setNewSession({ ...newSession, startTime: e.target.value })}
+                      style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
+                    />
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>End Time</label>
+                    <input
+                      required
+                      type="text"
+                      placeholder="11:30 AM"
+                      value={newSession.endTime}
+                      onChange={e => setNewSession({ ...newSession, endTime: e.target.value })}
+                      style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
+                    />
+                  </div>
+                </div>
+
+                {/* Submit */}
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  style={{ width: '100%', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', color: '#fff', padding: '16px', borderRadius: '14px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', marginTop: '4px', boxShadow: '0 4px 12px rgba(99,102,241,0.3)', opacity: isSubmitting ? 0.7 : 1 }}
+                >
+                  {isSubmitting ? 'Saving...' : 'Create Session'}
+                </button>
+              </form>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
