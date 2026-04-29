@@ -123,27 +123,28 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
         className="app-page"
       >
         {!isAdmin && (
-          <div className="vision-card-wrapper" style={{ marginBottom: '24px' }}>
+          <div className="vision-card-wrapper" style={{ marginBottom: isMobile ? '0' : '24px' }}>
             <div className="app-panel vision-card" style={{ 
               backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '460px',
-              borderRadius: '36px',
+              height: isMobile ? '420px' : '460px',
+              borderRadius: isMobile ? '0 0 36px 36px' : '36px',
               position: 'relative',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'flex-end',
-              padding: '48px',
+              padding: isMobile ? '32px 24px' : '48px',
               color: 'white',
               overflow: 'hidden',
-              boxShadow: '0 30px 70px rgba(0,0,0,0.25)',
-              border: 'none'
+              boxShadow: isMobile ? '0 10px 30px rgba(0,0,0,0.15)' : '0 30px 70px rgba(0,0,0,0.25)',
+              border: 'none',
+              marginTop: isMobile ? '0' : '0'
             }}>
               <div className="vision-card__content" style={{ zIndex: 1 }}>
                 <p style={{ 
                   fontFamily: "'Poppins', sans-serif",
-                  fontSize: '1.1rem', 
+                  fontSize: isMobile ? '0.9rem' : '1.1rem', 
                   fontWeight: 700, 
                   opacity: 1, 
                   textTransform: 'uppercase', 
@@ -156,7 +157,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                 </p>
                 <h1 style={{ 
                   fontFamily: "'Poppins', sans-serif",
-                  fontSize: '3.2rem', 
+                  fontSize: isMobile ? '2.8rem' : '3.2rem', 
                   fontWeight: 900, 
                   margin: 0, 
                   lineHeight: 1.0, 
@@ -180,7 +181,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                     <span style={{ 
                       fontFamily: "'Poppins', sans-serif",
                       fontWeight: 800, 
-                      fontSize: '0.82rem', 
+                      fontSize: isMobile ? '0.75rem' : '0.82rem', 
                       color: 'white', 
                       letterSpacing: '0.08em',
                       textShadow: '0 1px 3px rgba(0,0,0,0.3)' 
@@ -192,9 +193,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               </div>
             </div>
             
-            <div className="app-input" style={{ marginTop: '24px', maxWidth: '100%' }}>
-              <Search size={18} />
-              <input type="text" placeholder="Search my courses, students, and more..." style={{ padding: '16px 0' }} />
+            <div style={{ padding: isMobile ? '20px 20px 0' : '24px 0 0' }}>
+              <div className="app-input" style={{ maxWidth: '100%' }}>
+                <Search size={18} />
+                <input type="text" placeholder="Search my courses, students, and more..." style={{ padding: '16px 0' }} />
+              </div>
             </div>
           </div>
         )}
