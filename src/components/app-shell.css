@@ -1202,8 +1202,9 @@
   }
 
   .app-sidebar__nav {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 6px;
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 4px;
   }
 
   .app-sidebar__item {
@@ -1509,10 +1510,4 @@
    ========================================================================== */
 .mobile-user-capsule {
   display: none !important;
-}
-
-@media (max-width: 1024px) {
-  .mobile-user-capsule {
-    display: flex !important;
-  }
 }

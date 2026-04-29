@@ -72,6 +72,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} />
         <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} />
         <SidebarItem icon={Settings} label="Settings" active={activeTab === 'Settings'} onClick={() => setActiveTab('Settings')} />
+        <SidebarItem icon={LogOut} label="Sign Out" onClick={logout} />
       </nav>
 
       <div className="app-sidebar__footer">
