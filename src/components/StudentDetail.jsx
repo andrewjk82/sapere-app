@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, Edit3, Mail, Phone, Calendar, 
   BarChart3, Trophy, MessageSquare, Check, X,
-  Clock, MapPin, Repeat
+  Clock, MapPin, Repeat, Upload
 } from 'lucide-react';
-import { db } from '../firebase/config';
+import { db, storage } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [uploading, setUploading] = useState(false);
+  const fileInputRef = useRef(null);
   const [isEditing, setIsEditing] = useState(false);
   const [sessionForm, setSessionForm] = useState({
     date: '28/04/2026',
@@ -34,6 +37,29 @@ const StudentDetail = ({ studentId, onBack }) => {
     navBtnActive: { borderColor: '#6366f1', color: '#6366f1', boxShadow: '0 10px 20px rgba(99, 102, 241, 0.1)' },
     visionBoard: { height: '280px', borderRadius: '28px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '32px', color: 'white', overflow: 'hidden' },
     visionPill: { background: 'rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '6px 16px', borderRadius: '12px', fontSize: '0.85rem', fontWeight: 700, display: 'inline-block', marginTop: '8px' }
+  };
+
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    try {
+      setUploading(true);
+      const storageRef = ref(storage, `vision-boards/${studentId}/${Date.now()}_${file.name}`);
+      await uploadBytes(storageRef, file);
+      const downloadURL = await getDownloadURL(storageRef);
+      
+      const collectionName = student.source === 'manual' ? 'students' : 'users';
+      const studentRef = doc(db, collectionName, studentId);
+      await setDoc(studentRef, { dreamImageUrl: downloadURL }, { merge: true });
+      
+      setStudent(prev => ({ ...prev, dreamImageUrl: downloadURL }));
+    } catch (error) {
+      console.error("Upload failed:", error);
+      alert("Upload failed. Make sure Storage is enabled.");
+    } finally {
+      setUploading(false);
+    }
   };
 
   useEffect(() => {
@@ -121,9 +147,32 @@ const StudentDetail = ({ studentId, onBack }) => {
               <h3 style={{ fontSize: '1.8rem', margin: '4px 0' }}>{student.firstName || student.name?.split(' ')[0]}</h3>
               <span style={styles.visionPill}>{student.dreamJob || 'Future Professional'}</span>
             </div>
-            <button className="change-bg-btn" style={{ position: 'absolute', top: '20px', right: '20px', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', padding: '10px 18px', borderRadius: '14px', fontSize: '0.75rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', zIndex: 3 }}>
-              <Calendar size={14} />
-              Change Background
+            
+            <input 
+              type="file" 
+              ref={fileInputRef} 
+              style={{ display: 'none' }} 
+              accept="image/*"
+              onChange={handleImageUpload}
+            />
+
+            <button 
+              className="change-bg-btn" 
+              onClick={() => fileInputRef.current.click()}
+              disabled={uploading}
+              style={{ position: 'absolute', top: '20px', right: '20px', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', padding: '10px 18px', borderRadius: '14px', fontSize: '0.75rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', zIndex: 3 }}
+            >
+              {uploading ? (
+                <>
+                  <div className="app-spinner-sm" style={{ width: '14px', height: '14px', border: '2px solid rgba(255,255,255,0.3)', borderTopColor: 'white', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }}></div>
+                  Uploading...
+                </>
+              ) : (
+                <>
+                  <Upload size={14} />
+                  Change Background
+                </>
+              )}
             </button>
           </div>
         </div>
