@@ -5,9 +5,8 @@ import {
   BarChart3, Trophy, MessageSquare, Check, X,
   Clock, MapPin, Repeat, Upload
 } from 'lucide-react';
-import { db, storage } from '../firebase/config';
+import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
@@ -43,23 +42,35 @@ const StudentDetail = ({ studentId, onBack }) => {
     const file = e.target.files[0];
     if (!file) return;
 
-    try {
-      setUploading(true);
-      const storageRef = ref(storage, `vision-boards/${studentId}/${Date.now()}_${file.name}`);
-      await uploadBytes(storageRef, file);
-      const downloadURL = await getDownloadURL(storageRef);
-      
-      const collectionName = student.source === 'manual' ? 'students' : 'users';
-      const studentRef = doc(db, collectionName, studentId);
-      await setDoc(studentRef, { dreamImageUrl: downloadURL }, { merge: true });
-      
-      setStudent(prev => ({ ...prev, dreamImageUrl: downloadURL }));
-    } catch (error) {
-      console.error("Upload failed:", error);
-      alert("Upload failed. Make sure Storage is enabled.");
-    } finally {
-      setUploading(false);
+    // Check file size (Firestore limit is 1MB total per document)
+    if (file.size > 800000) { // Approx 800KB limit for safety
+      alert("Image is too large. Please select an image under 800KB.");
+      return;
     }
+
+    const reader = new FileReader();
+    reader.onloadstart = () => setUploading(true);
+    reader.onload = async (event) => {
+      try {
+        const base64String = event.target.result;
+        
+        const collectionName = student.source === 'manual' ? 'students' : 'users';
+        const studentRef = doc(db, collectionName, studentId);
+        await setDoc(studentRef, { dreamImageUrl: base64String }, { merge: true });
+        
+        setStudent(prev => ({ ...prev, dreamImageUrl: base64String }));
+      } catch (error) {
+        console.error("Save failed:", error);
+        alert("Failed to save image to database.");
+      } finally {
+        setUploading(false);
+      }
+    };
+    reader.onerror = () => {
+      alert("Error reading file.");
+      setUploading(false);
+    };
+    reader.readAsDataURL(file);
   };
 
   useEffect(() => {
