@@ -22,6 +22,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [studentSessions, setStudentSessions] = useState([]);
 
   // ── Handle Resize ──
   useEffect(() => {
@@ -29,6 +30,28 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return undefined;
+    const q = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+    return onSnapshot(q, (snap) => {
+      const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      setStudentSessions(docs);
+    });
+  }, [user?.uid, isAdmin]);
+
+  const { nextLesson, lastLesson } = useMemo(() => {
+    const now = new Date();
+    const sorted = [...studentSessions].sort((a, b) => new Date(a.date) - new Date(b.date));
+    
+    // Sort logic for more accurate comparison
+    const getTime = (s) => new Date(`${s.date} ${s.startTime || '00:00 AM'}`).getTime();
+    
+    const next = sorted.find(s => getTime(s) > now.getTime());
+    const past = [...sorted].reverse().find(s => getTime(s) < now.getTime());
+    
+    return { nextLesson: next, lastLesson: past };
+  }, [studentSessions]);
   const [newSession, setNewSession] = useState({
     studentId: '',
     studentName: '',
@@ -305,12 +328,61 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               </div>
             </>
           ) : (
-            <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2' }}>
-              <div className="dashboard-card__header">
-                <h3>My Learning Status</h3>
+            <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2', padding: isMobile ? '24px' : '32px' }}>
+              <div className="dashboard-card__header" style={{ marginBottom: '24px' }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 900 }}>My Learning Status</h3>
               </div>
-              <div className="app-empty">
-                Your personalized learning dashboard is being prepared. Stay tuned!
+              
+              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '20px' }}>
+                {/* Next Lesson Card */}
+                <div style={{ 
+                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
+                  borderRadius: '24px', 
+                  padding: '24px', 
+                  color: 'white',
+                  boxShadow: '0 12px 30px rgba(99,102,241,0.2)',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}>
+                  <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}>
+                    <Calendar size={100} />
+                  </div>
+                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8, marginBottom: '16px' }}>Next Lesson</label>
+                  {nextLesson ? (
+                    <>
+                      <h4 style={{ margin: '0 0 8px', fontSize: '1.3rem', fontWeight: 900 }}>{nextLesson.subject}</h4>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 600 }}>
+                        <Clock size={16} />
+                        {nextLesson.date} @ {nextLesson.startTime}
+                      </div>
+                    </>
+                  ) : (
+                    <p style={{ margin: 0, fontWeight: 700, opacity: 0.9 }}>No upcoming lessons scheduled.</p>
+                  )}
+                </div>
+
+                {/* Last Lesson Card */}
+                <div style={{ 
+                  background: '#ffffff', 
+                  borderRadius: '24px', 
+                  padding: '24px', 
+                  border: '1px solid #f1f5f9',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.03)',
+                  position: 'relative'
+                }}>
+                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#94a3b8', marginBottom: '16px' }}>Last Lesson</label>
+                  {lastLesson ? (
+                    <>
+                      <h4 style={{ margin: '0 0 8px', fontSize: '1.3rem', fontWeight: 900, color: '#1e1b4b' }}>{lastLesson.subject}</h4>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 700, color: '#64748b' }}>
+                        <CheckCircle2 size={16} style={{ color: '#10b981' }} />
+                        Completed on {lastLesson.date}
+                      </div>
+                    </>
+                  ) : (
+                    <p style={{ margin: 0, fontWeight: 700, color: '#cbd5e1' }}>No previous lesson history.</p>
+                  )}
+                </div>
               </div>
             </div>
           )}
