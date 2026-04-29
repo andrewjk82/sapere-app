@@ -6,7 +6,7 @@ import {
   Clock, MapPin, Repeat, Upload
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc, doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
@@ -121,6 +121,47 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     fetchStudent();
   }, [studentId]);
+
+  const [booking, setBooking] = useState(false);
+
+  const handleBookSession = async () => {
+    if (!sessionForm.focus || !sessionForm.date) {
+      alert("Please enter a subject and date.");
+      return;
+    }
+
+    try {
+      setBooking(true);
+      await addDoc(collection(db, 'sessions'), {
+        studentId,
+        studentName: displayName,
+        date: sessionForm.date,
+        subject: sessionForm.focus,
+        startTime: sessionForm.start,
+        endTime: sessionForm.end,
+        recurring: sessionForm.recurring,
+        status: 'Scheduled',
+        notes: '',
+        homework: '',
+        isHomeworkCompleted: false,
+        createdAt: serverTimestamp()
+      });
+
+      alert("Session booked successfully!");
+      setSessionForm({
+        date: new Date().toLocaleDateString('en-GB'),
+        focus: '',
+        start: '04:00 pm',
+        end: '05:00 pm',
+        recurring: false
+      });
+    } catch (error) {
+      console.error("Booking error:", error);
+      alert("Failed to book session.");
+    } finally {
+      setBooking(false);
+    }
+  };
 
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
   if (!student) return <div className="app-empty">Student not found.</div>;
@@ -293,8 +334,13 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
           </label>
           
-          <button className="app-button" style={{ background: '#1a1c2c', padding: '16px 40px', borderRadius: '16px', color: 'white', fontWeight: 800, border: 0, cursor: 'pointer', boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }}>
-            Finalize Session
+          <button 
+            className="app-button" 
+            onClick={handleBookSession}
+            disabled={booking}
+            style={{ background: '#1a1c2c', padding: '16px 40px', borderRadius: '16px', color: 'white', fontWeight: 800, border: 0, cursor: 'pointer', boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }}
+          >
+            {booking ? 'Booking...' : 'Finalize Session'}
           </button>
         </div>
       </div>
