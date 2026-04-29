@@ -120,7 +120,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
                   color: 'white',
                   textShadow: '-0.8px -0.8px 0 #000, 0.8px -0.8px 0 #000, -0.8px 0.8px 0 #000, 0.8px 0.8px 0 #000, 0 2px 10px rgba(0,0,0,0.4)' 
                 }}>
-                  {getGreeting()} 👋
+                  {getGreeting()}
                 </p>
                 <h1 style={{ 
                   fontSize: '4.5rem', 
