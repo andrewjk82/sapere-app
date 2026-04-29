@@ -70,6 +70,11 @@ const Schedule = () => {
   const handleDeleteSession = async (session, choice) => {
     if (!isAdmin) return;
     
+    // Add safety check for single deletion
+    if (choice === 'single' && !window.confirm('Are you sure you want to delete this session?')) {
+      return;
+    }
+    
     try {
       if (choice === 'single') {
         await deleteDoc(doc(db, 'sessions', session.id));
