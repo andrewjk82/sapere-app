@@ -180,80 +180,120 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
         className="app-page"
       >
         {!isAdmin && (
-          <div className="vision-card-wrapper" style={{ marginBottom: isMobile ? '0' : '24px' }}>
-            <div className="app-panel vision-card" style={{ 
-              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: isMobile ? '420px' : '460px',
-              borderRadius: isMobile ? '0 0 36px 36px' : '36px',
-              position: 'relative',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'flex-end',
-              padding: isMobile ? '32px 24px' : '48px',
-              color: 'white',
-              overflow: 'hidden',
-              boxShadow: isMobile ? '0 10px 30px rgba(0,0,0,0.15)' : '0 30px 70px rgba(0,0,0,0.25)',
-              border: 'none',
-              marginTop: isMobile ? '0' : '0'
-            }}>
-              <div className="vision-card__content" style={{ zIndex: 1 }}>
-                <p style={{ 
-                  fontFamily: "'Poppins', sans-serif",
-                  fontSize: isMobile ? '0.9rem' : '1.1rem', 
-                  fontWeight: 700, 
-                  opacity: 1, 
-                  textTransform: 'uppercase', 
-                  letterSpacing: '0.15em', 
-                  marginBottom: '8px', 
-                  color: 'white',
-                  textShadow: '0 2px 10px rgba(0,0,0,0.4)' 
-                }}>
-                  {getGreeting()}
-                </p>
-                <h1 style={{ 
-                  fontFamily: "'Poppins', sans-serif",
-                  fontSize: isMobile ? '2.8rem' : '3.2rem', 
-                  fontWeight: 900, 
-                  margin: 0, 
-                  lineHeight: 1.0, 
-                  color: '#1a1c2c',
-                  letterSpacing: '-0.03em',
-                  textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 4px 20px rgba(0,0,0,0.2)' 
-                }}>
-                  {userName}
-                </h1>
-                {profile?.dreamJob && (
-                  <div style={{ 
-                    marginTop: '16px', 
-                    padding: '6px 14px', 
-                    background: 'rgba(255,255,255,0.15)', 
-                    backdropFilter: 'blur(12px)', 
-                    borderRadius: '12px', 
-                    display: 'inline-block', 
-                    border: '1px solid rgba(255,255,255,0.2)',
-                    boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
-                  }}>
-                    <span style={{ 
-                      fontFamily: "'Poppins', sans-serif",
-                      fontWeight: 800, 
-                      fontSize: isMobile ? '0.75rem' : '0.82rem', 
-                      color: 'white', 
-                      letterSpacing: '0.08em',
-                      textShadow: '0 1px 3px rgba(0,0,0,0.3)' 
-                    }}>
-                      FUTURE {profile.dreamJob.toUpperCase()}
-                    </span>
-                  </div>
-                )}
+          <div className="student-hero-container" style={{ 
+            display: 'grid', 
+            gridTemplateColumns: isMobile ? '1fr' : 'repeat(12, 1fr)', 
+            gap: isMobile ? '16px' : '24px', 
+            padding: isMobile ? '0' : '0 0 24px 0',
+            alignItems: 'stretch'
+          }}>
+            {/* Left: Vision Card */}
+            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7' }}>
+              <div className="app-panel vision-card" style={{ 
+                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: isMobile ? '380px' : '100%',
+                minHeight: isMobile ? '380px' : '480px',
+                borderRadius: isMobile ? '0 0 32px 32px' : '32px',
+                position: 'relative',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'flex-end',
+                padding: isMobile ? '32px 24px' : '40px',
+                color: 'white',
+                overflow: 'hidden',
+                boxShadow: '0 20px 50px rgba(0,0,0,0.15)',
+                border: 'none'
+              }}>
+                <div className="vision-card__content" style={{ zIndex: 1 }}>
+                  <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '8px', color: 'white', textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
+                    {getGreeting()}
+                  </p>
+                  <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '2.5rem' : '3.2rem', fontWeight: 900, margin: 0, lineHeight: 1.0, color: '#fff', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
+                    {userName}
+                  </h1>
+                  {profile?.dreamJob && (
+                    <div style={{ marginTop: '16px', padding: '6px 14px', background: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(12px)', borderRadius: '12px', display: 'inline-block', border: '1px solid rgba(255,255,255,0.3)' }}>
+                      <span style={{ fontWeight: 800, fontSize: '0.75rem', color: 'white', letterSpacing: '0.08em' }}>FUTURE {profile.dreamJob.toUpperCase()}</span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
-            
-            <div style={{ padding: isMobile ? '20px 20px 0' : '24px 0 0' }}>
-              <div className="app-input" style={{ maxWidth: '100%' }}>
-                <Search size={18} />
-                <input type="text" placeholder="Search my courses, students, and more..." style={{ padding: '16px 0' }} />
+
+            {/* Right: Status Cards Stack */}
+            <div style={{ 
+              gridColumn: isMobile ? 'span 1' : 'span 5', 
+              display: 'flex', 
+              flexDirection: 'column', 
+              gap: isMobile ? '16px' : '20px',
+              padding: isMobile ? '0 20px' : '0'
+            }}>
+              {/* Next Lesson Card */}
+              <div 
+                onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
+                style={{ 
+                  flex: 1,
+                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
+                  borderRadius: '28px', 
+                  padding: '28px', 
+                  color: 'white',
+                  boxShadow: '0 15px 35px rgba(99,102,241,0.25)',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  cursor: nextLesson ? 'pointer' : 'default',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center'
+                }}
+              >
+                <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}>
+                  <Calendar size={120} />
+                </div>
+                <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', opacity: 0.85, marginBottom: '12px' }}>Next Lesson</label>
+                {nextLesson ? (
+                  <>
+                    <h4 style={{ margin: '0 0 10px', fontSize: '1.5rem', fontWeight: 900, lineHeight: 1.2 }}>{nextLesson.subject}</h4>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1rem', fontWeight: 600 }}>
+                      <Clock size={18} />
+                      {nextLesson.date} @ {nextLesson.startTime}
+                    </div>
+                  </>
+                ) : (
+                  <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>
+                )}
+              </div>
+
+              {/* Last Lesson Card */}
+              <div 
+                onClick={() => lastLesson && setSelectedViewSession(lastLesson)}
+                style={{ 
+                  flex: 1,
+                  background: '#ffffff', 
+                  borderRadius: '28px', 
+                  padding: '28px', 
+                  border: '1px solid #f1f5f9',
+                  boxShadow: '0 12px 30px rgba(0,0,0,0.04)',
+                  position: 'relative',
+                  cursor: lastLesson ? 'pointer' : 'default',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center'
+                }}
+              >
+                <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '12px' }}>Last Lesson</label>
+                {lastLesson ? (
+                  <>
+                    <h4 style={{ margin: '0 0 10px', fontSize: '1.5rem', fontWeight: 900, color: '#1e1b4b', lineHeight: 1.2 }}>{lastLesson.subject}</h4>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1rem', fontWeight: 700, color: '#64748b' }}>
+                      <CheckCircle2 size={18} style={{ color: '#10b981' }} />
+                      Completed on {lastLesson.date}
+                    </div>
+                  </>
+                ) : (
+                  <p style={{ margin: 0, fontWeight: 700, color: '#cbd5e1', fontSize: '1.1rem' }}>No past lessons.</p>
+                )}
               </div>
             </div>
           </div>
@@ -267,7 +307,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
           </div>
         )}
 
-        <div className="app-grid app-grid--content">
+        <div className="app-grid app-grid--content" style={{ padding: isMobile ? '0 20px 40px' : '0' }}>
           {isAdmin ? (
             <>
               <div className="app-panel dashboard-card">
@@ -331,67 +371,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
           ) : (
             <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2', padding: isMobile ? '24px' : '32px' }}>
               <div className="dashboard-card__header" style={{ marginBottom: '24px' }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 900 }}>My Learning Status</h3>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 900 }}>My Courses</h3>
               </div>
-              
-              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '20px' }}>
-                {/* Next Lesson Card */}
-                <div 
-                  onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
-                  style={{ 
-                    background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
-                    borderRadius: '24px', 
-                    padding: '24px', 
-                    color: 'white',
-                    boxShadow: '0 12px 30px rgba(99,102,241,0.2)',
-                    position: 'relative',
-                    overflow: 'hidden',
-                    cursor: nextLesson ? 'pointer' : 'default'
-                  }}
-                >
-                  <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}>
-                    <Calendar size={100} />
-                  </div>
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8, marginBottom: '16px' }}>Next Lesson</label>
-                  {nextLesson ? (
-                    <>
-                      <h4 style={{ margin: '0 0 8px', fontSize: '1.3rem', fontWeight: 900 }}>{nextLesson.subject}</h4>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 600 }}>
-                        <Clock size={16} />
-                        {nextLesson.date} @ {nextLesson.startTime}
-                      </div>
-                    </>
-                  ) : (
-                    <p style={{ margin: 0, fontWeight: 700, opacity: 0.9 }}>No upcoming lessons scheduled.</p>
-                  )}
-                </div>
-
-                {/* Last Lesson Card */}
-                <div 
-                  onClick={() => lastLesson && setSelectedViewSession(lastLesson)}
-                  style={{ 
-                    background: '#ffffff', 
-                    borderRadius: '24px', 
-                    padding: '24px', 
-                    border: '1px solid #f1f5f9',
-                    boxShadow: '0 10px 25px rgba(0,0,0,0.03)',
-                    position: 'relative',
-                    cursor: lastLesson ? 'pointer' : 'default'
-                  }}
-                >
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#94a3b8', marginBottom: '16px' }}>Last Lesson</label>
-                  {lastLesson ? (
-                    <>
-                      <h4 style={{ margin: '0 0 8px', fontSize: '1.3rem', fontWeight: 900, color: '#1e1b4b' }}>{lastLesson.subject}</h4>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.95rem', fontWeight: 700, color: '#64748b' }}>
-                        <CheckCircle2 size={16} style={{ color: '#10b981' }} />
-                        Completed on {lastLesson.date}
-                      </div>
-                    </>
-                  ) : (
-                    <p style={{ margin: 0, fontWeight: 700, color: '#cbd5e1' }}>No previous lesson history.</p>
-                  )}
-                </div>
+              <div className="app-empty" style={{ padding: '60px 0', background: '#f8fafc', borderRadius: '24px', border: '2px dashed #e2e8f0' }}>
+                <GraduationCap size={48} style={{ color: '#cbd5e1', marginBottom: '16px', opacity: 0.5 }} />
+                <p style={{ fontWeight: 600, color: '#94a3b8' }}>Explore and manage your active courses here.</p>
               </div>
             </div>
           )}
