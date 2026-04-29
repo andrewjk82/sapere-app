@@ -5,9 +5,8 @@ import {
   BarChart3, Trophy, MessageSquare, Check, X,
   Clock, MapPin, Repeat, Upload
 } from 'lucide-react';
-import { db, storage } from '../firebase/config';
+import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
@@ -43,43 +42,56 @@ const StudentDetail = ({ studentId, onBack }) => {
     const file = e.target.files[0];
     if (!file) return;
 
-    try {
-      setUploading(true);
-      console.log("Starting upload for file:", file.name);
-      
-      const storageRef = ref(storage, `vision-boards/${studentId}/${Date.now()}_${file.name}`);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+    setUploading(true);
+    
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const img = new Image();
+      img.onload = async () => {
+        const canvas = document.createElement('canvas');
+        let width = img.width;
+        let height = img.height;
 
-      uploadTask.on('state_changed', 
-        (snapshot) => {
-          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log(`Upload is ${progress}% done`);
-        }, 
-        (error) => {
-          console.error("Upload error details:", error);
-          alert(`Upload failed: ${error.message}. Please check if Storage is enabled in Firebase Console.`);
-          setUploading(false);
-        }, 
-        async () => {
-          console.log("Upload successful! Getting URL...");
-          const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-          console.log("URL obtained:", downloadURL);
-          
+        // Resize logic (800px standard for free storage efficiency)
+        const MAX_WIDTH = 1200;
+        const MAX_HEIGHT = 800;
+
+        if (width > height) {
+          if (width > MAX_WIDTH) {
+            height *= MAX_WIDTH / width;
+            width = MAX_WIDTH;
+          }
+        } else {
+          if (height > MAX_HEIGHT) {
+            width *= MAX_HEIGHT / height;
+            height = MAX_HEIGHT;
+          }
+        }
+
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+
+        // Compress to JPEG 70% quality (Tutor-pro style)
+        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+        
+        try {
           const collectionName = student.source === 'manual' ? 'students' : 'users';
           const studentRef = doc(db, collectionName, studentId);
-          await setDoc(studentRef, { dreamImageUrl: downloadURL }, { merge: true });
+          await setDoc(studentRef, { dreamImageUrl: compressedDataUrl }, { merge: true });
           
-          setStudent(prev => ({ ...prev, dreamImageUrl: downloadURL }));
-          console.log("Firestore updated!");
-          alert("Vision board image updated! ✨");
+          setStudent(prev => ({ ...prev, dreamImageUrl: compressedDataUrl }));
+        } catch (error) {
+          console.error("Save failed:", error);
+          alert("Failed to save image to system.");
+        } finally {
           setUploading(false);
         }
-      );
-    } catch (error) {
-      console.error("Initiation error:", error);
-      alert(`Critical error: ${error.message}`);
-      setUploading(false);
-    }
+      };
+      img.src = event.target.result;
+    };
+    reader.readAsDataURL(file);
   };
 
   useEffect(() => {
