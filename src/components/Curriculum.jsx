@@ -7,55 +7,7 @@ import {
 import { auth, db } from '../firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
-
-const CURRICULUM_DATA = {
-  'Year 1': [
-    { id: 'y1-1', title: 'Numbers & Place Value', modules: 10, completed: 8 },
-    { id: 'y1-2', title: 'Patterns & Algebra', modules: 6, completed: 2 },
-    { id: 'y1-3', title: 'Measurement', modules: 8, completed: 0 }
-  ],
-  'Year 2': [
-    { id: 'y2-1', title: 'Addition & Subtraction', modules: 12, completed: 5 },
-    { id: 'y2-2', title: 'Shapes & Fractions', modules: 8, completed: 0 }
-  ],
-  // ... adding placeholders for other years to ensure the structure exists
-  'Year 11': {
-    'Standard': [
-      { id: 'y11s-1', title: 'Algebra: Formulae & Equations', modules: 12, completed: 4 },
-      { id: 'y11s-2', title: 'Measurement: Applications', modules: 10, completed: 0 },
-      { id: 'y11s-3', title: 'Financial Maths: Interest', modules: 8, completed: 0 }
-    ],
-    'Advanced': [
-      { id: 'y11a-1', title: 'Functions', modules: 15, completed: 5 },
-      { id: 'y11a-2', title: 'Trigonometric Functions', modules: 12, completed: 0 },
-      { id: 'y11a-3', title: 'Calculus: Introduction', modules: 14, completed: 0 }
-    ],
-    'Extension 1': [
-      { id: 'y11e1-1', title: 'Further Functions', modules: 10, completed: 2 },
-      { id: 'y11e1-2', title: 'Trigonometric Identities', modules: 12, completed: 0 },
-      { id: 'y11e1-3', title: 'Combinatorics', modules: 8, completed: 0 }
-    ]
-  },
-  'Year 12': {
-    'Standard': [
-      { id: 'y12s-1', title: 'Financial Maths: Annuities', modules: 10, completed: 3 },
-      { id: 'y12s-2', title: 'Statistical Analysis', modules: 12, completed: 0 }
-    ],
-    'Advanced': [
-      { id: 'y12a-1', title: 'Calculus: Differentiation', modules: 14, completed: 6 },
-      { id: 'y12a-2', title: 'Integral Calculus', modules: 16, completed: 0 }
-    ],
-    'Extension 1': [
-      { id: 'y12e1-1', title: 'Vectors', modules: 12, completed: 4 },
-      { id: 'y12e1-2', title: 'Proof', modules: 10, completed: 0 }
-    ],
-    'Extension 2': [
-      { id: 'y12e2-1', title: 'Complex Numbers', modules: 15, completed: 5 },
-      { id: 'y12e2-2', title: 'Nature of Proof', modules: 12, completed: 0 },
-      { id: 'y12e2-3', title: 'Integration Techniques', modules: 18, completed: 0 }
-    ]
-  }
-};
+import { CURRICULUM_DATA } from '../constants/curriculumData';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
@@ -101,11 +53,16 @@ const Curriculum = () => {
       data = data[selectedCourse] || [];
     }
     
+    // Filter by assigned chapters if student
+    if (!isAdmin && profile?.assignedChapters) {
+      data = data.filter(chapter => profile.assignedChapters.includes(chapter.id));
+    }
+    
     if (!searchQuery) return data;
     return data.filter(item => 
       item.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
-  }, [selectedYear, selectedCourse, searchQuery, courses]);
+  }, [selectedYear, selectedCourse, searchQuery, courses, isAdmin, profile]);
 
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
