@@ -6,8 +6,7 @@ import {
   BookOpen, 
   Settings, 
   LogOut,
-  ShieldCheck,
-  User
+  ShieldCheck
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
@@ -48,19 +47,10 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     : fallbackUrl);
 
   return (
-    <>
-      {/* Mobile Top Capsule Menu - Only visible on screens <= 720px via CSS */}
-      <div className="mobile-user-capsule">
-        <div className="app-avatar" onClick={() => setAvatarOpen(true)} style={{ width: '36px', height: '36px', cursor: 'pointer' }}>
-          <img src={avatarUrl} alt="Avatar" />
-        </div>
-        <div className="mobile-user-capsule__divider" />
-        <button onClick={logout} className="mobile-logout-btn">
-          <LogOut size={18} />
-        </button>
-      </div>
+    : fallbackUrl);
 
-      <aside className="app-sidebar">
+  return (
+    <aside className="app-sidebar">
       <motion.div 
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}

@@ -12,7 +12,9 @@ import StudentDetail from './components/StudentDetail';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
-import { AlertCircle, ArrowRight } from 'lucide-react';
+import { AlertCircle, ArrowRight, LogOut } from 'lucide-react';
+import { db } from './firebase/config';
+import { doc, onSnapshot } from 'firebase/firestore';
 import './components/app-shell.css';
 
 function App() {
@@ -34,6 +36,25 @@ function App() {
     subject: '',
     level: 'Year 10'
   });
+
+  const [profile, setProfile] = useState(null);
+
+  useEffect(() => {
+    if (!user?.uid) return undefined;
+    const ref = doc(db, 'users', user.uid);
+    return onSnapshot(ref, (snap) => {
+      setProfile(snap.exists() ? snap.data() : null);
+    });
+  }, [user?.uid]);
+
+  const fallbackUrl = React.useMemo(() => {
+    if (user?.photoURL) return user.photoURL;
+    return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || 'sapere')}`;
+  }, [user?.photoURL, user?.email]);
+
+  const avatarUrl = profile?.avatarUrl || (profile?.avatarStyle && profile?.avatarSeed
+    ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
+    : fallbackUrl);
 
   useEffect(() => {
     if (user) {
@@ -218,6 +239,17 @@ function App() {
 
   return (
     <div className="app-shell">
+      {/* Mobile Top Capsule Menu */}
+      <div className="mobile-user-capsule">
+        <div className="app-avatar" style={{ width: '36px', height: '36px' }}>
+          <img src={avatarUrl} alt="Avatar" />
+        </div>
+        <div className="mobile-user-capsule__divider" />
+        <button onClick={logout} className="mobile-logout-btn">
+          <LogOut size={18} />
+        </button>
+      </div>
+
       <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} />
       <div className="app-shell__main">
         {renderContent()}
