@@ -239,17 +239,6 @@ function App() {
 
   return (
     <div className="app-shell">
-      {/* Mobile Top Capsule Menu */}
-      <div className="mobile-user-capsule">
-        <div className="app-avatar" style={{ width: '36px', height: '36px' }}>
-          <img src={avatarUrl} alt="Avatar" />
-        </div>
-        <div className="mobile-user-capsule__divider" />
-        <button onClick={logout} className="mobile-logout-btn">
-          <LogOut size={18} />
-        </button>
-      </div>
-
       <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} />
       <div className="app-shell__main">
         {renderContent()}
@@ -321,6 +310,17 @@ function App() {
           </div>
         )}
       </AnimatePresence>
+
+      {/* Global Mobile Top Capsule Menu - Rendered at bottom of DOM for max visibility */}
+      <div className="mobile-user-capsule">
+        <div className="app-avatar" style={{ width: '36px', height: '36px' }}>
+          <img src={avatarUrl} alt="Avatar" />
+        </div>
+        <div className="mobile-user-capsule__divider" />
+        <button onClick={logout} className="mobile-logout-btn">
+          <LogOut size={18} />
+        </button>
+      </div>
     </div>
   );
 }

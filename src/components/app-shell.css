@@ -1508,18 +1508,18 @@
    Mobile User Menu (Capsule)
    ========================================================================== */
 .mobile-user-capsule {
-  display: none;
-  position: fixed;
-  top: max(20px, env(safe-area-inset-top, 0px) + 20px);
-  left: 20px;
-  z-index: 99999;
-  background: white;
-  padding: 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(167, 139, 250, 0.2);
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.12);
-  align-items: center;
-  gap: 8px;
+  display: none !important;
+  position: fixed !important;
+  top: 24px !important;
+  left: 20px !important;
+  z-index: 999999 !important;
+  background: white !important;
+  padding: 8px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(167, 139, 250, 0.3) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+  align-items: center !important;
+  gap: 10px !important;
 }
 
 .mobile-user-capsule__divider {
