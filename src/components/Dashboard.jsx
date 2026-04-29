@@ -103,9 +103,10 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
     setIsSubmitting(true);
     try {
       const sessionsToCreate = [];
+      const groupId = `series_${Date.now()}`; // Unique ID for this recurring series
       
-      // If recurring, create 10 weeks of sessions. Otherwise, just 1.
-      const count = newSession.recurring ? 10 : 1;
+      // If recurring, create 52 weeks of sessions. Otherwise, just 1.
+      const count = newSession.recurring ? 52 : 1;
       const baseDate = new Date(newSession.date);
 
       for (let i = 0; i < count; i++) {
@@ -114,6 +115,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
         
         sessionsToCreate.push({
           ...newSession,
+          groupId: newSession.recurring ? groupId : null,
           date: nextDate.toISOString().split('T')[0],
           isHomeworkCompleted: false,
           createdAt: new Date().toISOString()

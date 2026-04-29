@@ -64,13 +64,32 @@ const Schedule = () => {
     }
   };
 
-  const handleDeleteSession = async (id) => {
-    if (!isAdmin || !window.confirm('Delete this session?')) return;
+  const [deleteChoiceOpen, setDeleteChoiceOpen] = useState(null);
+
+  // ── Delete session ─────────────────────────────────────────────────────────
+  const handleDeleteSession = async (session, choice) => {
+    if (!isAdmin) return;
+    
     try {
-      await deleteDoc(doc(db, 'sessions', id));
-      if (selectedSession?.id === id) setSelectedSession(null);
+      if (choice === 'single') {
+        await deleteDoc(doc(db, 'sessions', session.id));
+      } else if (choice === 'series' && session.groupId) {
+        // Delete all future sessions with the same groupId
+        const q = query(collection(db, 'sessions'), 
+          where('groupId', '==', session.groupId),
+          where('date', '>=', session.date)
+        );
+        const unsubscribe = onSnapshot(q, (snap) => {
+          snap.docs.forEach(d => deleteDoc(doc(db, 'sessions', d.id)));
+          unsubscribe();
+        });
+      }
+      
+      setDeleteChoiceOpen(null);
+      setSelectedSession(null);
     } catch (e) {
       console.error(e);
+      alert('Delete failed.');
     }
   };
 
@@ -400,11 +419,68 @@ const Schedule = () => {
                     <button onClick={handleSaveDetails} style={{ flex: 1, backgroundColor: '#6366f1', color: '#fff', padding: '18px', borderRadius: '18px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
                       <Save size={20} /> Save Changes
                     </button>
-                    <button onClick={() => handleDeleteSession(selectedSession.id)} style={{ padding: '18px', backgroundColor: '#fff1f2', color: '#f43f5e', borderRadius: '18px', border: 'none', cursor: 'pointer' }}>
+                    <button onClick={() => selectedSession.groupId ? setDeleteChoiceOpen(selectedSession) : handleDeleteSession(selectedSession, 'single')} style={{ padding: '18px', backgroundColor: '#fff1f2', color: '#f43f5e', borderRadius: '18px', border: 'none', cursor: 'pointer' }}>
                       <Trash2 size={20} />
                     </button>
                   </div>
                 )}
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* ── Delete Confirmation Modal ── */}
+      <AnimatePresence>
+        {deleteChoiceOpen && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 1100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setDeleteChoiceOpen(null)}
+              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.4)', backdropFilter: 'blur(8px)' }}
+            />
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              style={{ 
+                position: 'relative', 
+                width: '100%', 
+                maxWidth: '400px', 
+                backgroundColor: '#fff', 
+                borderRadius: '32px', 
+                padding: '32px', 
+                textAlign: 'center',
+                boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
+              }}
+            >
+              <div style={{ width: '64px', height: '64px', backgroundColor: '#fff1f2', color: '#f43f5e', borderRadius: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+                <Trash2 size={32} />
+              </div>
+              <h3 style={{ margin: '0 0 12px', fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>Delete recurring lesson?</h3>
+              <p style={{ margin: '0 0 28px', color: '#64748b', fontSize: '0.95rem', lineHeight: 1.5, fontWeight: 500 }}>
+                This is a recurring session. Would you like to delete only this instance or the entire series?
+              </p>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <button 
+                  onClick={() => handleDeleteSession(deleteChoiceOpen, 'single')}
+                  style={{ width: '100%', backgroundColor: '#f1f5f9', color: '#334155', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+                >
+                  Only this session
+                </button>
+                <button 
+                  onClick={() => handleDeleteSession(deleteChoiceOpen, 'series')}
+                  style={{ width: '100%', backgroundColor: '#fff1f2', color: '#f43f5e', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+                >
+                  This and all future sessions
+                </button>
+                <button 
+                  onClick={() => setDeleteChoiceOpen(null)}
+                  style={{ width: '100%', backgroundColor: 'transparent', color: '#94a3b8', padding: '12px', borderRadius: '16px', border: 'none', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer', marginTop: '4px' }}
+                >
+                  Cancel
+                </button>
               </div>
             </motion.div>
           </div>
