@@ -175,7 +175,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           }}>
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.6))', zIndex: 1 }}></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
-              <span style={{ fontSize: '0.8rem', opacity: 0.8 }}>Good Morning 👋</span>
+              <span style={{ fontSize: '0.8rem', opacity: 0.8 }}>Good Morning</span>
               <h3 style={{ fontSize: '1.8rem', margin: '4px 0' }}>{student.firstName || student.name?.split(' ')[0]}</h3>
               <span style={styles.visionPill}>{student.dreamJob || 'Future Professional'}</span>
             </div>
