@@ -137,11 +137,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
                 </h1>
                 {profile?.dreamJob && (
                   <div style={{ 
-                    marginTop: '20px', 
-                    padding: '8px 18px', 
+                    marginTop: '16px', 
+                    padding: '6px 14px', 
                     background: 'rgba(255,255,255,0.15)', 
                     backdropFilter: 'blur(12px)', 
-                    borderRadius: '14px', 
+                    borderRadius: '12px', 
                     display: 'inline-block', 
                     border: '1px solid rgba(255,255,255,0.2)',
                     boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
@@ -149,9 +149,9 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
                     <span style={{ 
                       fontFamily: "'Poppins', sans-serif",
                       fontWeight: 800, 
-                      fontSize: '0.95rem', 
+                      fontSize: '0.82rem', 
                       color: 'white', 
-                      letterSpacing: '0.05em',
+                      letterSpacing: '0.08em',
                       textShadow: '0 1px 3px rgba(0,0,0,0.3)' 
                     }}>
                       FUTURE {profile.dreamJob.toUpperCase()}
