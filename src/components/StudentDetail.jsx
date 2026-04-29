@@ -63,14 +63,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       if (!studentId) return;
       try {
         setLoading(true);
-        const colName = 'users'; // We use users collection for profile data
-        const unsub = onSnapshot(doc(db, colName, studentId), (snap) => {
+        // We listen to the specific student document
+        const unsub = onSnapshot(doc(db, 'users', studentId), (snap) => {
           if (snap.exists()) {
             const data = snap.data();
             setStudent({ id: snap.id, ...data });
             setAssignedChapters(data.assignedChapters || []);
             setEditForm({
-              name: data.name || '',
+              name: data.name || data.firstName || '',
               email: data.email || '',
               phone: data.phone || '',
               level: data.level || data.year || '',
@@ -78,6 +78,25 @@ const StudentDetail = ({ studentId, onBack }) => {
               assignedYear: data.assignedYear || data.level || data.year || 'Year 11',
               assignedCourse: data.assignedCourse || 'Advanced'
             });
+          } else {
+            // Fallback for manual students
+            const manualUnsub = onSnapshot(doc(db, 'students', studentId), (mSnap) => {
+              if (mSnap.exists()) {
+                const mData = mSnap.data();
+                setStudent({ id: mSnap.id, ...mData });
+                setAssignedChapters(mData.assignedChapters || []);
+                setEditForm({
+                  name: mData.name || '',
+                  email: mData.email || '',
+                  phone: mData.phone || '',
+                  level: mData.level || mData.year || '',
+                  subject: mData.subject || mData.school || '',
+                  assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
+                  assignedCourse: mData.assignedCourse || 'Advanced'
+                });
+              }
+            });
+            return manualUnsub;
           }
         });
         return unsub;
@@ -92,7 +111,8 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   const handleUpdateProfile = async () => {
     try {
-      const studentRef = doc(db, 'users', studentId);
+      const colName = student.source === 'manual' ? 'students' : 'users';
+      const studentRef = doc(db, colName, studentId);
       const updateData = {
         ...editForm,
         year: editForm.level,
@@ -100,6 +120,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       };
       await updateDoc(studentRef, updateData);
       setIsEditing(false);
+      alert("Profile updated!");
     } catch (error) {
       console.error("Update error:", error);
       alert("Failed to update profile.");
@@ -113,7 +134,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     
     setAssignedChapters(newChapters);
     try {
-      const studentRef = doc(db, 'users', studentId);
+      const colName = student.source === 'manual' ? 'students' : 'users';
+      const studentRef = doc(db, colName, studentId);
       await updateDoc(studentRef, { assignedChapters: newChapters });
     } catch (error) {
       console.error("Error updating chapters:", error);
@@ -137,7 +159,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         canvas.getContext('2d').drawImage(img, 0, 0, width, height);
         const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
         try {
-          await updateDoc(doc(db, 'users', studentId), { dreamImageUrl: dataUrl });
+          const colName = student.source === 'manual' ? 'students' : 'users';
+          await updateDoc(doc(db, colName, studentId), { dreamImageUrl: dataUrl });
           setStudent(prev => ({ ...prev, dreamImageUrl: dataUrl }));
         } catch (error) { console.error(error); } finally { setUploading(false); }
       };
@@ -152,7 +175,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       setBooking(true);
       await addDoc(collection(db, 'sessions'), {
         studentId,
-        studentName: student.name || 'Student',
+        studentName: student.name || student.firstName || 'Student',
         studentEmail: student.email || '',
         date: sessionForm.date,
         subject: sessionForm.focus,
@@ -209,7 +232,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </div>
               </div>
               <div>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Focus</label>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Focus Subject</label>
                 <input type="text" value={sessionForm.focus} onChange={e => setSessionForm({...sessionForm, focus: e.target.value})} placeholder="e.g. Algebra" style={{ width: '100%', padding: '14px 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', outline: 'none' }} />
               </div>
             </div>
@@ -234,7 +257,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             {isEditing ? (
               <input type="text" value={editForm.name} onChange={e => setEditForm({...editForm, name: e.target.value})} style={{ fontSize: '2.2rem', fontWeight: 900, color: '#1a1c2c', border: 'none', borderBottom: '2px solid #6366f1', outline: 'none', width: '100%', background: 'transparent' }} />
             ) : (
-              <h1 style={styles.title}>{student.name || 'Student'}</h1>
+              <h1 style={styles.title}>{student.name || student.firstName || 'Student'}</h1>
             )}
             <div style={styles.meta}>
               {isEditing ? (
@@ -242,12 +265,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                   <select value={editForm.assignedYear} onChange={e => setEditForm({...editForm, assignedYear: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
                     {Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`).map(y => <option key={y} value={y}>{y}</option>)}
                   </select>
-                  <select value={editForm.assignedCourse} onChange={e => setEditForm({...editForm, assignedCourse: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
-                    <option value="Standard">Standard</option><option value="Advanced">Advanced</option><option value="Extension 1">Extension 1</option><option value="Extension 2">Extension 2</option>
-                  </select>
+                  {(editForm.assignedYear === 'Year 11' || editForm.assignedYear === 'Year 12') && (
+                    <select value={editForm.assignedCourse} onChange={e => setEditForm({...editForm, assignedCourse: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                      <option value="Standard">Standard</option><option value="Advanced">Advanced</option><option value="Extension 1">Extension 1</option>{editForm.assignedYear === 'Year 12' && <option value="Extension 2">Extension 2</option>}
+                    </select>
+                  )}
                 </div>
               ) : (
-                <><span>{student.school || student.subject || 'N/A'}</span><span className="page-pill">{student.year || student.level}</span></>
+                <><span>{student.school || student.subject || 'N/A'}</span><span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span></>
               )}
             </div>
           </div>
