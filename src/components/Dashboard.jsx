@@ -14,6 +14,14 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  // ── Handle Resize ──
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const [newSession, setNewSession] = useState({
     studentId: '',
     studentName: '',
