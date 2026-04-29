@@ -207,9 +207,14 @@ function App() {
     }
   };
 
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setSelectedStudentId(null);
+  };
+
   return (
     <div className="app-shell">
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} />
       <div className="app-shell__main">
         {renderContent()}
       </div>
