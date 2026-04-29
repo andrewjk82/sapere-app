@@ -47,9 +47,6 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     : fallbackUrl);
 
   return (
-    : fallbackUrl);
-
-  return (
     <aside className="app-sidebar">
       <motion.div 
         initial={{ opacity: 0, x: -20 }}
