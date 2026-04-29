@@ -19,14 +19,19 @@ const Schedule = () => {
 
     let q;
     if (isAdmin) {
-      q = query(collection(db, 'sessions'), orderBy('date', 'desc'));
+      q = query(collection(db, 'sessions'));
     } else {
-      q = query(collection(db, 'sessions'), where('studentId', '==', user.uid), orderBy('date', 'desc'));
+      q = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
     }
 
     const unsubscribe = onSnapshot(q, (snap) => {
       const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      setSessions(docs);
+      // Sort client-side to avoid complex index requirements for now
+      const sortedDocs = docs.sort((a, b) => new Date(b.date) - new Date(a.date));
+      setSessions(sortedDocs);
+      setLoading(false);
+    }, (err) => {
+      console.error("Firestore error:", err);
       setLoading(false);
     });
 
