@@ -228,20 +228,45 @@ const StudentDetail = ({ studentId, onBack }) => {
           </button>
           <div className="detail-header-card__title" style={{ flex: 1 }}>
             {isEditing ? (
-              <input 
-                type="text" 
-                value={editForm.name} 
-                onChange={e => setEditForm({...editForm, name: e.target.value})}
-                style={{ ...styles.title, border: 'none', borderBottom: '2px solid #6366f1', outline: 'none', width: '100%' }}
-              />
+              <div style={{ marginBottom: '12px' }}>
+                <input 
+                  type="text" 
+                  value={editForm.name} 
+                  onChange={e => setEditForm({...editForm, name: e.target.value})}
+                  placeholder="Student Name"
+                  style={{ 
+                    fontSize: '2.2rem', 
+                    fontWeight: 900, 
+                    color: '#1a1c2c', 
+                    border: 'none', 
+                    borderBottom: '2px solid #6366f1', 
+                    outline: 'none', 
+                    width: '100%',
+                    background: 'transparent',
+                    padding: '0 0 4px 0'
+                  }}
+                />
+              </div>
             ) : (
               <h1 style={styles.title}>{displayName}</h1>
             )}
             <div style={styles.meta}>
               {isEditing ? (
-                <div style={{ display: 'flex', gap: '10px' }}>
-                  <input type="text" value={editForm.subject} onChange={e => setEditForm({...editForm, subject: e.target.value})} placeholder="Subject" style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }} />
-                  <input type="text" value={editForm.level} onChange={e => setEditForm({...editForm, level: e.target.value})} placeholder="Level" style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+                <div style={{ display: 'flex', gap: '12px' }}>
+                  <input 
+                    type="text" 
+                    value={editForm.subject} 
+                    onChange={e => setEditForm({...editForm, subject: e.target.value})} 
+                    placeholder="Subject/School" 
+                    style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.85rem', fontWeight: 600, width: '160px' }} 
+                  />
+                  <input 
+                    type="text" 
+                    value={editForm.level} 
+                    onChange={e => setEditForm({...editForm, level: e.target.value})} 
+                    placeholder="Level (e.g. Year 7)" 
+                    style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.85rem', fontWeight: 600, width: '140px' }} 
+                  />
                 </div>
               ) : (
                 <>
@@ -251,47 +276,61 @@ const StudentDetail = ({ studentId, onBack }) => {
               )}
             </div>
           </div>
-          {isEditing ? (
-            <div style={{ display: 'flex', gap: '10px' }}>
-              <button onClick={() => setIsEditing(false)} className="app-button app-button--secondary" style={{ borderRadius: '24px' }}>Cancel</button>
-              <button onClick={handleUpdateProfile} className="app-button app-button--primary" style={{ borderRadius: '24px' }}>Save</button>
-            </div>
-          ) : (
-            <button 
-              onClick={() => setIsEditing(true)}
-              className="app-button app-button--secondary" 
-              style={{ borderRadius: '24px', padding: '10px 20px', marginLeft: 'auto' }}
-            >
-              <Edit3 size={18} />
-              Edit Profile
-            </button>
-          )}
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: '12px' }}>
+            {isEditing ? (
+              <>
+                <button 
+                  onClick={() => setIsEditing(false)} 
+                  className="app-button app-button--secondary" 
+                  style={{ borderRadius: '16px', padding: '12px 24px', fontWeight: 800 }}
+                >
+                  Cancel
+                </button>
+                <button 
+                  onClick={handleUpdateProfile} 
+                  className="app-button app-button--primary" 
+                  style={{ borderRadius: '16px', padding: '12px 28px', fontWeight: 800, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}
+                >
+                  Save
+                </button>
+              </>
+            ) : (
+              <button 
+                onClick={() => setIsEditing(true)}
+                className="app-button app-button--secondary" 
+                style={{ borderRadius: '24px', padding: '12px 24px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}
+              >
+                <Edit3 size={18} />
+                Edit Profile
+              </button>
+            )}
+          </div>
         </div>
         
         <div style={styles.contact}>
           <div style={styles.contactItem}>
-            <Mail size={18} />
+            <Mail size={18} style={{ color: '#6366f1' }} />
             {isEditing ? (
               <input 
                 type="email" 
                 value={editForm.email} 
                 onChange={e => setEditForm({...editForm, email: e.target.value})}
                 placeholder="Email Address"
-                style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }}
+                style={{ padding: '10px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.9rem', fontWeight: 600, width: '220px' }}
               />
             ) : (
               <span>{student.email || 'No email provided'}</span>
             )}
           </div>
           <div style={styles.contactItem}>
-            <Phone size={18} />
+            <Phone size={18} style={{ color: '#6366f1' }} />
             {isEditing ? (
               <input 
                 type="text" 
                 value={editForm.phone} 
                 onChange={e => setEditForm({...editForm, phone: e.target.value})}
                 placeholder="Phone Number"
-                style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }}
+                style={{ padding: '10px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.9rem', fontWeight: 600, width: '180px' }}
               />
             ) : (
               <span>{student.phone || 'No phone set'}</span>
