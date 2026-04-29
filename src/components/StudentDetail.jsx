@@ -123,6 +123,50 @@ const StudentDetail = ({ studentId, onBack }) => {
   }, [studentId]);
 
   const [booking, setBooking] = useState(false);
+  const [editForm, setEditForm] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    level: '',
+    subject: ''
+  });
+
+  useEffect(() => {
+    if (student) {
+      setEditForm({
+        name: student.name || '',
+        email: student.email || '',
+        phone: student.phone || '',
+        level: student.level || student.year || '',
+        subject: student.subject || student.school || ''
+      });
+    }
+  }, [student]);
+
+  const handleUpdateProfile = async () => {
+    try {
+      setLoading(true);
+      const collectionName = student.source === 'manual' ? 'students' : 'users';
+      const studentRef = doc(db, collectionName, studentId);
+      
+      const updateData = {
+        ...editForm,
+        // Map back to appropriate field names if needed
+        year: editForm.level,
+        school: editForm.subject
+      };
+
+      await setDoc(studentRef, updateData, { merge: true });
+      setStudent(prev => ({ ...prev, ...updateData }));
+      setIsEditing(false);
+      alert("Profile updated successfully!");
+    } catch (error) {
+      console.error("Update error:", error);
+      alert("Failed to update profile.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleBookSession = async () => {
     if (!sessionForm.focus || !sessionForm.date) {
@@ -135,6 +179,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       await addDoc(collection(db, 'sessions'), {
         studentId,
         studentName: displayName,
+        studentEmail: student.email || '', // Include email for linking
         date: sessionForm.date,
         subject: sessionForm.focus,
         startTime: sessionForm.start,
@@ -181,27 +226,76 @@ const StudentDetail = ({ studentId, onBack }) => {
           <button style={styles.backBtn} onClick={onBack}>
             <ArrowLeft size={24} />
           </button>
-          <div className="detail-header-card__title">
-            <h1 style={styles.title}>{displayName}</h1>
+          <div className="detail-header-card__title" style={{ flex: 1 }}>
+            {isEditing ? (
+              <input 
+                type="text" 
+                value={editForm.name} 
+                onChange={e => setEditForm({...editForm, name: e.target.value})}
+                style={{ ...styles.title, border: 'none', borderBottom: '2px solid #6366f1', outline: 'none', width: '100%' }}
+              />
+            ) : (
+              <h1 style={styles.title}>{displayName}</h1>
+            )}
             <div style={styles.meta}>
-              <span>{student.school || student.subject || 'N/A'}</span>
-              <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
+              {isEditing ? (
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <input type="text" value={editForm.subject} onChange={e => setEditForm({...editForm, subject: e.target.value})} placeholder="Subject" style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+                  <input type="text" value={editForm.level} onChange={e => setEditForm({...editForm, level: e.target.value})} placeholder="Level" style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+                </div>
+              ) : (
+                <>
+                  <span>{student.school || student.subject || 'N/A'}</span>
+                  <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
+                </>
+              )}
             </div>
           </div>
-          <button className="app-button app-button--secondary" style={{ borderRadius: '24px', padding: '10px 20px', marginLeft: 'auto' }}>
-            <Edit3 size={18} />
-            Edit Profile
-          </button>
+          {isEditing ? (
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <button onClick={() => setIsEditing(false)} className="app-button app-button--secondary" style={{ borderRadius: '24px' }}>Cancel</button>
+              <button onClick={handleUpdateProfile} className="app-button app-button--primary" style={{ borderRadius: '24px' }}>Save</button>
+            </div>
+          ) : (
+            <button 
+              onClick={() => setIsEditing(true)}
+              className="app-button app-button--secondary" 
+              style={{ borderRadius: '24px', padding: '10px 20px', marginLeft: 'auto' }}
+            >
+              <Edit3 size={18} />
+              Edit Profile
+            </button>
+          )}
         </div>
         
         <div style={styles.contact}>
           <div style={styles.contactItem}>
             <Mail size={18} />
-            <span>{student.email || 'No email provided'}</span>
+            {isEditing ? (
+              <input 
+                type="email" 
+                value={editForm.email} 
+                onChange={e => setEditForm({...editForm, email: e.target.value})}
+                placeholder="Email Address"
+                style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }}
+              />
+            ) : (
+              <span>{student.email || 'No email provided'}</span>
+            )}
           </div>
           <div style={styles.contactItem}>
             <Phone size={18} />
-            <span>{student.phone || 'No phone set'}</span>
+            {isEditing ? (
+              <input 
+                type="text" 
+                value={editForm.phone} 
+                onChange={e => setEditForm({...editForm, phone: e.target.value})}
+                placeholder="Phone Number"
+                style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #e2e8f0' }}
+              />
+            ) : (
+              <span>{student.phone || 'No phone set'}</span>
+            )}
           </div>
         </div>
       </div>

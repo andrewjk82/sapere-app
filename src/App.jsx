@@ -30,6 +30,7 @@ function App() {
   // New Student Form State
   const [newStudent, setNewStudent] = useState({
     name: '',
+    email: '',
     subject: '',
     level: 'Year 10'
   });
@@ -60,11 +61,14 @@ function App() {
   }, [user, isAdmin]);
 
   const handleAddStudent = async () => {
-    if (!newStudent.name || !newStudent.subject) return;
+    if (!newStudent.name || !newStudent.subject || !newStudent.email) {
+      alert("Please fill in all fields including the student's email.");
+      return;
+    }
     
     try {
       await studentService.addStudent(user.uid, newStudent);
-      setNewStudent({ name: '', subject: '', level: 'Year 10' });
+      setNewStudent({ name: '', email: '', subject: '', level: 'Year 10' });
       setIsModalOpen(false);
     } catch (error) {
       alert("Error adding student. Make sure Firestore is enabled.");
@@ -240,6 +244,15 @@ function App() {
                     value={newStudent.name}
                     onChange={(e) => setNewStudent({...newStudent, name: e.target.value})}
                     placeholder="e.g. John Doe" 
+                  />
+                </div>
+                <div className="app-form-field">
+                  <label>Email Address</label>
+                  <input 
+                    type="email" 
+                    value={newStudent.email}
+                    onChange={(e) => setNewStudent({...newStudent, email: e.target.value})}
+                    placeholder="student@example.com" 
                   />
                 </div>
                 <div className="app-form-field">
