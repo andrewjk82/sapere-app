@@ -321,7 +321,7 @@ const Settings = () => {
             )}
           </section>
 
-          {profile?.role === 'student' && (
+          {((profile?.role === 'student') || (!isAdmin && profile?.year)) && (
             <section className="app-panel page-card" style={{ marginTop: '24px' }}>
               <div className="page-card__header">
                 <h3>Vision & Future Goals</h3>
