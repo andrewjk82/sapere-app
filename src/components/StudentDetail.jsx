@@ -165,19 +165,23 @@ const StudentDetail = ({ studentId, onBack }) => {
         </div>
       </div>
 
-      <div className="app-grid app-grid--content" style={{ marginTop: '24px' }}>
-        {/* 2. Dashboard Preview Section */}
-        <div style={{ ...styles.card, gridColumn: 'span 2' }}>
+      {/* 2 & 3. Combined Vision & Persona Row */}
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '24px', alignItems: 'stretch' }}>
+        {/* Dashboard Preview Section (Vision Board) */}
+        <div style={{ ...styles.card, display: 'flex', flexDirection: 'column', height: '100%' }}>
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>STUDENT DASHBOARD PREVIEW</div>
           <div style={{ 
             ...styles.visionBoard, 
+            flex: 1,
+            height: 'auto',
+            minHeight: '220px',
             backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=800'})` 
           }}>
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.6))', zIndex: 1 }}></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
-              <span style={{ fontSize: '0.8rem', opacity: 0.8 }}>Good Morning</span>
-              <h3 style={{ fontSize: '1.8rem', margin: '4px 0' }}>{student.firstName || student.name?.split(' ')[0]}</h3>
-              <span style={styles.visionPill}>{student.dreamJob || 'Future Professional'}</span>
+              <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>Good Morning</span>
+              <h3 style={{ fontSize: '1.4rem', margin: '4px 0' }}>{student.firstName || student.name?.split(' ')[0]}</h3>
+              <span style={{ ...styles.visionPill, fontSize: '0.7rem' }}>{student.dreamJob || 'Future Professional'}</span>
             </div>
             
             <input 
@@ -192,30 +196,30 @@ const StudentDetail = ({ studentId, onBack }) => {
               className="change-bg-btn" 
               onClick={() => fileInputRef.current.click()}
               disabled={uploading}
-              style={{ position: 'absolute', top: '20px', right: '20px', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', padding: '10px 18px', borderRadius: '14px', fontSize: '0.75rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', zIndex: 3 }}
+              style={{ position: 'absolute', top: '16px', right: '16px', background: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', padding: '8px 14px', borderRadius: '12px', fontSize: '0.7rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer', zIndex: 3 }}
             >
               {uploading ? (
                 <>
-                  <div className="app-spinner-sm" style={{ width: '14px', height: '14px', border: '2px solid rgba(255,255,255,0.3)', borderTopColor: 'white', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }}></div>
-                  Uploading...
+                  <div className="app-spinner-sm" style={{ width: '12px', height: '12px', border: '2px solid rgba(255,255,255,0.3)', borderTopColor: 'white', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }}></div>
+                  ...
                 </>
               ) : (
                 <>
-                  <Upload size={14} />
-                  Change Background
+                  <Upload size={12} />
+                  Change
                 </>
               )}
             </button>
           </div>
         </div>
 
-        {/* 3. Persona & Goal Section */}
-        <div style={styles.card}>
+        {/* Persona & Goal Section */}
+        <div style={{ ...styles.card, display: 'flex', flexDirection: 'column', height: '100%' }}>
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>STUDENT PERSONA & GOAL</div>
-          <div className="persona-content">
-            <div className="persona-tag" style={{ background: '#f5f3ff', color: '#6366f1', padding: '12px 24px', borderRadius: '12px', fontWeight: 700, display: 'inline-block' }}>{student.dreamJob || 'Future Professional'}</div>
+          <div className="persona-content" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div className="persona-tag" style={{ background: '#f5f3ff', color: '#6366f1', padding: '12px 24px', borderRadius: '12px', fontWeight: 700, display: 'inline-block', width: 'fit-content' }}>{student.dreamJob || 'Future Professional'}</div>
             
-            <div className="academic-progress-card" style={{ marginTop: '40px', background: '#f8fafc', padding: '20px', borderRadius: '20px' }}>
+            <div className="academic-progress-card" style={{ marginTop: '24px', background: '#f8fafc', padding: '20px', borderRadius: '20px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
                 <span style={{ fontWeight: 800, fontSize: '0.7rem', textTransform: 'uppercase', color: '#64748b' }}>Academic Progress</span>
                 <span style={{ color: '#6366f1', fontWeight: 900, background: '#f5f3ff', padding: '4px 12px', borderRadius: '8px' }}>26%</span>
@@ -223,7 +227,7 @@ const StudentDetail = ({ studentId, onBack }) => {
               <div style={{ height: '10px', background: '#e2e8f0', borderRadius: '5px', overflow: 'hidden' }}>
                 <div style={{ width: '26%', height: '100%', background: '#a78bfa', borderRadius: '5px' }}></div>
               </div>
-              <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '12px' }}>Auto-synced with assigned chapters</p>
+              <p style={{ fontSize: '0.7rem', color: '#94a3b8', marginTop: '12px' }}>Auto-synced with assigned chapters</p>
             </div>
           </div>
         </div>
