@@ -175,14 +175,9 @@ const StudentDetail = ({ studentId, onBack }) => {
             flex: 1,
             height: 'auto',
             minHeight: '220px',
-            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=800'})` 
+            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=800'})` 
           }}>
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.6))', zIndex: 1 }}></div>
-            <div style={{ position: 'relative', zIndex: 2 }}>
-              <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>Good Morning</span>
-              <h3 style={{ fontSize: '1.4rem', margin: '4px 0' }}>{student.firstName || student.name?.split(' ')[0]}</h3>
-              <span style={{ ...styles.visionPill, fontSize: '0.7rem' }}>{student.dreamJob || 'Future Professional'}</span>
-            </div>
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.4))', zIndex: 1 }}></div>
             
             <input 
               type="file" 
