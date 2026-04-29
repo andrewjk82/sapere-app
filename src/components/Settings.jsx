@@ -350,33 +350,6 @@ const Settings = () => {
                     )}
                   </div>
                 </div>
-
-                <div className="app-form-field">
-                  <label style={{ color: '#64748b', fontWeight: 700, fontSize: '0.8rem', marginBottom: '8px', display: 'block' }}>VISION BOARD BACKGROUND</label>
-                  <div style={{ 
-                    height: '240px', 
-                    borderRadius: '24px', 
-                    backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url(${editData.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=800'})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    position: 'relative',
-                    overflow: 'hidden',
-                    border: '1px solid rgba(167, 139, 250, 0.2)'
-                  }}>
-                    <input type="file" ref={fileInputRef} style={{ display: 'none' }} accept="image/*" onChange={handleImageUpload} />
-                    <button 
-                      className="app-button" 
-                      onClick={() => fileInputRef.current.click()}
-                      disabled={uploading}
-                      style={{ background: 'rgba(255,255,255,0.9)', color: '#1a1c2c', padding: '12px 24px', borderRadius: '14px', fontWeight: 800, border: 0, cursor: 'pointer', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
-                    >
-                      {uploading ? 'Optimizing...' : 'Change Background Image'}
-                    </button>
-                  </div>
-                </div>
               </div>
             </section>
           )}
