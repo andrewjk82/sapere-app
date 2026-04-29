@@ -33,20 +33,37 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
   }, []);
 
   useEffect(() => {
-    if (!user?.uid || isAdmin) return undefined;
-    const q = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+    if (!user?.email || isAdmin) return undefined;
+    // Query sessions by student's email instead of UID for better matching
+    const q = query(collection(db, 'sessions'), where('studentEmail', '==', user.email));
     return onSnapshot(q, (snap) => {
       const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       setStudentSessions(docs);
     });
-  }, [user?.uid, isAdmin]);
+  }, [user?.email, isAdmin]);
 
   const { nextLesson, lastLesson } = useMemo(() => {
     const now = new Date();
-    const sorted = [...studentSessions].sort((a, b) => new Date(a.date) - new Date(b.date));
     
-    // Sort logic for more accurate comparison
-    const getTime = (s) => new Date(`${s.date} ${s.startTime || '00:00 AM'}`).getTime();
+    const getTime = (s) => {
+      try {
+        // Ensure date and time are valid strings
+        if (!s.date || !s.startTime) return 0;
+        
+        // Convert "10:00 AM" to "10:00" for Date constructor
+        const [time, period] = s.startTime.split(' ');
+        let [hours, minutes] = time.split(':');
+        if (period === 'PM' && hours !== '12') hours = parseInt(hours) + 12;
+        if (period === 'AM' && hours === '12') hours = '00';
+        
+        const dateStr = `${s.date}T${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:00`;
+        return new Date(dateStr).getTime();
+      } catch (e) {
+        return 0;
+      }
+    };
+
+    const sorted = [...studentSessions].sort((a, b) => getTime(a) - getTime(b));
     
     const next = sorted.find(s => getTime(s) > now.getTime());
     const past = [...sorted].reverse().find(s => getTime(s) < now.getTime());
@@ -136,6 +153,10 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
       const sessionsToCreate = [];
       const groupId = `series_${Date.now()}`; // Unique ID for this recurring series
       
+      // Get student email from the students array
+      const selectedStudent = students.find(s => s.id === newSession.studentId);
+      const studentEmail = selectedStudent?.email || '';
+
       // If recurring, create 52 weeks of sessions. Otherwise, just 1.
       const count = newSession.recurring ? 52 : 1;
       const baseDate = new Date(newSession.date);
@@ -146,6 +167,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
         
         sessionsToCreate.push({
           ...newSession,
+          studentEmail, // Save email for student dashboard lookup
           groupId: newSession.recurring ? groupId : null,
           date: nextDate.toISOString().split('T')[0],
           isHomeworkCompleted: false,
