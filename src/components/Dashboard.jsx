@@ -5,7 +5,7 @@ import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, collection, addDoc, query } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, collection, addDoc, query, where } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
 const TIME_OPTIONS = [
