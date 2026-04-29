@@ -111,40 +111,51 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent }) => {
             }}>
               <div className="vision-card__content" style={{ zIndex: 1 }}>
                 <p style={{ 
-                  fontSize: '1.4rem', 
-                  fontWeight: 800, 
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '1.1rem', 
+                  fontWeight: 700, 
                   opacity: 1, 
                   textTransform: 'uppercase', 
-                  letterSpacing: '0.12em', 
-                  marginBottom: '12px', 
+                  letterSpacing: '0.15em', 
+                  marginBottom: '8px', 
                   color: 'white',
-                  textShadow: '-0.8px -0.8px 0 #000, 0.8px -0.8px 0 #000, -0.8px 0.8px 0 #000, 0.8px 0.8px 0 #000, 0 2px 10px rgba(0,0,0,0.4)' 
+                  textShadow: '0 2px 10px rgba(0,0,0,0.4)' 
                 }}>
                   {getGreeting()}
                 </p>
                 <h1 style={{ 
-                  fontSize: '4.5rem', 
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '3.2rem', 
                   fontWeight: 900, 
                   margin: 0, 
                   lineHeight: 1.0, 
                   color: '#1a1c2c',
-                  letterSpacing: '-0.02em',
+                  letterSpacing: '-0.03em',
                   textShadow: '-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 4px 20px rgba(0,0,0,0.2)' 
                 }}>
                   {userName}
                 </h1>
                 {profile?.dreamJob && (
                   <div style={{ 
-                    marginTop: '24px', 
-                    padding: '10px 20px', 
+                    marginTop: '20px', 
+                    padding: '8px 18px', 
                     background: 'rgba(255,255,255,0.15)', 
                     backdropFilter: 'blur(12px)', 
-                    borderRadius: '16px', 
+                    borderRadius: '14px', 
                     display: 'inline-block', 
                     border: '1px solid rgba(255,255,255,0.2)',
                     boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
                   }}>
-                    <span style={{ fontWeight: 800, fontSize: '1.1rem', color: 'white', textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>FUTURE {profile.dreamJob.toUpperCase()}</span>
+                    <span style={{ 
+                      fontFamily: "'Poppins', sans-serif",
+                      fontWeight: 800, 
+                      fontSize: '0.95rem', 
+                      color: 'white', 
+                      letterSpacing: '0.05em',
+                      textShadow: '0 1px 3px rgba(0,0,0,0.3)' 
+                    }}>
+                      FUTURE {profile.dreamJob.toUpperCase()}
+                    </span>
                   </div>
                 )}
               </div>
