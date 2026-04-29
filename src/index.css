@@ -142,3 +142,273 @@ input:focus {
 .btn-primary:active {
   transform: translateY(0);
 }
+
+/* Base Modal Layout */
+.app-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.app-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Avatar Modal Styles */
+.avatar-modal {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
+}
+
+.avatar-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-modal__title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.avatar-modal__subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.avatar-modal__close {
+  background: var(--bg-deep);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.avatar-modal__close:hover {
+  background: var(--accent-glow);
+  color: var(--accent-dark);
+}
+
+.avatar-modal__tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  background: var(--bg-deep);
+  border-radius: var(--radius-md);
+}
+
+.avatar-modal__tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.avatar-modal__tab.is-active {
+  background: white;
+  color: var(--accent-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.avatar-modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar-modal__preview {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.avatar-modal__preview-card {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-deep);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.avatar-modal__preview-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.avatar-modal__shuffle {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.avatar-modal__shuffle:hover {
+  transform: rotate(180deg);
+  background: var(--accent-dark);
+}
+
+.avatar-modal__controls {
+  width: 100%;
+}
+
+.avatar-modal__section {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.avatar-modal__species {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.avatar-modal__chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.avatar-modal__chip:hover {
+  border-color: var(--accent);
+  background: var(--bg-deep);
+}
+
+.avatar-modal__chip.is-active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.avatar-modal__apply {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+/* Settings Page Styles */
+.settings-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 24px;
+  background: white;
+  border-radius: 24px;
+  border: 1px solid rgba(167, 139, 250, 0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.settings-profile__avatar {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.settings-profile__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.settings-display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.settings-display-item {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 20px;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-display-item label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+}
+
+.settings-display-item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e1b4b;
+}
+
+.settings-message {
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
