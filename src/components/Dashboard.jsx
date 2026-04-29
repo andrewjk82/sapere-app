@@ -153,7 +153,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
       const sessionsToCreate = [];
       const groupId = `series_${Date.now()}`; // Unique ID for this recurring series
       
-      // Get student email from the students array
+      // Get student email from the students array (auto-populated for registered students)
       const selectedStudent = students.find(s => s.id === newSession.studentId);
       const studentEmail = selectedStudent?.email || '';
 
