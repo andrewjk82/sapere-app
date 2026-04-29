@@ -449,7 +449,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                   >
                     {newSession.recurring && <Check size={14} />}
                   </div>
-                  <span style={{ fontWeight: 700, color: '#334155', fontSize: '0.9rem' }}>Recurring Weekly (for 10 weeks)</span>
+                  <span style={{ fontWeight: 700, color: '#334155', fontSize: '0.9rem' }}>Recurring Weekly</span>
                 </div>
 
                 {/* Submit */}
