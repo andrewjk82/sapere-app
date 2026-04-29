@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
 import { studentService } from './services/studentService';
@@ -311,55 +312,54 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Global Mobile Top Capsule Menu - Max Priority Visibility */}
-      <div 
-        className="mobile-user-capsule"
-        style={{
-          display: 'flex',
-          position: 'fixed',
-          top: '30px',
-          left: '20px',
-          zIndex: 2147483647,
-          background: 'white',
-          padding: '8px 16px',
-          borderRadius: '999px',
-          border: '2px solid rgba(99, 102, 241, 0.5)',
-          boxShadow: '0 15px 35px rgba(0,0,0,0.3)',
-          alignItems: 'center',
-          gap: '12px',
-          pointerEvents: 'auto',
-          visibility: 'visible'
-        }}
-      >
+      {/* Global Mobile Top Capsule Menu - Portal to Body for Absolute Visibility */}
+      {createPortal(
         <div 
-          className="app-avatar" 
-          onClick={() => {
-            // Force avatar picker even on mobile
-            const sidebarBtn = document.querySelector('.clickable-avatar');
-            if (sidebarBtn) sidebarBtn.click();
-          }}
-          style={{ width: '32px', height: '32px', borderRadius: '10px', overflow: 'hidden', cursor: 'pointer' }}
-        >
-          <img src={avatarUrl} alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-        <div style={{ width: '1px', height: '20px', background: '#e2e8f0' }} />
-        <button 
-          onClick={logout} 
-          style={{ 
-            background: 'transparent', 
-            border: 0, 
-            color: '#ef4444', 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: '6px',
-            cursor: 'pointer',
-            padding: '4px'
+          className="mobile-user-capsule"
+          style={{
+            display: window.innerWidth <= 1024 ? 'flex' : 'none',
+            position: 'fixed',
+            top: '40px',
+            left: '20px',
+            zIndex: 2147483647,
+            background: 'white',
+            padding: '10px 20px',
+            borderRadius: '999px',
+            border: '3px solid #6366f1',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
+            alignItems: 'center',
+            gap: '12px',
+            pointerEvents: 'auto'
           }}
         >
-          <LogOut size={18} />
-          <span style={{ fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em' }}>LOGOUT</span>
-        </button>
-      </div>
+          <div 
+            style={{ width: '32px', height: '32px', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e2e8f0' }}
+          >
+            <img src={avatarUrl} alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '2px', height: '24px', background: '#6366f1', opacity: 0.2 }} />
+          <button 
+            onClick={logout} 
+            style={{ 
+              background: '#6366f1', 
+              border: 0, 
+              color: 'white', 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '8px',
+              cursor: 'pointer',
+              padding: '8px 16px',
+              borderRadius: '12px',
+              fontWeight: 900,
+              fontSize: '0.8rem'
+            }}
+          >
+            <LogOut size={18} />
+            LOGOUT
+          </button>
+        </div>,
+        document.body
+      )}
     </div>
   );
 }
