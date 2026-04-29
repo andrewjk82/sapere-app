@@ -23,6 +23,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [studentSessions, setStudentSessions] = useState([]);
+  const [selectedViewSession, setSelectedViewSession] = useState(null);
 
   // ── Handle Resize ──
   useEffect(() => {
@@ -335,15 +336,19 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               
               <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '20px' }}>
                 {/* Next Lesson Card */}
-                <div style={{ 
-                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
-                  borderRadius: '24px', 
-                  padding: '24px', 
-                  color: 'white',
-                  boxShadow: '0 12px 30px rgba(99,102,241,0.2)',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}>
+                <div 
+                  onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
+                  style={{ 
+                    background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
+                    borderRadius: '24px', 
+                    padding: '24px', 
+                    color: 'white',
+                    boxShadow: '0 12px 30px rgba(99,102,241,0.2)',
+                    position: 'relative',
+                    overflow: 'hidden',
+                    cursor: nextLesson ? 'pointer' : 'default'
+                  }}
+                >
                   <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}>
                     <Calendar size={100} />
                   </div>
@@ -362,14 +367,18 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                 </div>
 
                 {/* Last Lesson Card */}
-                <div style={{ 
-                  background: '#ffffff', 
-                  borderRadius: '24px', 
-                  padding: '24px', 
-                  border: '1px solid #f1f5f9',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.03)',
-                  position: 'relative'
-                }}>
+                <div 
+                  onClick={() => lastLesson && setSelectedViewSession(lastLesson)}
+                  style={{ 
+                    background: '#ffffff', 
+                    borderRadius: '24px', 
+                    padding: '24px', 
+                    border: '1px solid #f1f5f9',
+                    boxShadow: '0 10px 25px rgba(0,0,0,0.03)',
+                    position: 'relative',
+                    cursor: lastLesson ? 'pointer' : 'default'
+                  }}
+                >
                   <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#94a3b8', marginBottom: '16px' }}>Last Lesson</label>
                   {lastLesson ? (
                     <>
@@ -388,6 +397,75 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
           )}
         </div>
       </motion.div>
+
+      {/* ── Student Session Detail Modal ── */}
+      <AnimatePresence>
+        {selectedViewSession && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setSelectedViewSession(null)}
+              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.4)', backdropFilter: 'blur(8px)' }}
+            />
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              style={{ position: 'relative', width: '100%', maxWidth: '440px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}
+            >
+              <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '32px', color: '#fff' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Lesson Details</span>
+                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900 }}>{selectedViewSession.subject}</h3>
+                  </div>
+                  <button onClick={() => setSelectedViewSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                    <X size={20} />
+                  </button>
+                </div>
+              </div>
+              
+              <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                <div style={{ display: 'flex', gap: '24px' }}>
+                  <div style={{ flex: 1 }}>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>Date</label>
+                    <div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Calendar size={16} /> {selectedViewSession.date}
+                    </div>
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>Time</label>
+                    <div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Clock size={16} /> {selectedViewSession.startTime}
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Tutor's Notes</label>
+                  <div style={{ backgroundColor: '#f8fafc', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#475569', lineHeight: 1.6, fontWeight: 500, border: '1px solid #f1f5f9' }}>
+                    {selectedViewSession.notes || "No notes provided for this session."}
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Homework</label>
+                  <div style={{ backgroundColor: '#f0f9ff', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#0369a1', lineHeight: 1.6, fontWeight: 600, border: '1px solid #e0f2fe' }}>
+                    {selectedViewSession.homework || "No homework assigned."}
+                  </div>
+                </div>
+
+                <button 
+                  onClick={() => setSelectedViewSession(null)}
+                  style={{ width: '100%', backgroundColor: '#1e1b4b', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', marginTop: '8px' }}
+                >
+                  Close Details
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       <AvatarPickerModal
         open={avatarOpen}
