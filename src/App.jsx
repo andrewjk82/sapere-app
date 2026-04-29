@@ -17,6 +17,7 @@ import { AlertCircle, ArrowRight, LogOut } from 'lucide-react';
 import { db } from './firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import './components/app-shell.css';
+import './components/mobile-capsule.css';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
