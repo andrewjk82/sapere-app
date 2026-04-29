@@ -8,6 +8,13 @@ import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, collection, addDoc, query } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
+const TIME_OPTIONS = [
+  '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
+  '11:00 AM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM', '1:30 PM', '2:00 PM', '2:30 PM',
+  '3:00 PM', '3:30 PM', '4:00 PM', '4:30 PM', '5:00 PM', '5:30 PM', '6:00 PM', '6:30 PM',
+  '7:00 PM', '7:30 PM', '8:00 PM', '8:30 PM', '9:00 PM', '9:30 PM', '10:00 PM', '10:30 PM', '11:00 PM'
+];
+
 const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) => {
   const { user, isAdmin } = useAuth();
   const [profile, setProfile] = useState(null);
@@ -407,25 +414,25 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
                   <div>
                     <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Start Time</label>
-                    <input
+                    <select
                       required
-                      type="text"
-                      placeholder="10:00 AM"
                       value={newSession.startTime}
                       onChange={e => setNewSession({ ...newSession, startTime: e.target.value })}
-                      style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
-                    />
+                      style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box', cursor: 'pointer', appearance: 'none' }}
+                    >
+                      {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
+                    </select>
                   </div>
                   <div>
                     <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>End Time</label>
-                    <input
+                    <select
                       required
-                      type="text"
-                      placeholder="11:30 AM"
                       value={newSession.endTime}
                       onChange={e => setNewSession({ ...newSession, endTime: e.target.value })}
-                      style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
-                    />
+                      style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box', cursor: 'pointer', appearance: 'none' }}
+                    >
+                      {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
+                    </select>
                   </div>
                 </div>
 
