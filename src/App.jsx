@@ -310,8 +310,6 @@ function App() {
           </div>
         )}
       </AnimatePresence>
-
-      </AnimatePresence>
     </div>
   );
 }

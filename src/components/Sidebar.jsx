@@ -63,9 +63,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
       </motion.div>
 
       <nav className="app-sidebar__nav">
-        {/* Move Logout to FIRST position for testing visibility */}
         <SidebarItem icon={LogOut} label="LOGOUT" onClick={logout} isDanger={true} />
-        
         <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} />
         {isAdmin && (
           <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} />
