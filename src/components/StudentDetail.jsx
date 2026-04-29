@@ -42,7 +42,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   const styles = {
     page: { padding: '32px', display: 'flex', flexDirection: 'column', gap: '24px', maxWidth: '1200px', margin: '0 auto', width: '100%' },
-    card: { padding: '32px', borderRadius: '32px', background: 'white', border: '1px solid rgba(167, 139, 250, 0.15)', boxShadow: '0 20px 50px rgba(0,0,0,0.05)' },
+    card: { padding: '32px', borderRadius: '32px', background: 'white', border: '1px solid rgba(167, 139, 250, 0.15)', boxShadow: '0 20px 50px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column' },
     headerTop: { display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '24px' },
     backBtn: { width: '48px', height: '48px', borderRadius: '16px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white', color: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' },
     title: { fontSize: '2.5rem', fontWeight: 900, color: '#1a1c2c', margin: 0 },
@@ -52,7 +52,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     navGrid: { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', margin: '0' },
     navBtn: { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', padding: '20px', background: 'white', border: '2px solid rgba(167, 139, 250, 0.1)', borderRadius: '20px', color: '#64748b', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s ease' },
     navBtnActive: { borderColor: '#6366f1', color: '#6366f1', boxShadow: '0 10px 20px rgba(99, 102, 241, 0.1)' },
-    visionBoard: { height: '240px', borderRadius: '24px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '24px', color: 'white', overflow: 'hidden' }
+    visionBoard: { borderRadius: '24px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '24px', color: 'white', overflow: 'hidden', flex: 1 }
   };
 
   useEffect(() => {
@@ -323,24 +323,24 @@ const StudentDetail = ({ studentId, onBack }) => {
 
       {/* 2. DASHBOARD PREVIEW & ACADEMIC PROGRESS */}
       <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '24px' }}>
-        <div style={{ ...styles.card, height: '320px' }}>
-          <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '20px' }}>DASHBOARD PREVIEW</div>
-          <div style={{ ...styles.visionBoard, height: '100%', backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519'})` }}>
-            <button onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 20, right: 20, background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', padding: '8px 16px', borderRadius: '12px', cursor: 'pointer' }}>Change</button>
+        <div style={{ ...styles.card, height: '380px' }}>
+          <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '24px' }}>DASHBOARD PREVIEW</div>
+          <div style={{ ...styles.visionBoard, backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519'})` }}>
+            <button onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 20, right: 20, background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', padding: '8px 16px', borderRadius: '12px', cursor: 'pointer', zIndex: 10 }}>Change</button>
             <input type="file" ref={fileInputRef} style={{ display: 'none' }} onChange={handleImageUpload} />
           </div>
         </div>
-        <div style={styles.card}>
-          <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '20px' }}>ACADEMIC PROGRESS</div>
-          <div style={{ background: '#f8fafc', padding: '32px', borderRadius: '24px' }}>
+        <div style={{ ...styles.card, height: '380px' }}>
+          <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '24px' }}>ACADEMIC PROGRESS</div>
+          <div style={{ background: '#f8fafc', padding: '32px', borderRadius: '24px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px', fontWeight: 800 }}>
               <span>Curriculum Completion</span>
-              <span style={{ color: '#6366f1' }}>{Math.round((assignedChapters.length / (chapters.length || 1)) * 100)}%</span>
+              <span style={{ color: '#6366f1', fontSize: '1.2rem' }}>{Math.round((assignedChapters.length / (chapters.length || 1)) * 100)}%</span>
             </div>
-            <div style={{ height: '12px', background: '#e2e8f0', borderRadius: '6px', overflow: 'hidden' }}>
+            <div style={{ height: '14px', background: '#e2e8f0', borderRadius: '7px', overflow: 'hidden' }}>
               <div style={{ width: `${(assignedChapters.length / (chapters.length || 1)) * 100}%`, height: '100%', background: '#6366f1' }}></div>
             </div>
-            <p style={{ marginTop: '16px', fontSize: '0.85rem', color: '#64748b' }}>Based on {assignedChapters.length} assigned chapters out of {chapters.length} available.</p>
+            <p style={{ marginTop: '20px', fontSize: '0.9rem', color: '#64748b', fontWeight: 600 }}>Based on {assignedChapters.length} assigned chapters out of {chapters.length} available.</p>
           </div>
         </div>
       </div>
