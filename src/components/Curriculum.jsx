@@ -1,9 +1,12 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
   Layers, GraduationCap, Star, Clock, 
-  Search, BookText, Award
+  Search, BookText, Award, Lock
 } from 'lucide-react';
+import { auth, db } from '../firebase/config';
+import { doc, onSnapshot } from 'firebase/firestore';
+import { useAuth } from '../context/AuthContext';
 
 const CURRICULUM_DATA = {
   'Year 1': [
@@ -11,6 +14,11 @@ const CURRICULUM_DATA = {
     { id: 'y1-2', title: 'Patterns & Algebra', modules: 6, completed: 2 },
     { id: 'y1-3', title: 'Measurement', modules: 8, completed: 0 }
   ],
+  'Year 2': [
+    { id: 'y2-1', title: 'Addition & Subtraction', modules: 12, completed: 5 },
+    { id: 'y2-2', title: 'Shapes & Fractions', modules: 8, completed: 0 }
+  ],
+  // ... adding placeholders for other years to ensure the structure exists
   'Year 11': {
     'Standard': [
       { id: 'y11s-1', title: 'Algebra: Formulae & Equations', modules: 12, completed: 4 },
@@ -52,9 +60,34 @@ const CURRICULUM_DATA = {
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
 const Curriculum = () => {
+  const { user, isAdmin } = useAuth();
   const [selectedYear, setSelectedYear] = useState('Year 11');
   const [selectedCourse, setSelectedCourse] = useState('Advanced');
   const [searchQuery, setSearchQuery] = useState('');
+  const [profile, setProfile] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!user) return;
+    
+    // Admins don't need profile restriction
+    if (isAdmin) {
+      setLoading(false);
+      return;
+    }
+
+    const unsub = onSnapshot(doc(db, 'users', user.uid), (snap) => {
+      if (snap.exists()) {
+        const data = snap.data();
+        setProfile(data);
+        // Only set if tutor has assigned it
+        if (data.assignedYear) setSelectedYear(data.assignedYear);
+        if (data.assignedCourse) setSelectedCourse(data.assignedCourse);
+      }
+      setLoading(false);
+    });
+    return unsub;
+  }, [user, isAdmin]);
 
   const courses = useMemo(() => {
     if (selectedYear === 'Year 11') return ['Standard', 'Advanced', 'Extension 1'];
@@ -74,12 +107,18 @@ const Curriculum = () => {
     );
   }, [selectedYear, selectedCourse, searchQuery, courses]);
 
+  if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
+
   return (
     <div className="app-page">
       <div className="app-page__header">
         <div className="app-page__title">
-          <h2>Learning Path</h2>
-          <p>Comprehensive curriculum structure from Foundation to HSC Extension 2.</p>
+          <h2>{isAdmin ? 'Curriculum Management' : 'My Learning Path'}</h2>
+          <p>
+            {isAdmin 
+              ? 'Comprehensive curriculum structure from Foundation to HSC Extension 2.' 
+              : `Your personalized curriculum for ${selectedYear}${courses ? ` (${selectedCourse})` : ''}.`}
+          </p>
         </div>
         <div className="app-input" style={{ minWidth: 300 }}>
           <Search size={18} />
@@ -92,70 +131,82 @@ const Curriculum = () => {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: '32px', height: 'calc(100vh - 200px)' }}>
-        {/* Left Sidebar: Year Selection */}
-        <div className="app-panel" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
-          <div style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-            {YEARS.map(year => (
-              <button
-                key={year}
-                onClick={() => {
-                  setSelectedYear(year);
-                  if (year === 'Year 11' || year === 'Year 12') {
-                    setSelectedCourse('Standard');
-                  }
-                }}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '14px 16px',
-                  borderRadius: '16px',
-                  border: 'none',
-                  background: selectedYear === year ? '#f5f3ff' : 'transparent',
-                  color: selectedYear === year ? '#6366f1' : '#64748b',
-                  fontWeight: 700,
-                  fontSize: '0.95rem',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s'
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <GraduationCap size={18} style={{ opacity: selectedYear === year ? 1 : 0.5 }} />
-                  {year}
-                </div>
-                {selectedYear === year && <ChevronRight size={16} />}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Main Content Area */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          {/* Sub-tabs for Year 11 & 12 */}
-          {courses && (
-            <div style={{ display: 'flex', gap: '12px', background: '#f1f5f9', padding: '6px', borderRadius: '18px', width: 'fit-content' }}>
-              {courses.map(course => (
+      <div style={{ display: 'grid', gridTemplateColumns: isAdmin ? '260px 1fr' : '1fr', gap: '32px', height: 'calc(100vh - 200px)' }}>
+        {/* Left Sidebar: Year Selection (ONLY FOR ADMIN) */}
+        {isAdmin && (
+          <div className="app-panel" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
+            <div style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              {YEARS.map(year => (
                 <button
-                  key={course}
-                  onClick={() => setSelectedCourse(course)}
+                  key={year}
+                  onClick={() => {
+                    setSelectedYear(year);
+                    if (year === 'Year 11' || year === 'Year 12') {
+                      setSelectedCourse('Standard');
+                    }
+                  }}
                   style={{
-                    padding: '10px 24px',
-                    borderRadius: '14px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    padding: '14px 16px',
+                    borderRadius: '16px',
                     border: 'none',
-                    background: selectedCourse === course ? 'white' : 'transparent',
-                    color: selectedCourse === course ? '#6366f1' : '#64748b',
-                    fontWeight: 800,
-                    fontSize: '0.85rem',
+                    background: selectedYear === year ? '#f5f3ff' : 'transparent',
+                    color: selectedYear === year ? '#6366f1' : '#64748b',
+                    fontWeight: 700,
+                    fontSize: '0.95rem',
                     cursor: 'pointer',
-                    boxShadow: selectedCourse === course ? '0 4px 12px rgba(0,0,0,0.05)' : 'none',
                     transition: 'all 0.2s'
                   }}
                 >
-                  {course}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <GraduationCap size={18} style={{ opacity: selectedYear === year ? 1 : 0.5 }} />
+                    {year}
+                  </div>
+                  {selectedYear === year && <ChevronRight size={16} />}
                 </button>
               ))}
+            </div>
+          </div>
+        )}
+
+        {/* Main Content Area */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          {/* Sub-tabs for Year 11 & 12 (ADMIN can choose, STUDENT is fixed if assigned) */}
+          {courses && (
+            <div style={{ display: 'flex', gap: '12px', background: '#f1f5f9', padding: '6px', borderRadius: '18px', width: 'fit-content' }}>
+              {courses.map(course => {
+                // If student, disable other courses if one is assigned
+                const isDisabled = !isAdmin && profile?.assignedCourse && profile.assignedCourse !== course;
+                if (isDisabled) return null; // Students only see their own course tab
+
+                return (
+                  <button
+                    key={course}
+                    onClick={() => isAdmin && setSelectedCourse(course)}
+                    style={{
+                      padding: '10px 24px',
+                      borderRadius: '14px',
+                      border: 'none',
+                      background: selectedCourse === course ? 'white' : 'transparent',
+                      color: selectedCourse === course ? '#6366f1' : '#64748b',
+                      fontWeight: 800,
+                      fontSize: '0.85rem',
+                      cursor: isAdmin ? 'pointer' : 'default',
+                      boxShadow: selectedCourse === course ? '0 4px 12px rgba(0,0,0,0.05)' : 'none',
+                      transition: 'all 0.2s',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px'
+                    }}
+                  >
+                    {!isAdmin && <Lock size={14} />}
+                    {course}
+                  </button>
+                );
+              })}
             </div>
           )}
 
@@ -216,8 +267,8 @@ const Curriculum = () => {
                 <div style={{ color: '#cbd5e1', marginBottom: '16px' }}>
                   <Search size={48} style={{ opacity: 0.5 }} />
                 </div>
-                <h3 style={{ color: '#64748b', fontWeight: 800 }}>No chapters found</h3>
-                <p style={{ color: '#94a3b8', fontWeight: 600 }}>Try adjusting your search or selection</p>
+                <h3 style={{ color: '#64748b', fontWeight: 800 }}>No curriculum assigned yet</h3>
+                <p style={{ color: '#94a3b8', fontWeight: 600 }}>Your tutor will update your learning path soon.</p>
               </div>
             )}
           </div>

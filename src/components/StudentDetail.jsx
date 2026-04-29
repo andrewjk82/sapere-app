@@ -128,7 +128,9 @@ const StudentDetail = ({ studentId, onBack }) => {
     email: '',
     phone: '',
     level: '',
-    subject: ''
+    subject: '',
+    assignedYear: 'Year 11',
+    assignedCourse: 'Advanced'
   });
 
   useEffect(() => {
@@ -138,7 +140,9 @@ const StudentDetail = ({ studentId, onBack }) => {
         email: student.email || '',
         phone: student.phone || '',
         level: student.level || student.year || '',
-        subject: student.subject || student.school || ''
+        subject: student.subject || student.school || '',
+        assignedYear: student.assignedYear || student.level || student.year || 'Year 11',
+        assignedCourse: student.assignedCourse || 'Advanced'
       });
     }
   }, [student]);
@@ -252,21 +256,32 @@ const StudentDetail = ({ studentId, onBack }) => {
             )}
             <div style={styles.meta}>
               {isEditing ? (
-                <div style={{ display: 'flex', gap: '12px' }}>
-                  <input 
-                    type="text" 
-                    value={editForm.subject} 
-                    onChange={e => setEditForm({...editForm, subject: e.target.value})} 
-                    placeholder="Subject/School" 
-                    style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.85rem', fontWeight: 600, width: '160px' }} 
-                  />
-                  <input 
-                    type="text" 
-                    value={editForm.level} 
-                    onChange={e => setEditForm({...editForm, level: e.target.value})} 
-                    placeholder="Level (e.g. Year 7)" 
-                    style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.85rem', fontWeight: 600, width: '140px' }} 
-                  />
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '10px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <label style={{ fontSize: '10px', fontWeight: 800, color: '#94a3b8' }}>SCHOOL/SUBJECT</label>
+                    <input type="text" value={editForm.subject} onChange={e => setEditForm({...editForm, subject: e.target.value})} style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.85rem', fontWeight: 600, width: '160px' }} />
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <label style={{ fontSize: '10px', fontWeight: 800, color: '#94a3b8' }}>GRADE LEVEL</label>
+                    <input type="text" value={editForm.level} onChange={e => setEditForm({...editForm, level: e.target.value})} style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f8fafc', fontSize: '0.85rem', fontWeight: 600, width: '140px' }} />
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <label style={{ fontSize: '10px', fontWeight: 800, color: '#6366f1' }}>ASSIGNED CURRICULUM</label>
+                    <select value={editForm.assignedYear} onChange={e => setEditForm({...editForm, assignedYear: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f5f3ff', fontSize: '0.85rem', fontWeight: 700, color: '#6366f1', cursor: 'pointer' }}>
+                      {Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`).map(y => <option key={y} value={y}>{y}</option>)}
+                    </select>
+                  </div>
+                  {(editForm.assignedYear === 'Year 11' || editForm.assignedYear === 'Year 12') && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                      <label style={{ fontSize: '10px', fontWeight: 800, color: '#6366f1' }}>COURSE TRACK</label>
+                      <select value={editForm.assignedCourse} onChange={e => setEditForm({...editForm, assignedCourse: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#f5f3ff', fontSize: '0.85rem', fontWeight: 700, color: '#6366f1', cursor: 'pointer' }}>
+                        <option value="Standard">Standard</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Extension 1">Extension 1</option>
+                        {editForm.assignedYear === 'Year 12' && <option value="Extension 2">Extension 2</option>}
+                      </select>
+                    </div>
+                  )}
                 </div>
               ) : (
                 <>
