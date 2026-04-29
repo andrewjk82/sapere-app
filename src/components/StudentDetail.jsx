@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { 
   ChevronLeft, Calendar, BookOpen, 
   MessageSquare, Trophy, 
-  Mail, Phone, Check
+  Mail, Phone, Check, Settings
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { 
@@ -114,6 +114,16 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
+  const handleUpdateCurriculumSetting = async (field, value) => {
+    try {
+      const colName = student.source === 'manual' ? 'students' : 'users';
+      const studentRef = doc(db, colName, studentId);
+      await updateDoc(studentRef, { [field]: value });
+    } catch (error) {
+      console.error("Error updating curriculum setting:", error);
+    }
+  };
+
   const handleToggleChapter = async (chapterId) => {
     const newChapters = assignedChapters.includes(chapterId)
       ? assignedChapters.filter(id => id !== chapterId)
@@ -190,7 +200,44 @@ const StudentDetail = ({ studentId, onBack }) => {
       case 'curriculum':
         return (
           <div style={styles.card}>
-            <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>ASSIGN CURRICULUM ({currentYear} - {currentCourse})</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px', flexWrap: 'wrap', gap: '20px' }}>
+              <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
+                ASSIGN CURRICULUM
+              </div>
+              
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center', background: '#f8fafc', padding: '8px 16px', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#64748b' }}>YEAR:</span>
+                  <select 
+                    value={currentYear} 
+                    onChange={e => handleUpdateCurriculumSetting('assignedYear', e.target.value)}
+                    style={{ background: 'transparent', border: 0, fontWeight: 800, color: '#6366f1', cursor: 'pointer', outline: 'none', fontSize: '0.85rem' }}
+                  >
+                    {Object.keys(CURRICULUM_DATA).map(y => <option key={y} value={y}>{y}</option>)}
+                  </select>
+                </div>
+                
+                {(currentYear === 'Year 11' || currentYear === 'Year 12') && (
+                  <>
+                    <div style={{ width: '1px', height: '20px', background: '#e2e8f0' }}></div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#64748b' }}>COURSE:</span>
+                      <select 
+                        value={currentCourse} 
+                        onChange={e => handleUpdateCurriculumSetting('assignedCourse', e.target.value)}
+                        style={{ background: 'transparent', border: 0, fontWeight: 800, color: '#6366f1', cursor: 'pointer', outline: 'none', fontSize: '0.85rem' }}
+                      >
+                        <option value="Standard">Standard</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Extension 1">Extension 1</option>
+                        {currentYear === 'Year 12' && <option value="Extension 2">Extension 2</option>}
+                      </select>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
               {chapters.map(ch => (
                 <div key={ch.id} onClick={() => handleToggleChapter(ch.id)} style={{ padding: '16px 20px', borderRadius: '16px', border: '2px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#f1f5f9', background: assignedChapters.includes(ch.id) ? '#f5f3ff' : 'white', display: 'flex', alignItems: 'center', gap: '16px', cursor: 'pointer', transition: 'all 0.2s' }}>
@@ -248,20 +295,8 @@ const StudentDetail = ({ studentId, onBack }) => {
               <h1 style={styles.title}>{student.name || student.firstName || 'Student'}</h1>
             )}
             <div style={styles.meta}>
-              {isEditing ? (
-                <div style={{ display: 'flex', gap: '12px', marginTop: '12px', flexWrap: 'wrap' }}>
-                  <select value={editForm.assignedYear} onChange={e => setEditForm({...editForm, assignedYear: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
-                    {Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`).map(y => <option key={y} value={y}>{y}</option>)}
-                  </select>
-                  {(editForm.assignedYear === 'Year 11' || editForm.assignedYear === 'Year 12') && (
-                    <select value={editForm.assignedCourse} onChange={e => setEditForm({...editForm, assignedCourse: e.target.value})} style={{ padding: '8px 12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
-                      <option value="Standard">Standard</option><option value="Advanced">Advanced</option><option value="Extension 1">Extension 1</option>{editForm.assignedYear === 'Year 12' && <option value="Extension 2">Extension 2</option>}
-                    </select>
-                  )}
-                </div>
-              ) : (
-                <><span>{student.school || student.subject || 'N/A'}</span><span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span></>
-              )}
+              <span>{student.school || student.subject || 'N/A'}</span>
+              <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
             </div>
           </div>
           <button onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} className="app-button app-button--secondary" style={{ borderRadius: '24px' }}>
@@ -274,7 +309,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         </div>
       </div>
 
-      {/* 2. DASHBOARD PREVIEW & ACADEMIC PROGRESS (Moved to Top) */}
+      {/* 2. DASHBOARD PREVIEW & ACADEMIC PROGRESS */}
       <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '24px' }}>
         <div style={{ ...styles.card, height: '320px' }}>
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '20px' }}>DASHBOARD PREVIEW</div>
@@ -306,7 +341,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         <button style={styles.navBtn}><MessageSquare size={20} /> Q&A</button>
       </div>
 
-      {/* 4. Tab Content (Rendered below the preview cards) */}
+      {/* 4. Tab Content */}
       {renderTabContent()}
     </motion.div>
   );
