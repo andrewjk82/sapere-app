@@ -14,11 +14,10 @@ import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
-const SidebarItem = ({ icon: Icon, label, active, onClick, isDanger }) => (
+const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
   <button 
     onClick={onClick}
     className={`app-sidebar__item ${active ? 'is-active' : ''}`}
-    style={isDanger ? { border: '2px solid #ef4444', color: '#ef4444' } : {}}
   >
     <Icon size={20} />
     <span>{label}</span>
@@ -58,12 +57,11 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           <img src="/logo.png?v=1" alt="Sapere Logo" />
         </div>
         <div>
-          <h1 style={{ color: '#6366f1' }}>Sapere Academia V2</h1>
+          <h1>Sapere Aude Academia</h1>
         </div>
       </motion.div>
 
       <nav className="app-sidebar__nav">
-        <SidebarItem icon={LogOut} label="LOGOUT" onClick={logout} isDanger={true} />
         <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} />
         {isAdmin && (
           <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} />
