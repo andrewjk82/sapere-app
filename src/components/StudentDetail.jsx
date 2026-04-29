@@ -49,10 +49,10 @@ const StudentDetail = ({ studentId, onBack }) => {
     meta: { display: 'flex', alignItems: 'center', gap: '12px', marginTop: '8px', color: '#64748b', fontWeight: 600 },
     contact: { display: 'flex', gap: '32px', marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)' },
     contactItem: { display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.9rem' },
-    navGrid: { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', margin: '24px 0' },
+    navGrid: { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', margin: '0' },
     navBtn: { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', padding: '20px', background: 'white', border: '2px solid rgba(167, 139, 250, 0.1)', borderRadius: '20px', color: '#64748b', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s ease' },
     navBtnActive: { borderColor: '#6366f1', color: '#6366f1', boxShadow: '0 10px 20px rgba(99, 102, 241, 0.1)' },
-    visionBoard: { height: '280px', borderRadius: '28px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '32px', color: 'white', overflow: 'hidden' }
+    visionBoard: { height: '240px', borderRadius: '24px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '24px', color: 'white', overflow: 'hidden' }
   };
 
   useEffect(() => {
@@ -237,6 +237,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   return (
     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} style={styles.page}>
+      {/* 1. Profile Header Card */}
       <div style={styles.card}>
         <div style={styles.headerTop}>
           <button style={styles.backBtn} onClick={onBack}><ChevronLeft size={24} /></button>
@@ -273,15 +274,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         </div>
       </div>
 
-      <div style={styles.navGrid}>
-        <button onClick={() => setActiveTab('schedule')} style={{ ...styles.navBtn, ...(activeTab === 'schedule' ? styles.navBtnActive : {}) }}><Calendar size={20} /> Schedule</button>
-        <button onClick={() => setActiveTab('curriculum')} style={{ ...styles.navBtn, ...(activeTab === 'curriculum' ? styles.navBtnActive : {}) }}><BookOpen size={20} /> Curriculum</button>
-        <button style={styles.navBtn}><Trophy size={20} /> Challenge</button>
-        <button style={styles.navBtn}><MessageSquare size={20} /> Q&A</button>
-      </div>
-
-      {renderTabContent()}
-
+      {/* 2. DASHBOARD PREVIEW & ACADEMIC PROGRESS (Moved to Top) */}
       <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '24px' }}>
         <div style={{ ...styles.card, height: '320px' }}>
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '20px' }}>DASHBOARD PREVIEW</div>
@@ -304,6 +297,17 @@ const StudentDetail = ({ studentId, onBack }) => {
           </div>
         </div>
       </div>
+
+      {/* 3. Navigation Tabs */}
+      <div style={styles.navGrid}>
+        <button onClick={() => setActiveTab('schedule')} style={{ ...styles.navBtn, ...(activeTab === 'schedule' ? styles.navBtnActive : {}) }}><Calendar size={20} /> Schedule</button>
+        <button onClick={() => setActiveTab('curriculum')} style={{ ...styles.navBtn, ...(activeTab === 'curriculum' ? styles.navBtnActive : {}) }}><BookOpen size={20} /> Curriculum</button>
+        <button style={styles.navBtn}><Trophy size={20} /> Challenge</button>
+        <button style={styles.navBtn}><MessageSquare size={20} /> Q&A</button>
+      </div>
+
+      {/* 4. Tab Content (Rendered below the preview cards) */}
+      {renderTabContent()}
     </motion.div>
   );
 };
