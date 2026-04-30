@@ -43,6 +43,21 @@ export const generateQuestion = (year = 1, difficulty = 'easy') => {
 
 const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
+const getUniqueOptions = (answer, distractors, min = 1, max = 100) => {
+  const opts = new Set([answer]);
+  distractors.forEach(d => {
+    if (d !== answer && d > 0) opts.add(d);
+  });
+  
+  // Fill up to 4 if we have duplicates
+  while (opts.size < 4) {
+    const random = Math.floor(Math.random() * (max - min + 1)) + min;
+    opts.add(random);
+  }
+  
+  return shuffle(Array.from(opts)).slice(0, 4);
+};
+
 const genCompare = (diff) => {
   const max = diff === 'easy' ? 20 : 100;
   let n1 = Math.floor(Math.random() * max) + 1;
@@ -55,7 +70,8 @@ const genCompare = (diff) => {
     : `Which number is SMALLER: ${n1} or ${n2}?`;
   
   const answer = targetGreater ? Math.max(n1, n2) : Math.min(n1, n2);
-  const options = shuffle([answer, targetGreater ? Math.min(n1, n2) : Math.max(n1, n2), answer + 2, answer - 2].filter(n => n > 0));
+  const distractors = [targetGreater ? Math.min(n1, n2) : Math.max(n1, n2), answer + 2, answer - 2, answer + 5];
+  const options = getUniqueOptions(answer, distractors, 1, max);
 
   return {
     type: 'compare',
@@ -77,7 +93,8 @@ const genBeforeAfter = (diff) => {
     : `What number comes JUST AFTER ${num}?`;
   
   const answer = isBefore ? num - 1 : num + 1;
-  const options = shuffle([answer, num, answer + 2, answer - 2].filter(n => n > 0)).slice(0, 4);
+  const distractors = [num, answer + 2, answer - 2, num + 5];
+  const options = getUniqueOptions(answer, distractors, 1, max);
 
   return {
     type: 'before_after',
@@ -115,8 +132,12 @@ const genNumberWords = (diff) => {
   let options;
   if (toWord) {
     options = shuffle([words[num], words[num-1] || 'thirty', words[num+1] || 'forty', 'twelve']).slice(0, 4);
+    // Word options are usually unique enough, but let's be safe
+    const uniqueWords = Array.from(new Set(options));
+    while(uniqueWords.length < 4) uniqueWords.push('eleven'); // fallback
+    options = shuffle(uniqueWords).slice(0, 4);
   } else {
-    options = shuffle([num, num-1, num+1, num+5]).filter(n => n >= 0).slice(0, 4);
+    options = getUniqueOptions(answer, [num-1, num+1, num+5, num+2], 0, 20);
   }
 
   return {
@@ -137,25 +158,23 @@ const genSkipCounting = (diff) => {
   const answer = seq[missingIdx];
   seq[missingIdx] = '___';
 
+  const distractors = [answer + 1, answer - step, answer + step * 2, answer + step];
+  const options = getUniqueOptions(answer, distractors, 0, 100);
+
   return {
-    type: 'skip_counting',
-    question: `Find the missing number in the pattern: ${seq.join(', ')}`,
-    options: shuffle([answer, answer + 1, answer - step, answer + step * 2]).slice(0, 4),
-    answer,
-    solution: `The pattern is skip counting by ${step}. ${answer - step} + ${step} = ${answer}.`,
-    timeLimit: 30
-  };
 };
 
 const genTensOnes = (diff) => {
   const tens = Math.floor(Math.random() * 9) + 1;
   const ones = Math.floor(Math.random() * 10);
   const total = tens * 10 + ones;
+  const distractors = [tens + ones, ones * 10 + tens, total + 10, total - 10, tens];
+  const options = getUniqueOptions(total, distractors, 1, 100);
 
   return {
     type: 'tens_ones',
     question: `A number has ${tens} tens and ${ones} ones. What is the number?`,
-    options: shuffle([total, tens + ones, ones * 10 + tens, total + 10]).slice(0, 4),
+    options,
     answer: total,
     solution: `${tens} tens = ${tens * 10}. ${tens * 10} + ${ones} = ${total}.`,
     timeLimit: 25
@@ -166,11 +185,13 @@ const genNumberLine = (diff) => {
   const start = Math.floor(Math.random() * 50);
   const step = 1;
   const target = start + Math.floor(Math.random() * 10) + 1;
+  const distractors = [target - 1, target + 1, start + 5, target + 2];
+  const options = getUniqueOptions(target, distractors, 0, 100);
   
   return {
     type: 'number_line',
     question: `On a number line starting at ${start}, what is the number ${target - start} steps to the right?`,
-    options: shuffle([target, target - 1, target + 1, start + 5]).slice(0, 4),
+    options,
     answer: target,
     solution: `Starting at ${start} and moving ${target - start} steps gives ${start} + ${target - start} = ${target}.`,
     timeLimit: 30
@@ -190,10 +211,13 @@ const genHundredsChart = (diff) => {
     case 'right': answer = num + 1; explanation = "Going right is +1."; break;
   }
 
+  const distractors = [num + 10, num - 10, num + 1, num - 1, num + 5];
+  const options = getUniqueOptions(answer, distractors, 1, 100);
+
   return {
     type: 'hundreds_chart',
     question: `On a 1-100 chart, what number is directly ${direction} the number ${num}?`,
-    options: shuffle([answer, num + 10, num - 10, num + 1, num - 1].filter(n => n > 0 && n <= 100)).slice(0, 4),
+    options,
     answer,
     solution: explanation,
     timeLimit: 30
