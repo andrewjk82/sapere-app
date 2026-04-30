@@ -160,16 +160,6 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
                   </div>
                 </div>
                 
-                <div className="student-card__actions" style={{ borderTop: '1px solid #f8fafc', paddingTop: '16px', marginTop: '4px' }}>
-                  <div className="student-card__info" style={{ fontSize: '0.8rem' }}>
-                    <BookOpen size={14} />
-                    <span>{student.lessons || 0} lessons completed</span>
-                  </div>
-                  <div className="student-card__info" style={{ fontSize: '0.8rem' }}>
-                    <Mail size={14} />
-                    <span>Contact student</span>
-                  </div>
-                </div>
               </motion.div>
             );
           })
