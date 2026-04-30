@@ -380,13 +380,84 @@ const Settings = () => {
           <section className="app-panel page-card" style={{ marginTop: '24px' }}>
             <div className="page-card__header">
               <h3>Notifications</h3>
-              <span className="page-pill">
+              <span className="page-pill" style={{ background: '#f5f3ff', color: '#6366f1' }}>
                 <Bell size={14} />
-                Coming soon
+                Reminders
               </span>
             </div>
-            <div className="app-empty" style={{ fontSize: '0.82rem' }}>
-              Next step: session reminders, student follow-ups, and weekly summaries.
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '20px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontWeight: 700, color: '#1a1c2c', fontSize: '0.9rem' }}>Email Reminders</div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748b' }}>Get lesson alerts in your inbox</div>
+                </div>
+                <button 
+                  onClick={async () => {
+                    const newValue = !profile?.notifications?.email;
+                    await setDoc(doc(db, 'users', user.uid), { notifications: { ...profile?.notifications, email: newValue } }, { merge: true });
+                  }}
+                  style={{
+                    width: '44px',
+                    height: '24px',
+                    borderRadius: '12px',
+                    background: profile?.notifications?.email ? '#6366f1' : '#e2e8f0',
+                    border: 'none',
+                    position: 'relative',
+                    cursor: 'pointer',
+                    transition: 'background 0.3s'
+                  }}
+                >
+                  <div style={{
+                    width: '18px',
+                    height: '18px',
+                    borderRadius: '50%',
+                    background: 'white',
+                    position: 'absolute',
+                    top: '3px',
+                    left: profile?.notifications?.email ? '23px' : '3px',
+                    transition: 'left 0.3s'
+                  }} />
+                </button>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontWeight: 700, color: '#1a1c2c', fontSize: '0.9rem' }}>Push Notifications</div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748b' }}>Real-time mobile alerts</div>
+                </div>
+                <button 
+                  onClick={async () => {
+                    const newValue = !profile?.notifications?.push;
+                    await setDoc(doc(db, 'users', user.uid), { notifications: { ...profile?.notifications, push: newValue } }, { merge: true });
+                  }}
+                  style={{
+                    width: '44px',
+                    height: '24px',
+                    borderRadius: '12px',
+                    background: profile?.notifications?.push ? '#6366f1' : '#e2e8f0',
+                    border: 'none',
+                    position: 'relative',
+                    cursor: 'pointer',
+                    transition: 'background 0.3s'
+                  }}
+                >
+                  <div style={{
+                    width: '18px',
+                    height: '18px',
+                    borderRadius: '50%',
+                    background: 'white',
+                    position: 'absolute',
+                    top: '3px',
+                    left: profile?.notifications?.push ? '23px' : '3px',
+                    transition: 'left 0.3s'
+                  }} />
+                </button>
+              </div>
+
+              <div className="app-empty" style={{ fontSize: '0.75rem', padding: '12px', background: '#f8fafc', borderRadius: '12px', marginTop: '8px' }}>
+                We'll notify you at 8 PM the night before and 2 hours before each lesson.
+              </div>
             </div>
           </section>
         </aside>
