@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   const { studentId, email, subject, text, html } = req.body;
@@ -9,15 +9,23 @@ export default async function handler(req, res) {
   try {
     // 0. Initialize Firebase Admin safely
     if (!admin.apps.length) {
-      if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
+      const serviceAccountStr = process.env.FIREBASE_SERVICE_ACCOUNT;
+      if (!serviceAccountStr) {
         throw new Error('FIREBASE_SERVICE_ACCOUNT is missing in Vercel settings');
       }
+      
       try {
+        const serviceAccount = JSON.parse(serviceAccountStr);
+        // Ensure private key handles newlines correctly
+        if (serviceAccount.private_key) {
+          serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, '\n');
+        }
+        
         admin.initializeApp({
-          credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT))
+          credential: admin.credential.cert(serviceAccount)
         });
       } catch (parseErr) {
-        throw new Error('Invalid JSON format in FIREBASE_SERVICE_ACCOUNT. Make sure you copied the entire { ... } block.');
+        throw new Error('Invalid JSON or Private Key format in FIREBASE_SERVICE_ACCOUNT');
       }
     }
 
@@ -36,7 +44,7 @@ export default async function handler(req, res) {
       }
     });
 
-    console.log(`Attempting to send email to: ${email}`);
+    console.log(`Sending email to: ${email}`);
     await transporter.sendMail({
       from: `"Sapere Aude" <${process.env.EMAIL_USER}>`,
       to: email,
@@ -57,7 +65,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ success: true });
   } catch (error) {
-    console.error('Detailed API Error:', error.message);
+    console.error('API Error:', error.message);
     return res.status(500).json({ error: error.message });
   }
-}
+};
