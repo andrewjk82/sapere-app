@@ -5,7 +5,7 @@ import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, collection, addDoc, query, where } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, collection, addDoc, query, where, or } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
 const TIME_OPTIONS = [
@@ -34,8 +34,14 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
 
   useEffect(() => {
     if (!user?.email || isAdmin) return undefined;
-    // Query sessions by student's email instead of UID for better matching
-    const q = query(collection(db, 'sessions'), where('studentEmail', '==', user.email));
+    // Query sessions by student's email OR student's UID for maximum reliability
+    const q = query(
+      collection(db, 'sessions'), 
+      or(
+        where('studentEmail', '==', user.email),
+        where('studentId', '==', user.uid)
+      )
+    );
     return onSnapshot(q, (snap) => {
       const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       setStudentSessions(docs);
@@ -47,18 +53,25 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
     
     const getTime = (s) => {
       try {
-        // Ensure date and time are valid strings
         if (!s.date || !s.startTime) return 0;
         
-        // Convert "10:00 AM" to "10:00" for Date constructor
-        const [time, period] = s.startTime.split(' ');
-        let [hours, minutes] = time.split(':');
-        if (period === 'PM' && hours !== '12') hours = parseInt(hours) + 12;
-        if (period === 'AM' && hours === '12') hours = '00';
+        // Robust time parsing
+        const timeMatch = s.startTime.match(/(\d+):(\d+)\s*(AM|PM)/i);
+        if (!timeMatch) return new Date(s.date).getTime();
+
+        let [_, hours, minutes, period] = timeMatch;
+        hours = parseInt(hours, 10);
+        minutes = parseInt(minutes, 10);
+        period = period.toUpperCase();
+
+        if (period === 'PM' && hours !== 12) hours += 12;
+        if (period === 'AM' && hours === 12) hours = 0;
         
-        const dateStr = `${s.date}T${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:00`;
-        return new Date(dateStr).getTime();
+        // Create date object in local time
+        const [y, m, d] = s.date.split('-').map(Number);
+        return new Date(y, m - 1, d, hours, minutes).getTime();
       } catch (e) {
+        console.error("getTime error:", e);
         return 0;
       }
     };
