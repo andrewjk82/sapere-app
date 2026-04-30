@@ -61,10 +61,11 @@ const StudentDetail = ({ studentId, onBack }) => {
   useEffect(() => {
     if (!studentId) return;
 
-    const unsubUsers = onSnapshot(doc(db, 'users', studentId), (snap) => {
+    // 1. Listen to Student Data (Try users first, then students)
+    const unsub = onSnapshot(doc(db, 'users', studentId), (snap) => {
       if (snap.exists()) {
         const data = snap.data();
-        setStudent({ id: snap.id, ...data });
+        setStudent({ id: snap.id, source: 'users', ...data });
         setAssignedChapters(data.assignedChapters || []);
         setEditForm({
           name: data.name || data.firstName || '',
@@ -77,7 +78,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         });
         setLoading(false);
       } else {
-        const unsubStudents = onSnapshot(doc(db, 'students', studentId), (mSnap) => {
+        // Try manual students collection
+        onSnapshot(doc(db, 'students', studentId), (mSnap) => {
           if (mSnap.exists()) {
             const mData = mSnap.data();
             setStudent({ id: mSnap.id, source: 'manual', ...mData });
@@ -98,22 +100,28 @@ const StudentDetail = ({ studentId, onBack }) => {
           }
           setLoading(false);
         });
-        return () => unsubStudents();
       }
     });
 
-    const colName = student?.source === 'manual' ? 'students' : 'users';
+    return () => unsub();
+  }, [studentId]);
+
+  // 2. Separate Effect for Stats - only runs when student data is ready
+  useEffect(() => {
+    if (!studentId || !student) return;
+    
+    const colName = student.source === 'manual' ? 'students' : 'users';
     const statsRef = collection(db, colName, studentId, 'daily_stats');
+    
     const unsubStats = onSnapshot(statsRef, (snap) => {
       const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       stats.sort((a, b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
       setDailyStats(stats);
+    }, (err) => {
+      console.error("Stats Error:", err);
     });
 
-    return () => {
-      unsubUsers();
-      unsubStats();
-    };
+    return () => unsubStats();
   }, [studentId, student?.source]);
 
   const handleResetChallenge = async (statId) => {
