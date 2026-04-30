@@ -1,30 +1,14 @@
-name: Hourly Lesson Reminders
+name: Scheduled Reminders
 
 on:
   schedule:
-    # Runs every hour at the top of the hour
-    - cron: '0 * * * *'
-  workflow_dispatch: # Manual trigger
+    - cron: '0,30 * * * *' # Every 30 minutes
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
-  send-reminders:
+  hit-cron-endpoint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Dependencies
+      - name: Trigger Sapere Cron
         run: |
-          npm install firebase-admin nodemailer
-
-      - name: Run Reminder Script
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-        run: node scripts/send-reminders.js
+          curl -X GET "https://sapere-app.vercel.app/api/cron-unified"

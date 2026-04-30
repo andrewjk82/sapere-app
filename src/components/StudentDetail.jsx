@@ -168,21 +168,65 @@ const StudentDetail = ({ studentId, onBack }) => {
     if (!sessionForm.focus || !sessionForm.date) return alert("Please fill in focus and date.");
     try {
       setBooking(true);
-      await addDoc(collection(db, 'sessions'), {
-        studentId,
-        studentName: student.name || student.firstName || 'Student',
-        studentEmail: student.email || '',
-        date: sessionForm.date,
-        subject: sessionForm.focus,
-        startTime: sessionForm.start,
-        endTime: sessionForm.end,
-        recurring: sessionForm.recurring,
-        status: 'Scheduled',
-        createdAt: serverTimestamp()
+      
+      // Check for conflicts
+      const sessionsRef = collection(db, 'sessions');
+      const q = query(sessionsRef, where('date', '==', sessionForm.date));
+      const querySnapshot = await getDocs(q);
+      
+      const conflicts = querySnapshot.docs.filter(doc => {
+        const s = doc.data();
+        // Simple overlap check: (StartA < EndB) && (EndA > StartB)
+        // Note: This requires standard time strings like "02:00 PM" to be comparable or converted.
+        // For now, we compare the exact start time to keep it simple, or we can improve it.
+        return s.startTime === sessionForm.start;
       });
-      alert("Session booked!");
+
+      if (conflicts.length > 0) {
+        const confirmMsg = `There is already a session at ${sessionForm.start}. Do you want to book anyway, or should I find the next slot?`;
+        if (!window.confirm(confirmMsg)) {
+          setBooking(false);
+          return;
+        }
+      }
+
+      const sessionsToAdd = [];
+      const groupId = sessionForm.recurring ? `group_${Date.now()}` : null;
+      const numWeeks = sessionForm.recurring ? 8 : 1;
+
+      for (let i = 0; i < numWeeks; i++) {
+        const currentDate = new Date(sessionForm.date);
+        currentDate.setDate(currentDate.getDate() + (i * 7));
+        const dateStr = currentDate.toISOString().split('T')[0];
+
+        sessionsToAdd.push({
+          studentId,
+          studentName: student.name || student.firstName || 'Student',
+          studentEmail: student.email || '',
+          date: dateStr,
+          subject: sessionForm.focus,
+          startTime: sessionForm.start,
+          endTime: sessionForm.end,
+          recurring: sessionForm.recurring,
+          groupId: groupId,
+          status: 'Scheduled',
+          createdAt: serverTimestamp(),
+          reminderSent: false
+        });
+      }
+
+      for (const session of sessionsToAdd) {
+        await addDoc(collection(db, 'sessions'), session);
+      }
+
+      alert(sessionForm.recurring ? "8 weeks of sessions booked!" : "Session booked!");
       setSessionForm(prev => ({ ...prev, focus: '' }));
-    } catch (error) { console.error(error); } finally { setBooking(false); }
+    } catch (error) { 
+      console.error(error); 
+      alert("Booking failed. Please try again.");
+    } finally { 
+      setBooking(false); 
+    }
   };
 
   const handleSendMessage = async () => {
