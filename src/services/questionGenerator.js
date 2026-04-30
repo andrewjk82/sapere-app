@@ -196,6 +196,15 @@ const genHundredsChart = (diff) => {
 
 // --- Main Export ---
 
+export const generateQuestion = (difficulty = 'easy') => {
+  const generators = [
+    genCompare, genBeforeAfter, genOddEven, genNumberWords,
+    genSkipCounting, genTensOnes, genNumberLine, genHundredsChart
+  ];
+  const gen = generators[Math.floor(Math.random() * generators.length)];
+  return gen(difficulty);
+};
+
 export const questionGenerator = {
   genCompare,
   genBeforeAfter,
@@ -205,12 +214,5 @@ export const questionGenerator = {
   genTensOnes,
   genNumberLine,
   genHundredsChart,
-  generateQuestion: (difficulty = 'easy') => {
-    const generators = [
-      genCompare, genBeforeAfter, genOddEven, genNumberWords,
-      genSkipCounting, genTensOnes, genNumberLine, genHundredsChart
-    ];
-    const gen = generators[Math.floor(Math.random() * generators.length)];
-    return gen(difficulty);
-  }
+  generateQuestion
 };
