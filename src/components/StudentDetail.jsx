@@ -344,8 +344,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                 if (response.ok) {
                   alert('Instant notification sent! Check your email and phone.');
                 } else {
-                  const errorData = await response.json();
-                  throw new Error(errorData.error || 'Server responded with error');
+                  const contentType = response.headers.get("content-type");
+                  if (contentType && contentType.indexOf("application/json") !== -1) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Server responded with error');
+                  } else {
+                    const textError = await response.text();
+                    throw new Error(textError.substring(0, 100) || 'Server error occurred');
+                  }
                 }
               } catch (e) {
                 alert('Failed to send instant test: ' + e.message);
