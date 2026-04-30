@@ -3,53 +3,16 @@
  * Generates various math problems with random values, multiple choices, and worked solutions.
  */
 
-export const generateQuestion = (year = 1, difficulty = 'easy') => {
-  const types = [
-    'number_line',
-    'tens_ones',
-    'compare',
-    'before_after',
-    'odd_even',
-    'skip_counting',
-    'number_words',
-    'hundreds_chart'
-  ];
-
-  const type = types[Math.floor(Math.random() * types.length)];
-  
-  switch (type) {
-    case 'number_line':
-      return genNumberLine(difficulty);
-    case 'tens_ones':
-      return genTensOnes(difficulty);
-    case 'compare':
-      return genCompare(difficulty);
-    case 'before_after':
-      return genBeforeAfter(difficulty);
-    case 'odd_even':
-      return genOddEven(difficulty);
-    case 'skip_counting':
-      return genSkipCounting(difficulty);
-    case 'number_words':
-      return genNumberWords(difficulty);
-    case 'hundreds_chart':
-      return genHundredsChart(difficulty);
-    default:
-      return genCompare(difficulty);
-  }
-};
-
-// --- Helper Functions for each type ---
+// --- Helper Functions ---
 
 const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
 const getUniqueOptions = (answer, distractors, min = 1, max = 100) => {
   const opts = new Set([answer]);
   distractors.forEach(d => {
-    if (d !== answer && d > 0) opts.add(d);
+    if (d !== answer && (typeof d === 'number' ? d > 0 : true)) opts.add(d);
   });
   
-  // Fill up to 4 if we have duplicates
   while (opts.size < 4) {
     const random = Math.floor(Math.random() * (max - min + 1)) + min;
     opts.add(random);
@@ -57,6 +20,8 @@ const getUniqueOptions = (answer, distractors, min = 1, max = 100) => {
   
   return shuffle(Array.from(opts)).slice(0, 4);
 };
+
+// --- Question Generators ---
 
 const genCompare = (diff) => {
   const max = diff === 'easy' ? 20 : 100;
@@ -76,7 +41,7 @@ const genCompare = (diff) => {
   return {
     type: 'compare',
     question,
-    options: options.slice(0, 4),
+    options,
     answer,
     solution: `${answer} is ${targetGreater ? 'greater' : 'less'} than ${answer === n1 ? n2 : n1}.`,
     timeLimit: 20
@@ -131,11 +96,8 @@ const genNumberWords = (diff) => {
   
   let options;
   if (toWord) {
-    options = shuffle([words[num], words[num-1] || 'thirty', words[num+1] || 'forty', 'twelve']).slice(0, 4);
-    // Word options are usually unique enough, but let's be safe
-    const uniqueWords = Array.from(new Set(options));
-    while(uniqueWords.length < 4) uniqueWords.push('eleven'); // fallback
-    options = shuffle(uniqueWords).slice(0, 4);
+    const distractors = shuffle(words).filter(w => w !== words[num]).slice(0, 3);
+    options = shuffle([words[num], ...distractors]);
   } else {
     options = getUniqueOptions(answer, [num-1, num+1, num+5, num+2], 0, 20);
   }
@@ -156,14 +118,15 @@ const genSkipCounting = (diff) => {
   const seq = [start, start + step, start + step * 2, start + step * 3];
   const missingIdx = Math.floor(Math.random() * 4);
   const answer = seq[missingIdx];
-  seq[missingIdx] = '___';
+  const displaySeq = [...seq];
+  displaySeq[missingIdx] = '___';
 
   const distractors = [answer + 1, answer - step, answer + step * 2, answer + step];
   const options = getUniqueOptions(answer, distractors, 0, 100);
 
   return {
     type: 'skip_counting',
-    question: `What is the missing number in the sequence: ${seq.join(', ')}?`,
+    question: `What is the missing number in the sequence: ${displaySeq.join(', ')}?`,
     options,
     answer,
     solution: `The pattern is skip counting by ${step}.`,
@@ -190,7 +153,6 @@ const genTensOnes = (diff) => {
 
 const genNumberLine = (diff) => {
   const start = Math.floor(Math.random() * 50);
-  const step = 1;
   const target = start + Math.floor(Math.random() * 10) + 1;
   const distractors = [target - 1, target + 1, start + 5, target + 2];
   const options = getUniqueOptions(target, distractors, 0, 100);
@@ -216,6 +178,7 @@ const genHundredsChart = (diff) => {
     case 'below': answer = num + 10; explanation = "Going down one row is +10."; break;
     case 'left': answer = num - 1; explanation = "Going left is -1."; break;
     case 'right': answer = num + 1; explanation = "Going right is +1."; break;
+    default: answer = num + 1; explanation = "Right";
   }
 
   const distractors = [num + 10, num - 10, num + 1, num - 1, num + 5];
@@ -231,22 +194,21 @@ const genHundredsChart = (diff) => {
   };
 };
 
+// --- Main Export ---
+
 export const questionGenerator = {
-  genAddition,
-  genSubtraction,
-  genMultiplication,
-  genDivision,
-  genPlaceValue,
-  genComparison,
+  genCompare,
+  genBeforeAfter,
+  genOddEven,
+  genNumberWords,
   genSkipCounting,
   genTensOnes,
   genNumberLine,
   genHundredsChart,
-  generateQuestion: (difficulty) => {
+  generateQuestion: (difficulty = 'easy') => {
     const generators = [
-      genAddition, genSubtraction, genMultiplication, genDivision,
-      genPlaceValue, genComparison, genSkipCounting, genTensOnes,
-      genNumberLine, genHundredsChart
+      genCompare, genBeforeAfter, genOddEven, genNumberWords,
+      genSkipCounting, genTensOnes, genNumberLine, genHundredsChart
     ];
     const gen = generators[Math.floor(Math.random() * generators.length)];
     return gen(difficulty);
