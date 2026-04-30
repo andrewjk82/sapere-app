@@ -8,6 +8,7 @@ import Dashboard from './components/Dashboard';
 import StudentList from './components/StudentList';
 import Schedule from './components/Schedule';
 import Curriculum from './components/Curriculum';
+import DailyChallenge from './components/DailyChallenge';
 import Settings from './components/Settings';
 import StudentDetail from './components/StudentDetail';
 import Login from './pages/Login';
@@ -294,6 +295,8 @@ function App() {
         );
       case 'Schedule':
         return <Schedule />;
+      case 'Challenge':
+        return <DailyChallenge onBack={() => setActiveTab('Dashboard')} />;
       case 'Curriculum':
         return <Curriculum />;
       case 'Settings':

@@ -265,6 +265,28 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               gap: isMobile ? '16px' : '20px',
               padding: isMobile ? '0 20px' : '0'
             }}>
+              {/* XP / Progress Card */}
+              <div style={{ 
+                flex: 1,
+                background: 'linear-gradient(135deg, #1e1b4b, #312e81)', 
+                borderRadius: '28px', 
+                padding: '28px', 
+                color: 'white',
+                boxShadow: '0 15px 35px rgba(30,27,75,0.2)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                position: 'relative',
+                overflow: 'hidden'
+              }}>
+                <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}>
+                  <Trophy size={100} />
+                </div>
+                <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#a5b4fc', marginBottom: '8px' }}>Total XP</label>
+                <h4 style={{ margin: '0 0 4px', fontSize: '2rem', fontWeight: 900 }}>{profile?.totalXP || 0}</h4>
+                <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#a5b4fc' }}>Master Level 1</div>
+              </div>
+
               {/* Next Lesson Card */}
               <div 
                 onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
@@ -407,13 +429,45 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               </div>
             </>
           ) : (
-            <div className="app-panel dashboard-card" style={{ gridColumn: 'span 2', padding: isMobile ? '24px' : '32px' }}>
-              <div className="dashboard-card__header" style={{ marginBottom: '24px' }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 900 }}>My Courses</h3>
-              </div>
-              <div className="app-empty" style={{ padding: '60px 0', background: '#f8fafc', borderRadius: '24px', border: '2px dashed #e2e8f0' }}>
-                <GraduationCap size={48} style={{ color: '#cbd5e1', marginBottom: '16px', opacity: 0.5 }} />
-                <p style={{ fontWeight: 600, color: '#94a3b8' }}>Explore and manage your active courses here.</p>
+            <div style={{ display: 'grid', gap: '20px', gridColumn: 'span 2' }}>
+              {/* Daily Mission Card */}
+              <motion.div 
+                whileHover={{ y: -5 }}
+                onClick={() => setActiveTab('Challenge')}
+                style={{ 
+                  background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', 
+                  borderRadius: '32px', 
+                  padding: '32px', 
+                  border: '2px solid #ddd6fe',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '24px'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+                  <div style={{ width: '64px', height: '64px', background: 'white', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1', boxShadow: '0 10px 20px rgba(99,102,241,0.1)' }}>
+                    <Star size={32} fill="#6366f1" />
+                  </div>
+                  <div>
+                    <h3 style={{ margin: '0 0 4px', fontSize: '1.3rem', fontWeight: 900, color: '#1e1b4b' }}>Daily Mission</h3>
+                    <p style={{ margin: 0, color: '#6366f1', fontWeight: 700 }}>Earn 100 XP • 10 Questions</p>
+                  </div>
+                </div>
+                <button className="app-button app-button--primary" style={{ padding: '12px 24px', borderRadius: '14px' }}>
+                  Start Now
+                </button>
+              </motion.div>
+
+              <div className="app-panel dashboard-card" style={{ padding: isMobile ? '24px' : '32px' }}>
+                <div className="dashboard-card__header" style={{ marginBottom: '24px' }}>
+                  <h3 style={{ fontSize: '1.4rem', fontWeight: 900 }}>My Courses</h3>
+                </div>
+                <div className="app-empty" style={{ padding: '60px 0', background: '#f8fafc', borderRadius: '24px', border: '2px dashed #e2e8f0' }}>
+                  <GraduationCap size={48} style={{ color: '#cbd5e1', marginBottom: '16px', opacity: 0.5 }} />
+                  <p style={{ fontWeight: 600, color: '#94a3b8' }}>Explore and manage your active courses here.</p>
+                </div>
               </div>
             </div>
           )}
