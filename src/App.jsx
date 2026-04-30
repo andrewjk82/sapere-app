@@ -19,7 +19,7 @@ import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
-const CURRENT_APP_VERSION = '1.0.5';
+const CURRENT_APP_VERSION = '1.0.6';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
