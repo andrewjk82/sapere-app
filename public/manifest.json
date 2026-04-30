@@ -1,0 +1,16 @@
+{
+  "short_name": "Sapere",
+  "name": "Sapere Aude Academia",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#fcfaff"
+}
