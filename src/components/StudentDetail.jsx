@@ -102,23 +102,25 @@ const StudentDetail = ({ studentId, onBack }) => {
       }
     });
 
-    // Fetch Daily Stats
-    const statsRef = collection(db, 'users', studentId, 'daily_stats');
-    const q = query(statsRef, orderBy('timestamp', 'desc'));
-    const unsubStats = onSnapshot(q, (snap) => {
-      setDailyStats(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    const colName = student?.source === 'manual' ? 'students' : 'users';
+    const statsRef = collection(db, colName, studentId, 'daily_stats');
+    const unsubStats = onSnapshot(statsRef, (snap) => {
+      const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      stats.sort((a, b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
+      setDailyStats(stats);
     });
 
     return () => {
       unsubUsers();
       unsubStats();
     };
-  }, [studentId]);
+  }, [studentId, student?.source]);
 
   const handleResetChallenge = async (statId) => {
     if (!window.confirm("Are you sure you want to reset this challenge? This will allow the student to retake it today.")) return;
     try {
-      await deleteDoc(doc(db, 'users', studentId, 'daily_stats', statId));
+      const colName = student.source === 'manual' ? 'students' : 'users';
+      await deleteDoc(doc(db, colName, studentId, 'daily_stats', statId));
       alert("Challenge reset successfully.");
     } catch (error) {
       console.error("Reset error:", error);
