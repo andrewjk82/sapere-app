@@ -5,15 +5,19 @@ const nodemailer = require('nodemailer');
 admin.initializeApp();
 const db = admin.firestore();
 
-// 1. Email Setup (Using a generic SMTP or you can use Resend/SendGrid)
-// Replace with your actual SMTP credentials or use Firebase Extensions for easier setup
+// 1. Email Setup (Gmail recommended for easy setup)
+// ⚠️ IMPORTANT: Replace 'YOUR_EMAIL@gmail.com' and 'YOUR_APP_PASSWORD' 
+// with your actual Gmail and the 16-digit App Password you generated.
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'your-email@gmail.com',
-    pass: 'your-app-password'
+    user: 'YOUR_EMAIL@gmail.com', 
+    pass: 'YOUR_APP_PASSWORD' 
   }
 });
+
+const SENDER_NAME = 'Sapere Aude Academia'; // You can change this to your name
+const SENDER_EMAIL = 'YOUR_EMAIL@gmail.com'; 
 
 /**
  * Scheduled Function: Runs every day at 8:00 PM
@@ -49,7 +53,7 @@ exports.sendNightBeforeReminders = functions.pubsub
       // 3. Send Email if opted-in
       if (prefs.email && userData.email) {
         const mailOptions = {
-          from: '"Sapere Aude Academia" <noreply@sapere.com>',
+          from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
           to: userData.email,
           subject: `Reminder: Your lesson tomorrow at ${session.startTime}`,
           text: `Hi ${userData.firstName}, this is a reminder for your ${session.subject} lesson tomorrow at ${session.startTime}. See you then!`,
