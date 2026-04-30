@@ -8,6 +8,7 @@ import { auth, db } from '../firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
+import './curriculum.css';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
@@ -22,7 +23,6 @@ const Curriculum = () => {
   useEffect(() => {
     if (!user) return;
     
-    // Admins don't need profile restriction
     if (isAdmin) {
       setLoading(false);
       return;
@@ -32,7 +32,6 @@ const Curriculum = () => {
       if (snap.exists()) {
         const data = snap.data();
         setProfile(data);
-        // Only set if tutor has assigned it
         if (data.assignedYear) setSelectedYear(data.assignedYear);
         if (data.assignedCourse) setSelectedCourse(data.assignedCourse);
       }
@@ -53,7 +52,6 @@ const Curriculum = () => {
       data = data[selectedCourse] || [];
     }
     
-    // Filter by assigned chapters if student
     if (!isAdmin && profile?.assignedChapters) {
       data = data.filter(chapter => profile.assignedChapters.includes(chapter.id));
     }
@@ -67,17 +65,17 @@ const Curriculum = () => {
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
   return (
-    <div className="app-page">
-      <div className="app-page__header">
+    <div className="app-page curriculum-container">
+      <div className="curriculum-header-mobile">
         <div className="app-page__title">
           <h2>{isAdmin ? 'Curriculum Management' : 'My Learning Path'}</h2>
-          <p>
+          <p style={{ maxWidth: '600px' }}>
             {isAdmin 
               ? 'Comprehensive curriculum structure from Foundation to HSC Extension 2.' 
               : `Your personalized curriculum for ${selectedYear}${courses ? ` (${selectedCourse})` : ''}.`}
           </p>
         </div>
-        <div className="app-input" style={{ minWidth: 300 }}>
+        <div className="app-input" style={{ width: window.innerWidth < 768 ? '100%' : '300px' }}>
           <Search size={18} />
           <input 
             type="text" 
@@ -88,12 +86,12 @@ const Curriculum = () => {
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: isAdmin ? '260px 1fr' : '1fr', gap: '32px', height: 'calc(100vh - 200px)' }}>
+      <div className="curriculum-main-grid" style={{ display: 'grid', gridTemplateColumns: isAdmin ? '260px 1fr' : '1fr', gap: '32px', height: isAdmin ? 'calc(100vh - 250px)' : 'auto' }}>
         {/* Left Sidebar: Year Selection (ONLY FOR ADMIN) */}
         {isAdmin && (
-          <div className="app-panel" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
-            <div style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          <div className="app-panel curriculum-sidebar" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
+            <div className="year-select-title" style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
+            <div style={{ display: 'flex', flexDirection: window.innerWidth < 1024 ? 'row' : 'column', gap: '8px' }}>
               {YEARS.map(year => (
                 <button
                   key={year}
@@ -103,6 +101,7 @@ const Curriculum = () => {
                       setSelectedCourse('Standard');
                     }
                   }}
+                  className="year-btn-mobile"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -110,19 +109,20 @@ const Curriculum = () => {
                     padding: '14px 16px',
                     borderRadius: '16px',
                     border: 'none',
-                    background: selectedYear === year ? '#f5f3ff' : 'transparent',
-                    color: selectedYear === year ? '#6366f1' : '#64748b',
+                    background: selectedYear === year ? '#6366f1' : '#f8fafc',
+                    color: selectedYear === year ? 'white' : '#64748b',
                     fontWeight: 700,
-                    fontSize: '0.95rem',
+                    fontSize: '0.9rem',
                     cursor: 'pointer',
-                    transition: 'all 0.2s'
+                    transition: 'all 0.2s',
+                    minWidth: window.innerWidth < 1024 ? 'fit-content' : 'auto'
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <GraduationCap size={18} style={{ opacity: selectedYear === year ? 1 : 0.5 }} />
+                    <GraduationCap size={16} />
                     {year}
                   </div>
-                  {selectedYear === year && <ChevronRight size={16} />}
+                  {selectedYear === year && window.innerWidth >= 1024 && <ChevronRight size={16} />}
                 </button>
               ))}
             </div>
@@ -131,49 +131,50 @@ const Curriculum = () => {
 
         {/* Main Content Area */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          {/* Sub-tabs for Year 11 & 12 (ADMIN can choose, STUDENT is fixed if assigned) */}
+          {/* Sub-tabs for Year 11 & 12 */}
           {courses && (
-            <div style={{ display: 'flex', gap: '12px', background: '#f1f5f9', padding: '6px', borderRadius: '18px', width: 'fit-content' }}>
-              {courses.map(course => {
-                // If student, disable other courses if one is assigned
-                const isDisabled = !isAdmin && profile?.assignedCourse && profile.assignedCourse !== course;
-                if (isDisabled) return null; // Students only see their own course tab
+            <div className="course-tabs-scroll">
+              <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '6px', borderRadius: '18px', width: 'fit-content' }}>
+                {courses.map(course => {
+                  const isDisabled = !isAdmin && profile?.assignedCourse && profile.assignedCourse !== course;
+                  if (isDisabled) return null;
 
-                return (
-                  <button
-                    key={course}
-                    onClick={() => isAdmin && setSelectedCourse(course)}
-                    style={{
-                      padding: '10px 24px',
-                      borderRadius: '14px',
-                      border: 'none',
-                      background: selectedCourse === course ? 'white' : 'transparent',
-                      color: selectedCourse === course ? '#6366f1' : '#64748b',
-                      fontWeight: 800,
-                      fontSize: '0.85rem',
-                      cursor: isAdmin ? 'pointer' : 'default',
-                      boxShadow: selectedCourse === course ? '0 4px 12px rgba(0,0,0,0.05)' : 'none',
-                      transition: 'all 0.2s',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px'
-                    }}
-                  >
-                    {!isAdmin && <Lock size={14} />}
-                    {course}
-                  </button>
-                );
-              })}
+                  return (
+                    <button
+                      key={course}
+                      onClick={() => isAdmin && setSelectedCourse(course)}
+                      style={{
+                        padding: '10px 20px',
+                        borderRadius: '14px',
+                        border: 'none',
+                        background: selectedCourse === course ? 'white' : 'transparent',
+                        color: selectedCourse === course ? '#6366f1' : '#64748b',
+                        fontWeight: 800,
+                        fontSize: '0.8rem',
+                        cursor: isAdmin ? 'pointer' : 'default',
+                        boxShadow: selectedCourse === course ? '0 4px 12px rgba(0,0,0,0.05)' : 'none',
+                        transition: 'all 0.2s',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px'
+                      }}
+                    >
+                      {!isAdmin && <Lock size={14} />}
+                      {course}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           )}
 
           {/* Chapters Grid */}
-          <div style={{ 
+          <div className="chapters-grid" style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
-            gap: '24px',
-            overflowY: 'auto',
-            paddingBottom: '40px'
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
+            gap: '20px',
+            overflowY: window.innerWidth < 1024 ? 'visible' : 'auto',
+            paddingBottom: '100px'
           }}>
             {displayData.length > 0 ? displayData.map(chapter => {
               const completed = chapter.completed || 0;
@@ -189,44 +190,38 @@ const Curriculum = () => {
                     flexDirection: 'column', 
                     gap: '20px',
                     border: '1px solid rgba(0,0,0,0.03)',
-                    transition: 'transform 0.2s ease',
                     cursor: 'pointer'
                   }}
-                  onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'}
-                  onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <div style={{ width: '48px', height: '48px', background: '#f5f3ff', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}>
-                      <BookText size={24} />
+                    <div style={{ width: '44px', height: '44px', background: '#f5f3ff', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}>
+                      <BookText size={22} />
                     </div>
-                    <div style={{ background: p === 100 ? '#ecfdf5' : '#f8fafc', color: p === 100 ? '#10b981' : '#64748b', padding: '6px 12px', borderRadius: '10px', fontSize: '0.75rem', fontWeight: 800 }}>
+                    <div style={{ background: p === 100 ? '#ecfdf5' : '#f8fafc', color: p === 100 ? '#10b981' : '#64748b', padding: '6px 12px', borderRadius: '10px', fontSize: '0.7rem', fontWeight: 800 }}>
                       {p === 100 ? 'COMPLETED' : `${chapter.modules} MODULES`}
                     </div>
                   </div>
 
                   <div>
-                    <h3 style={{ margin: '0 0 8px 0', fontSize: '1.15rem', fontWeight: 800, color: '#1a1c2c' }}>{chapter.title}</h3>
-                    <p style={{ margin: 0, fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>Core subject curriculum unit</p>
+                    <h3 style={{ margin: '0 0 6px 0', fontSize: '1.1rem', fontWeight: 800, color: '#1a1c2c' }}>{chapter.title}</h3>
+                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>Core curriculum unit</p>
                   </div>
 
                   <div style={{ marginTop: 'auto' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '8px', textTransform: 'uppercase' }}>
-                      <span>Progress</span>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '8px' }}>
+                      <span>PROGRESS</span>
                       <span style={{ color: '#6366f1' }}>{p}%</span>
                     </div>
                     <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '4px', overflow: 'hidden' }}>
-                      <div style={{ width: `${p}%`, height: '100%', background: 'linear-gradient(90deg, #6366f1, #a78bfa)', borderRadius: '4px' }}></div>
+                      <div style={{ width: `${p}%`, height: '100%', background: 'linear-gradient(90deg, #6366f1, #a78bfa)' }}></div>
                     </div>
                   </div>
                 </div>
               );
             }) : (
-              <div style={{ gridColumn: '1 / -1', padding: '100px 0', textAlign: 'center' }}>
-                <div style={{ color: '#cbd5e1', marginBottom: '16px' }}>
-                  <Search size={48} style={{ opacity: 0.5 }} />
-                </div>
-                <h3 style={{ color: '#64748b', fontWeight: 800 }}>No curriculum assigned yet</h3>
-                <p style={{ color: '#94a3b8', fontWeight: 600 }}>Your tutor will update your learning path soon.</p>
+              <div style={{ gridColumn: '1 / -1', padding: '80px 0', textAlign: 'center' }}>
+                <Search size={40} style={{ color: '#cbd5e1', marginBottom: '16px' }} />
+                <h3 style={{ color: '#64748b', fontWeight: 800 }}>No curriculum found</h3>
               </div>
             )}
           </div>

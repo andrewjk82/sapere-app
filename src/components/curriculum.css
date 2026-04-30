@@ -1,0 +1,80 @@
+/* Curriculum Page Mobile Optimized Styles */
+.curriculum-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .curriculum-main-grid {
+    grid-template-columns: 1fr !important; /* Stack vertically on mobile */
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .curriculum-sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px);
+    padding: 12px !important;
+    margin: 0 -20px; /* Bleed to edges */
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+  }
+
+  .curriculum-sidebar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for cleaner look */
+  }
+
+  .year-select-title {
+    display: none !important; /* Hide "SELECT YEAR LEVEL" text on mobile */
+  }
+
+  .year-btn-mobile {
+    flex: 0 0 auto !important;
+    padding: 10px 20px !important;
+    font-size: 0.85rem !important;
+    border-radius: 99px !important;
+  }
+
+  .chapters-grid {
+    grid-template-columns: 1fr !important; /* Single column on small screens */
+    padding: 0 20px;
+  }
+}
+
+.curriculum-header-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-top: 60px; /* Safe area for capsule */
+}
+
+@media (min-width: 768px) {
+  .curriculum-header-mobile {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.course-tabs-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4px;
+  margin: 0 -4px;
+}
+
+.course-tabs-scroll::-webkit-scrollbar {
+  display: none;
+}
