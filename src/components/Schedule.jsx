@@ -5,13 +5,27 @@ import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc } from 
 import { useAuth } from '../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const TIME_OPTIONS = [
+  '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
+  '11:00 AM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM', '1:30 PM', '2:00 PM', '2:30 PM',
+  '3:00 PM', '3:30 PM', '4:00 PM', '4:30 PM', '5:00 PM', '5:30 PM', '6:00 PM', '6:30 PM',
+  '7:00 PM', '7:30 PM', '8:00 PM', '8:30 PM', '9:00 PM', '9:30 PM', '10:00 PM', '10:30 PM', '11:00 PM', '11:30 PM'
+];
+
 const Schedule = () => {
   const { user, isAdmin } = useAuth();
   const [sessions, setSessions] = useState([]);
   const [selectedSession, setSelectedSession] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [editData, setEditData] = useState({ notes: '', homework: '', isHomeworkCompleted: false });
+  const [editData, setEditData] = useState({ 
+    notes: '', 
+    homework: '', 
+    isHomeworkCompleted: false,
+    startTime: '',
+    endTime: '',
+    date: ''
+  });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   // ── Handle Resize ──────────────────────────────────────────────────────────
@@ -46,7 +60,10 @@ const Schedule = () => {
     setEditData({
       notes: session.notes || '',
       homework: session.homework || '',
-      isHomeworkCompleted: session.isHomeworkCompleted || false
+      isHomeworkCompleted: session.isHomeworkCompleted || false,
+      startTime: session.startTime || '10:00 AM',
+      endTime: session.endTime || '11:30 AM',
+      date: session.date || ''
     });
   };
 
@@ -393,10 +410,47 @@ const Schedule = () => {
               </div>
 
               <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '16px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Date</label>
+                    <input 
+                      type="date" 
+                      value={editData.date} 
+                      disabled={!isAdmin}
+                      onChange={e => setEditData({ ...editData, date: e.target.value })}
+                      style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', boxSizing: 'border-box' }}
+                    />
+                  </div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Start Time</label>
+                      <select 
+                        disabled={!isAdmin}
+                        value={editData.startTime} 
+                        onChange={e => setEditData({ ...editData, startTime: e.target.value })}
+                        style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', boxSizing: 'border-box', cursor: isAdmin ? 'pointer' : 'default' }}
+                      >
+                        {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
+                      </select>
+                    </div>
+                    <div>
+                      <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>End Time</label>
+                      <select 
+                        disabled={!isAdmin}
+                        value={editData.endTime} 
+                        onChange={e => setEditData({ ...editData, endTime: e.target.value })}
+                        style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', boxSizing: 'border-box', cursor: isAdmin ? 'pointer' : 'default' }}
+                      >
+                        {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
                 <div>
                   <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Notes</label>
                   {isAdmin
-                    ? <textarea rows={4} value={editData.notes} onChange={e => setEditData({ ...editData, notes: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
+                    ? <textarea rows={3} value={editData.notes} onChange={e => setEditData({ ...editData, notes: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
                     : <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', color: '#1e1b4b', fontSize: '1rem' }}>{selectedSession.notes || 'No notes for this session.'}</div>
                   }
                 </div>
