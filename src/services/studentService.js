@@ -78,16 +78,22 @@ export const studentService = {
       unsubUsers = onSnapshot(usersRef, (snapshot) => {
         registeredStudents = snapshot.docs
           .map(doc => ({ id: doc.id, ...doc.data() }))
-          .filter(data => data.email !== "andrewjk82@gmail.com") // Filter out admin
+          .filter(data => 
+            data.email !== "andrewjk82@gmail.com" && 
+            data.role !== 'admin' && 
+            data.id !== tutorId
+          )
           .map(data => {
+            const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
             return {
               id: data.id,
               source: 'registered',
-              name: data.displayName || `${data.firstName} ${data.lastName}` || data.email,
+              name: data.displayName || (data.firstName ? `${data.firstName} ${data.lastName}` : data.email),
               level: data.year || "Year ?",
               subject: data.role === 'parent' ? "Parent Account" : "Registered Student",
               status: "Active",
               email: data.email,
+              avatarUrl: data.avatarUrl || fallbackAvatar,
               ...data
             };
           });
