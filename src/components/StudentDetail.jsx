@@ -4,7 +4,7 @@ import {
   ChevronLeft, Calendar, BookOpen, 
   MessageSquare, Trophy, 
   Mail, Phone, Check, Settings, Clock,
-  Edit3, Save, Bell
+  Edit3, Save, Bell, X
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { 
@@ -23,6 +23,9 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [activeTab, setActiveTab] = useState('schedule');
   const [assignedChapters, setAssignedChapters] = useState([]);
   const [booking, setBooking] = useState(false);
+  const [messageOpen, setMessageOpen] = useState(false);
+  const [messageText, setMessageText] = useState('');
+  const [sendingMessage, setSendingMessage] = useState(false);
 
   const [sessionForm, setSessionForm] = useState({
     date: new Date().toISOString().split('T')[0],
@@ -182,6 +185,39 @@ const StudentDetail = ({ studentId, onBack }) => {
     } catch (error) { console.error(error); } finally { setBooking(false); }
   };
 
+  const handleSendMessage = async () => {
+    if (!messageText.trim()) return;
+    try {
+      setSendingMessage(true);
+      const response = await fetch('/api/send-notif', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          studentId: studentId,
+          email: student.email,
+          subject: `Message from your Tutor`,
+          text: messageText,
+          html: `<div style="font-family: sans-serif; padding: 30px; background: #f9fafb; border-radius: 20px;">
+                  <h2 style="color: #6366f1;">New Message</h2>
+                  <p style="font-size: 16px; color: #374151; line-height: 1.6;">${messageText}</p>
+                 </div>`
+        })
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setMessageText('');
+        setMessageOpen(false);
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (e) {
+      alert(e.message);
+    } finally {
+      setSendingMessage(false);
+    }
+  };
+
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
   if (!student) return <div className="app-empty">Student not found.</div>;
 
@@ -310,13 +346,22 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
           </div>
 
-          <button 
-            onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} 
-            className={`app-button ${isEditing ? 'app-button--primary' : 'app-button--secondary'} mobile-edit-btn`}
-            style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
-          >
-            {isEditing ? <><Save size={18} /> Save</> : <><Edit3 size={18} /> Edit Profile</>}
-          </button>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button 
+              onClick={() => setMessageOpen(true)}
+              className="app-button app-button--secondary mobile-edit-btn"
+              style={{ borderRadius: '16px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
+            >
+              <MessageSquare size={18} /> Send Message
+            </button>
+            <button 
+              onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} 
+              className={`app-button ${isEditing ? 'app-button--primary' : 'app-button--secondary'} mobile-edit-btn`}
+              style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
+            >
+              {isEditing ? <><Save size={18} /> Save</> : <><Edit3 size={18} /> Edit Profile</>}
+            </button>
+          </div>
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -402,6 +447,55 @@ const StudentDetail = ({ studentId, onBack }) => {
 
       {/* 4. Tab Content */}
       {renderTabContent()}
+
+      {/* 5. Message Modal */}
+      <AnimatePresence>
+        {messageOpen && (
+          <div className="app-modal" style={{ zIndex: 2000 }}>
+            <motion.div 
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setMessageOpen(false)}
+              className="app-modal__backdrop"
+              style={{ backdropFilter: 'blur(8px)' }}
+            />
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="app-panel app-modal__card"
+              style={{ maxWidth: '500px', padding: '32px' }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#f5f3ff', color: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <MessageSquare size={20} />
+                  </div>
+                  <div>
+                    <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 900 }}>Message to {student.name || student.firstName}</h3>
+                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>Sent via Email & Push Notification</p>
+                  </div>
+                </div>
+                <button onClick={() => setMessageOpen(false)} style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer' }}><X size={24} /></button>
+              </div>
+
+              <textarea 
+                value={messageText}
+                onChange={e => setMessageText(e.target.value)}
+                placeholder="Type your message here..."
+                style={{ width: '100%', height: '160px', padding: '20px', borderRadius: '20px', border: '2px solid #f1f5f9', outline: 'none', fontSize: '1rem', color: '#1e1b4b', resize: 'none', marginBottom: '24px' }}
+              />
+
+              <div style={{ display: 'flex', gap: '12px' }}>
+                <button 
+                  onClick={handleSendMessage}
+                  disabled={sendingMessage || !messageText.trim()}
+                  style={{ flex: 1, background: '#6366f1', color: '#fff', border: 'none', padding: '16px', borderRadius: '16px', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                >
+                  {sendingMessage ? 'Sending...' : <><Check size={18} /> Send Message</>}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
