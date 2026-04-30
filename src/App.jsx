@@ -13,7 +13,7 @@ import StudentDetail from './components/StudentDetail';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
-import { AlertCircle, ArrowRight, LogOut } from 'lucide-react';
+import { AlertCircle, ArrowRight, LogOut, Bell } from 'lucide-react';
 import { db, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import './components/app-shell.css';
@@ -59,6 +59,39 @@ function App() {
   });
 
   const [profile, setProfile] = useState(null);
+  const [notifications, setNotifications] = useState([]);
+  const [showNotifs, setShowNotifs] = useState(false);
+  const unreadCount = notifications.filter(n => !n.read).length;
+
+  // Real listener for notifications
+  useEffect(() => {
+    if (!user?.uid) return;
+    const setupListener = async () => {
+      const { collection, query, orderBy, limit, onSnapshot } = await import('firebase/firestore');
+      const q = query(
+        collection(db, 'users', user.uid, 'notifications'),
+        orderBy('timestamp', 'desc'),
+        limit(10)
+      );
+      return onSnapshot(q, (snap) => {
+        setNotifications(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+      });
+    };
+    
+    let unsubscribe;
+    setupListener().then(unsub => { unsubscribe = unsub; });
+    return () => unsubscribe && unsubscribe();
+  }, [user?.uid]);
+
+  const handleMarkAsRead = async () => {
+    if (!user?.uid || unreadCount === 0) return;
+    const { doc, writeBatch } = await import('firebase/firestore');
+    const batch = writeBatch(db);
+    notifications.filter(n => !n.read).forEach(n => {
+      batch.update(doc(db, 'users', user.uid, 'notifications', n.id), { read: true });
+    });
+    await batch.commit();
+  };
 
   useEffect(() => {
     if (!user?.uid) return undefined;
@@ -332,25 +365,70 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Global Mobile Top Capsule Menu - Now with intelligent hide on scroll */}
+      {/* Global Mobile Top Capsule Menu */}
       {createPortal(
-        <motion.div 
-          className="mobile-user-capsule"
-          initial={{ y: 0, opacity: 1 }}
-          animate={{ 
-            y: isVisible ? 0 : -100,
-            opacity: isVisible ? 1 : 0
-          }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
-          <div className="mobile-user-capsule__avatar">
-            <img src={avatarUrl} alt="Avatar" />
-          </div>
-          <div className="mobile-user-capsule__divider" />
-          <button onClick={logout} className="mobile-user-capsule__logout">
-            <LogOut size={20} />
-          </button>
-        </motion.div>,
+        <>
+          <motion.div 
+            className="mobile-user-capsule"
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ 
+              y: isVisible ? 0 : -100,
+              opacity: isVisible ? 1 : 0
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <div className="mobile-user-capsule__avatar" onClick={() => setActiveTab('Settings')}>
+              <img src={avatarUrl} alt="Avatar" />
+            </div>
+            
+            <div className="mobile-user-capsule__divider" />
+            
+            <button 
+              className="mobile-user-capsule__notif" 
+              onClick={() => {
+                setShowNotifs(!showNotifs);
+                if (!showNotifs) handleMarkAsRead();
+              }}
+            >
+              <Bell size={20} />
+              {unreadCount > 0 && <div className="mobile-user-capsule__badge" />}
+            </button>
+
+            <div className="mobile-user-capsule__divider" />
+            
+            <button onClick={logout} className="mobile-user-capsule__logout">
+              <LogOut size={20} />
+            </button>
+          </motion.div>
+
+          <AnimatePresence>
+            {showNotifs && (
+              <motion.div 
+                className="notif-dropdown"
+                initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              >
+                <div className="notif-header">Notifications Center</div>
+                <div className="notif-list">
+                  {notifications.length === 0 ? (
+                    <div className="notif-empty">No messages yet</div>
+                  ) : (
+                    notifications.map(n => (
+                      <div key={n.id} className={`notif-item ${!n.read ? 'notif-item--unread' : ''}`}>
+                        <div className="notif-item__title">{n.title}</div>
+                        <div className="notif-item__body">{n.body}</div>
+                        <div className="notif-item__time">
+                          {n.timestamp?.toDate ? n.timestamp.toDate().toLocaleString() : 'Just now'}
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </>,
         document.body
       )}
     </div>

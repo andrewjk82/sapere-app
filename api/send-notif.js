@@ -66,10 +66,21 @@ export default async function handler(req, res) {
       emailSent = true;
     }
 
-    // 2. Send Push Notification
+    // 2. Send Push Notification & Save to History
     let tokensFound = 0;
     if (studentId) {
-      const userDoc = await db.collection('users').doc(studentId).get();
+      const userRef = db.collection('users').doc(studentId);
+      const userDoc = await userRef.get();
+      
+      // Save to notification history subcollection
+      await userRef.collection('notifications').add({
+        title: subject,
+        body: text || 'New notification',
+        timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        read: false,
+        type: 'test_reminder'
+      });
+
       if (userDoc.exists) {
         const userData = userDoc.data();
         const tokens = userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []);
