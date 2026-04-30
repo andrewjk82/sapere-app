@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
 const Settings = () => {
@@ -135,6 +135,35 @@ const Settings = () => {
       setIsEditing(false);
     } catch (e) {
       setError('Failed to update profile.');
+      console.error(e);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleBroadcastUpdate = async () => {
+    if (!isAdmin) return;
+    try {
+      setLoading(true);
+      const versionRef = doc(db, 'system_config', 'app');
+      const snap = await getDoc(versionRef);
+      let nextVersion = '1.0.1';
+      
+      if (snap.exists()) {
+        const current = snap.data().version || '1.0.0';
+        const parts = current.split('.').map(Number);
+        parts[2] += 1; // Increment patch version
+        nextVersion = parts.join('.');
+      }
+      
+      await setDoc(versionRef, { 
+        version: nextVersion,
+        updatedAt: new Date().toISOString(),
+        updatedBy: user.email
+      });
+      setMessage(`Update broadcasted! New version: ${nextVersion}`);
+    } catch (e) {
+      setError('Failed to broadcast update.');
       console.error(e);
     } finally {
       setLoading(false);
@@ -460,6 +489,37 @@ const Settings = () => {
               </div>
             </div>
           </section>
+
+          {isAdmin && (
+            <section className="app-panel page-card" style={{ marginTop: '24px', border: '1px solid #fee2e2' }}>
+              <div className="page-card__header">
+                <h3 style={{ color: '#991b1b' }}>System Management</h3>
+                <span className="page-pill" style={{ background: '#fef2f2', color: '#991b1b' }}>Admin Only</span>
+              </div>
+              <div style={{ marginTop: '20px' }}>
+                <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '16px' }}>
+                  Push a new version update to all active users. This will trigger a notification banner on their screens.
+                </p>
+                <button 
+                  className="app-button" 
+                  onClick={handleBroadcastUpdate}
+                  disabled={loading}
+                  style={{ 
+                    width: '100%', 
+                    backgroundColor: '#991b1b', 
+                    color: '#fff',
+                    border: 'none',
+                    padding: '14px',
+                    borderRadius: '16px',
+                    fontWeight: 800,
+                    cursor: 'pointer'
+                  }}
+                >
+                  {loading ? 'Broadcasting...' : 'Broadcast App Update'}
+                </button>
+              </div>
+            </section>
+          )}
         </aside>
       </div>
 

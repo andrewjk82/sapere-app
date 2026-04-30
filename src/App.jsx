@@ -15,12 +15,33 @@ import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import { AlertCircle, ArrowRight, LogOut, Bell } from 'lucide-react';
 import { db, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot } from 'firebase/firestore';
+import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
+const CURRENT_APP_VERSION = '1.0.5';
+
 function App() {
   const { user, isAdmin, logout } = useAuth();
+  const [newVersionAvailable, setNewVersionAvailable] = useState(false);
+  
+  // Real-time Version Check
+  useEffect(() => {
+    const versionRef = doc(db, 'system_config', 'app');
+    return onSnapshot(versionRef, (snap) => {
+      if (snap.exists()) {
+        const cloudVersion = snap.data().version;
+        if (cloudVersion && cloudVersion !== CURRENT_APP_VERSION) {
+          setNewVersionAvailable(true);
+        }
+      }
+    });
+  }, []);
+
+  const handleUpdateApp = () => {
+    // Force reload and clear cache if possible
+    window.location.reload(true);
+  };
   
   // Request notification permission on login
   useEffect(() => {
@@ -297,6 +318,57 @@ function App() {
       <div className="app-shell__main">
         {renderContent()}
       </div>
+
+      {/* ── Version Update Banner ── */}
+      <AnimatePresence>
+        {newVersionAvailable && (
+          <motion.div
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 0 }}
+            style={{
+              position: 'fixed',
+              top: '24px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 9999,
+              backgroundColor: '#1e1b4b',
+              color: '#fff',
+              padding: '8px 24px',
+              borderRadius: '100px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '16px',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              width: 'max-content',
+              maxWidth: '90vw'
+            }}
+          >
+            <div style={{ width: '10px', height: '10px', backgroundColor: '#6366f1', borderRadius: '50%', boxShadow: '0 0 10px #6366f1' }} />
+            <span style={{ fontSize: '0.9rem', fontWeight: 600, whiteSpace: 'nowrap' }}>New update available!</span>
+            <button 
+              onClick={handleUpdateApp}
+              style={{
+                backgroundColor: '#6366f1',
+                color: '#fff',
+                border: 'none',
+                padding: '6px 16px',
+                borderRadius: '50px',
+                fontSize: '0.8rem',
+                fontWeight: 800,
+                cursor: 'pointer',
+                transition: 'all 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#4f46e5'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6366f1'}
+            >
+              Update Now
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <AnimatePresence>
         {isModalOpen && (
