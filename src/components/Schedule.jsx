@@ -110,7 +110,7 @@ const Schedule = () => {
     });
   }, [currentDate]);
 
-  const timeSlots = Array.from({ length: 14 }, (_, i) => i + 8); // 8 AM – 9 PM
+  const timeSlots = Array.from({ length: 17 }, (_, i) => i + 8); // 8 AM – 12 AM
   const SLOT_H = 70;
 
   const parseTime = useCallback((t) => {
@@ -253,7 +253,7 @@ const Schedule = () => {
             {timeSlots.map(h => (
               <div key={h} style={{ height: `${SLOT_H}px`, display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end', paddingRight: '12px', paddingTop: '10px' }}>
                 <span style={{ fontSize: '10px', fontWeight: 700, color: '#94a3b8' }}>
-                  {h === 12 ? '12 PM' : h > 12 ? `${h - 12} PM` : `${h} AM`}
+                  {h === 12 ? '12 PM' : h === 24 ? '12 AM' : h > 12 ? `${h - 12} PM` : `${h} AM`}
                 </span>
               </div>
             ))}
