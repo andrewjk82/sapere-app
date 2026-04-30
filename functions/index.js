@@ -28,21 +28,41 @@ exports.processEmailQueue = functions.firestore
   .document('mail/{mailId}')
   .onCreate(async (snap, context) => {
     const mailData = snap.data();
-    console.log(`Processing test email to: ${mailData.to}`);
+    const studentId = mailData.studentId;
+    console.log(`Processing test notification for student: ${studentId}`);
 
     try {
+      // 1. Send Email
       const mailOptions = {
         from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
         to: mailData.to,
         subject: mailData.message.subject,
-        html: mailData.message.html,
-        text: mailData.message.text
+        html: mailData.message.html
       };
-
       await transporter.sendMail(mailOptions);
+
+      // 2. Send Push Notification (if fcmToken exists)
+      if (studentId) {
+        const userDoc = await db.collection('users').doc(studentId).get();
+        if (userDoc.exists) {
+          const userData = userDoc.data();
+          if (userData.fcmToken) {
+            const message = {
+              notification: {
+                title: mailData.message.subject,
+                body: mailData.message.text || 'You have a new lesson update.'
+              },
+              token: userData.fcmToken
+            };
+            await admin.messaging().send(message);
+            console.log('Push notification sent successfully');
+          }
+        }
+      }
+
       return snap.ref.update({ status: 'sent', sentAt: admin.firestore.FieldValue.serverTimestamp() });
     } catch (error) {
-      console.error('Error sending test email:', error);
+      console.error('Error sending notification:', error);
       return snap.ref.update({ status: 'failed', error: error.message });
     }
   });
