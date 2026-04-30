@@ -342,7 +342,8 @@ const StudentDetail = ({ studentId, onBack }) => {
                 });
                 
                 if (response.ok) {
-                  alert('Instant notification sent! Check your email and phone.');
+                  const data = await response.json();
+                  alert(`Success! Email sent. Push tokens found: ${data.tokensFound || 0}. If 0, ask the student to refresh and allow notifications.`);
                 } else {
                   const contentType = response.headers.get("content-type");
                   if (contentType && contentType.indexOf("application/json") !== -1) {

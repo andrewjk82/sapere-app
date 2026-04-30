@@ -62,25 +62,33 @@ export default async function handler(req, res) {
           </div>
         `
       });
+      emailSent = true;
     }
 
     // 2. Send Push Notification
+    let tokensFound = 0;
     if (studentId) {
       const userDoc = await db.collection('users').doc(studentId).get();
       if (userDoc.exists) {
         const userData = userDoc.data();
         const tokens = userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []);
+        tokensFound = tokens.length;
         
         if (tokens.length > 0) {
+          console.log(`[API] Sending push to ${tokens.length} devices for student: ${studentId}`);
           await admin.messaging().sendEachForMulticast({
-            notification: { title: subject, body: text },
+            notification: { title: subject, body: text || 'New notification' },
             tokens: tokens
           });
         }
       }
     }
 
-    return res.status(200).json({ success: true });
+    return res.status(200).json({ 
+      success: true, 
+      emailSent, 
+      tokensFound 
+    });
   } catch (error) {
     console.error('API Error:', error.message);
     return res.status(500).json({ error: error.message });
