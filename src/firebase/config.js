@@ -27,11 +27,14 @@ export const requestNotificationPermission = async (userId) => {
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
       const token = await getToken(messaging, {
-        vapidKey: 'BMD-zG2M6m9-1rYx1v8W-m7_u6vH1g_Xz9fG7_hYh8' // This is a placeholder, you'll need your real VAPID key from Firebase Console
+        vapidKey: 'BKWJEPa-4K08Rcrta2QX7iYT1PBpDUlgdsUXRLpBcA6ClzltUlu-yzWm427sezrUXfnI1Wz1ux6zF_ihgZ3Zuco'
       });
       if (token) {
-        const { doc, updateDoc } = await import("firebase/firestore");
-        await updateDoc(doc(db, 'users', userId), { fcmToken: token });
+        const { doc, updateDoc, arrayUnion } = await import("firebase/firestore");
+        await updateDoc(doc(db, 'users', userId), { 
+          fcmToken: token, // Keep for backward compatibility
+          fcmTokens: arrayUnion(token) // Support multiple devices
+        });
         return token;
       }
     }
