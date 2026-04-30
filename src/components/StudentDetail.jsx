@@ -37,17 +37,9 @@ const StudentDetail = ({ studentId, onBack }) => {
   });
 
   const [editForm, setEditForm] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    level: '',
-    subject: '',
-    school: '',
-    year: '',
-    dreamJob: '',
-    address: '',
-    assignedYear: 'Year 11',
-    assignedCourse: 'Advanced'
+    name: '', email: '', phone: '', level: '', subject: '',
+    school: '', year: '', dreamJob: '', address: '',
+    assignedYear: 'Year 11', assignedCourse: 'Advanced'
   });
 
   const styles = {
@@ -58,11 +50,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     visionBoard: { borderRadius: '24px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '24px', color: 'white', overflow: 'hidden', flex: 1 }
   };
 
-  // 1. Primary Student Listener
   useEffect(() => {
     if (!studentId) return;
-    
-    // First try users collection
     const unsub = onSnapshot(doc(db, 'users', studentId), (snap) => {
       if (snap.exists()) {
         const data = snap.data();
@@ -79,22 +68,16 @@ const StudentDetail = ({ studentId, onBack }) => {
         });
         setLoading(false);
       } else {
-        // Fallback to students collection
         onSnapshot(doc(db, 'students', studentId), (mSnap) => {
           if (mSnap.exists()) {
             const mData = mSnap.data();
             setStudent({ id: mSnap.id, source: 'manual', ...mData });
             setAssignedChapters(mData.assignedChapters || []);
             setEditForm({
-              name: mData.name || '',
-              email: mData.email || '',
-              phone: mData.phone || '',
-              level: mData.level || mData.year || '',
-              subject: mData.subject || mData.school || '',
-              school: mData.school || '',
-              year: mData.year || mData.level || '',
-              dreamJob: mData.dreamJob || '',
-              address: mData.address || '',
+              name: mData.name || '', email: mData.email || '', phone: mData.phone || '',
+              level: mData.level || mData.year || '', subject: mData.subject || mData.school || '',
+              school: mData.school || '', year: mData.year || mData.level || '',
+              dreamJob: mData.dreamJob || '', address: mData.address || '',
               assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
               assignedCourse: mData.assignedCourse || 'Advanced'
             });
@@ -103,46 +86,23 @@ const StudentDetail = ({ studentId, onBack }) => {
         });
       }
     });
-
     return () => unsub();
   }, [studentId]);
 
-  // 2. Stats Listener
   useEffect(() => {
     if (!studentId || !student?.id) return;
-    
     const col = student.source === 'manual' ? 'students' : 'users';
-    const unsubStats = onSnapshot(collection(db, col, studentId, 'daily_stats'), (snap) => {
+    return onSnapshot(collection(db, col, studentId, 'daily_stats'), (snap) => {
       const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       stats.sort((a, b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
       setDailyStats(stats);
     });
-
-    return () => unsubStats();
   }, [studentId, student?.source, student?.id]);
 
-  const handleResetChallenge = async (statId) => {
-    if (!window.confirm("Reset this challenge?")) return;
+  const handleUpdateCurriculumSetting = async (f, v) => {
     try {
       const col = student.source === 'manual' ? 'students' : 'users';
-      await deleteDoc(doc(db, col, studentId, 'daily_stats', statId));
-      alert("Reset complete.");
-    } catch (e) { console.error(e); }
-  };
-
-  const handleUpdateProfile = async () => {
-    try {
-      const col = student.source === 'manual' ? 'students' : 'users';
-      await updateDoc(doc(db, col, studentId), { ...editForm, updatedAt: new Date().toISOString() });
-      setIsEditing(false);
-      alert("Updated.");
-    } catch (e) { console.error(e); }
-  };
-
-  const handleUpdateCurriculumSetting = async (field, value) => {
-    try {
-      const col = student.source === 'manual' ? 'students' : 'users';
-      await updateDoc(doc(db, col, studentId), { [field]: value });
+      await updateDoc(doc(db, col, studentId), { [f]: v });
     } catch (e) { console.error(e); }
   };
 
@@ -157,147 +117,122 @@ const StudentDetail = ({ studentId, onBack }) => {
     } catch (e) { console.error(e); }
   };
 
-  const handleImageUpload = async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    setUploading(true);
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const img = new Image();
-      img.onload = async () => {
-        const canvas = document.createElement('canvas');
-        let w = img.width, h = img.height;
-        if (w > 1200) { h *= 1200 / w; w = 1200; }
-        canvas.width = w; canvas.height = h;
-        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-        const url = canvas.toDataURL('image/jpeg', 0.7);
-        try {
-          const col = student.source === 'manual' ? 'students' : 'users';
-          await updateDoc(doc(db, col, studentId), { dreamImageUrl: url });
-          setStudent(p => ({ ...p, dreamImageUrl: url }));
-        } catch (err) { console.error(err); } finally { setUploading(false); }
-      };
-      img.src = event.target.result;
-    };
-    reader.readAsDataURL(file);
-  };
-
-  const handleBookSession = async () => {
-    if (!sessionForm.focus || !sessionForm.date) return alert("Fill fields.");
-    try {
-      setBooking(true);
-      const groupId = sessionForm.recurring ? `g_${Date.now()}` : null;
-      const weeks = sessionForm.recurring ? 8 : 1;
-      for (let i = 0; i < weeks; i++) {
-        const d = new Date(sessionForm.date);
-        d.setDate(d.getDate() + (i * 7));
-        await addDoc(collection(db, 'sessions'), {
-          studentId, studentName: student.name || 'Student',
-          date: d.toISOString().split('T')[0],
-          subject: sessionForm.focus, startTime: sessionForm.start, endTime: sessionForm.end,
-          recurring: sessionForm.recurring, groupId, status: 'Scheduled', createdAt: serverTimestamp()
-        });
-      }
-      alert("Booked.");
-      setSessionForm(p => ({ ...p, focus: '' }));
-    } catch (err) { console.error(err); } finally { setBooking(false); }
-  };
-
-  const handleSendMessage = async () => {
-    if (!messageText.trim()) return;
-    try {
-      setSendingMessage(true);
-      const res = await fetch('/api/send-notif', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ studentId, email: student.email, subject: 'Message', text: messageText })
-      });
-      if (res.ok) { alert("Sent."); setMessageText(''); setMessageOpen(false); }
-    } catch (e) { console.error(e); } finally { setSendingMessage(false); }
-  };
-
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
-  if (!student) return <div className="app-empty">Not found.</div>;
+  if (!student) return <div className="app-empty">Student not found.</div>;
 
-  const y = student.assignedYear || student.level || student.year || 'Year 11';
-  const c = student.assignedCourse || 'Advanced';
-  let chaps = CURRICULUM_DATA[y] || [];
-  if (!Array.isArray(chaps)) chaps = chaps[c] || [];
+  const currentYear = student.assignedYear || student.level || student.year || 'Year 11';
+  const currentCourse = student.assignedCourse || 'Advanced';
+  let chapters = CURRICULUM_DATA[currentYear] || [];
+  if (!Array.isArray(chapters)) chapters = chapters[currentCourse] || [];
 
   const renderTabContent = () => {
     switch (activeTab) {
       case 'curriculum':
         return (
-          <div style={styles.card} className="profile-card-mobile">
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '24px' }}>
-              <div className="section-title">CURRICULUM</div>
-              <select value={y} onChange={e => handleUpdateCurriculumSetting('assignedYear', e.target.value)}>
-                {Object.keys(CURRICULUM_DATA).map(year => <option key={year} value={year}>{year}</option>)}
-              </select>
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={styles.card} className="profile-card-mobile">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px', flexWrap: 'wrap', gap: '20px' }}>
+              <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>ASSIGN CURRICULUM</div>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center', background: '#f8fafc', padding: '8px 16px', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#64748b' }}>YEAR:</span>
+                  <select value={currentYear} onChange={e => handleUpdateCurriculumSetting('assignedYear', e.target.value)} style={{ background: 'transparent', border: 0, fontWeight: 800, color: '#6366f1', cursor: 'pointer', outline: 'none' }}>
+                    {Object.keys(CURRICULUM_DATA).map(y => <option key={y} value={y}>{y}</option>)}
+                  </select>
+                </div>
+              </div>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
-              {chaps.map(ch => (
-                <div key={ch.id} onClick={() => handleToggleChapter(ch.id)} style={{ padding: '12px', borderRadius: '12px', border: '1px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#eee', background: assignedChapters.includes(ch.id) ? '#f5f3ff' : '#fff', cursor: 'pointer' }}>
-                  <div style={{ fontWeight: 800 }}>{ch.title}</div>
-                  <div style={{ fontSize: '0.7rem', color: '#999' }}>{ch.modules} modules</div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
+              {chapters.map(ch => (
+                <div key={ch.id} onClick={() => handleToggleChapter(ch.id)} style={{ padding: '16px 20px', borderRadius: '16px', border: '2px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#f1f5f9', background: assignedChapters.includes(ch.id) ? '#f5f3ff' : 'white', display: 'flex', alignItems: 'center', gap: '16px', cursor: 'pointer', transition: 'all 0.2s' }}>
+                  <div style={{ width: '24px', height: '24px', borderRadius: '6px', border: '2px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#cbd5e1', background: assignedChapters.includes(ch.id) ? '#6366f1' : 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+                    {assignedChapters.includes(ch.id) && <Check size={14} />}
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 800, fontSize: '0.9rem', color: '#1a1c2c' }}>{ch.title}</div>
+                    <div style={{ fontSize: '0.7rem', fontWeight: 600, color: '#94a3b8' }}>{ch.modules} modules</div>
+                  </div>
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         );
       case 'schedule':
         return (
-          <div style={styles.card} className="profile-card-mobile">
-            <div className="section-title">BOOK SESSION</div>
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={styles.card} className="profile-card-mobile">
+            <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>BOOK NEW SESSION</div>
             <div className="form-grid-mobile">
-              <input type="date" value={sessionForm.date} onChange={e => setSessionForm({...sessionForm, date: e.target.value})} />
-              <input type="text" value={sessionForm.focus} onChange={e => setSessionForm({...sessionForm, focus: e.target.value})} placeholder="Focus" />
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Date</label>
+                <div className="app-input" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white' }}>
+                  <Calendar size={18} /><input type="date" value={sessionForm.date} onChange={e => setSessionForm({...sessionForm, date: e.target.value})} style={{ border: 0, padding: '14px 0', width: '100%', outline: 'none' }} />
+                </div>
+              </div>
             </div>
-            <button onClick={handleBookSession} disabled={booking} className="app-button">{booking ? '...' : 'Book'}</button>
-          </div>
+          </motion.div>
         );
       case 'challenge':
         return (
-          <div style={styles.card} className="profile-card-mobile">
-            <div className="section-title">CHALLENGE HISTORY</div>
-            {dailyStats.length === 0 ? <p>No history.</p> : dailyStats.map(s => (
-              <div key={s.id} style={{ display: 'flex', justifyContent: 'space-between', padding: '12px', background: '#f8fafc', marginBottom: '8px', borderRadius: '12px' }}>
-                <div><b>{s.id}</b> - {s.score}/{s.total} ({Math.round((s.score/s.total)*100)}%)</div>
-                <button onClick={() => handleResetChallenge(s.id)}>Reset</button>
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={styles.card} className="profile-card-mobile">
+            <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '24px', textTransform: 'uppercase' }}>CHALLENGE HISTORY</div>
+            {dailyStats.length === 0 ? (
+              <div className="app-empty" style={{ padding: '40px 0' }}>No challenge history yet.</div>
+            ) : (
+              <div style={{ display: 'grid', gap: '12px' }}>
+                {dailyStats.map(stat => (
+                  <div key={stat.id} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                      <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                        <Trophy size={20} />
+                      </div>
+                      <div>
+                        <div style={{ fontWeight: 800, color: '#1e1b4b' }}>{stat.id} Challenge</div>
+                        <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b' }}>Score: {stat.score}/{stat.total} • Accuracy: {Math.round((stat.score/stat.total)*100)}%</div>
+                      </div>
+                    </div>
+                    <button 
+                      onClick={async () => {
+                        if (!window.confirm("Reset challenge?")) return;
+                        const col = student.source === 'manual' ? 'students' : 'users';
+                        await deleteDoc(doc(db, col, studentId, 'daily_stats', stat.id));
+                        alert("Reset complete.");
+                      }}
+                      style={{ padding: '8px 16px', borderRadius: '10px', background: '#fff1f2', color: '#f43f5e', border: 'none', fontWeight: 700, fontSize: '0.75rem', cursor: 'pointer' }}
+                    >
+                      Reset
+                    </button>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            )}
+          </motion.div>
         );
       default: return null;
     }
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="student-detail-container">
-      <div style={styles.card}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <button onClick={onBack}><ChevronLeft /></button>
-          <h2>{student.name || student.firstName || 'Student'}</h2>
-        </div>
-        <div style={{ display: 'flex', gap: '8px' }}>
-          <button onClick={() => setActiveTab('schedule')}>Schedule</button>
-          <button onClick={() => setActiveTab('curriculum')}>Curriculum</button>
-          <button onClick={() => setActiveTab('challenge')}>Challenge</button>
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="student-detail-container">
+      <div style={styles.card} className="profile-card-mobile">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <button style={styles.backBtn} onClick={onBack}><ChevronLeft size={24} /></button>
+            <h1 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#1a1c2c', margin: 0 }}>{student.name || student.firstName || 'Student'}</h1>
+          </div>
+          <div style={{ display: 'flex', gap: '12px' }}>
+            <button className="app-button app-button--secondary" style={{ borderRadius: '16px' }} onClick={() => setIsEditing(!isEditing)}>
+              <Edit3 size={18} /> Edit Profile
+            </button>
+          </div>
         </div>
       </div>
+
+      <div className="nav-tabs-mobile" style={{ display: 'flex', gap: '12px', margin: '24px 0' }}>
+        <button onClick={() => setActiveTab('schedule')} className={`tab-btn-mobile`} style={{ ...styles.navBtn, ...(activeTab === 'schedule' ? styles.navBtnActive : {}) }}><Calendar size={18} /> Schedule</button>
+        <button onClick={() => setActiveTab('curriculum')} className={`tab-btn-mobile`} style={{ ...styles.navBtn, ...(activeTab === 'curriculum' ? styles.navBtnActive : {}) }}><BookOpen size={18} /> Curriculum</button>
+        <button onClick={() => setActiveTab('challenge')} className={`tab-btn-mobile`} style={{ ...styles.navBtn, ...(activeTab === 'challenge' ? styles.navBtnActive : {}) }}><Trophy size={18} /> Challenge</button>
+      </div>
+
       {renderTabContent()}
-      <AnimatePresence>
-        {messageOpen && (
-          <div className="app-modal">
-            <motion.div onClick={() => setMessageOpen(false)} className="app-modal__backdrop" />
-            <motion.div className="app-panel app-modal__card">
-              <h3>Message {student.name}</h3>
-              <textarea value={messageText} onChange={e => setMessageText(e.target.value)} />
-              <button onClick={handleSendMessage}>Send</button>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </motion.div>
   );
 };
