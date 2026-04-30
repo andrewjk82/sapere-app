@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import AvatarPickerModal from './AvatarPickerModal';
