@@ -2,13 +2,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
   Layers, GraduationCap, Star, Clock, 
-  Search, BookText, Award, Lock
+  Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X
 } from 'lucide-react';
 import { auth, db } from '../firebase/config';
-import { doc, onSnapshot } from 'firebase/firestore';
+import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc } from 'firebase/firestore';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
-import { CURRICULUM_DATA } from '../constants/curriculumData';
-import './curriculum.css';
+import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
@@ -19,15 +19,63 @@ const Curriculum = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [curriculumRecords, setCurriculumRecords] = useState([]);
+  const [isMigrating, setIsMigrating] = useState(false);
+  const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
 
+  // Fetch Curriculum from Firestore
   useEffect(() => {
-    if (!user) return;
-    
-    if (isAdmin) {
+    const q = collection(db, 'curriculum');
+    const unsub = onSnapshot(q, (snap) => {
+      setCurriculumRecords(snap.docs.map(d => ({ id: d.id, ...d.data() })));
       setLoading(false);
-      return;
+    });
+    return unsub;
+  }, []);
+
+  const handleUpdateChapters = async (newChapters) => {
+    const docId = courses 
+      ? `${selectedYear.replace(' ', '_')}_${selectedCourse}`
+      : selectedYear.replace(' ', '_');
+    
+    const docRef = doc(db, 'curriculum', docId);
+    try {
+      await setDoc(docRef, {
+        year: selectedYear,
+        course: selectedCourse || null,
+        chapters: newChapters,
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+    } catch (err) {
+      console.error("Error updating curriculum:", err);
+      alert("Failed to save changes.");
+    }
+  };
+
+  const handleDeleteChapter = async (chapterId) => {
+    if (!window.confirm("Are you sure you want to delete this chapter?")) return;
+    const newChapters = (currentRecord?.chapters || []).filter(c => c.id !== chapterId);
+    await handleUpdateChapters(newChapters);
+  };
+
+  const handleSaveChapter = async (e) => {
+    e.preventDefault();
+    const chapterData = editingChapter.chapter;
+    let newChapters = [...(currentRecord?.chapters || [])];
+
+    if (editingChapter.mode === 'add') {
+      const newId = `${selectedYear.toLowerCase().replace(' ', '')}-${Date.now()}`;
+      newChapters.push({ ...chapterData, id: newId });
+    } else {
+      newChapters = newChapters.map(c => c.id === chapterData.id ? chapterData : c);
     }
 
+    await handleUpdateChapters(newChapters);
+    setEditingChapter(null);
+  };
+
+  useEffect(() => {
+    if (!user || isAdmin) return;
     const unsub = onSnapshot(doc(db, 'users', user.uid), (snap) => {
       if (snap.exists()) {
         const data = snap.data();
@@ -35,7 +83,6 @@ const Curriculum = () => {
         if (data.assignedYear) setSelectedYear(data.assignedYear);
         if (data.assignedCourse) setSelectedCourse(data.assignedCourse);
       }
-      setLoading(false);
     });
     return unsub;
   }, [user, isAdmin]);
@@ -46,11 +93,15 @@ const Curriculum = () => {
     return null;
   }, [selectedYear]);
 
+  const currentRecord = useMemo(() => {
+    const docId = courses 
+      ? `${selectedYear.replace(' ', '_')}_${selectedCourse}`
+      : selectedYear.replace(' ', '_');
+    return curriculumRecords.find(r => r.id === docId);
+  }, [curriculumRecords, selectedYear, selectedCourse, courses]);
+
   const displayData = useMemo(() => {
-    let data = CURRICULUM_DATA[selectedYear] || [];
-    if (courses) {
-      data = data[selectedCourse] || [];
-    }
+    let data = currentRecord?.chapters || [];
     
     if (!isAdmin && profile?.assignedChapters) {
       data = data.filter(chapter => profile.assignedChapters.includes(chapter.id));
@@ -60,7 +111,7 @@ const Curriculum = () => {
     return data.filter(item => 
       item.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
-  }, [selectedYear, selectedCourse, searchQuery, courses, isAdmin, profile]);
+  }, [currentRecord, searchQuery, isAdmin, profile]);
 
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
@@ -68,21 +119,48 @@ const Curriculum = () => {
     <div className="app-page curriculum-container">
       <div className="curriculum-header-mobile">
         <div className="app-page__title">
-          <h2>{isAdmin ? 'Curriculum Management' : 'My Learning Path'}</h2>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <h2>{isAdmin ? 'Curriculum Management' : 'My Learning Path'}</h2>
+            {isAdmin && curriculumRecords.length === 0 && (
+              <button 
+                onClick={async () => {
+                  setIsMigrating(true);
+                  await migrateCurriculumToFirestore();
+                  setIsMigrating(false);
+                }}
+                disabled={isMigrating}
+                className="app-button"
+                style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a' }}
+              >
+                {isMigrating ? 'Migrating...' : '⚠️ Seed Initial Data'}
+              </button>
+            )}
+          </div>
           <p style={{ maxWidth: '600px' }}>
             {isAdmin 
               ? 'Comprehensive curriculum structure from Foundation to HSC Extension 2.' 
               : `Your personalized curriculum for ${selectedYear}${courses ? ` (${selectedCourse})` : ''}.`}
           </p>
         </div>
-        <div className="app-input" style={{ width: window.innerWidth < 768 ? '100%' : '300px' }}>
-          <Search size={18} />
-          <input 
-            type="text" 
-            placeholder="Search topics..." 
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
+        <div style={{ display: 'flex', gap: '12px', width: window.innerWidth < 768 ? '100%' : 'auto', alignItems: 'center' }}>
+          {isAdmin && (
+            <button 
+              onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
+              className="app-button app-button--primary"
+              style={{ borderRadius: '14px', whiteSpace: 'nowrap' }}
+            >
+              <Plus size={18} /> Add Chapter
+            </button>
+          )}
+          <div className="app-input" style={{ width: window.innerWidth < 768 ? '100%' : '300px' }}>
+            <Search size={18} />
+            <input 
+              type="text" 
+              placeholder="Search topics..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
       </div>
 
@@ -197,9 +275,16 @@ const Curriculum = () => {
                     <div style={{ width: '44px', height: '44px', background: '#f5f3ff', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}>
                       <BookText size={22} />
                     </div>
-                    <div style={{ background: p === 100 ? '#ecfdf5' : '#f8fafc', color: p === 100 ? '#10b981' : '#64748b', padding: '6px 12px', borderRadius: '10px', fontSize: '0.7rem', fontWeight: 800 }}>
-                      {p === 100 ? 'COMPLETED' : `${chapter.modules} MODULES`}
-                    </div>
+                    {isAdmin ? (
+                      <div style={{ display: 'flex', gap: '8px' }}>
+                        <button onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }} style={{ border: 'none', background: '#f8fafc', padding: '8px', borderRadius: '10px', color: '#64748b', cursor: 'pointer' }}><Edit2 size={16} /></button>
+                        <button onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }} style={{ border: 'none', background: '#fff1f2', padding: '8px', borderRadius: '10px', color: '#f43f5e', cursor: 'pointer' }}><Trash2 size={16} /></button>
+                      </div>
+                    ) : (
+                      <div style={{ background: p === 100 ? '#ecfdf5' : '#f8fafc', color: p === 100 ? '#10b981' : '#64748b', padding: '6px 12px', borderRadius: '10px', fontSize: '0.7rem', fontWeight: 800 }}>
+                        {p === 100 ? 'COMPLETED' : `${chapter.modules} MODULES`}
+                      </div>
+                    )}
                   </div>
 
                   <div>
@@ -227,6 +312,64 @@ const Curriculum = () => {
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {editingChapter && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setEditingChapter(null)}
+              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.4)', backdropFilter: 'blur(8px)' }}
+            />
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              style={{ position: 'relative', width: '100%', maxWidth: '440px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}
+            >
+              <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '32px', color: '#fff' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Chapter Editor</span>
+                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900 }}>{editingChapter.mode === 'add' ? 'New Chapter' : 'Edit Chapter'}</h3>
+                  </div>
+                  <button onClick={() => setEditingChapter(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                    <X size={20} />
+                  </button>
+                </div>
+              </div>
+
+              <form onSubmit={handleSaveChapter} style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div className="app-form-field">
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'block' }}>Chapter Title</label>
+                  <input 
+                    required
+                    className="app-input"
+                    value={editingChapter.chapter.title}
+                    onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, title: e.target.value } })}
+                    placeholder="e.g. Calculus: Differentiation"
+                    style={{ padding: '14px 16px', borderRadius: '14px', width: '100%', boxSizing: 'border-box' }}
+                  />
+                </div>
+                <div className="app-form-field">
+                  <label style={{ fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px', display: 'block' }}>Number of Modules</label>
+                  <input 
+                    required
+                    type="number"
+                    className="app-input"
+                    value={editingChapter.chapter.modules}
+                    onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, modules: parseInt(e.target.value) } })}
+                    style={{ padding: '14px 16px', borderRadius: '14px', width: '100%', boxSizing: 'border-box' }}
+                  />
+                </div>
+                <button type="submit" className="app-button app-button--primary" style={{ width: '100%', padding: '16px', borderRadius: '16px', fontWeight: 800, fontSize: '1rem', marginTop: '12px' }}>
+                  <Save size={18} /> Save Chapter
+                </button>
+              </form>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
