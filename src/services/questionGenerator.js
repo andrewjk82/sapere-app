@@ -162,6 +162,13 @@ const genSkipCounting = (diff) => {
   const options = getUniqueOptions(answer, distractors, 0, 100);
 
   return {
+    type: 'skip_counting',
+    question: `What is the missing number in the sequence: ${seq.join(', ')}?`,
+    options,
+    answer,
+    solution: `The pattern is skip counting by ${step}.`,
+    timeLimit: 20
+  };
 };
 
 const genTensOnes = (diff) => {
@@ -222,4 +229,26 @@ const genHundredsChart = (diff) => {
     solution: explanation,
     timeLimit: 30
   };
+};
+
+export const questionGenerator = {
+  genAddition,
+  genSubtraction,
+  genMultiplication,
+  genDivision,
+  genPlaceValue,
+  genComparison,
+  genSkipCounting,
+  genTensOnes,
+  genNumberLine,
+  genHundredsChart,
+  generateQuestion: (difficulty) => {
+    const generators = [
+      genAddition, genSubtraction, genMultiplication, genDivision,
+      genPlaceValue, genComparison, genSkipCounting, genTensOnes,
+      genNumberLine, genHundredsChart
+    ];
+    const gen = generators[Math.floor(Math.random() * generators.length)];
+    return gen(difficulty);
+  }
 };
