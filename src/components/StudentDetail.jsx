@@ -358,7 +358,6 @@ const StudentDetail = ({ studentId, onBack }) => {
           </div>
         );
       case 'schedule':
-      default:
         return (
           <div style={styles.card} className="profile-card-mobile">
             <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>BOOK NEW SESSION</div>
@@ -427,6 +426,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             )}
           </div>
         );
+      default:
+        return null;
     }
   };
 
