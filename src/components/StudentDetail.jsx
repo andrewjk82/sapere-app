@@ -344,7 +344,8 @@ const StudentDetail = ({ studentId, onBack }) => {
                 if (response.ok) {
                   alert('Instant notification sent! Check your email and phone.');
                 } else {
-                  throw new Error('Server responded with error');
+                  const errorData = await response.json();
+                  throw new Error(errorData.error || 'Server responded with error');
                 }
               } catch (e) {
                 alert('Failed to send instant test: ' + e.message);

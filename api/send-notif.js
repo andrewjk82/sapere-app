@@ -16,7 +16,12 @@ export default async function handler(req, res) {
   const { studentId, email, subject, text, html } = req.body;
 
   try {
-    // 1. Send Email (using your Gmail)
+    // Check if env vars are present
+    if (!process.env.FIREBASE_SERVICE_ACCOUNT) throw new Error('FIREBASE_SERVICE_ACCOUNT is missing in Vercel');
+    if (!process.env.EMAIL_USER) throw new Error('EMAIL_USER is missing in Vercel');
+    if (!process.env.EMAIL_PASS) throw new Error('EMAIL_PASS is missing in Vercel');
+
+    // 1. Send Email
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -25,6 +30,7 @@ export default async function handler(req, res) {
       }
     });
 
+    console.log(`Attempting to send email to: ${email}`);
     await transporter.sendMail({
       from: `"Sapere Aude" <${process.env.EMAIL_USER}>`,
       to: email,
@@ -32,23 +38,21 @@ export default async function handler(req, res) {
       html: html || text
     });
 
-    // 2. Send Push Notification (if token exists)
+    // 2. Send Push
     if (studentId) {
+      console.log(`Attempting to send push to student: ${studentId}`);
       const userDoc = await db.collection('users').doc(studentId).get();
-      if (userDoc.exists) {
-        const userData = userDoc.data();
-        if (userData.fcmToken) {
-          await admin.messaging().send({
-            notification: { title: subject, body: text },
-            token: userData.fcmToken
-          });
-        }
+      if (userDoc.exists && userDoc.data().fcmToken) {
+        await admin.messaging().send({
+          notification: { title: subject, body: text },
+          token: userDoc.data().fcmToken
+        });
       }
     }
 
     return res.status(200).json({ success: true });
   } catch (error) {
-    console.error('API Error:', error);
-    return res.status(500).json({ error: error.message });
+    console.error('Detailed API Error:', error.message);
+    return res.status(500).json({ error: error.message }); // Return the specific error message
   }
 }
