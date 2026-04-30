@@ -347,13 +347,6 @@ function App() {
               animation: 'pulse 2s infinite'
             }}
           >
-            <style>{`
-              @keyframes pulse {
-                0% { transform: translateX(-50%) scale(1); }
-                50% { transform: translateX(-50%) scale(1.05); }
-                100% { transform: translateX(-50%) scale(1); }
-              }
-            `}</style>
             <div style={{ width: '12px', height: '12px', backgroundColor: '#6366f1', borderRadius: '50%', boxShadow: '0 0 15px #6366f1' }} />
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span style={{ fontSize: '1rem', fontWeight: 900, whiteSpace: 'nowrap' }}>Update Required</span>

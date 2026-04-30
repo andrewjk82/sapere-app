@@ -15,6 +15,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import './student-detail.css';
 
 const StudentDetail = ({ studentId, onBack }) => {
+  console.log("--- StudentDetail Rendered (v1.1.0) ---");
   const [student, setStudent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
@@ -335,7 +336,10 @@ const StudentDetail = ({ studentId, onBack }) => {
             {isEditing ? (
               <input type="text" value={editForm.name} onChange={e => setEditForm({...editForm, name: e.target.value})} style={{ fontSize: '1.5rem', fontWeight: 900, color: '#1a1c2c', border: 'none', borderBottom: '2px solid #6366f1', outline: 'none', background: 'transparent' }} />
             ) : (
-              <h1 className="student-name-title">{student.name || student.firstName || 'Student'}</h1>
+            <h1 className="student-name-title">
+              {student.name || student.firstName || 'Student'} 
+              <span style={{ fontSize: '0.8rem', color: 'red', marginLeft: '10px' }}>(DEBUG: v1.1.0)</span>
+            </h1>
             )}
           </div>
           
@@ -346,20 +350,20 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '12px' }}>
+          <div style={{ display: 'flex', gap: '12px', border: '2px solid red', padding: '5px' }}>
             <button 
-              onClick={() => setMessageOpen(true)}
-              className="app-button app-button--secondary mobile-edit-btn"
-              style={{ borderRadius: '16px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
+              onClick={() => { console.log("Message btn clicked"); setMessageOpen(true); }}
+              className="app-button"
+              style={{ borderRadius: '16px', background: '#6366f1', color: 'white', padding: '10px 20px' }}
             >
-              <MessageSquare size={18} /> Send Message
+              <MessageSquare size={18} /> SEND MESSAGE
             </button>
             <button 
-              onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} 
-              className={`app-button ${isEditing ? 'app-button--primary' : 'app-button--secondary'} mobile-edit-btn`}
-              style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
+              onClick={() => setIsEditing(true)} 
+              className="app-button"
+              style={{ borderRadius: '16px', background: '#f1f5f9', color: '#1a1c2c', padding: '10px 20px' }}
             >
-              {isEditing ? <><Save size={18} /> Save</> : <><Edit3 size={18} /> Edit Profile</>}
+              <Edit3 size={18} /> EDIT
             </button>
           </div>
         </div>
