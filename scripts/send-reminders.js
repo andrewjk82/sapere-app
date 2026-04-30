@@ -87,11 +87,15 @@ async function sendEmail(session, subject, isNightBefore) {
   if (!userDoc.exists) return;
   const userData = userDoc.data();
   const prefs = userData.notifications || {};
+    
+  // Prioritize the email the student uses to login (stored in user profile)
+  const loginEmail = userData.email;
 
-  if (prefs.email && userData.email) {
+  if (prefs.email && loginEmail) {
+    console.log(`Sending reminder to login email: ${loginEmail} for student: ${userData.firstName}`);
     const mailOptions = {
       from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
-      to: userData.email,
+      to: loginEmail,
       subject: subject,
       html: `
         <div style="font-family: sans-serif; padding: 20px; color: #1a1c2c; max-width: 600px; margin: 0 auto; border: 1px solid #f0f0f0; border-radius: 16px;">
