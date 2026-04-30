@@ -319,9 +319,38 @@ const StudentDetail = ({ studentId, onBack }) => {
           </button>
         </div>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Mail size={16} style={{ color: '#6366f1' }} /> {student.email}</div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Phone size={16} style={{ color: '#6366f1' }} /> {student.phone}</div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Mail size={16} style={{ color: '#6366f1' }} /> {student.email}</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Phone size={16} style={{ color: '#6366f1' }} /> {student.phone}</div>
+          </div>
+          
+          <button 
+            onClick={async () => {
+              if (!window.confirm(`Send a test reminder email to ${student.name || 'this student'}?`)) return;
+              try {
+                await addDoc(collection(db, 'mail'), {
+                  to: student.email,
+                  message: {
+                    subject: 'Sapere Aude - Test Notification',
+                    text: 'This is a test notification from your tutor.',
+                    html: '<b>This is a test notification</b> from your tutor.'
+                  },
+                  studentId: studentId,
+                  type: 'test_notification',
+                  createdAt: serverTimestamp()
+                });
+                alert('Test email queued! (Requires Firebase Trigger Email extension)');
+              } catch (e) {
+                alert('Failed to send test: ' + e.message);
+              }
+            }}
+            className="app-button app-button--secondary"
+            style={{ padding: '8px 16px', fontSize: '0.8rem', borderRadius: '12px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
+          >
+            <Bell size={14} style={{ marginRight: '6px' }} />
+            Send Test Reminder
+          </button>
         </div>
       </div>
 
