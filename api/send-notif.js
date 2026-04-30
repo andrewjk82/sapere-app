@@ -7,6 +7,7 @@ export default async function handler(req, res) {
   }
 
   const { studentId, email, subject, text } = req.body;
+  let emailSent = false;
 
   try {
     // 0. Initialize Firebase Admin
