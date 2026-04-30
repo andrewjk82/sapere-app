@@ -14,13 +14,20 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import { AlertCircle, ArrowRight, LogOut } from 'lucide-react';
-import { db } from './firebase/config';
+import { db, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
+  
+  // Request notification permission on login
+  useEffect(() => {
+    if (user?.uid) {
+      requestNotificationPermission(user.uid);
+    }
+  }, [user?.uid]);
   const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
   const [activeTab, setActiveTab] = useState('Dashboard');
   const [selectedStudentId, setSelectedStudentId] = useState(null);
