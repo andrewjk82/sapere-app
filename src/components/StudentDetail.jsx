@@ -41,6 +41,10 @@ const StudentDetail = ({ studentId, onBack }) => {
     phone: '',
     level: '',
     subject: '',
+    school: '',
+    year: '',
+    dreamJob: '',
+    address: '',
     assignedYear: 'Year 11',
     assignedCourse: 'Advanced'
   });
@@ -83,6 +87,10 @@ const StudentDetail = ({ studentId, onBack }) => {
               phone: mData.phone || '',
               level: mData.level || mData.year || '',
               subject: mData.subject || mData.school || '',
+              school: mData.school || '',
+              year: mData.year || mData.level || '',
+              dreamJob: mData.dreamJob || '',
+              address: mData.address || '',
               assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
               assignedCourse: mData.assignedCourse || 'Advanced'
             });
@@ -99,16 +107,15 @@ const StudentDetail = ({ studentId, onBack }) => {
   const handleUpdateProfile = async () => {
     try {
       const colName = student.source === 'manual' ? 'students' : 'users';
-      const studentRef = doc(db, colName, studentId);
-      const updateData = {
+      await updateDoc(doc(db, colName, studentId), {
         ...editForm,
-        year: editForm.level,
-        school: editForm.subject
-      };
-      await updateDoc(studentRef, updateData);
+        updatedAt: new Date().toISOString()
+      });
       setIsEditing(false);
+      alert("Profile updated successfully!");
     } catch (error) {
       console.error("Update error:", error);
+      alert("Failed to update profile.");
     }
   };
 
@@ -384,27 +391,69 @@ const StudentDetail = ({ studentId, onBack }) => {
           </div>
           
           <div style={{ flex: 1 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#64748b', fontWeight: 600 }}>
-              <span>{student.school || student.subject || 'N/A'}</span>
-              <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
-            </div>
+            {isEditing ? (
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '12px' }}>
+                <div className="auth-field" style={{ marginBottom: 0 }}>
+                  <label style={{ fontSize: '0.7rem' }}>School</label>
+                  <input className="app-input" value={editForm.school || editForm.subject} onChange={e => setEditForm({...editForm, school: e.target.value, subject: e.target.value})} style={{ padding: '8px 12px', borderRadius: '10px' }} />
+                </div>
+                <div className="auth-field" style={{ marginBottom: 0 }}>
+                  <label style={{ fontSize: '0.7rem' }}>Year Level</label>
+                  <input className="app-input" value={editForm.year || editForm.level} onChange={e => setEditForm({...editForm, year: e.target.value, level: e.target.value})} style={{ padding: '8px 12px', borderRadius: '10px' }} />
+                </div>
+                <div className="auth-field" style={{ marginBottom: 0 }}>
+                  <label style={{ fontSize: '0.7rem' }}>Phone</label>
+                  <input className="app-input" value={editForm.phone} onChange={e => setEditForm({...editForm, phone: e.target.value})} style={{ padding: '8px 12px', borderRadius: '10px' }} />
+                </div>
+                <div className="auth-field" style={{ marginBottom: 0 }}>
+                  <label style={{ fontSize: '0.7rem' }}>Dream Job</label>
+                  <input className="app-input" value={editForm.dreamJob} onChange={e => setEditForm({...editForm, dreamJob: e.target.value})} style={{ padding: '8px 12px', borderRadius: '10px' }} />
+                </div>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#64748b', fontWeight: 600 }}>
+                <span>{student.school || student.subject || 'N/A'}</span>
+                <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
+              </div>
+            )}
           </div>
 
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <button 
-              onClick={() => setMessageOpen(true)}
-              className="app-button app-button--secondary"
-              style={{ borderRadius: '16px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
-            >
-              <MessageSquare size={18} /> Send Message
-            </button>
-            <button 
-              onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} 
-              className={`app-button ${isEditing ? 'app-button--primary' : 'app-button--secondary'}`}
-              style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
-            >
-              {isEditing ? <><Save size={18} /> Save</> : <><Edit3 size={18} /> Edit Profile</>}
-            </button>
+          <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+            {isEditing ? (
+              <>
+                <button 
+                  onClick={handleUpdateProfile}
+                  className="app-button app-button--primary"
+                  style={{ borderRadius: '16px', padding: '12px 24px' }}
+                >
+                  <Save size={18} /> Save Changes
+                </button>
+                <button 
+                  onClick={() => setIsEditing(false)}
+                  className="app-button app-button--secondary"
+                  style={{ borderRadius: '16px', padding: '12px 24px' }}
+                >
+                  Cancel
+                </button>
+              </>
+            ) : (
+              <>
+                <button 
+                  onClick={() => setMessageOpen(true)}
+                  className="app-button app-button--secondary"
+                  style={{ borderRadius: '16px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
+                >
+                  <MessageSquare size={18} /> Send Message
+                </button>
+                <button 
+                  onClick={() => setIsEditing(true)} 
+                  className="app-button app-button--secondary"
+                  style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
+                >
+                  <Edit3 size={18} /> Edit Profile
+                </button>
+              </>
+            )}
           </div>
         </div>
 
