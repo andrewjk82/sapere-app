@@ -9,7 +9,7 @@ import {
 import { db } from '../firebase/config';
 import { 
   doc, updateDoc, onSnapshot, collection, 
-  addDoc, serverTimestamp 
+  addDoc, serverTimestamp, getDocs, query, where, orderBy, deleteDoc
 } from 'firebase/firestore';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import './student-detail.css';
@@ -26,6 +26,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [messageOpen, setMessageOpen] = useState(false);
   const [messageText, setMessageText] = useState('');
   const [sendingMessage, setSendingMessage] = useState(false);
+  const [dailyStats, setDailyStats] = useState([]);
 
   const [sessionForm, setSessionForm] = useState({
     date: new Date().toISOString().split('T')[0],
@@ -101,8 +102,29 @@ const StudentDetail = ({ studentId, onBack }) => {
       }
     });
 
-    return () => unsubUsers();
+    // Fetch Daily Stats
+    const statsRef = collection(db, 'users', studentId, 'daily_stats');
+    const q = query(statsRef, orderBy('timestamp', 'desc'));
+    const unsubStats = onSnapshot(q, (snap) => {
+      setDailyStats(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    });
+
+    return () => {
+      unsubUsers();
+      unsubStats();
+    };
   }, [studentId]);
+
+  const handleResetChallenge = async (statId) => {
+    if (!window.confirm("Are you sure you want to reset this challenge? This will allow the student to retake it today.")) return;
+    try {
+      await deleteDoc(doc(db, 'users', studentId, 'daily_stats', statId));
+      alert("Challenge reset successfully.");
+    } catch (error) {
+      console.error("Reset error:", error);
+      alert("Failed to reset challenge.");
+    }
+  };
 
   const handleUpdateProfile = async () => {
     try {
@@ -373,6 +395,38 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
           </div>
         );
+      case 'challenge':
+        return (
+          <div style={styles.card} className="profile-card-mobile">
+            <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '24px', textTransform: 'uppercase' }}>CHALLENGE HISTORY</div>
+            
+            {dailyStats.length === 0 ? (
+              <div className="app-empty" style={{ padding: '40px 0' }}>No challenge history yet.</div>
+            ) : (
+              <div style={{ display: 'grid', gap: '12px' }}>
+                {dailyStats.map(stat => (
+                  <div key={stat.id} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                      <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                        <Trophy size={20} />
+                      </div>
+                      <div>
+                        <div style={{ fontWeight: 800, color: '#1e1b4b' }}>{stat.id} Challenge</div>
+                        <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b' }}>Score: {stat.score}/{stat.total} • Accuracy: {Math.round((stat.score/stat.total)*100)}%</div>
+                      </div>
+                    </div>
+                    <button 
+                      onClick={() => handleResetChallenge(stat.id)}
+                      style={{ padding: '8px 16px', borderRadius: '10px', background: '#fff1f2', color: '#f43f5e', border: 'none', fontWeight: 700, fontSize: '0.75rem', cursor: 'pointer' }}
+                    >
+                      Reset
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        );
     }
   };
 
@@ -535,7 +589,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       <div className="nav-tabs-mobile">
         <button onClick={() => setActiveTab('schedule')} className="tab-btn-mobile" style={{ ...styles.navBtn, ...(activeTab === 'schedule' ? styles.navBtnActive : {}) }}><Calendar size={18} /> Schedule</button>
         <button onClick={() => setActiveTab('curriculum')} className="tab-btn-mobile" style={{ ...styles.navBtn, ...(activeTab === 'curriculum' ? styles.navBtnActive : {}) }}><BookOpen size={18} /> Curriculum</button>
-        <button className="tab-btn-mobile" style={styles.navBtn}><Trophy size={18} /> Challenge</button>
+        <button onClick={() => setActiveTab('challenge')} className="tab-btn-mobile" style={{ ...styles.navBtn, ...(activeTab === 'challenge' ? styles.navBtnActive : {}) }}><Trophy size={18} /> Challenge</button>
         <button className="tab-btn-mobile" style={styles.navBtn}><MessageSquare size={18} /> Q&A</button>
       </div>
 
