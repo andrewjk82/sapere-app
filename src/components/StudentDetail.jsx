@@ -437,22 +437,13 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </button>
               </>
             ) : (
-              <>
-                <button 
-                  onClick={() => setMessageOpen(true)}
-                  className="app-button app-button--secondary"
-                  style={{ borderRadius: '16px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
-                >
-                  <MessageSquare size={18} /> Send Message
-                </button>
-                <button 
-                  onClick={() => setIsEditing(true)} 
-                  className="app-button app-button--secondary"
-                  style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
-                >
-                  <Edit3 size={18} /> Edit Profile
-                </button>
-              </>
+              <button 
+                onClick={() => setIsEditing(true)} 
+                className="app-button app-button--secondary"
+                style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
+              >
+                <Edit3 size={18} /> Edit Profile
+              </button>
             )}
           </div>
         </div>
@@ -463,45 +454,55 @@ const StudentDetail = ({ studentId, onBack }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Phone size={16} style={{ color: '#6366f1' }} /> {student.phone}</div>
           </div>
           
-          <button 
-            onClick={async () => {
-              if (!window.confirm(`Send an instant test reminder to ${student.name || 'this student'}?`)) return;
-              try {
-                const response = await fetch('/api/send-notif', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({
-                    studentId: studentId,
-                    email: student.email,
-                    subject: 'Sapere Aude - Instant Test Notification',
-                    text: 'This is a real-time test notification.',
-                    html: '<b>This is a real-time test notification</b> from your tutor.'
-                  })
-                });
-                
-                if (response.ok) {
-                  const data = await response.json();
-                  alert(`Success! Email sent. Push tokens found: ${data.tokensFound || 0}. If 0, ask the student to refresh and allow notifications.`);
-                } else {
-                  const contentType = response.headers.get("content-type");
-                  if (contentType && contentType.indexOf("application/json") !== -1) {
-                    const errorData = await response.json();
-                    throw new Error(errorData.error || 'Server responded with error');
+          <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+            <button 
+              onClick={() => setMessageOpen(true)}
+              className="app-button app-button--secondary"
+              style={{ padding: '8px 16px', fontSize: '0.8rem', borderRadius: '12px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)', fontWeight: 700 }}
+            >
+              <MessageSquare size={14} style={{ marginRight: '6px' }} />
+              Send Message
+            </button>
+            <button 
+              onClick={async () => {
+                if (!window.confirm(`Send an instant test reminder to ${student.name || 'this student'}?`)) return;
+                try {
+                  const response = await fetch('/api/send-notif', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                      studentId: studentId,
+                      email: student.email,
+                      subject: 'Sapere Aude - Instant Test Notification',
+                      text: 'This is a real-time test notification.',
+                      html: '<b>This is a real-time test notification</b> from your tutor.'
+                    })
+                  });
+                  
+                  if (response.ok) {
+                    const data = await response.json();
+                    alert(`Success! Email sent. Push tokens found: ${data.tokensFound || 0}. If 0, ask the student to refresh and allow notifications.`);
                   } else {
-                    const textError = await response.text();
-                    throw new Error(textError.substring(0, 100) || 'Server error occurred');
+                    const contentType = response.headers.get("content-type");
+                    if (contentType && contentType.indexOf("application/json") !== -1) {
+                      const errorData = await response.json();
+                      throw new Error(errorData.error || 'Server responded with error');
+                    } else {
+                      const textError = await response.text();
+                      throw new Error(textError.substring(0, 100) || 'Server error occurred');
+                    }
                   }
+                } catch (e) {
+                  alert('Failed to send instant test: ' + e.message);
                 }
-              } catch (e) {
-                alert('Failed to send instant test: ' + e.message);
-              }
-            }}
-            className="app-button app-button--secondary"
-            style={{ padding: '8px 16px', fontSize: '0.8rem', borderRadius: '12px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)' }}
-          >
-            <Bell size={14} style={{ marginRight: '6px' }} />
-            Send Test Reminder
-          </button>
+              }}
+              className="app-button app-button--secondary"
+              style={{ padding: '8px 16px', fontSize: '0.8rem', borderRadius: '12px', background: '#f5f3ff', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.2)', fontWeight: 700 }}
+            >
+              <Bell size={14} style={{ marginRight: '6px' }} />
+              Send Test Reminder
+            </button>
+          </div>
         </div>
       </div>
 
