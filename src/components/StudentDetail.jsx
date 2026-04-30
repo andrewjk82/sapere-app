@@ -325,6 +325,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Phone size={16} style={{ color: '#6366f1' }} /> {student.phone}</div>
           </div>
           
+          <button 
             onClick={async () => {
               if (!window.confirm(`Send an instant test reminder to ${student.name || 'this student'}?`)) return;
               try {

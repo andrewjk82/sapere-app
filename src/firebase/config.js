@@ -4,7 +4,6 @@ import { getFirestore } from "firebase/firestore";
 import { getMessaging, getToken } from "firebase/messaging";
 
 const firebaseConfig = {
-  // ... (keep existing)
   apiKey: "AIzaSyA0wipuWHllQjqiGdCttJ0U6N4mHZysZPk",
   authDomain: "sapere-fe23e.firebaseapp.com",
   projectId: "sapere-fe23e",
