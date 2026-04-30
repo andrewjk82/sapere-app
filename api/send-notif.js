@@ -1,58 +1,77 @@
-const admin = require('firebase-admin');
-const { EmailService } = require('../src/lib/emailService');
+import admin from 'firebase-admin';
+import nodemailer from 'nodemailer';
 
-// Initialize Firebase Admin (Using the reliable tutor-pro style)
-if (!admin.apps.length) {
-  try {
-    // Priority 1: Separate environment variables (More reliable on Vercel)
-    if (process.env.FIREBASE_PROJECT_ID || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID) {
-      admin.initializeApp({
-        credential: admin.credential.cert({
-          projectId: process.env.FIREBASE_PROJECT_ID || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-          clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-          privateKey: (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
-        }),
-      });
-    } 
-    // Priority 2: Fallback to the single JSON string
-    else if (process.env.FIREBASE_SERVICE_ACCOUNT) {
-      const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-      if (serviceAccount.private_key) {
-        serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, '\n');
-      }
-      admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount)
-      });
-    }
-
-    console.log("Firebase Admin initialized successfully.");
-  } catch (error) {
-    console.error('Firebase Admin Initialization Error:', error.message);
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
   }
-}
-
-module.exports = async (req, res) => {
-  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   const { studentId, email, subject, text } = req.body;
 
   try {
+    // 0. Initialize Firebase Admin
+    if (!admin.apps.length) {
+      const projectId = process.env.FIREBASE_PROJECT_ID || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID;
+      const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
+      const privateKey = process.env.FIREBASE_PRIVATE_KEY;
+
+      if (!projectId || !clientEmail || !privateKey) {
+        throw new Error('Missing Firebase credentials (ID, Email, or Key)');
+      }
+
+      admin.initializeApp({
+        credential: admin.credential.cert({
+          projectId,
+          clientEmail,
+          privateKey: privateKey.replace(/\\n/g, '\n'),
+        }),
+      });
+    }
+
     const db = admin.firestore();
 
-    // 1. Send Email Notification (Using the new EmailService)
-    console.log(`[API] Attempting to send email to ${email}...`);
-    const emailSent = await EmailService.sendEmail(email, subject, text);
+    // 1. Send Email (Inlined EmailService for reliability)
+    const GMAIL_USER = process.env.GMAIL_USER;
+    const GMAIL_PASS = process.env.GMAIL_PASS;
 
-    // 2. Send Push Notification (If studentId provided)
+    if (GMAIL_USER && GMAIL_PASS) {
+      const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+          user: GMAIL_USER,
+          pass: GMAIL_PASS,
+        },
+      });
+
+      await transporter.sendMail({
+        from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
+        to: email,
+        subject: subject,
+        html: `
+          <div style="font-family: sans-serif; padding: 40px; background-color: #f4f6fc;">
+            <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 24px; padding: 40px; border: 1px solid #eef2ff;">
+              <h1 style="color: #6366f1; margin-top: 0;">Sapere Aude</h1>
+              <h2 style="color: #1e293b;">${subject}</h2>
+              <p style="color: #475569; line-height: 1.6; font-size: 16px;">${text}</p>
+              <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #f1f5f9;">
+                <p style="color: #94a3b8; font-size: 12px;">© 2026 Sapere Aude Academia</p>
+              </div>
+            </div>
+          </div>
+        `
+      });
+    }
+
+    // 2. Send Push Notification
     if (studentId) {
       const userDoc = await db.collection('users').doc(studentId).get();
       if (userDoc.exists) {
         const userData = userDoc.data();
-        // Support both single fcmToken or array fcmTokens (for tutor-pro compatibility)
         const tokens = userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []);
         
         if (tokens.length > 0) {
-          console.log(`[API] Sending push to ${tokens.length} devices for student: ${studentId}`);
           await admin.messaging().sendEachForMulticast({
             notification: { title: subject, body: text },
             tokens: tokens
@@ -61,9 +80,9 @@ module.exports = async (req, res) => {
       }
     }
 
-    return res.status(200).json({ success: true, emailSent });
+    return res.status(200).json({ success: true });
   } catch (error) {
-    console.error('[API Error]:', error.message);
+    console.error('API Error:', error.message);
     return res.status(500).json({ error: error.message });
   }
-};
+}
