@@ -1175,7 +1175,7 @@
   }
 
   .app-shell__main {
-    padding: 20px;
+    padding: 70px 20px 100px 20px !important;
   }
 }
 

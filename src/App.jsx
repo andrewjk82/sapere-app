@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
@@ -27,6 +27,19 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState('login');
   
+  // Scroll tracking for mobile capsule
+  const [isVisible, setIsVisible] = useState(true);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 100) {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  });
+
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
@@ -312,9 +325,17 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Global Mobile Top Capsule Menu - Portal to Body for Absolute Visibility */}
+      {/* Global Mobile Top Capsule Menu - Now with intelligent hide on scroll */}
       {createPortal(
-        <div className="mobile-user-capsule">
+        <motion.div 
+          className="mobile-user-capsule"
+          initial={{ y: 0, opacity: 1 }}
+          animate={{ 
+            y: isVisible ? 0 : -100,
+            opacity: isVisible ? 1 : 0
+          }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+        >
           <div className="mobile-user-capsule__avatar">
             <img src={avatarUrl} alt="Avatar" />
           </div>
@@ -322,7 +343,7 @@ function App() {
           <button onClick={logout} className="mobile-user-capsule__logout">
             <LogOut size={20} />
           </button>
-        </div>,
+        </motion.div>,
         document.body
       )}
     </div>
