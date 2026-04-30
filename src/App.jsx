@@ -88,7 +88,7 @@ function App() {
   useEffect(() => {
     if (!user?.uid) return;
     const setupListener = async () => {
-      const { collection, query, orderBy, limit, onSnapshot } = await import('firebase/firestore');
+      const { collection, query, orderBy, limit } = await import('firebase/firestore');
       const q = query(
         collection(db, 'users', user.uid, 'notifications'),
         orderBy('timestamp', 'desc'),
