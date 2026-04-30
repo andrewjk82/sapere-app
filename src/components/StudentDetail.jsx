@@ -325,24 +325,28 @@ const StudentDetail = ({ studentId, onBack }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Phone size={16} style={{ color: '#6366f1' }} /> {student.phone}</div>
           </div>
           
-          <button 
             onClick={async () => {
-              if (!window.confirm(`Send a test reminder email to ${student.name || 'this student'}?`)) return;
+              if (!window.confirm(`Send an instant test reminder to ${student.name || 'this student'}?`)) return;
               try {
-                await addDoc(collection(db, 'mail'), {
-                  to: student.email,
-                  message: {
-                    subject: 'Sapere Aude - Test Notification',
-                    text: 'This is a test notification from your tutor.',
-                    html: '<b>This is a test notification</b> from your tutor.'
-                  },
-                  studentId: studentId,
-                  type: 'test_notification',
-                  createdAt: serverTimestamp()
+                const response = await fetch('/api/send-notif', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    studentId: studentId,
+                    email: student.email,
+                    subject: 'Sapere Aude - Instant Test Notification',
+                    text: 'This is a real-time test notification.',
+                    html: '<b>This is a real-time test notification</b> from your tutor.'
+                  })
                 });
-                alert('Test email queued! It will be sent automatically during the next hourly update (GitHub Actions).');
+                
+                if (response.ok) {
+                  alert('Instant notification sent! Check your email and phone.');
+                } else {
+                  throw new Error('Server responded with error');
+                }
               } catch (e) {
-                alert('Failed to queue test: ' + e.message);
+                alert('Failed to send instant test: ' + e.message);
               }
             }}
             className="app-button app-button--secondary"
