@@ -3,7 +3,6 @@ import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   try {
-    // Initialize Firebase Admin
     if (!admin.apps.length) {
       admin.initializeApp({
         credential: admin.credential.cert({
@@ -16,32 +15,24 @@ export default async function handler(req, res) {
 
     const db = admin.firestore();
     
-    // 1. Calculate time window (2 hours from now) in Sydney Time (GMT+10)
+    // 1. Calculate "Tomorrow" in Sydney Time (GMT+10)
+    // Vercel UTC -> Add 10 hours for Sydney, then add 1 day for tomorrow
     const nowUTC = new Date();
     const sydneyTime = new Date(nowUTC.getTime() + (10 * 60 * 60 * 1000));
-    const targetTime = new Date(sydneyTime.getTime() + (2 * 60 * 60 * 1000));
+    const tomorrow = new Date(sydneyTime);
+    tomorrow.setDate(sydneyTime.getDate() + 1);
     
-    const targetDateStr = targetTime.toISOString().split('T')[0];
+    const tomorrowDateStr = tomorrow.toISOString().split('T')[0];
     
-    // Convert target time to "H:MM AM/PM" format (e.g. "3:30 PM")
-    const hours = targetTime.getHours();
-    const minutes = targetTime.getMinutes();
-    const period = hours >= 12 ? 'PM' : 'AM';
-    const displayHours = hours % 12 || 12;
-    // We check for slots within a 15-min window to ensure we don't miss any due to execution timing
-    const targetTimeStr = `${displayHours}:${String(minutes < 30 ? '00' : '30').padStart(2, '0')} ${period}`;
-
-    console.log(`[Cron] Checking for sessions on ${targetDateStr} at ${targetTimeStr}`);
+    console.log(`[Daily Cron] Checking for sessions on tomorrow: ${tomorrowDateStr}`);
 
     const sessionsRef = db.collection('sessions');
     const snapshot = await sessionsRef
-      .where('date', '==', targetDateStr)
-      .where('startTime', '==', targetTimeStr)
-      .where('reminderSent', '!=', true)
+      .where('date', '==', tomorrowDateStr)
       .get();
 
     if (snapshot.empty) {
-      return res.status(200).json({ message: 'No sessions need reminders at this time.' });
+      return res.status(200).json({ message: 'No sessions tomorrow.' });
     }
 
     const transporter = nodemailer.createTransport({
@@ -64,15 +55,16 @@ export default async function handler(req, res) {
           await transporter.sendMail({
             from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
             to: studentEmail,
-            subject: `[Reminder] Your ${subject} class starts in 2 hours!`,
+            subject: `[Reminder] You have a ${subject} class tomorrow!`,
             html: `
               <div style="font-family: sans-serif; padding: 40px; background-color: #f4f6fc;">
                 <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 24px; padding: 40px; border: 1px solid #eef2ff;">
                   <h1 style="color: #6366f1; margin-top: 0;">Sapere Aude</h1>
-                  <h2 style="color: #1e293b;">Class Reminder</h2>
+                  <h2 style="color: #1e293b;">Tomorrow's Schedule</h2>
                   <p style="color: #475569; line-height: 1.6; font-size: 16px;">
-                    Hi there! This is a friendly reminder that your <b>${subject}</b> session is scheduled to start at <b>${session.startTime}</b> today.
+                    Hi! Just a friendly heads up that you have a <b>${subject}</b> session scheduled for tomorrow, <b>${tomorrowDateStr}</b> at <b>${session.startTime}</b>.
                   </p>
+                  <p style="color: #475569; line-height: 1.6; font-size: 16px;">Get some good rest and see you tomorrow!</p>
                   <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #f1f5f9;">
                     <p style="color: #94a3b8; font-size: 12px;">© 2026 Sapere Aude Academia</p>
                   </div>
@@ -85,16 +77,15 @@ export default async function handler(req, res) {
 
       if (studentId) {
         const userRef = db.collection('users').doc(studentId);
-        const userDoc = await userRef.get();
-        
         await userRef.collection('notifications').add({
-          title: "Upcoming Class Reminder",
-          body: `Your ${subject} class starts at ${session.startTime} today!`,
+          title: "Tomorrow's Class Reminder",
+          body: `You have ${subject} at ${session.startTime} tomorrow!`,
           timestamp: admin.firestore.FieldValue.serverTimestamp(),
           read: false,
-          type: 'class_reminder'
+          type: 'daily_reminder'
         });
 
+        const userDoc = await userRef.get();
         if (userDoc.exists) {
           const userData = userDoc.data();
           const tokens = userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []);
@@ -102,8 +93,8 @@ export default async function handler(req, res) {
             try {
               await admin.messaging().sendEachForMulticast({
                 notification: { 
-                  title: "Class in 2 Hours!", 
-                  body: `Don't forget: ${subject} @ ${session.startTime}` 
+                  title: "See you tomorrow!", 
+                  body: `${subject} @ ${session.startTime}` 
                 },
                 tokens: tokens
               });
@@ -111,15 +102,13 @@ export default async function handler(req, res) {
           }
         }
       }
-
-      await sessionDoc.ref.update({ reminderSent: true });
       results.push({ student: session.studentName, subject: subject });
     }
 
-    return res.status(200).json({ success: true, sentTo: results });
+    return res.status(200).json({ success: true, count: results.length });
 
   } catch (error) {
-    console.error('Cron Error:', error.message);
+    console.error('Daily Cron Error:', error.message);
     return res.status(500).json({ error: error.message });
   }
 }
