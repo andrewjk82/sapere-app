@@ -9,6 +9,7 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [activeStudent, setActiveStudent] = useState(null);
+  const [activeMenuId, setActiveMenuId] = useState(null);
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileStudent, setProfileStudent] = useState(null);
   
@@ -51,84 +52,126 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
 
       <div className="student-list-grid">
         {filteredStudents.length > 0 ? (
-          filteredStudents.map((student, index) => (
-            <motion.div 
-              key={student.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-              className="app-panel student-card"
-            >
-              <div className="student-card__top">
-                <div className="student-card__main">
-                  <div
-                    className="student-card__avatar"
-                    style={{ 
-                      width: '80px', 
-                      height: '80px', 
-                      borderRadius: '20px', 
-                      overflow: 'hidden', 
-                      background: '#f1f5f9',
-                      border: '1px solid rgba(0,0,0,0.05)'
-                    }}
-                  >
-                    <img 
-                      src={student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=200'} 
-                      alt={student.name} 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                    />
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1a1c2c', margin: '0 0 4px 0' }}>{student.name}</h3>
-                    <p className="student-card__meta" style={{ marginBottom: '12px' }}>{student.level} • {student.school || student.subject}</p>
-                    
-                    <div className="student-card__progress-wrapper" style={{ 
-                      background: 'rgba(99, 102, 241, 0.05)', 
-                      padding: '8px 16px', 
-                      borderRadius: '12px', 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      gap: '12px',
-                      border: '1px solid rgba(99, 102, 241, 0.1)'
-                    }}>
-                      <div className="student-card__progress-track" style={{ flex: 1, height: '8px', background: 'rgba(0,0,0,0.05)', borderRadius: '4px', overflow: 'hidden' }}>
-                        <div className="student-card__progress-fill" style={{ width: '54%', height: '100%', background: '#a78bfa', borderRadius: '4px' }}></div>
+          filteredStudents.map((student, index) => {
+            const isMenuOpen = activeMenuId === student.id;
+            const studentAvatar = student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.name || student.id)}`;
+            
+            return (
+              <motion.div 
+                key={student.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="app-panel student-card"
+                style={{ position: 'relative' }}
+              >
+                <div className="student-card__top">
+                  <div className="student-card__main">
+                    <div
+                      className="student-card__avatar"
+                      style={{ 
+                        width: '70px', 
+                        height: '70px', 
+                        borderRadius: '18px', 
+                        overflow: 'hidden', 
+                        background: '#f8fafc',
+                        border: '1px solid rgba(0,0,0,0.05)'
+                      }}
+                    >
+                      <img 
+                        src={studentAvatar} 
+                        alt={student.name} 
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                      />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                        <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>{student.name}</h3>
+                        <span className={`status-badge status-badge--sm ${
+                          student.status === 'Active' ? 'status-badge--active' : 'status-badge--inactive'
+                        }`} style={{ fontSize: '0.65rem', padding: '2px 8px' }}>
+                          {student.status || 'Active'}
+                        </span>
                       </div>
-                      <span style={{ fontWeight: 800, color: '#475569', fontSize: '0.9rem' }}>54%</span>
+                      <p className="student-card__meta" style={{ marginBottom: '10px', fontSize: '0.85rem' }}>{student.level} • {student.school || student.subject}</p>
+                      
+                      <div className="student-card__progress-wrapper" style={{ 
+                        background: 'rgba(99, 102, 241, 0.05)', 
+                        padding: '6px 12px', 
+                        borderRadius: '10px', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        gap: '10px',
+                        border: '1px solid rgba(99, 102, 241, 0.1)'
+                      }}>
+                        <div className="student-card__progress-track" style={{ flex: 1, height: '6px', background: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
+                          <div className="student-card__progress-fill" style={{ width: '54%', height: '100%', background: '#a78bfa', borderRadius: '3px' }}></div>
+                        </div>
+                        <span style={{ fontWeight: 800, color: '#475569', fontSize: '0.8rem' }}>54%</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <button className="app-icon-button" style={{ alignSelf: 'flex-start' }}>
-                  <MoreVertical size={20} />
-                </button>
-              </div>
-              
-              <div className="student-card__actions">
-                <div className="student-card__info">
-                  <BookOpen size={16} />
-                  <span>{student.lessons || 0} lessons completed</span>
-                </div>
-                <div className="student-card__info">
-                  <Mail size={16} />
-                  <span>Contact student</span>
-                </div>
-              </div>
+                  
+                  <div style={{ position: 'relative' }}>
+                    <button 
+                      className="app-icon-button" 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveMenuId(activeMenuId === student.id ? null : student.id);
+                      }}
+                      style={{ padding: '8px', borderRadius: '12px' }}
+                    >
+                      <MoreVertical size={20} />
+                    </button>
 
-              <div className="student-card__footer">
-                <span className={`status-badge ${
-                  student.status === 'Active' ? 'status-badge--active' : 'status-badge--inactive'
-                }`}>
-                  {student.status || 'Active'}
-                </span>
-                <button 
-                  className="app-button app-button--secondary app-button--sm"
-                  onClick={() => onSelectStudent(student.id)}
-                >
-                  View Profile
-                </button>
-              </div>
-            </motion.div>
-          ))
+                    <AnimatePresence>
+                      {isMenuOpen && (
+                        <motion.div 
+                          initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                          animate={{ opacity: 1, scale: 1, y: 0 }}
+                          exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                          style={{
+                            position: 'absolute', top: '100%', right: 0, width: '140px',
+                            background: 'white', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
+                            border: '1px solid #f1f5f9', zIndex: 10, padding: '6px', marginTop: '8px'
+                          }}
+                        >
+                          <button 
+                            onClick={() => { onSelectStudent(student.id); setActiveMenuId(null); }}
+                            style={{ width: '100%', textAlign: 'left', padding: '10px 14px', background: 'none', border: 'none', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 600, color: '#334155', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
+                          >
+                            Profile
+                          </button>
+                          <button 
+                            onClick={async () => {
+                              if (window.confirm('Delete this student?')) {
+                                await studentService.deleteStudent(student.id);
+                              }
+                              setActiveMenuId(null);
+                            }}
+                            style={{ width: '100%', textAlign: 'left', padding: '10px 14px', background: 'none', border: 'none', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 600, color: '#f43f5e', cursor: 'pointer' }}
+                          >
+                            Delete
+                          </button>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
+                
+                <div className="student-card__actions" style={{ borderTop: '1px solid #f8fafc', paddingTop: '16px', marginTop: '4px' }}>
+                  <div className="student-card__info" style={{ fontSize: '0.8rem' }}>
+                    <BookOpen size={14} />
+                    <span>{student.lessons || 0} lessons completed</span>
+                  </div>
+                  <div className="student-card__info" style={{ fontSize: '0.8rem' }}>
+                    <Mail size={14} />
+                    <span>Contact student</span>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })
         ) : (
           <div className="app-empty" style={{ gridColumn: '1 / -1' }}>
             {searchTerm ? "No students match your search." : "No students added yet. Click 'Add Student' to get started."}
