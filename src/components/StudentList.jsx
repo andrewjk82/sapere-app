@@ -54,7 +54,8 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
         {filteredStudents.length > 0 ? (
           filteredStudents.map((student, index) => {
             const isMenuOpen = activeMenuId === student.id;
-            const studentAvatar = student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.name || student.id)}`;
+            // Prioritize dreamImageUrl (photo) > avatarUrl > Dicebear fallback
+            const studentImage = student.dreamImageUrl || student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.name || student.id)}`;
             
             return (
               <motion.div 
@@ -79,7 +80,7 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
                       }}
                     >
                       <img 
-                        src={studentAvatar} 
+                        src={studentImage} 
                         alt={student.name} 
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                       />
