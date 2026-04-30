@@ -339,30 +339,39 @@ function App() {
               display: 'flex',
               alignItems: 'center',
               gap: '16px',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              backdropFilter: 'blur(12px)',
+              boxShadow: '0 0 0 100vw rgba(0,0,0,0.4), 0 20px 40px rgba(0,0,0,0.3)',
+              border: '2px solid #6366f1',
+              backdropFilter: 'blur(20px)',
               width: 'max-content',
-              maxWidth: '90vw'
+              maxWidth: '90vw',
+              animation: 'pulse 2s infinite'
             }}
           >
-            <div style={{ width: '10px', height: '10px', backgroundColor: '#6366f1', borderRadius: '50%', boxShadow: '0 0 10px #6366f1' }} />
-            <span style={{ fontSize: '0.9rem', fontWeight: 600, whiteSpace: 'nowrap' }}>New update available!</span>
+            <style>{`
+              @keyframes pulse {
+                0% { transform: translateX(-50%) scale(1); }
+                50% { transform: translateX(-50%) scale(1.05); }
+                100% { transform: translateX(-50%) scale(1); }
+              }
+            `}</style>
+            <div style={{ width: '12px', height: '12px', backgroundColor: '#6366f1', borderRadius: '50%', boxShadow: '0 0 15px #6366f1' }} />
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span style={{ fontSize: '1rem', fontWeight: 900, whiteSpace: 'nowrap' }}>Update Required</span>
+              <span style={{ fontSize: '0.7rem', opacity: 0.8 }}>New features are ready for you.</span>
+            </div>
             <button 
               onClick={handleUpdateApp}
               style={{
-                backgroundColor: '#6366f1',
-                color: '#fff',
+                backgroundColor: '#fff',
+                color: '#6366f1',
                 border: 'none',
-                padding: '6px 16px',
+                padding: '10px 24px',
                 borderRadius: '50px',
-                fontSize: '0.8rem',
-                fontWeight: 800,
+                fontSize: '0.9rem',
+                fontWeight: 900,
                 cursor: 'pointer',
-                transition: 'all 0.2s'
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#4f46e5'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6366f1'}
             >
               Update Now
             </button>
