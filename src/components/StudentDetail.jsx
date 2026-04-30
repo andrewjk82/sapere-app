@@ -340,9 +340,9 @@ const StudentDetail = ({ studentId, onBack }) => {
                   type: 'test_notification',
                   createdAt: serverTimestamp()
                 });
-                alert('Test email queued! (Requires Firebase Trigger Email extension)');
+                alert('Test email queued! It will be sent automatically during the next hourly update (GitHub Actions).');
               } catch (e) {
-                alert('Failed to send test: ' + e.message);
+                alert('Failed to queue test: ' + e.message);
               }
             }}
             className="app-button app-button--secondary"

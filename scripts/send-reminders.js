@@ -38,6 +38,33 @@ async function runTasks() {
   // 2. 2-HOUR BEFORE REMINDER (Runs every hour)
   console.log('--- Checking for lessons starting in 2 hours ---');
   await sendUpcomingReminders();
+
+  // 3. PROCESS TEST EMAILS (Runs every hour)
+  console.log('--- Processing pending test emails ---');
+  await processTestEmails();
+}
+
+async function processTestEmails() {
+  const mailSnap = await db.collection('mail')
+    .where('status', '!=', 'sent')
+    .get();
+
+  for (const doc of mailSnap.docs) {
+    const mailData = doc.data();
+    console.log(`Sending pending test email to: ${mailData.to}`);
+    
+    try {
+      await transporter.sendMail({
+        from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
+        to: mailData.to,
+        subject: mailData.message.subject,
+        html: mailData.message.html
+      });
+      await doc.ref.update({ status: 'sent', sentAt: admin.firestore.FieldValue.serverTimestamp() });
+    } catch (e) {
+      console.error('Test email failed:', e);
+    }
+  }
 }
 
 async function sendNightBeforeReminders() {
