@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { 
   ChevronLeft, Calendar, BookOpen, 
   MessageSquare, Trophy, 
-  Mail, Phone, Check, Settings, Clock
+  Mail, Phone, Check, Settings, Clock,
+  Edit3, Save
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { 
@@ -11,6 +12,7 @@ import {
   addDoc, serverTimestamp 
 } from 'firebase/firestore';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
+import './student-detail.css';
 
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
@@ -41,15 +43,8 @@ const StudentDetail = ({ studentId, onBack }) => {
   });
 
   const styles = {
-    page: { padding: '32px', display: 'flex', flexDirection: 'column', gap: '24px', maxWidth: '1200px', margin: '0 auto', width: '100%' },
     card: { padding: '32px', borderRadius: '32px', background: 'white', border: '1px solid rgba(167, 139, 250, 0.15)', boxShadow: '0 20px 50px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column' },
-    headerTop: { display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '24px' },
     backBtn: { width: '48px', height: '48px', borderRadius: '16px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white', color: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' },
-    title: { fontSize: '2.5rem', fontWeight: 900, color: '#1a1c2c', margin: 0 },
-    meta: { display: 'flex', alignItems: 'center', gap: '12px', marginTop: '8px', color: '#64748b', fontWeight: 600 },
-    contact: { display: 'flex', gap: '32px', marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)' },
-    contactItem: { display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.9rem' },
-    navGrid: { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', margin: '0' },
     navBtn: { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', padding: '20px', background: 'white', border: '2px solid rgba(167, 139, 250, 0.1)', borderRadius: '20px', color: '#64748b', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s ease' },
     navBtnActive: { borderColor: '#6366f1', color: '#6366f1', boxShadow: '0 10px 20px rgba(99, 102, 241, 0.1)' },
     visionBoard: { borderRadius: '24px', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', display: 'flex', alignItems: 'flex-end', padding: '24px', color: 'white', overflow: 'hidden', flex: 1 }
@@ -199,7 +194,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     switch (activeTab) {
       case 'curriculum':
         return (
-          <div style={styles.card}>
+          <div style={styles.card} className="profile-card-mobile">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px', flexWrap: 'wrap', gap: '20px' }}>
               <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
                 ASSIGN CURRICULUM
@@ -238,7 +233,7 @@ const StudentDetail = ({ studentId, onBack }) => {
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
               {chapters.map(ch => (
                 <div key={ch.id} onClick={() => handleToggleChapter(ch.id)} style={{ padding: '16px 20px', borderRadius: '16px', border: '2px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#f1f5f9', background: assignedChapters.includes(ch.id) ? '#f5f3ff' : 'white', display: 'flex', alignItems: 'center', gap: '16px', cursor: 'pointer', transition: 'all 0.2s' }}>
                   <div style={{ width: '24px', height: '24px', borderRadius: '6px', border: '2px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#cbd5e1', background: assignedChapters.includes(ch.id) ? '#6366f1' : 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
@@ -256,9 +251,9 @@ const StudentDetail = ({ studentId, onBack }) => {
       case 'schedule':
       default:
         return (
-          <div style={styles.card}>
+          <div style={styles.card} className="profile-card-mobile">
             <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '20px', textTransform: 'uppercase' }}>BOOK NEW SESSION</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
+            <div className="form-grid-mobile">
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: 700, fontSize: '0.8rem', color: '#64748b' }}>Date</label>
                 <div className="app-input" style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 16px', borderRadius: '14px', border: '1px solid rgba(167, 139, 250, 0.2)', background: 'white' }}>
@@ -282,12 +277,12 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </div>
               </div>
             </div>
-            <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ marginTop: '24px', display: 'flex', flexDirection: window.innerWidth < 768 ? 'column' : 'row', justifyContent: 'space-between', alignItems: window.innerWidth < 768 ? 'flex-start' : 'center', gap: '16px' }}>
               <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
                 <div onClick={() => setSessionForm({...sessionForm, recurring: !sessionForm.recurring})} style={{ width: '24px', height: '24px', border: '2px solid', borderRadius: '6px', background: sessionForm.recurring ? '#6366f1' : 'white', borderColor: sessionForm.recurring ? '#6366f1' : '#cbd5e1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{sessionForm.recurring && <Check size={14} />}</div>
                 <span style={{ fontWeight: 600, color: '#1a1c2c' }}>Recurring Weekly</span>
               </label>
-              <button onClick={handleBookSession} disabled={booking} className="app-button" style={{ background: '#1a1c2c', padding: '16px 40px', borderRadius: '16px', color: 'white', fontWeight: 800, border: 0 }}>{booking ? 'Booking...' : 'Finalize Session'}</button>
+              <button onClick={handleBookSession} disabled={booking} className="app-button" style={{ background: '#1a1c2c', padding: '16px 40px', borderRadius: '16px', color: 'white', fontWeight: 800, border: 0, width: window.innerWidth < 768 ? '100%' : 'auto' }}>{booking ? 'Booking...' : 'Finalize Session'}</button>
             </div>
           </div>
         );
@@ -295,62 +290,72 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   return (
-    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} style={styles.page}>
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="student-detail-container">
       {/* 1. Profile Header Card */}
-      <div style={styles.card}>
-        <div style={styles.headerTop}>
-          <button style={styles.backBtn} onClick={onBack}><ChevronLeft size={24} /></button>
-          <div style={{ flex: 1 }}>
+      <div style={styles.card} className="profile-card-mobile">
+        <div className="profile-header-flex">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <button style={styles.backBtn} onClick={onBack}><ChevronLeft size={24} /></button>
             {isEditing ? (
-              <input type="text" value={editForm.name} onChange={e => setEditForm({...editForm, name: e.target.value})} style={{ fontSize: '2.2rem', fontWeight: 900, color: '#1a1c2c', border: 'none', borderBottom: '2px solid #6366f1', outline: 'none', width: '100%', background: 'transparent' }} />
+              <input type="text" value={editForm.name} onChange={e => setEditForm({...editForm, name: e.target.value})} style={{ fontSize: '1.5rem', fontWeight: 900, color: '#1a1c2c', border: 'none', borderBottom: '2px solid #6366f1', outline: 'none', background: 'transparent' }} />
             ) : (
-              <h1 style={styles.title}>{student.name || student.firstName || 'Student'}</h1>
+              <h1 className="student-name-title">{student.name || student.firstName || 'Student'}</h1>
             )}
-            <div style={styles.meta}>
+          </div>
+          
+          <div style={{ flex: 1 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#64748b', fontWeight: 600 }}>
               <span>{student.school || student.subject || 'N/A'}</span>
               <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
             </div>
           </div>
-          <button onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} className="app-button app-button--secondary" style={{ borderRadius: '24px' }}>
-            {isEditing ? 'Save Profile' : 'Edit Profile'}
+
+          <button 
+            onClick={() => isEditing ? handleUpdateProfile() : setIsEditing(true)} 
+            className={`app-button ${isEditing ? 'app-button--primary' : 'app-button--secondary'} mobile-edit-btn`}
+            style={{ borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}
+          >
+            {isEditing ? <><Save size={18} /> Save</> : <><Edit3 size={18} /> Edit Profile</>}
           </button>
         </div>
-        <div style={styles.contact}>
-          <div style={styles.contactItem}><Mail size={18} style={{ color: '#6366f1' }} /> {student.email}</div>
-          <div style={styles.contactItem}><Phone size={18} style={{ color: '#6366f1' }} /> {student.phone}</div>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginTop: '24px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Mail size={16} style={{ color: '#6366f1' }} /> {student.email}</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}><Phone size={16} style={{ color: '#6366f1' }} /> {student.phone}</div>
         </div>
       </div>
 
       {/* 2. DASHBOARD PREVIEW & ACADEMIC PROGRESS */}
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: '24px' }}>
-        <div style={{ ...styles.card, height: '380px' }}>
+      <div className="stats-grid-mobile">
+        <div style={{ ...styles.card }} className="dashboard-preview-card">
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '24px' }}>DASHBOARD PREVIEW</div>
           <div style={{ ...styles.visionBoard, backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519'})` }}>
-            <button onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 20, right: 20, background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', padding: '8px 16px', borderRadius: '12px', cursor: 'pointer', zIndex: 10 }}>Change</button>
+            <button onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 20, right: 20, background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', padding: '8px 16px', borderRadius: '12px', cursor: 'pointer', zIndex: 10, fontSize: '0.8rem' }}>Change</button>
             <input type="file" ref={fileInputRef} style={{ display: 'none' }} onChange={handleImageUpload} />
           </div>
         </div>
-        <div style={{ ...styles.card, height: '380px' }}>
+        
+        <div style={{ ...styles.card }}>
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '24px' }}>ACADEMIC PROGRESS</div>
-          <div style={{ background: '#f8fafc', padding: '32px', borderRadius: '24px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div style={{ background: '#f8fafc', padding: '24px', borderRadius: '24px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px', fontWeight: 800 }}>
-              <span>Curriculum Completion</span>
-              <span style={{ color: '#6366f1', fontSize: '1.2rem' }}>{Math.round((assignedChapters.length / (chapters.length || 1)) * 100)}%</span>
+              <span style={{ fontSize: '0.9rem' }}>Curriculum Completion</span>
+              <span style={{ color: '#6366f1', fontSize: '1.1rem' }}>{Math.round((assignedChapters.length / (chapters.length || 1)) * 100)}%</span>
             </div>
-            <div style={{ height: '14px', background: '#e2e8f0', borderRadius: '7px', overflow: 'hidden' }}>
+            <div style={{ height: '12px', background: '#e2e8f0', borderRadius: '6px', overflow: 'hidden' }}>
               <div style={{ width: `${(assignedChapters.length / (chapters.length || 1)) * 100}%`, height: '100%', background: '#6366f1' }}></div>
             </div>
-            <p style={{ marginTop: '20px', fontSize: '0.9rem', color: '#64748b', fontWeight: 600 }}>Based on {assignedChapters.length} assigned chapters out of {chapters.length} available.</p>
+            <p style={{ marginTop: '16px', fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>Based on {assignedChapters.length} assigned chapters out of {chapters.length} available.</p>
           </div>
         </div>
       </div>
 
       {/* 3. Navigation Tabs */}
-      <div style={styles.navGrid}>
-        <button onClick={() => setActiveTab('schedule')} style={{ ...styles.navBtn, ...(activeTab === 'schedule' ? styles.navBtnActive : {}) }}><Calendar size={20} /> Schedule</button>
-        <button onClick={() => setActiveTab('curriculum')} style={{ ...styles.navBtn, ...(activeTab === 'curriculum' ? styles.navBtnActive : {}) }}><BookOpen size={20} /> Curriculum</button>
-        <button style={styles.navBtn}><Trophy size={20} /> Challenge</button>
-        <button style={styles.navBtn}><MessageSquare size={20} /> Q&A</button>
+      <div className="nav-tabs-mobile">
+        <button onClick={() => setActiveTab('schedule')} className="tab-btn-mobile" style={{ ...styles.navBtn, ...(activeTab === 'schedule' ? styles.navBtnActive : {}) }}><Calendar size={18} /> Schedule</button>
+        <button onClick={() => setActiveTab('curriculum')} className="tab-btn-mobile" style={{ ...styles.navBtn, ...(activeTab === 'curriculum' ? styles.navBtnActive : {}) }}><BookOpen size={18} /> Curriculum</button>
+        <button className="tab-btn-mobile" style={styles.navBtn}><Trophy size={18} /> Challenge</button>
+        <button className="tab-btn-mobile" style={styles.navBtn}><MessageSquare size={18} /> Q&A</button>
       </div>
 
       {/* 4. Tab Content */}

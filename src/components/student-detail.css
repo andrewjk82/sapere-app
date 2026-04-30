@@ -1,0 +1,114 @@
+/* Student Detail Mobile Optimized Styles */
+.student-detail-container {
+  padding: 80px 20px 40px 20px !important; /* Extra top padding for capsule */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.profile-card-mobile {
+  padding: 24px !important;
+  border-radius: 28px !important;
+  position: relative;
+}
+
+.profile-header-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .profile-header-flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.student-name-title {
+  font-size: 1.8rem !important;
+  font-weight: 900;
+  color: #1a1c2c;
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .student-name-title {
+    font-size: 2.5rem !important;
+  }
+}
+
+.stats-grid-mobile {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack on mobile */
+  gap: 20px;
+}
+
+@media (min-width: 992px) {
+  .stats-grid-mobile {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.nav-tabs-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 on mobile */
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs-mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.form-grid-mobile {
+  display: grid;
+  grid-template-columns: 1fr; /* Always stack inputs on mobile */
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .form-grid-mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.mobile-edit-btn {
+  width: 100%;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .mobile-edit-btn {
+    width: auto;
+    margin-top: 0;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+}
+
+.dashboard-preview-card {
+  height: 280px !important;
+}
+
+@media (min-width: 768px) {
+  .dashboard-preview-card {
+    height: 380px !important;
+  }
+}
+
+/* Tab Active Styles */
+.tab-btn-mobile {
+  padding: 16px !important;
+  font-size: 0.9rem !important;
+  border-radius: 18px !important;
+}
