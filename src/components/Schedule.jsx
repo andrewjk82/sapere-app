@@ -67,20 +67,6 @@ const Schedule = () => {
     });
   };
 
-  const handleSaveDetails = async () => {
-    if (!selectedSession || !isAdmin) return;
-    try {
-      await updateDoc(doc(db, 'sessions', selectedSession.id), {
-        ...editData,
-        updatedAt: new Date().toISOString()
-      });
-      setSelectedSession(null);
-    } catch (e) {
-      console.error(e);
-      alert('Failed to update.');
-    }
-  };
-
   const [deleteChoiceOpen, setDeleteChoiceOpen] = useState(null);
   const [saveChoiceOpen, setSaveChoiceOpen] = useState(null);
 
