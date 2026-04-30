@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
     const db = admin.firestore();
     const nowUTC = new Date();
-    const sydneyTime = new Date(nowUTC.getTime() + (10 * 60 * 60 * 1000)); // Sydney GMT+10
+    const sydneyTime = new Date(nowUTC.getTime() + (10 * 60 * 60 * 1000));
     
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com', port: 465, secure: true,
@@ -24,16 +24,35 @@ export default async function handler(req, res) {
 
     const logs = [];
 
-    // --- PART 1: 2-Hour Reminder (Runs every 30 mins) ---
-    const target2HrTime = new Date(sydneyTime.getTime() + (2 * 60 * 60 * 1000));
-    const date2HrStr = target2HrTime.toISOString().split('T')[0];
-    const h2 = target2HrTime.getHours();
-    const m2 = target2HrTime.getMinutes();
-    const p2 = h2 >= 12 ? 'PM' : 'AM';
-    const dh2 = h2 % 12 || 12;
-    const time2HrStr = `${dh2}:${String(m2 < 30 ? '00' : '30').padStart(2, '0')} ${p2}`;
+    // Helper to get Sydney date string (YYYY-MM-DD)
+    const getSydneyDateStr = (date) => {
+      return date.toLocaleDateString('en-CA', { timeZone: 'Australia/Sydney' });
+    };
 
-    console.log(`[Cron] Checking 2-hr reminders for ${date2HrStr} @ ${time2HrStr}`);
+    // Get current Sydney status robustly
+    const sydneyStatus = new Intl.DateTimeFormat('en-AU', { 
+      hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney' 
+    }).formatToParts(nowUTC);
+    
+    const currentHour = parseInt(sydneyStatus.find(p => p.type === 'hour').value);
+    const currentMinute = parseInt(sydneyStatus.find(p => p.type === 'minute').value);
+
+    // --- PART 1: 2-Hour Reminder ---
+    // Calculate target time (Current Sydney + 2 hours)
+    const targetTime = new Date(nowUTC.getTime() + (2 * 60 * 60 * 1000));
+    const date2HrStr = getSydneyDateStr(targetTime);
+    
+    const targetStatus = new Intl.DateTimeFormat('en-AU', { 
+      hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney' 
+    }).formatToParts(targetTime);
+    
+    const th2 = parseInt(targetStatus.find(p => p.type === 'hour').value);
+    const tm2 = parseInt(targetStatus.find(p => p.type === 'minute').value);
+    const p2 = th2 >= 12 ? 'pm' : 'am';
+    const dh2 = th2 % 12 || 12;
+    const time2HrStr = `${dh2}:${String(tm2 < 30 ? '00' : '30').padStart(2, '0')} ${p2}`;
+
+    console.log(`[Cron] Sydney: ${currentHour}:${currentMinute} | Target: ${date2HrStr} @ ${time2HrStr}`);
     
     const snap2Hr = await db.collection('sessions')
       .where('date', '==', date2HrStr)
@@ -41,22 +60,17 @@ export default async function handler(req, res) {
       .where('reminderSent', '!=', true)
       .get();
 
-    for (const doc of snap2Hr.docs) {
-      const s = doc.data();
+    for (const docSnapshot of snap2Hr.docs) {
+      const s = docSnapshot.data();
       await sendNotification(db, transporter, s, 'class_reminder', `Your ${s.subject} class starts in 2 hours!`, `Don't forget: ${s.subject} @ ${s.startTime} today!`);
-      await doc.ref.update({ reminderSent: true });
+      await docSnapshot.ref.update({ reminderSent: true });
       logs.push(`2hr reminder sent to ${s.studentName}`);
     }
 
-    // --- PART 2: Daily 8PM Reminder (Runs if current Sydney time is around 8PM) ---
-    // Since this runs at 00 and 30, it will catch the 8:00 PM or 8:30 PM slot.
-    const currentHour = sydneyTime.getHours();
-    const currentMinute = sydneyTime.getMinutes();
-    
+    // --- PART 2: Daily 8PM Reminder ---
     if (currentHour === 20 && currentMinute < 30) {
-      const tomorrow = new Date(sydneyTime);
-      tomorrow.setDate(sydneyTime.getDate() + 1);
-      const tomorrowStr = tomorrow.toISOString().split('T')[0];
+      const tomorrow = new Date(nowUTC.getTime() + (24 * 60 * 60 * 1000));
+      const tomorrowStr = getSydneyDateStr(tomorrow);
       
       console.log(`[Cron] 8PM reached. Checking tomorrow's sessions: ${tomorrowStr}`);
       
@@ -64,8 +78,8 @@ export default async function handler(req, res) {
         .where('date', '==', tomorrowStr)
         .get();
 
-      for (const doc of snapDaily.docs) {
-        const s = doc.data();
+      for (const docSnapshot of snapDaily.docs) {
+        const s = docSnapshot.data();
         await sendNotification(db, transporter, s, 'daily_reminder', `You have a ${s.subject} class tomorrow!`, `Tomorrow's Preview: ${s.subject} @ ${s.startTime}`);
         logs.push(`Daily reminder sent to ${s.studentName}`);
       }
