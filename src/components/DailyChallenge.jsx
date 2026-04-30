@@ -56,7 +56,7 @@ const DailyChallenge = ({ onBack }) => {
 
   // Timer logic
   useEffect(() => {
-    if (step !== 'quiz' || timeLeft <= 0 || selectedOption !== null) return;
+    if (step !== 'quiz' || selectedOption !== null) return;
     const timer = setInterval(() => {
       setTimeLeft(prev => {
         if (prev <= 1) {
@@ -67,7 +67,7 @@ const DailyChallenge = ({ onBack }) => {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [step, timeLeft, selectedOption]);
+  }, [step, selectedOption]); // Remove timeLeft dependency
 
   const handleAnswer = (option) => {
     if (selectedOption !== null) return;
