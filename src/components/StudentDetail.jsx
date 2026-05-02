@@ -285,40 +285,41 @@ const StudentDetail = ({ studentId, onBack }) => {
                 <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>BASIC CALCULATION</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                   <div 
-                    onClick={() => handleUpdateCurriculumSetting('calculationEnabled', !student.calculationEnabled)}
+                    onClick={() => handleUpdateCurriculumSetting('calculationEnabled', student.calculationEnabled === false)}
                     style={{ 
                       display: 'flex', 
                       alignItems: 'center', 
                       gap: '10px', 
                       cursor: 'pointer',
-                      padding: '8px 16px',
-                      borderRadius: '12px',
-                      background: student.calculationEnabled ? '#f0fdf4' : '#f1f5f9',
-                      border: `1px solid ${student.calculationEnabled ? '#dcfce7' : '#e2e8f0'}`,
+                      padding: '10px 16px',
+                      borderRadius: '16px',
+                      background: student.calculationEnabled !== false ? '#f0fdf4' : '#f8fafc',
+                      border: `2px solid ${student.calculationEnabled !== false ? '#dcfce7' : '#e2e8f0'}`,
                       transition: 'all 0.2s'
                     }}
                   >
                     <div style={{ 
-                      width: '36px', 
-                      height: '20px', 
-                      background: student.calculationEnabled ? '#22c55e' : '#cbd5e1', 
+                      width: '40px', 
+                      height: '22px', 
+                      background: student.calculationEnabled !== false ? '#10b981' : '#cbd5e1', 
                       borderRadius: '20px', 
                       position: 'relative',
                       transition: 'all 0.2s'
                     }}>
                       <div style={{ 
-                        width: '14px', 
-                        height: '14px', 
+                        width: '16px', 
+                        height: '16px', 
                         background: 'white', 
                         borderRadius: '50%', 
                         position: 'absolute', 
                         top: '3px', 
-                        left: student.calculationEnabled ? '19px' : '3px',
-                        transition: 'all 0.2s'
+                        left: student.calculationEnabled !== false ? '21px' : '3px',
+                        transition: 'all 0.2s',
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
                       }} />
                     </div>
-                    <span style={{ fontSize: '0.75rem', fontWeight: 800, color: student.calculationEnabled ? '#166534' : '#64748b' }}>
-                      {student.calculationEnabled ? 'ENABLED' : 'DISABLED'}
+                    <span style={{ fontSize: '0.8rem', fontWeight: 900, color: student.calculationEnabled !== false ? '#15803d' : '#64748b' }}>
+                      {student.calculationEnabled !== false ? 'ENABLED' : 'DISABLED'}
                     </span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#fffbeb', padding: '10px 20px', borderRadius: '30px', border: '1px solid #fef3c7', minWidth: '140px', justifyContent: 'center' }}>
