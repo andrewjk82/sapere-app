@@ -602,6 +602,36 @@ const StudentDetail = ({ studentId, onBack }) => {
                   <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Address</label>
                   <textarea value={editForm.address} onChange={e => setEditForm({...editForm, address: e.target.value})} style={{ width: '100%', height: '80px', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 700, resize: 'none' }} />
                 </div>
+                <div style={{ padding: '16px', borderRadius: '16px', background: '#f5f3ff', border: '1px solid #e0e7ff', marginBottom: '8px' }}>
+                  <div 
+                    onClick={() => setEditForm({ ...editForm, calculationEnabled: !editForm.calculationEnabled })}
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}
+                  >
+                    <div>
+                      <div style={{ fontWeight: 800, fontSize: '0.9rem', color: '#1e1b4b' }}>Calculation Practice</div>
+                      <div style={{ fontSize: '0.75rem', color: '#6366f1', fontWeight: 600 }}>Enable arithmetic module</div>
+                    </div>
+                    <div style={{ 
+                      width: '44px', 
+                      height: '24px', 
+                      background: editForm.calculationEnabled ? '#6366f1' : '#cbd5e1', 
+                      borderRadius: '20px', 
+                      position: 'relative',
+                      transition: 'all 0.2s'
+                    }}>
+                      <div style={{ 
+                        width: '20px', 
+                        height: '20px', 
+                        background: 'white', 
+                        borderRadius: '50%', 
+                        position: 'absolute', 
+                        top: '2px', 
+                        left: editForm.calculationEnabled ? '22px' : '2px',
+                        transition: 'all 0.2s'
+                      }} />
+                    </div>
+                  </div>
+                </div>
                 <button onClick={handleUpdateProfile} style={{ width: '100%', padding: '20px', borderRadius: '20px', background: '#6366f1', color: 'white', border: 0, fontWeight: 900, fontSize: '1.1rem', cursor: 'pointer', marginTop: '12px' }}>Save All Changes</button>
               </div>
             </motion.div>
