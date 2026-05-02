@@ -11,20 +11,23 @@ import Curriculum from './components/Curriculum';
 import DailyChallenge from './components/DailyChallenge';
 import Settings from './components/Settings';
 import StudentDetail from './components/StudentDetail';
+import ReportsAdmin from './components/ReportsAdmin';
+import Library from './components/Library';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
-import { AlertCircle, ArrowRight, LogOut, Bell } from 'lucide-react';
+import LeaderboardModal from './components/LeaderboardModal';
+import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, ChevronLeft, ChevronRight, Trophy } from 'lucide-react';
 import { db, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
+import { CURRENT_APP_VERSION } from './constants/appVersion';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
-
-const CURRENT_APP_VERSION = '1.1.0';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
+  const [isLocked, setIsLocked] = useState(false);
   
   // Real-time Version Check
   useEffect(() => {
@@ -55,6 +58,8 @@ function App() {
   const [selectedStudentId, setSelectedStudentId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState('login');
+  const [isCapsuleExpanded, setIsCapsuleExpanded] = useState(false);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
   
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
@@ -64,10 +69,21 @@ function App() {
     const previous = scrollY.getPrevious();
     if (latest > previous && latest > 100) {
       setIsVisible(false);
+      // Auto-close open menus when scrolling away
+      setIsCapsuleExpanded(false);
+      setShowNotifs(false);
     } else {
       setIsVisible(true);
     }
   });
+
+  // Only show mobile capsule on screens ≤1024px
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1024);
+  useEffect(() => {
+    const handleResize = () => setIsMobileView(window.innerWidth <= 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -296,9 +312,13 @@ function App() {
       case 'Schedule':
         return <Schedule />;
       case 'Challenge':
-        return <DailyChallenge onBack={() => setActiveTab('Dashboard')} />;
+        return <DailyChallenge onBack={() => setActiveTab('Dashboard')} setIsLocked={setIsLocked} />;
       case 'Curriculum':
         return <Curriculum />;
+      case 'Library':
+        return <Library />;
+      case 'Reports':
+        return <ReportsAdmin />;
       case 'Settings':
         return <Settings />;
       default:
@@ -311,13 +331,17 @@ function App() {
   };
 
   const handleTabChange = (tab) => {
+    if (isLocked) {
+      alert("Please finish your current challenge before switching tabs.");
+      return;
+    }
     setActiveTab(tab);
     setSelectedStudentId(null);
   };
 
   return (
     <div className="app-shell">
-      <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} />
+      <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />
       <div className="app-shell__main">
         {renderContent()}
       </div>
@@ -442,67 +466,162 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Global Mobile Top Capsule Menu */}
-      {createPortal(
+      <LeaderboardModal 
+        open={showLeaderboard} 
+        onClose={() => setShowLeaderboard(false)} 
+        currentUserId={user?.uid} 
+      />
+
+      {isMobileView && createPortal(
         <>
           <motion.div 
             className="mobile-user-capsule"
             initial={{ y: 0, opacity: 1 }}
             animate={{ 
-              y: isVisible ? 0 : -100,
-              opacity: isVisible ? 1 : 0
+              y: (isVisible && !isLocked) ? 0 : -100,
+              opacity: (isVisible && !isLocked) ? 1 : 0,
+              width: isCapsuleExpanded ? 'auto' : '52px'
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            style={{ 
+              display: 'flex', 
+              overflow: 'hidden',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            <div 
+              className="mobile-user-capsule__avatar" 
+              onClick={() => {
+                const nextState = !isCapsuleExpanded;
+                setIsCapsuleExpanded(nextState);
+                if (!nextState) setShowNotifs(false);
+              }}
+              style={{ cursor: 'pointer', flexShrink: 0 }}
+            >
+              <img src={avatarUrl} alt="Avatar" />
+            </div>
+
+            <AnimatePresence>
+              {isCapsuleExpanded && (
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 20 }}
+                  style={{ display: 'flex', alignItems: 'center', gap: '4px' }}
+                >
+                  <div className="mobile-user-capsule__divider" />
+
+                  <button 
+                    className="mobile-user-capsule__notif" 
+                    onClick={() => {
+                      setShowLeaderboard(true);
+                      setIsCapsuleExpanded(false);
+                    }}
+                  >
+                    <Trophy size={20} />
+                  </button>
+
+                  <div className="mobile-user-capsule__divider" />
+
+                  <button 
+                    className="mobile-user-capsule__notif" 
+                    onClick={() => {
+                      if (isLocked) {
+                        alert("Please finish your current challenge before switching tabs.");
+                        return;
+                      }
+                      setActiveTab('Settings');
+                      setIsCapsuleExpanded(false);
+                    }}
+                    style={{ opacity: isLocked ? 0.5 : 1, cursor: isLocked ? 'not-allowed' : 'pointer' }}
+                  >
+                    <SettingsIcon size={20} />
+                  </button>
+                  
+                  <div className="mobile-user-capsule__divider" />
+                  
+                  <button 
+                    className="mobile-user-capsule__notif" 
+                    onClick={() => {
+                      setShowNotifs(!showNotifs);
+                      if (!showNotifs) handleMarkAsRead();
+                    }}
+                  >
+                    <Bell size={20} />
+                    {unreadCount > 0 && <div className="mobile-user-capsule__badge" />}
+                  </button>
+
+                  <div className="mobile-user-capsule__divider" />
+                  
+                  <button 
+                    onClick={() => {
+                      if (isLocked) {
+                        alert("Please finish your current challenge before logging out.");
+                        return;
+                      }
+                      logout();
+                    }} 
+                    className="mobile-user-capsule__logout"
+                    style={{ opacity: isLocked ? 0.5 : 1, cursor: isLocked ? 'not-allowed' : 'pointer' }}
+                  >
+                    <LogOut size={20} />
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+
+          <motion.div
+            className="mobile-user-capsule__version"
+            initial={{ y: 0, opacity: 1 }}
+            animate={{
+              y: (isVisible && !isLocked) ? 0 : -100,
+              opacity: (isVisible && !isLocked) ? 1 : 0
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="mobile-user-capsule__avatar" onClick={() => setActiveTab('Settings')}>
-              <img src={avatarUrl} alt="Avatar" />
-            </div>
-            
-            <div className="mobile-user-capsule__divider" />
-            
-            <button 
-              className="mobile-user-capsule__notif" 
-              onClick={() => {
-                setShowNotifs(!showNotifs);
-                if (!showNotifs) handleMarkAsRead();
-              }}
-            >
-              <Bell size={20} />
-              {unreadCount > 0 && <div className="mobile-user-capsule__badge" />}
-            </button>
-
-            <div className="mobile-user-capsule__divider" />
-            
-            <button onClick={logout} className="mobile-user-capsule__logout">
-              <LogOut size={20} />
-            </button>
+            v{CURRENT_APP_VERSION}
           </motion.div>
 
           <AnimatePresence>
             {showNotifs && (
-              <motion.div 
-                className="notif-dropdown"
-                initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 10, scale: 0.95 }}
-              >
-                <div className="notif-header">Notifications Center</div>
-                <div className="notif-list">
-                  {notifications.length === 0 ? (
-                    <div className="notif-empty">No messages yet</div>
-                  ) : (
-                    notifications.map(n => (
-                      <div key={n.id} className={`notif-item ${!n.read ? 'notif-item--unread' : ''}`}>
-                        <div className="notif-item__title">{n.title}</div>
-                        <div className="notif-item__body">{n.body}</div>
-                        <div className="notif-item__time">
-                          {n.timestamp?.toDate ? n.timestamp.toDate().toLocaleString() : 'Just now'}
+              <>
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setShowNotifs(false)}
+                  style={{
+                    position: 'fixed',
+                    inset: 0,
+                    zIndex: 2147483645, // Just below the dropdown
+                    background: 'transparent' // Invisible but clickable
+                  }}
+                />
+                <motion.div 
+                  className="notif-dropdown"
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                >
+                  <div className="notif-header">Notifications Center</div>
+                  <div className="notif-list">
+                    {notifications.length === 0 ? (
+                      <div className="notif-empty">No messages yet</div>
+                    ) : (
+                      notifications.map(n => (
+                        <div key={n.id} className={`notif-item ${!n.read ? 'notif-item--unread' : ''}`}>
+                          <div className="notif-item__title">{n.title}</div>
+                          <div className="notif-item__body">{n.body}</div>
+                          <div className="notif-item__time">
+                            {n.timestamp?.toDate ? n.timestamp.toDate().toLocaleString() : 'Just now'}
+                          </div>
                         </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-              </motion.div>
+                      ))
+                    )}
+                  </div>
+                </motion.div>
+              </>
             )}
           </AnimatePresence>
         </>,

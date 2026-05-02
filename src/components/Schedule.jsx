@@ -12,6 +12,21 @@ const TIME_OPTIONS = [
   '7:00 PM', '7:30 PM', '8:00 PM', '8:30 PM', '9:00 PM', '9:30 PM', '10:00 PM', '10:30 PM', '11:00 PM', '11:30 PM'
 ];
 
+const SESSION_ACCENTS = ['#4f46e5', '#0891b2', '#16a34a', '#db2777', '#ea580c', '#7c3aed'];
+
+const formatDateKey = (date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+const getSessionAccent = (session) => {
+  const key = `${session.subject || ''}${session.studentName || ''}`;
+  const sum = key.split('').reduce((total, char) => total + char.charCodeAt(0), 0);
+  return SESSION_ACCENTS[sum % SESSION_ACCENTS.length];
+};
+
 const Schedule = () => {
   const { user, isAdmin } = useAuth();
   const [sessions, setSessions] = useState([]);
@@ -69,6 +84,7 @@ const Schedule = () => {
 
   const [deleteChoiceOpen, setDeleteChoiceOpen] = useState(null);
   const [saveChoiceOpen, setSaveChoiceOpen] = useState(null);
+  const [showAllAgenda, setShowAllAgenda] = useState(false);
 
   // ── Save/Update session ──────────────────────────────────────────────────
   const handleSaveDetails = async (choice = 'single') => {
@@ -171,7 +187,7 @@ const Schedule = () => {
     return h + m / 60;
   }, []);
 
-  const nowStr = new Date().toISOString().split('T')[0];
+  const nowStr = formatDateKey(new Date());
   const upcomingSessions = useMemo(() => {
     return sessions
       .filter(s => s.date >= nowStr)
@@ -181,29 +197,65 @@ const Schedule = () => {
       });
   }, [sessions, nowStr, parseTime]);
 
+  const selectedWeekSessions = useMemo(() => {
+    const weekKeys = new Set(weekDays.map(formatDateKey));
+    return sessions
+      .filter(s => weekKeys.has(s.date))
+      .sort((a, b) => {
+        if (a.date !== b.date) return a.date.localeCompare(b.date);
+        return parseTime(a.startTime) - parseTime(b.startTime);
+      });
+  }, [sessions, weekDays, parseTime]);
+
+  const todaySessions = useMemo(() => {
+    return sessions
+      .filter(s => s.date === nowStr)
+      .sort((a, b) => parseTime(a.startTime) - parseTime(b.startTime));
+  }, [sessions, nowStr, parseTime]);
+
+  const weekRangeLabel = useMemo(() => {
+    const first = weekDays[0];
+    const last = weekDays[6];
+    const sameMonth = first.getMonth() === last.getMonth();
+    const firstLabel = first.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const lastLabel = last.toLocaleDateString('en-US', { month: sameMonth ? undefined : 'short', day: 'numeric' });
+    return `${firstLabel} - ${lastLabel}`;
+  }, [weekDays]);
+
+  const nextSession = upcomingSessions[0];
+
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
   // ── Mobile Agenda List View ──
-  const ListView = () => (
-    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px', overflowY: 'auto', paddingBottom: '40px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>Upcoming Classes</h3>
-        <span style={{ fontSize: '0.85rem', color: '#6366f1', fontWeight: 700 }}>View Full Agenda</span>
+  const renderListView = () => {
+    const displayedSessions = showAllAgenda ? upcomingSessions : upcomingSessions.slice(0, 5);
+
+    return (
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '18px', overflowY: 'auto', paddingBottom: '40px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <div>
+          <p style={{ margin: '0 0 4px', fontSize: '0.75rem', color: '#64748b', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Agenda</p>
+          <h3 style={{ margin: 0, fontSize: '1.35rem', fontWeight: 900, color: '#0f172a' }}>Upcoming Classes</h3>
+        </div>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: '#4f46e5', fontWeight: 800, background: '#eef2ff', padding: '8px 10px', borderRadius: '12px' }}>
+          <List size={14} /> {upcomingSessions.length}
+        </span>
       </div>
       
       {upcomingSessions.length === 0 ? (
-        <div style={{ padding: '40px 20px', textAlign: 'center', backgroundColor: '#fff', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
+        <div style={{ padding: '44px 20px', textAlign: 'center', backgroundColor: '#fff', borderRadius: '18px', border: '1px solid #e2e8f0' }}>
           <Calendar size={40} style={{ color: '#cbd5e1', marginBottom: '12px' }} />
           <p style={{ margin: 0, color: '#64748b', fontWeight: 600 }}>No upcoming classes found.</p>
         </div>
       ) : (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-          {upcomingSessions.map((session, idx) => {
-            const isFirstOfDate = idx === 0 || upcomingSessions[idx-1].date !== session.date;
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          {displayedSessions.map((session, idx) => {
+            const isFirstOfDate = idx === 0 || displayedSessions[idx-1].date !== session.date;
+            const accent = getSessionAccent(session);
             return (
               <React.Fragment key={session.id}>
                 {isFirstOfDate && (
-                  <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginTop: idx === 0 ? 0 : '12px' }}>
+                  <div style={{ fontSize: '0.74rem', fontWeight: 900, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginTop: idx === 0 ? 0 : '12px' }}>
                     {new Date(session.date).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}
                   </div>
                 )}
@@ -214,78 +266,113 @@ const Schedule = () => {
                   onClick={() => handleOpenDetails(session)}
                   style={{ 
                     backgroundColor: '#fff', 
-                    borderRadius: '24px', 
-                    padding: '24px', 
+                    borderRadius: '18px', 
+                    padding: '18px', 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'space-between',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
-                    border: '1px solid #f1f5f9',
+                    boxShadow: '0 12px 28px rgba(15,23,42,0.06)',
+                    border: '1px solid #e2e8f0',
                     cursor: 'pointer'
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                    <div style={{ width: '4px', height: '36px', backgroundColor: '#e0e7ff', borderRadius: '2px' }} />
+                    <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: `${accent}16`, color: accent, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900 }}>
+                      {session.studentName?.charAt(0) || 'S'}
+                    </div>
                     <div>
-                      <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b' }}>{session.studentName}</div>
-                      <div style={{ fontSize: '0.9rem', color: '#94a3b8', fontWeight: 600 }}>{session.subject}</div>
+                      <div style={{ fontSize: '1.02rem', fontWeight: 900, color: '#0f172a' }}>{session.studentName}</div>
+                      <div style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 700 }}>{session.subject}</div>
                     </div>
                   </div>
                   <div style={{ 
-                    backgroundColor: '#f8fafc', 
-                    padding: '8px 16px', 
-                    borderRadius: '16px', 
+                    backgroundColor: '#f8fafc',
+                    border: '1px solid #e2e8f0',
+                    padding: '8px 10px', 
+                    borderRadius: '12px', 
                     display: 'flex', 
                     alignItems: 'center', 
-                    gap: '8px',
-                    color: '#64748b',
-                    fontSize: '0.9rem',
-                    fontWeight: 700
+                    gap: '6px',
+                    color: '#334155',
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    whiteSpace: 'nowrap'
                   }}>
                     <Clock size={16} />
-                    {session.startTime} - {session.endTime}
+                    {session.startTime}
                   </div>
                 </motion.div>
               </React.Fragment>
             );
           })}
+
+          {!showAllAgenda && upcomingSessions.length > 5 && (
+            <button 
+              onClick={() => setShowAllAgenda(true)}
+              style={{ 
+                width: '100%', 
+                padding: '16px', 
+                backgroundColor: '#f1f5f9', 
+                border: 'none', 
+                borderRadius: '16px', 
+                color: '#6366f1', 
+                fontWeight: 800, 
+                fontSize: '0.9rem', 
+                cursor: 'pointer',
+                marginTop: '12px'
+              }}
+            >
+              Show {upcomingSessions.length - 5} More Classes
+            </button>
+          )}
         </div>
       )}
     </div>
-  );
+    );
+  };
 
   // ── Desktop Calendar Grid View ──
-  const CalendarView = () => (
+  const renderCalendarView = () => (
     <div style={{ 
       flex: 1, 
       backgroundColor: '#fff', 
-      borderRadius: '24px', 
+      borderRadius: '18px', 
       border: '1px solid #e2e8f0', 
       display: 'flex', 
       flexDirection: 'column', 
       overflow: 'hidden', 
-      boxShadow: '0 4px 20px rgba(0,0,0,0.03)' 
+      boxShadow: '0 18px 45px rgba(15,23,42,0.08)' 
     }}>
       {/* Days header row */}
-      <div style={{ display: 'grid', gridTemplateColumns: '72px repeat(7, 1fr)', borderBottom: '1px solid #e2e8f0', backgroundColor: '#f8fafc', flexShrink: 0 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '76px repeat(7, 1fr)', borderBottom: '1px solid #e2e8f0', backgroundColor: '#f8fafc', flexShrink: 0 }}>
         <div style={{ borderRight: '1px solid #e2e8f0' }} />
         {weekDays.map((day, i) => {
           const isToday = day.toDateString() === new Date().toDateString();
+          const dateStr = formatDateKey(day);
+          const dayCount = sessions.filter(s => s.date === dateStr).length;
           return (
-            <div key={i} style={{ padding: '12px 0', textAlign: 'center', borderRight: i < 6 ? '1px solid #e2e8f0' : 'none', backgroundColor: isToday ? '#eef2ff' : 'transparent' }}>
+            <div key={i} style={{ padding: '14px 8px', textAlign: 'center', borderRight: i < 6 ? '1px solid #e2e8f0' : 'none', backgroundColor: isToday ? '#eef2ff' : 'transparent' }}>
               <span style={{ display: 'block', fontSize: '10px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
                 {day.toLocaleDateString('en-US', { weekday: 'short' })}
               </span>
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                width: '32px', height: '32px', borderRadius: '10px',
-                fontSize: '1rem', fontWeight: 900,
-                backgroundColor: isToday ? '#6366f1' : 'transparent',
-                color: isToday ? '#fff' : '#334155',
-                boxShadow: isToday ? '0 4px 12px rgba(99,102,241,0.3)' : 'none'
-              }}>
-                {day.getDate()}
-              </span>
+              <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                  width: '34px', height: '34px', borderRadius: '12px',
+                  fontSize: '1rem', fontWeight: 900,
+                  backgroundColor: isToday ? '#4f46e5' : '#fff',
+                  color: isToday ? '#fff' : '#334155',
+                  border: isToday ? 'none' : '1px solid #e2e8f0',
+                  boxShadow: isToday ? '0 8px 18px rgba(79,70,229,0.3)' : 'none'
+                }}>
+                  {day.getDate()}
+                </span>
+                {dayCount > 0 && (
+                  <span style={{ minWidth: '22px', height: '22px', borderRadius: '999px', background: '#e0f2fe', color: '#0369a1', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 900 }}>
+                    {dayCount}
+                  </span>
+                )}
+              </div>
             </div>
           );
         })}
@@ -293,12 +380,12 @@ const Schedule = () => {
 
       {/* Scrollable time grid */}
       <div style={{ flex: 1, overflowY: 'auto', position: 'relative' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '72px repeat(7, 1fr)', position: 'relative' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '76px repeat(7, 1fr)', position: 'relative' }}>
           {/* Hour labels */}
-          <div style={{ backgroundColor: '#f8fafc', borderRight: '1px solid #e2e8f0' }}>
+          <div style={{ backgroundColor: '#fbfdff', borderRight: '1px solid #e2e8f0' }}>
             {timeSlots.map(h => (
-              <div key={h} style={{ height: `${SLOT_H}px`, display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end', paddingRight: '12px', paddingTop: '10px' }}>
-                <span style={{ fontSize: '10px', fontWeight: 700, color: '#94a3b8' }}>
+              <div key={h} style={{ height: `${SLOT_H}px`, display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end', paddingRight: '14px', paddingTop: '10px' }}>
+                <span style={{ fontSize: '10px', fontWeight: 800, color: '#94a3b8' }}>
                   {h === 12 ? '12 PM' : h === 24 ? '12 AM' : h > 12 ? `${h - 12} PM` : `${h} AM`}
                 </span>
               </div>
@@ -306,7 +393,7 @@ const Schedule = () => {
           </div>
 
           {/* Grid background lines */}
-          <div style={{ position: 'absolute', left: '72px', right: 0, top: 0, pointerEvents: 'none', zIndex: 1 }}>
+          <div style={{ position: 'absolute', left: '76px', right: 0, top: 0, pointerEvents: 'none', zIndex: 1 }}>
             {timeSlots.map(h => (
               <div key={h} style={{ height: `${SLOT_H}px`, borderBottom: '1px solid rgba(226,232,240,0.6)' }} />
             ))}
@@ -314,34 +401,35 @@ const Schedule = () => {
 
           {/* Day columns */}
           {weekDays.map((day, di) => {
-            const dateStr = day.toISOString().split('T')[0];
+            const dateStr = formatDateKey(day);
             const daySessions = sessions.filter(s => s.date === dateStr);
             return (
-              <div key={di} style={{ position: 'relative', height: `${timeSlots.length * SLOT_H}px`, borderRight: di < 6 ? '1px solid rgba(241,245,249,0.8)' : 'none' }}>
+              <div key={di} style={{ position: 'relative', height: `${timeSlots.length * SLOT_H}px`, borderRight: di < 6 ? '1px solid rgba(241,245,249,0.9)' : 'none', background: di % 2 === 0 ? '#fff' : '#fcfdff' }}>
                 {daySessions.map(session => {
                   const start = parseTime(session.startTime);
                   const end = parseTime(session.endTime);
                   const top = (start - 8) * SLOT_H;
                   const height = Math.max((end - start) * SLOT_H - 4, 30);
+                  const accent = getSessionAccent(session);
                   return (
                     <div
                       key={session.id}
                       onClick={() => handleOpenDetails(session)}
                       style={{
                         position: 'absolute', top: `${top + 2}px`, height: `${height}px`,
-                        left: '4px', right: '4px',
-                        backgroundColor: '#eef2ff', borderLeft: '4px solid #6366f1',
-                        borderRadius: '8px', padding: '6px 8px',
+                        left: '6px', right: '6px',
+                        backgroundColor: `${accent}14`, borderLeft: `4px solid ${accent}`,
+                        borderRadius: '10px', padding: '8px 9px',
                         cursor: 'pointer', zIndex: 5, overflow: 'hidden',
-                        boxShadow: '0 4px 10px rgba(99,102,241,0.1)',
+                        boxShadow: '0 10px 22px rgba(15,23,42,0.08)',
                         transition: 'transform 0.2s'
                       }}
                       onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                       onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                     >
-                      <div style={{ fontSize: '10px', fontWeight: 900, color: '#4f46e5', textTransform: 'uppercase', marginBottom: '2px' }}>{session.subject}</div>
-                      <div style={{ fontSize: '11px', fontWeight: 800, color: '#1e1b4b' }}>{session.studentName}</div>
-                      <div style={{ fontSize: '9px', color: '#6366f1', marginTop: '4px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <div style={{ fontSize: '10px', fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{session.subject}</div>
+                      <div style={{ fontSize: '12px', fontWeight: 900, color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{session.studentName}</div>
+                      <div style={{ fontSize: '9px', color: '#475569', marginTop: '5px', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 800 }}>
                         <Clock size={10} />{session.startTime}
                       </div>
                     </div>
@@ -356,41 +444,57 @@ const Schedule = () => {
   );
 
   return (
-    <div style={{ 
-      height: 'calc(100vh - 80px)', 
-      display: 'flex', 
-      flexDirection: 'column', 
-      padding: isMobile ? '24px 20px' : '28px 32px', 
-      backgroundColor: '#f8fafc', 
-      boxSizing: 'border-box', 
-      gap: '20px' 
-    }}>
+    <div className="app-page" style={{ height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column' }}>
 
       {/* ── Header ── */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexShrink: 0 }}>
-        <div>
-          <h2 style={{ margin: 0, fontSize: isMobile ? '1.6rem' : '2rem', fontWeight: 900, color: '#0f172a' }}>
-            Schedule
-          </h2>
-          {!isMobile && <p style={{ margin: '4px 0 0', color: '#64748b', fontSize: '0.95rem' }}>{isAdmin ? 'Keep track of all your upcoming tutoring sessions.' : 'Manage your learning journey.'}</p>}
+      <div className="app-page__header" style={{ marginBottom: '24px' }}>
+        <div className="app-page__title">
+          <p style={{ margin: '0 0 6px', fontSize: '0.75rem', color: '#64748b', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            {weekRangeLabel}
+          </p>
+          <h2>Schedule</h2>
+          {!isMobile && (
+            <p style={{ margin: '12px 0 0', color: '#64748b', fontSize: '0.95rem', fontWeight: 600 }}>
+              {nextSession ? `Next: ${nextSession.studentName} at ${nextSession.startTime}` : (isAdmin ? 'No upcoming tutoring sessions yet.' : 'No upcoming lessons yet.')}
+            </p>
+          )}
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#fff', padding: '6px', borderRadius: '14px', border: '1px solid #e2e8f0', boxShadow: '0 2px 6px rgba(0,0,0,0.02)' }}>
+
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
+          {!isMobile && (
+            <>
+              <div style={{ minWidth: '132px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '16px', boxShadow: '0 12px 30px rgba(15,23,42,0.05)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#0891b2', marginBottom: '8px' }}>
+                  <List size={17} />
+                  <span style={{ fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em' }}>This Week</span>
+                </div>
+                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#0f172a' }}>{selectedWeekSessions.length}</div>
+              </div>
+              <div style={{ minWidth: '132px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '16px', boxShadow: '0 12px 30px rgba(15,23,42,0.05)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#16a34a', marginBottom: '8px' }}>
+                  <CheckCircle2 size={17} />
+                  <span style={{ fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Today</span>
+                </div>
+                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#0f172a' }}>{todaySessions.length}</div>
+              </div>
+            </>
+          )}
+          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#fff', padding: '8px', borderRadius: '18px', border: '1px solid #e2e8f0', boxShadow: '0 12px 30px rgba(15,23,42,0.05)', height: isMobile ? '48px' : 'auto' }}>
             <button
               onClick={() => { const d = new Date(currentDate); d.setDate(d.getDate() - (isMobile ? 1 : 7)); setCurrentDate(d); }}
-              style={{ background: 'transparent', border: 'none', padding: '6px', cursor: 'pointer', borderRadius: '10px', color: '#64748b' }}
+              style={{ background: '#f8fafc', border: 'none', padding: '8px', cursor: 'pointer', borderRadius: '12px', color: '#475569', display: 'flex', alignItems: 'center' }}
             >
               <ChevronLeft size={20} />
             </button>
             <button
               onClick={() => setCurrentDate(new Date())}
-              style={{ background: 'transparent', border: 'none', padding: '0 12px', cursor: 'pointer', fontWeight: 800, color: '#334155', fontSize: '0.9rem' }}
+              style={{ background: 'transparent', border: 'none', padding: '0 14px', cursor: 'pointer', fontWeight: 900, color: '#334155', fontSize: '0.9rem' }}
             >
               Today
             </button>
             <button
               onClick={() => { const d = new Date(currentDate); d.setDate(d.getDate() + (isMobile ? 1 : 7)); setCurrentDate(d); }}
-              style={{ background: 'transparent', border: 'none', padding: '6px', cursor: 'pointer', borderRadius: '10px', color: '#64748b' }}
+              style={{ background: '#f8fafc', border: 'none', padding: '8px', cursor: 'pointer', borderRadius: '12px', color: '#475569', display: 'flex', alignItems: 'center' }}
             >
               <ChevronRight size={20} />
             </button>
@@ -399,7 +503,7 @@ const Schedule = () => {
       </div>
 
       {/* ── View Switcher ── */}
-      {isMobile ? <ListView /> : <CalendarView />}
+      {isMobile ? renderListView() : renderCalendarView()}
 
       {/* ── Session Detail Modal ── */}
       <AnimatePresence>

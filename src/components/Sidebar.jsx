@@ -7,28 +7,69 @@ import {
   Settings, 
   LogOut,
   ShieldCheck,
-  Trophy
+  Trophy,
+  Inbox,
+  BookMarked
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, collection, query, where } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
+import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
-const SidebarItem = ({ icon: Icon, label, active, onClick }) => (
+const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) => (
   <button 
-    onClick={onClick}
-    className={`app-sidebar__item ${active ? 'is-active' : ''}`}
+    onClick={disabled ? undefined : onClick}
+    className={`app-sidebar__item ${active ? 'is-active' : ''} ${disabled ? 'is-disabled' : ''}`}
+    style={{ 
+      opacity: disabled ? 0.5 : 1, 
+      cursor: disabled ? 'not-allowed' : 'pointer',
+      pointerEvents: disabled ? 'none' : 'auto',
+      position: 'relative'
+    }}
   >
-    <Icon size={20} />
-    <span>{label}</span>
+    <div className="app-sidebar__item-inner">
+      <Icon size={20} />
+      <span>{label}</span>
+    </div>
+    {badge > 0 && (
+      <span style={{
+        background: '#ef4444',
+        color: 'white',
+        fontSize: '0.75rem',
+        fontWeight: 'bold',
+        padding: '2px 8px',
+        borderRadius: '12px',
+        marginLeft: 'auto'
+      }}>
+        {badge}
+      </span>
+    )}
   </button>
 );
 
-const Sidebar = ({ activeTab, setActiveTab }) => {
+const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
   const { user, isAdmin, logout } = useAuth();
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [profile, setProfile] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+  const [reportCount, setReportCount] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (!isAdmin) return;
+    const q = query(collection(db, 'reports'), where('status', '==', 'open'));
+    const unsub = onSnapshot(q, (snap) => {
+      setReportCount(snap.size);
+    });
+    return unsub;
+  }, [isAdmin]);
 
   useEffect(() => {
     if (!user?.uid) return undefined;
@@ -63,35 +104,42 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
       </motion.div>
 
       <nav className="app-sidebar__nav">
-        <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} />
+        <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} disabled={isLocked} />
         {isAdmin && (
-          <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} />
+          <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} disabled={isLocked} />
         )}
-        <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} />
+        <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} disabled={isLocked} />
         {!isAdmin && (
-          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} />
+          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
         )}
-        <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} />
-        <SidebarItem icon={Settings} label="Settings" active={activeTab === 'Settings'} onClick={() => setActiveTab('Settings')} />
+        {isAdmin && (
+          <SidebarItem icon={Inbox} label="Reports" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount} />
+        )}
+        <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} />
+        <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} />
       </nav>
 
-      <div className="app-sidebar__footer">
-        <div className="app-panel app-sidebar__profile" style={{ padding: '12px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
-            <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0} style={{ width: '42px', height: '42px' }}>
-              <img src={avatarUrl} alt="Avatar" />
+      {/* Only render footer on desktop — on mobile the capsule in App.jsx handles avatar/logout */}
+      {!isMobile && (
+        <div className="app-sidebar__footer">
+          <div className="app-panel app-sidebar__profile" style={{ padding: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+              <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0} style={{ width: '42px', height: '42px' }}>
+                <img src={avatarUrl} alt="Avatar" />
+              </div>
+              <button 
+                onClick={logout}
+                className="app-icon-button"
+                style={{ width: '42px', height: '42px', borderRadius: '12px' }}
+                title="Sign Out"
+              >
+                <LogOut size={18} />
+              </button>
             </div>
-            <button 
-              onClick={logout}
-              className="app-icon-button"
-              style={{ width: '42px', height: '42px', borderRadius: '12px' }}
-              title="Sign Out"
-            >
-              <LogOut size={18} />
-            </button>
           </div>
+          <div className="app-sidebar__version">v{CURRENT_APP_VERSION}</div>
         </div>
-      </div>
+      )}
 
       <AvatarPickerModal
         open={avatarOpen}

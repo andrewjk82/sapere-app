@@ -1,6 +1,6 @@
 /* Student Detail Mobile Optimized Styles */
 .student-detail-container {
-  padding: 80px 20px 40px 20px !important; /* Extra top padding for capsule */
+  padding: 80px 0 40px 0 !important; /* No horizontal padding */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -11,8 +11,19 @@
 
 .profile-card-mobile {
   padding: 24px !important;
-  border-radius: 28px !important;
+  border-radius: 0 !important; /* Full width boxes */
+  border-left: none !important;
+  border-right: none !important;
   position: relative;
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .profile-card-mobile {
+    border-radius: 28px !important;
+    border: 1px solid rgba(167, 139, 250, 0.15) !important;
+    padding: 32px !important;
+  }
 }
 
 .profile-header-flex {
@@ -94,7 +105,16 @@
 }
 
 .dashboard-preview-card {
-  height: 280px !important;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-preview-card .section-title {
+  padding: 24px 24px 0 24px;
 }
 
 @media (min-width: 768px) {

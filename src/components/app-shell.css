@@ -96,6 +96,13 @@
   font-weight: 600;
 }
 
+.app-sidebar__item-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
 .app-sidebar__footer {
   margin-top: auto;
   display: flex;
@@ -727,10 +734,29 @@
 
 .app-shell__main {
   flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 0; /* Default to 0 for mobile */
+  padding: 32px 40px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.no-top-padding-mobile {
+  gap: 0 !important;
+}
+
+@media (max-width: 920px) {
+  .no-top-padding-mobile {
+    margin-top: -70px !important;
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .no-top-padding-mobile {
+    margin-top: -10px !important;
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1149,7 +1175,7 @@
 
   .app-sidebar__nav {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 
   .app-sidebar__item {
@@ -1161,7 +1187,13 @@
   }
 
   .app-sidebar__item span {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .app-sidebar__item-inner {
+    flex-direction: column !important;
+    gap: 6px !important;
   }
 
   .app-sidebar__footer {
@@ -1203,14 +1235,37 @@
 
   .app-sidebar__nav {
     display: grid !important;
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr)) !important;
     gap: 4px;
   }
 
   .app-sidebar__item {
-    min-height: 58px;
-    padding: 8px 6px;
-    border-radius: 14px;
+    min-height: 64px;
+    padding: 10px 4px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app-sidebar__item-inner {
+    flex-direction: column !important;
+    gap: 4px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .app-sidebar__item span {
+    font-size: 0.65rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .app-sidebar__item svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 
 .app-page__actions-row {

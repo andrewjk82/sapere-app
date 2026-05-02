@@ -185,13 +185,65 @@ const StudentProfileModal = ({ open, student, onClose }) => {
 
               <div className="app-form-field">
                 <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  <School size={14} /> School / Subject
+                  <School size={14} /> School
                 </label>
                 {isEditing ? (
-                  <input value={student.source === 'registered' ? editData.school : editData.subject} 
-                         onChange={e => setEditData({...editData, [student.source === 'registered' ? 'school' : 'subject']: e.target.value})} />
+                  <input value={editData.school} 
+                         onChange={e => setEditData({...editData, school: e.target.value})} />
                 ) : (
-                  <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '8px 0', color: '#1a1c2c' }}>{student.school || student.subject || 'Not set'}</p>
+                  <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '8px 0', color: '#1a1c2c' }}>{student.school || 'Not set'}</p>
+                )}
+              </div>
+
+              <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Enrolled Subjects
+                </label>
+                {isEditing ? (
+                  <div style={{ display: 'flex', gap: '16px', marginTop: '8px' }}>
+                    {['Maths', 'English'].map(subj => {
+                      const isSelected = (editData.subject || '').includes(subj);
+                      return (
+                        <div 
+                          key={subj}
+                          onClick={() => {
+                            let current = (editData.subject || '').split(',').map(s => s.trim()).filter(s => s);
+                            if (isSelected) {
+                              current = current.filter(s => s !== subj);
+                            } else {
+                              current.push(subj);
+                            }
+                            setEditData({ ...editData, subject: current.join(', ') });
+                          }}
+                          style={{ 
+                            flex: 1,
+                            padding: '12px',
+                            borderRadius: '12px',
+                            border: '2px solid',
+                            borderColor: isSelected ? '#6366f1' : '#e2e8f0',
+                            background: isSelected ? '#f5f3ff' : 'white',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          <div style={{ width: '18px', height: '18px', borderRadius: '4px', border: '2px solid', borderColor: isSelected ? '#6366f1' : '#cbd5e1', background: isSelected ? '#6366f1' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
+                            {isSelected && <Check size={12} />}
+                          </div>
+                          <span style={{ fontWeight: 700, fontSize: '0.9rem', color: isSelected ? '#6366f1' : '#475569' }}>{subj}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
+                    {(editData.subject || 'Not set').split(',').map(s => s.trim()).filter(s => s).map(s => (
+                      <span key={s} style={{ padding: '4px 12px', background: '#e0e7ff', color: '#4338ca', borderRadius: '8px', fontSize: '0.85rem', fontWeight: 700 }}>{s}</span>
+                    ))}
+                    {(!editData.subject) && <span style={{ color: '#94a3b8', fontWeight: 600 }}>No subjects enrolled</span>}
+                  </div>
                 )}
               </div>
 
@@ -210,6 +262,17 @@ const StudentProfileModal = ({ open, student, onClose }) => {
                   <input value={editData.phone} onChange={e => setEditData({...editData, phone: e.target.value})} />
                 ) : (
                   <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '8px 0', color: '#1a1c2c' }}>{student.phone || 'Not set'}</p>
+                )}
+              </div>
+
+              <div className="app-form-field">
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Daily Questions
+                </label>
+                {isEditing ? (
+                  <input type="number" min="5" max="50" value={editData.dailyQuestionCount || 10} onChange={e => setEditData({...editData, dailyQuestionCount: parseInt(e.target.value) || 10})} />
+                ) : (
+                  <p style={{ fontSize: '1.1rem', fontWeight: 600, margin: '8px 0', color: '#1a1c2c' }}>{student.dailyQuestionCount || 10} Questions</p>
                 )}
               </div>
 

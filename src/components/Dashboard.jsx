@@ -1,19 +1,14 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star } from 'lucide-react';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, collection, addDoc, query, where, or } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
-
-const TIME_OPTIONS = [
-  '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
-  '11:00 AM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM', '1:30 PM', '2:00 PM', '2:30 PM',
-  '3:00 PM', '3:30 PM', '4:00 PM', '4:30 PM', '5:00 PM', '5:30 PM', '6:00 PM', '6:30 PM',
-  '7:00 PM', '7:30 PM', '8:00 PM', '8:30 PM', '9:00 PM', '9:30 PM', '10:00 PM', '10:30 PM', '11:00 PM'
-];
+import { TIME_OPTIONS } from '../constants/timeOptions';
+import { CURRICULUM_DATA } from '../constants/curriculumData';
 
 const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) => {
   const { user, isAdmin } = useAuth();
@@ -24,6 +19,75 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [studentSessions, setStudentSessions] = useState([]);
   const [selectedViewSession, setSelectedViewSession] = useState(null);
+  const [lastSync, setLastSync] = useState(null);
+  const [isSyncing, setIsSyncing] = useState(false);
+  const [dailyStats, setDailyStats] = useState([]);
+
+  // Fetch student daily stats for insights
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return;
+    const unsub = onSnapshot(collection(db, 'users', user.uid, 'daily_stats'), (snap) => {
+      const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      setDailyStats(stats);
+    });
+    return () => unsub();
+  }, [user?.uid, isAdmin]);
+
+  const learningInsights = useMemo(() => {
+    if (dailyStats.length === 0) return [];
+    
+    const topicMistakes = {};
+    const topicTotals = {};
+    
+    dailyStats.forEach(stat => {
+      if (!stat.questions || !stat.userAnswers) return;
+      stat.questions.forEach((q, idx) => {
+        const type = q.type ? q.type.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : 'General';
+        topicTotals[type] = (topicTotals[type] || 0) + 1;
+        if (q.answer !== stat.userAnswers[idx]) {
+          topicMistakes[type] = (topicMistakes[type] || 0) + 1;
+        }
+      });
+    });
+    
+    const topics = Object.keys(topicTotals).map(type => ({
+      type,
+      mistakes: topicMistakes[type] || 0,
+      total: topicTotals[type],
+      errorRate: ((topicMistakes[type] || 0) / topicTotals[type]) * 100
+    }));
+    
+    topics.sort((a, b) => b.errorRate - a.errorRate);
+    return topics.filter(t => t.total >= 3 && t.errorRate > 0).slice(0, 3);
+  }, [dailyStats]);
+
+  // ── Fetch Last Sync Info ──
+  useEffect(() => {
+    if (!isAdmin) return;
+    const q = query(collection(db, 'system_logs'), where('type', '==', 'cron_execution'), orderBy('timestamp', 'desc'), limit(1));
+    return onSnapshot(q, (snap) => {
+      if (!snap.empty) {
+        setLastSync(snap.docs[0].data());
+      }
+    });
+  }, [isAdmin]);
+
+  const handleManualSync = async () => {
+    setIsSyncing(true);
+    try {
+      const res = await fetch('/api/cron-unified');
+      const data = await res.json();
+      if (data.success) {
+        alert(`Sync successful! ${data.logs.length} reminders sent.`);
+      } else {
+        alert('Sync failed: ' + data.error);
+      }
+    } catch (e) {
+      alert('Sync failed: ' + e.message);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
 
   // ── Handle Resize ──
   useEffect(() => {
@@ -84,14 +148,15 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
     return { nextLesson: next, lastLesson: past };
   }, [studentSessions]);
   const [newSession, setNewSession] = useState({
-    studentId: '',
+    studentIds: [], // Important for group lessons
     studentName: '',
     subject: '',
     date: new Date().toISOString().split('T')[0],
     startTime: '10:00 AM',
     endTime: '11:30 AM',
     notes: '',
-    homework: ''
+    homework: '',
+    recurring: false
   });
 
   useEffect(() => {
@@ -146,6 +211,23 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
     ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
     : fallbackUrl);
 
+  const studentYear = profile?.assignedYear || profile?.year || 'Year 10';
+  const studentCourse = profile?.assignedCourse || profile?.course || 'Advanced';
+
+  const activeModules = useMemo(() => {
+    let chapters = [];
+    if (CURRICULUM_DATA[studentYear]) {
+      if (Array.isArray(CURRICULUM_DATA[studentYear])) {
+        chapters = CURRICULUM_DATA[studentYear];
+      } else if (CURRICULUM_DATA[studentYear][studentCourse]) {
+        chapters = CURRICULUM_DATA[studentYear][studentCourse];
+      } else {
+        chapters = Object.values(CURRICULUM_DATA[studentYear])[0] || [];
+      }
+    }
+    return chapters.slice(0, 3); // Overview top 3
+  }, [studentYear, studentCourse]);
+
   // Calculate dynamic stats
   const totalStudents = students.length;
   const activeStudents = students.filter(s => s.status === 'Active').length;
@@ -160,39 +242,58 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
 
   const handleCreateSession = async (e) => {
     e.preventDefault();
-    if (!newSession.studentId || !newSession.subject) return;
+    if (newSession.studentIds.length === 0 || !newSession.subject) {
+      alert("Please select at least one student and a subject.");
+      return;
+    }
     setIsSubmitting(true);
     try {
       const sessionsToCreate = [];
-      const groupId = `series_${Date.now()}`; // Unique ID for this recurring series
+      const groupId = `series_${Date.now()}`; 
       
-      // Get student email from the students array (auto-populated for registered students)
-      const selectedStudent = students.find(s => s.id === newSession.studentId);
-      const studentEmail = selectedStudent?.email || '';
+      for (const studentId of newSession.studentIds) {
+        const selectedStudent = students.find(s => s.id === studentId);
+        const studentEmail = selectedStudent?.email || '';
+        const studentName = selectedStudent?.name || '';
 
-      // If recurring, create 52 weeks of sessions. Otherwise, just 1.
-      const count = newSession.recurring ? 52 : 1;
-      const baseDate = new Date(newSession.date);
+        const count = newSession.recurring ? 52 : 1;
+        const baseDate = new Date(newSession.date);
 
-      for (let i = 0; i < count; i++) {
-        const nextDate = new Date(baseDate);
-        nextDate.setDate(baseDate.getDate() + (i * 7));
-        
-        sessionsToCreate.push({
-          ...newSession,
-          studentEmail, // Save email for student dashboard lookup
-          groupId: newSession.recurring ? groupId : null,
-          date: nextDate.toISOString().split('T')[0],
-          isHomeworkCompleted: false,
-          createdAt: new Date().toISOString()
-        });
+        for (let i = 0; i < count; i++) {
+          const nextDate = new Date(baseDate);
+          nextDate.setDate(baseDate.getDate() + (i * 7));
+          
+          sessionsToCreate.push({
+            ...newSession,
+            studentId,
+            studentName,
+            studentEmail,
+            groupId: groupId, // All sessions in this creation event share the same groupId
+            date: nextDate.toISOString().split('T')[0],
+            isHomeworkCompleted: false,
+            createdAt: new Date().toISOString()
+          });
+        }
       }
 
       // Add all to Firestore
-      await Promise.all(sessionsToCreate.map(s => addDoc(collection(db, 'sessions'), s)));
+      await Promise.all(sessionsToCreate.map(s => {
+        const { studentIds, ...rest } = s; // Don't save the array of all IDs to individual docs
+        return addDoc(collection(db, 'sessions'), rest);
+      }));
 
       setShowScheduleModal(false);
-      setNewSession({ studentId: '', studentName: '', subject: '', date: new Date().toISOString().split('T')[0], startTime: '10:00 AM', endTime: '11:30 AM', notes: '', homework: '', recurring: false });
+      setNewSession({ 
+        studentIds: [], 
+        studentName: '', 
+        subject: '', 
+        date: new Date().toISOString().split('T')[0], 
+        startTime: '10:00 AM',
+        endTime: '11:30 AM',
+        notes: '',
+        homework: '',
+        recurring: false 
+      });
     } catch (err) {
       console.error('Error creating session:', err);
     } finally {
@@ -209,17 +310,27 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
 
   return (
     <>
+      <style>{`
+        @media (max-width: 720px) {
+          .no-top-padding-mobile {
+            margin-top: -100px !important;
+            margin-left: -20px !important;
+            margin-right: -20px !important;
+            padding-top: 0 !important;
+          }
+        }
+      `}</style>
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="app-page"
+        className={`app-page ${!isAdmin && isMobile ? 'no-top-padding-mobile' : ''}`}
       >
         {!isAdmin && (
           <div className="student-hero-container" style={{ 
             display: 'grid', 
             gridTemplateColumns: isMobile ? '1fr' : 'repeat(12, 1fr)', 
             gap: isMobile ? '16px' : '24px', 
-            padding: isMobile ? '0' : '0 0 24px 0',
+            padding: isMobile ? '0 0 16px 0' : '0 0 24px 0',
             alignItems: 'stretch'
           }}>
             {/* Left: Vision Card */}
@@ -228,18 +339,19 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                 backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: isMobile ? '380px' : '100%',
-                minHeight: isMobile ? '380px' : '480px',
+                height: isMobile ? '460px' : '100%',
+                minHeight: isMobile ? '460px' : '560px',
                 borderRadius: isMobile ? '0 0 32px 32px' : '32px',
                 position: 'relative',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'flex-end',
-                padding: isMobile ? '32px 24px' : '40px',
+                padding: isMobile ? '40px 24px' : '40px',
                 color: 'white',
                 overflow: 'hidden',
-                boxShadow: '0 20px 50px rgba(0,0,0,0.15)',
-                border: 'none'
+                boxShadow: isMobile ? 'none' : '0 20px 50px rgba(0,0,0,0.15)',
+                border: 'none',
+                width: '100%'
               }}>
                 <div className="vision-card__content" style={{ zIndex: 1 }}>
                   <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '8px', color: 'white', textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
@@ -270,21 +382,25 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                 flex: 1,
                 background: 'linear-gradient(135deg, #1e1b4b, #312e81)', 
                 borderRadius: '28px', 
-                padding: '28px', 
+                padding: '12px 24px', 
                 color: 'white',
                 boxShadow: '0 15px 35px rgba(30,27,75,0.2)',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
                 position: 'relative',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                minHeight: '82px'
+                
               }}>
                 <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}>
                   <Trophy size={100} />
                 </div>
-                <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#a5b4fc', marginBottom: '8px' }}>Total XP</label>
-                <h4 style={{ margin: '0 0 4px', fontSize: '2rem', fontWeight: 900 }}>{profile?.totalXP || 0}</h4>
-                <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#a5b4fc' }}>Master Level 1</div>
+                <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Total XP</label>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px' }}>
+                  <h4 style={{ margin: 0, fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{profile?.totalXP || 0}</h4>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)' }}>Master Level 1</div>
+                </div>
               </div>
 
               {/* Next Lesson Card */}
@@ -294,7 +410,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                   flex: 1,
                   background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
                   borderRadius: '28px', 
-                  padding: '28px', 
+                  padding: '12px 24px', 
                   color: 'white',
                   boxShadow: '0 15px 35px rgba(99,102,241,0.25)',
                   position: 'relative',
@@ -302,21 +418,22 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                   cursor: nextLesson ? 'pointer' : 'default',
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  minHeight: '82px'
                 }}
               >
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}>
                   <Calendar size={120} />
                 </div>
-                <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', opacity: 0.85, marginBottom: '12px' }}>Next Lesson</label>
+                <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
                 {nextLesson ? (
-                  <>
-                    <h4 style={{ margin: '0 0 10px', fontSize: '1.5rem', fontWeight: 900, lineHeight: 1.2 }}>{nextLesson.subject}</h4>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1rem', fontWeight: 600 }}>
-                      <Clock size={18} />
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: 'white' }}>{nextLesson.subject}</h4>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
+                      <Clock size={16} />
                       {nextLesson.date} @ {nextLesson.startTime}
                     </div>
-                  </>
+                  </div>
                 ) : (
                   <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>
                 )}
@@ -329,25 +446,26 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                   flex: 1,
                   background: '#ffffff', 
                   borderRadius: '28px', 
-                  padding: '28px', 
+                  padding: '12px 24px', 
                   border: '1px solid #f1f5f9',
                   boxShadow: '0 12px 30px rgba(0,0,0,0.04)',
                   position: 'relative',
                   cursor: lastLesson ? 'pointer' : 'default',
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  minHeight: '82px'
                 }}
               >
-                <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '12px' }}>Last Lesson</label>
+                <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Last Lesson</label>
                 {lastLesson ? (
-                  <>
-                    <h4 style={{ margin: '0 0 10px', fontSize: '1.5rem', fontWeight: 900, color: '#1e1b4b', lineHeight: 1.2 }}>{lastLesson.subject}</h4>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1rem', fontWeight: 700, color: '#64748b' }}>
-                      <CheckCircle2 size={18} style={{ color: '#10b981' }} />
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{lastLesson.subject}</h4>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 700, color: '#64748b' }}>
+                      <CheckCircle2 size={16} style={{ color: '#10b981' }} />
                       Completed on {lastLesson.date}
                     </div>
-                  </>
+                  </div>
                 ) : (
                   <p style={{ margin: 0, fontWeight: 700, color: '#cbd5e1', fontSize: '1.1rem' }}>No past lessons.</p>
                 )}
@@ -405,7 +523,41 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                     <button className="app-button app-button--secondary" onClick={() => setShowScheduleModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
                       <Calendar size={18} /> Schedule Lesson
                     </button>
-                    <button className="app-button app-button--secondary">Record Progress</button>
+                    <button 
+                      className="app-button app-button--secondary" 
+                      onClick={handleManualSync}
+                      disabled={isSyncing}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                    >
+                      <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
+                      {isSyncing ? 'Syncing...' : 'Sync Reminders'}
+                    </button>
+                  </div>
+                </div>
+
+                {/* System Status Card */}
+                <div className="app-panel dashboard-card" style={{ marginTop: '20px' }}>
+                  <div className="dashboard-card__header">
+                    <h3>System Health</h3>
+                  </div>
+                  <div style={{ padding: '4px 0' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                      <span style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>Auto-Reminder Service</span>
+                      <span style={{ 
+                        fontSize: '0.75rem', 
+                        padding: '2px 8px', 
+                        borderRadius: '10px', 
+                        backgroundColor: '#dcfce7', 
+                        color: '#15803d', 
+                        fontWeight: 700 
+                      }}>Active</span>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>Last Automated Run</span>
+                      <span style={{ fontSize: '0.85rem', color: '#1e1b4b', fontWeight: 700 }}>
+                        {lastSync ? new Date(lastSync.timestamp?.seconds * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Never'}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -429,46 +581,10 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               </div>
             </>
           ) : (
-            <div style={{ display: 'grid', gap: '20px', gridColumn: 'span 2' }}>
-              {/* Daily Mission Card */}
-              <motion.div 
-                whileHover={{ y: -5 }}
-                onClick={() => setActiveTab('Challenge')}
-                style={{ 
-                  background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', 
-                  borderRadius: '32px', 
-                  padding: '32px', 
-                  border: '2px solid #ddd6fe',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  gap: '24px'
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-                  <div style={{ width: '64px', height: '64px', background: 'white', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1', boxShadow: '0 10px 20px rgba(99,102,241,0.1)' }}>
-                    <Star size={32} fill="#6366f1" />
-                  </div>
-                  <div>
-                    <h3 style={{ margin: '0 0 4px', fontSize: '1.3rem', fontWeight: 900, color: '#1e1b4b' }}>Daily Mission</h3>
-                    <p style={{ margin: 0, color: '#6366f1', fontWeight: 700 }}>Earn 100 XP • 10 Questions</p>
-                  </div>
-                </div>
-                <button className="app-button app-button--primary" style={{ padding: '12px 24px', borderRadius: '14px' }}>
-                  Start Now
-                </button>
-              </motion.div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '24px', gridColumn: 'span 2' }}>
+              
+              {/* Performance Insights Column - REMOVED per user request to move to Challenge tab */}
 
-              <div className="app-panel dashboard-card" style={{ padding: isMobile ? '24px' : '32px' }}>
-                <div className="dashboard-card__header" style={{ marginBottom: '24px' }}>
-                  <h3 style={{ fontSize: '1.4rem', fontWeight: 900 }}>My Courses</h3>
-                </div>
-                <div className="app-empty" style={{ padding: '60px 0', background: '#f8fafc', borderRadius: '24px', border: '2px dashed #e2e8f0' }}>
-                  <GraduationCap size={48} style={{ color: '#cbd5e1', marginBottom: '16px', opacity: 0.5 }} />
-                  <p style={{ fontWeight: 600, color: '#94a3b8' }}>Explore and manage your active courses here.</p>
-                </div>
-              </div>
             </div>
           )}
         </div>
@@ -493,7 +609,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div>
                     <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Lesson Details</span>
-                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900 }}>{selectedViewSession.subject}</h3>
+                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{selectedViewSession.subject}</h3>
                   </div>
                   <button onClick={() => setSelectedViewSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
                     <X size={20} />
@@ -580,7 +696,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '28px 32px', color: '#fff' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
-                    <h3 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900 }}>Schedule Lesson</h3>
+                    <h3 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900, color: 'white' }}>Schedule Lesson</h3>
                     <p style={{ margin: 0, opacity: 0.85, fontSize: '0.9rem', fontWeight: 600 }}>Create a new session for a student</p>
                   </div>
                   <button onClick={() => setShowScheduleModal(false)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '34px', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
@@ -592,23 +708,62 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
               {/* Modal body */}
               <form onSubmit={handleCreateSession} style={{ padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
-                {/* Student selector */}
+                {/* Student Multi-selector */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Student</label>
-                  <select
-                    required
-                    value={newSession.studentId}
-                    onChange={e => {
-                      const selected = students.find(s => s.id === e.target.value);
-                      setNewSession({ ...newSession, studentId: e.target.value, studentName: selected?.name || '' });
-                    }}
-                    style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box', appearance: 'none', cursor: 'pointer' }}
-                  >
-                    <option value="">Select a student...</option>
-                    {students.map(s => (
-                      <option key={s.id} value={s.id}>{s.name} — {s.subject || ''} ({s.level || ''})</option>
-                    ))}
-                  </select>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Select Students</label>
+                  <div style={{ 
+                    maxHeight: '150px', 
+                    overflowY: 'auto', 
+                    backgroundColor: '#f8fafc', 
+                    border: '2px solid #e2e8f0', 
+                    borderRadius: '14px',
+                    padding: '8px'
+                  }}>
+                    {students.map(s => {
+                      const isSelected = newSession.studentIds.includes(s.id);
+                      return (
+                        <div 
+                          key={s.id} 
+                          onClick={() => {
+                            const current = [...newSession.studentIds];
+                            if (isSelected) {
+                              setNewSession({ ...newSession, studentIds: current.filter(id => id !== s.id) });
+                            } else {
+                              setNewSession({ ...newSession, studentIds: [...current, s.id] });
+                            }
+                          }}
+                          style={{ 
+                            padding: '10px 12px', 
+                            borderRadius: '10px', 
+                            display: 'flex', 
+                            alignItems: 'center', 
+                            gap: '12px', 
+                            cursor: 'pointer',
+                            backgroundColor: isSelected ? '#eef2ff' : 'transparent',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          <div style={{ 
+                            width: '20px', 
+                            height: '20px', 
+                            borderRadius: '4px', 
+                            border: '2px solid', 
+                            borderColor: isSelected ? '#6366f1' : '#cbd5e1', 
+                            background: isSelected ? '#6366f1' : 'transparent',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: 'white'
+                          }}>
+                            {isSelected && <Check size={12} />}
+                          </div>
+                          <div style={{ fontWeight: 700, fontSize: '0.9rem', color: isSelected ? '#6366f1' : '#334155' }}>
+                            {s.name} <span style={{ opacity: 0.6, fontSize: '0.75rem', fontWeight: 600 }}>({s.level || s.year || ''})</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
 
                 {/* Subject */}

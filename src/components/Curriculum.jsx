@@ -9,6 +9,9 @@ import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc } from 'fireb
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
+import { CURRICULUM_DATA } from '../constants/curriculumData';
+import QuestionBankModal from './QuestionBankModal';
+import LearningPath from './LearningPath';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
@@ -22,6 +25,7 @@ const Curriculum = () => {
   const [curriculumRecords, setCurriculumRecords] = useState([]);
   const [isMigrating, setIsMigrating] = useState(false);
   const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
+  const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
 
   // Fetch Curriculum from Firestore
   useEffect(() => {
@@ -74,6 +78,23 @@ const Curriculum = () => {
     setEditingChapter(null);
   };
 
+  const handleSyncSelectedYear = async () => {
+    const isSenior = ['Year 11', 'Year 12'].includes(selectedYear);
+    const data = isSenior 
+      ? CURRICULUM_DATA[selectedYear]?.[selectedCourse] 
+      : CURRICULUM_DATA[selectedYear];
+      
+    if (!Array.isArray(data)) {
+      alert("No built-in curriculum data found for this selection.");
+      return;
+    }
+    
+    const courseName = isSenior ? ` (${selectedCourse})` : '';
+    if (!window.confirm(`Replace ${selectedYear}${courseName} curriculum with the built-in version?`)) return;
+    
+    await handleUpdateChapters(data);
+  };
+
   useEffect(() => {
     if (!user || isAdmin) return;
     const unsub = onSnapshot(doc(db, 'users', user.uid), (snap) => {
@@ -117,201 +138,195 @@ const Curriculum = () => {
 
   return (
     <div className="app-page curriculum-container">
-      <div className="curriculum-header-mobile">
-        <div className="app-page__title">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <h2>{isAdmin ? 'Curriculum Management' : 'My Learning Path'}</h2>
-            {isAdmin && curriculumRecords.length === 0 && (
-              <button 
-                onClick={async () => {
-                  setIsMigrating(true);
-                  await migrateCurriculumToFirestore();
-                  setIsMigrating(false);
-                }}
-                disabled={isMigrating}
-                className="app-button"
-                style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a' }}
-              >
-                {isMigrating ? 'Migrating...' : '⚠️ Seed Initial Data'}
-              </button>
-            )}
-          </div>
-          <p style={{ maxWidth: '600px' }}>
-            {isAdmin 
-              ? 'Comprehensive curriculum structure from Foundation to HSC Extension 2.' 
-              : `Your personalized curriculum for ${selectedYear}${courses ? ` (${selectedCourse})` : ''}.`}
-          </p>
-        </div>
-        <div style={{ display: 'flex', gap: '12px', width: window.innerWidth < 768 ? '100%' : 'auto', alignItems: 'center' }}>
-          {isAdmin && (
-            <button 
-              onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
-              className="app-button app-button--primary"
-              style={{ borderRadius: '14px', whiteSpace: 'nowrap' }}
-            >
-              <Plus size={18} /> Add Chapter
-            </button>
-          )}
-          <div className="app-input" style={{ width: window.innerWidth < 768 ? '100%' : '300px' }}>
-            <Search size={18} />
-            <input 
-              type="text" 
-              placeholder="Search topics..." 
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="curriculum-main-grid" style={{ display: 'grid', gridTemplateColumns: isAdmin ? '260px 1fr' : '1fr', gap: '32px', height: isAdmin ? 'calc(100vh - 250px)' : 'auto' }}>
-        {/* Left Sidebar: Year Selection (ONLY FOR ADMIN) */}
-        {isAdmin && (
-          <div className="app-panel curriculum-sidebar" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
-            <div className="year-select-title" style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
-            <div style={{ display: 'flex', flexDirection: window.innerWidth < 1024 ? 'row' : 'column', gap: '8px' }}>
-              {YEARS.map(year => (
-                <button
-                  key={year}
-                  onClick={() => {
-                    setSelectedYear(year);
-                    if (year === 'Year 11' || year === 'Year 12') {
-                      setSelectedCourse('Standard');
-                    }
-                  }}
-                  className="year-btn-mobile"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '14px 16px',
-                    borderRadius: '16px',
-                    border: 'none',
-                    background: selectedYear === year ? '#6366f1' : '#f8fafc',
-                    color: selectedYear === year ? 'white' : '#64748b',
-                    fontWeight: 700,
-                    fontSize: '0.9rem',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s',
-                    minWidth: window.innerWidth < 1024 ? 'fit-content' : 'auto'
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <GraduationCap size={16} />
-                    {year}
-                  </div>
-                  {selectedYear === year && window.innerWidth >= 1024 && <ChevronRight size={16} />}
-                </button>
-              ))}
+      {!isAdmin ? (
+        <LearningPath profile={profile} />
+      ) : (
+        <>
+          <div className="curriculum-header-mobile">
+            <div className="app-page__title">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <h2>Curriculum Management</h2>
+                {curriculumRecords.length === 0 && (
+                  <button 
+                    onClick={async () => {
+                      setIsMigrating(true);
+                      await migrateCurriculumToFirestore();
+                      setIsMigrating(false);
+                    }}
+                    disabled={isMigrating}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a' }}
+                  >
+                    {isMigrating ? 'Migrating...' : '⚠️ Seed Initial Data'}
+                  </button>
+                )}
+                {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
+                  <button
+                    onClick={handleSyncSelectedYear}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd' }}
+                  >
+                    Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
+                  </button>
+                )}
+              </div>
+              <p>{selectedYear} Curriculum {selectedCourse ? `(${selectedCourse})` : ''}</p>
             </div>
-          </div>
-        )}
-
-        {/* Main Content Area */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          {/* Sub-tabs for Year 11 & 12 */}
-          {courses && (
-            <div className="course-tabs-scroll">
-              <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '6px', borderRadius: '18px', width: 'fit-content' }}>
-                {courses.map(course => {
-                  const isDisabled = !isAdmin && profile?.assignedCourse && profile.assignedCourse !== course;
-                  if (isDisabled) return null;
-
-                  return (
-                    <button
-                      key={course}
-                      onClick={() => isAdmin && setSelectedCourse(course)}
-                      style={{
-                        padding: '10px 20px',
-                        borderRadius: '14px',
-                        border: 'none',
-                        background: selectedCourse === course ? 'white' : 'transparent',
-                        color: selectedCourse === course ? '#6366f1' : '#64748b',
-                        fontWeight: 800,
-                        fontSize: '0.8rem',
-                        cursor: isAdmin ? 'pointer' : 'default',
-                        boxShadow: selectedCourse === course ? '0 4px 12px rgba(0,0,0,0.05)' : 'none',
-                        transition: 'all 0.2s',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '8px'
-                      }}
-                    >
-                      {!isAdmin && <Lock size={14} />}
-                      {course}
-                    </button>
-                  );
-                })}
+            <div className="app-page__actions" style={{ display: 'flex', gap: '12px' }}>
+              <button 
+                onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
+                className="app-button app-button--primary"
+                style={{ borderRadius: '14px', whiteSpace: 'nowrap' }}
+              >
+                <Plus size={18} /> Add Chapter
+              </button>
+              <div className="app-input" style={{ width: window.innerWidth < 768 ? '100%' : '300px' }}>
+                <Search size={18} />
+                <input 
+                  type="text" 
+                  placeholder="Search topics..." 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
               </div>
             </div>
-          )}
+          </div>
 
-          {/* Chapters Grid */}
-          <div className="chapters-grid" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-            gap: '20px',
-            overflowY: window.innerWidth < 1024 ? 'visible' : 'auto',
-            paddingBottom: '100px'
-          }}>
-            {displayData.length > 0 ? displayData.map(chapter => {
-              const completed = chapter.completed || 0;
-              const p = chapter.modules > 0 ? Math.round((completed / chapter.modules) * 100) : 0;
-              return (
-                <div 
-                  key={chapter.id} 
-                  className="app-panel" 
-                  style={{ 
-                    padding: '24px', 
-                    borderRadius: '24px', 
-                    display: 'flex', 
-                    flexDirection: 'column', 
-                    gap: '20px',
-                    border: '1px solid rgba(0,0,0,0.03)',
-                    cursor: 'pointer'
-                  }}
-                >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <div style={{ width: '44px', height: '44px', background: '#f5f3ff', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}>
-                      <BookText size={22} />
+          <div className="curriculum-main-grid" style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: '32px', height: 'calc(100vh - 250px)' }}>
+            {/* Left Sidebar: Year Selection (ONLY FOR ADMIN) */}
+            <div className="app-panel curriculum-sidebar" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
+              <div className="year-select-title" style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
+              <div style={{ display: 'flex', flexDirection: window.innerWidth < 1024 ? 'row' : 'column', gap: '8px' }}>
+                {YEARS.map(year => (
+                  <button
+                    key={year}
+                    onClick={() => {
+                      setSelectedYear(year);
+                      if (year === 'Year 11' || year === 'Year 12') {
+                        setSelectedCourse('Standard');
+                      }
+                    }}
+                    className="year-btn-mobile"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '14px 16px',
+                      borderRadius: '16px',
+                      border: 'none',
+                      background: selectedYear === year ? '#6366f1' : '#f8fafc',
+                      color: selectedYear === year ? 'white' : '#64748b',
+                      fontWeight: 700,
+                      fontSize: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      minWidth: window.innerWidth < 1024 ? 'fit-content' : 'auto'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                      <GraduationCap size={16} />
+                      {year}
                     </div>
-                    {isAdmin ? (
-                      <div style={{ display: 'flex', gap: '8px' }}>
-                        <button onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }} style={{ border: 'none', background: '#f8fafc', padding: '8px', borderRadius: '10px', color: '#64748b', cursor: 'pointer' }}><Edit2 size={16} /></button>
-                        <button onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }} style={{ border: 'none', background: '#fff1f2', padding: '8px', borderRadius: '10px', color: '#f43f5e', cursor: 'pointer' }}><Trash2 size={16} /></button>
-                      </div>
-                    ) : (
-                      <div style={{ background: p === 100 ? '#ecfdf5' : '#f8fafc', color: p === 100 ? '#10b981' : '#64748b', padding: '6px 12px', borderRadius: '10px', fontSize: '0.7rem', fontWeight: 800 }}>
-                        {p === 100 ? 'COMPLETED' : `${chapter.modules} MODULES`}
-                      </div>
-                    )}
-                  </div>
+                    {selectedYear === year && window.innerWidth >= 1024 && <ChevronRight size={16} />}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-                  <div>
-                    <h3 style={{ margin: '0 0 6px 0', fontSize: '1.1rem', fontWeight: 800, color: '#1a1c2c' }}>{chapter.title}</h3>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>Core curriculum unit</p>
-                  </div>
-
-                  <div style={{ marginTop: 'auto' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '8px' }}>
-                      <span>PROGRESS</span>
-                      <span style={{ color: '#6366f1' }}>{p}%</span>
-                    </div>
-                    <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '4px', overflow: 'hidden' }}>
-                      <div style={{ width: `${p}%`, height: '100%', background: 'linear-gradient(90deg, #6366f1, #a78bfa)' }}></div>
-                    </div>
+            {/* Main Content Area */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {/* Sub-tabs for Year 11 & 12 */}
+              {courses && (
+                <div className="course-tabs-scroll">
+                  <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '6px', borderRadius: '18px', width: 'fit-content' }}>
+                    {courses.map(course => (
+                      <button
+                        key={course}
+                        onClick={() => setSelectedCourse(course)}
+                        style={{
+                          padding: '10px 20px',
+                          borderRadius: '14px',
+                          border: 'none',
+                          background: selectedCourse === course ? 'white' : 'transparent',
+                          color: selectedCourse === course ? '#6366f1' : '#64748b',
+                          fontWeight: 800,
+                          fontSize: '0.8rem',
+                          cursor: 'pointer',
+                          boxShadow: selectedCourse === course ? '0 4px 12px rgba(0,0,0,0.05)' : 'none',
+                          transition: 'all 0.2s',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '8px'
+                        }}
+                      >
+                        {course}
+                      </button>
+                    ))}
                   </div>
                 </div>
-              );
-            }) : (
-              <div style={{ gridColumn: '1 / -1', padding: '80px 0', textAlign: 'center' }}>
-                <Search size={40} style={{ color: '#cbd5e1', marginBottom: '16px' }} />
-                <h3 style={{ color: '#64748b', fontWeight: 800 }}>No curriculum found</h3>
+              )}
+
+              {/* Chapters Grid */}
+              <div className="chapters-grid" style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
+                gap: '20px',
+                overflowY: window.innerWidth < 1024 ? 'visible' : 'auto',
+                paddingBottom: '100px'
+              }}>
+                {displayData.length > 0 ? displayData.map(chapter => {
+                  const completed = chapter.completed || 0;
+                  const p = chapter.modules > 0 ? Math.round((completed / chapter.modules) * 100) : 0;
+                  return (
+                      <div 
+                        key={chapter.id} 
+                        onClick={() => setSelectedChapterForQuestions(chapter)}
+                        className="app-panel" 
+                        style={{ 
+                          padding: '24px', 
+                          borderRadius: '24px', 
+                          display: 'flex', 
+                          flexDirection: 'column', 
+                          gap: '20px',
+                          border: '1px solid rgba(0,0,0,0.03)',
+                          cursor: 'pointer'
+                        }}
+                      >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                        <div style={{ width: '44px', height: '44px', background: '#f5f3ff', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}>
+                          <BookText size={22} />
+                        </div>
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                          <button onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }} style={{ border: 'none', background: '#f8fafc', padding: '8px', borderRadius: '10px', color: '#64748b', cursor: 'pointer' }}><Edit2 size={16} /></button>
+                          <button onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }} style={{ border: 'none', background: '#fff1f2', padding: '8px', borderRadius: '10px', color: '#f43f5e', cursor: 'pointer' }}><Trash2 size={16} /></button>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h3 style={{ margin: '0 0 6px 0', fontSize: '1.1rem', fontWeight: 800, color: '#1a1c2c' }}>{chapter.title}</h3>
+                        <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>
+                          {chapter.topics?.length ? `${chapter.topics.length} subtopics stored` : 'Core curriculum unit'}
+                        </p>
+                      </div>
+
+                      <div style={{ marginTop: 'auto' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '8px' }}>
+                          <span>PROGRESS</span>
+                          <span>{p}%</span>
+                        </div>
+                        <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '4px', overflow: 'hidden' }}>
+                          <motion.div initial={{ width: 0 }} animate={{ width: `${p}%` }} style={{ height: '100%', background: '#6366f1' }} />
+                        </div>
+                      </div>
+                    </div>
+                )}) : (
+                  <div className="app-empty">No chapters found for this selection.</div>
+                )}
               </div>
-            )}
+            </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
 
       <AnimatePresence>
         {editingChapter && (
@@ -368,6 +383,15 @@ const Curriculum = () => {
               </form>
             </motion.div>
           </div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {selectedChapterForQuestions && (
+          <QuestionBankModal 
+            chapter={selectedChapterForQuestions} 
+            onClose={() => setSelectedChapterForQuestions(null)} 
+          />
         )}
       </AnimatePresence>
     </div>
