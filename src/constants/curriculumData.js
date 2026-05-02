@@ -793,8 +793,151 @@ export const CURRICULUM_DATA = {
       { id: 'y12s-2', title: 'Statistical Analysis', modules: 12 }
     ],
     'Advanced': [
-      { id: 'y12a-1', title: 'Calculus: Differentiation', modules: 14 },
-      { id: 'y12a-2', title: 'Integral Calculus', modules: 16 }
+      {
+        id: 'y12a-1',
+        title: 'Chapter 1: Sequences and series',
+        modules: 9,
+        topics: [
+          { id: 'y12a-1A', code: '1A', title: 'Sequences and how to specify them' },
+          { id: 'y12a-1B', code: '1B', title: 'Arithmetic sequences' },
+          { id: 'y12a-1C', code: '1C', title: 'Geometric sequences' },
+          { id: 'y12a-1D', code: '1D', title: 'Solving problems involving APs and GPs' },
+          { id: 'y12a-1E', code: '1E', title: 'Adding up the terms of a sequence' },
+          { id: 'y12a-1F', code: '1F', title: 'Summing an arithmetic series' },
+          { id: 'y12a-1G', code: '1G', title: 'Summing a geometric series' },
+          { id: 'y12a-1H', code: '1H', title: 'The limiting sum of a geometric series' },
+          { id: 'y12a-1I', code: '1I', title: 'Recurring decimals and geometric series' }
+        ]
+      },
+      {
+        id: 'y12a-2',
+        title: 'Chapter 2: Graphs and equations',
+        modules: 9,
+        topics: [
+          { id: 'y12a-2A', code: '2A', title: 'The sign of a function' },
+          { id: 'y12a-2B', code: '2B', title: 'Vertical and horizontal asymptotes' },
+          { id: 'y12a-2C', code: '2C', title: 'A curve-sketching menu' },
+          { id: 'y12a-2D', code: '2D', title: 'Solving inequations' },
+          { id: 'y12a-2E', code: '2E', title: 'Using graphs to solve equations and inequations' },
+          { id: 'y12a-2F', code: '2F', title: 'Review of translations and reflections' },
+          { id: 'y12a-2G', code: '2G', title: 'Dilations' },
+          { id: 'y12a-2H', code: '2H', title: 'Combinations of transformations' },
+          { id: 'y12a-2I', code: '2I', title: 'Trigonometric graphs' }
+        ]
+      },
+      {
+        id: 'y12a-3',
+        title: 'Chapter 3: Curve-sketching using the derivative',
+        modules: 8,
+        topics: [
+          { id: 'y12a-3A', code: '3A', title: 'Increasing, decreasing and stationary at a point' },
+          { id: 'y12a-3B', code: '3B', title: 'Stationary points and turning points' },
+          { id: 'y12a-3C', code: '3C', title: 'Second and higher derivatives' },
+          { id: 'y12a-3D', code: '3D', title: 'Concavity and points of inflection' },
+          { id: 'y12a-3E', code: '3E', title: 'Systematic curve sketching with the derivative' },
+          { id: 'y12a-3F', code: '3F', title: 'Global maximum and minimum' },
+          { id: 'y12a-3G', code: '3G', title: 'Applications of maximisation and minimisation' },
+          { id: 'y12a-3H', code: '3H', title: 'Primitive functions' }
+        ]
+      },
+      {
+        id: 'y12a-4',
+        title: 'Chapter 4: Integration',
+        modules: 9,
+        topics: [
+          { id: 'y12a-4A', code: '4A', title: 'Areas and the definite integral' },
+          { id: 'y12a-4B', code: '4B', title: 'The fundamental theorem of calculus' },
+          { id: 'y12a-4C', code: '4C', title: 'The definite integral and its properties' },
+          { id: 'y12a-4D', code: '4D', title: 'Challenge – proving the fundamental theorem' },
+          { id: 'y12a-4E', code: '4E', title: 'The indefinite integral' },
+          { id: 'y12a-4F', code: '4F', title: 'Finding areas by integration' },
+          { id: 'y12a-4G', code: '4G', title: 'Areas of compound regions' },
+          { id: 'y12a-4H', code: '4H', title: 'The trapezoidal rule' },
+          { id: 'y12a-4I', code: '4I', title: 'The reverse chain rule' }
+        ]
+      },
+      {
+        id: 'y12a-5',
+        title: 'Chapter 5: The exponential and logarithmic functions',
+        modules: 11,
+        topics: [
+          { id: 'y12a-5A', code: '5A', title: 'Review of exponential functions base e' },
+          { id: 'y12a-5B', code: '5B', title: 'Differentiation of exponential functions' },
+          { id: 'y12a-5C', code: '5C', title: 'Applications of differentiation' },
+          { id: 'y12a-5D', code: '5D', title: 'Integration of exponential functions' },
+          { id: 'y12a-5E', code: '5E', title: 'Applications of integration' },
+          { id: 'y12a-5F', code: '5F', title: 'Review of logarithmic functions' },
+          { id: 'y12a-5G', code: '5G', title: 'Differentiation of logarithmic functions' },
+          { id: 'y12a-5H', code: '5H', title: 'Applications of differentiation of loge x' },
+          { id: 'y12a-5I', code: '5I', title: 'Integration of the reciprocal function' },
+          { id: 'y12a-5J', code: '5J', title: 'Applications of integration of 1 / x' },
+          { id: 'y12a-5K', code: '5K', title: 'Calculus with other bases' }
+        ]
+      },
+      {
+        id: 'y12a-6',
+        title: 'Chapter 6: The trigonometric functions',
+        modules: 5,
+        topics: [
+          { id: 'y12a-6A', code: '6A', title: 'The behaviour of sin x near the origin' },
+          { id: 'y12a-6B', code: '6B', title: 'Differentiating the trigonometric functions' },
+          { id: 'y12a-6C', code: '6C', title: 'Applications of differentiation' },
+          { id: 'y12a-6D', code: '6D', title: 'Integrating the trigonometric functions' },
+          { id: 'y12a-6E', code: '6E', title: 'Applications of integration' }
+        ]
+      },
+      {
+        id: 'y12a-7',
+        title: 'Chapter 7: Motion and rates',
+        modules: 6,
+        topics: [
+          { id: 'y12a-7A', code: '7A', title: 'Average velocity and speed' },
+          { id: 'y12a-7B', code: '7B', title: 'Velocity and acceleration as derivatives' },
+          { id: 'y12a-7C', code: '7C', title: 'Integrating with respect to time' },
+          { id: 'y12a-7D', code: '7D', title: 'Rates and differentiation' },
+          { id: 'y12a-7E', code: '7E', title: 'Rates and integration' },
+          { id: 'y12a-7F', code: '7F', title: 'Exponential growth and decay' }
+        ]
+      },
+      {
+        id: 'y12a-8',
+        title: 'Chapter 8: Series and finance',
+        modules: 5,
+        topics: [
+          { id: 'y12a-8A', code: '8A', title: 'Applications of APs and GPs' },
+          { id: 'y12a-8B', code: '8B', title: 'The use of logarithms with GPs' },
+          { id: 'y12a-8C', code: '8C', title: 'Simple and compound interest' },
+          { id: 'y12a-8D', code: '8D', title: 'Investing money by regular instalments' },
+          { id: 'y12a-8E', code: '8E', title: 'Paying off a loan' }
+        ]
+      },
+      {
+        id: 'y12a-9',
+        title: 'Chapter 9: Displaying and interpreting data',
+        modules: 6,
+        topics: [
+          { id: 'y12a-9A', code: '9A', title: 'Displaying data' },
+          { id: 'y12a-9B', code: '9B', title: 'Grouped data and histograms' },
+          { id: 'y12a-9C', code: '9C', title: 'Quartiles and interquartile range' },
+          { id: 'y12a-9D', code: '9D', title: 'Bivariate data' },
+          { id: 'y12a-9E', code: '9E', title: 'Formulae for correlation and regression' },
+          { id: 'y12a-9F', code: '9F', title: 'Using technology with bivariate data' }
+        ]
+      },
+      {
+        id: 'y12a-10',
+        title: 'Chapter 10: Continuous probability distributions',
+        modules: 7,
+        topics: [
+          { id: 'y12a-10A', code: '10A', title: 'Relative frequency' },
+          { id: 'y12a-10B', code: '10B', title: 'Continuous distributions' },
+          { id: 'y12a-10C', code: '10C', title: 'Mean and variance of a distribution' },
+          { id: 'y12a-10D', code: '10D', title: 'The standard normal distribution' },
+          { id: 'y12a-10E', code: '10E', title: 'General normal distributions' },
+          { id: 'y12a-10F', code: '10F', title: 'Applications of the normal distribution' },
+          { id: 'y12a-10G', code: '10G', title: 'Investigations using the normal distribution' }
+        ]
+      }
     ],
     'Extension 1': [
       { id: 'y12e1-1', title: 'Vectors', modules: 12 },
