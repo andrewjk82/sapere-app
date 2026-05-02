@@ -333,6 +333,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                     style={{ width: '60px', background: 'transparent', border: 0, fontWeight: 900, color: '#92400e', outline: 'none', textAlign: 'center', fontSize: '1.1rem', padding: 0 }}
                   />
                 </div>
+                </div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '16px' }}>
                 {(CURRICULUM_DATA['Basic Calculation'] || []).map(stage => {
