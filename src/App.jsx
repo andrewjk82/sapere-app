@@ -43,8 +43,19 @@ function App() {
   }, []);
 
   const handleUpdateApp = () => {
-    // Force reload and clear cache if possible
-    window.location.reload(true);
+    // Robustly clear Service Worker cache and force fetch new version
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister();
+        }
+      }).then(() => {
+        // Append timestamp to break any remaining browser cache
+        window.location.href = window.location.pathname + '?v=' + new Date().getTime();
+      });
+    } else {
+      window.location.href = window.location.pathname + '?v=' + new Date().getTime();
+    }
   };
   
   // Request notification permission on login
