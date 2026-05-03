@@ -611,13 +611,13 @@ const StudentDetail = ({ studentId, onBack }) => {
       <div style={styles.card} className="profile-card-mobile">
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px' }}>
           <button style={styles.backBtn} onClick={onBack}><ChevronLeft size={24} /></button>
-          <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0 }}>{student.name || 'Student'}</h1>
-          <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student.year || student.level}</span>
+          <h1 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0 }}>{student?.name || 'Student'}</h1>
+          <span className="page-pill" style={{ background: '#e0e7ff', color: '#6366f1' }}>{student?.year || student?.level || 'No Grade'}</span>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
           <div style={{ display: 'flex', gap: '20px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}>
-            <div style={{ display: 'flex', gap: '8px' }}><Mail size={16} /> {student.email}</div>
-            <div style={{ display: 'flex', gap: '8px' }}><Phone size={16} /> {student.phone}</div>
+            <div style={{ display: 'flex', gap: '8px' }}><Mail size={16} /> {student?.email || 'No Email'}</div>
+            <div style={{ display: 'flex', gap: '8px' }}><Phone size={16} /> {student?.phone || 'No Phone'}</div>
           </div>
           <div style={{ display: 'flex', gap: '12px' }}>
             <button onClick={() => setMessageOpen(true)} className="app-button" style={{ padding: '8px 16px', borderRadius: '12px', background: '#f5f3ff', color: '#6366f1', fontWeight: 700, border: '1px solid #e0e7ff' }}>Message</button>
@@ -630,8 +630,8 @@ const StudentDetail = ({ studentId, onBack }) => {
       <div className="stats-grid-mobile" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', margin: '24px 0' }}>
         <div style={styles.card} className="dashboard-preview-card">
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '16px' }}>DASHBOARD PREVIEW</div>
-          <div style={{ ...styles.visionBoard, backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url(${student.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519'})`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-            <div style={{ fontWeight: 900, fontSize: '1.2rem' }}>{student.dreamJob || 'Dream Career'}</div>
+          <div style={{ ...styles.visionBoard, backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url(${student?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519'})`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
+            <div style={{ fontWeight: 900, fontSize: '1.2rem' }}>{student?.dreamJob || 'Dream Career'}</div>
             <button onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 12, right: 12, padding: '4px 8px', borderRadius: '8px', background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', fontSize: '0.7rem', cursor: 'pointer' }}>Change Image</button>
             <input type="file" ref={fileInputRef} style={{ display: 'none' }} onChange={handleImageUpload} />
           </div>
@@ -686,7 +686,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} style={{ position: 'relative', background: 'white', padding: '32px', borderRadius: '32px', width: '100%', maxWidth: '500px', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
                 <div>
-                  <h3 style={{ fontWeight: 900, margin: 0, fontSize: '1.2rem' }}>Message to {student.name}</h3>
+                  <h3 style={{ fontWeight: 900, margin: 0, fontSize: '1.2rem' }}>Message to {student?.name || 'Student'}</h3>
                   <p style={{ margin: 0, fontSize: '0.75rem', color: '#64748b', fontWeight: 600 }}>Sent via Email & Push Notification</p>
                 </div>
                 <button onClick={() => setMessageOpen(false)} style={{ background: '#f1f5f9', border: 'none', borderRadius: '10px', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#64748b' }}><X size={18} /></button>
