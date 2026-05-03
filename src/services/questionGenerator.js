@@ -136,7 +136,9 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
   // Final fallback to Year 1 if still nothing found
   if (targets.length === 0) {
     if (['Year 11', 'Year 12'].includes(year)) {
-      return getQuestionTargets({ year: 'Year 11', course: 'Advanced', assignedChapters: ['y11adv-ch1'] });
+      // Use correct IDs from curriculumData.js
+      const fallbackId = year === 'Year 11' ? 'y11a-1' : 'y12adv-ch1';
+      return getQuestionTargets({ year, course: 'Advanced', assignedChapters: [fallbackId] });
     }
     return getQuestionTargets({ year: DEFAULT_YEAR, assignedChapters: [DEFAULT_CHAPTER_ID] });
   }

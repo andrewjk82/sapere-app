@@ -413,27 +413,28 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   };
 
   const startDailyQuiz = async () => {
-    setChallengeType('daily');
-    const qCount = getQuestionCount('daily');
-    setLoading(true);
-    let manualQs = [];
-    const assignedYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
-    const assignedChapters = Array.isArray(studentProfile?.assignedChapters) && studentProfile.assignedChapters.length > 0
-      ? studentProfile.assignedChapters
-      : [CHALLENGE_CHAPTER_ID];
-    const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
-    const assignedCourse = studentProfile?.assignedCourse || 'Advanced';
-    const targetPool = getQuestionTargets({
-      year: assignedYear,
-      course: assignedCourse,
-      assignedChapters,
-      assignedTopics,
-    });
-    const targetChapterIds = new Set(targetPool.map(target => target.chapterId));
-    const targetTopicIds = new Set(targetPool.map(target => target.topicId));
-
     try {
-      const qRef = collection(db, 'questions');
+      setChallengeType('daily');
+      const qCount = getQuestionCount('daily');
+      setLoading(true);
+      let manualQs = [];
+      const assignedYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
+      const assignedChapters = Array.isArray(studentProfile?.assignedChapters) && studentProfile.assignedChapters.length > 0
+        ? studentProfile.assignedChapters
+        : [CHALLENGE_CHAPTER_ID];
+      const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
+      const assignedCourse = studentProfile?.assignedCourse || 'Advanced';
+      const targetPool = getQuestionTargets({
+        year: assignedYear,
+        course: assignedCourse,
+        assignedChapters,
+        assignedTopics,
+      });
+      const targetChapterIds = new Set(targetPool.map(target => target.chapterId));
+      const targetTopicIds = new Set(targetPool.map(target => target.topicId));
+
+      try {
+        const qRef = collection(db, 'questions');
       const manualSnap = await getDocs(query(qRef, orderBy('createdAt', 'desc'), limit(80)));
       manualQs = manualSnap.docs.map(d => {
         const data = d.data();
@@ -495,20 +496,25 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (setIsLocked) setIsLocked(true);
     setLoading(false);
 
-    if (user?.uid) {
-      const now = new Date();
-      const today = now.toISOString().split('T')[0];
-      setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
-        completed: false,
-        score: 0,
-        total: qCount,
-        timestamp: now.toISOString(),
-        dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-        questions: combinedQs || [],
-        userAnswers: [],
-        answerResults: [],
-        abandoned: true
-      }).catch(console.error);
+      if (user?.uid) {
+        const now = new Date();
+        const today = now.toISOString().split('T')[0];
+        setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
+          completed: false,
+          score: 0,
+          total: qCount,
+          timestamp: now.toISOString(),
+          dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
+          questions: combinedQs || [],
+          userAnswers: [],
+          answerResults: [],
+          abandoned: true
+        }).catch(console.error);
+      }
+    } catch (error) {
+      console.error("Critical error in startDailyQuiz:", error);
+      alert("Failed to start challenge. Please check your assigned curriculum or try again later.");
+      setLoading(false);
     }
   };
 
