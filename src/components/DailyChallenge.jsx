@@ -1022,10 +1022,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 </p>
               ) : (
                 <p style={{ color: '#be123c', fontWeight: 700, fontSize: '1.2rem', margin: 0, lineHeight: 1.6 }}>
-                  챌린지 도중 페이지를 새로고침하거나 이탈하여 **자동 종료**되었습니다. <br/>
+                  The challenge has been **automatically terminated** due to a page refresh or navigation. <br/>
                   <span style={{ display: 'block', marginTop: '12px', fontSize: '1rem', opacity: 0.8 }}>
-                    포인트는 0점 처리되었으며, 오늘의 기회는 끝났습니다. <br/>
-                    <strong>내일 다시 새로운 마음으로 도전하세요!</strong>
+                    0 points have been awarded, and your opportunity for today is finished. <br/>
+                    <strong>Try again tomorrow with a fresh start!</strong>
                   </span>
                 </p>
               )}
