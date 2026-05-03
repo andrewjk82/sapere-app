@@ -24,6 +24,8 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('curriculum');
   const [assignedChapters, setAssignedChapters] = useState([]);
+  const [completedChapters, setCompletedChapters] = useState([]);
+
   const [booking, setBooking] = useState(false);
   const [messageOpen, setMessageOpen] = useState(false);
   const [messageText, setMessageText] = useState('');
@@ -62,6 +64,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         const data = snap.data();
         setStudent({ id: snap.id, source: 'users', ...data });
         setAssignedChapters(data.assignedChapters || []);
+        setCompletedChapters(data.completedChapters || []);
+
         setEditForm({
           name: data.name || data.firstName || '',
           email: data.email || '',
@@ -84,6 +88,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             const mData = mSnap.data();
             setStudent({ id: mSnap.id, source: 'manual', ...mData });
             setAssignedChapters(mData.assignedChapters || []);
+            setCompletedChapters(mData.completedChapters || []);
+
             setEditForm({
               name: mData.name || '', email: mData.email || '', phone: mData.phone || '',
               level: mData.level || mData.year || '', subject: mData.subject || mData.school || '',
@@ -163,13 +169,33 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const handleToggleChapter = async (chapterId) => {
-    const newChapters = assignedChapters.includes(chapterId)
-      ? assignedChapters.filter(id => id !== chapterId)
-      : [...assignedChapters, chapterId];
-    setAssignedChapters(newChapters);
+    const isAssigned = assignedChapters.includes(chapterId);
+    const isCompleted = completedChapters.includes(chapterId);
+
+    let nextAssigned = [...assignedChapters];
+    let nextCompleted = [...completedChapters];
+
+    if (!isAssigned && !isCompleted) {
+      // Unassigned -> Active
+      nextAssigned.push(chapterId);
+    } else if (isAssigned && !isCompleted) {
+      // Active -> Done
+      nextAssigned = nextAssigned.filter(id => id !== chapterId);
+      nextCompleted.push(chapterId);
+    } else {
+      // Done -> Unassigned
+      nextCompleted = nextCompleted.filter(id => id !== chapterId);
+    }
+
+    setAssignedChapters(nextAssigned);
+    setCompletedChapters(nextCompleted);
+
     try {
       const colName = student.source === 'manual' ? 'students' : 'users';
-      await updateDoc(doc(db, colName, studentId), { assignedChapters: newChapters });
+      await updateDoc(doc(db, colName, studentId), { 
+        assignedChapters: nextAssigned,
+        completedChapters: nextCompleted 
+      });
     } catch (e) { console.error(e); }
   };
 
@@ -269,14 +295,59 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
-                {chapters.map(ch => (
-                  <div key={ch.id} onClick={() => handleToggleChapter(ch.id)} style={{ padding: '16px 20px', borderRadius: '16px', border: '2px solid', borderColor: assignedChapters.includes(ch.id) ? '#6366f1' : '#f1f5f9', background: assignedChapters.includes(ch.id) ? '#f5f3ff' : 'white', display: 'flex', alignItems: 'center', gap: '16px', cursor: 'pointer' }}>
-                    <div style={{ width: '24px', height: '24px', borderRadius: '6px', background: assignedChapters.includes(ch.id) ? '#6366f1' : '#f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
-                      {assignedChapters.includes(ch.id) && <Check size={14} />}
+                {chapters.map(ch => {
+                  const isAssigned = assignedChapters.includes(ch.id);
+                  const isCompleted = completedChapters.includes(ch.id);
+                  const status = isCompleted ? 'DONE' : isAssigned ? 'ACTIVE' : null;
+
+                  return (
+                    <div 
+                      key={ch.id} 
+                      onClick={() => handleToggleChapter(ch.id)} 
+                      style={{ 
+                        padding: '16px 20px', 
+                        borderRadius: '16px', 
+                        border: '2px solid', 
+                        borderColor: isCompleted ? '#22c55e' : isAssigned ? '#6366f1' : '#f1f5f9', 
+                        background: isCompleted ? '#f0fdf4' : isAssigned ? '#f5f3ff' : 'white', 
+                        display: 'flex', 
+                        flexDirection: 'column',
+                        gap: '12px',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s'
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <div style={{ 
+                          width: '24px', 
+                          height: '24px', 
+                          borderRadius: '6px', 
+                          background: isCompleted ? '#22c55e' : isAssigned ? '#6366f1' : '#f1f5f9', 
+                          display: 'flex', 
+                          alignItems: 'center', 
+                          justifyContent: 'center', 
+                          color: 'white' 
+                        }}>
+                          {(isAssigned || isCompleted) && <Check size={14} />}
+                        </div>
+                        {status && (
+                          <span style={{ 
+                            fontSize: '0.65rem', 
+                            fontWeight: 900, 
+                            padding: '4px 8px', 
+                            borderRadius: '6px', 
+                            background: isCompleted ? 'rgba(34,197,94,0.1)' : 'rgba(99,102,241,0.1)',
+                            color: isCompleted ? '#166534' : '#4338ca',
+                            letterSpacing: '0.05em'
+                          }}>
+                            {status}
+                          </span>
+                        )}
+                      </div>
+                      <div style={{ fontWeight: 800, fontSize: '0.9rem', color: isCompleted ? '#166534' : isAssigned ? '#4338ca' : '#1e1b4b' }}>{ch.title}</div>
                     </div>
-                    <div style={{ fontWeight: 800, fontSize: '0.9rem' }}>{ch.title}</div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 

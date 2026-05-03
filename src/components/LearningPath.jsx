@@ -180,11 +180,16 @@ const LearningPath = ({ profile }) => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {curriculum.map((chapter, idx) => {
             const chapProgress = progress[chapter.id]?.progress || 0;
-            const isDone = chapProgress === 100;
             
             // NEW LOGIC: Respect teacher assignments
             const teacherAssigned = profile?.assignedChapters || [];
+            const teacherCompleted = profile?.completedChapters || [];
+            
+            const isTeacherCompleted = teacherCompleted.includes(chapter.id);
             const isTeacherAssigned = teacherAssigned.includes(chapter.id);
+            
+            // A chapter is "Done" if the teacher marked it so OR it's 100% complete
+            const isDone = isTeacherCompleted || chapProgress === 100;
             
             // A chapter is active if:
             // 1. It's the one currently opened (activeChapterId)
@@ -192,13 +197,13 @@ const LearningPath = ({ profile }) => {
             // 3. OR it's the fallback default (idx === 0 if no assignments exist)
             const isActive = activeChapterId === chapter.id || 
                            (isTeacherAssigned && !isDone) ||
-                           (!activeChapterId && teacherAssigned.length === 0 && idx === 0 && !isDone); 
+                           (!activeChapterId && teacherAssigned.length === 0 && teacherCompleted.length === 0 && idx === 0 && !isDone); 
             
-            // A chapter is "next" if it's the first non-done, non-active one in the assigned list
-            const isNext = !isDone && !isActive && (isTeacherAssigned || (teacherAssigned.length === 0 && idx < 3));
+            // A chapter is "next" if it's assigned by the teacher but not active/done
+            const isNext = !isDone && !isActive && (isTeacherAssigned || (teacherAssigned.length === 0 && teacherCompleted.length === 0 && idx < 3));
             
-            // A chapter is locked only if it's not teacher-assigned AND not within the default starting range
-            const isLocked = !isTeacherAssigned && (teacherAssigned.length > 0 || idx > 2);
+            // A chapter is locked only if it's not teacher-assigned/completed AND not within the default starting range
+            const isLocked = !isTeacherAssigned && !isTeacherCompleted && (teacherAssigned.length > 0 || teacherCompleted.length > 0 || idx > 2);
 
             return (
               <motion.div 
