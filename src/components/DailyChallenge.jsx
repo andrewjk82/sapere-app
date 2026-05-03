@@ -458,21 +458,28 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           isManual: true
         };
       }).filter(q => {
-        const yearMatches = !q.year || q.year === assignedYear;
-        const chapterMatches = targetChapterIds.has(q.chapterId);
-        const topicMatches = assignedTopics.length === 0 || !q.topicId || targetTopicIds.has(q.topicId);
-        return yearMatches && chapterMatches && topicMatches;
+        // LOOSENED FILTER: If year matches, prioritize manual questions
+        const yearMatches = !q.year || q.year === assignedYear || q.year.replace('Year ', '') === assignedYear.replace('Year ', '');
+        
+        // If question has a chapter, try to match it, but if it doesn't, let it through if year matches
+        const chapterMatches = !q.chapterId || q.chapterId === CHALLENGE_CHAPTER_ID || targetChapterIds.has(q.chapterId);
+        
+        return yearMatches && chapterMatches;
       });
     } catch (err) {
       console.error("Error fetching manual questions:", err);
     }
     
+    // Sort all valid manual questions randomly
     manualQs = manualQs.sort(() => Math.random() - 0.5);
-    const numManual = Math.min(5, manualQs.length); // Mix up to 5 manual questions
+    
+    // PRIORITIZATION: Take as many manual questions as possible first
+    const numManual = Math.min(qCount, manualQs.length);
     const selectedManual = manualQs.slice(0, numManual);
     
-    const numAI = qCount - numManual;
-    const aiQs = Array.from({ length: numAI }, () => {
+    // Fill the REMAINING slots with AI questions
+    const numAI = Math.max(0, qCount - numManual);
+    const aiQs = numAI > 0 ? Array.from({ length: numAI }, () => {
       const difficulty = pickWeightedDifficulty(chapterProgress?.difficultyMix);
       return generateQuestion({
         year: assignedYear,
@@ -481,9 +488,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         assignedTopics,
         difficulty,
       });
-    });
+    }) : [];
     
+    // Combine them (Manual first, or mixed? User said prioritize, so maybe put manual first)
+    // Actually mixing them is better for variety, but ensuring manual ones are there is the key.
     let combinedQs = [...selectedManual, ...aiQs];
+    // We still sort them randomly so the student doesn't know which is which
     combinedQs = combinedQs.sort(() => Math.random() - 0.5);
 
     setQuestions(combinedQs);
