@@ -181,9 +181,24 @@ const LearningPath = ({ profile }) => {
           {curriculum.map((chapter, idx) => {
             const chapProgress = progress[chapter.id]?.progress || 0;
             const isDone = chapProgress === 100;
-            const isActive = activeChapterId === chapter.id || (!activeChapterId && idx === 1); 
-            const isNext = !isDone && !isActive && idx === 2;
-            const isLocked = idx > 2;
+            
+            // NEW LOGIC: Respect teacher assignments
+            const teacherAssigned = profile?.assignedChapters || [];
+            const isTeacherAssigned = teacherAssigned.includes(chapter.id);
+            
+            // A chapter is active if:
+            // 1. It's the one currently opened (activeChapterId)
+            // 2. OR it's specifically assigned by the teacher
+            // 3. OR it's the fallback default (idx === 0 if no assignments exist)
+            const isActive = activeChapterId === chapter.id || 
+                           (isTeacherAssigned && !isDone) ||
+                           (!activeChapterId && teacherAssigned.length === 0 && idx === 0 && !isDone); 
+            
+            // A chapter is "next" if it's the first non-done, non-active one in the assigned list
+            const isNext = !isDone && !isActive && (isTeacherAssigned || (teacherAssigned.length === 0 && idx < 3));
+            
+            // A chapter is locked only if it's not teacher-assigned AND not within the default starting range
+            const isLocked = !isTeacherAssigned && (teacherAssigned.length > 0 || idx > 2);
 
             return (
               <motion.div 
@@ -198,7 +213,8 @@ const LearningPath = ({ profile }) => {
                   border: isActive ? '2px solid #818cf8' : '1px solid transparent',
                   cursor: isLocked ? 'default' : 'pointer',
                   opacity: isLocked ? 0.6 : 1,
-                  transition: 'all 0.2s'
+                  transition: 'all 0.2s',
+                  boxShadow: isActive ? '0 10px 30px rgba(99,102,241,0.08)' : 'none'
                 }}
               >
                 <div style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? '12px' : '20px' }}>
