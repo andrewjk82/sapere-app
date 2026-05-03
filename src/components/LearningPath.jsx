@@ -73,10 +73,18 @@ const LearningPath = ({ profile }) => {
     
     // Check if Maths is included
     if (studentSubject.includes('math') || studentSubject === '' || !profile?.subject) {
+      // Calculate dynamic progress for Maths
+      const teacherCompleted = profile?.completedChapters || [];
+      const totalChapters = curriculum.length || 1;
+      const completedInCurriculum = teacherCompleted.filter(id => 
+        curriculum.some(ch => ch.id === id)
+      ).length;
+      const dynamicProgress = Math.min(Math.round((completedInCurriculum / totalChapters) * 100), 100);
+
       subjects.push({
         id: 'Maths',
         label: 'Maths',
-        progress: 68,
+        progress: dynamicProgress,
         color: '#6366f1',
         lightColor: '#818cf8',
         shadow: 'rgba(99,102,241,0.12)'
@@ -88,7 +96,7 @@ const LearningPath = ({ profile }) => {
       subjects.push({
         id: 'English',
         label: 'English',
-        progress: 52,
+        progress: 0,
         color: '#10b981',
         lightColor: '#10b981',
         shadow: 'rgba(16,185,129,0.1)'
@@ -240,7 +248,7 @@ const LearningPath = ({ profile }) => {
                     <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? '8px' : '12px', marginBottom: '8px' }}>
                       <h3 style={{ margin: 0, fontSize: isMobile ? '0.95rem' : '1.1rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{chapter.title}</h3>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1' }}>{chapProgress}%</span>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1' }}>{isTeacherCompleted ? 100 : chapProgress}%</span>
                         <div style={{ 
                           padding: '4px 10px', 
                           borderRadius: '8px', 
