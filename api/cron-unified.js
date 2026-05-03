@@ -43,7 +43,7 @@ export default async function handler(req, res) {
       return `${displayH}:${String(m).padStart(2, '0')} ${period}`;
     };
 
-    // ── Get current Sydney time in minutes ────────────────────────────────
+    // ── Get current Sydney time ───────────────────────────────────────────
     const sydneyParts = new Intl.DateTimeFormat('en-AU', {
       hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney'
     }).formatToParts(nowUTC);
@@ -51,10 +51,10 @@ export default async function handler(req, res) {
     const sydHour   = parseInt(sydneyParts.find(p => p.type === 'hour').value);
     const sydMinute = parseInt(sydneyParts.find(p => p.type === 'minute').value);
     const sydTotalMin = sydHour * 60 + sydMinute;
+    const todayStr    = getSydneyDateStr(nowUTC);
 
     logs.push(`[Cron] Sydney time: ${sydHour}:${String(sydMinute).padStart(2,'0')} (${sydTotalMin} min)`);
 
-    // ── Nodemailer transport ───────────────────────────────────────────────
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com', port: 465, secure: true,
       auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS }
@@ -62,59 +62,24 @@ export default async function handler(req, res) {
 
     // ══════════════════════════════════════════════════════════════════════
     // PART 1: 2-Hour Reminder
-    // Target = sessions starting 2 hours from now (±15 min window)
     // ══════════════════════════════════════════════════════════════════════
-    const targetMin = sydTotalMin + 120; // 2 hours ahead in minutes
-    const windowMin = 15; // ±15 minute tolerance
-
-    // The date for the session (could be today or tomorrow if near midnight)
-    const todayStr    = getSydneyDateStr(nowUTC);
+    const targetMin = sydTotalMin + 120;
+    const windowMin = 15;
     const tomorrowUTC = new Date(nowUTC.getTime() + 24 * 60 * 60 * 1000);
     const tomorrowStr = getSydneyDateStr(tomorrowUTC);
 
-    // Fetch ALL sessions for today and tomorrow that haven't had reminder sent
-    const sessionDates = targetMin >= 1440
-      ? [tomorrowStr]   // target wraps into next day
-      : [todayStr];
-
-    logs.push(`[Cron] Checking sessions on: ${sessionDates.join(', ')} | Target window: ${formatMinutes(targetMin - windowMin)} – ${formatMinutes(targetMin + windowMin)}`);
-
-    // Normalize target minutes for next-day wrap (e.g. 25:30 → 1:30)
+    const sessionDates = targetMin >= 1440 ? [tomorrowStr] : [todayStr];
     const normalizedTarget = targetMin >= 1440 ? targetMin - 1440 : targetMin;
 
     for (const dateStr of sessionDates) {
-      const snap = await db.collection('sessions')
-        .where('date', '==', dateStr)
-        .get();  // ← No compound filter; we filter reminderSent in JS to avoid index requirement
-
-      logs.push(`[Cron] Found ${snap.docs.length} total sessions on ${dateStr}`);
-
+      const snap = await db.collection('sessions').where('date', '==', dateStr).get();
       for (const docSnapshot of snap.docs) {
         const s = docSnapshot.data();
-
-        // Skip if reminder already sent (filter in JS, not Firestore)
-        if (s.reminderSent === true) {
-          logs.push(`[Cron] SKIP: reminder already sent for ${s.studentName} @ ${s.startTime}`);
-          continue;
-        }
+        if (s.reminderSent === true) continue;
 
         const sessionMin = parseTimeStr(s.startTime);
-
-        logs.push(`[Cron] Session: ${s.studentName} @ ${s.startTime} (${sessionMin} min) | target=${normalizedTarget} diff=${Math.abs(sessionMin - normalizedTarget)}`);
-
-        if (sessionMin === null) {
-          logs.push(`[Cron] SKIP: Could not parse startTime "${s.startTime}"`);
-          continue;
-        }
-
-        if (Math.abs(sessionMin - normalizedTarget) <= windowMin) {
-          logs.push(`[Cron] ✅ MATCH! Sending 2hr reminder to ${s.studentName}`);
-          await sendNotification(
-            db, transporter, s,
-            'class_reminder',
-            `Your ${s.subject} class starts in 2 hours!`,
-            `Don't forget: ${s.subject} @ ${s.startTime} today!`
-          );
+        if (sessionMin !== null && Math.abs(sessionMin - normalizedTarget) <= windowMin) {
+          await sendNotification(db, transporter, s, 'class_reminder', `Your ${s.subject} class starts in 2 hours!`, `Don't forget: ${s.subject} @ ${s.startTime} today!`);
           await docSnapshot.ref.update({ reminderSent: true });
           logs.push(`2hr reminder sent to ${s.studentName}`);
         }
@@ -122,24 +87,81 @@ export default async function handler(req, res) {
     }
 
     // ══════════════════════════════════════════════════════════════════════
-    // PART 2: 8PM Next-Day Reminder
+    // PART 2: 8PM Daily Wrap-up (Tasks & Tomorrow's Schedule)
     // ══════════════════════════════════════════════════════════════════════
     if (sydHour === 20 && sydMinute < 30) {
-      logs.push(`[Cron] 8PM window reached. Checking tomorrow: ${tomorrowStr}`);
+      logs.push(`[Cron] 8PM reached. Checking tasks and tomorrow's schedule...`);
 
-      const snapDaily = await db.collection('sessions')
-        .where('date', '==', tomorrowStr)
-        .get();
+      // 1. Fetch all students
+      const studentsSnap = await db.collection('users').where('role', '==', 'student').get();
+      
+      // 2. Fetch all tomorrow's sessions to map them to students
+      const tomorrowSessionsSnap = await db.collection('sessions').where('date', '==', tomorrowStr).get();
+      const sessionsByStudent = {};
+      tomorrowSessionsSnap.docs.forEach(doc => {
+        const data = doc.data();
+        if (!sessionsByStudent[data.studentId]) sessionsByStudent[data.studentId] = [];
+        sessionsByStudent[data.studentId].push(data);
+      });
 
-      for (const docSnapshot of snapDaily.docs) {
-        const s = docSnapshot.data();
-        await sendNotification(
-          db, transporter, s,
-          'daily_reminder',
-          `You have a ${s.subject} class tomorrow!`,
-          `Tomorrow's class: ${s.subject} @ ${s.startTime}`
-        );
-        logs.push(`Daily reminder sent to ${s.studentName}`);
+      for (const studentDoc of studentsSnap.docs) {
+        const student = studentDoc.data();
+        const studentId = studentDoc.id;
+        const studentEmail = student.email;
+
+        // Skip if already sent 8PM reminder (safety)
+        if (student.last8PMReminderDate === todayStr) continue;
+
+        // A. Check Today's Challenge
+        const challengeSnap = await db.collection('users').doc(studentId).collection('daily_stats').doc(todayStr).get();
+        const challengeDone = challengeSnap.exists && challengeSnap.data().completed === true;
+
+        // B. Check Today's Calculation (if enabled)
+        const calcEnabled = student.calculationEnabled !== false;
+        let calcDone = true;
+        if (calcEnabled) {
+          // Check if any calc session exists for today
+          const calcSnap = await db.collection('users').doc(studentId).collection('calc_stats')
+            .where('timestamp', '>=', todayStr)
+            .limit(1).get();
+          calcDone = !calcSnap.empty;
+        }
+
+        const tomorrowClasses = sessionsByStudent[studentId] || [];
+        const hasUnfinishedTasks = !challengeDone || (calcEnabled && !calcDone);
+
+        // Send reminder if they have classes tomorrow OR unfinished tasks today
+        if (tomorrowClasses.length > 0 || hasUnfinishedTasks) {
+          let body = `<h2 style="color: #4f46e5;">Hello, ${student.name || 'Student'}!</h2>`;
+          
+          if (hasUnfinishedTasks) {
+            body += `<div style="background: #fff1f2; padding: 15px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #fecaca;">`;
+            body += `<strong style="color: #e11d48;">⚠️ Unfinished Tasks for Today:</strong><ul style="margin: 10px 0;">`;
+            if (!challengeDone) body += `<li>Daily Challenge is not completed yet!</li>`;
+            if (calcEnabled && !calcDone) body += `<li>Daily Calculation practice is missing!</li>`;
+            body += `</ul></div>`;
+          }
+
+          if (tomorrowClasses.length > 0) {
+            body += `<div style="background: #f0f9ff; padding: 15px; border-radius: 12px; border: 1px solid #bae6fd;">`;
+            body += `<strong style="color: #0369a1;">📅 Tomorrow's Schedule (${tomorrowStr}):</strong><ul style="margin: 10px 0;">`;
+            tomorrowClasses.forEach(c => {
+              body += `<li><strong>${c.subject}</strong> @ ${c.startTime}</li>`;
+            });
+            body += `</ul></div>`;
+          }
+
+          body += `<p style="margin-top: 20px; color: #64748b; font-size: 14px;">Keep up the great work! See you soon.</p>`;
+
+          await sendNotification(db, transporter, { studentId, studentEmail, name: student.name }, 'daily_wrapup', 
+            hasUnfinishedTasks ? "You have unfinished tasks today!" : "Your schedule for tomorrow", 
+            body
+          );
+          
+          // Mark as sent
+          await studentDoc.ref.update({ last8PMReminderDate: todayStr });
+          logs.push(`8PM Wrap-up sent to ${student.name}`);
+        }
       }
     }
 
@@ -151,39 +173,37 @@ export default async function handler(req, res) {
   }
 }
 
-// ── Send email + push + save to notification history ──────────────────────
 async function sendNotification(db, transporter, session, type, subject, body) {
   const studentId    = session.studentId;
   const studentEmail = session.studentEmail || session.email;
 
-  // Email
   if (studentEmail) {
     try {
       await transporter.sendMail({
         from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
         to: studentEmail,
-        subject: `[Reminder] ${subject}`,
+        subject: `[Sapere] ${subject}`,
         html: `
-          <div style="font-family: sans-serif; padding: 40px; background-color: #f4f6fc;">
-            <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 24px; padding: 40px; border: 1px solid #eef2ff;">
-              <h1 style="color: #6366f1; margin-top: 0;">Sapere Aude</h1>
-              <p style="color: #475569; line-height: 1.6; font-size: 16px;">${body}</p>
+          <div style="font-family: sans-serif; padding: 20px; background-color: #f8fafc;">
+            <div style="max-width: 500px; margin: 0 auto; background: white; border-radius: 20px; padding: 30px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">
+              ${body}
+              <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #f1f5f9; text-align: center;">
+                <span style="color: #94a3b8; font-size: 12px;">© Sapere Aude Academia</span>
+              </div>
             </div>
           </div>`
       });
-      console.log(`[Email] Sent to ${studentEmail}`);
-    } catch (e) {
-      console.error(`[Email] FAILED for ${studentEmail}:`, e.message);
-    }
-  } else {
-    console.warn(`[Email] No email found for session (studentId: ${studentId})`);
+    } catch (e) { console.error(`Email fail:`, e.message); }
   }
 
-  // Firestore notification history + Push
   if (studentId) {
     const userRef = db.collection('users').doc(studentId);
     await userRef.collection('notifications').add({
-      title: subject, body, timestamp: admin.firestore.FieldValue.serverTimestamp(), read: false, type
+      title: subject, 
+      body: body.replace(/<[^>]*>/g, ''), // Strip HTML for push
+      timestamp: admin.firestore.FieldValue.serverTimestamp(), 
+      read: false, 
+      type
     });
 
     const userDoc = await userRef.get();
@@ -192,13 +212,10 @@ async function sendNotification(db, transporter, session, type, subject, body) {
       if (tokens.length > 0) {
         try {
           await admin.messaging().sendEachForMulticast({
-            notification: { title: subject, body },
+            notification: { title: subject, body: body.replace(/<[^>]*>/g, '').substring(0, 100) + '...' },
             tokens
           });
-          console.log(`[Push] Sent to ${tokens.length} device(s) for ${studentId}`);
-        } catch (e) {
-          console.error(`[Push] FAILED for ${studentId}:`, e.message);
-        }
+        } catch (e) { console.error(`Push fail:`, e.message); }
       }
     }
   }
