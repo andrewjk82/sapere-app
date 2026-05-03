@@ -5,7 +5,7 @@ import {
   ChevronLeft, Calendar, BookOpen, 
   MessageSquare, Trophy, 
   Mail, Phone, Check, Clock,
-  Edit3, Save, Bell, X, MapPin
+  Edit3, Save, Bell, X, MapPin, Target
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { 
