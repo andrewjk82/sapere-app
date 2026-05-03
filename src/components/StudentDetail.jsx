@@ -169,6 +169,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const handleToggleChapter = async (chapterId) => {
+    // Use the latest values from the existing state
     const isAssigned = assignedChapters.includes(chapterId);
     const isCompleted = completedChapters.includes(chapterId);
 
@@ -185,8 +186,10 @@ const StudentDetail = ({ studentId, onBack }) => {
     } else {
       // Done -> Unassigned
       nextCompleted = nextCompleted.filter(id => id !== chapterId);
+      nextAssigned = nextAssigned.filter(id => id !== chapterId); // Safety
     }
 
+    // Update local state immediately for snappy UI
     setAssignedChapters(nextAssigned);
     setCompletedChapters(nextCompleted);
 
@@ -196,7 +199,10 @@ const StudentDetail = ({ studentId, onBack }) => {
         assignedChapters: nextAssigned,
         completedChapters: nextCompleted 
       });
-    } catch (e) { console.error(e); }
+    } catch (e) { 
+      console.error(e);
+      // Optional: rollback on error?
+    }
   };
 
   const handleImageUpload = async (e) => {
@@ -414,17 +420,39 @@ const StudentDetail = ({ studentId, onBack }) => {
                   const isPartiallyAssigned = !isFullyAssigned && stageTopicIds.some(id => assignedChapters.includes(id));
 
                   const toggleStage = () => {
-                    let newChapters = [...assignedChapters];
-                    if (isFullyAssigned) {
-                      newChapters = newChapters.filter(id => !stageTopicIds.includes(id));
-                    } else {
+                    const allInDone = stageTopicIds.every(id => completedChapters.includes(id));
+                    const allInActive = stageTopicIds.every(id => assignedChapters.includes(id));
+                    
+                    let nextAssigned = [...assignedChapters];
+                    let nextCompleted = [...completedChapters];
+
+                    if (!allInActive && !allInDone) {
+                      // None -> All Active
                       stageTopicIds.forEach(id => {
-                        if (!newChapters.includes(id)) newChapters.push(id);
+                        if (!nextAssigned.includes(id)) nextAssigned.push(id);
+                        nextCompleted = nextCompleted.filter(cid => cid !== id);
+                      });
+                    } else if (allInActive) {
+                      // All Active -> All Done
+                      stageTopicIds.forEach(id => {
+                        nextAssigned = nextAssigned.filter(aid => aid !== id);
+                        if (!nextCompleted.includes(id)) nextCompleted.push(id);
+                      });
+                    } else {
+                      // All Done -> None
+                      stageTopicIds.forEach(id => {
+                        nextAssigned = nextAssigned.filter(aid => aid !== id);
+                        nextCompleted = nextCompleted.filter(cid => cid !== id);
                       });
                     }
-                    setAssignedChapters(newChapters);
+
+                    setAssignedChapters(nextAssigned);
+                    setCompletedChapters(nextCompleted);
                     const colName = student.source === 'manual' ? 'students' : 'users';
-                    updateDoc(doc(db, colName, studentId), { assignedChapters: newChapters }).catch(console.error);
+                    updateDoc(doc(db, colName, studentId), { 
+                      assignedChapters: nextAssigned,
+                      completedChapters: nextCompleted
+                    }).catch(console.error);
                   };
 
                   return (
@@ -437,12 +465,30 @@ const StudentDetail = ({ studentId, onBack }) => {
                       </div>
                       
                       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '8px', paddingLeft: '40px', marginTop: '8px' }}>
-                        {stage.topics.map(topic => (
-                          <div key={topic.id} onClick={() => handleToggleChapter(topic.id)} style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', opacity: assignedChapters.includes(topic.id) ? 1 : 0.5 }}>
-                            <div style={{ width: '16px', height: '16px', borderRadius: '4px', border: '2px solid #d97706', background: assignedChapters.includes(topic.id) ? '#d97706' : 'transparent' }} />
-                            <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#78350f' }}>{topic.group}: {topic.title}</span>
-                          </div>
-                        ))}
+                        {stage.topics.map(topic => {
+                          const isTopicAssigned = assignedChapters.includes(topic.id);
+                          const isTopicCompleted = completedChapters.includes(topic.id);
+                          return (
+                            <div key={topic.id} onClick={() => handleToggleChapter(topic.id)} style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', transition: 'all 0.2s' }}>
+                              <div style={{ 
+                                width: '16px', 
+                                height: '16px', 
+                                borderRadius: '4px', 
+                                border: '2px solid',
+                                borderColor: isTopicCompleted ? '#22c55e' : isTopicAssigned ? '#6366f1' : '#d97706',
+                                background: isTopicCompleted ? '#22c55e' : isTopicAssigned ? '#6366f1' : 'transparent' 
+                              }} />
+                              <span style={{ 
+                                fontSize: '0.8rem', 
+                                fontWeight: 600, 
+                                color: isTopicCompleted ? '#166534' : isTopicAssigned ? '#4338ca' : '#78350f',
+                                opacity: (isTopicAssigned || isTopicCompleted) ? 1 : 0.5 
+                              }}>
+                                {topic.group}: {topic.title}
+                              </span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   );
