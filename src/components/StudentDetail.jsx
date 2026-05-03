@@ -456,13 +456,24 @@ const StudentDetail = ({ studentId, onBack }) => {
         <div style={styles.card}>
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '16px' }}>ACADEMIC PROGRESS</div>
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px', fontWeight: 800 }}>
-              <span>Curriculum</span>
-              <span style={{ color: '#6366f1' }}>{Math.round((assignedChapters.length / (chapters.length || 1)) * 100)}%</span>
-            </div>
-            <div style={{ height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
-              <div style={{ width: `${(assignedChapters.length / (chapters.length || 1)) * 100}%`, height: '100%', background: '#6366f1' }}></div>
-            </div>
+            {(() => {
+              const currentChapterIds = chapters.map(ch => ch.id);
+              const assignedInCurriculum = assignedChapters.filter(id => currentChapterIds.includes(id));
+              const progressPct = Math.round((assignedInCurriculum.length / (chapters.length || 1)) * 100);
+              const clampedPct = Math.min(progressPct, 100);
+              
+              return (
+                <>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px', fontWeight: 800 }}>
+                    <span>Curriculum</span>
+                    <span style={{ color: '#6366f1' }}>{clampedPct}%</span>
+                  </div>
+                  <div style={{ height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
+                    <div style={{ width: `${clampedPct}%`, height: '100%', background: '#6366f1' }}></div>
+                  </div>
+                </>
+              );
+            })()}
           </div>
         </div>
       </div>
