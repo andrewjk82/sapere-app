@@ -359,7 +359,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
             <div style={styles.card} className="profile-card-mobile">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px', flexWrap: 'wrap', gap: '20px' }}>
-                <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>BASIC CALCULATION</div>
+                <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>BASIC CALCULATION (V1.5)</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                   <div 
                     onClick={() => handleUpdateCurriculumSetting('calculationEnabled', (student?.calculationEnabled ?? true) === false)}
@@ -399,41 +399,40 @@ const StudentDetail = ({ studentId, onBack }) => {
                       {(student?.calculationEnabled ?? true) !== false ? 'ENABLED' : 'DISABLED'}
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-                    <div style={{ 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      gap: '12px', 
-                      background: '#fffbeb', 
-                      padding: '6px 16px', 
-                      borderRadius: '20px', 
-                      border: '1px solid #fef3c7',
-                      boxShadow: '0 2px 8px rgba(217, 119, 6, 0.05)'
-                    }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#d97706', textTransform: 'uppercase' }}>Timer</span>
-                        <select 
-                          value={student.calcTimeLimit || 30} 
-                          onChange={e => handleUpdateCurriculumSetting('calcTimeLimit', parseInt(e.target.value) || 30)}
-                          style={{ background: 'white', border: '1px solid #fcd34d', borderRadius: '8px', fontWeight: 900, color: '#92400e', outline: 'none', padding: '2px 8px', fontSize: '0.9rem', cursor: 'pointer' }}
-                        >
-                          {[1,2,3,4,5,6,7,8,9,10].map(step => (
-                            <option key={step} value={step * 30}>{step * 30}s</option>
-                          ))}
-                        </select>
-                      </div>
-                      <div style={{ width: '1px', height: '16px', background: '#fef3c7' }}></div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#d97706', textTransform: 'uppercase' }}>Count</span>
-                        <input 
-                          type="number" 
-                          min="5" 
-                          max="50"
-                          value={student.calcQuestionCount || 10} 
-                          onChange={e => handleUpdateCurriculumSetting('calcQuestionCount', parseInt(e.target.value) || 10)}
-                          style={{ width: '40px', background: 'white', border: '1px solid #fcd34d', borderRadius: '8px', fontWeight: 900, color: '#92400e', outline: 'none', textAlign: 'center', fontSize: '0.9rem', padding: '2px 0' }}
-                        />
-                      </div>
+                  
+                  <div style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '8px', 
+                    background: '#fffbeb', 
+                    padding: '8px 16px', 
+                    borderRadius: '12px', 
+                    border: '2px solid #fcd34d',
+                    boxShadow: '0 4px 12px rgba(217, 119, 6, 0.1)'
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 900, color: '#92400e' }}>TIMER:</span>
+                      <select 
+                        value={student.calcTimeLimit || 30} 
+                        onChange={e => handleUpdateCurriculumSetting('calcTimeLimit', parseInt(e.target.value) || 30)}
+                        style={{ background: 'white', border: '1px solid #fcd34d', borderRadius: '6px', fontWeight: 900, color: '#92400e', outline: 'none', padding: '2px 4px', fontSize: '1rem', cursor: 'pointer' }}
+                      >
+                        {[30,60,90,120,150,180,210,240,270,300].map(s => (
+                          <option key={s} value={s}>{s}s</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div style={{ width: '2px', height: '20px', background: '#fcd34d' }}></div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 900, color: '#92400e' }}>COUNT:</span>
+                      <input 
+                        type="number" 
+                        min="5" 
+                        max="50"
+                        value={student.calcQuestionCount || 10} 
+                        onChange={e => handleUpdateCurriculumSetting('calcQuestionCount', parseInt(e.target.value) || 10)}
+                        style={{ width: '45px', background: 'white', border: '1px solid #fcd34d', borderRadius: '6px', fontWeight: 900, color: '#92400e', outline: 'none', textAlign: 'center', fontSize: '1rem' }}
+                      />
                     </div>
                   </div>
                 </div>
