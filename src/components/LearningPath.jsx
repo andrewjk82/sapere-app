@@ -104,7 +104,7 @@ const LearningPath = ({ profile }) => {
     }
     
     return subjects;
-  }, [profile?.subject]);
+  }, [profile?.subject, profile?.completedChapters, curriculum]);
 
   // Ensure activeSubject is valid for the current student
   useEffect(() => {
