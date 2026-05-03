@@ -977,92 +977,119 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           padding: '40px 20px',
         }}>
           <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }} 
-            animate={{ opacity: 1, scale: 1 }} 
+            initial={{ opacity: 0, scale: 0.95, y: 20 }} 
+            animate={{ opacity: 1, scale: 1, y: 0 }} 
             className="app-panel" 
             style={{ 
               textAlign: 'center', 
-              padding: '48px 40px', 
-              borderRadius: '40px',
+              padding: '60px 40px', 
+              borderRadius: '48px',
               width: '100%',
-              maxWidth: '600px',
-              boxShadow: '0 25px 50px rgba(0,0,0,0.05)',
-              border: todayCompleted ? '1px solid #dcfce7' : '1px solid #fee2e2',
-              background: todayCompleted ? '#fff' : '#fff1f2'
+              maxWidth: '620px',
+              boxShadow: '0 30px 60px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.02)',
+              border: '1px solid #f1f5f9',
+              background: '#fff',
+              position: 'relative',
+              overflow: 'hidden'
             }}
           >
+            {/* Top Accent Strip */}
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              height: '8px',
+              background: todayCompleted 
+                ? 'linear-gradient(90deg, #10b981, #34d399)' 
+                : 'linear-gradient(90deg, #f43f5e, #fb7185)'
+            }} />
+
             <div style={{ 
-              width: '100px', 
-              height: '100px', 
-              background: todayCompleted ? '#f0fdf4' : '#fef2f2', 
-              borderRadius: '50%', 
+              width: '110px', 
+              height: '110px', 
+              background: todayCompleted ? '#f0fdf4' : '#fff1f2', 
+              borderRadius: '35%', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center', 
-              margin: '0 auto 32px', 
-              color: todayCompleted ? '#10b981' : '#f43f5e' 
+              margin: '0 auto 36px', 
+              color: todayCompleted ? '#10b981' : '#f43f5e',
+              boxShadow: todayCompleted ? '0 15px 30px rgba(16, 185, 129, 0.1)' : '0 15px 30px rgba(244, 63, 94, 0.1)',
+              transform: 'rotate(-5deg)'
             }}>
-              {todayCompleted ? <Trophy size={50} /> : <AlertTriangle size={50} />}
+              {todayCompleted ? <Trophy size={56} /> : <AlertTriangle size={56} />}
             </div>
             
-            <h2 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '16px', color: todayCompleted ? '#166534' : '#9f1239' }}>
-              {todayCompleted ? "Amazing Work!" : "Challenge Terminated"}
+            <h2 style={{ 
+              fontSize: '2.5rem', 
+              fontWeight: 900, 
+              marginBottom: '20px', 
+              color: '#1e1b4b',
+              letterSpacing: '-0.02em'
+            }}>
+              {todayCompleted ? "Goal Achieved!" : "Session Ended"}
             </h2>
 
             <div style={{ 
-              padding: '24px', 
-              borderRadius: '24px', 
-              background: todayCompleted ? 'transparent' : 'rgba(255,255,255,0.6)',
-              marginBottom: '40px'
+              padding: '28px', 
+              borderRadius: '28px', 
+              background: todayCompleted ? '#f8fafc' : '#fffafb',
+              border: todayCompleted ? '1px solid #f1f5f9' : '1px solid #fff1f2',
+              marginBottom: '48px'
             }}>
               {todayCompleted ? (
-                <p style={{ color: '#64748b', fontWeight: 600, fontSize: '1.2rem', margin: 0, lineHeight: 1.6 }}>
-                  You've already completed your {getQuestionCount('daily')}-question challenge for today. <br/>
-                  <span style={{ color: '#6366f1' }}>Come back tomorrow for your next points!</span>
+                <p style={{ color: '#475569', fontWeight: 600, fontSize: '1.25rem', margin: 0, lineHeight: 1.6 }}>
+                  Excellent work! You've completed your challenge. <br/>
+                  <span style={{ color: '#6366f1', display: 'block', marginTop: '8px' }}>Come back tomorrow for your next points!</span>
                 </p>
               ) : (
-                <p style={{ color: '#be123c', fontWeight: 700, fontSize: '1.2rem', margin: 0, lineHeight: 1.6 }}>
-                  The challenge has been **automatically terminated** due to a page refresh or navigation. <br/>
-                  <span style={{ display: 'block', marginTop: '12px', fontSize: '1rem', opacity: 0.8 }}>
-                    0 points have been awarded, and your opportunity for today is finished. <br/>
-                    <strong>Try again tomorrow with a fresh start!</strong>
-                  </span>
-                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                  <p style={{ color: '#be123c', fontWeight: 800, fontSize: '1.3rem', margin: 0, lineHeight: 1.5 }}>
+                    The challenge was automatically terminated.
+                  </p>
+                  <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1rem', margin: 0, lineHeight: 1.6 }}>
+                    This happens when the page is refreshed or left during a session. 
+                    <span style={{ display: 'block', marginTop: '12px', color: '#94a3b8' }}>
+                      0 points awarded. <strong>Try again tomorrow!</strong>
+                    </span>
+                  </p>
+                </div>
               )}
             </div>
             
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '320px', margin: '0 auto' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '340px', margin: '0 auto' }}>
               <button 
                 onClick={() => setViewMode('history')} 
                 className="app-button" 
                 style={{ 
                   width: '100%', 
-                  padding: '18px', 
-                  borderRadius: '16px', 
-                  background: todayCompleted ? '#6366f1' : '#1e1b4b',
+                  padding: '20px', 
+                  borderRadius: '20px', 
+                  background: '#1e1b4b',
                   color: 'white',
                   fontWeight: 800,
-                  fontSize: '1rem',
+                  fontSize: '1.1rem',
                   border: 'none',
                   cursor: 'pointer',
-                  boxShadow: '0 10px 20px rgba(0,0,0,0.1)'
+                  boxShadow: '0 12px 24px rgba(30, 27, 75, 0.15)',
+                  transition: 'transform 0.2s ease'
                 }}
               >
                 View History & Stats
               </button>
               <button 
                 onClick={onBack} 
-                className="app-button" 
                 style={{ 
                   width: '100%', 
-                  padding: '12px', 
+                  padding: '14px', 
                   background: 'transparent',
-                  color: '#64748b',
-                  fontWeight: 800,
+                  color: '#94a3b8',
+                  fontWeight: 700,
                   fontSize: '0.95rem',
                   border: 'none',
                   cursor: 'pointer',
-                  textDecoration: 'underline'
+                  textDecoration: 'none'
                 }}
               >
                 Back to Dashboard
