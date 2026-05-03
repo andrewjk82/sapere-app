@@ -242,12 +242,12 @@ export const CURRICULUM_DATA = {
       title: 'Representing Whole Numbers',
       modules: 6,
       topics: [
-        { id: 'y2-rwn-1', code: 'MA1-RWN-01', title: '3-digit numbers (to 1000)' },
-        { id: 'y2-rwn-2', code: 'MA1-RWN-01', title: 'Place value (hundreds, tens, ones)' },
-        { id: 'y2-rwn-3', code: 'MA1-RWN-01', title: 'Count to 1000 (before & after)' },
-        { id: 'y2-rwn-4', code: 'MA1-RWN-02', title: 'Partition numbers (standard & non-standard)' },
-        { id: 'y2-rwn-5', code: 'MA1-RWN-02', title: 'Rounding (to nearest 10 and 100)' },
-        { id: 'y2-rwn-6', code: 'MA1-RWN-02', title: 'Money (Australian notes and coins)' }
+        { id: 'y2-rwn-1', code: 'MA1-RWN-01', title: '3-digit numbers: Read, write and represent numbers to 1000' },
+        { id: 'y2-rwn-2', code: 'MA1-RWN-01', title: 'Place value: Hundreds, tens and ones; identify digit values' },
+        { id: 'y2-rwn-3', code: 'MA1-RWN-01', title: 'Count to 1000: Count in 1s, 10s and 100s; before & after to 1000' },
+        { id: 'y2-rwn-4', code: 'MA1-RWN-02', title: 'Partition numbers: Standard and non-standard partitioning of 3-digit numbers' },
+        { id: 'y2-rwn-5', code: 'MA1-RWN-02', title: 'Rounding: Round to nearest 10 and nearest 100' },
+        { id: 'y2-rwn-6', code: 'MA1-RWN-02', title: 'Money: Count and order Australian notes and coins' }
       ]
     },
     {
@@ -255,11 +255,11 @@ export const CURRICULUM_DATA = {
       title: 'Combining and Separating Quantities',
       modules: 5,
       topics: [
-        { id: 'y2-csq-1', code: 'MA1-CSQ-01', title: 'Additive relations (combinations to 20)' },
-        { id: 'y2-csq-2', code: 'MA1-CSQ-01', title: 'Add and subtract to 100 (mental strategies)' },
-        { id: 'y2-csq-3', code: 'MA1-CSQ-01', title: 'Extend to 200 (place value strategies)' },
-        { id: 'y2-csq-4', code: 'MA1-CSQ-01', title: 'Bar model (part-whole within 20)' },
-        { id: 'y2-csq-5', code: 'MA1-CSQ-01', title: 'Word problems (unknowns & equality)' }
+        { id: 'y2-csq-1', code: 'MA1-CSQ-01', title: 'Additive relations: Combinations to 20; fact families; commutative property' },
+        { id: 'y2-csq-2', code: 'MA1-CSQ-01', title: 'Add and subtract to 100: Mental strategies; adding/subtracting tens' },
+        { id: 'y2-csq-3', code: 'MA1-CSQ-01', title: 'Extend to 200: Place value strategies crossing tens' },
+        { id: 'y2-csq-4', code: 'MA1-CSQ-01', title: 'Bar model: Represent problems using bar/part-whole model within 20' },
+        { id: 'y2-csq-5', code: 'MA1-CSQ-01', title: 'Word problems: Unknowns; equality and missing numbers' }
       ]
     },
     {
@@ -267,10 +267,10 @@ export const CURRICULUM_DATA = {
       title: 'Forming Groups',
       modules: 4,
       topics: [
-        { id: 'y2-fg-1', code: 'MA1-FG-01', title: 'Multiplication (equal groups & arrays)' },
-        { id: 'y2-fg-2', code: 'MA1-FG-01', title: 'Multiplication facts (2x, 5x, 10x tables)' },
-        { id: 'y2-fg-3', code: 'MA1-FG-01', title: 'Division (sharing, grouping, remainders)' },
-        { id: 'y2-fg-4', code: 'MA1-FG-01', title: 'Fractions (halves, quarters, eighths)' }
+        { id: 'y2-fg-1', code: 'MA1-FG-01', title: 'Multiplication: Equal groups; commutative property; arrays' },
+        { id: 'y2-fg-2', code: 'MA1-FG-01', title: 'Multiplication facts: Solve problems using 2x, 5x and 10x tables' },
+        { id: 'y2-fg-3', code: 'MA1-FG-01', title: 'Division: Sharing and grouping; repeated subtraction; remainders' },
+        { id: 'y2-fg-4', code: 'MA1-FG-01', title: 'Fractions: Halves, quarters and eighths of shapes and sets' }
       ]
     },
     {
@@ -278,10 +278,10 @@ export const CURRICULUM_DATA = {
       title: 'Geometric Measure',
       modules: 4,
       topics: [
-        { id: 'y2-gm-1', code: 'MA1-GM-01', title: 'Length - formal units (metres & centimetres)' },
-        { id: 'y2-gm-2', code: 'MA1-GM-02', title: 'Length - informal units (compare & order)' },
-        { id: 'y2-gm-3', code: 'MA1-GM-03', title: 'Fractions of length (repeated halving)' },
-        { id: 'y2-gm-4', code: 'MA1-GM-03', title: 'Position & maps (paths & directions)' }
+        { id: 'y2-gm-1', code: 'MA1-GM-01', title: 'Length - formal units: Measure using metres and centimetres' },
+        { id: 'y2-gm-2', code: 'MA1-GM-02', title: 'Length - informal units: Compare and order using informal units' },
+        { id: 'y2-gm-3', code: 'MA1-GM-03', title: 'Fractions of length: Halves, quarters and eighths using repeated halving' },
+        { id: 'y2-gm-4', code: 'MA1-GM-03', title: 'Position and maps: Read simple maps; follow a path using directions' }
       ]
     },
     {
@@ -289,10 +289,10 @@ export const CURRICULUM_DATA = {
       title: 'Non-Spatial Measure',
       modules: 4,
       topics: [
-        { id: 'y2-nsm-1', code: 'MA1-NSM-01', title: 'Time - tell the time (quarter-hour)' },
-        { id: 'y2-nsm-2', code: 'MA1-NSM-01', title: 'Time - units (hours, minutes, seconds)' },
-        { id: 'y2-nsm-3', code: 'MA1-NSM-02', title: 'Calendars (solving simple problems)' },
-        { id: 'y2-nsm-4', code: 'MA1-NSM-02', title: 'Mass (compare & order informal units)' }
+        { id: 'y2-nsm-1', code: 'MA1-NSM-01', title: 'Time - tell the time: Hour, half-hour and quarter-hour' },
+        { id: 'y2-nsm-2', code: 'MA1-NSM-01', title: 'Time - units: Hours, minutes, seconds; choose appropriate units' },
+        { id: 'y2-nsm-3', code: 'MA1-NSM-02', title: 'Calendars: Use calendars to solve simple problems' },
+        { id: 'y2-nsm-4', code: 'MA1-NSM-02', title: 'Mass: Compare and order mass using informal units' }
       ]
     },
     {
@@ -300,10 +300,10 @@ export const CURRICULUM_DATA = {
       title: '2D Spatial Structure',
       modules: 4,
       topics: [
-        { id: 'y2-2ds-1', code: 'MA1-2DS-01', title: 'Shapes (quadrilaterals to polygons)' },
-        { id: 'y2-2ds-2', code: 'MA1-2DS-01', title: 'Slides, flips & turns (transformations)' },
-        { id: 'y2-2ds-3', code: 'MA1-2DS-02', title: 'Symmetry (line symmetry)' },
-        { id: 'y2-2ds-4', code: 'MA1-2DS-02', title: 'Area (square units in rows & columns)' }
+        { id: 'y2-2ds-1', code: 'MA1-2DS-01', title: 'Shapes: Quadrilaterals; pentagons; hexagons; octagons; polygons' },
+        { id: 'y2-2ds-2', code: 'MA1-2DS-01', title: 'Slides, flips and turns: Transformations of 2D shapes' },
+        { id: 'y2-2ds-3', code: 'MA1-2DS-02', title: 'Symmetry: Recognise line symmetry in shapes and pictures' },
+        { id: 'y2-2ds-4', code: 'MA1-2DS-02', title: 'Area: Measure and estimate area using square units in rows/columns' }
       ]
     },
     {
@@ -311,8 +311,8 @@ export const CURRICULUM_DATA = {
       title: '3D Spatial Structure',
       modules: 2,
       topics: [
-        { id: 'y2-3ds-1', code: 'MA1-3DS-01', title: '3D objects (faces, edges, vertices)' },
-        { id: 'y2-3ds-2', code: 'MA1-3DS-02', title: 'Volume & capacity (displacement)' }
+        { id: 'y2-3ds-1', code: 'MA1-3DS-01', title: '3D objects: Faces, edges and vertices; compare 2D vs 3D; sort' },
+        { id: 'y2-3ds-2', code: 'MA1-3DS-02', title: 'Volume and capacity: Measure using informal units; displacement' }
       ]
     },
     {
@@ -320,9 +320,9 @@ export const CURRICULUM_DATA = {
       title: 'Data',
       modules: 3,
       topics: [
-        { id: 'y2-data-1', code: 'MA1-DATA-01', title: 'Collect data (surveys & tally charts)' },
-        { id: 'y2-data-2', code: 'MA1-DATA-01', title: 'Display data (picture graphs & tables)' },
-        { id: 'y2-data-3', code: 'MA1-DATA-02', title: 'Interpret data (order by category)' }
+        { id: 'y2-data-1', code: 'MA1-DATA-01', title: 'Collect data: Surveys; tally charts; suitable questions' },
+        { id: 'y2-data-2', code: 'MA1-DATA-01', title: 'Display data: Picture graphs with scale; tables and lists' },
+        { id: 'y2-data-3', code: 'MA1-DATA-02', title: 'Interpret data: Read and describe displays; order by category' }
       ]
     },
     {
@@ -330,8 +330,8 @@ export const CURRICULUM_DATA = {
       title: 'Chance',
       modules: 2,
       topics: [
-        { id: 'y2-chan-1', code: 'MA1-CHAN-01', title: 'Chance language (likelihood words)' },
-        { id: 'y2-chan-2', code: 'MA1-CHAN-01', title: 'Possible outcomes (chance experiments)' }
+        { id: 'y2-chan-1', code: 'MA1-CHAN-01', title: 'Chance language: Certain, likely, unlikely, impossible' },
+        { id: 'y2-chan-2', code: 'MA1-CHAN-01', title: 'Possible outcomes: Identify outcomes of chance experiments' }
       ]
     }
   ],
