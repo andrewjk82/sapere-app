@@ -257,11 +257,14 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
         const studentName = selectedStudent?.name || '';
 
         const count = newSession.recurring ? 52 : 1;
-        const baseDate = new Date(newSession.date);
+        const baseDate = new Date(newSession.date + 'T12:00:00'); // noon avoids UTC day shift
 
         for (let i = 0; i < count; i++) {
           const nextDate = new Date(baseDate);
           nextDate.setDate(baseDate.getDate() + (i * 7));
+          const year = nextDate.getFullYear();
+          const month = String(nextDate.getMonth() + 1).padStart(2, '0');
+          const day   = String(nextDate.getDate()).padStart(2, '0');
           
           sessionsToCreate.push({
             ...newSession,
@@ -269,7 +272,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
             studentName,
             studentEmail,
             groupId: groupId, // All sessions in this creation event share the same groupId
-            date: nextDate.toISOString().split('T')[0],
+            date: `${year}-${month}-${day}`,
             isHomeworkCompleted: false,
             createdAt: new Date().toISOString()
           });
