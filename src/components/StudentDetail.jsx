@@ -457,8 +457,10 @@ const StudentDetail = ({ studentId, onBack }) => {
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '16px' }}>ACADEMIC PROGRESS</div>
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             {(() => {
-              const currentChapterIds = chapters.map(ch => ch.id);
-              const assignedInCurriculum = assignedChapters.filter(id => currentChapterIds.includes(id));
+              const currentChapterIds = new Set(chapters.map(ch => ch.id));
+              const uniqueAssigned = new Set(assignedChapters);
+              const assignedInCurriculum = Array.from(uniqueAssigned).filter(id => currentChapterIds.has(id));
+              
               const progressPct = Math.round((assignedInCurriculum.length / (chapters.length || 1)) * 100);
               const clampedPct = Math.min(progressPct, 100);
               
