@@ -79,27 +79,33 @@ export default async function handler(req, res) {
 
     logs.push(`[Cron] Checking sessions on: ${sessionDates.join(', ')} | Target window: ${formatMinutes(targetMin - windowMin)} – ${formatMinutes(targetMin + windowMin)}`);
 
+    // Normalize target minutes for next-day wrap (e.g. 25:30 → 1:30)
+    const normalizedTarget = targetMin >= 1440 ? targetMin - 1440 : targetMin;
+
     for (const dateStr of sessionDates) {
       const snap = await db.collection('sessions')
         .where('date', '==', dateStr)
-        .where('reminderSent', '!=', true)
-        .get();
+        .get();  // ← No compound filter; we filter reminderSent in JS to avoid index requirement
 
-      logs.push(`[Cron] Found ${snap.docs.length} unsent-reminder sessions on ${dateStr}`);
+      logs.push(`[Cron] Found ${snap.docs.length} total sessions on ${dateStr}`);
 
       for (const docSnapshot of snap.docs) {
         const s = docSnapshot.data();
+
+        // Skip if reminder already sent (filter in JS, not Firestore)
+        if (s.reminderSent === true) {
+          logs.push(`[Cron] SKIP: reminder already sent for ${s.studentName} @ ${s.startTime}`);
+          continue;
+        }
+
         const sessionMin = parseTimeStr(s.startTime);
 
-        logs.push(`[Cron] Session: ${s.studentName} @ ${s.startTime} (${sessionMin} min) | diff = ${Math.abs(sessionMin - targetMin)} min`);
+        logs.push(`[Cron] Session: ${s.studentName} @ ${s.startTime} (${sessionMin} min) | target=${normalizedTarget} diff=${Math.abs(sessionMin - normalizedTarget)}`);
 
         if (sessionMin === null) {
           logs.push(`[Cron] SKIP: Could not parse startTime "${s.startTime}"`);
           continue;
         }
-
-        // Normalize target for next-day wrap
-        const normalizedTarget = targetMin >= 1440 ? targetMin - 1440 : targetMin;
 
         if (Math.abs(sessionMin - normalizedTarget) <= windowMin) {
           logs.push(`[Cron] ✅ MATCH! Sending 2hr reminder to ${s.studentName}`);
