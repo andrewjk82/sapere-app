@@ -232,14 +232,108 @@ export const CURRICULUM_DATA = {
         { id: 'y1-pro-007', code: 'P7', group: 'Simple Experiments', title: 'Reason about possible dice outcomes' },
         { id: 'y1-pro-008', code: 'P8', group: 'Simple Experiments', title: 'Identify the most likely colour from a bag' },
         { id: 'y1-pro-009', code: 'P9', group: 'Simple Experiments', title: 'Judge equally likely coin outcomes' },
-        { id: 'y1-pro-010', code: 'P10', group: 'Simple Experiments', title: 'Predict heads after repeated coin flips' }
+{ id: 'y1-pro-010', code: 'P10', group: 'Simple Experiments', title: 'Predict heads after repeated coin flips' }
       ]
     }
   ],
   'Year 2': [
-    { id: 'y2-1', title: 'Addition & Subtraction', modules: 12 },
-    { id: 'y2-2', title: 'Shapes & Fractions', modules: 8 },
-    { id: 'y2-3', title: 'Data & Statistics', modules: 6 }
+    {
+      id: 'y2-rwn',
+      title: 'Representing Whole Numbers',
+      modules: 6,
+      topics: [
+        { id: 'y2-rwn-1', code: 'MA1-RWN-01', title: '3-digit numbers (to 1000)' },
+        { id: 'y2-rwn-2', code: 'MA1-RWN-01', title: 'Place value (hundreds, tens, ones)' },
+        { id: 'y2-rwn-3', code: 'MA1-RWN-01', title: 'Count to 1000 (before & after)' },
+        { id: 'y2-rwn-4', code: 'MA1-RWN-02', title: 'Partition numbers (standard & non-standard)' },
+        { id: 'y2-rwn-5', code: 'MA1-RWN-02', title: 'Rounding (to nearest 10 and 100)' },
+        { id: 'y2-rwn-6', code: 'MA1-RWN-02', title: 'Money (Australian notes and coins)' }
+      ]
+    },
+    {
+      id: 'y2-csq',
+      title: 'Combining and Separating Quantities',
+      modules: 5,
+      topics: [
+        { id: 'y2-csq-1', code: 'MA1-CSQ-01', title: 'Additive relations (combinations to 20)' },
+        { id: 'y2-csq-2', code: 'MA1-CSQ-01', title: 'Add and subtract to 100 (mental strategies)' },
+        { id: 'y2-csq-3', code: 'MA1-CSQ-01', title: 'Extend to 200 (place value strategies)' },
+        { id: 'y2-csq-4', code: 'MA1-CSQ-01', title: 'Bar model (part-whole within 20)' },
+        { id: 'y2-csq-5', code: 'MA1-CSQ-01', title: 'Word problems (unknowns & equality)' }
+      ]
+    },
+    {
+      id: 'y2-fg',
+      title: 'Forming Groups',
+      modules: 4,
+      topics: [
+        { id: 'y2-fg-1', code: 'MA1-FG-01', title: 'Multiplication (equal groups & arrays)' },
+        { id: 'y2-fg-2', code: 'MA1-FG-01', title: 'Multiplication facts (2x, 5x, 10x tables)' },
+        { id: 'y2-fg-3', code: 'MA1-FG-01', title: 'Division (sharing, grouping, remainders)' },
+        { id: 'y2-fg-4', code: 'MA1-FG-01', title: 'Fractions (halves, quarters, eighths)' }
+      ]
+    },
+    {
+      id: 'y2-gm',
+      title: 'Geometric Measure',
+      modules: 4,
+      topics: [
+        { id: 'y2-gm-1', code: 'MA1-GM-01', title: 'Length - formal units (metres & centimetres)' },
+        { id: 'y2-gm-2', code: 'MA1-GM-02', title: 'Length - informal units (compare & order)' },
+        { id: 'y2-gm-3', code: 'MA1-GM-03', title: 'Fractions of length (repeated halving)' },
+        { id: 'y2-gm-4', code: 'MA1-GM-03', title: 'Position & maps (paths & directions)' }
+      ]
+    },
+    {
+      id: 'y2-nsm',
+      title: 'Non-Spatial Measure',
+      modules: 4,
+      topics: [
+        { id: 'y2-nsm-1', code: 'MA1-NSM-01', title: 'Time - tell the time (quarter-hour)' },
+        { id: 'y2-nsm-2', code: 'MA1-NSM-01', title: 'Time - units (hours, minutes, seconds)' },
+        { id: 'y2-nsm-3', code: 'MA1-NSM-02', title: 'Calendars (solving simple problems)' },
+        { id: 'y2-nsm-4', code: 'MA1-NSM-02', title: 'Mass (compare & order informal units)' }
+      ]
+    },
+    {
+      id: 'y2-2ds',
+      title: '2D Spatial Structure',
+      modules: 4,
+      topics: [
+        { id: 'y2-2ds-1', code: 'MA1-2DS-01', title: 'Shapes (quadrilaterals to polygons)' },
+        { id: 'y2-2ds-2', code: 'MA1-2DS-01', title: 'Slides, flips & turns (transformations)' },
+        { id: 'y2-2ds-3', code: 'MA1-2DS-02', title: 'Symmetry (line symmetry)' },
+        { id: 'y2-2ds-4', code: 'MA1-2DS-02', title: 'Area (square units in rows & columns)' }
+      ]
+    },
+    {
+      id: 'y2-3ds',
+      title: '3D Spatial Structure',
+      modules: 2,
+      topics: [
+        { id: 'y2-3ds-1', code: 'MA1-3DS-01', title: '3D objects (faces, edges, vertices)' },
+        { id: 'y2-3ds-2', code: 'MA1-3DS-02', title: 'Volume & capacity (displacement)' }
+      ]
+    },
+    {
+      id: 'y2-data',
+      title: 'Data',
+      modules: 3,
+      topics: [
+        { id: 'y2-data-1', code: 'MA1-DATA-01', title: 'Collect data (surveys & tally charts)' },
+        { id: 'y2-data-2', code: 'MA1-DATA-01', title: 'Display data (picture graphs & tables)' },
+        { id: 'y2-data-3', code: 'MA1-DATA-02', title: 'Interpret data (order by category)' }
+      ]
+    },
+    {
+      id: 'y2-chan',
+      title: 'Chance',
+      modules: 2,
+      topics: [
+        { id: 'y2-chan-1', code: 'MA1-CHAN-01', title: 'Chance language (likelihood words)' },
+        { id: 'y2-chan-2', code: 'MA1-CHAN-01', title: 'Possible outcomes (chance experiments)' }
+      ]
+    }
   ],
   'Year 3': [
     { 
