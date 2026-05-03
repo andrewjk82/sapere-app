@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     const db = admin.firestore();
     const nowUTC = new Date();
     const sydneyTime = new Date(nowUTC.getTime() + (10 * 60 * 60 * 1000));
-    
+
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com', port: 465, secure: true,
       auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS }
@@ -30,10 +30,10 @@ export default async function handler(req, res) {
     };
 
     // Get current Sydney status robustly
-    const sydneyStatus = new Intl.DateTimeFormat('en-AU', { 
-      hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney' 
+    const sydneyStatus = new Intl.DateTimeFormat('en-AU', {
+      hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney'
     }).formatToParts(nowUTC);
-    
+
     const currentHour = parseInt(sydneyStatus.find(p => p.type === 'hour').value);
     const currentMinute = parseInt(sydneyStatus.find(p => p.type === 'minute').value);
 
@@ -41,11 +41,11 @@ export default async function handler(req, res) {
     // Calculate target time (Current Sydney + 2 hours)
     const targetTime = new Date(nowUTC.getTime() + (2 * 60 * 60 * 1000));
     const date2HrStr = getSydneyDateStr(targetTime);
-    
-    const targetStatus = new Intl.DateTimeFormat('en-AU', { 
-      hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney' 
+
+    const targetStatus = new Intl.DateTimeFormat('en-AU', {
+      hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'Australia/Sydney'
     }).formatToParts(targetTime);
-    
+
     const th2 = parseInt(targetStatus.find(p => p.type === 'hour').value);
     const tm2 = parseInt(targetStatus.find(p => p.type === 'minute').value);
     const p2 = th2 >= 12 ? 'pm' : 'am';
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
     const time2HrStr = `${dh2}:${String(tm2 < 30 ? '00' : '30').padStart(2, '0')} ${p2}`;
 
     console.log(`[Cron] Sydney: ${currentHour}:${currentMinute} | Target: ${date2HrStr} @ ${time2HrStr}`);
-    
+
     const snap2Hr = await db.collection('sessions')
       .where('date', '==', date2HrStr)
       .where('startTime', '==', time2HrStr)
@@ -71,9 +71,9 @@ export default async function handler(req, res) {
     if (currentHour === 20 && currentMinute < 30) {
       const tomorrow = new Date(nowUTC.getTime() + (24 * 60 * 60 * 1000));
       const tomorrowStr = getSydneyDateStr(tomorrow);
-      
+
       console.log(`[Cron] 8PM reached. Checking tomorrow's sessions: ${tomorrowStr}`);
-      
+
       const snapDaily = await db.collection('sessions')
         .where('date', '==', tomorrowStr)
         .get();
