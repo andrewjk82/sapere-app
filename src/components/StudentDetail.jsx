@@ -529,10 +529,10 @@ const StudentDetail = ({ studentId, onBack }) => {
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             {(() => {
               const currentChapterIds = new Set(chapters.map(ch => ch.id));
-              const uniqueAssigned = new Set(assignedChapters);
-              const assignedInCurriculum = Array.from(uniqueAssigned).filter(id => currentChapterIds.has(id));
+              const uniqueCompleted = new Set(completedChapters);
+              const completedInCurriculum = Array.from(uniqueCompleted).filter(id => currentChapterIds.has(id));
               
-              const progressPct = Math.round((assignedInCurriculum.length / (chapters.length || 1)) * 100);
+              const progressPct = Math.round((completedInCurriculum.length / (chapters.length || 1)) * 100);
               const clampedPct = Math.min(progressPct, 100);
               
               return (
