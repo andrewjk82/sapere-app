@@ -982,117 +982,133 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             className="app-panel" 
             style={{ 
               textAlign: 'center', 
-              padding: '60px 40px', 
-              borderRadius: '48px',
+              padding: '64px 48px', 
+              borderRadius: '40px',
               width: '100%',
-              maxWidth: '620px',
-              boxShadow: '0 30px 60px rgba(0,0,0,0.08), 0 10px 20px rgba(0,0,0,0.02)',
-              border: '1px solid #f1f5f9',
+              maxWidth: '640px',
+              boxShadow: '0 40px 80px rgba(15, 23, 42, 0.08)',
+              border: '2px solid #6366f1',
               background: '#fff',
-              position: 'relative',
-              overflow: 'hidden'
+              position: 'relative'
             }}
           >
-            {/* Top Accent Strip */}
+            {/* Status Badge */}
             <div style={{
               position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              height: '8px',
-              background: todayCompleted 
-                ? 'linear-gradient(90deg, #10b981, #34d399)' 
-                : 'linear-gradient(90deg, #f43f5e, #fb7185)'
-            }} />
+              top: '32px',
+              right: '32px',
+              background: todayCompleted ? '#f0fdf4' : '#fff1f2',
+              color: todayCompleted ? '#10b981' : '#f43f5e',
+              padding: '8px 16px',
+              borderRadius: '100px',
+              fontSize: '0.75rem',
+              fontWeight: 900,
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase',
+              border: todayCompleted ? '1px solid #dcfce7' : '1px solid #fee2e2'
+            }}>
+              {todayCompleted ? 'Goal Achieved' : 'Session Terminated'}
+            </div>
 
             <div style={{ 
-              width: '110px', 
-              height: '110px', 
-              background: todayCompleted ? '#f0fdf4' : '#fff1f2', 
-              borderRadius: '35%', 
+              width: '120px', 
+              height: '120px', 
+              background: '#f8fafc', 
+              borderRadius: '32px', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center', 
-              margin: '0 auto 36px', 
-              color: todayCompleted ? '#10b981' : '#f43f5e',
-              boxShadow: todayCompleted ? '0 15px 30px rgba(16, 185, 129, 0.1)' : '0 15px 30px rgba(244, 63, 94, 0.1)',
-              transform: 'rotate(-5deg)'
+              margin: '0 auto 40px', 
+              color: '#6366f1',
+              border: '1px solid #f1f5f9'
             }}>
-              {todayCompleted ? <Trophy size={56} /> : <AlertTriangle size={56} />}
+              {todayCompleted ? <Trophy size={64} /> : <AlertTriangle size={64} color="#f43f5e" />}
             </div>
             
             <h2 style={{ 
-              fontSize: '2.5rem', 
+              fontSize: '2.8rem', 
               fontWeight: 900, 
-              marginBottom: '20px', 
+              marginBottom: '24px', 
               color: '#1e1b4b',
-              letterSpacing: '-0.02em'
+              letterSpacing: '-0.03em',
+              lineHeight: 1
             }}>
-              {todayCompleted ? "Goal Achieved!" : "Session Ended"}
+              {todayCompleted ? "Excellent Job!" : "Session Ended"}
             </h2>
 
             <div style={{ 
-              padding: '28px', 
-              borderRadius: '28px', 
-              background: todayCompleted ? '#f8fafc' : '#fffafb',
-              border: todayCompleted ? '1px solid #f1f5f9' : '1px solid #fff1f2',
-              marginBottom: '48px'
+              padding: '32px', 
+              borderRadius: '24px', 
+              background: '#f8fafc',
+              border: '1px solid #f1f5f9',
+              marginBottom: '48px',
+              textAlign: 'left'
             }}>
               {todayCompleted ? (
-                <p style={{ color: '#475569', fontWeight: 600, fontSize: '1.25rem', margin: 0, lineHeight: 1.6 }}>
-                  Excellent work! You've completed your challenge. <br/>
-                  <span style={{ color: '#6366f1', display: 'block', marginTop: '8px' }}>Come back tomorrow for your next points!</span>
-                </p>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+                  <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '4px' }}>
+                    <Check size={18} strokeWidth={3} />
+                  </div>
+                  <div>
+                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '1.25rem', margin: '0 0 8px' }}>Challenge Complete</p>
+                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1.05rem', margin: 0, lineHeight: 1.5 }}>
+                      You have met your daily goal. Come back tomorrow to continue your learning journey!
+                    </p>
+                  </div>
+                </div>
               ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                  <p style={{ color: '#be123c', fontWeight: 800, fontSize: '1.3rem', margin: 0, lineHeight: 1.5 }}>
-                    The challenge was automatically terminated.
-                  </p>
-                  <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1rem', margin: 0, lineHeight: 1.6 }}>
-                    This happens when the page is refreshed or left during a session. 
-                    <span style={{ display: 'block', marginTop: '12px', color: '#94a3b8' }}>
-                      0 points awarded. <strong>Try again tomorrow!</strong>
-                    </span>
-                  </p>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+                  <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#f43f5e', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '4px' }}>
+                    <X size={18} strokeWidth={3} />
+                  </div>
+                  <div>
+                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '1.25rem', margin: '0 0 8px' }}>Automatic Termination</p>
+                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1.05rem', margin: 0, lineHeight: 1.5 }}>
+                      The session was interrupted by a page refresh or navigation. 
+                      <span style={{ display: 'block', marginTop: '8px', fontWeight: 700, color: '#f43f5e' }}>
+                        Progress for this attempt has been reset.
+                      </span>
+                    </p>
+                  </div>
                 </div>
               )}
             </div>
             
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '340px', margin: '0 auto' }}>
+            <div style={{ display: 'flex', gap: '16px', maxWidth: '440px', margin: '0 auto' }}>
               <button 
                 onClick={() => setViewMode('history')} 
                 className="app-button" 
                 style={{ 
-                  width: '100%', 
-                  padding: '20px', 
+                  flex: 2,
+                  padding: '22px', 
                   borderRadius: '20px', 
                   background: '#1e1b4b',
                   color: 'white',
-                  fontWeight: 800,
+                  fontWeight: 900,
                   fontSize: '1.1rem',
                   border: 'none',
                   cursor: 'pointer',
-                  boxShadow: '0 12px 24px rgba(30, 27, 75, 0.15)',
-                  transition: 'transform 0.2s ease'
+                  boxShadow: '0 12px 24px rgba(30, 27, 75, 0.2)',
+                  transition: 'all 0.2s'
                 }}
               >
-                View History & Stats
+                View Progress
               </button>
               <button 
                 onClick={onBack} 
                 style={{ 
-                  width: '100%', 
-                  padding: '14px', 
-                  background: 'transparent',
-                  color: '#94a3b8',
-                  fontWeight: 700,
-                  fontSize: '0.95rem',
+                  flex: 1,
+                  padding: '22px', 
+                  background: '#f1f5f9',
+                  color: '#1e1b4b',
+                  fontWeight: 800,
+                  fontSize: '1.1rem',
                   border: 'none',
+                  borderRadius: '20px',
                   cursor: 'pointer',
-                  textDecoration: 'none'
                 }}
               >
-                Back to Dashboard
+                Close
               </button>
             </div>
           </motion.div>
