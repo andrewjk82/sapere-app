@@ -17,7 +17,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
-import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, ChevronLeft, ChevronRight, Trophy } from 'lucide-react';
+import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, ChevronLeft, ChevronRight, Trophy, Plus } from 'lucide-react';
 import { db, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
