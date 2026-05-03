@@ -983,114 +983,117 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             className="app-panel" 
             style={{ 
               textAlign: 'center', 
-              padding: '64px 48px', 
-              borderRadius: '40px',
+              padding: 'clamp(24px, 5vw, 48px) clamp(20px, 5vw, 40px)', 
+              borderRadius: '28px',
               width: '100%',
-              maxWidth: '640px',
-              boxShadow: '0 40px 80px rgba(15, 23, 42, 0.08)',
-              border: '2px solid #6366f1',
+              maxWidth: '560px',
+              boxShadow: '0 20px 60px rgba(15, 23, 42, 0.08)',
+              border: `2px solid ${todayCompleted ? '#10b981' : '#6366f1'}`,
               background: '#fff',
               position: 'relative'
             }}
           >
             {/* Status Badge */}
             <div style={{
-              position: 'absolute',
-              top: '32px',
-              right: '32px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
               background: todayCompleted ? '#f0fdf4' : '#fff1f2',
               color: todayCompleted ? '#10b981' : '#f43f5e',
-              padding: '8px 16px',
+              padding: '6px 14px',
               borderRadius: '100px',
-              fontSize: '0.75rem',
+              fontSize: '0.7rem',
               fontWeight: 900,
               letterSpacing: '0.05em',
               textTransform: 'uppercase',
-              border: todayCompleted ? '1px solid #dcfce7' : '1px solid #fee2e2'
+              border: todayCompleted ? '1px solid #dcfce7' : '1px solid #fee2e2',
+              marginBottom: '20px'
             }}>
-              {todayCompleted ? 'Goal Achieved' : 'Session Terminated'}
+              {todayCompleted ? '✓ Goal Achieved' : '⚡ Session Terminated'}
             </div>
 
+            {/* Icon */}
             <div style={{ 
-              width: '120px', 
-              height: '120px', 
-              background: '#f8fafc', 
-              borderRadius: '32px', 
+              width: '72px', 
+              height: '72px', 
+              background: todayCompleted ? '#f0fdf4' : '#fff1f2', 
+              borderRadius: '20px', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center', 
-              margin: '0 auto 40px', 
-              color: '#6366f1',
-              border: '1px solid #f1f5f9'
+              margin: '0 auto 16px',
+              border: `1px solid ${todayCompleted ? '#dcfce7' : '#fee2e2'}`
             }}>
-              {todayCompleted ? <Trophy size={64} /> : <AlertTriangle size={64} color="#f43f5e" />}
+              {todayCompleted ? <Trophy size={36} color="#10b981" /> : <AlertTriangle size={36} color="#f43f5e" />}
             </div>
             
+            {/* Title */}
             <h2 style={{ 
-              fontSize: '2.8rem', 
+              fontSize: 'clamp(1.6rem, 6vw, 2.4rem)', 
               fontWeight: 900, 
-              marginBottom: '24px', 
+              marginBottom: '16px', 
               color: '#1e1b4b',
               letterSpacing: '-0.03em',
-              lineHeight: 1
+              lineHeight: 1.1
             }}>
               {todayCompleted ? "Excellent Job!" : "Session Ended"}
             </h2>
 
+            {/* Info Card */}
             <div style={{ 
-              padding: '32px', 
-              borderRadius: '24px', 
+              padding: '16px 20px', 
+              borderRadius: '16px', 
               background: '#f8fafc',
               border: '1px solid #f1f5f9',
-              marginBottom: '48px',
+              marginBottom: '28px',
               textAlign: 'left'
             }}>
               {todayCompleted ? (
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-                  <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '4px' }}>
-                    <Check size={18} strokeWidth={3} />
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                  <div style={{ width: '24px', height: '24px', borderRadius: '8px', background: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '2px' }}>
+                    <Check size={14} strokeWidth={3} />
                   </div>
                   <div>
-                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '1.25rem', margin: '0 0 8px' }}>Challenge Complete</p>
-                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1.05rem', margin: 0, lineHeight: 1.5 }}>
-                      You have met your daily goal. Come back tomorrow to continue your learning journey!
+                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.95rem', margin: '0 0 4px' }}>Challenge Complete</p>
+                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '0.85rem', margin: 0, lineHeight: 1.5 }}>
+                      You met your daily goal. Come back tomorrow!
                     </p>
                   </div>
                 </div>
               ) : (
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-                  <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#f43f5e', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '4px' }}>
-                    <X size={18} strokeWidth={3} />
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                  <div style={{ width: '24px', height: '24px', borderRadius: '8px', background: '#f43f5e', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '2px' }}>
+                    <X size={14} strokeWidth={3} />
                   </div>
                   <div>
-                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '1.25rem', margin: '0 0 8px' }}>Automatic Termination</p>
-                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1.05rem', margin: 0, lineHeight: 1.5 }}>
-                      The session was interrupted by a page refresh or navigation. 
-                      <span style={{ display: 'block', marginTop: '8px', fontWeight: 700, color: '#f43f5e' }}>
-                        Progress for this attempt has been reset.
-                      </span>
+                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.95rem', margin: '0 0 4px' }}>Automatic Termination</p>
+                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '0.85rem', margin: 0, lineHeight: 1.5 }}>
+                      Session was interrupted by a refresh or navigation.
+                    </p>
+                    <p style={{ color: '#f43f5e', fontWeight: 700, fontSize: '0.8rem', margin: '6px 0 0' }}>
+                      Progress for this attempt has been reset.
                     </p>
                   </div>
                 </div>
               )}
             </div>
             
-            <div style={{ display: 'flex', gap: '16px', maxWidth: '440px', margin: '0 auto' }}>
+            {/* Buttons */}
+            <div style={{ display: 'flex', gap: '12px' }}>
               <button 
                 onClick={() => setViewMode('history')} 
                 className="app-button" 
                 style={{ 
                   flex: 2,
-                  padding: '22px', 
-                  borderRadius: '20px', 
-                  background: '#1e1b4b',
+                  padding: '14px 16px', 
+                  borderRadius: '16px', 
+                  background: 'linear-gradient(135deg, #1e1b4b, #312e81)',
                   color: 'white',
-                  fontWeight: 900,
-                  fontSize: '1.1rem',
+                  fontWeight: 800,
+                  fontSize: '0.95rem',
                   border: 'none',
                   cursor: 'pointer',
-                  boxShadow: '0 12px 24px rgba(30, 27, 75, 0.2)',
-                  transition: 'all 0.2s'
+                  boxShadow: '0 8px 20px rgba(30, 27, 75, 0.2)',
                 }}
               >
                 View Progress
@@ -1099,13 +1102,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 onClick={onBack} 
                 style={{ 
                   flex: 1,
-                  padding: '22px', 
+                  padding: '14px 16px', 
                   background: '#f1f5f9',
-                  color: '#1e1b4b',
-                  fontWeight: 800,
-                  fontSize: '1.1rem',
+                  color: '#475569',
+                  fontWeight: 700,
+                  fontSize: '0.95rem',
                   border: 'none',
-                  borderRadius: '20px',
+                  borderRadius: '16px',
                   cursor: 'pointer',
                 }}
               >
