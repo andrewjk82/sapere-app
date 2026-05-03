@@ -35,8 +35,9 @@ function App() {
     return onSnapshot(versionRef, (snap) => {
       if (snap.exists()) {
         const cloudVersion = snap.data().version;
+        // Temporarily disabled to prevent infinite loops due to DB mismatch
         if (cloudVersion && cloudVersion !== CURRENT_APP_VERSION) {
-          setNewVersionAvailable(true);
+          // setNewVersionAvailable(true);
         }
       }
     });
