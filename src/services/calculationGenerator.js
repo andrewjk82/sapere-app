@@ -30,7 +30,7 @@ const simplifyFraction = (num, denom) => {
   return `${n}/${d}`;
 };
 
-export const generateCalculationQuestion = (topicId) => {
+export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   let q = '';
   let a = '';
   let hint = '';
@@ -354,11 +354,12 @@ export const generateCalculationQuestion = (topicId) => {
     hint: hint,
     chapterTitle: 'Basic Calculation',
     topicId: topicId,
-    generatorType: 'calculation'
+    generatorType: 'calculation',
+    timeLimit: timeLimit
   };
 };
 
-export const generateCalculationSet = (assignedTopics, count, year = 'Year 1') => {
+export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', timeLimit = 30) => {
   // If no topics assigned, pick a default based on year
   let topicsToUse = assignedTopics && assignedTopics.length > 0 ? assignedTopics : null;
   
@@ -374,7 +375,7 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1') =
   const questions = [];
   for (let i = 0; i < count; i++) {
     const topic = pick(topicsToUse);
-    questions.push(generateCalculationQuestion(topic));
+    questions.push(generateCalculationQuestion(topic, timeLimit));
   }
   return questions;
 };

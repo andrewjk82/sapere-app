@@ -380,7 +380,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const assignedChapters = Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [];
     const calcTopics = assignedChapters.filter(id => id.startsWith('calc-'));
     
-    const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear);
+    const timeLimit = studentProfile?.calcTimeLimit || 30;
+    const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, timeLimit);
     
     const sessionId = String(Date.now());
     setCurrentSessionId(sessionId);

@@ -399,17 +399,31 @@ const StudentDetail = ({ studentId, onBack }) => {
                       {(student?.calculationEnabled ?? true) !== false ? 'ENABLED' : 'DISABLED'}
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#fffbeb', padding: '10px 20px', borderRadius: '30px', border: '1px solid #fef3c7', minWidth: '140px', justifyContent: 'center' }}>
-                    <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#d97706', whiteSpace: 'nowrap' }}>COUNT:</span>
-                  <input 
-                    type="number" 
-                    min="5" 
-                    max="50"
-                    value={student.calcQuestionCount || 10} 
-                    onChange={e => handleUpdateCurriculumSetting('calcQuestionCount', parseInt(e.target.value) || 10)}
-                    style={{ width: '60px', background: 'transparent', border: 0, fontWeight: 900, color: '#92400e', outline: 'none', textAlign: 'center', fontSize: '1.1rem', padding: 0 }}
-                  />
-                </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#fffbeb', padding: '10px 20px', borderRadius: '30px', border: '1px solid #fef3c7', minWidth: '140px', justifyContent: 'center' }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#d97706', whiteSpace: 'nowrap' }}>TIMER:</span>
+                      <select 
+                        value={student.calcTimeLimit || 30} 
+                        onChange={e => handleUpdateCurriculumSetting('calcTimeLimit', parseInt(e.target.value) || 30)}
+                        style={{ background: 'transparent', border: 0, fontWeight: 900, color: '#92400e', outline: 'none', textAlign: 'center', fontSize: '1.1rem', cursor: 'pointer' }}
+                      >
+                        {[1,2,3,4,5,6,7,8,9,10].map(step => (
+                          <option key={step} value={step * 30}>{step * 30}s</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#fffbeb', padding: '10px 20px', borderRadius: '30px', border: '1px solid #fef3c7', minWidth: '140px', justifyContent: 'center' }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#d97706', whiteSpace: 'nowrap' }}>COUNT:</span>
+                      <input 
+                        type="number" 
+                        min="5" 
+                        max="50"
+                        value={student.calcQuestionCount || 10} 
+                        onChange={e => handleUpdateCurriculumSetting('calcQuestionCount', parseInt(e.target.value) || 10)}
+                        style={{ width: '60px', background: 'transparent', border: 0, fontWeight: 900, color: '#92400e', outline: 'none', textAlign: 'center', fontSize: '1.1rem', padding: 0 }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '16px' }}>
