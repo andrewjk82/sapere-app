@@ -216,7 +216,7 @@ function App() {
     );
   }
 
-  if (hasPendingSignup || (profileLoaded && !profile && !isAdmin)) {
+  if ((hasPendingSignup && !profile) || (profileLoaded && !profile && !isAdmin)) {
     return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
   }
 
@@ -359,7 +359,7 @@ function App() {
 
   return (
     <div className="app-shell">
-      {!isMobileView && <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />}
+      <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />
       <div className="app-shell__main">
         {renderContent()}
       </div>

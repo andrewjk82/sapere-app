@@ -154,6 +154,9 @@ const Signup = ({ onToggleMode }) => {
       // 3. Save to Firestore with merge: true to protect data
       await setDoc(doc(db, 'users', user.uid), userData, { merge: true });
 
+      // 4. Clear pending state
+      sessionStorage.removeItem('pendingSignupStep');
+
       setMessage('Welcome to Sapere! Your profile has been created.');
     } catch (err) {
       setError(err.message);
