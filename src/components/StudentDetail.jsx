@@ -16,6 +16,19 @@ import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import './student-detail.css';
 
+const ROLE_OPTIONS = [
+  { value: '', label: 'Not set' },
+  { value: 'student', label: 'Student' },
+  { value: 'parent', label: 'Parent' }
+];
+
+const getRoleLabel = (role) => {
+  if (role === 'student') return 'Student';
+  if (role === 'parent') return 'Parent';
+  if (role === 'admin') return 'Admin';
+  return 'Role not set';
+};
+
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -48,6 +61,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [editForm, setEditForm] = useState({
     name: '', email: '', phone: '', level: '', subject: '',
     school: '', year: '', dreamJob: '', address: '',
+    role: '',
     assignedYear: 'Year 11', assignedCourse: 'Advanced',
     dailyQuestionCount: 10,
     calculationEnabled: true
@@ -80,6 +94,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           year: data.year || '',
           dreamJob: data.dreamJob || '',
           address: data.address || '',
+          role: data.role || '',
           assignedYear: data.assignedYear || data.level || data.year || 'Year 11',
           assignedCourse: data.assignedCourse || 'Advanced',
           dailyQuestionCount: data.dailyQuestionCount || 10,
@@ -99,6 +114,7 @@ const StudentDetail = ({ studentId, onBack }) => {
               level: mData.level || mData.year || '', subject: mData.subject || mData.school || '',
               school: mData.school || '', year: mData.year || '',
               dreamJob: mData.dreamJob || '', address: mData.address || '',
+              role: mData.role || '',
               assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
               assignedCourse: mData.assignedCourse || 'Advanced',
               dailyQuestionCount: mData.dailyQuestionCount || 10,
@@ -159,8 +175,10 @@ const StudentDetail = ({ studentId, onBack }) => {
   const handleUpdateProfile = async () => {
     try {
       const colName = student.source === 'manual' ? 'students' : 'users';
+      const normalizedRole = editForm.role || '';
       await updateDoc(doc(db, colName, studentId), { 
         ...editForm, 
+        role: normalizedRole,
         status: 'Active',
         updatedAt: serverTimestamp() 
       });
@@ -759,6 +777,16 @@ const StudentDetail = ({ studentId, onBack }) => {
               return String(y).toLowerCase().includes('year') ? y : `Year ${y}`;
             })()}
           </span>
+          <span
+            className="page-pill"
+            style={{
+              background: student?.role ? '#ecfdf5' : '#fff1f2',
+              color: student?.role ? '#047857' : '#e11d48',
+              border: `1px solid ${student?.role ? '#bbf7d0' : '#fecdd3'}`
+            }}
+          >
+            {getRoleLabel(student?.role)}
+          </span>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
           <div style={{ display: 'flex', gap: '20px', color: '#475569', fontWeight: 600, fontSize: '0.85rem' }}>
@@ -859,7 +887,32 @@ const StudentDetail = ({ studentId, onBack }) => {
                 <button onClick={() => setIsEditModalOpen(false)} style={{ background: '#f1f5f9', border: 'none', borderRadius: '10px', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#64748b' }}><X size={20} /></button>
               </div>
               
-              <div style={{ display: 'grid', gap: '20px' }}>
+                <div style={{ display: 'grid', gap: '20px' }}>
+                <div style={{
+                  padding: '18px',
+                  borderRadius: '18px',
+                  background: editForm.role ? '#f8fafc' : '#fff1f2',
+                  border: `1px solid ${editForm.role ? '#e2e8f0' : '#fecdd3'}`
+                }}>
+                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: editForm.role ? '#64748b' : '#e11d48' }}>
+                    Account Role
+                  </label>
+                  <select
+                    value={editForm.role}
+                    onChange={e => setEditForm({ ...editForm, role: e.target.value })}
+                    style={{ width: '100%', padding: '16px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 800, background: 'white', cursor: 'pointer', color: '#1e1b4b' }}
+                  >
+                    {ROLE_OPTIONS.map(option => (
+                      <option key={option.value} value={option.value}>{option.label}</option>
+                    ))}
+                  </select>
+                  {!editForm.role && (
+                    <p style={{ margin: '10px 0 0', color: '#be123c', fontSize: '0.78rem', fontWeight: 700 }}>
+                      This account is missing a role. Set it to Student or Parent so automations and lists can classify it correctly.
+                    </p>
+                  )}
+                </div>
+
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                   <div>
                     <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Full Name</label>

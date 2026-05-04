@@ -4,6 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { studentService } from '../services/studentService';
 import { useToast } from '../context/ToastContext';
 
+const ROLE_OPTIONS = [
+  { value: '', label: 'Not set' },
+  { value: 'student', label: 'Student' },
+  { value: 'parent', label: 'Parent' }
+];
+
+const getRoleLabel = (role) => {
+  if (role === 'student') return 'Student';
+  if (role === 'parent') return 'Parent';
+  if (role === 'admin') return 'Admin';
+  return 'Role not set';
+};
+
 const StudentProfileModal = ({ open, student, onClose }) => {
   const { showToast } = useToast();
   const [isEditing, setIsEditing] = useState(false);
@@ -22,6 +35,7 @@ const StudentProfileModal = ({ open, student, onClose }) => {
         school: student.school || '',
         phone: student.phone || '',
         address: student.address || '',
+        role: student.role || '',
         status: student.status || 'Active',
         dreamImageUrl: student.dreamImageUrl || '',
         dreamJob: student.dreamJob || ''
@@ -39,6 +53,7 @@ const StudentProfileModal = ({ open, student, onClose }) => {
       
       const updatePayload = {
         ...editData,
+        role: editData.role || '',
         updatedAt: new Date().toISOString()
       };
 
@@ -119,11 +134,22 @@ const StudentProfileModal = ({ open, student, onClose }) => {
                 ) : (
                   <h3 style={{ fontSize: '2rem', fontWeight: 900, color: '#1a1c2c', margin: 0 }}>{student.name}</h3>
                 )}
-                <div style={{ marginTop: '8px' }}>
-                  <span className={`status-badge ${editData.status === 'Active' ? 'status-badge--active' : 'status-badge--inactive'}`}>
-                    {editData.status}
-                  </span>
-                </div>
+	                <div style={{ marginTop: '8px' }}>
+	                  <span className={`status-badge ${editData.status === 'Active' ? 'status-badge--active' : 'status-badge--inactive'}`}>
+	                    {editData.status}
+	                  </span>
+	                  <span
+	                    className="status-badge"
+	                    style={{
+	                      marginLeft: '8px',
+	                      background: editData.role ? '#ecfdf5' : '#fff1f2',
+	                      color: editData.role ? '#047857' : '#e11d48',
+	                      border: `1px solid ${editData.role ? '#bbf7d0' : '#fecdd3'}`
+	                    }}
+	                  >
+	                    {getRoleLabel(editData.role)}
+	                  </span>
+	                </div>
               </div>
 
       <div className="profile-hero__actions">
@@ -146,8 +172,36 @@ const StudentProfileModal = ({ open, student, onClose }) => {
               </div>
             </div>
 
-            <div className="app-form-grid" style={{ gap: '24px' }}>
-              <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
+	            <div className="app-form-grid" style={{ gap: '24px' }}>
+	              <div className="app-form-field" style={{ gridColumn: 'span 2', padding: '16px', borderRadius: '16px', background: editData.role ? '#f8fafc' : '#fff1f2', border: `1px solid ${editData.role ? '#e2e8f0' : '#fecdd3'}` }}>
+	                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: editData.role ? '#64748b' : '#e11d48', fontWeight: 700, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+	                  Account Role
+	                </label>
+	                {isEditing ? (
+	                  <>
+	                    <select
+	                      value={editData.role}
+	                      onChange={e => setEditData({ ...editData, role: e.target.value })}
+	                      style={{ width: '100%', marginTop: '8px', padding: '14px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', background: 'white', fontWeight: 800, color: '#1a1c2c' }}
+	                    >
+	                      {ROLE_OPTIONS.map(option => (
+	                        <option key={option.value} value={option.value}>{option.label}</option>
+	                      ))}
+	                    </select>
+	                    {!editData.role && (
+	                      <p style={{ margin: '8px 0 0', color: '#be123c', fontSize: '0.78rem', fontWeight: 700 }}>
+	                        This profile is missing a role. Set it to Student or Parent.
+	                      </p>
+	                    )}
+	                  </>
+	                ) : (
+	                  <p style={{ fontSize: '1.1rem', fontWeight: 800, margin: '8px 0 0', color: editData.role ? '#047857' : '#e11d48' }}>
+	                    {getRoleLabel(editData.role)}
+	                  </p>
+	                )}
+	              </div>
+
+	              <div className="app-form-field" style={{ gridColumn: 'span 2' }}>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#64748b', fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   Vision Board Image URL
                 </label>
