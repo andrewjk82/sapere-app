@@ -216,7 +216,7 @@ function App() {
     );
   }
 
-  if ((hasPendingSignup && !profile) || (profileLoaded && !profile && !isAdmin)) {
+  if (authMode !== 'login' && ((hasPendingSignup && !profile) || (profileLoaded && !profile && !isAdmin))) {
     return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
   }
 

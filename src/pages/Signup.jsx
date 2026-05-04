@@ -10,16 +10,7 @@ const Signup = ({ onToggleMode }) => {
     return Number(sessionStorage.getItem('pendingSignupStep')) || 1;
   });
 
-  useEffect(() => {
-    import('../firebase/config').then(({ auth }) => {
-      const unsubscribe = auth.onAuthStateChanged((user) => {
-        if (user && step === 1) {
-          setStep(2);
-        }
-      });
-      return () => unsubscribe();
-    });
-  }, [step]);
+  // REMOVED aggressive auto-redirect useEffect that was breaking the Back button
   const [role, setRole] = useState(''); // 'student' or 'parent'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -39,7 +30,7 @@ const Signup = ({ onToggleMode }) => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const { signup, loginWithGoogle } = useAuth();
+  const { signup, loginWithGoogle, logout } = useAuth();
 
   const handleNextStep = async () => {
     if (step === 1) {
@@ -78,7 +69,13 @@ const Signup = ({ onToggleMode }) => {
     }
   };
 
-  const handlePrevStep = () => setStep(step - 1);
+  const handlePrevStep = async () => {
+    if (step === 2) {
+      // If going back from Step 2 to Step 1, log out to prevent confusion
+      await logout();
+    }
+    setStep(step - 1);
+  };
 
   const handleGoogleAuth = async () => {
     try {
@@ -380,7 +377,15 @@ const Signup = ({ onToggleMode }) => {
 
       <p className="auth-footer">
         Already have an account?
-        <button onClick={onToggleMode} className="auth-link">Sign in</button>
+        <button 
+          onClick={async () => {
+            await logout();
+            onToggleMode();
+          }} 
+          className="auth-link"
+        >
+          Sign in
+        </button>
       </p>
     </AuthLayout>
   );
