@@ -916,8 +916,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 const optText = getOptionText(opt);
                                 const optImage = getOptionImage(opt);
                                 
-                                const isSelected = String(userAnswer) === String(optText) || String(userAnswer) === String(i);
-                                const isAnswer = String(i) === String(q.answer) || String(optText) === String(q.answer);
+                                const isSelected = String(userAnswer) === String(optText) || (result?.selectedIdx !== undefined ? String(result.selectedIdx) === String(i) : (q.isManual && String(userAnswer) === String(i)));
+                                const isAnswer = (q.isManual && String(i) === String(q.answer)) || (!q.isManual && String(optText) === String(q.answer));
                                 
                                 let bg = 'white';
                                 let border = '1px solid #cbd5e1';
@@ -1466,7 +1466,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     
                     let status = 'default';
                     if (step === 'feedback') {
-                      const isCorrectChoice = (questions[currentIdx].isManual && String(i) === String(questions[currentIdx].answer)) || (String(optText) === String(questions[currentIdx].answer));
+                      const isCorrectChoice = (questions[currentIdx].isManual && String(i) === String(questions[currentIdx].answer)) || (!questions[currentIdx].isManual && String(optText) === String(questions[currentIdx].answer));
                       if (isCorrectChoice) status = 'correct';
                       else if (isSelected) status = 'wrong';
                     }
