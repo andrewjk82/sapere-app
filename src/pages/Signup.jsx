@@ -133,7 +133,7 @@ const Signup = ({ onToggleMode }) => {
       // 2. Prepare Firestore Data
       const userData = {
         uid: user.uid,
-        email: user.email,
+        email: user.email || user.providerData?.[0]?.email || '',
         role: role || 'student',
         firstName: profileData.firstName,
         lastName: profileData.lastName,
