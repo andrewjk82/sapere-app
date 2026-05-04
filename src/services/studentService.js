@@ -85,16 +85,31 @@ export const studentService = {
           )
           .map(data => {
             const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
+            
+            const rawYear = data.level || data.year || "Year ?";
+            const formattedYear = /^\d+$/.test(rawYear.toString().trim()) ? `Year ${rawYear.toString().trim()}` : rawYear;
+            
+            let displaySubject = data.subject;
+            if (!displaySubject) {
+              if (data.role === 'parent') {
+                displaySubject = "Parent Account";
+              } else if (data.school) {
+                displaySubject = `${data.school}, Maths`;
+              } else {
+                displaySubject = "Registered Student";
+              }
+            }
+
             return {
+              ...data,
               id: data.id,
               source: 'registered',
               name: data.name || data.displayName || (data.firstName ? `${data.firstName} ${data.lastName || ''}`.trim() : data.email),
-              level: data.year || "Year ?",
-              subject: data.role === 'parent' ? "Parent Account" : "Registered Student",
+              level: formattedYear,
+              subject: displaySubject,
               status: "Active",
               email: data.email,
               avatarUrl: data.avatarUrl || fallbackAvatar,
-              ...data
             };
           });
         updateAll();
