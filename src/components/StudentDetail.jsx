@@ -30,6 +30,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [booking, setBooking] = useState(false);
   const [messageOpen, setMessageOpen] = useState(false);
   const [messageText, setMessageText] = useState('');
+  const [sendingMessage, setSendingMessage] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const { showToast } = useToast();
