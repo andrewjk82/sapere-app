@@ -678,10 +678,249 @@ export const CURRICULUM_DATA = {
     }
   ],
   'Year 8': [
-    { id: 'y8-1', title: 'Linear Relationships', modules: 12 },
-    { id: 'y8-2', title: 'Pythagoras Theorem', modules: 8 },
-    { id: 'y8-3', title: 'Probability & Statistics', modules: 10 },
-    { id: 'y8-4', title: 'Surds & Indices', modules: 9 }
+    {
+      id: 'y8-1',
+      title: 'Chapter 1: Whole numbers',
+      modules: 2,
+      topics: [
+        { id: 'y8-1a', code: '1A', title: 'Addition and subtraction of whole numbers' },
+        { id: 'y8-1b', code: '1B', title: 'Multiplication and division of whole numbers' }
+      ]
+    },
+    {
+      id: 'y8-2',
+      title: 'Chapter 2: Fractions and decimals',
+      modules: 7,
+      topics: [
+        { id: 'y8-2a', code: '2A', title: 'Equivalent fractions and simplest form' },
+        { id: 'y8-2b', code: '2B', title: 'Adding and subtracting fractions' },
+        { id: 'y8-2c', code: '2C', title: 'Multiplying and dividing fractions' },
+        { id: 'y8-2d', code: '2D', title: 'The unitary method' },
+        { id: 'y8-2e', code: '2E', title: 'Decimal notation' },
+        { id: 'y8-2f', code: '2F', title: 'Operations on decimals' },
+        { id: 'y8-2g', code: '2G', title: 'Fractions, decimals and rounding' }
+      ]
+    },
+    {
+      id: 'y8-3',
+      title: 'Chapter 3: Review of factors and indices',
+      modules: 5,
+      topics: [
+        { id: 'y8-3a', code: '3A', title: 'Factors, prime and composite numbers, multiples' },
+        { id: 'y8-3b', code: '3B', title: 'Indices and the index laws' },
+        { id: 'y8-3c', code: '3C', title: 'Order of operations' },
+        { id: 'y8-3d', code: '3D', title: 'Divisibility tests' },
+        { id: 'y8-3e', code: '3E', title: 'Prime factorisation and its applications' }
+      ]
+    },
+    {
+      id: 'y8-4',
+      title: 'Chapter 4: Negative numbers',
+      modules: 7,
+      topics: [
+        { id: 'y8-4a', code: '4A', title: 'Negative integers' },
+        { id: 'y8-4b', code: '4B', title: 'Addition and subtraction of a positive integer' },
+        { id: 'y8-4c', code: '4C', title: 'Addition and subtraction of a negative integer' },
+        { id: 'y8-4d', code: '4D', title: 'Multiplication and division with negative integers' },
+        { id: 'y8-4e', code: '4E', title: 'Indices and order of operations' },
+        { id: 'y8-4f', code: '4F', title: 'The Cartesian plane' },
+        { id: 'y8-4g', code: '4G', title: 'Negative fractions' }
+      ]
+    },
+    {
+      id: 'y8-5',
+      title: 'Chapter 5: Review of geometry',
+      modules: 7,
+      topics: [
+        { id: 'y8-5a', code: '5A', title: 'Angles at a point' },
+        { id: 'y8-5b', code: '5B', title: 'Angles associated with transversals' },
+        { id: 'y8-5c', code: '5C', title: 'Further problems involving parallel lines' },
+        { id: 'y8-5d', code: '5D', title: 'Proving that two lines are parallel' },
+        { id: 'y8-5e', code: '5E', title: 'Angles in triangles' },
+        { id: 'y8-5f', code: '5F', title: 'Isosceles and equilateral triangles' },
+        { id: 'y8-5g', code: '5G', title: 'Quadrilaterals' }
+      ]
+    },
+    {
+      id: 'y8-6',
+      title: 'Chapter 6: Algebra - part 1',
+      modules: 7,
+      topics: [
+        { id: 'y8-6a', code: '6A', title: 'Notation and substitution' },
+        { id: 'y8-6b', code: '6B', title: 'Solving equations' },
+        { id: 'y8-6c', code: '6C', title: 'Expanding brackets' },
+        { id: 'y8-6d', code: '6D', title: 'Solving equations with brackets' },
+        { id: 'y8-6e', code: '6E', title: 'Collecting like terms and solving equations' },
+        { id: 'y8-6f', code: '6F', title: 'Problem-solving using algebra' },
+        { id: 'y8-6g', code: '6G', title: 'Multiplying and dividing algebraic fractions' }
+      ]
+    },
+    {
+      id: 'y8-7',
+      title: 'Chapter 7: Percentages',
+      modules: 8,
+      topics: [
+        { id: 'y8-7a', code: '7A', title: 'Review of percentages' },
+        { id: 'y8-7b', code: '7B', title: 'Changing fractions to percentages and percentages to fractions (revisited)' },
+        { id: 'y8-7c', code: '7C', title: 'Sums, differences and products of percentages' },
+        { id: 'y8-7d', code: '7D', title: 'Simple interest' },
+        { id: 'y8-7e', code: '7E', title: 'Discount' },
+        { id: 'y8-7f', code: '7F', title: 'Percentage increase and decrease' },
+        { id: 'y8-7g', code: '7G', title: 'The unitary method' },
+        { id: 'y8-7h', code: '7H', title: 'Simple interest II' }
+      ]
+    },
+    {
+      id: 'y8-8',
+      title: "Chapter 8: Pythagoras' theorem",
+      modules: 3,
+      topics: [
+        { id: 'y8-8a', code: '8A', title: "Applying Pythagoras' theorem" },
+        { id: 'y8-8b', code: '8B', title: 'Finding a shorter side' },
+        { id: 'y8-8c', code: '8C', title: 'Irrational numbers' }
+      ]
+    },
+    {
+      id: 'y8-9',
+      title: 'Chapter 9: Review and problem-solving',
+      modules: 4,
+      topics: [
+        { id: 'y8-9a', code: '9A', title: 'Review' },
+        { id: 'y8-9b', code: '9B', title: 'Problem-solving' },
+        { id: 'y8-9c', code: '9C', title: 'Modular arithmetic and congruence' },
+        { id: 'y8-9d', code: '9D', title: 'Addition, multiplication and powers in modular arithmetic' }
+      ]
+    },
+    {
+      id: 'y8-10',
+      title: 'Chapter 10: Rates and ratios',
+      modules: 6,
+      topics: [
+        { id: 'y8-10a', code: '10A', title: 'Review of the unitary method' },
+        { id: 'y8-10b', code: '10B', title: 'Solving problems using the unitary method' },
+        { id: 'y8-10c', code: '10C', title: 'Speed' },
+        { id: 'y8-10d', code: '10D', title: 'Ratios' },
+        { id: 'y8-10e', code: '10E', title: 'Using ratios in problems' },
+        { id: 'y8-10f', code: '10F', title: 'Scale drawings' }
+      ]
+    },
+    {
+      id: 'y8-11',
+      title: 'Chapter 11: Algebra - part 2',
+      modules: 4,
+      topics: [
+        { id: 'y8-11a', code: '11A', title: 'Expanding brackets and collecting like terms' },
+        { id: 'y8-11b', code: '11B', title: 'Addition and subtraction of algebraic fractions' },
+        { id: 'y8-11c', code: '11C', title: 'Solving equations' },
+        { id: 'y8-11d', code: '11D', title: 'Problem-solving with equations' }
+      ]
+    },
+    {
+      id: 'y8-12',
+      title: 'Chapter 12: Congruent triangles',
+      modules: 6,
+      topics: [
+        { id: 'y8-12a', code: '12A', title: 'Congruence of figures in the plane' },
+        { id: 'y8-12b', code: '12B', title: 'Congruent triangles' },
+        { id: 'y8-12c', code: '12C', title: 'Congruent triangles: The SSS and AAS tests' },
+        { id: 'y8-12d', code: '12D', title: 'Congruent triangles: The SAS and RHS tests' },
+        { id: 'y8-12e', code: '12E', title: 'Using congruence in geometrical problems' },
+        { id: 'y8-12f', code: '12F', title: 'Congruence and special triangles' }
+      ]
+    },
+    {
+      id: 'y8-13',
+      title: 'Chapter 13: Congruence and special quadrilaterals',
+      modules: 3,
+      topics: [
+        { id: 'y8-13a', code: '13A', title: 'Parallelograms and their properties' },
+        { id: 'y8-13b', code: '13B', title: 'Rhombuses and their properties' },
+        { id: 'y8-13c', code: '13C', title: 'Rectangles and squares and their properties' }
+      ]
+    },
+    {
+      id: 'y8-14',
+      title: 'Chapter 14: Circles',
+      modules: 4,
+      topics: [
+        { id: 'y8-14a', code: '14A', title: 'Features of the circle' },
+        { id: 'y8-14b', code: '14B', title: 'Circumference of a circle' },
+        { id: 'y8-14c', code: '14C', title: 'Area of a circle' },
+        { id: 'y8-14d', code: '14D', title: 'Areas of composite figures' }
+      ]
+    },
+    {
+      id: 'y8-15',
+      title: 'Chapter 15: Areas, volumes and time',
+      modules: 8,
+      topics: [
+        { id: 'y8-15a', code: '15A', title: 'Review of area and length' },
+        { id: 'y8-15b', code: '15B', title: 'Areas of special quadrilaterals' },
+        { id: 'y8-15c', code: '15C', title: 'Volume of a rectangular prism' },
+        { id: 'y8-15d', code: '15D', title: 'Volumes of other prisms' },
+        { id: 'y8-15e', code: '15E', title: 'Volume of a cylinder' },
+        { id: 'y8-15f', code: '15F', title: 'Surface area of a prism' },
+        { id: 'y8-15g', code: '15G', title: 'Conversion of units' },
+        { id: 'y8-15h', code: '15H', title: 'Time' }
+      ]
+    },
+    {
+      id: 'y8-16',
+      title: 'Chapter 16: Probability',
+      modules: 4,
+      topics: [
+        { id: 'y8-16a', code: '16A', title: 'An introduction to probability' },
+        { id: 'y8-16b', code: '16B', title: "'Or' and 'and'" },
+        { id: 'y8-16c', code: '16C', title: 'Two-way tables' },
+        { id: 'y8-16d', code: '16D', title: 'Further uses of Venn diagrams' }
+      ]
+    },
+    {
+      id: 'y8-17',
+      title: 'Chapter 17: Formulas and factorisation',
+      modules: 4,
+      topics: [
+        { id: 'y8-17a', code: '17A', title: 'Formulas' },
+        { id: 'y8-17b', code: '17B', title: 'Expansion and factorisation' },
+        { id: 'y8-17c', code: '17C', title: 'Binomial products' },
+        { id: 'y8-17d', code: '17D', title: 'Factorisation of simple quadratics' }
+      ]
+    },
+    {
+      id: 'y8-18',
+      title: 'Chapter 18: Graphing straight lines',
+      modules: 8,
+      topics: [
+        { id: 'y8-18a', code: '18A', title: 'The Cartesian plane' },
+        { id: 'y8-18b', code: '18B', title: 'Straight-line graphs that pass through the origin' },
+        { id: 'y8-18c', code: '18C', title: 'Straight-line graphs that do not pass through the origin' },
+        { id: 'y8-18d', code: '18D', title: 'Points and lines' },
+        { id: 'y8-18e', code: '18E', title: 'The y-intercept and the gradient of a line' },
+        { id: 'y8-18f', code: '18F', title: 'More on gradients' },
+        { id: 'y8-18g', code: '18G', title: 'Applications to constant rate problems' },
+        { id: 'y8-18h', code: '18H', title: 'Not all graphs are straight lines' }
+      ]
+    },
+    {
+      id: 'y8-19',
+      title: 'Chapter 19: Statistics',
+      modules: 3,
+      topics: [
+        { id: 'y8-19a', code: '19A', title: 'Comparing means and medians' },
+        { id: 'y8-19b', code: '19B', title: 'Sampling data' },
+        { id: 'y8-19c', code: '19C', title: 'Variation of means and proportions' }
+      ]
+    },
+    {
+      id: 'y8-20',
+      title: 'Chapter 20: Review and problem-solving',
+      modules: 3,
+      topics: [
+        { id: 'y8-20a', code: '20A', title: 'Review' },
+        { id: 'y8-20b', code: '20B', title: 'Problem-solving' },
+        { id: 'y8-20c', code: '20C', title: 'Fibonacci sequences' }
+      ]
+    }
   ],
   'Year 9': [
     {
