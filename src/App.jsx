@@ -22,8 +22,18 @@ import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Chevro
 import { db, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
-import './components/app-shell.css';
 import './components/mobile-capsule.css';
+
+const isNewer = (cloud, local) => {
+  if (!cloud || !local) return false;
+  const c = cloud.split('.').map(Number);
+  const l = local.split('.').map(Number);
+  for (let i = 0; i < 3; i++) {
+    if ((c[i] || 0) > (l[i] || 0)) return true;
+    if ((c[i] || 0) < (l[i] || 0)) return false;
+  }
+  return false;
+};
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
@@ -38,7 +48,7 @@ function App() {
       if (snap.exists()) {
         const cloudVersion = snap.data().version;
         // Temporarily disable strict version checking to prevent infinite update loops
-        if (cloudVersion && cloudVersion !== CURRENT_APP_VERSION) {
+        if (isNewer(cloudVersion, CURRENT_APP_VERSION)) {
           setNewVersionAvailable(true);
         }
       }
@@ -626,29 +636,47 @@ function App() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <Bell size={20} className="notif-pulse" />
                   <span style={{ fontWeight: 800, fontSize: '0.95rem', letterSpacing: '-0.01em' }}>
-                    A new version of Sapere is available with the latest features and fixes.
+                    New features are ready for you.
                   </span>
                 </div>
-                <button 
-                  onClick={handleUpdateApp}
-                  style={{
-                    background: 'white',
-                    color: '#6366f1',
-                    border: 'none',
-                    padding: '10px 24px',
-                    borderRadius: '100px',
-                    fontWeight: 900,
-                    fontSize: '0.85rem',
-                    cursor: 'pointer',
-                    boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-                    transition: 'transform 0.2s',
-                    whiteSpace: 'nowrap'
-                  }}
-                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                  onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                >
-                  Update Now
-                </button>
+                <div style={{ display: 'flex', gap: '12px' }}>
+                  <button 
+                    onClick={() => setNewVersionAvailable(false)}
+                    style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      color: 'white',
+                      border: '1px solid rgba(255,255,255,0.3)',
+                      padding: '10px 20px',
+                      borderRadius: '100px',
+                      fontWeight: 700,
+                      fontSize: '0.85rem',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    Dismiss
+                  </button>
+                  <button 
+                    onClick={handleUpdateApp}
+                    style={{
+                      background: 'white',
+                      color: '#6366f1',
+                      border: 'none',
+                      padding: '10px 240px', // Restored from user's view if needed, but 240px is huge, using 24px
+                      padding: '10px 24px',
+                      borderRadius: '100px',
+                      fontWeight: 900,
+                      fontSize: '0.85rem',
+                      cursor: 'pointer',
+                      boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
+                      transition: 'transform 0.2s',
+                      whiteSpace: 'nowrap'
+                    }}
+                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                  >
+                    Update Now
+                  </button>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
