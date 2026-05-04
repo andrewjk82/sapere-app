@@ -282,6 +282,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
             groupId: groupId, 
             date: `${year}-${month}-${day}`,
             isHomeworkCompleted: false,
+            reminderSent: false,
             createdAt: new Date().toISOString()
           });
         }

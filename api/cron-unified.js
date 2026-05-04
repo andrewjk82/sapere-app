@@ -177,6 +177,15 @@ export default async function handler(req, res) {
       }
     }
 
+    // ── Log Execution to system_logs for Dashboard visibility ────────────
+    await db.collection('system_logs').add({
+      type: 'cron_execution',
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      sydneyTime: `${sydHour}:${String(sydMinute).padStart(2,'0')}`,
+      remindersSentCount: logs.filter(l => l.includes('reminder sent')).length,
+      logs: logs
+    });
+
     return res.status(200).json({ success: true, logs });
 
   } catch (error) {

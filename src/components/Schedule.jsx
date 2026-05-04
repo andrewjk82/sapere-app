@@ -95,6 +95,7 @@ const Schedule = () => {
       if (choice === 'single') {
         await updateDoc(doc(db, 'sessions', selectedSession.id), {
           ...editData,
+          reminderSent: false, // Reset reminder flag on change
           updatedAt: new Date().toISOString()
         });
       } else if (choice === 'series' && selectedSession.groupId) {
@@ -117,6 +118,7 @@ const Schedule = () => {
             notes: editData.notes,
             homework: editData.homework,
             isHomeworkCompleted: editData.isHomeworkCompleted,
+            reminderSent: false, // Reset reminder flag for series too
             updatedAt: new Date().toISOString()
           });
         });
