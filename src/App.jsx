@@ -20,7 +20,7 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, ChevronLeft, ChevronRight, Trophy, Plus } from 'lucide-react';
 import { db, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
+import { doc, onSnapshot, updateDoc, setDoc } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -612,75 +612,7 @@ function App() {
             v{CURRENT_APP_VERSION}
           </motion.div>
 
-          <AnimatePresence>
-            {newVersionAvailable && (
-              <motion.div 
-                initial={{ y: -100 }} 
-                animate={{ y: 0 }}
-                style={{
-                  position: 'fixed',
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
-                  color: 'white',
-                  padding: '16px 24px',
-                  zIndex: 2147483647,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '24px',
-                  boxShadow: '0 4px 20px rgba(99, 102, 241, 0.4)',
-                  textAlign: 'center'
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <Bell size={20} className="notif-pulse" />
-                  <span style={{ fontWeight: 800, fontSize: '0.95rem', letterSpacing: '-0.01em' }}>
-                    New features are ready for you.
-                  </span>
-                </div>
-                <div style={{ display: 'flex', gap: '12px' }}>
-                  <button 
-                    onClick={() => setNewVersionAvailable(false)}
-                    style={{
-                      background: 'rgba(255,255,255,0.1)',
-                      color: 'white',
-                      border: '1px solid rgba(255,255,255,0.3)',
-                      padding: '10px 20px',
-                      borderRadius: '100px',
-                      fontWeight: 700,
-                      fontSize: '0.85rem',
-                      cursor: 'pointer'
-                    }}
-                  >
-                    Dismiss
-                  </button>
-                  <button 
-                    onClick={handleUpdateApp}
-                    style={{
-                      background: 'white',
-                      color: '#6366f1',
-                      border: 'none',
-                      padding: '10px 240px', // Restored from user's view if needed, but 240px is huge, using 24px
-                      padding: '10px 24px',
-                      borderRadius: '100px',
-                      fontWeight: 900,
-                      fontSize: '0.85rem',
-                      cursor: 'pointer',
-                      boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-                      transition: 'transform 0.2s',
-                      whiteSpace: 'nowrap'
-                    }}
-                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                  >
-                    Update Now
-                  </button>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+
 
           <AnimatePresence>
             {showNotifs && (
