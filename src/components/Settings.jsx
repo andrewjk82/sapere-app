@@ -5,6 +5,7 @@ import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
+import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
 const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
@@ -24,6 +25,7 @@ const Settings = () => {
     dreamImageUrl: ''
   });
   const [uploading, setUploading] = useState(false);
+  const [cloudVersion, setCloudVersion] = useState(null);
   const fileInputRef = useRef(null);
 
   const displayName = useMemo(() => profile?.firstName ? `${profile.firstName} ${profile.lastName}` : (user?.displayName || user?.email?.split('@')[0] || 'Account'), [profile, user]);
@@ -56,6 +58,14 @@ const Settings = () => {
       }
     });
   }, [user?.uid]);
+
+  useEffect(() => {
+    if (!isAdmin) return;
+    const versionRef = doc(db, 'system_config', 'app');
+    return onSnapshot(versionRef, (snap) => {
+      if (snap.exists()) setCloudVersion(snap.data().version);
+    });
+  }, [isAdmin]);
 
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
@@ -157,22 +167,15 @@ const Settings = () => {
     try {
       setLoading(true);
       const versionRef = doc(db, 'system_config', 'app');
-      const snap = await getDoc(versionRef);
-      let nextVersion = '1.0.1';
       
-      if (snap.exists()) {
-        const current = snap.data().version || '1.0.0';
-        const parts = current.split('.').map(Number);
-        parts[2] += 1; // Increment patch version
-        nextVersion = parts.join('.');
-      }
-      
+      // Instead of just incrementing, we broadcast the current codebase version
+      // or increment it if the admin wants to force a reload even on the same version
       await setDoc(versionRef, { 
-        version: nextVersion,
+        version: CURRENT_APP_VERSION,
         updatedAt: new Date().toISOString(),
         updatedBy: user.email
       });
-      showToast(`Update broadcasted! New version: ${nextVersion}`, 'success');
+      showToast(`Version ${CURRENT_APP_VERSION} broadcasted to all users!`, 'success');
     } catch (e) {
       showToast('Failed to broadcast update.', 'error');
       console.error(e);
@@ -501,8 +504,18 @@ const Settings = () => {
                 <span className="page-pill" style={{ background: '#fef2f2', color: '#991b1b' }}>Admin Only</span>
               </div>
               <div style={{ marginTop: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{ background: '#f8fafc', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                    <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Local Version</div>
+                    <div style={{ fontSize: '1rem', fontWeight: 900, color: '#1e1b4b' }}>v{CURRENT_APP_VERSION}</div>
+                  </div>
+                  <div style={{ background: '#f8fafc', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                    <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Cloud Version</div>
+                    <div style={{ fontSize: '1rem', fontWeight: 900, color: '#1e1b4b' }}>v{cloudVersion || '---'}</div>
+                  </div>
+                </div>
                 <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '16px' }}>
-                  Push a new version update to all active users. This will trigger a notification banner on their screens.
+                  Broadcast the current local version (v{CURRENT_APP_VERSION}) to all users. They will see an update banner until they refresh.
                 </p>
                 <button 
                   className="app-button" 
