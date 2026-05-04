@@ -10,7 +10,7 @@ import {
 import { db } from '../firebase/config';
 import { 
   doc, updateDoc, onSnapshot, collection, 
-  addDoc, serverTimestamp, deleteDoc, increment
+  addDoc, serverTimestamp, deleteDoc, increment, getDocs
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -322,6 +322,49 @@ const StudentDetail = ({ studentId, onBack }) => {
       console.error(e); 
       showToast("Booking failed.", 'error');
     } finally { setBooking(false); }
+  };
+
+  const handleRecalculateXP = async () => {
+    if (!confirm("Recalculate total XP and challenge count from history? This will overwrite the current totals.")) return;
+    try {
+      setLoading(true);
+      const colName = student.source === 'manual' ? 'students' : 'users';
+      
+      // 1. Fetch all daily stats
+      const dailySnap = await getDocs(collection(db, colName, studentId, 'daily_stats'));
+      const calcSnap = await getDocs(collection(db, colName, studentId, 'calc_stats'));
+      
+      let totalXP = 0;
+      let challengesCompleted = 0;
+      
+      dailySnap.forEach(d => {
+        const data = d.data();
+        if (data.completed && data.score) {
+          totalXP += (data.score * 10);
+          challengesCompleted += 1;
+        }
+      });
+      
+      calcSnap.forEach(d => {
+        const data = d.data();
+        if (data.completed && data.score) {
+          totalXP += (data.score * 10);
+          challengesCompleted += 1;
+        }
+      });
+      
+      await updateDoc(doc(db, colName, studentId), {
+        totalXP,
+        challengesCompleted
+      });
+      
+      showToast(`Success! Total XP: ${totalXP}, Challenges: ${challengesCompleted}`, 'success');
+    } catch (err) {
+      console.error(err);
+      showToast("Recalculation failed.", 'error');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleResetChallenge = async (stat) => {
@@ -650,7 +693,15 @@ const StudentDetail = ({ studentId, onBack }) => {
               </div>
             </div>
 
-            <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '24px' }}>CHALLENGE HISTORY</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+              <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', margin: 0 }}>CHALLENGE HISTORY</div>
+              <button 
+                onClick={handleRecalculateXP}
+                style={{ padding: '6px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #e0e7ff', fontSize: '0.7rem', fontWeight: 800, cursor: 'pointer' }}
+              >
+                Recalculate XP
+              </button>
+            </div>
             <div style={{ display: 'grid', gap: '12px' }}>
               {dailyStats.length > 0 ? dailyStats.map(stat => (
                 <div key={stat.id} onClick={() => setSelectedChallenge(stat)} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>

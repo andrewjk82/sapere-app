@@ -146,6 +146,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [isCorrect, setIsCorrect] = useState(null);
   const [todayCompleted, setTodayCompleted] = useState(false);
   const [abandonedToday, setAbandonedToday] = useState(false);
+  const [isFinishing, setIsFinishing] = useState(false);
   const [loading, setLoading] = useState(true);
   const [history, setHistory] = useState([]);
   const [studentProfile, setStudentProfile] = useState(null);
@@ -709,7 +710,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   };
 
   const finishQuiz = async () => {
+    if (isFinishing) return;
     try {
+      setIsFinishing(true);
       setStep('result');
       if (setIsLocked) setIsLocked(false);
       
