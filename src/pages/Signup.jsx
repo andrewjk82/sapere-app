@@ -378,12 +378,10 @@ const Signup = ({ onToggleMode }) => {
         </div>
       </form>
 
-      {step === 1 && (
-        <p className="auth-footer">
-          Already have an account?
-          <button onClick={onToggleMode} className="auth-link">Sign in</button>
-        </p>
-      )}
+      <p className="auth-footer">
+        Already have an account?
+        <button onClick={onToggleMode} className="auth-link">Sign in</button>
+      </p>
     </AuthLayout>
   );
 };
