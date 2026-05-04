@@ -79,7 +79,20 @@ export default async function handler(req, res) {
 
         const sessionMin = parseTimeStr(s.startTime);
         if (sessionMin !== null && Math.abs(sessionMin - normalizedTarget) <= windowMin) {
-          await sendNotification(db, transporter, s, 'class_reminder', `Your ${s.subject} class starts in 2 hours!`, `Don't forget: ${s.subject} @ ${s.startTime} today!`);
+          const reminderBody = `
+            <div style="background: #eef2ff; padding: 20px; border-radius: 16px; border: 1px solid #e0e7ff; margin-bottom: 20px;">
+              <h3 style="margin: 0 0 10px 0; color: #4338ca; font-size: 1.1rem; font-weight: 800;">🔔 Class Reminder</h3>
+              <p style="margin: 0; color: #3730a3; font-size: 1rem; font-weight: 600;">
+                Your <strong>${s.subject}</strong> session is starting in <strong>2 hours</strong>!
+              </p>
+              <div style="margin-top: 15px; display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9rem; font-weight: 700;">
+                <span style="background: white; padding: 4px 10px; border-radius: 8px; border: 1px solid #e2e8f0;">🕒 ${s.startTime}</span>
+                <span style="background: white; padding: 4px 10px; border-radius: 8px; border: 1px solid #e2e8f0;">📅 Today</span>
+              </div>
+            </div>
+            <p style="color: #64748b; font-size: 0.9rem; line-height: 1.5;">We recommend logging in a few minutes early to prepare your materials. See you soon!</p>
+          `;
+          await sendNotification(db, transporter, s, 'class_reminder', `Your ${s.subject} class starts in 2 hours!`, reminderBody);
           await docSnapshot.ref.update({ reminderSent: true });
           logs.push(`2hr reminder sent to ${s.studentName}`);
         }
@@ -87,10 +100,10 @@ export default async function handler(req, res) {
     }
 
     // ══════════════════════════════════════════════════════════════════════
-    // PART 2: 8PM Daily Wrap-up (Tasks & Tomorrow's Schedule)
+    // PART 2: Daily Wrap-up (Tasks & Tomorrow's Schedule) - Runs between 7PM and 9PM
     // ══════════════════════════════════════════════════════════════════════
-    if (sydHour === 20 && sydMinute < 30) {
-      logs.push(`[Cron] 8PM reached. Checking tasks and tomorrow's schedule...`);
+    if (sydHour >= 19 && sydHour < 21) {
+      logs.push(`[Cron] 7PM-9PM window reached. Checking tasks and tomorrow's schedule...`);
 
       // 1. Fetch all students
       const studentsSnap = await db.collection('users').where('role', '==', 'student').get();
@@ -108,6 +121,7 @@ export default async function handler(req, res) {
         const student = studentDoc.data();
         const studentId = studentDoc.id;
         const studentEmail = student.email;
+        const studentName = student.name || student.displayName || `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
 
         // Skip if already sent 8PM reminder (safety)
         if (student.last8PMReminderDate === todayStr) continue;
@@ -132,7 +146,7 @@ export default async function handler(req, res) {
 
         // Send reminder if they have classes tomorrow OR unfinished tasks today
         if (tomorrowClasses.length > 0 || hasUnfinishedTasks) {
-          let body = `<h2 style="color: #4f46e5;">Hello, ${student.name || 'Student'}!</h2>`;
+          let body = `<h2 style="color: #4f46e5;">Hello, ${studentName}!</h2>`;
           
           if (hasUnfinishedTasks) {
             body += `<div style="background: #fff1f2; padding: 15px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #fecaca;">`;
@@ -151,16 +165,14 @@ export default async function handler(req, res) {
             body += `</ul></div>`;
           }
 
-          body += `<p style="margin-top: 20px; color: #64748b; font-size: 14px;">Keep up the great work! See you soon.</p>`;
-
-          await sendNotification(db, transporter, { studentId, studentEmail, name: student.name }, 'daily_wrapup', 
+          await sendNotification(db, transporter, { studentId, studentEmail, name: studentName }, 'daily_wrapup', 
             hasUnfinishedTasks ? "You have unfinished tasks today!" : "Your schedule for tomorrow", 
             body
           );
           
           // Mark as sent
           await studentDoc.ref.update({ last8PMReminderDate: todayStr });
-          logs.push(`8PM Wrap-up sent to ${student.name}`);
+          logs.push(`8PM Wrap-up sent to ${studentName}`);
         }
       }
     }
@@ -184,14 +196,57 @@ async function sendNotification(db, transporter, session, type, subject, body) {
         to: studentEmail,
         subject: `[Sapere] ${subject}`,
         html: `
-          <div style="font-family: sans-serif; padding: 20px; background-color: #f8fafc;">
-            <div style="max-width: 500px; margin: 0 auto; background: white; border-radius: 20px; padding: 30px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">
-              ${body}
-              <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #f1f5f9; text-align: center;">
-                <span style="color: #94a3b8; font-size: 12px;">© Sapere Aude Academia</span>
-              </div>
-            </div>
-          </div>`
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          </head>
+          <body style="margin: 0; padding: 0; background-color: #f1f5f9; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+              <tr>
+                <td align="center" style="padding: 40px 20px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 540px; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+                    <!-- Header -->
+                    <tr>
+                      <td style="background: linear-gradient(135deg, #6366f1, #8b5cf6); padding: 32px 40px; text-align: left;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td>
+                              <div style="font-size: 20px; font-weight: 900; color: #ffffff; letter-spacing: -0.02em;">Sapere Aude</div>
+                              <div style="font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 2px;">Academia</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                      <td style="padding: 40px; background-color: #ffffff;">
+                        ${body}
+                        
+                        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #f1f5f9; text-align: center;">
+                          <a href="https://sapere-app.vercel.app" style="display: inline-block; background-color: #6366f1; color: #ffffff; padding: 14px 28px; border-radius: 14px; text-decoration: none; font-weight: 800; fontSize: 15px; box-shadow: 0 4px 12px rgba(99,102,241,0.2);">Open Dashboard</a>
+                        </div>
+                      </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                      <td style="padding: 0 40px 40px 40px; text-align: center;">
+                        <p style="margin: 0; color: #94a3b8; font-size: 12px; font-weight: 600;">
+                          © 2026 Sapere Aude Academia<br>
+                          Excellence in Mathematics Tutoring
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </body>
+          </html>`
       });
     } catch (e) { console.error(`Email fail:`, e.message); }
   }

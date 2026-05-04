@@ -3,6 +3,7 @@ import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Sa
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const TIME_OPTIONS = [
@@ -29,6 +30,7 @@ const getSessionAccent = (session) => {
 
 const Schedule = () => {
   const { user, isAdmin } = useAuth();
+  const { showToast } = useToast();
   const [sessions, setSessions] = useState([]);
   const [selectedSession, setSelectedSession] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -123,9 +125,10 @@ const Schedule = () => {
       
       setSaveChoiceOpen(null);
       setSelectedSession(null);
+      showToast('Changes saved successfully!', 'success');
     } catch (e) {
       console.error(e);
-      alert('Failed to update.');
+      showToast('Failed to update.', 'error');
     }
   };
 
@@ -154,9 +157,10 @@ const Schedule = () => {
       
       setDeleteChoiceOpen(null);
       setSelectedSession(null);
+      showToast('Session deleted.', 'success');
     } catch (e) {
       console.error(e);
-      alert('Delete failed.');
+      showToast('Delete failed.', 'error');
     }
   };
 
@@ -281,7 +285,9 @@ const Schedule = () => {
                       {session.studentName?.charAt(0) || 'S'}
                     </div>
                     <div>
-                      <div style={{ fontSize: '1.02rem', fontWeight: 900, color: '#0f172a' }}>{session.studentName}</div>
+                      <div style={{ fontSize: '1.02rem', fontWeight: 900, color: '#0f172a' }}>
+                        {session.groupStudentNames ? session.groupStudentNames.join(', ') : session.studentName}
+                      </div>
                       <div style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 700 }}>{session.subject}</div>
                     </div>
                   </div>
@@ -405,36 +411,61 @@ const Schedule = () => {
             const daySessions = sessions.filter(s => s.date === dateStr);
             return (
               <div key={di} style={{ position: 'relative', height: `${timeSlots.length * SLOT_H}px`, borderRight: di < 6 ? '1px solid rgba(241,245,249,0.9)' : 'none', background: di % 2 === 0 ? '#fff' : '#fcfdff' }}>
-                {daySessions.map(session => {
-                  const start = parseTime(session.startTime);
-                  const end = parseTime(session.endTime);
-                  const top = (start - 8) * SLOT_H;
-                  const height = Math.max((end - start) * SLOT_H - 4, 30);
-                  const accent = getSessionAccent(session);
-                  return (
-                    <div
-                      key={session.id}
-                      onClick={() => handleOpenDetails(session)}
-                      style={{
-                        position: 'absolute', top: `${top + 2}px`, height: `${height}px`,
-                        left: '6px', right: '6px',
-                        backgroundColor: `${accent}14`, borderLeft: `4px solid ${accent}`,
-                        borderRadius: '10px', padding: '8px 9px',
-                        cursor: 'pointer', zIndex: 5, overflow: 'hidden',
-                        boxShadow: '0 10px 22px rgba(15,23,42,0.08)',
-                        transition: 'transform 0.2s'
-                      }}
-                      onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
-                      onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                    >
-                      <div style={{ fontSize: '10px', fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{session.subject}</div>
-                      <div style={{ fontSize: '12px', fontWeight: 900, color: '#0f172a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{session.studentName}</div>
-                      <div style={{ fontSize: '9px', color: '#475569', marginTop: '5px', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 800 }}>
-                        <Clock size={10} />{session.startTime}
+                {(() => {
+                  // Group sessions by startTime, endTime, and subject to handle group classes
+                  const groups = daySessions.reduce((acc, s) => {
+                    const key = `${s.startTime}-${s.endTime}-${s.subject}`;
+                    if (!acc[key]) acc[key] = [];
+                    acc[key].push(s);
+                    return acc;
+                  }, {});
+
+                  return Object.values(groups).map(group => {
+                    const session = group[0];
+                    const isGroup = group.length > 1;
+                    const studentNames = group.map(s => s.studentName).join('\n');
+                    
+                    const start = parseTime(session.startTime);
+                    const end = parseTime(session.endTime);
+                    const top = (start - 8) * SLOT_H;
+                    const height = Math.max((end - start) * SLOT_H - 4, 30);
+                    const accent = getSessionAccent(session);
+
+                    return (
+                      <div
+                        key={session.id}
+                        onClick={() => handleOpenDetails(isGroup ? { ...session, isGroupedClass: true, groupStudents: group } : session)}
+                        style={{
+                          position: 'absolute', top: `${top + 2}px`, height: `${height}px`,
+                          left: '6px', right: '6px',
+                          backgroundColor: `${accent}14`, borderLeft: `4px solid ${accent}`,
+                          borderRadius: '10px', padding: '8px 9px',
+                          cursor: 'pointer', zIndex: 5, overflow: 'hidden',
+                          boxShadow: '0 10px 22px rgba(15,23,42,0.08)',
+                          transition: 'transform 0.2s',
+                          display: 'flex',
+                          flexDirection: 'column'
+                        }}
+                        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+                        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                      >
+                        <div style={{ fontSize: '10px', fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                          {session.subject} {isGroup && `(${group.length})`}
+                        </div>
+                        <div style={{ fontSize: '11px', fontWeight: 800, color: '#0f172a', lineHeight: '1.2' }}>
+                          {group.map((s, i) => (
+                            <div key={i} style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                              {s.studentName}
+                            </div>
+                          ))}
+                        </div>
+                        <div style={{ fontSize: '9px', color: '#475569', marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 800 }}>
+                          <Clock size={10} />{session.startTime}
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  });
+                })()}
               </div>
             );
           })}
@@ -532,11 +563,26 @@ const Schedule = () => {
             >
               <div style={{ backgroundColor: '#6366f1', padding: '32px', color: '#fff' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                  <div>
-                    <h3 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900 }}>{selectedSession.studentName}</h3>
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900 }}>
+                      {selectedSession.isGroupedClass 
+                        ? 'Group Class' 
+                        : (selectedSession.groupStudentNames ? selectedSession.studentName : selectedSession.studentName)}
+                    </h3>
                     <p style={{ margin: 0, opacity: 0.85, fontWeight: 600 }}>{selectedSession.subject} · {selectedSession.date}</p>
+                    
+                    {(selectedSession.isGroupedClass || selectedSession.groupStudentNames) && (
+                      <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Students ({selectedSession.isGroupedClass ? selectedSession.groupStudents.length : selectedSession.groupStudentNames.length})</span>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                          {(selectedSession.isGroupedClass ? selectedSession.groupStudents.map(s => s.studentName) : selectedSession.groupStudentNames).map((name, i) => (
+                            <span key={i} style={{ padding: '6px 12px', background: 'rgba(255,255,255,0.2)', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 700 }}>{name}</span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  <button onClick={() => setSelectedSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                  <button onClick={() => setSelectedSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', marginLeft: '16px' }}>
                     <X size={20} />
                   </button>
                 </div>

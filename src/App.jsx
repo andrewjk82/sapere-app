@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
+import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
@@ -26,6 +27,7 @@ import './components/mobile-capsule.css';
 
 function App() {
   const { user, isAdmin, logout } = useAuth();
+  const { showToast } = useToast();
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [isLocked, setIsLocked] = useState(false);
   
@@ -187,7 +189,7 @@ function App() {
 
   const handleAddStudent = async () => {
     if (!newStudent.name || !newStudent.subject || !newStudent.email) {
-      alert("Please fill in all fields including the student's email.");
+      showToast("Please fill in all fields including the student's email.", 'warning');
       return;
     }
     
@@ -196,7 +198,7 @@ function App() {
       setNewStudent({ name: '', email: '', subject: '', level: 'Year 10' });
       setIsModalOpen(false);
     } catch (error) {
-      alert("Error adding student. Make sure Firestore is enabled.");
+      showToast("Error adding student. Make sure Firestore is enabled.", 'error');
     }
   };
 
@@ -218,7 +220,9 @@ function App() {
 
   const isPasswordProvider = user?.providerData?.some((p) => p?.providerId === 'password');
 
-  if (!user.emailVerified && isPasswordProvider) {
+  // Only block for email verification if the profile is ALREADY complete (not during signup)
+  const isProfileComplete = profile && (profile.role === 'parent' || (profile.role === 'student' && profile.firstName));
+  if (!user.emailVerified && isPasswordProvider && isProfileComplete) {
     return (
       <AuthLayout
         eyebrow="One last step"
@@ -344,7 +348,7 @@ function App() {
 
   const handleTabChange = (tab) => {
     if (isLocked) {
-      alert("Please finish your current challenge before switching tabs.");
+      showToast("Please finish your current challenge before switching tabs.", 'warning');
       return;
     }
     setActiveTab(tab);
@@ -539,7 +543,7 @@ function App() {
                     className="mobile-user-capsule__notif" 
                     onClick={() => {
                       if (isLocked) {
-                        alert("Please finish your current challenge before switching tabs.");
+                        showToast("Please finish your current challenge before switching tabs.", 'warning');
                         return;
                       }
                       setActiveTab('Settings');
@@ -568,7 +572,7 @@ function App() {
                   <button 
                     onClick={() => {
                       if (isLocked) {
-                        alert("Please finish your current challenge before logging out.");
+                        showToast("Please finish your current challenge before logging out.", 'warning');
                         return;
                       }
                       logout();

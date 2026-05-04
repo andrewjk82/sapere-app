@@ -28,16 +28,41 @@ const Signup = ({ onToggleMode }) => {
   const [message, setMessage] = useState('');
   const { signup, loginWithGoogle } = useAuth();
 
-  const handleNextStep = () => {
+  const handleNextStep = async () => {
     if (step === 1) {
       if (!email || !password) return setError('Please enter credentials');
       if (password !== confirmPassword) return setError('Passwords do not match');
       if (password.length < 6) return setError('Password must be at least 6 characters');
+      
+      try {
+        setLoading(true);
+        setError('');
+        // Create auth account early
+        const userCredential = await signup(email, password);
+        const user = userCredential.user;
+        
+        // Create initial pending record
+        await setDoc(doc(db, 'users', user.uid), {
+          uid: user.uid,
+          email: user.email,
+          status: 'Pending Profile',
+          role: 'student', // Default
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+        
+        setStep(2);
+      } catch (err) {
+        setError(err.message);
+        return;
+      } finally {
+        setLoading(false);
+      }
+    } else {
+      if (step === 2 && !role) return setError('Please select your role');
+      setError('');
+      setStep(step + 1);
     }
-    if (step === 2 && !role) return setError('Please select your role');
-    
-    setError('');
-    setStep(step + 1);
   };
 
   const handlePrevStep = () => setStep(step - 1);
@@ -100,6 +125,7 @@ const Signup = ({ onToggleMode }) => {
         firstName: profileData.firstName,
         lastName: profileData.lastName,
         displayName: `${profileData.firstName} ${profileData.lastName}`,
+        status: 'Active', // Now fully active
         updatedAt: serverTimestamp(),
         ...(role === 'student' || !role ? {
           year: profileData.year,
@@ -111,9 +137,6 @@ const Signup = ({ onToggleMode }) => {
           students: profileData.students
         })
       };
-
-      // Add createdAt only if it doesn't exist (handled by Firestore logic via merge if needed)
-      userData.createdAt = serverTimestamp();
 
       // 3. Save to Firestore with merge: true to protect data
       await setDoc(doc(db, 'users', user.uid), userData, { merge: true });

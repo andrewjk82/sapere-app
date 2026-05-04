@@ -1,14 +1,14 @@
 import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 
 const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
+  const { showToast } = useToast();
   const [loading, setLoading] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
@@ -66,36 +66,47 @@ const Settings = () => {
     reader.onload = (event) => {
       const img = new Image();
       img.onload = async () => {
-        const canvas = document.createElement('canvas');
+        const MAX_SIZE = 800; // stricter bounding box
         let width = img.width;
         let height = img.height;
-        const MAX_WIDTH = 1200;
-        const MAX_HEIGHT = 800;
 
-        if (width > height) {
-          if (width > MAX_WIDTH) {
-            height *= MAX_WIDTH / width;
-            width = MAX_WIDTH;
-          }
-        } else {
-          if (height > MAX_HEIGHT) {
-            width *= MAX_HEIGHT / height;
-            height = MAX_HEIGHT;
+        if (width > MAX_SIZE || height > MAX_SIZE) {
+          if (width > height) {
+            height = Math.round((height * MAX_SIZE) / width);
+            width = MAX_SIZE;
+          } else {
+            width = Math.round((width * MAX_SIZE) / height);
+            height = MAX_SIZE;
           }
         }
 
+        const canvas = document.createElement('canvas');
         canvas.width = width;
         canvas.height = height;
         const ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0, width, height);
-        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+        
+        let quality = 0.8;
+        let compressedDataUrl = canvas.toDataURL('image/jpeg', quality);
+        
+        // Iteratively compress until under ~800KB (base64 length < 1.1 million chars)
+        while (compressedDataUrl.length > 1100000 && quality > 0.1) {
+           quality -= 0.1;
+           compressedDataUrl = canvas.toDataURL('image/jpeg', quality);
+        }
+
+        if (compressedDataUrl.length > 1100000) {
+          showToast("Image is too large. Please try a smaller photo.", 'warning');
+          setUploading(false);
+          return;
+        }
         
         try {
           await setDoc(doc(db, 'users', user.uid), { dreamImageUrl: compressedDataUrl }, { merge: true });
           setEditData(prev => ({ ...prev, dreamImageUrl: compressedDataUrl }));
         } catch (error) {
           console.error("Save failed:", error);
-          alert("Failed to save image.");
+          showToast("Failed to save image.", 'error');
         } finally {
           setUploading(false);
         }
@@ -108,13 +119,11 @@ const Settings = () => {
   const handleResetPassword = async () => {
     if (!user?.email) return;
     try {
-      setError('');
-      setMessage('');
       setLoading(true);
       await resetPassword(user.email);
-      setMessage('Password reset email sent.');
+      showToast('Password reset email sent.', 'success');
     } catch (e) {
-      setError(e?.message || 'Could not send reset email.');
+      showToast(e?.message || 'Could not send reset email.', 'error');
     } finally {
       setLoading(false);
     }
@@ -123,18 +132,17 @@ const Settings = () => {
   const handleSaveProfile = async () => {
     if (!user?.uid) return;
     try {
-      setError('');
-      setMessage('');
       setLoading(true);
       await setDoc(doc(db, 'users', user.uid), {
         ...editData,
         displayName: `${editData.firstName} ${editData.lastName}`,
+        status: 'Active',
         updatedAt: new Date().toISOString()
       }, { merge: true });
-      setMessage('Profile updated successfully!');
+      showToast('Profile updated successfully!', 'success');
       setIsEditing(false);
     } catch (e) {
-      setError('Failed to update profile.');
+      showToast('Failed to update profile.', 'error');
       console.error(e);
     } finally {
       setLoading(false);
@@ -161,9 +169,9 @@ const Settings = () => {
         updatedAt: new Date().toISOString(),
         updatedBy: user.email
       });
-      setMessage(`Update broadcasted! New version: ${nextVersion}`);
+      showToast(`Update broadcasted! New version: ${nextVersion}`, 'success');
     } catch (e) {
-      setError('Failed to broadcast update.');
+      showToast('Failed to broadcast update.', 'error');
       console.error(e);
     } finally {
       setLoading(false);
@@ -195,13 +203,6 @@ const Settings = () => {
         </div>
       </div>
 
-      {(message || error) && (
-        <div className="app-panel page-card">
-          <div className={`settings-message ${error ? 'is-error' : 'is-success'}`}>
-            {error || message}
-          </div>
-        </div>
-      )}
 
       <div className="app-grid app-grid--content">
         <section className="app-main-column">

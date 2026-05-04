@@ -114,7 +114,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       const price = (randomInt(10, 990) / 100).toFixed(2);
       const paidInt = Math.ceil(price / 5) * 5; // e.g., next $5 or $10
       const paid = paidInt.toFixed(2);
-      q = `You buy an item for \\$${price} and pay with \\$${paid}. How much change? (Write number only)`;
+      q = `You buy an item for $${price} and pay with $${paid}. How much change? (Write number only)`;
       a = ((paid * 100 - price * 100) / 100).toFixed(2).replace(/\.00$/, '');
       hint = `Change = Paid - Price`;
       break;
@@ -333,7 +333,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
         // Percentages
         const percent = randomInt(1, 9) * 10;
         const value = randomInt(1, 20) * 10;
-        q = `What is ${percent}\\% of ${value}?`;
+        q = `What is ${percent}% of ${value}?`;
         a = String((percent / 100) * value);
         hint = `${percent}% means ${percent}/100.`;
       }

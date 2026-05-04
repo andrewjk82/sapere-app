@@ -10,6 +10,7 @@ import {
   collection, query, orderBy, onSnapshot,
   addDoc, deleteDoc, doc, serverTimestamp
 } from 'firebase/firestore';
+import { useToast } from '../context/ToastContext';
 
 const CATEGORIES = ['All', 'Maths', 'English', 'Science', 'General', 'Exam Prep'];
 
@@ -39,6 +40,7 @@ const getDrivePreviewUrl = (url) => {
 
 const Library = () => {
   const { user, isAdmin } = useAuth();
+  const { showToast } = useToast();
   const [materials, setMaterials] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
@@ -75,9 +77,10 @@ const Library = () => {
       });
       setShowModal(false);
       setLinkTitle(''); setLinkUrl(''); setLinkDescription(''); setLinkCategory('General');
+      showToast('Resource added successfully!', 'success');
     } catch (err) {
       console.error(err);
-      alert('Failed to add resource. Please try again.');
+      showToast('Failed to add resource.', 'error');
     } finally {
       setIsSubmitting(false);
     }

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Plus, MoreVertical, Mail, BookOpen } from 'lucide-react';
+import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle } from 'lucide-react';
 import { studentService } from '../services/studentService';
+import { db } from '../firebase/config';
+import { doc, onSnapshot } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
@@ -12,6 +14,27 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
   const [activeMenuId, setActiveMenuId] = useState(null);
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileStudent, setProfileStudent] = useState(null);
+  const [completionStates, setCompletionStates] = useState({}); // { studentId: boolean }
+
+  const todayStr = new Date().toISOString().split('T')[0];
+
+  React.useEffect(() => {
+    if (!students || students.length === 0) return;
+
+    const unsubs = students.map(student => {
+      const docRef = doc(db, 'users', student.id, 'daily_stats', todayStr);
+      return onSnapshot(docRef, (snap) => {
+        setCompletionStates(prev => ({
+          ...prev,
+          [student.id]: snap.exists() && snap.data().completed === true
+        }));
+      }, (err) => {
+        console.warn(`Error fetching daily stats for ${student.id}:`, err);
+      });
+    });
+
+    return () => unsubs.forEach(unsub => unsub());
+  }, [students, todayStr]);
   
   const filteredStudents = students.filter(s => 
     s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -93,6 +116,46 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
                         }`} style={{ fontSize: '0.65rem', padding: '2px 8px' }}>
                           {student.status || 'Active'}
                         </span>
+                        {completionStates[student.id] === false && (
+                          <div 
+                            title="Daily Challenge Pending"
+                            style={{ 
+                              display: 'flex', 
+                              alignItems: 'center', 
+                              gap: '4px', 
+                              background: '#fff1f2', 
+                              color: '#f43f5e', 
+                              padding: '2px 8px', 
+                              borderRadius: '8px', 
+                              fontSize: '0.65rem', 
+                              fontWeight: 900,
+                              border: '1px solid #fecaca'
+                            }}
+                          >
+                            <AlertCircle size={10} />
+                            PENDING
+                          </div>
+                        )}
+                        {completionStates[student.id] === true && (
+                          <div 
+                            title="Daily Challenge Completed"
+                            style={{ 
+                              display: 'flex', 
+                              alignItems: 'center', 
+                              gap: '4px', 
+                              background: '#f0fdf4', 
+                              color: '#16a34a', 
+                              padding: '2px 8px', 
+                              borderRadius: '8px', 
+                              fontSize: '0.65rem', 
+                              fontWeight: 900,
+                              border: '1px solid #dcfce7'
+                            }}
+                          >
+                            <CheckCircle size={10} />
+                            DONE
+                          </div>
+                        )}
                       </div>
                       <p className="student-card__meta" style={{ marginBottom: '10px', fontSize: '0.85rem' }}>{student.level} • {student.school || student.subject}</p>
                       

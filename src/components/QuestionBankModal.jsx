@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Plus, Trash2, Edit2, Save, Image as ImageIcon, CheckCircle2, Eye, Check } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, addDoc, deleteDoc, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { useToast } from '../context/ToastContext';
 
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
@@ -44,6 +45,7 @@ const compressImageToDataUrl = (file) => {
 };
 
 const FileUploader = ({ onUpload, currentUrl, label }) => {
+  const { showToast } = useToast();
   const [uploading, setUploading] = useState(false);
   const fileInputRef = React.useRef(null);
 
@@ -58,7 +60,7 @@ const FileUploader = ({ onUpload, currentUrl, label }) => {
       onUpload(base64Url);
     } catch (err) {
       console.error("Upload Error:", err);
-      alert(`이미지 변환 실패: ${err.message}`);
+      showToast(`Image conversion failed: ${err.message}`, 'error');
     } finally {
       setUploading(false);
       if (fileInputRef.current) {
@@ -181,6 +183,7 @@ const StudentViewPreview = ({ question, onClose }) => {
 };
 
 const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
+  const { showToast } = useToast();
   const [previewQuestion, setPreviewQuestion] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(!directEditQuestion);
@@ -292,7 +295,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
   const handleSave = async () => {
     if (!formData.questionText || (formData.type === 'short_answer' && !formData.answer) || (formData.type === 'multiple_choice' && formData.answerIdx === null)) {
-      alert("Question content and answer are required.");
+      showToast("Question content and answer are required.", 'warning');
       return;
     }
 
@@ -332,9 +335,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       } else {
         setIsFormOpen(false);
       }
+      showToast("Question saved successfully!", 'success');
     } catch (e) {
       console.error(e);
-      alert("Error saving question.");
+      showToast("Error saving question.", 'error');
     }
   };
 
@@ -406,7 +410,24 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                             <img src={q.questionImage} alt="Question" style={{ maxHeight: '100px', borderRadius: '8px', border: '1px solid #e2e8f0' }} />
                           </div>
                         )}
-                        <div style={{ fontSize: '0.85rem', color: '#10b981', fontWeight: 600 }}>Answer: <MathPreview content={q.answer} /></div>
+                        
+                        {q.type === 'multiple_choice' ? (
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '12px' }}>
+                            {(q.options || []).map((opt, i) => {
+                              const isCorrect = q.answer === i.toString();
+                              return (
+                                <div key={i} style={{ padding: '8px 12px', borderRadius: '10px', border: `1px solid ${isCorrect ? '#10b981' : '#e2e8f0'}`, background: isCorrect ? '#f0fdf4' : 'white', fontSize: '0.8rem', color: isCorrect ? '#166534' : '#64748b', fontWeight: isCorrect ? 800 : 500 }}>
+                                  <span style={{ marginRight: '6px', opacity: 0.5 }}>{String.fromCharCode(65 + i)}.</span>
+                                  <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                                </div>
+                              );
+                            })}
+                          </div>
+                        ) : (
+                          <div style={{ fontSize: '0.85rem', color: '#10b981', fontWeight: 600, marginBottom: '12px' }}>
+                            Answer: <MathPreview content={q.answer} style={{ display: 'inline', padding: '2px 8px' }} />
+                          </div>
+                        )}
                       </div>
                       <div style={{ display: 'flex', gap: '8px' }}>
                         <button onClick={() => setPreviewQuestion(q)} style={{ padding: '8px', borderRadius: '8px', background: 'white', border: '1px solid #cbd5e1', color: '#6366f1', cursor: 'pointer' }} title="Preview Student View"><Eye size={16} /></button>

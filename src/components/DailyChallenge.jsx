@@ -6,6 +6,7 @@ import {
   Lightbulb, BookOpen, X, Check, Flag
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
@@ -134,6 +135,7 @@ const adjustDifficultyMix = (currentMix, resultStats) => {
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { user } = useAuth();
+  const { showToast } = useToast();
   const [step, setStep] = useState('start');
   const [currentIdx, setCurrentIdx] = useState(0);
   const [questions, setQuestions] = useState([]);
@@ -192,7 +194,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     const handleFocusLost = () => {
       setWarnings(w => w + 1);
-      alert("⚠️ Warning: Please do not leave the challenge window!\nSwitching tabs or apps is not allowed during the challenge.");
+      showToast("Please do not leave the challenge window! Switching tabs or apps is not allowed during the challenge.", 'warning');
     };
 
     const handleVisibilityChange = () => {
@@ -523,7 +525,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     } catch (error) {
       console.error("Critical error in startDailyQuiz:", error);
-      alert("Failed to start challenge. Please check your assigned curriculum or try again later.");
+      showToast("Failed to start challenge. Please check your assigned curriculum or try again later.", 'error');
       setLoading(false);
     }
   };
@@ -602,10 +604,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setIsReporting(false);
       setReportedQuestion(null);
       setReportMessage('');
-      alert("Report submitted! We will review it.");
+      showToast("Report submitted! We will review it.", 'success');
     } catch (error) {
       console.error("Report error:", error);
-      alert("Failed to submit report.");
+      showToast("Failed to submit report.", 'error');
     } finally {
       setIsSubmittingReport(false);
     }

@@ -5,11 +5,14 @@ import {
   Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X
 } from 'lucide-react';
 import { auth, db } from '../firebase/config';
-import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc } from 'firebase/firestore';
+import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, query, where } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
+import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
+import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 
@@ -17,6 +20,7 @@ const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
 const Curriculum = () => {
   const { user, isAdmin } = useAuth();
+  const { showToast } = useToast();
   const [selectedYear, setSelectedYear] = useState('Year 11');
   const [selectedCourse, setSelectedCourse] = useState('Advanced');
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,12 +30,35 @@ const Curriculum = () => {
   const [isMigrating, setIsMigrating] = useState(false);
   const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
+  const [questionCounts, setQuestionCounts] = useState({});
+
+  // Fetch all question counts for visible chapters
+  useEffect(() => {
+    const fetchCounts = async () => {
+      try {
+        const q = collection(db, 'questions');
+        const snap = await getDocs(q);
+        const counts = {};
+        snap.docs.forEach(doc => {
+          const cid = doc.data().chapterId;
+          if (cid) counts[cid] = (counts[cid] || 0) + 1;
+        });
+        setQuestionCounts(counts);
+      } catch (err) {
+        console.error("Error fetching question counts:", err);
+      }
+    };
+    fetchCounts();
+  }, [curriculumRecords, isMigrating]);
 
   // Fetch Curriculum from Firestore
   useEffect(() => {
     const q = collection(db, 'curriculum');
     const unsub = onSnapshot(q, (snap) => {
       setCurriculumRecords(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+      setLoading(false);
+    }, (err) => {
+      console.error("Firestore error in Curriculum:", err);
       setLoading(false);
     });
     return unsub;
@@ -52,7 +79,7 @@ const Curriculum = () => {
       }, { merge: true });
     } catch (err) {
       console.error("Error updating curriculum:", err);
-      alert("Failed to save changes.");
+      showToast("Failed to save changes.", 'error');
     }
   };
 
@@ -78,6 +105,110 @@ const Curriculum = () => {
     setEditingChapter(null);
   };
 
+  const handleSeedAlgebraQuestions = async () => {
+    if (!window.confirm("This will replace all existing questions for Chapter 1 with the latest 74 questions. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+      
+      // 1. Clear existing
+      const q = query(collRef, where('chapterId', '==', 'y11a-1'));
+      const snap = await getDocs(q);
+      const batch = writeBatch(db);
+      snap.docs.forEach(d => batch.delete(d.ref));
+      await batch.commit();
+
+      // 2. Add new
+      const addBatch = writeBatch(db);
+      
+      ALGEBRA_QUESTIONS_Y11A.forEach(qData => {
+        const docRef = doc(collRef);
+        const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+        const correctIndex = shuffledOpts.indexOf(qData.a);
+
+        addBatch.set(docRef, {
+          chapterId: 'y11a-1',
+          chapterTitle: 'Chapter 1: Algebra review',
+          topicId: 'y11a-1' + qData.c.slice(-1),
+          topicCode: qData.c,
+          topicTitle: qData.t,
+          isManual: true,
+          title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q,
+          difficulty: 'medium',
+          timeLimit: 120,
+          type: 'multiple_choice',
+          options: shuffledOpts.map(o => ({ text: o, imageUrl: "" })),
+          answer: correctIndex.toString(),
+          hint: qData.h,
+          solution: qData.s,
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        });
+      });
+      await addBatch.commit();
+      showToast("Successfully updated 74 Algebra questions!", 'success');
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to update questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedSurdsQuestions = async () => {
+    if (!window.confirm("This will replace all existing questions for Chapter 2 (Surds) with the latest randomized questions. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+      
+      // 1. Clear existing for chapter y11a-2
+      const q = query(collRef, where('chapterId', '==', 'y11a-2'));
+      const snap = await getDocs(q);
+      const batch = writeBatch(db);
+      snap.docs.forEach(d => batch.delete(d.ref));
+      await batch.commit();
+
+      // 2. Add new surds questions
+      const addBatch = writeBatch(db);
+      
+      SURDS_QUESTIONS_Y11A.forEach(qData => {
+        const docRef = doc(collRef);
+        const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+        const correctIndex = shuffledOpts.indexOf(qData.a);
+
+        addBatch.set(docRef, {
+          chapterId: 'y11a-2',
+          chapterTitle: 'Chapter 2: Surds and indices',
+          topicId: 'y11a-2' + qData.c.slice(-1),
+          topicCode: qData.c,
+          topicTitle: qData.t,
+          isManual: true,
+          title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q,
+          difficulty: 'medium',
+          timeLimit: 120,
+          type: 'multiple_choice',
+          options: shuffledOpts.map(o => ({ text: o, imageUrl: "" })),
+          answer: correctIndex.toString(),
+          hint: qData.h,
+          solution: qData.s,
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        });
+      });
+      await addBatch.commit();
+      showToast(`Successfully updated ${SURDS_QUESTIONS_Y11A.length} Surds questions!`, 'success');
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to update Surds questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSyncSelectedYear = async () => {
     const isSenior = ['Year 11', 'Year 12'].includes(selectedYear);
     const data = isSenior 
@@ -85,7 +216,7 @@ const Curriculum = () => {
       : CURRICULUM_DATA[selectedYear];
       
     if (!Array.isArray(data)) {
-      alert("No built-in curriculum data found for this selection.");
+      showToast("No built-in curriculum data found for this selection.", 'info');
       return;
     }
     
@@ -144,31 +275,35 @@ const Curriculum = () => {
         <>
           <div className="curriculum-header-mobile">
             <div className="app-page__title">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <h2>Curriculum Management</h2>
-                {curriculumRecords.length === 0 && (
+                <div style={{ display: 'flex', gap: '8px' }}>
                   <button 
-                    onClick={async () => {
-                      setIsMigrating(true);
-                      await migrateCurriculumToFirestore();
-                      setIsMigrating(false);
-                    }}
+                    onClick={handleSeedAlgebraQuestions}
                     disabled={isMigrating}
                     className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a' }}
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a', fontWeight: 800 }}
                   >
-                    {isMigrating ? 'Migrating...' : '⚠️ Seed Initial Data'}
+                    {isMigrating ? 'Updating Questions...' : '⚠️ Seed Ch1 Algebra'}
                   </button>
-                )}
-                {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
-                  <button
-                    onClick={handleSyncSelectedYear}
+
+                  <button 
+                    onClick={handleSeedSurdsQuestions}
+                    disabled={isMigrating}
                     className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd' }}
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
                   >
-                    Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
+                    {isMigrating ? 'Updating Surds...' : '⚠️ Seed Ch2 Surds'}
                   </button>
-                )}
+
+                  {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
+                    <button
+                      onClick={handleSyncSelectedYear}
+                      className="app-button"
+                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd', fontWeight: 800 }}
+                    >
+                      Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
+                    </button>
+                  )}
+                </div>
               </div>
               <p>{selectedYear} Curriculum {selectedCourse ? `(${selectedCourse})` : ''}</p>
             </div>
@@ -188,7 +323,6 @@ const Curriculum = () => {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-              </div>
             </div>
           </div>
 
@@ -306,6 +440,9 @@ const Curriculum = () => {
                         <h3 style={{ margin: '0 0 6px 0', fontSize: '1.1rem', fontWeight: 800, color: '#1a1c2c' }}>{chapter.title}</h3>
                         <p style={{ margin: 0, fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>
                           {chapter.topics?.length ? `${chapter.topics.length} subtopics stored` : 'Core curriculum unit'}
+                          {questionCounts[chapter.id] !== undefined && (
+                            <span style={{ color: '#6366f1' }}> · {questionCounts[chapter.id]} questions stored</span>
+                          )}
                         </p>
                       </div>
 

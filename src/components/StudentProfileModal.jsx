@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { X, User, GraduationCap, School, Phone, MapPin, Check, Pencil, Mail, Trash2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { studentService } from '../services/studentService';
+import { useToast } from '../context/ToastContext';
 
 const StudentProfileModal = ({ open, student, onClose }) => {
+  const { showToast } = useToast();
   const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(false);
   const [editData, setEditData] = useState({});
@@ -51,9 +53,10 @@ const StudentProfileModal = ({ open, student, onClose }) => {
 
       setIsEditing(false);
       onClose();
+      showToast("Profile updated successfully!", 'success');
     } catch (error) {
       console.error("Error updating student profile:", error);
-      alert("Failed to update profile. Please try again.");
+      showToast("Failed to update profile.", 'error');
     } finally {
       setLoading(false);
     }
@@ -68,7 +71,7 @@ const StudentProfileModal = ({ open, student, onClose }) => {
         } else {
           // For registered users, we might just want to 'unlink' or change a status
           // For now, let's just warn or handle accordingly
-          alert("Registered user accounts cannot be deleted from here. You can change their status to Inactive.");
+          showToast("Registered accounts cannot be deleted here. Change status to Inactive instead.", 'info');
           return;
         }
         onClose();

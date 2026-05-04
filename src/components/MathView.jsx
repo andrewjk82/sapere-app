@@ -2,14 +2,21 @@ import React, { useEffect, useRef } from 'react';
 
 const toDisplayText = (value, fallback = '') => {
   if (value === null || value === undefined) return fallback;
+  let str = '';
   if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
-    return String(value);
+    str = String(value);
+  } else if (typeof value === 'object') {
+    str = String(value.text ?? value.label ?? value.question ?? value.value ?? fallback);
+  } else {
+    str = fallback;
   }
-  if (typeof value === 'object') {
-    const val = value.text ?? value.label ?? value.question ?? value.value ?? fallback;
-    return String(val);
+
+  // Clean up LaTeX escapes if not in math mode
+  if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
+    str = str.replace(/\\%/g, '%').replace(/\\\$/g, '$');
   }
-  return fallback;
+  
+  return str;
 };
 
 const MathView = ({ content, style }) => {

@@ -4,6 +4,7 @@ import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, C
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
@@ -12,6 +13,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 
 const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) => {
   const { user, isAdmin } = useAuth();
+  const { showToast } = useToast();
   const [profile, setProfile] = useState(null);
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
@@ -78,12 +80,12 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
       const res = await fetch('/api/cron-unified');
       const data = await res.json();
       if (data.success) {
-        alert(`Sync successful! ${data.logs.length} reminders sent.`);
+        showToast(`Sync successful! ${data.logs.length} reminders sent.`, 'success');
       } else {
-        alert('Sync failed: ' + data.error);
+        showToast('Sync failed: ' + data.error, 'error');
       }
     } catch (e) {
-      alert('Sync failed: ' + e.message);
+      showToast('Sync failed: ' + e.message, 'error');
     } finally {
       setIsSyncing(false);
     }
@@ -243,7 +245,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
   const handleCreateSession = async (e) => {
     e.preventDefault();
     if (newSession.studentIds.length === 0 || !newSession.subject) {
-      alert("Please select at least one student and a subject.");
+      showToast("Please select at least one student and a subject.", 'warning');
       return;
     }
     setIsSubmitting(true);
@@ -251,10 +253,15 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
       const sessionsToCreate = [];
       const groupId = `series_${Date.now()}`; 
       
+      const allStudentNames = newSession.studentIds.map(id => {
+        const s = students.find(st => st.id === id);
+        return s?.name || s?.displayName || `${s?.firstName || ''} ${s?.lastName || ''}`.trim() || 'Student';
+      });
+
       for (const studentId of newSession.studentIds) {
         const selectedStudent = students.find(s => s.id === studentId);
         const studentEmail = selectedStudent?.email || '';
-        const studentName = selectedStudent?.name || '';
+        const studentName = selectedStudent?.name || selectedStudent?.displayName || `${selectedStudent?.firstName || ''} ${selectedStudent?.lastName || ''}`.trim() || 'Student';
 
         const count = newSession.recurring ? 52 : 1;
         const baseDate = new Date(newSession.date + 'T12:00:00'); // noon avoids UTC day shift
@@ -271,7 +278,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
             studentId,
             studentName,
             studentEmail,
-            groupId: groupId, // All sessions in this creation event share the same groupId
+            groupStudentNames: allStudentNames, // Store everyone's name in each doc
+            groupId: groupId, 
             date: `${year}-${month}-${day}`,
             isHomeworkCompleted: false,
             createdAt: new Date().toISOString()
@@ -339,9 +347,10 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
             {/* Left: Vision Card */}
             <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7' }}>
               <div className="app-panel vision-card" style={{ 
-                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1516534775068-ba3e84529519?auto=format&fit=crop&q=80&w=1200'})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200'}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                backgroundColor: '#1e1b4b', // Dark fallback to match theme
                 height: isMobile ? '460px' : '100%',
                 minHeight: isMobile ? '460px' : '560px',
                 borderRadius: isMobile ? '0 0 32px 32px' : '32px',

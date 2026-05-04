@@ -1,0 +1,492 @@
+# Sapere Aude QR Generator (Ready to Run)
+
+아래 내용을 그대로 `index.html` 파일로 저장한 뒤 브라우저에서 열면 바로 실행됩니다.
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sapere Aude QR Generator</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #faf7ff, #f3ebff);
+      font-family: Inter, sans-serif;
+    }
+
+    .glass {
+      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.75);
+    }
+
+    .card-gradient {
+      background:
+        radial-gradient(circle at top left, #f1dfff 0%, transparent 30%),
+        linear-gradient(135deg,#f8f4ff,#ece0ff);
+    }
+
+    .soft-shadow {
+      box-shadow: 0 10px 40px rgba(143, 90, 255, 0.15);
+    }
+
+    .style-option.active {
+      border: 2px solid #9b6dff;
+      background: #f4ecff;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen p-6">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- HEADER -->
+    <div class="text-center mb-10">
+      <h1 class="text-5xl font-bold tracking-tight">
+        QR Code
+        <span class="text-purple-500">Generator</span>
+      </h1>
+
+      <p class="mt-4 text-gray-600 text-lg">
+        Create beautiful QR cards for Sapere Aude Academia
+      </p>
+    </div>
+
+    <!-- MAIN -->
+    <div class="grid lg:grid-cols-2 gap-8">
+
+      <!-- LEFT -->
+      <div class="glass rounded-3xl p-8 border border-purple-100 soft-shadow">
+
+        <!-- URL -->
+        <div class="mb-8">
+          <label class="block text-lg font-semibold mb-3">
+            Destination URL
+          </label>
+
+          <input
+            id="urlInput"
+            type="text"
+            value="https://sapere-app.vercel.app/"
+            class="w-full px-5 py-4 rounded-2xl border border-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400"
+          />
+        </div>
+
+        <!-- STYLES -->
+        <div class="mb-8">
+          <label class="block text-lg font-semibold mb-4">
+            Card Style
+          </label>
+
+          <div class="grid grid-cols-2 gap-4">
+
+            <button onclick="selectStyle('lavender')" class="style-option active rounded-2xl p-4 border" id="style-lavender">
+              <div class="bg-purple-100 rounded-xl h-24 mb-3"></div>
+              <div class="font-medium">Lavender</div>
+            </button>
+
+            <button onclick="selectStyle('minimal')" class="style-option rounded-2xl p-4 border" id="style-minimal">
+              <div class="bg-gray-100 rounded-xl h-24 mb-3"></div>
+              <div class="font-medium">Minimal</div>
+            </button>
+
+            <button onclick="selectStyle('dark')" class="style-option rounded-2xl p-4 border" id="style-dark">
+              <div class="bg-black rounded-xl h-24 mb-3"></div>
+              <div class="font-medium text-white">Dark</div>
+            </button>
+
+            <button onclick="selectStyle('classic')" class="style-option rounded-2xl p-4 border" id="style-classic">
+              <div class="bg-yellow-50 border rounded-xl h-24 mb-3"></div>
+              <div class="font-medium">Classic</div>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- TEXT -->
+        <div class="mb-6">
+          <label class="block font-semibold mb-2">Tagline</label>
+
+          <input
+            id="taglineInput"
+            value="Dare to Know. Learn Without Limits."
+            class="w-full px-4 py-3 rounded-xl border border-purple-200"
+          />
+        </div>
+
+        <div class="mb-8">
+          <label class="block font-semibold mb-2">Description</label>
+
+          <textarea
+            id="descInput"
+            rows="3"
+            class="w-full px-4 py-3 rounded-xl border border-purple-200"
+          >Scan to access free learning tools & resources.</textarea>
+        </div>
+
+        <!-- LOGO UPLOAD -->
+        <div class="mb-8">
+          <label class="block font-semibold mb-3">
+            Upload Logo
+          </label>
+
+          <input
+            type="file"
+            id="logoUpload"
+            accept="image/*"
+            onchange="handleLogoUpload(event)"
+            class="w-full px-4 py-3 rounded-xl border border-purple-200 bg-white"
+          />
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          onclick="generateQR()"
+          class="w-full bg-gradient-to-r from-purple-500 to-violet-500 text-white py-4 rounded-2xl font-semibold text-lg hover:scale-[1.02] transition"
+        >
+          Generate QR Code
+        </button>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="glass rounded-3xl p-8 border border-purple-100 soft-shadow">
+
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-bold">Live Preview</h2>
+        </div>
+
+        <!-- CARD -->
+        <div
+          id="previewCard"
+          class="rounded-[40px] p-10 text-center card-gradient relative overflow-hidden"
+        >
+
+          <div class="absolute -top-20 -left-20 w-60 h-60 bg-purple-200 opacity-40 rounded-full blur-3xl"></div>
+
+          <div class="relative z-10">
+
+            <!-- LOGO -->
+            <img
+              id="logoImage"
+              src="https://i.imgur.com/8Km9tLL.png"
+              class="w-28 h-28 mx-auto mb-4 object-contain"
+            />
+
+            <!-- TITLE -->
+            <h2 class="text-5xl font-bold tracking-tight mb-2">
+              Sapere Aude
+            </h2>
+
+            <p class="tracking-[0.4em] text-gray-700 mb-6">
+              ACADEMIA
+            </p>
+
+            <!-- TAGLINE -->
+            <p
+              id="previewTagline"
+              class="text-gray-600 text-lg mb-8"
+            >
+              Dare to Know. Learn Without Limits.
+            </p>
+
+            <!-- QR -->
+            <div class="bg-white rounded-[32px] p-6 inline-block shadow-2xl">
+              <div id="qrcode"></div>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <p
+              id="previewDesc"
+              class="mt-8 text-gray-700 text-lg font-medium"
+            >
+              Scan to access free learning tools & resources.
+            </p>
+
+            <!-- URL -->
+            <div class="mt-8 inline-flex items-center bg-purple-500 text-white px-6 py-3 rounded-full text-sm">
+              sapere-app.vercel.app
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DOWNLOADS -->
+        <div class="grid grid-cols-3 gap-4 mt-8">
+
+          <button
+            onclick="downloadPNG()"
+            class="bg-purple-500 text-white py-4 rounded-2xl font-semibold hover:scale-[1.02] transition"
+          >
+            PNG
+          </button>
+
+          <button
+            onclick="downloadPDF()"
+            class="bg-black text-white py-4 rounded-2xl font-semibold hover:scale-[1.02] transition"
+          >
+            PDF
+          </button>
+
+          <button
+            onclick="downloadSVG()"
+            class="bg-white border py-4 rounded-2xl font-semibold hover:scale-[1.02] transition"
+          >
+            SVG
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    let currentStyle = 'lavender';
+    let uploadedLogo = '';
+
+    function generateQR() {
+
+      const url = document.getElementById('urlInput').value;
+      const tagline = document.getElementById('taglineInput').value;
+      const desc = document.getElementById('descInput').value;
+
+      document.getElementById('previewTagline').innerText = tagline;
+      document.getElementById('previewDesc').innerText = desc;
+
+      const qrContainer = document.getElementById('qrcode');
+      qrContainer.innerHTML = '';
+
+      new QRCode(qrContainer, {
+        text: url,
+        width: 240,
+        height: 240,
+        colorDark: currentStyle === 'dark' ? '#ffffff' : '#111827',
+        colorLight: currentStyle === 'dark' ? '#111827' : '#ffffff',
+        correctLevel: QRCode.CorrectLevel.H
+      });
+
+      applyStyle();
+    }
+
+    function selectStyle(style) {
+
+      currentStyle = style;
+
+      document.querySelectorAll('.style-option').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      document.getElementById(`style-${style}`).classList.add('active');
+
+      applyStyle();
+      generateQR();
+    }
+
+    function applyStyle() {
+
+      const card = document.getElementById('previewCard');
+
+      if(currentStyle === 'lavender') {
+        card.className =
+          'rounded-[40px] p-10 text-center card-gradient relative overflow-hidden';
+      }
+
+      if(currentStyle === 'minimal') {
+        card.className =
+          'rounded-[40px] p-10 text-center bg-white border relative overflow-hidden';
+      }
+
+      if(currentStyle === 'dark') {
+        card.className =
+          'rounded-[40px] p-10 text-center bg-black text-white relative overflow-hidden';
+      }
+
+      if(currentStyle === 'classic') {
+        card.className =
+          'rounded-[40px] p-10 text-center bg-amber-50 border-4 border-yellow-200 relative overflow-hidden';
+      }
+    }
+
+    function handleLogoUpload(event) {
+
+      const file = event.target.files[0];
+
+      if (!file) return;
+
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+
+        uploadedLogo = e.target.result;
+
+        document.getElementById('logoImage').src = uploadedLogo;
+
+      };
+
+      reader.readAsDataURL(file);
+    }
+
+    async function downloadPNG() {
+
+      const card = document.getElementById('previewCard');
+
+      const canvas = await html2canvas(card, {
+        scale: 3,
+        useCORS: true
+      });
+
+      const link = document.createElement('a');
+
+      link.download = 'sapere-qr-card.png';
+      link.href = canvas.toDataURL();
+      link.click();
+    }
+
+    async function downloadPDF() {
+
+      const card = document.getElementById('previewCard');
+
+      const canvas = await html2canvas(card, {
+        scale: 3,
+        useCORS: true
+      });
+
+      const imgData = canvas.toDataURL('image/png');
+
+      const { jsPDF } = window.jspdf;
+
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'px',
+        format: [canvas.width, canvas.height]
+      });
+
+      pdf.addImage(
+        imgData,
+        'PNG',
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+
+      pdf.save('sapere-qr-card.pdf');
+    }
+
+    function downloadSVG() {
+
+      const tagline = document.getElementById('taglineInput').value;
+      const desc = document.getElementById('descInput').value;
+
+      const svgContent = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200">
+
+        <defs>
+          <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#faf5ff"/>
+            <stop offset="100%" stop-color="#ede9fe"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="100%" height="100%" rx="40" fill="url(#bg)" />
+
+        <text
+          x="400"
+          y="140"
+          text-anchor="middle"
+          font-size="52"
+          font-family="Arial"
+          font-weight="bold"
+          fill="#111827"
+        >
+          Sapere Aude
+        </text>
+
+        <text
+          x="400"
+          y="190"
+          text-anchor="middle"
+          font-size="24"
+          letter-spacing="8"
+          fill="#6b7280"
+        >
+          ACADEMIA
+        </text>
+
+        <text
+          x="400"
+          y="260"
+          text-anchor="middle"
+          font-size="28"
+          fill="#4b5563"
+        >
+          ${tagline}
+        </text>
+
+        <rect
+          x="170"
+          y="320"
+          width="460"
+          height="460"
+          rx="40"
+          fill="white"
+        />
+
+        <text
+          x="400"
+          y="870"
+          text-anchor="middle"
+          font-size="24"
+          fill="#374151"
+        >
+          ${desc}
+        </text>
+
+        <rect
+          x="220"
+          y="940"
+          width="360"
+          height="60"
+          rx="30"
+          fill="#8b5cf6"
+        />
+
+        <text
+          x="400"
+          y="980"
+          text-anchor="middle"
+          font-size="24"
+          fill="white"
+        >
+          sapere-app.vercel.app
+        </text>
+
+      </svg>
+      `;
+
+      const blob = new Blob([svgContent], {
+        type: 'image/svg+xml'
+      });
+
+      const link = document.createElement('a');
+
+      link.href = URL.createObjectURL(blob);
+      link.download = 'sapere-qr-card.svg';
+      link.click();
+    }
+
+    generateQR();
+
+  </script>
+
+</body>
+</html>
