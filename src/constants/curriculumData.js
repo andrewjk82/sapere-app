@@ -336,35 +336,109 @@ export const CURRICULUM_DATA = {
     }
   ],
   'Year 3': [
-    { 
-      id: 'y3-1', 
-      title: 'Multiplication & Division', 
-      modules: 10,
+    {
+      id: 'y3-rn',
+      title: 'Representing Numbers Using Place Value (A)',
+      modules: 4,
       topics: [
-        { id: 't1', title: 'Array models', status: 'done' },
-        { id: 't2', title: 'Times tables (2, 5, 10)', status: 'active' },
-        { id: 't3', title: 'Division as grouping', status: 'next' },
-        { id: 't4', title: 'Word problems', status: 'next' }
+        { id: 'y3-rn-1', code: 'MA2-RN-01', title: 'Whole numbers to thousands: Read, represent and order numbers to thousands; identify place value of each digit' },
+        { id: 'y3-rn-2', code: 'MA2-RN-01', title: 'Partition and regroup: Apply place value to partition and regroup numbers up to 4 digits; expanded notation' },
+        { id: 'y3-rn-3', code: 'MA2-RN-01', title: 'Count on and back: Count by 1, 10 and 100; compare numbers to 10 000' },
+        { id: 'y3-rn-4', code: 'MA2-RN-02', title: 'Rounding: Round to the nearest 10 and 100' }
       ]
     },
-    { 
-      id: 'y3-2', 
-      title: 'Fractions & Decimals', 
-      modules: 8,
+    {
+      id: 'y3-ar',
+      title: 'Additive Relations (A)',
+      modules: 5,
       topics: [
-        { id: 't1', title: 'Half and Quarter', status: 'done' },
-        { id: 't2', title: 'Thirds and Eighths', status: 'next' },
-        { id: 't3', title: 'Number line fractions', status: 'locked' }
+        { id: 'y3-ar-1', code: 'MA2-AR-01', title: 'Mental strategies: Fact families; commutative and associative properties; bridging to 10' },
+        { id: 'y3-ar-2', code: 'MA2-AR-01', title: 'Add and subtract 2- and 3-digit: Use partitioning strategies; estimate using rounding' },
+        { id: 'y3-ar-3', code: 'MA2-AR-02', title: 'Principle of equality: Recognise and use the connection between addition and subtraction' },
+        { id: 'y3-ar-4', code: 'MA2-AR-02', title: 'Bar model and number sentences: Represent and solve problems with bar models; find missing values in number sentences' },
+        { id: 'y3-ar-5', code: 'MA2-AR-01', title: 'Money: Represent money values in multiple ways; dollars and cents' }
       ]
     },
-    { 
-      id: 'y3-3', 
-      title: 'Geometry & Space', 
-      modules: 7,
+    {
+      id: 'y3-mr',
+      title: 'Multiplicative Relations (A)',
+      modules: 5,
       topics: [
-        { id: 't1', title: '2D Shapes', status: 'locked' },
-        { id: 't2', title: '3D Objects', status: 'locked' },
-        { id: 't3', title: 'Symmetry', status: 'locked' }
+        { id: 'y3-mr-1', code: 'MA2-MR-01', title: 'Arrays and equal groups: Use arrays to establish multiplication facts; link to repeated addition' },
+        { id: 'y3-mr-2', code: 'MA2-MR-01', title: 'Multiplication facts 2, 4, 5, 10: Recall and use multiplication facts; generate and describe number patterns' },
+        { id: 'y3-mr-3', code: 'MA2-MR-02', title: 'Division facts 3, 4, 5, 10: Recall division facts related to multiplication; use grouping and sharing' },
+        { id: 'y3-mr-4', code: 'MA2-MR-01', title: 'Multiples and patterns: Multiples of 2, 3, 4, 5, 10; number sequences and rules' },
+        { id: 'y3-mr-5', code: 'MA2-MR-02', title: 'Problem solving: Represent and solve multiplication and division word problems' }
+      ]
+    },
+    {
+      id: 'y3-pf',
+      title: 'Partitioned Fractions (A)',
+      modules: 4,
+      topics: [
+        { id: 'y3-pf-1', code: 'MA2-PF-01', title: 'Unit fractions: Model and represent unit fractions (1/2, 1/4, 1/3, 1/5) as parts of a whole and on a number line' },
+        { id: 'y3-pf-2', code: 'MA2-PF-01', title: 'Fractions by halving: Create eighths, sixths and tenths using repeated halving techniques' },
+        { id: 'y3-pf-3', code: 'MA2-PF-01', title: 'Fractions as division: Understand fractions as equal sharing, such as 3/4 of a length' },
+        { id: 'y3-pf-4', code: 'MA2-PF-01', title: 'Number line: Place fractions and their multiples to a complete whole on a number line' }
+      ]
+    },
+    {
+      id: 'y3-gm',
+      title: 'Geometric Measure (A)',
+      modules: 4,
+      topics: [
+        { id: 'y3-gm-1', code: 'MA2-GM-01', title: 'Length - formal units: Measure and compare using metres, centimetres and millimetres' },
+        { id: 'y3-gm-2', code: 'MA2-GM-02', title: 'Estimation: Estimate and check lengths using appropriate units' },
+        { id: 'y3-gm-3', code: 'MA2-GM-03', title: 'Angles: Identify angles as measures of turn; classify as less than, equal to or greater than a right angle' },
+        { id: 'y3-gm-4', code: 'MA2-GM-01', title: 'Grid maps and position: Interpret movement on a map; locate positions using grid references' }
+      ]
+    },
+    {
+      id: 'y3-2ds',
+      title: '2D Spatial Structure (A)',
+      modules: 3,
+      topics: [
+        { id: 'y3-2ds-1', code: 'MA2-2DS-01', title: '2D shapes - features: Compare and describe features of 2D shapes including triangles, quadrilaterals, pentagons and hexagons' },
+        { id: 'y3-2ds-2', code: 'MA2-2DS-02', title: 'Transformations: Reflect, translate and rotate shapes; identify lines of symmetry' },
+        { id: 'y3-2ds-3', code: 'MA2-2DS-03', title: 'Area: Measure and estimate area using square centimetres (cm^2) and square metres (m^2)' }
+      ]
+    },
+    {
+      id: 'y3-3ds',
+      title: '3D Spatial Structure (A)',
+      modules: 2,
+      topics: [
+        { id: 'y3-3ds-1', code: 'MA2-3DS-01', title: 'Prisms and pyramids: Make models; compare and describe key features; sketch 3D objects' },
+        { id: 'y3-3ds-2', code: 'MA2-3DS-02', title: 'Volume and capacity: Measure and order containers using litres; compare using familiar metric units' }
+      ]
+    },
+    {
+      id: 'y3-nsm',
+      title: 'Non-Spatial Measure (A)',
+      modules: 3,
+      topics: [
+        { id: 'y3-nsm-1', code: 'MA2-NSM-01', title: 'Mass - kg and g: Compare objects using kilograms and grams; measure using scales' },
+        { id: 'y3-nsm-2', code: 'MA2-NSM-02', title: 'Time - analogue: Read and represent time to the hour and past the hour; time to the nearest minute' },
+        { id: 'y3-nsm-3', code: 'MA2-NSM-02', title: 'Time - units: Seconds, minutes, hours and days; duration of events' }
+      ]
+    },
+    {
+      id: 'y3-data',
+      title: 'Data (A)',
+      modules: 3,
+      topics: [
+        { id: 'y3-data-1', code: 'MA2-DATA-01', title: 'Collect data: Collect discrete data; organise using tally charts and tables' },
+        { id: 'y3-data-2', code: 'MA2-DATA-01', title: 'Display data: Construct picture graphs and column graphs using a given scale' },
+        { id: 'y3-data-3', code: 'MA2-DATA-02', title: 'Interpret data: Read and compare data in tables, dot plots and column graphs' }
+      ]
+    },
+    {
+      id: 'y3-chan',
+      title: 'Chance (A)',
+      modules: 2,
+      topics: [
+        { id: 'y3-chan-1', code: 'MA2-CHAN-01', title: 'Possible outcomes: Identify and list possible outcomes of chance experiments' },
+        { id: 'y3-chan-2', code: 'MA2-CHAN-01', title: 'Record and compare: Predict, conduct and record results; compare predictions to outcomes' }
       ]
     }
   ],
