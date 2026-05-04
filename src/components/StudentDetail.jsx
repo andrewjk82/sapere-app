@@ -42,6 +42,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     end: '11:30 AM',
     recurring: false
   });
+  const [openDropdown, setOpenDropdown] = useState(null); // 'start' | 'end' | null
 
   const [editForm, setEditForm] = useState({
     name: '', email: '', phone: '', level: '', subject: '',
@@ -953,10 +954,10 @@ const StudentDetail = ({ studentId, onBack }) => {
         {/* Schedule Modal */}
         {isScheduleModalOpen && (
           <div className="app-modal" style={{ position: 'fixed', inset: 0, zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-            <div onClick={() => setIsScheduleModalOpen(false)} style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(4px)' }} />
-            <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} style={{ position: 'relative', background: 'white', borderRadius: '32px', width: '100%', maxWidth: '500px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.2)' }}>
+            <div onClick={() => { setIsScheduleModalOpen(false); setOpenDropdown(null); }} style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(4px)' }} />
+            <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} style={{ position: 'relative', background: 'white', borderRadius: '32px', width: '100%', maxWidth: '500px', overflow: 'visible', boxShadow: '0 30px 60px rgba(0,0,0,0.2)' }}>
               {/* Purple Header */}
-              <div style={{ background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)', padding: '32px', color: 'white', position: 'relative' }}>
+              <div style={{ background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)', padding: '32px', color: 'white', position: 'relative', borderRadius: '32px 32px 0 0' }}>
                 <h2 style={{ margin: 0, fontSize: '1.8rem', fontWeight: 900 }}>Schedule Lesson</h2>
                 <p style={{ margin: '8px 0 0', opacity: 0.9, fontWeight: 500 }}>Create a new session for a student</p>
                 <button onClick={() => setIsScheduleModalOpen(false)} style={{ position: 'absolute', top: 32, right: 32, background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '12px', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: 'white' }}><X size={20} /></button>
@@ -979,26 +980,37 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-                  <div>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase' }}>START TIME</label>
-                    <select 
-                      value={sessionForm.start} 
-                      onChange={e => setSessionForm({...sessionForm, start: e.target.value})} 
-                      style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', background: 'white', fontWeight: 700, outline: 'none', cursor: 'pointer', appearance: 'none' }}
-                    >
-                      {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
-                    </select>
-                  </div>
-                  <div>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase' }}>END TIME</label>
-                    <select 
-                      value={sessionForm.end} 
-                      onChange={e => setSessionForm({...sessionForm, end: e.target.value})} 
-                      style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', background: 'white', fontWeight: 700, outline: 'none', cursor: 'pointer', appearance: 'none' }}
-                    >
-                      {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
-                    </select>
-                  </div>
+                  {['start', 'end'].map(field => (
+                    <div key={field} style={{ position: 'relative' }}>
+                      <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase' }}>
+                        {field === 'start' ? 'START TIME' : 'END TIME'}
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => setOpenDropdown(openDropdown === field ? null : field)}
+                        style={{ width: '100%', padding: '16px', borderRadius: '16px', border: `1px solid ${openDropdown === field ? '#6366f1' : '#e2e8f0'}`, background: 'white', fontWeight: 700, outline: 'none', cursor: 'pointer', textAlign: 'left', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#1e293b', fontSize: '1rem' }}
+                      >
+                        {sessionForm[field]}
+                        <span style={{ color: '#94a3b8', fontSize: '0.7rem', marginLeft: '4px' }}>▼</span>
+                      </button>
+                      {openDropdown === field && (
+                        <div style={{ position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', boxShadow: '0 10px 40px rgba(0,0,0,0.15)', zIndex: 9999, maxHeight: '220px', overflowY: 'auto' }}>
+                          {TIME_OPTIONS.map(t => (
+                            <div
+                              key={t}
+                              onClick={() => { setSessionForm({...sessionForm, [field]: t}); setOpenDropdown(null); }}
+                              style={{ padding: '12px 16px', cursor: 'pointer', fontWeight: sessionForm[field] === t ? 800 : 600, background: sessionForm[field] === t ? '#ede9fe' : 'transparent', color: sessionForm[field] === t ? '#6366f1' : '#1e293b', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+                              onMouseEnter={e => { if (sessionForm[field] !== t) e.currentTarget.style.background = '#f8fafc'; }}
+                              onMouseLeave={e => { if (sessionForm[field] !== t) e.currentTarget.style.background = 'transparent'; }}
+                            >
+                              {t}
+                              {sessionForm[field] === t && <span style={{ color: '#6366f1' }}>✓</span>}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
 
                 <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
