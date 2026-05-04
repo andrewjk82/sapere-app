@@ -10,6 +10,7 @@ import { doc, onSnapshot, collection, query, where } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import MathView from './MathView';
+import { CURRICULUM_DATA } from '../constants/curriculumData';
 
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
@@ -41,11 +42,13 @@ const LearningPath = ({ profile }) => {
       : year.replace(' ', '_');
 
     const unsub = onSnapshot(doc(db, 'curriculum', docId), (snap) => {
-      if (snap.exists()) {
-        const data = snap.data();
-        setCurriculum(data.chapters || []);
+      if (snap.exists() && snap.data().chapters?.length > 0) {
+        setCurriculum(snap.data().chapters);
       } else {
-        setCurriculum([]);
+        // Fallback to local CURRICULUM_DATA if Firestore doc is missing
+        let fallbackData = CURRICULUM_DATA[year] || [];
+        if (!Array.isArray(fallbackData)) fallbackData = fallbackData[course] || [];
+        setCurriculum(fallbackData);
       }
       setLoading(false);
     });

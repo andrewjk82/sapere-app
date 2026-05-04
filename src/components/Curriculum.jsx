@@ -254,6 +254,11 @@ const Curriculum = () => {
 
   const displayData = useMemo(() => {
     let data = currentRecord?.chapters || [];
+    if (data.length === 0) {
+      let fallbackData = CURRICULUM_DATA[selectedYear] || [];
+      if (!Array.isArray(fallbackData)) fallbackData = fallbackData[selectedCourse] || [];
+      data = fallbackData;
+    }
     
     if (!isAdmin && profile?.assignedChapters) {
       data = data.filter(chapter => profile.assignedChapters.includes(chapter.id));
