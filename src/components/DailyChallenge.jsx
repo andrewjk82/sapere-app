@@ -499,26 +499,35 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           setStudentProfile(profileData);
         } catch (e) { console.warn('profile fetch failed (non-fatal):', e.code); }
 
-        // Fetch history (last 30 days)
-        try {
-          const { collection: col, getDocs: gd, orderBy: ob, limit: lim, query: qry } = await import('firebase/firestore');
-          const historyRef = col(db, 'users', user.uid, 'daily_stats');
-          const q = qry(historyRef, ob('timestamp', 'desc'), lim(30));
-          const historySnap = await gd(q);
-          const historyData = historySnap.docs.map(d => ({ id: d.id, ...d.data() }));
-          setHistory(historyData);
-        } catch (e) { console.warn('history fetch failed (non-fatal):', e.code); }
+        setLoading(false);
 
-        try {
-          const assignedYear = profileData.assignedYear || profileData.year || CHALLENGE_YEAR;
-          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
-          const progressSnap = await getDoc(progressRef);
-          setChapterProgress(progressSnap.exists() ? progressSnap.data() : null);
-        } catch (e) { console.warn('progress fetch failed (non-fatal):', e.code); }
+        // Fetch secondary data after the main challenge screen is usable.
+        Promise.allSettled([
+          (async () => {
+            const { collection: col, getDocs: gd, orderBy: ob, limit: lim, query: qry } = await import('firebase/firestore');
+            const historyRef = col(db, 'users', user.uid, 'daily_stats');
+            const q = qry(historyRef, ob('timestamp', 'desc'), lim(30));
+            const historySnap = await gd(q);
+            const historyData = historySnap.docs.map(d => ({ id: d.id, ...d.data() }));
+            setHistory(historyData);
+          })(),
+          (async () => {
+            const assignedYear = profileData.assignedYear || profileData.year || CHALLENGE_YEAR;
+            const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
+            const progressSnap = await getDoc(progressRef);
+            setChapterProgress(progressSnap.exists() ? progressSnap.data() : null);
+          })(),
+        ]).then((results) => {
+          results.forEach((result, index) => {
+            if (result.status === 'rejected') {
+              const label = index === 0 ? 'history' : 'progress';
+              console.warn(`${label} fetch failed (non-fatal):`, result.reason?.code || result.reason);
+            }
+          });
+        });
 
       } catch (err) {
         console.error("Error fetching challenge data:", err);
-      } finally {
         setLoading(false);
       }
     };

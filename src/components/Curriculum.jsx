@@ -34,6 +34,8 @@ const Curriculum = () => {
 
   // Fetch all question counts for visible chapters
   useEffect(() => {
+    if (!isAdmin) return;
+
     const fetchCounts = async () => {
       try {
         const q = collection(db, 'questions');
@@ -49,10 +51,16 @@ const Curriculum = () => {
       }
     };
     fetchCounts();
-  }, [curriculumRecords, isMigrating]);
+  }, [isAdmin, curriculumRecords, isMigrating]);
 
   // Fetch Curriculum from Firestore
   useEffect(() => {
+    if (!isAdmin) {
+      setLoading(false);
+      return undefined;
+    }
+
+    setLoading(true);
     const q = collection(db, 'curriculum');
     const unsub = onSnapshot(q, (snap) => {
       setCurriculumRecords(snap.docs.map(d => ({ id: d.id, ...d.data() })));
@@ -62,7 +70,7 @@ const Curriculum = () => {
       setLoading(false);
     });
     return unsub;
-  }, []);
+  }, [isAdmin]);
 
   const handleUpdateChapters = async (newChapters) => {
     const docId = courses 

@@ -28,6 +28,17 @@ const getSessionAccent = (session) => {
   return SESSION_ACCENTS[sum % SESSION_ACCENTS.length];
 };
 
+const buildSessionUpdatePayload = (editData) => ({
+  date: editData.date || '',
+  startTime: editData.startTime || '',
+  endTime: editData.endTime || '',
+  notes: editData.notes || '',
+  homework: editData.homework || '',
+  isHomeworkCompleted: Boolean(editData.isHomeworkCompleted),
+  reminderSent: false,
+  updatedAt: new Date().toISOString()
+});
+
 const Schedule = () => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
@@ -92,44 +103,37 @@ const Schedule = () => {
   const handleSaveDetails = async (choice = 'single') => {
     if (!selectedSession || !isAdmin) return;
     try {
+      const updatePayload = buildSessionUpdatePayload(editData);
+
       if (choice === 'single') {
-        await updateDoc(doc(db, 'sessions', selectedSession.id), {
-          ...editData,
-          reminderSent: false, // Reset reminder flag on change
-          updatedAt: new Date().toISOString()
-        });
+        await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
       } else if (choice === 'series' && selectedSession.groupId) {
-        // Update all future sessions in the group
-        const q = query(collection(db, 'sessions'), 
-          where('groupId', '==', selectedSession.groupId),
-          where('date', '>=', selectedSession.date)
-        );
+        const q = query(collection(db, 'sessions'), where('groupId', '==', selectedSession.groupId));
         
-        // Use getDocs for a one-time update instead of onSnapshot
-        const { getDocs } = await import('firebase/firestore');
+        const { getDocs, writeBatch } = await import('firebase/firestore');
         const snap = await getDocs(q);
-        
-        const updates = snap.docs.map(d => {
-          // For series update, we typically keep the relative dates but update the time/notes
-          // If the base date changed, we could calculate the offset, but usually tutors just want to update the time for the series.
-          return updateDoc(doc(db, 'sessions', d.id), {
-            startTime: editData.startTime,
-            endTime: editData.endTime,
-            notes: editData.notes,
-            homework: editData.homework,
-            isHomeworkCompleted: editData.isHomeworkCompleted,
-            reminderSent: false, // Reset reminder flag for series too
-            updatedAt: new Date().toISOString()
+        const futureDocs = snap.docs.filter(d => (d.data().date || '') >= selectedSession.date);
+
+        const batch = writeBatch(db);
+        futureDocs.forEach(d => {
+          batch.update(d.ref, {
+            startTime: updatePayload.startTime,
+            endTime: updatePayload.endTime,
+            notes: updatePayload.notes,
+            homework: updatePayload.homework,
+            isHomeworkCompleted: updatePayload.isHomeworkCompleted,
+            reminderSent: false,
+            updatedAt: updatePayload.updatedAt
           });
         });
-        await Promise.all(updates);
+        await batch.commit();
       }
       
       setSaveChoiceOpen(null);
       setSelectedSession(null);
       showToast('Changes saved successfully!', 'success');
     } catch (e) {
-      console.error(e);
+      console.error('Failed to update session:', e);
       showToast('Failed to update.', 'error');
     }
   };
@@ -147,14 +151,14 @@ const Schedule = () => {
       if (choice === 'single') {
         await deleteDoc(doc(db, 'sessions', session.id));
       } else if (choice === 'series' && session.groupId) {
-        // Delete all future sessions with the same groupId
-        const q = query(collection(db, 'sessions'), 
-          where('groupId', '==', session.groupId),
-          where('date', '>=', session.date)
-        );
-        const { getDocs } = await import('firebase/firestore');
+        const q = query(collection(db, 'sessions'), where('groupId', '==', session.groupId));
+        const { getDocs, writeBatch } = await import('firebase/firestore');
         const snap = await getDocs(q);
-        await Promise.all(snap.docs.map(d => deleteDoc(doc(db, 'sessions', d.id))));
+        const futureDocs = snap.docs.filter(d => (d.data().date || '') >= session.date);
+
+        const batch = writeBatch(db);
+        futureDocs.forEach(d => batch.delete(d.ref));
+        await batch.commit();
       }
       
       setDeleteChoiceOpen(null);
