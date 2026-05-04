@@ -594,6 +594,10 @@
   gap: 10px;
 }
 
+.auth-field-row .auth-input input {
+  padding-left: 44px;
+}
+
 .auth-field-row input {
   width: 100%;
   padding: 14px 16px;
