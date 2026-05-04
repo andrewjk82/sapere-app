@@ -138,10 +138,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
               </button>
             </div>
           </div>
-          <div className="app-sidebar__version">
-            <span style={{ display: 'inline-block', width: '6px', height: '6px', background: '#6366f1', borderRadius: '50%', marginRight: '6px' }}></span>
-            v{CURRENT_APP_VERSION}
-          </div>
+          <div className="app-sidebar__version">v{CURRENT_APP_VERSION}</div>
         </div>
       )}
 
