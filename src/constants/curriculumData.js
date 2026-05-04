@@ -684,10 +684,174 @@ export const CURRICULUM_DATA = {
     { id: 'y8-4', title: 'Surds & Indices', modules: 9 }
   ],
   'Year 9': [
-    { id: 'y9-1', title: 'Simultaneous Equations', modules: 10 },
-    { id: 'y9-2', title: 'Quadratic Expressions', modules: 12 },
-    { id: 'y9-3', title: 'Trigonometry Basics', modules: 10 },
-    { id: 'y9-4', title: 'Statistics & Data Analysis', modules: 8 }
+    {
+      id: 'y9-1',
+      title: 'Chapter 1: Algebra',
+      modules: 8,
+      topics: [
+        { id: 'y9-1a', code: '1A', title: 'Substitution' },
+        { id: 'y9-1b', code: '1B', title: 'Like terms' },
+        { id: 'y9-1c', code: '1C', title: 'Multiplication and division' },
+        { id: 'y9-1d', code: '1D', title: 'Simple expansion of brackets' },
+        { id: 'y9-1e', code: '1E', title: 'Binomial products' },
+        { id: 'y9-1f', code: '1F', title: 'Perfect squares' },
+        { id: 'y9-1g', code: '1G', title: 'Difference of two squares' },
+        { id: 'y9-1h', code: '1H', title: 'Miscellaneous questions' }
+      ]
+    },
+    {
+      id: 'y9-2',
+      title: "Chapter 2: Pythagoras' theorem and surds",
+      modules: 9,
+      topics: [
+        { id: 'y9-2a', code: '2A', title: "Review of Pythagoras' theorem and applications" },
+        { id: 'y9-2b', code: '2B', title: 'Simplifying surds' },
+        { id: 'y9-2c', code: '2C', title: 'Addition and subtraction of surds' },
+        { id: 'y9-2d', code: '2D', title: 'Multiplication and division of surds' },
+        { id: 'y9-2e', code: '2E', title: 'Special products' },
+        { id: 'y9-2f', code: '2F', title: 'Rationalising the denominator' },
+        { id: 'y9-2g', code: '2G', title: "Applications of Pythagoras' theorem in three dimensions" },
+        { id: 'y9-2h', code: '2H', title: 'Binomial denominators' },
+        { id: 'y9-2i', code: '2I', title: 'Irrational numbers and surds' }
+      ]
+    },
+    {
+      id: 'y9-3',
+      title: 'Chapter 3: Consumer arithmetic',
+      modules: 7,
+      topics: [
+        { id: 'y9-3a', code: '3A', title: 'Review of percentages' },
+        { id: 'y9-3b', code: '3B', title: 'Using percentages' },
+        { id: 'y9-3c', code: '3C', title: 'Simple interest' },
+        { id: 'y9-3d', code: '3D', title: 'Percentage increase and decrease' },
+        { id: 'y9-3e', code: '3E', title: 'Repeated increase and decrease' },
+        { id: 'y9-3f', code: '3F', title: 'Compound interest' },
+        { id: 'y9-3g', code: '3G', title: 'Depreciation' }
+      ]
+    },
+    {
+      id: 'y9-4',
+      title: 'Chapter 4: Factorisation',
+      modules: 5,
+      topics: [
+        { id: 'y9-4a', code: '4A', title: 'Factorisation using common factors' },
+        { id: 'y9-4b', code: '4B', title: 'Factorisation using the difference of two squares' },
+        { id: 'y9-4c', code: '4C', title: 'Factorisation of simple quadratics' },
+        { id: 'y9-4d', code: '4D', title: 'Quadratics with common factors' },
+        { id: 'y9-4e', code: '4E', title: 'Using factorisation to simplify algebraic expressions' }
+      ]
+    },
+    {
+      id: 'y9-5',
+      title: 'Chapter 5: Linear equations and inequalities',
+      modules: 8,
+      topics: [
+        { id: 'y9-5a', code: '5A', title: 'Expressions' },
+        { id: 'y9-5b', code: '5B', title: 'Solving simple linear equations' },
+        { id: 'y9-5c', code: '5C', title: 'Equations with brackets' },
+        { id: 'y9-5d', code: '5D', title: 'Linear equations involving fractions' },
+        { id: 'y9-5e', code: '5E', title: 'Using linear equations to solve problems' },
+        { id: 'y9-5f', code: '5F', title: 'Literal equations' },
+        { id: 'y9-5g', code: '5G', title: 'Inequalities' },
+        { id: 'y9-5h', code: '5H', title: 'Solving linear inequalities' }
+      ]
+    },
+    {
+      id: 'y9-6',
+      title: 'Chapter 6: Formulas',
+      modules: 3,
+      topics: [
+        { id: 'y9-6a', code: '6A', title: 'Substitution into formulas' },
+        { id: 'y9-6b', code: '6B', title: 'Changing the subject of a formula' },
+        { id: 'y9-6c', code: '6C', title: 'Constructing formulas' }
+      ]
+    },
+    {
+      id: 'y9-7',
+      title: 'Chapter 7: Congruence and special quadrilaterals',
+      modules: 5,
+      topics: [
+        { id: 'y9-7a', code: '7A', title: 'Review of angles' },
+        { id: 'y9-7b', code: '7B', title: 'Reasoning with angles' },
+        { id: 'y9-7c', code: '7C', title: 'Using congruence' },
+        { id: 'y9-7d', code: '7D', title: 'Parallelograms' },
+        { id: 'y9-7e', code: '7E', title: 'Tests for rhombuses, rectangles and squares' }
+      ]
+    },
+    {
+      id: 'y9-8',
+      title: 'Chapter 8: Index laws',
+      modules: 5,
+      topics: [
+        { id: 'y9-8a', code: '8A', title: 'The index laws' },
+        { id: 'y9-8b', code: '8B', title: 'Negative indices' },
+        { id: 'y9-8c', code: '8C', title: 'Fractional indices' },
+        { id: 'y9-8d', code: '8D', title: 'Scientific notation' },
+        { id: 'y9-8e', code: '8E', title: 'Significant figures' }
+      ]
+    },
+    {
+      id: 'y9-9',
+      title: 'Chapter 9: Enlargements and similarity',
+      modules: 5,
+      topics: [
+        { id: 'y9-9a', code: '9A', title: 'Enlargements' },
+        { id: 'y9-9b', code: '9B', title: 'Using ratios in similar figures' },
+        { id: 'y9-9c', code: '9C', title: 'The AAA similarity test for triangles' },
+        { id: 'y9-9d', code: '9D', title: 'The SAS similarity test for triangles' },
+        { id: 'y9-9e', code: '9E', title: 'The SSS and RHS similarity tests' }
+      ]
+    },
+    {
+      id: 'y9-10',
+      title: 'Chapter 10: Review and problem-solving',
+      modules: 2,
+      topics: [
+        { id: 'y9-10a', code: '10A', title: 'Review' },
+        { id: 'y9-10b', code: '10B', title: 'Problem-solving' }
+      ]
+    },
+    {
+      id: 'y9-11',
+      title: 'Chapter 11: Coordinate geometry',
+      modules: 8,
+      topics: [
+        { id: 'y9-11a', code: '11A', title: 'Distance between two points' },
+        { id: 'y9-11b', code: '11B', title: 'The midpoint of an interval' },
+        { id: 'y9-11c', code: '11C', title: 'The gradient of a line' },
+        { id: 'y9-11d', code: '11D', title: 'The equation of a straight line' },
+        { id: 'y9-11e', code: '11E', title: 'Graphing straight lines' },
+        { id: 'y9-11f', code: '11F', title: 'The equation of a line using the gradient and a point' },
+        { id: 'y9-11g', code: '11G', title: 'Parallel and perpendicular straight lines' },
+        { id: 'y9-11h', code: '11H', title: 'The equation of a circle' }
+      ]
+    },
+    {
+      id: 'y9-12',
+      title: 'Chapter 12: Probability',
+      modules: 5,
+      topics: [
+        { id: 'y9-12a', code: '12A', title: 'An introduction to probability' },
+        { id: 'y9-12b', code: '12B', title: 'The complement, union and intersection' },
+        { id: 'y9-12c', code: '12C', title: 'Relative frequency' },
+        { id: 'y9-12d', code: '12D', title: 'Multi-stage experiments' },
+        { id: 'y9-12e', code: '12E', title: 'Two-step experiments involving replacement' }
+      ]
+    },
+    {
+      id: 'y9-13',
+      title: 'Chapter 13: Trigonometry',
+      modules: 7,
+      topics: [
+        { id: 'y9-13a', code: '13A', title: 'Introduction' },
+        { id: 'y9-13b', code: '13B', title: 'The tangent ratio' },
+        { id: 'y9-13c', code: '13C', title: 'The three basic trigonometric ratios' },
+        { id: 'y9-13d', code: '13D', title: 'Finding angles' },
+        { id: 'y9-13e', code: '13E', title: 'Miscellaneous exercises' },
+        { id: 'y9-13f', code: '13F', title: 'Solving problems using trigonometry' },
+        { id: 'y9-13g', code: '13G', title: 'True bearings' }
+      ]
+    }
   ],
   'Year 10': [
     { id: 'y10-1', title: 'Quadratic Equations', modules: 12 },
