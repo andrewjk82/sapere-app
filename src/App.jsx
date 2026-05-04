@@ -22,6 +22,7 @@ import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Chevro
 import { db, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
+import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
 const isNewer = (cloud, local) => {
