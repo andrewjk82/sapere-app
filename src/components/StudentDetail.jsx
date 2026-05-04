@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { 
   ChevronLeft, Calendar, BookOpen, 
   MessageSquare, Trophy, 
   Mail, Phone, Check, Clock,
-  Edit3, Save, Bell, X, MapPin, Target
+  X, Target
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { 
   doc, updateDoc, onSnapshot, collection, 
-  addDoc, serverTimestamp, deleteDoc, increment, getDocs
+  addDoc, serverTimestamp, deleteDoc, increment, getDocs, setDoc
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -766,7 +766,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', marginBottom: '16px' }}>DASHBOARD PREVIEW</div>
           <div style={{ ...styles.visionBoard, backgroundImage: `linear-gradient(to bottom, transparent, rgba(0,0,0,0.4)), url('${student?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200'}')`, borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
             <div style={{ fontWeight: 900, fontSize: '1.2rem' }}>{student?.dreamJob || 'Dream Career'}</div>
-            <button onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 12, right: 12, padding: '4px 8px', borderRadius: '8px', background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', fontSize: '0.7rem', cursor: 'pointer' }}>Change Image</button>
+            <button disabled={uploading} onClick={() => fileInputRef.current.click()} style={{ position: 'absolute', top: 12, right: 12, padding: '4px 8px', borderRadius: '8px', background: 'rgba(0,0,0,0.5)', border: 0, color: 'white', fontSize: '0.7rem', cursor: uploading ? 'wait' : 'pointer' }}>{uploading ? 'Uploading...' : 'Change Image'}</button>
             <input type="file" ref={fileInputRef} style={{ display: 'none' }} onChange={handleImageUpload} />
           </div>
         </div>

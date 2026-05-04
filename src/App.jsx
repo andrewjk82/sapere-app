@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
@@ -18,9 +18,9 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
-import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, ChevronLeft, ChevronRight, Trophy, Plus } from 'lucide-react';
+import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot, updateDoc, setDoc } from 'firebase/firestore';
+import { doc, onSnapshot } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -86,6 +86,7 @@ function App() {
   const [authMode, setAuthMode] = useState('login');
   const [isCapsuleExpanded, setIsCapsuleExpanded] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const [showNotifs, setShowNotifs] = useState(false);
   
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
@@ -125,7 +126,6 @@ function App() {
   const [profile, setProfile] = useState(null);
   const [profileLoaded, setProfileLoaded] = useState(false);
   const [notifications, setNotifications] = useState([]);
-  const [showNotifs, setShowNotifs] = useState(false);
   const unreadCount = notifications.filter(n => !n.read).length;
 
   // Real listener for notifications
@@ -178,8 +178,6 @@ function App() {
 
   useEffect(() => {
     if (user) {
-      setLoading(true);
-      setLoadError('');
       const unsubscribe = studentService.subscribeToStudents(
         user.uid,
         (data) => {
@@ -212,6 +210,7 @@ function App() {
       setNewStudent({ name: '', email: '', subject: '', level: 'Year 10' });
       setIsModalOpen(false);
     } catch (error) {
+      console.error(error);
       showToast("Error adding student. Make sure Firestore is enabled.", 'error');
     }
   };

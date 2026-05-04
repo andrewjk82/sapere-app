@@ -1,28 +1,23 @@
-import React, { useState } from 'react';
-import { Mail, Lock, Globe, AlertCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { useState } from 'react';
+import { Mail, Lock, AlertCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import AuthLayout from './AuthLayout';
 
 const Login = ({ onToggleMode }) => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(() => localStorage.getItem('sapere_remembered_email') || '');
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false);
+  const [rememberMe, setRememberMe] = useState(() => Boolean(localStorage.getItem('sapere_remembered_email')));
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const { login, loginWithGoogle, resetPassword } = useAuth();
 
-  // Load saved email on mount
-  React.useEffect(() => {
-    const savedEmail = localStorage.getItem('sapere_remembered_email');
-    if (savedEmail) {
-      setEmail(savedEmail);
-      setRememberMe(true);
-    }
-  }, []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!email || !password) {
+      setError('Please enter both email and password.');
+      return;
+    }
     try {
       setError('');
       setMessage('');
@@ -54,6 +49,7 @@ const Login = ({ onToggleMode }) => {
       setMessage('Password reset email sent! Check your inbox.');
     } catch (err) {
       setError('Failed to send reset email. Check if the email is correct.');
+      console.error(err);
     } finally {
       setLoading(false);
     }
