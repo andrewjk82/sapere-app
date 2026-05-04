@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
-      setIsAdmin(user?.email === ADMIN_EMAIL);
+      setIsAdmin(user?.email?.toLowerCase() === ADMIN_EMAIL.toLowerCase());
       setLoading(false);
     });
 

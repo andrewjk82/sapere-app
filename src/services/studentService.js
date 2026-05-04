@@ -88,7 +88,7 @@ export const studentService = {
             return {
               id: data.id,
               source: 'registered',
-              name: data.displayName || (data.firstName ? `${data.firstName} ${data.lastName}` : data.email),
+              name: data.name || data.displayName || (data.firstName ? `${data.firstName} ${data.lastName || ''}`.trim() : data.email),
               level: data.year || "Year ?",
               subject: data.role === 'parent' ? "Parent Account" : "Registered Student",
               status: "Active",

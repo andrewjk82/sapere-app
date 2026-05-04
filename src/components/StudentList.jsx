@@ -36,10 +36,11 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
     return () => unsubs.forEach(unsub => unsub());
   }, [students, todayStr]);
   
-  const filteredStudents = students.filter(s => 
-    s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    s.subject.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredStudents = students.filter(s => {
+    const nameMatch = (s.name || '').toLowerCase().includes(searchTerm.toLowerCase());
+    const subjectMatch = (s.subject || '').toLowerCase().includes(searchTerm.toLowerCase());
+    return nameMatch || subjectMatch;
+  });
 
   return (
     <div className="app-page">

@@ -583,7 +583,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                   </div>
                   <div className="activity-list">
                     {students.slice(0, 3).map(s => {
-                      const dName = s.name || (s.firstName ? `${s.firstName} ${s.lastName || ''}` : 'New Student');
+                      const dName = s.name || s.displayName || (s.firstName ? `${s.firstName} ${s.lastName || ''}`.trim() : 'New Student');
                       return (
                         <div key={s.id} className="activity-item" style={{ cursor: 'pointer' }} onClick={() => onSelectStudent(s.id)}>
                           <strong>{dName}</strong>
