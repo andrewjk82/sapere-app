@@ -43,6 +43,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     recurring: false
   });
   const [openDropdown, setOpenDropdown] = useState(null); // 'start' | 'end' | null
+  const dropdownRef = useRef(null);
 
   const [editForm, setEditForm] = useState({
     name: '', email: '', phone: '', level: '', subject: '',
@@ -994,10 +995,11 @@ const StudentDetail = ({ studentId, onBack }) => {
                         <span style={{ color: '#94a3b8', fontSize: '0.7rem', marginLeft: '4px' }}>▼</span>
                       </button>
                       {openDropdown === field && (
-                        <div style={{ position: 'absolute', top: 'calc(100% + 4px)', left: 0, right: 0, background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', boxShadow: '0 10px 40px rgba(0,0,0,0.15)', zIndex: 9999, maxHeight: '220px', overflowY: 'auto' }}>
+                        <div ref={dropdownRef} style={{ position: 'absolute', bottom: 'calc(100% + 4px)', left: 0, right: 0, background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', boxShadow: '0 10px 40px rgba(0,0,0,0.15)', zIndex: 9999, maxHeight: '260px', overflowY: 'auto' }}>
                           {TIME_OPTIONS.map(t => (
                             <div
                               key={t}
+                              ref={sessionForm[field] === t ? el => el && el.scrollIntoView({ block: 'center' }) : null}
                               onClick={() => { setSessionForm({...sessionForm, [field]: t}); setOpenDropdown(null); }}
                               style={{ padding: '12px 16px', cursor: 'pointer', fontWeight: sessionForm[field] === t ? 800 : 600, background: sessionForm[field] === t ? '#ede9fe' : 'transparent', color: sessionForm[field] === t ? '#6366f1' : '#1e293b', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                               onMouseEnter={e => { if (sessionForm[field] !== t) e.currentTarget.style.background = '#f8fafc'; }}
