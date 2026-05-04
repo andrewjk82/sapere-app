@@ -328,6 +328,7 @@ function App() {
             students={students} 
             onAddStudent={() => setIsModalOpen(true)} 
             onSelectStudent={(id) => setSelectedStudentId(id)}
+            onShowLeaderboard={() => setShowLeaderboard(true)}
           />
         );
       case 'Students':
@@ -499,6 +500,7 @@ function App() {
         open={showLeaderboard} 
         onClose={() => setShowLeaderboard(false)} 
         currentUserId={user?.uid} 
+        students={students}
       />
 
       {isMobileView && createPortal(

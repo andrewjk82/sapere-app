@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ChevronLeft, Clock, CheckCircle2, XCircle, 
-  Trophy,
+  Trophy, Crown, Medal,
   Lightbulb, BookOpen, X, Check, Flag
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -167,10 +167,70 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [warnings, setWarnings] = useState(0);
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
+  const [leaders, setLeaders] = useState([]);
 
   const isMobile = window.innerWidth < 768;
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = getQuestionCount(challengeType);
+  const hasCalculationTest = studentProfile?.calculationEnabled !== false;
+  const getChallengeMaxXp = (type) => {
+    if (type === 'calc') return 50;
+    return hasCalculationTest ? 50 : 100;
+  };
+  const getEarnedXp = (earnedScore, total, type) => {
+    const safeTotal = Number(total) || 0;
+    if (safeTotal <= 0) return 0;
+    return Math.round((Number(earnedScore) || 0) / safeTotal * getChallengeMaxXp(type));
+  };
+
+  useEffect(() => {
+    if (!user?.uid) return;
+    let registeredLeaders = [];
+    let manualLeaders = [];
+
+    const updateLeaderboard = () => {
+      const leaderboard = [...manualLeaders, ...registeredLeaders]
+        .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0));
+      setLeaders(leaderboard);
+    };
+
+    const unsubUsers = onSnapshot(
+      collection(db, 'users'),
+      (snap) => {
+        registeredLeaders = snap.docs
+          .map(d => ({ id: d.id, ...d.data() }))
+          .filter(student => {
+            const role = String(student.role || '').toLowerCase();
+            return role !== 'admin' && role !== 'parent' && student.email !== 'andrewjk82@gmail.com';
+          });
+        updateLeaderboard();
+      },
+      (err) => {
+        console.warn('leaderboard onSnapshot permission error (non-fatal):', err.code);
+      }
+    );
+
+    const unsubStudents = onSnapshot(
+      collection(db, 'students'),
+      (snap) => {
+        manualLeaders = snap.docs.map(d => ({
+          id: `manual-${d.id}`,
+          sourceId: d.id,
+          source: 'manual',
+          ...d.data(),
+        }));
+        updateLeaderboard();
+      },
+      (err) => {
+        console.warn('manual leaderboard onSnapshot permission error (non-fatal):', err.code);
+      }
+    );
+
+    return () => {
+      unsubUsers();
+      unsubStudents();
+    };
+  }, [user?.uid]);
 
   // Fetch student daily stats for insights
   useEffect(() => {
@@ -319,6 +379,95 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     </div>
   );
 
+  const renderLeaderboardPreview = () => {
+    const topLeaders = leaders.slice(0, 3);
+    const currentRank = leaders.findIndex(student => student.id === user?.uid) + 1;
+
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="app-panel"
+        style={{
+          width: '100%',
+          maxWidth: '560px',
+          padding: isMobile ? '18px' : '24px',
+          borderRadius: '28px',
+          background: 'linear-gradient(180deg, #ffffff 0%, #f8f7ff 100%)',
+          border: '1px solid #e7e5ff',
+          boxShadow: '0 18px 45px rgba(79, 70, 229, 0.1)',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', marginBottom: '20px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
+            <div style={{ width: '46px', height: '46px', borderRadius: '16px', background: '#eef2ff', color: '#4f46e5', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <Trophy size={22} />
+            </div>
+            <div style={{ minWidth: 0 }}>
+              <h3 style={{ margin: 0, color: '#1e1b4b', fontSize: '1.05rem', fontWeight: 900 }}>Leaderboard</h3>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, color: '#6366f1', fontWeight: 900 }}>
+            <span style={{ color: '#94a3b8', fontSize: '0.66rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Your rank</span>
+            <span style={{ fontSize: '1rem' }}>{currentRank || '-'}</span>
+          </div>
+        </div>
+
+        {topLeaders.length > 0 ? (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {topLeaders.map((student, idx) => {
+              const rank = idx + 1;
+              const isCurrentUser = student.id === user?.uid;
+              const avatarUrl = student.dreamImageUrl || student.avatarUrl || (student.avatarStyle && student.avatarSeed
+                ? `https://api.dicebear.com/7.x/${student.avatarStyle}/svg?seed=${encodeURIComponent(student.avatarSeed)}`
+                : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.email || student.id || 'sapere')}`);
+              const RankIcon = rank === 1 ? Crown : Medal;
+              const rankBg = rank === 1 ? '#fef3c7' : rank === 2 ? '#f1f5f9' : rank === 3 ? '#ffedd5' : '#eef2ff';
+              const rankColor = rank === 1 ? '#d97706' : rank === 2 ? '#64748b' : rank === 3 ? '#b45309' : '#6366f1';
+              const rowBg = rank === 1 ? '#fffbeb' : rank === 2 ? '#f8fafc' : '#fff7ed';
+              const rowBorder = rank === 1 ? '#fde68a' : rank === 2 ? '#e2e8f0' : '#fed7aa';
+
+              return (
+                <div
+                  key={student.id}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '14px',
+                    minWidth: 0,
+                    padding: '14px 16px',
+                    borderRadius: '20px',
+                    background: isCurrentUser ? '#f5f3ff' : rowBg,
+                    border: `1px solid ${isCurrentUser ? '#a78bfa' : rowBorder}`,
+                    boxShadow: rank === 1 ? '0 10px 24px rgba(217, 119, 6, 0.08)' : '0 8px 20px rgba(15, 23, 42, 0.03)',
+                  }}
+                >
+                  <div style={{ width: '42px', height: '42px', borderRadius: '14px', background: rankBg, color: rankColor, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <RankIcon size={20} />
+                  </div>
+                  <img src={avatarUrl} alt={`Top ${rank} avatar`} style={{ width: '52px', height: '52px', borderRadius: '50%', background: '#fff', objectFit: 'cover', flexShrink: 0, boxShadow: '0 6px 14px rgba(15, 23, 42, 0.08)' }} />
+                  <div style={{ minWidth: 0, flex: 1, display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                    <div style={{ color: '#1e1b4b', fontWeight: 950, fontSize: '0.95rem' }}>
+                      Top {rank}
+                    </div>
+                  </div>
+                  <div style={{ color: '#6366f1', fontWeight: 950, fontSize: '1rem', textAlign: 'right', flexShrink: 0 }}>
+                    {Number(student.totalXP) || 0}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div style={{ padding: '18px', borderRadius: '16px', background: '#f8fafc', color: '#94a3b8', fontWeight: 700, textAlign: 'center' }}>
+            Leaderboard will appear once students earn XP.
+          </div>
+        )}
+
+      </motion.div>
+    );
+  };
+
 
   // Check if today is already done and fetch history
   useEffect(() => {
@@ -401,11 +550,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     if (user?.uid) {
       const now = new Date();
-      setDoc(doc(db, 'users', user.uid, 'calc_stats', sessionId), {
-        completed: false,
-        score: 0,
-        total: qCount,
-        timestamp: now.toISOString(),
+        setDoc(doc(db, 'users', user.uid, 'calc_stats', sessionId), {
+          completed: false,
+          score: 0,
+          total: qCount,
+          challengeType: 'calc',
+          maxXp: getChallengeMaxXp('calc'),
+          xpEarned: 0,
+          timestamp: now.toISOString(),
         dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
         questions: combinedQs || [],
         userAnswers: [],
@@ -516,6 +668,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           completed: false,
           score: 0,
           total: qCount,
+          challengeType: 'daily',
+          maxXp: getChallengeMaxXp('daily'),
+          xpEarned: 0,
           timestamp: now.toISOString(),
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questions: combinedQs || [],
@@ -731,6 +886,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
         
         const currentAnswerResults = answerResults || [];
+        const maxXp = getChallengeMaxXp(challengeType);
+        const xpEarned = getEarnedXp(score, TOTAL_QUESTIONS, challengeType);
         const resultStats = summarizeResults(currentAnswerResults);
         const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle');
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
@@ -740,6 +897,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           completed: true,
           score,
           total: TOTAL_QUESTIONS,
+          challengeType,
+          maxXp,
+          xpEarned,
           year: assignedYear,
           chapterId: assignedChapters.length === 1 ? assignedChapters[0] : 'mixed',
           chapterTitle: assignedChapters.length === 1 ? (questions.find(q => q.chapterId === assignedChapters[0])?.chapterTitle || CHALLENGE_BLUEPRINT?.title || 'Number') : 'Mixed assigned topics',
@@ -790,13 +950,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           
           if (userSnap.exists()) {
             transaction.update(userRef, {
-              totalXP: currentXP + (score * 10),
+              totalXP: currentXP + xpEarned,
               challengesCompleted: currentCount + 1
             });
           } else {
             // Fallback for new users
             transaction.set(userRef, {
-              totalXP: score * 10,
+              totalXP: xpEarned,
               challengesCompleted: 1
             }, { merge: true });
           }
@@ -864,7 +1024,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   <div style={{ fontSize: '1.2rem', fontWeight: 900, color: item.score >= 8 ? '#10b981' : item.score >= 5 ? '#f59e0b' : '#f43f5e' }}>
                     {item.score || 0}/{item.total || 0}
                   </div>
-                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1' }}>+{(item.score || 0) * 10} XP</div>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1' }}>
+                    +{item.xpEarned ?? getEarnedXp(item.score || 0, item.total || 0, item.challengeType || 'daily')} XP
+                  </div>
                 </div>
               </motion.div>
             )) : (
@@ -1020,6 +1182,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           margin: '0 auto', 
           padding: '40px 20px',
         }}>
+          {renderLeaderboardPreview()}
+
           <motion.div 
             initial={{ opacity: 0, scale: 0.95, y: 20 }} 
             animate={{ opacity: 1, scale: 1, y: 0 }} 
@@ -1260,6 +1424,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             exit={{ opacity: 0 }}
             style={{ display: 'flex', flexDirection: 'column', gap: '24px', maxWidth: '800px', width: '100%' }}
           >
+            {renderLeaderboardPreview()}
+
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="app-panel" style={{ padding: '48px', borderRadius: '32px', border: '1px solid #f1f5f9', background: '#fff' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                 <div style={{ width: '64px', height: '64px', background: 'linear-gradient(135deg, #e0e7ff, #f5f3ff)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px', boxShadow: '0 8px 16px rgba(99, 102, 241, 0.1)' }}>
@@ -1269,7 +1435,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 <h1 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#1e293b', marginBottom: '12px' }}>Daily Practice</h1>
                 <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '36px', maxWidth: '400px' }}>
                   Complete {getQuestionCount('daily')} random questions to keep your brain sharp. <br/>
-                  Earn <span style={{ color: '#6366f1', fontWeight: 800 }}>100 XP</span> and maintain your learning streak.
+                  Earn up to <span style={{ color: '#6366f1', fontWeight: 800 }}>{getChallengeMaxXp('daily')} XP</span> and maintain your learning streak.
                 </p>
 
                 <div style={{ width: '100%', maxWidth: '400px' }}>
@@ -1329,7 +1495,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   <h1 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#78350f', marginBottom: '12px' }}>Calculation Practice</h1>
                   <p style={{ color: '#92400e', fontWeight: 500, fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '36px', maxWidth: '400px' }}>
                     Complete {getQuestionCount('calc')} arithmetic questions to improve your speed and accuracy. <br/>
-                    Earn <span style={{ color: '#d97706', fontWeight: 800 }}>100 XP</span>!
+                    Earn up to <span style={{ color: '#d97706', fontWeight: 800 }}>{getChallengeMaxXp('calc')} XP</span>!
                   </p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
                     <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer', boxShadow: '0 10px 20px rgba(217, 119, 6, 0.2)' }}>
@@ -1598,7 +1764,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
               <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>
                 <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '4px' }}>POINTS EARNED</span>
-                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>+{score * 10} XP</span>
+                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>+{getEarnedXp(score, TOTAL_QUESTIONS, challengeType)} XP</span>
               </div>
               <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>
                 <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '4px' }}>ACCURACY</span>

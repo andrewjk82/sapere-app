@@ -2,26 +2,41 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, X, Medal, Crown } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, orderBy, limit, getDocs } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 
-const LeaderboardModal = ({ open, onClose, currentUserId }) => {
+const LeaderboardModal = ({ open, onClose, currentUserId, students = [] }) => {
   const [leaders, setLeaders] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!open) return;
+
+    if (students.length > 0) {
+      setLeaders(
+        [...students]
+          .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0))
+          .slice(0, 50)
+      );
+      setLoading(false);
+      return;
+    }
     
     const fetchLeaders = async () => {
-      setLoading(true);
-      try {
-        const usersRef = collection(db, 'users');
-        const snap = await getDocs(usersRef);
-        const data = snap.docs
-          .map(d => ({ id: d.id, ...d.data() }))
+        setLoading(true);
+        try {
+        const [usersSnap, studentsSnap] = await Promise.all([
+          getDocs(collection(db, 'users')),
+          getDocs(collection(db, 'students')),
+        ]);
+        const registeredStudents = usersSnap.docs
+          .map(d => ({ id: d.id, source: 'registered', ...d.data() }))
           .filter(u => {
             const role = String(u.role || '').toLowerCase();
-            return role === 'student';
-          })
+            return role !== 'admin' && role !== 'parent' && u.email !== 'andrewjk82@gmail.com';
+          });
+        const manualStudents = studentsSnap.docs
+          .map(d => ({ id: `manual-${d.id}`, sourceId: d.id, source: 'manual', ...d.data() }));
+        const data = [...manualStudents, ...registeredStudents]
           .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0))
           .slice(0, 50);
         setLeaders(data);
@@ -33,7 +48,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
     };
     
     fetchLeaders();
-  }, [open]);
+      }, [open, students]);
 
   if (!open) return null;
 
@@ -49,7 +64,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
         animate={{ opacity: 1, scale: 1, y: 0 }} 
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
         className="app-panel app-modal__card"
-        style={{ maxWidth: '500px', width: '90%', padding: '0', overflow: 'hidden' }}
+        style={{ maxWidth: '720px', width: '92%', padding: '0', overflow: 'hidden' }}
       >
         {/* Header */}
         <div style={{ background: 'linear-gradient(135deg, #6366f1, #4f46e5)', padding: '24px', position: 'relative' }}>
@@ -72,7 +87,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
         </div>
 
         {/* List */}
-        <div style={{ padding: '24px', maxHeight: '60vh', overflowY: 'auto' }}>
+        <div style={{ padding: '28px 36px', maxHeight: '60vh', overflowY: 'auto' }}>
           {loading ? (
             <div style={{ textAlign: 'center', padding: '40px 0' }}>
               <div className="app-spinner" style={{ margin: '0 auto', borderColor: '#e2e8f0', borderTopColor: '#6366f1' }}></div>
@@ -101,9 +116,11 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
                   rankBg = '#ffedd5';
                 }
 
-                const avatarUrl = student.avatarUrl || (student.avatarStyle && student.avatarSeed
+                const displayName = student.name || student.displayName || (student.firstName ? `${student.firstName} ${student.lastName || ''}`.trim() : '') || 'Unknown Student';
+                const displayLevel = student.level || student.year || 'Student';
+                const avatarUrl = student.dreamImageUrl || student.avatarUrl || (student.avatarStyle && student.avatarSeed
                   ? `https://api.dicebear.com/7.x/${student.avatarStyle}/svg?seed=${encodeURIComponent(student.avatarSeed)}`
-                  : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.email || 'sapere')}`);
+                  : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.email || displayName || 'sapere')}`);
 
                 return (
                   <div 
@@ -123,14 +140,14 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
                       {RankIcon ? <RankIcon size={16} /> : rank}
                     </div>
                     
-                    <img src={avatarUrl} alt={student.name} style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#f8fafc', objectFit: 'cover' }} />
+	                    <img src={avatarUrl} alt={displayName} style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#f8fafc', objectFit: 'cover' }} />
                     
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <div style={{ fontWeight: 800, color: '#1e293b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                        {student.name || 'Unknown Student'}
+	                        {displayName}
                       </div>
                       <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b' }}>
-                        {student.level || 'Student'}
+	                        {displayLevel}
                       </div>
                     </div>
                     

@@ -336,6 +336,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       // 1. Fetch all daily stats
       const dailySnap = await getDocs(collection(db, colName, studentId, 'daily_stats'));
       const calcSnap = await getDocs(collection(db, colName, studentId, 'calc_stats'));
+      const hasCalculationTest = student.calculationEnabled !== false;
+      const getFallbackXp = (data, type) => {
+        const score = Number(data.score) || 0;
+        const total = Number(data.total) || 0;
+        if (total <= 0) return 0;
+        const maxXp = type === 'calc' ? 50 : hasCalculationTest ? 50 : 100;
+        return Math.round((score / total) * maxXp);
+      };
       
       let totalXP = 0;
       let challengesCompleted = 0;
@@ -345,7 +353,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         // Be more flexible with score parsing
         const score = Number(data.score) || 0;
         if (data.completed || score > 0) {
-          totalXP += (score * 10);
+          totalXP += Number(data.xpEarned) || getFallbackXp(data, 'daily');
           challengesCompleted += 1;
         }
       });
@@ -354,7 +362,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         const data = d.data();
         const score = Number(data.score) || 0;
         if (data.completed || score > 0) {
-          totalXP += (score * 10);
+          totalXP += Number(data.xpEarned) || getFallbackXp(data, 'calc');
           challengesCompleted += 1;
         }
       });
@@ -383,8 +391,10 @@ const StudentDetail = ({ studentId, onBack }) => {
       const userRef = doc(db, colName, studentId);
       
       // Subtract XP and challenge count
+      const fallbackMaxXp = student.calculationEnabled !== false ? 50 : 100;
+      const fallbackXp = Math.round(((Number(stat.score) || 0) / (Number(stat.total) || 1)) * fallbackMaxXp);
       await updateDoc(userRef, {
-        totalXP: increment(-(stat.score * 10)),
+        totalXP: increment(-(Number(stat.xpEarned) || fallbackXp)),
         challengesCompleted: increment(-1)
       });
 

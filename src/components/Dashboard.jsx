@@ -11,7 +11,7 @@ import AvatarPickerModal from './AvatarPickerModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 
-const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) => {
+const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   const [profile, setProfile] = useState(null);
@@ -538,6 +538,13 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
                     </button>
                     <button className="app-button app-button--secondary" onClick={() => setShowScheduleModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
                       <Calendar size={18} /> Schedule Lesson
+                    </button>
+                    <button
+                      className="app-button app-button--secondary"
+                      onClick={onShowLeaderboard}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                    >
+                      <Trophy size={18} /> Leaderboard
                     </button>
                     <button 
                       className="app-button app-button--secondary" 
