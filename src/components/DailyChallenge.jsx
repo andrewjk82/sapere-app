@@ -8,7 +8,7 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
-import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
 import MathView, { toDisplayText } from './MathView';
@@ -756,24 +756,49 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           difficultyMixAfter: nextDifficultyMix,
         };
         
-        await setDoc(ref, record, { merge: true });
+        // --- Atomic Update via Transaction ---
+        await runTransaction(db, async (transaction) => {
+          const userRef = doc(db, 'users', user.uid);
+          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
+          
+          // 1. Get current user profile to ensure we are updating existing doc
+          const userSnap = await transaction.get(userRef);
+          
+          // 2. Save the challenge stat (ref)
+          transaction.set(ref, record, { merge: true });
 
-        const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
-        await setDoc(progressRef, {
-          year: assignedYear,
-          chapterId: record.chapterId,
-          chapterTitle: record.chapterTitle,
-          assignedChapters,
-          assignedTopics,
-          difficultyMix: nextDifficultyMix,
-          lastResultStats: resultStats,
-          lastTopicStats: topicStats,
-          lastChapterStats: chapterStats,
-          lastScore: score,
-          lastTotal: TOTAL_QUESTIONS,
-          updatedAt: now.toISOString(),
-        }, { merge: true });
-        
+          // 3. Update chapter progress
+          transaction.set(progressRef, {
+            year: assignedYear,
+            chapterId: record.chapterId,
+            chapterTitle: record.chapterTitle,
+            assignedChapters,
+            assignedTopics,
+            difficultyMix: nextDifficultyMix,
+            lastResultStats: resultStats,
+            lastTopicStats: topicStats,
+            lastChapterStats: chapterStats,
+            lastScore: score,
+            lastTotal: TOTAL_QUESTIONS,
+            updatedAt: now.toISOString(),
+          }, { merge: true });
+
+          // 4. Update overall XP/Points in user doc
+          if (userSnap.exists()) {
+            transaction.update(userRef, {
+              totalXP: increment(score * 10),
+              challengesCompleted: increment(1)
+            });
+          } else {
+            // Fallback for new users
+            transaction.set(userRef, {
+              totalXP: score * 10,
+              challengesCompleted: 1
+            }, { merge: true });
+          }
+        });
+
+        // --- Local State Updates ---
         setChapterProgress(prev => ({
           ...(prev || {}),
           difficultyMix: nextDifficultyMix,
@@ -782,17 +807,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           lastChapterStats: chapterStats,
         }));
         
-        // Update history state locally to show immediately
         setHistory(prev => [record, ...(prev || [])]);
         if (challengeType === 'daily') {
           setTodayCompleted(true);
         }
-        
-        // Update overall XP/Points
-        await setDoc(doc(db, 'users', user.uid), {
-          totalXP: increment(score * 10),
-          challengesCompleted: increment(1)
-        }, { merge: true });
       }
     } catch (err) {
       console.error("Error in finishQuiz:", err);
