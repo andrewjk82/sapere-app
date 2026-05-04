@@ -121,19 +121,19 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
       </motion.div>
 
       <nav className="app-sidebar__nav">
-        <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard'} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} disabled={isLocked} isMobile={isMobile} />
         {isAdmin && (
-          <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students'} disabled={isLocked} isMobile={isMobile} />
+          <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} disabled={isLocked} isMobile={isMobile} />
         )}
-        <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule'} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} disabled={isLocked} isMobile={isMobile} />
         {!isAdmin && (
-          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge'} disabled={isLocked && activeTab !== 'Challenge'} isMobile={isMobile} />
+          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} isMobile={isMobile} />
         )}
         {isAdmin && (
-          <SidebarItem icon={Inbox} label="Reports" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports'} disabled={isLocked} badge={reportCount} isMobile={isMobile} />
+          <SidebarItem icon={Inbox} label="Reports" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount} isMobile={isMobile} />
         )}
-        <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum'} disabled={isLocked} isMobile={isMobile} />
-        <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library'} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} isMobile={isMobile} />
       </nav>
 
       {/* Only render footer on desktop — on mobile the capsule in App.jsx handles avatar/logout */}
