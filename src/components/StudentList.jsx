@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle } from 'lucide-react';
+import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
@@ -169,10 +169,20 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
                         gap: '10px',
                         border: '1px solid rgba(99, 102, 241, 0.1)'
                       }}>
-                        <div className="student-card__progress-track" style={{ flex: 1, height: '6px', background: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
-                          <div className="student-card__progress-fill" style={{ width: '54%', height: '100%', background: '#a78bfa', borderRadius: '3px' }}></div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#f59e0b' }}>
+                          <Trophy size={14} />
+                          <span style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.85rem' }}>
+                            {student.totalXP ? student.totalXP.toLocaleString() : '0'} XP
+                          </span>
                         </div>
-                        <span style={{ fontWeight: 800, color: '#475569', fontSize: '0.8rem' }}>54%</span>
+                        <div className="student-card__progress-track" style={{ flex: 1, height: '6px', background: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
+                          <div className="student-card__progress-fill" style={{ 
+                            width: `${(student.totalXP || 0) % 1000 / 10}%`, 
+                            height: '100%', 
+                            background: 'linear-gradient(90deg, #818cf8, #a78bfa)', 
+                            borderRadius: '3px' 
+                          }}></div>
+                        </div>
                       </div>
                     </div>
                   </div>
