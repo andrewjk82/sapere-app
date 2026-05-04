@@ -1159,24 +1159,35 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .app-sidebar.is-mobile {
+    width: 80px;
+    padding: 20px 10px;
+    align-items: center;
+  }
+  
+  .app-sidebar.is-mobile .app-sidebar__brand {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .app-sidebar.is-mobile .app-sidebar__item {
+    padding: 14px 0;
+    border-radius: 14px;
+  }
+}
+
 @media (max-width: 920px) {
   .app-shell {
-    flex-direction: column;
+    flex-direction: row; /* KEEP it horizontal on mobile now that it's slim */
   }
 
   .app-sidebar {
-    width: 100%;
-    border-right: 0;
-    border-bottom: 1px solid rgba(167, 139, 250, 0.18);
-    position: static;
-    top: auto;
-    z-index: 1;
+    position: sticky;
+    top: 0;
+    height: 100vh;
   }
-
-  .app-sidebar__nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  }
+}
 
   .app-sidebar__item {
     flex-direction: column;
