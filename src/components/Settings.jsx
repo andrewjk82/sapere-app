@@ -134,6 +134,9 @@ const Settings = () => {
     try {
       setLoading(true);
       await setDoc(doc(db, 'users', user.uid), {
+        uid: user.uid,
+        email: user.email,
+        role: profile?.role || 'student',
         ...editData,
         displayName: `${editData.firstName} ${editData.lastName}`,
         status: 'Active',

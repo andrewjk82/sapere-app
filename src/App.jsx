@@ -111,6 +111,7 @@ function App() {
   });
 
   const [profile, setProfile] = useState(null);
+  const [profileLoaded, setProfileLoaded] = useState(false);
   const [notifications, setNotifications] = useState([]);
   const [showNotifs, setShowNotifs] = useState(false);
   const unreadCount = notifications.filter(n => !n.read).length;
@@ -150,6 +151,7 @@ function App() {
     const ref = doc(db, 'users', user.uid);
     return onSnapshot(ref, (snap) => {
       setProfile(snap.exists() ? snap.data() : null);
+      setProfileLoaded(true);
     });
   }, [user?.uid]);
 
@@ -214,7 +216,7 @@ function App() {
     );
   }
 
-  if (hasPendingSignup) {
+  if (hasPendingSignup || (profileLoaded && !profile && !isAdmin)) {
     return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
   }
 

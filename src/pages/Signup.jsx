@@ -6,7 +6,20 @@ import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
 
 const Signup = ({ onToggleMode }) => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(() => {
+    return Number(sessionStorage.getItem('pendingSignupStep')) || 1;
+  });
+
+  useEffect(() => {
+    import('../firebase/config').then(({ auth }) => {
+      const unsubscribe = auth.onAuthStateChanged((user) => {
+        if (user && step === 1) {
+          setStep(2);
+        }
+      });
+      return () => unsubscribe();
+    });
+  }, [step]);
   const [role, setRole] = useState(''); // 'student' or 'parent'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
