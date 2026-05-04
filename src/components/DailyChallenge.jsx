@@ -784,10 +784,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           }, { merge: true });
 
           // 4. Update overall XP/Points in user doc
+          const userData = userSnap.data() || {};
+          const currentXP = Number(userData.totalXP) || 0;
+          const currentCount = Number(userData.challengesCompleted) || 0;
+          
           if (userSnap.exists()) {
             transaction.update(userRef, {
-              totalXP: increment(score * 10),
-              challengesCompleted: increment(1)
+              totalXP: currentXP + (score * 10),
+              challengesCompleted: currentCount + 1
             });
           } else {
             // Fallback for new users
