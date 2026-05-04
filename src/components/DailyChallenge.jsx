@@ -789,7 +789,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         }
         
         // Update overall XP/Points
-        await updateDoc(doc(db, 'users', user.uid), {
+        await setDoc(doc(db, 'users', user.uid), {
           totalXP: increment(score * 10),
           challengesCompleted: increment(1)
         }, { merge: true });
