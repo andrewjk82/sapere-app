@@ -18,24 +18,22 @@ import { doc, onSnapshot, setDoc, collection, query, where } from 'firebase/fire
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
-const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge, isMobile }) => (
+const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) => (
   <button 
     onClick={disabled ? undefined : onClick}
-    className={`app-sidebar__item ${active ? 'is-active' : ''} ${disabled ? 'is-disabled' : ''} ${isMobile ? 'is-mobile' : ''}`}
+    className={`app-sidebar__item ${active ? 'is-active' : ''} ${disabled ? 'is-disabled' : ''}`}
     style={{ 
       opacity: disabled ? 0.5 : 1, 
       cursor: disabled ? 'not-allowed' : 'pointer',
       pointerEvents: disabled ? 'none' : 'auto',
-      position: 'relative',
-      justifyContent: isMobile ? 'center' : 'flex-start'
+      position: 'relative'
     }}
-    title={label}
   >
-    <div className="app-sidebar__item-inner" style={{ justifyContent: isMobile ? 'center' : 'flex-start' }}>
+    <div className="app-sidebar__item-inner">
       <Icon size={20} />
-      {!isMobile && <span>{label}</span>}
+      <span>{label}</span>
     </div>
-    {!isMobile && badge > 0 && (
+    {badge > 0 && (
       <span style={{
         background: '#ef4444',
         color: 'white',
@@ -47,18 +45,6 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge, isMo
       }}>
         {badge}
       </span>
-    )}
-    {isMobile && badge > 0 && (
-      <div style={{
-        position: 'absolute',
-        top: '6px',
-        right: '6px',
-        width: '8px',
-        height: '8px',
-        background: '#ef4444',
-        borderRadius: '50%',
-        border: '2px solid white'
-      }} />
     )}
   </button>
 );
@@ -103,37 +89,34 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
     : fallbackUrl);
 
   return (
-    <aside className={`app-sidebar ${isMobile ? 'is-mobile' : ''}`}>
+    <aside className="app-sidebar">
       <motion.div 
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         className="app-sidebar__brand"
-        style={{ justifyContent: isMobile ? 'center' : 'flex-start' }}
       >
-        <div className="app-sidebar__logo" style={{ width: isMobile ? '44px' : '54px', height: isMobile ? '44px' : '54px' }}>
+        <div className="app-sidebar__logo">
           <img src="/logo.png?v=1" alt="Sapere Logo" />
         </div>
-        {!isMobile && (
-          <div>
-            <h1>Sapere Aude Academia</h1>
-          </div>
-        )}
+        <div>
+          <h1>Sapere Aude Academia</h1>
+        </div>
       </motion.div>
 
       <nav className="app-sidebar__nav">
-        <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} disabled={isLocked} />
         {isAdmin && (
-          <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} disabled={isLocked} isMobile={isMobile} />
+          <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} disabled={isLocked} />
         )}
-        <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} disabled={isLocked} />
         {!isAdmin && (
-          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} isMobile={isMobile} />
+          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
         )}
         {isAdmin && (
-          <SidebarItem icon={Inbox} label="Reports" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount} isMobile={isMobile} />
+          <SidebarItem icon={Inbox} label="Reports" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount} />
         )}
-        <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} isMobile={isMobile} />
-        <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} isMobile={isMobile} />
+        <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} />
+        <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} />
       </nav>
 
       {/* Only render footer on desktop — on mobile the capsule in App.jsx handles avatar/logout */}
