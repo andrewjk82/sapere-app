@@ -18,8 +18,11 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
         const snap = await getDocs(usersRef);
         const data = snap.docs
           .map(d => ({ id: d.id, ...d.data() }))
-          .filter(u => u.role === 'student' && u.totalXP > 0)
-          .sort((a, b) => (b.totalXP || 0) - (a.totalXP || 0))
+          .filter(u => {
+            const role = String(u.role || '').toLowerCase();
+            return role === 'student';
+          })
+          .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0))
           .slice(0, 50);
         setLeaders(data);
       } catch (err) {
