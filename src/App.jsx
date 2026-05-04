@@ -359,7 +359,7 @@ function App() {
 
   return (
     <div className="app-shell">
-      <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />
+      {!isMobileView && <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />}
       <div className="app-shell__main">
         {renderContent()}
       </div>

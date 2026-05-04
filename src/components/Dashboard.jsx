@@ -598,9 +598,23 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab }) =>
             </>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '24px', gridColumn: 'span 2' }}>
-              
-              {/* Performance Insights Column - REMOVED per user request to move to Challenge tab */}
-
+              <div className="app-panel dashboard-card" style={{ padding: '32px', textAlign: 'center', background: 'linear-gradient(135deg, #fff, #f5f3ff)' }}>
+                <div style={{ width: '64px', height: '64px', backgroundColor: '#f5f3ff', borderRadius: '20px', display: 'grid', placeItems: 'center', margin: '0 auto 20px', color: '#6366f1' }}>
+                  <Star size={32} />
+                </div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '10px' }}>Welcome to Sapere Aude!</h3>
+                <p style={{ color: '#64748b', fontSize: '1rem', lineHeight: 1.6, maxWidth: '400px', margin: '0 auto 24px' }}>
+                  Your academic journey begins here. Complete your daily challenges and keep track of your schedule to unlock your full potential.
+                </p>
+                <button 
+                  onClick={() => setActiveTab('Challenge')}
+                  className="app-button app-button--primary"
+                  style={{ padding: '14px 32px' }}
+                >
+                  Start Today's Challenge
+                  <ArrowRight size={18} />
+                </button>
+              </div>
             </div>
           )}
         </div>
