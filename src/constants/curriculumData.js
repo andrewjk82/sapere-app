@@ -851,6 +851,89 @@ export const CURRICULUM_DATA = {
         { id: 'y9-13f', code: '13F', title: 'Solving problems using trigonometry' },
         { id: 'y9-13g', code: '13G', title: 'True bearings' }
       ]
+    },
+    {
+      id: 'y9-14',
+      title: 'Chapter 14: Simultaneous linear equations',
+      modules: 6,
+      topics: [
+        { id: 'y9-14a', code: '14A', title: 'Solving simultaneous equations by drawing graphs' },
+        { id: 'y9-14b', code: '14B', title: 'Substitution' },
+        { id: 'y9-14c', code: '14C', title: 'Elimination' },
+        { id: 'y9-14d', code: '14D', title: 'Problems involving simultaneous linear equations' },
+        { id: 'y9-14e', code: '14E', title: 'Geometry and simultaneous equations' },
+        { id: 'y9-14f', code: '14F', title: 'Families of straight lines' }
+      ]
+    },
+    {
+      id: 'y9-15',
+      title: 'Chapter 15: Further factorisation',
+      modules: 7,
+      topics: [
+        { id: 'y9-15a', code: '15A', title: 'Review of factorisation' },
+        { id: 'y9-15b', code: '15B', title: 'Grouping' },
+        { id: 'y9-15c', code: '15C', title: 'Factorising monic quadratics' },
+        { id: 'y9-15d', code: '15D', title: 'Factorising the general quadratic ax^2 + bx + c' },
+        { id: 'y9-15e', code: '15E', title: 'Simplifying, multiplying and dividing algebraic fractions' },
+        { id: 'y9-15f', code: '15F', title: 'Adding and subtracting algebraic fractions' },
+        { id: 'y9-15g', code: '15G', title: 'Completing the square' }
+      ]
+    },
+    {
+      id: 'y9-16',
+      title: 'Chapter 16: Measurement—areas, volumes and time',
+      modules: 6,
+      topics: [
+        { id: 'y9-16a', code: '16A', title: 'Review of area' },
+        { id: 'y9-16b', code: '16B', title: 'Review of surface area of a prism' },
+        { id: 'y9-16c', code: '16C', title: 'Surface area of a cylinder' },
+        { id: 'y9-16d', code: '16D', title: 'Volumes' },
+        { id: 'y9-16e', code: '16E', title: 'Conversion of units' },
+        { id: 'y9-16f', code: '16F', title: 'Small and large units of measurement' }
+      ]
+    },
+    {
+      id: 'y9-17',
+      title: 'Chapter 17: Quadratic equations',
+      modules: 6,
+      topics: [
+        { id: 'y9-17a', code: '17A', title: 'Solution of simple quadratic equations' },
+        { id: 'y9-17b', code: '17B', title: 'Solution of quadratic equations when the coefficient of x^2 is not 1' },
+        { id: 'y9-17c', code: '17C', title: 'Quadratics in disguise' },
+        { id: 'y9-17d', code: '17D', title: 'Applications of quadratic equations' },
+        { id: 'y9-17e', code: '17E', title: 'Graphs of quadratics' },
+        { id: 'y9-17f', code: '17F', title: 'Solving quadratic equations by completing the square' }
+      ]
+    },
+    {
+      id: 'y9-18',
+      title: 'Chapter 18: Rates and direct proportion',
+      modules: 2,
+      topics: [
+        { id: 'y9-18a', code: '18A', title: 'Rates' },
+        { id: 'y9-18b', code: '18B', title: 'Direct proportion' }
+      ]
+    },
+    {
+      id: 'y9-19',
+      title: 'Chapter 19: Statistics',
+      modules: 5,
+      topics: [
+        { id: 'y9-19a', code: '19A', title: 'Stem-and-leaf plots and back-to-back stem-and-leaf plots' },
+        { id: 'y9-19b', code: '19B', title: 'Grouped data' },
+        { id: 'y9-19c', code: '19C', title: 'Histograms and summary of representations' },
+        { id: 'y9-19d', code: '19D', title: 'Mean, median, mode and range' },
+        { id: 'y9-19e', code: '19E', title: 'The statistical investigation process' }
+      ]
+    },
+    {
+      id: 'y9-20',
+      title: 'Chapter 20: Review and problem-solving',
+      modules: 2,
+      topics: [
+        { id: 'y9-10a', code: '20A', title: 'Review' },
+        { id: 'y9-10b', code: '20B', title: 'Problem-solving' }
+      ]
     }
   ],
   'Year 10': [
