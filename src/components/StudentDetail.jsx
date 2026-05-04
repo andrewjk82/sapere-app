@@ -286,19 +286,35 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
     try {
       setBooking(true);
-      const session = {
-        studentId,
-        studentName: student.name || student.firstName || 'Student',
-        studentEmail: student.email || '',
-        date: sessionForm.date,
-        subject: sessionForm.focus,
-        startTime: sessionForm.start,
-        endTime: sessionForm.end,
-        recurring: sessionForm.recurring,
-        status: 'Scheduled',
-        createdAt: serverTimestamp()
-      };
-      await addDoc(collection(db, 'sessions'), session);
+      const count = sessionForm.recurring ? 52 : 1;
+      const baseDate = new Date(sessionForm.date + 'T12:00:00');
+      const sessionsToCreate = [];
+      const groupId = `series_${Date.now()}`;
+
+      for (let i = 0; i < count; i++) {
+        const nextDate = new Date(baseDate);
+        nextDate.setDate(baseDate.getDate() + (i * 7));
+        const year = nextDate.getFullYear();
+        const month = String(nextDate.getMonth() + 1).padStart(2, '0');
+        const day   = String(nextDate.getDate()).padStart(2, '0');
+
+        sessionsToCreate.push({
+          studentId,
+          studentName: student.name || student.firstName || 'Student',
+          studentEmail: student.email || '',
+          date: `${year}-${month}-${day}`,
+          subject: sessionForm.focus,
+          startTime: sessionForm.start,
+          endTime: sessionForm.end,
+          recurring: sessionForm.recurring,
+          groupId: sessionForm.recurring ? groupId : null,
+          status: 'Scheduled',
+          createdAt: serverTimestamp()
+        });
+      }
+
+      await Promise.all(sessionsToCreate.map(s => addDoc(collection(db, 'sessions'), s)));
+
       showToast("Session booked successfully!", 'success');
       setIsScheduleModalOpen(false);
       setSessionForm(prev => ({ ...prev, focus: '' }));
