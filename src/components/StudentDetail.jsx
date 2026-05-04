@@ -140,11 +140,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           studentId: studentId,
           email: student.email,
           subject: `Message from your Tutor`,
-          text: messageText,
-          html: `<div style="font-family: sans-serif; padding: 30px; background: #f9fafb; border-radius: 20px;">
-                  <h2 style="color: #6366f1;">New Message</h2>
-                  <p style="font-size: 16px; color: #374151; line-height: 1.6;">${messageText}</p>
-                 </div>`
+          text: messageText
         })
       });
 

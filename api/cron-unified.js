@@ -246,6 +246,46 @@ function arraysEqual(a, b) {
   return a.every((value, index) => value === b[index]);
 }
 
+function buildEmailTemplate(title, body, ctaLabel = 'Go to Academy') {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>${title}</title>
+    </head>
+    <body style="margin:0; padding:0; background:#f4f7ff; font-family:Arial, Helvetica, sans-serif; color:#191927;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#f4f7ff;">
+        <tr>
+          <td align="center" style="padding:24px 14px 30px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:760px; background:#ffffff; border-radius:30px; overflow:hidden; box-shadow:0 18px 50px rgba(31,41,55,0.08);">
+              <tr>
+                <td align="center" style="background:#b4a6e4; padding:46px 28px;">
+                  <div style="font-size:34px; line-height:1.15; font-weight:900; color:#ffffff; letter-spacing:-0.02em;">Sapereaude Academia</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:54px 50px 46px;">
+                  <h1 style="margin:0 0 28px; font-size:28px; line-height:1.25; font-weight:900; color:#191927;">${title}</h1>
+                  <div style="font-size:20px; line-height:1.65; color:#4d4d60;">
+                    ${body}
+                  </div>
+                  <div style="margin-top:44px; padding-top:28px; border-top:1px solid #edf0f7; text-align:center;">
+                    <a href="https://sapere-app.vercel.app" style="display:inline-block; min-width:150px; background:#b4a6e4; color:#ffffff; padding:16px 32px; border-radius:999px; text-decoration:none; font-size:16px; font-weight:900; box-shadow:0 10px 24px rgba(180,166,228,0.28);">${ctaLabel}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:26px 0 0; color:#818194; font-size:14px; line-height:1.5; font-weight:600;">© 2026 Sapereaude Academia. All rights reserved.</p>
+          </td>
+        </tr>
+      </table>
+    </body>
+    </html>
+  `;
+}
+
 async function sendNotification(db, transporter, session, type, subject, body) {
   const studentId    = session.studentId;
   const studentEmail = session.studentEmail || session.email;
@@ -258,58 +298,7 @@ async function sendNotification(db, transporter, session, type, subject, body) {
         from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
         to: studentEmail,
         subject: `[Sapere] ${subject}`,
-        html: `
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          </head>
-          <body style="margin: 0; padding: 0; background-color: #f1f5f9; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
-              <tr>
-                <td align="center" style="padding: 40px 20px;">
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 540px; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
-                    <!-- Header -->
-                    <tr>
-                      <td style="background: linear-gradient(135deg, #6366f1, #8b5cf6); padding: 32px 40px; text-align: left;">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tr>
-                            <td>
-                              <div style="font-size: 20px; font-weight: 900; color: #ffffff; letter-spacing: -0.02em;">Sapere Aude</div>
-                              <div style="font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 2px;">Academia</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    
-                    <!-- Content -->
-                    <tr>
-                      <td style="padding: 40px; background-color: #ffffff;">
-                        ${body}
-                        
-                        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #f1f5f9; text-align: center;">
-                          <a href="https://sapere-app.vercel.app" style="display: inline-block; background-color: #6366f1; color: #ffffff; padding: 14px 28px; border-radius: 14px; text-decoration: none; font-weight: 800; fontSize: 15px; box-shadow: 0 4px 12px rgba(99,102,241,0.2);">Open Dashboard</a>
-                        </div>
-                      </td>
-                    </tr>
-                    
-                    <!-- Footer -->
-                    <tr>
-                      <td style="padding: 0 40px 40px 40px; text-align: center;">
-                        <p style="margin: 0; color: #94a3b8; font-size: 12px; font-weight: 600;">
-                          © 2026 Sapere Aude Academia<br>
-                          Excellence in Mathematics Tutoring
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </body>
-          </html>`
+        html: buildEmailTemplate(subject, body)
       });
       emailSent = true;
     } catch (e) { console.error(`Email fail:`, e.message); }

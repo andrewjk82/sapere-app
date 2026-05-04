@@ -21,6 +21,46 @@ const transporter = nodemailer.createTransport({
 const SENDER_NAME = 'Andrew Kim | Sapere Aude';
 const SENDER_EMAIL = process.env.EMAIL_USER;
 
+function buildEmailTemplate(title, body, ctaLabel = 'Go to Academy') {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>${title}</title>
+    </head>
+    <body style="margin:0; padding:0; background:#f4f7ff; font-family:Arial, Helvetica, sans-serif; color:#191927;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#f4f7ff;">
+        <tr>
+          <td align="center" style="padding:24px 14px 30px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:760px; background:#ffffff; border-radius:30px; overflow:hidden; box-shadow:0 18px 50px rgba(31,41,55,0.08);">
+              <tr>
+                <td align="center" style="background:#b4a6e4; padding:46px 28px;">
+                  <div style="font-size:34px; line-height:1.15; font-weight:900; color:#ffffff; letter-spacing:-0.02em;">Sapereaude Academia</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:54px 50px 46px;">
+                  <h1 style="margin:0 0 28px; font-size:28px; line-height:1.25; font-weight:900; color:#191927;">${title}</h1>
+                  <div style="font-size:20px; line-height:1.65; color:#4d4d60;">
+                    ${body}
+                  </div>
+                  <div style="margin-top:44px; padding-top:28px; border-top:1px solid #edf0f7; text-align:center;">
+                    <a href="https://sapere-app.vercel.app" style="display:inline-block; min-width:150px; background:#b4a6e4; color:#ffffff; padding:16px 32px; border-radius:999px; text-decoration:none; font-size:16px; font-weight:900; box-shadow:0 10px 24px rgba(180,166,228,0.28);">${ctaLabel}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:26px 0 0; color:#818194; font-size:14px; line-height:1.5; font-weight:600;">© 2026 Sapereaude Academia. All rights reserved.</p>
+          </td>
+        </tr>
+      </table>
+    </body>
+    </html>
+  `;
+}
+
 async function runTasks() {
   const now = new Date();
   const sydneyOffset = 10; 
@@ -55,7 +95,10 @@ async function processTestNotifications() {
         from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
         to: mailData.to,
         subject: mailData.message.subject,
-        html: mailData.message.html
+        html: buildEmailTemplate(
+          mailData.message.subject || 'Message from Sapereaude Academia',
+          mailData.message.html || `<p style="margin:0;">${mailData.message.text || 'You have a new notification.'}</p>`
+        )
       });
 
       // 2. Send Push Notification (if token exists)
@@ -120,7 +163,14 @@ async function sendNotifications(session, subject, isNightBefore) {
       from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
       to: loginEmail,
       subject: subject,
-      html: `<div style="font-family: sans-serif; padding: 20px;"><h2>Hi ${userData.firstName}!</h2><p>${isNightBefore ? 'Reminder for your lesson tomorrow.' : 'Lesson starts in 2 hours!'}</p><p>⏰ ${session.startTime} | 📚 ${session.subject}</p></div>`
+      html: buildEmailTemplate(
+        isNightBefore ? 'Reminder: Your Lesson Is Tomorrow' : 'Reminder: Your Lesson Starts Soon',
+        `
+          <p style="margin:0 0 28px;">Hello ${userData.firstName || 'Scholar'},</p>
+          <p style="margin:0 0 28px;">${isNightBefore ? 'This is a reminder for your lesson tomorrow.' : 'Your lesson starts in 2 hours.'}</p>
+          <p style="margin:0; font-weight:800; color:#191927;">${session.startTime} | ${session.subject}</p>
+        `
+      )
     });
   }
 
