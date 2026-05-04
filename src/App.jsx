@@ -38,9 +38,9 @@ function App() {
       if (snap.exists()) {
         const cloudVersion = snap.data().version;
         // Temporarily disable strict version checking to prevent infinite update loops
-        // if (cloudVersion && cloudVersion !== CURRENT_APP_VERSION) {
-        //   setNewVersionAvailable(true);
-        // }
+        if (cloudVersion && cloudVersion !== CURRENT_APP_VERSION) {
+          setNewVersionAvailable(true);
+        }
       }
     });
   }, []);
@@ -600,6 +600,58 @@ function App() {
           >
             v{CURRENT_APP_VERSION}
           </motion.div>
+
+          <AnimatePresence>
+            {newVersionAvailable && (
+              <motion.div 
+                initial={{ y: -100 }} 
+                animate={{ y: 0 }}
+                style={{
+                  position: 'fixed',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+                  color: 'white',
+                  padding: '16px 24px',
+                  zIndex: 2147483647,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '24px',
+                  boxShadow: '0 4px 20px rgba(99, 102, 241, 0.4)',
+                  textAlign: 'center'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <Bell size={20} className="notif-pulse" />
+                  <span style={{ fontWeight: 800, fontSize: '0.95rem', letterSpacing: '-0.01em' }}>
+                    A new version of Sapere is available with the latest features and fixes.
+                  </span>
+                </div>
+                <button 
+                  onClick={handleUpdateApp}
+                  style={{
+                    background: 'white',
+                    color: '#6366f1',
+                    border: 'none',
+                    padding: '10px 24px',
+                    borderRadius: '100px',
+                    fontWeight: 900,
+                    fontSize: '0.85rem',
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
+                    transition: 'transform 0.2s',
+                    whiteSpace: 'nowrap'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                >
+                  Update Now
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <AnimatePresence>
             {showNotifs && (
