@@ -37,6 +37,7 @@ const isNewer = (cloud, local) => {
 };
 
 function App() {
+  // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout } = useAuth();
   const { showToast } = useToast();
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
@@ -149,7 +150,7 @@ function App() {
 
   const handleMarkAsRead = async () => {
     if (!user?.uid || unreadCount === 0) return;
-    const { doc, writeBatch } = await import('firebase/firestore');
+    const { writeBatch } = await import('firebase/firestore');
     const batch = writeBatch(db);
     notifications.filter(n => !n.read).forEach(n => {
       batch.update(doc(db, 'users', user.uid, 'notifications', n.id), { read: true });
