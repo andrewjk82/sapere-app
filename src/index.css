@@ -412,3 +412,40 @@ input:focus {
   margin-bottom: 20px;
 }
 
+
+/* Curriculum Page Styling */
+.curriculum-title-area {
+  margin-top: 12px;
+}
+
+.curriculum-main-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+
+.course-badge {
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: var(--accent-glow);
+  color: var(--accent-dark);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-dark);
+  margin-bottom: 4px;
+  opacity: 0.8;
+}

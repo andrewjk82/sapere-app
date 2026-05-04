@@ -310,7 +310,12 @@ const Curriculum = () => {
                   )}
                 </div>
               </div>
-              <p>{selectedYear} Curriculum {selectedCourse ? `(${selectedCourse})` : ''}</p>
+              <div className="curriculum-title-area">
+                <label className="section-label">Curriculum Management</label>
+                <h2 className="curriculum-main-title">
+                  {selectedYear} {selectedCourse && <span className="course-badge">{selectedCourse}</span>}
+                </h2>
+              </div>
             </div>
             <div className="app-page__actions" style={{ display: 'flex', gap: '12px' }}>
               <button 
