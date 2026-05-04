@@ -325,10 +325,13 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const handleRecalculateXP = async () => {
+    if (!student || !studentId) return;
     if (!confirm("Recalculate total XP and challenge count from history? This will overwrite the current totals.")) return;
+    
     try {
       setLoading(true);
       const colName = student.source === 'manual' ? 'students' : 'users';
+      console.log(`Recalculating for ${colName}/${studentId}`);
       
       // 1. Fetch all daily stats
       const dailySnap = await getDocs(collection(db, colName, studentId, 'daily_stats'));
@@ -339,29 +342,34 @@ const StudentDetail = ({ studentId, onBack }) => {
       
       dailySnap.forEach(d => {
         const data = d.data();
-        if (data.completed && data.score) {
-          totalXP += (data.score * 10);
+        // Be more flexible with score parsing
+        const score = Number(data.score) || 0;
+        if (data.completed || score > 0) {
+          totalXP += (score * 10);
           challengesCompleted += 1;
         }
       });
       
       calcSnap.forEach(d => {
         const data = d.data();
-        if (data.completed && data.score) {
-          totalXP += (data.score * 10);
+        const score = Number(data.score) || 0;
+        if (data.completed || score > 0) {
+          totalXP += (score * 10);
           challengesCompleted += 1;
         }
       });
       
-      await updateDoc(doc(db, colName, studentId), {
+      console.log(`Computed: XP=${totalXP}, Count=${challengesCompleted}`);
+
+      await setDoc(doc(db, colName, studentId), {
         totalXP,
         challengesCompleted
-      });
+      }, { merge: true });
       
       showToast(`Success! Total XP: ${totalXP}, Challenges: ${challengesCompleted}`, 'success');
     } catch (err) {
-      console.error(err);
-      showToast("Recalculation failed.", 'error');
+      console.error("Recalculate error:", err);
+      showToast("Recalculation failed: " + err.message, 'error');
     } finally {
       setLoading(false);
     }
