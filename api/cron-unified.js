@@ -16,6 +16,7 @@ export default async function handler(req, res) {
     const db = admin.firestore();
     const nowUTC = new Date();
     const logs = [];
+    const adminEmail = 'andrewjk82@gmail.com';
 
     // ── Helper: Get Sydney date string YYYY-MM-DD ──────────────────────────
     const getSydneyDateStr = (date) =>
@@ -32,6 +33,14 @@ export default async function handler(req, res) {
       if (period === 'PM' && h !== 12) h += 12;
       if (period === 'AM' && h === 12) h = 0;
       return h * 60 + m;
+    };
+
+    const normalizeEmail = (email) => (email || '').trim().toLowerCase();
+
+    const isStudentProfile = (student) => {
+      const role = (student.role || '').toLowerCase();
+      const email = normalizeEmail(student.email);
+      return role !== 'admin' && role !== 'parent' && email !== adminEmail;
     };
 
     // ── Helper: Format minutes → "2:30 PM" ────────────────────────────────
@@ -105,26 +114,50 @@ export default async function handler(req, res) {
     if (sydHour >= 19 && sydHour < 21) {
       logs.push(`[Cron] 7PM-9PM window reached. Checking tasks and tomorrow's schedule...`);
 
-      // 1. Fetch all students
-      const studentsSnap = await db.collection('users').where('role', '==', 'student').get();
+      // 1. Fetch all student-like users. Some legacy student docs have no role field.
+      const usersSnap = await db.collection('users').get();
+      const studentDocs = usersSnap.docs.filter(doc => isStudentProfile(doc.data()));
       
       // 2. Fetch all tomorrow's sessions to map them to students
       const tomorrowSessionsSnap = await db.collection('sessions').where('date', '==', tomorrowStr).get();
       const sessionsByStudent = {};
+      const sessionsByEmail = {};
       tomorrowSessionsSnap.docs.forEach(doc => {
-        const data = doc.data();
-        if (!sessionsByStudent[data.studentId]) sessionsByStudent[data.studentId] = [];
-        sessionsByStudent[data.studentId].push(data);
+        const data = { id: doc.id, ...doc.data() };
+        if (data.studentId) {
+          if (!sessionsByStudent[data.studentId]) sessionsByStudent[data.studentId] = [];
+          sessionsByStudent[data.studentId].push(data);
+        }
+        const sessionEmail = normalizeEmail(data.studentEmail || data.email);
+        if (sessionEmail) {
+          if (!sessionsByEmail[sessionEmail]) sessionsByEmail[sessionEmail] = [];
+          sessionsByEmail[sessionEmail].push(data);
+        }
       });
 
-      for (const studentDoc of studentsSnap.docs) {
+      logs.push(`[Cron] Found ${studentDocs.length} student profiles and ${tomorrowSessionsSnap.size} sessions for ${tomorrowStr}.`);
+
+      for (const studentDoc of studentDocs) {
         const student = studentDoc.data();
         const studentId = studentDoc.id;
-        const studentEmail = student.email;
+        const studentEmail = normalizeEmail(student.email);
         const studentName = student.name || student.displayName || `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
+        const tomorrowClasses = dedupeSessions([
+          ...(sessionsByStudent[studentId] || []),
+          ...(sessionsByEmail[studentEmail] || []),
+        ]);
+        const tomorrowClassIds = tomorrowClasses.map(c => c.id).sort();
 
-        // Skip if already sent 8PM reminder (safety)
-        if (student.last8PMReminderDate === todayStr) continue;
+        // Skip duplicate wrap-ups, but allow a resend if newly matched classes were missing earlier.
+        const previousClassIds = Array.isArray(student.last8PMReminderClassIds)
+          ? [...student.last8PMReminderClassIds].sort()
+          : [];
+        if (
+          student.last8PMReminderDate === todayStr &&
+          arraysEqual(previousClassIds, tomorrowClassIds)
+        ) {
+          continue;
+        }
 
         // A. Check Today's Challenge
         const challengeSnap = await db.collection('users').doc(studentId).collection('daily_stats').doc(todayStr).get();
@@ -141,7 +174,6 @@ export default async function handler(req, res) {
           calcDone = !calcSnap.empty;
         }
 
-        const tomorrowClasses = sessionsByStudent[studentId] || [];
         const hasUnfinishedTasks = !challengeDone || (calcEnabled && !calcDone);
 
         // Send reminder if they have classes tomorrow OR unfinished tasks today
@@ -165,14 +197,19 @@ export default async function handler(req, res) {
             body += `</ul></div>`;
           }
 
-          await sendNotification(db, transporter, { studentId, studentEmail, name: studentName }, 'daily_wrapup', 
+          const notificationEmail = studentEmail || normalizeEmail(tomorrowClasses.find(c => c.studentEmail || c.email)?.studentEmail || tomorrowClasses.find(c => c.studentEmail || c.email)?.email);
+
+          const result = await sendNotification(db, transporter, { studentId, studentEmail: notificationEmail, name: studentName }, 'daily_wrapup', 
             hasUnfinishedTasks ? "You have unfinished tasks today!" : "Your schedule for tomorrow", 
             body
           );
           
           // Mark as sent
-          await studentDoc.ref.update({ last8PMReminderDate: todayStr });
-          logs.push(`8PM Wrap-up sent to ${studentName}`);
+          await studentDoc.ref.update({
+            last8PMReminderDate: todayStr,
+            last8PMReminderClassIds: tomorrowClassIds
+          });
+          logs.push(`8PM wrap-up sent to ${studentName} (${tomorrowClasses.length} classes, unfinished=${hasUnfinishedTasks}, email=${result.emailSent}, push=${result.pushSent})`);
         }
       }
     }
@@ -182,7 +219,7 @@ export default async function handler(req, res) {
       type: 'cron_execution',
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
       sydneyTime: `${sydHour}:${String(sydMinute).padStart(2,'0')}`,
-      remindersSentCount: logs.filter(l => l.includes('reminder sent')).length,
+      remindersSentCount: logs.filter(l => l.toLowerCase().includes('sent')).length,
       logs: logs
     });
 
@@ -194,9 +231,26 @@ export default async function handler(req, res) {
   }
 }
 
+function dedupeSessions(sessions) {
+  const seen = new Set();
+  return sessions.filter(session => {
+    const key = session.id || `${session.date}-${session.startTime}-${session.studentId || session.studentEmail || ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function arraysEqual(a, b) {
+  if (a.length !== b.length) return false;
+  return a.every((value, index) => value === b[index]);
+}
+
 async function sendNotification(db, transporter, session, type, subject, body) {
   const studentId    = session.studentId;
   const studentEmail = session.studentEmail || session.email;
+  let emailSent = false;
+  let pushSent = false;
 
   if (studentEmail) {
     try {
@@ -257,6 +311,7 @@ async function sendNotification(db, transporter, session, type, subject, body) {
           </body>
           </html>`
       });
+      emailSent = true;
     } catch (e) { console.error(`Email fail:`, e.message); }
   }
 
@@ -279,8 +334,11 @@ async function sendNotification(db, transporter, session, type, subject, body) {
             notification: { title: subject, body: body.replace(/<[^>]*>/g, '').substring(0, 100) + '...' },
             tokens
           });
+          pushSent = true;
         } catch (e) { console.error(`Push fail:`, e.message); }
       }
     }
   }
+
+  return { emailSent, pushSent };
 }
