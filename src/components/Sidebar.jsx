@@ -117,6 +117,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
         )}
         <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} />
         <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} />
+        <SidebarItem icon={Settings} label="Settings" active={activeTab === 'Settings'} onClick={() => setActiveTab('Settings')} disabled={isLocked} />
       </nav>
 
       {/* Only render footer on desktop — on mobile the capsule in App.jsx handles avatar/logout */}
