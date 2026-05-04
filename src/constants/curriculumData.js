@@ -937,10 +937,268 @@ export const CURRICULUM_DATA = {
     }
   ],
   'Year 10': [
-    { id: 'y10-1', title: 'Quadratic Equations', modules: 12 },
-    { id: 'y10-2', title: 'Trigonometry: Advanced', modules: 10 },
-    { id: 'y10-3', title: 'Logarithms & Exponentials', modules: 10 },
-    { id: 'y10-4', title: 'Probability Distributions', modules: 9 }
+    {
+      id: 'y10-1',
+      title: 'Chapter 1: Consumer arithmetic',
+      modules: 5,
+      topics: [
+        { id: 'y10-1a', code: '1A', title: 'Review of percentages' },
+        { id: 'y10-1b', code: '1B', title: 'Percentage increase and decrease' },
+        { id: 'y10-1c', code: '1C', title: 'Repeated increases and decreases' },
+        { id: 'y10-1d', code: '1D', title: 'Compound interest' },
+        { id: 'y10-1e', code: '1E', title: 'Compound depreciation' }
+      ]
+    },
+    {
+      id: 'y10-2',
+      title: 'Chapter 2: Review of surds',
+      modules: 5,
+      topics: [
+        { id: 'y10-2a', code: '2A', title: 'Irrational numbers and surds' },
+        { id: 'y10-2b', code: '2B', title: 'Addition and subtraction of surds' },
+        { id: 'y10-2c', code: '2C', title: 'Multiplication and division of surds' },
+        { id: 'y10-2d', code: '2D', title: 'Special products' },
+        { id: 'y10-2e', code: '2E', title: 'Rationalising denominators' }
+      ]
+    },
+    {
+      id: 'y10-3',
+      title: 'Chapter 3: Algebra review',
+      modules: 9,
+      topics: [
+        { id: 'y10-3a', code: '3A', title: 'Expanding brackets and collecting like terms' },
+        { id: 'y10-3b', code: '3B', title: 'Solving linear equations and inequalities' },
+        { id: 'y10-3c', code: '3C', title: 'More difficult linear equations and inequalities' },
+        { id: 'y10-3d', code: '3D', title: 'Formulas' },
+        { id: 'y10-3e', code: '3E', title: 'Factorising a difference of two squares' },
+        { id: 'y10-3f', code: '3F', title: 'Monic quadratics and grouping' },
+        { id: 'y10-3g', code: '3G', title: 'Non-monic quadratics' },
+        { id: 'y10-3h', code: '3H', title: 'An introduction to algebraic fractions' },
+        { id: 'y10-3i', code: '3I', title: 'Further algebraic fractions' }
+      ]
+    },
+    {
+      id: 'y10-4',
+      title: 'Chapter 4: Lines and linear equations',
+      modules: 6,
+      topics: [
+        { id: 'y10-4a', code: '4A', title: 'Distance between two points and midpoint of an interval' },
+        { id: 'y10-4b', code: '4B', title: 'Gradient' },
+        { id: 'y10-4c', code: '4C', title: 'Gradient-intercept form and the general form of the equation of a line' },
+        { id: 'y10-4d', code: '4D', title: 'Point-gradient form of an equation of a line' },
+        { id: 'y10-4e', code: '4E', title: 'Review of simultaneous linear equations' },
+        { id: 'y10-4f', code: '4F', title: 'Solving word problems using simultaneous equations' }
+      ]
+    },
+    {
+      id: 'y10-5',
+      title: 'Chapter 5: Quadratic equations',
+      modules: 6,
+      topics: [
+        { id: 'y10-5a', code: '5A', title: 'Solution of quadratic equations' },
+        { id: 'y10-5b', code: '5B', title: 'Rearranging to standard form' },
+        { id: 'y10-5c', code: '5C', title: 'Applications of quadratic equations' },
+        { id: 'y10-5d', code: '5D', title: 'Perfect squares and completing the square' },
+        { id: 'y10-5e', code: '5E', title: 'Solving quadratic equations by completing the square' },
+        { id: 'y10-5f', code: '5F', title: 'The quadratic formula' }
+      ]
+    },
+    {
+      id: 'y10-6',
+      title: 'Chapter 6: Surface area and volume',
+      modules: 5,
+      topics: [
+        { id: 'y10-6a', code: '6A', title: 'Review of prisms and cylinders' },
+        { id: 'y10-6b', code: '6B', title: 'Pyramids' },
+        { id: 'y10-6c', code: '6C', title: 'Cones' },
+        { id: 'y10-6d', code: '6D', title: 'Spheres' },
+        { id: 'y10-6e', code: '6E', title: 'Enlargement' }
+      ]
+    },
+    {
+      id: 'y10-7',
+      title: 'Chapter 7: The parabola',
+      modules: 7,
+      topics: [
+        { id: 'y10-7a', code: '7A', title: 'Parabolas congruent to y = x^2' },
+        { id: 'y10-7b', code: '7B', title: 'Sketching the graph of the quadratic y = ax^2 + bx + c, where a = +/-1' },
+        { id: 'y10-7c', code: '7C', title: 'The general quadratic y = ax^2 + bx + c' },
+        { id: 'y10-7d', code: '7D', title: 'Symmetry and factorisation' },
+        { id: 'y10-7e', code: '7E', title: 'Sketching via the discriminant' },
+        { id: 'y10-7f', code: '7F', title: 'Applications involving quadratics' },
+        { id: 'y10-7g', code: '7G', title: 'Quadratic inequalities' }
+      ]
+    },
+    {
+      id: 'y10-8',
+      title: 'Chapter 8: Review of congruence and similarity',
+      modules: 4,
+      topics: [
+        { id: 'y10-8a', code: '8A', title: 'Review of triangles' },
+        { id: 'y10-8b', code: '8B', title: 'Congruence' },
+        { id: 'y10-8c', code: '8C', title: 'Enlargements and similarity' },
+        { id: 'y10-8d', code: '8D', title: 'Similarity and intervals within a triangle' }
+      ]
+    },
+    {
+      id: 'y10-9',
+      title: 'Chapter 9: Indices, exponentials and logarithms - part 1',
+      modules: 7,
+      topics: [
+        { id: 'y10-9a', code: '9A', title: 'Review of powers and integer indices' },
+        { id: 'y10-9b', code: '9B', title: 'Scientific notation and significant figures' },
+        { id: 'y10-9c', code: '9C', title: 'Powers with rational indices' },
+        { id: 'y10-9d', code: '9D', title: 'Graphs of exponential functions' },
+        { id: 'y10-9e', code: '9E', title: 'Exponential equations' },
+        { id: 'y10-9f', code: '9F', title: 'Exponential growth and decay' },
+        { id: 'y10-9g', code: '9G', title: 'Logarithms' }
+      ]
+    },
+    {
+      id: 'y10-10',
+      title: 'Chapter 10: Review and problem-solving',
+      modules: 3,
+      topics: [
+        { id: 'y10-10a', code: '10A', title: 'Review' },
+        { id: 'y10-10b', code: '10B', title: 'Miscellaneous questions' },
+        { id: 'y10-10c', code: '10C', title: 'Problem-solving' }
+      ]
+    },
+    {
+      id: 'y10-11',
+      title: 'Chapter 11: Circles, hyperbolas and simultaneous equations',
+      modules: 4,
+      topics: [
+        { id: 'y10-11a', code: '11A', title: 'Cartesian equation of a circle' },
+        { id: 'y10-11b', code: '11B', title: 'The rectangular hyperbola' },
+        { id: 'y10-11c', code: '11C', title: 'Intersections of graphs' },
+        { id: 'y10-11d', code: '11D', title: 'Regions of the plane' }
+      ]
+    },
+    {
+      id: 'y10-12',
+      title: 'Chapter 12: Further trigonometry',
+      modules: 8,
+      topics: [
+        { id: 'y10-12a', code: '12A', title: 'Review of the basic trigonometric ratios' },
+        { id: 'y10-12b', code: '12B', title: 'Exact values' },
+        { id: 'y10-12c', code: '12C', title: 'Three-dimensional trigonometry' },
+        { id: 'y10-12d', code: '12D', title: 'The sine rule' },
+        { id: 'y10-12e', code: '12E', title: 'Trigonometric ratios of obtuse angles' },
+        { id: 'y10-12f', code: '12F', title: 'The cosine rule' },
+        { id: 'y10-12g', code: '12G', title: 'Finding angles using the cosine rule' },
+        { id: 'y10-12h', code: '12H', title: 'Area of a triangle' }
+      ]
+    },
+    {
+      id: 'y10-13',
+      title: 'Chapter 13: Circle geometry',
+      modules: 6,
+      topics: [
+        { id: 'y10-13a', code: '13A', title: 'Angles at the centre and the circumference' },
+        { id: 'y10-13b', code: '13B', title: 'Angles at the circumference and cyclic quadrilaterals' },
+        { id: 'y10-13c', code: '13C', title: 'Chords and angles at the centre' },
+        { id: 'y10-13d', code: '13D', title: 'Tangents and radii' },
+        { id: 'y10-13e', code: '13E', title: 'The alternate segment theorem' },
+        { id: 'y10-13f', code: '13F', title: 'Similarity and circles' }
+      ]
+    },
+    {
+      id: 'y10-14',
+      title: 'Chapter 14: Indices, exponentials and logarithms - part 2',
+      modules: 4,
+      topics: [
+        { id: 'y10-14a', code: '14A', title: 'Logarithm rules' },
+        { id: 'y10-14b', code: '14B', title: 'Change of base' },
+        { id: 'y10-14c', code: '14C', title: 'Graphs of exponential and logarithm functions' },
+        { id: 'y10-14d', code: '14D', title: 'Applications to science, population growth and finance' }
+      ]
+    },
+    {
+      id: 'y10-15',
+      title: 'Chapter 15: Probability',
+      modules: 5,
+      topics: [
+        { id: 'y10-15a', code: '15A', title: 'Review of probability' },
+        { id: 'y10-15b', code: '15B', title: 'The complement, union and intersection' },
+        { id: 'y10-15c', code: '15C', title: 'Conditional probability' },
+        { id: 'y10-15d', code: '15D', title: 'Independent events' },
+        { id: 'y10-15e', code: '15E', title: 'Sampling with replacement and without replacement' }
+      ]
+    },
+    {
+      id: 'y10-16',
+      title: 'Chapter 16: Direct and inverse proportion',
+      modules: 3,
+      topics: [
+        { id: 'y10-16a', code: '16A', title: 'Direct proportion' },
+        { id: 'y10-16b', code: '16B', title: 'Inverse proportion' },
+        { id: 'y10-16c', code: '16C', title: 'Proportionality in several variables' }
+      ]
+    },
+    {
+      id: 'y10-17',
+      title: 'Chapter 17: Polynomials',
+      modules: 8,
+      topics: [
+        { id: 'y10-17a', code: '17A', title: 'The language of polynomials' },
+        { id: 'y10-17b', code: '17B', title: 'Adding, subtracting and multiplying polynomials' },
+        { id: 'y10-17c', code: '17C', title: 'Dividing polynomials' },
+        { id: 'y10-17d', code: '17D', title: 'The remainder theorem and factor theorem' },
+        { id: 'y10-17e', code: '17E', title: 'Factorising polynomials' },
+        { id: 'y10-17f', code: '17F', title: 'Polynomial equations' },
+        { id: 'y10-17g', code: '17G', title: 'Sketching polynomials' },
+        { id: 'y10-17h', code: '17H', title: 'Further sketching of polynomials' }
+      ]
+    },
+    {
+      id: 'y10-18',
+      title: 'Chapter 18: Statistics',
+      modules: 8,
+      topics: [
+        { id: 'y10-18a', code: '18A', title: 'The median and the interquartile range' },
+        { id: 'y10-18b', code: '18B', title: 'Boxplots' },
+        { id: 'y10-18c', code: '18C', title: 'Boxplots, histograms and outliers' },
+        { id: 'y10-18d', code: '18D', title: 'The mean and the standard deviation' },
+        { id: 'y10-18e', code: '18E', title: 'Interpreting the standard deviation' },
+        { id: 'y10-18f', code: '18F', title: 'Time-series data' },
+        { id: 'y10-18g', code: '18G', title: 'Bivariate data' },
+        { id: 'y10-18h', code: '18H', title: 'Line of best fit' }
+      ]
+    },
+    {
+      id: 'y10-19',
+      title: 'Chapter 19: Trigonometric functions',
+      modules: 5,
+      topics: [
+        { id: 'y10-19a', code: '19A', title: 'Angles in the four quadrants' },
+        { id: 'y10-19b', code: '19B', title: 'Finding angles' },
+        { id: 'y10-19c', code: '19C', title: 'Angles of any magnitude' },
+        { id: 'y10-19d', code: '19D', title: 'The trigonometric functions and their symmetries' },
+        { id: 'y10-19e', code: '19E', title: 'Trigonometric equations' }
+      ]
+    },
+    {
+      id: 'y10-20',
+      title: 'Chapter 20: Functions and inverse functions',
+      modules: 5,
+      topics: [
+        { id: 'y10-20a', code: '20A', title: 'Functions and domains' },
+        { id: 'y10-20b', code: '20B', title: 'Inverse functions' },
+        { id: 'y10-20c', code: '20C', title: 'Function notation and the range of a function' },
+        { id: 'y10-20d', code: '20D', title: 'Transformations of graphs of functions' },
+        { id: 'y10-20e', code: '20E', title: 'Composites and inverses' }
+      ]
+    },
+    {
+      id: 'y10-21',
+      title: 'Chapter 21: Review and problem-solving',
+      modules: 2,
+      topics: [
+        { id: 'y10-21a', code: '21A', title: 'Review' },
+        { id: 'y10-21b', code: '21B', title: 'Problem-solving' }
+      ]
+    }
   ],
   'Year 11': {
     'Standard': [
