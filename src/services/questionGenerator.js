@@ -134,16 +134,25 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
     const topicSet = new Set(assignedTopics || []);
     const scopedChapters = chapterSet.size > 0 ? yearChapters.filter(chapter => chapterSet.has(chapter.id)) : yearChapters;
 
-    const targets = scopedChapters.flatMap(chapter => (chapter.topics || []).map(topic => ({
-      year: y,
-      chapterId: chapter.id,
-      chapterTitle: chapter.title,
-      topicId: topic.id,
-      topicCode: topic.code || '',
-      topicTitle: topic.title,
-      topicGroup: topic.group || '',
-      generatorTypes: TOPIC_GENERATOR_MAP[topic.id] || GROUP_GENERATOR_MAP[topic.group] || (['Year 11', 'Year 12'].includes(y) ? ['algebra_yr11'] : ['generic_year1']),
-    })));
+    const targets = scopedChapters.flatMap(chapter => (chapter.topics || []).map(topic => {
+      const inferredTypes = inferPrimaryGeneratorTypes({
+        year: y,
+        chapterTitle: chapter.title,
+        topicTitle: topic.title,
+        topicGroup: topic.group || '',
+      });
+
+      return {
+        year: y,
+        chapterId: chapter.id,
+        chapterTitle: chapter.title,
+        topicId: topic.id,
+        topicCode: topic.code || '',
+        topicTitle: topic.title,
+        topicGroup: topic.group || '',
+        generatorTypes: TOPIC_GENERATOR_MAP[topic.id] || GROUP_GENERATOR_MAP[topic.group] || inferredTypes || (['Year 11', 'Year 12'].includes(y) ? ['algebra_yr11'] : ['generic_year1']),
+      };
+    }));
     
     allTargets = [...allTargets, ...targets];
   });
@@ -712,6 +721,334 @@ const genMostLikely = () => {
 
 const genGeneric = (difficulty) => genAddition(difficulty);
 
+const gcd = (a, b) => {
+  let x = Math.abs(a);
+  let y = Math.abs(b);
+  while (y) [x, y] = [y, x % y];
+  return x || 1;
+};
+
+const simplifiedFraction = (numerator, denominator) => {
+  const divisor = gcd(numerator, denominator);
+  return `${numerator / divisor}/${denominator / divisor}`;
+};
+
+const money = cents => `$${(cents / 100).toFixed(2)}`;
+
+const genStagePlaceValue = (difficulty) => {
+  const maxDigits = maxByDifficulty(difficulty, 4, 6, 9);
+  const number = randomInt(10 ** (Math.min(maxDigits, 6) - 1), (10 ** Math.min(maxDigits, 6)) - 1);
+  const digits = String(number).split('').map(Number);
+  const idx = randomInt(0, digits.length - 1);
+  const place = 10 ** (digits.length - idx - 1);
+  const answer = digits[idx] * place;
+  return q('stage_place_value', `In ${number.toLocaleString('en-AU')}, what is the value of the digit ${digits[idx]}?`, getUniqueOptions(answer, [digits[idx], answer / 10, answer * 10], 0, 100000000), answer, `The digit ${digits[idx]} is in the ${place.toLocaleString('en-AU')}s place, so its value is ${answer.toLocaleString('en-AU')}.`, 35);
+};
+
+const genStageRounding = (difficulty) => {
+  const place = pick(difficulty === 'easy' ? [10, 100] : difficulty === 'medium' ? [10, 100, 1000] : [100, 1000, 10000]);
+  const number = randomInt(place * 2, place * 90);
+  const answer = Math.round(number / place) * place;
+  return q('stage_rounding', `Round ${number.toLocaleString('en-AU')} to the nearest ${place.toLocaleString('en-AU')}.`, getUniqueOptions(answer, [answer - place, answer + place, number], 0, place * 100), answer, `Look at the digit to the right of the ${place.toLocaleString('en-AU')}s place, then round to ${answer.toLocaleString('en-AU')}.`, 35);
+};
+
+const genLargeAddSubtract = (difficulty) => {
+  const max = maxByDifficulty(difficulty, 999, 9999, 99999);
+  const a = randomInt(Math.floor(max / 5), max);
+  const b = randomInt(100, Math.floor(max / 2));
+  const subtract = Math.random() > 0.45;
+  const answer = subtract ? a - b : a + b;
+  const symbol = subtract ? '-' : '+';
+  return q('large_add_subtract', `${a.toLocaleString('en-AU')} ${symbol} ${b.toLocaleString('en-AU')} = ?`, getUniqueOptions(answer, [answer + 10, answer - 10, subtract ? a + b : a - b], -100000, 150000), answer, subtract ? `${a.toLocaleString('en-AU')} - ${b.toLocaleString('en-AU')} = ${answer.toLocaleString('en-AU')}.` : `${a.toLocaleString('en-AU')} + ${b.toLocaleString('en-AU')} = ${answer.toLocaleString('en-AU')}.`, 55);
+};
+
+const genMoneyBudget = (difficulty) => {
+  const prices = Array.from({ length: difficulty === 'hard' ? 4 : 3 }, () => randomInt(250, difficulty === 'easy' ? 2500 : 9500));
+  const discount = pick(difficulty === 'easy' ? [10, 25] : [10, 20, 25, 50]);
+  const total = prices.reduce((sum, value) => sum + value, 0);
+  const answer = Math.round(total * (100 - discount) / 100);
+  const question = `A basket costs ${prices.map(money).join(' + ')}. A ${discount}% discount is applied. What is the final cost?`;
+  return q('money_budget', question, wordOptions(money(answer), [money(answer), money(total), money(answer + 500), money(Math.max(0, answer - 500))]), money(answer), `First add the prices: ${money(total)}. Then pay ${100 - discount}% of the total: ${money(answer)}.`, 75, `Find the total first, then multiply by ${(100 - discount) / 100}.`);
+};
+
+const genMultiplicationDivision = (difficulty) => {
+  const mode = pick(['multiply', 'divide', 'word']);
+  if (mode === 'divide') {
+    const divisor = randomInt(2, difficulty === 'hard' ? 12 : 9);
+    const quotient = randomInt(12, difficulty === 'hard' ? 950 : 150);
+    const remainder = difficulty === 'hard' ? randomInt(0, divisor - 1) : 0;
+    const dividend = divisor * quotient + remainder;
+    const answer = remainder ? `${quotient} r ${remainder}` : quotient;
+    return q('multiplicative_relations', `${dividend} ÷ ${divisor} = ?`, remainder ? wordOptions(answer, [answer, `${quotient + 1} r ${remainder}`, `${quotient} r ${Math.max(0, remainder - 1)}`, `${quotient}`]) : getUniqueOptions(answer, [quotient - 1, quotient + 1, divisor], 0, 1000), answer, `${divisor} x ${quotient} = ${divisor * quotient}${remainder ? `, with ${remainder} left over` : ''}.`, 55);
+  }
+  if (mode === 'word') {
+    const packs = randomInt(4, difficulty === 'hard' ? 24 : 12);
+    const each = randomInt(6, difficulty === 'hard' ? 48 : 15);
+    const answer = packs * each;
+    return q('multiplicative_word_problem', `There are ${packs} boxes with ${each} pencils in each box. How many pencils are there altogether?`, getUniqueOptions(answer, [answer - each, answer + each, packs + each], 0, 2000), answer, `${packs} x ${each} = ${answer}.`, 60);
+  }
+  const a = randomInt(12, difficulty === 'hard' ? 999 : 99);
+  const b = randomInt(3, difficulty === 'hard' ? 24 : 12);
+  const answer = a * b;
+  return q('multiplicative_relations', `${a} x ${b} = ?`, getUniqueOptions(answer, [answer + b, answer - b, a + b], 0, 25000), answer, `${a} x ${b} = ${answer}.`, 50);
+};
+
+const genOrderOperations = (difficulty) => {
+  const a = randomInt(2, 9);
+  const b = randomInt(2, 9);
+  const c = randomInt(2, 9);
+  const d = randomInt(2, 9);
+  const hard = difficulty === 'hard';
+  const expression = hard ? `${a} + (${b} x ${c}) - ${d}` : `${a} + ${b} x ${c}`;
+  const answer = hard ? a + b * c - d : a + b * c;
+  return q('order_operations', `Evaluate: ${expression}`, getUniqueOptions(answer, [hard ? (a + b) * c - d : (a + b) * c, answer + 2, answer - 2], -50, 150), answer, `Do multiplication and brackets before addition/subtraction: ${expression} = ${answer}.`, 45);
+};
+
+const genFractionStage = (difficulty) => {
+  const mode = pick(['of_quantity', 'equivalent', 'add']);
+  if (mode === 'of_quantity') {
+    const denominator = pick([2, 3, 4, 5, 6, 8, 10]);
+    const numerator = randomInt(1, Math.min(denominator - 1, difficulty === 'easy' ? 1 : 4));
+    const whole = denominator * randomInt(4, difficulty === 'hard' ? 30 : 15);
+    const answer = whole / denominator * numerator;
+    return q('fraction_quantity', `What is ${numerator}/${denominator} of ${whole}?`, getUniqueOptions(answer, [whole / denominator, answer + denominator, whole - answer], 0, whole), answer, `One ${denominator}th of ${whole} is ${whole / denominator}; ${numerator}/${denominator} is ${answer}.`, 55);
+  }
+  if (mode === 'equivalent') {
+    const denominator = pick([3, 4, 5, 6, 8]);
+    const numerator = randomInt(1, denominator - 1);
+    const factor = randomInt(2, difficulty === 'hard' ? 8 : 5);
+    const answer = `${numerator * factor}/${denominator * factor}`;
+    return q('equivalent_fractions', `Which fraction is equivalent to ${numerator}/${denominator}?`, wordOptions(answer, [answer, `${numerator + factor}/${denominator + factor}`, `${numerator}/${denominator * factor}`, `${denominator * factor}/${numerator * factor}`]), answer, `Multiply the numerator and denominator by ${factor}: ${numerator}/${denominator} = ${answer}.`, 45);
+  }
+  const denominator = pick([5, 6, 8, 10, 12]);
+  const a = randomInt(1, Math.floor(denominator / 2));
+  const b = randomInt(1, denominator - a - 1);
+  const answer = simplifiedFraction(a + b, denominator);
+  return q('fraction_add_subtract', `Calculate ${a}/${denominator} + ${b}/${denominator}. Give the answer in simplest form.`, wordOptions(answer, [answer, `${a + b}/${denominator}`, `${a + b}/${denominator * 2}`, `${a * b}/${denominator}`]), answer, `Same denominator: ${a}/${denominator} + ${b}/${denominator} = ${a + b}/${denominator} = ${answer}.`, 55);
+};
+
+const genDecimalPercent = (difficulty) => {
+  const mode = pick(['decimal_place', 'percent_of', 'convert']);
+  if (mode === 'percent_of') {
+    const percent = pick(difficulty === 'easy' ? [10, 25, 50] : [5, 10, 20, 25, 40, 50, 75]);
+    const whole = randomInt(4, 40) * 10;
+    const answer = whole * percent / 100;
+    return q('percent_quantity', `Find ${percent}% of ${whole}.`, getUniqueOptions(answer, [answer + 10, answer - 10, whole - answer], 0, whole), answer, `${percent}% means ${percent}/100. ${whole} x ${percent}/100 = ${answer}.`, 45);
+  }
+  if (mode === 'convert') {
+    const pairs = [
+      { f: '1/2', d: '0.5', p: '50%' },
+      { f: '1/4', d: '0.25', p: '25%' },
+      { f: '3/4', d: '0.75', p: '75%' },
+      { f: '1/10', d: '0.1', p: '10%' },
+    ];
+    const item = pick(pairs);
+    const answer = pick([item.d, item.p]);
+    return q('fraction_decimal_percent', `Which value is equivalent to ${item.f}?`, wordOptions(answer, [item.d, item.p, '0.2', '20%', '0.05']), answer, `${item.f} = ${item.d} = ${item.p}.`, 35);
+  }
+  const number = (randomInt(100, 9999) / 1000).toFixed(3);
+  const digit = number.split('.')[1][2];
+  return q('decimal_place_value', `In ${number}, what digit is in the thousandths place?`, getUniqueOptions(Number(digit), [Number(digit) + 1, Number(digit) - 1, Number(number[0])], 0, 9), Number(digit), `The third digit after the decimal point is the thousandths digit.`, 30);
+};
+
+const genIntegerNumberLine = (difficulty) => {
+  const a = randomInt(-20, 20);
+  const step = randomInt(2, difficulty === 'hard' ? 15 : 8);
+  const add = Math.random() > 0.5;
+  const answer = add ? a + step : a - step;
+  return q('integers_number_line', `Start at ${a} on a number line and move ${step} ${add ? 'right' : 'left'}. Where do you land?`, getUniqueOptions(answer, [a, -answer, answer + 1], -50, 50), answer, `${add ? 'Right means add' : 'Left means subtract'} ${step}: the result is ${answer}.`, 35);
+};
+
+const genMeasurementStage = (difficulty) => {
+  const mode = pick(['convert_length', 'mass', 'time']);
+  if (mode === 'time') {
+    const startHour = randomInt(8, 14);
+    const duration = pick(difficulty === 'easy' ? [30, 45, 60] : [35, 50, 75, 95, 130]);
+    const endHour = startHour + Math.floor(duration / 60);
+    const endMin = duration % 60;
+    const answer = `${endHour}:${String(endMin).padStart(2, '0')}`;
+    return q('duration_time', `A train leaves at ${startHour}:00 and the trip takes ${duration} minutes. What time does it arrive?`, wordOptions(answer, [answer, `${startHour}:${String(duration).padStart(2, '0')}`, `${endHour + 1}:${String(endMin).padStart(2, '0')}`, `${endHour}:00`]), answer, `${duration} minutes after ${startHour}:00 is ${answer}.`, 50);
+  }
+  if (mode === 'mass') {
+    const kg = randomInt(1, 9);
+    const grams = kg * 1000;
+    return q('metric_mass', `Convert ${kg} kg to grams.`, getUniqueOptions(grams, [kg * 100, grams + 1000, grams / 10], 0, 20000), grams, `1 kg = 1000 g, so ${kg} kg = ${grams} g.`, 35);
+  }
+  const metres = randomInt(2, difficulty === 'hard' ? 25 : 12);
+  const answer = metres * 100;
+  return q('metric_length', `Convert ${metres} m to centimetres.`, getUniqueOptions(answer, [metres * 10, answer + 100, metres * 1000], 0, 30000), answer, `1 m = 100 cm, so ${metres} m = ${answer} cm.`, 35);
+};
+
+const genTemperatureStage = (difficulty) => {
+  const mode = pick(['compare', 'difference']);
+  const morning = randomInt(-5, difficulty === 'hard' ? 18 : 25);
+  const afternoon = morning + randomInt(3, difficulty === 'hard' ? 22 : 12);
+  if (mode === 'difference') {
+    const answer = afternoon - morning;
+    return q('temperature_difference', `The temperature was ${morning} degrees C in the morning and ${afternoon} degrees C in the afternoon. How many degrees did it rise?`, getUniqueOptions(answer, [answer + 2, answer - 2, afternoon], 0, 40), answer, `${afternoon} - ${morning} = ${answer} degrees C.`, 40);
+  }
+  const answer = afternoon > morning ? 'afternoon' : 'morning';
+  return q('temperature_compare', `Which was warmer: ${morning} degrees C in the morning or ${afternoon} degrees C in the afternoon?`, ['morning', 'afternoon'], answer, `Compare the temperatures. ${afternoon} degrees C is warmer than ${morning} degrees C.`, 30);
+};
+
+const genPerimeterArea = (difficulty) => {
+  const mode = pick(['perimeter', 'rectangle_area', 'triangle_area', 'composite']);
+  const length = randomInt(4, difficulty === 'hard' ? 25 : 14);
+  const width = randomInt(3, difficulty === 'hard' ? 18 : 10);
+  if (mode === 'triangle_area') {
+    const base = randomInt(6, 20);
+    const height = randomInt(4, 16);
+    const answer = base * height / 2;
+    return q('area_triangle', `A triangle has base ${base} cm and height ${height} cm. What is its area?`, getUniqueOptions(answer, [base * height, answer + base, answer - height], 0, 300), answer, `Area of a triangle = 1/2 x base x height = 1/2 x ${base} x ${height} = ${answer} cm^2.`, 55);
+  }
+  if (mode === 'rectangle_area') {
+    const answer = length * width;
+    return q('area_rectangle', `A rectangle is ${length} cm by ${width} cm. What is its area?`, getUniqueOptions(answer, [2 * (length + width), answer + length, answer - width], 0, 600), answer, `Area = length x width = ${length} x ${width} = ${answer} cm^2.`, 45);
+  }
+  if (mode === 'composite') {
+    const extra = randomInt(2, 8);
+    const answer = length * width + extra * width;
+    return q('area_composite', `A composite shape is made from rectangles ${length} cm by ${width} cm and ${extra} cm by ${width} cm. What is the total area?`, getUniqueOptions(answer, [length * width, answer + width, answer - width], 0, 800), answer, `Add the two rectangle areas: ${length * width} + ${extra * width} = ${answer} cm^2.`, 65);
+  }
+  const answer = 2 * (length + width);
+  return q('perimeter_rectangle', `A rectangle is ${length} cm long and ${width} cm wide. What is its perimeter?`, getUniqueOptions(answer, [length * width, answer + 2, answer - 2], 0, 200), answer, `Perimeter = 2 x (${length} + ${width}) = ${answer} cm.`, 45);
+};
+
+const genAnglesStage = (difficulty) => {
+  const mode = pick(['straight', 'point', 'triangle']);
+  if (mode === 'point') {
+    const a = randomInt(40, 140);
+    const b = randomInt(40, 140);
+    const c = randomInt(30, 360 - a - b - 20);
+    const answer = 360 - a - b - c;
+    return q('angles_at_point', `Angles around a point are ${a} degrees, ${b} degrees, ${c} degrees and x. Find x.`, getUniqueOptions(answer, [180 - answer, answer + 10, answer - 10], 0, 360), answer, `Angles around a point add to 360 degrees. x = 360 - ${a} - ${b} - ${c} = ${answer} degrees.`, 50);
+  }
+  if (mode === 'triangle') {
+    const a = randomInt(35, 80);
+    const b = randomInt(35, 80);
+    const answer = 180 - a - b;
+    return q('angles_triangle', `A triangle has angles ${a} degrees, ${b} degrees and x. Find x.`, getUniqueOptions(answer, [180 - answer, answer + 10, answer - 10], 0, 180), answer, `Angles in a triangle add to 180 degrees. x = ${answer} degrees.`, 45);
+  }
+  const angle = randomInt(30, 150);
+  const answer = 180 - angle;
+  return q('angles_straight_line', `Two angles on a straight line are ${angle} degrees and x. Find x.`, getUniqueOptions(answer, [angle, answer + 10, answer - 10], 0, 180), answer, `Angles on a straight line add to 180 degrees. x = 180 - ${angle} = ${answer} degrees.`, 40);
+};
+
+const genCoordinateStage = (difficulty) => {
+  const range = difficulty === 'easy' ? [0, 8] : [-8, 8];
+  const x1 = randomInt(range[0], range[1]);
+  const y1 = randomInt(range[0], range[1]);
+  const dx = randomInt(1, 6);
+  const dy = randomInt(1, 6);
+  const x2 = x1 + dx;
+  const y2 = y1 + dy;
+  const mode = pick(['midpoint', 'gradient', 'translate']);
+  if (mode === 'gradient') {
+    const answer = simplifiedFraction(dy, dx);
+    return q('coordinate_gradient', `Find the gradient of the line through (${x1}, ${y1}) and (${x2}, ${y2}).`, wordOptions(answer, [answer, simplifiedFraction(dx, dy), `${dy + dx}/${dx}`, `${dy}/${dx + dy}`]), answer, `Gradient = rise/run = (${y2} - ${y1}) / (${x2} - ${x1}) = ${answer}.`, 55);
+  }
+  if (mode === 'translate') {
+    const right = randomInt(-5, 5);
+    const up = randomInt(-5, 5);
+    const answer = `(${x1 + right}, ${y1 + up})`;
+    return q('coordinate_translation', `Point A(${x1}, ${y1}) is translated by (${right}, ${up}). What is the image of A?`, wordOptions(answer, [answer, `(${x1 - right}, ${y1 + up})`, `(${x1 + up}, ${y1 + right})`, `(${x1 + right}, ${y1 - up})`]), answer, `Add the translation to the coordinates: (${x1} + ${right}, ${y1} + ${up}) = ${answer}.`, 45);
+  }
+  const answer = `(${(x1 + x2) / 2}, ${(y1 + y2) / 2})`;
+  return q('coordinate_midpoint', `Find the midpoint of (${x1}, ${y1}) and (${x2}, ${y2}).`, wordOptions(answer, [answer, `(${x1 + x2}, ${y1 + y2})`, `(${x2 - x1}, ${y2 - y1})`, `(${x1}, ${y2})`]), answer, `Average the x-coordinates and y-coordinates: ${answer}.`, 55);
+};
+
+const genSpatial2DStage = (difficulty) => {
+  const mode = pick(['classify', 'symmetry', 'scale']);
+  if (mode === 'symmetry') {
+    const item = pick([
+      { shape: 'square', lines: 4 },
+      { shape: 'rectangle', lines: 2 },
+      { shape: 'equilateral triangle', lines: 3 },
+      { shape: 'regular pentagon', lines: 5 },
+    ]);
+    return q('symmetry_lines', `How many lines of symmetry does a ${item.shape} have?`, getUniqueOptions(item.lines, [item.lines - 1, item.lines + 1, item.lines * 2], 0, 10), item.lines, `A ${item.shape} has ${item.lines} line${item.lines === 1 ? '' : 's'} of symmetry.`, 35);
+  }
+  if (mode === 'scale') {
+    const length = randomInt(2, 9);
+    const factor = randomInt(2, difficulty === 'hard' ? 5 : 3);
+    const answer = length * factor;
+    return q('enlargement_scale', `A side length of ${length} cm is enlarged by scale factor ${factor}. What is the new length?`, getUniqueOptions(answer, [length + factor, answer + factor, answer - factor], 0, 60), answer, `Multiply by the scale factor: ${length} x ${factor} = ${answer} cm.`, 35);
+  }
+  const shape = pick([
+    { name: 'scalene triangle', property: 'no equal sides' },
+    { name: 'isosceles triangle', property: 'two equal sides' },
+    { name: 'parallelogram', property: 'opposite sides are parallel' },
+    { name: 'rhombus', property: 'four equal sides' },
+  ]);
+  return q('shape_classification_stage', `Which shape has this property: ${shape.property}?`, wordOptions(shape.name, ['scalene triangle', 'isosceles triangle', 'parallelogram', 'rhombus']), shape.name, `A ${shape.name} has ${shape.property}.`, 35);
+};
+
+const genSpatial3DStage = (difficulty) => {
+  const mode = pick(['property', 'net', 'volume']);
+  if (mode === 'volume') {
+    const l = randomInt(3, difficulty === 'hard' ? 15 : 8);
+    const w = randomInt(2, difficulty === 'hard' ? 10 : 6);
+    const h = randomInt(2, difficulty === 'hard' ? 9 : 5);
+    const answer = l * w * h;
+    return q('volume_rectangular_prism', `A rectangular prism is ${l} cm by ${w} cm by ${h} cm. What is its volume?`, getUniqueOptions(answer, [l * w, 2 * (l*w + l*h + w*h), answer + l], 0, 2000), answer, `Volume = length x width x height = ${l} x ${w} x ${h} = ${answer} cm^3.`, 55);
+  }
+  if (mode === 'net') {
+    const answer = 'cube';
+    return q('net_3d_object', `A net is made from 6 equal squares. Which 3D object can it form?`, ['cube', 'cone', 'sphere', 'cylinder'], answer, `A cube has 6 square faces, so its net can be made from 6 equal squares.`, 35);
+  }
+  const prism = pick([
+    { name: 'cube', faces: 6, edges: 12, vertices: 8 },
+    { name: 'rectangular prism', faces: 6, edges: 12, vertices: 8 },
+    { name: 'triangular prism', faces: 5, edges: 9, vertices: 6 },
+    { name: 'square pyramid', faces: 5, edges: 8, vertices: 5 },
+  ]);
+  const ask = pick(['faces', 'edges', 'vertices']);
+  const answer = prism[ask];
+  return q('solid_properties_stage', `How many ${ask} does a ${prism.name} have?`, getUniqueOptions(answer, [answer - 1, answer + 1, prism.faces], 0, 15), answer, `A ${prism.name} has ${prism.faces} faces, ${prism.edges} edges and ${prism.vertices} vertices.`, 35);
+};
+
+const genDataStage = (difficulty) => {
+  const scale = pick(difficulty === 'easy' ? [2, 5] : [2, 5, 10, 20]);
+  const cats = randomInt(2, 8);
+  const dogs = randomInt(2, 8);
+  const answer = (cats + dogs) * scale;
+  return q('scaled_data_display', `In a column graph, each unit represents ${scale} students. Cats have ${cats} units and dogs have ${dogs} units. How many students is that altogether?`, getUniqueOptions(answer, [cats + dogs, answer - scale, answer + scale], 0, 400), answer, `Total units = ${cats + dogs}. Each unit is worth ${scale}, so ${cats + dogs} x ${scale} = ${answer}.`, 45);
+};
+
+const genChanceStage = (difficulty) => {
+  const red = randomInt(1, 6);
+  const blue = randomInt(1, 6);
+  const total = red + blue;
+  const askRed = Math.random() > 0.5;
+  const answer = simplifiedFraction(askRed ? red : blue, total);
+  return q('probability_fraction', `A bag has ${red} red counters and ${blue} blue counters. What is the probability of choosing ${askRed ? 'red' : 'blue'}?`, wordOptions(answer, [answer, `${askRed ? blue : red}/${total}`, `${askRed ? red : blue}/${Math.max(red, blue)}`, `${total}/${askRed ? red : blue}`]), answer, `Probability = favourable outcomes / total outcomes = ${askRed ? red : blue}/${total} = ${answer}.`, 45);
+};
+
+const genProblemSolvingStage = (difficulty) => {
+  const types = ['rate', 'multi_step_money', 'fraction_left'];
+  const type = pick(types);
+  if (type === 'fraction_left') {
+    const total = randomInt(4, 18) * 6;
+    const numerator = pick([1, 2, 3]);
+    const denominator = 6;
+    const used = total * numerator / denominator;
+    const answer = total - used;
+    return q('problem_solving_fraction', `A tank holds ${total} L. ${numerator}/${denominator} of the water is used. How many litres are left?`, getUniqueOptions(answer, [used, answer + 6, answer - 6], 0, total), answer, `${numerator}/${denominator} of ${total} is ${used}. Litres left = ${total} - ${used} = ${answer}.`, 75);
+  }
+  if (type === 'multi_step_money') {
+    const price = randomInt(8, 40) * 100;
+    const qty = randomInt(2, difficulty === 'hard' ? 8 : 5);
+    const paid = Math.ceil((price * qty + randomInt(200, 1000)) / 500) * 500;
+    const answer = paid - price * qty;
+    return q('problem_solving_money', `${qty} notebooks cost ${money(price)} each. You pay ${money(paid)}. How much change should you receive?`, wordOptions(money(answer), [money(answer), money(price * qty), money(paid - price), money(answer + 100)]), money(answer), `Cost = ${qty} x ${money(price)} = ${money(price * qty)}. Change = ${money(paid)} - ${money(price * qty)} = ${money(answer)}.`, 75);
+  }
+  const time = randomInt(2, 6);
+  const speed = randomInt(6, 30) * 5;
+  const distance = speed * time;
+  const answer = distance / time;
+  return q('problem_solving_rate', `A cyclist travels ${distance} km in ${time} hours at a constant speed. What is the speed in km/h?`, getUniqueOptions(answer, [answer + 5, answer - 5, distance + time], 0, 200), answer, `Speed = distance ÷ time = ${distance} ÷ ${time} = ${answer} km/h.`, 60);
+};
+
 const genAlgebraYear11 = (difficulty) => {
   const type = randomInt(1, 3);
   if (type === 1) {
@@ -814,7 +1151,93 @@ const GENERATORS_BY_TYPE = {
   coin_equal_likely: genCoinEqualLikely,
   coin_prediction: genCoinPrediction,
   most_likely: genMostLikely,
+  stage_place_value: genStagePlaceValue,
+  stage_rounding: genStageRounding,
+  large_add_subtract: genLargeAddSubtract,
+  money_budget: genMoneyBudget,
+  multiplicative_relations: genMultiplicationDivision,
+  multiplicative_word_problem: genMultiplicationDivision,
+  order_operations: genOrderOperations,
+  fraction_quantity: genFractionStage,
+  equivalent_fractions: genFractionStage,
+  fraction_add_subtract: genFractionStage,
+  decimal_place_value: genDecimalPercent,
+  percent_quantity: genDecimalPercent,
+  fraction_decimal_percent: genDecimalPercent,
+  integers_number_line: genIntegerNumberLine,
+  metric_length: genMeasurementStage,
+  metric_mass: genMeasurementStage,
+  duration_time: genMeasurementStage,
+  temperature_difference: genTemperatureStage,
+  temperature_compare: genTemperatureStage,
+  perimeter_rectangle: genPerimeterArea,
+  area_rectangle: genPerimeterArea,
+  area_triangle: genPerimeterArea,
+  area_composite: genPerimeterArea,
+  angles_straight_line: genAnglesStage,
+  angles_at_point: genAnglesStage,
+  angles_triangle: genAnglesStage,
+  coordinate_midpoint: genCoordinateStage,
+  coordinate_gradient: genCoordinateStage,
+  coordinate_translation: genCoordinateStage,
+  shape_classification_stage: genSpatial2DStage,
+  symmetry_lines: genSpatial2DStage,
+  enlargement_scale: genSpatial2DStage,
+  solid_properties_stage: genSpatial3DStage,
+  net_3d_object: genSpatial3DStage,
+  volume_rectangular_prism: genSpatial3DStage,
+  scaled_data_display: genDataStage,
+  probability_fraction: genChanceStage,
+  problem_solving_fraction: genProblemSolvingStage,
+  problem_solving_money: genProblemSolvingStage,
+  problem_solving_rate: genProblemSolvingStage,
   generic_year1: genGeneric,
+};
+
+const inferPrimaryGeneratorTypes = ({ year, chapterTitle = '', topicTitle = '', topicGroup = '' }) => {
+  if (!['Year 2', 'Year 3', 'Year 4', 'Year 5', 'Year 6'].includes(year)) return null;
+
+  const text = `${chapterTitle} ${topicTitle} ${topicGroup}`.toLowerCase();
+  if (year === 'Year 2') {
+    if (/whole number|place value|count|partition|round/.test(text)) return ['place_value', 'skip_counting', 'number_line', 'compare_numbers', 'stage_rounding'];
+    if (/add|subtract|additive|money|unknown|inverse|fact/.test(text)) return ['addition_within_20', 'subtraction_within_20', 'missing_addend', 'word_problem_add_subtract', 'money_change'];
+    if (/multiplication|division|equal group|array|skip/.test(text)) return ['skip_counting', 'multiplicative_word_problem', 'number_pattern'];
+    if (/fraction|half|quarter|equal part/.test(text)) return ['fraction_half_quarter', 'equal_parts'];
+    if (/length|area|volume|capacity|mass/.test(text)) return ['length_compare', 'length_order', 'informal_units', 'capacity_compare'];
+    if (/time|calendar/.test(text)) return ['read_clock', 'calendar_order', 'activity_duration'];
+    if (/2d|shape|position|grid|3d|object/.test(text)) return ['shape_2d', 'shape_true_false', 'shape_3d', 'grid_map'];
+    if (/data|graph|table|tally/.test(text)) return ['tally_chart', 'graph_reading', 'data_compare_more', 'graph_tallest_shortest'];
+    if (/chance|outcome|likely|unlikely/.test(text)) return ['likelihood_language', 'likely_unlikely', 'simple_experiment', 'most_likely'];
+    return ['addition_within_20', 'subtraction_within_20', 'place_value'];
+  }
+
+  const types = [];
+  const add = (...items) => items.forEach(item => {
+    if (!types.includes(item)) types.push(item);
+  });
+  const isFractionTopic = /fraction|mixed numeral|improper|equivalent/.test(text);
+
+  if (/problem|rate|ratio|real[- ]?life/.test(text)) add('problem_solving_money', 'problem_solving_fraction', 'problem_solving_rate');
+  if (/place value|whole number|representing numbers|millions|thousands|\bpartition\b|\bregroup\b|expanded|\bround\b|order numbers|compare numbers/.test(text)) add('stage_place_value', 'stage_rounding', 'order_numbers', 'compare_numbers');
+  if (/decimal|hundredth|thousandth/.test(text)) add('decimal_place_value', 'fraction_decimal_percent', 'stage_place_value');
+  if (/percentage|percent|discount/.test(text)) add('percent_quantity', 'fraction_decimal_percent', 'money_budget');
+  if (/negative|integer/.test(text)) add('integers_number_line', 'number_line');
+  if (isFractionTopic) add('fraction_quantity', 'equivalent_fractions', 'fraction_add_subtract');
+  if (!isFractionTopic && /additive|addition|subtraction|add and subtract|budget|money/.test(text)) add('large_add_subtract', 'money_budget', 'equals_balance');
+  if (/multiplicative|\bmultiplication\b|\bdivision\b|\bmultiply\b|\bdivide\b|\bfactor\b|\bmultiple\b|bodmas|order of operations/.test(text)) add('multiplicative_relations', 'multiplicative_word_problem', 'order_operations');
+  if (/length|perimeter|kilometre|metre|millimetre|centimetre|\bmetric\b/.test(text)) add('metric_length', 'perimeter_rectangle', 'problem_solving_rate');
+  if (/temperature|celsius|thermometer/.test(text)) add('temperature_difference', 'temperature_compare');
+  if (/mass|\bgrams?\b|\bkilograms?\b|capacity|litre|millilitre|volume/.test(text)) add('metric_mass', 'volume_rectangular_prism', 'metric_length');
+  if (/time|duration|timetable|24-hour|timezone|analogue|digital/.test(text)) add('duration_time', 'read_clock');
+  if (/angle|turn|straight line|point|degrees|protractor/.test(text)) add('angles_straight_line', 'angles_triangle', 'angles_at_point');
+  if (/cartesian|coordinate|grid reference|grid map|position/.test(text)) add('coordinate_translation', 'coordinate_midpoint', 'coordinate_gradient', 'grid_map');
+  if (/area|hectare|square|parallelogram|composite/.test(text)) add('area_rectangle', 'area_triangle', 'area_composite', 'perimeter_rectangle');
+  if (/2d|shape|triangle|quadrilateral|symmetry|tessellat|transform|reflect|translate|rotate|enlargement|similarity/.test(text)) add('shape_classification_stage', 'symmetry_lines', 'enlargement_scale');
+  if (/3d|prism|pyramid|net|cube|solid/.test(text)) add('solid_properties_stage', 'net_3d_object', 'volume_rectangular_prism');
+  if (/data|graph|table|plot|chart|display/.test(text)) add('scaled_data_display', 'data_compare_more', 'graph_reading');
+  if (/chance|probability|outcome|random|expected|observed/.test(text)) add('probability_fraction', 'most_likely', 'likelihood_language');
+
+  return types.length ? types : ['stage_place_value', 'large_add_subtract', 'multiplicative_relations', 'problem_solving_money'];
 };
 
 const GROUP_GENERATOR_MAP = {
