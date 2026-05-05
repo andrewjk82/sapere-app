@@ -1199,6 +1199,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                         <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5 }}>
                           {idx + 1}. <MathView content={questionText} />
                         </div>
+                        
+                        {/* Display Working Out / Handwritten notes */}
+                        {result?.workingOut && (
+                          <div style={{ marginBottom: '16px', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff' }}>
+                            <div style={{ padding: '8px 12px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Working Out</div>
+                            <img src={result.workingOut} alt="Student Working Out" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#fff' }} />
+                          </div>
+                        )}
                         {q.questionImage && (
                           <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '180px', objectFit: 'contain', margin: '0 0 16px', borderRadius: '14px', background: '#fff' }} />
                         )}

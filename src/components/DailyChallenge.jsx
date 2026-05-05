@@ -790,6 +790,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setSelectedOptionIdx(null);
     setIsCorrect(null);
     setShowHint(false);
+    // Clear the canvas for the new question if it exists
+    if (canvasRef.current) {
+      try { canvasRef.current.clear(); } catch(e) {}
+    }
   };
 
   // Timer logic
@@ -925,14 +929,20 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     let correct = false;
     let canvasDataUrl = null;
 
+    // Capture canvas for ANY question if split screen is active (Senior Students)
+    if (showSplitScreen && canvasRef.current) {
+      try {
+        canvasDataUrl = await canvasRef.current.exportImage();
+      } catch (err) {
+        console.error("Failed to export working out image", err);
+      }
+    }
+
     if (isGraphSketch) {
       setIsSubmittingCanvas(true);
-      try {
-        if (canvasRef.current) {
-          canvasDataUrl = await canvasRef.current.exportImage();
-        }
-      } catch (err) {
-        console.error("Failed to export drawing for review", err);
+      // If not already captured by showSplitScreen check
+      if (!canvasDataUrl && canvasRef.current) {
+        try { canvasDataUrl = await canvasRef.current.exportImage(); } catch(e){}
       }
       correct = false; // Pending review
     } else if (isShortAnswer) {
@@ -1001,6 +1011,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         correct,
         isPending: isGraphSketch,
         isManual: Boolean(currentQ?.isManual),
+        workingOut: canvasDataUrl, // Store the handwritten work
       };
       return newResults;
     });
@@ -1285,6 +1296,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                             <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: q.isManual ? '80px' : '0' }}>
                               {idx + 1}. <MathView content={questionText} />
                             </div>
+
+                            {/* Display Working Out / Handwritten notes */}
+                            {result?.workingOut && (
+                              <div style={{ marginBottom: '16px', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff' }}>
+                                <div style={{ padding: '8px 12px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Working Out</div>
+                                <img src={result.workingOut} alt="Student Working Out" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#fff' }} />
+                              </div>
+                            )}
                             <div style={{ display: 'grid', gap: '8px' }}>
                               {getOptions(q).map((opt, i) => {
                                 if (!opt) return null;
