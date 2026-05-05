@@ -2238,6 +2238,22 @@ export const CURRICULUM_DATA = {
     ],
     'Extension 1': [
       {
+        id: 'y12e1-1',
+        title: 'Chapter 1: Sequences and series',
+        modules: 9,
+        topics: [
+          { id: 'y12e1-1A', code: '1A', title: 'Sequences and how to specify them' },
+          { id: 'y12e1-1B', code: '1B', title: 'Arithmetic sequences' },
+          { id: 'y12e1-1C', code: '1C', title: 'Geometric sequences' },
+          { id: 'y12e1-1D', code: '1D', title: 'Solving problems involving APs and GPs' },
+          { id: 'y12e1-1E', code: '1E', title: 'Adding up the terms of a sequence' },
+          { id: 'y12e1-1F', code: '1F', title: 'Summing an arithmetic series' },
+          { id: 'y12e1-1G', code: '1G', title: 'Summing a geometric series' },
+          { id: 'y12e1-1H', code: '1H', title: 'The limiting sum of a geometric series' },
+          { id: 'y12e1-1I', code: '1I', title: 'Recurring decimals and geometric series' }
+        ]
+      },
+      {
         id: 'y12e1-2',
         title: 'Chapter 2: Mathematical induction',
         modules: 2,
@@ -2264,6 +2280,69 @@ export const CURRICULUM_DATA = {
         ]
       },
       {
+        id: 'y12e1-4',
+        title: 'Chapter 4: Curve-sketching using the derivative',
+        modules: 10,
+        topics: [
+          { id: 'y12e1-4A', code: '4A', title: 'Increasing, decreasing and stationary at a point' },
+          { id: 'y12e1-4B', code: '4B', title: 'Stationary points and turning points' },
+          { id: 'y12e1-4C', code: '4C', title: 'Some less familiar curves' },
+          { id: 'y12e1-4D', code: '4D', title: 'Second and higher derivatives' },
+          { id: 'y12e1-4E', code: '4E', title: 'Concavity and points of inflection' },
+          { id: 'y12e1-4F', code: '4F', title: 'Systematic curve sketching with the derivative' },
+          { id: 'y12e1-4G', code: '4G', title: 'Global maximum and minimum' },
+          { id: 'y12e1-4H', code: '4H', title: 'Applications of maximisation and minimisation' },
+          { id: 'y12e1-4I', code: '4I', title: 'Maximisation and minimisation in geometry' },
+          { id: 'y12e1-4J', code: '4J', title: 'Primitive functions' }
+        ]
+      },
+      {
+        id: 'y12e1-5',
+        title: 'Chapter 5: Integration',
+        modules: 9,
+        topics: [
+          { id: 'y12e1-5A', code: '5A', title: 'Areas and the definite integral' },
+          { id: 'y12e1-5B', code: '5B', title: 'The fundamental theorem of calculus' },
+          { id: 'y12e1-5C', code: '5C', title: 'The definite integral and its properties' },
+          { id: 'y12e1-5D', code: '5D', title: 'Proving the fundamental theorem' },
+          { id: 'y12e1-5E', code: '5E', title: 'The indefinite integral' },
+          { id: 'y12e1-5F', code: '5F', title: 'Finding areas by integration' },
+          { id: 'y12e1-5G', code: '5G', title: 'Areas of compound regions' },
+          { id: 'y12e1-5H', code: '5H', title: 'The trapezoidal rule' },
+          { id: 'y12e1-5I', code: '5I', title: 'The reverse chain rule' }
+        ]
+      },
+      {
+        id: 'y12e1-6',
+        title: 'Chapter 6: The exponential and logarithmic functions',
+        modules: 11,
+        topics: [
+          { id: 'y12e1-6A', code: '6A', title: 'Review of exponential functions base e' },
+          { id: 'y12e1-6B', code: '6B', title: 'Differentiation of exponential functions' },
+          { id: 'y12e1-6C', code: '6C', title: 'Applications of differentiation' },
+          { id: 'y12e1-6D', code: '6D', title: 'Integration of exponential functions' },
+          { id: 'y12e1-6E', code: '6E', title: 'Applications of integration' },
+          { id: 'y12e1-6F', code: '6F', title: 'Review of logarithmic functions' },
+          { id: 'y12e1-6G', code: '6G', title: 'Differentiation of logarithmic functions' },
+          { id: 'y12e1-6H', code: '6H', title: 'Applications of differentiation of log_e x' },
+          { id: 'y12e1-6I', code: '6I', title: 'Integration of the reciprocal function' },
+          { id: 'y12e1-6J', code: '6J', title: 'Applications of integration of 1/x' },
+          { id: 'y12e1-6K', code: '6K', title: 'Calculus with other bases' }
+        ]
+      },
+      {
+        id: 'y12e1-7',
+        title: 'Chapter 7: The trigonometric functions',
+        modules: 5,
+        topics: [
+          { id: 'y12e1-7A', code: '7A', title: 'The behaviour of sin x near the origin' },
+          { id: 'y12e1-7B', code: '7B', title: 'Differentiating the trigonometric functions' },
+          { id: 'y12e1-7C', code: '7C', title: 'Applications of differentiation' },
+          { id: 'y12e1-7D', code: '7D', title: 'Integrating the trigonometric functions' },
+          { id: 'y12e1-7E', code: '7E', title: 'Applications of integration' }
+        ]
+      },
+      {
         id: 'y12e1-8',
         title: 'Chapter 8: Vectors',
         modules: 6,
@@ -2274,6 +2353,19 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-8D', code: '8D', title: 'Geometric problems' },
           { id: 'y12e1-8E', code: '8E', title: 'Projections' },
           { id: 'y12e1-8F', code: '8F', title: 'Applications to physical situations' }
+        ]
+      },
+      {
+        id: 'y12e1-9',
+        title: 'Chapter 9: Motion and rates',
+        modules: 6,
+        topics: [
+          { id: 'y12e1-9A', code: '9A', title: 'Average velocity and speed' },
+          { id: 'y12e1-9B', code: '9B', title: 'Velocity and acceleration as derivatives' },
+          { id: 'y12e1-9C', code: '9C', title: 'Integrating with respect to time' },
+          { id: 'y12e1-9D', code: '9D', title: 'Rates and differentiation' },
+          { id: 'y12e1-9E', code: '9E', title: 'Review of related rates' },
+          { id: 'y12e1-9F', code: '9F', title: 'Rates and integration' }
         ]
       },
       {
@@ -2318,6 +2410,45 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-13C', code: '13C', title: 'Separable differentiable equations' },
           { id: 'y12e1-13D', code: '13D', title: "y' = g(y) and the logistic equation" },
           { id: 'y12e1-13E', code: '13E', title: 'Applications of differential equations' }
+        ]
+      },
+      {
+        id: 'y12e1-14',
+        title: 'Chapter 14: Series and finance',
+        modules: 5,
+        topics: [
+          { id: 'y12e1-14A', code: '14A', title: 'Applications of APs and GPs' },
+          { id: 'y12e1-14B', code: '14B', title: 'The use of logarithms with GPs' },
+          { id: 'y12e1-14C', code: '14C', title: 'Simple and compound interest' },
+          { id: 'y12e1-14D', code: '14D', title: 'Investing money by regular instalments' },
+          { id: 'y12e1-14E', code: '14E', title: 'Paying off a loan' }
+        ]
+      },
+      {
+        id: 'y12e1-15',
+        title: 'Chapter 15: Displaying and interpreting data',
+        modules: 6,
+        topics: [
+          { id: 'y12e1-15A', code: '15A', title: 'Displaying data' },
+          { id: 'y12e1-15B', code: '15B', title: 'Grouped data and histograms' },
+          { id: 'y12e1-15C', code: '15C', title: 'Quartiles and interquartile range' },
+          { id: 'y12e1-15D', code: '15D', title: 'Bivariate data' },
+          { id: 'y12e1-15E', code: '15E', title: 'Formulae for correlation and regression' },
+          { id: 'y12e1-15F', code: '15F', title: 'Using technology with bivariate data' }
+        ]
+      },
+      {
+        id: 'y12e1-16',
+        title: 'Chapter 16: Continuous probability distributions',
+        modules: 7,
+        topics: [
+          { id: 'y12e1-16A', code: '16A', title: 'Relative frequency' },
+          { id: 'y12e1-16B', code: '16B', title: 'Continuous distributions' },
+          { id: 'y12e1-16C', code: '16C', title: 'Mean and variance of a distribution' },
+          { id: 'y12e1-16D', code: '16D', title: 'The standard normal distribution' },
+          { id: 'y12e1-16E', code: '16E', title: 'General normal distributions' },
+          { id: 'y12e1-16F', code: '16F', title: 'Applications of the normal distribution' },
+          { id: 'y12e1-16G', code: '16G', title: 'Investigations using the normal distribution' }
         ]
       },
       {
