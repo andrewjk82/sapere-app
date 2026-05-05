@@ -46,8 +46,14 @@ const isIOSStandaloneApp = () => {
   );
 };
 
-const OpeningIntro = ({ name = 'Andrew', onDone }) => {
-  const greeting = 'Good morning.';
+const getTimeGreeting = () => {
+  const hour = new Date().getHours();
+  if (hour < 12) return 'Good morning';
+  if (hour < 18) return 'Good afternoon';
+  return 'Good evening';
+};
+
+const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) => {
   const message = `${greeting} ${name}`;
   const renderCharacters = (text, prefix = '') => text.split('').map((char, index) => (
     <motion.span
@@ -83,7 +89,7 @@ const OpeningIntro = ({ name = 'Andrew', onDone }) => {
           hidden: {},
           visible: {
             transition: {
-              staggerChildren: 0.085,
+              staggerChildren: 0.095,
               delayChildren: 0.25,
             },
           },
@@ -270,6 +276,8 @@ function App() {
     return rawName ? rawName.charAt(0).toUpperCase() + rawName.slice(1) : 'Andrew';
   }, [profile?.displayName, profile?.firstName, user?.displayName, user?.email]);
 
+  const introGreeting = useMemo(() => getTimeGreeting(), []);
+
   useEffect(() => {
     if (!user?.uid) {
       setShowOpeningIntro(false);
@@ -288,12 +296,12 @@ function App() {
 
   useEffect(() => {
     if (!showOpeningIntro) return undefined;
-    const messageDuration = (`Good morning. ${introName}`.length * 85) + 1400;
+    const messageDuration = (`${introGreeting} ${introName}`.length * 95) + 2400;
     const timer = window.setTimeout(() => {
       setOpeningIntroVisible(false);
     }, messageDuration);
     return () => window.clearTimeout(timer);
-  }, [introName, showOpeningIntro]);
+  }, [introGreeting, introName, showOpeningIntro]);
 
   useEffect(() => {
     if (user) {
@@ -494,6 +502,7 @@ function App() {
         {showOpeningIntro && openingIntroVisible && (
           <OpeningIntro
             name={introName}
+            greeting={introGreeting}
             onDone={() => setShowOpeningIntro(false)}
           />
         )}
