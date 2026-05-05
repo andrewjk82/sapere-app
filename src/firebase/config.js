@@ -46,7 +46,7 @@ const getMessagingServiceWorkerRegistration = async () => {
   if (existingRegistration?.active?.scriptURL?.includes('/firebase-messaging-sw.js')) {
     return existingRegistration;
   }
-  return navigator.serviceWorker.register('/firebase-messaging-sw.js');
+  return navigator.serviceWorker.register('/firebase-messaging-sw.js', { updateViaCache: 'none' });
 };
 
 /**

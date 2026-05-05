@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
@@ -36,11 +36,22 @@ const isNewer = (cloud, local) => {
   return false;
 };
 
+const isIOSStandaloneApp = () => {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
+  const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  return isiOS && (
+    window.matchMedia?.('(display-mode: standalone)').matches
+    || window.navigator?.standalone === true
+  );
+};
+
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout } = useAuth();
   const { showToast } = useToast();
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
+  const [cloudAppVersion, setCloudAppVersion] = useState('');
   const [isLocked, setIsLocked] = useState(false);
   
   // Real-time Version Check
@@ -49,6 +60,7 @@ function App() {
     return onSnapshot(versionRef, (snap) => {
       if (snap.exists()) {
         const cloudVersion = snap.data().version;
+        setCloudAppVersion(cloudVersion || '');
         // Temporarily disable strict version checking to prevent infinite update loops
         if (isNewer(cloudVersion, CURRENT_APP_VERSION)) {
           setNewVersionAvailable(true);
@@ -57,7 +69,7 @@ function App() {
     });
   }, []);
 
-  const handleUpdateApp = () => {
+  const handleUpdateApp = useCallback(() => {
     // Robustly clear Service Worker cache and force fetch new version
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function(registrations) {
@@ -71,7 +83,17 @@ function App() {
     } else {
       window.location.href = window.location.pathname + '?v=' + new Date().getTime();
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    if (!newVersionAvailable || !cloudAppVersion || isLocked || !isIOSStandaloneApp()) return undefined;
+    const updateKey = `sapere-ios-auto-update-${cloudAppVersion}`;
+    if (sessionStorage.getItem(updateKey)) return undefined;
+    sessionStorage.setItem(updateKey, '1');
+    showToast('A new version is ready. Updating now...', 'info', 2500);
+    const timer = window.setTimeout(handleUpdateApp, 1200);
+    return () => window.clearTimeout(timer);
+  }, [cloudAppVersion, handleUpdateApp, isLocked, newVersionAvailable, showToast]);
   
   // Request notification permission on login
   useEffect(() => {
@@ -615,11 +637,22 @@ function App() {
 
           <motion.div
             className="mobile-user-capsule__version"
+            role="button"
+            tabIndex={0}
+            title="Refresh app"
+            onClick={handleUpdateApp}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                handleUpdateApp();
+              }
+            }}
             initial={{ y: 0, opacity: 1 }}
             animate={{
               y: (isVisible && !isLocked) ? 0 : -100,
               opacity: (isVisible && !isLocked) ? 1 : 0
             }}
+            style={{ cursor: 'pointer' }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             v{CURRENT_APP_VERSION}
