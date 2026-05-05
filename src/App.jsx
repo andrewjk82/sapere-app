@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
+import { importYear11Ch3Questions } from './scripts/importYear11Ch3';
 import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
@@ -113,6 +114,12 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) =>
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout } = useAuth();
+  
+  useEffect(() => {
+    if (isAdmin && user) {
+      importYear11Ch3Questions();
+    }
+  }, [isAdmin, user]);
   const { showToast } = useToast();
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');

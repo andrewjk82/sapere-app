@@ -201,10 +201,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     if (currentYear > lastPromoted) {
       const yearStr = profile.year;
       if (yearStr) {
-        const match = yearStr.match(/\d+/);
+        const safeYearStr = String(yearStr);
+        const match = safeYearStr.match(/\d+/);
         if (match) {
           const num = parseInt(match[0], 10);
-          const nextYear = yearStr.replace(match[0], (num + 1).toString());
+          const nextYear = safeYearStr.replace(match[0], (num + 1).toString());
           
           setDoc(doc(db, 'users', user.uid), { 
             year: nextYear, 

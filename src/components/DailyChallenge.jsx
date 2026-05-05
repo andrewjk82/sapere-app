@@ -932,6 +932,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             topicTitle: currentQ?.topicTitle || '',
             challengeType: challengeType,
             totalQuestions: TOTAL_QUESTIONS,
+            correctAnswer: currentQ?.answer || '',
+            solution: currentQ?.solution || ''
           });
         }
       } catch (err) {
@@ -1910,7 +1912,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                         <p style={{ margin: 0, color: '#b91c1c', fontSize: '0.95rem', fontWeight: 800 }}>
                           <span style={{ opacity: 0.7, marginRight: '8px' }}>Correct Answer:</span>
                           <MathView content={
-                            questions[currentIdx].isManual 
+                            questions[currentIdx].type === 'multiple_choice' && questions[currentIdx].isManual
                               ? getOptionText(getOptions(questions[currentIdx])[parseInt(questions[currentIdx].answer)]) 
                               : questions[currentIdx].answer
                           } />

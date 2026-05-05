@@ -13,6 +13,7 @@ import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
+import { importYear11Ch3Questions } from '../scripts/importYear11Ch3';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 
@@ -217,6 +218,22 @@ const Curriculum = () => {
     }
   };
 
+  const handleSeedCh3Questions = async () => {
+    if (!window.confirm("Add Year 11 Chapter 3 (Functions & Graphs) questions? This will skip if they already exist.")) return;
+    setIsMigrating(true);
+    try {
+      await importYear11Ch3Questions();
+      showToast("Successfully processed Ch3 questions!", 'success');
+      // Trigger a re-fetch of counts
+      setQuestionCounts(prev => ({...prev})); 
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to import Ch3 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -351,6 +368,15 @@ const Curriculum = () => {
                     style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
                   >
                     {isMigrating ? 'Updating Surds...' : '⚠️ Seed Ch2 Surds'}
+                  </button>
+
+                  <button 
+                    onClick={handleSeedCh3Questions}
+                    disabled={isMigrating}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #fecdd3', fontWeight: 800 }}
+                  >
+                    {isMigrating ? 'Importing Ch3...' : '⚠️ Seed Ch3 Functions'}
                   </button>
 
                   <button 
