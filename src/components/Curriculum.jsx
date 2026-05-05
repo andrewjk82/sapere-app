@@ -217,6 +217,46 @@ const Curriculum = () => {
     }
   };
 
+  const handleSeedCurveQuestion = async () => {
+    if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, addDoc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+      
+      await addDoc(collRef, {
+        chapterId: 'y11a-9',
+        chapterTitle: 'Chapter 9: Differentiation',
+        topicId: 'y11a-9A',
+        topicCode: '9A',
+        topicTitle: 'Tangents and the derivative',
+        isManual: true,
+        title: "Consider a curve with the following properties...",
+        question: "Consider a curve with the following properties:\n\n$$ g(x) \\text{ is odd.} $$\n$$ g(5) = 0 \\text{ and } g'(2) = 0. $$\n$$ g'(x) > 0 \\text{ for } x > 2. $$\n\nWhich of the following could be the graph of $$ y = g(x) $$?",
+        difficulty: 'hard',
+        timeLimit: 120,
+        type: 'multiple_choice',
+        options: [
+          { text: "A", imageUrl: "/images/questions/q_curve_A.png" },
+          { text: "B", imageUrl: "/images/questions/q_curve_B.png" },
+          { text: "C", imageUrl: "/images/questions/q_curve_C.png" },
+          { text: "D", imageUrl: "/images/questions/q_curve_D.png" }
+        ],
+        answer: "2",
+        hint: "An odd function is symmetric about the origin. Check the slope (gradient) after x=2.",
+        solution: "1. **g(x) is odd**: The graph must have rotational symmetry of 180° about the origin. Graph B and D are even, so they are eliminated.\n2. **g(5) = 0**: The curve passes through the x-axis at x = 5.\n3. **g'(2) = 0**: The curve has a stationary point at x = 2.\n4. **g'(x) > 0 for x > 2**: The curve must be increasing for x > 2. In Graph A, after x=2, the curve goes downwards ($$ g'(x) < 0 $$). In Graph C, after x=2, the curve goes upwards ($$ g'(x) > 0 $$).\n\nTherefore, Graph C is correct.",
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp()
+      });
+      showToast("Successfully added curve question!", 'success');
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to add question.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSyncSelectedYear = async () => {
     const isSenior = ['Year 11', 'Year 12'].includes(selectedYear);
     const data = isSenior 
@@ -311,6 +351,15 @@ const Curriculum = () => {
                     style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
                   >
                     {isMigrating ? 'Updating Surds...' : '⚠️ Seed Ch2 Surds'}
+                  </button>
+
+                  <button 
+                    onClick={handleSeedCurveQuestion}
+                    disabled={isMigrating}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #a7f3d0', fontWeight: 800 }}
+                  >
+                    {isMigrating ? 'Adding Q...' : '⚠️ Add Curve Q'}
                   </button>
 
                   {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
