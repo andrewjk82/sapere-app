@@ -443,9 +443,116 @@ export const CURRICULUM_DATA = {
     }
   ],
   'Year 4': [
-    { id: 'y4-1', title: 'Large Numbers & Place Value', modules: 10 },
-    { id: 'y4-2', title: 'Fractions, Decimals & Percentages', modules: 12 },
-    { id: 'y4-3', title: 'Area & Perimeter', modules: 8 }
+    {
+      id: 'y4-rn',
+      title: 'Representing Numbers Using Place Value (B)',
+      modules: 6,
+      topics: [
+        { id: 'y4-rn-1', code: 'MA2-RN-01', title: 'Numbers to 6 digits: Apply place value to partition, regroup and rename numbers up to 6 digits; expanded notation' },
+        { id: 'y4-rn-2', code: 'MA2-RN-01', title: 'Tens of thousands: Order numbers in the thousands; recognise numbers 10, 100 or 1000 times as large' },
+        { id: 'y4-rn-3', code: 'MA2-RN-02', title: 'Rounding — advanced: Round to nearest ten thousand; target digit rounding strategy' },
+        { id: 'y4-rn-4', code: 'MA2-RN-01', title: 'Decimals — tenths: Extend place value to tenths; represent tenths on a number line' },
+        { id: 'y4-rn-5', code: 'MA2-RN-01', title: 'Decimals — hundredths: Place value to hundredths; hundredths on a number line; connect fractions and decimals' },
+        { id: 'y4-rn-6', code: 'MA2-RN-01', title: 'Multiply/divide by 10, 100, 1000: Recognise effect of multiplying and dividing whole numbers by powers of 10' }
+      ]
+    },
+    {
+      id: 'y4-ar',
+      title: 'Additive Relations (B)',
+      modules: 5,
+      topics: [
+        { id: 'y4-ar-1', code: 'MA2-AR-01', title: 'Regroup to 1000+: Partition, rearrange and regroup numbers to at least 1000 to solve additive problems' },
+        { id: 'y4-ar-2', code: 'MA2-AR-01', title: 'Efficient strategies: Turnarounds, friendly pairs, estimation; choose and apply strategies flexibly' },
+        { id: 'y4-ar-3', code: 'MA2-AR-01', title: 'Money and budgeting: Apply addition and subtraction to money and budgeting contexts' },
+        { id: 'y4-ar-4', code: 'MA2-AR-02', title: 'Inverse operations: Use inverse operations to check solutions; find unknown quantities in number sentences' },
+        { id: 'y4-ar-5', code: 'MA2-AR-02', title: 'Equivalent sentences: Complete number sentences involving additive relations; equivalent values' }
+      ]
+    },
+    {
+      id: 'y4-mr',
+      title: 'Multiplicative Relations (B)',
+      modules: 6,
+      topics: [
+        { id: 'y4-mr-1', code: 'MA2-MR-01', title: 'All multiplication facts to 10×10: Recall facts for 2, 3, 4, 5, 6, 8, 9 and 10; use known facts to find related facts' },
+        { id: 'y4-mr-2', code: 'MA2-MR-01', title: 'Area model: Use the structure of the area model to represent multiplication and division' },
+        { id: 'y4-mr-3', code: 'MA2-MR-01', title: 'Factors and multiples: Identify factors of numbers; investigate number sequences of related multiples' },
+        { id: 'y4-mr-4', code: 'MA2-MR-01', title: 'Multiples of 10: Operate with multiples of 10 using known number facts and strategies' },
+        { id: 'y4-mr-5', code: 'MA2-MR-02', title: 'All division facts to 10×10: Recall division facts for 2, 3, 4, 5, 6, 8, 9 and 10; inverse operations' },
+        { id: 'y4-mr-6', code: 'MA2-MR-02', title: 'Word problems: Represent and solve word problems with number sentences involving multiplication or division' }
+      ]
+    },
+    {
+      id: 'y4-pf',
+      title: 'Partitioned Fractions (B)',
+      modules: 4,
+      topics: [
+        { id: 'y4-pf-1', code: 'MA2-PF-01', title: 'Equivalent fractions: Model and identify equivalent fractions as lengths on a number line' },
+        { id: 'y4-pf-2', code: 'MA2-PF-01', title: 'Fractions greater than one: Represent fractional quantities equal to and greater than 1 whole' },
+        { id: 'y4-pf-3', code: 'MA2-PF-01', title: 'Mixed numerals: Name, record and represent mixed numerals (e.g. 2½); convert to and from improper fractions' },
+        { id: 'y4-pf-4', code: 'MA2-PF-01', title: 'Fractions as division: Apply understanding of fractions as division in problems' }
+      ]
+    },
+    {
+      id: 'y4-gm',
+      title: 'Geometric Measure (B)',
+      modules: 4,
+      topics: [
+        { id: 'y4-gm-1', code: 'MA2-GM-01', title: 'Perimeter: Measure and calculate perimeter of rectangles and irregular shapes using mm, cm and m' },
+        { id: 'y4-gm-2', code: 'MA2-GM-01', title: 'Millimetres: Measure with millimetres; convert between mm, cm and m using scaled instruments' },
+        { id: 'y4-gm-3', code: 'MA2-GM-02', title: 'Angles — compare: Compare and classify angles as acute, right, obtuse or straight' },
+        { id: 'y4-gm-4', code: 'MA2-GM-03', title: 'Grid maps — create: Create and interpret grid maps; use grid references and directional language to describe routes' }
+      ]
+    },
+    {
+      id: 'y4-2ds',
+      title: '2D Spatial Structure (B)',
+      modules: 3,
+      topics: [
+        { id: 'y4-2ds-1', code: 'MA2-2DS-01', title: 'Combine and split shapes: Create 2D shapes from combining and splitting common shapes; quadrilaterals' },
+        { id: 'y4-2ds-2', code: 'MA2-2DS-02', title: 'Symmetry and tessellation: Create symmetrical patterns and shapes; tessellate shapes' },
+        { id: 'y4-2ds-3', code: 'MA2-2DS-03', title: 'Area — grid structure: Measure areas of shapes and irregular shapes using a grid; compare surfaces using metric units' }
+      ]
+    },
+    {
+      id: 'y4-3ds',
+      title: '3D Spatial Structure (B)',
+      modules: 2,
+      topics: [
+        { id: 'y4-3ds-1', code: 'MA2-3DS-01', title: 'Nets of 3D objects: Connect 3D objects with 2D representations; sketch and construct nets of prisms' },
+        { id: 'y4-3ds-2', code: 'MA2-3DS-02', title: 'Volume — litres and mL: Measure and compare capacities using litres and millilitres; convert L and mL' }
+      ]
+    },
+    {
+      id: 'y4-nsm',
+      title: 'Non-Spatial Measure (B)',
+      modules: 4,
+      topics: [
+        { id: 'y4-nsm-1', code: 'MA2-NSM-01', title: 'Mass — scaled instruments: Measure and compare masses using scales; read graduated scales to measure kg and g' },
+        { id: 'y4-nsm-2', code: 'MA2-NSM-02', title: 'Digital time: Represent and interpret digital time displays; connect analogue and digital' },
+        { id: 'y4-nsm-3', code: 'MA2-NSM-02', title: 'am and pm notation: Use am and pm notation; time to the nearest minute' },
+        { id: 'y4-nsm-4', code: 'MA2-NSM-02', title: 'Timetables: Read and interpret timetables; convert units of time' }
+      ]
+    },
+    {
+      id: 'y4-data',
+      title: 'Data (B)',
+      modules: 3,
+      topics: [
+        { id: 'y4-data-1', code: 'MA2-DATA-01', title: 'Select collection methods: Select, trial and refine methods for data collection' },
+        { id: 'y4-data-2', code: 'MA2-DATA-01', title: 'Many-to-one scale graphs: Construct picture graphs and column graphs using many-to-one scales' },
+        { id: 'y4-data-3', code: 'MA2-DATA-02', title: 'Compare data displays: Interpret and compare data across multiple displays' }
+      ]
+    },
+    {
+      id: 'y4-chan',
+      title: 'Chance (B)',
+      modules: 3,
+      topics: [
+        { id: 'y4-chan-1', code: 'MA2-CHAN-01', title: 'Likelihood of outcomes: Describe and compare the likelihood of outcomes using everyday language' },
+        { id: 'y4-chan-2', code: 'MA2-CHAN-01', title: 'Dependent and independent: Identify when events are affected or not affected by previous events' },
+        { id: 'y4-chan-3', code: 'MA2-CHAN-01', title: 'Predict and compare: Predict possible outcomes; conduct experiments and compare results' }
+      ]
+    }
   ],
   'Year 5': [
     { id: 'y5-1', title: 'Order of Operations', modules: 8 },
