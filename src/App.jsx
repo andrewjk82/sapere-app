@@ -47,7 +47,21 @@ const isIOSStandaloneApp = () => {
 };
 
 const OpeningIntro = ({ name = 'Andrew', onDone }) => {
-  const message = `Good morning. ${name}`;
+  const greeting = 'Good morning.';
+  const message = `${greeting} ${name}`;
+  const renderCharacters = (text, prefix = '') => text.split('').map((char, index) => (
+    <motion.span
+      key={`${prefix}-${char}-${index}`}
+      aria-hidden="true"
+      variants={{
+        hidden: { opacity: 0, y: 14, filter: 'blur(10px)' },
+        visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+      }}
+      transition={{ duration: 0.52, ease: [0.22, 1, 0.36, 1] }}
+    >
+      {char === ' ' ? '\u00A0' : char}
+    </motion.span>
+  ));
 
   return (
     <motion.div
@@ -69,25 +83,14 @@ const OpeningIntro = ({ name = 'Andrew', onDone }) => {
           hidden: {},
           visible: {
             transition: {
-              staggerChildren: 0.055,
+              staggerChildren: 0.085,
               delayChildren: 0.25,
             },
           },
         }}
       >
-        {message.split('').map((char, index) => (
-          <motion.span
-            key={`${char}-${index}`}
-            aria-hidden="true"
-            variants={{
-              hidden: { opacity: 0, y: 12, filter: 'blur(8px)' },
-              visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-            }}
-            transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
-          >
-            {char === ' ' ? '\u00A0' : char}
-          </motion.span>
-        ))}
+        <div className="opening-intro__line">{renderCharacters(greeting, 'greeting')}</div>
+        <div className="opening-intro__line opening-intro__line--name">{renderCharacters(name, 'name')}</div>
       </motion.div>
     </motion.div>
   );
@@ -285,7 +288,7 @@ function App() {
 
   useEffect(() => {
     if (!showOpeningIntro) return undefined;
-    const messageDuration = (`Good morning. ${introName}`.length * 55) + 1150;
+    const messageDuration = (`Good morning. ${introName}`.length * 85) + 1400;
     const timer = window.setTimeout(() => {
       setOpeningIntroVisible(false);
     }, messageDuration);
