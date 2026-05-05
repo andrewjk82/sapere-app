@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ChevronLeft, Clock, CheckCircle2, XCircle, 
@@ -134,6 +134,50 @@ const adjustDifficultyMix = (currentMix, resultStats) => {
   return normalizeMix(next);
 };
 
+class CanvasErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error) {
+    console.warn('Working out canvas failed to render:', error);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{
+          height: '100%',
+          minHeight: '400px',
+          borderRadius: '24px',
+          border: '1px solid #e2e8f0',
+          background: '#fff',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '8px',
+          padding: '24px',
+          textAlign: 'center',
+          color: '#64748b',
+          fontWeight: 700
+        }}>
+          <AlertTriangle size={28} style={{ color: '#f59e0b' }} />
+          <div style={{ color: '#1e293b', fontWeight: 900 }}>Sketch pad unavailable</div>
+          <div style={{ fontSize: '0.9rem', lineHeight: 1.5 }}>The question is still available on the left.</div>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
+
 const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { user } = useAuth();
   const { showToast } = useToast();
@@ -173,12 +217,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [leaders, setLeaders] = useState([]);
 
   const isMobile = window.innerWidth < 768; // Lowered threshold to allow split-screen on tablets
+  const currentQuestion = questions[currentIdx] || null;
   const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
   const assignedYear = assignedYears[0];
-  const isSenior = assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 7);
-  const showSplitScreen = !isMobile && (
-    questions[currentIdx]?.type === 'graph_sketch' || 
-    isSenior ||
+  const isYear10OrAbove = assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 10);
+  const showSplitScreen = !isMobile && Boolean(currentQuestion) && (
+    currentQuestion.type === 'graph_sketch' ||
+    isYear10OrAbove ||
     studentProfile?.seniorCanvasEnabled === true
   );
 
@@ -853,8 +898,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     if (isGraphSketch) {
       setIsSubmittingCanvas(true);
-      if (canvasRef.current) {
-        canvasDataUrl = await canvasRef.current.exportImage();
+      try {
+        if (canvasRef.current) {
+          canvasDataUrl = await canvasRef.current.exportImage();
+        }
+      } catch (err) {
+        console.error("Failed to export drawing for review", err);
       }
       correct = false; // Pending review
     } else if (isShortAnswer) {
@@ -867,26 +916,29 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     }
 
-    if (isGraphSketch && canvasDataUrl) {
+    if (isGraphSketch) {
       try {
-        await addDoc(collection(db, 'grading_queue'), {
-          userId: user.uid,
-          userName: studentProfile?.name || 'Student',
-          questionId: currentQ?.id || null,
-          questionText: currentQ?.question || currentQ?.text || '',
-          answerImage: canvasDataUrl,
-          status: 'pending',
-          submittedAt: serverTimestamp(),
-          year: currentQ?.year || CHALLENGE_YEAR,
-          chapterTitle: currentQ?.chapterTitle || '',
-          topicTitle: currentQ?.topicTitle || '',
-          challengeType: challengeType,
-          totalQuestions: TOTAL_QUESTIONS,
-        });
+        if (canvasDataUrl) {
+          await addDoc(collection(db, 'grading_queue'), {
+            userId: user.uid,
+            userName: studentProfile?.name || 'Student',
+            questionId: currentQ?.id || null,
+            questionText: currentQ?.question || currentQ?.text || '',
+            answerImage: canvasDataUrl,
+            status: 'pending',
+            submittedAt: serverTimestamp(),
+            year: currentQ?.year || CHALLENGE_YEAR,
+            chapterTitle: currentQ?.chapterTitle || '',
+            topicTitle: currentQ?.topicTitle || '',
+            challengeType: challengeType,
+            totalQuestions: TOTAL_QUESTIONS,
+          });
+        }
       } catch (err) {
         console.error("Failed to submit drawing for review", err);
+      } finally {
+        setIsSubmittingCanvas(false);
       }
-      setIsSubmittingCanvas(false);
     }
 
     setSelectedOption(optionText);
@@ -1882,7 +1934,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               )}
               </div>
 
-            {/* Right Side: Working Out Canvas for Senior Students */}
+            {/* Right Side: Working Out Canvas for Year 10+ students */}
             {showSplitScreen && (
               <div style={{ 
                 flex: 1, 
@@ -1893,11 +1945,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 position: window.innerWidth >= 1024 ? 'sticky' : 'static',
                 top: '60px'
               }}>
-                <WorkingOutCanvas 
-                  ref={canvasRef} 
-                  questionType={questions[currentIdx]?.type} 
-                  isSubmitted={step === 'feedback'}
-                />
+                <CanvasErrorBoundary key={currentQuestion?.id || currentIdx}>
+                  <WorkingOutCanvas
+                    ref={canvasRef}
+                    questionType={currentQuestion?.type}
+                    isSubmitted={step === 'feedback'}
+                  />
+                </CanvasErrorBoundary>
               </div>
             )}
           </div>
