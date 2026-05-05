@@ -2014,9 +2014,74 @@ export const CURRICULUM_DATA = {
       }
     ],
     'Extension 1': [
-      { id: 'y11e1-1', title: 'Further Functions', modules: 10 },
-      { id: 'y11e1-2', title: 'Trigonometric Identities', modules: 12 },
-      { id: 'y11e1-3', title: 'Combinatorics', modules: 8 }
+      {
+        id: 'y11e1-6',
+        title: 'Chapter 6: Further graphs',
+        modules: 8,
+        topics: [
+          { id: 'y11e1-6A', code: '6A', title: 'Solving two particular inequations' },
+          { id: 'y11e1-6B', code: '6B', title: 'The sign of a function' },
+          { id: 'y11e1-6C', code: '6C', title: 'Sketching reciprocal functions' },
+          { id: 'y11e1-6D', code: '6D', title: 'Sketching sums and differences' },
+          { id: 'y11e1-6E', code: '6E', title: 'Modifying a function using absolute value' },
+          { id: 'y11e1-6F', code: '6F', title: 'Inverse relations and functions' },
+          { id: 'y11e1-6G', code: '6G', title: 'Inverse function notation' },
+          { id: 'y11e1-6H', code: '6H', title: 'Defining functions and relations parametrically' }
+        ]
+      },
+      {
+        id: 'y11e1-11',
+        title: 'Chapter 11: Polynomials',
+        modules: 7,
+        topics: [
+          { id: 'y11e1-11A', code: '11A', title: 'The language of polynomials' },
+          { id: 'y11e1-11B', code: '11B', title: 'Graphs of polynomial functions' },
+          { id: 'y11e1-11C', code: '11C', title: 'Division of polynomials' },
+          { id: 'y11e1-11D', code: '11D', title: 'The remainder and factor theorems' },
+          { id: 'y11e1-11E', code: '11E', title: 'Consequences of the factor theorem' },
+          { id: 'y11e1-11F', code: '11F', title: 'Sums and products of zeroes' },
+          { id: 'y11e1-11G', code: '11G', title: 'Geometry using polynomial techniques' }
+        ]
+      },
+      {
+        id: 'y11e1-16',
+        title: 'Chapter 16: Further trigonometry',
+        modules: 5,
+        topics: [
+          { id: 'y11e1-16A', code: '16A', title: 'Three-dimensional trigonometry' },
+          { id: 'y11e1-16B', code: '16B', title: 'Trigonometric functions of compound angles' },
+          { id: 'y11e1-16C', code: '16C', title: 'The double-angle formulae' },
+          { id: 'y11e1-16D', code: '16D', title: 'Trigonometric equations' },
+          { id: 'y11e1-16E', code: '16E', title: 'The sum of sine and cosine functions' }
+        ]
+      },
+      {
+        id: 'y11e1-17',
+        title: 'Chapter 17: Combinatorics',
+        modules: 7,
+        topics: [
+          { id: 'y11e1-17A', code: '17A', title: 'Factorial notation' },
+          { id: 'y11e1-17B', code: '17B', title: 'Ordered selections with and without repetition' },
+          { id: 'y11e1-17C', code: '17C', title: 'Ordered selections — three more principles' },
+          { id: 'y11e1-17D', code: '17D', title: 'Ordered selections with identical elements' },
+          { id: 'y11e1-17E', code: '17E', title: 'Counting unordered selections' },
+          { id: 'y11e1-17F', code: '17F', title: 'Using counting in probability' },
+          { id: 'y11e1-17G', code: '17G', title: 'Arrangements in a circle' }
+        ]
+      },
+      {
+        id: 'y11e1-18',
+        title: 'Chapter 18: The binomial theorem and Pascal\'s triangle',
+        modules: 6,
+        topics: [
+          { id: 'y11e1-18A', code: '18A', title: 'Binomial expansions and Pascal\'s triangle' },
+          { id: 'y11e1-18B', code: '18B', title: 'Binomial expansions with several variables' },
+          { id: 'y11e1-18C', code: '18C', title: 'The binomial theorem' },
+          { id: 'y11e1-18D', code: '18D', title: 'Using the general term' },
+          { id: 'y11e1-18E', code: '18E', title: 'Identities in Pascal\'s triangle' },
+          { id: 'y11e1-18F', code: '18F', title: 'Further identities in Pascal\'s triangle' }
+        ]
+      }
     ]
   },
   'Year 12': {
