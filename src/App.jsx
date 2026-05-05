@@ -88,7 +88,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) =>
       }}
     >
       <motion.div
-        className={`opening-intro__text ${splitLines ? 'opening-intro__text--split' : 'opening-intro__text--single'}`}
+        className="opening-intro__text opening-intro__text--single"
         aria-label={message}
         initial="hidden"
         animate="visible"
