@@ -50,6 +50,57 @@ function buildEmailTemplate(title, body, ctaLabel = 'Go to Academy') {
   `;
 }
 
+const invalidTokenCodes = new Set([
+  'messaging/invalid-registration-token',
+  'messaging/registration-token-not-registered',
+  'messaging/invalid-argument'
+]);
+
+async function sendPushToUser(adminInstance, userRef, userData, title, body) {
+  const tokens = [...new Set(userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []))].filter(Boolean);
+  if (tokens.length === 0) {
+    return { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 };
+  }
+
+  const response = await adminInstance.messaging().sendEachForMulticast({
+    notification: { title, body },
+    webpush: {
+      notification: {
+        icon: '/logo.png',
+        badge: '/logo.png'
+      },
+      fcmOptions: {
+        link: 'https://sapere-app.vercel.app'
+      }
+    },
+    tokens
+  });
+
+  const invalidTokens = [];
+  response.responses.forEach((result, index) => {
+    if (!result.success && invalidTokenCodes.has(result.error?.code)) {
+      invalidTokens.push(tokens[index]);
+    }
+  });
+
+  if (invalidTokens.length > 0) {
+    const updatePayload = {
+      fcmTokens: adminInstance.firestore.FieldValue.arrayRemove(...invalidTokens)
+    };
+    if (invalidTokens.includes(userData.fcmToken)) {
+      updatePayload.fcmToken = adminInstance.firestore.FieldValue.delete();
+    }
+    await userRef.set(updatePayload, { merge: true });
+  }
+
+  return {
+    tokensFound: tokens.length,
+    successCount: response.successCount,
+    failureCount: response.failureCount,
+    removedCount: invalidTokens.length
+  };
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -57,6 +108,7 @@ export default async function handler(req, res) {
 
   const { studentId, email, subject, text, html } = req.body;
   let emailSent = false;
+  let pushResult = { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 };
 
   try {
     // 0. Initialize Firebase Admin
@@ -121,23 +173,19 @@ export default async function handler(req, res) {
 
       if (userDoc.exists) {
         const userData = userDoc.data();
-        const tokens = userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []);
-        tokensFound = tokens.length;
-        
-        if (tokens.length > 0) {
-          console.log(`[API] Sending push to ${tokens.length} devices for student: ${studentId}`);
-          await admin.messaging().sendEachForMulticast({
-            notification: { title: subject, body: text || 'New notification' },
-            tokens: tokens
-          });
-        }
+        pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
+        tokensFound = pushResult.tokensFound;
+        console.log(`[API] Push result for ${studentId}:`, pushResult);
       }
     }
 
     return res.status(200).json({ 
       success: true, 
       emailSent, 
-      tokensFound 
+      tokensFound,
+      pushSuccessCount: pushResult.successCount,
+      pushFailureCount: pushResult.failureCount,
+      invalidTokensRemoved: pushResult.removedCount
     });
   } catch (error) {
     console.error('API Error:', error.message);

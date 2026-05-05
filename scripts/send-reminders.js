@@ -184,14 +184,24 @@ async function sendPushNotification(userId, title, body) {
   try {
     const userDoc = await db.collection('users').doc(userId).get();
     const userData = userDoc.data();
+    const tokens = [...new Set(userData?.fcmTokens || (userData?.fcmToken ? [userData.fcmToken] : []))].filter(Boolean);
     
-    if (userData && userData.fcmToken) {
-      console.log(`Sending push notification to token for user: ${userId}`);
-      const message = {
+    if (tokens.length > 0) {
+      console.log(`Sending push notification to ${tokens.length} token(s) for user: ${userId}`);
+      const response = await admin.messaging().sendEachForMulticast({
         notification: { title, body },
-        token: userData.fcmToken
-      };
-      await admin.messaging().send(message);
+        webpush: {
+          notification: {
+            icon: '/logo.png',
+            badge: '/logo.png'
+          },
+          fcmOptions: {
+            link: 'https://sapere-app.vercel.app'
+          }
+        },
+        tokens
+      });
+      console.log(`Push result for ${userId}: ${response.successCount} success, ${response.failureCount} failed.`);
     } else {
       console.log(`No FCM token found for user: ${userId}`);
     }

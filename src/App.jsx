@@ -19,7 +19,7 @@ import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
-import { db, requestNotificationPermission } from './firebase/config';
+import { db, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import './components/app-shell.css';
@@ -79,6 +79,17 @@ function App() {
       requestNotificationPermission(user.uid);
     }
   }, [user?.uid]);
+
+  useEffect(() => {
+    if (!user?.uid) return undefined;
+    return listenForForegroundNotifications((payload) => {
+      const title = payload.notification?.title || payload.data?.title || 'Notification';
+      const body = payload.notification?.body || payload.data?.body || '';
+      if (body) {
+        showToast(`${title}: ${body}`, 'info');
+      }
+    });
+  }, [showToast, user?.uid]);
   const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
   const [activeTab, setActiveTab] = useState('Dashboard');
   const [selectedStudentId, setSelectedStudentId] = useState(null);

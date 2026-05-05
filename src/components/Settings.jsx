@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
-import { db } from '../firebase/config';
+import { db, requestNotificationPermission } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
@@ -466,6 +466,9 @@ const Settings = () => {
                   onClick={async () => {
                     const newValue = !profile?.notifications?.push;
                     await setDoc(doc(db, 'users', user.uid), { notifications: { ...profile?.notifications, push: newValue } }, { merge: true });
+                    if (newValue) {
+                      await requestNotificationPermission(user.uid);
+                    }
                   }}
                   style={{
                     width: '44px',

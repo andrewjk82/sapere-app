@@ -286,6 +286,56 @@ function buildEmailTemplate(title, body, ctaLabel = 'Go to Academy') {
   `;
 }
 
+const invalidTokenCodes = new Set([
+  'messaging/invalid-registration-token',
+  'messaging/registration-token-not-registered',
+  'messaging/invalid-argument'
+]);
+
+async function sendPushToUser(userRef, userData, title, body) {
+  const tokens = [...new Set(userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []))].filter(Boolean);
+  if (tokens.length === 0) {
+    return { successCount: 0, failureCount: 0, removedCount: 0 };
+  }
+
+  const response = await admin.messaging().sendEachForMulticast({
+    notification: { title, body },
+    webpush: {
+      notification: {
+        icon: '/logo.png',
+        badge: '/logo.png'
+      },
+      fcmOptions: {
+        link: 'https://sapere-app.vercel.app'
+      }
+    },
+    tokens
+  });
+
+  const invalidTokens = [];
+  response.responses.forEach((result, index) => {
+    if (!result.success && invalidTokenCodes.has(result.error?.code)) {
+      invalidTokens.push(tokens[index]);
+    }
+  });
+
+  if (invalidTokens.length > 0) {
+    const updatePayload = {
+      fcmTokens: admin.firestore.FieldValue.arrayRemove(...invalidTokens)
+    };
+    if (invalidTokens.includes(userData.fcmToken)) {
+      updatePayload.fcmToken = admin.firestore.FieldValue.delete();
+    }
+    await userRef.set(updatePayload, { merge: true });
+  }
+
+  return {
+    successCount: response.successCount,
+    failureCount: response.failureCount,
+    removedCount: invalidTokens.length
+  };
+}
+
 async function sendNotification(db, transporter, session, type, subject, body) {
   const studentId    = session.studentId;
   const studentEmail = session.studentEmail || session.email;
@@ -316,16 +366,14 @@ async function sendNotification(db, transporter, session, type, subject, body) {
 
     const userDoc = await userRef.get();
     if (userDoc.exists) {
-      const tokens = userDoc.data().fcmTokens || (userDoc.data().fcmToken ? [userDoc.data().fcmToken] : []);
-      if (tokens.length > 0) {
-        try {
-          await admin.messaging().sendEachForMulticast({
-            notification: { title: subject, body: body.replace(/<[^>]*>/g, '').substring(0, 100) + '...' },
-            tokens
-          });
-          pushSent = true;
-        } catch (e) { console.error(`Push fail:`, e.message); }
-      }
+      try {
+        const pushBody = body.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().substring(0, 120);
+        const pushResult = await sendPushToUser(userRef, userDoc.data(), subject, pushBody || 'You have a new notification.');
+        pushSent = pushResult.successCount > 0;
+        if (pushResult.failureCount > 0) {
+          console.warn(`Push partial failure for ${studentId}:`, pushResult);
+        }
+      } catch (e) { console.error(`Push fail:`, e.message); }
     }
   }
 
