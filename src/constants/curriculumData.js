@@ -2015,6 +2015,32 @@ export const CURRICULUM_DATA = {
     ],
     'Extension 1': [
       {
+        id: 'y11e1-4',
+        title: 'Chapter 4: Equations and inequations',
+        modules: 4,
+        topics: [
+          { id: 'y11e1-4A', code: '4A', title: 'Linear equations and inequations' },
+          { id: 'y11e1-4B', code: '4B', title: 'Quadratic equations and inequations' },
+          { id: 'y11e1-4C', code: '4C', title: 'The discriminant' },
+          { id: 'y11e1-4D', code: '4D', title: 'Quadratic identities' }
+        ]
+      },
+      {
+        id: 'y11e1-5',
+        title: 'Chapter 5: Transformations and symmetry',
+        modules: 8,
+        topics: [
+          { id: 'y11e1-5A', code: '5A', title: 'Translations of known graphs' },
+          { id: 'y11e1-5B', code: '5B', title: 'Reflection in the y-axis and x-axis' },
+          { id: 'y11e1-5C', code: '5C', title: 'Even and odd symmetry' },
+          { id: 'y11e1-5D', code: '5D', title: 'Horizontal and vertical dilations' },
+          { id: 'y11e1-5E', code: '5E', title: 'The absolute value function' },
+          { id: 'y11e1-5F', code: '5F', title: 'Composite functions' },
+          { id: 'y11e1-5G', code: '5G', title: 'Combining transformations' },
+          { id: 'y11e1-5H', code: '5H', title: 'Continuity and piecewise-defined functions' }
+        ]
+      },
+      {
         id: 'y11e1-6',
         title: 'Chapter 6: Further graphs',
         modules: 8,
@@ -2030,6 +2056,68 @@ export const CURRICULUM_DATA = {
         ]
       },
       {
+        id: 'y11e1-7',
+        title: 'Chapter 7: Trigonometry',
+        modules: 10,
+        topics: [
+          { id: 'y11e1-7A', code: '7A', title: 'Trigonometry with right-angled triangles' },
+          { id: 'y11e1-7B', code: '7B', title: 'Problems involving right-angled triangles' },
+          { id: 'y11e1-7C', code: '7C', title: 'Trigonometric functions of a general angle' },
+          { id: 'y11e1-7D', code: '7D', title: 'Quadrant, sign, and related acute angle' },
+          { id: 'y11e1-7E', code: '7E', title: 'Given one trigonometric function, find another' },
+          { id: 'y11e1-7F', code: '7F', title: 'Trigonometric identities' },
+          { id: 'y11e1-7G', code: '7G', title: 'Trigonometric equations' },
+          { id: 'y11e1-7H', code: '7H', title: 'The sine rule and the area formula' },
+          { id: 'y11e1-7I', code: '7I', title: 'The cosine rule' },
+          { id: 'y11e1-7J', code: '7J', title: 'Problems involving general triangles' }
+        ]
+      },
+      {
+        id: 'y11e1-8',
+        title: 'Chapter 8: Lines in the coordinate plane',
+        modules: 5,
+        topics: [
+          { id: 'y11e1-8A', code: '8A', title: 'Lengths and midpoints of line segments' },
+          { id: 'y11e1-8B', code: '8B', title: 'Gradients of line segments and lines' },
+          { id: 'y11e1-8C', code: '8C', title: 'Equations of lines' },
+          { id: 'y11e1-8D', code: '8D', title: 'Further equations of lines' },
+          { id: 'y11e1-8E', code: '8E', title: 'Using pronumerals in place of numbers' }
+        ]
+      },
+      {
+        id: 'y11e1-9',
+        title: 'Chapter 9: Exponential and logarithmic functions',
+        modules: 7,
+        topics: [
+          { id: 'y11e1-9A', code: '9A', title: 'Indices' },
+          { id: 'y11e1-9B', code: '9B', title: 'Fractional indices' },
+          { id: 'y11e1-9C', code: '9C', title: 'Logarithms' },
+          { id: 'y11e1-9D', code: '9D', title: 'The laws for logarithms' },
+          { id: 'y11e1-9E', code: '9E', title: 'Equations involving logarithms and indices' },
+          { id: 'y11e1-9F', code: '9F', title: 'Exponential and logarithmic graphs' },
+          { id: 'y11e1-9G', code: '9G', title: 'Applications of these functions' }
+        ]
+      },
+      {
+        id: 'y11e1-10',
+        title: 'Chapter 10: Differentiation',
+        modules: 12,
+        topics: [
+          { id: 'y11e1-10A', code: '10A', title: 'Tangents and the derivative' },
+          { id: 'y11e1-10B', code: '10B', title: 'The derivative as a limit' },
+          { id: 'y11e1-10C', code: '10C', title: 'A rule for differentiating powers of x' },
+          { id: 'y11e1-10D', code: '10D', title: 'The notation dy/dx for the derivative' },
+          { id: 'y11e1-10E', code: '10E', title: 'The chain rule' },
+          { id: 'y11e1-10F', code: '10F', title: 'Differentiating powers with negative indices' },
+          { id: 'y11e1-10G', code: '10G', title: 'Differentiating powers with fractional indices' },
+          { id: 'y11e1-10H', code: '10H', title: 'The product rule' },
+          { id: 'y11e1-10I', code: '10I', title: 'The quotient rule' },
+          { id: 'y11e1-10J', code: '10J', title: 'Rates of change' },
+          { id: 'y11e1-10K', code: '10K', title: 'Average velocity and average speed' },
+          { id: 'y11e1-10L', code: '10L', title: 'Instantaneous velocity and speed' }
+        ]
+      },
+      {
         id: 'y11e1-11',
         title: 'Chapter 11: Polynomials',
         modules: 7,
@@ -2041,6 +2129,51 @@ export const CURRICULUM_DATA = {
           { id: 'y11e1-11E', code: '11E', title: 'Consequences of the factor theorem' },
           { id: 'y11e1-11F', code: '11F', title: 'Sums and products of zeroes' },
           { id: 'y11e1-11G', code: '11G', title: 'Geometry using polynomial techniques' }
+        ]
+      },
+      {
+        id: 'y11e1-12',
+        title: 'Chapter 12: Euler\'s number',
+        modules: 3,
+        topics: [
+          { id: 'y11e1-12A', code: '12A', title: 'The exponential function base e' },
+          { id: 'y11e1-12B', code: '12B', title: 'Transformations of exponential functions' },
+          { id: 'y11e1-12C', code: '12C', title: 'The logarithmic function base e' }
+        ]
+      },
+      {
+        id: 'y11e1-13',
+        title: 'Chapter 13: Radian measure of angles',
+        modules: 4,
+        topics: [
+          { id: 'y11e1-13A', code: '13A', title: 'Radian measure of angle size' },
+          { id: 'y11e1-13B', code: '13B', title: 'Solving trigonometric equations' },
+          { id: 'y11e1-13C', code: '13C', title: 'Arcs and sectors of circles' },
+          { id: 'y11e1-13D', code: '13D', title: 'Trigonometric graphs in radians' }
+        ]
+      },
+      {
+        id: 'y11e1-14',
+        title: 'Chapter 14: Probability',
+        modules: 7,
+        topics: [
+          { id: 'y11e1-14A', code: '14A', title: 'Sets and Venn diagrams' },
+          { id: 'y11e1-14B', code: '14B', title: 'Probability and sample spaces' },
+          { id: 'y11e1-14C', code: '14C', title: 'Sample space graphs and tree diagrams' },
+          { id: 'y11e1-14D', code: '14D', title: 'Venn diagrams and the addition theorem' },
+          { id: 'y11e1-14E', code: '14E', title: 'Multi-stage experiments and the product rule' },
+          { id: 'y11e1-14F', code: '14F', title: 'Probability tree diagrams' },
+          { id: 'y11e1-14G', code: '14G', title: 'Conditional probability' }
+        ]
+      },
+      {
+        id: 'y11e1-15',
+        title: 'Chapter 15: Data and probability',
+        modules: 3,
+        topics: [
+          { id: 'y11e1-15A', code: '15A', title: 'Random variables and frequency tables' },
+          { id: 'y11e1-15B', code: '15B', title: 'Cumulative frequency' },
+          { id: 'y11e1-15C', code: '15C', title: 'Grouped data' }
         ]
       },
       {
