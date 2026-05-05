@@ -414,10 +414,19 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                 width: '100%'
               }}>
                 <div className="vision-card__content" style={{ zIndex: 1 }}>
-                  <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '8px', color: 'white', textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-                    {getGreeting()}
-                  </p>
-                  <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '2.5rem' : '3.2rem', fontWeight: 900, margin: 0, lineHeight: 1.0, color: '#fff', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
+                  <h1 style={{ 
+                    fontFamily: "'Poppins', sans-serif", 
+                    fontSize: isMobile ? '2.2rem' : '3.5rem', 
+                    fontWeight: 900, 
+                    margin: 0, 
+                    lineHeight: 1.1, 
+                    color: '#fff', 
+                    letterSpacing: '-0.02em', 
+                    textShadow: '0 4px 20px rgba(0,0,0,0.3)' 
+                  }}>
+                    <span style={{ fontSize: '0.35em', display: 'block', textTransform: 'uppercase', letterSpacing: '0.25em', opacity: 0.9, marginBottom: '4px', color: 'rgba(255,255,255,0.8)' }}>
+                      {getGreeting()},
+                    </span>
                     {userName}
                   </h1>
                   {profile?.dreamJob && (

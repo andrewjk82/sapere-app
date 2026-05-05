@@ -60,8 +60,8 @@ const getTimeGreeting = () => {
   return 'Good evening';
 };
 
-const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', splitLines = false, onDone }) => {
-  const message = `${greeting} ${name}`;
+const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) => {
+  const message = `${greeting}, ${name}`;
   const renderCharacters = (text, prefix = '') => text.split('').map((char, index) => (
     <motion.span
       key={`${prefix}-${char}-${index}`}
@@ -102,16 +102,9 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', splitLines =
           },
         }}
       >
-        {splitLines ? (
-          <>
-            <div className="opening-intro__line opening-intro__line--greeting">{renderCharacters(greeting, 'greeting')}</div>
-            <div className="opening-intro__line opening-intro__line--name">{renderCharacters(name, 'name')}</div>
-          </>
-        ) : (
-          <div className="opening-intro__line opening-intro__line--single">
-            {renderCharacters(message, 'message')}
-          </div>
-        )}
+        <div className="opening-intro__line opening-intro__line--single">
+          {renderCharacters(message, 'message')}
+        </div>
       </motion.div>
     </motion.div>
   );
@@ -533,7 +526,6 @@ function App() {
           <OpeningIntro
             name={introName}
             greeting={introGreeting}
-            splitLines={isStandaloneIntro}
             onDone={() => setShowOpeningIntro(false)}
           />
         )}
