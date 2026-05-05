@@ -19,6 +19,14 @@ const CHALLENGE_YEAR = 'Year 1';
 const CHALLENGE_CHAPTER_ID = 'y1-number';
 const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPTER_ID);
 
+const getAssignedChapters = (profile, assignedYear) => {
+  if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
+    return profile.assignedChapters;
+  }
+
+  return assignedYear === CHALLENGE_YEAR ? [CHALLENGE_CHAPTER_ID] : [];
+};
+
 const toDate = (value) => {
   if (!value) return null;
   if (value instanceof Date) return value;
@@ -633,9 +641,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       let manualQs = [];
       const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
       const assignedYear = assignedYears[0];
-      const assignedChapters = Array.isArray(studentProfile?.assignedChapters) && studentProfile.assignedChapters.length > 0
-        ? studentProfile.assignedChapters
-        : [CHALLENGE_CHAPTER_ID];
+      const assignedChapters = getAssignedChapters(studentProfile, assignedYear);
       const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
       const assignedCourses = Array.isArray(studentProfile?.assignedCourse) ? studentProfile.assignedCourse : [studentProfile?.assignedCourse || 'Advanced'];
       const targetPool = getQuestionTargets({
@@ -1079,9 +1085,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const assignedYear = assignedYears[0];
         const assignedChapters = challengeType === 'calc'
           ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-')) : [])
-          : (Array.isArray(studentProfile?.assignedChapters) && studentProfile.assignedChapters.length > 0
-            ? studentProfile.assignedChapters
-            : [CHALLENGE_CHAPTER_ID]);
+          : getAssignedChapters(studentProfile, assignedYear);
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
         
         const currentAnswerResults = answerResults || [];
