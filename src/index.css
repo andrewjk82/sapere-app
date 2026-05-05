@@ -83,6 +83,10 @@ body {
   white-space: nowrap;
 }
 
+.opening-intro__line--greeting {
+  font-size: 0.82em;
+}
+
 .opening-intro__line--name {
   font-size: 1em;
   font-style: normal;

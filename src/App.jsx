@@ -104,7 +104,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', splitLines =
       >
         {splitLines ? (
           <>
-            <div className="opening-intro__line">{renderCharacters(greeting, 'greeting')}</div>
+            <div className="opening-intro__line opening-intro__line--greeting">{renderCharacters(greeting, 'greeting')}</div>
             <div className="opening-intro__line opening-intro__line--name">{renderCharacters(name, 'name')}</div>
           </>
         ) : (
