@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ChevronLeft, Clock, CheckCircle2, XCircle, 
-  Trophy, Crown, Medal,
+  Trophy,
   Lightbulb, BookOpen, X, Check, Flag
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -421,9 +421,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               const avatarUrl = student.dreamImageUrl || student.avatarUrl || (student.avatarStyle && student.avatarSeed
                 ? `https://api.dicebear.com/7.x/${student.avatarStyle}/svg?seed=${encodeURIComponent(student.avatarSeed)}`
                 : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.email || student.id || 'sapere')}`);
-              const RankIcon = rank === 1 ? Crown : Medal;
-              const rankBg = rank === 1 ? '#fef3c7' : rank === 2 ? '#f1f5f9' : rank === 3 ? '#ffedd5' : '#eef2ff';
-              const rankColor = rank === 1 ? '#d97706' : rank === 2 ? '#64748b' : rank === 3 ? '#b45309' : '#6366f1';
               const rowBg = rank === 1 ? '#fffbeb' : rank === 2 ? '#f8fafc' : '#fff7ed';
               const rowBorder = rank === 1 ? '#fde68a' : rank === 2 ? '#e2e8f0' : '#fed7aa';
 
@@ -433,24 +430,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '14px',
+                    justifyContent: 'space-between',
+                    gap: '16px',
                     minWidth: 0,
-                    padding: '14px 16px',
+                    padding: '12px 16px',
                     borderRadius: '20px',
                     background: isCurrentUser ? '#f5f3ff' : rowBg,
                     border: `1px solid ${isCurrentUser ? '#a78bfa' : rowBorder}`,
                     boxShadow: rank === 1 ? '0 10px 24px rgba(217, 119, 6, 0.08)' : '0 8px 20px rgba(15, 23, 42, 0.03)',
                   }}
                 >
-                  <div style={{ width: '42px', height: '42px', borderRadius: '14px', background: rankBg, color: rankColor, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <RankIcon size={20} />
-                  </div>
                   <img src={avatarUrl} alt={`Top ${rank} avatar`} style={{ width: '52px', height: '52px', borderRadius: '50%', background: '#fff', objectFit: 'cover', flexShrink: 0, boxShadow: '0 6px 14px rgba(15, 23, 42, 0.08)' }} />
-                  <div style={{ minWidth: 0, flex: 1, display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                    <div style={{ color: '#1e1b4b', fontWeight: 950, fontSize: '0.95rem' }}>
-                      Top {rank}
-                    </div>
-                  </div>
                   <div style={{ color: '#6366f1', fontWeight: 950, fontSize: '1rem', textAlign: 'right', flexShrink: 0 }}>
                     {Number(student.totalXP) || 0}
                   </div>

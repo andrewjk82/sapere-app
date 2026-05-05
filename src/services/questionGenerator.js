@@ -179,15 +179,142 @@ export const getQuestionBlueprint = (year = DEFAULT_YEAR, chapterId = DEFAULT_CH
   QUESTION_BLUEPRINTS[year]?.[chapterId] || null
 );
 
-const q = (type, question, options, answer, solution, timeLimit = 30, hint = '') => ({ 
+const q = (type, question, options, answer, solution, timeLimit = 30, hint = '', extras = {}) => ({ 
   type, 
   question, 
   options, 
   answer, 
   solution, 
   timeLimit,
-  hint: hint || solution // Use solution as fallback hint if not provided
+  hint: hint || solution, // Use solution as fallback hint if not provided
+  ...extras,
 });
+
+const svgDataUrl = (svg) => `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+const questionSvg = (content, width = 420, height = 240) => svgDataUrl(`
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Maths diagram">
+    <rect width="${width}" height="${height}" rx="22" fill="#f8fafc"/>
+    <defs>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#64748b" flood-opacity="0.18"/>
+      </filter>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+      </marker>
+    </defs>
+    ${content}
+  </svg>
+`);
+
+const labelText = (x, y, text, size = 18, color = '#334155') => (
+  `<text x="${x}" y="${y}" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="${size}" font-weight="800" fill="${color}">${text}</text>`
+);
+
+const draw2DShapeSvg = (shapeName) => {
+  const fill = '#ede9fe';
+  const stroke = '#8b5cf6';
+  const shapeMap = {
+    triangle: `<polygon points="210,42 102,190 318,190" fill="${fill}" stroke="${stroke}" stroke-width="7" filter="url(#shadow)"/>`,
+    square: `<rect x="125" y="45" width="170" height="170" rx="8" fill="${fill}" stroke="${stroke}" stroke-width="7" filter="url(#shadow)"/>`,
+    rectangle: `<rect x="88" y="62" width="244" height="138" rx="8" fill="${fill}" stroke="${stroke}" stroke-width="7" filter="url(#shadow)"/>`,
+    pentagon: `<polygon points="210,38 330,122 284,210 136,210 90,122" fill="${fill}" stroke="${stroke}" stroke-width="7" filter="url(#shadow)"/>`,
+    hexagon: `<polygon points="138,54 282,54 350,132 282,210 138,210 70,132" fill="${fill}" stroke="${stroke}" stroke-width="7" filter="url(#shadow)"/>`,
+  };
+  return questionSvg(`${shapeMap[shapeName] || shapeMap.rectangle}${labelText(210, 228, shapeName, 16, '#6d28d9')}`);
+};
+
+const drawRectangleMeasureSvg = (length, width) => questionSvg(`
+  <rect x="92" y="58" width="236" height="128" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="6" filter="url(#shadow)"/>
+  <line x1="92" y1="205" x2="328" y2="205" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <line x1="62" y1="58" x2="62" y2="186" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  ${labelText(210, 228, `${length} cm`, 18)}
+  <text x="42" y="127" text-anchor="middle" transform="rotate(-90 42 127)" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#334155">${width} cm</text>
+`);
+
+const drawTriangleAreaSvg = (base, height) => questionSvg(`
+  <polygon points="104,190 328,190 248,54" fill="#dcfce7" stroke="#16a34a" stroke-width="6" filter="url(#shadow)"/>
+  <line x1="248" y1="54" x2="248" y2="190" stroke="#64748b" stroke-width="3" stroke-dasharray="8 7"/>
+  <path d="M248 170 L268 170 L268 190" fill="none" stroke="#64748b" stroke-width="3"/>
+  <line x1="104" y1="210" x2="328" y2="210" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  ${labelText(216, 232, `base ${base} cm`, 17)}
+  <text x="276" y="128" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#334155">height ${height} cm</text>
+`);
+
+const drawCompositeAreaSvg = (length, width, extra) => questionSvg(`
+  <path d="M84 188 H340 V82 H250 V46 H84 Z" fill="#fef3c7" stroke="#d97706" stroke-width="6" filter="url(#shadow)"/>
+  <line x1="84" y1="208" x2="250" y2="208" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <line x1="250" y1="208" x2="340" y2="208" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  ${labelText(167, 232, `${length} cm`, 16)}
+  ${labelText(295, 232, `${extra} cm`, 16)}
+  <text x="62" y="121" text-anchor="middle" transform="rotate(-90 62 121)" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#334155">${width} cm</text>
+`);
+
+const drawStraightAngleSvg = (angle) => questionSvg(`
+  <line x1="68" y1="170" x2="352" y2="170" stroke="#334155" stroke-width="6" stroke-linecap="round"/>
+  <line x1="210" y1="170" x2="128" y2="76" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 170 A40 40 0 0 1 184 140" fill="none" stroke="#f97316" stroke-width="5"/>
+  <path d="M238 170 A54 54 0 0 0 173 112" fill="none" stroke="#0284c7" stroke-width="5"/>
+  ${labelText(152, 154, `${angle}°`, 17, '#c2410c')}
+  ${labelText(236, 123, 'x', 22, '#0369a1')}
+`);
+
+const drawTriangleAnglesSvg = (a, b) => questionSvg(`
+  <polygon points="104,188 326,188 220,54" fill="#fee2e2" stroke="#e11d48" stroke-width="6" filter="url(#shadow)"/>
+  <path d="M128 188 A28 28 0 0 1 144 166" fill="none" stroke="#334155" stroke-width="4"/>
+  <path d="M303 188 A30 30 0 0 0 286 163" fill="none" stroke="#334155" stroke-width="4"/>
+  <path d="M204 75 A30 30 0 0 0 236 75" fill="none" stroke="#334155" stroke-width="4"/>
+  ${labelText(146, 178, `${a}°`, 16)}
+  ${labelText(292, 178, `${b}°`, 16)}
+  ${labelText(220, 92, 'x', 22, '#be123c')}
+`);
+
+const drawRectangularPrismSvg = (l, w, h) => questionSvg(`
+  <polygon points="112,90 260,90 318,132 168,132" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+  <polygon points="168,132 318,132 318,196 168,196" fill="#bfdbfe" stroke="#2563eb" stroke-width="5"/>
+  <polygon points="112,90 168,132 168,196 112,154" fill="#eff6ff" stroke="#2563eb" stroke-width="5"/>
+  <line x1="168" y1="212" x2="318" y2="212" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <line x1="332" y1="132" x2="332" y2="196" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <line x1="105" y1="168" x2="150" y2="202" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  ${labelText(243, 235, `${l} cm`, 15)}
+  <text x="352" y="169" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#334155">${h} cm</text>
+  <text x="88" y="196" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#334155">${w} cm</text>
+`);
+
+const drawCubeNetSvg = () => questionSvg(`
+  <g transform="translate(105 34)" filter="url(#shadow)">
+    <rect x="72" y="0" width="60" height="60" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+    <rect x="72" y="60" width="60" height="60" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+    <rect x="12" y="60" width="60" height="60" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+    <rect x="132" y="60" width="60" height="60" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+    <rect x="72" y="120" width="60" height="60" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+    <rect x="72" y="180" width="60" height="60" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+  </g>
+`);
+
+const draw3DObjectSvg = (objectName) => {
+  const diagrams = {
+    sphere: `
+      <circle cx="210" cy="124" r="78" fill="#dbeafe" stroke="#2563eb" stroke-width="6" filter="url(#shadow)"/>
+      <ellipse cx="210" cy="124" rx="74" ry="22" fill="none" stroke="#60a5fa" stroke-width="4"/>
+      <path d="M170 60 C210 92 210 158 170 188" fill="none" stroke="#93c5fd" stroke-width="4"/>
+    `,
+    cube: `
+      <polygon points="140,86 234,86 284,126 190,126" fill="#ede9fe" stroke="#7c3aed" stroke-width="5"/>
+      <polygon points="190,126 284,126 284,202 190,202" fill="#ddd6fe" stroke="#7c3aed" stroke-width="5"/>
+      <polygon points="140,86 190,126 190,202 140,162" fill="#f5f3ff" stroke="#7c3aed" stroke-width="5"/>
+    `,
+    cylinder: `
+      <ellipse cx="210" cy="76" rx="76" ry="28" fill="#dcfce7" stroke="#16a34a" stroke-width="5"/>
+      <path d="M134 76 V176 C134 192 168 206 210 206 C252 206 286 192 286 176 V76" fill="#bbf7d0" stroke="#16a34a" stroke-width="5"/>
+      <ellipse cx="210" cy="176" rx="76" ry="28" fill="none" stroke="#16a34a" stroke-width="5"/>
+    `,
+    cone: `
+      <path d="M210 44 L120 184 C120 206 300 206 300 184 Z" fill="#ffedd5" stroke="#f97316" stroke-width="5" filter="url(#shadow)"/>
+      <ellipse cx="210" cy="184" rx="90" ry="28" fill="#fed7aa" stroke="#f97316" stroke-width="5"/>
+    `,
+  };
+  return questionSvg(`${diagrams[objectName] || diagrams.cube}${labelText(210, 228, objectName, 16, '#334155')}`);
+};
 
 const genBeforeAfter = (difficulty) => {
   const max = maxByDifficulty(difficulty, 30, 60, 100);
@@ -538,7 +665,9 @@ const gen2DShape = () => {
   const answer = askSides ? shape.sides : shape.name;
   const question = askSides ? `How many sides does a ${shape.name} have?` : `Which shape has ${shape.sides} sides?`;
   const options = askSides ? getUniqueOptions(answer, [answer - 1, answer + 1, answer + 2], 0, 8) : wordOptions(answer, SHAPES_2D.map(s => s.name));
-  return q('shape_2d', question, options, answer, `A ${shape.name} has ${shape.sides} sides and ${shape.corners} corners.`, 25);
+  return q('shape_2d', question, options, answer, `A ${shape.name} has ${shape.sides} sides and ${shape.corners} corners.`, 25, '', {
+    questionImage: draw2DShapeSvg(shape.name),
+  });
 };
 
 const genShapeTrueFalse = () => {
@@ -553,15 +682,23 @@ const genShapeTrueFalse = () => {
 
 const genShapeSort = () => {
   const answer = 'triangle';
-  return q('shape_sort', `Which shape belongs in the group with 3 sides?`, ['triangle', 'square', 'rectangle', 'hexagon'], answer, `A triangle has 3 sides.`, 20);
+  return q('shape_sort', `Which shape belongs in the group with 3 sides?`, ['triangle', 'square', 'rectangle', 'hexagon'], answer, `A triangle has 3 sides.`, 20, '', {
+    questionImage: draw2DShapeSvg(answer),
+  });
 };
 
 const gen3DObject = () => {
   const object = pick(OBJECTS_3D);
   const mode = pick(['name', 'property', 'example']);
-  if (mode === 'name') return q('shape_3d', `Which 3D object is like a ${object.example}?`, wordOptions(object.name, OBJECTS_3D.map(o => o.name)), object.name, `A ${object.example} is shaped like a ${object.name}.`, 25);
-  if (mode === 'property') return q('shape_3d', `How many corners does a ${object.name} have?`, getUniqueOptions(object.corners, [object.corners + 1, object.faces, object.edges], 0, 12), object.corners, `A ${object.name} has ${object.corners} corners.`, 25);
-  return q('shape_3d', `Which object can ${object.can}?`, wordOptions(object.name, OBJECTS_3D.map(o => o.name)), object.name, `A ${object.name} can ${object.can}.`, 25);
+  if (mode === 'name') return q('shape_3d', `Which 3D object is shown? It is like a ${object.example}.`, wordOptions(object.name, OBJECTS_3D.map(o => o.name)), object.name, `A ${object.example} is shaped like a ${object.name}.`, 25, '', {
+    questionImage: draw3DObjectSvg(object.name),
+  });
+  if (mode === 'property') return q('shape_3d', `How many corners does this ${object.name} have?`, getUniqueOptions(object.corners, [object.corners + 1, object.faces, object.edges], 0, 12), object.corners, `A ${object.name} has ${object.corners} corners.`, 25, '', {
+    questionImage: draw3DObjectSvg(object.name),
+  });
+  return q('shape_3d', `Which object can ${object.can}?`, wordOptions(object.name, OBJECTS_3D.map(o => o.name)), object.name, `A ${object.name} can ${object.can}.`, 25, '', {
+    questionImage: draw3DObjectSvg(object.name),
+  });
 };
 
 const gen3DTrueFalse = () => {
@@ -899,19 +1036,27 @@ const genPerimeterArea = (difficulty) => {
     const base = randomInt(6, 20);
     const height = randomInt(4, 16);
     const answer = base * height / 2;
-    return q('area_triangle', `A triangle has base ${base} cm and height ${height} cm. What is its area?`, getUniqueOptions(answer, [base * height, answer + base, answer - height], 0, 300), answer, `Area of a triangle = 1/2 x base x height = 1/2 x ${base} x ${height} = ${answer} cm^2.`, 55);
+    return q('area_triangle', `Use the diagram to find the area of the triangle.`, getUniqueOptions(answer, [base * height, answer + base, answer - height], 0, 300), answer, `Area of a triangle = 1/2 x base x height = 1/2 x ${base} x ${height} = ${answer} cm^2.`, 55, `The base and height are shown on the diagram.`, {
+      questionImage: drawTriangleAreaSvg(base, height),
+    });
   }
   if (mode === 'rectangle_area') {
     const answer = length * width;
-    return q('area_rectangle', `A rectangle is ${length} cm by ${width} cm. What is its area?`, getUniqueOptions(answer, [2 * (length + width), answer + length, answer - width], 0, 600), answer, `Area = length x width = ${length} x ${width} = ${answer} cm^2.`, 45);
+    return q('area_rectangle', `Use the diagram to find the area of the rectangle.`, getUniqueOptions(answer, [2 * (length + width), answer + length, answer - width], 0, 600), answer, `Area = length x width = ${length} x ${width} = ${answer} cm^2.`, 45, `Area means length multiplied by width.`, {
+      questionImage: drawRectangleMeasureSvg(length, width),
+    });
   }
   if (mode === 'composite') {
     const extra = randomInt(2, 8);
     const answer = length * width + extra * width;
-    return q('area_composite', `A composite shape is made from rectangles ${length} cm by ${width} cm and ${extra} cm by ${width} cm. What is the total area?`, getUniqueOptions(answer, [length * width, answer + width, answer - width], 0, 800), answer, `Add the two rectangle areas: ${length * width} + ${extra * width} = ${answer} cm^2.`, 65);
+    return q('area_composite', `Use the diagram to find the total area of the composite shape.`, getUniqueOptions(answer, [length * width, answer + width, answer - width], 0, 800), answer, `Add the two rectangle areas: ${length * width} + ${extra * width} = ${answer} cm^2.`, 65, `Split the L-shape into two rectangles.`, {
+      questionImage: drawCompositeAreaSvg(length, width, extra),
+    });
   }
   const answer = 2 * (length + width);
-  return q('perimeter_rectangle', `A rectangle is ${length} cm long and ${width} cm wide. What is its perimeter?`, getUniqueOptions(answer, [length * width, answer + 2, answer - 2], 0, 200), answer, `Perimeter = 2 x (${length} + ${width}) = ${answer} cm.`, 45);
+  return q('perimeter_rectangle', `Use the diagram to find the perimeter of the rectangle.`, getUniqueOptions(answer, [length * width, answer + 2, answer - 2], 0, 200), answer, `Perimeter = 2 x (${length} + ${width}) = ${answer} cm.`, 45, `Add all four side lengths.`, {
+    questionImage: drawRectangleMeasureSvg(length, width),
+  });
 };
 
 const genAnglesStage = (difficulty) => {
@@ -927,11 +1072,15 @@ const genAnglesStage = (difficulty) => {
     const a = randomInt(35, 80);
     const b = randomInt(35, 80);
     const answer = 180 - a - b;
-    return q('angles_triangle', `A triangle has angles ${a} degrees, ${b} degrees and x. Find x.`, getUniqueOptions(answer, [180 - answer, answer + 10, answer - 10], 0, 180), answer, `Angles in a triangle add to 180 degrees. x = ${answer} degrees.`, 45);
+    return q('angles_triangle', `Use the diagram to find the missing angle x.`, getUniqueOptions(answer, [180 - answer, answer + 10, answer - 10], 0, 180), answer, `Angles in a triangle add to 180 degrees. x = ${answer} degrees.`, 45, `Angles in a triangle add to 180 degrees.`, {
+      questionImage: drawTriangleAnglesSvg(a, b),
+    });
   }
   const angle = randomInt(30, 150);
   const answer = 180 - angle;
-  return q('angles_straight_line', `Two angles on a straight line are ${angle} degrees and x. Find x.`, getUniqueOptions(answer, [angle, answer + 10, answer - 10], 0, 180), answer, `Angles on a straight line add to 180 degrees. x = 180 - ${angle} = ${answer} degrees.`, 40);
+  return q('angles_straight_line', `Use the diagram to find the missing angle x.`, getUniqueOptions(answer, [angle, answer + 10, answer - 10], 0, 180), answer, `Angles on a straight line add to 180 degrees. x = 180 - ${angle} = ${answer} degrees.`, 40, `Angles on a straight line add to 180 degrees.`, {
+    questionImage: drawStraightAngleSvg(angle),
+  });
 };
 
 const genCoordinateStage = (difficulty) => {
@@ -966,7 +1115,10 @@ const genSpatial2DStage = (difficulty) => {
       { shape: 'equilateral triangle', lines: 3 },
       { shape: 'regular pentagon', lines: 5 },
     ]);
-    return q('symmetry_lines', `How many lines of symmetry does a ${item.shape} have?`, getUniqueOptions(item.lines, [item.lines - 1, item.lines + 1, item.lines * 2], 0, 10), item.lines, `A ${item.shape} has ${item.lines} line${item.lines === 1 ? '' : 's'} of symmetry.`, 35);
+    const diagramShape = item.shape.includes('triangle') ? 'triangle' : item.shape.includes('pentagon') ? 'pentagon' : item.shape;
+    return q('symmetry_lines', `How many lines of symmetry does this ${item.shape} have?`, getUniqueOptions(item.lines, [item.lines - 1, item.lines + 1, item.lines * 2], 0, 10), item.lines, `A ${item.shape} has ${item.lines} line${item.lines === 1 ? '' : 's'} of symmetry.`, 35, `Imagine folding the shape so both sides match exactly.`, {
+      questionImage: draw2DShapeSvg(diagramShape),
+    });
   }
   if (mode === 'scale') {
     const length = randomInt(2, 9);
@@ -990,11 +1142,15 @@ const genSpatial3DStage = (difficulty) => {
     const w = randomInt(2, difficulty === 'hard' ? 10 : 6);
     const h = randomInt(2, difficulty === 'hard' ? 9 : 5);
     const answer = l * w * h;
-    return q('volume_rectangular_prism', `A rectangular prism is ${l} cm by ${w} cm by ${h} cm. What is its volume?`, getUniqueOptions(answer, [l * w, 2 * (l*w + l*h + w*h), answer + l], 0, 2000), answer, `Volume = length x width x height = ${l} x ${w} x ${h} = ${answer} cm^3.`, 55);
+    return q('volume_rectangular_prism', `Use the diagram to find the volume of the rectangular prism.`, getUniqueOptions(answer, [l * w, 2 * (l*w + l*h + w*h), answer + l], 0, 2000), answer, `Volume = length x width x height = ${l} x ${w} x ${h} = ${answer} cm^3.`, 55, `Volume of a rectangular prism is length x width x height.`, {
+      questionImage: drawRectangularPrismSvg(l, w, h),
+    });
   }
   if (mode === 'net') {
     const answer = 'cube';
-    return q('net_3d_object', `A net is made from 6 equal squares. Which 3D object can it form?`, ['cube', 'cone', 'sphere', 'cylinder'], answer, `A cube has 6 square faces, so its net can be made from 6 equal squares.`, 35);
+    return q('net_3d_object', `Which 3D object can this net form?`, ['cube', 'cone', 'sphere', 'cylinder'], answer, `A cube has 6 square faces, so its net can be made from 6 equal squares.`, 35, `Count the equal square faces in the net.`, {
+      questionImage: drawCubeNetSvg(),
+    });
   }
   const prism = pick([
     { name: 'cube', faces: 6, edges: 12, vertices: 8 },
