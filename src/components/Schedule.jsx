@@ -5,6 +5,7 @@ import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc } from 
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import { normalizeSubjectLabel } from '../utils/subjectLabels';
 
 const TIME_OPTIONS = [
   '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
@@ -294,7 +295,7 @@ const Schedule = () => {
                       <div style={{ fontSize: '1.02rem', fontWeight: 900, color: '#0f172a' }}>
                         {session.groupStudentNames ? session.groupStudentNames.join(', ') : session.studentName}
                       </div>
-                      <div style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 700 }}>{session.subject}</div>
+                      <div style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 700 }}>{normalizeSubjectLabel(session.subject)}</div>
                     </div>
                   </div>
                   <div style={{ 
@@ -456,7 +457,7 @@ const Schedule = () => {
                         onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                       >
                         <div style={{ fontSize: '10px', fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                          {session.subject} {isGroup && `(${group.length})`}
+                          {normalizeSubjectLabel(session.subject)} {isGroup && `(${group.length})`}
                         </div>
                         <div style={{ fontSize: '11px', fontWeight: 800, color: '#0f172a', lineHeight: '1.2' }}>
                           {group.map((s, i) => (
@@ -575,7 +576,7 @@ const Schedule = () => {
                         ? 'Group Class' 
                         : (selectedSession.groupStudentNames ? selectedSession.studentName : selectedSession.studentName)}
                     </h3>
-                    <p style={{ margin: 0, opacity: 0.85, fontWeight: 600 }}>{selectedSession.subject} · {selectedSession.date}</p>
+                    <p style={{ margin: 0, opacity: 0.85, fontWeight: 600 }}>{normalizeSubjectLabel(selectedSession.subject)} · {selectedSession.date}</p>
                     
                     {(selectedSession.isGroupedClass || selectedSession.groupStudentNames) && (
                       <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>

@@ -10,6 +10,7 @@ import { doc, onSnapshot, setDoc, collection, addDoc, query, where, or, orderBy,
 import AvatarPickerModal from './AvatarPickerModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
+import { normalizeSubjectLabel } from '../utils/subjectLabels';
 
 const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
   const { user, isAdmin } = useAuth();
@@ -255,6 +256,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     try {
       const sessionsToCreate = [];
       const groupId = `series_${Date.now()}`; 
+      const sessionSubject = normalizeSubjectLabel(newSession.subject.trim());
       
       const allStudentNames = newSession.studentIds.map(id => {
         const s = students.find(st => st.id === id);
@@ -278,6 +280,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
           
           sessionsToCreate.push({
             ...newSession,
+            subject: sessionSubject,
             studentId,
             studentName,
             studentEmail,
@@ -444,7 +447,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
                 {nextLesson ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: 'white' }}>{nextLesson.subject}</h4>
+                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: 'white' }}>{normalizeSubjectLabel(nextLesson.subject)}</h4>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
                       <Clock size={16} />
                       {nextLesson.date} @ {nextLesson.startTime}
@@ -476,7 +479,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Last Lesson</label>
                 {lastLesson ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{lastLesson.subject}</h4>
+                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{normalizeSubjectLabel(lastLesson.subject)}</h4>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 700, color: '#64748b' }}>
                       <CheckCircle2 size={16} style={{ color: '#10b981' }} />
                       Completed on {lastLesson.date}
@@ -594,7 +597,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       return (
                         <div key={s.id} className="activity-item" style={{ cursor: 'pointer' }} onClick={() => onSelectStudent(s.id)}>
                           <strong>{dName}</strong>
-                          <p>{s.level || s.year || 'N/A'} • {s.subject || s.school || 'N/A'}</p>
+                          <p>{s.level || s.year || 'N/A'} • {normalizeSubjectLabel(s.subject || s.school || 'N/A')}</p>
                         </div>
                       );
                     })}
@@ -630,7 +633,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div>
                     <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Lesson Details</span>
-                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{selectedViewSession.subject}</h3>
+                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{normalizeSubjectLabel(selectedViewSession.subject)}</h3>
                   </div>
                   <button onClick={() => setSelectedViewSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
                     <X size={20} />

@@ -1,10 +1,11 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
+import { normalizeSubjectLabel } from '../utils/subjectLabels';
 
 const StudentRow = ({ name, firstName, lastName, level, year, subject, school, status, onClick }) => {
   const displayName = name || (firstName ? `${firstName} ${lastName || ''}` : 'Unnamed Student');
   const displayLevel = level || year || 'N/A';
-  const displaySubject = subject || school || 'N/A';
+  const displaySubject = normalizeSubjectLabel(subject || school || 'N/A');
 
   return (
     <div 
