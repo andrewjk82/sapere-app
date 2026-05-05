@@ -172,7 +172,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const [leaders, setLeaders] = useState([]);
 
-  const isMobile = window.innerWidth < 768;
+  const isMobile = window.innerWidth < 1024; // Increased threshold to ensure desktop view for tablets
   const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
   const assignedYear = assignedYears[0];
   const isSenior = assignedYear && (parseInt(assignedYear.replace(/\D/g, '')) >= 7);
@@ -604,7 +604,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
       try {
         const qRef = collection(db, 'questions');
-      const manualSnap = await getDocs(query(qRef, orderBy('createdAt', 'desc'), limit(80)));
+        // Simpler query to avoid index issues, limit to 100 recent ones
+        const manualSnap = await getDocs(query(qRef, limit(100)));
       manualQs = manualSnap.docs.map(d => {
         const data = d.data();
         return {
@@ -627,10 +628,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           isManual: true
         };
       }).filter(q => {
-        // LOOSENED FILTER: If year matches, prioritize manual questions
-        const yearMatches = !q.year || q.year === assignedYear || q.year.replace('Year ', '') === assignedYear.replace('Year ', '');
+        // If it's a manual question, be more inclusive
+        const yearNum = q.year ? parseInt(String(q.year).replace(/\D/g, '')) : null;
+        const assignedYearNum = assignedYear ? parseInt(String(assignedYear).replace(/\D/g, '')) : null;
         
-        // If question has a chapter, try to match it, but if it doesn't, let it through if year matches
+        const yearMatches = !yearNum || !assignedYearNum || yearNum === assignedYearNum;
         const chapterMatches = !q.chapterId || q.chapterId === CHALLENGE_CHAPTER_ID || targetChapterIds.has(q.chapterId);
         
         return yearMatches && chapterMatches;
@@ -659,11 +661,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       });
     }) : [];
     
-    // Combine them (Manual first, or mixed? User said prioritize, so maybe put manual first)
-    // Actually mixing them is better for variety, but ensuring manual ones are there is the key.
+    // Combine them (Manual first, then AI)
     let combinedQs = [...selectedManual, ...aiQs];
-    // We still sort them randomly so the student doesn't know which is which
-    combinedQs = combinedQs.sort(() => Math.random() - 0.5);
+    // We only shuffle AI questions or if there are no manual ones
+    // But per user request, we put manual questions FIRST.
+    // So we don't shuffle the whole array if manual questions are present.
+    if (selectedManual.length === 0) {
+      combinedQs = combinedQs.sort(() => Math.random() - 0.5);
+    }
 
     setQuestions(combinedQs);
     setUserAnswers(new Array(qCount).fill(null));
