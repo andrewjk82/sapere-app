@@ -183,11 +183,12 @@ export default async function handler(req, res) {
           let body = `<h2 style="color: #4f46e5;">Hello, ${studentName}!</h2>`;
           
           if (hasUnfinishedTasks) {
-            body += `<div style="background: #fff1f2; padding: 15px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #fecaca;">`;
-            body += `<strong style="color: #e11d48;">⚠️ Unfinished Tasks for Today:</strong><ul style="margin: 10px 0;">`;
-            if (!challengeDone) body += `<li>Daily Challenge is not completed yet!</li>`;
-            if (calcEnabled && !calcDone) body += `<li>Daily Calculation practice is missing!</li>`;
-            body += `</ul></div>`;
+            body += `<div style="background: #fff1f2; padding: 22px 28px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #fecaca; color: #1f2937; line-height: 1.65; font-size: 16px;">`;
+            body += `<p style="margin: 0 0 16px;">Hello ${studentName},</p>`;
+            body += `<p style="margin: 0 0 16px;">You haven't completed your daily mathematics challenge for today yet.</p>`;
+            body += `<p style="margin: 0 0 16px;">Consistent practice is the key to mastery! Take 10 minutes to complete your challenge before the day ends.</p>`;
+            body += `<p style="margin: 0;">Good luck!</p>`;
+            body += `</div>`;
           }
 
           if (tomorrowClasses.length > 0) {
