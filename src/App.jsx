@@ -82,7 +82,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', splitLines =
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
       onAnimationComplete={(definition) => {
         if (definition?.opacity === 0) onDone?.();
       }}
@@ -96,8 +96,8 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', splitLines =
           hidden: {},
           visible: {
             transition: {
-              staggerChildren: 0.095,
-              delayChildren: 0.25,
+              staggerChildren: 0.08,
+              delayChildren: 0.2,
             },
           },
         }}
@@ -326,7 +326,7 @@ function App() {
 
   useEffect(() => {
     if (!showOpeningIntro) return undefined;
-    const messageDuration = (`${introGreeting} ${introName}`.length * 95) + 2400;
+    const messageDuration = (`${introGreeting} ${introName}`.length * 80) + 1500;
     const timer = window.setTimeout(() => {
       setOpeningIntroVisible(false);
     }, messageDuration);

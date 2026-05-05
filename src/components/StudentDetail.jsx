@@ -14,6 +14,7 @@ import {
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
+import MathView, { toDisplayText } from './MathView';
 import './student-detail.css';
 
 const ROLE_OPTIONS = [
@@ -27,6 +28,17 @@ const getRoleLabel = (role) => {
   if (role === 'parent') return 'Parent';
   if (role === 'admin') return 'Admin';
   return 'Role not set';
+};
+
+const getChallengeOptions = (question) => (
+  Array.isArray(question?.options) ? question.options : []
+);
+
+const getChallengeOptionText = (option) => toDisplayText(option);
+
+const getChallengeOptionImage = (option) => {
+  if (!option || typeof option !== 'object') return '';
+  return option.imageUrl || option.image || '';
 };
 
 const StudentDetail = ({ studentId, onBack }) => {
@@ -1174,36 +1186,57 @@ const StudentDetail = ({ studentId, onBack }) => {
               {selectedChallenge.questions ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                   {selectedChallenge.questions.map((q, idx) => {
-                    const userAnswer = selectedChallenge.userAnswers ? selectedChallenge.userAnswers[idx] : null;
-                    const isCorrect = userAnswer === q.answer;
+                    const result = selectedChallenge.answerResults?.[idx];
+                    const userAnswer = result?.selectedAnswer ?? (selectedChallenge.userAnswers ? selectedChallenge.userAnswers[idx] : null);
+                    const options = getChallengeOptions(q);
+                    const correctOptionText = q.isManual && q.answer !== undefined
+                      ? getChallengeOptionText(options[parseInt(q.answer, 10)])
+                      : String(q.answer ?? '');
+                    const isCorrect = result?.correct ?? String(userAnswer) === String(correctOptionText || q.answer);
+                    const questionText = toDisplayText(q.text || q.question, 'Question text unavailable');
                     return (
                       <div key={idx} style={{ padding: '20px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
                         <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5 }}>
-                          {idx + 1}. {q.text}
+                          {idx + 1}. <MathView content={questionText} />
                         </div>
+                        {q.questionImage && (
+                          <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '180px', objectFit: 'contain', margin: '0 0 16px', borderRadius: '14px', background: '#fff' }} />
+                        )}
                         <div style={{ display: 'grid', gap: '8px' }}>
-                          {q.options.map((opt, i) => {
+                          {options.map((opt, i) => {
+                            const optText = getChallengeOptionText(opt);
+                            const optImage = getChallengeOptionImage(opt);
+                            const isCorrectChoice = q.isManual ? String(i) === String(q.answer) : String(optText) === String(q.answer);
+                            const isUserChoice = String(optText) === String(userAnswer);
                             let bg = 'white';
                             let border = '1px solid #cbd5e1';
                             let color = '#475569';
-                            if (opt === q.answer) {
+                            if (isCorrectChoice) {
                               bg = '#dcfce7';
                               border = '1px solid #22c55e';
                               color = '#166534';
-                            } else if (opt === userAnswer && !isCorrect) {
+                            } else if (isUserChoice && !isCorrect) {
                               bg = '#fee2e2';
                               border = '1px solid #ef4444';
                               color = '#991b1b';
                             }
                             return (
                               <div key={i} style={{ padding: '12px 16px', borderRadius: '12px', background: bg, border: border, color: color, fontSize: '0.95rem', fontWeight: 700, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                <span>{opt}</span>
-                                {opt === q.answer && <Check size={18} style={{ color: '#166534' }} />}
-                                {opt === userAnswer && !isCorrect && <X size={18} style={{ color: '#991b1b' }} />}
+                                <span style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+                                  {optImage && <img src={optImage} alt="" style={{ width: '44px', height: '44px', objectFit: 'contain', borderRadius: '8px', background: '#fff' }} />}
+                                  <MathView content={optText} />
+                                </span>
+                                {isCorrectChoice && <Check size={18} style={{ color: '#166534', flexShrink: 0 }} />}
+                                {isUserChoice && !isCorrect && <X size={18} style={{ color: '#991b1b', flexShrink: 0 }} />}
                               </div>
                             );
                           })}
                         </div>
+                        {q.solution && (
+                          <div style={{ marginTop: '14px', padding: '12px 14px', borderRadius: '12px', background: '#eef2ff', color: '#475569', fontWeight: 700, lineHeight: 1.5 }}>
+                            <MathView content={q.solution} />
+                          </div>
+                        )}
                       </div>
                     );
                   })}
