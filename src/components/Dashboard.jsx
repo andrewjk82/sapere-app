@@ -6,7 +6,7 @@ import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, updateDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -25,6 +25,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const [lastSync, setLastSync] = useState(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
+  const [pendingGrading, setPendingGrading] = useState([]);
+  const [selectedGradingItem, setSelectedGradingItem] = useState(null);
 
   // Fetch student daily stats for insights
   useEffect(() => {
@@ -63,6 +65,14 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     topics.sort((a, b) => b.errorRate - a.errorRate);
     return topics.filter(t => t.total >= 3 && t.errorRate > 0).slice(0, 3);
   }, [dailyStats]);
+
+  useEffect(() => {
+    if (!isAdmin) return;
+    const q = query(collection(db, 'grading_queue'), where('status', '==', 'pending'), orderBy('submittedAt', 'desc'), limit(5));
+    return onSnapshot(q, (snap) => {
+      setPendingGrading(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    });
+  }, [isAdmin]);
 
   // ── Fetch Last Sync Info ──
   useEffect(() => {
@@ -319,6 +329,37 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     }
   };
 
+  const handleGrade = async (status) => {
+    if (!selectedGradingItem) return;
+    try {
+      await updateDoc(doc(db, 'grading_queue', selectedGradingItem.id), {
+        status,
+        gradedAt: serverTimestamp(),
+        gradedBy: user.uid
+      });
+      
+      if (status === 'correct') {
+        // Calculate proportional XP
+        const totalQ = selectedGradingItem.totalQuestions || 10;
+        const type = selectedGradingItem.challengeType || 'daily';
+        const maxXP = type === 'calc' ? 50 : 100;
+        const xpPerQuestion = Math.round(maxXP / totalQ);
+
+        await updateDoc(doc(db, 'users', selectedGradingItem.userId), {
+          totalXP: increment(xpPerQuestion),
+          updatedAt: new Date().toISOString()
+        });
+        showToast(`Graded as Correct. Student received ${xpPerQuestion} XP!`, 'success');
+      } else {
+        showToast(`Graded as Incorrect.`, 'info');
+      }
+      setSelectedGradingItem(null);
+    } catch (err) {
+      console.error("Failed to grade item:", err);
+      showToast("Failed to update grade", 'error');
+    }
+  };
+
   const getGreeting = () => {
     const hour = new Date().getHours();
     if (hour < 12) return "Good morning";
@@ -525,6 +566,36 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                   )}
                 </div>
               </div>
+              
+              {pendingGrading.length > 0 && (
+                <div className="app-panel dashboard-card" style={{ marginTop: '20px' }}>
+                  <div className="dashboard-card__header">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <h3 style={{ margin: 0 }}>Grading Queue</h3>
+                      <span style={{ background: '#ef4444', color: 'white', fontSize: '0.7rem', fontWeight: 800, padding: '2px 8px', borderRadius: '10px' }}>{pendingGrading.length} PENDING</span>
+                    </div>
+                  </div>
+                  <div className="activity-list">
+                    {pendingGrading.map(item => (
+                      <div 
+                        key={item.id} 
+                        className="activity-item" 
+                        style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '12px' }}
+                        onClick={() => setSelectedGradingItem(item)}
+                      >
+                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: '#f1f5f9', overflow: 'hidden', border: '1px solid #e2e8f0', flexShrink: 0 }}>
+                          <img src={item.answerImage} alt="Sketch" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontWeight: 700, fontSize: '0.9rem', color: '#1e1b4b' }}>{item.userName}</div>
+                          <div style={{ fontSize: '0.8rem', color: '#64748b' }}>{item.topicTitle || 'Graph Sketch'}</div>
+                        </div>
+                        <ChevronRight size={16} color="#94a3b8" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <div className="app-page-column">
                 <div className="app-panel dashboard-card">
@@ -873,6 +944,68 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                   {isSubmitting ? 'Saving...' : 'Create Session'}
                 </button>
               </form>
+            </motion.div>
+          </div>
+        )}
+
+        {selectedGradingItem && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setSelectedGradingItem(null)}
+              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(8px)' }}
+            />
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              style={{ position: 'relative', width: '100%', maxWidth: '600px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.2)' }}
+            >
+              <div style={{ background: '#1e1b4b', padding: '24px 32px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Manual Grading</span>
+                  <h3 style={{ margin: '4px 0 0', color: 'white', fontWeight: 900 }}>{selectedGradingItem.userName}'s Work</h3>
+                </div>
+                <button onClick={() => setSelectedGradingItem(null)} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                  <X size={20} />
+                </button>
+              </div>
+              
+              <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '8px' }}>Question</label>
+                  <p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b', fontSize: '1rem', lineHeight: 1.5 }}>
+                    {selectedGradingItem.questionText}
+                  </p>
+                </div>
+
+                <div style={{ 
+                  width: '100%', 
+                  background: '#f1f5f9', 
+                  borderRadius: '20px', 
+                  overflow: 'hidden', 
+                  border: '2px solid #e2e8f0',
+                  position: 'relative',
+                  aspectRatio: '4/3'
+                }}>
+                  <img src={selectedGradingItem.answerImage} alt="Student Drawing" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '8px' }}>
+                  <button 
+                    onClick={() => handleGrade('incorrect')}
+                    style={{ padding: '16px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                  >
+                    <X size={20} /> Incorrect
+                  </button>
+                  <button 
+                    onClick={() => handleGrade('correct')}
+                    style={{ padding: '16px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                  >
+                    <CheckCircle2 size={20} /> Correct (+{Math.round((selectedGradingItem.challengeType === 'calc' ? 50 : 100) / (selectedGradingItem.totalQuestions || 10))} XP)
+                  </button>
+                </div>
+              </div>
             </motion.div>
           </div>
         )}

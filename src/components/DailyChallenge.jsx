@@ -12,6 +12,7 @@ import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, 
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
 import MathView, { toDisplayText } from './MathView';
+import WorkingOutCanvas from './WorkingOutCanvas';
 import { Target, AlertTriangle, TrendingUp } from 'lucide-react';
 
 const CHALLENGE_YEAR = 'Year 1';
@@ -162,6 +163,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [reportedQuestion, setReportedQuestion] = useState(null);
   const [showHint, setShowHint] = useState(false);
   const [autoTransitionTimer, setAutoTransitionTimer] = useState(null);
+  const canvasRef = useRef(null);
+  const [isSubmittingCanvas, setIsSubmittingCanvas] = useState(false);
   const [countdown, setCountdown] = useState(0);
   const [challengeType, setChallengeType] = useState('daily');
   const [warnings, setWarnings] = useState(0);
@@ -820,14 +823,23 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     </AnimatePresence>
   );
 
-  const handleAnswer = (optionText, optIdx = null) => {
-    if (step === 'feedback') return;
+  const handleAnswer = async (optionText, optIdx = null) => {
+    if (step === 'feedback' || isSubmittingCanvas) return;
     
     const currentQ = questions[currentIdx];
     const isShortAnswer = currentQ?.type === 'short_answer';
+    const isGraphSketch = currentQ?.type === 'graph_sketch';
     
     let correct = false;
-    if (isShortAnswer) {
+    let canvasDataUrl = null;
+
+    if (isGraphSketch) {
+      setIsSubmittingCanvas(true);
+      if (canvasRef.current) {
+        canvasDataUrl = await canvasRef.current.exportImage();
+      }
+      correct = false; // Pending review
+    } else if (isShortAnswer) {
       correct = optionText?.trim().toLowerCase() === currentQ.answer?.trim().toLowerCase();
     } else {
       if (optIdx !== null && currentQ.isManual && currentQ.answer === optIdx.toString()) {
@@ -837,10 +849,32 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     }
 
+    if (isGraphSketch && canvasDataUrl) {
+      try {
+        await addDoc(collection(db, 'grading_queue'), {
+          userId: user.uid,
+          userName: studentProfile?.name || 'Student',
+          questionId: currentQ?.id || null,
+          questionText: currentQ?.question || currentQ?.text || '',
+          answerImage: canvasDataUrl,
+          status: 'pending',
+          submittedAt: serverTimestamp(),
+          year: currentQ?.year || CHALLENGE_YEAR,
+          chapterTitle: currentQ?.chapterTitle || '',
+          topicTitle: currentQ?.topicTitle || '',
+          challengeType: challengeType,
+          totalQuestions: TOTAL_QUESTIONS,
+        });
+      } catch (err) {
+        console.error("Failed to submit drawing for review", err);
+      }
+      setIsSubmittingCanvas(false);
+    }
+
     setSelectedOption(optionText);
     setSelectedOptionIdx(optIdx);
     setIsCorrect(correct);
-    if (correct) setScore(prev => prev + 1);
+    if (correct && !isGraphSketch) setScore(prev => prev + 1);
     
     setUserAnswers(prev => {
       const newAnswers = [...prev];
@@ -862,8 +896,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         topicGroup: currentQ?.topicGroup || '',
         generatorType: currentQ?.generatorType || currentQ?.type || 'manual',
         difficulty: currentQ?.difficulty || 'manual',
-        selectedAnswer: optionText,
+        selectedAnswer: isGraphSketch ? 'Pending Review' : optionText,
         correct,
+        isPending: isGraphSketch,
         isManual: Boolean(currentQ?.isManual),
       };
       return newResults;
@@ -871,9 +906,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     setStep('feedback');
 
-    // Auto-transition after 5 seconds if answer is wrong
-    if (!correct) {
-      setCountdown(5);
+    // Auto-transition after 5 seconds if answer is wrong or pending graph sketch
+    if (!correct || isGraphSketch) {
+      setCountdown(isGraphSketch ? 3 : 5);
       const interval = setInterval(() => {
         setCountdown(prev => Math.max(0, prev - 1));
       }, 1000);
@@ -1701,6 +1736,27 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     </button>
                   )}
                 </div>
+              ) : questions[currentIdx]?.type === 'graph_sketch' ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <p style={{ color: '#64748b', fontSize: '0.95rem', textAlign: 'center', marginBottom: '8px' }}>
+                    Draw your graph on the canvas, then submit it for grading.
+                  </p>
+                  {step !== 'feedback' ? (
+                    <button 
+                      onClick={() => handleAnswer('Graph Submitted')}
+                      disabled={isSubmittingCanvas}
+                      className="app-button app-button--primary"
+                      style={{ padding: '18px', borderRadius: '20px' }}
+                    >
+                      {isSubmittingCanvas ? 'Saving Graph...' : 'Submit Graph for Review'}
+                    </button>
+                  ) : (
+                    <div style={{ textAlign: 'center', padding: '16px', background: '#fef3c7', borderRadius: '16px', color: '#d97706', fontWeight: 800 }}>
+                      <Check size={20} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '8px' }} />
+                      Graph Submitted - Pending Review
+                    </div>
+                  )}
+                </div>
               ) : (
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                   {getOptions(questions[currentIdx]).map((opt, i) => {
@@ -1798,6 +1854,26 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 </motion.div>
               )}
             </div>
+
+            {/* Right Side: Working Out Canvas for Senior Students */}
+            {showSplitScreen && (
+              <div style={{ 
+                flex: 1, 
+                height: window.innerWidth >= 1024 ? 'calc(100vh - 120px)' : '400px', 
+                minHeight: '400px',
+                display: 'flex', 
+                flexDirection: 'column',
+                position: window.innerWidth >= 1024 ? 'sticky' : 'static',
+                top: '60px'
+              }}>
+                <WorkingOutCanvas 
+                  ref={canvasRef} 
+                  questionType={questions[currentIdx]?.type} 
+                  isSubmitted={step === 'feedback'}
+                />
+              </div>
+            )}
+          </div>
           </motion.div>
         )}
 

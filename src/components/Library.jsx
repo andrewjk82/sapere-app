@@ -30,10 +30,13 @@ const formatDate = (ts) => {
 // Helper to convert Google Drive link to preview link
 const getDrivePreviewUrl = (url) => {
   if (!url) return null;
-  const driveRegex = /\/file\/d\/(.+?)\/(view|edit)?/;
-  const match = url.match(driveRegex);
-  if (match && match[1]) {
-    return `https://drive.google.com/file/d/${match[1]}/preview`;
+  const patterns = [
+    /\/file\/d\/([^/]+)/,
+    /[?&]id=([^&]+)/,
+  ];
+  const match = patterns.map(pattern => url.match(pattern)).find(Boolean);
+  if (match?.[1]) {
+    return `https://drive.google.com/file/d/${encodeURIComponent(match[1])}/preview`;
   }
   return null;
 };
@@ -57,17 +60,30 @@ const Library = () => {
     return onSnapshot(q, (snap) => {
       setMaterials(snap.docs.map(d => ({ id: d.id, ...d.data() })));
       setLoading(false);
+    }, (err) => {
+      console.error('Library materials error:', err);
+      setMaterials([]);
+      setLoading(false);
+      showToast('Failed to load library resources.', 'error');
     });
-  }, []);
+  }, [showToast]);
 
   const handleAddLink = async (e) => {
     e.preventDefault();
-    if (!linkTitle.trim() || !linkUrl.trim()) return;
+    if (!isAdmin || !user?.uid) {
+      showToast('You do not have permission to add resources.', 'error');
+      return;
+    }
+
+    const title = linkTitle.trim();
+    const url = linkUrl.trim();
+    if (!title || !url) return;
+
     setIsSubmitting(true);
     try {
       await addDoc(collection(db, 'materials'), {
-        title: linkTitle.trim(),
-        url: linkUrl.trim(),
+        title,
+        url,
         category: linkCategory,
         description: linkDescription.trim(),
         isExternal: true,
@@ -79,7 +95,7 @@ const Library = () => {
       setLinkTitle(''); setLinkUrl(''); setLinkDescription(''); setLinkCategory('General');
       showToast('Resource added successfully!', 'success');
     } catch (err) {
-      console.error(err);
+      console.error('Failed to add library resource:', err);
       showToast('Failed to add resource.', 'error');
     } finally {
       setIsSubmitting(false);
@@ -88,12 +104,18 @@ const Library = () => {
 
   const handleDelete = async (id) => {
     if (!confirm('Delete this resource?')) return;
-    try { await deleteDoc(doc(db, 'materials', id)); } catch (err) { console.error(err); }
+    try {
+      await deleteDoc(doc(db, 'materials', id));
+      showToast('Resource deleted.', 'success');
+    } catch (err) {
+      console.error('Failed to delete library resource:', err);
+      showToast('Failed to delete resource.', 'error');
+    }
   };
 
   const filtered = materials.filter(m =>
     (activeCategory === 'All' || m.category === activeCategory) &&
-    m.title.toLowerCase().includes(searchTerm.toLowerCase())
+    (m.title || '').toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
