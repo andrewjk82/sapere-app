@@ -666,10 +666,115 @@ export const CURRICULUM_DATA = {
     }
   ],
   'Year 6': [
-    { id: 'y6-1', title: 'Algebra Foundations', modules: 10 },
-    { id: 'y6-2', title: 'Ratio & Rates', modules: 8 },
-    { id: 'y6-3', title: 'Probability Basics', modules: 7 },
-    { id: 'y6-4', title: 'Angles & Geometry', modules: 9 }
+    {
+      id: 'y6-rn',
+      title: 'Represents Numbers (B)',
+      modules: 4,
+      topics: [
+        { id: 'y6-rn-1', code: 'MA3-RN-03', title: 'Integers on a number line: Locate and represent positive and negative integers; order integers; understand direction and distance from zero' },
+        { id: 'y6-rn-2', code: 'MA3-RN-01', title: 'Fractions, decimals, percentages: Make connections between benchmark fractions, decimals and percentages (e.g. ½ = 0.5 = 50%); convert fluently between forms' },
+        { id: 'y6-rn-3', code: 'MA3-RN-01', title: 'Percentage discounts: Determine percentage discounts of 10%, 25% and 50%; apply to real money contexts' },
+        { id: 'y6-rn-4', code: 'MA3-RN-03', title: 'Ordering negative integers: Compare and order positive and negative integers; represent on a horizontal and vertical number line' }
+      ]
+    },
+    {
+      id: 'y6-ar',
+      title: 'Additive Relations (B)',
+      modules: 4,
+      topics: [
+        { id: 'y6-ar-1', code: 'MA3-AR-01', title: 'Efficient strategies — large numbers: Choose and apply efficient mental and written strategies for addition and subtraction of large numbers' },
+        { id: 'y6-ar-2', code: 'MA3-AR-01', title: 'Add and subtract decimals: Apply known strategies to add and subtract decimal numbers to 3 decimal places' },
+        { id: 'y6-ar-3', code: 'MA3-AR-01', title: 'Budgeting contexts: Solve problems involving addition and subtraction in real-life budgeting and financial contexts' },
+        { id: 'y6-ar-4', code: 'MA3-AR-01', title: 'Reasonableness: Use leading digit approximation and rounding of decimal numbers to check solutions' }
+      ]
+    },
+    {
+      id: 'y6-mr',
+      title: 'Multiplicative Relations (B)',
+      modules: 5,
+      topics: [
+        { id: 'y6-mr-1', code: 'MA3-MR-01', title: 'Multiply and divide whole numbers: Select and apply strategies for multi-digit multiplication and division including long division' },
+        { id: 'y6-mr-2', code: 'MA3-MR-01', title: 'Multiply and divide decimals by powers of 10: Multiply and divide decimal numbers by 10, 100 and 1000; connect to place value shifts' },
+        { id: 'y6-mr-3', code: 'MA3-MR-01', title: 'Equivalent number sentences: Use equivalent number sentences involving multiplication and division to find unknown quantities' },
+        { id: 'y6-mr-4', code: 'MA3-MR-01', title: 'Number patterns: Represent and describe number patterns formed by multiples; identify rules in sequences' },
+        { id: 'y6-mr-5', code: 'MA3-MR-01', title: 'Order of operations (full): Explore brackets and full order of operations (BODMAS) to write and evaluate multi-step number sentences' }
+      ]
+    },
+    {
+      id: 'y6-rqf',
+      title: 'Representing Quantity Fractions (B)',
+      modules: 5,
+      topics: [
+        { id: 'y6-rqf-1', code: 'MA3-RQF-01', title: 'Compare fractions (different denominators): Compare fractions using equivalence; compare fractions with different denominators by finding common denominators' },
+        { id: 'y6-rqf-2', code: 'MA3-RQF-01', title: 'Add fractions with related denominators: Use equivalence to add and subtract fractional quantities including fractions with related denominators' },
+        { id: 'y6-rqf-3', code: 'MA3-RQF-01', title: 'Fractions of whole numbers: Find fractional quantities of whole numbers — halves, quarters, fifths and tenths; solve word problems' },
+        { id: 'y6-rqf-4', code: 'MA3-RQF-02', title: 'Fractions as division: Recognise that a fraction represents division; build up to the whole from a given fractional part' },
+        { id: 'y6-rqf-5', code: 'MA3-RQF-01', title: 'Simplify fractions: Simplify fractions using highest common factor; understand equivalence across forms' }
+      ]
+    },
+    {
+      id: 'y6-gm',
+      title: 'Geometric Measure (B)',
+      modules: 6,
+      topics: [
+        { id: 'y6-gm-1', code: 'MA3-GM-01', title: 'All 4 quadrants: Use the full Cartesian coordinate system across all 4 quadrants; plot and describe locations using positive and negative coordinates' },
+        { id: 'y6-gm-2', code: 'MA3-GM-02', title: 'Convert metric length units: Connect decimal representations to the metric system; convert between mm, cm, m and km' },
+        { id: 'y6-gm-3', code: 'MA3-GM-02', title: 'Solve length problems: Solve problems involving comparison of lengths using appropriate units of measurement' },
+        { id: 'y6-gm-4', code: 'MA3-GM-03', title: 'Angles on a straight line: Investigate that angles on a straight line sum to 180°; apply to find unknown angles' },
+        { id: 'y6-gm-5', code: 'MA3-GM-03', title: 'Angles at a point: Investigate that angles at a point sum to 360°; apply to find unknown angles' },
+        { id: 'y6-gm-6', code: 'MA3-GM-03', title: 'Vertically opposite angles: Investigate the relationships formed by the intersection of straight lines; identify and use vertically opposite angles' }
+      ]
+    },
+    {
+      id: 'y6-2ds',
+      title: '2D Spatial Structure (B)',
+      modules: 5,
+      topics: [
+        { id: 'y6-2ds-1', code: 'MA2-2DS-01', title: 'Transformations on a grid: Translate, reflect and rotate shapes on a coordinate grid; describe transformations precisely' },
+        { id: 'y6-2ds-2', code: 'MA2-2DS-01', title: 'Enlargement: Explore the enlargement transformation; understand scale and similarity' },
+        { id: 'y6-2ds-3', code: 'MA3-2DS-03', title: 'Area of composite figures: Find the area of composite figures by subdivision into familiar shapes' },
+        { id: 'y6-2ds-4', code: 'MA3-2DS-02', title: 'Area of parallelograms: Calculate the area of a parallelogram using base × height via subdivision and rearrangement' },
+        { id: 'y6-2ds-5', code: 'MA3-2DS-02', title: 'Area of triangles: Determine the area of a triangle using ½ × base × height' }
+      ]
+    },
+    {
+      id: 'y6-3ds',
+      title: '3D Spatial Structure (B)',
+      modules: 2,
+      topics: [
+        { id: 'y6-3ds-1', code: 'MA3-3DS-01', title: 'Construct 3D objects: Construct prisms and pyramids using nets; make objects using cubes' },
+        { id: 'y6-3ds-2', code: 'MA3-3DS-02', title: 'Volume — cm³ and m³: Use cubic centimetres and cubic metres; recognise the multiplicative structure (l × w × h) to find volume of rectangular prisms' }
+      ]
+    },
+    {
+      id: 'y6-nsm',
+      title: 'Non-Spatial Measure (B)',
+      modules: 2,
+      topics: [
+        { id: 'y6-nsm-1', code: 'MA3-NSM-01', title: 'Convert mass units: Convert between common metric units of mass (mg, g, kg, t); net mass vs gross mass' },
+        { id: 'y6-nsm-2', code: 'MA3-NSM-02', title: 'Duration problems: Solve problems involving duration using 12- and 24-hour time; personal and transport timetables' }
+      ]
+    },
+    {
+      id: 'y6-data',
+      title: 'Data (B)',
+      modules: 3,
+      topics: [
+        { id: 'y6-data-1', code: 'MA3-DATA-01', title: 'Extended data displays: Interpret and compare dot plots, pie charts, side-by-side column graphs, line graphs and two-way tables' },
+        { id: 'y6-data-2', code: 'MA3-DATA-01', title: 'Misleading data: Identify and explain misleading data and graphs in digital media and real contexts' },
+        { id: 'y6-data-3', code: 'MA3-DATA-01', title: 'Data in digital media: Interpret data presented in digital media and broader contexts; critically evaluate representations' }
+      ]
+    },
+    {
+      id: 'y6-chan',
+      title: 'Chance (B)',
+      modules: 3,
+      topics: [
+        { id: 'y6-chan-1', code: 'MA3-CHAN-01', title: 'Create random generators: Create random generators (spinners, cards, dice); describe probabilities using fractions' },
+        { id: 'y6-chan-2', code: 'MA3-CHAN-01', title: 'Small and large trials: Conduct chance experiments with both small and large numbers of trials; record systematically' },
+        { id: 'y6-chan-3', code: 'MA3-CHAN-01', title: 'Observed vs expected: Compare observed frequencies of outcomes with expected theoretical results; use proportional reasoning' }
+      ]
+    }
   ],
   'Year 7': [
     {
