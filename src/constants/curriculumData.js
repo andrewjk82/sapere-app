@@ -555,10 +555,115 @@ export const CURRICULUM_DATA = {
     }
   ],
   'Year 5': [
-    { id: 'y5-1', title: 'Order of Operations', modules: 8 },
-    { id: 'y5-2', title: 'Decimals & Percentages', modules: 10 },
-    { id: 'y5-3', title: 'Data Representation', modules: 7 },
-    { id: 'y5-4', title: 'Volume & Capacity', modules: 8 }
+    {
+      id: 'y5-rn',
+      title: 'Represents Numbers (A)',
+      modules: 5,
+      topics: [
+        { id: 'y5-rn-1', code: 'MA3-RN-01', title: 'Numbers to millions: Recognise, represent and order numbers in the millions; apply place value to partition, regroup and rename numbers to 1 billion' },
+        { id: 'y5-rn-2', code: 'MA3-RN-02', title: 'Decimals to thousandths: Extend place value beyond hundredths to thousandths; compare, order and represent decimals up to 3 decimal places' },
+        { id: 'y5-rn-3', code: 'MA3-RN-03', title: 'Negative integers: Locate and represent integers (positive and negative) on a number line' },
+        { id: 'y5-rn-4', code: 'MA3-RN-01', title: 'Percentages: Determine percentages of quantities; find equivalent fractions and decimals for benchmark percentages (10%, 25%, 50%)' },
+        { id: 'y5-rn-5', code: 'MA3-RN-01', title: 'Percentage discounts: Calculate percentage discounts of 10%, 25% and 50% in real contexts' }
+      ]
+    },
+    {
+      id: 'y5-ar',
+      title: 'Additive Relations (A)',
+      modules: 4,
+      topics: [
+        { id: 'y5-ar-1', code: 'MA3-AR-01', title: 'Efficient mental and written strategies: Apply efficient strategies to solve addition and subtraction problems with large whole numbers' },
+        { id: 'y5-ar-2', code: 'MA3-AR-01', title: 'Reasonableness of solutions: Use estimation, rounding and place value understanding to check the reasonableness of solutions' },
+        { id: 'y5-ar-3', code: 'MA3-AR-01', title: 'Add and subtract decimals: Apply known strategies to add and subtract decimal numbers in context' },
+        { id: 'y5-ar-4', code: 'MA3-AR-01', title: 'Budgeting: Choose and use efficient strategies to solve addition and subtraction problems in budgeting contexts' }
+      ]
+    },
+    {
+      id: 'y5-mr',
+      title: 'Multiplicative Relations (A)',
+      modules: 6,
+      topics: [
+        { id: 'y5-mr-1', code: 'MA3-MR-01', title: 'Multiply 2, 3, 4-digit × 1-digit: Use partitioning and place value; use estimation and rounding to check reasonableness' },
+        { id: 'y5-mr-2', code: 'MA3-MR-01', title: 'Multiply 2 and 3-digit × 2-digit: Select and apply mental and written strategies including area model and column multiplication' },
+        { id: 'y5-mr-3', code: 'MA3-MR-01', title: 'Factors and products: Determine products and factors; identify prime and composite numbers; highest common factor; factor trees' },
+        { id: 'y5-mr-4', code: 'MA3-MR-02', title: 'Division with remainders: Represent and solve division problems with whole number remainders; short and long division strategies' },
+        { id: 'y5-mr-5', code: 'MA3-MR-02', title: 'Divide 3+ digit by 1-digit: Select and apply strategies to divide numbers with 3 or more digits by a one-digit divisor' },
+        { id: 'y5-mr-6', code: 'MA3-MR-01', title: 'Order of operations: Explore brackets and order of operations (BODMAS) to write and evaluate number sentences' }
+      ]
+    },
+    {
+      id: 'y5-rqf',
+      title: 'Representing Quantity Fractions (A)',
+      modules: 6,
+      topics: [
+        { id: 'y5-rqf-1', code: 'MA3-RQF-01', title: 'Compare and order fractions: Compare and order unit fractions with denominators 2, 3, 4, 5, 6, 8 and 10; recognise 1 as the whole' },
+        { id: 'y5-rqf-2', code: 'MA3-RQF-01', title: 'Add and subtract same denominator: Solve problems involving addition and subtraction of fractions with the same denominator' },
+        { id: 'y5-rqf-3', code: 'MA3-RQF-01', title: 'Equivalent fractions: Use equivalence to add and subtract fractional quantities; add fractions with related denominators' },
+        { id: 'y5-rqf-4', code: 'MA3-RQF-02', title: 'Fractions as division: Recognise that a fraction can represent a division; build up to the whole from a given fractional part' },
+        { id: 'y5-rqf-5', code: 'MA3-RQF-01', title: 'Fractions of quantities: Find ½, ¼, ⅕ and 1/10 of measures and quantities; fraction word problems' },
+        { id: 'y5-rqf-6', code: 'MA3-RQF-01', title: 'Simplifying fractions: Simplify fractions; compare fractions with different denominators' }
+      ]
+    },
+    {
+      id: 'y5-gm',
+      title: 'Geometric Measure (A)',
+      modules: 5,
+      topics: [
+        { id: 'y5-gm-1', code: 'MA3-GM-01', title: 'Cartesian coordinate plane: Explore the coordinate system; locate and describe points using (x, y) notation in the first quadrant' },
+        { id: 'y5-gm-2', code: 'MA3-GM-02', title: 'Kilometres and metres: Use metres and kilometres for length and distances; choose appropriate units' },
+        { id: 'y5-gm-3', code: 'MA3-GM-02', title: 'Perimeter of shapes: Measure lengths to find perimeters; calculate perimeter of rectangles and composite shapes' },
+        { id: 'y5-gm-4', code: 'MA3-GM-03', title: 'Measuring angles in degrees: Estimate, measure and compare angles using degrees; use a protractor to measure and identify types of angles' },
+        { id: 'y5-gm-5', code: 'MA3-GM-03', title: 'Angles on a line and at a point: Identify that angles on a straight line sum to 180°; angles at a point sum to 360°' }
+      ]
+    },
+    {
+      id: 'y5-2ds',
+      title: '2D Spatial Structure (A)',
+      modules: 5,
+      topics: [
+        { id: 'y5-2ds-1', code: 'MA3-2DS-01', title: 'Classify 2D shapes: Classify triangles (scalene, isosceles, equilateral) and quadrilaterals by their properties; regular and irregular polygons' },
+        { id: 'y5-2ds-2', code: 'MA3-2DS-02', title: 'Area — hectares and km²: Use hectares and square kilometres as units for larger areas; calculate area of rectangles' },
+        { id: 'y5-2ds-3', code: 'MA3-2DS-02', title: 'Area — parallelograms: Calculate area of a parallelogram using subdivision and rearrangement' },
+        { id: 'y5-2ds-4', code: 'MA3-2DS-02', title: 'Area — triangles: Determine the area of a triangle using the relationship to rectangles' },
+        { id: 'y5-2ds-5', code: 'MA3-2DS-03', title: 'Composite figures: Find the area of composite figures using addition and subtraction of component shapes' }
+      ]
+    },
+    {
+      id: 'y5-3ds',
+      title: '3D Spatial Structure (A)',
+      modules: 2,
+      topics: [
+        { id: 'y5-3ds-1', code: 'MA3-3DS-01', title: 'Prisms and pyramids: Compare, describe and name; connect 3D objects with 2D representations and nets' },
+        { id: 'y5-3ds-2', code: 'MA3-3DS-02', title: 'Capacity — convert units: Choose appropriate units; connect decimal representations to the metric system; use displacement for irregular solids' }
+      ]
+    },
+    {
+      id: 'y5-nsm',
+      title: 'Non-Spatial Measure (A)',
+      modules: 2,
+      topics: [
+        { id: 'y5-nsm-1', code: 'MA3-NSM-01', title: 'Time — 24-hour and timezones: Interpret 24-hour time; determine time differences across Australian time zones' },
+        { id: 'y5-nsm-2', code: 'MA3-NSM-02', title: 'Temperature: Measure, compare and interpret temperatures using Celsius; read thermometers' }
+      ]
+    },
+    {
+      id: 'y5-data',
+      title: 'Data (A)',
+      modules: 2,
+      topics: [
+        { id: 'y5-data-1', code: 'MA3-DATA-01', title: 'Many-to-one scale graphs: Construct column graphs, picture graphs and line graphs using many-to-one scales' },
+        { id: 'y5-data-2', code: 'MA3-DATA-02', title: 'Interpret and compare: Read, interpret and compare data across a range of display types; pose questions and draw conclusions' }
+      ]
+    },
+    {
+      id: 'y5-chan',
+      title: 'Chance (A)',
+      modules: 2,
+      topics: [
+        { id: 'y5-chan-1', code: 'MA3-CHAN-01', title: 'Probability language and scale: Order outcomes from impossible to certain; describe using fractions and the probability scale 0 to 1' },
+        { id: 'y5-chan-2', code: 'MA3-CHAN-01', title: 'Observed vs expected outcomes: Conduct experiments, record results and compare observed outcomes with expected theoretical outcomes' }
+      ]
+    }
   ],
   'Year 6': [
     { id: 'y6-1', title: 'Algebra Foundations', modules: 10 },
