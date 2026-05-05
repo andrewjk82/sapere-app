@@ -173,6 +173,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [leaders, setLeaders] = useState([]);
 
   const isMobile = window.innerWidth < 768;
+  const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
+  const assignedYear = assignedYears[0];
+  const isSenior = assignedYear && (parseInt(assignedYear.replace(/\D/g, '')) >= 7);
+  const showSplitScreen = !isMobile && (
+    questions[currentIdx]?.type === 'graph_sketch' || 
+    isSenior ||
+    studentProfile?.seniorCanvasEnabled === true
+  );
+
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = getQuestionCount(challengeType);
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
@@ -1616,7 +1625,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               alignItems: 'center'
             }}
           >
-            <div style={{ maxWidth: '600px', width: '100%', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div style={{ 
+              maxWidth: showSplitScreen ? '1200px' : '600px', 
+              width: '100%', 
+              display: 'flex', 
+              flexDirection: showSplitScreen ? 'row' : 'column', 
+              gap: isMobile ? '20px' : '40px',
+              alignItems: 'flex-start',
+              transition: 'all 0.3s ease'
+            }}>
+              <div style={{ flex: 1, maxWidth: showSplitScreen ? '600px' : '100%', width: '100%', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {/* Top Progress & Header */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
                 <div style={{ textAlign: 'left' }}>
@@ -1853,7 +1871,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   </button>
                 </motion.div>
               )}
-            </div>
+              </div>
 
             {/* Right Side: Working Out Canvas for Senior Students */}
             {showSplitScreen && (
