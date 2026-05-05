@@ -172,7 +172,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const [leaders, setLeaders] = useState([]);
 
-  const isMobile = window.innerWidth < 1024;
+  const isMobile = window.innerWidth < 768; // Lowered threshold to allow split-screen on tablets
   const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
   const assignedYear = assignedYears[0];
   const isSenior = assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 7);
@@ -604,8 +604,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
       try {
         const qRef = collection(db, 'questions');
-        // Simpler query to avoid index issues, limit to 100 recent ones
-        const manualSnap = await getDocs(query(qRef, limit(100)));
+        // Fetch more questions to increase chance of finding matches
+        const manualSnap = await getDocs(query(qRef, limit(500)));
       manualQs = manualSnap.docs.map(d => {
         const data = d.data();
         return {
@@ -619,8 +619,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           timeLimit: data.timeLimit || 60,
           difficulty: data.difficulty || 'manual',
           year: data.year || assignedYear,
-          chapterId: data.chapterId || CHALLENGE_CHAPTER_ID,
-          chapterTitle: data.chapterTitle || CHALLENGE_BLUEPRINT?.title || 'Number',
+          chapterId: data.chapterId || '',
+          chapterTitle: data.chapterTitle || '',
           topicId: data.topicId || '',
           topicCode: data.topicCode || '',
           topicTitle: data.topicTitle || '',
@@ -628,12 +628,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           isManual: true
         };
       }).filter(q => {
-        // If it's a manual question, be more inclusive
+        // More inclusive filtering for manual questions
         const yearNum = q.year ? parseInt(String(q.year).replace(/\D/g, '')) : null;
         const assignedYearNum = assignedYear ? parseInt(String(assignedYear).replace(/\D/g, '')) : null;
         
+        // Match by year - if year is not specified or matches, include it
         const yearMatches = !yearNum || !assignedYearNum || yearNum === assignedYearNum;
-        const chapterMatches = !q.chapterId || q.chapterId === CHALLENGE_CHAPTER_ID || targetChapterIds.has(q.chapterId);
+        
+        // Match by chapter ONLY IF student has specific chapters assigned, otherwise allow any from that year
+        const hasAssignedChapters = studentProfile?.assignedChapters && studentProfile.assignedChapters.length > 0;
+        const chapterMatches = !hasAssignedChapters || !q.chapterId || targetChapterIds.has(q.chapterId) || q.chapterId === CHALLENGE_CHAPTER_ID;
         
         return yearMatches && chapterMatches;
       });
