@@ -516,7 +516,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           (async () => {
             const assignedYears = Array.isArray(profileData.assignedYear) ? profileData.assignedYear : [profileData.assignedYear || profileData.year || CHALLENGE_YEAR];
             const assignedYear = assignedYears[0];
-            const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
+            const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`);
             const progressSnap = await getDoc(progressRef);
             setChapterProgress(progressSnap.exists() ? progressSnap.data() : null);
           })(),
@@ -1020,7 +1020,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // --- Atomic Update via Transaction ---
         await runTransaction(db, async (transaction) => {
           const userRef = doc(db, 'users', user.uid);
-          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
+          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`);
           
           // 1. Get current user profile to ensure we are updating existing doc
           const userSnap = await transaction.get(userRef);
