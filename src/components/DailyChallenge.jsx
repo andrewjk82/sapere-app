@@ -172,10 +172,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const [leaders, setLeaders] = useState([]);
 
-  const isMobile = window.innerWidth < 1024; // Increased threshold to ensure desktop view for tablets
+  const isMobile = window.innerWidth < 1024;
   const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
   const assignedYear = assignedYears[0];
-  const isSenior = assignedYear && (parseInt(assignedYear.replace(/\D/g, '')) >= 7);
+  const isSenior = assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 7);
   const showSplitScreen = !isMobile && (
     questions[currentIdx]?.type === 'graph_sketch' || 
     isSenior ||
