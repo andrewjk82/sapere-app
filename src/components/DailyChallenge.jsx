@@ -690,25 +690,54 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       console.error("Error fetching manual questions:", err);
     }
     
-    // Sort all valid manual questions randomly
-    manualQs = manualQs.sort(() => Math.random() - 0.5);
+    // Group manual questions by chapter for even distribution (round-robin)
+    const manualByChapter = manualQs.reduce((acc, q) => {
+      const cid = q.chapterId || 'unknown';
+      if (!acc[cid]) acc[cid] = [];
+      acc[cid].push(q);
+      return acc;
+    }, {});
+
+    // Shuffle questions within each chapter
+    Object.keys(manualByChapter).forEach(cid => {
+      manualByChapter[cid] = manualByChapter[cid].sort(() => Math.random() - 0.5);
+    });
+
+    const selectedManual = [];
+    const chapterIdsForManual = Object.keys(manualByChapter).sort(() => Math.random() - 0.5);
+    let hasMoreManual = true;
+    let roundIdx = 0;
     
-    // PRIORITIZATION: Take as many manual questions as possible first
-    const numManual = Math.min(qCount, manualQs.length);
-    const selectedManual = manualQs.slice(0, numManual);
+    while (selectedManual.length < qCount && hasMoreManual) {
+      hasMoreManual = false;
+      for (const cid of chapterIdsForManual) {
+        if (manualByChapter[cid][roundIdx]) {
+          selectedManual.push(manualByChapter[cid][roundIdx]);
+          hasMoreManual = true;
+          if (selectedManual.length >= qCount) break;
+        }
+      }
+      roundIdx++;
+    }
     
-    // Fill the REMAINING slots with AI questions
-    const numAI = Math.max(0, qCount - numManual);
-    const aiQs = numAI > 0 ? Array.from({ length: numAI }, () => {
-      const difficulty = pickWeightedDifficulty(chapterProgress?.difficultyMix);
-      return generateQuestion({
-        year: assignedYears,
-        course: assignedCourses,
-        assignedChapters,
-        assignedTopics,
-        difficulty,
-      });
-    }) : [];
+    // Fill the REMAINING slots with AI questions, also balancing by chapter
+    const numAI = Math.max(0, qCount - selectedManual.length);
+    const aiQs = [];
+    if (numAI > 0) {
+      const allAssignedChapters = assignedChapters.length > 0 ? assignedChapters : Array.from(targetChapterIds);
+      for (let i = 0; i < numAI; i++) {
+        const difficulty = pickWeightedDifficulty(chapterProgress?.difficultyMix);
+        // Cycle through assigned chapters for AI generation
+        const targetChapterId = allAssignedChapters[i % allAssignedChapters.length];
+        aiQs.push(generateQuestion({
+          year: assignedYears,
+          course: assignedCourses,
+          assignedChapters: [targetChapterId],
+          assignedTopics,
+          difficulty,
+        }));
+      }
+    }
     
     // Combine them (Manual first, then AI)
     let combinedQs = [...selectedManual, ...aiQs];
