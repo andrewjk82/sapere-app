@@ -240,8 +240,14 @@ const Curriculum = () => {
       if (snap.exists()) {
         const data = snap.data();
         setProfile(data);
-        if (data.assignedYear) setSelectedYear(data.assignedYear);
-        if (data.assignedCourse) setSelectedCourse(data.assignedCourse);
+        if (data.assignedYear) {
+          const y = Array.isArray(data.assignedYear) ? data.assignedYear[0] : data.assignedYear;
+          setSelectedYear(y);
+        }
+        if (data.assignedCourse) {
+          const c = Array.isArray(data.assignedCourse) ? data.assignedCourse[0] : data.assignedCourse;
+          setSelectedCourse(c);
+        }
       }
     });
     return unsub;

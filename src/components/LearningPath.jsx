@@ -20,7 +20,8 @@ const LearningPath = ({ profile }) => {
   const [progress, setProgress] = useState({});
   const [loading, setLoading] = useState(true);
 
-  const year = profile?.assignedYear || 'Year 3';
+  const years = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear || 'Year 3'];
+  const year = years[0];
   const term = "Term 2, 2026"; // Mocking as per design
 
   // Fetch Curriculum
@@ -36,7 +37,8 @@ const LearningPath = ({ profile }) => {
     }
 
     const isSenior = ['Year 11', 'Year 12'].includes(year);
-    const course = profile?.assignedCourse || 'Advanced';
+    const courses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
+    const course = courses[0];
     const docId = isSenior 
       ? `${year.replace(' ', '_')}_${course}`
       : year.replace(' ', '_');
