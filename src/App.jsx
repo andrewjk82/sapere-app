@@ -76,7 +76,7 @@ function App() {
   // Request notification permission on login
   useEffect(() => {
     if (user?.uid) {
-      requestNotificationPermission(user.uid);
+      requestNotificationPermission(user.uid, { interactive: false });
     }
   }, [user?.uid]);
 

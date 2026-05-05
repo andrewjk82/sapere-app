@@ -184,6 +184,25 @@ const Settings = () => {
     }
   };
 
+  const handleEnablePushNotifications = async () => {
+    if (!user?.uid) return false;
+    const result = await requestNotificationPermission(user.uid, { interactive: true });
+    if (result.status !== 'granted') {
+      const messages = {
+        'ios-home-screen-required': 'On iPhone, open Sapere from the Home Screen app, then enable Push Notifications here.',
+        'permission-denied': 'Notifications are blocked. Please allow Sapere in your browser or app notification settings.',
+        'firebase-messaging-unsupported': 'Push notifications are not supported in this browser.',
+        'notifications-unavailable': 'Push notifications are not available on this device.',
+        'missing-token': 'Notification permission was granted, but this device did not return a push token. Please try again from the installed app.'
+      };
+      showToast(messages[result.reason] || 'Push notifications could not be enabled on this device.', 'warning', 6000);
+      await setDoc(doc(db, 'users', user.uid), { notifications: { ...profile?.notifications, push: false } }, { merge: true });
+      return false;
+    }
+    showToast('Push notifications are ready on this device.', 'success');
+    return true;
+  };
+
   const handleCancel = () => {
     if (profile) {
       setEditData({
@@ -465,9 +484,10 @@ const Settings = () => {
                 <button 
                   onClick={async () => {
                     const newValue = !profile?.notifications?.push;
-                    await setDoc(doc(db, 'users', user.uid), { notifications: { ...profile?.notifications, push: newValue } }, { merge: true });
                     if (newValue) {
-                      await requestNotificationPermission(user.uid);
+                      await handleEnablePushNotifications();
+                    } else {
+                      await setDoc(doc(db, 'users', user.uid), { notifications: { ...profile?.notifications, push: false } }, { merge: true });
                     }
                   }}
                   style={{
@@ -493,6 +513,16 @@ const Settings = () => {
                   }} />
                 </button>
               </div>
+
+              {profile?.notifications?.push && (
+                <button
+                  className="app-button app-button--secondary"
+                  onClick={handleEnablePushNotifications}
+                  style={{ width: '100%', padding: '12px', borderRadius: '14px', fontSize: '0.85rem' }}
+                >
+                  Reconnect this device
+                </button>
+              )}
 
               <div className="app-empty" style={{ fontSize: '0.75rem', padding: '12px', background: '#f8fafc', borderRadius: '12px', marginTop: '8px' }}>
                 We'll notify you at 8 PM the night before and 2 hours before each lesson.
