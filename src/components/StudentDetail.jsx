@@ -62,7 +62,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     name: '', email: '', phone: '', level: '', subject: '',
     school: '', year: '', dreamJob: '', address: '',
     role: '',
-    assignedYear: 'Year 11', assignedCourse: 'Advanced',
+    assignedYear: ['Year 11'], assignedCourse: ['Advanced'],
     dailyQuestionCount: 10,
     calculationEnabled: true
   });
@@ -95,8 +95,8 @@ const StudentDetail = ({ studentId, onBack }) => {
           dreamJob: data.dreamJob || '',
           address: data.address || '',
           role: data.role || '',
-          assignedYear: data.assignedYear || data.level || data.year || 'Year 11',
-          assignedCourse: data.assignedCourse || 'Advanced',
+          assignedYear: Array.isArray(data.assignedYear) ? data.assignedYear : [data.assignedYear || data.level || data.year || 'Year 11'],
+          assignedCourse: Array.isArray(data.assignedCourse) ? data.assignedCourse : [data.assignedCourse || 'Advanced'],
           dailyQuestionCount: data.dailyQuestionCount || 10,
           calculationEnabled: data.calculationEnabled !== false
         });
@@ -115,8 +115,8 @@ const StudentDetail = ({ studentId, onBack }) => {
               school: mData.school || '', year: mData.year || '',
               dreamJob: mData.dreamJob || '', address: mData.address || '',
               role: mData.role || '',
-              assignedYear: mData.assignedYear || mData.level || mData.year || 'Year 11',
-              assignedCourse: mData.assignedCourse || 'Advanced',
+              assignedYear: Array.isArray(mData.assignedYear) ? mData.assignedYear : [mData.assignedYear || mData.level || mData.year || 'Year 11'],
+              assignedCourse: Array.isArray(mData.assignedCourse) ? mData.assignedCourse : [mData.assignedCourse || 'Advanced'],
               dailyQuestionCount: mData.dailyQuestionCount || 10,
               calculationEnabled: mData.calculationEnabled !== false
             });
@@ -428,10 +428,33 @@ const StudentDetail = ({ studentId, onBack }) => {
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
   if (!student) return <div className="app-empty">Student not found.</div>;
 
-  const currentYear = student.assignedYear || student.level || student.year || 'Year 11';
-  const currentCourse = student.assignedCourse || 'Advanced';
-  let chapters = CURRICULUM_DATA[currentYear] || [];
-  if (!Array.isArray(chapters)) chapters = chapters[currentCourse] || [];
+  const assignedYears = Array.isArray(student.assignedYear) ? student.assignedYear : [student.assignedYear || student.level || student.year || 'Year 11'];
+  const assignedCourses = Array.isArray(student.assignedCourse) ? student.assignedCourse : [student.assignedCourse || 'Advanced'];
+
+  let chapters = [];
+  assignedYears.forEach(year => {
+    const yearData = CURRICULUM_DATA[year];
+    if (!yearData) return;
+    if (Array.isArray(yearData)) {
+      chapters = [...chapters, ...yearData];
+    } else {
+      assignedCourses.forEach(course => {
+        if (yearData[course]) {
+          chapters = [...chapters, ...yearData[course]];
+        }
+      });
+    }
+  });
+  // Deduplicate
+  const uniqueChapters = [];
+  const seenIds = new Set();
+  chapters.forEach(ch => {
+    if (!seenIds.has(ch.id)) {
+      uniqueChapters.push(ch);
+      seenIds.add(ch.id);
+    }
+  });
+  chapters = uniqueChapters;
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -443,7 +466,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                 <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>ASSIGN CURRICULUM</div>
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'center', background: '#f8fafc', padding: '8px 16px', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
                   <span style={{ fontSize: '0.7rem', fontWeight: 800 }}>YEAR:</span>
-                  <span style={{ fontWeight: 800, color: '#6366f1' }}>{currentYear}</span>
+                  <span style={{ fontWeight: 800, color: '#6366f1' }}>{assignedYears.join(', ')}</span>
                 </div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
@@ -923,22 +946,72 @@ const StudentDetail = ({ studentId, onBack }) => {
                   <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>School / Institution</label>
                   <input type="text" value={editForm.school} onChange={e => setEditForm({...editForm, school: e.target.value})} style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 700 }} />
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                  <div>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Assigned Year</label>
-                    <select value={editForm.assignedYear} onChange={e => setEditForm({...editForm, assignedYear: e.target.value})} style={{ width: '100%', padding: '18px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 700, background: 'white', cursor: 'pointer' }}>
-                      {Object.keys(CURRICULUM_DATA).map(y => <option key={y} value={y}>{y}</option>)}
-                    </select>
+                <div style={{ gridColumn: 'span 2' }}>
+                  <label style={{ display: 'block', marginBottom: '12px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Assigned Year(s)</label>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+                    {Object.keys(CURRICULUM_DATA).map(y => {
+                      const isSelected = editForm.assignedYear.includes(y);
+                      return (
+                        <button
+                          key={y}
+                          type="button"
+                          onClick={() => {
+                            const next = isSelected 
+                              ? editForm.assignedYear.filter(val => val !== y)
+                              : [...editForm.assignedYear, y];
+                            setEditForm({ ...editForm, assignedYear: next });
+                          }}
+                          style={{
+                            padding: '8px 16px',
+                            borderRadius: '12px',
+                            border: '2px solid',
+                            borderColor: isSelected ? '#6366f1' : '#e2e8f0',
+                            background: isSelected ? '#f5f3ff' : 'white',
+                            color: isSelected ? '#6366f1' : '#64748b',
+                            fontWeight: 800,
+                            fontSize: '0.8rem',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          {y}
+                        </button>
+                      );
+                    })}
                   </div>
-                  <div>
-                    <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Course Level</label>
-                    <select value={editForm.assignedCourse} onChange={e => setEditForm({...editForm, assignedCourse: e.target.value})} style={{ width: '100%', padding: '18px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 700, background: 'white', cursor: 'pointer' }}>
-                      <option value="N/A">N/A</option>
-                      <option value="Advanced">Advanced</option>
-                      <option value="Standard">Standard</option>
-                      <option value="Extension 1">Extension 1</option>
-                      <option value="Extension 2">Extension 2</option>
-                    </select>
+                </div>
+                <div style={{ gridColumn: 'span 2' }}>
+                  <label style={{ display: 'block', marginBottom: '12px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Course Level(s)</label>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {['Standard', 'Advanced', 'Extension 1', 'Extension 2'].map(c => {
+                      const isSelected = editForm.assignedCourse.includes(c);
+                      return (
+                        <button
+                          key={c}
+                          type="button"
+                          onClick={() => {
+                            const next = isSelected 
+                              ? editForm.assignedCourse.filter(val => val !== c)
+                              : [...editForm.assignedCourse, c];
+                            setEditForm({ ...editForm, assignedCourse: next });
+                          }}
+                          style={{
+                            padding: '8px 16px',
+                            borderRadius: '12px',
+                            border: '2px solid',
+                            borderColor: isSelected ? '#818cf8' : '#e2e8f0',
+                            background: isSelected ? '#f5f3ff' : 'white',
+                            color: isSelected ? '#4f46e5' : '#64748b',
+                            fontWeight: 800,
+                            fontSize: '0.8rem',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          {c}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
 

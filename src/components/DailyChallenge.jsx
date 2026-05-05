@@ -512,7 +512,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             setHistory(historyData);
           })(),
           (async () => {
-            const assignedYear = profileData.assignedYear || profileData.year || CHALLENGE_YEAR;
+            const assignedYears = Array.isArray(profileData.assignedYear) ? profileData.assignedYear : [profileData.assignedYear || profileData.year || CHALLENGE_YEAR];
+            const assignedYear = assignedYears[0];
             const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${assignedYear.replace(' ', '_')}_daily`);
             const progressSnap = await getDoc(progressRef);
             setChapterProgress(progressSnap.exists() ? progressSnap.data() : null);
@@ -537,7 +538,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const startCalculationQuiz = () => {
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
-    const assignedYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
+    const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
+    const assignedYear = assignedYears[0];
     const assignedChapters = Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [];
     const calcTopics = assignedChapters.filter(id => id.startsWith('calc-'));
     
@@ -582,15 +584,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       const qCount = getQuestionCount('daily');
       setLoading(true);
       let manualQs = [];
-      const assignedYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
+      const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
+      const assignedYear = assignedYears[0];
       const assignedChapters = Array.isArray(studentProfile?.assignedChapters) && studentProfile.assignedChapters.length > 0
         ? studentProfile.assignedChapters
         : [CHALLENGE_CHAPTER_ID];
       const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
-      const assignedCourse = studentProfile?.assignedCourse || 'Advanced';
+      const assignedCourses = Array.isArray(studentProfile?.assignedCourse) ? studentProfile.assignedCourse : [studentProfile?.assignedCourse || 'Advanced'];
       const targetPool = getQuestionTargets({
-        year: assignedYear,
-        course: assignedCourse,
+        year: assignedYears,
+        course: assignedCourses,
         assignedChapters,
         assignedTopics,
       });
@@ -646,8 +649,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const aiQs = numAI > 0 ? Array.from({ length: numAI }, () => {
       const difficulty = pickWeightedDifficulty(chapterProgress?.difficultyMix);
       return generateQuestion({
-        year: assignedYear,
-        course: assignedCourse,
+        year: assignedYears,
+        course: assignedCourses,
         assignedChapters,
         assignedTopics,
         difficulty,
@@ -935,7 +938,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const ref = challengeType === 'calc' 
           ? doc(db, 'users', user.uid, 'calc_stats', currentSessionId || String(Date.now()))
           : doc(db, 'users', user.uid, 'daily_stats', today);
-        const assignedYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
+        const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
+        const assignedYear = assignedYears[0];
         const assignedChapters = challengeType === 'calc'
           ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-')) : [])
           : (Array.isArray(studentProfile?.assignedChapters) && studentProfile.assignedChapters.length > 0

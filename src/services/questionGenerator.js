@@ -105,45 +105,65 @@ export const QUESTION_BLUEPRINTS = Object.fromEntries(
 );
 
 export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', assignedChapters = [], assignedTopics = [] } = {}) => {
-  let chapters = CURRICULUM_DATA[year];
+  const years = Array.isArray(year) ? year : [year];
+  const courses = Array.isArray(course) ? course : [course];
   
-  // Handle nested courses for Year 11/12
-  if (chapters && !Array.isArray(chapters)) {
-    chapters = chapters[course] || chapters['Advanced'] || Object.values(chapters)[0];
-  }
+  let allTargets = [];
   
-  if (!Array.isArray(chapters)) {
-    chapters = CURRICULUM_DATA[DEFAULT_YEAR];
+  years.forEach(y => {
+    let chapters = CURRICULUM_DATA[y];
+    if (!chapters) return;
+    
+    let yearChapters = [];
+    if (Array.isArray(chapters)) {
+      yearChapters = chapters;
+    } else {
+      // For Year 11/12 with nested courses
+      courses.forEach(c => {
+        if (chapters[c]) {
+          yearChapters = [...yearChapters, ...chapters[c]];
+        }
+      });
+      // Fallback if none of the requested courses exist for this year
+      if (yearChapters.length === 0) {
+        yearChapters = chapters['Advanced'] || Object.values(chapters)[0] || [];
+      }
+    }
+
+    const chapterSet = new Set(assignedChapters || []);
+    const topicSet = new Set(assignedTopics || []);
+    const scopedChapters = chapterSet.size > 0 ? yearChapters.filter(chapter => chapterSet.has(chapter.id)) : yearChapters;
+
+    const targets = scopedChapters.flatMap(chapter => (chapter.topics || []).map(topic => ({
+      year: y,
+      chapterId: chapter.id,
+      chapterTitle: chapter.title,
+      topicId: topic.id,
+      topicCode: topic.code || '',
+      topicTitle: topic.title,
+      topicGroup: topic.group || '',
+      generatorTypes: TOPIC_GENERATOR_MAP[topic.id] || GROUP_GENERATOR_MAP[topic.group] || (['Year 11', 'Year 12'].includes(y) ? ['algebra_yr11'] : ['generic_year1']),
+    })));
+    
+    allTargets = [...allTargets, ...targets];
+  });
+
+  if (assignedTopics.length > 0) {
+    const topicSet = new Set(assignedTopics);
+    allTargets = allTargets.filter(target => topicSet.has(target.topicId));
   }
-
-  const chapterSet = new Set(assignedChapters || []);
-  const topicSet = new Set(assignedTopics || []);
-  const scopedChapters = chapterSet.size > 0 ? chapters.filter(chapter => chapterSet.has(chapter.id)) : chapters;
-
-  let targets = scopedChapters.flatMap(chapter => (chapter.topics || []).map(topic => ({
-    year,
-    chapterId: chapter.id,
-    chapterTitle: chapter.title,
-    topicId: topic.id,
-    topicCode: topic.code || '',
-    topicTitle: topic.title,
-    topicGroup: topic.group || '',
-    generatorTypes: TOPIC_GENERATOR_MAP[topic.id] || GROUP_GENERATOR_MAP[topic.group] || (['Year 11', 'Year 12'].includes(year) ? ['algebra_yr11'] : ['generic_year1']),
-  })));
-
-  if (topicSet.size > 0) targets = targets.filter(target => topicSet.has(target.topicId));
   
   // Final fallback to Year 1 if still nothing found
-  if (targets.length === 0) {
-    if (['Year 11', 'Year 12'].includes(year)) {
-      // Use correct IDs from curriculumData.js
-      const fallbackId = year === 'Year 11' ? 'y11a-1' : 'y12adv-ch1';
-      return getQuestionTargets({ year, course: 'Advanced', assignedChapters: [fallbackId] });
+  if (allTargets.length === 0) {
+    const firstYear = years[0] || DEFAULT_YEAR;
+    if (['Year 11', 'Year 12'].includes(firstYear)) {
+      const fallbackId = firstYear === 'Year 11' ? 'y11a-1' : 'y12adv-ch1';
+      return getQuestionTargets({ year: firstYear, course: 'Advanced', assignedChapters: [fallbackId] });
     }
     return getQuestionTargets({ year: DEFAULT_YEAR, assignedChapters: [DEFAULT_CHAPTER_ID] });
   }
 
-  return targets;
+  return allTargets;
 };
 
 export const getQuestionBlueprint = (year = DEFAULT_YEAR, chapterId = DEFAULT_CHAPTER_ID) => (
