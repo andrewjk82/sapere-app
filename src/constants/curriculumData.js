@@ -2237,8 +2237,100 @@ export const CURRICULUM_DATA = {
       }
     ],
     'Extension 1': [
-      { id: 'y12e1-1', title: 'Vectors', modules: 12 },
-      { id: 'y12e1-2', title: 'Proof', modules: 10 }
+      {
+        id: 'y12e1-2',
+        title: 'Chapter 2: Mathematical induction',
+        modules: 2,
+        topics: [
+          { id: 'y12e1-2A', code: '2A', title: 'Using mathematical induction for series' },
+          { id: 'y12e1-2B', code: '2B', title: 'Proving divisibility by mathematical induction' }
+        ]
+      },
+      {
+        id: 'y12e1-3',
+        title: 'Chapter 3: Graphs and equations',
+        modules: 10,
+        topics: [
+          { id: 'y12e1-3A', code: '3A', title: 'The sign of a function' },
+          { id: 'y12e1-3B', code: '3B', title: 'Vertical and horizontal asymptotes' },
+          { id: 'y12e1-3C', code: '3C', title: 'A curve-sketching menu' },
+          { id: 'y12e1-3D', code: '3D', title: 'Solving inequations' },
+          { id: 'y12e1-3E', code: '3E', title: 'Using graphs to solve equations and inequations' },
+          { id: 'y12e1-3F', code: '3F', title: 'Regions in the coordinate plane' },
+          { id: 'y12e1-3G', code: '3G', title: 'Review of translations and reflections' },
+          { id: 'y12e1-3H', code: '3H', title: 'Dilations' },
+          { id: 'y12e1-3I', code: '3I', title: 'Combinations of transformations' },
+          { id: 'y12e1-3J', code: '3J', title: 'Trigonometric graphs' }
+        ]
+      },
+      {
+        id: 'y12e1-8',
+        title: 'Chapter 8: Vectors',
+        modules: 6,
+        topics: [
+          { id: 'y12e1-8A', code: '8A', title: 'Directed intervals and vectors' },
+          { id: 'y12e1-8B', code: '8B', title: 'Components and column vectors' },
+          { id: 'y12e1-8C', code: '8C', title: 'The dot product (or scalar product)' },
+          { id: 'y12e1-8D', code: '8D', title: 'Geometric problems' },
+          { id: 'y12e1-8E', code: '8E', title: 'Projections' },
+          { id: 'y12e1-8F', code: '8F', title: 'Applications to physical situations' }
+        ]
+      },
+      {
+        id: 'y12e1-10',
+        title: 'Chapter 10: Projectile motion',
+        modules: 2,
+        topics: [
+          { id: 'y12e1-10A', code: '10A', title: 'Projectile motion — the time equations' },
+          { id: 'y12e1-10B', code: '10B', title: 'Projectile motion — the equation of path' }
+        ]
+      },
+      {
+        id: 'y12e1-11',
+        title: 'Chapter 11: Trigonometric equations',
+        modules: 3,
+        topics: [
+          { id: 'y12e1-11A', code: '11A', title: 'Equations involving compound angles' },
+          { id: 'y12e1-11B', code: '11B', title: 'The sum of sine and cosine functions' },
+          { id: 'y12e1-11C', code: '11C', title: 'Using the t-formula to solve equations' }
+        ]
+      },
+      {
+        id: 'y12e1-12',
+        title: 'Chapter 12: Further calculus',
+        modules: 6,
+        topics: [
+          { id: 'y12e1-12A', code: '12A', title: 'Inverse trigonometric functions — differentiating' },
+          { id: 'y12e1-12B', code: '12B', title: 'Inverse trigonometric functions — integrating' },
+          { id: 'y12e1-12C', code: '12C', title: 'Further trigonometric integrals' },
+          { id: 'y12e1-12D', code: '12D', title: 'Integration by substitution' },
+          { id: 'y12e1-12E', code: '12E', title: 'Further integration by substitution' },
+          { id: 'y12e1-12F', code: '12F', title: 'Volumes of rotation' }
+        ]
+      },
+      {
+        id: 'y12e1-13',
+        title: 'Chapter 13: Differential equations',
+        modules: 5,
+        topics: [
+          { id: 'y12e1-13A', code: '13A', title: 'Differential equations' },
+          { id: 'y12e1-13B', code: '13B', title: 'Slope fields' },
+          { id: 'y12e1-13C', code: '13C', title: 'Separable differentiable equations' },
+          { id: 'y12e1-13D', code: '13D', title: "y' = g(y) and the logistic equation" },
+          { id: 'y12e1-13E', code: '13E', title: 'Applications of differential equations' }
+        ]
+      },
+      {
+        id: 'y12e1-17',
+        title: 'Chapter 17: Binomial distributions',
+        modules: 4,
+        topics: [
+          { id: 'y12e1-17A', code: '17A', title: 'Binomial probability' },
+          { id: 'y12e1-17B', code: '17B', title: 'Binomial distributions' },
+          { id: 'y12e1-17C', code: '17C', title: 'Normal approximations to a binomial' },
+          { id: 'y12e1-17D', code: '17D', title: 'Sample proportions' }
+        ]
+      }
     ],
     'Extension 2': [
       { id: 'y12e2-1', title: 'Complex Numbers', modules: 15 },
