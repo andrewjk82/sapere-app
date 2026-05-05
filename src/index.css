@@ -61,9 +61,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: min(780px, calc(100% - 48px));
+  max-width: min(980px, calc(100% - 48px));
   font-family: 'Bodoni 72', 'Bodoni 72 Display', Didot, 'Didot LT STD', 'Hoefler Text', Georgia, serif;
-  font-size: 76px;
+  font-size: clamp(44px, 7.5vw, 76px);
   line-height: 0.92;
   font-weight: 800;
   letter-spacing: 0;
@@ -76,6 +76,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.opening-intro__line--single {
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .opening-intro__line--name {
@@ -93,6 +98,10 @@ body {
   .opening-intro__text {
     max-width: calc(100% - 40px);
     font-size: 52px;
+  }
+
+  .opening-intro__text--single {
+    font-size: clamp(30px, 7.2vw, 42px);
   }
 }
 

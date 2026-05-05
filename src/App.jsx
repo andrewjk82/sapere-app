@@ -46,6 +46,13 @@ const isIOSStandaloneApp = () => {
   );
 };
 
+const isStandaloneAppDisplay = () => {
+  if (typeof window === 'undefined') return false;
+  return window.matchMedia?.('(display-mode: standalone)').matches
+    || window.matchMedia?.('(display-mode: fullscreen)').matches
+    || window.navigator?.standalone === true;
+};
+
 const getTimeGreeting = () => {
   const hour = new Date().getHours();
   if (hour < 12) return 'Good morning';
@@ -53,7 +60,7 @@ const getTimeGreeting = () => {
   return 'Good evening';
 };
 
-const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) => {
+const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', splitLines = false, onDone }) => {
   const message = `${greeting} ${name}`;
   const renderCharacters = (text, prefix = '') => text.split('').map((char, index) => (
     <motion.span
@@ -81,7 +88,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) =>
       }}
     >
       <motion.div
-        className="opening-intro__text"
+        className={`opening-intro__text ${splitLines ? 'opening-intro__text--split' : 'opening-intro__text--single'}`}
         aria-label={message}
         initial="hidden"
         animate="visible"
@@ -95,8 +102,16 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) =>
           },
         }}
       >
-        <div className="opening-intro__line">{renderCharacters(greeting, 'greeting')}</div>
-        <div className="opening-intro__line opening-intro__line--name">{renderCharacters(name, 'name')}</div>
+        {splitLines ? (
+          <>
+            <div className="opening-intro__line">{renderCharacters(greeting, 'greeting')}</div>
+            <div className="opening-intro__line opening-intro__line--name">{renderCharacters(name, 'name')}</div>
+          </>
+        ) : (
+          <div className="opening-intro__line opening-intro__line--single">
+            {renderCharacters(message, 'message')}
+          </div>
+        )}
       </motion.div>
     </motion.div>
   );
@@ -178,6 +193,7 @@ function App() {
   const [showNotifs, setShowNotifs] = useState(false);
   const [showOpeningIntro, setShowOpeningIntro] = useState(false);
   const [openingIntroVisible, setOpeningIntroVisible] = useState(false);
+  const [isStandaloneIntro, setIsStandaloneIntro] = useState(() => isStandaloneAppDisplay());
   
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
@@ -201,6 +217,20 @@ function App() {
     const handleResize = () => setIsMobileView(window.innerWidth <= 1024);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const standaloneQuery = window.matchMedia?.('(display-mode: standalone)');
+    const fullscreenQuery = window.matchMedia?.('(display-mode: fullscreen)');
+    const updateStandaloneState = () => setIsStandaloneIntro(isStandaloneAppDisplay());
+
+    updateStandaloneState();
+    standaloneQuery?.addEventListener?.('change', updateStandaloneState);
+    fullscreenQuery?.addEventListener?.('change', updateStandaloneState);
+    return () => {
+      standaloneQuery?.removeEventListener?.('change', updateStandaloneState);
+      fullscreenQuery?.removeEventListener?.('change', updateStandaloneState);
+    };
   }, []);
 
   const [students, setStudents] = useState([]);
@@ -503,6 +533,7 @@ function App() {
           <OpeningIntro
             name={introName}
             greeting={introGreeting}
+            splitLines={isStandaloneIntro}
             onDone={() => setShowOpeningIntro(false)}
           />
         )}
