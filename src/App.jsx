@@ -46,6 +46,53 @@ const isIOSStandaloneApp = () => {
   );
 };
 
+const OpeningIntro = ({ name = 'Andrew', onDone }) => {
+  const message = `Good morning. ${name}`;
+
+  return (
+    <motion.div
+      className="opening-intro"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+      onAnimationComplete={(definition) => {
+        if (definition?.opacity === 0) onDone?.();
+      }}
+    >
+      <motion.div
+        className="opening-intro__text"
+        aria-label={message}
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.055,
+              delayChildren: 0.25,
+            },
+          },
+        }}
+      >
+        {message.split('').map((char, index) => (
+          <motion.span
+            key={`${char}-${index}`}
+            aria-hidden="true"
+            variants={{
+              hidden: { opacity: 0, y: 12, filter: 'blur(8px)' },
+              visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+            }}
+            transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {char === ' ' ? '\u00A0' : char}
+          </motion.span>
+        ))}
+      </motion.div>
+    </motion.div>
+  );
+};
+
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout } = useAuth();
@@ -120,6 +167,8 @@ function App() {
   const [isCapsuleExpanded, setIsCapsuleExpanded] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [showNotifs, setShowNotifs] = useState(false);
+  const [showOpeningIntro, setShowOpeningIntro] = useState(false);
+  const [openingIntroVisible, setOpeningIntroVisible] = useState(false);
   
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
@@ -208,6 +257,40 @@ function App() {
   const avatarUrl = profile?.avatarUrl || (profile?.avatarStyle && profile?.avatarSeed
     ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
     : fallbackUrl);
+
+  const introName = useMemo(() => {
+    const rawName = profile?.firstName
+      || profile?.displayName?.split(' ')[0]
+      || user?.displayName?.split(' ')[0]
+      || user?.email?.split('@')[0]
+      || 'Andrew';
+    return rawName ? rawName.charAt(0).toUpperCase() + rawName.slice(1) : 'Andrew';
+  }, [profile?.displayName, profile?.firstName, user?.displayName, user?.email]);
+
+  useEffect(() => {
+    if (!user?.uid) {
+      setShowOpeningIntro(false);
+      setOpeningIntroVisible(false);
+      return undefined;
+    }
+    if (!profileLoaded && !isAdmin) return undefined;
+
+    const timer = window.setTimeout(() => {
+      setShowOpeningIntro(true);
+      setOpeningIntroVisible(true);
+    }, 80);
+
+    return () => window.clearTimeout(timer);
+  }, [isAdmin, profileLoaded, user?.uid]);
+
+  useEffect(() => {
+    if (!showOpeningIntro) return undefined;
+    const messageDuration = (`Good morning. ${introName}`.length * 55) + 1150;
+    const timer = window.setTimeout(() => {
+      setOpeningIntroVisible(false);
+    }, messageDuration);
+    return () => window.clearTimeout(timer);
+  }, [introName, showOpeningIntro]);
 
   useEffect(() => {
     if (user) {
@@ -404,6 +487,15 @@ function App() {
 
   return (
     <div className="app-shell">
+      <AnimatePresence>
+        {showOpeningIntro && openingIntroVisible && (
+          <OpeningIntro
+            name={introName}
+            onDone={() => setShowOpeningIntro(false)}
+          />
+        )}
+      </AnimatePresence>
+
       <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />
       <div className="app-shell__main">
         {renderContent()}
