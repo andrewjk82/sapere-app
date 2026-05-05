@@ -10,7 +10,7 @@ import {
 import { db } from '../firebase/config';
 import { 
   doc, updateDoc, onSnapshot, collection, 
-  addDoc, serverTimestamp, deleteDoc, increment, getDocs, setDoc
+  addDoc, serverTimestamp, deleteDoc, increment, getDocs, setDoc, query, where
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -39,6 +39,21 @@ const getChallengeOptionText = (option) => toDisplayText(option);
 const getChallengeOptionImage = (option) => {
   if (!option || typeof option !== 'object') return '';
   return option.imageUrl || option.image || '';
+};
+
+const toJsDate = (value) => {
+  if (!value) return null;
+  if (value instanceof Date) return value;
+  if (typeof value?.toDate === 'function') return value.toDate();
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+};
+
+const isSameCalendarDay = (a, b) => {
+  const dateA = toJsDate(a);
+  const dateB = toJsDate(b);
+  if (!dateA || !dateB) return false;
+  return dateA.toISOString().slice(0, 10) === dateB.toISOString().slice(0, 10);
 };
 
 const StudentDetail = ({ studentId, onBack }) => {
@@ -411,8 +426,33 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
+  const deleteWorkingOutForChallenge = async (stat) => {
+    const questionIds = new Set([
+      ...(stat.questions || []).map(q => q?.id).filter(Boolean),
+      ...(stat.answerResults || []).map(result => result?.questionId).filter(Boolean),
+    ]);
+    const challengeType = stat.challengeType || 'daily';
+    const challengeDate = stat.timestamp || stat.completedAt || stat.createdAt || stat.id;
+    const gradingSnap = await getDocs(query(
+      collection(db, 'grading_queue'),
+      where('userId', '==', studentId)
+    ));
+
+    const docsToDelete = gradingSnap.docs.filter(item => {
+      const data = item.data();
+      const typeMatches = !data.challengeType || data.challengeType === challengeType;
+      const questionMatches = data.questionId && questionIds.has(data.questionId);
+      const dateMatches = isSameCalendarDay(data.submittedAt, challengeDate);
+
+      return typeMatches && (questionMatches || dateMatches);
+    });
+
+    await Promise.all(docsToDelete.map(item => deleteDoc(item.ref)));
+    return docsToDelete.length;
+  };
+
   const handleResetChallenge = async (stat) => {
-    if (!confirm("Are you sure you want to reset this challenge? This will subtract XP and challenge count.")) return;
+    if (!confirm("Are you sure you want to reset this challenge? This will subtract XP, challenge count, and saved working out images.")) return;
     
     try {
       const colName = student.source === 'manual' ? 'students' : 'users';
@@ -428,9 +468,10 @@ const StudentDetail = ({ studentId, onBack }) => {
 
       // Delete the specific daily_stat record
       const statRef = doc(db, colName, studentId, 'daily_stats', stat.id);
+      const deletedWorkingOutCount = await deleteWorkingOutForChallenge(stat);
       await deleteDoc(statRef);
       
-      showToast("Challenge reset and XP updated.", 'success');
+      showToast(`Challenge reset and XP updated. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? '' : 's'}.`, 'success');
     } catch (err) {
       console.error("Reset error:", err);
       showToast("Failed to reset challenge.", 'error');
