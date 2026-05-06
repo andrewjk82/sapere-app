@@ -1,6 +1,6 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef } from 'react';
 import { ReactSketchCanvas } from 'react-sketch-canvas';
-import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2 } from 'lucide-react';
+import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ZoomIn, ZoomOut } from 'lucide-react';
 
 const hasCoarsePointer = () => (
   typeof window !== 'undefined'
@@ -30,6 +30,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const [eraserMode, setEraserMode] = useState('area');
   const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
   const [paths, setPaths] = useState([]);
+  const [zoom, setZoom] = useState(1);
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
   const isAreaEraser = activeTool === 'eraser' && eraserMode === 'area';
   const isStrokeEraser = activeTool === 'eraser' && eraserMode === 'stroke';
@@ -64,6 +65,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
 
   const handleUndo = () => {
     canvasRef.current?.undo();
+  };
+
+  const zoomOut = () => {
+    setZoom(value => Math.max(0.75, Number((value - 0.25).toFixed(2))));
+  };
+
+  const zoomIn = () => {
+    setZoom(value => Math.min(2, Number((value + 0.25).toFixed(2))));
   };
 
   const setDrawMode = () => {
@@ -148,11 +157,10 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     backgroundPosition: 'center center',
   } : {
     backgroundImage: `
-      linear-gradient(to bottom, transparent 31px, #dbeafe 32px),
-      linear-gradient(to right, #fecaca 0, #fecaca 2px, transparent 2px)
+      linear-gradient(to bottom, transparent 31px, #dbeafe 32px)
     `,
-    backgroundSize: '100% 32px, 100% 100%',
-    backgroundPosition: '0 8px, 56px 0',
+    backgroundSize: '100% 32px',
+    backgroundPosition: '0 8px',
     backgroundColor: '#fff',
   };
 
@@ -238,6 +246,45 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
             >
               <RotateCcw size={18} />
             </button>
+            <div style={{ width: '1px', background: '#cbd5e1', margin: '0 4px' }} />
+            <button
+              onClick={zoomOut}
+              style={{
+                width: '36px', height: '36px', borderRadius: '10px',
+                border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: '#f1f5f9', color: '#64748b',
+                transition: 'all 0.2s'
+              }}
+              title="Zoom out"
+            >
+              <ZoomOut size={18} />
+            </button>
+            <button
+              onClick={() => setZoom(1)}
+              style={{
+                height: '36px', minWidth: '54px', padding: '0 10px', borderRadius: '10px',
+                border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: zoom === 1 ? '#e0e7ff' : '#f1f5f9',
+                color: zoom === 1 ? '#4f46e5' : '#64748b',
+                fontSize: '0.72rem', fontWeight: 900,
+                transition: 'all 0.2s'
+              }}
+              title="Reset zoom"
+            >
+              {Math.round(zoom * 100)}%
+            </button>
+            <button
+              onClick={zoomIn}
+              style={{
+                width: '36px', height: '36px', borderRadius: '10px',
+                border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: '#f1f5f9', color: '#64748b',
+                transition: 'all 0.2s'
+              }}
+              title="Zoom in"
+            >
+              <ZoomIn size={18} />
+            </button>
             <button 
               onClick={handleClear}
               style={{
@@ -255,7 +302,18 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       )}
 
       {/* Canvas Area */}
-      <div ref={canvasAreaRef} style={{ flex: 1, position: 'relative', background: '#f8fafc', touchAction: 'none', ...graphBackgroundStyles }}>
+      <div style={{ flex: 1, position: 'relative', background: '#f8fafc', touchAction: 'none', overflow: 'auto' }}>
+        <div
+          ref={canvasAreaRef}
+          style={{
+            width: `${zoom * 100}%`,
+            height: `${zoom * 100}%`,
+            minWidth: '100%',
+            minHeight: '100%',
+            position: 'relative',
+            ...graphBackgroundStyles
+          }}
+        >
         {/* Draw main X and Y axes if it's a graph question */}
         {isGraph && (
           <>
@@ -302,6 +360,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   );
