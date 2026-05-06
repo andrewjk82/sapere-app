@@ -8,7 +8,7 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
-import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction, deleteDoc } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -19,6 +19,7 @@ import { Target, AlertTriangle, TrendingUp } from 'lucide-react';
 const CHALLENGE_YEAR = 'Year 1';
 const CHALLENGE_CHAPTER_ID = 'y1-number';
 const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPTER_ID);
+const MAX_HISTORY_PER_TYPE = 7;
 
 const getAssignedChapters = (profile, assignedYear) => {
   if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
@@ -128,6 +129,29 @@ const formatHistoryDate = (item) => {
   if (item?.dateLabel) return item.dateLabel;
   const date = toDate(item?.timestamp || item?.completedAt || item?.createdAt || item?.id);
   return date ? date.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }) : 'Completed test';
+};
+
+const getHistorySortTime = (item) => {
+  const value = item?.timestamp || item?.completedAt || item?.createdAt || item?.date || item?.id;
+  if (!value) return 0;
+  if (typeof value?.toDate === 'function') return value.toDate().getTime();
+  if (value instanceof Date) return value.getTime();
+  if (typeof value === 'number') return value;
+  if (/^\d+$/.test(String(value))) return Number(value);
+  const parsed = new Date(value).getTime();
+  return Number.isNaN(parsed) ? 0 : parsed;
+};
+
+const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_HISTORY_PER_TYPE) => {
+  if (!userId) return;
+  const snap = await getDocs(collection(db, 'users', userId, statCollection));
+  const staleDocs = snap.docs
+    .map(statDoc => ({ ref: statDoc.ref, id: statDoc.id, ...statDoc.data() }))
+    .sort((a, b) => getHistorySortTime(b) - getHistorySortTime(a))
+    .slice(keep);
+
+  if (staleDocs.length === 0) return;
+  await Promise.all(staleDocs.map(item => deleteDoc(item.ref)));
 };
 
 const getOptions = (question) => {
@@ -657,6 +681,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           setStudentProfile(profileData);
         } catch (e) { console.warn('profile fetch failed (non-fatal):', e.code); }
 
+        Promise.allSettled([
+          pruneOldChallengeStats(user.uid, 'daily_stats'),
+          pruneOldChallengeStats(user.uid, 'calc_stats'),
+        ]).then((results) => {
+          results.forEach((result, index) => {
+            if (result.status === 'rejected') {
+              const label = index === 0 ? 'daily history cleanup' : 'calculation history cleanup';
+              console.warn(`${label} failed (non-fatal):`, result.reason?.code || result.reason);
+            }
+          });
+        });
+
         setLoading(false);
 
         // Fetch secondary data after the main challenge screen is usable.
@@ -746,7 +782,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     if (user?.uid) {
       const now = new Date();
-        setDoc(doc(db, 'users', user.uid, 'calc_stats', sessionId), {
+      setDoc(doc(db, 'users', user.uid, 'calc_stats', sessionId), {
           completed: false,
           score: 0,
           total: qCount,
@@ -760,7 +796,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         userAnswers: [],
         answerResults: [],
         abandoned: true
-      }).catch(console.error);
+      })
+        .then(() => pruneOldChallengeStats(user.uid, 'calc_stats'))
+        .catch(console.error);
     }
   };
 
@@ -929,7 +967,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           userAnswers: [],
           answerResults: [],
           abandoned: true
-        }).catch(console.error);
+        })
+          .then(() => pruneOldChallengeStats(user.uid, 'daily_stats'))
+          .catch(console.error);
       }
     } catch (error) {
       console.error("Critical error in startDailyQuiz:", error);
@@ -1333,6 +1373,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         });
 
         // --- Local State Updates ---
+        pruneOldChallengeStats(user.uid, challengeType === 'calc' ? 'calc_stats' : 'daily_stats').catch(err => {
+          console.warn('history cleanup failed (non-fatal):', err.code || err);
+        });
+
         setChapterProgress(prev => ({
           ...(prev || {}),
           difficultyMix: nextDifficultyMix,
@@ -1341,7 +1385,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           lastChapterStats: chapterStats,
         }));
         
-        setHistory(prev => [record, ...(prev || [])]);
+        setHistory(prev => [record, ...(prev || [])]
+          .sort((a, b) => getHistorySortTime(b) - getHistorySortTime(a))
+          .slice(0, 30));
         if (challengeType === 'daily') {
           setTodayCompleted(true);
         } else if (challengeType === 'calc') {
