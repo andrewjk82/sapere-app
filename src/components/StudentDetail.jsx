@@ -88,6 +88,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [activeTab, setActiveTab] = useState("curriculum");
   const [assignedChapters, setAssignedChapters] = useState([]);
   const [completedChapters, setCompletedChapters] = useState([]);
+  const [dailyPracticeConfig, setDailyPracticeConfig] = useState({ years: [], chapters: [] });
 
   const [booking, setBooking] = useState(false);
   const [messageOpen, setMessageOpen] = useState(false);
@@ -96,6 +97,56 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [dailyStats, setDailyStats] = useState([]);
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const { showToast } = useToast();
+  const [dailyYearsOpen, setDailyYearsOpen] = useState(false);
+
+  const handleUpdateDailyConfig = (newConfig) => {
+    setDailyPracticeConfig(newConfig);
+    const colName = student.source === "manual" ? "students" : "users";
+    updateDoc(doc(db, colName, studentId), {
+      dailyPracticeConfig: newConfig,
+    }).catch(console.error);
+  };
+
+  const handleToggleDailyYear = (year) => {
+    const isSelected = dailyPracticeConfig.years.includes(year);
+    let nextYears = isSelected
+      ? dailyPracticeConfig.years.filter((y) => y !== year)
+      : [...dailyPracticeConfig.years, year];
+    
+    // If selecting a year, we can clear individual chapters for that year to keep it clean
+    let nextChapters = dailyPracticeConfig.chapters;
+    if (!isSelected) {
+      // Find chapters for this year
+      let chaptersForYear = [];
+      const yearData = CURRICULUM_DATA[year];
+      if (Array.isArray(yearData)) {
+        chaptersForYear = yearData.map(c => c.id);
+      } else if (yearData) {
+        Object.values(yearData).forEach(courseChapters => {
+          chaptersForYear = [...chaptersForYear, ...courseChapters.map(c => c.id)];
+        });
+      }
+      nextChapters = nextChapters.filter(cid => !chaptersForYear.includes(cid));
+    }
+
+    handleUpdateDailyConfig({
+      ...dailyPracticeConfig,
+      years: nextYears,
+      chapters: nextChapters
+    });
+  };
+
+  const handleToggleDailyChapter = (chapterId) => {
+    const isSelected = dailyPracticeConfig.chapters.includes(chapterId);
+    const nextChapters = isSelected
+      ? dailyPracticeConfig.chapters.filter((cid) => cid !== chapterId)
+      : [...dailyPracticeConfig.chapters, chapterId];
+    
+    handleUpdateDailyConfig({
+      ...dailyPracticeConfig,
+      chapters: nextChapters
+    });
+  };
 
   const [sessionForm, setSessionForm] = useState({
     date: new Date().toISOString().split("T")[0],
@@ -190,6 +241,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         setStudent({ id: snap.id, source: "users", ...data });
         setAssignedChapters(data.assignedChapters || []);
         setCompletedChapters(data.completedChapters || []);
+        setDailyPracticeConfig(data.dailyPracticeConfig || { years: [], chapters: [] });
 
         setEditForm({
           name: data.name || data.firstName || "",
@@ -221,6 +273,7 @@ const StudentDetail = ({ studentId, onBack }) => {
               setStudent({ id: mSnap.id, source: "manual", ...mData });
               setAssignedChapters(mData.assignedChapters || []);
               setCompletedChapters(mData.completedChapters || []);
+              setDailyPracticeConfig(mData.dailyPracticeConfig || { years: [], chapters: [] });
 
               setEditForm({
                 name: mData.name || "",
@@ -885,64 +938,6 @@ const StudentDetail = ({ studentId, onBack }) => {
                       {assignedYears.join(", ")}
                     </span>
                   </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "10px",
-                      alignItems: "center",
-                      background: "#f5f3ff",
-                      padding: "8px 14px",
-                      borderRadius: "20px",
-                      border: "1.5px solid #ddd6fe",
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontSize: "0.7rem",
-                        fontWeight: 900,
-                        color: "#6366f1",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      Daily:
-                    </span>
-                    <input
-                      type="number"
-                      min="1"
-                      max="50"
-                      value={student.dailyQuestionCount || 10}
-                      onChange={(e) =>
-                        handleUpdateCurriculumSetting(
-                          "dailyQuestionCount",
-                          Math.max(
-                            1,
-                            Math.min(50, parseInt(e.target.value, 10) || 10),
-                          ),
-                        )
-                      }
-                      style={{
-                        width: "54px",
-                        background: "white",
-                        border: "1.5px solid #c4b5fd",
-                        borderRadius: "12px",
-                        fontWeight: 900,
-                        color: "#4338ca",
-                        outline: "none",
-                        textAlign: "center",
-                        fontSize: "0.95rem",
-                        padding: "4px 0",
-                      }}
-                    />
-                    <span
-                      style={{
-                        fontSize: "0.7rem",
-                        fontWeight: 800,
-                        color: "#7c3aed",
-                      }}
-                    >
-                      questions
-                    </span>
-                  </div>
                 </div>
               </div>
               <div
@@ -1052,6 +1047,190 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "challenge":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
+            {/* DAILY PRACTICE SETTINGS */}
+            <div style={styles.card} className="profile-card-mobile">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: "24px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <div
+                    style={{
+                      width: "4px",
+                      height: "24px",
+                      background: "linear-gradient(to bottom, #10b981, #34d399)",
+                      borderRadius: "2px",
+                    }}
+                  ></div>
+                  <div
+                    className="section-title"
+                    style={{
+                      fontSize: "0.85rem",
+                      fontWeight: 800,
+                      color: "#064e3b",
+                      letterSpacing: "0.05em",
+                      textTransform: "uppercase",
+                      margin: 0,
+                    }}
+                  >
+                    Daily Practice Settings
+                  </div>
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+                    background: "#ecfdf5",
+                    padding: "8px 14px",
+                    borderRadius: "20px",
+                    border: "1.5px solid #a7f3d0",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: "0.7rem",
+                      fontWeight: 900,
+                      color: "#059669",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Daily:
+                  </span>
+                  <input
+                    type="number"
+                    min="1"
+                    max="50"
+                    value={student.dailyQuestionCount || 10}
+                    onChange={(e) =>
+                      handleUpdateCurriculumSetting(
+                        "dailyQuestionCount",
+                        Math.max(
+                          1,
+                          Math.min(50, parseInt(e.target.value, 10) || 10),
+                        ),
+                      )
+                    }
+                    style={{
+                      width: "54px",
+                      background: "white",
+                      border: "1.5px solid #6ee7b7",
+                      borderRadius: "12px",
+                      fontWeight: 900,
+                      color: "#047857",
+                      outline: "none",
+                      textAlign: "center",
+                      fontSize: "0.95rem",
+                      padding: "4px 0",
+                    }}
+                  />
+                  <span
+                    style={{
+                      fontSize: "0.7rem",
+                      fontWeight: 800,
+                      color: "#059669",
+                    }}
+                  >
+                    questions
+                  </span>
+                </div>
+              </div>
+
+              <div style={{ display: "grid", gap: "20px" }}>
+                {/* Year Selector */}
+                <div>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#64748b", marginBottom: "12px", textTransform: "uppercase", letterSpacing: "0.05em" }}>Select Years</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                    {Object.keys(CURRICULUM_DATA).filter(k => k.startsWith('Year')).map(year => (
+                      <button
+                        key={year}
+                        onClick={() => handleToggleDailyYear(year)}
+                        style={{
+                          padding: "8px 16px",
+                          borderRadius: "100px",
+                          fontSize: "0.8rem",
+                          fontWeight: 700,
+                          cursor: "pointer",
+                          transition: "all 0.2s",
+                          background: dailyPracticeConfig.years.includes(year) ? "#10b981" : "#f1f5f9",
+                          color: dailyPracticeConfig.years.includes(year) ? "white" : "#64748b",
+                          border: "none",
+                          boxShadow: dailyPracticeConfig.years.includes(year) ? "0 4px 12px rgba(16,185,129,0.2)" : "none"
+                        }}
+                      >
+                        {year}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Chapter Selector */}
+                <div>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#64748b", marginBottom: "12px", textTransform: "uppercase", letterSpacing: "0.05em" }}>Select Individual Chapters</div>
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "10px" }}>
+                    {Object.entries(CURRICULUM_DATA)
+                      .filter(([year]) => year.startsWith('Year'))
+                      .flatMap(([year, data]) => {
+                        // Skip chapters if year is already selected
+                        if (dailyPracticeConfig.years.includes(year)) return [];
+                        
+                        let chapters = [];
+                        if (Array.isArray(data)) {
+                          chapters = data;
+                        } else {
+                          // Handle Year 11/12 courses
+                          Object.entries(data).forEach(([course, courseChapters]) => {
+                            chapters = [...chapters, ...courseChapters.map(c => ({ ...c, title: `${course}: ${c.title}` }))];
+                          });
+                        }
+                        
+                        return chapters.map(ch => (
+                          <div 
+                            key={ch.id} 
+                            onClick={() => handleToggleDailyChapter(ch.id)}
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "10px",
+                              padding: "10px 14px",
+                              borderRadius: "12px",
+                              background: dailyPracticeConfig.chapters.includes(ch.id) ? "#ecfdf5" : "white",
+                              border: `1.5px solid ${dailyPracticeConfig.chapters.includes(ch.id) ? "#10b981" : "#f1f5f9"}`,
+                              cursor: "pointer",
+                              transition: "all 0.2s"
+                            }}
+                          >
+                            <div style={{
+                              width: "18px",
+                              height: "18px",
+                              borderRadius: "4px",
+                              background: dailyPracticeConfig.chapters.includes(ch.id) ? "#10b981" : "transparent",
+                              border: `2px solid ${dailyPracticeConfig.chapters.includes(ch.id) ? "#10b981" : "#cbd5e1"}`,
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              color: "white"
+                            }}>
+                              {dailyPracticeConfig.chapters.includes(ch.id) && <Check size={12} strokeWidth={4} />}
+                            </div>
+                            <div style={{ fontSize: "0.8rem", fontWeight: 600, color: dailyPracticeConfig.chapters.includes(ch.id) ? "#065f46" : "#475569" }}>
+                              <span style={{ opacity: 0.6, fontSize: "0.7rem", marginRight: "4px" }}>{year}</span>
+                              {ch.title}
+                            </div>
+                          </div>
+                        ));
+                      })
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div style={styles.card} className="profile-card-mobile">
               <div
                 style={{

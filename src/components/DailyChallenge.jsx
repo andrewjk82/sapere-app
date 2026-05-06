@@ -743,14 +743,25 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       const qCount = getQuestionCount('daily');
       setLoading(true);
       let manualQs = [];
+      const config = studentProfile?.dailyPracticeConfig || {};
+      const hasDailyConfig = (config.years?.length > 0 || config.chapters?.length > 0);
+
       const rawYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
-      const assignedYears = Array.isArray(rawYear) 
+      let assignedYears = Array.isArray(rawYear) 
         ? rawYear 
         : String(rawYear).split(',').map(y => y.trim()).filter(Boolean);
-      const assignedYear = assignedYears[0];
-      const assignedChapters = getAssignedChapters(studentProfile, assignedYear);
+      
+      let assignedChapters = getAssignedChapters(studentProfile, assignedYears[0]);
+
+      if (hasDailyConfig) {
+        if (config.years?.length > 0) assignedYears = config.years;
+        if (config.chapters?.length > 0) assignedChapters = config.chapters;
+        else if (config.years?.length > 0) assignedChapters = []; // Clear curriculum chapters if years are specifically set
+      }
+
       const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
       const assignedCourses = Array.isArray(studentProfile?.assignedCourse) ? studentProfile.assignedCourse : [studentProfile?.assignedCourse || 'Advanced'];
+      
       const targetPool = getQuestionTargets({
         year: assignedYears,
         course: assignedCourses,
