@@ -1,11 +1,39 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef } from 'react';
 import { ReactSketchCanvas } from 'react-sketch-canvas';
-import { PenTool, Eraser, RotateCcw, Trash2 } from 'lucide-react';
+import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2 } from 'lucide-react';
+
+const hasCoarsePointer = () => (
+  typeof window !== 'undefined'
+  && window.matchMedia
+  && window.matchMedia('(pointer: coarse)').matches
+);
+
+const distanceToSegment = (point, start, end) => {
+  const dx = end.x - start.x;
+  const dy = end.y - start.y;
+  if (dx === 0 && dy === 0) {
+    return Math.hypot(point.x - start.x, point.y - start.y);
+  }
+
+  const t = Math.max(0, Math.min(1, ((point.x - start.x) * dx + (point.y - start.y) * dy) / (dx * dx + dy * dy)));
+  const projection = {
+    x: start.x + t * dx,
+    y: start.y + t * dy,
+  };
+  return Math.hypot(point.x - projection.x, point.y - projection.y);
+};
 
 const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const canvasRef = useRef(null);
-  const [eraseMode, setEraseMode] = useState(false);
+  const canvasAreaRef = useRef(null);
+  const [activeTool, setActiveTool] = useState('pen');
+  const [eraserMode, setEraserMode] = useState('area');
+  const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
+  const [paths, setPaths] = useState([]);
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
+  const isAreaEraser = activeTool === 'eraser' && eraserMode === 'area';
+  const isStrokeEraser = activeTool === 'eraser' && eraserMode === 'stroke';
+  const allowedPointerType = palmGuard ? 'pen' : 'all';
 
   // Expose exportImage method to parent
   useImperativeHandle(ref, () => ({
@@ -23,12 +51,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     },
     clear: () => {
       canvasRef.current?.clearCanvas();
+      setPaths([]);
     }
   }));
 
   const handleClear = () => {
     if (window.confirm('Are you sure you want to clear the canvas?')) {
       canvasRef.current?.clearCanvas();
+      setPaths([]);
     }
   };
 
@@ -38,12 +68,72 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
 
   const setDrawMode = () => {
     canvasRef.current?.eraseMode(false);
-    setEraseMode(false);
+    setActiveTool('pen');
   };
 
-  const setEraserMode = () => {
+  const setAreaEraserMode = () => {
     canvasRef.current?.eraseMode(true);
-    setEraseMode(true);
+    setActiveTool('eraser');
+    setEraserMode('area');
+  };
+
+  const setStrokeEraserMode = () => {
+    canvasRef.current?.eraseMode(false);
+    setActiveTool('eraser');
+    setEraserMode('stroke');
+  };
+
+  const replacePaths = (nextPaths) => {
+    canvasRef.current?.resetCanvas();
+    setPaths(nextPaths);
+    window.requestAnimationFrame(() => {
+      canvasRef.current?.loadPaths(nextPaths);
+    });
+  };
+
+  const getCanvasPoint = (event) => {
+    const rect = canvasAreaRef.current?.getBoundingClientRect();
+    if (!rect) return null;
+    return {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    };
+  };
+
+  const eraseStrokeAt = (event) => {
+    if (!isStrokeEraser || isSubmitted) return;
+    if (palmGuard && event.pointerType !== 'pen') return;
+    event.preventDefault();
+    event.stopPropagation();
+
+    const point = getCanvasPoint(event);
+    if (!point || paths.length === 0) return;
+
+    let bestIndex = -1;
+    let bestDistance = Infinity;
+    paths.forEach((path, index) => {
+      if (!path?.drawMode || !Array.isArray(path.paths) || path.paths.length === 0) return;
+      const points = path.paths;
+      let pathDistance = Infinity;
+
+      if (points.length === 1) {
+        pathDistance = Math.hypot(point.x - points[0].x, point.y - points[0].y);
+      } else {
+        for (let i = 1; i < points.length; i += 1) {
+          pathDistance = Math.min(pathDistance, distanceToSegment(point, points[i - 1], points[i]));
+        }
+      }
+
+      if (pathDistance < bestDistance) {
+        bestDistance = pathDistance;
+        bestIndex = index;
+      }
+    });
+
+    const threshold = 24;
+    if (bestIndex >= 0 && bestDistance <= threshold) {
+      replacePaths(paths.filter((_, index) => index !== bestIndex));
+    }
   };
 
   // Grid pattern for graphing
@@ -68,14 +158,29 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
             {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
           </span>
           
-          <div style={{ display: 'flex', gap: '8px' }}>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <button
+              onClick={() => setPalmGuard(value => !value)}
+              style={{
+                height: '36px', padding: '0 12px', borderRadius: '10px',
+                border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
+                background: palmGuard ? '#ecfdf5' : '#f1f5f9',
+                color: palmGuard ? '#047857' : '#64748b',
+                fontSize: '0.72rem', fontWeight: 900,
+                transition: 'all 0.2s'
+              }}
+              title={palmGuard ? 'Pen only: touch is ignored' : 'All touch input allowed'}
+            >
+              <MousePointer2 size={16} />
+              {palmGuard ? 'Pen Only' : 'All Touch'}
+            </button>
             <button 
               onClick={setDrawMode}
               style={{
                 width: '36px', height: '36px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: !eraseMode ? '#e0e7ff' : '#f1f5f9',
-                color: !eraseMode ? '#4f46e5' : '#64748b',
+                background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9',
+                color: activeTool === 'pen' ? '#4f46e5' : '#64748b',
                 transition: 'all 0.2s'
               }}
               title="Pen"
@@ -83,17 +188,34 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
               <PenTool size={18} />
             </button>
             <button 
-              onClick={setEraserMode}
+              onClick={setAreaEraserMode}
               style={{
-                width: '36px', height: '36px', borderRadius: '10px',
+                height: '36px', padding: '0 12px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: eraseMode ? '#e0e7ff' : '#f1f5f9',
-                color: eraseMode ? '#4f46e5' : '#64748b',
+                background: isAreaEraser ? '#e0e7ff' : '#f1f5f9',
+                color: isAreaEraser ? '#4f46e5' : '#64748b',
+                fontSize: '0.72rem', fontWeight: 900, gap: '6px',
                 transition: 'all 0.2s'
               }}
-              title="Eraser"
+              title="Area eraser"
             >
               <Eraser size={18} />
+              Area
+            </button>
+            <button
+              onClick={setStrokeEraserMode}
+              style={{
+                height: '36px', padding: '0 12px', borderRadius: '10px',
+                border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: isStrokeEraser ? '#e0e7ff' : '#f1f5f9',
+                color: isStrokeEraser ? '#4f46e5' : '#64748b',
+                fontSize: '0.72rem', fontWeight: 900, gap: '6px',
+                transition: 'all 0.2s'
+              }}
+              title="Stroke eraser: tap a line to remove the whole stroke"
+            >
+              <Eraser size={18} />
+              Stroke
             </button>
             <div style={{ width: '1px', background: '#cbd5e1', margin: '0 4px' }} />
             <button 
@@ -125,7 +247,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       )}
 
       {/* Canvas Area */}
-      <div style={{ flex: 1, position: 'relative', background: '#f8fafc', ...graphBackgroundStyles }}>
+      <div ref={canvasAreaRef} style={{ flex: 1, position: 'relative', background: '#f8fafc', touchAction: 'none', ...graphBackgroundStyles }}>
         {/* Draw main X and Y axes if it's a graph question */}
         {isGraph && (
           <>
@@ -141,12 +263,29 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
         
         <ReactSketchCanvas
           ref={canvasRef}
-          strokeWidth={eraseMode ? 20 : 3}
-          strokeColor={eraseMode ? 'transparent' : strokeColor}
+          strokeWidth={isAreaEraser ? 20 : 3}
+          eraserWidth={22}
+          strokeColor={isAreaEraser ? 'transparent' : strokeColor}
           canvasColor="transparent"
+          allowOnlyPointerType={isStrokeEraser ? 'mouse' : allowedPointerType}
+          onChange={setPaths}
           style={{ width: '100%', height: '100%', border: 'none', position: 'relative', zIndex: 5 }}
-          readOnly={isSubmitted}
         />
+
+        {isStrokeEraser && !isSubmitted && (
+          <div
+            onPointerDown={eraseStrokeAt}
+            style={{
+              position: 'absolute',
+              inset: 0,
+              zIndex: 8,
+              cursor: 'crosshair',
+              touchAction: 'none',
+              background: 'rgba(99, 102, 241, 0.015)'
+            }}
+            title="Tap a stroke to remove it"
+          />
+        )}
         
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
