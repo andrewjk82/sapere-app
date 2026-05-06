@@ -220,7 +220,7 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
                           <button 
                             onClick={async () => {
                               if (window.confirm('Delete this student?')) {
-                                await studentService.deleteStudent(student.id);
+                                await studentService.deleteStudentRecord(student);
                               }
                               setActiveMenuId(null);
                             }}

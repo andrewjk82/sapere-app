@@ -139,5 +139,17 @@ export const studentService = {
   async deleteStudent(studentId) {
     const docRef = doc(db, COLLECTION_NAME, studentId);
     return await deleteDoc(docRef);
+  },
+
+  async deleteRegisteredUser(userId) {
+    const docRef = doc(db, "users", userId);
+    return await deleteDoc(docRef);
+  },
+
+  async deleteStudentRecord(student) {
+    if (student?.source === "registered") {
+      return await this.deleteRegisteredUser(student.id);
+    }
+    return await this.deleteStudent(student?.id || student);
   }
 };

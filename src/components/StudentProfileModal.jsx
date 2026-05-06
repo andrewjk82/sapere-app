@@ -82,12 +82,9 @@ const StudentProfileModal = ({ open, student, onClose }) => {
       try {
         setLoading(true);
         if (student.source === 'manual') {
-          await studentService.deleteStudent(student.id);
+          await studentService.deleteStudentRecord(student);
         } else {
-          // For registered users, we might just want to 'unlink' or change a status
-          // For now, let's just warn or handle accordingly
-          showToast("Registered accounts cannot be deleted here. Change status to Inactive instead.", 'info');
-          return;
+          await studentService.deleteStudentRecord(student);
         }
         onClose();
       } catch (error) {
@@ -362,17 +359,15 @@ const StudentProfileModal = ({ open, student, onClose }) => {
           </div>
 
           <div className="modal-footer" style={{ marginTop: '40px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.05)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            {student.source === 'manual' ? (
-              <button 
-                className="app-button" 
-                style={{ color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', border: 'none' }}
-                onClick={handleDelete} 
-                disabled={loading}
-              >
-                <Trash2 size={16} />
-                Remove Student
-              </button>
-            ) : <div />}
+            <button
+              className="app-button"
+              style={{ color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', border: 'none' }}
+              onClick={handleDelete}
+              disabled={loading}
+            >
+              <Trash2 size={16} />
+              Remove Student
+            </button>
             <button className="app-button app-button--secondary" onClick={onClose}>
               Close
             </button>
