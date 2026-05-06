@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen } from 'lucide-react';
+import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2 } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 
 const ReportsAdmin = () => {
   const [reports, setReports] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editingQuestion, setEditingQuestion] = useState(null);
+  const [isDeletingAll, setIsDeletingAll] = useState(false);
 
   useEffect(() => {
     const q = query(collection(db, 'reports'), orderBy('createdAt', 'desc'));
@@ -38,6 +39,22 @@ const ReportsAdmin = () => {
     }
   };
 
+  const handleDeleteAllReports = async () => {
+    if (reports.length === 0 || isDeletingAll) return;
+    const confirmed = window.confirm(`Delete all ${reports.length} report${reports.length === 1 ? '' : 's'}? This cannot be undone.`);
+    if (!confirmed) return;
+
+    try {
+      setIsDeletingAll(true);
+      await Promise.all(reports.map(report => deleteDoc(doc(db, 'reports', report.id))));
+    } catch (err) {
+      console.error('Error deleting reports:', err);
+      alert('Failed to delete reports. Please try again.');
+    } finally {
+      setIsDeletingAll(false);
+    }
+  };
+
   return (
     <div className="app-page">
       <div className="app-page__header">
@@ -45,6 +62,31 @@ const ReportsAdmin = () => {
           <h2 style={{ fontSize: '2rem', fontWeight: 900 }}>Student Reported Issues</h2>
           <p style={{ color: '#64748b', fontSize: '1.1rem' }}>Review and fix errors reported by students during their challenges.</p>
         </div>
+        {reports.length > 0 && (
+          <button
+            onClick={handleDeleteAllReports}
+            disabled={isDeletingAll}
+            style={{
+              marginLeft: 'auto',
+              height: '48px',
+              padding: '0 18px',
+              borderRadius: '16px',
+              border: '1.5px solid #fecdd3',
+              background: isDeletingAll ? '#f8fafc' : '#fff1f2',
+              color: isDeletingAll ? '#94a3b8' : '#e11d48',
+              fontWeight: 900,
+              cursor: isDeletingAll ? 'not-allowed' : 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              boxShadow: '0 10px 24px rgba(225, 29, 72, 0.08)',
+            }}
+            title="Delete all reports"
+          >
+            <Trash2 size={18} />
+            {isDeletingAll ? 'Deleting...' : 'Delete All'}
+          </button>
+        )}
       </div>
 
       <div style={{ padding: '20px', maxWidth: '800px' }}>
