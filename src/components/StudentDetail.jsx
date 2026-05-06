@@ -365,6 +365,18 @@ const StudentDetail = ({ studentId, onBack }) => {
 
       await Promise.all(sessionsToCreate.map(s => addDoc(collection(db, 'sessions'), s)));
 
+      const firstSession = sessionsToCreate[0];
+      fetch('/api/send-notif', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          studentId,
+          email: student.email || '',
+          subject: 'Your schedule has been updated',
+          text: `Your ${firstSession.subject} session has been scheduled for ${firstSession.date} at ${firstSession.startTime}.`
+        })
+      }).catch((err) => console.warn('Schedule notification failed:', err));
+
       showToast("Session booked successfully!", 'success');
       setIsScheduleModalOpen(false);
       setSessionForm(prev => ({ ...prev, focus: '' }));

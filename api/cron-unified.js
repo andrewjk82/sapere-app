@@ -249,6 +249,35 @@ function arraysEqual(a, b) {
   return a.every((value, index) => value === b[index]);
 }
 
+async function findNotificationUser(db, studentId, email) {
+  if (studentId) {
+    const directRef = db.collection('users').doc(studentId);
+    const directDoc = await directRef.get();
+    if (directDoc.exists) {
+      return { userRef: directRef, userDoc: directDoc };
+    }
+  }
+
+  const normalizedEmail = String(email || '').trim().toLowerCase();
+  if (!normalizedEmail) {
+    return { userRef: null, userDoc: null };
+  }
+
+  const emailQueries = normalizedEmail === email
+    ? [normalizedEmail]
+    : [email, normalizedEmail].filter(Boolean);
+
+  for (const candidateEmail of emailQueries) {
+    const snap = await db.collection('users').where('email', '==', candidateEmail).limit(1).get();
+    if (!snap.empty) {
+      const userDoc = snap.docs[0];
+      return { userRef: userDoc.ref, userDoc };
+    }
+  }
+
+  return { userRef: null, userDoc: null };
+}
+
 function buildEmailTemplate(title, body, ctaLabel = 'Go to Academy') {
   return `
     <!DOCTYPE html>
@@ -357,8 +386,12 @@ async function sendNotification(db, transporter, session, type, subject, body) {
     } catch (e) { console.error(`Email fail:`, e.message); }
   }
 
-  if (studentId) {
-    const userRef = db.collection('users').doc(studentId);
+  if (studentId || studentEmail) {
+    const { userRef, userDoc } = await findNotificationUser(db, studentId, studentEmail);
+    if (!userRef || !userDoc?.exists) {
+      return { emailSent, pushSent };
+    }
+
     await userRef.collection('notifications').add({
       title: subject, 
       body: body.replace(/<[^>]*>/g, ''), // Strip HTML for push
@@ -367,17 +400,14 @@ async function sendNotification(db, transporter, session, type, subject, body) {
       type
     });
 
-    const userDoc = await userRef.get();
-    if (userDoc.exists) {
-      try {
-        const pushBody = body.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().substring(0, 120);
-        const pushResult = await sendPushToUser(userRef, userDoc.data(), subject, pushBody || 'You have a new notification.');
-        pushSent = pushResult.successCount > 0;
-        if (pushResult.failureCount > 0) {
-          console.warn(`Push partial failure for ${studentId}:`, pushResult);
-        }
-      } catch (e) { console.error(`Push fail:`, e.message); }
-    }
+    try {
+      const pushBody = body.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim().substring(0, 120);
+      const pushResult = await sendPushToUser(userRef, userDoc.data(), subject, pushBody || 'You have a new notification.');
+      pushSent = pushResult.successCount > 0;
+      if (pushResult.failureCount > 0) {
+        console.warn(`Push partial failure for ${studentId || studentEmail}:`, pushResult);
+      }
+    } catch (e) { console.error(`Push fail:`, e.message); }
   }
 
   return { emailSent, pushSent };

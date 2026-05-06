@@ -311,6 +311,27 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
         return addDoc(collection(db, 'sessions'), rest);
       }));
 
+      await Promise.all(newSession.studentIds.map(async (studentId) => {
+        const selectedStudent = students.find(s => s.id === studentId);
+        const firstSession = sessionsToCreate.find(s => s.studentId === studentId);
+        if (!selectedStudent || !firstSession) return;
+
+        try {
+          await fetch('/api/send-notif', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              studentId,
+              email: selectedStudent.email || '',
+              subject: 'Your schedule has been updated',
+              text: `Your ${firstSession.subject} session has been scheduled for ${firstSession.date} at ${firstSession.startTime}.`
+            })
+          });
+        } catch (err) {
+          console.warn('Schedule notification failed:', err);
+        }
+      }));
+
       setShowScheduleModal(false);
       setNewSession({ 
         studentIds: [], 

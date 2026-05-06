@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc } from 'firebase/firestore';
+import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, or } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -69,7 +69,13 @@ const Schedule = () => {
     if (!user?.uid) return;
     const q = isAdmin
       ? query(collection(db, 'sessions'))
-      : query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+      : query(
+          collection(db, 'sessions'),
+          or(
+            where('studentId', '==', user.uid),
+            where('studentEmail', '==', user.email || '')
+          )
+        );
 
     const unsubscribe = onSnapshot(q, (snap) => {
       const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
@@ -81,7 +87,7 @@ const Schedule = () => {
     });
 
     return unsubscribe;
-  }, [user?.uid, isAdmin]);
+  }, [user?.uid, user?.email, isAdmin]);
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const handleOpenDetails = (session) => {
@@ -129,6 +135,17 @@ const Schedule = () => {
         });
         await batch.commit();
       }
+
+      await fetch('/api/send-notif', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          studentId: selectedSession.studentId,
+          email: selectedSession.studentEmail || selectedSession.email || '',
+          subject: 'Your schedule has been updated',
+          text: `Your ${selectedSession.subject || 'lesson'} session has been updated to ${updatePayload.date} at ${updatePayload.startTime}.`
+        })
+      }).catch((err) => console.warn('Schedule update notification failed:', err));
       
       setSaveChoiceOpen(null);
       setSelectedSession(null);
