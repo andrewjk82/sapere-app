@@ -776,8 +776,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
       try {
         const qRef = collection(db, 'questions');
-        // Fetch more questions to increase chance of finding matches
-        const manualSnap = await getDocs(query(qRef, orderBy('createdAt', 'desc'), limit(500)));
+        // Fetch a diverse pool of questions
+        const manualSnap = await getDocs(query(qRef, limit(500)));
       manualQs = manualSnap.docs.map(d => {
         const data = d.data();
         return {
@@ -817,7 +817,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       console.error("Error fetching manual questions:", err);
     }
     
-    // Group manual questions by chapter for even distribution (round-robin)
+    // 1. Shuffle the initial pool for variety
+    manualQs = manualQs.sort(() => Math.random() - 0.5);
+    
+    // 2. Group manual questions by chapter for even distribution (round-robin)
     const manualByChapter = manualQs.reduce((acc, q) => {
       const cid = q.chapterId || 'unknown';
       if (!acc[cid]) acc[cid] = [];
