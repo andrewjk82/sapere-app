@@ -513,8 +513,24 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
+  const renderHistoryCard = (stat) => (
+    <div key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`} onClick={() => setSelectedChallenge(stat)} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}><Trophy size={20} /></div>
+        <div>
+          <div style={{ fontWeight: 800 }}>{stat.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {stat.id}</div>
+          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>Score: {stat.score}/{stat.total}</div>
+        </div>
+      </div>
+      <button onClick={(e) => { e.stopPropagation(); handleResetChallenge(stat); }} style={{ padding: '8px 16px', borderRadius: '10px', background: '#fff1f2', color: '#f43f5e', border: 0, fontWeight: 700, cursor: 'pointer' }}>Reset</button>
+    </div>
+  );
+
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
   if (!student) return <div className="app-empty">Student not found.</div>;
+
+  const dailyPracticeStats = dailyStats.filter(stat => stat.challengeType !== 'calc' && stat.statCollection !== 'calc_stats');
+  const calculationStats = dailyStats.filter(stat => stat.challengeType === 'calc' || stat.statCollection === 'calc_stats');
 
   const assignedYears = Array.isArray(student.assignedYear) ? student.assignedYear : [student.assignedYear || student.level || student.year || 'Year 11'];
   const assignedCourses = Array.isArray(student.assignedCourse) ? student.assignedCourse : [student.assignedCourse || 'Advanced'];
@@ -848,19 +864,20 @@ const StudentDetail = ({ studentId, onBack }) => {
               </button>
             </div>
             <div style={{ display: 'grid', gap: '12px' }}>
-              {dailyStats.length > 0 ? dailyStats.map(stat => (
-                <div key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`} onClick={() => setSelectedChallenge(stat)} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                    <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}><Trophy size={20} /></div>
-                    <div>
-                      <div style={{ fontWeight: 800 }}>{stat.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {stat.id}</div>
-                      <div style={{ fontSize: '0.75rem', color: '#64748b' }}>Score: {stat.score}/{stat.total}</div>
-                    </div>
-                  </div>
-                  <button onClick={(e) => { e.stopPropagation(); handleResetChallenge(stat); }} style={{ padding: '8px 16px', borderRadius: '10px', background: '#fff1f2', color: '#f43f5e', border: 0, fontWeight: 700, cursor: 'pointer' }}>Reset</button>
-                </div>
-              )) : (
-                <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 600 }}>No challenge history yet.</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '4px' }}>
+                <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#64748b', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Daily Practice</div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#94a3b8' }}>{dailyPracticeStats.length}</div>
+              </div>
+              {dailyPracticeStats.length > 0 ? dailyPracticeStats.map(renderHistoryCard) : (
+                <div style={{ textAlign: 'center', padding: '24px', color: '#94a3b8', fontWeight: 600, background: '#f8fafc', borderRadius: '18px', border: '1px dashed #e2e8f0' }}>No Daily Practice history yet.</div>
+              )}
+
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '16px' }}>
+                <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#92400e', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Basic Calculation</div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#d97706' }}>{calculationStats.length}</div>
+              </div>
+              {calculationStats.length > 0 ? calculationStats.map(renderHistoryCard) : (
+                <div style={{ textAlign: 'center', padding: '24px', color: '#b45309', fontWeight: 700, background: '#fffbeb', borderRadius: '18px', border: '1px dashed #fde68a' }}>No Basic Calculation history yet.</div>
               )}
             </div>
           </div>
