@@ -11,6 +11,7 @@ import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
+import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView, { toDisplayText } from './MathView';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { Target, AlertTriangle, TrendingUp } from 'lucide-react';
@@ -32,14 +33,22 @@ const getYearNumber = (value) => {
   return Number.isFinite(parsed) ? parsed : null;
 };
 
+const normalizeYearLabel = (value) => {
+  const yearNumber = getYearNumber(value);
+  return yearNumber === null ? String(value || '').trim() : `Year ${yearNumber}`;
+};
+
 const getValidChapterIdsForYears = (years, courses) => {
   const ids = new Set();
   years.forEach(year => {
-    const yearData = CURRICULUM_DATA[year];
+    const yearData = CURRICULUM_DATA[normalizeYearLabel(year)];
     if (!yearData) return;
-    const chapters = Array.isArray(yearData)
+    let chapters = Array.isArray(yearData)
       ? yearData
       : courses.flatMap(course => yearData[course] || []);
+    if (!Array.isArray(yearData) && chapters.length === 0) {
+      chapters = yearData.Advanced || Object.values(yearData)[0] || [];
+    }
     chapters.forEach(chapter => ids.add(chapter.id));
   });
   return ids;
@@ -768,11 +777,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       let assignedYears = Array.isArray(rawYear) 
         ? rawYear 
         : String(rawYear).split(',').map(y => y.trim()).filter(Boolean);
+      assignedYears = assignedYears.map(normalizeYearLabel).filter(Boolean);
       
       let assignedChapters = getAssignedChapters(studentProfile, assignedYears[0]);
 
       if (hasDailyConfig) {
-        if (config.years?.length > 0) assignedYears = config.years;
+        if (config.years?.length > 0) assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
         if (config.chapters?.length > 0) assignedChapters = config.chapters;
         else if (config.years?.length > 0) assignedChapters = []; 
       }
