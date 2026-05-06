@@ -146,7 +146,15 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     `,
     backgroundSize: '20px 20px',
     backgroundPosition: 'center center',
-  } : {};
+  } : {
+    backgroundImage: `
+      linear-gradient(to bottom, transparent 31px, #dbeafe 32px),
+      linear-gradient(to right, #fecaca 0, #fecaca 2px, transparent 2px)
+    `,
+    backgroundSize: '100% 32px, 100% 100%',
+    backgroundPosition: '0 8px, 56px 0',
+    backgroundColor: '#fff',
+  };
 
   return (
     <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative' }}>
