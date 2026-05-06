@@ -10,7 +10,7 @@ import {
 import { db } from '../firebase/config';
 import { 
   doc, updateDoc, onSnapshot, collection, 
-  addDoc, serverTimestamp, deleteDoc, increment, getDocs, setDoc, query, where
+  addDoc, serverTimestamp, deleteDoc, getDocs, setDoc, query, where
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -461,6 +461,43 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
+  const recalculateStudentTotals = async (colName) => {
+    const dailySnap = await getDocs(collection(db, colName, studentId, 'daily_stats'));
+    const calcSnap = await getDocs(collection(db, colName, studentId, 'calc_stats'));
+    const hasCalculationTest = student.calculationEnabled !== false;
+    const getFallbackXp = (data, type) => {
+      const score = Number(data.score) || 0;
+      const total = Number(data.total) || 0;
+      if (total <= 0) return 0;
+      const maxXp = type === 'calc' ? 50 : hasCalculationTest ? 50 : 100;
+      return Math.round((score / total) * maxXp);
+    };
+
+    let totalXP = 0;
+    let challengesCompleted = 0;
+
+    const includeStat = (data) => data.completed || (Number(data.score) || 0) > 0;
+    dailySnap.forEach(d => {
+      const data = d.data();
+      if (!includeStat(data)) return;
+      totalXP += Number(data.xpEarned) || getFallbackXp(data, 'daily');
+      challengesCompleted += 1;
+    });
+    calcSnap.forEach(d => {
+      const data = d.data();
+      if (!includeStat(data)) return;
+      totalXP += Number(data.xpEarned) || getFallbackXp(data, 'calc');
+      challengesCompleted += 1;
+    });
+
+    await setDoc(doc(db, colName, studentId), {
+      totalXP,
+      challengesCompleted
+    }, { merge: true });
+
+    return { totalXP, challengesCompleted };
+  };
+
   const deleteWorkingOutForChallenge = async (stat) => {
     const questionIds = new Set([
       ...(stat.questions || []).map(q => q?.id).filter(Boolean),
@@ -487,26 +524,24 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const handleResetChallenge = async (stat) => {
-    if (!confirm("Are you sure you want to reset this challenge? This will subtract XP, challenge count, and saved working out images.")) return;
+    if (!confirm("Are you sure you want to reset this challenge? This will delete the attempt and recalculate XP from the remaining history.")) return;
     
     try {
       const colName = student.source === 'manual' ? 'students' : 'users';
-      const userRef = doc(db, colName, studentId);
-      
-      // Subtract XP and challenge count
-      const fallbackMaxXp = student.calculationEnabled !== false ? 50 : 100;
-      const fallbackXp = Math.round(((Number(stat.score) || 0) / (Number(stat.total) || 1)) * fallbackMaxXp);
-      await updateDoc(userRef, {
-        totalXP: increment(-(Number(stat.xpEarned) || fallbackXp)),
-        challengesCompleted: increment(-1)
-      });
-
       const statCollection = stat.statCollection || (stat.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
       const statRef = doc(db, colName, studentId, statCollection, stat.id);
-      const deletedWorkingOutCount = await deleteWorkingOutForChallenge(stat);
+
+      let deletedWorkingOutCount = 0;
+      try {
+        deletedWorkingOutCount = await deleteWorkingOutForChallenge(stat);
+      } catch (workingOutError) {
+        console.warn('Working out cleanup skipped:', workingOutError.code || workingOutError.message || workingOutError);
+      }
+
       await deleteDoc(statRef);
+      const totals = await recalculateStudentTotals(colName);
       
-      showToast(`Challenge reset and XP updated. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? '' : 's'}.`, 'success');
+      showToast(`Challenge reset. XP recalculated to ${totals.totalXP}. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? '' : 's'}.`, 'success');
     } catch (err) {
       console.error("Reset error:", err);
       showToast("Failed to reset challenge.", 'error');
