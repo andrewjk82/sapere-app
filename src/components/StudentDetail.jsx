@@ -1182,10 +1182,6 @@ const StudentDetail = ({ studentId, onBack }) => {
                   </div>
                 </div>
                 <div>
-                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Daily Challenge Questions</label>
-                  <input type="number" min="5" max="50" value={editForm.dailyQuestionCount} onChange={e => setEditForm({...editForm, dailyQuestionCount: parseInt(e.target.value) || 10})} style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 700 }} placeholder="Default: 10" />
-                </div>
-                <div>
                   <label style={{ display: 'block', marginBottom: '8px', fontWeight: 800, fontSize: '0.8rem', color: '#64748b' }}>Dream Career / Goal</label>
                   <input type="text" value={editForm.dreamJob} onChange={e => setEditForm({...editForm, dreamJob: e.target.value})} style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', fontWeight: 700 }} />
                 </div>
