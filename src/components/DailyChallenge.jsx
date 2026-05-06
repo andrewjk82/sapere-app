@@ -1045,7 +1045,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     
     const currentQ = questions[currentIdx];
     const isShortAnswer = currentQ?.type === 'short_answer';
-    const isGraphSketch = currentQ?.type === 'graph_sketch';
+    const isGraphSketch = currentQ?.type === 'graph_sketch' || currentQ?.requiresManualGrading === true;
     
     let correct = false;
     let canvasDataUrl = null;
@@ -1078,26 +1078,43 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     if (isGraphSketch) {
       try {
-        if (canvasDataUrl) {
-          await addDoc(collection(db, 'grading_queue'), {
-            userId: user.uid,
-            userName: studentProfile?.name || 'Student',
-            questionId: currentQ?.id || null,
-            questionText: currentQ?.question || currentQ?.text || '',
-            answerImage: canvasDataUrl,
-            status: 'pending',
-            submittedAt: serverTimestamp(),
-            year: currentQ?.year || CHALLENGE_YEAR,
-            chapterTitle: currentQ?.chapterTitle || '',
-            topicTitle: currentQ?.topicTitle || '',
-            challengeType: challengeType,
-            totalQuestions: TOTAL_QUESTIONS,
-            correctAnswer: currentQ?.answer || '',
-            solution: currentQ?.solution || ''
+        const gradingEntry = {
+          userId: user.uid,
+          userName: studentProfile?.name || studentProfile?.displayName || user?.displayName || 'Student',
+          userEmail: studentProfile?.email || user?.email || '',
+          questionId: currentQ?.id || null,
+          questionText: currentQ?.question || currentQ?.text || '',
+          answerImage: canvasDataUrl || null,
+          answerText: !canvasDataUrl ? (typeof optionText === 'string' ? optionText : '') : null,
+          status: 'pending',
+          submittedAt: serverTimestamp(),
+          year: currentQ?.year || CHALLENGE_YEAR,
+          chapterTitle: currentQ?.chapterTitle || '',
+          topicTitle: currentQ?.topicTitle || '',
+          challengeType: challengeType,
+          totalQuestions: TOTAL_QUESTIONS,
+          correctAnswer: currentQ?.answer || '',
+          solution: currentQ?.solution || '',
+          requiresManualGrading: currentQ?.requiresManualGrading || true,
+        };
+        await addDoc(collection(db, 'grading_queue'), gradingEntry);
+
+        // Notify teacher
+        try {
+          await fetch('/api/send-notif', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              toAdmin: true,
+              subject: `📝 Review Required: ${gradingEntry.userName}`,
+              text: `${gradingEntry.userName} submitted an answer requiring teacher review.\n\nQuestion: "${gradingEntry.questionText.slice(0, 150)}"\nChapter: ${gradingEntry.chapterTitle}\n\nPlease check the grading queue in your dashboard.`,
+            })
           });
+        } catch (notifErr) {
+          console.warn('Teacher notification failed (non-critical):', notifErr);
         }
       } catch (err) {
-        console.error("Failed to submit drawing for review", err);
+        console.error("Failed to submit for review", err);
       } finally {
         setIsSubmittingCanvas(false);
       }

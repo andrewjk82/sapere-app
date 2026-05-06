@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Plus, Trash2, Edit2, Save, Image as ImageIcon, CheckCircle2, Eye, Check } from 'lucide-react';
+import { X, Plus, Trash2, Edit2, Save, Image as ImageIcon, CheckCircle2, Eye, Check, AlertTriangle } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, addDoc, deleteDoc, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
@@ -209,7 +209,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     hint: '',
     topicId: '',
     topicCode: '',
-    topicTitle: ''
+    topicTitle: '',
+    requiresManualGrading: false
   });
 
   useEffect(() => {
@@ -263,7 +264,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         hint: q.hint || '',
         topicId: q.topicId || '',
         topicCode: q.topicCode || '',
-        topicTitle: q.topicTitle || ''
+        topicTitle: q.topicTitle || '',
+        requiresManualGrading: q.requiresManualGrading || false
       });
       setEditingQuestion(q.id);
     } else {
@@ -286,11 +288,23 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         hint: '',
         topicId: '',
         topicCode: '',
-        topicTitle: ''
+        topicTitle: '',
+        requiresManualGrading: false
       });
       setEditingQuestion(null);
     }
     setIsFormOpen(true);
+  };
+
+  const MANUAL_GRADING_KEYWORDS = /\b(show that|draw|sketch|prove|describe|explain|construct|hence|justify|demonstrate|find and sketch|graph)/i;
+
+  const handleQuestionTextChange = (text) => {
+    const autoDetected = MANUAL_GRADING_KEYWORDS.test(text);
+    setFormData(prev => ({
+      ...prev,
+      questionText: text,
+      requiresManualGrading: autoDetected ? true : prev.requiresManualGrading
+    }));
   };
 
   const handleSave = async () => {
@@ -320,6 +334,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answer: formData.type === 'multiple_choice' ? formData.answerIdx.toString() : formData.answer,
         solution: formData.solution,
         hint: formData.hint,
+        requiresManualGrading: formData.requiresManualGrading || false,
         updatedAt: serverTimestamp()
       };
 
@@ -391,10 +406,17 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {questions.map((q, idx) => (
-                    <div key={q.id} style={{ padding: '20px', borderRadius: '16px', border: '1px solid #e2e8f0', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <div key={q.id} style={{ padding: '20px', borderRadius: '16px', border: `1px solid ${q.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`, background: q.requiresManualGrading ? '#fffbeb' : '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div style={{ flex: 1, paddingRight: '20px' }}>
-                        <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', marginBottom: '8px' }}>
-                          {q.title || `Question ${idx + 1}`} • {q.difficulty}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase' }}>
+                            {q.title || `Question ${idx + 1}`} • {q.difficulty}
+                          </div>
+                          {q.requiresManualGrading && (
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.65rem', fontWeight: 800, background: '#fef3c7', color: '#92400e', borderRadius: '100px', padding: '2px 8px', border: '1px solid #fcd34d' }}>
+                              <AlertTriangle size={10} /> Teacher Review
+                            </span>
+                          )}
                         </div>
                         {q.topicTitle && (
                           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '10px', padding: '5px 9px', borderRadius: '999px', background: '#e0f2fe', color: '#0369a1', fontSize: '0.72rem', fontWeight: 800 }}>
@@ -474,7 +496,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Question Content (LaTeX supported)</label>
-                <textarea rows={3} value={formData.questionText} onChange={e => setFormData({...formData, questionText: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="e.g. Solve for $x$: $x^2 = 25$" />
+                <textarea rows={3} value={formData.questionText} onChange={e => handleQuestionTextChange(e.target.value)} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="e.g. Solve for $x$: $x^2 = 25$" />
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>LIVE PREVIEW:</span>
                   <MathPreview content={formData.questionText} />
@@ -575,6 +597,43 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>SOLUTION PREVIEW:</span>
                   <MathPreview content={formData.solution} />
+                </div>
+              </div>
+
+              {/* Manual Grading Toggle */}
+              <div
+                onClick={() => setFormData(prev => ({ ...prev, requiresManualGrading: !prev.requiresManualGrading }))}
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '16px',
+                  padding: '16px 20px', borderRadius: '16px', cursor: 'pointer',
+                  background: formData.requiresManualGrading ? '#fffbeb' : '#f8fafc',
+                  border: `1.5px solid ${formData.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`,
+                  transition: 'all 0.2s'
+                }}
+              >
+                <div style={{
+                  width: '44px', height: '24px', borderRadius: '100px',
+                  background: formData.requiresManualGrading ? '#f59e0b' : '#cbd5e1',
+                  position: 'relative', transition: 'all 0.2s', flexShrink: 0
+                }}>
+                  <div style={{
+                    position: 'absolute', top: '3px',
+                    left: formData.requiresManualGrading ? '22px' : '3px',
+                    width: '18px', height: '18px', borderRadius: '50%',
+                    background: 'white', transition: 'all 0.2s',
+                    boxShadow: '0 1px 4px rgba(0,0,0,0.15)'
+                  }} />
+                </div>
+                <div>
+                  <div style={{ fontWeight: 800, fontSize: '0.9rem', color: formData.requiresManualGrading ? '#92400e' : '#374151', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <AlertTriangle size={14} color={formData.requiresManualGrading ? '#d97706' : '#94a3b8'} />
+                    Requires Teacher Review
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '2px' }}>
+                    {formData.requiresManualGrading
+                      ? 'Student answer will go to grading queue — no auto-score'
+                      : 'Auto-detected for: Draw, Sketch, Show that, Prove, etc.'}
+                  </div>
                 </div>
               </div>
 
