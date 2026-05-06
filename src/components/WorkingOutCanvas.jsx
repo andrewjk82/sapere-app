@@ -146,7 +146,6 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   };
 
   const zoomSpacerSize = `${Math.max(zoom, 1) * 100}%`;
-  const zoomedPadSize = `${100 / Math.max(zoom, 1)}%`;
 
   // Grid pattern for graphing
   const isGraph = questionType === 'graph_sketch';
@@ -318,10 +317,8 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
           <div
             ref={canvasAreaRef}
             style={{
-              width: zoomedPadSize,
-              height: zoomedPadSize,
-              minWidth: zoom >= 1 ? undefined : '100%',
-              minHeight: zoom >= 1 ? undefined : '100%',
+              width: '100%',
+              height: '100%',
               position: 'absolute',
               top: 0,
               left: 0,
