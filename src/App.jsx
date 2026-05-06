@@ -113,7 +113,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) =>
 
 function App() {
   // Triggering fresh deployment with version 1.1.2
-  const { user, isAdmin, logout } = useAuth();
+  const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
   
   useEffect(() => {
     if (isAdmin && user) {
@@ -194,6 +194,8 @@ function App() {
   const [showOpeningIntro, setShowOpeningIntro] = useState(false);
   const [openingIntroVisible, setOpeningIntroVisible] = useState(false);
   const [isStandaloneIntro, setIsStandaloneIntro] = useState(() => isStandaloneAppDisplay());
+  const [verificationChecking, setVerificationChecking] = useState(false);
+  const [verificationMessage, setVerificationMessage] = useState('');
   
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
@@ -393,6 +395,36 @@ function App() {
   // Only block for email verification if the profile is ALREADY complete (not during signup)
   const isProfileComplete = profile && (profile.role === 'parent' || (profile.role === 'student' && profile.firstName));
   if (!user.emailVerified && isPasswordProvider && isProfileComplete) {
+    const handleCheckVerification = async () => {
+      try {
+        setVerificationChecking(true);
+        setVerificationMessage('');
+        const refreshedUser = await refreshUser();
+        if (!refreshedUser?.emailVerified) {
+          setVerificationMessage('Email verification is not updated yet. Please open the verification link, then try again.');
+        }
+      } catch (err) {
+        console.error('Verification refresh failed:', err);
+        setVerificationMessage('Could not refresh your verification status. Please try signing out and back in.');
+      } finally {
+        setVerificationChecking(false);
+      }
+    };
+
+    const handleResendVerification = async () => {
+      try {
+        setVerificationChecking(true);
+        setVerificationMessage('');
+        await resendVerificationEmail();
+        setVerificationMessage('A new verification email has been sent. Please check your inbox and spam folder.');
+      } catch (err) {
+        console.error('Resend verification failed:', err);
+        setVerificationMessage(err?.message || 'Could not resend the verification email right now.');
+      } finally {
+        setVerificationChecking(false);
+      }
+    };
+
     return (
       <AuthLayout
         eyebrow="One last step"
@@ -425,6 +457,18 @@ function App() {
               Verify <strong>{user.email}</strong> to continue into your account.
             </p>
           </div>
+          {verificationMessage && (
+            <div className="auth-message auth-message--success" style={{ width: '100%' }}>
+              {verificationMessage}
+            </div>
+          )}
+          <button onClick={handleCheckVerification} disabled={verificationChecking} className="auth-submit">
+            {verificationChecking ? 'Checking...' : "I've verified, continue"}
+            <ArrowRight size={18} />
+          </button>
+          <button onClick={handleResendVerification} disabled={verificationChecking} className="app-button app-button--secondary" style={{ width: '100%' }}>
+            Resend verification email
+          </button>
           <button onClick={logout} className="auth-submit">
             Sign out and try again
             <ArrowRight size={18} />
