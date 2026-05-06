@@ -108,22 +108,29 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   };
 
   const handleImportQuestions = async () => {
+    console.log('Import button clicked');
     setIsImporting(true);
     try {
-      // Import everything from the consolidated ultimate script
-      const { importAllYear10Extra } = await import('../scripts/importYear10Ch1_Ultimate.js');
+      showToast('Starting import process...', 'info');
+      
+      console.log('Attempting to dynamic import the script...');
+      const module = await import('../scripts/importYear10Ch1_Ultimate.js');
+      console.log('Script imported successfully:', module);
+      
+      const { importAllYear10Extra } = module;
       const count = await importAllYear10Extra();
+      console.log('Import finished. Count:', count);
       
       if (count > 0) {
         showToast(`Successfully imported ${count} new Year 10 questions!`, 'success');
         setImportDone(true);
       } else {
-        showToast('All questions are already in the database.', 'info');
+        showToast('Import complete. No new questions added (all might be duplicates).', 'info');
         setImportDone(true);
       }
     } catch (err) {
-      console.error('Import failed:', err);
-      showToast('Import failed: ' + (err.message || 'Unknown error'), 'error');
+      console.error('CRITICAL: Import failed:', err);
+      showToast('Import failed: ' + (err.message || 'Check console for details'), 'error');
     } finally {
       setIsImporting(false);
     }
