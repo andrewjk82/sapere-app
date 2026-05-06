@@ -599,11 +599,13 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
               </div>
               
               {pendingGrading.length > 0 && (
-                <div className="app-panel dashboard-card" style={{ marginTop: '20px' }}>
+                <div className="app-panel dashboard-card" style={{ marginTop: '20px', border: '1.5px solid #fcd34d', background: 'linear-gradient(to bottom right, #fffbeb, white)' }}>
                   <div className="dashboard-card__header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <h3 style={{ margin: 0 }}>Grading Queue</h3>
-                      <span style={{ background: '#ef4444', color: 'white', fontSize: '0.7rem', fontWeight: 800, padding: '2px 8px', borderRadius: '10px' }}>{pendingGrading.length} PENDING</span>
+                      <h3 style={{ margin: 0 }}>📝 Teacher Review Queue</h3>
+                      <span style={{ background: '#ef4444', color: 'white', fontSize: '0.7rem', fontWeight: 800, padding: '2px 8px', borderRadius: '10px', animation: 'pulse 2s infinite' }}>
+                        {pendingGrading.length} PENDING
+                      </span>
                     </div>
                   </div>
                   <div className="activity-list">
@@ -611,17 +613,29 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       <div 
                         key={item.id} 
                         className="activity-item" 
-                        style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '12px' }}
+                        style={{ cursor: 'pointer', display: 'flex', alignItems: 'flex-start', gap: '12px', padding: '12px', borderRadius: '12px', background: 'white', border: '1px solid #fde68a', marginBottom: '8px' }}
                         onClick={() => setSelectedGradingItem(item)}
                       >
-                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: '#f1f5f9', overflow: 'hidden', border: '1px solid #e2e8f0', flexShrink: 0 }}>
-                          <img src={item.answerImage} alt="Sketch" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        {/* Thumbnail or text preview */}
+                        <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: '#f1f5f9', overflow: 'hidden', border: '1px solid #e2e8f0', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          {item.answerImage 
+                            ? <img src={item.answerImage} alt="Sketch" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            : <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#64748b', textAlign: 'center', padding: '2px' }}>{(item.answerText || '—').slice(0, 12)}</span>
+                          }
                         </div>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontWeight: 700, fontSize: '0.9rem', color: '#1e1b4b' }}>{item.userName}</div>
-                          <div style={{ fontSize: '0.8rem', color: '#64748b' }}>{item.topicTitle || 'Graph Sketch'}</div>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ fontWeight: 800, fontSize: '0.9rem', color: '#1e1b4b' }}>{item.userName}</div>
+                          <div style={{ fontSize: '0.75rem', color: '#92400e', fontWeight: 600, marginBottom: '4px' }}>
+                            {item.chapterTitle || item.topicTitle || 'Open Question'}
+                          </div>
+                          <div style={{ fontSize: '0.72rem', color: '#64748b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '200px' }}>
+                            {(item.questionText || '').slice(0, 60)}...
+                          </div>
+                          <span style={{ display: 'inline-block', marginTop: '4px', fontSize: '0.65rem', fontWeight: 800, background: '#fef3c7', color: '#92400e', borderRadius: '100px', padding: '1px 7px', border: '1px solid #fcd34d' }}>
+                            {item.answerImage ? '🖊 Drawing' : '📝 Text Answer'}
+                          </span>
                         </div>
-                        <ChevronRight size={16} color="#94a3b8" />
+                        <ChevronRight size={16} color="#94a3b8" style={{ flexShrink: 0, marginTop: '4px' }} />
                       </div>
                     ))}
                   </div>
