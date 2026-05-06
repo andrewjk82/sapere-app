@@ -783,12 +783,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           isManual: true
         };
       }).filter(q => {
-        // More inclusive filtering for manual questions
-        const yearNum = q.year ? parseInt(String(q.year).replace(/\D/g, '')) : null;
-        const assignedYearNum = assignedYear ? parseInt(String(assignedYear).replace(/\D/g, '')) : null;
-        
-        // Match by year - if year is not specified or matches, include it
-        const yearMatches = !yearNum || !assignedYearNum || yearNum === assignedYearNum;
+        // Check if the question's year is included in the assigned years string
+        // Example: "Year 11" is included in "year 11, year 10"
+        let yearMatches = true;
+        if (q.year && assignedYear) {
+           const qYearStr = String(q.year).toLowerCase();
+           const assignedYearStr = String(assignedYear).toLowerCase();
+           yearMatches = assignedYearStr.includes(qYearStr);
+        }
         
         // Match by chapter ONLY IF student has specific chapters assigned, otherwise allow any from that year
         const hasAssignedChapters = studentProfile?.assignedChapters && studentProfile.assignedChapters.length > 0;
@@ -849,14 +851,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     }
     
-    // Combine them (Manual first, then AI)
+    // Combine them and shuffle so they are fully randomized
     let combinedQs = [...selectedManual, ...aiQs].map(correctQuestionAnswer);
-    // We only shuffle AI questions or if there are no manual ones
-    // But per user request, we put manual questions FIRST.
-    // So we don't shuffle the whole array if manual questions are present.
-    if (selectedManual.length === 0) {
-      combinedQs = combinedQs.sort(() => Math.random() - 0.5);
-    }
+    combinedQs = combinedQs.sort(() => Math.random() - 0.5);
 
     setQuestions(combinedQs);
     setUserAnswers(new Array(qCount).fill(null));
