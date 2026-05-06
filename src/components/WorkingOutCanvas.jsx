@@ -23,6 +23,17 @@ const distanceToSegment = (point, start, end) => {
   return Math.hypot(point.x - projection.x, point.y - projection.y);
 };
 
+const scaleCanvasPaths = (canvasPaths, factor) => (
+  (canvasPaths || []).map(path => ({
+    ...path,
+    strokeWidth: path.strokeWidth * factor,
+    paths: (path.paths || []).map(point => ({
+      x: point.x * factor,
+      y: point.y * factor,
+    })),
+  }))
+);
+
 const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const canvasRef = useRef(null);
   const canvasAreaRef = useRef(null);
@@ -67,12 +78,24 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     canvasRef.current?.undo();
   };
 
+  const applyZoom = async (nextZoom) => {
+    const normalizedZoom = Math.min(2, Math.max(0.75, Number(nextZoom.toFixed(2))));
+    if (normalizedZoom === zoom) return;
+
+    const factor = normalizedZoom / zoom;
+    const currentPaths = await canvasRef.current?.exportPaths().catch(() => paths);
+    const scaledPaths = scaleCanvasPaths(currentPaths || paths, factor);
+
+    setZoom(normalizedZoom);
+    replacePaths(scaledPaths);
+  };
+
   const zoomOut = () => {
-    setZoom(value => Math.max(0.75, Number((value - 0.25).toFixed(2))));
+    applyZoom(zoom - 0.25);
   };
 
   const zoomIn = () => {
-    setZoom(value => Math.min(2, Number((value + 0.25).toFixed(2))));
+    applyZoom(zoom + 0.25);
   };
 
   const setDrawMode = () => {
@@ -104,8 +127,8 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     const rect = canvasAreaRef.current?.getBoundingClientRect();
     if (!rect) return null;
     return {
-      x: (event.clientX - rect.left) / zoom,
-      y: (event.clientY - rect.top) / zoom,
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
     };
   };
 
@@ -155,14 +178,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       linear-gradient(to right, #e2e8f0 1px, transparent 1px),
       linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
     `,
-    backgroundSize: '20px 20px',
+    backgroundSize: `${20 * zoom}px ${20 * zoom}px`,
     backgroundPosition: 'center center',
   } : {
     backgroundImage: `
       linear-gradient(to bottom, transparent 31px, #dbeafe 32px)
     `,
-    backgroundSize: '100% 32px',
-    backgroundPosition: '0 8px',
+    backgroundSize: `100% ${32 * zoom}px`,
+    backgroundPosition: `0 ${8 * zoom}px`,
     backgroundColor: '#fff',
   };
 
@@ -262,7 +285,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
               <ZoomOut size={18} />
             </button>
             <button
-              onClick={() => setZoom(1)}
+              onClick={() => applyZoom(1)}
               style={{
                 height: '36px', minWidth: '54px', padding: '0 10px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -322,8 +345,6 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
               position: 'absolute',
               top: 0,
               left: 0,
-              transform: `scale(${zoom})`,
-              transformOrigin: 'top left',
               ...graphBackgroundStyles
             }}
           >
