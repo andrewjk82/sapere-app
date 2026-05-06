@@ -93,6 +93,55 @@ const getUniqueOptions = (answer, distractors, min = 0, max = 100) => {
 const wordOptions = (answer, pool) => shuffle([answer, ...shuffle(pool.filter(item => item !== answer)).slice(0, 3)]);
 const pickGeneratorType = (value, fallback = 'generic_year1') => Array.isArray(value) ? pick(value) : (value || fallback);
 
+const normalizeMathText = (value) => String(value ?? '')
+  .replace(/\$\$/g, '')
+  .replace(/[−–—]/g, '-')
+  .replace(/×/g, 'x')
+  .trim();
+
+const deriveSimpleMathAnswer = (questionText) => {
+  const text = normalizeMathText(questionText).replace(/\s+/g, ' ');
+  const binary = text.match(/^(-?\d+(?:\.\d+)?)\s*([+\-x*÷/])\s*(-?\d+(?:\.\d+)?)\s*=\s*\?$/i);
+  if (!binary) return null;
+
+  const left = Number(binary[1]);
+  const right = Number(binary[3]);
+  if (!Number.isFinite(left) || !Number.isFinite(right)) return null;
+
+  const op = binary[2].toLowerCase();
+  let result = null;
+  if (op === '+') result = left + right;
+  if (op === '-') result = left - right;
+  if (op === 'x' || op === '*') result = left * right;
+  if ((op === '÷' || op === '/') && right !== 0) result = left / right;
+
+  return result === null ? null : String(Number.isInteger(result) ? result : Number(result.toFixed(4)));
+};
+
+const optionText = (option) => {
+  if (option === null || option === undefined) return '';
+  if (typeof option === 'object') return String(option.text ?? option.label ?? option.value ?? '');
+  return String(option);
+};
+
+const ensureAnswerInOptions = (options, answer) => {
+  if (!Array.isArray(options) || options.length === 0) return options;
+  if (options.some(option => optionText(option).trim() === String(answer))) return options;
+  return [answer, ...options.filter(option => optionText(option).trim() !== String(answer))].slice(0, 4);
+};
+
+const validateGeneratedQuestion = (question) => {
+  const expectedAnswer = deriveSimpleMathAnswer(question?.question);
+  if (expectedAnswer === null) return question;
+
+  return {
+    ...question,
+    answer: expectedAnswer,
+    options: ensureAnswerInOptions(question.options, expectedAnswer),
+    solution: question.solution || `${normalizeMathText(question.question).replace(/\?$/, expectedAnswer)}`,
+  };
+};
+
 export const QUESTION_BLUEPRINTS = Object.fromEntries(
   Object.entries(CURRICULUM_DATA).map(([year, data]) => {
     if (!Array.isArray(data)) return [year, {}];
@@ -179,14 +228,14 @@ export const getQuestionBlueprint = (year = DEFAULT_YEAR, chapterId = DEFAULT_CH
   QUESTION_BLUEPRINTS[year]?.[chapterId] || null
 );
 
-const q = (type, question, options, answer, solution, timeLimit = 30, hint = '', extras = {}) => ({ 
-  type, 
-  question, 
-  options, 
-  answer, 
-  solution, 
+const q = (type, question, options, answer, solution, timeLimit = 30, hint = '', extras = {}) => validateGeneratedQuestion({
+  type,
+  question,
+  options,
+  answer,
+  solution,
   timeLimit,
-  hint: hint || solution, // Use solution as fallback hint if not provided
+  hint: hint || solution,
   ...extras,
 });
 

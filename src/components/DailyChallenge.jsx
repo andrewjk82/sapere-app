@@ -27,6 +27,68 @@ const getAssignedChapters = (profile, assignedYear) => {
   return assignedYear === CHALLENGE_YEAR ? [CHALLENGE_CHAPTER_ID] : [];
 };
 
+const normalizeText = (value) => String(value ?? '')
+  .replace(/\$\$/g, '')
+  .replace(/[−–—]/g, '-')
+  .replace(/×/g, 'x')
+  .trim();
+
+const getAnswerText = (option) => toDisplayText(option).trim();
+
+const deriveSimpleMathAnswer = (questionText) => {
+  const text = normalizeText(questionText).replace(/\s+/g, ' ');
+  const binary = text.match(/^(-?\d+(?:\.\d+)?)\s*([+\-x*÷/])\s*(-?\d+(?:\.\d+)?)\s*=\s*\?$/i);
+  if (!binary) return null;
+
+  const left = Number(binary[1]);
+  const right = Number(binary[3]);
+  if (!Number.isFinite(left) || !Number.isFinite(right)) return null;
+
+  const op = binary[2].toLowerCase();
+  let result = null;
+  if (op === '+') result = left + right;
+  if (op === '-') result = left - right;
+  if (op === 'x' || op === '*') result = left * right;
+  if ((op === '÷' || op === '/') && right !== 0) result = left / right;
+
+  return result === null ? null : String(Number.isInteger(result) ? result : Number(result.toFixed(4)));
+};
+
+const correctQuestionAnswer = (question) => {
+  const expectedAnswer = deriveSimpleMathAnswer(question?.question);
+  if (expectedAnswer === null) return question;
+
+  const options = getOptions(question);
+  const matchingOptionIndex = options.findIndex(option => getAnswerText(option) === expectedAnswer);
+  const repaired = {
+    ...question,
+    solution: question.solution || `${normalizeText(question.question).replace(/\?$/, expectedAnswer)}`,
+  };
+
+  if (question?.isManual) {
+    if (matchingOptionIndex >= 0) {
+      return { ...repaired, answer: String(matchingOptionIndex) };
+    }
+
+    return {
+      ...repaired,
+      isManual: false,
+      answer: expectedAnswer,
+      options: options.length ? [expectedAnswer, ...options.filter(option => getAnswerText(option) !== expectedAnswer)].slice(0, 4) : options,
+    };
+  }
+
+  if (!options.length || options.some(option => getAnswerText(option) === expectedAnswer)) {
+    return { ...repaired, answer: expectedAnswer };
+  }
+
+  return {
+    ...repaired,
+    answer: expectedAnswer,
+    options: [expectedAnswer, ...options.filter(option => getAnswerText(option) !== expectedAnswer)].slice(0, 4),
+  };
+};
+
 const toDate = (value) => {
   if (!value) return null;
   if (value instanceof Date) return value;
@@ -746,7 +808,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
     
     // Combine them (Manual first, then AI)
-    let combinedQs = [...selectedManual, ...aiQs];
+    let combinedQs = [...selectedManual, ...aiQs].map(correctQuestionAnswer);
     // We only shuffle AI questions or if there are no manual ones
     // But per user request, we put manual questions FIRST.
     // So we don't shuffle the whole array if manual questions are present.
