@@ -874,20 +874,6 @@ const StudentDetail = ({ studentId, onBack }) => {
       case 'challenge':
         return (
           <div style={styles.card} className="profile-card-mobile">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px', flexWrap: 'wrap', gap: '20px' }}>
-              <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>DAILY QUESTION LIMIT</div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#f5f3ff', padding: '10px 20px', borderRadius: '30px', border: '1px solid rgba(99, 102, 241, 0.2)', minWidth: '140px', justifyContent: 'center' }}>
-                <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1', whiteSpace: 'nowrap' }}>COUNT:</span>
-                <input 
-                  type="number" 
-                  min="5" 
-                  max="50"
-                  value={student.dailyQuestionCount || 10} 
-                  onChange={e => handleUpdateCurriculumSetting('dailyQuestionCount', parseInt(e.target.value) || 10)}
-                  style={{ width: '60px', background: 'transparent', border: 0, fontWeight: 900, color: '#1e1b4b', outline: 'none', textAlign: 'center', fontSize: '1.1rem', padding: 0 }}
-                />
-              </div>
-            </div>
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
               <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', margin: 0 }}>CHALLENGE HISTORY</div>
