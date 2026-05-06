@@ -14,6 +14,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { importYear11Ch3Questions } from '../scripts/importYear11Ch3';
+import { importYear10Ch1Questions } from '../scripts/importYear10Ch1';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 
@@ -219,16 +220,28 @@ const Curriculum = () => {
   };
 
   const handleSeedCh3Questions = async () => {
-    if (!window.confirm("Add Year 11 Chapter 3 (Functions & Graphs) questions? This will skip if they already exist.")) return;
+    if (!isAdmin || isMigrating) return;
     setIsMigrating(true);
     try {
-      await importYear11Ch3Questions();
-      showToast("Successfully processed Ch3 questions!", 'success');
-      // Trigger a re-fetch of counts
-      setQuestionCounts(prev => ({...prev})); 
-    } catch (err) {
-      console.error(err);
-      showToast("Failed to import Ch3 questions.", 'error');
+      const count = await importYear11Ch3Questions();
+      showToast(`Successfully seeded ${count} Year 11 Chapter 3 questions!`, 'success');
+    } catch (error) {
+      console.error('Error seeding questions:', error);
+      showToast('Failed to seed questions.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY10Ch1Questions = async () => {
+    if (!isAdmin || isMigrating) return;
+    setIsMigrating(true);
+    try {
+      const count = await importYear10Ch1Questions();
+      showToast(`Successfully seeded ${count} Year 10 Chapter 1 questions!`, 'success');
+    } catch (error) {
+      console.error('Error seeding Year 10 questions:', error);
+      showToast('Failed to seed questions.', 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -374,9 +387,18 @@ const Curriculum = () => {
                     onClick={handleSeedCh3Questions}
                     disabled={isMigrating}
                     className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #fecdd3', fontWeight: 800 }}
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #d1fae5', fontWeight: 800 }}
                   >
-                    {isMigrating ? 'Importing Ch3...' : '⚠️ Seed Ch3 Functions'}
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
+                  </button>
+
+                  <button 
+                    onClick={handleSeedY10Ch1Questions}
+                    disabled={isMigrating}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #ffe4e6', fontWeight: 800 }}
+                  >
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
                   </button>
 
                   <button 
