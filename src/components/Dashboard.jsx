@@ -123,6 +123,12 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
         const { importYear10Ch1Part3 } = await import('../scripts/importYear10Ch1_Part3.js');
         totalCount += await importYear10Ch1Part3();
       } catch (e) { console.error("Part 3 import error", e); }
+
+      // Part 4
+      try {
+        const { importYear10Ch1Part4 } = await import('../scripts/importYear10Ch1_Part4.js');
+        totalCount += await importYear10Ch1Part4();
+      } catch (e) { console.error("Part 4 import error", e); }
       
       showToast(`Successfully imported ${totalCount} new Year 10 questions!`, 'success');
       setImportDone(true);
