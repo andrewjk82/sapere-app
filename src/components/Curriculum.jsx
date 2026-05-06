@@ -365,7 +365,7 @@ const Curriculum = () => {
           <div className="curriculum-header-mobile">
             <div className="app-page__title">
                 <div style={{ display: 'flex', gap: '8px' }}>
-                  {!questionCounts['y11a-1'] && (
+                  {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
                     <button 
                       onClick={handleSeedAlgebraQuestions}
                       disabled={isMigrating}
@@ -376,7 +376,7 @@ const Curriculum = () => {
                     </button>
                   )}
 
-                  {!questionCounts['y11a-2'] && (
+                  {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
                     <button 
                       onClick={handleSeedSurdsQuestions}
                       disabled={isMigrating}
@@ -387,7 +387,7 @@ const Curriculum = () => {
                     </button>
                   )}
 
-                  {!questionCounts['y11a-3'] && (
+                  {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
                     <button 
                       onClick={handleSeedCh3Questions}
                       disabled={isMigrating}
