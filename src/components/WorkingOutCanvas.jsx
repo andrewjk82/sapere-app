@@ -104,8 +104,8 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     const rect = canvasAreaRef.current?.getBoundingClientRect();
     if (!rect) return null;
     return {
-      x: event.clientX - rect.left,
-      y: event.clientY - rect.top,
+      x: (event.clientX - rect.left) / zoom,
+      y: (event.clientY - rect.top) / zoom,
     };
   };
 
@@ -144,6 +144,9 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       replacePaths(paths.filter((_, index) => index !== bestIndex));
     }
   };
+
+  const zoomSpacerSize = `${Math.max(zoom, 1) * 100}%`;
+  const zoomedPadSize = `${100 / Math.max(zoom, 1)}%`;
 
   // Grid pattern for graphing
   const isGraph = questionType === 'graph_sketch';
@@ -304,16 +307,29 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       {/* Canvas Area */}
       <div style={{ flex: 1, position: 'relative', background: '#f8fafc', touchAction: 'none', overflow: 'auto' }}>
         <div
-          ref={canvasAreaRef}
           style={{
-            width: `${zoom * 100}%`,
-            height: `${zoom * 100}%`,
+            width: zoomSpacerSize,
+            height: zoomSpacerSize,
             minWidth: '100%',
             minHeight: '100%',
             position: 'relative',
-            ...graphBackgroundStyles
           }}
         >
+          <div
+            ref={canvasAreaRef}
+            style={{
+              width: zoomedPadSize,
+              height: zoomedPadSize,
+              minWidth: zoom >= 1 ? undefined : '100%',
+              minHeight: zoom >= 1 ? undefined : '100%',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              transform: `scale(${zoom})`,
+              transformOrigin: 'top left',
+              ...graphBackgroundStyles
+            }}
+          >
         {/* Draw main X and Y axes if it's a graph question */}
         {isGraph && (
           <>
@@ -360,6 +376,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
             </div>
           </div>
         )}
+        </div>
         </div>
       </div>
     </div>
