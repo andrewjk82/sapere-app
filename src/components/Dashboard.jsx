@@ -1004,48 +1004,70 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              style={{ position: 'relative', width: '100%', maxWidth: '600px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.2)' }}
+              style={{ position: 'relative', width: '100%', maxWidth: '620px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.2)', maxHeight: '90vh', overflowY: 'auto' }}
             >
-              <div style={{ background: '#1e1b4b', padding: '24px 32px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              {/* Header */}
+              <div style={{ background: 'linear-gradient(135deg, #1e1b4b, #312e81)', padding: '24px 32px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                 <div>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Manual Grading</span>
-                  <h3 style={{ margin: '4px 0 0', color: 'white', fontWeight: 900 }}>{selectedGradingItem.userName}'s Work</h3>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#a5b4fc', textTransform: 'uppercase', letterSpacing: '0.1em' }}>📝 Teacher Review</span>
+                  <h3 style={{ margin: '4px 0 2px', color: 'white', fontWeight: 900 }}>{selectedGradingItem.userName}</h3>
+                  <span style={{ fontSize: '0.8rem', color: '#c7d2fe' }}>{selectedGradingItem.chapterTitle || selectedGradingItem.topicTitle || 'Open Question'}</span>
                 </div>
-                <button onClick={() => setSelectedGradingItem(null)} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                <button onClick={() => setSelectedGradingItem(null)} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', flexShrink: 0 }}>
                   <X size={20} />
                 </button>
               </div>
               
-              <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+              <div style={{ padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                {/* Question */}
+                <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '8px' }}>Question</label>
-                  <p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b', fontSize: '1rem', lineHeight: 1.5 }}>
+                  <p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b', fontSize: '1rem', lineHeight: 1.6 }}>
                     {selectedGradingItem.questionText}
                   </p>
                 </div>
 
-                <div style={{ 
-                  width: '100%', 
-                  background: '#f1f5f9', 
-                  borderRadius: '20px', 
-                  overflow: 'hidden', 
-                  border: '2px solid #e2e8f0',
-                  position: 'relative',
-                  aspectRatio: '4/3'
-                }}>
-                  <img src={selectedGradingItem.answerImage} alt="Student Drawing" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                {/* Student's Answer */}
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '10px' }}>Student's Answer</label>
+                  {selectedGradingItem.answerImage ? (
+                    <div style={{ width: '100%', background: '#f1f5f9', borderRadius: '20px', overflow: 'hidden', border: '2px solid #e2e8f0', aspectRatio: '4/3' }}>
+                      <img src={selectedGradingItem.answerImage} alt="Student Drawing" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                    </div>
+                  ) : (
+                    <div style={{ padding: '20px', background: '#fffbeb', borderRadius: '16px', border: '1.5px solid #fcd34d', fontSize: '1rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>
+                      {selectedGradingItem.answerText || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>No text answer recorded.</span>}
+                    </div>
+                  )}
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '8px' }}>
+                {/* Correct Answer for reference */}
+                {selectedGradingItem.correctAnswer && (
+                  <div style={{ background: '#f0fdf4', padding: '16px 20px', borderRadius: '16px', border: '1px solid #bbf7d0' }}>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#059669', textTransform: 'uppercase', marginBottom: '6px' }}>✅ Correct Answer (Reference)</label>
+                    <p style={{ margin: 0, fontWeight: 700, color: '#065f46', fontSize: '0.9rem', lineHeight: 1.6 }}>{selectedGradingItem.correctAnswer}</p>
+                  </div>
+                )}
+
+                {/* Solution for reference */}
+                {selectedGradingItem.solution && (
+                  <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>📖 Solution Notes</label>
+                    <p style={{ margin: 0, fontWeight: 600, color: '#475569', fontSize: '0.88rem', lineHeight: 1.7 }}>{selectedGradingItem.solution}</p>
+                  </div>
+                )}
+
+                {/* Grade Buttons */}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', paddingTop: '8px', borderTop: '1px solid #f1f5f9' }}>
                   <button 
                     onClick={() => handleGrade('incorrect')}
-                    style={{ padding: '16px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                    style={{ padding: '18px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1rem', transition: 'all 0.2s' }}
                   >
                     <X size={20} /> Incorrect
                   </button>
                   <button 
                     onClick={() => handleGrade('correct')}
-                    style={{ padding: '16px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                    style={{ padding: '18px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1rem', transition: 'all 0.2s' }}
                   >
                     <CheckCircle2 size={20} /> Correct (+{Math.round((selectedGradingItem.challengeType === 'calc' ? 50 : 100) / (selectedGradingItem.totalQuestions || 10))} XP)
                   </button>
