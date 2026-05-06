@@ -365,41 +365,49 @@ const Curriculum = () => {
           <div className="curriculum-header-mobile">
             <div className="app-page__title">
                 <div style={{ display: 'flex', gap: '8px' }}>
-                  <button 
-                    onClick={handleSeedAlgebraQuestions}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a', fontWeight: 800 }}
-                  >
-                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
-                  </button>
+                  {!questionCounts['y11-1'] && (
+                    <button 
+                      onClick={handleSeedAlgebraQuestions}
+                      disabled={isMigrating}
+                      className="app-button"
+                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a', fontWeight: 800 }}
+                    >
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
+                    </button>
+                  )}
 
-                  <button 
-                    onClick={handleSeedSurdsQuestions}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
-                  >
-                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
-                  </button>
+                  {!questionCounts['y11-2'] && (
+                    <button 
+                      onClick={handleSeedSurdsQuestions}
+                      disabled={isMigrating}
+                      className="app-button"
+                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
+                    >
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
+                    </button>
+                  )}
 
-                  <button 
-                    onClick={handleSeedCh3Questions}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #d1fae5', fontWeight: 800 }}
-                  >
-                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
-                  </button>
+                  {!questionCounts['y11-3'] && (
+                    <button 
+                      onClick={handleSeedCh3Questions}
+                      disabled={isMigrating}
+                      className="app-button"
+                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #d1fae5', fontWeight: 800 }}
+                    >
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
+                    </button>
+                  )}
 
-                  <button 
-                    onClick={handleSeedY10Ch1Questions}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #ffe4e6', fontWeight: 800 }}
-                  >
-                    {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
-                  </button>
+                  {!questionCounts['y10-1'] && (
+                    <button 
+                      onClick={handleSeedY10Ch1Questions}
+                      disabled={isMigrating}
+                      className="app-button"
+                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #ffe4e6', fontWeight: 800 }}
+                    >
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
+                    </button>
+                  )}
 
                   <button 
                     onClick={handleSeedCurveQuestion}
