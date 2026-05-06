@@ -756,8 +756,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (hasDailyConfig) {
         if (config.years?.length > 0) assignedYears = config.years;
         if (config.chapters?.length > 0) assignedChapters = config.chapters;
-        else if (config.years?.length > 0) assignedChapters = []; // Clear curriculum chapters if years are specifically set
+        else if (config.years?.length > 0) assignedChapters = []; 
       }
+
+      // Define a primary assigned year for legacy fallbacks
+      const primaryAssignedYear = assignedYears[0] || CHALLENGE_YEAR;
 
       const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
       const assignedCourses = Array.isArray(studentProfile?.assignedCourse) ? studentProfile.assignedCourse : [studentProfile?.assignedCourse || 'Advanced'];
@@ -774,7 +777,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       try {
         const qRef = collection(db, 'questions');
         // Fetch more questions to increase chance of finding matches
-        const manualSnap = await getDocs(query(qRef, limit(500)));
+        const manualSnap = await getDocs(query(qRef, orderBy('createdAt', 'desc'), limit(500)));
       manualQs = manualSnap.docs.map(d => {
         const data = d.data();
         return {
@@ -787,7 +790,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           solution: data.solution || '',
           timeLimit: data.timeLimit || 60,
           difficulty: data.difficulty || 'manual',
-          year: data.year || assignedYear,
+          year: data.year || primaryAssignedYear,
           chapterId: data.chapterId || '',
           chapterTitle: data.chapterTitle || '',
           topicId: data.topicId || '',
@@ -797,17 +800,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           isManual: true
         };
       }).filter(q => {
-        // Check if the question's year is included in the assigned years string
-        // Example: "Year 11" is included in "year 11, year 10"
-        let yearMatches = true;
-        if (q.year && assignedYear) {
-           const qYearStr = String(q.year).toLowerCase();
-           const assignedYearStr = String(assignedYear).toLowerCase();
-           yearMatches = assignedYearStr.includes(qYearStr);
-        }
+        // Match year: q.year should be in assignedYears (e.g. "Year 10" in ["Year 10", "Year 11"])
+        const qYear = String(q.year || '').toLowerCase();
+        const yearMatches = assignedYears.some(y => {
+          const targetY = String(y).toLowerCase();
+          return qYear.includes(targetY) || targetY.includes(qYear);
+        });
         
-        // Match by chapter ONLY IF student has specific chapters assigned, otherwise allow any from that year
-        const hasAssignedChapters = studentProfile?.assignedChapters && studentProfile.assignedChapters.length > 0;
+        // Match by chapter: use the resolved assignedChapters (which honors dailyPracticeConfig)
+        const hasAssignedChapters = assignedChapters && assignedChapters.length > 0;
         const chapterMatches = !hasAssignedChapters || !q.chapterId || targetChapterIds.has(q.chapterId) || q.chapterId === CHALLENGE_CHAPTER_ID;
         
         return yearMatches && chapterMatches;
@@ -865,9 +866,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     }
     
-    // Combine them and shuffle so they are fully randomized
-    let combinedQs = [...selectedManual, ...aiQs].map(correctQuestionAnswer);
-    combinedQs = combinedQs.sort(() => Math.random() - 0.5);
+    // Combine them: Manual questions FIRST (shuffled among themselves), then AI questions
+    const shuffledManual = [...selectedManual].sort(() => Math.random() - 0.5);
+    const shuffledAI = [...aiQs].sort(() => Math.random() - 0.5);
+    
+    let combinedQs = [...shuffledManual, ...shuffledAI].map(correctQuestionAnswer);
 
     setQuestions(combinedQs);
     setUserAnswers(new Array(qCount).fill(null));
