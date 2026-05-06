@@ -603,9 +603,34 @@ const StudentDetail = ({ studentId, onBack }) => {
             <div style={styles.card} className="profile-card-mobile">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px', flexWrap: 'wrap', gap: '20px' }}>
                 <div className="section-title" style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>ASSIGN CURRICULUM</div>
-                <div style={{ display: 'flex', gap: '12px', alignItems: 'center', background: '#f8fafc', padding: '8px 16px', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 800 }}>YEAR:</span>
-                  <span style={{ fontWeight: 800, color: '#6366f1' }}>{assignedYears.join(', ')}</span>
+                <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', gap: '12px', alignItems: 'center', background: '#f8fafc', padding: '8px 16px', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 800 }}>YEAR:</span>
+                    <span style={{ fontWeight: 800, color: '#6366f1' }}>{assignedYears.join(', ')}</span>
+                  </div>
+                  <div style={{ display: 'flex', gap: '10px', alignItems: 'center', background: '#f5f3ff', padding: '8px 14px', borderRadius: '20px', border: '1.5px solid #ddd6fe' }}>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 900, color: '#6366f1', textTransform: 'uppercase' }}>Daily:</span>
+                    <input
+                      type="number"
+                      min="1"
+                      max="50"
+                      value={student.dailyQuestionCount || 10}
+                      onChange={e => handleUpdateCurriculumSetting('dailyQuestionCount', Math.max(1, Math.min(50, parseInt(e.target.value, 10) || 10)))}
+                      style={{
+                        width: '54px',
+                        background: 'white',
+                        border: '1.5px solid #c4b5fd',
+                        borderRadius: '12px',
+                        fontWeight: 900,
+                        color: '#4338ca',
+                        outline: 'none',
+                        textAlign: 'center',
+                        fontSize: '0.95rem',
+                        padding: '4px 0'
+                      }}
+                    />
+                    <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#7c3aed' }}>questions</span>
+                  </div>
                 </div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
