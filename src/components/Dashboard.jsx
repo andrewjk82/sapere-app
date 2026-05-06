@@ -110,10 +110,21 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const handleImportQuestions = async () => {
     setIsImporting(true);
     try {
-      // Dynamic import to avoid loading the script if not needed
-      const { importYear10Ch1Part2 } = await import('../scripts/importYear10Ch1_Part2.js');
-      const count = await importYear10Ch1Part2();
-      showToast(`Successfully imported ${count} new Year 10 questions!`, 'success');
+      let totalCount = 0;
+      
+      // Part 2
+      try {
+        const { importYear10Ch1Part2 } = await import('../scripts/importYear10Ch1_Part2.js');
+        totalCount += await importYear10Ch1Part2();
+      } catch (e) { console.error("Part 2 import error", e); }
+      
+      // Part 3
+      try {
+        const { importYear10Ch1Part3 } = await import('../scripts/importYear10Ch1_Part3.js');
+        totalCount += await importYear10Ch1Part3();
+      } catch (e) { console.error("Part 3 import error", e); }
+      
+      showToast(`Successfully imported ${totalCount} new Year 10 questions!`, 'success');
       setImportDone(true);
     } catch (err) {
       console.error('Import failed:', err);
