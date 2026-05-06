@@ -107,30 +107,50 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     }
   };
 
+  const [importCh1Done, setImportCh1Done] = useState(false);
+  const [importCh2Done, setImportCh2Done] = useState(false);
+
   const handleImportQuestions = async () => {
-    console.log('Import button clicked');
+    console.log('Import Ch 1 button clicked');
     setIsImporting(true);
     try {
-      showToast('Starting import process...', 'info');
-      
-      console.log('Attempting to dynamic import the script...');
+      showToast('Starting Chapter 1 import...', 'info');
       const module = await import('../scripts/importYear10Ch1_Ultimate.js');
-      console.log('Script imported successfully:', module);
-      
       const { importAllYear10Extra } = module;
       const count = await importAllYear10Extra();
-      console.log('Import finished. Count:', count);
       
       if (count > 0) {
-        showToast(`Successfully imported ${count} new Year 10 questions!`, 'success');
-        setImportDone(true);
+        showToast(`Successfully imported ${count} new Ch 1 questions!`, 'success');
       } else {
-        showToast('Import complete. No new questions added (all might be duplicates).', 'info');
-        setImportDone(true);
+        showToast('Ch 1 questions are already up to date.', 'info');
       }
+      setImportCh1Done(true);
     } catch (err) {
-      console.error('CRITICAL: Import failed:', err);
-      showToast('Import failed: ' + (err.message || 'Check console for details'), 'error');
+      console.error('CRITICAL: Ch 1 Import failed:', err);
+      showToast('Ch 1 Import failed', 'error');
+    } finally {
+      setIsImporting(false);
+    }
+  };
+
+  const handleImportSurds = async () => {
+    console.log('Import Ch 2 (Surds) button clicked');
+    setIsImporting(true);
+    try {
+      showToast('Starting Surds (Ch 2) import...', 'info');
+      const module = await import('../scripts/importYear10Ch2_Ultimate.js');
+      const { importYear10Ch2Ultimate } = module;
+      const count = await importYear10Ch2Ultimate();
+      
+      if (count > 0) {
+        showToast(`Successfully imported ${count} new Surds questions!`, 'success');
+      } else {
+        showToast('Surds questions are already up to date.', 'info');
+      }
+      setImportCh2Done(true);
+    } catch (err) {
+      console.error('CRITICAL: Ch 2 Import failed:', err);
+      showToast('Ch 2 Import failed', 'error');
     } finally {
       setIsImporting(false);
     }
@@ -705,45 +725,31 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
                       {isSyncing ? 'Syncing...' : 'Sync Reminders'}
                     </button>
-                    {isAdmin && !importDone && (
+                    {(isAdmin && (!importCh1Done || !importCh2Done)) && (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        <button 
-                          className="app-button app-button--secondary" 
-                          onClick={handleImportQuestions}
-                          disabled={isImporting}
-                          style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #6366f1', color: '#6366f1' }}
-                        >
-                          <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
-                          {isImporting ? 'Syncing Ch 1...' : 'Import Year 10 Ch 1 Qs'}
-                        </button>
+                        {!importCh1Done && (
+                          <button 
+                            className="app-button app-button--secondary" 
+                            onClick={handleImportQuestions}
+                            disabled={isImporting}
+                            style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #6366f1', color: '#6366f1' }}
+                          >
+                            <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
+                            {isImporting ? 'Syncing Ch 1...' : 'Import Year 10 Ch 1 Qs'}
+                          </button>
+                        )}
                         
-                        <button 
-                          className="app-button app-button--secondary" 
-                          onClick={async () => {
-                            setIsImporting(true);
-                            try {
-                              showToast('Starting Surds import...', 'info');
-                              const { importYear10Ch2Ultimate } = await import('../scripts/importYear10Ch2_Ultimate.js');
-                              const count = await importYear10Ch2Ultimate();
-                              if (count > 0) {
-                                showToast(`Successfully imported ${count} Surds questions!`, 'success');
-                              } else {
-                                showToast('Surds questions are already up to date.', 'info');
-                              }
-                              setImportDone(true);
-                            } catch (err) {
-                              console.error('Surds import failed:', err);
-                              showToast('Surds import failed', 'error');
-                            } finally {
-                              setIsImporting(false);
-                            }
-                          }}
-                          disabled={isImporting}
-                          style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #10b981', color: '#10b981' }}
-                        >
-                          <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
-                          {isImporting ? 'Syncing Ch 2...' : 'Import Surds Qs (Ch 2)'}
-                        </button>
+                        {!importCh2Done && (
+                          <button 
+                            className="app-button app-button--secondary" 
+                            onClick={handleImportSurds}
+                            disabled={isImporting}
+                            style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #10b981', color: '#10b981' }}
+                          >
+                            <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
+                            {isImporting ? 'Syncing Ch 2...' : 'Import Surds Qs (Ch 2)'}
+                          </button>
+                        )}
                       </div>
                     )}
                   </div>
