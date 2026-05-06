@@ -743,7 +743,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       const qCount = getQuestionCount('daily');
       setLoading(true);
       let manualQs = [];
-      const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
+      const rawYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
+      const assignedYears = Array.isArray(rawYear) 
+        ? rawYear 
+        : String(rawYear).split(',').map(y => y.trim()).filter(Boolean);
       const assignedYear = assignedYears[0];
       const assignedChapters = getAssignedChapters(studentProfile, assignedYear);
       const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
