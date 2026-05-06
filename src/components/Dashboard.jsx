@@ -110,28 +110,17 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const handleImportQuestions = async () => {
     setIsImporting(true);
     try {
-      let totalCount = 0;
+      // Import everything from the consolidated ultimate script
+      const { importAllYear10Extra } = await import('../scripts/importYear10Ch1_Ultimate.js');
+      const count = await importAllYear10Extra();
       
-      // Part 2
-      try {
-        const { importYear10Ch1Part2 } = await import('../scripts/importYear10Ch1_Part2.js');
-        totalCount += await importYear10Ch1Part2();
-      } catch (e) { console.error("Part 2 import error", e); }
-      
-      // Part 3
-      try {
-        const { importYear10Ch1Part3 } = await import('../scripts/importYear10Ch1_Part3.js');
-        totalCount += await importYear10Ch1Part3();
-      } catch (e) { console.error("Part 3 import error", e); }
-
-      // Part 4
-      try {
-        const { importYear10Ch1Part4 } = await import('../scripts/importYear10Ch1_Part4.js');
-        totalCount += await importYear10Ch1Part4();
-      } catch (e) { console.error("Part 4 import error", e); }
-      
-      showToast(`Successfully imported ${totalCount} new Year 10 questions!`, 'success');
-      setImportDone(true);
+      if (count > 0) {
+        showToast(`Successfully imported ${count} new Year 10 questions!`, 'success');
+        setImportDone(true);
+      } else {
+        showToast('All questions are already in the database.', 'info');
+        setImportDone(true);
+      }
     } catch (err) {
       console.error('Import failed:', err);
       showToast('Import failed: ' + (err.message || 'Unknown error'), 'error');
