@@ -101,6 +101,35 @@ async function sendPushToUser(adminInstance, userRef, userData, title, body) {
   };
 }
 
+async function findNotificationUser(db, studentId, email) {
+  if (studentId) {
+    const directRef = db.collection('users').doc(studentId);
+    const directDoc = await directRef.get();
+    if (directDoc.exists) {
+      return { userRef: directRef, userDoc: directDoc, matchedBy: 'studentId' };
+    }
+  }
+
+  const normalizedEmail = String(email || '').trim().toLowerCase();
+  if (!normalizedEmail) {
+    return { userRef: null, userDoc: null, matchedBy: 'none' };
+  }
+
+  const emailQueries = normalizedEmail === email
+    ? [normalizedEmail]
+    : [email, normalizedEmail].filter(Boolean);
+
+  for (const candidateEmail of emailQueries) {
+    const snap = await db.collection('users').where('email', '==', candidateEmail).limit(1).get();
+    if (!snap.empty) {
+      const userDoc = snap.docs[0];
+      return { userRef: userDoc.ref, userDoc, matchedBy: 'email' };
+    }
+  }
+
+  return { userRef: null, userDoc: null, matchedBy: 'none' };
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -158,24 +187,26 @@ export default async function handler(req, res) {
 
     // 2. Send Push Notification & Save to History
     let tokensFound = 0;
-    if (studentId) {
-      const userRef = db.collection('users').doc(studentId);
-      const userDoc = await userRef.get();
+    let matchedBy = 'none';
+    if (studentId || email) {
+      const lookup = await findNotificationUser(db, studentId, email);
+      const { userRef, userDoc } = lookup;
+      matchedBy = lookup.matchedBy;
       
-      // Save to notification history subcollection
-      await userRef.collection('notifications').add({
-        title: subject,
-        body: text || 'New notification',
-        timestamp: admin.firestore.FieldValue.serverTimestamp(),
-        read: false,
-        type: 'test_reminder'
-      });
+      if (userRef && userDoc?.exists) {
+        // Save to notification history subcollection
+        await userRef.collection('notifications').add({
+          title: subject,
+          body: text || 'New notification',
+          timestamp: admin.firestore.FieldValue.serverTimestamp(),
+          read: false,
+          type: 'test_reminder'
+        });
 
-      if (userDoc.exists) {
         const userData = userDoc.data();
         pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
         tokensFound = pushResult.tokensFound;
-        console.log(`[API] Push result for ${studentId}:`, pushResult);
+        console.log(`[API] Push result for ${studentId || email} (${matchedBy}):`, pushResult);
       }
     }
 
@@ -183,6 +214,7 @@ export default async function handler(req, res) {
       success: true, 
       emailSent, 
       tokensFound,
+      matchedBy,
       pushSuccessCount: pushResult.successCount,
       pushFailureCount: pushResult.failureCount,
       invalidTokensRemoved: pushResult.removedCount

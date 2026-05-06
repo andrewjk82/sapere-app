@@ -172,7 +172,14 @@ const StudentDetail = ({ studentId, onBack }) => {
       });
 
       if (response.ok) {
-        showToast("Message sent successfully!", 'success');
+        const data = await response.json().catch(() => ({}));
+        if ((data.pushSuccessCount || 0) > 0) {
+          showToast("Message sent by email and push notification.", 'success');
+        } else if ((data.tokensFound || 0) === 0) {
+          showToast("Email sent, but no push device is connected for this student.", 'warning', 7000);
+        } else {
+          showToast("Email sent, but push notification failed. Ask the student to reconnect notifications.", 'warning', 7000);
+        }
         setMessageText('');
         setMessageOpen(false);
       } else {
