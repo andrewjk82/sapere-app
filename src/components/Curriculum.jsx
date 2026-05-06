@@ -371,7 +371,7 @@ const Curriculum = () => {
                     className="app-button"
                     style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a', fontWeight: 800 }}
                   >
-                    {isMigrating ? 'Updating Questions...' : '⚠️ Seed Ch1 Algebra'}
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
                   </button>
 
                   <button 
@@ -380,7 +380,7 @@ const Curriculum = () => {
                     className="app-button"
                     style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
                   >
-                    {isMigrating ? 'Updating Surds...' : '⚠️ Seed Ch2 Surds'}
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
                   </button>
 
                   <button 
@@ -407,7 +407,7 @@ const Curriculum = () => {
                     className="app-button"
                     style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #a7f3d0', fontWeight: 800 }}
                   >
-                    {isMigrating ? 'Adding Q...' : '⚠️ Add Curve Q'}
+                    {isMigrating ? 'Adding...' : '⚠️ Add Curve Q'}
                   </button>
 
                   {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
