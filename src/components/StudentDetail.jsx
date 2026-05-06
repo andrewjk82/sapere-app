@@ -56,6 +56,12 @@ const isSameCalendarDay = (a, b) => {
   return dateA.toISOString().slice(0, 10) === dateB.toISOString().slice(0, 10);
 };
 
+const sortStatsByDateDesc = (stats) => [...stats].sort((a, b) => {
+  const dateA = toJsDate(a.timestamp || a.completedAt || a.createdAt || a.id);
+  const dateB = toJsDate(b.timestamp || b.completedAt || b.createdAt || b.id);
+  return (dateB?.getTime() || 0) - (dateA?.getTime() || 0);
+});
+
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -195,11 +201,21 @@ const StudentDetail = ({ studentId, onBack }) => {
   useEffect(() => {
     if (!studentId || !student?.id) return;
     const colName = student.source === 'manual' ? 'students' : 'users';
-    return onSnapshot(collection(db, colName, studentId, 'daily_stats'), (snap) => {
-      const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      stats.sort((a, b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
-      setDailyStats(stats);
+    let daily = [];
+    let calc = [];
+    const updateStats = () => setDailyStats(sortStatsByDateDesc([...daily, ...calc]));
+    const unsubDaily = onSnapshot(collection(db, colName, studentId, 'daily_stats'), (snap) => {
+      daily = snap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
+      updateStats();
     });
+    const unsubCalc = onSnapshot(collection(db, colName, studentId, 'calc_stats'), (snap) => {
+      calc = snap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() }));
+      updateStats();
+    });
+    return () => {
+      unsubDaily();
+      unsubCalc();
+    };
   }, [studentId, student?.source, student?.id]);
 
   const handleUpdateProfile = async () => {
@@ -485,8 +501,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         challengesCompleted: increment(-1)
       });
 
-      // Delete the specific daily_stat record
-      const statRef = doc(db, colName, studentId, 'daily_stats', stat.id);
+      const statCollection = stat.statCollection || (stat.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
+      const statRef = doc(db, colName, studentId, statCollection, stat.id);
       const deletedWorkingOutCount = await deleteWorkingOutForChallenge(stat);
       await deleteDoc(statRef);
       
@@ -833,11 +849,11 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
             <div style={{ display: 'grid', gap: '12px' }}>
               {dailyStats.length > 0 ? dailyStats.map(stat => (
-                <div key={stat.id} onClick={() => setSelectedChallenge(stat)} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
+                <div key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`} onClick={() => setSelectedChallenge(stat)} style={{ padding: '20px', borderRadius: '20px', border: '1px solid #f1f5f9', background: '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}><Trophy size={20} /></div>
                     <div>
-                      <div style={{ fontWeight: 800 }}>{stat.id}</div>
+                      <div style={{ fontWeight: 800 }}>{stat.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {stat.id}</div>
                       <div style={{ fontSize: '0.75rem', color: '#64748b' }}>Score: {stat.score}/{stat.total}</div>
                     </div>
                   </div>
@@ -1236,7 +1252,9 @@ const StudentDetail = ({ studentId, onBack }) => {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
                 <div>
                   <h2 style={{ margin: '0 0 4px', fontSize: '1.5rem', fontWeight: 900 }}>Challenge Details</h2>
-                  <p style={{ margin: 0, color: '#64748b', fontWeight: 600 }}>{selectedChallenge.id} • Score: {selectedChallenge.score}/{selectedChallenge.total}</p>
+                  <p style={{ margin: 0, color: '#64748b', fontWeight: 600 }}>
+                    {selectedChallenge.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {selectedChallenge.id} • Score: {selectedChallenge.score}/{selectedChallenge.total}
+                  </p>
                 </div>
                 <button onClick={() => setSelectedChallenge(null)} style={{ background: '#f1f5f9', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#64748b' }}>
                   <X size={20} />
@@ -1270,6 +1288,18 @@ const StudentDetail = ({ studentId, onBack }) => {
                         {q.questionImage && (
                           <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '180px', objectFit: 'contain', margin: '0 0 16px', borderRadius: '14px', background: '#fff' }} />
                         )}
+                        {options.length === 0 ? (
+                          <div style={{ display: 'grid', gap: '10px' }}>
+                            <div style={{ padding: '12px 16px', borderRadius: '12px', background: isCorrect ? '#dcfce7' : '#fee2e2', border: `1px solid ${isCorrect ? '#22c55e' : '#ef4444'}`, color: isCorrect ? '#166534' : '#991b1b', fontWeight: 800 }}>
+                              Student Answer: <MathView content={String(userAnswer ?? 'No answer')} />
+                            </div>
+                            {!isCorrect && (
+                              <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#dcfce7', border: '1px solid #22c55e', color: '#166534', fontWeight: 800 }}>
+                                Correct Answer: <MathView content={String(q.answer ?? '')} />
+                              </div>
+                            )}
+                          </div>
+                        ) : (
                         <div style={{ display: 'grid', gap: '8px' }}>
                           {options.map((opt, i) => {
                             const optText = getChallengeOptionText(opt);
@@ -1300,6 +1330,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                             );
                           })}
                         </div>
+                        )}
                         {q.solution && (
                           <div style={{ marginTop: '14px', padding: '12px 14px', borderRadius: '12px', background: '#eef2ff', color: '#475569', fontWeight: 700, lineHeight: 1.5 }}>
                             <MathView content={q.solution} />

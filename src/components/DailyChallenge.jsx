@@ -261,6 +261,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [isCorrect, setIsCorrect] = useState(null);
   const [todayCompleted, setTodayCompleted] = useState(false);
   const [abandonedToday, setAbandonedToday] = useState(false);
+  const [calcCompletedToday, setCalcCompletedToday] = useState(false);
+  const [calcAbandonedToday, setCalcAbandonedToday] = useState(false);
   const [isFinishing, setIsFinishing] = useState(false);
   const [loading, setLoading] = useState(true);
   const [history, setHistory] = useState([]);
@@ -595,6 +597,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // Check today
         const today = new Date().toISOString().split('T')[0];
         const todayRef = doc(db, 'users', user.uid, 'daily_stats', today);
+        const calcTodayRef = doc(db, 'users', user.uid, 'calc_stats', today);
         let todaySnap;
         try {
           todaySnap = await getDoc(todayRef);
@@ -608,6 +611,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             }
           }
         } catch (e) { console.warn('today check failed (non-fatal):', e.code); }
+        try {
+          const calcTodaySnap = await getDoc(calcTodayRef);
+          if (calcTodaySnap.exists()) {
+            const data = calcTodaySnap.data();
+            if (data.completed) {
+              setCalcCompletedToday(true);
+            } else {
+              setCalcAbandonedToday(true);
+            }
+          }
+        } catch (e) { console.warn('calculation today check failed (non-fatal):', e.code); }
 
         let profileData = {};
         try {
@@ -622,10 +636,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         Promise.allSettled([
           (async () => {
             const { collection: col, getDocs: gd, orderBy: ob, limit: lim, query: qry } = await import('firebase/firestore');
-            const historyRef = col(db, 'users', user.uid, 'daily_stats');
-            const q = qry(historyRef, ob('timestamp', 'desc'), lim(30));
-            const historySnap = await gd(q);
-            const historyData = historySnap.docs.map(d => ({ id: d.id, ...d.data() }));
+            const dailyHistoryRef = col(db, 'users', user.uid, 'daily_stats');
+            const calcHistoryRef = col(db, 'users', user.uid, 'calc_stats');
+            const [dailySnap, calcSnap] = await Promise.all([
+              gd(qry(dailyHistoryRef, ob('timestamp', 'desc'), lim(30))),
+              gd(qry(calcHistoryRef, ob('timestamp', 'desc'), lim(30))),
+            ]);
+            const historyData = [
+              ...dailySnap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() })),
+              ...calcSnap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() })),
+            ].sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0)).slice(0, 30);
             setHistory(historyData);
           })(),
           (async () => {
@@ -652,7 +672,28 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     fetchData();
   }, [user?.uid]);
 
-  const startCalculationQuiz = () => {
+  const startCalculationQuiz = async () => {
+    const today = new Date().toISOString().split('T')[0];
+    if (calcCompletedToday || calcAbandonedToday) {
+      showToast("Today's Basic Calculation has already been used. Please try again tomorrow.", 'info');
+      return;
+    }
+
+    if (user?.uid) {
+      try {
+        const calcTodaySnap = await getDoc(doc(db, 'users', user.uid, 'calc_stats', today));
+        if (calcTodaySnap.exists()) {
+          const data = calcTodaySnap.data();
+          if (data.completed) setCalcCompletedToday(true);
+          else setCalcAbandonedToday(true);
+          showToast("Today's Basic Calculation has already been used. Please try again tomorrow.", 'info');
+          return;
+        }
+      } catch (err) {
+        console.warn('calculation start check failed (non-fatal):', err.code || err);
+      }
+    }
+
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
     const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
@@ -663,7 +704,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const timeLimit = studentProfile?.calcTimeLimit || 30;
     const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, timeLimit);
     
-    const sessionId = String(Date.now());
+    const sessionId = today;
     setCurrentSessionId(sessionId);
 
     setQuestions(combinedQs);
@@ -686,6 +727,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           maxXp: getChallengeMaxXp('calc'),
           xpEarned: 0,
           timestamp: now.toISOString(),
+        date: today,
         dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
         questions: combinedQs || [],
         userAnswers: [],
@@ -1141,7 +1183,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const now = new Date();
         const today = now.toISOString().split('T')[0];
         const ref = challengeType === 'calc' 
-          ? doc(db, 'users', user.uid, 'calc_stats', currentSessionId || String(Date.now()))
+          ? doc(db, 'users', user.uid, 'calc_stats', today)
           : doc(db, 'users', user.uid, 'daily_stats', today);
         const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
         const assignedYear = assignedYears[0];
@@ -1160,6 +1202,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         
         const record = {
           completed: true,
+          id: today,
           score,
           total: TOTAL_QUESTIONS,
           challengeType,
@@ -1239,6 +1282,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         setHistory(prev => [record, ...(prev || [])]);
         if (challengeType === 'daily') {
           setTodayCompleted(true);
+        } else if (challengeType === 'calc') {
+          setCalcCompletedToday(true);
         }
       }
     } catch (err) {
@@ -1269,7 +1314,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {history.length > 0 ? history.map((item, idx) => (
               <motion.div 
-                key={item.id || idx}
+                key={`${item.statCollection || item.challengeType || 'daily'}-${item.id || idx}`}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05 }}
@@ -1279,14 +1324,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               >
                 <div>
                   <div style={{ fontSize: '0.9rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '4px' }}>
-                    {formatHistoryDate(item)}
+                    {item.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {formatHistoryDate(item)}
                   </div>
                   <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8' }}>
                     {item.total || 0} Questions • {item.total ? Math.round(((item.score || 0)/item.total)*100) : 0}% Accuracy
                   </div>
                 </div>
                 <div style={{ textAlign: 'right' }}>
-                  <div style={{ fontSize: '1.2rem', fontWeight: 900, color: item.score >= 8 ? '#10b981' : item.score >= 5 ? '#f59e0b' : '#f43f5e' }}>
+                  <div style={{ fontSize: '1.2rem', fontWeight: 900, color: item.score >= Math.ceil((item.total || 0) * 0.8) ? '#10b981' : item.score >= Math.ceil((item.total || 0) * 0.5) ? '#f59e0b' : '#f43f5e' }}>
                     {item.score || 0}/{item.total || 0}
                   </div>
                   <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1' }}>
@@ -1370,6 +1415,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 <img src={result.workingOut} alt="Student Working Out" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#fff' }} />
                               </div>
                             )}
+                            {getOptions(q).length === 0 ? (
+                              <div style={{ display: 'grid', gap: '10px' }}>
+                                <div style={{ padding: '12px 16px', borderRadius: '12px', background: isCorrect ? '#dcfce7' : '#fee2e2', border: `1px solid ${isCorrect ? '#22c55e' : '#ef4444'}`, color: isCorrect ? '#166534' : '#991b1b', fontWeight: 800 }}>
+                                  Student Answer: <MathView content={String(userAnswer ?? 'No answer')} />
+                                </div>
+                                {!isCorrect && (
+                                  <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#dcfce7', border: '1px solid #22c55e', color: '#166534', fontWeight: 800 }}>
+                                    Correct Answer: <MathView content={String(q.answer ?? '')} />
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
                             <div style={{ display: 'grid', gap: '8px' }}>
                               {getOptions(q).map((opt, i) => {
                                 if (!opt) return null;
@@ -1407,6 +1464,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 );
                               })}
                             </div>
+                            )}
                             {q.solution && (
                                <div style={{ marginTop: '16px', padding: '16px', borderRadius: '12px', background: '#e0e7ff', color: '#4338ca', fontSize: '0.9rem', fontWeight: 600 }}>
                                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
@@ -1624,9 +1682,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   Improve your speed and accuracy with {getQuestionCount('calc')} arithmetic questions.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
-                  <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer' }}>
-                    Start Calculation
-                  </button>
+                  {calcAbandonedToday ? (
+                    <div style={{ background: '#fff1f2', border: '2px solid #ffe4e6', padding: '16px 20px', borderRadius: '20px', color: '#be123c', fontWeight: 800 }}>
+                      Basic Calculation ended. Please try again tomorrow.
+                    </div>
+                  ) : calcCompletedToday ? (
+                    <div style={{ background: '#f0fdf4', border: '2px solid #dcfce7', padding: '16px 20px', borderRadius: '20px', color: '#166534', fontWeight: 800 }}>
+                      Today's Basic Calculation Done!
+                    </div>
+                  ) : (
+                    <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer' }}>
+                      Start Calculation
+                    </button>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -1772,9 +1840,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     Earn up to <span style={{ color: '#d97706', fontWeight: 800 }}>{getChallengeMaxXp('calc')} XP</span>!
                   </p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
-                    <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer', boxShadow: '0 10px 20px rgba(217, 119, 6, 0.2)' }}>
-                      Start Calculation
-                    </button>
+                    {calcAbandonedToday ? (
+                      <div style={{ background: '#fff1f2', border: '2px solid #ffe4e6', padding: '16px 20px', borderRadius: '20px', color: '#be123c', fontWeight: 800 }}>
+                        Basic Calculation ended. Please try again tomorrow.
+                      </div>
+                    ) : calcCompletedToday ? (
+                      <div style={{ background: '#f0fdf4', border: '2px solid #dcfce7', padding: '16px 20px', borderRadius: '20px', color: '#166534', fontWeight: 800 }}>
+                        Today's Basic Calculation Done!
+                      </div>
+                    ) : (
+                      <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer', boxShadow: '0 10px 20px rgba(217, 119, 6, 0.2)' }}>
+                        Start Calculation
+                      </button>
+                    )}
                   </div>
                 </div>
               </motion.div>
