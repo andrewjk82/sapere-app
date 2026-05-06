@@ -27,6 +27,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const [dailyStats, setDailyStats] = useState([]);
   const [pendingGrading, setPendingGrading] = useState([]);
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
+  const [isImporting, setIsImporting] = useState(false);
+  const [importDone, setImportDone] = useState(false);
 
   // Fetch student daily stats for insights
   useEffect(() => {
@@ -102,6 +104,22 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
       showToast('Sync failed: ' + e.message, 'error');
     } finally {
       setIsSyncing(false);
+    }
+  };
+
+  const handleImportQuestions = async () => {
+    setIsImporting(true);
+    try {
+      // Dynamic import to avoid loading the script if not needed
+      const { importYear10Ch1Part2 } = await import('../scripts/importYear10Ch1_Part2.js');
+      const count = await importYear10Ch1Part2();
+      showToast(`Successfully imported ${count} new Year 10 questions!`, 'success');
+      setImportDone(true);
+    } catch (err) {
+      console.error('Import failed:', err);
+      showToast('Import failed: ' + (err.message || 'Unknown error'), 'error');
+    } finally {
+      setIsImporting(false);
     }
   };
 
@@ -674,6 +692,17 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
                       {isSyncing ? 'Syncing...' : 'Sync Reminders'}
                     </button>
+                    {isAdmin && !importDone && (
+                      <button 
+                        className="app-button app-button--secondary" 
+                        onClick={handleImportQuestions}
+                        disabled={isImporting}
+                        style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #6366f1', color: '#6366f1' }}
+                      >
+                        <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
+                        {isImporting ? 'Importing...' : 'Import Year 10 Qs'}
+                      </button>
+                    )}
                   </div>
                 </div>
 
