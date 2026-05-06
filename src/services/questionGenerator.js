@@ -93,6 +93,27 @@ const getUniqueOptions = (answer, distractors, min = 0, max = 100) => {
 const wordOptions = (answer, pool) => shuffle([answer, ...shuffle(pool.filter(item => item !== answer)).slice(0, 3)]);
 const pickGeneratorType = (value, fallback = 'generic_year1') => Array.isArray(value) ? pick(value) : (value || fallback);
 
+const normalizeYearLabel = (value = DEFAULT_YEAR) => {
+  const yearNum = parseInt(String(Array.isArray(value) ? value[0] : value).replace(/\D/g, ''), 10);
+  return Number.isFinite(yearNum) ? `Year ${yearNum}` : String(value || DEFAULT_YEAR);
+};
+
+const getYearNumber = (value = DEFAULT_YEAR) => {
+  const parsed = parseInt(String(Array.isArray(value) ? value[0] : value).replace(/\D/g, ''), 10);
+  return Number.isFinite(parsed) ? parsed : 1;
+};
+
+const getDefaultGeneratorTypesForYear = (year) => {
+  const yearNum = getYearNumber(year);
+  if (yearNum >= 7) {
+    return ['algebra_yr11', 'percent_quantity', 'coordinate_gradient', 'order_operations'];
+  }
+  if (yearNum >= 3) {
+    return ['stage_place_value', 'large_add_subtract', 'multiplicative_relations', 'problem_solving_money'];
+  }
+  return ['generic_year1'];
+};
+
 const normalizeMathText = (value) => String(value ?? '')
   .replace(/\$\$/g, '')
   .replace(/[−–—]/g, '-')
@@ -179,7 +200,8 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
       }
     }
 
-    const chapterSet = new Set(assignedChapters || []);
+    const validChapterIds = new Set(yearChapters.map(chapter => chapter.id));
+    const chapterSet = new Set((assignedChapters || []).filter(chapterId => validChapterIds.has(chapterId)));
     const topicSet = new Set(assignedTopics || []);
     const scopedChapters = chapterSet.size > 0 ? yearChapters.filter(chapter => chapterSet.has(chapter.id)) : yearChapters;
 
@@ -199,7 +221,7 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
         topicCode: topic.code || '',
         topicTitle: topic.title,
         topicGroup: topic.group || '',
-        generatorTypes: TOPIC_GENERATOR_MAP[topic.id] || GROUP_GENERATOR_MAP[topic.group] || inferredTypes || (['Year 11', 'Year 12'].includes(y) ? ['algebra_yr11'] : ['generic_year1']),
+        generatorTypes: TOPIC_GENERATOR_MAP[topic.id] || GROUP_GENERATOR_MAP[topic.group] || inferredTypes || getDefaultGeneratorTypesForYear(y),
       };
     }));
     
@@ -211,12 +233,14 @@ export const getQuestionTargets = ({ year = DEFAULT_YEAR, course = 'Advanced', a
     allTargets = allTargets.filter(target => topicSet.has(target.topicId));
   }
   
-  // Final fallback to Year 1 if still nothing found
   if (allTargets.length === 0) {
-    const firstYear = years[0] || DEFAULT_YEAR;
-    if (['Year 11', 'Year 12'].includes(firstYear)) {
+    const firstYear = normalizeYearLabel(years[0] || DEFAULT_YEAR);
+    if (getYearNumber(firstYear) >= 11) {
       const fallbackId = firstYear === 'Year 11' ? 'y11a-1' : 'y12adv-ch1';
       return getQuestionTargets({ year: firstYear, course: 'Advanced', assignedChapters: [fallbackId] });
+    }
+    if (CURRICULUM_DATA[firstYear]) {
+      return getQuestionTargets({ year: firstYear, course });
     }
     return getQuestionTargets({ year: DEFAULT_YEAR, assignedChapters: [DEFAULT_CHAPTER_ID] });
   }
@@ -1400,9 +1424,32 @@ const GENERATORS_BY_TYPE = {
 };
 
 const inferPrimaryGeneratorTypes = ({ year, chapterTitle = '', topicTitle = '', topicGroup = '' }) => {
+  const text = `${chapterTitle} ${topicTitle} ${topicGroup}`.toLowerCase();
+  const yearNum = getYearNumber(year);
+
+  if (yearNum >= 7) {
+    const types = [];
+    const add = (...items) => items.forEach(item => {
+      if (!types.includes(item)) types.push(item);
+    });
+
+    if (/consumer|percentage|percent|increase|decrease|interest|depreciation|discount|finance|growth|decay/.test(text)) add('percent_quantity', 'money_budget', 'problem_solving_money');
+    if (/surd|irrational|rationalis|special product|indices|powers|scientific notation|logarithm|exponential/.test(text)) add('algebra_yr11', 'order_operations');
+    if (/algebra|equation|inequalit|formula|factoris|quadratic|polynomial|function|domain|range|inverse/.test(text)) add('algebra_yr11', 'order_operations');
+    if (/line|linear|gradient|midpoint|distance|coordinate|cartesian|simultaneous/.test(text)) add('coordinate_gradient', 'coordinate_midpoint', 'algebra_yr11');
+    if (/parabola|quadratic|graph|hyperbola|circle|region/.test(text)) add('coordinate_gradient', 'algebra_yr11');
+    if (/surface area|volume|prism|cylinder|pyramid|cone|sphere|3d/.test(text)) add('volume_rectangular_prism', 'solid_properties_stage', 'net_3d_object');
+    if (/congruence|similarity|triangle|angle|circle geometry|tangent|chord/.test(text)) add('angles_triangle', 'angles_at_point', 'shape_classification_stage');
+    if (/trigonometry|sine|cosine|ratio|proportion/.test(text)) add('problem_solving_rate', 'angles_triangle');
+    if (/probability|conditional|independent|sampling|chance/.test(text)) add('probability_fraction');
+    if (/statistics|median|quartile|boxplot|histogram|standard deviation|bivariate|line of best fit|data/.test(text)) add('scaled_data_display', 'data_compare_more');
+    if (/problem/.test(text)) add('problem_solving_money', 'problem_solving_rate');
+
+    return types.length ? types : getDefaultGeneratorTypesForYear(year);
+  }
+
   if (!['Year 2', 'Year 3', 'Year 4', 'Year 5', 'Year 6'].includes(year)) return null;
 
-  const text = `${chapterTitle} ${topicTitle} ${topicGroup}`.toLowerCase();
   if (year === 'Year 2') {
     if (/whole number|place value|count|partition|round/.test(text)) return ['place_value', 'skip_counting', 'number_line', 'compare_numbers', 'stage_rounding'];
     if (/add|subtract|additive|money|unknown|inverse|fact/.test(text)) return ['addition_within_20', 'subtraction_within_20', 'missing_addend', 'word_problem_add_subtract', 'money_change'];

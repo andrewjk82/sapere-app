@@ -27,6 +27,24 @@ const getAssignedChapters = (profile, assignedYear) => {
   return assignedYear === CHALLENGE_YEAR ? [CHALLENGE_CHAPTER_ID] : [];
 };
 
+const getYearNumber = (value) => {
+  const parsed = parseInt(String(value || '').replace(/\D/g, ''), 10);
+  return Number.isFinite(parsed) ? parsed : null;
+};
+
+const getValidChapterIdsForYears = (years, courses) => {
+  const ids = new Set();
+  years.forEach(year => {
+    const yearData = CURRICULUM_DATA[year];
+    if (!yearData) return;
+    const chapters = Array.isArray(yearData)
+      ? yearData
+      : courses.flatMap(course => yearData[course] || []);
+    chapters.forEach(chapter => ids.add(chapter.id));
+  });
+  return ids;
+};
+
 const normalizeText = (value) => String(value ?? '')
   .replace(/\$\$/g, '')
   .replace(/[−–—]/g, '-')
@@ -759,11 +777,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         else if (config.years?.length > 0) assignedChapters = []; 
       }
 
-      // Define a primary assigned year for legacy fallbacks
-      const primaryAssignedYear = assignedYears[0] || CHALLENGE_YEAR;
-
       const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
       const assignedCourses = Array.isArray(studentProfile?.assignedCourse) ? studentProfile.assignedCourse : [studentProfile?.assignedCourse || 'Advanced'];
+      const validChapterIds = getValidChapterIdsForYears(assignedYears, assignedCourses);
+      assignedChapters = assignedChapters.filter(chapterId => validChapterIds.has(chapterId));
       
       const targetPool = getQuestionTargets({
         year: assignedYears,
@@ -772,7 +789,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         assignedTopics,
       });
       const targetChapterIds = new Set(targetPool.map(target => target.chapterId));
-      const targetTopicIds = new Set(targetPool.map(target => target.topicId));
+      if (targetPool.length === 0) {
+        throw new Error('No valid curriculum targets found for this student.');
+      }
 
       try {
         const qRef = collection(db, 'questions');
@@ -790,7 +809,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           solution: data.solution || '',
           timeLimit: data.timeLimit || 60,
           difficulty: data.difficulty || 'manual',
-          year: data.year || primaryAssignedYear,
+          year: data.year || '',
           chapterId: data.chapterId || '',
           chapterTitle: data.chapterTitle || '',
           topicId: data.topicId || '',
@@ -800,16 +819,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           isManual: true
         };
       }).filter(q => {
-        // Match year: q.year should be in assignedYears (e.g. "Year 10" in ["Year 10", "Year 11"])
-        const qYear = String(q.year || '').toLowerCase();
-        const yearMatches = assignedYears.some(y => {
-          const targetY = String(y).toLowerCase();
-          return qYear.includes(targetY) || targetY.includes(qYear);
-        });
+        const qYearNum = getYearNumber(q.year);
+        const yearMatches = qYearNum !== null && assignedYears.some(y => getYearNumber(y) === qYearNum);
         
-        // Match by chapter: use the resolved assignedChapters (which honors dailyPracticeConfig)
         const hasAssignedChapters = assignedChapters && assignedChapters.length > 0;
-        const chapterMatches = !hasAssignedChapters || !q.chapterId || targetChapterIds.has(q.chapterId) || q.chapterId === CHALLENGE_CHAPTER_ID;
+        const hasChapterMetadata = Boolean(q.chapterId);
+        const chapterIsValidForYear = hasChapterMetadata && validChapterIds.has(q.chapterId);
+        const chapterMatches = hasAssignedChapters
+          ? hasChapterMetadata && targetChapterIds.has(q.chapterId)
+          : chapterIsValidForYear;
         
         return yearMatches && chapterMatches;
       });
