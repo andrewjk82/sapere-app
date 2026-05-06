@@ -1,6 +1,6 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef } from 'react';
 import { ReactSketchCanvas } from 'react-sketch-canvas';
-import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ZoomIn, ZoomOut } from 'lucide-react';
+import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, Plus, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const hasCoarsePointer = () => (
   typeof window !== 'undefined'
@@ -23,17 +23,6 @@ const distanceToSegment = (point, start, end) => {
   return Math.hypot(point.x - projection.x, point.y - projection.y);
 };
 
-const scaleCanvasPaths = (canvasPaths, factor) => (
-  (canvasPaths || []).map(path => ({
-    ...path,
-    strokeWidth: path.strokeWidth * factor,
-    paths: (path.paths || []).map(point => ({
-      x: point.x * factor,
-      y: point.y * factor,
-    })),
-  }))
-);
-
 const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const canvasRef = useRef(null);
   const canvasAreaRef = useRef(null);
@@ -41,7 +30,8 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const [eraserMode, setEraserMode] = useState('area');
   const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
   const [paths, setPaths] = useState([]);
-  const [zoom, setZoom] = useState(1);
+  const [pages, setPages] = useState([[]]);
+  const [currentPage, setCurrentPage] = useState(0);
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
   const isAreaEraser = activeTool === 'eraser' && eraserMode === 'area';
   const isStrokeEraser = activeTool === 'eraser' && eraserMode === 'stroke';
@@ -57,45 +47,30 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     },
     exportPaths: async () => {
       if (canvasRef.current) {
-        return await canvasRef.current.exportPaths();
+        const currentPaths = await canvasRef.current.exportPaths();
+        const nextPages = [...pages];
+        nextPages[currentPage] = currentPaths;
+        return nextPages;
       }
       return null;
     },
     clear: () => {
       canvasRef.current?.clearCanvas();
       setPaths([]);
+      setPages([[]]);
+      setCurrentPage(0);
     }
   }));
 
   const handleClear = () => {
-    if (window.confirm('Are you sure you want to clear the canvas?')) {
+    if (window.confirm('Clear this page? Other pages will stay saved.')) {
       canvasRef.current?.clearCanvas();
-      setPaths([]);
+      replacePaths([]);
     }
   };
 
   const handleUndo = () => {
     canvasRef.current?.undo();
-  };
-
-  const applyZoom = async (nextZoom) => {
-    const normalizedZoom = Math.min(2, Math.max(0.75, Number(nextZoom.toFixed(2))));
-    if (normalizedZoom === zoom) return;
-
-    const factor = normalizedZoom / zoom;
-    const currentPaths = await canvasRef.current?.exportPaths().catch(() => paths);
-    const scaledPaths = scaleCanvasPaths(currentPaths || paths, factor);
-
-    setZoom(normalizedZoom);
-    replacePaths(scaledPaths);
-  };
-
-  const zoomOut = () => {
-    applyZoom(zoom - 0.25);
-  };
-
-  const zoomIn = () => {
-    applyZoom(zoom + 0.25);
   };
 
   const setDrawMode = () => {
@@ -118,9 +93,56 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const replacePaths = (nextPaths) => {
     canvasRef.current?.resetCanvas();
     setPaths(nextPaths);
+    setPages(prev => {
+      const next = [...prev];
+      next[currentPage] = nextPaths;
+      return next;
+    });
     window.requestAnimationFrame(() => {
       canvasRef.current?.loadPaths(nextPaths);
     });
+  };
+
+  const handleCanvasChange = (nextPaths) => {
+    setPaths(nextPaths);
+    setPages(prev => {
+      const next = [...prev];
+      next[currentPage] = nextPaths;
+      return next;
+    });
+  };
+
+  const getCurrentPaths = async () => {
+    if (!canvasRef.current) return paths;
+    return await canvasRef.current.exportPaths().catch(() => paths);
+  };
+
+  const loadPage = (pageIndex, pageList = pages) => {
+    const nextPaths = pageList[pageIndex] || [];
+    canvasRef.current?.resetCanvas();
+    setPaths(nextPaths);
+    setCurrentPage(pageIndex);
+    window.requestAnimationFrame(() => {
+      canvasRef.current?.loadPaths(nextPaths);
+    });
+  };
+
+  const goToPage = async (pageIndex) => {
+    if (pageIndex < 0 || pageIndex >= pages.length || pageIndex === currentPage) return;
+    const currentPaths = await getCurrentPaths();
+    const nextPages = [...pages];
+    nextPages[currentPage] = currentPaths;
+    setPages(nextPages);
+    loadPage(pageIndex, nextPages);
+  };
+
+  const addPage = async () => {
+    const currentPaths = await getCurrentPaths();
+    const nextPages = [...pages];
+    nextPages[currentPage] = currentPaths;
+    nextPages.push([]);
+    setPages(nextPages);
+    loadPage(nextPages.length - 1, nextPages);
   };
 
   const getCanvasPoint = (event) => {
@@ -168,8 +190,6 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     }
   };
 
-  const zoomSpacerSize = `${Math.max(zoom, 1) * 100}%`;
-
   // Grid pattern for graphing
   const isGraph = questionType === 'graph_sketch';
   
@@ -178,14 +198,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       linear-gradient(to right, #e2e8f0 1px, transparent 1px),
       linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
     `,
-    backgroundSize: `${20 * zoom}px ${20 * zoom}px`,
+    backgroundSize: '20px 20px',
     backgroundPosition: 'center center',
   } : {
     backgroundImage: `
       linear-gradient(to bottom, transparent 31px, #dbeafe 32px)
     `,
-    backgroundSize: `100% ${32 * zoom}px`,
-    backgroundPosition: `0 ${8 * zoom}px`,
+    backgroundSize: '100% 32px',
+    backgroundPosition: '0 8px',
     backgroundColor: '#fff',
   };
 
@@ -273,42 +293,47 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
             </button>
             <div style={{ width: '1px', background: '#cbd5e1', margin: '0 4px' }} />
             <button
-              onClick={zoomOut}
+              onClick={() => goToPage(currentPage - 1)}
+              disabled={currentPage === 0}
               style={{
                 width: '36px', height: '36px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: '#f1f5f9', color: '#64748b',
+                background: currentPage === 0 ? '#f8fafc' : '#f1f5f9',
+                color: currentPage === 0 ? '#cbd5e1' : '#64748b',
                 transition: 'all 0.2s'
               }}
-              title="Zoom out"
+              title="Previous page"
             >
-              <ZoomOut size={18} />
+              <ChevronLeft size={18} />
             </button>
             <button
-              onClick={() => applyZoom(1)}
+              onClick={addPage}
               style={{
-                height: '36px', minWidth: '54px', padding: '0 10px', borderRadius: '10px',
+                height: '36px', minWidth: '86px', padding: '0 12px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: zoom === 1 ? '#e0e7ff' : '#f1f5f9',
-                color: zoom === 1 ? '#4f46e5' : '#64748b',
-                fontSize: '0.72rem', fontWeight: 900,
+                background: '#e0e7ff',
+                color: '#4f46e5',
+                fontSize: '0.72rem', fontWeight: 900, gap: '6px',
                 transition: 'all 0.2s'
               }}
-              title="Reset zoom"
+              title="Add page"
             >
-              {Math.round(zoom * 100)}%
+              <Plus size={16} />
+              Page {currentPage + 1}/{pages.length}
             </button>
             <button
-              onClick={zoomIn}
+              onClick={() => goToPage(currentPage + 1)}
+              disabled={currentPage === pages.length - 1}
               style={{
                 width: '36px', height: '36px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: '#f1f5f9', color: '#64748b',
+                background: currentPage === pages.length - 1 ? '#f8fafc' : '#f1f5f9',
+                color: currentPage === pages.length - 1 ? '#cbd5e1' : '#64748b',
                 transition: 'all 0.2s'
               }}
-              title="Zoom in"
+              title="Next page"
             >
-              <ZoomIn size={18} />
+              <ChevronRight size={18} />
             </button>
             <button 
               onClick={handleClear}
@@ -327,13 +352,11 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       )}
 
       {/* Canvas Area */}
-      <div style={{ flex: 1, position: 'relative', background: '#f8fafc', touchAction: 'none', overflow: 'auto' }}>
+      <div style={{ flex: 1, position: 'relative', background: '#f8fafc', touchAction: 'none', overflow: 'hidden' }}>
         <div
           style={{
-            width: zoomSpacerSize,
-            height: zoomSpacerSize,
-            minWidth: '100%',
-            minHeight: '100%',
+            width: '100%',
+            height: '100%',
             position: 'relative',
           }}
         >
@@ -368,7 +391,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
           strokeColor={isAreaEraser ? 'transparent' : strokeColor}
           canvasColor="transparent"
           allowOnlyPointerType={isStrokeEraser ? 'mouse' : allowedPointerType}
-          onChange={setPaths}
+          onChange={handleCanvasChange}
           style={{ width: '100%', height: '100%', border: 'none', position: 'relative', zIndex: 5 }}
         />
 
