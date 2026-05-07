@@ -13,26 +13,22 @@ const toDisplayText = (value, fallback = '') => {
 
   // Auto-format symbols if no delimiters are present
   if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
-    let hasMath = false;
-    let processed = str
-      .replace(/√\s*(\d+)/g, (m, d) => { hasMath = true; return `\\sqrt{${d}}`; })
-      .replace(/√\s*\(/g, () => { hasMath = true; return '\\sqrt{('; })
-      .replace(/√/g, () => { hasMath = true; return '\\sqrt'; })
-      .replace(/(\d+)([²³])/g, (m, d, s) => { hasMath = true; return `{${d}}^${s === '²' ? '2' : '3'}`; })
-      .replace(/([πθ×÷])/g, (m) => { 
-        hasMath = true; 
-        if (m === 'π') return '\\pi';
-        if (m === 'θ') return '\\theta';
-        if (m === '×') return '\\times';
-        if (m === '÷') return '\\div';
+    // Surgically replace symbols with delimited LaTeX
+    str = str
+      .replace(/√\s*(\d+)/g, '$\\sqrt{$1}$')
+      .replace(/√\s*\((.*?)\)/g, '$\\sqrt{$1}$')
+      .replace(/√/g, '$\\sqrt{}$')
+      .replace(/(\d+)([²³])/g, (m, d, s) => `$${d}^${s === '²' ? '2' : '3'}$`)
+      .replace(/([πθ×÷])/g, (m) => {
+        if (m === 'π') return '$\\pi$';
+        if (m === 'θ') return '$\\theta$';
+        if (m === '×') return '$\\times$';
+        if (m === '÷') return '$\\div$';
         return m;
       });
 
-    if (hasMath) {
-      // Wrap the entire expression in $ and use \text{} for plain words
-      // Heuristic: Wrap sequences of 4+ letters/spaces in \text{}
-      str = `$${processed.replace(/([a-zA-Z\s]{4,})/g, '\\text{$1}')}$`;
-    }
+    // Clean up any double dollars that might have been created
+    str = str.replace(/\$\$/g, '');
   }
 
   // Clean up LaTeX escapes if not in math mode
