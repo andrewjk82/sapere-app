@@ -1,5 +1,5 @@
 import { db } from '../firebase/config.js';
-import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
+import { collection, addDoc, getDocs, query, where, deleteDoc, doc } from 'firebase/firestore';
 
 const allQuestions = [
   // SECTION 1: Simplify by collecting like terms
@@ -11,9 +11,9 @@ const allQuestions = [
     topicTitle: 'Collecting like terms',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Simplify the expression: 4x + 9x',
+    question: 'Simplify the expression: $4x + 9x$',
     answer: '13x',
-    solution: '4x + 9x = (4 + 9)x = 13x',
+    solution: '$4x + 9x = (4 + 9)x = 13x$',
     difficulty: 'easy',
     isManual: true
   },
@@ -25,9 +25,9 @@ const allQuestions = [
     topicTitle: 'Collecting like terms',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Simplify the expression: 5p³q - 9p³q + 11p³q',
-    answer: '7p³q',
-    solution: '(5 - 9 + 11)p³q = 7p³q',
+    question: 'Simplify the expression: $5p^3q - 9p^3q + 11p^3q$',
+    answer: '7p^3q',
+    solution: '$(5 - 9 + 11)p^3q = 7p^3q$',
     difficulty: 'medium',
     isManual: true
   },
@@ -39,9 +39,9 @@ const allQuestions = [
     topicTitle: 'Collecting like terms',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Simplify the expression: ab - 2ab² - 6ab + ab²',
-    answer: '-5ab - ab²',
-    solution: '(ab - 6ab) + (-2ab² + ab²) = -5ab - ab²',
+    question: 'Simplify the expression: $ab - 2ab^2 - 6ab + ab^2$',
+    answer: '-5ab - ab^2',
+    solution: '$(ab - 6ab) + (-2ab^2 + ab^2) = -5ab - ab^2$',
     difficulty: 'hard',
     isManual: true
   },
@@ -53,9 +53,9 @@ const allQuestions = [
     topicTitle: 'Collecting like terms',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Simplify the expression: 8x³y - 2x²y + 12x³y - 8x²y',
-    answer: '20x³y - 10x²y',
-    solution: '(8x³y + 12x³y) + (-2x²y - 8x²y) = 20x³y - 10x²y',
+    question: 'Simplify the expression: $8x^3y - 2x^2y + 12x^3y - 8x^2y$',
+    answer: '20x^3y - 10x^2y',
+    solution: '$(8x^3y + 12x^3y) + (-2x^2y - 8x^2y) = 20x^3y - 10x^2y$',
     difficulty: 'hard',
     isManual: true
   },
@@ -69,9 +69,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -2(a + 4)',
+    question: 'Expand the expression: $-2(a + 4)$',
     answer: '-2a - 8',
-    solution: '-2 * a + (-2) * 4 = -2a - 8',
+    solution: '$-2 \\times a + (-2) \\times 4 = -2a - 8$',
     difficulty: 'easy',
     isManual: true
   },
@@ -83,9 +83,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -3(b + 6)',
+    question: 'Expand the expression: $-3(b + 6)$',
     answer: '-3b - 18',
-    solution: '-3 * b + (-3) * 6 = -3b - 18',
+    solution: '$-3 \\times b + (-3) \\times 6 = -3b - 18$',
     difficulty: 'easy',
     isManual: true
   },
@@ -97,9 +97,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -4(3b - 5)',
+    question: 'Expand the expression: $-4(3b - 5)$',
     answer: '-12b + 20',
-    solution: '-4 * 3b - (-4) * 5 = -12b + 20',
+    solution: '$-4 \\times 3b - (-4) \\times 5 = -12b + 20$',
     difficulty: 'medium',
     isManual: true
   },
@@ -111,9 +111,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -5(4b - 7)',
+    question: 'Expand the expression: $-5(4b - 7)$',
     answer: '-20b + 35',
-    solution: '-5 * 4b - (-5) * 7 = -20b + 35',
+    solution: '$-5 \\times 4b - (-5) \\times 7 = -20b + 35$',
     difficulty: 'medium',
     isManual: true
   },
@@ -125,10 +125,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand the expression: 2/3(12p + 6)',
-    options: ['8p + 4', '12p + 4', '8p + 6', '24p + 12'],
+    question: 'Expand the expression: $\\frac{2}{3}(12p + 6)$',
+    options: ['$8p + 4$', '$12p + 4$', '$8p + 6$', '$24p + 12$'],
     answer: '0',
-    solution: '(2/3 * 12p) + (2/3 * 6) = 8p + 4',
+    solution: '$(\\frac{2}{3} \\times 12p) + (\\frac{2}{3} \\times 6) = 8p + 4$',
     difficulty: 'medium',
     isManual: true
   },
@@ -140,10 +140,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand the expression: -1/4(16p - 20)',
-    options: ['-4p + 5', '4p - 5', '-4p - 5', '-16p + 20'],
+    question: 'Expand the expression: $-\\frac{1}{4}(16p - 20)$',
+    options: ['$-4p + 5$', '$4p - 5$', '$-4p - 5$', '$-16p + 20$'],
     answer: '0',
-    solution: '(-1/4 * 16p) - (-1/4 * 20) = -4p + 5',
+    solution: '$(-\\frac{1}{4} \\times 16p) - (-\\frac{1}{4} \\times 20) = -4p + 5$',
     difficulty: 'medium',
     isManual: true
   },
@@ -157,9 +157,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: d(d - 9)',
-    answer: 'd² - 9d',
-    solution: 'd * d - d * 9 = d² - 9d',
+    question: 'Expand the expression: $d(d - 9)$',
+    answer: 'd^2 - 9d',
+    solution: '$d \\times d - d \\times 9 = d^2 - 9d$',
     difficulty: 'medium',
     isManual: true
   },
@@ -171,9 +171,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: e(3e + 1)',
-    answer: '3e² + e',
-    solution: 'e * 3e + e * 1 = 3e² + e',
+    question: 'Expand the expression: $e(3e + 1)$',
+    answer: '3e^2 + e',
+    solution: '$e \\times 3e + e \\times 1 = 3e^2 + e$',
     difficulty: 'medium',
     isManual: true
   },
@@ -185,9 +185,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: f(5f + 6)',
-    answer: '5f² + 6f',
-    solution: 'f * 5f + f * 6 = 5f² + 6f',
+    question: 'Expand the expression: $f(5f + 6)$',
+    answer: '5f^2 + 6f',
+    solution: '$f \\times 5f + f \\times 6 = 5f^2 + 6f$',
     difficulty: 'medium',
     isManual: true
   },
@@ -199,9 +199,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -2m(5m - 4)',
-    answer: '-10m² + 8m',
-    solution: '-2m * 5m - (-2m) * 4 = -10m² + 8m',
+    question: 'Expand the expression: $-2m(5m - 4)$',
+    answer: '-10m^2 + 8m',
+    solution: '$-2m \\times 5m - (-2m) \\times 4 = -10m^2 + 8m$',
     difficulty: 'hard',
     isManual: true
   },
@@ -213,9 +213,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -3n(5n + 7)',
-    answer: '-15n² - 21n',
-    solution: '-3n * 5n + (-3n) * 7 = -15n² - 21n',
+    question: 'Expand the expression: $-3n(5n + 7)$',
+    answer: '-15n^2 - 21n',
+    solution: '$-3n \\times 5n + (-3n) \\times 7 = -15n^2 - 21n$',
     difficulty: 'hard',
     isManual: true
   },
@@ -227,9 +227,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: 2p(3q - 5r)',
+    question: 'Expand the expression: $2p(3q - 5r)$',
     answer: '6pq - 10pr',
-    solution: '2p * 3q - 2p * 5r = 6pq - 10pr',
+    solution: '$2p \\times 3q - 2p \\times 5r = 6pq - 10pr$',
     difficulty: 'hard',
     isManual: true
   },
@@ -241,9 +241,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -3x(2x + 5y)',
-    answer: '-6x² - 15xy',
-    solution: '-3x * 2x + (-3x) * 5y = -6x² - 15xy',
+    question: 'Expand the expression: $-3x(2x + 5y)$',
+    answer: '-6x^2 - 15xy',
+    solution: '$-3x \\times 2x + (-3x) \\times 5y = -6x^2 - 15xy$',
     difficulty: 'hard',
     isManual: true
   },
@@ -255,9 +255,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: -2z(3z - 4y)',
-    answer: '-6z² + 8zy',
-    solution: '-2z * 3z - (-2z) * 4y = -6z² + 8zy',
+    question: 'Expand the expression: $-2z(3z - 4y)$',
+    answer: '-6z^2 + 8zy',
+    solution: '$-2z \\times 3z - (-2z) \\times 4y = -6z^2 + 8zy$',
     difficulty: 'hard',
     isManual: true
   },
@@ -269,9 +269,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand the expression: 2a(3 + 4ab)',
-    answer: '6a + 8a²b',
-    solution: '2a * 3 + 2a * 4ab = 6a + 8a²b',
+    question: 'Expand the expression: $2a(3 + 4ab)$',
+    answer: '6a + 8a^2b',
+    solution: '$2a \\times 3 + 2a \\times 4ab = 6a + 8a^2b$',
     difficulty: 'hard',
     isManual: true
   },
@@ -285,9 +285,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 2(c + 7) - 9',
+    question: 'Expand and collect like terms: $2(c + 7) - 9$',
     answer: '2c + 5',
-    solution: '(2c + 14) - 9 = 2c + 5',
+    solution: '$(2c + 14) - 9 = 2c + 5$',
     difficulty: 'medium',
     isManual: true
   },
@@ -299,9 +299,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 4(h + 1) + 3h',
+    question: 'Expand and collect like terms: $4(h + 1) + 3h$',
     answer: '7h + 4',
-    solution: '(4h + 4) + 3h = 7h + 4',
+    solution: '$(4h + 4) + 3h = 7h + 4$',
     difficulty: 'medium',
     isManual: true
   },
@@ -313,9 +313,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 4(1 - 3q) + 15q',
+    question: 'Expand and collect like terms: $4(1 - 3q) + 15q$',
     answer: '3q + 4',
-    solution: '(4 - 12q) + 15q = 3q + 4',
+    solution: '$(4 - 12q) + 15q = 3q + 4$',
     difficulty: 'medium',
     isManual: true
   },
@@ -327,9 +327,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 2a(3a + 2b) - 6a²',
+    question: 'Expand and collect like terms: $2a(3a + 2b) - 6a^2$',
     answer: '4ab',
-    solution: '(6a² + 4ab) - 6a² = 4ab',
+    solution: '$(6a^2 + 4ab) - 6a^2 = 4ab$',
     difficulty: 'medium',
     isManual: true
   },
@@ -341,10 +341,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand and collect like terms: 5/6(x - 4) + 3x/4',
-    options: ['19x/12 - 10/3', '15x/12 - 4', '19x/12 - 20/6', 'x/2 - 3'],
+    question: 'Expand and collect like terms: $\\frac{5}{6}(x - 4) + \\frac{3x}{4}$',
+    options: ['$\\frac{19x}{12} - \\frac{10}{3}$', '$\\frac{15x}{12} - 4$', '$\\frac{19x}{12} - \\frac{20}{6}$', '$\\frac{x}{2} - 3$'],
     answer: '0',
-    solution: '5x/6 - 20/6 + 3x/4 = (10x/12 + 9x/12) - 10/3 = 19x/12 - 10/3',
+    solution: '$\\frac{5x}{6} - \\frac{20}{6} + \\frac{3x}{4} = (\\frac{10x}{12} + \\frac{9x}{12}) - \\frac{10}{3} = \\frac{19x}{12} - \\frac{10}{3}$',
     difficulty: 'hard',
     isManual: true
   },
@@ -356,9 +356,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 5(b - 2) - 4(b + 3)',
+    question: 'Expand and collect like terms: $5(b - 2) - 4(b + 3)$',
     answer: 'b - 22',
-    solution: '(5b - 10) - (4b + 12) = 5b - 10 - 4b - 12 = b - 22',
+    solution: '$(5b - 10) - (4b + 12) = 5b - 10 - 4b - 12 = b - 22$',
     difficulty: 'medium',
     isManual: true
   },
@@ -370,9 +370,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 4y(3y - 5) + 3(3y - 5)',
-    answer: '12y² - 11y - 15',
-    solution: '12y² - 20y + 9y - 15 = 12y² - 11y - 15',
+    question: 'Expand and collect like terms: $4y(3y - 5) + 3(3y - 5)$',
+    answer: '12y^2 - 11y - 15',
+    solution: '$12y^2 - 20y + 9y - 15 = 12y^2 - 11y - 15$',
     difficulty: 'medium',
     isManual: true
   },
@@ -384,9 +384,9 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Expand and collect like terms: 2p(3p + 1) - 4(2p + 1)',
-    answer: '6p² - 6p - 4',
-    solution: '6p² + 2p - 8p - 4 = 6p² - 6p - 4',
+    question: 'Expand and collect like terms: $2p(3p + 1) - 4(2p + 1)$',
+    answer: '6p^2 - 6p - 4',
+    solution: '$6p^2 + 2p - 8p - 4 = 6p^2 - 6p - 4$',
     difficulty: 'medium',
     isManual: true
   },
@@ -398,10 +398,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand: (m + 4)(m - 5)',
-    options: ['m² - m - 20', 'm² + m - 20', 'm² - 20', 'm² - 9m - 20'],
+    question: 'Expand: $(m + 4)(m - 5)$',
+    options: ['$m^2 - m - 20$', '$m^2 + m - 20$', '$m^2 - 20$', '$m^2 - 9m - 20$'],
     answer: '0',
-    solution: 'm² - 5m + 4m - 20 = m² - m - 20',
+    solution: '$m^2 - 5m + 4m - 20 = m^2 - m - 20$',
     difficulty: 'medium',
     isManual: true
   },
@@ -413,10 +413,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand: (6x - 5)(x + 2)',
-    options: ['6x² + 7x - 10', '6x² - 7x - 10', '6x² + 12x - 10', '6x² + 17x - 10'],
+    question: 'Expand: $(6x - 5)(x + 2)$',
+    options: ['$6x^2 + 7x - 10$', '$6x^2 - 7x - 10$', '$6x^2 + 12x - 10$', '$6x^2 + 17x - 10$'],
     answer: '0',
-    solution: '6x² + 12x - 5x - 10 = 6x² + 7x - 10',
+    solution: '$6x^2 + 12x - 5x - 10 = 6x^2 + 7x - 10$',
     difficulty: 'hard',
     isManual: true
   },
@@ -428,10 +428,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand: (7x - 1)(x - 5)',
-    options: ['7x² - 36x + 5', '7x² - 34x + 5', '7x² - 36x - 5', '7x² + 36x + 5'],
+    question: 'Expand: $(7x - 1)(x - 5)$',
+    options: ['$7x^2 - 36x + 5$', '$7x^2 - 34x + 5$', '$7x^2 - 36x - 5$', '$7x^2 + 36x + 5$'],
     answer: '0',
-    solution: '7x² - 35x - x + 5 = 7x² - 36x + 5',
+    solution: '$7x^2 - 35x - x + 5 = 7x^2 - 36x + 5$',
     difficulty: 'hard',
     isManual: true
   },
@@ -443,10 +443,10 @@ const allQuestions = [
     topicTitle: 'Expansion',
     year: 'Year 10',
     type: 'multiple_choice',
-    question: 'Expand: (m + 3n)(2m + n)',
-    options: ['2m² + 7mn + 3n²', '2m² + 6mn + 3n²', '2m² + 3n²', '2m² + mn + 3n²'],
+    question: 'Expand: $(m + 3n)(2m + n)$',
+    options: ['$2m^2 + 7mn + 3n^2$', '$2m^2 + 6mn + 3n^2$', '$2m^2 + 3n^2$', '$2m^2 + mn + 3n^2$'],
     answer: '0',
-    solution: 'm(2m) + m(n) + 3n(2m) + 3n(n) = 2m² + mn + 6mn + 3n² = 2m² + 7mn + 3n²',
+    solution: '$m(2m) + m(n) + 3n(2m) + 3n(n) = 2m^2 + mn + 6mn + 3n^2 = 2m^2 + 7mn + 3n^2$',
     difficulty: 'hard',
     isManual: true
   },
@@ -460,9 +460,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 7x - 4 = 17',
+    question: 'Solve for $x$: $7x - 4 = 17$',
     answer: '3',
-    solution: '7x = 21 => x = 3',
+    solution: '$7x = 21 \\Rightarrow x = 3$',
     difficulty: 'easy',
     isManual: true
   },
@@ -474,9 +474,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 3x = 25 - 2x',
+    question: 'Solve for $x$: $3x = 25 - 2x$',
     answer: '5',
-    solution: '5x = 25 => x = 5',
+    solution: '$5x = 25 \\Rightarrow x = 5$',
     difficulty: 'medium',
     isManual: true
   },
@@ -488,9 +488,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 7x = 18 - 2x',
+    question: 'Solve for $x$: $7x = 18 - 2x$',
     answer: '2',
-    solution: '9x = 18 => x = 2',
+    solution: '$9x = 18 \\Rightarrow x = 2$',
     difficulty: 'medium',
     isManual: true
   },
@@ -502,9 +502,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: x/3 + 2 = 7',
+    question: 'Solve for $x$: $\\frac{x}{3} + 2 = 7$',
     answer: '15',
-    solution: 'x/3 = 5 => x = 15',
+    solution: '$\\frac{x}{3} = 5 \\Rightarrow x = 15$',
     difficulty: 'medium',
     isManual: true
   },
@@ -516,9 +516,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 3x/2 + 2 = 8',
+    question: 'Solve for $x$: $\\frac{3x}{2} + 2 = 8$',
     answer: '4',
-    solution: '3x/2 = 6 => 3x = 12 => x = 4',
+    solution: '$\\frac{3x}{2} = 6 \\Rightarrow 3x = 12 \\Rightarrow x = 4$',
     difficulty: 'medium',
     isManual: true
   },
@@ -530,9 +530,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 3x - 7 = x + 1',
+    question: 'Solve for $x$: $3x - 7 = x + 1$',
     answer: '4',
-    solution: '2x = 8 => x = 4',
+    solution: '$2x = 8 \\Rightarrow x = 4$',
     difficulty: 'medium',
     isManual: true
   },
@@ -544,9 +544,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 7x/2 + 2x = 12 - x',
+    question: 'Solve for $x$: $\\frac{7x}{2} + 2x = 12 - x$',
     answer: '24/13',
-    solution: '3.5x + 2x + x = 12 => 6.5x = 12 => 13x/2 = 12 => 13x = 24 => x = 24/13',
+    solution: '$3.5x + 2x + x = 12 \\Rightarrow 6.5x = 12 \\Rightarrow \\frac{13x}{2} = 12 \\Rightarrow 13x = 24 \\Rightarrow x = \\frac{24}{13}$',
     difficulty: 'hard',
     isManual: true
   },
@@ -558,9 +558,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: x/2 + x/5 = 14',
+    question: 'Solve for $x$: $\\frac{x}{2} + \\frac{x}{5} = 14$',
     answer: '20',
-    solution: '5x/10 + 2x/10 = 14 => 7x/10 = 14 => 7x = 140 => x = 20',
+    solution: '$\\frac{5x}{10} + \\frac{2x}{10} = 14 \\Rightarrow \\frac{7x}{10} = 14 \\Rightarrow 7x = 140 \\Rightarrow x = 20$',
     difficulty: 'hard',
     isManual: true
   },
@@ -572,9 +572,9 @@ const allQuestions = [
     topicTitle: 'Solving equations',
     year: 'Year 10',
     type: 'short_answer',
-    question: 'Solve for x: 3(2x - 1) + 3x = 15',
+    question: 'Solve for $x$: $3(2x - 1) + 3x = 15$',
     answer: '2',
-    solution: '6x - 3 + 3x = 15 => 9x = 18 => x = 2',
+    solution: '$6x - 3 + 3x = 15 \\Rightarrow 9x = 18 \\Rightarrow x = 2$',
     difficulty: 'hard',
     isManual: true
   },
@@ -588,9 +588,9 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: x + 1 > 5',
+    question: 'Solve and graph on a number line: $x + 1 > 5$',
     answer: 'x > 4',
-    solution: 'x > 5 - 1 => x > 4. Draw an open circle at 4 and an arrow pointing to the right.',
+    solution: '$x > 5 - 1 \\Rightarrow x > 4$. Draw an open circle at 4 and an arrow pointing to the right.',
     difficulty: 'medium',
     isManual: true
   },
@@ -602,9 +602,9 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: 2x - 1 < 6',
+    question: 'Solve and graph on a number line: $2x - 1 < 6$',
     answer: 'x < 3.5',
-    solution: '2x < 7 => x < 3.5. Draw an open circle at 3.5 and arrow left.',
+    solution: '$2x < 7 \\Rightarrow x < 3.5$. Draw an open circle at 3.5 and arrow left.',
     difficulty: 'medium',
     isManual: true
   },
@@ -616,9 +616,9 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: (x + 1)/2 ≥ -4',
-    answer: 'x ≥ -9',
-    solution: 'x + 1 ≥ -8 => x ≥ -9. Draw solid circle at -9 and arrow right.',
+    question: 'Solve and graph on a number line: $\\frac{x + 1}{2} \\ge -4$',
+    answer: 'x \\ge -9',
+    solution: '$x + 1 \\ge -8 \\Rightarrow x \\ge -9$. Draw solid circle at -9 and arrow right.',
     difficulty: 'medium',
     isManual: true
   },
@@ -630,9 +630,9 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: -2x + 1 ≤ 6',
-    answer: 'x ≥ -2.5',
-    solution: '-2x ≤ 5 => x ≥ -5/2 => x ≥ -2.5. Draw a solid circle at -2.5 and an arrow pointing to the right.',
+    question: 'Solve and graph on a number line: $-2x + 1 \\le 6$',
+    answer: 'x \\ge -2.5',
+    solution: '$-2x \\le 5 \\Rightarrow x \\ge -5/2 \\Rightarrow x \\ge -2.5$. Draw a solid circle at -2.5 and an arrow pointing to the right.',
     difficulty: 'hard',
     isManual: true
   },
@@ -644,9 +644,9 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: 4 - 7x ≥ 6',
-    answer: 'x ≤ -2/7',
-    solution: '-7x ≥ 2 => x ≤ -2/7. Draw solid circle at -2/7 and arrow left.',
+    question: 'Solve and graph on a number line: $4 - 7x \\ge 6$',
+    answer: 'x \\le -2/7',
+    solution: '$-7x \\ge 2 \\Rightarrow x \\le -2/7$. Draw solid circle at -2/7 and arrow left.',
     difficulty: 'hard',
     isManual: true
   },
@@ -658,9 +658,9 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: (-3x + 2)/6 ≤ 1',
-    answer: 'x ≥ -4/3',
-    solution: '-3x + 2 ≤ 6 => -3x ≤ 4 => x ≥ -4/3. Draw solid circle and arrow right.',
+    question: 'Solve and graph on a number line: $\\frac{-3x + 2}{6} \\le 1$',
+    answer: 'x \\ge -4/3',
+    solution: '$-3x + 2 \\le 6 \\Rightarrow -3x \\le 4 \\Rightarrow x \\ge -4/3$. Draw solid circle and arrow right.',
     difficulty: 'hard',
     isManual: true
   },
@@ -672,33 +672,37 @@ const allQuestions = [
     topicTitle: 'Inequalities',
     year: 'Year 10',
     type: 'graph_sketch',
-    question: 'Solve and graph on a number line: (2x - 1)/3 ≤ (x + 1)/4',
-    answer: 'x ≤ 1.4',
-    solution: '4(2x - 1) ≤ 3(x + 1) => 8x - 4 ≤ 3x + 3 => 5x ≤ 7 => x ≤ 1.4. Draw a solid circle at 1.4 and arrow left.',
+    question: 'Solve and graph on a number line: $\\frac{2x - 1}{3} \\le \\frac{x + 1}{4}$',
+    answer: 'x \\le 1.4',
+    solution: '$4(2x - 1) \\le 3(x + 1) \\Rightarrow 8x - 4 \\le 3x + 3 \\Rightarrow 5x \\le 7 \\Rightarrow x \\le 1.4$. Draw a solid circle at 1.4 and arrow left.',
     difficulty: 'hard',
     isManual: true
   }
 ];
 
 export const importYear10Ch3 = async () => {
-  console.log('Starting Year 10 Chapter 3 FULL question import...');
-  let importedCount = 0;
+  console.log('Starting Year 10 Chapter 3 FULL question import with LaTeX...');
   
+  // CLEANUP FIRST: Delete existing Ch 3 questions to ensure a clean slate
+  const qRef = collection(db, 'questions');
+  const existingQ = query(qRef, where('chapterId', '==', 'y10-3'));
+  const existingSnap = await getDocs(existingQ);
+  console.log(`Found ${existingSnap.size} existing questions to delete.`);
+  
+  for (const d of existingSnap.docs) {
+    await deleteDoc(doc(db, 'questions', d.id));
+  }
+  
+  let importedCount = 0;
   for (const q of allQuestions) {
     try {
-      const qRef = collection(db, 'questions');
-      const dupQuery = query(qRef, where('question', '==', q.question));
-      const dupSnap = await getDocs(dupQuery);
-      
-      if (dupSnap.empty) {
-        await addDoc(collection(db, 'questions'), q);
-        importedCount++;
-      }
+      await addDoc(collection(db, 'questions'), q);
+      importedCount++;
     } catch (error) {
       console.error('Error importing question:', error);
     }
   }
   
-  console.log(`Successfully imported ${importedCount} Year 10 Ch 3 questions.`);
+  console.log(`Successfully imported ${importedCount} Year 10 Ch 3 questions with LaTeX.`);
   return importedCount;
 };
