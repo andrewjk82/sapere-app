@@ -2185,23 +2185,27 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                         }}
                         disabled={step === 'feedback'}
                         style={{
-                          width: '40px',
-                          height: '40px',
-                          borderRadius: '10px',
+                          width: '44px',
+                          height: '44px',
+                          borderRadius: '12px',
                           border: '1px solid #e2e8f0',
-                          background: '#fff',
+                          background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff',
                           color: '#4f46e5',
-                          fontSize: '1.1rem',
+                          fontSize: symbol === '√' ? '1.3rem' : '1.1rem',
                           fontWeight: 800,
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
                           cursor: 'pointer',
                           boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
-                          transition: 'all 0.2s'
+                          transition: 'all 0.2s',
+                          fontFamily: '"KaTeX_Main", "Times New Roman", serif',
+                          lineHeight: 1,
+                          padding: 0,
+                          paddingBottom: symbol === '√' ? '2px' : '0'
                         }}
                         onMouseEnter={(e) => e.currentTarget.style.background = '#f5f3ff'}
-                        onMouseLeave={(e) => e.currentTarget.style.background = '#fff'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff'}
                       >
                         {symbol}
                       </button>
@@ -2215,7 +2219,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     onChange={(e) => step !== 'feedback' && setSelectedOption(e.target.value)}
                     placeholder="Type your answer..."
                     className="app-input"
-                    style={{ fontSize: '1.2rem', padding: '20px', borderRadius: '20px', textAlign: 'center', fontWeight: 700 }}
+                    style={{ 
+                      fontSize: '1.4rem', 
+                      padding: '24px', 
+                      borderRadius: '24px', 
+                      textAlign: 'center', 
+                      fontWeight: 700,
+                      fontFamily: '"KaTeX_Main", "Times New Roman", serif',
+                      letterSpacing: '0.05em'
+                    }}
                     onKeyDown={(e) => e.key === 'Enter' && selectedOption && handleAnswer(selectedOption)}
                     autoFocus
                   />
