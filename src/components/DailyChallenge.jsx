@@ -347,6 +347,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [warnings, setWarnings] = useState(0);
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
+  const answerInputRef = useRef(null);
   const [leaders, setLeaders] = useState([]);
 
   const isMobile = window.innerWidth < 768; // Lowered threshold to allow split-screen on tablets
@@ -2182,6 +2183,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           e.preventDefault();
                           const currentVal = selectedOption || '';
                           setSelectedOption(currentVal + symbol);
+                          // Maintain focus on input
+                          answerInputRef.current?.focus();
                         }}
                         disabled={step === 'feedback'}
                         style={{
@@ -2216,6 +2219,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                         e.preventDefault();
                         const currentVal = selectedOption || '';
                         setSelectedOption(currentVal.slice(0, -1));
+                        // Maintain focus on input
+                        answerInputRef.current?.focus();
                       }}
                       disabled={step === 'feedback'}
                       style={{
@@ -2243,6 +2248,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   </div>
 
                   <input 
+                    ref={answerInputRef}
                     type="text"
                     disabled={step === 'feedback'}
                     value={step === 'feedback' ? userAnswers[currentIdx] || '' : selectedOption || ''}
