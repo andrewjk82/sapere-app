@@ -130,10 +130,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
         const s2 = await getDocs(q2);
         if (!s2.empty) setImportCh2Done(true);
 
-        // Check Chapter 3
-        const q3 = query(qRef, where('chapterId', '==', 'y10-3'), limit(1));
+        // Check Chapter 3 - Require at least 85 questions to consider it "done"
+        const q3 = query(qRef, where('chapterId', '==', 'y10-3'));
         const s3 = await getDocs(q3);
-        if (!s3.empty) setImportCh3Done(true);
+        if (s3.size >= 85) setImportCh3Done(true);
+        else setImportCh3Done(false);
       } catch (err) {
         console.error('Error checking existing questions:', err);
       }
