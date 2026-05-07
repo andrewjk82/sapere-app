@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Plus, Trash2, Edit2, Save, Image as ImageIcon, CheckCircle2, Eye, Check, AlertTriangle } from 'lucide-react';
+import { X, Plus, Trash2, Edit2, Save, Image as ImageIcon, CheckCircle2, Eye, Check, AlertTriangle, Search, ChevronRight, AlertCircle, FileText, BarChart, Settings, HelpCircle, Code } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, addDoc, deleteDoc, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
+import MathGraph from './MathGraph';
 
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
@@ -101,7 +102,7 @@ const FileUploader = ({ onUpload, currentUrl, label }) => {
   );
 };
 
-const MathPreview = ({ content, style = {} }) => {
+const MathPreview = ({ content, graphData, style = {} }) => {
   const containerRef = React.useRef(null);
 
   useEffect(() => {
@@ -117,13 +118,20 @@ const MathPreview = ({ content, style = {} }) => {
   }, [content]);
 
   return (
-    <div ref={containerRef} style={{ padding: '16px', background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', minHeight: '50px', fontSize: '1rem', color: '#1e293b', lineHeight: 1.6, ...style }}>
-      {content || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Preview will appear here...</span>}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <div ref={containerRef} style={{ padding: '16px', background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', minHeight: '50px', fontSize: '1rem', color: '#1e293b', lineHeight: 1.6, ...style }}>
+        {content || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Preview will appear here...</span>}
+      </div>
+      {graphData && (
+        <div style={{ display: 'flex', justifyContent: 'center', padding: '16px', background: 'white', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+          <MathGraph data={graphData} />
+        </div>
+      )}
     </div>
   );
 };
 
-const MathView = ({ content, style = {} }) => {
+const MathView = ({ content, graphData, style = {} }) => {
   const containerRef = React.useRef(null);
   useEffect(() => {
     if (containerRef.current && window.renderMathInElement) {
@@ -136,7 +144,16 @@ const MathView = ({ content, style = {} }) => {
       });
     }
   }, [content]);
-  return <div ref={containerRef} style={style}>{content}</div>;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <div ref={containerRef} style={style}>{content}</div>
+      {graphData && (
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+          <MathGraph data={graphData} />
+        </div>
+      )}
+    </div>
+  );
 };
 
 const StudentViewPreview = ({ question, onClose }) => {
@@ -151,7 +168,7 @@ const StudentViewPreview = ({ question, onClose }) => {
         </div>
         <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div style={{ background: 'white', padding: '32px', borderRadius: '32px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-            <MathView content={question.question} style={{ fontSize: '1.3rem', fontWeight: 700, color: '#1e293b', marginBottom: '16px', lineHeight: 1.5 }} />
+            <MathView content={question.question} graphData={question.graphData} style={{ fontSize: '1.3rem', fontWeight: 700, color: '#1e293b', marginBottom: '16px', lineHeight: 1.5 }} />
             {question.questionImage && (
               <img src={question.questionImage} alt="Question" style={{ width: '100%', borderRadius: '16px', marginTop: '16px' }} />
             )}
@@ -207,10 +224,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     answer: '',
     solution: '',
     hint: '',
-    topicId: '',
-    topicCode: '',
     topicTitle: '',
-    requiresManualGrading: false
+    requiresManualGrading: false,
+    graphData: ''
   });
 
   useEffect(() => {
@@ -262,10 +278,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answerIdx: initialAnswerIdx,
         solution: q.solution || '',
         hint: q.hint || '',
-        topicId: q.topicId || '',
-        topicCode: q.topicCode || '',
         topicTitle: q.topicTitle || '',
-        requiresManualGrading: q.requiresManualGrading || false
+        requiresManualGrading: q.requiresManualGrading || false,
+        graphData: q.graphData ? JSON.stringify(q.graphData, null, 2) : ''
       });
       setEditingQuestion(q.id);
     } else {
@@ -286,10 +301,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answerIdx: null,
         solution: '',
         hint: '',
-        topicId: '',
-        topicCode: '',
         topicTitle: '',
-        requiresManualGrading: false
+        requiresManualGrading: false,
+        graphData: ''
       });
       setEditingQuestion(null);
     }
@@ -335,6 +349,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: formData.solution,
         hint: formData.hint,
         requiresManualGrading: formData.requiresManualGrading || false,
+        graphData: formData.graphData ? JSON.parse(formData.graphData) : null,
         updatedAt: serverTimestamp()
       };
 
@@ -499,8 +514,21 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 <textarea rows={3} value={formData.questionText} onChange={e => handleQuestionTextChange(e.target.value)} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="e.g. Solve for $x$: $x^2 = 25$" />
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>LIVE PREVIEW:</span>
-                  <MathPreview content={formData.questionText} />
+                  <MathPreview content={formData.questionText} graphData={formData.graphData ? (() => { try { return JSON.parse(formData.graphData); } catch(e) { return null; } })() : null} />
                 </div>
+              </div>
+
+              <div>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
+                  <BarChart size={14} /> Graph Data (JSON - Optional)
+                </label>
+                <textarea 
+                  rows={4} 
+                  value={formData.graphData} 
+                  onChange={e => setFormData({...formData, graphData: e.target.value})} 
+                  style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }} 
+                  placeholder='{ "equations": ["y = 2x + 1"], "config": { "xRange": [-5, 5], "yRange": [-5, 5] } }' 
+                />
               </div>
 
               <div>

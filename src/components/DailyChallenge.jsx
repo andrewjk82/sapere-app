@@ -1534,7 +1534,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                               </button>
                             )}
                             <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: q.isManual ? '80px' : '0' }}>
-                              {idx + 1}. <MathView content={questionText} />
+                              {idx + 1}. <MathView content={questionText} graphData={q.graphData} />
                             </div>
 
                             {/* Display Working Out / Handwritten notes */}
@@ -1609,7 +1609,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                                    <Lightbulb size={16} /> <span style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>Solution</span>
                                  </div>
-                                 <MathView content={q.solution} />
+                                 <MathView content={q.solution} graphData={q.graphData} />
                                </div>
                             )}
                           </div>
@@ -2118,9 +2118,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               {/* Question Card */}
               <div className="app-panel" style={{ padding: '32px', borderRadius: '32px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', position: 'relative' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
-                    {questions[currentIdx]?.year || CHALLENGE_YEAR} • {questions[currentIdx]?.chapterTitle || CHALLENGE_BLUEPRINT?.title || 'Numbers'}
-                  </span>
+                  {step === 'feedback' && (
+                    <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
+                      {questions[currentIdx]?.year || CHALLENGE_YEAR} • {questions[currentIdx]?.chapterTitle || CHALLENGE_BLUEPRINT?.title || 'Numbers'}
+                    </span>
+                  )}
                   {questions[currentIdx]?.hint && (
                     <button 
                       onClick={() => setShowHint(!showHint)}
@@ -2145,6 +2147,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 </div>
                 <MathView 
                   content={questions[currentIdx]?.question} 
+                  graphData={questions[currentIdx]?.graphData}
                   style={{ fontSize: '1.2rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6, margin: 0 }} 
                 />
                 
@@ -2386,7 +2389,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           <Lightbulb size={18} />
                           <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.05em' }}>Solution</span>
                         </div>
-                        <MathView content={questions[currentIdx].solution} style={{ color: '#475569', fontSize: '0.95rem' }} />
+                        <MathView 
+                          content={questions[currentIdx].solution} 
+                          graphData={questions[currentIdx].graphData}
+                          style={{ color: '#475569', fontSize: '0.95rem' }} 
+                        />
                       </div>
                     )}
                   </div>

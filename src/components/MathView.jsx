@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import MathGraph from './MathGraph';
 
 const toDisplayText = (value, fallback = '') => {
   if (value === null || value === undefined) return fallback;
@@ -51,7 +52,7 @@ const toDisplayText = (value, fallback = '') => {
   return str;
 };
 
-const MathView = ({ content, style }) => {
+const MathView = ({ content, graphData, style }) => {
   const containerRef = useRef(null);
   const safeContent = toDisplayText(content);
 
@@ -81,7 +82,10 @@ const MathView = ({ content, style }) => {
   };
 
   return (
-    <div ref={containerRef} style={combinedStyle}>{safeContent}</div>
+    <div className="flex flex-col">
+      {graphData && <MathGraph {...graphData} />}
+      <div ref={containerRef} style={combinedStyle}>{safeContent}</div>
+    </div>
   );
 };
 

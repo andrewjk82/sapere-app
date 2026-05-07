@@ -16,6 +16,7 @@ import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { importYear11Ch3Questions } from '../scripts/importYear11Ch3';
 import { importYear10Ch1Questions } from '../scripts/importYear10Ch1';
 import { importYear10Ch3 } from '../scripts/importYear10Ch3';
+import { importYear10Ch4 } from '../scripts/importYear10Ch4';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 
@@ -266,6 +267,24 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY10Ch4 = async () => {
+    if (!isAdmin || isMigrating) return;
+    setIsMigrating(true);
+    try {
+      const count = await importYear10Ch4();
+      if (count > 0) {
+        showToast(`✅ Successfully added ${count} new questions to Year 10 Chapter 4!`, 'success');
+      } else {
+        showToast('Year 10 Chapter 4 is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 10 Ch4:', error);
+      showToast('Failed to sync Year 10 Chapter 4.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -446,6 +465,15 @@ const Curriculum = () => {
                     style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1.5px solid #16a34a', fontWeight: 900 }}
                   >
                     {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3`}
+                  </button>
+
+                  <button 
+                    onClick={handleSyncY10Ch4}
+                    disabled={isMigrating}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef2f2', color: '#dc2626', border: '1.5px solid #dc2626', fontWeight: 900 }}
+                  >
+                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch4`}
                   </button>
 
                   <button 

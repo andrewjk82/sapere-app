@@ -858,9 +858,9 @@ const StudentDetail = ({ studentId, onBack }) => {
       stat.challengeType === "calc" || stat.statCollection === "calc_stats",
   );
 
-  const assignedYears = Array.isArray(student.assignedYear)
+  const assignedYears = (Array.isArray(student.assignedYear)
     ? student.assignedYear
-    : [student.assignedYear || student.level || student.year || "Year 11"];
+    : [student.assignedYear || "Year 11"]).filter(y => typeof y === 'string' && y.startsWith('Year '));
   const assignedCourses = Array.isArray(student.assignedCourse)
     ? student.assignedCourse
     : [student.assignedCourse || "Advanced"];

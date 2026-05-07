@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-
 import { useAuth } from './context/AuthContext';
 import { importYear11Ch3Questions } from './scripts/importYear11Ch3';
 import { importYear10Ch3 } from './scripts/importYear10Ch3';
+import { importYear10Ch4 } from './scripts/importYear10Ch4';
 import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
@@ -186,9 +187,12 @@ function App() {
       if (isAdmin && user) {
         try {
           const count11 = await importYear11Ch3Questions();
-          const count10 = await importYear10Ch3();
-          if ((count11 || 0) + (count10 || 0) > 0) {
-            showToast(`Curriculum updated! Added ${(count10 || 0) + (count11 || 0)} new questions.`, 'success');
+          const count10Ch3 = await importYear10Ch3();
+          const count10Ch4 = await importYear10Ch4();
+          
+          const totalCount = (count11 || 0) + (count10Ch3 || 0) + (count10Ch4 || 0);
+          if (totalCount > 0) {
+            showToast(`Curriculum updated! Added ${totalCount} new questions.`, 'success');
           }
         } catch (error) {
           console.error('Sync error:', error);
