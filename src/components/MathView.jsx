@@ -11,6 +11,12 @@ const toDisplayText = (value, fallback = '') => {
     str = fallback;
   }
 
+  // Pre-process to escape potentially problematic characters
+  // 1. Escape currency $ (followed by digits, spaces, or financial variables)
+  str = str.replace(/\$(\d+|P|V|r|I|A)/g, '\\$$1').replace(/\$\s+/g, '\\$ ');
+  // 2. Escape percentage signs that might end up inside a math block
+  str = str.replace(/(\d+)\s*%/g, '$1\\%');
+
   // Auto-format symbols if no delimiters are present
   if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
     // Surgically replace symbols with delimited LaTeX
@@ -37,6 +43,7 @@ const toDisplayText = (value, fallback = '') => {
   }
 
   // Clean up LaTeX escapes if not in math mode
+  // This is the safety net: if no math was detected, we show plain symbols
   if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
     str = str.replace(/\\%/g, '%').replace(/\\\$/g, '$');
   }
