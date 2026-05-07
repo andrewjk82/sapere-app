@@ -18,6 +18,8 @@ const toDisplayText = (value, fallback = '') => {
       .replace(/√\s*(\d+)/g, '$\\sqrt{$1}$')
       .replace(/√\s*\((.*?)\)/g, '$\\sqrt{$1}$')
       .replace(/√/g, '$\\sqrt{}$')
+      .replace(/(\d+)\s+(\d+)\s*\/\s*(\d+)/g, '$1 $\\frac{$2}{$3}$') // Mixed numbers: 5 1/4
+      .replace(/(\d+)\s*\/\s*(\d+)/g, '$\\frac{$1}{$2}$') // Simple fractions: 1/4
       .replace(/(\d+)([²³])/g, (m, d, s) => `$${d}^${s === '²' ? '2' : '3'}$`)
       .replace(/([πθ×÷])/g, (m) => {
         if (m === 'π') return '$\\pi$';
@@ -27,8 +29,11 @@ const toDisplayText = (value, fallback = '') => {
         return m;
       });
 
-    // Clean up any double dollars that might have been created
-    str = str.replace(/\$\$/g, '');
+    // Handle percentage signs if they are adjacent to math
+    str = str.replace(/(\$)\s*%/g, '$1\\%');
+
+    // Clean up any double dollars or spaces that might have been created
+    str = str.replace(/\$\$/g, '').replace(/\$\s+\$/g, ' ');
   }
 
   // Clean up LaTeX escapes if not in math mode
