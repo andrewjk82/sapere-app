@@ -102,10 +102,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
       }
     } catch (e) {
       showToast('Sync failed: ' + e.message, 'error');
+    } finally {
+      setIsSyncing(false);
     }
   };
 
-  const [isImporting, setIsImporting] = useState(false);
 
   // Auto-sync curriculum for admins on mount
   useEffect(() => {
