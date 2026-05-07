@@ -2144,7 +2144,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 </div>
                 <MathView 
                   content={questions[currentIdx]?.question} 
-                  style={{ fontSize: '1.4rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.5, margin: 0 }} 
+                  style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.4, margin: 0 }} 
                 />
                 
                 <AnimatePresence>
@@ -2309,7 +2309,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                             {String.fromCharCode(65 + i)}
                           </div>
                           <div style={{ flex: 1 }}>
-                            <MathView content={optText} style={{ fontWeight: 700, fontSize: '1.05rem' }} />
+                            <MathView content={optText} style={{ fontWeight: 700, fontSize: '1rem' }} />
                             {optImage && <img src={optImage} alt="Option" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
                           </div>
                         </div>

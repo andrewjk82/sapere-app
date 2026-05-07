@@ -13,19 +13,25 @@ const toDisplayText = (value, fallback = '') => {
 
   // Auto-format symbols if no delimiters are present
   if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
-    // Surgically replace symbols with delimited LaTeX
-    str = str
-      .replace(/√(\d+)/g, '$\\sqrt{$1}$')  // √150 -> $\sqrt{150}$
-      .replace(/√\(/g, '$\\sqrt{(')        // √(...) -> $\sqrt{(...)}$ (partial, hard to match pair)
-      .replace(/(\d+)²/g, '$1$^2$')         // 5² -> 5$^2$
-      .replace(/(\d+)³/g, '$1$^3$')         // 5³ -> 5$^3$
-      .replace(/([πθ])/g, (m) => `$${m === 'π' ? '\\pi' : '\\theta'}$`)
-      .replace(/([×÷])/g, (m) => `$${m === '×' ? '\\times' : '\\div'}$`);
-      
-    // Fix cases where we might have adjacent math blocks like $...$$...$
-    str = str.replace(/\$\$/g, '');
-    if ((str.match(/\$/g) || []).length % 2 !== 0) {
-       str += '$'; // Close if opened but not closed
+    let hasMath = false;
+    let processed = str
+      .replace(/√\s*(\d+)/g, (m, d) => { hasMath = true; return `\\sqrt{${d}}`; })
+      .replace(/√\s*\(/g, () => { hasMath = true; return '\\sqrt{('; })
+      .replace(/√/g, () => { hasMath = true; return '\\sqrt'; })
+      .replace(/(\d+)([²³])/g, (m, d, s) => { hasMath = true; return `{${d}}^${s === '²' ? '2' : '3'}`; })
+      .replace(/([πθ×÷])/g, (m) => { 
+        hasMath = true; 
+        if (m === 'π') return '\\pi';
+        if (m === 'θ') return '\\theta';
+        if (m === '×') return '\\times';
+        if (m === '÷') return '\\div';
+        return m;
+      });
+
+    if (hasMath) {
+      // Wrap the entire expression in $ and use \text{} for plain words
+      // Heuristic: Wrap sequences of 4+ letters/spaces in \text{}
+      str = `$${processed.replace(/([a-zA-Z\s]{4,})/g, '\\text{$1}')}$`;
     }
   }
 
