@@ -102,26 +102,25 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     setActiveTool('pen');
   };
 
-  const setAreaEraserMode = () => {
-    canvasRef.current?.eraseMode(true);
-    setActiveTool('eraser');
-    setEraserMode('area');
-  };
-
-  const setStrokeEraserMode = () => {
-    canvasRef.current?.eraseMode(false);
-    setActiveTool('eraser');
-    setEraserMode('stroke');
+  const toggleEraser = () => {
+    if (activeTool !== 'eraser') {
+      setActiveTool('eraser');
+      // Keep previous eraserMode or default to area
+      if (eraserMode === 'area') canvasRef.current?.eraseMode(true);
+      else canvasRef.current?.eraseMode(false);
+    } else {
+      // Toggle between area and stroke
+      const nextMode = eraserMode === 'area' ? 'stroke' : 'area';
+      setEraserMode(nextMode);
+      if (nextMode === 'area') canvasRef.current?.eraseMode(true);
+      else canvasRef.current?.eraseMode(false);
+    }
   };
 
   const replacePaths = (nextPaths) => {
     canvasRef.current?.resetCanvas();
     setPaths(nextPaths);
-    setPages(prev => {
-      const next = [...prev];
-      next[currentPage] = nextPaths;
-      return next;
-    });
+    syncCurrentPageToPages(nextPaths);
     window.requestAnimationFrame(() => {
       canvasRef.current?.loadPaths(nextPaths);
     });
@@ -129,9 +128,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
 
   const handleCanvasChange = (nextPaths) => {
     setPaths(nextPaths);
+  };
+
+  // Sync pages when leaving current page
+  const syncCurrentPageToPages = (currentPaths) => {
     setPages(prev => {
+      if (prev[currentPage] === currentPaths) return prev; // Avoid redundant updates
       const next = [...prev];
-      next[currentPage] = nextPaths;
+      next[currentPage] = currentPaths;
       return next;
     });
   };
@@ -154,10 +158,8 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   const goToPage = async (pageIndex) => {
     if (pageIndex < 0 || pageIndex >= pages.length || pageIndex === currentPage) return;
     const currentPaths = await getCurrentPaths();
-    const nextPages = [...pages];
-    nextPages[currentPage] = currentPaths;
-    setPages(nextPages);
-    loadPage(pageIndex, nextPages);
+    syncCurrentPageToPages(currentPaths);
+    loadPage(pageIndex);
   };
 
   const addPage = async () => {
@@ -166,7 +168,12 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     nextPages[currentPage] = currentPaths;
     nextPages.push([]);
     setPages(nextPages);
-    loadPage(nextPages.length - 1, nextPages);
+    
+    // Switch to new page
+    const newPageIndex = nextPages.length - 1;
+    canvasRef.current?.resetCanvas();
+    setPaths([]);
+    setCurrentPage(newPageIndex);
   };
 
   const getCanvasPoint = (event) => {
@@ -273,34 +280,20 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
               <PenTool size={18} />
             </button>
             <button 
-              onClick={setAreaEraserMode}
+              onClick={toggleEraser}
               style={{
                 height: '36px', padding: '0 12px', borderRadius: '10px',
                 border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: isAreaEraser ? '#e0e7ff' : '#f1f5f9',
-                color: isAreaEraser ? '#4f46e5' : '#64748b',
+                background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9',
+                color: activeTool === 'eraser' ? '#4f46e5' : '#64748b',
                 fontSize: '0.72rem', fontWeight: 900, gap: '6px',
-                transition: 'all 0.2s'
+                transition: 'all 0.2s',
+                minWidth: '90px'
               }}
-              title="Area eraser"
+              title={eraserMode === 'area' ? 'Switch to Stroke Eraser' : 'Switch to Area Eraser'}
             >
               <Eraser size={18} />
-              Area
-            </button>
-            <button
-              onClick={setStrokeEraserMode}
-              style={{
-                height: '36px', padding: '0 12px', borderRadius: '10px',
-                border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: isStrokeEraser ? '#e0e7ff' : '#f1f5f9',
-                color: isStrokeEraser ? '#4f46e5' : '#64748b',
-                fontSize: '0.72rem', fontWeight: 900, gap: '6px',
-                transition: 'all 0.2s'
-              }}
-              title="Stroke eraser: tap a line to remove the whole stroke"
-            >
-              <Eraser size={18} />
-              Stroke
+              {eraserMode === 'area' ? 'Area' : 'Stroke'}
             </button>
             <div style={{ width: '1px', background: '#cbd5e1', margin: '0 4px' }} />
             <button 
