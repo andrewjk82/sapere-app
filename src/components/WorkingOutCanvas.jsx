@@ -23,7 +23,7 @@ const distanceToSegment = (point, start, end) => {
   return Math.hypot(point.x - projection.x, point.y - projection.y);
 };
 
-const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
+const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
   const canvasRef = useRef(null);
   const canvasAreaRef = useRef(null);
   const [activeTool, setActiveTool] = useState('pen');
@@ -455,6 +455,6 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       </div>
     </div>
   );
-});
+}));
 
 export default WorkingOutCanvas;
