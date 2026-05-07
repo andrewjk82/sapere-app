@@ -11,6 +11,24 @@ const toDisplayText = (value, fallback = '') => {
     str = fallback;
   }
 
+  // Auto-format symbols if no delimiters are present
+  if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
+    // Surgically replace symbols with delimited LaTeX
+    str = str
+      .replace(/√(\d+)/g, '$\\sqrt{$1}$')  // √150 -> $\sqrt{150}$
+      .replace(/√\(/g, '$\\sqrt{(')        // √(...) -> $\sqrt{(...)}$ (partial, hard to match pair)
+      .replace(/(\d+)²/g, '$1$^2$')         // 5² -> 5$^2$
+      .replace(/(\d+)³/g, '$1$^3$')         // 5³ -> 5$^3$
+      .replace(/([πθ])/g, (m) => `$${m === 'π' ? '\\pi' : '\\theta'}$`)
+      .replace(/([×÷])/g, (m) => `$${m === '×' ? '\\times' : '\\div'}$`);
+      
+    // Fix cases where we might have adjacent math blocks like $...$$...$
+    str = str.replace(/\$\$/g, '');
+    if ((str.match(/\$/g) || []).length % 2 !== 0) {
+       str += '$'; // Close if opened but not closed
+    }
+  }
+
   // Clean up LaTeX escapes if not in math mode
   if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[')) {
     str = str.replace(/\\%/g, '%').replace(/\\\$/g, '$');
