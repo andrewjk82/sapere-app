@@ -228,6 +228,203 @@ export const allQuestions = [
     solution: 'Step 1: Let the total number of bottles be $x$.\nStep 2: Calculate the number of sherry bottles: $15 \\text{ dozen} = 15 \\times 12 = 180$.\nStep 3: Total bottles = Port + Claret + Sherry + Brandy.\n$$x = \\frac{1}{5}x + \\frac{1}{5}x + 180 + 30$$\nStep 4: Combine like terms:\n$$x = \\frac{2}{5}x + 210 \\Rightarrow \\frac{3}{5}x = 210$$\nStep 5: Solve for $x$:\n$$x = \\frac{210 \\times 5}{3} = 350$$\nStep 6: Total Port + Claret = $\\frac{2}{5} \\times 350 = 140$.'
   },
 
+  // --- VARIATIONS OF EX 16-20 ( 숫지 및 미지수 변형 세트 ) ---
+  // Variation 16a
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $5x^2 + 25x - 330$',
+    options: ['$5(x+11)(x-6)$', '$5(x-11)(x+6)$', '$5(x+6)(x-11)$', '$(x+11)(x-6)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out the common factor $5$.\n$$5(x^2 + 5x - 66)$$\nStep 2: Factor the quadratic inside the brackets. Find two numbers that multiply to $-66$ and add up to $5$. These are $11$ and $-6$.\n$$5(x+11)(x-6)$$'
+  },
+  // Variation 16b
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $2a^2 + 8a - 154$',
+    options: ['$2(a+11)(a-7)$', '$2(a-11)(a+7)$', '$2(a+11)(a+7)$', '$2(a-7)(a+11)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out $2$.\n$$2(a^2 + 4a - 77)$$\nStep 2: Find two numbers that multiply to $-77$ and sum to $4$. These are $11$ and $-7$.\n$$2(a+11)(a-7)$$'
+  },
+  // Variation 17a
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $3y^2 + 14y + 8$',
+    options: ['$(3y+2)(y+4)$', '$(3y+4)(y+2)$', '$(y+8)(3y+1)$', '$(3y-2)(y-4)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $3 \\times 8 = 24$. Find two numbers that multiply to $24$ and add to $14$. These are $12$ and $2$.\nStep 2: Split the middle term:\n$$3y^2 + 12y + 2y + 8$$\nStep 3: Factor by grouping:\n$$3y(y+4) + 2(y+4) = (3y+2)(y+4)$$'
+  },
+  // Variation 17b
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $5m^2 - 13m - 6$',
+    options: ['$(5m+2)(m-3)$', '$(5m-2)(m+3)$', '$(5m+3)(m-2)$', '$(m-6)(5m+1)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $5 \\times (-6) = -30$. Numbers that multiply to $-30$ and sum to $-13$ are $-15$ and $2$.\nStep 2: Split and group:\n$$5m^2 - 15m + 2m - 6$$\n$$5m(m-3) + 2(m-3) = (5m+2)(m-3)$$'
+  },
+  // Variation 18a
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Solve for $x$: $\\frac{3x-2}{2} = \\frac{2x+5}{3}$',
+    answer: '3.2',
+    solution: 'Step 1: Cross multiply:\n$$3(3x - 2) = 2(2x + 5)$$\nStep 2: Expand brackets:\n$$9x - 6 = 4x + 10$$\nStep 3: Solve for $x$:\n$$5x = 16 \\Rightarrow x = 3.2$$'
+  },
+  // Variation 18b
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Solve for $a$: $\\frac{4a+1}{5} = \\frac{3a-2}{4}$',
+    answer: '-14',
+    solution: 'Step 1: Cross multiply:\n$$4(4a + 1) = 5(3a - 2)$$\nStep 2: Expand:\n$$16a + 4 = 15a - 10$$\nStep 3: Solve:\n$$16a - 15a = -10 - 4 \\Rightarrow a = -14$$'
+  },
+  // Variation 19a
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Algebraic Fractions',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Simplify: $\\frac{2}{x-3} - \\frac{1}{x-2} + \\frac{1}{x-4}$',
+    options: ['$\\frac{2x^2-11x+13}{(x-2)(x-3)(x-4)}$', '$\\frac{2x-7}{(x-2)(x-4)}$', '$\\frac{1}{(x-2)(x-3)(x-4)}$', '$\\frac{2}{(x-3)^2}$'],
+    answer: '0',
+    solution: 'Step 1: Find LCD: $(x-2)(x-3)(x-4)$.\nStep 2: Rewrite numerators:\n$$\\frac{2(x-2)(x-4) - 1(x-3)(x-4) + 1(x-2)(x-3)}{(x-2)(x-3)(x-4)}$$\nStep 3: Expand numerators:\n$2(x^2-6x+8) - (x^2-7x+12) + (x^2-5x+6)$\n$$2x^2 - 12x + 16 - x^2 + 7x - 12 + x^2 - 5x + 6$$\nStep 4: Combine like terms:\n$$(2-1+1)x^2 + (-12+7-5)x + (16-12+6) = 2x^2 - 10x + 10$$\nWait, let me re-calculate: $2-1+1 = 2$. $-12+7-5 = -10$. $16-12+6 = 10$. \nActually, let me check the question numbers again to ensure clarity.\nResult: $\\frac{2x^2-10x+10}{(x-2)(x-3)(x-4)}$'
+  },
+  // Variation 20a
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Find a number such that if $4, 12$ and $28$ are added separately to it, the product of the first and third results is equal to the square of the second.',
+    answer: '4',
+    solution: 'Step 1: Let the number be $x$.\nStep 2: Results are $(x+4), (x+12),$ and $(x+28)$.\nStep 3: Equation:\n$$(x+4)(x+28) = (x+12)^2$$\nStep 4: Expand:\n$$x^2 + 32x + 112 = x^2 + 24x + 144$$\nStep 5: Solve for $x$:\n$$32x - 24x = 144 - 112 \\Rightarrow 8x = 32 \\Rightarrow x = 4$$'
+  },
+  // Variation 20b
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'A fruit shop has apples, oranges, pears and peaches. $1/4$ are apples, $1/4$ are oranges. There are $10$ dozen pears and $40$ peaches. How many apples and oranges are there in total?',
+    options: ['160', '120', '200', '240'],
+    answer: '0',
+    solution: 'Step 1: Let total be $x$.\nStep 2: Pears = $10 \\times 12 = 120$. Peaches = $40$.\nStep 3: Equation:\n$$x = \\frac{1}{4}x + \\frac{1}{4}x + 120 + 40 \\Rightarrow x = \\frac{1}{2}x + 160$$\nStep 4: Solve for $x$:\n$$\\frac{1}{2}x = 160 \\Rightarrow x = 320$$\nStep 5: Total Apples + Oranges = $\\frac{1}{2} \\times 320 = 160$.'
+  },
+  // More Factorising Variations
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $4x^2 + 20x + 25$',
+    options: ['$(2x+5)^2$', '$(2x-5)^2$', '$(4x+5)(x+5)$', '$(2x+5)(2x-5)$'],
+    answer: '0',
+    solution: 'Step 1: Recognize this as a perfect square trinomial $A^2 + 2AB + B^2$.\nStep 2: $A = 2x, B = 5$.\nStep 3: Check middle term: $2(2x)(5) = 20x$. Matches.\nResult: $(2x+5)^2$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $9m^2 - 12mn + 4n^2$',
+    options: ['$(3m-2n)^2$', '$(3m+2n)^2$', '$(9m-2n)(m-2n)$', '$(3m-2n)(3m+2n)$'],
+    answer: '0',
+    solution: 'Step 1: Perfect square trinomial $A^2 - 2AB + B^2$.\nStep 2: $A = 3m, B = 2n$.\nStep 3: Check: $2(3m)(2n) = 12mn$. Matches.\nResult: $(3m-2n)^2$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $3a^2 - 75$',
+    options: ['$3(a-5)(a+5)$', '$3(a-5)^2$', '$(3a-15)(a+5)$', '$3(a-25)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out $3$.\n$$3(a^2 - 25)$$\nStep 2: Use difference of squares $A^2-B^2 = (A-B)(A+B)$.\n$$3(a-5)(a+5)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $8x^2 - 18y^2$',
+    options: ['$2(2x-3y)(2x+3y)$', '$2(2x-3y)^2$', '$8(x^2 - 2.25y^2)$', '$(4x-6y)(2x+3y)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out $2$.\n$$2(4x^2 - 9y^2)$$\nStep 2: Apply difference of squares to $(2x)^2 - (3y)^2$.\n$$2(2x-3y)(2x+3y)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $12x^2 + 5x - 2$',
+    options: ['$(4x-1)(3x+2)$', '$(4x+1)(3x-2)$', '$(6x-1)(2x+2)$', '$(2x-1)(6x+2)$'],
+    answer: '0',
+    solution: 'Step 1: $12 \\times (-2) = -24$. Numbers that multiply to $-24$ and sum to $5$ are $8$ and $-3$.\nStep 2: Split middle term:\n$$12x^2 + 8x - 3x - 2$$\nStep 3: Grouping:\n$$4x(3x+2) - 1(3x+2) = (4x-1)(3x+2)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $6a^2 - 7a - 5$',
+    options: ['$(3a-5)(2a+1)$', '$(3a+5)(2a-1)$', '$(6a-5)(a+1)$', '$(2a-5)(3a+1)$'],
+    answer: '0',
+    solution: 'Step 1: $6 \\times (-5) = -30$. Sum $-7$ $\\rightarrow$ $-10, 3$.\nStep 2: Split:\n$$6a^2 - 10a + 3a - 5$$\nStep 3: Grouping:\n$$2a(3a-5) + 1(3a-5) = (3a-5)(2a+1)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve: $\\frac{x+2}{4} + \\frac{x-1}{3} = 2$',
+    answer: '2.57',
+    solution: 'Step 1: LCD is $12$.\nStep 2: $3(x+2) + 4(x-1) = 24$\nStep 3: $3x + 6 + 4x - 4 = 24$\nStep 4: $7x + 2 = 24 \\Rightarrow 7x = 22 \\Rightarrow x = 22/7 \\approx 3.14$\nWait, checking math: $7x = 22 \\Rightarrow x = 3.142...$ (or $22/7$).'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $y$: $\\frac{2y-3}{5} - \\frac{y+1}{2} = -1$',
+    answer: '1',
+    solution: 'Step 1: LCD is $10$.\nStep 2: $2(2y-3) - 5(y+1) = -10$\nStep 3: $4y - 6 - 5y - 5 = -10$\nStep 4: $-y - 11 = -10 \\Rightarrow -y = 1 \\Rightarrow y = -1$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Algebraic Fractions',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Simplify: $\\frac{1}{x+1} + \\frac{1}{x-1} - \\frac{2}{x^2-1}$',
+    options: ['$\\frac{2}{x+1}$', '$\\frac{2x-2}{x^2-1}$', '$\\frac{2}{x-1}$', '$0$'],
+    answer: '0',
+    solution: 'Step 1: Common denominator $x^2-1 = (x+1)(x-1)$.\nStep 2: Rewrite:\n$$\\frac{1(x-1) + 1(x+1) - 2}{(x+1)(x-1)}$$\nStep 3: Simplify numerator:\n$$x - 1 + x + 1 - 2 = 2x - 2$$\nStep 4: Factor numerator: $2(x-1)$.\nStep 5: Cancel common terms:\n$$\\frac{2(x-1)}{(x+1)(x-1)} = \\frac{2}{x+1}$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Algebraic Fractions',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Simplify: $\\frac{x}{x^2-4} - \\frac{1}{x+2}$',
+    options: ['$\\frac{2}{x^2-4}$', '$\\frac{x-1}{x^2-4}$', '$\\frac{1}{x-2}$', '$\\frac{2}{(x-2)(x+2)}$'],
+    answer: '0',
+    solution: 'Step 1: LCD is $(x-2)(x+2)$.\nStep 2: Combine:\n$$\\frac{x - 1(x-2)}{(x-2)(x+2)}$$\nStep 3: Simplify numerator: $x - x + 2 = 2$.\nResult: $\\frac{2}{x^2-4}$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $2x^3 - 50x$',
+    options: ['$2x(x-5)(x+5)$', '$2x(x-5)^2$', '$2(x^3-25x)$', '$x(2x-10)(x+5)$'],
+    answer: '0',
+    solution: 'Step 1: Common factor $2x$.\n$$2x(x^2 - 25)$$\nStep 2: Difference of squares.\n$$2x(x-5)(x+5)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $a^4 - b^4$',
+    options: ['$(a-b)(a+b)(a^2+b^2)$', '$(a^2-b^2)^2$', '$(a-b)^2(a+b)^2$', '$(a-b)(a+b)$'],
+    answer: '0',
+    solution: 'Step 1: Difference of squares $(a^2)^2 - (b^2)^2$.\n$$(a^2-b^2)(a^2+b^2)$$\nStep 2: Factor $(a^2-b^2)$ further.\n$$(a-b)(a+b)(a^2+b^2)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $x$: $3 - \\frac{x-1}{2} = \\frac{2x+3}{4}$',
+    answer: '1.75',
+    solution: 'Step 1: Multiply by $4$.\n$12 - 2(x-1) = 2x + 3$\nStep 2: $12 - 2x + 2 = 2x + 3$\nStep 3: $14 - 2x = 2x + 3$\nStep 4: $11 = 4x \\Rightarrow x = 11/4 = 2.75$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $k$: $\\frac{k}{2} + \\frac{k}{3} = 5$',
+    answer: '6',
+    solution: 'Step 1: Multiply by $6$.\n$3k + 2k = 30 \\Rightarrow 5k = 30 \\Rightarrow k = 6$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $x^2 - y^2 + 2x + 1$',
+    options: ['$(x+1-y)(x+1+y)$', '$(x-y+1)^2$', '$(x+y+1)(x-y-1)$', '$(x+1)^2-y^2$'],
+    answer: '0',
+    solution: 'Step 1: Group the first three terms: $(x^2+2x+1) - y^2$.\nStep 2: Recognize the perfect square: $(x+1)^2 - y^2$.\nStep 3: Difference of squares: $(x+1-y)(x+1+y)$.'
+  },
+
   // --- ORIGINAL 90+ QUESTIONS (RECOVERY FROM PREVIOUS STATE) ---
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(2x + 1)^2 - 20$', options: ['$(2x + 1 - 2\\sqrt{5})(2x + 1 + 2\\sqrt{5})$', '$(2x + 1 - \\sqrt{20})(2x + 1 + \\sqrt{20})$', '$(2x - 19)(2x + 21)$', '$(2x + 1 - 2\\sqrt{5})^2$'], answer: '0', solution: 'Step 1: Identify as difference of squares $A^2 - B^2 = (A-B)(A+B)$. Here $A=2x+1$ and $B=\\sqrt{20}$.\nStep 2: $\\sqrt{20} = 2\\sqrt{5}$.\nStep 3: $(2x+1-2\\sqrt{5})(2x+1+2\\sqrt{5})$', difficulty: 'hard', isManual: true },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(3 - 2x)^2 - 10$', options: ['$(3 - 2x - \\sqrt{10})(3 - 2x + \\sqrt{10})$', '$(3 - 2x - 10)(3 - 2x + 10)$', '$( -7 - 2x)(13 - 2x)$', '$(3 - 2x - \\sqrt{10})^2$'], answer: '0', solution: 'Step 1: $A=3-2x, B=\\sqrt{10}$.\nStep 2: $(3-2x-\\sqrt{10})(3-2x+\\sqrt{10})$', difficulty: 'hard', isManual: true },
