@@ -228,6 +228,81 @@ export const allQuestions = [
     solution: 'Step 1: Let the total number of bottles be $x$.\nStep 2: Calculate the number of sherry bottles: $15 \\text{ dozen} = 15 \\times 12 = 180$.\nStep 3: Total bottles = Port + Claret + Sherry + Brandy.\n$$x = \\frac{1}{5}x + \\frac{1}{5}x + 180 + 30$$\nStep 4: Combine like terms:\n$$x = \\frac{2}{5}x + 210 \\Rightarrow \\frac{3}{5}x = 210$$\nStep 5: Solve for $x$:\n$$x = \\frac{210 \\times 5}{3} = 350$$\nStep 6: Total Port + Claret = $\\frac{2}{5} \\times 350 = 140$.'
   },
 
+
+  // --- NEW WORD PROBLEM VARIATIONS (FROM IMAGE 6, 7, 8) ---
+  // Variation 6a (Square Room)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'The width of a room is three-quarters its length. If the width were $4$ m more and the length $4$ m less, the room would be square. Find the length and width of the room.',
+    options: ['$L=32, W=24$', '$L=24, W=18$', '$L=40, W=30$', '$L=16, W=12$'],
+    answer: '0',
+    solution: 'Step 1: Let length be $L$ and width be $W$. Given $W = \\frac{3}{4}L$.\nStep 2: If width + 4 and length - 4 are equal (square):\n$$W + 4 = L - 4 \\Rightarrow L - W = 8$$\nStep 3: Substitute $W$:\n$$L - \\frac{3}{4}L = 8 \\Rightarrow \\frac{1}{4}L = 8 \\Rightarrow L = 32$$\nStep 4: Find $W$:\n$$W = \\frac{3}{4}(32) = 24$$\nResult: $L=32, W=24$'
+  },
+  // Variation 6b (Unaltered Area)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'The length of a room exceeds its width by $4$ m. If the length increased by $2$ m and the width diminished by $1$ m, the area would be unaltered. Find the length and width.',
+    options: ['$L=10, W=6$', '$L=12, W=8$', '$L=8, W=4$', '$L=14, W=10$'],
+    answer: '0',
+    solution: 'Step 1: Let width be $W$. Then length $L = W + 4$.\nStep 2: Area $A = L \\times W = (W+4)W$.\nStep 3: New dimensions: $L+2$ and $W-1$. New area equals old area:\n$$(L+2)(W-1) = LW \\Rightarrow (W+4+2)(W-1) = (W+4)W$$\n$$(W+6)(W-1) = W^2 + 4W$$\nStep 4: Expand:\n$$W^2 + 5W - 6 = W^2 + 4W$$\nStep 5: Solve:\n$$5W - 4W = 6 \\Rightarrow W = 6, L = 10$$\nResult: $L=10, W=6$'
+  },
+  // Variation 7a (Train and Bus Speed)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'A train travels $x$ km in $y$ hours at a constant speed, and is $k$ times as fast as a bus. If the bus takes $t$ hours to travel between two places, how many kilometres apart are they?',
+    options: ['$\\frac{xt}{yk}$', '$\\frac{xkt}{y}$', '$\\frac{xy}{kt}$', '$\\frac{xtk}{y}$'],
+    answer: '0',
+    solution: 'Step 1: Train speed $V_T = \\frac{x}{y}$ km/h.\nStep 2: Bus speed $V_B = \\frac{V_T}{k} = \\frac{x}{yk}$ km/h.\nStep 3: Distance $D = V_B \\times t = \\frac{x}{yk} \\times t = \\frac{xt}{yk}$.\nResult: $\\frac{xt}{yk}$'
+  },
+  // Variation 8a (Overtaking)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Sam is $d$ km west of Kim when they start walking east. Sam walks at $u$ km/h and Kim walks at $v$ km/h ($u > v$). How far will Sam have walked when he overtakes Kim?',
+    options: ['$\\frac{ud}{u-v}$', '$\\frac{vd}{u-v}$', '$\\frac{d}{u-v}$', '$\\frac{uv}{d}$'],
+    answer: '0',
+    solution: 'Step 1: Relative speed = $u - v$ km/h.\nStep 2: Time to catch up $T = \\frac{d}{u-v}$ hours.\nStep 3: Distance Sam walked = $u \\times T = \\frac{ud}{u-v}$ km.\nResult: $\\frac{ud}{u-v}$'
+  },
+  // Variation 6a-2 (Square Room)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'The width of a rectangular garden is half its length. If the width were increased by $5$ m and the length decreased by $5$ m, the garden would be square. Find the original dimensions.',
+    options: ['$L=20, W=10$', '$L=10, W=5$', '$L=30, W=15$', '$L=16, W=8$'],
+    answer: '0',
+    solution: 'Step 1: $W = 0.5L$.\nStep 2: $W + 5 = L - 5 \\Rightarrow L - W = 10$.\nStep 3: $L - 0.5L = 10 \\Rightarrow 0.5L = 10 \\Rightarrow L = 20$.\nStep 4: $W = 10$.\nResult: $L=20, W=10$'
+  },
+  // Variation 7b (Distance expression)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'A cyclist covers $10$ km in $h$ hours. A motorbike is $3$ times faster. How far does the motorbike travel in $m$ minutes?',
+    options: ['$\\frac{m}{2h}$', '$\\frac{30m}{h}$', '$\\frac{m}{h}$', '$\\frac{5m}{h}$'],
+    answer: '0',
+    solution: 'Step 1: Cyclist speed = $10/h$ km/h.\nStep 2: Motorbike speed = $3 \\times (10/h) = 30/h$ km/h.\nStep 3: Time in hours = $m/60$.\nStep 4: Distance = $(30/h) \\times (m/60) = \\frac{30m}{60h} = \\frac{m}{2h}$.\nResult: $\\frac{m}{2h}$'
+  },
+  // Variation 8b (Catching up)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Police car A is $500$ m behind suspect car B. A travels at $120$ km/h and B at $100$ km/h. How many minutes will it take for A to catch B?',
+    options: ['$1.5$ minutes', '$1$ minute', '$2$ minutes', '$3$ minutes'],
+    answer: '0',
+    solution: 'Step 1: Relative speed = $120 - 100 = 20$ km/h.\nStep 2: Distance = $0.5$ km.\nStep 3: Time $T = 0.5 / 20 = 0.025$ hours.\nStep 4: Convert to minutes: $0.025 \\times 60 = 1.5$ minutes.\nResult: $1.5$ minutes'
+  },
+  // Variation 6b-2 (Area Unaltered)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'The length of a rectangle is double its width. If length decreases by $5$ cm and width increases by $3$ cm, the area remains the same. Find the original width.',
+    options: ['$15$ cm', '$10$ cm', '$20$ cm', '$12$ cm'],
+    answer: '0',
+    solution: 'Step 1: $L = 2W$. Area $A = 2W^2$.\nStep 2: $(L-5)(W+3) = 2W^2 \\Rightarrow (2W-5)(W+3) = 2W^2$.\nStep 3: $2W^2 + 6W - 5W - 15 = 2W^2$.\nStep 4: $W - 15 = 0 \\Rightarrow W = 15$.\nResult: $15$ cm'
+  },
+
   // --- VARIATIONS OF EX 16-20 ( 숫지 및 미지수 변형 세트 ) ---
   // Variation 16a
   {

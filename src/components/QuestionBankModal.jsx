@@ -218,7 +218,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     const q = query(collection(db, 'questions'), where('chapterId', '==', chapter.id));
     const unsub = onSnapshot(q, (snap) => {
       const data = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      data.sort((a, b) => (a.createdAt?.seconds || 0) - (b.createdAt?.seconds || 0));
+      data.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
       setQuestions(data);
       setLoading(false);
     });

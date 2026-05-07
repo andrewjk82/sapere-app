@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
 import { importYear11Ch3Questions } from './scripts/importYear11Ch3';
+import { importYear10Ch3 } from './scripts/importYear10Ch3';
 import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
@@ -179,10 +180,26 @@ function App() {
   const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
   
   useEffect(() => {
-    if (isAdmin && user) {
-      importYear11Ch3Questions();
-    }
-  }, [isAdmin, user]);
+    const syncCurriculum = async () => {
+      if (isAdmin && user) {
+        try {
+          const count11 = await importYear11Ch3Questions();
+          const count10 = await importYear10Ch3();
+          
+          if (count11 > 0 || count10 > 0) {
+            showToast({
+              title: 'Curriculum Updated',
+              message: `Successfully added ${count10 + count11} new questions to the database.`,
+              type: 'success'
+            });
+          }
+        } catch (error) {
+          console.error('Sync error:', error);
+        }
+      }
+    };
+    syncCurriculum();
+  }, [isAdmin, user, showToast]);
   const { showToast } = useToast();
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');
