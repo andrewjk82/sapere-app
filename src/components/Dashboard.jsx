@@ -780,19 +780,17 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
                       {isSyncing ? 'Syncing...' : 'Sync Reminders'}
                     </button>
-                    {(isAdmin && (!importCh1Done || !importCh2Done || !importCh3Done)) && (
+                    {isAdmin && (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        {!importCh3Done && (
-                          <button 
-                            className="app-button app-button--secondary" 
-                            onClick={handleImportCh3}
-                            disabled={isImporting}
-                            style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #f59e0b', color: '#f59e0b', background: '#fffbeb' }}
-                          >
-                            <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
-                            {isImporting ? 'Importing Ch 3...' : 'Import Algebra Qs (Ch 3)'}
-                          </button>
-                        )}
+                        <button 
+                          className="app-button app-button--secondary" 
+                          onClick={handleImportCh3}
+                          disabled={isImporting}
+                          style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #f59e0b', color: '#f59e0b', background: '#fffbeb' }}
+                        >
+                          <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
+                          {isImporting ? 'Updating Ch 3...' : (importCh3Done ? 'Update Algebra Qs (Ch 3)' : 'Import Algebra Qs (Ch 3)')}
+                        </button>
 
                         {!importCh1Done && (
                           <button 
