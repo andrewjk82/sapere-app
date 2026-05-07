@@ -103,13 +103,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   };
 
   const toggleEraser = () => {
+    // Sync paths to state before entering eraser mode
+    setPaths(pathsRef.current);
+    
     if (activeTool !== 'eraser') {
       setActiveTool('eraser');
-      // Keep previous eraserMode or default to area
       if (eraserMode === 'area') canvasRef.current?.eraseMode(true);
       else canvasRef.current?.eraseMode(false);
     } else {
-      // Toggle between area and stroke
       const nextMode = eraserMode === 'area' ? 'stroke' : 'area';
       setEraserMode(nextMode);
       if (nextMode === 'area') canvasRef.current?.eraseMode(true);
@@ -117,9 +118,12 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     }
   };
 
+  const pathsRef = useRef([]); // Silent storage for performance
+
   const replacePaths = (nextPaths) => {
     canvasRef.current?.resetCanvas();
-    setPaths(nextPaths);
+    pathsRef.current = nextPaths;
+    setPaths(nextPaths); // Still keep state for eraser calculations
     syncCurrentPageToPages(nextPaths);
     window.requestAnimationFrame(() => {
       canvasRef.current?.loadPaths(nextPaths);
@@ -127,7 +131,12 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   };
 
   const handleCanvasChange = (nextPaths) => {
-    setPaths(nextPaths);
+    pathsRef.current = nextPaths;
+    // We only update the 'paths' state if we are in eraser mode
+    // to keep the eraser logic working while avoiding re-renders during drawing.
+    if (activeTool === 'eraser') {
+      setPaths(nextPaths);
+    }
   };
 
   // Sync pages when leaving current page
@@ -141,8 +150,14 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
   };
 
   const getCurrentPaths = async () => {
-    if (!canvasRef.current) return paths;
-    return await canvasRef.current.exportPaths().catch(() => paths);
+    if (!canvasRef.current) return pathsRef.current;
+    try {
+      const p = await canvasRef.current.exportPaths();
+      if (p) pathsRef.current = p;
+      return p || pathsRef.current;
+    } catch (e) {
+      return pathsRef.current;
+    }
   };
 
   const loadPage = (pageIndex, pageList = pages) => {
@@ -192,11 +207,12 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
     event.stopPropagation();
 
     const point = getCanvasPoint(event);
-    if (!point || paths.length === 0) return;
+    const currentPaths = pathsRef.current;
+    if (!point || currentPaths.length === 0) return;
 
     let bestIndex = -1;
     let bestDistance = Infinity;
-    paths.forEach((path, index) => {
+    currentPaths.forEach((path, index) => {
       if (!path?.drawMode || !Array.isArray(path.paths) || path.paths.length === 0) return;
       const points = path.paths;
       let pathDistance = Infinity;
@@ -217,7 +233,7 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
 
     const threshold = 24;
     if (bestIndex >= 0 && bestDistance <= threshold) {
-      replacePaths(paths.filter((_, index) => index !== bestIndex));
+      replacePaths(currentPaths.filter((_, index) => index !== bestIndex));
     }
   };
 
