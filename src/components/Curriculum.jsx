@@ -440,6 +440,15 @@ const Curriculum = () => {
                   )}
 
                   <button 
+                    onClick={handleSyncY10Ch3}
+                    disabled={isMigrating}
+                    className="app-button"
+                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1.5px solid #16a34a', fontWeight: 900 }}
+                  >
+                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3`}
+                  </button>
+
+                  <button 
                     onClick={handleSeedCurveQuestion}
                     disabled={isMigrating}
                     className="app-button"
