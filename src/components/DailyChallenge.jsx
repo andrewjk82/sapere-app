@@ -21,7 +21,7 @@ const CHALLENGE_CHAPTER_ID = 'y1-number';
 const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPTER_ID);
 const MAX_HISTORY_PER_TYPE = 7;
 
-const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', '÷', '×', '(', ')', '/', '-'];
+const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', '÷', '×', '(', ')', '/', '-', '.'];
 
 const getAssignedChapters = (profile, assignedYear) => {
   if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
@@ -2210,6 +2210,36 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                         {symbol}
                       </button>
                     ))}
+                    {/* Backspace Button */}
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const currentVal = selectedOption || '';
+                        setSelectedOption(currentVal.slice(0, -1));
+                      }}
+                      disabled={step === 'feedback'}
+                      style={{
+                        width: '64px',
+                        height: '44px',
+                        borderRadius: '12px',
+                        border: '1px solid #fee2e2',
+                        background: '#fff1f2',
+                        color: '#e11d48',
+                        fontSize: '0.8rem',
+                        fontWeight: 900,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
+                        transition: 'all 0.2s',
+                        textTransform: 'uppercase'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = '#ffe4e6'}
+                      onMouseLeave={(e) => e.currentTarget.style.background = '#fff1f2'}
+                    >
+                      Del
+                    </button>
                   </div>
 
                   <input 
