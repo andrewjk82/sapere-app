@@ -1,7 +1,7 @@
 import { db } from '../firebase/config.js';
 import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
 
-const allQuestions = [
+export const allQuestions = [
   // --- TOPIC 2A: IRRATIONAL NUMBERS AND SURDS ---
   {
     chapterId: 'y10-2',

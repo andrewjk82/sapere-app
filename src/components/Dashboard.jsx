@@ -102,115 +102,30 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
       }
     } catch (e) {
       showToast('Sync failed: ' + e.message, 'error');
-    } finally {
-      setIsSyncing(false);
     }
   };
 
-  const [importCh1Done, setImportCh1Done] = useState(false);
-  const [importCh2Done, setImportCh2Done] = useState(false);
-  const [importCh3Done, setImportCh3Done] = useState(false);
+  const [isImporting, setIsImporting] = useState(false);
 
-  // Check for existing questions on mount to keep buttons hidden if already imported
+  // Auto-sync curriculum for admins on mount
   useEffect(() => {
     if (!isAdmin || !user) return;
     
-    const checkExisting = async () => {
+    const runAutoSync = async () => {
       try {
-        const { collection, query, where, limit, getDocs } = await import('firebase/firestore');
-        const qRef = collection(db, 'questions');
-        
-        // Check Chapter 1
-        const q1 = query(qRef, where('chapterId', '==', 'y10-1'), limit(1));
-        const s1 = await getDocs(q1);
-        if (!s1.empty) setImportCh1Done(true);
-        
-        // Check Chapter 2
-        const q2 = query(qRef, where('chapterId', '==', 'y10-2'), limit(1));
-        const s2 = await getDocs(q2);
-        if (!s2.empty) setImportCh2Done(true);
-
-        // Check Chapter 3 - Require at least 85 questions to consider it "done"
-        const q3 = query(qRef, where('chapterId', '==', 'y10-3'));
-        const s3 = await getDocs(q3);
-        if (s3.size >= 85) setImportCh3Done(true);
-        else setImportCh3Done(false);
+        setIsImporting(true);
+        const { performAutoSync } = await import('../services/AutoSyncService');
+        await performAutoSync(showToast);
       } catch (err) {
-        console.error('Error checking existing questions:', err);
+        console.error('Auto-sync failed:', err);
+      } finally {
+        setIsImporting(false);
       }
     };
     
-    checkExisting();
-  }, [isAdmin, user]);
+    runAutoSync();
+  }, [isAdmin, user, showToast]);
 
-  const handleImportQuestions = async () => {
-    console.log('Import Ch 1 button clicked');
-    setIsImporting(true);
-    try {
-      showToast('Starting Chapter 1 import...', 'info');
-      const module = await import('../scripts/importYear10Ch1_Ultimate.js');
-      const { importAllYear10Extra } = module;
-      const count = await importAllYear10Extra();
-      
-      if (count > 0) {
-        showToast(`Successfully imported ${count} new Ch 1 questions!`, 'success');
-      } else {
-        showToast('Ch 1 questions are already up to date.', 'info');
-      }
-      setImportCh1Done(true);
-    } catch (err) {
-      console.error('CRITICAL: Ch 1 Import failed:', err);
-      showToast('Ch 1 Import failed', 'error');
-    } finally {
-      setIsImporting(false);
-    }
-  };
-
-  const handleImportSurds = async () => {
-    console.log('Import Ch 2 (Surds) button clicked');
-    setIsImporting(true);
-    try {
-      showToast('Starting Surds (Ch 2) import...', 'info');
-      const module = await import('../scripts/importYear10Ch2_Ultimate.js');
-      const { importYear10Ch2Ultimate } = module;
-      const count = await importYear10Ch2Ultimate();
-      
-      if (count > 0) {
-        showToast(`Successfully imported ${count} new Surds questions!`, 'success');
-      } else {
-        showToast('Surds questions are already up to date.', 'info');
-      }
-      setImportCh2Done(true);
-    } catch (err) {
-      console.error('CRITICAL: Ch 2 Import failed:', err);
-      showToast('Ch 2 Import failed', 'error');
-    } finally {
-      setIsImporting(false);
-    }
-  };
-
-  const handleImportCh3 = async () => {
-    console.log('Import Ch 3 button clicked');
-    setIsImporting(true);
-    try {
-      showToast('Starting Algebra (Ch 3) import...', 'info');
-      const module = await import('../scripts/importYear10Ch3.js');
-      const { importYear10Ch3 } = module;
-      const count = await importYear10Ch3();
-      
-      if (count > 0) {
-        showToast(`Successfully imported ${count} new Algebra questions!`, 'success');
-      } else {
-        showToast('Algebra questions are already up to date.', 'info');
-      }
-      setImportCh3Done(true);
-    } catch (err) {
-      console.error('CRITICAL: Ch 3 Import failed:', err);
-      showToast('Ch 3 Import failed', 'error');
-    } finally {
-      setIsImporting(false);
-    }
-  };
 
   // ── Handle Resize ──
   useEffect(() => {
@@ -781,41 +696,10 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
                       {isSyncing ? 'Syncing...' : 'Sync Reminders'}
                     </button>
-                    {isAdmin && (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        <button 
-                          className="app-button app-button--secondary" 
-                          onClick={handleImportCh3}
-                          disabled={isImporting}
-                          style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #f59e0b', color: '#f59e0b', background: '#fffbeb' }}
-                        >
-                          <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
-                          {isImporting ? 'Updating Ch 3...' : (importCh3Done ? 'Update Algebra Qs (Ch 3)' : 'Import Algebra Qs (Ch 3)')}
-                        </button>
-
-                        {!importCh1Done && (
-                          <button 
-                            className="app-button app-button--secondary" 
-                            onClick={handleImportQuestions}
-                            disabled={isImporting}
-                            style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #6366f1', color: '#6366f1' }}
-                          >
-                            <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
-                            {isImporting ? 'Syncing Ch 1...' : 'Import Year 10 Ch 1 Qs'}
-                          </button>
-                        )}
-                        
-                        {!importCh2Done && (
-                          <button 
-                            className="app-button app-button--secondary" 
-                            onClick={handleImportSurds}
-                            disabled={isImporting}
-                            style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #10b981', color: '#10b981' }}
-                          >
-                            <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
-                            {isImporting ? 'Syncing Ch 2...' : 'Import Surds Qs (Ch 2)'}
-                          </button>
-                        )}
+                    {isAdmin && isImporting && (
+                      <div style={{ padding: '10px', borderRadius: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
+                        <Plus size={16} className="animate-spin" color="#6366f1" />
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1' }}>Syncing curriculum...</span>
                       </div>
                     )}
                   </div>

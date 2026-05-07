@@ -1,7 +1,7 @@
 import { db } from '../firebase/config.js';
 import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
 
-const allQuestions = [
+export const allQuestions = [
   // SECTION 1: Simplify (1a-d)
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Collecting like terms', year: 'Year 10', type: 'short_answer', question: 'Simplify: $4x + 9x$', answer: '13x', solution: 'Step 1: Both are like terms with $x$.\nStep 2: $4 + 9 = 13$.\nResult: $13x$', difficulty: 'easy', isManual: true },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Collecting like terms', year: 'Year 10', type: 'short_answer', question: 'Simplify: $5p^3q - 9p^3q + 11p^3q$', answer: '7p^3q', solution: '$5 - 9 + 11 = 7$.\nResult: $7p^3q$', difficulty: 'medium', isManual: true },
