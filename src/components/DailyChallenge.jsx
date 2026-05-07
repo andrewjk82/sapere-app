@@ -2144,7 +2144,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 </div>
                 <MathView 
                   content={questions[currentIdx]?.question} 
-                  style={{ fontSize: '1.25rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.4, margin: 0 }} 
+                  style={{ fontSize: '1.15rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5, margin: 0 }} 
                 />
                 
                 <AnimatePresence>

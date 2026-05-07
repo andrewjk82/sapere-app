@@ -62,9 +62,8 @@ const MathView = ({ content, style }) => {
   }, [safeContent]);
 
   const combinedStyle = {
-    fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-    letterSpacing: '0.02em',
-    fontWeight: 'normal',
+    letterSpacing: '0.01em',
+    fontWeight: 'inherit',
     ...style
   };
 
