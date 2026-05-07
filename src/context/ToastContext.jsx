@@ -8,7 +8,10 @@ export const ToastProvider = ({ children }) => {
   const [toast, setToast] = useState(null);
 
   const showToast = useCallback((message, type = 'success', duration = 3000) => {
-    setToast({ message, type, duration });
+    setToast(null); // Clear previous to reset animation/timer
+    setTimeout(() => {
+      setToast({ message, type, duration });
+    }, 10);
   }, []);
 
   const hideToast = useCallback(() => {

@@ -52,6 +52,7 @@ const Toast = ({ message, type = 'success', onClose, duration = 3000 }) => {
         style={{
           background: 'white',
           padding: '24px 40px',
+          paddingRight: '60px', // Space for close button
           borderRadius: '24px',
           boxShadow: '0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05)',
           display: 'flex',
@@ -59,9 +60,33 @@ const Toast = ({ message, type = 'success', onClose, duration = 3000 }) => {
           gap: '16px',
           pointerEvents: 'auto',
           borderBottom: `4px solid ${borderColors[type]}`,
-          maxWidth: '90vw'
+          maxWidth: '90vw',
+          position: 'relative'
         }}
       >
+        <button 
+          onClick={onClose}
+          style={{
+            position: 'absolute',
+            top: '16px',
+            right: '16px',
+            background: 'none',
+            border: 'none',
+            color: '#94a3b8',
+            cursor: 'pointer',
+            padding: '4px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius: '50%',
+            transition: 'background 0.2s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.background = '#f1f5f9'}
+          onMouseLeave={(e) => e.currentTarget.style.background = 'none'}
+        >
+          <XCircle size={20} />
+        </button>
+
         <div style={{ 
           width: '48px', 
           height: '48px', 

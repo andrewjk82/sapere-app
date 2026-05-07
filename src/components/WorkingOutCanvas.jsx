@@ -45,6 +45,30 @@ const WorkingOutCanvas = forwardRef(({ questionType, isSubmitted }, ref) => {
       }
       return null;
     },
+    exportPageImages: async () => {
+      if (!canvasRef.current) return [];
+
+      const currentPaths = await canvasRef.current.exportPaths().catch(() => paths);
+      const pageList = [...pages];
+      pageList[currentPage] = currentPaths;
+      const exportedPages = [];
+
+      for (const pagePaths of pageList) {
+        canvasRef.current.resetCanvas();
+        await new Promise(resolve => window.requestAnimationFrame(resolve));
+        canvasRef.current.loadPaths(pagePaths || []);
+        await new Promise(resolve => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
+        exportedPages.push(await canvasRef.current.exportImage('png'));
+      }
+
+      canvasRef.current.resetCanvas();
+      await new Promise(resolve => window.requestAnimationFrame(resolve));
+      canvasRef.current.loadPaths(currentPaths || []);
+      setPages(pageList);
+      setPaths(currentPaths || []);
+
+      return exportedPages;
+    },
     exportPaths: async () => {
       if (canvasRef.current) {
         const currentPaths = await canvasRef.current.exportPaths();

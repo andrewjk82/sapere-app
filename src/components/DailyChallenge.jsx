@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  ChevronLeft, Clock, CheckCircle2, XCircle, 
+  ChevronLeft, ChevronRight, Clock, CheckCircle2, XCircle, 
   Trophy,
   Lightbulb, BookOpen, X, Check, Flag
 } from 'lucide-react';
@@ -129,6 +129,13 @@ const formatHistoryDate = (item) => {
   if (item?.dateLabel) return item.dateLabel;
   const date = toDate(item?.timestamp || item?.completedAt || item?.createdAt || item?.id);
   return date ? date.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }) : 'Completed test';
+};
+
+const getWorkingOutPages = (result) => {
+  if (Array.isArray(result?.workingOutPages) && result.workingOutPages.length > 0) {
+    return result.workingOutPages.filter(Boolean);
+  }
+  return result?.workingOut ? [result.workingOut] : [];
 };
 
 const getHistorySortTime = (item) => {
@@ -328,6 +335,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [reportMessage, setReportMessage] = useState('');
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
+  const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const [showHint, setShowHint] = useState(false);
   const [autoTransitionTimer, setAutoTransitionTimer] = useState(null);
   const canvasRef = useRef(null);
@@ -1123,11 +1131,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     
     let correct = false;
     let canvasDataUrl = null;
+    let canvasPageImages = [];
 
     // Capture canvas for ANY question if split screen is active (Senior Students)
     if (showSplitScreen && canvasRef.current) {
       try {
-        canvasDataUrl = await canvasRef.current.exportImage();
+        canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
+        canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
       } catch (err) {
         console.error("Failed to export working out image", err);
       }
@@ -1137,7 +1147,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setIsSubmittingCanvas(true);
       // If not already captured by showSplitScreen check
       if (!canvasDataUrl && canvasRef.current) {
-        try { canvasDataUrl = await canvasRef.current.exportImage(); } catch(e){}
+        try {
+          canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
+          canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
+        } catch(e){}
       }
       correct = false; // Pending review
     } else if (isShortAnswer) {
@@ -1159,6 +1172,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           questionId: currentQ?.id || null,
           questionText: currentQ?.question || currentQ?.text || '',
           answerImage: canvasDataUrl || null,
+          answerImages: canvasPageImages || [],
           answerText: !canvasDataUrl ? (typeof optionText === 'string' ? optionText : '') : null,
           status: 'pending',
           submittedAt: serverTimestamp(),
@@ -1224,6 +1238,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         isPending: isGraphSketch,
         isManual: Boolean(currentQ?.isManual),
         workingOut: canvasDataUrl, // Store the handwritten work
+        workingOutPages: canvasPageImages,
       };
       return newResults;
     });
@@ -1498,6 +1513,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           ? result.correct
                           : String(userAnswer) === String(q.answer);
                         const questionText = toDisplayText(q.text || q.question, 'Question text unavailable');
+                        const workingOutPages = getWorkingOutPages(result);
                         return (
                           <div key={idx} style={{ padding: '20px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', position: 'relative' }}>
                             {q.isManual && (
@@ -1517,10 +1533,20 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                             </div>
 
                             {/* Display Working Out / Handwritten notes */}
-                            {result?.workingOut && (
+                            {workingOutPages.length > 0 && (
                               <div style={{ marginBottom: '16px', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff' }}>
-                                <div style={{ padding: '8px 12px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Working Out</div>
-                                <img src={result.workingOut} alt="Student Working Out" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#fff' }} />
+                                <button
+                                  onClick={() => setWorkingOutPreview({ pages: workingOutPages, page: 0, title: `Question ${idx + 1} Working Out` })}
+                                  style={{ width: '100%', padding: '8px 12px', background: '#f8fafc', border: 'none', borderBottom: '1px solid #e2e8f0', fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.05em', textAlign: 'left', cursor: 'pointer' }}
+                                >
+                                  Working Out {workingOutPages.length > 1 ? `• ${workingOutPages.length} pages` : '• Click to enlarge'}
+                                </button>
+                                <button
+                                  onClick={() => setWorkingOutPreview({ pages: workingOutPages, page: 0, title: `Question ${idx + 1} Working Out` })}
+                                  style={{ width: '100%', border: 'none', padding: 0, background: '#fff', cursor: 'zoom-in' }}
+                                >
+                                  <img src={workingOutPages[0]} alt="Student Working Out" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', background: '#fff', display: 'block' }} />
+                                </button>
                               </div>
                             )}
                             {getOptions(q).length === 0 ? (

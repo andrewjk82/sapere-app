@@ -110,6 +110,32 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const [importCh1Done, setImportCh1Done] = useState(false);
   const [importCh2Done, setImportCh2Done] = useState(false);
 
+  // Check for existing questions on mount to keep buttons hidden if already imported
+  useEffect(() => {
+    if (!isAdmin || !user) return;
+    
+    const checkExisting = async () => {
+      try {
+        const { collection, query, where, limit, getDocs } = await import('firebase/firestore');
+        const qRef = collection(db, 'questions');
+        
+        // Check Chapter 1
+        const q1 = query(qRef, where('chapterId', '==', 'y10-1'), limit(1));
+        const s1 = await getDocs(q1);
+        if (!s1.empty) setImportCh1Done(true);
+        
+        // Check Chapter 2
+        const q2 = query(qRef, where('chapterId', '==', 'y10-2'), limit(1));
+        const s2 = await getDocs(q2);
+        if (!s2.empty) setImportCh2Done(true);
+      } catch (err) {
+        console.error('Error checking existing questions:', err);
+      }
+    };
+    
+    checkExisting();
+  }, [isAdmin, user]);
+
   const handleImportQuestions = async () => {
     console.log('Import Ch 1 button clicked');
     setIsImporting(true);
