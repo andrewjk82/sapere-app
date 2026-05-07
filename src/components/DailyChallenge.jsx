@@ -21,6 +21,8 @@ const CHALLENGE_CHAPTER_ID = 'y1-number';
 const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPTER_ID);
 const MAX_HISTORY_PER_TYPE = 7;
 
+const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', '÷', '×', '(', ')', '/', '-'];
+
 const getAssignedChapters = (profile, assignedYear) => {
   if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
     return profile.assignedChapters;
@@ -1154,7 +1156,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
       correct = false; // Pending review
     } else if (isShortAnswer) {
-      correct = optionText?.trim().toLowerCase() === currentQ.answer?.trim().toLowerCase();
+      const normalizedInput = (optionText || '').replace(/\s+/g, '').toLowerCase();
+      const normalizedAnswer = (currentQ.answer || '').replace(/\s+/g, '').toLowerCase();
+      correct = normalizedInput === normalizedAnswer;
     } else {
       if (optIdx !== null && currentQ.isManual && currentQ.answer === optIdx.toString()) {
         correct = true;
@@ -1619,6 +1623,53 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     <p style={{ margin: '8px 0 0', fontSize: '0.9rem' }}>This challenge was completed before detailed tracking was enabled.</p>
                   </div>
                 )}
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {workingOutPreview && (
+            <div style={{ position: 'fixed', inset: 0, zIndex: 100000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+              <motion.div
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                onClick={() => setWorkingOutPreview(null)}
+                style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.88)', backdropFilter: 'blur(10px)' }}
+              />
+              <motion.div
+                initial={{ scale: 0.96, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.96, opacity: 0 }}
+                style={{ position: 'relative', width: 'min(94vw, 1100px)', height: 'min(88vh, 820px)', background: '#fff', borderRadius: '24px', overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 30px 80px rgba(0,0,0,0.25)' }}
+              >
+                <div style={{ padding: '14px 18px', borderBottom: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', background: '#f8fafc' }}>
+                  <div style={{ fontWeight: 900, color: '#1e293b' }}>
+                    {workingOutPreview.title} <span style={{ color: '#64748b', fontWeight: 800 }}>• Page {workingOutPreview.page + 1}/{workingOutPreview.pages.length}</span>
+                  </div>
+                  <button onClick={() => setWorkingOutPreview(null)} style={{ border: 'none', background: '#e2e8f0', width: '36px', height: '36px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#475569' }}>
+                    <X size={20} />
+                  </button>
+                </div>
+                <div style={{ flex: 1, minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f1f5f9', position: 'relative', padding: '16px' }}>
+                  {workingOutPreview.pages.length > 1 && (
+                    <button
+                      onClick={() => setWorkingOutPreview(prev => ({ ...prev, page: Math.max(0, prev.page - 1) }))}
+                      disabled={workingOutPreview.page === 0}
+                      style={{ position: 'absolute', left: '16px', zIndex: 2, width: '44px', height: '44px', borderRadius: '50%', border: 'none', background: workingOutPreview.page === 0 ? '#e2e8f0' : '#fff', color: workingOutPreview.page === 0 ? '#94a3b8' : '#4f46e5', boxShadow: '0 10px 24px rgba(15,23,42,0.12)', cursor: workingOutPreview.page === 0 ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    >
+                      <ChevronLeft size={24} />
+                    </button>
+                  )}
+                  <img src={workingOutPreview.pages[workingOutPreview.page]} alt="Working out page" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', background: '#fff', borderRadius: '16px', boxShadow: '0 18px 48px rgba(15,23,42,0.14)' }} />
+                  {workingOutPreview.pages.length > 1 && (
+                    <button
+                      onClick={() => setWorkingOutPreview(prev => ({ ...prev, page: Math.min(prev.pages.length - 1, prev.page + 1) }))}
+                      disabled={workingOutPreview.page === workingOutPreview.pages.length - 1}
+                      style={{ position: 'absolute', right: '16px', zIndex: 2, width: '44px', height: '44px', borderRadius: '50%', border: 'none', background: workingOutPreview.page === workingOutPreview.pages.length - 1 ? '#e2e8f0' : '#fff', color: workingOutPreview.page === workingOutPreview.pages.length - 1 ? '#94a3b8' : '#4f46e5', boxShadow: '0 10px 24px rgba(15,23,42,0.12)', cursor: workingOutPreview.page === workingOutPreview.pages.length - 1 ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    >
+                      <ChevronRight size={24} />
+                    </button>
+                  )}
+                </div>
               </motion.div>
             </div>
           )}
@@ -2122,6 +2173,41 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
               {questions[currentIdx]?.type === 'short_answer' ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {/* Math Symbol Toolbar */}
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
+                    {MATH_SYMBOLS.map(symbol => (
+                      <button
+                        key={symbol}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          const currentVal = selectedOption || '';
+                          setSelectedOption(currentVal + symbol);
+                        }}
+                        disabled={step === 'feedback'}
+                        style={{
+                          width: '40px',
+                          height: '40px',
+                          borderRadius: '10px',
+                          border: '1px solid #e2e8f0',
+                          background: '#fff',
+                          color: '#4f46e5',
+                          fontSize: '1.1rem',
+                          fontWeight: 800,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                          boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
+                          transition: 'all 0.2s'
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = '#f5f3ff'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = '#fff'}
+                      >
+                        {symbol}
+                      </button>
+                    ))}
+                  </div>
+
                   <input 
                     type="text"
                     disabled={step === 'feedback'}
@@ -2129,8 +2215,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     onChange={(e) => step !== 'feedback' && setSelectedOption(e.target.value)}
                     placeholder="Type your answer..."
                     className="app-input"
-                    style={{ fontSize: '1.1rem', padding: '20px', borderRadius: '20px', textAlign: 'center' }}
+                    style={{ fontSize: '1.2rem', padding: '20px', borderRadius: '20px', textAlign: 'center', fontWeight: 700 }}
                     onKeyDown={(e) => e.key === 'Enter' && selectedOption && handleAnswer(selectedOption)}
+                    autoFocus
                   />
                   {step !== 'feedback' && (
                     <button 

@@ -98,6 +98,42 @@ body {
   white-space: pre;
 }
 
+.opening-intro__concept {
+  position: absolute;
+  bottom: calc(50% - 80px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(13px, 1.6vw, 17px);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #d4a853;
+  opacity: 0.85;
+  white-space: nowrap;
+  max-width: calc(100vw - 48px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.opening-intro__cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #d4a853;
+  border-radius: 1px;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: intro-cursor-blink 0.9s step-end infinite;
+}
+
+@keyframes intro-cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 @media (max-width: 640px) {
   .opening-intro__text {
     max-width: calc(100% - 40px);
@@ -107,7 +143,13 @@ body {
   .opening-intro__text--single {
     font-size: clamp(30px, 7.2vw, 42px);
   }
+
+  .opening-intro__concept {
+    font-size: clamp(11px, 3.2vw, 14px);
+    bottom: calc(50% - 70px);
+  }
 }
+
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);

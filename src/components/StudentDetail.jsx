@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TIME_OPTIONS } from "../constants/timeOptions";
 import {
   ChevronLeft,
+  ChevronRight,
   Calendar,
   BookOpen,
   MessageSquare,
@@ -56,6 +57,13 @@ const getChallengeOptionImage = (option) => {
   return option.imageUrl || option.image || "";
 };
 
+const getWorkingOutPages = (result) => {
+  if (Array.isArray(result?.workingOutPages) && result.workingOutPages.length > 0) {
+    return result.workingOutPages.filter(Boolean);
+  }
+  return result?.workingOut ? [result.workingOut] : [];
+};
+
 const toJsDate = (value) => {
   if (!value) return null;
   if (value instanceof Date) return value;
@@ -96,6 +104,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [sendingMessage, setSendingMessage] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [selectedChallenge, setSelectedChallenge] = useState(null);
+  const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const { showToast } = useToast();
   const [dailyYearsOpen, setDailyYearsOpen] = useState(false);
 
@@ -3165,42 +3174,79 @@ const StudentDetail = ({ studentId, onBack }) => {
                         </div>
 
                         {/* Display Working Out / Handwritten notes */}
-                        {result?.workingOut && (
-                          <div
-                            style={{
-                              marginBottom: "16px",
-                              borderRadius: "16px",
-                              overflow: "hidden",
-                              border: "1px solid #e2e8f0",
-                              background: "#fff",
-                            }}
-                          >
+                        {(() => {
+                          const workingOutPages = getWorkingOutPages(result);
+                          if (workingOutPages.length === 0) return null;
+                          return (
                             <div
                               style={{
-                                padding: "8px 12px",
-                                background: "#f8fafc",
-                                borderBottom: "1px solid #e2e8f0",
-                                fontSize: "0.7rem",
-                                fontWeight: 800,
-                                color: "#94a3b8",
-                                textTransform: "uppercase",
-                                letterSpacing: "0.05em",
-                              }}
-                            >
-                              Working Out
-                            </div>
-                            <img
-                              src={result.workingOut}
-                              alt="Student Working Out"
-                              style={{
-                                width: "100%",
-                                maxHeight: "400px",
-                                objectFit: "contain",
+                                marginBottom: "16px",
+                                borderRadius: "16px",
+                                overflow: "hidden",
+                                border: "1px solid #e2e8f0",
                                 background: "#fff",
                               }}
-                            />
-                          </div>
-                        )}
+                            >
+                              <button
+                                onClick={() =>
+                                  setWorkingOutPreview({
+                                    pages: workingOutPages,
+                                    page: 0,
+                                    title: `Question ${idx + 1} Working Out`,
+                                  })
+                                }
+                                style={{
+                                  width: "100%",
+                                  padding: "8px 12px",
+                                  background: "#f8fafc",
+                                  border: "none",
+                                  borderBottom: "1px solid #e2e8f0",
+                                  fontSize: "0.7rem",
+                                  fontWeight: 800,
+                                  color: "#6366f1",
+                                  textTransform: "uppercase",
+                                  letterSpacing: "0.05em",
+                                  textAlign: "left",
+                                  cursor: "pointer",
+                                }}
+                              >
+                                Working Out{" "}
+                                {workingOutPages.length > 1
+                                  ? `• ${workingOutPages.length} pages`
+                                  : "• Click to enlarge"}
+                              </button>
+                              <button
+                                onClick={() =>
+                                  setWorkingOutPreview({
+                                    pages: workingOutPages,
+                                    page: 0,
+                                    title: `Question ${idx + 1} Working Out`,
+                                  })
+                                }
+                                style={{
+                                  width: "100%",
+                                  border: "none",
+                                  padding: 0,
+                                  background: "#fff",
+                                  cursor: "zoom-in",
+                                }}
+                              >
+                                <img
+                                  src={workingOutPages[0]}
+                                  alt="Student Working Out"
+                                  style={{
+                                    width: "100%",
+                                    maxHeight: "400px",
+                                    objectFit: "contain",
+                                    background: "#fff",
+                                    display: "block",
+                                  }}
+                                />
+                              </button>
+                            </div>
+                          );
+                        })()}
+
                         {q.questionImage && (
                           <img
                             src={q.questionImage}
@@ -3378,6 +3424,194 @@ const StudentDetail = ({ studentId, onBack }) => {
             </motion.div>
           </div>
         )}
+
+        <AnimatePresence>
+          {workingOutPreview && (
+            <div
+              style={{
+                position: "fixed",
+                inset: 0,
+                zIndex: 100000,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "20px",
+              }}
+            >
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setWorkingOutPreview(null)}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background: "rgba(15,23,42,0.88)",
+                  backdropFilter: "blur(10px)",
+                }}
+              />
+              <motion.div
+                initial={{ scale: 0.96, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.96, opacity: 0 }}
+                style={{
+                  position: "relative",
+                  width: "min(94vw, 1100px)",
+                  height: "min(88vh, 820px)",
+                  background: "#fff",
+                  borderRadius: "24px",
+                  overflow: "hidden",
+                  display: "flex",
+                  flexDirection: "column",
+                  boxShadow: "0 30px 80px rgba(0,0,0,0.25)",
+                }}
+              >
+                <div
+                  style={{
+                    padding: "14px 18px",
+                    borderBottom: "1px solid #e2e8f0",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: "12px",
+                    background: "#f8fafc",
+                  }}
+                >
+                  <div style={{ fontWeight: 900, color: "#1e293b" }}>
+                    {workingOutPreview.title}{" "}
+                    <span style={{ color: "#64748b", fontWeight: 800 }}>
+                      • Page {workingOutPreview.page + 1}/
+                      {workingOutPreview.pages.length}
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => setWorkingOutPreview(null)}
+                    style={{
+                      border: "none",
+                      background: "#e2e8f0",
+                      width: "36px",
+                      height: "36px",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      cursor: "pointer",
+                      color: "#475569",
+                    }}
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+                <div
+                  style={{
+                    flex: 1,
+                    minHeight: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    background: "#f1f5f9",
+                    position: "relative",
+                    padding: "16px",
+                  }}
+                >
+                  {workingOutPreview.pages.length > 1 && (
+                    <button
+                      onClick={() =>
+                        setWorkingOutPreview((prev) => ({
+                          ...prev,
+                          page: Math.max(0, prev.page - 1),
+                        }))
+                      }
+                      disabled={workingOutPreview.page === 0}
+                      style={{
+                        position: "absolute",
+                        left: "16px",
+                        zIndex: 2,
+                        width: "44px",
+                        height: "44px",
+                        borderRadius: "50%",
+                        border: "none",
+                        background:
+                          workingOutPreview.page === 0 ? "#e2e8f0" : "#fff",
+                        color:
+                          workingOutPreview.page === 0 ? "#94a3b8" : "#4f46e5",
+                        boxShadow: "0 10px 24px rgba(15,23,42,0.12)",
+                        cursor:
+                          workingOutPreview.page === 0
+                            ? "not-allowed"
+                            : "pointer",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <ChevronLeft size={24} />
+                    </button>
+                  )}
+                  <img
+                    src={workingOutPreview.pages[workingOutPreview.page]}
+                    alt="Working out page"
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                      objectFit: "contain",
+                      background: "#fff",
+                      borderRadius: "16px",
+                      boxShadow: "0 18px 48px rgba(15,23,42,0.14)",
+                    }}
+                  />
+                  {workingOutPreview.pages.length > 1 && (
+                    <button
+                      onClick={() =>
+                        setWorkingOutPreview((prev) => ({
+                          ...prev,
+                          page: Math.min(
+                            prev.pages.length - 1,
+                            prev.page + 1,
+                          ),
+                        }))
+                      }
+                      disabled={
+                        workingOutPreview.page ===
+                        workingOutPreview.pages.length - 1
+                      }
+                      style={{
+                        position: "absolute",
+                        right: "16px",
+                        zIndex: 2,
+                        width: "44px",
+                        height: "44px",
+                        borderRadius: "50%",
+                        border: "none",
+                        background:
+                          workingOutPreview.page ===
+                          workingOutPreview.pages.length - 1
+                            ? "#e2e8f0"
+                            : "#fff",
+                        color:
+                          workingOutPreview.page ===
+                          workingOutPreview.pages.length - 1
+                            ? "#94a3b8"
+                            : "#4f46e5",
+                        boxShadow: "0 10px 24px rgba(15,23,42,0.12)",
+                        cursor:
+                          workingOutPreview.page ===
+                          workingOutPreview.pages.length - 1
+                            ? "not-allowed"
+                            : "pointer",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <ChevronRight size={24} />
+                    </button>
+                  )}
+                </div>
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
       </AnimatePresence>
     </motion.div>
   );

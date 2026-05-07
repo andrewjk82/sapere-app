@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
@@ -20,9 +20,10 @@ import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
-import { db, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
+import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
+import { getRandomConcept } from './data/keyConceptsData';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -61,11 +62,54 @@ const getTimeGreeting = () => {
   return 'Good evening';
 };
 
-const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) => {
-  const message = `${greeting}, ${name}`;
+// Typewriter hook — types out `text` one character at a time after `startDelay` ms
+function useTypewriter(text, { startDelay = 0, charInterval = 38 } = {}) {
+  const [displayed, setDisplayed] = useState('');
+  const [done, setDone] = useState(false);
+  const indexRef = useRef(0);
+
+  useEffect(() => {
+    if (!text) return;
+    indexRef.current = 0;
+    setDisplayed('');
+    setDone(false);
+
+    const startTimer = window.setTimeout(() => {
+      const interval = window.setInterval(() => {
+        indexRef.current += 1;
+        setDisplayed(text.slice(0, indexRef.current));
+        if (indexRef.current >= text.length) {
+          window.clearInterval(interval);
+          setDone(true);
+        }
+      }, charInterval);
+      return () => window.clearInterval(interval);
+    }, startDelay);
+
+    return () => window.clearTimeout(startTimer);
+  }, [text, startDelay, charInterval]);
+
+  return { displayed, done };
+}
+
+const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = '', onDone }) => {
+  const greetingText = `${greeting},`;
+  // Name starts after: initial delay + all greeting chars have appeared
+  const nameDelay = 0.2 + greetingText.length * 0.08;
+
+  // Pick one random concept once on mount
+  const concept = useMemo(() => getRandomConcept(yearLevel), [yearLevel]);
+
+  // Concept typewriter starts after greeting + name animation finishes
+  const conceptStartDelay = Math.round((nameDelay + name.length * 0.08 + 0.6) * 1000);
+  const { displayed: conceptTyped } = useTypewriter(concept, {
+    startDelay: conceptStartDelay,
+    charInterval: 28,
+  });
+
   const renderCharacters = (text, prefix = '') => text.split('').map((char, index) => (
     <motion.span
-      key={`${prefix}-${char}-${index}`}
+      key={`${prefix}-${index}`}
       aria-hidden="true"
       variants={{
         hidden: { opacity: 0, y: 14, filter: 'blur(10px)' },
@@ -88,25 +132,44 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', onDone }) =>
         if (definition?.opacity === 0) onDone?.();
       }}
     >
-      <motion.div
+      <div
         className="opening-intro__text opening-intro__text--single"
-        aria-label={message}
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: {},
-          visible: {
-            transition: {
-              staggerChildren: 0.08,
-              delayChildren: 0.2,
-            },
-          },
-        }}
+        aria-label={`${greeting}, ${name}`}
       >
         <div className="opening-intro__line opening-intro__line--single">
-          {renderCharacters(message, 'message')}
+          {/* Greeting: "Good morning," — animates first */}
+          <motion.span
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.08, delayChildren: 0.2 } },
+            }}
+          >
+            {renderCharacters(greetingText, 'greeting')}
+          </motion.span>
+
+          {/* Name — starts only after greeting is done */}
+          <motion.span
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.08, delayChildren: nameDelay } },
+            }}
+          >
+            {renderCharacters(`\u00A0${name}`, 'name')}
+          </motion.span>
         </div>
-      </motion.div>
+      </div>
+
+      {/* Key concept typewriter line */}
+      {concept && (
+        <div className="opening-intro__concept" aria-live="polite">
+          {conceptTyped}
+          <span className="opening-intro__cursor" aria-hidden="true" />
+        </div>
+      )}
     </motion.div>
   );
 };
@@ -191,8 +254,8 @@ function App() {
   const [isCapsuleExpanded, setIsCapsuleExpanded] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [showNotifs, setShowNotifs] = useState(false);
-  const [showOpeningIntro, setShowOpeningIntro] = useState(false);
-  const [openingIntroVisible, setOpeningIntroVisible] = useState(false);
+  const [showOpeningIntro, setShowOpeningIntro] = useState(() => Boolean(auth.currentUser));
+  const [openingIntroVisible, setOpeningIntroVisible] = useState(() => Boolean(auth.currentUser));
   const [isStandaloneIntro, setIsStandaloneIntro] = useState(() => isStandaloneAppDisplay());
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
@@ -310,6 +373,12 @@ function App() {
 
   const introGreeting = useMemo(() => getTimeGreeting(), []);
 
+  // Student year level for key concept (e.g. "Year 1", "Year 10")
+  const introYearLevel = useMemo(() => {
+    if (isAdmin) return ''; // admin sees random concept from any year
+    return profile?.year || '';
+  }, [isAdmin, profile?.year]);
+
   useEffect(() => {
     if (!user?.uid) {
       setShowOpeningIntro(false);
@@ -328,12 +397,16 @@ function App() {
 
   useEffect(() => {
     if (!showOpeningIntro) return undefined;
-    const messageDuration = (`${introGreeting} ${introName}`.length * 80) + 1500;
+    // Duration: greeting + name animation + concept typewriter + reading time
+    const greetingAnimMs = (introGreeting.length + introName.length) * 80 + 600;
+    const concept = getRandomConcept(introYearLevel);
+    const conceptMs = concept.length * 28 + 1800; // typing time + reading pause
+    const messageDuration = greetingAnimMs + conceptMs;
     const timer = window.setTimeout(() => {
       setOpeningIntroVisible(false);
     }, messageDuration);
     return () => window.clearTimeout(timer);
-  }, [introGreeting, introName, showOpeningIntro]);
+  }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
 
   useEffect(() => {
     if (user) {
@@ -577,6 +650,7 @@ function App() {
           <OpeningIntro
             name={introName}
             greeting={introGreeting}
+            yearLevel={introYearLevel}
             onDone={() => setShowOpeningIntro(false)}
           />
         )}

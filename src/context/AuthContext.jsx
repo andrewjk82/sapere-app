@@ -28,9 +28,9 @@ const toUserState = (firebaseUser) => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [user, setUser] = useState(() => toUserState(auth.currentUser));
+  const [loading, setLoading] = useState(() => !auth.currentUser);
+  const [isAdmin, setIsAdmin] = useState(() => auth.currentUser?.email?.toLowerCase() === ADMIN_EMAIL.toLowerCase());
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
