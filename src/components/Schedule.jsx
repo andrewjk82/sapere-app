@@ -73,7 +73,7 @@ const Schedule = () => {
           collection(db, 'sessions'),
           or(
             where('studentId', '==', user.uid),
-            where('studentEmail', '==', user.email || '')
+            where('studentEmail', '==', (user.email || '').toLowerCase())
           )
         );
 

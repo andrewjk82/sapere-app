@@ -141,17 +141,17 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     if (!user?.email || isAdmin) return undefined;
     // Query sessions by student's email OR student's UID for maximum reliability
     const q = query(
-      collection(db, 'sessions'), 
+      collection(db, 'sessions'),
       or(
-        where('studentEmail', '==', user.email),
-        where('studentId', '==', user.uid)
+        where('studentId', '==', user.uid),
+        where('studentEmail', '==', (user.email || '').toLowerCase())
       )
     );
     return onSnapshot(q, (snap) => {
       const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       setStudentSessions(docs);
     });
-  }, [user?.email, isAdmin]);
+  }, [user?.email, user?.uid, isAdmin]);
 
   const { nextLesson, lastLesson } = useMemo(() => {
     const now = new Date();
@@ -301,7 +301,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
 
       for (const studentId of newSession.studentIds) {
         const selectedStudent = students.find(s => s.id === studentId);
-        const studentEmail = selectedStudent?.email || '';
+        const studentEmail = (selectedStudent?.email || '').toLowerCase();
         const studentName = selectedStudent?.name || selectedStudent?.displayName || `${selectedStudent?.firstName || ''} ${selectedStudent?.lastName || ''}`.trim() || 'Student';
 
         const count = newSession.recurring ? 52 : 1;
