@@ -109,6 +109,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
 
   const [importCh1Done, setImportCh1Done] = useState(false);
   const [importCh2Done, setImportCh2Done] = useState(false);
+  const [importCh3Done, setImportCh3Done] = useState(false);
 
   // Check for existing questions on mount to keep buttons hidden if already imported
   useEffect(() => {
@@ -128,6 +129,11 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
         const q2 = query(qRef, where('chapterId', '==', 'y10-2'), limit(1));
         const s2 = await getDocs(q2);
         if (!s2.empty) setImportCh2Done(true);
+
+        // Check Chapter 3
+        const q3 = query(qRef, where('chapterId', '==', 'y10-3'), limit(1));
+        const s3 = await getDocs(q3);
+        if (!s3.empty) setImportCh3Done(true);
       } catch (err) {
         console.error('Error checking existing questions:', err);
       }
@@ -177,6 +183,29 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     } catch (err) {
       console.error('CRITICAL: Ch 2 Import failed:', err);
       showToast('Ch 2 Import failed', 'error');
+    } finally {
+      setIsImporting(false);
+    }
+  };
+
+  const handleImportCh3 = async () => {
+    console.log('Import Ch 3 button clicked');
+    setIsImporting(true);
+    try {
+      showToast('Starting Algebra (Ch 3) import...', 'info');
+      const module = await import('../scripts/importYear10Ch3.js');
+      const { importYear10Ch3 } = module;
+      const count = await importYear10Ch3();
+      
+      if (count > 0) {
+        showToast(`Successfully imported ${count} new Algebra questions!`, 'success');
+      } else {
+        showToast('Algebra questions are already up to date.', 'info');
+      }
+      setImportCh3Done(true);
+    } catch (err) {
+      console.error('CRITICAL: Ch 3 Import failed:', err);
+      showToast('Ch 3 Import failed', 'error');
     } finally {
       setIsImporting(false);
     }
@@ -751,7 +780,7 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                       <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
                       {isSyncing ? 'Syncing...' : 'Sync Reminders'}
                     </button>
-                    {(isAdmin && (!importCh1Done || !importCh2Done)) && (
+                    {(isAdmin && (!importCh1Done || !importCh2Done || !importCh3Done)) && (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                         {!importCh1Done && (
                           <button 
@@ -774,6 +803,18 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                           >
                             <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
                             {isImporting ? 'Syncing Ch 2...' : 'Import Surds Qs (Ch 2)'}
+                          </button>
+                        )}
+
+                        {!importCh3Done && (
+                          <button 
+                            className="app-button app-button--secondary" 
+                            onClick={handleImportCh3}
+                            disabled={isImporting}
+                            style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', border: '1px solid #f59e0b', color: '#f59e0b' }}
+                          >
+                            <Plus size={18} className={isImporting ? 'animate-spin' : ''} />
+                            {isImporting ? 'Syncing Ch 3...' : 'Import Algebra Qs (Ch 3)'}
                           </button>
                         )}
                       </div>
