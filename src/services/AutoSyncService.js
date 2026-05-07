@@ -24,58 +24,53 @@ const syncConfigs = [
 
 export const performAutoSync = async (showToast) => {
   console.log('[AutoSync] Starting Intelligent Curriculum Audit...');
-
-  let anyUpdated = false;
+  
+  let totalAdded = 0;
+  let activeSyncs = [];
 
   for (const config of syncConfigs) {
     try {
-      // 1. Count questions in the DB for this chapter
+      // 1. Get DB count
       const qRef = collection(db, 'questions');
       const q = query(qRef, where('chapterId', '==', config.chapterId));
       const snap = await getDocs(q);
       const dbCount = snap.size;
 
-      // 2. Load the local script and count its questions
+      // 2. Get Local count
       const script = await config.getScript();
       const localQuestions = script.allQuestions || [];
       const localCount = localQuestions.length;
 
       console.log(`[AutoSync] ${config.name}: DB=${dbCount}, Local=${localCount}`);
 
-      // 3. If local has more, run the import function from that script
       if (localCount > dbCount) {
-        console.log(`[AutoSync] Syncing ${config.name}...`);
-        if (!anyUpdated) {
-          showToast(`Updating curriculum...`, 'info');
-        }
-        anyUpdated = true;
-
+        console.log(`[AutoSync] Discrepancy found in ${config.name}. Syncing...`);
+        activeSyncs.push(config.name);
+        
         const importFn = script[config.importFnName];
         if (typeof importFn === 'function') {
-          await importFn();
-          console.log(`[AutoSync] ${config.name} synced successfully.`);
+          const added = await importFn();
+          totalAdded += added;
         } else {
-          // Fallback: manually deduplicate & insert
-          console.warn(`[AutoSync] importFn '${config.importFnName}' not found, running manual insert.`);
+          // Manual fallback if function not found
           const existingQuestions = new Set(snap.docs.map(d => d.data().question));
-          let added = 0;
-          for (const q of localQuestions) {
-            if (!existingQuestions.has(q.question)) {
-              await addDoc(collection(db, 'questions'), q);
-              added++;
+          for (const qData of localQuestions) {
+            if (!existingQuestions.has(qData.question)) {
+              await addDoc(collection(db, 'questions'), qData);
+              totalAdded++;
             }
           }
-          console.log(`[AutoSync] Manually inserted ${added} questions for ${config.name}`);
         }
       }
     } catch (err) {
-      console.error(`[AutoSync] Failed for ${config.name}:`, err);
+      console.error(`[AutoSync] Error syncing ${config.name}:`, err);
     }
   }
 
-  if (anyUpdated) {
-    showToast('Curriculum is now up to date!', 'success');
+  if (totalAdded > 0) {
+    showToast(`Curriculum updated! Added ${totalAdded} new questions across ${activeSyncs.join(', ')}.`, 'success');
+    console.log(`[AutoSync] Sync complete. Added ${totalAdded} questions.`);
   } else {
-    console.log('[AutoSync] All chapters are already synchronized.');
+    console.log('[AutoSync] All chapters are already up to date.');
   }
 };

@@ -503,26 +503,26 @@ export const allQuestions = [
 ];
 
 export const importAllYear10Extra = async () => {
-  console.log('Starting Ultimate Year 10 Chapter 1 question import...');
+  console.log('[Ch1 Import] Starting optimized audit...');
   let importedCount = 0;
   
-  for (const q of allQuestions) {
-    try {
-      const qRef = collection(db, 'questions');
-      const dupQuery = query(qRef, where('question', '==', q.question));
-      const dupSnap = await getDocs(dupQuery);
-      
-      if (dupSnap.empty) {
+  try {
+    const qRef = collection(db, 'questions');
+    const existingSnap = await getDocs(query(qRef, where('chapterId', '==', 'y10-1')));
+    const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question));
+    
+    console.log(`[Ch1 Import] Found ${existingQuestions.size} existing questions in DB.`);
+
+    for (const q of allQuestions) {
+      if (!existingQuestions.has(q.question)) {
         await addDoc(collection(db, 'questions'), q);
         importedCount++;
-      } else {
-        console.log(`Skipping duplicate: ${q.question.slice(0, 30)}...`);
       }
-    } catch (error) {
-      console.error('Error importing question:', error);
     }
+  } catch (error) {
+    console.error('[Ch1 Import] CRITICAL ERROR:', error);
   }
   
-  console.log(`Successfully imported ${importedCount} total questions.`);
+  console.log(`[Ch1 Import] Successfully added ${importedCount} NEW questions.`);
   return importedCount;
 };

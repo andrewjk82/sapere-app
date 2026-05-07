@@ -116,24 +116,26 @@ export const allQuestions = [
 ];
 
 export const importYear10Ch3 = async () => {
-  console.log('Starting Year 10 Chapter 3 TOTAL import...');
+  console.log('[Ch3 Import] Starting optimized audit...');
   let importedCount = 0;
   
-  for (const q of allQuestions) {
-    try {
-      const qRef = collection(db, 'questions');
-      const dupQuery = query(qRef, where('question', '==', q.question));
-      const dupSnap = await getDocs(dupQuery);
-      
-      if (dupSnap.empty) {
+  try {
+    const qRef = collection(db, 'questions');
+    const existingSnap = await getDocs(query(qRef, where('chapterId', '==', 'y10-3')));
+    const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question));
+    
+    console.log(`[Ch3 Import] Found ${existingQuestions.size} existing questions in DB.`);
+
+    for (const q of allQuestions) {
+      if (!existingQuestions.has(q.question)) {
         await addDoc(collection(db, 'questions'), q);
         importedCount++;
       }
-    } catch (error) {
-      console.error('Error importing question:', error);
     }
+  } catch (error) {
+    console.error('[Ch3 Import] CRITICAL ERROR:', error);
   }
   
-  console.log(`Successfully added ${importedCount} NEW Year 10 Ch 3 questions.`);
+  console.log(`[Ch3 Import] Successfully added ${importedCount} NEW questions.`);
   return importedCount;
 };

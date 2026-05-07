@@ -115,6 +115,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     const runAutoSync = async () => {
       try {
         setIsImporting(true);
+        // Only show this specific message for the initial audit
+        showToast('Checking for curriculum updates...', 'info');
         const { performAutoSync } = await import('../services/AutoSyncService');
         await performAutoSync(showToast);
       } catch (err) {
