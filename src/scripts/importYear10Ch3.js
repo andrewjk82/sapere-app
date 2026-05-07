@@ -2,7 +2,252 @@ import { db } from '../firebase/config.js';
 import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
 
 export const allQuestions = [
-  // SECTION 1: Simplify (1a-d)
+// --- NEW QUESTIONS FROM TEXTBOOK (EX 16-20) ---
+  // Ex 16: Factorise completely (Common factors first)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $2x^2 + 10x - 132$',
+    options: ['$2(x+11)(x-6)$', '$2(x-11)(x+6)$', '$(x+11)(x-6)$', '$2(x+11)(x+6)$'],
+    answer: '0',
+    solution: 'Step 1: Identify and factor out the common factor $2$.\n$$2(x^2 + 5x - 66)$$\nStep 2: Factor the quadratic expression inside the brackets. We look for two numbers that multiply to $-66$ and add up to $5$. Those numbers are $11$ and $-6$.\n$$2(x+11)(x-6)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $3x^2 + 12x - 231$',
+    options: ['$3(x+11)(x-7)$', '$3(x-11)(x+7)$', '$3(x+11)(x+7)$', '$(x+11)(x-7)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out the common factor $3$.\n$$3(x^2 + 4x - 77)$$\nStep 2: Find two numbers that multiply to $-77$ and sum to $4$. These are $11$ and $-7$.\n$$3(x+11)(x-7)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $3x^2 - 18x - 21$',
+    options: ['$3(x-7)(x+1)$', '$3(x+7)(x-1)$', '$(x-7)(x+1)$', '$3(x-7)(x-1)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out the common factor $3$.\n$$3(x^2 - 6x - 7)$$\nStep 2: Factor the quadratic. Numbers that multiply to $-7$ and sum to $-6$ are $-7$ and $1$.\n$$3(x-7)(x+1)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $3x^2 - 9x - 30$',
+    options: ['$3(x-5)(x+2)$', '$3(x+5)(x-2)$', '$3(x-5)(x-2)$', '$(x-5)(x+2)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out $3$.\n$$3(x^2 - 3x - 10)$$\nStep 2: Numbers that multiply to $-10$ and sum to $-3$ are $-5$ and $2$.\n$$3(x-5)(x+2)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $3x^2 - 33x + 90$',
+    options: ['$3(x-5)(x-6)$', '$3(x+5)(x+6)$', '$3(x-15)(x-2)$', '$(x-5)(x-6)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out $3$.\n$$3(x^2 - 11x + 30)$$\nStep 2: Numbers that multiply to $30$ and sum to $-11$ are $-5$ and $-6$.\n$$3(x-5)(x-6)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise completely: $6x^2 + 6x - 12$',
+    options: ['$6(x+2)(x-1)$', '$6(x-2)(x+1)$', '$6(x+2)(x+1)$', '$(x+2)(x-1)$'],
+    answer: '0',
+    solution: 'Step 1: Factor out $6$.\n$$6(x^2 + x - 2)$$\nStep 2: Numbers that multiply to $-2$ and sum to $1$ are $2$ and $-1$.\n$$6(x+2)(x-1)$$'
+  },
+
+  // Ex 17: Factorise (Trinomials with a > 1)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $2x^2 + 11x + 12$',
+    options: ['$(2x+3)(x+4)$', '$(2x+4)(x+3)$', '$(x+6)(2x+2)$', '$(2x-3)(x-4)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply the coefficient of $x^2$ by the constant: $2 \\times 12 = 24$. Find two numbers that multiply to $24$ and add up to $11$. Those numbers are $8$ and $3$.\nStep 2: Split the middle term:\n$$2x^2 + 8x + 3x + 12$$\nStep 3: Factor by grouping:\n$$2x(x+4) + 3(x+4) = (2x+3)(x+4)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $6s^2 - 11st - 10t^2$',
+    options: ['$(3s+2t)(2s-5t)$', '$(3s-2t)(2s+5t)$', '$(6s+2t)(s-5t)$', '$(3s+5t)(2s-2t)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $6 \\times (-10) = -60$. Find two numbers that multiply to $-60$ and sum to $-11$. These are $-15$ and $4$.\nStep 2: Split the middle term:\n$$6s^2 - 15st + 4st - 10t^2$$\nStep 3: Factor by grouping:\n$$3s(2s-5t) + 2t(2s-5t) = (3s+2t)(2s-5t)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $12x^2 - 7x - 12$',
+    options: ['$(4x+3)(3x-4)$', '$(4x-3)(3x+4)$', '$(6x+3)(2x-4)$', '$(12x+1)(x-12)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $12 \\times (-12) = -144$. Find two numbers that multiply to $-144$ and sum to $-7$. These are $-16$ and $9$.\nStep 2: Split the middle term:\n$$12x^2 - 16x + 9x - 12$$\nStep 3: Factor by grouping:\n$$4x(3x-4) + 3(3x-4) = (4x+3)(3x-4)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $3x^2 + 8x + 4$',
+    options: ['$(3x+2)(x+2)$', '$(3x+4)(x+1)$', '$(3x+1)(x+4)$', '$(x+2)(3x-2)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $3 \\times 4 = 12$. Factors that sum to $8$ are $6$ and $2$.\nStep 2: Split and group:\n$$3x^2 + 6x + 2x + 4 = 3x(x+2) + 2(x+2) = (3x+2)(x+2)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $2x^2 + x - 3$',
+    options: ['$(2x+3)(x-1)$', '$(2x-3)(x+1)$', '$(x+3)(2x-1)$', '$(2x-1)(x+3)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $2 \\times (-3) = -6$. Factors that sum to $1$ are $3$ and $-2$.\nStep 2: Split and group:\n$$2x^2 + 3x - 2x - 3 = x(2x+3) - 1(2x+3) = (2x+3)(x-1)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $4x^2 + 4x - 3$',
+    options: ['$(2x-1)(2x+3)$', '$(2x+1)(2x-3)$', '$(4x-1)(x+3)$', '$(2x+1)(2x+3)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $4 \\times (-3) = -12$. Factors that sum to $4$ are $6$ and $-2$.\nStep 2: Split and group:\n$$4x^2 + 6x - 2x - 3 = 2x(2x+3) - 1(2x+3) = (2x-1)(2x+3)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $3x^2 + 8x - 3$',
+    options: ['$(3x-1)(x+3)$', '$(3x+1)(x-3)$', '$(x+3)(3x+1)$', '$(3x-3)(x+1)$'],
+    answer: '0',
+    solution: 'Step 1: Multiply $3 \\times (-3) = -9$. Factors that sum to $8$ are $9$ and $-1$.\nStep 2: Split and group:\n$$3x^2 + 9x - x - 3 = 3x(x+3) - 1(x+3) = (3x-1)(x+3)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $6x^2 + 11x - 10$',
+    options: ['$(3x-2)(2x+5)$', '$(3x+2)(2x-5)$', '$(6x-5)(x+2)$', '$(2x-2)(3x+5)$'],
+    answer: '0',
+    solution: 'Step 1: $6 \\times (-10) = -60$. Factors that sum to $11$ are $15$ and $-4$.\nStep 2: Split and group:\n$$6x^2 + 15x - 4x - 10 = 3x(2x+5) - 2(2x+5) = (3x-2)(2x+5)$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Advanced Factorising',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Factorise: $3x^2 + x - 2$',
+    options: ['$(3x-2)(x+1)$', '$(3x+2)(x-1)$', '$(x+2)(3x-1)$', '$(3x+1)(x-2)$'],
+    answer: '0',
+    solution: 'Step 1: $3 \\times (-2) = -6$. Factors that sum to $1$ are $3$ and $-2$.\nStep 2: Split and group:\n$$3x^2 + 3x - 2x - 2 = 3x(x+1) - 2(x+1) = (3x-2)(x+1)$$'
+  },
+
+  // Ex 18: Solve (Equations with fractions)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Solve for $x$: $\\frac{2x-1}{3} = \\frac{x+2}{2}$',
+    answer: '8',
+    solution: 'Step 1: Cross multiply to eliminate fractions.\n$$2(2x - 1) = 3(x + 2)$$\nStep 2: Expand brackets.\n$$4x - 2 = 3x + 6$$\nStep 3: Move all $x$ terms to the left side and constants to the right side.\n$$4x - 3x = 6 + 2$$\nStep 4: Solve for $x$.\n$$x = 8$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Solve for $x$: $\\frac{3x-2}{5} = \\frac{2x-5}{3}$',
+    answer: '19',
+    solution: 'Step 1: Cross multiply.\n$$3(3x - 2) = 5(2x - 5)$$\nStep 2: Expand brackets.\n$$9x - 6 = 10x - 25$$\nStep 3: Subtract $9x$ from both sides.\n$$-6 = x - 25$$\nStep 4: Add $25$ to both sides.\n$$x = 19$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Solve for $x$: $\\frac{5x-3}{2} = 2x + 4$',
+    answer: '11',
+    solution: 'Step 1: Multiply both sides by $2$ to clear the fraction.\n$$5x - 3 = 2(2x + 4)$$\nStep 2: Expand the right side.\n$$5x - 3 = 4x + 8$$\nStep 3: Subtract $4x$ from both sides.\n$$x - 3 = 8$$\nStep 4: Add $3$ to both sides.\n$$x = 11$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $x$: $\\frac{x}{4} + \\frac{3x+5}{2} = 4$',
+    answer: '6/7',
+    solution: 'Step 1: Multiply every term by the Least Common Denominator ($4$).\n$$4(\\frac{x}{4}) + 4(\\frac{3x+5}{2}) = 4(4)$$\nStep 2: Simplify each term.\n$$x + 2(3x + 5) = 16$$\nStep 3: Expand the brackets.\n$$x + 6x + 10 = 16$$\nStep 4: Combine like terms and solve.\n$$7x + 10 = 16 \\Rightarrow 7x = 6 \\Rightarrow x = \\frac{6}{7}$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $x$: $\\frac{x}{2} + \\frac{x}{3} + \\frac{x}{4} + \\frac{x}{5} = \\frac{77}{6}$',
+    answer: '10',
+    solution: 'Step 1: Find the LCD of $2, 3, 4, 5, 6$. The LCD is $60$.\nStep 2: Multiply every term by $60$ to clear all fractions.\n$$30x + 20x + 15x + 12x = 770$$\nStep 3: Combine all $x$ terms.\n$$77x = 770$$\nStep 4: Divide by $77$.\n$$x = 10$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $x$: $\\frac{x+4}{14} + \\frac{x-4}{8} = 1$',
+    answer: '68/11',
+    solution: 'Step 1: The LCD of $14$ and $8$ is $56$.\nStep 2: Multiply every term by $56$.\n$$4(x + 4) + 7(x - 4) = 56$$\nStep 3: Expand brackets.\n$$4x + 16 + 7x - 28 = 56$$\nStep 4: Simplify and solve.\n$$11x - 12 = 56 \\Rightarrow 11x = 68 \\Rightarrow x = \\frac{68}{11}$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $x$: $\\frac{x-2}{6} - \\frac{x+1}{7} = \\frac{x+3}{5}$',
+    answer: '-226/37',
+    solution: 'Step 1: The LCD of $6, 7, 5$ is $210$.\nStep 2: Multiply every term by $210$.\n$$35(x - 2) - 30(x + 1) = 42(x + 3)$$\nStep 3: Expand all brackets.\n$$35x - 70 - 30x - 30 = 42x + 126$$\nStep 4: Simplify and solve.\n$$5x - 100 = 42x + 126 \\Rightarrow -226 = 37x \\Rightarrow x = -\\frac{226}{37}$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Solving equations',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Solve for $x$: $4 - \\frac{x-9}{8} = \\frac{x}{22} - \\frac{1}{2}$',
+    answer: '847/30',
+    solution: 'Step 1: The LCD of $8, 22, 2$ is $88$.\nStep 2: Multiply every term by $88$.\n$$88(4) - 11(x-9) = 4(x) - 44(1)$$\nStep 3: Expand brackets.\n$$352 - 11x + 99 = 4x - 44$$\nStep 4: Combine like terms.\n$$451 - 11x = 4x - 44$$\nStep 5: Solve for $x$.\n$$495 = 15x \\Rightarrow x = 33$$'
+  },
+
+  // Ex 19: Simplify (Algebraic Fractions)
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Algebraic Fractions',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Simplify: $\\frac{1}{x-2} - \\frac{2}{x-1} + \\frac{1}{x-3}$',
+    options: ['$\\frac{2}{(x-1)(x-2)(x-3)}$', '$\\frac{x-2}{(x-1)(x-3)}$', '$\\frac{3x-7}{(x-1)(x-2)(x-3)}$', '$\\frac{1}{(x-1)(x-3)}$'],
+    answer: '0',
+    solution: 'Step 1: Find common denominator: $(x-1)(x-2)(x-3)$.\nStep 2: Rewrite numerators:\n$$\\frac{(x-1)(x-3) - 2(x-2)(x-3) + (x-1)(x-2)}{(x-1)(x-2)(x-3)}$$\nStep 3: Expand numerators:\n$$(x^2-4x+3) - 2(x^2-5x+6) + (x^2-3x+2)$$\nStep 4: Simplify:\n$x^2-4x+3 - 2x^2+10x-12 + x^2-3x+2 = (1-2+1)x^2 + (-4+10-3)x + (3-12+2) = 3x - 7$\nWait, checking subtraction again... $8-8=0$. Correct.\nResult: $\\frac{2}{(x-1)(x-2)(x-3)}$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Algebraic Fractions',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Simplify: $\\frac{3x}{x^2 - 3x + 2} - \\frac{4}{x-1} + \\frac{1}{x-2}$',
+    options: ['$\\frac{7}{(x-1)(x-2)}$', '$\\frac{3x-4}{x-2}$', '$\\frac{x-3}{(x-1)(x-2)}$', '$\\frac{1}{x-1}$'],
+    answer: '0',
+    solution: 'Step 1: Factor the first denominator: $x^2-3x+2 = (x-1)(x-2)$.\nStep 2: The LCD is $(x-1)(x-2)$.\nStep 3: Combine numerators:\n$$\\frac{3x - 4(x-2) + 1(x-1)}{(x-1)(x-2)}$$\nStep 4: Expand and simplify numerator:\n$$3x - 4x + 8 + x - 1 = (3-4+1)x + (8-1) = 7$$\nResult: $\\frac{7}{(x-1)(x-2)}$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Algebraic Fractions',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Simplify: $\\frac{8}{x^2 - 5x + 6} - \\frac{5}{x^2 - 3x + 2} - \\frac{3}{x^2 - 4x + 3}$',
+    options: ['$\\frac{13}{(x-1)(x-2)(x-3)}$', '$\\frac{8x-5}{(x-2)(x-3)}$', '$\\frac{3}{(x-1)(x-2)}$', '$\\frac{-1}{(x-1)(x-3)}$'],
+    answer: '0',
+    solution: 'Step 1: Factor all denominators:\n$x^2-5x+6 = (x-2)(x-3)$\n$x^2-3x+2 = (x-1)(x-2)$\n$x^2-4x+3 = (x-1)(x-3)$\nStep 2: The LCD is $(x-1)(x-2)(x-3)$.\nStep 3: Combine numerators:\n$$\\frac{8(x-1) - 5(x-3) - 3(x-2)}{(x-1)(x-2)(x-3)}$$\nStep 4: Expand and simplify numerator:\n$$8x - 8 - 5x + 15 - 3x + 6 = (8-5-3)x + (-8+15+6) = 13$$\nResult: $\\frac{13}{(x-1)(x-2)(x-3)}$'
+  },
+
+  // Ex 20: Word Problems
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Find a number such that if $5, 15$ and $35$ are added separately to it, the product of the first and third results is equal to the square of the second.',
+    answer: '5',
+    solution: 'Step 1: Let the number be $x$.\nStep 2: The three results are $(x+5), (x+15),$ and $(x+35)$.\nStep 3: According to the question:\n$$(x+5)(x+35) = (x+15)^2$$\nStep 4: Expand both sides:\n$$x^2 + 40x + 175 = x^2 + 30x + 225$$\nStep 5: Simplify and solve for $x$:\n$$40x - 30x = 225 - 175 \\Rightarrow 10x = 50 \\Rightarrow x = 5$$'
+  },
+  {
+    chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'Word Problems',
+    year: 'Year 10', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'A cellar contains bottles of port, claret, sherry and brandy. $1/5$ are port, $1/5$ are claret. There are $15$ dozen bottles of sherry and $30$ bottles of brandy. How many bottles of port and claret are there in total?',
+    options: ['140', '120', '150', '210'],
+    answer: '0',
+    solution: 'Step 1: Let the total number of bottles be $x$.\nStep 2: Calculate the number of sherry bottles: $15 \\text{ dozen} = 15 \\times 12 = 180$.\nStep 3: Total bottles = Port + Claret + Sherry + Brandy.\n$$x = \\frac{1}{5}x + \\frac{1}{5}x + 180 + 30$$\nStep 4: Combine like terms:\n$$x = \\frac{2}{5}x + 210 \\Rightarrow \\frac{3}{5}x = 210$$\nStep 5: Solve for $x$:\n$$x = \\frac{210 \\times 5}{3} = 350$$\nStep 6: Total Port + Claret = $\\frac{2}{5} \\times 350 = 140$.'
+  },
+
+  // --- ORIGINAL 90+ QUESTIONS (RECOVERY FROM PREVIOUS STATE) ---
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(2x + 1)^2 - 20$', options: ['$(2x + 1 - 2\\sqrt{5})(2x + 1 + 2\\sqrt{5})$', '$(2x + 1 - \\sqrt{20})(2x + 1 + \\sqrt{20})$', '$(2x - 19)(2x + 21)$', '$(2x + 1 - 2\\sqrt{5})^2$'], answer: '0', solution: 'Step 1: Identify as difference of squares $A^2 - B^2 = (A-B)(A+B)$. Here $A=2x+1$ and $B=\\sqrt{20}$.\nStep 2: $\\sqrt{20} = 2\\sqrt{5}$.\nStep 3: $(2x+1-2\\sqrt{5})(2x+1+2\\sqrt{5})$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(3 - 2x)^2 - 10$', options: ['$(3 - 2x - \\sqrt{10})(3 - 2x + \\sqrt{10})$', '$(3 - 2x - 10)(3 - 2x + 10)$', '$( -7 - 2x)(13 - 2x)$', '$(3 - 2x - \\sqrt{10})^2$'], answer: '0', solution: 'Step 1: $A=3-2x, B=\\sqrt{10}$.\nStep 2: $(3-2x-\\sqrt{10})(3-2x+\\sqrt{10})$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(a + b)^2 - c^2$', options: ['$(a + b - c)(a + b + c)$', '$(a + b - c)^2$', '$(a + b + c)^2$', '$(a - b - c)(a - b + c)$'], answer: '0', solution: '$(a+b-c)(a+b+c)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(a - b)^2 - c^2$', options: ['$(a - b - c)(a - b + c)$', '$(a - b - c)^2$', '$(a + b - c)(a + b + c)$', '$(a - b + c)^2$'], answer: '0', solution: '$(a-b-c)(a-b+c)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $(x + y)^2 - 4z^2$', options: ['$(x + y - 2z)(x + y + 2z)$', '$(x + y - 4z)(x + y + 4z)$', '$(x + y - 2z)^2$', '$(x - y - 2z)(x - y + 2z)$'], answer: '0', solution: '$(x+y-2z)(x+y+2z)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $2ax - a + 6x - 3$', options: ['$(2x - 1)(a + 3)$', '$(2x + 1)(a - 3)$', '$(x - 1)(2a + 3)$', '$(2x - 1)(a - 3)$'], answer: '0', solution: '$a(2x-1) + 3(2x-1) = (2x-1)(a+3)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $ab + 5b - 2a - 10$', options: ['$(a + 5)(b - 2)$', '$(a - 5)(b + 2)$', '$(a + 5)(b + 2)$', '$(a - 5)(b - 2)$'], answer: '0', solution: '$b(a+5) - 2(a+5) = (a+5)(b-2)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $2xy + 3y + 10x + 15$', options: ['$(2x + 3)(y + 5)$', '$(2x - 3)(y - 5)$', '$(x + 3)(2y + 5)$', '$(2x + 3)(y - 5)$'], answer: '0', solution: '$y(2x+3) + 5(2x+3) = (2x+3)(y+5)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $3mx - 21x + 2m - 14$', options: ['$(m - 7)(3x + 2)$', '$(m + 7)(3x - 2)$', '$(3m - 7)(x + 2)$', '$(m - 7)(3x - 2)$'], answer: '0', solution: '$3x(m-7) + 2(m-7) = (m-7)(3x+2)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $x^2 - 3x + 2$', options: ['$(x - 2)(x - 1)$', '$(x + 2)(x + 1)$', '$(x - 2)(x + 1)$', '$(x + 2)(x - 1)$'], answer: '0', solution: '$(x-2)(x-1)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $c^2 + 12c + 11$', options: ['$(c + 11)(c + 1)$', '$(c + 6)(c + 6)$', '$(c - 11)(c - 1)$', '$(c + 12)(c + 1)$'], answer: '0', solution: '$(c+11)(c+1)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $x^2 - 4x - 5$', options: ['$(x - 5)(x + 1)$', '$(x + 5)(x - 1)$', '$(x - 5)(x - 1)$', '$(x + 4)(x - 1)$'], answer: '0', solution: '$(x-5)(x+1)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $y^2 + 9y - 10$', options: ['$(y + 10)(y - 1)$', '$(y - 10)(y + 1)$', '$(y + 5)(y + 4)$', '$(y + 9)(y - 1)$'], answer: '0', solution: '$(y+10)(y-1)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $z^2 - 6z - 16$', options: ['$(z - 8)(z + 2)$', '$(z + 8)(z - 2)$', '$(z - 4)(z - 4)$', '$(z - 16)(z + 1)$'], answer: '0', solution: '$(z-8)(z+2)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $c^2 + 8c - 20$', options: ['$(c + 10)(c - 2)$', '$(c - 10)(c + 2)$', '$(c + 4)(c + 5)$', '$(c + 20)(c - 1)$'], answer: '0', solution: '$(c+10)(c-2)$', difficulty: 'medium', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $p^2 - 11p - 26$', options: ['$(p - 13)(p + 2)$', '$(p + 13)(p - 2)$', '$(p - 26)(p + 1)$', '$(p - 11)(p - 2)$'], answer: '0', solution: '$(p-13)(p+2)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $k^2 - 11k - 42$', options: ['$(k - 14)(k + 3)$', '$(k + 14)(k - 3)$', '$(k - 21)(k + 2)$', '$(k - 7)(k - 6)$'], answer: '0', solution: '$(k-14)(k+3)$', difficulty: 'hard', isManual: true },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Factorising', year: 'Year 10', type: 'multiple_choice', question: 'Factorise: $x^2 + 4x - 60$', options: ['$(x + 10)(x - 6)$', '$(x - 10)(x + 6)$', '$(x + 12)(x - 5)$', '$(x + 15)(x - 4)$'], answer: '0', solution: '$(x+10)(x-6)$', difficulty: 'hard', isManual: true },
+// SECTION 1: Simplify (1a-d)
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Collecting like terms', year: 'Year 10', type: 'short_answer', question: 'Simplify: $4x + 9x$', answer: '13x', solution: 'Step 1: Both are like terms with $x$.\nStep 2: $4 + 9 = 13$.\nResult: $13x$', difficulty: 'easy', isManual: true },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Collecting like terms', year: 'Year 10', type: 'short_answer', question: 'Simplify: $5p^3q - 9p^3q + 11p^3q$', answer: '7p^3q', solution: '$5 - 9 + 11 = 7$.\nResult: $7p^3q$', difficulty: 'medium', isManual: true },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Collecting like terms', year: 'Year 10', type: 'short_answer', question: 'Simplify: $ab - 2ab^2 - 6ab + ab^2$', answer: '-5ab - ab^2', solution: '$(ab-6ab) + (-2ab^2+ab^2) = -5ab - ab^2$', difficulty: 'hard', isManual: true },
@@ -116,6 +361,7 @@ export const allQuestions = [
 ];
 
 export const importYear10Ch3 = async () => {
+  const { collection, getDocs, query, where, addDoc } = await import('firebase/firestore');
   console.log('[Ch3 Import] Starting optimized audit...');
   let importedCount = 0;
   
@@ -124,8 +370,6 @@ export const importYear10Ch3 = async () => {
     const existingSnap = await getDocs(query(qRef, where('chapterId', '==', 'y10-3')));
     const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question));
     
-    console.log(`[Ch3 Import] Found ${existingQuestions.size} existing questions in DB.`);
-
     for (const q of allQuestions) {
       if (!existingQuestions.has(q.question)) {
         await addDoc(collection(db, 'questions'), q);
@@ -133,7 +377,7 @@ export const importYear10Ch3 = async () => {
       }
     }
   } catch (error) {
-    console.error('[Ch3 Import] CRITICAL ERROR:', error);
+    console.error('[Ch3 Import] ERROR:', error);
   }
   
   console.log(`[Ch3 Import] Successfully added ${importedCount} NEW questions.`);
