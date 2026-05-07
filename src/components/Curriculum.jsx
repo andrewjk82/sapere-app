@@ -15,6 +15,7 @@ import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { importYear11Ch3Questions } from '../scripts/importYear11Ch3';
 import { importYear10Ch1Questions } from '../scripts/importYear10Ch1';
+import { importYear10Ch3 } from '../scripts/importYear10Ch3';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 
@@ -247,6 +248,24 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY10Ch3 = async () => {
+    if (!isAdmin || isMigrating) return;
+    setIsMigrating(true);
+    try {
+      const count = await importYear10Ch3();
+      if (count > 0) {
+        showToast(`✅ Successfully added ${count} new questions to Year 10 Chapter 3!`, 'success');
+      } else {
+        showToast('Year 10 Chapter 3 is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 10 Ch3:', error);
+      showToast('Failed to sync Year 10 Chapter 3.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -406,6 +425,17 @@ const Curriculum = () => {
                       style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #ffe4e6', fontWeight: 800 }}
                     >
                       {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
+                    </button>
+                  )}
+
+                  {(questionCounts['y10-3'] || 0) < 169 && (
+                    <button 
+                      onClick={handleSyncY10Ch3}
+                      disabled={isMigrating}
+                      className="app-button"
+                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1px solid #bbf7d0', fontWeight: 800 }}
+                    >
+                      {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3 (${questionCounts['y10-3'] || 0}/169)`}
                     </button>
                   )}
 
