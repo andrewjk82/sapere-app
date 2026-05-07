@@ -179,19 +179,16 @@ function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
   
+  const { showToast } = useToast();
+
   useEffect(() => {
     const syncCurriculum = async () => {
       if (isAdmin && user) {
         try {
           const count11 = await importYear11Ch3Questions();
           const count10 = await importYear10Ch3();
-          
-          if (count11 > 0 || count10 > 0) {
-            showToast({
-              title: 'Curriculum Updated',
-              message: `Successfully added ${count10 + count11} new questions to the database.`,
-              type: 'success'
-            });
+          if ((count11 || 0) + (count10 || 0) > 0) {
+            showToast(`Curriculum updated! Added ${(count10 || 0) + (count11 || 0)} new questions.`, 'success');
           }
         } catch (error) {
           console.error('Sync error:', error);
@@ -199,8 +196,8 @@ function App() {
       }
     };
     syncCurriculum();
-  }, [isAdmin, user, showToast]);
-  const { showToast } = useToast();
+  }, [isAdmin, user]);
+
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');
   const [isLocked, setIsLocked] = useState(false);
