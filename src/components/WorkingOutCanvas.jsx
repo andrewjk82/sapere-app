@@ -1,160 +1,178 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
-import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, Plus, ChevronLeft, ChevronRight } from 'lucide-react';
+import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const hasCoarsePointer = () =>
-  typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
 
 const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
 
+// Pure helper — defined outside component so it's never recreated
+function drawStrokeOnCtx(ctx, stroke, d) {
+  if (!ctx || !stroke?.points?.length) return;
+  ctx.save();
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+
+  if (stroke.isEraser) {
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.lineWidth = stroke.width * 6 * d;
+    ctx.strokeStyle = 'rgba(0,0,0,1)';
+  } else {
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.lineWidth = stroke.width * d;
+    ctx.strokeStyle = stroke.color;
+  }
+
+  const pts = stroke.points;
+  ctx.beginPath();
+  if (pts.length === 1) {
+    const r = stroke.isEraser ? stroke.width * 3 * d : Math.max(1, stroke.width / 2) * d;
+    ctx.arc(pts[0].x * d, pts[0].y * d, r, 0, Math.PI * 2);
+    ctx.fillStyle = stroke.isEraser ? 'rgba(0,0,0,1)' : stroke.color;
+    ctx.fill();
+  } else {
+    ctx.moveTo(pts[0].x * d, pts[0].y * d);
+    for (let i = 1; i < pts.length - 1; i++) {
+      const ex = (pts[i].x + pts[i + 1].x) / 2 * d;
+      const ey = (pts[i].y + pts[i + 1].y) / 2 * d;
+      ctx.quadraticCurveTo(pts[i].x * d, pts[i].y * d, ex, ey);
+    }
+    const l = pts[pts.length - 1];
+    ctx.lineTo(l.x * d, l.y * d);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
-  const displayCanvasRef = useRef(null);
-  const rafRef = useRef(null);
+  // --- Two canvas layers ---
+  // committedRef: permanent layer, redrawn only when strokes state changes
+  // liveRef:      transparent overlay for the stroke currently being drawn
+  const committedRef = useRef(null);
+  const liveRef = useRef(null);
+
+  // Refs that mirror state — safe to read inside stable callbacks / ResizeObserver
+  const strokesRef = useRef([]);
+  const activeToolRef = useRef('pen');
+  const eraserModeRef = useRef('area');
+  const palmGuardRef = useRef(null);
+  const strokeColorRef = useRef('#1e1b4b');
+  const strokeWidthRef = useRef(3);
 
   const isDrawingRef = useRef(false);
   const currentStrokeRef = useRef(null);
 
-  // --- State ---
-  const [strokes, setStrokes] = useState([]); 
+  // --- React state (UI + undo) ---
+  const [strokes, setStrokes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [pages, setPages] = useState([[]]); 
-
+  const [pages, setPages] = useState([[]]);
   const [activeTool, setActiveTool] = useState('pen');
-  const [eraserMode, setEraserMode] = useState('area'); 
+  const [eraserMode, setEraserMode] = useState('area');
   const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
   const [strokeWidth, setStrokeWidth] = useState(3);
 
+  // Sync refs with state on every render (cheap, no effect needed)
+  strokesRef.current = strokes;
+  activeToolRef.current = activeTool;
+  eraserModeRef.current = eraserMode;
+  palmGuardRef.current = palmGuard;
+  strokeColorRef.current = strokeColor;
+  strokeWidthRef.current = strokeWidth;
+
   const isGraph = questionType === 'graph_sketch';
 
-  // --- Rendering Logic ---
-  const renderStroke = useCallback((ctx, stroke, dpr) => {
-    if (!ctx || !stroke?.points || stroke.points.length === 0) return;
-    
-    ctx.save();
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-    
-    if (stroke.isEraser) {
-      ctx.globalCompositeOperation = 'destination-out';
-      ctx.lineWidth = stroke.width * 6;
-      ctx.strokeStyle = 'rgba(0,0,0,1)';
-    } else {
-      ctx.globalCompositeOperation = 'source-over';
-      ctx.lineWidth = stroke.width;
-      ctx.strokeStyle = stroke.color;
-    }
-
-    ctx.beginPath();
-    const pts = stroke.points;
-    if (pts.length === 1) {
-      ctx.arc(pts[0].x * dpr, pts[0].y * dpr, (stroke.isEraser ? stroke.width * 3 : stroke.width / 2), 0, Math.PI * 2);
-      ctx.fillStyle = stroke.isEraser ? 'black' : stroke.color;
-      ctx.fill();
-    } else {
-      ctx.moveTo(pts[0].x * dpr, pts[0].y * dpr);
-      for (let i = 1; i < pts.length; i++) {
-        const mx = (pts[i - 1].x + pts[i].x) / 2 * dpr;
-        const my = (pts[i - 1].y + pts[i].y) / 2 * dpr;
-        ctx.quadraticCurveTo(pts[i - 1].x * dpr, pts[i - 1].y * dpr, mx, my);
-      }
-      ctx.stroke();
-    }
-    ctx.restore();
-  }, []);
-
-  const render = useCallback(() => {
-    const canvas = displayCanvasRef.current;
+  // --- Committed canvas operations ---
+  const redrawCommitted = useCallback((strokeList) => {
+    const canvas = committedRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
-    const dpr = window.devicePixelRatio || 1;
-    
+    const d = window.devicePixelRatio || 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (const s of strokeList) drawStrokeOnCtx(ctx, s, d);
+  }, []);
 
-    // Render all committed strokes
-    if (Array.isArray(strokes)) {
-      strokes.forEach(s => renderStroke(ctx, s, dpr));
-    }
-
-    // Render live stroke
-    if (currentStrokeRef.current) {
-      renderStroke(ctx, currentStrokeRef.current, dpr);
-    }
-  }, [strokes, renderStroke]);
-
-  const requestRender = useCallback(() => {
-    if (rafRef.current) return;
-    rafRef.current = requestAnimationFrame(() => {
-      rafRef.current = null;
-      render();
-    });
-  }, [render]);
-
-  const syncSize = useCallback(() => {
-    const display = displayCanvasRef.current;
-    if (!display) return;
-    const { width, height } = display.getBoundingClientRect();
-    if (width === 0 || height === 0) return;
-    
-    const dpr = window.devicePixelRatio || 1;
-    const newW = Math.round(width * dpr);
-    const newH = Math.round(height * dpr);
-    
-    if (display.width !== newW || display.height !== newH) {
-      display.width = newW;
-      display.height = newH;
-    }
-    requestRender();
-  }, [requestRender]);
-
+  // Redraw committed canvas only when strokes state changes — NOT on every React render
   useEffect(() => {
+    redrawCommitted(strokes);
+  }, [strokes, redrawCommitted]);
+
+  // Size sync using a stable ResizeObserver (reads strokesRef to avoid stale closure)
+  useEffect(() => {
+    const committed = committedRef.current;
+    const live = liveRef.current;
+    if (!committed || !live) return;
+
+    const syncSize = () => {
+      const rect = committed.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+      const d = window.devicePixelRatio || 1;
+      const w = Math.round(rect.width * d);
+      const h = Math.round(rect.height * d);
+      if (committed.width !== w || committed.height !== h) {
+        committed.width = w;
+        committed.height = h;
+        live.width = w;
+        live.height = h;
+        redrawCommitted(strokesRef.current); // use ref for up-to-date value
+      }
+    };
+
     syncSize();
     const ro = new ResizeObserver(syncSize);
-    if (displayCanvasRef.current) ro.observe(displayCanvasRef.current);
-    return () => {
-      ro.disconnect();
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
-  }, [syncSize]);
+    ro.observe(committed);
+    return () => ro.disconnect();
+  }, [redrawCommitted]); // redrawCommitted is stable
 
-  useEffect(() => {
-    render();
-  }, [render]);
+  // --- Live canvas ---
+  const drawLive = () => {
+    const canvas = liveRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    const d = window.devicePixelRatio || 1;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (currentStrokeRef.current) drawStrokeOnCtx(ctx, currentStrokeRef.current, d);
+  };
 
-  // --- Handlers ---
-  const toCanvasPoint = (e) => {
-    const rect = displayCanvasRef.current?.getBoundingClientRect();
+  const clearLive = () => {
+    const canvas = liveRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    ctx?.clearRect(0, 0, canvas.width, canvas.height);
+  };
+
+  // --- Pointer events ---
+  const toPoint = (e) => {
+    const rect = liveRef.current?.getBoundingClientRect();
     if (!rect) return null;
     return { x: e.clientX - rect.left, y: e.clientY - rect.top };
   };
 
-  const onPointerDown = (e) => {
-    if (isSubmitted || (palmGuard && e.pointerType !== 'pen')) return;
-    if (!displayCanvasRef.current) return;
-    
-    // CRITICAL: Prevent default browser behavior (scroll/zoom) to ensure pointermove fires
+  const onPointerDown = useCallback((e) => {
+    if (isSubmitted || (palmGuardRef.current && e.pointerType !== 'pen')) return;
     e.preventDefault();
 
-    const pt = toCanvasPoint(e);
+    const pt = toPoint(e);
     if (!pt) return;
 
-    try {
-      displayCanvasRef.current.setPointerCapture(e.pointerId);
-    } catch (err) {
-      console.warn("Pointer capture failed:", err);
-    }
+    try { liveRef.current?.setPointerCapture(e.pointerId); } catch {}
 
-    if (activeTool === 'eraser' && eraserMode === 'stroke') {
-      const hitRadius = 15;
-      const newStrokes = strokes.filter(s => {
+    const tool = activeToolRef.current;
+
+    // Stroke-eraser: remove tapped strokes immediately
+    if (tool === 'eraser' && eraserModeRef.current === 'stroke') {
+      const hitRadius = 18;
+      const current = strokesRef.current;
+      const next = current.filter(s => {
         if (s.isEraser) return true;
-        if (!s.points) return false;
-        return !s.points.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < hitRadius);
+        return !s.points?.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < hitRadius);
       });
-      if (newStrokes.length !== strokes.length) {
-        setUndoStack(prev => [...prev, strokes]);
-        setStrokes(newStrokes);
+      if (next.length !== current.length) {
+        setUndoStack(prev => [...prev, current]);
+        setStrokes(next);
       }
       return;
     }
@@ -162,48 +180,57 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     isDrawingRef.current = true;
     currentStrokeRef.current = {
       points: [pt],
-      color: strokeColor,
-      width: strokeWidth,
-      isEraser: activeTool === 'eraser'
+      color: strokeColorRef.current,
+      width: strokeWidthRef.current,
+      isEraser: tool === 'eraser',
     };
-    requestRender();
-  };
+    drawLive();
+  }, [isSubmitted]);
 
-  const onPointerMove = (e) => {
+  const onPointerMove = useCallback((e) => {
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
-    const pt = toCanvasPoint(e);
-    if (!pt) return;
 
-    const pts = currentStrokeRef.current.points;
-    if (!pts) return;
-    const last = pts[pts.length - 1];
-    if (last && Math.hypot(pt.x - last.x, pt.y - last.y) < 2) return; // Slightly larger threshold for performance
+    // Collect coalesced events for sub-frame sampling on 120 Hz / Pencil
+    const events = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : [e];
+    let updated = false;
 
-    currentStrokeRef.current.points.push(pt);
-    requestRender();
-  };
+    for (const ev of events) {
+      const pt = toPoint(ev);
+      if (!pt) continue;
+      const pts = currentStrokeRef.current.points;
+      const last = pts[pts.length - 1];
+      // No distance threshold — quadratic bezier handles smoothing
+      if (!last || pt.x !== last.x || pt.y !== last.y) {
+        pts.push(pt);
+        updated = true;
+      }
+    }
 
-  const onPointerUp = (e) => {
+    if (updated) drawLive();
+  }, []);
+
+  const onPointerUp = useCallback(() => {
     if (!isDrawingRef.current) return;
     isDrawingRef.current = false;
-    
-    if (currentStrokeRef.current) {
-      const finishedStroke = { ...currentStrokeRef.current };
-      setUndoStack(prev => [...prev, strokes]);
-      setStrokes(prev => [...prev, finishedStroke]);
-      // We don't null currentStrokeRef IMMEDIATELY to avoid the flicker before state update
-      setTimeout(() => {
-        currentStrokeRef.current = null;
-        requestRender();
-      }, 0);
-    }
-  };
 
+    if (currentStrokeRef.current?.points?.length) {
+      const finished = { ...currentStrokeRef.current };
+      currentStrokeRef.current = null;
+      clearLive();
+      // Committing to state triggers redrawCommitted via useEffect
+      setUndoStack(prev => [...prev, strokesRef.current]);
+      setStrokes(prev => [...prev, finished]);
+    } else {
+      currentStrokeRef.current = null;
+      clearLive();
+    }
+  }, []);
+
+  // --- Toolbar actions ---
   const handleUndo = () => {
-    if (undoStack.length === 0) return;
-    const prev = undoStack[undoStack.length - 1];
-    setStrokes(prev);
-    setUndoStack(undoStack.slice(0, -1));
+    if (!undoStack.length) return;
+    setStrokes(undoStack[undoStack.length - 1]);
+    setUndoStack(prev => prev.slice(0, -1));
   };
 
   const handleClear = () => {
@@ -213,60 +240,63 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   const addPage = () => {
-    const nextPages = [...pages];
-    nextPages[currentPage] = strokes;
-    nextPages.push([]);
-    setPages(nextPages);
-    setCurrentPage(nextPages.length - 1);
+    const next = [...pages];
+    next[currentPage] = strokes;
+    next.push([]);
+    setPages(next);
+    setCurrentPage(next.length - 1);
     setStrokes([]);
     setUndoStack([]);
   };
 
   const goToPage = (idx) => {
     if (idx < 0 || idx >= pages.length) return;
-    const nextPages = [...pages];
-    nextPages[currentPage] = strokes;
-    setPages(nextPages);
+    const next = [...pages];
+    next[currentPage] = strokes;
+    setPages(next);
     setCurrentPage(idx);
-    setStrokes(nextPages[idx] || []);
+    setStrokes(next[idx] || []);
     setUndoStack([]);
   };
 
+  // --- Export API ---
   useImperativeHandle(ref, () => ({
     exportImage: () => {
-      render();
-      return Promise.resolve(displayCanvasRef.current?.toDataURL('image/png') ?? null);
+      const committed = committedRef.current;
+      if (!committed) return Promise.resolve(null);
+      const tmp = document.createElement('canvas');
+      tmp.width = committed.width;
+      tmp.height = committed.height;
+      const ctx = tmp.getContext('2d');
+      ctx.drawImage(committed, 0, 0);
+      if (liveRef.current) ctx.drawImage(liveRef.current, 0, 0);
+      return Promise.resolve(tmp.toDataURL('image/png'));
     },
     exportPageImages: async () => {
-      const results = [];
-      const originalStrokes = [...strokes];
+      const committed = committedRef.current;
+      if (!committed) return [];
       const all = [...pages];
       all[currentPage] = strokes;
-
-      const canvas = displayCanvasRef.current;
-      if (!canvas) return [];
-      const ctx = canvas.getContext('2d');
-      if (!ctx) return [];
-      const dpr = window.devicePixelRatio || 1;
-
-      for (let i = 0; i < all.length; i++) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        const pageStrokes = all[i] || [];
-        pageStrokes.forEach(s => renderStroke(ctx, s, dpr));
-        results.push(canvas.toDataURL('image/png'));
-      }
-      
-      setStrokes(originalStrokes);
-      return results;
+      const tmp = document.createElement('canvas');
+      tmp.width = committed.width;
+      tmp.height = committed.height;
+      const ctx = tmp.getContext('2d');
+      const d = window.devicePixelRatio || 1;
+      return all.map(pageStrokes => {
+        ctx.clearRect(0, 0, tmp.width, tmp.height);
+        for (const s of pageStrokes) drawStrokeOnCtx(ctx, s, d);
+        return tmp.toDataURL('image/png');
+      });
     },
     clear: () => {
       setStrokes([]);
       setPages([[]]);
       setCurrentPage(0);
       setUndoStack([]);
-    }
+    },
   }));
 
+  // --- Styles ---
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
     backgroundSize: '20px 20px',
@@ -276,6 +306,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     backgroundPosition: '0 8px',
     backgroundColor: '#fff',
   };
+
+  const layerStyle = { position: 'absolute', inset: 0, width: '100%', height: '100%' };
 
   return (
     <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative' }}>
@@ -294,40 +326,36 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
               {palmGuard ? 'Pen Only' : 'All Touch'}
             </button>
 
-            <button onClick={() => setActiveTool('pen')} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
+            <button
+              onClick={() => setActiveTool('pen')}
+              style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}
+            >
               <PenTool size={17} />
             </button>
 
-            <button 
+            <button
               onClick={() => {
                 if (activeTool === 'eraser') {
                   setEraserMode(prev => prev === 'area' ? 'stroke' : 'area');
                 } else {
                   setActiveTool('eraser');
                 }
-              }} 
-              style={{ 
-                height: '34px', 
-                padding: '0 10px',
-                borderRadius: '10px', 
-                border: 'none', 
-                cursor: 'pointer', 
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '6px',
-                background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9', 
-                color: activeTool === 'eraser' ? '#4f46e5' : '#64748b' 
               }}
+              style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px', background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'eraser' ? '#4f46e5' : '#64748b' }}
             >
               <Eraser size={17} />
               {activeTool === 'eraser' && (
-                <span style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase', background: '#fff', padding: '2px 6px', borderRadius: '4px', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase', background: '#fff', padding: '2px 6px', borderRadius: '4px' }}>
                   {eraserMode}
                 </span>
               )}
             </button>
 
-            <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '34px', borderRadius: '10px', border: '1px solid #e2e8f0', padding: '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
+            <select
+              value={strokeWidth}
+              onChange={e => setStrokeWidth(Number(e.target.value))}
+              style={{ height: '34px', borderRadius: '10px', border: '1px solid #e2e8f0', padding: '0 8px', fontSize: '0.78rem', fontWeight: 700 }}
+            >
               <option value={2}>Thin</option>
               <option value={3}>Normal</option>
               <option value={5}>Thick</option>
@@ -335,7 +363,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
             <div style={{ display: 'flex', gap: '4px' }}>
               {COLORS.map(c => (
-                <button key={c} onClick={() => { setStrokeColor(c); setActiveTool('pen'); }} style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }} />
+                <button
+                  key={c}
+                  onClick={() => { setStrokeColor(c); setActiveTool('pen'); }}
+                  style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }}
+                />
               ))}
             </div>
 
@@ -367,15 +399,21 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
             <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '2px', background: '#94a3b8', transform: 'translateX(-50%)', pointerEvents: 'none' }} />
           </>
         )}
+
+        {/* Layer 1: committed strokes — never touched by React re-renders */}
+        <canvas ref={committedRef} style={{ ...layerStyle, pointerEvents: 'none' }} />
+
+        {/* Layer 2: live stroke in progress — overlays committed */}
         <canvas
-          ref={displayCanvasRef}
+          ref={liveRef}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={onPointerUp}
           onPointerCancel={onPointerUp}
           onPointerLeave={onPointerUp}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
+          style={{ ...layerStyle, touchAction: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
         />
+
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
             <div style={{ background: 'white', padding: '10px 20px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', fontWeight: 800, color: '#6366f1' }}>Submission Locked</div>
