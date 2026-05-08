@@ -19,6 +19,7 @@ import { importYear10Ch3 } from '../scripts/importYear10Ch3';
 import { importYear10Ch4 } from '../scripts/importYear10Ch4';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
+import './curriculum.css';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 
@@ -35,6 +36,8 @@ const Curriculum = () => {
   const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
+  const [showAdminTools, setShowAdminTools] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   // Fetch all question counts for visible chapters
   useEffect(() => {
@@ -400,97 +403,74 @@ const Curriculum = () => {
         <LearningPath profile={profile} />
       ) : (
         <>
-          {/* ── Sticky top navigation bar ── */}
+          {/* ── Sticky top bar ── */}
           <div className="curriculum-topbar">
-            {/* Header row: title + actions */}
-            <div className="curriculum-topbar__header">
-              <h2 className="curriculum-topbar__title">
-                {selectedYear}
-                {selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
-              </h2>
-              <div className="curriculum-topbar__actions">
-                <div className="curriculum-search-wrap">
-                  <Search size={15} />
-                  <input
-                    type="text"
-                    placeholder="Search topics..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                  />
+            <div className="curriculum-topbar__inner">
+              {/* Row 1 — Title + actions */}
+              <div className="curriculum-header">
+                <div className="curriculum-header__title">
+                  <h1>{selectedYear}</h1>
+                  {selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
                 </div>
-                <button
-                  onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
-                  className="app-button app-button--primary"
-                  style={{ borderRadius: '12px', padding: '0 16px', height: '38px', fontSize: '0.82rem', whiteSpace: 'nowrap', flexShrink: 0 }}
-                >
-                  <Plus size={16} /> Add
-                </button>
+                <div className="curriculum-header__actions">
+                  <div className={`curriculum-search${searchOpen || searchQuery ? ' is-open' : ''}`}>
+                    <button
+                      type="button"
+                      onClick={() => setSearchOpen(o => !o)}
+                      style={{ border: 'none', background: 'transparent', padding: 0, display: 'flex', cursor: 'pointer' }}
+                    >
+                      <Search size={16} />
+                    </button>
+                    {(searchOpen || searchQuery) && (
+                      <input
+                        type="text"
+                        placeholder="Search chapters..."
+                        value={searchQuery}
+                        autoFocus
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onBlur={() => !searchQuery && setSearchOpen(false)}
+                      />
+                    )}
+                  </div>
+                  <button
+                    onClick={() => setShowAdminTools(v => !v)}
+                    className="curriculum-icon-btn"
+                    title="Admin tools"
+                    style={{ background: showAdminTools ? 'rgba(99, 102, 241, 0.18)' : undefined }}
+                  >
+                    <Layers size={17} />
+                  </button>
+                  <button
+                    onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
+                    className="curriculum-icon-btn curriculum-icon-btn--primary"
+                    title="Add chapter"
+                  >
+                    <Plus size={17} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Row 2 — Year tabs */}
+              <div className="curriculum-year-tabs">
+                {YEARS.map(year => (
+                  <button
+                    key={year}
+                    onClick={() => {
+                      setSelectedYear(year);
+                      if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
+                    }}
+                    className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
+                  >
+                    {year}
+                  </button>
+                ))}
               </div>
             </div>
-
-            {/* Year tabs */}
-            <div className="curriculum-year-tabs">
-              {YEARS.map(year => (
-                <button
-                  key={year}
-                  onClick={() => {
-                    setSelectedYear(year);
-                    if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
-                  }}
-                  className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
-                >
-                  {year}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* ── Seed / admin utility buttons ── */}
-          <div className="curriculum-seed-buttons">
-            {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
-              <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#fef3c7', color: '#92400e', borderColor: '#fde68a' }}>
-                {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
-              </button>
-            )}
-            {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
-              <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
-              </button>
-            )}
-            {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
-              <button onClick={handleSeedCh3Questions} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#d1fae5' }}>
-                {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
-              </button>
-            )}
-            {!questionCounts['y10-1'] && (
-              <button onClick={handleSeedY10Ch1Questions} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#fff1f2', color: '#e11d48', borderColor: '#ffe4e6' }}>
-                {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
-              </button>
-            )}
-            {(questionCounts['y10-3'] || 0) < 169 && (
-              <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
-                {isMigrating ? 'Syncing...' : `🔄 Y10 Ch3 (${questionCounts['y10-3'] || 0}/169)`}
-              </button>
-            )}
-            <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#16a34a' }}>
-              {isMigrating ? 'Syncing...' : '🔄 Sync Y10 Ch3'}
-            </button>
-            <button onClick={handleSyncY10Ch4} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#fef2f2', color: '#dc2626', borderColor: '#dc2626' }}>
-              {isMigrating ? 'Syncing...' : '🔄 Sync Y10 Ch4'}
-            </button>
-            <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="curriculum-seed-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#a7f3d0' }}>
-              {isMigrating ? 'Adding...' : '⚠️ Add Curve Q'}
-            </button>
-            {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
-              <button onClick={handleSyncSelectedYear} className="curriculum-seed-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
-                Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
-              </button>
-            )}
           </div>
 
           {/* ── Main content ── */}
           <div className="curriculum-content">
-            {/* Course sub-tabs (Year 11 / 12 only) */}
+            {/* Course sub-tabs (Year 11/12) */}
             {courses && (
               <div className="curriculum-course-tabs">
                 {courses.map(course => (
@@ -505,44 +485,82 @@ const Curriculum = () => {
               </div>
             )}
 
+            {/* Admin tools — collapsed by default */}
+            {showAdminTools && (
+              <div className="curriculum-admin-tools">
+                {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
+                  <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef3c7', color: '#92400e', borderColor: '#fde68a' }}>
+                    {isMigrating ? 'Updating…' : '⚠ Seed Ch1 Algebra'}
+                  </button>
+                )}
+                {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
+                  <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
+                    {isMigrating ? 'Updating…' : '⚠ Seed Ch2 Surds'}
+                  </button>
+                )}
+                {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
+                  <button onClick={handleSeedCh3Questions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#d1fae5' }}>
+                    {isMigrating ? 'Updating…' : '⚠ Seed Ch3 Trig'}
+                  </button>
+                )}
+                {!questionCounts['y10-1'] && (
+                  <button onClick={handleSeedY10Ch1Questions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fff1f2', color: '#e11d48', borderColor: '#ffe4e6' }}>
+                    {isMigrating ? 'Updating…' : '⚠ Seed Y10 Ch1'}
+                  </button>
+                )}
+                <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
+                  {isMigrating ? 'Syncing…' : `🔄 Sync Y10 Ch3${(questionCounts['y10-3'] || 0) < 169 ? ` (${questionCounts['y10-3'] || 0}/169)` : ''}`}
+                </button>
+                <button onClick={handleSyncY10Ch4} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef2f2', color: '#dc2626', borderColor: '#fecaca' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y10 Ch4'}
+                </button>
+                <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#a7f3d0' }}>
+                  {isMigrating ? 'Adding…' : '⚠ Add Curve Q'}
+                </button>
+                {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
+                  <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
+                    Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
+                  </button>
+                )}
+              </div>
+            )}
+
             {/* Chapter cards */}
             <div className="chapters-grid">
               {displayData.length > 0 ? displayData.map(chapter => {
                 const p = chapter.modules > 0 ? Math.round(((chapter.completed || 0) / chapter.modules) * 100) : 0;
                 return (
                   <div key={chapter.id} className="chapter-card" onClick={() => setSelectedChapterForQuestions(chapter)}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                      <div style={{ width: '40px', height: '40px', background: '#f5f3ff', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1', flexShrink: 0 }}>
-                        <BookText size={20} />
-                      </div>
-                      <div style={{ display: 'flex', gap: '6px' }}>
-                        <button onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }} style={{ border: 'none', background: '#f1f5f9', padding: '7px', borderRadius: '9px', color: '#64748b', cursor: 'pointer', display: 'flex' }}><Edit2 size={14} /></button>
-                        <button onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }} style={{ border: 'none', background: '#fff1f2', padding: '7px', borderRadius: '9px', color: '#f43f5e', cursor: 'pointer', display: 'flex' }}><Trash2 size={14} /></button>
+                    <div className="chapter-card__head">
+                      <div className="chapter-card__icon"><BookText size={18} /></div>
+                      <div className="chapter-card__edits">
+                        <button className="chapter-card__edit-btn" onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }}><Edit2 size={13} /></button>
+                        <button className="chapter-card__edit-btn chapter-card__delete-btn" onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }}><Trash2 size={13} /></button>
                       </div>
                     </div>
 
                     <div>
-                      <h3 style={{ margin: '0 0 4px', fontSize: '0.95rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{chapter.title}</h3>
-                      <p style={{ margin: 0, fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600 }}>
+                      <h3 className="chapter-card__title">{chapter.title}</h3>
+                      <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
                         {questionCounts[chapter.id] > 0 && (
-                          <span style={{ color: '#6366f1' }}> · {questionCounts[chapter.id]} questions</span>
+                          <span className="chapter-card__meta-pill"> · {questionCounts[chapter.id]} questions</span>
                         )}
                       </p>
                     </div>
 
-                    <div style={{ marginTop: 'auto' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.68rem', fontWeight: 800, color: '#cbd5e1', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                    <div className="chapter-card__progress-row">
+                      <div className="chapter-card__progress-label">
                         <span>Progress</span><span>{p}%</span>
                       </div>
-                      <div style={{ height: '5px', background: '#f1f5f9', borderRadius: '3px', overflow: 'hidden' }}>
-                        <motion.div initial={{ width: 0 }} animate={{ width: `${p}%` }} style={{ height: '100%', background: 'linear-gradient(90deg, #6366f1, #8b5cf6)' }} />
+                      <div className="chapter-card__progress-bar">
+                        <motion.div initial={{ width: 0 }} animate={{ width: `${p}%` }} className="chapter-card__progress-fill" />
                       </div>
                     </div>
                   </div>
                 );
               }) : (
-                <div className="app-empty" style={{ gridColumn: '1 / -1' }}>No chapters found for this selection.</div>
+                <div className="curriculum-empty">No chapters found for this selection.</div>
               )}
             </div>
           </div>

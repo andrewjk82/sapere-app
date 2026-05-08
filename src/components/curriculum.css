@@ -1,127 +1,167 @@
 /* ── Curriculum Page ───────────────────────── */
 .curriculum-page {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
   min-height: 100%;
+  background: linear-gradient(180deg, #fcfaff 0%, #f6f1ff 100%);
 }
 
-/* ── Sticky top nav bar ─────────────────────── */
+/* ── Sticky top bar ─────────────────────────── */
 .curriculum-topbar {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(252, 250, 255, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(252, 250, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(167, 139, 250, 0.12);
-  padding: 14px 24px 0;
+}
+
+.curriculum-topbar__inner {
+  padding: 16px 28px 0;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 14px;
 }
 
 @media (max-width: 768px) {
-  .curriculum-topbar {
-    padding: 12px 16px 0;
-  }
+  .curriculum-topbar__inner { padding: 14px 16px 0; }
 }
 
 /* ── Header row ─────────────────────────────── */
-.curriculum-topbar__header {
+.curriculum-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 14px;
-  flex-wrap: wrap;
 }
 
-.curriculum-topbar__title {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #1e1b4b;
-  letter-spacing: -0.02em;
+.curriculum-header__title {
   display: flex;
   align-items: center;
   gap: 10px;
-  line-height: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+.curriculum-header__title h1 {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #1e1b4b;
+  letter-spacing: -0.02em;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .curriculum-course-badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px;
-  background: #f5f3ff;
+  padding: 4px 10px;
+  background: #eef2ff;
   color: #6366f1;
   border-radius: 99px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  flex-shrink: 0;
 }
 
-.curriculum-topbar__actions {
+.curriculum-header__actions {
   display: flex;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
 }
 
-.curriculum-search-wrap {
+/* Compact icon-style action buttons */
+.curriculum-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  border: none;
+  background: rgba(99, 102, 241, 0.08);
+  color: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.curriculum-icon-btn:hover { background: rgba(99, 102, 241, 0.15); }
+
+.curriculum-icon-btn--primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.curriculum-icon-btn--primary:hover { filter: brightness(1.05); }
+
+/* ── Search expand-on-click ─────────────────── */
+.curriculum-search {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #f1f5f9;
-  border-radius: 12px;
+  background: rgba(99, 102, 241, 0.06);
+  border-radius: 11px;
   padding: 0 12px;
   height: 38px;
-  min-width: 0;
+  width: 38px;
+  overflow: hidden;
+  transition: width 0.25s ease;
 }
 
-.curriculum-search-wrap svg { color: #94a3b8; flex-shrink: 0; }
+.curriculum-search.is-open { width: 220px; }
+.curriculum-search svg { color: #6366f1; flex-shrink: 0; }
 
-.curriculum-search-wrap input {
+.curriculum-search input {
   border: none;
   background: transparent;
   outline: none;
   font-size: 0.85rem;
   color: #1e293b;
   font-weight: 500;
-  width: 180px;
+  width: 100%;
+  min-width: 0;
 }
 
 @media (max-width: 600px) {
-  .curriculum-search-wrap input { width: 110px; }
+  .curriculum-search.is-open { width: 160px; }
 }
 
 /* ── Year tabs strip ────────────────────────── */
 .curriculum-year-tabs {
   display: flex;
-  gap: 4px;
+  gap: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 0;
   scrollbar-width: none;
+  margin: 0 -28px;
+  padding: 0 28px;
+}
+
+@media (max-width: 768px) {
+  .curriculum-year-tabs { margin: 0 -16px; padding: 0 16px; }
 }
 
 .curriculum-year-tabs::-webkit-scrollbar { display: none; }
 
 .curriculum-year-tab {
   flex: 0 0 auto;
-  padding: 10px 16px;
+  padding: 12px 14px 14px;
   border: none;
   background: transparent;
-  color: #64748b;
+  color: #94a3b8;
   font-size: 0.82rem;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 10px 10px 0 0;
-  transition: all 0.15s;
   position: relative;
   white-space: nowrap;
+  transition: color 0.15s;
 }
 
-.curriculum-year-tab:hover { color: #6366f1; background: rgba(99, 102, 241, 0.06); }
+.curriculum-year-tab:hover { color: #6366f1; }
 
 .curriculum-year-tab--active {
   color: #6366f1;
@@ -132,114 +172,235 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 8px;
-  right: 8px;
+  left: 14px;
+  right: 14px;
   height: 2.5px;
   background: #6366f1;
   border-radius: 2px 2px 0 0;
 }
 
-/* ── Course sub-tabs ────────────────────────── */
+/* ── Course pill toggle ─────────────────────── */
 .curriculum-course-tabs {
-  display: flex;
-  gap: 6px;
-  background: #f1f5f9;
-  padding: 5px;
-  border-radius: 14px;
-  width: fit-content;
-  max-width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
+  display: inline-flex;
+  gap: 4px;
+  background: rgba(99, 102, 241, 0.07);
+  padding: 4px;
+  border-radius: 12px;
+  align-self: flex-start;
 }
-
-.curriculum-course-tabs::-webkit-scrollbar { display: none; }
 
 .curriculum-course-tab {
   flex: 0 0 auto;
-  padding: 8px 18px;
+  padding: 7px 16px;
   border: none;
   background: transparent;
   color: #64748b;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 9px;
   transition: all 0.15s;
   white-space: nowrap;
 }
+
+.curriculum-course-tab:hover { color: #6366f1; }
 
 .curriculum-course-tab--active {
   background: white;
   color: #6366f1;
   font-weight: 900;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
-/* ── Seed / admin buttons ───────────────────── */
-.curriculum-seed-buttons {
+/* ── Admin tools collapsible ────────────────── */
+.curriculum-admin-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px dashed rgba(99, 102, 241, 0.3);
+  background: transparent;
+  color: #6366f1;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.curriculum-admin-toggle:hover { background: rgba(99, 102, 241, 0.06); }
+
+.curriculum-admin-tools {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  padding: 16px 24px 0;
+  padding: 12px;
+  background: rgba(99, 102, 241, 0.04);
+  border: 1px dashed rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
 }
 
-@media (max-width: 768px) {
-  .curriculum-seed-buttons { padding: 12px 16px 0; }
-}
-
-.curriculum-seed-btn {
+.curriculum-admin-btn {
   flex: 0 0 auto;
-  padding: 5px 12px;
-  border-radius: 8px;
-  font-size: 0.7rem;
-  font-weight: 800;
+  padding: 5px 10px;
+  border-radius: 7px;
+  font-size: 0.68rem;
+  font-weight: 700;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
   transition: opacity 0.15s;
 }
 
-.curriculum-seed-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.curriculum-admin-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-/* ── Chapter cards area ─────────────────────── */
+/* ── Main content ───────────────────────────── */
 .curriculum-content {
-  padding: 24px;
+  padding: 20px 28px 80px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  flex: 1;
+  gap: 18px;
 }
 
 @media (max-width: 768px) {
-  .curriculum-content { padding: 16px; }
+  .curriculum-content { padding: 16px 16px 80px; }
 }
 
+/* ── Chapter cards ──────────────────────────── */
 .chapters-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
+  gap: 14px;
 }
 
 @media (max-width: 600px) {
-  .chapters-grid { grid-template-columns: 1fr; }
+  .chapters-grid { grid-template-columns: 1fr; gap: 12px; }
 }
 
-/* ── Chapter card ───────────────────────────── */
 .chapter-card {
   background: white;
-  border-radius: 20px;
-  padding: 20px;
-  border: 1.5px solid #f1f5f9;
+  border-radius: 18px;
+  padding: 18px;
+  border: 1px solid rgba(167, 139, 250, 0.12);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.04);
 }
 
 .chapter-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(99,102,241,0.1);
-  border-color: #e0e7ff;
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+.chapter-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.chapter-card__icon {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+  flex-shrink: 0;
+}
+
+.chapter-card__edits {
+  display: flex;
+  gap: 5px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.chapter-card:hover .chapter-card__edits { opacity: 1; }
+
+@media (max-width: 768px) {
+  .chapter-card__edits { opacity: 1; }
+}
+
+.chapter-card__edit-btn {
+  border: none;
+  background: #f1f5f9;
+  padding: 6px;
+  border-radius: 8px;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.chapter-card__edit-btn:hover { background: #e2e8f0; color: #1e1b4b; }
+
+.chapter-card__delete-btn { background: #fff1f2; color: #f43f5e; }
+.chapter-card__delete-btn:hover { background: #ffe4e6; color: #be123c; }
+
+.chapter-card__title {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #1e1b4b;
+  line-height: 1.35;
+}
+
+.chapter-card__meta {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.chapter-card__meta-pill {
+  color: #6366f1;
+  font-weight: 700;
+}
+
+.chapter-card__progress-row {
+  margin-top: auto;
+}
+
+.chapter-card__progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.chapter-card__progress-bar {
+  height: 4px;
+  background: #f1f5f9;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.chapter-card__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 2px;
+}
+
+/* ── Empty state ────────────────────────────── */
+.curriculum-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #94a3b8;
+  font-weight: 600;
+  background: white;
+  border-radius: 18px;
+  border: 1px dashed rgba(99, 102, 241, 0.2);
 }
