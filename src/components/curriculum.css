@@ -1,4 +1,4 @@
-/* Curriculum Page Mobile Optimized Styles */
+/* Curriculum Page – Responsive Styles */
 .curriculum-container {
   display: flex;
   flex-direction: column;
@@ -6,58 +6,13 @@
   padding-top: 20px;
 }
 
-@media (max-width: 1024px) {
-  .curriculum-main-grid {
-    grid-template-columns: 1fr !important; /* Stack vertically on mobile */
-    height: auto !important;
-    gap: 20px !important;
-  }
-
-  .curriculum-sidebar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(10px);
-    padding: 12px !important;
-    margin: 0 -20px; /* Bleed to edges */
-    border-radius: 0 !important;
-    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    -webkit-overflow-scrolling: touch;
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 8px !important;
-  }
-
-  .curriculum-sidebar::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for cleaner look */
-  }
-
-  .year-select-title {
-    display: none !important; /* Hide "SELECT YEAR LEVEL" text on mobile */
-  }
-
-  .year-btn-mobile {
-    flex: 0 0 auto !important;
-    padding: 10px 20px !important;
-    font-size: 0.85rem !important;
-    border-radius: 99px !important;
-  }
-
-  .chapters-grid {
-    grid-template-columns: 1fr !important; /* Single column on small screens */
-    padding: 0 20px;
-  }
-}
-
+/* ── Header ─────────────────────────────────── */
 .curriculum-header-mobile {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 24px;
-  padding-top: 60px; /* Safe area for capsule */
+  margin-bottom: 8px;
+  padding-top: 60px; /* safe area below mobile capsule */
 }
 
 @media (min-width: 768px) {
@@ -65,16 +20,163 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 0;
   }
 }
 
-.course-tabs-scroll {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-bottom: 4px;
-  margin: 0 -4px;
+/* ── Seed / admin action buttons ────────────── */
+.curriculum-seed-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
-.course-tabs-scroll::-webkit-scrollbar {
+/* ── Title + actions row ────────────────────── */
+.curriculum-actions-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .curriculum-actions-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* ── Search input ───────────────────────────── */
+.curriculum-search {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .curriculum-search {
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
+
+/* ── Main two-column grid ───────────────────── */
+.curriculum-main-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+  height: calc(100vh - 250px);
+}
+
+@media (max-width: 1024px) {
+  .curriculum-main-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 16px;
+  }
+}
+
+/* ── Year selector sidebar ──────────────────── */
+.curriculum-sidebar {
+  padding: 16px;
+  overflow-y: auto;
+  border-radius: 24px;
+}
+
+@media (max-width: 1024px) {
+  .curriculum-sidebar {
+    border-radius: 0 !important;
+    margin: 0 -20px;
+    padding: 10px 16px !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.92) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    white-space: nowrap;
+  }
+  .curriculum-sidebar::-webkit-scrollbar { display: none; }
+}
+
+/* ── "SELECT YEAR LEVEL" label ──────────────── */
+.year-select-title {
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+  .year-select-title { display: none; }
+}
+
+/* ── Year buttons ───────────────────────────── */
+.year-btn-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .year-btn-mobile {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 0.82rem;
+  }
+}
+
+/* ── Chevron – hide on mobile ───────────────── */
+.year-btn-chevron {
   display: none;
+}
+
+@media (min-width: 1025px) {
+  .year-btn-chevron {
+    display: flex;
+  }
+}
+
+/* ── Course tabs strip ──────────────────────── */
+.course-tabs-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+}
+
+.course-tabs-scroll::-webkit-scrollbar { display: none; }
+
+/* ── Chapter cards grid ─────────────────────── */
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  overflow-y: auto;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .chapters-grid {
+    grid-template-columns: 1fr;
+    overflow-y: visible;
+    padding: 0 4px 100px;
+  }
 }

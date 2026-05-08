@@ -401,101 +401,50 @@ const Curriculum = () => {
       ) : (
         <>
           <div className="curriculum-header-mobile">
-            <div className="app-page__title">
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
-                    <button 
-                      onClick={handleSeedAlgebraQuestions}
-                      disabled={isMigrating}
-                      className="app-button"
-                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a', fontWeight: 800 }}
-                    >
-                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
-                    </button>
-                  )}
-
-                  {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
-                    <button 
-                      onClick={handleSeedSurdsQuestions}
-                      disabled={isMigrating}
-                      className="app-button"
-                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}
-                    >
-                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
-                    </button>
-                  )}
-
-                  {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
-                    <button 
-                      onClick={handleSeedCh3Questions}
-                      disabled={isMigrating}
-                      className="app-button"
-                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #d1fae5', fontWeight: 800 }}
-                    >
-                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
-                    </button>
-                  )}
-
-                  {!questionCounts['y10-1'] && (
-                    <button 
-                      onClick={handleSeedY10Ch1Questions}
-                      disabled={isMigrating}
-                      className="app-button"
-                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #ffe4e6', fontWeight: 800 }}
-                    >
-                      {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
-                    </button>
-                  )}
-
-                  {(questionCounts['y10-3'] || 0) < 169 && (
-                    <button 
-                      onClick={handleSyncY10Ch3}
-                      disabled={isMigrating}
-                      className="app-button"
-                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1px solid #bbf7d0', fontWeight: 800 }}
-                    >
-                      {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3 (${questionCounts['y10-3'] || 0}/169)`}
-                    </button>
-                  )}
-
-                  <button 
-                    onClick={handleSyncY10Ch3}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1.5px solid #16a34a', fontWeight: 900 }}
-                  >
-                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3`}
+            <div>
+              {/* Seed / admin buttons – wrap freely on mobile */}
+              <div className="curriculum-seed-buttons">
+                {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
+                  <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef3c7', color: '#92400e', border: '1px solid #fde68a', fontWeight: 800 }}>
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
                   </button>
-
-                  <button 
-                    onClick={handleSyncY10Ch4}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef2f2', color: '#dc2626', border: '1.5px solid #dc2626', fontWeight: 900 }}
-                  >
-                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch4`}
+                )}
+                {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
+                  <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', fontWeight: 800 }}>
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
                   </button>
-
-                  <button 
-                    onClick={handleSeedCurveQuestion}
-                    disabled={isMigrating}
-                    className="app-button"
-                    style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #a7f3d0', fontWeight: 800 }}
-                  >
-                    {isMigrating ? 'Adding...' : '⚠️ Add Curve Q'}
+                )}
+                {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
+                  <button onClick={handleSeedCh3Questions} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #d1fae5', fontWeight: 800 }}>
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
                   </button>
-
-                  {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
-                    <button
-                      onClick={handleSyncSelectedYear}
-                      className="app-button"
-                      style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd', fontWeight: 800 }}
-                    >
-                      Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
-                    </button>
-                  )}
-                </div>
+                )}
+                {!questionCounts['y10-1'] && (
+                  <button onClick={handleSeedY10Ch1Questions} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fff1f2', color: '#e11d48', border: '1px solid #ffe4e6', fontWeight: 800 }}>
+                    {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
+                  </button>
+                )}
+                {(questionCounts['y10-3'] || 0) < 169 && (
+                  <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1px solid #bbf7d0', fontWeight: 800 }}>
+                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3 (${questionCounts['y10-3'] || 0}/169)`}
+                  </button>
+                )}
+                <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#f0fdf4', color: '#16a34a', border: '1.5px solid #16a34a', fontWeight: 900 }}>
+                  {isMigrating ? 'Syncing...' : '🔄 Sync Y10 Ch3'}
+                </button>
+                <button onClick={handleSyncY10Ch4} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#fef2f2', color: '#dc2626', border: '1.5px solid #dc2626', fontWeight: 900 }}>
+                  {isMigrating ? 'Syncing...' : '🔄 Sync Y10 Ch4'}
+                </button>
+                <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#ecfdf5', color: '#059669', border: '1px solid #a7f3d0', fontWeight: 800 }}>
+                  {isMigrating ? 'Adding...' : '⚠️ Add Curve Q'}
+                </button>
+                {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
+                  <button onClick={handleSyncSelectedYear} className="app-button" style={{ fontSize: '0.7rem', padding: '4px 12px', borderRadius: '8px', background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd', fontWeight: 800 }}>
+                    Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
+                  </button>
+                )}
               </div>
+
               <div className="curriculum-title-area">
                 <label className="section-label">Curriculum Management</label>
                 <h2 className="curriculum-main-title">
@@ -503,61 +452,52 @@ const Curriculum = () => {
                 </h2>
               </div>
             </div>
-            <div className="app-page__actions" style={{ display: 'flex', gap: '12px' }}>
-              <button 
+
+            <div className="curriculum-actions-row">
+              <button
                 onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
                 className="app-button app-button--primary"
-                style={{ borderRadius: '14px', whiteSpace: 'nowrap' }}
+                style={{ borderRadius: '14px', whiteSpace: 'nowrap', flexShrink: 0 }}
               >
                 <Plus size={18} /> Add Chapter
               </button>
-              <div className="app-input" style={{ width: window.innerWidth < 768 ? '100%' : '300px' }}>
+              <div className="app-input curriculum-search">
                 <Search size={18} />
-                <input 
-                  type="text" 
-                  placeholder="Search topics..." 
+                <input
+                  type="text"
+                  placeholder="Search topics..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
+              </div>
             </div>
           </div>
 
-          <div className="curriculum-main-grid" style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: '32px', height: 'calc(100vh - 250px)' }}>
-            {/* Left Sidebar: Year Selection (ONLY FOR ADMIN) */}
-            <div className="app-panel curriculum-sidebar" style={{ padding: '16px', overflowY: 'auto', borderRadius: '24px' }}>
-              <div className="year-select-title" style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
-              <div style={{ display: 'flex', flexDirection: window.innerWidth < 1024 ? 'row' : 'column', gap: '8px' }}>
+          <div className="curriculum-main-grid">
+            {/* Left Sidebar: Year Selection */}
+            <div className="app-panel curriculum-sidebar">
+              <div className="year-select-title">SELECT YEAR LEVEL</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {YEARS.map(year => (
                   <button
                     key={year}
                     onClick={() => {
                       setSelectedYear(year);
-                      if (year === 'Year 11' || year === 'Year 12') {
-                        setSelectedCourse('Standard');
-                      }
+                      if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
                     }}
                     className="year-btn-mobile"
                     style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      padding: '14px 16px',
-                      borderRadius: '16px',
-                      border: 'none',
                       background: selectedYear === year ? '#6366f1' : '#f8fafc',
                       color: selectedYear === year ? 'white' : '#64748b',
-                      fontWeight: 700,
-                      fontSize: '0.9rem',
-                      cursor: 'pointer',
-                      transition: 'all 0.2s',
-                      minWidth: window.innerWidth < 1024 ? 'fit-content' : 'auto'
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <GraduationCap size={16} />
                       {year}
                     </div>
-                    {selectedYear === year && window.innerWidth >= 1024 && <ChevronRight size={16} />}
+                    {selectedYear === year && (
+                      <span className="year-btn-chevron"><ChevronRight size={16} /></span>
+                    )}
                   </button>
                 ))}
               </div>
@@ -597,13 +537,7 @@ const Curriculum = () => {
               )}
 
               {/* Chapters Grid */}
-              <div className="chapters-grid" style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-                gap: '20px',
-                overflowY: window.innerWidth < 1024 ? 'visible' : 'auto',
-                paddingBottom: '100px'
-              }}>
+              <div className="chapters-grid">
                 {displayData.length > 0 ? displayData.map(chapter => {
                   const completed = chapter.completed || 0;
                   const p = chapter.modules > 0 ? Math.round((completed / chapter.modules) * 100) : 0;
