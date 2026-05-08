@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Sapere Aude Academia | Student Management</title>
     <meta name="description" content="Premium student management platform for elite educators." />
-    
+
     <!-- PWA Settings -->
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#6366f1" />
@@ -18,28 +18,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- KaTeX for Mathematics -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   </head>
-  <body style="background:#000;margin:0;">
-    <div id="root" style="background:#000;"></div>
+  <body>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      window.addEventListener('error', function(event) {
-        fetch('http://localhost:5174/log-error', {
-          method: 'POST',
-          body: JSON.stringify({ message: event.message, filename: event.filename, lineno: event.lineno, colno: event.colno, error: event.error ? event.error.stack : null })
-        }).catch(function(){});
-      });
-      window.addEventListener('unhandledrejection', function(event) {
-        fetch('http://localhost:5174/log-error', {
-          method: 'POST',
-          body: JSON.stringify({ message: event.reason ? event.reason.message : 'Unhandled Rejection', stack: event.reason ? event.reason.stack : null })
-        }).catch(function(){});
-      });
-    </script>
   </body>
 </html>

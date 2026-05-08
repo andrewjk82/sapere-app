@@ -1340,15 +1340,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const finishQuiz = async () => {
     if (isFinishing) return;
+    // Declared outside try so catch block can safely reference it
+    const currentAnswerResults = answerResults || [];
+    const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
     try {
       setIsFinishing(true);
       setStep('result');
       if (setIsLocked) setIsLocked(false);
-      
+
       if (user?.uid) {
         const now = new Date();
         const today = now.toLocaleDateString('en-CA'); // Reliable YYYY-MM-DD local date
-        const ref = challengeType === 'calc' 
+        const ref = challengeType === 'calc'
           ? doc(db, 'users', user.uid, 'calc_stats', today)
           : doc(db, 'users', user.uid, 'daily_stats', today);
         const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
@@ -1357,9 +1360,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-')) : [])
           : getAssignedChapters(studentProfile, assignedYear);
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
-        
-        const currentAnswerResults = answerResults || [];
-        const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
         const maxXp = getChallengeMaxXp(challengeType);
         const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType);
         const resultStats = summarizeResults(currentAnswerResults);
