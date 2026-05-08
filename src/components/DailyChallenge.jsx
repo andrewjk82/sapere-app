@@ -335,6 +335,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const [isReporting, setIsReporting] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
+  const [reportMessage, setReportMessage] = useState('');
   const [subAnswers, setSubAnswers] = useState({});
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
