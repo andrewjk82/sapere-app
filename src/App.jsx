@@ -2,9 +2,6 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
-import { importYear11Ch3Questions } from './scripts/importYear11Ch3';
-import { importYear10Ch3 } from './scripts/importYear10Ch3';
-import { importYear10Ch4 } from './scripts/importYear10Ch4';
 import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
@@ -182,26 +179,6 @@ function App() {
   
   const { showToast } = useToast();
 
-  useEffect(() => {
-    const syncCurriculum = async () => {
-      if (isAdmin && user) {
-        try {
-          const count11 = await importYear11Ch3Questions();
-          const count10Ch3 = await importYear10Ch3();
-          const count10Ch4 = await importYear10Ch4();
-          
-          const totalCount = (count11 || 0) + (count10Ch3 || 0) + (count10Ch4 || 0);
-          if (totalCount > 0) {
-            showToast(`Curriculum updated! Added ${totalCount} new questions.`, 'success');
-          }
-        } catch (error) {
-          console.error('Sync error:', error);
-        }
-      }
-    };
-    syncCurriculum();
-  }, [isAdmin, user]);
-
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');
   const [isLocked, setIsLocked] = useState(false);
@@ -334,22 +311,15 @@ function App() {
 
   // Real listener for notifications
   useEffect(() => {
-    if (!user?.uid) return;
-    const setupListener = async () => {
-      const { collection, query, orderBy, limit } = await import('firebase/firestore');
-      const q = query(
-        collection(db, 'users', user.uid, 'notifications'),
-        orderBy('timestamp', 'desc'),
-        limit(10)
-      );
-      return onSnapshot(q, (snap) => {
-        setNotifications(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-      });
-    };
-    
-    let unsubscribe;
-    setupListener().then(unsub => { unsubscribe = unsub; });
-    return () => unsubscribe && unsubscribe();
+    if (!user?.uid) return undefined;
+    const q = query(
+      collection(db, 'users', user.uid, 'notifications'),
+      orderBy('timestamp', 'desc'),
+      limit(10)
+    );
+    return onSnapshot(q, (snap) => {
+      setNotifications(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    });
   }, [user?.uid]);
 
   const handleMarkAsRead = async () => {
@@ -653,11 +623,12 @@ function App() {
     switch (activeTab) {
       case 'Dashboard':
         return (
-          <Dashboard 
-            students={students} 
-            onAddStudent={() => setIsModalOpen(true)} 
+          <Dashboard
+            students={students}
+            onAddStudent={() => setIsModalOpen(true)}
             onSelectStudent={(id) => setSelectedStudentId(id)}
             onShowLeaderboard={() => setShowLeaderboard(true)}
+            setActiveTab={handleTabChange}
           />
         );
       case 'Students':

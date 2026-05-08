@@ -1561,7 +1561,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                               <button 
                                 onClick={(e) => {
                                   e.stopPropagation();
-                                  setReportedQuestion(q);
+                                  setReportedQuestion(qData);
                                   setIsReporting(true);
                                 }}
                                 style={{ position: 'absolute', top: '16px', right: '16px', border: 'none', background: '#fff', padding: '6px', borderRadius: '8px', cursor: 'pointer', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.7rem', fontWeight: 800, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}
@@ -1569,8 +1569,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 <Flag size={14} /> REPORT
                               </button>
                             )}
-                            <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: q.isManual ? '80px' : '0' }}>
-                              {idx + 1}. <MathView content={questionText} graphData={q.graphData} />
+                            <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: qData.isManual ? '80px' : '0' }}>
+                              {idx + 1}. <MathView content={questionText} graphData={qData.graphData} />
                             </div>
 
                             {/* Display Working Out / Handwritten notes */}

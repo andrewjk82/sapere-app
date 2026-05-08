@@ -130,7 +130,7 @@ const MathView = ({ content, graphData, style }) => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       {graphData && <MathGraph {...graphData} />}
       <div ref={containerRef} style={combinedStyle}>{safeContent}</div>
     </div>
