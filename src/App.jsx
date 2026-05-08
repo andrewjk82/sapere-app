@@ -249,8 +249,8 @@ function App() {
   const [isCapsuleExpanded, setIsCapsuleExpanded] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [showNotifs, setShowNotifs] = useState(false);
-  const [showOpeningIntro, setShowOpeningIntro] = useState(() => Boolean(auth.currentUser));
-  const [openingIntroVisible, setOpeningIntroVisible] = useState(() => Boolean(auth.currentUser));
+  const [showOpeningIntro, setShowOpeningIntro] = useState(true);
+  const [openingIntroVisible, setOpeningIntroVisible] = useState(true);
   const [isStandaloneIntro, setIsStandaloneIntro] = useState(() => isStandaloneAppDisplay());
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
@@ -412,12 +412,8 @@ function App() {
     }
     if (!profileLoaded && !isAdmin) return undefined;
 
-    const timer = window.setTimeout(() => {
-      setShowOpeningIntro(true);
-      setOpeningIntroVisible(true);
-    }, 80);
-
-    return () => window.clearTimeout(timer);
+    setShowOpeningIntro(true);
+    setOpeningIntroVisible(true);
   }, [isAdmin, profileLoaded, user?.uid]);
 
   useEffect(() => {
