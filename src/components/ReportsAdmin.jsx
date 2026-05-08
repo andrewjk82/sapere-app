@@ -9,35 +9,44 @@ import MathView from './MathView';
 const ReportsAdmin = () => {
   const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
   const [reports, setReports] = useState([]);
-  const [gradingQueue, setGradingQueue] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [gradingQueue, setGradingQueue] = useState([]); // Added missing state
+  const [reportsLoading, setReportsLoading] = useState(true);
+  const [gradingLoading, setGradingLoading] = useState(true);
   const [editingQuestion, setEditingQuestion] = useState(null);
   const [isDeletingAll, setIsDeletingAll] = useState(false);
   const [processingId, setProcessingId] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
     // Listen for Issue Reports
     const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'));
     const unsubReports = onSnapshot(qReports, (snapshot) => {
       const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
       setReports(data);
-      if (viewMode === 'reports') setLoading(false);
+      setReportsLoading(false);
+    }, (err) => {
+      console.error("Reports subscription error:", err);
+      setReportsLoading(false);
     });
 
     // Listen for Grading Queue
     const qGrading = query(collection(db, 'grading_queue'), where('status', '==', 'pending'));
     const unsubGrading = onSnapshot(qGrading, (snapshot) => {
       const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
-      setGradingQueue(data.sort((a, b) => (b.submittedAt?.toMillis?.() || 0) - (a.submittedAt?.toMillis?.() || 0)));
-      if (viewMode === 'grading') setLoading(false);
+      const sorted = data.sort((a, b) => (b.submittedAt?.toMillis?.() || 0) - (a.submittedAt?.toMillis?.() || 0));
+      setGradingQueue(sorted);
+      setGradingLoading(false);
+    }, (err) => {
+      console.error("Grading subscription error:", err);
+      setGradingLoading(false);
     });
 
     return () => {
       unsubReports();
       unsubGrading();
     };
-  }, [viewMode]);
+  }, []);
+
+  const loading = viewMode === 'reports' ? reportsLoading : gradingLoading;
 
   const handleMarkResolved = async (reportId) => {
     try {
@@ -102,7 +111,15 @@ const ReportsAdmin = () => {
           // 3. Update the specific Challenge record if possible
           // Challenges are stored by date in daily_stats/calc_stats
           if (item.submittedAt) {
-            const date = item.submittedAt.toDate().toISOString().split('T')[0];
+            let date;
+            try {
+              date = item.submittedAt.toDate ? item.submittedAt.toDate().toISOString().split('T')[0] : 
+                     (item.submittedAt instanceof Date ? item.submittedAt.toISOString().split('T')[0] : 
+                     new Date().toISOString().split('T')[0]);
+            } catch (e) {
+              date = new Date().toISOString().split('T')[0];
+            }
+            
             const statsRef = item.challengeType === 'calc'
               ? doc(db, 'users', item.userId, 'calc_stats', date)
               : doc(db, 'users', item.userId, 'daily_stats', date);
@@ -281,15 +298,25 @@ const ReportsAdmin = () => {
         <div style={{ display: 'flex', background: '#f1f5f9', padding: '6px', borderRadius: '18px', gap: '4px', marginLeft: 'auto' }}>
           <button 
             onClick={() => setViewMode('reports')}
-            style={{ padding: '10px 24px', borderRadius: '14px', border: 'none', background: viewMode === 'reports' ? 'white' : 'transparent', color: viewMode === 'reports' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'reports' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
+            style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'reports' ? 'white' : 'transparent', color: viewMode === 'reports' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'reports' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
-            <MessageSquare size={18} /> Reports ({reports.filter(r => r.status !== 'resolved').length})
+            <MessageSquare size={18} /> Reports 
+            {reports.filter(r => r.status !== 'resolved').length > 0 && (
+              <span style={{ background: '#ef4444', color: 'white', fontSize: '0.7rem', padding: '2px 6px', borderRadius: '8px', marginLeft: '4px' }}>
+                {reports.filter(r => r.status !== 'resolved').length}
+              </span>
+            )}
           </button>
           <button 
             onClick={() => setViewMode('grading')}
-            style={{ padding: '10px 24px', borderRadius: '14px', border: 'none', background: viewMode === 'grading' ? 'white' : 'transparent', color: viewMode === 'grading' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'grading' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
+            style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'grading' ? 'white' : 'transparent', color: viewMode === 'grading' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'grading' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
-            <ClipboardCheck size={18} /> Grading Queue ({gradingQueue.length})
+            <ClipboardCheck size={18} /> Grading Queue
+            {gradingQueue.length > 0 && (
+              <span style={{ background: '#6366f1', color: 'white', fontSize: '0.7rem', padding: '2px 6px', borderRadius: '8px', marginLeft: '4px' }}>
+                {gradingQueue.length}
+              </span>
+            )}
           </button>
         </div>
 

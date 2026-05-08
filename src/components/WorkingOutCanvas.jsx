@@ -8,53 +8,28 @@ const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
 
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
   const displayCanvasRef = useRef(null);
-  const offscreenRef = useRef(null);
   const rafRef = useRef(null);
 
   const isDrawingRef = useRef(false);
   const currentStrokeRef = useRef(null);
 
   // --- State ---
-  const [strokes, setStrokes] = useState([]); // List of { points, color, width, isEraser, eraserMode }
+  const [strokes, setStrokes] = useState([]); 
   const [undoStack, setUndoStack] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [pages, setPages] = useState([[]]); // Array of stroke lists
+  const [pages, setPages] = useState([[]]); 
 
   const [activeTool, setActiveTool] = useState('pen');
-  const [eraserMode, setEraserMode] = useState('area'); // 'area' | 'stroke'
+  const [eraserMode, setEraserMode] = useState('area'); 
   const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
   const [strokeWidth, setStrokeWidth] = useState(3);
 
   const isGraph = questionType === 'graph_sketch';
 
-  const syncSize = useCallback(() => {
-    const display = displayCanvasRef.current;
-    if (!display) return;
-    const { width, height } = display.getBoundingClientRect();
-    const dpr = window.devicePixelRatio || 1;
-    display.width = Math.round(width * dpr);
-    display.height = Math.round(height * dpr);
-    requestRender();
-  }, []);
-
-  useEffect(() => {
-    syncSize();
-    const ro = new ResizeObserver(syncSize);
-    if (displayCanvasRef.current) ro.observe(displayCanvasRef.current);
-    return () => ro.disconnect();
-  }, [syncSize]);
-
-  const requestRender = useCallback(() => {
-    if (rafRef.current) return;
-    rafRef.current = requestAnimationFrame(() => {
-      rafRef.current = null;
-      render();
-    });
-  }, [strokes, activeTool, eraserMode]);
-
-  const renderStroke = (ctx, stroke, dpr) => {
-    if (!stroke.points || stroke.points.length === 0) return;
+  // --- Rendering Logic ---
+  const renderStroke = useCallback((ctx, stroke, dpr) => {
+    if (!ctx || !stroke?.points || stroke.points.length === 0) return;
     
     ctx.save();
     ctx.lineCap = 'round';
@@ -86,28 +61,68 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       ctx.stroke();
     }
     ctx.restore();
-  };
+  }, []);
 
-  const render = () => {
+  const render = useCallback(() => {
     const canvas = displayCanvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
     const dpr = window.devicePixelRatio || 1;
+    
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Render all committed strokes
-    strokes.forEach(s => renderStroke(ctx, s, dpr));
+    if (Array.isArray(strokes)) {
+      strokes.forEach(s => renderStroke(ctx, s, dpr));
+    }
 
     // Render live stroke
     if (currentStrokeRef.current) {
       renderStroke(ctx, currentStrokeRef.current, dpr);
     }
-  };
+  }, [strokes, renderStroke]);
+
+  const requestRender = useCallback(() => {
+    if (rafRef.current) return;
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = null;
+      render();
+    });
+  }, [render]);
+
+  const syncSize = useCallback(() => {
+    const display = displayCanvasRef.current;
+    if (!display) return;
+    const { width, height } = display.getBoundingClientRect();
+    if (width === 0 || height === 0) return;
+    
+    const dpr = window.devicePixelRatio || 1;
+    const newW = Math.round(width * dpr);
+    const newH = Math.round(height * dpr);
+    
+    if (display.width !== newW || display.height !== newH) {
+      display.width = newW;
+      display.height = newH;
+    }
+    requestRender();
+  }, [requestRender]);
+
+  useEffect(() => {
+    syncSize();
+    const ro = new ResizeObserver(syncSize);
+    if (displayCanvasRef.current) ro.observe(displayCanvasRef.current);
+    return () => {
+      ro.disconnect();
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [syncSize]);
 
   useEffect(() => {
     render();
-  }, [strokes]);
+  }, [render]);
 
+  // --- Handlers ---
   const toCanvasPoint = (e) => {
     const rect = displayCanvasRef.current?.getBoundingClientRect();
     if (!rect) return null;
@@ -116,18 +131,25 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const onPointerDown = (e) => {
     if (isSubmitted || (palmGuard && e.pointerType !== 'pen')) return;
-    e.preventDefault();
-    displayCanvasRef.current.setPointerCapture(e.pointerId);
+    if (!displayCanvasRef.current) return;
     
+    // CRITICAL: Prevent default browser behavior (scroll/zoom) to ensure pointermove fires
+    e.preventDefault();
+
     const pt = toCanvasPoint(e);
     if (!pt) return;
 
+    try {
+      displayCanvasRef.current.setPointerCapture(e.pointerId);
+    } catch (err) {
+      console.warn("Pointer capture failed:", err);
+    }
+
     if (activeTool === 'eraser' && eraserMode === 'stroke') {
-      // Stroke Eraser Logic: Find and remove stroke
-      const dpr = window.devicePixelRatio || 1;
       const hitRadius = 15;
       const newStrokes = strokes.filter(s => {
         if (s.isEraser) return true;
+        if (!s.points) return false;
         return !s.points.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < hitRadius);
       });
       if (newStrokes.length !== strokes.length) {
@@ -148,27 +170,33 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   const onPointerMove = (e) => {
-    if (!isDrawingRef.current) return;
+    if (!isDrawingRef.current || !currentStrokeRef.current) return;
     const pt = toCanvasPoint(e);
     if (!pt) return;
 
     const pts = currentStrokeRef.current.points;
+    if (!pts) return;
     const last = pts[pts.length - 1];
-    if (last && Math.hypot(pt.x - last.x, pt.y - last.y) < 1) return;
+    if (last && Math.hypot(pt.x - last.x, pt.y - last.y) < 2) return; // Slightly larger threshold for performance
 
     currentStrokeRef.current.points.push(pt);
     requestRender();
   };
 
-  const onPointerUp = () => {
+  const onPointerUp = (e) => {
     if (!isDrawingRef.current) return;
     isDrawingRef.current = false;
+    
     if (currentStrokeRef.current) {
+      const finishedStroke = { ...currentStrokeRef.current };
       setUndoStack(prev => [...prev, strokes]);
-      setStrokes(prev => [...prev, currentStrokeRef.current]);
-      currentStrokeRef.current = null;
+      setStrokes(prev => [...prev, finishedStroke]);
+      // We don't null currentStrokeRef IMMEDIATELY to avoid the flicker before state update
+      setTimeout(() => {
+        currentStrokeRef.current = null;
+        requestRender();
+      }, 0);
     }
-    requestRender();
   };
 
   const handleUndo = () => {
@@ -200,7 +228,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     nextPages[currentPage] = strokes;
     setPages(nextPages);
     setCurrentPage(idx);
-    setStrokes(nextPages[idx]);
+    setStrokes(nextPages[idx] || []);
     setUndoStack([]);
   };
 
@@ -212,19 +240,19 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     exportPageImages: async () => {
       const results = [];
       const originalStrokes = [...strokes];
-      const originalPage = currentPage;
-      
       const all = [...pages];
       all[currentPage] = strokes;
 
+      const canvas = displayCanvasRef.current;
+      if (!canvas) return [];
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return [];
+      const dpr = window.devicePixelRatio || 1;
+
       for (let i = 0; i < all.length; i++) {
-        // We need to render each page temporarily to export
-        // This is a bit tricky with state, but we can use the canvas directly
-        const canvas = displayCanvasRef.current;
-        const ctx = canvas.getContext('2d');
-        const dpr = window.devicePixelRatio || 1;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        all[i].forEach(s => renderStroke(ctx, s, dpr));
+        const pageStrokes = all[i] || [];
+        pageStrokes.forEach(s => renderStroke(ctx, s, dpr));
         results.push(canvas.toDataURL('image/png'));
       }
       

@@ -379,23 +379,59 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const handleGrade = async (status) => {
     if (!selectedGradingItem) return;
     try {
+      // 1. Update the grading queue item
       await updateDoc(doc(db, 'grading_queue', selectedGradingItem.id), {
         status,
         gradedAt: serverTimestamp(),
         gradedBy: user.uid
       });
       
+      const type = selectedGradingItem.challengeType || 'daily';
+      const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
+      const userId = selectedGradingItem.userId;
+      
+      // Improved statId lookup for older records
+      let statId = selectedGradingItem.date;
+      if (!statId && selectedGradingItem.submittedAt) {
+        const sAt = selectedGradingItem.submittedAt;
+        const d = (typeof sAt.toDate === 'function') ? sAt.toDate() : new Date(sAt);
+        if (!isNaN(d.getTime())) {
+          statId = d.toLocaleDateString('en-CA'); // Match local date format used when saving
+        }
+      }
+      if (!statId) statId = selectedGradingItem.id.split('_')[0]; // Final fallback
+
       if (status === 'correct') {
-        // Calculate proportional XP
+        // 2. Calculate proportional XP
         const totalQ = selectedGradingItem.totalQuestions || 10;
-        const type = selectedGradingItem.challengeType || 'daily';
         const maxXP = type === 'calc' ? 50 : 100;
         const xpPerQuestion = Math.round(maxXP / totalQ);
 
-        await updateDoc(doc(db, 'users', selectedGradingItem.userId), {
+        // 3. Update overall XP in user doc
+        await updateDoc(doc(db, 'users', userId), {
           totalXP: increment(xpPerQuestion),
           updatedAt: new Date().toISOString()
         });
+
+        // 4. Update the actual score in the daily/calc stats record
+        if (statId && userId) {
+          try {
+            const statRef = doc(db, 'users', userId, colName, statId);
+            await updateDoc(statRef, {
+              score: increment(1)
+            });
+          } catch (statErr) {
+            console.warn("Could not update stat score (might be a manual student or missing doc):", statErr);
+            // Fallback for students in 'students' collection if manual
+            try {
+              const manualStatRef = doc(db, 'students', userId, colName, statId);
+              await updateDoc(manualStatRef, {
+                score: increment(1)
+              });
+            } catch (e2) {}
+          }
+        }
+
         showToast(`Graded as Correct. Student received ${xpPerQuestion} XP!`, 'success');
       } else {
         showToast(`Graded as Incorrect.`, 'info');

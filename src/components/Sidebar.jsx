@@ -55,6 +55,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
   const [profile, setProfile] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
   const [reportCount, setReportCount] = useState(0);
+  const [gradingCount, setGradingCount] = useState(0);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1024);
@@ -64,11 +65,22 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
 
   useEffect(() => {
     if (!isAdmin) return;
-    const q = query(collection(db, 'reports'), where('status', '==', 'open'));
-    const unsub = onSnapshot(q, (snap) => {
+    // Listen for issue reports
+    const qReports = query(collection(db, 'reports'), where('status', '==', 'open'));
+    const unsubReports = onSnapshot(qReports, (snap) => {
       setReportCount(snap.size);
     });
-    return unsub;
+
+    // Listen for grading queue (manual grading items)
+    const qGrading = query(collection(db, 'grading_queue'), where('status', '==', 'pending'));
+    const unsubGrading = onSnapshot(qGrading, (snap) => {
+      setGradingCount(snap.size);
+    });
+
+    return () => {
+      unsubReports();
+      unsubGrading();
+    };
   }, [isAdmin]);
 
   useEffect(() => {
@@ -113,7 +125,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
           <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
         )}
         {isAdmin && (
-          <SidebarItem icon={Inbox} label="Reports" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount} />
+          <SidebarItem icon={Inbox} label="Reports & Review" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount + gradingCount} />
         )}
         <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} />
         <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} />

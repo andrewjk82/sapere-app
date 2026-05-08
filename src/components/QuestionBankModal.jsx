@@ -102,53 +102,33 @@ const FileUploader = ({ onUpload, currentUrl, label }) => {
   );
 };
 
+import MathView, { toDisplayText } from './MathView';
+
 const MathPreview = ({ content, graphData, style = {} }) => {
   const containerRef = React.useRef(null);
+  const safeContent = toDisplayText(content);
 
   useEffect(() => {
     if (containerRef.current && window.renderMathInElement) {
       window.renderMathInElement(containerRef.current, {
         delimiters: [
           { left: '$$', right: '$$', display: true },
-          { left: '$', right: '$', display: false }
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true },
         ],
         throwOnError: false
       });
     }
-  }, [content]);
+  }, [safeContent]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       <div ref={containerRef} style={{ padding: '16px', background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', minHeight: '50px', fontSize: '1rem', color: '#1e293b', lineHeight: 1.6, ...style }}>
-        {content || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Preview will appear here...</span>}
+        {safeContent || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Preview will appear here...</span>}
       </div>
       {graphData && (
         <div style={{ display: 'flex', justifyContent: 'center', padding: '16px', background: 'white', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-          <MathGraph data={graphData} />
-        </div>
-      )}
-    </div>
-  );
-};
-
-const MathView = ({ content, graphData, style = {} }) => {
-  const containerRef = React.useRef(null);
-  useEffect(() => {
-    if (containerRef.current && window.renderMathInElement) {
-      window.renderMathInElement(containerRef.current, {
-        delimiters: [
-          { left: '$$', right: '$$', display: true },
-          { left: '$', right: '$', display: false }
-        ],
-        throwOnError: false
-      });
-    }
-  }, [content]);
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      <div ref={containerRef} style={style}>{content}</div>
-      {graphData && (
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
           <MathGraph data={graphData} />
         </div>
       )}
@@ -225,6 +205,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     solution: '',
     hint: '',
     topicTitle: '',
+    subQuestions: [],
     requiresManualGrading: false,
     graphData: ''
   });
@@ -279,6 +260,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: q.solution || '',
         hint: q.hint || '',
         topicTitle: q.topicTitle || '',
+        subQuestions: q.subQuestions || [],
         requiresManualGrading: q.requiresManualGrading || false,
         graphData: q.graphData ? JSON.stringify(q.graphData, null, 2) : ''
       });
@@ -302,6 +284,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: '',
         hint: '',
         topicTitle: '',
+        subQuestions: [],
         requiresManualGrading: false,
         graphData: ''
       });
@@ -348,6 +331,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answer: formData.type === 'multiple_choice' ? formData.answerIdx.toString() : formData.answer,
         solution: formData.solution,
         hint: formData.hint,
+        subQuestions: (formData.subQuestions || []).map(sq => ({
+          ...sq,
+          answer: sq.type === 'multiple_choice' ? (sq.answerIdx?.toString() || '') : sq.answer
+        })),
         requiresManualGrading: formData.requiresManualGrading || false,
         graphData: formData.graphData ? JSON.parse(formData.graphData) : null,
         updatedAt: serverTimestamp()
@@ -628,47 +615,130 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 </div>
               </div>
 
-              {/* Manual Grading Toggle */}
-              <div
-                onClick={() => setFormData(prev => ({ ...prev, requiresManualGrading: !prev.requiresManualGrading }))}
-                style={{
-                  display: 'flex', alignItems: 'center', gap: '16px',
-                  padding: '16px 20px', borderRadius: '16px', cursor: 'pointer',
-                  background: formData.requiresManualGrading ? '#fffbeb' : '#f8fafc',
-                  border: `1.5px solid ${formData.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`,
-                  transition: 'all 0.2s'
-                }}
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+          <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Sub-questions (Optional)</label>
+          <button 
+            onClick={() => setFormData(prev => ({
+              ...prev,
+              subQuestions: [...prev.subQuestions, { 
+                id: Date.now().toString(), 
+                question: '', 
+                type: 'short_answer', 
+                options: [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }], 
+                answer: '',
+                answerIdx: null,
+                solution: '',
+                hint: ''
+              }]
+            }))}
+            className="app-button"
+            style={{ padding: '6px 12px', fontSize: '0.75rem', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe' }}
+          >
+            <Plus size={14} /> Add Sub-question
+          </button>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {formData.subQuestions.map((sq, sIdx) => (
+            <div key={sq.id || sIdx} style={{ padding: '24px', borderRadius: '24px', border: '2px solid #f1f5f9', background: '#fcfdff', position: 'relative' }}>
+              <button 
+                onClick={() => setFormData(prev => ({
+                  ...prev,
+                  subQuestions: prev.subQuestions.filter((_, i) => i !== sIdx)
+                }))}
+                style={{ position: 'absolute', top: '16px', right: '16px', border: 'none', background: '#fff1f2', color: '#f43f5e', padding: '6px', borderRadius: '8px', cursor: 'pointer' }}
               >
-                <div style={{
-                  width: '44px', height: '24px', borderRadius: '100px',
-                  background: formData.requiresManualGrading ? '#f59e0b' : '#cbd5e1',
-                  position: 'relative', transition: 'all 0.2s', flexShrink: 0
-                }}>
-                  <div style={{
-                    position: 'absolute', top: '3px',
-                    left: formData.requiresManualGrading ? '22px' : '3px',
-                    width: '18px', height: '18px', borderRadius: '50%',
-                    background: 'white', transition: 'all 0.2s',
-                    boxShadow: '0 1px 4px rgba(0,0,0,0.15)'
-                  }} />
+                <Trash2 size={14} />
+              </button>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
+                <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem', fontWeight: 900 }}>
+                  {String.fromCharCode(97 + sIdx)}
                 </div>
-                <div>
-                  <div style={{ fontWeight: 800, fontSize: '0.9rem', color: formData.requiresManualGrading ? '#92400e' : '#374151', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <AlertTriangle size={14} color={formData.requiresManualGrading ? '#d97706' : '#94a3b8'} />
-                    Requires Teacher Review
-                  </div>
-                  <div style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '2px' }}>
-                    {formData.requiresManualGrading
-                      ? 'Student answer will go to grading queue — no auto-score'
-                      : 'Auto-detected for: Draw, Sketch, Show that, Prove, etc.'}
-                  </div>
-                </div>
+                <span style={{ fontWeight: 800, color: '#1e293b', fontSize: '0.9rem' }}>Part ({String.fromCharCode(97 + sIdx)})</span>
               </div>
 
-              <div style={{ display: 'flex', gap: '16px', paddingTop: '16px', borderTop: '1px solid #f1f5f9' }}>
-                <button onClick={() => setIsFormOpen(false)} style={{ padding: '16px', borderRadius: '16px', background: '#f1f5f9', color: '#475569', fontWeight: 700, border: 'none', cursor: 'pointer', flex: 1 }}>Cancel</button>
-                <button onClick={handleSave} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '16px', flex: 2 }}>{editingQuestion ? 'Update Question' : 'Save Question'}</button>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <textarea 
+                  rows={2} 
+                  value={sq.question} 
+                  onChange={e => {
+                    const newSub = [...formData.subQuestions];
+                    newSub[sIdx].question = e.target.value;
+                    setFormData({...formData, subQuestions: newSub});
+                  }} 
+                  style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.9rem' }} 
+                  placeholder="Sub-question text..." 
+                />
+                
+                <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '4px', borderRadius: '12px', width: 'fit-content' }}>
+                  {['multiple_choice', 'short_answer'].map(type => (
+                    <button 
+                      key={type} 
+                      onClick={() => {
+                        const newSub = [...formData.subQuestions];
+                        newSub[sIdx].type = type;
+                        setFormData({...formData, subQuestions: newSub});
+                      }}
+                      style={{ padding: '6px 12px', borderRadius: '10px', border: 'none', background: sq.type === type ? 'white' : 'transparent', color: sq.type === type ? '#6366f1' : '#64748b', fontWeight: 800, fontSize: '0.7rem', cursor: 'pointer' }}
+                    >
+                      {type === 'multiple_choice' ? 'MCQ' : 'Short'}
+                    </button>
+                  ))}
+                </div>
+
+                {sq.type === 'multiple_choice' ? (
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                    {(sq.options || []).map((opt, oIdx) => (
+                      <div key={oIdx} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <div 
+                          onClick={() => {
+                            const newSub = [...formData.subQuestions];
+                            newSub[sIdx].answerIdx = oIdx;
+                            setFormData({...formData, subQuestions: newSub});
+                          }}
+                          style={{ width: '24px', height: '24px', borderRadius: '50%', background: sq.answerIdx === oIdx ? '#10b981' : '#f1f5f9', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: '0.7rem' }}
+                        >
+                          {sq.answerIdx === oIdx ? <Check size={14} /> : (oIdx + 1)}
+                        </div>
+                        <input 
+                          type="text" 
+                          value={opt.text} 
+                          onChange={e => {
+                            const newSub = [...formData.subQuestions];
+                            newSub[sIdx].options[oIdx].text = e.target.value;
+                            setFormData({...formData, subQuestions: newSub});
+                          }}
+                          style={{ flex: 1, padding: '8px 12px', borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '0.8rem', fontWeight: 600 }} 
+                          placeholder={`Opt ${oIdx + 1}`}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <input 
+                    type="text" 
+                    value={sq.answer} 
+                    onChange={e => {
+                      const newSub = [...formData.subQuestions];
+                      newSub[sIdx].answer = e.target.value;
+                      setFormData({...formData, subQuestions: newSub});
+                    }}
+                    style={{ width: '100%', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '0.85rem', fontWeight: 700, color: '#166534', background: '#f0fdf4' }} 
+                    placeholder="Correct answer..."
+                  />
+                )}
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', gap: '16px', paddingTop: '16px', borderTop: '1px solid #f1f5f9' }}>
+        <button onClick={() => setIsFormOpen(false)} style={{ padding: '16px', borderRadius: '16px', background: '#f1f5f9', color: '#475569', fontWeight: 700, border: 'none', cursor: 'pointer', flex: 1 }}>Cancel</button>
+        <button onClick={handleSave} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '16px', flex: 2 }}>{editingQuestion ? 'Update Question' : 'Save Question'}</button>
+      </div>
             </div>
           )}
         </div>

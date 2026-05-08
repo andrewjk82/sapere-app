@@ -334,9 +334,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [chapterProgress, setChapterProgress] = useState(null);
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const [isReporting, setIsReporting] = useState(false);
-  const [reportMessage, setReportMessage] = useState('');
-  const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
+  const [subAnswers, setSubAnswers] = useState({});
+  const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const [showHint, setShowHint] = useState(false);
   const [autoTransitionTimer, setAutoTransitionTimer] = useState(null);
@@ -362,7 +362,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   );
 
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
-  const TOTAL_QUESTIONS = getQuestionCount(challengeType);
+  const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
   const getChallengeMaxXp = (type) => {
     if (type === 'calc') return 50;
@@ -657,7 +657,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setLoading(true);
       try {
         // Check today
-        const today = new Date().toISOString().split('T')[0];
+        const today = new Date().toLocaleDateString('en-CA');
         const todayRef = doc(db, 'users', user.uid, 'daily_stats', today);
         const calcTodayRef = doc(db, 'users', user.uid, 'calc_stats', today);
         let todaySnap;
@@ -747,7 +747,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   }, [user?.uid]);
 
   const startCalculationQuiz = async () => {
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date().toLocaleDateString('en-CA');
     if (calcCompletedToday || calcAbandonedToday) {
       showToast("Today's Basic Calculation has already been used. Please try again tomorrow.", 'info');
       return;
@@ -964,7 +964,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
       if (user?.uid) {
         const now = new Date();
-        const today = now.toISOString().split('T')[0];
+        const today = now.toLocaleDateString('en-CA');
         setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
           completed: false,
           score: 0,
@@ -1156,16 +1156,47 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         } catch(e){}
       }
       correct = false; // Pending review
+    } else if (currentQ?.subQuestions?.length > 0) {
+      // Handle sub-questions
+      const subResults = currentQ.subQuestions.map((sq, idx) => {
+        const userAnswer = (optionText && typeof optionText === 'object') ? optionText[sq.id || idx] : '';
+        const normalizedInput = String(userAnswer || '').replace(/\s+/g, '').toLowerCase();
+        const normalizedAnswer = String(sq.answer || '').replace(/\s+/g, '').toLowerCase();
+        
+        let isSqCorrect = false;
+        if (sq.type === 'multiple_choice') {
+          isSqCorrect = normalizedInput === normalizedAnswer;
+        } else {
+          isSqCorrect = normalizedInput === normalizedAnswer;
+        }
+        return { id: sq.id || idx, correct: isSqCorrect, answer: userAnswer };
+      });
+      
+      correct = subResults.every(r => r.correct);
+      const pointsEarned = subResults.filter(r => r.correct).length;
+      
+      // Store sub-results in result object for history view
+      currentQ.lastSubResults = subResults;
+      currentQ.pointsEarned = pointsEarned;
+      currentQ.totalPoints = currentQ.subQuestions.length;
+      
+      if (pointsEarned > 0) {
+        setScore(prev => prev + pointsEarned);
+      }
     } else if (isShortAnswer) {
       const normalizedInput = (optionText || '').replace(/\s+/g, '').toLowerCase();
       const normalizedAnswer = (currentQ.answer || '').replace(/\s+/g, '').toLowerCase();
       correct = normalizedInput === normalizedAnswer;
+      if (correct) setScore(prev => prev + 1);
     } else {
-      if (optIdx !== null && currentQ.isManual && currentQ.answer === optIdx.toString()) {
-        correct = true;
-      } else {
-        correct = String(optionText) === String(currentQ.answer);
-      }
+      // Robust multiple choice check:
+      // 1. Check if answer matches the option index (common for manual bank questions)
+      const isIndexMatch = optIdx !== null && String(currentQ.answer) === String(optIdx);
+      // 2. Check if answer matches the literal option text
+      const isTextMatch = String(optionText) === String(currentQ.answer);
+      
+      correct = isIndexMatch || isTextMatch;
+      if (correct) setScore(prev => prev + 1);
     }
 
     if (isGraphSketch) {
@@ -1174,6 +1205,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           userId: user.uid,
           userName: studentProfile?.name || studentProfile?.displayName || user?.displayName || 'Student',
           userEmail: studentProfile?.email || user?.email || '',
+          date: new Date().toLocaleDateString('en-CA'), // Explicit local date for stat lookup
           questionId: currentQ?.id || null,
           questionText: currentQ?.question || currentQ?.text || '',
           answerImage: canvasDataUrl || null,
@@ -1216,7 +1248,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setSelectedOption(optionText);
     setSelectedOptionIdx(optIdx);
     setIsCorrect(correct);
-    if (correct && !isGraphSketch) setScore(prev => prev + 1);
+    
+    // Scoring is now handled in the logic above based on sub-questions or individual results
     
     setUserAnswers(prev => {
       const newAnswers = [...prev];
@@ -1226,6 +1259,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     setAnswerResults(prev => {
       const newResults = [...prev];
+      const pEarned = currentQ?.subQuestions?.length > 0 
+        ? (currentQ.pointsEarned || 0)
+        : (correct ? 1 : 0);
+      const tPoints = currentQ?.subQuestions?.length > 0 
+        ? (currentQ.subQuestions.length)
+        : 1;
+
       newResults[currentIdx] = {
         questionId: currentQ?.id || null,
         type: currentQ?.type || 'unknown',
@@ -1240,6 +1280,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         difficulty: currentQ?.difficulty || 'manual',
         selectedAnswer: isGraphSketch ? 'Pending Review' : optionText,
         correct,
+        pointsEarned: pEarned,
+        totalPoints: tPoints,
         isPending: isGraphSketch,
         isManual: Boolean(currentQ?.isManual),
         workingOut: canvasDataUrl, // Store the handwritten work
@@ -1283,6 +1325,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setAutoTransitionTimer(null);
     }
     setCountdown(0);
+    setSubAnswers({});
 
     if (currentIdx < TOTAL_QUESTIONS - 1) {
       const nextIdx = currentIdx + 1;
@@ -1303,7 +1346,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       
       if (user?.uid) {
         const now = new Date();
-        const today = now.toISOString().split('T')[0];
+        const today = now.toLocaleDateString('en-CA'); // Reliable YYYY-MM-DD local date
         const ref = challengeType === 'calc' 
           ? doc(db, 'users', user.uid, 'calc_stats', today)
           : doc(db, 'users', user.uid, 'daily_stats', today);
@@ -1315,8 +1358,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
         
         const currentAnswerResults = answerResults || [];
+        const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
         const maxXp = getChallengeMaxXp(challengeType);
-        const xpEarned = getEarnedXp(score, TOTAL_QUESTIONS, challengeType);
+        const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType);
         const resultStats = summarizeResults(currentAnswerResults);
         const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle');
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
@@ -1324,9 +1368,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         
         const record = {
           completed: true,
+          abandoned: false, // Explicitly mark as not abandoned
           id: today,
-          score,
-          total: TOTAL_QUESTIONS,
+          score: actualScore,
+          total: totalPossibleScore,
           challengeType,
           maxXp,
           xpEarned,
@@ -1346,20 +1391,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           difficultyMixAfter: nextDifficultyMix,
         };
         
-        // --- Atomic Update via Transaction ---
+        // 1. Save the challenge stat record first
+        await setDoc(ref, record, { merge: true });
+
+        // 2. Atomic Update for XP and Progress
         await runTransaction(db, async (transaction) => {
           const userRef = doc(db, 'users', user.uid);
-          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`);
+          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear || 'General').replace(' ', '_')}_daily`);
           
-          // 1. Get current user profile to ensure we are updating existing doc
           const userSnap = await transaction.get(userRef);
           
-          // 2. Save the challenge stat (ref)
-          transaction.set(ref, record, { merge: true });
-
-          // 3. Update chapter progress
+          // Update chapter progress
           transaction.set(progressRef, {
-            year: assignedYear,
+            year: assignedYear || 'General',
             chapterId: record.chapterId,
             chapterTitle: record.chapterTitle,
             assignedChapters,
@@ -1368,34 +1412,25 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             lastResultStats: resultStats,
             lastTopicStats: topicStats,
             lastChapterStats: chapterStats,
-            lastScore: score,
-            lastTotal: TOTAL_QUESTIONS,
+            lastScore: actualScore,
+            lastTotal: totalPossibleScore,
             updatedAt: now.toISOString(),
           }, { merge: true });
 
-          // 4. Update overall XP/Points in user doc
+          // Update overall XP/Points - Use set with merge for maximum robustness
           const userData = userSnap.data() || {};
           const currentXP = Number(userData.totalXP) || 0;
           const currentCount = Number(userData.challengesCompleted) || 0;
           
-          if (userSnap.exists()) {
-            transaction.update(userRef, {
-              totalXP: currentXP + xpEarned,
-              challengesCompleted: currentCount + 1
-            });
-          } else {
-            // Fallback for new users
-            transaction.set(userRef, {
-              totalXP: xpEarned,
-              challengesCompleted: 1
-            }, { merge: true });
-          }
+          transaction.set(userRef, {
+            totalXP: currentXP + xpEarned,
+            challengesCompleted: currentCount + 1,
+            lastActive: now.toISOString()
+          }, { merge: true });
         });
 
         // --- Local State Updates ---
-        pruneOldChallengeStats(user.uid, challengeType === 'calc' ? 'calc_stats' : 'daily_stats').catch(err => {
-          console.warn('history cleanup failed (non-fatal):', err.code || err);
-        });
+        pruneOldChallengeStats(user.uid, challengeType === 'calc' ? 'calc_stats' : 'daily_stats').catch(() => {});
 
         setChapterProgress(prev => ({
           ...(prev || {}),
@@ -1416,7 +1451,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     } catch (err) {
       console.error("Error in finishQuiz:", err);
-      // Even if database update fails, we stay in result step so user sees their score
+      showToast(`Save Failed: ${err.message || 'Database error'}. Your score was ${actualScore}/${TOTAL_QUESTIONS}`, 'error');
       setStep('result');
     }
   };
@@ -1554,12 +1589,45 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 </button>
                               </div>
                             )}
-                            {getOptions(q).length === 0 ? (
+                            {q.subQuestions?.length > 0 ? (
+                               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                 {q.subQuestions.map((sq, sIdx) => {
+                                   const sUserAnswer = userAnswer && typeof userAnswer === 'object' ? userAnswer[sq.id || sIdx] : '';
+                                   const sIsCorrect = String(sUserAnswer || '').replace(/\s+/g, '').toLowerCase() === String(sq.answer || '').replace(/\s+/g, '').toLowerCase();
+                                   
+                                   return (
+                                     <div key={sq.id || sIdx} style={{ padding: '16px', borderRadius: '16px', background: sIsCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${sIsCorrect ? '#dcfce7' : '#fee2e2'}` }}>
+                                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                         <div style={{ width: '24px', height: '24px', borderRadius: '6px', background: sIsCorrect ? '#10b981' : '#ef4444', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 900 }}>
+                                           {String.fromCharCode(97 + sIdx)}
+                                         </div>
+                                         <MathView content={sq.question} style={{ fontWeight: 700, fontSize: '0.9rem', color: sIsCorrect ? '#166534' : '#991b1b' }} />
+                                       </div>
+                                       <div style={{ fontSize: '0.85rem', fontWeight: 600 }}>
+                                         <span style={{ opacity: 0.6 }}>Your Answer:</span> <MathView content={String(sUserAnswer || 'None')} style={{ display: 'inline' }} />
+                                         {!sIsCorrect && (
+                                           <div style={{ marginTop: '4px', color: '#166534' }}>
+                                             <span style={{ opacity: 0.6 }}>Correct Answer:</span> <MathView content={String(sq.answer)} style={{ display: 'inline' }} />
+                                           </div>
+                                         )}
+                                       </div>
+                                     </div>
+                                   );
+                                 })}
+                               </div>
+                             ) : getOptions(q).length === 0 ? (
                               <div style={{ display: 'grid', gap: '10px' }}>
-                                <div style={{ padding: '12px 16px', borderRadius: '12px', background: isCorrect ? '#dcfce7' : '#fee2e2', border: `1px solid ${isCorrect ? '#22c55e' : '#ef4444'}`, color: isCorrect ? '#166534' : '#991b1b', fontWeight: 800 }}>
+                                <div style={{ 
+                                  padding: '12px 16px', 
+                                  borderRadius: '12px', 
+                                  background: result?.isPending ? '#fffbeb' : (isCorrect ? '#dcfce7' : '#fee2e2'), 
+                                  border: `1px solid ${result?.isPending ? '#fcd34d' : (isCorrect ? '#22c55e' : '#ef4444')}`, 
+                                  color: result?.isPending ? '#b45309' : (isCorrect ? '#166534' : '#991b1b'), 
+                                  fontWeight: 800 
+                                }}>
                                   Student Answer: <MathView content={String(userAnswer ?? 'No answer')} />
                                 </div>
-                                {!isCorrect && (
+                                {!isCorrect && !result?.isPending && (
                                   <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#dcfce7', border: '1px solid #22c55e', color: '#166534', fontWeight: 800 }}>
                                     Correct Answer: <MathView content={String(q.answer ?? '')} />
                                   </div>
@@ -1579,14 +1647,20 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 let border = '1px solid #cbd5e1';
                                 let color = '#475569';
                                 
-                                if (isAnswer) {
+                                if (isAnswer && !result?.isPending) {
                                   bg = '#dcfce7';
                                   border = '1px solid #22c55e';
                                   color = '#166534';
                                 } else if (isSelected && !isCorrect) {
-                                  bg = '#fee2e2';
-                                  border = '1px solid #ef4444';
-                                  color = '#991b1b';
+                                  if (result?.isPending) {
+                                    bg = '#fffbeb';
+                                    border = '1px solid #fcd34d';
+                                    color = '#b45309';
+                                  } else {
+                                    bg = '#fee2e2';
+                                    border = '1px solid #ef4444';
+                                    color = '#991b1b';
+                                  }
                                 }
 
                                 return (
@@ -1596,8 +1670,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                       {optImage && <img src={optImage} alt="Option" style={{ maxHeight: '40px', maxWidth: '100px', objectFit: 'contain' }} />}
                                     </div>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                      {isAnswer && <Check size={18} style={{ color: '#166534' }} />}
-                                      {isSelected && !isCorrect && <X size={18} style={{ color: '#991b1b' }} />}
+                                      {isAnswer && !result?.isPending && <Check size={18} style={{ color: '#166534' }} />}
+                                      {isSelected && !isCorrect && (
+                                        result?.isPending ? <Clock size={18} style={{ color: '#b45309' }} /> : <X size={18} style={{ color: '#991b1b' }} />
+                                      )}
                                     </div>
                                   </div>
                                 );
@@ -2175,7 +2251,89 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                 )}
               </div>
 
-              {questions[currentIdx]?.type === 'short_answer' ? (
+              {questions[currentIdx]?.subQuestions?.length > 0 ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                  {questions[currentIdx].subQuestions.map((sq, sIdx) => (
+                    <div key={sq.id || sIdx} style={{ padding: '24px', borderRadius: '24px', background: 'white', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                        <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
+                          {String.fromCharCode(97 + sIdx)}
+                        </div>
+                        <MathView content={sq.question} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
+                      </div>
+
+                      {sq.type === 'multiple_choice' ? (
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
+                          {(sq.options || []).map((opt, oIdx) => {
+                            const isSelected = subAnswers[sq.id || sIdx] === (typeof opt === 'string' ? opt : opt.text);
+                            const isCorrect = step === 'feedback' && (
+                              (sq.isManual && String(oIdx) === String(sq.answer)) || (!sq.isManual && String(typeof opt === 'string' ? opt : opt.text) === String(sq.answer))
+                            );
+                            const isWrong = step === 'feedback' && isSelected && !isCorrect;
+
+                            return (
+                              <button
+                                key={oIdx}
+                                onClick={() => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: (typeof opt === 'string' ? opt : opt.text) }))}
+                                disabled={step === 'feedback'}
+                                style={{
+                                  padding: '12px 16px',
+                                  borderRadius: '12px',
+                                  border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9'}`,
+                                  background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : isSelected ? '#f5f3ff' : '#fff',
+                                  color: isCorrect ? '#166534' : isWrong ? '#991b1b' : isSelected ? '#4f46e5' : '#64748b',
+                                  fontWeight: 800,
+                                  fontSize: '0.85rem',
+                                  cursor: step === 'feedback' ? 'default' : 'pointer',
+                                  transition: 'all 0.2s',
+                                  textAlign: 'left'
+                                }}
+                              >
+                                {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                              </button>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <div style={{ position: 'relative' }}>
+                          <input 
+                            type="text"
+                            disabled={step === 'feedback'}
+                            value={subAnswers[sq.id || sIdx] || ''}
+                            onChange={(e) => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
+                            placeholder="Type answer..."
+                            style={{ 
+                              width: '100%',
+                              padding: '12px 16px', 
+                              borderRadius: '12px', 
+                              border: `2px solid ${step === 'feedback' ? (String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() === String(sq.answer).replace(/\s+/g, '').toLowerCase() ? '#10b981' : '#ef4444') : '#f1f5f9'}`, 
+                              background: 'white',
+                              fontWeight: 700,
+                              fontSize: '0.95rem'
+                            }}
+                          />
+                          {step === 'feedback' && String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() !== String(sq.answer).replace(/\s+/g, '').toLowerCase() && (
+                            <div style={{ marginTop: '8px', fontSize: '0.75rem', color: '#166534', fontWeight: 800, background: '#f0fdf4', padding: '4px 10px', borderRadius: '6px' }}>
+                              Correct: <MathView content={String(sq.answer)} style={{ display: 'inline' }} />
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                  
+                  {step !== 'feedback' && (
+                    <button 
+                      onClick={() => handleAnswer(subAnswers)}
+                      disabled={Object.keys(subAnswers).length < questions[currentIdx].subQuestions.length}
+                      className="app-button app-button--primary"
+                      style={{ padding: '20px', borderRadius: '24px', fontSize: '1.1rem', marginTop: '12px' }}
+                    >
+                      Submit All Parts
+                    </button>
+                  )}
+                </div>
+              ) : questions[currentIdx]?.type === 'short_answer' ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   {/* Math Symbol Toolbar */}
                   <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
@@ -2364,39 +2522,61 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
               {step === 'feedback' && (
                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '10px' }}>
-                  <div style={{ padding: '24px', borderRadius: '24px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#dcfce7' : '#fee2e2'}` }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                      {isCorrect ? <CheckCircle2 size={24} color="#10b981" /> : <XCircle size={24} color="#ef4444" />}
-                      <span style={{ fontSize: '1.1rem', fontWeight: 900, color: isCorrect ? '#166534' : '#991b1b' }}>
-                        {isCorrect ? 'Excellent!' : 'Keep going!'}
-                      </span>
-                    </div>
-                    {!isCorrect && (
-                      <div style={{ margin: '0 0 16px', padding: '12px 16px', borderRadius: '12px', background: 'white', border: '1px solid #fee2e2' }}>
-                        <p style={{ margin: 0, color: '#b91c1c', fontSize: '0.95rem', fontWeight: 800 }}>
-                          <span style={{ opacity: 0.7, marginRight: '8px' }}>Correct Answer:</span>
-                          <MathView content={
-                            questions[currentIdx].type === 'multiple_choice' && questions[currentIdx].isManual
-                              ? getOptionText(getOptions(questions[currentIdx])[parseInt(questions[currentIdx].answer)]) 
-                              : questions[currentIdx].answer
-                          } />
-                        </p>
-                      </div>
-                    )}
-                    {questions[currentIdx]?.solution && (
-                      <div style={{ background: 'white', padding: '16px', borderRadius: '16px', marginTop: '12px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#6366f1', marginBottom: '8px' }}>
-                          <Lightbulb size={18} />
-                          <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.05em' }}>Solution</span>
+                  {(() => {
+                    const isPendingReview = questions[currentIdx]?.type === 'graph_sketch' || questions[currentIdx]?.requiresManualGrading === true;
+                    
+                    if (isPendingReview) {
+                      return (
+                        <div style={{ padding: '24px', borderRadius: '24px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                            <Clock size={24} color="#d97706" />
+                            <span style={{ fontSize: '1.1rem', fontWeight: 900, color: '#92400e' }}>
+                              Submitted for Review!
+                            </span>
+                          </div>
+                          <p style={{ margin: 0, color: '#b45309', fontSize: '0.95rem', fontWeight: 600 }}>
+                            Your teacher will review your work and award points soon.
+                          </p>
                         </div>
-                        <MathView 
-                          content={questions[currentIdx].solution} 
-                          graphData={questions[currentIdx].graphData}
-                          style={{ color: '#475569', fontSize: '0.95rem' }} 
-                        />
+                      );
+                    }
+
+                    return (
+                      <div style={{ padding: '24px', borderRadius: '24px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#dcfce7' : '#fee2e2'}` }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                          {isCorrect ? <CheckCircle2 size={24} color="#10b981" /> : <XCircle size={24} color="#ef4444" />}
+                          <span style={{ fontSize: '1.1rem', fontWeight: 900, color: isCorrect ? '#166534' : '#991b1b' }}>
+                            {isCorrect ? 'Excellent!' : 'Keep going!'}
+                          </span>
+                        </div>
+                        {!isCorrect && (
+                          <div style={{ margin: '0 0 16px', padding: '12px 16px', borderRadius: '12px', background: 'white', border: '1px solid #fee2e2' }}>
+                            <p style={{ margin: 0, color: '#b91c1c', fontSize: '0.95rem', fontWeight: 800 }}>
+                              <span style={{ opacity: 0.7, marginRight: '8px' }}>Correct Answer:</span>
+                              <MathView content={
+                                questions[currentIdx].type === 'multiple_choice' && questions[currentIdx].isManual
+                                  ? getOptionText(getOptions(questions[currentIdx])[parseInt(questions[currentIdx].answer)]) 
+                                  : questions[currentIdx].answer
+                              } />
+                            </p>
+                          </div>
+                        )}
+                        {questions[currentIdx]?.solution && (
+                          <div style={{ background: 'white', padding: '16px', borderRadius: '16px', marginTop: '12px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#6366f1', marginBottom: '8px' }}>
+                              <Lightbulb size={18} />
+                              <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.05em' }}>Solution</span>
+                            </div>
+                            <MathView 
+                              content={questions[currentIdx].solution} 
+                              graphData={questions[currentIdx].graphData}
+                              style={{ color: '#475569', fontSize: '0.95rem' }} 
+                            />
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
+                    );
+                  })()}
                   <button onClick={nextQuestion} className="app-button app-button--primary" style={{ padding: '20px', borderRadius: '20px', fontSize: '1.1rem', width: '100%' }}>
                     {currentIdx === TOTAL_QUESTIONS - 1 ? (countdown > 0 ? `Finish Challenge (${countdown}s)` : 'Finish Challenge') : (countdown > 0 ? `Next Question (${countdown}s)` : 'Next Question')}
                   </button>
@@ -2438,17 +2618,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             </div>
             <h1 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '8px' }}>Challenge Complete!</h1>
             <p style={{ color: '#64748b', fontWeight: 700, fontSize: '1.1rem', marginBottom: '40px' }}>
-              You scored <span style={{ color: '#6366f1' }}>{score} out of {TOTAL_QUESTIONS}</span>
+              You scored <span style={{ color: '#6366f1' }}>{score} out of {totalPossibleScore}</span>
             </p>
-
+            
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
               <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>
                 <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '4px' }}>POINTS EARNED</span>
-                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>+{getEarnedXp(score, TOTAL_QUESTIONS, challengeType)} XP</span>
+                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>+{getEarnedXp(score, totalPossibleScore, challengeType)} XP</span>
               </div>
               <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>
                 <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '4px' }}>ACCURACY</span>
-                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{Math.round((score/TOTAL_QUESTIONS)*100)}%</span>
+                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{totalPossibleScore > 0 ? Math.round((score/totalPossibleScore)*100) : 0}%</span>
               </div>
             </div>
 

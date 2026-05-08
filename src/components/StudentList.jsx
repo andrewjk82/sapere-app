@@ -16,21 +16,45 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
   const [profileStudent, setProfileStudent] = useState(null);
   const [completionStates, setCompletionStates] = useState({}); // { studentId: boolean }
 
-  const todayStr = new Date().toISOString().split('T')[0];
+  const todayStr = new Date().toLocaleDateString('en-CA'); // Local YYYY-MM-DD, avoids UTC timezone shift
 
   React.useEffect(() => {
     if (!students || students.length === 0) return;
 
     const unsubs = students.map(student => {
-      const docRef = doc(db, 'users', student.id, 'daily_stats', todayStr);
-      return onSnapshot(docRef, (snap) => {
+      // Determine potential collection names
+      const colName = student.source === 'manual' ? 'students' : 'users';
+      const dailyRef = doc(db, colName, student.id, 'daily_stats', todayStr);
+      const calcRef = doc(db, colName, student.id, 'calc_stats', todayStr);
+
+      const updateCompletion = (id, dailySnap, calcSnap) => {
+        const isDailyDone = dailySnap.exists() && dailySnap.data().completed === true;
+        const isCalcDone = calcSnap.exists() && calcSnap.data().completed === true;
+        
         setCompletionStates(prev => ({
           ...prev,
-          [student.id]: snap.exists() && snap.data().completed === true
+          [id]: isDailyDone || isCalcDone
         }));
-      }, (err) => {
-        console.warn(`Error fetching daily stats for ${student.id}:`, err);
-      });
+      };
+
+      // Since we need to coordinate two snapshots, we'll store local state for this student
+      let dailySnap = { exists: () => false };
+      let calcSnap = { exists: () => false };
+
+      const unsubDaily = onSnapshot(dailyRef, (snap) => {
+        dailySnap = snap;
+        updateCompletion(student.id, dailySnap, calcSnap);
+      }, (err) => console.warn(`Error daily stats for ${student.id}:`, err));
+
+      const unsubCalc = onSnapshot(calcRef, (snap) => {
+        calcSnap = snap;
+        updateCompletion(student.id, dailySnap, calcSnap);
+      }, (err) => console.warn(`Error calc stats for ${student.id}:`, err));
+
+      return () => {
+        unsubDaily();
+        unsubCalc();
+      };
     });
 
     return () => unsubs.forEach(unsub => unsub());

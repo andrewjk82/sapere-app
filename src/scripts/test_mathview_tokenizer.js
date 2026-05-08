@@ -1,12 +1,3 @@
-import React, { useEffect, useRef } from 'react';
-import MathGraph from './MathGraph';
-
-/**
- * Minimal safe pre-processing.
- * ONLY replaces unicode math symbols with their LaTeX equivalents.
- * NEVER adds, removes, or mutates $ or \( delimiters — 
- * the database already stores correct LaTeX.
- */
 const toDisplayText = (value, fallback = '') => {
   if (value === null || value === undefined) return fallback;
 
@@ -21,7 +12,7 @@ const toDisplayText = (value, fallback = '') => {
     str = fallback;
   }
 
-  // 1. Unicode → LaTeX symbol substitutions
+  // 1. Unicode substitutions (always safe)
   str = str.replace(/√/g, '\\sqrt');
   str = str.replace(/π/g, '\\pi');
   str = str.replace(/θ/g, '\\theta');
@@ -34,13 +25,10 @@ const toDisplayText = (value, fallback = '') => {
   str = str.replace(/×/g, '\\times');
   str = str.replace(/÷/g, '\\div');
 
-  // 2. Safety catches for broken data imports (Double backslashes & excessive dollars)
-  // Replaces \\ with \ unless it's a structural newline like \\n
+  // 2. Fix double backslashes
   str = str.replace(/\\\\([a-zA-Z0-9])/g, '\\$1');
-  // Fix weird triple dollars that sometimes happen in LLM data
-  str = str.replace(/\$\$\$/g, '$$');
-
-  // 3. Fix surd syntax: \sqrt18 -> \sqrt{18}
+  
+  // 3. Fix missing braces for single digit surds
   str = str.replace(/\\sqrt(\d+)/g, '\\sqrt{$1}');
 
   // 4. Tokenize to separate Math Blocks from Plain Text
@@ -66,8 +54,8 @@ const toDisplayText = (value, fallback = '') => {
         return match;
       });
 
-      // Safely wrap naked LaTeX commands (handles up to one level of nested braces)
-      const nakedCommandRegex = /\\(?:sqrt|pi|theta|pm|approx|times|div|le|ge|frac|times|varphi|phi)(?:\{(?:[^{}]|\{[^{}]*\})*\})*/g;
+      // Safely wrap naked LaTeX commands
+      const nakedCommandRegex = /\\(?:sqrt|pi|theta|pm|approx|times|div|le|ge)(?:\{[^}]*\})?/g;
       text = text.replace(nakedCommandRegex, (match) => {
         return `$${match}$`;
       });
@@ -99,42 +87,11 @@ const toDisplayText = (value, fallback = '') => {
   return str;
 };
 
-const MathView = ({ content, graphData, style }) => {
-  const containerRef = useRef(null);
-  const safeContent = toDisplayText(content);
-
-  useEffect(() => {
-    if (containerRef.current && window.renderMathInElement) {
-      try {
-        window.renderMathInElement(containerRef.current, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$',  right: '$',  display: false },
-            { left: '\\(', right: '\\)', display: false },
-            { left: '\\[', right: '\\]', display: true },
-          ],
-          throwOnError: false,
-        });
-      } catch (err) {
-        console.warn('KaTeX render error:', err);
-      }
-    }
-  }, [safeContent]);
-
-  const combinedStyle = {
-    fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-    letterSpacing: '0.01em',
-    fontWeight: 'inherit',
-    ...style,
-  };
-
-  return (
-    <div className="flex flex-col">
-      {graphData && <MathGraph {...graphData} />}
-      <div ref={containerRef} style={combinedStyle}>{safeContent}</div>
-    </div>
-  );
-};
-
-export default MathView;
-export { toDisplayText };
+// Tests based on screenshots
+console.log('1:', toDisplayText('The golden ratio is \\varphi = \\frac{\\sqrt{5} + 1}{2}'));
+console.log('2:', toDisplayText('\\frac{3 + \\sqrt{5}}{2}'));
+console.log('3:', toDisplayText('$\\frac{3 + \\sqrt{5}}{2}$'));
+console.log('4:', toDisplayText('Principal = \\frac{Interest}{Rate \\times Time} = 1,000 / (0.06 \\times 8)'));
+console.log('5:', toDisplayText('-4\\times3b - (-4)\\times(-5) = -12b + 20'));
+console.log('6:', toDisplayText('$$\\frac{n}{50}$$'));
+console.log('7:', toDisplayText('Simplify the surd: \\sqrt{147}'));

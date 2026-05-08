@@ -23,7 +23,7 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot } from 'firebase/firestore';
+import { doc, onSnapshot, query, collection, where, orderBy, limit } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import './components/app-shell.css';
@@ -361,6 +361,43 @@ function App() {
     });
     await batch.commit();
   };
+
+  useEffect(() => {
+    if (!user?.uid || !isAdmin) return undefined;
+
+    // Listener for new manual grading items
+    const qGrading = query(collection(db, 'grading_queue'), where('status', '==', 'pending'), orderBy('submittedAt', 'desc'), limit(1));
+    let initialGradingLoad = true;
+    const unsubGrading = onSnapshot(qGrading, (snap) => {
+      if (initialGradingLoad) {
+        initialGradingLoad = false;
+        return;
+      }
+      if (!snap.empty) {
+        const data = snap.docs[0].data();
+        showToast(`📝 New Review Required: ${data.userName} submitted a question.`, 'info', 5000);
+      }
+    });
+
+    // Listener for new issue reports
+    const qReports = query(collection(db, 'reports'), where('status', '==', 'open'), orderBy('createdAt', 'desc'), limit(1));
+    let initialReportsLoad = true;
+    const unsubReports = onSnapshot(qReports, (snap) => {
+      if (initialReportsLoad) {
+        initialReportsLoad = false;
+        return;
+      }
+      if (!snap.empty) {
+        const data = snap.docs[0].data();
+        showToast(`⚠️ New Issue Reported: ${data.studentName || 'Student'} filed a report.`, 'warning', 5000);
+      }
+    });
+
+    return () => {
+      unsubGrading();
+      unsubReports();
+    };
+  }, [user?.uid, isAdmin, showToast]);
 
   useEffect(() => {
     if (!user?.uid) return undefined;

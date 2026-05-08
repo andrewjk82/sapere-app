@@ -596,10 +596,83 @@ const Schedule = () => {
                     <p style={{ margin: 0, opacity: 0.85, fontWeight: 600 }}>{normalizeSubjectLabel(selectedSession.subject)} · {selectedSession.date}</p>
                     
                     {(selectedSession.isGroupedClass || selectedSession.groupStudentNames) && (
-                      <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                         <span style={{ fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Students ({selectedSession.isGroupedClass ? selectedSession.groupStudents.length : selectedSession.groupStudentNames.length})</span>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                          {(selectedSession.isGroupedClass ? selectedSession.groupStudents.map(s => s.studentName) : selectedSession.groupStudentNames).map((name, i) => (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                          {(selectedSession.isGroupedClass ? selectedSession.groupStudents : []).map((s, i) => (
+                            <span 
+                              key={i} 
+                              style={{ 
+                                position: 'relative',
+                                padding: '8px 14px', 
+                                paddingRight: isAdmin ? '32px' : '14px',
+                                background: 'rgba(255,255,255,0.15)', 
+                                border: '1px solid rgba(255,255,255,0.25)',
+                                borderRadius: '12px', 
+                                fontSize: '0.9rem', 
+                                fontWeight: 800,
+                                color: 'white',
+                                display: 'flex',
+                                alignItems: 'center'
+                              }}
+                            >
+                              {s.studentName}
+                              {isAdmin && (
+                                <button
+                                  onClick={async (e) => {
+                                    e.stopPropagation();
+                                    if (window.confirm(`Remove ${s.studentName} from this group?`)) {
+                                      try {
+                                        // 1. Delete this student's specific session document
+                                        await deleteDoc(doc(db, 'sessions', s.id));
+                                        
+                                        // 2. Update the remaining students' groupStudentNames list
+                                        const remainingDocs = selectedSession.groupStudents.filter(doc => doc.id !== s.id);
+                                        const remainingNames = remainingDocs.map(rd => rd.studentName);
+                                        
+                                        const { writeBatch } = await import('firebase/firestore');
+                                        const batch = writeBatch(db);
+                                        remainingDocs.forEach(rd => {
+                                          batch.update(doc(db, 'sessions', rd.id), {
+                                            groupStudentNames: remainingNames
+                                          });
+                                        });
+                                        await batch.commit();
+                                        
+                                        showToast(`${s.studentName} removed from group.`, 'success');
+                                        setSelectedSession(null); // Close modal to refresh view
+                                      } catch (err) {
+                                        console.error(err);
+                                        showToast('Failed to remove student.', 'error');
+                                      }
+                                    }
+                                  }}
+                                  style={{
+                                    position: 'absolute',
+                                    right: '8px',
+                                    top: '50%',
+                                    transform: 'translateY(-50%)',
+                                    background: 'rgba(0,0,0,0.2)',
+                                    border: 'none',
+                                    borderRadius: '50%',
+                                    width: '18px',
+                                    height: '18px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    cursor: 'pointer',
+                                    color: '#fff',
+                                    padding: 0
+                                  }}
+                                >
+                                  <X size={12} strokeWidth={3} />
+                                </button>
+                              )}
+                            </span>
+                          ))}
+                          
+                          {/* Fallback for legacy data without groupStudents array */}
+                          {!selectedSession.isGroupedClass && selectedSession.groupStudentNames && selectedSession.groupStudentNames.map((name, i) => (
                             <span key={i} style={{ padding: '6px 12px', background: 'rgba(255,255,255,0.2)', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 700 }}>{name}</span>
                           ))}
                         </div>
