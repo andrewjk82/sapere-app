@@ -1610,6 +1610,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                              <span style={{ opacity: 0.6 }}>Correct Answer:</span> <MathView content={String(sq.answer)} style={{ display: 'inline' }} />
                                            </div>
                                          )}
+                                         {sq.solution && (
+                                           <div style={{ marginTop: '12px', padding: '12px', borderRadius: '12px', background: 'white', border: '1px solid #e0e7ff', color: '#4338ca' }}>
+                                             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
+                                               <Lightbulb size={14} /> <span style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase' }}>Sub-part Solution</span>
+                                             </div>
+                                             <MathView content={sq.solution} />
+                                           </div>
+                                         )}
                                        </div>
                                      </div>
                                    );

@@ -260,7 +260,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: q.solution || '',
         hint: q.hint || '',
         topicTitle: q.topicTitle || '',
-        subQuestions: q.subQuestions || [],
+        subQuestions: (q.subQuestions || []).map(sq => ({
+          ...sq,
+          solution: sq.solution || '',
+          options: sq.options || [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }]
+        })),
         requiresManualGrading: q.requiresManualGrading || false,
         graphData: q.graphData ? JSON.stringify(q.graphData, null, 2) : ''
       });
@@ -660,17 +664,25 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <textarea 
-                  rows={2} 
-                  value={sq.question} 
-                  onChange={e => {
-                    const newSub = [...formData.subQuestions];
-                    newSub[sIdx].question = e.target.value;
-                    setFormData({...formData, subQuestions: newSub});
-                  }} 
-                  style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.9rem' }} 
-                  placeholder="Sub-question text..." 
-                />
+                <div>
+                  <textarea 
+                    rows={2} 
+                    value={sq.question} 
+                    onChange={e => {
+                      const newSub = [...formData.subQuestions];
+                      newSub[sIdx].question = e.target.value;
+                      setFormData({...formData, subQuestions: newSub});
+                    }} 
+                    style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.9rem', marginBottom: '8px' }} 
+                    placeholder="Sub-question text (LaTeX supported)..." 
+                  />
+                  {sq.question && (
+                    <div style={{ padding: '10px 14px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #f1f5f9' }}>
+                      <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', display: 'block', marginBottom: '4px', textTransform: 'uppercase' }}>Preview</span>
+                      <MathView content={sq.question} />
+                    </div>
+                  )}
+                </div>
                 
                 <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '4px', borderRadius: '12px', width: 'fit-content' }}>
                   {['multiple_choice', 'short_answer'].map(type => (
@@ -689,46 +701,85 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 </div>
 
                 {sq.type === 'multiple_choice' ? (
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                     {(sq.options || []).map((opt, oIdx) => (
-                      <div key={oIdx} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <div 
-                          onClick={() => {
-                            const newSub = [...formData.subQuestions];
-                            newSub[sIdx].answerIdx = oIdx;
-                            setFormData({...formData, subQuestions: newSub});
-                          }}
-                          style={{ width: '24px', height: '24px', borderRadius: '50%', background: sq.answerIdx === oIdx ? '#10b981' : '#f1f5f9', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: '0.7rem' }}
-                        >
-                          {sq.answerIdx === oIdx ? <Check size={14} /> : (oIdx + 1)}
+                      <div key={oIdx}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                          <div 
+                            onClick={() => {
+                              const newSub = [...formData.subQuestions];
+                              newSub[sIdx].answerIdx = oIdx;
+                              setFormData({...formData, subQuestions: newSub});
+                            }}
+                            style={{ width: '24px', height: '24px', borderRadius: '50%', background: sq.answerIdx === oIdx ? '#10b981' : '#f1f5f9', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: '0.7rem' }}
+                          >
+                            {sq.answerIdx === oIdx ? <Check size={14} /> : (oIdx + 1)}
+                          </div>
+                          <input 
+                            type="text" 
+                            value={opt.text} 
+                            onChange={e => {
+                              const newSub = [...formData.subQuestions];
+                              newSub[sIdx].options[oIdx].text = e.target.value;
+                              setFormData({...formData, subQuestions: newSub});
+                            }}
+                            style={{ flex: 1, padding: '8px 12px', borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '0.8rem', fontWeight: 600 }} 
+                            placeholder={`Opt ${oIdx + 1}`}
+                          />
                         </div>
-                        <input 
-                          type="text" 
-                          value={opt.text} 
-                          onChange={e => {
-                            const newSub = [...formData.subQuestions];
-                            newSub[sIdx].options[oIdx].text = e.target.value;
-                            setFormData({...formData, subQuestions: newSub});
-                          }}
-                          style={{ flex: 1, padding: '8px 12px', borderRadius: '10px', border: '1px solid #e2e8f0', fontSize: '0.8rem', fontWeight: 600 }} 
-                          placeholder={`Opt ${oIdx + 1}`}
-                        />
+                        {opt.text && (
+                          <div style={{ padding: '6px 10px', background: '#f8fafc', borderRadius: '8px', fontSize: '0.8rem' }}>
+                            <MathView content={opt.text} />
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <input 
-                    type="text" 
-                    value={sq.answer} 
+                  <div>
+                    <input 
+                      type="text" 
+                      value={sq.answer} 
+                      onChange={e => {
+                        const newSub = [...formData.subQuestions];
+                        newSub[sIdx].answer = e.target.value;
+                        setFormData({...formData, subQuestions: newSub});
+                      }}
+                      style={{ width: '100%', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '0.85rem', fontWeight: 700, color: '#166534', background: '#f0fdf4', marginBottom: '8px' }} 
+                      placeholder="Correct answer..."
+                    />
+                    {sq.answer && (
+                      <div style={{ padding: '8px 12px', background: '#f0fdf4', borderRadius: '10px', border: '1px solid #dcfce7' }}>
+                         <span style={{ fontSize: '0.6rem', fontWeight: 800, color: '#166534', display: 'block', marginBottom: '2px' }}>PREVIEW</span>
+                         <MathView content={sq.answer} />
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Sub-question Worked Solution */}
+                <div style={{ marginTop: '8px' }}>
+                  <label style={{ fontSize: '0.7rem', fontWeight: 800, color: '#64748b', display: 'block', marginBottom: '8px', textTransform: 'uppercase' }}>Worked Solution (Optional)</label>
+                  <textarea 
+                    rows={2} 
+                    value={sq.solution || ''} 
                     onChange={e => {
                       const newSub = [...formData.subQuestions];
-                      newSub[sIdx].answer = e.target.value;
+                      newSub[sIdx].solution = e.target.value;
                       setFormData({...formData, subQuestions: newSub});
-                    }}
-                    style={{ width: '100%', padding: '12px', borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '0.85rem', fontWeight: 700, color: '#166534', background: '#f0fdf4' }} 
-                    placeholder="Correct answer..."
+                    }} 
+                    style={{ width: '100%', padding: '12px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', color: '#4338ca', background: '#f5f7ff', marginBottom: '8px' }} 
+                    placeholder="Explain how to solve this part..." 
                   />
-                )}
+                  {sq.solution && (
+                    <div style={{ padding: '10px 14px', background: '#f5f7ff', borderRadius: '12px', border: '1px solid #e0e7ff' }}>
+                       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#6366f1', marginBottom: '4px' }}>
+                          <Lightbulb size={14} /> <span style={{ fontSize: '0.65rem', fontWeight: 900 }}>SOLUTION PREVIEW</span>
+                       </div>
+                       <MathView content={sq.solution} />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}
