@@ -4,11 +4,11 @@ import { collection, addDoc, serverTimestamp, getDocs, query, where } from 'fire
 
 export const importYear10Ch4 = async () => {
   const CHAPTER_ID = 'y10-4';
-  const YEAR = 10;
+  const BATCH_ID = 'y10-4-new-import-v1'; // Unique identifier for this specific set
 
   const questions = [
-    // Q9 (Split into separate questions)
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4d',
@@ -23,6 +23,7 @@ export const importYear10Ch4 = async () => {
       hint: 'First find the gradient $m$, then use $y - y_1 = m(x - x_1)$.'
     },
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4d',
@@ -37,6 +38,7 @@ export const importYear10Ch4 = async () => {
       hint: 'Find $m$ first, then substitute into $y = mx + c$ to find $c$.'
     },
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4d',
@@ -50,9 +52,8 @@ export const importYear10Ch4 = async () => {
       solution: `**Step 1: Find the gradient ($m$)**\\n$m = \\frac{12 - 7}{2 - (-3)} = \\frac{5}{5} = 1$\\n\\n**Step 2: Use the point-gradient form**\\nUsing $(2, 12)$ and $m = 1$:\\n$y - 12 = 1(x - 2)$\\n$y = x + 10$`,
       hint: 'Gradient is positive here. Use the formula $m = \\Delta y / \\Delta x$.'
     },
-
-    // Q10
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4e',
@@ -66,9 +67,8 @@ export const importYear10Ch4 = async () => {
       solution: `**Method: Substitution**\\nFrom the second equation: $x = y + 3$\\n\\n**Step 1: Substitute into the first equation**\\n$6(y + 3) + 2y = 26$\\n$6y + 18 + 2y = 26$\\n$8y = 8 \\Rightarrow y = 1$\\n\\n**Step 2: Find $x$**\\n$x = 1 + 3 = 4$\\nThe solution is $(4, 1)$.`,
       hint: 'Rearrange the second equation to $x = y + 3$ and substitute it into the first.'
     },
-
-    // Q12 (Sub-questions)
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4c',
@@ -102,9 +102,8 @@ export const importYear10Ch4 = async () => {
       ],
       hint: 'Find the midpoints and negative reciprocal gradients first.'
     },
-
-    // Q17
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4f',
@@ -118,9 +117,8 @@ export const importYear10Ch4 = async () => {
       solution: `Let the numbers be $x$ and $y$ ($x > y$).\\n1) $x + y = 152$\\n2) $x - y = 94$\\n\\n**Step 1: Add the equations**\\n$(x + y) + (x - y) = 152 + 94$\\n$2x = 246 \\Rightarrow x = 123$\\n\\n**Step 2: Find $y$**\\n$123 + y = 152 \\Rightarrow y = 29$\\nThe numbers are 29 and 123.`,
       hint: 'Let $x+y=152$ and $x-y=94$, then add the equations.'
     },
-
-    // Q19 (Sub-questions)
     {
+      batchId: BATCH_ID,
       chapterId: CHAPTER_ID,
       chapterTitle: 'Chapter 4: Lines and linear equations',
       topicId: 'y10-4b',
@@ -150,9 +148,10 @@ export const importYear10Ch4 = async () => {
   ];
 
   try {
-    const qSnap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', CHAPTER_ID), where('isManual', '==', true)));
-    if (qSnap.size >= questions.length) {
-      return 0;
+    // Check if THIS SPECIFIC BATCH already exists
+    const qSnap = await getDocs(query(collection(db, 'questions'), where('batchId', '==', BATCH_ID)));
+    if (!qSnap.empty) {
+      return 0; // Already imported this specific set
     }
 
     let count = 0;
