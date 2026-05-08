@@ -335,6 +335,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const [isReporting, setIsReporting] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
+  const [reportMessage, setReportMessage] = useState('');
   const [subAnswers, setSubAnswers] = useState({});
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
@@ -363,6 +364,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
+  // Each sub-question is worth 1 point; regular questions are worth 1 point
+  const totalPossibleScore = questions.reduce((acc, q) => {
+    const subCount = Array.isArray(q?.subQuestions) ? q.subQuestions.length : 0;
+    return acc + (subCount > 0 ? subCount : 1);
+  }, 0) || TOTAL_QUESTIONS;
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
   const getChallengeMaxXp = (type) => {
     if (type === 'calc') return 50;
@@ -1339,15 +1345,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const finishQuiz = async () => {
     if (isFinishing) return;
+    // Declared outside try so catch block can safely reference it
+    const currentAnswerResults = answerResults || [];
+    const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
     try {
       setIsFinishing(true);
       setStep('result');
       if (setIsLocked) setIsLocked(false);
-      
+
       if (user?.uid) {
         const now = new Date();
         const today = now.toLocaleDateString('en-CA'); // Reliable YYYY-MM-DD local date
-        const ref = challengeType === 'calc' 
+        const ref = challengeType === 'calc'
           ? doc(db, 'users', user.uid, 'calc_stats', today)
           : doc(db, 'users', user.uid, 'daily_stats', today);
         const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
@@ -1356,9 +1365,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-')) : [])
           : getAssignedChapters(studentProfile, assignedYear);
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
-        
-        const currentAnswerResults = answerResults || [];
-        const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
         const maxXp = getChallengeMaxXp(challengeType);
         const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType);
         const resultStats = summarizeResults(currentAnswerResults);
@@ -1561,7 +1567,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                               <button 
                                 onClick={(e) => {
                                   e.stopPropagation();
-                                  setReportedQuestion(q);
+                                  setReportedQuestion(qData);
                                   setIsReporting(true);
                                 }}
                                 style={{ position: 'absolute', top: '16px', right: '16px', border: 'none', background: '#fff', padding: '6px', borderRadius: '8px', cursor: 'pointer', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.7rem', fontWeight: 800, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}
@@ -1569,8 +1575,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 <Flag size={14} /> REPORT
                               </button>
                             )}
-                            <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: q.isManual ? '80px' : '0' }}>
-                              {idx + 1}. <MathView content={questionText} graphData={q.graphData} />
+                            <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: qData.isManual ? '80px' : '0' }}>
+                              {idx + 1}. <MathView content={questionText} graphData={qData.graphData} />
                             </div>
 
                             {/* Display Working Out / Handwritten notes */}

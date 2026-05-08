@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 const GMAIL_USER = process.env.GMAIL_USER || process.env.EMAIL_USER;
 const GMAIL_PASS = process.env.GMAIL_PASS || process.env.EMAIL_PASS;
@@ -50,7 +50,7 @@ function buildEmailTemplate(subject, body) {
   `;
 }
 
-const EmailService = {
+export const EmailService = {
   async sendEmail(to, subject, body) {
     if (!to || !to.includes('@')) {
       console.warn(`Invalid email address: ${to}. Skipping email.`);
@@ -92,5 +92,3 @@ const EmailService = {
     return false;
   }
 };
-
-module.exports = { EmailService };
