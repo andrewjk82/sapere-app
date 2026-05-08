@@ -22,20 +22,26 @@ const LeaderboardModal = ({ open, onClose, currentUserId, students = [] }) => {
     }
     
     const fetchLeaders = async () => {
-        setLoading(true);
-        try {
-        const [usersSnap, studentsSnap] = await Promise.all([
-          getDocs(collection(db, 'users')),
-          getDocs(collection(db, 'students')),
-        ]);
+      setLoading(true);
+      try {
+        const usersSnap = await getDocs(collection(db, 'users'));
         const registeredStudents = usersSnap.docs
           .map(d => ({ id: d.id, source: 'registered', ...d.data() }))
           .filter(u => {
             const role = String(u.role || '').toLowerCase();
             return role !== 'admin' && role !== 'parent' && u.email !== 'andrewjk82@gmail.com';
           });
-        const manualStudents = studentsSnap.docs
-          .map(d => ({ id: `manual-${d.id}`, sourceId: d.id, source: 'manual', ...d.data() }));
+
+        // Manual students may be inaccessible for non-admin users — skip gracefully
+        let manualStudents = [];
+        try {
+          const studentsSnap = await getDocs(collection(db, 'students'));
+          manualStudents = studentsSnap.docs
+            .map(d => ({ id: `manual-${d.id}`, sourceId: d.id, source: 'manual', ...d.data() }));
+        } catch {
+          console.warn('manual leaderboard onSnapshot permission error (non-fatal): permission-denied');
+        }
+
         const data = [...manualStudents, ...registeredStudents]
           .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0))
           .slice(0, 50);

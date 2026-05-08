@@ -364,6 +364,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
+  // Each sub-question is worth 1 point; regular questions are worth 1 point
+  const totalPossibleScore = questions.reduce((acc, q) => {
+    const subCount = Array.isArray(q?.subQuestions) ? q.subQuestions.length : 0;
+    return acc + (subCount > 0 ? subCount : 1);
+  }, 0) || TOTAL_QUESTIONS;
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
   const getChallengeMaxXp = (type) => {
     if (type === 'calc') return 50;
