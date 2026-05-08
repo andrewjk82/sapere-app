@@ -1544,19 +1544,20 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   ) : (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                       {selectedChallenge.questions.map((q, idx) => {
-                        if (!q) return null;
                         const result = selectedChallenge.answerResults?.[idx];
+                        if (!result) return null;
                         const userAnswer = result?.selectedAnswer ?? (selectedChallenge.userAnswers ? selectedChallenge.userAnswers[idx] : null);
-                        
-                        // Flexible matching for answer strings/numbers/indices
+                        const qData = questions.find(q => q.id === result.questionId);
+                        if (!qData) return null; // Safety catch
+
                         const isCorrect = typeof result?.correct === 'boolean'
                           ? result.correct
-                          : String(userAnswer) === String(q.answer);
-                        const questionText = toDisplayText(q.text || q.question, 'Question text unavailable');
+                          : String(userAnswer) === String(qData.answer);
+                        const questionText = toDisplayText(qData?.text || qData?.question, 'Question text unavailable');
                         const workingOutPages = getWorkingOutPages(result);
                         return (
                           <div key={idx} style={{ padding: '20px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', position: 'relative' }}>
-                            {q.isManual && (
+                            {qData.isManual && (
                               <button 
                                 onClick={(e) => {
                                   e.stopPropagation();

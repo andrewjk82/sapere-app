@@ -66,8 +66,9 @@ const toDisplayText = (value, fallback = '') => {
         return match;
       });
 
-      // Safely wrap naked LaTeX commands (handles up to one level of nested braces)
-      const nakedCommandRegex = /\\(?:sqrt|pi|theta|pm|approx|times|div|le|ge|frac|times|varphi|phi)(?:\{(?:[^{}]|\{[^{}]*\})*\})*/g;
+      // Safely wrap naked LaTeX commands
+      // A simpler, non-recursive regex is safer against ReDoS
+      const nakedCommandRegex = /\\(sqrt|pi|theta|pm|approx|times|div|le|ge|frac|varphi|phi)(\{[^{}]*\})*/g;
       text = text.replace(nakedCommandRegex, (match) => {
         return `$${match}$`;
       });

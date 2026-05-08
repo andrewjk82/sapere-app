@@ -188,7 +188,9 @@ const ReportsAdmin = () => {
             {report.questionData && (
               <div style={{ marginTop: '16px', borderTop: '1px solid #f1f5f9', paddingTop: '16px' }}>
                 <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Reported Question</span>
-                <p style={{ margin: '8px 0 0', fontWeight: 600, color: '#1e293b' }}>{report.questionData.question}</p>
+                <p style={{ margin: '8px 0 0', fontWeight: 600, color: '#1e293b' }}>
+                  {report.questionData.question || report.questionData.text || 'No question text'}
+                </p>
               </div>
             )}
           </div>
