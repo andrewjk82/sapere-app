@@ -494,7 +494,7 @@ const Curriculum = () => {
 
               {/* Row 3 — Course tabs (Year 11/12 only) */}
               {courses && (
-                <div className="curriculum-course-tabs" style={{ marginTop: '4px', marginBottom: '8px' }}>
+                <div className="curriculum-course-tabs" style={{ marginBottom: '12px' }}>
                   {courses.map(course => (
                     <button
                       key={course}

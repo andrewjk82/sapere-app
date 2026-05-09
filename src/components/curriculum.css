@@ -24,7 +24,7 @@
   padding: 16px 28px 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 2px;
 }
 
 @media (max-width: 768px) {
@@ -154,7 +154,7 @@
 
 .curriculum-year-tab {
   flex: 0 0 auto;
-  padding: 12px 14px 14px;
+  padding: 12px 14px 6px;
   border: none;
   background: transparent;
   color: #94a3b8;
