@@ -419,27 +419,6 @@ const Curriculum = () => {
           <h2>Curriculum</h2>
           <p>Explore learning paths, manage chapters, and sync questions across all year levels.</p>
         </div>
-        {isAdmin && (
-          <div className="app-page__actions" style={{ display: 'flex', gap: '8px' }}>
-            <button
-              onClick={() => setShowAdminTools(v => !v)}
-              className="app-button app-button--secondary"
-              title="Admin tools"
-              style={{ background: showAdminTools ? 'rgba(99, 102, 241, 0.12)' : undefined }}
-            >
-              <Layers size={17} />
-              <span>Admin Tools</span>
-            </button>
-            <button
-              onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
-              className="app-button app-button--primary"
-              title="Add chapter"
-            >
-              <Plus size={17} />
-              <span>Add Chapter</span>
-            </button>
-          </div>
-        )}
       </div>
 
       {!isAdmin ? (
@@ -475,6 +454,25 @@ const Curriculum = () => {
                       />
                     )}
                   </div>
+                  {isAdmin && (
+                    <>
+                      <button
+                        onClick={() => setShowAdminTools(v => !v)}
+                        className="curriculum-icon-btn"
+                        title="Admin tools"
+                        style={{ background: showAdminTools ? 'rgba(99, 102, 241, 0.18)' : undefined }}
+                      >
+                        <Layers size={17} />
+                      </button>
+                      <button
+                        onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
+                        className="curriculum-icon-btn curriculum-icon-btn--primary"
+                        title="Add chapter"
+                      >
+                        <Plus size={17} />
+                      </button>
+                    </>
+                  )}
                 </div>
               </div>
 
