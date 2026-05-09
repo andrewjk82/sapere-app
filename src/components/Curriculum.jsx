@@ -432,7 +432,7 @@ const Curriculum = () => {
               <div className="curriculum-header">
                 <div className="curriculum-header__title">
                   <h1>{selectedYear}</h1>
-                  {selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
+                  {courses && selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
                 </div>
                 <div className="curriculum-header__actions">
                   <div className={`curriculum-search${searchOpen || searchQuery ? ' is-open' : ''}`}>
