@@ -430,22 +430,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     };
   }, [user?.uid]);
 
-  // Fetch student daily stats for insights
-  useEffect(() => {
-    if (!user?.uid) return;
-    const unsub = onSnapshot(
-      collection(db, 'users', user.uid, 'daily_stats'),
-      (snap) => {
-        const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        setDailyStats(stats);
-      },
-      (err) => {
-        console.warn('daily_stats onSnapshot permission error (non-fatal):', err.code);
-        // Silently fail - insights just won't show
-      }
-    );
-    return () => unsub();
-  }, [user?.uid]);
+  // Insights now derive from `history` (already populated by the consolidated
+  // realtime listener below). No duplicate daily_stats subscription needed —
+  // every extra listener doubles Firestore read consumption.
 
   // Anti-Cheat: Detect Focus Loss
   useEffect(() => {
@@ -752,6 +739,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
         .slice(0, 30);
       setHistory(merged);
+      // dailyStats (used by learning-insights) reuses the same subscription
+      setDailyStats(dailyData);
     };
 
     const unsubDaily = onSnapshot(
