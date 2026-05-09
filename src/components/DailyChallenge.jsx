@@ -1361,6 +1361,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
     try {
       setIsFinishing(true);
+      if (isAbandoned) {
+        setAnswerResults(['abandoned']);
+      }
       setStep('result');
       if (setIsLocked) setIsLocked(false);
 
@@ -2782,7 +2785,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         )}
       </AnimatePresence>
       {renderReportModal()}
-    </div>
     </div>
   );
 };
