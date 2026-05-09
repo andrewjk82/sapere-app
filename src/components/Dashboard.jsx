@@ -5,8 +5,9 @@ import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
+import { useAdminFeed } from '../context/AdminFeedContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, updateDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, updateDoc, increment, serverTimestamp, collection, addDoc, query, where, or } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -25,7 +26,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const [lastSync, setLastSync] = useState(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
-  const [pendingGrading, setPendingGrading] = useState([]);
+  const { pendingGrading: feedPendingGrading } = useAdminFeed();
+  const pendingGrading = useMemo(() => feedPendingGrading.slice(0, 5), [feedPendingGrading]);
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
   const [isImporting, setIsImporting] = useState(false);
   const [importDone, setImportDone] = useState(false);
@@ -68,13 +70,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
     return topics.filter(t => t.total >= 3 && t.errorRate > 0).slice(0, 3);
   }, [dailyStats]);
 
-  useEffect(() => {
-    if (!isAdmin) return;
-    const q = query(collection(db, 'grading_queue'), where('status', '==', 'pending'), orderBy('submittedAt', 'desc'), limit(5));
-    return onSnapshot(q, (snap) => {
-      setPendingGrading(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-    });
-  }, [isAdmin]);
+  // pendingGrading is now sourced from AdminFeedContext (single shared listener
+  // across the app) — no per-component subscription needed.
 
   // ── Fetch Last Sync Info ──
   useEffect(() => {
@@ -108,18 +105,32 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   };
 
 
-  // Auto-sync curriculum for admins on mount.
-  // Depend on user?.uid (stable) instead of the full user object — the latter
-  // is a fresh reference every Firebase token refresh, which would re-fire
-  // performAutoSync (extra reads + writes) every ~hour for no reason.
+  // Auto-sync curriculum for admins on mount, gated by a TTL cache.
+  //
+  // performAutoSync runs getDocs against the questions collection per
+  // chapter (3 chapters × ~50–200 docs each = 150–600 reads per call).
+  // Without this gate, every Dashboard mount + every Firebase token
+  // refresh + every navigation back to the dashboard would burn that
+  // again. We persist the last-completed timestamp in localStorage and
+  // skip the audit if it's been less than 6 hours.
+  const AUTO_SYNC_TTL_MS = 6 * 60 * 60 * 1000;
+  const AUTO_SYNC_KEY = 'sapere-curriculum-autosync-last';
+
   useEffect(() => {
     if (!isAdmin || !user?.uid) return;
+    let lastRun = 0;
+    try {
+      lastRun = Number(window.localStorage.getItem(AUTO_SYNC_KEY) || 0) || 0;
+    } catch { /* private mode / disabled storage — fall through */ }
+    if (Date.now() - lastRun < AUTO_SYNC_TTL_MS) return;
+
     const runAutoSync = async () => {
       try {
         setIsImporting(true);
         showToast('Checking for curriculum updates...', 'info');
         const { performAutoSync } = await import('../services/AutoSyncService');
         await performAutoSync(showToast);
+        try { window.localStorage.setItem(AUTO_SYNC_KEY, String(Date.now())); } catch {}
       } catch (err) {
         console.error('Auto-sync failed:', err);
       } finally {

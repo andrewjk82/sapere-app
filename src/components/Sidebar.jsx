@@ -13,8 +13,9 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import { useAdminFeed } from '../context/AdminFeedContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, collection, query, where } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
@@ -51,37 +52,18 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) =>
 
 const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
   const { user, isAdmin, logout } = useAuth();
+  const { gradingCount, reportCount } = useAdminFeed();
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [profile, setProfile] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
-  const [reportCount, setReportCount] = useState(0);
-  const [gradingCount, setGradingCount] = useState(0);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1024);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  useEffect(() => {
-    if (!isAdmin) return;
-    // Listen for issue reports
-    const qReports = query(collection(db, 'reports'), where('status', '==', 'open'));
-    const unsubReports = onSnapshot(qReports, (snap) => {
-      setReportCount(snap.size);
-    });
-
-    // Listen for grading queue (manual grading items)
-    const qGrading = query(collection(db, 'grading_queue'), where('status', '==', 'pending'));
-    const unsubGrading = onSnapshot(qGrading, (snap) => {
-      setGradingCount(snap.size);
-    });
-
-    return () => {
-      unsubReports();
-      unsubGrading();
-    };
-  }, [isAdmin]);
+  // Badge counts come from AdminFeedContext (single shared listener);
+  // no per-component grading_queue / reports subscription needed.
 
   useEffect(() => {
     if (!user?.uid) return undefined;
