@@ -380,44 +380,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     return Math.round((Number(earnedScore) || 0) / safeTotal * getChallengeMaxXp(type));
   };
 
-  useEffect(() => {
-    if (!user?.uid) return;
-
-    // ── Leaderboard: one-time fetch, NOT a realtime listener ──
-    let cancelled = false;
-
-    const fetchLeaderboard = async () => {
-      try {
-        const [usersSnap, studentsSnap] = await Promise.allSettled([
-          getDocs(collection(db, 'users')),
-          getDocs(collection(db, 'students')),
-        ]);
-        if (cancelled) return;
-        const registered = usersSnap.status === 'fulfilled'
-          ? usersSnap.value.docs
-              .map(d => ({ id: d.id, ...d.data() }))
-              .filter(s => {
-                const role = String(s.role || '').toLowerCase();
-                return role !== 'admin' && role !== 'parent' && s.email !== 'andrewjk82@gmail.com';
-              })
-          : [];
-        const manual = studentsSnap.status === 'fulfilled'
-          ? studentsSnap.value.docs.map(d => ({ id: `manual-${d.id}`, sourceId: d.id, source: 'manual', ...d.data() }))
-          : [];
-        setLeaders([...manual, ...registered].sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0)));
-      } catch (err) {
-        console.warn('leaderboard fetch failed (non-fatal):', err?.code || err);
-      }
-    };
-
-    fetchLeaderboard();
-    const refreshInterval = window.setInterval(fetchLeaderboard, 5 * 60 * 1000); // 5-min refresh
-
-    return () => {
-      cancelled = true;
-      window.clearInterval(refreshInterval);
-    };
-  }, [user?.uid]);
 
 
   // Anti-Cheat: Detect Focus Loss
@@ -2785,6 +2747,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         )}
       </AnimatePresence>
       {renderReportModal()}
+      </div>
     </div>
   );
 };
