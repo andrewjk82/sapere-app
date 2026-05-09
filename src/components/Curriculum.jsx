@@ -17,6 +17,7 @@ import { importYear11Ch3Questions } from '../scripts/importYear11Ch3';
 import { importYear10Ch1Questions } from '../scripts/importYear10Ch1';
 import { importYear10Ch3 } from '../scripts/importYear10Ch3';
 import { importYear10Ch4 } from '../scripts/importYear10Ch4';
+import { importYear9Ch1 } from '../scripts/importYear9Ch1';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import './curriculum.css';
@@ -288,6 +289,20 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncYear9Ch1 = async () => {
+    if (!isAdmin || isMigrating) return;
+    setIsMigrating(true);
+    try {
+      const count = await importYear9Ch1();
+      showToast(`Successfully seeded ${count} Year 9 Chapter 1 questions!`, 'success');
+    } catch (error) {
+      console.error('Error seeding Year 9 questions:', error);
+      showToast('Failed to seed questions.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -516,6 +531,9 @@ const Curriculum = () => {
                 </button>
                 <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#a7f3d0' }}>
                   {isMigrating ? 'Adding…' : '⚠ Add Curve Q'}
+                </button>
+                <button onClick={handleSyncYear9Ch1} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef9c3', color: '#854d0e', borderColor: '#fde68a' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y9 Ch1'}
                 </button>
                 {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
                   <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
