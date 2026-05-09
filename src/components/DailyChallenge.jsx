@@ -1106,6 +1106,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     </AnimatePresence>
   );
 
+  const robustNormalize = (str) => {
+    if (!str) return '';
+    return String(str)
+      .toLowerCase()
+      .replace(/\s+/g, '')                // Remove whitespace
+      .replace(/[,.;]/g, '')             // Remove punctuation
+      .replace(/\\ge|\\geq|≥/g, '>=')     // Normalize >=
+      .replace(/\\le|\\leq|≤/g, '<=')     // Normalize <=
+      .replace(/([a-z])>([0-9.-]+)(?:or|\|\|)([a-z])=\2/, '$1>=$2') // x>1orx=1 -> x>=1
+      .replace(/([a-z])=([0-9.-]+)(?:or|\|\|)([a-z])>\2/, '$1>=$2') // x=1orx>1 -> x>=1
+      .trim();
+  };
+
   const handleAnswer = async (optionText, optIdx = null) => {
     if (step === 'feedback' || isSubmittingCanvas) return;
     
@@ -1141,8 +1154,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       // Handle sub-questions
       const subResults = currentQ.subQuestions.map((sq, idx) => {
         const userAnswer = (optionText && typeof optionText === 'object') ? optionText[sq.id || idx] : '';
-        const normalizedInput = String(userAnswer || '').replace(/\s+/g, '').toLowerCase();
-        const normalizedAnswer = String(sq.answer || '').replace(/\s+/g, '').toLowerCase();
+        const normalizedInput = robustNormalize(userAnswer);
+        const normalizedAnswer = robustNormalize(sq.answer);
         
         let isSqCorrect = false;
         if (sq.type === 'multiple_choice') {
@@ -1165,8 +1178,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         setScore(prev => prev + pointsEarned);
       }
     } else if (isShortAnswer) {
-      const normalizedInput = (optionText || '').replace(/\s+/g, '').toLowerCase();
-      const normalizedAnswer = (currentQ.answer || '').replace(/\s+/g, '').toLowerCase();
+      const normalizedInput = robustNormalize(optionText);
+      const normalizedAnswer = robustNormalize(currentQ.answer);
       correct = normalizedInput === normalizedAnswer;
       if (correct) setScore(prev => prev + 1);
     } else {
