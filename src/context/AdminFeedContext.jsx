@@ -35,19 +35,18 @@ export const AdminFeedProvider = ({ children }) => {
 
   const [pendingGrading, setPendingGrading] = useState([]);
   const [openReports, setOpenReports] = useState([]);
-  const initialGradingRef = useRef(true);
-  const initialReportsRef = useRef(true);
-  const lastGradingTopIdRef = useRef(null);
-  const lastReportTopIdRef = useRef(null);
+  // Track which docs we've already seen so toasts only fire for *truly new*
+  // items, not when an existing item is processed/removed (which would
+  // otherwise make the next-in-line look "new" because the top id changed).
+  const seenGradingIdsRef = useRef(null);
+  const seenReportIdsRef = useRef(null);
 
   useEffect(() => {
     if (!user?.uid || !isAdmin) {
       setPendingGrading([]);
       setOpenReports([]);
-      initialGradingRef.current = true;
-      initialReportsRef.current = true;
-      lastGradingTopIdRef.current = null;
-      lastReportTopIdRef.current = null;
+      seenGradingIdsRef.current = null;
+      seenReportIdsRef.current = null;
       return undefined;
     }
 
@@ -62,14 +61,19 @@ export const AdminFeedProvider = ({ children }) => {
       (snap) => {
         const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
         setPendingGrading(items);
-        const topId = items[0]?.id ?? null;
-        if (initialGradingRef.current) {
-          initialGradingRef.current = false;
-          lastGradingTopIdRef.current = topId;
-        } else if (topId && topId !== lastGradingTopIdRef.current) {
-          const data = items[0];
-          showToast(`📝 New Review Required: ${data.userName || 'Student'} submitted a question.`, 'info', 5000);
-          lastGradingTopIdRef.current = topId;
+        if (seenGradingIdsRef.current === null) {
+          // First snapshot — silent. Treat everything currently visible as
+          // already-known.
+          seenGradingIdsRef.current = new Set(items.map(i => i.id));
+          return;
+        }
+        const seen = seenGradingIdsRef.current;
+        const fresh = items.filter(i => !seen.has(i.id));
+        for (const i of items) seen.add(i.id);
+        if (fresh.length > 0) {
+          const top = fresh[0];
+          const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
+          showToast(`📝 New Review Required: ${top.userName || 'Student'} submitted a question${extra}.`, 'info', 5000);
         }
       },
       (err) => console.warn('grading feed listener failed (non-fatal):', err?.code || err)
@@ -86,14 +90,17 @@ export const AdminFeedProvider = ({ children }) => {
       (snap) => {
         const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
         setOpenReports(items);
-        const topId = items[0]?.id ?? null;
-        if (initialReportsRef.current) {
-          initialReportsRef.current = false;
-          lastReportTopIdRef.current = topId;
-        } else if (topId && topId !== lastReportTopIdRef.current) {
-          const data = items[0];
-          showToast(`⚠️ New Issue Reported: ${data.studentName || 'Student'} filed a report.`, 'warning', 5000);
-          lastReportTopIdRef.current = topId;
+        if (seenReportIdsRef.current === null) {
+          seenReportIdsRef.current = new Set(items.map(i => i.id));
+          return;
+        }
+        const seen = seenReportIdsRef.current;
+        const fresh = items.filter(i => !seen.has(i.id));
+        for (const i of items) seen.add(i.id);
+        if (fresh.length > 0) {
+          const top = fresh[0];
+          const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
+          showToast(`⚠️ New Issue Reported: ${top.studentName || 'Student'} filed a report${extra}.`, 'warning', 5000);
         }
       },
       (err) => console.warn('reports feed listener failed (non-fatal):', err?.code || err)
