@@ -311,6 +311,7 @@ class CanvasErrorBoundary extends React.Component {
 const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { user } = useAuth();
   const { showToast } = useToast();
+  const isAdmin = user?.email === 'andrewjk82@gmail.com';
   const [step, setStep] = useState('start');
   const [currentIdx, setCurrentIdx] = useState(0);
   const [questions, setQuestions] = useState([]);
