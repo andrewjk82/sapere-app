@@ -211,12 +211,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     };
   }, [fullRedraw]);
 
-  // ── Native pointer event listeners (bypass React synthetic events) ──
-  // React strips getCoalescedEvents on synthetic events in some versions, and
-  // event delegation adds latency. Native listeners give us:
-  //   1. Real native PointerEvents with working getCoalescedEvents()
-  //   2. Direct path from input → handler (no React wrapping)
-  //   3. Reliable preventDefault with passive:false
+  // ── Native pointer event handling ──
+  // pointerdown is on the canvas; pointermove/up/cancel are on the *document*
+  // so the stroke isn't lost when the cursor briefly leaves the canvas during
+  // fast writing (this is the pattern Excalidraw / tldraw / Procreate Web use).
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -226,12 +224,98 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       return { x: clientX - rect.left, y: clientY - rect.top };
     };
 
+    // ── Move handler ──
+    // We pre-set ctx style once at stroke start, then per-move we only do
+    // beginPath / curves / stroke. All coalesced events are flushed into a
+    // SINGLE path → one GPU stroke call regardless of sample count.
+    const handleMove = (e) => {
+      if (!isDrawingRef.current || !currentStrokeRef.current) return;
+      if (activePointerIdRef.current !== null && e.pointerId !== activePointerIdRef.current) return;
+      if (e.cancelable) e.preventDefault();
+
+      const ctx = getCtx();
+      if (!ctx) return;
+      const dpr = dprRef.current;
+      const stroke = currentStrokeRef.current;
+
+      const coalesced = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : null;
+      const events = (coalesced && coalesced.length) ? coalesced : [e];
+
+      // Build a single path for all new points
+      let pathStarted = false;
+      for (const ev of events) {
+        const pt = toPoint(ev.clientX, ev.clientY);
+        const last = stroke.points[stroke.points.length - 1];
+        if (last && pt.x === last.x && pt.y === last.y) continue;
+        stroke.points.push(pt);
+
+        const pts = stroke.points;
+        if (pts.length === 2) {
+          // First segment: line from p0 to mid(p0,p1)
+          const p0 = pts[0], p1 = pts[1];
+          const mid = { x: (p0.x + p1.x) / 2, y: (p0.y + p1.y) / 2 };
+          if (!pathStarted) { ctx.beginPath(); pathStarted = true; }
+          ctx.moveTo(p0.x * dpr, p0.y * dpr);
+          ctx.lineTo(mid.x * dpr, mid.y * dpr);
+          stroke.lastMid = mid;
+        } else {
+          const prev = pts[pts.length - 2];
+          const curr = pts[pts.length - 1];
+          const newMid = { x: (prev.x + curr.x) / 2, y: (prev.y + curr.y) / 2 };
+          if (!pathStarted) { ctx.beginPath(); pathStarted = true; }
+          ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
+          ctx.quadraticCurveTo(prev.x * dpr, prev.y * dpr, newMid.x * dpr, newMid.y * dpr);
+          stroke.lastMid = newMid;
+        }
+      }
+      if (pathStarted) ctx.stroke(); // single GPU call for all coalesced points
+    };
+
+    const handleUp = (e) => {
+      // Tear down document listeners regardless of state (clean slate)
+      document.removeEventListener('pointermove', handleMove);
+      document.removeEventListener('pointerup', handleUp);
+      document.removeEventListener('pointercancel', handleUp);
+
+      if (!isDrawingRef.current) {
+        activePointerIdRef.current = null;
+        return;
+      }
+      if (activePointerIdRef.current !== null && e && e.pointerId !== undefined && e.pointerId !== activePointerIdRef.current) return;
+
+      isDrawingRef.current = false;
+      activePointerIdRef.current = null;
+
+      const stroke = currentStrokeRef.current;
+      if (!stroke) return;
+
+      if (stroke.points.length >= 2 && stroke.lastMid) {
+        const ctx = getCtx();
+        if (ctx) {
+          const last = stroke.points[stroke.points.length - 1];
+          const dpr = dprRef.current;
+          ctx.beginPath();
+          ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
+          ctx.lineTo(last.x * dpr, last.y * dpr);
+          ctx.stroke();
+        }
+      }
+
+      delete stroke.lastMid;
+      setUndoStack(prev => [...prev, strokesRef.current]);
+      setStrokes(prev => [...prev, stroke]);
+      currentStrokeRef.current = null;
+    };
+
     const handleDown = (e) => {
       if (isSubmittedRef.current) return;
       if (palmGuardRef.current && e.pointerType !== 'pen') return;
-      e.preventDefault();
 
-      // Refresh cached rect at stroke start so we use accurate coords
+      // Defensive: if a previous stroke didn't tear down, finish it first
+      if (isDrawingRef.current) handleUp(null);
+
+      if (e.cancelable) e.preventDefault();
+
       rectRef.current = canvas.getBoundingClientRect();
       const pt = toPoint(e.clientX, e.clientY);
 
@@ -256,79 +340,39 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         return;
       }
 
-      isDrawingRef.current = true;
-      currentStrokeRef.current = {
+      const stroke = {
         points: [pt],
         color: strokeColorRef.current,
         width: strokeWidthRef.current,
         isEraser: tool === 'eraser',
         lastMid: null,
       };
+      currentStrokeRef.current = stroke;
+      isDrawingRef.current = true;
 
       const ctx = getCtx();
-      if (ctx) drawDot(ctx, pt, currentStrokeRef.current, dprRef.current);
-    };
-
-    const handleMove = (e) => {
-      if (!isDrawingRef.current || !currentStrokeRef.current) return;
-      // Filter out other simultaneous pointers (palm, second finger, etc.)
-      if (activePointerIdRef.current !== null && e.pointerId !== activePointerIdRef.current) return;
-      e.preventDefault();
-
-      const ctx = getCtx();
-      if (!ctx) return;
-      const dpr = dprRef.current;
-      const stroke = currentStrokeRef.current;
-
-      // Pull every sub-frame sample the browser captured
-      const coalesced = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : null;
-      const events = (coalesced && coalesced.length) ? coalesced : [e];
-
-      for (const ev of events) {
-        const pt = toPoint(ev.clientX, ev.clientY);
-        const last = stroke.points[stroke.points.length - 1];
-        if (last && pt.x === last.x && pt.y === last.y) continue;
-        stroke.points.push(pt);
-        drawIncrementalSegment(ctx, stroke, dpr);
-      }
-    };
-
-    const handleUp = (e) => {
-      if (!isDrawingRef.current) {
-        activePointerIdRef.current = null;
-        return;
-      }
-      if (activePointerIdRef.current !== null && e && e.pointerId !== activePointerIdRef.current) return;
-
-      isDrawingRef.current = false;
-      activePointerIdRef.current = null;
-
-      const stroke = currentStrokeRef.current;
-      if (!stroke) return;
-
-      if (stroke.points.length >= 2) {
-        const ctx = getCtx();
-        if (ctx) finalizeStroke(ctx, stroke, dprRef.current);
+      if (ctx) {
+        // Apply style ONCE for the whole stroke — saves work in pointermove
+        applyStyle(ctx, stroke, dprRef.current);
+        // Initial dot for instant feedback
+        drawDot(ctx, pt, stroke, dprRef.current);
+        // Re-apply style after drawDot (which uses save/restore)
+        applyStyle(ctx, stroke, dprRef.current);
       }
 
-      delete stroke.lastMid;
-      setUndoStack(prev => [...prev, strokesRef.current]);
-      setStrokes(prev => [...prev, stroke]);
-      currentStrokeRef.current = null;
+      // Attach move/up listeners on document so off-canvas movement keeps drawing
+      document.addEventListener('pointermove', handleMove, { passive: false });
+      document.addEventListener('pointerup', handleUp);
+      document.addEventListener('pointercancel', handleUp);
     };
 
     canvas.addEventListener('pointerdown', handleDown, { passive: false });
-    canvas.addEventListener('pointermove', handleMove, { passive: false });
-    canvas.addEventListener('pointerup', handleUp);
-    canvas.addEventListener('pointercancel', handleUp);
-    canvas.addEventListener('pointerleave', handleUp);
 
     return () => {
       canvas.removeEventListener('pointerdown', handleDown);
-      canvas.removeEventListener('pointermove', handleMove);
-      canvas.removeEventListener('pointerup', handleUp);
-      canvas.removeEventListener('pointercancel', handleUp);
-      canvas.removeEventListener('pointerleave', handleUp);
+      document.removeEventListener('pointermove', handleMove);
+      document.removeEventListener('pointerup', handleUp);
+      document.removeEventListener('pointercancel', handleUp);
     };
   }, [fullRedraw]);
 
@@ -468,7 +512,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         </div>
       )}
 
-      <div style={{ flex: 1, position: 'relative', overflow: 'hidden', ...bgStyle }}>
+      <div style={{ flex: 1, position: 'relative', overflow: 'hidden', touchAction: 'none', ...bgStyle }}>
         {isGraph && (
           <>
             <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '2px', background: '#94a3b8', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
