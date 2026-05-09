@@ -104,7 +104,6 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Students</h2>
-          <p>Manage active learners, keep records tidy, and stay on top of progress.</p>
         </div>
         <button 
           onClick={handleManualRefresh}
