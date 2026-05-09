@@ -1482,6 +1482,24 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // Best-effort — don't block the main save on these
         Promise.allSettled(workingOutWrites);
 
+        // Also strip any embedded base64 image data that might have leaked into
+        // questions/options or userAnswers (defence-in-depth — should never
+        // happen, but guarantees the main doc stays small).
+        const stripDataUrls = (val) => {
+          if (typeof val === 'string') {
+            return val.startsWith('data:image/') ? '[image]' : val;
+          }
+          if (Array.isArray(val)) return val.map(stripDataUrls);
+          if (val && typeof val === 'object') {
+            const out = {};
+            for (const k of Object.keys(val)) out[k] = stripDataUrls(val[k]);
+            return out;
+          }
+          return val;
+        };
+        const slimQuestions = stripDataUrls(questions || []);
+        const slimUserAnswers = stripDataUrls(userAnswers || []);
+
         const record = {
           completed: true,
           abandoned: false, // Explicitly mark as not abandoned
@@ -1498,14 +1516,23 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           assignedTopics,
           timestamp: now.toISOString(),
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-          questions: questions || [],
-          userAnswers: userAnswers || [],
+          questions: slimQuestions,
+          userAnswers: slimUserAnswers,
           answerResults: slimAnswerResults,
           topicStats,
           chapterStats,
           difficultyMixBefore: normalizeMix(chapterProgress?.difficultyMix),
           difficultyMixAfter: nextDifficultyMix,
         };
+
+        // Diagnostic: log payload size — Firestore enforces a 1 048 576 byte limit
+        try {
+          const bytes = new Blob([JSON.stringify(record)]).size;
+          console.log(`[finishQuiz] record size: ${(bytes / 1024).toFixed(1)} KB`);
+          if (bytes > 900_000) {
+            console.warn('[finishQuiz] record approaching 1 MB Firestore limit');
+          }
+        } catch {}
 
         // 1. Save the challenge stat record first
         await setDoc(ref, record, { merge: true });
