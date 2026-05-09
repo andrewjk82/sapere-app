@@ -1017,6 +1017,29 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
   }, [step, isReporting]);
 
+  // Strict Termination: End quiz if screen is blurred/hidden
+  useEffect(() => {
+    if (isAdmin || step !== 'quiz') return undefined;
+
+    const handleCheatingAttempt = () => {
+      // Small buffer to avoid firing on tiny blips, but essentially instant
+      setTimeout(() => {
+        if (document.visibilityState === 'hidden' || !document.hasFocus()) {
+          showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
+          finishQuiz(true); 
+        }
+      }, 100);
+    };
+
+    window.addEventListener('blur', handleCheatingAttempt);
+    document.addEventListener('visibilitychange', handleCheatingAttempt);
+
+    return () => {
+      window.removeEventListener('blur', handleCheatingAttempt);
+      document.removeEventListener('visibilitychange', handleCheatingAttempt);
+    };
+  }, [step, isAdmin, showToast]);
+
   const handleReportSubmit = async () => {
     if (!reportMessage.trim()) return;
     setIsSubmittingReport(true);
@@ -1331,7 +1354,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
   };
 
-  const finishQuiz = async () => {
+  const finishQuiz = async (isAbandoned = false) => {
     if (isFinishing) return;
     // Declared outside try so catch block can safely reference it
     const currentAnswerResults = answerResults || [];
@@ -2695,16 +2718,30 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
         {step === 'result' && (
           <motion.div key="result" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="app-panel" style={{ padding: '48px', textAlign: 'center', borderRadius: '40px' }}>
-            <div style={{ position: 'relative', width: '120px', height: '120px', margin: '0 auto 32px' }}>
-              <div style={{ position: 'absolute', inset: 0, background: '#f5f3ff', borderRadius: '50%', animation: 'pulse 2s infinite' }} />
-              <div style={{ position: 'relative', width: '100%', height: '100%', background: '#6366f1', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', boxShadow: '0 15px 30px rgba(99,102,241,0.3)' }}>
-                <Trophy size={60} />
+            {answerResults.some(r => r === 'abandoned') || (questions.length > 0 && answerResults.length === 0) ? (
+              <div style={{ marginBottom: '32px' }}>
+                <div style={{ width: '120px', height: '120px', background: '#fef2f2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', margin: '0 auto 32px', color: '#ef4444' }}>
+                  <XCircle size={60} />
+                </div>
+                <h1 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '8px', color: '#ef4444' }}>Challenge Terminated</h1>
+                <p style={{ color: '#64748b', fontWeight: 700, fontSize: '1.1rem' }}>
+                  This session was ended automatically because you switched screens or left the app.
+                </p>
               </div>
-            </div>
-            <h1 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '8px' }}>Challenge Complete!</h1>
-            <p style={{ color: '#64748b', fontWeight: 700, fontSize: '1.1rem', marginBottom: '40px' }}>
-              You scored <span style={{ color: '#6366f1' }}>{score} out of {totalPossibleScore}</span>
-            </p>
+            ) : (
+              <>
+                <div style={{ position: 'relative', width: '120px', height: '120px', margin: '0 auto 32px' }}>
+                  <div style={{ position: 'absolute', inset: 0, background: '#f5f3ff', borderRadius: '50%', animation: 'pulse 2s infinite' }} />
+                  <div style={{ position: 'relative', width: '100%', height: '100%', background: '#6366f1', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', boxShadow: '0 15px 30px rgba(99,102,241,0.3)' }}>
+                    <Trophy size={60} />
+                  </div>
+                </div>
+                <h1 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '8px' }}>Challenge Complete!</h1>
+                <p style={{ color: '#64748b', fontWeight: 700, fontSize: '1.1rem', marginBottom: '40px' }}>
+                  You scored <span style={{ color: '#6366f1' }}>{score} out of {totalPossibleScore}</span>
+                </p>
+              </>
+            )}
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
               <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>

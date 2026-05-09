@@ -117,50 +117,108 @@ export const year9Ch1Questions = [
     solution: 'Step 1: Expand the first part: $12y^2 - 30y$\nStep 2: Expand the second part: $-10y + 25$\nStep 3: Combine: $12y^2 - 30y - 10y + 25$\nStep 4: Simplify like terms: $12y^2 - 40y + 25$'
   },
 
-  // --- SECTION 9: GEOMETRIC APPLICATIONS (Ref Image Q1, Q2) ---
+  // --- SECTION 9: GEOMETRIC APPLICATIONS (Direct from Image) ---
   {
     chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Find the perimeter of a rectangle with length $x + 5$ and width $x$.',
-    answer: '4x + 10',
-    solution: 'Step 1: Perimeter $P = 2 \\times (\\text{Length} + \\text{Width})$.\n$$P = 2 \\times ((x + 5) + x)$$\nStep 2: Combine terms inside brackets.\n$$P = 2 \\times (2x + 5)$$\nStep 3: Expand.\n$$P = 4x + 10$$'
+    question: 'Show that the perimeter of the rectangle opposite is $(4x + 6)$ cm.',
+    graphData: {
+      diagram: { type: 'rectangle', data: { widthLabel: '$x + 3$ cm', heightLabel: '$x$ cm' } }
+    },
+    answer: '4x + 6',
+    solution: 'Step 1: The perimeter $P$ is the sum of all four sides.\n$$P = (x+3) + x + (x+3) + x$$\nStep 2: Group the like terms.\n$$P = (x + x + x + x) + (3 + 3)$$\nStep 3: Simplify.\n$$P = 4x + 6$$\nTherefore, the perimeter is $(4x + 6)$ cm.'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'short_answer', difficulty: 'easy', isManual: true,
+    question: 'Find the perimeter of the rectangle if $AD = 2$ cm.',
+    graphData: {
+      diagram: { type: 'rectangle', data: { widthLabel: '$x + 3$ cm', heightLabel: '$x$ cm' } }
+    },
+    answer: '14',
+    solution: 'Step 1: $AD$ corresponds to the side labeled $x$. So, $x = 2$.\nStep 2: Substitute $x = 2$ into the perimeter expression $4x + 6$.\n$$4(2) + 6 = 8 + 6 = 14$$\nThe perimeter is $14$ cm.'
   },
   {
     chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Find the perimeter of a rectangle with length $x + 5$ and width $x$, if $x = 3$.',
-    answer: '22',
-    solution: 'Step 1: Substitute $x = 3$ into the perimeter expression $4x + 10$.\n$$4(3) + 10 = 12 + 10 = 22$$'
+    question: 'Find the value of $x$ if the perimeter is $36$ cm.',
+    graphData: {
+      diagram: { type: 'rectangle', data: { widthLabel: '$x + 3$ cm', heightLabel: '$x$ cm' } }
+    },
+    answer: '7.5',
+    solution: 'Step 1: Set the perimeter expression equal to $36$.\n$$4x + 6 = 36$$\nStep 2: Subtract $6$ from both sides.\n$$4x = 30$$\nStep 3: Divide by $4$.\n$$x = \\frac{30}{4} = 7.5$$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Find the area of the rectangle $ABCD$ in terms of $x$.',
+    graphData: {
+      diagram: { type: 'rectangle', data: { widthLabel: '$x + 3$ cm', heightLabel: '$x$ cm' } }
+    },
+    answer: 'x^2 + 3x',
+    solution: 'Step 1: Area $A = \\text{Length} \\times \\text{Width}$.\n$$A = (x + 3) \\times x$$\nStep 2: Expand the bracket.\n$$A = x^2 + 3x$$\nThe area is $(x^2 + 3x)$ cm$^2$.'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'short_answer', difficulty: 'easy', isManual: true,
+    question: 'Find the area of the rectangle if $AB = 6$ cm.',
+    graphData: {
+      diagram: { type: 'rectangle', data: { widthLabel: '$x + 3$ cm', heightLabel: '$x$ cm' } }
+    },
+    answer: '18',
+    solution: 'Step 1: $AB$ corresponds to $x + 3$. So, $x + 3 = 6$, which means $x = 3$.\nStep 2: Substitute $x = 3$ into the area expression $x^2 + 3x$.\n$$(3)^2 + 3(3) = 9 + 9 = 18$$\nThe area is $18$ cm$^2$.'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Find $AP$ in terms of $x$ for the new rectangle $APQR$.',
+    graphData: {
+      diagram: { 
+        type: 'nested_rectangles', 
+        data: { innerLabelW: '$2x + 6$', innerLabelH: '$x + 4$', outerLabelW: '$AP$', outerLabelH: '$AR$' } 
+      }
+    },
+    answer: '3x + 9',
+    solution: 'Step 1: The original length $AB$ is $2x + 6$.\nStep 2: Each side is increased by $50\\%$, which means multiplying by $1.5$.\n$$AP = 1.5 \\times (2x + 6)$$\nStep 3: Expand the expression.\n$$AP = 3x + 9$$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Find $AR$ in terms of $x$ for the new rectangle $APQR$.',
+    graphData: {
+      diagram: { 
+        type: 'nested_rectangles', 
+        data: { innerLabelW: '$2x + 6$', innerLabelH: '$x + 4$', outerLabelW: '$AP$', outerLabelH: '$AR$' } 
+      }
+    },
+    answer: '1.5x + 6',
+    solution: 'Step 1: The original width $AD$ is $x + 4$.\nStep 2: Increase by $50\\%$ means multiplying by $1.5$.\n$$AR = 1.5 \\times (x + 4)$$\nStep 3: Expand the expression.\n$$AR = 1.5x + 6$$'
   },
   {
     chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
-    question: 'Find the value of $x$ if the perimeter of a rectangle with length $x+5$ and width $x$ is $50$ cm.',
-    answer: '10',
-    solution: 'Step 1: Set up the equation $4x + 10 = 50$.\nStep 2: Subtract $10$ from both sides: $4x = 40$.\nStep 3: Divide by $4$: $x = 10$.'
+    question: 'Find the area of $APQR$ in terms of $x$.',
+    graphData: {
+      diagram: { 
+        type: 'nested_rectangles', 
+        data: { innerLabelW: '$2x + 6$', innerLabelH: '$x + 4$', outerLabelW: '$AP$', outerLabelH: '$AR$' } 
+      }
+    },
+    answer: '4.5x^2 + 31.5x + 54',
+    solution: 'Step 1: New Area $= AP \\times AR = (3x + 9)(1.5x + 6)$.\nStep 2: Expand using FOIL.\n$$3x(1.5x) + 3x(6) + 9(1.5x) + 9(6)$$\n$$4.5x^2 + 18x + 13.5x + 54$$\nStep 3: Simplify.\n$$4.5x^2 + 31.5x + 54$$'
   },
   {
     chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Find the area of a rectangle with length $x + 5$ and width $x$ in terms of $x$.',
-    answer: 'x^2 + 5x',
-    solution: 'Step 1: Area $A = \\text{Length} \\times \\text{Width}$.\n$$A = (x + 5) \\times x$$\nStep 2: Expand the bracket.\n$$A = x^2 + 5x$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'A rectangle has width $x+2$ and length $3x+4$. If each side is increased by 50%, what is the new length?',
-    options: ['$4.5x + 6$', '$4.5x + 4$', '$3x + 9$', '$3x + 6$'],
-    answer: '0',
-    solution: 'Step 1: "Increased by 50%" means multiplying by $1.5$.\nStep 2: New Length $= 1.5 \\times (3x + 4)$.\nStep 3: Expand: $4.5x + 6$.'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'A rectangle has width $x+2$ and length $3x+4$. If each side is increased by 50%, what is the new area?',
-    options: ['$2.25(3x^2 + 10x + 8)$', '$1.5(3x^2 + 10x + 8)$', '$3x^2 + 10x + 8$', '$4.5x^2 + 6$'],
-    answer: '0',
-    solution: 'Step 1: Original Area $= (x+2)(3x+4) = 3x^2 + 4x + 6x + 8 = 3x^2 + 10x + 8$.\nStep 2: Scale factor for area is $1.5^2 = 2.25$.\nStep 3: New Area $= 2.25 \\times (3x^2 + 10x + 8)$.'
+    year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Show that the difference between the areas of the two rectangles is $\\frac{5}{2}x^2 + \\frac{35}{2}x + 30$.',
+    graphData: {
+      diagram: { 
+        type: 'nested_rectangles', 
+        data: { innerLabelW: '$2x + 6$', innerLabelH: '$x + 4$', outerLabelW: '$AP$', outerLabelH: '$AR$' } 
+      }
+    },
+    answer: '2.5x^2 + 17.5x + 30',
+    solution: 'Step 1: Find the original area of $ABCD$.\n$$(2x+6)(x+4) = 2x^2 + 8x + 6x + 24 = 2x^2 + 14x + 24$$\nStep 2: Subtract this from the new area $4.5x^2 + 31.5x + 54$.\n$$(4.5x^2 + 31.5x + 54) - (2x^2 + 14x + 24)$$\nStep 3: Group terms.\n$$(4.5 - 2)x^2 + (31.5 - 14)x + (54 - 24)$$\n$$2.5x^2 + 17.5x + 30$$\nStep 4: Convert to fractions.\n$$\\frac{5}{2}x^2 + \\frac{35}{2}x + 30$$'
   },
 
   // --- SECTION 10: NUMBER PATTERNS (Ref Image Q3, Q4, Q5) ---

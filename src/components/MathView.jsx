@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import MathGraph from './MathGraph';
+import GeometricDiagram from './GeometricDiagram';
 
 /**
  * Minimal safe pre-processing.
@@ -132,6 +133,7 @@ const MathView = ({ content, graphData, style }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {graphData && <MathGraph {...graphData} />}
+      {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
       <div ref={containerRef} style={combinedStyle}>{safeContent}</div>
     </div>
   );
