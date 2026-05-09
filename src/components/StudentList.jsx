@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
-import { doc, onSnapshot } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
@@ -18,47 +18,45 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
 
   const todayStr = new Date().toLocaleDateString('en-CA'); // Local YYYY-MM-DD, avoids UTC timezone shift
 
+  // Build a stable ID-list from `students` so the effect doesn't re-run every
+  // time the parent passes in a new array reference with the same contents.
+  const studentSig = useMemo(
+    () => (students || []).map(s => `${s.source || ''}|${s.id}`).join(','),
+    [students]
+  );
+
   React.useEffect(() => {
     if (!students || students.length === 0) return;
+    let cancelled = false;
 
-    const unsubs = students.map(student => {
-      // Determine potential collection names
-      const colName = student.source === 'manual' ? 'students' : 'users';
-      const dailyRef = doc(db, colName, student.id, 'daily_stats', todayStr);
-      const calcRef = doc(db, colName, student.id, 'calc_stats', todayStr);
+    // Previously this attached 2 onSnapshot listeners per student (daily + calc),
+    // recreating them whenever the parent array reference changed. With 50
+    // students that's 100 active listeners + a thundering re-attach storm
+    // every time the parent re-rendered. Switched to a single batched
+    // getDoc fetch — completion badges don't need realtime updates.
+    const fetchCompletions = async () => {
+      const results = await Promise.allSettled(
+        students.map(async (student) => {
+          const colName = student.source === 'manual' ? 'students' : 'users';
+          const dailyRef = doc(db, colName, student.id, 'daily_stats', todayStr);
+          const calcRef = doc(db, colName, student.id, 'calc_stats', todayStr);
+          const [dailySnap, calcSnap] = await Promise.all([getDoc(dailyRef), getDoc(calcRef)]);
+          const done = (dailySnap.exists() && dailySnap.data().completed === true)
+            || (calcSnap.exists() && calcSnap.data().completed === true);
+          return [student.id, done];
+        })
+      );
+      if (cancelled) return;
+      const next = {};
+      for (const r of results) {
+        if (r.status === 'fulfilled') next[r.value[0]] = r.value[1];
+      }
+      setCompletionStates(next);
+    };
 
-      const updateCompletion = (id, dailySnap, calcSnap) => {
-        const isDailyDone = dailySnap.exists() && dailySnap.data().completed === true;
-        const isCalcDone = calcSnap.exists() && calcSnap.data().completed === true;
-        
-        setCompletionStates(prev => ({
-          ...prev,
-          [id]: isDailyDone || isCalcDone
-        }));
-      };
-
-      // Since we need to coordinate two snapshots, we'll store local state for this student
-      let dailySnap = { exists: () => false };
-      let calcSnap = { exists: () => false };
-
-      const unsubDaily = onSnapshot(dailyRef, (snap) => {
-        dailySnap = snap;
-        updateCompletion(student.id, dailySnap, calcSnap);
-      }, (err) => console.warn(`Error daily stats for ${student.id}:`, err));
-
-      const unsubCalc = onSnapshot(calcRef, (snap) => {
-        calcSnap = snap;
-        updateCompletion(student.id, dailySnap, calcSnap);
-      }, (err) => console.warn(`Error calc stats for ${student.id}:`, err));
-
-      return () => {
-        unsubDaily();
-        unsubCalc();
-      };
-    });
-
-    return () => unsubs.forEach(unsub => unsub());
-  }, [students, todayStr]);
+    fetchCompletions();
+    return () => { cancelled = true; };
+  }, [studentSig, todayStr]); // signature, not the array ref
   
   const filteredStudents = students.filter(s => {
     const nameMatch = (s.name || '').toLowerCase().includes(searchTerm.toLowerCase());

@@ -108,14 +108,15 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   };
 
 
-  // Auto-sync curriculum for admins on mount
+  // Auto-sync curriculum for admins on mount.
+  // Depend on user?.uid (stable) instead of the full user object — the latter
+  // is a fresh reference every Firebase token refresh, which would re-fire
+  // performAutoSync (extra reads + writes) every ~hour for no reason.
   useEffect(() => {
-    if (!isAdmin || !user) return;
-    
+    if (!isAdmin || !user?.uid) return;
     const runAutoSync = async () => {
       try {
         setIsImporting(true);
-        // Only show this specific message for the initial audit
         showToast('Checking for curriculum updates...', 'info');
         const { performAutoSync } = await import('../services/AutoSyncService');
         await performAutoSync(showToast);
@@ -125,9 +126,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
         setIsImporting(false);
       }
     };
-    
     runAutoSync();
-  }, [isAdmin, user, showToast]);
+  }, [isAdmin, user?.uid, showToast]);
 
 
   // ── Handle Resize ──

@@ -59,7 +59,7 @@ const LearningPath = ({ profile }) => {
 
   // Fetch Progress
   useEffect(() => {
-    if (!user) return;
+    if (!user?.uid) return;
     const q = query(collection(db, 'chapterProgress'), where('userId', '==', user.uid));
     const unsub = onSnapshot(q, (snap) => {
       const prog = {};
@@ -70,7 +70,7 @@ const LearningPath = ({ profile }) => {
       setProgress(prog);
     });
     return unsub;
-  }, [user]);
+  }, [user?.uid]);
 
   const availableSubjects = useMemo(() => {
     const subjects = [];

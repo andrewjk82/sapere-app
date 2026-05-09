@@ -70,56 +70,65 @@ export const studentService = {
       updateAll();
     }, onError);
 
-    // 2. If admin, also subscribe to registered student users
-    let unsubUsers = () => {};
+    // 2. If admin, fetch registered student users.
+    //
+    // Previously this used onSnapshot on the unfiltered `users` collection.
+    // Every user-doc write anywhere in the system fired the listener and
+    // re-read every user — a major contributor to RESOURCE_EXHAUSTED. The
+    // student list does NOT need sub-second freshness; a one-shot fetch on
+    // subscribe + a 5-minute periodic refresh is plenty for a tutoring
+    // admin view.
+    let intervalId = null;
+    let cancelled = false;
     if (isAdmin) {
-      const usersRef = collection(db, "users");
-      // Fetch all users and filter in memory to handle missing 'role' fields
-      unsubUsers = onSnapshot(usersRef, (snapshot) => {
-        registeredStudents = snapshot.docs
-          .map(doc => ({ id: doc.id, ...doc.data() }))
-          .filter(data => 
-            data.email !== "andrewjk82@gmail.com" && 
-            data.role !== 'admin' && 
-            data.id !== tutorId
-          )
-          .map(data => {
-            const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
-            
-            const rawYear = data.level || data.year || "Year ?";
-            const formattedYear = /^\d+$/.test(rawYear.toString().trim()) ? `Year ${rawYear.toString().trim()}` : rawYear;
-            
-            let displaySubject = data.subject;
-            if (!displaySubject) {
-              if (data.role === 'parent') {
-                displaySubject = "Parent Account";
-              } else if (data.school) {
-                displaySubject = `${data.school}, Maths`;
-              } else {
-                displaySubject = "Registered Student";
+      const fetchRegistered = async () => {
+        try {
+          const { getDocs } = await import('firebase/firestore');
+          const snap = await getDocs(collection(db, "users"));
+          if (cancelled) return;
+          registeredStudents = snap.docs
+            .map(doc => ({ id: doc.id, ...doc.data() }))
+            .filter(data =>
+              data.email !== "andrewjk82@gmail.com" &&
+              data.role !== 'admin' &&
+              data.id !== tutorId
+            )
+            .map(data => {
+              const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
+              const rawYear = data.level || data.year || "Year ?";
+              const formattedYear = /^\d+$/.test(rawYear.toString().trim()) ? `Year ${rawYear.toString().trim()}` : rawYear;
+              let displaySubject = data.subject;
+              if (!displaySubject) {
+                if (data.role === 'parent') displaySubject = "Parent Account";
+                else if (data.school) displaySubject = `${data.school}, Maths`;
+                else displaySubject = "Registered Student";
               }
-            }
-
-            return {
-              ...data,
-              id: data.id,
-              source: 'registered',
-              name: data.name || data.displayName || (data.firstName ? `${data.firstName} ${data.lastName || ''}`.trim() : data.email),
-              level: formattedYear,
-              subject: displaySubject,
-              status: "Active",
-              email: data.email,
-              avatarUrl: data.avatarUrl || fallbackAvatar,
-            };
-          });
-        updateAll();
-      }, onError);
+              return {
+                ...data,
+                id: data.id,
+                source: 'registered',
+                name: data.name || data.displayName || (data.firstName ? `${data.firstName} ${data.lastName || ''}`.trim() : data.email),
+                level: formattedYear,
+                subject: displaySubject,
+                status: "Active",
+                email: data.email,
+                avatarUrl: data.avatarUrl || fallbackAvatar,
+              };
+            });
+          updateAll();
+        } catch (err) {
+          if (typeof onError === 'function') onError(err);
+        }
+      };
+      fetchRegistered();
+      intervalId = setInterval(fetchRegistered, 5 * 60 * 1000); // 5 minutes
     }
 
     // Return a function to unsubscribe from both
     return () => {
+      cancelled = true;
       unsubManual();
-      unsubUsers();
+      if (intervalId) clearInterval(intervalId);
     };
   },
 

@@ -211,7 +211,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   });
 
   useEffect(() => {
-    if (!chapter) return;
+    if (!chapter?.id) return;
     const q = query(collection(db, 'questions'), where('chapterId', '==', chapter.id));
     const unsub = onSnapshot(q, (snap) => {
       const data = snap.docs.map(d => ({ id: d.id, ...d.data() }));
@@ -220,7 +220,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       setLoading(false);
     });
     return unsub;
-  }, [chapter]);
+  }, [chapter?.id]);
 
   useEffect(() => {
     if (directEditQuestion && questions.length > 0) {

@@ -430,27 +430,29 @@ function App() {
   }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
 
   useEffect(() => {
-    if (user) {
-      const unsubscribe = studentService.subscribeToStudents(
-        user.uid,
-        (data) => {
-          setStudents(data);
-          setLoadError('');
-          setLoading(false);
-        },
-        (err) => {
-          setStudents([]);
-          setLoading(false);
-          setLoadError(
-            'We couldn’t load your students. This usually means Firestore is disabled or your Firestore security rules are blocking reads.',
-          );
-          console.error(err);
-        },
-        isAdmin
-      );
-      return () => unsubscribe();
-    }
-  }, [user, isAdmin]);
+    if (!user?.uid) return undefined;
+    const unsubscribe = studentService.subscribeToStudents(
+      user.uid,
+      (data) => {
+        setStudents(data);
+        setLoadError('');
+        setLoading(false);
+      },
+      (err) => {
+        setStudents([]);
+        setLoading(false);
+        setLoadError(
+          'We couldn’t load your students. This usually means Firestore is disabled or your Firestore security rules are blocking reads.',
+        );
+        console.error(err);
+      },
+      isAdmin
+    );
+    return () => unsubscribe();
+    // user?.uid is the stable identity; the full `user` object reference
+    // changes on every Firebase token refresh which would needlessly
+    // re-attach the listener and burn reads.
+  }, [user?.uid, isAdmin]);
 
   const handleAddStudent = async () => {
     if (!newStudent.name || !newStudent.subject || !newStudent.email) {
