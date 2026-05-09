@@ -180,19 +180,35 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   }, []);
 
   useEffect(() => {
-    if (!user?.email || isAdmin) return undefined;
-    // Query sessions by student's email OR student's UID for maximum reliability
-    const q = query(
-      collection(db, 'sessions'),
-      or(
-        where('studentId', '==', user.uid),
-        where('studentEmail', '==', (user.email || '').toLowerCase())
-      )
-    );
-    return onSnapshot(q, (snap) => {
-      const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      setStudentSessions(docs);
+    if (!user?.uid || isAdmin) return undefined;
+
+    const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+    const qEmail = query(collection(db, 'sessions'), where('studentEmail', '==', (user.email || '').toLowerCase()));
+
+    let resultsId = [];
+    let resultsEmail = [];
+
+    const mergeResults = () => {
+      const mergedMap = new Map();
+      [...resultsId, ...resultsEmail].forEach(doc => mergedMap.set(doc.id, doc));
+      const merged = Array.from(mergedMap.values());
+      setStudentSessions(merged);
+    };
+
+    const unsubId = onSnapshot(qId, (snap) => {
+      resultsId = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      mergeResults();
     });
+
+    const unsubEmail = onSnapshot(qEmail, (snap) => {
+      resultsEmail = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      mergeResults();
+    });
+
+    return () => {
+      unsubId();
+      unsubEmail();
+    };
   }, [user?.email, user?.uid, isAdmin]);
 
   const { nextLesson, lastLesson } = useMemo(() => {

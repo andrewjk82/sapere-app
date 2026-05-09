@@ -67,26 +67,67 @@ const Schedule = () => {
   // ── Fetch sessions from Firestore ──────────────────────────────────────────
   useEffect(() => {
     if (!user?.uid) return;
-    const q = isAdmin
-      ? query(collection(db, 'sessions'))
-      : query(
-          collection(db, 'sessions'),
-          or(
-            where('studentId', '==', user.uid),
-            where('studentEmail', '==', (user.email || '').toLowerCase())
-          )
-        );
 
-    const unsubscribe = onSnapshot(q, (snap) => {
-      const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      setSessions(docs.sort((a, b) => new Date(a.date) - new Date(b.date)));
-      setLoading(false);
-    }, (err) => {
-      console.error('Firestore error:', err);
-      setLoading(false);
-    });
+    let unsub1 = () => {};
+    let unsub2 = () => {};
 
-    return unsubscribe;
+    if (isAdmin) {
+      const q = query(collection(db, 'sessions'));
+      unsub1 = onSnapshot(q, (snap) => {
+        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        setSessions(docs.sort((a, b) => {
+          const dateA = a.date || '';
+          const dateB = b.date || '';
+          if (dateA !== dateB) return dateA.localeCompare(dateB);
+          return parseTime(a.startTime) - parseTime(b.startTime);
+        }));
+        setLoading(false);
+      }, (err) => {
+        console.error('Firestore error:', err);
+        setLoading(false);
+      });
+    } else {
+      // Split into two listeners to avoid 'or' query issues and potential indexing problems
+      const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+      const qEmail = query(collection(db, 'sessions'), where('studentEmail', '==', (user.email || '').toLowerCase()));
+
+      let resultsId = [];
+      let resultsEmail = [];
+
+      const mergeResults = () => {
+        const mergedMap = new Map();
+        [...resultsId, ...resultsEmail].forEach(doc => mergedMap.set(doc.id, doc));
+        const merged = Array.from(mergedMap.values());
+        setSessions(merged.sort((a, b) => {
+          const dateA = a.date || '';
+          const dateB = b.date || '';
+          if (dateA !== dateB) return dateA.localeCompare(dateB);
+          return parseTime(a.startTime) - parseTime(b.startTime);
+        }));
+        setLoading(false);
+      };
+
+      unsub1 = onSnapshot(qId, (snap) => {
+        resultsId = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        mergeResults();
+      }, (err) => {
+        console.error('Firestore ID query error:', err);
+        mergeResults();
+      });
+
+      unsub2 = onSnapshot(qEmail, (snap) => {
+        resultsEmail = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        mergeResults();
+      }, (err) => {
+        console.error('Firestore Email query error:', err);
+        mergeResults();
+      });
+    }
+
+    return () => {
+      unsub1();
+      unsub2();
+    };
   }, [user?.uid, user?.email, isAdmin]);
 
   // ── Helpers ────────────────────────────────────────────────────────────────
@@ -205,11 +246,29 @@ const Schedule = () => {
 
   const parseTime = useCallback((t) => {
     if (!t) return 0;
-    const parts = t.toLowerCase().split(' ');
-    const period = parts[1];
-    const [hStr, mStr] = parts[0].split(':');
+    const parts = String(t).toLowerCase().trim().split(/\s+/);
+    if (parts.length === 0) return 0;
+    
+    let timeStr = parts[0];
+    let period = parts[1];
+    
+    // Handle cases like "10:00AM" where there's no space
+    if (!period) {
+      if (timeStr.endsWith('am')) {
+        period = 'am';
+        timeStr = timeStr.replace('am', '');
+      } else if (timeStr.endsWith('pm')) {
+        period = 'pm';
+        timeStr = timeStr.replace('pm', '');
+      }
+    }
+    
+    const [hStr, mStr] = timeStr.split(':');
     let h = parseInt(hStr, 10);
     const m = parseInt(mStr || '0', 10);
+    
+    if (isNaN(h)) return 0;
+    
     if (period === 'pm' && h !== 12) h += 12;
     if (period === 'am' && h === 12) h = 0;
     return h + m / 60;
@@ -310,7 +369,7 @@ const Schedule = () => {
                     </div>
                     <div>
                       <div style={{ fontSize: '1.02rem', fontWeight: 900, color: '#0f172a' }}>
-                        {session.groupStudentNames ? session.groupStudentNames.join(', ') : session.studentName}
+                        {Array.isArray(session.groupStudentNames) ? session.groupStudentNames.join(', ') : session.studentName}
                       </div>
                       <div style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 700 }}>{normalizeSubjectLabel(session.subject)}</div>
                     </div>
@@ -508,11 +567,6 @@ const Schedule = () => {
             {weekRangeLabel}
           </p>
           <h2>Schedule</h2>
-          {!isMobile && (
-            <p style={{ margin: '12px 0 0', color: '#64748b', fontSize: '0.95rem', fontWeight: 600 }}>
-              {nextSession ? `Next: ${nextSession.studentName} at ${nextSession.startTime}` : (isAdmin ? 'No upcoming tutoring sessions yet.' : 'No upcoming lessons yet.')}
-            </p>
-          )}
         </div>
 
         <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>

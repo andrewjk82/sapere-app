@@ -224,7 +224,6 @@ const Settings = () => {
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Settings</h2>
-          <p>Account preferences, privacy, and notifications — all in one calm place.</p>
         </div>
       </div>
 

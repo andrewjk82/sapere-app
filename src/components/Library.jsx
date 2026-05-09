@@ -124,7 +124,6 @@ const Library = () => {
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Academic Library</h2>
-          <p>Shared learning materials, past papers and study resources for all students.</p>
         </div>
         {isAdmin && (
           <button

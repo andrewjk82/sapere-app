@@ -417,7 +417,6 @@ const Curriculum = () => {
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Curriculum</h2>
-          <p>Explore learning paths, manage chapters, and sync questions across all year levels.</p>
         </div>
       </div>
 
