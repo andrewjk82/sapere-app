@@ -6,56 +6,144 @@ const hasCoarsePointer = () =>
 
 const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
 
-function drawStrokeOnCtx(ctx, stroke, d) {
-  if (!ctx || !stroke?.points?.length) return;
-  ctx.save();
+/**
+ * Single-canvas natural-pen renderer.
+ *
+ * Key insight: do NOT re-render the entire stroke each frame. Each pointermove
+ * draws only the newest tiny quadratic-bezier segment between midpoints — this
+ * is the technique used by Procreate, Apple Notes, etc.
+ *
+ *   pts:        p0 ─ p1 ─ p2 ─ p3 ─ p4 …
+ *   midpoints:     m1   m2   m3   m4
+ *
+ *   Each segment drawn = quadCurveTo(prev_pt, new_mid) starting from prev_mid.
+ *   Result: O(1) work per frame regardless of stroke length.
+ */
+
+function applyStyle(ctx, stroke, dpr) {
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
-
   if (stroke.isEraser) {
     ctx.globalCompositeOperation = 'destination-out';
-    ctx.lineWidth = stroke.width * 6 * d;
+    ctx.lineWidth = stroke.width * 6 * dpr;
     ctx.strokeStyle = 'rgba(0,0,0,1)';
   } else {
     ctx.globalCompositeOperation = 'source-over';
-    ctx.lineWidth = stroke.width * d;
+    ctx.lineWidth = stroke.width * dpr;
     ctx.strokeStyle = stroke.color;
   }
+}
 
-  const pts = stroke.points;
-  ctx.beginPath();
-  if (pts.length === 1) {
-    const r = stroke.isEraser ? stroke.width * 3 * d : Math.max(1, stroke.width / 2) * d;
-    ctx.arc(pts[0].x * d, pts[0].y * d, r, 0, Math.PI * 2);
-    ctx.fillStyle = stroke.isEraser ? 'rgba(0,0,0,1)' : stroke.color;
-    ctx.fill();
+function drawDot(ctx, pt, stroke, dpr) {
+  ctx.save();
+  if (stroke.isEraser) {
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.fillStyle = 'rgba(0,0,0,1)';
   } else {
-    ctx.moveTo(pts[0].x * d, pts[0].y * d);
-    for (let i = 1; i < pts.length - 1; i++) {
-      const ex = (pts[i].x + pts[i + 1].x) / 2 * d;
-      const ey = (pts[i].y + pts[i + 1].y) / 2 * d;
-      ctx.quadraticCurveTo(pts[i].x * d, pts[i].y * d, ex, ey);
-    }
-    ctx.lineTo(pts[pts.length - 1].x * d, pts[pts.length - 1].y * d);
-    ctx.stroke();
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = stroke.color;
   }
+  const r = (stroke.isEraser ? stroke.width * 3 : Math.max(0.6, stroke.width / 2)) * dpr;
+  ctx.beginPath();
+  ctx.arc(pt.x * dpr, pt.y * dpr, r, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
+
+// Incremental: draw only the newest curve segment for the live stroke
+function drawIncrementalSegment(ctx, stroke, dpr) {
+  const pts = stroke.points;
+  if (pts.length < 2) return;
+
+  ctx.save();
+  applyStyle(ctx, stroke, dpr);
+
+  if (pts.length === 2) {
+    // First segment — straight line from p0 to mid(p0,p1) so the stroke begins crisp
+    const p0 = pts[0], p1 = pts[1];
+    const mid = { x: (p0.x + p1.x) / 2, y: (p0.y + p1.y) / 2 };
+    ctx.beginPath();
+    ctx.moveTo(p0.x * dpr, p0.y * dpr);
+    ctx.lineTo(mid.x * dpr, mid.y * dpr);
+    ctx.stroke();
+    stroke.lastMid = mid;
+  } else {
+    const prev = pts[pts.length - 2];
+    const curr = pts[pts.length - 1];
+    const newMid = { x: (prev.x + curr.x) / 2, y: (prev.y + curr.y) / 2 };
+    ctx.beginPath();
+    ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
+    ctx.quadraticCurveTo(prev.x * dpr, prev.y * dpr, newMid.x * dpr, newMid.y * dpr);
+    ctx.stroke();
+    stroke.lastMid = newMid;
+  }
+
+  ctx.restore();
+}
+
+// Close out the stroke: connect from last drawn midpoint to actual final point
+function finalizeStroke(ctx, stroke, dpr) {
+  const pts = stroke.points;
+  if (pts.length < 2 || !stroke.lastMid) return;
+  ctx.save();
+  applyStyle(ctx, stroke, dpr);
+  const last = pts[pts.length - 1];
+  ctx.beginPath();
+  ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
+  ctx.lineTo(last.x * dpr, last.y * dpr);
+  ctx.stroke();
+  ctx.restore();
+}
+
+// Replay a finished stroke from scratch (for undo / clear / resize)
+function drawCompleteStroke(ctx, stroke, dpr) {
+  const pts = stroke.points;
+  if (!pts?.length) return;
+
+  if (pts.length === 1) {
+    drawDot(ctx, pts[0], stroke, dpr);
+    return;
+  }
+
+  ctx.save();
+  applyStyle(ctx, stroke, dpr);
+
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x * dpr, pts[0].y * dpr);
+
+  if (pts.length === 2) {
+    ctx.lineTo(pts[1].x * dpr, pts[1].y * dpr);
+  } else {
+    // Quadratic curves through midpoints
+    for (let i = 1; i < pts.length - 1; i++) {
+      const midX = (pts[i].x + pts[i + 1].x) / 2;
+      const midY = (pts[i].y + pts[i + 1].y) / 2;
+      ctx.quadraticCurveTo(pts[i].x * dpr, pts[i].y * dpr, midX * dpr, midY * dpr);
+    }
+    const last = pts[pts.length - 1];
+    ctx.lineTo(last.x * dpr, last.y * dpr);
+  }
+
+  ctx.stroke();
   ctx.restore();
 }
 
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
-  const committedRef = useRef(null);
-  const liveRef = useRef(null);
-  const liveRafRef = useRef(null); // rAF handle for throttled live redraws
+  const canvasRef = useRef(null);
+  const dprRef = useRef(1);
 
   const strokesRef = useRef([]);
+  const currentStrokeRef = useRef(null);
+  const isDrawingRef = useRef(false);
+
+  // Tool state mirrored to refs so pointer handlers always see fresh values
   const activeToolRef = useRef('pen');
   const eraserModeRef = useRef('area');
-  const palmGuardRef = useRef(null);
+  const palmGuardRef = useRef(false);
   const strokeColorRef = useRef('#1e1b4b');
   const strokeWidthRef = useRef(3);
-  const isDrawingRef = useRef(false);
-  const currentStrokeRef = useRef(null);
 
+  // React state
   const [strokes, setStrokes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
@@ -75,84 +163,45 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const isGraph = questionType === 'graph_sketch';
 
-  // --- Canvas helpers (all direct DOM, no React state dependency) ---
+  const getCtx = () => canvasRef.current?.getContext('2d');
 
-  const fullRedrawCommitted = useCallback((strokeList) => {
-    const canvas = committedRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    const d = window.devicePixelRatio || 1;
+  // Full clear + replay — only used for undo/clear/resize/page-switch
+  const fullRedraw = useCallback((strokeList) => {
+    const canvas = canvasRef.current;
+    const ctx = getCtx();
+    if (!canvas || !ctx) return;
+    const dpr = dprRef.current;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (const s of strokeList) drawStrokeOnCtx(ctx, s, d);
+    for (const s of strokeList) drawCompleteStroke(ctx, s, dpr);
   }, []);
 
-  // Append ONE stroke to committed canvas — O(1), no full replay needed
-  const appendToCommitted = useCallback((stroke) => {
-    const canvas = committedRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    drawStrokeOnCtx(ctx, stroke, window.devicePixelRatio || 1);
-  }, []);
-
-  // Size sync — ResizeObserver reads strokesRef so it always has fresh data
+  // Size sync
   useEffect(() => {
-    const committed = committedRef.current;
-    const live = liveRef.current;
-    if (!committed || !live) return;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
 
-    const syncSize = () => {
-      const rect = committed.getBoundingClientRect();
+    const sync = () => {
+      const rect = canvas.getBoundingClientRect();
       if (!rect.width || !rect.height) return;
-      const d = window.devicePixelRatio || 1;
-      const w = Math.round(rect.width * d);
-      const h = Math.round(rect.height * d);
-      if (committed.width !== w || committed.height !== h) {
-        committed.width = w;
-        committed.height = h;
-        live.width = w;
-        live.height = h;
-        fullRedrawCommitted(strokesRef.current);
+      const dpr = window.devicePixelRatio || 1;
+      const w = Math.round(rect.width * dpr);
+      const h = Math.round(rect.height * dpr);
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w;
+        canvas.height = h;
+        dprRef.current = dpr;
+        fullRedraw(strokesRef.current);
       }
     };
 
-    syncSize();
-    const ro = new ResizeObserver(syncSize);
-    ro.observe(committed);
+    sync();
+    const ro = new ResizeObserver(sync);
+    ro.observe(canvas);
     return () => ro.disconnect();
-  }, [fullRedrawCommitted]);
+  }, [fullRedraw]);
 
-  // --- Live canvas ---
-  const _drawLiveNow = () => {
-    const canvas = liveRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    const d = window.devicePixelRatio || 1;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    if (currentStrokeRef.current) drawStrokeOnCtx(ctx, currentStrokeRef.current, d);
-  };
-
-  // RAF-throttled: at most one redraw per display frame regardless of event rate
-  const scheduleLiveDraw = () => {
-    if (liveRafRef.current) return;
-    liveRafRef.current = requestAnimationFrame(() => {
-      liveRafRef.current = null;
-      _drawLiveNow();
-    });
-  };
-
-  const clearLive = () => {
-    if (liveRafRef.current) { cancelAnimationFrame(liveRafRef.current); liveRafRef.current = null; }
-    const canvas = liveRef.current;
-    if (!canvas) return;
-    canvas.getContext('2d')?.clearRect(0, 0, canvas.width, canvas.height);
-  };
-
-  // --- Pointer events ---
   const toPoint = (e) => {
-    const rect = liveRef.current?.getBoundingClientRect();
+    const rect = canvasRef.current?.getBoundingClientRect();
     if (!rect) return null;
     return { x: e.clientX - rect.left, y: e.clientY - rect.top };
   };
@@ -163,10 +212,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
     const pt = toPoint(e);
     if (!pt) return;
-    try { liveRef.current?.setPointerCapture(e.pointerId); } catch {}
+
+    try { canvasRef.current?.setPointerCapture(e.pointerId); } catch {}
 
     const tool = activeToolRef.current;
 
+    // Stroke-eraser: tap a stroke to remove it
     if (tool === 'eraser' && eraserModeRef.current === 'stroke') {
       const hitRadius = 18;
       const current = strokesRef.current;
@@ -177,7 +228,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       if (next.length !== current.length) {
         setUndoStack(prev => [...prev, current]);
         setStrokes(next);
-        fullRedrawCommitted(next);
+        fullRedraw(next);
       }
       return;
     }
@@ -188,61 +239,66 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       color: strokeColorRef.current,
       width: strokeWidthRef.current,
       isEraser: tool === 'eraser',
+      lastMid: null,
     };
-    scheduleLiveDraw();
-  }, [isSubmitted, fullRedrawCommitted]);
+
+    // Initial dot for instant feedback
+    const ctx = getCtx();
+    if (ctx) drawDot(ctx, pt, currentStrokeRef.current, dprRef.current);
+  }, [isSubmitted, fullRedraw]);
 
   const onPointerMove = useCallback((e) => {
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
 
+    // Sub-frame sampling (120 Hz, Pencil)
     const events = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : [e];
-    let updated = false;
+    const ctx = getCtx();
+    if (!ctx) return;
+    const dpr = dprRef.current;
+    const stroke = currentStrokeRef.current;
 
     for (const ev of events) {
       const pt = toPoint(ev);
       if (!pt) continue;
-      const pts = currentStrokeRef.current.points;
-      const last = pts[pts.length - 1];
-      if (!last || pt.x !== last.x || pt.y !== last.y) {
-        pts.push(pt);
-        updated = true;
-      }
+      const last = stroke.points[stroke.points.length - 1];
+      if (last && pt.x === last.x && pt.y === last.y) continue;
+      stroke.points.push(pt);
+      drawIncrementalSegment(ctx, stroke, dpr);
     }
-
-    if (updated) scheduleLiveDraw();
   }, []);
 
   const onPointerUp = useCallback(() => {
     if (!isDrawingRef.current) return;
     isDrawingRef.current = false;
 
-    if (currentStrokeRef.current?.points?.length) {
-      const finished = { ...currentStrokeRef.current };
-      currentStrokeRef.current = null;
-      clearLive();
-      appendToCommitted(finished); // O(1) — draw just this stroke, no full replay
-      setUndoStack(prev => [...prev, strokesRef.current]);
-      setStrokes(prev => [...prev, finished]);
-    } else {
-      currentStrokeRef.current = null;
-      clearLive();
-    }
-  }, [appendToCommitted]);
+    const stroke = currentStrokeRef.current;
+    if (!stroke) return;
 
-  // --- Toolbar actions ---
+    if (stroke.points.length >= 2) {
+      const ctx = getCtx();
+      if (ctx) finalizeStroke(ctx, stroke, dprRef.current);
+    }
+
+    delete stroke.lastMid;
+    setUndoStack(prev => [...prev, strokesRef.current]);
+    setStrokes(prev => [...prev, stroke]);
+    currentStrokeRef.current = null;
+  }, []);
+
+  // ── Toolbar actions ──
   const handleUndo = () => {
     if (!undoStack.length) return;
     const prev = undoStack[undoStack.length - 1];
     setStrokes(prev);
     setUndoStack(u => u.slice(0, -1));
-    fullRedrawCommitted(prev);
+    fullRedraw(prev);
   };
 
   const handleClear = () => {
     if (!window.confirm('Clear this page?')) return;
     setUndoStack(prev => [...prev, strokes]);
     setStrokes([]);
-    fullRedrawCommitted([]);
+    fullRedraw([]);
   };
 
   const addPage = () => {
@@ -253,7 +309,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     setCurrentPage(next.length - 1);
     setStrokes([]);
     setUndoStack([]);
-    fullRedrawCommitted([]);
+    fullRedraw([]);
   };
 
   const goToPage = (idx) => {
@@ -265,34 +321,29 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     const target = next[idx] || [];
     setStrokes(target);
     setUndoStack([]);
-    fullRedrawCommitted(target);
+    fullRedraw(target);
   };
 
+  // ── Export API ──
   useImperativeHandle(ref, () => ({
     exportImage: () => {
-      const committed = committedRef.current;
-      if (!committed) return Promise.resolve(null);
-      const tmp = document.createElement('canvas');
-      tmp.width = committed.width;
-      tmp.height = committed.height;
-      const ctx = tmp.getContext('2d');
-      ctx.drawImage(committed, 0, 0);
-      if (liveRef.current) ctx.drawImage(liveRef.current, 0, 0);
-      return Promise.resolve(tmp.toDataURL('image/png'));
+      const canvas = canvasRef.current;
+      if (!canvas) return Promise.resolve(null);
+      return Promise.resolve(canvas.toDataURL('image/png'));
     },
     exportPageImages: async () => {
-      const committed = committedRef.current;
-      if (!committed) return [];
+      const canvas = canvasRef.current;
+      if (!canvas) return [];
       const all = [...pages];
       all[currentPage] = strokes;
       const tmp = document.createElement('canvas');
-      tmp.width = committed.width;
-      tmp.height = committed.height;
+      tmp.width = canvas.width;
+      tmp.height = canvas.height;
       const ctx = tmp.getContext('2d');
-      const d = window.devicePixelRatio || 1;
+      const dpr = dprRef.current;
       return all.map(pageStrokes => {
         ctx.clearRect(0, 0, tmp.width, tmp.height);
-        for (const s of pageStrokes) drawStrokeOnCtx(ctx, s, d);
+        for (const s of pageStrokes) drawCompleteStroke(ctx, s, dpr);
         return tmp.toDataURL('image/png');
       });
     },
@@ -301,10 +352,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       setPages([[]]);
       setCurrentPage(0);
       setUndoStack([]);
-      fullRedrawCommitted([]);
+      fullRedraw([]);
     },
-  }), [fullRedrawCommitted]);
+  }), [pages, currentPage, strokes, fullRedraw]);
 
+  // ── Styles ──
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
     backgroundSize: '20px 20px',
@@ -315,8 +367,6 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     backgroundColor: '#fff',
   };
 
-  const layerStyle = { position: 'absolute', inset: 0, width: '100%', height: '100%' };
-
   return (
     <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative' }}>
       {!isSubmitted && (
@@ -324,6 +374,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
           <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase' }}>
             {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
           </span>
+
           <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
             <button onClick={() => setPalmGuard(v => !v)} style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900 }}>
               <MousePointer2 size={15} style={{ marginRight: '5px' }} />
@@ -377,15 +428,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
             <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '2px', background: '#94a3b8', transform: 'translateX(-50%)', pointerEvents: 'none' }} />
           </>
         )}
-        <canvas ref={committedRef} style={{ ...layerStyle, pointerEvents: 'none' }} />
         <canvas
-          ref={liveRef}
+          ref={canvasRef}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={onPointerUp}
           onPointerCancel={onPointerUp}
           onPointerLeave={onPointerUp}
-          style={{ ...layerStyle, touchAction: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
         />
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
