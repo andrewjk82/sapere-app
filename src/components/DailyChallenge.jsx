@@ -333,6 +333,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [answerResults, setAnswerResults] = useState([]);
   const [chapterProgress, setChapterProgress] = useState(null);
   const [selectedChallenge, setSelectedChallenge] = useState(null);
+  const [workingOutByIdx, setWorkingOutByIdx] = useState({}); // questionIdx -> { workingOut, workingOutPages }
   const [isReporting, setIsReporting] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
   const [reportMessage, setReportMessage] = useState('');
@@ -786,6 +787,48 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       unsubCalc();
     };
   }, [user?.uid]);
+
+  // ── Lazy-load working-out images for the open detail view ──
+  // Heavy base64 canvas exports live in a sibling subcollection
+  // (users/{uid}/{stat_collection}/{date}/working_out/{idx}) so the parent
+  // record can stay under Firestore's 1 MB limit. We fetch them on-demand
+  // when the user opens a challenge for review.
+  useEffect(() => {
+    setWorkingOutByIdx({});
+    if (!selectedChallenge || !user?.uid) return;
+    const results = Array.isArray(selectedChallenge.answerResults) ? selectedChallenge.answerResults : [];
+    const indicesNeedingFetch = results
+      .map((r, idx) => ({ r, idx }))
+      .filter(({ r }) => r && r.hasWorkingOut && !r.workingOut && !(Array.isArray(r.workingOutPages) && r.workingOutPages.length > 0));
+    if (!indicesNeedingFetch.length) return;
+
+    const dateId = selectedChallenge.id || (selectedChallenge.timestamp && new Date(selectedChallenge.timestamp).toLocaleDateString('en-CA'));
+    if (!dateId) return;
+    const statColName = selectedChallenge.statCollection
+      || (selectedChallenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
+
+    let cancelled = false;
+    (async () => {
+      const { getDoc: gd, doc: docFn } = await import('firebase/firestore');
+      await Promise.allSettled(
+        indicesNeedingFetch.map(async ({ idx }) => {
+          try {
+            const snap = await gd(docFn(db, 'users', user.uid, statColName, dateId, 'working_out', String(idx)));
+            if (!cancelled && snap.exists()) {
+              const data = snap.data();
+              setWorkingOutByIdx(prev => ({
+                ...prev,
+                [idx]: { workingOut: data.workingOut || null, workingOutPages: data.workingOutPages || [] },
+              }));
+            }
+          } catch (e) {
+            console.warn(`working_out[${idx}] fetch failed (non-fatal):`, e?.code || e);
+          }
+        })
+      );
+    })();
+    return () => { cancelled = true; };
+  }, [selectedChallenge, user?.uid]);
 
   const startCalculationQuiz = async () => {
     const today = new Date().toLocaleDateString('en-CA');
@@ -1407,6 +1450,38 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
         const nextDifficultyMix = adjustDifficultyMix(chapterProgress?.difficultyMix, resultStats);
         
+        // ── Off-load heavy working-out images to a sibling subcollection ──
+        // Firestore docs are limited to 1 MB. Base64-encoded canvas images
+        // can easily push a multi-question record past that limit and cause
+        // "Quota exceeded" / "INVALID_ARGUMENT" save failures. Save each
+        // question's images in its own working_out/{idx} doc and keep only
+        // a `hasWorkingOut` flag in the main record.
+        const statColName = challengeType === 'calc' ? 'calc_stats' : 'daily_stats';
+        const workingOutWrites = [];
+        const slimAnswerResults = currentAnswerResults.map((r, idx) => {
+          if (!r) return r;
+          const pages = Array.isArray(r.workingOutPages) ? r.workingOutPages.filter(Boolean) : [];
+          const single = r.workingOut || null;
+          const hasImages = single || pages.length > 0;
+          if (!hasImages) {
+            const { workingOut: _w, workingOutPages: _wp, ...rest } = r;
+            return rest;
+          }
+          const woRef = doc(db, 'users', user.uid, statColName, today, 'working_out', String(idx));
+          workingOutWrites.push(
+            setDoc(woRef, {
+              questionIdx: idx,
+              workingOut: single,
+              workingOutPages: pages,
+              savedAt: now.toISOString(),
+            }).catch(e => console.warn(`working_out[${idx}] save failed (non-fatal):`, e?.code || e))
+          );
+          const { workingOut: _w, workingOutPages: _wp, ...rest } = r;
+          return { ...rest, hasWorkingOut: true };
+        });
+        // Best-effort — don't block the main save on these
+        Promise.allSettled(workingOutWrites);
+
         const record = {
           completed: true,
           abandoned: false, // Explicitly mark as not abandoned
@@ -1425,13 +1500,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questions: questions || [],
           userAnswers: userAnswers || [],
-          answerResults: currentAnswerResults,
+          answerResults: slimAnswerResults,
           topicStats,
           chapterStats,
           difficultyMixBefore: normalizeMix(chapterProgress?.difficultyMix),
           difficultyMixAfter: nextDifficultyMix,
         };
-        
+
         // 1. Save the challenge stat record first
         await setDoc(ref, record, { merge: true });
 
@@ -1596,7 +1671,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           ? result.correct
                           : String(userAnswer) === String(qData.answer);
                         const questionText = toDisplayText(qData?.text || qData?.question, 'Question text unavailable');
-                        const workingOutPages = getWorkingOutPages(result);
+                        // Merge in lazy-loaded working-out images from sibling subcollection
+                        const lazyWO = workingOutByIdx[idx];
+                        const workingOutPages = getWorkingOutPages(lazyWO ? { ...result, ...lazyWO } : result);
                         return (
                           <div key={idx} style={{ padding: '20px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', position: 'relative' }}>
                             {qData.isManual && (

@@ -78,10 +78,20 @@ service cloud.firestore {
 
       match /daily_stats/{statId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+
+        // Per-question working-out images stored as a sibling subcollection
+        // so the parent record stays under Firestore's 1 MB document limit.
+        match /working_out/{idx} {
+          allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+        }
       }
 
       match /calc_stats/{statId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+
+        match /working_out/{idx} {
+          allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+        }
       }
 
       match /chapterProgress/{progressId} {
