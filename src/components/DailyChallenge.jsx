@@ -712,37 +712,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
         setLoading(false);
 
-        // Fetch secondary data after the main challenge screen is usable.
-        Promise.allSettled([
-          (async () => {
-            const { collection: col, getDocs: gd, orderBy: ob, limit: lim, query: qry } = await import('firebase/firestore');
-            const dailyHistoryRef = col(db, 'users', user.uid, 'daily_stats');
-            const calcHistoryRef = col(db, 'users', user.uid, 'calc_stats');
-            const [dailySnap, calcSnap] = await Promise.all([
-              gd(qry(dailyHistoryRef, ob('timestamp', 'desc'), lim(30))),
-              gd(qry(calcHistoryRef, ob('timestamp', 'desc'), lim(30))),
-            ]);
-            const historyData = [
-              ...dailySnap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() })),
-              ...calcSnap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() })),
-            ].sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0)).slice(0, 30);
-            setHistory(historyData);
-          })(),
-          (async () => {
+        // Fetch chapter progress (history is handled by a separate realtime listener)
+        (async () => {
+          try {
             const assignedYears = Array.isArray(profileData.assignedYear) ? profileData.assignedYear : [profileData.assignedYear || profileData.year || CHALLENGE_YEAR];
             const assignedYear = assignedYears[0];
             const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`);
             const progressSnap = await getDoc(progressRef);
             setChapterProgress(progressSnap.exists() ? progressSnap.data() : null);
-          })(),
-        ]).then((results) => {
-          results.forEach((result, index) => {
-            if (result.status === 'rejected') {
-              const label = index === 0 ? 'history' : 'progress';
-              console.warn(`${label} fetch failed (non-fatal):`, result.reason?.code || result.reason);
-            }
-          });
-        });
+          } catch (e) {
+            console.warn('progress fetch failed (non-fatal):', e?.code || e);
+          }
+        })();
 
       } catch (err) {
         console.error("Error fetching challenge data:", err);
@@ -750,6 +731,60 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     };
     fetchData();
+  }, [user?.uid]);
+
+  // ── Realtime history listener ──
+  // Replaces the old one-time getDocs fetch + optimistic setHistory pattern.
+  // Any test write (daily_stats or calc_stats) is reflected immediately,
+  // even if finishQuiz's later transaction throws or the user navigates fast.
+  useEffect(() => {
+    if (!user?.uid) return;
+
+    let dailyData = [];
+    let calcData = [];
+    let dailyLoaded = false;
+    let calcLoaded = false;
+
+    const flush = () => {
+      if (!dailyLoaded || !calcLoaded) return;
+      const merged = [...dailyData, ...calcData]
+        .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
+        .slice(0, 30);
+      setHistory(merged);
+    };
+
+    const unsubDaily = onSnapshot(
+      collection(db, 'users', user.uid, 'daily_stats'),
+      (snap) => {
+        dailyData = snap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
+        dailyLoaded = true;
+        flush();
+      },
+      (err) => {
+        console.warn('daily history listener failed (non-fatal):', err?.code || err);
+        dailyLoaded = true;
+        flush();
+      }
+    );
+
+    const unsubCalc = onSnapshot(
+      collection(db, 'users', user.uid, 'calc_stats'),
+      (snap) => {
+        calcData = snap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() }));
+        calcLoaded = true;
+        flush();
+      },
+      (err) => {
+        console.warn('calc history listener failed (non-fatal):', err?.code || err);
+        calcLoaded = true;
+        flush();
+      }
+    );
+
+    return () => {
+      unsubDaily();
+      unsubCalc();
+    };
   }, [user?.uid]);
 
   const startCalculationQuiz = async () => {
@@ -1446,9 +1481,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           lastChapterStats: chapterStats,
         }));
         
-        setHistory(prev => [record, ...(prev || [])]
-          .sort((a, b) => getHistorySortTime(b) - getHistorySortTime(a))
-          .slice(0, 30));
+        // History is updated automatically by the realtime onSnapshot listener
+        // — no manual setHistory needed here.
         if (challengeType === 'daily') {
           setTodayCompleted(true);
         } else if (challengeType === 'calc') {
@@ -1553,8 +1587,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                         const result = selectedChallenge.answerResults?.[idx];
                         if (!result) return null;
                         const userAnswer = result?.selectedAnswer ?? (selectedChallenge.userAnswers ? selectedChallenge.userAnswers[idx] : null);
-                        const qData = questions.find(q => q.id === result.questionId);
-                        if (!qData) return null; // Safety catch
+                        // Use the question from the saved challenge itself, NOT the current
+                        // component `questions` state (which is empty when reviewing past records).
+                        const qData = q || questions.find(qq => qq.id === result.questionId);
+                        if (!qData) return null;
 
                         const isCorrect = typeof result?.correct === 'boolean'
                           ? result.correct
