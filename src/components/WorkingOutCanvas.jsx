@@ -131,12 +131,15 @@ function drawCompleteStroke(ctx, stroke, dpr) {
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
   const canvasRef = useRef(null);
   const dprRef = useRef(1);
+  const rectRef = useRef(null); // cached bounding rect — recomputed on resize / pointerdown only
 
   const strokesRef = useRef([]);
   const currentStrokeRef = useRef(null);
   const isDrawingRef = useRef(false);
+  const activePointerIdRef = useRef(null);
 
-  // Tool state mirrored to refs so pointer handlers always see fresh values
+  // Tool state mirrored to refs so handlers (attached once) always see fresh values
+  const isSubmittedRef = useRef(false);
   const activeToolRef = useRef('pen');
   const eraserModeRef = useRef('area');
   const palmGuardRef = useRef(false);
@@ -155,6 +158,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const [strokeWidth, setStrokeWidth] = useState(3);
 
   strokesRef.current = strokes;
+  isSubmittedRef.current = isSubmitted;
   activeToolRef.current = activeTool;
   eraserModeRef.current = eraserMode;
   palmGuardRef.current = palmGuard;
@@ -165,7 +169,6 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const getCtx = () => canvasRef.current?.getContext('2d');
 
-  // Full clear + replay — only used for undo/clear/resize/page-switch
   const fullRedraw = useCallback((strokeList) => {
     const canvas = canvasRef.current;
     const ctx = getCtx();
@@ -192,98 +195,142 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         dprRef.current = dpr;
         fullRedraw(strokesRef.current);
       }
+      rectRef.current = rect;
     };
 
     sync();
     const ro = new ResizeObserver(sync);
     ro.observe(canvas);
-    return () => ro.disconnect();
+    const onScroll = () => { rectRef.current = canvas.getBoundingClientRect(); };
+    window.addEventListener('scroll', onScroll, true);
+    window.addEventListener('resize', onScroll);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('scroll', onScroll, true);
+      window.removeEventListener('resize', onScroll);
+    };
   }, [fullRedraw]);
 
-  const toPoint = (e) => {
-    const rect = canvasRef.current?.getBoundingClientRect();
-    if (!rect) return null;
-    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
-  };
+  // ── Native pointer event listeners (bypass React synthetic events) ──
+  // React strips getCoalescedEvents on synthetic events in some versions, and
+  // event delegation adds latency. Native listeners give us:
+  //   1. Real native PointerEvents with working getCoalescedEvents()
+  //   2. Direct path from input → handler (no React wrapping)
+  //   3. Reliable preventDefault with passive:false
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
 
-  const onPointerDown = useCallback((e) => {
-    if (isSubmitted || (palmGuardRef.current && e.pointerType !== 'pen')) return;
-    e.preventDefault();
-
-    const pt = toPoint(e);
-    if (!pt) return;
-
-    try { canvasRef.current?.setPointerCapture(e.pointerId); } catch {}
-
-    const tool = activeToolRef.current;
-
-    // Stroke-eraser: tap a stroke to remove it
-    if (tool === 'eraser' && eraserModeRef.current === 'stroke') {
-      const hitRadius = 18;
-      const current = strokesRef.current;
-      const next = current.filter(s => {
-        if (s.isEraser) return true;
-        return !s.points?.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < hitRadius);
-      });
-      if (next.length !== current.length) {
-        setUndoStack(prev => [...prev, current]);
-        setStrokes(next);
-        fullRedraw(next);
-      }
-      return;
-    }
-
-    isDrawingRef.current = true;
-    currentStrokeRef.current = {
-      points: [pt],
-      color: strokeColorRef.current,
-      width: strokeWidthRef.current,
-      isEraser: tool === 'eraser',
-      lastMid: null,
+    const toPoint = (clientX, clientY) => {
+      const rect = rectRef.current || canvas.getBoundingClientRect();
+      return { x: clientX - rect.left, y: clientY - rect.top };
     };
 
-    // Initial dot for instant feedback
-    const ctx = getCtx();
-    if (ctx) drawDot(ctx, pt, currentStrokeRef.current, dprRef.current);
-  }, [isSubmitted, fullRedraw]);
+    const handleDown = (e) => {
+      if (isSubmittedRef.current) return;
+      if (palmGuardRef.current && e.pointerType !== 'pen') return;
+      e.preventDefault();
 
-  const onPointerMove = useCallback((e) => {
-    if (!isDrawingRef.current || !currentStrokeRef.current) return;
+      // Refresh cached rect at stroke start so we use accurate coords
+      rectRef.current = canvas.getBoundingClientRect();
+      const pt = toPoint(e.clientX, e.clientY);
 
-    // Sub-frame sampling (120 Hz, Pencil)
-    const events = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : [e];
-    const ctx = getCtx();
-    if (!ctx) return;
-    const dpr = dprRef.current;
-    const stroke = currentStrokeRef.current;
+      try { canvas.setPointerCapture(e.pointerId); } catch {}
+      activePointerIdRef.current = e.pointerId;
 
-    for (const ev of events) {
-      const pt = toPoint(ev);
-      if (!pt) continue;
-      const last = stroke.points[stroke.points.length - 1];
-      if (last && pt.x === last.x && pt.y === last.y) continue;
-      stroke.points.push(pt);
-      drawIncrementalSegment(ctx, stroke, dpr);
-    }
-  }, []);
+      const tool = activeToolRef.current;
 
-  const onPointerUp = useCallback(() => {
-    if (!isDrawingRef.current) return;
-    isDrawingRef.current = false;
+      if (tool === 'eraser' && eraserModeRef.current === 'stroke') {
+        const hitRadius = 18;
+        const current = strokesRef.current;
+        const next = current.filter(s => {
+          if (s.isEraser) return true;
+          return !s.points?.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < hitRadius);
+        });
+        if (next.length !== current.length) {
+          setUndoStack(prev => [...prev, current]);
+          setStrokes(next);
+          fullRedraw(next);
+        }
+        activePointerIdRef.current = null;
+        return;
+      }
 
-    const stroke = currentStrokeRef.current;
-    if (!stroke) return;
+      isDrawingRef.current = true;
+      currentStrokeRef.current = {
+        points: [pt],
+        color: strokeColorRef.current,
+        width: strokeWidthRef.current,
+        isEraser: tool === 'eraser',
+        lastMid: null,
+      };
 
-    if (stroke.points.length >= 2) {
       const ctx = getCtx();
-      if (ctx) finalizeStroke(ctx, stroke, dprRef.current);
-    }
+      if (ctx) drawDot(ctx, pt, currentStrokeRef.current, dprRef.current);
+    };
 
-    delete stroke.lastMid;
-    setUndoStack(prev => [...prev, strokesRef.current]);
-    setStrokes(prev => [...prev, stroke]);
-    currentStrokeRef.current = null;
-  }, []);
+    const handleMove = (e) => {
+      if (!isDrawingRef.current || !currentStrokeRef.current) return;
+      // Filter out other simultaneous pointers (palm, second finger, etc.)
+      if (activePointerIdRef.current !== null && e.pointerId !== activePointerIdRef.current) return;
+      e.preventDefault();
+
+      const ctx = getCtx();
+      if (!ctx) return;
+      const dpr = dprRef.current;
+      const stroke = currentStrokeRef.current;
+
+      // Pull every sub-frame sample the browser captured
+      const coalesced = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : null;
+      const events = (coalesced && coalesced.length) ? coalesced : [e];
+
+      for (const ev of events) {
+        const pt = toPoint(ev.clientX, ev.clientY);
+        const last = stroke.points[stroke.points.length - 1];
+        if (last && pt.x === last.x && pt.y === last.y) continue;
+        stroke.points.push(pt);
+        drawIncrementalSegment(ctx, stroke, dpr);
+      }
+    };
+
+    const handleUp = (e) => {
+      if (!isDrawingRef.current) {
+        activePointerIdRef.current = null;
+        return;
+      }
+      if (activePointerIdRef.current !== null && e && e.pointerId !== activePointerIdRef.current) return;
+
+      isDrawingRef.current = false;
+      activePointerIdRef.current = null;
+
+      const stroke = currentStrokeRef.current;
+      if (!stroke) return;
+
+      if (stroke.points.length >= 2) {
+        const ctx = getCtx();
+        if (ctx) finalizeStroke(ctx, stroke, dprRef.current);
+      }
+
+      delete stroke.lastMid;
+      setUndoStack(prev => [...prev, strokesRef.current]);
+      setStrokes(prev => [...prev, stroke]);
+      currentStrokeRef.current = null;
+    };
+
+    canvas.addEventListener('pointerdown', handleDown, { passive: false });
+    canvas.addEventListener('pointermove', handleMove, { passive: false });
+    canvas.addEventListener('pointerup', handleUp);
+    canvas.addEventListener('pointercancel', handleUp);
+    canvas.addEventListener('pointerleave', handleUp);
+
+    return () => {
+      canvas.removeEventListener('pointerdown', handleDown);
+      canvas.removeEventListener('pointermove', handleMove);
+      canvas.removeEventListener('pointerup', handleUp);
+      canvas.removeEventListener('pointercancel', handleUp);
+      canvas.removeEventListener('pointerleave', handleUp);
+    };
+  }, [fullRedraw]);
 
   // ── Toolbar actions ──
   const handleUndo = () => {
@@ -430,11 +477,6 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         )}
         <canvas
           ref={canvasRef}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-          onPointerCancel={onPointerUp}
-          onPointerLeave={onPointerUp}
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
         />
         {isSubmitted && (
