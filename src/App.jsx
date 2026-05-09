@@ -199,18 +199,19 @@ function App() {
   }, []);
 
   const handleUpdateApp = useCallback(() => {
-    // Robustly clear Service Worker cache and force fetch new version
+    const reload = () => {
+      window.location.href = window.location.pathname + '?v=' + Date.now();
+    };
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        for(let registration of registrations) {
-          registration.unregister();
-        }
-      }).then(() => {
-        // Append timestamp to break any remaining browser cache
-        window.location.href = window.location.pathname + '?v=' + new Date().getTime();
-      });
+      navigator.serviceWorker.getRegistrations()
+        .then((registrations) =>
+          // Wait for ALL service workers to fully unregister before reloading
+          Promise.all(registrations.map((r) => r.unregister()))
+        )
+        .then(reload)
+        .catch(reload);
     } else {
-      window.location.href = window.location.pathname + '?v=' + new Date().getTime();
+      reload();
     }
   }, []);
 
@@ -396,6 +397,7 @@ function App() {
     return () => window.clearTimeout(timer);
   }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
 
+<<<<<<< HEAD
   useEffect(() => {
     if (!user?.uid) return undefined;
     const unsubscribe = studentService.subscribeToStudents(
@@ -420,6 +422,29 @@ function App() {
     // changes on every Firebase token refresh which would needlessly
     // re-attach the listener and burn reads.
   }, [user?.uid, isAdmin]);
+=======
+  const handleRefreshStudents = useCallback(async (silent = false) => {
+    if (!user) return;
+    if (!silent) setLoading(true);
+    try {
+      const data = await studentService.getStudents(user.uid, isAdmin);
+      setStudents(data);
+      setLoadError('');
+    } catch (err) {
+      setStudents([]);
+      setLoadError('We couldn’t load your students. Please try again.');
+      console.error(err);
+    } finally {
+      if (!silent) setLoading(false);
+    }
+  }, [user, isAdmin]);
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
+
+  useEffect(() => {
+    if (user) {
+      handleRefreshStudents();
+    }
+  }, [user, isAdmin, handleRefreshStudents]);
 
   const handleAddStudent = async () => {
     if (!newStudent.name || !newStudent.subject || !newStudent.email) {
@@ -591,6 +616,7 @@ function App() {
           <Dashboard
             students={students}
             onAddStudent={() => setIsModalOpen(true)}
+            onRefreshStudents={handleRefreshStudents}
             onSelectStudent={(id) => setSelectedStudentId(id)}
             onShowLeaderboard={() => setShowLeaderboard(true)}
             setActiveTab={handleTabChange}
@@ -601,6 +627,7 @@ function App() {
           <StudentList 
             students={students} 
             onAddStudent={() => setIsModalOpen(true)} 
+            onRefreshStudents={handleRefreshStudents}
             onSelectStudent={(id) => setSelectedStudentId(id)}
           />
         );

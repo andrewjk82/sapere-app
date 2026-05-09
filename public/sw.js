@@ -1,5 +1,5 @@
 // Basic Service Worker for PWA
-const CACHE_NAME = 'sapere-v1';
+const CACHE_NAME = 'sapere-v2';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

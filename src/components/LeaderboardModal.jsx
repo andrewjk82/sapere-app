@@ -2,59 +2,33 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, X, Medal, Crown } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, onSnapshot, query, orderBy, limit } from 'firebase/firestore';
 
-const LeaderboardModal = ({ open, onClose, currentUserId, students = [] }) => {
+const LeaderboardModal = ({ open, onClose, currentUserId }) => {
   const [leaders, setLeaders] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!open) return;
 
-    if (students.length > 0) {
-      setLeaders(
-        [...students]
-          .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0))
-          .slice(0, 50)
-      );
+    setLoading(true);
+    const leaderboardQuery = query(
+      collection(db, 'leaderboard'),
+      orderBy('totalXP', 'desc'),
+      limit(50)
+    );
+
+    const unsubscribe = onSnapshot(leaderboardQuery, (snap) => {
+      const data = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      setLeaders(data);
       setLoading(false);
-      return;
-    }
-    
-    const fetchLeaders = async () => {
-      setLoading(true);
-      try {
-        const usersSnap = await getDocs(collection(db, 'users'));
-        const registeredStudents = usersSnap.docs
-          .map(d => ({ id: d.id, source: 'registered', ...d.data() }))
-          .filter(u => {
-            const role = String(u.role || '').toLowerCase();
-            return role !== 'admin' && role !== 'parent' && u.email !== 'andrewjk82@gmail.com';
-          });
+    }, (err) => {
+      console.error('Error fetching leaderboard:', err);
+      setLoading(false);
+    });
 
-        // Manual students may be inaccessible for non-admin users — skip gracefully
-        let manualStudents = [];
-        try {
-          const studentsSnap = await getDocs(collection(db, 'students'));
-          manualStudents = studentsSnap.docs
-            .map(d => ({ id: `manual-${d.id}`, sourceId: d.id, source: 'manual', ...d.data() }));
-        } catch {
-          console.warn('manual leaderboard onSnapshot permission error (non-fatal): permission-denied');
-        }
-
-        const data = [...manualStudents, ...registeredStudents]
-          .sort((a, b) => (Number(b.totalXP) || 0) - (Number(a.totalXP) || 0))
-          .slice(0, 50);
-        setLeaders(data);
-      } catch (err) {
-        console.error('Error fetching leaderboard:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    
-    fetchLeaders();
-      }, [open, students]);
+    return () => unsubscribe();
+  }, [open]);
 
   if (!open) return null;
 
@@ -121,11 +95,9 @@ const LeaderboardModal = ({ open, onClose, currentUserId, students = [] }) => {
                   rankBg = '#ffedd5';
                 }
 
-                const displayName = student.name || student.displayName || (student.firstName ? `${student.firstName} ${student.lastName || ''}`.trim() : '') || 'Unknown Student';
+                const displayName = student.name || 'Unknown Student';
                 const displayLevel = student.level || student.year || 'Student';
-                const avatarUrl = student.dreamImageUrl || student.avatarUrl || (student.avatarStyle && student.avatarSeed
-                  ? `https://api.dicebear.com/7.x/${student.avatarStyle}/svg?seed=${encodeURIComponent(student.avatarSeed)}`
-                  : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.email || displayName || 'sapere')}`);
+                const avatarUrl = student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.id || 'sapere')}`;
 
                 return (
                   <div 

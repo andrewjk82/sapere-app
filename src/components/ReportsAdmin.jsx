@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, runTransaction, where } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, runTransaction, where, increment, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
 import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import MathView from './MathView';
@@ -87,65 +88,110 @@ const ReportsAdmin = () => {
     try {
       setProcessingId(item.id);
       
-      await runTransaction(db, async (transaction) => {
-        // 1. Update grading queue status
-        const queueRef = doc(db, 'grading_queue', item.id);
-        transaction.update(queueRef, { 
-          status: approved ? 'approved' : 'rejected',
-          gradedAt: new Date(),
-          scoreAwarded: approved ? 1 : 0
-        });
+      // 1. Delete the grading queue item immediately
+      await deleteDoc(doc(db, 'grading_queue', item.id));
 
-        if (approved) {
-          // 2. Update Student's Profile (Total Points/XP)
-          const userRef = doc(db, 'users', item.userId);
-          const userSnap = await transaction.get(userRef);
-          if (userSnap.exists()) {
-            const userData = userSnap.data();
-            transaction.update(userRef, {
-              points: (userData.points || 0) + 10, // Award 10 points for a manual pass
-              totalXp: (userData.totalXp || 0) + 50 // Award 50 XP
-            });
+      if (approved) {
+        const type = item.challengeType || 'daily';
+        const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
+        const userId = item.userId;
+        
+        // Match statId logic from Dashboard
+        let statId = item.date;
+        if (!statId && item.submittedAt) {
+          const sAt = item.submittedAt;
+          const d = (typeof sAt.toDate === 'function') ? sAt.toDate() : new Date(sAt);
+          if (!isNaN(d.getTime())) {
+            statId = d.toLocaleDateString('en-CA');
           }
+        }
+        if (!statId) statId = item.id.split('_')[0];
+        
+        const totalQ = item.totalQuestions || 10;
+        const maxXP = type === 'calc' ? 50 : 100;
+        const xpPerQuestion = Math.round(maxXP / totalQ);
 
-          // 3. Update the specific Challenge record if possible
-          // Challenges are stored by date in daily_stats/calc_stats
-          if (item.submittedAt) {
-            let date;
-            try {
-              date = item.submittedAt.toDate ? item.submittedAt.toDate().toISOString().split('T')[0] : 
-                     (item.submittedAt instanceof Date ? item.submittedAt.toISOString().split('T')[0] : 
-                     new Date().toISOString().split('T')[0]);
-            } catch (e) {
-              date = new Date().toISOString().split('T')[0];
+        // Sync XP and Leaderboard via Transaction for atomicity
+        try {
+          await runTransaction(db, async (transaction) => {
+            let userRef = doc(db, 'users', userId);
+            let userSnap = await transaction.get(userRef);
+            let source = 'registered';
+
+            if (!userSnap.exists()) {
+              userRef = doc(db, 'students', userId);
+              userSnap = await transaction.get(userRef);
+              source = 'manual';
             }
-            
-            const statsRef = item.challengeType === 'calc'
-              ? doc(db, 'users', item.userId, 'calc_stats', date)
-              : doc(db, 'users', item.userId, 'daily_stats', date);
-            
-            const statsSnap = await transaction.get(statsRef);
-            if (statsSnap.exists()) {
-              const statsData = statsSnap.data();
-              const updatedResults = [...(statsData.answerResults || [])];
+
+            if (userSnap.exists()) {
+              const userData = userSnap.data();
+              const newXP = (Number(userData.totalXP) || 0) + xpPerQuestion;
               
-              // Find the question in results to mark as correct
+              // Update user doc
+              transaction.update(userRef, {
+                totalXP: newXP,
+                points: increment(10),
+                updatedAt: new Date().toISOString()
+              });
+
+              // Update leaderboard doc
+              const leaderboardId = source === 'manual' ? `manual-${userId}` : userId;
+              const leaderboardRef = doc(db, 'leaderboard', leaderboardId);
+              
+              const displayName = userData.name || userData.displayName || 
+                                (userData.firstName ? `${userData.firstName} ${userData.lastName || ''}`.trim() : '') || 'Student';
+              
+              const avatarUrl = userData.avatarUrl || userData.dreamImageUrl || 
+                               `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(userId)}`;
+
+              transaction.set(leaderboardRef, {
+                name: displayName,
+                avatarUrl: avatarUrl,
+                totalXP: newXP,
+                lastUpdated: serverTimestamp(),
+                role: userData.role || 'student',
+                year: userData.year || userData.assignedYear || ''
+              }, { merge: true });
+            }
+          });
+        } catch (err) {
+          console.error("XP/Leaderboard sync failed:", err);
+        }
+
+        // Update stats document
+        if (statId && userId) {
+          const safeStatId = typeof statId === 'string' ? statId.replace(/\//g, '-') : String(statId);
+          let statRef = doc(db, 'users', userId, colName, safeStatId);
+          try {
+            let statSnap = await getDoc(statRef);
+            if (!statSnap.exists()) {
+              statRef = doc(db, 'students', userId, colName, statId);
+              statSnap = await getDoc(statRef);
+            }
+
+            if (statSnap.exists()) {
+              const statsData = statSnap.data();
+              const updatedResults = [...(statsData.answerResults || [])];
               const qIndex = updatedResults.findIndex(r => r.questionId === item.questionId);
+              
               if (qIndex !== -1) {
                 updatedResults[qIndex].correct = true;
                 updatedResults[qIndex].isPending = false;
                 updatedResults[qIndex].selectedAnswer = 'Approved';
-                
-                transaction.update(statsRef, {
-                  score: (statsData.score || 0) + 1,
-                  xpEarned: (statsData.xpEarned || 0) + 50,
-                  answerResults: updatedResults
-                });
               }
+
+              await updateDoc(statRef, {
+                score: increment(1),
+                xpEarned: increment(xpPerQuestion),
+                ...(qIndex !== -1 ? { answerResults: updatedResults } : {})
+              });
             }
+          } catch (err) {
+             console.warn("Could not update stat score/results", err);
           }
         }
-      });
+      }
 
       // Notify via server if needed (simulated)
       console.log(`Submission ${item.id} ${approved ? 'approved' : 'rejected'}`);
@@ -242,11 +288,19 @@ const ReportsAdmin = () => {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
-                  <div style={{ marginTop: '10px', minHeight: '150px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', position: 'relative' }}>
-                    {item.answerImage ? (
-                      <img src={item.answerImage} alt="Student Drawing" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <div style={{ marginTop: '10px', minHeight: '150px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                    {item.answerImages && item.answerImages.length > 0 ? (
+                      item.answerImages.map((imgUrl, i) => (
+                        <div key={i} style={{ borderBottom: i < item.answerImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px', background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
+                          <img src={imgUrl} alt={`Student Drawing Page ${i+1}`} style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block' }} />
+                        </div>
+                      ))
+                    ) : item.answerImage ? (
+                      <div style={{ padding: '16px', flex: 1, display: 'flex', background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
+                        <img src={item.answerImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', margin: 'auto' }} />
+                      </div>
                     ) : (
-                      <div style={{ padding: '20px', textAlign: 'center' }}>
+                      <div style={{ padding: '20px', textAlign: 'center', margin: 'auto' }}>
                          <MathView content={item.answerText || 'No text answer'} style={{ fontSize: '1.2rem', fontWeight: 800 }} />
                       </div>
                     )}

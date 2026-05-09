@@ -350,7 +350,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const answerInputRef = useRef(null);
-  const [leaders, setLeaders] = useState([]);
 
   const isMobile = window.innerWidth < 768; // Lowered threshold to allow split-screen on tablets
   const currentQuestion = questions[currentIdx] || null;
@@ -381,6 +380,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     return Math.round((Number(earnedScore) || 0) / safeTotal * getChallengeMaxXp(type));
   };
 
+<<<<<<< HEAD
   useEffect(() => {
     if (!user?.uid) return;
 
@@ -431,6 +431,24 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   // Insights now derive from `history` (already populated by the consolidated
   // realtime listener below). No duplicate daily_stats subscription needed —
   // every extra listener doubles Firestore read consumption.
+=======
+  // Fetch student daily stats for insights
+  useEffect(() => {
+    if (!user?.uid) return;
+    const unsub = onSnapshot(
+      collection(db, 'users', user.uid, 'daily_stats'),
+      (snap) => {
+        const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        setDailyStats(stats);
+      },
+      (err) => {
+        console.warn('daily_stats onSnapshot permission error (non-fatal):', err.code);
+        // Silently fail - insights just won't show
+      }
+    );
+    return () => unsub();
+  }, [user?.uid]);
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
 
   // Anti-Cheat: Detect Focus Loss
   useEffect(() => {
@@ -562,84 +580,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     </div>
   );
 
-  const renderLeaderboardPreview = () => {
-    const topLeaders = leaders.slice(0, 3);
-    const currentRank = leaders.findIndex(student => student.id === user?.uid) + 1;
-
-    return (
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="app-panel"
-        style={{
-          width: '100%',
-          maxWidth: '560px',
-          padding: isMobile ? '18px' : '24px',
-          borderRadius: '28px',
-          background: 'linear-gradient(180deg, #ffffff 0%, #f8f7ff 100%)',
-          border: '1px solid #e7e5ff',
-          boxShadow: '0 18px 45px rgba(79, 70, 229, 0.1)',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', marginBottom: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
-            <div style={{ width: '46px', height: '46px', borderRadius: '16px', background: '#eef2ff', color: '#4f46e5', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-              <Trophy size={22} />
-            </div>
-            <div style={{ minWidth: 0 }}>
-              <h3 style={{ margin: 0, color: '#1e1b4b', fontSize: '1.05rem', fontWeight: 900 }}>Leaderboard</h3>
-            </div>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, color: '#6366f1', fontWeight: 900 }}>
-            <span style={{ color: '#94a3b8', fontSize: '0.66rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Your rank</span>
-            <span style={{ fontSize: '1rem' }}>{currentRank || '-'}</span>
-          </div>
-        </div>
-
-        {topLeaders.length > 0 ? (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {topLeaders.map((student, idx) => {
-              const rank = idx + 1;
-              const isCurrentUser = student.id === user?.uid;
-              const avatarUrl = student.dreamImageUrl || student.avatarUrl || (student.avatarStyle && student.avatarSeed
-                ? `https://api.dicebear.com/7.x/${student.avatarStyle}/svg?seed=${encodeURIComponent(student.avatarSeed)}`
-                : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.email || student.id || 'sapere')}`);
-              const rowBg = rank === 1 ? '#fffbeb' : rank === 2 ? '#f8fafc' : '#fff7ed';
-              const rowBorder = rank === 1 ? '#fde68a' : rank === 2 ? '#e2e8f0' : '#fed7aa';
-
-              return (
-                <div
-                  key={student.id}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '16px',
-                    minWidth: 0,
-                    padding: '12px 16px',
-                    borderRadius: '20px',
-                    background: isCurrentUser ? '#f5f3ff' : rowBg,
-                    border: `1px solid ${isCurrentUser ? '#a78bfa' : rowBorder}`,
-                    boxShadow: rank === 1 ? '0 10px 24px rgba(217, 119, 6, 0.08)' : '0 8px 20px rgba(15, 23, 42, 0.03)',
-                  }}
-                >
-                  <img src={avatarUrl} alt={`Top ${rank} avatar`} style={{ width: '52px', height: '52px', borderRadius: '50%', background: '#fff', objectFit: 'cover', flexShrink: 0, boxShadow: '0 6px 14px rgba(15, 23, 42, 0.08)' }} />
-                  <div style={{ color: '#6366f1', fontWeight: 950, fontSize: '1rem', textAlign: 'right', flexShrink: 0 }}>
-                    {Number(student.totalXP) || 0}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        ) : (
-          <div style={{ padding: '18px', borderRadius: '16px', background: '#f8fafc', color: '#94a3b8', fontWeight: 700, textAlign: 'center' }}>
-            Leaderboard will appear once students earn XP.
-          </div>
-        )}
-
-      </motion.div>
-    );
-  };
 
 
   // Check if today is already done and fetch history
@@ -1552,10 +1492,31 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           const currentXP = Number(userData.totalXP) || 0;
           const currentCount = Number(userData.challengesCompleted) || 0;
           
+          const newXP = currentXP + xpEarned;
           transaction.set(userRef, {
-            totalXP: currentXP + xpEarned,
+            totalXP: newXP,
             challengesCompleted: currentCount + 1,
             lastActive: now.toISOString()
+          }, { merge: true });
+
+          // 3. Update dedicated Leaderboard collection for efficient global reads
+          const leaderboardRef = doc(db, 'leaderboard', user.uid);
+          const displayName = studentProfile?.name || studentProfile?.displayName || 
+                            (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') || 
+                            user?.displayName || 'Student';
+          
+          const avatarUrl = studentProfile?.dreamImageUrl || studentProfile?.avatarUrl || 
+                           (studentProfile?.avatarStyle && studentProfile?.avatarSeed
+                             ? `https://api.dicebear.com/7.x/${studentProfile.avatarStyle}/svg?seed=${encodeURIComponent(studentProfile.avatarSeed)}`
+                             : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || displayName || 'sapere')}`);
+
+          transaction.set(leaderboardRef, {
+            name: displayName,
+            avatarUrl: avatarUrl,
+            totalXP: newXP,
+            lastUpdated: serverTimestamp(),
+            role: userData.role || 'student',
+            year: assignedYear || ''
           }, { merge: true });
         });
 
@@ -1674,12 +1635,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                       {selectedChallenge.questions.map((q, idx) => {
                         const result = selectedChallenge.answerResults?.[idx];
-                        if (!result) return null;
                         const userAnswer = result?.selectedAnswer ?? (selectedChallenge.userAnswers ? selectedChallenge.userAnswers[idx] : null);
+<<<<<<< HEAD
                         // Use the question from the saved challenge itself, NOT the current
                         // component `questions` state (which is empty when reviewing past records).
                         const qData = q || questions.find(qq => qq.id === result.questionId);
                         if (!qData) return null;
+=======
+                        const qData = q; // Use the question from the saved historical test
+                        if (!qData) return null; // Safety catch
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
 
                         const isCorrect = typeof result?.correct === 'boolean'
                           ? result.correct
@@ -1918,7 +1883,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           margin: '0 auto', 
           padding: '40px 20px',
         }}>
-          {renderLeaderboardPreview()}
+
 
           <motion.div 
             initial={{ opacity: 0, scale: 0.95, y: 20 }} 
@@ -2170,7 +2135,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             exit={{ opacity: 0 }}
             style={{ display: 'flex', flexDirection: 'column', gap: '24px', maxWidth: '800px', width: '100%' }}
           >
-            {renderLeaderboardPreview()}
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="app-panel" style={{ padding: '48px', borderRadius: '32px', border: '1px solid #f1f5f9', background: '#fff' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>

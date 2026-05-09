@@ -1,13 +1,14 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy } from 'lucide-react';
+import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
 import { doc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
-const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
+const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStudent }) => {
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [activeStudent, setActiveStudent] = useState(null);
@@ -78,7 +79,19 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
       window.removeEventListener('focus', refresh);
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
-  }, [studentSig, todayStr]); // signature, not the array ref
+  }, [studentSig, todayStr]);
+
+  const handleManualRefresh = async () => {
+    setIsRefreshing(true);
+    try {
+      await onRefreshStudents();
+    } catch (err) {
+      console.error('Refresh failed:', err);
+    } finally {
+      setIsRefreshing(false);
+    }
+  };
+
   
   const filteredStudents = students.filter(s => {
     const nameMatch = (s.name || '').toLowerCase().includes(searchTerm.toLowerCase());
@@ -94,11 +107,13 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
           <p>Manage active learners, keep records tidy, and stay on top of progress.</p>
         </div>
         <button 
-          onClick={onAddStudent}
+          onClick={handleManualRefresh}
+          disabled={isRefreshing}
           className="app-button app-button--primary"
+          style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
         >
-          <Plus size={20} />
-          Add Student
+          <RefreshCw size={18} className={isRefreshing ? 'animate-spin' : ''} />
+          {isRefreshing ? 'Syncing...' : 'Sync Students'}
         </button>
       </div>
 

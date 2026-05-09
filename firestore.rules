@@ -102,5 +102,15 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
     }
+
+    // Leaderboard entries
+    match /leaderboard/{entryId} {
+      allow read: if isSignedIn();
+      // Allow user to write their own entry, or admin to write any entry
+      // For manual students (id starts with 'manual-'), we allow tutors to manage them
+      allow write: if isAdmin() 
+        || (isSignedIn() && request.auth.uid == entryId)
+        || (isSignedIn() && entryId[0:7] == "manual-");
+    }
   }
 }

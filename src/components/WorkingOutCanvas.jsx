@@ -1,142 +1,97 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
+import { getStroke } from 'perfect-freehand';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
+
+// ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
+const CANVAS_VERSION = 'v8';
+
+const MIN_DIST_SQ = 6;      // ~2.5px minimum distance between sampled points
+const BAKE_EVERY = 50;      // bake snapshot after this many new points past the window
+const LIVE_TAIL = 80;       // max points fed to getStroke each frame
+const BAKE_OVERLAP = 10;    // overlap points at seam to avoid gaps
 
 const hasCoarsePointer = () =>
   typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
 
 const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
 
-/**
- * Single-canvas natural-pen renderer.
- *
- * Key insight: do NOT re-render the entire stroke each frame. Each pointermove
- * draws only the newest tiny quadratic-bezier segment between midpoints — this
- * is the technique used by Procreate, Apple Notes, etc.
- *
- *   pts:        p0 ─ p1 ─ p2 ─ p3 ─ p4 …
- *   midpoints:     m1   m2   m3   m4
- *
- *   Each segment drawn = quadCurveTo(prev_pt, new_mid) starting from prev_mid.
- *   Result: O(1) work per frame regardless of stroke length.
- */
+const PF_OPTIONS = (size, hasRealPressure) => ({
+  size,
+  thinning: 0.5,
+  smoothing: 0.5,
+  streamline: 0.5,
+  easing: (t) => t,
+  simulatePressure: !hasRealPressure,
+  last: false,
+  start: { taper: 0, cap: true },
+  end: { taper: 0, cap: true },
+});
 
-function applyStyle(ctx, stroke, dpr) {
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
-  if (stroke.isEraser) {
-    ctx.globalCompositeOperation = 'destination-out';
-    ctx.lineWidth = stroke.width * 6 * dpr;
-    ctx.strokeStyle = 'rgba(0,0,0,1)';
-  } else {
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.lineWidth = stroke.width * dpr;
-    ctx.strokeStyle = stroke.color;
+const PF_OPTIONS_FINAL = (size, hasRealPressure) => ({
+  ...PF_OPTIONS(size, hasRealPressure),
+  last: true,
+  streamline: 0.5,
+  smoothing: 0.6,
+});
+
+const toTuple = (pt, pressure) => [pt.x, pt.y, pressure];
+
+// Draw a perfect-freehand polygon onto ctx
+function drawPFOutline(ctx, outline, dpr) {
+  if (!outline || outline.length < 3) return;
+  ctx.beginPath();
+  ctx.moveTo(outline[0][0] * dpr, outline[0][1] * dpr);
+  for (let i = 1; i < outline.length; i++) {
+    ctx.lineTo(outline[i][0] * dpr, outline[i][1] * dpr);
   }
+  ctx.closePath();
+  ctx.fill();
 }
 
-function drawDot(ctx, pt, stroke, dpr) {
+// Draw a committed stroke (uses cached outline)
+function drawCommittedStroke(ctx, stroke, dpr) {
+  if (!ctx || !stroke?.points || stroke.points.length === 0) return;
   ctx.save();
   if (stroke.isEraser) {
     ctx.globalCompositeOperation = 'destination-out';
-    ctx.fillStyle = 'rgba(0,0,0,1)';
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = stroke.width * 6 * dpr;
+    ctx.strokeStyle = 'rgba(0,0,0,1)';
+    const pts = stroke.points;
+    ctx.beginPath();
+    if (pts.length === 1) {
+      ctx.arc(pts[0][0] * dpr, pts[0][1] * dpr, stroke.width * 3 * dpr, 0, Math.PI * 2);
+      ctx.fillStyle = 'black';
+      ctx.fill();
+    } else {
+      ctx.moveTo(pts[0][0] * dpr, pts[0][1] * dpr);
+      for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
+      ctx.stroke();
+    }
   } else {
     ctx.globalCompositeOperation = 'source-over';
     ctx.fillStyle = stroke.color;
+    drawPFOutline(ctx, stroke.outline, dpr);
   }
-  const r = (stroke.isEraser ? stroke.width * 3 : Math.max(0.6, stroke.width / 2)) * dpr;
-  ctx.beginPath();
-  ctx.arc(pt.x * dpr, pt.y * dpr, r, 0, Math.PI * 2);
-  ctx.fill();
   ctx.restore();
 }
 
-// Incremental: draw only the newest curve segment for the live stroke
-function drawIncrementalSegment(ctx, stroke, dpr) {
-  const pts = stroke.points;
-  if (pts.length < 2) return;
-
-  ctx.save();
-  applyStyle(ctx, stroke, dpr);
-
-  if (pts.length === 2) {
-    // First segment — straight line from p0 to mid(p0,p1) so the stroke begins crisp
-    const p0 = pts[0], p1 = pts[1];
-    const mid = { x: (p0.x + p1.x) / 2, y: (p0.y + p1.y) / 2 };
-    ctx.beginPath();
-    ctx.moveTo(p0.x * dpr, p0.y * dpr);
-    ctx.lineTo(mid.x * dpr, mid.y * dpr);
-    ctx.stroke();
-    stroke.lastMid = mid;
-  } else {
-    const prev = pts[pts.length - 2];
-    const curr = pts[pts.length - 1];
-    const newMid = { x: (prev.x + curr.x) / 2, y: (prev.y + curr.y) / 2 };
-    ctx.beginPath();
-    ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
-    ctx.quadraticCurveTo(prev.x * dpr, prev.y * dpr, newMid.x * dpr, newMid.y * dpr);
-    ctx.stroke();
-    stroke.lastMid = newMid;
-  }
-
-  ctx.restore();
-}
-
-// Close out the stroke: connect from last drawn midpoint to actual final point
-function finalizeStroke(ctx, stroke, dpr) {
-  const pts = stroke.points;
-  if (pts.length < 2 || !stroke.lastMid) return;
-  ctx.save();
-  applyStyle(ctx, stroke, dpr);
-  const last = pts[pts.length - 1];
-  ctx.beginPath();
-  ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
-  ctx.lineTo(last.x * dpr, last.y * dpr);
-  ctx.stroke();
-  ctx.restore();
-}
-
-// Replay a finished stroke from scratch (for undo / clear / resize)
-function drawCompleteStroke(ctx, stroke, dpr) {
-  const pts = stroke.points;
-  if (!pts?.length) return;
-
-  if (pts.length === 1) {
-    drawDot(ctx, pts[0], stroke, dpr);
-    return;
-  }
-
-  ctx.save();
-  applyStyle(ctx, stroke, dpr);
-
-  ctx.beginPath();
-  ctx.moveTo(pts[0].x * dpr, pts[0].y * dpr);
-
-  if (pts.length === 2) {
-    ctx.lineTo(pts[1].x * dpr, pts[1].y * dpr);
-  } else {
-    // Quadratic curves through midpoints
-    for (let i = 1; i < pts.length - 1; i++) {
-      const midX = (pts[i].x + pts[i + 1].x) / 2;
-      const midY = (pts[i].y + pts[i + 1].y) / 2;
-      ctx.quadraticCurveTo(pts[i].x * dpr, pts[i].y * dpr, midX * dpr, midY * dpr);
-    }
-    const last = pts[pts.length - 1];
-    ctx.lineTo(last.x * dpr, last.y * dpr);
-  }
-
-  ctx.stroke();
-  ctx.restore();
-}
+const computeSize = (uiWidth) => Math.max(4, uiWidth * 2.6);
 
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
-  const canvasRef = useRef(null);
-  const dprRef = useRef(1);
-  const rectRef = useRef(null); // cached bounding rect — recomputed on resize / pointerdown only
-
-  const strokesRef = useRef([]);
-  const currentStrokeRef = useRef(null);
+  const displayCanvasRef = useRef(null);
+  const bgCanvasRef = useRef(null);
+  const rafRef = useRef(null);
   const isDrawingRef = useRef(false);
-  const activePointerIdRef = useRef(null);
+  const currentStrokeRef = useRef(null);
+  const lastRenderedPointCountRef = useRef(0);
+  const predictedPointsRef = useRef([]);
+  // Snapshot baking: offscreen canvas holding baked history + cutoff index
+  const liveSnapshotRef = useRef(null);
+  const bakeCutoffRef = useRef(0);
+  // Stable ref holding the latest pointer handlers — used by native event listeners
+  const handlersRef = useRef({});
 
   // Tool state mirrored to refs so handlers (attached once) always see fresh values
   const isSubmittedRef = useRef(false);
@@ -146,11 +101,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const strokeColorRef = useRef('#1e1b4b');
   const strokeWidthRef = useRef(3);
 
-  // React state
+  // Refs for values used inside RAF callbacks to avoid stale closures
+  const strokesRef = useRef([]);
+
   const [strokes, setStrokes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [pages, setPages] = useState([[]]);
+  const [pages, setPages] = useState([[]]); // eslint-disable-line no-unused-vars
+
   const [activeTool, setActiveTool] = useState('pen');
   const [eraserMode, setEraserMode] = useState('area');
   const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
@@ -167,287 +125,394 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const isGraph = questionType === 'graph_sketch';
 
-  const getCtx = () => canvasRef.current?.getContext('2d');
+  // Keep strokesRef in sync without triggering re-renders in RAF
+  useEffect(() => {
+    strokesRef.current = strokes;
+  }, [strokes]);
 
-  const fullRedraw = useCallback((strokeList) => {
-    const canvas = canvasRef.current;
-    const ctx = getCtx();
-    if (!canvas || !ctx) return;
-    const dpr = dprRef.current;
+  // ─── Background canvas: only redraws when strokes array changes ──────────
+  const redrawBackground = useCallback(() => {
+    const canvas = bgCanvasRef.current;
+    if (!canvas || canvas.width === 0) return;
+    // desynchronized: true means we must specify it on first getContext call
+    const ctx = canvas.getContext('2d', { desynchronized: true });
+    const dpr = window.devicePixelRatio || 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (const s of strokeList) drawCompleteStroke(ctx, s, dpr);
+    strokesRef.current.forEach(s => drawCommittedStroke(ctx, s, dpr));
   }, []);
 
-  // Size sync
+  // ─── Foreground canvas: only draws the live in-progress stroke ───────────
+  // Snapshot baking: baked history drawImage'd + getStroke only on last LIVE_TAIL points → O(1)/frame.
+  const renderLiveStroke = useCallback(() => {
+    const canvas = displayCanvasRef.current;
+    if (!canvas || canvas.width === 0) return;
+    // desynchronized: true — bypasses the browser's main compositing pipeline,
+    // reducing touch-to-pixel latency on ProMotion displays.
+    const ctx = canvas.getContext('2d', { desynchronized: true });
+    const stroke = currentStrokeRef.current;
+    const dpr = window.devicePixelRatio || 1;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    if (!stroke || stroke.points.length === 0) {
+      predictedPointsRef.current = [];
+      return;
+    }
+
+    if (stroke.isEraser) {
+      const bgCanvas = bgCanvasRef.current;
+      if (!bgCanvas) return;
+      const bgCtx = bgCanvas.getContext('2d', { desynchronized: true });
+      const pts = stroke.points;
+      const from = Math.max(0, lastRenderedPointCountRef.current - 1);
+      bgCtx.save();
+      bgCtx.globalCompositeOperation = 'destination-out';
+      bgCtx.lineCap = 'round';
+      bgCtx.lineJoin = 'round';
+      bgCtx.lineWidth = stroke.width * 6 * dpr;
+      bgCtx.strokeStyle = 'rgba(0,0,0,1)';
+      bgCtx.beginPath();
+      bgCtx.moveTo(pts[from][0] * dpr, pts[from][1] * dpr);
+      for (let i = from + 1; i < pts.length; i++) {
+        bgCtx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
+      }
+      bgCtx.stroke();
+      bgCtx.restore();
+      lastRenderedPointCountRef.current = pts.length;
+      return;
+    }
+
+    const pts = stroke.points;
+
+    // Bake old history to offscreen snapshot so live PF only processes LIVE_TAIL points.
+    // Bake triggers when enough new points have accumulated past the window.
+    if (pts.length > bakeCutoffRef.current + BAKE_EVERY + LIVE_TAIL) {
+      const newCutoff = pts.length - LIVE_TAIL;
+      let snap = liveSnapshotRef.current;
+      if (!snap || snap.width !== canvas.width || snap.height !== canvas.height) {
+        snap = document.createElement('canvas');
+        snap.width = canvas.width;
+        snap.height = canvas.height;
+        liveSnapshotRef.current = snap;
+      }
+      const snapCtx = snap.getContext('2d');
+      snapCtx.clearRect(0, 0, snap.width, snap.height);
+      snapCtx.fillStyle = stroke.color;
+      drawPFOutline(snapCtx, getStroke(pts.slice(0, newCutoff), PF_OPTIONS(stroke.size, stroke.hasRealPressure)), dpr);
+      bakeCutoffRef.current = newCutoff;
+    }
+
+    ctx.save();
+    ctx.globalCompositeOperation = 'source-over';
+
+    // Composite: baked history + live tail
+    if (liveSnapshotRef.current && bakeCutoffRef.current > 0) {
+      ctx.drawImage(liveSnapshotRef.current, 0, 0);
+    }
+
+    // Live tail: last LIVE_TAIL points (with BAKE_OVERLAP for seamless junction) + predicted
+    const tailStart = Math.max(0, bakeCutoffRef.current - BAKE_OVERLAP);
+    const tailPts = tailStart > 0 ? pts.slice(tailStart) : pts;
+    const renderPoints = predictedPointsRef.current.length > 0
+      ? [...tailPts, ...predictedPointsRef.current]
+      : tailPts;
+
+    ctx.fillStyle = stroke.color;
+    drawPFOutline(ctx, getStroke(renderPoints, PF_OPTIONS(stroke.size, stroke.hasRealPressure)), dpr);
+    ctx.restore();
+    lastRenderedPointCountRef.current = pts.length;
+  }, []);
+
+  const requestRender = useCallback(() => {
+    if (rafRef.current) return;
+    rafRef.current = requestAnimationFrame(() => {
+      rafRef.current = null;
+      renderLiveStroke();
+    });
+  }, [renderLiveStroke]);
+
+  // ─── Canvas sizing ────────────────────────────────────────────────────────
+  const syncSize = useCallback(() => {
+    const display = displayCanvasRef.current;
+    const bg = bgCanvasRef.current;
+    if (!display || !bg) return;
+    const { width, height } = display.getBoundingClientRect();
+    if (width === 0 || height === 0) return;
+
+    const dpr = window.devicePixelRatio || 1;
+    const newW = Math.round(width * dpr);
+    const newH = Math.round(height * dpr);
+
+    let resized = false;
+    if (display.width !== newW || display.height !== newH) { display.width = newW; display.height = newH; resized = true; }
+    if (bg.width !== newW || bg.height !== newH) { bg.width = newW; bg.height = newH; resized = true; }
+    if (resized) { redrawBackground(); }
+  }, [redrawBackground]);
+
+  // Initial size sync + ResizeObserver
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    syncSize();
+    const ro = new ResizeObserver(syncSize);
+    const display = displayCanvasRef.current;
+    if (display) ro.observe(display);
+    return () => ro.disconnect();
+  }, [syncSize]);
 
-    const sync = () => {
-      const rect = canvas.getBoundingClientRect();
-      if (!rect.width || !rect.height) return;
-      const dpr = window.devicePixelRatio || 1;
-      const w = Math.round(rect.width * dpr);
-      const h = Math.round(rect.height * dpr);
-      if (canvas.width !== w || canvas.height !== h) {
-        canvas.width = w;
-        canvas.height = h;
-        dprRef.current = dpr;
-        fullRedraw(strokesRef.current);
-      }
-      rectRef.current = rect;
-    };
-
-    sync();
-    const ro = new ResizeObserver(sync);
-    ro.observe(canvas);
-    const onScroll = () => { rectRef.current = canvas.getBoundingClientRect(); };
-    window.addEventListener('scroll', onScroll, true);
-    window.addEventListener('resize', onScroll);
-    return () => {
-      ro.disconnect();
-      window.removeEventListener('scroll', onScroll, true);
-      window.removeEventListener('resize', onScroll);
-    };
-  }, [fullRedraw]);
-
-  // ── Native pointer event handling ──
-  // pointerdown is on the canvas; pointermove/up/cancel are on the *document*
-  // so the stroke isn't lost when the cursor briefly leaves the canvas during
-  // fast writing (this is the pattern Excalidraw / tldraw / Procreate Web use).
+  // Redraw background whenever strokes array changes (undo, new stroke, page switch)
   useEffect(() => {
-    const canvas = canvasRef.current;
+    redrawBackground();
+  }, [strokes, redrawBackground]);
+
+  // Native pointer event listeners — bypasses React's passive event delegation so
+  // preventDefault() actually works and events arrive before React's batching overhead.
+  useEffect(() => {
+    const canvas = displayCanvasRef.current;
     if (!canvas) return;
-
-    const toPoint = (clientX, clientY) => {
-      const rect = rectRef.current || canvas.getBoundingClientRect();
-      return { x: clientX - rect.left, y: clientY - rect.top };
-    };
-
-    // ── Move handler ──
-    // We pre-set ctx style once at stroke start, then per-move we only do
-    // beginPath / curves / stroke. All coalesced events are flushed into a
-    // SINGLE path → one GPU stroke call regardless of sample count.
-    const handleMove = (e) => {
-      if (!isDrawingRef.current || !currentStrokeRef.current) return;
-      if (activePointerIdRef.current !== null && e.pointerId !== activePointerIdRef.current) return;
-      if (e.cancelable) e.preventDefault();
-
-      const ctx = getCtx();
-      if (!ctx) return;
-      const dpr = dprRef.current;
-      const stroke = currentStrokeRef.current;
-
-      const coalesced = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : null;
-      const events = (coalesced && coalesced.length) ? coalesced : [e];
-
-      // Build a single path for all new points
-      let pathStarted = false;
-      for (const ev of events) {
-        const pt = toPoint(ev.clientX, ev.clientY);
-        const last = stroke.points[stroke.points.length - 1];
-        if (last && pt.x === last.x && pt.y === last.y) continue;
-        stroke.points.push(pt);
-
-        const pts = stroke.points;
-        if (pts.length === 2) {
-          // First segment: line from p0 to mid(p0,p1)
-          const p0 = pts[0], p1 = pts[1];
-          const mid = { x: (p0.x + p1.x) / 2, y: (p0.y + p1.y) / 2 };
-          if (!pathStarted) { ctx.beginPath(); pathStarted = true; }
-          ctx.moveTo(p0.x * dpr, p0.y * dpr);
-          ctx.lineTo(mid.x * dpr, mid.y * dpr);
-          stroke.lastMid = mid;
-        } else {
-          const prev = pts[pts.length - 2];
-          const curr = pts[pts.length - 1];
-          const newMid = { x: (prev.x + curr.x) / 2, y: (prev.y + curr.y) / 2 };
-          if (!pathStarted) { ctx.beginPath(); pathStarted = true; }
-          ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
-          ctx.quadraticCurveTo(prev.x * dpr, prev.y * dpr, newMid.x * dpr, newMid.y * dpr);
-          stroke.lastMid = newMid;
-        }
-      }
-      if (pathStarted) ctx.stroke(); // single GPU call for all coalesced points
-    };
-
-    const handleUp = (e) => {
-      // Tear down document listeners regardless of state (clean slate)
-      document.removeEventListener('pointermove', handleMove);
-      document.removeEventListener('pointerup', handleUp);
-      document.removeEventListener('pointercancel', handleUp);
-
-      if (!isDrawingRef.current) {
-        activePointerIdRef.current = null;
-        return;
-      }
-      if (activePointerIdRef.current !== null && e && e.pointerId !== undefined && e.pointerId !== activePointerIdRef.current) return;
-
-      isDrawingRef.current = false;
-      activePointerIdRef.current = null;
-
-      const stroke = currentStrokeRef.current;
-      if (!stroke) return;
-
-      if (stroke.points.length >= 2 && stroke.lastMid) {
-        const ctx = getCtx();
-        if (ctx) {
-          const last = stroke.points[stroke.points.length - 1];
-          const dpr = dprRef.current;
-          ctx.beginPath();
-          ctx.moveTo(stroke.lastMid.x * dpr, stroke.lastMid.y * dpr);
-          ctx.lineTo(last.x * dpr, last.y * dpr);
-          ctx.stroke();
-        }
-      }
-
-      delete stroke.lastMid;
-      setUndoStack(prev => [...prev, strokesRef.current]);
-      setStrokes(prev => [...prev, stroke]);
-      currentStrokeRef.current = null;
-    };
-
-    const handleDown = (e) => {
-      if (isSubmittedRef.current) return;
-      if (palmGuardRef.current && e.pointerType !== 'pen') return;
-
-      // Defensive: if a previous stroke didn't tear down, finish it first
-      if (isDrawingRef.current) handleUp(null);
-
-      if (e.cancelable) e.preventDefault();
-
-      rectRef.current = canvas.getBoundingClientRect();
-      const pt = toPoint(e.clientX, e.clientY);
-
-      try { canvas.setPointerCapture(e.pointerId); } catch {}
-      activePointerIdRef.current = e.pointerId;
-
-      const tool = activeToolRef.current;
-
-      if (tool === 'eraser' && eraserModeRef.current === 'stroke') {
-        const hitRadius = 18;
-        const current = strokesRef.current;
-        const next = current.filter(s => {
-          if (s.isEraser) return true;
-          return !s.points?.some(p => Math.hypot(p.x - pt.x, p.y - pt.y) < hitRadius);
-        });
-        if (next.length !== current.length) {
-          setUndoStack(prev => [...prev, current]);
-          setStrokes(next);
-          fullRedraw(next);
-        }
-        activePointerIdRef.current = null;
-        return;
-      }
-
-      const stroke = {
-        points: [pt],
-        color: strokeColorRef.current,
-        width: strokeWidthRef.current,
-        isEraser: tool === 'eraser',
-        lastMid: null,
-      };
-      currentStrokeRef.current = stroke;
-      isDrawingRef.current = true;
-
-      const ctx = getCtx();
-      if (ctx) {
-        // Apply style ONCE for the whole stroke — saves work in pointermove
-        applyStyle(ctx, stroke, dprRef.current);
-        // Initial dot for instant feedback
-        drawDot(ctx, pt, stroke, dprRef.current);
-        // Re-apply style after drawDot (which uses save/restore)
-        applyStyle(ctx, stroke, dprRef.current);
-      }
-
-      // Attach move/up listeners on document so off-canvas movement keeps drawing
-      document.addEventListener('pointermove', handleMove, { passive: false });
-      document.addEventListener('pointerup', handleUp);
-      document.addEventListener('pointercancel', handleUp);
-    };
-
-    canvas.addEventListener('pointerdown', handleDown, { passive: false });
-
+    const down = (e) => handlersRef.current.onPointerDown(e);
+    const move = (e) => handlersRef.current.onPointerMove(e);
+    const up   = (e) => handlersRef.current.onPointerUp(e);
+    canvas.addEventListener('pointerdown',   down, { passive: false });
+    canvas.addEventListener('pointermove',   move, { passive: false });
+    canvas.addEventListener('pointerup',     up,   { passive: false });
+    canvas.addEventListener('pointercancel', up,   { passive: false });
     return () => {
-      canvas.removeEventListener('pointerdown', handleDown);
-      document.removeEventListener('pointermove', handleMove);
-      document.removeEventListener('pointerup', handleUp);
-      document.removeEventListener('pointercancel', handleUp);
+      canvas.removeEventListener('pointerdown',   down);
+      canvas.removeEventListener('pointermove',   move);
+      canvas.removeEventListener('pointerup',     up);
+      canvas.removeEventListener('pointercancel', up);
     };
-  }, [fullRedraw]);
+  }, []);
 
-  // ── Toolbar actions ──
+  // ─── Pointer handlers ─────────────────────────────────────────────────────
+  const toCanvasPoint = (e, rect = null) => {
+    const r = rect || displayCanvasRef.current?.getBoundingClientRect();
+    if (!r) return null;
+    return { x: e.clientX - r.left, y: e.clientY - r.top };
+  };
+
+  const onPointerDown = (e) => {
+    if (isSubmittedRef.current || (palmGuardRef.current && e.pointerType !== 'pen')) return;
+    if (!displayCanvasRef.current) return;
+
+    e.preventDefault();
+    const pt = toCanvasPoint(e);
+    if (!pt) return;
+
+    try { displayCanvasRef.current.setPointerCapture(e.pointerId); } catch {}
+
+    if (activeToolRef.current === 'eraser' && eraserModeRef.current === 'stroke') {
+      const hitRadius = 15;
+      const newStrokes = strokesRef.current.filter(s => {
+        if (s.isEraser) return true;
+        if (!s.points) return false;
+        return !s.points.some(p => Math.hypot(p[0] - pt.x, p[1] - pt.y) < hitRadius);
+      });
+      if (newStrokes.length !== strokesRef.current.length) {
+        setUndoStack(prev => [...prev, strokesRef.current]);
+        setStrokes(newStrokes);
+      }
+      return;
+    }
+
+    isDrawingRef.current = true;
+    lastRenderedPointCountRef.current = 0;
+    liveSnapshotRef.current = null;
+    bakeCutoffRef.current = 0;
+    const hasRealPressure = e.pointerType === 'pen';
+    const pressure = hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
+
+    currentStrokeRef.current = {
+      points: [toTuple(pt, pressure)],
+      color: strokeColorRef.current,
+      width: strokeWidthRef.current,
+      size: computeSize(strokeWidthRef.current),
+      hasRealPressure,
+      isEraser: activeToolRef.current === 'eraser',
+      completed: false,
+    };
+  };
+
+  const onPointerMove = (e) => {
+    if (!isDrawingRef.current || !currentStrokeRef.current) return;
+    if (e.cancelable !== false) e.preventDefault();
+
+    const events = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : null;
+    const list = events && events.length > 0 ? events : [e];
+
+    const pts = currentStrokeRef.current.points;
+    const hasRealPressure = currentStrokeRef.current.hasRealPressure;
+    const rect = displayCanvasRef.current?.getBoundingClientRect();
+
+    let added = false;
+    for (const ev of list) {
+      const pt = toCanvasPoint(ev, rect);
+      if (!pt) continue;
+      const pressure = hasRealPressure && ev.pressure > 0 ? ev.pressure : 0.5;
+      const last = pts[pts.length - 1];
+      const dx = pt.x - last[0], dy = pt.y - last[1];
+      if (dx * dx + dy * dy < MIN_DIST_SQ) continue;
+      pts.push(toTuple(pt, pressure));
+      added = true;
+    }
+
+    const predicted = typeof e.getPredictedEvents === 'function' ? e.getPredictedEvents() : [];
+    predictedPointsRef.current = predicted
+      .map(ev => {
+        const pt = toCanvasPoint(ev, rect);
+        if (!pt) return null;
+        const pressure = hasRealPressure && ev.pressure > 0 ? ev.pressure : 0.5;
+        return toTuple(pt, pressure);
+      })
+      .filter(Boolean);
+
+    if (added || predictedPointsRef.current.length > 0) requestRender();
+  };
+
+  const onPointerUp = (e) => {
+    if (!isDrawingRef.current) return;
+    isDrawingRef.current = false;
+    if (!currentStrokeRef.current) return;
+
+    if (e && typeof e.clientX === 'number') {
+      const rect = displayCanvasRef.current?.getBoundingClientRect();
+      const pt = toCanvasPoint(e, rect);
+      if (pt) {
+        const pts = currentStrokeRef.current.points;
+        if (pts.length > 0) {
+          const last = pts[pts.length - 1];
+          const dx = pt.x - last[0], dy = pt.y - last[1];
+          if (dx * dx + dy * dy >= MIN_DIST_SQ) {
+            const pressure = currentStrokeRef.current.hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
+            pts.push(toTuple(pt, pressure));
+          }
+        }
+      }
+    }
+
+    const finished = currentStrokeRef.current;
+    finished.completed = true;
+
+    if (!finished.isEraser) {
+      finished.outline = getStroke(finished.points, PF_OPTIONS_FINAL(finished.size, finished.hasRealPressure));
+    }
+
+    currentStrokeRef.current = null;
+    lastRenderedPointCountRef.current = 0;
+    liveSnapshotRef.current = null;
+    bakeCutoffRef.current = 0;
+
+    if (!finished.isEraser) {
+      const bgCanvas = bgCanvasRef.current;
+      if (bgCanvas) {
+        const dpr = window.devicePixelRatio || 1;
+        drawCommittedStroke(bgCanvas.getContext('2d', { desynchronized: true }), finished, dpr);
+      }
+    }
+
+    const canvas = displayCanvasRef.current;
+    if (canvas) {
+      const ctx = canvas.getContext('2d', { desynchronized: true });
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    setUndoStack(prev => [...prev, strokesRef.current]);
+    setStrokes(prev => [...prev, finished]);
+  };
+
+  handlersRef.current = { onPointerDown, onPointerMove, onPointerUp };
+
   const handleUndo = () => {
     if (!undoStack.length) return;
     const prev = undoStack[undoStack.length - 1];
     setStrokes(prev);
     setUndoStack(u => u.slice(0, -1));
-    fullRedraw(prev);
   };
 
   const handleClear = () => {
     if (!window.confirm('Clear this page?')) return;
-    setUndoStack(prev => [...prev, strokes]);
+    setUndoStack(prev => [...prev, strokesRef.current]);
     setStrokes([]);
-    fullRedraw([]);
   };
 
   const addPage = () => {
-    const next = [...pages];
-    next[currentPage] = strokes;
-    next.push([]);
-    setPages(next);
-    setCurrentPage(next.length - 1);
+    setPages(prev => {
+      const next = [...prev];
+      next[currentPage] = strokesRef.current;
+      next.push([]);
+      return next;
+    });
+    setCurrentPage(prev => prev + 1);
     setStrokes([]);
     setUndoStack([]);
-    fullRedraw([]);
   };
 
   const goToPage = (idx) => {
-    if (idx < 0 || idx >= pages.length) return;
-    const next = [...pages];
-    next[currentPage] = strokes;
-    setPages(next);
-    setCurrentPage(idx);
-    const target = next[idx] || [];
-    setStrokes(target);
-    setUndoStack([]);
-    fullRedraw(target);
+    setPages(prev => {
+      if (idx < 0 || idx >= prev.length) return prev;
+      const next = [...prev];
+      next[currentPage] = strokesRef.current;
+      setCurrentPage(idx);
+      setStrokes(next[idx] || []);
+      setUndoStack([]);
+      return next;
+    });
   };
 
-  // ── Export API ──
-  useImperativeHandle(ref, () => ({
-    exportImage: () => {
-      const canvas = canvasRef.current;
-      if (!canvas) return Promise.resolve(null);
-      return Promise.resolve(canvas.toDataURL('image/png'));
-    },
-    exportPageImages: async () => {
-      const canvas = canvasRef.current;
-      if (!canvas) return [];
-      const all = [...pages];
-      all[currentPage] = strokes;
-      const tmp = document.createElement('canvas');
-      tmp.width = canvas.width;
-      tmp.height = canvas.height;
-      const ctx = tmp.getContext('2d');
-      const dpr = dprRef.current;
-      return all.map(pageStrokes => {
-        ctx.clearRect(0, 0, tmp.width, tmp.height);
-        for (const s of pageStrokes) drawCompleteStroke(ctx, s, dpr);
-        return tmp.toDataURL('image/png');
-      });
-    },
-    clear: () => {
-      setStrokes([]);
-      setPages([[]]);
-      setCurrentPage(0);
-      setUndoStack([]);
-      fullRedraw([]);
-    },
-  }), [pages, currentPage, strokes, fullRedraw]);
+  useImperativeHandle(ref, () => {
+    const drawBackground = (ctx, dpr) => {
+      if (isGraph) {
+        ctx.strokeStyle = '#e2e8f0'; ctx.lineWidth = 1;
+        const step = 20 * dpr;
+        ctx.beginPath();
+        const w = ctx.canvas.width; const h = ctx.canvas.height;
+        for (let x = 0; x < w; x += step) { ctx.moveTo(x, 0); ctx.lineTo(x, h); }
+        for (let y = 0; y < h; y += step) { ctx.moveTo(0, y); ctx.lineTo(w, y); }
+        ctx.stroke();
+        ctx.strokeStyle = '#94a3b8'; ctx.lineWidth = 2 * dpr;
+        ctx.beginPath();
+        ctx.moveTo(w / 2, 0); ctx.lineTo(w / 2, h);
+        ctx.moveTo(0, h / 2); ctx.lineTo(w, h / 2);
+        ctx.stroke();
+      } else {
+        ctx.strokeStyle = '#dbeafe'; ctx.lineWidth = 1;
+        const step = 32 * dpr;
+        const h = ctx.canvas.height;
+        ctx.beginPath();
+        for (let y = 31 * dpr; y < h; y += step) { ctx.moveTo(0, y); ctx.lineTo(ctx.canvas.width, y); }
+        ctx.stroke();
+      }
+    };
 
-  // ── Styles ──
+    const getCompositeDataURL = (pageStrokes) => {
+      const displayCanvas = displayCanvasRef.current;
+      if (!displayCanvas) return null;
+      const tempCanvas = document.createElement('canvas');
+      tempCanvas.width = displayCanvas.width;
+      tempCanvas.height = displayCanvas.height;
+      const ctx = tempCanvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+      drawBackground(ctx, dpr);
+      (pageStrokes || []).forEach(s => drawCommittedStroke(ctx, s, dpr));
+      return tempCanvas.toDataURL('image/png');
+    };
+
+    return {
+      exportImage: () => Promise.resolve(getCompositeDataURL(strokesRef.current)),
+      exportPageImages: async () => {
+        const all = [...pages];
+        all[currentPage] = strokesRef.current;
+        return all.map(ps => getCompositeDataURL(ps || []));
+      },
+      clear: () => {
+        setStrokes([]);
+        setPages([[]]); setCurrentPage(0);
+        setUndoStack([]);
+      }
+    };
+  }, [pages, currentPage, isGraph]);
+
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
     backgroundSize: '20px 20px',
@@ -459,11 +524,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   return (
-    <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative' }}>
+    <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
       {!isSubmitted && (
         <div style={{ display: 'flex', padding: '10px 14px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
-          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase' }}>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
             {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
+            <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
           </span>
 
           <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
@@ -475,7 +541,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
               <PenTool size={17} />
             </button>
             <button
-              onClick={() => activeTool === 'eraser' ? setEraserMode(m => m === 'area' ? 'stroke' : 'area') : setActiveTool('eraser')}
+              onClick={() => {
+                if (activeTool === 'eraser') { setEraserMode(prev => prev === 'area' ? 'stroke' : 'area'); }
+                else { setActiveTool('eraser'); }
+              }}
               style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px', background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'eraser' ? '#4f46e5' : '#64748b' }}
             >
               <Eraser size={17} />
@@ -520,8 +589,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
           </>
         )}
         <canvas
-          ref={canvasRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
+          ref={bgCanvasRef}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', willChange: 'transform' }}
+        />
+        <canvas
+          ref={displayCanvasRef}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair', willChange: 'transform' }}
         />
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>

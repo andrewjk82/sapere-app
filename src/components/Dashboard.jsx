@@ -7,13 +7,15 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, updateDoc, increment, serverTimestamp, collection, addDoc, query, where, or } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
+
 import AvatarPickerModal from './AvatarPickerModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
+import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 
-const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
+const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   const [profile, setProfile] = useState(null);
@@ -31,6 +33,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
   const [isImporting, setIsImporting] = useState(false);
   const [importDone, setImportDone] = useState(false);
+  const [isSeedingLeaderboard, setIsSeedingLeaderboard] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
   // Fetch student daily stats for insights
   useEffect(() => {
@@ -101,6 +105,33 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
       showToast('Sync failed: ' + e.message, 'error');
     } finally {
       setIsSyncing(false);
+    }
+  };
+
+  const handleSeedLeaderboard = async () => {
+    setIsSeedingLeaderboard(true);
+    try {
+      const { added, skipped } = await seedLeaderboardFromExistingData({
+        onProgress: (msg) => console.log('[Leaderboard Seed]', msg),
+      });
+      showToast(`리더보드 동기화 완료! ${added}명 추가/업데이트, ${skipped}명 건너뜀`, 'success');
+    } catch (err) {
+      console.error('Leaderboard seed failed:', err);
+      showToast('리더보드 동기화 실패: ' + err.message, 'error');
+    } finally {
+      setIsSeedingLeaderboard(false);
+    }
+  };
+
+  const handleManualRefresh = async () => {
+    setIsRefreshing(true);
+    try {
+      await onRefreshStudents();
+      showToast('Student list updated!', 'success');
+    } catch (err) {
+      showToast('Failed to refresh students.', 'error');
+    } finally {
+      setIsRefreshing(false);
     }
   };
 
@@ -390,12 +421,8 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
   const handleGrade = async (status) => {
     if (!selectedGradingItem) return;
     try {
-      // 1. Update the grading queue item
-      await updateDoc(doc(db, 'grading_queue', selectedGradingItem.id), {
-        status,
-        gradedAt: serverTimestamp(),
-        gradedBy: user.uid
-      });
+      // 1. Delete the grading queue item (message) after processing
+      await deleteDoc(doc(db, 'grading_queue', selectedGradingItem.id));
       
       const type = selectedGradingItem.challengeType || 'daily';
       const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
@@ -418,28 +445,53 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
         const maxXP = type === 'calc' ? 50 : 100;
         const xpPerQuestion = Math.round(maxXP / totalQ);
 
-        // 3. Update overall XP in user doc
-        await updateDoc(doc(db, 'users', userId), {
+        // 3. Update overall XP
+        const xpPayload = {
           totalXP: increment(xpPerQuestion),
           updatedAt: new Date().toISOString()
-        });
+        };
 
-        // 4. Update the actual score in the daily/calc stats record
-        if (statId && userId) {
+        try {
+          await updateDoc(doc(db, 'users', userId), xpPayload);
+        } catch (userErr) {
+          console.warn("Could not update user totalXP, trying students collection:", userErr);
           try {
-            const statRef = doc(db, 'users', userId, colName, statId);
-            await updateDoc(statRef, {
-              score: increment(1)
-            });
-          } catch (statErr) {
-            console.warn("Could not update stat score (might be a manual student or missing doc):", statErr);
-            // Fallback for students in 'students' collection if manual
-            try {
-              const manualStatRef = doc(db, 'students', userId, colName, statId);
-              await updateDoc(manualStatRef, {
-                score: increment(1)
+            await updateDoc(doc(db, 'students', userId), xpPayload);
+          } catch (studentErr) {
+            console.error("Failed to update XP in both collections:", studentErr);
+          }
+        }
+
+        // 4. Update the actual score and answerResults in the daily/calc stats record
+        if (statId && userId) {
+          const safeStatId = typeof statId === 'string' ? statId.replace(/\//g, '-') : String(statId);
+          let statRef = doc(db, 'users', userId, colName, safeStatId);
+          try {
+            let statSnap = await getDoc(statRef);
+            if (!statSnap.exists()) {
+              statRef = doc(db, 'students', userId, colName, statId);
+              statSnap = await getDoc(statRef);
+            }
+
+            if (statSnap.exists()) {
+              const statsData = statSnap.data();
+              const updatedResults = [...(statsData.answerResults || [])];
+              const qIndex = updatedResults.findIndex(r => r.questionId === selectedGradingItem.questionId);
+              
+              if (qIndex !== -1) {
+                updatedResults[qIndex].correct = true;
+                updatedResults[qIndex].isPending = false;
+                updatedResults[qIndex].selectedAnswer = 'Approved';
+              }
+
+              await updateDoc(statRef, {
+                score: increment(1),
+                xpEarned: increment(xpPerQuestion),
+                ...(qIndex !== -1 ? { answerResults: updatedResults } : {})
               });
-            } catch (e2) {}
+            }
+          } catch (err) {
+            console.warn("Could not update stat score/results", err);
           }
         }
 
@@ -721,11 +773,13 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                   </div>
                   <div className="app-action-buttons" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <button 
-                      onClick={onAddStudent}
+                      onClick={handleManualRefresh}
+                      disabled={isRefreshing}
                       className="app-button app-button--primary"
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
                     >
-                      <Plus size={20} />
-                      Add New Student
+                      <Users size={18} className={isRefreshing ? 'animate-spin' : ''} />
+                      {isRefreshing ? 'Syncing...' : 'Sync Students'}
                     </button>
                     <button className="app-button app-button--secondary" onClick={() => setShowScheduleModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
                       <Calendar size={18} /> Schedule Lesson
@@ -752,6 +806,15 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                         <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1' }}>Syncing curriculum...</span>
                       </div>
                     )}
+                    <button
+                      className="app-button app-button--secondary"
+                      onClick={handleSeedLeaderboard}
+                      disabled={isSeedingLeaderboard}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                    >
+                      <Trophy size={18} className={isSeedingLeaderboard ? 'animate-spin' : ''} />
+                      {isSeedingLeaderboard ? 'Syncing Leaderboard...' : 'Sync Leaderboard DB'}
+                    </button>
                   </div>
                 </div>
 
@@ -1108,9 +1171,18 @@ const Dashboard = ({ students, onAddStudent, onSelectStudent, setActiveTab, onSh
                 {/* Student's Answer */}
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '10px' }}>Student's Answer</label>
-                  {selectedGradingItem.answerImage ? (
-                    <div style={{ width: '100%', background: '#f1f5f9', borderRadius: '20px', overflow: 'hidden', border: '2px solid #e2e8f0', aspectRatio: '4/3' }}>
-                      <img src={selectedGradingItem.answerImage} alt="Student Drawing" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  {selectedGradingItem.answerImages && selectedGradingItem.answerImages.length > 0 ? (
+                    <div style={{ width: '100%', background: '#fff', borderRadius: '20px', overflow: 'hidden', border: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
+                      {selectedGradingItem.answerImages.map((imgUrl, i) => (
+                        <div key={i} style={{ borderBottom: i < selectedGradingItem.answerImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px', background: 'linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
+                          <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 800, marginBottom: '8px' }}>PAGE {i + 1}</div>
+                          <img src={imgUrl} alt={`Student Drawing Page ${i+1}`} style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block' }} />
+                        </div>
+                      ))}
+                    </div>
+                  ) : selectedGradingItem.answerImage ? (
+                    <div style={{ width: '100%', background: 'linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)', backgroundSize: '20px 20px', borderRadius: '20px', overflow: 'hidden', border: '2px solid #e2e8f0', padding: '16px', minHeight: '150px' }}>
+                      <img src={selectedGradingItem.answerImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', margin: '0 auto' }} />
                     </div>
                   ) : (
                     <div style={{ padding: '20px', background: '#fffbeb', borderRadius: '16px', border: '1.5px solid #fcd34d', fontSize: '1rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>

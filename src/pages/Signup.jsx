@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
+import { upsertRegisteredUserLeaderboard } from '../services/leaderboardService';
 
 const Signup = ({ onToggleMode }) => {
   const [step, setStep] = useState(() => {
@@ -54,6 +55,17 @@ const Signup = ({ onToggleMode }) => {
           createdAt: serverTimestamp(),
           updatedAt: serverTimestamp()
         }, { merge: true });
+
+        // Register in leaderboard immediately with XP=0
+        try {
+          await upsertRegisteredUserLeaderboard(user.uid, {
+            email: user.email,
+            role: 'student',
+            totalXP: 0,
+          });
+        } catch (lbErr) {
+          console.warn('leaderboard init failed (non-fatal):', lbErr.code);
+        }
         
         setStep(2);
       } catch (err) {
@@ -151,7 +163,14 @@ const Signup = ({ onToggleMode }) => {
       // 3. Save to Firestore with merge: true to protect data
       await setDoc(doc(db, 'users', user.uid), userData, { merge: true });
 
-      // 4. Clear pending state
+      // 4. Sync leaderboard with completed profile
+      try {
+        await upsertRegisteredUserLeaderboard(user.uid, userData);
+      } catch (lbErr) {
+        console.warn('leaderboard profile sync failed (non-fatal):', lbErr.code);
+      }
+
+      // 5. Clear pending state
       sessionStorage.removeItem('pendingSignupStep');
 
       setMessage('Welcome to Sapere! Your profile has been created.');

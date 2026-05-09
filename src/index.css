@@ -569,3 +569,66 @@ input:focus {
   margin-bottom: 4px;
   opacity: 0.8;
 }
+
+/* Curriculum Layout Responsive adjustments */
+.curriculum-main-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+  height: auto;
+  min-height: calc(100vh - 250px);
+}
+
+.year-select-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 1023px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .curriculum-main-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .curriculum-sidebar {
+    position: sticky;
+    top: 60px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    margin: 0 -16px; /* Bleed out if there's container padding */
+    padding: 16px !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .year-select-list {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .year-select-list::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .year-select-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-page__title h2 {
+    font-size: 1.8rem !important;
+  }
+  .curriculum-mobile-header h3 {
+    font-size: 1.4rem !important;
+  }
+}

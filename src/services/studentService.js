@@ -12,6 +12,7 @@ import {
   orderBy
 } from "firebase/firestore";
 import { db } from "../firebase/config";
+import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
 
 const COLLECTION_NAME = "students";
 
@@ -26,9 +27,73 @@ export const studentService = {
         lessons: 0,
         status: "Active"
       });
+
+      // Register in leaderboard with XP=0
+      try {
+        await upsertManualStudentLeaderboard(docRef.id, {
+          ...studentData,
+          totalXP: 0,
+        });
+      } catch (lbErr) {
+        console.warn('leaderboard addStudent failed (non-fatal):', lbErr.code);
+      }
+
       return docRef.id;
     } catch (error) {
       console.error("Error adding student: ", error);
+      throw error;
+    }
+  },
+
+  // 학생 목록 수동 가져오기 (1회성)
+  async getStudents(tutorId, isAdmin = false) {
+    try {
+      const studentsRef = collection(db, COLLECTION_NAME);
+      const manualQuery = isAdmin 
+        ? query(studentsRef) 
+        : query(studentsRef, where("tutorId", "==", tutorId));
+
+      const manualSnap = await getDocs(manualQuery);
+      const manualStudents = manualSnap.docs.map(doc => ({
+        id: doc.id,
+        source: 'manual',
+        ...doc.data()
+      }));
+
+      let registeredStudents = [];
+      if (isAdmin) {
+        const usersRef = collection(db, "users");
+        const usersSnap = await getDocs(usersRef);
+        registeredStudents = usersSnap.docs
+          .map(doc => ({ id: doc.id, ...doc.data() }))
+          .filter(data => 
+            data.email !== "andrewjk82@gmail.com" && 
+            data.role !== 'admin' && 
+            data.id !== tutorId
+          )
+          .map(data => {
+            const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
+            return {
+              ...data,
+              source: 'registered',
+              name: data.name || data.displayName || `${data.firstName || ''} ${data.lastName || ''}`.trim() || 'Student',
+              avatarUrl: data.avatarUrl || data.dreamImageUrl || fallbackAvatar,
+              level: data.assignedYear?.[0] || data.year || data.level || "Year 11",
+              subject: data.assignedCourse?.[0] || data.subject || "Maths"
+            };
+          });
+      }
+
+      return [
+        ...manualStudents,
+        ...registeredStudents
+      ].sort((a, b) => {
+        const nameA = a.name || "";
+        const nameB = b.name || "";
+        return nameA.localeCompare(nameB);
+      });
+    } catch (error) {
+      console.error("Error fetching students: ", error);
       throw error;
     }
   },
@@ -147,12 +212,24 @@ export const studentService = {
   // 학생 삭제
   async deleteStudent(studentId) {
     const docRef = doc(db, COLLECTION_NAME, studentId);
-    return await deleteDoc(docRef);
+    await deleteDoc(docRef);
+    // Remove from leaderboard
+    try {
+      await removeFromLeaderboard(`manual-${studentId}`);
+    } catch (lbErr) {
+      console.warn('leaderboard removeStudent failed (non-fatal):', lbErr.code);
+    }
   },
 
   async deleteRegisteredUser(userId) {
     const docRef = doc(db, "users", userId);
-    return await deleteDoc(docRef);
+    await deleteDoc(docRef);
+    // Remove from leaderboard
+    try {
+      await removeFromLeaderboard(userId);
+    } catch (lbErr) {
+      console.warn('leaderboard removeUser failed (non-fatal):', lbErr.code);
+    }
   },
 
   async deleteStudentRecord(student) {

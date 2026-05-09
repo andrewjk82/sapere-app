@@ -28,7 +28,9 @@ import {
   setDoc,
   query,
   where,
+  orderBy,
 } from "firebase/firestore";
+import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from "../services/leaderboardService";
 import { useToast } from "../context/ToastContext";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import MathView, { toDisplayText } from "./MathView";
@@ -654,6 +656,18 @@ const StudentDetail = ({ studentId, onBack }) => {
         { merge: true },
       );
 
+      // Sync to Leaderboard
+      try {
+        const fullStudentData = { ...student, totalXP, challengesCompleted };
+        if (student.source === 'manual') {
+          await upsertManualStudentLeaderboard(studentId, fullStudentData);
+        } else {
+          await upsertRegisteredUserLeaderboard(studentId, fullStudentData);
+        }
+      } catch (lbErr) {
+        console.warn('Leaderboard sync failed during recalculate:', lbErr);
+      }
+
       showToast(
         `Success! Total XP: ${totalXP}, Challenges: ${challengesCompleted}`,
         "success",
@@ -708,6 +722,18 @@ const StudentDetail = ({ studentId, onBack }) => {
       },
       { merge: true },
     );
+
+    // Sync to Leaderboard
+    try {
+      const fullStudentData = { ...student, totalXP, challengesCompleted };
+      if (student.source === 'manual') {
+        await upsertManualStudentLeaderboard(studentId, fullStudentData);
+      } else {
+        await upsertRegisteredUserLeaderboard(studentId, fullStudentData);
+      }
+    } catch (lbErr) {
+      console.warn('Leaderboard sync failed during totals update:', lbErr);
+    }
 
     return { totalXP, challengesCompleted };
   };

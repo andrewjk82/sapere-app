@@ -403,6 +403,7 @@ const Curriculum = () => {
         <LearningPath profile={profile} />
       ) : (
         <>
+<<<<<<< HEAD
           {/* ── Sticky top bar ── */}
           <div className="curriculum-topbar">
             <div className="curriculum-topbar__inner">
@@ -452,22 +453,187 @@ const Curriculum = () => {
 
               {/* Row 2 — Year tabs */}
               <div className="curriculum-year-tabs">
+=======
+          <div className="app-page__header" style={{ marginBottom: '32px' }}>
+            <div className="app-page__title">
+              <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#1e1b4b', margin: '0 0 8px 0' }}>Curriculum Management</h2>
+              <p style={{ color: '#64748b', fontSize: '1.1rem', fontWeight: 500, margin: 0 }}>Organize courses, chapters, and topics across all year levels.</p>
+            </div>
+          </div>
+
+          <div style={{ marginBottom: '32px' }}>
+            <div className="curriculum-mobile-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
+              <h3 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#0f172a', margin: 0, display: 'flex', alignItems: 'center', gap: '12px' }}>
+                {selectedYear} 
+                {selectedCourse && <span style={{ fontSize: '0.9rem', padding: '4px 12px', background: '#e0e7ff', color: '#4338ca', borderRadius: '16px', fontWeight: 800 }}>{selectedCourse}</span>}
+              </h3>
+            </div>
+
+            {/* Admin Tools Panel */}
+            <div style={{ background: 'rgba(248, 250, 252, 0.8)', backdropFilter: 'blur(12px)', border: '1px solid #e2e8f0', borderRadius: '20px', padding: '16px', display: 'flex', gap: '12px', overflowX: 'auto', alignItems: 'center' }}>
+              <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em', paddingRight: '12px', borderRight: '1px solid #e2e8f0', whiteSpace: 'nowrap' }}>
+                Admin Tools
+              </div>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                  {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
+                    <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#fffbeb', color: '#b45309', border: '1px solid #fde68a', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch1 Algebra'}
+                    </button>
+                  )}
+                  {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
+                    <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#f5f3ff', color: '#6d28d9', border: '1px solid #ddd6fe', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch2 Surds'}
+                    </button>
+                  )}
+                  {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
+                    <button onClick={handleSeedCh3Questions} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#ecfdf5', color: '#047857', border: '1px solid #a7f3d0', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Ch3 Trig'}
+                    </button>
+                  )}
+                  {!questionCounts['y10-1'] && (
+                    <button onClick={handleSeedY10Ch1Questions} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#fff1f2', color: '#be123c', border: '1px solid #fecdd3', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                      {isMigrating ? 'Updating...' : '⚠️ Seed Y10 Ch1'}
+                    </button>
+                  )}
+                  {(questionCounts['y10-3'] || 0) < 169 && (
+                    <button onClick={handleSyncY10Ch3} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#f0fdf4', color: '#15803d', border: '1px solid #bbf7d0', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                      {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3 (${questionCounts['y10-3'] || 0}/169)`}
+                    </button>
+                  )}
+                  <button onClick={handleSyncY10Ch3} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#f0fdf4', color: '#15803d', border: '1.5px solid #16a34a', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch3`}
+                  </button>
+                  <button onClick={handleSyncY10Ch4} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#fef2f2', color: '#b91c1c', border: '1.5px solid #dc2626', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                    {isMigrating ? 'Syncing...' : `🔄 Sync Y10 Ch4`}
+                  </button>
+                  <button onClick={handleSeedCurveQuestion} disabled={isMigrating} style={{ padding: '8px 16px', borderRadius: '12px', background: '#ecfdf5', color: '#047857', border: '1px solid #6ee7b7', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                    {isMigrating ? 'Adding...' : '⚠️ Add Curve Q'}
+                  </button>
+                  {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
+                    <button onClick={handleSyncSelectedYear} className="app-button" style={{ padding: '8px 16px', borderRadius: '12px', background: '#e0f2fe', color: '#0369a1', border: '1px solid #bae6fd', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap', transition: 'all 0.2s' }}>
+                      Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
+                    </button>
+                  )}
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
+            <div style={{ position: 'relative', width: window.innerWidth < 768 ? '100%' : '320px' }}>
+              <div style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#94a3b8', pointerEvents: 'none' }}>
+                <Search size={20} />
+              </div>
+              <input 
+                type="text" 
+                placeholder="Search topics or chapters..." 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                style={{ 
+                  width: '100%', 
+                  padding: '16px 16px 16px 48px', 
+                  borderRadius: '20px', 
+                  border: '1px solid #e2e8f0', 
+                  background: 'white', 
+                  fontSize: '0.95rem', 
+                  fontWeight: 600, 
+                  color: '#1e293b',
+                  boxShadow: '0 4px 6px -1px rgba(0,0,0,0.02)',
+                  outline: 'none',
+                  transition: 'all 0.2s',
+                  boxSizing: 'border-box'
+                }}
+                onFocus={(e) => e.target.style.boxShadow = '0 0 0 3px rgba(99, 102, 241, 0.2)'}
+                onBlur={(e) => e.target.style.boxShadow = '0 4px 6px -1px rgba(0,0,0,0.02)'}
+              />
+            </div>
+            <motion.button 
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
+              style={{ 
+                background: 'linear-gradient(135deg, #6366f1, #4f46e5)', 
+                color: 'white', 
+                border: 'none', 
+                padding: '16px 24px', 
+                borderRadius: '20px', 
+                fontWeight: 800, 
+                fontSize: '0.95rem', 
+                cursor: 'pointer', 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '8px',
+                boxShadow: '0 10px 20px -5px rgba(99, 102, 241, 0.4)'
+              }}
+            >
+              <Plus size={20} /> Add Chapter
+            </motion.button>
+          </div>
+
+          <div className="curriculum-main-grid">
+            {/* Left Sidebar: Year Selection (ONLY FOR ADMIN) */}
+            <div className="app-panel curriculum-sidebar" style={{ padding: '16px', borderRadius: '24px' }}>
+              <div className="year-select-title" style={{ padding: '8px 16px', fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', marginBottom: '12px' }}>SELECT YEAR LEVEL</div>
+              <div className="year-select-list">
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
                 {YEARS.map(year => (
                   <button
                     key={year}
                     onClick={() => {
                       setSelectedYear(year);
+<<<<<<< HEAD
                       if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
+=======
+                      if (year === 'Year 11' || year === 'Year 12') {
+                        setSelectedCourse('Standard');
+                      }
+                    }}
+                    className={`year-btn-mobile ${selectedYear === year ? 'active' : ''}`}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '14px 20px',
+                      borderRadius: '16px',
+                      border: 'none',
+                      background: selectedYear === year ? 'linear-gradient(135deg, #6366f1, #4f46e5)' : 'transparent',
+                      color: selectedYear === year ? 'white' : '#64748b',
+                      fontWeight: 800,
+                      fontSize: '0.95rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      boxShadow: selectedYear === year ? '0 10px 15px -3px rgba(99, 102, 241, 0.3)' : 'none',
+                      whiteSpace: 'nowrap'
+                    }}
+                    onMouseEnter={(e) => {
+                      if (selectedYear !== year) {
+                        e.currentTarget.style.background = '#f1f5f9';
+                        e.currentTarget.style.color = '#334155';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (selectedYear !== year) {
+                        e.currentTarget.style.background = 'transparent';
+                        e.currentTarget.style.color = '#64748b';
+                      }
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
                     }}
                     className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
                   >
+<<<<<<< HEAD
                     {year}
+=======
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                      <GraduationCap size={16} />
+                      {year}
+                    </div>
+                    {selectedYear === year && <ChevronRight size={16} className="desktop-only" />}
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
                   </button>
                 ))}
               </div>
             </div>
           </div>
 
+<<<<<<< HEAD
           {/* ── Main content ── */}
           <div className="curriculum-content">
             {/* Course sub-tabs (Year 11/12) */}
@@ -521,6 +687,125 @@ const Curriculum = () => {
                   <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
                     Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
                   </button>
+=======
+            {/* Main Content Area */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {/* Sub-tabs for Year 11 & 12 */}
+              {courses && (
+                <div className="course-tabs-scroll" style={{ marginBottom: '16px' }}>
+                  <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '8px', borderRadius: '24px', width: 'fit-content' }}>
+                    {courses.map(course => (
+                      <button
+                        key={course}
+                        onClick={() => setSelectedCourse(course)}
+                        style={{
+                          padding: '12px 24px',
+                          borderRadius: '18px',
+                          border: 'none',
+                          background: selectedCourse === course ? 'white' : 'transparent',
+                          color: selectedCourse === course ? '#4338ca' : '#64748b',
+                          fontWeight: 800,
+                          fontSize: '0.9rem',
+                          cursor: 'pointer',
+                          boxShadow: selectedCourse === course ? '0 4px 15px rgba(0,0,0,0.05)' : 'none',
+                          transition: 'all 0.3s ease',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '8px'
+                        }}
+                      >
+                        {course}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Chapters Grid */}
+              {/* Chapters Grid */}
+              <div className="chapters-grid" style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
+                gap: '24px',
+                overflowY: window.innerWidth < 1024 ? 'visible' : 'auto',
+                paddingBottom: '100px'
+              }}>
+                {displayData.length > 0 ? displayData.map((chapter, idx) => {
+                  const completed = chapter.completed || 0;
+                  const p = chapter.modules > 0 ? Math.round((completed / chapter.modules) * 100) : 0;
+                  const gradients = [
+                    'linear-gradient(135deg, #eff6ff, #dbeafe)',
+                    'linear-gradient(135deg, #f5f3ff, #ede9fe)',
+                    'linear-gradient(135deg, #f0fdf4, #dcfce7)',
+                    'linear-gradient(135deg, #fff7ed, #ffedd5)'
+                  ];
+                  const iconColors = ['#3b82f6', '#8b5cf6', '#22c55e', '#f97316'];
+                  const themeIdx = idx % 4;
+                  
+                  return (
+                      <motion.div 
+                        key={chapter.id} 
+                        onClick={() => setSelectedChapterForQuestions(chapter)}
+                        whileHover={{ y: -6, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01)' }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        style={{ 
+                          padding: '28px', 
+                          borderRadius: '28px', 
+                          display: 'flex', 
+                          flexDirection: 'column', 
+                          gap: '24px',
+                          background: '#ffffff',
+                          border: '1px solid #e2e8f0',
+                          cursor: 'pointer',
+                          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.02)',
+                          position: 'relative',
+                          overflow: 'hidden'
+                        }}
+                      >
+                      {/* Decorative top accent */}
+                      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: gradients[themeIdx] }} />
+
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                        <div style={{ width: '52px', height: '52px', background: gradients[themeIdx], borderRadius: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: iconColors[themeIdx], boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                          <BookText size={24} />
+                        </div>
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                          <motion.button whileHover={{ scale: 1.1 }} onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }} style={{ border: 'none', background: '#f8fafc', padding: '10px', borderRadius: '12px', color: '#64748b', cursor: 'pointer' }}><Edit2 size={16} /></motion.button>
+                          <motion.button whileHover={{ scale: 1.1 }} onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }} style={{ border: 'none', background: '#fff1f2', padding: '10px', borderRadius: '12px', color: '#f43f5e', cursor: 'pointer' }}><Trash2 size={16} /></motion.button>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h3 style={{ margin: '0 0 8px 0', fontSize: '1.25rem', fontWeight: 800, color: '#0f172a', lineHeight: 1.3 }}>{chapter.title}</h3>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
+                          <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#f1f5f9', color: '#475569', borderRadius: '8px', fontWeight: 700 }}>
+                            {chapter.topics?.length ? `${chapter.topics.length} Subtopics` : 'Core Unit'}
+                          </span>
+                          {questionCounts[chapter.id] !== undefined && (
+                            <span style={{ fontSize: '0.8rem', padding: '4px 10px', background: '#e0e7ff', color: '#4338ca', borderRadius: '8px', fontWeight: 700 }}>
+                              {questionCounts[chapter.id]} Qs
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div style={{ marginTop: 'auto' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', marginBottom: '10px', letterSpacing: '0.05em' }}>
+                          <span>MODULE PROGRESS</span>
+                          <span style={{ color: iconColors[themeIdx] }}>{p}%</span>
+                        </div>
+                        <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '4px', overflow: 'hidden' }}>
+                          <motion.div initial={{ width: 0 }} animate={{ width: `${p}%` }} transition={{ duration: 0.8, ease: "easeOut" }} style={{ height: '100%', background: iconColors[themeIdx], borderRadius: '4px' }} />
+                        </div>
+                      </div>
+                    </motion.div>
+                )}) : (
+                  <div style={{ textAlign: 'center', padding: '60px', background: 'white', borderRadius: '24px', border: '2px dashed #e2e8f0', color: '#94a3b8', gridColumn: '1 / -1' }}>
+                    <BookOpen size={48} style={{ opacity: 0.2, margin: '0 auto 16px' }} />
+                    <h3 style={{ margin: 0, fontWeight: 800, color: '#64748b' }}>No chapters found</h3>
+                    <p style={{ margin: '8px 0 0', fontWeight: 500 }}>Try adjusting your search or add a new chapter.</p>
+                  </div>
+>>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
                 )}
               </div>
             )}
