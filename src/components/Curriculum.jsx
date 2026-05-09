@@ -418,6 +418,15 @@ const Curriculum = () => {
         <LearningPath profile={profile} />
       ) : (
         <>
+          {/* ── Hero Section ── */}
+          <div className="curriculum-hero">
+            <h1 className="curriculum-hero__title">Mathematical Curriculum</h1>
+            <p className="curriculum-hero__subtitle">
+              Interactive learning paths designed to build deep mathematical understanding 
+              from foundation to advanced mastery.
+            </p>
+          </div>
+
           {/* ── Sticky top bar ── */}
           <div className="curriculum-topbar">
             <div className="curriculum-topbar__inner">
