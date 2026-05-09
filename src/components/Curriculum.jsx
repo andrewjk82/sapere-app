@@ -420,11 +420,7 @@ const Curriculum = () => {
         <>
           {/* ── Hero Section ── */}
           <div className="curriculum-hero">
-            <h1 className="curriculum-hero__title">Mathematical Curriculum</h1>
-            <p className="curriculum-hero__subtitle">
-              Interactive learning paths designed to build deep mathematical understanding 
-              from foundation to advanced mastery.
-            </p>
+            <h1 className="curriculum-hero__title">Curriculum</h1>
           </div>
 
           {/* ── Sticky top bar ── */}
