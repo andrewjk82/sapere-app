@@ -3,12 +3,12 @@ import { getStroke } from 'perfect-freehand';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v8';
+const CANVAS_VERSION = 'v8.1-fix';
 
-const MIN_DIST_SQ = 6;      // ~2.5px minimum distance between sampled points
-const BAKE_EVERY = 50;      // bake snapshot after this many new points past the window
-const LIVE_TAIL = 80;       // max points fed to getStroke each frame
-const BAKE_OVERLAP = 10;    // overlap points at seam to avoid gaps
+const MIN_DIST_SQ = 4;      // Lowered for finer detail
+const BAKE_EVERY = 80;      // Bake history snapshot less frequently
+const LIVE_TAIL = 70;       // Max points processed live by getStroke
+const BAKE_OVERLAP = 12;    // Slightly larger overlap for seam stability
 
 const hasCoarsePointer = () =>
   typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
@@ -183,44 +183,50 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     }
 
     const pts = stroke.points;
+    const totalPoints = pts.length;
 
-    // Bake old history to offscreen snapshot so live PF only processes LIVE_TAIL points.
-    // Bake triggers when enough new points have accumulated past the window.
-    if (pts.length > bakeCutoffRef.current + BAKE_EVERY + LIVE_TAIL) {
-      const newCutoff = pts.length - LIVE_TAIL;
+    // Baking - Strengthened stability: bake history to offscreen snapshot so live PF only processes LIVE_TAIL points.
+    if (totalPoints > bakeCutoffRef.current + BAKE_EVERY + LIVE_TAIL) {
+      const newCutoff = totalPoints - LIVE_TAIL;
       let snap = liveSnapshotRef.current;
+
       if (!snap || snap.width !== canvas.width || snap.height !== canvas.height) {
         snap = document.createElement('canvas');
         snap.width = canvas.width;
         snap.height = canvas.height;
         liveSnapshotRef.current = snap;
       }
+
       const snapCtx = snap.getContext('2d');
       snapCtx.clearRect(0, 0, snap.width, snap.height);
       snapCtx.fillStyle = stroke.color;
-      drawPFOutline(snapCtx, getStroke(pts.slice(0, newCutoff), PF_OPTIONS(stroke.size, stroke.hasRealPressure)), dpr);
+
+      const bakedOutline = getStroke(
+        pts.slice(0, newCutoff),
+        PF_OPTIONS(stroke.size, stroke.hasRealPressure)
+      );
+      drawPFOutline(snapCtx, bakedOutline, dpr);
+
       bakeCutoffRef.current = newCutoff;
     }
 
     ctx.save();
     ctx.globalCompositeOperation = 'source-over';
 
-    // Composite: baked history + live tail
     if (liveSnapshotRef.current && bakeCutoffRef.current > 0) {
       ctx.drawImage(liveSnapshotRef.current, 0, 0);
     }
 
-    // Live tail: last LIVE_TAIL points (with BAKE_OVERLAP for seamless junction) + predicted
     const tailStart = Math.max(0, bakeCutoffRef.current - BAKE_OVERLAP);
     const tailPts = tailStart > 0 ? pts.slice(tailStart) : pts;
-    const renderPoints = predictedPointsRef.current.length > 0
-      ? [...tailPts, ...predictedPointsRef.current]
-      : tailPts;
+    const renderPoints = [...tailPts, ...predictedPointsRef.current];
 
     ctx.fillStyle = stroke.color;
-    drawPFOutline(ctx, getStroke(renderPoints, PF_OPTIONS(stroke.size, stroke.hasRealPressure)), dpr);
+    const liveOutline = getStroke(renderPoints, PF_OPTIONS(stroke.size, stroke.hasRealPressure));
+    drawPFOutline(ctx, liveOutline, dpr);
+
     ctx.restore();
-    lastRenderedPointCountRef.current = pts.length;
+    lastRenderedPointCountRef.current = totalPoints;
   }, []);
 
   const requestRender = useCallback(() => {
@@ -369,50 +375,56 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   const onPointerUp = (e) => {
-    if (!isDrawingRef.current) return;
-    isDrawingRef.current = false;
-    if (!currentStrokeRef.current) return;
+    if (!isDrawingRef.current || !currentStrokeRef.current) return;
 
+    isDrawingRef.current = false;
+    const finished = currentStrokeRef.current;
+    if (!finished) return;
+
+    // Final point capture to prevent missing last segments (crucial fix)
     if (e && typeof e.clientX === 'number') {
       const rect = displayCanvasRef.current?.getBoundingClientRect();
       const pt = toCanvasPoint(e, rect);
       if (pt) {
-        const pts = currentStrokeRef.current.points;
+        const pts = finished.points;
         if (pts.length > 0) {
           const last = pts[pts.length - 1];
           const dx = pt.x - last[0], dy = pt.y - last[1];
           if (dx * dx + dy * dy >= MIN_DIST_SQ) {
-            const pressure = currentStrokeRef.current.hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
+            const pressure = finished.hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
             pts.push(toTuple(pt, pressure));
           }
         }
       }
     }
 
-    const finished = currentStrokeRef.current;
     finished.completed = true;
 
     if (!finished.isEraser) {
-      finished.outline = getStroke(finished.points, PF_OPTIONS_FINAL(finished.size, finished.hasRealPressure));
+      finished.outline = getStroke(
+        finished.points, 
+        PF_OPTIONS_FINAL(finished.size, finished.hasRealPressure)
+      );
     }
 
+    // Cleanup session state
     currentStrokeRef.current = null;
-    lastRenderedPointCountRef.current = 0;
+    predictedPointsRef.current = [];
     liveSnapshotRef.current = null;
     bakeCutoffRef.current = 0;
 
-    if (!finished.isEraser) {
-      const bgCanvas = bgCanvasRef.current;
-      if (bgCanvas) {
-        const dpr = window.devicePixelRatio || 1;
-        drawCommittedStroke(bgCanvas.getContext('2d', { desynchronized: true }), finished, dpr);
-      }
+    // Commit to background buffer
+    const bgCanvas = bgCanvasRef.current;
+    if (bgCanvas) {
+      const dpr = window.devicePixelRatio || 1;
+      drawCommittedStroke(bgCanvas.getContext('2d', { desynchronized: true }), finished, dpr);
     }
 
-    const canvas = displayCanvasRef.current;
-    if (canvas) {
-      const ctx = canvas.getContext('2d', { desynchronized: true });
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Clear live overlay
+    const display = displayCanvasRef.current;
+    if (display) {
+      const ctx = display.getContext('2d', { desynchronized: true });
+      ctx.clearRect(0, 0, display.width, display.height);
     }
 
     setUndoStack(prev => [...prev, strokesRef.current]);
