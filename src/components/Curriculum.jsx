@@ -491,26 +491,26 @@ const Curriculum = () => {
                   </button>
                 ))}
               </div>
+
+              {/* Row 3 — Course tabs (Year 11/12 only) */}
+              {courses && (
+                <div className="curriculum-course-tabs" style={{ marginTop: '4px', marginBottom: '8px' }}>
+                  {courses.map(course => (
+                    <button
+                      key={course}
+                      onClick={() => setSelectedCourse(course)}
+                      className={`curriculum-course-tab${selectedCourse === course ? ' curriculum-course-tab--active' : ''}`}
+                    >
+                      {course}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
           {/* ── Main content ── */}
           <div className="curriculum-content">
-            {/* Course sub-tabs (Year 11/12) */}
-            {courses && (
-              <div className="curriculum-course-tabs">
-                {courses.map(course => (
-                  <button
-                    key={course}
-                    onClick={() => setSelectedCourse(course)}
-                    className={`curriculum-course-tab${selectedCourse === course ? ' curriculum-course-tab--active' : ''}`}
-                  >
-                    {course}
-                  </button>
-                ))}
-              </div>
-            )}
-
             {/* Admin tools — collapsed by default */}
             {showAdminTools && (
               <div className="curriculum-admin-tools">
