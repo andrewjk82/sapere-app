@@ -176,12 +176,43 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = 
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
-  
   const { showToast } = useToast();
 
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');
   const [isLocked, setIsLocked] = useState(false);
+  const [isScreenProtected, setIsScreenProtected] = useState(false);
+  
+  // ── Screen Protection Logic (Non-Admins Only) ──
+  useEffect(() => {
+    if (isAdmin === true || !user) return undefined;
+
+    const handleBlur = () => setIsScreenProtected(true);
+    const handleFocus = () => setIsScreenProtected(false);
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') handleBlur();
+      else handleFocus();
+    };
+    const handleContextMenu = (e) => e.preventDefault();
+    const handleCopy = (e) => {
+      e.preventDefault();
+      showToast("Copying is disabled for security.", 'warning');
+    };
+
+    window.addEventListener('blur', handleBlur);
+    window.addEventListener('focus', handleFocus);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('copy', handleCopy);
+
+    return () => {
+      window.removeEventListener('blur', handleBlur);
+      window.removeEventListener('focus', handleFocus);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('copy', handleCopy);
+    };
+  }, [isAdmin, user, showToast]);
   
   // Real-time Version Check
   useEffect(() => {
@@ -636,7 +667,23 @@ function App() {
   };
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${!isAdmin ? 'app-shell--protected' : ''} ${isScreenProtected ? 'app-shell--blurred' : ''}`}>
+      <AnimatePresence>
+        {isScreenProtected && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="protection-overlay"
+          >
+            <AlertCircle size={48} style={{ color: '#ef4444', marginBottom: '20px' }} />
+            <h2>Screen Protected</h2>
+            <p>For security, content is hidden when the browser is inactive.</p>
+            <p style={{ marginTop: '12px', fontSize: '0.9rem' }}>Return to the app to continue.</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <AnimatePresence>
         {showOpeningIntro && openingIntroVisible && (
           <OpeningIntro
