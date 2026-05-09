@@ -117,146 +117,138 @@ export const year9Ch1Questions = [
     solution: 'Step 1: Expand the first part: $12y^2 - 30y$\nStep 2: Expand the second part: $-10y + 25$\nStep 3: Combine: $12y^2 - 30y - 10y + 25$\nStep 4: Simplify like terms: $12y^2 - 40y + 25$'
   },
 
-  // --- SECTION 4: APPLICATIONS & SUB-QUESTIONS (Q12, Q19) ---
+  // --- SECTION 5: BINOMIAL EXPANSION (Ref Image Q8) ---
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1d', topicCode: '1D', topicTitle: 'Applications of Algebra',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'medium', isManual: true,
-    question: 'A rectangular field has length $L = 4x - 1$ and width $W = 3$. Find the perimeter.',
-    options: ['$8x + 4$', '$8x - 2$', '$12x - 3$', '$4x + 2$'],
-    answer: '0',
-    solution: 'Step 1: Formula $P = 2(L + W)$.\n$$P = 2((4x - 1) + 3)$$\nStep 2: Simplify brackets: $2(4x + 2)$\nStep 3: Expand: $8x + 4$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1d', topicCode: '1D', topicTitle: 'Applications of Algebra',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'A rectangular field has length $L = 4x - 1$ and width $W = 3$. Find the area.',
-    answer: '12x - 3',
-    solution: 'Step 1: Formula $A = L \\times W$.\n$$A = 3 \\times (4x - 1)$$\nStep 2: Expand: $12x - 3$'
+    question: 'Expand and collect like terms: $(x + 3)(x + 5)$',
+    answer: 'x^2 + 8x + 15',
+    solution: 'Step 1: Use FOIL (First, Outside, Inside, Last).\n$$x \\times x + x \\times 5 + 3 \\times x + 3 \\times 5$$\nStep 2: Simplify each term.\n$$x^2 + 5x + 3x + 15$$\nStep 3: Collect like terms.\n$$x^2 + 8x + 15$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1d', topicCode: '1D', topicTitle: 'Applications of Algebra',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Expand and collect like terms: $(a - 6)(a - 4)$',
+    answer: 'a^2 - 10a + 24',
+    solution: 'Step 1: Multiply the terms.\n$$a \\times a + a \\times (-4) - 6 \\times a - 6 \\times (-4)$$\nStep 2: Simplify.\n$$a^2 - 4a - 6a + 24$$\nStep 3: Collect like terms.\n$$a^2 - 10a + 24$$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
     year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'A number $x$ is doubled, and then $5$ is added. The final result is $17$. Which equation matches this?',
-    options: ['$2x + 5 = 17$', '$2(x + 5) = 17$', '$x/2 + 5 = 17$', '$5x + 2 = 17$'],
+    question: 'Expand and simplify: $(3x + 2)(2x + 4)$',
+    options: ['$6x^2 + 16x + 8$', '$6x^2 + 10x + 8$', '$5x^2 + 16x + 8$', '$6x^2 + 16x + 6$'],
     answer: '0',
-    solution: 'Step 1: "Number doubled" $\\rightarrow 2x$\nStep 2: "Then $5$ added" $\\rightarrow 2x + 5$\nStep 3: "Result is $17$" $\\rightarrow = 17$\nResult: $2x + 5 = 17$'
+    solution: 'Step 1: FOIL method.\n$$3x(2x) + 3x(4) + 2(2x) + 2(4)$$\nStep 2: Multiply terms.\n$$6x^2 + 12x + 4x + 8$$\nStep 3: Combine $x$ terms.\n$$6x^2 + 16x + 8$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1d', topicCode: '1D', topicTitle: 'Applications of Algebra',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Solve for $x$ in the equation: $2x + 5 = 17$',
-    answer: '6',
-    solution: 'Step 1: Subtract $5$ from both sides: $2x = 12$\nStep 2: Divide by $2$: $x = 6$'
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
+    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Expand and simplify: $(4a - 1)(5a + 3)$',
+    options: ['$20a^2 + 7a - 3$', '$20a^2 + 13a - 3$', '$20a^2 - 7a - 3$', '$20a^2 + 7a + 3$'],
+    answer: '0',
+    solution: 'Step 1: FOIL.\n$$4a(5a) + 4a(3) - 1(5a) - 1(3)$$\nStep 2: Simplify.\n$$20a^2 + 12a - 5a - 3$$\nStep 3: Combine terms.\n$$20a^2 + 7a - 3$$'
   },
 
-  // --- ADDING MORE VARIATIONS TO REACH 35+ QUESTIONS ---
+  // --- SECTION 6: PERFECT SQUARES (Ref Image Q9) ---
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1a', topicCode: '1A', topicTitle: 'Evaluating Expressions',
-    year: 'Year 9', type: 'short_answer', difficulty: 'easy', isManual: true,
-    question: 'Evaluate $5a - 2b$ if $a = 4$ and $b = 3$.',
-    answer: '14',
-    solution: '$$5(4) - 2(3) = 20 - 6 = 14$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1a', topicCode: '1A', topicTitle: 'Evaluating Expressions',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Evaluate $x^2 + 5$ if $x = -3$.',
-    answer: '14',
-    solution: '$$(-3)^2 + 5 = 9 + 5 = 14$$'
+    question: 'Expand: $(x + 8)^2$',
+    answer: 'x^2 + 16x + 64',
+    solution: 'Step 1: Use the identity $(a + b)^2 = a^2 + 2ab + b^2$.\nStep 2: Substitute $a = x$ and $b = 8$.\n$$x^2 + 2(x)(8) + 8^2$$\nStep 3: Simplify.\n$$x^2 + 16x + 64$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions',
-    year: 'Year 9', type: 'short_answer', difficulty: 'easy', isManual: true,
-    question: 'Simplify: $10x + 4y - 3x + 2y$',
-    answer: '7x + 6y',
-    solution: '$$(10x - 3x) + (4y + 2y) = 7x + 6y$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Simplify: $2a^2b + 5a^2b - ab$',
-    answer: '7a^2b - ab',
-    solution: '$$(2 + 5)a^2b - ab = 7a^2b - ab$$'
+    question: 'Expand: $(a - 7)^2$',
+    answer: 'a^2 - 14a + 49',
+    solution: 'Step 1: Use the identity $(a - b)^2 = a^2 - 2ab + b^2$.\nStep 2: Substitute $a = a$ and $b = 7$.\n$$a^2 - 2(a)(7) + 7^2$$\nStep 3: Simplify.\n$$a^2 - 14a + 49$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1c', topicCode: '1C', topicTitle: 'Expanding Brackets',
-    year: 'Year 9', type: 'short_answer', difficulty: 'easy', isManual: true,
-    question: 'Expand: $4(2m - 3)$',
-    answer: '8m - 12',
-    solution: '$$4 \\times 2m + 4 \\times (-3) = 8m - 12$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1c', topicCode: '1C', topicTitle: 'Expanding Brackets',
-    year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
-    question: 'Expand and simplify: $x(x + 5) + 2(x - 3)$',
-    answer: 'x^2 + 7x - 6',
-    solution: 'Step 1: Expand both: $x^2 + 5x + 2x - 6$\nStep 2: Simplify: $x^2 + 7x - 6$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1a', topicCode: '1A', topicTitle: 'Evaluating Expressions',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares',
     year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Evaluate $\\frac{2a + b}{c}$ when $a=5, b=2, c=3$.',
-    options: ['$4$', '$12$', '$6$', '$2$'],
+    question: 'Expand: $(3x - 5y)^2$',
+    options: ['$9x^2 - 30xy + 25y^2$', '$9x^2 + 30xy + 25y^2$', '$9x^2 - 15xy + 25y^2$', '$6x^2 - 30xy + 10y^2$'],
     answer: '0',
-    solution: 'Step 1: Substitute values: $\\frac{2(5) + 2}{3} = \\frac{10 + 2}{3} = \\frac{12}{3} = 4$.'
+    solution: 'Step 1: Apply $(A - B)^2 = A^2 - 2AB + B^2$.\nStep 2: $A = 3x, B = 5y$.\n$$(3x)^2 - 2(3x)(5y) + (5y)^2$$\nStep 3: Calculate each term.\n$$9x^2 - 30xy + 25y^2$$'
   },
+
+  // --- SECTION 7: DIFFERENCE OF TWO SQUARES (Ref Image Q10) ---
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Simplify: $15pq \\div 3p$',
-    answer: '5q',
-    solution: '$$\\frac{15pq}{3p} = \\frac{15}{3} \\times \\frac{p}{p} \\times q = 5 \\times 1 \\times q = 5q$$'
+    question: 'Expand: $(x - 12)(x + 12)$',
+    answer: 'x^2 - 144',
+    solution: 'Step 1: Use the identity $(a - b)(a + b) = a^2 - b^2$.\nStep 2: $a = x, b = 12$.\n$$x^2 - 12^2$$\nStep 3: Simplify.\n$$x^2 - 144$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions',
-    year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
-    question: 'Simplify: $4x^2 \\times 3x^3$',
-    answer: '12x^5',
-    solution: 'Multiply coefficients and add exponents: $4 \\times 3 = 12$, $x^{2+3} = x^5$. Result: $12x^5$.'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1c', topicCode: '1C', topicTitle: 'Expanding Brackets',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand: $x(2x - 7)$',
-    answer: '2x^2 - 7x',
-    solution: '$$x \\times 2x + x \\times (-7) = 2x^2 - 7x$$'
+    question: 'Expand: $(4a + 5)(4a - 5)$',
+    answer: '16a^2 - 25',
+    solution: 'Step 1: Identity $(A+B)(A-B) = A^2 - B^2$.\nStep 2: $A = 4a, B = 5$.\n$$(4a)^2 - 5^2$$\nStep 3: Simplify.\n$$16a^2 - 25$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1d', topicCode: '1D', topicTitle: 'Applications of Algebra',
-    year: 'Year 9', type: 'short_answer', difficulty: 'easy', isManual: true,
-    question: 'Write an expression for "the sum of $x$ and $y$, divided by $2$".',
-    answer: '(x + y) / 2',
-    solution: 'Sum of $x$ and $y$ is $x + y$. Divided by $2$ is $\\frac{x + y}{2}$.'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1a', topicCode: '1A', topicTitle: 'Evaluating Expressions',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Evaluate $3(m + n)$ if $m = 1.5$ and $n = 2.5$.',
-    answer: '12',
-    solution: '$$3(1.5 + 2.5) = 3(4) = 12$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions',
-    year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
-    question: 'Simplify: $12ab^2 \\div 4ab$',
-    answer: '3b',
-    solution: '$$\\frac{12}{4} = 3, \\frac{a}{a} = 1, \\frac{b^2}{b} = b. \\text{ Result: } 3b$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1c', topicCode: '1C', topicTitle: 'Expanding Brackets',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand and simplify: $3(x + 4) - 2(x + 1)$',
-    answer: 'x + 10',
-    solution: 'Step 1: $3x + 12 - 2x - 2$\nStep 2: $(3x - 2x) + (12 - 2) = x + 10$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1d', topicCode: '1D', topicTitle: 'Applications of Algebra',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares',
     year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'The cost of $5$ apples and $2$ bananas is $C = 5a + 2b$. If $a = $0.80 and $b = $1.20, find $C$.',
-    options: ['$6.40$', '$5.20$', '$7.00$', '$4.80$'],
+    question: 'Expand: $(7x - 3y)(7x + 3y)$',
+    options: ['$49x^2 - 9y^2$', '$49x^2 + 9y^2$', '$14x^2 - 6y^2$', '$49x^2 - 21xy - 9y^2$'],
     answer: '0',
-    solution: '$$5(0.80) + 2(1.20) = 4.00 + 2.40 = 6.40$$'
-  }
+    solution: 'Step 1: Difference of two squares.\nStep 2: $(7x)^2 - (3y)^2$\nStep 3: Result is $49x^2 - 9y^2$.'
+  },
+
+  // --- SECTION 8: ADVANCED EXPANSION (Ref Image Q11, Q12) ---
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion',
+    year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'Expand and collect like terms: $(2x + y)(3x - 2y)$',
+    answer: '6x^2 - xy - 2y^2',
+    solution: 'Step 1: FOIL.\n$$2x(3x) - 2x(2y) + y(3x) - y(2y)$$\nStep 2: Multiply.\n$$6x^2 - 4xy + 3xy - 2y^2$$\nStep 3: Combine middle terms.\n$$6x^2 - xy - 2y^2$$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion',
+    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Expand and simplify: $(\\frac{x}{2} + 3)(\\frac{x}{2} - 3)$',
+    options: ['$x^2/4 - 9$', '$x^2/4 + 9$', '$x^2/2 - 9$', '$x/4 - 9$'],
+    answer: '0',
+    solution: 'Step 1: Difference of two squares.\nStep 2: $(\\frac{x}{2})^2 - 3^2$\nStep 3: Simplify.\n$$\\frac{x^2}{4} - 9$$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion',
+    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Expand: $(\\frac{a}{3} + 1)(\\frac{a}{2} - 4)$',
+    options: ['$a^2/6 - 5a/6 - 4$', '$a^2/6 - 4a/3 + a/2 - 4$', '$a^2/5 - 4$', '$a^2/6 + 5a/6 - 4$'],
+    answer: '0',
+    solution: 'Step 1: Multiply terms.\n$$\\frac{a}{3} \\times \\frac{a}{2} + \\frac{a}{3} \\times (-4) + 1 \\times \\frac{a}{2} + 1 \\times (-4)$$\nStep 2: Simplify.\n$$\\frac{a^2}{6} - \\frac{4a}{3} + \\frac{a}{2} - 4$$\nStep 3: Combine $\\frac{a}{2} - \\frac{4a}{3} = \\frac{3a-8a}{6} = -\\frac{5a}{6}$.\nResult: $\\frac{a^2}{6} - \\frac{5a}{6} - 4$'
+  },
+
+  // --- MANY MORE VARIATIONS TO ENSURE "ALL QUESTIONS" FROM IMAGE ARE COVERED ---
+  // Q8 Variations
+  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(p + 4)(p + 7)$', answer: 'p^2 + 11p + 28', solution: 'FOIL: $p^2 + 7p + 4p + 28 = p^2 + 11p + 28$' },
+  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(m - 3)(m - 10)$', answer: 'm^2 - 13m + 30', solution: 'FOIL: $m^2 - 10m - 3m + 30 = m^2 - 13m + 30$' },
+  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true, question: 'Expand: $(3k + 1)(2k - 5)$', answer: '6k^2 - 13k - 5', solution: 'FOIL: $6k^2 - 15k + 2k - 5 = 6k^2 - 13k - 5$' },
+  
+  // Q9 Variations
+  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(2y + 3)^2$', answer: '4y^2 + 12y + 9', solution: '$(2y)^2 + 2(2y)(3) + 3^2 = 4y^2 + 12y + 9$' },
+  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(x - 10)^2$', answer: 'x^2 - 20x + 100', solution: '$x^2 - 2(x)(10) + 10^2 = x^2 - 20x + 100$' },
+  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true, question: 'Expand: $(5a + 2b)^2$', answer: '25a^2 + 20ab + 4b^2', solution: '$(5a)^2 + 2(5a)(2b) + (2b)^2 = 25a^2 + 20ab + 4b^2$' },
+  
+  // Q10 Variations
+  { chapterId: 'y9-1', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(3z - 4)(3z + 4)$', answer: '9z^2 - 16', solution: '$(3z)^2 - 4^2 = 9z^2 - 16$' },
+  { chapterId: 'y9-1', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(10 - x)(10 + x)$', answer: '100 - x^2', solution: '$10^2 - x^2 = 100 - x^2$' },
+  
+  // Q11/Q12 Variations
+  { chapterId: 'y9-1', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true, question: 'Expand: $(3a + 2b)(a - 4b)$', answer: '3a^2 - 10ab - 8b^2', solution: 'FOIL: $3a^2 - 12ab + 2ab - 8b^2 = 3a^2 - 10ab - 8b^2$' },
+  { chapterId: 'y9-1', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion', year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true, question: 'Expand: $(\\frac{x}{4} + 2)(\\frac{x}{4} - 2)$', options: ['$x^2/16 - 4$', '$x^2/8 - 4$', '$x^2/16 + 4$', '$x/16 - 4$'], answer: '0', solution: 'Identity: $(\\frac{x}{4})^2 - 2^2 = \\frac{x^2}{16} - 4$' },
+  
+  // SECTION 1-4 AGAIN (from previous images)
+  { chapterId: 'y9-1', topicId: 'y9-1a', topicCode: '1A', topicTitle: 'Evaluating Expressions', year: 'Year 9', type: 'short_answer', difficulty: 'easy', question: 'Evaluate $7x - 4$ when $x = 5$.', answer: '31', solution: '$7(5) - 4 = 35 - 4 = 31$' },
+  { chapterId: 'y9-1', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions', year: 'Year 9', type: 'short_answer', difficulty: 'medium', question: 'Simplify: $3ab + 2ba - a$', answer: '5ab - a', solution: '$3ab$ and $2ba$ are like terms. $3ab + 2ab = 5ab$. Result: $5ab - a$' },
+  
+  // MORE TO ENSURE A LARGE POOL
+  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'medium', question: 'Expand: $(y + 6)(y - 5)$', answer: 'y^2 + y - 30', solution: '$y^2 - 5y + 6y - 30 = y^2 + y - 30$' },
+  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', question: 'Expand: $(2n - 1)^2$', answer: '4n^2 - 4n + 1', solution: '$(2n)^2 - 2(2n)(1) + 1^2 = 4n^2 - 4n + 1$' },
+  { chapterId: 'y9-1', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares', year: 'Year 9', type: 'short_answer', difficulty: 'hard', question: 'Expand: $(12x - y)(12x + y)$', answer: '144x^2 - y^2', solution: '$(12x)^2 - y^2 = 144x^2 - y^2$' }
 ];
 
 export const importYear9Ch1 = async () => {
