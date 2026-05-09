@@ -117,138 +117,96 @@ export const year9Ch1Questions = [
     solution: 'Step 1: Expand the first part: $12y^2 - 30y$\nStep 2: Expand the second part: $-10y + 25$\nStep 3: Combine: $12y^2 - 30y - 10y + 25$\nStep 4: Simplify like terms: $12y^2 - 40y + 25$'
   },
 
-  // --- SECTION 5: BINOMIAL EXPANSION (Ref Image Q8) ---
+  // --- SECTION 9: GEOMETRIC APPLICATIONS (Ref Image Q1, Q2) ---
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand and collect like terms: $(x + 3)(x + 5)$',
-    answer: 'x^2 + 8x + 15',
-    solution: 'Step 1: Use FOIL (First, Outside, Inside, Last).\n$$x \\times x + x \\times 5 + 3 \\times x + 3 \\times 5$$\nStep 2: Simplify each term.\n$$x^2 + 5x + 3x + 15$$\nStep 3: Collect like terms.\n$$x^2 + 8x + 15$$'
+    question: 'Find the perimeter of a rectangle with length $x + 5$ and width $x$.',
+    answer: '4x + 10',
+    solution: 'Step 1: Perimeter $P = 2 \\times (\\text{Length} + \\text{Width})$.\n$$P = 2 \\times ((x + 5) + x)$$\nStep 2: Combine terms inside brackets.\n$$P = 2 \\times (2x + 5)$$\nStep 3: Expand.\n$$P = 4x + 10$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand and collect like terms: $(a - 6)(a - 4)$',
-    answer: 'a^2 - 10a + 24',
-    solution: 'Step 1: Multiply the terms.\n$$a \\times a + a \\times (-4) - 6 \\times a - 6 \\times (-4)$$\nStep 2: Simplify.\n$$a^2 - 4a - 6a + 24$$\nStep 3: Collect like terms.\n$$a^2 - 10a + 24$$'
+    question: 'Find the perimeter of a rectangle with length $x + 5$ and width $x$, if $x = 3$.',
+    answer: '22',
+    solution: 'Step 1: Substitute $x = 3$ into the perimeter expression $4x + 10$.\n$$4(3) + 10 = 12 + 10 = 22$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Expand and simplify: $(3x + 2)(2x + 4)$',
-    options: ['$6x^2 + 16x + 8$', '$6x^2 + 10x + 8$', '$5x^2 + 16x + 8$', '$6x^2 + 16x + 6$'],
-    answer: '0',
-    solution: 'Step 1: FOIL method.\n$$3x(2x) + 3x(4) + 2(2x) + 2(4)$$\nStep 2: Multiply terms.\n$$6x^2 + 12x + 4x + 8$$\nStep 3: Combine $x$ terms.\n$$6x^2 + 16x + 8$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Expand and simplify: $(4a - 1)(5a + 3)$',
-    options: ['$20a^2 + 7a - 3$', '$20a^2 + 13a - 3$', '$20a^2 - 7a - 3$', '$20a^2 + 7a + 3$'],
-    answer: '0',
-    solution: 'Step 1: FOIL.\n$$4a(5a) + 4a(3) - 1(5a) - 1(3)$$\nStep 2: Simplify.\n$$20a^2 + 12a - 5a - 3$$\nStep 3: Combine terms.\n$$20a^2 + 7a - 3$$'
-  },
-
-  // --- SECTION 6: PERFECT SQUARES (Ref Image Q9) ---
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand: $(x + 8)^2$',
-    answer: 'x^2 + 16x + 64',
-    solution: 'Step 1: Use the identity $(a + b)^2 = a^2 + 2ab + b^2$.\nStep 2: Substitute $a = x$ and $b = 8$.\n$$x^2 + 2(x)(8) + 8^2$$\nStep 3: Simplify.\n$$x^2 + 16x + 64$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand: $(a - 7)^2$',
-    answer: 'a^2 - 14a + 49',
-    solution: 'Step 1: Use the identity $(a - b)^2 = a^2 - 2ab + b^2$.\nStep 2: Substitute $a = a$ and $b = 7$.\n$$a^2 - 2(a)(7) + 7^2$$\nStep 3: Simplify.\n$$a^2 - 14a + 49$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Expand: $(3x - 5y)^2$',
-    options: ['$9x^2 - 30xy + 25y^2$', '$9x^2 + 30xy + 25y^2$', '$9x^2 - 15xy + 25y^2$', '$6x^2 - 30xy + 10y^2$'],
-    answer: '0',
-    solution: 'Step 1: Apply $(A - B)^2 = A^2 - 2AB + B^2$.\nStep 2: $A = 3x, B = 5y$.\n$$(3x)^2 - 2(3x)(5y) + (5y)^2$$\nStep 3: Calculate each term.\n$$9x^2 - 30xy + 25y^2$$'
-  },
-
-  // --- SECTION 7: DIFFERENCE OF TWO SQUARES (Ref Image Q10) ---
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand: $(x - 12)(x + 12)$',
-    answer: 'x^2 - 144',
-    solution: 'Step 1: Use the identity $(a - b)(a + b) = a^2 - b^2$.\nStep 2: $a = x, b = 12$.\n$$x^2 - 12^2$$\nStep 3: Simplify.\n$$x^2 - 144$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares',
-    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
-    question: 'Expand: $(4a + 5)(4a - 5)$',
-    answer: '16a^2 - 25',
-    solution: 'Step 1: Identity $(A+B)(A-B) = A^2 - B^2$.\nStep 2: $A = 4a, B = 5$.\n$$(4a)^2 - 5^2$$\nStep 3: Simplify.\n$$16a^2 - 25$$'
-  },
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Expand: $(7x - 3y)(7x + 3y)$',
-    options: ['$49x^2 - 9y^2$', '$49x^2 + 9y^2$', '$14x^2 - 6y^2$', '$49x^2 - 21xy - 9y^2$'],
-    answer: '0',
-    solution: 'Step 1: Difference of two squares.\nStep 2: $(7x)^2 - (3y)^2$\nStep 3: Result is $49x^2 - 9y^2$.'
-  },
-
-  // --- SECTION 8: ADVANCED EXPANSION (Ref Image Q11, Q12) ---
-  {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
-    question: 'Expand and collect like terms: $(2x + y)(3x - 2y)$',
-    answer: '6x^2 - xy - 2y^2',
-    solution: 'Step 1: FOIL.\n$$2x(3x) - 2x(2y) + y(3x) - y(2y)$$\nStep 2: Multiply.\n$$6x^2 - 4xy + 3xy - 2y^2$$\nStep 3: Combine middle terms.\n$$6x^2 - xy - 2y^2$$'
+    question: 'Find the value of $x$ if the perimeter of a rectangle with length $x+5$ and width $x$ is $50$ cm.',
+    answer: '10',
+    solution: 'Step 1: Set up the equation $4x + 10 = 50$.\nStep 2: Subtract $10$ from both sides: $4x = 40$.\nStep 3: Divide by $4$: $x = 10$.'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion',
-    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Expand and simplify: $(\\frac{x}{2} + 3)(\\frac{x}{2} - 3)$',
-    options: ['$x^2/4 - 9$', '$x^2/4 + 9$', '$x^2/2 - 9$', '$x/4 - 9$'],
-    answer: '0',
-    solution: 'Step 1: Difference of two squares.\nStep 2: $(\\frac{x}{2})^2 - 3^2$\nStep 3: Simplify.\n$$\\frac{x^2}{4} - 9$$'
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Find the area of a rectangle with length $x + 5$ and width $x$ in terms of $x$.',
+    answer: 'x^2 + 5x',
+    solution: 'Step 1: Area $A = \\text{Length} \\times \\text{Width}$.\n$$A = (x + 5) \\times x$$\nStep 2: Expand the bracket.\n$$A = x^2 + 5x$$'
   },
   {
-    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion',
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
     year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
-    question: 'Expand: $(\\frac{a}{3} + 1)(\\frac{a}{2} - 4)$',
-    options: ['$a^2/6 - 5a/6 - 4$', '$a^2/6 - 4a/3 + a/2 - 4$', '$a^2/5 - 4$', '$a^2/6 + 5a/6 - 4$'],
+    question: 'A rectangle has width $x+2$ and length $3x+4$. If each side is increased by 50%, what is the new length?',
+    options: ['$4.5x + 6$', '$4.5x + 4$', '$3x + 9$', '$3x + 6$'],
     answer: '0',
-    solution: 'Step 1: Multiply terms.\n$$\\frac{a}{3} \\times \\frac{a}{2} + \\frac{a}{3} \\times (-4) + 1 \\times \\frac{a}{2} + 1 \\times (-4)$$\nStep 2: Simplify.\n$$\\frac{a^2}{6} - \\frac{4a}{3} + \\frac{a}{2} - 4$$\nStep 3: Combine $\\frac{a}{2} - \\frac{4a}{3} = \\frac{3a-8a}{6} = -\\frac{5a}{6}$.\nResult: $\\frac{a^2}{6} - \\frac{5a}{6} - 4$'
+    solution: 'Step 1: "Increased by 50%" means multiplying by $1.5$.\nStep 2: New Length $= 1.5 \\times (3x + 4)$.\nStep 3: Expand: $4.5x + 6$.'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1i', topicCode: '1I', topicTitle: 'Geometric Applications',
+    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'A rectangle has width $x+2$ and length $3x+4$. If each side is increased by 50%, what is the new area?',
+    options: ['$2.25(3x^2 + 10x + 8)$', '$1.5(3x^2 + 10x + 8)$', '$3x^2 + 10x + 8$', '$4.5x^2 + 6$'],
+    answer: '0',
+    solution: 'Step 1: Original Area $= (x+2)(3x+4) = 3x^2 + 4x + 6x + 8 = 3x^2 + 10x + 8$.\nStep 2: Scale factor for area is $1.5^2 = 2.25$.\nStep 3: New Area $= 2.25 \\times (3x^2 + 10x + 8)$.'
   },
 
-  // --- MANY MORE VARIATIONS TO ENSURE "ALL QUESTIONS" FROM IMAGE ARE COVERED ---
-  // Q8 Variations
-  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(p + 4)(p + 7)$', answer: 'p^2 + 11p + 28', solution: 'FOIL: $p^2 + 7p + 4p + 28 = p^2 + 11p + 28$' },
-  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(m - 3)(m - 10)$', answer: 'm^2 - 13m + 30', solution: 'FOIL: $m^2 - 10m - 3m + 30 = m^2 - 13m + 30$' },
-  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true, question: 'Expand: $(3k + 1)(2k - 5)$', answer: '6k^2 - 13k - 5', solution: 'FOIL: $6k^2 - 15k + 2k - 5 = 6k^2 - 13k - 5$' },
-  
-  // Q9 Variations
-  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(2y + 3)^2$', answer: '4y^2 + 12y + 9', solution: '$(2y)^2 + 2(2y)(3) + 3^2 = 4y^2 + 12y + 9$' },
-  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(x - 10)^2$', answer: 'x^2 - 20x + 100', solution: '$x^2 - 2(x)(10) + 10^2 = x^2 - 20x + 100$' },
-  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true, question: 'Expand: $(5a + 2b)^2$', answer: '25a^2 + 20ab + 4b^2', solution: '$(5a)^2 + 2(5a)(2b) + (2b)^2 = 25a^2 + 20ab + 4b^2$' },
-  
-  // Q10 Variations
-  { chapterId: 'y9-1', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(3z - 4)(3z + 4)$', answer: '9z^2 - 16', solution: '$(3z)^2 - 4^2 = 9z^2 - 16$' },
-  { chapterId: 'y9-1', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true, question: 'Expand: $(10 - x)(10 + x)$', answer: '100 - x^2', solution: '$10^2 - x^2 = 100 - x^2$' },
-  
-  // Q11/Q12 Variations
-  { chapterId: 'y9-1', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true, question: 'Expand: $(3a + 2b)(a - 4b)$', answer: '3a^2 - 10ab - 8b^2', solution: 'FOIL: $3a^2 - 12ab + 2ab - 8b^2 = 3a^2 - 10ab - 8b^2$' },
-  { chapterId: 'y9-1', topicId: 'y9-1h', topicCode: '1H', topicTitle: 'Advanced Expansion', year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true, question: 'Expand: $(\\frac{x}{4} + 2)(\\frac{x}{4} - 2)$', options: ['$x^2/16 - 4$', '$x^2/8 - 4$', '$x^2/16 + 4$', '$x/16 - 4$'], answer: '0', solution: 'Identity: $(\\frac{x}{4})^2 - 2^2 = \\frac{x^2}{16} - 4$' },
-  
-  // SECTION 1-4 AGAIN (from previous images)
-  { chapterId: 'y9-1', topicId: 'y9-1a', topicCode: '1A', topicTitle: 'Evaluating Expressions', year: 'Year 9', type: 'short_answer', difficulty: 'easy', question: 'Evaluate $7x - 4$ when $x = 5$.', answer: '31', solution: '$7(5) - 4 = 35 - 4 = 31$' },
-  { chapterId: 'y9-1', topicId: 'y9-1b', topicCode: '1B', topicTitle: 'Simplifying Expressions', year: 'Year 9', type: 'short_answer', difficulty: 'medium', question: 'Simplify: $3ab + 2ba - a$', answer: '5ab - a', solution: '$3ab$ and $2ba$ are like terms. $3ab + 2ab = 5ab$. Result: $5ab - a$' },
-  
-  // MORE TO ENSURE A LARGE POOL
-  { chapterId: 'y9-1', topicId: 'y9-1e', topicCode: '1E', topicTitle: 'Binomial Expansion', year: 'Year 9', type: 'short_answer', difficulty: 'medium', question: 'Expand: $(y + 6)(y - 5)$', answer: 'y^2 + y - 30', solution: '$y^2 - 5y + 6y - 30 = y^2 + y - 30$' },
-  { chapterId: 'y9-1', topicId: 'y9-1f', topicCode: '1F', topicTitle: 'Perfect Squares', year: 'Year 9', type: 'short_answer', difficulty: 'medium', question: 'Expand: $(2n - 1)^2$', answer: '4n^2 - 4n + 1', solution: '$(2n)^2 - 2(2n)(1) + 1^2 = 4n^2 - 4n + 1$' },
-  { chapterId: 'y9-1', topicId: 'y9-1g', topicCode: '1G', topicTitle: 'Difference of Two Squares', year: 'Year 9', type: 'short_answer', difficulty: 'hard', question: 'Expand: $(12x - y)(12x + y)$', answer: '144x^2 - y^2', solution: '$(12x)^2 - y^2 = 144x^2 - y^2$' }
+  // --- SECTION 10: NUMBER PATTERNS (Ref Image Q3, Q4, Q5) ---
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1j', topicCode: '1J', topicTitle: 'Number Patterns',
+    year: 'Year 9', type: 'multiple_choice', difficulty: 'hard', isManual: true,
+    question: 'Expand the expression: $(a + b + c)(x + y + z)$',
+    options: ['$ax+ay+az+bx+by+bz+cx+cy+cz$', '$ax+by+cz$', '$a(x+y+z)+b(x+y+z)+c$', '$3(x+y+z)$'],
+    answer: '0',
+    solution: 'Each term in the first bracket must multiply every term in the second bracket. There are $3 \\times 3 = 9$ terms total.'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1j', topicCode: '1J', topicTitle: 'Number Patterns',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Consider 4 consecutive whole numbers: $n, n+1, n+2, n+3$. What is the product of the outer pair?',
+    answer: 'n^2 + 3n',
+    solution: 'Outer pair: $n$ and $n+3$.\nProduct: $n(n+3) = n^2 + 3n$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1j', topicCode: '1J', topicTitle: 'Number Patterns',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Consider 4 consecutive whole numbers: $n, n+1, n+2, n+3$. What is the product of the inner pair?',
+    answer: 'n^2 + 3n + 2',
+    solution: 'Inner pair: $n+1$ and $n+2$.\nProduct: $(n+1)(n+2) = n^2 + 2n + n + 2 = n^2 + 3n + 2$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1j', topicCode: '1J', topicTitle: 'Number Patterns',
+    year: 'Year 9', type: 'short_answer', difficulty: 'hard', isManual: true,
+    question: 'What is the difference between the inner product $(n^2+3n+2)$ and the outer product $(n^2+3n)$ for any 4 consecutive whole numbers?',
+    answer: '2',
+    solution: 'Difference: $(n^2+3n+2) - (n^2+3n) = 2$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1j', topicCode: '1J', topicTitle: 'Number Patterns',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Consider 4 consecutive even numbers: $n, n+2, n+4, n+6$. What is the product of the outer pair?',
+    answer: 'n^2 + 6n',
+    solution: 'Outer pair: $n$ and $n+6$. Product: $n(n+6) = n^2 + 6n$'
+  },
+  {
+    chapterId: 'y9-1', chapterTitle: 'Chapter 1: Algebra', topicId: 'y9-1j', topicCode: '1J', topicTitle: 'Number Patterns',
+    year: 'Year 9', type: 'short_answer', difficulty: 'medium', isManual: true,
+    question: 'Consider 4 consecutive even numbers: $n, n+2, n+4, n+6$. What is the product of the inner pair?',
+    answer: 'n^2 + 6n + 8',
+    solution: 'Inner pair: $n+2$ and $n+4$. Product: $(n+2)(n+4) = n^2 + 6n + 8$'
+  }
 ];
 
 export const importYear9Ch1 = async () => {
