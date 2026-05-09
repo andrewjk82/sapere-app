@@ -413,16 +413,39 @@ const Curriculum = () => {
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
   return (
-    <div className="curriculum-page">
+    <div className="app-page">
+      <div className="app-page__header">
+        <div className="app-page__title">
+          <h2>Curriculum</h2>
+          <p>Explore learning paths, manage chapters, and sync questions across all year levels.</p>
+        </div>
+        {isAdmin && (
+          <div className="app-page__actions" style={{ display: 'flex', gap: '8px' }}>
+            <button
+              onClick={() => setShowAdminTools(v => !v)}
+              className="app-button app-button--secondary"
+              title="Admin tools"
+              style={{ background: showAdminTools ? 'rgba(99, 102, 241, 0.12)' : undefined }}
+            >
+              <Layers size={17} />
+              <span>Admin Tools</span>
+            </button>
+            <button
+              onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
+              className="app-button app-button--primary"
+              title="Add chapter"
+            >
+              <Plus size={17} />
+              <span>Add Chapter</span>
+            </button>
+          </div>
+        )}
+      </div>
+
       {!isAdmin ? (
         <LearningPath profile={profile} />
       ) : (
         <>
-          {/* ── Hero Section ── */}
-          <div className="curriculum-hero">
-            <h1 className="curriculum-hero__title">Curriculum</h1>
-          </div>
-
           {/* ── Sticky top bar ── */}
           <div className="curriculum-topbar">
             <div className="curriculum-topbar__inner">
@@ -452,21 +475,6 @@ const Curriculum = () => {
                       />
                     )}
                   </div>
-                  <button
-                    onClick={() => setShowAdminTools(v => !v)}
-                    className="curriculum-icon-btn"
-                    title="Admin tools"
-                    style={{ background: showAdminTools ? 'rgba(99, 102, 241, 0.18)' : undefined }}
-                  >
-                    <Layers size={17} />
-                  </button>
-                  <button
-                    onClick={() => setEditingChapter({ mode: 'add', chapter: { title: '', modules: 10 } })}
-                    className="curriculum-icon-btn curriculum-icon-btn--primary"
-                    title="Add chapter"
-                  >
-                    <Plus size={17} />
-                  </button>
                 </div>
               </div>
 
