@@ -397,32 +397,6 @@ function App() {
     return () => window.clearTimeout(timer);
   }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
 
-<<<<<<< HEAD
-  useEffect(() => {
-    if (!user?.uid) return undefined;
-    const unsubscribe = studentService.subscribeToStudents(
-      user.uid,
-      (data) => {
-        setStudents(data);
-        setLoadError('');
-        setLoading(false);
-      },
-      (err) => {
-        setStudents([]);
-        setLoading(false);
-        setLoadError(
-          'We couldn’t load your students. This usually means Firestore is disabled or your Firestore security rules are blocking reads.',
-        );
-        console.error(err);
-      },
-      isAdmin
-    );
-    return () => unsubscribe();
-    // user?.uid is the stable identity; the full `user` object reference
-    // changes on every Firebase token refresh which would needlessly
-    // re-attach the listener and burn reads.
-  }, [user?.uid, isAdmin]);
-=======
   const handleRefreshStudents = useCallback(async (silent = false) => {
     if (!user) return;
     if (!silent) setLoading(true);
@@ -438,7 +412,7 @@ function App() {
       if (!silent) setLoading(false);
     }
   }, [user, isAdmin]);
->>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
+
 
   useEffect(() => {
     if (user) {

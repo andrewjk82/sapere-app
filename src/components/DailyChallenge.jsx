@@ -380,19 +380,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     return Math.round((Number(earnedScore) || 0) / safeTotal * getChallengeMaxXp(type));
   };
 
-<<<<<<< HEAD
   useEffect(() => {
     if (!user?.uid) return;
 
     // ── Leaderboard: one-time fetch, NOT a realtime listener ──
-    // The previous implementation onSnapshot'd the entire `users` AND
-    // `students` collections — every doc update from any user fired the
-    // listener and counted toward the read quota. With ~50 users that's
-    // 100 reads on every mount + N reads on every user update from
-    // anywhere in the system. This is the single biggest cause of
-    // RESOURCE_EXHAUSTED errors. Switched to a one-shot getDocs and a
-    // light periodic refresh so the leaderboard reads scale with sessions,
-    // not with user activity.
     let cancelled = false;
 
     const fetchLeaderboard = async () => {
@@ -428,27 +419,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     };
   }, [user?.uid]);
 
-  // Insights now derive from `history` (already populated by the consolidated
-  // realtime listener below). No duplicate daily_stats subscription needed —
-  // every extra listener doubles Firestore read consumption.
-=======
-  // Fetch student daily stats for insights
-  useEffect(() => {
-    if (!user?.uid) return;
-    const unsub = onSnapshot(
-      collection(db, 'users', user.uid, 'daily_stats'),
-      (snap) => {
-        const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        setDailyStats(stats);
-      },
-      (err) => {
-        console.warn('daily_stats onSnapshot permission error (non-fatal):', err.code);
-        // Silently fail - insights just won't show
-      }
-    );
-    return () => unsub();
-  }, [user?.uid]);
->>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
 
   // Anti-Cheat: Detect Focus Loss
   useEffect(() => {
@@ -1636,15 +1606,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                       {selectedChallenge.questions.map((q, idx) => {
                         const result = selectedChallenge.answerResults?.[idx];
                         const userAnswer = result?.selectedAnswer ?? (selectedChallenge.userAnswers ? selectedChallenge.userAnswers[idx] : null);
-<<<<<<< HEAD
                         // Use the question from the saved challenge itself, NOT the current
                         // component `questions` state (which is empty when reviewing past records).
                         const qData = q || questions.find(qq => qq.id === result.questionId);
                         if (!qData) return null;
-=======
-                        const qData = q; // Use the question from the saved historical test
-                        if (!qData) return null; // Safety catch
->>>>>>> d23dddf (Update: Refined UI and stabilized grading pipeline logic)
+
 
                         const isCorrect = typeof result?.correct === 'boolean'
                           ? result.correct
