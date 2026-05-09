@@ -29,11 +29,12 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
     if (!students || students.length === 0) return;
     let cancelled = false;
 
-    // Previously this attached 2 onSnapshot listeners per student (daily + calc),
-    // recreating them whenever the parent array reference changed. With 50
-    // students that's 100 active listeners + a thundering re-attach storm
-    // every time the parent re-rendered. Switched to a single batched
-    // getDoc fetch — completion badges don't need realtime updates.
+    // Single batched fetch instead of 2N realtime listeners. The badges
+    // refresh on mount AND whenever the user returns focus to the page or
+    // tab (focus + visibilitychange) — same pattern Gmail / Slack use.
+    // This gives a "feels live" experience without the cost of 100 long-
+    // lived subscriptions. Reads only happen when the admin is actually
+    // looking at the screen.
     const fetchCompletions = async () => {
       const results = await Promise.allSettled(
         students.map(async (student) => {
@@ -54,8 +55,29 @@ const StudentList = ({ students, onAddStudent, onSelectStudent }) => {
       setCompletionStates(next);
     };
 
-    fetchCompletions();
-    return () => { cancelled = true; };
+    // Throttle: don't refire if the last refresh was less than 5 s ago
+    // (rapid focus/blur shouldn't pile up reads).
+    let lastRefreshAt = 0;
+    const refresh = () => {
+      const now = Date.now();
+      if (now - lastRefreshAt < 5000) return;
+      lastRefreshAt = now;
+      fetchCompletions();
+    };
+
+    const onVisibilityChange = () => {
+      if (!document.hidden) refresh();
+    };
+
+    refresh(); // initial
+    window.addEventListener('focus', refresh);
+    document.addEventListener('visibilitychange', onVisibilityChange);
+
+    return () => {
+      cancelled = true;
+      window.removeEventListener('focus', refresh);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+    };
   }, [studentSig, todayStr]); // signature, not the array ref
   
   const filteredStudents = students.filter(s => {
