@@ -2005,70 +2005,154 @@ const StudentDetail = ({ studentId, onBack }) => {
             />
           </div>
         </div>
-        <div style={styles.card}>
-          <div
-            className="section-title"
-            style={{
-              fontSize: "0.75rem",
-              fontWeight: 800,
-              color: "#94a3b8",
-              marginBottom: "16px",
-            }}
-          >
-            ACADEMIC PROGRESS
-          </div>
-          <div
-            style={{
-              flex: 1,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            {(() => {
-              const currentChapterIds = new Set(chapters.map((ch) => ch.id));
-              const uniqueCompleted = new Set(completedChapters);
-              const completedInCurriculum = Array.from(uniqueCompleted).filter(
-                (id) => currentChapterIds.has(id),
-              );
+        <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+          <div style={{ ...styles.card, flex: "none" }}>
+            <div
+              className="section-title"
+              style={{
+                fontSize: "0.75rem",
+                fontWeight: 800,
+                color: "#94a3b8",
+                marginBottom: "16px",
+              }}
+            >
+              ACADEMIC PROGRESS
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              {(() => {
+                const currentChapterIds = new Set(chapters.map((ch) => ch.id));
+                const uniqueCompleted = new Set(completedChapters);
+                const completedInCurriculum = Array.from(uniqueCompleted).filter(
+                  (id) => currentChapterIds.has(id),
+                );
 
-              const progressPct = Math.round(
-                (completedInCurriculum.length / (chapters.length || 1)) * 100,
-              );
-              const clampedPct = Math.min(progressPct, 100);
+                const progressPct = Math.round(
+                  (completedInCurriculum.length / (chapters.length || 1)) * 100,
+                );
+                const clampedPct = Math.min(progressPct, 100);
 
-              return (
-                <>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      marginBottom: "12px",
-                      fontWeight: 800,
-                    }}
-                  >
-                    <span>Curriculum</span>
-                    <span style={{ color: "#6366f1" }}>{clampedPct}%</span>
-                  </div>
-                  <div
-                    style={{
-                      height: "8px",
-                      background: "#e2e8f0",
-                      borderRadius: "4px",
-                      overflow: "hidden",
-                    }}
-                  >
+                return (
+                  <>
                     <div
                       style={{
-                        width: `${clampedPct}%`,
-                        height: "100%",
-                        background: "#6366f1",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        marginBottom: "12px",
+                        fontWeight: 800,
                       }}
-                    ></div>
-                  </div>
-                </>
-              );
-            })()}
+                    >
+                      <span>Curriculum</span>
+                      <span style={{ color: "#6366f1" }}>{clampedPct}%</span>
+                    </div>
+                    <div
+                      style={{
+                        height: "8px",
+                        background: "#e2e8f0",
+                        borderRadius: "4px",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: `${clampedPct}%`,
+                          height: "100%",
+                          background: "#6366f1",
+                        }}
+                      ></div>
+                    </div>
+                  </>
+                );
+              })()}
+            </div>
+          </div>
+
+          {/* TERM RESULTS CARD */}
+          <div style={{ ...styles.card, flex: "none" }}>
+            <div
+              className="section-title"
+              style={{
+                fontSize: "0.75rem",
+                fontWeight: 800,
+                color: "#94a3b8",
+                marginBottom: "16px",
+              }}
+            >
+              TERM RESULTS & REPORTS
+            </div>
+            
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "20px" }}>
+              {[1, 2, 3, 4].map(term => (
+                <div key={term} style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                  <label style={{ fontSize: "0.7rem", fontWeight: 700, color: "#64748b" }}>Term {term}</label>
+                  <input
+                    type="text"
+                    placeholder="Score"
+                    value={student?.[`term${term}Result`] || ""}
+                    onChange={(e) => handleUpdateCurriculumSetting(`term${term}Result`, e.target.value)}
+                    style={{
+                      padding: "8px 12px",
+                      borderRadius: "8px",
+                      border: "1px solid #e2e8f0",
+                      background: "#f8fafc",
+                      fontSize: "0.85rem",
+                      fontWeight: 600,
+                      color: "#1e293b",
+                      outline: "none",
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+            
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <label style={{ fontSize: "0.7rem", fontWeight: 700, color: "#64748b" }}>Report Card Link (e.g. Google Drive)</label>
+              <input
+                type="url"
+                placeholder="https://..."
+                value={student?.reportCardLink || ""}
+                onChange={(e) => handleUpdateCurriculumSetting("reportCardLink", e.target.value)}
+                style={{
+                  padding: "10px 14px",
+                  borderRadius: "10px",
+                  border: "1px solid #e2e8f0",
+                  background: "#f8fafc",
+                  fontSize: "0.85rem",
+                  color: "#1e293b",
+                  outline: "none",
+                  width: "100%",
+                  boxSizing: "border-box"
+                }}
+              />
+              {student?.reportCardLink && (
+                <a
+                  href={student.reportCardLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    padding: "8px 16px",
+                    background: "#e0e7ff",
+                    color: "#4f46e5",
+                    borderRadius: "8px",
+                    fontSize: "0.8rem",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    marginTop: "4px",
+                    alignSelf: "flex-start",
+                  }}
+                >
+                  <BookOpen size={14} /> View Report
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
