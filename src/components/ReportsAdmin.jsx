@@ -347,8 +347,7 @@ const ReportsAdmin = () => {
     <div className="app-page">
       <div className="app-page__header">
         <div className="app-page__title">
-          <h2 style={{ fontSize: '2.2rem', fontWeight: 900, color: '#1e1b4b' }}>Reports & Review</h2>
-          <p style={{ color: '#64748b', fontSize: '1.1rem', fontWeight: 500 }}>Manage student issues and manual grading tasks.</p>
+          <h2>Reports & Review</h2>
         </div>
         
         <div style={{ display: 'flex', background: '#f1f5f9', padding: '6px', borderRadius: '18px', gap: '4px', marginLeft: 'auto' }}>
