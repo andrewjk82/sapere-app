@@ -290,6 +290,123 @@ export const allQuestions = [
     difficulty: 'medium',
     isManual: true
   },
+  // --- Page 3 Questions (Advanced Algebra) ---
+  // 17. Factorise: Difference of Two Squares (Composite)
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Advanced Algebra',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Factorise the following expression completely:\n$$(4a + 5b)^2 - (2a - 3b)^2$$',
+    options: [
+      '$(6a + 2b)(2a + 8b)$',
+      '$(2a + 8b)(6a + 8b)$',
+      '$(4a + 2b)(4a - 8b)$',
+      '$(6a + 8b)(2a - 2b)$'
+    ],
+    answer: 0,
+    solution: 'We use the difference of two squares formula: $X^2 - Y^2 = (X + Y)(X - Y)$\n\nIn this problem:\n$X = 4a + 5b$\n$Y = 2a - 3b$\n\n1. **Find $(X + Y)$**:\n$$(4a + 5b) + (2a - 3b) = 4a + 2a + 5b - 3b = 6a + 2b$$\n\n2. **Find $(X - Y)$**:\n$$(4a + 5b) - (2a - 3b) = 4a - 2a + 5b + 3b = 2a + 8b$$\n\n3. **Combine**:\n$$(6a + 2b)(2a + 8b)$$',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 18. Factorise: Difference of Two Squares (Composite 2)
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Advanced Algebra',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Factorise the following expression completely:\n$$(5x + 3y)^2 - (4x - y)^2$$',
+    options: [
+      '$(9x + 2y)(x + 4y)$',
+      '$(9x + 4y)(x + 2y)$',
+      '$(x + 4y)(x - 2y)$',
+      '$(9x + 2y)(9x - 2y)$'
+    ],
+    answer: 0,
+    solution: 'Using $X^2 - Y^2 = (X + Y)(X - Y)$:\n$X = 5x + 3y$\n$Y = 4x - y$\n\n1. **$X + Y$**:\n$$(5x + 3y) + (4x - y) = 9x + 2y$$\n\n2. **$X - Y$**:\n$$(5x + 3y) - (4x - y) = 5x - 4x + 3y + y = x + 4y$$\n\n3. **Result**:\n$$(9x + 2y)(x + 4y)$$',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 19. Factorise: Grouping into Perfect Square
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Advanced Algebra',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Factorise completely:\n$$x^2 - 6xy + 9y^2 - 25z^2$$',
+    options: [
+      '$(x - 3y - 5z)(x - 3y + 5z)$',
+      '$(x + 3y - 5z)(x + 3y + 5z)$',
+      '$(x - 3y - 25z)(x - 3y + 25z)$',
+      '$(x - 9y - 5z)(x - 9y + 5z)$'
+    ],
+    answer: 0,
+    solution: '1. **Identify the perfect square trinomial**:\n$$x^2 - 6xy + 9y^2 = (x - 3y)^2$$\n\n2. **Rewrite the expression**:\n$$(x - 3y)^2 - 25z^2$$\n\n3. **Apply difference of squares** ($A^2 - B^2$ where $A = x - 3y$ and $B = 5z$):\n$$(x - 3y - 5z)(x - 3y + 5z)$$',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 20. Expand: Trinomial Square
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Advanced Algebra',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Expand the expression: $$(x + 2y + 4z)^2$$',
+    options: [
+      '$x^2 + 4y^2 + 16z^2 + 4xy + 16yz + 8zx$',
+      '$x^2 + 2y^2 + 4z^2 + 4xy + 8yz + 4zx$',
+      '$x^2 + 4y^2 + 16z^2 + 2xy + 8yz + 4zx$',
+      '$x^2 + 4y^2 + 16z^2 + 4xy + 8yz + 16zx$'
+    ],
+    answer: 0,
+    solution: 'Use the formula $(A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA$\n\nHere $A = x, B = 2y, C = 4z$:\n1. **Squares**: $x^2, (2y)^2 = 4y^2, (4z)^2 = 16z^2$\n2. **Cross-products**:\n   - $2AB = 2(x)(2y) = 4xy$\n   - $2BC = 2(2y)(4z) = 16yz$\n   - $2CA = 2(4z)(x) = 8zx$\n\n**Final expansion**:\n$$x^2 + 4y^2 + 16z^2 + 4xy + 16yz + 8zx$$',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 21. Solve: Complex Equation
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Advanced Algebra',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Solve for $x$:\n$$\\frac{1}{4}(x - 2) - \frac{2}{3}(x - 5) = \frac{1}{6}(x - 3) + \frac{7}{12}$$',
+    options: ['33/7', '31/7', '35/7', '29/7'],
+    answer: 0,
+    solution: '1. **Clear fractions** by multiplying every term by the LCM of 4, 3, 6, and 12, which is **12**:\n$$12 \\cdot \\frac{1}{4}(x - 2) - 12 \\cdot \\frac{2}{3}(x - 5) = 12 \\cdot \\frac{1}{6}(x - 3) + 12 \\cdot \\frac{7}{12}$$\n$$3(x - 2) - 8(x - 5) = 2(x - 3) + 7$$\n\n2. **Expand**:\n$$3x - 6 - 8x + 40 = 2x - 6 + 7$$\n$$-5x + 34 = 2x + 1$$\n\n3. **Solve for $x$**:\n$$34 - 1 = 2x + 5x$$\n$$33 = 7x$$\n$$x = \\frac{33}{7}$$',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 22. Word Problem: Area and Dimensions
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Advanced Algebra',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'The width of a rectangular room is $\\frac{3}{4}$ of its length. If the width were increased by 2m and the length decreased by 2m, the room would become a square. Find the original dimensions of the room.',
+    options: ['Length: 16m, Width: 12m', 'Length: 12m, Width: 9m', 'Length: 20m, Width: 15m', 'Length: 8m, Width: 6m'],
+    answer: 0,
+    solution: '1. Let the length be $L$ and the width be $W$.\n2. Given: $W = \\frac{3}{4}L$\n3. If $W + 2 = L - 2$, the room is a square.\n4. Substitute $W$:\n$$\\frac{3}{4}L + 2 = L - 2$$\n$$4 = L - \\frac{3}{4}L$$\n$$4 = \\frac{1}{4}L$$\n$$L = 16$$\n5. Find $W$: $W = \\frac{3}{4}(16) = 12$\n\nDimensions: Length 16m, Width 12m.',
+    difficulty: 'hard',
+    isManual: true
+  },
   // --- Page 2 Questions ---
   // 11. Logic Puzzle: Number Placement (1-5)
   {
