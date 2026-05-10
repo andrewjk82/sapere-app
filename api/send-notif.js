@@ -165,7 +165,7 @@ export default async function handler(req, res) {
     const GMAIL_USER = process.env.GMAIL_USER;
     const GMAIL_PASS = process.env.GMAIL_PASS;
 
-    if (GMAIL_USER && GMAIL_PASS) {
+    if (GMAIL_USER && GMAIL_PASS && email) {
       const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,

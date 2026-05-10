@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
-import { db } from '../firebase/config';
+import { db, ADMIN_EMAIL } from '../firebase/config';
 import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction, deleteDoc } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
@@ -1209,7 +1209,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              toAdmin: true,
+              email: ADMIN_EMAIL,
               subject: `📝 Review Required: ${gradingEntry.userName}`,
               text: `${gradingEntry.userName} submitted an answer requiring teacher review.\n\nQuestion: "${gradingEntry.questionText.slice(0, 150)}"\nChapter: ${gradingEntry.chapterTitle}\n\nPlease check the grading queue in your dashboard.`,
             })
