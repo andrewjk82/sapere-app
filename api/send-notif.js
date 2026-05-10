@@ -160,10 +160,13 @@ async function findNotificationUser(db, studentId, email) {
 function getAdminDb() {
   try {
     if (!admin.apps.length) {
-      const projectId = process.env.FIREBASE_PROJECT_ID;
+      const projectId = process.env.FIREBASE_PROJECT_ID || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID;
       const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
       const privateKey = process.env.FIREBASE_PRIVATE_KEY;
-      if (!projectId || !clientEmail || !privateKey) return null;
+      if (!projectId || !clientEmail || !privateKey) {
+        console.warn('[send-notif] Missing Firebase credentials (ID, Email, or Key)');
+        return null;
+      }
       admin.initializeApp({
         credential: admin.credential.cert({
           projectId,
@@ -185,21 +188,26 @@ export default async function handler(req, res) {
   }
 
   const { studentId, email, subject, text, html } = req.body;
-  let emailSent = false;
-  let pushResult = { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 };
-  let notificationHistorySaved = false;
-  let matchedBy = 'none';
 
-  // 1. Send email — independent of Firebase Admin
-  try {
-    const GMAIL_USER = process.env.GMAIL_USER;
-    const GMAIL_PASS = process.env.GMAIL_PASS;
-    if (GMAIL_USER && GMAIL_PASS && email) {
+  const db = getAdminDb();
+
+  // Run email and Firebase in parallel — cuts total time roughly in half
+  const emailTask = (async () => {
+    try {
+      const GMAIL_USER = process.env.GMAIL_USER;
+      const GMAIL_PASS = process.env.GMAIL_PASS;
+      if (!GMAIL_USER || !GMAIL_PASS || !email) {
+        if (!GMAIL_USER) console.warn('[send-notif] GMAIL_USER not configured — email skipped');
+        return false;
+      }
       const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: { user: GMAIL_USER, pass: GMAIL_PASS },
+        connectionTimeout: 8000,
+        greetingTimeout: 5000,
+        socketTimeout: 10000,
       });
       await transporter.sendMail({
         from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
@@ -207,28 +215,28 @@ export default async function handler(req, res) {
         subject: subject,
         html: buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`)
       });
-      emailSent = true;
       console.log(`[send-notif] Email sent to ${email}`);
-    } else if (!process.env.GMAIL_USER) {
-      console.warn('[send-notif] GMAIL_USER not configured — email skipped');
+      return true;
+    } catch (err) {
+      console.error('[send-notif] Email error:', err.message);
+      return false;
     }
-  } catch (emailErr) {
-    console.error('[send-notif] Email error:', emailErr.message);
-  }
+  })();
 
-  // 2. Push notification + Firestore history (requires Firebase Admin)
-  const db = getAdminDb();
-  if (!db) {
-    console.warn('[send-notif] Firebase Admin not configured — push and history skipped');
-  } else if (studentId || email) {
+  const firebaseTask = (async () => {
+    const empty = { pushResult: { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 }, notificationHistorySaved: false, matchedBy: 'none' };
+    if (!db) {
+      console.warn('[send-notif] Firebase Admin not configured — push and history skipped');
+      return empty;
+    }
+    if (!studentId && !email) return empty;
     try {
       const lookup = await findNotificationUser(db, studentId, email);
-      matchedBy = lookup.matchedBy;
       const { userRef, userDoc, collection: userCollection } = lookup;
+      const result = { ...empty, matchedBy: lookup.matchedBy };
 
       if (userRef && userDoc?.exists) {
         if (userCollection === 'users') {
-          // Save in-app notification history for registered users
           await userRef.collection('notifications').add({
             title: subject,
             body: text || 'New notification',
@@ -236,23 +244,25 @@ export default async function handler(req, res) {
             read: false,
             type: 'message'
           });
-          notificationHistorySaved = true;
+          result.notificationHistorySaved = true;
 
-          // Send push notification
           const userData = userDoc.data();
-          pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
-          console.log(`[send-notif] Push result for ${studentId || email} (${matchedBy}):`, pushResult);
+          result.pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
+          console.log(`[send-notif] Push result for ${studentId || email} (${result.matchedBy}):`, result.pushResult);
         } else {
-          // Manual student in 'students' collection — email only, no push
-          console.log(`[send-notif] Manual student found in 'students' collection — email only`);
+          console.log(`[send-notif] Manual student in 'students' collection — email only`);
         }
       } else {
         console.warn(`[send-notif] No user found for studentId=${studentId}, email=${email}`);
       }
-    } catch (pushErr) {
-      console.error('[send-notif] Push/history error:', pushErr.message);
+      return result;
+    } catch (err) {
+      console.error('[send-notif] Push/history error:', err.message);
+      return empty;
     }
-  }
+  })();
+
+  const [emailSent, { pushResult, notificationHistorySaved, matchedBy }] = await Promise.all([emailTask, firebaseTask]);
 
   return res.status(200).json({
     success: true,
