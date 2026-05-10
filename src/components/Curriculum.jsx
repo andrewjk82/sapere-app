@@ -18,6 +18,7 @@ import { importYear10Ch1Questions } from '../scripts/importYear10Ch1';
 import { importYear10Ch3 } from '../scripts/importYear10Ch3';
 import { importYear10Ch4 } from '../scripts/importYear10Ch4';
 import { importYear9Ch1 } from '../scripts/importYear9Ch1';
+import { importYear7Ch1 } from '../scripts/importYear7Ch1';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import './curriculum.css';
@@ -303,6 +304,24 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY7Ch1 = async () => {
+    if (!isAdmin || isMigrating) return;
+    setIsMigrating(true);
+    try {
+      const count = await importYear7Ch1();
+      if (count > 0) {
+        showToast(`✅ Successfully added ${count} new questions to Year 7 Chapter 1!`, 'success');
+      } else {
+        showToast('Year 7 Chapter 1 is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 7 Ch1:', error);
+      showToast('Failed to sync Year 7 Chapter 1.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -544,6 +563,9 @@ const Curriculum = () => {
                 </button>
                 <button onClick={handleSyncYear9Ch1} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef9c3', color: '#854d0e', borderColor: '#fde68a' }}>
                   {isMigrating ? 'Syncing…' : '🔄 Sync Y9 Ch1'}
+                </button>
+                <button onClick={handleSyncY7Ch1} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch1'}
                 </button>
                 {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
                   <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
