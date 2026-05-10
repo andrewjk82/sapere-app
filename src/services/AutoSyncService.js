@@ -20,6 +20,12 @@ const syncConfigs = [
     getScript: () => import('../scripts/importYear10Ch3.js'),
     importFnName: 'importYear10Ch3',
   },
+  {
+    chapterId: 'y7-1',
+    name: 'Whole Numbers (Year 7 Ch 1)',
+    getScript: () => import('../scripts/importYear7Ch1.js'),
+    importFnName: 'importYear7Ch1',
+  },
 ];
 
 export const performAutoSync = async (showToast) => {

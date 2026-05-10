@@ -108,34 +108,26 @@ async function sendPushToUser(adminInstance, userRef, userData, title, body) {
   };
 }
 
-// Checks both users (registered, can receive push) and students (manual, email only).
-// Returns which collection the user was found in so the caller can decide what to do.
+// Priority: always try users collection first (they have FCM tokens), then students (email only).
+// A student added manually who later registered via app will have both a students/{manualId}
+// doc and a users/{firebaseUID} doc. We must find the users doc to reach their FCM tokens,
+// even when the caller passes the manual studentId.
 async function findNotificationUser(db, studentId, email) {
-  // 1. Direct ID lookup — try users first, then students
+  const normalizedEmail = String(email || '').trim().toLowerCase();
+  const emailCandidates = normalizedEmail && normalizedEmail !== email
+    ? [email, normalizedEmail].filter(Boolean)
+    : normalizedEmail ? [normalizedEmail] : [];
+
+  // 1. users by direct ID (registered student, studentId === Firebase Auth UID)
   if (studentId) {
     const usersRef = db.collection('users').doc(studentId);
     const usersDoc = await usersRef.get();
     if (usersDoc.exists) {
       return { userRef: usersRef, userDoc: usersDoc, matchedBy: 'studentId', collection: 'users' };
     }
-
-    const studentsRef = db.collection('students').doc(studentId);
-    const studentsDoc = await studentsRef.get();
-    if (studentsDoc.exists) {
-      return { userRef: studentsRef, userDoc: studentsDoc, matchedBy: 'studentId', collection: 'students' };
-    }
   }
 
-  // 2. Email fallback — try users first (they can receive push), then students
-  const normalizedEmail = String(email || '').trim().toLowerCase();
-  if (!normalizedEmail) {
-    return { userRef: null, userDoc: null, matchedBy: 'none', collection: null };
-  }
-
-  const emailCandidates = normalizedEmail === email
-    ? [normalizedEmail]
-    : [email, normalizedEmail].filter(Boolean);
-
+  // 2. users by email — catches manual students who later registered via the app
   for (const candidate of emailCandidates) {
     const snap = await db.collection('users').where('email', '==', candidate).limit(1).get();
     if (!snap.empty) {
@@ -144,6 +136,16 @@ async function findNotificationUser(db, studentId, email) {
     }
   }
 
+  // 3. students by direct ID (manual/unregistered — email only)
+  if (studentId) {
+    const studentsRef = db.collection('students').doc(studentId);
+    const studentsDoc = await studentsRef.get();
+    if (studentsDoc.exists) {
+      return { userRef: studentsRef, userDoc: studentsDoc, matchedBy: 'studentId', collection: 'students' };
+    }
+  }
+
+  // 4. students by email
   for (const candidate of emailCandidates) {
     const snap = await db.collection('students').where('email', '==', candidate).limit(1).get();
     if (!snap.empty) {
