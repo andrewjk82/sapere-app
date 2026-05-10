@@ -198,12 +198,12 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     const unsubId = onSnapshot(qId, (snap) => {
       resultsId = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       mergeResults();
-    });
+    }, (error) => console.warn("Dashboard qId error:", error.message));
 
     const unsubEmail = onSnapshot(qEmail, (snap) => {
       resultsEmail = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       mergeResults();
-    });
+    }, (error) => console.warn("Dashboard qEmail error (expected for non-admins):", error.message));
 
     return () => {
       unsubId();
