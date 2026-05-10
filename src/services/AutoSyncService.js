@@ -26,6 +26,12 @@ const syncConfigs = [
     getScript: () => import('../scripts/importYear7Ch1.js'),
     importFnName: 'importYear7Ch1',
   },
+  {
+    chapterId: 'y7-2',
+    name: 'Factors and Multiples (Year 7 Ch 2)',
+    getScript: () => import('../scripts/importYear7Ch2.js'),
+    importFnName: 'importYear7Ch2',
+  },
 ];
 
 export const performAutoSync = async (showToast) => {

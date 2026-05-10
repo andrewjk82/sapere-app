@@ -338,6 +338,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       });
 
       const data = await response.json().catch(() => ({}));
+      console.log('[send-notif] API response:', JSON.stringify(data, null, 2));
       if (!response.ok) {
         throw new Error(data.error || "Failed to send message");
       }

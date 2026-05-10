@@ -190,8 +190,10 @@ export default async function handler(req, res) {
   }
 
   const { studentId, email, subject, text, html } = req.body;
+  console.log(`[send-notif] Request: studentId=${studentId} email=${email} subject="${subject}"`);
 
   const db = getAdminDb();
+  console.log(`[send-notif] Firebase Admin: ${db ? 'OK' : 'NOT CONFIGURED (db is null)'}`);
 
   // Run email and Firebase in parallel — cuts total time roughly in half
   const emailTask = (async () => {
@@ -232,10 +234,13 @@ export default async function handler(req, res) {
       matchedBy: 'none'
     };
     if (!db) {
-      console.warn('[send-notif] Firebase Admin not configured — push and history skipped');
+      console.error('[send-notif] Firebase Admin not configured — push and history skipped');
       return result;
     }
-    if (!studentId && !email) return result;
+    if (!studentId && !email) {
+      console.error('[send-notif] Both studentId and email are missing — skipping Firebase');
+      return result;
+    }
 
     let lookup;
     try {
@@ -298,6 +303,7 @@ export default async function handler(req, res) {
     notificationHistorySaved,
     pushSuccessCount: pushResult.successCount,
     pushFailureCount: pushResult.failureCount,
-    invalidTokensRemoved: pushResult.removedCount
+    invalidTokensRemoved: pushResult.removedCount,
+    _debug: { receivedStudentId: studentId ?? null, receivedEmail: email ?? null }
   });
 }
