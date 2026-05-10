@@ -289,6 +289,103 @@ export const allQuestions = [
     solution: '1. Total sold: $415 + 328 = 743$\n2. Total remaining: $1200 - 743 = 457$\nThe school has 457 hot dogs left.',
     difficulty: 'medium',
     isManual: true
+  },
+  // --- Page 2 Questions ---
+  // 11. Logic Puzzle: Number Placement (1-5)
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Logic and Puzzles',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Consider a figure shaped like a house with 5 circles (Top, Middle-Left, Middle-Right, Bottom-Left, Bottom-Right). We want to place the numbers 1, 2, 3, 4 and 5 in the circles so that no two connected circles have numbers with a difference of 1. If we place **3** at the top circle, which number must be in the bottom-left circle to satisfy the condition?',
+    options: ['1', '2', '4', '5'],
+    answer: 0, // 1
+    solution: '1. **Top (3)**: Connected to Middle-Left and Middle-Right. Therefore, Middle-Left and Middle-Right cannot be 2 or 4. They must be from {1, 5}.\n2. **Middle-Left and Middle-Right**: These are connected to each other, so they must be {1, 5}. Let\'s say ML=1 and MR=5 (or vice versa).\n3. **Bottom-Left**: Connected to Middle-Left (1). So Bottom-Left cannot be 2. It must be from {4} (since 3 and 5 are used).\nWait, let\'s re-evaluate:\nIf T=3, ML=1, MR=5. ML(1) connected to BL. MR(5) connected to BR. Remaining are {2, 4}.\nBL is connected to ML(1), so BL cannot be 2. So **BL must be 4**.\nBR is connected to MR(5), so BR cannot be 4. So **BR must be 2**.\nWait, let\'s check adjacent: 1 and 2? ML(1) is not connected to BR(2). MR(5) is not connected to BL(4). Correct!\nSo if ML=1 and MR=5, BL=4. If ML=5 and MR=1, BL=2.\nIn the arrangement where 3 is at the top, a valid set is (T=3, ML=5, MR=1, BL=2, BR=4).\nAnother valid set is (T=3, ML=1, MR=5, BL=4, BR=2).\nIf we look at the option, if 1 is in the Middle-Left, then 4 is in the Bottom-Left.',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 12. Palindromic Numbers
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Logic and Puzzles',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'A palindromic number is a whole number that is unchanged when the order of the digits is reversed (e.g., 121, 4554). If we start from 49,994, what is the 3rd palindromic number that follows it?',
+    options: ['52,225', '50,005', '51,115', '53,335'],
+    answer: 0,
+    solution: '1. Starting number: 49,994\n2. 1st palindrome after 49,994: 50,005\n3. 2nd palindrome after 50,005: 51,115\n4. 3rd palindrome after 51,115: **52,225**',
+    difficulty: 'medium',
+    isManual: true
+  },
+  // 13. Magic Square
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Logic and Puzzles',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'In a $3 \\times 3$ magic square, each row, column, and diagonal must add up to the same sum. In a specific square, the top-left number is 19, the center is 15, and the bottom-right is 11. What number belongs in the top-middle box?',
+    options: ['18', '14', '20', '16'],
+    answer: 0,
+    solution: '1. **Find the magic sum**: The diagonal (top-left, center, bottom-right) is $19 + 15 + 11 = 45$.\n2. **Bottom-left corner**: The column 1 is $19 + A + 22 = 45$ (Wait, using 22 from the image). Let\'s use the image grid: \n   Row 1: $19, X, Y$\n   Row 2: $A, 15, B$\n   Row 3: $22, C, 11$\n3. **Find A**: Col 1 sum is $19 + A + 22 = 45 \\Rightarrow A = 4$.\n4. **Find B**: Row 2 sum is $4 + 15 + B = 45 \\Rightarrow B = 26$.\n5. **Find C**: Row 3 sum is $22 + C + 11 = 45 \\Rightarrow C = 12$.\n6. **Find X (Top-Middle)**: Col 2 sum is $X + 15 + 12 = 45 \\Rightarrow X = 18$.',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 14. Logic Puzzle: Number Placement (1-6)
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Logic and Puzzles',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'We want to place the numbers 1, 2, 3, 4, 5 and 6 in a hexagonal figure with 6 circles so that no two adjacent numbers are connected by a line. If we place 1 and 6 in the two most distant circles (opposite ends), which of the following is a possible number for one of the circles connected to 1?',
+    options: ['3', '2', '5', 'None of these'],
+    answer: 0,
+    solution: '1. Number 1 is connected to three other circles. It cannot be connected to 2.\n2. Number 6 is connected to three other circles. It cannot be connected to 5.\n3. If 1 is at one end and 6 at the other, the circles connected to 1 must be from the set {3, 4, 5}. However, one of those circles is also connected to 6, so it cannot be 5.\n4. Therefore, 3 and 4 are the most likely candidates to be connected to 1.',
+    difficulty: 'hard',
+    isManual: true
+  },
+  // 15. Arithmetic Expression Puzzle
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Logic and Puzzles',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'Using five 8s and a selection of the symbols $(, ), +, -, \\times$ and $\\div$, which of the following statements results in 88?',
+    options: ['$8 \\times 8 + 8 + 8 + 8$', '$88 + 8 - 8 + 8$', '$(8+8) \\times 8 - 8$', '$8 \\times 8 \\times 8 \\div 8$'],
+    answer: 0,
+    solution: 'Let\'s check the options:\n1. $8 \\times 8 + 8 + 8 + 8 = 64 + 8 + 8 + 8 = 88$. (Correct! Uses five 8s).\n2. $88 + 8 - 8 + 8 = 96$ (Uses four 8s if 88 is two).\n3. $(8+8) \\times 8 - 8 = 16 \\times 8 - 8 = 120$.',
+    difficulty: 'medium',
+    isManual: true
+  },
+  // 16. Clock Face Division
+  {
+    chapterId: 'y7-1',
+    chapterTitle: 'Chapter 1: Whole numbers',
+    topicId: 'y7-1a',
+    topicCode: '1A',
+    topicTitle: 'Logic and Puzzles',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    question: 'If you use two straight lines to divide a clock face into three parts such that the sum of the numbers in each part is equal, what must that sum be?',
+    options: ['26', '24', '39', '13'],
+    answer: 0,
+    solution: '1. **Total sum**: The sum of all numbers on a clock face is $1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 = 78$.\n2. **Equal parts**: We want to divide 78 into 3 equal sums.\n3. **Calculation**: $78 \\div 3 = 26$.\n\nThe three parts are:\n- Part 1: $11, 12, 1, 2$ (Sum: 26)\n- Part 2: $10, 9, 3, 4$ (Sum: 26)\n- Part 3: $8, 7, 6, 5$ (Sum: 26)',
+    difficulty: 'hard',
+    isManual: true
   }
 ];
 

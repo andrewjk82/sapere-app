@@ -226,42 +226,65 @@ export default async function handler(req, res) {
   })();
 
   const firebaseTask = (async () => {
-    const empty = { pushResult: { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 }, notificationHistorySaved: false, matchedBy: 'none' };
+    const result = {
+      pushResult: { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 },
+      notificationHistorySaved: false,
+      matchedBy: 'none'
+    };
     if (!db) {
       console.warn('[send-notif] Firebase Admin not configured — push and history skipped');
-      return empty;
-    }
-    if (!studentId && !email) return empty;
-    try {
-      const lookup = await findNotificationUser(db, studentId, email);
-      const { userRef, userDoc, collection: userCollection } = lookup;
-      const result = { ...empty, matchedBy: lookup.matchedBy };
-
-      if (userRef && userDoc?.exists) {
-        if (userCollection === 'users') {
-          await userRef.collection('notifications').add({
-            title: subject,
-            body: text || 'New notification',
-            timestamp: admin.firestore.FieldValue.serverTimestamp(),
-            read: false,
-            type: 'message'
-          });
-          result.notificationHistorySaved = true;
-
-          const userData = userDoc.data();
-          result.pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
-          console.log(`[send-notif] Push result for ${studentId || email} (${result.matchedBy}):`, result.pushResult);
-        } else {
-          console.log(`[send-notif] Manual student in 'students' collection — email only`);
-        }
-      } else {
-        console.warn(`[send-notif] No user found for studentId=${studentId}, email=${email}`);
-      }
       return result;
-    } catch (err) {
-      console.error('[send-notif] Push/history error:', err.message);
-      return empty;
     }
+    if (!studentId && !email) return result;
+
+    let lookup;
+    try {
+      lookup = await findNotificationUser(db, studentId, email);
+    } catch (err) {
+      console.error('[send-notif] User lookup error:', err.message);
+      return result;
+    }
+
+    result.matchedBy = lookup.matchedBy;
+    const { userRef, userDoc, collection: userCollection } = lookup;
+    console.log(`[send-notif] Lookup: studentId=${studentId} email=${email} → matchedBy=${lookup.matchedBy} collection=${userCollection} exists=${userDoc?.exists}`);
+
+    if (!userRef || !userDoc?.exists) {
+      console.warn(`[send-notif] No user found for studentId=${studentId}, email=${email}`);
+      return result;
+    }
+
+    if (userCollection !== 'users') {
+      console.log(`[send-notif] Student in '${userCollection}' collection — email only, no push`);
+      return result;
+    }
+
+    // Save in-app notification — independent try-catch so push failure can't mask it
+    try {
+      await userRef.collection('notifications').add({
+        title: subject,
+        body: text || 'New notification',
+        timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        read: false,
+        type: 'message'
+      });
+      result.notificationHistorySaved = true;
+      console.log(`[send-notif] Notification saved for ${lookup.matchedBy}=${studentId || email}`);
+    } catch (err) {
+      console.error('[send-notif] Notification save error:', err.message);
+    }
+
+    // Send push — separate try-catch so it doesn't affect notification save result
+    try {
+      const userData = userDoc.data();
+      console.log(`[send-notif] FCM tokens in doc: fcmTokens=${JSON.stringify(userData.fcmTokens)} fcmToken=${userData.fcmToken ? 'present' : 'missing'}`);
+      result.pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
+      console.log(`[send-notif] Push result (${lookup.matchedBy}=${studentId || email}):`, result.pushResult);
+    } catch (err) {
+      console.error('[send-notif] Push send error:', err.message);
+    }
+
+    return result;
   })();
 
   const [emailSent, { pushResult, notificationHistorySaved, matchedBy }] = await Promise.all([emailTask, firebaseTask]);
