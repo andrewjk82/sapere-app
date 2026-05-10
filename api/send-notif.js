@@ -57,7 +57,11 @@ const invalidTokenCodes = new Set([
 ]);
 
 async function sendPushToUser(adminInstance, userRef, userData, title, body) {
-  const tokens = [...new Set(userData.fcmTokens || (userData.fcmToken ? [userData.fcmToken] : []))].filter(Boolean);
+  const tokens = [...new Set([
+    ...(userData.fcmTokens || []),
+    ...(userData.fcmToken ? [userData.fcmToken] : [])
+  ])].filter(Boolean);
+
   if (tokens.length === 0) {
     return { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 };
   }
@@ -78,8 +82,11 @@ async function sendPushToUser(adminInstance, userRef, userData, title, body) {
 
   const invalidTokens = [];
   response.responses.forEach((result, index) => {
-    if (!result.success && invalidTokenCodes.has(result.error?.code)) {
-      invalidTokens.push(tokens[index]);
+    if (!result.success) {
+      console.error(`[send-notif] Token ${index} failed: ${result.error?.code} — ${result.error?.message}`);
+      if (invalidTokenCodes.has(result.error?.code)) {
+        invalidTokens.push(tokens[index]);
+      }
     }
   });
 
@@ -101,33 +108,75 @@ async function sendPushToUser(adminInstance, userRef, userData, title, body) {
   };
 }
 
+// Checks both users (registered, can receive push) and students (manual, email only).
+// Returns which collection the user was found in so the caller can decide what to do.
 async function findNotificationUser(db, studentId, email) {
+  // 1. Direct ID lookup — try users first, then students
   if (studentId) {
-    const directRef = db.collection('users').doc(studentId);
-    const directDoc = await directRef.get();
-    if (directDoc.exists) {
-      return { userRef: directRef, userDoc: directDoc, matchedBy: 'studentId' };
+    const usersRef = db.collection('users').doc(studentId);
+    const usersDoc = await usersRef.get();
+    if (usersDoc.exists) {
+      return { userRef: usersRef, userDoc: usersDoc, matchedBy: 'studentId', collection: 'users' };
+    }
+
+    const studentsRef = db.collection('students').doc(studentId);
+    const studentsDoc = await studentsRef.get();
+    if (studentsDoc.exists) {
+      return { userRef: studentsRef, userDoc: studentsDoc, matchedBy: 'studentId', collection: 'students' };
     }
   }
 
+  // 2. Email fallback — try users first (they can receive push), then students
   const normalizedEmail = String(email || '').trim().toLowerCase();
   if (!normalizedEmail) {
-    return { userRef: null, userDoc: null, matchedBy: 'none' };
+    return { userRef: null, userDoc: null, matchedBy: 'none', collection: null };
   }
 
-  const emailQueries = normalizedEmail === email
+  const emailCandidates = normalizedEmail === email
     ? [normalizedEmail]
     : [email, normalizedEmail].filter(Boolean);
 
-  for (const candidateEmail of emailQueries) {
-    const snap = await db.collection('users').where('email', '==', candidateEmail).limit(1).get();
+  for (const candidate of emailCandidates) {
+    const snap = await db.collection('users').where('email', '==', candidate).limit(1).get();
     if (!snap.empty) {
-      const userDoc = snap.docs[0];
-      return { userRef: userDoc.ref, userDoc, matchedBy: 'email' };
+      const d = snap.docs[0];
+      return { userRef: d.ref, userDoc: d, matchedBy: 'email', collection: 'users' };
     }
   }
 
-  return { userRef: null, userDoc: null, matchedBy: 'none' };
+  for (const candidate of emailCandidates) {
+    const snap = await db.collection('students').where('email', '==', candidate).limit(1).get();
+    if (!snap.empty) {
+      const d = snap.docs[0];
+      return { userRef: d.ref, userDoc: d, matchedBy: 'email', collection: 'students' };
+    }
+  }
+
+  return { userRef: null, userDoc: null, matchedBy: 'none', collection: null };
+}
+
+// Initialize Firebase Admin once per process. Non-fatal if credentials are missing —
+// the function will still attempt to send email.
+function getAdminDb() {
+  try {
+    if (!admin.apps.length) {
+      const projectId = process.env.FIREBASE_PROJECT_ID;
+      const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
+      const privateKey = process.env.FIREBASE_PRIVATE_KEY;
+      if (!projectId || !clientEmail || !privateKey) return null;
+      admin.initializeApp({
+        credential: admin.credential.cert({
+          projectId,
+          clientEmail,
+          privateKey: privateKey.replace(/\\n/g, '\n'),
+        }),
+      });
+    }
+    return admin.firestore();
+  } catch (err) {
+    console.error('[send-notif] Firebase Admin init failed:', err.message);
+    return null;
+  }
 }
 
 export default async function handler(req, res) {
@@ -138,44 +187,20 @@ export default async function handler(req, res) {
   const { studentId, email, subject, text, html } = req.body;
   let emailSent = false;
   let pushResult = { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 };
+  let notificationHistorySaved = false;
+  let matchedBy = 'none';
 
+  // 1. Send email — independent of Firebase Admin
   try {
-    // 0. Initialize Firebase Admin
-    if (!admin.apps.length) {
-      const projectId = process.env.FIREBASE_PROJECT_ID || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID;
-      const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
-      const privateKey = process.env.FIREBASE_PRIVATE_KEY;
-
-      if (!projectId || !clientEmail || !privateKey) {
-        throw new Error('Missing Firebase credentials (ID, Email, or Key)');
-      }
-
-      admin.initializeApp({
-        credential: admin.credential.cert({
-          projectId,
-          clientEmail,
-          privateKey: privateKey.replace(/\\n/g, '\n'),
-        }),
-      });
-    }
-
-    const db = admin.firestore();
-
-    // 1. Send Email (Inlined EmailService for reliability)
     const GMAIL_USER = process.env.GMAIL_USER;
     const GMAIL_PASS = process.env.GMAIL_PASS;
-
     if (GMAIL_USER && GMAIL_PASS && email) {
       const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
-        auth: {
-          user: GMAIL_USER,
-          pass: GMAIL_PASS,
-        },
+        auth: { user: GMAIL_USER, pass: GMAIL_PASS },
       });
-
       await transporter.sendMail({
         from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
         to: email,
@@ -183,44 +208,61 @@ export default async function handler(req, res) {
         html: buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`)
       });
       emailSent = true;
+      console.log(`[send-notif] Email sent to ${email}`);
+    } else if (!process.env.GMAIL_USER) {
+      console.warn('[send-notif] GMAIL_USER not configured — email skipped');
     }
-
-    // 2. Send Push Notification & Save to History
-    let tokensFound = 0;
-    let matchedBy = 'none';
-    if (studentId || email) {
-      const lookup = await findNotificationUser(db, studentId, email);
-      const { userRef, userDoc } = lookup;
-      matchedBy = lookup.matchedBy;
-      
-      if (userRef && userDoc?.exists) {
-        // Save to notification history subcollection
-        await userRef.collection('notifications').add({
-          title: subject,
-          body: text || 'New notification',
-          timestamp: admin.firestore.FieldValue.serverTimestamp(),
-          read: false,
-          type: 'test_reminder'
-        });
-
-        const userData = userDoc.data();
-        pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
-        tokensFound = pushResult.tokensFound;
-        console.log(`[API] Push result for ${studentId || email} (${matchedBy}):`, pushResult);
-      }
-    }
-
-    return res.status(200).json({ 
-      success: true, 
-      emailSent, 
-      tokensFound,
-      matchedBy,
-      pushSuccessCount: pushResult.successCount,
-      pushFailureCount: pushResult.failureCount,
-      invalidTokensRemoved: pushResult.removedCount
-    });
-  } catch (error) {
-    console.error('API Error:', error.message);
-    return res.status(500).json({ error: error.message });
+  } catch (emailErr) {
+    console.error('[send-notif] Email error:', emailErr.message);
   }
+
+  // 2. Push notification + Firestore history (requires Firebase Admin)
+  const db = getAdminDb();
+  if (!db) {
+    console.warn('[send-notif] Firebase Admin not configured — push and history skipped');
+  } else if (studentId || email) {
+    try {
+      const lookup = await findNotificationUser(db, studentId, email);
+      matchedBy = lookup.matchedBy;
+      const { userRef, userDoc, collection: userCollection } = lookup;
+
+      if (userRef && userDoc?.exists) {
+        if (userCollection === 'users') {
+          // Save in-app notification history for registered users
+          await userRef.collection('notifications').add({
+            title: subject,
+            body: text || 'New notification',
+            timestamp: admin.firestore.FieldValue.serverTimestamp(),
+            read: false,
+            type: 'message'
+          });
+          notificationHistorySaved = true;
+
+          // Send push notification
+          const userData = userDoc.data();
+          pushResult = await sendPushToUser(admin, userRef, userData, subject, text || 'New notification');
+          console.log(`[send-notif] Push result for ${studentId || email} (${matchedBy}):`, pushResult);
+        } else {
+          // Manual student in 'students' collection — email only, no push
+          console.log(`[send-notif] Manual student found in 'students' collection — email only`);
+        }
+      } else {
+        console.warn(`[send-notif] No user found for studentId=${studentId}, email=${email}`);
+      }
+    } catch (pushErr) {
+      console.error('[send-notif] Push/history error:', pushErr.message);
+    }
+  }
+
+  return res.status(200).json({
+    success: true,
+    emailSent,
+    tokensFound: pushResult.tokensFound,
+    matchedBy,
+    adminConfigured: !!db,
+    notificationHistorySaved,
+    pushSuccessCount: pushResult.successCount,
+    pushFailureCount: pushResult.failureCount,
+    invalidTokensRemoved: pushResult.removedCount
+  });
 }

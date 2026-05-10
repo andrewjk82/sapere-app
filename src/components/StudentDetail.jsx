@@ -337,28 +337,37 @@ const StudentDetail = ({ studentId, onBack }) => {
         }),
       });
 
-      if (response.ok) {
-        const data = await response.json().catch(() => ({}));
-        if ((data.pushSuccessCount || 0) > 0) {
-          showToast("Message sent by email and push notification.", "success");
-        } else if ((data.tokensFound || 0) === 0) {
-          showToast(
-            "Email sent, but no push device is connected for this student.",
-            "warning",
-            7000,
-          );
-        } else {
-          showToast(
-            "Email sent, but push notification failed. Ask the student to reconnect notifications.",
-            "warning",
-            7000,
-          );
-        }
-        setMessageText("");
-        setMessageOpen(false);
-      } else {
-        throw new Error("Failed to send message");
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
       }
+
+      const pushOk = (data.pushSuccessCount || 0) > 0;
+      const emailOk = data.emailSent;
+
+      if (pushOk && emailOk) {
+        showToast("Message sent by email and push notification.", "success");
+      } else if (pushOk) {
+        showToast("Push notification sent. (Email not configured on server.)", "success");
+      } else if (emailOk) {
+        if (!data.adminConfigured) {
+          showToast("Email sent. (Push requires Firebase credentials on server — check Vercel env vars.)", "warning", 8000);
+        } else if ((data.tokensFound || 0) === 0) {
+          showToast("Email sent. Student hasn't enabled push notifications in the app yet.", "info", 6000);
+        } else {
+          showToast("Email sent, but push delivery failed. Ask student to tap 'Reconnect this device' in Settings.", "warning", 7000);
+        }
+      } else {
+        showToast(
+          !data.adminConfigured
+            ? "Message could not be sent — server is not fully configured. Contact admin."
+            : "Message could not be sent. Check student email and try again.",
+          "error",
+          8000
+        );
+      }
+      setMessageText("");
+      setMessageOpen(false);
     } catch (e) {
       showToast(e.message, "error");
     } finally {
