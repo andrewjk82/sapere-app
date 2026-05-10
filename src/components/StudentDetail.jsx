@@ -2006,8 +2006,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             />
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-          <div style={{ ...styles.card, flex: "none" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+          <div style={{ ...styles.card, flex: "none", padding: "24px" }}>
             <div
               className="section-title"
               style={{
@@ -2048,8 +2048,8 @@ const StudentDetail = ({ studentId, onBack }) => {
                         fontWeight: 800,
                       }}
                     >
-                      <span>Curriculum</span>
-                      <span style={{ color: "#6366f1" }}>{clampedPct}%</span>
+                      <span style={{ fontSize: "0.9rem" }}>Curriculum</span>
+                      <span style={{ color: "#6366f1", fontSize: "0.9rem" }}>{clampedPct}%</span>
                     </div>
                     <div
                       style={{
@@ -2074,7 +2074,7 @@ const StudentDetail = ({ studentId, onBack }) => {
           </div>
 
           {/* TERM RESULTS CARD */}
-          <div style={{ ...styles.card, flex: "none" }}>
+          <div style={{ ...styles.card, flex: "none", padding: "24px" }}>
             <div
               className="section-title"
               style={{
@@ -2087,7 +2087,7 @@ const StudentDetail = ({ studentId, onBack }) => {
               TERM RESULTS & REPORTS
             </div>
             
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "8px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
               {[1, 2, 3, 4].map(term => {
                 const score = student?.[`term${term}Result`];
                 const link = student?.[`term${term}Link`];
@@ -2101,7 +2101,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                           display: "flex", 
                           alignItems: "center", 
                           justifyContent: "space-between",
-                          padding: "16px 20px",
+                          padding: "10px 16px",
                           borderRadius: "100px",
                           border: "2px solid #6366f1",
                           background: "white",
@@ -2117,13 +2117,12 @@ const StudentDetail = ({ studentId, onBack }) => {
                         }}
                       >
                         {/* Placeholder for perfect centering balance */}
-                        <div style={{ width: "24px" }}></div>
+                        <div style={{ width: "20px" }}></div>
 
-                        <div style={{ display: "flex", alignItems: "center", gap: "8px", flex: 1, justifyContent: "center" }}>
-                          <BookOpen size={18} color="#6366f1" />
-                          <span style={{ fontSize: "1rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
+                        <div style={{ display: "flex", alignItems: "center", gap: "4px", flex: 1, justifyContent: "center" }}>
+                          <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
                           {score && (
-                            <span style={{ fontSize: "1rem", fontWeight: 900, color: "#8b5cf6", marginLeft: "4px" }}>{score}</span>
+                            <span style={{ fontSize: "0.85rem", fontWeight: 900, color: "#8b5cf6", marginLeft: "2px" }}>{score}</span>
                           )}
                         </div>
 
@@ -2132,10 +2131,10 @@ const StudentDetail = ({ studentId, onBack }) => {
                           style={{ 
                             background: "none", border: "none", cursor: "pointer", 
                             display: "flex", alignItems: "center", justifyContent: "center",
-                            color: "#94a3b8", padding: "4px", width: "24px", height: "24px" 
+                            color: "#94a3b8", padding: "2px", width: "20px", height: "20px" 
                           }}
                         >
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
                         </button>
                       </div>
                     ) : (
