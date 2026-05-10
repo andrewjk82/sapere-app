@@ -346,6 +346,13 @@ const StudentDetail = ({ studentId, onBack }) => {
       const pushOk = (data.pushSuccessCount || 0) > 0;
       const emailOk = data.emailSent;
 
+      // DEBUG: show diagnostic info directly so we can identify the issue
+      showToast(
+        `[DEBUG] admin=${data.adminConfigured} matched=${data.matchedBy} saved=${data.notificationHistorySaved} tokens=${data.tokensFound} push=${data.pushSuccessCount} email=${data.emailSent}`,
+        "info",
+        15000
+      );
+
       if (pushOk && emailOk) {
         showToast("Message sent by email and push notification.", "success");
       } else if (pushOk) {

@@ -304,6 +304,10 @@ export default async function handler(req, res) {
     pushSuccessCount: pushResult.successCount,
     pushFailureCount: pushResult.failureCount,
     invalidTokensRemoved: pushResult.removedCount,
-    _debug: { receivedStudentId: studentId ?? null, receivedEmail: email ?? null }
+    _debug: {
+      receivedStudentId: studentId ?? null,
+      receivedEmail: email ?? null,
+      adminProjectId: admin.apps.length > 0 ? (admin.apps[0].options.projectId || 'not-set') : 'no-app'
+    }
   });
 }
