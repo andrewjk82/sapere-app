@@ -32,6 +32,12 @@ const syncConfigs = [
     getScript: () => import('../scripts/importYear7Ch2.js'),
     importFnName: 'importYear7Ch2',
   },
+  {
+    chapterId: 'y11a-14',
+    name: 'Inequalities (Year 11 Adv Ch 14)',
+    getScript: () => import('../scripts/importYear11Ch14A.js'),
+    importFnName: 'importYear11Ch14A',
+  },
 ];
 
 export const performAutoSync = async (showToast) => {

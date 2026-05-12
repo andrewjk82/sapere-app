@@ -2011,6 +2011,14 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-13B', code: '13B', title: 'Cumulative frequency' },
           { id: 'y11a-13C', code: '13C', title: 'Grouped data' }
         ]
+      },
+      {
+        id: 'y11a-14',
+        title: 'Chapter 14: Inequalities',
+        modules: 6,
+        topics: [
+          { id: 'y11a-14A', code: '14A', title: 'Linear inequalities' }
+        ]
       }
     ],
     'Extension 1': [
