@@ -5,7 +5,7 @@ import {
   Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X
 } from 'lucide-react';
 import { auth, db } from '../firebase/config';
-import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, query, where } from 'firebase/firestore';
+import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, query, where, getCountFromServer } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -30,6 +30,24 @@ import {
 import './curriculum.css';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
+const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v1';
+const ADMIN_TOOL_COUNT_IDS = ['y11a-1', 'y11-1', 'y11a-2', 'y11-2', 'y11a-3', 'y11-3', 'y10-1', 'y10-3'];
+
+const loadCachedQuestionCounts = () => {
+  try {
+    return JSON.parse(window.localStorage.getItem(QUESTION_COUNT_CACHE_KEY) || '{}');
+  } catch {
+    return {};
+  }
+};
+
+const saveCachedQuestionCounts = (counts) => {
+  try {
+    window.localStorage.setItem(QUESTION_COUNT_CACHE_KEY, JSON.stringify(counts));
+  } catch {
+    // Cache only; ignore private-mode/quota failures.
+  }
+};
 
 const Curriculum = () => {
   const { user, isAdmin } = useAuth();
@@ -48,27 +66,6 @@ const Curriculum = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
-
-  // Fetch all question counts for visible chapters
-  useEffect(() => {
-    if (!isAdmin) return;
-
-    const fetchCounts = async () => {
-      try {
-        const q = collection(db, 'questions');
-        const snap = await getDocs(q);
-        const counts = {};
-        snap.docs.forEach(doc => {
-          const cid = doc.data().chapterId;
-          if (cid) counts[cid] = (counts[cid] || 0) + 1;
-        });
-        setQuestionCounts(counts);
-      } catch (err) {
-        console.error("Error fetching question counts:", err);
-      }
-    };
-    fetchCounts();
-  }, [isAdmin, curriculumRecords, isMigrating]);
 
   // Fetch Curriculum from Firestore
   useEffect(() => {
@@ -493,6 +490,42 @@ const Curriculum = () => {
       item.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [currentRecord, searchQuery, isAdmin, profile]);
+
+  const countChapterIds = useMemo(() => {
+    if (!isAdmin) return [];
+    const ids = new Set(displayData.map((chapter) => chapter.id).filter(Boolean));
+    if (showAdminTools) ADMIN_TOOL_COUNT_IDS.forEach((id) => ids.add(id));
+    return [...ids];
+  }, [displayData, isAdmin, showAdminTools]);
+
+  useEffect(() => {
+    if (!isAdmin || countChapterIds.length === 0) return undefined;
+    let cancelled = false;
+    const cached = loadCachedQuestionCounts();
+    setQuestionCounts((prev) => ({ ...cached, ...prev }));
+
+    const fetchVisibleCounts = async () => {
+      try {
+        const nextCounts = {};
+        await Promise.all(countChapterIds.map(async (chapterId) => {
+          const countQuery = query(collection(db, 'questions'), where('chapterId', '==', chapterId));
+          const snap = await getCountFromServer(countQuery);
+          nextCounts[chapterId] = snap.data().count || 0;
+        }));
+        if (cancelled) return;
+        const merged = { ...cached, ...nextCounts };
+        setQuestionCounts(merged);
+        saveCachedQuestionCounts(merged);
+      } catch (err) {
+        console.error("Error fetching question counts:", err);
+      }
+    };
+
+    fetchVisibleCounts();
+    return () => {
+      cancelled = true;
+    };
+  }, [isAdmin, countChapterIds, isMigrating]);
 
   const renderStudentHscChart = () => {
     if (profile?.showHscGraph !== true) return null;
