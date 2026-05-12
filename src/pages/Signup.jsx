@@ -93,12 +93,15 @@ const Signup = ({ onToggleMode }) => {
     try {
       setError('');
       setLoading(true);
+      // Persist step 2 early so App.jsx remounts us correctly
+      sessionStorage.setItem('pendingSignupStep', '2');
       await loginWithGoogle();
       // Move to Step 2 (Role Selection) after authentication
       setStep(2);
     } catch (err) {
       setError('Google authentication failed');
       console.error(err);
+      sessionStorage.removeItem('pendingSignupStep');
     } finally {
       setLoading(false);
     }
@@ -398,6 +401,7 @@ const Signup = ({ onToggleMode }) => {
         Already have an account?
         <button 
           onClick={async () => {
+            sessionStorage.removeItem('pendingSignupStep');
             await logout();
             onToggleMode();
           }} 

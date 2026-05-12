@@ -111,14 +111,37 @@ export default async function handler(req, res) {
     }
 
     // ══════════════════════════════════════════════════════════════════════
-    // PART 2: Daily Wrap-up (Tasks & Tomorrow's Schedule) - Runs between 7PM and 9PM
+    // PART 2: Daily Wrap-up (Tasks & Tomorrow's Schedule) - Runs in the evening.
+    // Vercel daily crons can drift within the hour, so keep this window forgiving.
     // ══════════════════════════════════════════════════════════════════════
-    if (sydHour >= 19 && sydHour < 21) {
-      logs.push(`[Cron] 7PM-9PM window reached. Checking tasks and tomorrow's schedule...`);
+    if (sydHour >= 19 && sydHour <= 21) {
+      logs.push(`[Cron] Evening wrap-up window reached. Checking tasks and tomorrow's schedule...`);
 
       // 1. Fetch all student-like users. Some legacy student docs have no role field.
       const usersSnap = await db.collection('users').get();
       const studentDocs = usersSnap.docs.filter(doc => isStudentProfile(doc.data()));
+
+      const cleanupRef = db.collection('system_config').doc('stat_cleanup');
+      const cleanupSnap = await cleanupRef.get();
+      if (cleanupSnap.data()?.lastRunDate !== todayStr) {
+        const cutoffDate = new Date(nowUTC);
+        cutoffDate.setDate(cutoffDate.getDate() - 7);
+        const cutoffStr = getSydneyDateStr(cutoffDate);
+        let deletedStats = 0;
+        for (const studentDoc of studentDocs) {
+          deletedStats += await pruneOldStatDocs(db, studentDoc.ref, 'daily_stats', cutoffStr);
+          deletedStats += await pruneOldStatDocs(db, studentDoc.ref, 'calc_stats', cutoffStr);
+        }
+        await cleanupRef.set({
+          lastRunDate: todayStr,
+          cutoffDate: cutoffStr,
+          deletedStats,
+          updatedAt: admin.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+        logs.push(`[Cleanup] Deleted ${deletedStats} stat docs older than ${cutoffStr}.`);
+      } else {
+        logs.push(`[Cleanup] Stat cleanup already ran for ${todayStr}.`);
+      }
       
       // 2. Fetch all tomorrow's sessions to map them to students
       const tomorrowSessionsSnap = await db.collection('sessions').where('date', '==', tomorrowStr).get();
@@ -150,17 +173,6 @@ export default async function handler(req, res) {
         ]);
         const tomorrowClassIds = tomorrowClasses.map(c => c.id).sort();
 
-        // Skip duplicate wrap-ups, but allow a resend if newly matched classes were missing earlier.
-        const previousClassIds = Array.isArray(student.last8PMReminderClassIds)
-          ? [...student.last8PMReminderClassIds].sort()
-          : [];
-        if (
-          student.last8PMReminderDate === todayStr &&
-          arraysEqual(previousClassIds, tomorrowClassIds)
-        ) {
-          continue;
-        }
-
         // A. Check Today's Challenge
         const challengeSnap = await db.collection('users').doc(studentId).collection('daily_stats').doc(todayStr).get();
         const challengeDone = challengeSnap.exists && challengeSnap.data().completed === true;
@@ -169,14 +181,21 @@ export default async function handler(req, res) {
         const calcEnabled = student.calculationEnabled !== false;
         let calcDone = true;
         if (calcEnabled) {
-          // Check if any calc session exists for today
-          const calcSnap = await db.collection('users').doc(studentId).collection('calc_stats')
-            .where('timestamp', '>=', todayStr)
-            .limit(1).get();
-          calcDone = !calcSnap.empty;
+          const calcSnap = await db.collection('users').doc(studentId).collection('calc_stats').doc(todayStr).get();
+          calcDone = calcSnap.exists && calcSnap.data().completed === true;
         }
 
         const hasUnfinishedTasks = !challengeDone || (calcEnabled && !calcDone);
+        const reminderKey = [
+          todayStr,
+          `classes:${tomorrowClassIds.join(',')}`,
+          `daily:${challengeDone ? 'done' : 'todo'}`,
+          `calc:${calcEnabled ? (calcDone ? 'done' : 'todo') : 'off'}`,
+        ].join('|');
+
+        if (student.last8PMReminderKey === reminderKey) {
+          continue;
+        }
 
         // Send reminder if they have classes tomorrow OR unfinished tasks today
         if (tomorrowClasses.length > 0 || hasUnfinishedTasks) {
@@ -210,7 +229,8 @@ export default async function handler(req, res) {
           // Mark as sent
           await studentDoc.ref.update({
             last8PMReminderDate: todayStr,
-            last8PMReminderClassIds: tomorrowClassIds
+            last8PMReminderClassIds: tomorrowClassIds,
+            last8PMReminderKey: reminderKey
           });
           logs.push(`8PM wrap-up sent to ${studentName} (${tomorrowClasses.length} classes, unfinished=${hasUnfinishedTasks}, email=${result.emailSent}, push=${result.pushSent})`);
         }
@@ -244,9 +264,39 @@ function dedupeSessions(sessions) {
   });
 }
 
-function arraysEqual(a, b) {
-  if (a.length !== b.length) return false;
-  return a.every((value, index) => value === b[index]);
+async function commitDeletes(db, refs) {
+  let deleted = 0;
+  for (let i = 0; i < refs.length; i += 450) {
+    const batch = db.batch();
+    const chunk = refs.slice(i, i + 450);
+    chunk.forEach(ref => batch.delete(ref));
+    await batch.commit();
+    deleted += chunk.length;
+  }
+  return deleted;
+}
+
+async function pruneOldStatDocs(db, userRef, statCollection, cutoffDate) {
+  const snap = await userRef.collection(statCollection).get();
+  const oldStats = snap.docs.filter(docSnapshot => {
+    const id = docSnapshot.id || '';
+    if (/^\d{4}-\d{2}-\d{2}$/.test(id)) return id < cutoffDate;
+    const data = docSnapshot.data() || {};
+    const rawDate = data.date || data.timestamp || data.completedAt || data.createdAt;
+    if (!rawDate) return false;
+    const parsed = typeof rawDate?.toDate === 'function' ? rawDate.toDate() : new Date(rawDate);
+    if (Number.isNaN(parsed.getTime())) return false;
+    return parsed.toLocaleDateString('en-CA', { timeZone: 'Australia/Sydney' }) < cutoffDate;
+  });
+
+  let deletedStats = 0;
+  for (const statDoc of oldStats) {
+    const workingOutSnap = await statDoc.ref.collection('working_out').get();
+    await commitDeletes(db, workingOutSnap.docs.map(docSnapshot => docSnapshot.ref));
+    await commitDeletes(db, [statDoc.ref]);
+    deletedStats += 1;
+  }
+  return deletedStats;
 }
 
 async function findNotificationUser(db, studentId, email) {

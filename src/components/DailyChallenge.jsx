@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
-import { db, ADMIN_EMAIL } from '../firebase/config';
+import { db, ADMIN_EMAIL, ADMIN_UID } from '../firebase/config';
 import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction, deleteDoc } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
@@ -22,6 +22,61 @@ const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPT
 const MAX_HISTORY_PER_TYPE = 7;
 
 const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', '÷', '×', '(', ')', '/', '-', '.'];
+
+const notifyTeacherChallengeCompleted = async ({
+  studentId,
+  studentName,
+  challengeType,
+  score,
+  total,
+  xpEarned,
+  completedAt,
+  reviewCount = 0,
+  reportCount = 0,
+}) => {
+  if (!ADMIN_UID || studentId === ADMIN_UID) return;
+  const label = challengeType === 'calc' ? 'Basic Calculation' : 'Daily Challenge';
+  const displayName = studentName || 'A student';
+  const attentionLines = [
+    reviewCount > 0 ? `Review required: ${reviewCount} answer(s).` : '',
+    reportCount > 0 ? `Reports submitted: ${reportCount} issue(s).` : '',
+  ].filter(Boolean);
+  const body = [
+    `${displayName} finished ${label}: ${score}/${total}.`,
+    xpEarned ? `XP earned: ${xpEarned}.` : '',
+    ...attentionLines,
+  ].filter(Boolean).join('\n');
+
+  if (attentionLines.length > 0) {
+    await fetch('/api/send-notif', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: ADMIN_EMAIL,
+        subject: `Challenge completed: ${displayName}`,
+        text: body,
+      }),
+    });
+    return;
+  }
+
+  await addDoc(collection(db, 'users', ADMIN_UID, 'notifications'), {
+    title: 'Challenge completed',
+    body,
+    type: 'challenge_completed',
+    studentId,
+    studentName: studentName || 'Student',
+    challengeType,
+    score,
+    total,
+    xpEarned,
+    reviewCount,
+    reportCount,
+    completedAt,
+    read: false,
+    timestamp: serverTimestamp(),
+  });
+};
 
 const getAssignedChapters = (profile, assignedYear) => {
   if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
@@ -350,6 +405,21 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const answerInputRef = useRef(null);
+  const sessionReviewCountRef = useRef(0);
+  const sessionReportCountRef = useRef(0);
+
+  const resetSessionAttentionCounts = () => {
+    sessionReviewCountRef.current = 0;
+    sessionReportCountRef.current = 0;
+  };
+
+  const markSessionReviewRequested = () => {
+    sessionReviewCountRef.current += 1;
+  };
+
+  const markSessionReportSubmitted = () => {
+    sessionReportCountRef.current += 1;
+  };
 
   const isMobile = window.innerWidth < 768; // Lowered threshold to allow split-screen on tablets
   const currentQuestion = questions[currentIdx] || null;
@@ -614,7 +684,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     };
 
     const unsubDaily = onSnapshot(
-      collection(db, 'users', user.uid, 'daily_stats'),
+      query(
+        collection(db, 'users', user.uid, 'daily_stats'),
+        orderBy('timestamp', 'desc'),
+        limit(MAX_HISTORY_PER_TYPE)
+      ),
       (snap) => {
         dailyData = snap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
         dailyLoaded = true;
@@ -628,7 +702,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     );
 
     const unsubCalc = onSnapshot(
-      collection(db, 'users', user.uid, 'calc_stats'),
+      query(
+        collection(db, 'users', user.uid, 'calc_stats'),
+        orderBy('timestamp', 'desc'),
+        limit(MAX_HISTORY_PER_TYPE)
+      ),
       (snap) => {
         calcData = snap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() }));
         calcLoaded = true;
@@ -723,6 +801,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     
     const sessionId = today;
     setCurrentSessionId(sessionId);
+    resetSessionAttentionCounts();
 
     setQuestions(combinedQs);
     setUserAnswers(new Array(qCount).fill(null));
@@ -894,6 +973,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const shuffledAI = [...aiQs].sort(() => Math.random() - 0.5);
     
     let combinedQs = [...shuffledManual, ...shuffledAI].map(correctQuestionAnswer);
+    resetSessionAttentionCounts();
 
     setQuestions(combinedQs);
     setUserAnswers(new Array(qCount).fill(null));
@@ -1030,6 +1110,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         status: 'open',
         createdAt: serverTimestamp()
       });
+      markSessionReportSubmitted();
       setIsReporting(false);
       setReportedQuestion(null);
       setReportMessage('');
@@ -1116,7 +1197,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     let canvasPageImages = [];
 
     // Capture canvas for ANY question if split screen is active (Senior Students)
-    if (showSplitScreen && canvasRef.current) {
+    if (showSplitScreen && canvasRef.current?.hasContent?.()) {
       try {
         canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
         canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
@@ -1128,7 +1209,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (isGraphSketch) {
       setIsSubmittingCanvas(true);
       // If not already captured by showSplitScreen check
-      if (!canvasDataUrl && canvasRef.current) {
+      if (!canvasDataUrl && canvasRef.current?.hasContent?.()) {
         try {
           canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
           canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
@@ -1202,21 +1283,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           requiresManualGrading: currentQ?.requiresManualGrading || true,
         };
         await addDoc(collection(db, 'grading_queue'), gradingEntry);
-
-        // Notify teacher
-        try {
-          await fetch('/api/send-notif', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              email: ADMIN_EMAIL,
-              subject: `📝 Review Required: ${gradingEntry.userName}`,
-              text: `${gradingEntry.userName} submitted an answer requiring teacher review.\n\nQuestion: "${gradingEntry.questionText.slice(0, 150)}"\nChapter: ${gradingEntry.chapterTitle}\n\nPlease check the grading queue in your dashboard.`,
-            })
-          });
-        } catch (notifErr) {
-          console.warn('Teacher notification failed (non-critical):', notifErr);
-        }
+        markSessionReviewRequested();
       } catch (err) {
         console.error("Failed to submit for review", err);
       } finally {
@@ -1490,6 +1557,25 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             year: assignedYear || ''
           }, { merge: true });
         });
+
+        if (!isAbandoned) {
+          const displayName = studentProfile?.name || studentProfile?.displayName ||
+            (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
+            user?.displayName || user?.email || 'Student';
+          notifyTeacherChallengeCompleted({
+            studentId: user.uid,
+            studentName: displayName,
+            challengeType,
+            score: actualScore,
+            total: totalPossibleScore,
+            xpEarned,
+            completedAt: now.toISOString(),
+            reviewCount: sessionReviewCountRef.current,
+            reportCount: sessionReportCountRef.current,
+          }).catch((err) => {
+            console.warn('Teacher completion notification failed (non-critical):', err?.code || err);
+          });
+        }
 
         // --- Local State Updates ---
         pruneOldChallengeStats(user.uid, challengeType === 'calc' ? 'calc_stats' : 'daily_stats').catch(() => {});

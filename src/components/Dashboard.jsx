@@ -39,7 +39,12 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   // Fetch student daily stats for insights
   useEffect(() => {
     if (!user?.uid || isAdmin) return;
-    const unsub = onSnapshot(collection(db, 'users', user.uid, 'daily_stats'), (snap) => {
+    const statsQuery = query(
+      collection(db, 'users', user.uid, 'daily_stats'),
+      orderBy('timestamp', 'desc'),
+      limit(7)
+    );
+    const unsub = onSnapshot(statsQuery, (snap) => {
       const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       setDailyStats(stats);
     });

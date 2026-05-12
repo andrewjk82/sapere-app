@@ -1,10 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Plus, Trash2, Edit2, Save, Image as ImageIcon, CheckCircle2, Eye, Check, AlertTriangle, Search, ChevronRight, AlertCircle, FileText, BarChart, Settings, HelpCircle, Code } from 'lucide-react';
+import { X, Plus, Trash2, Edit2, Image as ImageIcon, Eye, Check, AlertTriangle, BarChart, Lightbulb } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, addDoc, deleteDoc, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import {
+  collection,
+  query,
+  where,
+  addDoc,
+  doc,
+  updateDoc,
+  serverTimestamp,
+  getDocs,
+  orderBy,
+  limit,
+  startAfter,
+} from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import MathGraph from './MathGraph';
+
+const QUESTION_PAGE_SIZE = 10;
+const questionBankSessionCache = new Map();
 
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
@@ -181,9 +196,13 @@ const StudentViewPreview = ({ question, onClose }) => {
 
 const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const { showToast } = useToast();
+  const chapterId = chapter?.id;
   const [previewQuestion, setPreviewQuestion] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(!directEditQuestion);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const [lastQuestionDoc, setLastQuestionDoc] = useState(null);
+  const [hasMoreQuestions, setHasMoreQuestions] = useState(false);
   const [isFormOpen, setIsFormOpen] = useState(!!directEditQuestion);
   const [editingQuestion, setEditingQuestion] = useState(directEditQuestion ? directEditQuestion.id : null);
 
@@ -210,26 +229,59 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     graphData: ''
   });
 
-  useEffect(() => {
-    if (!chapter?.id) return;
-    const q = query(collection(db, 'questions'), where('chapterId', '==', chapter.id));
-    const unsub = onSnapshot(q, (snap) => {
-      const data = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      data.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
-      setQuestions(data);
+  const loadQuestionPage = React.useCallback(async ({ reset = false, cursor = null, currentQuestions = [] } = {}) => {
+    if (!chapterId) return;
+
+    const cacheKey = `questions:${chapterId}`;
+    const cached = questionBankSessionCache.get(cacheKey);
+    if (reset && cached) {
+      setQuestions(cached.questions);
+      setLastQuestionDoc(cached.lastDoc);
+      setHasMoreQuestions(cached.hasMore);
       setLoading(false);
-    });
-    return unsub;
-  }, [chapter?.id]);
+      return;
+    }
+
+    if (reset) setLoading(true);
+    else setLoadingMore(true);
+
+    try {
+      const constraints = [
+        where('chapterId', '==', chapterId),
+        orderBy('createdAt', 'desc'),
+        limit(QUESTION_PAGE_SIZE + 1),
+      ];
+      if (!reset && cursor) constraints.splice(2, 0, startAfter(cursor));
+
+      const snap = await getDocs(query(collection(db, 'questions'), ...constraints));
+      const docs = snap.docs.slice(0, QUESTION_PAGE_SIZE);
+      const page = docs
+        .map(d => ({ id: d.id, ...d.data() }))
+        .filter(q => q.isActive !== false);
+      const nextQuestions = reset ? page : [...currentQuestions, ...page];
+      const hasMore = snap.docs.length > QUESTION_PAGE_SIZE;
+      const lastDoc = docs[docs.length - 1] || null;
+
+      setQuestions(nextQuestions);
+      setLastQuestionDoc(lastDoc);
+      setHasMoreQuestions(hasMore);
+      questionBankSessionCache.set(cacheKey, {
+        questions: nextQuestions,
+        lastDoc,
+        hasMore,
+      });
+    } catch (err) {
+      console.error('Question bank load failed:', err);
+    } finally {
+      setLoading(false);
+      setLoadingMore(false);
+    }
+  }, [chapterId]);
 
   useEffect(() => {
-    if (directEditQuestion && questions.length > 0) {
-       const q = questions.find(q => q.id === directEditQuestion.id) || directEditQuestion;
-       handleOpenForm(q);
-    } else if (directEditQuestion) {
-       handleOpenForm(directEditQuestion);
-    }
-  }, [directEditQuestion, questions.length]);
+    if (!chapterId) return;
+    queueMicrotask(() => loadQuestionPage({ reset: true }));
+  }, [chapterId, loadQuestionPage]);
 
   const handleOpenForm = (q = null) => {
     if (q) {
@@ -297,6 +349,16 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     setIsFormOpen(true);
   };
 
+  useEffect(() => {
+    if (!directEditQuestion) return;
+    queueMicrotask(() => {
+      const q = questions.find(q => q.id === directEditQuestion.id) || directEditQuestion;
+      handleOpenForm(q);
+    });
+    // directEditQuestion should open once with the latest loaded question snapshot.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [directEditQuestion, questions]);
+
   const MANUAL_GRADING_KEYWORDS = /\b(show that|draw|sketch|prove|describe|explain|construct|hence|justify|demonstrate|find and sketch|graph)/i;
 
   const handleQuestionTextChange = (text) => {
@@ -341,6 +403,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         })),
         requiresManualGrading: formData.requiresManualGrading || false,
         graphData: formData.graphData ? JSON.parse(formData.graphData) : null,
+        isActive: true,
         updatedAt: serverTimestamp()
       };
 
@@ -350,6 +413,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         payload.createdAt = serverTimestamp();
         await addDoc(collection(db, 'questions'), payload);
       }
+
+      questionBankSessionCache.delete(`questions:${chapterId}`);
+      await loadQuestionPage({ reset: true });
       
       if (directEditQuestion) {
         onClose();
@@ -365,7 +431,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
   const handleDelete = async (id) => {
     if (window.confirm("Delete this question?")) {
-      await deleteDoc(doc(db, 'questions', id));
+      await updateDoc(doc(db, 'questions', id), {
+        isActive: false,
+        updatedAt: serverTimestamp(),
+      });
+      const nextQuestions = questions.filter(q => q.id !== id);
+      setQuestions(nextQuestions);
+      const cached = questionBankSessionCache.get(`questions:${chapterId}`);
+      if (cached) {
+        questionBankSessionCache.set(`questions:${chapterId}`, {
+          ...cached,
+          questions: cached.questions.filter(q => q.id !== id),
+        });
+      }
     }
   };
 
@@ -397,7 +475,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           {!isFormOpen ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.9rem', fontWeight: 800, color: '#64748b' }}>{questions.length} Questions</span>
+	                <span style={{ fontSize: '0.9rem', fontWeight: 800, color: '#64748b' }}>{questions.length}{hasMoreQuestions ? '+' : ''} Questions</span>
                 <button onClick={() => handleOpenForm()} className="app-button app-button--primary" style={{ padding: '10px 20px', fontSize: '0.9rem', borderRadius: '12px' }}>
                   <Plus size={16} /> Add Question
                 </button>
@@ -410,8 +488,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   <p style={{ fontSize: '0.9rem', color: '#94a3b8', marginBottom: '0px' }}>AI questions are generated automatically, but you can add specific ones here.</p>
                 </div>
               ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                  {questions.map((q, idx) => (
+	                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+	                  {questions.map((q, idx) => (
                     <div key={q.id} style={{ padding: '20px', borderRadius: '16px', border: `1px solid ${q.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`, background: q.requiresManualGrading ? '#fffbeb' : '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div style={{ flex: 1, paddingRight: '20px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
@@ -463,9 +541,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                         <button onClick={() => handleDelete(q.id)} style={{ padding: '8px', borderRadius: '8px', background: '#fff1f2', border: 'none', color: '#f43f5e', cursor: 'pointer' }}><Trash2 size={16} /></button>
                       </div>
                     </div>
-                  ))}
-                </div>
-              )}
+	                  ))}
+                    {hasMoreQuestions && (
+                      <button
+                        onClick={() => loadQuestionPage({ cursor: lastQuestionDoc, currentQuestions: questions })}
+                        disabled={loadingMore}
+                        className="app-button app-button--secondary"
+                        style={{ width: '100%', justifyContent: 'center', borderRadius: '12px' }}
+                      >
+                        {loadingMore ? 'Loading...' : 'Load more'}
+                      </button>
+                    )}
+	                </div>
+	              )}
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -505,7 +593,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 <textarea rows={3} value={formData.questionText} onChange={e => handleQuestionTextChange(e.target.value)} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="e.g. Solve for $x$: $x^2 = 25$" />
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>LIVE PREVIEW:</span>
-                  <MathPreview content={formData.questionText} graphData={formData.graphData ? (() => { try { return JSON.parse(formData.graphData); } catch(e) { return null; } })() : null} />
+                  <MathPreview content={formData.questionText} graphData={formData.graphData ? (() => { try { return JSON.parse(formData.graphData); } catch { return null; } })() : null} />
                 </div>
               </div>
 

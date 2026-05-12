@@ -429,7 +429,12 @@ function App() {
   }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
 
   const handleRefreshStudents = useCallback(async (silent = false) => {
-    if (!user) return;
+    // 1. Guard: Wait for both auth user and Firestore profile to be certain of isAdmin status
+    if (!user || !profileLoaded) return;
+    
+    // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches
+    if (!profile && !isAdmin) return;
+
     if (!silent) setLoading(true);
     try {
       const data = await studentService.getStudents(user.uid, isAdmin);

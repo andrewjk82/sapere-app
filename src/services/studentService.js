@@ -8,8 +8,7 @@ import {
   doc,
   updateDoc,
   deleteDoc,
-  serverTimestamp,
-  orderBy
+  serverTimestamp
 } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
@@ -135,15 +134,9 @@ export const studentService = {
       updateAll();
     }, onError);
 
-    // 2. If admin, fetch registered student users.
-    //
-    // Previously this used onSnapshot on the unfiltered `users` collection.
-    // Every user-doc write anywhere in the system fired the listener and
-    // re-read every user — a major contributor to RESOURCE_EXHAUSTED. The
-    // student list does NOT need sub-second freshness; a one-shot fetch on
-    // subscribe + a 5-minute periodic refresh is plenty for a tutoring
-    // admin view.
-    let intervalId = null;
+    // 2. If admin, fetch registered student users once.
+    // Student refresh is manual from the UI; avoid background polling that
+    // repeatedly reads the full users collection while a teacher keeps a tab open.
     let cancelled = false;
     if (isAdmin) {
       const fetchRegistered = async () => {
@@ -186,14 +179,12 @@ export const studentService = {
         }
       };
       fetchRegistered();
-      intervalId = setInterval(fetchRegistered, 5 * 60 * 1000); // 5 minutes
     }
 
     // Return a function to unsubscribe from both
     return () => {
       cancelled = true;
       unsubManual();
-      if (intervalId) clearInterval(intervalId);
     };
   },
 

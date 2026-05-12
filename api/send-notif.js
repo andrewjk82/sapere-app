@@ -170,12 +170,14 @@ function getAdminDb() {
         return null;
       }
       admin.initializeApp({
+        projectId,
         credential: admin.credential.cert({
           projectId,
           clientEmail,
           privateKey: privateKey.replace(/\\n/g, '\n'),
         }),
       });
+      console.log(`[send-notif] Firebase Admin initialized for project: ${projectId}`);
     }
     return admin.firestore();
   } catch (err) {
@@ -231,7 +233,8 @@ export default async function handler(req, res) {
     const result = {
       pushResult: { tokensFound: 0, successCount: 0, failureCount: 0, removedCount: 0 },
       notificationHistorySaved: false,
-      matchedBy: 'none'
+      matchedBy: 'none',
+      lookupError: null
     };
     if (!db) {
       console.error('[send-notif] Firebase Admin not configured — push and history skipped');
@@ -247,6 +250,7 @@ export default async function handler(req, res) {
       lookup = await findNotificationUser(db, studentId, email);
     } catch (err) {
       console.error('[send-notif] User lookup error:', err.message);
+      result.lookupError = err.message;
       return result;
     }
 
@@ -292,7 +296,7 @@ export default async function handler(req, res) {
     return result;
   })();
 
-  const [emailSent, { pushResult, notificationHistorySaved, matchedBy }] = await Promise.all([emailTask, firebaseTask]);
+  const [emailSent, { pushResult, notificationHistorySaved, matchedBy, lookupError }] = await Promise.all([emailTask, firebaseTask]);
 
   return res.status(200).json({
     success: true,
@@ -307,7 +311,8 @@ export default async function handler(req, res) {
     _debug: {
       receivedStudentId: studentId ?? null,
       receivedEmail: email ?? null,
-      adminProjectId: admin.apps.length > 0 ? (admin.apps[0].options.projectId || 'not-set') : 'no-app'
+      adminProjectId: admin.apps.length > 0 ? (admin.apps[0].options.projectId || 'inferred-from-credential') : 'no-app',
+      lookupError: lookupError ?? null
     }
   });
 }

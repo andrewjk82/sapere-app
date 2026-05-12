@@ -132,3 +132,4 @@ export const listenForForegroundNotifications = (handler) => {
 };
 
 export const ADMIN_EMAIL = "andrewjk82@gmail.com";
+export const ADMIN_UID = "MeohP8s0LkPWSTWgEbzc7uaWVEG2";

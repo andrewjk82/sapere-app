@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, or } from 'firebase/firestore';
+import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -23,6 +23,21 @@ const formatDateKey = (date) => {
   return `${year}-${month}-${day}`;
 };
 
+const getAdminScheduleWindow = () => {
+  const start = new Date();
+  start.setHours(0, 0, 0, 0);
+  start.setDate(start.getDate() - 7);
+
+  const end = new Date();
+  end.setHours(0, 0, 0, 0);
+  end.setDate(end.getDate() + 21);
+
+  return {
+    startDate: formatDateKey(start),
+    endDate: formatDateKey(end),
+  };
+};
+
 const getSessionAccent = (session) => {
   const key = `${session.subject || ''}${session.studentName || ''}`;
   const sum = key.split('').reduce((total, char) => total + char.charCodeAt(0), 0);
@@ -39,6 +54,20 @@ const buildSessionUpdatePayload = (editData) => ({
   reminderSent: false,
   updatedAt: new Date().toISOString()
 });
+
+const addDaysToDateKey = (dateKey, days) => {
+  const date = new Date(`${dateKey}T12:00:00`);
+  if (Number.isNaN(date.getTime())) return dateKey;
+  date.setDate(date.getDate() + days);
+  return formatDateKey(date);
+};
+
+const getDateShiftDays = (fromDateKey, toDateKey) => {
+  const fromDate = new Date(`${fromDateKey}T12:00:00`);
+  const toDate = new Date(`${toDateKey}T12:00:00`);
+  if (Number.isNaN(fromDate.getTime()) || Number.isNaN(toDate.getTime())) return 0;
+  return Math.round((toDate.getTime() - fromDate.getTime()) / (24 * 60 * 60 * 1000));
+};
 
 const Schedule = () => {
   const { user, isAdmin } = useAuth();
@@ -72,7 +101,12 @@ const Schedule = () => {
     let unsub2 = () => {};
 
     if (isAdmin) {
-      const q = query(collection(db, 'sessions'));
+      const { startDate, endDate } = getAdminScheduleWindow();
+      const q = query(
+        collection(db, 'sessions'),
+        where('date', '>=', startDate),
+        where('date', '<=', endDate)
+      );
       unsub1 = onSnapshot(q, (snap) => {
         const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
         setSessions(docs.sort((a, b) => {
@@ -161,10 +195,13 @@ const Schedule = () => {
         const { getDocs, writeBatch } = await import('firebase/firestore');
         const snap = await getDocs(q);
         const futureDocs = snap.docs.filter(d => (d.data().date || '') >= selectedSession.date);
+        const dateShiftDays = getDateShiftDays(selectedSession.date, updatePayload.date);
 
         const batch = writeBatch(db);
         futureDocs.forEach(d => {
+          const currentDate = d.data().date || selectedSession.date;
           batch.update(d.ref, {
+            date: addDaysToDateKey(currentDate, dateShiftDays),
             startTime: updatePayload.startTime,
             endTime: updatePayload.endTime,
             notes: updatePayload.notes,

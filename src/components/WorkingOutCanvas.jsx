@@ -78,6 +78,10 @@ function drawCommittedStroke(ctx, stroke, dpr) {
 }
 
 const computeSize = (uiWidth) => Math.max(4, uiWidth * 2.6);
+const pageHasInk = (pageStrokes = []) =>
+  Array.isArray(pageStrokes) && pageStrokes.some(stroke =>
+    !stroke?.isEraser && Array.isArray(stroke.points) && stroke.points.length > 0
+  );
 
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
   const displayCanvasRef = useRef(null);
@@ -511,11 +515,20 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     };
 
     return {
-      exportImage: () => Promise.resolve(getCompositeDataURL(strokesRef.current)),
+      hasContent: () => {
+        const all = [...pages];
+        all[currentPage] = strokesRef.current;
+        return all.some(pageHasInk);
+      },
+      exportImage: () => Promise.resolve(
+        pageHasInk(strokesRef.current) ? getCompositeDataURL(strokesRef.current) : null
+      ),
       exportPageImages: async () => {
         const all = [...pages];
         all[currentPage] = strokesRef.current;
-        return all.map(ps => getCompositeDataURL(ps || []));
+        return all
+          .filter(pageHasInk)
+          .map(ps => getCompositeDataURL(ps || []));
       },
       clear: () => {
         setStrokes([]);
