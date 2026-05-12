@@ -6,7 +6,9 @@ import {
   ChevronRight,
   Calendar,
   BookOpen,
-  MessageSquare,
+  FileText,
+  Plus,
+  Trash2,
   Trophy,
   Mail,
   Phone,
@@ -88,6 +90,8 @@ const sortStatsByDateDesc = (stats) =>
     return (dateB?.getTime() || 0) - (dateA?.getTime() || 0);
   });
 
+const getTodayDateKey = () => new Date().toLocaleDateString("en-CA");
+
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -105,6 +109,15 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [messageText, setMessageText] = useState("");
   const [sendingMessage, setSendingMessage] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
+  const [hscRecords, setHscRecords] = useState([]);
+  const [hscSaving, setHscSaving] = useState(false);
+  const [hscForm, setHscForm] = useState({
+    examDate: getTodayDateKey(),
+    paper: "",
+    score: "",
+    total: "100",
+    notes: "",
+  });
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const { showToast } = useToast();
@@ -416,6 +429,25 @@ const StudentDetail = ({ studentId, onBack }) => {
       unsubDaily();
       unsubCalc();
     };
+  }, [studentId, student?.source, student?.id]);
+
+  useEffect(() => {
+    if (!studentId || !student?.id) return;
+    const colName = student.source === "manual" ? "students" : "users";
+    const hscQuery = query(
+      collection(db, colName, studentId, "hsc_results"),
+      orderBy("examDate", "desc"),
+    );
+    return onSnapshot(
+      hscQuery,
+      (snap) => {
+        setHscRecords(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+      },
+      (err) => {
+        console.error("HSC records listener error:", err);
+        setHscRecords([]);
+      },
+    );
   }, [studentId, student?.source, student?.id]);
 
   const handleUpdateProfile = async () => {
@@ -821,6 +853,166 @@ const StudentDetail = ({ studentId, onBack }) => {
       console.error("Reset error:", err);
       showToast("Failed to reset challenge.", "error");
     }
+  };
+
+  const handleSaveHscRecord = async (e) => {
+    e.preventDefault();
+    if (!hscForm.examDate || !hscForm.paper.trim()) {
+      showToast("Please enter the exam date and paper.", "warning");
+      return;
+    }
+    const score = Number(hscForm.score);
+    const total = Number(hscForm.total);
+    if (!Number.isFinite(score) || !Number.isFinite(total) || total <= 0) {
+      showToast("Please enter a valid score and total.", "warning");
+      return;
+    }
+
+    try {
+      setHscSaving(true);
+      const colName = student.source === "manual" ? "students" : "users";
+      await addDoc(collection(db, colName, studentId, "hsc_results"), {
+        examDate: hscForm.examDate,
+        paper: hscForm.paper.trim(),
+        score,
+        total,
+        percentage: Math.round((score / total) * 1000) / 10,
+        notes: hscForm.notes.trim(),
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
+      });
+      setHscForm({
+        examDate: getTodayDateKey(),
+        paper: "",
+        score: "",
+        total: "100",
+        notes: "",
+      });
+      showToast("HSC result saved.", "success");
+    } catch (err) {
+      console.error("HSC save error:", err);
+      showToast("Failed to save HSC result.", "error");
+    } finally {
+      setHscSaving(false);
+    }
+  };
+
+  const handleDeleteHscRecord = async (record) => {
+    if (!confirm(`Delete ${record.paper || "this HSC result"}?`)) return;
+    try {
+      const colName = student.source === "manual" ? "students" : "users";
+      await deleteDoc(doc(db, colName, studentId, "hsc_results", record.id));
+      showToast("HSC result deleted.", "success");
+    } catch (err) {
+      console.error("HSC delete error:", err);
+      showToast("Failed to delete HSC result.", "error");
+    }
+  };
+
+  const renderHscChart = () => {
+    const points = [...hscRecords]
+      .filter((record) => record.examDate && Number(record.total) > 0)
+      .sort((a, b) => String(a.examDate).localeCompare(String(b.examDate)))
+      .map((record) => ({
+        ...record,
+        percentage: Number(record.percentage ?? ((Number(record.score) / Number(record.total)) * 100)),
+      }));
+
+    if (points.length === 0) {
+      return (
+        <div
+          style={{
+            height: "260px",
+            borderRadius: "24px",
+            background: "linear-gradient(135deg, #f8fafc, #eef2ff)",
+            border: "1px dashed #c7d2fe",
+            display: "grid",
+            placeItems: "center",
+            color: "#64748b",
+            fontWeight: 800,
+          }}
+        >
+          Add HSC results to build a score trend.
+        </div>
+      );
+    }
+
+    const width = 760;
+    const height = 280;
+    const padX = 54;
+    const padY = 42;
+    const minScore = Math.max(0, Math.min(...points.map((p) => p.percentage)) - 8);
+    const maxScore = Math.min(100, Math.max(...points.map((p) => p.percentage)) + 8);
+    const range = Math.max(1, maxScore - minScore);
+    const xFor = (idx) => points.length === 1
+      ? width / 2
+      : padX + (idx * (width - padX * 2)) / (points.length - 1);
+    const yFor = (value) => padY + ((maxScore - value) / range) * (height - padY * 2);
+    const path = points.map((point, idx) => `${idx === 0 ? "M" : "L"} ${xFor(idx)} ${yFor(point.percentage)}`).join(" ");
+    const fillPath = `${path} L ${xFor(points.length - 1)} ${height - padY} L ${xFor(0)} ${height - padY} Z`;
+    const latest = points[points.length - 1];
+
+    return (
+      <div
+        style={{
+          borderRadius: "28px",
+          background: "linear-gradient(135deg, #312e81, #4f46e5 52%, #7c3aed)",
+          padding: "24px",
+          color: "white",
+          boxShadow: "0 24px 60px rgba(79,70,229,0.22)",
+          overflow: "hidden",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", gap: "16px", alignItems: "flex-start", marginBottom: "12px", flexWrap: "wrap" }}>
+          <div>
+            <div style={{ fontSize: "0.75rem", fontWeight: 900, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.72 }}>
+              HSC Score Trend
+            </div>
+            <div style={{ fontSize: "2.3rem", fontWeight: 950, lineHeight: 1, marginTop: "8px" }}>
+              {latest.percentage.toFixed(1)}%
+            </div>
+          </div>
+          <div style={{ textAlign: "right", fontWeight: 800, opacity: 0.9 }}>
+            <div>{latest.paper}</div>
+            <div style={{ fontSize: "0.8rem", opacity: 0.72 }}>{latest.examDate}</div>
+          </div>
+        </div>
+        <svg viewBox={`0 0 ${width} ${height}`} style={{ width: "100%", height: "auto", display: "block" }} role="img" aria-label="HSC score trend line chart">
+          <defs>
+            <linearGradient id="hscLine" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#fef3c7" />
+              <stop offset="55%" stopColor="#f9a8d4" />
+              <stop offset="100%" stopColor="#c4b5fd" />
+            </linearGradient>
+            <linearGradient id="hscFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="0.22" />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity="0.02" />
+            </linearGradient>
+          </defs>
+          {[0, 1, 2, 3].map((line) => {
+            const y = padY + (line * (height - padY * 2)) / 3;
+            const label = Math.round(maxScore - (line * range) / 3);
+            return (
+              <g key={line}>
+                <line x1={padX} x2={width - padX} y1={y} y2={y} stroke="rgba(255,255,255,0.16)" strokeWidth="1" />
+                <text x={20} y={y + 4} fill="rgba(255,255,255,0.58)" fontSize="12" fontWeight="800">{label}%</text>
+              </g>
+            );
+          })}
+          {points.length > 1 && <path d={fillPath} fill="url(#hscFill)" />}
+          <path d={path} fill="none" stroke="url(#hscLine)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+          {points.map((point, idx) => (
+            <g key={point.id || `${point.examDate}-${idx}`}>
+              <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="8" fill="#ffffff" opacity="0.95" />
+              <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="4" fill="#7c3aed" />
+              <text x={xFor(idx)} y={height - 14} textAnchor="middle" fill="rgba(255,255,255,0.68)" fontSize="11" fontWeight="800">
+                {point.examDate.slice(5)}
+              </text>
+            </g>
+          ))}
+        </svg>
+      </div>
+    );
   };
 
   const renderHistoryCard = (stat) => (
@@ -1853,6 +2045,159 @@ const StudentDetail = ({ studentId, onBack }) => {
             </div>
           </div>
         );
+      case "hsc":
+        return (
+          <div style={{ display: "grid", gap: "24px" }}>
+            {renderHscChart()}
+
+            <div style={styles.card} className="profile-card-mobile">
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", marginBottom: "24px", flexWrap: "wrap" }}>
+                <div>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 900, color: "#7c3aed", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                    HSC Exam Log
+                  </div>
+                  <h3 style={{ margin: "6px 0 0", fontSize: "1.5rem", color: "#1e1b4b" }}>
+                    Trial papers and marks
+                  </h3>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px 14px", borderRadius: "999px", background: "#f5f3ff", color: "#6d28d9", fontWeight: 900 }}>
+                  <FileText size={18} />
+                  {hscRecords.length} record{hscRecords.length === 1 ? "" : "s"}
+                </div>
+              </div>
+
+              <form
+                onSubmit={handleSaveHscRecord}
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "minmax(130px, 0.8fr) minmax(180px, 1.4fr) minmax(90px, 0.6fr) minmax(90px, 0.6fr) auto",
+                  gap: "12px",
+                  alignItems: "end",
+                  padding: "16px",
+                  borderRadius: "22px",
+                  background: "#f8fafc",
+                  border: "1px solid #eef2ff",
+                  marginBottom: "24px",
+                }}
+              >
+                <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
+                  Date
+                  <input
+                    type="date"
+                    value={hscForm.examDate}
+                    onChange={(e) => setHscForm({ ...hscForm, examDate: e.target.value })}
+                    style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 800, color: "#1e1b4b", outline: "none" }}
+                  />
+                </label>
+                <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
+                  Paper
+                  <input
+                    value={hscForm.paper}
+                    onChange={(e) => setHscForm({ ...hscForm, paper: e.target.value })}
+                    placeholder="e.g. 2023 HSC Paper 1"
+                    style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 800, color: "#1e1b4b", outline: "none" }}
+                  />
+                </label>
+                <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
+                  Score
+                  <input
+                    type="number"
+                    min="0"
+                    value={hscForm.score}
+                    onChange={(e) => setHscForm({ ...hscForm, score: e.target.value })}
+                    style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
+                  />
+                </label>
+                <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
+                  Out of
+                  <input
+                    type="number"
+                    min="1"
+                    value={hscForm.total}
+                    onChange={(e) => setHscForm({ ...hscForm, total: e.target.value })}
+                    style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
+                  />
+                </label>
+                <button
+                  type="submit"
+                  disabled={hscSaving}
+                  style={{
+                    height: "45px",
+                    padding: "0 18px",
+                    borderRadius: "14px",
+                    border: "none",
+                    background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
+                    color: "white",
+                    fontWeight: 900,
+                    cursor: hscSaving ? "wait" : "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    justifyContent: "center",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  <Plus size={17} />
+                  {hscSaving ? "Saving" : "Add"}
+                </button>
+                <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase", gridColumn: "1 / -1" }}>
+                  Notes
+                  <textarea
+                    rows={3}
+                    value={hscForm.notes}
+                    onChange={(e) => setHscForm({ ...hscForm, notes: e.target.value })}
+                    placeholder="Topics to review, exam conditions, paper section notes..."
+                    style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 700, color: "#1e1b4b", outline: "none", resize: "vertical" }}
+                  />
+                </label>
+              </form>
+
+              <div style={{ display: "grid", gap: "12px" }}>
+                {hscRecords.length > 0 ? hscRecords.map((record) => {
+                  const percentage = Number(record.percentage ?? ((Number(record.score) / Number(record.total)) * 100));
+                  return (
+                    <div
+                      key={record.id}
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "110px minmax(0, 1fr) 90px auto",
+                        gap: "16px",
+                        alignItems: "center",
+                        padding: "16px",
+                        borderRadius: "18px",
+                        background: "white",
+                        border: "1px solid #eef2ff",
+                        boxShadow: "0 10px 24px rgba(79,70,229,0.05)",
+                      }}
+                    >
+                      <div style={{ fontSize: "0.8rem", fontWeight: 900, color: "#64748b" }}>{record.examDate}</div>
+                      <div style={{ minWidth: 0 }}>
+                        <div style={{ fontWeight: 900, color: "#1e1b4b", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{record.paper}</div>
+                        {record.notes && <div style={{ marginTop: "4px", fontSize: "0.78rem", color: "#64748b", lineHeight: 1.45 }}>{record.notes}</div>}
+                      </div>
+                      <div style={{ textAlign: "right" }}>
+                        <div style={{ fontWeight: 950, color: "#4f46e5", fontSize: "1.05rem" }}>{Number(record.score)}/{Number(record.total)}</div>
+                        <div style={{ fontSize: "0.72rem", fontWeight: 900, color: "#7c3aed" }}>{Number.isFinite(percentage) ? percentage.toFixed(1) : "0.0"}%</div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteHscRecord(record)}
+                        aria-label={`Delete ${record.paper}`}
+                        style={{ width: "42px", height: "42px", borderRadius: "12px", border: "none", background: "#fff1f2", color: "#e11d48", display: "grid", placeItems: "center", cursor: "pointer" }}
+                      >
+                        <Trash2 size={17} />
+                      </button>
+                    </div>
+                  );
+                }) : (
+                  <div style={{ padding: "30px", borderRadius: "20px", background: "#f8fafc", border: "1px dashed #cbd5e1", color: "#64748b", textAlign: "center", fontWeight: 800 }}>
+                    No HSC papers recorded yet.
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        );
       default:
         return null;
     }
@@ -2372,8 +2717,14 @@ const StudentDetail = ({ studentId, onBack }) => {
         >
           <Trophy size={18} /> Challenge
         </button>
-        <button style={styles.navBtn}>
-          <MessageSquare size={18} /> Q&A
+        <button
+          onClick={() => setActiveTab("hsc")}
+          style={{
+            ...styles.navBtn,
+            ...(activeTab === "hsc" ? styles.navBtnActive : {}),
+          }}
+        >
+          <FileText size={18} /> HSC
         </button>
         <button
           onClick={() => setIsScheduleModalOpen(true)}

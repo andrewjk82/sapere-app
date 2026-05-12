@@ -16,6 +16,10 @@ service cloud.firestore {
       allow read: if isAdmin() || (isSignedIn() && resource.data.tutorId == request.auth.uid);
       allow create: if isSignedIn() && request.resource.data.tutorId == request.auth.uid;
       allow update, delete: if isAdmin() || (isSignedIn() && resource.data.tutorId == request.auth.uid);
+
+      match /hsc_results/{resultId} {
+        allow read, write: if isAdmin();
+      }
     }
 
     // Sessions (lesson sessions)
@@ -96,6 +100,10 @@ service cloud.firestore {
 
       match /chapterProgress/{progressId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
+      match /hsc_results/{resultId} {
+        allow read, write: if isAdmin();
       }
 
       match /notifications/{notifId} {
