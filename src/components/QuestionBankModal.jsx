@@ -14,6 +14,7 @@ import {
   orderBy,
   limit,
   startAfter,
+  documentId,
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import MathGraph from './MathGraph';
@@ -237,7 +238,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     try {
       const constraints = [
         where('chapterId', '==', chapterId),
-        orderBy('createdAt', 'desc'),
+        orderBy(documentId()),
         limit(QUESTION_PAGE_SIZE + 1),
       ];
       if (!reset && cursor) constraints.splice(2, 0, startAfter(cursor));
