@@ -191,7 +191,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { studentId, email, subject, text, html } = req.body;
+  const { studentId, email, subject, text, html, metadata } = req.body;
   console.log(`[send-notif] Request: studentId=${studentId} email=${email} subject="${subject}"`);
 
   const db = getAdminDb();
@@ -275,7 +275,8 @@ export default async function handler(req, res) {
         body: text || 'New notification',
         timestamp: admin.firestore.FieldValue.serverTimestamp(),
         read: false,
-        type: 'message'
+        type: metadata?.type || 'message',
+        ...(metadata && typeof metadata === 'object' ? { metadata } : {})
       });
       result.notificationHistorySaved = true;
       console.log(`[send-notif] Notification saved for ${lookup.matchedBy}=${studentId || email}`);

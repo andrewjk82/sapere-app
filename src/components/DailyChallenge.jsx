@@ -47,35 +47,29 @@ const notifyTeacherChallengeCompleted = async ({
     ...attentionLines,
   ].filter(Boolean).join('\n');
 
-  if (attentionLines.length > 0) {
-    await fetch('/api/send-notif', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        email: ADMIN_EMAIL,
-        subject: `Challenge completed: ${displayName}`,
-        text: body,
-      }),
-    });
-    return;
-  }
-
-  await addDoc(collection(db, 'users', ADMIN_UID, 'notifications'), {
-    title: 'Challenge completed',
-    body,
-    type: 'challenge_completed',
-    studentId,
-    studentName: studentName || 'Student',
-    challengeType,
-    score,
-    total,
-    xpEarned,
-    reviewCount,
-    reportCount,
-    completedAt,
-    read: false,
-    timestamp: serverTimestamp(),
+  const response = await fetch('/api/send-notif', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      studentId: ADMIN_UID,
+      email: ADMIN_EMAIL,
+      subject: `Challenge completed: ${displayName}`,
+      text: body,
+      metadata: {
+        type: 'challenge_completed',
+        studentId,
+        studentName: studentName || 'Student',
+        challengeType,
+        score,
+        total,
+        xpEarned,
+        reviewCount,
+        reportCount,
+        completedAt,
+      },
+    }),
   });
+  if (!response.ok) throw new Error(`send-notif failed: ${response.status}`);
 };
 
 const getAssignedChapters = (profile, assignedYear) => {
