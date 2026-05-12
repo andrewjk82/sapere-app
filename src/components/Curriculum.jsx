@@ -20,7 +20,7 @@ import { importYear10Ch4 } from '../scripts/importYear10Ch4';
 import { importYear9Ch1 } from '../scripts/importYear9Ch1';
 import { importYear7Ch1 } from '../scripts/importYear7Ch1';
 import { importYear7Ch2 } from '../scripts/importYear7Ch2';
-import { importYear11Ch14A } from '../scripts/importYear11Ch14A';
+import { importYear11Ch4A } from '../scripts/importYear11Ch4A';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import {
@@ -348,19 +348,19 @@ const Curriculum = () => {
     }
   };
 
-  const handleSyncY11Ch14A = async () => {
+  const handleSyncY11Ch4A = async () => {
     if (!isAdmin || isMigrating) return;
     setIsMigrating(true);
     try {
-      const count = await importYear11Ch14A();
+      const count = await importYear11Ch4A();
       if (count > 0) {
-        showToast(`✅ Successfully added ${count} new questions to Year 11 Chapter 14A!`, 'success');
+        showToast(`✅ Successfully added ${count} new questions to Year 11 Chapter 4A!`, 'success');
       } else {
-        showToast('Year 11 Chapter 14A is already up to date.', 'info');
+        showToast('Year 11 Chapter 4A is already up to date.', 'info');
       }
     } catch (error) {
-      console.error('Error syncing Year 11 Ch14A:', error);
-      showToast('Failed to sync Year 11 Chapter 14A.', 'error');
+      console.error('Error syncing Year 11 Ch4A:', error);
+      showToast('Failed to sync Year 11 Chapter 4A.', 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -727,8 +727,8 @@ const Curriculum = () => {
                     {isMigrating ? 'Updating…' : '⚠ Seed Ch1 Algebra'}
                   </button>
                 )}
-                <button onClick={handleSyncY11Ch14A} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef3c7', color: '#92400e', borderColor: '#fde68a' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Ch14A'}
+                <button onClick={handleSyncY11Ch4A} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef3c7', color: '#92400e', borderColor: '#fde68a' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Ch4A'}
                 </button>
                 {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
                   <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>

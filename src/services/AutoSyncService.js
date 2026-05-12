@@ -33,10 +33,10 @@ const syncConfigs = [
     importFnName: 'importYear7Ch2',
   },
   {
-    chapterId: 'y11a-14',
-    name: 'Inequalities (Year 11 Adv Ch 14)',
-    getScript: () => import('../scripts/importYear11Ch14A.js'),
-    importFnName: 'importYear11Ch14A',
+    chapterId: 'y11a-4',
+    name: 'Equations and Inequations (Year 11 Adv Ch 4)',
+    getScript: () => import('../scripts/importYear11Ch4A.js'),
+    importFnName: 'importYear11Ch4A',
   },
 ];
 
