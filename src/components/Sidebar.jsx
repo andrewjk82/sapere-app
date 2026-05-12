@@ -90,7 +90,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
         className="app-sidebar__brand"
       >
         <div className="app-sidebar__logo">
-          <img src="/logo.png?v=1" alt="Sapere Logo" />
+          <img src="/logo.png?v=2" alt="Sapere Logo" />
         </div>
         <div>
           <h1>Sapere Aude Academia</h1>
