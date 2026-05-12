@@ -520,14 +520,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         all[currentPage] = strokesRef.current;
         return all.some(pageHasInk);
       },
-      exportImage: () => Promise.resolve(
-        pageHasInk(strokesRef.current) ? getCompositeDataURL(strokesRef.current) : null
+      exportImage: ({ force = false } = {}) => Promise.resolve(
+        (force || pageHasInk(strokesRef.current)) ? getCompositeDataURL(strokesRef.current) : null
       ),
-      exportPageImages: async () => {
+      exportPageImages: async ({ force = false } = {}) => {
         const all = [...pages];
         all[currentPage] = strokesRef.current;
         return all
-          .filter(pageHasInk)
+          .filter((ps, index) => force ? index === currentPage || pageHasInk(ps) : pageHasInk(ps))
           .map(ps => getCompositeDataURL(ps || []));
       },
       clear: () => {

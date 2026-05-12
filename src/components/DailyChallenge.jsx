@@ -1202,12 +1202,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     if (isGraphSketch) {
       setIsSubmittingCanvas(true);
-      // If not already captured by showSplitScreen check
-      if (!canvasDataUrl && canvasRef.current?.hasContent?.()) {
+      // Graph submissions must carry an image for manual review even when ink
+      // detection misses a stroke after recent traffic-saving changes.
+      if (!canvasDataUrl && canvasRef.current) {
         try {
-          canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
-          canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
-        } catch(e){}
+          canvasPageImages = await canvasRef.current.exportPageImages?.({ force: true }) || [];
+          canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage?.({ force: true });
+        } catch (err) {
+          console.error("Failed to export graph answer image", err);
+        }
       }
       correct = false; // Pending review
     } else if (currentQ?.subQuestions?.length > 0) {
