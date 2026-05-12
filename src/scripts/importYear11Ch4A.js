@@ -302,8 +302,8 @@ export const importYear11Ch4A = async () => {
   
   try {
     const qRef = collection(db, 'questions');
-    // We check against the topicCode to avoid duplicates for this specific batch
-    const existingSnap = await getDocs(query(qRef, where('topicCode', '==', '14A'), where('year', '==', 'Year 11')));
+    // Check against topicCode '4A' and chapterId 'y11a-4'
+    const existingSnap = await getDocs(query(qRef, where('topicCode', '==', '4A'), where('chapterId', '==', 'y11a-4')));
     const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question));
     
     for (const q of allQuestions) {
