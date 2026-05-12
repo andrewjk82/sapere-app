@@ -19,7 +19,6 @@ import { useToast } from '../context/ToastContext';
 import MathGraph from './MathGraph';
 
 const QUESTION_PAGE_SIZE = 10;
-const questionBankSessionCache = new Map();
 
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
@@ -232,16 +231,6 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const loadQuestionPage = React.useCallback(async ({ reset = false, cursor = null, currentQuestions = [] } = {}) => {
     if (!chapterId) return;
 
-    const cacheKey = `questions:${chapterId}`;
-    const cached = questionBankSessionCache.get(cacheKey);
-    if (reset && cached) {
-      setQuestions(cached.questions);
-      setLastQuestionDoc(cached.lastDoc);
-      setHasMoreQuestions(cached.hasMore);
-      setLoading(false);
-      return;
-    }
-
     if (reset) setLoading(true);
     else setLoadingMore(true);
 
@@ -265,11 +254,6 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       setQuestions(nextQuestions);
       setLastQuestionDoc(lastDoc);
       setHasMoreQuestions(hasMore);
-      questionBankSessionCache.set(cacheKey, {
-        questions: nextQuestions,
-        lastDoc,
-        hasMore,
-      });
     } catch (err) {
       console.error('Question bank load failed:', err);
     } finally {
