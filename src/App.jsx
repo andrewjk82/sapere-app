@@ -369,10 +369,18 @@ function App() {
   // list (Dashboard), and new-item toasts. No per-component subscription.
 
   useEffect(() => {
-    if (!user?.uid) return undefined;
+    if (!user?.uid) {
+      setProfile(null);
+      setProfileLoaded(false);
+      return undefined;
+    }
     const ref = doc(db, 'users', user.uid);
     return onSnapshot(ref, (snap) => {
       setProfile(snap.exists() ? snap.data() : null);
+      setProfileLoaded(true);
+    }, (err) => {
+      console.error('Profile listener error:', err);
+      setProfile(null);
       setProfileLoaded(true);
     });
   }, [user?.uid]);
@@ -447,7 +455,7 @@ function App() {
     } finally {
       if (!silent) setLoading(false);
     }
-  }, [user, isAdmin]);
+  }, [user, profileLoaded, profile, isAdmin]);
 
 
   useEffect(() => {
