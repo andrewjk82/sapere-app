@@ -30,9 +30,14 @@ import {
   setDoc,
   query,
   where,
-  orderBy,
 } from "firebase/firestore";
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from "../services/leaderboardService";
+import {
+  fetchHscResultsIncremental,
+  loadCachedHscResults,
+  mergeHscResults,
+  saveCachedHscResults,
+} from "../services/hscResultsService";
 import { useToast } from "../context/ToastContext";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import MathView, { toDisplayText } from "./MathView";
@@ -198,6 +203,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     assignedCourse: ["Advanced"],
     dailyQuestionCount: 10,
     calculationEnabled: true,
+    showHscGraph: false,
   });
 
   const styles = {
@@ -287,6 +293,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             : [data.assignedCourse || "Advanced"],
           dailyQuestionCount: data.dailyQuestionCount || 10,
           calculationEnabled: data.calculationEnabled !== false,
+          showHscGraph: data.showHscGraph === true,
         });
         setLoading(false);
       } else {
@@ -324,6 +331,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                   : [mData.assignedCourse || "Advanced"],
                 dailyQuestionCount: mData.dailyQuestionCount || 10,
                 calculationEnabled: mData.calculationEnabled !== false,
+                showHscGraph: mData.showHscGraph === true,
               });
             }
             setLoading(false);
@@ -434,20 +442,20 @@ const StudentDetail = ({ studentId, onBack }) => {
   useEffect(() => {
     if (!studentId || !student?.id) return;
     const colName = student.source === "manual" ? "students" : "users";
-    const hscQuery = query(
-      collection(db, colName, studentId, "hsc_results"),
-      orderBy("examDate", "desc"),
-    );
-    return onSnapshot(
-      hscQuery,
-      (snap) => {
-        setHscRecords(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
-      },
-      (err) => {
-        console.error("HSC records listener error:", err);
-        setHscRecords([]);
-      },
-    );
+    const cached = loadCachedHscResults(colName, studentId);
+    if (cached.records.length > 0) setHscRecords(cached.records);
+    let cancelled = false;
+    fetchHscResultsIncremental(colName, studentId)
+      .then(({ records }) => {
+        if (!cancelled) setHscRecords(records);
+      })
+      .catch((err) => {
+        console.error("HSC records fetch error:", err);
+        if (!cancelled && cached.records.length === 0) setHscRecords([]);
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [studentId, student?.source, student?.id]);
 
   const handleUpdateProfile = async () => {
@@ -871,7 +879,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     try {
       setHscSaving(true);
       const colName = student.source === "manual" ? "students" : "users";
-      await addDoc(collection(db, colName, studentId, "hsc_results"), {
+      const docRef = await addDoc(collection(db, colName, studentId, "hsc_results"), {
         examDate: hscForm.examDate,
         paper: hscForm.paper.trim(),
         score,
@@ -881,6 +889,22 @@ const StudentDetail = ({ studentId, onBack }) => {
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       });
+      const nowMs = Date.now();
+      const localRecord = {
+        id: docRef.id,
+        examDate: hscForm.examDate,
+        paper: hscForm.paper.trim(),
+        score,
+        total,
+        percentage: Math.round((score / total) * 1000) / 10,
+        notes: hscForm.notes.trim(),
+        createdAtMs: nowMs,
+        updatedAtMs: nowMs,
+      };
+      const cached = loadCachedHscResults(colName, studentId);
+      const merged = mergeHscResults(cached.records, [localRecord]);
+      saveCachedHscResults(colName, studentId, merged, Math.max(cached.lastSyncMs, nowMs));
+      setHscRecords(merged);
       setHscForm({
         examDate: getTodayDateKey(),
         paper: "",
@@ -901,7 +925,15 @@ const StudentDetail = ({ studentId, onBack }) => {
     if (!confirm(`Delete ${record.paper || "this HSC result"}?`)) return;
     try {
       const colName = student.source === "manual" ? "students" : "users";
-      await deleteDoc(doc(db, colName, studentId, "hsc_results", record.id));
+      const nowMs = Date.now();
+      await updateDoc(doc(db, colName, studentId, "hsc_results", record.id), {
+        isDeleted: true,
+        updatedAt: serverTimestamp(),
+      });
+      const cached = loadCachedHscResults(colName, studentId);
+      const merged = mergeHscResults(cached.records, [{ ...record, isDeleted: true, updatedAtMs: nowMs }]);
+      saveCachedHscResults(colName, studentId, merged, Math.max(cached.lastSyncMs, nowMs));
+      setHscRecords(merged);
       showToast("HSC result deleted.", "success");
     } catch (err) {
       console.error("HSC delete error:", err);
@@ -3048,6 +3080,59 @@ const StudentDetail = ({ studentId, onBack }) => {
                         borderRadius: "14px",
                         border: "1px solid #e2e8f0",
                         fontWeight: 700,
+                      }}
+                    />
+                  </div>
+                </div>
+                <div
+                  onClick={() =>
+                    setEditForm({
+                      ...editForm,
+                      showHscGraph: !editForm.showHscGraph,
+                    })
+                  }
+                  style={{
+                    gridColumn: "1 / -1",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: "16px",
+                    padding: "18px",
+                    borderRadius: "18px",
+                    background: editForm.showHscGraph ? "#f5f3ff" : "#f8fafc",
+                    border: `1.5px solid ${editForm.showHscGraph ? "#c4b5fd" : "#e2e8f0"}`,
+                    cursor: "pointer",
+                  }}
+                >
+                  <div>
+                    <div style={{ fontWeight: 900, color: "#1e1b4b" }}>
+                      Show HSC graph to student
+                    </div>
+                    <div style={{ marginTop: "4px", fontSize: "0.8rem", color: "#64748b", fontWeight: 700 }}>
+                      Adds the HSC score trend to the top of the student Curriculum page.
+                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "48px",
+                      height: "28px",
+                      borderRadius: "999px",
+                      background: editForm.showHscGraph ? "#7c3aed" : "#cbd5e1",
+                      position: "relative",
+                      flexShrink: 0,
+                      transition: "all 0.2s",
+                    }}
+                  >
+                    <motion.div
+                      animate={{ x: editForm.showHscGraph ? 22 : 4 }}
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        borderRadius: "50%",
+                        background: "white",
+                        position: "absolute",
+                        top: "4px",
+                        boxShadow: "0 2px 6px rgba(0,0,0,0.16)",
                       }}
                     />
                   </div>

@@ -22,6 +22,10 @@ import { importYear7Ch1 } from '../scripts/importYear7Ch1';
 import { importYear7Ch2 } from '../scripts/importYear7Ch2';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
+import {
+  fetchHscResultsIncremental,
+  loadCachedHscResults,
+} from '../services/hscResultsService';
 import './curriculum.css';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
@@ -41,6 +45,8 @@ const Curriculum = () => {
   const [questionCounts, setQuestionCounts] = useState({});
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [hscRecords, setHscRecords] = useState([]);
+  const [hscModalOpen, setHscModalOpen] = useState(false);
 
   // Fetch all question counts for visible chapters
   useEffect(() => {
@@ -417,6 +423,27 @@ const Curriculum = () => {
     return unsub;
   }, [user, isAdmin]);
 
+  useEffect(() => {
+    if (!user?.uid || isAdmin || profile?.showHscGraph !== true) {
+      setHscRecords([]);
+      return undefined;
+    }
+    const cached = loadCachedHscResults('users', user.uid);
+    if (cached.records.length > 0) setHscRecords(cached.records);
+    let cancelled = false;
+    fetchHscResultsIncremental('users', user.uid)
+      .then(({ records }) => {
+        if (!cancelled) setHscRecords(records);
+      })
+      .catch((err) => {
+        console.error('HSC records fetch error:', err);
+        if (!cancelled && cached.records.length === 0) setHscRecords([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [user?.uid, isAdmin, profile?.showHscGraph]);
+
   const courses = useMemo(() => {
     if (selectedYear === 'Year 11') return ['Standard', 'Advanced', 'Extension 1'];
     if (selectedYear === 'Year 12') return ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
@@ -448,6 +475,128 @@ const Curriculum = () => {
     );
   }, [currentRecord, searchQuery, isAdmin, profile]);
 
+  const renderStudentHscChart = () => {
+    if (profile?.showHscGraph !== true) return null;
+    const points = [...hscRecords]
+      .filter((record) => record.examDate && Number(record.total) > 0)
+      .sort((a, b) => String(a.examDate).localeCompare(String(b.examDate)))
+      .map((record) => ({
+        ...record,
+        percentage: Number(record.percentage ?? ((Number(record.score) / Number(record.total)) * 100)),
+      }));
+    if (points.length === 0) return null;
+
+    const width = 760;
+    const height = 230;
+    const padX = 42;
+    const padY = 34;
+    const minScore = Math.max(0, Math.min(...points.map((p) => p.percentage)) - 8);
+    const maxScore = Math.min(100, Math.max(...points.map((p) => p.percentage)) + 8);
+    const range = Math.max(1, maxScore - minScore);
+    const xFor = (idx) => points.length === 1
+      ? width / 2
+      : padX + (idx * (width - padX * 2)) / (points.length - 1);
+    const yFor = (value) => padY + ((maxScore - value) / range) * (height - padY * 2);
+    const path = points.map((point, idx) => `${idx === 0 ? 'M' : 'L'} ${xFor(idx)} ${yFor(point.percentage)}`).join(' ');
+    const latest = points[points.length - 1];
+
+    return (
+      <>
+        <button
+          type="button"
+          onClick={() => setHscModalOpen(true)}
+          style={{
+            width: '100%',
+            border: 'none',
+            textAlign: 'left',
+            borderRadius: 28,
+            padding: 24,
+            marginBottom: 24,
+            color: 'white',
+            background: 'linear-gradient(135deg, #312e81, #4f46e5 54%, #7c3aed)',
+            boxShadow: '0 24px 60px rgba(79,70,229,0.2)',
+            cursor: 'pointer',
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            <div>
+              <div style={{ fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.74 }}>HSC Progress</div>
+              <div style={{ marginTop: 8, fontSize: '2rem', fontWeight: 950, lineHeight: 1 }}>{latest.percentage.toFixed(1)}%</div>
+            </div>
+            <div style={{ textAlign: 'right', fontWeight: 800, opacity: 0.9 }}>
+              <div>{latest.paper}</div>
+              <div style={{ fontSize: '0.8rem', opacity: 0.72 }}>{latest.examDate}</div>
+            </div>
+          </div>
+          <svg viewBox={`0 0 ${width} ${height}`} style={{ width: '100%', display: 'block', marginTop: 10 }} role="img" aria-label="HSC score trend">
+            <defs>
+              <linearGradient id="studentHscLine" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#fef3c7" />
+                <stop offset="55%" stopColor="#f9a8d4" />
+                <stop offset="100%" stopColor="#c4b5fd" />
+              </linearGradient>
+            </defs>
+            {[0, 1, 2].map((line) => {
+              const y = padY + (line * (height - padY * 2)) / 2;
+              return <line key={line} x1={padX} x2={width - padX} y1={y} y2={y} stroke="rgba(255,255,255,0.16)" strokeWidth="1" />;
+            })}
+            <path d={path} fill="none" stroke="url(#studentHscLine)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+            {points.map((point, idx) => (
+              <g key={point.id || `${point.examDate}-${idx}`}>
+                <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="7" fill="#fff" />
+                <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="3.5" fill="#7c3aed" />
+              </g>
+            ))}
+          </svg>
+        </button>
+
+        <AnimatePresence>
+          {hscModalOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'grid', placeItems: 'center', padding: 20 }}
+            >
+              <div onClick={() => setHscModalOpen(false)} style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.52)', backdropFilter: 'blur(8px)' }} />
+              <motion.div
+                initial={{ scale: 0.96, y: 12 }}
+                animate={{ scale: 1, y: 0 }}
+                exit={{ scale: 0.96, y: 12 }}
+                style={{ position: 'relative', width: 'min(720px, 100%)', maxHeight: '82vh', overflowY: 'auto', background: 'white', borderRadius: 28, padding: 28, boxShadow: '0 30px 80px rgba(15,23,42,0.32)' }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginBottom: 18 }}>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.12em', textTransform: 'uppercase' }}>HSC Papers</div>
+                    <h3 style={{ margin: '6px 0 0', color: '#1e1b4b' }}>Exam Record</h3>
+                  </div>
+                  <button onClick={() => setHscModalOpen(false)} style={{ width: 40, height: 40, borderRadius: 12, border: 'none', background: '#f1f5f9', color: '#64748b', cursor: 'pointer' }}>
+                    <X size={18} />
+                  </button>
+                </div>
+                <div style={{ display: 'grid', gap: 10 }}>
+                  {[...points].reverse().map((record) => (
+                    <div key={record.id} style={{ display: 'grid', gridTemplateColumns: '110px minmax(0,1fr) 90px', gap: 14, alignItems: 'center', padding: 14, borderRadius: 16, background: '#f8fafc', border: '1px solid #eef2ff' }}>
+                      <div style={{ fontWeight: 900, color: '#64748b', fontSize: '0.82rem' }}>{record.examDate}</div>
+                      <div style={{ minWidth: 0 }}>
+                        <div style={{ fontWeight: 900, color: '#1e1b4b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{record.paper}</div>
+                        {record.notes && <div style={{ marginTop: 4, color: '#64748b', fontSize: '0.78rem' }}>{record.notes}</div>}
+                      </div>
+                      <div style={{ textAlign: 'right', fontWeight: 950, color: '#4f46e5' }}>
+                        {Number(record.score)}/{Number(record.total)}
+                        <div style={{ fontSize: '0.72rem', color: '#7c3aed' }}>{record.percentage.toFixed(1)}%</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </>
+    );
+  };
+
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
   return (
@@ -459,7 +608,10 @@ const Curriculum = () => {
       </div>
 
       {!isAdmin ? (
-        <LearningPath profile={profile} />
+        <>
+          {renderStudentHscChart()}
+          <LearningPath profile={profile} />
+        </>
       ) : (
         <>
           {/* ── Sticky top bar ── */}

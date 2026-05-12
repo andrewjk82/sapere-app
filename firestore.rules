@@ -18,7 +18,11 @@ service cloud.firestore {
       allow update, delete: if isAdmin() || (isSignedIn() && resource.data.tutorId == request.auth.uid);
 
       match /hsc_results/{resultId} {
-        allow read, write: if isAdmin();
+        allow read: if isAdmin()
+          || (isSignedIn()
+            && request.auth.uid == userId
+            && get(/databases/$(database)/documents/users/$(userId)).data.showHscGraph == true);
+        allow write: if isAdmin();
       }
     }
 
