@@ -307,8 +307,10 @@ export const importYear11Ch4A = async () => {
     const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question));
     
     for (const q of allQuestions) {
-      if (!existingQuestions.has(q.question)) {
-        const { serverTimestamp } = await import('firebase/firestore');
+      const existingDoc = existingSnap.docs.find(d => d.data().question === q.question);
+      const { serverTimestamp } = await import('firebase/firestore');
+      
+      if (!existingDoc) {
         await addDoc(collection(db, 'questions'), {
           ...q,
           isActive: true,
@@ -316,6 +318,15 @@ export const importYear11Ch4A = async () => {
           updatedAt: serverTimestamp()
         });
         importedCount++;
+      } else if (!existingDoc.data().createdAt) {
+        // Fix missing createdAt for existing questions
+        const { doc, updateDoc } = await import('firebase/firestore');
+        await updateDoc(doc(db, 'questions', existingDoc.id), {
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+          isActive: true
+        });
+        importedCount++; // Count as updated/fixed
       }
     }
   } catch (error) {
