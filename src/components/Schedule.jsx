@@ -163,7 +163,7 @@ const getAssignedCurriculumTopics = (student = {}) => {
   chapters.forEach((chapter) => {
     if (Array.isArray(chapter.topics) && chapter.topics.length > 0) {
       chapter.topics.forEach((topic) => {
-        const isAssigned = assignedIds.has(topic.id);
+        const isAssigned = assignedIds.has(topic.id) || assignedIds.has(chapter.id);
         if (assignedIds.size > 0 && !isAssigned) return;
         items.push({
           id: topic.id,
