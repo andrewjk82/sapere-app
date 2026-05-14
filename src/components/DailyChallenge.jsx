@@ -1665,8 +1665,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           : null;
 
         const baseRecord = {
-          completed: true,
-          abandoned: false, // Explicitly mark as not abandoned
+          completed: !isAbandoned,
+          abandoned: isAbandoned,
           id: today,
           score: actualScore,
           total: totalPossibleScore,

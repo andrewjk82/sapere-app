@@ -588,8 +588,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       setDailyStats(sortStatsByDateDesc([...daily, ...calc]));
     const unsubDaily = onSnapshot(
       query(
-        collection(db, activeStudentCollection, activeStudentId, "daily_stats"),
-        where("completed", "==", true),
+        collection(db, activeStudentCollection, activeStudentId, "daily_stats")
       ),
       (snap) => {
         daily = snap.docs
@@ -603,8 +602,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     );
     const unsubCalc = onSnapshot(
       query(
-        collection(db, activeStudentCollection, activeStudentId, "calc_stats"),
-        where("completed", "==", true),
+        collection(db, activeStudentCollection, activeStudentId, "calc_stats")
       ),
       (snap) => {
         calc = snap.docs
@@ -1432,8 +1430,30 @@ const StudentDetail = ({ studentId, onBack }) => {
               : "Daily Practice"}{" "}
             • {stat.id}
           </div>
-          <div style={{ fontSize: "0.75rem", color: "#64748b" }}>
-            Score: {stat.score}/{stat.total}
+          <div style={{ fontSize: "0.75rem", color: "#64748b", display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px' }}>
+            <span>Score: {stat.score}/{stat.total}</span>
+            {stat.abandoned && (
+              <span style={{ 
+                fontSize: '0.6rem', 
+                fontWeight: 900, 
+                padding: '2px 6px', 
+                background: '#fee2e2', 
+                color: '#ef4444', 
+                borderRadius: '4px',
+                letterSpacing: '0.02em'
+              }}>ABANDONED</span>
+            )}
+            {!stat.completed && !stat.abandoned && (
+              <span style={{ 
+                fontSize: '0.6rem', 
+                fontWeight: 900, 
+                padding: '2px 6px', 
+                background: '#fef9c3', 
+                color: '#a16207', 
+                borderRadius: '4px',
+                letterSpacing: '0.02em'
+              }}>IN PROGRESS</span>
+            )}
           </div>
         </div>
       </div>
