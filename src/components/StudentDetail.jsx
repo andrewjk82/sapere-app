@@ -1867,6 +1867,42 @@ const StudentDetail = ({ studentId, onBack }) => {
                 >
                   Recalculate XP
                 </button>
+                <button
+                  onClick={async () => {
+                    if (!window.confirm("이 학생의 오늘 챌린지 상태(완료, 중단)를 모두 초기화하여 다시 풀 수 있게 하시겠습니까?")) return;
+                    try {
+                      const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                      const bootId = `boot_${activeStudentId}_${todayStr}`;
+                      await setDoc(doc(db, "sync_meta", bootId), {
+                        version: Date.now(),
+                        statusVersion: Date.now(),
+                        updatedAt: serverTimestamp(),
+                        status: {
+                          daily: "open",
+                          calc: "open",
+                        },
+                        resetAt: new Date().toISOString(),
+                        resetBy: "teacher",
+                      }, { merge: true });
+                      showToast("오늘자 상태가 모두 초기화되었습니다! 학생에게 앱을 새로고침하라고 안내해 주세요.", "success");
+                    } catch (err) {
+                      showToast("초기화 실패: " + err.message, "error");
+                    }
+                  }}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#fff1f2",
+                    color: "#e11d48",
+                    border: "1px solid #ffe4e6",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    marginLeft: "8px",
+                  }}
+                >
+                  Force Reset Today
+                </button>
               </div>
               <div style={{ display: "grid", gap: "12px" }}>
                 <div
