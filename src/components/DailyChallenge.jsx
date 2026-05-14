@@ -797,12 +797,43 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setCalcCompletedToday(Boolean(cached.calcCompletedToday));
       setCalcAbandonedToday(Boolean(cached.calcAbandonedToday));
     };
+
+    // ── Realtime Boot Record (sync_meta) Listener ──
+    // Ensures teacher-initiated resets are reflected immediately on the student's phone.
+    const today = new Date().toLocaleDateString('en-CA');
+    const bootDocId = `boot_${user.uid}_${today}`;
+    const unsubBoot = onSnapshot(doc(db, 'sync_meta', bootDocId), (snap) => {
+      if (snap.exists()) {
+        const data = snap.data();
+        const currentCache = localCache.get(getChallengeBootCacheKey(user.uid)) || {};
+        
+        // If the server says 'open' but we have 'abandoned'/'completed' locally, update it.
+        const patch = {
+          date: today,
+          dailyStatus: data.dailyStatus || 'open',
+          calcStatus: data.calcStatus || 'open',
+          todayCompleted: data.dailyStatus === 'completed',
+          abandonedToday: data.dailyStatus === 'abandoned',
+          calcCompletedToday: data.calcStatus === 'completed',
+          calcAbandonedToday: data.calcStatus === 'abandoned',
+          savedAt: Date.now()
+        };
+
+        // Only update if something actually changed to avoid infinite flush cycles
+        if (JSON.stringify(patch) !== JSON.stringify(currentCache)) {
+           localCache.set(getChallengeBootCacheKey(user.uid), patch);
+           applyCachedStatus();
+        }
+      }
+    });
+
     const handleStorage = (event) => {
       if (!event || event.key === cacheKey) applyCachedStatus();
     };
     window.addEventListener('storage', handleStorage);
     window.addEventListener('sapere-challenge-reset-applied', handleStorage);
     return () => {
+      unsubBoot();
       window.removeEventListener('storage', handleStorage);
       window.removeEventListener('sapere-challenge-reset-applied', handleStorage);
     };
