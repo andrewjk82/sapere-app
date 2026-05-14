@@ -164,7 +164,8 @@ const getAssignedCurriculumTopics = (student = {}) => {
     if (Array.isArray(chapter.topics) && chapter.topics.length > 0) {
       chapter.topics.forEach((topic) => {
         const isAssigned = assignedIds.has(topic.id) || assignedIds.has(chapter.id);
-        if (assignedIds.size > 0 && !isAssigned) return;
+        const isCompleted = completedIds.has(topic.id) || completedIds.has(chapter.id);
+        if (assignedIds.size > 0 && !isAssigned && !isCompleted) return;
         items.push({
           id: topic.id,
           label: `${topic.code ? `${topic.code} · ` : ''}${topic.group ? `${topic.group}: ` : ''}${topic.title}`,
@@ -174,7 +175,7 @@ const getAssignedCurriculumTopics = (student = {}) => {
       });
       return;
     }
-    if (assignedIds.size === 0 || assignedIds.has(chapter.id)) {
+    if (assignedIds.size === 0 || assignedIds.has(chapter.id) || completedIds.has(chapter.id)) {
       items.push({
         id: chapter.id,
         label: chapter.title,
