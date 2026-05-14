@@ -6,6 +6,8 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
+import { CURRICULUM_DATA } from '../constants/curriculumData';
+import { localCache } from '../services/localCacheService';
 
 const TIME_OPTIONS = [
   '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
@@ -15,6 +17,8 @@ const TIME_OPTIONS = [
 ];
 
 const SESSION_ACCENTS = ['#4f46e5', '#0891b2', '#16a34a', '#db2777', '#ea580c', '#7c3aed'];
+const SCHEDULE_STUDENT_PROFILE_CACHE_VERSION = 1;
+const STUDENT_LIST_CACHE_VERSION = 2;
 
 const formatDateKey = (date) => {
   const year = date.getFullYear();
@@ -44,10 +48,51 @@ const getSessionAccent = (session) => {
   return SESSION_ACCENTS[sum % SESSION_ACCENTS.length];
 };
 
+const getScheduleStudentProfileCacheKey = (studentId) =>
+  `schedule-student-profile:v${SCHEDULE_STUDENT_PROFILE_CACHE_VERSION}:${studentId}`;
+
+const getAdminStudentsCacheKey = () => `students:v${STUDENT_LIST_CACHE_VERSION}:admin`;
+
+const getSessionStudentStub = (session = {}) => ({
+  id: session.studentId || session.groupStudents?.[0]?.studentId || '',
+  name: session.studentName || session.groupStudentNames?.[0] || '',
+  email: session.studentEmail || session.groupStudents?.[0]?.email || '',
+  assignedYear: session.assignedYear || session.year || session.level,
+  assignedCourse: session.assignedCourse || session.course || session.subject,
+  assignedChapters: session.assignedChapters || [],
+  completedChapters: session.completedChapters || [],
+});
+
+const getCachedStudentProfileForSession = (session = {}) => {
+  const studentId = session.studentId || session.groupStudents?.[0]?.studentId;
+  if (!studentId) return null;
+
+  const directCached = localCache.get(getScheduleStudentProfileCacheKey(studentId));
+  if (directCached?.profile) return directCached.profile;
+
+  const listCached = localCache.get(getAdminStudentsCacheKey());
+  const students = Array.isArray(listCached?.students) ? listCached.students : [];
+  const email = (session.studentEmail || session.groupStudents?.[0]?.email || '').trim().toLowerCase();
+  const found = students.find((student) =>
+    student.id === studentId || (email && String(student.email || '').trim().toLowerCase() === email)
+  );
+  if (found) {
+    localCache.set(getScheduleStudentProfileCacheKey(studentId), {
+      savedAt: Date.now(),
+      profile: found,
+    });
+    return found;
+  }
+
+  const stub = getSessionStudentStub(session);
+  return stub.id ? stub : null;
+};
+
 const buildSessionUpdatePayload = (editData) => ({
   date: editData.date || '',
   startTime: editData.startTime || '',
   endTime: editData.endTime || '',
+  learnedTopics: Array.isArray(editData.learnedTopics) ? editData.learnedTopics : [],
   notes: editData.notes || '',
   homework: editData.homework || '',
   isHomeworkCompleted: Boolean(editData.isHomeworkCompleted),
@@ -69,6 +114,114 @@ const getDateShiftDays = (fromDateKey, toDateKey) => {
   return Math.round((toDate.getTime() - fromDate.getTime()) / (24 * 60 * 60 * 1000));
 };
 
+const stripHtml = (value = '') => String(value).replace(/[<>&]/g, (char) => ({
+  '<': '&lt;',
+  '>': '&gt;',
+  '&': '&amp;'
+}[char]));
+
+const getStudentDisplayYear = (student = {}) => {
+  const years = Array.isArray(student.assignedYear) ? student.assignedYear : [student.assignedYear || student.year || student.level];
+  return years.find(year => typeof year === 'string' && year.startsWith('Year ')) || 'Year 11';
+};
+
+const getStudentCurriculumChapters = (student = {}) => {
+  const years = Array.isArray(student.assignedYear) ? student.assignedYear : [student.assignedYear || student.year || student.level || 'Year 11'];
+  const courses = Array.isArray(student.assignedCourse) ? student.assignedCourse : [student.assignedCourse || student.course || 'Advanced'];
+  const chapters = [];
+
+  years.forEach((year) => {
+    const yearData = CURRICULUM_DATA[year];
+    if (!yearData) return;
+    if (Array.isArray(yearData)) {
+      chapters.push(...yearData);
+      return;
+    }
+    courses.forEach((course) => {
+      if (Array.isArray(yearData[course])) chapters.push(...yearData[course]);
+    });
+    if (chapters.length === 0) {
+      const firstCourse = Object.values(yearData).find(Array.isArray);
+      if (firstCourse) chapters.push(...firstCourse);
+    }
+  });
+
+  const seen = new Set();
+  return chapters.filter((chapter) => {
+    if (!chapter?.id || seen.has(chapter.id)) return false;
+    seen.add(chapter.id);
+    return true;
+  });
+};
+
+const getAssignedCurriculumTopics = (student = {}) => {
+  const assignedIds = new Set(Array.isArray(student.assignedChapters) ? student.assignedChapters : []);
+  const completedIds = new Set(Array.isArray(student.completedChapters) ? student.completedChapters : []);
+  const chapters = getStudentCurriculumChapters(student);
+  const items = [];
+
+  chapters.forEach((chapter) => {
+    if (Array.isArray(chapter.topics) && chapter.topics.length > 0) {
+      chapter.topics.forEach((topic) => {
+        const isAssigned = assignedIds.has(topic.id);
+        if (assignedIds.size > 0 && !isAssigned) return;
+        items.push({
+          id: topic.id,
+          label: `${topic.code ? `${topic.code} · ` : ''}${topic.group ? `${topic.group}: ` : ''}${topic.title}`,
+          chapterTitle: chapter.title,
+          completed: completedIds.has(topic.id)
+        });
+      });
+      return;
+    }
+    if (assignedIds.size === 0 || assignedIds.has(chapter.id)) {
+      items.push({
+        id: chapter.id,
+        label: chapter.title,
+        chapterTitle: chapter.title,
+        completed: completedIds.has(chapter.id)
+      });
+    }
+  });
+
+  return items;
+};
+
+const formatLearnedTopics = (topics = []) => topics
+  .map(topic => topic?.label || topic?.title || topic?.id)
+  .filter(Boolean);
+
+const buildScheduleUpdateMessage = (session, updatePayload) => {
+  const subjectLabel = normalizeSubjectLabel(session.subject || 'lesson');
+  const learned = formatLearnedTopics(updatePayload.learnedTopics);
+  const lines = [
+    `Your ${subjectLabel} session has been updated.`,
+    '',
+    `Date: ${updatePayload.date}`,
+    `Time: ${updatePayload.startTime} - ${updatePayload.endTime}`,
+  ];
+  if (learned.length > 0) {
+    lines.push('', 'Today we covered:', ...learned.map(item => `- ${item}`));
+  }
+  if (updatePayload.notes) lines.push('', 'Notes:', updatePayload.notes);
+  if (updatePayload.homework) lines.push('', 'Homework:', updatePayload.homework);
+  return lines.join('\n');
+};
+
+const buildScheduleUpdateHtml = (session, updatePayload) => {
+  const subjectLabel = stripHtml(normalizeSubjectLabel(session.subject || 'lesson'));
+  const learned = formatLearnedTopics(updatePayload.learnedTopics);
+  return `
+    <p style="margin:0 0 16px;">Your <strong>${subjectLabel}</strong> session has been updated.</p>
+    <div style="margin:0 0 18px; padding:14px 16px; border-radius:14px; background:#eef2ff; color:#312e81; font-weight:800;">
+      ${stripHtml(updatePayload.date)} · ${stripHtml(updatePayload.startTime)} - ${stripHtml(updatePayload.endTime)}
+    </div>
+    ${learned.length ? `<h3 style="margin:18px 0 8px; color:#1e1b4b;">Today we covered</h3><ul style="margin:0 0 16px; padding-left:20px;">${learned.map(item => `<li>${stripHtml(item)}</li>`).join('')}</ul>` : ''}
+    ${updatePayload.notes ? `<h3 style="margin:18px 0 8px; color:#1e1b4b;">Notes</h3><p style="white-space:pre-wrap; margin:0 0 16px;">${stripHtml(updatePayload.notes)}</p>` : ''}
+    ${updatePayload.homework ? `<h3 style="margin:18px 0 8px; color:#1e1b4b;">Homework</h3><p style="white-space:pre-wrap; margin:0;">${stripHtml(updatePayload.homework)}</p>` : ''}
+  `;
+};
+
 const Schedule = () => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
@@ -82,9 +235,11 @@ const Schedule = () => {
     isHomeworkCompleted: false,
     startTime: '',
     endTime: '',
-    date: ''
+    date: '',
+    learnedTopics: []
   });
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [studentProfileCache, setStudentProfileCache] = useState({});
 
   // ── Handle Resize ──────────────────────────────────────────────────────────
   useEffect(() => {
@@ -166,6 +321,11 @@ const Schedule = () => {
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const handleOpenDetails = (session) => {
+    const cachedProfile = getCachedStudentProfileForSession(session);
+    const studentId = session.studentId || session.groupStudents?.[0]?.studentId;
+    if (studentId && cachedProfile) {
+      setStudentProfileCache(prev => ({ ...prev, [studentId]: cachedProfile }));
+    }
     setSelectedSession(session);
     setEditData({
       notes: session.notes || '',
@@ -173,7 +333,30 @@ const Schedule = () => {
       isHomeworkCompleted: session.isHomeworkCompleted || false,
       startTime: session.startTime || '10:00 AM',
       endTime: session.endTime || '11:30 AM',
-      date: session.date || ''
+      date: session.date || '',
+      learnedTopics: Array.isArray(session.learnedTopics) ? session.learnedTopics : []
+    });
+  };
+
+  const activeStudentProfile = useMemo(() => {
+    const studentId = selectedSession?.studentId || selectedSession?.groupStudents?.[0]?.studentId;
+    return studentId ? studentProfileCache[studentId] : null;
+  }, [selectedSession, studentProfileCache]);
+
+  const curriculumTopicOptions = useMemo(() => (
+    activeStudentProfile ? getAssignedCurriculumTopics(activeStudentProfile) : []
+  ), [activeStudentProfile]);
+
+  const toggleLearnedTopic = (topic) => {
+    setEditData(prev => {
+      const current = Array.isArray(prev.learnedTopics) ? prev.learnedTopics : [];
+      const exists = current.some(item => item.id === topic.id);
+      return {
+        ...prev,
+        learnedTopics: exists
+          ? current.filter(item => item.id !== topic.id)
+          : [...current, topic]
+      };
     });
   };
 
@@ -204,6 +387,7 @@ const Schedule = () => {
             date: addDaysToDateKey(currentDate, dateShiftDays),
             startTime: updatePayload.startTime,
             endTime: updatePayload.endTime,
+            learnedTopics: updatePayload.learnedTopics,
             notes: updatePayload.notes,
             homework: updatePayload.homework,
             isHomeworkCompleted: updatePayload.isHomeworkCompleted,
@@ -214,16 +398,32 @@ const Schedule = () => {
         await batch.commit();
       }
 
-      await fetch('/api/send-notif', {
+      const recipients = selectedSession.isGroupedClass && Array.isArray(selectedSession.groupStudents)
+        ? selectedSession.groupStudents
+        : [selectedSession];
+      const text = buildScheduleUpdateMessage(selectedSession, updatePayload);
+      const html = buildScheduleUpdateHtml(selectedSession, updatePayload);
+      await Promise.allSettled(recipients.map((recipient) => fetch('/api/send-notif', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          studentId: selectedSession.studentId,
-          email: selectedSession.studentEmail || selectedSession.email || '',
+          studentId: recipient.studentId,
+          email: recipient.studentEmail || recipient.email || '',
           subject: 'Your schedule has been updated',
-          text: `Your ${selectedSession.subject || 'lesson'} session has been updated to ${updatePayload.date} at ${updatePayload.startTime}.`
+          text,
+          html,
+          metadata: {
+            type: 'schedule_update',
+            sessionId: recipient.id || selectedSession.id,
+            date: updatePayload.date,
+            learnedTopics: updatePayload.learnedTopics
+          }
         })
-      }).catch((err) => console.warn('Schedule update notification failed:', err));
+      }))).then((results) => {
+        results
+          .filter(result => result.status === 'rejected')
+          .forEach(result => console.warn('Schedule update notification failed:', result.reason));
+      });
       
       setSaveChoiceOpen(null);
       setSelectedSession(null);
@@ -812,6 +1012,70 @@ const Schedule = () => {
                       </select>
                     </div>
                   </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Today Covered</label>
+                  {isAdmin ? (
+                    <div style={{ border: '2px solid #f1f5f9', borderRadius: '16px', padding: '14px', display: 'grid', gap: '10px', maxHeight: '220px', overflowY: 'auto', background: '#fff' }}>
+                      {curriculumTopicOptions.length === 0 ? (
+                        <div style={{ color: '#64748b', fontWeight: 700, fontSize: '0.9rem' }}>
+                          No assigned curriculum found{activeStudentProfile ? ` for ${getStudentDisplayYear(activeStudentProfile)}` : ''}.
+                        </div>
+                      ) : (
+                        curriculumTopicOptions.map((topic) => {
+                          const checked = (editData.learnedTopics || []).some(item => item.id === topic.id);
+                          return (
+                            <button
+                              key={topic.id}
+                              type="button"
+                              onClick={() => toggleLearnedTopic(topic)}
+                              style={{
+                                border: 'none',
+                                background: checked ? '#eef2ff' : '#f8fafc',
+                                borderRadius: '12px',
+                                padding: '10px 12px',
+                                display: 'flex',
+                                alignItems: 'flex-start',
+                                gap: '10px',
+                                textAlign: 'left',
+                                cursor: 'pointer'
+                              }}
+                            >
+                              <span style={{
+                                width: '20px',
+                                height: '20px',
+                                borderRadius: '6px',
+                                border: `2px solid ${checked ? '#6366f1' : '#cbd5e1'}`,
+                                background: checked ? '#6366f1' : '#fff',
+                                color: '#fff',
+                                display: 'grid',
+                                placeItems: 'center',
+                                flexShrink: 0,
+                                marginTop: '1px'
+                              }}>
+                                {checked && <Check size={13} strokeWidth={3} />}
+                              </span>
+                              <span style={{ minWidth: 0 }}>
+                                <span style={{ display: 'block', color: checked ? '#312e81' : '#1e293b', fontWeight: 800, fontSize: '0.88rem', lineHeight: 1.35 }}>
+                                  {topic.label}
+                                </span>
+                                <span style={{ display: 'block', color: '#94a3b8', fontWeight: 700, fontSize: '0.72rem', marginTop: '2px' }}>
+                                  {topic.chapterTitle}{topic.completed ? ' · completed' : ''}
+                                </span>
+                              </span>
+                            </button>
+                          );
+                        })
+                      )}
+                    </div>
+                  ) : (
+                    <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', color: '#1e1b4b', fontSize: '1rem' }}>
+                      {Array.isArray(selectedSession.learnedTopics) && selectedSession.learnedTopics.length > 0
+                        ? formatLearnedTopics(selectedSession.learnedTopics).join(', ')
+                        : 'No covered topics recorded for this session.'}
+                    </div>
+                  )}
                 </div>
 
                 <div>

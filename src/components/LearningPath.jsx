@@ -6,11 +6,12 @@ import {
   Check, Play, ArrowRight, BookMarked
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, collection, query, where } from 'firebase/firestore';
+import { doc, getDoc, onSnapshot, collection, query, where, setDoc, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import MathView from './MathView';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
+import { localCache } from '../services/localCacheService';
 
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
@@ -43,18 +44,46 @@ const LearningPath = ({ profile }) => {
       ? `${year.replace(' ', '_')}_${course}`
       : year.replace(' ', '_');
 
-    const unsub = onSnapshot(doc(db, 'curriculum', docId), (snap) => {
-      if (snap.exists() && snap.data().chapters?.length > 0) {
-        setCurriculum(snap.data().chapters);
-      } else {
-        // Fallback to local CURRICULUM_DATA if Firestore doc is missing
-        let fallbackData = CURRICULUM_DATA[year] || [];
-        if (!Array.isArray(fallbackData)) fallbackData = fallbackData[course] || [];
-        setCurriculum(fallbackData);
-      }
+    let cancelled = false;
+    const cacheKey = `curriculum-doc:v1:${docId}`;
+    const cached = localCache.get(cacheKey);
+    if (Array.isArray(cached?.chapters)) {
+      setCurriculum(cached.chapters);
       setLoading(false);
-    });
-    return unsub;
+    }
+
+    const loadCurriculum = async () => {
+      try {
+        const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
+        const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
+        if (cached?.chapters && cached?.version === remoteVersion && remoteVersion > 0) return;
+        const snap = await getDoc(doc(db, 'curriculum', docId));
+        if (cancelled) return;
+        if (snap.exists() && snap.data().chapters?.length > 0) {
+          const chapters = snap.data().chapters;
+          const version = remoteVersion || Date.now();
+          if (!remoteVersion) {
+            setDoc(doc(db, 'sync_meta', 'curriculum'), {
+              version,
+              updatedAt: serverTimestamp(),
+            }, { merge: true }).catch(() => {});
+          }
+          setCurriculum(chapters);
+          localCache.set(cacheKey, { version, savedAt: Date.now(), chapters });
+        } else {
+          let fallbackData = CURRICULUM_DATA[year] || [];
+          if (!Array.isArray(fallbackData)) fallbackData = fallbackData[course] || [];
+          setCurriculum(fallbackData);
+        }
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    };
+
+    loadCurriculum();
+    return () => {
+      cancelled = true;
+    };
   }, [year, activeSubject, profile?.assignedCourse]);
 
   // Fetch Progress

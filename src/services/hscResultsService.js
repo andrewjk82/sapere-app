@@ -1,8 +1,12 @@
 import {
   collection,
+  doc,
+  getDoc,
   getDocs,
   orderBy,
   query,
+  setDoc,
+  serverTimestamp,
   Timestamp,
   where,
 } from "firebase/firestore";
@@ -12,6 +16,11 @@ const CACHE_VERSION = 1;
 
 const getCacheKey = (collectionName, studentId) =>
   `sapere:hsc-results:v${CACHE_VERSION}:${collectionName}:${studentId}`;
+
+const getMetaId = (collectionName, studentId) => `hsc_${collectionName}_${studentId}`;
+
+const getMetaVersion = (data) =>
+  Number(data?.version || data?.updatedAt?.toMillis?.() || 0);
 
 const normalizeRecord = (record) => ({
   ...record,
@@ -27,28 +36,30 @@ const normalizeRecord = (record) => ({
 
 export const loadCachedHscResults = (collectionName, studentId) => {
   if (typeof window === "undefined" || !studentId) {
-    return { records: [], lastSyncMs: 0 };
+    return { records: [], lastSyncMs: 0, metaVersion: 0 };
   }
   try {
     const raw = window.localStorage.getItem(getCacheKey(collectionName, studentId));
-    if (!raw) return { records: [], lastSyncMs: 0 };
+    if (!raw) return { records: [], lastSyncMs: 0, metaVersion: 0 };
     const parsed = JSON.parse(raw);
     return {
       records: Array.isArray(parsed.records) ? parsed.records.filter((r) => !r.isDeleted) : [],
       lastSyncMs: Number(parsed.lastSyncMs || 0),
+      metaVersion: Number(parsed.metaVersion || 0),
     };
   } catch {
-    return { records: [], lastSyncMs: 0 };
+    return { records: [], lastSyncMs: 0, metaVersion: 0 };
   }
 };
 
-export const saveCachedHscResults = (collectionName, studentId, records, lastSyncMs) => {
+export const saveCachedHscResults = (collectionName, studentId, records, lastSyncMs, metaVersion = 0) => {
   if (typeof window === "undefined" || !studentId) return;
   try {
     window.localStorage.setItem(
       getCacheKey(collectionName, studentId),
       JSON.stringify({
         lastSyncMs,
+        metaVersion,
         records: records.map((record) => ({
           ...record,
           updatedAt: undefined,
@@ -75,6 +86,11 @@ export const mergeHscResults = (cachedRecords, incomingRecords) => {
 
 export const fetchHscResultsIncremental = async (collectionName, studentId) => {
   const cached = loadCachedHscResults(collectionName, studentId);
+  const metaSnap = await getDoc(doc(db, "sync_meta", getMetaId(collectionName, studentId)));
+  const remoteVersion = getMetaVersion(metaSnap.data());
+  if (cached.records.length > 0 && cached.metaVersion === remoteVersion && remoteVersion > 0) {
+    return { records: cached.records, fromCache: true, fetchedCount: 0 };
+  }
   const baseRef = collection(db, collectionName, studentId, "hsc_results");
   const q = cached.lastSyncMs > 0
     ? query(baseRef, where("updatedAt", ">", Timestamp.fromMillis(cached.lastSyncMs)), orderBy("updatedAt", "asc"))
@@ -88,6 +104,21 @@ export const fetchHscResultsIncremental = async (collectionName, studentId) => {
     (latest, record) => Math.max(latest, Number(record.updatedAtMs || 0)),
     cached.lastSyncMs,
   );
-  saveCachedHscResults(collectionName, studentId, merged, newestIncomingMs || Date.now());
+  const version = remoteVersion || Date.now();
+  if (!remoteVersion) {
+    await setDoc(doc(db, "sync_meta", getMetaId(collectionName, studentId)), {
+      version,
+      updatedAt: serverTimestamp(),
+    }, { merge: true }).catch(() => {});
+  }
+  saveCachedHscResults(collectionName, studentId, merged, newestIncomingMs || Date.now(), version);
   return { records: merged, fromCache: cached.records.length > 0, fetchedCount: incoming.length };
+};
+
+export const touchHscResultsSyncMeta = async (collectionName, studentId) => {
+  if (!collectionName || !studentId) return;
+  await setDoc(doc(db, "sync_meta", getMetaId(collectionName, studentId)), {
+    version: Date.now(),
+    updatedAt: serverTimestamp(),
+  }, { merge: true });
 };

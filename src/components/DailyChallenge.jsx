@@ -8,18 +8,26 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db, ADMIN_EMAIL, ADMIN_UID } from '../firebase/config';
-import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction, deleteDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, where, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction, deleteDoc } from 'firebase/firestore';
 import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView, { toDisplayText } from './MathView';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { Target, AlertTriangle, TrendingUp } from 'lucide-react';
+import { localCache } from '../services/localCacheService';
+import {
+  fetchOrCreateDailyAssignment,
+  markDailyAssignmentCompleted,
+  markDailyAssignmentStarted,
+} from '../services/dailyAssignmentService';
 
 const CHALLENGE_YEAR = 'Year 1';
 const CHALLENGE_CHAPTER_ID = 'y1-number';
 const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPTER_ID);
 const MAX_HISTORY_PER_TYPE = 7;
+const CALC_ENGINE_VERSION = 'calc-local-2026-05-13-v1';
+const CHALLENGE_BOOT_CACHE_VERSION = 1;
 
 const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', '÷', '×', '(', ')', '/', '-', '.'];
 
@@ -212,6 +220,100 @@ const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_HISTORY
   await Promise.all(staleDocs.map(item => deleteDoc(item.ref)));
 };
 
+const updateAdminDailySummary = async ({
+  userId,
+  date,
+  challengeType,
+  score,
+  total,
+  xpEarned,
+  studentProfile,
+  user,
+  status = 'completed',
+}) => {
+  if (!userId || !date) return;
+  const displayName = studentProfile?.name || studentProfile?.displayName ||
+    (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
+    user?.displayName || user?.email || 'Student';
+  const isCalc = challengeType === 'calc';
+  const isCompleted = status === 'completed';
+  await setDoc(doc(db, 'admin_daily_summary', date), {
+    date,
+    updatedAt: serverTimestamp(),
+    students: {
+      [userId]: {
+        studentId: userId,
+        name: displayName,
+        email: studentProfile?.email || user?.email || '',
+        done: isCompleted,
+        [isCalc ? 'calcDone' : 'dailyDone']: isCompleted,
+        [isCalc ? 'calcEnded' : 'dailyEnded']: !isCompleted,
+        [isCalc ? 'calcScore' : 'dailyScore']: score,
+        [isCalc ? 'calcTotal' : 'dailyTotal']: total,
+        [isCalc ? 'calcXp' : 'dailyXp']: xpEarned,
+        [isCalc ? 'calcStatus' : 'dailyStatus']: status,
+        lastChallengeType: challengeType,
+        lastUpdatedAt: new Date().toISOString(),
+        ...(isCompleted ? { lastCompletedAt: new Date().toISOString() } : {}),
+      },
+    },
+  }, { merge: true });
+};
+
+const createSessionSeed = () => {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+};
+
+const getChallengeBootCacheKey = (uid) => `challenge-boot:v${CHALLENGE_BOOT_CACHE_VERSION}:${uid}`;
+const getChallengeBootMetaId = (uid, date) => `challenge_boot_${uid}_${date}`;
+const getManualQuestionCacheKey = (targetChapterIds) =>
+  `manual-questions:v1:${[...targetChapterIds].sort().join('|') || 'fallback'}`;
+
+const applyChallengeStatus = (status = {}) => ({
+  todayCompleted: status.daily === 'completed',
+  abandonedToday: status.daily === 'abandoned',
+  calcCompletedToday: status.calc === 'completed',
+  calcAbandonedToday: status.calc === 'abandoned',
+});
+
+const getChallengeStatusState = (status = {}, type) => {
+  const key = type === 'calc' ? 'calc' : 'daily';
+  return status[key] || null;
+};
+
+const writeChallengeStatusMeta = async (uid, date, challengeType, state) => {
+  if (!uid || !date) return;
+  await setDoc(doc(db, 'sync_meta', getChallengeBootMetaId(uid, date)), {
+    version: Date.now(),
+    statusVersion: Date.now(),
+    updatedAt: serverTimestamp(),
+    status: {
+      [challengeType === 'calc' ? 'calc' : 'daily']: state,
+    },
+  }, { merge: true });
+};
+
+const getTodayChallengeStatus = (snap) => {
+  if (!snap?.exists?.()) return null;
+  const data = snap.data();
+  if (data.completed === true) return 'completed';
+  return 'abandoned';
+};
+
+const mergeChallengeBootCache = (uid, patch) => {
+  if (!uid) return;
+  const cacheKey = getChallengeBootCacheKey(uid);
+  const current = localCache.get(cacheKey) || {};
+  localCache.set(cacheKey, {
+    ...current,
+    ...patch,
+    savedAt: Date.now(),
+  });
+};
+
 const getOptions = (question) => {
   return Array.isArray(question?.options) ? question.options : [];
 };
@@ -373,7 +475,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [calcCompletedToday, setCalcCompletedToday] = useState(false);
   const [calcAbandonedToday, setCalcAbandonedToday] = useState(false);
   const [isFinishing, setIsFinishing] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [todayStatusReady, setTodayStatusReady] = useState(false);
   const [history, setHistory] = useState([]);
   const [studentProfile, setStudentProfile] = useState(null);
   const [dailyStats, setDailyStats] = useState([]);
@@ -397,6 +500,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [challengeType, setChallengeType] = useState('daily');
   const [warnings, setWarnings] = useState(0);
   const [currentSessionId, setCurrentSessionId] = useState(null);
+  const [calcSessionMeta, setCalcSessionMeta] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const answerInputRef = useRef(null);
   const sessionReviewCountRef = useRef(0);
@@ -415,7 +519,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     sessionReportCountRef.current += 1;
   };
 
-  const isMobile = window.innerWidth < 768; // Lowered threshold to allow split-screen on tablets
+  const viewportWidth = window.innerWidth;
+  const isMobile = viewportWidth < 768;
+  const isTabletCanvasLayout = viewportWidth >= 768 && viewportWidth < 1100;
   const currentQuestion = questions[currentIdx] || null;
   const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
   const assignedYear = assignedYears[0];
@@ -425,6 +531,32 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     isYear10OrAbove ||
     studentProfile?.seniorCanvasEnabled === true
   );
+  const showSideCanvas = showSplitScreen && !isTabletCanvasLayout;
+
+  const renderWorkingOutCanvas = (placement = 'side') => {
+    if (!showSplitScreen) return null;
+    const isTabletPlacement = placement === 'tablet';
+    return (
+      <div style={{
+        flex: isTabletPlacement ? 'none' : 1,
+        width: '100%',
+        height: isTabletPlacement ? 'clamp(360px, 42vh, 480px)' : 'calc(100vh - 120px)',
+        minHeight: isTabletPlacement ? '360px' : '400px',
+        display: 'flex',
+        flexDirection: 'column',
+        position: isTabletPlacement ? 'relative' : 'sticky',
+        top: isTabletPlacement ? 'auto' : '60px',
+      }}>
+        <CanvasErrorBoundary key={currentQuestion?.id || currentIdx}>
+          <WorkingOutCanvas
+            ref={canvasRef}
+            questionType={currentQuestion?.type}
+            isSubmitted={step === 'feedback'}
+          />
+        </CanvasErrorBoundary>
+      </div>
+    );
+  };
 
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
@@ -578,81 +710,102 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
 
 
-  // Check if today is already done and fetch history
+  // Local-only status boot. Challenge buttons must not spend Firestore reads
+  // just to decide whether today's attempts are available.
   useEffect(() => {
     if (!user?.uid) return;
+    let cancelled = false;
+    const today = new Date().toLocaleDateString('en-CA');
+    const cacheKey = getChallengeBootCacheKey(user.uid);
+    const cached = localCache.get(cacheKey);
+    const localBoot = cached?.date === today
+      ? cached
+      : {
+          date: today,
+          todayCompleted: false,
+          abandonedToday: false,
+          calcCompletedToday: false,
+          calcAbandonedToday: false,
+          dailyStatus: 'open',
+          calcStatus: 'open',
+          studentProfile: cached?.studentProfile || {},
+          chapterProgress: cached?.chapterProgress ?? null,
+        };
+
+    setTodayCompleted(Boolean(localBoot.todayCompleted));
+    setAbandonedToday(Boolean(localBoot.abandonedToday));
+    setCalcCompletedToday(Boolean(localBoot.calcCompletedToday));
+    setCalcAbandonedToday(Boolean(localBoot.calcAbandonedToday));
+    setTodayStatusReady(true);
+    if (localBoot.studentProfile) setStudentProfile(localBoot.studentProfile);
+    if (localBoot.chapterProgress !== undefined) setChapterProgress(localBoot.chapterProgress);
+    localCache.set(cacheKey, { ...localBoot, savedAt: Date.now() });
+
     const fetchData = async () => {
-      setLoading(true);
       try {
-        // Check today
-        const today = new Date().toLocaleDateString('en-CA');
-        const todayRef = doc(db, 'users', user.uid, 'daily_stats', today);
-        const calcTodayRef = doc(db, 'users', user.uid, 'calc_stats', today);
-        let todaySnap;
-        try {
-          todaySnap = await getDoc(todayRef);
-          if (todaySnap.exists()) {
-            const data = todaySnap.data();
-            if (data.completed) {
-              setTodayCompleted(true);
-            } else {
-              // If it exists but not completed, it was abandoned
-              setAbandonedToday(true);
-            }
-          }
-        } catch (e) { console.warn('today check failed (non-fatal):', e.code); }
-        try {
-          const calcTodaySnap = await getDoc(calcTodayRef);
-          if (calcTodaySnap.exists()) {
-            const data = calcTodaySnap.data();
-            if (data.completed) {
-              setCalcCompletedToday(true);
-            } else {
-              setCalcAbandonedToday(true);
-            }
-          }
-        } catch (e) { console.warn('calculation today check failed (non-fatal):', e.code); }
+        const nextBoot = {
+          ...localBoot,
+          studentProfile: localBoot.studentProfile || {},
+          chapterProgress: localBoot.chapterProgress ?? null,
+        };
+        let shouldFetchProfile = !localBoot.studentProfile || Object.keys(localBoot.studentProfile).length === 0;
 
-        let profileData = {};
-        try {
+        if (shouldFetchProfile) {
           const profileSnap = await getDoc(doc(db, 'users', user.uid));
-          profileData = profileSnap.exists() ? profileSnap.data() : {};
-          setStudentProfile(profileData);
-        } catch (e) { console.warn('profile fetch failed (non-fatal):', e.code); }
+          if (cancelled) return;
+          nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : {};
+        }
 
-        Promise.allSettled([
-          pruneOldChallengeStats(user.uid, 'daily_stats'),
-          pruneOldChallengeStats(user.uid, 'calc_stats'),
-        ]).then((results) => {
-          results.forEach((result, index) => {
-            if (result.status === 'rejected') {
-              const label = index === 0 ? 'daily history cleanup' : 'calculation history cleanup';
-              console.warn(`${label} failed (non-fatal):`, result.reason?.code || result.reason);
-            }
-          });
-        });
+        setStudentProfile(nextBoot.studentProfile);
 
-        setLoading(false);
-
-        // Fetch chapter progress (history is handled by a separate realtime listener)
-        (async () => {
-          try {
-            const assignedYears = Array.isArray(profileData.assignedYear) ? profileData.assignedYear : [profileData.assignedYear || profileData.year || CHALLENGE_YEAR];
-            const assignedYear = assignedYears[0];
-            const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`);
-            const progressSnap = await getDoc(progressRef);
-            setChapterProgress(progressSnap.exists() ? progressSnap.data() : null);
-          } catch (e) {
-            console.warn('progress fetch failed (non-fatal):', e?.code || e);
+        const assignedYears = Array.isArray(nextBoot.studentProfile.assignedYear)
+          ? nextBoot.studentProfile.assignedYear
+          : [nextBoot.studentProfile.assignedYear || nextBoot.studentProfile.year || CHALLENGE_YEAR];
+        const assignedYear = assignedYears[0];
+        try {
+          const shouldFetchProgress = localBoot.chapterProgress === undefined;
+          if (shouldFetchProgress) {
+            const progressSnap = await getDoc(doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`));
+            if (cancelled) return;
+            nextBoot.chapterProgress = progressSnap.exists() ? progressSnap.data() : null;
           }
-        })();
-
+          setChapterProgress(nextBoot.chapterProgress);
+          localCache.set(cacheKey, { ...nextBoot, savedAt: Date.now() });
+        } catch (e) {
+          console.warn('progress meta fetch failed (non-fatal):', e?.code || e);
+          localCache.set(cacheKey, { ...nextBoot, savedAt: Date.now() });
+        }
       } catch (err) {
         console.error("Error fetching challenge data:", err);
-        setLoading(false);
       }
     };
     fetchData();
+    return () => {
+      cancelled = true;
+    };
+  }, [user?.uid]);
+
+  useEffect(() => {
+    if (!user?.uid) return undefined;
+    const cacheKey = `sapere-cache:${getChallengeBootCacheKey(user.uid)}`;
+    const applyCachedStatus = () => {
+      const today = new Date().toLocaleDateString('en-CA');
+      const cached = localCache.get(getChallengeBootCacheKey(user.uid));
+      if (cached?.date !== today) return;
+      setTodayCompleted(Boolean(cached.todayCompleted));
+      setAbandonedToday(Boolean(cached.abandonedToday));
+      setCalcCompletedToday(Boolean(cached.calcCompletedToday));
+      setCalcAbandonedToday(Boolean(cached.calcAbandonedToday));
+    };
+    const handleStorage = (event) => {
+      if (!event || event.key === cacheKey) applyCachedStatus();
+    };
+    window.addEventListener('storage', handleStorage);
+    window.addEventListener('sapere-challenge-reset-applied', handleStorage);
+    return () => {
+      window.removeEventListener('storage', handleStorage);
+      window.removeEventListener('sapere-challenge-reset-applied', handleStorage);
+    };
   }, [user?.uid]);
 
   // ── Realtime history listener ──
@@ -660,12 +813,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   // Any test write (daily_stats or calc_stats) is reflected immediately,
   // even if finishQuiz's later transaction throws or the user navigates fast.
   useEffect(() => {
-    if (!user?.uid) return;
+    if (!user?.uid || viewMode !== 'history') return;
 
     let dailyData = [];
     let calcData = [];
     let dailyLoaded = false;
     let calcLoaded = false;
+    const today = new Date().toLocaleDateString('en-CA');
 
     const flush = () => {
       if (!dailyLoaded || !calcLoaded) return;
@@ -675,6 +829,49 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setHistory(merged);
       // dailyStats (used by learning-insights) reuses the same subscription
       setDailyStats(dailyData);
+      const todayDaily = dailyData.find(item => item.id === today);
+      const todayCalc = calcData.find(item => item.id === today);
+      const cachedBoot = localCache.get(getChallengeBootCacheKey(user.uid));
+      const dailyWasReset = cachedBoot?.date === today && cachedBoot.dailyStatus === 'open';
+      const calcWasReset = cachedBoot?.date === today && cachedBoot.calcStatus === 'open';
+      if (dailyWasReset && !todayDaily) {
+        setTodayCompleted(false);
+        setAbandonedToday(false);
+      } else if (todayDaily) {
+        const completed = Boolean(todayDaily.completed);
+        setTodayCompleted(completed);
+        setAbandonedToday(!completed);
+      } else if (cachedBoot?.date === today && cachedBoot.todayCompleted === false && cachedBoot.abandonedToday === false) {
+        setTodayCompleted(false);
+        setAbandonedToday(false);
+      }
+      if (calcWasReset && !todayCalc) {
+        setCalcCompletedToday(false);
+        setCalcAbandonedToday(false);
+      } else if (todayCalc) {
+        const completed = Boolean(todayCalc.completed);
+        setCalcCompletedToday(completed);
+        setCalcAbandonedToday(!completed);
+      } else if (cachedBoot?.date === today && cachedBoot.calcCompletedToday === false && cachedBoot.calcAbandonedToday === false) {
+        setCalcCompletedToday(false);
+        setCalcAbandonedToday(false);
+      }
+      if (!dailyWasReset && !calcWasReset && (todayDaily || todayCalc)) {
+        const statusPatch = {
+          date: today,
+          ...(todayDaily ? {
+            dailyStatus: todayDaily.completed ? 'completed' : 'abandoned',
+            todayCompleted: Boolean(todayDaily.completed),
+            abandonedToday: !todayDaily.completed,
+          } : {}),
+          ...(todayCalc ? {
+            calcStatus: todayCalc.completed ? 'completed' : 'abandoned',
+            calcCompletedToday: Boolean(todayCalc.completed),
+            calcAbandonedToday: !todayCalc.completed,
+          } : {}),
+        };
+        mergeChallengeBootCache(user.uid, statusPatch);
+      }
     };
 
     const unsubDaily = onSnapshot(
@@ -717,7 +914,46 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       unsubDaily();
       unsubCalc();
     };
-  }, [user?.uid]);
+  }, [user?.uid, viewMode]);
+
+  // ── Lazy-load detailed snapshots for lightweight calculation records ──
+  // The calc parent doc keeps only summary fields; questions, selected answers
+  // and per-question result metadata are fetched only when the detail modal opens.
+  useEffect(() => {
+    if (!selectedChallenge || !user?.uid) return;
+    if (!selectedChallenge.hasDetailSnapshot || selectedChallenge.detailSnapshotLoaded) return;
+    if (Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0) return;
+
+    const dateId = selectedChallenge.id || (selectedChallenge.timestamp && new Date(selectedChallenge.timestamp).toLocaleDateString('en-CA'));
+    if (!dateId) return;
+    const statColName = selectedChallenge.statCollection
+      || (selectedChallenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
+
+    let cancelled = false;
+    (async () => {
+      try {
+        const snapshotRef = doc(db, 'users', user.uid, statColName, dateId, 'detail_snapshot', 'main');
+        const snap = await getDoc(snapshotRef);
+        if (cancelled || !snap.exists()) return;
+        const data = snap.data();
+        setSelectedChallenge(prev => {
+          if (!prev || prev.id !== selectedChallenge.id) return prev;
+          return {
+            ...prev,
+            questions: data.questions || [],
+            userAnswers: data.userAnswers || [],
+            answerResults: data.answerResults || [],
+            detailSnapshotLoaded: true,
+            detailSnapshotSavedAt: data.savedAt || null,
+          };
+        });
+      } catch (e) {
+        console.warn('calc detail snapshot fetch failed (non-fatal):', e?.code || e);
+      }
+    })();
+
+    return () => { cancelled = true; };
+  }, [selectedChallenge, user?.uid]);
 
   // ── Lazy-load working-out images for the open detail view ──
   // Heavy base64 canvas exports live in a sibling subcollection
@@ -768,21 +1004,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       return;
     }
 
-    if (user?.uid) {
-      try {
-        const calcTodaySnap = await getDoc(doc(db, 'users', user.uid, 'calc_stats', today));
-        if (calcTodaySnap.exists()) {
-          const data = calcTodaySnap.data();
-          if (data.completed) setCalcCompletedToday(true);
-          else setCalcAbandonedToday(true);
-          showToast("Today's Basic Calculation has already been used. Please try again tomorrow.", 'info');
-          return;
-        }
-      } catch (err) {
-        console.warn('calculation start check failed (non-fatal):', err.code || err);
-      }
-    }
-
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
     const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
@@ -792,9 +1013,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     
     const timeLimit = studentProfile?.calcTimeLimit || 30;
     const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, timeLimit);
+    const sessionMeta = {
+      engineVersion: CALC_ENGINE_VERSION,
+      generationMode: 'local-random',
+      seed: createSessionSeed(),
+      startedAt: new Date().toISOString(),
+    };
     
     const sessionId = today;
     setCurrentSessionId(sessionId);
+    setCalcSessionMeta(sessionMeta);
     resetSessionAttentionCounts();
 
     setQuestions(combinedQs);
@@ -806,6 +1034,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setupQuestion(combinedQs[0]);
     if (setIsLocked) setIsLocked(true);
     setLoading(false);
+    setCalcAbandonedToday(true);
+    mergeChallengeBootCache(user?.uid, {
+      date: today,
+      calcStatus: 'abandoned',
+      calcCompletedToday: false,
+      calcAbandonedToday: true,
+    });
+    writeChallengeStatusMeta(user?.uid, today, 'calc', 'abandoned')
+      .catch((err) => console.warn('calc start status meta update failed (non-critical):', err?.code || err));
 
     if (user?.uid) {
       const now = new Date();
@@ -816,15 +1053,32 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           challengeType: 'calc',
           maxXp: getChallengeMaxXp('calc'),
           xpEarned: 0,
+          engineVersion: sessionMeta.engineVersion,
+          generationMode: sessionMeta.generationMode,
+          seed: sessionMeta.seed,
           timestamp: now.toISOString(),
         date: today,
         dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-        questions: combinedQs || [],
-        userAnswers: [],
-        answerResults: [],
+        hasDetailSnapshot: false,
+        detailAvailable: false,
+        hasWorkingOut: false,
+        questionCount: qCount,
         abandoned: true
       })
-        .then(() => pruneOldChallengeStats(user.uid, 'calc_stats'))
+        .then(() => {
+          updateAdminDailySummary({
+            userId: user.uid,
+            date: today,
+            challengeType: 'calc',
+            score: 0,
+            total: qCount,
+            xpEarned: 0,
+            studentProfile,
+            user,
+            status: 'ended',
+          }).catch((err) => console.warn('admin calc started summary update failed (non-critical):', err?.code || err));
+          return pruneOldChallengeStats(user.uid, 'calc_stats');
+        })
         .catch(console.error);
     }
   };
@@ -834,169 +1088,75 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setChallengeType('daily');
       const qCount = getQuestionCount('daily');
       setLoading(true);
-      let manualQs = [];
-      const config = studentProfile?.dailyPracticeConfig || {};
-      const hasDailyConfig = (config.years?.length > 0 || config.chapters?.length > 0);
-
-      const rawYear = studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR;
-      let assignedYears = Array.isArray(rawYear) 
-        ? rawYear 
-        : String(rawYear).split(',').map(y => y.trim()).filter(Boolean);
-      assignedYears = assignedYears.map(normalizeYearLabel).filter(Boolean);
-      
-      let assignedChapters = getAssignedChapters(studentProfile, assignedYears[0]);
-
-      if (hasDailyConfig) {
-        if (config.years?.length > 0) assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
-        if (config.chapters?.length > 0) assignedChapters = config.chapters;
-        else if (config.years?.length > 0) assignedChapters = []; 
-      }
-
-      const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
-      const assignedCourses = Array.isArray(studentProfile?.assignedCourse) ? studentProfile.assignedCourse : [studentProfile?.assignedCourse || 'Advanced'];
-      const validChapterIds = getValidChapterIdsForYears(assignedYears, assignedCourses);
-      assignedChapters = assignedChapters.filter(chapterId => validChapterIds.has(chapterId));
-      
-      const targetPool = getQuestionTargets({
-        year: assignedYears,
-        course: assignedCourses,
-        assignedChapters,
-        assignedTopics,
+      const today = new Date().toLocaleDateString('en-CA');
+      const assignment = await fetchOrCreateDailyAssignment({
+        uid: user?.uid,
+        studentProfile: {
+          ...(studentProfile || {}),
+          difficultyMix: chapterProgress?.difficultyMix,
+        },
+        dateKey: today,
+        questionCount: qCount,
       });
-      const targetChapterIds = new Set(targetPool.map(target => target.chapterId));
-      if (targetPool.length === 0) {
-        throw new Error('No valid curriculum targets found for this student.');
+      const combinedQs = (assignment.questions || []).map(correctQuestionAnswer);
+      if (combinedQs.length === 0) {
+        throw new Error('No daily assignment questions were generated.');
       }
+      resetSessionAttentionCounts();
 
-      try {
-        const qRef = collection(db, 'questions');
-        // Fetch a diverse pool of questions
-        const manualSnap = await getDocs(query(qRef, limit(500)));
-      manualQs = manualSnap.docs.map(d => {
-        const data = d.data();
-        return {
-          id: d.id,
-          type: data.type || 'manual',
-          question: data.question,
-          questionImage: data.questionImage || '',
-          options: data.options || [],
-          answer: data.answer,
-          solution: data.solution || '',
-          timeLimit: data.timeLimit || 60,
-          difficulty: data.difficulty || 'manual',
-          year: data.year || '',
-          chapterId: data.chapterId || '',
-          chapterTitle: data.chapterTitle || '',
-          topicId: data.topicId || '',
-          topicCode: data.topicCode || '',
-          topicTitle: data.topicTitle || '',
-          topicGroup: data.topicGroup || '',
-          isManual: true
-        };
-      }).filter(q => {
-        const qYearNum = getYearNumber(q.year);
-        const yearMatches = qYearNum !== null && assignedYears.some(y => getYearNumber(y) === qYearNum);
-        
-        const hasAssignedChapters = assignedChapters && assignedChapters.length > 0;
-        const hasChapterMetadata = Boolean(q.chapterId);
-        const chapterIsValidForYear = hasChapterMetadata && validChapterIds.has(q.chapterId);
-        const chapterMatches = hasAssignedChapters
-          ? hasChapterMetadata && targetChapterIds.has(q.chapterId)
-          : chapterIsValidForYear;
-        
-        return yearMatches && chapterMatches;
+      setQuestions(combinedQs);
+      setUserAnswers(new Array(combinedQs.length).fill(null));
+      setAnswerResults(new Array(combinedQs.length).fill(null));
+      setCurrentIdx(0);
+      setScore(0);
+      setStep('quiz');
+      setupQuestion(combinedQs[0]);
+      if (setIsLocked) setIsLocked(true);
+      setLoading(false);
+      setAbandonedToday(true);
+      mergeChallengeBootCache(user?.uid, {
+        date: today,
+        dailyStatus: 'abandoned',
+        todayCompleted: false,
+        abandonedToday: true,
       });
-    } catch (err) {
-      console.error("Error fetching manual questions:", err);
-    }
-    
-    // 1. Shuffle the initial pool for variety
-    manualQs = manualQs.sort(() => Math.random() - 0.5);
-    
-    // 2. Group manual questions by chapter for even distribution (round-robin)
-    const manualByChapter = manualQs.reduce((acc, q) => {
-      const cid = q.chapterId || 'unknown';
-      if (!acc[cid]) acc[cid] = [];
-      acc[cid].push(q);
-      return acc;
-    }, {});
-
-    // Shuffle questions within each chapter
-    Object.keys(manualByChapter).forEach(cid => {
-      manualByChapter[cid] = manualByChapter[cid].sort(() => Math.random() - 0.5);
-    });
-
-    const selectedManual = [];
-    const chapterIdsForManual = Object.keys(manualByChapter).sort(() => Math.random() - 0.5);
-    let hasMoreManual = true;
-    let roundIdx = 0;
-    
-    while (selectedManual.length < qCount && hasMoreManual) {
-      hasMoreManual = false;
-      for (const cid of chapterIdsForManual) {
-        if (manualByChapter[cid][roundIdx]) {
-          selectedManual.push(manualByChapter[cid][roundIdx]);
-          hasMoreManual = true;
-          if (selectedManual.length >= qCount) break;
-        }
-      }
-      roundIdx++;
-    }
-    
-    // Fill the REMAINING slots with AI questions, also balancing by chapter
-    const numAI = Math.max(0, qCount - selectedManual.length);
-    const aiQs = [];
-    if (numAI > 0) {
-      const allAssignedChapters = assignedChapters.length > 0 ? assignedChapters : Array.from(targetChapterIds);
-      for (let i = 0; i < numAI; i++) {
-        const difficulty = pickWeightedDifficulty(chapterProgress?.difficultyMix);
-        // Cycle through assigned chapters for AI generation
-        const targetChapterId = allAssignedChapters[i % allAssignedChapters.length];
-        aiQs.push(generateQuestion({
-          year: assignedYears,
-          course: assignedCourses,
-          assignedChapters: [targetChapterId],
-          assignedTopics,
-          difficulty,
-        }));
-      }
-    }
-    
-    // Combine them: Manual questions FIRST (shuffled among themselves), then AI questions
-    const shuffledManual = [...selectedManual].sort(() => Math.random() - 0.5);
-    const shuffledAI = [...aiQs].sort(() => Math.random() - 0.5);
-    
-    let combinedQs = [...shuffledManual, ...shuffledAI].map(correctQuestionAnswer);
-    resetSessionAttentionCounts();
-
-    setQuestions(combinedQs);
-    setUserAnswers(new Array(qCount).fill(null));
-    setAnswerResults(new Array(qCount).fill(null));
-    setCurrentIdx(0);
-    setScore(0);
-    setStep('quiz');
-    setupQuestion(combinedQs[0]);
-    if (setIsLocked) setIsLocked(true);
-    setLoading(false);
+      markDailyAssignmentStarted(user?.uid, today)
+        .catch((err) => console.warn('daily assignment start update failed (non-critical):', err?.code || err));
+      writeChallengeStatusMeta(user?.uid, today, 'daily', 'abandoned')
+        .catch((err) => console.warn('daily start status meta update failed (non-critical):', err?.code || err));
 
       if (user?.uid) {
         const now = new Date();
-        const today = now.toLocaleDateString('en-CA');
         setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
           completed: false,
           score: 0,
-          total: qCount,
+          total: combinedQs.length,
           challengeType: 'daily',
           maxXp: getChallengeMaxXp('daily'),
           xpEarned: 0,
           timestamp: now.toISOString(),
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-          questions: combinedQs || [],
-          userAnswers: [],
-          answerResults: [],
+          hasDetailSnapshot: false,
+          detailAvailable: false,
+          hasWorkingOut: false,
+          questionCount: combinedQs.length,
+          assignmentVersion: assignment.version || null,
           abandoned: true
         })
-          .then(() => pruneOldChallengeStats(user.uid, 'daily_stats'))
+          .then(() => {
+            updateAdminDailySummary({
+              userId: user.uid,
+              date: today,
+              challengeType: 'daily',
+              score: 0,
+              total: combinedQs.length,
+              xpEarned: 0,
+              studentProfile,
+              user,
+              status: 'ended',
+            }).catch((err) => console.warn('admin daily started summary update failed (non-critical):', err?.code || err));
+            return pruneOldChallengeStats(user.uid, 'daily_stats');
+          })
           .catch(console.error);
       }
     } catch (error) {
@@ -1081,10 +1241,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setIsSubmittingReport(true);
     try {
       const currentQ = reportedQuestion || questions[currentIdx];
+      const reportedIndex = reportedQuestion
+        ? questions.findIndex(q => String(q?.id || '') === String(reportedQuestion?.id || ''))
+        : currentIdx;
+      const answerIndex = reportedIndex >= 0 ? reportedIndex : currentIdx;
+      const studentAnswer = userAnswers[answerIndex] ?? selectedOption ?? '';
+      const answerResult = answerResults[answerIndex] || null;
       await addDoc(collection(db, 'reports'), {
         studentId: user.uid,
         studentName: user.displayName || user.email || 'Student',
         questionId: currentQ?.id || '',
+        questionIndex: answerIndex,
+        studentAnswer,
+        answerResult,
         questionData: {
           id: currentQ?.id || '',
           question: currentQ?.question || currentQ?.text || '',
@@ -1179,6 +1348,35 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       .trim();
   };
 
+  const parseNumericAnswer = (value) => {
+    if (value === null || value === undefined) return null;
+    const raw = String(value).trim();
+    if (!raw) return null;
+
+    const cleaned = raw
+      .replace(/[−–—]/g, '-')
+      .replace(/\$/g, '')
+      .replace(/,/g, '')
+      .replace(/\b(aud|usd|nzd|dollars?|cents?)\b/gi, '')
+      .trim();
+
+    if (!/^-?\d+(?:\.\d+)?%?$/.test(cleaned)) return null;
+    const isPercent = cleaned.endsWith('%');
+    const number = Number(cleaned.replace(/%$/, ''));
+    return Number.isFinite(number) ? { number, isPercent } : null;
+  };
+
+  const answersMatch = (studentAnswer, expectedAnswer) => {
+    const studentNumeric = parseNumericAnswer(studentAnswer);
+    const expectedNumeric = parseNumericAnswer(expectedAnswer);
+
+    if (studentNumeric && expectedNumeric && studentNumeric.isPercent === expectedNumeric.isPercent) {
+      return Math.abs(studentNumeric.number - expectedNumeric.number) < 0.000001;
+    }
+
+    return robustNormalize(studentAnswer) === robustNormalize(expectedAnswer);
+  };
+
   const handleAnswer = async (optionText, optIdx = null) => {
     if (step === 'feedback' || isSubmittingCanvas) return;
     
@@ -1217,14 +1415,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       // Handle sub-questions
       const subResults = currentQ.subQuestions.map((sq, idx) => {
         const userAnswer = (optionText && typeof optionText === 'object') ? optionText[sq.id || idx] : '';
-        const normalizedInput = robustNormalize(userAnswer);
-        const normalizedAnswer = robustNormalize(sq.answer);
         
         let isSqCorrect = false;
         if (sq.type === 'multiple_choice') {
-          isSqCorrect = normalizedInput === normalizedAnswer;
+          isSqCorrect = answersMatch(userAnswer, sq.answer);
         } else {
-          isSqCorrect = normalizedInput === normalizedAnswer;
+          isSqCorrect = answersMatch(userAnswer, sq.answer);
         }
         return { id: sq.id || idx, correct: isSqCorrect, answer: userAnswer };
       });
@@ -1241,9 +1437,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         setScore(prev => prev + pointsEarned);
       }
     } else if (isShortAnswer) {
-      const normalizedInput = robustNormalize(optionText);
-      const normalizedAnswer = robustNormalize(currentQ.answer);
-      correct = normalizedInput === normalizedAnswer;
+      correct = answersMatch(optionText, currentQ.answer);
       if (correct) setScore(prev => prev + 1);
     } else {
       // Robust multiple choice check:
@@ -1461,8 +1655,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         };
         const slimQuestions = stripDataUrls(questions || []);
         const slimUserAnswers = stripDataUrls(userAnswers || []);
+        const hasWorkingOut = slimAnswerResults.some(r => r?.hasWorkingOut);
+        const activeCalcSessionMeta = challengeType === 'calc'
+          ? (calcSessionMeta || {
+              engineVersion: CALC_ENGINE_VERSION,
+              generationMode: 'local-random',
+              seed: createSessionSeed(),
+            })
+          : null;
 
-        const record = {
+        const baseRecord = {
           completed: true,
           abandoned: false, // Explicitly mark as not abandoned
           id: today,
@@ -1478,14 +1680,44 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           assignedTopics,
           timestamp: now.toISOString(),
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-          questions: slimQuestions,
-          userAnswers: slimUserAnswers,
-          answerResults: slimAnswerResults,
           topicStats,
           chapterStats,
           difficultyMixBefore: normalizeMix(chapterProgress?.difficultyMix),
           difficultyMixAfter: nextDifficultyMix,
         };
+        const record = challengeType === 'calc'
+          ? {
+              ...baseRecord,
+              engineVersion: activeCalcSessionMeta.engineVersion,
+              generationMode: activeCalcSessionMeta.generationMode,
+              seed: activeCalcSessionMeta.seed,
+              questionCount: slimQuestions.length,
+              resultCount: slimAnswerResults.length,
+              hasDetailSnapshot: !isAbandoned,
+              detailAvailable: !isAbandoned,
+              hasWorkingOut,
+            }
+          : {
+              ...baseRecord,
+              questionCount: slimQuestions.length,
+              resultCount: slimAnswerResults.length,
+              hasDetailSnapshot: !isAbandoned,
+              detailAvailable: !isAbandoned,
+              hasWorkingOut,
+            };
+        const detailSnapshot = !isAbandoned
+          ? {
+              ...(activeCalcSessionMeta ? {
+                engineVersion: activeCalcSessionMeta.engineVersion,
+                generationMode: activeCalcSessionMeta.generationMode,
+                seed: activeCalcSessionMeta.seed,
+              } : {}),
+              savedAt: now.toISOString(),
+              questions: slimQuestions,
+              userAnswers: slimUserAnswers,
+              answerResults: slimAnswerResults,
+            }
+          : null;
 
         // Diagnostic: log payload size — Firestore enforces a 1 048 576 byte limit
         try {
@@ -1496,8 +1728,41 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           }
         } catch {}
 
-        // 1. Save the challenge stat record first
+        if (!isAbandoned) {
+          if (challengeType === 'daily') {
+            setTodayCompleted(true);
+            setAbandonedToday(false);
+          } else if (challengeType === 'calc') {
+            setCalcCompletedToday(true);
+            setCalcAbandonedToday(false);
+          }
+        }
+        // 1. Save the lightweight challenge stat record first. Detail/working-out
+        // saves are best-effort so large payloads never turn completion into a
+        // false "Session Ended" state.
         await setDoc(ref, record, { merge: true });
+        if (detailSnapshot) {
+          try {
+            await setDoc(doc(db, 'users', user.uid, statColName, today, 'detail_snapshot', 'main'), detailSnapshot, { merge: true });
+          } catch (err) {
+            console.warn('detail snapshot save failed (non-critical):', err?.code || err);
+            setDoc(ref, {
+              detailSaveFailed: true,
+              detailAvailable: false,
+              detailSaveError: err?.code || err?.message || 'unknown',
+            }, { merge: true }).catch(() => {});
+          }
+        }
+        updateAdminDailySummary({
+          userId: user.uid,
+          date: today,
+          challengeType,
+          score: actualScore,
+          total: totalPossibleScore,
+          xpEarned,
+          studentProfile,
+          user,
+        }).catch((err) => console.warn('admin daily summary update failed (non-critical):', err?.code || err));
 
         // 2. Atomic Update for XP and Progress
         await runTransaction(db, async (transaction) => {
@@ -1520,6 +1785,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             lastScore: actualScore,
             lastTotal: totalPossibleScore,
             updatedAt: now.toISOString(),
+          }, { merge: true });
+          transaction.set(doc(db, 'sync_meta', getChallengeBootMetaId(user.uid, today)), {
+            version: Date.now(),
+            progressVersion: Date.now(),
+            updatedAt: serverTimestamp(),
           }, { merge: true });
 
           // Update overall XP/Points - Use set with merge for maximum robustness
@@ -1589,8 +1859,40 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // — no manual setHistory needed here.
         if (challengeType === 'daily') {
           setTodayCompleted(true);
+          setAbandonedToday(false);
         } else if (challengeType === 'calc') {
           setCalcCompletedToday(true);
+          setCalcAbandonedToday(false);
+          setCalcSessionMeta(null);
+        }
+        const cacheKey = getChallengeBootCacheKey(user.uid);
+        const cachedBoot = localCache.get(cacheKey) || {};
+        const nextStatus = {
+          daily: challengeType === 'daily' ? 'completed' : (cachedBoot.todayCompleted ? 'completed' : cachedBoot.abandonedToday ? 'abandoned' : 'open'),
+          calc: challengeType === 'calc' ? 'completed' : (cachedBoot.calcCompletedToday ? 'completed' : cachedBoot.calcAbandonedToday ? 'abandoned' : 'open'),
+        };
+        const statusFlags = applyChallengeStatus(nextStatus);
+        localCache.set(cacheKey, {
+          ...cachedBoot,
+          ...statusFlags,
+          date: today,
+          dailyStatus: nextStatus.daily,
+          calcStatus: nextStatus.calc,
+          studentProfile,
+          chapterProgress: {
+            ...(chapterProgress || {}),
+            difficultyMix: nextDifficultyMix,
+            lastResultStats: resultStats,
+            lastTopicStats: topicStats,
+            lastChapterStats: chapterStats,
+          },
+          savedAt: Date.now(),
+        });
+        writeChallengeStatusMeta(user.uid, today, challengeType, 'completed')
+          .catch((err) => console.warn('challenge status meta update failed (non-critical):', err?.code || err));
+        if (challengeType === 'daily') {
+          markDailyAssignmentCompleted(user.uid, today)
+            .catch((err) => console.warn('daily assignment completion update failed (non-critical):', err?.code || err));
         }
       }
     } catch (err) {
@@ -1678,7 +1980,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   </button>
                 </div>
 
-                {Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0 ? (
+                {selectedChallenge.hasDetailSnapshot && !selectedChallenge.detailSnapshotLoaded && !(Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0) ? (
+                  <div style={{ textAlign: 'center', padding: '60px 20px', color: '#64748b', background: '#f8fafc', borderRadius: '16px', border: '2px dashed #e2e8f0' }}>
+                    <div className="app-spinner" style={{ margin: '0 auto 16px' }}></div>
+                    <p style={{ margin: 0, fontWeight: 800, fontSize: '1.05rem' }}>Loading details...</p>
+                  </div>
+                ) : Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0 ? (
                   (!selectedChallenge.answerResults || selectedChallenge.answerResults.length === 0) ? (
                     <div style={{ textAlign: 'center', padding: '60px 20px', color: '#94a3b8', background: '#f8fafc', borderRadius: '16px', border: '2px dashed #e2e8f0' }}>
                       <AlertTriangle size={48} style={{ opacity: 0.2, margin: '0 auto 16px', color: '#ef4444' }} />
@@ -2101,7 +2408,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   Improve your speed and accuracy with {getQuestionCount('calc')} arithmetic questions.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
-                  {calcAbandonedToday ? (
+                  {!todayStatusReady ? (
+                    <div style={{ background: '#f8fafc', border: '2px solid #e2e8f0', padding: '16px 20px', borderRadius: '20px', color: '#64748b', fontWeight: 800 }}>
+                      Checking today's calculation status...
+                    </div>
+                  ) : calcAbandonedToday ? (
                     <div style={{ background: '#fff1f2', border: '2px solid #ffe4e6', padding: '16px 20px', borderRadius: '20px', color: '#be123c', fontWeight: 800 }}>
                       Basic Calculation ended. Please try again tomorrow.
                     </div>
@@ -2258,7 +2569,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     Earn up to <span style={{ color: '#d97706', fontWeight: 800 }}>{getChallengeMaxXp('calc')} XP</span>!
                   </p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
-                    {calcAbandonedToday ? (
+                    {!todayStatusReady ? (
+                      <div style={{ background: '#f8fafc', border: '2px solid #e2e8f0', padding: '16px 20px', borderRadius: '20px', color: '#64748b', fontWeight: 800 }}>
+                        Checking today's calculation status...
+                      </div>
+                    ) : calcAbandonedToday ? (
                       <div style={{ background: '#fff1f2', border: '2px solid #ffe4e6', padding: '16px 20px', borderRadius: '20px', color: '#be123c', fontWeight: 800 }}>
                         Basic Calculation ended. Please try again tomorrow.
                       </div>
@@ -2302,7 +2617,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               maxWidth: showSplitScreen ? '1200px' : '600px', 
               width: '100%', 
               display: 'flex', 
-              flexDirection: showSplitScreen ? 'row' : 'column', 
+              flexDirection: showSideCanvas ? 'row' : 'column', 
               gap: isMobile ? '20px' : '40px',
               alignItems: 'flex-start',
               transition: 'all 0.3s ease'
@@ -2406,6 +2721,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   <img src={questions[currentIdx].questionImage} alt="Question" style={{ width: '100%', maxHeight: '200px', objectFit: 'contain', marginTop: '16px', borderRadius: '16px', background: '#f8fafc' }} />
                 )}
               </div>
+
+              {showSplitScreen && isTabletCanvasLayout && renderWorkingOutCanvas('tablet')}
 
               {questions[currentIdx]?.subQuestions?.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -2741,25 +3058,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               </div>
 
             {/* Right Side: Working Out Canvas for Year 10+ students */}
-            {showSplitScreen && (
-              <div style={{ 
-                flex: 1, 
-                height: window.innerWidth >= 1024 ? 'calc(100vh - 120px)' : '400px', 
-                minHeight: '400px',
-                display: 'flex', 
-                flexDirection: 'column',
-                position: window.innerWidth >= 1024 ? 'sticky' : 'static',
-                top: '60px'
-              }}>
-                <CanvasErrorBoundary key={currentQuestion?.id || currentIdx}>
-                  <WorkingOutCanvas
-                    ref={canvasRef}
-                    questionType={currentQuestion?.type}
-                    isSubmitted={step === 'feedback'}
-                  />
-                </CanvasErrorBoundary>
-              </div>
-            )}
+            {showSideCanvas && renderWorkingOutCanvas('side')}
           </div>
           </motion.div>
         )}

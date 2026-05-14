@@ -143,11 +143,16 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   margin: 0 -28px;
-  padding: 0 28px;
+  padding: 0 44px 0 28px;
 }
 
 @media (max-width: 768px) {
-  .curriculum-year-tabs { margin: 0 -16px; padding: 0 16px; }
+  .curriculum-year-tabs { margin: 0 -16px; padding: 0 40px 0 16px; }
+}
+
+.curriculum-year-tabs::after {
+  content: '';
+  flex: 0 0 24px;
 }
 
 .curriculum-year-tabs::-webkit-scrollbar { display: none; }
@@ -408,4 +413,25 @@
   background: white;
   border-radius: 18px;
   border: 1px dashed rgba(99, 102, 241, 0.2);
+}
+
+.student-hsc-summary:hover {
+  border-color: rgba(99, 102, 241, 0.28) !important;
+  box-shadow: 0 16px 38px rgba(31, 27, 77, 0.11) !important;
+}
+
+@media (max-width: 720px) {
+  .student-hsc-summary {
+    padding: 14px !important;
+    border-radius: 16px !important;
+  }
+
+  .student-hsc-summary__grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .student-hsc-summary__grid svg {
+    height: 58px;
+  }
 }

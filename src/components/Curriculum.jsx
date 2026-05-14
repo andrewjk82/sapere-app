@@ -5,7 +5,7 @@ import {
   Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X
 } from 'lucide-react';
 import { auth, db } from '../firebase/config';
-import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, query, where, getCountFromServer } from 'firebase/firestore';
+import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, getDoc, query, where, getCountFromServer, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -21,29 +21,42 @@ import { importYear9Ch1 } from '../scripts/importYear9Ch1';
 import { importYear7Ch1 } from '../scripts/importYear7Ch1';
 import { importYear7Ch2 } from '../scripts/importYear7Ch2';
 import { importYear11Ch4A } from '../scripts/importYear11Ch4A';
+import { importYear8Ch1 } from '../scripts/importYear8Ch1';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import {
   fetchHscResultsIncremental,
   loadCachedHscResults,
 } from '../services/hscResultsService';
+import { localCache } from '../services/localCacheService';
 import './curriculum.css';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
-const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v1';
-const ADMIN_TOOL_COUNT_IDS = ['y11a-1', 'y11-1', 'y11a-2', 'y11-2', 'y11a-3', 'y11-3', 'y10-1', 'y10-3'];
+const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v2';
+const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
+const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
+const ADMIN_TOOL_COUNT_IDS = [
+  'y11a-1', 'y11-1', 'y11a-2', 'y11-2', 'y11a-3', 'y11-3', 'y11a-4', 
+  'y10-1', 'y10-3', 'y10-4', 
+  'y9-1', 
+  'y8-1', 
+  'y7-1', 'y7-2'
+];
 
 const loadCachedQuestionCounts = () => {
   try {
-    return JSON.parse(window.localStorage.getItem(QUESTION_COUNT_CACHE_KEY) || '{}');
+    if (typeof window === 'undefined') return { counts: {}, savedAt: 0, version: 0 };
+    const parsed = JSON.parse(window.localStorage.getItem(QUESTION_COUNT_CACHE_KEY) || '{}');
+    if (parsed && typeof parsed === 'object' && parsed.counts) return parsed;
+    return { counts: parsed || {}, savedAt: 0, version: 0 };
   } catch {
-    return {};
+    return { counts: {}, savedAt: 0, version: 0 };
   }
 };
 
-const saveCachedQuestionCounts = (counts) => {
+const saveCachedQuestionCounts = (counts, version = 0) => {
   try {
-    window.localStorage.setItem(QUESTION_COUNT_CACHE_KEY, JSON.stringify(counts));
+    window.localStorage.setItem(QUESTION_COUNT_CACHE_KEY, JSON.stringify({ counts, savedAt: Date.now(), version }));
   } catch {
     // Cache only; ignore private-mode/quota failures.
   }
@@ -75,15 +88,45 @@ const Curriculum = () => {
     }
 
     setLoading(true);
-    const q = collection(db, 'curriculum');
-    const unsub = onSnapshot(q, (snap) => {
-      setCurriculumRecords(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    let cancelled = false;
+    const cached = localCache.get(CURRICULUM_CACHE_KEY);
+    if (Array.isArray(cached?.records)) {
+      setCurriculumRecords(cached.records);
       setLoading(false);
-    }, (err) => {
-      console.error("Firestore error in Curriculum:", err);
-      setLoading(false);
-    });
-    return unsub;
+    }
+
+    const fetchCurriculumIfChanged = async () => {
+      try {
+        const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
+        const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
+        if (cached?.records && cached?.version === remoteVersion && remoteVersion > 0) return;
+        const snap = await getDocs(collection(db, 'curriculum'));
+        if (cancelled) return;
+        const records = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        const version = remoteVersion || Date.now();
+        if (!remoteVersion) {
+          setDoc(doc(db, 'sync_meta', 'curriculum'), {
+            version,
+            updatedAt: serverTimestamp(),
+          }, { merge: true }).catch(() => {});
+        }
+        setCurriculumRecords(records);
+        localCache.set(CURRICULUM_CACHE_KEY, {
+          version,
+          savedAt: Date.now(),
+          records,
+        });
+      } catch (err) {
+        console.error("Firestore error in Curriculum:", err);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    };
+
+    fetchCurriculumIfChanged();
+    return () => {
+      cancelled = true;
+    };
   }, [isAdmin]);
 
   const handleUpdateChapters = async (newChapters) => {
@@ -99,6 +142,11 @@ const Curriculum = () => {
         chapters: newChapters,
         updatedAt: new Date().toISOString()
       }, { merge: true });
+      await setDoc(doc(db, 'sync_meta', 'curriculum'), {
+        version: Date.now(),
+        updatedAt: serverTimestamp(),
+      }, { merge: true });
+      localCache.remove(CURRICULUM_CACHE_KEY);
     } catch (err) {
       console.error("Error updating curriculum:", err);
       showToast("Failed to save changes.", 'error');
@@ -363,6 +411,27 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY8Ch1 = async (forceReset = false) => {
+    if (!isAdmin || isMigrating) return;
+    if (forceReset && !window.confirm("This will DELETE all existing Year 8 Chapter 1 questions and re-import them. Continue?")) return;
+    
+    setIsMigrating(true);
+    try {
+      const { importYear8Ch1 } = await import('../scripts/importYear8Ch1');
+      const count = await importYear8Ch1(forceReset);
+      if (count > 0) {
+        showToast(`✅ Successfully ${forceReset ? 'reset and ' : ''}added ${count} questions to Year 8 Chapter 1!`, 'success');
+      } else {
+        showToast('Year 8 Chapter 1 is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 8 Ch1:', error);
+      showToast('Failed to sync Year 8 Chapter 1.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -492,20 +561,26 @@ const Curriculum = () => {
   }, [currentRecord, searchQuery, isAdmin, profile]);
 
   const countChapterIds = useMemo(() => {
-    if (!isAdmin) return [];
     const ids = new Set(displayData.map((chapter) => chapter.id).filter(Boolean));
-    if (showAdminTools) ADMIN_TOOL_COUNT_IDS.forEach((id) => ids.add(id));
+    if (isAdmin && showAdminTools) ADMIN_TOOL_COUNT_IDS.forEach((id) => ids.add(id));
     return [...ids];
   }, [displayData, isAdmin, showAdminTools]);
 
   useEffect(() => {
-    if (!isAdmin || countChapterIds.length === 0) return undefined;
+    if (countChapterIds.length === 0) return undefined;
     let cancelled = false;
     const cached = loadCachedQuestionCounts();
-    setQuestionCounts((prev) => ({ ...cached, ...prev }));
+    setQuestionCounts((prev) => ({ ...cached.counts, ...prev }));
 
     const fetchVisibleCounts = async () => {
       try {
+        const metaSnap = await getDoc(doc(db, 'sync_meta', 'questions'));
+        const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
+        const hasFreshCounts = Date.now() - Number(cached.savedAt || 0) < QUESTION_COUNT_CACHE_TTL_MS
+          && (!remoteVersion || Number(cached.version || 0) === remoteVersion)
+          && countChapterIds.every((chapterId) => cached.counts[chapterId] !== undefined);
+        if (hasFreshCounts && !isMigrating) return;
+
         const nextCounts = {};
         await Promise.all(countChapterIds.map(async (chapterId) => {
           const countQuery = query(collection(db, 'questions'), where('chapterId', '==', chapterId));
@@ -513,9 +588,9 @@ const Curriculum = () => {
           nextCounts[chapterId] = snap.data().count || 0;
         }));
         if (cancelled) return;
-        const merged = { ...cached, ...nextCounts };
+        const merged = { ...cached.counts, ...nextCounts };
         setQuestionCounts(merged);
-        saveCachedQuestionCounts(merged);
+        saveCachedQuestionCounts(merged, remoteVersion);
       } catch (err) {
         console.error("Error fetching question counts:", err);
       }
@@ -538,10 +613,10 @@ const Curriculum = () => {
       }));
     if (points.length === 0) return null;
 
-    const width = 760;
-    const height = 230;
-    const padX = 42;
-    const padY = 34;
+    const width = 520;
+    const height = 96;
+    const padX = 16;
+    const padY = 16;
     const minScore = Math.max(0, Math.min(...points.map((p) => p.percentage)) - 8);
     const maxScore = Math.min(100, Math.max(...points.map((p) => p.percentage)) + 8);
     const range = Math.max(1, maxScore - minScore);
@@ -556,50 +631,57 @@ const Curriculum = () => {
       <>
         <button
           type="button"
+          className="student-hsc-summary"
           onClick={() => setHscModalOpen(true)}
           style={{
             width: '100%',
-            border: 'none',
+            border: '1px solid rgba(99,102,241,0.14)',
             textAlign: 'left',
-            borderRadius: 28,
-            padding: 24,
-            marginBottom: 24,
-            color: 'white',
-            background: 'linear-gradient(135deg, #312e81, #4f46e5 54%, #7c3aed)',
-            boxShadow: '0 24px 60px rgba(79,70,229,0.2)',
+            borderRadius: 18,
+            padding: '16px 18px',
+            marginBottom: 20,
+            color: '#1f1b4d',
+            background: '#fff',
+            boxShadow: '0 12px 32px rgba(31,27,77,0.08)',
             cursor: 'pointer',
           }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+          <div className="student-hsc-summary__grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'minmax(150px, 0.8fr) minmax(180px, 1.2fr) minmax(120px, auto)',
+            gap: 16,
+            alignItems: 'center',
+          }}>
             <div>
-              <div style={{ fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.74 }}>HSC Progress</div>
-              <div style={{ marginTop: 8, fontSize: '2rem', fontWeight: 950, lineHeight: 1 }}>{latest.percentage.toFixed(1)}%</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#64748b' }}>
+                <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#6366f1', display: 'inline-block' }} />
+                HSC Progress
+              </div>
+              <div style={{ marginTop: 8, fontSize: '1.9rem', fontWeight: 950, lineHeight: 1, color: '#1e1b4b', letterSpacing: '-0.02em' }}>{latest.percentage.toFixed(1)}%</div>
             </div>
-            <div style={{ textAlign: 'right', fontWeight: 800, opacity: 0.9 }}>
-              <div>{latest.paper}</div>
-              <div style={{ fontSize: '0.8rem', opacity: 0.72 }}>{latest.examDate}</div>
+            <svg viewBox={`0 0 ${width} ${height}`} style={{ width: '100%', display: 'block' }} role="img" aria-label="HSC score trend">
+              <defs>
+                <linearGradient id="studentHscLine" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#6366f1" />
+                  <stop offset="100%" stopColor="#8b5cf6" />
+                </linearGradient>
+              </defs>
+              {[0, 1, 2].map((line) => {
+                const y = padY + (line * (height - padY * 2)) / 2;
+                return <line key={line} x1={padX} x2={width - padX} y1={y} y2={y} stroke="#e2e8f0" strokeWidth="1" />;
+              })}
+              <path d={path} fill="none" stroke="url(#studentHscLine)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+              {points.map((point, idx) => (
+                <g key={point.id || `${point.examDate}-${idx}`}>
+                  <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="6" fill="#fff" stroke="#6366f1" strokeWidth="3" />
+                </g>
+              ))}
+            </svg>
+            <div style={{ textAlign: 'right', fontWeight: 800, color: '#334155', minWidth: 0 }}>
+              <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{latest.paper}</div>
+              <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: 2 }}>{latest.examDate}</div>
             </div>
           </div>
-          <svg viewBox={`0 0 ${width} ${height}`} style={{ width: '100%', display: 'block', marginTop: 10 }} role="img" aria-label="HSC score trend">
-            <defs>
-              <linearGradient id="studentHscLine" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#fef3c7" />
-                <stop offset="55%" stopColor="#f9a8d4" />
-                <stop offset="100%" stopColor="#c4b5fd" />
-              </linearGradient>
-            </defs>
-            {[0, 1, 2].map((line) => {
-              const y = padY + (line * (height - padY * 2)) / 2;
-              return <line key={line} x1={padX} x2={width - padX} y1={y} y2={y} stroke="rgba(255,255,255,0.16)" strokeWidth="1" />;
-            })}
-            <path d={path} fill="none" stroke="url(#studentHscLine)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
-            {points.map((point, idx) => (
-              <g key={point.id || `${point.examDate}-${idx}`}>
-                <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="7" fill="#fff" />
-                <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="3.5" fill="#7c3aed" />
-              </g>
-            ))}
-          </svg>
         </button>
 
         <AnimatePresence>
@@ -795,6 +877,12 @@ const Curriculum = () => {
                 </button>
                 <button onClick={handleSyncY7Ch2} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
                   {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch2'}
+                </button>
+                <button onClick={() => handleSyncY8Ch1(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y8 Ch1'}
+                </button>
+                <button onClick={() => handleSyncY8Ch1(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
+                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y8'}
                 </button>
                 {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
                   <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>

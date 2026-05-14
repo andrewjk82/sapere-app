@@ -1,7 +1,15 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 
+const EIGHT_PM_BATCH_SIZE = 8;
+const CRON_STARTED_AT = Date.now();
+const CRON_SOFT_LIMIT_MS = 24_000;
+const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';
+
 export default async function handler(req, res) {
+  let dbForErrorLog = null;
+  let startLogRef = null;
+  const logs = [];
   try {
     if (!admin.apps.length) {
       admin.initializeApp({
@@ -14,8 +22,8 @@ export default async function handler(req, res) {
     }
 
     const db = admin.firestore();
+    dbForErrorLog = db;
     const nowUTC = new Date();
-    const logs = [];
     const adminEmail = 'andrewjk82@gmail.com';
 
     // ── Helper: Get Sydney date string YYYY-MM-DD ──────────────────────────
@@ -64,6 +72,13 @@ export default async function handler(req, res) {
     const todayStr    = getSydneyDateStr(nowUTC);
 
     logs.push(`[Cron] Sydney time: ${sydHour}:${String(sydMinute).padStart(2,'0')} (${sydTotalMin} min)`);
+    startLogRef = await db.collection('system_logs').add({
+      type: 'cron_execution_start',
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      sydneyTime: `${sydHour}:${String(sydMinute).padStart(2,'0')}`,
+      status: 'started',
+      logs: [...logs],
+    });
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com', port: 465, secure: true,
@@ -115,125 +130,21 @@ export default async function handler(req, res) {
     // Vercel daily crons can drift within the hour, so keep this window forgiving.
     // ══════════════════════════════════════════════════════════════════════
     if (sydHour >= 19 && sydHour <= 21) {
-      logs.push(`[Cron] Evening wrap-up window reached. Checking tasks and tomorrow's schedule...`);
-
-      // 1. Fetch all student-like users. Some legacy student docs have no role field.
-      const usersSnap = await db.collection('users').get();
-      const studentDocs = usersSnap.docs.filter(doc => isStudentProfile(doc.data()));
-
-      const cleanupRef = db.collection('system_config').doc('stat_cleanup');
-      const cleanupSnap = await cleanupRef.get();
-      if (cleanupSnap.data()?.lastRunDate !== todayStr) {
-        const cutoffDate = new Date(nowUTC);
-        cutoffDate.setDate(cutoffDate.getDate() - 7);
-        const cutoffStr = getSydneyDateStr(cutoffDate);
-        let deletedStats = 0;
-        for (const studentDoc of studentDocs) {
-          deletedStats += await pruneOldStatDocs(db, studentDoc.ref, 'daily_stats', cutoffStr);
-          deletedStats += await pruneOldStatDocs(db, studentDoc.ref, 'calc_stats', cutoffStr);
-        }
-        await cleanupRef.set({
-          lastRunDate: todayStr,
-          cutoffDate: cutoffStr,
-          deletedStats,
-          updatedAt: admin.firestore.FieldValue.serverTimestamp()
-        }, { merge: true });
-        logs.push(`[Cleanup] Deleted ${deletedStats} stat docs older than ${cutoffStr}.`);
-      } else {
-        logs.push(`[Cleanup] Stat cleanup already ran for ${todayStr}.`);
-      }
-      
-      // 2. Fetch all tomorrow's sessions to map them to students
-      const tomorrowSessionsSnap = await db.collection('sessions').where('date', '==', tomorrowStr).get();
-      const sessionsByStudent = {};
-      const sessionsByEmail = {};
-      tomorrowSessionsSnap.docs.forEach(doc => {
-        const data = { id: doc.id, ...doc.data() };
-        if (data.studentId) {
-          if (!sessionsByStudent[data.studentId]) sessionsByStudent[data.studentId] = [];
-          sessionsByStudent[data.studentId].push(data);
-        }
-        const sessionEmail = normalizeEmail(data.studentEmail || data.email);
-        if (sessionEmail) {
-          if (!sessionsByEmail[sessionEmail]) sessionsByEmail[sessionEmail] = [];
-          sessionsByEmail[sessionEmail].push(data);
-        }
+      logs.push(`[Cron] Evening wrap-up window reached. Processing queued reminders...`);
+      const queueResult = await processEightPmQueue({
+        db,
+        transporter,
+        todayStr,
+        tomorrowStr,
+        nowUTC,
+        logs,
+        isStudentProfile,
+        normalizeEmail,
+        normalizeSubjectLabel,
       });
-
-      logs.push(`[Cron] Found ${studentDocs.length} student profiles and ${tomorrowSessionsSnap.size} sessions for ${tomorrowStr}.`);
-
-      for (const studentDoc of studentDocs) {
-        const student = studentDoc.data();
-        const studentId = studentDoc.id;
-        const studentEmail = normalizeEmail(student.email);
-        const studentName = student.name || student.displayName || `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
-        const tomorrowClasses = dedupeSessions([
-          ...(sessionsByStudent[studentId] || []),
-          ...(sessionsByEmail[studentEmail] || []),
-        ]);
-        const tomorrowClassIds = tomorrowClasses.map(c => c.id).sort();
-
-        // A. Check Today's Challenge
-        const challengeSnap = await db.collection('users').doc(studentId).collection('daily_stats').doc(todayStr).get();
-        const challengeDone = challengeSnap.exists && challengeSnap.data().completed === true;
-
-        // B. Check Today's Calculation (if enabled)
-        const calcEnabled = student.calculationEnabled !== false;
-        let calcDone = true;
-        if (calcEnabled) {
-          const calcSnap = await db.collection('users').doc(studentId).collection('calc_stats').doc(todayStr).get();
-          calcDone = calcSnap.exists && calcSnap.data().completed === true;
-        }
-
-        const hasUnfinishedTasks = !challengeDone || (calcEnabled && !calcDone);
-        const reminderKey = [
-          todayStr,
-          `classes:${tomorrowClassIds.join(',')}`,
-          `daily:${challengeDone ? 'done' : 'todo'}`,
-          `calc:${calcEnabled ? (calcDone ? 'done' : 'todo') : 'off'}`,
-        ].join('|');
-
-        if (student.last8PMReminderKey === reminderKey) {
-          continue;
-        }
-
-        // Send reminder if they have classes tomorrow OR unfinished tasks today
-        if (tomorrowClasses.length > 0 || hasUnfinishedTasks) {
-          let body = `<h2 style="color: #4f46e5;">Hello, ${studentName}!</h2>`;
-          
-          if (hasUnfinishedTasks) {
-            body += `<div style="background: #fff1f2; padding: 22px 28px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #fecaca; color: #1f2937; line-height: 1.65; font-size: 16px;">`;
-            body += `<p style="margin: 0 0 16px;">Hello ${studentName},</p>`;
-            body += `<p style="margin: 0 0 16px;">You haven't completed your daily mathematics challenge for today yet.</p>`;
-            body += `<p style="margin: 0 0 16px;">Consistent practice is the key to mastery! Take 10 minutes to complete your challenge before the day ends.</p>`;
-            body += `<p style="margin: 0;">Good luck!</p>`;
-            body += `</div>`;
-          }
-
-          if (tomorrowClasses.length > 0) {
-            body += `<div style="background: #f0f9ff; padding: 15px; border-radius: 12px; border: 1px solid #bae6fd;">`;
-            body += `<strong style="color: #0369a1;">📅 Tomorrow's Schedule (${tomorrowStr}):</strong><ul style="margin: 10px 0;">`;
-            tomorrowClasses.forEach(c => {
-              body += `<li><strong>${normalizeSubjectLabel(c.subject)}</strong> @ ${c.startTime}</li>`;
-            });
-            body += `</ul></div>`;
-          }
-
-          const notificationEmail = studentEmail || normalizeEmail(tomorrowClasses.find(c => c.studentEmail || c.email)?.studentEmail || tomorrowClasses.find(c => c.studentEmail || c.email)?.email);
-
-          const result = await sendNotification(db, transporter, { studentId, studentEmail: notificationEmail, name: studentName }, 'daily_wrapup', 
-            hasUnfinishedTasks ? "You have unfinished tasks today!" : "Your schedule for tomorrow", 
-            body
-          );
-          
-          // Mark as sent
-          await studentDoc.ref.update({
-            last8PMReminderDate: todayStr,
-            last8PMReminderClassIds: tomorrowClassIds,
-            last8PMReminderKey: reminderKey
-          });
-          logs.push(`8PM wrap-up sent to ${studentName} (${tomorrowClasses.length} classes, unfinished=${hasUnfinishedTasks}, email=${result.emailSent}, push=${result.pushSent})`);
-        }
+      logs.push(`[8PM Queue] ${queueResult.sentCount} sent this run, cursor=${queueResult.nextCursor}/${queueResult.totalCount}, complete=${queueResult.complete}.`);
+      if (queueResult.complete) {
+        await notifyAdminQueueComplete(db, todayStr, queueResult, logs);
       }
     }
 
@@ -245,11 +156,35 @@ export default async function handler(req, res) {
       remindersSentCount: logs.filter(l => l.toLowerCase().includes('sent')).length,
       logs: logs
     });
+    if (startLogRef) {
+      await startLogRef.set({
+        status: 'completed',
+        completedAt: admin.firestore.FieldValue.serverTimestamp(),
+        remindersSentCount: logs.filter(l => l.toLowerCase().includes('sent')).length,
+        logs,
+      }, { merge: true });
+    }
 
     return res.status(200).json({ success: true, logs });
 
   } catch (error) {
     console.error('Unified Cron Error:', error.message, error.stack);
+    logs.push(`[Cron Error] ${error.message}`);
+    if (startLogRef) {
+      await startLogRef.set({
+        status: 'failed',
+        failedAt: admin.firestore.FieldValue.serverTimestamp(),
+        error: error.message,
+        logs,
+      }, { merge: true }).catch(() => {});
+    } else if (dbForErrorLog) {
+      await dbForErrorLog.collection('system_logs').add({
+        type: 'cron_execution_error',
+        timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        error: error.message,
+        logs,
+      }).catch(() => {});
+    }
     return res.status(500).json({ error: error.message });
   }
 }
@@ -262,6 +197,288 @@ function dedupeSessions(sessions) {
     seen.add(key);
     return true;
   });
+}
+
+async function processEightPmQueue({
+  db,
+  transporter,
+  todayStr,
+  tomorrowStr,
+  nowUTC,
+  logs,
+  isStudentProfile,
+  normalizeEmail,
+  normalizeSubjectLabel,
+}) {
+  const queueRef = db.collection('notification_queue_8pm').doc(todayStr);
+  const queueSnap = await queueRef.get();
+  let queue = queueSnap.exists ? queueSnap.data() : null;
+
+  if (!queue || queue.status === 'failed') {
+    queue = await buildEightPmQueue({
+      db,
+      queueRef,
+      todayStr,
+      tomorrowStr,
+      nowUTC,
+      logs,
+      isStudentProfile,
+      normalizeEmail,
+      normalizeSubjectLabel,
+    });
+  }
+
+  const items = Array.isArray(queue.items) ? queue.items : [];
+  const sentIds = new Set(queue.sentIds || []);
+  let cursor = Number(queue.cursor || 0);
+  let sentCount = 0;
+
+  const batch = [];
+  while (cursor < items.length && batch.length < EIGHT_PM_BATCH_SIZE) {
+    const item = items[cursor];
+    cursor += 1;
+    if (!item?.studentId || sentIds.has(item.studentId)) continue;
+    batch.push(item);
+  }
+
+  const results = await Promise.allSettled(batch.map(async (item) => {
+    try {
+      const result = await sendNotification(
+        db,
+        transporter,
+        {
+          studentId: item.studentId,
+          studentEmail: item.studentEmail,
+          email: item.studentEmail,
+          name: item.studentName,
+        },
+        'daily_wrapup',
+        item.subject,
+        item.body,
+      );
+
+      await db.collection('users').doc(item.studentId).set({
+        last8PMReminderDate: todayStr,
+        last8PMReminderClassIds: item.tomorrowClassIds || [],
+        last8PMReminderKey: item.reminderKey,
+      }, { merge: true });
+
+      sentIds.add(item.studentId);
+      return {
+        ok: true,
+        item,
+        message: `8PM wrap-up sent to ${item.studentName} (${item.tomorrowClassIds?.length || 0} classes, unfinished=${item.hasUnfinishedTasks}, email=${result.emailSent}, push=${result.pushSent})`,
+      };
+    } catch (err) {
+      return {
+        ok: false,
+        item,
+        message: `8PM wrap-up failed for ${item.studentName || item.studentId}: ${err.message}`,
+      };
+    }
+  }));
+
+  results.forEach((result) => {
+    const value = result.status === 'fulfilled'
+      ? result.value
+      : { ok: false, message: `8PM wrap-up failed unexpectedly: ${result.reason?.message || result.reason}` };
+    if (value.ok) sentCount += 1;
+    logs.push(value.message);
+  });
+
+  const complete = cursor >= items.length;
+  await queueRef.set({
+    cursor,
+    sentIds: Array.from(sentIds),
+    sentCount: sentIds.size,
+    status: complete ? 'complete' : 'partial',
+    lastRunAt: admin.firestore.FieldValue.serverTimestamp(),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+
+  return {
+    sentCount,
+    nextCursor: cursor,
+    totalCount: items.length,
+    complete,
+    elapsedMs: Date.now() - CRON_STARTED_AT,
+  };
+}
+
+async function notifyAdminQueueComplete(db, todayStr, queueResult, logs) {
+  const queueRef = db.collection('notification_queue_8pm').doc(todayStr);
+  const queueSnap = await queueRef.get();
+  const queue = queueSnap.exists ? queueSnap.data() : {};
+  if (queue.adminNotifiedAt) return;
+
+  const total = Number(queue.totalCount || queueResult.totalCount || 0);
+  const sent = Number(queue.sentCount || queueResult.nextCursor || 0);
+  const failed = Math.max(0, total - sent);
+  const title = `8PM reminder complete: ${sent}/${total}`;
+  const body = [
+    `Date: ${todayStr}`,
+    `Queued: ${total}`,
+    `Sent/marked: ${sent}`,
+    failed ? `Not completed: ${failed}` : 'All queued reminders processed.',
+  ].join('\n');
+
+  await db.collection('users').doc(ADMIN_UID).collection('notifications').add({
+    title,
+    body,
+    timestamp: admin.firestore.FieldValue.serverTimestamp(),
+    read: false,
+    type: 'cron_summary',
+    metadata: {
+      date: todayStr,
+      total,
+      sent,
+      failed,
+      queueId: todayStr,
+    },
+  });
+  await queueRef.set({
+    adminNotifiedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+  logs.push(`[8PM Queue] Admin in-app summary notification saved (${sent}/${total}).`);
+}
+
+async function buildEightPmQueue({
+  db,
+  queueRef,
+  todayStr,
+  tomorrowStr,
+  nowUTC,
+  logs,
+  isStudentProfile,
+  normalizeEmail,
+  normalizeSubjectLabel,
+}) {
+  logs.push(`[8PM Queue] Building queue for ${todayStr}.`);
+  await queueRef.set({
+    status: 'building',
+    cursor: 0,
+    sentIds: [],
+    sentCount: 0,
+    date: todayStr,
+    tomorrowDate: tomorrowStr,
+    startedAt: admin.firestore.FieldValue.serverTimestamp(),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  }, { merge: true });
+
+  const usersSnap = await db.collection('users').get();
+  const studentDocs = usersSnap.docs.filter(doc => isStudentProfile(doc.data()));
+  const tomorrowSessionsSnap = await db.collection('sessions').where('date', '==', tomorrowStr).get();
+  const sessionsByStudent = {};
+  const sessionsByEmail = {};
+  tomorrowSessionsSnap.docs.forEach(doc => {
+    const data = { id: doc.id, ...doc.data() };
+    if (data.studentId) {
+      if (!sessionsByStudent[data.studentId]) sessionsByStudent[data.studentId] = [];
+      sessionsByStudent[data.studentId].push(data);
+    }
+    const sessionEmail = normalizeEmail(data.studentEmail || data.email);
+    if (sessionEmail) {
+      if (!sessionsByEmail[sessionEmail]) sessionsByEmail[sessionEmail] = [];
+      sessionsByEmail[sessionEmail].push(data);
+    }
+  });
+
+  logs.push(`[8PM Queue] Found ${studentDocs.length} student profiles and ${tomorrowSessionsSnap.size} sessions for ${tomorrowStr}.`);
+
+  const cleanupRef = db.collection('system_config').doc('stat_cleanup');
+  cleanupRef.set({
+    lastQueuedDate: todayStr,
+    updatedAt: admin.firestore.FieldValue.serverTimestamp()
+  }, { merge: true }).catch(() => {});
+
+  const items = [];
+  const statusChecks = await Promise.all(studentDocs.map(async (studentDoc) => {
+    const student = studentDoc.data();
+    const studentId = studentDoc.id;
+    const studentEmail = normalizeEmail(student.email);
+    const studentName = student.name || student.displayName || `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
+    const tomorrowClasses = dedupeSessions([
+      ...(sessionsByStudent[studentId] || []),
+      ...(sessionsByEmail[studentEmail] || []),
+    ]);
+    const tomorrowClassIds = tomorrowClasses.map(c => c.id).sort();
+
+    const [challengeSnap, calcSnap] = await Promise.all([
+      db.collection('users').doc(studentId).collection('daily_stats').doc(todayStr).get(),
+      student.calculationEnabled === false
+        ? Promise.resolve(null)
+        : db.collection('users').doc(studentId).collection('calc_stats').doc(todayStr).get(),
+    ]);
+    const challengeDone = challengeSnap.exists && challengeSnap.data().completed === true;
+    const calcEnabled = student.calculationEnabled !== false;
+    const calcDone = !calcEnabled || (calcSnap?.exists && calcSnap.data().completed === true);
+    const hasUnfinishedTasks = !challengeDone || (calcEnabled && !calcDone);
+    const reminderKey = [
+      todayStr,
+      `classes:${tomorrowClassIds.join(',')}`,
+      `daily:${challengeDone ? 'done' : 'todo'}`,
+      `calc:${calcEnabled ? (calcDone ? 'done' : 'todo') : 'off'}`,
+    ].join('|');
+
+    if (student.last8PMReminderKey === reminderKey) return null;
+    if (tomorrowClasses.length === 0 && !hasUnfinishedTasks) return null;
+
+    let body = `<h2 style="color: #4f46e5;">Hello, ${studentName}!</h2>`;
+    if (hasUnfinishedTasks) {
+      body += `<div style="background: #fff1f2; padding: 22px 28px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #fecaca; color: #1f2937; line-height: 1.65; font-size: 16px;">`;
+      body += `<p style="margin: 0 0 16px;">Hello ${studentName},</p>`;
+      body += `<p style="margin: 0 0 16px;">You haven't completed your daily mathematics challenge for today yet.</p>`;
+      body += `<p style="margin: 0 0 16px;">Consistent practice is the key to mastery! Take 10 minutes to complete your challenge before the day ends.</p>`;
+      body += `<p style="margin: 0;">Good luck!</p>`;
+      body += `</div>`;
+    }
+    if (tomorrowClasses.length > 0) {
+      body += `<div style="background: #f0f9ff; padding: 15px; border-radius: 12px; border: 1px solid #bae6fd;">`;
+      body += `<strong style="color: #0369a1;">Tomorrow's Schedule (${tomorrowStr}):</strong><ul style="margin: 10px 0;">`;
+      tomorrowClasses.forEach(c => {
+        body += `<li><strong>${normalizeSubjectLabel(c.subject)}</strong> @ ${c.startTime}</li>`;
+      });
+      body += `</ul></div>`;
+    }
+
+    const notificationEmail = studentEmail || normalizeEmail(
+      tomorrowClasses.find(c => c.studentEmail || c.email)?.studentEmail ||
+      tomorrowClasses.find(c => c.studentEmail || c.email)?.email
+    );
+
+    return {
+      studentId,
+      studentEmail: notificationEmail,
+      studentName,
+      subject: hasUnfinishedTasks ? 'You have unfinished tasks today!' : 'Your schedule for tomorrow',
+      body,
+      reminderKey,
+      hasUnfinishedTasks,
+      tomorrowClassIds,
+      challengeDone,
+      calcDone,
+      calcEnabled,
+    };
+  }));
+
+  statusChecks.filter(Boolean).forEach(item => items.push(item));
+
+  const queue = {
+    date: todayStr,
+    tomorrowDate: tomorrowStr,
+    status: items.length === 0 ? 'complete' : 'ready',
+    cursor: 0,
+    items,
+    totalCount: items.length,
+    sentIds: [],
+    sentCount: 0,
+    createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  };
+
+  await queueRef.set(queue, { merge: true });
+  logs.push(`[8PM Queue] Built ${items.length} queued reminders.`);
+  return queue;
 }
 
 async function commitDeletes(db, refs) {
@@ -335,31 +552,35 @@ function buildEmailTemplate(title, body, ctaLabel = 'Go to Academy') {
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="color-scheme" content="light only">
+      <meta name="supported-color-schemes" content="light">
       <title>${title}</title>
     </head>
-    <body style="margin:0; padding:0; background:#f4f7ff; font-family:Arial, Helvetica, sans-serif; color:#191927;">
-      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#f4f7ff;">
+    <body bgcolor="#f7f4ff" style="margin:0; padding:0; background:#f7f4ff; font-family:Arial, Helvetica, sans-serif; color:#1e1b4b;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f7f4ff" style="background:#f7f4ff;">
         <tr>
-          <td align="center" style="padding:24px 14px 30px;">
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:760px; background:#ffffff; border-radius:30px; overflow:hidden; box-shadow:0 18px 50px rgba(31,41,55,0.08);">
+          <td align="center" style="padding:28px 14px 32px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="max-width:720px; background:#ffffff; border-radius:26px; overflow:hidden; border:1px solid #e8e2ff; box-shadow:0 18px 45px rgba(99,102,241,0.12);">
               <tr>
-                <td align="center" style="background:#b4a6e4; padding:46px 28px;">
-                  <div style="font-size:34px; line-height:1.15; font-weight:900; color:#ffffff; letter-spacing:-0.02em;">Sapereaude Academia</div>
+                <td align="center" bgcolor="#ede9fe" style="background:#ede9fe; padding:34px 28px; border-bottom:1px solid #ddd6fe;">
+                  <div style="font-size:30px; line-height:1.15; font-weight:900; color:#312e81; letter-spacing:0;">Sapereaude Academia</div>
                 </td>
               </tr>
               <tr>
-                <td style="padding:54px 50px 46px;">
-                  <h1 style="margin:0 0 28px; font-size:28px; line-height:1.25; font-weight:900; color:#191927;">${title}</h1>
-                  <div style="font-size:20px; line-height:1.65; color:#4d4d60;">
-                    ${body}
+                <td bgcolor="#ffffff" style="background:#ffffff; padding:46px 44px 42px;">
+                  <h1 style="margin:0 0 24px; font-size:28px; line-height:1.28; font-weight:900; color:#1e1b4b;">${title}</h1>
+                  <div style="font-size:19px; line-height:1.68; color:#475569;">
+                    <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:20px; padding:26px 28px;">
+                      ${body}
+                    </div>
                   </div>
-                  <div style="margin-top:44px; padding-top:28px; border-top:1px solid #edf0f7; text-align:center;">
-                    <a href="https://sapere-app.vercel.app" style="display:inline-block; min-width:150px; background:#b4a6e4; color:#ffffff; padding:16px 32px; border-radius:999px; text-decoration:none; font-size:16px; font-weight:900; box-shadow:0 10px 24px rgba(180,166,228,0.28);">${ctaLabel}</a>
+                  <div style="margin-top:36px; padding-top:26px; border-top:1px solid #eef2ff; text-align:center;">
+                    <a href="https://sapere-app.vercel.app" style="display:inline-block; min-width:150px; background:#6366f1; color:#ffffff; padding:15px 32px; border-radius:999px; text-decoration:none; font-size:16px; font-weight:900; box-shadow:0 10px 22px rgba(99,102,241,0.24);">${ctaLabel}</a>
                   </div>
                 </td>
               </tr>
             </table>
-            <p style="margin:26px 0 0; color:#818194; font-size:14px; line-height:1.5; font-weight:600;">© 2026 Sapereaude Academia. All rights reserved.</p>
+            <p style="margin:24px 0 0; color:#64748b; font-size:14px; line-height:1.5; font-weight:600;">© 2026 Sapereaude Academia. All rights reserved.</p>
           </td>
         </tr>
       </table>

@@ -85,13 +85,15 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   // ── Fetch Last Sync Info ──
   useEffect(() => {
     if (!isAdmin) return;
-    const q = query(collection(db, 'system_logs'), where('type', '==', 'cron_execution'));
+    const q = query(
+      collection(db, 'system_logs'),
+      where('type', '==', 'cron_execution'),
+      orderBy('timestamp', 'desc'),
+      limit(1)
+    );
     return onSnapshot(q, (snap) => {
       if (!snap.empty) {
-        const sorted = snap.docs
-          .map(d => d.data())
-          .sort((a, b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
-        setLastSync(sorted[0]);
+        setLastSync(snap.docs[0].data());
       }
     });
   }, [isAdmin]);

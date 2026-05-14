@@ -6,14 +6,72 @@ import {
   where, 
   onSnapshot,
   doc,
+  getDoc,
+  setDoc,
   updateDoc,
   deleteDoc,
   serverTimestamp
 } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
+import { localCache } from "./localCacheService";
 
 const COLLECTION_NAME = "students";
+const STUDENT_CACHE_VERSION = 2;
+
+const normalizeEmail = (email) => (email || "").trim().toLowerCase();
+
+const mergeDuplicateStudentRecords = (manualStudents, registeredStudents) => {
+  const registeredByEmail = new Map();
+  registeredStudents.forEach((student) => {
+    const email = normalizeEmail(student.email);
+    if (email) registeredByEmail.set(email, student);
+  });
+
+  const mergedRegistered = new Map(registeredStudents.map((student) => [student.id, student]));
+  const unmatchedManual = [];
+
+  manualStudents.forEach((manual) => {
+    const registered = registeredByEmail.get(normalizeEmail(manual.email));
+    if (!registered) {
+      unmatchedManual.push(manual);
+      return;
+    }
+
+    mergedRegistered.set(registered.id, {
+      ...registered,
+      linkedManualStudentId: manual.id,
+      tutorId: manual.tutorId || registered.tutorId,
+      manualProfile: manual,
+    });
+  });
+
+  return [
+    ...unmatchedManual,
+    ...Array.from(mergedRegistered.values())
+  ].sort((a, b) => {
+    const nameA = a.name || a.displayName || "";
+    const nameB = b.name || b.displayName || "";
+    return nameA.localeCompare(nameB);
+  });
+};
+
+const getStudentsCacheKey = (tutorId, isAdmin) =>
+  `students:v${STUDENT_CACHE_VERSION}:${isAdmin ? "admin" : tutorId || "unknown"}`;
+
+const getStudentsMetaId = (tutorId, isAdmin) =>
+  isAdmin ? "students_admin" : `students_${tutorId || "unknown"}`;
+
+const metaVersionOf = (data) =>
+  Number(data?.version || data?.updatedAt?.toMillis?.() || data?.updatedAtMs || 0);
+
+export const touchStudentsSyncMeta = async (tutorId, isAdmin = false) => {
+  const metaId = getStudentsMetaId(tutorId, isAdmin);
+  await setDoc(doc(db, "sync_meta", metaId), {
+    version: Date.now(),
+    updatedAt: serverTimestamp(),
+  }, { merge: true });
+};
 
 export const studentService = {
   // 학생 추가
@@ -36,6 +94,8 @@ export const studentService = {
       } catch (lbErr) {
         console.warn('leaderboard addStudent failed (non-fatal):', lbErr.code);
       }
+      await touchStudentsSyncMeta(tutorId, false).catch(() => {});
+      await touchStudentsSyncMeta(tutorId, true).catch(() => {});
 
       return docRef.id;
     } catch (error) {
@@ -46,7 +106,15 @@ export const studentService = {
 
   // 학생 목록 수동 가져오기 (1회성)
   async getStudents(tutorId, isAdmin = false) {
+    const cacheKey = getStudentsCacheKey(tutorId, isAdmin);
+    const cached = localCache.get(cacheKey);
     try {
+      const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
+      const remoteVersion = metaVersionOf(metaSnap.data());
+      if (cached?.students && cached?.version === remoteVersion && remoteVersion > 0) {
+        return cached.students;
+      }
+
       const studentsRef = collection(db, COLLECTION_NAME);
       const manualQuery = isAdmin 
         ? query(studentsRef) 
@@ -83,15 +151,22 @@ export const studentService = {
           });
       }
 
-      return [
-        ...manualStudents,
-        ...registeredStudents
-      ].sort((a, b) => {
-        const nameA = a.name || "";
-        const nameB = b.name || "";
-        return nameA.localeCompare(nameB);
+      const students = mergeDuplicateStudentRecords(manualStudents, registeredStudents);
+      const version = remoteVersion || Date.now();
+      if (!remoteVersion) {
+        await setDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)), {
+          version,
+          updatedAt: serverTimestamp(),
+        }, { merge: true }).catch(() => {});
+      }
+      localCache.set(cacheKey, {
+        version,
+        savedAt: Date.now(),
+        students,
       });
+      return students;
     } catch (error) {
+      if (cached?.students) return cached.students;
       console.error("Error fetching students: ", error);
       throw error;
     }
@@ -112,16 +187,7 @@ export const studentService = {
     let registeredStudents = [];
 
     const updateAll = () => {
-      // Merge and normalize
-      const combined = [
-        ...manualStudents,
-        ...registeredStudents
-      ].sort((a, b) => {
-        const nameA = a.name || a.displayName || "";
-        const nameB = b.name || b.displayName || "";
-        return nameA.localeCompare(nameB);
-      });
-      callback(combined);
+      callback(mergeDuplicateStudentRecords(manualStudents, registeredStudents));
     };
 
     // Unsubscribe from manual students
@@ -131,6 +197,11 @@ export const studentService = {
         source: 'manual',
         ...doc.data()
       }));
+      localCache.set(getStudentsCacheKey(tutorId, isAdmin), {
+        version: Date.now(),
+        savedAt: Date.now(),
+        students: mergeDuplicateStudentRecords(manualStudents, registeredStudents),
+      });
       updateAll();
     }, onError);
 
@@ -173,6 +244,11 @@ export const studentService = {
                 avatarUrl: data.avatarUrl || fallbackAvatar,
               };
             });
+          localCache.set(getStudentsCacheKey(tutorId, isAdmin), {
+            version: Date.now(),
+            savedAt: Date.now(),
+            students: mergeDuplicateStudentRecords(manualStudents, registeredStudents),
+          });
           updateAll();
         } catch (err) {
           if (typeof onError === 'function') onError(err);
@@ -191,13 +267,15 @@ export const studentService = {
   // 학생 정보 수정
   async updateStudent(studentId, data) {
     const docRef = doc(db, COLLECTION_NAME, studentId);
-    return await updateDoc(docRef, data);
+    await updateDoc(docRef, data);
+    await touchStudentsSyncMeta(data?.tutorId, true).catch(() => {});
   },
 
   // 가입 학생(유저) 정보 수정
   async updateRegisteredUser(userId, data) {
     const docRef = doc(db, "users", userId);
-    return await updateDoc(docRef, data);
+    await updateDoc(docRef, data);
+    await touchStudentsSyncMeta(data?.tutorId, true).catch(() => {});
   },
 
   // 학생 삭제
@@ -210,6 +288,7 @@ export const studentService = {
     } catch (lbErr) {
       console.warn('leaderboard removeStudent failed (non-fatal):', lbErr.code);
     }
+    await touchStudentsSyncMeta(null, true).catch(() => {});
   },
 
   async deleteRegisteredUser(userId) {
@@ -221,6 +300,7 @@ export const studentService = {
     } catch (lbErr) {
       console.warn('leaderboard removeUser failed (non-fatal):', lbErr.code);
     }
+    await touchStudentsSyncMeta(null, true).catch(() => {});
   },
 
   async deleteStudentRecord(student) {

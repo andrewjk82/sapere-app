@@ -7,6 +7,7 @@ import {
   query,
   where,
   addDoc,
+  setDoc,
   doc,
   updateDoc,
   serverTimestamp,
@@ -20,6 +21,19 @@ import { useToast } from '../context/ToastContext';
 import MathGraph from './MathGraph';
 
 const QUESTION_PAGE_SIZE = 10;
+const questionBankSessionCache = new Map();
+
+const stripUndefined = (value) => {
+  if (Array.isArray(value)) return value.map(stripUndefined);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value)
+        .filter(([, current]) => current !== undefined)
+        .map(([key, current]) => [key, stripUndefined(current)])
+    );
+  }
+  return value;
+};
 
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
@@ -363,7 +377,17 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
     try {
       const selectedTopic = (chapter.topics || []).find(topic => topic.id === formData.topicId);
-      const payload = {
+      let graphData = null;
+      if (formData.graphData && formData.graphData.trim()) {
+        try {
+          graphData = JSON.parse(formData.graphData);
+        } catch {
+          showToast("Graph Data JSON is invalid. Please fix it or clear the field.", 'error');
+          return;
+        }
+      }
+
+      const payload = stripUndefined({
         chapterId: chapter.id,
         chapterTitle: chapter.title,
         topicId: selectedTopic?.id || '',
@@ -383,14 +407,21 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: formData.solution,
         hint: formData.hint,
         subQuestions: (formData.subQuestions || []).map(sq => ({
-          ...sq,
-          answer: sq.type === 'multiple_choice' ? (sq.answerIdx?.toString() || '') : sq.answer
+          id: sq.id || '',
+          question: sq.question || '',
+          type: sq.type || 'short_answer',
+          options: sq.type === 'multiple_choice'
+            ? (sq.options || []).filter(o => (o?.text || '').trim() !== '' || o?.imageUrl)
+            : [],
+          answer: sq.type === 'multiple_choice' ? (sq.answerIdx?.toString() || '') : (sq.answer || ''),
+          solution: sq.solution || '',
+          hint: sq.hint || ''
         })),
         requiresManualGrading: formData.requiresManualGrading || false,
-        graphData: formData.graphData ? JSON.parse(formData.graphData) : null,
+        graphData,
         isActive: true,
         updatedAt: serverTimestamp()
-      };
+      });
 
       if (editingQuestion) {
         await updateDoc(doc(db, 'questions', editingQuestion), payload);
@@ -398,6 +429,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         payload.createdAt = serverTimestamp();
         await addDoc(collection(db, 'questions'), payload);
       }
+      await setDoc(doc(db, 'sync_meta', 'questions'), {
+        version: Date.now(),
+        updatedAt: serverTimestamp(),
+      }, { merge: true });
 
       questionBankSessionCache.delete(`questions:${chapterId}`);
       await loadQuestionPage({ reset: true });
@@ -409,8 +444,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       }
       showToast("Question saved successfully!", 'success');
     } catch (e) {
-      console.error(e);
-      showToast("Error saving question.", 'error');
+      console.error('Question save failed:', e);
+      showToast(`Error saving question: ${e.code || e.message || 'Unknown error'}`, 'error');
     }
   };
 

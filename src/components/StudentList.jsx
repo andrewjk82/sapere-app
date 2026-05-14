@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
-import { doc, getDoc } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, limit, query, where } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
@@ -15,9 +15,11 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   const [activeMenuId, setActiveMenuId] = useState(null);
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileStudent, setProfileStudent] = useState(null);
-  const [completionStates, setCompletionStates] = useState({}); // { studentId: boolean }
+  const [completionStates, setCompletionStates] = useState({}); // { studentId: 'pending' | 'done' | 'ended' }
+  const [reviewPendingStates, setReviewPendingStates] = useState({});
 
   const todayStr = new Date().toLocaleDateString('en-CA'); // Local YYYY-MM-DD, avoids UTC timezone shift
+  const COMPLETION_REFRESH_TTL_MS = 5 * 60 * 1000;
 
   // Build a stable ID-list from `students` so the effect doesn't re-run every
   // time the parent passes in a new array reference with the same contents.
@@ -30,38 +32,36 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
     if (!students || students.length === 0) return;
     let cancelled = false;
 
-    // Single batched fetch instead of 2N realtime listeners. The badges
-    // refresh on mount AND whenever the user returns focus to the page or
-    // tab (focus + visibilitychange) — same pattern Gmail / Slack use.
-    // This gives a "feels live" experience without the cost of 100 long-
-    // lived subscriptions. Reads only happen when the admin is actually
-    // looking at the screen.
+    // One summary document replaces 2N per-student daily/calc stat reads.
     const fetchCompletions = async () => {
-      const results = await Promise.allSettled(
-        students.map(async (student) => {
-          const colName = student.source === 'manual' ? 'students' : 'users';
-          const dailyRef = doc(db, colName, student.id, 'daily_stats', todayStr);
-          const calcRef = doc(db, colName, student.id, 'calc_stats', todayStr);
-          const [dailySnap, calcSnap] = await Promise.all([getDoc(dailyRef), getDoc(calcRef)]);
-          const done = (dailySnap.exists() && dailySnap.data().completed === true)
-            || (calcSnap.exists() && calcSnap.data().completed === true);
-          return [student.id, done];
-        })
-      );
+      const summarySnap = await getDoc(doc(db, 'admin_daily_summary', todayStr));
       if (cancelled) return;
+      const summary = summarySnap.exists() ? (summarySnap.data().students || {}) : {};
       const next = {};
-      for (const r of results) {
-        if (r.status === 'fulfilled') next[r.value[0]] = r.value[1];
-      }
+      students.forEach((student) => {
+        const item = summary[student.id];
+        if (!item) {
+          next[student.id] = 'pending';
+          return;
+        }
+        const calcEnabled = student.calculationEnabled !== false;
+        const dailyDone = item.dailyDone === true;
+        const calcDone = item.calcDone === true;
+        const dailyEnded = item.dailyEnded === true || item.dailyStatus === 'ended';
+        const calcEnded = item.calcEnded === true || item.calcStatus === 'ended';
+        const allRequiredDone = dailyDone && (!calcEnabled || calcDone);
+        const anyEnded = dailyEnded || (calcEnabled && calcEnded);
+        next[student.id] = allRequiredDone ? 'done' : (anyEnded ? 'ended' : 'pending');
+      });
       setCompletionStates(next);
     };
 
-    // Throttle: don't refire if the last refresh was less than 5 s ago
+    // Throttle: this is cheap now (1 read), but still avoid focus bounce churn.
     // (rapid focus/blur shouldn't pile up reads).
     let lastRefreshAt = 0;
     const refresh = () => {
       const now = Date.now();
-      if (now - lastRefreshAt < 5000) return;
+      if (now - lastRefreshAt < COMPLETION_REFRESH_TTL_MS) return;
       lastRefreshAt = now;
       fetchCompletions();
     };
@@ -80,6 +80,33 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
   }, [studentSig, todayStr]);
+
+  React.useEffect(() => {
+    if (!students || students.length === 0) return;
+    let cancelled = false;
+
+    const fetchPendingReviews = async () => {
+      const checks = await Promise.all(students.map(async (student) => {
+        try {
+          const snap = await getDocs(query(
+            collection(db, 'grading_queue'),
+            where('userId', '==', student.id),
+            where('status', '==', 'pending'),
+            limit(1)
+          ));
+          return [student.id, !snap.empty];
+        } catch {
+          return [student.id, false];
+        }
+      }));
+      if (!cancelled) setReviewPendingStates(Object.fromEntries(checks));
+    };
+
+    fetchPendingReviews();
+    return () => {
+      cancelled = true;
+    };
+  }, [studentSig]);
 
   const handleManualRefresh = async () => {
     setIsRefreshing(true);
@@ -175,29 +202,9 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                         }`} style={{ fontSize: '0.65rem', padding: '2px 8px' }}>
                           {student.status || 'Active'}
                         </span>
-                        {completionStates[student.id] === false && (
+                        {completionStates[student.id] === 'done' && (
                           <div 
-                            title="Daily Challenge Pending"
-                            style={{ 
-                              display: 'flex', 
-                              alignItems: 'center', 
-                              gap: '4px', 
-                              background: '#fff1f2', 
-                              color: '#f43f5e', 
-                              padding: '2px 8px', 
-                              borderRadius: '8px', 
-                              fontSize: '0.65rem', 
-                              fontWeight: 900,
-                              border: '1px solid #fecaca'
-                            }}
-                          >
-                            <AlertCircle size={10} />
-                            PENDING
-                          </div>
-                        )}
-                        {completionStates[student.id] === true && (
-                          <div 
-                            title="Daily Challenge Completed"
+                            title="Today's required challenges completed"
                             style={{ 
                               display: 'flex', 
                               alignItems: 'center', 
@@ -213,6 +220,46 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                           >
                             <CheckCircle size={10} />
                             DONE
+                          </div>
+                        )}
+                        {completionStates[student.id] === 'ended' && (
+                          <div 
+                            title="Today's challenge was started but ended before completion"
+                            style={{ 
+                              display: 'flex', 
+                              alignItems: 'center', 
+                              gap: '4px', 
+                              background: '#fff7ed', 
+                              color: '#ea580c', 
+                              padding: '2px 8px', 
+                              borderRadius: '8px', 
+                              fontSize: '0.65rem', 
+                              fontWeight: 900,
+                              border: '1px solid #fed7aa'
+                            }}
+                          >
+                            <AlertCircle size={10} />
+                            ENDED
+                          </div>
+                        )}
+                        {completionStates[student.id] !== 'done' && completionStates[student.id] !== 'ended' && reviewPendingStates[student.id] === true && (
+                          <div 
+                            title="Manual review pending"
+                            style={{ 
+                              display: 'flex', 
+                              alignItems: 'center', 
+                              gap: '4px', 
+                              background: '#fff1f2', 
+                              color: '#f43f5e', 
+                              padding: '2px 8px', 
+                              borderRadius: '8px', 
+                              fontSize: '0.65rem', 
+                              fontWeight: 900,
+                              border: '1px solid #fecaca'
+                            }}
+                          >
+                            <AlertCircle size={10} />
+                            PENDING
                           </div>
                         )}
                       </div>

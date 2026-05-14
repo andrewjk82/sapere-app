@@ -20,9 +20,10 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot, query, collection, orderBy, limit } from 'firebase/firestore';
+import { doc, onSnapshot, query, collection, orderBy, limit, updateDoc } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
+import { localCache } from './services/localCacheService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -54,12 +55,18 @@ const isStandaloneAppDisplay = () => {
     || window.navigator?.standalone === true;
 };
 
+const CHALLENGE_BOOT_CACHE_VERSION = 1;
+const getChallengeBootCacheKey = (uid) => `challenge-boot:v${CHALLENGE_BOOT_CACHE_VERSION}:${uid}`;
+const isTodayDateKey = (dateKey) => dateKey === new Date().toLocaleDateString('en-CA');
+
 const getTimeGreeting = () => {
   const hour = new Date().getHours();
   if (hour < 12) return 'Good morning';
   if (hour < 18) return 'Good afternoon';
   return 'Good evening';
 };
+
+const getProfileCacheKey = (uid) => `profile:v1:${uid}`;
 
 // Typewriter hook — types out `text` one character at a time after `startDelay` ms
 function useTypewriter(text, { startDelay = 0, charInterval = 38 } = {}) {
@@ -364,6 +371,52 @@ function App() {
     await batch.commit();
   };
 
+  const handleApplyChallengeReset = async (notification) => {
+    const metadata = notification?.metadata || {};
+    if (!user?.uid || metadata.type !== 'challenge_reset') return;
+    if (!isTodayDateKey(metadata.date)) {
+      showToast('This reset is for another date.', 'info');
+      return;
+    }
+
+    const cacheKey = getChallengeBootCacheKey(user.uid);
+    const current = localCache.get(cacheKey) || {};
+    const patch = metadata.challengeType === 'calc'
+      ? {
+          calcStatus: 'open',
+          calcCompletedToday: false,
+          calcAbandonedToday: false,
+        }
+      : {
+          dailyStatus: 'open',
+          todayCompleted: false,
+          abandonedToday: false,
+        };
+
+    localCache.set(cacheKey, {
+      ...current,
+      date: metadata.date,
+      ...patch,
+      resetAppliedAt: Date.now(),
+      resetVersion: metadata.resetVersion || Date.now(),
+      savedAt: Date.now(),
+    });
+    window.dispatchEvent(new Event('sapere-challenge-reset-applied'));
+
+    try {
+      await updateDoc(doc(db, 'users', user.uid, 'notifications', notification.id), {
+        read: true,
+        resetApplied: true
+      });
+    } catch (err) {
+      console.warn('Could not mark reset notification applied:', err?.code || err);
+    }
+
+    setShowNotifs(false);
+    setActiveTab('Challenge');
+    showToast('Reset applied on this device.', 'success');
+  };
+
   // Admin grading-queue / reports toasts are now driven by AdminFeedContext —
   // a single shared listener handles both badge counts (Sidebar), pending
   // list (Dashboard), and new-item toasts. No per-component subscription.
@@ -374,14 +427,30 @@ function App() {
       setProfileLoaded(false);
       return undefined;
     }
+    const cacheKey = getProfileCacheKey(user.uid);
+    const cachedProfile = localCache.get(cacheKey);
+    if (cachedProfile && typeof cachedProfile === 'object') {
+      setProfile(cachedProfile);
+      setProfileLoaded(true);
+    } else {
+      setProfileLoaded(false);
+    }
     const ref = doc(db, 'users', user.uid);
     return onSnapshot(ref, (snap) => {
-      setProfile(snap.exists() ? snap.data() : null);
+      const nextProfile = snap.exists() ? snap.data() : null;
+      setProfile(nextProfile);
       setProfileLoaded(true);
+      if (nextProfile) {
+        localCache.set(cacheKey, nextProfile);
+      } else {
+        localCache.remove(cacheKey);
+      }
     }, (err) => {
       console.error('Profile listener error:', err);
-      setProfile(null);
-      setProfileLoaded(true);
+      if (!cachedProfile) {
+        setProfile(null);
+        setProfileLoaded(true);
+      }
     });
   }, [user?.uid]);
 
@@ -994,6 +1063,24 @@ function App() {
                         <div key={n.id} className={`notif-item ${!n.read ? 'notif-item--unread' : ''}`}>
                           <div className="notif-item__title">{n.title}</div>
                           <div className="notif-item__body">{n.body}</div>
+                          {n.metadata?.type === 'challenge_reset' && isTodayDateKey(n.metadata?.date) && !n.resetApplied && (
+                            <button
+                              onClick={() => handleApplyChallengeReset(n)}
+                              style={{
+                                marginTop: 10,
+                                width: '100%',
+                                border: 'none',
+                                borderRadius: 12,
+                                padding: '10px 12px',
+                                background: '#6366f1',
+                                color: '#fff',
+                                fontWeight: 900,
+                                cursor: 'pointer'
+                              }}
+                            >
+                              Apply Reset
+                            </button>
+                          )}
                           <div className="notif-item__time">
                             {n.timestamp?.toDate ? n.timestamp.toDate().toLocaleString() : 'Just now'}
                           </div>

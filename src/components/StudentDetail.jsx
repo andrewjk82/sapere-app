@@ -27,9 +27,11 @@ import {
   serverTimestamp,
   deleteDoc,
   getDocs,
+  getDoc,
   setDoc,
   query,
   where,
+  limit,
 } from "firebase/firestore";
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from "../services/leaderboardService";
 import {
@@ -37,7 +39,11 @@ import {
   loadCachedHscResults,
   mergeHscResults,
   saveCachedHscResults,
+  touchHscResultsSyncMeta,
 } from "../services/hscResultsService";
+import { createDailyAssignment } from "../services/dailyAssignmentService";
+import { touchStudentsSyncMeta } from "../services/studentService";
+import { localCache } from "../services/localCacheService";
 import { useToast } from "../context/ToastContext";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import MathView, { toDisplayText } from "./MathView";
@@ -96,6 +102,42 @@ const sortStatsByDateDesc = (stats) =>
   });
 
 const getTodayDateKey = () => new Date().toLocaleDateString("en-CA");
+const getChallengeBootMetaId = (uid, date = getTodayDateKey()) => `challenge_boot_${uid}_${date}`;
+const SCHEDULE_STUDENT_PROFILE_CACHE_VERSION = 1;
+const STUDENT_LIST_CACHE_VERSION = 2;
+const getScheduleStudentProfileCacheKey = (studentId) =>
+  `schedule-student-profile:v${SCHEDULE_STUDENT_PROFILE_CACHE_VERSION}:${studentId}`;
+const getStudentsCacheKey = (tutorId, isAdmin) =>
+  `students:v${STUDENT_LIST_CACHE_VERSION}:${isAdmin ? "admin" : tutorId || "unknown"}`;
+
+const normalizeEmail = (email) => (email || "").trim().toLowerCase();
+
+const curriculumSyncFields = [
+  "assignedYear",
+  "assignedCourse",
+  "assignedChapters",
+  "completedChapters",
+  "dailyPracticeConfig",
+  "dailyQuestionCount",
+  "calculationEnabled",
+  "calcQuestionCount",
+  "showHscGraph",
+];
+
+const pickDefinedCurriculumFields = (data = {}) =>
+  curriculumSyncFields.reduce((acc, field) => {
+    if (data[field] !== undefined) acc[field] = data[field];
+    return acc;
+  }, {});
+
+const hasFieldDifferences = (current = {}, next = {}) =>
+  Object.entries(next).some(([field, value]) => {
+    try {
+      return JSON.stringify(current[field]) !== JSON.stringify(value);
+    } catch {
+      return current[field] !== value;
+    }
+  });
 
 const StudentDetail = ({ studentId, onBack }) => {
   const [student, setStudent] = useState(null);
@@ -128,13 +170,63 @@ const StudentDetail = ({ studentId, onBack }) => {
   const { showToast } = useToast();
   const [dailyYearsOpen, setDailyYearsOpen] = useState(false);
   const [editingTerm, setEditingTerm] = useState(null);
+  const activeStudentId = student?.id || studentId;
+  const activeStudentCollection = student?.source === "manual" ? "students" : "users";
+  const updateLocalStudentProfileCache = (patch = {}) => {
+    if (!activeStudentId) return;
+    const savedAt = Date.now();
+    const nextProfile = {
+      ...(student || {}),
+      id: activeStudentId,
+      source: activeStudentCollection === "students" ? "manual" : "registered",
+      ...patch,
+    };
+
+    localCache.set(getScheduleStudentProfileCacheKey(activeStudentId), {
+      savedAt,
+      profile: nextProfile,
+    });
+
+    const updateListCache = (cacheKey) => {
+      const cached = localCache.get(cacheKey);
+      if (!Array.isArray(cached?.students)) return;
+      const nextStudents = cached.students.map((item) => {
+        const sameId = item.id === activeStudentId || item.linkedManualStudentId === activeStudentId;
+        const sameEmail = normalizeEmail(item.email) && normalizeEmail(item.email) === normalizeEmail(nextProfile.email);
+        return sameId || sameEmail ? { ...item, ...patch } : item;
+      });
+      localCache.set(cacheKey, {
+        ...cached,
+        savedAt,
+        students: nextStudents,
+      });
+    };
+
+    updateListCache(getStudentsCacheKey(student?.tutorId, true));
+    if (student?.tutorId) updateListCache(getStudentsCacheKey(student.tutorId, false));
+  };
+  const touchStudentListMeta = () => {
+    touchStudentsSyncMeta(student?.tutorId, true).catch(() => {});
+    if (student?.tutorId) touchStudentsSyncMeta(student.tutorId, false).catch(() => {});
+    if (activeStudentCollection === "users" && activeStudentId) {
+      setDoc(doc(db, "sync_meta", getChallengeBootMetaId(activeStudentId)), {
+        version: Date.now(),
+        profileVersion: Date.now(),
+        updatedAt: serverTimestamp(),
+      }, { merge: true }).catch(() => {});
+    }
+  };
 
   const handleUpdateDailyConfig = (newConfig) => {
     setDailyPracticeConfig(newConfig);
-    const colName = student.source === "manual" ? "students" : "users";
-    updateDoc(doc(db, colName, studentId), {
+    updateDoc(doc(db, activeStudentCollection, activeStudentId), {
       dailyPracticeConfig: newConfig,
-    }).catch(console.error);
+    })
+      .then(() => {
+        updateLocalStudentProfileCache({ dailyPracticeConfig: newConfig });
+        touchStudentListMeta();
+      })
+      .catch(console.error);
   };
 
   const handleToggleDailyYear = (year) => {
@@ -266,81 +358,165 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   useEffect(() => {
     if (!studentId) return;
-    const unsub = onSnapshot(doc(db, "users", studentId), (snap) => {
+    let cancelled = false;
+    let unsubManual = null;
+
+    const applyStudentData = (id, source, data, extra = {}) => {
+      if (cancelled) return;
+      setStudent({ id, source, ...data, ...extra });
+      setAssignedChapters(data.assignedChapters || []);
+      setCompletedChapters(data.completedChapters || []);
+      setDailyPracticeConfig(data.dailyPracticeConfig || { years: [], chapters: [] });
+
+      setEditForm({
+        name: data.name || data.firstName || "",
+        email: data.email || "",
+        phone: data.phone || "",
+        level: data.level || data.year || "",
+        subject: data.subject || data.school || "",
+        school: data.school || "",
+        year: data.year || "",
+        dreamJob: data.dreamJob || "",
+        address: data.address || "",
+        role: data.role || "",
+        assignedYear: Array.isArray(data.assignedYear)
+          ? data.assignedYear
+          : [data.assignedYear || data.level || data.year || "Year 11"],
+        assignedCourse: Array.isArray(data.assignedCourse)
+          ? data.assignedCourse
+          : [data.assignedCourse || "Advanced"],
+        dailyQuestionCount: data.dailyQuestionCount || 10,
+        calculationEnabled: data.calculationEnabled !== false,
+        showHscGraph: data.showHscGraph === true,
+      });
+      setLoading(false);
+    };
+
+    const copyManualHscResultsToRegistered = async (manualId, userId) => {
+      const manualHscSnap = await getDocs(collection(db, "students", manualId, "hsc_results"));
+      if (manualHscSnap.empty || cancelled) return;
+
+      await Promise.all(
+        manualHscSnap.docs.map((record) =>
+          setDoc(
+            doc(db, "users", userId, "hsc_results", record.id),
+            record.data(),
+            { merge: true },
+          ),
+        ),
+      );
+    };
+
+    const syncManualToRegistered = async (manualId, manualData) => {
+      const email = normalizeEmail(manualData.email);
+      if (!email) return false;
+
+      const userSnap = await getDocs(
+        query(collection(db, "users"), where("email", "==", email), limit(1)),
+      );
+      if (userSnap.empty || cancelled) return false;
+
+      const userDoc = userSnap.docs[0];
+      if (userDoc.id === manualId) return false;
+      const syncData = pickDefinedCurriculumFields(manualData);
+      const mergedData = {
+        ...userDoc.data(),
+        ...syncData,
+      };
+
+      if (Object.keys(syncData).length > 0 && hasFieldDifferences(userDoc.data(), syncData)) {
+        await setDoc(
+          doc(db, "users", userDoc.id),
+          { ...syncData, linkedManualStudentId: manualId, updatedAt: serverTimestamp() },
+          { merge: true },
+        );
+      }
+      await copyManualHscResultsToRegistered(manualId, userDoc.id);
+
+      applyStudentData(userDoc.id, "users", mergedData, {
+        linkedManualStudentId: manualId,
+        manualProfile: manualData,
+      });
+      return true;
+    };
+
+    const syncRegisteredWithManual = async (userId, userData) => {
+      const email = normalizeEmail(userData.email);
+      if (!email) return false;
+
+      const manualSnap = await getDocs(
+        query(collection(db, "students"), where("email", "==", email), limit(1)),
+      );
+      if (manualSnap.empty || cancelled) return false;
+
+      const manualDoc = manualSnap.docs[0];
+      const manualData = manualDoc.data();
+      const syncData = pickDefinedCurriculumFields(manualData);
+      const mergedData = {
+        ...userData,
+        ...syncData,
+      };
+
+      if (Object.keys(syncData).length > 0 && hasFieldDifferences(userData, syncData)) {
+        await setDoc(
+          doc(db, "users", userId),
+          { ...syncData, linkedManualStudentId: manualDoc.id, updatedAt: serverTimestamp() },
+          { merge: true },
+        );
+      }
+      await copyManualHscResultsToRegistered(manualDoc.id, userId);
+
+      applyStudentData(userId, "users", mergedData, {
+        linkedManualStudentId: manualDoc.id,
+        manualProfile: manualData,
+      });
+      return true;
+    };
+
+    const loadManualStudent = () => {
+      if (unsubManual) return;
+      unsubManual = onSnapshot(
+        doc(db, "students", studentId),
+        async (mSnap) => {
+          if (!mSnap.exists()) {
+            if (!cancelled) {
+              setStudent(null);
+              setLoading(false);
+            }
+            return;
+          }
+
+          const mData = mSnap.data();
+          try {
+            const linked = await syncManualToRegistered(mSnap.id, mData);
+            if (linked) return;
+          } catch (err) {
+            console.warn("Manual-to-registered curriculum sync skipped:", err);
+          }
+          applyStudentData(mSnap.id, "manual", mData);
+        },
+      );
+    };
+
+    const unsub = onSnapshot(doc(db, "users", studentId), async (snap) => {
       if (snap.exists()) {
         const data = snap.data();
-        setStudent({ id: snap.id, source: "users", ...data });
-        setAssignedChapters(data.assignedChapters || []);
-        setCompletedChapters(data.completedChapters || []);
-        setDailyPracticeConfig(data.dailyPracticeConfig || { years: [], chapters: [] });
-
-        setEditForm({
-          name: data.name || data.firstName || "",
-          email: data.email || "",
-          phone: data.phone || "",
-          level: data.level || data.year || "",
-          subject: data.subject || data.school || "",
-          school: data.school || "",
-          year: data.year || "",
-          dreamJob: data.dreamJob || "",
-          address: data.address || "",
-          role: data.role || "",
-          assignedYear: Array.isArray(data.assignedYear)
-            ? data.assignedYear
-            : [data.assignedYear || data.level || data.year || "Year 11"],
-          assignedCourse: Array.isArray(data.assignedCourse)
-            ? data.assignedCourse
-            : [data.assignedCourse || "Advanced"],
-          dailyQuestionCount: data.dailyQuestionCount || 10,
-          calculationEnabled: data.calculationEnabled !== false,
-          showHscGraph: data.showHscGraph === true,
-        });
-        setLoading(false);
+        try {
+          const linked = await syncRegisteredWithManual(snap.id, data);
+          if (linked) return;
+        } catch (err) {
+          console.warn("Registered duplicate curriculum sync skipped:", err);
+        }
+        applyStudentData(snap.id, "users", data);
       } else {
-        const unsubManual = onSnapshot(
-          doc(db, "students", studentId),
-          (mSnap) => {
-            if (mSnap.exists()) {
-              const mData = mSnap.data();
-              setStudent({ id: mSnap.id, source: "manual", ...mData });
-              setAssignedChapters(mData.assignedChapters || []);
-              setCompletedChapters(mData.completedChapters || []);
-              setDailyPracticeConfig(mData.dailyPracticeConfig || { years: [], chapters: [] });
-
-              setEditForm({
-                name: mData.name || "",
-                email: mData.email || "",
-                phone: mData.phone || "",
-                level: mData.level || mData.year || "",
-                subject: mData.subject || mData.school || "",
-                school: mData.school || "",
-                year: mData.year || "",
-                dreamJob: mData.dreamJob || "",
-                address: mData.address || "",
-                role: mData.role || "",
-                assignedYear: Array.isArray(mData.assignedYear)
-                  ? mData.assignedYear
-                  : [
-                      mData.assignedYear ||
-                        mData.level ||
-                        mData.year ||
-                        "Year 11",
-                    ],
-                assignedCourse: Array.isArray(mData.assignedCourse)
-                  ? mData.assignedCourse
-                  : [mData.assignedCourse || "Advanced"],
-                dailyQuestionCount: mData.dailyQuestionCount || 10,
-                calculationEnabled: mData.calculationEnabled !== false,
-                showHscGraph: mData.showHscGraph === true,
-              });
-            }
-            setLoading(false);
-          },
-        );
-        return () => unsubManual();
+        loadManualStudent();
       }
     });
-    return () => unsub();
+    return () => {
+      cancelled = true;
+      unsub();
+      unsubManual?.();
+    };
   }, [studentId]);
 
   const handleSendMessage = async () => {
@@ -351,7 +527,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          studentId: studentId,
+          studentId: activeStudentId,
           email: student.email,
           subject: `Message from your Tutor`,
           text: messageText,
@@ -405,31 +581,38 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   useEffect(() => {
-    if (!studentId || !student?.id) return;
-    const colName = student.source === "manual" ? "students" : "users";
+    if (!activeStudentId || !student?.id) return;
     let daily = [];
     let calc = [];
     const updateStats = () =>
       setDailyStats(sortStatsByDateDesc([...daily, ...calc]));
     const unsubDaily = onSnapshot(
-      collection(db, colName, studentId, "daily_stats"),
+      query(
+        collection(db, activeStudentCollection, activeStudentId, "daily_stats"),
+        where("completed", "==", true),
+      ),
       (snap) => {
-        daily = snap.docs.map((d) => ({
-          id: d.id,
-          statCollection: "daily_stats",
-          ...d.data(),
-        }));
+        daily = snap.docs
+          .map((d) => ({
+            id: d.id,
+            statCollection: "daily_stats",
+            ...d.data(),
+          }));
         updateStats();
       },
     );
     const unsubCalc = onSnapshot(
-      collection(db, colName, studentId, "calc_stats"),
+      query(
+        collection(db, activeStudentCollection, activeStudentId, "calc_stats"),
+        where("completed", "==", true),
+      ),
       (snap) => {
-        calc = snap.docs.map((d) => ({
-          id: d.id,
-          statCollection: "calc_stats",
-          ...d.data(),
-        }));
+        calc = snap.docs
+          .map((d) => ({
+            id: d.id,
+            statCollection: "calc_stats",
+            ...d.data(),
+          }));
         updateStats();
       },
     );
@@ -437,15 +620,121 @@ const StudentDetail = ({ studentId, onBack }) => {
       unsubDaily();
       unsubCalc();
     };
-  }, [studentId, student?.source, student?.id]);
+  }, [activeStudentCollection, activeStudentId, student?.id]);
 
   useEffect(() => {
-    if (!studentId || !student?.id) return;
-    const colName = student.source === "manual" ? "students" : "users";
-    const cached = loadCachedHscResults(colName, studentId);
+    if (!selectedChallenge || !activeStudentId) return;
+    if (!selectedChallenge.hasDetailSnapshot || selectedChallenge.detailSnapshotLoaded) return;
+    if (Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0) return;
+
+    let cancelled = false;
+    const statId = selectedChallenge.id;
+    if (!statId) return;
+    const statCollection =
+      selectedChallenge.statCollection ||
+      (selectedChallenge.challengeType === "calc" ? "calc_stats" : "daily_stats");
+
+    (async () => {
+      try {
+        const snap = await getDoc(
+          doc(
+            db,
+            activeStudentCollection,
+            activeStudentId,
+            statCollection,
+            statId,
+            "detail_snapshot",
+            "main",
+          ),
+        );
+        if (cancelled || !snap.exists()) return;
+        const data = snap.data();
+        setSelectedChallenge((prev) => {
+          if (!prev || prev.id !== statId) return prev;
+          return {
+            ...prev,
+            questions: data.questions || [],
+            userAnswers: data.userAnswers || [],
+            answerResults: data.answerResults || [],
+            detailSnapshotLoaded: true,
+          };
+        });
+      } catch (err) {
+        console.warn("Calc detail snapshot load failed:", err.code || err);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedChallenge, activeStudentCollection, activeStudentId]);
+
+  useEffect(() => {
+    if (!selectedChallenge || !activeStudentId) return;
+    const results = Array.isArray(selectedChallenge.answerResults) ? selectedChallenge.answerResults : [];
+    const statCollection =
+      selectedChallenge.statCollection ||
+      (selectedChallenge.challengeType === "calc" ? "calc_stats" : "daily_stats");
+    const statId = selectedChallenge.id;
+    if (!statId) return;
+
+    const missingWorkingOut = results
+      .map((result, idx) => ({ result, idx }))
+      .filter(({ result }) =>
+        result?.hasWorkingOut &&
+        !result.workingOut &&
+        !(Array.isArray(result.workingOutPages) && result.workingOutPages.length > 0),
+      );
+    if (missingWorkingOut.length === 0) return;
+
+    let cancelled = false;
+    (async () => {
+      const loaded = await Promise.all(
+        missingWorkingOut.map(async ({ idx }) => {
+          try {
+            const snap = await getDoc(
+              doc(db, activeStudentCollection, activeStudentId, statCollection, statId, "working_out", String(idx)),
+            );
+            return snap.exists() ? { idx, data: snap.data() } : null;
+          } catch (err) {
+            console.warn(`Working out load failed for question ${idx}:`, err.code || err);
+            return null;
+          }
+        }),
+      );
+      if (cancelled) return;
+      const byIdx = loaded.filter(Boolean).reduce((acc, item) => {
+        acc[item.idx] = {
+          workingOut: item.data.workingOut || null,
+          workingOutPages: item.data.workingOutPages || [],
+        };
+        return acc;
+      }, {});
+      if (Object.keys(byIdx).length === 0) return;
+      setSelectedChallenge((prev) => {
+        if (!prev || prev.id !== statId) return prev;
+        const nextResults = Array.isArray(prev.answerResults) ? [...prev.answerResults] : [];
+        Object.entries(byIdx).forEach(([idx, data]) => {
+          nextResults[Number(idx)] = {
+            ...(nextResults[Number(idx)] || {}),
+            ...data,
+          };
+        });
+        return { ...prev, answerResults: nextResults };
+      });
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedChallenge, activeStudentCollection, activeStudentId]);
+
+  useEffect(() => {
+    if (!activeStudentId || !student?.id) return;
+    const cached = loadCachedHscResults(activeStudentCollection, activeStudentId);
     if (cached.records.length > 0) setHscRecords(cached.records);
     let cancelled = false;
-    fetchHscResultsIncremental(colName, studentId)
+    fetchHscResultsIncremental(activeStudentCollection, activeStudentId)
       .then(({ records }) => {
         if (!cancelled) setHscRecords(records);
       })
@@ -456,18 +745,23 @@ const StudentDetail = ({ studentId, onBack }) => {
     return () => {
       cancelled = true;
     };
-  }, [studentId, student?.source, student?.id]);
+  }, [activeStudentCollection, activeStudentId, student?.id]);
 
   const handleUpdateProfile = async () => {
     try {
-      const colName = student.source === "manual" ? "students" : "users";
       const normalizedRole = editForm.role || "";
-      await updateDoc(doc(db, colName, studentId), {
+      await updateDoc(doc(db, activeStudentCollection, activeStudentId), {
         ...editForm,
         role: normalizedRole,
         status: "Active",
         updatedAt: serverTimestamp(),
       });
+      updateLocalStudentProfileCache({
+        ...editForm,
+        role: normalizedRole,
+        status: "Active",
+      });
+      touchStudentListMeta();
       setIsEditModalOpen(false);
       showToast("Profile updated successfully!", "success");
     } catch (e) {
@@ -478,8 +772,9 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   const handleUpdateCurriculumSetting = async (field, value) => {
     try {
-      const colName = student.source === "manual" ? "students" : "users";
-      await updateDoc(doc(db, colName, studentId), { [field]: value });
+      await updateDoc(doc(db, activeStudentCollection, activeStudentId), { [field]: value });
+      updateLocalStudentProfileCache({ [field]: value });
+      touchStudentListMeta();
     } catch (e) {
       console.error(e);
     }
@@ -511,11 +806,15 @@ const StudentDetail = ({ studentId, onBack }) => {
     setCompletedChapters(nextCompleted);
 
     try {
-      const colName = student.source === "manual" ? "students" : "users";
-      await updateDoc(doc(db, colName, studentId), {
+      await updateDoc(doc(db, activeStudentCollection, activeStudentId), {
         assignedChapters: nextAssigned,
         completedChapters: nextCompleted,
       });
+      updateLocalStudentProfileCache({
+        assignedChapters: nextAssigned,
+        completedChapters: nextCompleted,
+      });
+      touchStudentListMeta();
     } catch (e) {
       console.error(e);
       // Optional: rollback on error?
@@ -524,7 +823,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
-    if (!file || !studentId) return;
+    if (!file || !activeStudentId) return;
     setUploading(true);
     const reader = new FileReader();
     reader.onerror = () => {
@@ -576,8 +875,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             return;
           }
 
-          const colName = student.source === "manual" ? "students" : "users";
-          await updateDoc(doc(db, colName, studentId), { dreamImageUrl: url });
+          await updateDoc(doc(db, activeStudentCollection, activeStudentId), { dreamImageUrl: url });
+          touchStudentListMeta();
         } catch (err) {
           console.error(err);
           showToast("Failed to save image.", "error");
@@ -610,7 +909,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         const day = String(nextDate.getDate()).padStart(2, "0");
 
         sessionsToCreate.push({
-          studentId,
+          studentId: activeStudentId,
           studentName: student.name || student.firstName || "Student",
           studentEmail: student.email || "",
           date: `${year}-${month}-${day}`,
@@ -633,7 +932,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          studentId,
+          studentId: activeStudentId,
           email: student.email || "",
           subject: "Your schedule has been updated",
           text: `Your ${firstSession.subject} session has been scheduled for ${firstSession.date} at ${firstSession.startTime}.`,
@@ -652,7 +951,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const handleRecalculateXP = async () => {
-    if (!student || !studentId) return;
+    if (!student || !activeStudentId) return;
     if (
       !confirm(
         "Recalculate total XP and challenge count from history? This will overwrite the current totals.",
@@ -662,15 +961,14 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     try {
       setLoading(true);
-      const colName = student.source === "manual" ? "students" : "users";
-      console.log(`Recalculating for ${colName}/${studentId}`);
+      console.log(`Recalculating for ${activeStudentCollection}/${activeStudentId}`);
 
       // 1. Fetch all daily stats
       const dailySnap = await getDocs(
-        collection(db, colName, studentId, "daily_stats"),
+        collection(db, activeStudentCollection, activeStudentId, "daily_stats"),
       );
       const calcSnap = await getDocs(
-        collection(db, colName, studentId, "calc_stats"),
+        collection(db, activeStudentCollection, activeStudentId, "calc_stats"),
       );
       const hasCalculationTest = student.calculationEnabled !== false;
       const getFallbackXp = (data, type) => {
@@ -706,7 +1004,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       console.log(`Computed: XP=${totalXP}, Count=${challengesCompleted}`);
 
       await setDoc(
-        doc(db, colName, studentId),
+        doc(db, activeStudentCollection, activeStudentId),
         {
           totalXP,
           challengesCompleted,
@@ -718,9 +1016,9 @@ const StudentDetail = ({ studentId, onBack }) => {
       try {
         const fullStudentData = { ...student, totalXP, challengesCompleted };
         if (student.source === 'manual') {
-          await upsertManualStudentLeaderboard(studentId, fullStudentData);
+          await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
         } else {
-          await upsertRegisteredUserLeaderboard(studentId, fullStudentData);
+          await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
         }
       } catch (lbErr) {
         console.warn('Leaderboard sync failed during recalculate:', lbErr);
@@ -738,12 +1036,12 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
-  const recalculateStudentTotals = async (colName) => {
+  const recalculateStudentTotals = async (colName = activeStudentCollection) => {
     const dailySnap = await getDocs(
-      collection(db, colName, studentId, "daily_stats"),
+      collection(db, colName, activeStudentId, "daily_stats"),
     );
     const calcSnap = await getDocs(
-      collection(db, colName, studentId, "calc_stats"),
+      collection(db, colName, activeStudentId, "calc_stats"),
     );
     const hasCalculationTest = student.calculationEnabled !== false;
     const getFallbackXp = (data, type) => {
@@ -773,7 +1071,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     });
 
     await setDoc(
-      doc(db, colName, studentId),
+      doc(db, colName, activeStudentId),
       {
         totalXP,
         challengesCompleted,
@@ -785,9 +1083,9 @@ const StudentDetail = ({ studentId, onBack }) => {
     try {
       const fullStudentData = { ...student, totalXP, challengesCompleted };
       if (student.source === 'manual') {
-        await upsertManualStudentLeaderboard(studentId, fullStudentData);
+        await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
       } else {
-        await upsertRegisteredUserLeaderboard(studentId, fullStudentData);
+        await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
       }
     } catch (lbErr) {
       console.warn('Leaderboard sync failed during totals update:', lbErr);
@@ -807,7 +1105,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     const challengeDate =
       stat.timestamp || stat.completedAt || stat.createdAt || stat.id;
     const gradingSnap = await getDocs(
-      query(collection(db, "grading_queue"), where("userId", "==", studentId)),
+      query(collection(db, "grading_queue"), where("userId", "==", activeStudentId)),
     );
 
     const docsToDelete = gradingSnap.docs.filter((item) => {
@@ -834,11 +1132,10 @@ const StudentDetail = ({ studentId, onBack }) => {
       return;
 
     try {
-      const colName = student.source === "manual" ? "students" : "users";
       const statCollection =
         stat.statCollection ||
         (stat.challengeType === "calc" ? "calc_stats" : "daily_stats");
-      const statRef = doc(db, colName, studentId, statCollection, stat.id);
+      const statRef = doc(db, activeStudentCollection, activeStudentId, statCollection, stat.id);
 
       let deletedWorkingOutCount = 0;
       try {
@@ -851,7 +1148,56 @@ const StudentDetail = ({ studentId, onBack }) => {
       }
 
       await deleteDoc(statRef);
-      const totals = await recalculateStudentTotals(colName);
+      const isDailyReset = statCollection !== "calc_stats" && stat.challengeType !== "calc";
+      if (isDailyReset && activeStudentCollection === "users") {
+        await createDailyAssignment({
+          uid: activeStudentId,
+          studentProfile: student,
+          dateKey: stat.id,
+          questionCount: student?.dailyQuestionCount || stat.questionCount || stat.total || 10,
+          generatedBy: "teacher-reset",
+          forceVersion: Date.now(),
+        });
+      }
+      await setDoc(doc(db, "sync_meta", getChallengeBootMetaId(activeStudentId, stat.id)), {
+        version: Date.now(),
+        statusVersion: Date.now(),
+        updatedAt: serverTimestamp(),
+        status: {
+          [isDailyReset ? "daily" : "calc"]: "open",
+        },
+        resetAt: new Date().toISOString(),
+        resetBy: "teacher",
+      }, { merge: true });
+
+      // Update admin summary to reset "DONE" badge
+      await setDoc(doc(db, 'admin_daily_summary', stat.id), {
+        students: {
+          [activeStudentId]: {
+            done: false,
+            [isDailyReset ? 'dailyDone' : 'calcDone']: false,
+            [isDailyReset ? 'dailyEnded' : 'calcEnded']: false,
+            [isDailyReset ? 'dailyStatus' : 'calcStatus']: 'open',
+          }
+        }
+      }, { merge: true });
+      fetch("/api/send-notif", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          studentId: activeStudentId,
+          email: student.email || "",
+          subject: `${isDailyReset ? "Daily Challenge" : "Basic Calculation"} reset`,
+          text: `Your teacher has reset your ${isDailyReset ? "Daily Challenge" : "Basic Calculation"} for ${stat.id}. Open notifications and tap Apply Reset to update this device.`,
+          metadata: {
+            type: "challenge_reset",
+            challengeType: isDailyReset ? "daily" : "calc",
+            date: stat.id,
+            resetVersion: Date.now(),
+          },
+        }),
+      }).catch((err) => console.warn("Challenge reset notification failed:", err));
+      const totals = await recalculateStudentTotals(activeStudentCollection);
 
       showToast(
         `Challenge reset. XP recalculated to ${totals.totalXP}. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
@@ -878,8 +1224,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     try {
       setHscSaving(true);
-      const colName = student.source === "manual" ? "students" : "users";
-      const docRef = await addDoc(collection(db, colName, studentId, "hsc_results"), {
+      const docRef = await addDoc(collection(db, activeStudentCollection, activeStudentId, "hsc_results"), {
         examDate: hscForm.examDate,
         paper: hscForm.paper.trim(),
         score,
@@ -889,6 +1234,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       });
+      await touchHscResultsSyncMeta(activeStudentCollection, activeStudentId).catch(() => {});
+      touchStudentListMeta();
       const nowMs = Date.now();
       const localRecord = {
         id: docRef.id,
@@ -901,9 +1248,9 @@ const StudentDetail = ({ studentId, onBack }) => {
         createdAtMs: nowMs,
         updatedAtMs: nowMs,
       };
-      const cached = loadCachedHscResults(colName, studentId);
+      const cached = loadCachedHscResults(activeStudentCollection, activeStudentId);
       const merged = mergeHscResults(cached.records, [localRecord]);
-      saveCachedHscResults(colName, studentId, merged, Math.max(cached.lastSyncMs, nowMs));
+      saveCachedHscResults(activeStudentCollection, activeStudentId, merged, Math.max(cached.lastSyncMs, nowMs));
       setHscRecords(merged);
       setHscForm({
         examDate: getTodayDateKey(),
@@ -924,15 +1271,16 @@ const StudentDetail = ({ studentId, onBack }) => {
   const handleDeleteHscRecord = async (record) => {
     if (!confirm(`Delete ${record.paper || "this HSC result"}?`)) return;
     try {
-      const colName = student.source === "manual" ? "students" : "users";
       const nowMs = Date.now();
-      await updateDoc(doc(db, colName, studentId, "hsc_results", record.id), {
+      await updateDoc(doc(db, activeStudentCollection, activeStudentId, "hsc_results", record.id), {
         isDeleted: true,
         updatedAt: serverTimestamp(),
       });
-      const cached = loadCachedHscResults(colName, studentId);
+      await touchHscResultsSyncMeta(activeStudentCollection, activeStudentId).catch(() => {});
+      touchStudentListMeta();
+      const cached = loadCachedHscResults(activeStudentCollection, activeStudentId);
       const merged = mergeHscResults(cached.records, [{ ...record, isDeleted: true, updatedAtMs: nowMs }]);
-      saveCachedHscResults(colName, studentId, merged, Math.max(cached.lastSyncMs, nowMs));
+      saveCachedHscResults(activeStudentCollection, activeStudentId, merged, Math.max(cached.lastSyncMs, nowMs));
       setHscRecords(merged);
       showToast("HSC result deleted.", "success");
     } catch (err) {
@@ -1933,12 +2281,18 @@ const StudentDetail = ({ studentId, onBack }) => {
 
                           setAssignedChapters(nextAssigned);
                           setCompletedChapters(nextCompleted);
-                          const colName =
-                            student.source === "manual" ? "students" : "users";
-                          updateDoc(doc(db, colName, studentId), {
+                          updateDoc(doc(db, activeStudentCollection, activeStudentId), {
                             assignedChapters: nextAssigned,
                             completedChapters: nextCompleted,
-                          }).catch(console.error);
+                          })
+                            .then(() => {
+                              updateLocalStudentProfileCache({
+                                assignedChapters: nextAssigned,
+                                completedChapters: nextCompleted,
+                              });
+                              touchStudentListMeta();
+                            })
+                            .catch(console.error);
                         };
 
                         return (
@@ -3854,7 +4208,23 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </button>
               </div>
 
-              {selectedChallenge.questions ? (
+              {selectedChallenge.hasDetailSnapshot && !selectedChallenge.detailSnapshotLoaded && !(Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0) ? (
+                <div
+                  style={{
+                    textAlign: "center",
+                    padding: "60px 20px",
+                    color: "#64748b",
+                    background: "#f8fafc",
+                    borderRadius: "16px",
+                    border: "2px dashed #e2e8f0",
+                  }}
+                >
+                  <div className="app-spinner" style={{ margin: "0 auto 16px" }}></div>
+                  <p style={{ margin: 0, fontWeight: 800, fontSize: "1.05rem" }}>
+                    Loading detailed results...
+                  </p>
+                </div>
+              ) : Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0 ? (
                 <div
                   style={{
                     display: "flex",

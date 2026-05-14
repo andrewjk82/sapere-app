@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, runTransaction, where, increment, serverTimestamp } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, runTransaction, where, increment, serverTimestamp, limit } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
-import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award } from 'lucide-react';
+import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import MathView from './MathView';
 
@@ -14,12 +14,45 @@ const ReportsAdmin = () => {
   const [reportsLoading, setReportsLoading] = useState(true);
   const [gradingLoading, setGradingLoading] = useState(true);
   const [editingQuestion, setEditingQuestion] = useState(null);
+  const [previewReport, setPreviewReport] = useState(null);
+  const [previewQuestion, setPreviewQuestion] = useState(null);
+  const [previewAttempt, setPreviewAttempt] = useState(null);
+  const [previewAttemptLoading, setPreviewAttemptLoading] = useState(false);
   const [isDeletingAll, setIsDeletingAll] = useState(false);
   const [processingId, setProcessingId] = useState(null);
+  const ADMIN_REPORT_LIMIT = 100;
+
+  const formatStudentAnswer = (answer) => {
+    if (answer === null || answer === undefined || answer === '') return 'No answer recorded';
+    if (typeof answer === 'string' || typeof answer === 'number' || typeof answer === 'boolean') return String(answer);
+    if (Array.isArray(answer)) return answer.map(formatStudentAnswer).join(', ');
+    if (typeof answer === 'object') {
+      return Object.entries(answer)
+        .map(([key, value]) => `${key}: ${formatStudentAnswer(value)}`)
+        .join('\n');
+    }
+    return String(answer);
+  };
+
+  const getPreviewStudentAnswer = () => {
+    if (!previewReport) return null;
+    const reportAnswer = previewReport.studentAnswer;
+    if (reportAnswer !== undefined && reportAnswer !== null && reportAnswer !== '') {
+      return reportAnswer;
+    }
+    const attemptResult = previewAttempt?.results?.[previewAttempt?.resultIndex];
+    if (attemptResult?.selectedAnswer !== undefined) return attemptResult.selectedAnswer;
+    if (attemptResult?.answer !== undefined) return attemptResult.answer;
+    const detailAnswers = previewAttempt?.detailData?.userAnswers || previewAttempt?.statData?.userAnswers;
+    if (Array.isArray(detailAnswers) && previewAttempt?.resultIndex !== undefined) {
+      return detailAnswers[previewAttempt.resultIndex];
+    }
+    return null;
+  };
 
   useEffect(() => {
     // Listen for Issue Reports
-    const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'));
+    const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
     const unsubReports = onSnapshot(qReports, (snapshot) => {
       const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
       setReports(data);
@@ -30,11 +63,15 @@ const ReportsAdmin = () => {
     });
 
     // Listen for Grading Queue
-    const qGrading = query(collection(db, 'grading_queue'), where('status', '==', 'pending'));
+    const qGrading = query(
+      collection(db, 'grading_queue'),
+      where('status', '==', 'pending'),
+      orderBy('submittedAt', 'desc'),
+      limit(ADMIN_REPORT_LIMIT)
+    );
     const unsubGrading = onSnapshot(qGrading, (snapshot) => {
       const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
-      const sorted = data.sort((a, b) => (b.submittedAt?.toMillis?.() || 0) - (a.submittedAt?.toMillis?.() || 0));
-      setGradingQueue(sorted);
+      setGradingQueue(data);
       setGradingLoading(false);
     }, (err) => {
       console.error("Grading subscription error:", err);
@@ -59,11 +96,253 @@ const ReportsAdmin = () => {
     }
   };
 
-  const handleGoToQuestion = (report) => {
-    if (report.questionData?.isManual) {
-      setEditingQuestion(report.questionData);
-    } else {
-      alert("This is an AI-generated question and cannot be directly edited in the Question Bank. You may need to review the generator logic.");
+  const handleGoToQuestion = async (report) => {
+    const fallbackQuestion = {
+      ...(report.questionData || {}),
+      id: report.questionId || report.questionData?.id,
+    };
+    setPreviewReport(report);
+    setPreviewQuestion(fallbackQuestion);
+    setPreviewAttempt(null);
+
+    const questionId = report.questionId || report.questionData?.id;
+    if (!questionId) return;
+
+    try {
+      setPreviewAttemptLoading(true);
+      findReportAttempt(report)
+        .then((attempt) => setPreviewAttempt(attempt))
+        .catch((err) => console.warn('Could not fetch reported answer attempt:', err))
+        .finally(() => setPreviewAttemptLoading(false));
+
+      const questionSnap = await getDoc(doc(db, 'questions', questionId));
+      if (questionSnap.exists()) {
+        setPreviewQuestion({ id: questionSnap.id, ...questionSnap.data() });
+      }
+    } catch (err) {
+      console.warn('Could not fetch latest reported question:', err);
+    }
+  };
+
+  const handleFixPreviewQuestion = () => {
+    const question = previewQuestion || previewReport?.questionData;
+    if (question?.isManual && question?.id) {
+      setEditingQuestion(question);
+      setPreviewReport(null);
+      setPreviewQuestion(null);
+      return;
+    }
+
+    alert("This is an AI-generated question and cannot be directly edited in the Question Bank. You may need to review the generator logic.");
+  };
+
+  const findReportAttempt = async (report) => {
+    const studentId = report.studentId;
+    const questionId = report.questionId || report.questionData?.id;
+    if (!studentId || !questionId) return null;
+
+    const roots = ['users', 'students'];
+    const statCollections = ['daily_stats', 'calc_stats'];
+    const attempts = [];
+
+    for (const root of roots) {
+      for (const statCollection of statCollections) {
+        const snap = await getDocs(collection(db, root, studentId, statCollection));
+        for (const statDoc of snap.docs) {
+          const statData = statDoc.data();
+          const statRef = doc(db, root, studentId, statCollection, statDoc.id);
+          const detailRef = doc(db, root, studentId, statCollection, statDoc.id, 'detail_snapshot', 'main');
+          let detailData = null;
+          let results = Array.isArray(statData.answerResults) ? statData.answerResults : [];
+
+          try {
+            const detailSnap = await getDoc(detailRef);
+            if (detailSnap.exists()) {
+              detailData = detailSnap.data();
+              if (Array.isArray(detailData.answerResults)) results = detailData.answerResults;
+            }
+          } catch (err) {
+            console.warn('Could not read detail snapshot while locating report attempt:', err);
+          }
+
+          const resultIndex = results.findIndex(r => String(r?.questionId || '') === String(questionId));
+          if (resultIndex === -1) continue;
+
+          attempts.push({
+            root,
+            statCollection,
+            statId: statDoc.id,
+            statRef,
+            detailRef,
+            statData,
+            detailData,
+            results,
+            resultIndex,
+            timestamp: statData.timestamp || statData.completedAt || statData.createdAt || statDoc.id,
+          });
+        }
+      }
+    }
+
+    attempts.sort((a, b) => {
+      const aTime = a.timestamp?.toDate ? a.timestamp.toDate().getTime() : new Date(a.timestamp).getTime();
+      const bTime = b.timestamp?.toDate ? b.timestamp.toDate().getTime() : new Date(b.timestamp).getTime();
+      return (Number.isFinite(bTime) ? bTime : 0) - (Number.isFinite(aTime) ? aTime : 0);
+    });
+
+    return attempts.find(a => a.results[a.resultIndex]?.correct !== true) || attempts[0] || null;
+  };
+
+  const handleRestoreCredit = async (report) => {
+    if (processingId) return;
+    if (report.creditRestored) {
+      alert('Credit has already been restored for this report.');
+      return;
+    }
+
+    const confirmed = window.confirm('Restore the removed score for this reported answer and mark the report resolved?');
+    if (!confirmed) return;
+
+    try {
+      setProcessingId(report.id);
+      const attempt = await findReportAttempt(report);
+      if (!attempt) {
+        alert('Could not find the matching completed attempt for this report.');
+        return;
+      }
+
+      const { root, statCollection, statId, statRef, detailRef, resultIndex } = attempt;
+      const userRef = doc(db, root, report.studentId);
+      const reportRef = doc(db, 'reports', report.id);
+      let leaderboardUpdate = null;
+
+      await runTransaction(db, async (transaction) => {
+        const statSnap = await transaction.get(statRef);
+        const detailSnap = await transaction.get(detailRef);
+        const userSnap = await transaction.get(userRef);
+        const reportSnap = await transaction.get(reportRef);
+
+        if (!statSnap.exists()) throw new Error('stat-not-found');
+        if (reportSnap.exists() && reportSnap.data()?.creditRestored) throw new Error('already-restored');
+
+        const statData = statSnap.data();
+        const detailData = detailSnap.exists() ? detailSnap.data() : null;
+        const answerResults = Array.isArray(detailData?.answerResults)
+          ? [...detailData.answerResults]
+          : [...(statData.answerResults || [])];
+        const currentResult = answerResults[resultIndex];
+
+        if (!currentResult) throw new Error('result-not-found');
+        if (currentResult.correct === true) throw new Error('answer-already-correct');
+
+        const totalPoints = Math.max(1, Number(currentResult.totalPoints) || 1);
+        const earnedPoints = Math.max(0, Number(currentResult.pointsEarned) || 0);
+        const pointsToRestore = Math.max(1, totalPoints - earnedPoints);
+        const currentScore = Math.max(0, Number(statData.score) || 0);
+        const total = Math.max(currentScore + pointsToRestore, Number(statData.total) || totalPoints);
+        const newScore = Math.min(total, currentScore + pointsToRestore);
+        const actualPointsRestored = newScore - currentScore;
+
+        if (actualPointsRestored <= 0) throw new Error('score-already-full');
+
+        const maxXp = Math.max(0, Number(statData.maxXp) || (statCollection === 'calc_stats' ? 50 : 100));
+        const currentXp = Math.max(0, Number(statData.xpEarned) || 0);
+        const xpPerPoint = total > 0 ? Math.round(maxXp / total) : 0;
+        const xpToRestore = Math.max(0, Math.min(maxXp - currentXp, xpPerPoint * actualPointsRestored));
+        const newXpEarned = currentXp + xpToRestore;
+        const restoredAt = new Date().toISOString();
+
+        answerResults[resultIndex] = {
+          ...currentResult,
+          correct: true,
+          isPending: false,
+          pointsEarned: totalPoints,
+          selectedAnswer: currentResult.selectedAnswer || 'Teacher approved',
+          creditRestored: true,
+          creditRestoredByReportId: report.id,
+          creditRestoredAt: restoredAt,
+        };
+
+        const statUpdate = {
+          score: newScore,
+          xpEarned: newXpEarned,
+          creditRestored: true,
+          lastCreditRestoredAt: restoredAt,
+          lastCreditRestoredReportId: report.id,
+        };
+        if (Array.isArray(statData.answerResults)) {
+          statUpdate.answerResults = answerResults;
+        }
+
+        transaction.update(statRef, statUpdate);
+        if (detailSnap.exists()) {
+          transaction.set(detailRef, { answerResults, savedAt: restoredAt }, { merge: true });
+        }
+
+        if (userSnap.exists()) {
+          const userData = userSnap.data();
+          const newTotalXP = (Number(userData.totalXP) || 0) + xpToRestore;
+          const updatedUserData = {
+            ...userData,
+            totalXP: newTotalXP,
+          };
+          transaction.update(userRef, {
+            totalXP: newTotalXP,
+            points: increment(actualPointsRestored * 10),
+            updatedAt: restoredAt,
+          });
+
+          const leaderboardId = root === 'students' ? `manual-${report.studentId}` : report.studentId;
+          const displayName = updatedUserData.name || updatedUserData.displayName ||
+            (updatedUserData.firstName ? `${updatedUserData.firstName} ${updatedUserData.lastName || ''}`.trim() : '') ||
+            report.studentName || 'Student';
+          const avatarUrl = updatedUserData.avatarUrl || updatedUserData.dreamImageUrl ||
+            `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(report.studentId)}`;
+
+          transaction.set(doc(db, 'leaderboard', leaderboardId), {
+            name: displayName,
+            avatarUrl,
+            totalXP: newTotalXP,
+            role: updatedUserData.role || 'student',
+            year: updatedUserData.year || updatedUserData.assignedYear || '',
+            source: root === 'students' ? 'manual' : 'registered',
+            ...(root === 'students' ? { sourceId: report.studentId } : {}),
+            lastUpdated: serverTimestamp(),
+          }, { merge: true });
+          leaderboardUpdate = { root, studentId: report.studentId, data: updatedUserData };
+        }
+
+        transaction.update(reportRef, {
+          status: 'resolved',
+          creditRestored: true,
+          creditRestoredAt: restoredAt,
+          restoredPoints: actualPointsRestored,
+          restoredXp: xpToRestore,
+          matchedStatCollection: statCollection,
+          matchedStatId: statId,
+        });
+      });
+
+      if (leaderboardUpdate) {
+        const { root, studentId, data } = leaderboardUpdate;
+        if (root === 'students') {
+          upsertManualStudentLeaderboard(studentId, data).catch(() => {});
+        } else {
+          upsertRegisteredUserLeaderboard(studentId, data).catch(() => {});
+        }
+      }
+      setPreviewReport(null);
+      setPreviewQuestion(null);
+    } catch (err) {
+      console.error('Error restoring report credit:', err);
+      const message = err?.message === 'already-restored'
+        ? 'Credit was already restored for this report.'
+        : err?.message === 'answer-already-correct'
+          ? 'This answer is already marked correct.'
+          : 'Failed to restore credit. Please check the matching attempt and try again.';
+      alert(message);
+    } finally {
+      setProcessingId(null);
     }
   };
 
@@ -225,6 +504,15 @@ const ReportsAdmin = () => {
               </div>
               <div style={{ display: 'flex', gap: '8px' }}>
                 <button onClick={() => handleGoToQuestion(report)} style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e0e7ff', background: 'white', color: '#6366f1', fontWeight: 700, cursor: 'pointer' }}>Go to Question</button>
+                {!report.creditRestored && (
+                  <button
+                    onClick={() => handleRestoreCredit(report)}
+                    disabled={!!processingId}
+                    style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #fed7aa', background: '#fff7ed', color: '#c2410c', fontWeight: 800, cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <Award size={15} /> {processingId === report.id ? 'Restoring...' : 'Restore Credit'}
+                  </button>
+                )}
                 {report.status !== 'resolved' && (
                   <button onClick={() => handleMarkResolved(report.id)} style={{ padding: '8px 16px', borderRadius: '12px', border: 'none', background: '#10b981', color: 'white', fontWeight: 700, cursor: 'pointer' }}>Mark Resolved</button>
                 )}
@@ -237,6 +525,11 @@ const ReportsAdmin = () => {
                 <p style={{ margin: '8px 0 0', fontWeight: 600, color: '#1e293b' }}>
                   {report.questionData.question || report.questionData.text || 'No question text'}
                 </p>
+                {report.creditRestored && (
+                  <div style={{ marginTop: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 10px', borderRadius: '999px', background: '#ecfdf5', color: '#047857', fontSize: '0.75rem', fontWeight: 900 }}>
+                    <CheckCircle size={14} /> Credit restored +{report.restoredPoints || 0} point{report.restoredPoints === 1 ? '' : 's'}
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -402,6 +695,103 @@ const ReportsAdmin = () => {
           </motion.div>
         )}
       </div>
+
+      <AnimatePresence>
+        {previewReport && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            style={{ position: 'fixed', inset: 0, zIndex: 1200, display: 'grid', placeItems: 'center', padding: '20px' }}
+          >
+            <div onClick={() => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); }} style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.58)', backdropFilter: 'blur(8px)' }} />
+            <motion.div
+              initial={{ scale: 0.96, y: 10 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.96, y: 10 }}
+              style={{ position: 'relative', width: 'min(760px, 100%)', maxHeight: '86vh', overflowY: 'auto', background: '#fff', borderRadius: '28px', padding: '28px', boxShadow: '0 30px 80px rgba(15,23,42,0.32)' }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '16px', marginBottom: '22px' }}>
+                <div>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#6366f1', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Reported Question</div>
+                  <h3 style={{ margin: '6px 0 0', fontSize: '1.45rem', color: '#1e1b4b' }}>{previewQuestion?.chapterTitle || previewReport.questionData?.chapterTitle || 'Question Preview'}</h3>
+                </div>
+                <button onClick={() => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); }} style={{ width: '40px', height: '40px', borderRadius: '14px', border: 'none', background: '#f1f5f9', color: '#64748b', cursor: 'pointer' }}>
+                  <X size={18} />
+                </button>
+              </div>
+
+              <div style={{ display: 'grid', gap: '16px' }}>
+                <div style={{ padding: '18px', borderRadius: '18px', background: '#fff1f2', border: '1px solid #ffe4e6' }}>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#e11d48', textTransform: 'uppercase', marginBottom: '8px' }}>Student Report</div>
+                  <div style={{ color: '#7f1d1d', fontWeight: 700, lineHeight: 1.5 }}>"{previewReport.message || 'No message'}"</div>
+                </div>
+
+                <div style={{ padding: '18px', borderRadius: '18px', background: '#eef2ff', border: '1px solid #c7d2fe' }}>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#4f46e5', textTransform: 'uppercase', marginBottom: '8px' }}>Student Answer</div>
+                  {previewAttemptLoading && !getPreviewStudentAnswer() ? (
+                    <div style={{ color: '#64748b', fontWeight: 700 }}>Loading submitted answer...</div>
+                  ) : (
+                    <MathView content={formatStudentAnswer(getPreviewStudentAnswer())} style={{ color: '#312e81', fontWeight: 800, whiteSpace: 'pre-wrap' }} />
+                  )}
+                </div>
+
+                <div style={{ padding: '22px', borderRadius: '22px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#64748b', textTransform: 'uppercase', marginBottom: '10px' }}>Question</div>
+                  <MathView content={previewQuestion?.question || previewQuestion?.text || 'No question text'} style={{ fontSize: '1.15rem', fontWeight: 800, color: '#1e1b4b' }} />
+                  {previewQuestion?.questionImage && (
+                    <img src={previewQuestion.questionImage} alt="Question" style={{ width: '100%', maxHeight: '240px', objectFit: 'contain', marginTop: '16px', borderRadius: '16px', background: '#fff' }} />
+                  )}
+                </div>
+
+                {Array.isArray(previewQuestion?.options) && previewQuestion.options.length > 0 && (
+                  <div style={{ display: 'grid', gap: '10px' }}>
+                    {previewQuestion.options.map((option, idx) => {
+                      const text = typeof option === 'string' ? option : option.text;
+                      const isAnswer = String(previewQuestion.answer) === String(idx) || String(previewQuestion.answer) === String(text);
+                      return (
+                        <div key={idx} style={{ display: 'flex', gap: '12px', alignItems: 'center', padding: '14px 16px', borderRadius: '16px', background: isAnswer ? '#f0fdf4' : '#fff', border: `1.5px solid ${isAnswer ? '#bbf7d0' : '#e2e8f0'}` }}>
+                          <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: isAnswer ? '#10b981' : '#f1f5f9', color: isAnswer ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, flexShrink: 0 }}>{idx + 1}</div>
+                          <MathView content={text || ''} style={{ fontWeight: 700, color: '#334155' }} />
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {(previewQuestion?.hint || previewQuestion?.solution) && (
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                    <div style={{ padding: '16px', borderRadius: '16px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
+                      <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#d97706', textTransform: 'uppercase', marginBottom: '8px' }}>Hint</div>
+                      <MathView content={previewQuestion.hint || 'No hint'} style={{ color: '#92400e', fontWeight: 700 }} />
+                    </div>
+                    <div style={{ padding: '16px', borderRadius: '16px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+                      <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#15803d', textTransform: 'uppercase', marginBottom: '8px' }}>Solution</div>
+                      <MathView content={previewQuestion.solution || 'No solution'} style={{ color: '#166534', fontWeight: 700 }} />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div style={{ marginTop: '24px', display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+                <button onClick={() => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); }} style={{ padding: '14px 20px', borderRadius: '16px', border: 'none', background: '#f1f5f9', color: '#475569', fontWeight: 800, cursor: 'pointer' }}>Close</button>
+                {!previewReport.creditRestored && (
+                  <button
+                    onClick={() => handleRestoreCredit(previewReport)}
+                    disabled={!!processingId}
+                    style={{ padding: '14px 22px', borderRadius: '16px', border: 'none', background: '#f97316', color: '#fff', fontWeight: 900, cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
+                  >
+                    <Award size={17} /> {processingId === previewReport.id ? 'Restoring...' : 'Restore Credit'}
+                  </button>
+                )}
+                <button onClick={handleFixPreviewQuestion} style={{ padding: '14px 22px', borderRadius: '16px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 900, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <Wrench size={17} /> Fix
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {editingQuestion && (
         <QuestionBankModal 

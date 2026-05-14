@@ -18,10 +18,7 @@ service cloud.firestore {
       allow update, delete: if isAdmin() || (isSignedIn() && resource.data.tutorId == request.auth.uid);
 
       match /hsc_results/{resultId} {
-        allow read: if isAdmin()
-          || (isSignedIn()
-            && request.auth.uid == userId
-            && get(/databases/$(database)/documents/users/$(userId)).data.showHscGraph == true);
+        allow read: if isAdmin();
         allow write: if isAdmin();
       }
     }
@@ -79,6 +76,18 @@ service cloud.firestore {
       allow write: if false; // written by server only
     }
 
+    // Tiny cache invalidation documents used before loading larger datasets.
+    match /sync_meta/{metaId} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn();
+    }
+
+    // One document per day with per-student challenge completion summaries.
+    match /admin_daily_summary/{dateId} {
+      allow read: if isAdmin();
+      allow write: if isSignedIn();
+    }
+
     // User profiles and their subcollections
     match /users/{userId} {
       allow read: if isSignedIn();
@@ -87,6 +96,10 @@ service cloud.firestore {
       match /daily_stats/{statId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
 
+        match /detail_snapshot/{snapshotId} {
+          allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+        }
+
         // Per-question working-out images stored as a sibling subcollection
         // so the parent record stays under Firestore's 1 MB document limit.
         match /working_out/{idx} {
@@ -94,8 +107,16 @@ service cloud.firestore {
         }
       }
 
+      match /daily_assignments/{assignmentId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /calc_stats/{statId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+
+        match /detail_snapshot/{snapshotId} {
+          allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+        }
 
         match /working_out/{idx} {
           allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
@@ -107,7 +128,11 @@ service cloud.firestore {
       }
 
       match /hsc_results/{resultId} {
-        allow read, write: if isAdmin();
+        allow read: if isAdmin()
+          || (isSignedIn()
+            && request.auth.uid == userId
+            && get(/databases/$(database)/documents/users/$(userId)).data.showHscGraph == true);
+        allow write: if isAdmin();
       }
 
       match /notifications/{notifId} {
