@@ -187,6 +187,9 @@ function App() {
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
   const [cloudAppVersion, setCloudAppVersion] = useState('');
   const [isLocked, setIsLocked] = useState(false);
+  const isLockedRef = useRef(false);
+  useEffect(() => { isLockedRef.current = isLocked; }, [isLocked]);
+  
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   
   // ── Screen Protection Logic (Non-Admins Only) ──
@@ -237,6 +240,10 @@ function App() {
 
   const handleUpdateApp = useCallback(() => {
     const reload = () => {
+      if (isLockedRef.current) {
+        console.log('[AutoUpdate] Blocked: Challenge is active.');
+        return;
+      }
       window.location.href = window.location.pathname + '?v=' + Date.now();
     };
     if ('serviceWorker' in navigator) {

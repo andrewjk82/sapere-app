@@ -1809,7 +1809,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   return (
     <div className="app-page">
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {step === 'start' && (
           <ChallengeStartView
             key="start"
