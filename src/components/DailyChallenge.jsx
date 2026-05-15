@@ -148,12 +148,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     [assignedYear]
   );
 
-  const showSplitScreen = !isMobile && Boolean(currentQuestion) && (
-    currentQuestion?.type === 'graph_sketch' ||
-    isYear10OrAbove ||
-    studentProfile?.seniorCanvasEnabled === true
+  const isGraphSketchQuestion = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
+  // graph_sketch always needs a canvas (even on mobile) so the image can be captured for grading.
+  // Other question types only show the canvas on non-mobile devices.
+  const showSplitScreen = Boolean(currentQuestion) && (
+    isGraphSketchQuestion ||
+    (!isMobile && (isYear10OrAbove || studentProfile?.seniorCanvasEnabled === true))
   );
-  const showSideCanvas = showSplitScreen && !isTabletCanvasLayout;
+  const showSideCanvas = showSplitScreen && !isTabletCanvasLayout && !isMobile;
 
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
@@ -983,8 +985,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     let canvasDataUrl = null;
     let canvasPageImages = [];
 
-    // Capture canvas for ANY question if split screen is active (Senior Students)
-    if (showSplitScreen && canvasRef.current?.hasContent?.()) {
+    // Capture canvas for graph_sketch always, or for any question if split screen is active (Senior Students)
+    if (canvasRef.current && (isGraphSketch || (showSplitScreen && canvasRef.current?.hasContent?.()))) {
       try {
         canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
         canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
