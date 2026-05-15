@@ -82,6 +82,9 @@ export default async function handler(req, res) {
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com', port: 465, secure: true,
+      pool: true,
+      maxConnections: 5,
+      maxMessages: 100,
       auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS }
     });
 
@@ -141,6 +144,7 @@ export default async function handler(req, res) {
         isStudentProfile,
         normalizeEmail,
         normalizeSubjectLabel,
+        force: req.query.force === 'true',
       });
       logs.push(`[8PM Queue] ${queueResult.sentCount} sent this run, cursor=${queueResult.nextCursor}/${queueResult.totalCount}, complete=${queueResult.complete}.`);
       if (queueResult.complete) {
@@ -209,6 +213,7 @@ async function processEightPmQueue({
   isStudentProfile,
   normalizeEmail,
   normalizeSubjectLabel,
+  force,
 }) {
   const queueRef = db.collection('notification_queue_8pm').doc(todayStr);
   const queueSnap = await queueRef.get();
@@ -257,6 +262,11 @@ async function processEightPmQueue({
         item.body,
       );
 
+      // Only mark as sent if at least one notification method succeeded
+      if (!result.emailSent && !result.pushSent) {
+        throw new Error(`Both email and push failed. Email error: ${result.emailError || 'N/A'}. Push error: ${result.pushError || 'N/A'}`);
+      }
+
       await db.collection('users').doc(item.studentId).set({
         last8PMReminderDate: todayStr,
         last8PMReminderClassIds: item.tomorrowClassIds || [],
@@ -267,7 +277,7 @@ async function processEightPmQueue({
       return {
         ok: true,
         item,
-        message: `8PM wrap-up sent to ${item.studentName} (${item.tomorrowClassIds?.length || 0} classes, unfinished=${item.hasUnfinishedTasks}, email=${result.emailSent}, push=${result.pushSent})`,
+        message: `8PM wrap-up sent to ${item.studentName} (email=${result.emailSent}, push=${result.pushSent})`,
       };
     } catch (err) {
       return {
@@ -644,6 +654,8 @@ async function sendNotification(db, transporter, session, type, subject, body) {
   const studentEmail = session.studentEmail || session.email;
   let emailSent = false;
   let pushSent = false;
+  let emailError = null;
+  let pushError = null;
 
   if (studentEmail) {
     try {
@@ -654,13 +666,19 @@ async function sendNotification(db, transporter, session, type, subject, body) {
         html: buildEmailTemplate(subject, body)
       });
       emailSent = true;
-    } catch (e) { console.error(`Email fail:`, e.message); }
+    } catch (e) { 
+      emailError = e.message;
+      console.error(`Email fail:`, e.message); 
+    }
+  } else {
+    emailError = "No student email provided";
   }
 
   if (studentId || studentEmail) {
     const { userRef, userDoc } = await findNotificationUser(db, studentId, studentEmail);
     if (!userRef || !userDoc?.exists) {
-      return { emailSent, pushSent };
+      pushError = "User document not found";
+      return { emailSent, pushSent, emailError, pushError };
     }
 
     await userRef.collection('notifications').add({
@@ -676,10 +694,18 @@ async function sendNotification(db, transporter, session, type, subject, body) {
       const pushResult = await sendPushToUser(userRef, userDoc.data(), subject, pushBody || 'You have a new notification.');
       pushSent = pushResult.successCount > 0;
       if (pushResult.failureCount > 0) {
+        pushError = `Push failed. invalid tokens removed: ${pushResult.removedCount}`;
         console.warn(`Push partial failure for ${studentId || studentEmail}:`, pushResult);
+      } else if (!pushSent) {
+         pushError = "No active FCM tokens found";
       }
-    } catch (e) { console.error(`Push fail:`, e.message); }
+    } catch (e) { 
+      pushError = e.message;
+      console.error(`Push fail:`, e.message); 
+    }
+  } else {
+    pushError = "No student ID or email provided";
   }
 
-  return { emailSent, pushSent };
+  return { emailSent, pushSent, emailError, pushError };
 }

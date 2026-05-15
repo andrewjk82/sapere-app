@@ -10,7 +10,8 @@ import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
 import { 
   doc, getDoc, setDoc, collection, getDocs, 
-  query, where, addDoc, serverTimestamp, onSnapshot, runTransaction 
+  query, where, addDoc, serverTimestamp, onSnapshot, runTransaction,
+  orderBy, limit
 } from 'firebase/firestore';
 import { generateQuestion, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
@@ -104,6 +105,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [calcSessionMeta, setCalcSessionMeta] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
+  // historyLoaded tracks whether we've ever fetched history — used to
+  // preload data right after quiz ends so Review list is ready immediately.
+  const [historyLoaded, setHistoryLoaded] = useState(false);
   const answerInputRef = useRef(null);
   const sessionReviewCountRef = useRef(0);
   const sessionReportCountRef = useRef(0);
@@ -391,11 +395,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   }, [user?.uid]);
 
   // ── Realtime history listener ──
-  // Replaces the old one-time getDocs fetch + optimistic setHistory pattern.
-  // Any test write (daily_stats or calc_stats) is reflected immediately,
-  // even if finishQuiz's later transaction throws or the user navigates fast.
+  // Active when viewMode === 'history' OR when step === 'result' (preload so
+  // the list is ready the moment the student clicks "Review Answers").
   useEffect(() => {
-    if (!user?.uid || viewMode !== 'history') return;
+    if (!user?.uid) return;
+    if (viewMode !== 'history' && step !== 'result') return;
 
     let dailyData = [];
     let calcData = [];
@@ -411,48 +415,57 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setHistory(merged);
       // dailyStats (used by learning-insights) reuses the same subscription
       setDailyStats(dailyData);
-      const todayDaily = dailyData.find(item => item.id === today);
-      const todayCalc = calcData.find(item => item.id === today);
-      const cachedBoot = localCache.get(getChallengeBootCacheKey(user.uid));
-      const dailyWasReset = cachedBoot?.date === today && cachedBoot.dailyStatus === 'open';
-      const calcWasReset = cachedBoot?.date === today && cachedBoot.calcStatus === 'open';
-      if (dailyWasReset && !todayDaily) {
-        setTodayCompleted(false);
-        setAbandonedToday(false);
-      } else if (todayDaily) {
-        const completed = Boolean(todayDaily.completed);
-        setTodayCompleted(completed);
-        setAbandonedToday(!completed);
-      } else if (cachedBoot?.date === today && cachedBoot.todayCompleted === false && cachedBoot.abandonedToday === false) {
-        setTodayCompleted(false);
-        setAbandonedToday(false);
-      }
-      if (calcWasReset && !todayCalc) {
-        setCalcCompletedToday(false);
-        setCalcAbandonedToday(false);
-      } else if (todayCalc) {
-        const completed = Boolean(todayCalc.completed);
-        setCalcCompletedToday(completed);
-        setCalcAbandonedToday(!completed);
-      } else if (cachedBoot?.date === today && cachedBoot.calcCompletedToday === false && cachedBoot.calcAbandonedToday === false) {
-        setCalcCompletedToday(false);
-        setCalcAbandonedToday(false);
-      }
-      if (!dailyWasReset && !calcWasReset && (todayDaily || todayCalc)) {
-        const statusPatch = {
-          date: today,
-          ...(todayDaily ? {
-            dailyStatus: todayDaily.completed ? 'completed' : 'abandoned',
-            todayCompleted: Boolean(todayDaily.completed),
-            abandonedToday: !todayDaily.completed,
-          } : {}),
-          ...(todayCalc ? {
-            calcStatus: todayCalc.completed ? 'completed' : 'abandoned',
-            calcCompletedToday: Boolean(todayCalc.completed),
-            calcAbandonedToday: !todayCalc.completed,
-          } : {}),
-        };
-        mergeChallengeBootCache(user.uid, statusPatch);
+
+      // Don't overwrite completion state while result screen is active —
+      // the finishQuiz() already set the correct local state, and an early
+      // onSnapshot firing before the Firestore write settles can cause a
+      // brief flicker that makes the result screen disappear.
+      if (step !== 'result') {
+        const todayDaily = dailyData.find(item => item.id === today);
+        const todayCalc = calcData.find(item => item.id === today);
+        const cachedBoot = localCache.get(getChallengeBootCacheKey(user.uid));
+        const dailyWasReset = cachedBoot?.date === today && cachedBoot.dailyStatus === 'open';
+        const calcWasReset = cachedBoot?.date === today && cachedBoot.calcStatus === 'open';
+        
+        if (dailyWasReset && !todayDaily) {
+          setTodayCompleted(false);
+          setAbandonedToday(false);
+        } else if (todayDaily) {
+          const completed = Boolean(todayDaily.completed);
+          setTodayCompleted(completed);
+          setAbandonedToday(!completed);
+        } else if (cachedBoot?.date === today && cachedBoot.todayCompleted === false && cachedBoot.abandonedToday === false) {
+          setTodayCompleted(false);
+          setAbandonedToday(false);
+        }
+
+        if (calcWasReset && !todayCalc) {
+          setCalcCompletedToday(false);
+          setCalcAbandonedToday(false);
+        } else if (todayCalc) {
+          const completed = Boolean(todayCalc.completed);
+          setCalcCompletedToday(completed);
+          setCalcAbandonedToday(!completed);
+        } else if (cachedBoot?.date === today && cachedBoot.calcCompletedToday === false && cachedBoot.calcAbandonedToday === false) {
+          setCalcCompletedToday(false);
+          setCalcAbandonedToday(false);
+        }
+        if (!dailyWasReset && !calcWasReset && (todayDaily || todayCalc)) {
+          const statusPatch = {
+            date: today,
+            ...(todayDaily ? {
+              dailyStatus: todayDaily.completed ? 'completed' : 'abandoned',
+              todayCompleted: Boolean(todayDaily.completed),
+              abandonedToday: !todayDaily.completed,
+            } : {}),
+            ...(todayCalc ? {
+              calcStatus: todayCalc.completed ? 'completed' : 'abandoned',
+              calcCompletedToday: Boolean(todayCalc.completed),
+              calcAbandonedToday: !todayCalc.completed,
+            } : {}),
+          };
+          mergeChallengeBootCache(user.uid, statusPatch);
+        }
       }
     };
 
@@ -496,7 +509,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       unsubDaily();
       unsubCalc();
     };
-  }, [user?.uid, viewMode]);
+  }, [user?.uid, viewMode, step]);
 
   // ── Lazy-load detailed snapshots for lightweight calculation records ──
   // The calc parent doc keeps only summary fields; questions, selected answers
@@ -1154,7 +1167,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       await finishQuiz();
     }
   };
-
   const finishQuiz = async (isAbandoned = false) => {
     if (isFinishing) return;
     // Declared outside try so catch block can safely reference it
@@ -1166,10 +1178,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (isAbandoned) {
         setAnswerResults(['abandoned']);
       }
+      // Lock BEFORE setting step so the auto-update effect in App.jsx can't
+      // fire a page reload in the narrow window between quiz end and result render.
+      if (setIsLocked) setIsLocked(true);
       setStep('result');
-      // Keep isLocked=true until the student dismisses the result screen.
-      // Unlocking here would let the auto-update effect fire immediately,
-      // causing the result screen to disappear after ~3 seconds.
+      // isLocked stays true until the student presses "Return Home" in ChallengeResultView.
 
       if (user?.uid) {
         const now = new Date();
@@ -1876,7 +1889,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             challengeBlueprint={CHALLENGE_BLUEPRINT}
             hasCalculationTest={hasCalculationTest}
             onReviewAnswers={(record) => {
-              // Keep locked during review to prevent auto-update reloads
+              // selectedChallenge is set first so the detail modal opens
+              // immediately when the history view mounts — history is already
+              // preloaded in the background (step === 'result' triggers it).
               setSelectedChallenge(record);
               setViewMode('history');
             }}
