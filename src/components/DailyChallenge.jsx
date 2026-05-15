@@ -59,7 +59,6 @@ import {
   getOptions,
   getOptionText,
   getOptionImage,
-  getWorkingOutPages,
 } from '../utils/challengeUtils';
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
@@ -1877,7 +1876,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             challengeBlueprint={CHALLENGE_BLUEPRINT}
             hasCalculationTest={hasCalculationTest}
             onReviewAnswers={(record) => {
-              if (setIsLocked) setIsLocked(false);
+              // Keep locked during review to prevent auto-update reloads
               setSelectedChallenge(record);
               setViewMode('history');
             }}
