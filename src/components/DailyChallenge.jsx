@@ -55,6 +55,7 @@ import {
   correctQuestionAnswer,
   getEarnedXp,
   getChallengeMaxXp,
+  getWorkingOutPages,
   normalizeMix,
   formatHistoryDate,
   getOptions,
@@ -1499,7 +1500,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
   };
   // Keep ref current so the anti-cheat effect always calls the latest finishQuiz.
-  finishQuizRef.current = finishQuiz;
+  useEffect(() => {
+    finishQuizRef.current = finishQuiz;
+  }, [finishQuiz]);
 
   const renderDetailModal = () => {
     if (!selectedChallenge) return null;
