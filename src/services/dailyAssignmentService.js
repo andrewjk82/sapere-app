@@ -36,7 +36,7 @@ const normalizeYearLabel = (value) => {
   return yearNumber === null ? String(value || "").trim() : `Year ${yearNumber}`;
 };
 
-const getAssignedChapters = (profile, assignedYear) => {
+export const getAssignedChapters = (profile, assignedYear) => {
   if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
     return profile.assignedChapters;
   }
