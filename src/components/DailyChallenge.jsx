@@ -197,29 +197,44 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
-    
+
     const topicMistakes = {};
     const topicTotals = {};
     const topicLabels = {};
-    
+
     dailyStats.forEach(stat => {
-      const results = stat.answerResults || [];
-      results.forEach((result, idx) => {
-        const question = stat.questions?.[idx] || {};
-        const topicKey = result.topicId || question.topicId || result.type || question.type || 'general';
-        const topicLabel = result.topicTitle || question.topicTitle || topicKey.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        topicLabels[topicKey] = result.topicCode ? `${result.topicCode} ${topicLabel}` : topicLabel;
-        topicTotals[topicKey] = (topicTotals[topicKey] || 0) + 1;
-        if (!result.correct) topicMistakes[topicKey] = (topicMistakes[topicKey] || 0) + 1;
-      });
+      // Prefer topicStats (always present in the main doc) over answerResults
+      // which may only exist in the detail_snapshot subcollection for older records.
+      if (stat.topicStats && Object.keys(stat.topicStats).length > 0) {
+        Object.entries(stat.topicStats).forEach(([topicKey, data]) => {
+          if (!topicKey || topicKey === 'undefined') return;
+          topicLabels[topicKey] = data.label || topicKey.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          topicTotals[topicKey] = (topicTotals[topicKey] || 0) + (data.total || 0);
+          topicMistakes[topicKey] = (topicMistakes[topicKey] || 0) + ((data.total || 0) - (data.correct || 0));
+        });
+      } else {
+        // Fallback: use slim answerResults saved on the stat doc (new records only)
+        const results = stat.answerResults || [];
+        results.forEach((result, idx) => {
+          const question = stat.questions?.[idx] || {};
+          const topicKey = result.topicId || question.topicId || result.type || question.type || 'general';
+          const topicLabel = result.topicTitle || question.topicTitle || topicKey.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          topicLabels[topicKey] = result.topicCode ? `${result.topicCode} ${topicLabel}` : topicLabel;
+          topicTotals[topicKey] = (topicTotals[topicKey] || 0) + 1;
+          if (!result.correct) topicMistakes[topicKey] = (topicMistakes[topicKey] || 0) + 1;
+        });
+      }
     });
 
-    const insights = Object.keys(topicMistakes).map(topic => ({
-      type: topicLabels[topic] || topic,
-      errorRate: (topicMistakes[topic] / topicTotals[topic]) * 100
-    })).filter(insight => insight.errorRate > 30) // Only show if error rate > 30%
-       .sort((a, b) => b.errorRate - a.errorRate)
-       .slice(0, 3); // Top 3 problem areas
+    const insights = Object.keys(topicTotals)
+      .filter(topic => topicTotals[topic] > 0)
+      .map(topic => ({
+        type: topicLabels[topic] || topic,
+        errorRate: (topicMistakes[topic] || 0) / topicTotals[topic] * 100,
+      }))
+      .filter(insight => insight.errorRate > 30) // Only show if error rate > 30%
+      .sort((a, b) => b.errorRate - a.errorRate)
+      .slice(0, 3); // Top 3 problem areas
 
     return insights;
   }, [dailyStats]);
