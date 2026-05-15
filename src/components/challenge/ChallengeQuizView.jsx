@@ -37,9 +37,12 @@ const ChallengeQuizView = ({
   handleAnswer,
   nextQuestion,
   canvasRef,
-  answerInputRef
+  answerInputRef,
+  shuffledOptions
 }) => {
   const currentQuestion = questions[currentIdx] || {};
+  // Use pre-shuffled options if provided, else fall back to question's own options
+  const displayOptions = shuffledOptions && shuffledOptions.length > 0 ? shuffledOptions : getOptions(currentQuestion);
 
   return (
     <motion.div 
@@ -382,14 +385,15 @@ const ChallengeQuizView = ({
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
-              {getOptions(currentQuestion).map((opt, i) => {
+              {displayOptions.map((opt, i) => {
                 const optText = getOptionText(opt);
                 const optImage = getOptionImage(opt);
                 const isSelected = selectedOptionIdx === i;
-                
+
                 let status = 'default';
                 if (step === 'feedback') {
-                  const isCorrectChoice = (currentQuestion.isManual && String(i) === String(currentQuestion.answer)) || (!currentQuestion.isManual && String(optText) === String(currentQuestion.answer));
+                  const effectiveAnswer = currentQuestion._shuffledAnswer !== undefined ? currentQuestion._shuffledAnswer : currentQuestion.answer;
+                  const isCorrectChoice = String(optText) === String(effectiveAnswer) || (currentQuestion._shuffledAnswer === undefined && currentQuestion.isManual && String(i) === String(currentQuestion.answer));
                   if (isCorrectChoice) status = 'correct';
                   else if (isSelected) status = 'wrong';
                 }
@@ -474,9 +478,11 @@ const ChallengeQuizView = ({
                         <p style={{ margin: 0, color: '#b91c1c', fontSize: '0.95rem', fontWeight: 800 }}>
                           <span style={{ opacity: 0.7, marginRight: '8px' }}>Correct Answer:</span>
                           <MathView content={
-                            currentQuestion.type === 'multiple_choice' && currentQuestion.isManual
-                              ? getOptionText(getOptions(currentQuestion)[parseInt(currentQuestion.answer)]) 
-                              : currentQuestion.answer
+                            currentQuestion._shuffledAnswer !== undefined
+                              ? currentQuestion._shuffledAnswer
+                              : (currentQuestion.type === 'multiple_choice' && currentQuestion.isManual
+                                  ? getOptionText(getOptions(currentQuestion)[parseInt(currentQuestion.answer)])
+                                  : currentQuestion.answer)
                           } />
                         </p>
                       </div>

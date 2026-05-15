@@ -85,6 +85,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [history, setHistory] = useState([]);
   const [studentProfile, setStudentProfile] = useState(null);
   const [dailyStats, setDailyStats] = useState([]);
+  const [shuffledOptions, setShuffledOptions] = useState([]);
   const [viewMode, setViewMode] = useState('challenge');
   const [userAnswers, setUserAnswers] = useState([]);
   const [answerResults, setAnswerResults] = useState([]);
@@ -789,6 +790,32 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (canvasRef.current) {
       try { canvasRef.current.clear(); } catch(e) {}
     }
+
+    // Shuffle multiple-choice options.
+    // For isManual questions the answer is stored as an option index ("0","1"…).
+    // We normalise it to the option text before shuffling so text-matching still works.
+    const opts = getOptions(q);
+    if (opts.length > 1 && q.type !== 'short_answer' && q.type !== 'graph_sketch' && !q.subQuestions?.length) {
+      let normalizedAnswer = q.answer;
+      if (q.isManual) {
+        const answerIdx = parseInt(String(q.answer), 10);
+        if (!isNaN(answerIdx) && opts[answerIdx] !== undefined) {
+          normalizedAnswer = getOptionText(opts[answerIdx]);
+        }
+      }
+      // Fisher-Yates shuffle
+      const indices = opts.map((_, i) => i);
+      for (let i = indices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [indices[i], indices[j]] = [indices[j], indices[i]];
+      }
+      const shuffled = indices.map(i => opts[i]);
+      setShuffledOptions(shuffled);
+      // Patch the in-memory question so handleAnswer text-matching works correctly
+      q._shuffledAnswer = normalizedAnswer;
+    } else {
+      setShuffledOptions(opts);
+    }
   };
 
   // Timer logic
@@ -1058,13 +1085,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       correct = answersMatch(optionText, currentQ.answer);
       if (correct) setScore(prev => prev + 1);
     } else {
-      // Robust multiple choice check:
-      // 1. Check if answer matches the option index (common for manual bank questions)
-      const isIndexMatch = optIdx !== null && String(currentQ.answer) === String(optIdx);
-      // 2. Check if answer matches the literal option text
-      const isTextMatch = String(optionText) === String(currentQ.answer);
-      
-      correct = isIndexMatch || isTextMatch;
+      // Use _shuffledAnswer (text-normalised) if options were shuffled, else original answer.
+      const effectiveAnswer = currentQ._shuffledAnswer !== undefined ? currentQ._shuffledAnswer : currentQ.answer;
+      // 1. Text match against (possibly normalised) answer
+      const isTextMatch = String(optionText) === String(effectiveAnswer);
+      // 2. Fallback index match for non-shuffled isManual questions
+      const isIndexMatch = currentQ._shuffledAnswer === undefined && optIdx !== null && String(currentQ.answer) === String(optIdx);
+
+      correct = isTextMatch || isIndexMatch;
       if (correct) setScore(prev => prev + 1);
     }
 
@@ -1878,6 +1906,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   nextQuestion={nextQuestion}
                   canvasRef={canvasRef}
                   answerInputRef={answerInputRef}
+                  shuffledOptions={shuffledOptions}
                 />
               )}
 
