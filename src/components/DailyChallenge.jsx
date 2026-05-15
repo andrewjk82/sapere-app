@@ -1,463 +1,57 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  ChevronLeft, ChevronRight, Clock, CheckCircle2, XCircle, 
-  Trophy,
-  Lightbulb, BookOpen, X, Check, Flag
+  X, Check, Flag, ChevronLeft, ChevronRight, Clock, 
+  Trophy, Lightbulb, AlertTriangle, TrendingUp, Target,
+  CheckCircle2, XCircle
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
-import { db, ADMIN_EMAIL, ADMIN_UID } from '../firebase/config';
-import { doc, getDoc, setDoc, updateDoc, increment, collection, getDocs, limit, query, where, orderBy, addDoc, serverTimestamp, onSnapshot, runTransaction, deleteDoc } from 'firebase/firestore';
-import { DEFAULT_DIFFICULTY_MIX, generateQuestion, getQuestionBlueprint, getQuestionTargets } from '../services/questionGenerator';
+import { db } from '../firebase/config';
+import { 
+  doc, getDoc, setDoc, collection, getDocs, 
+  query, where, addDoc, serverTimestamp, onSnapshot, runTransaction 
+} from 'firebase/firestore';
+import { generateQuestion, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
-import { CURRICULUM_DATA } from '../constants/curriculumData';
-import MathView, { toDisplayText } from './MathView';
-import WorkingOutCanvas from './WorkingOutCanvas';
-import { Target, AlertTriangle, TrendingUp } from 'lucide-react';
 import { localCache } from '../services/localCacheService';
+import MathView, { toDisplayText } from './MathView';
 import {
   fetchOrCreateDailyAssignment,
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
+  getAssignedChapters,
 } from '../services/dailyAssignmentService';
 
-const CHALLENGE_YEAR = 'Year 1';
-const CHALLENGE_CHAPTER_ID = 'y1-number';
-const CHALLENGE_BLUEPRINT = getQuestionBlueprint(CHALLENGE_YEAR, CHALLENGE_CHAPTER_ID);
-const MAX_HISTORY_PER_TYPE = 7;
-const CALC_ENGINE_VERSION = 'calc-local-2026-05-13-v1';
-const CHALLENGE_BOOT_CACHE_VERSION = 1;
+// Sub-components
+import ChallengeStartView from './challenge/ChallengeStartView';
+import ChallengeQuizView from './challenge/ChallengeQuizView';
+import ChallengeResultView from './challenge/ChallengeResultView';
 
-const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', '÷', '×', '(', ')', '/', '-', '.'];
-
-const notifyTeacherChallengeCompleted = async ({
-  studentId,
-  studentName,
-  challengeType,
-  score,
-  total,
-  xpEarned,
-  completedAt,
-  reviewCount = 0,
-  reportCount = 0,
-}) => {
-  if (!ADMIN_UID || studentId === ADMIN_UID) return;
-  const label = challengeType === 'calc' ? 'Basic Calculation' : 'Daily Challenge';
-  const displayName = studentName || 'A student';
-  const attentionLines = [
-    reviewCount > 0 ? `Review required: ${reviewCount} answer(s).` : '',
-    reportCount > 0 ? `Reports submitted: ${reportCount} issue(s).` : '',
-  ].filter(Boolean);
-  const body = [
-    `${displayName} finished ${label}: ${score}/${total}.`,
-    xpEarned ? `XP earned: ${xpEarned}.` : '',
-    ...attentionLines,
-  ].filter(Boolean).join('\n');
-
-  const response = await fetch('/api/send-notif', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      studentId: ADMIN_UID,
-      email: ADMIN_EMAIL,
-      subject: `Challenge completed: ${displayName}`,
-      text: body,
-      metadata: {
-        type: 'challenge_completed',
-        studentId,
-        studentName: studentName || 'Student',
-        challengeType,
-        score,
-        total,
-        xpEarned,
-        reviewCount,
-        reportCount,
-        completedAt,
-      },
-    }),
-  });
-  if (!response.ok) throw new Error(`send-notif failed: ${response.status}`);
-};
-
-const getAssignedChapters = (profile, assignedYear) => {
-  if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
-    return profile.assignedChapters;
-  }
-
-  return assignedYear === CHALLENGE_YEAR ? [CHALLENGE_CHAPTER_ID] : [];
-};
-
-const getYearNumber = (value) => {
-  const parsed = parseInt(String(value || '').replace(/\D/g, ''), 10);
-  return Number.isFinite(parsed) ? parsed : null;
-};
-
-const normalizeYearLabel = (value) => {
-  const yearNumber = getYearNumber(value);
-  return yearNumber === null ? String(value || '').trim() : `Year ${yearNumber}`;
-};
-
-const getValidChapterIdsForYears = (years, courses) => {
-  const ids = new Set();
-  years.forEach(year => {
-    const yearData = CURRICULUM_DATA[normalizeYearLabel(year)];
-    if (!yearData) return;
-    let chapters = Array.isArray(yearData)
-      ? yearData
-      : courses.flatMap(course => yearData[course] || []);
-    if (!Array.isArray(yearData) && chapters.length === 0) {
-      chapters = yearData.Advanced || Object.values(yearData)[0] || [];
-    }
-    chapters.forEach(chapter => ids.add(chapter.id));
-  });
-  return ids;
-};
-
-const normalizeText = (value) => String(value ?? '')
-  .replace(/\$\$/g, '')
-  .replace(/[−–—]/g, '-')
-  .replace(/×/g, 'x')
-  .trim();
-
-const getAnswerText = (option) => toDisplayText(option).trim();
-
-const deriveSimpleMathAnswer = (questionText) => {
-  const text = normalizeText(questionText).replace(/\s+/g, ' ');
-  const binary = text.match(/^(-?\d+(?:\.\d+)?)\s*([+\-x*÷/])\s*(-?\d+(?:\.\d+)?)\s*=\s*\?$/i);
-  if (!binary) return null;
-
-  const left = Number(binary[1]);
-  const right = Number(binary[3]);
-  if (!Number.isFinite(left) || !Number.isFinite(right)) return null;
-
-  const op = binary[2].toLowerCase();
-  let result = null;
-  if (op === '+') result = left + right;
-  if (op === '-') result = left - right;
-  if (op === 'x' || op === '*') result = left * right;
-  if ((op === '÷' || op === '/') && right !== 0) result = left / right;
-
-  return result === null ? null : String(Number.isInteger(result) ? result : Number(result.toFixed(4)));
-};
-
-const correctQuestionAnswer = (question) => {
-  const expectedAnswer = deriveSimpleMathAnswer(question?.question);
-  if (expectedAnswer === null) return question;
-
-  const options = getOptions(question);
-  const matchingOptionIndex = options.findIndex(option => getAnswerText(option) === expectedAnswer);
-  const repaired = {
-    ...question,
-    solution: question.solution || `${normalizeText(question.question).replace(/\?$/, expectedAnswer)}`,
-  };
-
-  if (question?.isManual) {
-    if (matchingOptionIndex >= 0) {
-      return { ...repaired, answer: String(matchingOptionIndex) };
-    }
-
-    return {
-      ...repaired,
-      isManual: false,
-      answer: expectedAnswer,
-      options: options.length ? [expectedAnswer, ...options.filter(option => getAnswerText(option) !== expectedAnswer)].slice(0, 4) : options,
-    };
-  }
-
-  if (!options.length || options.some(option => getAnswerText(option) === expectedAnswer)) {
-    return { ...repaired, answer: expectedAnswer };
-  }
-
-  return {
-    ...repaired,
-    answer: expectedAnswer,
-    options: [expectedAnswer, ...options.filter(option => getAnswerText(option) !== expectedAnswer)].slice(0, 4),
-  };
-};
-
-const toDate = (value) => {
-  if (!value) return null;
-  if (value instanceof Date) return value;
-  if (typeof value?.toDate === 'function') return value.toDate();
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? null : date;
-};
-
-const formatHistoryDate = (item) => {
-  if (item?.dateLabel) return item.dateLabel;
-  const date = toDate(item?.timestamp || item?.completedAt || item?.createdAt || item?.id);
-  return date ? date.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }) : 'Completed test';
-};
-
-const getWorkingOutPages = (result) => {
-  if (Array.isArray(result?.workingOutPages) && result.workingOutPages.length > 0) {
-    return result.workingOutPages.filter(Boolean);
-  }
-  return result?.workingOut ? [result.workingOut] : [];
-};
-
-const getHistorySortTime = (item) => {
-  const value = item?.timestamp || item?.completedAt || item?.createdAt || item?.date || item?.id;
-  if (!value) return 0;
-  if (typeof value?.toDate === 'function') return value.toDate().getTime();
-  if (value instanceof Date) return value.getTime();
-  if (typeof value === 'number') return value;
-  if (/^\d+$/.test(String(value))) return Number(value);
-  const parsed = new Date(value).getTime();
-  return Number.isNaN(parsed) ? 0 : parsed;
-};
-
-const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_HISTORY_PER_TYPE) => {
-  if (!userId) return;
-  const snap = await getDocs(collection(db, 'users', userId, statCollection));
-  const staleDocs = snap.docs
-    .map(statDoc => ({ ref: statDoc.ref, id: statDoc.id, ...statDoc.data() }))
-    .sort((a, b) => getHistorySortTime(b) - getHistorySortTime(a))
-    .slice(keep);
-
-  if (staleDocs.length === 0) return;
-  await Promise.all(staleDocs.map(item => deleteDoc(item.ref)));
-};
-
-const updateAdminDailySummary = async ({
-  userId,
-  date,
-  challengeType,
-  score,
-  total,
-  xpEarned,
-  studentProfile,
-  user,
-  status = 'completed',
-}) => {
-  if (!userId || !date) return;
-  const displayName = studentProfile?.name || studentProfile?.displayName ||
-    (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
-    user?.displayName || user?.email || 'Student';
-  const isCalc = challengeType === 'calc';
-  const isCompleted = status === 'completed';
-  await setDoc(doc(db, 'admin_daily_summary', date), {
-    date,
-    updatedAt: serverTimestamp(),
-    students: {
-      [userId]: {
-        studentId: userId,
-        name: displayName,
-        email: studentProfile?.email || user?.email || '',
-        done: isCompleted,
-        [isCalc ? 'calcDone' : 'dailyDone']: isCompleted,
-        [isCalc ? 'calcEnded' : 'dailyEnded']: !isCompleted,
-        [isCalc ? 'calcScore' : 'dailyScore']: score,
-        [isCalc ? 'calcTotal' : 'dailyTotal']: total,
-        [isCalc ? 'calcXp' : 'dailyXp']: xpEarned,
-        [isCalc ? 'calcStatus' : 'dailyStatus']: status,
-        lastChallengeType: challengeType,
-        lastUpdatedAt: new Date().toISOString(),
-        ...(isCompleted ? { lastCompletedAt: new Date().toISOString() } : {}),
-      },
-    },
-  }, { merge: true });
-};
-
-const createSessionSeed = () => {
-  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
-    return crypto.randomUUID();
-  }
-  return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
-};
-
-const getChallengeBootCacheKey = (uid) => `challenge-boot:v${CHALLENGE_BOOT_CACHE_VERSION}:${uid}`;
-const getChallengeBootMetaId = (uid, date) => `challenge_boot_${uid}_${date}`;
-const getManualQuestionCacheKey = (targetChapterIds) =>
-  `manual-questions:v1:${[...targetChapterIds].sort().join('|') || 'fallback'}`;
-
-const applyChallengeStatus = (status = {}) => ({
-  todayCompleted: status.daily === 'completed',
-  abandonedToday: status.daily === 'abandoned',
-  calcCompletedToday: status.calc === 'completed',
-  calcAbandonedToday: status.calc === 'abandoned',
-});
-
-const getChallengeStatusState = (status = {}, type) => {
-  const key = type === 'calc' ? 'calc' : 'daily';
-  return status[key] || null;
-};
-
-const writeChallengeStatusMeta = async (uid, date, challengeType, state) => {
-  if (!uid || !date) return;
-  await setDoc(doc(db, 'sync_meta', getChallengeBootMetaId(uid, date)), {
-    version: Date.now(),
-    statusVersion: Date.now(),
-    updatedAt: serverTimestamp(),
-    status: {
-      [challengeType === 'calc' ? 'calc' : 'daily']: state,
-    },
-  }, { merge: true });
-};
-
-const getTodayChallengeStatus = (snap) => {
-  if (!snap?.exists?.()) return null;
-  const data = snap.data();
-  if (data.completed === true) return 'completed';
-  return 'abandoned';
-};
-
-const mergeChallengeBootCache = (uid, patch) => {
-  if (!uid) return;
-  const cacheKey = getChallengeBootCacheKey(uid);
-  const current = localCache.get(cacheKey) || {};
-  localCache.set(cacheKey, {
-    ...current,
-    ...patch,
-    savedAt: Date.now(),
-  });
-};
-
-const getOptions = (question) => {
-  return Array.isArray(question?.options) ? question.options : [];
-};
-
-const getOptionText = (option) => {
-  return toDisplayText(option);
-};
-
-const getOptionImage = (option) => {
-  if (!option || typeof option !== 'object') return '';
-  return option.imageUrl || option.image || '';
-};
-
-const normalizeMix = (mix) => {
-  const safeMix = mix || DEFAULT_DIFFICULTY_MIX;
-  const bounded = {
-    easy: Math.max(0.1, safeMix.easy ?? DEFAULT_DIFFICULTY_MIX.easy),
-    medium: Math.max(0.1, safeMix.medium ?? DEFAULT_DIFFICULTY_MIX.medium),
-    hard: Math.max(0.05, safeMix.hard ?? DEFAULT_DIFFICULTY_MIX.hard),
-  };
-  const total = bounded.easy + bounded.medium + bounded.hard;
-  return {
-    easy: Number((bounded.easy / total).toFixed(2)),
-    medium: Number((bounded.medium / total).toFixed(2)),
-    hard: Number((bounded.hard / total).toFixed(2)),
-  };
-};
-
-const pickWeightedDifficulty = (mix) => {
-  const normalized = normalizeMix(mix);
-  const roll = Math.random();
-  if (roll < normalized.easy) return 'easy';
-  if (roll < normalized.easy + normalized.medium) return 'medium';
-  return 'hard';
-};
-
-const summarizeResults = (results) => {
-  return (results || []).reduce((summary, result) => {
-    if (!result?.difficulty || result.difficulty === 'manual') return summary;
-    const current = summary[result.difficulty] || { correct: 0, total: 0 };
-    return {
-      ...summary,
-      [result.difficulty]: {
-        correct: current.correct + (result.correct ? 1 : 0),
-        total: current.total + 1,
-      },
-    };
-  }, {});
-};
-
-const summarizeByKey = (results, key, labelKey) => {
-  return (results || []).reduce((summary, result) => {
-    const id = result?.[key];
-    if (!id) return summary;
-    const current = summary[id] || {
-      id,
-      label: result?.[labelKey] || id,
-      correct: 0,
-      total: 0,
-    };
-    return {
-      ...summary,
-      [id]: {
-        ...current,
-        correct: current.correct + (result.correct ? 1 : 0),
-        total: current.total + 1,
-      },
-    };
-  }, {});
-};
-
-const accuracyFor = (stats, difficulty) => {
-  const item = stats[difficulty];
-  if (!item?.total) return null;
-  return item.correct / item.total;
-};
-
-const adjustDifficultyMix = (currentMix, resultStats) => {
-  const next = { ...normalizeMix(currentMix) };
-  const easyAccuracy = accuracyFor(resultStats, 'easy');
-  const mediumAccuracy = accuracyFor(resultStats, 'medium');
-  const hardAccuracy = accuracyFor(resultStats, 'hard');
-
-  if (hardAccuracy !== null && hardAccuracy < 0.6) {
-    next.easy += 0.1;
-    next.hard -= 0.1;
-  } else if (mediumAccuracy !== null && mediumAccuracy < 0.55) {
-    next.easy += 0.05;
-    next.medium -= 0.05;
-  } else if (
-    easyAccuracy !== null && easyAccuracy >= 0.85 &&
-    (mediumAccuracy === null || mediumAccuracy >= 0.7)
-  ) {
-    next.easy -= 0.1;
-    next.medium += 0.05;
-    next.hard += 0.05;
-  }
-
-  return normalizeMix(next);
-};
-
-class CanvasErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error) {
-    console.warn('Working out canvas failed to render:', error);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return (
-        <div style={{
-          height: '100%',
-          minHeight: '400px',
-          borderRadius: '24px',
-          border: '1px solid #e2e8f0',
-          background: '#fff',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '8px',
-          padding: '24px',
-          textAlign: 'center',
-          color: '#64748b',
-          fontWeight: 700
-        }}>
-          <AlertTriangle size={28} style={{ color: '#f59e0b' }} />
-          <div style={{ color: '#1e293b', fontWeight: 900 }}>Sketch pad unavailable</div>
-          <div style={{ fontSize: '0.9rem', lineHeight: 1.5 }}>The question is still available on the left.</div>
-        </div>
-      );
-    }
-
-    return this.props.children;
-  }
-}
+// Utilities
+import {
+  CHALLENGE_YEAR,
+  CHALLENGE_BLUEPRINT,
+  getChallengeBootCacheKey,
+  getChallengeBootMetaId,
+  getManualQuestionCacheKey,
+  applyChallengeStatus,
+  getChallengeStatusState,
+  writeChallengeStatusMeta,
+  getTodayChallengeStatus,
+  mergeChallengeBootCache,
+  pickWeightedDifficulty,
+  summarizeResults,
+  summarizeByKey,
+  adjustDifficultyMix,
+  notifyTeacherChallengeCompleted,
+  updateAdminDailySummary,
+  pruneOldChallengeStats,
+  createSessionSeed,
+  correctQuestionAnswer,
+  getEarnedXp,
+  getChallengeMaxXp
+} from '../utils/challengeUtils';
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { user, isAdmin } = useAuth();
@@ -533,31 +127,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   );
   const showSideCanvas = showSplitScreen && !isTabletCanvasLayout;
 
-  const renderWorkingOutCanvas = (placement = 'side') => {
-    if (!showSplitScreen) return null;
-    const isTabletPlacement = placement === 'tablet';
-    return (
-      <div style={{
-        flex: isTabletPlacement ? 'none' : 1,
-        width: '100%',
-        height: isTabletPlacement ? 'clamp(360px, 42vh, 480px)' : 'calc(100vh - 120px)',
-        minHeight: isTabletPlacement ? '360px' : '400px',
-        display: 'flex',
-        flexDirection: 'column',
-        position: isTabletPlacement ? 'relative' : 'sticky',
-        top: isTabletPlacement ? 'auto' : '60px',
-      }}>
-        <CanvasErrorBoundary key={currentQuestion?.id || currentIdx}>
-          <WorkingOutCanvas
-            ref={canvasRef}
-            questionType={currentQuestion?.type}
-            isSubmitted={step === 'feedback'}
-          />
-        </CanvasErrorBoundary>
-      </div>
-    );
-  };
-
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
   // Each sub-question is worth 1 point; regular questions are worth 1 point
@@ -566,15 +135,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     return acc + (subCount > 0 ? subCount : 1);
   }, 0) || TOTAL_QUESTIONS;
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
-  const getChallengeMaxXp = (type) => {
-    if (type === 'calc') return 50;
-    return hasCalculationTest ? 50 : 100;
-  };
-  const getEarnedXp = (earnedScore, total, type) => {
-    const safeTotal = Number(total) || 0;
-    if (safeTotal <= 0) return 0;
-    return Math.round((Number(earnedScore) || 0) / safeTotal * getChallengeMaxXp(type));
-  };
 
 
 
@@ -600,7 +160,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     };
   }, [step]);
 
-  const learningInsights = React.useMemo(() => {
+  const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
     
     const topicMistakes = {};
@@ -628,85 +188,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     return insights;
   }, [dailyStats]);
-
-  const renderInsights = () => (
-    <div className="app-panel" style={{ 
-      padding: isMobile ? '24px' : '32px', 
-      background: '#ffffff',
-      borderRadius: '32px',
-      position: 'relative',
-      overflow: 'hidden',
-      boxShadow: '0 15px 35px rgba(0,0,0,0.03)',
-      border: '1px solid #f1f5f9',
-      textAlign: 'left',
-      marginTop: '24px'
-    }}>
-      <div style={{ position: 'absolute', top: '-20px', right: '-20px', opacity: 0.03, pointerEvents: 'none' }}>
-        <Target size={180} />
-      </div>
-      
-      <div style={{ marginBottom: '24px', position: 'relative', zIndex: 1 }}>
-        <h3 style={{ fontSize: '1.4rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '10px', margin: 0 }}>
-          <div style={{ width: '36px', height: '36px', background: '#f5f3ff', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#6366f1' }}>
-            <Target size={20} />
-          </div>
-          Performance Insights
-        </h3>
-      </div>
-
-      {learningInsights && learningInsights.length > 0 ? (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', position: 'relative', zIndex: 1 }}>
-          <div style={{ padding: '20px', borderRadius: '20px', background: 'linear-gradient(135deg, #fff1f2, #fff)', border: '1px solid #ffe4e6', display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-            <div style={{ width: '40px', height: '40px', background: '#f43f5e', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0 }}>
-              <AlertTriangle size={22} />
-            </div>
-            <div>
-              <h4 style={{ margin: '0 0 6px', fontSize: '1rem', fontWeight: 800, color: '#9f1239' }}>Focus Areas Identified</h4>
-              <p style={{ margin: 0, fontSize: '0.9rem', color: '#be123c', fontWeight: 600, lineHeight: 1.6 }}>
-                Based on your recent challenges, we've identified some topics that could use a bit more practice.
-              </p>
-            </div>
-          </div>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px' }}>
-            {learningInsights.map((insight, idx) => (
-              <div key={idx} style={{ padding: '20px', borderRadius: '20px', background: '#fff', border: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 4px 6px rgba(0,0,0,0.01)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#f43f5e' }} />
-                  <div>
-                    <h5 style={{ margin: '0 0 2px', fontSize: '1rem', fontWeight: 800, color: '#1e293b' }}>{insight.type}</h5>
-                    <div style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Review Recommended</div>
-                  </div>
-                </div>
-                <div style={{ textAlign: 'right' }}>
-                  <span style={{ fontSize: '1.2rem', fontWeight: 900, color: '#f43f5e' }}>{Math.round(insight.errorRate)}%</span>
-                  <span style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Error Rate</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      ) : (
-        <div style={{ 
-          padding: '60px 40px', 
-          background: '#f8fafc', 
-          borderRadius: '28px', 
-          border: '2px dashed #e2e8f0', 
-          textAlign: 'center',
-          position: 'relative',
-          zIndex: 1
-        }}>
-          <div style={{ width: '80px', height: '80px', background: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
-            <TrendingUp size={40} style={{ color: '#6366f1' }} />
-          </div>
-          <h4 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '12px' }}>Personalized Insights Pending</h4>
-          <p style={{ fontWeight: 600, color: '#64748b', maxWidth: '300px', margin: '0 auto', lineHeight: 1.6 }}>
-            Complete more daily challenges to unlock personalized performance insights and tracking!
-          </p>
-        </div>
-      )}
-    </div>
-  );
 
 
 
@@ -801,22 +282,53 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     // ── Realtime Boot Record (sync_meta) Listener ──
     // Ensures teacher-initiated resets are reflected immediately on the student's phone.
     const today = new Date().toLocaleDateString('en-CA');
-    const bootDocId = `boot_${user.uid}_${today}`;
+    const bootDocId = getChallengeBootMetaId(user.uid, today);
     const unsubBoot = onSnapshot(doc(db, 'sync_meta', bootDocId), (snap) => {
       if (snap.exists()) {
         const data = snap.data();
         const currentCache = localCache.get(getChallengeBootCacheKey(user.uid)) || {};
         
         // If the server says 'open' but we have 'abandoned'/'completed' locally, update it.
+        const serverDaily = data.status?.daily || 'open';
+        const serverCalc = data.status?.calc || 'open';
+        
+        // Robust YYYY-MM-DD check to avoid cross-day sync issues if device time is slightly off
+        const currentTodayStr = new Date().toLocaleDateString('en-CA');
+        if (today !== currentTodayStr) {
+           console.log('[sync_meta] Date changed, skipping stale sync.');
+           return;
+        }
+
+        // Use per-type reset timestamps so resetting one type doesn't accidentally unlock the other
+        const serverDailyResetTime = data.dailyResetAt ? new Date(data.dailyResetAt).getTime() : (data.resetAt ? new Date(data.resetAt).getTime() : 0);
+        const serverCalcResetTime = data.calcResetAt ? new Date(data.calcResetAt).getTime() : (data.resetAt ? new Date(data.resetAt).getTime() : 0);
+        // Compare against the last reset timestamp we already applied (not savedAt, which is
+        // updated on every app load and would be newer than the teacher's reset if the student
+        // opened the app after the reset, causing the reset to be silently ignored).
+        const cachedDailyResetAt = currentCache.dailyResetAt || 0;
+        const cachedCalcResetAt = currentCache.calcResetAt || 0;
+        const hasNewerDailyReset = serverDailyResetTime > cachedDailyResetAt;
+        const hasNewerCalcReset = serverCalcResetTime > cachedCalcResetAt;
+
+        const finalDailyStatus = (serverDaily === 'open' && (currentCache.dailyStatus === 'completed' || currentCache.dailyStatus === 'abandoned') && !hasNewerDailyReset)
+          ? (currentCache.dailyStatus || 'open')
+          : serverDaily;
+
+        const finalCalcStatus = (serverCalc === 'open' && (currentCache.calcStatus === 'completed' || currentCache.calcStatus === 'abandoned') && !hasNewerCalcReset)
+          ? (currentCache.calcStatus || 'open')
+          : serverCalc;
+
         const patch = {
           date: today,
-          dailyStatus: data.dailyStatus || 'open',
-          calcStatus: data.calcStatus || 'open',
-          todayCompleted: data.dailyStatus === 'completed',
-          abandonedToday: data.dailyStatus === 'abandoned',
-          calcCompletedToday: data.calcStatus === 'completed',
-          calcAbandonedToday: data.calcStatus === 'abandoned',
-          savedAt: Date.now()
+          dailyStatus: finalDailyStatus,
+          calcStatus: finalCalcStatus,
+          todayCompleted: finalDailyStatus === 'completed',
+          abandonedToday: finalDailyStatus === 'abandoned',
+          calcCompletedToday: finalCalcStatus === 'completed',
+          calcAbandonedToday: finalCalcStatus === 'abandoned',
+          dailyResetAt: hasNewerDailyReset ? serverDailyResetTime : cachedDailyResetAt,
+          calcResetAt: hasNewerCalcReset ? serverCalcResetTime : cachedCalcResetAt,
+          savedAt: currentCache.savedAt || 0,
         };
 
         // Only update if something actually changed to avoid infinite flush cycles
@@ -1061,6 +573,46 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setAnswerResults(new Array(qCount).fill(null));
     setCurrentIdx(0);
     setScore(0);
+
+    // --- Firebase Lock (Method 2) ---
+    // We write the 0-point record BEFORE starting.
+    if (user?.uid) {
+      setLoading(true);
+      try {
+        const now = new Date();
+        const startRecord = {
+          completed: false,
+          abandoned: true,
+          score: 0,
+          total: qCount,
+          challengeType: 'calc',
+          timestamp: now.toISOString(),
+          date: today,
+          dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
+          questionCount: qCount,
+          engineVersion: sessionMeta.engineVersion,
+          generationMode: sessionMeta.generationMode,
+          seed: sessionMeta.seed,
+        };
+        await setDoc(doc(db, 'users', user.uid, 'calc_stats', today), startRecord, { merge: true });
+        await writeChallengeStatusMeta(user.uid, today, 'calc', 'abandoned');
+        await updateAdminDailySummary({
+          userId: user.uid,
+          date: today,
+          challengeType: 'calc',
+          score: 0,
+          total: qCount,
+          studentProfile,
+          user,
+        }).catch(e => console.warn('Admin summary pre-write failed:', e));
+      } catch (err) {
+        console.error("Start-up Firebase lock failed:", err);
+        showToast("Connection failed. Please check your internet and try again.", 'error');
+        setLoading(false);
+        return;
+      }
+    }
+
     setStep('quiz');
     setupQuestion(combinedQs[0]);
     if (setIsLocked) setIsLocked(true);
@@ -1071,47 +623,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       calcStatus: 'abandoned',
       calcCompletedToday: false,
       calcAbandonedToday: true,
+      savedAt: Date.now()
     });
-    writeChallengeStatusMeta(user?.uid, today, 'calc', 'abandoned')
-      .catch((err) => console.warn('calc start status meta update failed (non-critical):', err?.code || err));
-
-    if (user?.uid) {
-      const now = new Date();
-      setDoc(doc(db, 'users', user.uid, 'calc_stats', sessionId), {
-          completed: false,
-          score: 0,
-          total: qCount,
-          challengeType: 'calc',
-          maxXp: getChallengeMaxXp('calc'),
-          xpEarned: 0,
-          engineVersion: sessionMeta.engineVersion,
-          generationMode: sessionMeta.generationMode,
-          seed: sessionMeta.seed,
-          timestamp: now.toISOString(),
-        date: today,
-        dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-        hasDetailSnapshot: false,
-        detailAvailable: false,
-        hasWorkingOut: false,
-        questionCount: qCount,
-        abandoned: true
-      })
-        .then(() => {
-          updateAdminDailySummary({
-            userId: user.uid,
-            date: today,
-            challengeType: 'calc',
-            score: 0,
-            total: qCount,
-            xpEarned: 0,
-            studentProfile,
-            user,
-            status: 'ended',
-          }).catch((err) => console.warn('admin calc started summary update failed (non-critical):', err?.code || err));
-          return pruneOldChallengeStats(user.uid, 'calc_stats');
-        })
-        .catch(console.error);
-    }
   };
 
   const startDailyQuiz = async () => {
@@ -1140,6 +653,36 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setAnswerResults(new Array(combinedQs.length).fill(null));
       setCurrentIdx(0);
       setScore(0);
+
+      // --- Firebase Lock (Method 2) ---
+      if (user?.uid) {
+        const now = new Date();
+        const startRecord = {
+          completed: false,
+          abandoned: true,
+          score: 0,
+          total: combinedQs.length,
+          challengeType: 'daily',
+          timestamp: now.toISOString(),
+          date: today,
+          dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
+          questionCount: combinedQs.length,
+          assignmentVersion: assignment.version || null
+        };
+        await setDoc(doc(db, 'users', user.uid, 'daily_stats', today), startRecord, { merge: true });
+        await writeChallengeStatusMeta(user.uid, today, 'daily', 'abandoned');
+        await markDailyAssignmentStarted(user.uid, today).catch(() => {});
+        await updateAdminDailySummary({
+          userId: user.uid,
+          date: today,
+          challengeType: 'daily',
+          score: 0,
+          total: combinedQs.length,
+          studentProfile,
+          user,
+        }).catch(e => console.warn('Admin summary pre-write failed:', e));
+      }
+
       setStep('quiz');
       setupQuestion(combinedQs[0]);
       if (setIsLocked) setIsLocked(true);
@@ -1150,46 +693,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         dailyStatus: 'abandoned',
         todayCompleted: false,
         abandonedToday: true,
+        savedAt: Date.now()
       });
-      markDailyAssignmentStarted(user?.uid, today)
-        .catch((err) => console.warn('daily assignment start update failed (non-critical):', err?.code || err));
-      writeChallengeStatusMeta(user?.uid, today, 'daily', 'abandoned')
-        .catch((err) => console.warn('daily start status meta update failed (non-critical):', err?.code || err));
-
-      if (user?.uid) {
-        const now = new Date();
-        setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
-          completed: false,
-          score: 0,
-          total: combinedQs.length,
-          challengeType: 'daily',
-          maxXp: getChallengeMaxXp('daily'),
-          xpEarned: 0,
-          timestamp: now.toISOString(),
-          dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
-          hasDetailSnapshot: false,
-          detailAvailable: false,
-          hasWorkingOut: false,
-          questionCount: combinedQs.length,
-          assignmentVersion: assignment.version || null,
-          abandoned: true
-        })
-          .then(() => {
-            updateAdminDailySummary({
-              userId: user.uid,
-              date: today,
-              challengeType: 'daily',
-              score: 0,
-              total: combinedQs.length,
-              xpEarned: 0,
-              studentProfile,
-              user,
-              status: 'ended',
-            }).catch((err) => console.warn('admin daily started summary update failed (non-critical):', err?.code || err));
-            return pruneOldChallengeStats(user.uid, 'daily_stats');
-          })
-          .catch(console.error);
-      }
     } catch (error) {
       console.error("Critical error in startDailyQuiz:", error);
       showToast("Failed to start challenge. Please check your assigned curriculum or try again later.", 'error');
@@ -1260,10 +765,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     window.addEventListener('blur', handleCheatingAttempt);
     document.addEventListener('visibilitychange', handleCheatingAttempt);
+    
+    const handleImmediateTermination = () => {
+      finishQuiz(true);
+    };
+    window.addEventListener('pagehide', handleImmediateTermination);
 
     return () => {
       window.removeEventListener('blur', handleCheatingAttempt);
       document.removeEventListener('visibilitychange', handleCheatingAttempt);
+      window.removeEventListener('pagehide', handleImmediateTermination);
     };
   }, [step, isAdmin, showToast]);
 
@@ -1609,7 +1120,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (isFinishing) return;
     // Declared outside try so catch block can safely reference it
     const currentAnswerResults = answerResults || [];
-    const actualScore = currentAnswerResults.reduce((acc, r) => acc + (r.pointsEarned || (r.correct ? 1 : 0)), 0);
+    let actualScore = isAbandoned ? 0 : currentAnswerResults.reduce((acc, r) => acc + (r?.pointsEarned || (r?.correct ? 1 : 0)), 0);
+    
     try {
       setIsFinishing(true);
       if (isAbandoned) {
@@ -2252,915 +1764,83 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     );
   }
 
-  if ((todayCompleted || abandonedToday) && step === 'start') {
-    return (
-      <div className="app-page">
-        <div className="app-page__header" style={{ marginBottom: '24px' }}>
-          <div className="app-page__title">
-            <h2>Challenge Status</h2>
-            <p>{todayCompleted ? "Goal achieved for today" : "Session terminated"}</p>
-          </div>
-        </div>
-
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '40px', 
-          maxWidth: '800px', 
-          margin: '0 auto', 
-          padding: '40px 20px',
-        }}>
-
-
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95, y: 20 }} 
-            animate={{ opacity: 1, scale: 1, y: 0 }} 
-            className="app-panel" 
-            style={{ 
-              textAlign: 'center', 
-              padding: 'clamp(24px, 5vw, 48px) clamp(20px, 5vw, 40px)', 
-              borderRadius: '28px',
-              width: '100%',
-              maxWidth: '560px',
-              boxShadow: '0 20px 60px rgba(15, 23, 42, 0.08)',
-              border: `2px solid ${todayCompleted ? '#10b981' : '#6366f1'}`,
-              background: '#fff',
-              position: 'relative'
-            }}
-          >
-            {/* Status Badge */}
-            <div style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: todayCompleted ? '#f0fdf4' : '#fff1f2',
-              color: todayCompleted ? '#10b981' : '#f43f5e',
-              padding: '6px 14px',
-              borderRadius: '100px',
-              fontSize: '0.7rem',
-              fontWeight: 900,
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase',
-              border: todayCompleted ? '1px solid #dcfce7' : '1px solid #fee2e2',
-              marginBottom: '20px'
-            }}>
-              {todayCompleted ? '✓ Goal Achieved' : '⚡ Session Terminated'}
-            </div>
-
-            {/* Icon */}
-            <div style={{ 
-              width: '72px', 
-              height: '72px', 
-              background: todayCompleted ? '#f0fdf4' : '#fff1f2', 
-              borderRadius: '20px', 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center', 
-              margin: '0 auto 16px',
-              border: `1px solid ${todayCompleted ? '#dcfce7' : '#fee2e2'}`
-            }}>
-              {todayCompleted ? <Trophy size={36} color="#10b981" /> : <AlertTriangle size={36} color="#f43f5e" />}
-            </div>
-            
-            {/* Title */}
-            <h2 style={{ 
-              fontSize: 'clamp(1.6rem, 6vw, 2.4rem)', 
-              fontWeight: 900, 
-              marginBottom: '16px', 
-              color: '#1e1b4b',
-              letterSpacing: '-0.03em',
-              lineHeight: 1.1
-            }}>
-              {todayCompleted ? "Excellent Job!" : "Session Ended"}
-            </h2>
-
-            {/* Info Card */}
-            <div style={{ 
-              padding: '16px 20px', 
-              borderRadius: '16px', 
-              background: '#f8fafc',
-              border: '1px solid #f1f5f9',
-              marginBottom: '28px',
-              textAlign: 'left'
-            }}>
-              {todayCompleted ? (
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                  <div style={{ width: '24px', height: '24px', borderRadius: '8px', background: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '2px' }}>
-                    <Check size={14} strokeWidth={3} />
-                  </div>
-                  <div>
-                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.95rem', margin: '0 0 4px' }}>Challenge Complete</p>
-                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '0.85rem', margin: 0, lineHeight: 1.5 }}>
-                      You met your daily goal. Come back tomorrow!
-                    </p>
-                  </div>
-                </div>
-              ) : (
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                  <div style={{ width: '24px', height: '24px', borderRadius: '8px', background: '#f43f5e', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0, marginTop: '2px' }}>
-                    <X size={14} strokeWidth={3} />
-                  </div>
-                  <div>
-                    <p style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.95rem', margin: '0 0 4px' }}>Automatic Termination</p>
-                    <p style={{ color: '#64748b', fontWeight: 500, fontSize: '0.85rem', margin: 0, lineHeight: 1.5 }}>
-                      Session was interrupted by a refresh or navigation.
-                    </p>
-                    <p style={{ color: '#f43f5e', fontWeight: 700, fontSize: '0.8rem', margin: '6px 0 0' }}>
-                      Progress for this attempt has been reset.
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-            
-            {/* Buttons */}
-            <div style={{ display: 'flex', gap: '12px' }}>
-              <button 
-                onClick={() => setViewMode('history')} 
-                className="app-button" 
-                style={{ 
-                  flex: 2,
-                  padding: '14px 16px', 
-                  borderRadius: '16px', 
-                  background: 'linear-gradient(135deg, #1e1b4b, #312e81)',
-                  color: 'white',
-                  fontWeight: 800,
-                  fontSize: '0.95rem',
-                  border: 'none',
-                  cursor: 'pointer',
-                  boxShadow: '0 8px 20px rgba(30, 27, 75, 0.2)',
-                }}
-              >
-                View Progress
-              </button>
-              <button 
-                onClick={onBack} 
-                style={{ 
-                  flex: 1,
-                  padding: '14px 16px', 
-                  background: '#f1f5f9',
-                  color: '#475569',
-                  fontWeight: 700,
-                  fontSize: '0.95rem',
-                  border: 'none',
-                  borderRadius: '16px',
-                  cursor: 'pointer',
-                }}
-              >
-                Close
-              </button>
-            </div>
-          </motion.div>
-
-          {/* Still allow calculation practice if it's enabled and today wasn't fully completed? 
-              Actually, usually we allow calc practice separately. */}
-          {studentProfile?.calculationEnabled !== false && (
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }} 
-              animate={{ opacity: 1, y: 0 }} 
-              className="app-panel" 
-              style={{ 
-                padding: '48px', 
-                borderRadius: '32px', 
-                border: '1px solid #fef3c7', 
-                background: '#fffbeb',
-                width: '100%',
-                maxWidth: '600px',
-                boxShadow: '0 20px 40px rgba(217, 119, 6, 0.05)'
-              }}
-            >
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <div style={{ width: '64px', height: '64px', background: 'linear-gradient(135deg, #fef3c7, #fde68a)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px', boxShadow: '0 8px 16px rgba(217, 119, 6, 0.1)' }}>
-                  <Target size={28} color="#d97706" />
-                </div>
-                <h1 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#78350f', marginBottom: '12px' }}>Calculation Practice</h1>
-                <p style={{ color: '#92400e', fontWeight: 500, fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '36px', maxWidth: '400px' }}>
-                  Improve your speed and accuracy with {getQuestionCount('calc')} arithmetic questions.
-                </p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
-                  {!todayStatusReady ? (
-                    <div style={{ background: '#f8fafc', border: '2px solid #e2e8f0', padding: '16px 20px', borderRadius: '20px', color: '#64748b', fontWeight: 800 }}>
-                      Checking today's calculation status...
-                    </div>
-                  ) : calcAbandonedToday ? (
-                    <div style={{ background: '#fff1f2', border: '2px solid #ffe4e6', padding: '16px 20px', borderRadius: '20px', color: '#be123c', fontWeight: 800 }}>
-                      Basic Calculation ended. Please try again tomorrow.
-                    </div>
-                  ) : calcCompletedToday ? (
-                    <div style={{ background: '#f0fdf4', border: '2px solid #dcfce7', padding: '16px 20px', borderRadius: '20px', color: '#166534', fontWeight: 800 }}>
-                      Today's Basic Calculation Done!
-                    </div>
-                  ) : (
-                    <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer' }}>
-                      Start Calculation
-                    </button>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          )}
-
-          <div style={{ width: '100%', maxWidth: '800px' }}>
-            {renderInsights()}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="app-page">
-      {step === 'start' && (
-        <div className="app-page__header" style={{ marginBottom: '24px' }}>
-          <div className="app-page__title">
-            <h2>Challenge</h2>
-            <p>Daily practice questions</p>
-          </div>
-        </div>
-      )}
-
-      <div className="challenge-container" style={{ maxWidth: '600px', margin: '0 auto', width: '100%', paddingBottom: '40px' }}>
-      {/* Header Area - Only show during quiz/feedback */}
-      {(step === 'quiz' || step === 'feedback') && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
-          {(step === 'quiz' || step === 'feedback') && questions[currentIdx]?.isManual ? (
-            <button 
-              onClick={() => setIsReporting(true)}
-              className="app-icon-button"
-              style={{ 
-                background: '#fef2f2', 
-                color: '#ef4444',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-                cursor: 'pointer'
-              }}
-              title="Report an issue"
-            >
-              <Flag size={20} />
-            </button>
-          ) : (
-            <div style={{ width: '42px' }} />
-          )}
-          <div style={{ textAlign: 'center' }}>
-            <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Challenge</span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <div style={{ width: '120px', height: '6px', background: '#f1f5f9', borderRadius: '3px', overflow: 'hidden' }}>
-                <motion.div 
-                  initial={{ width: 0 }}
-                  animate={{ width: `${((currentIdx + (step === 'feedback' ? 1 : 0)) / TOTAL_QUESTIONS) * 100}%` }}
-                  style={{ height: '100%', background: '#6366f1' }}
-                />
-              </div>
-              <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#6366f1' }}>{currentIdx + 1}/{TOTAL_QUESTIONS}</span>
-            </div>
-          </div>
-          <div style={{ width: '42px' }} />
-        </div>
-      )}
-
       <AnimatePresence mode="wait">
         {step === 'start' && (
-          <motion.div 
-            key="start-container"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            style={{ display: 'flex', flexDirection: 'column', gap: '24px', maxWidth: '800px', width: '100%' }}
-          >
-
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="app-panel" style={{ padding: '48px', borderRadius: '32px', border: '1px solid #f1f5f9', background: '#fff' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <div style={{ width: '64px', height: '64px', background: 'linear-gradient(135deg, #e0e7ff, #f5f3ff)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px', boxShadow: '0 8px 16px rgba(99, 102, 241, 0.1)' }}>
-                  <BookOpen size={28} color="#4f46e5" />
-                </div>
-                
-                <h1 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#1e293b', marginBottom: '12px' }}>Daily Practice</h1>
-                <p style={{ color: '#64748b', fontWeight: 500, fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '36px', maxWidth: '400px' }}>
-                  Complete {getQuestionCount('daily')} random questions to keep your brain sharp. <br/>
-                  Earn up to <span style={{ color: '#6366f1', fontWeight: 800 }}>{getChallengeMaxXp('daily')} XP</span> and maintain your learning streak.
-                </p>
-
-                <div style={{ width: '100%', maxWidth: '400px' }}>
-                  {abandonedToday ? (
-                    <motion.div 
-                      initial={{ scale: 0.95, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      style={{ 
-                        background: '#fff1f2', 
-                        border: '2px solid #ffe4e6', 
-                        padding: '24px', 
-                        borderRadius: '24px', 
-                        textAlign: 'left',
-                        display: 'flex',
-                        gap: '16px',
-                        alignItems: 'flex-start'
-                      }}
-                    >
-                      <div style={{ width: '40px', height: '40px', background: '#f43f5e', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', flexShrink: 0 }}>
-                        <AlertTriangle size={22} />
-                      </div>
-                      <div>
-                        <h4 style={{ margin: '0 0 4px', fontSize: '1rem', fontWeight: 800, color: '#9f1239' }}>Challenge Terminated</h4>
-                        <p style={{ margin: 0, fontSize: '0.9rem', color: '#be123c', fontWeight: 600, lineHeight: 1.5 }}>
-                          You left or refreshed the page during a challenge. The session was automatically closed with 0 points.
-                          <strong style={{ display: 'block', marginTop: '8px' }}>Please try again tomorrow!</strong>
-                        </p>
-                      </div>
-                    </motion.div>
-                  ) : todayCompleted ? (
-                    <div style={{ background: '#f0fdf4', border: '2px solid #dcfce7', padding: '16px 24px', borderRadius: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', color: '#166534', fontWeight: 800 }}>
-                      <CheckCircle2 size={20} /> Today's Challenge Done!
-                    </div>
-                  ) : (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                      <button onClick={startDailyQuiz} className="app-button app-button--primary" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #6366f1, #4f46e5)', boxShadow: '0 10px 20px rgba(99, 102, 241, 0.2)' }}>
-                        Start Challenge
-                      </button>
-                    </div>
-                  )}
-
-                  {history.length > 0 && (
-                    <button onClick={() => setViewMode('history')} style={{ background: 'transparent', border: 'none', color: '#64748b', fontWeight: 700, cursor: 'pointer', fontSize: '0.9rem', padding: '8px', transition: 'color 0.2s', marginTop: '12px', width: '100%' }}>
-                      View Test History
-                    </button>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-
-            {studentProfile?.calculationEnabled !== false && (
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="app-panel" style={{ padding: '48px', borderRadius: '32px', border: '1px solid #fef3c7', background: '#fffbeb' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                  <div style={{ width: '64px', height: '64px', background: 'linear-gradient(135deg, #fef3c7, #fde68a)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px', boxShadow: '0 8px 16px rgba(217, 119, 6, 0.1)' }}>
-                    <Target size={28} color="#d97706" />
-                  </div>
-                  <h1 style={{ fontSize: '1.8rem', fontWeight: 900, color: '#78350f', marginBottom: '12px' }}>Calculation Practice</h1>
-                  <p style={{ color: '#92400e', fontWeight: 500, fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '36px', maxWidth: '400px' }}>
-                    Complete {getQuestionCount('calc')} arithmetic questions to improve your speed and accuracy. <br/>
-                    Earn up to <span style={{ color: '#d97706', fontWeight: 800 }}>{getChallengeMaxXp('calc')} XP</span>!
-                  </p>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '280px' }}>
-                    {!todayStatusReady ? (
-                      <div style={{ background: '#f8fafc', border: '2px solid #e2e8f0', padding: '16px 20px', borderRadius: '20px', color: '#64748b', fontWeight: 800 }}>
-                        Checking today's calculation status...
-                      </div>
-                    ) : calcAbandonedToday ? (
-                      <div style={{ background: '#fff1f2', border: '2px solid #ffe4e6', padding: '16px 20px', borderRadius: '20px', color: '#be123c', fontWeight: 800 }}>
-                        Basic Calculation ended. Please try again tomorrow.
-                      </div>
-                    ) : calcCompletedToday ? (
-                      <div style={{ background: '#f0fdf4', border: '2px solid #dcfce7', padding: '16px 20px', borderRadius: '20px', color: '#166534', fontWeight: 800 }}>
-                        Today's Basic Calculation Done!
-                      </div>
-                    ) : (
-                      <button onClick={startCalculationQuiz} className="app-button" style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: '100px', fontWeight: 800, background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', border: 'none', cursor: 'pointer', boxShadow: '0 10px 20px rgba(217, 119, 6, 0.2)' }}>
-                        Start Calculation
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            )}
-
-            {/* Performance Insights Section - MOVED FROM DASHBOARD */}
-            {renderInsights()}
-          </motion.div>
+          <ChallengeStartView
+            key="start"
+            studentProfile={studentProfile}
+            todayStatusReady={todayStatusReady}
+            todayCompleted={todayCompleted}
+            abandonedToday={abandonedToday}
+            calcCompletedToday={calcCompletedToday}
+            calcAbandonedToday={calcAbandonedToday}
+            history={history}
+            onStartDailyQuiz={startDailyQuiz}
+            onStartCalculationQuiz={startCalculationQuiz}
+            onViewHistory={() => setViewMode('history')}
+            onBack={onBack}
+            getQuestionCount={getQuestionCount}
+            getChallengeMaxXp={getChallengeMaxXp}
+            hasCalculationTest={hasCalculationTest}
+            learningInsights={learningInsights}
+            isMobile={isMobile}
+          />
         )}
 
         {(step === 'quiz' || step === 'feedback') && (
-          <motion.div 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            exit={{ opacity: 0 }}
-            style={{ 
-              position: 'fixed', 
-              inset: 0, 
-              backgroundColor: '#f8fafc', 
-              zIndex: 2000, 
-              padding: isMobile ? '20px 16px' : '40px 20px',
-              overflowY: 'auto',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center'
-            }}
-          >
-            <div style={{ 
-              maxWidth: showSplitScreen ? '1200px' : '600px', 
-              width: '100%', 
-              display: 'flex', 
-              flexDirection: showSideCanvas ? 'row' : 'column', 
-              gap: isMobile ? '20px' : '40px',
-              alignItems: 'flex-start',
-              transition: 'all 0.3s ease'
-            }}>
-              <div style={{ flex: 1, maxWidth: showSplitScreen ? '600px' : '100%', width: '100%', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {/* Top Progress & Header */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-                <div style={{ textAlign: 'left' }}>
-                  <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Challenge</span>
-                  <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {TOTAL_QUESTIONS}</div>
-                </div>
-                <div style={{ textAlign: 'right', display: 'flex', flexWrap: 'nowrap', alignItems: 'center', gap: '8px' }}>
-                  {questions[currentIdx]?.isManual && (
-                    <button 
-                      onClick={() => setIsReporting(true)}
-                      className="app-icon-button"
-                      style={{ 
-                        background: '#fff', 
-                        color: '#ef4444',
-                        boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-                        width: '36px', height: '36px'
-                      }}
-                    >
-                      <Flag size={18} />
-                    </button>
-                  )}
-                   <div style={{ fontSize: '0.9rem', fontWeight: 800, color: timeLeft < 10 ? '#f43f5e' : '#64748b', background: '#fff', padding: '8px 12px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                     <Clock size={16} /> {timeLeft}s
-                   </div>
-                </div>
-              </div>
-
-              {/* Time Progress Bar */}
-              <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden', marginBottom: '8px' }}>
-                <motion.div 
-                  initial={false}
-                  animate={{ 
-                    width: `${(timeLeft / (questions[currentIdx]?.timeLimit || 30)) * 100}%`,
-                    backgroundColor: timeLeft < 10 ? '#f43f5e' : '#6366f1'
-                  }}
-                  style={{ height: '100%' }}
-                />
-              </div>
-
-              {/* Question Card */}
-              <div className="app-panel" style={{ padding: '32px', borderRadius: '32px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', position: 'relative' }}>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
-                  {step === 'feedback' && (
-                    <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
-                      {questions[currentIdx]?.year || CHALLENGE_YEAR} • {questions[currentIdx]?.chapterTitle || CHALLENGE_BLUEPRINT?.title || 'Numbers'}
-                    </span>
-                  )}
-                  {questions[currentIdx]?.hint && (
-                    <button 
-                      onClick={() => setShowHint(!showHint)}
-                      style={{ 
-                        background: showHint ? '#fef3c7' : '#fff7ed', 
-                        border: 'none', 
-                        padding: '6px 12px', 
-                        borderRadius: '10px', 
-                        color: '#d97706', 
-                        fontSize: '0.75rem', 
-                        fontWeight: 800, 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        gap: '6px', 
-                        cursor: 'pointer',
-                        transition: 'all 0.2s'
-                      }}
-                    >
-                      <Lightbulb size={14} /> {showHint ? 'Hide Hint' : 'Show Hint'}
-                    </button>
-                  )}
-                </div>
-                <MathView 
-                  content={questions[currentIdx]?.question} 
-                  graphData={questions[currentIdx]?.graphData}
-                  style={{ fontSize: '1.2rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6, margin: 0 }} 
-                />
-                
-                <AnimatePresence>
-                  {showHint && questions[currentIdx]?.hint && (
-                    <motion.div 
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      style={{ overflow: 'hidden' }}
-                    >
-                      <div style={{ marginTop: '16px', padding: '16px', borderRadius: '16px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#d97706', marginBottom: '8px' }}>
-                          <Lightbulb size={16} />
-                          <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.7rem', letterSpacing: '0.05em' }}>Hint</span>
-                        </div>
-                        <MathView content={questions[currentIdx].hint} style={{ color: '#92400e', fontSize: '0.95rem', fontWeight: 600 }} />
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
-                {questions[currentIdx]?.questionImage && (
-                  <img src={questions[currentIdx].questionImage} alt="Question" style={{ width: '100%', maxHeight: '200px', objectFit: 'contain', marginTop: '16px', borderRadius: '16px', background: '#f8fafc' }} />
-                )}
-              </div>
-
-              {showSplitScreen && isTabletCanvasLayout && renderWorkingOutCanvas('tablet')}
-
-              {questions[currentIdx]?.subQuestions?.length > 0 ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  {questions[currentIdx].subQuestions.map((sq, sIdx) => (
-                    <div key={sq.id || sIdx} style={{ padding: '24px', borderRadius: '24px', background: 'white', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                        <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
-                          {String.fromCharCode(97 + sIdx)}
-                        </div>
-                        <MathView content={sq.question} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
-                      </div>
-
-                      {sq.type === 'multiple_choice' ? (
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
-                          {(sq.options || []).map((opt, oIdx) => {
-                            const isSelected = subAnswers[sq.id || sIdx] === (typeof opt === 'string' ? opt : opt.text);
-                            const isCorrect = step === 'feedback' && (
-                              (sq.isManual && String(oIdx) === String(sq.answer)) || (!sq.isManual && String(typeof opt === 'string' ? opt : opt.text) === String(sq.answer))
-                            );
-                            const isWrong = step === 'feedback' && isSelected && !isCorrect;
-
-                            return (
-                              <button
-                                key={oIdx}
-                                onClick={() => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: (typeof opt === 'string' ? opt : opt.text) }))}
-                                disabled={step === 'feedback'}
-                                style={{
-                                  padding: '12px 16px',
-                                  borderRadius: '12px',
-                                  border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9'}`,
-                                  background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : isSelected ? '#f5f3ff' : '#fff',
-                                  color: isCorrect ? '#166534' : isWrong ? '#991b1b' : isSelected ? '#4f46e5' : '#64748b',
-                                  fontWeight: 800,
-                                  fontSize: '0.85rem',
-                                  cursor: step === 'feedback' ? 'default' : 'pointer',
-                                  transition: 'all 0.2s',
-                                  textAlign: 'left'
-                                }}
-                              >
-                                {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
-                              </button>
-                            );
-                          })}
-                        </div>
-                      ) : (
-                        <div style={{ position: 'relative' }}>
-                          <input 
-                            type="text"
-                            disabled={step === 'feedback'}
-                            value={subAnswers[sq.id || sIdx] || ''}
-                            onChange={(e) => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
-                            placeholder="Type answer..."
-                            style={{ 
-                              width: '100%',
-                              padding: '12px 16px', 
-                              borderRadius: '12px', 
-                              border: `2px solid ${step === 'feedback' ? (String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() === String(sq.answer).replace(/\s+/g, '').toLowerCase() ? '#10b981' : '#ef4444') : '#f1f5f9'}`, 
-                              background: 'white',
-                              fontWeight: 700,
-                              fontSize: '0.95rem'
-                            }}
-                          />
-                          {step === 'feedback' && String(subAnswers[sq.id || sIdx]).replace(/\s+/g, '').toLowerCase() !== String(sq.answer).replace(/\s+/g, '').toLowerCase() && (
-                            <div style={{ marginTop: '8px', fontSize: '0.75rem', color: '#166534', fontWeight: 800, background: '#f0fdf4', padding: '4px 10px', borderRadius: '6px' }}>
-                              Correct: <MathView content={String(sq.answer)} style={{ display: 'inline' }} />
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                  
-                  {step !== 'feedback' && (
-                    <button 
-                      onClick={() => handleAnswer(subAnswers)}
-                      disabled={Object.keys(subAnswers).length < questions[currentIdx].subQuestions.length}
-                      className="app-button app-button--primary"
-                      style={{ padding: '20px', borderRadius: '24px', fontSize: '1.1rem', marginTop: '12px' }}
-                    >
-                      Submit All Parts
-                    </button>
-                  )}
-                </div>
-              ) : questions[currentIdx]?.type === 'short_answer' ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {/* Math Symbol Toolbar */}
-                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
-                    {MATH_SYMBOLS.map(symbol => (
-                      <button
-                        key={symbol}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const currentVal = selectedOption || '';
-                          setSelectedOption(currentVal + symbol);
-                          // Maintain focus on input
-                          answerInputRef.current?.focus();
-                        }}
-                        disabled={step === 'feedback'}
-                        style={{
-                          width: '44px',
-                          height: '44px',
-                          borderRadius: '12px',
-                          border: '1px solid #e2e8f0',
-                          background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff',
-                          color: '#4f46e5',
-                          fontSize: symbol === '√' ? '1.3rem' : '1.1rem',
-                          fontWeight: 800,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          cursor: 'pointer',
-                          boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
-                          transition: 'all 0.2s',
-                          fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-                          lineHeight: 1,
-                          padding: 0,
-                          paddingBottom: symbol === '√' ? '2px' : '0'
-                        }}
-                        onMouseEnter={(e) => e.currentTarget.style.background = '#f5f3ff'}
-                        onMouseLeave={(e) => e.currentTarget.style.background = symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff'}
-                      >
-                        {symbol}
-                      </button>
-                    ))}
-                    {/* Backspace Button */}
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        const currentVal = selectedOption || '';
-                        setSelectedOption(currentVal.slice(0, -1));
-                        // Maintain focus on input
-                        answerInputRef.current?.focus();
-                      }}
-                      disabled={step === 'feedback'}
-                      style={{
-                        width: '64px',
-                        height: '44px',
-                        borderRadius: '12px',
-                        border: '1px solid #fee2e2',
-                        background: '#fff1f2',
-                        color: '#e11d48',
-                        fontSize: '0.8rem',
-                        fontWeight: 900,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        cursor: 'pointer',
-                        boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
-                        transition: 'all 0.2s',
-                        textTransform: 'uppercase'
-                      }}
-                      onMouseEnter={(e) => e.currentTarget.style.background = '#ffe4e6'}
-                      onMouseLeave={(e) => e.currentTarget.style.background = '#fff1f2'}
-                    >
-                      Del
-                    </button>
-                  </div>
-
-                  <input 
-                    ref={answerInputRef}
-                    type="text"
-                    disabled={step === 'feedback'}
-                    value={step === 'feedback' ? userAnswers[currentIdx] || '' : selectedOption || ''}
-                    onChange={(e) => step !== 'feedback' && setSelectedOption(e.target.value)}
-                    placeholder="Type your answer..."
-                    className="app-input"
-                    style={{ 
-                      fontSize: '1.4rem', 
-                      padding: '24px', 
-                      borderRadius: '24px', 
-                      textAlign: 'center', 
-                      fontWeight: 700,
-                      fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-                      letterSpacing: '0.05em'
-                    }}
-                    onKeyDown={(e) => e.key === 'Enter' && selectedOption && handleAnswer(selectedOption)}
-                    autoFocus
-                  />
-                  {step !== 'feedback' && (
-                    <button 
-                      onClick={() => handleAnswer(selectedOption)}
-                      disabled={!selectedOption}
-                      className="app-button app-button--primary"
-                      style={{ padding: '18px', borderRadius: '20px' }}
-                    >
-                      Submit Answer
-                    </button>
-                  )}
-                </div>
-              ) : questions[currentIdx]?.type === 'graph_sketch' ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  <p style={{ color: '#64748b', fontSize: '0.95rem', textAlign: 'center', marginBottom: '8px' }}>
-                    Draw your graph on the canvas, then submit it for grading.
-                  </p>
-                  {step !== 'feedback' ? (
-                    <button 
-                      onClick={() => handleAnswer('Graph Submitted')}
-                      disabled={isSubmittingCanvas}
-                      className="app-button app-button--primary"
-                      style={{ padding: '18px', borderRadius: '20px' }}
-                    >
-                      {isSubmittingCanvas ? 'Saving Graph...' : 'Submit Graph for Review'}
-                    </button>
-                  ) : (
-                    <div style={{ textAlign: 'center', padding: '16px', background: '#fef3c7', borderRadius: '16px', color: '#d97706', fontWeight: 800 }}>
-                      <Check size={20} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '8px' }} />
-                      Graph Submitted - Pending Review
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
-                  {getOptions(questions[currentIdx]).map((opt, i) => {
-                    const optText = getOptionText(opt);
-                    const optImage = getOptionImage(opt);
-                    const isSelected = selectedOptionIdx === i;
-                    
-                    let status = 'default';
-                    if (step === 'feedback') {
-                      const isCorrectChoice = (questions[currentIdx].isManual && String(i) === String(questions[currentIdx].answer)) || (!questions[currentIdx].isManual && String(optText) === String(questions[currentIdx].answer));
-                      if (isCorrectChoice) status = 'correct';
-                      else if (isSelected) status = 'wrong';
-                    }
-
-                    return (
-                      <button
-                        key={i}
-                        onClick={() => step !== 'feedback' && handleAnswer(optText, i)}
-                        disabled={step === 'feedback'}
-                        className={`app-option-card ${status !== 'default' ? `app-option-card--${status}` : isSelected ? 'app-option-card--selected' : ''}`}
-                        style={{ 
-                          padding: '16px 28px', 
-                          textAlign: 'left', 
-                          display: 'flex', 
-                          justifyContent: 'space-between', 
-                          alignItems: 'center',
-                          gap: '16px',
-                          border: '2px solid transparent',
-                          transition: 'all 0.2s',
-                          cursor: step === 'feedback' ? 'default' : 'pointer',
-                          borderRadius: '100px', // Capsule shape
-                          background: status === 'correct' ? '#f0fdf4' : status === 'wrong' ? '#fef2f2' : isSelected ? '#f5f3ff' : '#fff',
-                          boxShadow: status === 'correct' ? '0 0 0 2px #10b981' : status === 'wrong' ? '0 0 0 2px #ef4444' : isSelected ? '0 0 0 2px #6366f1' : '0 4px 12px rgba(0,0,0,0.03)'
-                        }}
-                      >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                          <div style={{ 
-                            width: '32px', height: '32px', borderRadius: '50%', 
-                            background: status === 'correct' ? '#10b981' : status === 'wrong' ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9', 
-                            color: isSelected || status !== 'default' ? 'white' : '#64748b',
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            fontWeight: 900, fontSize: '0.9rem', flexShrink: 0
-                          }}>
-                            {String.fromCharCode(65 + i)}
-                          </div>
-                          <div style={{ flex: 1 }}>
-                            <MathView content={optText} style={{ fontWeight: 700, fontSize: '1rem' }} />
-                            {optImage && <img src={optImage} alt="Option" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
-                          </div>
-                        </div>
-                        <div style={{ flexShrink: 0 }}>
-                          {status === 'correct' && <CheckCircle2 size={24} style={{ color: '#10b981' }} />}
-                          {status === 'wrong' && <XCircle size={24} style={{ color: '#ef4444' }} />}
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-
-              {step === 'feedback' && (
-                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '10px' }}>
-                  {(() => {
-                    const isPendingReview = questions[currentIdx]?.type === 'graph_sketch' || questions[currentIdx]?.requiresManualGrading === true;
-                    
-                    if (isPendingReview) {
-                      return (
-                        <div style={{ padding: '24px', borderRadius: '24px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                            <Clock size={24} color="#d97706" />
-                            <span style={{ fontSize: '1.1rem', fontWeight: 900, color: '#92400e' }}>
-                              Submitted for Review!
-                            </span>
-                          </div>
-                          <p style={{ margin: 0, color: '#b45309', fontSize: '0.95rem', fontWeight: 600 }}>
-                            Your teacher will review your work and award points soon.
-                          </p>
-                        </div>
-                      );
-                    }
-
-                    return (
-                      <div style={{ padding: '24px', borderRadius: '24px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#dcfce7' : '#fee2e2'}` }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                          {isCorrect ? <CheckCircle2 size={24} color="#10b981" /> : <XCircle size={24} color="#ef4444" />}
-                          <span style={{ fontSize: '1.1rem', fontWeight: 900, color: isCorrect ? '#166534' : '#991b1b' }}>
-                            {isCorrect ? 'Excellent!' : 'Keep going!'}
-                          </span>
-                        </div>
-                        {!isCorrect && (
-                          <div style={{ margin: '0 0 16px', padding: '12px 16px', borderRadius: '12px', background: 'white', border: '1px solid #fee2e2' }}>
-                            <p style={{ margin: 0, color: '#b91c1c', fontSize: '0.95rem', fontWeight: 800 }}>
-                              <span style={{ opacity: 0.7, marginRight: '8px' }}>Correct Answer:</span>
-                              <MathView content={
-                                questions[currentIdx].type === 'multiple_choice' && questions[currentIdx].isManual
-                                  ? getOptionText(getOptions(questions[currentIdx])[parseInt(questions[currentIdx].answer)]) 
-                                  : questions[currentIdx].answer
-                              } />
-                            </p>
-                          </div>
-                        )}
-                        {questions[currentIdx]?.solution && (
-                          <div style={{ background: 'white', padding: '16px', borderRadius: '16px', marginTop: '12px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#6366f1', marginBottom: '8px' }}>
-                              <Lightbulb size={18} />
-                              <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.05em' }}>Solution</span>
-                            </div>
-                            <MathView 
-                              content={questions[currentIdx].solution} 
-                              graphData={questions[currentIdx].graphData}
-                              style={{ color: '#475569', fontSize: '0.95rem' }} 
-                            />
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })()}
-                  <button onClick={nextQuestion} className="app-button app-button--primary" style={{ padding: '20px', borderRadius: '20px', fontSize: '1.1rem', width: '100%' }}>
-                    {currentIdx === TOTAL_QUESTIONS - 1 ? (countdown > 0 ? `Finish Challenge (${countdown}s)` : 'Finish Challenge') : (countdown > 0 ? `Next Question (${countdown}s)` : 'Next Question')}
-                  </button>
-                </motion.div>
-              )}
-              </div>
-
-            {/* Right Side: Working Out Canvas for Year 10+ students */}
-            {showSideCanvas && renderWorkingOutCanvas('side')}
-          </div>
-          </motion.div>
+          <ChallengeQuizView
+            key="quiz"
+            step={step}
+            questions={questions}
+            currentIdx={currentIdx}
+            TOTAL_QUESTIONS={TOTAL_QUESTIONS}
+            timeLeft={timeLeft}
+            countdown={countdown}
+            selectedOption={selectedOption}
+            setSelectedOption={setSelectedOption}
+            selectedOptionIdx={selectedOptionIdx}
+            isCorrect={isCorrect}
+            subAnswers={subAnswers}
+            setSubAnswers={setSubAnswers}
+            userAnswers={userAnswers}
+            showHint={showHint}
+            setShowHint={setShowHint}
+            setIsReporting={setIsReporting}
+            isSubmittingCanvas={isSubmittingCanvas}
+            isMobile={isMobile}
+            showSplitScreen={showSplitScreen}
+            showSideCanvas={showSideCanvas}
+            isTabletCanvasLayout={isTabletCanvasLayout}
+            handleAnswer={handleAnswer}
+            nextQuestion={nextQuestion}
+            canvasRef={canvasRef}
+            answerInputRef={answerInputRef}
+          />
         )}
 
         {step === 'result' && (
-          <motion.div key="result" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="app-panel" style={{ padding: '48px', textAlign: 'center', borderRadius: '40px' }}>
-            {answerResults.some(r => r === 'abandoned') || (questions.length > 0 && answerResults.length === 0) ? (
-              <div style={{ marginBottom: '32px' }}>
-                <div style={{ width: '120px', height: '120px', background: '#fef2f2', borderRadius: '50%', display: 'flex', alignItems: 'center', justifySelf: 'center', justifyContent: 'center', margin: '0 auto 32px', color: '#ef4444' }}>
-                  <XCircle size={60} />
-                </div>
-                <h1 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '8px', color: '#ef4444' }}>Challenge Terminated</h1>
-                <p style={{ color: '#64748b', fontWeight: 700, fontSize: '1.1rem' }}>
-                  This session was ended automatically because you switched screens or left the app.
-                </p>
-              </div>
-            ) : (
-              <>
-                <div style={{ position: 'relative', width: '120px', height: '120px', margin: '0 auto 32px' }}>
-                  <div style={{ position: 'absolute', inset: 0, background: '#f5f3ff', borderRadius: '50%', animation: 'pulse 2s infinite' }} />
-                  <div style={{ position: 'relative', width: '100%', height: '100%', background: '#6366f1', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', boxShadow: '0 15px 30px rgba(99,102,241,0.3)' }}>
-                    <Trophy size={60} />
-                  </div>
-                </div>
-                <h1 style={{ fontSize: '2.2rem', fontWeight: 900, marginBottom: '8px' }}>Challenge Complete!</h1>
-                <p style={{ color: '#64748b', fontWeight: 700, fontSize: '1.1rem', marginBottom: '40px' }}>
-                  You scored <span style={{ color: '#6366f1' }}>{score} out of {totalPossibleScore}</span>
-                </p>
-              </>
-            )}
-            
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '32px' }}>
-              <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>
-                <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '4px' }}>POINTS EARNED</span>
-                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>+{getEarnedXp(score, totalPossibleScore, challengeType)} XP</span>
-              </div>
-              <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '24px' }}>
-                <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', marginBottom: '4px' }}>ACCURACY</span>
-                <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{totalPossibleScore > 0 ? Math.round((score/totalPossibleScore)*100) : 0}%</span>
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-              <button 
-                onClick={() => {
-                  const currentRecord = {
-                    chapterTitle: CHALLENGE_BLUEPRINT?.title || 'Numbers & Place Value',
-                    score,
-                    total: TOTAL_QUESTIONS,
-                    questions,
-                    userAnswers,
-                    answerResults,
-                    timestamp: new Date().toISOString()
-                  };
-                  setSelectedChallenge(currentRecord);
-                  setViewMode('history');
-                }} 
-                className="app-button app-button--secondary" 
-                style={{ padding: '18px', borderRadius: '20px', fontWeight: 800 }}
-              >
-                Review Answers
-              </button>
-              <button onClick={onBack} className="app-button app-button--primary" style={{ padding: '18px', borderRadius: '20px', fontWeight: 800 }}>
-                Return Home
-              </button>
-            </div>
-          </motion.div>
+          <ChallengeResultView
+            key="result"
+            questions={questions}
+            userAnswers={userAnswers}
+            answerResults={answerResults}
+            score={score}
+            totalPossibleScore={totalPossibleScore}
+            TOTAL_QUESTIONS={TOTAL_QUESTIONS}
+            challengeType={challengeType}
+            challengeBlueprint={CHALLENGE_BLUEPRINT}
+            hasCalculationTest={hasCalculationTest}
+            onReviewAnswers={(record) => {
+              setSelectedChallenge(record);
+              setViewMode('history');
+            }}
+            onBack={onBack}
+          />
         )}
       </AnimatePresence>
       {renderReportModal()}
-      </div>
     </div>
   );
 };
