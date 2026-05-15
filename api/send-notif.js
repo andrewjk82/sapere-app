@@ -207,7 +207,8 @@ export default async function handler(req, res) {
       const GMAIL_USER = process.env.GMAIL_USER;
       const GMAIL_PASS = process.env.GMAIL_PASS;
       if (!GMAIL_USER || !GMAIL_PASS || !email) {
-        if (!GMAIL_USER) console.warn('[send-notif] GMAIL_USER not configured — email skipped');
+        if (!GMAIL_USER || !GMAIL_PASS) console.warn('[send-notif] GMAIL credentials missing — email skipped');
+        if (!email) console.warn('[send-notif] Recipient email is missing — email skipped');
         return false;
       }
       const transporter = nodemailer.createTransport({
