@@ -59,6 +59,7 @@ import {
   getOptions,
   getOptionText,
   getOptionImage,
+  getWorkingOutPages,
 } from '../utils/challengeUtils';
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
