@@ -694,6 +694,10 @@ function App() {
       );
     }
 
+    const handleChallengeBack = useCallback(() => {
+      setActiveTab('Dashboard');
+    }, []);
+
     switch (activeTab) {
       case 'Dashboard':
         return (
@@ -718,7 +722,13 @@ function App() {
       case 'Schedule':
         return <Schedule />;
       case 'Challenge':
-        return <DailyChallenge onBack={() => setActiveTab('Dashboard')} setIsLocked={setIsLocked} />;
+        return (
+          <DailyChallenge 
+            key={`challenge-${user?.uid}`}
+            onBack={handleChallengeBack} 
+            setIsLocked={setIsLocked} 
+          />
+        );
       case 'Curriculum':
         return <Curriculum />;
       case 'Library':
