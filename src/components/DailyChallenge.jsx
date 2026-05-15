@@ -16,6 +16,7 @@ import {
 import { generateQuestion, getQuestionTargets } from '../services/questionGenerator';
 import { generateCalculationSet } from '../services/calculationGenerator';
 import { localCache } from '../services/localCacheService';
+import { generateLearningRecommendations } from '../utils/analyticsUtils';
 import MathView, { toDisplayText } from './MathView';
 import {
   fetchOrCreateDailyAssignment,
@@ -102,6 +103,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [isSubmittingCanvas, setIsSubmittingCanvas] = useState(false);
   const quizStartTimeRef = useRef(null);
   const [elapsedSeconds, setElapsedSeconds] = useState(null);
+  const [analyticsRecs, setAnalyticsRecs] = useState(null);
   const [countdown, setCountdown] = useState(0);
   const [challengeType, setChallengeType] = useState('daily');
   const [warnings, setWarnings] = useState(0);
@@ -1204,6 +1206,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (quizStartTimeRef.current) {
         setElapsedSeconds(Math.round((Date.now() - quizStartTimeRef.current) / 1000));
       }
+      // Compute learning recommendations from all historical stats
+      try {
+        const analytics = generateLearningRecommendations(dailyStats, []);
+        setAnalyticsRecs(analytics.recommendations);
+      } catch (e) {
+        console.warn('analytics generation failed (non-fatal):', e);
+      }
       // Lock BEFORE setting step so the auto-update effect in App.jsx can't
       // fire a page reload in the narrow window between quiz end and result render.
       if (setIsLocked) setIsLocked(true);
@@ -1884,6 +1893,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   hasCalculationTest={hasCalculationTest}
                   elapsedSeconds={elapsedSeconds}
                   userName={studentProfile?.firstName || studentProfile?.displayName?.split(' ')?.[0] || ''}
+                  recommendations={analyticsRecs}
                   onReviewAnswers={(record) => {
                     // Open the modal immediately. 
                     // We also switch viewMode behind the scenes so if they close it, 

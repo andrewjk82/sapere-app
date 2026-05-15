@@ -8,7 +8,8 @@ import {
   Clock,
   CheckCircle2,
   AlertTriangle,
-  ArrowRight
+  ArrowRight,
+  BookOpen
 } from 'lucide-react';
 import { getEarnedXp } from '../../utils/challengeUtils';
 
@@ -66,7 +67,8 @@ const ChallengeResultView = ({
   onBack,
   elapsedSeconds = null,
   streakDays = null,
-  userName = ''
+  userName = '',
+  recommendations = null
 }) => {
   const isAbandoned =
     (answerResults || []).some(r => r === 'abandoned') ||
@@ -212,6 +214,24 @@ const ChallengeResultView = ({
               </div>
             );
           })}
+        </div>
+      )}
+
+      {recommendations && recommendations.length > 0 && (
+        <div className="cr__study-plan">
+          <h3>
+            <BookOpen size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px', color: '#8b5cf6' }} />
+            Study Plan
+          </h3>
+          {recommendations.map((rec, i) => (
+            <div key={i} className="cr__rec">
+              <div className={`cr__rec-dot cr__rec-dot--${rec.priority}`} />
+              <div className="cr__rec-body">
+                <div className="cr__rec-title">{rec.title}</div>
+                <div className="cr__rec-desc">{rec.description}</div>
+              </div>
+            </div>
+          ))}
         </div>
       )}
 
@@ -415,6 +435,45 @@ const challengeResultStyles = `
     color: #5b4d74;
     border: 1px solid rgba(167, 139, 250, 0.2);
   }
+
+  .cr__study-plan {
+    width: 100%;
+    padding: 20px 22px;
+    border-radius: 22px;
+    background: white;
+    border: 1px solid rgba(167, 139, 250, 0.18);
+    box-shadow: 0 12px 30px rgba(91, 33, 182, 0.05);
+    text-align: left;
+  }
+  .cr__study-plan h3 {
+    margin: 0 0 14px;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #1e1b4b;
+    display: flex;
+    align-items: center;
+  }
+  .cr__rec {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    align-items: flex-start;
+  }
+  .cr__rec:last-child { border-bottom: 0; padding-bottom: 0; }
+  .cr__rec-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .cr__rec-dot--high { background: #ef4444; }
+  .cr__rec-dot--medium { background: #f59e0b; }
+  .cr__rec-dot--low { background: #10b981; }
+  .cr__rec-body { flex: 1; }
+  .cr__rec-title { font-weight: 800; font-size: 0.9rem; color: #1e1b4b; margin-bottom: 3px; }
+  .cr__rec-desc { font-size: 0.82rem; color: #64748b; line-height: 1.5; }
 
   @media (max-width: 640px) {
     .challenge-result {
