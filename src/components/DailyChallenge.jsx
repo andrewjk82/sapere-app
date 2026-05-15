@@ -403,6 +403,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
            applyCachedStatus();
         }
       }
+    }, (err) => {
+      console.warn('[DailyChallenge] Boot listener failed:', err);
     });
 
     const handleStorage = (event) => {

@@ -235,6 +235,8 @@ function App() {
           setNewVersionAvailable(true);
         }
       }
+    }, (err) => {
+      console.warn('[App] System config listener failed:', err);
     });
   }, []);
 
@@ -366,6 +368,8 @@ function App() {
     );
     return onSnapshot(q, (snap) => {
       setNotifications(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    }, (err) => {
+      console.warn('[App] Notifications listener failed:', err);
     });
   }, [user?.uid]);
 
