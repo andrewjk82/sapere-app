@@ -520,7 +520,11 @@ function App() {
     // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches
     if (!profile && !isAdmin) return;
 
-    if (!silent) setLoading(true);
+    // Only show the full-page loading spinner on the very first load.
+    // Subsequent background refreshes (like after a quiz ends) should be silent.
+    const shouldShowSpinner = !silent && students.length === 0;
+    if (shouldShowSpinner) setLoading(true);
+    
     try {
       const data = await studentService.getStudents(user.uid, isAdmin);
       setStudents(data);
@@ -530,14 +534,16 @@ function App() {
       setLoadError('We couldn’t load your students. Please try again.');
       console.error(err);
     } finally {
-      if (!silent) setLoading(false);
+      if (shouldShowSpinner) setLoading(false);
     }
-  }, [user, profileLoaded, profile, isAdmin]);
+  }, [user, profileLoaded, profile, isAdmin, students.length]);
 
 
   useEffect(() => {
     if (user) {
-      handleRefreshStudents();
+      // Pass silent=true so that profile updates (e.g. after a quiz) 
+      // don't trigger the global loading spinner and unmount the active view.
+      handleRefreshStudents(true);
     }
   }, [user, isAdmin, handleRefreshStudents]);
 
