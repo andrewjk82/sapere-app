@@ -1,7 +1,7 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 
-const EIGHT_PM_BATCH_SIZE = 8;
+const EIGHT_PM_BATCH_SIZE = 50;
 const CRON_STARTED_AT = Date.now();
 const CRON_SOFT_LIMIT_MS = 24_000;
 const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';

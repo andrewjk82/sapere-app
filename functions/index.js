@@ -97,6 +97,22 @@ exports.sendNightBeforeReminders = functions.pubsub
           html: `<p>Hi ${userData.firstName}, you have a lesson tomorrow at ${session.startTime}.</p>`
         });
       }
+
+      // Send Push Notification if token exists
+      if (userData.fcmToken) {
+        try {
+          const message = {
+            notification: {
+              title: "Lesson Reminder",
+              body: `You have a lesson tomorrow at ${session.startTime}.`
+            },
+            token: userData.fcmToken
+          };
+          await admin.messaging().send(message);
+        } catch (err) {
+          console.error(`Failed to send push notification to ${session.studentId}:`, err);
+        }
+      }
     }
     return null;
   });
