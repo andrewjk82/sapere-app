@@ -27,27 +27,10 @@ import {
   limit,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { buildAvatarUrl, buildDisplayName } from '../utils/avatarUtils';
 
 const ADMIN_EMAIL = 'andrewjk82@gmail.com';
 const SKIP_ROLES = ['admin', 'parent'];
-
-// ── Internal helpers ───────────────────────────────────────────────────────
-
-const buildAvatarUrl = (data, fallbackSeed) => {
-  if (data.dreamImageUrl) return data.dreamImageUrl;
-  if (data.avatarUrl) return data.avatarUrl;
-  if (data.avatarStyle && data.avatarSeed) {
-    return `https://api.dicebear.com/7.x/${data.avatarStyle}/svg?seed=${encodeURIComponent(data.avatarSeed)}`;
-  }
-  return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(fallbackSeed || 'sapere')}`;
-};
-
-const buildDisplayName = (data) => {
-  if (data.name) return data.name;
-  if (data.displayName) return data.displayName;
-  if (data.firstName) return `${data.firstName} ${data.lastName || ''}`.trim();
-  return 'Student';
-};
 
 // ── Public API ─────────────────────────────────────────────────────────────
 

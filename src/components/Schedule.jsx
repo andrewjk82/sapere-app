@@ -18,6 +18,8 @@ const TIME_OPTIONS = [
 
 const SESSION_ACCENTS = ['#4f46e5', '#0891b2', '#16a34a', '#db2777', '#ea580c', '#7c3aed'];
 const SCHEDULE_STUDENT_PROFILE_CACHE_VERSION = 1;
+const SLOT_H = 70;
+const timeSlots = Array.from({ length: 17 }, (_, i) => i + 8); // 8 AM – 12 AM
 const STUDENT_LIST_CACHE_VERSION = 2;
 
 const formatDateKey = (date) => {
@@ -229,6 +231,7 @@ const Schedule = () => {
   const [sessions, setSessions] = useState([]);
   const [selectedSession, setSelectedSession] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isSaving, setIsSaving] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [editData, setEditData] = useState({ 
     notes: '', 
@@ -277,48 +280,27 @@ const Schedule = () => {
         setLoading(false);
       });
     } else {
-      // Split into two listeners to avoid 'or' query issues and potential indexing problems
       const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-      const qEmail = query(collection(db, 'sessions'), where('studentEmail', '==', (user.email || '').toLowerCase()));
 
-      let resultsId = [];
-      let resultsEmail = [];
-
-      const mergeResults = () => {
-        const mergedMap = new Map();
-        [...resultsId, ...resultsEmail].forEach(doc => mergedMap.set(doc.id, doc));
-        const merged = Array.from(mergedMap.values());
-        setSessions(merged.sort((a, b) => {
+      unsub1 = onSnapshot(qId, (snap) => {
+        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        setSessions(docs.sort((a, b) => {
           const dateA = a.date || '';
           const dateB = b.date || '';
           if (dateA !== dateB) return dateA.localeCompare(dateB);
           return parseTime(a.startTime) - parseTime(b.startTime);
         }));
         setLoading(false);
-      };
-
-      unsub1 = onSnapshot(qId, (snap) => {
-        resultsId = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        mergeResults();
       }, (err) => {
-        console.error('Firestore ID query error:', err);
-        mergeResults();
-      });
-
-      unsub2 = onSnapshot(qEmail, (snap) => {
-        resultsEmail = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        mergeResults();
-      }, (err) => {
-        console.error('Firestore Email query error:', err);
-        mergeResults();
+        console.error('Firestore session query error:', err);
+        setLoading(false);
       });
     }
 
     return () => {
       unsub1();
-      unsub2();
     };
-  }, [user?.uid, user?.email, isAdmin]);
+  }, [user?.uid, isAdmin]);
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   const handleOpenDetails = (session) => {
@@ -368,6 +350,7 @@ const Schedule = () => {
   // ── Save/Update session ──────────────────────────────────────────────────
   const handleSaveDetails = async (choice = 'single') => {
     if (!selectedSession || !isAdmin) return;
+    setIsSaving(true);
     try {
       const updatePayload = buildSessionUpdatePayload(editData);
 
@@ -432,6 +415,8 @@ const Schedule = () => {
     } catch (e) {
       console.error('Failed to update session:', e);
       showToast('Failed to update.', 'error');
+    } finally {
+      setIsSaving(false);
     }
   };
 
@@ -478,9 +463,6 @@ const Schedule = () => {
       return date;
     });
   }, [currentDate]);
-
-  const timeSlots = Array.from({ length: 17 }, (_, i) => i + 8); // 8 AM – 12 AM
-  const SLOT_H = 70;
 
   const parseTime = useCallback((t) => {
     if (!t) return 0;
@@ -877,15 +859,19 @@ const Schedule = () => {
                 overflowY: 'auto'
               }}
             >
-              <div style={{ backgroundColor: '#6366f1', padding: '32px', color: '#fff' }}>
+              <div style={{ background: 'linear-gradient(135deg, #6366f1, #4f46e5)', padding: '32px', color: '#fff' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div style={{ flex: 1 }}>
-                    <h3 style={{ margin: '0 0 4px', fontSize: '1.4rem', fontWeight: 900 }}>
+                    <h3 style={{ margin: '0 0 6px', fontSize: '1.8rem', fontWeight: 900, fontFamily: 'var(--font-heading)', letterSpacing: '-0.02em' }}>
                       {selectedSession.isGroupedClass 
                         ? 'Group Class' 
                         : (selectedSession.groupStudentNames ? selectedSession.studentName : selectedSession.studentName)}
                     </h3>
-                    <p style={{ margin: 0, opacity: 0.85, fontWeight: 600 }}>{normalizeSubjectLabel(selectedSession.subject)} · {selectedSession.date}</p>
+                    <p style={{ margin: 0, opacity: 0.9, fontWeight: 700, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ backgroundColor: 'rgba(255,255,255,0.2)', padding: '4px 10px', borderRadius: '8px' }}>{normalizeSubjectLabel(selectedSession.subject)}</span>
+                      <span style={{ opacity: 0.7 }}>•</span>
+                      <span>{selectedSession.date}</span>
+                    </p>
                     
                     {(selectedSession.isGroupedClass || selectedSession.groupStudentNames) && (
                       <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -971,43 +957,71 @@ const Schedule = () => {
                       </div>
                     )}
                   </div>
-                  <button onClick={() => setSelectedSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', marginLeft: '16px' }}>
-                    <X size={20} />
+                  <button 
+                    onClick={() => setSelectedSession(null)} 
+                    style={{ 
+                      background: 'rgba(255,255,255,0.15)', 
+                      border: '1px solid rgba(255,255,255,0.2)', 
+                      borderRadius: '14px', 
+                      width: '40px', 
+                      height: '40px', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center', 
+                      cursor: 'pointer', 
+                      color: '#fff', 
+                      marginLeft: '16px',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <X size={20} strokeWidth={2.5} />
                   </button>
                 </div>
               </div>
 
-              <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '16px' }}>
+              <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '28px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
                   <div>
-                    <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Date</label>
+                    <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Date</label>
                     <input 
                       type="date" 
                       value={editData.date} 
                       disabled={!isAdmin}
                       onChange={e => setEditData({ ...editData, date: e.target.value })}
-                      style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', boxSizing: 'border-box' }}
+                      style={{ 
+                        width: '100%', 
+                        backgroundColor: isAdmin ? '#fff' : '#f8fafc', 
+                        border: '2px solid #f1f5f9', 
+                        borderRadius: '20px', 
+                        padding: '18px', 
+                        fontSize: '1.05rem', 
+                        fontWeight: 700,
+                        color: '#1e1b4b', 
+                        outline: 'none', 
+                        boxSizing: 'border-box',
+                        transition: 'border-color 0.2s'
+                      }}
                     />
                   </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Start Time</label>
+                      <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Start Time</label>
                       <select 
                         disabled={!isAdmin}
                         value={editData.startTime} 
                         onChange={e => setEditData({ ...editData, startTime: e.target.value })}
-                        style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', boxSizing: 'border-box', cursor: isAdmin ? 'pointer' : 'default' }}
+                        style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '20px', padding: '18px', fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', outline: 'none', boxSizing: 'border-box', cursor: isAdmin ? 'pointer' : 'default' }}
                       >
                         {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
                       </select>
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>End Time</label>
+                      <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>End Time</label>
                       <select 
                         disabled={!isAdmin}
                         value={editData.endTime} 
                         onChange={e => setEditData({ ...editData, endTime: e.target.value })}
-                        style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', boxSizing: 'border-box', cursor: isAdmin ? 'pointer' : 'default' }}
+                        style={{ width: '100%', backgroundColor: isAdmin ? '#fff' : '#f8fafc', border: '2px solid #f1f5f9', borderRadius: '20px', padding: '18px', fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', outline: 'none', boxSizing: 'border-box', cursor: isAdmin ? 'pointer' : 'default' }}
                       >
                         {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
                       </select>
@@ -1016,7 +1030,7 @@ const Schedule = () => {
                 </div>
 
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Today Covered</label>
+                  <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Today Covered</label>
                   {isAdmin ? (
                     <div style={{ border: '2px solid #f1f5f9', borderRadius: '16px', padding: '14px', display: 'grid', gap: '10px', maxHeight: '220px', overflowY: 'auto', background: '#fff' }}>
                       {curriculumTopicOptions.length === 0 ? (
@@ -1071,49 +1085,55 @@ const Schedule = () => {
                       )}
                     </div>
                   ) : (
-                    <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', color: '#1e1b4b', fontSize: '1rem' }}>
+                    <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '20px', color: '#1e1b4b', fontSize: '1rem', display: 'flex', flexDirection: 'column', gap: '12px', border: '1px solid #f1f5f9' }}>
                       {Array.isArray(selectedSession.learnedTopics) && selectedSession.learnedTopics.length > 0
-                        ? formatLearnedTopics(selectedSession.learnedTopics).join(', ')
-                        : 'No covered topics recorded for this session.'}
+                        ? formatLearnedTopics(selectedSession.learnedTopics).map((topicStr, i) => (
+                            <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', lineHeight: 1.5 }}>
+                              <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>✅</span>
+                              <span style={{ fontWeight: 800, color: '#1e1b4b' }}>{topicStr}</span>
+                            </div>
+                          ))
+                        : <span style={{ color: '#94a3b8', fontWeight: 700 }}>No covered topics recorded for this session.</span>}
                     </div>
                   )}
                 </div>
 
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Notes</label>
+                  <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Notes</label>
                   {isAdmin
-                    ? <textarea rows={3} value={editData.notes} onChange={e => setEditData({ ...editData, notes: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
-                    : <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', color: '#1e1b4b', fontSize: '1rem' }}>{selectedSession.notes || 'No notes for this session.'}</div>
+                    ? <textarea rows={3} value={editData.notes} onChange={e => setEditData({ ...editData, notes: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '20px', padding: '18px', fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
+                    : <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '20px', color: '#1e1b4b', fontSize: '1.05rem', fontWeight: 700, border: '1px solid #f1f5f9' }}>{selectedSession.notes || 'No notes for this session.'}</div>
                   }
                 </div>
 
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Homework</label>
+                  <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Homework</label>
                   {isAdmin
-                    ? <textarea rows={2} value={editData.homework} onChange={e => setEditData({ ...editData, homework: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '16px', fontSize: '1rem', color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
-                    : <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', color: '#1e1b4b', fontSize: '1rem' }}>{selectedSession.homework || 'No homework assigned.'}</div>
+                    ? <textarea rows={2} value={editData.homework} onChange={e => setEditData({ ...editData, homework: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '20px', padding: '18px', fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
+                    : <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '20px', color: '#1e1b4b', fontSize: '1.05rem', fontWeight: 700, border: '1px solid #f1f5f9' }}>{selectedSession.homework || 'No homework assigned.'}</div>
                   }
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '16px', background: '#f8fafc', borderRadius: '16px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '20px', background: '#f8fafc', borderRadius: '20px', border: '1px solid #f1f5f9' }}>
                   <div
                     onClick={() => isAdmin && setEditData({ ...editData, isHomeworkCompleted: !editData.isHomeworkCompleted })}
-                    style={{ width: '28px', height: '28px', borderRadius: '8px', border: '2px solid', borderColor: (isAdmin ? editData.isHomeworkCompleted : selectedSession.isHomeworkCompleted) ? '#10b981' : '#cbd5e1', background: (isAdmin ? editData.isHomeworkCompleted : selectedSession.isHomeworkCompleted) ? '#10b981' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', cursor: isAdmin ? 'pointer' : 'default' }}
+                    style={{ width: '32px', height: '32px', borderRadius: '10px', border: '2px solid', borderColor: (isAdmin ? editData.isHomeworkCompleted : selectedSession.isHomeworkCompleted) ? '#10b981' : '#cbd5e1', background: (isAdmin ? editData.isHomeworkCompleted : selectedSession.isHomeworkCompleted) ? '#10b981' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', cursor: isAdmin ? 'pointer' : 'default', transition: 'all 0.2s' }}
                   >
-                    {(isAdmin ? editData.isHomeworkCompleted : selectedSession.isHomeworkCompleted) && <Check size={16} />}
+                    {(isAdmin ? editData.isHomeworkCompleted : selectedSession.isHomeworkCompleted) && <Check size={18} strokeWidth={3} />}
                   </div>
-                  <span style={{ fontWeight: 800, color: '#1e1b4b' }}>Homework Completed</span>
+                  <span style={{ fontWeight: 900, fontSize: '1.05rem', color: '#1e1b4b' }}>Homework Completed</span>
                 </div>
 
                 {isAdmin && (
                   <div style={{ display: 'flex', gap: '12px', marginTop: '12px' }}>
                     <button 
+                      disabled={isSaving}
                       onClick={() => selectedSession.groupId ? setSaveChoiceOpen(selectedSession) : handleSaveDetails('single')} 
-                      style={{ flex: 1, backgroundColor: '#6366f1', color: '#fff', padding: '18px', borderRadius: '18px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                      style={{ flex: 1, backgroundColor: isSaving ? '#94a3b8' : '#6366f1', color: '#fff', padding: '18px', borderRadius: '18px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: isSaving ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
                     >
-                      <Save size={20} /> Save Changes
+                      <Save size={20} /> {isSaving ? 'Saving...' : 'Save Changes'}
                     </button>
-                    <button onClick={() => selectedSession.groupId ? setDeleteChoiceOpen(selectedSession) : handleDeleteSession(selectedSession, 'single')} style={{ padding: '18px', backgroundColor: '#fff1f2', color: '#f43f5e', borderRadius: '18px', border: 'none', cursor: 'pointer' }}>
+                    <button disabled={isSaving} onClick={() => selectedSession.groupId ? setDeleteChoiceOpen(selectedSession) : handleDeleteSession(selectedSession, 'single')} style={{ padding: '18px', backgroundColor: '#fff1f2', color: '#f43f5e', borderRadius: '18px', border: 'none', cursor: isSaving ? 'not-allowed' : 'pointer' }}>
                       <Trash2 size={20} />
                     </button>
                   </div>

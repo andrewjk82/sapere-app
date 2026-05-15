@@ -2,30 +2,34 @@
    Mobile User Menu (Capsule)
    ========================================================================== */
 .mobile-user-capsule {
-  display: none; /* Hidden by default on desktop */
+  display: flex !important;
   position: fixed !important;
-  top: 20px !important;
-  left: auto !important;
-  right: 20px !important;
+  top: 16px !important;
+  right: 16px !important;
   z-index: 2147483647 !important;
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   padding: 6px !important;
   border-radius: 999px !important;
-  border: 1px solid rgba(167, 139, 250, 0.4) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(167, 139, 250, 0.3) !important;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 8px !important;
   pointer-events: auto !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .mobile-user-capsule__avatar {
-  width: 38px !important;
-  height: 38px !important;
+  width: 36px !important;
+  height: 36px !important;
   border-radius: 50% !important;
   overflow: hidden !important;
-  border: 1px solid rgba(0,0,0,0.05) !important;
+  border: 2px solid #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
 
 .mobile-user-capsule__avatar img {
@@ -36,8 +40,8 @@
 
 .mobile-user-capsule__divider {
   width: 1px !important;
-  height: 22px !important;
-  background: rgba(0, 0, 0, 0.1) !important;
+  height: 20px !important;
+  background: rgba(167, 139, 250, 0.2) !important;
 }
 
 .mobile-user-capsule__logout,
@@ -48,9 +52,17 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 38px !important;
-  height: 38px !important;
+  width: 36px !important;
+  height: 36px !important;
   cursor: pointer !important;
+  border-radius: 50% !important;
+  transition: background 0.2s ease !important;
+}
+
+.mobile-user-capsule__logout:active,
+.mobile-user-capsule__notif:active {
+  background: rgba(99, 102, 241, 0.1) !important;
+  transform: scale(0.9) !important;
 }
 
 .mobile-user-capsule__notif {
@@ -59,8 +71,8 @@
 
 .mobile-user-capsule__badge {
   position: absolute !important;
-  top: 6px !important;
-  right: 6px !important;
+  top: 4px !important;
+  right: 4px !important;
   width: 10px !important;
   height: 10px !important;
   background: #ef4444 !important;
@@ -69,19 +81,35 @@
   box-shadow: 0 0 10px rgba(239, 68, 68, 0.4) !important;
 }
 
+/* Version Tag for Mobile */
+.mobile-user-capsule__version {
+  position: fixed !important;
+  top: 64px !important; /* Below the capsule */
+  right: 24px !important;
+  font-size: 0.65rem !important;
+  font-weight: 800 !important;
+  color: #8b5cf6 !important;
+  opacity: 0.6 !important;
+  letter-spacing: 0.05em !important;
+  z-index: 2147483646 !important;
+  pointer-events: none !important;
+  text-transform: uppercase !important;
+}
+
 .notif-dropdown {
   position: fixed !important;
-  top: 80px !important;
+  top: 72px !important;
   left: auto !important;
-  right: 20px !important;
-  width: 320px !important;
-  max-height: 450px !important;
-  background: rgba(255, 255, 255, 0.98) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  border-radius: 24px !important;
-  border: 1px solid rgba(167, 139, 250, 0.3) !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15) !important;
+  right: 16px !important;
+  width: calc(100vw - 32px) !important;
+  max-width: 360px !important;
+  max-height: 500px !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(167, 139, 250, 0.2) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
   overflow: hidden !important;
   z-index: 2147483646 !important;
   display: flex !important;
@@ -89,22 +117,23 @@
 }
 
 .notif-header {
-  padding: 18px 24px !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
-  font-weight: 700 !important;
-  color: #1e293b !important;
-  font-size: 0.95rem !important;
+  padding: 20px 24px !important;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.1) !important;
+  font-weight: 800 !important;
+  color: #1e1b4b !important;
+  font-size: 1rem !important;
+  letter-spacing: -0.01em !important;
 }
 
 .notif-list {
   overflow-y: auto !important;
-  padding: 10px !important;
+  padding: 8px !important;
 }
 
 .notif-item {
-  padding: 12px 16px !important;
-  border-radius: 16px !important;
-  margin-bottom: 6px !important;
+  padding: 16px 20px !important;
+  border-radius: 20px !important;
+  margin-bottom: 4px !important;
   transition: all 0.2s ease !important;
   cursor: pointer !important;
 }
@@ -115,36 +144,32 @@
 
 .notif-item--unread {
   background: rgba(99, 102, 241, 0.03) !important;
+  border-left: 3px solid #6366f1 !important;
 }
 
 .notif-item__title {
-  font-weight: 600 !important;
-  font-size: 0.85rem !important;
-  color: #1e293b !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  color: #1e1b4b !important;
   margin-bottom: 4px !important;
 }
 
 .notif-item__body {
-  font-size: 0.75rem !important;
-  color: #64748b !important;
-  line-height: 1.4 !important;
+  font-size: 0.8rem !important;
+  color: #475569 !important;
+  line-height: 1.5 !important;
 }
 
 .notif-item__time {
-  font-size: 0.65rem !important;
+  font-size: 0.7rem !important;
   color: #94a3b8 !important;
-  margin-top: 6px !important;
+  margin-top: 8px !important;
 }
 
 .notif-empty {
-  padding: 40px 20px !important;
+  padding: 60px 20px !important;
   text-align: center !important;
   color: #94a3b8 !important;
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 
-@media (max-width: 1024px) {
-  .mobile-user-capsule {
-    display: flex !important;
-  }
-}

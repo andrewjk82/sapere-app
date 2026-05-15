@@ -15,6 +15,7 @@ import {
 import { db } from "../firebase/config";
 import { upsertManualStudentLeaderboard, removeFromLeaderboard } from "./leaderboardService";
 import { localCache } from "./localCacheService";
+import { buildAvatarUrl, buildDisplayName } from "../utils/avatarUtils";
 
 const COLLECTION_NAME = "students";
 const STUDENT_CACHE_VERSION = 2;
@@ -65,7 +66,24 @@ const getStudentsMetaId = (tutorId, isAdmin) =>
 const metaVersionOf = (data) =>
   Number(data?.version || data?.updatedAt?.toMillis?.() || data?.updatedAtMs || 0);
 
+// In-memory cache: avoids the sync_meta Firestore read on rapid successive calls.
+// Invalidated on any write operation (add/update/delete/touch).
+const MEM_CACHE_TTL_MS = 30_000;
+const memCache = new Map();
+const memGet = (key) => {
+  const entry = memCache.get(key);
+  if (!entry || Date.now() > entry.expiresAt) { memCache.delete(key); return null; }
+  return entry.data;
+};
+const memSet = (key, data) => memCache.set(key, { data, expiresAt: Date.now() + MEM_CACHE_TTL_MS });
+const memInvalidate = (tutorId) => {
+  memCache.delete(getStudentsCacheKey(tutorId, false));
+  memCache.delete(getStudentsCacheKey(tutorId, true));
+  memCache.delete(getStudentsCacheKey(null, true));
+};
+
 export const touchStudentsSyncMeta = async (tutorId, isAdmin = false) => {
+  memInvalidate(tutorId);
   const metaId = getStudentsMetaId(tutorId, isAdmin);
   await setDoc(doc(db, "sync_meta", metaId), {
     version: Date.now(),
@@ -94,6 +112,7 @@ export const studentService = {
       } catch (lbErr) {
         console.warn('leaderboard addStudent failed (non-fatal):', lbErr.code);
       }
+      memInvalidate(tutorId);
       await touchStudentsSyncMeta(tutorId, false).catch(() => {});
       await touchStudentsSyncMeta(tutorId, true).catch(() => {});
 
@@ -107,11 +126,17 @@ export const studentService = {
   // 학생 목록 수동 가져오기 (1회성)
   async getStudents(tutorId, isAdmin = false) {
     const cacheKey = getStudentsCacheKey(tutorId, isAdmin);
+
+    // Fast path: in-memory hit (skips even the sync_meta Firestore read)
+    const mem = memGet(cacheKey);
+    if (mem) return mem;
+
     const cached = localCache.get(cacheKey);
     try {
       const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
       const remoteVersion = metaVersionOf(metaSnap.data());
       if (cached?.students && cached?.version === remoteVersion && remoteVersion > 0) {
+        memSet(cacheKey, cached.students);
         return cached.students;
       }
 
@@ -138,17 +163,14 @@ export const studentService = {
             data.role !== 'admin' && 
             data.id !== tutorId
           )
-          .map(data => {
-            const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
-            return {
-              ...data,
-              source: 'registered',
-              name: data.name || data.displayName || `${data.firstName || ''} ${data.lastName || ''}`.trim() || 'Student',
-              avatarUrl: data.avatarUrl || data.dreamImageUrl || fallbackAvatar,
-              level: data.assignedYear?.[0] || data.year || data.level || "Year 11",
-              subject: data.assignedCourse?.[0] || data.subject || "Maths"
-            };
-          });
+          .map(data => ({
+            ...data,
+            source: 'registered',
+            name: buildDisplayName(data),
+            avatarUrl: buildAvatarUrl(data, data.email || data.id),
+            level: data.assignedYear?.[0] || data.year || data.level || "Year 11",
+            subject: data.assignedCourse?.[0] || data.subject || "Maths",
+          }));
       }
 
       const students = mergeDuplicateStudentRecords(manualStudents, registeredStudents);
@@ -159,11 +181,8 @@ export const studentService = {
           updatedAt: serverTimestamp(),
         }, { merge: true }).catch(() => {});
       }
-      localCache.set(cacheKey, {
-        version,
-        savedAt: Date.now(),
-        students,
-      });
+      memSet(cacheKey, students);
+      localCache.set(cacheKey, { version, savedAt: Date.now(), students });
       return students;
     } catch (error) {
       if (cached?.students) return cached.students;
@@ -223,7 +242,6 @@ export const studentService = {
               data.id !== tutorId
             )
             .map(data => {
-              const fallbackAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(data.email || data.id)}`;
               const rawYear = data.level || data.year || "Year ?";
               const formattedYear = /^\d+$/.test(rawYear.toString().trim()) ? `Year ${rawYear.toString().trim()}` : rawYear;
               let displaySubject = data.subject;
@@ -236,12 +254,12 @@ export const studentService = {
                 ...data,
                 id: data.id,
                 source: 'registered',
-                name: data.name || data.displayName || (data.firstName ? `${data.firstName} ${data.lastName || ''}`.trim() : data.email),
+                name: buildDisplayName(data),
                 level: formattedYear,
                 subject: displaySubject,
                 status: "Active",
                 email: data.email,
-                avatarUrl: data.avatarUrl || fallbackAvatar,
+                avatarUrl: buildAvatarUrl(data, data.email || data.id),
               };
             });
           localCache.set(getStudentsCacheKey(tutorId, isAdmin), {

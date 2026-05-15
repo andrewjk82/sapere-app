@@ -32,6 +32,9 @@ import ChallengeResultView from './challenge/ChallengeResultView';
 import {
   CHALLENGE_YEAR,
   CHALLENGE_BLUEPRINT,
+  CHALLENGE_CHAPTER_ID,
+  CALC_ENGINE_VERSION,
+  MAX_HISTORY_PER_TYPE,
   getChallengeBootCacheKey,
   getChallengeBootMetaId,
   getManualQuestionCacheKey,
@@ -50,7 +53,12 @@ import {
   createSessionSeed,
   correctQuestionAnswer,
   getEarnedXp,
-  getChallengeMaxXp
+  getChallengeMaxXp,
+  normalizeMix,
+  formatHistoryDate,
+  getOptions,
+  getOptionText,
+  getOptionImage,
 } from '../utils/challengeUtils';
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
@@ -99,6 +107,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const answerInputRef = useRef(null);
   const sessionReviewCountRef = useRef(0);
   const sessionReportCountRef = useRef(0);
+  // Always-current ref so the anti-cheat effect doesn't capture a stale finishQuiz closure.
+  const finishQuizRef = useRef(null);
 
   const resetSessionAttentionCounts = () => {
     sessionReviewCountRef.current = 0;
@@ -113,15 +123,28 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     sessionReportCountRef.current += 1;
   };
 
+  // window.innerWidth is read on every render intentionally — no React dep exists for resize.
+  // Memoizing these with [] would freeze them at mount time, which is worse.
   const viewportWidth = window.innerWidth;
   const isMobile = viewportWidth < 768;
   const isTabletCanvasLayout = viewportWidth >= 768 && viewportWidth < 1100;
-  const currentQuestion = questions[currentIdx] || null;
-  const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
+
+  const currentQuestion = useMemo(() => questions[currentIdx] || null, [questions, currentIdx]);
+
+  const assignedYears = useMemo(
+    () => Array.isArray(studentProfile?.assignedYear)
+      ? studentProfile.assignedYear
+      : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR],
+    [studentProfile?.assignedYear, studentProfile?.year]
+  );
   const assignedYear = assignedYears[0];
-  const isYear10OrAbove = assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 10);
+  const isYear10OrAbove = useMemo(
+    () => assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 10),
+    [assignedYear]
+  );
+
   const showSplitScreen = !isMobile && Boolean(currentQuestion) && (
-    currentQuestion.type === 'graph_sketch' ||
+    currentQuestion?.type === 'graph_sketch' ||
     isYear10OrAbove ||
     studentProfile?.seniorCanvasEnabled === true
   );
@@ -129,11 +152,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const getQuestionCount = (type) => type === 'calc' ? (studentProfile?.calcQuestionCount || 10) : (studentProfile?.dailyQuestionCount || 10);
   const TOTAL_QUESTIONS = questions.length || getQuestionCount(challengeType);
-  // Each sub-question is worth 1 point; regular questions are worth 1 point
-  const totalPossibleScore = questions.reduce((acc, q) => {
-    const subCount = Array.isArray(q?.subQuestions) ? q.subQuestions.length : 0;
-    return acc + (subCount > 0 ? subCount : 1);
-  }, 0) || TOTAL_QUESTIONS;
+
+  // Memoize: each sub-question is worth 1 point; regular questions are worth 1 point
+  const totalPossibleScore = useMemo(() => {
+    const sum = questions.reduce((acc, q) => {
+      const subCount = Array.isArray(q?.subQuestions) ? q.subQuestions.length : 0;
+      return acc + (subCount > 0 ? subCount : 1);
+    }, 0);
+    return sum || TOTAL_QUESTIONS;
+  }, [questions, TOTAL_QUESTIONS]);
+
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
 
 
@@ -251,10 +279,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             nextBoot.chapterProgress = progressSnap.exists() ? progressSnap.data() : null;
           }
           setChapterProgress(nextBoot.chapterProgress);
-          localCache.set(cacheKey, { ...nextBoot, savedAt: Date.now() });
+          // Merge only profile/progress into the CURRENT cache so that any
+          // reset status already applied by the onSnapshot listener is preserved.
+          const latestCache = localCache.get(cacheKey) || {};
+          localCache.set(cacheKey, { ...latestCache, studentProfile: nextBoot.studentProfile, chapterProgress: nextBoot.chapterProgress, savedAt: Date.now() });
         } catch (e) {
           console.warn('progress meta fetch failed (non-fatal):', e?.code || e);
-          localCache.set(cacheKey, { ...nextBoot, savedAt: Date.now() });
+          const latestCache = localCache.get(cacheKey) || {};
+          localCache.set(cacheKey, { ...latestCache, studentProfile: nextBoot.studentProfile, chapterProgress: nextBoot.chapterProgress, savedAt: Date.now() });
         }
       } catch (err) {
         console.error("Error fetching challenge data:", err);
@@ -309,12 +341,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const cachedCalcResetAt = currentCache.calcResetAt || 0;
         const hasNewerDailyReset = serverDailyResetTime > cachedDailyResetAt;
         const hasNewerCalcReset = serverCalcResetTime > cachedCalcResetAt;
+        // The teacher reset writes in two steps: setDoc (adds resetAt timestamp) then updateDoc
+        // (sets status.calc = 'open'). The first snapshot caches the timestamp so the second
+        // snapshot sees serverCalcResetTime === cachedCalcResetAt → hasNewerCalcReset = false,
+        // which would incorrectly keep the local 'abandoned' status. We treat a matching non-zero
+        // reset timestamp as "this reset was acknowledged — trust the server's current status."
+        const dailyResetAlreadyApplied = serverDailyResetTime > 0 && serverDailyResetTime === cachedDailyResetAt;
+        const calcResetAlreadyApplied = serverCalcResetTime > 0 && serverCalcResetTime === cachedCalcResetAt;
 
-        const finalDailyStatus = (serverDaily === 'open' && (currentCache.dailyStatus === 'completed' || currentCache.dailyStatus === 'abandoned') && !hasNewerDailyReset)
+        const finalDailyStatus = (serverDaily === 'open' && (currentCache.dailyStatus === 'completed' || currentCache.dailyStatus === 'abandoned') && !hasNewerDailyReset && !dailyResetAlreadyApplied)
           ? (currentCache.dailyStatus || 'open')
           : serverDaily;
 
-        const finalCalcStatus = (serverCalc === 'open' && (currentCache.calcStatus === 'completed' || currentCache.calcStatus === 'abandoned') && !hasNewerCalcReset)
+        const finalCalcStatus = (serverCalc === 'open' && (currentCache.calcStatus === 'completed' || currentCache.calcStatus === 'abandoned') && !hasNewerCalcReset && !calcResetAlreadyApplied)
           ? (currentCache.calcStatus || 'open')
           : serverCalc;
 
@@ -758,16 +797,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setTimeout(() => {
         if (document.visibilityState === 'hidden' || !document.hasFocus()) {
           showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
-          finishQuiz(true); 
+          finishQuizRef.current?.(true);
         }
       }, 100);
     };
 
     window.addEventListener('blur', handleCheatingAttempt);
     document.addEventListener('visibilitychange', handleCheatingAttempt);
-    
+
     const handleImmediateTermination = () => {
-      finishQuiz(true);
+      finishQuizRef.current?.(true);
     };
     window.addEventListener('pagehide', handleImmediateTermination);
 
@@ -1128,7 +1167,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         setAnswerResults(['abandoned']);
       }
       setStep('result');
-      if (setIsLocked) setIsLocked(false);
+      // Keep isLocked=true until the student dismisses the result screen.
+      // Unlocking here would let the auto-update effect fire immediately,
+      // causing the result screen to disappear after ~3 seconds.
 
       if (user?.uid) {
         const now = new Date();
@@ -1444,6 +1485,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setStep('result');
     }
   };
+  // Keep ref current so the anti-cheat effect always calls the latest finishQuiz.
+  finishQuizRef.current = finishQuiz;
 
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
@@ -1833,10 +1876,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             challengeBlueprint={CHALLENGE_BLUEPRINT}
             hasCalculationTest={hasCalculationTest}
             onReviewAnswers={(record) => {
+              if (setIsLocked) setIsLocked(false);
               setSelectedChallenge(record);
               setViewMode('history');
             }}
-            onBack={onBack}
+            onBack={() => {
+              if (setIsLocked) setIsLocked(false);
+              onBack();
+            }}
           />
         )}
       </AnimatePresence>

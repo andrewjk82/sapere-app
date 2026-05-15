@@ -24,6 +24,7 @@ import { doc, onSnapshot, query, collection, orderBy, limit, updateDoc } from 'f
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
+import { getChallengeBootCacheKey } from './utils/challengeUtils';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -55,8 +56,6 @@ const isStandaloneAppDisplay = () => {
     || window.navigator?.standalone === true;
 };
 
-const CHALLENGE_BOOT_CACHE_VERSION = 1;
-const getChallengeBootCacheKey = (uid) => `challenge-boot:v${CHALLENGE_BOOT_CACHE_VERSION}:${uid}`;
 const isTodayDateKey = (dateKey) => dateKey === new Date().toLocaleDateString('en-CA');
 
 const getTimeGreeting = () => {
@@ -254,14 +253,19 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!newVersionAvailable || !cloudAppVersion || isLocked || !isIOSStandaloneApp()) return undefined;
+    // Auto-update fires once when a new version is detected — NOT on isLocked changes.
+    // Removing isLocked from deps prevents the app from reloading right after a quiz
+    // ends (which made the result screen disappear after ~1 second).
+    if (!newVersionAvailable || !cloudAppVersion || !isIOSStandaloneApp()) return undefined;
+    if (isLocked) return undefined; // still skip if quiz is active, but won't re-fire on unlock
     const updateKey = `sapere-ios-auto-update-${cloudAppVersion}`;
     if (sessionStorage.getItem(updateKey)) return undefined;
     sessionStorage.setItem(updateKey, '1');
     showToast('A new version is ready. Updating now...', 'info', 2500);
-    const timer = window.setTimeout(handleUpdateApp, 1200);
+    const timer = window.setTimeout(handleUpdateApp, 3000);
     return () => window.clearTimeout(timer);
-  }, [cloudAppVersion, handleUpdateApp, isLocked, newVersionAvailable, showToast]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cloudAppVersion, handleUpdateApp, newVersionAvailable, showToast]);
   
   // Request notification permission on login
   useEffect(() => {
@@ -310,13 +314,6 @@ function App() {
     }
   });
 
-  // Only show mobile capsule on screens ≤1024px
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1024);
-  useEffect(() => {
-    const handleResize = () => setIsMobileView(window.innerWidth <= 1024);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     const standaloneQuery = window.matchMedia?.('(display-mode: standalone)');
@@ -909,7 +906,7 @@ function App() {
         students={students}
       />
 
-      {isMobileView && createPortal(
+      {createPortal(
         <>
           <motion.div 
             className="mobile-user-capsule"
@@ -1030,8 +1027,6 @@ function App() {
           >
             v{CURRENT_APP_VERSION}
           </motion.div>
-
-
 
           <AnimatePresence>
             {showNotifs && (

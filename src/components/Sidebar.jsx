@@ -114,25 +114,75 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked }) => {
         <SidebarItem icon={Settings} label="Settings" active={activeTab === 'Settings'} onClick={() => setActiveTab('Settings')} disabled={isLocked} />
       </nav>
 
-      {/* Only render footer on desktop — on mobile the capsule in App.jsx handles avatar/logout */}
       {!isMobile && (
         <div className="app-sidebar__footer">
-          <div className="app-panel app-sidebar__profile" style={{ padding: '12px' }}>
+          <div className="app-panel app-sidebar__profile" style={{ 
+            padding: '12px', 
+            background: 'rgba(255, 255, 255, 0.7)',
+            border: '1px solid rgba(167, 139, 250, 0.15)',
+            marginBottom: '10px'
+          }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
-              <div className="app-avatar clickable-avatar" onClick={() => setAvatarOpen(true)} role="button" tabIndex={0} style={{ width: '42px', height: '42px' }}>
+              <div 
+                className="app-avatar clickable-avatar" 
+                onClick={() => setAvatarOpen(true)} 
+                role="button" 
+                tabIndex={0} 
+                style={{ 
+                  width: '42px', 
+                  height: '42px',
+                  border: '2px solid #fff',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                }}
+              >
                 <img src={avatarUrl} alt="Avatar" />
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ 
+                  fontSize: '0.85rem', 
+                  fontWeight: 800, 
+                  color: '#1e1b4b',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis'
+                }}>
+                  {profile?.firstName || user?.displayName?.split(' ')[0] || 'User'}
+                </div>
+                <div style={{ fontSize: '0.65rem', color: '#8b5cf6', fontWeight: 700 }}>
+                  {isAdmin ? 'Academic Admin' : (profile?.year || 'Student')}
+                </div>
               </div>
               <button 
                 onClick={logout}
                 className="app-icon-button"
-                style={{ width: '42px', height: '42px', borderRadius: '12px' }}
+                style={{ 
+                  width: '38px', 
+                  height: '38px', 
+                  borderRadius: '12px',
+                  background: 'rgba(167, 139, 250, 0.1)',
+                  color: '#6366f1',
+                  border: 'none',
+                  cursor: 'pointer',
+                  display: 'grid',
+                  placeItems: 'center'
+                }}
                 title="Sign Out"
               >
-                <LogOut size={18} />
+                <LogOut size={16} />
               </button>
             </div>
           </div>
-          <div className="app-sidebar__version">v{CURRENT_APP_VERSION}</div>
+          <div style={{ 
+            textAlign: 'center', 
+            fontSize: '0.65rem', 
+            fontWeight: 800, 
+            color: '#8b5cf6',
+            opacity: 0.5,
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase'
+          }}>
+            v{CURRENT_APP_VERSION}
+          </div>
         </div>
       )}
 

@@ -47,6 +47,8 @@ import { localCache } from "../services/localCacheService";
 import { useToast } from "../context/ToastContext";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import MathView, { toDisplayText } from "./MathView";
+import HscScoreChart from "./HscScoreChart";
+import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import "./student-detail.css";
 
 const ROLE_OPTIONS = [
@@ -170,8 +172,14 @@ const StudentDetail = ({ studentId, onBack }) => {
   const { showToast } = useToast();
   const [dailyYearsOpen, setDailyYearsOpen] = useState(false);
   const [editingTerm, setEditingTerm] = useState(null);
+  // registeredUid tracks the Firebase Auth UID (users/ collection) of the student.
+  // A student may be loaded as 'manual' (students/ collection) but when they actually
+  // log in and take challenges, results are written to users/{uid}/. We must read both.
+  const [registeredUid, setRegisteredUid] = useState(null);
   const activeStudentId = student?.id || studentId;
   const activeStudentCollection = student?.source === "manual" ? "students" : "users";
+  // The UID that challenge results are actually written to:
+  const challengeResultsUid = registeredUid || (activeStudentCollection === 'users' ? activeStudentId : null);
   const updateLocalStudentProfileCache = (patch = {}) => {
     if (!activeStudentId) return;
     const savedAt = Date.now();
@@ -470,6 +478,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         linkedManualStudentId: manualDoc.id,
         manualProfile: manualData,
       });
+      // This userId is a real Firebase Auth UID - save it so stats listener can read from users/
+      if (!cancelled) setRegisteredUid(userId);
       return true;
     };
 
@@ -501,6 +511,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     const unsub = onSnapshot(doc(db, "users", studentId), async (snap) => {
       if (snap.exists()) {
         const data = snap.data();
+        // If loading a registered user directly, track their UID immediately
+        if (!cancelled) setRegisteredUid(studentId);
         try {
           const linked = await syncRegisteredWithManual(snap.id, data);
           if (linked) return;
@@ -582,43 +594,75 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   useEffect(() => {
     if (!activeStudentId || !student?.id) return;
-    let daily = [];
-    let calc = [];
-    const updateStats = () =>
-      setDailyStats(sortStatsByDateDesc([...daily, ...calc]));
-    const unsubDaily = onSnapshot(
-      query(
-        collection(db, activeStudentCollection, activeStudentId, "daily_stats")
-      ),
-      (snap) => {
-        daily = snap.docs
-          .map((d) => ({
-            id: d.id,
-            statCollection: "daily_stats",
-            ...d.data(),
-          }));
-        updateStats();
-      },
-    );
-    const unsubCalc = onSnapshot(
-      query(
-        collection(db, activeStudentCollection, activeStudentId, "calc_stats")
-      ),
-      (snap) => {
-        calc = snap.docs
-          .map((d) => ({
-            id: d.id,
-            statCollection: "calc_stats",
-            ...d.data(),
-          }));
-        updateStats();
-      },
-    );
-    return () => {
-      unsubDaily();
-      unsubCalc();
+
+    // We must listen to both possible paths:
+    // 1. The teacher's view collection (manual: students/, registered: users/)
+    // 2. The actual Firebase Auth user's path (users/{registeredUid}) where challenge results are written
+    // These can differ when a manual student (students/) has a linked registered account (users/)
+
+    const statsMap = {}; // key: `${statCollection}:${id}` => stat object
+    const updateStats = () => {
+      const allStats = Object.values(statsMap);
+      setDailyStats(sortStatsByDateDesc(allStats));
     };
-  }, [activeStudentCollection, activeStudentId, student?.id]);
+
+    const buildListener = (colPath, statLabel) => {
+      const unsubDaily = onSnapshot(
+        collection(db, colPath, "daily_stats"),
+        (snap) => {
+          snap.docs.forEach((d) => {
+            const key = `daily_stats:${d.id}`;
+            statsMap[key] = { id: d.id, statCollection: "daily_stats", ...d.data() };
+          });
+          // Remove deleted docs from this source
+          const liveIds = new Set(snap.docs.map(d => `daily_stats:${d.id}`));
+          Object.keys(statsMap).forEach(k => {
+            if (k.startsWith('daily_stats:') && statsMap[k]._source === statLabel && !liveIds.has(k)) {
+              delete statsMap[k];
+            }
+          });
+          // Tag source for cleanup
+          snap.docs.forEach(d => { statsMap[`daily_stats:${d.id}`]._source = statLabel; });
+          updateStats();
+        },
+        (err) => console.warn(`daily_stats listener error (${statLabel}):`, err?.code)
+      );
+      const unsubCalc = onSnapshot(
+        collection(db, colPath, "calc_stats"),
+        (snap) => {
+          snap.docs.forEach((d) => {
+            const key = `calc_stats:${d.id}`;
+            statsMap[key] = { id: d.id, statCollection: "calc_stats", ...d.data() };
+          });
+          const liveIds = new Set(snap.docs.map(d => `calc_stats:${d.id}`));
+          Object.keys(statsMap).forEach(k => {
+            if (k.startsWith('calc_stats:') && statsMap[k]._source === statLabel && !liveIds.has(k)) {
+              delete statsMap[k];
+            }
+          });
+          snap.docs.forEach(d => { statsMap[`calc_stats:${d.id}`]._source = statLabel; });
+          updateStats();
+        },
+        (err) => console.warn(`calc_stats listener error (${statLabel}):`, err?.code)
+      );
+      return () => { unsubDaily(); unsubCalc(); };
+    };
+
+    const cleanups = [];
+
+    // Always listen to the primary collection path
+    cleanups.push(buildListener(`${activeStudentCollection}/${activeStudentId}`, 'primary'));
+
+    // If challengeResultsUid is different from activeStudentId (manual student with linked registered account),
+    // ALSO listen to users/{registeredUid} to capture challenge results written by the student app
+    if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
+      console.log(`[StudentDetail] Dual-listen: also watching users/${challengeResultsUid} for challenge results`);
+      cleanups.push(buildListener(`users/${challengeResultsUid}`, 'registered'));
+    }
+
+    return () => cleanups.forEach(fn => fn());
+  }, [activeStudentCollection, activeStudentId, student?.id, challengeResultsUid]);
+
 
   useEffect(() => {
     if (!selectedChallenge || !activeStudentId) return;
@@ -1133,8 +1177,34 @@ const StudentDetail = ({ studentId, onBack }) => {
       const statCollection =
         stat.statCollection ||
         (stat.challengeType === "calc" ? "calc_stats" : "daily_stats");
-      const statRef = doc(db, activeStudentCollection, activeStudentId, statCollection, stat.id);
+      const isDailyReset = statCollection !== "calc_stats" && stat.challengeType !== "calc";
+      const syncUid = challengeResultsUid || activeStudentId;
 
+      // Step 1: Write sync_meta FIRST so student app listener fires immediately.
+      // IMPORTANT: setDoc + merge:true does NOT support dot-notation nested field updates.
+      // "status.daily" would be saved as a literal top-level key, leaving the existing
+      // nested `status.daily: "completed"` field untouched. We must use updateDoc for
+      // the nested status field after ensuring the document exists with setDoc.
+      const syncMetaRef = doc(db, "sync_meta", getChallengeBootMetaId(syncUid, stat.id));
+      const resetField = isDailyReset ? "daily" : "calc";
+      const resetTimeField = isDailyReset ? "dailyResetAt" : "calcResetAt";
+
+      await setDoc(syncMetaRef, {
+        version: Date.now(),
+        statusVersion: Date.now(),
+        updatedAt: serverTimestamp(),
+        [resetTimeField]: new Date().toISOString(),
+        resetBy: "teacher",
+      }, { merge: true });
+
+      // updateDoc correctly interprets dot-notation as a nested field path,
+      // updating only status.daily (or status.calc) without clobbering the other.
+      await updateDoc(syncMetaRef, {
+        [`status.${resetField}`]: "open",
+      });
+
+
+      // Step 2: Delete stat docs from both possible paths
       let deletedWorkingOutCount = 0;
       try {
         deletedWorkingOutCount = await deleteWorkingOutForChallenge(stat);
@@ -1144,34 +1214,29 @@ const StudentDetail = ({ studentId, onBack }) => {
           workingOutError.code || workingOutError.message || workingOutError,
         );
       }
-
+      const statRef = doc(db, activeStudentCollection, activeStudentId, statCollection, stat.id);
       await deleteDoc(statRef);
-      const isDailyReset = statCollection !== "calc_stats" && stat.challengeType !== "calc";
-      if (isDailyReset && activeStudentCollection === "users") {
+      // Also delete from users/{registeredUid} if student used a different path
+      if (syncUid !== activeStudentId) {
+        await deleteDoc(doc(db, "users", syncUid, statCollection, stat.id)).catch(() => {});
+      }
+
+      // Step 3: Recreate daily assignment if needed
+      if (isDailyReset) {
         await createDailyAssignment({
-          uid: activeStudentId,
+          uid: syncUid,
           studentProfile: student,
           dateKey: stat.id,
           questionCount: student?.dailyQuestionCount || stat.questionCount || stat.total || 10,
           generatedBy: "teacher-reset",
           forceVersion: Date.now(),
-        });
+        }).catch(e => console.warn("createDailyAssignment skipped:", e));
       }
-      await setDoc(doc(db, "sync_meta", getChallengeBootMetaId(activeStudentId, stat.id)), {
-        version: Date.now(),
-        statusVersion: Date.now(),
-        updatedAt: serverTimestamp(),
-        status: {
-          [isDailyReset ? "daily" : "calc"]: "open",
-        },
-        resetAt: new Date().toISOString(),
-        resetBy: "teacher",
-      }, { merge: true });
 
-      // Update admin summary to reset "DONE" badge
+      // Step 4: Update admin summary
       await setDoc(doc(db, 'admin_daily_summary', stat.id), {
         students: {
-          [activeStudentId]: {
+          [syncUid]: {
             done: false,
             [isDailyReset ? 'dailyDone' : 'calcDone']: false,
             [isDailyReset ? 'dailyEnded' : 'calcEnded']: false,
@@ -1179,14 +1244,15 @@ const StudentDetail = ({ studentId, onBack }) => {
           }
         }
       }, { merge: true });
+
       fetch("/api/send-notif", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          studentId: activeStudentId,
+          studentId: syncUid,
           email: student.email || "",
           subject: `${isDailyReset ? "Daily Challenge" : "Basic Calculation"} reset`,
-          text: `Your teacher has reset your ${isDailyReset ? "Daily Challenge" : "Basic Calculation"} for ${stat.id}. Open notifications and tap Apply Reset to update this device.`,
+          text: `Your teacher has reset your ${isDailyReset ? "Daily Challenge" : "Basic Calculation"} for ${stat.id}.`,
           metadata: {
             type: "challenge_reset",
             challengeType: isDailyReset ? "daily" : "calc",
@@ -1195,8 +1261,8 @@ const StudentDetail = ({ studentId, onBack }) => {
           },
         }),
       }).catch((err) => console.warn("Challenge reset notification failed:", err));
-      const totals = await recalculateStudentTotals(activeStudentCollection);
 
+      const totals = await recalculateStudentTotals(activeStudentCollection);
       showToast(
         `Challenge reset. XP recalculated to ${totals.totalXP}. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
         "success",
@@ -1287,195 +1353,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
-  const renderHscChart = () => {
-    const points = [...hscRecords]
-      .filter((record) => record.examDate && Number(record.total) > 0)
-      .sort((a, b) => String(a.examDate).localeCompare(String(b.examDate)))
-      .map((record) => ({
-        ...record,
-        percentage: Number(record.percentage ?? ((Number(record.score) / Number(record.total)) * 100)),
-      }));
 
-    if (points.length === 0) {
-      return (
-        <div
-          style={{
-            height: "260px",
-            borderRadius: "24px",
-            background: "linear-gradient(135deg, #f8fafc, #eef2ff)",
-            border: "1px dashed #c7d2fe",
-            display: "grid",
-            placeItems: "center",
-            color: "#64748b",
-            fontWeight: 800,
-          }}
-        >
-          Add HSC results to build a score trend.
-        </div>
-      );
-    }
-
-    const width = 760;
-    const height = 280;
-    const padX = 54;
-    const padY = 42;
-    const minScore = Math.max(0, Math.min(...points.map((p) => p.percentage)) - 8);
-    const maxScore = Math.min(100, Math.max(...points.map((p) => p.percentage)) + 8);
-    const range = Math.max(1, maxScore - minScore);
-    const xFor = (idx) => points.length === 1
-      ? width / 2
-      : padX + (idx * (width - padX * 2)) / (points.length - 1);
-    const yFor = (value) => padY + ((maxScore - value) / range) * (height - padY * 2);
-    const path = points.map((point, idx) => `${idx === 0 ? "M" : "L"} ${xFor(idx)} ${yFor(point.percentage)}`).join(" ");
-    const fillPath = `${path} L ${xFor(points.length - 1)} ${height - padY} L ${xFor(0)} ${height - padY} Z`;
-    const latest = points[points.length - 1];
-
-    return (
-      <div
-        style={{
-          borderRadius: "28px",
-          background: "linear-gradient(135deg, #312e81, #4f46e5 52%, #7c3aed)",
-          padding: "24px",
-          color: "white",
-          boxShadow: "0 24px 60px rgba(79,70,229,0.22)",
-          overflow: "hidden",
-        }}
-      >
-        <div style={{ display: "flex", justifyContent: "space-between", gap: "16px", alignItems: "flex-start", marginBottom: "12px", flexWrap: "wrap" }}>
-          <div>
-            <div style={{ fontSize: "0.75rem", fontWeight: 900, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.72 }}>
-              HSC Score Trend
-            </div>
-            <div style={{ fontSize: "2.3rem", fontWeight: 950, lineHeight: 1, marginTop: "8px" }}>
-              {latest.percentage.toFixed(1)}%
-            </div>
-          </div>
-          <div style={{ textAlign: "right", fontWeight: 800, opacity: 0.9 }}>
-            <div>{latest.paper}</div>
-            <div style={{ fontSize: "0.8rem", opacity: 0.72 }}>{latest.examDate}</div>
-          </div>
-        </div>
-        <svg viewBox={`0 0 ${width} ${height}`} style={{ width: "100%", height: "auto", display: "block" }} role="img" aria-label="HSC score trend line chart">
-          <defs>
-            <linearGradient id="hscLine" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#fef3c7" />
-              <stop offset="55%" stopColor="#f9a8d4" />
-              <stop offset="100%" stopColor="#c4b5fd" />
-            </linearGradient>
-            <linearGradient id="hscFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#ffffff" stopOpacity="0.22" />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity="0.02" />
-            </linearGradient>
-          </defs>
-          {[0, 1, 2, 3].map((line) => {
-            const y = padY + (line * (height - padY * 2)) / 3;
-            const label = Math.round(maxScore - (line * range) / 3);
-            return (
-              <g key={line}>
-                <line x1={padX} x2={width - padX} y1={y} y2={y} stroke="rgba(255,255,255,0.16)" strokeWidth="1" />
-                <text x={20} y={y + 4} fill="rgba(255,255,255,0.58)" fontSize="12" fontWeight="800">{label}%</text>
-              </g>
-            );
-          })}
-          {points.length > 1 && <path d={fillPath} fill="url(#hscFill)" />}
-          <path d={path} fill="none" stroke="url(#hscLine)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
-          {points.map((point, idx) => (
-            <g key={point.id || `${point.examDate}-${idx}`}>
-              <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="8" fill="#ffffff" opacity="0.95" />
-              <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="4" fill="#7c3aed" />
-              <text x={xFor(idx)} y={height - 14} textAnchor="middle" fill="rgba(255,255,255,0.68)" fontSize="11" fontWeight="800">
-                {point.examDate.slice(5)}
-              </text>
-            </g>
-          ))}
-        </svg>
-      </div>
-    );
-  };
-
-  const renderHistoryCard = (stat) => (
-    <div
-      key={`${stat.statCollection || stat.challengeType || "daily"}-${stat.id}`}
-      onClick={() => setSelectedChallenge(stat)}
-      style={{
-        padding: "20px",
-        borderRadius: "20px",
-        border: "1px solid #f1f5f9",
-        background: "#f8fafc",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        cursor: "pointer",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-        <div
-          style={{
-            width: "44px",
-            height: "44px",
-            borderRadius: "12px",
-            background: "white",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "#6366f1",
-          }}
-        >
-          <Trophy size={20} />
-        </div>
-        <div>
-          <div style={{ fontWeight: 800 }}>
-            {stat.challengeType === "calc"
-              ? "Basic Calculation"
-              : "Daily Practice"}{" "}
-            • {stat.id}
-          </div>
-          <div style={{ fontSize: "0.75rem", color: "#64748b", display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px' }}>
-            <span>Score: {stat.score}/{stat.total}</span>
-            {stat.abandoned && (
-              <span style={{ 
-                fontSize: '0.6rem', 
-                fontWeight: 900, 
-                padding: '2px 6px', 
-                background: '#fee2e2', 
-                color: '#ef4444', 
-                borderRadius: '4px',
-                letterSpacing: '0.02em'
-              }}>ABANDONED</span>
-            )}
-            {!stat.completed && !stat.abandoned && (
-              <span style={{ 
-                fontSize: '0.6rem', 
-                fontWeight: 900, 
-                padding: '2px 6px', 
-                background: '#fef9c3', 
-                color: '#a16207', 
-                borderRadius: '4px',
-                letterSpacing: '0.02em'
-              }}>IN PROGRESS</span>
-            )}
-          </div>
-        </div>
-      </div>
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          handleResetChallenge(stat);
-        }}
-        style={{
-          padding: "8px 16px",
-          borderRadius: "10px",
-          background: "#fff1f2",
-          color: "#f43f5e",
-          border: 0,
-          fontWeight: 700,
-          cursor: "pointer",
-        }}
-      >
-        Reset
-      </button>
-    </div>
-  );
 
   if (loading)
     return (
@@ -1889,25 +1767,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                 </button>
                 <button
                   onClick={async () => {
-                    if (!window.confirm("이 학생의 오늘 챌린지 상태(완료, 중단)를 모두 초기화하여 다시 풀 수 있게 하시겠습니까?")) return;
-                    try {
-                      const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
-                      const bootId = `boot_${activeStudentId}_${todayStr}`;
-                      await setDoc(doc(db, "sync_meta", bootId), {
-                        version: Date.now(),
-                        statusVersion: Date.now(),
-                        updatedAt: serverTimestamp(),
-                        status: {
-                          daily: "open",
-                          calc: "open",
-                        },
-                        resetAt: new Date().toISOString(),
-                        resetBy: "teacher",
-                      }, { merge: true });
-                      showToast("오늘자 상태가 모두 초기화되었습니다! 학생에게 앱을 새로고침하라고 안내해 주세요.", "success");
-                    } catch (err) {
-                      showToast("초기화 실패: " + err.message, "error");
-                    }
+                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                    const syncUid = challengeResultsUid || activeStudentId;
+                    await handleResetChallenge({
+                      id: todayStr,
+                      studentId: syncUid,
+                      challengeType: "daily",
+                      statCollection: "daily_stats",
+                    });
                   }}
                   style={{
                     padding: "6px 12px",
@@ -1921,7 +1788,32 @@ const StudentDetail = ({ studentId, onBack }) => {
                     marginLeft: "8px",
                   }}
                 >
-                  Force Reset Today
+                  Force Reset Daily
+                </button>
+                <button
+                  onClick={async () => {
+                    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+                    const syncUid = challengeResultsUid || activeStudentId;
+                    await handleResetChallenge({
+                      id: todayStr,
+                      studentId: syncUid,
+                      challengeType: "calc",
+                      statCollection: "calc_stats",
+                    });
+                  }}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#fff1f2",
+                    color: "#e11d48",
+                    border: "1px solid #ffe4e6",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                    marginLeft: "8px",
+                  }}
+                >
+                  Force Reset Calc
                 </button>
               </div>
               <div style={{ display: "grid", gap: "12px" }}>
@@ -1955,7 +1847,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                   </div>
                 </div>
                 {dailyPracticeStats.length > 0 ? (
-                  dailyPracticeStats.map(renderHistoryCard)
+                  dailyPracticeStats.map((stat) => (
+                    <ChallengeHistoryCard
+                      key={`${stat.statCollection || stat.challengeType || 'daily'}-${stat.id}`}
+                      stat={stat}
+                      onSelect={setSelectedChallenge}
+                      onReset={handleResetChallenge}
+                    />
+                  ))
                 ) : (
                   <div
                     style={{
@@ -2002,7 +1901,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                   </div>
                 </div>
                 {calculationStats.length > 0 ? (
-                  calculationStats.map(renderHistoryCard)
+                  calculationStats.map((stat) => (
+                    <ChallengeHistoryCard
+                      key={`${stat.statCollection || stat.challengeType || 'calc'}-${stat.id}`}
+                      stat={stat}
+                      onSelect={setSelectedChallenge}
+                      onReset={handleResetChallenge}
+                    />
+                  ))
                 ) : (
                   <div
                     style={{
@@ -2490,7 +2396,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "hsc":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
-            {renderHscChart()}
+            <HscScoreChart hscRecords={hscRecords} />
 
             <div style={styles.card} className="profile-card-mobile">
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", marginBottom: "24px", flexWrap: "wrap" }}>

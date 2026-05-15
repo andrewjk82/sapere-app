@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
 import { getMessaging, getToken, isSupported, onMessage } from "firebase/messaging";
 
 const firebaseConfig = {
@@ -17,6 +17,17 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export const db = getFirestore(app);
+
+if (typeof window !== 'undefined') {
+  enableIndexedDbPersistence(db).catch((err) => {
+    if (err.code === 'failed-precondition') {
+      console.warn('Firestore persistence failed-precondition (multiple tabs open)');
+    } else if (err.code === 'unimplemented') {
+      console.warn('Firestore persistence unimplemented (browser not supported)');
+    }
+  });
+}
+
 const VAPID_KEY = 'BKWJEPa-4K08Rcrta2QX7iYT1PBpDUlgdsUXRLpBcA6ClzltUlu-yzWm427sezrUXfnI1Wz1ux6zF_ihgZ3Zuco';
 
 let messagingPromise = null;

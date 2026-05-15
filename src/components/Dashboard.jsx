@@ -24,6 +24,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [studentSessions, setStudentSessions] = useState([]);
+  const [sessionsLoading, setSessionsLoading] = useState(true);
   const [selectedViewSession, setSelectedViewSession] = useState(null);
   const [lastSync, setLastSync] = useState(null);
   const [isSyncing, setIsSyncing] = useState(false);
@@ -190,33 +191,20 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     if (!user?.uid || isAdmin) return undefined;
 
     const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-    const qEmail = query(collection(db, 'sessions'), where('studentEmail', '==', (user.email || '').toLowerCase()));
-
-    let resultsId = [];
-    let resultsEmail = [];
-
-    const mergeResults = () => {
-      const mergedMap = new Map();
-      [...resultsId, ...resultsEmail].forEach(doc => mergedMap.set(doc.id, doc));
-      const merged = Array.from(mergedMap.values());
-      setStudentSessions(merged);
-    };
 
     const unsubId = onSnapshot(qId, (snap) => {
-      resultsId = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      mergeResults();
-    }, (error) => console.warn("Dashboard qId error:", error.message));
-
-    const unsubEmail = onSnapshot(qEmail, (snap) => {
-      resultsEmail = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-      mergeResults();
-    }, (error) => console.warn("Dashboard qEmail error (expected for non-admins):", error.message));
+      const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      setStudentSessions(docs);
+      setSessionsLoading(false);
+    }, (error) => {
+      console.warn("Dashboard session fetch error:", error.message);
+      setSessionsLoading(false);
+    });
 
     return () => {
       unsubId();
-      unsubEmail();
     };
-  }, [user?.email, user?.uid, isAdmin]);
+  }, [user?.uid, isAdmin]);
 
   const { nextLesson, lastLesson } = useMemo(() => {
     const now = new Date();
@@ -308,15 +296,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       }
     }
   }, [user?.uid, profile, isAdmin, userName]);
-
-  const fallbackUrl = useMemo(() => {
-    if (user?.photoURL) return user.photoURL;
-    return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || 'sapere')}`;
-  }, [user?.photoURL, user?.email]);
-
-  const avatarUrl = profile?.avatarUrl || (profile?.avatarStyle && profile?.avatarSeed
-    ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
-    : fallbackUrl);
 
   const studentYear = profile?.assignedYear || profile?.year || 'Year 10';
   const studentCourse = profile?.assignedCourse || profile?.course || 'Advanced';
@@ -664,7 +643,12 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <Calendar size={120} />
                 </div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
-                {nextLesson ? (
+                {sessionsLoading ? (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.6 }}>
+                    <div className="app-spinner" style={{ width: '16px', height: '16px', border: '2px solid rgba(255,255,255,0.3)', borderTop: '2px solid #fff' }}></div>
+                    <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>Loading...</span>
+                  </div>
+                ) : nextLesson ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                     <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: 'white' }}>{normalizeSubjectLabel(nextLesson.subject)}</h4>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
@@ -696,7 +680,12 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 }}
               >
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Last Lesson</label>
-                {lastLesson ? (
+                {sessionsLoading ? (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.6 }}>
+                    <div className="app-spinner" style={{ width: '16px', height: '16px', border: '2px solid rgba(0,0,0,0.1)', borderTop: '2px solid #6366f1' }}></div>
+                    <span style={{ fontSize: '0.9rem', fontWeight: 600, color: '#94a3b8' }}>Loading...</span>
+                  </div>
+                ) : lastLesson ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                     <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{normalizeSubjectLabel(lastLesson.subject)}</h4>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 700, color: '#64748b' }}>
