@@ -1844,6 +1844,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   getChallengeMaxXp={getChallengeMaxXp}
                   hasCalculationTest={hasCalculationTest}
                   learningInsights={learningInsights}
+                  analytics={dailyStats.length > 0 ? generateLearningRecommendations(dailyStats, []) : null}
+                  recentHistory={history.slice(0, 5)}
                   isMobile={isMobile}
                 />
               )}
