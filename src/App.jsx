@@ -298,6 +298,10 @@ function App() {
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
   
+  const handleChallengeBack = useCallback(() => {
+    setActiveTab('Dashboard');
+  }, []);
+  
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
   const { scrollY } = useScroll();
@@ -694,9 +698,6 @@ function App() {
       );
     }
 
-    const handleChallengeBack = useCallback(() => {
-      setActiveTab('Dashboard');
-    }, []);
 
     switch (activeTab) {
       case 'Dashboard':
