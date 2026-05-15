@@ -420,11 +420,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   }, [user?.uid]);
 
   // ── Realtime history listener ──
-  // Active when viewMode === 'history' OR when step === 'result' (preload so
-  // the list is ready the moment the student clicks "Review Answers").
+  // Active when on start screen (for Performance Insights analytics),
+  // viewMode === 'history', OR when step === 'result'.
   useEffect(() => {
     if (!user?.uid) return;
-    if (viewMode !== 'history' && step !== 'result') return;
+    if (viewMode !== 'history' && step !== 'result' && step !== 'start') return;
 
     let dailyData = [];
     let calcData = [];
@@ -1874,7 +1874,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   getChallengeMaxXp={getChallengeMaxXp}
                   hasCalculationTest={hasCalculationTest}
                   learningInsights={learningInsights}
-                  analytics={dailyStats.length > 0 ? generateLearningRecommendations(dailyStats, []) : null}
+                  analytics={history.length > 0 ? generateLearningRecommendations(
+                    history.filter(s => s.statCollection !== 'calc_stats' && s.challengeType !== 'calc'),
+                    history.filter(s => s.statCollection === 'calc_stats' || s.challengeType === 'calc')
+                  ) : null}
                   recentHistory={history.slice(0, 5)}
                   isMobile={isMobile}
                 />
