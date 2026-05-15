@@ -100,6 +100,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [autoTransitionTimer, setAutoTransitionTimer] = useState(null);
   const canvasRef = useRef(null);
   const [isSubmittingCanvas, setIsSubmittingCanvas] = useState(false);
+  const quizStartTimeRef = useRef(null);
+  const [elapsedSeconds, setElapsedSeconds] = useState(null);
   const [countdown, setCountdown] = useState(0);
   const [challengeType, setChallengeType] = useState('daily');
   const [warnings, setWarnings] = useState(0);
@@ -683,6 +685,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       }
     }
 
+    quizStartTimeRef.current = Date.now();
+    setElapsedSeconds(null);
     setStep('quiz');
     setupQuestion(combinedQs[0]);
     if (setIsLocked) setIsLocked(true);
@@ -1195,6 +1199,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setIsFinishing(true);
       if (isAbandoned) {
         setAnswerResults(['abandoned']);
+      }
+      // Calculate elapsed time for result screen
+      if (quizStartTimeRef.current) {
+        setElapsedSeconds(Math.round((Date.now() - quizStartTimeRef.current) / 1000));
       }
       // Lock BEFORE setting step so the auto-update effect in App.jsx can't
       // fire a page reload in the narrow window between quiz end and result render.
@@ -1874,6 +1882,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   challengeType={challengeType}
                   challengeBlueprint={CHALLENGE_BLUEPRINT}
                   hasCalculationTest={hasCalculationTest}
+                  elapsedSeconds={elapsedSeconds}
+                  userName={studentProfile?.firstName || studentProfile?.displayName?.split(' ')?.[0] || ''}
                   onReviewAnswers={(record) => {
                     // Open the modal immediately. 
                     // We also switch viewMode behind the scenes so if they close it, 
