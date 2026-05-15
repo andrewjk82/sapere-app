@@ -518,7 +518,7 @@ function App() {
     // 1. Guard: Wait for both auth user and Firestore profile to be certain of isAdmin status
     if (!user || !profileLoaded) return;
 
-    // 2. Optimization: Regular students who haven’t completed setup yet shouldn’t trigger full fetches
+    // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches
     if (!hasProfile && !isAdmin) return;
 
     // Only show the full-page loading spinner on the very first load.
@@ -528,10 +528,10 @@ function App() {
     try {
       const data = await studentService.getStudents(user.uid, isAdmin, { forceRefresh });
       setStudents(data);
-      setLoadError(‘’);
+      setLoadError('');
     } catch (err) {
       setStudents([]);
-      setLoadError(‘We couldn\’t load your students. Please try again.’);
+      setLoadError('We couldn\'t load your students. Please try again.');
       console.error(err);
     } finally {
       if (!silent) setLoading(false);
