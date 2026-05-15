@@ -521,8 +521,9 @@ function App() {
     // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches
     if (!hasProfile && !isAdmin) return;
 
-    // Only show the full-page loading spinner on the very first load.
-    // Subsequent background refreshes (like after a quiz ends) should be silent.
+    // Show the full-page loading spinner only on non-silent calls.
+    // Silent calls (background refreshes after quiz etc.) skip the spinner
+    // but ALWAYS clear the loading state in finally so we don't get stuck.
     if (!silent) setLoading(true);
 
     try {
@@ -534,7 +535,7 @@ function App() {
       setLoadError('We couldn\'t load your students. Please try again.');
       console.error(err);
     } finally {
-      if (!silent) setLoading(false);
+      setLoading(false); // always clear — loading starts as true on mount
     }
   }, [user, profileLoaded, hasProfile, isAdmin]);
 
