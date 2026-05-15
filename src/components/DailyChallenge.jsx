@@ -1262,6 +1262,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             })
           : null;
 
+        // Strip answer results down to only the fields needed for learningInsights
+        // (topicId, topicCode, topicTitle, correct) so the main stat doc stays small.
+        const insightResults = slimAnswerResults.map(r => r ? {
+          correct: r.correct,
+          topicId: r.topicId || '',
+          topicCode: r.topicCode || '',
+          topicTitle: r.topicTitle || '',
+          type: r.type || '',
+          difficulty: r.difficulty || '',
+        } : null).filter(Boolean);
+
         const baseRecord = {
           completed: !isAbandoned,
           abandoned: isAbandoned,
@@ -1282,6 +1293,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           chapterStats,
           difficultyMixBefore: normalizeMix(chapterProgress?.difficultyMix),
           difficultyMixAfter: nextDifficultyMix,
+          answerResults: insightResults, // slim results for Performance Insights
         };
         const record = challengeType === 'calc'
           ? {
