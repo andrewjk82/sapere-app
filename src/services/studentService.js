@@ -124,14 +124,16 @@ export const studentService = {
   },
 
   // 학생 목록 수동 가져오기 (1회성)
-  async getStudents(tutorId, isAdmin = false) {
+  async getStudents(tutorId, isAdmin = false, { forceRefresh = false } = {}) {
     const cacheKey = getStudentsCacheKey(tutorId, isAdmin);
 
-    // Fast path: in-memory hit (skips even the sync_meta Firestore read)
-    const mem = memGet(cacheKey);
-    if (mem) return mem;
+    if (!forceRefresh) {
+      // Fast path: in-memory hit (skips even the sync_meta Firestore read)
+      const mem = memGet(cacheKey);
+      if (mem) return mem;
+    }
 
-    const cached = localCache.get(cacheKey);
+    const cached = forceRefresh ? null : localCache.get(cacheKey);
     try {
       const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
       const remoteVersion = metaVersionOf(metaSnap.data());
@@ -157,12 +159,12 @@ export const studentService = {
         const usersRef = collection(db, "users");
         const usersSnap = await getDocs(usersRef);
         registeredStudents = usersSnap.docs
-          .map(doc => ({ id: doc.id, ...doc.data() }))
-          .filter(data => 
-            data.email !== "andrewjk82@gmail.com" && 
-            data.role !== 'admin' && 
-            data.id !== tutorId
+          .filter(doc =>
+            doc.data().email !== "andrewjk82@gmail.com" &&
+            doc.data().role !== 'admin' &&
+            doc.id !== tutorId
           )
+          .map(doc => ({ id: doc.id, ...doc.data() }))
           .map(data => ({
             ...data,
             source: 'registered',

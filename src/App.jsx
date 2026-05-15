@@ -513,39 +513,42 @@ function App() {
     return () => window.clearTimeout(timer);
   }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
 
-  const handleRefreshStudents = useCallback(async (silent = false) => {
+  const hasProfile = Boolean(profile);
+  const handleRefreshStudents = useCallback(async (silent = false, forceRefresh = false) => {
     // 1. Guard: Wait for both auth user and Firestore profile to be certain of isAdmin status
     if (!user || !profileLoaded) return;
-    
-    // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches
-    if (!profile && !isAdmin) return;
+
+    // 2. Optimization: Regular students who haven’t completed setup yet shouldn’t trigger full fetches
+    if (!hasProfile && !isAdmin) return;
 
     // Only show the full-page loading spinner on the very first load.
     // Subsequent background refreshes (like after a quiz ends) should be silent.
-    const shouldShowSpinner = !silent && students.length === 0;
-    if (shouldShowSpinner) setLoading(true);
-    
+    if (!silent) setLoading(true);
+
     try {
-      const data = await studentService.getStudents(user.uid, isAdmin);
+      const data = await studentService.getStudents(user.uid, isAdmin, { forceRefresh });
       setStudents(data);
-      setLoadError('');
+      setLoadError(‘’);
     } catch (err) {
       setStudents([]);
-      setLoadError('We couldn’t load your students. Please try again.');
+      setLoadError(‘We couldn\’t load your students. Please try again.’);
       console.error(err);
     } finally {
-      if (shouldShowSpinner) setLoading(false);
+      if (!silent) setLoading(false);
     }
-  }, [user, profileLoaded, profile, isAdmin, students.length]);
+  }, [user, profileLoaded, hasProfile, isAdmin]);
 
 
   useEffect(() => {
     if (user) {
-      // Pass silent=true so that profile updates (e.g. after a quiz) 
-      // don't trigger the global loading spinner and unmount the active view.
       handleRefreshStudents(true);
     }
-  }, [user, isAdmin, handleRefreshStudents]);
+    // Intentionally omit handleRefreshStudents from deps: its identity changes when
+    // profileLoaded/hasProfile update, which would retrigger this effect and overwrite
+    // a forceRefresh Sync result with stale cached data.
+    // profileLoaded is included so non-admin students wait for profile before fetching.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user?.uid, isAdmin, profileLoaded]);
 
   const handleAddStudent = async () => {
     if (!newStudent.name || !newStudent.subject || !newStudent.email) {

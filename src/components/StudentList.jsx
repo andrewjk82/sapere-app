@@ -111,7 +111,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   const handleManualRefresh = async () => {
     setIsRefreshing(true);
     try {
-      await onRefreshStudents();
+      await onRefreshStudents(false, true);
     } catch (err) {
       console.error('Refresh failed:', err);
     } finally {
