@@ -1,7 +1,7 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 
-const EIGHT_PM_BATCH_SIZE = 50;
+const SIX_PM_BATCH_SIZE = 50;
 const CRON_STARTED_AT = Date.now();
 const CRON_SOFT_LIMIT_MS = 24_000;
 const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';
@@ -132,9 +132,9 @@ export default async function handler(req, res) {
     // PART 2: Daily Wrap-up (Tasks & Tomorrow's Schedule) - Runs in the evening.
     // Vercel daily crons can drift within the hour, so keep this window forgiving.
     // ══════════════════════════════════════════════════════════════════════
-    if (sydHour >= 19 && sydHour <= 21) {
+    if (sydHour >= 17 && sydHour <= 19) {
       logs.push(`[Cron] Evening wrap-up window reached. Processing queued reminders...`);
-      const queueResult = await processEightPmQueue({
+      const queueResult = await processSixPmQueue({
         db,
         transporter,
         todayStr,
@@ -146,7 +146,7 @@ export default async function handler(req, res) {
         normalizeSubjectLabel,
         force: req.query.force === 'true',
       });
-      logs.push(`[8PM Queue] ${queueResult.sentCount} sent this run, cursor=${queueResult.nextCursor}/${queueResult.totalCount}, complete=${queueResult.complete}.`);
+      logs.push(`[6PM Queue] ${queueResult.sentCount} sent this run, cursor=${queueResult.nextCursor}/${queueResult.totalCount}, complete=${queueResult.complete}.`);
       if (queueResult.complete) {
         await notifyAdminQueueComplete(db, transporter, todayStr, queueResult, logs);
       }
@@ -203,7 +203,7 @@ function dedupeSessions(sessions) {
   });
 }
 
-async function processEightPmQueue({
+async function processSixPmQueue({
   db,
   transporter,
   todayStr,
@@ -215,12 +215,12 @@ async function processEightPmQueue({
   normalizeSubjectLabel,
   force,
 }) {
-  const queueRef = db.collection('notification_queue_8pm').doc(todayStr);
+  const queueRef = db.collection('notification_queue_6pm').doc(todayStr);
   const queueSnap = await queueRef.get();
   let queue = queueSnap.exists ? queueSnap.data() : null;
 
   if (!queue || queue.status === 'failed') {
-    queue = await buildEightPmQueue({
+    queue = await buildSixPmQueue({
       db,
       queueRef,
       todayStr,
@@ -239,7 +239,7 @@ async function processEightPmQueue({
   let sentCount = 0;
 
   const batch = [];
-  while (cursor < items.length && batch.length < EIGHT_PM_BATCH_SIZE) {
+  while (cursor < items.length && batch.length < SIX_PM_BATCH_SIZE) {
     const item = items[cursor];
     cursor += 1;
     if (!item?.studentId || sentIds.has(item.studentId)) continue;
@@ -268,22 +268,22 @@ async function processEightPmQueue({
       }
 
       await db.collection('users').doc(item.studentId).set({
-        last8PMReminderDate: todayStr,
-        last8PMReminderClassIds: item.tomorrowClassIds || [],
-        last8PMReminderKey: item.reminderKey,
+        last6PMReminderDate: todayStr,
+        last6PMReminderClassIds: item.tomorrowClassIds || [],
+        last6PMReminderKey: item.reminderKey,
       }, { merge: true });
 
       sentIds.add(item.studentId);
       return {
         ok: true,
         item,
-        message: `8PM wrap-up sent to ${item.studentName} (email=${result.emailSent}, push=${result.pushSent})`,
+        message: `6PM wrap-up sent to ${item.studentName} (email=${result.emailSent}, push=${result.pushSent})`,
       };
     } catch (err) {
       return {
         ok: false,
         item,
-        message: `8PM wrap-up failed for ${item.studentName || item.studentId}: ${err.message}`,
+        message: `6PM wrap-up failed for ${item.studentName || item.studentId}: ${err.message}`,
       };
     }
   }));
@@ -291,7 +291,7 @@ async function processEightPmQueue({
   results.forEach((result) => {
     const value = result.status === 'fulfilled'
       ? result.value
-      : { ok: false, message: `8PM wrap-up failed unexpectedly: ${result.reason?.message || result.reason}` };
+      : { ok: false, message: `6PM wrap-up failed unexpectedly: ${result.reason?.message || result.reason}` };
     if (value.ok) sentCount += 1;
     logs.push(value.message);
   });
@@ -316,7 +316,7 @@ async function processEightPmQueue({
 }
 
 async function notifyAdminQueueComplete(db, transporter, todayStr, queueResult, logs) {
-  const queueRef = db.collection('notification_queue_8pm').doc(todayStr);
+  const queueRef = db.collection('notification_queue_6pm').doc(todayStr);
   const queueSnap = await queueRef.get();
   const queue = queueSnap.exists ? queueSnap.data() : {};
   if (queue.adminNotifiedAt) return;
@@ -324,7 +324,7 @@ async function notifyAdminQueueComplete(db, transporter, todayStr, queueResult, 
   const total = Number(queue.totalCount || queueResult.totalCount || 0);
   const sent = Number(queue.sentCount || queueResult.nextCursor || 0);
   const failed = Math.max(0, total - sent);
-  const title = `8PM reminder complete: ${sent}/${total}`;
+  const title = `6PM reminder complete: ${sent}/${total}`;
   const body = [
     `Date: ${todayStr}`,
     `Queued: ${total}`,
@@ -344,10 +344,10 @@ async function notifyAdminQueueComplete(db, transporter, todayStr, queueResult, 
   await queueRef.set({
     adminNotifiedAt: admin.firestore.FieldValue.serverTimestamp(),
   }, { merge: true });
-  logs.push(`[8PM Queue] Admin in-app summary notification saved (${sent}/${total}).`);
+  logs.push(`[6PM Queue] Admin in-app summary notification saved (${sent}/${total}).`);
 }
 
-async function buildEightPmQueue({
+async function buildSixPmQueue({
   db,
   queueRef,
   todayStr,
@@ -358,7 +358,7 @@ async function buildEightPmQueue({
   normalizeEmail,
   normalizeSubjectLabel,
 }) {
-  logs.push(`[8PM Queue] Building queue for ${todayStr}.`);
+  logs.push(`[6PM Queue] Building queue for ${todayStr}.`);
   await queueRef.set({
     status: 'building',
     cursor: 0,
@@ -388,7 +388,7 @@ async function buildEightPmQueue({
     }
   });
 
-  logs.push(`[8PM Queue] Found ${studentDocs.length} student profiles and ${tomorrowSessionsSnap.size} sessions for ${tomorrowStr}.`);
+  logs.push(`[6PM Queue] Found ${studentDocs.length} student profiles and ${tomorrowSessionsSnap.size} sessions for ${tomorrowStr}.`);
 
   const cleanupRef = db.collection('system_config').doc('stat_cleanup');
   cleanupRef.set({
@@ -425,7 +425,7 @@ async function buildEightPmQueue({
       `calc:${calcEnabled ? (calcDone ? 'done' : 'todo') : 'off'}`,
     ].join('|');
 
-    if (student.last8PMReminderKey === reminderKey) return null;
+    if (student.last6PMReminderKey === reminderKey) return null;
     if (tomorrowClasses.length === 0 && !hasUnfinishedTasks) return null;
 
     let body = `<h2 style="color: #4f46e5;">Hello, ${studentName}!</h2>`;
@@ -482,7 +482,7 @@ async function buildEightPmQueue({
   };
 
   await queueRef.set(queue, { merge: true });
-  logs.push(`[8PM Queue] Built ${items.length} queued reminders.`);
+  logs.push(`[6PM Queue] Built ${items.length} queued reminders.`);
   return queue;
 }
 
