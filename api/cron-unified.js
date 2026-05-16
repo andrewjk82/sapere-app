@@ -1,6 +1,6 @@
 import admin from 'firebase-admin';
+import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
-import { sendEmail } from './_lib/email.js';
 
 const SIX_PM_BATCH_SIZE = 50;
 const CRON_STARTED_AT = Date.now();
@@ -81,9 +81,13 @@ export default async function handler(req, res) {
       logs: [...logs],
     });
 
-    // Email is sent via Resend (see api/_lib/email.js). `transporter` is kept
-    // as null so existing function signatures stay unchanged.
-    const transporter = null;
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com', port: 465, secure: true,
+      pool: true,
+      maxConnections: 5,
+      maxMessages: 100,
+      auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS }
+    });
 
     // ══════════════════════════════════════════════════════════════════════
     // PART 1: 2-Hour Reminder
@@ -178,7 +182,8 @@ export default async function handler(req, res) {
               const report = renderWeeklyReportBody({ name, label: week.label, days: week.days, student, ...data });
               if (!report.hasData) return { skipped: true };
               if (email) {
-                await sendEmail({
+                await transporter.sendMail({
+                  from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
                   to: email,
                   subject: `[Sapere] ${report.subject}`,
                   html: buildEmailShell(report.subject, report.bodyHtml),
@@ -714,15 +719,17 @@ async function sendNotification(db, transporter, session, type, subject, body) {
   let pushError = null;
 
   if (studentEmail) {
-    const result = await sendEmail({
-      to: studentEmail,
-      subject: `[Sapere] ${subject}`,
-      html: buildEmailTemplate(subject, body),
-    });
-    emailSent = result.sent;
-    if (!result.sent) {
-      emailError = result.error;
-      console.error('Email fail:', result.error);
+    try {
+      await transporter.sendMail({
+        from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+        to: studentEmail,
+        subject: `[Sapere] ${subject}`,
+        html: buildEmailTemplate(subject, body)
+      });
+      emailSent = true;
+    } catch (e) { 
+      emailError = e.message;
+      console.error(`Email fail:`, e.message); 
     }
   } else {
     emailError = "No student email provided";

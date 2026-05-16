@@ -1,11 +1,11 @@
 import admin from 'firebase-admin';
+import nodemailer from 'nodemailer';
 import {
   getWeekRangeSydney,
   gatherStudentWeek,
   renderWeeklyReportBody,
   buildEmailShell,
 } from './_lib/weeklyReport.js';
-import { sendEmail } from './_lib/email.js';
 
 /**
  * On-demand weekly report — triggered by the teacher from a student's profile.
@@ -46,17 +46,25 @@ export default async function handler(req, res) {
     const data = await gatherStudentWeek(db, studentId, days, email);
     const { subject, bodyHtml } = renderWeeklyReportBody({ name, label, days, student, ...data });
 
-    // Send the email via Resend.
+    // Send the email.
     let emailSent = false;
     let emailError = null;
     if (email) {
-      const result = await sendEmail({
-        to: email,
-        subject: `[Sapere] ${subject}`,
-        html: buildEmailShell(subject, bodyHtml),
-      });
-      emailSent = result.sent;
-      emailError = result.error || null;
+      try {
+        const transporter = nodemailer.createTransport({
+          host: 'smtp.gmail.com', port: 465, secure: true,
+          auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
+        });
+        await transporter.sendMail({
+          from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+          to: email,
+          subject: `[Sapere] ${subject}`,
+          html: buildEmailShell(subject, bodyHtml),
+        });
+        emailSent = true;
+      } catch (e) {
+        emailError = e.message;
+      }
     } else {
       emailError = 'Student has no email address on file.';
     }
