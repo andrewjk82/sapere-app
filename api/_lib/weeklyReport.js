@@ -153,7 +153,10 @@ const C = {
 };
 
 const sectionLabel = (txt) =>
-  `<div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:${C.accent};margin:34px 0 14px;">${txt}</div>`;
+  `<div style="margin:36px 0 16px;">
+    <div style="font-size:11.5px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:${C.accent};">${txt}</div>
+    <div style="height:1px;background-color:${C.line};margin-top:10px;"></div>
+  </div>`;
 
 // Build a 7-column day grid (one value per cell).
 function dayGrid(days, byDate) {
@@ -201,6 +204,7 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
         <tr><td style="padding:15px 0;${idx < sessions.length - 1 ? `border-bottom:1px solid ${C.lineSoft};` : ''}">
           <div style="font-size:15px;font-weight:700;color:${C.ink};">${esc(ses.subject || 'Lesson')}</div>
           <div style="font-size:12px;font-weight:600;color:${C.muted};margin-top:3px;">${esc(fmtLessonDate(ses.date, ses.startTime))}</div>
+          ${ses.topicCovered ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#059669;">Today Covered</span><br>${esc(ses.topicCovered)}</div>` : ''}
           ${ses.notes ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:${C.muted};">Notes</span><br>${esc(ses.notes)}</div>` : ''}
           ${ses.homework ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:${C.accent};">Homework</span><br>${esc(ses.homework)}</div>` : ''}
         </td></tr>`).join('') +
