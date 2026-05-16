@@ -186,10 +186,18 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
   // ── Compute Curriculum Progress ──
   let curriculumHtml = '';
   try {
-    const rawYear = student.assignedYear || student.level || student.year || "Year 11";
-    const assignedYears = (Array.isArray(student.assignedYear)
+    let rawYears = Array.isArray(student.assignedYear)
       ? student.assignedYear
-      : [rawYear]).filter(y => typeof y === 'string' && y.startsWith('Year '));
+      : [student.assignedYear || student.level || student.year || "Year 11"];
+      
+    let assignedYears = [];
+    rawYears.forEach(y => {
+      if (!y) return;
+      let s = String(y).trim();
+      if (/^\d+$/.test(s)) assignedYears.push(`Year ${s}`);
+      else if (s.toLowerCase().startsWith('year ')) assignedYears.push(`Year ${s.substring(5).trim()}`);
+      else assignedYears.push(s);
+    });
 
     const rawCourse = student.assignedCourse || student.course || "Advanced";
     const assignedCourses = Array.isArray(student.assignedCourse)
@@ -246,8 +254,8 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
       const progressPct = Math.min(Math.round((completedInCurriculum.length / (chapters.length || 1)) * 100), 100);
 
       curriculumHtml = `
+        ${sectionLabel('Academic Progress')}
         <div style="background:#ffffff;border:1px solid #eef2ff;border-radius:20px;padding:22px 24px;margin-bottom:28px;box-shadow:0 8px 24px rgba(99,102,241,0.04);">
-          <div style="font-size:11.5px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:${C.muted};margin-bottom:16px;">Academic Progress</div>
           <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:12px;">
             <div>
               <div style="font-size:16px;font-weight:800;color:${C.ink};">Curriculum</div>
@@ -288,7 +296,18 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
         <tr><td style="padding:15px 0;${idx < sessions.length - 1 ? `border-bottom:1px solid ${C.lineSoft};` : ''}">
           <div style="font-size:15px;font-weight:700;color:${C.ink};">${esc(ses.subject || 'Lesson')}</div>
           <div style="font-size:12px;font-weight:600;color:${C.muted};margin-top:3px;">${esc(fmtLessonDate(ses.date, ses.startTime))}</div>
-          ${ses.topicCovered ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#059669;">Today Covered</span><br>${esc(ses.topicCovered)}</div>` : ''}
+          ${ses.topicCovered ? `
+          <div style="margin-top:14px;margin-bottom:6px;">
+            <div style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#94a3b8;margin-bottom:6px;">Today Covered</div>
+            <div style="background:#f8fafc;border:1px solid #f1f5f9;border-radius:12px;padding:12px 14px;">
+              ${ses.topicCovered.split('\n').filter(l => l.trim()).map((line, i, arr) => `
+                <div style="display:flex;align-items:flex-start;${i < arr.length - 1 ? 'margin-bottom:6px;' : ''}">
+                  <span style="font-size:14px;margin-right:8px;line-height:1.4;">✅</span>
+                  <span style="font-size:13.5px;font-weight:600;color:#0f172a;line-height:1.4;">${esc(line.trim())}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>` : ''}
           ${ses.notes ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:${C.muted};">Notes</span><br>${esc(ses.notes)}</div>` : ''}
           ${ses.homework ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:${C.accent};">Homework</span><br>${esc(ses.homework)}</div>` : ''}
         </td></tr>`).join('') +
@@ -324,8 +343,8 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
   const bodyHtml = `
     <p style="margin:0 0 3px;font-size:15px;font-weight:600;color:${C.ink};">Hi ${firstName},</p>
     <p style="margin:0 0 28px;font-size:14px;color:${C.sub};line-height:1.55;">Here is the learning summary for <strong style="color:${C.ink};">${esc(label)}</strong>.</p>
-    ${curriculumHtml}
     ${summary}
+    ${curriculumHtml}
     ${sectionLabel("This week's lessons")}
     ${lessonsHtml}
     ${sectionLabel('Challenge record')}
