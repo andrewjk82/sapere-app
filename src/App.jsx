@@ -1086,18 +1086,25 @@ function App() {
                   }}
                 />
                 {/* Centered modal */}
+                {/* Centering wrapper */}
+                <div style={{
+                  position: 'fixed',
+                  inset: 0,
+                  zIndex: 9999,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '16px',
+                  pointerEvents: 'none',
+                }}>
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.92, y: 24 }}
+                  initial={{ opacity: 0, scale: 0.92, y: 16 }}
                   animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.92, y: 24 }}
+                  exit={{ opacity: 0, scale: 0.92, y: 16 }}
                   transition={{ type: 'spring', stiffness: 340, damping: 28 }}
                   style={{
-                    position: 'fixed',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    zIndex: 9999,
-                    width: 'calc(100% - 32px)',
+                    pointerEvents: 'auto',
+                    width: '100%',
                     maxWidth: '460px',
                     maxHeight: '78vh',
                     background: 'linear-gradient(145deg, rgba(255,255,255,0.99) 0%, rgba(248,246,255,0.99) 100%)',
@@ -1278,6 +1285,7 @@ function App() {
                     )}
                   </div>
                 </motion.div>
+                </div>{/* end centering wrapper */}
               </>
             )}
           </AnimatePresence>
