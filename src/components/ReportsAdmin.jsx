@@ -335,11 +335,16 @@ const ReportsAdmin = () => {
       setPreviewQuestion(null);
     } catch (err) {
       console.error('Error restoring report credit:', err);
-      const message = err?.message === 'already-restored'
-        ? 'Credit was already restored for this report.'
-        : err?.message === 'answer-already-correct'
-          ? 'This answer is already marked correct.'
-          : 'Failed to restore credit. Please check the matching attempt and try again.';
+      const code = err?.message || 'unknown';
+      const KNOWN = {
+        'already-restored': 'Credit was already restored for this report.',
+        'answer-already-correct': 'This answer is already marked correct — nothing to restore.',
+        'stat-not-found': "The student's challenge record for this question could not be found. It may have been pruned or never saved.",
+        'result-not-found': 'This answer could not be located within the matched attempt. The detail snapshot may be missing.',
+        'score-already-full': "This attempt's score is already full — there is nothing left to restore.",
+      };
+      const message = KNOWN[code]
+        || `Failed to restore credit (${code}). Please check the matching attempt and try again.`;
       alert(message);
     } finally {
       setProcessingId(null);
