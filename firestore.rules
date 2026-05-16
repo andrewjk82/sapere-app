@@ -21,6 +21,14 @@ service cloud.firestore {
         allow read: if isAdmin();
         allow write: if isAdmin();
       }
+
+      // Stat subcollections (daily_stats, calc_stats, detail_snapshot, etc.)
+      // for manually-managed students — admin and the owning tutor.
+      match /{document=**} {
+        allow read, write: if isAdmin()
+          || (isSignedIn()
+            && get(/databases/$(database)/documents/students/$(studentId)).data.tutorId == request.auth.uid);
+      }
     }
 
     // Sessions (lesson sessions)

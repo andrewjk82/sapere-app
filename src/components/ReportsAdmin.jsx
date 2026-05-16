@@ -147,7 +147,16 @@ const ReportsAdmin = () => {
 
     for (const root of roots) {
       for (const statCollection of statCollections) {
-        const snap = await getDocs(collection(db, root, studentId, statCollection));
+        let snap;
+        try {
+          snap = await getDocs(collection(db, root, studentId, statCollection));
+        } catch (err) {
+          // e.g. students/{id}/daily_stats has no security rule → permission
+          // denied. Registered students keep their data under users/, so skip
+          // this root gracefully rather than aborting the whole lookup.
+          console.warn(`Skipping ${root}/${statCollection} for report match:`, err?.message);
+          continue;
+        }
         for (const statDoc of snap.docs) {
           const statData = statDoc.data();
           const statRef = doc(db, root, studentId, statCollection, statDoc.id);
