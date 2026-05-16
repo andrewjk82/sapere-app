@@ -7,7 +7,10 @@ import {
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { db } from '../../firebase/config';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp, doc, setDoc, increment } from 'firebase/firestore';
+
+// XP awarded for each Secret Note question solved correctly.
+const XP_PER_QUESTION = 5;
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
 import {
   MISTAKE_TAGS,
@@ -94,7 +97,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const [twin, setTwin] = useState(null);       // twin question object
   const [twinPrep, setTwinPrep] = useState(null);
   const [tag, setTag] = useState(null);         // mistake tag chosen this card
-  const [summary, setSummary] = useState({ graduated: 0, kept: 0 });
+  const [summary, setSummary] = useState({ graduated: 0, kept: 0, xp: 0 });
 
   // Teacher-review panel
   const [reviewOpen, setReviewOpen] = useState(false);
@@ -112,11 +115,34 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const isFeedback = phase === 'feedback' || phase === 'twinFeedback';
 
   // ── Actions ──────────────────────────────────────────────────────────────
+  // Reward effort: +5 XP for each Secret Note question solved correctly.
+  const awardXp = (amount) => {
+    if (!uid || !amount) return;
+    try {
+      setDoc(
+        doc(db, 'users', uid),
+        { totalXP: increment(amount), lastActive: new Date().toISOString() },
+        { merge: true },
+      ).catch((e) => console.warn('secret note XP award failed (non-fatal):', e));
+      setDoc(
+        doc(db, 'leaderboard', uid),
+        { totalXP: increment(amount), lastUpdated: serverTimestamp() },
+        { merge: true },
+      ).catch(() => {});
+    } catch (e) {
+      console.warn('secret note XP award failed (non-fatal):', e);
+    }
+  };
+
   const submitOriginal = (textVal, optText) => {
     const val = optText != null ? optText : textVal;
     const correct = norm(val) === norm(prep.correctText);
     const status = recordResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
+    if (correct) {
+      awardXp(XP_PER_QUESTION);
+      setSummary((s) => ({ ...s, xp: s.xp + XP_PER_QUESTION }));
+    }
     setGraded({ correct, status });
     setPhase('feedback');
   };
@@ -268,6 +294,10 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
               <div className="sn__done-num" style={{ color: accent.text }}>{summary.kept}</div>
               <div className="sn__done-lbl">Still practising</div>
             </div>
+            <div className="sn__done-stat">
+              <div className="sn__done-num" style={{ color: '#8b5cf6' }}>+{summary.xp}</div>
+              <div className="sn__done-lbl">XP earned</div>
+            </div>
           </div>
           <p className="sn__muted">
             Graduated questions left your notebook. The rest will come back on
@@ -381,6 +411,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
                     ? <CheckCircle2 size={20} style={{ color: '#16a34a' }} />
                     : <XCircle size={20} style={{ color: '#ef4444' }} />}
                   <span>{feedbackCorrect ? 'Correct!' : 'Not quite'}</span>
+                  {phase === 'feedback' && graded?.correct && (
+                    <span className="sn__xp-chip">+{XP_PER_QUESTION} XP</span>
+                  )}
                 </div>
                 {!feedbackCorrect && (
                   <div className="sn__fb-answer">
@@ -583,6 +616,11 @@ const secretNoteStyles = `
   .sn__fb--ok { background: #f0fdf4; border: 1px solid #dcfce7; }
   .sn__fb--no { background: #fef2f2; border: 1px solid #fee2e2; }
   .sn__fb-head { display: flex; align-items: center; gap: 8px; font-weight: 900; color: #1e1b4b; }
+  .sn__xp-chip {
+    margin-left: auto; padding: 4px 12px; border-radius: 999px;
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6); color: #fff;
+    font-size: 0.74rem; font-weight: 900; letter-spacing: 0.02em;
+  }
   .sn__fb-answer {
     margin-top: 10px; padding: 10px 14px; background: #fff; border-radius: 12px;
     font-size: 0.9rem; font-weight: 700; color: #b91c1c;
