@@ -173,3 +173,13 @@
   font-size: 0.9rem !important;
 }
 
+@media (min-width: 1025px) {
+  .notif-dropdown {
+    top: auto !important;
+    bottom: 90px !important;
+    left: 20px !important;
+    right: auto !important;
+    width: 260px !important;
+  }
+}
+
