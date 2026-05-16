@@ -1070,6 +1070,7 @@ function App() {
           <AnimatePresence>
             {showNotifs && (
               <>
+                {/* Backdrop */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -1078,17 +1079,52 @@ function App() {
                   style={{
                     position: 'fixed',
                     inset: 0,
-                    zIndex: 2147483645,
-                    background: 'transparent'
+                    zIndex: 9998,
+                    background: 'rgba(15,23,42,0.35)',
+                    backdropFilter: 'blur(4px)',
                   }}
                 />
-                <motion.div 
-                  className="notif-dropdown"
-                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                {/* Centered modal */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                  style={{
+                    position: 'fixed',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    zIndex: 9999,
+                    width: '100%',
+                    maxWidth: '420px',
+                    maxHeight: '80vh',
+                    background: 'rgba(255,255,255,0.98)',
+                    backdropFilter: 'blur(20px)',
+                    borderRadius: '28px',
+                    border: '1px solid rgba(167,139,250,0.2)',
+                    boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25)',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    margin: '0 16px',
+                  }}
                 >
-                  <div className="notif-header">Notifications Center</div>
+                  <div style={{
+                    padding: '20px 24px',
+                    borderBottom: '1px solid rgba(167,139,250,0.1)',
+                    fontWeight: 800,
+                    color: '#1e1b4b',
+                    fontSize: '1rem',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                  }}>
+                    <span>Notifications</span>
+                    <button
+                      onClick={() => setShowNotifs(false)}
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#94a3b8', fontSize: '1.2rem', lineHeight: 1, padding: '4px' }}
+                    >✕</button>
+                  </div>
                   <div className="notif-list">
                     {notifications.length === 0 ? (
                       <div className="notif-empty">No messages yet</div>
