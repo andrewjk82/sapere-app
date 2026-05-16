@@ -83,9 +83,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return topics.filter(t => t.total >= 3 && t.errorRate > 0).slice(0, 3);
   }, [dailyStats]);
 
-  // pendingGrading is now sourced from AdminFeedContext (single shared listener
-  // across the app) — no per-component subscription needed.
-
   // ── Fetch Last Sync Info ──
   useEffect(() => {
     if (!isAdmin) return;
@@ -105,7 +102,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const handleManualSync = async () => {
     setIsSyncing(true);
     try {
-      // Use force=true to bypass the once-per-day check when manually triggered by admin
       const res = await fetch('/api/cron-unified?force=true');
       const data = await res.json();
       if (data.success) {
@@ -120,69 +116,30 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     }
   };
 
-  const handleSeedLeaderboard = async () => {
-    setIsSeedingLeaderboard(true);
-    try {
-      const { added, skipped } = await seedLeaderboardFromExistingData({
-        onProgress: (msg) => console.log('[Leaderboard Seed]', msg),
-      });
-      showToast(`리더보드 동기화 완료! ${added}명 추가/업데이트, ${skipped}명 건너뜀`, 'success');
-    } catch (err) {
-      console.error('Leaderboard seed failed:', err);
-      showToast('리더보드 동기화 실패: ' + err.message, 'error');
-    } finally {
-      setIsSeedingLeaderboard(false);
-    }
-  };
-
-  const handleManualRefresh = async () => {
-    setIsRefreshing(true);
-    try {
-      await onRefreshStudents();
-      showToast('Student list updated!', 'success');
-    } catch (err) {
-      showToast('Failed to refresh students.', 'error');
-    } finally {
-      setIsRefreshing(false);
-    }
-  };
-
-
-  // Auto-sync curriculum for admins on mount, gated by a TTL cache.
-  //
-  // performAutoSync runs getDocs against the questions collection per
-  // chapter (3 chapters × ~50–200 docs each = 150–600 reads per call).
-  // Without this gate, every Dashboard mount + every Firebase token
-  // refresh + every navigation back to the dashboard would burn that
-  // again. We persist the last-completed timestamp in localStorage and
-  // skip the audit if it's been less than 6 hours.
-  const AUTO_SYNC_TTL_MS = 6 * 60 * 60 * 1000;
-  const AUTO_SYNC_KEY = 'sapere-curriculum-autosync-last';
-
-  useEffect(() => {
-    if (!isAdmin || !user?.uid) return;
-    let lastRun = 0;
-    try {
-      lastRun = Number(window.localStorage.getItem(AUTO_SYNC_KEY) || 0) || 0;
-    } catch { /* private mode / disabled storage — fall through */ }
-    if (Date.now() - lastRun < AUTO_SYNC_TTL_MS) return;
-
-    const runAutoSync = async () => {
+  const handleSyncChapter = async (chapter) => {
+    if (window.confirm(`Sync Year 11 Adv Ch${chapter}? This will replace existing questions.`)) {
+      setIsSyncing(true);
       try {
-        setIsImporting(true);
-        showToast('Checking for curriculum updates...', 'info');
-        const { performAutoSync } = await import('../services/AutoSyncService');
-        await performAutoSync(showToast);
-        try { window.localStorage.setItem(AUTO_SYNC_KEY, String(Date.now())); } catch {}
-      } catch (err) {
-        console.error('Auto-sync failed:', err);
+        let importFn;
+        if (chapter === 4) {
+          const { importYear11AdvCh4 } = await import('../scripts/importYear11AdvCh4');
+          importFn = importYear11AdvCh4;
+        } else if (chapter === 5) {
+          const { importYear11AdvCh5 } = await import('../scripts/importYear11AdvCh5');
+          importFn = importYear11AdvCh5;
+        }
+        
+        if (importFn) {
+          await importFn();
+          showToast(`Y11 Adv Ch${chapter} synced successfully!`, 'success');
+        }
+      } catch (e) {
+        showToast('Sync failed: ' + e.message, 'error');
       } finally {
-        setIsImporting(false);
+        setIsSyncing(false);
       }
-    };
-    runAutoSync();
-  }, [isAdmin, user?.uid, showToast]);
-
+    }
+  };
 
   // ── Handle Resize ──
   useEffect(() => {
@@ -193,9 +150,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
   useEffect(() => {
     if (!user?.uid || isAdmin) return undefined;
-
     const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-
     const unsubId = onSnapshot(qId, (snap) => {
       const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       setStudentSessions(docs);
@@ -204,45 +159,29 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       console.warn("Dashboard session fetch error:", error.message);
       setSessionsLoading(false);
     });
-
-    return () => {
-      unsubId();
-    };
+    return () => unsubId();
   }, [user?.uid, isAdmin]);
 
   const { nextLesson, lastLesson } = useMemo(() => {
     const now = new Date();
-    
     const getTime = (s) => {
       try {
         if (!s.date || !s.startTime) return 0;
-        
-        // Robust time parsing
         const timeMatch = s.startTime.match(/(\d+):(\d+)\s*(AM|PM)/i);
         if (!timeMatch) return new Date(s.date).getTime();
-
         let [_, hours, minutes, period] = timeMatch;
         hours = parseInt(hours, 10);
         minutes = parseInt(minutes, 10);
         period = period.toUpperCase();
-
         if (period === 'PM' && hours !== 12) hours += 12;
         if (period === 'AM' && hours === 12) hours = 0;
-        
-        // Create date object in local time
         const [y, m, d] = s.date.split('-').map(Number);
         return new Date(y, m - 1, d, hours, minutes).getTime();
-      } catch (e) {
-        console.error("getTime error:", e);
-        return 0;
-      }
+      } catch (e) { return 0; }
     };
-
     const sorted = [...studentSessions].sort((a, b) => getTime(a) - getTime(b));
-    
     const next = sorted.find(s => getTime(s) > now.getTime());
     const past = [...sorted].reverse().find(s => getTime(s) < now.getTime());
-    
     return { nextLesson: next, lastLesson: past };
   }, [studentSessions]);
 
@@ -256,155 +195,53 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
   const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
 
-  useEffect(() => {
-    if (!user?.uid || !profile || isAdmin) return;
-
-    const currentYear = new Date().getFullYear();
-    const lastPromoted = profile.lastPromotedYear;
-
-    // First time setup: if lastPromotedYear doesn't exist, set it to current year
-    if (!lastPromoted) {
-      setDoc(doc(db, 'users', user.uid), { lastPromotedYear: currentYear }, { merge: true });
-      return;
-    }
-
-    // If a new calendar year has started
-    if (currentYear > lastPromoted) {
-      const yearStr = profile.year;
-      if (yearStr) {
-        const safeYearStr = String(yearStr);
-        const match = safeYearStr.match(/\d+/);
-        if (match) {
-          const num = parseInt(match[0], 10);
-          const nextYear = safeYearStr.replace(match[0], (num + 1).toString());
-          
-          setDoc(doc(db, 'users', user.uid), { 
-            year: nextYear, 
-            lastPromotedYear: currentYear,
-            updatedAt: new Date().toISOString() 
-          }, { merge: true });
-          
-          console.log(`Auto-promoted ${userName} from ${yearStr} to ${nextYear}`);
-        }
-      }
-    }
-  }, [user?.uid, profile, isAdmin, userName]);
-
-  const studentYear = profile?.assignedYear || profile?.year || 'Year 10';
-  const studentCourse = profile?.assignedCourse || profile?.course || 'Advanced';
-
-  const activeModules = useMemo(() => {
-    let chapters = [];
-    if (CURRICULUM_DATA[studentYear]) {
-      if (Array.isArray(CURRICULUM_DATA[studentYear])) {
-        chapters = CURRICULUM_DATA[studentYear];
-      } else if (CURRICULUM_DATA[studentYear][studentCourse]) {
-        chapters = CURRICULUM_DATA[studentYear][studentCourse];
-      } else {
-        chapters = Object.values(CURRICULUM_DATA[studentYear])[0] || [];
-      }
-    }
-    return chapters.slice(0, 3); // Overview top 3
-  }, [studentYear, studentCourse]);
-
-  // Calculate dynamic stats
-  const totalStudents = students.length;
-  const activeStudents = students.filter(s => s.status === 'Active').length;
-  const totalLessons = students.reduce((acc, s) => acc + (s.lessons || 0), 0);
-
-  const displayStats = [
-    { label: "Total Students", value: totalStudents.toString(), icon: "Users" },
-    { label: "Active Students", value: activeStudents.toString(), icon: "GraduationCap" },
-    { label: "Total Lessons", value: totalLessons.toString(), icon: "CheckCircle2" },
-    { label: "Hours Tutored", value: `${Math.round(totalLessons * 1.5)}h`, icon: "Clock" },
-  ];
-
   const handleGrade = async (status) => {
     if (!selectedGradingItem) return;
     try {
-      // 1. Delete the grading queue item (message) after processing
       await deleteDoc(doc(db, 'grading_queue', selectedGradingItem.id));
-      
       const type = selectedGradingItem.challengeType || 'daily';
       const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
       const userId = selectedGradingItem.userId;
       
-      // Improved statId lookup for older records
       let statId = selectedGradingItem.date;
       if (!statId && selectedGradingItem.submittedAt) {
         const sAt = selectedGradingItem.submittedAt;
         const d = (typeof sAt.toDate === 'function') ? sAt.toDate() : new Date(sAt);
-        if (!isNaN(d.getTime())) {
-          statId = d.toLocaleDateString('en-CA'); // Match local date format used when saving
-        }
+        if (!isNaN(d.getTime())) statId = d.toLocaleDateString('en-CA');
       }
-      if (!statId) statId = selectedGradingItem.id.split('_')[0]; // Final fallback
 
       if (status === 'correct') {
-        // 2. Calculate proportional XP
         const totalQ = selectedGradingItem.totalQuestions || 10;
         const maxXP = type === 'calc' ? 50 : 100;
         const xpPerQuestion = Math.round(maxXP / totalQ);
-
-        // 3. Update overall XP
-        const xpPayload = {
-          totalXP: increment(xpPerQuestion),
-          updatedAt: new Date().toISOString()
-        };
-
-        try {
-          await updateDoc(doc(db, 'users', userId), xpPayload);
-        } catch (userErr) {
-          console.warn("Could not update user totalXP, trying students collection:", userErr);
-          try {
-            await updateDoc(doc(db, 'students', userId), xpPayload);
-          } catch (studentErr) {
-            console.error("Failed to update XP in both collections:", studentErr);
-          }
+        const xpPayload = { totalXP: increment(xpPerQuestion), updatedAt: new Date().toISOString() };
+        try { await updateDoc(doc(db, 'users', userId), xpPayload); } catch {
+          await updateDoc(doc(db, 'students', userId), xpPayload);
         }
-
-        // 4. Update the actual score and answerResults in the daily/calc stats record
         if (statId && userId) {
           const safeStatId = typeof statId === 'string' ? statId.replace(/\//g, '-') : String(statId);
           let statRef = doc(db, 'users', userId, colName, safeStatId);
-          try {
-            let statSnap = await getDoc(statRef);
-            if (!statSnap.exists()) {
-              statRef = doc(db, 'students', userId, colName, statId);
-              statSnap = await getDoc(statRef);
+          let statSnap = await getDoc(statRef);
+          if (!statSnap.exists()) {
+            statRef = doc(db, 'students', userId, colName, safeStatId);
+            statSnap = await getDoc(statRef);
+          }
+          if (statSnap.exists()) {
+            const statsData = statSnap.data();
+            const updatedResults = [...(statsData.answerResults || [])];
+            const qIndex = updatedResults.findIndex(r => r.questionId === selectedGradingItem.questionId);
+            if (qIndex !== -1) {
+              updatedResults[qIndex].correct = true;
+              updatedResults[qIndex].isPending = false;
+              updatedResults[qIndex].selectedAnswer = 'Approved';
             }
-
-            if (statSnap.exists()) {
-              const statsData = statSnap.data();
-              const updatedResults = [...(statsData.answerResults || [])];
-              const qIndex = updatedResults.findIndex(r => r.questionId === selectedGradingItem.questionId);
-              
-              if (qIndex !== -1) {
-                updatedResults[qIndex].correct = true;
-                updatedResults[qIndex].isPending = false;
-                updatedResults[qIndex].selectedAnswer = 'Approved';
-              }
-
-              await updateDoc(statRef, {
-                score: increment(1),
-                xpEarned: increment(xpPerQuestion),
-                ...(qIndex !== -1 ? { answerResults: updatedResults } : {})
-              });
-            }
-          } catch (err) {
-            console.warn("Could not update stat score/results", err);
+            await updateDoc(statRef, { score: increment(1), xpEarned: increment(xpPerQuestion), ...(qIndex !== -1 ? { answerResults: updatedResults } : {}) });
           }
         }
-
         showToast(`Graded as Correct. Student received ${xpPerQuestion} XP!`, 'success');
-      } else {
-        showToast(`Graded as Incorrect.`, 'info');
-      }
+      } else { showToast(`Graded as Incorrect.`, 'info'); }
       setSelectedGradingItem(null);
-    } catch (err) {
-      console.error("Failed to grade item:", err);
-      showToast("Failed to update grade", 'error');
-    }
+    } catch (err) { showToast("Failed to update grade", 'error'); }
   };
 
   const getGreeting = () => {
@@ -432,200 +269,46 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         className={`app-page ${!isAdmin && isMobile ? 'no-top-padding-mobile' : ''}`}
       >
         {!isAdmin && (
-          <div className="student-hero-container" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(12, 1fr)', 
-            gap: isMobile ? '16px' : '24px', 
-            padding: isMobile ? '0 0 16px 0' : '0 0 24px 0',
-            alignItems: 'stretch'
-          }}>
-            {/* Left: Vision Card */}
+          <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
             <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7' }}>
-              <div className="app-panel vision-card" style={{ 
-                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200'}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundColor: '#1e1b4b', // Dark fallback to match theme
-                height: isMobile ? '460px' : '100%',
-                minHeight: isMobile ? '460px' : '560px',
-                borderRadius: isMobile ? '0 0 32px 32px' : '32px',
-                position: 'relative',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-end',
-                padding: isMobile ? '40px 24px' : '40px',
-                color: 'white',
-                overflow: 'hidden',
-                boxShadow: isMobile ? 'none' : '0 20px 50px rgba(0,0,0,0.15)',
-                border: 'none',
-                width: '100%'
-              }}>
+              <div className="app-panel vision-card" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=1200'}')`, backgroundSize: 'cover', backgroundPosition: 'center', height: isMobile ? '460px' : '100%', minHeight: isMobile ? '460px' : '560px', borderRadius: isMobile ? '0 0 32px 32px' : '32px', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: isMobile ? '40px 24px' : '40px', color: 'white', overflow: 'hidden', boxShadow: isMobile ? 'none' : '0 20px 50px rgba(0,0,0,0.15)', border: 'none', width: '100%' }}>
                 <div className="vision-card__content" style={{ zIndex: 1 }}>
-                  <h1 style={{ 
-                    fontFamily: "'Poppins', sans-serif", 
-                    fontSize: isMobile ? '2.2rem' : '3.5rem', 
-                    fontWeight: 900, 
-                    margin: 0, 
-                    lineHeight: 1.1, 
-                    color: '#fff', 
-                    letterSpacing: '-0.02em', 
-                    textShadow: '0 4px 20px rgba(0,0,0,0.3)' 
-                  }}>
-                    <span style={{ fontSize: '0.35em', display: 'block', textTransform: 'uppercase', letterSpacing: '0.25em', opacity: 0.9, marginBottom: '4px', color: 'rgba(255,255,255,0.8)' }}>
-                      {getGreeting()},
-                    </span>
+                  <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '2.2rem' : '3.5rem', fontWeight: 900, margin: 0, lineHeight: 1.1, color: '#fff', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
+                    <span style={{ fontSize: '0.35em', display: 'block', textTransform: 'uppercase', letterSpacing: '0.25em', opacity: 0.9, marginBottom: '4px', color: 'rgba(255,255,255,0.8)' }}>{getGreeting()},</span>
                     {userName}
                   </h1>
-                  {profile?.dreamJob && (
-                    <div style={{ marginTop: '16px', padding: '6px 14px', background: 'rgba(255,255,255,0.2)', backdropFilter: 'blur(12px)', borderRadius: '12px', display: 'inline-block', border: '1px solid rgba(255,255,255,0.3)' }}>
-                      <span style={{ fontWeight: 800, fontSize: '0.75rem', color: 'white', letterSpacing: '0.08em' }}>FUTURE {profile.dreamJob.toUpperCase()}</span>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
-
-            {/* Right: Status Cards Stack */}
-            <div style={{ 
-              gridColumn: isMobile ? 'span 1' : 'span 5', 
-              display: 'flex', 
-              flexDirection: 'column', 
-              gap: isMobile ? '16px' : '20px',
-              padding: isMobile ? '0 20px' : '0'
-            }}>
-              {/* XP / Progress Card */}
-              <div style={{ 
-                flex: 1,
-                background: 'linear-gradient(135deg, #1e1b4b, #312e81)', 
-                borderRadius: '28px', 
-                padding: '12px 24px', 
-                color: 'white',
-                boxShadow: '0 15px 35px rgba(30,27,75,0.2)',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                position: 'relative',
-                overflow: 'hidden',
-                minHeight: '82px'
-                
-              }}>
-                <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}>
-                  <Trophy size={100} />
-                </div>
+            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: isMobile ? '0 20px' : '0' }}>
+              <div style={{ flex: 1, background: 'linear-gradient(135deg, #1e1b4b, #312e81)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(30,27,75,0.2)', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden', minHeight: '82px' }}>
+                <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}><Trophy size={100} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Total XP</label>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px' }}>
                   <h4 style={{ margin: 0, fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{profile?.totalXP || 0}</h4>
-                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'rgba(255,255,255,0.8)' }}>Master Level 1</div>
                 </div>
               </div>
-
-              {/* Next Lesson Card */}
-              <div 
-                onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
-                style={{ 
-                  flex: 1,
-                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
-                  borderRadius: '28px', 
-                  padding: '12px 24px', 
-                  color: 'white',
-                  boxShadow: '0 15px 35px rgba(99,102,241,0.25)',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  cursor: nextLesson ? 'pointer' : 'default',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  minHeight: '82px'
-                }}
-              >
-                <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}>
-                  <Calendar size={120} />
-                </div>
+              <div onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
+                <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}><Calendar size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
-                {sessionsLoading ? (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.6 }}>
-                    <div className="app-spinner" style={{ width: '16px', height: '16px', border: '2px solid rgba(255,255,255,0.3)', borderTop: '2px solid #fff' }}></div>
-                    <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>Loading...</span>
-                  </div>
-                ) : nextLesson ? (
+                {nextLesson ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                     <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: 'white' }}>{normalizeSubjectLabel(nextLesson.subject)}</h4>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>
-                      <Clock size={16} />
-                      {nextLesson.date} @ {nextLesson.startTime}
-                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}><Clock size={16} />{nextLesson.date} @ {nextLesson.startTime}</div>
                   </div>
-                ) : (
-                  <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>
-                )}
-              </div>
-
-              {/* Last Lesson Card */}
-              <div 
-                onClick={() => lastLesson && setSelectedViewSession(lastLesson)}
-                style={{ 
-                  flex: 1,
-                  background: '#ffffff', 
-                  borderRadius: '28px', 
-                  padding: '12px 24px', 
-                  border: '1px solid #f1f5f9',
-                  boxShadow: '0 12px 30px rgba(0,0,0,0.04)',
-                  position: 'relative',
-                  cursor: lastLesson ? 'pointer' : 'default',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  minHeight: '82px'
-                }}
-              >
-                <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Last Lesson</label>
-                {sessionsLoading ? (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', opacity: 0.6 }}>
-                    <div className="app-spinner" style={{ width: '16px', height: '16px', border: '2px solid rgba(0,0,0,0.1)', borderTop: '2px solid #6366f1' }}></div>
-                    <span style={{ fontSize: '0.9rem', fontWeight: 600, color: '#94a3b8' }}>Loading...</span>
-                  </div>
-                ) : lastLesson ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{normalizeSubjectLabel(lastLesson.subject)}</h4>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 700, color: '#64748b' }}>
-                      <CheckCircle2 size={16} style={{ color: '#10b981' }} />
-                      Completed on {lastLesson.date}
-                    </div>
-                  </div>
-                ) : (
-                  <p style={{ margin: 0, fontWeight: 700, color: '#cbd5e1', fontSize: '1.1rem' }}>No past lessons.</p>
-                )}
+                ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
               </div>
             </div>
           </div>
         )}
 
-        {/* Secret Note review prompt — students only */}
         {!isAdmin && (() => {
           const dueTotal = getDueCount('daily', user?.uid) + getDueCount('calc', user?.uid);
           if (dueTotal === 0) return null;
           return (
-            <button
-              type="button"
-              onClick={() => setActiveTab('Challenge')}
-              style={{
-                display: 'flex', alignItems: 'center', gap: '14px', width: '100%',
-                margin: isMobile ? '0 20px 16px' : '0 0 24px',
-                maxWidth: isMobile ? 'calc(100% - 40px)' : '100%',
-                padding: '16px 22px', borderRadius: '20px', cursor: 'pointer',
-                textAlign: 'left',
-                background: 'linear-gradient(135deg, #ede9fe, #fce7f3)',
-                border: '1px solid #ddd6fe', color: '#6d28d9',
-              }}
-            >
+            <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '14px', width: '100%', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%', padding: '16px 22px', borderRadius: '20px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #ede9fe, #fce7f3)', border: '1px solid #ddd6fe', color: '#6d28d9' }}>
               <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>🧠</span>
-              <span style={{ flex: 1, fontSize: '0.95rem', fontWeight: 700, lineHeight: 1.45 }}>
-                Perfect time to review!{' '}
-                <strong style={{ fontWeight: 900 }}>
-                  {dueTotal} question{dueTotal > 1 ? 's' : ''}
-                </strong>{' '}
-                from your Secret Note {dueTotal > 1 ? 'are' : 'is'} due today.
-              </span>
+              <span style={{ flex: 1, fontSize: '0.95rem', fontWeight: 700, lineHeight: 1.45 }}>Perfect time to review! <strong style={{ fontWeight: 900 }}>{dueTotal} question{dueTotal > 1 ? 's' : ''}</strong> from your Secret Note {dueTotal > 1 ? 'are' : 'is'} due today.</span>
               <ArrowRight size={18} style={{ flexShrink: 0 }} />
             </button>
           );
@@ -642,263 +325,65 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             onOpenGradingItem={(item) => setSelectedGradingItem(item)}
             onReviewAll={() => setActiveTab('Reports')}
             onSendReminders={handleManualSync}
+            onSyncChapter={handleSyncChapter}
             setActiveTab={setActiveTab}
           />
         )}
-
-        <div className="app-grid app-grid--content" style={{ padding: isMobile ? '0 20px 40px' : '0' }}>
-          {isAdmin ? (
-            <>
-              <div className="app-page-column">
-                <div className="ad__panel" style={{ marginTop: '0' }}>
-                  <div className="ad__panel-head">
-                    <h4>📚 Curriculum Management</h4>
-                  </div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-                    <button
-                      onClick={async () => {
-                        if (window.confirm('Sync Year 11 Adv Ch4? This will replace existing questions.')) {
-                          setIsSyncing(true);
-                          try {
-                            const { importYear11AdvCh4 } = await import('../scripts/importYear11AdvCh4');
-                            await importYear11AdvCh4();
-                            showToast('Y11 Adv Ch4 synced successfully!', 'success');
-                          } catch (e) {
-                            showToast('Sync failed: ' + e.message, 'error');
-                          } finally {
-                            setIsSyncing(false);
-                          }
-                        }
-                      }}
-                      disabled={isSyncing}
-                      className="ad__grade-btn"
-                      style={{ padding: '10px 20px', fontSize: '0.8rem', cursor: 'pointer', opacity: isSyncing ? 0.5 : 1 }}
-                    >
-                      {isSyncing ? 'Syncing...' : 'Sync Y11 Adv Ch4'}
-                    </button>
-
-                    <button
-                      onClick={async () => {
-                        if (window.confirm('Sync Year 11 Adv Ch5? This will replace existing questions.')) {
-                          setIsSyncing(true);
-                          try {
-                            const { importYear11AdvCh5 } = await import('../scripts/importYear11AdvCh5');
-                            await importYear11AdvCh5();
-                            showToast('Y11 Adv Ch5 synced successfully!', 'success');
-                          } catch (e) {
-                            showToast('Sync failed: ' + e.message, 'error');
-                          } finally {
-                            setIsSyncing(false);
-                          }
-                        }
-                      }}
-                      disabled={isSyncing}
-                      className="ad__grade-btn"
-                      style={{ padding: '10px 20px', fontSize: '0.8rem', cursor: 'pointer', opacity: isSyncing ? 0.5 : 1 }}
-                    >
-                      {isSyncing ? 'Syncing...' : 'Sync Y11 Adv Ch5'}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </>
-          ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '24px', gridColumn: 'span 2' }}>
-              {/* Student dashboard content placeholder */}
-            </div>
-          )}
-        </div>
       </motion.div>
 
-      {/* ── Student Session Detail Modal ── */}
+      {/* Detail Modal */}
       <AnimatePresence>
         {selectedViewSession && (
           <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-            <motion.div
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              onClick={() => setSelectedViewSession(null)}
-              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.4)', backdropFilter: 'blur(8px)' }}
-            />
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              style={{ position: 'relative', width: '100%', maxWidth: '440px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}
-            >
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedViewSession(null)} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.4)', backdropFilter: 'blur(8px)' }} />
+            <motion.div initial={{ scale: 0.9, opacity: 0, y: 20 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 20 }} style={{ position: 'relative', width: '100%', maxWidth: '440px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.15)' }}>
               <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '32px', color: '#fff' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.8 }}>Lesson Details</span>
-                    <h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{normalizeSubjectLabel(selectedViewSession.subject)}</h3>
-                  </div>
-                  <button onClick={() => setSelectedViewSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
-                    <X size={20} />
-                  </button>
+                  <div><h3 style={{ margin: '8px 0 0', fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{normalizeSubjectLabel(selectedViewSession.subject)}</h3></div>
+                  <button onClick={() => setSelectedViewSession(null)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}><X size={20} /></button>
                 </div>
               </div>
-              
               <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div style={{ display: 'flex', gap: '24px' }}>
-                  <div style={{ flex: 1 }}>
-                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>Date</label>
-                    <div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <Calendar size={16} /> {selectedViewSession.date}
-                    </div>
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>Time</label>
-                    <div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <Clock size={16} /> {selectedViewSession.startTime}
-                    </div>
-                  </div>
+                  <div style={{ flex: 1 }}><label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>Date</label><div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}><Calendar size={16} />{selectedViewSession.date}</div></div>
+                  <div style={{ flex: 1 }}><label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>Time</label><div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}><Clock size={16} />{selectedViewSession.startTime}</div></div>
                 </div>
-
-                <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Tutor's Notes</label>
-                  <div style={{ backgroundColor: '#f8fafc', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#475569', lineHeight: 1.6, fontWeight: 500, border: '1px solid #f1f5f9' }}>
-                    {selectedViewSession.notes || "No notes provided for this session."}
-                  </div>
-                </div>
-
-                <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Homework</label>
-                  <div style={{ backgroundColor: '#f0f9ff', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#0369a1', lineHeight: 1.6, fontWeight: 600, border: '1px solid #e0f2fe' }}>
-                    {selectedViewSession.homework || "No homework assigned."}
-                  </div>
-                </div>
-
-                <button 
-                  onClick={() => setSelectedViewSession(null)}
-                  style={{ width: '100%', backgroundColor: '#1e1b4b', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', marginTop: '8px' }}
-                >
-                  Close Details
-                </button>
+                <button onClick={() => setSelectedViewSession(null)} style={{ width: '100%', backgroundColor: '#1e1b4b', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', marginTop: '8px' }}>Close Details</button>
               </div>
             </motion.div>
           </div>
         )}
       </AnimatePresence>
 
-      <AvatarPickerModal
-        open={avatarOpen}
-        title="My Persona"
-        subtitle="Choose your face"
-        initialStyle={profile?.avatarStyle || 'avataaars'}
-        initialSeed={profile?.avatarSeed || (user?.email?.split('@')[0] ?? '')}
-        onClose={() => setAvatarOpen(false)}
-        onApply={async ({ avatarStyle, avatarSeed, avatarUrl: nextUrl }) => {
-          if (!user?.uid) return;
-          await setDoc(
-            doc(db, 'users', user.uid),
-            { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() },
-            { merge: true },
-          );
-          setAvatarOpen(false);
-        }}
-      />
-
-      {/* ── Schedule Lesson Modal ── */}
+      {/* Grading Modal */}
       <AnimatePresence>
-        {showScheduleModal && (
-          <ScheduleLessonModal
-            isOpen={showScheduleModal}
-            onClose={() => setShowScheduleModal(false)}
-            students={students}
-          />
-        )}
-      {selectedGradingItem && (
+        {selectedGradingItem && (
           <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-            <motion.div
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              onClick={() => setSelectedGradingItem(null)}
-              style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(8px)' }}
-            />
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              style={{ position: 'relative', width: '100%', maxWidth: '620px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.2)', maxHeight: '90vh', overflowY: 'auto' }}
-            >
-              {/* Header */}
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedGradingItem(null)} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(8px)' }} />
+            <motion.div initial={{ scale: 0.9, opacity: 0, y: 20 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 20 }} style={{ position: 'relative', width: '100%', maxWidth: '620px', backgroundColor: '#fff', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.2)', maxHeight: '90vh', overflowY: 'auto' }}>
               <div style={{ background: 'linear-gradient(135deg, #1e1b4b, #312e81)', padding: '24px 32px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                <div>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#a5b4fc', textTransform: 'uppercase', letterSpacing: '0.1em' }}>📝 Teacher Review</span>
-                  <h3 style={{ margin: '4px 0 2px', color: 'white', fontWeight: 900 }}>{selectedGradingItem.userName}</h3>
-                  <span style={{ fontSize: '0.8rem', color: '#c7d2fe' }}>{selectedGradingItem.chapterTitle || selectedGradingItem.topicTitle || 'Open Question'}</span>
-                </div>
-                <button onClick={() => setSelectedGradingItem(null)} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', flexShrink: 0 }}>
-                  <X size={20} />
-                </button>
+                <div><h3 style={{ margin: '4px 0 2px', color: 'white', fontWeight: 900 }}>{selectedGradingItem.userName}</h3></div>
+                <button onClick={() => setSelectedGradingItem(null)} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}><X size={20} /></button>
               </div>
-              
               <div style={{ padding: '28px 32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                {/* Question */}
-                <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '8px' }}>Question</label>
-                  <p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b', fontSize: '1rem', lineHeight: 1.6 }}>
-                    {selectedGradingItem.questionText}
-                  </p>
-                </div>
-
-                {/* Student's Answer */}
-                <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '10px' }}>Student's Answer</label>
-                  {selectedGradingItem.answerImages && selectedGradingItem.answerImages.length > 0 ? (
-                    <div style={{ width: '100%', background: '#fff', borderRadius: '20px', overflow: 'hidden', border: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
-                      {selectedGradingItem.answerImages.map((imgUrl, i) => (
-                        <div key={i} style={{ borderBottom: i < selectedGradingItem.answerImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px', background: 'linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
-                          <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 800, marginBottom: '8px' }}>PAGE {i + 1}</div>
-                          <img src={imgUrl} alt={`Student Drawing Page ${i+1}`} style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block' }} />
-                        </div>
-                      ))}
-                    </div>
-                  ) : selectedGradingItem.answerImage ? (
-                    <div style={{ width: '100%', background: 'linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)', backgroundSize: '20px 20px', borderRadius: '20px', overflow: 'hidden', border: '2px solid #e2e8f0', padding: '16px', minHeight: '150px' }}>
-                      <img src={selectedGradingItem.answerImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', margin: '0 auto' }} />
-                    </div>
-                  ) : (
-                    <div style={{ padding: '20px', background: '#fffbeb', borderRadius: '16px', border: '1.5px solid #fcd34d', fontSize: '1rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>
-                      {selectedGradingItem.answerText || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>No text answer recorded.</span>}
-                    </div>
-                  )}
-                </div>
-
-                {/* Correct Answer for reference */}
-                {selectedGradingItem.correctAnswer && (
-                  <div style={{ background: '#f0fdf4', padding: '16px 20px', borderRadius: '16px', border: '1px solid #bbf7d0' }}>
-                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#059669', textTransform: 'uppercase', marginBottom: '6px' }}>✅ Correct Answer (Reference)</label>
-                    <p style={{ margin: 0, fontWeight: 700, color: '#065f46', fontSize: '0.9rem', lineHeight: 1.6 }}>{selectedGradingItem.correctAnswer}</p>
-                  </div>
-                )}
-
-                {/* Solution for reference */}
-                {selectedGradingItem.solution && (
-                  <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>📖 Solution Notes</label>
-                    <p style={{ margin: 0, fontWeight: 600, color: '#475569', fontSize: '0.88rem', lineHeight: 1.7 }}>{selectedGradingItem.solution}</p>
-                  </div>
-                )}
-
-                {/* Grade Buttons */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', paddingTop: '8px', borderTop: '1px solid #f1f5f9' }}>
-                  <button 
-                    onClick={() => handleGrade('incorrect')}
-                    style={{ padding: '18px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1rem', transition: 'all 0.2s' }}
-                  >
-                    <X size={20} /> Incorrect
-                  </button>
-                  <button 
-                    onClick={() => handleGrade('correct')}
-                    style={{ padding: '18px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '1rem', transition: 'all 0.2s' }}
-                  >
-                    <CheckCircle2 size={20} /> Correct (+{Math.round((selectedGradingItem.challengeType === 'calc' ? 50 : 100) / (selectedGradingItem.totalQuestions || 10))} XP)
-                  </button>
+                <div style={{ background: '#f8fafc', padding: '16px 20px', borderRadius: '16px', border: '1px solid #e2e8f0' }}><p style={{ margin: 0, fontWeight: 700, color: '#1e1b4b' }}>{selectedGradingItem.questionText}</p></div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                  <button onClick={() => handleGrade('incorrect')} style={{ padding: '18px', borderRadius: '16px', background: '#fef2f2', border: '2px solid #fee2e2', color: '#ef4444', fontWeight: 800 }}>Incorrect</button>
+                  <button onClick={() => handleGrade('correct')} style={{ padding: '18px', borderRadius: '16px', background: '#f0fdf4', border: '2px solid #dcfce7', color: '#10b981', fontWeight: 800 }}>Correct</button>
                 </div>
               </div>
             </motion.div>
           </div>
         )}
       </AnimatePresence>
+
+      <AvatarPickerModal open={avatarOpen} onClose={() => setAvatarOpen(false)} onApply={async ({ avatarStyle, avatarSeed, avatarUrl: nextUrl }) => {
+        if (!user?.uid) return;
+        await setDoc(doc(db, 'users', user.uid), { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() }, { merge: true });
+        setAvatarOpen(false);
+      }} />
+
+      {showScheduleModal && <ScheduleLessonModal isOpen={showScheduleModal} onClose={() => setShowScheduleModal(false)} students={students} />}
     </>
   );
 };

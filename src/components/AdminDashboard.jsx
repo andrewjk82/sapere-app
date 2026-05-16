@@ -416,59 +416,88 @@ const AdminDashboard = ({
           </div>
         </div>
 
-        <div className="ad__panel">
-          <div className="ad__panel-head">
-            <h4>System status</h4>
+          <div className="ad__panel">
+            <div className="ad__panel-head">
+              <h4>📚 Curriculum Management</h4>
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '4px' }}>
+              <button
+                type="button"
+                className="ad__grade-btn"
+                style={{ padding: '8px 16px', borderRadius: '12px', fontSize: '0.75rem', cursor: 'pointer', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: 'white', fontWeight: 800 }}
+                onClick={() => onSyncChapter?.(4)}
+                disabled={isSyncing}
+              >
+                Sync Y11 Adv Ch4
+              </button>
+              <button
+                type="button"
+                className="ad__grade-btn"
+                style={{ padding: '8px 16px', borderRadius: '12px', fontSize: '0.75rem', cursor: 'pointer', background: 'linear-gradient(135deg, #10b981, #059669)', border: 'none', color: 'white', fontWeight: 800 }}
+                onClick={() => onSyncChapter?.(5)}
+                disabled={isSyncing}
+              >
+                Sync Y11 Adv Ch5
+              </button>
+            </div>
+            <p style={{ fontSize: '0.65rem', color: '#94a3b8', marginTop: '10px', fontWeight: 600 }}>
+              * Syncing will replace existing questions for these chapters.
+            </p>
           </div>
-          <div className="ad__sys-row">
-            <span className="ad__sys-l">
-              <span className="ad__dot ad__dot--green" /> Auto-Reminder Service
-            </span>
-            <span className="ad__sys-active">Active</span>
-          </div>
-          <div className="ad__sys-row">
-            <span className="ad__sys-l">Last sync</span>
-            <span className="ad__sys-v">
-              {lastSync?.timestamp
-                ? formatTime(lastSync.timestamp.toDate?.() || lastSync.timestamp)
-                : 'Never'}
-            </span>
-          </div>
-          <div className="ad__sys-row">
-            <span className="ad__sys-l">Reminders sent today</span>
-            <span className="ad__sys-v">{remindersSentToday}</span>
-          </div>
-          <button
-            type="button"
-            className="ad__send"
-            onClick={onSendReminders}
-            disabled={isSyncing}
-            title="Manually trigger daily notifications and schedule reminders"
-          >
-            <span className="ad__send-ic">
-              <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
-            </span>
-            <span className="ad__send-info">
-              <strong>{isSyncing ? 'Sending...' : 'Send Reminders Now'}</strong>
-              <span>
-                {isSyncing 
-                  ? 'Processing notification queue...' 
-                  : pendingToday === 0
-                    ? 'Check & notify students (Forced Sync)'
-                    : (
-                      <>
-                        Notify{' '}
-                        <em className="ad__send-pending">
-                          {pendingToday} student{pendingToday === 1 ? '' : 's'}
-                        </em>{' '}
-                        who haven&apos;t started today
-                      </>
-                    )}
+
+          <div className="ad__panel">
+            <div className="ad__panel-head">
+              <h4>System status</h4>
+            </div>
+            <div className="ad__sys-row">
+              <span className="ad__sys-l">
+                <span className="ad__dot ad__dot--green" /> Auto-Reminder Service
               </span>
-            </span>
-            <ChevronRight size={18} className="ad__send-arr" />
-          </button>
-        </div>
+              <span className="ad__sys-active">Active</span>
+            </div>
+            <div className="ad__sys-row">
+              <span className="ad__sys-l">Last sync</span>
+              <span className="ad__sys-v">
+                {lastSync?.timestamp
+                  ? formatTime(lastSync.timestamp.toDate?.() || lastSync.timestamp)
+                  : 'Never'}
+              </span>
+            </div>
+            <div className="ad__sys-row">
+              <span className="ad__sys-l">Reminders sent today</span>
+              <span className="ad__sys-v">{remindersSentToday}</span>
+            </div>
+            <button
+              type="button"
+              className="ad__send"
+              onClick={onSendReminders}
+              disabled={isSyncing}
+              title="Manually trigger daily notifications and schedule reminders"
+            >
+              <span className="ad__send-ic">
+                <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
+              </span>
+              <span className="ad__send-info">
+                <strong>{isSyncing ? 'Sending...' : 'Send Reminders Now'}</strong>
+                <span>
+                  {isSyncing 
+                    ? 'Processing notification queue...' 
+                    : pendingToday === 0
+                      ? 'Check & notify students (Forced Sync)'
+                      : (
+                        <>
+                          Notify{' '}
+                          <em className="ad__send-pending">
+                            {pendingToday} student{pendingToday === 1 ? '' : 's'}
+                          </em>{' '}
+                          who haven&apos;t started today
+                        </>
+                      )}
+                </span>
+              </span>
+              <ChevronRight size={18} className="ad__send-arr" />
+            </button>
+          </div>
       </div>
     </motion.div>
   );
