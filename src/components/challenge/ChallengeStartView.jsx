@@ -12,32 +12,24 @@ import {
   BookLock,
 } from 'lucide-react';
 
-// ── Secret Notebook entry card ─────────────────────────────────────────────
-const SecretNoteCard = ({ kind, note, onOpen }) => {
+// ── Secret Notebook footer strip (lives inside the test card) ──────────────
+const SecretNoteStrip = ({ kind, note, onOpen }) => {
   const total = note?.total || 0;
   const due = note?.due || 0;
   if (total === 0) return null;
-  const isCalc = kind === 'calc';
   return (
     <button
       type="button"
-      className={`cs__note cs__note--${kind}`}
+      className={`cs__note-strip cs__note-strip--${kind}`}
       onClick={() => onOpen?.(kind)}
     >
-      <div className={`cs__note-ico cs__note-ico--${kind}`}>
-        <BookLock size={20} />
-      </div>
-      <div className="cs__note-main">
-        <h4>
-          Secret Note · {isCalc ? 'Calculation' : 'Daily'}
-        </h4>
-        <p>
-          {total} question{total > 1 ? 's' : ''} saved
-          {due > 0 ? ` · ${due} due for review today` : ' · all reviewed'}
-        </p>
-      </div>
-      {due > 0 && <span className="cs__note-due">{due} due</span>}
-      <ArrowRight size={16} className="cs__note-arrow" />
+      <BookLock size={16} className="cs__note-strip-ico" />
+      <span className="cs__note-strip-text">
+        <strong>Secret Note</strong> · {total} saved
+        {due === 0 ? ' · all reviewed' : ''}
+      </span>
+      {due > 0 && <span className={`cs__note-strip-due cs__note-strip-due--${kind}`}>{due} due</span>}
+      <ArrowRight size={15} className="cs__note-strip-arrow" />
     </button>
   );
 };
@@ -190,7 +182,7 @@ const WeeklyBars = ({ data, kind }) => {
   );
 };
 
-// ── Pill-row test card (Daily / Calculation) ───────────────
+// ── Test card (Daily / Calculation) with attached Secret Note footer ───────
 const TestRow = ({
   kind,
   title,
@@ -198,45 +190,50 @@ const TestRow = ({
   state, // 'idle' | 'loading' | 'completed' | 'abandoned'
   onBegin,
   onReview,
+  note,
+  onOpenNote,
 }) => {
   const isCalc = kind === 'calc';
   const beginClass = isCalc ? 'cs__begin cs__begin--calc' : 'cs__begin cs__begin--daily';
   return (
-    <div className="cs__test">
-      <div className={`cs__test-ico cs__test-ico--${kind}`}>
-        {isCalc ? <Target size={24} /> : <BookOpen size={24} />}
+    <div className="cs__test-card">
+      <div className="cs__test">
+        <div className={`cs__test-ico cs__test-ico--${kind}`}>
+          {isCalc ? <Target size={24} /> : <BookOpen size={24} />}
+        </div>
+        <div className="cs__test-main">
+          <h3>{title}</h3>
+          <p>{meta}</p>
+        </div>
+        <div className="cs__test-actions">
+          {state !== 'loading' && (
+            <button
+              type="button"
+              className="cs__review"
+              onClick={onReview}
+              title={`Past records for ${title}`}
+            >
+              <History size={14} /> Review
+            </button>
+          )}
+          {state === 'completed' ? (
+            <span className="cs__status cs__status--done">
+              <CheckCircle2 size={16} /> Done today
+            </span>
+          ) : state === 'abandoned' ? (
+            <span className="cs__status cs__status--ended">
+              <AlertTriangle size={16} /> Ended — try tomorrow
+            </span>
+          ) : state === 'loading' ? (
+            <span className="cs__status">Checking...</span>
+          ) : (
+            <button type="button" className={beginClass} onClick={onBegin}>
+              Begin <ArrowRight size={16} />
+            </button>
+          )}
+        </div>
       </div>
-      <div className="cs__test-main">
-        <h3>{title}</h3>
-        <p>{meta}</p>
-      </div>
-      <div className="cs__test-actions">
-        {state !== 'loading' && (
-          <button
-            type="button"
-            className="cs__review"
-            onClick={onReview}
-            title={`Past records for ${title}`}
-          >
-            <History size={14} /> Review
-          </button>
-        )}
-        {state === 'completed' ? (
-          <span className="cs__status cs__status--done">
-            <CheckCircle2 size={16} /> Done today
-          </span>
-        ) : state === 'abandoned' ? (
-          <span className="cs__status cs__status--ended">
-            <AlertTriangle size={16} /> Ended — try tomorrow
-          </span>
-        ) : state === 'loading' ? (
-          <span className="cs__status">Checking...</span>
-        ) : (
-          <button type="button" className={beginClass} onClick={onBegin}>
-            Begin <ArrowRight size={16} />
-          </button>
-        )}
-      </div>
+      <SecretNoteStrip kind={kind} note={note} onOpen={onOpenNote} />
     </div>
   );
 };
@@ -272,7 +269,6 @@ const ChallengeStartView = ({
 
   const dailyNote = secretNote?.daily || { total: 0, due: 0 };
   const calcNote = secretNote?.calc || { total: 0, due: 0 };
-  const totalDue = (dailyNote.due || 0) + (calcNote.due || 0);
 
   // Daily state
   const dailyState = !todayStatusReady
@@ -388,25 +384,7 @@ const ChallengeStartView = ({
           )}
         </div>
 
-        {/* Forgetting-curve review banner */}
-        {totalDue > 0 && (
-          <button
-            type="button"
-            className="cs__review-banner"
-            onClick={() =>
-              onOpenSecretNote?.(dailyNote.due >= calcNote.due ? 'daily' : 'calc')
-            }
-          >
-            <span className="cs__review-banner-ico">🧠</span>
-            <span className="cs__review-banner-text">
-              Perfect time to review! <strong>{totalDue} question{totalDue > 1 ? 's' : ''}</strong> from
-              your Secret Note are due today.
-            </span>
-            <ArrowRight size={16} />
-          </button>
-        )}
-
-        {/* Test cards */}
+        {/* Test cards (each with its attached Secret Note footer) */}
         <div className="cs__tests">
           <TestRow
             kind="daily"
@@ -415,20 +393,20 @@ const ChallengeStartView = ({
             state={dailyState}
             onBegin={onStartDailyQuiz}
             onReview={() => onViewHistory?.('daily')}
+            note={dailyNote}
+            onOpenNote={onOpenSecretNote}
           />
-          <SecretNoteCard kind="daily" note={dailyNote} onOpen={onOpenSecretNote} />
           {calculationEnabled && (
-            <>
-              <TestRow
-                kind="calc"
-                title="Calculation sprint"
-                meta={`${calcQ} questions · ~3 minutes · up to ${calcXp} XP`}
-                state={calcState}
-                onBegin={onStartCalculationQuiz}
-                onReview={() => onViewHistory?.('calc')}
-              />
-              <SecretNoteCard kind="calc" note={calcNote} onOpen={onOpenSecretNote} />
-            </>
+            <TestRow
+              kind="calc"
+              title="Calculation sprint"
+              meta={`${calcQ} questions · ~3 minutes · up to ${calcXp} XP`}
+              state={calcState}
+              onBegin={onStartCalculationQuiz}
+              onReview={() => onViewHistory?.('calc')}
+              note={calcNote}
+              onOpenNote={onOpenSecretNote}
+            />
           )}
         </div>
 
@@ -609,49 +587,38 @@ const challengeStartStyles = `
     font-weight: 800; font-size: 0.7rem;
   }
 
-  /* Forgetting-curve review banner */
-  .cs__review-banner {
-    display: flex; align-items: center; gap: 12px; width: 100%;
-    padding: 14px 18px; border-radius: 18px; cursor: pointer; text-align: left;
-    background: linear-gradient(135deg, #ede9fe, #fce7f3);
-    border: 1px solid #ddd6fe; color: #6d28d9;
-  }
-  .cs__review-banner-ico { font-size: 1.4rem; }
-  .cs__review-banner-text { flex: 1; font-size: 0.9rem; font-weight: 700; }
-  .cs__review-banner-text strong { font-weight: 900; }
-
-  /* Secret Notebook entry card */
-  .cs__note {
-    display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
-    padding: 14px 20px; border-radius: 20px; cursor: pointer;
-    background: #faf8ff; border: 1.5px dashed #d8d1f5;
-    transition: border-color 0.15s ease, background 0.15s ease;
-    margin-top: -2px;
-  }
-  .cs__note:hover { border-color: #a78bfa; background: #f5f3ff; }
-  .cs__note--calc { background: #fffbeb; border-color: #fcd9a5; }
-  .cs__note--calc:hover { border-color: #fbbf24; background: #fef7e6; }
-  .cs__note-ico { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; flex-shrink: 0; }
-  .cs__note-ico--daily { background: #ede9fe; color: #7c3aed; }
-  .cs__note-ico--calc { background: #fef3c7; color: #b45309; }
-  .cs__note-main { flex: 1; min-width: 0; }
-  .cs__note-main h4 { font-size: 0.95rem; font-weight: 900; color: #1e1b4b; margin: 0 0 2px; }
-  .cs__note-main p { font-size: 0.8rem; color: #6d6a85; margin: 0; font-weight: 600; }
-  .cs__note-due {
-    padding: 4px 11px; border-radius: 999px; font-size: 0.72rem; font-weight: 900;
-    background: #8b5cf6; color: #fff; flex-shrink: 0;
-  }
-  .cs__note--calc .cs__note-due { background: #f59e0b; }
-  .cs__note-arrow { color: #a78bfa; flex-shrink: 0; }
-
-  /* Test pill rows */
+  /* Test cards */
   .cs__tests { display: flex; flex-direction: column; gap: 12px; }
+  .cs__test-card {
+    background: #ffffff; border-radius: 24px; border: 1px solid #f1f5f9;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.04); overflow: hidden;
+  }
   .cs__test {
     display: flex; align-items: center; gap: 18px;
     padding: 18px 22px;
-    background: #ffffff; border-radius: 24px; border: 1px solid #f1f5f9;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.04);
   }
+
+  /* Secret Note footer strip (attached inside the test card) */
+  .cs__note-strip {
+    display: flex; align-items: center; gap: 10px; width: 100%;
+    padding: 12px 22px; cursor: pointer; text-align: left;
+    border: 0; border-top: 1px solid #f1f5f9;
+    background: #faf8ff; transition: background 0.15s ease;
+  }
+  .cs__note-strip:hover { background: #f3f0ff; }
+  .cs__note-strip--calc { background: #fffbeb; }
+  .cs__note-strip--calc:hover { background: #fdf3da; }
+  .cs__note-strip-ico { color: #8b5cf6; flex-shrink: 0; }
+  .cs__note-strip--calc .cs__note-strip-ico { color: #d97706; }
+  .cs__note-strip-text { flex: 1; font-size: 0.84rem; color: #6d6a85; font-weight: 600; }
+  .cs__note-strip-text strong { color: #1e1b4b; font-weight: 900; }
+  .cs__note-strip-due {
+    padding: 3px 11px; border-radius: 999px; font-size: 0.7rem; font-weight: 900;
+    background: #8b5cf6; color: #fff; flex-shrink: 0;
+  }
+  .cs__note-strip-due--calc { background: #f59e0b; }
+  .cs__note-strip-arrow { color: #a78bfa; flex-shrink: 0; }
+  .cs__note-strip--calc .cs__note-strip-arrow { color: #f0b04f; }
   .cs__test-ico { width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; flex-shrink: 0; }
   .cs__test-ico--daily { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); color: #4338ca; }
   .cs__test-ico--calc { background: linear-gradient(135deg, #fde68a, #fbbf24); color: #b45309; }
