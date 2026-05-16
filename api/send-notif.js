@@ -1,5 +1,5 @@
 import admin from 'firebase-admin';
-import nodemailer from 'nodemailer';
+import { sendEmail } from './_lib/email.js';
 
 function escapeHtml(value = '') {
   return String(value)
@@ -218,32 +218,21 @@ export default async function handler(req, res) {
 
   // Run email and Firebase in parallel — cuts total time roughly in half
   const emailTask = (async () => {
-    try {
-      const GMAIL_USER = process.env.GMAIL_USER;
-      const GMAIL_PASS = process.env.GMAIL_PASS;
-      if (!GMAIL_USER || !GMAIL_PASS || !email) {
-        if (!GMAIL_USER || !GMAIL_PASS) console.warn('[send-notif] GMAIL credentials missing — email skipped');
-        if (!email) console.warn('[send-notif] Recipient email is missing — email skipped');
-        return false;
-      }
-      const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: { user: GMAIL_USER, pass: GMAIL_PASS },
-      });
-      await transporter.sendMail({
-        from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
-        to: email,
-        subject: subject,
-        html: buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`)
-      });
-      console.log(`[send-notif] Email sent to ${email}`);
-      return true;
-    } catch (err) {
-      console.error('[send-notif] Email error:', err.message);
+    if (!email) {
+      console.warn('[send-notif] Recipient email is missing — email skipped');
       return false;
     }
+    const result = await sendEmail({
+      to: email,
+      subject,
+      html: buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`),
+    });
+    if (result.sent) {
+      console.log(`[send-notif] Email sent to ${email}`);
+    } else {
+      console.error('[send-notif] Email error:', result.error);
+    }
+    return result.sent;
   })();
 
   const firebaseTask = (async () => {
