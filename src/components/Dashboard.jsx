@@ -105,10 +105,11 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const handleManualSync = async () => {
     setIsSyncing(true);
     try {
-      const res = await fetch('/api/cron-unified');
+      // Use force=true to bypass the once-per-day check when manually triggered by admin
+      const res = await fetch('/api/cron-unified?force=true');
       const data = await res.json();
       if (data.success) {
-        showToast(`Sync successful! ${data.logs.length} reminders sent.`, 'success');
+        showToast(`Sync successful! ${data.logs.filter(l => l.includes('sent')).length} reminders sent.`, 'success');
       } else {
         showToast('Sync failed: ' + data.error, 'error');
       }

@@ -1,50 +1,34 @@
-import admin from 'firebase-admin';
-import { readFileSync } from 'fs';
-import 'dotenv/config';
-
-// Load env from .env.local if exists
-try {
-  const envFile = readFileSync('.env.local', 'utf8');
-  envFile.split('\n').forEach(line => {
-    const [key, ...value] = line.split('=');
-    if (key && value) {
-      process.env[key.trim()] = value.join('=').trim().replace(/^"|"$/g, '');
-    }
-  });
-} catch(e) {}
+const admin = require('firebase-admin');
 
 if (!admin.apps.length) {
   admin.initializeApp({
-    credential: admin.credential.cert({
-      projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-    }),
+    projectId: 'sapere-fe23e'
   });
 }
 
-async function check() {
-  const db = admin.firestore();
-  console.log("Fetching latest cron_execution logs...");
+const db = admin.firestore();
+
+async function checkLogs() {
+  console.log('Checking system_logs (Simple Query on sapere-fe23e)...');
+  
   const snap = await db.collection('system_logs')
-    .where('type', 'in', ['cron_execution', 'cron_execution_error', 'cron_execution_start'])
     .orderBy('timestamp', 'desc')
     .limit(10)
     .get();
-  
+
   if (snap.empty) {
-    console.log("No cron logs found.");
+    console.log('No logs found.');
     return;
   }
 
   snap.forEach(doc => {
     const data = doc.data();
-    console.log(`[${data.timestamp?.toDate()?.toISOString()}] TYPE: ${data.type}`);
-    console.log(`Sydney Time: ${data.sydneyTime}, Status: ${data.status || 'N/A'}`);
-    if (data.error) console.log(`Error: ${data.error}`);
-    console.log(`Logs:`);
-    (data.logs || []).forEach(l => console.log(`  - ${l}`));
+    const ts = data.timestamp ? data.timestamp.toDate().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' }) : 'N/A';
+    console.log(`[${ts}] TYPE: ${data.type} | STATUS: ${data.status || 'N/A'}`);
+    if (data.sydneyTime) console.log(`   SYDNEY_TIME: ${data.sydneyTime}`);
+    if (data.error) console.log(`   ERROR: ${data.error}`);
     console.log('---');
   });
 }
-check().catch(console.error);
+
+checkLogs().catch(console.error);

@@ -442,26 +442,28 @@ const AdminDashboard = ({
             type="button"
             className="ad__send"
             onClick={onSendReminders}
-            disabled={isSyncing || pendingToday === 0}
-            title="Notify students who haven't completed today's challenge"
+            disabled={isSyncing}
+            title="Manually trigger daily notifications and schedule reminders"
           >
             <span className="ad__send-ic">
-              <Bell size={18} />
+              <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
             </span>
             <span className="ad__send-info">
-              <strong>Send Reminders</strong>
+              <strong>{isSyncing ? 'Sending...' : 'Send Reminders Now'}</strong>
               <span>
-                {pendingToday === 0
-                  ? 'All caught up — nothing to send.'
-                  : (
-                    <>
-                      Notify{' '}
-                      <em className="ad__send-pending">
-                        {pendingToday} student{pendingToday === 1 ? '' : 's'}
-                      </em>{' '}
-                      who haven&apos;t started today
-                    </>
-                  )}
+                {isSyncing 
+                  ? 'Processing notification queue...' 
+                  : pendingToday === 0
+                    ? 'Check & notify students (Forced Sync)'
+                    : (
+                      <>
+                        Notify{' '}
+                        <em className="ad__send-pending">
+                          {pendingToday} student{pendingToday === 1 ? '' : 's'}
+                        </em>{' '}
+                        who haven&apos;t started today
+                      </>
+                    )}
               </span>
             </span>
             <ChevronRight size={18} className="ad__send-arr" />
