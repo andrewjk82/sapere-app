@@ -141,7 +141,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
           )}
           {onShowNotifs && (
             <button
-              onClick={(e) => { e.stopPropagation(); onShowNotifs(); }}
+              onClick={(e) => { e.preventDefault(); e.stopPropagation(); onShowNotifs(); }}
               title="Notifications"
               style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#6366f1', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '38px', height: '38px', borderRadius: '10px', position: 'relative', transition: 'background 0.2s' }}
               onMouseOver={e => e.currentTarget.style.background = 'rgba(99,102,241,0.08)'}

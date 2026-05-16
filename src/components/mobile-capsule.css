@@ -173,7 +173,7 @@
   font-size: 0.9rem !important;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 921px) {
   .notif-dropdown {
     top: auto !important;
     bottom: 32px !important;
