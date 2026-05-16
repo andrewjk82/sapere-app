@@ -883,8 +883,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             students={students}
           />
         )}
-      </AnimatePresence>
-
       {selectedGradingItem && (
           <div style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
             <motion.div
