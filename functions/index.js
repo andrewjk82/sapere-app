@@ -68,10 +68,10 @@ exports.processEmailQueue = functions.firestore
   });
 
 /**
- * Scheduled Function: Runs every day at 8:00 PM
+ * Scheduled Function: Runs every day at 7:00 PM (Australia/Sydney)
  */
 exports.sendNightBeforeReminders = functions.pubsub
-  .schedule('0 20 * * *')
+  .schedule('0 19 * * *')
   .timeZone('Australia/Sydney')
   .onRun(async (context) => {
     // ... (existing code for night before)
