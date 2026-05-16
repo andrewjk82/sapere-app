@@ -654,50 +654,61 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <div className="dashboard-card__header">
                     <h3>Quick Actions</h3>
                   </div>
-                  <div className="app-action-buttons" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <div className="app-action-buttons" style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(auto-fit, minmax(180px, 1fr))', 
+                    gap: '12px',
+                    padding: '4px'
+                  }}>
                     <button 
                       onClick={handleManualRefresh}
                       disabled={isRefreshing}
                       className="app-button app-button--primary"
-                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                      style={{ display: 'flex', flexDirection: 'column', height: '100px', alignItems: 'center', gap: '8px', justifyContent: 'center', borderRadius: '20px', padding: '12px' }}
                     >
-                      <Users size={18} className={isRefreshing ? 'animate-spin' : ''} />
-                      {isRefreshing ? 'Syncing...' : 'Sync Students'}
+                      <Users size={24} className={isRefreshing ? 'animate-spin' : ''} />
+                      <span style={{ fontSize: '0.85rem', fontWeight: 800 }}>Sync Students</span>
                     </button>
-                    <button className="app-button app-button--secondary" onClick={() => setShowScheduleModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
-                      <Calendar size={18} /> Schedule Lesson
+                    <button 
+                      className="app-button app-button--secondary" 
+                      onClick={() => setShowScheduleModal(true)} 
+                      style={{ display: 'flex', flexDirection: 'column', height: '100px', alignItems: 'center', gap: '8px', justifyContent: 'center', borderRadius: '20px', padding: '12px', background: '#fff', border: '1.5px solid #f1f5f9' }}
+                    >
+                      <Calendar size={24} color="#6366f1" />
+                      <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#1e1b4b' }}>Schedule Lesson</span>
                     </button>
                     <button
                       className="app-button app-button--secondary"
                       onClick={onShowLeaderboard}
-                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                      style={{ display: 'flex', flexDirection: 'column', height: '100px', alignItems: 'center', gap: '8px', justifyContent: 'center', borderRadius: '20px', padding: '12px', background: '#fff', border: '1.5px solid #f1f5f9' }}
                     >
-                      <Trophy size={18} /> Leaderboard
+                      <Trophy size={24} color="#f59e0b" />
+                      <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#1e1b4b' }}>Leaderboard</span>
                     </button>
                     <button 
                       className="app-button app-button--secondary" 
                       onClick={handleManualSync}
                       disabled={isSyncing}
-                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                      style={{ display: 'flex', flexDirection: 'column', height: '100px', alignItems: 'center', gap: '8px', justifyContent: 'center', borderRadius: '20px', padding: '12px', background: '#fff', border: '1.5px solid #f1f5f9' }}
                     >
-                      <Bell size={18} className={isSyncing ? 'animate-spin' : ''} />
-                      {isSyncing ? 'Syncing...' : 'Sync Reminders'}
+                      <Bell size={24} className={isSyncing ? 'animate-spin' : ''} color="#8b5cf6" />
+                      <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#1e1b4b' }}>Sync Reminders</span>
                     </button>
-                    {isAdmin && isImporting && (
-                      <div style={{ padding: '10px', borderRadius: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
-                        <Plus size={16} className="animate-spin" color="#6366f1" />
-                        <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1' }}>Syncing curriculum...</span>
-                      </div>
-                    )}
                     <button
                       className="app-button app-button--secondary"
                       onClick={handleSeedLeaderboard}
                       disabled={isSeedingLeaderboard}
-                      style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center' }}
+                      style={{ display: 'flex', flexDirection: 'column', height: '100px', alignItems: 'center', gap: '8px', justifyContent: 'center', borderRadius: '20px', padding: '12px', background: '#fff', border: '1.5px solid #f1f5f9' }}
                     >
-                      <Trophy size={18} className={isSeedingLeaderboard ? 'animate-spin' : ''} />
-                      {isSeedingLeaderboard ? 'Syncing Leaderboard...' : 'Sync Leaderboard DB'}
+                      <Trophy size={24} className={isSeedingLeaderboard ? 'animate-spin' : ''} color="#ec4899" />
+                      <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#1e1b4b' }}>Sync LB DB</span>
                     </button>
+                    {isAdmin && isImporting && (
+                      <div style={{ padding: '10px', borderRadius: '20px', background: '#f8fafc', border: '1px dashed #cbd5e1', display: 'flex', flexDirection: 'column', height: '100px', alignItems: 'center', gap: '8px', justifyContent: 'center' }}>
+                        <Plus size={20} className="animate-spin" color="#6366f1" />
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textAlign: 'center' }}>Importing...</span>
+                      </div>
+                    )}
                   </div>
                 </div>
 
