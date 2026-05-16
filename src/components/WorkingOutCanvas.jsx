@@ -2,25 +2,24 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.0-fast';
+const CANVAS_VERSION = 'v9.2-pen';
 
-// Minimum squared distance between captured points (1.4px). Fast strokes have
-// far-apart points anyway, so this only trims redundant near-duplicate samples.
+// Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
 
 const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
 
-const hasCoarsePointer = () =>
-  typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
-
 // ─── Rendering primitives ───────────────────────────────────────────────────
 // A stroke = { points: [[x, y, width], ...], color, width, isEraser, completed }
-// Live rendering is INCREMENTAL: each frame only the brand-new segments are
-// drawn — old segments are never reprocessed. O(new points) per frame.
+//
+// Three canvases keep the live stroke pinned to the pointer with zero lag:
+//   bg    — all completed strokes
+//   live  — current stroke's SETTLED segments (incremental, never cleared)
+//   tip   — current stroke's leading tip only (cleared + redrawn every frame,
+//           extended with predicted points so ink reaches/leads the pointer)
 
-// Draw pen segments [startIdx .. end) onto ctx using quadratic-midpoint
-// smoothing with per-segment variable width. startIdx is the first segment
-// index to draw (segment i connects points[i-1] → points[i]; always ≥ 1).
+// Draw pen segments [startIdx .. end) using quadratic-midpoint smoothing with
+// per-segment variable width. Segment i connects points[i-1] → points[i].
 function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
   if (!ctx || !pts || pts.length === 0) return;
   ctx.save();
@@ -30,7 +29,6 @@ function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 
-  // Single point → round dot.
   if (pts.length === 1) {
     const p = pts[0];
     ctx.beginPath();
@@ -44,8 +42,6 @@ function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
   for (let i = from; i < pts.length; i++) {
     const p0 = pts[i - 1];
     const p1 = pts[i];
-    // Curve runs from the previous midpoint to the current midpoint, with the
-    // shared point p0 as the quadratic control — guarantees C1 continuity.
     const fromX = i === 1 ? p0[0] : (pts[i - 2][0] + p0[0]) / 2;
     const fromY = i === 1 ? p0[1] : (pts[i - 2][1] + p0[1]) / 2;
     const toX = (p0[0] + p1[0]) / 2;
@@ -57,9 +53,6 @@ function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
     ctx.stroke();
   }
 
-  // Final tip: from the last midpoint to the actual last point. Only drawn for
-  // completed strokes (live rendering leaves a ~half-segment tail that catches
-  // up on the next frame — invisible during motion).
   if (includeTip && pts.length >= 2) {
     const a = pts[pts.length - 2];
     const b = pts[pts.length - 1];
@@ -73,7 +66,44 @@ function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
   ctx.restore();
 }
 
-// Draw eraser segments [startIdx .. end) onto ctx (destination-out).
+// Draw the live leading tip: from the last settled midpoint, through the last
+// real point, then on through predicted points. Lives on its own canvas that
+// is fully cleared every frame, so prediction overshoot self-corrects.
+function drawTip(ctx, stroke, dpr, predicted) {
+  if (!ctx || !stroke) return;
+  const pts = stroke.points;
+  if (pts.length === 0) return;
+  ctx.save();
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.strokeStyle = stroke.color;
+  ctx.fillStyle = stroke.color;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+
+  if (pts.length === 1) {
+    const p = pts[0];
+    ctx.beginPath();
+    ctx.arc(p[0] * dpr, p[1] * dpr, Math.max(0.6, p[2] / 2) * dpr, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+    return;
+  }
+
+  const n = pts.length - 1;
+  const a = pts[n - 1];
+  const b = pts[n];
+  ctx.lineWidth = Math.max(0.4, b[2]) * dpr;
+  ctx.beginPath();
+  ctx.moveTo(((a[0] + b[0]) / 2) * dpr, ((a[1] + b[1]) / 2) * dpr);
+  ctx.lineTo(b[0] * dpr, b[1] * dpr);
+  for (let i = 0; i < predicted.length; i++) {
+    ctx.lineTo(predicted[i][0] * dpr, predicted[i][1] * dpr);
+  }
+  ctx.stroke();
+  ctx.restore();
+}
+
+// Draw eraser segments [startIdx .. end) (destination-out).
 function drawEraserSegments(ctx, pts, startIdx, width, dpr) {
   if (!ctx || !pts || pts.length === 0) return;
   ctx.save();
@@ -100,7 +130,7 @@ function drawEraserSegments(ctx, pts, startIdx, width, dpr) {
   ctx.restore();
 }
 
-// Replay a fully-committed stroke (used by background redraw + export).
+// Replay a fully-committed stroke (background redraw + export).
 function replayStroke(ctx, stroke, dpr) {
   if (!stroke?.points?.length) return;
   if (stroke.isEraser) {
@@ -116,28 +146,31 @@ const pageHasInk = (pageStrokes = []) =>
   );
 
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
-  const displayCanvasRef = useRef(null);
   const bgCanvasRef = useRef(null);
-  const displayCtxRef = useRef(null);
+  const liveCanvasRef = useRef(null);
+  const displayCanvasRef = useRef(null); // top layer: tip + pointer events
   const bgCtxRef = useRef(null);
+  const liveCtxRef = useRef(null);
+  const tipCtxRef = useRef(null);
 
   // Live-stroke session refs
   const isDrawingRef = useRef(false);
   const activePointerIdRef = useRef(null);
   const currentStrokeRef = useRef(null);
-  const liveDrawnIdxRef = useRef(1);   // next segment index not yet drawn live
+  const liveDrawnIdxRef = useRef(1);   // next segment index not yet settled
+  const predictedPtsRef = useRef([]);  // predicted [x,y] points for the tip
   const rectRef = useRef(null);        // canvas rect cached at pointerdown
   const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
   const smoothWRef = useRef(3);        // low-pass-filtered line width
+  const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
 
   // Background bookkeeping
-  const bgRenderedRef = useRef([]);    // strokes already painted on the bg canvas
+  const bgRenderedRef = useRef([]);
   const strokesRef = useRef([]);
 
-  // Stable ref holding the latest pointer handlers
   const handlersRef = useRef({});
 
-  // Tool state mirrored to refs so handlers (attached once) see fresh values
+  // Tool state mirrored to refs so the once-attached handlers see fresh values
   const isSubmittedRef = useRef(false);
   const activeToolRef = useRef('pen');
   const eraserModeRef = useRef('area');
@@ -167,20 +200,30 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const isGraph = questionType === 'graph_sketch';
 
   // ─── Cached drawing contexts (desynchronized → lower touch-to-pixel latency)
-  const getDisplayCtx = () => {
-    if (!displayCtxRef.current && displayCanvasRef.current) {
-      displayCtxRef.current = displayCanvasRef.current.getContext('2d', { desynchronized: true });
-    }
-    return displayCtxRef.current;
-  };
   const getBgCtx = () => {
     if (!bgCtxRef.current && bgCanvasRef.current) {
       bgCtxRef.current = bgCanvasRef.current.getContext('2d', { desynchronized: true });
     }
     return bgCtxRef.current;
   };
+  const getLiveCtx = () => {
+    if (!liveCtxRef.current && liveCanvasRef.current) {
+      liveCtxRef.current = liveCanvasRef.current.getContext('2d', { desynchronized: true });
+    }
+    return liveCtxRef.current;
+  };
+  const getTipCtx = () => {
+    if (!tipCtxRef.current && displayCanvasRef.current) {
+      tipCtxRef.current = displayCanvasRef.current.getContext('2d', { desynchronized: true });
+    }
+    return tipCtxRef.current;
+  };
 
-  // ─── Background canvas: full replay (undo / page switch / resize) ──────────
+  const clearCanvas = (canvas, ctx) => {
+    if (canvas && ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
+  };
+
+  // ─── Background: full replay (undo / page switch / resize) ────────────────
   const redrawBackground = useCallback(() => {
     const ctx = getBgCtx();
     const canvas = bgCanvasRef.current;
@@ -191,25 +234,35 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     bgRenderedRef.current = strokesRef.current;
   }, []);
 
-  // ─── Incremental live render: only paints brand-new segments ──────────────
+  // ─── Incremental live render ──────────────────────────────────────────────
+  // Settled segments → live canvas (drawn once, never touched again).
+  // Leading tip → tip canvas (cleared + redrawn every frame, +predicted).
   const flushLive = useCallback(() => {
     const stroke = currentStrokeRef.current;
     if (!stroke) return;
     const dpr = window.devicePixelRatio || 1;
     const pts = stroke.points;
+
     if (stroke.isEraser) {
       drawEraserSegments(getBgCtx(), pts, liveDrawnIdxRef.current, stroke.width, dpr);
-    } else {
-      drawPenSegments(getDisplayCtx(), pts, liveDrawnIdxRef.current, stroke.color, dpr, false);
+      liveDrawnIdxRef.current = pts.length;
+      return;
     }
-    liveDrawnIdxRef.current = pts.length; // next segment to draw
+
+    drawPenSegments(getLiveCtx(), pts, liveDrawnIdxRef.current, stroke.color, dpr, false);
+    liveDrawnIdxRef.current = pts.length;
+
+    const tipCtx = getTipCtx();
+    clearCanvas(displayCanvasRef.current, tipCtx);
+    drawTip(tipCtx, stroke, dpr, predictedPtsRef.current);
   }, []);
 
   // ─── Canvas sizing ────────────────────────────────────────────────────────
   const syncSize = useCallback(() => {
     const display = displayCanvasRef.current;
+    const live = liveCanvasRef.current;
     const bg = bgCanvasRef.current;
-    if (!display || !bg) return;
+    if (!display || !live || !bg) return;
     const { width, height } = display.getBoundingClientRect();
     if (width === 0 || height === 0) return;
 
@@ -218,8 +271,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     const newH = Math.round(height * dpr);
 
     let resized = false;
-    if (display.width !== newW || display.height !== newH) { display.width = newW; display.height = newH; resized = true; }
-    if (bg.width !== newW || bg.height !== newH) { bg.width = newW; bg.height = newH; resized = true; }
+    [display, live, bg].forEach(c => {
+      if (c.width !== newW || c.height !== newH) { c.width = newW; c.height = newH; resized = true; }
+    });
     if (resized) redrawBackground();
   }, [redrawBackground]);
 
@@ -231,8 +285,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     return () => ro.disconnect();
   }, [syncSize]);
 
-  // Background redraw only when strokes change in a non-append way (undo, clear,
-  // page switch). A plain append is already painted by the pointerup handler.
+  // Background redraws only on non-append changes (undo / clear / page switch).
   useEffect(() => {
     const prev = bgRenderedRef.current;
     const isAppend =
@@ -271,11 +324,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     if (stroke.hasRealPressure) {
       target = baseW * (0.55 + Math.min(1, pressure) * 1.1);
     } else {
-      // Faster movement → thinner line (natural ballpoint feel).
       const f = Math.max(0.6, Math.min(1.3, 1.3 - velocity * 0.14));
       target = baseW * f;
     }
-    // Low-pass filter so the width never jitters.
     smoothWRef.current = smoothWRef.current * 0.55 + target * 0.45;
     return smoothWRef.current;
   };
@@ -296,13 +347,78 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     }
   };
 
+  // Discard an in-progress stroke without committing (used when a pen press
+  // preempts a stray palm/touch stroke).
+  const discardCurrentStroke = () => {
+    currentStrokeRef.current = null;
+    isDrawingRef.current = false;
+    activePointerIdRef.current = null;
+    predictedPtsRef.current = [];
+    clearCanvas(liveCanvasRef.current, getLiveCtx());
+    clearCanvas(displayCanvasRef.current, getTipCtx());
+  };
+
+  // Commit a stroke: draw it onto the bg, clear overlays, push to state.
+  const finalizeStroke = (stroke, finalE) => {
+    if (!stroke) return;
+    const dpr = window.devicePixelRatio || 1;
+    // Capture the genuine final point so quick taps / short flicks never vanish.
+    const rect = rectRef.current;
+    if (finalE && rect && typeof finalE.clientX === 'number') {
+      const x = finalE.clientX - rect.left;
+      const y = finalE.clientY - rect.top;
+      const pts = stroke.points;
+      const last = pts[pts.length - 1];
+      const dx = x - last[0], dy = y - last[1];
+      if (dx * dx + dy * dy >= 0.25) pts.push([x, y, last[2]]);
+    }
+    stroke.completed = true;
+    if (stroke.isEraser) {
+      drawEraserSegments(getBgCtx(), stroke.points, liveDrawnIdxRef.current, stroke.width, dpr);
+    } else {
+      // Commit to bg FIRST, then clear the live + tip overlays → zero flash.
+      drawPenSegments(getBgCtx(), stroke.points, 1, stroke.color, dpr, true);
+      clearCanvas(liveCanvasRef.current, getLiveCtx());
+      clearCanvas(displayCanvasRef.current, getTipCtx());
+    }
+    setUndoStack(prev => [...prev, strokesRef.current]);
+    setStrokes(prev => [...prev, stroke]);
+  };
+
   // ─── Pointer handlers ─────────────────────────────────────────────────────
   const onPointerDown = (e) => {
     if (isSubmittedRef.current) return;
-    if (isDrawingRef.current) return; // ignore secondary pointers (palm / 2nd finger)
-    if (palmGuardRef.current && e.pointerType !== 'pen') return;
     const canvas = displayCanvasRef.current;
     if (!canvas) return;
+
+    const isPen = e.pointerType === 'pen';
+    const isTouch = e.pointerType === 'touch';
+
+    // First pen/stylus contact → auto-enable palm rejection.
+    if (isPen && !penSeenRef.current) {
+      penSeenRef.current = true;
+      setPalmGuard(true);
+    }
+    // Palm rejection: ignore finger input once a pen is in use (or toggled on).
+    if (isTouch && (palmGuardRef.current || penSeenRef.current)) return;
+
+    // Resolve any still-active stroke before starting a new one.
+    if (isDrawingRef.current && currentStrokeRef.current) {
+      const cur = currentStrokeRef.current;
+      if (isPen) {
+        // A pen press ALWAYS wins. Commit a stray pen stroke (missed pointerup),
+        // discard a touch stroke (palm). The new pen stroke is never dropped.
+        if (cur.hasRealPressure) {
+          isDrawingRef.current = false;
+          currentStrokeRef.current = null;
+          finalizeStroke(cur, null);
+        } else {
+          discardCurrentStroke();
+        }
+      } else {
+        return; // genuine secondary finger → ignore
+      }
+    }
 
     e.preventDefault();
     const rect = canvas.getBoundingClientRect();
@@ -312,7 +428,6 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     try { canvas.setPointerCapture(e.pointerId); } catch {}
     activePointerIdRef.current = e.pointerId;
 
-    // Stroke-eraser mode: tap to delete whole strokes, no live stroke.
     if (activeToolRef.current === 'eraser' && eraserModeRef.current === 'stroke') {
       eraseStrokeAt(pt);
       activePointerIdRef.current = null;
@@ -320,7 +435,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     }
 
     const isEraser = activeToolRef.current === 'eraser';
-    const hasRealPressure = e.pointerType === 'pen';
+    const hasRealPressure = isPen;
     const stroke = {
       points: [],
       color: strokeColorRef.current,
@@ -331,11 +446,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     };
     const pressure = hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
     smoothWRef.current = (strokeWidthRef.current * 1.25) * (isEraser ? 1 : (0.55 + pressure * 1.1));
-    const w = widthFor(stroke, pressure, 0);
-    stroke.points.push([pt.x, pt.y, w]);
+    stroke.points.push([pt.x, pt.y, widthFor(stroke, pressure, 0)]);
 
     isDrawingRef.current = true;
     liveDrawnIdxRef.current = 1;
+    predictedPtsRef.current = [];
     lastSampleRef.current = { x: pt.x, y: pt.y, t: e.timeStamp };
     currentStrokeRef.current = stroke;
   };
@@ -372,6 +487,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       lastSampleRef.current = { x, y, t: ev.timeStamp };
     }
 
+    // Predicted points — extend the tip ahead of the pointer to hide latency.
+    if (typeof e.getPredictedEvents === 'function') {
+      const pred = e.getPredictedEvents();
+      predictedPtsRef.current = pred.map(ev => [ev.clientX - rect.left, ev.clientY - rect.top]);
+    } else {
+      predictedPtsRef.current = [];
+    }
+
     flushLive();
   };
 
@@ -381,39 +504,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
     isDrawingRef.current = false;
     activePointerIdRef.current = null;
+    predictedPtsRef.current = [];
     const stroke = currentStrokeRef.current;
     currentStrokeRef.current = null;
-    if (!stroke) return;
-
-    // Capture the genuine final point so quick taps / short flicks never vanish.
-    const rect = rectRef.current;
-    if (rect && typeof e.clientX === 'number') {
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const pts = stroke.points;
-      const last = pts[pts.length - 1];
-      const dx = x - last[0], dy = y - last[1];
-      if (dx * dx + dy * dy >= 0.25) {
-        pts.push([x, y, last[2]]);
-      }
-    }
-    stroke.completed = true;
-
-    const dpr = window.devicePixelRatio || 1;
-    if (stroke.isEraser) {
-      // Eraser already painted live onto the bg; flush any remaining tail.
-      drawEraserSegments(getBgCtx(), stroke.points, liveDrawnIdxRef.current, stroke.width, dpr);
-    } else {
-      // Paint the finished pen stroke onto the bg, THEN clear the live overlay
-      // (bg-first ordering → zero flash).
-      drawPenSegments(getBgCtx(), stroke.points, 1, stroke.color, dpr, true);
-      const dctx = getDisplayCtx();
-      const dc = displayCanvasRef.current;
-      if (dctx && dc) dctx.clearRect(0, 0, dc.width, dc.height);
-    }
-
-    setUndoStack(prev => [...prev, strokesRef.current]);
-    setStrokes(prev => [...prev, stroke]);
+    finalizeStroke(stroke, e);
   };
 
   handlersRef.current = { onPointerDown, onPointerMove, onPointerUp };
@@ -539,7 +633,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
           </span>
 
           <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-            <button onClick={() => setPalmGuard(v => !v)} style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900 }}>
+            <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900 }}>
               <MousePointer2 size={15} style={{ marginRight: '5px' }} />
               {palmGuard ? 'Pen Only' : 'All Touch'}
             </button>
@@ -596,6 +690,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         )}
         <canvas
           ref={bgCanvasRef}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
+        />
+        <canvas
+          ref={liveCanvasRef}
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
         />
         <canvas
