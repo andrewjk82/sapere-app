@@ -344,6 +344,23 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <div style={{ flex: 1 }}><label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>Date</label><div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}><Calendar size={16} />{selectedViewSession.date}</div></div>
                   <div style={{ flex: 1 }}><label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>Time</label><div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}><Clock size={16} />{selectedViewSession.startTime}</div></div>
                 </div>
+                {Array.isArray(selectedViewSession.learnedTopics) && selectedViewSession.learnedTopics.length > 0 && (
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Topics Covered</label>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      {selectedViewSession.learnedTopics.map((t, i) => {
+                        const text = typeof t === 'string' ? t : (t.label || t.title || t.topicTitle || '');
+                        if (!text) return null;
+                        return (
+                          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: '#f0fdf4', border: '1px solid #dcfce7', borderRadius: '12px', padding: '10px 14px' }}>
+                            <CheckCircle2 size={18} style={{ color: '#16a34a', flexShrink: 0 }} />
+                            <span style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.92rem', lineHeight: 1.4 }}>{text}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
                 <div>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Lesson Notes</label>
                   <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#475569', lineHeight: 1.6, fontWeight: 500, border: '1px solid #f1f5f9' }}>
