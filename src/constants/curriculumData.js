@@ -1881,10 +1881,10 @@ export const CURRICULUM_DATA = {
       },
       {
         id: 'y11a-4',
-        title: 'Chapter 4: Equations and inequations',
+        title: 'Chapter 4: Linear Inequalities',
         modules: 4,
         topics: [
-          { id: 'y11a-4A', code: '4A', title: 'Linear equations and inequations' },
+          { id: 'y11a-4A', code: '4A', title: 'Linear inequalities' },
           { id: 'y11a-4B', code: '4B', title: 'Quadratic equations and inequations' },
           { id: 'y11a-4C', code: '4C', title: 'The discriminant' },
           { id: 'y11a-4D', code: '4D', title: 'Quadratic identities' }
