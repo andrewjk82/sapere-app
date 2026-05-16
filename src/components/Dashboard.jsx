@@ -10,6 +10,7 @@ import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 
 import AvatarPickerModal from './AvatarPickerModal';
+import AdminDashboard from './AdminDashboard';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
@@ -702,16 +703,23 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         )}
 
         {isAdmin && (
-          <div className="app-grid app-grid--stats">
-            {displayStats.map((stat, index) => (
-              <StatCard key={index} {...stat} iconName={stat.icon} />
-            ))}
-          </div>
+          <AdminDashboard
+            students={students}
+            pendingGrading={pendingGrading}
+            lastSync={lastSync}
+            isSyncing={isSyncing}
+            userName={userName}
+            onSelectStudent={onSelectStudent}
+            onOpenGradingItem={(item) => setSelectedGradingItem(item)}
+            onReviewAll={() => setActiveTab('Reports')}
+            onSendReminders={handleManualSync}
+            setActiveTab={setActiveTab}
+          />
         )}
 
         <div className="app-grid app-grid--content" style={{ padding: isMobile ? '0 20px 40px' : '0' }}>
           {isAdmin ? (
-            <>
+            <><div style={{ display: 'none' }}>{/* admin content moved to AdminDashboard */}</div>
               <div className="app-panel dashboard-card">
                 <div className="dashboard-card__header">
                   <h3>Recent Students</h3>
