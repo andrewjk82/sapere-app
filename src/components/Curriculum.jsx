@@ -482,11 +482,26 @@ const Curriculum = () => {
     if (!window.confirm(forceReset ? 'This will RESET and sync Year 11 Adv Ch4 questions. Continue?' : 'Sync Year 11 Adv Ch4 questions?')) return;
     setIsMigrating(true);
     try {
+      const { importYear11AdvCh4 } = await import('../scripts/importYear11AdvCh4');
       const count = await importYear11AdvCh4(forceReset);
-      alert(`Successfully synced ${count} questions for Y11 Adv Ch4!`);
-      window.location.reload();
+      showToast(`Successfully synced ${count} questions for Y11 Adv Ch4!`, 'success');
+      // Optional: window.location.reload(); or better, update counts
     } catch (err) {
-      alert('Failed to sync: ' + err.message);
+      showToast('Failed to sync: ' + err.message, 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSyncY11AdvCh5 = async (forceReset = false) => {
+    if (!window.confirm(forceReset ? 'This will RESET and sync Year 11 Adv Ch5 questions. Continue?' : 'Sync Year 11 Adv Ch5 questions?')) return;
+    setIsMigrating(true);
+    try {
+      const { importYear11AdvCh5 } = await import('../scripts/importYear11AdvCh5');
+      const count = await importYear11AdvCh5(forceReset);
+      showToast(`Successfully synced ${count} questions for Y11 Adv Ch5!`, 'success');
+    } catch (err) {
+      showToast('Failed to sync: ' + err.message, 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -958,6 +973,9 @@ const Curriculum = () => {
                 </button>
                 <button onClick={() => handleSyncY11AdvCh4(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdfa', color: '#0d9488', borderColor: '#ccfbf1' }}>
                   {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch4'}
+                </button>
+                <button onClick={() => handleSyncY11AdvCh5(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch5'}
                 </button>
                 {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
                   <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>

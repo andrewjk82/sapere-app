@@ -116,28 +116,15 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     }
   };
 
-  const handleSyncChapter = async (chapter) => {
-    if (window.confirm(`Sync Year 11 Adv Ch${chapter}? This will replace existing questions.`)) {
-      setIsSyncing(true);
-      try {
-        let importFn;
-        if (chapter === 4) {
-          const { importYear11AdvCh4 } = await import('../scripts/importYear11AdvCh4');
-          importFn = importYear11AdvCh4;
-        } else if (chapter === 5) {
-          const { importYear11AdvCh5 } = await import('../scripts/importYear11AdvCh5');
-          importFn = importYear11AdvCh5;
-        }
-        
-        if (importFn) {
-          await importFn();
-          showToast(`Y11 Adv Ch${chapter} synced successfully!`, 'success');
-        }
-      } catch (e) {
-        showToast('Sync failed: ' + e.message, 'error');
-      } finally {
-        setIsSyncing(false);
-      }
+  const handleManualRefresh = async () => {
+    setIsRefreshing(true);
+    try {
+      await onRefreshStudents();
+      showToast('Student list updated!', 'success');
+    } catch (err) {
+      showToast('Failed to refresh students.', 'error');
+    } finally {
+      setIsRefreshing(false);
     }
   };
 
@@ -325,7 +312,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             onOpenGradingItem={(item) => setSelectedGradingItem(item)}
             onReviewAll={() => setActiveTab('Reports')}
             onSendReminders={handleManualSync}
-            onSyncChapter={handleSyncChapter}
             setActiveTab={setActiveTab}
           />
         )}

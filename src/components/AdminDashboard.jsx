@@ -418,35 +418,6 @@ const AdminDashboard = ({
 
           <div className="ad__panel">
             <div className="ad__panel-head">
-              <h4>📚 Curriculum Management</h4>
-            </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '4px' }}>
-              <button
-                type="button"
-                className="ad__grade-btn"
-                style={{ padding: '8px 16px', borderRadius: '12px', fontSize: '0.75rem', cursor: 'pointer', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: 'white', fontWeight: 800 }}
-                onClick={() => onSyncChapter?.(4)}
-                disabled={isSyncing}
-              >
-                Sync Y11 Adv Ch4
-              </button>
-              <button
-                type="button"
-                className="ad__grade-btn"
-                style={{ padding: '8px 16px', borderRadius: '12px', fontSize: '0.75rem', cursor: 'pointer', background: 'linear-gradient(135deg, #10b981, #059669)', border: 'none', color: 'white', fontWeight: 800 }}
-                onClick={() => onSyncChapter?.(5)}
-                disabled={isSyncing}
-              >
-                Sync Y11 Adv Ch5
-              </button>
-            </div>
-            <p style={{ fontSize: '0.65rem', color: '#94a3b8', marginTop: '10px', fontWeight: 600 }}>
-              * Syncing will replace existing questions for these chapters.
-            </p>
-          </div>
-
-          <div className="ad__panel">
-            <div className="ad__panel-head">
               <h4>System status</h4>
             </div>
             <div className="ad__sys-row">

@@ -1,15 +1,20 @@
 /* ==========================================================================
    Weekly student report — shared builder
    --------------------------------------------------------------------------
-   Used by both the Sunday cron (api/cron-unified.js) and the on-demand
-   "Send Weekly Report" button (api/send-report.js). Files under api/_lib are
+   Used by the Sunday cron (api/cron-unified.js) and the on-demand
+   "Weekly Report" button (api/send-report.js). Files under api/_lib are
    ignored by Vercel's function router (underscore prefix).
+
+   Email layout is fully table-based with inline styles — Gmail/Outlook safe
+   (no flexbox).
    ========================================================================== */
 
 const TZ = 'Australia/Sydney';
 
 const sydneyDateStr = (date) =>
   date.toLocaleDateString('en-CA', { timeZone: TZ });
+
+const esc = (s) => String(s ?? '').replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
 
 // Mon–Sun week containing `now` (Sydney). Returns YYYY-MM-DD day strings.
 export function getWeekRangeSydney(now = new Date()) {
@@ -26,10 +31,8 @@ export function getWeekRangeSydney(now = new Date()) {
     d.setUTCDate(monday.getUTCDate() + i);
     days.push(d.toISOString().slice(0, 10));
   }
-  const fmt = (s) => {
-    const d = new Date(`${s}T00:00:00Z`);
-    return d.toLocaleDateString('en-AU', { timeZone: 'UTC', day: 'numeric', month: 'short' });
-  };
+  const fmt = (s) => new Date(`${s}T00:00:00Z`)
+    .toLocaleDateString('en-AU', { timeZone: 'UTC', day: 'numeric', month: 'short' });
   return {
     weekId: days[0],
     days,
@@ -43,7 +46,6 @@ export function getWeekRangeSydney(now = new Date()) {
 export async function gatherStudentWeek(db, studentId, days, studentEmail = '') {
   const userRef = db.collection('users').doc(studentId);
 
-  // Challenge stats — one doc per day per collection (doc id = YYYY-MM-DD).
   const dailyByDate = {};
   const calcByDate = {};
   await Promise.all(days.map(async (d) => {
@@ -55,34 +57,26 @@ export async function gatherStudentWeek(db, studentId, days, studentEmail = '') 
     if (cs.exists) calcByDate[d] = cs.data();
   }));
 
-  // Lessons this week.
   const sessions = [];
   const seen = new Set();
   const emailLc = (studentEmail || '').trim().toLowerCase();
+  const matches = (s) => {
+    const matchId = String(s.studentId || '') === String(studentId);
+    const sEmail = String(s.studentEmail || s.email || '').trim().toLowerCase();
+    return matchId || (emailLc && sEmail === emailLc);
+  };
   try {
     const snap = await db.collection('sessions').where('date', 'in', days).get();
     snap.docs.forEach((doc) => {
       const s = doc.data();
-      const matchId = String(s.studentId || '') === String(studentId);
-      const sEmail = String(s.studentEmail || s.email || '').trim().toLowerCase();
-      const matchEmail = emailLc && sEmail === emailLc;
-      if ((matchId || matchEmail) && !seen.has(doc.id)) {
-        seen.add(doc.id);
-        sessions.push({ id: doc.id, ...s });
-      }
+      if (matches(s) && !seen.has(doc.id)) { seen.add(doc.id); sessions.push({ id: doc.id, ...s }); }
     });
   } catch {
-    // 'in' query needs an index in some cases — fall back to per-day reads.
     for (const d of days) {
       const snap = await db.collection('sessions').where('date', '==', d).get();
       snap.docs.forEach((doc) => {
         const s = doc.data();
-        const matchId = String(s.studentId || '') === String(studentId);
-        const sEmail = String(s.studentEmail || s.email || '').trim().toLowerCase();
-        if ((matchId || (emailLc && sEmail === emailLc)) && !seen.has(doc.id)) {
-          seen.add(doc.id);
-          sessions.push({ id: doc.id, ...s });
-        }
+        if (matches(s) && !seen.has(doc.id)) { seen.add(doc.id); sessions.push({ id: doc.id, ...s }); }
       });
     }
   }
@@ -91,13 +85,26 @@ export async function gatherStudentWeek(db, studentId, days, studentEmail = '') 
   return { dailyByDate, calcByDate, sessions };
 }
 
-// Aggregate week stats from the gathered data.
+// ── Topic labelling ────────────────────────────────────────────────────────
+const TYPE_NAMES = {
+  short_answer: 'Short-answer questions',
+  multiple_choice: 'Multiple-choice questions',
+  graph_sketch: 'Graphing questions',
+};
+const topicLabel = (r) => {
+  if (r.topicTitle) return r.topicTitle;
+  if (r.topicCode) return r.topicCode;
+  if (r.type && TYPE_NAMES[r.type]) return TYPE_NAMES[r.type];
+  if (r.type) return String(r.type).replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  return 'General';
+};
+
 function summarize(days, dailyByDate, calcByDate) {
   let challengesCompleted = 0;
   let scoreSum = 0;
   let totalSum = 0;
   let xpEarned = 0;
-  const topics = {}; // title → { total, wrong }
+  const topics = {};
 
   const collect = (stat) => {
     if (!stat) return;
@@ -108,116 +115,134 @@ function summarize(days, dailyByDate, calcByDate) {
     if (Array.isArray(stat.answerResults)) {
       stat.answerResults.forEach((r) => {
         if (!r || typeof r !== 'object') return;
-        const title = r.topicTitle || r.topicCode || r.type || 'General';
-        if (!topics[title]) topics[title] = { total: 0, wrong: 0 };
-        topics[title].total += 1;
-        if (r.correct === false) topics[title].wrong += 1;
+        const label = topicLabel(r);
+        if (!topics[label]) topics[label] = { total: 0, wrong: 0 };
+        topics[label].total += 1;
+        if (r.correct === false) topics[label].wrong += 1;
       });
     }
   };
-
-  days.forEach((d) => {
-    collect(dailyByDate[d]);
-    collect(calcByDate[d]);
-  });
+  days.forEach((d) => { collect(dailyByDate[d]); collect(calcByDate[d]); });
 
   const accuracy = totalSum > 0 ? Math.round((scoreSum / totalSum) * 100) : null;
   const weakTopics = Object.entries(topics)
-    .map(([title, t]) => ({ title, ...t, errorRate: Math.round((t.wrong / t.total) * 100) }))
+    .map(([label, t]) => ({ label, ...t, errorRate: Math.round((t.wrong / t.total) * 100) }))
     .filter((t) => t.wrong > 0 && t.total >= 2)
     .sort((a, b) => b.errorRate - a.errorRate)
     .slice(0, 4);
 
-  return { challengesCompleted, accuracy, xpEarned, weakTopics, attempts: scoreSum > 0 || totalSum > 0 };
+  return {
+    challengesCompleted,
+    accuracy,
+    xpEarned,
+    weakTopics,
+    hasAttempts: totalSum > 0,
+  };
 }
 
 const DAY_LETTERS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-const esc = (s) => String(s ?? '').replace(/[<>&]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
+const fmtLessonDate = (dateStr, time) => {
+  const d = new Date(`${dateStr}T00:00:00Z`);
+  const day = d.toLocaleDateString('en-AU', { timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'short' });
+  return time ? `${day} · ${time}` : day;
+};
 
-// Build the inner HTML body + subject for a student's weekly report.
-// Returns { subject, bodyHtml, hasData }.
-export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByDate, sessions }) {
-  const s = summarize(days, dailyByDate, calcByDate);
-  const hasData = sessions.length > 0 || s.challengesCompleted > 0 || s.attempts;
-  const firstName = String(name || 'Student').split(' ')[0];
+const C = {
+  ink: '#0f172a', sub: '#64748b', muted: '#94a3b8', faint: '#cbd5e1',
+  accent: '#4f46e5', line: '#e5e7eb', lineSoft: '#f1f5f9',
+};
 
-  // ── Summary stat cards ──
-  const statCard = (value, lbl, color) => `
-    <td align="center" style="padding:6px;">
-      <div style="background:#ffffff;border:1px solid #e8e2ff;border-radius:16px;padding:16px 8px;">
-        <div style="font-size:26px;font-weight:900;color:${color};line-height:1;">${value}</div>
-        <div style="font-size:11px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:0.06em;margin-top:6px;">${lbl}</div>
+const sectionLabel = (txt) =>
+  `<div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:${C.accent};margin:34px 0 14px;">${txt}</div>`;
+
+// Build a 7-column day grid (one value per cell).
+function dayGrid(days, byDate) {
+  const cells = days.map((d, i) => {
+    const stat = byDate[d];
+    const done = stat && typeof stat.score === 'number';
+    const val = done ? `${stat.score}/${stat.total ?? '?'}` : '–';
+    return `<td width="14.28%" align="center" style="padding:0 3px;">
+      <div style="background:${done ? '#eef2ff' : '#f8fafc'};border:1px solid ${done ? '#e0e7ff' : C.lineSoft};border-radius:10px;padding:11px 2px;">
+        <div style="font-size:10px;font-weight:700;color:${C.muted};letter-spacing:0.03em;">${DAY_LETTERS[i]}</div>
+        <div style="font-size:13px;font-weight:800;color:${done ? '#3730a3' : C.faint};margin-top:7px;">${val}</div>
       </div>
     </td>`;
-  const summaryRow = `
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 20px;"><tr>
-      ${statCard(`${s.challengesCompleted}/7`, 'Challenges', '#7c3aed')}
-      ${statCard(s.accuracy != null ? `${s.accuracy}%` : '—', 'Accuracy', '#16a34a')}
-      ${statCard(`+${s.xpEarned}`, 'XP earned', '#f59e0b')}
-    </tr></table>`;
+  }).join('');
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed;"><tr>${cells}</tr></table>`;
+}
+
+// Build the inner HTML body + subject for a student's weekly report.
+export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByDate, sessions }) {
+  const s = summarize(days, dailyByDate, calcByDate);
+  const hasCalc = days.some((d) => calcByDate[d]);
+  const hasData = sessions.length > 0 || s.challengesCompleted > 0 || s.hasAttempts;
+  const firstName = esc(String(name || 'Student').split(' ')[0]);
+
+  // ── Summary: 3 figures, hairline-divided ──
+  const stat = (value, sub, lbl, isLast) => `
+    <td width="33.33%" align="center" style="padding:22px 8px;${isLast ? '' : `border-right:1px solid ${C.line};`}">
+      <div style="font-size:30px;font-weight:800;color:${C.ink};line-height:1;">${value}${sub ? `<span style="font-size:15px;font-weight:700;color:${C.muted};">${sub}</span>` : ''}</div>
+      <div style="font-size:10px;font-weight:700;color:${C.muted};letter-spacing:0.08em;text-transform:uppercase;margin-top:9px;">${lbl}</div>
+    </td>`;
+  const summary = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid ${C.line};border-radius:14px;border-collapse:separate;">
+      <tr>
+        ${stat(s.challengesCompleted, '/7', 'Challenges done', false)}
+        ${stat(s.accuracy != null ? s.accuracy : '—', s.accuracy != null ? '%' : '', 'Accuracy', false)}
+        ${stat(`+${s.xpEarned}`, '', 'XP earned', true)}
+      </tr>
+    </table>`;
 
   // ── Lessons ──
   let lessonsHtml;
   if (sessions.length > 0) {
-    lessonsHtml = sessions.map((ses) => `
-      <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:14px 16px;margin-bottom:8px;">
-        <div style="font-weight:800;color:#1e1b4b;font-size:15px;">${esc(ses.subject || 'Lesson')}
-          <span style="font-weight:700;color:#8b5cf6;font-size:13px;"> · ${esc(ses.date)} ${esc(ses.startTime || '')}</span>
-        </div>
-        ${ses.notes ? `<div style="color:#475569;font-size:13px;margin-top:6px;"><strong>Notes:</strong> ${esc(ses.notes)}</div>` : ''}
-        ${ses.homework ? `<div style="color:#0369a1;font-size:13px;margin-top:4px;"><strong>Homework:</strong> ${esc(ses.homework)}</div>` : ''}
-      </div>`).join('');
+    lessonsHtml = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">` +
+      sessions.map((ses, idx) => `
+        <tr><td style="padding:15px 0;${idx < sessions.length - 1 ? `border-bottom:1px solid ${C.lineSoft};` : ''}">
+          <div style="font-size:15px;font-weight:700;color:${C.ink};">${esc(ses.subject || 'Lesson')}</div>
+          <div style="font-size:12px;font-weight:600;color:${C.muted};margin-top:3px;">${esc(fmtLessonDate(ses.date, ses.startTime))}</div>
+          ${ses.notes ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:${C.muted};">Notes</span><br>${esc(ses.notes)}</div>` : ''}
+          ${ses.homework ? `<div style="font-size:13px;color:#475569;line-height:1.55;margin-top:9px;"><span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:${C.accent};">Homework</span><br>${esc(ses.homework)}</div>` : ''}
+        </td></tr>`).join('') +
+      `</table>`;
   } else {
-    lessonsHtml = `<div style="color:#94a3b8;font-size:14px;">No lessons recorded this week.</div>`;
+    lessonsHtml = `<div style="font-size:13px;color:${C.muted};">No lessons were scheduled this week.</div>`;
   }
 
-  // ── Daily challenge grid ──
-  const dayCells = days.map((d, i) => {
-    const daily = dailyByDate[d];
-    const calc = calcByDate[d];
-    const parts = [];
-    if (daily && typeof daily.score === 'number') parts.push(`${daily.score}/${daily.total ?? '?'}`);
-    if (calc && typeof calc.score === 'number') parts.push(`⚡${calc.score}/${calc.total ?? '?'}`);
-    const done = parts.length > 0;
-    return `
-      <td align="center" style="padding:4px;">
-        <div style="background:${done ? '#f5f3ff' : '#f8fafc'};border:1px solid ${done ? '#ddd6fe' : '#eef2f7'};border-radius:12px;padding:10px 4px;">
-          <div style="font-size:11px;font-weight:800;color:#94a3b8;">${DAY_LETTERS[i]}</div>
-          <div style="font-size:12px;font-weight:800;color:${done ? '#6d28d9' : '#cbd5e1'};margin-top:4px;">${done ? parts.join('<br>') : '–'}</div>
-        </div>
-      </td>`;
-  }).join('');
-  const challengeGrid = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>${dayCells}</tr></table>`;
+  // ── Challenge record ──
+  const miniLabel = (txt) => `<div style="font-size:11px;font-weight:700;color:${C.sub};margin:0 0 8px;">${txt}</div>`;
+  let challengeHtml = miniLabel('Daily practice') + dayGrid(days, dailyByDate);
+  if (hasCalc) {
+    challengeHtml += `<div style="height:14px;"></div>` + miniLabel('Calculation sprint') + dayGrid(days, calcByDate);
+  }
 
-  // ── Weak topics ──
-  let weakHtml = '';
+  // ── Focus areas ──
+  let focusHtml = '';
   if (s.weakTopics.length > 0) {
-    weakHtml = `
-      <h3 style="font-size:15px;font-weight:900;color:#1e1b4b;margin:24px 0 10px;">🎯 Focus areas for next week</h3>
-      ${s.weakTopics.map((t) => `
-        <div style="display:flex;justify-content:space-between;background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:10px 14px;margin-bottom:6px;">
-          <span style="color:#92400e;font-weight:700;font-size:13px;">${esc(t.title)}</span>
-          <span style="color:#b45309;font-weight:800;font-size:12px;">${t.errorRate}% wrong</span>
-        </div>`).join('')}`;
+    focusHtml = sectionLabel('Focus for next week') +
+      s.weakTopics.map((t) => `
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;margin-bottom:7px;">
+          <tr>
+            <td style="padding:12px 15px;font-size:13px;font-weight:600;color:#9a3412;">${esc(t.label)}</td>
+            <td align="right" style="padding:12px 15px;font-size:12px;font-weight:800;color:#c2410c;white-space:nowrap;">${t.errorRate}% missed</td>
+          </tr>
+        </table>`).join('');
   }
 
-  const sectionTitle = (txt) =>
-    `<h3 style="font-size:15px;font-weight:900;color:#1e1b4b;margin:24px 0 10px;">${txt}</h3>`;
+  const closing = hasData
+    ? `Consistent practice is what turns effort into mastery. Great work this week, ${firstName}!`
+    : `No activity was recorded this week. Just a few minutes of daily practice makes a real difference — let's get back on track.`;
 
   const bodyHtml = `
-    <p style="margin:0 0 6px;font-size:16px;color:#1e1b4b;font-weight:700;">Hi ${esc(firstName)},</p>
-    <p style="margin:0 0 18px;font-size:14px;color:#64748b;">Here is your learning summary for <strong>${esc(label)}</strong>.</p>
-    ${summaryRow}
-    ${sectionTitle('📚 This week\'s lessons')}
+    <p style="margin:0 0 3px;font-size:15px;font-weight:600;color:${C.ink};">Hi ${firstName},</p>
+    <p style="margin:0 0 22px;font-size:14px;color:${C.sub};line-height:1.55;">Here is the learning summary for <strong style="color:${C.ink};">${esc(label)}</strong>.</p>
+    ${summary}
+    ${sectionLabel("This week's lessons")}
     ${lessonsHtml}
-    ${sectionTitle('⚡ Daily challenge record')}
-    ${challengeGrid}
-    ${weakHtml}
-    <p style="margin:24px 0 0;font-size:14px;color:#475569;line-height:1.6;">
-      ${hasData
-        ? 'Keep up the great work — consistency is what builds mastery. See you next week!'
-        : 'No activity was recorded this week. A few minutes of daily practice makes a big difference — let\'s get started!'}
-    </p>`;
+    ${sectionLabel('Challenge record')}
+    ${challengeHtml}
+    ${focusHtml}
+    <p style="margin:32px 0 0;font-size:13.5px;color:#475569;line-height:1.6;">${closing}</p>`;
 
   return {
     subject: `Weekly Report · ${label}`,
@@ -226,27 +251,32 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
   };
 }
 
-// Full email shell (purple Sapere theme). Mirrors the cron's template.
-export function buildEmailShell(title, body, ctaLabel = 'Open Academy') {
+// Full email shell — clean, modern, table-based (Gmail/Outlook safe).
+export function buildEmailShell(title, body) {
   return `<!DOCTYPE html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light only"><title>${title}</title></head>
-<body bgcolor="#f7f4ff" style="margin:0;padding:0;background:#f7f4ff;font-family:Arial,Helvetica,sans-serif;color:#1e1b4b;">
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f7f4ff" style="background:#f7f4ff;">
-    <tr><td align="center" style="padding:28px 14px 32px;">
-      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="max-width:720px;background:#ffffff;border-radius:26px;overflow:hidden;border:1px solid #e8e2ff;box-shadow:0 18px 45px rgba(99,102,241,0.12);">
-        <tr><td align="center" bgcolor="#ede9fe" style="background:#ede9fe;padding:34px 28px;border-bottom:1px solid #ddd6fe;">
-          <div style="font-size:30px;line-height:1.15;font-weight:900;color:#312e81;">Sapereaude Academia</div>
+<body bgcolor="#f4f4f7" style="margin:0;padding:0;background:#f4f4f7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f4f7" style="background:#f4f4f7;">
+    <tr><td align="center" style="padding:32px 16px;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;background:#ffffff;border-radius:16px;border:1px solid #e5e7eb;overflow:hidden;">
+        <tr><td style="background:#1e1b4b;padding:22px 32px;">
+          <div style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#a5b4fc;">Sapere Aude Academia</div>
         </td></tr>
-        <tr><td bgcolor="#ffffff" style="background:#ffffff;padding:42px 40px 40px;">
-          <h1 style="margin:0 0 22px;font-size:24px;line-height:1.3;font-weight:900;color:#1e1b4b;">${title}</h1>
-          <div style="font-size:15px;line-height:1.6;color:#475569;">${body}</div>
-          <div style="margin-top:34px;padding-top:24px;border-top:1px solid #eef2ff;text-align:center;">
-            <a href="https://sapere-app.vercel.app" style="display:inline-block;min-width:150px;background:#6366f1;color:#ffffff;padding:15px 32px;border-radius:999px;text-decoration:none;font-size:16px;font-weight:900;">${ctaLabel}</a>
-          </div>
+        <tr><td style="padding:36px 32px 34px;">
+          <h1 style="margin:0 0 20px;font-size:22px;font-weight:800;color:#0f172a;line-height:1.3;">${title}</h1>
+          ${body}
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:34px;">
+            <tr><td align="center" style="padding-top:24px;border-top:1px solid #eef0f3;">
+              <a href="https://sapere-app.vercel.app" style="display:inline-block;background:#4f46e5;color:#ffffff;padding:13px 30px;border-radius:10px;text-decoration:none;font-size:14px;font-weight:700;">Open the Academy</a>
+            </td></tr>
+          </table>
+        </td></tr>
+        <tr><td style="background:#fafafb;border-top:1px solid #eef0f3;padding:18px 32px;">
+          <div style="font-size:11px;color:#94a3b8;line-height:1.5;">Sapere Aude Academia · Weekly Learning Report<br>You are receiving this because you are enrolled at the academy.</div>
         </td></tr>
       </table>
-      <p style="margin:24px 0 0;color:#64748b;font-size:13px;font-weight:600;">© 2026 Sapereaude Academia. All rights reserved.</p>
+      <p style="margin:20px 0 0;color:#a0a3ad;font-size:11px;">© 2026 Sapere Aude Academia. All rights reserved.</p>
     </td></tr>
   </table>
 </body></html>`;

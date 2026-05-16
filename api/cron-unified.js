@@ -1,6 +1,6 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
-import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody } from './_lib/weeklyReport.js';
+import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
 
 const SIX_PM_BATCH_SIZE = 50;
 const CRON_STARTED_AT = Date.now();
@@ -181,11 +181,21 @@ export default async function handler(req, res) {
               const data = await gatherStudentWeek(db, sd.id, week.days, email);
               const report = renderWeeklyReportBody({ name, label: week.label, days: week.days, ...data });
               if (!report.hasData) return { skipped: true };
-              await sendNotification(
-                db, transporter,
-                { studentId: sd.id, studentEmail: email, name },
-                'weekly_report', report.subject, report.bodyHtml,
-              );
+              if (email) {
+                await transporter.sendMail({
+                  from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+                  to: email,
+                  subject: `[Sapere] ${report.subject}`,
+                  html: buildEmailShell(report.subject, report.bodyHtml),
+                });
+              }
+              await db.collection('users').doc(sd.id).collection('notifications').add({
+                title: report.subject,
+                body: 'Your weekly learning report is ready — check your email.',
+                timestamp: admin.firestore.FieldValue.serverTimestamp(),
+                read: false,
+                type: 'weekly_report',
+              }).catch(() => {});
               return { sent: true };
             }));
             results.forEach((r) => {
