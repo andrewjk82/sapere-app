@@ -650,7 +650,56 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           {isAdmin ? (
             <>
               <div className="app-page-column">
+                <div className="ad__panel" style={{ marginTop: '0' }}>
+                  <div className="ad__panel-head">
+                    <h4>📚 Curriculum Management</h4>
+                  </div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+                    <button
+                      onClick={async () => {
+                        if (window.confirm('Sync Year 11 Adv Ch4? This will replace existing questions.')) {
+                          setIsSyncing(true);
+                          try {
+                            const { importYear11AdvCh4 } = await import('../scripts/importYear11AdvCh4');
+                            await importYear11AdvCh4();
+                            showToast('Y11 Adv Ch4 synced successfully!', 'success');
+                          } catch (e) {
+                            showToast('Sync failed: ' + e.message, 'error');
+                          } finally {
+                            setIsSyncing(false);
+                          }
+                        }
+                      }}
+                      disabled={isSyncing}
+                      className="ad__grade-btn"
+                      style={{ padding: '10px 20px', fontSize: '0.8rem', cursor: 'pointer', opacity: isSyncing ? 0.5 : 1 }}
+                    >
+                      {isSyncing ? 'Syncing...' : 'Sync Y11 Adv Ch4'}
+                    </button>
 
+                    <button
+                      onClick={async () => {
+                        if (window.confirm('Sync Year 11 Adv Ch5? This will replace existing questions.')) {
+                          setIsSyncing(true);
+                          try {
+                            const { importYear11AdvCh5 } = await import('../scripts/importYear11AdvCh5');
+                            await importYear11AdvCh5();
+                            showToast('Y11 Adv Ch5 synced successfully!', 'success');
+                          } catch (e) {
+                            showToast('Sync failed: ' + e.message, 'error');
+                          } finally {
+                            setIsSyncing(false);
+                          }
+                        }
+                      }}
+                      disabled={isSyncing}
+                      className="ad__grade-btn"
+                      style={{ padding: '10px 20px', fontSize: '0.8rem', cursor: 'pointer', opacity: isSyncing ? 0.5 : 1 }}
+                    >
+                      {isSyncing ? 'Syncing...' : 'Sync Y11 Adv Ch5'}
+                    </button>
+                  </div>
+                </div>
               </div>
             </>
           ) : (
