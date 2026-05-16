@@ -1,83 +1,115 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
-import { getStroke } from 'perfect-freehand';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v8.1-fix';
+const CANVAS_VERSION = 'v9.0-fast';
 
-const MIN_DIST_SQ = 4;      // Lowered for finer detail
-const BAKE_EVERY = 80;      // Bake history snapshot less frequently
-const LIVE_TAIL = 70;       // Max points processed live by getStroke
-const BAKE_OVERLAP = 12;    // Slightly larger overlap for seam stability
+// Minimum squared distance between captured points (1.4px). Fast strokes have
+// far-apart points anyway, so this only trims redundant near-duplicate samples.
+const MIN_DIST_SQ = 2;
+
+const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
 
 const hasCoarsePointer = () =>
   typeof window !== 'undefined' && window.matchMedia?.('(pointer: coarse)').matches;
 
-const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
+// ─── Rendering primitives ───────────────────────────────────────────────────
+// A stroke = { points: [[x, y, width], ...], color, width, isEraser, completed }
+// Live rendering is INCREMENTAL: each frame only the brand-new segments are
+// drawn — old segments are never reprocessed. O(new points) per frame.
 
-const PF_OPTIONS = (size, hasRealPressure) => ({
-  size,
-  thinning: 0.5,
-  smoothing: 0.5,
-  streamline: 0.5,
-  easing: (t) => t,
-  simulatePressure: !hasRealPressure,
-  last: false,
-  start: { taper: 0, cap: true },
-  end: { taper: 0, cap: true },
-});
+// Draw pen segments [startIdx .. end) onto ctx using quadratic-midpoint
+// smoothing with per-segment variable width. startIdx is the first segment
+// index to draw (segment i connects points[i-1] → points[i]; always ≥ 1).
+function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
+  if (!ctx || !pts || pts.length === 0) return;
+  ctx.save();
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
 
-const PF_OPTIONS_FINAL = (size, hasRealPressure) => ({
-  ...PF_OPTIONS(size, hasRealPressure),
-  last: true,
-  streamline: 0.5,
-  smoothing: 0.6,
-});
-
-const toTuple = (pt, pressure) => [pt.x, pt.y, pressure];
-
-// Draw a perfect-freehand polygon onto ctx
-function drawPFOutline(ctx, outline, dpr) {
-  if (!outline || outline.length < 3) return;
-  ctx.beginPath();
-  ctx.moveTo(outline[0][0] * dpr, outline[0][1] * dpr);
-  for (let i = 1; i < outline.length; i++) {
-    ctx.lineTo(outline[i][0] * dpr, outline[i][1] * dpr);
+  // Single point → round dot.
+  if (pts.length === 1) {
+    const p = pts[0];
+    ctx.beginPath();
+    ctx.arc(p[0] * dpr, p[1] * dpr, Math.max(0.6, p[2] / 2) * dpr, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+    return;
   }
-  ctx.closePath();
-  ctx.fill();
+
+  const from = Math.max(1, startIdx);
+  for (let i = from; i < pts.length; i++) {
+    const p0 = pts[i - 1];
+    const p1 = pts[i];
+    // Curve runs from the previous midpoint to the current midpoint, with the
+    // shared point p0 as the quadratic control — guarantees C1 continuity.
+    const fromX = i === 1 ? p0[0] : (pts[i - 2][0] + p0[0]) / 2;
+    const fromY = i === 1 ? p0[1] : (pts[i - 2][1] + p0[1]) / 2;
+    const toX = (p0[0] + p1[0]) / 2;
+    const toY = (p0[1] + p1[1]) / 2;
+    ctx.lineWidth = Math.max(0.4, p0[2]) * dpr;
+    ctx.beginPath();
+    ctx.moveTo(fromX * dpr, fromY * dpr);
+    ctx.quadraticCurveTo(p0[0] * dpr, p0[1] * dpr, toX * dpr, toY * dpr);
+    ctx.stroke();
+  }
+
+  // Final tip: from the last midpoint to the actual last point. Only drawn for
+  // completed strokes (live rendering leaves a ~half-segment tail that catches
+  // up on the next frame — invisible during motion).
+  if (includeTip && pts.length >= 2) {
+    const a = pts[pts.length - 2];
+    const b = pts[pts.length - 1];
+    ctx.lineWidth = Math.max(0.4, b[2]) * dpr;
+    ctx.beginPath();
+    ctx.moveTo(((a[0] + b[0]) / 2) * dpr, ((a[1] + b[1]) / 2) * dpr);
+    ctx.lineTo(b[0] * dpr, b[1] * dpr);
+    ctx.stroke();
+  }
+
+  ctx.restore();
 }
 
-// Draw a committed stroke (uses cached outline)
-function drawCommittedStroke(ctx, stroke, dpr) {
-  if (!ctx || !stroke?.points || stroke.points.length === 0) return;
+// Draw eraser segments [startIdx .. end) onto ctx (destination-out).
+function drawEraserSegments(ctx, pts, startIdx, width, dpr) {
+  if (!ctx || !pts || pts.length === 0) return;
   ctx.save();
-  if (stroke.isEraser) {
-    ctx.globalCompositeOperation = 'destination-out';
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-    ctx.lineWidth = stroke.width * 6 * dpr;
-    ctx.strokeStyle = 'rgba(0,0,0,1)';
-    const pts = stroke.points;
+  ctx.globalCompositeOperation = 'destination-out';
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.lineWidth = width * 6 * dpr;
+  ctx.strokeStyle = 'rgba(0,0,0,1)';
+
+  if (pts.length === 1) {
+    ctx.fillStyle = 'rgba(0,0,0,1)';
     ctx.beginPath();
-    if (pts.length === 1) {
-      ctx.arc(pts[0][0] * dpr, pts[0][1] * dpr, stroke.width * 3 * dpr, 0, Math.PI * 2);
-      ctx.fillStyle = 'black';
-      ctx.fill();
-    } else {
-      ctx.moveTo(pts[0][0] * dpr, pts[0][1] * dpr);
-      for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
-      ctx.stroke();
-    }
+    ctx.arc(pts[0][0] * dpr, pts[0][1] * dpr, width * 3 * dpr, 0, Math.PI * 2);
+    ctx.fill();
   } else {
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.fillStyle = stroke.color;
-    drawPFOutline(ctx, stroke.outline, dpr);
+    const from = Math.max(1, startIdx);
+    ctx.beginPath();
+    ctx.moveTo(pts[from - 1][0] * dpr, pts[from - 1][1] * dpr);
+    for (let i = from; i < pts.length; i++) {
+      ctx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
+    }
+    ctx.stroke();
   }
   ctx.restore();
 }
 
-const computeSize = (uiWidth) => Math.max(4, uiWidth * 2.6);
+// Replay a fully-committed stroke (used by background redraw + export).
+function replayStroke(ctx, stroke, dpr) {
+  if (!stroke?.points?.length) return;
+  if (stroke.isEraser) {
+    drawEraserSegments(ctx, stroke.points, 1, stroke.width, dpr);
+  } else {
+    drawPenSegments(ctx, stroke.points, 1, stroke.color, dpr, true);
+  }
+}
+
 const pageHasInk = (pageStrokes = []) =>
   Array.isArray(pageStrokes) && pageStrokes.some(stroke =>
     !stroke?.isEraser && Array.isArray(stroke.points) && stroke.points.length > 0
@@ -86,27 +118,32 @@ const pageHasInk = (pageStrokes = []) =>
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
   const displayCanvasRef = useRef(null);
   const bgCanvasRef = useRef(null);
-  const rafRef = useRef(null);
+  const displayCtxRef = useRef(null);
+  const bgCtxRef = useRef(null);
+
+  // Live-stroke session refs
   const isDrawingRef = useRef(false);
+  const activePointerIdRef = useRef(null);
   const currentStrokeRef = useRef(null);
-  const lastRenderedPointCountRef = useRef(0);
-  const predictedPointsRef = useRef([]);
-  // Snapshot baking: offscreen canvas holding baked history + cutoff index
-  const liveSnapshotRef = useRef(null);
-  const bakeCutoffRef = useRef(0);
-  // Stable ref holding the latest pointer handlers — used by native event listeners
+  const liveDrawnIdxRef = useRef(1);   // next segment index not yet drawn live
+  const rectRef = useRef(null);        // canvas rect cached at pointerdown
+  const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
+  const smoothWRef = useRef(3);        // low-pass-filtered line width
+
+  // Background bookkeeping
+  const bgRenderedRef = useRef([]);    // strokes already painted on the bg canvas
+  const strokesRef = useRef([]);
+
+  // Stable ref holding the latest pointer handlers
   const handlersRef = useRef({});
 
-  // Tool state mirrored to refs so handlers (attached once) always see fresh values
+  // Tool state mirrored to refs so handlers (attached once) see fresh values
   const isSubmittedRef = useRef(false);
   const activeToolRef = useRef('pen');
   const eraserModeRef = useRef('area');
   const palmGuardRef = useRef(false);
   const strokeColorRef = useRef('#1e1b4b');
   const strokeWidthRef = useRef(3);
-
-  // Refs for values used inside RAF callbacks to avoid stale closures
-  const strokesRef = useRef([]);
 
   const [strokes, setStrokes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
@@ -115,7 +152,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const [activeTool, setActiveTool] = useState('pen');
   const [eraserMode, setEraserMode] = useState('area');
-  const [palmGuard, setPalmGuard] = useState(() => hasCoarsePointer());
+  const [palmGuard, setPalmGuard] = useState(false); // default: accept all input
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
   const [strokeWidth, setStrokeWidth] = useState(3);
 
@@ -129,117 +166,44 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const isGraph = questionType === 'graph_sketch';
 
-  // Keep strokesRef in sync without triggering re-renders in RAF
-  useEffect(() => {
-    strokesRef.current = strokes;
-  }, [strokes]);
+  // ─── Cached drawing contexts (desynchronized → lower touch-to-pixel latency)
+  const getDisplayCtx = () => {
+    if (!displayCtxRef.current && displayCanvasRef.current) {
+      displayCtxRef.current = displayCanvasRef.current.getContext('2d', { desynchronized: true });
+    }
+    return displayCtxRef.current;
+  };
+  const getBgCtx = () => {
+    if (!bgCtxRef.current && bgCanvasRef.current) {
+      bgCtxRef.current = bgCanvasRef.current.getContext('2d', { desynchronized: true });
+    }
+    return bgCtxRef.current;
+  };
 
-  // ─── Background canvas: only redraws when strokes array changes ──────────
+  // ─── Background canvas: full replay (undo / page switch / resize) ──────────
   const redrawBackground = useCallback(() => {
+    const ctx = getBgCtx();
     const canvas = bgCanvasRef.current;
-    if (!canvas || canvas.width === 0) return;
-    // desynchronized: true means we must specify it on first getContext call
-    const ctx = canvas.getContext('2d', { desynchronized: true });
+    if (!ctx || !canvas || canvas.width === 0) return;
     const dpr = window.devicePixelRatio || 1;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    strokesRef.current.forEach(s => drawCommittedStroke(ctx, s, dpr));
+    strokesRef.current.forEach(s => replayStroke(ctx, s, dpr));
+    bgRenderedRef.current = strokesRef.current;
   }, []);
 
-  // ─── Foreground canvas: only draws the live in-progress stroke ───────────
-  // Snapshot baking: baked history drawImage'd + getStroke only on last LIVE_TAIL points → O(1)/frame.
-  const renderLiveStroke = useCallback(() => {
-    const canvas = displayCanvasRef.current;
-    if (!canvas || canvas.width === 0) return;
-    // desynchronized: true — bypasses the browser's main compositing pipeline,
-    // reducing touch-to-pixel latency on ProMotion displays.
-    const ctx = canvas.getContext('2d', { desynchronized: true });
+  // ─── Incremental live render: only paints brand-new segments ──────────────
+  const flushLive = useCallback(() => {
     const stroke = currentStrokeRef.current;
+    if (!stroke) return;
     const dpr = window.devicePixelRatio || 1;
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    if (!stroke || stroke.points.length === 0) {
-      predictedPointsRef.current = [];
-      return;
-    }
-
-    if (stroke.isEraser) {
-      const bgCanvas = bgCanvasRef.current;
-      if (!bgCanvas) return;
-      const bgCtx = bgCanvas.getContext('2d', { desynchronized: true });
-      const pts = stroke.points;
-      const from = Math.max(0, lastRenderedPointCountRef.current - 1);
-      bgCtx.save();
-      bgCtx.globalCompositeOperation = 'destination-out';
-      bgCtx.lineCap = 'round';
-      bgCtx.lineJoin = 'round';
-      bgCtx.lineWidth = stroke.width * 6 * dpr;
-      bgCtx.strokeStyle = 'rgba(0,0,0,1)';
-      bgCtx.beginPath();
-      bgCtx.moveTo(pts[from][0] * dpr, pts[from][1] * dpr);
-      for (let i = from + 1; i < pts.length; i++) {
-        bgCtx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
-      }
-      bgCtx.stroke();
-      bgCtx.restore();
-      lastRenderedPointCountRef.current = pts.length;
-      return;
-    }
-
     const pts = stroke.points;
-    const totalPoints = pts.length;
-
-    // Baking - Strengthened stability: bake history to offscreen snapshot so live PF only processes LIVE_TAIL points.
-    if (totalPoints > bakeCutoffRef.current + BAKE_EVERY + LIVE_TAIL) {
-      const newCutoff = totalPoints - LIVE_TAIL;
-      let snap = liveSnapshotRef.current;
-
-      if (!snap || snap.width !== canvas.width || snap.height !== canvas.height) {
-        snap = document.createElement('canvas');
-        snap.width = canvas.width;
-        snap.height = canvas.height;
-        liveSnapshotRef.current = snap;
-      }
-
-      const snapCtx = snap.getContext('2d');
-      snapCtx.clearRect(0, 0, snap.width, snap.height);
-      snapCtx.fillStyle = stroke.color;
-
-      const bakedOutline = getStroke(
-        pts.slice(0, newCutoff),
-        PF_OPTIONS(stroke.size, stroke.hasRealPressure)
-      );
-      drawPFOutline(snapCtx, bakedOutline, dpr);
-
-      bakeCutoffRef.current = newCutoff;
+    if (stroke.isEraser) {
+      drawEraserSegments(getBgCtx(), pts, liveDrawnIdxRef.current, stroke.width, dpr);
+    } else {
+      drawPenSegments(getDisplayCtx(), pts, liveDrawnIdxRef.current, stroke.color, dpr, false);
     }
-
-    ctx.save();
-    ctx.globalCompositeOperation = 'source-over';
-
-    if (liveSnapshotRef.current && bakeCutoffRef.current > 0) {
-      ctx.drawImage(liveSnapshotRef.current, 0, 0);
-    }
-
-    const tailStart = Math.max(0, bakeCutoffRef.current - BAKE_OVERLAP);
-    const tailPts = tailStart > 0 ? pts.slice(tailStart) : pts;
-    const renderPoints = [...tailPts, ...predictedPointsRef.current];
-
-    ctx.fillStyle = stroke.color;
-    const liveOutline = getStroke(renderPoints, PF_OPTIONS(stroke.size, stroke.hasRealPressure));
-    drawPFOutline(ctx, liveOutline, dpr);
-
-    ctx.restore();
-    lastRenderedPointCountRef.current = totalPoints;
+    liveDrawnIdxRef.current = pts.length; // next segment to draw
   }, []);
-
-  const requestRender = useCallback(() => {
-    if (rafRef.current) return;
-    rafRef.current = requestAnimationFrame(() => {
-      rafRef.current = null;
-      renderLiveStroke();
-    });
-  }, [renderLiveStroke]);
 
   // ─── Canvas sizing ────────────────────────────────────────────────────────
   const syncSize = useCallback(() => {
@@ -256,10 +220,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     let resized = false;
     if (display.width !== newW || display.height !== newH) { display.width = newW; display.height = newH; resized = true; }
     if (bg.width !== newW || bg.height !== newH) { bg.width = newW; bg.height = newH; resized = true; }
-    if (resized) { redrawBackground(); }
+    if (resized) redrawBackground();
   }, [redrawBackground]);
 
-  // Initial size sync + ResizeObserver
   useEffect(() => {
     syncSize();
     const ro = new ResizeObserver(syncSize);
@@ -268,13 +231,18 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     return () => ro.disconnect();
   }, [syncSize]);
 
-  // Redraw background whenever strokes array changes (undo, new stroke, page switch)
+  // Background redraw only when strokes change in a non-append way (undo, clear,
+  // page switch). A plain append is already painted by the pointerup handler.
   useEffect(() => {
-    redrawBackground();
+    const prev = bgRenderedRef.current;
+    const isAppend =
+      strokes.length === prev.length + 1 &&
+      prev.every((s, i) => s === strokes[i]);
+    if (!isAppend) redrawBackground();
+    bgRenderedRef.current = strokes;
   }, [strokes, redrawBackground]);
 
-  // Native pointer event listeners — bypasses React's passive event delegation so
-  // preventDefault() actually works and events arrive before React's batching overhead.
+  // ─── Native pointer listeners (non-passive → preventDefault works) ────────
   useEffect(() => {
     const canvas = displayCanvasRef.current;
     if (!canvas) return;
@@ -285,154 +253,167 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     canvas.addEventListener('pointermove',   move, { passive: false });
     canvas.addEventListener('pointerup',     up,   { passive: false });
     canvas.addEventListener('pointercancel', up,   { passive: false });
+    canvas.addEventListener('pointerleave',  up,   { passive: false });
     return () => {
       canvas.removeEventListener('pointerdown',   down);
       canvas.removeEventListener('pointermove',   move);
       canvas.removeEventListener('pointerup',     up);
       canvas.removeEventListener('pointercancel', up);
+      canvas.removeEventListener('pointerleave',  up);
     };
   }, []);
 
-  // ─── Pointer handlers ─────────────────────────────────────────────────────
-  const toCanvasPoint = (e, rect = null) => {
-    const r = rect || displayCanvasRef.current?.getBoundingClientRect();
-    if (!r) return null;
-    return { x: e.clientX - r.left, y: e.clientY - r.top };
+  // ─── Width model: pen → pressure, finger/mouse → velocity ─────────────────
+  const widthFor = (stroke, pressure, velocity) => {
+    if (stroke.isEraser) return stroke.width;
+    const baseW = stroke.width * 1.25;
+    let target;
+    if (stroke.hasRealPressure) {
+      target = baseW * (0.55 + Math.min(1, pressure) * 1.1);
+    } else {
+      // Faster movement → thinner line (natural ballpoint feel).
+      const f = Math.max(0.6, Math.min(1.3, 1.3 - velocity * 0.14));
+      target = baseW * f;
+    }
+    // Low-pass filter so the width never jitters.
+    smoothWRef.current = smoothWRef.current * 0.55 + target * 0.45;
+    return smoothWRef.current;
   };
 
+  // ─── Stroke-eraser: remove whole strokes under the tap ────────────────────
+  const eraseStrokeAt = (pt) => {
+    const hitR = 16;
+    const next = strokesRef.current.filter(s => {
+      if (s.isEraser || !s.points) return true;
+      return !s.points.some(p => {
+        const dx = p[0] - pt.x, dy = p[1] - pt.y;
+        return dx * dx + dy * dy < hitR * hitR;
+      });
+    });
+    if (next.length !== strokesRef.current.length) {
+      setUndoStack(prev => [...prev, strokesRef.current]);
+      setStrokes(next);
+    }
+  };
+
+  // ─── Pointer handlers ─────────────────────────────────────────────────────
   const onPointerDown = (e) => {
-    if (isSubmittedRef.current || (palmGuardRef.current && e.pointerType !== 'pen')) return;
-    if (!displayCanvasRef.current) return;
+    if (isSubmittedRef.current) return;
+    if (isDrawingRef.current) return; // ignore secondary pointers (palm / 2nd finger)
+    if (palmGuardRef.current && e.pointerType !== 'pen') return;
+    const canvas = displayCanvasRef.current;
+    if (!canvas) return;
 
     e.preventDefault();
-    const pt = toCanvasPoint(e);
-    if (!pt) return;
+    const rect = canvas.getBoundingClientRect();
+    rectRef.current = rect;
+    const pt = { x: e.clientX - rect.left, y: e.clientY - rect.top };
 
-    try { displayCanvasRef.current.setPointerCapture(e.pointerId); } catch {}
+    try { canvas.setPointerCapture(e.pointerId); } catch {}
+    activePointerIdRef.current = e.pointerId;
 
+    // Stroke-eraser mode: tap to delete whole strokes, no live stroke.
     if (activeToolRef.current === 'eraser' && eraserModeRef.current === 'stroke') {
-      const hitRadius = 15;
-      const newStrokes = strokesRef.current.filter(s => {
-        if (s.isEraser) return true;
-        if (!s.points) return false;
-        return !s.points.some(p => Math.hypot(p[0] - pt.x, p[1] - pt.y) < hitRadius);
-      });
-      if (newStrokes.length !== strokesRef.current.length) {
-        setUndoStack(prev => [...prev, strokesRef.current]);
-        setStrokes(newStrokes);
-      }
+      eraseStrokeAt(pt);
+      activePointerIdRef.current = null;
       return;
     }
 
-    isDrawingRef.current = true;
-    lastRenderedPointCountRef.current = 0;
-    liveSnapshotRef.current = null;
-    bakeCutoffRef.current = 0;
+    const isEraser = activeToolRef.current === 'eraser';
     const hasRealPressure = e.pointerType === 'pen';
-    const pressure = hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
-
-    currentStrokeRef.current = {
-      points: [toTuple(pt, pressure)],
+    const stroke = {
+      points: [],
       color: strokeColorRef.current,
       width: strokeWidthRef.current,
-      size: computeSize(strokeWidthRef.current),
+      isEraser,
       hasRealPressure,
-      isEraser: activeToolRef.current === 'eraser',
       completed: false,
     };
+    const pressure = hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
+    smoothWRef.current = (strokeWidthRef.current * 1.25) * (isEraser ? 1 : (0.55 + pressure * 1.1));
+    const w = widthFor(stroke, pressure, 0);
+    stroke.points.push([pt.x, pt.y, w]);
+
+    isDrawingRef.current = true;
+    liveDrawnIdxRef.current = 1;
+    lastSampleRef.current = { x: pt.x, y: pt.y, t: e.timeStamp };
+    currentStrokeRef.current = stroke;
   };
 
   const onPointerMove = (e) => {
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
+    if (e.pointerId !== activePointerIdRef.current) return;
     if (e.cancelable !== false) e.preventDefault();
 
-    const events = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : null;
-    const list = events && events.length > 0 ? events : [e];
+    const rect = rectRef.current;
+    if (!rect) return;
+    const stroke = currentStrokeRef.current;
+    const pts = stroke.points;
 
-    const pts = currentStrokeRef.current.points;
-    const hasRealPressure = currentStrokeRef.current.hasRealPressure;
-    const rect = displayCanvasRef.current?.getBoundingClientRect();
+    const list = (typeof e.getCoalescedEvents === 'function' && e.getCoalescedEvents().length)
+      ? e.getCoalescedEvents()
+      : [e];
 
-    let added = false;
     for (const ev of list) {
-      const pt = toCanvasPoint(ev, rect);
-      if (!pt) continue;
-      const pressure = hasRealPressure && ev.pressure > 0 ? ev.pressure : 0.5;
+      const x = ev.clientX - rect.left;
+      const y = ev.clientY - rect.top;
       const last = pts[pts.length - 1];
-      const dx = pt.x - last[0], dy = pt.y - last[1];
-      if (dx * dx + dy * dy < MIN_DIST_SQ) continue;
-      pts.push(toTuple(pt, pressure));
-      added = true;
+      const dx = x - last[0], dy = y - last[1];
+      const distSq = dx * dx + dy * dy;
+      if (distSq < MIN_DIST_SQ) continue;
+
+      const sample = lastSampleRef.current;
+      const dt = Math.max(1, ev.timeStamp - sample.t);
+      const velocity = Math.sqrt(distSq) / dt; // px per ms
+      const pressure = ev.pressure > 0 ? ev.pressure : 0.5;
+      const w = widthFor(stroke, pressure, velocity);
+
+      pts.push([x, y, w]);
+      lastSampleRef.current = { x, y, t: ev.timeStamp };
     }
 
-    const predicted = typeof e.getPredictedEvents === 'function' ? e.getPredictedEvents() : [];
-    predictedPointsRef.current = predicted
-      .map(ev => {
-        const pt = toCanvasPoint(ev, rect);
-        if (!pt) return null;
-        const pressure = hasRealPressure && ev.pressure > 0 ? ev.pressure : 0.5;
-        return toTuple(pt, pressure);
-      })
-      .filter(Boolean);
-
-    if (added || predictedPointsRef.current.length > 0) requestRender();
+    flushLive();
   };
 
   const onPointerUp = (e) => {
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
+    if (e.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
 
     isDrawingRef.current = false;
-    const finished = currentStrokeRef.current;
-    if (!finished) return;
+    activePointerIdRef.current = null;
+    const stroke = currentStrokeRef.current;
+    currentStrokeRef.current = null;
+    if (!stroke) return;
 
-    // Final point capture to prevent missing last segments (crucial fix)
-    if (e && typeof e.clientX === 'number') {
-      const rect = displayCanvasRef.current?.getBoundingClientRect();
-      const pt = toCanvasPoint(e, rect);
-      if (pt) {
-        const pts = finished.points;
-        if (pts.length > 0) {
-          const last = pts[pts.length - 1];
-          const dx = pt.x - last[0], dy = pt.y - last[1];
-          if (dx * dx + dy * dy >= MIN_DIST_SQ) {
-            const pressure = finished.hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
-            pts.push(toTuple(pt, pressure));
-          }
-        }
+    // Capture the genuine final point so quick taps / short flicks never vanish.
+    const rect = rectRef.current;
+    if (rect && typeof e.clientX === 'number') {
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const pts = stroke.points;
+      const last = pts[pts.length - 1];
+      const dx = x - last[0], dy = y - last[1];
+      if (dx * dx + dy * dy >= 0.25) {
+        pts.push([x, y, last[2]]);
       }
     }
+    stroke.completed = true;
 
-    finished.completed = true;
-
-    if (!finished.isEraser) {
-      finished.outline = getStroke(
-        finished.points, 
-        PF_OPTIONS_FINAL(finished.size, finished.hasRealPressure)
-      );
-    }
-
-    // Cleanup session state
-    currentStrokeRef.current = null;
-    predictedPointsRef.current = [];
-    liveSnapshotRef.current = null;
-    bakeCutoffRef.current = 0;
-
-    // Commit to background buffer
-    const bgCanvas = bgCanvasRef.current;
-    if (bgCanvas) {
-      const dpr = window.devicePixelRatio || 1;
-      drawCommittedStroke(bgCanvas.getContext('2d', { desynchronized: true }), finished, dpr);
-    }
-
-    // Clear live overlay
-    const display = displayCanvasRef.current;
-    if (display) {
-      const ctx = display.getContext('2d', { desynchronized: true });
-      ctx.clearRect(0, 0, display.width, display.height);
+    const dpr = window.devicePixelRatio || 1;
+    if (stroke.isEraser) {
+      // Eraser already painted live onto the bg; flush any remaining tail.
+      drawEraserSegments(getBgCtx(), stroke.points, liveDrawnIdxRef.current, stroke.width, dpr);
+    } else {
+      // Paint the finished pen stroke onto the bg, THEN clear the live overlay
+      // (bg-first ordering → zero flash).
+      drawPenSegments(getBgCtx(), stroke.points, 1, stroke.color, dpr, true);
+      const dctx = getDisplayCtx();
+      const dc = displayCanvasRef.current;
+      if (dctx && dc) dctx.clearRect(0, 0, dc.width, dc.height);
     }
 
     setUndoStack(prev => [...prev, strokesRef.current]);
-    setStrokes(prev => [...prev, finished]);
+    setStrokes(prev => [...prev, stroke]);
   };
 
   handlersRef.current = { onPointerDown, onPointerMove, onPointerUp };
@@ -510,7 +491,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       ctx.fillStyle = '#fff';
       ctx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
       drawBackground(ctx, dpr);
-      (pageStrokes || []).forEach(s => drawCommittedStroke(ctx, s, dpr));
+      (pageStrokes || []).forEach(s => replayStroke(ctx, s, dpr));
       return tempCanvas.toDataURL('image/png');
     };
 
@@ -615,11 +596,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
         )}
         <canvas
           ref={bgCanvasRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', willChange: 'transform' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
         />
         <canvas
           ref={displayCanvasRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair', willChange: 'transform' }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
         />
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
