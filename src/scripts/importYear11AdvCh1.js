@@ -1,21 +1,21 @@
 import { db } from '../firebase/config';
 import { collection, addDoc, serverTimestamp, getDocs, query, where, writeBatch, doc } from 'firebase/firestore';
+import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions';
 
 const chapterData = {
   chapterId: 'y11a-1',
   chapterTitle: 'Chapter 1: Algebra review',
-  topicId: 'y11a-1A',
-  topicCode: '1A',
-  topicTitle: 'Expanding brackets',
   year: 'Year 11',
   difficulty: 'easy',
   isManual: true
 };
 
-const allQuestions = [
+// My 20 new questions (transformed for the script)
+const newQuestions = [
   // --- Section 1: Simple Expansion ---
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(4(x - 3)\\)',
     answer: '4x-12',
@@ -23,6 +23,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(5(a - 2)\\)',
     answer: '5a-10',
@@ -30,6 +31,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(-2(y - 5)\\)',
     answer: '-2y+10',
@@ -37,6 +39,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(-3(z + 4)\\)',
     answer: '-3z-12',
@@ -44,6 +47,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(6(2x + 3)\\)',
     answer: '12x+18',
@@ -51,6 +55,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(-(x + 7)\\)',
     answer: '-x-7',
@@ -60,6 +65,7 @@ const allQuestions = [
   // --- Section 2: Variables and Negatives ---
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(2(x + 3y)\\)',
     answer: '2x+6y',
@@ -67,6 +73,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(-3(p - 2q)\\)',
     answer: '-3p+6q',
@@ -74,6 +81,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(k(x - 5)\\)',
     answer: 'kx-5k',
@@ -81,6 +89,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'short_answer',
     question: 'Expand the expression: \\(-y(y - 2)\\)',
     answer: '-y^2+2y',
@@ -90,6 +99,7 @@ const allQuestions = [
   // --- Section 3: Expand and Simplify (Linear Combination) ---
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\(3(x + 2) - 2x\\)',
     options: [{text: 'x + 6', imageUrl: ''}, {text: 'x + 2', imageUrl: ''}, {text: '5x + 6', imageUrl: ''}, {text: 'x - 6', imageUrl: ''}],
@@ -98,6 +108,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\(2a + 4 + 3(a - 1)\\)',
     options: [{text: '5a + 1', imageUrl: ''}, {text: '5a + 7', imageUrl: ''}, {text: '5a - 1', imageUrl: ''}, {text: 'a + 1', imageUrl: ''}],
@@ -106,6 +117,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\(7 - (x + 2)\\)',
     options: [{text: '5 - x', imageUrl: ''}, {text: '9 - x', imageUrl: ''}, {text: 'x + 5', imageUrl: ''}, {text: '-x + 9', imageUrl: ''}],
@@ -114,6 +126,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\((3x - 2y) - (2x - 3y)\\)',
     options: [{text: 'x + y', imageUrl: ''}, {text: 'x - 5y', imageUrl: ''}, {text: '5x + y', imageUrl: ''}, {text: 'x - y', imageUrl: ''}],
@@ -122,6 +135,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\(2(x - 3) - 3(x - 1)\\)',
     options: [{text: '-x - 3', imageUrl: ''}, {text: '-x - 9', imageUrl: ''}, {text: 'x - 3', imageUrl: ''}, {text: '-x + 3', imageUrl: ''}],
@@ -132,6 +146,7 @@ const allQuestions = [
   // --- Section 4: Binomial Expansion (Easy) ---
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\((x + 1)(x + 4)\\)',
     options: [{text: 'x^2 + 5x + 4', imageUrl: ''}, {text: 'x^2 + 4x + 1', imageUrl: ''}, {text: 'x^2 + 5x + 5', imageUrl: ''}, {text: '2x + 5', imageUrl: ''}],
@@ -140,6 +155,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\((y + 3)(y + 2)\\)',
     options: [{text: 'y^2 + 5y + 6', imageUrl: ''}, {text: 'y^2 + 6y + 5', imageUrl: ''}, {text: 'y^2 + 5y + 5', imageUrl: ''}, {text: 'y^2 + 6', imageUrl: ''}],
@@ -148,6 +164,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\((t + 5)(t - 2)\\)',
     options: [{text: 't^2 + 3t - 10', imageUrl: ''}, {text: 't^2 - 3t - 10', imageUrl: ''}, {text: 't^2 + 3t + 10', imageUrl: ''}, {text: 't^2 + 7t - 10', imageUrl: ''}],
@@ -156,6 +173,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\((x - 3)(x + 1)\\)',
     options: [{text: 'x^2 - 2x - 3', imageUrl: ''}, {text: 'x^2 + 2x - 3', imageUrl: ''}, {text: 'x^2 - 4x - 3', imageUrl: ''}, {text: 'x^2 - 3', imageUrl: ''}],
@@ -164,6 +182,7 @@ const allQuestions = [
   },
   {
     ...chapterData,
+    topicId: 'y11a-1A', topicCode: '1A', topicTitle: 'Expanding brackets',
     type: 'multiple_choice',
     question: 'Expand and simplify: \\((3a + 1)(a + 2)\\)',
     options: [{text: '3a^2 + 7a + 2', imageUrl: ''}, {text: '3a^2 + 6a + 2', imageUrl: ''}, {text: '3a^2 + 7a + 1', imageUrl: ''}, {text: '4a^2 + 7a + 2', imageUrl: ''}],
@@ -173,18 +192,47 @@ const allQuestions = [
 ];
 
 export const importYear11AdvCh1 = async (forceReset = false) => {
-  console.log(`Starting import of Year 11 Adv Ch1A...`);
+  console.log(`Starting full sync of Year 11 Adv Ch1 (74 original + 20 new)...`);
   try {
-    if (forceReset) {
-      const qSnap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', 'y11a-1')));
-      const batch = writeBatch(db);
-      qSnap.forEach(d => batch.delete(d.ref));
-      await batch.commit();
-      console.log('Cleared existing questions for y11a-1');
-    }
+    // We ALWAYS reset Chapter 1 to ensure a clean merge of original + new without duplicates
+    const qSnap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', 'y11a-1')));
+    const batch = writeBatch(db);
+    qSnap.forEach(d => batch.delete(d.ref));
+    await batch.commit();
+    console.log('Cleared existing questions for y11a-1');
 
     let count = 0;
-    for (const q of allQuestions) {
+    
+    // 1. Add Original 74 Questions
+    for (const qData of ALGEBRA_QUESTIONS_Y11A) {
+      const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+      const correctIndex = shuffledOpts.indexOf(qData.a);
+
+      await addDoc(collection(db, 'questions'), {
+        chapterId: 'y11a-1',
+        chapterTitle: 'Chapter 1: Algebra review',
+        topicId: 'y11a-1' + qData.c.slice(-1),
+        topicCode: qData.c,
+        topicTitle: qData.t,
+        isManual: true,
+        title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
+        question: qData.q,
+        difficulty: 'medium',
+        timeLimit: 120,
+        type: 'multiple_choice',
+        options: shuffledOpts.map(o => ({ text: o, imageUrl: "" })),
+        answer: correctIndex.toString(),
+        hint: qData.h,
+        solution: qData.s,
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
+        isActive: true
+      });
+      count++;
+    }
+
+    // 2. Add My 20 New Questions
+    for (const q of newQuestions) {
       await addDoc(collection(db, 'questions'), {
         ...q,
         createdAt: serverTimestamp(),
@@ -193,7 +241,8 @@ export const importYear11AdvCh1 = async (forceReset = false) => {
       });
       count++;
     }
-    console.log(`Successfully imported ${count} questions.`);
+
+    console.log(`Successfully imported total ${count} questions (94 total).`);
     return count;
   } catch (err) {
     console.error('Import failed:', err);
