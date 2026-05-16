@@ -158,6 +158,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [messageOpen, setMessageOpen] = useState(false);
   const [messageText, setMessageText] = useState("");
   const [sendingMessage, setSendingMessage] = useState(false);
+  const [sendingReport, setSendingReport] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscSaving, setHscSaving] = useState(false);
@@ -590,6 +591,40 @@ const StudentDetail = ({ studentId, onBack }) => {
       showToast(e.message, "error");
     } finally {
       setSendingMessage(false);
+    }
+  };
+
+  // Generate & email this week's learning report on demand.
+  const handleSendReport = async () => {
+    const reportUid = challengeResultsUid;
+    if (!reportUid) {
+      showToast(
+        "Weekly reports are only available for registered students (this profile has no linked account).",
+        "warning",
+        7000,
+      );
+      return;
+    }
+    try {
+      setSendingReport(true);
+      const response = await fetch("/api/send-report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ studentId: reportUid }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send report");
+      }
+      if (data.success) {
+        showToast(`Weekly report sent to ${data.email}.`, "success");
+      } else {
+        showToast(`Report not sent: ${data.emailError || "unknown error"}`, "error", 7000);
+      }
+    } catch (e) {
+      showToast(e.message, "error");
+    } finally {
+      setSendingReport(false);
     }
   };
 
@@ -2765,7 +2800,7 @@ const StudentDetail = ({ studentId, onBack }) => {
               <Phone size={16} /> {student?.phone || "No Phone"}
             </div>
           </div>
-          <div style={{ display: "flex", gap: "12px" }}>
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <button
               onClick={() => setMessageOpen(true)}
               className="app-button"
@@ -2779,6 +2814,22 @@ const StudentDetail = ({ studentId, onBack }) => {
               }}
             >
               Message
+            </button>
+            <button
+              onClick={handleSendReport}
+              disabled={sendingReport}
+              className="app-button"
+              style={{
+                padding: "8px 16px",
+                borderRadius: "12px",
+                background: sendingReport ? "#f1f5f9" : "#ecfdf5",
+                color: sendingReport ? "#94a3b8" : "#047857",
+                fontWeight: 700,
+                border: "1px solid #a7f3d0",
+                cursor: sendingReport ? "default" : "pointer",
+              }}
+            >
+              {sendingReport ? "Sending…" : "Weekly Report"}
             </button>
             <button
               onClick={() => setIsEditModalOpen(true)}
