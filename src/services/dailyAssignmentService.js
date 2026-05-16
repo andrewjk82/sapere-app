@@ -7,6 +7,7 @@ import {
   query,
   serverTimestamp,
   setDoc,
+  deleteDoc,
   where,
 } from "firebase/firestore";
 import { db } from "../firebase/config";
@@ -357,6 +358,39 @@ export const createDailyAssignment = async ({
   return cacheValue;
 };
 
+export const prepareNextDailyAssignment = async ({
+  uid,
+  studentProfile,
+  questionCount,
+}) => {
+  if (!uid) throw new Error("Daily assignment prep requires a user id.");
+  const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
+  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount);
+
+  const prepAssignment = {
+    date: "next_prep",
+    status: "prepared",
+    version: Date.now(),
+    questionCount: questions.length,
+    requestedQuestionCount: resolvedQuestionCount,
+    questionIds: questions.map((question) => question.id).filter(Boolean),
+    questions,
+    source,
+    generatedBy: "proactive-prep",
+    generatedAt: new Date().toISOString(),
+    updatedAt: serverTimestamp(),
+  };
+
+  // Save to Firestore as 'next_prep'
+  await setDoc(doc(db, "users", uid, "daily_assignments", "next_prep"), prepAssignment, { merge: false });
+  
+  // Save to Local Cache (use prefix to distinguish from normal cache)
+  const cacheValue = { ...prepAssignment, updatedAt: null, savedAt: Date.now() };
+  localCache.set(`next-daily-assignment:${uid}`, cacheValue);
+  
+  return cacheValue;
+};
+
 export const fetchOrCreateDailyAssignment = async ({
   uid,
   studentProfile,
@@ -390,6 +424,49 @@ export const fetchOrCreateDailyAssignment = async ({
     return cached;
   }
 
+  // --- NEW: PROACTIVE PREP CHECK ---
+  const prepCacheKey = `next-daily-assignment:${uid}`;
+  let prepAssignment = localCache.get(prepCacheKey);
+  
+  if (!prepAssignment) {
+    const prepSnap = await getDoc(doc(db, "users", uid, "daily_assignments", "next_prep"));
+    if (prepSnap.exists()) {
+      prepAssignment = { id: prepSnap.id, ...prepSnap.data() };
+    }
+  }
+
+  if (
+    prepAssignment
+    && prepAssignment.status === "prepared"
+    && Array.isArray(prepAssignment.questions)
+    && prepAssignment.questions.length > 0
+    && Number(prepAssignment.requestedQuestionCount || prepAssignment.questionCount || 0) === expectedQuestionCount
+  ) {
+    // Stamp the pre-generated assignment with today's date
+    const stampedAssignment = {
+      ...prepAssignment,
+      id: dateKey,
+      date: dateKey,
+      status: "open",
+      version: Date.now(),
+      updatedAt: serverTimestamp(),
+    };
+    
+    // Save to today's dateKey
+    await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stampedAssignment, { merge: false });
+    
+    // Cleanup the prep data
+    await deleteDoc(doc(db, "users", uid, "daily_assignments", "next_prep")).catch(() => {});
+    localCache.remove(prepCacheKey);
+    
+    // Cache the active assignment
+    const cacheValue = { ...stampedAssignment, updatedAt: null, savedAt: Date.now() };
+    localCache.set(cacheKey, cacheValue);
+    
+    return cacheValue;
+  }
+
+  // Fallback to synchronous generation
   return createDailyAssignment({
     uid,
     studentProfile,

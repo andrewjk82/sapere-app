@@ -20,6 +20,7 @@ import { generateLearningRecommendations } from '../utils/analyticsUtils';
 import MathView, { toDisplayText } from './MathView';
 import {
   fetchOrCreateDailyAssignment,
+  prepareNextDailyAssignment,
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
@@ -1562,11 +1563,23 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           },
           savedAt: Date.now(),
         });
-        writeChallengeStatusMeta(user.uid, today, challengeType, 'completed')
+        writeChallengeStatusMeta(user.uid, today, challengeType, isAbandoned ? 'abandoned' : 'completed')
           .catch((err) => console.warn('challenge status meta update failed (non-critical):', err?.code || err));
+          
         if (challengeType === 'daily') {
-          markDailyAssignmentCompleted(user.uid, today)
-            .catch((err) => console.warn('daily assignment completion update failed (non-critical):', err?.code || err));
+          if (!isAbandoned) {
+            markDailyAssignmentCompleted(user.uid, today)
+              .catch((err) => console.warn('daily assignment completion update failed (non-critical):', err?.code || err));
+          }
+          
+          // --- PROACTIVE GENERATION ---
+          // Pre-fetch the NEXT daily assignment in the background 
+          // so the student has 0 latency tomorrow or on their next attempt.
+          prepareNextDailyAssignment({
+            uid: user.uid,
+            studentProfile,
+            questionCount: getQuestionCount('daily'),
+          }).catch((err) => console.warn('Proactive assignment generation failed (non-critical):', err));
         }
       }
     } catch (err) {
