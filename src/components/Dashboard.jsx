@@ -344,6 +344,18 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <div style={{ flex: 1 }}><label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>Date</label><div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}><Calendar size={16} />{selectedViewSession.date}</div></div>
                   <div style={{ flex: 1 }}><label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '6px' }}>Time</label><div style={{ fontWeight: 700, color: '#1e1b4b', display: 'flex', alignItems: 'center', gap: '6px' }}><Clock size={16} />{selectedViewSession.startTime}</div></div>
                 </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Lesson Notes</label>
+                  <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#475569', lineHeight: 1.6, fontWeight: 500, border: '1px solid #f1f5f9' }}>
+                    {selectedViewSession.notes || 'No notes provided for this session.'}
+                  </div>
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Homework</label>
+                  <div style={{ background: '#f0f9ff', padding: '16px', borderRadius: '16px', fontSize: '0.95rem', color: '#0369a1', lineHeight: 1.6, fontWeight: 600, border: '1px solid #e0f2fe' }}>
+                    {selectedViewSession.homework || 'No homework assigned.'}
+                  </div>
+                </div>
                 <button onClick={() => setSelectedViewSession(null)} style={{ width: '100%', backgroundColor: '#1e1b4b', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer', marginTop: '8px' }}>Close Details</button>
               </div>
             </motion.div>
