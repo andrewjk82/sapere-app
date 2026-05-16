@@ -180,6 +180,16 @@ const TestRow = ({
         <p>{meta}</p>
       </div>
       <div className="cs__test-actions">
+        {state !== 'loading' && (
+          <button
+            type="button"
+            className="cs__review"
+            onClick={onReview}
+            title={`Past records for ${title}`}
+          >
+            <History size={14} /> Review
+          </button>
+        )}
         {state === 'completed' ? (
           <span className="cs__status cs__status--done">
             <CheckCircle2 size={16} /> Done today
@@ -191,19 +201,9 @@ const TestRow = ({
         ) : state === 'loading' ? (
           <span className="cs__status">Checking...</span>
         ) : (
-          <>
-            <button
-              type="button"
-              className="cs__review"
-              onClick={onReview}
-              title={`Past records for ${title}`}
-            >
-              <History size={14} /> Review
-            </button>
-            <button type="button" className={beginClass} onClick={onBegin}>
-              Begin <ArrowRight size={16} />
-            </button>
-          </>
+          <button type="button" className={beginClass} onClick={onBegin}>
+            Begin <ArrowRight size={16} />
+          </button>
         )}
       </div>
     </div>
