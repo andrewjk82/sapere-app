@@ -5,11 +5,12 @@ const chapterData = {
   chapterId: 'y11a-4',
   chapterTitle: 'Chapter 4: Equations and inequations',
   year: 'Year 11',
+  course: 'Advanced',
   isManual: true
 };
 
 const allQuestions4A = [
-  // --- FROM OLD importYear11Ch4A.js (27 questions) ---
+  // --- EXISTING EASY QUESTIONS (Merged 48 questions) ---
   {
     chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
     year: 'Year 11', course: 'Advanced', type: 'multiple_choice', difficulty: 'easy', isManual: true,
@@ -226,8 +227,6 @@ const allQuestions4A = [
     answer: '0',
     solution: 'Step 1: Subtract 6 from all parts.\n$$-15 < 3b \\le 3$$\nStep 2: Divide all parts by 3.\n$$-5 < b \\le 1$$\nStep 3: Open circle at -5, solid circle at 1, connect them.'
   },
-
-  // --- NEW 21 EASY QUESTIONS ---
   { 
     ...chapterData, difficulty: 'easy', topicId: 'y11a-4A', topicCode: '4A', type: 'multiple_choice', 
     question: 'Which of the following describes the graph of \\(x > 3\\) on a number line?', 
@@ -391,6 +390,181 @@ const allQuestions4A = [
     question: 'Solve: \\(15 - 8x > -3x - 10\\).', 
     answer: 'x < 5', 
     solution: '1. Add 8x:\n\\[15 > 5x - 10\\]\n2. Add 10:\n\\[25 > 5x\\]\n3. Divide by 5:\n\\[5 > x\\] or \\(x < 5\\)' 
+  },
+
+  // --- NEW MEDIUM QUESTIONS (Q4 - Q15) ---
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve the double inequation and choose the correct solution set: $$4 < x + 3 < 9$$',
+    options: [{ text: '$1 < x < 6$', imageUrl: '' }, { text: '$4 < x < 9$', imageUrl: '' }, { text: '$1 \\le x \\le 6$', imageUrl: '' }, { text: '$7 < x < 12$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Subtract 3 from all parts of the inequality.\n$$4 - 3 < x + 3 - 3 < 9 - 3$$\nStep 2: Simplify:\n$$1 < x < 6$$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve the double inequation: $$-6 < y - 4 \\le 5$$',
+    options: [{ text: '$-2 < y \\le 9$', imageUrl: '' }, { text: '$-10 < y \\le 1$', imageUrl: '' }, { text: '$-2 \\le y < 9$', imageUrl: '' }, { text: '$-2 < y < 9$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Add 4 to all parts to isolate $y$.\n$$-6 + 4 < y - 4 + 4 \\le 5 + 4$$\nStep 2: Simplify:\n$$-2 < y \\le 9$$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$-10 \\le 5a < 15$$',
+    options: [{ text: '$-2 \\le a < 3$', imageUrl: '' }, { text: '$-2 < a \\le 3$', imageUrl: '' }, { text: '$-50 \\le a < 75$', imageUrl: '' }, { text: '$-2 \\le a \\le 3$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Divide all parts by 5 to isolate $a$.\n$$\\frac{-10}{5} \\le \\frac{5a}{5} < \\frac{15}{5}$$\nStep 2: Simplify:\n$$-2 \\le a < 3$$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$-2 \\le 3k \\le 4$$',
+    options: [{ text: '$-\\frac{2}{3} \\le k \\le \\frac{4}{3}$', imageUrl: '' }, { text: '$-6 \\le k \\le 12$', imageUrl: '' }, { text: '$-\\frac{2}{3} < k < \\frac{4}{3}$', imageUrl: '' }, { text: '$k \\le \\frac{4}{3}$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Divide all parts by 3 to isolate $k$.\n$$-\\frac{2}{3} \\le k \\le \\frac{4}{3}$$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$-11 < 4m - 1 < 5$$',
+    options: [{ text: '$-2.5 < m < 1.5$', imageUrl: '' }, { text: '$-3 < m < 1$', imageUrl: '' }, { text: '$-2.5 \\le m \\le 1.5$', imageUrl: '' }, { text: '$-3 < m < 1.5$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Add 1 to all parts.\n$$-10 < 4m < 6$$\nStep 2: Divide by 4.\n$$-2.5 < m < 1.5$$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$-8 < 6x + 4 \\le 10$$',
+    options: [{ text: '$-2 < x \\le 1$', imageUrl: '' }, { text: '$-12 < x \\le 6$', imageUrl: '' }, { text: '$-2 \\le x < 1$', imageUrl: '' }, { text: '$-1 < x \\le 2$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Subtract 4 from all parts.\n$$-12 < 6x \\le 6$$\nStep 2: Divide by 6.\n$$-2 < x \\le 1$$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve and write in interval notation: $$-6 < -3x < 12$$',
+    options: [{ text: '$(-4, 2)$', imageUrl: '' }, { text: '$[-4, 2]$', imageUrl: '' }, { text: '$(2, -4)$', imageUrl: '' }, { text: '$(-4, 2]$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Divide by -3 and reverse signs.\n$$\\frac{-6}{-3} > x > \\frac{12}{-3} \\implies 2 > x > -4$$\nStep 2: Rewrite in order: $-4 < x < 2$. Result: $(-4, 2)$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve and express in interval notation: $$-3 \\le -x \\le 2$$',
+    options: [{ text: '$[-2, 3]$', imageUrl: '' }, { text: '$(-2, 3)$', imageUrl: '' }, { text: '$[-3, 2]$', imageUrl: '' }, { text: '$[-2, 3)$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Multiply by -1 and reverse signs.\n$$3 \\ge x \\ge -2 \\implies -2 \\le x \\le 3$$. Result: $[-2, 3]$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve and express in interval notation: $$-8 \\le 7 - 5x < 2$$',
+    options: [{ text: '$(1, 3]$', imageUrl: '' }, { text: '$[1, 3)$', imageUrl: '' }, { text: '$(1, 3)$', imageUrl: '' }, { text: '$(-15, -5)$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Subtract 7: $-15 \\le -5x < -5$\nStep 2: Divide by -5 and reverse signs: $3 \\ge x > 1$. Result: $(1, 3]$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve and express in interval notation: $$-5 < 2 - \\frac{1}{4}x \\le 1$$',
+    options: [{ text: '$[4, 28)$', imageUrl: '' }, { text: '$(4, 28]$', imageUrl: '' }, { text: '$[1, 7)$', imageUrl: '' }, { text: '$(-28, -4]$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Subtract 2: $-7 < -\\frac{1}{4}x \\le -1$\nStep 2: Multiply by -4 and reverse signs: $28 > x \\ge 4$. Result: $[4, 28)$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve and express in interval notation: $$\\frac{x}{4} < 2 + \\frac{x}{3}$$',
+    options: [{ text: '$(-24, \\infty)$', imageUrl: '' }, { text: '$(-\\infty, -24)$', imageUrl: '' }, { text: '$(24, \\infty)$', imageUrl: '' }, { text: '$(-8, \\infty)$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Multiply by 12: $3x < 24 + 4x$\nStep 2: Solve: $-x < 24 \\implies x > -24$. Result: $(-24, \\infty)$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$\\frac{1}{5}y \\ge \\frac{2}{5}y - 2$$',
+    options: [{ text: '$(-\\infty, 10]$', imageUrl: '' }, { text: '$[10, \\infty)$', imageUrl: '' }, { text: '$(-\\infty, -10]$', imageUrl: '' }, { text: '$[-10, 10]$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Multiply by 5: $y \\ge 2y - 10$\nStep 2: Solve: $-y \\ge -10 \\implies y \\le 10$. Result: $(-\\infty, 10]$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$\\frac{3x-2}{4} \\ge \\frac{x+2}{5} - 1$$',
+    options: [{ text: '$x \\ge -\\frac{2}{11}$', imageUrl: '' }, { text: '$x \\ge \\frac{1}{2}$', imageUrl: '' }, { text: '$x \\le -\\frac{2}{11}$', imageUrl: '' }, { text: '$x \\ge 0$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Multiply by 20: $5(3x - 2) \\ge 4(x + 2) - 20$\nStep 2: Expand: $15x - 10 \\ge 4x + 8 - 20 \\implies 15x - 10 \\ge 4x - 12$\nStep 3: Solve: $11x \\ge -2 \\implies x \\ge -\\frac{2}{11}$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Solve: $$\\frac{1}{8}(3 - x) - \\frac{1}{4}(3 + x) > 1$$',
+    options: [{ text: '$x < -\\frac{11}{3}$', imageUrl: '' }, { text: '$x > -\\frac{11}{3}$', imageUrl: '' }, { text: '$x < 1$', imageUrl: '' }, { text: '$x < -5$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Multiply by 8: $(3 - x) - 2(3 + x) > 8$\nStep 2: Expand: $3 - x - 6 - 2x > 8 \\implies -3x - 3 > 8$\nStep 3: Solve: $-3x > 11 \\implies x < -\\frac{11}{3}$'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'For $y = 8 - 4x$, for what values of $x$ is $8 - 4x > 0$?',
+    options: [{ text: '$x < 2$', imageUrl: '' }, { text: '$x > 2$', imageUrl: '' }, { text: '$x < 8$', imageUrl: '' }, { text: '$x > 0$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: Algebraic check: $8 - 4x > 0 \\implies -4x > -8 \\implies x < 2$.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Part (a): Consider $y = 3x - 6$. (i) Find the x-intercept. (ii) Solve $3x - 6 \\ge 0$.',
+    options: [{ text: '(i) $x=2$; (ii) $x \\ge 2$', imageUrl: '' }, { text: '(i) $x=-6$; (ii) $x \\le 2$', imageUrl: '' }, { text: '(i) $x=2$; (ii) $x \\le 2$', imageUrl: '' }, { text: '(i) $x=6$; (ii) $x \\ge 2$' }],
+    answer: "0",
+    solution: 'Step 1: $0 = 3x - 6 \\implies x = 2$.\nStep 2: Line is increasing (slope 3), so it is $\\ge 0$ for $x \\ge 2$.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Part (b): For $y = 3x - 2$ and $y = 4 - x$, (i) find the intersection and (ii) solve $3x - 2 < 4 - x$.',
+    options: [{ text: '(i) $x=1.5$; (ii) $x < 1.5$', imageUrl: '' }, { text: '(i) $x=1.5$; (ii) $x > 1.5$', imageUrl: '' }, { text: '(i) $x=1$; (ii) $x < 1$', imageUrl: '' }, { text: '(i) $x=2$; (ii) $x < 2$', imageUrl: '' }],
+    answer: "0",
+    solution: 'Step 1: $3x - 2 = 4 - x \\implies 4x = 6 \\implies x = 1.5$.\nStep 2: Line 1 is increasing, Line 2 is decreasing. Line 1 < Line 2 for $x < 1.5$.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'short_answer',
+    question: 'Find the values of $x$ for which $4x - 5$ is below the line $10 - x$.',
+    answer: 'x < 3',
+    solution: 'Step 1: $4x - 5 < 10 - x \\implies 5x < 15 \\implies x < 3$.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Investment of $150,000 earns $750/month interest. (i) Equation for balance B at month n. (ii) Last month n for $B \\le 156,000$. (iii) First month n for $B > 162,000$.',
+    options: [{ text: '(i) $B = 150000 + 750n$; (ii) n=8; (iii) n=17', imageUrl: '' }, { text: '(i) $B = 150000 + 750(n-1)$; (ii) n=9; (iii) n=17', imageUrl: '' }, { text: '(i) $B = 150000 + 750n$; (ii) n=8; (iii) n=16', imageUrl: '' }, { text: '(i) $B = 750n$; (ii) n=200; (iii) n=216' }],
+    answer: "0",
+    solution: 'Step 1: (i) $B = 150000 + 750n$. (ii) $150000 + 750n \\le 156000 \\implies 750n \\le 6000 \\implies n=8$. (iii) $150000 + 750n > 162000 \\implies 750n > 12000 \\implies n > 16 \\implies n=17$.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'short_answer',
+    question: 'Call-out fee $250 plus $60/light. Budget $800. Max lights?',
+    answer: '9',
+    solution: 'Step 1: $250 + 60n \\le 800 \\implies 60n \\le 550 \\implies n \\le 9.16$. Max lights = 9.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'short_answer',
+    question: '31 members voted. Votes for Jack (x) > 2 * votes for Jill (y). Min votes for Jack?',
+    answer: '21',
+    solution: 'Step 1: $x + y = 31 \\implies y = 31 - x$. Step 2: $x > 2(31 - x) \\implies x > 62 - 2x \\implies 3x > 62 \\implies x > 20.66$. Min = 21.'
+  },
+  {
+    ...chapterData, topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Inequations and inequalities',
+    difficulty: 'medium', type: 'multiple_choice',
+    question: 'Business: Fixed $1200, variable $40/item, price $70/item. (i) Break-even. (ii) Min items to cover $500 loss. (iii) Items for $1500 profit.',
+    options: [{ text: '(i) 40 items; (ii) 24 items; (iii) 90 items', imageUrl: '' }, { text: '(i) 40 items; (ii) 23 items; (iii) 90 items', imageUrl: '' }, { text: '(i) 30 items; (ii) 17 items; (iii) 60 items', imageUrl: '' }, { text: '(i) 40 items; (ii) 24 items; (iii) 50 items' }],
+    answer: "0",
+    solution: 'Step 1: Profit $P = 70n - (1200 + 40n) = 30n - 1200$. (i) $P=0 \\implies n=40$. (ii) $P \\ge -500 \\implies 30n \\ge 700 \\implies n \\ge 23.3 \\implies 24$. (iii) $P \ge 1500 \\implies 30n \\ge 2700 \\implies n=90$.'
   }
 ];
 
