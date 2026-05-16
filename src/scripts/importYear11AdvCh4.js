@@ -3,7 +3,7 @@ import { collection, addDoc, serverTimestamp, getDocs, query, where, writeBatch 
 
 const chapterData = {
   chapterId: 'y11a-4',
-  chapterTitle: 'Chapter 4: Linear Inequalities',
+  chapterTitle: 'Chapter 4: Equations and inequations',
   year: 'Year 11',
   isManual: true
 };
