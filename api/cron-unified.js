@@ -179,7 +179,7 @@ export default async function handler(req, res) {
               const name = student.name || student.displayName ||
                 `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
               const data = await gatherStudentWeek(db, sd.id, week.days, email);
-              const report = renderWeeklyReportBody({ name, label: week.label, days: week.days, ...data });
+              const report = renderWeeklyReportBody({ name, label: week.label, days: week.days, student, ...data });
               if (!report.hasData) return { skipped: true };
               if (email) {
                 await transporter.sendMail({

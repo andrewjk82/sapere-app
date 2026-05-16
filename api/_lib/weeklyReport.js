@@ -174,12 +174,93 @@ function dayGrid(days, byDate) {
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed;"><tr>${cells}</tr></table>`;
 }
 
+import { CURRICULUM_DATA } from '../../src/constants/curriculumData.js';
+
 // Build the inner HTML body + subject for a student's weekly report.
-export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByDate, sessions }) {
+export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByDate, sessions, student = {} }) {
   const s = summarize(days, dailyByDate, calcByDate);
   const hasCalc = days.some((d) => calcByDate[d]);
   const hasData = sessions.length > 0 || s.challengesCompleted > 0 || s.hasAttempts;
   const firstName = esc(String(name || 'Student').split(' ')[0]);
+
+  // ── Compute Curriculum Progress ──
+  let curriculumHtml = '';
+  try {
+    const assignedYears = (Array.isArray(student.assignedYear)
+      ? student.assignedYear
+      : [student.assignedYear || "Year 11"]).filter(y => typeof y === 'string' && y.startsWith('Year '));
+    const assignedCourses = Array.isArray(student.assignedCourse)
+      ? student.assignedCourse
+      : [student.assignedCourse || "Advanced"];
+
+    let chapters = [];
+    assignedYears.forEach((year) => {
+      const yearData = CURRICULUM_DATA[year];
+      if (!yearData) return;
+      if (Array.isArray(yearData)) {
+        chapters = [...chapters, ...yearData];
+      } else {
+        assignedCourses.forEach((course) => {
+          if (yearData[course]) {
+            chapters = [...chapters, ...yearData[course]];
+          }
+        });
+      }
+    });
+
+    const uniqueChapters = [];
+    const seenIds = new Set();
+    chapters.forEach((ch) => {
+      if (!seenIds.has(ch.id)) { uniqueChapters.push(ch); seenIds.add(ch.id); }
+    });
+    chapters = uniqueChapters;
+
+    const assignedChapterIds = student.assignedChapters || [];
+    const completedChapters = student.completedChapters || [];
+    
+    // Find current chapter: the last assigned chapter that isn't completed.
+    let currentChapterTitle = '';
+    for (let i = assignedChapterIds.length - 1; i >= 0; i--) {
+      if (!completedChapters.includes(assignedChapterIds[i])) {
+        const ch = chapters.find(c => c.id === assignedChapterIds[i]);
+        if (ch) {
+          currentChapterTitle = ch.title;
+          break;
+        }
+      }
+    }
+    // If none found but there are completed chapters, they might be done or we just pick the last assigned
+    if (!currentChapterTitle && assignedChapterIds.length > 0) {
+      const lastId = assignedChapterIds[assignedChapterIds.length - 1];
+      const ch = chapters.find(c => c.id === lastId);
+      if (ch) currentChapterTitle = ch.title + ' (Completed)';
+    }
+
+    if (chapters.length > 0) {
+      const currentChapterIds = new Set(chapters.map((ch) => ch.id));
+      const uniqueCompleted = new Set(completedChapters);
+      const completedInCurriculum = Array.from(uniqueCompleted).filter((id) => currentChapterIds.has(id));
+      const progressPct = Math.min(Math.round((completedInCurriculum.length / (chapters.length || 1)) * 100), 100);
+
+      curriculumHtml = `
+        <div style="background:#ffffff;border:1px solid #eef2ff;border-radius:20px;padding:22px 24px;margin-bottom:28px;box-shadow:0 8px 24px rgba(99,102,241,0.04);">
+          <div style="font-size:11.5px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:${C.muted};margin-bottom:16px;">Academic Progress</div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:12px;">
+            <div>
+              <div style="font-size:16px;font-weight:800;color:${C.ink};">Curriculum</div>
+              ${currentChapterTitle ? `<div style="font-size:13px;font-weight:600;color:${C.accent};margin-top:4px;">Currently on: ${esc(currentChapterTitle)}</div>` : ''}
+            </div>
+            <div style="font-size:16px;font-weight:800;color:${C.accent};">${progressPct}%</div>
+          </div>
+          <div style="background:#eef2ff;border-radius:999px;height:8px;width:100%;overflow:hidden;">
+            <div style="background:linear-gradient(90deg, #6366f1, #8b5cf6);height:100%;border-radius:999px;width:${progressPct}%;"></div>
+          </div>
+        </div>
+      `;
+    }
+  } catch (err) {
+    console.error('Error generating curriculum progress for email:', err);
+  }
 
   // ── Summary: 3 figures, hairline-divided ──
   const stat = (value, sub, lbl, isLast) => `
@@ -239,7 +320,8 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
 
   const bodyHtml = `
     <p style="margin:0 0 3px;font-size:15px;font-weight:600;color:${C.ink};">Hi ${firstName},</p>
-    <p style="margin:0 0 22px;font-size:14px;color:${C.sub};line-height:1.55;">Here is the learning summary for <strong style="color:${C.ink};">${esc(label)}</strong>.</p>
+    <p style="margin:0 0 28px;font-size:14px;color:${C.sub};line-height:1.55;">Here is the learning summary for <strong style="color:${C.ink};">${esc(label)}</strong>.</p>
+    ${curriculumHtml}
     ${summary}
     ${sectionLabel("This week's lessons")}
     ${lessonsHtml}
