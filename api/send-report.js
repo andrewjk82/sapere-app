@@ -44,7 +44,7 @@ export default async function handler(req, res) {
 
     const { days, label } = getWeekRangeSydney(new Date());
     const data = await gatherStudentWeek(db, studentId, days, email);
-    const { subject, bodyHtml } = renderWeeklyReportBody({ name, label, days, ...data });
+    const { subject, bodyHtml } = renderWeeklyReportBody({ name, label, days, student, ...data });
 
     // Send the email.
     let emailSent = false;
