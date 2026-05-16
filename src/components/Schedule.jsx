@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
+import ScheduleLessonModal from './ScheduleLessonModal';
 
 const TIME_OPTIONS = [
   '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
@@ -225,11 +226,12 @@ const buildScheduleUpdateHtml = (session, updatePayload) => {
   `;
 };
 
-const Schedule = () => {
+const Schedule = ({ students = [] }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   const [sessions, setSessions] = useState([]);
   const [selectedSession, setSelectedSession] = useState(null);
+  const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [loading, setLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -808,6 +810,7 @@ const Schedule = () => {
               </div>
             </>
           )}
+
           <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#fff', padding: '8px', borderRadius: '18px', border: '1px solid #e2e8f0', boxShadow: '0 12px 30px rgba(15,23,42,0.05)', height: isMobile ? '48px' : 'auto' }}>
             <button
               onClick={() => { const d = new Date(currentDate); d.setDate(d.getDate() - (isMobile ? 1 : 7)); setCurrentDate(d); }}
@@ -828,6 +831,30 @@ const Schedule = () => {
               <ChevronRight size={20} />
             </button>
           </div>
+          
+          {isAdmin && (
+            <button 
+              className="app-button"
+              onClick={() => setShowScheduleModal(true)} 
+              style={{ 
+                background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', 
+                color: 'white', 
+                border: 'none', 
+                padding: isMobile ? '0 16px' : '0 24px', 
+                borderRadius: '18px', 
+                height: isMobile ? '48px' : '54px', 
+                fontWeight: 800, 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '8px', 
+                cursor: 'pointer', 
+                boxShadow: '0 8px 20px rgba(99, 102, 241, 0.25)' 
+              }}
+            >
+              <Calendar size={18} /> 
+              {!isMobile && <span>Schedule Lesson</span>}
+            </button>
+          )}
         </div>
       </div>
 
@@ -1257,7 +1284,17 @@ const Schedule = () => {
           </div>
         )}
       </AnimatePresence>
-
+      
+      {/* ── Schedule Lesson Modal ── */}
+      <AnimatePresence>
+        {showScheduleModal && (
+          <ScheduleLessonModal
+            isOpen={showScheduleModal}
+            onClose={() => setShowScheduleModal(false)}
+            students={students}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };

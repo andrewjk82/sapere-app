@@ -742,7 +742,7 @@ function App() {
           />
         );
       case 'Schedule':
-        return <Schedule />;
+        return <Schedule students={students} />;
       case 'Challenge':
         return (
           <DailyChallenge 
