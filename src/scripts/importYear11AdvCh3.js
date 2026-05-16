@@ -99,11 +99,137 @@ const allQuestions3A = [
   { ...chapterData, difficulty: 'medium', topicId: 'y11a-3A', type: 'short_answer', question: 'If \\(F(x) = x^2+2x\\), find \\(F(t)-2\\).', answer: 't^2+2t-2', solution: 't^2+2t-2' },
   { ...chapterData, difficulty: 'medium', topicId: 'y11a-3A', type: 'short_answer', question: 'If \\(F(x) = x^2+2x\\), find \\(F(t-2)\\).', answer: 't^2-2t', solution: '(t-2)^2+2(t-2)=t^2-4t+4+2t-4=t^2-2t' },
   { ...chapterData, difficulty: 'medium', topicId: 'y11a-3A', type: 'short_answer', question: 'If \\(F(x) = 2-x^2\\), find \\(F(t)-2\\).', answer: '-t^2', solution: '2-t^2-2 = -t^2' },
-  { ...chapterData, difficulty: 'medium', topicId: 'y11a-3A', type: 'short_answer', question: 'If \\(F(x) = 2-x^2\\), find \\(F(t-2)\\).', answer: '-t^2+4t-2', solution: '2-(t-2)^2 = 2-(t^2-4t+4) = -t^2+4t-2' }
+  { ...chapterData, difficulty: 'medium', topicId: 'y11a-3A', type: 'short_answer', question: 'If \\(F(x) = 2-x^2\\), find \\(F(t-2)\\).', answer: '-t^2+4t-2', solution: '2-(t-2)^2 = 2-(t^2-4t+4) = -t^2+4t-2' },
+
+  // --- Q16: 2 items (Hard) ---
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'Using \\(P(x) = x^2 - 4x - 6\\), find the value of \\(P(2 + \\sqrt{10})\\).', 
+    options: [
+      {text: '0', imageUrl: ''}, 
+      {text: '4', imageUrl: ''}, 
+      {text: '10', imageUrl: ''}, 
+      {text: '-6', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `To find \\(P(2 + \\sqrt{10})\\), we substitute \\(x = 2 + \\sqrt{10}\\) into the function:\n\n1. **Substitution:**\n\\[P(2 + \\sqrt{10}) = (2 + \\sqrt{10})^2 - 4(2 + \\sqrt{10}) - 6\\]\n\n2. **Expand the square:**\n\\[(2 + \\sqrt{10})^2 = 2^2 + 2(2)(\\sqrt{10}) + (\\sqrt{10})^2 = 4 + 4\\sqrt{10} + 10 = 14 + 4\\sqrt{10}\\]\n\n3. **Expand the middle term:**\n\\[-4(2 + \\sqrt{10}) = -8 - 4\\sqrt{10}\\]\n\n4. **Combine all parts:**\n\\[P = (14 + 4\\sqrt{10}) + (-8 - 4\\sqrt{10}) - 6\\]\n\\[P = 14 - 8 - 6 + 4\\sqrt{10} - 4\\sqrt{10} = 0\\]\n\n**Final Answer: 0**` 
+  },
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'Using \\(P(x) = x^2 - 4x - 6\\), find the value of \\(P(\\sqrt{5} + 2)\\).', 
+    options: [
+      {text: '-5', imageUrl: ''}, 
+      {text: '5', imageUrl: ''}, 
+      {text: '0', imageUrl: ''}, 
+      {text: '-14', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `Substitute \\(x = \\sqrt{5} + 2\\) into \\(P(x) = x^2 - 4x - 6\\):\n\n1. **Substitution:**\n\\[P = (\\sqrt{5} + 2)^2 - 4(\\sqrt{5} + 2) - 6\\]\n\n2. **Expand the square:**\n\\[(\\sqrt{5} + 2)^2 = (\\sqrt{5})^2 + 2(2)(\\sqrt{5}) + 2^2 = 5 + 4\\sqrt{5} + 4 = 9 + 4\\sqrt{5}\\]\n\n3. **Expand the middle term:**\n\\[-4(\\sqrt{5} + 2) = -4\\sqrt{5} - 8\\]\n\n4. **Combine:**\n\\[P = (9 + 4\\sqrt{5}) - 4\\sqrt{5} - 8 - 6\\]\n\\[P = 9 - 8 - 6 = -5\\]\n\n**Final Answer: -5**` 
+  },
+
+  // --- Q17: 3 items (Hard) ---
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'If \\(f(x) = x^2 + 3x\\), find \\(\\frac{f(2+h) - f(2)}{h}\\) in simplest form.', 
+    options: [
+      {text: 'h + 7', imageUrl: ''}, 
+      {text: 'h + 4', imageUrl: ''}, 
+      {text: '2h + 7', imageUrl: ''}, 
+      {text: 'h + 10', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `We follow these steps to simplify the expression:\n\n1. **Find \\(f(2+h)\\):**\n\\[f(2+h) = (2+h)^2 + 3(2+h)\\]\n\\[= (4 + 4h + h^2) + (6 + 3h) = h^2 + 7h + 10\\]\n\n2. **Find \\(f(2)\\):**\n\\[f(2) = 2^2 + 3(2) = 4 + 6 = 10\\]\n\n3. **Substitute into the formula:**\n\\[\\frac{f(2+h) - f(2)}{h} = \\frac{(h^2 + 7h + 10) - 10}{h}\\]\n\\[= \\frac{h^2 + 7h}{h} = \\frac{h(h + 7)}{h} = h + 7\\]\n\n**Final Answer: h + 7**` 
+  },
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'If \\(f(x) = x^2 + 3x\\), find \\(\\frac{f(a) - f(b)}{a-b}\\) in simplest form (\\(a \\neq b\\)).', 
+    options: [
+      {text: 'a + b + 3', imageUrl: ''}, 
+      {text: 'a + b - 3', imageUrl: ''}, 
+      {text: '2(a + b)', imageUrl: ''}, 
+      {text: 'a - b + 3', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `1. **Write the expressions for f(a) and f(b):**\n\\(f(a) = a^2 + 3a\\)\n\\(f(b) = b^2 + 3b\\)\n\n2. **Set up the numerator:**\n\\(f(a) - f(b) = (a^2 + 3a) - (b^2 + 3b) = (a^2 - b^2) + (3a - 3b)\\)\n\n3. **Factorize:**\n\\(a^2 - b^2 = (a-b)(a+b)\\)\n\\(3a - 3b = 3(a-b)\\)\nSo, \\(f(a) - f(b) = (a-b)(a+b) + 3(a-b) = (a-b)(a + b + 3)\\)\n\n4. **Divide by (a-b):**\n\\[\\frac{(a-b)(a + b + 3)}{a-b} = a + b + 3\\]\n\n**Final Answer: a + b + 3**` 
+  },
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'If \\(f(x) = x^2 + 3x\\), find \\(\\frac{f(x+h) - f(x)}{h}\\) in simplest form.', 
+    options: [
+      {text: '2x + h + 3', imageUrl: ''}, 
+      {text: 'x + h + 3', imageUrl: ''}, 
+      {text: '2x + 3', imageUrl: ''}, 
+      {text: 'x^2 + h + 3', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `This is the formal definition of a derivative. Let's simplify:\n\n1. **Expand \\(f(x+h)\\):**\n\\[f(x+h) = (x+h)^2 + 3(x+h) = x^2 + 2xh + h^2 + 3x + 3h\\]\n\n2. **Subtract \\(f(x)\\):**\n\\[f(x+h) - f(x) = (x^2 + 2xh + h^2 + 3x + 3h) - (x^2 + 3x)\\]\n\\[= 2xh + h^2 + 3h\\]\n\n3. **Divide by h:**\n\\[\\frac{2xh + h^2 + 3h}{h} = \\frac{h(2x + h + 3)}{h} = 2x + h + 3\\]\n\n**Final Answer: 2x + h + 3**` 
+  },
+
+  // --- Q18: 3 items (Hard) ---
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'Given \\(f(x) = x^4 + 3x^2 + 7\\), which of the following properties is true for all values of \\(x\\)?', 
+    options: [
+      {text: 'f(-x) = f(x)', imageUrl: ''}, 
+      {text: 'f(-x) = -f(x)', imageUrl: ''}, 
+      {text: 'f(1/x) = f(x)', imageUrl: ''}, 
+      {text: 'f(x+1) = f(x)', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `To check if a function is even, we find \\(f(-x)\\):\n\n1. **Substitution:**\n\\[f(-x) = (-x)^4 + 3(-x)^2 + 7\\]\n\n2. **Simplify:**\nSince any even power of a negative number is positive:\n\\((-x)^4 = x^4\\)\n\\((-x)^2 = x^2\\)\n\n3. **Conclusion:**\n\\[f(-x) = x^4 + 3x^2 + 7 = f(x)\\]\nThis type of function is known as an **Even function**.\n\n**Final Answer: f(-x) = f(x)**` 
+  },
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'For the function \\(g(x) = x^3 + \\frac{5}{x}\\), which property holds whenever \\(x \\neq 0\\)?', 
+    options: [
+      {text: 'g(-x) = -g(x)', imageUrl: ''}, 
+      {text: 'g(-x) = g(x)', imageUrl: ''}, 
+      {text: 'g(1/x) = g(x)', imageUrl: ''}, 
+      {text: 'g(x) = 0', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `Let's test \\(g(-x)\\):\n\n1. **Substitution:**\n\\[g(-x) = (-x)^3 + \\frac{5}{(-x)}\\]\n\n2. **Simplify:**\n\\((-x)^3 = -x^3\\)\n\\(\\frac{5}{-x} = -\\frac{5}{x}\\)\n\n3. **Factorize the negative sign:**\n\\[g(-x) = -x^3 - \\frac{5}{x} = -\\left(x^3 + \\frac{5}{x}\\right) = -g(x)\\]\nThis type of function is known as an **Odd function**.\n\n**Final Answer: g(-x) = -g(x)**` 
+  },
+  { 
+    ...chapterData, 
+    difficulty: 'hard', 
+    topicId: 'y11a-3A', 
+    type: 'multiple_choice', 
+    question: 'If \\(h(x) = \\frac{4x}{x^2+1}\\), which of the following is true for all \\(x \\neq 0\\)?', 
+    options: [
+      {text: 'h(1/x) = h(x)', imageUrl: ''}, 
+      {text: 'h(-x) = h(x)', imageUrl: ''}, 
+      {text: 'h(1/x) = -h(x)', imageUrl: ''}, 
+      {text: 'h(x) = 1', imageUrl: ''}
+    ], 
+    answer: "0", 
+    solution: `Let's substitute \\(1/x\\) for \\(x\\):\n\n1. **Substitution:**\n\\[h(1/x) = \\frac{4(1/x)}{(1/x)^2 + 1}\\]\n\n2. **Simplify the denominator:**\n\\[(1/x)^2 + 1 = \\frac{1}{x^2} + 1 = \\frac{1 + x^2}{x^2}\\]\n\n3. **Divide:**\n\\[h(1/x) = \\frac{4}{x} \\div \\frac{1 + x^2}{x^2} = \\frac{4}{x} \\times \\frac{x^2}{1 + x^2}\\]\n\\[= \\frac{4x}{1 + x^2} = h(x)\\]\n\n**Final Answer: h(1/x) = h(x)**` 
+  }
 ];
 
 export const importYear11AdvCh3 = async (forceReset = false) => {
-  console.log(`Starting full sync of Y11 Adv Ch3 (Total 75)...`);
+  console.log(`Starting full sync of Y11 Adv Ch3 (Total 83)...`);
   try {
     const qSnap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', 'y11a-3')));
     const batch = writeBatch(db);
