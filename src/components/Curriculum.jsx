@@ -36,7 +36,7 @@ import { localCache } from '../services/localCacheService';
 import './curriculum.css';
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
-const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v2';
+const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v3';
 const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 const ADMIN_TOOL_COUNT_IDS = [
