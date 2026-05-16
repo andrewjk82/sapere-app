@@ -231,9 +231,6 @@ export default async function handler(req, res) {
         port: 465,
         secure: true,
         auth: { user: GMAIL_USER, pass: GMAIL_PASS },
-        connectionTimeout: 8000,
-        greetingTimeout: 5000,
-        socketTimeout: 10000,
       });
       await transporter.sendMail({
         from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
