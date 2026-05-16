@@ -794,19 +794,19 @@ const Schedule = ({ students = [] }) => {
         <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>
           {!isMobile && (
             <>
-              <div style={{ minWidth: '132px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '16px', boxShadow: '0 12px 30px rgba(15,23,42,0.05)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#0891b2', marginBottom: '8px' }}>
-                  <List size={17} />
-                  <span style={{ fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em' }}>This Week</span>
+              <div style={{ height: isMobile ? '48px' : '54px', display: 'flex', alignItems: 'center', gap: '12px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '0 20px', boxShadow: '0 4px 15px rgba(15,23,42,0.03)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#0891b2' }}>
+                  <List size={16} />
+                  <span style={{ fontSize: '0.75rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em' }}>This Week</span>
                 </div>
-                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#0f172a' }}>{selectedWeekSessions.length}</div>
+                <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#0f172a', borderLeft: '1px solid #e2e8f0', paddingLeft: '12px' }}>{selectedWeekSessions.length}</div>
               </div>
-              <div style={{ minWidth: '132px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '16px', boxShadow: '0 12px 30px rgba(15,23,42,0.05)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#16a34a', marginBottom: '8px' }}>
-                  <CheckCircle2 size={17} />
-                  <span style={{ fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Today</span>
+              <div style={{ height: isMobile ? '48px' : '54px', display: 'flex', alignItems: 'center', gap: '12px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '0 20px', boxShadow: '0 4px 15px rgba(15,23,42,0.03)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#16a34a' }}>
+                  <CheckCircle2 size={16} />
+                  <span style={{ fontSize: '0.75rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Today</span>
                 </div>
-                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#0f172a' }}>{todaySessions.length}</div>
+                <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#0f172a', borderLeft: '1px solid #e2e8f0', paddingLeft: '12px' }}>{todaySessions.length}</div>
               </div>
             </>
           )}
