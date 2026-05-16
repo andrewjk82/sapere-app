@@ -1070,16 +1070,20 @@ function App() {
           <AnimatePresence>
             {showNotifs && (
               <>
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   onClick={() => setShowNotifs(false)}
                   style={{
                     position: 'fixed',
-                    inset: 0,
-                    zIndex: 2147483645, // Just below the dropdown
-                    background: 'transparent' // Invisible but clickable
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    // On desktop leave the sidebar (300px) uncovered so its buttons stay clickable
+                    left: window.innerWidth > 920 ? '300px' : 0,
+                    zIndex: 2147483645,
+                    background: 'transparent'
                   }}
                 />
                 <motion.div 
