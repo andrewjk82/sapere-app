@@ -186,12 +186,15 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
   // ── Compute Curriculum Progress ──
   let curriculumHtml = '';
   try {
+    const rawYear = student.assignedYear || student.level || student.year || "Year 11";
     const assignedYears = (Array.isArray(student.assignedYear)
       ? student.assignedYear
-      : [student.assignedYear || "Year 11"]).filter(y => typeof y === 'string' && y.startsWith('Year '));
+      : [rawYear]).filter(y => typeof y === 'string' && y.startsWith('Year '));
+
+    const rawCourse = student.assignedCourse || student.course || "Advanced";
     const assignedCourses = Array.isArray(student.assignedCourse)
       ? student.assignedCourse
-      : [student.assignedCourse || "Advanced"];
+      : [rawCourse];
 
     let chapters = [];
     assignedYears.forEach((year) => {
@@ -358,9 +361,9 @@ export function buildEmailShell(title, body) {
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="max-width: 600px; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);">
               <!-- Header -->
               <tr>
-                <td align="center" bgcolor="#4f46e5" style="background-color: #4f46e5; background-image: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); padding: 40px 30px;">
+                <td align="center" bgcolor="#bba8ff" style="background-color: #bba8ff; padding: 40px 30px;">
                   <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">Sapere Aude</h1>
-                  <p style="margin: 8px 0 0; font-size: 14px; color: #e0e7ff; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;">Academia</p>
+                  <p style="margin: 8px 0 0; font-size: 14px; color: #ffffff; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Academia</p>
                 </td>
               </tr>
               <!-- Content -->
