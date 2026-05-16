@@ -116,6 +116,17 @@
   flex-direction: column !important;
 }
 
+/* On desktop (sidebar visible), anchor dropdown to sidebar bottom-right */
+@media (min-width: 721px) {
+  .notif-dropdown {
+    top: auto !important;
+    bottom: 20px !important;
+    left: 316px !important;
+    right: auto !important;
+    width: 360px !important;
+  }
+}
+
 .notif-header {
   padding: 20px 24px !important;
   border-bottom: 1px solid rgba(167, 139, 250, 0.1) !important;
