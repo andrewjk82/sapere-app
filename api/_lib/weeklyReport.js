@@ -253,31 +253,61 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
 
 // Full email shell — clean, modern, table-based (Gmail/Outlook safe).
 export function buildEmailShell(title, body) {
-  return `<!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light only"><title>${title}</title></head>
-<body bgcolor="#f4f4f7" style="margin:0;padding:0;background:#f4f4f7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f4f7" style="background:#f4f4f7;">
-    <tr><td align="center" style="padding:32px 16px;">
-      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px;background:#ffffff;border-radius:16px;border:1px solid #e5e7eb;overflow:hidden;">
-        <tr><td style="background:#1e1b4b;padding:22px 32px;">
-          <div style="font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#a5b4fc;">Sapere Aude Academia</div>
-        </td></tr>
-        <tr><td style="padding:36px 32px 34px;">
-          <h1 style="margin:0 0 20px;font-size:22px;font-weight:800;color:#0f172a;line-height:1.3;">${title}</h1>
-          ${body}
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:34px;">
-            <tr><td align="center" style="padding-top:24px;border-top:1px solid #eef0f3;">
-              <a href="https://sapere-app.vercel.app" style="display:inline-block;background:#4f46e5;color:#ffffff;padding:13px 30px;border-radius:10px;text-decoration:none;font-size:14px;font-weight:700;">Open the Academy</a>
-            </td></tr>
-          </table>
-        </td></tr>
-        <tr><td style="background:#fafafb;border-top:1px solid #eef0f3;padding:18px 32px;">
-          <div style="font-size:11px;color:#94a3b8;line-height:1.5;">Sapere Aude Academia · Weekly Learning Report<br>You are receiving this because you are enrolled at the academy.</div>
-        </td></tr>
+  return `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="color-scheme" content="light only">
+      <title>${esc(title)}</title>
+      <style>
+        body, table, td, a { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      </style>
+    </head>
+    <body style="margin: 0; padding: 0; background-color: #f3f4f6; -webkit-font-smoothing: antialiased;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f3f4f6" style="background-color: #f3f4f6; padding: 40px 20px;">
+        <tr>
+          <td align="center">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="max-width: 600px; background-color: #ffffff; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);">
+              <!-- Header -->
+              <tr>
+                <td align="center" bgcolor="#4f46e5" style="background-color: #4f46e5; background-image: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); padding: 40px 30px;">
+                  <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">Sapere Aude</h1>
+                  <p style="margin: 8px 0 0; font-size: 14px; color: #e0e7ff; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;">Academia</p>
+                </td>
+              </tr>
+              <!-- Content -->
+              <tr>
+                <td style="padding: 40px 40px 30px;">
+                  <h2 style="margin: 0 0 24px 0; font-size: 24px; font-weight: 800; color: #1e1b4b; line-height: 1.3;">${esc(title)}</h2>
+                  <div style="font-size: 15px; line-height: 1.6; color: #334155; margin-bottom: 32px;">
+                    ${body}
+                  </div>
+                  <!-- CTA -->
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 1px solid #f1f5f9; padding-top: 30px;">
+                    <tr>
+                      <td align="center">
+                        <a href="https://sapere-app.vercel.app" style="display: inline-block; background-color: #4f46e5; color: #ffffff; text-decoration: none; font-size: 16px; font-weight: 700; padding: 16px 36px; border-radius: 100px; box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);">Open the Academy</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Footer -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+              <tr>
+                <td align="center" style="padding: 30px 20px; font-size: 13px; color: #94a3b8; font-weight: 500; line-height: 1.5;">
+                  <p style="margin: 0;">Sapere Aude Academia · Weekly Learning Report<br>You are receiving this because you are enrolled at the academy.</p>
+                  <p style="margin: 10px 0 0;">© 2026 Sapere Aude Academia. All rights reserved.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
       </table>
-      <p style="margin:20px 0 0;color:#a0a3ad;font-size:11px;">© 2026 Sapere Aude Academia. All rights reserved.</p>
-    </td></tr>
-  </table>
-</body></html>`;
+    </body>
+    </html>
+  `;
 }
