@@ -1077,11 +1077,7 @@ function App() {
                   onClick={() => setShowNotifs(false)}
                   style={{
                     position: 'fixed',
-                    top: 0,
-                    right: 0,
-                    bottom: 0,
-                    // On desktop leave the sidebar (300px) uncovered so its buttons stay clickable
-                    left: window.innerWidth > 920 ? '300px' : 0,
+                    inset: 0,
                     zIndex: 2147483645,
                     background: 'transparent'
                   }}

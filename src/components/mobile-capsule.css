@@ -116,27 +116,6 @@
   flex-direction: column !important;
 }
 
-/* Tablet (720-920px): sidebar is a horizontal top bar — show dropdown top-left */
-@media (min-width: 721px) and (max-width: 920px) {
-  .notif-dropdown {
-    top: 80px !important;
-    left: 16px !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: 360px !important;
-  }
-}
-
-/* Desktop (>920px): sidebar is 300px on the left — show dropdown just to the right of it */
-@media (min-width: 921px) {
-  .notif-dropdown {
-    top: 80px !important;
-    left: 316px !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: 380px !important;
-  }
-}
 
 .notif-header {
   padding: 20px 24px !important;
