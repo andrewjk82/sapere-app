@@ -3,11 +3,11 @@ import { collection, addDoc, getDocs, query, where, deleteDoc } from 'firebase/f
 
 export const allQuestions = [
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -19,11 +19,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -35,11 +35,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -51,11 +51,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -67,11 +67,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -83,11 +83,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -99,11 +99,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -115,11 +115,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -131,11 +131,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -147,11 +147,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -163,11 +163,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -179,11 +179,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -195,11 +195,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -211,11 +211,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -227,11 +227,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -243,11 +243,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -259,11 +259,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -275,11 +275,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -291,11 +291,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -307,11 +307,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -323,11 +323,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -339,11 +339,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -355,11 +355,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -371,11 +371,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -387,11 +387,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -403,11 +403,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -419,11 +419,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -435,11 +435,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -451,11 +451,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -467,11 +467,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -483,11 +483,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -499,11 +499,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -515,11 +515,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -531,11 +531,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -547,11 +547,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -563,11 +563,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -579,11 +579,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -595,11 +595,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
@@ -611,27 +611,27 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
     isManual: true,
     isActive: true,
-    question: `In three Year 8 classes, $28$ students, $32$ students, and $25$ students attended roll call one morning. How many students were present in total?`,
+    question: `In three Year 7 classes, $28$ students, $32$ students, and $25$ students attended roll call one morning. How many students were present in total?`,
     options: ["$85$","$75$","$95$","$80$"],
     answer: 0,
     solution: `<div style="text-align: left;"><p><strong>Step 1: Group friendly numbers</strong><br>$28 + 32 = 60$.</p><p><strong>Step 2: Add the remaining class</strong><br>$60 + 25 = 85$.</p><p><strong>Result</strong>: $85$ students.</p></div>`,
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -643,11 +643,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -659,11 +659,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
     isManual: true,
@@ -675,11 +675,11 @@ export const allQuestions = [
     createdAt: new Date().toISOString()
   },
   {
-    chapterId: 'y8-1',
-    topicId: 'y8-1b',
+    chapterId: 'y7-1',
+    topicId: 'y7-1b',
     topicCode: '1B',
     topicTitle: 'Addition of whole numbers',
-    year: 'Year 8',
+    year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'hard',
     isManual: true,
@@ -692,16 +692,16 @@ export const allQuestions = [
   },
 ];
 
-export const importYear8Ch1B = async (forceReset = false) => {
-  console.log('[Ch1B Year 8 Import] STARTING PHYSICAL SYNC...');
+export const importYear7Ch1B = async (forceReset = false) => {
+  console.log('[Ch1B Year 7 Import] STARTING PHYSICAL SYNC...');
   let importedCount = 0;
   try {
     const qRef = collection(db, 'questions');
     if (forceReset) {
-      const oldSnap = await getDocs(query(qRef, where('topicId', '==', 'y8-1b')));
+      const oldSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-1b')));
       for (const d of oldSnap.docs) { await deleteDoc(d.ref); }
     }
-    const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y8-1b')));
+    const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-1b')));
     const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question.trim()));
     
     for (const q of allQuestions) {
