@@ -457,6 +457,27 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY7Ch2A = async (forceReset = false) => {
+    if (!isAdmin || isMigrating) return;
+    if (forceReset && !window.confirm("This will DELETE all existing Year 7 Chapter 2A questions and re-import them. Continue?")) return;
+    
+    setIsMigrating(true);
+    try {
+      const { importYear7Ch2A } = await import('../scripts/importYear7Ch2A');
+      const count = await importYear7Ch2A(forceReset);
+      if (count > 0) {
+        showToast(`✅ Successfully ${forceReset ? 'reset and ' : ''}added ${count} questions to Year 7 Chapter 2A!`, 'success');
+      } else {
+        showToast('Year 7 Chapter 2A is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 7 Ch2A:', error);
+      showToast('Failed to sync Year 7 Chapter 2A.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSyncY7Ch1A = async (forceReset = false) => {
     if (!isAdmin || isMigrating) return;
     if (forceReset && !window.confirm("This will DELETE all existing Year 7 Chapter 1A questions and re-import them. Continue?")) return;
@@ -1006,6 +1027,12 @@ const Curriculum = () => {
                 </button>
                 <button onClick={handleSyncY7Ch2} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
                   {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch2'}
+                </button>
+                <button onClick={() => handleSyncY7Ch2A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch2A'}
+                </button>
+                <button onClick={() => handleSyncY7Ch2A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
+                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch2A'}
                 </button>
                 <button onClick={() => handleSyncY8Ch1(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
                   {isMigrating ? 'Syncing…' : '🔄 Sync Y8 Ch1'}
