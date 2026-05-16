@@ -23,6 +23,7 @@ import { importYear7Ch2 } from '../scripts/importYear7Ch2';
 import { importYear11Ch4A } from '../scripts/importYear11Ch4A';
 import { importYear8Ch1 } from '../scripts/importYear8Ch1';
 import { importYear11AdvCh1 } from '../scripts/importYear11AdvCh1';
+import { importYear11AdvCh2 } from '../scripts/importYear11AdvCh2';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import {
@@ -434,20 +435,28 @@ const Curriculum = () => {
   };
 
   const handleSyncY11AdvCh1 = async (forceReset = false) => {
-    if (!isAdmin || isMigrating) return;
-    if (forceReset && !window.confirm("This will DELETE all existing Year 11 Adv Ch1 questions and re-import them. Continue?")) return;
-    
+    if (!window.confirm(forceReset ? 'This will RESET and sync Year 11 Adv Ch1 questions. Continue?' : 'Sync Year 11 Adv Ch1 questions?')) return;
     setIsMigrating(true);
     try {
       const count = await importYear11AdvCh1(forceReset);
-      if (count > 0) {
-        showToast(`✅ Successfully ${forceReset ? 'reset and ' : ''}added ${count} questions to Year 11 Adv Ch1A!`, 'success');
-      } else {
-        showToast('Year 11 Adv Ch1A is already up to date.', 'info');
-      }
-    } catch (error) {
-      console.error('Error syncing Y11 Adv Ch1:', error);
-      showToast('Failed to sync Year 11 Adv Ch1.', 'error');
+      alert(`Successfully synced ${count} questions for Y11 Adv Ch1!`);
+      window.location.reload();
+    } catch (err) {
+      alert('Failed to sync: ' + err.message);
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSyncY11AdvCh2 = async (forceReset = false) => {
+    if (!window.confirm(forceReset ? 'This will RESET and sync Year 11 Adv Ch2 questions. Continue?' : 'Sync Year 11 Adv Ch2 questions?')) return;
+    setIsMigrating(true);
+    try {
+      const count = await importYear11AdvCh2(forceReset);
+      alert(`Successfully synced ${count} questions for Y11 Adv Ch2!`);
+      window.location.reload();
+    } catch (err) {
+      alert('Failed to sync: ' + err.message);
     } finally {
       setIsMigrating(false);
     }
@@ -910,6 +919,9 @@ const Curriculum = () => {
                 </button>
                 <button onClick={() => handleSyncY11AdvCh1(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
                   {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y11 Adv'}
+                </button>
+                <button onClick={() => handleSyncY11AdvCh2(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
+                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch2'}
                 </button>
                 {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
                   <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
