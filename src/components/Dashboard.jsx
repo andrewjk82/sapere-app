@@ -648,73 +648,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
         <div className="app-grid app-grid--content" style={{ padding: isMobile ? '0 20px 40px' : '0' }}>
           {isAdmin ? (
-            <><div style={{ display: 'none' }}>{/* admin content moved to AdminDashboard */}</div>
-              <div className="app-panel dashboard-card">
-                <div className="dashboard-card__header">
-                  <h3>Recent Students</h3>
-                  <button onClick={() => setActiveTab('Students')}>View all</button>
-                </div>
-                <div className="activity-list">
-                  {students.length > 0 ? (
-                    students.slice(0, 5).map(student => (
-                      <StudentRow 
-                        key={student.id} 
-                        {...student} 
-                        onClick={() => onSelectStudent(student.id)} 
-                      />
-                    ))
-                  ) : (
-                    <div className="app-empty">
-                      No students added yet.
-                    </div>
-                  )}
-                </div>
-              </div>
-              
-              {pendingGrading.length > 0 && (
-                <div className="app-panel dashboard-card" style={{ marginTop: '20px', border: '1.5px solid #fcd34d', background: 'linear-gradient(to bottom right, #fffbeb, white)' }}>
-                  <div className="dashboard-card__header">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <h3 style={{ margin: 0 }}>📝 Teacher Review Queue</h3>
-                      <span style={{ background: '#ef4444', color: 'white', fontSize: '0.7rem', fontWeight: 800, padding: '2px 8px', borderRadius: '10px', animation: 'pulse 2s infinite' }}>
-                        {pendingGrading.length} PENDING
-                      </span>
-                    </div>
-                  </div>
-                  <div className="activity-list">
-                    {pendingGrading.map(item => (
-                      <div 
-                        key={item.id} 
-                        className="activity-item" 
-                        style={{ cursor: 'pointer', display: 'flex', alignItems: 'flex-start', gap: '12px', padding: '12px', borderRadius: '12px', background: 'white', border: '1px solid #fde68a', marginBottom: '8px' }}
-                        onClick={() => setSelectedGradingItem(item)}
-                      >
-                        {/* Thumbnail or text preview */}
-                        <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: '#f1f5f9', overflow: 'hidden', border: '1px solid #e2e8f0', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          {item.answerImage 
-                            ? <img src={item.answerImage} alt="Sketch" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                            : <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#64748b', textAlign: 'center', padding: '2px' }}>{(item.answerText || '—').slice(0, 12)}</span>
-                          }
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ fontWeight: 800, fontSize: '0.9rem', color: '#1e1b4b' }}>{item.userName}</div>
-                          <div style={{ fontSize: '0.75rem', color: '#92400e', fontWeight: 600, marginBottom: '4px' }}>
-                            {item.chapterTitle || item.topicTitle || 'Open Question'}
-                          </div>
-                          <div style={{ fontSize: '0.72rem', color: '#64748b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '200px' }}>
-                            {(item.questionText || '').slice(0, 60)}...
-                          </div>
-                          <span style={{ display: 'inline-block', marginTop: '4px', fontSize: '0.65rem', fontWeight: 800, background: '#fef3c7', color: '#92400e', borderRadius: '100px', padding: '1px 7px', border: '1px solid #fcd34d' }}>
-                            {item.answerImage ? '🖊 Drawing' : '📝 Text Answer'}
-                          </span>
-                        </div>
-                        <ChevronRight size={16} color="#94a3b8" style={{ flexShrink: 0, marginTop: '4px' }} />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
+            <>
               <div className="app-page-column">
                 <div className="app-panel dashboard-card">
                   <div className="dashboard-card__header">
@@ -767,49 +701,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 </div>
 
-                {/* System Status Card */}
-                <div className="app-panel dashboard-card" style={{ marginTop: '20px' }}>
-                  <div className="dashboard-card__header">
-                    <h3>System Health</h3>
-                  </div>
-                  <div style={{ padding: '4px 0' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                      <span style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>Auto-Reminder Service</span>
-                      <span style={{ 
-                        fontSize: '0.75rem', 
-                        padding: '2px 8px', 
-                        borderRadius: '10px', 
-                        backgroundColor: '#dcfce7', 
-                        color: '#15803d', 
-                        fontWeight: 700 
-                      }}>Active</span>
-                    </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>Last Automated Run</span>
-                      <span style={{ fontSize: '0.85rem', color: '#1e1b4b', fontWeight: 700 }}>
-                        {lastSync ? new Date(lastSync.timestamp?.seconds * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Never'}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="app-panel dashboard-card">
-                  <div className="dashboard-card__header">
-                    <h3>Recent Activity</h3>
-                  </div>
-                  <div className="activity-list">
-                    {students.slice(0, 3).map(s => {
-                      const dName = s.name || s.displayName || (s.firstName ? `${s.firstName} ${s.lastName || ''}`.trim() : 'New Student');
-                      return (
-                        <div key={s.id} className="activity-item" style={{ cursor: 'pointer' }} onClick={() => onSelectStudent(s.id)}>
-                          <strong>{dName}</strong>
-                          <p>{s.level || s.year || 'N/A'} • {normalizeSubjectLabel(s.subject || s.school || 'N/A')}</p>
-                        </div>
-                      );
-                    })}
-                    {students.length === 0 && <div className="app-empty">No recent activity.</div>}
-                  </div>
-                </div>
               </div>
             </>
           ) : (
