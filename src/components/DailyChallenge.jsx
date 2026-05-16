@@ -30,6 +30,10 @@ import {
 import ChallengeStartView from './challenge/ChallengeStartView';
 import ChallengeQuizView from './challenge/ChallengeQuizView';
 import ChallengeResultView from './challenge/ChallengeResultView';
+import SecretNoteView from './challenge/SecretNoteView';
+
+// Secret Notebook (local-only mistake review)
+import { addMistakes, getSyncSnapshot, getNoteCount, getDueCount } from '../utils/secretNote';
 
 // Utilities
 import {
@@ -108,6 +112,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [analyticsRecs, setAnalyticsRecs] = useState(null);
   const [countdown, setCountdown] = useState(0);
   const [challengeType, setChallengeType] = useState('daily');
+  const [secretNoteKind, setSecretNoteKind] = useState(null);
   const [warnings, setWarnings] = useState(0);
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [calcSessionMeta, setCalcSessionMeta] = useState(null);
@@ -1319,6 +1324,26 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const slimQuestions = stripDataUrls(questions || []);
         const slimUserAnswers = stripDataUrls(userAnswers || []);
         const hasWorkingOut = slimAnswerResults.some(r => r?.hasWorkingOut);
+
+        // ── Secret Notebook: capture this session's wrong questions locally ──
+        // Question data stays in localStorage only; just a compact count/tag
+        // summary is piggy-backed onto the user doc write below (no extra write).
+        let secretNoteSync = null;
+        if (!isAbandoned) {
+          try {
+            const noteKind = challengeType === 'calc' ? 'calc' : 'daily';
+            const wrongQuestions = (questions || []).filter((q, i) => {
+              const r = currentAnswerResults[i];
+              return r && typeof r === 'object' && r.correct === false;
+            });
+            if (wrongQuestions.length > 0) {
+              addMistakes(noteKind, user.uid, wrongQuestions);
+            }
+            secretNoteSync = getSyncSnapshot(user.uid);
+          } catch (e) {
+            console.warn('secret note capture failed (non-fatal):', e);
+          }
+        }
         const activeCalcSessionMeta = challengeType === 'calc'
           ? (calcSessionMeta || {
               engineVersion: CALC_ENGINE_VERSION,
@@ -1476,7 +1501,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           transaction.set(userRef, {
             totalXP: newXP,
             challengesCompleted: currentCount + 1,
-            lastActive: now.toISOString()
+            lastActive: now.toISOString(),
+            // Secret Notebook summary for the teacher's student profile.
+            ...(secretNoteSync || {}),
           }, { merge: true });
 
           // 3. Update dedicated Leaderboard collection for efficient global reads
@@ -1893,6 +1920,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   ) : null}
                   recentHistory={history.slice(0, 5)}
                   isMobile={isMobile}
+                  secretNote={{
+                    daily: { total: getNoteCount('daily', user?.uid), due: getDueCount('daily', user?.uid) },
+                    calc: { total: getNoteCount('calc', user?.uid), due: getDueCount('calc', user?.uid) },
+                  }}
+                  onOpenSecretNote={(k) => { setSecretNoteKind(k); setStep('secretNote'); }}
                 />
               )}
 
@@ -1954,6 +1986,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                     if (setIsLocked) setIsLocked(false);
                     onBack();
                   }}
+                />
+              )}
+
+              {step === 'secretNote' && secretNoteKind && (
+                <SecretNoteView
+                  key="secretNote"
+                  kind={secretNoteKind}
+                  uid={user?.uid}
+                  user={user}
+                  studentName={studentProfile?.firstName || studentProfile?.displayName?.split(' ')?.[0] || user?.displayName?.split(' ')?.[0] || ''}
+                  isMobile={isMobile}
+                  onClose={() => { setSecretNoteKind(null); setStep('start'); }}
                 />
               )}
             </AnimatePresence>

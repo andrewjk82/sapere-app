@@ -9,7 +9,38 @@ import {
   Zap,
   History,
   ArrowRight,
+  BookLock,
 } from 'lucide-react';
+
+// ── Secret Notebook entry card ─────────────────────────────────────────────
+const SecretNoteCard = ({ kind, note, onOpen }) => {
+  const total = note?.total || 0;
+  const due = note?.due || 0;
+  if (total === 0) return null;
+  const isCalc = kind === 'calc';
+  return (
+    <button
+      type="button"
+      className={`cs__note cs__note--${kind}`}
+      onClick={() => onOpen?.(kind)}
+    >
+      <div className={`cs__note-ico cs__note-ico--${kind}`}>
+        <BookLock size={20} />
+      </div>
+      <div className="cs__note-main">
+        <h4>
+          Secret Note · {isCalc ? 'Calculation' : 'Daily'}
+        </h4>
+        <p>
+          {total} question{total > 1 ? 's' : ''} saved
+          {due > 0 ? ` · ${due} due for review today` : ' · all reviewed'}
+        </p>
+      </div>
+      {due > 0 && <span className="cs__note-due">{due} due</span>}
+      <ArrowRight size={16} className="cs__note-arrow" />
+    </button>
+  );
+};
 
 // ── Helpers ────────────────────────────────────────────────
 const DAY_LETTERS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
@@ -234,8 +265,14 @@ const ChallengeStartView = ({
   recentHistory,
   // eslint-disable-next-line no-unused-vars
   isMobile,
+  secretNote,
+  onOpenSecretNote,
 }) => {
   const calculationEnabled = studentProfile?.calculationEnabled !== false;
+
+  const dailyNote = secretNote?.daily || { total: 0, due: 0 };
+  const calcNote = secretNote?.calc || { total: 0, due: 0 };
+  const totalDue = (dailyNote.due || 0) + (calcNote.due || 0);
 
   // Daily state
   const dailyState = !todayStatusReady
@@ -351,6 +388,24 @@ const ChallengeStartView = ({
           )}
         </div>
 
+        {/* Forgetting-curve review banner */}
+        {totalDue > 0 && (
+          <button
+            type="button"
+            className="cs__review-banner"
+            onClick={() =>
+              onOpenSecretNote?.(dailyNote.due >= calcNote.due ? 'daily' : 'calc')
+            }
+          >
+            <span className="cs__review-banner-ico">🧠</span>
+            <span className="cs__review-banner-text">
+              Perfect time to review! <strong>{totalDue} question{totalDue > 1 ? 's' : ''}</strong> from
+              your Secret Note are due today.
+            </span>
+            <ArrowRight size={16} />
+          </button>
+        )}
+
         {/* Test cards */}
         <div className="cs__tests">
           <TestRow
@@ -361,15 +416,19 @@ const ChallengeStartView = ({
             onBegin={onStartDailyQuiz}
             onReview={() => onViewHistory?.('daily')}
           />
+          <SecretNoteCard kind="daily" note={dailyNote} onOpen={onOpenSecretNote} />
           {calculationEnabled && (
-            <TestRow
-              kind="calc"
-              title="Calculation sprint"
-              meta={`${calcQ} questions · ~3 minutes · up to ${calcXp} XP`}
-              state={calcState}
-              onBegin={onStartCalculationQuiz}
-              onReview={() => onViewHistory?.('calc')}
-            />
+            <>
+              <TestRow
+                kind="calc"
+                title="Calculation sprint"
+                meta={`${calcQ} questions · ~3 minutes · up to ${calcXp} XP`}
+                state={calcState}
+                onBegin={onStartCalculationQuiz}
+                onReview={() => onViewHistory?.('calc')}
+              />
+              <SecretNoteCard kind="calc" note={calcNote} onOpen={onOpenSecretNote} />
+            </>
           )}
         </div>
 
@@ -549,6 +608,41 @@ const challengeStartStyles = `
     padding: 4px 10px; border-radius: 999px;
     font-weight: 800; font-size: 0.7rem;
   }
+
+  /* Forgetting-curve review banner */
+  .cs__review-banner {
+    display: flex; align-items: center; gap: 12px; width: 100%;
+    padding: 14px 18px; border-radius: 18px; cursor: pointer; text-align: left;
+    background: linear-gradient(135deg, #ede9fe, #fce7f3);
+    border: 1px solid #ddd6fe; color: #6d28d9;
+  }
+  .cs__review-banner-ico { font-size: 1.4rem; }
+  .cs__review-banner-text { flex: 1; font-size: 0.9rem; font-weight: 700; }
+  .cs__review-banner-text strong { font-weight: 900; }
+
+  /* Secret Notebook entry card */
+  .cs__note {
+    display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+    padding: 14px 20px; border-radius: 20px; cursor: pointer;
+    background: #faf8ff; border: 1.5px dashed #d8d1f5;
+    transition: border-color 0.15s ease, background 0.15s ease;
+    margin-top: -2px;
+  }
+  .cs__note:hover { border-color: #a78bfa; background: #f5f3ff; }
+  .cs__note--calc { background: #fffbeb; border-color: #fcd9a5; }
+  .cs__note--calc:hover { border-color: #fbbf24; background: #fef7e6; }
+  .cs__note-ico { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; flex-shrink: 0; }
+  .cs__note-ico--daily { background: #ede9fe; color: #7c3aed; }
+  .cs__note-ico--calc { background: #fef3c7; color: #b45309; }
+  .cs__note-main { flex: 1; min-width: 0; }
+  .cs__note-main h4 { font-size: 0.95rem; font-weight: 900; color: #1e1b4b; margin: 0 0 2px; }
+  .cs__note-main p { font-size: 0.8rem; color: #6d6a85; margin: 0; font-weight: 600; }
+  .cs__note-due {
+    padding: 4px 11px; border-radius: 999px; font-size: 0.72rem; font-weight: 900;
+    background: #8b5cf6; color: #fff; flex-shrink: 0;
+  }
+  .cs__note--calc .cs__note-due { background: #f59e0b; }
+  .cs__note-arrow { color: #a78bfa; flex-shrink: 0; }
 
   /* Test pill rows */
   .cs__tests { display: flex; flex-direction: column; gap: 12px; }
