@@ -15,6 +15,7 @@ import ScheduleLessonModal from './ScheduleLessonModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
+import { getDueCount } from '../utils/secretNote';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
@@ -597,6 +598,37 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             </div>
           </div>
         )}
+
+        {/* Secret Note review prompt — students only */}
+        {!isAdmin && (() => {
+          const dueTotal = getDueCount('daily', user?.uid) + getDueCount('calc', user?.uid);
+          if (dueTotal === 0) return null;
+          return (
+            <button
+              type="button"
+              onClick={() => setActiveTab('Challenge')}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '14px', width: '100%',
+                margin: isMobile ? '0 20px 16px' : '0 0 24px',
+                maxWidth: isMobile ? 'calc(100% - 40px)' : '100%',
+                padding: '16px 22px', borderRadius: '20px', cursor: 'pointer',
+                textAlign: 'left',
+                background: 'linear-gradient(135deg, #ede9fe, #fce7f3)',
+                border: '1px solid #ddd6fe', color: '#6d28d9',
+              }}
+            >
+              <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>🧠</span>
+              <span style={{ flex: 1, fontSize: '0.95rem', fontWeight: 700, lineHeight: 1.45 }}>
+                Perfect time to review!{' '}
+                <strong style={{ fontWeight: 900 }}>
+                  {dueTotal} question{dueTotal > 1 ? 's' : ''}
+                </strong>{' '}
+                from your Secret Note {dueTotal > 1 ? 'are' : 'is'} due today.
+              </span>
+              <ArrowRight size={18} style={{ flexShrink: 0 }} />
+            </button>
+          );
+        })()}
 
         {isAdmin && (
           <AdminDashboard
