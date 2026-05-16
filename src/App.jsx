@@ -806,7 +806,14 @@ function App() {
         )}
       </AnimatePresence>
 
-      <Sidebar activeTab={activeTab} setActiveTab={handleTabChange} isLocked={isLocked} />
+      <Sidebar
+        activeTab={activeTab}
+        setActiveTab={handleTabChange}
+        isLocked={isLocked}
+        onShowLeaderboard={() => setShowLeaderboard(true)}
+        onShowNotifs={() => { setShowNotifs(prev => !prev); if (!showNotifs) handleMarkAsRead(); }}
+        unreadCount={unreadCount}
+      />
       <div className="app-shell__main">
         {renderContent()}
       </div>
