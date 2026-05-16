@@ -1,37 +1,50 @@
 import admin from 'firebase-admin';
 import { readFileSync } from 'fs';
+import 'dotenv/config';
 
-const serviceAccount = JSON.parse(readFileSync('/Users/andrewkim/Downloads/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', 'utf8'));
+// Load env from .env.local if exists
+try {
+  const envFile = readFileSync('.env.local', 'utf8');
+  envFile.split('\n').forEach(line => {
+    const [key, ...value] = line.split('=');
+    if (key && value) {
+      process.env[key.trim()] = value.join('=').trim().replace(/^"|"$/g, '');
+    }
+  });
+} catch(e) {}
 
 if (!admin.apps.length) {
   admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert({
+      projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    }),
   });
 }
 
-const db = admin.firestore();
-
-async function checkCronLogs() {
-  console.log('Checking system_logs for cron_execution...');
+async function check() {
+  const db = admin.firestore();
+  console.log("Fetching latest cron_execution logs...");
   const snap = await db.collection('system_logs')
-    .where('type', '==', 'cron_execution')
+    .where('type', 'in', ['cron_execution', 'cron_execution_error', 'cron_execution_start'])
     .orderBy('timestamp', 'desc')
-    .limit(5)
+    .limit(10)
     .get();
   
   if (snap.empty) {
-    console.log('No cron_execution logs found.');
+    console.log("No cron logs found.");
     return;
   }
-  
+
   snap.forEach(doc => {
     const data = doc.data();
-    console.log(`Log ID: ${doc.id}`);
-    console.log(`Time: ${data.timestamp?.toDate()}`);
-    console.log(`Sydney Time: ${data.sydneyTime}`);
-    console.log(`Reminders Sent: ${data.remindersSentCount}`);
+    console.log(`[${data.timestamp?.toDate()?.toISOString()}] TYPE: ${data.type}`);
+    console.log(`Sydney Time: ${data.sydneyTime}, Status: ${data.status || 'N/A'}`);
+    if (data.error) console.log(`Error: ${data.error}`);
+    console.log(`Logs:`);
+    (data.logs || []).forEach(l => console.log(`  - ${l}`));
     console.log('---');
   });
 }
-
-checkCronLogs().catch(console.error);
+check().catch(console.error);

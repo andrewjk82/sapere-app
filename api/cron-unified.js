@@ -148,7 +148,7 @@ export default async function handler(req, res) {
       });
       logs.push(`[8PM Queue] ${queueResult.sentCount} sent this run, cursor=${queueResult.nextCursor}/${queueResult.totalCount}, complete=${queueResult.complete}.`);
       if (queueResult.complete) {
-        await notifyAdminQueueComplete(db, todayStr, queueResult, logs);
+        await notifyAdminQueueComplete(db, transporter, todayStr, queueResult, logs);
       }
     }
 
@@ -315,7 +315,7 @@ async function processEightPmQueue({
   };
 }
 
-async function notifyAdminQueueComplete(db, todayStr, queueResult, logs) {
+async function notifyAdminQueueComplete(db, transporter, todayStr, queueResult, logs) {
   const queueRef = db.collection('notification_queue_8pm').doc(todayStr);
   const queueSnap = await queueRef.get();
   const queue = queueSnap.exists ? queueSnap.data() : {};
@@ -332,20 +332,15 @@ async function notifyAdminQueueComplete(db, todayStr, queueResult, logs) {
     failed ? `Not completed: ${failed}` : 'All queued reminders processed.',
   ].join('\n');
 
-  await db.collection('users').doc(ADMIN_UID).collection('notifications').add({
+  await sendNotification(
+    db,
+    transporter,
+    { studentId: ADMIN_UID, email: 'andrewjk82@gmail.com' },
+    'cron_summary',
     title,
-    body,
-    timestamp: admin.firestore.FieldValue.serverTimestamp(),
-    read: false,
-    type: 'cron_summary',
-    metadata: {
-      date: todayStr,
-      total,
-      sent,
-      failed,
-      queueId: todayStr,
-    },
-  });
+    `<p style="white-space: pre-wrap; font-size: 16px;">${body}</p>`
+  );
+
   await queueRef.set({
     adminNotifiedAt: admin.firestore.FieldValue.serverTimestamp(),
   }, { merge: true });
