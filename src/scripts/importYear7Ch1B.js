@@ -3,13 +3,13 @@ import { collection, addDoc, getDocs, query, where, deleteDoc } from 'firebase/f
 
 export const allQuestions = [
   // ==========================================
-  // QUESTION 1: MENTAL ADDITION STRATEGIES (Q1a - Q1f)
+  // QUESTION 1: MENTAL ADDITION STRATEGIES (Q1a - Q1f) -> 1B (Addition)
   // ==========================================
   {
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -24,7 +24,7 @@ export const allQuestions = [
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -39,7 +39,7 @@ export const allQuestions = [
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -54,7 +54,7 @@ export const allQuestions = [
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -69,7 +69,7 @@ export const allQuestions = [
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -84,7 +84,7 @@ export const allQuestions = [
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -97,13 +97,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 2: STANDARD ADDITION ALGORITHM (Q2a - Q2f)
+  // QUESTION 2: STANDARD ADDITION ALGORITHM (Q2a - Q2f) -> 1C (The standard addition algorithm)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1c',
+    topicCode: '1C',
+    topicTitle: 'The standard addition algorithm',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -116,9 +116,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1c',
+    topicCode: '1C',
+    topicTitle: 'The standard addition algorithm',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -131,9 +131,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1c',
+    topicCode: '1C',
+    topicTitle: 'The standard addition algorithm',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -146,9 +146,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1c',
+    topicCode: '1C',
+    topicTitle: 'The standard addition algorithm',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -161,9 +161,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1c',
+    topicCode: '1C',
+    topicTitle: 'The standard addition algorithm',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -176,9 +176,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1c',
+    topicCode: '1C',
+    topicTitle: 'The standard addition algorithm',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -191,13 +191,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 3: STANDARD SUBTRACTION ALGORITHM (Q3a - Q3i)
+  // QUESTION 3: STANDARD SUBTRACTION ALGORITHM (Q3a - Q3i) -> 1D (Subtraction)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -210,9 +210,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -225,9 +225,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -240,9 +240,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -255,9 +255,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -270,9 +270,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -285,9 +285,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -300,9 +300,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -315,9 +315,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -330,13 +330,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 4 & 5: WORD PROBLEMS - ADDITION
+  // QUESTION 4 & 5: WORD PROBLEMS - ADDITION -> 1B (Addition)
   // ==========================================
   {
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -351,7 +351,7 @@ export const allQuestions = [
     chapterId: 'y7-1',
     topicId: 'y7-1b',
     topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicTitle: 'Addition',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -364,13 +364,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 6 & 7: WORD PROBLEMS - SUBTRACTION & COMPARISON
+  // QUESTION 6 & 7: WORD PROBLEMS - SUBTRACTION -> 1D (Subtraction)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -383,9 +383,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -398,9 +398,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -413,13 +413,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 8: COMPARISON STATEMENTS (Q8a - Q8d)
+  // QUESTION 8: COMPARISON STATEMENTS (Q8a - Q8d) -> 1D (Subtraction)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
@@ -433,9 +433,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
@@ -449,9 +449,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'easy',
@@ -465,9 +465,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1d',
+    topicCode: '1D',
+    topicTitle: 'Subtraction',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
@@ -481,13 +481,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 9: ADVANCED MENTAL MULTIPLICATION STRATEGIES (Q9a - Q9f)
+  // QUESTION 9: ADVENTAL MULTIPLICATION STRATEGIES (Q9a - Q9f) -> 1E (Multiplication)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e',
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -500,9 +500,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e',
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -515,9 +515,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e',
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -530,9 +530,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e',
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -545,9 +545,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e',
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -560,9 +560,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e',
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -575,13 +575,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 10: MULTIPLICATION ALGORITHMS (Q10a - Q10o)
+  // QUESTION 10: MULTIPLICATION ALGORITHMS (Q10a - Q10o) -> 1H (The standard multiplication algorithms)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -594,9 +594,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -609,9 +609,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -624,9 +624,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -639,9 +639,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -654,9 +654,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -669,9 +669,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -684,9 +684,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -699,9 +699,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -714,9 +714,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -729,9 +729,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'hard',
@@ -744,9 +744,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'hard',
@@ -759,9 +759,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'hard',
@@ -774,9 +774,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'hard',
@@ -789,9 +789,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h',
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'hard',
@@ -804,13 +804,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTIONS 11 - 14: WORD PROBLEMS - MULTIPLICATION
+  // QUESTIONS 11 - 14: WORD PROBLEMS - MULTIPLICATION -> 1E & 1H
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e', // 1E (Multiplication)
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -823,9 +823,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1e', // 1E (Multiplication)
+    topicCode: '1E',
+    topicTitle: 'Multiplication',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -838,9 +838,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h', // 1H (The standard multiplication algorithms)
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -853,9 +853,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1h', // 1H (The standard multiplication algorithms)
+    topicCode: '1H',
+    topicTitle: 'The standard multiplication algorithms',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -868,13 +868,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 15: DIVISION ALGORITHMS (Q15a - Q15r)
+  // QUESTION 15: DIVISION ALGORITHMS (Q15a - Q15o) -> 1I (Division)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -887,9 +887,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -902,9 +902,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -917,9 +917,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -932,9 +932,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -947,9 +947,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -962,9 +962,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -977,9 +977,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -992,9 +992,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'easy',
@@ -1007,9 +1007,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1022,9 +1022,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1037,9 +1037,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1052,9 +1052,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1067,9 +1067,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1082,9 +1082,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1i',
+    topicCode: '1I',
+    topicTitle: 'Division',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1095,11 +1095,15 @@ export const allQuestions = [
     solution: '<div style="text-align: left;"><p><strong>Step 1: Perform short division.</strong><br>• $7 \\div 7 = 1$.<br>• $2 \\div 7 = 0$ remainder $2$ (carry $2$ to make $28$).<br>• $28 \\div 7 = 4$.</p><p>Therefore, $728 \\div 7 = 104$.</p></div>',
     createdAt: new Date().toISOString()
   },
+
+  // ==========================================
+  // QUESTION 15 (CONTINUED): REMAINDER DIVISIONS -> 1J (The short division algorithm)
+  // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1j',
+    topicCode: '1J',
+    topicTitle: 'The short division algorithm',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
@@ -1113,9 +1117,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1j',
+    topicCode: '1J',
+    topicTitle: 'The short division algorithm',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'hard',
@@ -1129,9 +1133,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1j',
+    topicCode: '1J',
+    topicTitle: 'The short division algorithm',
     year: 'Year 7',
     type: 'multiple_choice',
     difficulty: 'medium',
@@ -1145,13 +1149,13 @@ export const allQuestions = [
   },
 
   // ==========================================
-  // QUESTION 16: ORDER OF OPERATIONS (BODMAS/BIDMAS)
+  // QUESTION 16: ORDER OF OPERATIONS (BODMAS/BIDMAS) -> 1L (Order of operations)
   // ==========================================
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1l',
+    topicCode: '1L',
+    topicTitle: 'Order of operations',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1164,9 +1168,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1l',
+    topicCode: '1L',
+    topicTitle: 'Order of operations',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1179,9 +1183,9 @@ export const allQuestions = [
   },
   {
     chapterId: 'y7-1',
-    topicId: 'y7-1b',
-    topicCode: '1B',
-    topicTitle: 'Addition of whole numbers',
+    topicId: 'y7-1l',
+    topicCode: '1L',
+    topicTitle: 'Order of operations',
     year: 'Year 7',
     type: 'short_answer',
     difficulty: 'medium',
@@ -1199,12 +1203,24 @@ export const importYear7Ch1B = async (forceReset = false) => {
   let importedCount = 0;
   try {
     const qRef = collection(db, 'questions');
+    const targetTopics = ['y7-1b', 'y7-1c', 'y7-1d', 'y7-1e', 'y7-1h', 'y7-1i', 'y7-1j', 'y7-1l'];
+
     if (forceReset) {
-      const oldSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-1b')));
-      for (const d of oldSnap.docs) { await deleteDoc(d.ref); }
+      console.log('[Ch1B Year 7 Import] Force Reset requested. Wiping affected topics...');
+      for (const topicId of targetTopics) {
+        const oldSnap = await getDocs(query(qRef, where('topicId', '==', topicId)));
+        for (const d of oldSnap.docs) { 
+          await deleteDoc(d.ref); 
+        }
+      }
     }
-    const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-1b')));
-    const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question.trim()));
+    
+    // Check existing questions to prevent duplicates
+    const existingQuestions = new Set();
+    for (const topicId of targetTopics) {
+      const snap = await getDocs(query(qRef, where('topicId', '==', topicId)));
+      snap.docs.forEach(doc => existingQuestions.add(doc.data().question.trim()));
+    }
     
     for (const q of allQuestions) {
       if (!existingQuestions.has(q.question.trim())) {
