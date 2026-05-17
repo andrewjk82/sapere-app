@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   X, Check, Flag, ChevronLeft, ChevronRight, Clock, 
@@ -425,39 +425,48 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     };
   }, [user?.uid]);
 
-  // ── Realtime history listener ──
-  // Active when on start screen (for Performance Insights analytics),
-  // viewMode === 'history', OR when step === 'result'.
-  useEffect(() => {
+  // ── Challenge history loader ──
+  // One-shot getDocs (NOT a realtime listener) — past challenge records change
+  // rarely, so a live subscription would bill reads continuously for nothing.
+  // Fetched when entering the start/history screens and after finishQuiz.
+  // Teacher-initiated resets still arrive in realtime via the sync_meta
+  // listener above — that path is untouched.
+  const fetchHistory = useCallback(async ({ deriveStatus = true } = {}) => {
     if (!user?.uid) return;
-    if (viewMode !== 'history' && step !== 'result' && step !== 'start') return;
-
-    let dailyData = [];
-    let calcData = [];
-    let dailyLoaded = false;
-    let calcLoaded = false;
     const today = new Date().toLocaleDateString('en-CA');
-
-    const flush = () => {
-      if (!dailyLoaded || !calcLoaded) return;
+    try {
+      const [dailySnap, calcSnap] = await Promise.all([
+        getDocs(query(
+          collection(db, 'users', user.uid, 'daily_stats'),
+          orderBy('timestamp', 'desc'),
+          limit(MAX_HISTORY_PER_TYPE),
+        )),
+        getDocs(query(
+          collection(db, 'users', user.uid, 'calc_stats'),
+          orderBy('timestamp', 'desc'),
+          limit(MAX_HISTORY_PER_TYPE),
+        )),
+      ]);
+      const dailyData = dailySnap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
+      const calcData = calcSnap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() }));
       const merged = [...dailyData, ...calcData]
         .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
         .slice(0, 30);
       setHistory(merged);
-      // dailyStats (used by learning-insights) reuses the same subscription
+      // dailyStats (used by learning-insights) reuses the same fetch
       setDailyStats(dailyData);
+      setHistoryLoaded(true);
 
-      // Don't overwrite completion state while result screen is active —
-      // the finishQuiz() already set the correct local state, and an early
-      // onSnapshot firing before the Firestore write settles can cause a
-      // brief flicker that makes the result screen disappear.
-      if (step !== 'result') {
+      // Reconcile today's completion state from the fetched records.
+      // Skipped right after finishQuiz (deriveStatus:false) — finishQuiz has
+      // already set the correct local state.
+      if (deriveStatus) {
         const todayDaily = dailyData.find(item => item.id === today);
         const todayCalc = calcData.find(item => item.id === today);
         const cachedBoot = localCache.get(getChallengeBootCacheKey(user.uid));
         const dailyWasReset = cachedBoot?.date === today && cachedBoot.dailyStatus === 'open';
         const calcWasReset = cachedBoot?.date === today && cachedBoot.calcStatus === 'open';
-        
+
         if (dailyWasReset && !todayDaily) {
           setTodayCompleted(false);
           setAbandonedToday(false);
@@ -498,49 +507,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           mergeChallengeBootCache(user.uid, statusPatch);
         }
       }
-    };
+    } catch (err) {
+      console.warn('history fetch failed (non-fatal):', err?.code || err);
+    }
+  }, [user?.uid]);
 
-    const unsubDaily = onSnapshot(
-      query(
-        collection(db, 'users', user.uid, 'daily_stats'),
-        orderBy('timestamp', 'desc'),
-        limit(MAX_HISTORY_PER_TYPE)
-      ),
-      (snap) => {
-        dailyData = snap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
-        dailyLoaded = true;
-        flush();
-      },
-      (err) => {
-        console.warn('daily history listener failed (non-fatal):', err?.code || err);
-        dailyLoaded = true;
-        flush();
-      }
-    );
-
-    const unsubCalc = onSnapshot(
-      query(
-        collection(db, 'users', user.uid, 'calc_stats'),
-        orderBy('timestamp', 'desc'),
-        limit(MAX_HISTORY_PER_TYPE)
-      ),
-      (snap) => {
-        calcData = snap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() }));
-        calcLoaded = true;
-        flush();
-      },
-      (err) => {
-        console.warn('calc history listener failed (non-fatal):', err?.code || err);
-        calcLoaded = true;
-        flush();
-      }
-    );
-
-    return () => {
-      unsubDaily();
-      unsubCalc();
-    };
-  }, [user?.uid, viewMode, step]);
+  // Load history when entering the start or history screens. Past records
+  // change rarely; finishQuiz triggers its own refresh after writing.
+  useEffect(() => {
+    if (!user?.uid) return;
+    if (viewMode === 'history' || step === 'start') {
+      fetchHistory({ deriveStatus: step !== 'result' });
+    }
+  }, [user?.uid, viewMode, step, fetchHistory]);
 
   // ── Lazy-load detailed snapshots for lightweight calculation records ──
   // The calc parent doc keeps only summary fields; questions, selected answers
@@ -1569,8 +1548,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           lastChapterStats: chapterStats,
         }));
         
-        // History is updated automatically by the realtime onSnapshot listener
-        // — no manual setHistory needed here.
+        // Refresh history from Firestore now that the new record is written
+        // (deriveStatus:false — finishQuiz already set the completion state).
+        fetchHistory({ deriveStatus: false }).catch(() => {});
         if (challengeType === 'daily') {
           setTodayCompleted(true);
           setAbandonedToday(false);
