@@ -1,5 +1,5 @@
 import { db } from '../firebase/config.js';
-import { collection, addDoc, getDocs, query, where, deleteDoc } from 'firebase/firestore';
+import { collection, addDoc, getDocs, query, where, deleteDoc, doc, writeBatch } from 'firebase/firestore';
 
 export const allQuestions = [
   // ==========================================
@@ -1224,31 +1224,49 @@ export const allQuestions = [
 ];
 
 export const importYear7Ch2 = async (forceReset = false) => {
-  console.log('[Ch2 Year 7 Import] Starting physical migration...');
+  console.log('[Ch2 Year 7 Import] Starting physical migration via writeBatch...');
   let importedCount = 0;
   
   try {
     const qRef = collection(db, 'questions');
+    
     if (forceReset) {
       console.log('[Ch2 Year 7 Import] forceReset is TRUE. Deleting existing questions for chapter y7-2...');
       const oldSnap = await getDocs(query(qRef, where('chapterId', '==', 'y7-2')));
-      for (const d of oldSnap.docs) {
-        await deleteDoc(d.ref);
+      
+      if (!oldSnap.empty) {
+        const deleteBatch = writeBatch(db);
+        oldSnap.docs.forEach((d) => {
+          deleteBatch.delete(d.ref);
+        });
+        await deleteBatch.commit();
+        console.log(`[Ch2 Year 7 Import] Deleted ${oldSnap.docs.length} old questions successfully.`);
       }
-      console.log(`[Ch2 Year 7 Import] Deleted ${oldSnap.docs.length} old questions.`);
     }
 
     const existingSnap = await getDocs(query(qRef, where('chapterId', '==', 'y7-2')));
     const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question.trim()));
     
+    const insertBatch = writeBatch(db);
+    let needCommit = false;
+    
     for (const q of allQuestions) {
       if (!existingQuestions.has(q.question.trim())) {
-        await addDoc(collection(db, 'questions'), q);
+        const newDocRef = doc(collection(db, 'questions'));
+        insertBatch.set(newDocRef, q);
         importedCount++;
+        needCommit = true;
       }
     }
+    
+    if (needCommit) {
+      await insertBatch.commit();
+      console.log(`[Ch2 Year 7 Import] Batch write successful. Inserted ${importedCount} questions.`);
+    } else {
+      console.log('[Ch2 Year 7 Import] All questions are already up to date.');
+    }
   } catch (error) {
-    console.error('[Ch2 Year 7 Import] ERROR DURING SYNC:', error);
+    console.error('[Ch2 Year 7 Import] ERROR DURING BATCH SYNC:', error);
     throw error;
   }
   
