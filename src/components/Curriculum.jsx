@@ -44,7 +44,7 @@ const ADMIN_TOOL_COUNT_IDS = [
   'y10-1', 'y10-3', 'y10-4', 
   'y9-1', 
   'y8-1', 
-  'y7-1', 'y7-2', 'y7-3', 'y7-4', 'y7-5', 'y7-5a', 'y7-6', 'y7-6a', 'y7-7', 'y7-7a', 'y7-8', 'y7-8a', 'y7-10a'
+  'y7-1', 'y7-2', 'y7-3', 'y7-4', 'y7-5', 'y7-5a', 'y7-6', 'y7-6a', 'y7-7', 'y7-7a', 'y7-8', 'y7-8a', 'y7-10a', 'y7-11a'
 ];
 
 const loadCachedQuestionCounts = () => {
@@ -735,6 +735,27 @@ const Curriculum = () => {
     } catch (error) {
       console.error('Error syncing Year 7 Ch10A:', error);
       showToast('Failed to sync Year 7 Chapter 10A.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSyncY7Ch11A = async (forceReset = false) => {
+    if (!isAdmin || isMigrating) return;
+    if (forceReset && !window.confirm("This will DELETE all existing Year 7 Chapter 11A questions and re-import them. Continue?")) return;
+    
+    setIsMigrating(true);
+    try {
+      const { importYear7Ch11A } = await import('../scripts/importYear7Ch11A');
+      const count = await importYear7Ch11A(forceReset);
+      if (count > 0) {
+        showToast(`✅ Successfully ${forceReset ? 'reset and ' : ''}added ${count} questions to Year 7 Chapter 11A!`, 'success');
+      } else {
+        showToast('Year 7 Chapter 11A is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 7 Ch11A:', error);
+      showToast('Failed to sync Year 7 Chapter 11A.', 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -1493,6 +1514,22 @@ const Curriculum = () => {
                             🔄 Sync
                           </button>
                           <button onClick={() => handleSyncY7Ch10A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 11A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH11A</span>
+                          <span className="sync-card-title">Substitution with Integers (11A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch11A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch11A(true)} disabled={isMigrating} className="sync-btn danger">
                             🗑️ Reset & Sync
                           </button>
                         </div>
