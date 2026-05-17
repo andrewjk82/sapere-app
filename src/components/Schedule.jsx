@@ -389,7 +389,9 @@ const Schedule = ({ students = [] }) => {
         : [selectedSession];
       const text = buildScheduleUpdateMessage(selectedSession, updatePayload);
       const html = buildScheduleUpdateHtml(selectedSession, updatePayload);
-      await Promise.allSettled(recipients.map((recipient) => fetch('/api/send-notif', {
+      // Fire update notifications in the background — don't block the save UI
+      // on email delivery (Gmail SMTP can take several seconds per message).
+      Promise.allSettled(recipients.map((recipient) => fetch('/api/send-notif', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -410,7 +412,8 @@ const Schedule = ({ students = [] }) => {
           .filter(result => result.status === 'rejected')
           .forEach(result => console.warn('Schedule update notification failed:', result.reason));
       });
-      
+
+      // The Firestore write is already done — close immediately.
       setSaveChoiceOpen(null);
       setSelectedSession(null);
       showToast('Changes saved successfully!', 'success');
