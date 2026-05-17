@@ -2,9 +2,10 @@ import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
 
-// Send at most 10 evening reminders per hourly run — the queue carries the
-// rest over to the next hour, spreading the load (avoids email throttling).
-const SIX_PM_BATCH_SIZE = 10;
+// Emails sent per hourly run — the queue carries the rest to the next hour,
+// spreading the load (avoids email throttling).
+const SIX_PM_BATCH_SIZE = 15;          // evening reminders (5–9 PM window)
+const WEEKLY_REPORT_BATCH_SIZE = 15;   // Sunday weekly reports (1–4 PM window)
 const CRON_STARTED_AT = Date.now();
 const CRON_SOFT_LIMIT_MS = 24_000;
 const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';
@@ -161,64 +162,79 @@ export default async function handler(req, res) {
     }
 
     // ══════════════════════════════════════════════════════════════════════
-    // PART 3: Weekly student report — runs Sundays only.
-    // Sends each student/parent a nicely formatted summary of the past week.
-    // No data is deleted; the report is informational only.
+    // PART 3: Weekly student report — Sundays, spread across the 12:50–16:10
+    // window (1/2/3/4 PM hourly runs). A per-week queue with sentIds sends a
+    // batch each run and carries the rest over — no big burst, no duplicates.
     // ══════════════════════════════════════════════════════════════════════
     const sydDow = new Date(`${todayStr}T00:00:00Z`).getUTCDay(); // 0 = Sunday
-    if (sydDow === 0) {
+    if (sydDow === 0 && sydTotalMin >= 770 && sydTotalMin <= 970) {
       try {
         const week = getWeekRangeSydney(nowUTC);
         const reportRef = db.collection('weekly_report').doc(week.weekId);
         const reportSnap = await reportRef.get();
-        if (reportSnap.exists && reportSnap.data().status === 'complete') {
-          logs.push(`[Weekly] Report already sent for week ${week.weekId}.`);
+        const reportData = reportSnap.exists ? reportSnap.data() : {};
+        if (reportData.status === 'complete') {
+          logs.push(`[Weekly] Report already complete for week ${week.weekId}.`);
         } else {
+          const sentIds = new Set(reportData.sentIds || []);
           const usersSnap = await db.collection('users').get();
           const studentDocs = usersSnap.docs.filter((d) => isStudentProfile(d.data()));
+          const pending = studentDocs.filter((sd) => !sentIds.has(sd.id));
+          const batch = pending.slice(0, WEEKLY_REPORT_BATCH_SIZE);
           let sent = 0;
           let skipped = 0;
-          for (let i = 0; i < studentDocs.length; i += 8) {
-            const batch = studentDocs.slice(i, i + 8);
-            const results = await Promise.allSettled(batch.map(async (sd) => {
-              const student = sd.data();
-              const email = normalizeEmail(student.email);
-              const name = student.name || student.displayName ||
-                `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
-              const data = await gatherStudentWeek(db, sd.id, week.days, email);
-              const report = renderWeeklyReportBody({ name, label: week.label, days: week.days, student, ...data });
-              if (!report.hasData) return { skipped: true };
-              if (email) {
+          const results = await Promise.allSettled(batch.map(async (sd) => {
+            const student = sd.data();
+            const email = normalizeEmail(student.email);
+            const name = student.name || student.displayName ||
+              `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
+            const data = await gatherStudentWeek(db, sd.id, week.days, email);
+            const report = renderWeeklyReportBody({ name, label: week.label, days: week.days, student, ...data });
+            if (!report.hasData) return { id: sd.id, done: true, skipped: true };
+            let emailSent = true;
+            if (email) {
+              try {
                 await transporter.sendMail({
                   from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
                   to: email,
                   subject: `[Sapere] ${report.subject}`,
                   html: buildEmailShell(report.subject, report.bodyHtml),
                 });
+              } catch (err) {
+                emailSent = false;
+                logs.push(`[Weekly] email failed for ${name}: ${err.message}`);
               }
-              await db.collection('users').doc(sd.id).collection('notifications').add({
-                title: report.subject,
-                body: 'Your weekly learning report is ready — check your email.',
-                timestamp: admin.firestore.FieldValue.serverTimestamp(),
-                read: false,
-                type: 'weekly_report',
-              }).catch(() => {});
-              return { sent: true };
-            }));
-            results.forEach((r) => {
-              if (r.status === 'fulfilled' && r.value?.sent) sent += 1;
-              else if (r.status === 'fulfilled' && r.value?.skipped) skipped += 1;
-              else logs.push(`[Weekly] fail: ${r.reason?.message || r.reason}`);
-            });
-          }
+            }
+            await db.collection('users').doc(sd.id).collection('notifications').add({
+              title: report.subject,
+              body: 'Your weekly learning report is ready — check your email.',
+              timestamp: admin.firestore.FieldValue.serverTimestamp(),
+              read: false,
+              type: 'weekly_report',
+            }).catch(() => {});
+            // done=true → won't be retried; failed emails stay pending.
+            return { id: sd.id, done: emailSent, sent: emailSent };
+          }));
+          results.forEach((r) => {
+            if (r.status === 'fulfilled') {
+              if (r.value.done) sentIds.add(r.value.id);
+              if (r.value.sent) sent += 1;
+              else if (r.value.skipped) skipped += 1;
+            } else {
+              logs.push(`[Weekly] fail: ${r.reason?.message || r.reason}`);
+            }
+          });
+          const remaining = studentDocs.filter((sd) => !sentIds.has(sd.id)).length;
+          const complete = remaining === 0;
           await reportRef.set({
             weekId: week.weekId,
-            status: 'complete',
-            sentCount: sent,
-            skippedCount: skipped,
-            completedAt: admin.firestore.FieldValue.serverTimestamp(),
+            status: complete ? 'complete' : 'partial',
+            sentIds: Array.from(sentIds),
+            sentCount: sentIds.size,
+            lastRunAt: admin.firestore.FieldValue.serverTimestamp(),
+            ...(complete ? { completedAt: admin.firestore.FieldValue.serverTimestamp() } : {}),
           }, { merge: true });
-          logs.push(`[Weekly] ${sent} reports sent, ${skipped} skipped (no activity).`);
+          logs.push(`[Weekly] ${sent} sent, ${skipped} skipped this run; ${remaining} remaining.`);
         }
       } catch (e) {
         logs.push(`[Weekly] Error: ${e.message}`);
