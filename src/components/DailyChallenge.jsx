@@ -1731,12 +1731,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                                 <div style={{ fontWeight: 700, marginBottom: '8px', color: '#334155' }}>
                                   ({String.fromCharCode(97 + sIdx)}) <MathView content={toDisplayText(sq.text || sq.question)} />
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: sIsCorrect ? '#10b981' : '#f43f5e', fontWeight: 700 }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: sIsCorrect ? '#10b981' : '#f43f5e', fontWeight: 700, flexWrap: 'wrap' }}>
                                   {sIsCorrect ? <Check size={16} /> : <X size={16} />}
-                                  <span>{sUserAnswer || '(No Answer)'}</span>
+                                  {sUserAnswer !== undefined && sUserAnswer !== null && sUserAnswer !== ''
+                                    ? <MathView content={String(sUserAnswer)} />
+                                    : <span>(No Answer)</span>}
                                   {!sIsCorrect && (
-                                    <span style={{ color: '#64748b', marginLeft: '8px' }}>
-                                      Correct: {sq.answer}
+                                    <span style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#64748b', marginLeft: '8px' }}>
+                                      Correct: <MathView content={String(sq.answer ?? '')} />
                                     </span>
                                   )}
                                 </div>
@@ -1745,12 +1747,22 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           })}
                         </div>
                       ) : (
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: isCorrect ? '#10b981' : '#f43f5e', fontWeight: 700 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: isCorrect ? '#10b981' : '#f43f5e', fontWeight: 700, flexWrap: 'wrap' }}>
                           {isCorrect ? <Check size={20} /> : <X size={20} />}
-                          <span>{userAnswer || '(No Answer)'}</span>
+                          {userAnswer !== undefined && userAnswer !== null && userAnswer !== '' && typeof userAnswer !== 'object'
+                            ? <MathView content={String(userAnswer)} />
+                            : <span>(No Answer)</span>}
                           {!isCorrect && (
-                            <span style={{ color: '#64748b', marginLeft: '12px' }}>
-                              Correct: {qData.answer}
+                            <span style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#64748b', marginLeft: '12px' }}>
+                              Correct: <MathView content={(() => {
+                                if (qData._shuffledAnswer !== undefined) return String(qData._shuffledAnswer);
+                                if (qData.type === 'multiple_choice' && qData.isManual) {
+                                  const opts = getOptions(qData);
+                                  const ai = parseInt(qData.answer, 10);
+                                  if (!Number.isNaN(ai) && opts[ai] !== undefined) return String(getOptionText(opts[ai]));
+                                }
+                                return String(qData.answer ?? '');
+                              })()} />
                             </span>
                           )}
                         </div>

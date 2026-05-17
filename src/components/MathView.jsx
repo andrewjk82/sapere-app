@@ -35,6 +35,13 @@ const toDisplayText = (value, fallback = '') => {
   str = str.replace(/×/g, '\\times');
   str = str.replace(/÷/g, '\\div');
 
+  // 1b. Rich HTML content (e.g. a solution with <p>/<strong>/<br>) must NOT
+  // go through the math-string transforms below — they corrupt the markup.
+  // Return as-is after symbol substitution; KaTeX still renders any $...$.
+  if (/<\/(p|div|ul|ol|li|strong|em|h[1-6])>|<br\s*\/?>/i.test(str)) {
+    return str;
+  }
+
   // 2. Safety catches for broken data imports (Double backslashes & excessive dollars)
   // Replaces \\ with \ unless it's a structural newline like \\n
   str = str.replace(/\\\\([a-zA-Z0-9])/g, '\\$1');
