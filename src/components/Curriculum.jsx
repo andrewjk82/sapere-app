@@ -77,6 +77,14 @@ const Curriculum = () => {
   const [curriculumRecords, setCurriculumRecords] = useState([]);
   const [isMigrating, setIsMigrating] = useState(false);
   const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
+  const [editingSubtopicIndex, setEditingSubtopicIndex] = useState(-1);
+  const [subtopicForm, setSubtopicForm] = useState({ code: '', title: '', page: '' });
+
+  const closeEditingChapterModal = () => {
+    setEditingChapter(null);
+    setEditingSubtopicIndex(-1);
+    setSubtopicForm({ code: '', title: '', page: '' });
+  };
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
   const [showAdminTools, setShowAdminTools] = useState(false);
@@ -164,6 +172,68 @@ const Curriculum = () => {
     await handleUpdateChapters(newChapters);
   };
 
+  const handleAddOrUpdateSubtopic = (e) => {
+    e.preventDefault();
+    if (!subtopicForm.code || !subtopicForm.title) {
+      showToast("Please enter both Code and Title.", "warning");
+      return;
+    }
+
+    const currentTopics = [...(editingChapter.chapter.topics || [])];
+    const newSubtopic = {
+      id: subtopicForm.id || `${editingChapter.chapter.id}-${subtopicForm.code.toLowerCase()}`,
+      code: subtopicForm.code,
+      title: subtopicForm.title,
+      page: subtopicForm.page ? parseInt(subtopicForm.page) : ''
+    };
+
+    if (editingSubtopicIndex >= 0) {
+      currentTopics[editingSubtopicIndex] = newSubtopic;
+    } else {
+      currentTopics.push(newSubtopic);
+    }
+
+    setEditingChapter({
+      ...editingChapter,
+      chapter: {
+        ...editingChapter.chapter,
+        topics: currentTopics
+      }
+    });
+
+    setSubtopicForm({ code: '', title: '', page: '' });
+    setEditingSubtopicIndex(-1);
+  };
+
+  const handleEditSubtopicClick = (index, subtopic) => {
+    setEditingSubtopicIndex(index);
+    setSubtopicForm({
+      id: subtopic.id,
+      code: subtopic.code,
+      title: subtopic.title,
+      page: subtopic.page || ''
+    });
+  };
+
+  const handleDeleteSubtopic = (index) => {
+    const currentTopics = [...(editingChapter.chapter.topics || [])];
+    currentTopics.splice(index, 1);
+    setEditingChapter({
+      ...editingChapter,
+      chapter: {
+        ...editingChapter.chapter,
+        topics: currentTopics
+      }
+    });
+    
+    if (editingSubtopicIndex === index) {
+      setSubtopicForm({ code: '', title: '', page: '' });
+      setEditingSubtopicIndex(-1);
+    } else if (editingSubtopicIndex > index) {
+      setEditingSubtopicIndex(editingSubtopicIndex - 1);
+    }
+  };
+
   const handleSaveChapter = async (e) => {
     e.preventDefault();
     const chapterData = editingChapter.chapter;
@@ -177,7 +247,7 @@ const Curriculum = () => {
     }
 
     await handleUpdateChapters(newChapters);
-    setEditingChapter(null);
+    closeEditingChapterModal();
   };
 
   const handleSeedAlgebraQuestions = async () => {
@@ -1645,7 +1715,7 @@ const Curriculum = () => {
             )}
 
             <div className="chapters-grid">
-              {displayData.length > 0 ? displayData.map(chapter => {
+              {displayData.length > 0 ? displayData.map((chapter, chapterIndex) => {
                 const p = chapter.modules > 0 ? Math.round(((chapter.completed || 0) / chapter.modules) * 100) : 0;
                 return (
                   <div key={chapter.id} className="chapter-card" onClick={() => setSelectedChapterForQuestions(chapter)}>
@@ -1658,6 +1728,7 @@ const Curriculum = () => {
                     </div>
 
                     <div>
+                      <p className="chapter-card__number-badge">Chapter {chapterIndex + 1}</p>
                       <h3 className="chapter-card__title">{chapter.title}</h3>
                       <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
@@ -1688,32 +1759,132 @@ const Curriculum = () => {
       <AnimatePresence>
         {editingChapter && (
           <div className="app-modal" style={{ zIndex: 1000 }}>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setEditingChapter(null)} className="app-modal__backdrop" />
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={closeEditingChapterModal} className="app-modal__backdrop" />
             <motion.div
               initial={{ scale: 0.92, opacity: 0, y: 16 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.92, opacity: 0, y: 16 }}
               className="app-panel app-modal__card"
-              style={{ maxWidth: '420px', width: '92%', padding: 0, overflow: 'hidden', borderRadius: '28px' }}
+              style={{ maxWidth: '580px', width: '92%', padding: 0, overflow: 'hidden', borderRadius: '28px' }}
             >
               <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '28px 28px 24px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <div style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.75, marginBottom: '4px' }}>Chapter Editor</div>
                   <h3 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900 }}>{editingChapter.mode === 'add' ? 'New Chapter' : 'Edit Chapter'}</h3>
                 </div>
-                <button onClick={() => setEditingChapter(null)} style={{ background: 'rgba(255,255,255,0.18)', border: 'none', borderRadius: '50%', width: '34px', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
+                <button type="button" onClick={closeEditingChapterModal} style={{ background: 'rgba(255,255,255,0.18)', border: 'none', borderRadius: '50%', width: '34px', height: '34px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff' }}>
                   <X size={18} />
                 </button>
               </div>
               <form onSubmit={handleSaveChapter} style={{ padding: '28px', display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Chapter Title</label>
-                  <input required className="app-input" value={editingChapter.chapter.title} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, title: e.target.value } })} placeholder="e.g. Calculus: Differentiation" style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Chapter Title</label>
+                    <input required className="app-input" value={editingChapter.chapter.title} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, title: e.target.value } })} placeholder="e.g. Calculus: Differentiation" style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Number of Modules</label>
+                    <input required type="number" className="app-input" value={editingChapter.chapter.modules} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, modules: parseInt(e.target.value) } })} style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
+                  </div>
                 </div>
-                <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Number of Modules</label>
-                  <input required type="number" className="app-input" value={editingChapter.chapter.modules} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, modules: parseInt(e.target.value) } })} style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
+
+                <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '18px', marginTop: '4px' }}>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
+                    Subtopics ({editingChapter.chapter.topics?.length || 0})
+                  </label>
+                  
+                  {/* Scrollable Subtopics List */}
+                  {(editingChapter.chapter.topics && editingChapter.chapter.topics.length > 0) ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '180px', overflowY: 'auto', marginBottom: '14px', paddingRight: '4px' }}>
+                      {editingChapter.chapter.topics.map((sub, index) => (
+                        <div key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
+                            <span style={{ background: '#e0e7ff', color: '#4f46e5', fontWeight: 800, fontSize: '0.75rem', padding: '2px 8px', borderRadius: '6px' }}>
+                              {sub.code}
+                            </span>
+                            <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#334155', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              {sub.title}
+                            </span>
+                            {sub.page && (
+                              <span style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 500 }}>
+                                (p. {sub.page})
+                              </span>
+                            )}
+                          </div>
+                          <div style={{ display: 'flex', gap: '4px' }}>
+                            <button type="button" onClick={() => handleEditSubtopicClick(index, sub)} style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                              <Edit2 size={13} />
+                            </button>
+                            <button type="button" onClick={() => handleDeleteSubtopic(index)} style={{ background: 'none', border: 'none', color: '#ef4444', cursor: 'pointer', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                              <Trash2 size={13} />
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div style={{ padding: '14px', background: '#f8fafc', borderRadius: '12px', border: '1px dashed #cbd5e1', textAlign: 'center', color: '#94a3b8', fontSize: '0.85rem', marginBottom: '14px' }}>
+                      No subtopics added yet.
+                    </div>
+                  )}
+
+                  {/* Inline Add/Edit Subtopic Form */}
+                  <div style={{ background: '#f1f5f9', padding: '12px', borderRadius: '16px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    <div style={{ fontSize: '10px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      {editingSubtopicIndex >= 0 ? 'Edit Subtopic' : 'Add New Subtopic'}
+                    </div>
+                    <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                      <input 
+                        placeholder="Code" 
+                        value={subtopicForm.code} 
+                        onChange={e => setSubtopicForm({ ...subtopicForm, code: e.target.value })} 
+                        style={{ width: '65px', padding: '8px 10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff', fontSize: '0.85rem', fontWeight: 700, color: '#334155' }} 
+                      />
+                      <input 
+                        placeholder="Subtopic Title" 
+                        value={subtopicForm.title} 
+                        onChange={e => setSubtopicForm({ ...subtopicForm, title: e.target.value })} 
+                        style={{ flex: 1, padding: '8px 10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff', fontSize: '0.85rem', fontWeight: 500, color: '#334155' }} 
+                      />
+                      <input 
+                        type="number" 
+                        placeholder="Page" 
+                        value={subtopicForm.page} 
+                        onChange={e => setSubtopicForm({ ...subtopicForm, page: e.target.value })} 
+                        style={{ width: '55px', padding: '8px 10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff', fontSize: '0.85rem', fontWeight: 500, color: '#334155' }} 
+                      />
+                      <button 
+                        type="button" 
+                        onClick={handleAddOrUpdateSubtopic} 
+                        style={{ 
+                          padding: '8px 12px', 
+                          background: editingSubtopicIndex >= 0 ? '#10b981' : '#6366f1', 
+                          color: '#fff', 
+                          border: 'none', 
+                          borderRadius: '8px', 
+                          cursor: 'pointer', 
+                          fontWeight: 700, 
+                          fontSize: '0.8rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px'
+                        }}
+                      >
+                        {editingSubtopicIndex >= 0 ? 'Save' : <Plus size={14} />}
+                      </button>
+                      {editingSubtopicIndex >= 0 && (
+                        <button 
+                          type="button" 
+                          onClick={() => { setEditingSubtopicIndex(-1); setSubtopicForm({ code: '', title: '', page: '' }); }} 
+                          style={{ padding: '8px 10px', background: '#cbd5e1', color: '#475569', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.8rem' }}
+                        >
+                          Cancel
+                        </button>
+                      )}
+                    </div>
+                  </div>
                 </div>
+
                 <button type="submit" className="app-button app-button--primary" style={{ width: '100%', padding: '14px', borderRadius: '14px', fontWeight: 800, fontSize: '0.95rem', marginTop: '4px' }}>
                   <Save size={16} /> Save Chapter
                 </button>
