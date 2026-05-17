@@ -521,10 +521,19 @@ function App() {
   const hasProfile = Boolean(profile);
   const handleRefreshStudents = useCallback(async (silent = false, forceRefresh = false) => {
     // 1. Guard: Wait for both auth user and Firestore profile to be certain of isAdmin status
-    if (!user || !profileLoaded) return;
+    if (!user || !profileLoaded) {
+      // Profile not yet loaded — clear the initial loading spinner to avoid getting stuck
+      setLoading(false);
+      return;
+    }
 
-    // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches
-    if (!hasProfile && !isAdmin) return;
+    // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches.
+    // FIX: Must call setLoading(false) here too, because loading starts as true on mount.
+    // Without this, new students who haven't finished signup see an infinite loading spinner.
+    if (!hasProfile && !isAdmin) {
+      setLoading(false);
+      return;
+    }
 
     // Show the full-page loading spinner only on non-silent calls.
     // Silent calls (background refreshes after quiz etc.) skip the spinner
