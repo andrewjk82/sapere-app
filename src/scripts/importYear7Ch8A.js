@@ -13,7 +13,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Read the scale shown on the ruler below. What is the measurement indicated by the red arrow in centimetres?<br><svg width=\"340\" height=\"100\" viewBox=\"0 0 340 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Ruler body -->\n    <rect x=\"15\" y=\"30\" width=\"310\" height=\"50\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"28\" y=\"47\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">cm</text>\n    <text x=\"25\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">0</text><line x1=\"25\" y1=\"30\" x2=\"25\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"28.5\" y1=\"30\" x2=\"28.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"35.5\" y1=\"30\" x2=\"35.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"39\" y1=\"30\" x2=\"39\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"42.5\" y1=\"30\" x2=\"42.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"46\" y1=\"30\" x2=\"46\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"49.5\" y1=\"30\" x2=\"49.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"53\" y1=\"30\" x2=\"53\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"56.5\" y1=\"30\" x2=\"56.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"60\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">1</text><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"63.5\" y1=\"30\" x2=\"63.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"67\" y1=\"30\" x2=\"67\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"70.5\" y1=\"30\" x2=\"70.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"74\" y1=\"30\" x2=\"74\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"77.5\" y1=\"30\" x2=\"77.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"81\" y1=\"30\" x2=\"81\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"84.5\" y1=\"30\" x2=\"84.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"91.5\" y1=\"30\" x2=\"91.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"95\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">2</text><line x1=\"95\" y1=\"30\" x2=\"95\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"98.5\" y1=\"30\" x2=\"98.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"102\" y1=\"30\" x2=\"102\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"105.5\" y1=\"30\" x2=\"105.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"109\" y1=\"30\" x2=\"109\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"112.5\" y1=\"30\" x2=\"112.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"116\" y1=\"30\" x2=\"116\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"119.5\" y1=\"30\" x2=\"119.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"123\" y1=\"30\" x2=\"123\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"126.5\" y1=\"30\" x2=\"126.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"130\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">3</text><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"133.5\" y1=\"30\" x2=\"133.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"137\" y1=\"30\" x2=\"137\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"140.5\" y1=\"30\" x2=\"140.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"144\" y1=\"30\" x2=\"144\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"147.5\" y1=\"30\" x2=\"147.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"151\" y1=\"30\" x2=\"151\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"154.5\" y1=\"30\" x2=\"154.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"158\" y1=\"30\" x2=\"158\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"161.5\" y1=\"30\" x2=\"161.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"165\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">4</text><line x1=\"165\" y1=\"30\" x2=\"165\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"168.5\" y1=\"30\" x2=\"168.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"172\" y1=\"30\" x2=\"172\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"175.5\" y1=\"30\" x2=\"175.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"179\" y1=\"30\" x2=\"179\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"186\" y1=\"30\" x2=\"186\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"189.5\" y1=\"30\" x2=\"189.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"193\" y1=\"30\" x2=\"193\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"196.5\" y1=\"30\" x2=\"196.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"200\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">5</text><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"203.5\" y1=\"30\" x2=\"203.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"207\" y1=\"30\" x2=\"207\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"210.5\" y1=\"30\" x2=\"210.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"214\" y1=\"30\" x2=\"214\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"217.5\" y1=\"30\" x2=\"217.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"221\" y1=\"30\" x2=\"221\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"224.5\" y1=\"30\" x2=\"224.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"228\" y1=\"30\" x2=\"228\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"231.5\" y1=\"30\" x2=\"231.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"235\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">6</text><line x1=\"235\" y1=\"30\" x2=\"235\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"238.5\" y1=\"30\" x2=\"238.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"242\" y1=\"30\" x2=\"242\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"245.5\" y1=\"30\" x2=\"245.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"249\" y1=\"30\" x2=\"249\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"252.5\" y1=\"30\" x2=\"252.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"256\" y1=\"30\" x2=\"256\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"259.5\" y1=\"30\" x2=\"259.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"263\" y1=\"30\" x2=\"263\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"266.5\" y1=\"30\" x2=\"266.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"270\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">7</text><line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"273.5\" y1=\"30\" x2=\"273.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"277\" y1=\"30\" x2=\"277\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"280.5\" y1=\"30\" x2=\"280.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"287.5\" y1=\"30\" x2=\"287.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"291\" y1=\"30\" x2=\"291\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"294.5\" y1=\"30\" x2=\"294.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"298\" y1=\"30\" x2=\"298\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"301.5\" y1=\"30\" x2=\"301.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"305\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">8</text><line x1=\"305\" y1=\"30\" x2=\"305\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <!-- Indicator Arrow -->\n    <path d=\"M 214 5 L 209 17 L 219 17 Z\" fill=\"#ef4444\"/>\n    <line x1=\"214\" y1=\"5\" x2=\"214\" y2=\"28\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"2,2\"/>\n  </svg>",
+    "question": "Read the scale shown on the ruler below. What is the measurement indicated by the red arrow in centimetres?<br><svg width=\"340\" height=\"100\" viewBox=\"0 0 340 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <rect x=\"15\" y=\"30\" width=\"310\" height=\"50\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"28\" y=\"47\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">cm</text>\n    <text x=\"25\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">0</text><line x1=\"25\" y1=\"30\" x2=\"25\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"28.5\" y1=\"30\" x2=\"28.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"35.5\" y1=\"30\" x2=\"35.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"39\" y1=\"30\" x2=\"39\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"42.5\" y1=\"30\" x2=\"42.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"46\" y1=\"30\" x2=\"46\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"49.5\" y1=\"30\" x2=\"49.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"53\" y1=\"30\" x2=\"53\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"56.5\" y1=\"30\" x2=\"56.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"60\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">1</text><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"63.5\" y1=\"30\" x2=\"63.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"67\" y1=\"30\" x2=\"67\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"70.5\" y1=\"30\" x2=\"70.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"74\" y1=\"30\" x2=\"74\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"77.5\" y1=\"30\" x2=\"77.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"81\" y1=\"30\" x2=\"81\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"84.5\" y1=\"30\" x2=\"84.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"91.5\" y1=\"30\" x2=\"91.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"95\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">2</text><line x1=\"95\" y1=\"30\" x2=\"95\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"98.5\" y1=\"30\" x2=\"98.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"102\" y1=\"30\" x2=\"102\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"105.5\" y1=\"30\" x2=\"105.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"109\" y1=\"30\" x2=\"109\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"112.5\" y1=\"30\" x2=\"112.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"116\" y1=\"30\" x2=\"116\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"119.5\" y1=\"30\" x2=\"119.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"123\" y1=\"30\" x2=\"123\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"126.5\" y1=\"30\" x2=\"126.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"130\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">3</text><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"133.5\" y1=\"30\" x2=\"133.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"137\" y1=\"30\" x2=\"137\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"140.5\" y1=\"30\" x2=\"140.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"144\" y1=\"30\" x2=\"144\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"147.5\" y1=\"30\" x2=\"147.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"151\" y1=\"30\" x2=\"151\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"154.5\" y1=\"30\" x2=\"154.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"158\" y1=\"30\" x2=\"158\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"161.5\" y1=\"30\" x2=\"161.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"165\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">4</text><line x1=\"165\" y1=\"30\" x2=\"165\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"168.5\" y1=\"30\" x2=\"168.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"172\" y1=\"30\" x2=\"172\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"175.5\" y1=\"30\" x2=\"175.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"179\" y1=\"30\" x2=\"179\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"186\" y1=\"30\" x2=\"186\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"189.5\" y1=\"30\" x2=\"189.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"193\" y1=\"30\" x2=\"193\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"196.5\" y1=\"30\" x2=\"196.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"200\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">5</text><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"203.5\" y1=\"30\" x2=\"203.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"207\" y1=\"30\" x2=\"207\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"210.5\" y1=\"30\" x2=\"210.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"214\" y1=\"30\" x2=\"214\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"217.5\" y1=\"30\" x2=\"217.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"221\" y1=\"30\" x2=\"221\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"224.5\" y1=\"30\" x2=\"224.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"228\" y1=\"30\" x2=\"228\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"231.5\" y1=\"30\" x2=\"231.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"235\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">6</text><line x1=\"235\" y1=\"30\" x2=\"235\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"238.5\" y1=\"30\" x2=\"238.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"242\" y1=\"30\" x2=\"242\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"245.5\" y1=\"30\" x2=\"245.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"249\" y1=\"30\" x2=\"249\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"252.5\" y1=\"30\" x2=\"252.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"256\" y1=\"30\" x2=\"256\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"259.5\" y1=\"30\" x2=\"259.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"263\" y1=\"30\" x2=\"263\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"266.5\" y1=\"30\" x2=\"266.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"270\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">7</text><line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"273.5\" y1=\"30\" x2=\"273.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"277\" y1=\"30\" x2=\"277\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"280.5\" y1=\"30\" x2=\"280.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"287.5\" y1=\"30\" x2=\"287.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"291\" y1=\"30\" x2=\"291\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"294.5\" y1=\"30\" x2=\"294.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"298\" y1=\"30\" x2=\"298\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"301.5\" y1=\"30\" x2=\"301.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"305\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">8</text><line x1=\"305\" y1=\"30\" x2=\"305\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <path d=\"M 214 5 L 209 17 L 219 17 Z\" fill=\"#ef4444\"/>\n    <line x1=\"214\" y1=\"5\" x2=\"214\" y2=\"28\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"2,2\"/>\n  </svg>",
     "options": [
       "5.4 cm",
       "5.2 cm",
@@ -21,8 +21,8 @@ export const allQuestions = [
       "6.4 cm"
     ],
     "answer": 0,
-    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Identify the main number before the arrow. The arrow is between the $5$ and $6$ cm marks.</p>\n    <p><strong>Step 2:</strong> Count the minor ticks (millimetres) after the $5$ cm mark. The arrow points precisely to the $4\text{th}$ tick.</p>\n    <p><strong>Step 3:</strong> Since each minor tick represents $0.1\text{ cm}$, the reading is: <br>$5 + (4 \\times 0.1) = 5.4\text{ cm}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.821Z"
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Identify the main number before the arrow. The arrow is between the $5$ and $6$ cm marks.</p>\n    <p><strong>Step 2:</strong> Count the minor ticks (millimetres) after the $5$ cm mark. The arrow points precisely to the $4\\text{th}$ tick.</p>\n    <p><strong>Step 3:</strong> Since each minor tick represents $0.1\\text{ cm}$, the reading is: <br>$5 + (4 \\times 0.1) = 5.4\\text{ cm}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.656Z"
   },
   {
     "chapterId": "y7-8",
@@ -35,7 +35,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Read the volume level indicated by the red arrow on the measuring beaker below.<br><svg width=\"220\" height=\"150\" viewBox=\"0 0 220 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Water liquid fill (15 mL) -->\n    <path d=\"M 85 75 L 155 75 L 145 130 L 95 130 Z\" fill=\"#bae6fd\" opacity=\"0.8\"/>\n    <!-- Glass Beaker Outline -->\n    <path d=\"M 80 20 L 80 25 L 85 25 L 95 130 C 95 133, 100 135, 120 135 C 140 135, 145 133, 145 130 L 155 25 L 160 25 L 160 20 Z\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <text x=\"120\" y=\"145\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">mL</text>\n    <line x1=\"160\" y1=\"105\" x2=\"175\" y2=\"105\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"109\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">5</text><line x1=\"160\" y1=\"90\" x2=\"175\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"94\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">10</text><line x1=\"160\" y1=\"75\" x2=\"175\" y2=\"75\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"79\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">15</text><line x1=\"160\" y1=\"60\" x2=\"175\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"64\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">20</text><line x1=\"160\" y1=\"45\" x2=\"175\" y2=\"45\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"49\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">25</text><line x1=\"160\" y1=\"30\" x2=\"175\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"34\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">30</text>\n    <!-- Liquid Surface Highlight -->\n    <ellipse cx=\"120\" cy=\"75\" rx=\"33\" ry=\"4\" fill=\"#7dd3fc\" opacity=\"0.6\"/>\n    <!-- Red Indicator Arrow -->\n    <path d=\"M 60 75 L 72 71 L 72 79 Z\" fill=\"#ef4444\"/>\n    <line x1=\"45\" y1=\"75\" x2=\"65\" y2=\"75\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
+    "question": "Read the volume level indicated by the red arrow on the measuring beaker below.<br><svg width=\"220\" height=\"150\" viewBox=\"0 0 220 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <path d=\"M 85 75 L 155 75 L 145 130 L 95 130 Z\" fill=\"#bae6fd\" opacity=\"0.8\"/>\n    <path d=\"M 80 20 L 80 25 L 85 25 L 95 130 C 95 133, 100 135, 120 135 C 140 135, 145 133, 145 130 L 155 25 L 160 25 L 160 20 Z\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <text x=\"120\" y=\"145\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">mL</text>\n    <line x1=\"160\" y1=\"105\" x2=\"175\" y2=\"105\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"109\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">5</text><line x1=\"160\" y1=\"90\" x2=\"175\" y2=\"90\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"94\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">10</text><line x1=\"160\" y1=\"75\" x2=\"175\" y2=\"75\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"79\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">15</text><line x1=\"160\" y1=\"60\" x2=\"175\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"64\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">20</text><line x1=\"160\" y1=\"45\" x2=\"175\" y2=\"45\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"49\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">25</text><line x1=\"160\" y1=\"30\" x2=\"175\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"34\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">30</text>\n    <ellipse cx=\"120\" cy=\"75\" rx=\"33\" ry=\"4\" fill=\"#7dd3fc\" opacity=\"0.6\"/>\n    <path d=\"M 60 75 L 72 71 L 72 79 Z\" fill=\"#ef4444\"/>\n    <line x1=\"45\" y1=\"75\" x2=\"65\" y2=\"75\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
     "options": [
       "15 mL",
       "10 mL",
@@ -43,8 +43,8 @@ export const allQuestions = [
       "5 mL"
     ],
     "answer": 0,
-    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Locate the position of the liquid level and the red arrow pointing to the scale.</p>\n    <p><strong>Step 2:</strong> The arrow points directly at the mark labeled <strong>15</strong>.</p>\n    <p><strong>Step 3:</strong> The unit at the bottom of the beaker is <strong>mL</strong>, so the reading is $15\text{ mL}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.822Z"
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Locate the position of the liquid level and the red arrow pointing to the scale.</p>\n    <p><strong>Step 2:</strong> The arrow points directly at the mark labeled <strong>15</strong>.</p>\n    <p><strong>Step 3:</strong> The unit at the bottom of the beaker is <strong>mL</strong>, so the reading is $15\\text{ mL}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -57,7 +57,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Read the weight indicated on the weighing scale dial below. What is the value shown in kilograms?<br><svg width=\"300\" height=\"170\" viewBox=\"0 0 300 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Scale Outer Housing -->\n    <path d=\"M 50 150 L 80 40 C 90 20, 210 20, 220 40 L 250 150 Z\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n    <!-- Dial face -->\n    <circle cx=\"150\" cy=\"130\" r=\"70\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <circle cx=\"150\" cy=\"130\" r=\"3\" fill=\"#1e293b\"/>\n    <!-- Core Markings -->\n    <!-- 40 kg -->\n    <line x1=\"100\" y1=\"80\" x2=\"108\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <text x=\"92\" y=\"78\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">40</text>\n    <!-- 50 kg -->\n    <line x1=\"150\" y1=\"60\" x2=\"150\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <text x=\"150\" y=\"52\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">50</text>\n    <!-- 60 kg -->\n    <line x1=\"200\" y1=\"80\" x2=\"192\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <text x=\"210\" y=\"78\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">60</text>\n    <!-- Unit label -->\n    <text x=\"150\" y=\"110\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">kg</text>\n    <!-- Red Needle pointing to 53 kg -->\n    <line x1=\"150\" y1=\"130\" x2=\"221.3292387221365\" y2=\"106.82372542187895\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n    <circle cx=\"150\" cy=\"130\" r=\"6\" fill=\"#ef4444\"/>\n    <!-- Red Arrow Indicator pointing from top -->\n    <path d=\"M 150 10 L 150 22 L 146 17 M 150 22 L 154 17\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
+    "question": "Read the weight indicated on the weighing scale dial below. What is the value shown in kilograms?<br><svg width=\"300\" height=\"170\" viewBox=\"0 0 300 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <path d=\"M 50 150 L 80 40 C 90 20, 210 20, 220 40 L 250 150 Z\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n    <circle cx=\"150\" cy=\"130\" r=\"70\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <circle cx=\"150\" cy=\"130\" r=\"3\" fill=\"#1e293b\"/>\n    <line x1=\"100\" y1=\"80\" x2=\"108\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <text x=\"92\" y=\"78\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">40</text>\n    <line x1=\"150\" y1=\"60\" x2=\"150\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <text x=\"150\" y=\"52\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">50</text>\n    <line x1=\"200\" y1=\"80\" x2=\"192\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <text x=\"210\" y=\"78\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">60</text>\n    <text x=\"150\" y=\"110\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">kg</text>\n    <line x1=\"150\" y1=\"130\" x2=\"221.3292387221365\" y2=\"106.82372542187895\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n    <circle cx=\"150\" cy=\"130\" r=\"6\" fill=\"#ef4444\"/>\n    <path d=\"M 150 10 L 150 22 L 146 17 M 150 22 L 154 17\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
     "options": [
       "53 kg",
       "55 kg",
@@ -65,8 +65,8 @@ export const allQuestions = [
       "63 kg"
     ],
     "answer": 0,
-    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Identify the major markings around the dial: $40$, $50$, $60$, $70$ kg.</p>\n    <p><strong>Step 2:</strong> Notice that the needle has passed $50$ but has not reached $60$ yet.</p>\n    <p><strong>Step 3:</strong> Count the small division ticks between $50$ and $60$. The needle is resting exactly on the $3\text{rd}$ division tick past $50$. Therefore, the reading is $53\text{ kg}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.823Z"
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Identify the major markings around the dial: $40$, $50$, $60$, $70$ kg.</p>\n    <p><strong>Step 2:</strong> Notice that the needle has passed $50$ but has not reached $60$ yet.</p>\n    <p><strong>Step 3:</strong> Count the small division ticks between $50$ and $60$. The needle is resting exactly on the $3\\text{rd}$ division tick past $50$. Therefore, the reading is $53\\text{ kg}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -79,7 +79,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Read the measurement indicated by the red arrow on the ruler below. What is the reading in centimetres?<br><svg width=\"340\" height=\"100\" viewBox=\"0 0 340 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Ruler body -->\n    <rect x=\"15\" y=\"30\" width=\"310\" height=\"50\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"28\" y=\"47\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">cm</text>\n    <text x=\"25\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">21</text><line x1=\"25\" y1=\"30\" x2=\"25\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"39\" y1=\"30\" x2=\"39\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"46\" y1=\"30\" x2=\"46\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"53\" y1=\"30\" x2=\"53\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"67\" y1=\"30\" x2=\"67\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"74\" y1=\"30\" x2=\"74\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"81\" y1=\"30\" x2=\"81\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"95\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">22</text><line x1=\"95\" y1=\"30\" x2=\"95\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"102\" y1=\"30\" x2=\"102\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"109\" y1=\"30\" x2=\"109\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"116\" y1=\"30\" x2=\"116\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"123\" y1=\"30\" x2=\"123\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"137\" y1=\"30\" x2=\"137\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"144\" y1=\"30\" x2=\"144\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"151\" y1=\"30\" x2=\"151\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"158\" y1=\"30\" x2=\"158\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"165\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">23</text><line x1=\"165\" y1=\"30\" x2=\"165\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"172\" y1=\"30\" x2=\"172\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"179\" y1=\"30\" x2=\"179\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"186\" y1=\"30\" x2=\"186\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"193\" y1=\"30\" x2=\"193\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"207\" y1=\"30\" x2=\"207\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"214\" y1=\"30\" x2=\"214\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"221\" y1=\"30\" x2=\"221\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"228\" y1=\"30\" x2=\"228\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"235\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">24</text><line x1=\"235\" y1=\"30\" x2=\"235\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"242\" y1=\"30\" x2=\"242\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"249\" y1=\"30\" x2=\"249\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"256\" y1=\"30\" x2=\"256\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"263\" y1=\"30\" x2=\"263\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"277\" y1=\"30\" x2=\"277\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"291\" y1=\"30\" x2=\"291\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"298\" y1=\"30\" x2=\"298\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"305\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">25</text><line x1=\"305\" y1=\"30\" x2=\"305\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <!-- Indicator Arrow -->\n    <path d=\"M 207 5 L 202 17 L 212 17 Z\" fill=\"#ef4444\"/>\n    <line x1=\"207\" y1=\"5\" x2=\"207\" y2=\"28\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"2,2\"/>\n  </svg>",
+    "question": "Read the measurement indicated by the red arrow on the ruler below. What is the reading in centimetres?<br><svg width=\"340\" height=\"100\" viewBox=\"0 0 340 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <rect x=\"15\" y=\"30\" width=\"310\" height=\"50\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"28\" y=\"47\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">cm</text>\n    <text x=\"25\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">21</text><line x1=\"25\" y1=\"30\" x2=\"25\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"39\" y1=\"30\" x2=\"39\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"46\" y1=\"30\" x2=\"46\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"53\" y1=\"30\" x2=\"53\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"67\" y1=\"30\" x2=\"67\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"74\" y1=\"30\" x2=\"74\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"81\" y1=\"30\" x2=\"81\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"95\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">22</text><line x1=\"95\" y1=\"30\" x2=\"95\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"102\" y1=\"30\" x2=\"102\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"109\" y1=\"30\" x2=\"109\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"116\" y1=\"30\" x2=\"116\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"123\" y1=\"30\" x2=\"123\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"137\" y1=\"30\" x2=\"137\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"144\" y1=\"30\" x2=\"144\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"151\" y1=\"30\" x2=\"151\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"158\" y1=\"30\" x2=\"158\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"165\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">23</text><line x1=\"165\" y1=\"30\" x2=\"165\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"172\" y1=\"30\" x2=\"172\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"179\" y1=\"30\" x2=\"179\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"186\" y1=\"30\" x2=\"186\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"193\" y1=\"30\" x2=\"193\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"207\" y1=\"30\" x2=\"207\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"214\" y1=\"30\" x2=\"214\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"221\" y1=\"30\" x2=\"221\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"228\" y1=\"30\" x2=\"228\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"235\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">24</text><line x1=\"235\" y1=\"30\" x2=\"235\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"242\" y1=\"30\" x2=\"242\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"249\" y1=\"30\" x2=\"249\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"256\" y1=\"30\" x2=\"256\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"263\" y1=\"30\" x2=\"263\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"277\" y1=\"30\" x2=\"277\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"291\" y1=\"30\" x2=\"291\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"298\" y1=\"30\" x2=\"298\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"305\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"600\" font-family=\"'Outfit'\">25</text><line x1=\"305\" y1=\"30\" x2=\"305\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <path d=\"M 207 5 L 202 17 L 212 17 Z\" fill=\"#ef4444\"/>\n    <line x1=\"207\" y1=\"5\" x2=\"207\" y2=\"28\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"2,2\"/>\n  </svg>",
     "options": [
       "23.6 cm",
       "23.3 cm",
@@ -87,8 +87,8 @@ export const allQuestions = [
       "23.9 cm"
     ],
     "answer": 0,
-    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Look at the main number mark to the left of the arrow, which is $23$ cm.</p>\n    <p><strong>Step 2:</strong> Count the small ticks (millimetres) past $23$. The arrow points to the $6\text{th}$ division tick past $23$.</p>\n    <p><strong>Step 3:</strong> Since each tick is $0.1\text{ cm}$, the reading is: <br>$23 + (6 \\times 0.1) = 23.6\text{ cm}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.823Z"
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Look at the main number mark to the left of the arrow, which is $23$ cm.</p>\n    <p><strong>Step 2:</strong> Count the small ticks (millimetres) past $23$. The arrow points to the $6\\text{th}$ division tick past $23$.</p>\n    <p><strong>Step 3:</strong> Since each tick is $0.1\\text{ cm}$, the reading is: <br>$23 + (6 \\times 0.1) = 23.6\\text{ cm}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -101,7 +101,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Read the measurement on the food scale dial below. What is the reading in grams?<br><svg width=\"300\" height=\"170\" viewBox=\"0 0 300 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Scale Outer Body -->\n    <rect x=\"60\" y=\"30\" width=\"180\" height=\"120\" rx=\"10\" fill=\"#f97316\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n    <rect x=\"70\" y=\"20\" width=\"160\" height=\"10\" rx=\"2\" fill=\"#94a3b8\"/>\n    <!-- Dial face -->\n    <circle cx=\"150\" cy=\"120\" r=\"50\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <circle cx=\"150\" cy=\"120\" r=\"3\" fill=\"#1e293b\"/>\n    <!-- Core Markings -->\n    <!-- 200 g -->\n    <line x1=\"115\" y1=\"85\" x2=\"122\" y2=\"92\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"108\" y=\"78\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">200</text>\n    <!-- 300 g -->\n    <line x1=\"150\" y1=\"70\" x2=\"150\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"150\" y=\"62\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">300</text>\n    <!-- 400 g -->\n    <line x1=\"185\" y1=\"85\" x2=\"178\" y2=\"92\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"192\" y=\"78\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">400</text>\n    <!-- Unit label -->\n    <text x=\"150\" y=\"105\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"8\" font-weight=\"bold\" font-family=\"'Outfit'\">grams</text>\n    <!-- Red Needle pointing to 340 g -->\n    <line x1=\"150\" y1=\"120\" x2=\"204.32285873273258\" y2=\"111.3961044227873\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <circle cx=\"150\" cy=\"120\" r=\"4\" fill=\"#ef4444\"/>\n    <!-- Red Arrow Indicator pointing to dial -->\n    <path d=\"M 150 15 L 150 25 L 147 21 M 150 25 L 153 21\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  </svg>",
+    "question": "Read the measurement on the food scale dial below. What is the reading in grams?<br><svg width=\"300\" height=\"170\" viewBox=\"0 0 300 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <rect x=\"60\" y=\"30\" width=\"180\" height=\"120\" rx=\"10\" fill=\"#f97316\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n    <rect x=\"70\" y=\"20\" width=\"160\" height=\"10\" rx=\"2\" fill=\"#94a3b8\"/>\n    <circle cx=\"150\" cy=\"120\" r=\"50\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <circle cx=\"150\" cy=\"120\" r=\"3\" fill=\"#1e293b\"/>\n    <line x1=\"115\" y1=\"85\" x2=\"122\" y2=\"92\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"108\" y=\"78\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">200</text>\n    <line x1=\"150\" y1=\"70\" x2=\"150\" y2=\"78\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"150\" y=\"62\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">300</text>\n    <line x1=\"185\" y1=\"85\" x2=\"178\" y2=\"92\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"192\" y=\"78\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">400</text>\n    <text x=\"150\" y=\"105\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"8\" font-weight=\"bold\" font-family=\"'Outfit'\">grams</text>\n    <line x1=\"150\" y1=\"120\" x2=\"204.32285873273258\" y2=\"111.3961044227873\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <circle cx=\"150\" cy=\"120\" r=\"4\" fill=\"#ef4444\"/>\n    <path d=\"M 150 15 L 150 25 L 147 21 M 150 25 L 153 21\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  </svg>",
     "options": [
       "340 g",
       "320 g",
@@ -109,8 +109,8 @@ export const allQuestions = [
       "400 g"
     ],
     "answer": 0,
-    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Identify the dial markings: $200$, $300$, $400$ grams.</p>\n    <p><strong>Step 2:</strong> The needle is between $300$ and $400$ grams.</p>\n    <p><strong>Step 3:</strong> The scale has division ticks every $10\text{ g}$. The needle points to the $4\text{th}$ mark past $300$. Thus, the weight is: <br>$300 + 40 = 340\text{ g}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.823Z"
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Identify the dial markings: $200$, $300$, $400$ grams.</p>\n    <p><strong>Step 2:</strong> The needle is between $300$ and $400$ grams.</p>\n    <p><strong>Step 3:</strong> The scale has division ticks every $10\\text{ g}$. The needle points to the $4\\text{th}$ mark past $300$. Thus, the weight is: <br>$300 + 40 = 340\\text{ g}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -123,7 +123,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Read the volume level indicated by the red arrow on the beaker below.<br><svg width=\"220\" height=\"150\" viewBox=\"0 0 220 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Water liquid fill (350 mL) -->\n    <path d=\"M 85 57 L 155 57 L 145 130 L 95 130 Z\" fill=\"#bae6fd\" opacity=\"0.8\"/>\n    <!-- Glass Beaker Outline with Handle -->\n    <path d=\"M 155 40 H 175 V 100 H 148\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n    <path d=\"M 80 20 L 80 25 L 85 25 L 95 130 C 95 133, 100 135, 120 135 C 140 135, 145 133, 145 130 L 155 25 L 160 25 L 160 20 Z\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <text x=\"120\" y=\"145\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">mL</text>\n    <line x1=\"160\" y1=\"102\" x2=\"175\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"106\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">100</text><line x1=\"160\" y1=\"84\" x2=\"175\" y2=\"84\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"88\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">200</text><line x1=\"160\" y1=\"66\" x2=\"175\" y2=\"66\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"70\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">300</text><line x1=\"160\" y1=\"48\" x2=\"175\" y2=\"48\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"52\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">400</text><line x1=\"160\" y1=\"30\" x2=\"175\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"34\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">500</text>\n    <!-- Liquid Surface Highlight -->\n    <ellipse cx=\"120\" cy=\"57\" rx=\"33\" ry=\"4\" fill=\"#7dd3fc\" opacity=\"0.6\"/>\n    <!-- Red Indicator Arrow -->\n    <path d=\"M 60 57 L 72 53 L 72 61 Z\" fill=\"#ef4444\"/>\n    <line x1=\"45\" y1=\"57\" x2=\"65\" y2=\"57\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
+    "question": "Read the volume level indicated by the red arrow on the beaker below.<br><svg width=\"220\" height=\"150\" viewBox=\"0 0 220 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <path d=\"M 85 57 L 155 57 L 145 130 L 95 130 Z\" fill=\"#bae6fd\" opacity=\"0.8\"/>\n    <path d=\"M 155 40 H 175 V 100 H 148\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n    <path d=\"M 80 20 L 80 25 L 85 25 L 95 130 C 95 133, 100 135, 120 135 C 140 135, 145 133, 145 130 L 155 25 L 160 25 L 160 20 Z\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <text x=\"120\" y=\"145\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">mL</text>\n    <line x1=\"160\" y1=\"102\" x2=\"175\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"106\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">100</text><line x1=\"160\" y1=\"84\" x2=\"175\" y2=\"84\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"88\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">200</text><line x1=\"160\" y1=\"66\" x2=\"175\" y2=\"66\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"70\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">300</text><line x1=\"160\" y1=\"48\" x2=\"175\" y2=\"48\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"52\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">400</text><line x1=\"160\" y1=\"30\" x2=\"175\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"34\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">500</text>\n    <ellipse cx=\"120\" cy=\"57\" rx=\"33\" ry=\"4\" fill=\"#7dd3fc\" opacity=\"0.6\"/>\n    <path d=\"M 60 57 L 72 53 L 72 61 Z\" fill=\"#ef4444\"/>\n    <line x1=\"45\" y1=\"57\" x2=\"65\" y2=\"57\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
     "options": [
       "350 mL",
       "300 mL",
@@ -131,8 +131,8 @@ export const allQuestions = [
       "450 mL"
     ],
     "answer": 0,
-    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Check the main scale values which go up by $100\text{ mL}$ ($100$, $200$, $300$, $400$, $500$).</p>\n    <p><strong>Step 2:</strong> The arrow points halfway between $300$ and $400\text{ mL}$.</p>\n    <p><strong>Step 3:</strong> The value exactly halfway between $300$ and $400$ is $350\text{ mL}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Check the main scale values which go up by $100\\text{ mL}$ ($100$, $200$, $300$, $400$, $500$).</p>\n    <p><strong>Step 2:</strong> The arrow points halfway between $300$ and $400\\text{ mL}$.</p>\n    <p><strong>Step 3:</strong> The value exactly halfway between $300$ and $400$ is $350\\text{ mL}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -154,7 +154,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ cm} = 10\\text{ mm}$, we multiply by $10$:<br>$8 \\times 10 = 80\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -176,7 +176,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ cm} = 10\\text{ mm}$, we divide by $10$:<br>$240 \\div 10 = 24\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -198,7 +198,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $10$ to convert from cm to mm:<br>$27 \\times 10 = 270\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -220,7 +220,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $10$ to convert from cm to mm:<br>$5.9 \\times 10 = 59\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -242,7 +242,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide by $10$ to convert from mm to cm:<br>$38 \\div 10 = 3.8\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -264,7 +264,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide by $10$ to convert from mm to cm:<br>$714 \\div 10 = 71.4\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -286,7 +286,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ m} = 100\\text{ cm}$, we multiply by $100$:<br>$5 \\times 100 = 500\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -308,7 +308,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ m} = 100\\text{ cm}$, we multiply by $100$:<br>$2.4 \\times 100 = 240\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -330,7 +330,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ km} = 1000\\text{ m}$, we multiply by $1000$:<br>$4 \\times 1000 = 4000\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -352,7 +352,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>To convert km to cm, first convert to metres ($3 \\times 1000 = 3000\\text{ m}$), then to centimetres ($3000 \\times 100 = 300,000\\text{ cm}$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -374,7 +374,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert from km to m:<br>$7.28 \\times 1000 = 7280\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -396,7 +396,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First, divide by $10$ to convert mm to cm ($50000\\text{ cm}$). Next, divide by $100$ to convert cm to m ($500\\text{ m}$). Finally, divide by $1000$ to convert m to km ($500 \\div 1000 = 0.5\\text{ km}$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -418,7 +418,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First, divide by $100$ to convert cm to m ($80\\text{ m}$). Next, divide by $1000$ to convert m to km ($80 \\div 1000 = 0.08\\text{ km}$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -440,7 +440,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide by $1000$ to convert m to km:<br>$4356 \\div 1000 = 4.356\\text{ km}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -462,7 +462,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ km} = 1000\\text{ m}$, multiply by $1000$:<br>$\\frac{3}{4} \\times 1000 = 3 \\times 250 = 750\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -484,7 +484,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ m} = 100\\text{ cm}$, multiply by $100$:<br>$\\frac{3}{5} \\times 100 = 3 \\times 20 = 60\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -506,7 +506,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First convert m to mm ($1\\text{ m} = 1000\\text{ mm}$):<br>$\\frac{2}{5} \\times 1000 = 2 \\times 200 = 400\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -528,7 +528,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ cm} = 10\\text{ mm}$, multiply by $10$:<br>$\\frac{9}{10} \\times 10 = 9\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -550,7 +550,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $10$ to convert cm to mm:<br>$\\frac{3}{8} \\times 10 = \\frac{30}{8} = 3.75\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -572,7 +572,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $10$ to convert cm to mm:<br>$\\frac{5}{8} \\times 10 = \\frac{50}{8} = 6.25\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -594,7 +594,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert $4\\text{ mm}$ to cm ($4 \\div 10 = 0.4\\text{ cm}$), then add to $5\\text{ cm}$:<br>$5 + 0.4 = 5.4\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -616,7 +616,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert $7\\text{ cm}$ to mm ($7 \\times 10 = 70\\text{ mm}$), then add $3\\text{ mm}$:<br>$70 + 3 = 73\\text{ mm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -638,7 +638,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert $2\\text{ mm}$ to cm ($2 \\div 10 = 0.2\\text{ cm}$), then add to $9\\text{ cm}$:<br>$9 + 0.2 = 9.2\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -660,7 +660,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert $4\\text{ m}$ to cm ($4 \\times 100 = 400\\text{ cm}$), then add $78\\text{ cm}$:<br>$400 + 78 = 478\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -682,7 +682,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert $32\\text{ km}$ to m ($32 \\times 1000 = 32000\\text{ m}$), then add $600\\text{ m}$:<br>$32000 + 600 = 32,600\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -704,7 +704,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert $85\\text{ m}$ to km ($85 \\div 1000 = 0.085\\text{ km}$), then add to $27\\text{ km}$:<br>$27 + 0.085 = 27.085\\text{ km}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -726,7 +726,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ kg} = 1000\\text{ g}$, divide by $1000$:<br>$674 \\div 1000 = 0.674\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -748,7 +748,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert kg to g:<br>$4.8 \\times 1000 = 4800\\text{ g}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -770,7 +770,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ tonne (t)} = 1000\\text{ kg}$, multiply by $1000$:<br>$5.6 \\times 1000 = 5600\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -792,7 +792,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert kg to g:<br>$\\frac{3}{4} \\times 1000 = 3 \\times 250 = 750\\text{ g}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -814,7 +814,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert kg to g:<br>$28.6 \\times 1000 = 28600\\text{ g}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -836,7 +836,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ g} = 1000\\text{ mg}$, divide by $1000$:<br>$620 \\div 1000 = 0.62\\text{ g}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -858,7 +858,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide by $1000$ to convert mg to g:<br>$840 \\div 1000 = 0.84\\text{ g}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -880,7 +880,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert tonnes to kg:<br>$\\frac{3}{10} \\times 1000 = 300\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -902,7 +902,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$7\\text{ km} = 7 \\times 1000 = 7000\\text{ m}$. Adding $45\\text{ m}$ gives: $7000 + 45 = 7045\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -924,7 +924,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$12\\text{ km} = 12000\\text{ m}$. Adding $80\\text{ m}$ gives: $12000 + 80 = 12080\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.658Z"
   },
   {
     "chapterId": "y7-8",
@@ -946,7 +946,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$5\\text{ t} = 5 \\times 1000 = 5000\\text{ kg}$. Adding $60\\text{ kg}$ gives: $5000 + 60 = 5060\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -968,7 +968,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$18\\text{ t} = 18000\\text{ kg}$. Adding $90\\text{ kg}$ gives: $18000 + 90 = 18090\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -990,7 +990,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ L} = 1000\\text{ mL}$, divide by $1000$:<br>$600 \\div 1000 = 0.6\\text{ L}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1012,7 +1012,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert L to mL:<br>$2.4 \\times 1000 = 2400\\text{ mL}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1034,7 +1034,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide by $1000$ to convert mL to L:<br>$7005 \\div 1000 = 7.005\\text{ L}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1056,7 +1056,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ kL} = 1000\\text{ L}$, divide by $1000$:<br>$5824 \\div 1000 = 5.824\\text{ kL}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1078,7 +1078,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Convert the target distance from kilometres to metres:<br>$1.5\\text{ km} = 1.5 \\times 1000 = 1500\\text{ m}$.</p>\n    <p><strong>Step 2:</strong> Divide the total distance in metres by the length of one lap:<br>$\\text{Number of laps} = \\frac{1500\\text{ m}}{25\\text{ m}} = 60\\text{ laps}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1100,7 +1100,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Calculate the weight of the 4 small bags:<br>$4 \\times 250\\text{ g} = 1000\\text{ g} = 1\\text{ kg}$.</p>\n    <p><strong>Step 2:</strong> Calculate the weight of the 3 large bags:<br>$3 \\times 2\\text{ kg} = 6\\text{ kg} = 6000\\text{ g}$.</p>\n    <p><strong>Step 3:</strong> Sum the weights to find the total:<br>$\\text{In kilograms:} \\; 1\\text{ kg} + 6\\text{ kg} = 7\\text{ kg}$<br>$\\text{In grams:} \\; 1000\\text{ g} + 6000\\text{ g} = 7000\\text{ g}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1122,7 +1122,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Convert the total track distance to metres:<br>$2\\text{ km} = 2000\\text{ m}$.</p>\n    <p><strong>Step 2:</strong> Calculate the number of intervals between the markers:<br>$\\text{Intervals} = \\frac{2000\\text{ m}}{50\\text{ m}} = 40$.</p>\n    <p><strong>Step 3:</strong> Since there is a marker at both the starting and ending point, the number of markers is always $1$ more than the number of intervals:<br>$\\text{Total markers} = 40 + 1 = 41$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1144,7 +1144,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Convert all measurements to the same unit (metres):<br>Wall length $= 6\\text{ m}$<br>Whiteboard width $= 1.2\\text{ m}$.</p>\n    <p><strong>Step 2:</strong> Find the total leftover space on the wall by subtracting the whiteboard width from the total wall length:<br>$\\text{Leftover space} = 6\\text{ m} - 1.2\\text{ m} = 4.8\\text{ m}$.</p>\n    <p><strong>Step 3:</strong> Since the whiteboard is centered, this leftover space is divided equally between the left and right sides:<br>$\\text{Left side distance} = \\frac{4.8\\text{ m}}{2} = 2.4\\text{ m}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1166,7 +1166,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply the numbers: $2.06 \\times 8 = 16.48$. Keep the unit: $16.48\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1188,7 +1188,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply the numbers: $3.504 \\times 6 = 21.024$. Keep the unit: $21.024\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1210,7 +1210,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply the numbers: $15.4 \\times 12 = 184.8$. Keep the unit: $184.8\\text{ cm}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1232,7 +1232,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply the numbers: $135 \\times 14 = 1890$. Keep the unit: $1890\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1254,7 +1254,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply the numbers: $2.508 \\times 24 = 60.192$. Keep the unit: $60.192\\text{ t}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1276,7 +1276,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide the numbers: $96 \\div 8 = 12$. Keep the unit: $12\\text{ m}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1298,7 +1298,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide the numbers: $42.56 \\div 16 = 2.66$. Keep the unit: $2.66\\text{ t}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1320,7 +1320,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide the numbers: $84.288 \\div 6 = 14.048$. Keep the unit: $14.048\\text{ kg}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1342,7 +1342,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide the numbers: $7.875 \\div 5 = 1.575$. Keep the unit: $1.575\\text{ km}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.824Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1364,7 +1364,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Cost = length $\\times$ price $= 8 \\times 85\\text{ c} = 680\\text{ c} = \\$6.80$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1386,7 +1386,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert length to metres: $400\\text{ mm} = 0.4\\text{ m}$. <br>Cost $= 0.4 \\times 95\\text{ c} = 38\\text{ c} = \\$0.38$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1408,7 +1408,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Cost = volume $\\times$ price per litre $= 6 \\times \\$1.80 = \\$10.80$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1430,7 +1430,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert mass to kg: $200\\text{ g} = 0.2\\text{ kg}$.<br>Cost $= 0.2 \\times \\$4.50 = \\$0.90$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1452,7 +1452,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Cost = mass $\\times$ price per kg $= 12 \\times \\$0.95 = \\$11.40$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1474,7 +1474,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert length to km: $350\\text{ m} = 0.35\\text{ km}$.<br>Cost $= 0.35 \\times \\$140 = \\$49.00$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1496,7 +1496,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Cost = mass $\\times$ rate per tonne $= 8 \\times \\$35 = \\$280.00$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1518,7 +1518,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert volume to litres: $300\\text{ mL} = 0.3\\text{ L}$.<br>Cost $= 0.3 \\times \\$8.50 = \\$2.55$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
   },
   {
     "chapterId": "y7-8",
@@ -1540,7 +1540,799 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert mass to tonnes: $800\\text{ kg} = 0.8\\text{ t}$.<br>Cost $= 0.8 \\times \\$25 = \\$20.00$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:19:48.825Z"
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Read the scale on the measuring tool below. What is the indicated measurement in millimetres?<br><svg width=\"340\" height=\"100\" viewBox=\"0 0 340 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <rect x=\"15\" y=\"30\" width=\"310\" height=\"50\" rx=\"3\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"28\" y=\"47\" fill=\"#64748b\" font-size=\"10\" font-weight=\"bold\" font-family=\"'Outfit'\">mm</text>\n    <text x=\"25\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">100</text><line x1=\"25\" y1=\"30\" x2=\"25\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"28.5\" y1=\"30\" x2=\"28.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"35.5\" y1=\"30\" x2=\"35.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"39\" y1=\"30\" x2=\"39\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"42.5\" y1=\"30\" x2=\"42.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"46\" y1=\"30\" x2=\"46\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"49.5\" y1=\"30\" x2=\"49.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"53\" y1=\"30\" x2=\"53\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"56.5\" y1=\"30\" x2=\"56.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"60\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">110</text><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"63.5\" y1=\"30\" x2=\"63.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"67\" y1=\"30\" x2=\"67\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"70.5\" y1=\"30\" x2=\"70.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"74\" y1=\"30\" x2=\"74\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"77.5\" y1=\"30\" x2=\"77.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"81\" y1=\"30\" x2=\"81\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"84.5\" y1=\"30\" x2=\"84.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"91.5\" y1=\"30\" x2=\"91.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"95\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">120</text><line x1=\"95\" y1=\"30\" x2=\"95\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"98.5\" y1=\"30\" x2=\"98.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"102\" y1=\"30\" x2=\"102\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"105.5\" y1=\"30\" x2=\"105.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"109\" y1=\"30\" x2=\"109\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"112.5\" y1=\"30\" x2=\"112.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"116\" y1=\"30\" x2=\"116\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"119.5\" y1=\"30\" x2=\"119.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"123\" y1=\"30\" x2=\"123\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"126.5\" y1=\"30\" x2=\"126.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"130\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">130</text><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"133.5\" y1=\"30\" x2=\"133.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"137\" y1=\"30\" x2=\"137\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"140.5\" y1=\"30\" x2=\"140.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"144\" y1=\"30\" x2=\"144\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"147.5\" y1=\"30\" x2=\"147.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"151\" y1=\"30\" x2=\"151\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"154.5\" y1=\"30\" x2=\"154.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"158\" y1=\"30\" x2=\"158\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"161.5\" y1=\"30\" x2=\"161.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"165\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">140</text><line x1=\"165\" y1=\"30\" x2=\"165\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"168.5\" y1=\"30\" x2=\"168.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"172\" y1=\"30\" x2=\"172\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"175.5\" y1=\"30\" x2=\"175.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"179\" y1=\"30\" x2=\"179\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"186\" y1=\"30\" x2=\"186\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"189.5\" y1=\"30\" x2=\"189.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"193\" y1=\"30\" x2=\"193\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"196.5\" y1=\"30\" x2=\"196.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"200\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">150</text><line x1=\"200\" y1=\"30\" x2=\"200\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"203.5\" y1=\"30\" x2=\"203.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"207\" y1=\"30\" x2=\"207\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"210.5\" y1=\"30\" x2=\"210.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"214\" y1=\"30\" x2=\"214\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"217.5\" y1=\"30\" x2=\"217.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"221\" y1=\"30\" x2=\"221\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"224.5\" y1=\"30\" x2=\"224.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"228\" y1=\"30\" x2=\"228\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"231.5\" y1=\"30\" x2=\"231.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"235\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">160</text><line x1=\"235\" y1=\"30\" x2=\"235\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"238.5\" y1=\"30\" x2=\"238.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"242\" y1=\"30\" x2=\"242\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"245.5\" y1=\"30\" x2=\"245.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"249\" y1=\"30\" x2=\"249\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"252.5\" y1=\"30\" x2=\"252.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"256\" y1=\"30\" x2=\"256\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"259.5\" y1=\"30\" x2=\"259.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"263\" y1=\"30\" x2=\"263\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"266.5\" y1=\"30\" x2=\"266.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"270\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">170</text><line x1=\"270\" y1=\"30\" x2=\"270\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"273.5\" y1=\"30\" x2=\"273.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"277\" y1=\"30\" x2=\"277\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"280.5\" y1=\"30\" x2=\"280.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"284\" y1=\"30\" x2=\"284\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"287.5\" y1=\"30\" x2=\"287.5\" y2=\"42\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"291\" y1=\"30\" x2=\"291\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"294.5\" y1=\"30\" x2=\"294.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"298\" y1=\"30\" x2=\"298\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><line x1=\"301.5\" y1=\"30\" x2=\"301.5\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"305\" y=\"75\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">180</text><line x1=\"305\" y1=\"30\" x2=\"305\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <path d=\"M 130 5 L 125 17 L 135 17 Z\" fill=\"#ef4444\"/>\n    <line x1=\"130\" y1=\"5\" x2=\"130\" y2=\"28\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"2,2\"/>\n  </svg>",
+    "options": [
+      "130 mm",
+      "13 mm",
+      "140 mm",
+      "125 mm"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Look at the major number markings on the scale: $100, 110, 120, 130, 140, 150...$</p>\n    <p><strong>Step 2:</strong> The red indicator arrow points directly to the mark labeled <strong>130</strong>.</p>\n    <p><strong>Step 3:</strong> Since the ruler's unit is marked in millimetres (mm), the reading is $130\\text{ mm}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Read the volume level indicated by the red arrow on the measuring beaker below.<br><svg width=\"220\" height=\"160\" viewBox=\"0 0 220 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <path d=\"M 85 65 L 155 65 L 145 140 L 95 140 Z\" fill=\"#bae6fd\" opacity=\"0.8\"/>\n    <path d=\"M 155 40 H 175 V 100 H 148\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n    <path d=\"M 80 20 L 80 25 L 85 25 L 95 140 C 95 143, 100 145, 120 145 C 140 145, 145 143, 145 140 L 155 25 L 160 25 L 160 20 Z\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\"/>\n    <text x=\"120\" y=\"153\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">mL</text>\n    <line x1=\"160\" y1=\"122\" x2=\"175\" y2=\"122\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"126\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">100</text><line x1=\"160\" y1=\"104\" x2=\"175\" y2=\"104\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"108\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">200</text><line x1=\"160\" y1=\"86\" x2=\"175\" y2=\"86\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"90\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">300</text><line x1=\"160\" y1=\"68\" x2=\"175\" y2=\"68\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"72\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">400</text><line x1=\"160\" y1=\"50\" x2=\"175\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"54\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">500</text><line x1=\"160\" y1=\"32\" x2=\"175\" y2=\"32\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"180\" y=\"36\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">600</text>\n    <ellipse cx=\"120\" cy=\"65\" rx=\"33\" ry=\"4\" fill=\"#7dd3fc\" opacity=\"0.6\"/>\n    <path d=\"M 60 65 L 72 61 L 72 69 Z\" fill=\"#ef4444\"/>\n    <line x1=\"45\" y1=\"65\" x2=\"65\" y2=\"65\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n  </svg>",
+    "options": [
+      "300 mL",
+      "250 mL",
+      "350 mL",
+      "400 mL"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Look at the markings on the measuring cup ($100, 200, 300, 400...$ mL).</p>\n    <p><strong>Step 2:</strong> The fluid surface and the red arrow point directly at the line for <strong>300</strong>.</p>\n    <p><strong>Step 3:</strong> The unit of measurement is millilitres (mL), so the volume is $300\\text{ mL}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Read the syringe measurement indicated by the red arrow on the scale below.<br><svg width=\"300\" height=\"100\" viewBox=\"0 0 300 100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Syringe barrel -->\n    <rect x=\"50\" y=\"40\" width=\"190\" height=\"35\" rx=\"2\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/>\n    <rect x=\"35\" y=\"52\" width=\"15\" height=\"10\" fill=\"#94a3b8\"/>\n    <!-- Liquid fill up to 3 mL (from 0 to 3, which is from 70 to 118) -->\n    <rect x=\"70\" y=\"42\" width=\"48\" height=\"31\" fill=\"#fef08a\" opacity=\"0.8\"/>\n    <!-- Plunger rod -->\n    <rect x=\"118\" y=\"48\" width=\"150\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n    <rect x=\"118\" y=\"41\" width=\"10\" height=\"33\" fill=\"#ef4444\"/> <!-- plunger seal -->\n    <rect x=\"258\" y=\"35\" width=\"8\" height=\"45\" rx=\"2\" fill=\"#94a3b8\"/>\n    <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"70\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">0</text><line x1=\"102\" y1=\"40\" x2=\"102\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"102\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">2</text><line x1=\"134\" y1=\"40\" x2=\"134\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"134\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">4</text><line x1=\"166\" y1=\"40\" x2=\"166\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"166\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">6</text><line x1=\"198\" y1=\"40\" x2=\"198\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"198\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">8</text><line x1=\"230\" y1=\"40\" x2=\"230\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"230\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">10</text>\n    <text x=\"210\" y=\"70\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">mL</text>\n    <!-- Arrow indicator -->\n    <path d=\"M 118 88 L 114 76 L 122 76 Z\" fill=\"#ef4444\"/>\n    <line x1=\"118\" y1=\"88\" x2=\"118\" y2=\"70\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n  </svg>",
+    "options": [
+      "3 mL",
+      "4 mL",
+      "2.5 mL",
+      "5 mL"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> The barrel is marked from $0$ to $10\\text{ mL}$, with markings every $1\\text{ mL}$.</p>\n    <p><strong>Step 2:</strong> The black rubber seal of the plunger and the indicator arrow are at the line labeled <strong>3</strong>.</p>\n    <p><strong>Step 3:</strong> The capacity reading is therefore $3\\text{ mL}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8b",
+    "topicCode": "8B",
+    "topicTitle": "Other units",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Read the temperature indicated on the thermometer below in degrees Celsius (°C).<br><svg width=\"220\" height=\"170\" viewBox=\"0 0 220 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Outer glass body -->\n    <rect x=\"135\" y=\"15\" width=\"20\" height=\"120\" rx=\"10\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\"/>\n    <circle cx=\"145\" cy=\"142\" r=\"14\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"2\"/>\n    <!-- Red Liquid column and bulb -->\n    <circle cx=\"145\" cy=\"142\" r=\"11\" fill=\"#ef4444\"/>\n    <rect x=\"142\" y=\"110\" width=\"6\" height=\"32\" fill=\"#ef4444\"/>\n    <line x1=\"158\" y1=\"130\" x2=\"168\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"134\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">-20</text><line x1=\"158\" y1=\"113.4\" x2=\"168\" y2=\"113.4\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"117.4\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">-10</text><line x1=\"158\" y1=\"96.80000000000001\" x2=\"168\" y2=\"96.80000000000001\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"100.80000000000001\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">0</text><line x1=\"158\" y1=\"80.2\" x2=\"168\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"84.2\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">10</text><line x1=\"158\" y1=\"63.60000000000001\" x2=\"168\" y2=\"63.60000000000001\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"67.60000000000001\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">20</text><line x1=\"158\" y1=\"47\" x2=\"168\" y2=\"47\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"51\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">30</text><line x1=\"158\" y1=\"30.400000000000006\" x2=\"168\" y2=\"30.400000000000006\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"175\" y=\"34.400000000000006\" fill=\"#475569\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">40</text>\n    <text x=\"145\" y=\"163\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"9\" font-weight=\"bold\" font-family=\"'Outfit'\">°C</text>\n  </svg>",
+    "options": [
+      "-8 °C",
+      "-12 °C",
+      "-5 °C",
+      "8 °C"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Locate the top of the red liquid column on the thermometer scale.</p>\n    <p><strong>Step 2:</strong> The scale is marked in intervals of $10^\\circ\\text{C}$ (e.g. $-20, -10, 0, 10...$), with smaller division lines representing $1^\\circ\\text{C}$ each.</p>\n    <p><strong>Step 3:</strong> The liquid level is below $0^\\circ\\text{C}$ but above $-10^\\circ\\text{C}$. Counting down $8$ steps from $0$ (or $2$ steps up from $-10$), we find the temperature is $-8^\\circ\\text{C}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $18 mm = \\text{___ } \\text{cm}$.",
+    "options": [
+      "$1.8 cm$",
+      "$18 cm$",
+      "$0.18 cm$",
+      "$180 cm$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ cm} = 10\\text{ mm}$, divide by $10$:<br>$18 \\div 10 = 1.8\\text{ cm}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $256 mm = \\text{___ } \\text{cm}$.",
+    "options": [
+      "$25.6 cm or 0.256 m$",
+      "$2.56 cm or 2.56 m$",
+      "$256 cm or 0.256 m$",
+      "$25.6 cm or 2.56 m$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>To convert to cm: divide by $10 \\rightarrow 25.6\\text{ cm}$.<br>To convert to m: divide mm by $1000 \\rightarrow 0.256\\text{ m}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $3.7 m = \\text{___ } \\text{cm}$.",
+    "options": [
+      "$370 cm or 3700 mm$",
+      "$37 cm or 370 mm$",
+      "$3.70 cm or 3700 mm$",
+      "$370 cm or 370 mm$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>To convert to cm: multiply by $100 \\rightarrow 370\\text{ cm}$.<br>To convert to mm: multiply by $1000 \\rightarrow 3700\\text{ mm}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $0.6 km = \\text{___ } \\text{m}$.",
+    "options": [
+      "$600 m$",
+      "$6000 m$",
+      "$60 m$",
+      "$60000 m$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ km} = 1000\\text{ m}$, multiply by $1000$:<br>$0.6 \\times 1000 = 600\\text{ m}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $\\frac{4}{5} cm = \\text{___ } \\text{mm}$.",
+    "options": [
+      "$8 mm$",
+      "$80 mm$",
+      "$0.8 mm$",
+      "$800 mm$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert to mm (multiply by $10$):<br>$\\frac{4}{5} \\times 10 = 4 \\times 2 = 8\\text{ mm}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $5 kg = \\text{___ } \\text{g}$.",
+    "options": [
+      "$5000 g$",
+      "$50000 g$",
+      "$500 g$",
+      "$500000 g$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ kg} = 1000\\text{ g}$, multiply by $1000$:<br>$5 \\times 1000 = 5000\\text{ g}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $465 g = \\text{___ } \\text{mg}$.",
+    "options": [
+      "$465000 mg or 0.465 kg$",
+      "$4650 mg or 4.65 kg$",
+      "$46500 mg or 0.465 kg$",
+      "$465000 mg or 4.65 kg$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>To convert to mg: multiply by $1000 \\rightarrow 465,000\\text{ mg}$.<br>To convert to kg: divide by $1000 \\rightarrow 0.465\\text{ kg}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $35 L = \\text{___ } \\text{mL}$.",
+    "options": [
+      "$35000 mL$",
+      "$350000 mL$",
+      "$3500 mL$",
+      "$3500000 mL$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ L} = 1000\\text{ mL}$, multiply by $1000$:<br>$35 \\times 1000 = 35,000\\text{ mL}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $4508 mL = \\text{___ } \\text{L}$.",
+    "options": [
+      "$4.508 L$",
+      "$45.08 L$",
+      "$0.4508 L$",
+      "$450.8 L$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ L} = 1000\\text{ mL}$, divide by $1000$:<br>$4508 \\div 1000 = 4.508\\text{ L}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $4.7 L = \\text{___ } \\text{mL}$.",
+    "options": [
+      "$4700 mL$",
+      "$47000 mL$",
+      "$470 mL$",
+      "$470000 mL$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply by $1000$ to convert L to mL:<br>$4.7 \\times 1000 = 4700\\text{ mL}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Complete the conversion: $0.8 m = \\text{___ } \\text{cm}$.",
+    "options": [
+      "$80 cm$",
+      "$800 cm$",
+      "$8 cm$",
+      "$8000 cm$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $1\\text{ m} = 100\\text{ cm}$, multiply by $100$:<br>$0.8 \\times 100 = 80\\text{ cm}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Three different packets of nuts were purchased. Packet A contained $650\\text{ g}$, Packet B contained $1.4\\text{ kg}$, and Packet C contained $850\\text{ g}$. If these are mixed together in one large container, what is the total mass of the mixture, in both kilograms and grams?",
+    "options": [
+      "2.9 kg or 2900 g",
+      "2.8 kg or 2800 g",
+      "3.1 kg or 3100 g",
+      "2.9 kg or 290 g"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Convert all masses to grams to add them easily:<br>\n      Packet A $= 650\\text{ g}$<br>\n      Packet B $= 1.4 \\times 1000 = 1400\\text{ g}$<br>\n      Packet C $= 850\\text{ g}$\n    </p>\n    <p><strong>Step 2:</strong> Add the weights together:<br>\n      $\\text{Total Mass} = 650 + 1400 + 850 = 2900\\text{ g}$\n    </p>\n    <p><strong>Step 3:</strong> Convert the total back to kilograms:<br>\n      $2900 \\div 1000 = 2.9\\text{ kg}$\n    </p>\n    <p>Therefore, the total mass is $2.9\\text{ kg}$ or $2900\\text{ g}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8a",
+    "topicCode": "8A",
+    "topicTitle": "Units of measurement",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Aled has the following items in his school bag. Knowing that $1\\text{ mL}$ of water has a mass of $1\\text{ g}$, and the empty school bag itself weighs $1.5\\text{ kg}$, what is the total mass of Aled’s bag and its contents?<br><ul><li>Laptop computer ($2.8\\text{ kg}$)</li><li>Sandwich ($180\\text{ g}$)</li><li>Water bottle ($20\\text{ g}$ empty bottle, filled with $450\\text{ mL}$ of water)</li><li>Orange ($85\\text{ g}$)</li><li>School books ($760\\text{ g}$)</li><li>Pencil case ($387\\text{ g}$)</li></ul>",
+    "options": [
+      "6.182 kg",
+      "6.082 kg",
+      "5.982 kg",
+      "6.282 kg"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> List and convert all individual items to grams ($1\\text{ kg} = 1000\\text{ g}$):</p>\n    <ul>\n      <li>Empty bag $= 1.5\\text{ kg} = 1500\\text{ g}$</li>\n      <li>Laptop $= 2.8\\text{ kg} = 2800\\text{ g}$</li>\n      <li>Sandwich $= 180\\text{ g}$</li>\n      <li>Water Bottle $= 20\\text{ g (bottle)} + 450\\text{ g (water)} = 470\\text{ g}$ (since $450\\text{ mL} = 450\\text{ g}$)</li>\n      <li>Orange $= 85\\text{ g}$</li>\n      <li>School books $= 760\\text{ g}$</li>\n      <li>Pencil case $= 387\\text{ g}$</li>\n    </ul>\n    <p><strong>Step 2:</strong> Add all weights together in grams:<br>\n      $\\text{Total Mass} = 1500 + 2800 + 180 + 470 + 85 + 760 + 387 = 6182\\text{ g}$\n    </p>\n    <p><strong>Step 3:</strong> Convert to kilograms:<br>\n      $6182 \\div 1000 = 6.182\\text{ kg}$\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8c",
+    "topicCode": "8C",
+    "topicTitle": "The unitary method",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "If $5$ chocolate blocks cost $\\$8.50$, how much do $3$ chocolate blocks cost?",
+    "options": [
+      "$5.10",
+      "$5.40",
+      "$4.80",
+      "$5.20"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Find the cost of a single chocolate block (unit cost):<br>\n      $\\text{Cost per block} = \\frac{\\$8.50}{5} = \\$1.70$\n    </p>\n    <p><strong>Step 2:</strong> Multiply the unit cost by the desired quantity ($3$):<br>\n      $\\text{Cost of 3 blocks} = \\$1.70 \\times 3 = \\$5.10$\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8c",
+    "topicCode": "8C",
+    "topicTitle": "The unitary method",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "If a generator needs $24\\text{ L}$ of fuel to run for $4$ days, for how long can it run on $90\\text{ L}$ of fuel?",
+    "options": [
+      "15 days",
+      "12 days",
+      "16 days",
+      "14.5 days"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Find the rate of fuel consumption per day:<br>\n      $\\text{Fuel per day} = \\frac{24\\text{ L}}{4\\text{ days}} = 6\\text{ L/day}$\n    </p>\n    <p><strong>Step 2:</strong> Divide the total fuel available ($90\\text{ L}$) by the daily consumption rate ($6\\text{ L/day}$):<br>\n      $\\text{Days} = \\frac{90\\text{ L}}{6\\text{ L/day}} = 15\\text{ days}$\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8c",
+    "topicCode": "8C",
+    "topicTitle": "The unitary method",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which is the best value: $6$ oranges for $\\$2.52$ or $45$ oranges for $\\$18.45$?",
+    "options": [
+      "45 oranges for $18.45 (better value)",
+      "6 oranges for $2.52 (better value)",
+      "Both offer exactly the same value",
+      "Cannot be determined"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Calculate the unit cost of the first option ($6$ oranges):<br>\n      $\\text{Unit cost} = \\frac{\\$2.52}{6} = \\$0.42\\text{ per orange}$\n    </p>\n    <p><strong>Step 2:</strong> Calculate the unit cost of the second option ($45$ oranges):<br>\n      $\\text{Unit cost} = \\frac{\\$18.45}{45} = \\$0.41\\text{ per orange}$\n    </p>\n    <p><strong>Step 3:</strong> Compare the two unit costs. Since $\\$0.41 < \\$0.42$, buying $45$ oranges is the cheaper, better value option.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8d",
+    "topicCode": "8D",
+    "topicTitle": "Perimeter",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the perimeter of the step-like figure shown below.<br><svg width=\"280\" height=\"240\" viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Grid pattern background -->\n    <defs>\n      <pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\">\n        <path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n      </pattern>\n    </defs>\n    <rect width=\"280\" height=\"240\" fill=\"url(#grid)\" />\n    \n    <!-- Closed Geometrically Consistent Step Polygon -->\n    <!-- Top is 8 cm (160px), Right vertical is 3 cm (60px), Inner horizontal is 5 cm (100px), Inner vertical is 4 cm (80px), Bottom is 3 cm (60px), Left vertical is 7 cm (140px) -->\n    <path d=\"M 50 40 H 210 V 100 H 110 V 180 H 50 Z\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <!-- Labeled dimensions -->\n    <text x=\"130\" y=\"32\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">8 cm</text>\n    <text x=\"225\" y=\"75\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">3 cm</text>\n    <text x=\"160\" y=\"115\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">5 cm</text>\n    <text x=\"120\" y=\"145\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">4 cm</text>\n    <text x=\"80\" y=\"195\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">3 cm</text>\n    <text x=\"35\" y=\"115\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">7 cm</text>\n  </svg>",
+    "options": [
+      "30 cm",
+      "28 cm",
+      "32 cm",
+      "36 cm"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p>The perimeter is the total distance around the outside of the shape.</p>\n    <p><strong>Step 1:</strong> Add up all labeled boundary edges:</p>\n    <ul>\n      <li>Top edge $= 8\\text{ cm}$</li>\n      <li>Right vertical edge $= 3\\text{ cm}$</li>\n      <li>Inner horizontal edge $= 5\\text{ cm}$</li>\n      <li>Inner vertical edge $= 4\\text{ cm}$</li>\n      <li>Bottom edge $= 3\\text{ cm}$</li>\n      <li>Left vertical edge $= 7\\text{ cm}$</li>\n    </ul>\n    <p><strong>Step 2:</strong> Compute the sum:<br>\n      $\\text{Perimeter} = 8 + 3 + 5 + 4 + 3 + 7 = 30\\text{ cm}$.\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8f",
+    "topicCode": "8F",
+    "topicTitle": "Areas by addition and subtraction",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the area of the step-like figure shown below.<br><svg width=\"280\" height=\"240\" viewBox=\"0 0 280 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Grid pattern background -->\n    <defs>\n      <pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\">\n        <path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n      </pattern>\n    </defs>\n    <rect width=\"280\" height=\"240\" fill=\"url(#grid)\" />\n    \n    <!-- Closed Geometrically Consistent Step Polygon -->\n    <!-- Top is 8 cm (160px), Right vertical is 3 cm (60px), Inner horizontal is 5 cm (100px), Inner vertical is 4 cm (80px), Bottom is 3 cm (60px), Left vertical is 7 cm (140px) -->\n    <path d=\"M 50 40 H 210 V 100 H 110 V 180 H 50 Z\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <!-- Labeled dimensions -->\n    <text x=\"130\" y=\"32\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">8 cm</text>\n    <text x=\"225\" y=\"75\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">3 cm</text>\n    <text x=\"160\" y=\"115\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">5 cm</text>\n    <text x=\"120\" y=\"145\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">4 cm</text>\n    <text x=\"80\" y=\"195\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">3 cm</text>\n    <text x=\"35\" y=\"115\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"bold\" font-family=\"'Outfit'\">7 cm</text>\n  </svg>",
+    "options": [
+      "36 cm²",
+      "38 cm²",
+      "40 cm²",
+      "42 cm²"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p>To find the area, we can split this compound shape into two simpler rectangles.</p>\n    <p><strong>Method: Split vertically</strong></p>\n    <ul>\n      <li><strong>Left rectangle:</strong> Width $= 3\\text{ cm}$, Height $= 7\\text{ cm}$<br>\n        $\\text{Area}_1 = 3 \\times 7 = 21\\text{ cm}^2$</li>\n      <li><strong>Right rectangle:</strong> Width $= 5\\text{ cm}$, Height $= 3\\text{ cm}$ (the top part)<br>\n        $\\text{Area}_2 = 5 \\times 3 = 15\\text{ cm}^2$</li>\n    </ul>\n    <p><strong>Step 2:</strong> Add the two areas together:<br>\n      $\\text{Total Area} = 21 + 15 = 36\\text{ cm}^2$.\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.659Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8d",
+    "topicCode": "8D",
+    "topicTitle": "Perimeter",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the perimeter of a rectangle with length $120 cm$ and width $15 cm$.",
+    "options": [
+      "$270 cm$",
+      "$135 cm$",
+      "$1800 cm$",
+      "$240 cm$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Perimeter $= 2(l + w) = 2(120 + 15) = 2 \\times 135 = 270\\text{ cm}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8e",
+    "topicCode": "8E",
+    "topicTitle": "Area",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the area of a rectangle with length $120 cm$ and width $15 cm$.",
+    "options": [
+      "$1800 cm²$",
+      "$270 cm²$",
+      "$900 cm²$",
+      "$180 cm²$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Area $= l \\times w = 120 \\times 15 = 1800\\text{ cm}^2$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8d",
+    "topicCode": "8D",
+    "topicTitle": "Perimeter",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the perimeter of a rectangle with length $9 m$ and width $6 m$.",
+    "options": [
+      "$30 m$",
+      "$15 m$",
+      "$54 m$",
+      "$24 m$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Perimeter $= 2(l + w) = 2(9 + 6) = 30\\text{ m}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8e",
+    "topicCode": "8E",
+    "topicTitle": "Area",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the area of a rectangle with length $9 m$ and width $6 m$.",
+    "options": [
+      "$54 m²$",
+      "$30 m²$",
+      "$27 m²$",
+      "$36 m²$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Area $= l \\times w = 9 \\times 6 = 54\\text{ m}^2$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8d",
+    "topicCode": "8D",
+    "topicTitle": "Perimeter",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the perimeter of a rectangle with length $75 mm$ and width $28 mm$.",
+    "options": [
+      "$206 mm$",
+      "$103 mm$",
+      "$2100 mm$",
+      "$150 mm$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Perimeter $= 2(l + w) = 2(75 + 28) = 206\\text{ mm}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8e",
+    "topicCode": "8E",
+    "topicTitle": "Area",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the area of a rectangle with length $75 mm$ and width $28 mm$.",
+    "options": [
+      "$2100 mm²$",
+      "$206 mm²$",
+      "$1050 mm²$",
+      "$210 mm²$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Area $= l \\times w = 75 \\times 28 = 2100\\text{ mm}^2$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8d",
+    "topicCode": "8D",
+    "topicTitle": "Perimeter",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the perimeter of a rectangle with length $4a$ and width $3b$.",
+    "options": [
+      "$8a + 6b$",
+      "$4a + 3b$",
+      "$12ab$",
+      "$16a + 9b$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Perimeter $= 2(l + w) = 2(4a + 3b) = 8a + 6b$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8e",
+    "topicCode": "8E",
+    "topicTitle": "Area",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the area of a rectangle with length $4a$ and width $3b$.",
+    "options": [
+      "$12ab$",
+      "$4a + 3b$",
+      "$8a + 6b$",
+      "$12a²b²$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Area $= l \\times w = 4a \\times 3b = 12ab$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8i",
+    "topicCode": "8I",
+    "topicTitle": "Time",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate the time elapsed between $8\\text{ p.m.}$ on Monday and $7:35\\text{ a.m.}$ on Wednesday.",
+    "options": [
+      "35 hours, 35 minutes",
+      "34 hours, 35 minutes",
+      "36 hours, 35 minutes",
+      "35 hours, 15 minutes"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Count the time from Monday 8 p.m. to Tuesday 8 p.m.:<br>\n      This is exactly $24\\text{ hours}$.\n    </p>\n    <p><strong>Step 2:</strong> Count the time from Tuesday 8 p.m. to Wednesday 8 a.m. (the next morning):<br>\n      This is exactly $12\\text{ hours}$.<br>\n      Accumulated total $= 24 + 12 = 36\\text{ hours}$ (representing Wednesday 8:00 a.m.).\n    </p>\n    <p><strong>Step 3:</strong> Since the end time is 7:35 a.m., which is $25\\text{ minutes}$ before 8:00 a.m., we subtract $25\\text{ minutes}$ from $36\\text{ hours}$:<br>\n      $36\\text{ hours} - 25\\text{ minutes} = 35\\text{ hours and } 35\\text{ minutes}$.\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8i",
+    "topicCode": "8I",
+    "topicTitle": "Time",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate the time elapsed between $9:15\\text{ a.m.}$ and $4:12\\text{ p.m.}$ on the same day.",
+    "options": [
+      "6 hours, 57 minutes",
+      "7 hours, 57 minutes",
+      "6 hours, 43 minutes",
+      "7 hours, 12 minutes"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Convert both times to 24-hour format:<br>\n      $9:15\\text{ a.m.} \\rightarrow 09:15$<br>\n      $4:12\\text{ p.m.} \\rightarrow 16:12$\n    </p>\n    <p><strong>Step 2:</strong> Subtract the start time from the end time:<br>\n      $16:12 - 09:15$\n    </p>\n    <p>Since 12 minutes is less than 15 minutes, borrow 1 hour (60 minutes) from 16:<br>\n      $16:12 = 15:72$<br>\n      $15:72 - 09:15 = 6\\text{ hours and } 57\\text{ minutes}$.\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8i",
+    "topicCode": "8I",
+    "topicTitle": "Time",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate the difference between two finish times for a race: $02:28:15$ and $03:42:38$.",
+    "options": [
+      "1 hour, 14 minutes, 23 seconds",
+      "1 hour, 14 minutes, 15 seconds",
+      "1 hour, 24 minutes, 23 seconds",
+      "1 hour, 15 minutes, 23 seconds"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p>Subtract the earlier time from the later time:</p>\n    <p>$$\\begin{array}{rccc} & 03 & : & 42 & : & 38 \\\\ - & 02 & : & 28 & : & 15 \\\\ \\hline & 01 & : & 14 & : & 23 \\end{array}$$</p>\n    <p>Therefore, the time difference is $1\\text{ hour, } 14\\text{ minutes, and } 23\\text{ seconds}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8i",
+    "topicCode": "8I",
+    "topicTitle": "Time",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "What is the time $4\\text{ hours, } 18\\text{ minutes and } 45\\text{ seconds}$ after $3:15\\text{ p.m.}$?",
+    "options": [
+      "7:33:45 p.m.",
+      "7:15:45 p.m.",
+      "7:33:45 a.m.",
+      "8:33:45 p.m."
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Start with the initial time: $3\\text{ p.m.} \\; 15\\text{ minutes} \\; 00\\text{ seconds}$.</p>\n    <p><strong>Step 2:</strong> Add the hours:<br>\n      $3\\text{ p.m.} + 4\\text{ hours} = 7\\text{ p.m.}$\n    </p>\n    <p><strong>Step 3:</strong> Add the minutes:<br>\n      $15\\text{ minutes} + 18\\text{ minutes} = 33\\text{ minutes}$\n    </p>\n    <p><strong>Step 4:</strong> Add the seconds:<br>\n      $00\\text{ seconds} + 45\\text{ seconds} = 45\\text{ seconds}$\n    </p>\n    <p>The resulting time is $7:33:45\\text{ p.m.}$.</p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8i",
+    "topicCode": "8I",
+    "topicTitle": "Time",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "What is the day and time $3\\text{ days, } 14\\text{ hours and } 8\\text{ minutes}$ before midnight on Friday?",
+    "options": [
+      "Monday, 9:52 a.m.",
+      "Tuesday, 9:52 a.m.",
+      "Monday, 10:52 a.m.",
+      "Sunday, 9:52 p.m."
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p>Midnight on Friday is equivalent to Friday 12:00 a.m. (or the very start of Saturday).</p>\n    <p><strong>Step 1:</strong> Go back exactly $3$ days from Friday midnight:<br>\n      This brings us to <strong>Tuesday midnight (12:00 a.m.)</strong>.\n    </p>\n    <p><strong>Step 2:</strong> Go back $14\\text{ hours}$ from Tuesday midnight:<br>\n      Going back $12\\text{ hours}$ brings us to Monday noon (12:00 p.m.).<br>\n      Going back another $2\\text{ hours}$ brings us to <strong>Monday 10:00 a.m.</strong>.\n    </p>\n    <p><strong>Step 3:</strong> Go back $8\\text{ minutes}$ from Monday 10:00 a.m.:<br>\n      $10:00\\text{ a.m.} - 8\\text{ minutes} =$ <strong>Monday 9:52 a.m.</strong>.\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
+  },
+  {
+    "chapterId": "y7-8",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicId": "y7-8i",
+    "topicCode": "8I",
+    "topicTitle": "Time",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "What is the time $4\\text{ hours, } 22\\text{ minutes}$ after $10:45\\text{ a.m.}$?",
+    "options": [
+      "3:07 p.m.",
+      "2:07 p.m.",
+      "3:07 a.m.",
+      "2:45 p.m."
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Start at $10:45\\text{ a.m.}$.</p>\n    <p><strong>Step 2:</strong> Add $4\\text{ hours}$:<br>\n      $10:45\\text{ a.m.} + 4\\text{ hours} = 2:45\\text{ p.m.}$ (since we pass 12:00 p.m. noon).\n    </p>\n    <p><strong>Step 3:</strong> Add $22\\text{ minutes}$ to $2:45\\text{ p.m.}$.<br>\n      $45 + 22 = 67\\text{ minutes} = 1\\text{ hour and } 7\\text{ minutes}$.<br>\n      $2:45\\text{ p.m.} + 1\\text{ hour } 7\\text{ minutes} = 3:07\\text{ p.m.}$.\n    </p>\n  </div>",
+    "createdAt": "2026-05-17T12:37:38.660Z"
   }
 ];
 
@@ -1551,16 +2343,26 @@ export const importYear7Ch8A = async (forceReset = false) => {
     const qRef = collection(db, 'questions');
     
     if (forceReset) {
-      console.log('Force reset enabled. Deleting existing Y7 Ch8A questions...');
-      const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-8a')));
-      for (const doc of existingSnap.docs) {
-        await deleteDoc(doc.ref);
+      console.log('Force reset enabled. Deleting existing Y7 Ch8 (8a to 8j) review & units questions...');
+      const topicsToDelete = ['y7-8a', 'y7-8b', 'y7-8c', 'y7-8d', 'y7-8e', 'y7-8f', 'y7-8g', 'y7-8h', 'y7-8i', 'y7-8j'];
+      for (const tId of topicsToDelete) {
+        const existingSnap = await getDocs(query(qRef, where('topicId', '==', tId)));
+        for (const doc of existingSnap.docs) {
+          await deleteDoc(doc.ref);
+        }
       }
-      console.log('Deleted ' + existingSnap.size + ' existing questions.');
+      console.log('Deleted existing Ch8 topic questions.');
     }
 
-    const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-8a')));
-    const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question.trim()));
+    // To prevent duplicates, query all existing questions in Ch8 topics
+    const existingQuestions = new Set();
+    const topicsToCheck = ['y7-8a', 'y7-8b', 'y7-8c', 'y7-8d', 'y7-8e', 'y7-8f', 'y7-8g', 'y7-8h', 'y7-8i', 'y7-8j'];
+    for (const tId of topicsToCheck) {
+      const existingSnap = await getDocs(query(qRef, where('topicId', '==', tId)));
+      existingSnap.docs.forEach(doc => {
+        existingQuestions.add(doc.data().question.trim());
+      });
+    }
     
     for (const q of allQuestions) {
       if (!existingQuestions.has(q.question.trim())) {
