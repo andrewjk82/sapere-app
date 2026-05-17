@@ -162,10 +162,12 @@ const MathView = ({ content, graphData, style }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {/* Question text first, then the figure — questions refer to the
+          diagram as "below". */}
+      <div ref={containerRef} style={combinedStyle} />
       {graphData && !graphData.html && !graphData.diagram && <MathGraph {...graphData} />}
       {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
       {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
-      <div ref={containerRef} style={combinedStyle} />
     </div>
   );
 };
