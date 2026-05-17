@@ -133,7 +133,10 @@ export default async function handler(req, res) {
     // PART 2: Daily Wrap-up (Tasks & Tomorrow's Schedule) - Runs in the evening.
     // Vercel daily crons can drift within the hour, so keep this window forgiving.
     // ══════════════════════════════════════════════════════════════════════
-    if (sydHour >= 17 && sydHour <= 19) {
+    // Evening reminder window: 4:50 PM – 9:10 PM Sydney. The cron is called
+    // hourly, so 5/6/7/8/9 PM runs all fall inside; the queue's retry model
+    // means a student missed at 5pm is re-attempted on the later runs.
+    if (sydTotalMin >= 1010 && sydTotalMin <= 1270) {
       logs.push(`[Cron] Evening wrap-up window reached. Processing queued reminders...`);
       const queueResult = await processSixPmQueue({
         db,
@@ -301,16 +304,12 @@ async function processSixPmQueue({
 
   const items = Array.isArray(queue.items) ? queue.items : [];
   const sentIds = new Set(queue.sentIds || []);
-  let cursor = Number(queue.cursor || 0);
   let sentCount = 0;
 
-  const batch = [];
-  while (cursor < items.length && batch.length < SIX_PM_BATCH_SIZE) {
-    const item = items[cursor];
-    cursor += 1;
-    if (!item?.studentId || sentIds.has(item.studentId)) continue;
-    batch.push(item);
-  }
+  // Retry model: each hourly run targets only students not yet successfully
+  // sent — a student missed at 5pm is retried at 6/7/8/9pm until delivered.
+  const pending = items.filter((it) => it?.studentId && !sentIds.has(it.studentId));
+  const batch = pending.slice(0, SIX_PM_BATCH_SIZE);
 
   const results = await Promise.allSettled(batch.map(async (item) => {
     try {
@@ -362,9 +361,9 @@ async function processSixPmQueue({
     logs.push(value.message);
   });
 
-  const complete = cursor >= items.length;
+  const remaining = items.filter((it) => it?.studentId && !sentIds.has(it.studentId)).length;
+  const complete = remaining === 0;
   await queueRef.set({
-    cursor,
     sentIds: Array.from(sentIds),
     sentCount: sentIds.size,
     status: complete ? 'complete' : 'partial',
@@ -374,8 +373,8 @@ async function processSixPmQueue({
 
   return {
     sentCount,
-    nextCursor: cursor,
     totalCount: items.length,
+    remaining,
     complete,
     elapsedMs: Date.now() - CRON_STARTED_AT,
   };
@@ -388,7 +387,7 @@ async function notifyAdminQueueComplete(db, transporter, todayStr, queueResult, 
   if (queue.adminNotifiedAt) return;
 
   const total = Number(queue.totalCount || queueResult.totalCount || 0);
-  const sent = Number(queue.sentCount || queueResult.nextCursor || 0);
+  const sent = Number(queue.sentCount || queueResult.sentCount || 0);
   const failed = Math.max(0, total - sent);
   const title = `6PM reminder complete: ${sent}/${total}`;
   const body = [
