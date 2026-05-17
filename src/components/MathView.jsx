@@ -132,7 +132,7 @@ const MathView = ({ content, graphData, style }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      {graphData && <MathGraph {...graphData} />}
+      {graphData && !graphData.html && !graphData.diagram && <MathGraph {...graphData} />}
       {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
       {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
       <div ref={containerRef} style={combinedStyle} dangerouslySetInnerHTML={{ __html: safeContent }} />
