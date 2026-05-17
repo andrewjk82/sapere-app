@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import MathGraph from './MathGraph';
 import GeometricDiagram from './GeometricDiagram';
 
@@ -105,22 +105,45 @@ const MathView = ({ content, graphData, style }) => {
   const containerRef = useRef(null);
   const safeContent = toDisplayText(content);
 
-  useEffect(() => {
-    if (containerRef.current && window.renderMathInElement) {
-      try {
-        window.renderMathInElement(containerRef.current, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$',  right: '$',  display: false },
-            { left: '\\(', right: '\\)', display: false },
-            { left: '\\[', right: '\\]', display: true },
-          ],
-          throwOnError: false,
-        });
-      } catch (err) {
-        console.warn('KaTeX render error:', err);
+  // The effect fully owns the math div's DOM: it injects the raw content AND
+  // runs KaTeX. We deliberately do NOT use dangerouslySetInnerHTML here —
+  // React re-applying it on re-render would stomp KaTeX's rendered output back
+  // to raw "$3$" text without re-triggering this effect.
+  useLayoutEffect(() => {
+    const el = containerRef.current;
+    if (!el) return undefined;
+    el.innerHTML = safeContent;
+
+    let cancelled = false;
+    let retryTimer = null;
+    const renderMath = () => {
+      if (cancelled || !containerRef.current) return;
+      const target = containerRef.current;
+      if (window.renderMathInElement) {
+        try {
+          window.renderMathInElement(target, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$',  right: '$',  display: false },
+              { left: '\\(', right: '\\)', display: false },
+              { left: '\\[', right: '\\]', display: true },
+            ],
+            throwOnError: false,
+          });
+        } catch (err) {
+          console.warn('KaTeX render error:', err);
+        }
+      } else {
+        // KaTeX auto-render script not loaded yet — retry shortly.
+        retryTimer = setTimeout(renderMath, 150);
       }
-    }
+    };
+    renderMath();
+
+    return () => {
+      cancelled = true;
+      if (retryTimer) clearTimeout(retryTimer);
+    };
   }, [safeContent]);
 
   const combinedStyle = {
@@ -135,7 +158,7 @@ const MathView = ({ content, graphData, style }) => {
       {graphData && !graphData.html && !graphData.diagram && <MathGraph {...graphData} />}
       {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
       {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
-      <div ref={containerRef} style={combinedStyle} dangerouslySetInnerHTML={{ __html: safeContent }} />
+      <div ref={containerRef} style={combinedStyle} />
     </div>
   );
 };
