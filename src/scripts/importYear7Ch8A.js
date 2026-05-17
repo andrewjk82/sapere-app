@@ -10,12 +10,12 @@ export const importYear7Ch8A = async (forceReset = false) => {
     const qRef = collection(db, 'questions');
     
     if (forceReset) {
-      console.log('Force reset enabled. Deleting ALL existing Y7 Ch8 questions...');
-      const existingSnap = await getDocs(query(qRef, where('chapterId', '==', 'y7-8')));
+      console.log('Force reset enabled. Deleting only Y7 Ch8A (y7-8a) questions...');
+      const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-8a')));
       for (const doc of existingSnap.docs) {
         await deleteDoc(doc.ref);
       }
-      console.log(`Deleted ${existingSnap.size} existing Ch8 questions.`);
+      console.log(`Deleted ${existingSnap.size} existing Ch8A questions.`);
     }
 
     console.log(`[Ch8A Year 7 Import] Done. ${importedCount} new questions added.`);
