@@ -22,7 +22,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <ul>\n      <li>The digit <strong>$3$</strong> is in the hundreds place: $3 \\times 100 = 300$</li>\n      <li>The digit <strong>$5$</strong> is in the tens place: $5 \\times 10 = 50$</li>\n      <li>The digit <strong>$4$</strong> is in the units place: $4 \\times 1 = 4$</li>\n      <li>The digit <strong>$1$</strong> is in the tenths place: $\\frac{1}{10}$</li>\n      <li>The digit <strong>$8$</strong> is in the hundredths place: $\\frac{8}{100}$</li>\n      <li>The digit <strong>$0$</strong> is in the thousandths place: $\\frac{0}{1000}$</li>\n      <li>The digit <strong>$9$</strong> is in the ten-thousandths place: $\\frac{9}{10000}$</li>\n    </ul>\n    <p>Combining these, we get: $300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{0}{1000} + \\frac{9}{10000}$</p>\n  </div>",
-    "createdAt": "2026-05-17T12:13:26.495Z"
+    "createdAt": "2026-05-17T12:29:11.730Z"
   },
   {
     "chapterId": "y7-7",
@@ -44,7 +44,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> Count the number of decimal places in $6.148$. There are 3 digits after the decimal point ($1, 4, 8$).</p>\n    <p><strong>Step 2:</strong> A decimal with 3 decimal places has a denominator of $10^3 = 1000$ when written as a fraction.</p>\n    <p><strong>Step 3:</strong> Place the entire number (without the decimal point) in the numerator: $\\frac{6148}{1000}$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.731Z"
   },
   {
     "chapterId": "y7-7",
@@ -66,7 +66,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p><strong>Step 1:</strong> The denominator is $1000$, which has 3 zeros.</p>\n    <p><strong>Step 2:</strong> Dividing by $1000$ shifts the decimal point of the numerator ($69.0$) 3 places to the left:</p>\n    <ul>\n      <li>Shift 1: $6.9$</li>\n      <li>Shift 2: $0.69$</li>\n      <li>Shift 3: $0.069$</li>\n    </ul>\n    <p>Therefore, $\\frac{69}{1000} = 0.069$.</p>\n  </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.731Z"
   },
   {
     "chapterId": "y7-7",
@@ -88,7 +88,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 4 is directly to the left of the decimal point, representing the units (ones) place ($4 \\times 1$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -110,7 +110,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 4 is the second digit to the right of the decimal point, representing the hundredths place ($\\frac{4}{100}$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -132,7 +132,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 4 is the first digit to the right of the decimal point, representing the tenths place ($\\frac{4}{10}$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -154,7 +154,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 4 is in the tens place ($4 \\times 10 = 40$), representing four tens.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -176,7 +176,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 4 is the third digit to the right of the decimal point, representing the thousandths place ($\\frac{4}{1000}$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -198,7 +198,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Counting the places to the right of the decimal: tenths (9), hundredths (5), thousandths (1), ten-thousandths (8), hundred-thousandths (4). Thus, it represents $\\frac{4}{100000}$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -220,7 +220,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p>To form a valid decimal using the digits $1, 3, 5, 7$ and a decimal point exactly once, the number must contain exactly all four digits and one decimal point.</p>\n    <ul>\n      <li>$13.57$ uses $1, 3, 5, 7$ exactly once. (Valid!)</li>\n      <li>$133.57$ repeats the digit 3. (Invalid!)</li>\n      <li>$1.35$ is missing the digit 7. (Invalid!)</li>\n      <li>$1.3577$ repeats the digit 7. (Invalid!)</li>\n    </ul>\n  </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -242,7 +242,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n    <p><strong>Step-by-step breakdown:</strong></p>\n    <p>A valid number must contain all four digits $2, 4, 6, 8$ exactly once along with the decimal point.</p>\n    <ul>\n      <li>$2.46$ is missing the digit 8, making it invalid. (Correct Answer)</li>\n      <li>$2.468$, $246.8$, and $24.68$ each contain exactly $2, 4, 6, 8$ once, which makes them valid.</li>\n    </ul>\n  </div>",
-    "createdAt": "2026-05-17T12:13:26.496Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -264,7 +264,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since the tenths digit is 0 (which is less than 5), we round down to the nearest whole number, which is $4$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -286,7 +286,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since the tenths digit is 8 (which is 5 or greater), we round up to the nearest whole number, which is $5$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -308,7 +308,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since the tenths digit is 1 (less than 5), we round down to the nearest whole number, which is $2$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -330,7 +330,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since the tenths digit is 8 (5 or greater), we round up to the nearest whole number, which is $7$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -352,7 +352,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>To find the closest whole number, look at the tenths place: it is 4 (less than 5). Thus we round down to $5$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -374,7 +374,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Looking at the tenths place: it is 0 (less than 5). Thus we round down to $7$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -396,7 +396,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 5 tenths is greater than 4 tenths. Thus $0.5 > 0.42$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -418,7 +418,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 8 tenths is greater than 7 tenths. Thus $2.83 > 2.7$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -440,7 +440,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 9 tenths is greater than 0 tenths. Thus $7.9 > 7.09$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -462,7 +462,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 8 tenths is greater than 0 tenths. Thus $4.82 > 4.083$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -484,7 +484,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $8.56 = 8.5600$, we compare the thousandths place: 1 thousandth is greater than 0. Thus $8.5613 > 8.56$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -506,7 +506,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 2 tenths is greater than 0 tenths. Thus $6.2 > 6.002$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -528,7 +528,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 8 tenths is greater than 4 tenths. Thus $9.88867 > 9.453$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -550,7 +550,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 5 tenths is greater than 4 tenths. Thus $4.58 > 4.4$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -572,7 +572,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Since $185.34 = 185.3400$, we compare thousandths place: 6 thousandths is greater than 0. Thus $185.3468 > 185.34$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -594,7 +594,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare whole number parts: 12 is greater than 1. Thus $12.4 > 1.24$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -616,7 +616,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place (both are 7), then hundredths place: 8 hundredths is greater than 1 hundredth. Thus $323.78658 > 323.71189$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -638,7 +638,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 6 tenths is greater than 5 tenths. Thus $4.67 > 4.59999$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -660,7 +660,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the whole numbers: 0 is smallest, then 3, then 5, then 8, then 9. This instantly gives us: $0.3 < 3.4 < 5.09 < 8.3 < 9.264$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -682,7 +682,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>All whole numbers are 2. Compare the decimal parts: 08 hundredths is smallest. Then 40 hundredths ($2.40$), then 48 hundredths ($2.48$), then 80 hundredths ($2.8$), then 84 hundredths ($2.84$).</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -704,7 +704,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths: 6.0... are smallest. Comparing 6.000034 and 6.0859: 6.000034 has 0 hundredths, while 6.0859 has 8 hundredths. So $6.000034 < 6.0859$. Next is 6.34, then 6.52, then 6.99.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -726,7 +726,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 3 tenths ($5.3$) < 5 tenths ($5.55$) < 7 tenths ($5.777$) < 8 tenths. Compare 5.8143 and 5.89463: 1 hundredth is less than 9 hundredths. So $5.8143 < 5.89463$.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -748,7 +748,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.102534$: tenths digit is 1 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -770,7 +770,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.99$: tenths digit is 9 (5 or greater), so it is closer to 7.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -792,7 +792,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.6$: tenths digit is 6 (5 or greater), so it is closer to 7.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -814,7 +814,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.52$: tenths digit is 5 (5 or greater), so it is closer to 7.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -836,7 +836,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.01$: tenths digit is 0 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -858,7 +858,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.09879562$: tenths digit is 0 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -880,7 +880,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.49$: tenths digit is 4 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -902,7 +902,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.00003$: tenths digit is 0 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -924,7 +924,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.499989$: tenths digit is 4 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -946,7 +946,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.49494$: tenths digit is 4 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -968,7 +968,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.83112$: tenths digit is 8 (5 or greater), so it is closer to 7.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -990,7 +990,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place of $6.12109$: tenths digit is 1 (less than 5), so it is closer to 6.</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1012,7 +1012,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>8 tenths = 800 thousandths. (multiply by 100)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1034,7 +1034,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>8 tenths = 80 hundredths. (multiply by 10)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1056,7 +1056,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>8 tenths = 0.8 units. (divide by 10)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1078,7 +1078,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>8 tenths = 0.08 tens. (divide by 100)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1100,7 +1100,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>8 tenths = 0.008 hundreds. (divide by 1000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1122,7 +1122,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>8 tenths = 0.0008 thousands. (divide by 10000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1144,7 +1144,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>45 hundredths = 450 thousandths. (multiply by 10)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1166,7 +1166,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>45 hundredths = 4.5 tenths. (divide by 10)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1188,7 +1188,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>45 hundredths = 0.45 units. (divide by 100)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1210,7 +1210,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>45 hundredths = 0.045 tens. (divide by 1000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1232,7 +1232,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>45 hundredths = 0.0045 hundreds. (divide by 10000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1254,7 +1254,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>45 hundredths = 0.00045 thousands. (divide by 100000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1276,7 +1276,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>618 thousandths = 61.8 hundredths. (divide by 10)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1298,7 +1298,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>618 thousandths = 6.18 tenths. (divide by 100)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1320,7 +1320,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>618 thousandths = 0.618 units. (divide by 1000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1342,7 +1342,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>618 thousandths = 0.0618 tens. (divide by 10000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1364,7 +1364,7 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>618 thousandths = 0.00618 hundreds. (divide by 100000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
   },
   {
     "chapterId": "y7-7",
@@ -1386,7 +1386,1437 @@ export const allQuestions = [
     ],
     "answer": 0,
     "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>618 thousandths = 0.000618 thousands. (divide by 1000000)</p>\n    </div>",
-    "createdAt": "2026-05-17T12:13:26.497Z"
+    "createdAt": "2026-05-17T12:29:11.732Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $46.809$.",
+    "options": [
+      "Units",
+      "Tenths",
+      "Hundredths",
+      "Thousandths"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is located directly to the left of the decimal point, representing the units place ($6 \\times 1$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $683.712$.",
+    "options": [
+      "Hundreds",
+      "Tenths",
+      "Hundredths",
+      "Units"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the third digit to the left of the decimal point, representing the hundreds place ($6 \\times 100$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $3.6$.",
+    "options": [
+      "Tenths",
+      "Hundredths",
+      "Units",
+      "Thousandths"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the first digit to the right of the decimal point, representing the tenths place ($\\frac{6}{10}$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $7.8886$.",
+    "options": [
+      "Ten-thousandths",
+      "Tenths",
+      "Hundredths",
+      "Units"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the fourth digit to the right of the decimal point, representing the ten-thousandths place ($\\frac{6}{10000}$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $5.69$.",
+    "options": [
+      "Tenths",
+      "Hundredths",
+      "Units",
+      "Thousandths"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the first digit to the right of the decimal point, representing the tenths place ($\\frac{6}{10}$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $8.136$.",
+    "options": [
+      "Thousandths",
+      "Tenths",
+      "Hundredths",
+      "Units"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the third digit to the right of the decimal point, representing the thousandths place ($\\frac{6}{1000}$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $9.06$.",
+    "options": [
+      "Hundredths",
+      "Tenths",
+      "Units",
+      "Thousandths"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the second digit to the right of the decimal point, representing the hundredths place ($\\frac{6}{100}$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the place value of the digit $6$ in the number $2.4286$.",
+    "options": [
+      "Ten-thousandths",
+      "Tenths",
+      "Hundredths",
+      "Units"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>The digit 6 is the fourth digit to the right of the decimal point, representing the ten-thousandths place ($\\frac{6}{10000}$).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $0.9$ or $0.54$?",
+    "options": [
+      "$0.9$",
+      "$0.54$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 9 tenths is greater than 5 tenths. Thus $0.9 > 0.54$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $0.6$ or $0.87$?",
+    "options": [
+      "$0.87$",
+      "$0.6$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 8 tenths is greater than 6 tenths. Thus $0.87 > 0.6$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $4.6$ or $4.53$?",
+    "options": [
+      "$4.6$",
+      "$4.53$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 6 tenths is greater than 5 tenths. Thus $4.6 > 4.53$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $3.2$ or $3.1976$?",
+    "options": [
+      "$3.2$",
+      "$3.1976$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 2 tenths is greater than 1 tenth. Thus $3.2 > 3.1976$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $8.7$ or $8.31415$?",
+    "options": [
+      "$8.7$",
+      "$8.31415$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 7 tenths is greater than 3 tenths. Thus $8.7 > 8.31415$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $12.4$ or $12.63$?",
+    "options": [
+      "$12.63$",
+      "$12.4$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 6 tenths is greater than 4 tenths. Thus $12.63 > 12.4$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $2.00004$ or $2.04$?",
+    "options": [
+      "$2.04$",
+      "$2.00004$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place (both are 0), then hundredths place: 4 hundredths is greater than 0 hundredths. Thus $2.04 > 2.00004$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $5.67$ or $5.81$?",
+    "options": [
+      "$5.81$",
+      "$5.67$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 8 tenths is greater than 6 tenths. Thus $5.81 > 5.67$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Which of the following numbers is the larger one: $0.48$ or $0.32$?",
+    "options": [
+      "$0.48$",
+      "$0.32$",
+      "They are equal",
+      "None of these"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare tenths place: 4 tenths is greater than 3 tenths. Thus $0.48 > 0.32$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Order these numbers from smallest to largest: $4.56, 4.072, 4.068, 4.2, 4.007$.",
+    "options": [
+      "$4.007, 4.068, 4.072, 4.2, 4.56$",
+      "$4.007, 4.072, 4.068, 4.2, 4.56$",
+      "$4.007, 4.068, 4.072, 4.56, 4.2$",
+      "$4.068, 4.007, 4.072, 4.2, 4.56$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place: 4.0... is smallest. Then 4.2, then 4.56. Within the 4.0... numbers: $4.007$ has 0 hundredths, $4.068$ has 6 hundredths, and $4.072$ has 7 hundredths. So: $4.007 < 4.068 < 4.072 < 4.2 < 4.56$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7a",
+    "topicCode": "7A",
+    "topicTitle": "Place value and comparison of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Order these numbers from smallest to largest: $5.43, 5.304, 5.33333, 5.0003, 5.4$.",
+    "options": [
+      "$5.0003, 5.304, 5.33333, 5.4, 5.43$",
+      "$5.0003, 5.33333, 5.304, 5.4, 5.43$",
+      "$5.0003, 5.304, 5.33333, 5.43, 5.4$",
+      "$5.304, 5.0003, 5.33333, 5.4, 5.43$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Compare the tenths place: 5.0... is smallest. Next is 5.3... (comparing $5.304$ and $5.33333$: 0 hundredths is less than 3 hundredths, so $5.304 < 5.33333$). Finally 5.4 and 5.43. So: $5.0003 < 5.304 < 5.33333 < 5.4 < 5.43$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $0.7$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$\\frac{7}{10}$",
+      "$\\frac{7}{100}$",
+      "$\\frac{7}{5}$",
+      "$0.07$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$0.7$ has 1 decimal place, so the denominator is $10$. Thus, $0.7 = \\frac{7}{10}$ (already in simplest form).</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $0.75$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$\\frac{3}{4}$",
+      "$\\frac{75}{10}$",
+      "$\\frac{3}{5}$",
+      "$\\frac{1}{4}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$0.75 = \\frac{75}{100}$. Dividing the numerator and denominator by their greatest common divisor ($25$):<br>$\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $0.8$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$\\frac{4}{5}$",
+      "$\\frac{8}{100}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{5}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$0.8 = \\frac{8}{10}$. Simplifying by dividing numerator and denominator by $2$:<br>$\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $2.63$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$2\\frac{63}{100}$",
+      "$\\frac{263}{10}$",
+      "$2\\frac{63}{1000}$",
+      "$2\\frac{6.3}{10}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$2.63$ consists of the whole number $2$ and the decimal $0.63$. Since $0.63 = \\frac{63}{100}$ (cannot be simplified further), we get: $2\\frac{63}{100}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $3.1256$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$3\\frac{157}{1250}$",
+      "$3\\frac{314}{2500}$",
+      "$3\\frac{1256}{1000}$",
+      "$3\\frac{78}{625}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$3.1256 = 3\\frac{1256}{10000}$. Let us simplify $\\frac{1256}{10000}$:<br>Divide by $8$: $1256 \\div 8 = 157$ and $10000 \\div 8 = 1250$. <br>Therefore, the simplest mixed fraction is: $3\\frac{157}{1250}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $3.05$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$3\\frac{1}{20}$",
+      "$3\\frac{5}{10}$",
+      "$3\\frac{1}{200}$",
+      "$3\\frac{5}{100}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$3.05 = 3\\frac{5}{100}$. Simplify $\\frac{5}{100}$ by dividing both by $5$:<br>$\\frac{5 \\div 5}{100 \\div 5} = \\frac{1}{20}$. Thus, $3.05 = 3\\frac{1}{20}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $8.5$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$8\\frac{1}{2}$",
+      "$8\\frac{5}{100}$",
+      "$\\frac{85}{100}$",
+      "$8.5$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$8.5 = 8\\frac{5}{10} = 8\\frac{1}{2}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $12.408$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$12\\frac{51}{125}$",
+      "$12\\frac{102}{250}$",
+      "$12\\frac{408}{100}$",
+      "$12\\frac{51}{250}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$12.408 = 12\\frac{408}{1000}$. Simplify $\\frac{408}{1000}$ by dividing both by their GCD ($8$):<br>$408 \\div 8 = 51$ and $1000 \\div 8 = 125$. Thus, $12.408 = 12\\frac{51}{125}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $0.0008$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$\\frac{1}{1250}$",
+      "$\\frac{8}{1000}$",
+      "$\\frac{2}{2500}$",
+      "$\\frac{4}{5000}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$0.0008 = \\frac{8}{10000}$. Divide numerator and denominator by $8$:<br>$\\frac{8 \\div 8}{10000 \\div 8} = \\frac{1}{1250}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $5.003$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$5\\frac{3}{1000}$",
+      "$5\\frac{3}{100}$",
+      "$5\\frac{3}{10000}$",
+      "$\\frac{5003}{100}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$5.003$ has $3$ decimal places, representing thousandths. So, $5.003 = 5\\frac{3}{1000}$. Since $3$ is prime, it cannot be simplified further.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $8.8037$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$8\\frac{8037}{10000}$",
+      "$8\\frac{8037}{1000}$",
+      "$8\\frac{8037}{100000}$",
+      "$8\\frac{803.7}{1000}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$8.8037 = 8\\frac{8037}{10000}$. Since $8037$ and $10000$ share no common factors, this is in simplest form.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the decimal $12.625$ as a fraction or mixed fraction in simplest form.",
+    "options": [
+      "$12\\frac{5}{8}$",
+      "$12\\frac{5}{80}$",
+      "$12\\frac{625}{100}$",
+      "$12\\frac{1}{4}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$12.625 = 12\\frac{625}{1000}$. Simplify $\\frac{625}{1000}$ by dividing both by their GCD ($125$):<br>$625 \\div 125 = 5$ and $1000 \\div 125 = 8$. Thus, $12.625 = 12\\frac{5}{8}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{1}{4}$ as a decimal.",
+    "options": [
+      "$0.25$",
+      "$0.4$",
+      "$0.14$",
+      "$0.75$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $1$ by $4$: <br>$1 \\div 4 = 0.25$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{5}{2}$ as a decimal.",
+    "options": [
+      "$2.5$",
+      "$0.25$",
+      "$2.2$",
+      "$5.2$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $2$: <br>$5 \\div 2 = 2.5$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{3}{10}$ as a decimal.",
+    "options": [
+      "$0.3$",
+      "$0.03$",
+      "$3.0$",
+      "$0.003$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by $10$ moves the decimal point 1 place to the left:<br>$3 \\div 10 = 0.3$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{35}{100}$ as a decimal.",
+    "options": [
+      "$0.35$",
+      "$0.035$",
+      "$3.5$",
+      "$35.0$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by $100$ moves the decimal point 2 places to the left:<br>$35 \\div 100 = 0.35$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{8}{100}$ as a decimal.",
+    "options": [
+      "$0.08$",
+      "$0.8$",
+      "$0.008$",
+      "$8.0$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by $100$ moves the decimal point 2 places to the left:<br>$8 \\div 100 = 0.08$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{456}{1000}$ as a decimal.",
+    "options": [
+      "$0.456$",
+      "$0.0456$",
+      "$4.56$",
+      "$45.6$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by $1000$ moves the decimal point 3 places to the left:<br>$456 \\div 1000 = 0.456$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{3}{5}$ as a decimal.",
+    "options": [
+      "$0.6$",
+      "$0.3$",
+      "$0.06$",
+      "$0.5$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert the fraction to have a denominator of $10$:<br>$\\frac{3 \\times 2}{5 \\times 2} = \\frac{6}{10} = 0.6$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $2\\frac{3}{20}$ as a decimal.",
+    "options": [
+      "$2.15$",
+      "$2.3$",
+      "$2.03$",
+      "$2.75$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First convert the fractional part $\\frac{3}{20}$:<br>$\\frac{3 \\times 5}{20 \\times 5} = \\frac{15}{100} = 0.15$.<br>Adding to the whole number $2$: $2 + 0.15 = 2.15$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{24}{15}$ as a decimal.",
+    "options": [
+      "$1.6$",
+      "$1.4$",
+      "$1.8$",
+      "$2.4$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First simplify the fraction by dividing numerator and denominator by $3$:<br>$\\frac{24 \\div 3}{15 \\div 3} = \\frac{8}{5}$.<br>Next, convert to tenths:<br>$\\frac{8 \\times 2}{5 \\times 2} = \\frac{16}{10} = 1.6$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{1}{3}$ as a decimal.",
+    "options": [
+      "$0.\\dot{3}$",
+      "$0.3$",
+      "$0.33$",
+      "$0.\\dot{1}\\dot{3}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $1$ by $3$ using long division:<br>$1.000... \\div 3 = 0.3333...$<br>Since the digit $3$ repeats indefinitely, we write it as a recurring decimal: $0.\\dot{3}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{4}{3}$ as a decimal.",
+    "options": [
+      "$1.\\dot{3}$",
+      "$1.3$",
+      "$1.\\dot{4}$",
+      "$1.33$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert to mixed fraction first:<br>$\\frac{4}{3} = 1\\frac{1}{3}$.<br>Since $\\frac{1}{3} = 0.\\dot{3}$, adding the whole number $1$ gives: $1.\\dot{3}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Express the fraction $\\frac{3}{7}$ as a decimal.",
+    "options": [
+      "$0.\\dot{4}2857\\dot{1}$",
+      "$0.\\dot{3}2857\\dot{1}$",
+      "$0.428571$",
+      "$0.\\dot{4}28571\\dot{4}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $3$ by $7$ using long division:<br>$3.000... \\div 7 = 0.428571428571...$<br>The group of digits $428571$ repeats, so we place recurring dots on the first and last digits of the repeating sequence: $0.\\dot{4}2857\\dot{1}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7c",
+    "topicCode": "7C",
+    "topicTitle": "Addition and subtraction of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $5.827 + 4.65$.",
+    "options": [
+      "$10.477$",
+      "$10.432$",
+      "$9.477$",
+      "$10.577$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Align the decimal points and add:<br>$$\\begin{array}{r@{\\quad}l} &5.827 \\\\ + &4.650 \\\\ \\hline &10.477 \\end{array}$$</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7c",
+    "topicCode": "7C",
+    "topicTitle": "Addition and subtraction of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $45.783 - 39.94$.",
+    "options": [
+      "$5.843$",
+      "$5.883$",
+      "$6.843$",
+      "$5.243$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Align the decimal points and subtract:<br>$$\\begin{array}{r@{\\quad}l} &45.783 \\\\ - &39.940 \\\\ \\hline &\\phantom{0}5.843 \\end{array}$$</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7c",
+    "topicCode": "7C",
+    "topicTitle": "Addition and subtraction of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $3.8041 + 74.295$.",
+    "options": [
+      "$78.0991$",
+      "$78.991$",
+      "$77.0991$",
+      "$78.1091$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Align the decimal points and add:<br>$$\\begin{array}{r@{\\quad}l} &\\phantom{0}3.8041 \\\\ + &74.2950 \\\\ \\hline &78.0991 \\end{array}$$</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7e",
+    "topicCode": "7E",
+    "topicTitle": "Multiplication of one decimal by another",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $34.5 \\times 16$.",
+    "options": [
+      "$552$",
+      "$55.2$",
+      "$5520$",
+      "$345$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Step 1: Multiply ignoring the decimal point: $345 \\times 16 = 5520$.<br>Step 2: Re-introduce the single decimal place: $552.0 = 552$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7c",
+    "topicCode": "7C",
+    "topicTitle": "Addition and subtraction of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $345.006 - 287.45$.",
+    "options": [
+      "$57.556$",
+      "$57.550$",
+      "$58.556$",
+      "$57.656$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Align the decimal points and subtract:<br>$$\\begin{array}{r@{\\quad}l} &345.006 \\\\ - &287.450 \\\\ \\hline &\\phantom{0}57.556 \\end{array}$$</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7f",
+    "topicCode": "7F",
+    "topicTitle": "Division of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $86.55 \\div 0.5$.",
+    "options": [
+      "$173.1$",
+      "$43.275$",
+      "$1731$",
+      "$17.31$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Step 1: Multiply both numbers by 10 to clear the decimal in the divisor:<br>$(86.55 \\times 10) \\div (0.5 \\times 10) = 865.5 \\div 5$.<br>Step 2: Carry out long division:<br>$865.5 \\div 5 = 173.1$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7d",
+    "topicCode": "7D",
+    "topicTitle": "Multiplication and division by powers of 10",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $7.304 \\times 100$.",
+    "options": [
+      "$730.4$",
+      "$73.04$",
+      "$7304$",
+      "$0.07304$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiplying by $100$ shifts the decimal point two places to the right:<br>$7.304 \\rightarrow 73.04 \\rightarrow 730.4$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7c",
+    "topicCode": "7C",
+    "topicTitle": "Addition and subtraction of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $58.0387 + 253.4831$.",
+    "options": [
+      "$311.5218$",
+      "$311.4218$",
+      "$312.5218$",
+      "$301.5218$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Align the decimal points and add:<br>$$\\begin{array}{r@{\\quad}l} &\\phantom{0}58.0387 \\\\ + &253.4831 \\\\ \\hline &311.5218 \\end{array}$$</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7f",
+    "topicCode": "7F",
+    "topicTitle": "Division of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $38.65 \\div 0.3$.",
+    "options": [
+      "$128.8\\dot{3}$",
+      "$128.83$",
+      "$12.88\\dot{3}$",
+      "$128.\\dot{8}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Step 1: Multiply both numbers by 10:<br>$386.5 \\div 3$.<br>Step 2: Perform division:<br>$386.5 \\div 3 = 128.8333...$<br>Thus, $128.8\\dot{3}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7c",
+    "topicCode": "7C",
+    "topicTitle": "Addition and subtraction of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $14.0045 + 2.386884$.",
+    "options": [
+      "$16.391384$",
+      "$16.381384$",
+      "$16.391$",
+      "$15.391384$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Align and add:<br>$$\\begin{array}{r@{\\quad}l} &14.004500 \\\\ + &\\phantom{0}2.386884 \\\\ \\hline &16.391384 \\end{array}$$</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7e",
+    "topicCode": "7E",
+    "topicTitle": "Multiplication of one decimal by another",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $35.084 \\times 8$.",
+    "options": [
+      "$280.672$",
+      "$280.64$",
+      "$28.0672$",
+      "$2806.72$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Multiply ignoring decimal: $35084 \\times 8 = 280672$.<br>Reintroduce 3 decimal places: $280.672$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7f",
+    "topicCode": "7F",
+    "topicTitle": "Division of decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Calculate: $347.6812 \\div 0.04$.",
+    "options": [
+      "$8692.03$",
+      "$8692.3$",
+      "$869.203$",
+      "$86920.3$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Step 1: Multiply by 100 to clear the divisor:<br>$34768.12 \\div 4$.<br>Step 2: Carry out division:<br>$34768.12 \\div 4 = 8692.03$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the equivalent fraction in simplest form for the decimal $0.875$.",
+    "options": [
+      "$\\frac{7}{8}$",
+      "$\\frac{7}{80}$",
+      "$\\frac{875}{100}$",
+      "$\\frac{3}{4}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$0.875 = \\frac{875}{1000}$. Simplify by dividing both by their GCD ($125$):<br>$\\frac{875 \\div 125}{1000 \\div 125} = \\frac{7}{8}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the equivalent decimal for the fraction $\\frac{4}{5}$.",
+    "options": [
+      "$0.8$",
+      "$0.08$",
+      "$0.45$",
+      "$0.4$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert to tenths:<br>$\\frac{4 \\times 2}{5 \\times 2} = \\frac{8}{10} = 0.8$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the equivalent fraction in simplest form for the decimal $0.25$.",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{25}{10}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{3}{4}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$0.25 = \\frac{25}{100} = \\frac{1}{4}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the equivalent decimal for the mixed fraction $3\\frac{1}{4}$.",
+    "options": [
+      "$3.25$",
+      "$3.14$",
+      "$3.5$",
+      "$3.025$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$\\frac{1}{4} = 0.25$. Adding to the whole number $3$ gives: $3.25$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "question": "Find the equivalent mixed fraction in simplest form for the decimal $4.375$.",
+    "options": [
+      "$4\\frac{3}{8}$",
+      "$4\\frac{375}{100}$",
+      "$4\\frac{3}{4}$",
+      "$4\\frac{5}{8}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>$4.375 = 4\\frac{375}{1000}$. Simplify the fraction by dividing by $125$:<br>$\\frac{375 \\div 125}{1000 \\div 125} = \\frac{3}{8}$. Thus, $4\\frac{3}{8}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the fraction $\\frac{5}{6}$ as a recurring decimal.",
+    "options": [
+      "$0.8\\dot{3}$",
+      "$0.\\dot{8}3$",
+      "$0.83$",
+      "$0.\\dot{8}\\dot{3}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $6$ using division:<br>$5.000... \\div 6 = 0.8333...$<br>Since $3$ repeats, it is written as: $0.8\\dot{3}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.734Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the fraction $\\frac{4}{7}$ as a recurring decimal.",
+    "options": [
+      "$0.\\dot{5}7142\\dot{8}$",
+      "$0.571428$",
+      "$0.\\dot{5}71428\\dot{5}$",
+      "$0.\\dot{4}2857\\dot{1}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $4$ by $7$ using division:<br>$4.000... \\div 7 = 0.571428571428...$<br>The sequence $571428$ repeats. Thus, it is written as: $0.\\dot{5}7142\\dot{8}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.734Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the fraction $\\frac{5}{11}$ as a recurring decimal.",
+    "options": [
+      "$0.\\dot{4}\\dot{5}$",
+      "$0.45$",
+      "$0.4\\dot{5}$",
+      "$0.\\dot{4}5\\dot{4}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $11$ using division:<br>$5.000... \\div 11 = 0.454545...$<br>The digits $4$ and $5$ repeat. Thus: $0.\\dot{4}\\dot{5}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.734Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the fraction $\\frac{1}{6}$ as a recurring decimal.",
+    "options": [
+      "$0.1\\dot{6}$",
+      "$0.\\dot{1}6$",
+      "$0.16$",
+      "$0.\\dot{1}\\dot{6}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $1$ by $6$ using division:<br>$1.000... \\div 6 = 0.16666...$<br>Since $6$ repeats, we get: $0.1\\dot{6}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.734Z"
+  },
+  {
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7g",
+    "topicCode": "7G",
+    "topicTitle": "Recurring decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isActive": true,
+    "isManual": true,
+    "question": "Write the fraction $\\frac{5}{7}$ as a recurring decimal.",
+    "options": [
+      "$0.\\dot{7}1428\\dot{5}$",
+      "$0.714285$",
+      "$0.\\dot{7}14285\\dot{7}$",
+      "$0.\\dot{5}7142\\dot{8}$"
+    ],
+    "answer": 0,
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $7$ using division:<br>$5.000... \\div 7 = 0.714285714285...$<br>The sequence $714285$ repeats. Thus: $0.\\dot{7}1428\\dot{5}$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.734Z"
   }
 ];
 
@@ -1397,16 +2827,26 @@ export const importYear7Ch7A = async (forceReset = false) => {
     const qRef = collection(db, 'questions');
     
     if (forceReset) {
-      console.log('Force reset enabled. Deleting existing Y7 Ch7A questions...');
-      const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-7a')));
-      for (const doc of existingSnap.docs) {
-        await deleteDoc(doc.ref);
+      console.log('Force reset enabled. Deleting existing Y7 Ch7 (7a to 7g) review & place value questions...');
+      const topicsToDelete = ['y7-7a', 'y7-7b', 'y7-7c', 'y7-7d', 'y7-7e', 'y7-7f', 'y7-7g'];
+      for (const tId of topicsToDelete) {
+        const existingSnap = await getDocs(query(qRef, where('topicId', '==', tId)));
+        for (const doc of existingSnap.docs) {
+          await deleteDoc(doc.ref);
+        }
       }
-      console.log('Deleted ' + existingSnap.size + ' existing questions.');
+      console.log('Deleted existing Ch7 topic questions.');
     }
 
-    const existingSnap = await getDocs(query(qRef, where('topicId', '==', 'y7-7a')));
-    const existingQuestions = new Set(existingSnap.docs.map(doc => doc.data().question.trim()));
+    // To prevent duplicates, query all existing questions in Ch7 topics
+    const existingQuestions = new Set();
+    const topicsToCheck = ['y7-7a', 'y7-7b', 'y7-7c', 'y7-7d', 'y7-7e', 'y7-7f', 'y7-7g'];
+    for (const tId of topicsToCheck) {
+      const existingSnap = await getDocs(query(qRef, where('topicId', '==', tId)));
+      existingSnap.docs.forEach(doc => {
+        existingQuestions.add(doc.data().question.trim());
+      });
+    }
     
     for (const q of allQuestions) {
       if (!existingQuestions.has(q.question.trim())) {
