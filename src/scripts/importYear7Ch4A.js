@@ -408,6 +408,166 @@ export const allQuestions = [
     answer: 0,
     solution: `<div style="text-align: left;"><p><strong>Step 1: Understand the whole</strong><br>The whole is a single square block.</p><p><strong>Step 2: Understand the fraction</strong><br>To show $\\frac{1}{4}$, the whole must be divided into $4$ equal parts, and $1$ of those parts must be shaded.</p><p><strong>Step 3: Match the diagram</strong><br>The diagram showing a square divided into four smaller squares with one shaded correctly represents $\\frac{1}{4}$.</p></div>`,
     createdAt: new Date().toISOString()
+  },
+  {
+    chapterId: 'y7-4',
+    topicId: 'y7-4a',
+    topicCode: '4A',
+    topicTitle: 'What is a fraction?',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    isManual: true,
+    isActive: true,
+    question: `What fraction does the shaded area represent, given that the area of the large square is 1?`,
+    graphData: {
+      html: `<svg width="100" height="100" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
+  <rect width="80" height="80" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="0" y="0" width="60" height="80" fill="#93c5fd" />
+  <line x1="20" y1="0" x2="20" y2="80" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="40" y1="0" x2="40" y2="80" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="60" y1="0" x2="60" y2="80" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="20" x2="80" y2="20" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="40" x2="80" y2="40" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="60" x2="80" y2="60" stroke="#94a3b8" stroke-width="1"/>
+</svg>`
+    },
+    options: [
+      `$\\frac{3}{4}$`,
+      `$\\frac{12}{14}$`,
+      `$\\frac{1}{4}$`,
+      `$\\frac{4}{3}$`
+    ],
+    answer: 0,
+    solution: `<div style="text-align: left;"><p><strong>Step 1: Count the total number of equal parts</strong><br>The large square is divided into a $4 \\times 4$ grid, meaning there are $16$ equal parts in total.</p><p><strong>Step 2: Count the shaded parts</strong><br>There are $3$ columns shaded, and each column has $4$ squares. So, $3 \\times 4 = 12$ parts are shaded.</p><p><strong>Step 3: Write and simplify the fraction</strong><br>The fraction is $\\frac{12}{16}$. Dividing the numerator and denominator by $4$, we get $\\frac{3}{4}$.</p></div>`,
+    createdAt: new Date().toISOString()
+  },
+  {
+    chapterId: 'y7-4',
+    topicId: 'y7-4a',
+    topicCode: '4A',
+    topicTitle: 'What is a fraction?',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    difficulty: 'hard',
+    isManual: true,
+    isActive: true,
+    question: `What fraction does the shaded area represent, given that the area of the large square is 1?`,
+    graphData: {
+      html: `<div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+<svg width="80" height="80" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="0" y="20" width="60" height="20" fill="#93c5fd" />
+  <line x1="20" y1="0" x2="20" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="40" y1="0" x2="40" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="20" x2="60" y2="20" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="40" x2="60" y2="40" stroke="#94a3b8" stroke-width="1"/>
+</svg>
+<svg width="80" height="80" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" fill="#93c5fd" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="20" y1="0" x2="20" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="40" y1="0" x2="40" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="20" x2="60" y2="20" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="40" x2="60" y2="40" stroke="#94a3b8" stroke-width="1"/>
+</svg>
+</div>`
+    },
+    options: [
+      `$\\frac{4}{3}$`,
+      `$\\frac{12}{18}$`,
+      `$\\frac{2}{3}$`,
+      `$\\frac{5}{3}$`
+    ],
+    answer: 0,
+    solution: `<div style="text-align: left;"><p><strong>Step 1: Understand the whole</strong><br>We are told that the area of ONE large square is $1$. Each large square is divided into $9$ equal parts, so $1$ whole = $\\frac{9}{9}$.</p><p><strong>Step 2: Count the shaded parts</strong><br>The first square has $3$ shaded parts. The second square is fully shaded with $9$ parts. Total shaded parts = $3 + 9 = 12$.</p><p><strong>Step 3: Write and simplify the fraction</strong><br>The fraction is $\\frac{12}{9}$. Dividing numerator and denominator by $3$, we get $\\frac{4}{3}$ (which is also $1 \\frac{1}{3}$).</p></div>`,
+    createdAt: new Date().toISOString()
+  },
+  {
+    chapterId: 'y7-4',
+    topicId: 'y7-4a',
+    topicCode: '4A',
+    topicTitle: 'What is a fraction?',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    difficulty: 'hard',
+    isManual: true,
+    isActive: true,
+    question: `What fraction does the shaded area represent, given that the area of the large square is 1?`,
+    graphData: {
+      html: `<div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+<svg width="80" height="80" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <polygon points="0,0 0,30 30,30" fill="#93c5fd" />
+  <polygon points="30,0 30,30 60,30" fill="#93c5fd" />
+  <polygon points="0,30 0,60 30,60" fill="#93c5fd" />
+  <polygon points="30,30 30,60 60,60" fill="#93c5fd" />
+  <line x1="30" y1="0" x2="30" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="30" x2="60" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="0" x2="30" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="30" y1="0" x2="60" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="30" x2="30" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="30" y1="30" x2="60" y2="60" stroke="#94a3b8" stroke-width="1"/>
+</svg>
+<svg width="80" height="80" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <polygon points="0,0 0,30 30,30" fill="#93c5fd" />
+  <polygon points="30,0 30,30 60,30" fill="#93c5fd" />
+  <polygon points="0,30 0,60 30,60" fill="#93c5fd" />
+  <polygon points="30,30 30,60 60,60" fill="#93c5fd" />
+  <line x1="30" y1="0" x2="30" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="30" x2="60" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="0" x2="30" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="30" y1="0" x2="60" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="0" y1="30" x2="30" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="30" y1="30" x2="60" y2="60" stroke="#94a3b8" stroke-width="1"/>
+</svg>
+</div>`
+    },
+    options: [
+      `$1$`,
+      `$\\frac{1}{2}$`,
+      `$\\frac{8}{16}$`,
+      `$\\frac{1}{4}$`
+    ],
+    answer: 0,
+    solution: `<div style="text-align: left;"><p><strong>Step 1: Understand the whole</strong><br>One large square is the whole ($1$). It is divided into $8$ equal triangles.</p><p><strong>Step 2: Determine the shaded amount per square</strong><br>In each large square, there are $4$ shaded triangles. This means $\\frac{4}{8}$ or $\\frac{1}{2}$ of each square is shaded.</p><p><strong>Step 3: Combine the parts</strong><br>Since we have two squares, each with $\\frac{1}{2}$ shaded, the total shaded area is $\\frac{1}{2} + \\frac{1}{2} = 1$.</p></div>`,
+    createdAt: new Date().toISOString()
+  },
+  {
+    chapterId: 'y7-4',
+    topicId: 'y7-4a',
+    topicCode: '4A',
+    topicTitle: 'What is a fraction?',
+    year: 'Year 7',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    isManual: true,
+    isActive: true,
+    question: `What fraction does the shaded area represent, given that the area of the large square is 1?`,
+    graphData: {
+      html: `<svg width="120" height="120" viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
+  <g transform="translate(42.5, 42.5) rotate(45) translate(-30, -30)">
+    <rect width="60" height="60" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+    <polygon points="30,30 0,0 30,0" fill="#93c5fd" />
+    <polygon points="30,30 60,0 60,30" fill="#93c5fd" />
+    <polygon points="30,30 60,60 30,60" fill="#93c5fd" />
+    <polygon points="30,30 0,60 0,30" fill="#93c5fd" />
+    <line x1="0" y1="0" x2="60" y2="60" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="0" y1="60" x2="60" y2="0" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="30" y1="0" x2="30" y2="60" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="0" y1="30" x2="60" y2="30" stroke="#94a3b8" stroke-width="1"/>
+  </g>
+</svg>`
+    },
+    options: [
+      `$\\frac{1}{2}$`,
+      `$\\frac{1}{4}$`,
+      `$\\frac{3}{8}$`,
+      `$\\frac{4}{6}$`
+    ],
+    answer: 0,
+    solution: `<div style="text-align: left;"><p><strong>Step 1: Count the total number of equal parts</strong><br>The large square is divided into $8$ equal triangles.</p><p><strong>Step 2: Count the shaded parts</strong><br>There are $4$ shaded triangles forming a pinwheel pattern.</p><p><strong>Step 3: Write and simplify the fraction</strong><br>The fraction is $\\frac{4}{8}$. Dividing the numerator and denominator by $4$, we get $\\frac{1}{2}$.</p></div>`,
+    createdAt: new Date().toISOString()
   }
 ];
 
