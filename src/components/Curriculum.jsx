@@ -523,6 +523,27 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY7Ch4 = async (forceReset = false) => {
+    if (!isAdmin || isMigrating) return;
+    if (forceReset && !window.confirm("This will DELETE all existing Year 7 Chapter 4 questions and re-import them. Continue?")) return;
+    
+    setIsMigrating(true);
+    try {
+      const { importYear7Ch4 } = await import('../scripts/importYear7Ch4');
+      const count = await importYear7Ch4(forceReset);
+      if (count > 0) {
+        showToast(`✅ Successfully ${forceReset ? 'reset and ' : ''}added ${count} questions to Year 7 Chapter 4!`, 'success');
+      } else {
+        showToast('Year 7 Chapter 4 is already up to date.', 'info');
+      }
+    } catch (error) {
+      console.error('Error syncing Year 7 Ch4:', error);
+      showToast('Failed to sync Year 7 Chapter 4.', 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSyncY7Ch4A = async (forceReset = false) => {
     if (!isAdmin || isMigrating) return;
     if (forceReset && !window.confirm("This will DELETE all existing Year 7 Chapter 4A questions and re-import them. Continue?")) return;
@@ -1274,11 +1295,27 @@ const Curriculum = () => {
                         </div>
                       </div>
 
+                      {/* Year 7 Chapter 4 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH4</span>
+                          <span className="sync-card-title">Fractions - Part 1 (Entire Ch4)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch4(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch4(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
                       {/* Year 7 Chapter 4A */}
                       <div className="sync-card">
                         <div className="sync-card-info">
                           <span className="sync-card-badge y7">Y7 CH4A</span>
-                          <span className="sync-card-title">Decimals (4A)</span>
+                          <span className="sync-card-title">What is a Fraction? (4A)</span>
                         </div>
                         <div className="sync-card-actions">
                           <button onClick={() => handleSyncY7Ch4A(false)} disabled={isMigrating} className="sync-btn primary">
