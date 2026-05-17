@@ -1,7 +1,9 @@
 import { db } from '../firebase/config.js';
 import { collection, addDoc, getDocs, query, where, deleteDoc, doc, writeBatch } from 'firebase/firestore';
+import { allQuestions as questions2A } from './importYear7Ch2A.js';
 
 export const allQuestions = [
+  ...questions2A,
   // ==========================================
   // Q1: Find all factors of a number (y7-2a)
   // ==========================================
