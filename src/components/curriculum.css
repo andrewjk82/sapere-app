@@ -355,12 +355,24 @@
 .chapter-card__delete-btn { background: #fff1f2; color: #f43f5e; }
 .chapter-card__delete-btn:hover { background: #ffe4e6; color: #be123c; }
 
+.chapter-card__number-badge {
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+  margin-bottom: 2px;
+}
+
 .chapter-card__title {
+  font-family: var(--font-heading);
   margin: 0 0 4px;
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   font-weight: 800;
-  color: #1e1b4b;
-  line-height: 1.35;
+  color: var(--text-primary);
+  line-height: 1.3;
 }
 
 .chapter-card__meta {
