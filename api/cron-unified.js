@@ -2,7 +2,9 @@ import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
 
-const SIX_PM_BATCH_SIZE = 50;
+// Send at most 10 evening reminders per hourly run — the queue carries the
+// rest over to the next hour, spreading the load (avoids email throttling).
+const SIX_PM_BATCH_SIZE = 10;
 const CRON_STARTED_AT = Date.now();
 const CRON_SOFT_LIMIT_MS = 24_000;
 const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';
