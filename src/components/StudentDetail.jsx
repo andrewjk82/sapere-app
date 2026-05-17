@@ -713,6 +713,11 @@ const StudentDetail = ({ studentId, onBack }) => {
       (selectedChallenge.challengeType === "calc" ? "calc_stats" : "daily_stats");
 
     (async () => {
+      // Always resolve the loading state — otherwise the modal spinner hangs
+      // forever when the detail snapshot is missing or the read fails.
+      const markLoaded = () => setSelectedChallenge((prev) =>
+        prev && prev.id === statId ? { ...prev, detailSnapshotLoaded: true } : prev,
+      );
       try {
         const snap = await getDoc(
           doc(
@@ -725,7 +730,13 @@ const StudentDetail = ({ studentId, onBack }) => {
             "main",
           ),
         );
-        if (cancelled || !snap.exists()) return;
+        if (cancelled) return;
+        if (!snap.exists()) {
+          // Flag said a snapshot exists but the document is missing
+          // (e.g. the detail save failed after the quiz). Stop the spinner.
+          markLoaded();
+          return;
+        }
         const data = snap.data();
         setSelectedChallenge((prev) => {
           if (!prev || prev.id !== statId) return prev;
@@ -738,7 +749,8 @@ const StudentDetail = ({ studentId, onBack }) => {
           };
         });
       } catch (err) {
-        console.warn("Calc detail snapshot load failed:", err.code || err);
+        console.warn("Detail snapshot load failed:", err.code || err);
+        if (!cancelled) markLoaded();
       }
     })();
 
