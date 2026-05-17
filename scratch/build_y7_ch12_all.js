@@ -3,9 +3,35 @@ const fs = require('fs');
 const questions = [];
 
 // ========================================================
+// Helper: Clean raw LaTeX expressions into readable Unicode for SVGs
+// ========================================================
+function cleanLatexForSvg(str) {
+  if (!str) return '';
+  return str
+    .replace(/\\alpha/g, 'α')
+    .replace(/\\beta/g, 'β')
+    .replace(/\\gamma/g, 'γ')
+    .replace(/\\theta/g, 'θ')
+    .replace(/\\circ/g, '°')
+    .replace(/\^\\circ/g, '°')
+    .replace(/\^circ/g, '°')
+    .replace(/gamma/g, 'γ')
+    .replace(/alpha/g, 'α')
+    .replace(/beta/g, 'β')
+    .replace(/theta/g, 'θ')
+    .replace(/\\/g, '');
+}
+
+// ========================================================
 // Helper: Draw standard sleek SVG triangle with custom coordinates and labels
 // ========================================================
 function makeTriangleSVG({ ax, ay, bx, by, cx, cy, alabel, blabel, clabel, aangle, bangle, cangle, showRightAngle = false, extraLines = '' }) {
+  // Clean all LaTeX strings into standard clean Unicode for the SVG text nodes
+  const cleanA = cleanLatexForSvg(aangle);
+  const cleanB = cleanLatexForSvg(bangle);
+  const cleanC = cleanLatexForSvg(cangle);
+  const cleanExtra = cleanLatexForSvg(extraLines);
+
   // Let's create an elegant, responsive SVG wrapper
   const minX = Math.min(ax, bx, cx) - 20;
   const maxX = Math.max(ax, bx, cx) + 20;
@@ -17,17 +43,12 @@ function makeTriangleSVG({ ax, ay, bx, by, cx, cy, alabel, blabel, clabel, aangl
   // Render a clean square right angle marker if needed
   let rightAngleMarker = '';
   if (showRightAngle) {
-    // Assuming right angle is at C (cx, cy)
-    // Draw small square perpendicular lines
     const size = 12;
-    // Simple square along the lines CA and CB
-    // If cx,cy is at bottom-left:
     rightAngleMarker = `<path d="M ${cx + size} ${cy} L ${cx + size} ${cy - size} L ${cx} ${cy - size}" stroke="#475569" stroke-width="1.5" fill="none" />`;
   }
 
   return `<div style="display: flex; justify-content: center; margin: 16px 0;">
     <svg viewBox="${minX} ${minY} ${width} ${height}" width="100%" style="max-width: 280px; height: auto;" xmlns="http://www.w3.org/2000/svg">
-      <!-- Grid/Background (Optional subtle style) -->
       <defs>
         <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
           <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569" />
@@ -38,12 +59,7 @@ function makeTriangleSVG({ ax, ay, bx, by, cx, cy, alabel, blabel, clabel, aangl
       <polygon points="${ax},${ay} ${bx},${by} ${cx},${cy}" stroke="#1e293b" stroke-width="2.5" fill="#f8fafc" stroke-linejoin="round" />
       
       ${rightAngleMarker}
-      ${extraLines}
-
-      <!-- Angle Indicators (Arcs) -->
-      <!-- Vertex A Arc -->
-      <!-- Vertex B Arc -->
-      <!-- Vertex C Arc -->
+      ${cleanExtra}
 
       <!-- Text Labels for Vertices -->
       <text x="${ax}" y="${ay - 10}" font-family="Outfit, Inter, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">${alabel}</text>
@@ -51,9 +67,9 @@ function makeTriangleSVG({ ax, ay, bx, by, cx, cy, alabel, blabel, clabel, aangl
       <text x="${cx + 12}" y="${cy + 16}" font-family="Outfit, Inter, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">${clabel}</text>
 
       <!-- Angle Values -->
-      ${aangle ? `<text x="${ax}" y="${ay + 25}" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="600" text-anchor="middle">${aangle}</text>` : ''}
-      ${bangle ? `<text x="${bx + 25}" y="${by - 10}" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="600" text-anchor="middle">${bangle}</text>` : ''}
-      ${cangle ? `<text x="${cx - 25}" y="${cy - 10}" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="600" text-anchor="middle">${cangle}</text>` : ''}
+      ${cleanA ? `<text x="${ax}" y="${ay + 25}" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="600" text-anchor="middle">${cleanA}</text>` : ''}
+      ${cleanB ? `<text x="${bx + 25}" y="${by - 10}" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="600" text-anchor="middle">${cleanB}</text>` : ''}
+      ${cleanC ? `<text x="${cx - 25}" y="${cy - 10}" font-family="Outfit, Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="600" text-anchor="middle">${cleanC}</text>` : ''}
     </svg>
   </div>`;
 }
