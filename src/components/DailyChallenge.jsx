@@ -557,10 +557,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     let cancelled = false;
     (async () => {
+      // Always resolve the loading state so the modal never spins forever
+      // when the detail snapshot is missing or the read fails.
+      const markLoaded = () => setSelectedChallenge(prev =>
+        prev && prev.id === selectedChallenge.id ? { ...prev, detailSnapshotLoaded: true } : prev);
       try {
         const snapshotRef = doc(db, 'users', user.uid, statColName, dateId, 'detail_snapshot', 'main');
         const snap = await getDoc(snapshotRef);
-        if (cancelled || !snap.exists()) return;
+        if (cancelled) return;
+        if (!snap.exists()) {
+          markLoaded();
+          return;
+        }
         const data = snap.data();
         setSelectedChallenge(prev => {
           if (!prev || prev.id !== selectedChallenge.id) return prev;
@@ -574,7 +582,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           };
         });
       } catch (e) {
-        console.warn('calc detail snapshot fetch failed (non-fatal):', e?.code || e);
+        console.warn('detail snapshot fetch failed (non-fatal):', e?.code || e);
+        if (!cancelled) markLoaded();
       }
     })();
 
