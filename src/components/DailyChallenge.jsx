@@ -1092,6 +1092,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     } else if (isShortAnswer) {
       correct = answersMatch(optionText, currentQ.answer);
       if (correct) setScore(prev => prev + 1);
+    } else if (currentQ?.type === 'interactive_grid') {
+      correct = Array.isArray(optionText) && optionText.length === parseInt(currentQ.answer, 10);
+      if (correct) setScore(prev => prev + 1);
     } else {
       // Use _shuffledAnswer (text-normalised) if options were shuffled, else original answer.
       const effectiveAnswer = currentQ._shuffledAnswer !== undefined ? currentQ._shuffledAnswer : currentQ.answer;

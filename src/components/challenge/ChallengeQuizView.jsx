@@ -11,6 +11,7 @@ import {
   getOptionText,
   getOptionImage
 } from '../../utils/challengeUtils';
+import InteractiveFractionGrid from './InteractiveFractionGrid';
 
 const ChallengeQuizView = ({
   step,
@@ -383,6 +384,28 @@ const ChallengeQuizView = ({
                 </div>
               )}
             </div>
+          ) : currentQuestion?.type === 'interactive_grid' ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', alignItems: 'center' }}>
+              <InteractiveFractionGrid 
+                gridConfig={currentQuestion.gridConfig || { type: 'rect', rows: 2, cols: 2 }}
+                selectedCells={Array.isArray(step === 'feedback' ? userAnswers[currentIdx] : selectedOption) ? (step === 'feedback' ? userAnswers[currentIdx] : selectedOption) : []}
+                onChange={setSelectedOption}
+                disabled={step === 'feedback'}
+              />
+              <p style={{ color: '#64748b', fontSize: '0.95rem', textAlign: 'center', margin: 0, fontWeight: 600 }}>
+                {step === 'feedback' ? '' : 'Tap the panels to shade the correct fraction.'}
+              </p>
+              {step !== 'feedback' && (
+                <button 
+                  onClick={() => handleAnswer(selectedOption)}
+                  disabled={!Array.isArray(selectedOption) || selectedOption.length === 0}
+                  className="app-button app-button--primary"
+                  style={{ padding: '18px', borderRadius: '20px', width: '100%', maxWidth: '300px' }}
+                >
+                  Submit Shading
+                </button>
+              )}
+            </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
               {displayOptions.map((opt, i) => {
@@ -482,7 +505,7 @@ const ChallengeQuizView = ({
                               ? currentQuestion._shuffledAnswer
                               : (currentQuestion.type === 'multiple_choice' && currentQuestion.isManual
                                   ? getOptionText(getOptions(currentQuestion)[parseInt(currentQuestion.answer)])
-                                  : currentQuestion.answer)
+                                  : (currentQuestion.type === 'interactive_grid' ? `${currentQuestion.answer} panels shaded` : currentQuestion.answer))
                           } />
                         </p>
                       </div>
