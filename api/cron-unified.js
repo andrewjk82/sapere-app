@@ -93,7 +93,9 @@ export default async function handler(req, res) {
     // PART 1: 2-Hour Reminder
     // ══════════════════════════════════════════════════════════════════════
     const targetMin = sydTotalMin + 120;
-    const windowMin = 15;
+    // 30 = half the hourly cron interval → consecutive runs tile every session
+    // time with no gap. The reminderSent flag dedupes the 1-minute overlap.
+    const windowMin = 30;
     const tomorrowUTC = new Date(nowUTC.getTime() + 24 * 60 * 60 * 1000);
     const tomorrowStr = getSydneyDateStr(tomorrowUTC);
 
