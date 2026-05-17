@@ -380,12 +380,14 @@ const Curriculum = () => {
     }
   };
 
-  const handleSyncY7Ch2 = async () => {
+  const handleSyncY7Ch2 = async (forceReset = false) => {
     if (!isAdmin || isMigrating) return;
     setIsMigrating(true);
     try {
-      const count = await importYear7Ch2();
-      if (count > 0) {
+      const count = await importYear7Ch2(forceReset);
+      if (forceReset) {
+        showToast(`🗑️ Reset & successfully synced ${count} questions to Year 7 Chapter 2!`, 'success');
+      } else if (count > 0) {
         showToast(`✅ Successfully added ${count} new questions to Year 7 Chapter 2!`, 'success');
       } else {
         showToast('Year 7 Chapter 2 is already up to date.', 'info');
@@ -1191,11 +1193,14 @@ const Curriculum = () => {
                       <div className="sync-card">
                         <div className="sync-card-info">
                           <span className="sync-card-badge y7">Y7 CH2</span>
-                          <span className="sync-card-title">Angles (Entire Ch2)</span>
+                          <span className="sync-card-title">Factors, Multiples & Primes (Entire Ch2)</span>
                         </div>
                         <div className="sync-card-actions">
-                          <button onClick={handleSyncY7Ch2} disabled={isMigrating} className="sync-btn primary">
+                          <button onClick={() => handleSyncY7Ch2(false)} disabled={isMigrating} className="sync-btn primary">
                             🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch2(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
                           </button>
                         </div>
                       </div>
@@ -1204,7 +1209,7 @@ const Curriculum = () => {
                       <div className="sync-card">
                         <div className="sync-card-info">
                           <span className="sync-card-badge y7">Y7 CH2A</span>
-                          <span className="sync-card-title">Angles and Lines (2A)</span>
+                          <span className="sync-card-title">Factors and Multiples (2A)</span>
                         </div>
                         <div className="sync-card-actions">
                           <button onClick={() => handleSyncY7Ch2A(false)} disabled={isMigrating} className="sync-btn primary">
