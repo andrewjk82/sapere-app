@@ -80,6 +80,7 @@ const Curriculum = () => {
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
   const [showAdminTools, setShowAdminTools] = useState(false);
+  const [adminActiveTab, setAdminActiveTab] = useState('y7');
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
@@ -1099,132 +1100,468 @@ const Curriculum = () => {
           {/* ── Main content ── */}
           <div className="curriculum-content">
             {/* Admin tools — collapsed by default */}
+            {/* Admin tools — collapsed by default */}
             {showAdminTools && (
-              <div className="curriculum-admin-tools">
-                {!(questionCounts['y11a-1'] || questionCounts['y11-1']) && (
-                  <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef3c7', color: '#92400e', borderColor: '#fde68a' }}>
-                    {isMigrating ? 'Updating…' : '⚠ Seed Ch1 Algebra'}
-                  </button>
-                )}
-                <button onClick={handleSyncY11Ch4A} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef3c7', color: '#92400e', borderColor: '#fde68a' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Ch4A'}
-                </button>
-                {!(questionCounts['y11a-2'] || questionCounts['y11-2']) && (
-                  <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                    {isMigrating ? 'Updating…' : '⚠ Seed Ch2 Surds'}
-                  </button>
-                )}
-                {!(questionCounts['y11a-3'] || questionCounts['y11-3']) && (
-                  <button onClick={handleSeedCh3Questions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#d1fae5' }}>
-                    {isMigrating ? 'Updating…' : '⚠ Seed Ch3 Trig'}
-                  </button>
-                )}
-                {!questionCounts['y10-1'] && (
-                  <button onClick={handleSeedY10Ch1Questions} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fff1f2', color: '#e11d48', borderColor: '#ffe4e6' }}>
-                    {isMigrating ? 'Updating…' : '⚠ Seed Y10 Ch1'}
-                  </button>
-                )}
-                <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
-                  {isMigrating ? 'Syncing…' : `🔄 Sync Y10 Ch3${(questionCounts['y10-3'] || 0) < 169 ? ` (${questionCounts['y10-3'] || 0}/169)` : ''}`}
-                </button>
-                <button onClick={handleSyncY10Ch4} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef2f2', color: '#dc2626', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y10 Ch4'}
-                </button>
-                <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#ecfdf5', color: '#059669', borderColor: '#a7f3d0' }}>
-                  {isMigrating ? 'Adding…' : '⚠ Add Curve Q'}
-                </button>
-                <button onClick={handleSyncYear9Ch1} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fef9c3', color: '#854d0e', borderColor: '#fde68a' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y9 Ch1'}
-                </button>
-                <button onClick={handleSyncY7Ch1} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch1'}
-                </button>
-                <button onClick={() => handleSyncY7Ch1A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch1A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch1A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch1A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch1B(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch1B'}
-                </button>
-                <button onClick={() => handleSyncY7Ch1B(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch1B'}
-                </button>
-                <button onClick={handleSyncY7Ch2} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch2'}
-                </button>
-                <button onClick={() => handleSyncY7Ch2A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch2A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch2A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch2A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch3A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch3A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch3A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch3A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch4A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch4A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch4A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch4A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch5A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch5A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch5A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch5A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch6A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch6A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch6A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch6A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch7A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch7A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch7A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch7A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch8A(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f5f3ff', color: '#6366f1', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y7 Ch8A'}
-                </button>
-                <button onClick={() => handleSyncY7Ch8A(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y7 Ch8A'}
-                </button>
-                <button onClick={() => handleSyncY8Ch1(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y8 Ch1'}
-                </button>
-                <button onClick={() => handleSyncY8Ch1(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y8'}
-                </button>
-                <button onClick={() => handleSyncY11AdvCh1(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch1'}
-                </button>
-                <button onClick={() => handleSyncY11AdvCh1(true)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fee2e2', color: '#b91c1c', borderColor: '#fecaca' }}>
-                  {isMigrating ? 'Resetting…' : '🗑️ Reset & Sync Y11 Adv'}
-                </button>
-                <button onClick={() => handleSyncY11AdvCh2(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch2'}
-                </button>
-                <button onClick={() => handleSyncY11AdvCh3(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#fdf9ff', color: '#7c3aed', borderColor: '#ddd6fe' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch3'}
-                </button>
-                <button onClick={() => handleSyncY11AdvCh4(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdfa', color: '#0d9488', borderColor: '#ccfbf1' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch4'}
-                </button>
-                <button onClick={() => handleSyncY11AdvCh5(false)} disabled={isMigrating} className="curriculum-admin-btn" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
-                  {isMigrating ? 'Syncing…' : '🔄 Sync Y11 Adv Ch5'}
-                </button>
-                {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
-                  <button onClick={handleSyncSelectedYear} className="curriculum-admin-btn" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
-                    Sync {selectedYear} {['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : ''}
-                  </button>
-                )}
+              <div className="curriculum-admin-panel">
+                <div className="admin-panel-header">
+                  <div className="admin-panel-title">🛠️ Curriculum Sync Dashboard</div>
+                  <div className="admin-tabs">
+                    <button 
+                      className={`admin-tab-btn ${adminActiveTab === 'y7' ? 'active' : ''}`}
+                      onClick={() => setAdminActiveTab('y7')}
+                    >
+                      Year 7
+                    </button>
+                    <button 
+                      className={`admin-tab-btn ${adminActiveTab === 'y8_9' ? 'active' : ''}`}
+                      onClick={() => setAdminActiveTab('y8_9')}
+                    >
+                      Year 8 & 9
+                    </button>
+                    <button 
+                      className={`admin-tab-btn ${adminActiveTab === 'y10' ? 'active' : ''}`}
+                      onClick={() => setAdminActiveTab('y10')}
+                    >
+                      Year 10
+                    </button>
+                    <button 
+                      className={`admin-tab-btn ${adminActiveTab === 'y11_12' ? 'active' : ''}`}
+                      onClick={() => setAdminActiveTab('y11_12')}
+                    >
+                      Year 11 & 12
+                    </button>
+                    <button 
+                      className={`admin-tab-btn ${adminActiveTab === 'utils' ? 'active' : ''}`}
+                      onClick={() => setAdminActiveTab('utils')}
+                    >
+                      Utilities
+                    </button>
+                  </div>
+                </div>
+
+                <div className="admin-panel-body">
+                  {adminActiveTab === 'y7' && (
+                    <div className="admin-sync-grid">
+                      {/* Year 7 Chapter 1 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH1</span>
+                          <span className="sync-card-title">Whole Numbers (Entire Ch1)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSyncY7Ch1} disabled={isMigrating} className="sync-btn primary">
+                            {isMigrating ? 'Syncing…' : '🔄 Sync'}
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 1A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH1A</span>
+                          <span className="sync-card-title">The Number Line (1A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch1A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch1A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 1B */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH1B-L</span>
+                          <span className="sync-card-title">Addition to Order of Operations (1B-1L)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch1B(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch1B(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 2 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH2</span>
+                          <span className="sync-card-title">Angles (Entire Ch2)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSyncY7Ch2} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 2A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH2A</span>
+                          <span className="sync-card-title">Angles and Lines (2A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch2A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch2A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 3A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH3A</span>
+                          <span className="sync-card-title">Fractions (3A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch3A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch3A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 4A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH4A</span>
+                          <span className="sync-card-title">Decimals (4A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch4A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch4A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 5A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH5A</span>
+                          <span className="sync-card-title">Equations (5A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch5A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch5A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 6A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH6A</span>
+                          <span className="sync-card-title">Fractions/Decimals/Percentages (6A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch6A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch6A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 7A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH7A</span>
+                          <span className="sync-card-title">Ratios (7A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch7A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch7A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 7 Chapter 8A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y7">Y7 CH8A</span>
+                          <span className="sync-card-title">Equations & Inequalities (8A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY7Ch8A(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY7Ch8A(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {adminActiveTab === 'y8_9' && (
+                    <div className="admin-sync-grid">
+                      {/* Year 8 Chapter 1 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y8">Y8 CH1</span>
+                          <span className="sync-card-title">Integers (Ch1)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY8Ch1(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY8Ch1(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset & Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 9 Chapter 1 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y9">Y9 CH1</span>
+                          <span className="sync-card-title">Indices (Ch1)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSyncYear9Ch1} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {adminActiveTab === 'y10' && (
+                    <div className="admin-sync-grid">
+                      {/* Year 10 Chapter 1 Seed */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y10">Y10 CH1</span>
+                          <span className="sync-card-title">Algebra (Seed Data)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y10-1'] ? (
+                            <button onClick={handleSeedY10Ch1Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y10 Ch1
+                            </button>
+                          ) : (
+                            <span className="sync-card-status">Active ({questionCounts['y10-1']} Qs)</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 10 Chapter 3 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y10">Y10 CH3</span>
+                          <span className="sync-card-title">Financial Maths (Ch3)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSyncY10Ch3} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync {(questionCounts['y10-3'] || 0) < 169 ? ` (${questionCounts['y10-3'] || 0})` : ''}
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 10 Chapter 4 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y10">Y10 CH4</span>
+                          <span className="sync-card-title">Geometry (Ch4)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSyncY10Ch4} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {adminActiveTab === 'y11_12' && (
+                    <div className="admin-sync-grid">
+                      {/* Year 11 Chapter 1 Algebra */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 CH1</span>
+                          <span className="sync-card-title">Algebra (Seed Ch1)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!(questionCounts['y11a-1'] || questionCounts['y11-1']) ? (
+                            <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Ch1
+                            </button>
+                          ) : (
+                            <span className="sync-card-status">Active</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 11 Chapter 2 Surds */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 CH2</span>
+                          <span className="sync-card-title">Surds & Indices (Seed Ch2)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!(questionCounts['y11a-2'] || questionCounts['y11-2']) ? (
+                            <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Ch2
+                            </button>
+                          ) : (
+                            <span className="sync-card-status">Active</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 11 Chapter 3 Trig */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 CH3</span>
+                          <span className="sync-card-title">Trigonometry (Seed Ch3)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!(questionCounts['y11a-3'] || questionCounts['y11-3']) ? (
+                            <button onClick={handleSeedCh3Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Ch3
+                            </button>
+                          ) : (
+                            <span className="sync-card-status">Active</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 11 Chapter 4A */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 CH4A</span>
+                          <span className="sync-card-title">Functions & Graphs (Ch4A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSyncY11Ch4A} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 11 Advanced Chapter 1 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 ADV CH1</span>
+                          <span className="sync-card-title">Advanced Arithmetic (Ch1)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY11AdvCh1(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                          <button onClick={() => handleSyncY11AdvCh1(true)} disabled={isMigrating} className="sync-btn danger">
+                            🗑️ Reset
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 11 Advanced Chapter 2 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 ADV CH2</span>
+                          <span className="sync-card-title">Advanced Algebra (Ch2)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY11AdvCh2(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 11 Advanced Chapter 3 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 ADV CH3</span>
+                          <span className="sync-card-title">Advanced Functions (Ch3)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY11AdvCh3(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 11 Advanced Chapter 4 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 ADV CH4</span>
+                          <span className="sync-card-title">Advanced Trigonometry (Ch4)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY11AdvCh4(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Year 11 Advanced Chapter 5 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 ADV CH5</span>
+                          <span className="sync-card-title">Advanced Calculus (Ch5)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={() => handleSyncY11AdvCh5(false)} disabled={isMigrating} className="sync-btn primary">
+                            🔄 Sync
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {adminActiveTab === 'utils' && (
+                    <div className="admin-sync-grid">
+                      {/* Add Curve Q */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge generic">UTILS</span>
+                          <span className="sync-card-title">Add Curve Fitting Questions</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="sync-btn success">
+                            ➕ Add Curve Q
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Sync Selected Year */}
+                      {((['Year 11', 'Year 12'].includes(selectedYear) && CURRICULUM_DATA[selectedYear]?.[selectedCourse]) || Array.isArray(CURRICULUM_DATA[selectedYear])) && (
+                        <div className="sync-card">
+                          <div className="sync-card-info">
+                            <span className="sync-card-badge generic">YEAR SYNC</span>
+                            <span className="sync-card-title">Sync entire {selectedYear} ({['Year 11', 'Year 12'].includes(selectedYear) ? selectedCourse : 'Core'})</span>
+                          </div>
+                          <div className="sync-card-actions">
+                            <button onClick={handleSyncSelectedYear} className="sync-btn primary-grad">
+                              🔄 Sync {selectedYear}
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
             )}
 
