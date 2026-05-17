@@ -375,7 +375,8 @@ export const allQuestions = [
     difficulty: 'medium',
     isManual: true,
     isActive: true,
-    question: `Choose the diagram that correctly shows $\\frac{8}{7}$ if the whole is ${createGridHtml(7, 0)}.`,
+    question: `Choose the diagram that correctly shows $\\frac{8}{7}$ if the whole is shown below:`,
+    graphData: { html: createGridHtml(7, 0) },
     options: [
       createGridHtml(6, 6),
       `<div style="display: flex; flex-direction: column; gap: 4px; align-items: flex-start;">${createGridHtml(7, 7)}${createGridHtml(7, 1)}</div>`,
@@ -396,7 +397,8 @@ export const allQuestions = [
     difficulty: 'easy',
     isManual: true,
     isActive: true,
-    question: `Choose the diagram that correctly shows $\\frac{1}{4}$ if the whole is ${createGridHtml(1, 0)}.`,
+    question: `Choose the diagram that correctly shows $\\frac{1}{4}$ if the whole is shown below:`,
+    graphData: { html: createGridHtml(1, 0) },
     options: [
       `<div style="display: inline-grid; grid-template-columns: repeat(2, 14px); grid-template-rows: repeat(2, 14px); gap: 1px; background: #94a3b8; border: 1px solid #94a3b8; padding: 1px; vertical-align: middle;"><div style="background: #93c5fd; width: 14px; height: 14px;"></div><div style="background: #ffffff; width: 14px; height: 14px;"></div><div style="background: #ffffff; width: 14px; height: 14px;"></div><div style="background: #ffffff; width: 14px; height: 14px;"></div></div>`,
       `<div style="display: flex; gap: 4px;">${createGridHtml(1, 1)}${createGridHtml(1, 1)}${createGridHtml(1, 1)}${createGridHtml(1, 1)}</div>`,
