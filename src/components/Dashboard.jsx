@@ -6,6 +6,7 @@ import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useAdminFeed } from '../context/AdminFeedContext';
+import { useProfile } from '../context/ProfileContext';
 import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 
@@ -21,7 +22,7 @@ import { seedLeaderboardFromExistingData } from '../services/leaderboardService'
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
-  const [profile, setProfile] = useState(null);
+  const { profile } = useProfile();
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -172,13 +173,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return { nextLesson: next, lastLesson: past };
   }, [studentSessions]);
 
-  useEffect(() => {
-    if (!user?.uid) return undefined;
-    const ref = doc(db, 'users', user.uid);
-    return onSnapshot(ref, (snap) => {
-      setProfile(snap.exists() ? snap.data() : null);
-    });
-  }, [user?.uid]);
+  // profile comes from the shared ProfileContext — no per-component listener.
 
   const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
 

@@ -16,7 +16,8 @@ import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
+import { useProfile } from '../context/ProfileContext';
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 
@@ -55,7 +56,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
   const { user, isAdmin, logout } = useAuth();
   const { gradingCount, reportCount } = useAdminFeed();
   const [avatarOpen, setAvatarOpen] = useState(false);
-  const [profile, setProfile] = useState(null);
+  const { profile } = useProfile();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
   useEffect(() => {
@@ -63,16 +64,8 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  // Badge counts come from AdminFeedContext (single shared listener);
-  // no per-component grading_queue / reports subscription needed.
-
-  useEffect(() => {
-    if (!user?.uid) return undefined;
-    const ref = doc(db, 'users', user.uid);
-    return onSnapshot(ref, (snap) => {
-      setProfile(snap.exists() ? snap.data() : null);
-    });
-  }, [user?.uid]);
+  // Profile + admin badge counts both come from shared context providers
+  // (ProfileContext / AdminFeedContext) — no per-component listeners.
 
   const fallbackUrl = useMemo(() => {
     if (user?.photoURL) return user.photoURL;

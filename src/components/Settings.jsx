@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
+import { useProfile } from '../context/ProfileContext';
 import { db, requestNotificationPermission } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
@@ -13,7 +14,7 @@ const Settings = () => {
   const [loading, setLoading] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  const [profile, setProfile] = useState(null);
+  const { profile } = useProfile();
   const [editData, setEditData] = useState({
     firstName: '',
     lastName: '',
@@ -38,26 +39,22 @@ const Settings = () => {
     ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
     : fallbackUrl);
 
+  // profile comes from the shared ProfileContext; mirror it into the
+  // editable form fields whenever it changes.
   useEffect(() => {
-    if (!user?.uid) return undefined;
-    const ref = doc(db, 'users', user.uid);
-    return onSnapshot(ref, (snap) => {
-      const data = snap.exists() ? snap.data() : null;
-      setProfile(data);
-      if (data) {
-        setEditData({
-          firstName: data.firstName || '',
-          lastName: data.lastName || '',
-          phone: data.phone || '',
-          address: data.address || '',
-          school: data.school || '',
-          year: data.year || '',
-          dreamJob: data.dreamJob || '',
-          dreamImageUrl: data.dreamImageUrl || ''
-        });
-      }
-    });
-  }, [user?.uid]);
+    if (profile) {
+      setEditData({
+        firstName: profile.firstName || '',
+        lastName: profile.lastName || '',
+        phone: profile.phone || '',
+        address: profile.address || '',
+        school: profile.school || '',
+        year: profile.year || '',
+        dreamJob: profile.dreamJob || '',
+        dreamImageUrl: profile.dreamImageUrl || ''
+      });
+    }
+  }, [profile]);
 
   useEffect(() => {
     if (!isAdmin) return;
