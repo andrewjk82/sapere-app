@@ -5,6 +5,7 @@ import { useAuth } from './context/AuthContext';
 import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
+import ErrorBoundary from './components/ErrorBoundary';
 import Dashboard from './components/Dashboard';
 import StudentList from './components/StudentList';
 import Schedule from './components/Schedule';
@@ -815,7 +816,9 @@ function App() {
         unreadCount={unreadCount}
       />
       <div className="app-shell__main">
-        {renderContent()}
+        <ErrorBoundary key={activeTab}>
+          {renderContent()}
+        </ErrorBoundary>
       </div>
 
       {/* ── Version Update Banner ── */}
