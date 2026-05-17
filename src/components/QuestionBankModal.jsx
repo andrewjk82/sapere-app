@@ -183,7 +183,43 @@ const StudentViewPreview = ({ question, onClose }) => {
             )}
           </div>
 
-          {question.type === 'short_answer' ? (
+          {question.subQuestions?.length > 0 ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              {question.subQuestions.map((sq, sIdx) => (
+                <div key={sq.id || sIdx} style={{ padding: '20px', borderRadius: '20px', background: 'white', border: '1px solid #e2e8f0' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+                    <div style={{ width: '24px', height: '24px', borderRadius: '6px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 900, flexShrink: 0 }}>
+                      {String.fromCharCode(97 + sIdx)}
+                    </div>
+                    <MathView content={sq.question} style={{ fontWeight: 700, color: '#1e293b', fontSize: '0.95rem' }} />
+                  </div>
+                  {sq.type === 'multiple_choice' ? (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '8px' }}>
+                      {(sq.options || []).map((opt, oIdx) => (
+                        <div
+                          key={oIdx}
+                          style={{
+                            padding: '8px 12px',
+                            borderRadius: '8px',
+                            border: '1px solid #e2e8f0',
+                            background: 'white',
+                            color: '#64748b',
+                            fontWeight: 700,
+                            fontSize: '0.8rem',
+                            textAlign: 'left'
+                          }}
+                        >
+                          {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <input type="text" placeholder="Type answer..." style={{ width: '100%', padding: '10px 14px', borderRadius: '8px', border: '1px solid #e2e8f0', background: 'white', fontSize: '0.85rem' }} disabled />
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : question.type === 'short_answer' ? (
             <input type="text" placeholder="Type answer here..." style={{ width: '100%', padding: '20px', borderRadius: '20px', border: '2px solid #e2e8f0', background: 'white', outline: 'none', fontSize: '1.1rem', fontWeight: 700, textAlign: 'center' }} disabled />
           ) : (
             <div style={{ display: 'grid', gap: '12px' }}>
