@@ -2368,6 +2368,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                       </div>
                     </div>
                   </div>
+                  {(student?.calculationEnabled ?? true) !== false && (
                   <div
                     style={{
                       display: "grid",
@@ -2576,6 +2577,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                       },
                     )}
                   </div>
+                  )}
                 </div>
               </div>
             </div>
