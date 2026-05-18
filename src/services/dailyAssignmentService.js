@@ -27,6 +27,26 @@ const ASSIGNMENT_CACHE_VERSION = 1;
 
 const getDateKey = (date = new Date()) => date.toLocaleDateString("en-CA");
 
+// Recursively strips `undefined` values — Firestore's setDoc/updateDoc reject
+// them ("Unsupported field value: undefined"). Generated questions sometimes
+// carry undefined optional fields (hint/extras/etc.).
+const stripUndefined = (value) => {
+  if (Array.isArray(value)) {
+    return value.map((item) => stripUndefined(item));
+  }
+  // Only recurse into plain objects — leave Firestore FieldValue sentinels
+  // (e.g. serverTimestamp()), Dates and class instances untouched.
+  if (value && typeof value === "object" && value.constructor === Object) {
+    const out = {};
+    Object.keys(value).forEach((key) => {
+      const cleaned = stripUndefined(value[key]);
+      if (cleaned !== undefined) out[key] = cleaned;
+    });
+    return out;
+  }
+  return value;
+};
+
 const getYearNumber = (value) => {
   const parsed = parseInt(String(value || "").replace(/\D/g, ""), 10);
   return Number.isFinite(parsed) ? parsed : null;
@@ -384,7 +404,7 @@ export const createDailyAssignment = async ({
     updatedAt: serverTimestamp(),
   };
 
-  await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), assignment, { merge: false });
+  await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(assignment), { merge: false });
   const cacheValue = { ...assignment, updatedAt: null, savedAt: Date.now() };
   localCache.set(getDailyAssignmentCacheKey(uid, dateKey), cacheValue);
   return cacheValue;
@@ -415,7 +435,7 @@ export const prepareNextDailyAssignment = async ({
   };
 
   // Save to Firestore as 'next_prep'
-  await setDoc(doc(db, "users", uid, "daily_assignments", "next_prep"), prepAssignment, { merge: false });
+  await setDoc(doc(db, "users", uid, "daily_assignments", "next_prep"), stripUndefined(prepAssignment), { merge: false });
   
   // Save to Local Cache (use prefix to distinguish from normal cache)
   const cacheValue = { ...prepAssignment, updatedAt: null, savedAt: Date.now() };
@@ -492,7 +512,7 @@ export const fetchOrCreateDailyAssignment = async ({
     };
     
     // Save to today's dateKey
-    await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stampedAssignment, { merge: false });
+    await setDoc(doc(db, "users", uid, "daily_assignments", dateKey), stripUndefined(stampedAssignment), { merge: false });
     
     // Cleanup the prep data
     await deleteDoc(doc(db, "users", uid, "daily_assignments", "next_prep")).catch(() => {});
