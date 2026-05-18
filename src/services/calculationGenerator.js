@@ -60,12 +60,28 @@ const mixedNum = (maxD = 9) => {
 };
 const mixedTex = (m) => `${m.w}\\frac{${m.n}}{${m.d}}`;
 
+// ── Decimal helpers for Stage 6 (Decimals) ────────────────────────────────
+// Format a number as a clean decimal string (no float drift, no trailing 0s).
+const decStr = (v) => {
+  let s = (Math.round(v * 1e8) / 1e8).toFixed(8);
+  if (s.includes('.')) s = s.replace(/0+$/, '').replace(/\.$/, '');
+  return s === '-0' ? '0' : s;
+};
+// Random decimal with `dp` places and integer part 0..maxInt.
+const randDec = (dp, maxInt = 9) => {
+  const scale = Math.pow(10, dp);
+  return randomInt(1, (maxInt + 1) * scale - 1) / scale;
+};
+
 export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   // Legacy Stage 5 topic ids → representative new step (assignments made
   // before the 28-step fraction curriculum still produce sensible questions).
   if (topicId === 'calc-5-core') topicId = 'calc-5-s1';
   else if (topicId === 'calc-5-adv') topicId = 'calc-5-s9';
   else if (topicId === 'calc-5-enrich') topicId = 'calc-5-s26';
+  else if (topicId === 'calc-6-core') topicId = 'calc-6-s5';
+  else if (topicId === 'calc-6-adv') topicId = 'calc-6-s13';
+  else if (topicId === 'calc-6-enrich') topicId = 'calc-6-s27';
 
   let q = '';
   let a = '';
@@ -474,35 +490,310 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
 
-    // Stage 6
-    case 'calc-6-core': {
-      const n1 = (randomInt(1, 999) / 100).toFixed(2);
-      const n2 = (randomInt(1, 999) / 100).toFixed(2);
-      const isAdd = Math.random() > 0.5;
-      if (isAdd) {
-        q = `$$ ${n1} + ${n2} = ? $$`;
-        a = ((parseFloat(n1) + parseFloat(n2)).toFixed(2)).replace(/\.?0+$/, '');
+    // ════ Stage 6: Decimals — 32-step curriculum ════
+    // Phase A — Concept & place value
+    case 'calc-6-s1': { // what is a decimal? tenths / hundredths
+      if (Math.random() > 0.5) {
+        const n = randomInt(1, 9);
+        q = `Write "${n} tenths" as a decimal.`;
+        a = decStr(n / 10);
       } else {
-        const big = Math.max(n1, n2).toFixed(2);
-        const small = Math.min(n1, n2).toFixed(2);
-        q = `$$ ${big} - ${small} = ? $$`;
-        a = ((parseFloat(big) - parseFloat(small)).toFixed(2)).replace(/\.?0+$/, '');
+        const n = randomInt(1, 99);
+        q = `Write "${n} hundredths" as a decimal.`;
+        a = decStr(n / 100);
+      }
+      hint = 'Tenths fill the first place after the point; hundredths the second.';
+      break;
+    }
+    case 'calc-6-s2': { // reading & writing decimals
+      const w = randomInt(1, 9);
+      if (Math.random() > 0.5) {
+        const n = randomInt(1, 9);
+        q = `Write "${w} and ${n} tenths" as a decimal.`;
+        a = decStr(w + n / 10);
+      } else {
+        const n = randomInt(1, 99);
+        q = `Write "${w} and ${n} hundredths" as a decimal.`;
+        a = decStr(w + n / 100);
+      }
+      hint = 'The whole number goes before the point, the part after.';
+      break;
+    }
+    case 'calc-6-s3': { // comparing decimals
+      let x, y;
+      do { x = randDec(2, 9); y = randDec(2, 9); } while (x === y);
+      q = `Which decimal is larger: ${decStr(x)} or ${decStr(y)}? (write the larger one)`;
+      a = decStr(Math.max(x, y));
+      hint = 'Compare place by place from the left.';
+      break;
+    }
+    case 'calc-6-s4': { // rounding decimals
+      const x = randDec(3, 9);
+      if (Math.random() > 0.5) {
+        q = `Round ${decStr(x)} to 1 decimal place.`;
+        a = decStr(Math.round(x * 10) / 10);
+        hint = 'Look at the 2nd decimal digit — 5 or more rounds up.';
+      } else {
+        q = `Round ${decStr(x)} to the nearest whole number.`;
+        a = decStr(Math.round(x));
+        hint = 'Look at the first decimal digit — 5 or more rounds up.';
       }
       break;
     }
-    case 'calc-6-adv': {
-      const n1 = (randomInt(1, 99) / 10).toFixed(1);
-      const n2 = (randomInt(1, 99) / 10).toFixed(1);
-      q = `$$ ${n1} \\times ${n2} = ? $$`;
-      a = ((parseFloat(n1) * parseFloat(n2)).toFixed(2)).replace(/\.?0+$/, '');
-      hint = `Multiply without decimals first, then place the decimal point.`;
+
+    // Phase B — Addition & Subtraction
+    case 'calc-6-s5': { // add · same dp
+      const dp = randomInt(1, 2);
+      const x = randDec(dp, 9), y = randDec(dp, 9);
+      q = `$$ ${decStr(x)} + ${decStr(y)} = ? $$`;
+      a = decStr(x + y);
+      hint = 'Line up the decimal points, then add.';
       break;
     }
-    case 'calc-6-enrich': {
-      const km = (randomInt(10, 99) / 10).toFixed(1);
-      q = `Convert ${km} km to metres. (Write number only)`;
-      a = String(parseFloat(km) * 1000);
-      hint = `1 km = 1000 m. Multiply by 1000.`;
+    case 'calc-6-s6': { // sub · same dp
+      const dp = randomInt(1, 2);
+      let x = randDec(dp, 9), y = randDec(dp, 9);
+      if (x < y) { const t = x; x = y; y = t; }
+      q = `$$ ${decStr(x)} - ${decStr(y)} = ? $$`;
+      a = decStr(x - y);
+      hint = 'Line up the decimal points, then subtract.';
+      break;
+    }
+    case 'calc-6-s7': { // add · diff dp
+      const x = randDec(1, 9), y = randDec(2, 9);
+      q = `$$ ${decStr(x)} + ${decStr(y)} = ? $$`;
+      a = decStr(x + y);
+      hint = 'Fill the shorter decimal with a zero so the places line up.';
+      break;
+    }
+    case 'calc-6-s8': { // sub · diff dp
+      let x = randDec(2, 9), y = randDec(1, 9);
+      if (x < y) { const t = x; x = y; y = t; }
+      q = `$$ ${decStr(x)} - ${decStr(y)} = ? $$`;
+      a = decStr(x - y);
+      hint = 'Fill the shorter decimal with a zero so the places line up.';
+      break;
+    }
+    case 'calc-6-s9': { // decimal + whole number
+      const d = randDec(2, 9), w = randomInt(2, 50);
+      q = `$$ ${decStr(d)} + ${w} = ? $$`;
+      a = decStr(d + w);
+      hint = 'A whole number has .0 after the point.';
+      break;
+    }
+    case 'calc-6-s10': { // whole number − decimal
+      const w = randomInt(5, 60);
+      const d = randDec(2, w - 1);
+      q = `$$ ${w} - ${decStr(d)} = ? $$`;
+      a = decStr(w - d);
+      hint = 'Write the whole number with decimal places, then subtract.';
+      break;
+    }
+
+    // Phase C — Multiplication
+    case 'calc-6-s11': { // decimal × 1-digit whole
+      const d = randDec(randomInt(1, 2), 9), w = randomInt(2, 9);
+      q = `$$ ${decStr(d)} \\times ${w} = ? $$`;
+      a = decStr(d * w);
+      hint = 'Multiply as whole numbers, then place the decimal point.';
+      break;
+    }
+    case 'calc-6-s12': { // decimal × 2-digit whole
+      const d = randDec(randomInt(1, 2), 9), w = randomInt(11, 40);
+      q = `$$ ${decStr(d)} \\times ${w} = ? $$`;
+      a = decStr(d * w);
+      hint = 'Multiply as whole numbers, then place the decimal point.';
+      break;
+    }
+    case 'calc-6-s13': { // decimal × decimal (1dp × 1dp)
+      const x = randDec(1, 9), y = randDec(1, 9);
+      q = `$$ ${decStr(x)} \\times ${decStr(y)} = ? $$`;
+      a = decStr(x * y);
+      hint = 'Count the decimal places — the answer has the total of both.';
+      break;
+    }
+    case 'calc-6-s14': { // decimal × decimal (2dp × 2dp)
+      const x = randDec(2, 6), y = randDec(2, 6);
+      q = `$$ ${decStr(x)} \\times ${decStr(y)} = ? $$`;
+      a = decStr(x * y);
+      hint = 'Multiply as whole numbers, then count all the decimal places.';
+      break;
+    }
+    case 'calc-6-s15': { // multiply by 10 / 100 / 1000
+      const d = randDec(randomInt(2, 3), 99);
+      const m = pick([10, 100, 1000]);
+      q = `$$ ${decStr(d)} \\times ${m} = ? $$`;
+      a = decStr(d * m);
+      hint = 'Shift every digit left: ×10 → 1 place, ×100 → 2, ×1000 → 3.';
+      break;
+    }
+
+    // Phase D — Division
+    case 'calc-6-s16': { // decimal ÷ 1-digit whole
+      const ans = randDec(randomInt(1, 2), 9);
+      const divisor = randomInt(2, 9);
+      q = `$$ ${decStr(ans * divisor)} \\div ${divisor} = ? $$`;
+      a = decStr(ans);
+      hint = 'Divide as whole numbers, keeping the decimal point in line.';
+      break;
+    }
+    case 'calc-6-s17': { // decimal ÷ 2-digit whole
+      const ans = randDec(randomInt(1, 2), 5);
+      const divisor = randomInt(11, 40);
+      q = `$$ ${decStr(ans * divisor)} \\div ${divisor} = ? $$`;
+      a = decStr(ans);
+      hint = 'Divide as whole numbers, keeping the decimal point in line.';
+      break;
+    }
+    case 'calc-6-s18': { // decimal ÷ decimal
+      const ans = randDec(randomInt(1, 2), 9);
+      const divisor = randDec(1, 5);
+      q = `$$ ${decStr(ans * divisor)} \\div ${decStr(divisor)} = ? $$`;
+      a = decStr(ans);
+      hint = 'Make the divisor a whole number by shifting both decimal points.';
+      break;
+    }
+    case 'calc-6-s19': { // whole number ÷ decimal
+      const divisor = pick([0.5, 0.2, 0.25, 0.4, 0.8, 0.1, 0.05, 1.25, 2.5]);
+      const w = randomInt(2, 40);
+      q = `$$ ${w} \\div ${decStr(divisor)} = ? $$`;
+      a = decStr(w / divisor);
+      hint = 'Shift both decimal points so the divisor becomes a whole number.';
+      break;
+    }
+    case 'calc-6-s20': { // divide by 10 / 100 / 1000
+      const start = randDec(2, 999);
+      const m = pick([10, 100, 1000]);
+      q = `$$ ${decStr(start)} \\div ${m} = ? $$`;
+      a = decStr(start / m);
+      hint = 'Shift every digit right: ÷10 → 1 place, ÷100 → 2, ÷1000 → 3.';
+      break;
+    }
+
+    // Phase E — Combined operations
+    case 'calc-6-s21': { // 2-step: +/− with ×/÷
+      const x = randDec(1, 9), y = randDec(1, 9), w = randomInt(2, 5);
+      q = `$$ ${decStr(x)} + ${decStr(y)} \\times ${w} = ? $$`;
+      a = decStr(x + y * w);
+      hint = 'Do the multiplication first, then the addition.';
+      break;
+    }
+    case 'calc-6-s22': { // 3-step with parentheses
+      const x = randDec(1, 9), y = randDec(1, 9), w = randomInt(2, 5);
+      q = `$$ \\left( ${decStr(x)} + ${decStr(y)} \\right) \\times ${w} = ? $$`;
+      a = decStr((x + y) * w);
+      hint = 'Work out the brackets first, then multiply.';
+      break;
+    }
+    case 'calc-6-s23': { // decimal ↔ fraction conversion
+      const dp = randomInt(1, 2);
+      const scale = Math.pow(10, dp);
+      const raw = randomInt(1, scale - 1);
+      q = `Write the decimal ${decStr(raw / scale)} as a fraction in simplest form.`;
+      a = simplifyFraction(raw, scale);
+      hint = `Tenths → over 10, hundredths → over 100, then simplify.`;
+      break;
+    }
+    case 'calc-6-s24': { // decimal ↔ percent conversion
+      const d = randomInt(1, 99) / 100;
+      q = `Write ${decStr(d)} as a percentage. (number only)`;
+      a = decStr(d * 100);
+      hint = 'To turn a decimal into a percentage, multiply by 100.';
+      break;
+    }
+
+    // Phase F — Word problems (templated)
+    case 'calc-6-s25': { // add & subtract · 1-step story
+      const x = randDec(2, 9), y = randDec(2, 9);
+      if (Math.random() > 0.5) {
+        q = `A bottle holds ${decStr(x)} litres of water. Another ${decStr(y)} litres is poured in. How many litres are in the bottle now?`;
+        a = decStr(x + y);
+      } else {
+        let A = x, B = y;
+        if (A < B) { const t = A; A = B; B = t; }
+        q = `A ribbon is ${decStr(A)} metres long. ${decStr(B)} metres is cut off. How long is the ribbon now? (metres)`;
+        a = decStr(A - B);
+      }
+      hint = 'Line up the decimal points before adding or subtracting.';
+      break;
+    }
+    case 'calc-6-s26': { // multiply & divide · 1-step story
+      if (Math.random() > 0.5) {
+        const c = randDec(2, 9), w = randomInt(2, 8);
+        q = `One notebook costs ${decStr(c)} dollars. How much do ${w} notebooks cost in total? (dollars)`;
+        a = decStr(c * w);
+      } else {
+        const each = randDec(randomInt(1, 2), 9), w = randomInt(2, 8);
+        q = `${decStr(each * w)} litres of juice is shared equally between ${w} jugs. How many litres are in each jug?`;
+        a = decStr(each);
+      }
+      hint = 'Repeated groups → multiply. Sharing equally → divide.';
+      break;
+    }
+    case 'calc-6-s27': { // 2-step · money & shopping
+      const price = randDec(2, 9), qty = randomInt(2, 6);
+      const cost = price * qty;
+      const paid = Math.ceil(cost) + pick([0, 5, 10]);
+      q = `A shopper buys ${qty} items costing ${decStr(price)} dollars each and pays with ${paid} dollars. How much change should they receive? (dollars)`;
+      a = decStr(paid - cost);
+      hint = 'First find the total cost, then subtract it from the amount paid.';
+      break;
+    }
+    case 'calc-6-s28': { // 2-step · measurement & units
+      const pieceLen = randDec(randomInt(1, 2), 5);
+      const pieces = randomInt(2, 8);
+      q = `A plank of wood is ${decStr(pieceLen * pieces)} metres long. It is cut into ${pieces} equal pieces. How long is each piece? (metres)`;
+      a = decStr(pieceLen);
+      hint = 'Divide the total length by the number of pieces.';
+      break;
+    }
+    case 'calc-6-s29': { // speed, distance & time
+      if (Math.random() > 0.5) {
+        const speed = randomInt(2, 12) * 5 + pick([0, 0.5]);
+        const time = randomInt(2, 5);
+        q = `A car travels at a steady ${decStr(speed)} km/h for ${time} hours. How far does it travel? (km)`;
+        a = decStr(speed * time);
+        hint = 'Distance = speed × time.';
+      } else {
+        const speed = randomInt(4, 12) * 5;
+        const time = randomInt(2, 6);
+        q = `A cyclist rides ${decStr(speed * time)} km in ${time} hours. What is the cyclist's average speed? (km/h)`;
+        a = decStr(speed);
+        hint = 'Speed = distance ÷ time.';
+      }
+      break;
+    }
+    case 'calc-6-s30': { // percentage, discount & tax
+      const price = randomInt(2, 40) * 10;
+      const rate = pick([10, 20, 25, 50]);
+      if (Math.random() > 0.5) {
+        q = `A jacket costs ${price} dollars. It is discounted by ${rate}%. What is the sale price? (dollars)`;
+        a = decStr(price * (1 - rate / 100));
+        hint = `A ${rate}% discount means you pay ${100 - rate}% of the price.`;
+      } else {
+        q = `A meal costs ${price} dollars. A ${rate}% service charge is added. What is the total to pay? (dollars)`;
+        a = decStr(price * (1 + rate / 100));
+        hint = `Find ${rate}% of the price, then add it on.`;
+      }
+      break;
+    }
+    case 'calc-6-s31': { // 3-step · build equation
+      const x = randDec(1, 9), y = randDec(1, 9), w = randomInt(2, 4);
+      q = `A tank holds ${decStr(x)} litres. ${decStr(y)} litres is added on each of ${w} days. How many litres are in the tank after the ${w} days?`;
+      a = decStr(x + y * w);
+      hint = 'Work out the amount added in total, then add the starting amount.';
+      break;
+    }
+    case 'calc-6-s32': { // 4-step · all ops, max difficulty
+      let x, y, w, g, res;
+      do {
+        x = randDec(1, 9); y = randDec(1, 9); w = randomInt(2, 5);
+        g = randDec(1, 5);
+        res = (x + y) * w - g;
+      } while (res <= 0);
+      q = `A builder has ${decStr(x)} kg of sand and adds ${decStr(y)} kg more. This amount is needed for each of ${w} jobs, but ${decStr(g)} kg is left unused. How many kilograms of sand are used in total?`;
+      a = decStr(res);
+      hint = 'Add the two amounts, multiply by the jobs, then subtract the unused sand.';
       break;
     }
 

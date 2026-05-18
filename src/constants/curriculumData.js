@@ -83,11 +83,46 @@ export const CURRICULUM_DATA = {
     {
       id: 'calc-stage-6',
       title: 'Stage 6: Decimals (Year 4-5)',
-      modules: 3,
+      modules: 32,
       topics: [
-        { id: 'calc-6-core', code: 'C6.1', group: 'Core', title: 'Tenths/hundredths add/sub & rounding' },
-        { id: 'calc-6-adv', code: 'C6.2', group: 'Advanced', title: 'Multiply/divide by 10/100/1000 & decimal x decimal' },
-        { id: 'calc-6-enrich', code: 'C6.3', group: 'Enrichment', title: 'Money & measurement calculations' }
+        // Phase A — Concept & place value
+        { id: 'calc-6-s1',  code: 'D1',  group: 'A · Concept & place value', title: 'What is a decimal? (tenths, hundredths)' },
+        { id: 'calc-6-s2',  code: 'D2',  group: 'A · Concept & place value', title: 'Reading & writing decimals' },
+        { id: 'calc-6-s3',  code: 'D3',  group: 'A · Concept & place value', title: 'Comparing decimals (< > =)' },
+        { id: 'calc-6-s4',  code: 'D4',  group: 'A · Concept & place value', title: 'Rounding decimals' },
+        // Phase B — Addition & Subtraction
+        { id: 'calc-6-s5',  code: 'D5',  group: 'B · Addition & Subtraction', title: 'Addition · same decimal places' },
+        { id: 'calc-6-s6',  code: 'D6',  group: 'B · Addition & Subtraction', title: 'Subtraction · same decimal places' },
+        { id: 'calc-6-s7',  code: 'D7',  group: 'B · Addition & Subtraction', title: 'Addition · diff decimal places' },
+        { id: 'calc-6-s8',  code: 'D8',  group: 'B · Addition & Subtraction', title: 'Subtraction · diff decimal places' },
+        { id: 'calc-6-s9',  code: 'D9',  group: 'B · Addition & Subtraction', title: 'Add decimal + whole number' },
+        { id: 'calc-6-s10', code: 'D10', group: 'B · Addition & Subtraction', title: 'Subtract decimal from whole number' },
+        // Phase C — Multiplication
+        { id: 'calc-6-s11', code: 'D11', group: 'C · Multiplication', title: 'Decimal × 1-digit whole number' },
+        { id: 'calc-6-s12', code: 'D12', group: 'C · Multiplication', title: 'Decimal × 2-digit whole number' },
+        { id: 'calc-6-s13', code: 'D13', group: 'C · Multiplication', title: 'Decimal × decimal (1dp × 1dp)' },
+        { id: 'calc-6-s14', code: 'D14', group: 'C · Multiplication', title: 'Decimal × decimal (2dp × 2dp)' },
+        { id: 'calc-6-s15', code: 'D15', group: 'C · Multiplication', title: 'Multiply by 10 / 100 / 1000' },
+        // Phase D — Division
+        { id: 'calc-6-s16', code: 'D16', group: 'D · Division', title: 'Decimal ÷ 1-digit whole number' },
+        { id: 'calc-6-s17', code: 'D17', group: 'D · Division', title: 'Decimal ÷ 2-digit whole number' },
+        { id: 'calc-6-s18', code: 'D18', group: 'D · Division', title: 'Decimal ÷ decimal' },
+        { id: 'calc-6-s19', code: 'D19', group: 'D · Division', title: 'Whole number ÷ decimal' },
+        { id: 'calc-6-s20', code: 'D20', group: 'D · Division', title: 'Divide by 10 / 100 / 1000' },
+        // Phase E — Combined operations
+        { id: 'calc-6-s21', code: 'D21', group: 'E · Combined operations', title: '2-step: +/− with ×/÷' },
+        { id: 'calc-6-s22', code: 'D22', group: 'E · Combined operations', title: '3-step with parentheses' },
+        { id: 'calc-6-s23', code: 'D23', group: 'E · Combined operations', title: 'Decimal ↔ fraction conversion' },
+        { id: 'calc-6-s24', code: 'D24', group: 'E · Combined operations', title: 'Decimal ↔ percent conversion' },
+        // Phase F — Word problems
+        { id: 'calc-6-s25', code: 'D25', group: 'F · Word problems', title: 'Add & subtract · 1-step story' },
+        { id: 'calc-6-s26', code: 'D26', group: 'F · Word problems', title: 'Multiply & divide · 1-step story' },
+        { id: 'calc-6-s27', code: 'D27', group: 'F · Word problems', title: '2-step · money & shopping' },
+        { id: 'calc-6-s28', code: 'D28', group: 'F · Word problems', title: '2-step · measurement & units' },
+        { id: 'calc-6-s29', code: 'D29', group: 'F · Word problems', title: 'Speed, distance & time' },
+        { id: 'calc-6-s30', code: 'D30', group: 'F · Word problems', title: 'Percentage, discount & tax' },
+        { id: 'calc-6-s31', code: 'D31', group: 'F · Word problems', title: '3-step · build equation' },
+        { id: 'calc-6-s32', code: 'D32', group: 'F · Word problems', title: '4-step · all ops, max difficulty' }
       ]
     },
     {
