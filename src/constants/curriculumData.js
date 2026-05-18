@@ -49,6 +49,54 @@ export const CURRICULUM_DATA = {
       ]
     },
     {
+      id: 'calc-stage-sub',
+      title: 'Stage 1B: Subtraction (Year 1-6)',
+      modules: 34,
+      topics: [
+        // Phase A — Concept & number sense
+        { id: 'calc-sub-s1',  code: 'S1',  group: 'A · Concept & number sense', title: 'What is subtraction? (taking away)' },
+        { id: 'calc-sub-s2',  code: 'S2',  group: 'A · Concept & number sense', title: 'Counting back on a number line' },
+        { id: 'calc-sub-s3',  code: 'S3',  group: 'A · Concept & number sense', title: 'Inverse of addition (fact families)' },
+        { id: 'calc-sub-s4',  code: 'S4',  group: 'A · Concept & number sense', title: 'Subtraction from 10 (number bonds)' },
+        // Phase B — 1-digit subtraction
+        { id: 'calc-sub-s5',  code: 'S5',  group: 'B · 1-digit subtraction', title: '1-digit − 1-digit · no borrowing' },
+        { id: 'calc-sub-s6',  code: 'S6',  group: 'B · 1-digit subtraction', title: '2-digit − 1-digit · no borrowing' },
+        { id: 'calc-sub-s7',  code: 'S7',  group: 'B · 1-digit subtraction', title: '2-digit − 1-digit · with borrowing' },
+        { id: 'calc-sub-s8',  code: 'S8',  group: 'B · 1-digit subtraction', title: 'Subtract from multiples of 10' },
+        // Phase C — 2-digit subtraction
+        { id: 'calc-sub-s9',  code: 'S9',  group: 'C · 2-digit subtraction', title: '2-digit − 2-digit · no borrowing' },
+        { id: 'calc-sub-s10', code: 'S10', group: 'C · 2-digit subtraction', title: 'Mental strategies (compensating)' },
+        { id: 'calc-sub-s11', code: 'S11', group: 'C · 2-digit subtraction', title: '2-digit − 2-digit · 1 borrowing' },
+        { id: 'calc-sub-s12', code: 'S12', group: 'C · 2-digit subtraction', title: 'Subtract from 100 / 200' },
+        { id: 'calc-sub-s13', code: 'S13', group: 'C · 2-digit subtraction', title: 'Chain subtraction (100 − a − b − c)' },
+        // Phase D — 3-digit & larger numbers
+        { id: 'calc-sub-s14', code: 'S14', group: 'D · 3-digit & larger numbers', title: '3-digit − 3-digit · no borrowing' },
+        { id: 'calc-sub-s15', code: 'S15', group: 'D · 3-digit & larger numbers', title: '3-digit − 3-digit · with borrowing' },
+        { id: 'calc-sub-s16', code: 'S16', group: 'D · 3-digit & larger numbers', title: '4-digit+ subtraction' },
+        { id: 'calc-sub-s17', code: 'S17', group: 'D · 3-digit & larger numbers', title: 'Mental math strategies (rounding & adjust)' },
+        // Phase E — Decimals & fractions subtraction
+        { id: 'calc-sub-s18', code: 'S18', group: 'E · Decimals & fractions subtraction', title: 'Decimal − decimal · same places' },
+        { id: 'calc-sub-s19', code: 'S19', group: 'E · Decimals & fractions subtraction', title: 'Decimal − decimal · diff places' },
+        { id: 'calc-sub-s20', code: 'S20', group: 'E · Decimals & fractions subtraction', title: 'Fraction − fraction · same denom' },
+        { id: 'calc-sub-s21', code: 'S21', group: 'E · Decimals & fractions subtraction', title: 'Fraction − fraction · diff denom' },
+        { id: 'calc-sub-s22', code: 'S22', group: 'E · Decimals & fractions subtraction', title: 'Integer − decimal − fraction (mixed types)' },
+        // Phase F — Combined & advanced strategies
+        { id: 'calc-sub-s23', code: 'S23', group: 'F · Combined & advanced strategies', title: 'Estimation & reasonableness check' },
+        { id: 'calc-sub-s24', code: 'S24', group: 'F · Combined & advanced strategies', title: 'Inverse check with addition' },
+        { id: 'calc-sub-s25', code: 'S25', group: 'F · Combined & advanced strategies', title: 'Finding the difference (larger − smaller)' },
+        { id: 'calc-sub-s26', code: 'S26', group: 'F · Combined & advanced strategies', title: 'Intro to negative results' },
+        // Phase G — Word problems
+        { id: 'calc-sub-s27', code: 'S27', group: 'G · Word problems', title: '1-step · small numbers (objects & change)' },
+        { id: 'calc-sub-s28', code: 'S28', group: 'G · Word problems', title: '1-step · large numbers (stock & scores)' },
+        { id: 'calc-sub-s29', code: 'S29', group: 'G · Word problems', title: '2-step · budget & spending' },
+        { id: 'calc-sub-s30', code: 'S30', group: 'G · Word problems', title: '2-step · decimal remainders' },
+        { id: 'calc-sub-s31', code: 'S31', group: 'G · Word problems', title: 'Fraction subtraction · cooking & time' },
+        { id: 'calc-sub-s32', code: 'S32', group: 'G · Word problems', title: 'Tables & charts (finding differences)' },
+        { id: 'calc-sub-s33', code: 'S33', group: 'G · Word problems', title: '3-step story · build & solve equation' },
+        { id: 'calc-sub-s34', code: 'S34', group: 'G · Word problems', title: '4-step · integers, decimals & fractions' }
+      ]
+    },
+    {
       id: 'calc-stage-2',
       title: 'Stage 2: 2- and 3-Digit Add/Sub (Year 2)',
       modules: 3,

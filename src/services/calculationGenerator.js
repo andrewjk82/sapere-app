@@ -390,6 +390,311 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
 
+    // ════ Stage 1B: Subtraction — 34-step curriculum ════
+    // Phase A — Concept & number sense
+    case 'calc-sub-s1': { // what is subtraction? (taking away)
+      const n1 = randomInt(4, 10), n2 = randomInt(1, n1 - 1);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = `Start with ${n1} and take away ${n2}.`;
+      break;
+    }
+    case 'calc-sub-s2': { // counting back on a number line
+      const n1 = randomInt(5, 10), n2 = randomInt(1, n1 - 1);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = `Start at ${n1} and count back ${n2} steps.`;
+      break;
+    }
+    case 'calc-sub-s3': { // inverse of addition (fact families)
+      const n1 = randomInt(3, 9), n2 = randomInt(3, 9);
+      const sum = n1 + n2;
+      q = `$$ ${sum} - ${n1} = ? $$`;
+      a = String(n2);
+      hint = `Since ${n1} + ${n2} = ${sum}, subtraction undoes the addition.`;
+      break;
+    }
+    case 'calc-sub-s4': { // subtraction from 10 (number bonds)
+      const n1 = randomInt(1, 9);
+      q = `$$ 10 - ${n1} = ? $$`;
+      a = String(10 - n1);
+      hint = `What pairs with ${n1} to make 10?`;
+      break;
+    }
+
+    // Phase B — 1-digit subtraction
+    case 'calc-sub-s5': { // 1-digit − 1-digit · no borrowing
+      const n1 = randomInt(2, 9), n2 = randomInt(1, n1);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'Take the smaller number from the larger one.';
+      break;
+    }
+    case 'calc-sub-s6': { // 2-digit − 1-digit · no borrowing
+      const t = randomInt(1, 9), o = randomInt(1, 9);
+      const n1 = t * 10 + o;
+      const n2 = randomInt(1, o);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'The ones digit is big enough — no borrowing needed.';
+      break;
+    }
+    case 'calc-sub-s7': { // 2-digit − 1-digit · with borrowing
+      const t = randomInt(1, 9), o = randomInt(0, 8);
+      const n1 = t * 10 + o;
+      const n2 = randomInt(o + 1, 9);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'The ones digit is too small — borrow 10 from the tens.';
+      break;
+    }
+    case 'calc-sub-s8': { // subtract from multiples of 10
+      const ten = randomInt(2, 9) * 10;
+      const n2 = randomInt(1, ten - 1);
+      q = `$$ ${ten} - ${n2} = ? $$`;
+      a = String(ten - n2);
+      hint = 'Borrow from the tens, or count up from the smaller number.';
+      break;
+    }
+
+    // Phase C — 2-digit subtraction
+    case 'calc-sub-s9': { // 2-digit − 2-digit · no borrowing
+      const t1 = randomInt(2, 9), o1 = randomInt(0, 9);
+      const t2 = randomInt(1, t1), o2 = randomInt(0, o1);
+      const n1 = t1 * 10 + o1, n2 = t2 * 10 + o2;
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'Every digit on top is large enough — no borrowing.';
+      break;
+    }
+    case 'calc-sub-s10': { // mental strategies (compensating)
+      const n1 = randomInt(50, 95);
+      const n2 = pick([18, 19, 28, 29, 38, 39]);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = `Subtract ${n2 + 1}, then add 1 back.`;
+      break;
+    }
+    case 'calc-sub-s11': { // 2-digit − 2-digit · 1 borrowing
+      let n1, n2;
+      do {
+        n1 = randomInt(30, 98);
+        n2 = randomInt(11, n1 - 1);
+      } while ((n1 % 10) >= (n2 % 10));
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'The ones digit is too small — borrow 10 from the tens column.';
+      break;
+    }
+    case 'calc-sub-s12': { // subtract from 100 / 200
+      const total = pick([100, 200]);
+      const n2 = randomInt(total === 100 ? 11 : 105, total - 5);
+      q = `$$ ${total} - ${n2} = ? $$`;
+      a = String(total - n2);
+      hint = `Count up from ${n2} to ${total}.`;
+      break;
+    }
+    case 'calc-sub-s13': { // chain subtraction (100 − a − b − c)
+      const start = pick([100, 150, 200]);
+      let b, c, d, res;
+      do {
+        b = randomInt(10, 40); c = randomInt(10, 40); d = randomInt(10, 40);
+        res = start - b - c - d;
+      } while (res < 0);
+      q = `$$ ${start} - ${b} - ${c} - ${d} = ? $$`;
+      a = String(res);
+      hint = 'Subtract one number at a time, left to right.';
+      break;
+    }
+
+    // Phase D — 3-digit & larger numbers
+    case 'calc-sub-s14': { // 3-digit − 3-digit · no borrowing
+      const h1 = randomInt(2, 9), t1 = randomInt(0, 9), o1 = randomInt(0, 9);
+      const h2 = randomInt(1, h1), t2 = randomInt(0, t1), o2 = randomInt(0, o1);
+      const n1 = h1 * 100 + t1 * 10 + o1, n2 = h2 * 100 + t2 * 10 + o2;
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'Every column on top is large enough — no borrowing.';
+      break;
+    }
+    case 'calc-sub-s15': { // 3-digit − 3-digit · with borrowing
+      let n1, n2;
+      do {
+        n1 = randomInt(300, 999);
+        n2 = randomInt(120, n1 - 1);
+      } while ((n1 % 10) >= (n2 % 10) && (Math.floor(n1 / 10) % 10) >= (Math.floor(n2 / 10) % 10));
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'Borrow from the next column whenever the top digit is too small.';
+      break;
+    }
+    case 'calc-sub-s16': { // 4-digit+ subtraction
+      const digits = pick([4, 5]);
+      const lo = Math.pow(10, digits - 1), hi = Math.pow(10, digits) - 1;
+      const n1 = randomInt(lo + Math.floor((hi - lo) / 2), hi);
+      const n2 = randomInt(lo, n1 - 1);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'Line up the digits by place value and subtract column by column.';
+      break;
+    }
+    case 'calc-sub-s17': { // mental math strategies (rounding & adjust)
+      const base = pick([99, 199, 299, 98, 198]);
+      const n1 = randomInt(base + 20, base + 600);
+      q = `$$ ${n1} - ${base} = ? $$`;
+      a = String(n1 - base);
+      hint = `Subtract ${base + 1}, then add 1 back.`;
+      break;
+    }
+
+    // Phase E — Decimals & fractions subtraction
+    case 'calc-sub-s18': { // decimal − decimal · same places
+      const dp = randomInt(1, 2);
+      let x = randDec(dp, 9), y = randDec(dp, 9);
+      if (x < y) { const t = x; x = y; y = t; }
+      q = `$$ ${decStr(x)} - ${decStr(y)} = ? $$`;
+      a = decStr(x - y);
+      hint = 'Line up the decimal points, then subtract.';
+      break;
+    }
+    case 'calc-sub-s19': { // decimal − decimal · diff places
+      let x = randDec(2, 9), y = randDec(1, 9);
+      if (x < y) { const t = x; x = y; y = t; }
+      q = `$$ ${decStr(x)} - ${decStr(y)} = ? $$`;
+      a = decStr(x - y);
+      hint = 'Give both numbers the same number of decimal places first.';
+      break;
+    }
+    case 'calc-sub-s20': { // fraction − fraction · same denom
+      const d = randomInt(3, 12);
+      const n1 = randomInt(2, d - 1);
+      const n2 = randomInt(1, n1 - 1);
+      q = `$$ \\frac{${n1}}{${d}} - \\frac{${n2}}{${d}} = ? $$`;
+      a = simplifyFraction(n1 - n2, d);
+      hint = 'Same denominator — subtract the numerators, keep the denominator.';
+      break;
+    }
+    case 'calc-sub-s21': { // fraction − fraction · diff denom
+      let f1 = properFrac(8), f2 = properFrac(8);
+      if (fVal(f1) < fVal(f2)) { const t = f1; f1 = f2; f2 = t; }
+      q = `$$ ${fTex(f1)} - ${fTex(f2)} = ? $$`;
+      a = fStr(fSub(f1, f2));
+      hint = 'Rewrite with a common denominator, then subtract.';
+      break;
+    }
+    case 'calc-sub-s22': { // integer − decimal − fraction (mixed types)
+      const denom = pick([2, 4, 5, 10]);
+      const num = randomInt(1, denom - 1);
+      const d = randDec(1, 4);
+      const i = randomInt(Math.ceil(d + num / denom) + 1, 15);
+      q = `$$ ${i} - ${decStr(d)} - \\frac{${num}}{${denom}} = ? $$`;
+      a = decStr(i - d - num / denom);
+      hint = 'Convert the fraction to a decimal, then subtract both from the integer.';
+      break;
+    }
+
+    // Phase F — Combined & advanced strategies
+    case 'calc-sub-s23': { // estimation & reasonableness check
+      const round = pick([10, 100]);
+      const lo = round === 10 ? 30 : 300, hi = round === 10 ? 95 : 950;
+      const n1 = randomInt(lo, hi);
+      const n2 = randomInt(round === 10 ? 12 : 120, n1 - round);
+      q = `Estimate ${n1} - ${n2} by rounding each number to the nearest ${round}. (number only)`;
+      a = String(Math.round(n1 / round) * round - Math.round(n2 / round) * round);
+      hint = `Round ${n1} and ${n2} to the nearest ${round}, then subtract.`;
+      break;
+    }
+    case 'calc-sub-s24': { // inverse check with addition
+      const result = randomInt(20, 400);
+      const n2 = randomInt(20, 400);
+      q = `$$ ${result + n2} - ${n2} = ? $$`;
+      a = String(result);
+      hint = `Check by adding: the answer plus ${n2} should give ${result + n2}.`;
+      break;
+    }
+    case 'calc-sub-s25': { // finding the difference (larger − smaller)
+      let n1 = randomInt(20, 500), n2 = randomInt(20, 500);
+      if (n1 < n2) { const t = n1; n1 = n2; n2 = t; }
+      q = `What is the difference between ${n1} and ${n2}? (number only)`;
+      a = String(n1 - n2);
+      hint = 'Difference = larger number − smaller number.';
+      break;
+    }
+    case 'calc-sub-s26': { // intro to negative results
+      const n1 = randomInt(2, 30), n2 = randomInt(n1 + 1, n1 + 30);
+      q = `$$ ${n1} - ${n2} = ? $$`;
+      a = String(n1 - n2);
+      hint = 'Taking away more than you have gives a negative answer.';
+      break;
+    }
+
+    // Phase G — Word problems
+    case 'calc-sub-s27': { // 1-step · small numbers (objects & change)
+      const n1 = randomInt(8, 20), n2 = randomInt(1, n1 - 1);
+      q = `There are ${n1} birds on a fence. ${n2} of them fly away. How many birds are left?`;
+      a = String(n1 - n2);
+      hint = 'Take the number that left away from the starting amount.';
+      break;
+    }
+    case 'calc-sub-s28': { // 1-step · large numbers (stock & scores)
+      const n1 = randomInt(1200, 8000), n2 = randomInt(200, n1 - 100);
+      q = `A warehouse had ${n1} boxes in stock. ${n2} boxes were shipped out. How many boxes remain?`;
+      a = String(n1 - n2);
+      hint = 'Subtract the shipped boxes from the starting stock.';
+      break;
+    }
+    case 'calc-sub-s29': { // 2-step · budget & spending
+      const spend1 = randomInt(10, 60), spend2 = randomInt(10, 60);
+      const budget = spend1 + spend2 + randomInt(5, 90);
+      q = `A shopper has a budget of ${budget} dollars. They spend ${spend1} dollars, then ${spend2} dollars more. How many dollars are left? (dollars)`;
+      a = String(budget - spend1 - spend2);
+      hint = 'Subtract both amounts spent from the starting budget.';
+      break;
+    }
+    case 'calc-sub-s30': { // 2-step · decimal remainders
+      const piece = randDec(1, 3), used1 = randDec(1, 3);
+      const total = piece + used1 + randDec(1, 5);
+      q = `A roll of ribbon is ${decStr(total)} metres long. ${decStr(piece)} metres and ${decStr(used1)} metres are cut off. How much ribbon is left? (metres)`;
+      a = decStr(total - piece - used1);
+      hint = 'Subtract both cut lengths from the total length.';
+      break;
+    }
+    case 'calc-sub-s31': { // fraction subtraction · cooking & time
+      let f1 = properFrac(8), f2 = properFrac(8);
+      if (fVal(f1) < fVal(f2)) { const t = f1; f1 = f2; f2 = t; }
+      q = `A recipe needs $${fTex(f1)}$ of a cup of sugar. A baker has already added $${fTex(f2)}$ of a cup. How much more sugar must be added?`;
+      a = fStr(fSub(f1, f2));
+      hint = 'Subtract the amount already added from the amount needed.';
+      break;
+    }
+    case 'calc-sub-s32': { // tables & charts (finding differences)
+      const may = randomInt(120, 400), june = randomInt(120, 400);
+      const hi = Math.max(may, june), lo = Math.min(may, june);
+      q = `A chart shows visitors to a museum: May ${may}, June ${june}. How many more visitors came in the busier month?`;
+      a = String(hi - lo);
+      hint = 'Find the difference between the two months.';
+      break;
+    }
+    case 'calc-sub-s33': { // 3-step story · build & solve equation
+      const start = randomInt(300, 600);
+      const out1 = randomInt(20, 100), out2 = randomInt(20, 100);
+      q = `A library has ${start} books. ${out1} books are borrowed in the morning and ${out2} in the afternoon. How many books are left on the shelves?`;
+      a = String(start - out1 - out2);
+      hint = 'Books left = start − morning − afternoon.';
+      break;
+    }
+    case 'calc-sub-s34': { // 4-step · integers, decimals & fractions
+      const denom = pick([2, 4, 5, 10]);
+      const num = randomInt(1, denom - 1);
+      const d = randDec(1, 4);
+      const extra = randomInt(2, 9);
+      const i = randomInt(Math.ceil(d + num / denom + extra) + 2, 40);
+      q = `A tank holds ${i} litres of water. Then ${decStr(d)} litres, $\\frac{${num}}{${denom}}$ of a litre and ${extra} litres are drained out. How many litres remain?`;
+      a = decStr(i - d - num / denom - extra);
+      hint = 'Convert the fraction to a decimal, then subtract all three amounts.';
+      break;
+    }
+
     // Stage 2
     case 'calc-2-core': {
       const isAdd = Math.random() > 0.5;
