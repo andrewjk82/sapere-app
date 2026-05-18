@@ -158,9 +158,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const isGraphSketchQuestion = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
   // The working-out sketch board now shows for ALL year levels:
   //  - graph_sketch questions always (even on mobile) so the image can be graded
+  //  - Basic Calculation challenges always (even on mobile) so students can work out
   //  - every other question on non-mobile devices (split-screen layout)
   const showSplitScreen = Boolean(currentQuestion) && (
     isGraphSketchQuestion ||
+    challengeType === 'calc' ||
     !isMobile
   );
   const showSideCanvas = showSplitScreen && !isTabletCanvasLayout && !isMobile;
