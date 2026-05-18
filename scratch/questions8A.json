@@ -1,0 +1,1454 @@
+[
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "The town of Silverlake had a small population in 1970, but the population has been increasing by a factor of $2$ every decade since then. By what factor had the population increased from its 1970 value in 1980, 1990, 2000, 2010, and 2020 respectively?",
+    "options": [
+      {
+        "text": "$2, 4, 8, 16, 32$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2, 3, 4, 5, 6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1, 2, 4, 8, 16$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2, 4, 16, 256, 65536$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand the decade intervals**\nThe years correspond to the following number of decades passed since 1970 ($d$):\n- **1980**: $1$ decade passed\n- **1990**: $2$ decades passed\n- **2000**: $3$ decades passed\n- **2010**: $4$ decades passed\n- **2020**: $5$ decades passed\n\n**Step 2: State the population scaling formula**\nSince the population increases by a factor of $2$ every decade, the increase factor after $d$ decades is:\n$$\\text{Factor} = 2^d$$\n\n**Step 3: Calculate the factors for each decade**\n- **1980 ($d=1$)**: $2^1 = 2$\n- **1990 ($d=2$)**: $2^2 = 4$\n- **2000 ($d=3$)**: $2^3 = 8$\n- **2010 ($d=4$)**: $2^4 = 16$\n- **2020 ($d=5$)**: $2^5 = 32$\n\n**Step 4: Combine the results**\nThe population increase factors are:\n$$2, \\ 4, \\ 8, \\ 16, \\ 32$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "The population of Silverlake was $5000$ in 1970 and has been doubling every decade. In which decade did the population first pass $1,000,000$?",
+    "options": [
+      {
+        "text": "$\\\text{2040 to 2050}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\\text{2020 to 2030}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\\text{2050 to 2060}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\\text{2030 to 2040}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Formulate the population model**\nLet $d$ be the number of decades since 1970. The population after $d$ decades is given by:\n$$P(d) = 5000 \\times 2^d$$\n\n**Step 2: Set up the inequality**\nWe want to find when the population exceeds $1,000,000$:\n$$5000 \\times 2^d > 1,000,000$$\n\n**Step 3: Simplify the inequality**\nDivide both sides by $5000$:\n$$2^d > \\frac{1,000,000}{5000}$$\n$$2^d > 200$$\n\n**Step 4: Determine the smallest integer $d$**\nLet's calculate powers of $2$:\n- $2^6 = 64$\n- $2^7 = 128$\n- $2^8 = 256$ (This is the first power of $2$ greater than $200$)\n\nThus, $d = 8$ decades.\n\n**Step 5: Convert decades to calendar years**\n$8$ decades after 1970 corresponds to:\n$$1970 + 80 = 2050$$\n\nSo, the population exceeds $1,000,000$ at the end of the 8th decade, which means it first passes $1,000,000$ during the decade **2040 to 2050**."
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Which of the following represents the correct sequence of powers of $3$ from $3^0$ to $3^5$?",
+    "options": [
+      {
+        "text": "$1, 3, 9, 27, 81, 243$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$3, 9, 27, 81, 243, 729$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0, 3, 9, 27, 81, 243$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1, 3, 6, 9, 12, 15$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate each power of 3**\n- $3^0 = 1$ (Any non-zero number to power $0$ is $1$)\n- $3^1 = 3$\n- $3^2 = 3 \\times 3 = 9$\n- $3^3 = 3 \\times 3 \\times 3 = 27$\n- $3^4 = 27 \\times 3 = 81$\n- $3^5 = 81 \\times 3 = 243$\n\n**Step 2: Arrange the list**\nThe correct sequence is:\n$$1, \\ 3, \\ 9, \\ 27, \\ 81, \\ 243$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Express $16^3$ as a power of base $2$.",
+    "options": [
+      {
+        "text": "$2^{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2^7$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2^8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2^{64}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express $16$ as a power of $2$**\n$$16 = 2^4$$\n\n**Step 2: Substitute this into the expression**\n$$16^3 = (2^4)^3$$\n\n**Step 3: Apply the index law for power of a power**\nMultiply the indices: $(a^m)^n = a^{m \\times n}$\n$$16^3 = 2^{4 \\times 3} = 2^{12}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $3^4$",
+    "options": [
+      {
+        "text": "$81$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$12$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$27$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$64$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n$$3^4 = 3 \\times 3 \\times 3 \\times 3$$\n\n**Step 2: State the final value**\n$$81$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $5^3$",
+    "options": [
+      {
+        "text": "$125$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$15$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$25$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$75$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n$$5^3 = 5 \\times 5 \\times 5$$\n\n**Step 2: State the final value**\n$$125$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{3}{4}\\right)^3$",
+    "options": [
+      {
+        "text": "$\\frac{27}{64}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{9}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{9}{64}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{27}{16}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n$$\\left(\\frac{3}{4}\\right)^3 = \\frac{3^3}{4^3} = \\frac{27}{64}$$\n\n**Step 2: State the final value**\n$$\\frac{27}{64}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{2}{5}\\right)^4$",
+    "options": [
+      {
+        "text": "$\\frac{16}{625}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{20}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{16}{125}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{625}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n$$\\left(\\frac{2}{5}\\right)^4 = \\frac{2^4}{5^4} = \\frac{16}{625}$$\n\n**Step 2: State the final value**\n$$\\frac{16}{625}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $8^0$",
+    "options": [
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$80$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: $a^0 = 1$\n- Negative index: $a^{-n} = \\frac{1}{a^n}$\n\n**Step 2: Evaluate the expression**\n$$8^0 = \\text{Any non-zero base raised to the power of } 0 \\text{ is } 1.$$\n\n**Step 3: State final value**\n$$1$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $4^{-2}$",
+    "options": [
+      {
+        "text": "$\\frac{1}{16}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-16$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$16$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: $a^0 = 1$\n- Negative index: $a^{-n} = \\frac{1}{a^n}$\n\n**Step 2: Evaluate the expression**\n$$4^{-2} = \\frac{1}{4^2} = \\frac{1}{16}$$\n\n**Step 3: State final value**\n$$\\frac{1}{16}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $2^{-4}$",
+    "options": [
+      {
+        "text": "$\\frac{1}{16}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-16$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{8}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: $a^0 = 1$\n- Negative index: $a^{-n} = \\frac{1}{a^n}$\n\n**Step 2: Evaluate the expression**\n$$2^{-4} = \\frac{1}{2^4} = \\frac{1}{16}$$\n\n**Step 3: State final value**\n$$\\frac{1}{16}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $10^{-3}$",
+    "options": [
+      {
+        "text": "$0.001$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-30$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.01$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-1000$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: $a^0 = 1$\n- Negative index: $a^{-n} = \\frac{1}{a^n}$\n\n**Step 2: Evaluate the expression**\n$$10^{-3} = \\frac{1}{10^3} = \\frac{1}{1000} = 0.001$$\n\n**Step 3: State final value**\n$$0.001$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{1}{6}\\right)^{-1}$",
+    "options": [
+      {
+        "text": "$6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{6}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of $-1$ represents taking the reciprocal of the fraction:\n$$\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}$$\n\n**Step 2: Convert decimal base if applicable**\n$$0.25 = \\frac{1}{4}$$\n\n**Step 3: Calculate the reciprocal**\n$$\\text{Reciprocal of } \\frac{1}{6} \\text{ is } 6$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{3}{5}\\right)^{-1}$",
+    "options": [
+      {
+        "text": "$\\frac{5}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-\\frac{3}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{3}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{25}{9}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of $-1$ represents taking the reciprocal of the fraction:\n$$\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}$$\n\n**Step 2: Convert decimal base if applicable**\n$$0.25 = \\frac{1}{4}$$\n\n**Step 3: Calculate the reciprocal**\n$$\\text{Reciprocal of } \\frac{3}{5} \\text{ is } \\frac{5}{3}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{8}{15}\\right)^{-1}$",
+    "options": [
+      {
+        "text": "$\\frac{15}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-\\frac{8}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of $-1$ represents taking the reciprocal of the fraction:\n$$\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}$$\n\n**Step 2: Convert decimal base if applicable**\n$$0.25 = \\frac{1}{4}$$\n\n**Step 3: Calculate the reciprocal**\n$$\\text{Reciprocal of } \\frac{8}{15} \\text{ is } \\frac{15}{8}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $(0.25)^{-1}$",
+    "options": [
+      {
+        "text": "$4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.25$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{4}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of $-1$ represents taking the reciprocal of the fraction:\n$$\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}$$\n\n**Step 2: Convert decimal base if applicable**\n$$0.25 = \\frac{1}{4}$$\n\n**Step 3: Calculate the reciprocal**\n$$\\text{Reciprocal of } \\frac{1}{4} \\text{ is } 4$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{1}{3}\\right)^{-2}$",
+    "options": [
+      {
+        "text": "$9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{9}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$6$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n$$\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$$\n\n**Step 2: Evaluate the positive power**\nFor $\\left(\\frac{1}{3}\\right)^{-2}$:\n$$= \\text{Reciprocal squared/cubed} = 9$$\n\n**Step 3: State final value**\n$$9$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{3}{4}\\right)^{-2}$",
+    "options": [
+      {
+        "text": "$\\frac{16}{9}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{9}{16}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-\\frac{9}{16}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{6}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n$$\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$$\n\n**Step 2: Evaluate the positive power**\nFor $\\left(\\frac{3}{4}\\right)^{-2}$:\n$$= \\text{Reciprocal squared/cubed} = \\frac{16}{9}$$\n\n**Step 3: State final value**\n$$\\frac{16}{9}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{2}{3}\\right)^{-3}$",
+    "options": [
+      {
+        "text": "$\\frac{27}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{27}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-\\frac{8}{27}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{9}{6}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n$$\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$$\n\n**Step 2: Evaluate the positive power**\nFor $\\left(\\frac{2}{3}\\right)^{-3}$:\n$$= \\text{Reciprocal squared/cubed} = \\frac{27}{8}$$\n\n**Step 3: State final value**\n$$\\frac{27}{8}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify: $\\left(\\frac{4}{9}\\right)^0$",
+    "options": [
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{4}{9}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{9}{4}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n$$\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$$\n\n**Step 2: Evaluate the positive power**\nFor $\\left(\\frac{4}{9}\\right)^0$:\n$$\\text{Any non-zero base to the power of } 0 \\text{ is } 1$$\n\n**Step 3: State final value**\n$$1$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $b^9 \\times b^6$",
+    "options": [
+      {
+        "text": "$b^{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$b^{54}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$b^3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$9b^6$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n$$a^m \\times a^n = a^{m + n}$$\n\n**Step 2: Add indices**\nFor $b^9 \\times b^6$:\n$$b^{9+6} = b^{15}$$\n\n**Step 3: State final form**\n$$b^{15}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $5^3 \\times 5^{-8}$",
+    "options": [
+      {
+        "text": "$5^{-5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$5^{11}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$5^{-24}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$25^{-5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n$$a^m \\times a^n = a^{m + n}$$\n\n**Step 2: Add indices**\nFor $5^3 \\times 5^{-8}$:\n$$5^{3 + (-8)} = 5^{-5}$$\n\n**Step 3: State final form**\n$$5^{-5}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $y^{12} \\times y^{-8}$",
+    "options": [
+      {
+        "text": "$y^4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^{20}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^{-96}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^8$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n$$a^m \\times a^n = a^{m + n}$$\n\n**Step 2: Add indices**\nFor $y^{12} \\times y^{-8}$:\n$$y^{12 + (-8)} = y^4$$\n\n**Step 3: State final form**\n$$y^4$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $6^5 \\times 6 \\times 6^{-5}$",
+    "options": [
+      {
+        "text": "$6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$6^{11}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$6^{-25}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n$$a^m \\times a^n = a^{m + n}$$\n\n**Step 2: Add indices**\nFor $6^5 \\times 6 \\times 6^{-5}$:\n$$6^{5 + 1 - 5} = 6^1 = 6$$\n\n**Step 3: State final form**\n$$6$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $5^9 \\div 5^4$",
+    "options": [
+      {
+        "text": "$5^5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$5^{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$5^{36}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1^5$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n$$a^m \\div a^n = a^{m - n}$$\n\n**Step 2: Subtract indices**\nFor $5^9 \\div 5^4$:\n$$5^{9 - 4} = 5^5$$\n\n**Step 3: State final form**\n$$5^5$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $y^{12} \\div y^{-3}$",
+    "options": [
+      {
+        "text": "$y^{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^{-4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^{-36}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n$$a^m \\div a^n = a^{m - n}$$\n\n**Step 2: Subtract indices**\nFor $y^{12} \\div y^{-3}$:\n$$y^{12 - (-3)} = y^{12 + 3} = y^{15}$$\n\n**Step 3: State final form**\n$$y^{15}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $3^6 \\div 3^{-6}$",
+    "options": [
+      {
+        "text": "$3^{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$3^0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$3^{-36}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n$$a^m \\div a^n = a^{m - n}$$\n\n**Step 2: Subtract indices**\nFor $3^6 \\div 3^{-6}$:\n$$3^{6 - (-6)} = 3^{6 + 6} = 3^{12}$$\n\n**Step 3: State final form**\n$$3^{12}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $z \\div z^{15}$",
+    "options": [
+      {
+        "text": "$z^{-14}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$z^{14}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$z^{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$z^{-15}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n$$a^m \\div a^n = a^{m - n}$$\n\n**Step 2: Subtract indices**\nFor $z \\div z^{15}$:\n$$z^{1 - 15} = z^{-14}$$\n\n**Step 3: State final form**\n$$z^{-14}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $(y^6)^4$",
+    "options": [
+      {
+        "text": "$y^{24}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^{10}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$y^2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4y^6$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: $(a^m)^n = a^{m \\times n}$\n- Product: $a^m \\times a^n = a^{m+n}$\n\n**Step 2: Evaluate**\nFor $(y^6)^4$:\n$$y^{6 \\times 4} = y^{24}$$\n\n**Step 3: State final form**\n$$y^{24}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $b^{-3} \\times b^{-3} \\times b^{-3}$",
+    "options": [
+      {
+        "text": "$b^{-9}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$b^{-27}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$b^9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$b^{-6}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: $(a^m)^n = a^{m \\times n}$\n- Product: $a^m \\times a^n = a^{m+n}$\n\n**Step 2: Evaluate**\nFor $b^{-3} \\times b^{-3} \\times b^{-3}$:\n$$b^{-3 + (-3) + (-3)} = b^{-9}$$\n\n**Step 3: State final form**\n$$b^{-9}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $(c^{-3})^4$",
+    "options": [
+      {
+        "text": "$c^{-12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$c^{-7}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$c^{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$c^{-1}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: $(a^m)^n = a^{m \\times n}$\n- Product: $a^m \\times a^n = a^{m+n}$\n\n**Step 2: Evaluate**\nFor $(c^{-3})^4$:\n$$c^{-3 \\times 4} = c^{-12}$$\n\n**Step 3: State final form**\n$$c^{-12}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Simplify, leaving your answer in index form: $(x^{-3})^{-4}$",
+    "options": [
+      {
+        "text": "$x^{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x^{-12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x^7$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x^{-7}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: $(a^m)^n = a^{m \\times n}$\n- Product: $a^m \\times a^n = a^{m+n}$\n\n**Step 2: Evaluate**\nFor $(x^{-3})^{-4}$:\n$$x^{-3 \\times (-4)} = x^{12}$$\n\n**Step 3: State final form**\n$$x^{12}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Solve the index equation: $4^x = 64$",
+    "options": [
+      {
+        "text": "$x = 3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 16$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 2$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor $4^x = 64$:\n$$4^3 = 64$$\n\n**Step 2: Equate indices**\nBy matching exponents:\n$$x = 3$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Solve the index equation: $3^x = 243$",
+    "options": [
+      {
+        "text": "$x = 5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 3$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor $3^x = 243$:\n$$3^5 = 243$$\n\n**Step 2: Equate indices**\nBy matching exponents:\n$$x = 5$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Solve the index equation: $5^x = \\frac{1}{5}$",
+    "options": [
+      {
+        "text": "$x = -1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 0$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor $5^x = \\frac{1}{5}$:\n$$5^{-1} = \\frac{1}{5}$$\n\n**Step 2: Equate indices**\nBy matching exponents:\n$$x = -1$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Solve the index equation: $4^x = \\frac{1}{64}$",
+    "options": [
+      {
+        "text": "$x = -3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = -4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = \\frac{1}{3}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor $4^x = \\frac{1}{64}$:\n$$4^{-3} = \\frac{1}{64}$$\n\n**Step 2: Equate indices**\nBy matching exponents:\n$$x = -3$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Solve the index equation: $\\left(\\frac{1}{5}\\right)^x = 25$",
+    "options": [
+      {
+        "text": "$x = -2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = -5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 5$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor $\\left(\\frac{1}{5}\\right)^x = 25$:\n$$5^{-x} = 5^2$$\n\n**Step 2: Equate indices**\nBy matching exponents:\n$$x = -2$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Solve the index equation: $15^x = 1$",
+    "options": [
+      {
+        "text": "$x = 0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = 15$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$x = -1$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor $15^x = 1$:\n$$15^0 = 1$$\n\n**Step 2: Equate indices**\nBy matching exponents:\n$$x = 0$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Expand the brackets: $(4x)^2$",
+    "options": [
+      {
+        "text": "$16x^2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4x^2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$8x^2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$16x$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: $(ab)^n = a^n b^n$\n- Quotient raised to a power: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n\n**Step 2: Expand each component**\nFor $(4x)^2$:\n$$= 16x^2$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Expand the brackets: $(2st)^5$",
+    "options": [
+      {
+        "text": "$32s^5t^5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$10s^5t^5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2s^5t^5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$32st$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: $(ab)^n = a^n b^n$\n- Quotient raised to a power: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n\n**Step 2: Expand each component**\nFor $(2st)^5$:\n$$= 32s^5t^5$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Expand the brackets: $(5xyz)^3$",
+    "options": [
+      {
+        "text": "$125x^3y^3z^3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$15x^3y^3z^3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$5x^3y^3z^3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$125xyz$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: $(ab)^n = a^n b^n$\n- Quotient raised to a power: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n\n**Step 2: Expand each component**\nFor $(5xyz)^3$:\n$$= 125x^3y^3z^3$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Expand the brackets: $\\left(\\frac{2}{y}\\right)^4$",
+    "options": [
+      {
+        "text": "$\\frac{16}{y^4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{y^4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{16}{y}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{2}{y^4}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: $(ab)^n = a^n b^n$\n- Quotient raised to a power: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n\n**Step 2: Expand each component**\nFor $\\left(\\frac{2}{y}\\right)^4$:\n$$= \\frac{16}{y^4}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Expand the brackets: $\\left(\\frac{5a}{3}\\right)^3$",
+    "options": [
+      {
+        "text": "$\\frac{125a^3}{27}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{15a^3}{9}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{125a}{27}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5a^3}{3}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: $(ab)^n = a^n b^n$\n- Quotient raised to a power: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n\n**Step 2: Expand each component**\nFor $\\left(\\frac{5a}{3}\\right)^3$:\n$$= \\frac{125a^3}{27}$$"
+  },
+  {
+    "chapterId": "y11a-8",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-8A",
+    "topicCode": "8A",
+    "topicTitle": "Indices",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Expand the brackets: $\\left(\\frac{4x}{3y}\\right)^3$",
+    "options": [
+      {
+        "text": "$\\frac{64x^3}{27y^3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12x^3}{9y^3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{64x}{27y}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{64x^3}{3y^3}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: $(ab)^n = a^n b^n$\n- Quotient raised to a power: $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$\n\n**Step 2: Expand each component**\nFor $\\left(\\frac{4x}{3y}\\right)^3$:\n$$= \\frac{64x^3}{27y^3}$$"
+  }
+]
