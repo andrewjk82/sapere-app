@@ -154,17 +154,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     [studentProfile?.assignedYear, studentProfile?.year]
   );
   const assignedYear = assignedYears[0];
-  const isYear10OrAbove = useMemo(
-    () => assignedYear && (parseInt(String(assignedYear).replace(/\D/g, '')) >= 10),
-    [assignedYear]
-  );
 
   const isGraphSketchQuestion = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
-  // graph_sketch always needs a canvas (even on mobile) so the image can be captured for grading.
-  // Other question types only show the canvas on non-mobile devices.
+  // The working-out sketch board now shows for ALL year levels:
+  //  - graph_sketch questions always (even on mobile) so the image can be graded
+  //  - every other question on non-mobile devices (split-screen layout)
   const showSplitScreen = Boolean(currentQuestion) && (
     isGraphSketchQuestion ||
-    (!isMobile && (isYear10OrAbove || studentProfile?.seniorCanvasEnabled === true))
+    !isMobile
   );
   const showSideCanvas = showSplitScreen && !isTabletCanvasLayout && !isMobile;
 
