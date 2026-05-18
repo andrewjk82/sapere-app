@@ -60,26 +60,25 @@ const getValidChapterIdsForYears = (years, courses) => {
   return ids;
 };
 
-// Builds a stable signature of a student's assigned curriculum. When the
-// teacher changes any of these fields, the signature changes and any
-// previously-generated daily assignment is treated as stale and regenerated.
+// Builds a stable signature of the inputs that drive Daily Practice question
+// generation — i.e. the teacher's Daily Practice Settings (dailyPracticeConfig)
+// plus the enrolled-year fallback. When any of these change, the signature
+// changes and a previously-generated daily assignment is regenerated.
+// NOTE: the Curriculum tab's progress tracking (assignedChapters/assignedTopics)
+// is intentionally excluded — it does not affect daily practice.
 export const getCurriculumSignature = (studentProfile = {}) => {
   const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
   const years = (Array.isArray(rawYear)
     ? rawYear
     : String(rawYear).split(",").map((y) => y.trim()).filter(Boolean))
     .map(normalizeYearLabel).filter(Boolean).sort();
-  const chapters = (Array.isArray(studentProfile.assignedChapters) ? studentProfile.assignedChapters : [])
-    .slice().sort();
-  const topics = (Array.isArray(studentProfile.assignedTopics) ? studentProfile.assignedTopics : [])
-    .slice().sort();
   const courses = (Array.isArray(studentProfile.assignedCourse)
     ? studentProfile.assignedCourse
     : [studentProfile.assignedCourse || "Advanced"]).slice().sort();
   const config = studentProfile.dailyPracticeConfig || {};
   const cfgYears = (Array.isArray(config.years) ? config.years : []).map(normalizeYearLabel).filter(Boolean).sort();
   const cfgChapters = (Array.isArray(config.chapters) ? config.chapters : []).slice().sort();
-  return JSON.stringify({ years, chapters, topics, courses, cfgYears, cfgChapters });
+  return JSON.stringify({ years, courses, cfgYears, cfgChapters });
 };
 
 const getOptions = (question) => {
@@ -190,23 +189,33 @@ const slimQuestion = (data) => ({
 const shuffle = (items) => [...items].sort(() => Math.random() - 0.5);
 
 const buildDailyTargets = (studentProfile = {}) => {
+  // ── Daily Practice is driven ONLY by the teacher's "Daily Practice Settings"
+  // (dailyPracticeConfig: years + chapters) found under Challenge tab.
+  // The Curriculum tab's per-chapter assignment (profile.assignedChapters /
+  // assignedTopics) is for tracking student progress only and is NOT used to
+  // generate daily practice questions.
   const config = studentProfile.dailyPracticeConfig || {};
-  const hasDailyConfig = (config.years?.length > 0 || config.chapters?.length > 0);
+  const hasConfigYears = Array.isArray(config.years) && config.years.length > 0;
+  const hasConfigChapters = Array.isArray(config.chapters) && config.chapters.length > 0;
 
-  const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
-  let assignedYears = Array.isArray(rawYear)
-    ? rawYear
-    : String(rawYear).split(",").map((year) => year.trim()).filter(Boolean);
-  assignedYears = assignedYears.map(normalizeYearLabel).filter(Boolean);
-
-  let assignedChapters = getAssignedChapters(studentProfile, assignedYears[0]);
-  if (hasDailyConfig) {
-    if (config.years?.length > 0) assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
-    if (config.chapters?.length > 0) assignedChapters = config.chapters;
-    else if (config.years?.length > 0) assignedChapters = [];
+  let assignedYears;
+  if (hasConfigYears) {
+    assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
+  } else {
+    // Fallback when no Daily Practice Settings are configured: use the
+    // student's enrolled year with all chapters.
+    const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
+    assignedYears = (Array.isArray(rawYear)
+      ? rawYear
+      : String(rawYear).split(",").map((year) => year.trim()).filter(Boolean))
+      .map(normalizeYearLabel).filter(Boolean);
   }
+  if (assignedYears.length === 0) assignedYears = [DEFAULT_YEAR];
 
-  const assignedTopics = Array.isArray(studentProfile.assignedTopics) ? studentProfile.assignedTopics : [];
+  // Empty = all chapters of the selected year(s).
+  let assignedChapters = hasConfigChapters ? config.chapters.slice() : [];
+
+  const assignedTopics = [];
   const assignedCourses = Array.isArray(studentProfile.assignedCourse)
     ? studentProfile.assignedCourse
     : [studentProfile.assignedCourse || "Advanced"];
