@@ -43,11 +43,41 @@ export const CURRICULUM_DATA = {
     {
       id: 'calc-stage-5',
       title: 'Stage 5: Fractions (Year 3-5)',
-      modules: 3,
+      modules: 28,
       topics: [
-        { id: 'calc-5-core', code: 'C5.1', group: 'Core', title: 'Equivalent fractions & same denom. add/sub' },
-        { id: 'calc-5-adv', code: 'C5.2', group: 'Advanced', title: 'Unlike denoms & multiplying fractions' },
-        { id: 'calc-5-enrich', code: 'C5.3', group: 'Enrichment', title: 'Fractions on number line & ratio intro' }
+        // Phase A — Addition & Subtraction
+        { id: 'calc-5-s1',  code: 'F1',  group: 'A · Addition & Subtraction', title: 'Addition · same denom · no mixed' },
+        { id: 'calc-5-s2',  code: 'F2',  group: 'A · Addition & Subtraction', title: 'Subtraction · same denom · no mixed' },
+        { id: 'calc-5-s3',  code: 'F3',  group: 'A · Addition & Subtraction', title: 'Addition · diff denom · no mixed' },
+        { id: 'calc-5-s4',  code: 'F4',  group: 'A · Addition & Subtraction', title: 'Subtraction · diff denom · no mixed' },
+        { id: 'calc-5-s5',  code: 'F5',  group: 'A · Addition & Subtraction', title: 'Addition · same denom · mixed' },
+        { id: 'calc-5-s6',  code: 'F6',  group: 'A · Addition & Subtraction', title: 'Subtraction · same denom · mixed' },
+        { id: 'calc-5-s7',  code: 'F7',  group: 'A · Addition & Subtraction', title: 'Addition · diff denom · mixed' },
+        { id: 'calc-5-s8',  code: 'F8',  group: 'A · Addition & Subtraction', title: 'Subtraction · diff denom · mixed' },
+        // Phase B — Multiplication
+        { id: 'calc-5-s9',  code: 'F9',  group: 'B · Multiplication', title: 'Fraction × fraction · no mixed' },
+        { id: 'calc-5-s10', code: 'F10', group: 'B · Multiplication', title: 'Fraction × whole number' },
+        { id: 'calc-5-s11', code: 'F11', group: 'B · Multiplication', title: 'Mixed × fraction' },
+        { id: 'calc-5-s12', code: 'F12', group: 'B · Multiplication', title: 'Mixed × mixed' },
+        // Phase C — Division
+        { id: 'calc-5-s13', code: 'F13', group: 'C · Division', title: 'Fraction ÷ fraction · no mixed' },
+        { id: 'calc-5-s14', code: 'F14', group: 'C · Division', title: 'Fraction ÷ whole number' },
+        { id: 'calc-5-s15', code: 'F15', group: 'C · Division', title: 'Mixed ÷ fraction' },
+        { id: 'calc-5-s16', code: 'F16', group: 'C · Division', title: 'Mixed ÷ mixed' },
+        // Phase D — Combined operations
+        { id: 'calc-5-s17', code: 'F17', group: 'D · Combined operations', title: '2-step: +/− with ×/÷' },
+        { id: 'calc-5-s18', code: 'F18', group: 'D · Combined operations', title: '3-step with parentheses' },
+        { id: 'calc-5-s19', code: 'F19', group: 'D · Combined operations', title: '4-step: all operations' },
+        { id: 'calc-5-s20', code: 'F20', group: 'D · Combined operations', title: '4-step: all ops + mixed' },
+        // Phase E — Word problems
+        { id: 'calc-5-s21', code: 'F21', group: 'E · Word problems', title: 'Add & subtract · 1-step story' },
+        { id: 'calc-5-s22', code: 'F22', group: 'E · Word problems', title: 'Multiply & divide · 1-step story' },
+        { id: 'calc-5-s23', code: 'F23', group: 'E · Word problems', title: '2-step · same operation' },
+        { id: 'calc-5-s24', code: 'F24', group: 'E · Word problems', title: '2-step · mixed operations' },
+        { id: 'calc-5-s25', code: 'F25', group: 'E · Word problems', title: 'Measurement & unit conversion' },
+        { id: 'calc-5-s26', code: 'F26', group: 'E · Word problems', title: 'Ratio & rate problems' },
+        { id: 'calc-5-s27', code: 'F27', group: 'E · Word problems', title: '3-step · build equation' },
+        { id: 'calc-5-s28', code: 'F28', group: 'E · Word problems', title: '4-step · all ops + mixed' }
       ]
     },
     {

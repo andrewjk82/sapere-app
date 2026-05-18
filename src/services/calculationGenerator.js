@@ -30,7 +30,43 @@ const simplifyFraction = (num, denom) => {
   return `${n}/${d}`;
 };
 
+// ── Fraction helpers for Stage 5 (Fractions) ──────────────────────────────
+// Fractions are represented as { n, d }.
+const fReduce = (f) => {
+  let n = f.n, d = f.d;
+  if (d < 0) { n = -n; d = -d; }
+  const g = gcd(n, d) || 1;
+  return { n: n / g, d: d / g };
+};
+const fAdd = (a, b) => fReduce({ n: a.n * b.d + b.n * a.d, d: a.d * b.d });
+const fSub = (a, b) => fReduce({ n: a.n * b.d - b.n * a.d, d: a.d * b.d });
+const fMul = (a, b) => fReduce({ n: a.n * b.n, d: a.d * b.d });
+const fDiv = (a, b) => fReduce({ n: a.n * b.d, d: a.d * b.n });
+const fVal = (f) => f.n / f.d;
+const fStr = (f) => { const r = fReduce(f); return simplifyFraction(r.n, r.d); };
+const fTex = (f) => `\\frac{${f.n}}{${f.d}}`;
+const whole = (w) => ({ n: w, d: 1 });
+// Random proper fraction with denominator in [minD, maxD].
+const properFrac = (maxD = 9, minD = 3) => {
+  const d = randomInt(minD, maxD);
+  return { n: randomInt(1, d - 1), d };
+};
+// Random mixed numeral → { w, n, d, value:{n,d} }.
+const mixedNum = (maxD = 9) => {
+  const d = randomInt(3, maxD);
+  const w = randomInt(1, 4);
+  const n = randomInt(1, d - 1);
+  return { w, n, d, value: { n: w * d + n, d } };
+};
+const mixedTex = (m) => `${m.w}\\frac{${m.n}}{${m.d}}`;
+
 export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
+  // Legacy Stage 5 topic ids → representative new step (assignments made
+  // before the 28-step fraction curriculum still produce sensible questions).
+  if (topicId === 'calc-5-core') topicId = 'calc-5-s1';
+  else if (topicId === 'calc-5-adv') topicId = 'calc-5-s9';
+  else if (topicId === 'calc-5-enrich') topicId = 'calc-5-s26';
+
   let q = '';
   let a = '';
   let hint = '';
@@ -173,42 +209,268 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
 
-    // Stage 5
-    case 'calc-5-core': {
-      const isAdd = Math.random() > 0.5;
-      const denom = randomInt(3, 12);
-      if (isAdd) {
-        const num1 = randomInt(1, denom - 1);
-        const num2 = randomInt(1, denom - num1); // Keep sum <= denom
-        q = `$$ \\frac{${num1}}{${denom}} + \\frac{${num2}}{${denom}} = ? $$`;
-        a = simplifyFraction(num1 + num2, denom);
+    // ════ Stage 5: Fractions — 28-step curriculum ════
+    // Phase A — Addition & Subtraction
+    case 'calc-5-s1': { // add · same denom · no mixed
+      const d = randomInt(3, 12);
+      const n1 = randomInt(1, d - 2);
+      const n2 = randomInt(1, d - 1 - n1);
+      q = `$$ \\frac{${n1}}{${d}} + \\frac{${n2}}{${d}} = ? $$`;
+      a = simplifyFraction(n1 + n2, d);
+      hint = 'Same denominator — add the top numbers, keep the bottom.';
+      break;
+    }
+    case 'calc-5-s2': { // sub · same denom · no mixed
+      const d = randomInt(3, 12);
+      const n1 = randomInt(2, d - 1);
+      const n2 = randomInt(1, n1 - 1);
+      q = `$$ \\frac{${n1}}{${d}} - \\frac{${n2}}{${d}} = ? $$`;
+      a = simplifyFraction(n1 - n2, d);
+      hint = 'Same denominator — subtract the top numbers, keep the bottom.';
+      break;
+    }
+    case 'calc-5-s3': { // add · diff denom · no mixed
+      const f1 = properFrac(8), f2 = properFrac(8);
+      q = `$$ ${fTex(f1)} + ${fTex(f2)} = ? $$`;
+      a = fStr(fAdd(f1, f2));
+      hint = 'Different denominators — rewrite with a common denominator first.';
+      break;
+    }
+    case 'calc-5-s4': { // sub · diff denom · no mixed
+      let f1 = properFrac(8), f2 = properFrac(8);
+      if (fVal(f1) < fVal(f2)) { const t = f1; f1 = f2; f2 = t; }
+      q = `$$ ${fTex(f1)} - ${fTex(f2)} = ? $$`;
+      a = fStr(fSub(f1, f2));
+      hint = 'Different denominators — rewrite with a common denominator first.';
+      break;
+    }
+    case 'calc-5-s5': { // add · same denom · mixed
+      const d = randomInt(3, 10);
+      const m1 = { w: randomInt(1, 4), n: randomInt(1, d - 1), d };
+      const m2 = { w: randomInt(1, 4), n: randomInt(1, d - 1), d };
+      q = `$$ ${mixedTex(m1)} + ${mixedTex(m2)} = ? $$`;
+      a = fStr(fAdd({ n: m1.w * d + m1.n, d }, { n: m2.w * d + m2.n, d }));
+      hint = 'Add the whole numbers, then add the fractions.';
+      break;
+    }
+    case 'calc-5-s6': { // sub · same denom · mixed
+      const d = randomInt(3, 10);
+      let m1 = { w: randomInt(2, 5), n: randomInt(1, d - 1), d };
+      let m2 = { w: randomInt(1, 4), n: randomInt(1, d - 1), d };
+      let v1 = { n: m1.w * d + m1.n, d }, v2 = { n: m2.w * d + m2.n, d };
+      if (fVal(v1) < fVal(v2)) { const t = m1; m1 = m2; m2 = t; const tv = v1; v1 = v2; v2 = tv; }
+      q = `$$ ${mixedTex(m1)} - ${mixedTex(m2)} = ? $$`;
+      a = fStr(fSub(v1, v2));
+      hint = 'Convert to improper fractions, or subtract wholes then fractions.';
+      break;
+    }
+    case 'calc-5-s7': { // add · diff denom · mixed
+      const m1 = mixedNum(8), m2 = mixedNum(8);
+      q = `$$ ${mixedTex(m1)} + ${mixedTex(m2)} = ? $$`;
+      a = fStr(fAdd(m1.value, m2.value));
+      hint = 'Find a common denominator for the fraction parts.';
+      break;
+    }
+    case 'calc-5-s8': { // sub · diff denom · mixed
+      let m1 = mixedNum(8), m2 = mixedNum(8);
+      if (fVal(m1.value) < fVal(m2.value)) { const t = m1; m1 = m2; m2 = t; }
+      q = `$$ ${mixedTex(m1)} - ${mixedTex(m2)} = ? $$`;
+      a = fStr(fSub(m1.value, m2.value));
+      hint = 'Convert to improper fractions, then use a common denominator.';
+      break;
+    }
+
+    // Phase B — Multiplication
+    case 'calc-5-s9': { // fraction × fraction · no mixed
+      const f1 = properFrac(8), f2 = properFrac(8);
+      q = `$$ ${fTex(f1)} \\times ${fTex(f2)} = ? $$`;
+      a = fStr(fMul(f1, f2));
+      hint = 'Multiply the tops, multiply the bottoms, then simplify.';
+      break;
+    }
+    case 'calc-5-s10': { // fraction × whole number
+      const f = properFrac(9), w = randomInt(2, 9);
+      q = `$$ ${fTex(f)} \\times ${w} = ? $$`;
+      a = fStr(fMul(f, whole(w)));
+      hint = 'A whole number is itself over 1. Multiply across.';
+      break;
+    }
+    case 'calc-5-s11': { // mixed × fraction
+      const m = mixedNum(7), f = properFrac(7);
+      q = `$$ ${mixedTex(m)} \\times ${fTex(f)} = ? $$`;
+      a = fStr(fMul(m.value, f));
+      hint = 'Convert the mixed numeral to an improper fraction first.';
+      break;
+    }
+    case 'calc-5-s12': { // mixed × mixed
+      const m1 = mixedNum(6), m2 = mixedNum(6);
+      q = `$$ ${mixedTex(m1)} \\times ${mixedTex(m2)} = ? $$`;
+      a = fStr(fMul(m1.value, m2.value));
+      hint = 'Convert both mixed numerals to improper fractions first.';
+      break;
+    }
+
+    // Phase C — Division
+    case 'calc-5-s13': { // fraction ÷ fraction · no mixed
+      const f1 = properFrac(8), f2 = properFrac(8);
+      q = `$$ ${fTex(f1)} \\div ${fTex(f2)} = ? $$`;
+      a = fStr(fDiv(f1, f2));
+      hint = 'Dividing by a fraction = multiplying by its reciprocal (flip it).';
+      break;
+    }
+    case 'calc-5-s14': { // fraction ÷ whole number
+      const f = properFrac(9), w = randomInt(2, 8);
+      q = `$$ ${fTex(f)} \\div ${w} = ? $$`;
+      a = fStr(fDiv(f, whole(w)));
+      hint = 'Dividing by a whole number multiplies the denominator.';
+      break;
+    }
+    case 'calc-5-s15': { // mixed ÷ fraction
+      const m = mixedNum(7), f = properFrac(7);
+      q = `$$ ${mixedTex(m)} \\div ${fTex(f)} = ? $$`;
+      a = fStr(fDiv(m.value, f));
+      hint = 'Make the mixed numeral improper, then multiply by the reciprocal.';
+      break;
+    }
+    case 'calc-5-s16': { // mixed ÷ mixed
+      const m1 = mixedNum(6), m2 = mixedNum(6);
+      q = `$$ ${mixedTex(m1)} \\div ${mixedTex(m2)} = ? $$`;
+      a = fStr(fDiv(m1.value, m2.value));
+      hint = 'Convert both to improper fractions, then flip the divisor.';
+      break;
+    }
+
+    // Phase D — Combined operations
+    case 'calc-5-s17': { // 2-step: +/− with ×/÷
+      const f1 = properFrac(5), f2 = properFrac(5), f3 = properFrac(6);
+      q = `$$ ${fTex(f1)} \\times ${fTex(f2)} + ${fTex(f3)} = ? $$`;
+      a = fStr(fAdd(fMul(f1, f2), f3));
+      hint = 'Do the multiplication first, then the addition.';
+      break;
+    }
+    case 'calc-5-s18': { // 3-step with parentheses
+      const f1 = properFrac(6), f2 = properFrac(6), f3 = properFrac(5);
+      q = `$$ \\left( ${fTex(f1)} + ${fTex(f2)} \\right) \\times ${fTex(f3)} = ? $$`;
+      a = fStr(fMul(fAdd(f1, f2), f3));
+      hint = 'Work out the brackets first, then multiply.';
+      break;
+    }
+    case 'calc-5-s19': { // 4-step: all operations
+      let f1, f2, f3, f4, f5, res;
+      do {
+        f1 = properFrac(4, 2); f2 = properFrac(4, 2); f3 = properFrac(4, 2);
+        f4 = properFrac(4, 2); f5 = properFrac(6, 2);
+        res = fSub(fAdd(fMul(f1, f2), fDiv(f3, f4)), f5);
+      } while (res.n <= 0 || res.d > 240);
+      q = `$$ ${fTex(f1)} \\times ${fTex(f2)} + ${fTex(f3)} \\div ${fTex(f4)} - ${fTex(f5)} = ? $$`;
+      a = fStr(res);
+      hint = 'Order of operations: do × and ÷ before + and −.';
+      break;
+    }
+    case 'calc-5-s20': { // 4-step: all ops + mixed
+      let m, f2, f3, f4, f5, res;
+      do {
+        m = mixedNum(4); f2 = properFrac(4, 2); f3 = properFrac(4, 2);
+        f4 = properFrac(4, 2); f5 = properFrac(8, 4);
+        res = fSub(fAdd(fMul(m.value, f2), fDiv(f3, f4)), f5);
+      } while (res.n <= 0 || res.d > 300);
+      q = `$$ ${mixedTex(m)} \\times ${fTex(f2)} + ${fTex(f3)} \\div ${fTex(f4)} - ${fTex(f5)} = ? $$`;
+      a = fStr(res);
+      hint = 'Convert the mixed numeral first, then apply order of operations.';
+      break;
+    }
+
+    // Phase E — Word problems (templated)
+    case 'calc-5-s21': { // add & subtract · 1-step story
+      const f1 = properFrac(8), f2 = properFrac(8);
+      if (Math.random() > 0.5) {
+        q = `A jug holds $${fTex(f1)}$ of a litre of juice. Another $${fTex(f2)}$ of a litre is poured in. How many litres are in the jug now?`;
+        a = fStr(fAdd(f1, f2));
       } else {
-        const num1 = randomInt(2, denom - 1);
-        const num2 = randomInt(1, num1 - 1);
-        q = `$$ \\frac{${num1}}{${denom}} - \\frac{${num2}}{${denom}} = ? $$`;
-        a = simplifyFraction(num1 - num2, denom);
+        let A = f1, B = f2;
+        if (fVal(A) < fVal(B)) { const t = A; A = B; B = t; }
+        q = `A ribbon is $${fTex(A)}$ of a metre long. $${fTex(B)}$ of a metre is cut off. How long is the ribbon now? (metres)`;
+        a = fStr(fSub(A, B));
       }
-      hint = `Perform the operation on the top numbers. Keep the bottom number the same. Format as mixed fractions if needed (e.g., 1 1/2).`;
+      hint = 'Decide add or subtract, then use a common denominator.';
       break;
     }
-    case 'calc-5-adv': {
-      const denom1 = randomInt(2, 6);
-      const denom2 = randomInt(2, 6);
-      const num1 = randomInt(1, denom1 - 1);
-      const num2 = randomInt(1, denom2 - 1);
-      q = `$$ \\frac{${num1}}{${denom1}} \\times \\frac{${num2}}{${denom2}} = ? $$`;
-      a = simplifyFraction(num1 * num2, denom1 * denom2);
-      hint = `Multiply the tops, multiply the bottoms. Format as mixed fractions if needed (e.g., 1 1/2).`;
+    case 'calc-5-s22': { // multiply & divide · 1-step story
+      if (Math.random() > 0.5) {
+        const f = properFrac(8), w = randomInt(2, 6);
+        q = `One pancake needs $${fTex(f)}$ of a cup of milk. How many cups of milk are needed for ${w} pancakes?`;
+        a = fStr(fMul(f, whole(w)));
+      } else {
+        const f = properFrac(8), w = randomInt(2, 5);
+        q = `$${fTex(f)}$ of a cake is shared equally between ${w} children. What fraction of a whole cake does each child receive?`;
+        a = fStr(fDiv(f, whole(w)));
+      }
+      hint = 'Repeated groups → multiply. Sharing equally → divide.';
       break;
     }
-    case 'calc-5-enrich': {
-      const ratio1 = randomInt(1, 5);
-      const ratio2 = randomInt(1, 5);
-      const mult = randomInt(2, 10);
-      const total = (ratio1 + ratio2) * mult;
-      q = `Share ${total} in the ratio ${ratio1}:${ratio2}. What is the larger share?`;
-      a = String(Math.max(ratio1, ratio2) * mult);
-      hint = `Total parts = ${ratio1 + ratio2}. Find the value of one part first.`;
+    case 'calc-5-s23': { // 2-step · same operation
+      const d = randomInt(5, 10);
+      const n1 = randomInt(1, d - 1), n2 = randomInt(1, d - 1), n3 = randomInt(1, d - 1);
+      q = `Liam read $\\frac{${n1}}{${d}}$ of a book on Monday, $\\frac{${n2}}{${d}}$ on Tuesday and $\\frac{${n3}}{${d}}$ on Wednesday. What fraction of the book did he read in total?`;
+      a = simplifyFraction(n1 + n2 + n3, d);
+      hint = 'Add all three fractions — they already share a denominator.';
+      break;
+    }
+    case 'calc-5-s24': { // 2-step · mixed operations
+      let f1, f2, res;
+      do {
+        f1 = properFrac(6); f2 = properFrac(6);
+        res = fSub(fSub(whole(1), f1), f2);
+      } while (res.n <= 0 || res.d > 120);
+      q = `A water tank starts full. $${fTex(f1)}$ of the tank is used in the morning and $${fTex(f2)}$ is used in the afternoon. What fraction of the tank is left?`;
+      a = fStr(res);
+      hint = 'Start from 1 whole, then subtract each amount used.';
+      break;
+    }
+    case 'calc-5-s25': { // measurement & unit conversion
+      if (Math.random() > 0.5) {
+        const d = pick([2, 3, 4, 5, 6, 10, 12]);
+        const n = randomInt(1, d - 1);
+        q = `How many minutes are there in $\\frac{${n}}{${d}}$ of an hour?`;
+        a = String((60 * n) / d);
+        hint = 'There are 60 minutes in an hour.';
+      } else {
+        const d = pick([2, 4, 5, 10]);
+        const n = randomInt(1, d - 1);
+        q = `How many centimetres are there in $\\frac{${n}}{${d}}$ of a metre?`;
+        a = String((100 * n) / d);
+        hint = 'There are 100 centimetres in a metre.';
+      }
+      break;
+    }
+    case 'calc-5-s26': { // ratio & rate problems
+      const r1 = randomInt(1, 5), r2 = randomInt(1, 5), unit = randomInt(2, 9);
+      const total = (r1 + r2) * unit;
+      q = `Sand and cement are mixed in the ratio ${r1}:${r2}. A builder uses ${total} kg of the mixture. How many kilograms of cement are used?`;
+      a = String(r2 * unit);
+      hint = `Total parts = ${r1 + r2}. Find the value of one part, then count the cement parts.`;
+      break;
+    }
+    case 'calc-5-s27': { // 3-step · build equation
+      let f1, f2, f3, res;
+      do {
+        f1 = properFrac(6); f2 = properFrac(6); f3 = properFrac(6);
+        res = fSub(fAdd(f1, f2), f3);
+      } while (res.n <= 0 || res.d > 150);
+      q = `A garden bed is being filled with soil. $${fTex(f1)}$ of it is filled in the morning and $${fTex(f2)}$ more in the afternoon, then $${fTex(f3)}$ settles and sinks away. What fraction of the garden bed is filled?`;
+      a = fStr(res);
+      hint = 'Write it as one expression: first add, then subtract.';
+      break;
+    }
+    case 'calc-5-s28': { // 4-step · all ops + mixed
+      let m, f2, f3, res;
+      do {
+        m = mixedNum(5); f2 = properFrac(5); f3 = properFrac(5);
+        res = fMul(fSub(m.value, f2), f3);
+      } while (res.n <= 0 || res.d > 200);
+      q = `A baker makes $${mixedTex(m)}$ kg of dough. $${fTex(f2)}$ kg is set aside for later, and $${fTex(f3)}$ of what remains is used to bake bread. How many kilograms of dough are used for bread?`;
+      a = fStr(res);
+      hint = 'First find what remains, then take that fraction of it.';
       break;
     }
 
