@@ -21,8 +21,14 @@ const LearningPath = ({ profile }) => {
   const [progress, setProgress] = useState({});
   const [loading, setLoading] = useState(true);
 
-  const years = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear || 'Year 3'];
-  const year = years[0];
+  const normalizeYearLabel = (value) => {
+    const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
+    if (Number.isFinite(n) && n > 0) return `Year ${n}`;
+    return String(value || '').trim();
+  };
+  const rawYears = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear || 'Year 3'];
+  const years = rawYears.map(normalizeYearLabel).filter(Boolean);
+  const year = years[0] || 'Year 3';
   const term = "Term 2, 2026"; // Mocking as per design
 
   // Fetch Curriculum
@@ -47,16 +53,26 @@ const LearningPath = ({ profile }) => {
     let cancelled = false;
     const cacheKey = `curriculum-doc:v1:${docId}`;
     const cached = localCache.get(cacheKey);
-    if (Array.isArray(cached?.chapters)) {
+    if (Array.isArray(cached?.chapters) && cached.chapters.length > 0) {
       setCurriculum(cached.chapters);
       setLoading(false);
     }
+
+    // Robust fallback to the bundled curriculum so chapters always render
+    // even if the Firestore curriculum doc is missing or empty.
+    const resolveFallbackCurriculum = () => {
+      let data = CURRICULUM_DATA[year] || CURRICULUM_DATA[normalizeYearLabel(year)] || [];
+      if (!Array.isArray(data)) {
+        data = data[course] || Object.values(data)[0] || [];
+      }
+      return Array.isArray(data) ? data : [];
+    };
 
     const loadCurriculum = async () => {
       try {
         const metaSnap = await getDoc(doc(db, 'sync_meta', 'curriculum'));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
-        if (cached?.chapters && cached?.version === remoteVersion && remoteVersion > 0) return;
+        if (cached?.chapters?.length > 0 && cached?.version === remoteVersion && remoteVersion > 0) return;
         const snap = await getDoc(doc(db, 'curriculum', docId));
         if (cancelled) return;
         if (snap.exists() && snap.data().chapters?.length > 0) {
@@ -71,10 +87,11 @@ const LearningPath = ({ profile }) => {
           setCurriculum(chapters);
           localCache.set(cacheKey, { version, savedAt: Date.now(), chapters });
         } else {
-          let fallbackData = CURRICULUM_DATA[year] || [];
-          if (!Array.isArray(fallbackData)) fallbackData = fallbackData[course] || [];
-          setCurriculum(fallbackData);
+          setCurriculum(resolveFallbackCurriculum());
         }
+      } catch (e) {
+        console.warn('LearningPath curriculum load failed, using fallback:', e?.code || e);
+        if (!cancelled) setCurriculum(resolveFallbackCurriculum());
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -247,6 +264,10 @@ const LearningPath = ({ profile }) => {
             // A chapter is locked only if it's not teacher-assigned/completed AND not within the default starting range
             const isLocked = !isTeacherAssigned && !isTeacherCompleted && (teacherAssigned.length > 0 || teacherCompleted.length > 0 || idx > 2);
 
+            const chapterNumberText = activeSubject === 'English'
+              ? `Chapter ${idx + 1}`
+              : (year === 'Basic Calculation' ? `Stage ${idx + 1}` : `Chapter ${idx + 1}`);
+
             return (
               <motion.div 
                 key={chapter.id}
@@ -280,7 +301,22 @@ const LearningPath = ({ profile }) => {
                   </div>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: isMobile ? 'flex-start' : 'center', gap: isMobile ? '8px' : '12px', marginBottom: '8px' }}>
-                      <h3 style={{ margin: 0, fontSize: isMobile ? '0.95rem' : '1.1rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{chapter.title}</h3>
+                      <div>
+                        {chapterNumberText && (
+                          <span style={{ 
+                            fontSize: '0.65rem', 
+                            fontWeight: 850, 
+                            color: '#6366f1', 
+                            textTransform: 'uppercase', 
+                            letterSpacing: '0.06em',
+                            display: 'block',
+                            marginBottom: '2px'
+                          }}>
+                            {chapterNumberText}
+                          </span>
+                        )}
+                        <h3 style={{ margin: 0, fontSize: isMobile ? '0.95rem' : '1.1rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{chapter.title}</h3>
+                      </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6366f1' }}>{isTeacherCompleted ? 100 : chapProgress}%</span>
                         <div style={{ 
