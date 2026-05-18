@@ -60,6 +60,28 @@ const getValidChapterIdsForYears = (years, courses) => {
   return ids;
 };
 
+// Builds a stable signature of a student's assigned curriculum. When the
+// teacher changes any of these fields, the signature changes and any
+// previously-generated daily assignment is treated as stale and regenerated.
+export const getCurriculumSignature = (studentProfile = {}) => {
+  const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
+  const years = (Array.isArray(rawYear)
+    ? rawYear
+    : String(rawYear).split(",").map((y) => y.trim()).filter(Boolean))
+    .map(normalizeYearLabel).filter(Boolean).sort();
+  const chapters = (Array.isArray(studentProfile.assignedChapters) ? studentProfile.assignedChapters : [])
+    .slice().sort();
+  const topics = (Array.isArray(studentProfile.assignedTopics) ? studentProfile.assignedTopics : [])
+    .slice().sort();
+  const courses = (Array.isArray(studentProfile.assignedCourse)
+    ? studentProfile.assignedCourse
+    : [studentProfile.assignedCourse || "Advanced"]).slice().sort();
+  const config = studentProfile.dailyPracticeConfig || {};
+  const cfgYears = (Array.isArray(config.years) ? config.years : []).map(normalizeYearLabel).filter(Boolean).sort();
+  const cfgChapters = (Array.isArray(config.chapters) ? config.chapters : []).slice().sort();
+  return JSON.stringify({ years, chapters, topics, courses, cfgYears, cfgChapters });
+};
+
 const getOptions = (question) => {
   if (!question) return [];
   if (Array.isArray(question.options)) return question.options;
@@ -344,6 +366,7 @@ export const createDailyAssignment = async ({
     version: forceVersion,
     questionCount: questions.length,
     requestedQuestionCount: resolvedQuestionCount,
+    curriculumSignature: getCurriculumSignature(studentProfile),
     questionIds: questions.map((question) => question.id).filter(Boolean),
     questions,
     source,
@@ -373,6 +396,7 @@ export const prepareNextDailyAssignment = async ({
     version: Date.now(),
     questionCount: questions.length,
     requestedQuestionCount: resolvedQuestionCount,
+    curriculumSignature: getCurriculumSignature(studentProfile),
     questionIds: questions.map((question) => question.id).filter(Boolean),
     questions,
     source,
@@ -399,6 +423,7 @@ export const fetchOrCreateDailyAssignment = async ({
 }) => {
   if (!uid) throw new Error("Daily assignment requires a user id.");
   const expectedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
+  const expectedSignature = getCurriculumSignature(studentProfile);
   const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
   const cached = localCache.get(cacheKey);
 
@@ -408,7 +433,10 @@ export const fetchOrCreateDailyAssignment = async ({
     const assignment = { id: assignmentSnap.id, ...assignmentSnap.data() };
     const hasQuestions = Array.isArray(assignment.questions) && assignment.questions.length > 0;
     const countMatches = Number(assignment.requestedQuestionCount || assignment.questionCount || 0) === expectedQuestionCount;
-    if (assignment.status === "open" && hasQuestions && countMatches) {
+    // Regenerate whenever the assignment's curriculum signature does not match
+    // the student's current curriculum (e.g. the teacher changed it).
+    const signatureMatches = assignment.curriculumSignature === expectedSignature;
+    if (assignment.status === "open" && hasQuestions && countMatches && signatureMatches) {
       const value = { ...assignment, savedAt: Date.now() };
       localCache.set(cacheKey, value);
       return value;
@@ -420,6 +448,7 @@ export const fetchOrCreateDailyAssignment = async ({
     && Array.isArray(cached.questions)
     && cached.questions.length > 0
     && Number(cached.requestedQuestionCount || cached.questionCount || 0) === expectedQuestionCount
+    && cached.curriculumSignature === expectedSignature
   ) {
     return cached;
   }
@@ -441,6 +470,7 @@ export const fetchOrCreateDailyAssignment = async ({
     && Array.isArray(prepAssignment.questions)
     && prepAssignment.questions.length > 0
     && Number(prepAssignment.requestedQuestionCount || prepAssignment.questionCount || 0) === expectedQuestionCount
+    && prepAssignment.curriculumSignature === expectedSignature
   ) {
     // Stamp the pre-generated assignment with today's date
     const stampedAssignment = {

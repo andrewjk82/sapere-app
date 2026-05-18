@@ -289,12 +289,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           studentProfile: localBoot.studentProfile || {},
           chapterProgress: localBoot.chapterProgress ?? null,
         };
-        let shouldFetchProfile = !localBoot.studentProfile || Object.keys(localBoot.studentProfile).length === 0;
-
-        if (shouldFetchProfile) {
+        // Always re-fetch the student profile from Firestore on app load so that
+        // teacher-side curriculum changes (assignedChapters/year/etc.) are picked
+        // up immediately. A cached profile is only used as an instant fallback.
+        {
           const profileSnap = await getDoc(doc(db, 'users', user.uid));
           if (cancelled) return;
-          nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : {};
+          nextBoot.studentProfile = profileSnap.exists()
+            ? profileSnap.data()
+            : (localBoot.studentProfile || {});
         }
 
         setStudentProfile(nextBoot.studentProfile);
