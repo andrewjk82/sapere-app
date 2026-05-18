@@ -767,7 +767,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       });
     } catch (error) {
       console.error("Critical error in startDailyQuiz:", error);
-      showToast("Failed to start challenge. Please check your assigned curriculum or try again later.", 'error');
+      const detail = error?.message ? ` (${error.message})` : '';
+      showToast(`Failed to start challenge${detail}. Please check your assigned curriculum or try again later.`, 'error');
       setLoading(false);
     }
   };
