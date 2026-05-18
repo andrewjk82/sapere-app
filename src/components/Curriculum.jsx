@@ -1056,6 +1056,20 @@ const Curriculum = () => {
     }
   };
 
+  const handleSyncY11AdvCh7 = async (forceReset = false) => {
+    if (!window.confirm(forceReset ? 'This will RESET and sync Year 11 Adv Ch7 questions. Continue?' : 'Sync Year 11 Adv Ch7 questions?')) return;
+    setIsMigrating(true);
+    try {
+      const { importYear11AdvCh7 } = await import('../scripts/importYear11AdvCh7');
+      const count = await importYear11AdvCh7(forceReset);
+      showToast(`Successfully synced ${count} questions for Y11 Adv Ch7!`, 'success');
+    } catch (err) {
+      showToast('Failed to sync: ' + err.message, 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -2116,6 +2130,22 @@ const Curriculum = () => {
                            </button>
                          </div>
                        </div>
+
+                        {/* Year 11 Advanced Chapter 7 */}
+                        <div className="sync-card">
+                          <div className="sync-card-info">
+                            <span className="sync-card-badge y11">Y11 ADV CH7</span>
+                            <span className="sync-card-title">Coordinate Geometry (Ch7)</span>
+                          </div>
+                          <div className="sync-card-actions">
+                            <button onClick={() => handleSyncY11AdvCh7(false)} disabled={isMigrating} className="sync-btn primary">
+                              🔄 Sync
+                            </button>
+                            <button onClick={() => handleSyncY11AdvCh7(true)} disabled={isMigrating} className="sync-btn danger">
+                              🗑️ Reset & Sync
+                            </button>
+                          </div>
+                        </div>
                     </div>
                   )}
 

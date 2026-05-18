@@ -1,0 +1,704 @@
+import { db } from '../firebase/config';
+import { collection, addDoc, serverTimestamp, getDocs, query, where, writeBatch } from 'firebase/firestore';
+
+const chapterData = {
+  chapterId: 'y11a-7',
+  chapterTitle: 'Chapter 7: Coordinate Geometry',
+  year: 'Year 11',
+  course: 'Advanced',
+  isManual: true
+};
+
+export const questions7A = [
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint of the line segment $AB$ joining the points $A(5, 7)$ and $B(1, 11)$.",
+    "options": [
+      {
+        "text": "$(3, 9)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(3, 18)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(6, 9)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(2, 8)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the midpoint formula**\n$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Assign variables to the coordinates**\n- Point $A(5, 7) \\implies (x_1, y_1)$\n- Point $B(1, 11) \\implies (x_2, y_2)$\n\n**Step 3: Substitute the coordinates into the formula**\n- **x-coordinate**:\n  $$x = \\frac{5 + 1}{2} = \\frac{6}{2} = 3$$\n- **y-coordinate**:\n  $$y = \\frac{7 + 11}{2} = \\frac{18}{2} = 9$$\n\n**Step 4: Combine the coordinates**\n$$\\text{Midpoint} = (3, 9)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint of the line segment $AB$ joining the points $A(2, 10)$ and $B(8, 4)$.",
+    "options": [
+      {
+        "text": "$(5, 7)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(6, 6)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(5, 6)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(10, 14)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the midpoint formula**\n$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Assign variables to the coordinates**\n- Point $A(2, 10) \\implies (x_1, y_1)$\n- Point $B(8, 4) \\implies (x_2, y_2)$\n\n**Step 3: Substitute the coordinates into the formula**\n- **x-coordinate**:\n  $$x = \\frac{2 + 8}{2} = \\frac{10}{2} = 5$$\n- **y-coordinate**:\n  $$y = \\frac{10 + 4}{2} = \\frac{14}{2} = 7$$\n\n**Step 4: Combine the coordinates**\n$$\\text{Midpoint} = (5, 7)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint of the line segment $AB$ joining the points $A(-6, 5)$ and $B(10, -9)$.",
+    "options": [
+      {
+        "text": "$(2, -2)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(2, -7)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(4, -4)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(-8, 7)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the midpoint formula**\n$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Assign variables to the coordinates**\n- Point $A(-6, 5) \\implies (x_1, y_1)$\n- Point $B(10, -9) \\implies (x_2, y_2)$\n\n**Step 3: Substitute the coordinates into the formula**\n- **x-coordinate**:\n  $$x = \\frac{-6 + 10}{2} = \\frac{4}{2} = 2$$\n- **y-coordinate**:\n  $$y = \\frac{5 + -9}{2} = \\frac{-4}{2} = -2$$\n\n**Step 4: Combine the coordinates**\n$$\\text{Midpoint} = (2, -2)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint of the line segment $AB$ joining the points $A(-5, 8)$ and $B(5, 3)$.",
+    "options": [
+      {
+        "text": "$(0, 5.5)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(0, 5)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(0, 11)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(5, 5.5)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the midpoint formula**\n$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Assign variables to the coordinates**\n- Point $A(-5, 8) \\implies (x_1, y_1)$\n- Point $B(5, 3) \\implies (x_2, y_2)$\n\n**Step 3: Substitute the coordinates into the formula**\n- **x-coordinate**:\n  $$x = \\frac{-5 + 5}{2} = \\frac{0}{2} = 0$$\n- **y-coordinate**:\n  $$y = \\frac{8 + 3}{2} = \\frac{11}{2} = 5.5$$\n\n**Step 4: Combine the coordinates**\n$$\\text{Midpoint} = (0, 5.5)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint of the line segment $AB$ joining the points $A(0, -6)$ and $B(-9, -14)$.",
+    "options": [
+      {
+        "text": "$(-4.5, -10)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(-9, -20)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(-4.5, -20)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(-4, -10)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the midpoint formula**\n$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Assign variables to the coordinates**\n- Point $A(0, -6) \\implies (x_1, y_1)$\n- Point $B(-9, -14) \\implies (x_2, y_2)$\n\n**Step 3: Substitute the coordinates into the formula**\n- **x-coordinate**:\n  $$x = \\frac{0 + -9}{2} = \\frac{-9}{2} = -4.5$$\n- **y-coordinate**:\n  $$y = \\frac{-6 + -14}{2} = \\frac{-20}{2} = -10$$\n\n**Step 4: Combine the coordinates**\n$$\\text{Midpoint} = (-4.5, -10)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint of the line segment $AB$ joining the points $A(6, -9)$ and $B(6, 9)$.",
+    "options": [
+      {
+        "text": "$(6, 0)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(0, 0)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(6, -9)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(12, 0)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the midpoint formula**\n$$\\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Assign variables to the coordinates**\n- Point $A(6, -9) \\implies (x_1, y_1)$\n- Point $B(6, 9) \\implies (x_2, y_2)$\n\n**Step 3: Substitute the coordinates into the formula**\n- **x-coordinate**:\n  $$x = \\frac{6 + 6}{2} = \\frac{12}{2} = 6$$\n- **y-coordinate**:\n  $$y = \\frac{-9 + 9}{2} = \\frac{0}{2} = 0$$\n\n**Step 4: Combine the coordinates**\n$$\\text{Midpoint} = (6, 0)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact length of the line segment joining the points $A(2, 5)$ and $B(6, 2)$.",
+    "options": [
+      {
+        "text": "$5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$25$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{7}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{13}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Identify variables**\n- $x_1 = 2, \\ y_1 = 5$\n- $x_2 = 6, \\ y_2 = 2$\n\n**Step 3: Substitute the coordinates**\n$$AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$\n$$AB^2 = (6 - (2))^2 + (2 - (5))^2$$\n$$AB^2 = (4)^2 + (-3)^2$$\n$$AB^2 = 16 + 9$$\n$$AB^2 = 25$$\n\n**Step 4: Take the square root**\n$$AB = \\sqrt{25}$$\n$$AB = 5$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact length of the line segment joining the points $A(-3, 8)$ and $B(2, -4)$.",
+    "options": [
+      {
+        "text": "$13$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$169$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$12$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{145}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Identify variables**\n- $x_1 = -3, \\ y_1 = 8$\n- $x_2 = 2, \\ y_2 = -4$\n\n**Step 3: Substitute the coordinates**\n$$AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$\n$$AB^2 = (2 - (-3))^2 + (-4 - (8))^2$$\n$$AB^2 = (5)^2 + (-12)^2$$\n$$AB^2 = 25 + 144$$\n$$AB^2 = 169$$\n\n**Step 4: Take the square root**\n$$AB = \\sqrt{169}$$\n$$AB = 13$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact length of the line segment joining the points $A(-6, -3)$ and $B(2, 3)$.",
+    "options": [
+      {
+        "text": "$10$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$100$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{52}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Identify variables**\n- $x_1 = -6, \\ y_1 = -3$\n- $x_2 = 2, \\ y_2 = 3$\n\n**Step 3: Substitute the coordinates**\n$$AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$\n$$AB^2 = (2 - (-6))^2 + (3 - (-3))^2$$\n$$AB^2 = (8)^2 + (6)^2$$\n$$AB^2 = 64 + 36$$\n$$AB^2 = 100$$\n\n**Step 4: Take the square root**\n$$AB = \\sqrt{100}$$\n$$AB = 10$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact length of the line segment joining the points $A(4, 7)$ and $B(6, 5)$.",
+    "options": [
+      {
+        "text": "$2\\sqrt{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Identify variables**\n- $x_1 = 4, \\ y_1 = 7$\n- $x_2 = 6, \\ y_2 = 5$\n\n**Step 3: Substitute the coordinates**\n$$AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$\n$$AB^2 = (6 - (4))^2 + (5 - (7))^2$$\n$$AB^2 = (2)^2 + (-2)^2$$\n$$AB^2 = 4 + 4$$\n$$AB^2 = 8$$\n\n**Step 4: Take the square root**\n$$AB = \\sqrt{8}$$\n$$AB = 2\\sqrt{2}$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact length of the line segment joining the points $A(-5, -2)$ and $B(3, 2)$.",
+    "options": [
+      {
+        "text": "$4\\sqrt{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{80}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$10$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Identify variables**\n- $x_1 = -5, \\ y_1 = -2$\n- $x_2 = 3, \\ y_2 = 2$\n\n**Step 3: Substitute the coordinates**\n$$AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$\n$$AB^2 = (3 - (-5))^2 + (2 - (-2))^2$$\n$$AB^2 = (8)^2 + (4)^2$$\n$$AB^2 = 64 + 16$$\n$$AB^2 = 80$$\n\n**Step 4: Take the square root**\n$$AB = \\sqrt{80}$$\n$$AB = 4\\sqrt{5}$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact length of the line segment joining the points $A(8, -15)$ and $B(0, 0)$.",
+    "options": [
+      {
+        "text": "$17$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$289$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$15$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$13$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Identify variables**\n- $x_1 = 8, \\ y_1 = -15$\n- $x_2 = 0, \\ y_2 = 0$\n\n**Step 3: Substitute the coordinates**\n$$AB^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$$\n$$AB^2 = (0 - (8))^2 + (0 - (-15))^2$$\n$$AB^2 = (-8)^2 + (15)^2$$\n$$AB^2 = 64 + 225$$\n$$AB^2 = 289$$\n\n**Step 4: Take the square root**\n$$AB = \\sqrt{289}$$\n$$AB = 17$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoint $M$ of the line segment joining the points $P(-4, 2)$ and $Q(8, 18)$.",
+    "options": [
+      {
+        "text": "$(2, 10)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(4, 10)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(2, 8)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(6, 20)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the midpoint formula**\n$$M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Step 2: Plug in coordinates of $P(-4, 2)$ and $Q(8, 18)$**\n$$x = \\frac{-4 + 8}{2} = \\frac{4}{2} = 2$$\n$$y = \\frac{2 + 18}{2} = \\frac{20}{2} = 10$$\n\n**Step 3: State the final coordinates**\n$$M = (2, 10)$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "For the points $P(-4, 2)$ and $Q(8, 18)$, find the lengths of segments $PM$ and $MQ$ where $M(2, 10)$ is the midpoint, and verify their relationship.",
+    "options": [
+      {
+        "text": "$PM = MQ = 10$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$PM = 8, \\ MQ = 12$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$PM = MQ = \\sqrt{50}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$PM = MQ = 20$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate the length of $PM$ using the distance formula**\nFor $P(-4, 2)$ and $M(2, 10)$:\n$$PM = \\sqrt{(2 - (-4))^2 + (10 - 2)^2}$$\n$$PM = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$\n\n**Step 2: Calculate the length of $MQ$**\nFor $M(2, 10)$ and $Q(8, 18)$:\n$$MQ = \\sqrt{(8 - 2)^2 + (18 - 10)^2}$$\n$$MQ = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$\n\n**Step 3: Compare both lengths**\nSince both calculations yield $10$, we have:\n$$PM = MQ = 10$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact side lengths of the triangle formed by the vertices $P(0, 2)$, $Q(1, 6)$ and $R(5, 7)$.",
+    "options": [
+      {
+        "text": "$PQ = \\sqrt{17}, \\ QR = \\sqrt{17}, \\ PR = 5\\sqrt{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$PQ = 17, \\ QR = 17, \\ PR = 50$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$PQ = \\sqrt{13}, \\ QR = \\sqrt{13}, \\ PR = 5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$PQ = \\sqrt{17}, \\ QR = \\sqrt{13}, \\ PR = 5\\sqrt{2}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate $PQ$ using points $P(0, 2)$ and $Q(1, 6)$**\n$$PQ = \\sqrt{(1 - 0)^2 + (6 - 2)^2} = \\sqrt{1^2 + 4^2} = \\sqrt{1 + 16} = \\sqrt{17}$$\n\n**Step 2: Calculate $QR$ using points $Q(1, 6)$ and $R(5, 7)$**\n$$QR = \\sqrt{(5 - 1)^2 + (7 - 6)^2} = \\sqrt{4^2 + 1^2} = \\sqrt{16 + 1} = \\sqrt{17}$$\n\n**Step 3: Calculate $PR$ using points $P(0, 2)$ and $R(5, 7)$**\n$$PR = \\sqrt{(5 - 0)^2 + (7 - 2)^2} = \\sqrt{5^2 + 5^2} = \\sqrt{25 + 25} = \\sqrt{50} = 5\\sqrt{2}$$\n\n**Step 4: Summarize the results**\n- $PQ = \\sqrt{17}$\n- $QR = \\sqrt{17}$\n- $PR = 5\\sqrt{2}$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "By examining the side lengths of the triangle formed by $P(0, 2)$, $Q(1, 6)$ and $R(5, 7)$, classify the triangle $\\Delta PQR$.",
+    "options": [
+      {
+        "text": "Isosceles triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Scalene triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Equilateral triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Right-angled scalene triangle",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Retrieve side lengths**\nFrom our previous calculations, we found:\n- $PQ = \\sqrt{17}$\n- $QR = \\sqrt{17}$\n- $PR = 5\\sqrt{2}$\n\n**Step 2: Compare the side lengths**\nSince $PQ = QR = \\sqrt{17}$ (two sides are equal) and $PR \\neq \\sqrt{17}$ (the third side is different):\n$$\\text{Two sides are equal in length.}$$\n\n**Step 3: Classify the triangle**\nA triangle with two equal sides is defined as an **isosceles** triangle."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact side lengths of the triangle $\\Delta ABC$ with vertices $A(0, 0)$, $B(18, 24)$ and $C(50, 0)$.",
+    "options": [
+      {
+        "text": "$AB = 30, \\ BC = 40, \\ AC = 50$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AB = 18, \\ BC = 32, \\ AC = 50$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AB = 24, \\ BC = 30, \\ AC = 40$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AB = 30, \\ BC = 30, \\ AC = 50$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate $AB$ using $A(0, 0)$ and $B(18, 24)$**\n$$AB = \\sqrt{(18 - 0)^2 + (24 - 0)^2} = \\sqrt{18^2 + 24^2}$$\n$$AB = \\sqrt{324 + 576} = \\sqrt{900} = 30$$\n\n**Step 2: Calculate $BC$ using $B(18, 24)$ and $C(50, 0)$**\n$$BC = \\sqrt{(50 - 18)^2 + (0 - 24)^2} = \\sqrt{32^2 + (-24)^2}$$\n$$BC = \\sqrt{1024 + 576} = \\sqrt{1600} = 40$$\n\n**Step 3: Calculate $AC$ using $A(0, 0)$ and $C(50, 0)$**\nSince both points lie on the x-axis:\n$$AC = |50 - 0| = 50$$\n\n**Step 4: Summarize lengths**\n- $AB = 30$\n- $BC = 40$\n- $AC = 50$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Show that the triangle $\\Delta ABC$ with vertices $A(0, 0)$, $B(18, 24)$ and $C(50, 0)$ is right-angled.",
+    "options": [
+      {
+        "text": "Yes, because $AB^2 + BC^2 = AC^2$ ($30^2 + 40^2 = 50^2$)",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, because $AB^2 + BC^2 \\neq AC^2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, because $AB = BC$",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, because angle $A$ is $90^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Retrieve side lengths**\nFrom our previous computations:\n- $AB = 30$\n- $BC = 40$\n- $AC = 50$\n\n**Step 2: Apply the converse of Pythagoras' theorem**\nFor $\\Delta ABC$ to be right-angled with hypotenuse $AC$, it must satisfy:\n$$AB^2 + BC^2 = AC^2$$\n\n**Step 3: Calculate the squares of the sides**\n- Left side:\n  $$AB^2 + BC^2 = 30^2 + 40^2 = 900 + 1600 = 2500$$\n- Right side:\n  $$AC^2 = 50^2 = 2500$$\n\n**Step 4: Draw conclusion**\nSince $2500 = 2500$, the equation $AB^2 + BC^2 = AC^2$ holds true. By the converse of Pythagoras' theorem, $\\Delta ABC$ is a right-angled triangle with the right angle at vertex $B$."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the exact side lengths of the triangle $\\Delta ABC$ formed by the vertices $A(0, 6)$, $B(4, -1)$ and $C(-4, 5)$.",
+    "options": [
+      {
+        "text": "$AB = \\sqrt{65}, \\ BC = 10, \\ AC = \\sqrt{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AB = \\sqrt{65}, \\ BC = \\sqrt{80}, \\ AC = \\sqrt{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AB = 8, \\ BC = 10, \\ AC = 4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AB = \\sqrt{17}, \\ BC = 10, \\ AC = \\sqrt{65}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate $AB$ using $A(0, 6)$ and $B(4, -1)$**\n$$AB = \\sqrt{(4 - 0)^2 + (-1 - 6)^2} = \\sqrt{4^2 + (-7)^2} = \\sqrt{16 + 49} = \\sqrt{65}$$\n\n**Step 2: Calculate $BC$ using $B(4, -1)$ and $C(-4, 5)$**\n$$BC = \\sqrt{(-4 - 4)^2 + (5 - (-1))^2} = \\sqrt{(-8)^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$$\n\n**Step 3: Calculate $AC$ using $A(0, 6)$ and $C(-4, 5)$**\n$$AC = \\sqrt{(-4 - 0)^2 + (5 - 6)^2} = \\sqrt{(-4)^2 + (-1)^2} = \\sqrt{16 + 1} = \\sqrt{17}$$\n\n**Step 4: Summarize lengths**\n- $AB = \\sqrt{65}$\n- $BC = 10$\n- $AC = \\sqrt{17}$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the midpoints of the three sides $AB$, $BC$, and $AC$ of the triangle $\\Delta ABC$ formed by $A(0, 6)$, $B(4, -1)$ and $C(-4, 5)$.",
+    "options": [
+      {
+        "text": "Midpoints: $AB(2, 2.5), \\ BC(0, 2), \\ AC(-2, 5.5)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "Midpoints: $AB(2, 3.5), \\ BC(0, 2), \\ AC(-2, 5.5)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "Midpoints: $AB(2, 2.5), \\ BC(0, 3), \\ AC(-2, 1)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "Midpoints: $AB(4, 5), \\ BC(0, 4), \\ AC(-4, 11)$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate midpoint of side $AB$ using $A(0, 6)$ and $B(4, -1)$**\n$$M_{AB} = \\left(\\frac{0 + 4}{2}, \\frac{6 + (-1)}{2}\\right) = \\left(2, \\frac{5}{2}\\right) = (2, 2.5)$$\n\n**Step 2: Calculate midpoint of side $BC$ using $B(4, -1)$ and $C(-4, 5)$**\n$$M_{BC} = \\left(\\frac{4 + (-4)}{2}, \\frac{-1 + 5}{2}\\right) = \\left(0, \\frac{4}{2}\\right) = (0, 2)$$\n\n**Step 3: Calculate midpoint of side $AC$ using $A(0, 6)$ and $C(-4, 5)$**\n$$M_{AC} = \\left(\\frac{0 + (-4)}{2}, \\frac{6 + 5}{2}\\right) = \\left(-2, \\frac{11}{2}\\right) = (-2, 5.5)$$\n\n**Step 4: Summarize midpoints**\n- Midpoint of $AB$: $(2, 2.5)$\n- Midpoint of $BC$: $(0, 2)$\n- Midpoint of $AC$: $(-2, 5.5)$"
+  }
+];
+
+export const importYear11AdvCh7 = async (forceReset = false) => {
+  console.log(`Starting sync of Y11 Adv Ch7A (Total ${questions7A.length})...` + '\n' + `Chapter: Coordinate Geometry`);
+  try {
+    const qSnap = await getDocs(query(collection(db, 'questions'), 
+      where('chapterId', '==', 'y11a-7'),
+      where('topicCode', '==', '7A')
+    ));
+    
+    const batch = writeBatch(db);
+    qSnap.forEach(d => batch.delete(d.ref));
+    await batch.commit();
+    console.log(`Cleared ${qSnap.size} old questions under chapter y11a-7, topicCode 7A.`);
+
+    let count = 0;
+    for (const q of questions7A) {
+        await addDoc(collection(db, 'questions'), { 
+          ...q, 
+          createdAt: serverTimestamp(), 
+          updatedAt: serverTimestamp(), 
+          isActive: true 
+        });
+        count++;
+    }
+    console.log(`Successfully imported ${count} questions.`);
+    return count;
+  } catch (err) {
+    console.error('Import failed:', err);
+    throw err;
+  }
+};
