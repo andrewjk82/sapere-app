@@ -22,15 +22,15 @@ questions.push({
 
 <div style="display: flex; justify-content: center; gap: 16px; margin: 16px 0;">
   <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q1_a.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+    <img src="/images/ch20/q1_a.png" style="max-height: 95px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape A</div>
   </div>
   <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q1_b.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+    <img src="/images/ch20/q1_b.png" style="max-height: 95px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape B</div>
   </div>
   <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q1_c.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+    <img src="/images/ch20/q1_c.png" style="max-height: 95px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape C</div>
   </div>
 </div>`,
@@ -41,7 +41,7 @@ questions.push({
     'All three shapes are polyhedra'
   ],
   answer: 0,
-  solution: `<div style="text-align: left;"><p>Let's analyze each shape based on the mathematical definition of a <strong>polyhedron</strong> (a 3D solid bounded only by flat polygonal faces):</p><ul><li><strong>Shape A (Slanted triangular prism):</strong> All faces are flat rectangles or triangles, and all edges are straight. Thus, Shape A **is a polyhedron**.</li><li><strong>Shape B (Cone):</strong> It has a curved lateral surface. Because not all of its faces are flat polygons, Shape B **is not a polyhedron**.</li><li><strong>Shape C (Hemisphere):</strong> It has a curved dome surface. Because it contains a curved face, Shape C **is not a polyhedron**.</li></ul><p>Therefore, only Shape A is a polyhedron.</p></div>`,
+  solution: `<div style="text-align: left;"><p>Let's analyze each shape based on the definition of a <strong>polyhedron</strong> (a 3D solid bounded only by flat polygonal faces):</p><ul><li><strong>Shape A (Slanted triangular prism):</strong> All faces are flat rectangles or triangles, and all edges are straight. Thus, Shape A **is a polyhedron**.</li><li><strong>Shape B (Cone):</strong> It has a curved lateral surface. Because not all of its faces are flat polygons, Shape B **is not a polyhedron**.</li><li><strong>Shape C (Hemisphere):</strong> It has a curved dome surface. Because it contains a curved face, Shape C **is not a polyhedron**.</li></ul><p>Therefore, only Shape A is a polyhedron.</p></div>`,
   createdAt: new Date().toISOString()
 });
 
@@ -61,15 +61,15 @@ questions.push({
 
 <div style="display: flex; justify-content: center; gap: 16px; margin: 16px 0;">
   <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q1_d.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+    <img src="/images/ch20/q1_d.png" style="max-height: 95px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape D</div>
   </div>
   <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q1_e.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+    <img src="/images/ch20/q1_e.png" style="max-height: 95px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape E</div>
   </div>
   <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q1_f.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+    <img src="/images/ch20/q1_f.png" style="max-height: 95px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape F</div>
   </div>
 </div>`,
@@ -103,7 +103,7 @@ questions.push({
   question: `Find the number of faces ($F$), edges ($E$) and vertices ($V$) of the skewed rectangular prism shown below:
 
 <div style="text-align: center; margin: 16px 0;">
-  <img src="/images/ch20/q2_a.png" style="max-height: 120px; border: 1px solid #e2e8f0; padding: 6px; border-radius: 8px; background: white;" />
+  <img src="/images/ch20/q2_a.png" style="max-height: 125px; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;" />
 </div>`,
   options: [
     'F = 6, E = 12, V = 8',
@@ -131,7 +131,7 @@ questions.push({
   question: `Find the number of faces ($F$), edges ($E$) and vertices ($V$) of the right triangular prism shown below:
 
 <div style="text-align: center; margin: 16px 0;">
-  <img src="/images/ch20/q2_b.png" style="max-height: 120px; border: 1px solid #e2e8f0; padding: 6px; border-radius: 8px; background: white;" />
+  <img src="/images/ch20/q2_b.png" style="max-height: 125px; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;" />
 </div>`,
   options: [
     'F = 5, E = 9, V = 6',
@@ -159,7 +159,7 @@ questions.push({
   question: `Find the number of faces ($F$), edges ($E$) and vertices ($V$) of the triangular pyramid (tetrahedron) shown below:
 
 <div style="text-align: center; margin: 16px 0;">
-  <img src="/images/ch20/q2_c.png" style="max-height: 120px; border: 1px solid #e2e8f0; padding: 6px; border-radius: 8px; background: white;" />
+  <img src="/images/ch20/q2_c.png" style="max-height: 125px; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;" />
 </div>`,
   options: [
     'F = 4, E = 6, V = 4',
@@ -187,7 +187,7 @@ questions.push({
   question: `Find the number of faces ($F$), edges ($E$) and vertices ($V$) of the pentagonal pyramid shown below:
 
 <div style="text-align: center; margin: 16px 0;">
-  <img src="/images/ch20/q2_d.png" style="max-height: 120px; border: 1px solid #e2e8f0; padding: 6px; border-radius: 8px; background: white;" />
+  <img src="/images/ch20/q2_d.png" style="max-height: 125px; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;" />
 </div>`,
   options: [
     'F = 6, E = 10, V = 6',
@@ -215,7 +215,7 @@ questions.push({
   question: `Find the number of faces ($F$), edges ($E$) and vertices ($V$) of the square pyramid shown below:
 
 <div style="text-align: center; margin: 16px 0;">
-  <img src="/images/ch20/q2_e.png" style="max-height: 120px; border: 1px solid #e2e8f0; padding: 6px; border-radius: 8px; background: white;" />
+  <img src="/images/ch20/q2_e.png" style="max-height: 125px; border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;" />
 </div>`,
   options: [
     'F = 5, E = 8, V = 5',
@@ -246,21 +246,21 @@ questions.push({
   isManual: true,
   question: `Determine which of the following shapes are **prisms** (polyhedra with two congruent, parallel bases and flat rectangular connecting sides, maintaining a uniform cross-section):
 
-<div style="display: flex; justify-content: center; gap: 12px; margin: 16px 0; flex-wrap: wrap;">
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_a.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+<div style="display: flex; justify-content: center; gap: 16px; margin: 16px 0; flex-wrap: wrap;">
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_a.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape A</div>
   </div>
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_b.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_b.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape B</div>
   </div>
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_c.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_c.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape C</div>
   </div>
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_d.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_d.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape D</div>
   </div>
 </div>`,
@@ -290,16 +290,16 @@ questions.push({
   question: `Determine which of the following shapes are **prisms** (polyhedra with two congruent, parallel bases and flat rectangular connecting sides, maintaining a uniform cross-section):
 
 <div style="display: flex; justify-content: center; gap: 16px; margin: 16px 0;">
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_e.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_e.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape E</div>
   </div>
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_f.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_f.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape F</div>
   </div>
-  <div style="border: 1px solid #e2e8f0; padding: 8px; border-radius: 8px; background: white;">
-    <img src="/images/ch20/q3_g.png" style="max-height: 90px; display: block; margin: 0 auto 6px;" />
+  <div style="border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;">
+    <img src="/images/ch20/q3_g.png" style="max-height: 100px; display: block; margin: 0 auto 6px;" />
     <div style="text-align: center; font-weight: bold; font-size: 13px;">Shape G</div>
   </div>
 </div>`,
@@ -348,6 +348,10 @@ questions.push({
   isActive: true,
   isManual: true,
   question: `For a prism with an $n$-sided polygonal cross-section, complete the features table and solve parts (b) to (d):
+
+<div style="text-align: center; margin: 16px 0;">
+  <img src="/images/ch20/q4_prisms.png" alt="Four Prisms" style="max-width: 480px; width: 100%; border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;" />
+</div>
 
 ${q4_table_html}
 
@@ -404,6 +408,10 @@ questions.push({
   isManual: true,
   question: `For a pyramid with an $n$-sided polygonal base, complete the features table and solve parts (b) to (d):
 
+<div style="text-align: center; margin: 16px 0;">
+  <img src="/images/ch20/q5_pyramids.png" alt="Four Pyramids" style="max-width: 480px; width: 100%; border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: white;" />
+</div>
+
 ${q5_table_html}
 
 Analyze the structural characteristics and select the correct set of results for parts (b), (c), and (d):
@@ -421,6 +429,57 @@ Analyze the structural characteristics and select the correct set of results for
   ],
   answer: 0,
   solution: `<div style="text-align: left;"><p>Let's systematically construct the relationships for pyramids:</p><ul><li><strong>Part (a) Completed Table:</strong><ul><li><strong>Triangular (3-sided):</strong> $F = 3+1=4$, $E = 2\\times3=6$, $V = 3+1=4$. <br />Evaluating: $V - E + F = 4 - 6 + 4 = 2$.</li><li><strong>Rectangular (4-sided):</strong> $F = 4+1=5$, $E = 2\\times4=8$, $V = 4+1=5$. <br />Evaluating: $V - E + F = 5 - 8 + 5 = 2$.</li><li><strong>Pentagonal (5-sided):</strong> $F = 5+1=6$, $E = 2\\times5=10$, $V = 5+1=6$. <br />Evaluating: $V - E + F = 6 - 10 + 6 = 2$.</li><li><strong>Hexagonal (6-sided):</strong> $F = 6+1=7$, $E = 2\\times6=12$, $V = 6+1=7$. <br />Evaluating: $V - E + F = 7 - 12 + 7 = 2$.</li></ul></li><li><strong>Part (b):</strong> For each of these pyramids, the calculation $$V - E + F$$ is exactly equal to **2**.</li><li><strong>Part (c) General Formulas in terms of $n$:</strong><ul><li><strong>i. Faces (F):</strong> A pyramid has 1 polygonal base plus $n$ triangular sides meeting at the top. <br />$$F = n + 1$$.</li><li><strong>ii. Edges (E):</strong> A pyramid has $n$ edges around the base polygon and $n$ slant edges meeting at the top. <br />$$E = 2n$$.</li><li><strong>iii. Vertices (V):</strong> A pyramid has $n$ corner points on the base plus 1 apex corner point at the top. <br />$$V = n + 1$$.</li></ul></li><li><strong>Part (d) Substitution & Simplification:</strong><br />$$V - E + F = (n + 1) - (2n) + (n + 1)$$<br />$$V - E + F = n + 1 - 2n + n + 1 = 2$$.</li></ul><p>Once again, we verify that Euler's formula $$V - E + F = 2$$ holds universal for all pyramids as well!</p></div>`,
+  createdAt: new Date().toISOString()
+});
+
+// ========================================================
+// Q6: Platonic Solids (Custom composite question)
+// ========================================================
+const q6_table_html = `<div style="display: flex; justify-content: center; margin: 16px 0;">
+  <table style="width: 100%; max-width: 500px; border-collapse: collapse; font-family: inherit; font-size: 14px; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+    <thead>
+      <tr style="background: #6b21a8; color: white;">
+        <th style="padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;">Platonic solid</th>
+        <th style="padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;">Faces (F)</th>
+        <th style="padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;">Edges (E)</th>
+        <th style="padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;">Vertices (V)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background: #f8fafc;"><td style="padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;">Cube</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td></tr>
+      <tr><td style="padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;">Tetrahedron</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td></tr>
+      <tr style="background: #f8fafc;"><td style="padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;">Octahedron</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td></tr>
+      <tr><td style="padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;">Dodecahedron</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td></tr>
+      <tr style="background: #f8fafc;"><td style="padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;">Icosahedron</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td><td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #475569;">?</td></tr>
+    </tbody>
+  </table>
+</div>`;
+
+questions.push({
+  chapterId: 'y7-20',
+  chapterTitle: 'Chapter 20: Three-dimensional solids',
+  topicId: 'y7-20a',
+  topicCode: '20A',
+  topicTitle: 'Polyhedra',
+  year: 'Year 7',
+  type: 'multiple_choice',
+  difficulty: 'hard',
+  isActive: true,
+  isManual: true,
+  question: `Complete the Platonic solids features table and solve part (b):
+
+${q6_table_html}
+
+Analyze the features and select the correct option summarizing part (b):
+* **b** For each of the five Platonic solids, evaluate the value of $V - E + F$.`,
+  options: [
+    'V - E + F = 2 for all five Platonic solids (Euler\'s formula).',
+    'V - E + F = 1 for all five Platonic solids.',
+    'V - E + F = 0 for all five Platonic solids.',
+    'V - E + F = 3 for all five Platonic solids.'
+  ],
+  answer: 0,
+  solution: `<div style="text-align: left;"><p>Let's find the values of $F$, $E$, and $V$ for each Platonic solid and evaluate $$V - E + F$$:</p><ul><li><strong>Cube (Hexahedron):</strong> $F = 6$, $E = 12$, $V = 8$. <br />$$V - E + F = 8 - 12 + 6 = 2$$.</li><li><strong>Tetrahedron:</strong> $F = 4$, $E = 6$, $V = 4$. <br />$$V - E + F = 4 - 6 + 4 = 2$$.</li><li><strong>Octahedron:</strong> $F = 8$, $E = 12$, $V = 6$. <br />$$V - E + F = 6 - 12 + 8 = 2$$.</li><li><strong>Dodecahedron (12 pentagonal faces):</strong> $F = 12$, $E = 30$, $V = 20$. <br />$$V - E + F = 20 - 30 + 12 = 2$$.</li><li><strong>Icosahedron (20 triangular faces):</strong> $F = 20$, $E = 30$, $V = 12$. <br />$$V - E + F = 12 - 30 + 20 = 2$$.</li></ul><p>Therefore, $$V - E + F = 2$$ holds perfectly for all five Platonic solids! This is known as <strong>Euler's formula</strong> for convex polyhedra.</p></div>`,
   createdAt: new Date().toISOString()
 });
 
