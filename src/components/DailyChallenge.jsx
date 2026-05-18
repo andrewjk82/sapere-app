@@ -980,6 +980,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (!str) return '';
     return String(str)
       .toLowerCase()
+      // Unify superscript / power notation so keypad "²" matches stored "^2".
+      .replace(/⁰/g, '^0').replace(/¹/g, '^1').replace(/²/g, '^2').replace(/³/g, '^3')
+      .replace(/⁴/g, '^4').replace(/⁵/g, '^5').replace(/⁶/g, '^6')
+      .replace(/⁷/g, '^7').replace(/⁸/g, '^8').replace(/⁹/g, '^9')
+      .replace(/\^\{([^{}]*)\}/g, '^$1')   // ^{2} -> ^2
       .replace(/\s+/g, '')                // Remove whitespace
       .replace(/[,.;]/g, '')             // Remove punctuation
       .replace(/\\ge|\\geq|≥/g, '>=')     // Normalize >=
