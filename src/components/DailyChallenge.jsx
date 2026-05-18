@@ -1263,8 +1263,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-')) : [])
           : getAssignedChapters(studentProfile, assignedYear);
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
-        const maxXp = getChallengeMaxXp(challengeType);
-        const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType);
+        // Pass hasCalculationTest so a daily-only student earns the full 100 XP
+        // (50 XP only applies when the student also has the calculation test).
+        const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
+        const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType, hasCalculationTest);
         const resultStats = summarizeResults(currentAnswerResults);
         const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle');
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
@@ -1817,7 +1819,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   {item.score || 0}/{item.total || 0}
                 </div>
                 <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1' }}>
-                  +{item.xpEarned ?? getEarnedXp(item.score || 0, item.total || 0, item.challengeType || 'daily')} XP
+                  +{item.xpEarned ?? getEarnedXp(item.score || 0, item.total || 0, item.challengeType || 'daily', hasCalculationTest)} XP
                 </div>
               </div>
             </motion.div>
