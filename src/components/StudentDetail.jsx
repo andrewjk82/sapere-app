@@ -3117,10 +3117,14 @@ const StudentDetail = ({ studentId, onBack }) => {
             return days.map((day, index) => {
               const date = new Date(now);
               date.setDate(now.getDate() + mondayOffset + index);
-              const dateStr = date.toISOString().split("T")[0];
-              
+              // Use the LOCAL date (en-CA → YYYY-MM-DD) to match how stat doc
+              // ids are keyed. toISOString() is UTC and shifts the day for
+              // students in positive-UTC-offset timezones, which made e.g.
+              // Wednesday's cell pick up Tuesday's record.
+              const dateStr = date.toLocaleDateString("en-CA");
+
               // Find if there's a stat for this date (Filter for daily_stats only)
-              const dayStat = dailyStats.find(s => s.statCollection === "daily_stats" && (s.id === dateStr || (s.timestamp && toJsDate(s.timestamp).toISOString().split("T")[0] === dateStr)));
+              const dayStat = dailyStats.find(s => s.statCollection === "daily_stats" && (s.id === dateStr || (s.timestamp && toJsDate(s.timestamp).toLocaleDateString("en-CA") === dateStr)));
               const isCompleted = !!dayStat;
               const score = dayStat?.score || 0;
               const total = dayStat?.total || 0;
@@ -3194,10 +3198,12 @@ const StudentDetail = ({ studentId, onBack }) => {
               return days.map((day, index) => {
                 const date = new Date(now);
                 date.setDate(now.getDate() + mondayOffset + index);
-                const dateStr = date.toISOString().split("T")[0];
-                
+                // Local date (en-CA) so the cell→stat-doc mapping is not
+                // shifted by the UTC offset.
+                const dateStr = date.toLocaleDateString("en-CA");
+
                 // Filter only calc_stats for this tracker
-                const dayStat = dailyStats.find(s => s.statCollection === "calc_stats" && (s.id === dateStr || (s.timestamp && toJsDate(s.timestamp).toISOString().split("T")[0] === dateStr)));
+                const dayStat = dailyStats.find(s => s.statCollection === "calc_stats" && (s.id === dateStr || (s.timestamp && toJsDate(s.timestamp).toLocaleDateString("en-CA") === dateStr)));
                 const isCompleted = !!dayStat;
                 const score = dayStat?.score || 0;
                 const total = dayStat?.total || 0;
