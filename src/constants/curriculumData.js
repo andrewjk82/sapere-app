@@ -2,12 +2,50 @@ export const CURRICULUM_DATA = {
   'Basic Calculation': [
     {
       id: 'calc-stage-1',
-      title: 'Stage 1: Number Sense & Basic Add/Sub (Year 1)',
-      modules: 3,
+      title: 'Stage 1: Addition (Year 1-6)',
+      modules: 34,
       topics: [
-        { id: 'calc-1-core', code: 'C1.1', group: 'Core', title: 'Add/subtract single digits & number bonds to 10' },
-        { id: 'calc-1-adv', code: 'C1.2', group: 'Advanced', title: 'Number bonds to 20 & missing addends' },
-        { id: 'calc-1-enrich', code: 'C1.3', group: 'Enrichment', title: 'Mental make-10 method & estimation' }
+        // Phase A — Concept & number sense
+        { id: 'calc-1-s1',  code: 'A1',  group: 'A · Concept & number sense', title: 'What is addition? (counting on)' },
+        { id: 'calc-1-s2',  code: 'A2',  group: 'A · Concept & number sense', title: 'Counting on from 1 to 10' },
+        { id: 'calc-1-s3',  code: 'A3',  group: 'A · Concept & number sense', title: 'Commutative property (a+b = b+a)' },
+        { id: 'calc-1-s4',  code: 'A4',  group: 'A · Concept & number sense', title: 'Associative property ((a+b)+c)' },
+        // Phase B — 1-digit addition
+        { id: 'calc-1-s5',  code: 'A5',  group: 'B · 1-digit addition', title: '1-digit + 1-digit · no carrying' },
+        { id: 'calc-1-s6',  code: 'A6',  group: 'B · 1-digit addition', title: 'Number bonds to 10' },
+        { id: 'calc-1-s7',  code: 'A7',  group: 'B · 1-digit addition', title: '1-digit + 1-digit · sum over 10' },
+        { id: 'calc-1-s8',  code: 'A8',  group: 'B · 1-digit addition', title: 'Three 1-digit numbers' },
+        // Phase C — 2-digit addition
+        { id: 'calc-1-s9',  code: 'A9',  group: 'C · 2-digit addition', title: '2-digit + 1-digit · no carrying' },
+        { id: 'calc-1-s10', code: 'A10', group: 'C · 2-digit addition', title: '2-digit + 2-digit · no carrying' },
+        { id: 'calc-1-s11', code: 'A11', group: 'C · 2-digit addition', title: '2-digit + 1-digit · with carrying' },
+        { id: 'calc-1-s12', code: 'A12', group: 'C · 2-digit addition', title: '2-digit + 2-digit · with carrying' },
+        { id: 'calc-1-s13', code: 'A13', group: 'C · 2-digit addition', title: 'Three or more 2-digit numbers' },
+        // Phase D — 3-digit & larger numbers
+        { id: 'calc-1-s14', code: 'A14', group: 'D · 3-digit & larger numbers', title: '3-digit + 3-digit · no carrying' },
+        { id: 'calc-1-s15', code: 'A15', group: 'D · 3-digit & larger numbers', title: '3-digit + 3-digit · with carrying' },
+        { id: 'calc-1-s16', code: 'A16', group: 'D · 3-digit & larger numbers', title: '4-digit+ addition' },
+        { id: 'calc-1-s17', code: 'A17', group: 'D · 3-digit & larger numbers', title: 'Mental math strategies (rounding & adjust)' },
+        // Phase E — Decimals & fractions addition
+        { id: 'calc-1-s18', code: 'A18', group: 'E · Decimals & fractions addition', title: 'Decimal + decimal · same places' },
+        { id: 'calc-1-s19', code: 'A19', group: 'E · Decimals & fractions addition', title: 'Decimal + decimal · diff places' },
+        { id: 'calc-1-s20', code: 'A20', group: 'E · Decimals & fractions addition', title: 'Fraction + fraction · same denom' },
+        { id: 'calc-1-s21', code: 'A21', group: 'E · Decimals & fractions addition', title: 'Fraction + fraction · diff denom' },
+        { id: 'calc-1-s22', code: 'A22', group: 'E · Decimals & fractions addition', title: 'Integer + decimal + fraction (mixed types)' },
+        // Phase F — Combined & advanced strategies
+        { id: 'calc-1-s23', code: 'A23', group: 'F · Combined & advanced strategies', title: 'Estimation & reasonableness check' },
+        { id: 'calc-1-s24', code: 'A24', group: 'F · Combined & advanced strategies', title: 'Inverse check with subtraction' },
+        { id: 'calc-1-s25', code: 'A25', group: 'F · Combined & advanced strategies', title: 'Column addition (4+ addends)' },
+        { id: 'calc-1-s26', code: 'A26', group: 'F · Combined & advanced strategies', title: 'Intro to negative numbers in addition' },
+        // Phase G — Word problems
+        { id: 'calc-1-s27', code: 'A27', group: 'G · Word problems', title: '1-step · small numbers (objects & counts)' },
+        { id: 'calc-1-s28', code: 'A28', group: 'G · Word problems', title: '1-step · large numbers (scores & totals)' },
+        { id: 'calc-1-s29', code: 'A29', group: 'G · Word problems', title: '2-step · totalling multiple items' },
+        { id: 'calc-1-s30', code: 'A30', group: 'G · Word problems', title: '2-step · decimal totals (shopping & weight)' },
+        { id: 'calc-1-s31', code: 'A31', group: 'G · Word problems', title: 'Fraction addition · cooking & time' },
+        { id: 'calc-1-s32', code: 'A32', group: 'G · Word problems', title: 'Tables & charts (reading & totalling)' },
+        { id: 'calc-1-s33', code: 'A33', group: 'G · Word problems', title: '3-step story · build & solve equation' },
+        { id: 'calc-1-s34', code: 'A34', group: 'G · Word problems', title: '4-step · integers, decimals & fractions' }
       ]
     },
     {

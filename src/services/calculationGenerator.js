@@ -82,6 +82,11 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   else if (topicId === 'calc-6-core') topicId = 'calc-6-s5';
   else if (topicId === 'calc-6-adv') topicId = 'calc-6-s13';
   else if (topicId === 'calc-6-enrich') topicId = 'calc-6-s27';
+  // Legacy Stage 1 topic ids → representative new step (assignments made
+  // before the 34-step addition curriculum still produce sensible questions).
+  else if (topicId === 'calc-1-core') topicId = 'calc-1-s5';
+  else if (topicId === 'calc-1-adv') topicId = 'calc-1-s12';
+  else if (topicId === 'calc-1-enrich') topicId = 'calc-1-s17';
 
   let q = '';
   let a = '';

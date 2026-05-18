@@ -154,7 +154,7 @@ const MathView = ({ content, graphData, style }) => {
   }, [safeContent]);
 
   const combinedStyle = {
-    fontFamily: '"KaTeX_Main", "Times New Roman", serif',
+    fontFamily: '"Outfit", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     letterSpacing: '0.01em',
     fontWeight: 'inherit',
     ...style,

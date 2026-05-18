@@ -1064,7 +1064,14 @@ const Curriculum = () => {
       const count = await importYear11AdvCh7(forceReset);
       showToast(`Successfully synced ${count} questions for Y11 Adv Ch7!`, 'success');
     } catch (err) {
-      showToast('Failed to sync: ' + err.message, 'error');
+      if (err.message.includes('Failed to fetch') || err.message.includes('dynamically imported module') || err.name === 'TypeError') {
+        showToast('New update detected! Reloading page to load the latest sync modules...', 'info');
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
+      } else {
+        showToast('Failed to sync: ' + err.message, 'error');
+      }
     } finally {
       setIsMigrating(false);
     }
@@ -1078,7 +1085,14 @@ const Curriculum = () => {
       const count = await importYear11AdvCh8(forceReset);
       showToast(`Successfully synced ${count} questions for Y11 Adv Ch8!`, 'success');
     } catch (err) {
-      showToast('Failed to sync: ' + err.message, 'error');
+      if (err.message.includes('Failed to fetch') || err.message.includes('dynamically imported module') || err.name === 'TypeError') {
+        showToast('New update detected! Reloading page to load the latest sync modules...', 'info');
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
+      } else {
+        showToast('Failed to sync: ' + err.message, 'error');
+      }
     } finally {
       setIsMigrating(false);
     }
