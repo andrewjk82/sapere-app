@@ -387,6 +387,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   // ─── Pointer handlers ─────────────────────────────────────────────────────
   const onPointerDown = (e) => {
+    // Suppress the OS gesture (text-selection / Copy-Paste callout) for ANY
+    // touch on the canvas — including a rejected palm rest, which would
+    // otherwise pop up the edit menu while a student writes with the pen.
+    if (e.cancelable !== false) e.preventDefault();
     if (isSubmittedRef.current) return;
     const canvas = displayCanvasRef.current;
     if (!canvas) return;
@@ -456,9 +460,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   const onPointerMove = (e) => {
+    // Suppress OS gestures for every pointer move over the canvas, including
+    // a rejected palm — preventDefault must run before the early returns.
+    if (e.cancelable !== false) e.preventDefault();
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
     if (e.pointerId !== activePointerIdRef.current) return;
-    if (e.cancelable !== false) e.preventDefault();
 
     const rect = rectRef.current;
     if (!rect) return;
