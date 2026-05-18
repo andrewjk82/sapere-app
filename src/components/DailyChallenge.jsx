@@ -24,6 +24,7 @@ import {
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
+  getDailyAssignmentCacheKey,
 } from '../services/dailyAssignmentService';
 
 // Sub-components
@@ -289,15 +290,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           studentProfile: localBoot.studentProfile || {},
           chapterProgress: localBoot.chapterProgress ?? null,
         };
-        // Always re-fetch the student profile from Firestore on app load so that
-        // teacher-side curriculum changes (assignedChapters/year/etc.) are picked
-        // up immediately. A cached profile is only used as an instant fallback.
-        {
+        let shouldFetchProfile = !localBoot.studentProfile || Object.keys(localBoot.studentProfile).length === 0;
+
+        if (shouldFetchProfile) {
           const profileSnap = await getDoc(doc(db, 'users', user.uid));
           if (cancelled) return;
-          nextBoot.studentProfile = profileSnap.exists()
-            ? profileSnap.data()
-            : (localBoot.studentProfile || {});
+          nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : {};
         }
 
         setStudentProfile(nextBoot.studentProfile);
@@ -333,6 +331,36 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     };
   }, [user?.uid]);
 
+  // Re-fetch the student profile from Firestore and refresh local caches.
+  // Called only when a curriculum change is detected (teacher updated it, or
+  // a test just finished) — NOT on every app load — to keep Firestore reads low.
+  const refreshStudentProfile = useCallback(async (newProfileVersion) => {
+    if (!user?.uid) return;
+    try {
+      const profileSnap = await getDoc(doc(db, 'users', user.uid));
+      if (!profileSnap.exists()) return;
+      const freshProfile = profileSnap.data();
+      setStudentProfile(freshProfile);
+      // Update boot cache with the fresh profile + applied profileVersion.
+      const bootKey = getChallengeBootCacheKey(user.uid);
+      const bootCache = localCache.get(bootKey) || {};
+      localCache.set(bootKey, {
+        ...bootCache,
+        studentProfile: freshProfile,
+        profileVersion: newProfileVersion || bootCache.profileVersion || Date.now(),
+        savedAt: Date.now(),
+      });
+      // Invalidate today's cached daily assignment so it regenerates with the
+      // new curriculum (the stored doc is also re-checked via curriculumSignature).
+      const today = new Date().toLocaleDateString('en-CA');
+      localCache.remove(getDailyAssignmentCacheKey(user.uid, today));
+      return freshProfile;
+    } catch (e) {
+      console.warn('refreshStudentProfile failed (non-fatal):', e?.code || e);
+      return null;
+    }
+  }, [user?.uid]);
+
   useEffect(() => {
     if (!user?.uid) return undefined;
     const cacheKey = `sapere-cache:${getChallengeBootCacheKey(user.uid)}`;
@@ -354,7 +382,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (snap.exists()) {
         const data = snap.data();
         const currentCache = localCache.get(getChallengeBootCacheKey(user.uid)) || {};
-        
+
+        // ── Teacher-initiated curriculum update detection ──
+        // The teacher app bumps `profileVersion` in sync_meta whenever it
+        // changes a student's curriculum. When we see a newer value than the
+        // one we last applied, re-fetch the profile (one read) instead of
+        // re-fetching on every app load.
+        const serverProfileVersion = Number(data.profileVersion || 0);
+        if (serverProfileVersion > 0 && serverProfileVersion > Number(currentCache.profileVersion || 0)) {
+          refreshStudentProfile(serverProfileVersion);
+        }
+
         // If the server says 'open' but we have 'abandoned'/'completed' locally, update it.
         const serverDaily = data.status?.daily || 'open';
         const serverCalc = data.status?.calc || 'open';
@@ -425,7 +463,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       window.removeEventListener('storage', handleStorage);
       window.removeEventListener('sapere-challenge-reset-applied', handleStorage);
     };
-  }, [user?.uid]);
+  }, [user?.uid, refreshStudentProfile]);
 
   // ── Challenge history loader ──
   // One-shot getDocs (NOT a realtime listener) — past challenge records change
@@ -1602,13 +1640,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           }
           
           // --- PROACTIVE GENERATION ---
-          // Pre-fetch the NEXT daily assignment in the background 
-          // so the student has 0 latency tomorrow or on their next attempt.
-          prepareNextDailyAssignment({
-            uid: user.uid,
-            studentProfile,
-            questionCount: getQuestionCount('daily'),
-          }).catch((err) => console.warn('Proactive assignment generation failed (non-critical):', err));
+          // Re-fetch the profile once so any teacher curriculum change made
+          // during the test is applied, then pre-build the NEXT daily
+          // assignment with the latest curriculum (0 latency next attempt).
+          refreshStudentProfile()
+            .then((freshProfile) => prepareNextDailyAssignment({
+              uid: user.uid,
+              studentProfile: freshProfile || studentProfile,
+              questionCount: getQuestionCount('daily'),
+            }))
+            .catch((err) => console.warn('Proactive assignment generation failed (non-critical):', err));
         }
       }
     } catch (err) {
