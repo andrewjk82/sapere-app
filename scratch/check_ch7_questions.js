@@ -4,8 +4,8 @@ console.log('=== VALIDATING CHAPTER 7A QUESTION BANK ===');
 
 const questions = JSON.parse(fs.readFileSync('scratch/questions7A.json', 'utf8'));
 
-if (questions.length !== 41) {
-  console.error(`Error: Expected exactly 41 questions, but found ${questions.length}.`);
+if (questions.length !== 47) {
+  console.error(`Error: Expected exactly 47 questions, but found ${questions.length}.`);
   process.exit(1);
 }
 
@@ -16,7 +16,7 @@ questions.forEach((q, idx) => {
   // Verify metadata fields
   if (q.chapterId !== 'y11a-7') { console.error(`[${label}] Invalid chapterId: ${q.chapterId}`); errors++; }
   if (q.topicCode !== '7A') { console.error(`[${label}] Invalid topicCode: ${q.topicCode}`); errors++; }
-  if (!['easy', 'medium'].includes(q.difficulty)) { console.error(`[${label}] Invalid difficulty: ${q.difficulty}`); errors++; }
+  if (!['easy', 'medium', 'hard'].includes(q.difficulty)) { console.error(`[${label}] Invalid difficulty: ${q.difficulty}`); errors++; }
   
   // Verify multiple choice format
   if (q.type === 'multiple_choice') {
@@ -46,7 +46,7 @@ questions.forEach((q, idx) => {
 });
 
 if (errors === 0) {
-  console.log(`\n🎉 SUCCESS: All 41 Coordinate Geometry questions successfully validated!`);
+  console.log(`\n🎉 SUCCESS: All 47 Coordinate Geometry questions successfully validated!`);
   console.log(`- Total Questions: ${questions.length}`);
   console.log(`- Format: 100% Multiple Choice`);
   console.log(`- Delimiter Balance: 100% Clean`);

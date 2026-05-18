@@ -1362,6 +1362,204 @@ export const questions7A = [
     ],
     "answer": "0",
     "solution": "### Step-by-Step Solution\n\n**Step 1: State the distance formula**\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\n**Step 2: Verify Option 1: $C(2, 3)$ and $D(7, 15)$**\n$$d^2 = (7 - 2)^2 + (15 - 3)^2$$\n$$d^2 = 5^2 + 12^2$$\n$$d^2 = 25 + 144 = 169$$\n$$d = \\sqrt{169} = 13$$\nThis is exactly $13$ units!\n\n**Step 3: Evaluate other options**\n- Option 2: distance $= \\sqrt{3^2 + 4^2} = 5$\n- Option 3: distance $= \\sqrt{6^2 + 6^2} = 6\\sqrt{2}$\n- Option 4: distance $= \\sqrt{10^2 + 10^2} = 10\\sqrt{2}$\n\n**Step 4: Confirm final answer**\nThe correct pair of points is $C(2, 3)$ and $D(7, 15)$."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Determine the type of triangle formed by the vertices $A(-2, 0)$, $B(2, 0)$ and $C(0, 2\\sqrt{3})$ by calculating its side lengths.",
+    "options": [
+      {
+        "text": "Equilateral triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Isosceles triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Right-angled triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of these (Scalene)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate the side length $AB$**\n$$AB = \\sqrt{(2 - (-2))^2 + (0 - 0)^2} = \\sqrt{4^2} = 4$$\n\n**Step 2: Calculate the side length $BC$**\n$$BC = \\sqrt{(0 - 2)^2 + (2\\sqrt{3} - 0)^2} = \\sqrt{(-2)^2 + 12} = \\sqrt{4 + 12} = \\sqrt{16} = 4$$\n\n**Step 3: Calculate the side length $AC$**\n$$AC = \\sqrt{(0 - (-2))^2 + (2\\sqrt{3} - 0)^2} = \\sqrt{2^2 + 12} = \\sqrt{4 + 12} = \\sqrt{16} = 4$$\n\n**Step 4: Compare side lengths**\nSince $AB = BC = AC = 4$ (all three sides are equal), the triangle is **equilateral**."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Determine the type of triangle formed by the vertices $P(-2, 2)$, $Q(0, -2)$ and $R(6, 6)$ by calculating its side lengths.",
+    "options": [
+      {
+        "text": "Right-angled triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Equilateral triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Isosceles triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of these (Scalene)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate the side lengths**\n- **$PQ$** using $P(-2, 2)$ and $Q(0, -2)$:\n  $$PQ = \\sqrt{(0 - (-2))^2 + (-2 - 2)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5}$$\n- **$QR$** using $Q(0, -2)$ and $R(6, 6)$:\n  $$QR = \\sqrt{(6 - 0)^2 + (6 - (-2))^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$\n- **$PR$** using $P(-2, 2)$ and $R(6, 6)$:\n  $$PR = \\sqrt{(6 - (-2))^2 + (6 - 2)^2} = \\sqrt{8^2 + 4^2} = \\sqrt{64 + 16} = \\sqrt{80} = 4\\sqrt{5}$$\n\n**Step 2: Check for special configurations**\nLet's check the sum of squares of the two shorter sides:\n$$PQ^2 + PR^2 = (\\sqrt{20})^2 + (\\sqrt{80})^2 = 20 + 80 = 100$$\n$$QR^2 = 10^2 = 100$$\nSince $PQ^2 + PR^2 = QR^2$, by the converse of Pythagoras' theorem, the triangle is **right-angled** at $P$."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Determine the type of triangle formed by the vertices $D(2, 2)$, $E(3, -1)$ and $F(-2, 1)$ by calculating its side lengths.",
+    "options": [
+      {
+        "text": "None of these (Scalene)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Isosceles triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Equilateral triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Right-angled triangle",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate the side lengths**\n- **$DE$** using $D(2, 2)$ and $E(3, -1)$:\n  $$DE = \\sqrt{(3 - 2)^2 + (-1 - 2)^2} = \\sqrt{1^2 + (-3)^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n- **$EF$** using $E(3, -1)$ and $F(-2, 1)$:\n  $$EF = \\sqrt{(-2 - 3)^2 + (1 - (-1))^2} = \\sqrt{(-5)^2 + 2^2} = \\sqrt{25 + 4} = \\sqrt{29}$$\n- **$DF$** using $D(2, 2)$ and $F(-2, 1)$:\n  $$DF = \\sqrt{(-2 - 2)^2 + (1 - 2)^2} = \\sqrt{(-4)^2 + (-1)^2} = \\sqrt{16 + 1} = \\sqrt{17}$$\n\n**Step 2: Examine side length relationships**\n- All three side lengths are different: $\\sqrt{10} \\neq \\sqrt{29} \\neq \\sqrt{17}$. Therefore, it is **not equilateral** and **not isosceles**.\n- Check Pythagoras: $(\\sqrt{10})^2 + (\\sqrt{17})^2 = 10 + 17 = 27 \\neq 29$. Therefore, it is **not right-angled**.\n- Since it fits none of the special categories, it is a **scalene** triangle."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Determine the type of triangle formed by the vertices $X(-2, 0)$, $Y(1, 1)$ and $Z(-1, 3)$ by calculating its side lengths.",
+    "options": [
+      {
+        "text": "Isosceles triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Equilateral triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Right-angled triangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of these (Scalene)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate the side lengths**\n- **$XY$** using $X(-2, 0)$ and $Y(1, 1)$:\n  $$XY = \\sqrt{(1 - (-2))^2 + (1 - 0)^2} = \\sqrt{3^2 + 1^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n- **$YZ$** using $Y(1, 1)$ and $Z(-1, 3)$:\n  $$YZ = \\sqrt{(-1 - 1)^2 + (3 - 1)^2} = \\sqrt{(-2)^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8} = 2\\sqrt{2}$$\n- **$XZ$** using $X(-2, 0)$ and $Z(-1, 3)$:\n  $$XZ = \\sqrt{(-1 - (-2))^2 + (3 - 0)^2} = \\sqrt{1^2 + 3^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n\n**Step 2: Compare the side lengths**\nSince $XY = XZ = \\sqrt{10}$ (two sides are equal in length) and the third side $YZ = \\sqrt{8}$ is different, the triangle is **isosceles**."
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Find the equation of the circle with center at $(4, -3)$ and passing through the point $(-2, 0)$.",
+    "options": [
+      {
+        "text": "$(x - 4)^2 + (y + 3)^2 = 45$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(x + 4)^2 + (y - 3)^2 = 45$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(x - 4)^2 + (y + 3)^2 = 9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(x - 4)^2 + (y + 3)^2 = \\sqrt{45}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: State the general equation of a circle**\nA circle with center $(h, k)$ and radius $r$ is represented by:\n$$(x - h)^2 + (y - k)^2 = r^2$$\n\n**Step 2: Plug in the center $(h, k) = (4, -3)$**\n$$(x - 4)^2 + (y - (-3))^2 = r^2$$\n$$(x - 4)^2 + (y + 3)^2 = r^2$$\n\n**Step 3: Calculate the radius square ($r^2$)**\nSince the circle passes through $(-2, 0)$, this coordinate must satisfy the equation:\n$$r^2 = (-2 - 4)^2 + (0 + 3)^2$$\n$$r^2 = (-6)^2 + 3^2$$\n$$r^2 = 36 + 9 = 45$$\n\n**Step 4: Write the final equation**\n$$(x - 4)^2 + (y + 3)^2 = 45$$"
+  },
+  {
+    "chapterId": "y11a-7",
+    "chapterTitle": "Chapter 7: Coordinate Geometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-7A",
+    "topicCode": "7A",
+    "topicTitle": "Lengths and midpoints of line segments",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Find the equation of the circle given that $K(6, 8)$ and $L(-8, -2)$ are the endpoints of its diameter.",
+    "options": [
+      {
+        "text": "$(x + 1)^2 + (y - 3)^2 = 74$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(x - 1)^2 + (y + 3)^2 = 74$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(x + 1)^2 + (y - 3)^2 = 296$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$(x - 6)^2 + (y - 8)^2 = 74$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Find the center of the circle**\nThe center $(h, k)$ is the midpoint of diameter endpoints $K(6, 8)$ and $L(-8, -2)$:\n$$h = \\frac{6 + (-8)}{2} = \\frac{-2}{2} = -1$$\n$$k = \\frac{8 + (-2)}{2} = \\frac{6}{2} = 3$$\n$$\\text{Center} = (-1, 3)$$\n\n**Step 2: State the circle equation template**\n$$(x - h)^2 + (y - k)^2 = r^2$$\n$$(x - (-1))^2 + (y - 3)^2 = r^2$$\n$$(x + 1)^2 + (y - 3)^2 = r^2$$\n\n**Step 3: Calculate the radius square ($r^2$)**\nThe radius is the distance from the center $(-1, 3)$ to any endpoint, e.g., $K(6, 8)$:\n$$r^2 = (6 - (-1))^2 + (8 - 3)^2$$\n$$r^2 = 7^2 + 5^2$$\n$$r^2 = 49 + 25 = 74$$\n\n**Step 4: Write the final equation**\n$$(x + 1)^2 + (y - 3)^2 = 74$$"
   }
 ];
 
