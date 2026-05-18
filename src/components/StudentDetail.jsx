@@ -3229,7 +3229,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                           <span style={{ fontSize: "0.6rem", fontWeight: 700, opacity: 0.8 }}>{total}</span>
                         </>
                       ) : (
-                        <Check size={16} strokeWidth={3} />
+                        <span style={{ fontSize: "1.1rem", fontWeight: 900, color: "#cbd5e1", lineHeight: 1 }}>–</span>
                       )}
                     </div>
                     <span style={{ fontSize: "0.6rem", fontWeight: 700, color: "#cbd5e1" }}>{date.getDate()}</span>
