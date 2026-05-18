@@ -93,44 +93,300 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   let hint = '';
 
   switch (topicId) {
-    // Stage 1
-    case 'calc-1-core': {
-      const isAdd = Math.random() > 0.5;
-      if (isAdd) {
-        const n1 = randomInt(1, 9);
-        const n2 = randomInt(1, 9 - n1); // Keep sum <= 10
-        q = `$$ ${n1} + ${n2} = ? $$`;
-        a = String(n1 + n2);
-      } else {
-        const n1 = randomInt(1, 10);
-        const n2 = randomInt(1, n1);
-        q = `$$ ${n1} - ${n2} = ? $$`;
-        a = String(n1 - n2);
-      }
-      break;
-    }
-    case 'calc-1-adv': {
-      const isMissing = Math.random() > 0.5;
-      if (isMissing) {
-        const target = randomInt(11, 20);
-        const given = randomInt(1, target - 1);
-        q = `$$ ${given} + \\square = ${target} $$`;
-        a = String(target - given);
-        hint = `How much more to make ${target}?`;
-      } else {
-        const n1 = randomInt(1, 19);
-        const n2 = randomInt(1, 20 - n1);
-        q = `$$ ${n1} + ${n2} = ? $$`;
-        a = String(n1 + n2);
-      }
-      break;
-    }
-    case 'calc-1-enrich': {
-      const n1 = randomInt(7, 9);
-      const n2 = randomInt(4, 9);
+    // ════ Stage 1: Addition — 34-step curriculum ════
+    // Phase A — Concept & number sense
+    case 'calc-1-s1': { // what is addition? (counting on)
+      const n1 = randomInt(2, 6), n2 = randomInt(1, 4);
       q = `$$ ${n1} + ${n2} = ? $$`;
       a = String(n1 + n2);
-      hint = `Make a 10 first! $${n1} + ${10 - n1} = 10$, then add the rest.`;
+      hint = `Start at ${n1}, then count on ${n2} more.`;
+      break;
+    }
+    case 'calc-1-s2': { // counting on from 1 to 10
+      const n1 = randomInt(1, 8);
+      const n2 = randomInt(1, 9 - n1);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = `Count on from ${n1} until you have added ${n2}.`;
+      break;
+    }
+    case 'calc-1-s3': { // commutative property (a+b = b+a)
+      const n1 = randomInt(2, 9), n2 = randomInt(2, 9);
+      q = `$$ ${n1} + ${n2} = ${n2} + \\square $$`;
+      a = String(n1);
+      hint = 'Swapping the order of the numbers does not change the total.';
+      break;
+    }
+    case 'calc-1-s4': { // associative property ((a+b)+c)
+      const n1 = randomInt(2, 9), n2 = randomInt(2, 9), n3 = randomInt(2, 9);
+      q = `$$ \\left( ${n1} + ${n2} \\right) + ${n3} = ? $$`;
+      a = String(n1 + n2 + n3);
+      hint = 'Add the bracket first, then add the last number.';
+      break;
+    }
+
+    // Phase B — 1-digit addition
+    case 'calc-1-s5': { // 1-digit + 1-digit · no carrying
+      const n1 = randomInt(1, 8);
+      const n2 = randomInt(1, 9 - n1);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'The ones digits add to 9 or less — no carrying needed.';
+      break;
+    }
+    case 'calc-1-s6': { // number bonds to 10
+      const n1 = randomInt(1, 9);
+      q = `$$ ${n1} + \\square = 10 $$`;
+      a = String(10 - n1);
+      hint = `How many more does ${n1} need to reach 10?`;
+      break;
+    }
+    case 'calc-1-s7': { // 1-digit + 1-digit · sum over 10
+      const n1 = randomInt(2, 9);
+      const n2 = randomInt(Math.max(2, 11 - n1), 9);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = `Make a 10 first: ${n1} + ${10 - n1} = 10, then add the rest.`;
+      break;
+    }
+    case 'calc-1-s8': { // three 1-digit numbers
+      const n1 = randomInt(1, 9), n2 = randomInt(1, 9), n3 = randomInt(1, 9);
+      q = `$$ ${n1} + ${n2} + ${n3} = ? $$`;
+      a = String(n1 + n2 + n3);
+      hint = 'Add the first two, then add the third number.';
+      break;
+    }
+
+    // Phase C — 2-digit addition
+    case 'calc-1-s9': { // 2-digit + 1-digit · no carrying
+      const t = randomInt(1, 9), o = randomInt(0, 8);
+      const n1 = t * 10 + o;
+      const n2 = randomInt(1, 9 - o);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'Add the ones — they stay under 10, so no carrying.';
+      break;
+    }
+    case 'calc-1-s10': { // 2-digit + 2-digit · no carrying
+      const t1 = randomInt(1, 8), o1 = randomInt(0, 8);
+      const t2 = randomInt(1, 9 - t1), o2 = randomInt(0, 9 - o1);
+      const n1 = t1 * 10 + o1, n2 = t2 * 10 + o2;
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'Each column adds to 9 or less — no carrying.';
+      break;
+    }
+    case 'calc-1-s11': { // 2-digit + 1-digit · with carrying
+      const t = randomInt(1, 8), o = randomInt(2, 9);
+      const n1 = t * 10 + o;
+      const n2 = randomInt(11 - o, 9);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'The ones add to 10 or more — carry 1 to the tens.';
+      break;
+    }
+    case 'calc-1-s12': { // 2-digit + 2-digit · with carrying
+      let n1, n2;
+      do {
+        n1 = randomInt(15, 89);
+        n2 = randomInt(15, 89);
+      } while ((n1 % 10) + (n2 % 10) < 10);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'When a column adds to 10 or more, carry 1 to the next column.';
+      break;
+    }
+    case 'calc-1-s13': { // three or more 2-digit numbers
+      const count = randomInt(3, 4);
+      const nums = Array.from({ length: count }, () => randomInt(10, 99));
+      q = `$$ ${nums.join(' + ')} = ? $$`;
+      a = String(nums.reduce((s, n) => s + n, 0));
+      hint = 'Add the numbers one at a time, keeping a running total.';
+      break;
+    }
+
+    // Phase D — 3-digit & larger numbers
+    case 'calc-1-s14': { // 3-digit + 3-digit · no carrying
+      const h1 = randomInt(1, 8), t1 = randomInt(0, 8), o1 = randomInt(0, 8);
+      const h2 = randomInt(1, 9 - h1), t2 = randomInt(0, 9 - t1), o2 = randomInt(0, 9 - o1);
+      const n1 = h1 * 100 + t1 * 10 + o1, n2 = h2 * 100 + t2 * 10 + o2;
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'Each column adds to 9 or less — no carrying.';
+      break;
+    }
+    case 'calc-1-s15': { // 3-digit + 3-digit · with carrying
+      let n1, n2;
+      do {
+        n1 = randomInt(150, 899);
+        n2 = randomInt(150, 899);
+      } while ((n1 % 10) + (n2 % 10) < 10 && (Math.floor(n1 / 10) % 10) + (Math.floor(n2 / 10) % 10) < 10);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'Add right to left, carrying 1 whenever a column reaches 10.';
+      break;
+    }
+    case 'calc-1-s16': { // 4-digit+ addition
+      const digits = pick([4, 5]);
+      const lo = Math.pow(10, digits - 1), hi = Math.pow(10, digits) - 1;
+      const n1 = randomInt(lo, hi), n2 = randomInt(lo, hi);
+      q = `$$ ${n1} + ${n2} = ? $$`;
+      a = String(n1 + n2);
+      hint = 'Line up the digits by place value and add column by column.';
+      break;
+    }
+    case 'calc-1-s17': { // mental math strategies (rounding & adjust)
+      const base = pick([19, 29, 39, 49, 98, 99, 198, 199]);
+      const other = randomInt(15, 85);
+      q = `$$ ${other} + ${base} = ? $$`;
+      a = String(other + base);
+      hint = `Round ${base} up to ${base + 1}, add, then subtract 1.`;
+      break;
+    }
+
+    // Phase E — Decimals & fractions addition
+    case 'calc-1-s18': { // decimal + decimal · same places
+      const dp = randomInt(1, 2);
+      const x = randDec(dp, 9), y = randDec(dp, 9);
+      q = `$$ ${decStr(x)} + ${decStr(y)} = ? $$`;
+      a = decStr(x + y);
+      hint = 'Line up the decimal points, then add.';
+      break;
+    }
+    case 'calc-1-s19': { // decimal + decimal · diff places
+      const x = randDec(1, 9), y = randDec(2, 9);
+      q = `$$ ${decStr(x)} + ${decStr(y)} = ? $$`;
+      a = decStr(x + y);
+      hint = 'Give both numbers the same number of decimal places first.';
+      break;
+    }
+    case 'calc-1-s20': { // fraction + fraction · same denom
+      const d = randomInt(3, 12);
+      const n1 = randomInt(1, d - 2);
+      const n2 = randomInt(1, d - 1 - n1);
+      q = `$$ \\frac{${n1}}{${d}} + \\frac{${n2}}{${d}} = ? $$`;
+      a = simplifyFraction(n1 + n2, d);
+      hint = 'Same denominator — add the numerators, keep the denominator.';
+      break;
+    }
+    case 'calc-1-s21': { // fraction + fraction · diff denom
+      const f1 = properFrac(8), f2 = properFrac(8);
+      q = `$$ ${fTex(f1)} + ${fTex(f2)} = ? $$`;
+      a = fStr(fAdd(f1, f2));
+      hint = 'Rewrite with a common denominator, then add.';
+      break;
+    }
+    case 'calc-1-s22': { // integer + decimal + fraction (mixed types)
+      const i = randomInt(1, 9);
+      const d = randDec(1, 9);
+      const denom = pick([2, 4, 5, 10]);
+      const num = randomInt(1, denom - 1);
+      q = `$$ ${i} + ${decStr(d)} + \\frac{${num}}{${denom}} = ? $$`;
+      a = decStr(i + d + num / denom);
+      hint = 'Convert the fraction to a decimal, then add all three.';
+      break;
+    }
+
+    // Phase F — Combined & advanced strategies
+    case 'calc-1-s23': { // estimation & reasonableness check
+      const round = pick([10, 100]);
+      const lo = round === 10 ? 12 : 120, hi = round === 10 ? 88 : 880;
+      const n1 = randomInt(lo, hi), n2 = randomInt(lo, hi);
+      q = `Estimate ${n1} + ${n2} by rounding each number to the nearest ${round}. (number only)`;
+      a = String(Math.round(n1 / round) * round + Math.round(n2 / round) * round);
+      hint = `Round ${n1} and ${n2} to the nearest ${round}, then add.`;
+      break;
+    }
+    case 'calc-1-s24': { // inverse check with subtraction
+      const known = randomInt(20, 400);
+      const missing = randomInt(20, 400);
+      q = `$$ \\square + ${known} = ${known + missing} $$`;
+      a = String(missing);
+      hint = `Use the inverse operation: ${known + missing} - ${known}.`;
+      break;
+    }
+    case 'calc-1-s25': { // column addition (4+ addends)
+      const count = randomInt(4, 5);
+      const nums = Array.from({ length: count }, () => randomInt(10, 199));
+      q = `$$ ${nums.join(' + ')} = ? $$`;
+      a = String(nums.reduce((s, n) => s + n, 0));
+      hint = 'Add one number at a time, carrying as you go.';
+      break;
+    }
+    case 'calc-1-s26': { // intro to negative numbers in addition
+      if (Math.random() > 0.5) {
+        const neg = randomInt(2, 12), pos = randomInt(1, 20);
+        q = `$$ -${neg} + ${pos} = ? $$`;
+        a = String(pos - neg);
+        hint = 'Start at the negative number and move right on the number line.';
+      } else {
+        const a1 = randomInt(2, 15), a2 = randomInt(2, 15);
+        q = `$$ -${a1} + (-${a2}) = ? $$`;
+        a = String(-(a1 + a2));
+        hint = 'Adding two negatives gives a larger negative number.';
+      }
+      break;
+    }
+
+    // Phase G — Word problems
+    case 'calc-1-s27': { // 1-step · small numbers (objects & counts)
+      const n1 = randomInt(3, 19), n2 = randomInt(3, 19);
+      q = `There are ${n1} red apples and ${n2} green apples in a basket. How many apples are there altogether?`;
+      a = String(n1 + n2);
+      hint = 'Combine both groups — add the two amounts.';
+      break;
+    }
+    case 'calc-1-s28': { // 1-step · large numbers (scores & totals)
+      const n1 = randomInt(120, 4800), n2 = randomInt(120, 4800);
+      q = `A stadium had ${n1} fans on Saturday and ${n2} fans on Sunday. How many fans attended in total?`;
+      a = String(n1 + n2);
+      hint = 'Add the two attendances together.';
+      break;
+    }
+    case 'calc-1-s29': { // 2-step · totalling multiple items
+      const n1 = randomInt(8, 60), n2 = randomInt(8, 60), n3 = randomInt(8, 60);
+      q = `A shop sold ${n1} pens, ${n2} pencils and ${n3} markers. How many items did the shop sell in total?`;
+      a = String(n1 + n2 + n3);
+      hint = 'Add all three amounts together.';
+      break;
+    }
+    case 'calc-1-s30': { // 2-step · decimal totals (shopping & weight)
+      const x = randDec(1, 9), y = randDec(2, 9), z = randDec(1, 5);
+      q = `A shopper buys items costing ${decStr(x)}, ${decStr(y)} and ${decStr(z)} dollars. What is the total cost? (dollars)`;
+      a = decStr(x + y + z);
+      hint = 'Line up the decimal points and add all three prices.';
+      break;
+    }
+    case 'calc-1-s31': { // fraction addition · cooking & time
+      const f1 = properFrac(8), f2 = properFrac(8);
+      q = `A recipe uses $${fTex(f1)}$ of a cup of flour and $${fTex(f2)}$ of a cup of sugar. How many cups of dry ingredients are used in total?`;
+      a = fStr(fAdd(f1, f2));
+      hint = 'Use a common denominator, then add the fractions.';
+      break;
+    }
+    case 'calc-1-s32': { // tables & charts (reading & totalling)
+      const mon = randomInt(20, 90), tue = randomInt(20, 90), wed = randomInt(20, 90);
+      q = `A table shows books borrowed from a library: Monday ${mon}, Tuesday ${tue}, Wednesday ${wed}. How many books were borrowed over the three days?`;
+      a = String(mon + tue + wed);
+      hint = 'Read each value from the table and add them up.';
+      break;
+    }
+    case 'calc-1-s33': { // 3-step story · build & solve equation
+      const n1 = randomInt(20, 150), n2 = randomInt(20, 150), n3 = randomInt(20, 150);
+      q = `A team scored ${n1} points in round 1, ${n2} points in round 2 and ${n3} points in round 3. What was the team's total score?`;
+      a = String(n1 + n2 + n3);
+      hint = 'Total = round 1 + round 2 + round 3.';
+      break;
+    }
+    case 'calc-1-s34': { // 4-step · integers, decimals & fractions
+      const i = randomInt(2, 9);
+      const d = randDec(1, 9);
+      const denom = pick([2, 4, 5, 10]);
+      const num = randomInt(1, denom - 1);
+      const extra = randomInt(2, 9);
+      q = `A jug holds ${i} litres of water. Then ${decStr(d)} litres, $\\frac{${num}}{${denom}}$ of a litre and ${extra} more litres are added. How many litres are in the jug now?`;
+      a = decStr(i + d + num / denom + extra);
+      hint = 'Convert the fraction to a decimal, then add all four amounts.';
       break;
     }
 
