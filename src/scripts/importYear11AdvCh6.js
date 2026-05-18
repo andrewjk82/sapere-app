@@ -1,0 +1,2651 @@
+import { db } from '../firebase/config';
+import { collection, addDoc, serverTimestamp, getDocs, query, where, writeBatch } from 'firebase/firestore';
+
+const chapterData = {
+  chapterId: 'y11a-6',
+  chapterTitle: 'Chapter 6: Trigonometry',
+  year: 'Year 11',
+  course: 'Advanced',
+  isManual: true
+};
+
+export const questions6A = [
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, write down the exact value of $\\cos \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 70 A 30 30 0 0 1 156 59\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"85\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the trigonometric ratio definition**\n$$\\cos \\alpha = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$$\n\n**Step 2: Read the sides from the triangle relative to angle $\\alpha$**\n- **Adjacent side** $= 5$\n- **Hypotenuse** $= 13$\n\n**Step 3: Substitute the values**\n$$\\cos \\alpha = \\frac{5}{13}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, write down the exact value of $\\tan \\beta$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 70 A 30 30 0 0 1 156 59\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"85\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the trigonometric ratio definition**\n$$\\tan \\beta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$$\n\n**Step 2: Identify the sides relative to the top angle $\\beta$**\n- **Opposite side** (bottom side) $= 5$\n- **Adjacent side** (vertical side) $= 12$\n\n**Step 3: Substitute the values**\n$$\\tan \\beta = \\frac{5}{12}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, write down the exact value of $\\sin \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 70 A 30 30 0 0 1 156 59\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"85\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the sine ratio**\n$$\\sin \\alpha = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$$\n\n**Step 2: Read the sides from the triangle relative to $\\alpha$**\n- **Opposite side** $= 12$\n- **Hypotenuse** $= 13$\n\n**Step 3: Substitute the values**\n$$\\sin \\alpha = \\frac{12}{13}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, write down the exact value of $\\cos \\beta$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 70 A 30 30 0 0 1 156 59\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"85\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the cosine ratio**\n$$\\cos \\beta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$$\n\n**Step 2: Read the sides relative to the top angle $\\beta$**\n- **Adjacent side** $= 12$\n- **Hypotenuse** $= 13$\n\n**Step 3: Substitute the values**\n$$\\cos \\beta = \\frac{12}{13}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, write down the exact value of $\\sin \\beta$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 70 A 30 30 0 0 1 156 59\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"85\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the sine ratio**\n$$\\sin \\beta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$$\n\n**Step 2: Identify the sides relative to the top angle $\\beta$**\n- **Opposite side** $= 5$\n- **Hypotenuse** $= 13$\n\n**Step 3: Substitute the values**\n$$\\sin \\beta = \\frac{5}{13}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, write down the exact value of $\\tan \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 70 A 30 30 0 0 1 156 59\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"85\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the tangent ratio**\n$$\\tan \\alpha = \\frac{\\text{Opposite}}{\\text{Adjacent}}$$\n\n**Step 2: Read the sides relative to $\\alpha$**\n- **Opposite side** $= 12$\n- **Adjacent side** $= 5$\n\n**Step 3: Calculate the ratio**\n$$\\tan \\alpha = \\frac{12}{5}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $sin 27^\\circ$.",
+    "options": [
+      {
+        "text": "$0.4540$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.4665$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.4456$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.4767$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\sin 27^\\circ \\approx 0.45399 \\implies 0.4540$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $cos 58^\\circ$.",
+    "options": [
+      {
+        "text": "$0.5299$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.5424$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.5215$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.5564$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\cos 58^\\circ \\approx 0.52991 \\implies 0.5299$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $tan 38^\\circ$.",
+    "options": [
+      {
+        "text": "$0.7813$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.7938$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.7729$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.8204$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\tan 38^\\circ \\approx 0.78128 \\implies 0.7813$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $sin 84^\\circ$.",
+    "options": [
+      {
+        "text": "$0.9945$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.0070$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.9861$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.0442$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\sin 84^\\circ \\approx 0.99452 \\implies 0.9945$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $tan 4^\\circ$.",
+    "options": [
+      {
+        "text": "$0.0699$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0824$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0615$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0734$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\tan 4^\\circ \\approx 0.06992 \\implies 0.0699$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $cos 31^\\circ$.",
+    "options": [
+      {
+        "text": "$0.8572$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.8697$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.8488$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.9001$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\cos 31^\\circ \\approx 0.85716 \\implies 0.8572$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $sin 2^\\circ$.",
+    "options": [
+      {
+        "text": "$0.0349$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0474$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0265$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0366$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\sin 2^\\circ \\approx 0.03489 \\implies 0.0349$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $cos 5^\\circ$.",
+    "options": [
+      {
+        "text": "$0.9962$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.0087$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.9878$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.0460$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Ensure your calculator is in Degree mode (D)**\n\n**Step 2: Enter the trigonometric function and press execute**\n$$\\cos 5^\\circ \\approx 0.99619 \\implies 0.9962$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $tan 56^\\circ 15'$.",
+    "options": [
+      {
+        "text": "$1.4966$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.5178$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.4821$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.6762$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$56^\\circ 15' = 56 + \\frac{15}{60} = 56.25^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $tan 56^\\circ 15'$ (which is equal to $56.25^\\circ$):\n$$\\text{Value} \\approx 1.4966$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $cos 34^\\circ 12'$.",
+    "options": [
+      {
+        "text": "$0.8271$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.8483$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.8126$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.9264$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$34^\\circ 12' = 34 + \\frac{12}{60} = 34.2^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $cos 34^\\circ 12'$ (which is equal to $34.2^\\circ$):\n$$\\text{Value} \\approx 0.8271$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $tan 76^\\circ 30'$.",
+    "options": [
+      {
+        "text": "$4.1653$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4.1865$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4.1508$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4.6651$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$76^\\circ 30' = 76 + \\frac{30}{60} = 76.5^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $tan 76^\\circ 30'$ (which is equal to $76.5^\\circ$):\n$$\\text{Value} \\approx 4.1653$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $cos 18^\\circ 45'$.",
+    "options": [
+      {
+        "text": "$0.9469$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.9681$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.9324$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1.0605$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$18^\\circ 45' = 18 + \\frac{45}{60} = 18.75^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $cos 18^\\circ 45'$ (which is equal to $18.75^\\circ$):\n$$\\text{Value} \\approx 0.9469$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $sin 41^\\circ 18'$.",
+    "options": [
+      {
+        "text": "$0.6600$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.6812$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.6455$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.7392$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$41^\\circ 18' = 41 + \\frac{18}{60} = 41.3^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $sin 41^\\circ 18'$ (which is equal to $41.3^\\circ$):\n$$\\text{Value} \\approx 0.6600$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $sin 6^\\circ 40'$.",
+    "options": [
+      {
+        "text": "$0.1161$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.1373$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.1016$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.1300$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$6^\\circ 40' = 6 + \\frac{40}{60} \\approx 6.6667^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $sin 6^\\circ 40'$ (which is equal to $6.6667^\\circ$):\n$$\\text{Value} \\approx 0.1161$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $sin 12'$.",
+    "options": [
+      {
+        "text": "$0.0035$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0247$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-0.0110$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0039$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$12' = \\frac{12}{60} = 0.2^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $sin 12'$ (which is equal to $0.2^\\circ$):\n$$\\text{Value} \\approx 0.0035$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find, correct to four decimal places, the value of $tan 48'$.",
+    "options": [
+      {
+        "text": "$0.0140$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0352$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$-0.0005$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0.0157$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert minutes to decimal degrees**\n$$48' = \\frac{48}{60} = 0.8^\\circ$$\n\n**Step 2: Calculate the value on your calculator**\nFor $tan 48'$ (which is equal to $0.8^\\circ$):\n$$\\text{Value} \\approx 0.0140$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\tan \\theta = 3.5$.",
+    "options": [
+      {
+        "text": "$74^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$78^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$69^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$16^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\tan \\theta = 3.5$, then:\n$$\\theta = \\tan^{-1}(3.5) \\approx 74.054^\\circ \\implies 74^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\cos \\theta = 0.65$.",
+    "options": [
+      {
+        "text": "$49^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$53^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$44^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$41^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\cos \\theta = 0.65$, then:\n$$\\theta = \\cos^{-1}(0.65) \\approx 49.458^\\circ \\implies 49^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\sin \\theta = \\frac{2}{7}$.",
+    "options": [
+      {
+        "text": "$17^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$21^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$12^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$73^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\sin \\theta = \\frac{2}{7}$, then:\n$$\\theta = \\sin^{-1}(2/7) \\approx 16.601^\\circ \\implies 17^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\sin \\theta = 0.584$.",
+    "options": [
+      {
+        "text": "$36^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$40^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$31^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$54^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\sin \\theta = 0.584$, then:\n$$\\theta = \\sin^{-1}(0.584) \\approx 35.731^\\circ \\implies 36^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\cos \\theta = 1.8$.",
+    "options": [
+      {
+        "text": "No real solution",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$90^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$45^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\cos \\theta = 1.8$, then:\n$$\\text{Since the range of } \\cos\\theta \\text{ is } [-1, 1], \\cos\\theta = 1.8 \\text{ has no real solution.}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\cos \\theta = \\frac{5}{8}$.",
+    "options": [
+      {
+        "text": "$51^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$55^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$46^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$39^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\cos \\theta = \\frac{5}{8}$, then:\n$$\\theta = \\cos^{-1}(0.625) \\approx 51.317^\\circ \\implies 51^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\tan \\theta = 2\\frac{1}{4}$.",
+    "options": [
+      {
+        "text": "$66^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$70^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$61^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$24^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\tan \\theta = 2\\frac{1}{4}$, then:\n$$\\theta = \\tan^{-1}(2.25) \\approx 66.037^\\circ \\implies 66^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the acute angle $\\theta$ to the nearest degree if $\\sin \\theta = 1.35$.",
+    "options": [
+      {
+        "text": "No real solution",
+        "imageUrl": ""
+      },
+      {
+        "text": "$0^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$90^\\circ$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$45^\\circ$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Isolate the angle using inverse trigonometric functions**\nIf $\\sin \\theta = 1.35$, then:\n$$\\text{Since } \\sin\\theta \\text{ cannot exceed } 1, \\sin\\theta = 1.35 \\text{ has no real solution.}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find the acute angle $\\alpha$, correct to the nearest minute, if $\\cos \\alpha = \\frac{4}{5}$.",
+    "options": [
+      {
+        "text": "$36^\\circ 52'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$36^\\circ 12'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$36^\\circ 42'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$54^\\circ 30'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Compute inverse trigonometric function in decimal degrees**\n$$\\alpha = \\cos^{-1}(0.8) \\approx 36.8699^\\circ$$\n\n**Step 2: Convert the decimal part to minutes by multiplying by 60**\n$$0.8699 \\times 60 = 52.19' \\implies 36^\\circ 52'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find the acute angle $\\alpha$, correct to the nearest minute, if $\\tan \\alpha = 1.5$.",
+    "options": [
+      {
+        "text": "$56^\\circ 19'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$56^\\circ 12'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$56^\\circ 42'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$34^\\circ 30'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Compute inverse trigonometric function in decimal degrees**\n$$\\alpha = \\tan^{-1}(1.5) \\approx 56.3099^\\circ$$\n\n**Step 2: Convert the decimal part to minutes by multiplying by 60**\n$$0.3099 \\times 60 = 18.59' \\implies 56^\\circ 19'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find the acute angle $\\alpha$, correct to the nearest minute, if $\\sin \\alpha = 0.25$.",
+    "options": [
+      {
+        "text": "$14^\\circ 29'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$14^\\circ 12'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$14^\\circ 42'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$76^\\circ 30'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Compute inverse trigonometric function in decimal degrees**\n$$\\alpha = \\sin^{-1}(0.25) \\approx 14.4775^\\circ$$\n\n**Step 2: Convert the decimal part to minutes by multiplying by 60**\n$$0.4775 \\times 60 = 28.65' \\implies 14^\\circ 29'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find the acute angle $\\alpha$, correct to the nearest minute, if $\\tan \\alpha = 0.45$.",
+    "options": [
+      {
+        "text": "$24^\\circ 14'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$24^\\circ 12'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$24^\\circ 42'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$66^\\circ 30'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Compute inverse trigonometric function in decimal degrees**\n$$\\alpha = \\tan^{-1}(0.45) \\approx 24.2277^\\circ$$\n\n**Step 2: Convert the decimal part to minutes by multiplying by 60**\n$$0.2277 \\times 60 = 13.66' \\implies 24^\\circ 14'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find the acute angle $\\alpha$, correct to the nearest minute, if $\\sin \\alpha = 0.6842$.",
+    "options": [
+      {
+        "text": "$43^\\circ 11'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$43^\\circ 12'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$43^\\circ 42'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$47^\\circ 30'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Compute inverse trigonometric function in decimal degrees**\n$$\\alpha = \\sin^{-1}(0.6842) \\approx 43.1751^\\circ$$\n\n**Step 2: Convert the decimal part to minutes by multiplying by 60**\n$$0.1751 \\times 60 = 10.50' \\implies 43^\\circ 11'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Use your calculator to find the acute angle $\\alpha$, correct to the nearest minute, if $\\cos \\alpha = \\frac{5}{12}$.",
+    "options": [
+      {
+        "text": "$65^\\circ 23'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$65^\\circ 12'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$65^\\circ 42'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$25^\\circ 30'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Compute inverse trigonometric function in decimal degrees**\n$$\\alpha = \\cos^{-1}(5/12) \\approx 65.3757^\\circ$$\n\n**Step 2: Convert the decimal part to minutes by multiplying by 60**\n$$0.3757 \\times 60 = 22.54' \\implies 65^\\circ 23'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find, correct to the nearest whole number, the value of the side marked with $a$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">25</text>\n  <text x=\"205\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">a</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"90\" y=\"122\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">35°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$14$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$20$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$12$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$16$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify sides and angle**\n- **Angle** $= 35^\\circ$\n- **Opposite side** $= a$\n- **Hypotenuse** $= 25$\n\n**Step 2: Write down the trigonometric equation**\n$$\\sin 35^\\circ = \\frac{a}{25}$$\n\n**Step 3: Solve for $a$**\n$$a = 25 \\times \\sin 35^\\circ$$\n$$a \\approx 25 \\times 0.573576 = 14.339$$\n\n**Step 4: Round to the nearest whole number**\n$$a \\approx 14$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find, correct to the nearest whole number, the value of the side marked with $b$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 50 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 50 118 L 62 118 L 62 130\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"130\" y=\"65\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">30</text>\n  <text x=\"120\" y=\"150\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">b</text>\n  <path d=\"M 160 130 A 30 30 0 0 0 170 108\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"135\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">42°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$22$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$20$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$24$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$18$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify sides and angle**\n- **Angle** $= 42^\\circ$\n- **Adjacent side** $= b$\n- **Hypotenuse** $= 30$\n\n**Step 2: Select the cosine ratio**\n$$\\cos 42^\\circ = \\frac{b}{30}$$\n\n**Step 3: Solve for $b$**\n$$b = 30 \\times \\cos 42^\\circ$$\n$$b \\approx 30 \\times 0.7431448 = 22.294$$\n\n**Step 4: Round to the nearest whole number**\n$$b \\approx 22$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find, correct to the nearest whole number, the value of the side marked with $c$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 30 L 190 30 L 50 130 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 50 42 L 62 42 L 62 30\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"20\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">50</text>\n  <text x=\"32\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">c</text>\n  <path d=\"M 160 30 A 30 30 0 0 1 170 42\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"135\" y=\"48\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">25°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$23$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$21$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$25$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$45$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the given dimensions relative to $25^\\circ$**\n- **Adjacent side** $= 50$\n- **Opposite side** $= c$\n\n**Step 2: Choose the tangent ratio**\n$$\\tan 25^\\circ = \\frac{c}{50}$$\n\n**Step 3: Solve for $c$**\n$$c = 50 \\times \\tan 25^\\circ$$\n$$c \\approx 50 \\times 0.4663076 = 23.315$$\n\n**Step 4: Round to the nearest whole number**\n$$c \\approx 23$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find, correct to the nearest whole number, the value of the side marked with $d$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 140 L 190 140 L 50 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 50 52 L 62 52 L 62 40\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"80\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">d</text>\n  <text x=\"120\" y=\"160\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">120</text>\n  <path d=\"M 70 140 A 20 20 0 0 1 61 123\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"125\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">58°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$64$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$102$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$58$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$68$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Analyze the sides relative to the $58^\\circ$ angle**\n- **Hypotenuse** $= 120$\n- **Adjacent side** $= d$\n\n**Step 2: Apply the cosine ratio**\n$$\\cos 58^\\circ = \\frac{d}{120}$$\n\n**Step 3: Solve for $d$**\n$$d = 120 \\times \\cos 58^\\circ$$\n$$d \\approx 120 \\times 0.529919 = 63.590$$\n\n**Step 4: Round to the nearest integer**\n$$d \\approx 64$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\alpha$, correct to the nearest degree, in the right triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 140 L 180 140 L 60 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 60 128 L 72 128 L 72 140\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"40\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <text x=\"130\" y=\"75\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <path d=\"M 150 140 A 30 30 0 0 0 162 121\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"135\" y=\"132\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n</svg>",
+    "options": [
+      {
+        "text": "$37°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$53°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$36°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$35°$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify given sides relative to angle $\\alpha$**\n- **Adjacent side** $= 12$\n- **Hypotenuse** $= 15$\n\n**Step 2: Choose the cosine ratio**\n$$\\cos \\alpha = \\frac{12}{15} = 0.8$$\n\n**Step 3: Solve for $\\alpha$**\n$$\\alpha = \\cos^{-1}(0.8) \\approx 36.869897^\\circ$$\n\n**Step 4: Round to the nearest degree**\n$$\\alpha \\approx 37^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\beta$, correct to the nearest degree, in the right-angled triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 140 L 180 140 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 129 55 L 114 64\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"80\" y=\"80\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">7</text>\n  <text x=\"160\" y=\"80\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">9</text>\n  <path d=\"M 80 140 A 25 25 0 0 0 98 124\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"94\" y=\"132\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$51°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$39°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$50°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$52°$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify given sides relative to angle $\\beta$**\n- **Opposite side** $= 7$\n- **Hypotenuse** $= 9$\n\n**Step 2: Choose the sine ratio**\n$$\\sin \\beta = \\frac{7}{9}$$\n\n**Step 3: Solve for $\\beta$**\n$$\\beta = \\sin^{-1}\\left(\\frac{7}{9}\\right) \\approx 51.057^\\circ$$\n\n**Step 4: Round to the nearest degree**\n$$\\beta \\approx 51^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\gamma$, correct to the nearest degree, in the right triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 140 L 190 140 L 190 60 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 140 L 178 128 L 190 128\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"160\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">13</text>\n  <text x=\"205\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">5</text>\n  <path d=\"M 80 140 A 30 30 0 0 0 74 121\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"92\" y=\"132\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">γ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$21°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$23°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$69°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$20°$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify given sides relative to angle $\\gamma$**\n- **Opposite side** $= 5$\n- **Adjacent side** $= 13$\n\n**Step 2: Choose the tangent ratio**\n$$\\tan \\gamma = \\frac{5}{13}$$\n\n**Step 3: Solve for $\\gamma$**\n$$\\gamma = \\tan^{-1}\\left(\\frac{5}{13}\\right) \\approx 21.037^\\circ$$\n\n**Step 4: Round to the nearest degree**\n$$\\gamma \\approx 21^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\delta$, correct to the nearest degree, in the right triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 140 L 190 140 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 140 L 178 128 L 190 128\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"160\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">18</text>\n  <text x=\"205\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">11</text>\n  <path d=\"M 190 70 A 30 30 0 0 1 168 59\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"175\" y=\"80\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">δ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$59°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$31°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$60°$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$58°$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify given sides relative to the top angle $\\delta$**\n- **Opposite side** $= 18$\n- **Adjacent side** $= 11$\n\n**Step 2: Choose the tangent ratio**\n$$\\tan \\delta = \\frac{18}{11}$$\n\n**Step 3: Solve for $\\delta$**\n$$\\delta = \\tan^{-1}\\left(\\frac{18}{11}\\right) \\approx 58.57^\\circ$$\n\n**Step 4: Round up to the nearest degree**\n$$\\delta \\approx 59^\\circ$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, find the value of $\\sin \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">17</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 60 A 30 30 0 0 1 156 49\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"75\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{8}{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{15}{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{8}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the definitions of trigonometric ratios**\n$$\\sin \\alpha = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$$\n\n**Step 2: Read the sides from the triangle relative to $\\alpha$**\n- **Opposite side** $= 8$\n- **Hypotenuse** $= 17$\n\n**Step 3: Substitute the values into the formula**\n$$\\sin \\alpha = \\frac{8}{17}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, find the value of $\\tan \\beta$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">17</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 60 A 30 30 0 0 1 156 49\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"75\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{15}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{15}{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{8}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the definition of tangent ratio**\n$$\\tan \\beta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$$\n\n**Step 2: Identify the sides relative to $\\beta$ (the angle at the top)**\n- **Opposite side** (bottom side) $= 15$\n- **Adjacent side** (vertical side) $= 8$\n\n**Step 3: Substitute the values into the ratio**\n$$\\tan \\beta = \\frac{15}{8}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, find the value of $\\sec \\beta$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">17</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 60 A 30 30 0 0 1 156 49\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"75\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{17}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{15}{17}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the secant ratio**\n$$\\sec \\beta = \\frac{1}{\\cos \\beta} = \\frac{\\text{Hypotenuse}}{\\text{Adjacent}}$$\n\n**Step 2: Read the sides relative to angle $\\beta$**\n- **Hypotenuse** $= 17$\n- **Adjacent side** $= 8$\n\n**Step 3: Substitute these values into the ratio**\n$$\\sec \\beta = \\frac{17}{8}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, find the value of $\\cot \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">17</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 60 A 30 30 0 0 1 156 49\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"75\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{15}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{15}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the cotangent ratio**\n$$\\cot \\alpha = \\frac{1}{\\tan \\alpha} = \\frac{\\text{Adjacent}}{\\text{Opposite}}$$\n\n**Step 2: Identify the sides relative to angle $\\alpha$**\n- **Adjacent side** $= 15$\n- **Opposite side** $= 8$\n\n**Step 3: Substitute these values into the ratio**\n$$\\cot \\alpha = \\frac{15}{8}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, find the value of $\\csc \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">17</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 60 A 30 30 0 0 1 156 49\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"75\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{17}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{15}{8}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the cosecant ratio**\n$$\\csc \\alpha = \\frac{1}{\\sin \\alpha} = \\frac{\\text{Hypotenuse}}{\\text{Opposite}}$$\n\n**Step 2: Identify the sides relative to angle $\\alpha$**\n- **Hypotenuse** $= 17$\n- **Opposite side** $= 8$\n\n**Step 3: Calculate the ratio**\n$$\\csc \\alpha = \\frac{17}{8}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the right-angled triangle shown below, find the value of $\\sec \\alpha$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 60 160 L 180 160 L 180 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 168 160 L 168 148 L 180 148\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">17</text>\n  <text x=\"120\" y=\"185\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15</text>\n  <text x=\"195\" y=\"100\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 90 160 A 30 30 0 0 0 84 141\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"152\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">α</text>\n  <path d=\"M 180 60 A 30 30 0 0 1 156 49\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"162\" y=\"75\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">β</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{17}{15}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{17}{8}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{15}{17}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{8}{17}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the secant ratio**\n$$\\sec \\alpha = \\frac{1}{\\cos \\alpha} = \\frac{\\text{Hypotenuse}}{\\text{Adjacent}}$$\n\n**Step 2: Identify the sides relative to angle $\\alpha$**\n- **Hypotenuse** $= 17$\n- **Adjacent side** $= 15$\n\n**Step 3: Substitute the values into the formula**\n$$\\sec \\alpha = \\frac{17}{15}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "In the diagram below, a vertical height of $12$ divides the base of length $14$ into two segments $a$ and $b$. Find the values of $a$ and $b$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$a = 5,\\, b = 9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$a = 6,\\, b = 8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$a = 4,\\, b = 10$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$a = 7,\\, b = 7$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Solve for the segment $a$ using Pythagoras' Theorem in the left right-angled triangle**\nThe left triangle has hypotenuse $13$ and height $12$.\n$$a^2 + 12^2 = 13^2$$\n$$a^2 + 144 = 169$$\n$$a^2 = 169 - 144 = 25 \\implies a = 5$$\n\n**Step 2: Solve for $b$ using the total base length**\nThe total base is $14$. Since $a + b = 14$ and $a = 5$:\n$$5 + b = 14$$\n$$b = 14 - 5 = 9$$\n\n**Step 3: Double-check with Pythagoras in the right triangle**\n$$b^2 + 12^2 = 9^2 + 12^2 = 81 + 144 = 225 = 15^2$$ (Matches the hypotenuse of $15$!)\n\n**Result:**\n$$a = 5,\\, b = 9$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the diagram below, find the exact value of $\\cos y$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{4}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{3}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{3}{4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{15}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Solve for $b$ first**\nUsing Pythagoras' Theorem in the right triangle with height $12$ and hypotenuse $15$:\n$$b^2 + 12^2 = 15^2$$\n$$b^2 + 144 = 225$$\n$$b^2 = 81 \\implies b = 9$$\n\n**Step 2: Find $\\cos y$ in the right triangle**\nThe angle $y$ is at the top vertex of the right triangle.\n- **Adjacent side** to $y$ is the height $= 12$.\n- **Hypotenuse** is $= 15$.\n$$\\cos y = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{12}{15}$$\n\n**Step 3: Simplify the fraction**\n$$\\cos y = \\frac{12 \\div 3}{15 \\div 3} = \\frac{4}{5}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the diagram below, find the exact value of $\\sin x$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Solve for $a$ using Pythagoras' Theorem in the left triangle**\n$$a^2 + 12^2 = 13^2 \\implies a^2 + 144 = 169 \\implies a^2 = 25 \\implies a = 5$$\n\n**Step 2: Identify $\\sin x$ for angle $x$ at the top vertex**\n- **Opposite side** (bottom side) to angle $x$ $= a = 5$.\n- **Hypotenuse** $= 13$.\n\n**Step 3: Write down the ratio**\n$$\\sin x = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{5}{13}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the diagram below, find the exact value of $\\cot x$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{12}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{13}{5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Find the value of base segment $a$**\n$$a = \\sqrt{13^2 - 12^2} = \\sqrt{169 - 144} = 5$$\n\n**Step 2: Apply the cotangent definition relative to angle $x$ at the top vertex**\n$$\\cot x = \\frac{1}{\\tan x} = \\frac{\\text{Adjacent}}{\\text{Opposite}}$$\n- **Adjacent side** $= 12$\n- **Opposite side** $= a = 5$\n\n**Step 3: Formulate the ratio**\n$$\\cot x = \\frac{12}{5}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the diagram below, find the exact value of $\\csc y$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{5}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{3}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{4}{5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Solve for base segment $b$ in the right-hand triangle**\n$$b = \\sqrt{15^2 - 12^2} = \\sqrt{225 - 144} = 9$$\n\n**Step 2: Recall the definition of cosecant relative to angle $y$ at the top**\n$$\\csc y = \\frac{1}{\\sin y} = \\frac{\\text{Hypotenuse}}{\\text{Opposite}}$$\n- **Hypotenuse** $= 15$\n- **Opposite side** $= b = 9$\n\n**Step 3: Compute and simplify the ratio**\n$$\\csc y = \\frac{15}{9} = \\frac{5}{3}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the diagram below, find the exact value of $\\sec x$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{13}{12}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{13}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{12}{13}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{13}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Find segment $a$ in the left-hand triangle**\n$$a = \\sqrt{13^2 - 12^2} = 5$$\n\n**Step 2: Apply the secant definition relative to angle $x$ at the top**\n$$\\sec x = \\frac{1}{\\cos x} = \\frac{\\text{Hypotenuse}}{\\text{Adjacent}}$$\n- **Hypotenuse** $= 13$\n- **Adjacent side** $= 12$\n\n**Step 3: Construct the exact value**\n$$\\sec x = \\frac{13}{12}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "From the diagram below, find the exact value of $\\cot y$.<br/><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 150 L 240 150 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 150\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 150 L 108 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <path d=\"M 132 150 L 132 138 L 120 138\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"75\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">13</text>\n  <text x=\"185\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15</text>\n  <text x=\"135\" y=\"105\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">12</text>\n  <text x=\"80\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">a</text>\n  <text x=\"180\" y=\"170\" fill=\"#fbbf24\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">b</text>\n  <path d=\"M 120 60 A 20 20 0 0 0 102 54\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <text x=\"96\" y=\"78\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">x</text>\n  <path d=\"M 120 60 A 20 20 0 0 1 138 54\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"78\" fill=\"#a78bfa\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">y</text>\n  \n  <line x1=\"40\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"140\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n</svg>",
+    "options": [
+      {
+        "text": "$\\frac{4}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{3}{4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{5}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{3}{5}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Solve for base segment $b$ in the right-hand triangle**\n$$b = \\sqrt{15^2 - 12^2} = 9$$\n\n**Step 2: Apply the cotangent definition relative to angle $y$ at the top**\n$$\\cot y = \\frac{1}{\\tan y} = \\frac{\\text{Adjacent}}{\\text{Opposite}}$$\n- **Adjacent side** $= 12$\n- **Opposite side** $= b = 9$\n\n**Step 3: Construct and simplify the ratio**\n$$\\cot y = \\frac{12}{9} = \\frac{4}{3}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write down the exact value of $\\sin 45^\\circ$.",
+    "options": [
+      {
+        "text": "$\\frac{1}{\\sqrt{2}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{2}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the standard isosceles right-angled triangle ($45^\\circ - 45^\\circ - 90^\\circ$)**\n- Side lengths are in the ratio $1 : 1 : \\sqrt{2}$.\n\n**Step 2: Formulate the sine ratio for $45^\\circ$**\n$$\\sin 45^\\circ = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{1}{\\sqrt{2}}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write down the exact value of $\\cos 30^\\circ$.",
+    "options": [
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{\\sqrt{3}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{3}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the standard right-angled triangle ($30^\\circ - 60^\\circ - 90^\\circ$)**\n- Side lengths relative to $30^\\circ$ are: Opposite $= 1$, Adjacent $= \\sqrt{3}$, Hypotenuse $= 2$.\n\n**Step 2: Formulate the cosine ratio for $30^\\circ$**\n$$\\cos 30^\\circ = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{\\sqrt{3}}{2}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write down the exact value of $\\tan 60^\\circ$.",
+    "options": [
+      {
+        "text": "$\\sqrt{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{\\sqrt{3}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the standard $30^\\circ - 60^\\circ - 90^\\circ$ triangle**\n- Side lengths relative to $60^\\circ$ are: Opposite $= \\sqrt{3}$, Adjacent $= 1$, Hypotenuse $= 2$.\n\n**Step 2: Formulate the tangent ratio for $60^\\circ$**\n$$\\tan 60^\\circ = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{\\sqrt{3}}{1} = \\sqrt{3}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write down the exact value of $\\sec 45^\\circ$.",
+    "options": [
+      {
+        "text": "$\\sqrt{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{\\sqrt{2}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{2}{\\sqrt{3}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the secant ratio**\n$$\\sec 45^\\circ = \\frac{1}{\\cos 45^\\circ}$$\n\n**Step 2: Substitute the exact value of $\\cos 45^\\circ = \\frac{1}{\\sqrt{2}}$**\n$$\\sec 45^\\circ = \\frac{1}{1/\\sqrt{2}} = \\sqrt{2}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write down the exact value of $\\csc 60^\\circ$.",
+    "options": [
+      {
+        "text": "$\\frac{2}{\\sqrt{3}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{\\sqrt{3}}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{2}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the cosecant ratio**\n$$\\csc 60^\\circ = \\frac{1}{\\sin 60^\\circ}$$\n\n**Step 2: Substitute the exact value of $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$**\n$$\\csc 60^\\circ = \\frac{1}{\\sqrt{3}/2} = \\frac{2}{\\sqrt{3}}$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write down the exact value of $\\cot 45^\\circ$.",
+    "options": [
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\frac{1}{\\sqrt{3}}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$\\sqrt{2}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the definition of the cotangent ratio**\n$$\\cot 45^\\circ = \\frac{1}{\\tan 45^\\circ}$$\n\n**Step 2: Substitute the exact value of $\\tan 45^\\circ = 1$**\n$$\\cot 45^\\circ = \\frac{1}{1} = 1$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to one decimal place, the length of the side marked with $x$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">18</text>\n  <text x=\"210\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">x</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"90\" y=\"122\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">35°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$10.3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$12.6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$14.7$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$9.8$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the given side and the angle**\n- **Angle** $= 35^\\circ$\n- **Hypotenuse** $= 18$\n- **Opposite side** $= x$\n\n**Step 2: Choose the correct trigonometric ratio**\n$$\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$$\n$$\\sin 35^\\circ = \\frac{x}{18}$$\n\n**Step 3: Solve for $x$ and evaluate**\n$$x = 18 \\times \\sin 35^\\circ$$\n$$x \\approx 18 \\times 0.573576 = 10.324$$\n\n**Step 4: Round to one decimal place**\n$$x \\approx 10.3$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to one decimal place, the length of the side marked with $y$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 50 20 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 50 118 L 62 118 L 62 130\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"130\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">y</text>\n  <text x=\"32\" y=\"80\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n  <path d=\"M 160 130 A 30 30 0 0 0 170 108\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"135\" y=\"120\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">52°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$22.7$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$17.8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$24.1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$11.0$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Analyze the triangle relative to the $52^\\circ$ angle**\n- **Angle** $= 52^\\circ$\n- **Adjacent side** $= 14$\n- **Hypotenuse** $= y$\n\n**Step 2: Set up the cosine ratio**\n$$\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$$\n$$\\cos 52^\\circ = \\frac{14}{y}$$\n\n**Step 3: Solve for $y$**\n$$y = \\frac{14}{\\cos 52^\\circ}$$\n$$y \\approx \\frac{14}{0.61566} = 22.739$$\n\n**Step 4: Round to one decimal place**\n$$y \\approx 22.7$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to one decimal place, the length of the side marked with $z$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 40 L 190 40 L 50 130 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 50 52 L 62 52 L 62 40\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"28\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">z</text>\n  <text x=\"32\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <path d=\"M 160 40 A 30 30 0 0 1 170 52\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"135\" y=\"58\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">22°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$19.8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$21.4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$3.2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$18.5$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Analyze the triangle relative to the $22^\\circ$ angle**\n- **Angle** $= 22^\\circ$\n- **Opposite side** $= 8$\n- **Adjacent side** $= z$\n\n**Step 2: Set up the tangent ratio**\n$$\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$$\n$$\\tan 22^\\circ = \\frac{8}{z}$$\n\n**Step 3: Solve for $z$**\n$$z = \\frac{8}{\\tan 22^\\circ}$$\n$$z \\approx \\frac{8}{0.404026} = 19.80$$\n\n**Step 4: Round to one decimal place**\n$$z \\approx 19.8$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to one decimal place, the length of the side marked with $w$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">25</text>\n  <text x=\"120\" y=\"150\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">w</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"90\" y=\"122\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">68°</text>\n</svg>",
+    "options": [
+      {
+        "text": "$9.4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$23.2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$10.1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$8.8$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Analyze the triangle relative to the $68^\\circ$ angle**\n- **Angle** $= 68^\\circ$\n- **Hypotenuse** $= 25$\n- **Adjacent side** $= w$\n\n**Step 2: Set up the cosine ratio**\n$$\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$$\n$$\\cos 68^\\circ = \\frac{w}{25}$$\n\n**Step 3: Solve for $w$**\n$$w = 25 \\times \\cos 68^\\circ$$\n$$w \\approx 25 \\times 0.374606 = 9.365$$\n\n**Step 4: Round to one decimal place**\n$$w \\approx 9.4$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to two decimal places, the length of the side marked with $a$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">a</text>\n  <text x=\"210\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"82\" y=\"122\" fill=\"#fbbf24\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">48°15'</text>\n</svg>",
+    "options": [
+      {
+        "text": "$16.08$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$14.22$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$17.15$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$15.98$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert DMS to Decimal Degrees**\n$$48^\\circ 15' = 48 + \\frac{15}{60} = 48.25^\\circ$$\n\n**Step 2: Identify the trigonometric ratio**\n$$\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$$\n$$\\sin 48.25^\\circ = \\frac{12}{a}$$\n\n**Step 3: Solve for $a$**\n$$a = \\frac{12}{\\sin 48.25^\\circ}$$\n$$a \\approx \\frac{12}{0.746057} = 16.0845$$\n\n**Step 4: Round to two decimal places**\n$$a \\approx 16.08$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to two decimal places, the length of the side marked with $b$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"150\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15.5</text>\n  <text x=\"210\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">b</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"82\" y=\"122\" fill=\"#fbbf24\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">72°30'</text>\n</svg>",
+    "options": [
+      {
+        "text": "$49.17$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$47.24$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$51.05$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$45.89$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert DMS to Decimal Degrees**\n$$72^\\circ 30' = 72 + \\frac{30}{60} = 72.5^\\circ$$\n\n**Step 2: Identify the trigonometric ratio**\n$$\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$$\n$$\\tan 72.5^\\circ = \\frac{b}{15.5}$$\n\n**Step 3: Solve for $b$**\n$$b = 15.5 \\times \\tan 72.5^\\circ$$\n$$b \\approx 15.5 \\times 3.17159 = 49.1597$$\n\n**Step 4: Round to two decimal places**\n$$b \\approx 49.17$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to two decimal places, the length of the side marked with $c$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 50 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 50 118 L 62 118 L 62 130\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"130\" y=\"75\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">38.6</text>\n  <text x=\"120\" y=\"150\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">c</text>\n  <path d=\"M 160 130 A 30 30 0 0 0 170 108\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"132\" y=\"120\" fill=\"#fbbf24\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">15°45'</text>\n</svg>",
+    "options": [
+      {
+        "text": "$37.15$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$36.21$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$38.10$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$35.95$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert DMS to Decimal Degrees**\n$$15^\\circ 45' = 15 + \\frac{45}{60} = 15.75^\\circ$$\n\n**Step 2: Identify the trigonometric ratio**\n$$\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$$\n$$\\cos 15.75^\\circ = \\frac{c}{38.6}$$\n\n**Step 3: Solve for $c$**\n$$c = 38.6 \\times \\cos 15.75^\\circ$$\n$$c \\approx 38.6 \\times 0.962455 = 37.1507$$\n\n**Step 4: Round to two decimal places**\n$$c \\approx 37.15$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find, correct to two decimal places, the length of the side marked with $d$ in the triangle below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">50.4</text>\n  <text x=\"210\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">d</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"82\" y=\"122\" fill=\"#fbbf24\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">24°12'</text>\n</svg>",
+    "options": [
+      {
+        "text": "$20.66$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$19.85$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$21.32$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$22.04$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert DMS to Decimal Degrees**\n$$24^\\circ 12' = 24 + \\frac{12}{60} = 24.2^\\circ$$\n\n**Step 2: Identify the trigonometric ratio**\n$$\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$$\n$$\\sin 24.2^\\circ = \\frac{d}{50.4}$$\n\n**Step 3: Solve for $d$**\n$$d = 50.4 \\times \\sin 24.2^\\circ$$\n$$d \\approx 50.4 \\times 0.409923 = 20.6601$$\n\n**Step 4: Round to two decimal places**\n$$d \\approx 20.66$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\theta$, correct to the nearest minute, in the diagram below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">12</text>\n  <text x=\"210\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">7</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"92\" y=\"122\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$35°41'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$35°40'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$54°19'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$36°00'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the given sides relative to $\\theta$**\n- **Opposite side** $= 7$\n- **Hypotenuse** $= 12$\n\n**Step 2: Set up the sine ratio**\n$$\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{7}{12}$$\n\n**Step 3: Solve for $\\theta$ in decimal degrees**\n$$\\theta = \\sin^{-1}\\left(\\frac{7}{12}\\right) \\approx 35.68533^\\circ$$\n\n**Step 4: Convert the decimal part to minutes**\n$$\\text{Minutes} = 0.68533 \\times 60 = 41.12'$$\n\n**Step 5: Round to the nearest minute**\n$$\\theta \\approx 35^\\circ 41'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\theta$, correct to the nearest minute, in the diagram below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"120\" y=\"150\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">15.2</text>\n  <text x=\"210\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">9.6</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"92\" y=\"122\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$32°17'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$32°18'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$57°43'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$30°15'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the given sides relative to $\\theta$**\n- **Opposite side** $= 9.6$\n- **Adjacent side** $= 15.2$\n\n**Step 2: Set up the tangent ratio**\n$$\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{9.6}{15.2}$$\n\n**Step 3: Solve for $\\theta$ in decimal degrees**\n$$\\theta = \\tan^{-1}\\left(\\frac{9.6}{15.2}\\right) \\approx 32.2756^\\circ$$\n\n**Step 4: Convert the decimal part to minutes**\n$$\\text{Minutes} = 0.2756 \\times 60 = 16.536'$$\n\n**Step 5: Round up to the nearest minute**\n$$\\theta \\approx 32^\\circ 17'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find the angle $\\theta$, correct to the nearest minute, in the diagram below.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 130 L 190 130 L 190 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 178 130 L 178 118 L 190 118\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"110\" y=\"70\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">16.8</text>\n  <text x=\"120\" y=\"150\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">11.4</text>\n  <path d=\"M 80 130 A 30 30 0 0 0 74 111\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"92\" y=\"122\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$47°16'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$47°15'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$42°44'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$48°02'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the given sides relative to $\\theta$**\n- **Adjacent side** $= 11.4$\n- **Hypotenuse** $= 16.8$\n\n**Step 2: Set up the cosine ratio**\n$$\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{11.4}{16.8}$$\n\n**Step 3: Solve for $\\theta$ in decimal degrees**\n$$\\theta = \\cos^{-1}\\left(\\frac{11.4}{16.8}\\right) \\approx 47.269^\\circ$$\n\n**Step 4: Convert the decimal part to minutes**\n$$\\text{Minutes} = 0.269 \\times 60 = 16.14'$$\n\n**Step 5: Round to the nearest minute**\n$$\\theta \\approx 47^\\circ 16'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find the base angle $\\theta$ of the symmetric isosceles triangle below, correct to the nearest minute.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 40 140 L 200 140 L 120 40 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <path d=\"M 120 40 L 120 140\" stroke=\"#60a5fa\" stroke-dasharray=\"4 4\" stroke-width=\"2\" />\n  <path d=\"M 108 140 L 108 128 L 120 128\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  <text x=\"135\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">18</text>\n  <path d=\"M 70 140 A 30 30 0 0 1 64 121\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"76\" y=\"132\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n  \n  <line x1=\"40\" y1=\"160\" x2=\"200\" y2=\"160\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <text x=\"120\" y=\"175\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">48</text>\n</svg>",
+    "options": [
+      {
+        "text": "$36°52'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$36°53'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$53°08'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$37°00'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Divide the isosceles triangle into two right-angled triangles**\nThe vertical altitude of $18$ splits the base of $48$ exactly in half:\n$$\\text{Half-Base} = \\frac{48}{2} = 24$$\n\n**Step 2: Focus on one of the right-angled triangles**\nRelative to the angle $\\theta$ at the base:\n- **Opposite side** (height) $= 18$\n- **Adjacent side** (half-base) $= 24$\n\n**Step 3: Set up the tangent ratio**\n$$\\tan \\theta = \\frac{18}{24} = 0.75$$\n\n**Step 4: Solve for $\\theta$**\n$$\\theta = \\tan^{-1}(0.75) \\approx 36.869897^\\circ$$\n$$\\text{Minutes} = 0.869897 \\times 60 = 52.19'$$\n\n**Step 5: Round to the nearest minute**\n$$\\theta \\approx 36^\\circ 52'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "A triangle is inscribed in a circle with a diameter of $8$ as shown. Find the angle $\\theta$, correct to the nearest minute.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <circle cx=\"120\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2.5\" />\n  <path d=\"M 40 100 L 200 100 L 72 150 Z\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <path d=\"M 68 136 L 82 131 L 86 145\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" />\n  \n  <text x=\"120\" y=\"90\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">8</text>\n  <text x=\"50\" y=\"130\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">5</text>\n  <path d=\"M 200 100 A 30 30 0 0 1 170 115\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"2.5\" />\n  <text x=\"162\" y=\"112\" fill=\"#34d399\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n  \n  <circle cx=\"120\" cy=\"100\" r=\"4\" fill=\"#ef4444\" />\n</svg>",
+    "options": [
+      {
+        "text": "$51°19'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$51°20'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$38°41'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$45°00'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply Circle Geometry theorems**\n- The angle subtended by a diameter in a semicircle is a **right angle ($90^\\circ$)**.\n- Thus, the triangle inscribed is a **right-angled triangle** with the diameter ($8$) as the hypotenuse.\n\n**Step 2: Focus on the right-angled triangle relative to $\\theta$**\n- **Hypotenuse** (diameter) $= 8$\n- **Adjacent side** to $\\theta$ $= 5$\n\n**Step 3: Select the cosine ratio**\n$$\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{5}{8} = 0.625$$\n\n**Step 4: Compute $\\theta$**\n$$\\theta = \\cos^{-1}(0.625) \\approx 51.3178^\\circ$$\n$$\\text{Minutes} = 0.3178 \\times 60 = 19.068'$$\n\n**Step 5: Round to the nearest minute**\n$$\\theta \\approx 51^\\circ 19'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Find the base angle $\\theta$ of the isosceles triangle below, correct to the nearest minute.<br/><svg width=\"240\" height=\"180\" viewBox=\"0 0 240 180\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <path d=\"M 50 140 L 190 140 L 120 30 Z\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <text x=\"75\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">20</text>\n  <text x=\"155\" y=\"85\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">20</text>\n  <text x=\"120\" y=\"160\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">14</text>\n  <path d=\"M 80 140 A 30 30 0 0 0 74 121\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"86\" y=\"132\" fill=\"#fbbf24\" font-size=\"15\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$69°31'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$69°30'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$20°29'$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$70°00'$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Form a right-angled triangle**\nBy dropping a vertical altitude from the top vertex, we bisect the base of length $14$ into two segments of:\n$$\\text{Half-Base} = \\frac{14}{2} = 7$$\n\n**Step 2: Focus on one half of the triangle**\nRelative to the base angle $\\theta$:\n- **Adjacent side** $= 7$\n- **Hypotenuse** (equal side) $= 20$\n\n**Step 3: Set up the cosine ratio**\n$$\\cos \\theta = \\frac{7}{20} = 0.35$$\n\n**Step 4: Solve for $\\theta$**\n$$\\theta = \\cos^{-1}(0.35) \\approx 69.51268^\\circ$$\n$$\\text{Minutes} = 0.51268 \\times 60 = 30.76'$$\n\n**Step 5: Round to the nearest minute**\n$$\\theta \\approx 69^\\circ 31'$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "In the unit circle diagram below (radius $1$), a tangent line is drawn from $T(1,0)$ up to $P$ where it meets the extended ray $OP$. Prove the relationship for the length of $TP$ and the length of $OP$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <circle cx=\"100\" cy=\"110\" r=\"70\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2\" />\n  <line x1=\"30\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"180\" stroke=\"#f8fafc\" stroke-width=\"1.5\" />\n  <line x1=\"100\" y1=\"110\" x2=\"154\" y2=\"65\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <line x1=\"154\" y1=\"65\" x2=\"154\" y2=\"110\" stroke=\"#a78bfa\" stroke-dasharray=\"3 3\" stroke-width=\"2\" />\n  <line x1=\"100\" y1=\"110\" x2=\"170\" y2=\"110\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <line x1=\"170\" y1=\"110\" x2=\"170\" y2=\"52\" stroke=\"#34d399\" stroke-width=\"2.5\" />\n  <line x1=\"100\" y1=\"110\" x2=\"170\" y2=\"52\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"90\" y=\"125\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">O</text>\n  <text x=\"175\" y=\"125\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">T</text>\n  <text x=\"175\" y=\"45\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">P</text>\n  <path d=\"M 120 110 A 20 20 0 0 0 116 97\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"122\" y=\"105\" fill=\"#fbbf24\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$TP = \\tan \\theta$ and $OP = \\sec \\theta$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$TP = \\sin \\theta$ and $OP = \\cos \\theta$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$TP = \\cot \\theta$ and $OP = \\csc \\theta$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$TP = \\sec \\theta$ and $OP = \\tan \\theta$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Proof\n\n**Step 1: Observe the right-angled triangle $\\triangle OTP$**\n- Since $PT$ is tangent to the circle at $T(1,0)$, the radius $OT$ is perpendicular to the tangent $PT$.\n- Therefore, $\\angle OTP = 90^\\circ$.\n\n**Step 2: Relate the sides of $\\triangle OTP$**\n- The radius $OT = 1$ (adjacent to $\\theta$).\n- The tangent segment $TP$ is the side opposite to $\\theta$.\n- The line segment $OP$ is the hypotenuse.\n\n**Step 3: Derive $TP = \\tan \\theta$**\n$$\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{TP}{OT} = \\frac{TP}{1} \\implies TP = \\tan \\theta$$\n\n**Step 4: Derive $OP = \\sec \\theta$**\n$$\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{OT}{OP} = \\frac{1}{OP} \\implies OP = \\frac{1}{\\cos \\theta} = \\sec \\theta$$\n\n**Result:**\n$$TP = \\tan \\theta \\text{ and } OP = \\sec \\theta$$"
+  },
+  {
+    "chapterId": "y11a-6",
+    "chapterTitle": "Chapter 6: Trigonometry",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-6A",
+    "topicCode": "6A",
+    "topicTitle": "Trigonometry with right-angled triangles",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "In a unit circle of radius $1$, a chord $AB$ subtends an angle of $2\\theta$ at the center $O$. If $OM$ is the perpendicular bisector of $AB$, show that the length of the semi-chord $AM$ is equal to $\\sin \\theta$.<br/><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" style=\"background:#0f172a; border-radius:12px; margin: 10px auto; display:block;\">\n  <circle cx=\"120\" cy=\"110\" r=\"70\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2\" />\n  <line x1=\"120\" y1=\"110\" x2=\"60\" y2=\"145\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <line x1=\"120\" y1=\"110\" x2=\"180\" y2=\"145\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <line x1=\"60\" y1=\"145\" x2=\"180\" y2=\"145\" stroke=\"#34d399\" stroke-width=\"2\" />\n  <line x1=\"120\" y1=\"110\" x2=\"120\" y2=\"145\" stroke=\"#ef4444\" stroke-dasharray=\"3 3\" stroke-width=\"2\" />\n  \n  <text x=\"120\" y=\"100\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">O</text>\n  <text x=\"50\" y=\"155\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">A</text>\n  <text x=\"185\" y=\"155\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">B</text>\n  <text x=\"120\" y=\"160\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"Outfit, sans-serif\" font-weight=\"600\" text-anchor=\"middle\">M</text>\n  \n  <path d=\"M 120 110 A 30 30 0 0 0 96 124\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"105\" y=\"130\" fill=\"#fbbf24\" font-size=\"13\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n  \n  <path d=\"M 120 110 A 30 30 0 0 1 144 124\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"2\" />\n  <text x=\"128\" y=\"130\" fill=\"#fbbf24\" font-size=\"13\" font-family=\"Outfit, sans-serif\" font-weight=\"600\">θ</text>\n</svg>",
+    "options": [
+      {
+        "text": "$AM = \\sin \\theta$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AM = \\cos \\theta$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AM = \\tan \\theta$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$AM = \\csc \\theta$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Proof\n\n**Step 1: Understand the symmetry of the construction**\n- $OM$ is drawn perpendicular to $AB$.\n- In the isosceles triangle $\\triangle OAB$ (since $OA = OB = 1$ are radii), the altitude $OM$ bisects the vertex angle $\\angle AOB = 2\\theta$.\n- Thus:\n$$\\angle AOM = \\angle BOM = \\theta$$\n\n**Step 2: Analyze the right-angled triangle $\\triangle OMA$**\n- The hypotenuse is the radius $OA = 1$.\n- The side opposite to the angle $\\angle AOM = \\theta$ is the semi-chord $AM$.\n\n**Step 3: Formulate the sine ratio**\n$$\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{AM}{OA}$$\n\n**Step 4: Substitute $OA = 1$**\n$$\\sin \\theta = \\frac{AM}{1} \\implies AM = \\sin \\theta$$\n\n**Result:**\n$$AM = \\sin \\theta$$"
+  }
+];
+
+export const importYear11AdvCh6 = async (forceReset = false) => {
+  console.log(`Starting unified sync of Y11 Adv Ch6A (Total ${questions6A.length})...` + '\n' + `Chapter: Trigonometry`);
+  try {
+    const qSnap = await getDocs(query(collection(db, 'questions'), 
+      where('chapterId', '==', 'y11a-6'),
+      where('topicCode', '==', '6A')
+    ));
+    
+    const batch = writeBatch(db);
+    qSnap.forEach(d => batch.delete(d.ref));
+    await batch.commit();
+    console.log(`Cleared ${qSnap.size} old questions under chapter y11a-6, topicCode 6A.`);
+
+    let count = 0;
+    for (const q of questions6A) {
+        await addDoc(collection(db, 'questions'), { 
+          ...q, 
+          createdAt: serverTimestamp(), 
+          updatedAt: serverTimestamp(), 
+          isActive: true 
+        });
+        count++;
+    }
+    console.log(`Successfully imported ${count} questions.`);
+    return count;
+  } catch (err) {
+    console.error('Import failed:', err);
+    throw err;
+  }
+};

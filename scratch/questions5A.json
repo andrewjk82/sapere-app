@@ -1,15 +1,4 @@
-import { db } from '../firebase/config';
-import { collection, addDoc, serverTimestamp, getDocs, query, where, writeBatch } from 'firebase/firestore';
-
-const chapterData = {
-  chapterId: 'y11a-5',
-  chapterTitle: 'Chapter 5: Transformations and symmetry',
-  year: 'Year 11',
-  course: 'Advanced',
-  isManual: true
-};
-
-export const questions5A = [
+[
   {
     "chapterId": "y11a-5",
     "chapterTitle": "Chapter 5: Transformations and symmetry",
@@ -373,35 +362,4 @@ export const questions5A = [
     "answer": "0",
     "solution": "Step 1: The equation is in the form $(x - h)^2 + (y - k)^2 = r^2$.\nStep 2: Identify $r^2 = 16$.\nStep 3: Take the square root: $r = \\sqrt{16} = 4$."
   }
-];
-
-export const importYear11AdvCh5 = async (forceReset = false) => {
-  console.log(`Starting restored sync of Y11 Adv Ch5A (Total ${questions5A.length})...\nChapter: Transformations and symmetry`);
-  try {
-    const qSnap = await getDocs(query(collection(db, 'questions'), 
-      where('chapterId', '==', 'y11a-5'),
-      where('topicCode', '==', '5A')
-    ));
-    
-    const batch = writeBatch(db);
-    qSnap.forEach(d => batch.delete(d.ref));
-    await batch.commit();
-    console.log(`Cleared ${qSnap.size} old questions under chapter y11a-5, topicCode 5A.`);
-
-    let count = 0;
-    for (const q of questions5A) {
-        await addDoc(collection(db, 'questions'), { 
-          ...q, 
-          createdAt: serverTimestamp(), 
-          updatedAt: serverTimestamp(), 
-          isActive: true 
-        });
-        count++;
-    }
-    console.log(`Successfully imported ${count} questions.`);
-    return count;
-  } catch (err) {
-    console.error('Import failed:', err);
-    throw err;
-  }
-};
+]

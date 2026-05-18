@@ -40,7 +40,7 @@ const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v3';
 const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 const ADMIN_TOOL_COUNT_IDS = [
-  'y11a-1', 'y11-1', 'y11a-2', 'y11-2', 'y11a-3', 'y11-3', 'y11a-4', 
+  'y11a-1', 'y11-1', 'y11a-2', 'y11-2', 'y11a-3', 'y11-3', 'y11a-4', 'y11a-5', 'y11a-6', 
   'y10-1', 'y10-3', 'y10-4', 
   'y9-1', 
   'y8-1', 
@@ -1035,6 +1035,20 @@ const Curriculum = () => {
       const { importYear11AdvCh5 } = await import('../scripts/importYear11AdvCh5');
       const count = await importYear11AdvCh5(forceReset);
       showToast(`Successfully synced ${count} questions for Y11 Adv Ch5!`, 'success');
+    } catch (err) {
+      showToast('Failed to sync: ' + err.message, 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSyncY11AdvCh6 = async (forceReset = false) => {
+    if (!window.confirm(forceReset ? 'This will RESET and sync Year 11 Adv Ch6 questions. Continue?' : 'Sync Year 11 Adv Ch6 questions?')) return;
+    setIsMigrating(true);
+    try {
+      const { importYear11AdvCh6 } = await import('../scripts/importYear11AdvCh6');
+      const count = await importYear11AdvCh6(forceReset);
+      showToast(`Successfully synced ${count} questions for Y11 Adv Ch6!`, 'success');
     } catch (err) {
       showToast('Failed to sync: ' + err.message, 'error');
     } finally {
@@ -2071,18 +2085,37 @@ const Curriculum = () => {
                         </div>
                       </div>
 
-                      {/* Year 11 Advanced Chapter 5 */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y11">Y11 ADV CH5</span>
-                          <span className="sync-card-title">Advanced Calculus (Ch5)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          <button onClick={() => handleSyncY11AdvCh5(false)} disabled={isMigrating} className="sync-btn primary">
-                            🔄 Sync
-                          </button>
-                        </div>
-                      </div>
+                       {/* Year 11 Advanced Chapter 5 */}
+                       <div className="sync-card">
+                         <div className="sync-card-info">
+                           <span className="sync-card-badge y11">Y11 ADV CH5</span>
+                           <span className="sync-card-title">Transformations & Symmetry (Ch5)</span>
+                         </div>
+                         <div className="sync-card-actions">
+                           <button onClick={() => handleSyncY11AdvCh5(false)} disabled={isMigrating} className="sync-btn primary">
+                             🔄 Sync
+                           </button>
+                           <button onClick={() => handleSyncY11AdvCh5(true)} disabled={isMigrating} className="sync-btn danger">
+                             🗑️ Reset & Sync
+                           </button>
+                         </div>
+                       </div>
+
+                       {/* Year 11 Advanced Chapter 6 */}
+                       <div className="sync-card">
+                         <div className="sync-card-info">
+                           <span className="sync-card-badge y11">Y11 ADV CH6</span>
+                           <span className="sync-card-title">Trigonometry (Ch6)</span>
+                         </div>
+                         <div className="sync-card-actions">
+                           <button onClick={() => handleSyncY11AdvCh6(false)} disabled={isMigrating} className="sync-btn primary">
+                             🔄 Sync
+                           </button>
+                           <button onClick={() => handleSyncY11AdvCh6(true)} disabled={isMigrating} className="sync-btn danger">
+                             🗑️ Reset & Sync
+                           </button>
+                         </div>
+                       </div>
                     </div>
                   )}
 
