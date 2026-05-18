@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.2-pen';
+const CANVAS_VERSION = 'v9.3-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -199,22 +199,26 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const isGraph = questionType === 'graph_sketch';
 
-  // ─── Cached drawing contexts (desynchronized → lower touch-to-pixel latency)
+  // ─── Cached drawing contexts ──────────────────────────────────────────────
+  // NOTE: `desynchronized: true` promotes each canvas to an opaque hardware
+  // overlay plane on some devices, which makes the stacked lower canvases
+  // render as a solid black rectangle (no alpha compositing). We keep alpha
+  // compositing instead so the white pad background shows through.
   const getBgCtx = () => {
     if (!bgCtxRef.current && bgCanvasRef.current) {
-      bgCtxRef.current = bgCanvasRef.current.getContext('2d', { desynchronized: true });
+      bgCtxRef.current = bgCanvasRef.current.getContext('2d', { alpha: true });
     }
     return bgCtxRef.current;
   };
   const getLiveCtx = () => {
     if (!liveCtxRef.current && liveCanvasRef.current) {
-      liveCtxRef.current = liveCanvasRef.current.getContext('2d', { desynchronized: true });
+      liveCtxRef.current = liveCanvasRef.current.getContext('2d', { alpha: true });
     }
     return liveCtxRef.current;
   };
   const getTipCtx = () => {
     if (!tipCtxRef.current && displayCanvasRef.current) {
-      tipCtxRef.current = displayCanvasRef.current.getContext('2d', { desynchronized: true });
+      tipCtxRef.current = displayCanvasRef.current.getContext('2d', { alpha: true });
     }
     return tipCtxRef.current;
   };
