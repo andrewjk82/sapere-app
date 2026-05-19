@@ -61,21 +61,8 @@ const toDisplayText = (value, fallback = '') => {
       // --- OUTSIDE MATH BLOCKS (Plain Text) ---
       let text = parts[i];
       
-      // Convert A / (B) into $\frac{A}{B}$ (Wrapped!)
-      text = text.replace(/([a-zA-Z0-9\.\,\\]+)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
-      text = text.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\\]+)/g, '$\\frac{$1}{$2}$');
-      text = text.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
-      
-      // Convert n/4 -> $\frac{n}{4}$
-      text = text.replace(/\b(\d*[a-zA-Z]+|\d+)\s*\/\s*(\d+)\b/g, (match, p1, p2) => {
-        if (p1.length <= 4 && p2.length <= 3 && !match.includes('/202') && !match.includes('/201')) {
-          return `$\\frac{${p1}}{${p2}}$`;
-        }
-        return match;
-      });
-
-      // Safely wrap naked LaTeX commands
-      // A simpler, non-recursive regex is safer against ReDoS
+      // Step A: Wrap naked LaTeX commands FIRST (before fraction conversion)
+      // so that \sqrt{3} becomes $\sqrt{3}$ as a single token.
       const nakedCommandRegex = /\\(sqrt|pi|theta|pm|approx|times|div|le|ge|frac|varphi|phi)(\{[^{}]*\})*/g;
       text = text.replace(nakedCommandRegex, (match) => {
         return `$${match}$`;
@@ -96,6 +83,30 @@ const toDisplayText = (value, fallback = '') => {
   }
   
   str = parts.join('');
+
+  // Step B: NOW do fraction conversion on the reassembled string.
+  // Re-tokenize so we only touch plain-text segments (not the $..$ blocks we just created).
+  const mathBlockRegex2 = /(\$\$[\s\S]*?\$\$|\$[^$]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
+  const parts2 = str.split(mathBlockRegex2);
+  for (let i = 0; i < parts2.length; i++) {
+    if (i % 2 === 0) {
+      let text = parts2[i];
+      // Convert (A) / (B) into $\frac{A}{B}$
+      text = text.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
+      text = text.replace(/([a-zA-Z0-9\.\,\\]+)\s*\/\s*\(([^()]+)\)/g, '$\\frac{$1}{$2}$');
+      text = text.replace(/\(([^()]+)\)\s*\/\s*([a-zA-Z0-9\.\,\\]+)/g, '$\\frac{$1}{$2}$');
+      
+      // Convert n/4 -> $\frac{n}{4}$
+      text = text.replace(/\b(\d*[a-zA-Z]+|\d+)\s*\/\s*(\d+)\b/g, (match, p1, p2) => {
+        if (p1.length <= 4 && p2.length <= 3 && !match.includes('/202') && !match.includes('/201')) {
+          return `$\\frac{${p1}}{${p2}}$`;
+        }
+        return match;
+      });
+      parts2[i] = text;
+    }
+  }
+  str = parts2.join('');
 
   // 5. Final cleanup: If entire string is equation
   if (!str.includes('$') && str.includes('=') && !/[a-zA-Z]{3,}/.test(str)) {
