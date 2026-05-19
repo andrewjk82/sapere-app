@@ -569,12 +569,14 @@ const secretNoteStyles = `
   .sn__progress-wrap { width: 100%; height: 4px; background: rgba(0,0,0,0.06); }
   .sn__progress { height: 100%; transition: width 0.4s ease; }
 
-  .sn__body { width: 100%; max-width: 620px; padding: 24px 18px 0; }
+  .sn__body { width: 100%; max-width: 620px; padding: 24px 18px 0; box-sizing: border-box; }
   /* Wider body when the solve layout shows the side working-out pad. */
-  .sn__body--wide { max-width: 1120px; }
-  .sn__solve-row { display: flex; gap: 20px; align-items: flex-start; width: 100%; }
-  .sn__solve-row .sn__card { flex: 1 1 560px; min-width: 0; }
-  .sn__solve-pad { flex: 1 1 480px; min-width: 0; }
+  .sn__body--wide { max-width: min(1540px, calc(100vw - 48px)); }
+  .sn__solve-row { display: flex; gap: 28px; align-items: stretch; width: 100%; }
+  /* In split view the right sketch pad is sticky/tall; let the question card
+     scroll on its own so the Submit button below the fold stays reachable. */
+  .sn__solve-row .sn__card { flex: 0 1 640px; max-width: 640px; min-width: 0; max-height: calc(100vh - 48px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .sn__solve-pad { flex: 1.45 1 720px; min-width: 520px; display: flex; }
   .sn__card {
     background: #fff; border-radius: 28px; padding: 28px;
     border: 1px solid #ece9f6; box-shadow: 0 20px 44px rgba(91,33,182,0.08);
@@ -710,6 +712,13 @@ const secretNoteStyles = `
   @media (max-width: 540px) {
     .sn__card { padding: 22px 18px; border-radius: 22px; }
     .sn__tags-row { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 1100px) {
+    .sn__body--wide { max-width: 760px; }
+    .sn__solve-row { flex-direction: column; }
+    .sn__solve-row .sn__card { max-width: none; width: 100%; }
+    .sn__solve-pad { min-width: 0; width: 100%; }
   }
 `;
 
