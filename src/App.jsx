@@ -8,15 +8,34 @@ import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
 // Route-level views are code-split so the main bundle only loads the
 // shell; each view is fetched on first navigation.
-const Dashboard = lazy(() => import('./components/Dashboard'));
-const StudentList = lazy(() => import('./components/StudentList'));
-const Schedule = lazy(() => import('./components/Schedule'));
-const Curriculum = lazy(() => import('./components/Curriculum'));
-const DailyChallenge = lazy(() => import('./components/DailyChallenge'));
-const Settings = lazy(() => import('./components/Settings'));
-const StudentDetail = lazy(() => import('./components/StudentDetail'));
-const ReportsAdmin = lazy(() => import('./components/ReportsAdmin'));
-const Library = lazy(() => import('./components/Library'));
+//
+// After a new deploy the hashed chunk filenames change. A browser still
+// running the old build will request a stale chunk; the server answers with
+// index.html (text/html), which fails as "not a valid JavaScript MIME type".
+// lazyWithReload detects that failed dynamic import and reloads the page once
+// to pick up the fresh build (guarded so it can never loop).
+const CHUNK_RELOAD_KEY = 'sapere:chunk-reload';
+const lazyWithReload = (importer) => lazy(() =>
+  importer()
+    .then((mod) => { sessionStorage.removeItem(CHUNK_RELOAD_KEY); return mod; })
+    .catch((err) => {
+      if (!sessionStorage.getItem(CHUNK_RELOAD_KEY)) {
+        sessionStorage.setItem(CHUNK_RELOAD_KEY, String(Date.now()));
+        window.location.reload();
+        return new Promise(() => {}); // never resolves — the page is reloading
+      }
+      throw err;
+    })
+);
+const Dashboard = lazyWithReload(() => import('./components/Dashboard'));
+const StudentList = lazyWithReload(() => import('./components/StudentList'));
+const Schedule = lazyWithReload(() => import('./components/Schedule'));
+const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
+const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
+const Settings = lazyWithReload(() => import('./components/Settings'));
+const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
+const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
+const Library = lazyWithReload(() => import('./components/Library'));
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
