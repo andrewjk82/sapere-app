@@ -55,6 +55,8 @@ import WeeklyProgressTrackers from "./studentDetail/WeeklyProgressTrackers";
 import ChallengeDetailModal from "./studentDetail/ChallengeDetailModal";
 import BasicCalculationPanel from "./studentDetail/BasicCalculationPanel";
 import DailyPracticeSettings from "./studentDetail/DailyPracticeSettings";
+import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
+import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import "./student-detail.css";
 
@@ -1463,138 +1465,14 @@ const StudentDetail = ({ studentId, onBack }) => {
 
             {/* ANALYTICS PANEL */}
             {studentAnalytics && (
-              <div style={{ background: "white", borderRadius: "24px", border: "1px solid #e2e8f0", padding: "24px", boxShadow: "0 4px 16px rgba(99,102,241,0.06)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
-                  <div style={{ width: "4px", height: "24px", background: "linear-gradient(to bottom, #8b5cf6, #6366f1)", borderRadius: "2px" }} />
-                  <div style={{ fontSize: "0.85rem", fontWeight: 800, color: "#4c1d95", letterSpacing: "0.05em", textTransform: "uppercase" }}>Performance Analysis</div>
-                  {studentAnalytics.trend !== "insufficient_data" && (
-                    <span style={{
-                      marginLeft: "auto", fontSize: "0.7rem", fontWeight: 800, borderRadius: "100px", padding: "3px 12px",
-                      background: studentAnalytics.trend === "improving" ? "#d1fae5" : studentAnalytics.trend === "declining" ? "#fee2e2" : "#f1f5f9",
-                      color: studentAnalytics.trend === "improving" ? "#065f46" : studentAnalytics.trend === "declining" ? "#991b1b" : "#475569",
-                    }}>
-                      {studentAnalytics.trend === "improving" ? "📈 Improving" : studentAnalytics.trend === "declining" ? "📉 Declining" : "➡ Stable"}
-                    </span>
-                  )}
-                </div>
-
-                {/* Stats row */}
-                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "20px" }}>
-                  {[
-                    { label: "Overall Accuracy", value: `${studentAnalytics.overallAccuracy}%`, color: studentAnalytics.overallAccuracy >= 75 ? "#10b981" : studentAnalytics.overallAccuracy >= 50 ? "#f59e0b" : "#ef4444" },
-                    { label: "Questions Done", value: studentAnalytics.totalQuestionsAttempted.toLocaleString(), color: "#6366f1" },
-                    { label: "Sessions", value: dailyStats.length, color: "#8b5cf6" },
-                  ].map(stat => (
-                    <div key={stat.label} style={{ flex: "1 1 100px", background: "#f8fafc", borderRadius: "16px", padding: "14px 16px", border: "1px solid #e2e8f0" }}>
-                      <div style={{ fontSize: "1.4rem", fontWeight: 900, color: stat.color }}>{stat.value}</div>
-                      <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", marginTop: "2px" }}>{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Weak topics */}
-                {studentAnalytics.weakTopics.length > 0 && (
-                  <div style={{ marginBottom: "16px" }}>
-                    <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#94a3b8", textTransform: "uppercase", marginBottom: "10px" }}>⚠ Needs Attention</div>
-                    {studentAnalytics.weakTopics.map(t => (
-                      <div key={t.topicId} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", background: "#fff7ed", borderRadius: "12px", marginBottom: "6px", border: "1px solid #fed7aa" }}>
-                        <span style={{ fontSize: "0.88rem", fontWeight: 700, color: "#92400e" }}>{t.label}</span>
-                        <span style={{ fontSize: "0.75rem", fontWeight: 800, background: "#fef3c7", color: "#b45309", borderRadius: "100px", padding: "3px 10px" }}>{t.errorRate}% wrong</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {/* Strong topics */}
-                {studentAnalytics.strongTopics.length > 0 && (
-                  <div style={{ marginBottom: "16px" }}>
-                    <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#94a3b8", textTransform: "uppercase", marginBottom: "10px" }}>✓ Strong Areas</div>
-                    {studentAnalytics.strongTopics.map(t => (
-                      <div key={t.topicId} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", background: "#f0fdf4", borderRadius: "12px", marginBottom: "6px", border: "1px solid #bbf7d0" }}>
-                        <span style={{ fontSize: "0.88rem", fontWeight: 700, color: "#14532d" }}>{t.label}</span>
-                        <span style={{ fontSize: "0.75rem", fontWeight: 800, background: "#dcfce7", color: "#166534", borderRadius: "100px", padding: "3px 10px" }}>{100 - t.errorRate}% correct</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {/* Recommendations */}
-                {studentAnalytics.recommendations.length > 0 && (
-                  <div>
-                    <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#94a3b8", textTransform: "uppercase", marginBottom: "10px" }}>📚 Study Recommendations</div>
-                    {studentAnalytics.recommendations.map((rec, i) => (
-                      <div key={i} style={{ display: "flex", gap: "12px", padding: "12px 14px", background: "#fafafe", borderRadius: "12px", marginBottom: "6px", border: "1px solid #e0e7ff", alignItems: "flex-start" }}>
-                        <div style={{ width: 10, height: 10, borderRadius: "50%", flexShrink: 0, marginTop: 4, background: rec.priority === "high" ? "#ef4444" : rec.priority === "medium" ? "#f59e0b" : "#10b981" }} />
-                        <div>
-                          <div style={{ fontSize: "0.88rem", fontWeight: 800, color: "#1e1b4b", marginBottom: "2px" }}>{rec.title}</div>
-                          <div style={{ fontSize: "0.8rem", color: "#64748b", lineHeight: 1.5 }}>{rec.description}</div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <ChallengeAnalyticsPanel
+                studentAnalytics={studentAnalytics}
+                dailyStats={dailyStats}
+              />
             )}
 
             {/* SECRET NOTEBOOK PANEL */}
-            {(() => {
-              const snc = student.secretNoteCount || {};
-              const mt = student.mistakeTags || {};
-              const dailyN = Number(snc.daily) || 0;
-              const calcN = Number(snc.calc) || 0;
-              if (dailyN === 0 && calcN === 0) return null;
-              const TAGS = [
-                { id: "mistake", emoji: "🎨", label: "Simple mistake", color: "#0ea5e9" },
-                { id: "concept", emoji: "🌀", label: "Concept gap", color: "#8b5cf6" },
-                { id: "time", emoji: "⏰", label: "Ran out of time", color: "#f59e0b" },
-                { id: "comprehension", emoji: "🧩", label: "Didn't understand", color: "#ef4444" },
-              ];
-              const merged = {};
-              TAGS.forEach(t => {
-                merged[t.id] = (Number(mt.daily?.[t.id]) || 0) + (Number(mt.calc?.[t.id]) || 0);
-              });
-              const totalTagged = Object.values(merged).reduce((a, b) => a + b, 0);
-              return (
-                <div style={{ background: "white", borderRadius: "24px", border: "1px solid #e2e8f0", padding: "24px", boxShadow: "0 4px 16px rgba(99,102,241,0.06)" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "18px" }}>
-                    <div style={{ width: "4px", height: "24px", background: "linear-gradient(to bottom, #a78bfa, #ec4899)", borderRadius: "2px" }} />
-                    <div style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6d28d9", letterSpacing: "0.05em", textTransform: "uppercase" }}>Secret Notebook</div>
-                    <span style={{ marginLeft: "auto", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8" }}>updated at last test</span>
-                  </div>
-                  {/* Counts */}
-                  <div style={{ display: "flex", gap: "12px", marginBottom: totalTagged > 0 ? "18px" : 0 }}>
-                    <div style={{ flex: 1, background: "#f5f3ff", borderRadius: "16px", padding: "14px 16px", border: "1px solid #ddd6fe" }}>
-                      <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#7c3aed" }}>{dailyN}</div>
-                      <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", marginTop: "2px" }}>Daily mistakes</div>
-                    </div>
-                    <div style={{ flex: 1, background: "#fffbeb", borderRadius: "16px", padding: "14px 16px", border: "1px solid #fde68a" }}>
-                      <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#b45309" }}>{calcN}</div>
-                      <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", marginTop: "2px" }}>Calculation mistakes</div>
-                    </div>
-                  </div>
-                  {/* Mistake tag breakdown */}
-                  {totalTagged > 0 && (
-                    <div>
-                      <div style={{ fontSize: "0.75rem", fontWeight: 800, color: "#94a3b8", textTransform: "uppercase", marginBottom: "10px" }}>Why mistakes happen</div>
-                      {TAGS.filter(t => merged[t.id] > 0).sort((a, b) => merged[b.id] - merged[a.id]).map(t => {
-                        const pct = Math.round((merged[t.id] / totalTagged) * 100);
-                        return (
-                          <div key={t.id} style={{ marginBottom: "10px" }}>
-                            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "4px" }}>
-                              <span style={{ fontSize: "0.85rem", fontWeight: 700, color: "#475569" }}>{t.emoji} {t.label}</span>
-                              <span style={{ fontSize: "0.8rem", fontWeight: 800, color: t.color }}>{merged[t.id]} · {pct}%</span>
-                            </div>
-                            <div style={{ height: "8px", background: "#f1f5f9", borderRadius: "4px", overflow: "hidden" }}>
-                              <div style={{ width: `${pct}%`, height: "100%", background: t.color, borderRadius: "4px" }} />
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              );
-            })()}
+            <SecretNotebookPanel student={student} />
 
             {/* DAILY PRACTICE SETTINGS - Accordion Design */}
             <DailyPracticeSettings
