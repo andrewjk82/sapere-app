@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
@@ -6,15 +6,17 @@ import { useToast } from './context/ToastContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
-import Dashboard from './components/Dashboard';
-import StudentList from './components/StudentList';
-import Schedule from './components/Schedule';
-import Curriculum from './components/Curriculum';
-import DailyChallenge from './components/DailyChallenge';
-import Settings from './components/Settings';
-import StudentDetail from './components/StudentDetail';
-import ReportsAdmin from './components/ReportsAdmin';
-import Library from './components/Library';
+// Route-level views are code-split so the main bundle only loads the
+// shell; each view is fetched on first navigation.
+const Dashboard = lazy(() => import('./components/Dashboard'));
+const StudentList = lazy(() => import('./components/StudentList'));
+const Schedule = lazy(() => import('./components/Schedule'));
+const Curriculum = lazy(() => import('./components/Curriculum'));
+const DailyChallenge = lazy(() => import('./components/DailyChallenge'));
+const Settings = lazy(() => import('./components/Settings'));
+const StudentDetail = lazy(() => import('./components/StudentDetail'));
+const ReportsAdmin = lazy(() => import('./components/ReportsAdmin'));
+const Library = lazy(() => import('./components/Library'));
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
@@ -826,7 +828,9 @@ function App() {
       />
       <div className="app-shell__main">
         <ErrorBoundary key={activeTab}>
-          {renderContent()}
+          <Suspense fallback={<div className="app-loading"><div className="app-spinner"></div></div>}>
+            {renderContent()}
+          </Suspense>
         </ErrorBoundary>
       </div>
 
