@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Flag, Clock, Lightbulb, CheckCircle2, XCircle, Check } from 'lucide-react';
 import MathView from '../MathView';
@@ -55,7 +54,7 @@ const ChallengeQuizView = ({
         inset: 0, 
         backgroundColor: '#f8fafc', 
         zIndex: 2000, 
-        padding: isMobile ? '20px 16px' : '40px 20px',
+        padding: isMobile ? '20px 16px' : '32px clamp(20px, 3vw, 48px)',
         overflowY: 'auto',
         display: 'flex',
         flexDirection: 'column',
@@ -63,15 +62,30 @@ const ChallengeQuizView = ({
       }}
     >
       <div style={{ 
-        maxWidth: showSplitScreen ? '1200px' : '600px', 
+        maxWidth: showSplitScreen ? 'min(1500px, calc(100vw - 64px))' : '600px', 
         width: '100%', 
         display: 'flex', 
         flexDirection: showSideCanvas ? 'row' : 'column', 
-        gap: isMobile ? '20px' : '40px',
-        alignItems: 'flex-start',
+        gap: showSideCanvas ? '28px' : (isMobile ? '20px' : '40px'),
+        alignItems: showSideCanvas ? 'stretch' : 'flex-start',
         transition: 'all 0.3s ease'
       }}>
-        <div style={{ flex: 1, maxWidth: showSplitScreen ? '600px' : '100%', width: '100%', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <div style={{
+          flex: showSideCanvas ? '0 1 640px' : 1,
+          maxWidth: showSideCanvas ? '640px' : (showSplitScreen ? '600px' : '100%'),
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '20px',
+          minWidth: 0,
+          // In split view the right column (sketch pad) is sticky/tall, which
+          // can prevent the outer container from scrolling the question column
+          // — leaving the Submit button below the fold unreachable. Cap the
+          // left column to the viewport and let it scroll on its own.
+          ...(showSideCanvas
+            ? { maxHeight: 'calc(100vh - 48px)', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }
+            : {}),
+        }}>
           {/* Top Progress & Header */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
             <div style={{ textAlign: 'left' }}>
