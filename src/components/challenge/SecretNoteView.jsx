@@ -486,9 +486,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
             />
             <motion.div
               className="sn__rv"
-              initial={{ opacity: 0, y: 24, scale: 0.96 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 24, scale: 0.96 }}
+              initial={{ opacity: 0, x: "-50%", y: "-46%", scale: 0.96 }}
+              animate={{ opacity: 1, x: "-50%", y: "-50%", scale: 1 }}
+              exit={{ opacity: 0, x: "-50%", y: "-46%", scale: 0.96 }}
             >
               <div className="sn__rv-head" style={{ background: headerGradient }}>
                 <span>Ask your teacher</span>
@@ -664,8 +664,10 @@ const secretNoteStyles = `
   .sn__done-lbl { font-size: 0.72rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
 
   .sn__rv-backdrop { position: fixed; inset: 0; background: rgba(15,23,42,0.45); z-index: 2100; }
+  /* Centering is done via the framer-motion x/y transform (see .sn__rv JSX)
+     so it does not get overwritten by the entrance animation. */
   .sn__rv {
-    position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    position: fixed; left: 50%; top: 50%;
     z-index: 2101; width: calc(100vw - 32px); max-width: 520px; max-height: 88vh;
     background: #fff; border-radius: 26px; overflow: hidden;
     display: flex; flex-direction: column;
