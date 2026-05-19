@@ -1,0 +1,497 @@
+[
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = 2x + 3$ (with a swapped number coefficient of $f(x) = 4x + 7$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = 4x + 7, \\, f'(x) = 4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 7x + 4, \\, f'(x) = 7$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 4x + 7, \\, f'(x) = 7$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 4x + 7, \\, f'(x) = 4x$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form $f(x) = mx + b$**\nThe given function is already in this form:\n$$f(x) = 4x + 7$$\nwhere $m = 4$ and $b = 7$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative $f'(x)$ represents the gradient of the function at any point $x$:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince the gradient $m = 4$, the derived function is:\n$$f'(x) = 4$$\n\n**Step 4: Combine the results**\n$$f(x) = 4x + 7, \\, f'(x) = 4$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = 5 - 3x$ (with a swapped number coefficient of $f(x) = 9 - 6x$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = -6x + 9, \\, f'(x) = -6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -6x + 9, \\, f'(x) = 9$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 6x - 9, \\, f'(x) = 6$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -6x + 9, \\, f'(x) = -6x$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form $f(x) = mx + b$**\nRearrange the terms of $f(x) = 9 - 6x$:\n$$f(x) = -6x + 9$$\nwhere $m = -6$ and $b = 9$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative $f'(x)$ represents the constant gradient of the line:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince the gradient $m = -6$, the derived function is:\n$$f'(x) = -6$$\n\n**Step 4: Combine the results**\n$$f(x) = -6x + 9, \\, f'(x) = -6$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = \\frac{1}{2}x - 7$ (with a swapped number coefficient of $f(x) = \\frac{1}{5}x - 3$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{1}{5}x - 3, \\, f'(x) = -3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 5x - 3, \\, f'(x) = 5$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}x$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form $f(x) = mx + b$**\nThe given function is already in this form:\n$$f(x) = \\frac{1}{5}x - 3$$\nwhere $m = \\frac{1}{5}$ and $b = -3$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative $f'(x)$ is:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince the gradient $m = \\frac{1}{5}$, the derived function is:\n$$f'(x) = \\frac{1}{5}$$\n\n**Step 4: Combine the results**\n$$f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = -4$ (with a swapped constant of $f(x) = -8$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = -8, \\, f'(x) = 0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -8, \\, f'(x) = -8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 0x - 8, \\, f'(x) = -8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -8x, \\, f'(x) = -8$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form $f(x) = mx + b$**\nThe constant function $f(x) = -8$ can be written with an explicit $x$ term as:\n$$f(x) = 0x - 8$$\nwhere $m = 0$ and $b = -8$.\n\n**Step 2: Recall the derivative of a constant function**\nThe graph of $f(x) = -8$ is a horizontal line. The gradient of any horizontal line is always $0$:\n$$f'(x) = 0$$\n\n**Step 3: State the derivative**\nSince the gradient $m = 0$, the derived function is:\n$$f'(x) = 0$$\n\n**Step 4: Combine the results**\n$$f(x) = -8, \\, f'(x) = 0$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the general function $f(x) = ax + b$ (with swapped pronumerals of $f(x) = px + q$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = px + q, \\, f'(x) = p$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = px + q, \\, f'(x) = q$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = qx + p, \\, f'(x) = q$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = px + q, \\, f'(x) = px$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form $f(x) = mx + b$**\nThe given function is:\n$$f(x) = px + q$$\nComparing this with $f(x) = mx + b$, the gradient parameter is $m = p$ and the y-intercept parameter is $b = q$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative is simply the coefficient of $x$:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince $m = p$, the derived function is:\n$$f'(x) = p$$\n\n**Step 4: Combine the results**\n$$f(x) = px + q, \\, f'(x) = p$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = \\frac{2}{3}(x + 4)$ (with a swapped number coefficient of $f(x) = \\frac{3}{5}(x + 7)$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{3}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{3}{5}x + 7, \\, f'(x) = \\frac{3}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{21}{5}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 3x + 21, \\, f'(x) = 3$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the function to write it in the form $f(x) = mx + b$**\nExpand the brackets of $f(x) = \\frac{3}{5}(x + 7)$:\n$$f(x) = \\frac{3}{5} \\times x + \\frac{3}{5} \\times 7$$\n$$f(x) = \\frac{3}{5}x + \\frac{21}{5}$$\nThis is now in the form $f(x) = mx + b$, where $m = \\frac{3}{5}$ and $b = \\frac{21}{5}$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative $f'(x)$ is:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince the gradient $m = \\frac{3}{5}$, the derived function is:\n$$f'(x) = \\frac{3}{5}$$\n\n**Step 4: Combine the results**\n$$f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{3}{5}$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = \\frac{3 - 5x}{4}$ (with a swapped number coefficient of $f(x) = \\frac{7 - 4x}{3}$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = \\frac{4}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = \\frac{7}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -\\frac{4}{3}x - \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand and rearrange the function into the form $f(x) = mx + b$**\nSplit the fraction $f(x) = \\frac{7 - 4x}{3}$ into two separate terms:\n$$f(x) = \\frac{7}{3} - \\frac{4x}{3}$$\nRearrange to place the $x$ term first:\n$$f(x) = -\\frac{4}{3}x + \\frac{7}{3}$$\nThis is in the form $f(x) = mx + b$, where $m = -\\frac{4}{3}$ and $b = \\frac{7}{3}$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative $f'(x)$ is:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince the gradient $m = -\\frac{4}{3}$, the derived function is:\n$$f'(x) = -\\frac{4}{3}$$\n\n**Step 4: Combine the results**\n$$f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the function $f(x) = \\frac{5}{2}(7 - \\frac{4}{3}x)$ (with a swapped number coefficient of $f(x) = \\frac{3}{4}(5 - \\frac{2}{3}x)$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -\\frac{2}{3}x + 5, \\, f'(x) = -\\frac{2}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = \\frac{15}{4}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = \\frac{1}{2}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the function to write it in the form $f(x) = mx + b$**\nMultiply the term $\\frac{3}{4}$ inside the brackets of $f(x) = \\frac{3}{4}(5 - \\frac{2}{3}x)$:\n$$f(x) = \\frac{3}{4} \\times 5 - \\frac{3}{4} \\times \\frac{2}{3}x$$\n$$f(x) = \\frac{15}{4} - \\frac{6}{12}x$$\nSimplify the fraction $\\frac{6}{12}$ to $\\frac{1}{2}$:\n$$f(x) = \\frac{15}{4} - \\frac{1}{2}x$$\nRearrange to place the $x$ term first:\n$$f(x) = -\\frac{1}{2}x + \\frac{15}{4}$$\nwhere $m = -\\frac{1}{2}$ and $b = \\frac{15}{4}$.\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form $f(x) = mx + b$, the derivative $f'(x)$ is:\n$$f'(x) = m$$\n\n**Step 3: State the derivative**\nSince the gradient $m = -\\frac{1}{2}$, the derived function is:\n$$f'(x) = -\\frac{1}{2}$$\n\n**Step 4: Combine the results**\n$$f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "question": "Write the constant function $f(x) = \\frac{1}{2} + \\frac{1}{3}$ (with a swapped number coefficient of $f(x) = \\frac{2}{5} + \\frac{3}{4}$) in the form $f(x) = mx + b$, and hence write down $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = \\frac{23}{20}, \\, f'(x) = 0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{23}{20}, \\, f'(x) = \\frac{23}{20}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{23}{20}x, \\, f'(x) = \\frac{23}{20}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 0, \\, f'(x) = 0$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Simplify the constant expression to write it in the form $f(x) = mx + b$**\nFind a common denominator for the fractions $\\frac{2}{5}$ and $\\frac{3}{4}$:\n$$f(x) = \\frac{2 \\times 4}{5 \\times 4} + \\frac{3 \\times 5}{4 \\times 5}$$\n$$f(x) = \\frac{8}{20} + \\frac{15}{20} = \\frac{23}{20}$$\nThis constant function can be represented with an explicit $x$ term as:\n$$f(x) = 0x + \\frac{23}{20}$$\nwhere $m = 0$ and $b = \\frac{23}{20}$.\n\n**Step 2: Recall the derivative of a constant function**\nSince the function is a constant value and does not change with respect to $x$, its rate of change (gradient) is always $0$:\n$$f'(x) = 0$$\n\n**Step 3: State the derivative**\nSince $m = 0$, the derived function is:\n$$f'(x) = 0$$\n\n**Step 4: Combine the results**\n$$f(x) = \\frac{23}{20}, \\, f'(x) = 0$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Simplify the compound function $f(x) = \\frac{3 + 5x}{2} - \\frac{5 - 2x}{2}$ (with a swapped number coefficient of $f(x) = \\frac{5 + 7x}{3} - \\frac{2 - 4x}{3}$) into the linear form $f(x) = mx + b$, and hence find the derived function $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = x + 1, \\, f'(x) = 1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{11}{3}x + 1, \\, f'(x) = 1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{11}{3}x - 1, \\, f'(x) = \\frac{11}{3}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Group the expression under a single denominator**\nSince both fractions share a common denominator of $3$, we can combine them:\n$$f(x) = \\frac{(5 + 7x) - (2 - 4x)}{3}$$\n\n**Step 2: Expand and simplify the numerator**\nCarefully distribute the negative sign through the second bracket:\n$$f(x) = \\frac{5 + 7x - 2 + 4x}{3}$$\nCombine the like terms (constants and $x$ coefficients):\n$$f(x) = \\frac{(5 - 2) + (7x + 4x)}{3}$$\n$$f(x) = \\frac{3 + 11x}{3}$$\n\n**Step 3: Write in standard form $f(x) = mx + b$**\nSplit the fraction into linear components:\n$$f(x) = \\frac{11}{3}x + \\frac{3}{3}$$\n$$f(x) = \\frac{11}{3}x + 1$$\nHere, the gradient is $m = \\frac{11}{3}$ and the y-intercept is $b = 1$.\n\n**Step 4: Differentiate to find $f'(x)$**\nUsing the derivative rule for linear functions $f(x) = mx + b$:\n$$f'(x) = m = \\frac{11}{3}$$\n\n**Step 5: Combine the results**\n$$f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Simplify the quadratic difference function $f(x) = (x+3)^2 - (x-3)^2$ (with a swapped number coefficient of $f(x) = (x+4)^2 - (x-4)^2$) into the linear form $f(x) = mx + b$, and hence find the derived function $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = 16x, \\, f'(x) = 16$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 8x, \\, f'(x) = 8$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 2x^2 + 32, \\, f'(x) = 4x$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = 16x, \\, f'(x) = 16x$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand both squared terms**\nExpand $(x+4)^2$:\n$$(x+4)^2 = x^2 + 8x + 16$$\n\nExpand $(x-4)^2$:\n$$(x-4)^2 = x^2 - 8x + 16$$\n\n**Step 2: Subtract the second expanded expression from the first**\n$$f(x) = (x^2 + 8x + 16) - (x^2 - 8x + 16)$$\nDistribute the negative sign carefully:\n$$f(x) = x^2 + 8x + 16 - x^2 + 8x - 16$$\n\n**Step 3: Collect like terms**\nObserve that the quadratic term $x^2$ and constant term $16$ cancel out:\n$$f(x) = (x^2 - x^2) + (8x + 8x) + (16 - 16)$$\n$$f(x) = 16x$$\nThis is in the linear form $f(x) = mx + b$, where $m = 16$ and $b = 0$.\n\n**Step 4: Differentiate to find $f'(x)$**\nSince $f(x) = 16x$, its rate of change (gradient) is constant at all points:\n$$f'(x) = 16$$\n\n**Step 5: State the final result**\n$$f(x) = 16x, \\, f'(x) = 16$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Simplify the algebraic variable expression $f(x) = \\frac{k - \\ell x}{r} + \\frac{k + \\ell x}{r}$ (with swapped pronumerals of $f(x) = \\frac{a - b x}{c} + \\frac{a + b x}{c}$) into standard form, and hence write down the derived function $f'(x)$.",
+    "options": [
+      {
+        "text": "$f(x) = \\frac{2a}{c}, \\, f'(x) = 0$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = -\\frac{2bx}{c}, \\, f'(x) = -\\frac{2b}{c}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{2a}{c}, \\, f'(x) = \\frac{2a}{c}$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f(x) = \\frac{2a - 2bx}{c}, \\, f'(x) = -\\frac{2b}{c}$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Combine the fractions under a common denominator**\nSince both parts share the common denominator $c$, we can sum their numerators directly:\n$$f(x) = \\frac{(a - bx) + (a + bx)}{c}$$\n\n**Step 2: Simplify the numerator**\nGroup the constant variables and the coefficients of $x$:\n$$f(x) = \\frac{(a + a) + (-bx + bx)}{c}$$\nObserve that $-bx$ and $+bx$ cancel out completely:\n$$f(x) = \\frac{2a}{c}$$\nThis function $f(x) = \\frac{2a}{c}$ is a constant function with respect to $x$.\n\n**Step 3: Determine the derivative $f'(x)$**\nSince $f(x) = \\frac{2a}{c}$ does not contain the variable $x$, it is a horizontal flat line. The rate of change of any constant function with respect to $x$ is always zero:\n$$f'(x) = 0$$\n\n**Step 4: Combine the results**\n$$f(x) = \\frac{2a}{c}, \\, f'(x) = 0$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Consider the quadratic function $f(x) = 4 - x^2$ (with a swapped constant of $f(x) = 9 - x^2$). Using graphical analysis and tangents at key points, determine the derived function $f'(x)$ and calculate the exact gradient of the tangent at $x = 2$.",
+    "options": [
+      {
+        "text": "$f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = 2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } 4$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = -x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -2$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Sketch and analyze the function**\nThe function $f(x) = 9 - x^2$ represents a parabola opening downwards with its vertex at $(0, 9)$.\n\n**Step 2: Differentiate the function algebraically**\nUsing the basic derivative rules:\n- The derivative of a constant $9$ is $0$.\n- The derivative of $-x^2$ is $-2x$ (by the power rule).\n\nTherefore, the derived function is:\n$$f'(x) = -2x$$\n\n**Step 3: Evaluate the derivative at $x = 2$**\nSubstitute $x = 2$ into the derived function to find the exact rate of change (slope of the tangent line):\n$$f'(2) = -2(2) = -4$$\n\n**Step 4: Conceptual check using drawing/tangents**\nAt $x = 2$, the curve $f(x) = 9 - x^2$ is decreasing. A tangent drawn at the point $(2, 5)$ goes down steeply. The slope of this tangent line is exactly $-4$.\n\n**Step 5: Formulate the final statement**\n$$f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -4$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Consider the rational function $f(x) = \\frac{1}{x}$ (with a swapped numerator of $f(x) = \\frac{2}{x}$). Find the derived function $f'(x)$ and determine the exact gradient of the tangent line to the curve at $x = -1$.",
+    "options": [
+      {
+        "text": "$f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = \\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } 2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } 2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = -\\frac{1}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -1$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Rewrite the function using a negative index**\nExpress the function $f(x) = \\frac{2}{x}$ with an exponent:\n$$f(x) = 2x^{-1}$$\n\n**Step 2: Differentiate the function using the power rule**\nMultiply the coefficient by the exponent, and decrease the exponent by $1$:\n$$f'(x) = 2 \\times (-1)x^{-1 - 1}$$\n$$f'(x) = -2x^{-2}$$\n\n**Step 3: Convert the derivative back to fraction form**\n$$f'(x) = -\\frac{2}{x^2}$$\n\n**Step 4: Evaluate the gradient of the tangent at $x = -1$**\nSubstitute $x = -1$ into the derived function:\n$$f'(-1) = -\\frac{2}{(-1)^2}$$\nSince $(-1)^2 = 1$:\n$$f'(-1) = -\\frac{2}{1} = -2$$\n\n**Step 5: Formulate the final statement**\n$$f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -2$$"
+  },
+  {
+    "chapterId": "y11a-9",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "year": "Year 11",
+    "course": "Advanced",
+    "isManual": true,
+    "topicId": "y11a-9A",
+    "topicCode": "9A",
+    "topicTitle": "Tangents and the derivative",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "question": "Consider the exponential function $f(x) = 2^x$ (with a swapped base of $f(x) = 3^x$). Using the natural logarithm, state the exact derived function $f'(x)$ and determine the exact gradient of the tangent line to the curve at $x = 1$.",
+    "options": [
+      {
+        "text": "$f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3\\ln(3)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = 3^x \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } \\ln(3)$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$f'(x) = x \\cdot 3^{x-1} \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 1$",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the derivative rule for general exponential functions**\nFor any exponential base $a > 0$:\n$$\\frac{d}{dx}\\left(a^x\\right) = a^x \\ln(a)$$\nwhere $\\ln$ is the natural logarithm (base $e$).\n\n**Step 2: Apply the rule to $f(x) = 3^x$**\nHere, the base is $a = 3$. Therefore:\n$$f'(x) = 3^x \\ln(3)$$\n\n**Step 3: Evaluate the gradient of the tangent line at $x = 1$**\nSubstitute $x = 1$ into the derived function:\n$$f'(1) = 3^1 \\ln(3) = 3\\ln(3)$$\n\n**Step 4: Formulate the final statement**\n$$f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3\\ln(3)$$"
+  }
+]
