@@ -1019,13 +1019,20 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const robustNormalize = (str) => {
     if (!str) return '';
-    return String(str)
+    let s = String(str)
       .toLowerCase()
       // Unify superscript / power notation so keypad "²" matches stored "^2".
       .replace(/⁰/g, '^0').replace(/¹/g, '^1').replace(/²/g, '^2').replace(/³/g, '^3')
       .replace(/⁴/g, '^4').replace(/⁵/g, '^5').replace(/⁶/g, '^6')
       .replace(/⁷/g, '^7').replace(/⁸/g, '^8').replace(/⁹/g, '^9')
       .replace(/\^\{([^{}]*)\}/g, '^$1')   // ^{2} -> ^2
+      // Unify minus-sign variants (unicode minus / en/em dash) with ASCII "-".
+      .replace(/[−–—]/g, '-')
+      // Drop explicit multiplication signs so "3*a"/"3·a"/"3×a" == "3a".
+      .replace(/\\cdot|\\times|×|·|⋅|∙|\*/g, '')
+      .replace(/\\left|\\right/g, '')      // Strip LaTeX sizing wrappers
+      .replace(/\$/g, '')                 // Strip math delimiters
+      .replace(/[{}]/g, '')               // Strip leftover LaTeX braces
       .replace(/\s+/g, '')                // Remove whitespace
       .replace(/[,.;]/g, '')             // Remove punctuation
       .replace(/\\ge|\\geq|≥/g, '>=')     // Normalize >=
@@ -1033,6 +1040,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       .replace(/([a-z])>([0-9.-]+)(?:or|\|\|)([a-z])=\2/, '$1>=$2') // x>1orx=1 -> x>=1
       .replace(/([a-z])=([0-9.-]+)(?:or|\|\|)([a-z])>\2/, '$1>=$2') // x=1orx>1 -> x>=1
       .trim();
+
+    // Polynomial term reorder: a plain expression like "3a^2-10ab-8b^2" should
+    // match the same terms written in any order. Only applied to expressions
+    // with no relation (=,<,>) or division so inequalities/fractions are safe.
+    if (s && /[a-z]/.test(s) && !/[=<>/]/.test(s) && /[+-]/.test(s.slice(1))) {
+      const body = (s[0] === '+' || s[0] === '-') ? s : '+' + s;
+      const terms = body.match(/[+-][^+-]+/g);
+      if (terms && terms.join('') === body) {
+        s = terms.slice().sort().join('').replace(/^\+/, '');
+      }
+    }
+    return s;
   };
 
   const parseNumericAnswer = (value) => {
