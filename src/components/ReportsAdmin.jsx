@@ -750,6 +750,13 @@ const ReportsAdmin = () => {
                   )}
                 </div>
 
+                {previewReport.workingOut && (
+                  <div style={{ padding: '18px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', marginBottom: '10px' }}>Student's Working Out</div>
+                    <img src={previewReport.workingOut} alt="Student working out" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #e2e8f0' }} />
+                  </div>
+                )}
+
                 <div style={{ padding: '22px', borderRadius: '22px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
                   <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#64748b', textTransform: 'uppercase', marginBottom: '10px' }}>Question</div>
                   <MathView content={previewQuestion?.question || previewQuestion?.text || 'No question text'} style={{ fontSize: '1.15rem', fontWeight: 800, color: '#1e1b4b' }} />
