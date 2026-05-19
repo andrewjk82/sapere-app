@@ -34,6 +34,9 @@ const toDisplayText = (value, fallback = '') => {
   str = str.replace(/±/g, '\\pm');
   str = str.replace(/×/g, '\\times');
   str = str.replace(/÷/g, '\\div');
+  // Fix a bad-data artifact: SVG diagram labels sometimes contain "60^°"
+  // (a stray caret before the degree sign). It is never valid, so drop it.
+  str = str.replace(/\^\s*°/g, '°');
 
   // 1b. Rich HTML content (e.g. a solution with <p>/<strong>/<br>) must NOT
   // go through the math-string transforms below — they corrupt the markup.
@@ -131,6 +134,11 @@ const MathView = ({ content, graphData, style }) => {
     const el = containerRef.current;
     if (!el) return undefined;
     el.innerHTML = safeContent;
+
+    // Inline diagram SVGs sometimes place labels (e.g. the angle "α") right on
+    // the viewBox edge, where the default SVG overflow:hidden clips them.
+    // Let question diagrams overflow so edge labels stay visible.
+    el.querySelectorAll('svg').forEach((svg) => { svg.style.overflow = 'visible'; });
 
     let cancelled = false;
     let retryTimer = null;
