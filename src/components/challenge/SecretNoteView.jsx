@@ -50,7 +50,7 @@ const prepareQuestion = (q) => {
 };
 
 // ── Full-screen shell (defined at module scope so it never remounts) ───────
-const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct, onClose, children, isMobile }) => (
+const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct, onClose, children, isMobile, wide }) => (
   <motion.div
     initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
     style={{
@@ -75,7 +75,7 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
         <div className="sn__progress" style={{ width: `${progressPct}%`, background: headerGradient }} />
       </div>
     )}
-    <div className="sn__body">{children}</div>
+    <div className={`sn__body${wide ? ' sn__body--wide' : ''}`}>{children}</div>
   </motion.div>
 );
 
@@ -105,6 +105,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const [reviewSending, setReviewSending] = useState(false);
   const [reviewSentIds, setReviewSentIds] = useState([]);
   const canvasRef = useRef(null);
+  const solvePadRef = useRef(null); // permanent side working-out pad (desktop)
 
   const item = queue[idx] || null;
   const question = item?.question || null;
@@ -315,8 +316,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const feedbackCorrect = isTwinPhase ? twinGraded : graded?.correct;
 
   return (
-    <NoteShell {...shellProps}>
-      {/* Question card */}
+    <NoteShell {...shellProps} wide={!isMobile}>
+      {/* Question on the left, working-out pad on the right (desktop). */}
+      <div className="sn__solve-row">
       <div className="sn__card">
         {isTwinPhase && (
           <div className="sn__twin-badge">
@@ -475,6 +477,20 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
         )}
       </div>
 
+        {!isMobile && (
+          <div className="sn__solve-pad">
+            <ChallengeSketchBoard
+              placement="side"
+              questionId={activeQ?.id}
+              questionType={activeQ?.type}
+              isSubmitted={false}
+              showSplitScreen
+              ref={solvePadRef}
+            />
+          </div>
+        )}
+      </div>
+
       {/* Teacher review panel */}
       <AnimatePresence>
         {reviewOpen && (
@@ -554,6 +570,11 @@ const secretNoteStyles = `
   .sn__progress { height: 100%; transition: width 0.4s ease; }
 
   .sn__body { width: 100%; max-width: 620px; padding: 24px 18px 0; }
+  /* Wider body when the solve layout shows the side working-out pad. */
+  .sn__body--wide { max-width: 1120px; }
+  .sn__solve-row { display: flex; gap: 20px; align-items: flex-start; width: 100%; }
+  .sn__solve-row .sn__card { flex: 1 1 560px; min-width: 0; }
+  .sn__solve-pad { flex: 1 1 480px; min-width: 0; }
   .sn__card {
     background: #fff; border-radius: 28px; padding: 28px;
     border: 1px solid #ece9f6; box-shadow: 0 20px 44px rgba(91,33,182,0.08);
