@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.3-pen';
+const CANVAS_VERSION = 'v9.4-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -163,6 +163,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
   const smoothWRef = useRef(3);        // low-pass-filtered line width
   const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
+  const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
 
   // Background bookkeeping
   const bgRenderedRef = useRef([]);
@@ -354,6 +355,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   // Discard an in-progress stroke without committing (used when a pen press
   // preempts a stray palm/touch stroke).
   const discardCurrentStroke = () => {
+    cancelLiveRender();
     currentStrokeRef.current = null;
     isDrawingRef.current = false;
     activePointerIdRef.current = null;
@@ -365,6 +367,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   // Commit a stroke: draw it onto the bg, clear overlays, push to state.
   const finalizeStroke = (stroke, finalE) => {
     if (!stroke) return;
+    cancelLiveRender();
     const dpr = window.devicePixelRatio || 1;
     // Capture the genuine final point so quick taps / short flicks never vanish.
     const rect = rectRef.current;
@@ -505,7 +508,23 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       predictedPtsRef.current = [];
     }
 
-    flushLive();
+    // Render on the next animation frame instead of synchronously inside the
+    // pointer handler. This keeps the input handler short so iPadOS does not
+    // throttle/drop pointer events during fast writing — coalesced events
+    // still capture every sample, the screen just repaints once per frame.
+    if (!rafIdRef.current) {
+      rafIdRef.current = requestAnimationFrame(() => {
+        rafIdRef.current = 0;
+        flushLive();
+      });
+    }
+  };
+
+  const cancelLiveRender = () => {
+    if (rafIdRef.current) {
+      cancelAnimationFrame(rafIdRef.current);
+      rafIdRef.current = 0;
+    }
   };
 
   const onPointerUp = (e) => {
