@@ -2098,7 +2098,22 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       </AnimatePresence>
 
       <AnimatePresence>
-        {selectedChallenge && renderDetailModal()}
+        {selectedChallenge && Array.isArray(selectedChallenge.questions) && selectedChallenge.questions.length > 0 ? (
+          <ChallengeReviewView
+            key={`history-review-${selectedChallenge.id}`}
+            questions={selectedChallenge.questions}
+            userAnswers={selectedChallenge.userAnswers || []}
+            answerResults={selectedChallenge.answerResults || []}
+            startIdx={0}
+            isMobile={isMobile}
+            onClose={() => setSelectedChallenge(null)}
+          />
+        ) : selectedChallenge ? (
+          // Snapshot is still loading — render the previous lightweight modal
+          // so the click feedback isn't lost. Once questions stream in the
+          // ChallengeReviewView above takes over.
+          renderDetailModal()
+        ) : null}
       </AnimatePresence>
       <AnimatePresence>
         {workingOutPreview && renderWorkingOutPreview()}
