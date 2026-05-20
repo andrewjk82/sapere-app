@@ -249,8 +249,13 @@ const ChallengeQuizView = ({
                     </div>
                   ) : (
                     <div style={{ position: 'relative' }}>
-                      <input 
+                      <input
                         type="text"
+                        inputMode="text"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoCapitalize="off"
+                        spellCheck={false}
                         disabled={step === 'feedback'}
                         value={subAnswers[sq.id || sIdx] || ''}
                         onChange={(e) => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
@@ -354,19 +359,24 @@ const ChallengeQuizView = ({
                 </button>
               </div>
 
-              <input 
+              <input
                 ref={answerInputRef}
                 type="text"
+                inputMode="text"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck={false}
                 disabled={step === 'feedback'}
                 value={step === 'feedback' ? userAnswers[currentIdx] || '' : selectedOption || ''}
                 onChange={(e) => step !== 'feedback' && setSelectedOption(e.target.value)}
                 placeholder="Type your answer..."
                 className="app-input"
-                style={{ 
-                  fontSize: '1.4rem', 
-                  padding: '24px', 
-                  borderRadius: '24px', 
-                  textAlign: 'center', 
+                style={{
+                  fontSize: '1.4rem',
+                  padding: '24px',
+                  borderRadius: '24px',
+                  textAlign: 'center',
                   fontWeight: 700,
                   fontFamily: '"KaTeX_Main", "Times New Roman", serif',
                   letterSpacing: '0.05em'
