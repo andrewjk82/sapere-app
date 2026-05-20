@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.9h-pen';
+const CANVAS_VERSION = 'v9.9i-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -185,6 +185,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
   const canceledPenStrokeRef = useRef(null);
+  const canvasWrapperRef = useRef(null);
 
   // Background bookkeeping
   const bgRenderedRef = useRef([]);
@@ -350,34 +351,51 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       touchStartedInCanvas = false;
     };
 
-    const blockPageTouch = (e) => {
+    // Document-level touchstart: only track WHERE the touch began and block
+    // touchstart defaults on the drawing surface (e.g. context menu, callout).
+    // We intentionally do NOT add a document touchmove listener here — that
+    // would force iOS Safari to wait for JS on every touchmove across the whole
+    // page, breaking native scroll on sibling elements (e.g. the left column).
+    const blockTouchStart = (e) => {
       if (e.type === 'touchstart') {
         touchStartedInCanvas = isOnDrawingSurface(e.target);
       }
-      // Always allow editable fields (keyboard inputs)
       if (isEditableTarget(e.target)) return;
-      // Only block scroll when the touch sequence began inside the canvas
       if (!touchStartedInCanvas) return;
-      // Allow finger taps on buttons/links even inside the canvas toolbar
-      if (e.type === 'touchstart' && isTapTarget(e.target) && !isStylusTouch(e)) return;
+      if (isTapTarget(e.target) && !isStylusTouch(e)) return;
       e.preventDefault();
     };
 
+    // Canvas-wrapper-level touchmove: only touches that started inside the
+    // canvas wrapper bubble through here, so we can safely call preventDefault
+    // without blocking scroll on any other part of the page.
+    const blockCanvasScroll = (e) => {
+      if (isEditableTarget(e.target)) return;
+      e.preventDefault();
+    };
+
+    const wrapper = canvasWrapperRef.current;
+
     document.addEventListener('selectstart', blockSelectionMenu, { capture: true });
     document.addEventListener('contextmenu', blockSelectionMenu, { capture: true });
-    document.addEventListener('touchstart', blockPageTouch, { capture: true, passive: false });
-    document.addEventListener('touchmove', blockPageTouch, { capture: true, passive: false });
+    document.addEventListener('touchstart', blockTouchStart, { capture: true, passive: false });
     document.addEventListener('touchend', resetTouchStart, { capture: true, passive: true });
     document.addEventListener('touchcancel', resetTouchStart, { capture: true, passive: true });
-    document.addEventListener('gesturestart', blockPageTouch, { capture: true, passive: false });
+    if (wrapper) {
+      wrapper.addEventListener('touchmove', blockCanvasScroll, { passive: false });
+      wrapper.addEventListener('gesturestart', blockCanvasScroll, { passive: false });
+    }
 
     return () => {
       document.removeEventListener('selectstart', blockSelectionMenu, { capture: true });
       document.removeEventListener('contextmenu', blockSelectionMenu, { capture: true });
-      document.removeEventListener('touchstart', blockPageTouch, { capture: true });
-      document.removeEventListener('touchmove', blockPageTouch, { capture: true });
+      document.removeEventListener('touchstart', blockTouchStart, { capture: true });
       document.removeEventListener('touchend', resetTouchStart, { capture: true });
       document.removeEventListener('touchcancel', resetTouchStart, { capture: true });
+      if (wrapper) {
+        wrapper.removeEventListener('touchmove', blockCanvasScroll);
+        wrapper.removeEventListener('gesturestart', blockCanvasScroll);
+      }
       const count = Math.max(0, Number(body.dataset[SKETCH_GUARD_COUNT] || 1) - 1);
       if (count === 0) {
         delete body.dataset[SKETCH_GUARD_COUNT];
@@ -843,7 +861,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   return (
-    <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'manipulation', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
+    <div ref={canvasWrapperRef} className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'manipulation', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
       <style>{SKETCH_GUARD_STYLE}</style>
       {!isSubmitted && (
         <div style={{ display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
