@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.9e-pen';
+const CANVAS_VERSION = 'v9.9f-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -825,72 +825,72 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
       <style>{SKETCH_GUARD_STYLE}</style>
       {!isSubmitted && (
-        <div style={{ display: 'flex', padding: '10px 14px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
-          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
-            <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
-          </span>
-
-          <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-            <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900 }}>
-              <MousePointer2 size={15} style={{ marginRight: '5px' }} />
+        <div style={{ display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
+          {/* Row 1: drawing tools */}
+          <div style={{ display: 'flex', padding: '8px 14px', gap: '6px', alignItems: 'center' }}>
+            <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
+              <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
+            </span>
+            <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '4px' }}>
+              <MousePointer2 size={14} />
               {palmGuard ? 'Pen Only' : 'All Touch'}
             </button>
-            <button onClick={() => setActiveTool('pen')} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
-              <PenTool size={17} />
+            <button onClick={() => setActiveTool('pen')} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
+              <PenTool size={15} />
             </button>
             <button
               onClick={() => {
                 if (activeTool === 'eraser') { setEraserMode(prev => prev === 'area' ? 'stroke' : 'area'); }
                 else { setActiveTool('eraser'); }
               }}
-              style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px', background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'eraser' ? '#4f46e5' : '#64748b' }}
+              style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'eraser' ? '#4f46e5' : '#64748b' }}
             >
-              <Eraser size={17} />
+              <Eraser size={15} />
               {activeTool === 'eraser' && (
-                <span style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase', background: '#fff', padding: '2px 6px', borderRadius: '4px' }}>{eraserMode}</span>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase', background: '#fff', padding: '2px 5px', borderRadius: '4px' }}>{eraserMode}</span>
               )}
             </button>
-            <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '34px', borderRadius: '10px', border: '1px solid #e2e8f0', padding: '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
+            <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '30px', borderRadius: '8px', border: '1px solid #e2e8f0', padding: '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
               <option value={2}>Thin</option>
               <option value={3}>Normal</option>
               <option value={5}>Thick</option>
             </select>
-            <div style={{ display: 'flex', gap: '4px' }}>
+            <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
               {COLORS.map(c => (
                 <button key={c} onClick={() => { setStrokeColor(c); setActiveTool('pen'); }} style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }} />
               ))}
             </div>
-            <button onClick={handleUndo} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', cursor: 'pointer', background: '#f1f5f9' }}>
-              <RotateCcw size={17} />
+          </div>
+          {/* Row 2: page navigation + undo + clear */}
+          <div style={{ display: 'flex', padding: '6px 14px 8px', gap: '6px', alignItems: 'center', borderTop: '1px solid #e2e8f0' }}>
+            <button onClick={handleUndo} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <RotateCcw size={15} />
             </button>
-            <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 0} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none' }}>
-              <ChevronLeft size={17} />
+            <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />
+            <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 0} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === 0 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <ChevronLeft size={15} />
             </button>
-            <button onClick={addPage} style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem' }}>
+            <button onClick={addPage} style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem', cursor: 'pointer' }}>
               {currentPage + 1}/{pages.length} +
             </button>
-            <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none' }}>
-              <ChevronRight size={17} />
+            <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === pages.length - 1 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <ChevronRight size={15} />
             </button>
+            <div style={{ flex: 1 }} />
             {confirmClear ? (
               <>
-                <button
-                  onClick={handleClear}
-                  style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', background: '#e11d48', color: '#fff', fontWeight: 700, fontSize: '0.72rem', cursor: 'pointer' }}
-                >
-                  Clear?
+                <span style={{ fontSize: '0.72rem', color: '#64748b' }}>Clear this page?</span>
+                <button onClick={handleClear} style={{ height: '30px', padding: '0 12px', borderRadius: '8px', border: 'none', background: '#e11d48', color: '#fff', fontWeight: 700, fontSize: '0.72rem', cursor: 'pointer' }}>
+                  Yes, clear
                 </button>
-                <button
-                  onClick={() => setConfirmClear(false)}
-                  style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', background: '#f1f5f9', color: '#64748b', fontWeight: 700, fontSize: '0.72rem', cursor: 'pointer' }}
-                >
+                <button onClick={() => setConfirmClear(false)} style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#f1f5f9', color: '#64748b', fontWeight: 700, fontSize: '0.72rem', cursor: 'pointer' }}>
                   Cancel
                 </button>
               </>
             ) : (
-              <button onClick={handleClear} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', background: '#fff1f2', color: '#e11d48', cursor: 'pointer' }}>
-                <Trash2 size={17} />
+              <button onClick={handleClear} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Trash2 size={15} />
               </button>
             )}
           </div>
