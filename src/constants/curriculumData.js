@@ -108,12 +108,50 @@ export const CURRICULUM_DATA = {
     },
     {
       id: 'calc-stage-3',
-      title: 'Stage 3: Multiplication & Times Tables (Year 2-3)',
-      modules: 3,
+      title: 'Stage 3: Multiplication (34 steps · 7 phases)',
+      modules: 34,
       topics: [
-        { id: 'calc-3-core', code: 'C3.1', group: 'Core', title: 'Tables 2-9 & 2-digit x 1-digit' },
-        { id: 'calc-3-adv', code: 'C3.2', group: 'Advanced', title: '3-digit x 1-digit & distributive property' },
-        { id: 'calc-3-enrich', code: 'C3.3', group: 'Enrichment', title: 'Mental doubling & halving' }
+        // Phase A — Concept (steps 1–4)
+        { id: 'calc-3-a1', code: 'M1',  group: 'A · Concept',       title: 'Repeated addition & equal groups' },
+        { id: 'calc-3-a2', code: 'M2',  group: 'A · Concept',       title: 'Arrays & area model' },
+        { id: 'calc-3-a3', code: 'M3',  group: 'A · Concept',       title: 'Commutative & associative properties' },
+        { id: 'calc-3-a4', code: 'M4',  group: 'A · Concept',       title: 'Distributive property' },
+        // Phase B — Times tables (steps 5–9)
+        { id: 'calc-3-b5', code: 'M5',  group: 'B · Times tables',  title: '×1, ×2, ×5, ×10 tables' },
+        { id: 'calc-3-b6', code: 'M6',  group: 'B · Times tables',  title: '×3, ×4, ×6 tables' },
+        { id: 'calc-3-b7', code: 'M7',  group: 'B · Times tables',  title: '×7, ×8 tables' },
+        { id: 'calc-3-b8', code: 'M8',  group: 'B · Times tables',  title: '×9, ×11, ×12 tables' },
+        { id: 'calc-3-b9', code: 'M9',  group: 'B · Times tables',  title: 'Full times table review' },
+        // Phase C — Multi-digit (steps 10–14)
+        { id: 'calc-3-c10', code: 'M10', group: 'C · Multi-digit',  title: '2-digit × 1-digit' },
+        { id: 'calc-3-c11', code: 'M11', group: 'C · Multi-digit',  title: '2-digit × 2-digit' },
+        { id: 'calc-3-c12', code: 'M12', group: 'C · Multi-digit',  title: '3-digit × 1-digit' },
+        { id: 'calc-3-c13', code: 'M13', group: 'C · Multi-digit',  title: '3-digit × 2-digit' },
+        { id: 'calc-3-c14', code: 'M14', group: 'C · Multi-digit',  title: 'Mental multiplication strategies' },
+        // Phase D — Powers of 10 (steps 15–17)
+        { id: 'calc-3-d15', code: 'M15', group: 'D · Powers of 10', title: 'Multiply by 10, 100, 1000' },
+        { id: 'calc-3-d16', code: 'M16', group: 'D · Powers of 10', title: 'Multiply by multiples of 10' },
+        { id: 'calc-3-d17', code: 'M17', group: 'D · Powers of 10', title: 'Introduction to square numbers' },
+        // Phase E — Decimals & Fractions (steps 18–22)
+        { id: 'calc-3-e18', code: 'M18', group: 'E · Dec & Frac',   title: 'Decimal × whole number' },
+        { id: 'calc-3-e19', code: 'M19', group: 'E · Dec & Frac',   title: 'Decimal × decimal' },
+        { id: 'calc-3-e20', code: 'M20', group: 'E · Dec & Frac',   title: 'Fraction × whole number' },
+        { id: 'calc-3-e21', code: 'M21', group: 'E · Dec & Frac',   title: 'Fraction × fraction' },
+        { id: 'calc-3-e22', code: 'M22', group: 'E · Dec & Frac',   title: 'Mixed number × mixed number' },
+        // Phase F — Combined (steps 23–26)
+        { id: 'calc-3-f23', code: 'M23', group: 'F · Combined',     title: 'Estimation & rounding in multiplication' },
+        { id: 'calc-3-f24', code: 'M24', group: 'F · Combined',     title: 'Inverse operations to verify answers' },
+        { id: 'calc-3-f25', code: 'M25', group: 'F · Combined',     title: 'Mixed operations with multiplication' },
+        { id: 'calc-3-f26', code: 'M26', group: 'F · Combined',     title: 'Introduction to multiplication with negatives' },
+        // Phase G — Word problems (steps 27–34)
+        { id: 'calc-3-g27', code: 'M27', group: 'G · Word problems', title: 'Groups & area word problems' },
+        { id: 'calc-3-g28', code: 'M28', group: 'G · Word problems', title: 'Unit price word problems' },
+        { id: 'calc-3-g29', code: 'M29', group: 'G · Word problems', title: 'Decimal multiplication word problems' },
+        { id: 'calc-3-g30', code: 'M30', group: 'G · Word problems', title: 'Fraction multiplication word problems' },
+        { id: 'calc-3-g31', code: 'M31', group: 'G · Word problems', title: 'Ratio & proportion problems' },
+        { id: 'calc-3-g32', code: 'M32', group: 'G · Word problems', title: 'Multi-step: combining stages 3–4' },
+        { id: 'calc-3-g33', code: 'M33', group: 'G · Word problems', title: 'Multi-step complex problems' },
+        { id: 'calc-3-g34', code: 'M34', group: 'G · Word problems', title: 'Challenge: all operations combined' },
       ]
     },
     {
