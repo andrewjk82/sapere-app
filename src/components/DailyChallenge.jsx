@@ -897,39 +897,16 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   useEffect(() => {
     if (isAdmin || step !== 'quiz') return undefined;
 
-    // iOS fires window.blur both when the keyboard appears (input focused) AND
-    // when it disappears (input blurred). Track the last input interaction time
-    // and suppress termination for 2 s after either event.
-    let inputActiveAt = 0;
-    const onInputActivity = (e) => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
-        inputActiveAt = Date.now();
+    // Only terminate on actual app-leave events (tab switch, home button).
+    // window.blur is intentionally excluded — it fires for keyboard show/hide,
+    // system notifications, and other non-cheat interactions.
+    const handleCheatingAttempt = () => {
+      if (document.visibilityState === 'hidden') {
+        showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
+        finishQuizRef.current?.(true);
       }
     };
-    document.addEventListener('focusin', onInputActivity);
-    document.addEventListener('focusout', onInputActivity);
 
-    const handleCheatingAttempt = () => {
-      setTimeout(() => {
-        // Suppress if an input is focused or was focused within the last 1.5 s
-        // (covers the iOS keyboard-raise animation window).
-        const active = document.activeElement;
-        const typingInPage =
-          active &&
-          active !== document.body &&
-          document.contains(active) &&
-          (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable);
-        if (typingInPage) return;
-        if (Date.now() - inputActiveAt < 2000) return;
-
-        if (document.visibilityState === 'hidden' || !document.hasFocus()) {
-          showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
-          finishQuizRef.current?.(true);
-        }
-      }, 600);
-    };
-
-    window.addEventListener('blur', handleCheatingAttempt);
     document.addEventListener('visibilitychange', handleCheatingAttempt);
 
     const handleImmediateTermination = () => {
@@ -938,9 +915,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     window.addEventListener('pagehide', handleImmediateTermination);
 
     return () => {
-      document.removeEventListener('focusin', onInputActivity);
-      document.removeEventListener('focusout', onInputActivity);
-      window.removeEventListener('blur', handleCheatingAttempt);
       document.removeEventListener('visibilitychange', handleCheatingAttempt);
       window.removeEventListener('pagehide', handleImmediateTermination);
     };
