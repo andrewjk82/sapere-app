@@ -112,6 +112,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [elapsedSeconds, setElapsedSeconds] = useState(null);
   const [analyticsRecs, setAnalyticsRecs] = useState(null);
   const [countdown, setCountdown] = useState(0);
+  // 'correct' | 'wrong' | 'pending' | null — brief pastel flash on the quiz
+  // view right after grading. Cleared when the next question starts.
+  const [flash, setFlash] = useState(null);
   const [challengeType, setChallengeType] = useState('daily');
   const [secretNoteKind, setSecretNoteKind] = useState(null);
   const [warnings, setWarnings] = useState(0);
@@ -1238,21 +1241,22 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     });
 
     setStep('feedback');
+    // Brief pastel flash on the quiz view to give an instant emotional cue.
+    setFlash(isGraphSketch ? 'pending' : (correct ? 'correct' : 'wrong'));
 
-    // Auto-transition after 5 seconds if answer is wrong or pending graph sketch
-    if (!correct || isGraphSketch) {
-      setCountdown(isGraphSketch ? 3 : 5);
-      const interval = setInterval(() => {
-        setCountdown(prev => Math.max(0, prev - 1));
-      }, 1000);
-
-      const timer = setTimeout(() => {
-        clearInterval(interval);
-        nextQuestion();
-      }, 5000);
-
-      setAutoTransitionTimer({ timer, interval });
-    }
+    // Auto-advance after 3 seconds for ALL outcomes — feedback is intentionally
+    // minimal now (just correct/wrong + countdown). The detailed worked
+    // solution lives in the post-quiz Review view, not here.
+    const COUNTDOWN_SECONDS = 3;
+    setCountdown(COUNTDOWN_SECONDS);
+    const interval = setInterval(() => {
+      setCountdown(prev => Math.max(0, prev - 1));
+    }, 1000);
+    const timer = setTimeout(() => {
+      clearInterval(interval);
+      nextQuestion();
+    }, COUNTDOWN_SECONDS * 1000);
+    setAutoTransitionTimer({ timer, interval });
   };
 
   // Clear timer when moving to next manually or component unmounts
@@ -1272,6 +1276,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setAutoTransitionTimer(null);
     }
     setCountdown(0);
+    setFlash(null);
     setSubAnswers({});
 
     if (currentIdx < TOTAL_QUESTIONS - 1) {
@@ -2011,6 +2016,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   timeLeft={timeLeft}
                   countdown={countdown}
+                  flash={flash}
                   selectedOption={selectedOption}
                   setSelectedOption={setSelectedOption}
                   selectedOptionIdx={selectedOptionIdx}

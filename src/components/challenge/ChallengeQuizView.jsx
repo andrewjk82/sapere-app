@@ -34,6 +34,7 @@ const ChallengeQuizView = ({
   showSplitScreen,
   showSideCanvas,
   isTabletCanvasLayout,
+  flash,
   handleAnswer,
   nextQuestion,
   canvasRef,
@@ -44,16 +45,23 @@ const ChallengeQuizView = ({
   // Use pre-shuffled options if provided, else fall back to question's own options
   const displayOptions = shuffledOptions && shuffledOptions.length > 0 ? shuffledOptions : getOptions(currentQuestion);
 
+  // Subtle full-screen pastel flash right after grading: green = correct,
+  // red = wrong, amber = pending review. Animates 0.45 → 0 over ~650ms.
+  const flashColor =
+    flash === 'correct' ? '#bbf7d0' :
+    flash === 'wrong' ? '#fecaca' :
+    flash === 'pending' ? '#fde68a' : null;
+
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      style={{ 
-        position: 'fixed', 
-        inset: 0, 
-        backgroundColor: '#f8fafc', 
-        zIndex: 2000, 
+      style={{
+        position: 'fixed',
+        inset: 0,
+        backgroundColor: '#f8fafc',
+        zIndex: 2000,
         padding: isMobile ? '20px 16px' : '32px clamp(20px, 3vw, 48px)',
         overflowY: 'auto',
         display: 'flex',
@@ -61,6 +69,17 @@ const ChallengeQuizView = ({
         alignItems: 'center'
       }}
     >
+      <AnimatePresence>
+        {flashColor && (
+          <motion.div
+            key={`flash-${currentIdx}-${flash}`}
+            initial={{ opacity: 0.45 }}
+            animate={{ opacity: 0 }}
+            transition={{ duration: 0.65, ease: 'easeOut' }}
+            style={{ position: 'fixed', inset: 0, background: flashColor, pointerEvents: 'none', zIndex: 2050 }}
+          />
+        )}
+      </AnimatePresence>
       <div style={{ 
         maxWidth: showSplitScreen ? 'min(1500px, calc(100vw - 64px))' : '600px', 
         width: '100%', 
@@ -481,70 +500,49 @@ const ChallengeQuizView = ({
             </div>
           )}
 
-          {step === 'feedback' && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '10px' }}>
-              {(() => {
-                const isPendingReview = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
-                
-                if (isPendingReview) {
-                  return (
-                    <div style={{ padding: '24px', borderRadius: '24px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                        <Clock size={24} color="#d97706" />
-                        <span style={{ fontSize: '1.1rem', fontWeight: 900, color: '#92400e' }}>
-                          Submitted for Review!
-                        </span>
-                      </div>
-                      <p style={{ margin: 0, color: '#b45309', fontSize: '0.95rem', fontWeight: 600 }}>
-                        Your teacher will review your work and award points soon.
-                      </p>
-                    </div>
-                  );
-                }
-
-                return (
-                  <div style={{ padding: '24px', borderRadius: '24px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#dcfce7' : '#fee2e2'}` }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                      {isCorrect ? <CheckCircle2 size={24} color="#10b981" /> : <XCircle size={24} color="#ef4444" />}
-                      <span style={{ fontSize: '1.1rem', fontWeight: 900, color: isCorrect ? '#166534' : '#991b1b' }}>
-                        {isCorrect ? 'Excellent!' : 'Keep going!'}
-                      </span>
-                    </div>
-                    {!isCorrect && (
-                      <div style={{ margin: '0 0 16px', padding: '12px 16px', borderRadius: '12px', background: 'white', border: '1px solid #fee2e2' }}>
-                        <p style={{ margin: 0, color: '#b91c1c', fontSize: '0.95rem', fontWeight: 800 }}>
-                          <span style={{ opacity: 0.7, marginRight: '8px' }}>Correct Answer:</span>
-                          <MathView content={
-                            currentQuestion._shuffledAnswer !== undefined
-                              ? currentQuestion._shuffledAnswer
-                              : (currentQuestion.type === 'multiple_choice' && currentQuestion.isManual
-                                  ? getOptionText(getOptions(currentQuestion)[parseInt(currentQuestion.answer)])
-                                  : (currentQuestion.type === 'interactive_grid' ? `${currentQuestion.answer} panels shaded` : currentQuestion.answer))
-                          } />
-                        </p>
-                      </div>
-                    )}
-                    {currentQuestion?.solution && (
-                      <div style={{ background: 'white', padding: '16px', borderRadius: '16px', marginTop: '12px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#6366f1', marginBottom: '8px' }}>
-                          <Lightbulb size={18} />
-                          <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.05em' }}>Solution</span>
-                        </div>
-                        <MathView 
-                          content={currentQuestion.solution} 
-                          graphData={currentQuestion.graphData}
-                          style={{ color: '#475569', fontSize: '0.95rem' }} 
-                        />
-                      </div>
-                    )}
-                  </div>
-                );
-              })()}
-              <button onClick={nextQuestion} className="app-button app-button--primary" style={{ padding: '20px', borderRadius: '20px', fontSize: '1.1rem', width: '100%' }}>
-                {currentIdx === TOTAL_QUESTIONS - 1 ? (countdown > 0 ? `Finish Challenge (${countdown}s)` : 'Finish Challenge') : (countdown > 0 ? `Next Question (${countdown}s)` : 'Next Question')}
-              </button>
-            </motion.div>
-          )}
+          {step === 'feedback' && (() => {
+            const isPendingReview = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
+            const palette = isPendingReview
+              ? { bg: '#fffbeb', border: '#fef3c7', text: '#92400e', accent: '#d97706', icon: <Clock size={32} color="#d97706" />, label: 'Submitted for review' }
+              : isCorrect
+                ? { bg: '#f0fdf4', border: '#dcfce7', text: '#166534', accent: '#10b981', icon: <CheckCircle2 size={32} color="#10b981" />, label: 'Correct!' }
+                : { bg: '#fef2f2', border: '#fee2e2', text: '#991b1b', accent: '#ef4444', icon: <XCircle size={32} color="#ef4444" />, label: 'Not quite' };
+            return (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                style={{
+                  marginTop: '10px',
+                  padding: '28px',
+                  borderRadius: '24px',
+                  background: palette.bg,
+                  border: `1px solid ${palette.border}`,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '12px',
+                  textAlign: 'center',
+                }}
+              >
+                {palette.icon}
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: palette.text }}>
+                  {palette.label}
+                </div>
+                <div style={{ fontSize: '0.85rem', fontWeight: 700, color: palette.text, opacity: 0.7 }}>
+                  {currentIdx === TOTAL_QUESTIONS - 1
+                    ? (countdown > 0 ? `Finishing in ${countdown}s…` : 'Finishing…')
+                    : (countdown > 0 ? `Next question in ${countdown}s…` : 'Next question…')}
+                </div>
+                <button
+                  onClick={nextQuestion}
+                  className="app-button"
+                  style={{ marginTop: '4px', padding: '10px 18px', borderRadius: '14px', fontSize: '0.85rem', fontWeight: 800, background: 'rgba(255,255,255,0.7)', color: palette.text, border: `1px solid ${palette.border}` }}
+                >
+                  Skip ▶
+                </button>
+              </motion.div>
+            );
+          })()}
         </div>
 
         {/* Right Side: Working Out Canvas */}
