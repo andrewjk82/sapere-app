@@ -897,24 +897,38 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   useEffect(() => {
     if (isAdmin || step !== 'quiz') return undefined;
 
-    // Only terminate on actual app-leave events (tab switch, home button).
-    // window.blur is intentionally excluded — it fires for keyboard show/hide,
-    // system notifications, and other non-cheat interactions.
+    // Track last input interaction — iOS fires pagehide/visibilitychange
+    // when the virtual keyboard is dismissed, so we suppress termination
+    // for 2 s after any input focus/blur event.
+    let inputActiveAt = 0;
+    const onInputActivity = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+        inputActiveAt = Date.now();
+      }
+    };
+    document.addEventListener('focusin', onInputActivity);
+    document.addEventListener('focusout', onInputActivity);
+
+    const recentInputActivity = () => Date.now() - inputActiveAt < 2000;
+
     const handleCheatingAttempt = () => {
+      if (recentInputActivity()) return;
       if (document.visibilityState === 'hidden') {
         showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
         finishQuizRef.current?.(true);
       }
     };
-
     document.addEventListener('visibilitychange', handleCheatingAttempt);
 
     const handleImmediateTermination = () => {
+      if (recentInputActivity()) return;
       finishQuizRef.current?.(true);
     };
     window.addEventListener('pagehide', handleImmediateTermination);
 
     return () => {
+      document.removeEventListener('focusin', onInputActivity);
+      document.removeEventListener('focusout', onInputActivity);
       document.removeEventListener('visibilitychange', handleCheatingAttempt);
       window.removeEventListener('pagehide', handleImmediateTermination);
     };
