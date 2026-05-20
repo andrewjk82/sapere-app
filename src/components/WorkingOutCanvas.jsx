@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.9f-pen';
+const CANVAS_VERSION = 'v9.9g-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -339,8 +339,21 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       e.preventDefault();
     };
 
+    const isScrollableTarget = (target) =>
+      target?.closest?.('[data-scrollable], .app-page, .app-panel, [style*="overflow"]') ||
+      (() => {
+        let el = target;
+        while (el && el !== document.body) {
+          const style = window.getComputedStyle(el);
+          if (['auto', 'scroll'].includes(style.overflowY) && el.scrollHeight > el.clientHeight) return true;
+          el = el.parentElement;
+        }
+        return false;
+      })();
+
     const blockPageTouch = (e) => {
       if (isEditableTarget(e.target)) return;
+      if (isScrollableTarget(e.target)) return;
       if (e.type === 'touchstart' && isTapTarget(e.target) && !isStylusTouch(e)) return;
       e.preventDefault();
     };
