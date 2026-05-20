@@ -1322,11 +1322,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       } catch (e) {
         console.warn('analytics generation failed (non-fatal):', e);
       }
-      // Lock BEFORE setting step so the auto-update effect in App.jsx can't
-      // fire a page reload in the narrow window between quiz end and result render.
+      // Lock briefly so the auto-update effect in App.jsx can't fire a page
+      // reload in the narrow window between quiz end and result render.
+      // Release after 1 s — the result screen is fully rendered by then and
+      // the student should be free to navigate to other tabs.
       if (setIsLocked) setIsLocked(true);
       setStep('result');
-      // isLocked stays true until the student presses "Return Home" in ChallengeResultView.
+      setTimeout(() => { if (setIsLocked) setIsLocked(false); }, 1000);
 
       if (user?.uid) {
         const now = new Date();
