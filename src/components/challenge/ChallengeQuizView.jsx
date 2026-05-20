@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { Flag, Clock, Lightbulb, CheckCircle2, XCircle, Check } from 'lucide-react';
+import { Flag, Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { 
@@ -572,28 +572,32 @@ const ChallengeQuizView = ({
                     : (countdown > 0 ? `Next in ${countdown}` : 'Next')}
                 </div>
 
-                {/* Solid pill Next button */}
+                {/* Purple gradient pill Next button */}
                 <button
                   onClick={nextQuestion}
                   style={{
-                    marginTop: '4px',
-                    padding: '11px 26px',
-                    borderRadius: '999px',
-                    fontSize: '0.88rem',
+                    marginTop: '6px',
+                    padding: '16px 34px',
+                    borderRadius: '22px',
+                    fontSize: '1.05rem',
                     fontWeight: 800,
-                    background: palette.accent,
+                    background: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
                     color: '#fff',
                     border: 'none',
                     cursor: 'pointer',
-                    boxShadow: `0 10px 22px ${palette.shadow}`,
-                    letterSpacing: '0.02em',
-                    transition: 'transform 0.15s ease',
+                    boxShadow: '0 14px 28px rgba(124, 58, 237, 0.32), 0 4px 8px rgba(124, 58, 237, 0.18)',
+                    letterSpacing: '0.01em',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    transition: 'transform 0.15s ease, box-shadow 0.15s ease',
                   }}
                   onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.97)'; }}
                   onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
                 >
-                  Next →
+                  {isLast ? 'Finish' : 'Next'}
+                  <ArrowRight size={20} strokeWidth={2.5} />
                 </button>
               </motion.div>
             );
