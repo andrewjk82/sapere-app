@@ -898,13 +898,24 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (isAdmin || step !== 'quiz') return undefined;
 
     const handleCheatingAttempt = () => {
-      // Small buffer to avoid firing on tiny blips, but essentially instant
+      // Longer buffer: iOS raises the virtual keyboard by briefly blurring
+      // the window — 100 ms was too short and caught the keyboard animation.
       setTimeout(() => {
+        // If an input/textarea inside the page is focused (e.g. answer field,
+        // report box), the student is still on the page — don't terminate.
+        const active = document.activeElement;
+        const typingInPage =
+          active &&
+          active !== document.body &&
+          document.contains(active) &&
+          (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable);
+        if (typingInPage) return;
+
         if (document.visibilityState === 'hidden' || !document.hasFocus()) {
           showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
           finishQuizRef.current?.(true);
         }
-      }, 100);
+      }, 600);
     };
 
     window.addEventListener('blur', handleCheatingAttempt);
