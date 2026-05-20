@@ -897,16 +897,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   useEffect(() => {
     if (isAdmin || step !== 'quiz') return undefined;
 
-    // Track whether an input/textarea just received focus. iOS fires window.blur
-    // during the keyboard-raise animation — before or right as the input gets focus.
-    // We suppress termination for 1.5 s after any input focusin event.
-    let inputFocusedAt = 0;
-    const onInputFocusIn = (e) => {
+    // iOS fires window.blur both when the keyboard appears (input focused) AND
+    // when it disappears (input blurred). Track the last input interaction time
+    // and suppress termination for 2 s after either event.
+    let inputActiveAt = 0;
+    const onInputActivity = (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
-        inputFocusedAt = Date.now();
+        inputActiveAt = Date.now();
       }
     };
-    document.addEventListener('focusin', onInputFocusIn);
+    document.addEventListener('focusin', onInputActivity);
+    document.addEventListener('focusout', onInputActivity);
 
     const handleCheatingAttempt = () => {
       setTimeout(() => {
@@ -919,7 +920,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           document.contains(active) &&
           (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable);
         if (typingInPage) return;
-        if (Date.now() - inputFocusedAt < 1500) return;
+        if (Date.now() - inputActiveAt < 2000) return;
 
         if (document.visibilityState === 'hidden' || !document.hasFocus()) {
           showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
@@ -937,7 +938,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     window.addEventListener('pagehide', handleImmediateTermination);
 
     return () => {
-      document.removeEventListener('focusin', onInputFocusIn);
+      document.removeEventListener('focusin', onInputActivity);
+      document.removeEventListener('focusout', onInputActivity);
       window.removeEventListener('blur', handleCheatingAttempt);
       document.removeEventListener('visibilitychange', handleCheatingAttempt);
       window.removeEventListener('pagehide', handleImmediateTermination);
