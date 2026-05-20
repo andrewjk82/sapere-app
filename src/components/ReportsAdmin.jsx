@@ -711,107 +711,226 @@ const ReportsAdmin = () => {
       </div>
 
       <AnimatePresence>
-        {previewReport && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            style={{ position: 'fixed', inset: 0, zIndex: 1200, display: 'grid', placeItems: 'center', padding: '20px' }}
-          >
-            <div onClick={() => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); }} style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.58)', backdropFilter: 'blur(8px)' }} />
+        {previewReport && (() => {
+          const closePreview = () => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); };
+          const q = previewQuestion || previewReport.questionData || {};
+          const studentAnswer = getPreviewStudentAnswer();
+          const options = Array.isArray(q.options) ? q.options : [];
+          return (
             <motion.div
-              initial={{ scale: 0.96, y: 10 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.96, y: 10 }}
-              style={{ position: 'relative', width: 'min(760px, 100%)', maxHeight: '86vh', overflowY: 'auto', background: '#fff', borderRadius: '28px', padding: '28px', boxShadow: '0 30px 80px rgba(15,23,42,0.32)' }}
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              style={{ position: 'fixed', inset: 0, zIndex: 1200, display: 'flex', flexDirection: 'column', background: '#f8fafc' }}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '16px', marginBottom: '22px' }}>
+              {/* Top bar — same style as ChallengeReviewView */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 32px', borderBottom: '1px solid rgba(15,23,42,0.06)', background: '#fff', flexShrink: 0 }}>
                 <div>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#6366f1', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Reported Question</div>
-                  <h3 style={{ margin: '6px 0 0', fontSize: '1.45rem', color: '#1e1b4b' }}>{previewQuestion?.chapterTitle || previewReport.questionData?.chapterTitle || 'Question Preview'}</h3>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#ef4444', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Student Report</div>
+                  <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b', marginTop: '2px' }}>
+                    {q.chapterTitle || previewReport.questionData?.chapterTitle || 'Question Review'}
+                  </div>
                 </div>
-                <button onClick={() => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); }} style={{ width: '40px', height: '40px', borderRadius: '14px', border: 'none', background: '#f1f5f9', color: '#64748b', cursor: 'pointer' }}>
-                  <X size={18} />
-                </button>
-              </div>
-
-              <div style={{ display: 'grid', gap: '16px' }}>
-                <div style={{ padding: '18px', borderRadius: '18px', background: '#fff1f2', border: '1px solid #ffe4e6' }}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#e11d48', textTransform: 'uppercase', marginBottom: '8px' }}>Student Report</div>
-                  <div style={{ color: '#7f1d1d', fontWeight: 700, lineHeight: 1.5 }}>"{previewReport.message || 'No message'}"</div>
-                </div>
-
-                <div style={{ padding: '18px', borderRadius: '18px', background: '#eef2ff', border: '1px solid #c7d2fe' }}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#4f46e5', textTransform: 'uppercase', marginBottom: '8px' }}>Student Answer</div>
-                  {previewAttemptLoading && !getPreviewStudentAnswer() ? (
-                    <div style={{ color: '#64748b', fontWeight: 700 }}>Loading submitted answer...</div>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                  {previewReport.creditRestored ? (
+                    <span style={{ padding: '8px 16px', borderRadius: '999px', background: '#f0fdf4', color: '#166534', fontSize: '0.78rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <CheckCircle size={15} /> Credit Restored
+                    </span>
                   ) : (
-                    <MathView content={formatStudentAnswer(getPreviewStudentAnswer())} style={{ color: '#312e81', fontWeight: 800, whiteSpace: 'pre-wrap' }} />
+                    <button
+                      onClick={() => handleRestoreCredit(previewReport)}
+                      disabled={!!processingId}
+                      style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: '#f97316', color: '#fff', fontWeight: 900, fontSize: '0.88rem', cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 6px 16px rgba(249,115,22,0.3)' }}
+                    >
+                      <Award size={16} /> {processingId === previewReport.id ? 'Restoring…' : 'Restore Credit'}
+                    </button>
                   )}
+                  <button
+                    onClick={handleFixPreviewQuestion}
+                    style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 900, fontSize: '0.88rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 6px 16px rgba(99,102,241,0.3)' }}
+                  >
+                    <Wrench size={16} /> Fix Question
+                  </button>
+                  <button onClick={closePreview} style={{ width: '40px', height: '40px', borderRadius: '50%', border: '1px solid rgba(15,23,42,0.06)', background: '#fff', color: '#64748b', cursor: 'pointer', display: 'grid', placeItems: 'center', boxShadow: '0 4px 12px rgba(15,23,42,0.05)' }}>
+                    <X size={18} />
+                  </button>
                 </div>
-
-                {previewReport.workingOut && (
-                  <div style={{ padding: '18px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-                    <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', marginBottom: '10px' }}>Student's Working Out</div>
-                    <img src={previewReport.workingOut} alt="Student working out" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #e2e8f0' }} />
-                  </div>
-                )}
-
-                <div style={{ padding: '22px', borderRadius: '22px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#64748b', textTransform: 'uppercase', marginBottom: '10px' }}>Question</div>
-                  <MathView content={previewQuestion?.question || previewQuestion?.text || 'No question text'} style={{ fontSize: '1.15rem', fontWeight: 800, color: '#1e1b4b' }} />
-                  {previewQuestion?.questionImage && (
-                    <img src={previewQuestion.questionImage} alt="Question" style={{ width: '100%', maxHeight: '240px', objectFit: 'contain', marginTop: '16px', borderRadius: '16px', background: '#fff' }} />
-                  )}
-                </div>
-
-                {Array.isArray(previewQuestion?.options) && previewQuestion.options.length > 0 && (
-                  <div style={{ display: 'grid', gap: '10px' }}>
-                    {previewQuestion.options.map((option, idx) => {
-                      const text = typeof option === 'string' ? option : option.text;
-                      const isAnswer = String(previewQuestion.answer) === String(idx) || String(previewQuestion.answer) === String(text);
-                      return (
-                        <div key={idx} style={{ display: 'flex', gap: '12px', alignItems: 'center', padding: '14px 16px', borderRadius: '16px', background: isAnswer ? '#f0fdf4' : '#fff', border: `1.5px solid ${isAnswer ? '#bbf7d0' : '#e2e8f0'}` }}>
-                          <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: isAnswer ? '#10b981' : '#f1f5f9', color: isAnswer ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, flexShrink: 0 }}>{idx + 1}</div>
-                          <MathView content={text || ''} style={{ fontWeight: 700, color: '#334155' }} />
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-
-                {(previewQuestion?.hint || previewQuestion?.solution) && (
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                    <div style={{ padding: '16px', borderRadius: '16px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-                      <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#d97706', textTransform: 'uppercase', marginBottom: '8px' }}>Hint</div>
-                      <MathView content={previewQuestion.hint || 'No hint'} style={{ color: '#92400e', fontWeight: 700 }} />
-                    </div>
-                    <div style={{ padding: '16px', borderRadius: '16px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
-                      <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#15803d', textTransform: 'uppercase', marginBottom: '8px' }}>Solution</div>
-                      <MathView content={previewQuestion.solution || 'No solution'} style={{ color: '#166534', fontWeight: 700 }} />
-                    </div>
-                  </div>
-                )}
               </div>
 
-              <div style={{ marginTop: '24px', display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
-                <button onClick={() => { setPreviewReport(null); setPreviewQuestion(null); setPreviewAttempt(null); }} style={{ padding: '14px 20px', borderRadius: '16px', border: 'none', background: '#f1f5f9', color: '#475569', fontWeight: 800, cursor: 'pointer' }}>Close</button>
-                {!previewReport.creditRestored && (
-                  <button
-                    onClick={() => handleRestoreCredit(previewReport)}
-                    disabled={!!processingId}
-                    style={{ padding: '14px 22px', borderRadius: '16px', border: 'none', background: '#f97316', color: '#fff', fontWeight: 900, cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
-                  >
-                    <Award size={17} /> {processingId === previewReport.id ? 'Restoring...' : 'Restore Credit'}
-                  </button>
-                )}
-                <button onClick={handleFixPreviewQuestion} style={{ padding: '14px 22px', borderRadius: '16px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 900, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Wrench size={17} /> Fix
-                </button>
+              {/* Body — matches ChallengeReviewView layout */}
+              <div style={{ flex: 1, overflowY: 'auto', padding: '28px 32px', display: 'flex', gap: '28px', alignItems: 'flex-start', maxWidth: '1400px', width: '100%', boxSizing: 'border-box', margin: '0 auto' }}>
+                {/* Left column */}
+                <div style={{ flex: '0 1 640px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
+
+                  {/* Student's report message */}
+                  <div style={{ padding: '20px 24px', borderRadius: '20px', background: '#fff1f2', border: '1.5px solid #fecaca', position: 'relative', overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: '#ef4444' }} />
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+                      <AlertCircle size={17} style={{ color: '#ef4444' }} />
+                      <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#ef4444' }}>Student's Report</span>
+                      <span style={{ marginLeft: 'auto', fontSize: '0.72rem', color: '#94a3b8', fontWeight: 600 }}>
+                        {previewReport.createdAt?.toDate ? previewReport.createdAt.toDate().toLocaleString() : ''}
+                      </span>
+                    </div>
+                    <p style={{ margin: 0, color: '#7f1d1d', fontWeight: 700, fontSize: '1rem', lineHeight: 1.6 }}>
+                      "{previewReport.message || 'No message'}"
+                    </p>
+                    <div style={{ marginTop: '10px', fontSize: '0.78rem', color: '#94a3b8', fontWeight: 700 }}>
+                      — {previewReport.studentName || 'Student'}
+                    </div>
+                  </div>
+
+                  {/* Question card */}
+                  <div style={{ padding: '24px 26px', borderRadius: '24px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)', boxShadow: '0 12px 28px rgba(15,23,42,0.04)' }}>
+                    <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '10px' }}>Question</div>
+                    <MathView content={q.question || q.text || 'No question text'} style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.55 }} />
+                    {q.questionImage && (
+                      <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '260px', objectFit: 'contain', marginTop: '14px', borderRadius: '14px', background: '#f8fafc' }} />
+                    )}
+                  </div>
+
+                  {/* Student's answer */}
+                  <div style={{ padding: '20px 22px', borderRadius: '20px', background: '#eef2ff', border: '1px solid #c7d2fe' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                      <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#4f46e5' }}>Student's Answer</span>
+                    </div>
+                    {previewAttemptLoading && !studentAnswer ? (
+                      <div style={{ color: '#64748b', fontWeight: 700 }}>Loading…</div>
+                    ) : (
+                      <MathView content={formatStudentAnswer(studentAnswer) || 'No answer recorded'} style={{ color: '#312e81', fontWeight: 800, fontSize: '1rem', whiteSpace: 'pre-wrap' }} />
+                    )}
+                  </div>
+
+                  {/* Options */}
+                  {options.length > 0 && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                      {options.map((opt, i) => {
+                        const text = typeof opt === 'string' ? opt : opt.text;
+                        const img = opt?.imageUrl || opt?.image || '';
+                        const isCorrect = String(q.answer) === String(i) || String(q.answer) === String(text);
+                        const isChosen = String(studentAnswer) === String(text);
+                        const isWrong = isChosen && !isCorrect;
+                        return (
+                          <div key={i} style={{
+                            display: 'flex', alignItems: 'center', gap: '14px',
+                            padding: '14px 18px', borderRadius: '100px',
+                            background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : '#fff',
+                            boxShadow: isCorrect ? '0 0 0 2px #10b981' : isWrong ? '0 0 0 2px #ef4444' : '0 0 0 1px #e2e8f0',
+                          }}>
+                            <div style={{ width: '32px', height: '32px', borderRadius: '50%', flexShrink: 0, background: isCorrect ? '#10b981' : isWrong ? '#ef4444' : '#f1f5f9', color: isCorrect || isWrong ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.9rem' }}>
+                              {String.fromCharCode(65 + i)}
+                            </div>
+                            {img && <img src={img} alt="" style={{ width: '40px', height: '40px', objectFit: 'contain', borderRadius: '8px' }} />}
+                            <MathView content={text || ''} style={{ fontWeight: 700, color: '#1e1b4b', flex: 1 }} />
+                            {isCorrect && <CheckCircle size={20} style={{ color: '#10b981', flexShrink: 0 }} />}
+                            {isWrong && <X size={20} style={{ color: '#ef4444', flexShrink: 0 }} />}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {/* Working out image */}
+                  {previewReport.workingOut && (
+                    <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#faf5ff', border: '1.5px solid #e9d5ff' }}>
+                      <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Student's Working Out</div>
+                      <img src={previewReport.workingOut} alt="Working out" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', borderRadius: '12px', background: '#fff', border: '1px solid #e2e8f0' }} />
+                    </div>
+                  )}
+
+                  {/* Hint */}
+                  {q.hint && (
+                    <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', color: '#b45309' }}>
+                        <BookOpen size={16} />
+                        <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase' }}>Hint</span>
+                      </div>
+                      <MathView content={q.hint} style={{ color: '#78350f', fontWeight: 600, fontSize: '0.95rem' }} />
+                    </div>
+                  )}
+
+                  {/* Solution */}
+                  {q.solution && (
+                    <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+                      <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#15803d', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '8px' }}>Solution</div>
+                      <MathView content={q.solution} style={{ color: '#166534', fontWeight: 700, fontSize: '0.95rem' }} />
+                    </div>
+                  )}
+                </div>
+
+                {/* Right column — teacher notes / metadata */}
+                <div style={{ flex: '1 1 320px', minWidth: '260px', display: 'flex', flexDirection: 'column', gap: '16px', position: 'sticky', top: '0' }}>
+                  <div style={{ padding: '22px', borderRadius: '22px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)', boxShadow: '0 12px 28px rgba(15,23,42,0.04)' }}>
+                    <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '16px' }}>Report Details</div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b' }}>Student</span>
+                        <span style={{ fontSize: '0.88rem', fontWeight: 800, color: '#1e1b4b' }}>{previewReport.studentName || '—'}</span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b' }}>Source</span>
+                        <span style={{ fontSize: '0.78rem', fontWeight: 800, padding: '3px 10px', borderRadius: '999px', background: previewReport.source === 'review' ? '#faf5ff' : '#f0f9ff', color: previewReport.source === 'review' ? '#7c3aed' : '#0369a1' }}>
+                          {previewReport.source === 'review' ? 'Post-quiz review' : 'During quiz'}
+                        </span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b' }}>Status</span>
+                        <span style={{ fontSize: '0.78rem', fontWeight: 800, padding: '3px 10px', borderRadius: '999px', background: previewReport.status === 'resolved' ? '#f0fdf4' : '#fff1f2', color: previewReport.status === 'resolved' ? '#166534' : '#b91c1c' }}>
+                          {previewReport.status === 'resolved' ? 'Resolved' : 'Open'}
+                        </span>
+                      </div>
+                      {previewReport.creditRestored && (
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b' }}>Credit</span>
+                          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#166534' }}>+{previewReport.restoredPoints || 0} pts restored</span>
+                        </div>
+                      )}
+                      <div style={{ height: '1px', background: '#f1f5f9' }} />
+                      <div>
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b' }}>Chapter</span>
+                        <p style={{ margin: '4px 0 0', fontSize: '0.88rem', fontWeight: 700, color: '#1e1b4b' }}>{q.chapterTitle || '—'}</p>
+                      </div>
+                      {q.topicTitle && (
+                        <div>
+                          <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b' }}>Topic</span>
+                          <p style={{ margin: '4px 0 0', fontSize: '0.85rem', fontWeight: 700, color: '#1e1b4b' }}>{q.topicCode ? `${q.topicCode} · ` : ''}{q.topicTitle}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Teacher actions */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    {!previewReport.creditRestored && (
+                      <button
+                        onClick={() => handleRestoreCredit(previewReport)}
+                        disabled={!!processingId}
+                        style={{ width: '100%', padding: '16px', borderRadius: '18px', border: 'none', background: 'linear-gradient(135deg, #fb923c, #f97316)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', boxShadow: '0 8px 20px rgba(249,115,22,0.28)' }}
+                      >
+                        <Award size={18} /> {processingId === previewReport.id ? 'Restoring…' : 'Restore Credit'}
+                      </button>
+                    )}
+                    <button
+                      onClick={handleFixPreviewQuestion}
+                      style={{ width: '100%', padding: '16px', borderRadius: '18px', border: 'none', background: 'linear-gradient(135deg, #818cf8, #6366f1)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', boxShadow: '0 8px 20px rgba(99,102,241,0.28)' }}
+                    >
+                      <Wrench size={18} /> Fix Question
+                    </button>
+                    {previewReport.status !== 'resolved' && (
+                      <button
+                        onClick={() => { handleMarkResolved(previewReport.id); closePreview(); }}
+                        style={{ width: '100%', padding: '14px', borderRadius: '18px', border: '1.5px solid #bbf7d0', background: '#f0fdf4', color: '#166534', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                      >
+                        <CheckCircle size={17} /> Mark Resolved
+                      </button>
+                    )}
+                    <button onClick={closePreview} style={{ width: '100%', padding: '14px', borderRadius: '18px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}>
+                      Close
+                    </button>
+                  </div>
+                </div>
               </div>
             </motion.div>
-          </motion.div>
-        )}
+          );
+        })()}
       </AnimatePresence>
 
       {editingQuestion && (
