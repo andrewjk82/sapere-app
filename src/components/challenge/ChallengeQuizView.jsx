@@ -48,6 +48,54 @@ const ChallengeQuizView = ({
   const isFeedback = step === 'feedback';
   const leftColumnRef = useRef(null);
   const feedbackRef = useRef(null);
+  const sideScrollTouchYRef = useRef(null);
+
+  const splitScreenHeight = 'calc(100dvh - 80px)';
+
+  const scrollLeftColumnBy = (deltaY) => {
+    const node = leftColumnRef.current;
+    if (!node || !Number.isFinite(deltaY) || deltaY === 0) return false;
+
+    const maxScrollTop = node.scrollHeight - node.clientHeight;
+    if (maxScrollTop <= 0) return false;
+
+    const currentTop = node.scrollTop;
+    const nextTop = Math.max(0, Math.min(maxScrollTop, currentTop + deltaY));
+    if (nextTop === currentTop) return false;
+
+    node.scrollTop = nextTop;
+    return true;
+  };
+
+  const handleSideCanvasWheel = (event) => {
+    if (!isFeedback) return;
+    if (scrollLeftColumnBy(event.deltaY)) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  };
+
+  const handleSideCanvasTouchStart = (event) => {
+    if (!isFeedback) return;
+    sideScrollTouchYRef.current = event.touches?.[0]?.clientY ?? null;
+  };
+
+  const handleSideCanvasTouchMove = (event) => {
+    if (!isFeedback || sideScrollTouchYRef.current == null) return;
+    const nextY = event.touches?.[0]?.clientY;
+    if (typeof nextY !== 'number') return;
+
+    const deltaY = sideScrollTouchYRef.current - nextY;
+    if (scrollLeftColumnBy(deltaY)) {
+      event.preventDefault();
+      event.stopPropagation();
+      sideScrollTouchYRef.current = nextY;
+    }
+  };
+
+  const resetSideCanvasTouchScroll = () => {
+    sideScrollTouchYRef.current = null;
+  };
 
   useEffect(() => {
     if (!isFeedback) return undefined;
@@ -114,7 +162,8 @@ const ChallengeQuizView = ({
         flexDirection: showSideCanvas ? 'row' : 'column', 
         gap: showSideCanvas ? '28px' : (isMobile ? '20px' : '40px'),
         alignItems: showSideCanvas ? 'stretch' : 'flex-start',
-        height: showSideCanvas ? '100%' : 'auto',
+        height: showSideCanvas ? splitScreenHeight : 'auto',
+        maxHeight: showSideCanvas ? splitScreenHeight : 'none',
         minHeight: 0,
         transition: 'all 0.3s ease'
       }}>
@@ -138,6 +187,7 @@ const ChallengeQuizView = ({
                 touchAction: 'pan-y',
                 WebkitOverflowScrolling: 'touch',
                 scrollbarGutter: 'stable',
+                alignSelf: 'stretch',
                 paddingRight: '6px',
                 paddingBottom: '56px'
               }
@@ -665,6 +715,13 @@ const ChallengeQuizView = ({
             isSubmitted={step === 'feedback'}
             showSplitScreen={showSplitScreen}
             fillAvailableHeight
+            scrollProxyHandlers={isFeedback ? {
+              onWheel: handleSideCanvasWheel,
+              onTouchStart: handleSideCanvasTouchStart,
+              onTouchMove: handleSideCanvasTouchMove,
+              onTouchEnd: resetSideCanvasTouchScroll,
+              onTouchCancel: resetSideCanvasTouchScroll,
+            } : undefined}
             ref={canvasRef}
           />
         )}

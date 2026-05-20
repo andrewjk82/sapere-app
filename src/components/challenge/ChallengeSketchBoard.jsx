@@ -46,7 +46,8 @@ const ChallengeSketchBoard = React.forwardRef(({
   questionType, 
   isSubmitted,
   showSplitScreen,
-  fillAvailableHeight = false
+  fillAvailableHeight = false,
+  scrollProxyHandlers
 }, ref) => {
   if (!showSplitScreen) return null;
   
@@ -65,7 +66,7 @@ const ChallengeSketchBoard = React.forwardRef(({
       flexDirection: 'column',
       position: isTabletPlacement || fillAvailableHeight ? 'relative' : 'sticky',
       top: isTabletPlacement || fillAvailableHeight ? 'auto' : '52px',
-    }}>
+    }} {...(scrollProxyHandlers || {})}>
       <CanvasErrorBoundary key={questionId}>
         <WorkingOutCanvas
           ref={ref}
