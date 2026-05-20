@@ -110,7 +110,7 @@ const ChallengeQuizView = ({
         });
         return;
       }
-      feedbackNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      feedbackNode.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }, 80);
     return () => window.clearTimeout(timer);
   }, [isFeedback, currentIdx, showSideCanvas]);
