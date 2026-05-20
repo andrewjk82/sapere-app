@@ -1,6 +1,9 @@
 import { useState, useRef, useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag } from 'lucide-react';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { db } from '../../firebase/config';
+import { useAuth } from '../../context/AuthContext';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import WorkedSolutionSteps from './WorkedSolutionSteps';
@@ -45,6 +48,55 @@ const ChallengeReviewView = ({
 }) => {
   const [idx, setIdx] = useState(() => Math.min(Math.max(0, startIdx), Math.max(0, questions.length - 1)));
   const padRef = useRef(null);
+  const { user } = useAuth();
+
+  // Report state
+  const [reportingIdx, setReportingIdx] = useState(null); // which question is being reported
+  const [reportMessage, setReportMessage] = useState('');
+  const [isSubmittingReport, setIsSubmittingReport] = useState(false);
+  const [reportedIdxs, setReportedIdxs] = useState(new Set()); // already submitted
+
+  const handleReportSubmit = async () => {
+    if (!reportMessage.trim() || reportingIdx === null) return;
+    setIsSubmittingReport(true);
+    try {
+      const reportQ = questions[reportingIdx] || {};
+      await addDoc(collection(db, 'reports'), {
+        studentId: user?.uid || '',
+        studentName: user?.displayName || user?.email || 'Student',
+        questionId: reportQ.id || '',
+        questionIndex: reportingIdx,
+        studentAnswer: String(userAnswers[reportingIdx] ?? ''),
+        answerResult: answerResults[reportingIdx] || null,
+        source: 'review', // flagged during review, not during quiz
+        questionData: {
+          id: reportQ.id || '',
+          question: reportQ.question || reportQ.text || '',
+          answer: String(reportQ.answer ?? ''),
+          type: reportQ.type || '',
+          chapterId: reportQ.chapterId || '',
+          chapterTitle: reportQ.chapterTitle || '',
+          topicId: reportQ.topicId || '',
+          topicCode: reportQ.topicCode || '',
+          topicTitle: reportQ.topicTitle || '',
+          isManual: !!reportQ.isManual,
+          options: getOptions(reportQ).map(opt =>
+            typeof opt === 'object' ? { text: String(opt.text || '') } : String(opt ?? '')
+          ),
+        },
+        message: reportMessage,
+        status: 'open',
+        createdAt: serverTimestamp(),
+      });
+      setReportedIdxs(prev => new Set([...prev, reportingIdx]));
+      setReportingIdx(null);
+      setReportMessage('');
+    } catch (e) {
+      console.error('Report error:', e);
+    } finally {
+      setIsSubmittingReport(false);
+    }
+  };
 
   const total = questions.length;
   const q = questions[idx] || {};
@@ -131,8 +183,28 @@ const ChallengeReviewView = ({
         }}>
           {/* Question card */}
           <div style={{ padding: '24px 26px', borderRadius: '24px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)', boxShadow: '0 12px 28px rgba(15,23,42,0.04)' }}>
-            <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '10px' }}>
-              Question
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+              <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+                Question
+              </div>
+              {reportedIdxs.has(idx) ? (
+                <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#10b981', background: '#f0fdf4', padding: '4px 10px', borderRadius: '999px' }}>
+                  ✓ Reported
+                </span>
+              ) : (
+                <button
+                  onClick={() => { setReportingIdx(idx); setReportMessage(''); }}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: '5px',
+                    padding: '5px 12px', borderRadius: '999px',
+                    border: '1.5px solid #fecaca', background: '#fff5f5',
+                    color: '#ef4444', fontSize: '0.72rem', fontWeight: 800,
+                    cursor: 'pointer', letterSpacing: '0.04em',
+                  }}
+                >
+                  <Flag size={13} /> Report
+                </button>
+              )}
             </div>
             <MathView
               content={q.question}
@@ -187,7 +259,7 @@ const ChallengeReviewView = ({
             </div>
           )}
 
-          {/* Student comment to teacher */}
+          {/* Student's note / Teacher comment */}
           {questionComments[idx] && (
             <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#faf5ff', border: '1.5px solid #e9d5ff' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', color: '#7c3aed' }}>
@@ -281,6 +353,76 @@ const ChallengeReviewView = ({
           />
         )}
       </div>
+
+      {/* Report modal */}
+      <AnimatePresence>
+        {reportingIdx !== null && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 3000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+              onClick={() => setReportingIdx(null)}
+              style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.7)', backdropFilter: 'blur(6px)' }}
+            />
+            <motion.div
+              initial={{ scale: 0.92, opacity: 0, y: 12 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.92, opacity: 0 }}
+              style={{ position: 'relative', width: '100%', maxWidth: '420px', background: '#fff', borderRadius: '28px', padding: '32px', boxShadow: '0 32px 64px rgba(0,0,0,0.2)', display: 'flex', flexDirection: 'column', gap: '16px' }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#fef2f2', display: 'grid', placeItems: 'center' }}>
+                    <Flag size={20} style={{ color: '#ef4444' }} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Report Question {reportingIdx + 1}</div>
+                    <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600 }}>Teacher will review & may adjust score</div>
+                  </div>
+                </div>
+                <button onClick={() => setReportingIdx(null)} style={{ width: '32px', height: '32px', borderRadius: '50%', border: 'none', background: '#f1f5f9', color: '#64748b', cursor: 'pointer', display: 'grid', placeItems: 'center' }}>
+                  <X size={16} />
+                </button>
+              </div>
+
+              <div style={{ padding: '14px 16px', borderRadius: '14px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
+                <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>Question</div>
+                <MathView content={questions[reportingIdx]?.question} style={{ fontSize: '0.9rem', fontWeight: 700, color: '#1e1b4b' }} />
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.72rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
+                  What's the issue?
+                </label>
+                <textarea
+                  autoFocus
+                  value={reportMessage}
+                  onChange={e => setReportMessage(e.target.value)}
+                  placeholder="e.g. I got this right but it was marked wrong. / The answer options seem incorrect."
+                  rows={3}
+                  style={{ width: '100%', padding: '14px', borderRadius: '14px', border: '1.5px solid #e2e8f0', fontSize: '0.9rem', fontWeight: 600, color: '#1e1b4b', resize: 'none', outline: 'none', boxSizing: 'border-box', fontFamily: 'inherit', lineHeight: 1.5 }}
+                  onFocus={e => { e.target.style.borderColor = '#ef4444'; }}
+                  onBlur={e => { e.target.style.borderColor = '#e2e8f0'; }}
+                />
+              </div>
+
+              <button
+                onClick={handleReportSubmit}
+                disabled={isSubmittingReport || !reportMessage.trim()}
+                style={{
+                  padding: '14px', borderRadius: '16px', border: 'none',
+                  background: reportMessage.trim() ? '#ef4444' : '#f1f5f9',
+                  color: reportMessage.trim() ? '#fff' : '#94a3b8',
+                  fontWeight: 800, fontSize: '0.95rem',
+                  cursor: reportMessage.trim() && !isSubmittingReport ? 'pointer' : 'not-allowed',
+                  transition: 'all 0.2s',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                }}
+              >
+                <Flag size={16} />
+                {isSubmittingReport ? 'Submitting…' : 'Submit Report'}
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
