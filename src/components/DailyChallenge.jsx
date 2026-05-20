@@ -71,6 +71,13 @@ import {
   getOptionImage,
 } from '../utils/challengeUtils';
 
+const KEYBOARD_ACTIVITY_GRACE_MS = 8000;
+const VIEWPORT_ACTIVITY_GRACE_MS = 4000;
+
+const isEditableElement = (target) =>
+  Boolean(target?.closest?.('input, textarea, select, [contenteditable="true"]')) ||
+  ['INPUT', 'TEXTAREA', 'SELECT'].includes(target?.tagName);
+
 const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
@@ -130,6 +137,25 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const sessionReportCountRef = useRef(0);
   // Always-current ref so the anti-cheat effect doesn't capture a stale finishQuiz closure.
   const finishQuizRef = useRef(null);
+  const keyboardActivityAtRef = useRef(0);
+  const viewportActivityAtRef = useRef(0);
+
+  const markKeyboardActivity = useCallback(() => {
+    keyboardActivityAtRef.current = Date.now();
+  }, []);
+
+  const markViewportKeyboardActivity = useCallback(() => {
+    viewportActivityAtRef.current = Date.now();
+  }, []);
+
+  const hasRecentKeyboardActivity = useCallback(() => {
+    const now = Date.now();
+    return (
+      isEditableElement(document.activeElement) ||
+      now - keyboardActivityAtRef.current < KEYBOARD_ACTIVITY_GRACE_MS ||
+      now - viewportActivityAtRef.current < VIEWPORT_ACTIVITY_GRACE_MS
+    );
+  }, []);
 
   const resetSessionAttentionCounts = () => {
     sessionReviewCountRef.current = 0;
@@ -193,6 +219,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (step !== 'quiz') return;
 
     const handleFocusLost = () => {
+      if (hasRecentKeyboardActivity()) return;
       setWarnings(w => w + 1);
       showToast("Please do not leave the challenge window! Switching tabs or apps is not allowed during the challenge.", 'warning');
     };
@@ -208,7 +235,30 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
       window.removeEventListener("blur", handleFocusLost);
     };
-  }, [step]);
+  }, [step, hasRecentKeyboardActivity, showToast]);
+
+  useEffect(() => {
+    if (step !== 'quiz') return undefined;
+
+    const onInputActivity = (e) => {
+      if (isEditableElement(e.target)) markKeyboardActivity();
+    };
+    const onViewportResize = () => {
+      if (hasRecentKeyboardActivity()) markViewportKeyboardActivity();
+    };
+
+    document.addEventListener('focusin', onInputActivity);
+    document.addEventListener('focusout', onInputActivity);
+    document.addEventListener('input', onInputActivity);
+    window.visualViewport?.addEventListener('resize', onViewportResize);
+
+    return () => {
+      document.removeEventListener('focusin', onInputActivity);
+      document.removeEventListener('focusout', onInputActivity);
+      document.removeEventListener('input', onInputActivity);
+      window.visualViewport?.removeEventListener('resize', onViewportResize);
+    };
+  }, [step, markKeyboardActivity, markViewportKeyboardActivity, hasRecentKeyboardActivity]);
 
   const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
@@ -893,46 +943,47 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
   }, [step, isReporting]);
 
-  // Strict Termination: End quiz if screen is blurred/hidden
+  // Strict termination: end quiz only for real app/tab switching.
+  // iPadOS can emit blur, pagehide, and visibility events while the math
+  // answer keyboard is opening or closing, so keyboard activity is ignored.
   useEffect(() => {
     if (isAdmin || step !== 'quiz') return undefined;
 
-    // Track last input interaction — iOS fires pagehide/visibilitychange
-    // when the virtual keyboard is dismissed, so we suppress termination
-    // for 2 s after any input focus/blur event.
-    let inputActiveAt = 0;
-    const onInputActivity = (e) => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
-        inputActiveAt = Date.now();
+    let terminationTimer = null;
+    const clearTerminationTimer = () => {
+      if (terminationTimer) {
+        window.clearTimeout(terminationTimer);
+        terminationTimer = null;
       }
     };
-    document.addEventListener('focusin', onInputActivity);
-    document.addEventListener('focusout', onInputActivity);
-
-    const recentInputActivity = () => Date.now() - inputActiveAt < 2000;
 
     const handleCheatingAttempt = () => {
-      if (recentInputActivity()) return;
-      if (document.visibilityState === 'hidden') {
+      if (hasRecentKeyboardActivity()) return;
+      if (document.visibilityState !== 'hidden') {
+        clearTerminationTimer();
+        return;
+      }
+      clearTerminationTimer();
+      terminationTimer = window.setTimeout(() => {
+        if (document.visibilityState !== 'hidden' || hasRecentKeyboardActivity()) return;
         showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
         finishQuizRef.current?.(true);
-      }
+      }, 500);
     };
     document.addEventListener('visibilitychange', handleCheatingAttempt);
 
     const handleImmediateTermination = () => {
-      if (recentInputActivity()) return;
+      if (hasRecentKeyboardActivity()) return;
       finishQuizRef.current?.(true);
     };
     window.addEventListener('pagehide', handleImmediateTermination);
 
     return () => {
-      document.removeEventListener('focusin', onInputActivity);
-      document.removeEventListener('focusout', onInputActivity);
+      clearTerminationTimer();
       document.removeEventListener('visibilitychange', handleCheatingAttempt);
       window.removeEventListener('pagehide', handleImmediateTermination);
     };
-  }, [step, isAdmin, showToast]);
+  }, [step, isAdmin, showToast, hasRecentKeyboardActivity]);
 
   const handleReportSubmit = async () => {
     if (!reportMessage.trim()) return;
@@ -1360,14 +1411,23 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // a `hasWorkingOut` flag in the main record.
         const statColName = challengeType === 'calc' ? 'calc_stats' : 'daily_stats';
         const workingOutWrites = [];
+        const withoutWorkingOutImages = (result) => {
+          if (!result || typeof result !== 'object') return result;
+          const next = { ...result };
+          delete next.workingOut;
+          delete next.workingOutPages;
+          return next;
+        };
         const slimAnswerResults = currentAnswerResults.map((r, idx) => {
           if (!r) return r;
+          if (isAbandoned) {
+            return withoutWorkingOutImages(r);
+          }
           const pages = Array.isArray(r.workingOutPages) ? r.workingOutPages.filter(Boolean) : [];
           const single = r.workingOut || null;
           const hasImages = single || pages.length > 0;
           if (!hasImages) {
-            const { workingOut: _w, workingOutPages: _wp, ...rest } = r;
-            return rest;
+            return withoutWorkingOutImages(r);
           }
           const woRef = doc(db, 'users', user.uid, statColName, today, 'working_out', String(idx));
           workingOutWrites.push(
@@ -1378,7 +1438,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               savedAt: now.toISOString(),
             }).catch(e => console.warn(`working_out[${idx}] save failed (non-fatal):`, e?.code || e))
           );
-          const { workingOut: _w, workingOutPages: _wp, ...rest } = r;
+          const rest = withoutWorkingOutImages(r);
           return { ...rest, hasWorkingOut: true };
         });
         // Best-effort — don't block the main save on these
@@ -1543,67 +1603,75 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         }).catch((err) => console.warn('admin daily summary update failed (non-critical):', err?.code || err));
 
         // 2. Atomic Update for XP and Progress
-        await runTransaction(db, async (transaction) => {
-          const userRef = doc(db, 'users', user.uid);
-          const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear || 'General').replace(' ', '_')}_daily`);
-          
-          const userSnap = await transaction.get(userRef);
-          
-          // Update chapter progress
-          transaction.set(progressRef, {
-            year: assignedYear || 'General',
-            chapterId: record.chapterId,
-            chapterTitle: record.chapterTitle,
-            assignedChapters,
-            assignedTopics,
-            difficultyMix: nextDifficultyMix,
-            lastResultStats: resultStats,
-            lastTopicStats: topicStats,
-            lastChapterStats: chapterStats,
-            lastScore: actualScore,
-            lastTotal: totalPossibleScore,
-            updatedAt: now.toISOString(),
-          }, { merge: true });
-          transaction.set(doc(db, 'sync_meta', getChallengeBootMetaId(user.uid, today)), {
-            version: Date.now(),
-            progressVersion: Date.now(),
-            updatedAt: serverTimestamp(),
-          }, { merge: true });
+        try {
+          await runTransaction(db, async (transaction) => {
+            const userRef = doc(db, 'users', user.uid);
+            const progressRef = doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear || 'General').replace(' ', '_')}_daily`);
 
-          // Update overall XP/Points - Use set with merge for maximum robustness
-          const userData = userSnap.data() || {};
-          const currentXP = Number(userData.totalXP) || 0;
-          const currentCount = Number(userData.challengesCompleted) || 0;
-          
-          const newXP = currentXP + xpEarned;
-          transaction.set(userRef, {
-            totalXP: newXP,
-            challengesCompleted: currentCount + 1,
-            lastActive: now.toISOString(),
-            // Secret Notebook summary for the teacher's student profile.
-            ...(secretNoteSync || {}),
-          }, { merge: true });
+            const userSnap = await transaction.get(userRef);
 
-          // 3. Update dedicated Leaderboard collection for efficient global reads
-          const leaderboardRef = doc(db, 'leaderboard', user.uid);
-          const displayName = studentProfile?.name || studentProfile?.displayName || 
-                            (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') || 
-                            user?.displayName || 'Student';
-          
-          const avatarUrl = studentProfile?.dreamImageUrl || studentProfile?.avatarUrl || 
-                           (studentProfile?.avatarStyle && studentProfile?.avatarSeed
-                             ? `https://api.dicebear.com/7.x/${studentProfile.avatarStyle}/svg?seed=${encodeURIComponent(studentProfile.avatarSeed)}`
-                             : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || displayName || 'sapere')}`);
+            // Update chapter progress
+            transaction.set(progressRef, {
+              year: assignedYear || 'General',
+              chapterId: record.chapterId,
+              chapterTitle: record.chapterTitle,
+              assignedChapters,
+              assignedTopics,
+              difficultyMix: nextDifficultyMix,
+              lastResultStats: resultStats,
+              lastTopicStats: topicStats,
+              lastChapterStats: chapterStats,
+              lastScore: actualScore,
+              lastTotal: totalPossibleScore,
+              updatedAt: now.toISOString(),
+            }, { merge: true });
+            transaction.set(doc(db, 'sync_meta', getChallengeBootMetaId(user.uid, today)), {
+              version: Date.now(),
+              progressVersion: Date.now(),
+              updatedAt: serverTimestamp(),
+            }, { merge: true });
 
-          transaction.set(leaderboardRef, {
-            name: displayName,
-            avatarUrl: avatarUrl,
-            totalXP: newXP,
-            lastUpdated: serverTimestamp(),
-            role: userData.role || 'student',
-            year: assignedYear || ''
-          }, { merge: true });
-        });
+            // Update overall XP/Points - Use set with merge for maximum robustness
+            const userData = userSnap.data() || {};
+            const currentXP = Number(userData.totalXP) || 0;
+            const currentCount = Number(userData.challengesCompleted) || 0;
+
+            const newXP = currentXP + xpEarned;
+            transaction.set(userRef, {
+              totalXP: newXP,
+              challengesCompleted: currentCount + 1,
+              lastActive: now.toISOString(),
+              // Secret Notebook summary for the teacher's student profile.
+              ...(secretNoteSync || {}),
+            }, { merge: true });
+
+            // 3. Update dedicated Leaderboard collection for efficient global reads
+            const leaderboardRef = doc(db, 'leaderboard', user.uid);
+            const displayName = studentProfile?.name || studentProfile?.displayName ||
+                              (studentProfile?.firstName ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim() : '') ||
+                              user?.displayName || 'Student';
+
+            const avatarUrl = studentProfile?.dreamImageUrl || studentProfile?.avatarUrl ||
+                             (studentProfile?.avatarStyle && studentProfile?.avatarSeed
+                               ? `https://api.dicebear.com/7.x/${studentProfile.avatarStyle}/svg?seed=${encodeURIComponent(studentProfile.avatarSeed)}`
+                               : `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(user?.email || displayName || 'sapere')}`);
+
+            transaction.set(leaderboardRef, {
+              name: displayName,
+              avatarUrl: avatarUrl,
+              totalXP: newXP,
+              lastUpdated: serverTimestamp(),
+              role: userData.role || 'student',
+              year: assignedYear || ''
+            }, { merge: true });
+          });
+        } catch (err) {
+          console.warn('progress/xp sync failed after challenge save (non-critical):', err?.code || err?.message || err);
+          setDoc(ref, {
+            progressSyncFailed: true,
+            progressSyncError: err?.code || err?.message || 'unknown',
+          }, { merge: true }).catch(() => {});
+        }
 
         if (!isAbandoned) {
           const displayName = studentProfile?.name || studentProfile?.displayName ||

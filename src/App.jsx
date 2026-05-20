@@ -78,6 +78,13 @@ const isStandaloneAppDisplay = () => {
     || window.navigator?.standalone === true;
 };
 
+const KEYBOARD_ACTIVITY_GRACE_MS = 8000;
+const VIEWPORT_ACTIVITY_GRACE_MS = 4000;
+
+const isEditableElement = (target) =>
+  Boolean(target?.closest?.('input, textarea, select, [contenteditable="true"]')) ||
+  ['INPUT', 'TEXTAREA', 'SELECT'].includes(target?.tagName);
+
 const isTodayDateKey = (dateKey) => dateKey === new Date().toLocaleDateString('en-CA');
 
 const getTimeGreeting = () => {
@@ -213,15 +220,40 @@ function App() {
   useEffect(() => { isLockedRef.current = isLocked; }, [isLocked]);
   
   const [isScreenProtected, setIsScreenProtected] = useState(false);
+  const keyboardActivityAtRef = useRef(0);
+  const viewportActivityAtRef = useRef(0);
   
   // ── Screen Protection Logic (Non-Admins Only) ──
   useEffect(() => {
     if (isAdmin === true || !user) return undefined;
 
-    const handleBlur = () => setIsScreenProtected(true);
+    const markKeyboardActivity = () => {
+      keyboardActivityAtRef.current = Date.now();
+    };
+    const hasRecentKeyboardActivity = () => {
+      const now = Date.now();
+      return (
+        isEditableElement(document.activeElement) ||
+        now - keyboardActivityAtRef.current < KEYBOARD_ACTIVITY_GRACE_MS ||
+        now - viewportActivityAtRef.current < VIEWPORT_ACTIVITY_GRACE_MS
+      );
+    };
+    const handleInputActivity = (e) => {
+      if (isEditableElement(e.target)) markKeyboardActivity();
+    };
+    const handleViewportResize = () => {
+      if (hasRecentKeyboardActivity()) viewportActivityAtRef.current = Date.now();
+    };
+    const handleBlur = () => {
+      if (hasRecentKeyboardActivity()) return;
+      setIsScreenProtected(true);
+    };
     const handleFocus = () => setIsScreenProtected(false);
     const handleVisibilityChange = () => {
-      if (document.visibilityState === 'hidden') handleBlur();
+      if (document.visibilityState === 'hidden') {
+        if (hasRecentKeyboardActivity()) return;
+        handleBlur();
+      }
       else handleFocus();
     };
     const handleContextMenu = (e) => e.preventDefault();
@@ -232,16 +264,24 @@ function App() {
 
     window.addEventListener('blur', handleBlur);
     window.addEventListener('focus', handleFocus);
+    document.addEventListener('focusin', handleInputActivity);
+    document.addEventListener('focusout', handleInputActivity);
+    document.addEventListener('input', handleInputActivity);
     document.addEventListener('visibilitychange', handleVisibilityChange);
     document.addEventListener('contextmenu', handleContextMenu);
     document.addEventListener('copy', handleCopy);
+    window.visualViewport?.addEventListener('resize', handleViewportResize);
 
     return () => {
       window.removeEventListener('blur', handleBlur);
       window.removeEventListener('focus', handleFocus);
+      document.removeEventListener('focusin', handleInputActivity);
+      document.removeEventListener('focusout', handleInputActivity);
+      document.removeEventListener('input', handleInputActivity);
       document.removeEventListener('visibilitychange', handleVisibilityChange);
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('copy', handleCopy);
+      window.visualViewport?.removeEventListener('resize', handleViewportResize);
     };
   }, [isAdmin, user, showToast]);
   
