@@ -6,6 +6,7 @@ import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from 
 import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import MathView from './MathView';
+import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 
 const ReportsAdmin = () => {
   const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
@@ -794,6 +795,18 @@ const ReportsAdmin = () => {
                     </div>
                     {previewAttemptLoading && !studentAnswer ? (
                       <div style={{ color: '#64748b', fontWeight: 700 }}>Loading…</div>
+                    ) : q.type === 'interactive_grid' && Array.isArray(studentAnswer) ? (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-start' }}>
+                        <InteractiveFractionGrid
+                          gridConfig={q.gridConfig || { type: 'rect', rows: 2, cols: 2 }}
+                          selectedCells={studentAnswer}
+                          onChange={() => {}}
+                          disabled={true}
+                        />
+                        <div style={{ fontSize: '0.85rem', color: '#312e81', fontWeight: 700 }}>
+                          {studentAnswer.length} panel{studentAnswer.length !== 1 ? 's' : ''} shaded
+                        </div>
+                      </div>
                     ) : (
                       <MathView content={formatStudentAnswer(studentAnswer) || 'No answer recorded'} style={{ color: '#312e81', fontWeight: 800, fontSize: '1rem', whiteSpace: 'pre-wrap' }} />
                     )}

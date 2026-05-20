@@ -7,6 +7,7 @@ import { useAuth } from '../../context/AuthContext';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import WorkedSolutionSteps from './WorkedSolutionSteps';
+import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
 
 // Resolve the "correct answer" display text — handles MC index answers and
@@ -228,13 +229,31 @@ const ChallengeReviewView = ({
                 Your answer
               </span>
             </div>
-            {studentText
-              ? <MathView content={studentText} style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.98rem' }} />
-              : <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>}
+            {q.type === 'interactive_grid' ? (
+              Array.isArray(studentRaw) && studentRaw.length > 0 ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-start' }}>
+                  <InteractiveFractionGrid
+                    gridConfig={q.gridConfig || { type: 'rect', rows: 2, cols: 2 }}
+                    selectedCells={studentRaw}
+                    onChange={() => {}}
+                    disabled={true}
+                  />
+                  <div style={{ fontSize: '0.85rem', color: statusBadge.text, fontWeight: 700 }}>
+                    {studentRaw.length} panel{studentRaw.length !== 1 ? 's' : ''} shaded
+                  </div>
+                </div>
+              ) : (
+                <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No panels shaded</div>
+              )
+            ) : studentText ? (
+              <MathView content={studentText} style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.98rem' }} />
+            ) : (
+              <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>
+            )}
           </div>
 
           {/* Correct answer (only when student got it wrong / different) */}
-          {!isCorrect && !isPending && correctText && (
+          {!isCorrect && !isPending && (q.type === 'interactive_grid' ? q.answer : correctText) && (
             <div style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid #dcfce7' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
                 <CheckCircle2 size={20} color="#10b981" />
@@ -242,7 +261,13 @@ const ChallengeReviewView = ({
                   Correct answer
                 </span>
               </div>
-              <MathView content={correctText} style={{ color: '#065f46', fontWeight: 800, fontSize: '0.98rem' }} />
+              {q.type === 'interactive_grid' ? (
+                <div style={{ fontSize: '0.95rem', color: '#065f46', fontWeight: 800 }}>
+                  Shade exactly {q.answer} panel{Number(q.answer) !== 1 ? 's' : ''}
+                </div>
+              ) : (
+                <MathView content={correctText} style={{ color: '#065f46', fontWeight: 800, fontSize: '0.98rem' }} />
+              )}
             </div>
           )}
 
