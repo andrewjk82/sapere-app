@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Flag, Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
 import MathView from '../MathView';
@@ -44,6 +45,27 @@ const ChallengeQuizView = ({
   const currentQuestion = questions[currentIdx] || {};
   // Use pre-shuffled options if provided, else fall back to question's own options
   const displayOptions = shuffledOptions && shuffledOptions.length > 0 ? shuffledOptions : getOptions(currentQuestion);
+  const isFeedback = step === 'feedback';
+  const leftColumnRef = useRef(null);
+  const feedbackRef = useRef(null);
+
+  useEffect(() => {
+    if (!isFeedback) return undefined;
+    const timer = window.setTimeout(() => {
+      const feedbackNode = feedbackRef.current;
+      const scrollNode = leftColumnRef.current;
+      if (!feedbackNode) return;
+      if (scrollNode && showSideCanvas) {
+        scrollNode.scrollTo({
+          top: Math.max(0, feedbackNode.offsetTop - 24),
+          behavior: 'smooth',
+        });
+        return;
+      }
+      feedbackNode.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 80);
+    return () => window.clearTimeout(timer);
+  }, [isFeedback, currentIdx, showSideCanvas]);
 
   // Subtle full-screen pastel flash right after grading: green = correct,
   // red = wrong, amber = pending review. Animates 0.45 → 0 over ~650ms.
@@ -96,7 +118,7 @@ const ChallengeQuizView = ({
         minHeight: 0,
         transition: 'all 0.3s ease'
       }}>
-        <div style={{
+        <div ref={leftColumnRef} style={{
           flex: showSideCanvas ? '0 1 640px' : 1,
           maxWidth: showSideCanvas ? '640px' : (showSplitScreen ? '600px' : '100%'),
           width: '100%',
@@ -116,7 +138,8 @@ const ChallengeQuizView = ({
                 touchAction: 'pan-y',
                 WebkitOverflowScrolling: 'touch',
                 scrollbarGutter: 'stable',
-                paddingRight: '6px'
+                paddingRight: '6px',
+                paddingBottom: '56px'
               }
             : {}),
         }}>
@@ -243,7 +266,7 @@ const ChallengeQuizView = ({
                           <button
                             key={oIdx}
                             onClick={() => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: (typeof opt === 'string' ? opt : opt.text) }))}
-                            disabled={step === 'feedback'}
+                            aria-disabled={isFeedback}
                             style={{
                               padding: '12px 16px',
                               borderRadius: '12px',
@@ -271,7 +294,7 @@ const ChallengeQuizView = ({
                         autoCorrect="off"
                         autoCapitalize="off"
                         spellCheck={false}
-                        disabled={step === 'feedback'}
+                        readOnly={isFeedback}
                         value={subAnswers[sq.id || sIdx] || ''}
                         onChange={(e) => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: e.target.value }))}
                         placeholder="Type answer..."
@@ -315,11 +338,12 @@ const ChallengeQuizView = ({
                     key={symbol}
                     onClick={(e) => {
                       e.preventDefault();
+                      if (isFeedback) return;
                       const currentVal = selectedOption || '';
                       setSelectedOption(currentVal + symbol);
                       answerInputRef.current?.focus();
                     }}
-                    disabled={step === 'feedback'}
+                    aria-disabled={isFeedback}
                     style={{
                       width: '44px',
                       height: '44px',
@@ -347,11 +371,12 @@ const ChallengeQuizView = ({
                 <button
                   onClick={(e) => {
                     e.preventDefault();
+                    if (isFeedback) return;
                     const currentVal = selectedOption || '';
                     setSelectedOption(currentVal.slice(0, -1));
                     answerInputRef.current?.focus();
                   }}
-                  disabled={step === 'feedback'}
+                  aria-disabled={isFeedback}
                   style={{
                     width: '64px',
                     height: '44px',
@@ -382,7 +407,7 @@ const ChallengeQuizView = ({
                 autoCorrect="off"
                 autoCapitalize="off"
                 spellCheck={false}
-                disabled={step === 'feedback'}
+                readOnly={isFeedback}
                 value={step === 'feedback' ? userAnswers[currentIdx] || '' : selectedOption || ''}
                 onChange={(e) => step !== 'feedback' && setSelectedOption(e.target.value)}
                 placeholder="Type your answer..."
@@ -472,7 +497,7 @@ const ChallengeQuizView = ({
                   <button
                     key={i}
                     onClick={() => step !== 'feedback' && handleAnswer(optText, i)}
-                    disabled={step === 'feedback'}
+                    aria-disabled={isFeedback}
                     className={`app-option-card ${status !== 'default' ? `app-option-card--${status}` : isSelected ? 'app-option-card--selected' : ''}`}
                     style={{ 
                       padding: '16px 28px', 
@@ -524,6 +549,7 @@ const ChallengeQuizView = ({
             const isLast = currentIdx === TOTAL_QUESTIONS - 1;
             return (
               <motion.div
+                ref={feedbackRef}
                 initial={{ opacity: 0, y: 8, scale: 0.98 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ type: 'spring', stiffness: 320, damping: 26 }}
