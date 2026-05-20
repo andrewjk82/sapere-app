@@ -607,7 +607,7 @@ const ChallengeQuizView = ({
                 transition={{ type: 'spring', stiffness: 320, damping: 26 }}
                 style={{
                   marginTop: '10px',
-                  padding: '36px 32px 28px',
+                  padding: '36px 32px 34px',
                   borderRadius: '24px',
                   background: '#fff',
                   border: '1px solid rgba(15, 23, 42, 0.06)',
@@ -615,14 +615,15 @@ const ChallengeQuizView = ({
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
-                  gap: '18px',
+                  gap: '16px',
                   textAlign: 'center',
                   position: 'relative',
-                  overflow: 'hidden',
+                  overflow: 'visible',
+                  flexShrink: 0,
                 }}
               >
                 {/* Top accent strip in the state colour */}
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: palette.accent }} />
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: palette.accent, borderRadius: '24px 24px 0 0' }} />
 
                 {/* Icon in a tinted circle */}
                 <motion.div
@@ -668,10 +669,12 @@ const ChallengeQuizView = ({
                 <button
                   onClick={nextQuestion}
                   style={{
-                    marginTop: '6px',
+                    marginTop: '4px',
+                    minHeight: '56px',
                     padding: '16px 34px',
                     borderRadius: '22px',
                     fontSize: '1.05rem',
+                    lineHeight: 1,
                     fontWeight: 800,
                     background: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
                     color: '#fff',
@@ -681,7 +684,11 @@ const ChallengeQuizView = ({
                     letterSpacing: '0.01em',
                     display: 'inline-flex',
                     alignItems: 'center',
+                    justifyContent: 'center',
                     gap: '12px',
+                    flexShrink: 0,
+                    position: 'relative',
+                    zIndex: 1,
                     transition: 'transform 0.15s ease, box-shadow 0.15s ease',
                   }}
                   onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.97)'; }}
