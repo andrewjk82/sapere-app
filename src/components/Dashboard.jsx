@@ -298,10 +298,18 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           const dueTotal = getDueCount('daily', user?.uid) + getDueCount('calc', user?.uid);
           if (dueTotal === 0) return null;
           return (
-            <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '14px', width: '100%', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%', padding: '16px 22px', borderRadius: '20px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #ede9fe, #fce7f3)', border: '1px solid #ddd6fe', color: '#6d28d9' }}>
-              <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>🧠</span>
-              <span style={{ flex: 1, fontSize: '0.95rem', fontWeight: 700, lineHeight: 1.45 }}>Perfect time to review! <strong style={{ fontWeight: 900 }}>{dueTotal} question{dueTotal > 1 ? 's' : ''}</strong> from your Secret Note {dueTotal > 1 ? 'are' : 'is'} due today.</span>
-              <ArrowRight size={18} style={{ flexShrink: 0 }} />
+            <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
+              <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>🧠</div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', marginBottom: '3px' }}>Secret Note Review</div>
+                <div style={{ fontSize: '0.97rem', fontWeight: 700, lineHeight: 1.4, color: '#fff' }}>
+                  <strong style={{ fontWeight: 900 }}>{dueTotal} question{dueTotal > 1 ? 's' : ''}</strong> {dueTotal > 1 ? 'are' : 'is'} due for review today.
+                </div>
+              </div>
+              <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                <ArrowRight size={18} />
+              </div>
             </button>
           );
         })()}
