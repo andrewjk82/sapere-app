@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.9d-pen';
+const CANVAS_VERSION = 'v9.9e-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -207,6 +207,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const [activeTool, setActiveTool] = useState('pen');
   const [eraserMode, setEraserMode] = useState('area');
+  const [confirmClear, setConfirmClear] = useState(false);
   const [palmGuard, setPalmGuard] = useState(false); // default: accept all input
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
   const [strokeWidth, setStrokeWidth] = useState(3);
@@ -716,7 +717,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   const handleClear = () => {
-    if (!window.confirm('Clear this page?')) return;
+    if (!confirmClear) { setConfirmClear(true); return; }
+    setConfirmClear(false);
     setUndoStack(prev => [...prev, strokesRef.current]);
     setStrokes([]);
   };
@@ -871,9 +873,26 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
             <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none' }}>
               <ChevronRight size={17} />
             </button>
-            <button onClick={handleClear} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', background: '#fff1f2', color: '#e11d48' }}>
-              <Trash2 size={17} />
-            </button>
+            {confirmClear ? (
+              <>
+                <button
+                  onClick={handleClear}
+                  style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', background: '#e11d48', color: '#fff', fontWeight: 700, fontSize: '0.72rem', cursor: 'pointer' }}
+                >
+                  Clear?
+                </button>
+                <button
+                  onClick={() => setConfirmClear(false)}
+                  style={{ height: '34px', padding: '0 10px', borderRadius: '10px', border: 'none', background: '#f1f5f9', color: '#64748b', fontWeight: 700, fontSize: '0.72rem', cursor: 'pointer' }}
+                >
+                  Cancel
+                </button>
+              </>
+            ) : (
+              <button onClick={handleClear} style={{ width: '34px', height: '34px', borderRadius: '10px', border: 'none', background: '#fff1f2', color: '#e11d48', cursor: 'pointer' }}>
+                <Trash2 size={17} />
+              </button>
+            )}
           </div>
         </div>
       )}
