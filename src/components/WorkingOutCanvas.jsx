@@ -2,12 +2,32 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.4-pen';
+const CANVAS_VERSION = 'v9.9d-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
 
 const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
+
+const SKETCH_GUARD_CLASS = 'sapere-sketch-active';
+const SKETCH_GUARD_COUNT = 'sapereSketchActiveCount';
+const SKETCH_GUARD_STYLE = `
+  body.${SKETCH_GUARD_CLASS},
+  body.${SKETCH_GUARD_CLASS} * {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  body.${SKETCH_GUARD_CLASS} input,
+  body.${SKETCH_GUARD_CLASS} textarea,
+  body.${SKETCH_GUARD_CLASS} [contenteditable="true"] {
+    -webkit-touch-callout: default !important;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+  }
+`;
 
 // ─── Rendering primitives ───────────────────────────────────────────────────
 // A stroke = { points: [[x, y, width], ...], color, width, isEraser, completed }
@@ -164,6 +184,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const smoothWRef = useRef(3);        // low-pass-filtered line width
   const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
+  const canceledPenStrokeRef = useRef(null);
 
   // Background bookkeeping
   const bgRenderedRef = useRef([]);
@@ -182,7 +203,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const [strokes, setStrokes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [pages, setPages] = useState([[]]); // eslint-disable-line no-unused-vars
+  const [pages, setPages] = useState([[]]);
 
   const [activeTool, setActiveTool] = useState('pen');
   const [eraserMode, setEraserMode] = useState('area');
@@ -226,6 +247,13 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   const clearCanvas = (canvas, ctx) => {
     if (canvas && ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
+  };
+
+  const cancelLiveRender = () => {
+    if (rafIdRef.current) {
+      cancelAnimationFrame(rafIdRef.current);
+      rafIdRef.current = 0;
+    }
   };
 
   // ─── Background: full replay (undo / page switch / resize) ────────────────
@@ -290,6 +318,54 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     return () => ro.disconnect();
   }, [syncSize]);
 
+  useEffect(() => {
+    const body = document.body;
+    const nextCount = Number(body.dataset[SKETCH_GUARD_COUNT] || 0) + 1;
+    body.dataset[SKETCH_GUARD_COUNT] = String(nextCount);
+    body.classList.add(SKETCH_GUARD_CLASS);
+
+    const isEditableTarget = (target) =>
+      target?.closest?.('input, textarea, select, option, [contenteditable="true"]');
+
+    const isTapTarget = (target) =>
+      target?.closest?.('button, a, label, [role="button"]');
+
+    const isStylusTouch = (e) =>
+      Array.from(e.touches || e.changedTouches || []).some(touch => touch.touchType === 'stylus');
+
+    const blockSelectionMenu = (e) => {
+      if (isEditableTarget(e.target)) return;
+      e.preventDefault();
+    };
+
+    const blockPageTouch = (e) => {
+      if (isEditableTarget(e.target)) return;
+      if (e.type === 'touchstart' && isTapTarget(e.target) && !isStylusTouch(e)) return;
+      e.preventDefault();
+    };
+
+    document.addEventListener('selectstart', blockSelectionMenu, { capture: true });
+    document.addEventListener('contextmenu', blockSelectionMenu, { capture: true });
+    document.addEventListener('touchstart', blockPageTouch, { capture: true, passive: false });
+    document.addEventListener('touchmove', blockPageTouch, { capture: true, passive: false });
+    document.addEventListener('gesturestart', blockPageTouch, { capture: true, passive: false });
+
+    return () => {
+      document.removeEventListener('selectstart', blockSelectionMenu, { capture: true });
+      document.removeEventListener('contextmenu', blockSelectionMenu, { capture: true });
+      document.removeEventListener('touchstart', blockPageTouch, { capture: true });
+      document.removeEventListener('touchmove', blockPageTouch, { capture: true });
+      document.removeEventListener('gesturestart', blockPageTouch, { capture: true });
+      const count = Math.max(0, Number(body.dataset[SKETCH_GUARD_COUNT] || 1) - 1);
+      if (count === 0) {
+        delete body.dataset[SKETCH_GUARD_COUNT];
+        body.classList.remove(SKETCH_GUARD_CLASS);
+      } else {
+        body.dataset[SKETCH_GUARD_COUNT] = String(count);
+      }
+    };
+  }, []);
+
   // Background redraws only on non-append changes (undo / clear / page switch).
   useEffect(() => {
     const prev = bgRenderedRef.current;
@@ -304,20 +380,24 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   useEffect(() => {
     const canvas = displayCanvasRef.current;
     if (!canvas) return;
+    const win = canvas.ownerDocument?.defaultView || window;
     const down = (e) => handlersRef.current.onPointerDown(e);
     const move = (e) => handlersRef.current.onPointerMove(e);
     const up   = (e) => handlersRef.current.onPointerUp(e);
+    const cancel = (e) => handlersRef.current.onPointerCancel(e);
     canvas.addEventListener('pointerdown',   down, { passive: false });
-    canvas.addEventListener('pointermove',   move, { passive: false });
-    canvas.addEventListener('pointerup',     up,   { passive: false });
-    canvas.addEventListener('pointercancel', up,   { passive: false });
-    canvas.addEventListener('pointerleave',  up,   { passive: false });
+    win.addEventListener('pointermove',      move, { passive: false });
+    win.addEventListener('pointerrawupdate', move, { passive: false });
+    win.addEventListener('pointerup',        up,   { passive: false });
+    win.addEventListener('pointercancel',    cancel, { passive: false });
+    win.addEventListener('blur',             cancel);
     return () => {
       canvas.removeEventListener('pointerdown',   down);
-      canvas.removeEventListener('pointermove',   move);
-      canvas.removeEventListener('pointerup',     up);
-      canvas.removeEventListener('pointercancel', up);
-      canvas.removeEventListener('pointerleave',  up);
+      win.removeEventListener('pointermove',      move);
+      win.removeEventListener('pointerrawupdate', move);
+      win.removeEventListener('pointerup',        up);
+      win.removeEventListener('pointercancel',    cancel);
+      win.removeEventListener('blur',             cancel);
     };
   }, []);
 
@@ -334,6 +414,41 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     }
     smoothWRef.current = smoothWRef.current * 0.55 + target * 0.45;
     return smoothWRef.current;
+  };
+
+  const appendPointerSamples = (e, { minDistSq = MIN_DIST_SQ } = {}) => {
+    const rect = rectRef.current;
+    const stroke = currentStrokeRef.current;
+    if (!rect || !stroke) return false;
+    const pts = stroke.points;
+    const events = (typeof e.getCoalescedEvents === 'function' && e.getCoalescedEvents().length)
+      ? e.getCoalescedEvents()
+      : [e];
+    let appended = false;
+
+    for (const ev of events) {
+      const sampleTime = ev.timeStamp || e.timeStamp || performance.now();
+      const lastSample = lastSampleRef.current;
+      if (sampleTime + 0.5 < lastSample.t) continue;
+
+      const x = ev.clientX - rect.left;
+      const y = ev.clientY - rect.top;
+      const last = pts[pts.length - 1];
+      const dx = x - last[0], dy = y - last[1];
+      const distSq = dx * dx + dy * dy;
+      if (distSq < minDistSq) continue;
+
+      const dt = Math.max(1, sampleTime - lastSample.t);
+      const velocity = Math.sqrt(distSq) / dt;
+      const pressure = ev.pressure > 0 ? ev.pressure : 0.5;
+      const w = widthFor(stroke, pressure, velocity);
+
+      pts.push([x, y, w]);
+      lastSampleRef.current = { x, y, t: sampleTime };
+      appended = true;
+    }
+
+    return appended;
   };
 
   // ─── Stroke-eraser: remove whole strokes under the tap ────────────────────
@@ -436,8 +551,38 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     rectRef.current = rect;
     const pt = { x: e.clientX - rect.left, y: e.clientY - rect.top };
 
-    try { canvas.setPointerCapture(e.pointerId); } catch {}
+    try {
+      canvas.setPointerCapture(e.pointerId);
+    } catch (err) {
+      console.debug('Pointer capture unavailable for working-out canvas:', err);
+    }
     activePointerIdRef.current = e.pointerId;
+
+    const canceled = canceledPenStrokeRef.current;
+    if (
+      isPen &&
+      canceled &&
+      e.timeStamp - canceled.t < 180 &&
+      canceled.stroke &&
+      !canceled.stroke.isEraser
+    ) {
+      canceledPenStrokeRef.current = null;
+      currentStrokeRef.current = canceled.stroke;
+      isDrawingRef.current = true;
+      liveDrawnIdxRef.current = canceled.liveDrawnIdx;
+      predictedPtsRef.current = [];
+      lastSampleRef.current = canceled.lastSample;
+      appendPointerSamples(e, { minDistSq: 0.25 });
+      flushLive();
+      return;
+    }
+    if (canceled?.stroke) {
+      const pending = canceled.stroke;
+      canceledPenStrokeRef.current = null;
+      if (currentStrokeRef.current === pending) currentStrokeRef.current = null;
+      finalizeStroke(pending, null);
+    }
+    canceledPenStrokeRef.current = null;
 
     if (activeToolRef.current === 'eraser' && eraserModeRef.current === 'stroke') {
       eraseStrokeAt(pt);
@@ -467,38 +612,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   const onPointerMove = (e) => {
-    // Suppress OS gestures for every pointer move over the canvas, including
-    // a rejected palm — preventDefault must run before the early returns.
-    if (e.cancelable !== false) e.preventDefault();
-    if (!isDrawingRef.current || !currentStrokeRef.current) return;
-    if (e.pointerId !== activePointerIdRef.current) return;
+    const isActivePointer =
+      isDrawingRef.current &&
+      currentStrokeRef.current &&
+      e.pointerId === activePointerIdRef.current;
+    const isRejectedPalm = e.pointerType === 'touch' && (palmGuardRef.current || penSeenRef.current);
+    if ((isActivePointer || isRejectedPalm) && e.cancelable !== false) e.preventDefault();
+    if (!isActivePointer) return;
 
     const rect = rectRef.current;
     if (!rect) return;
-    const stroke = currentStrokeRef.current;
-    const pts = stroke.points;
-
-    const list = (typeof e.getCoalescedEvents === 'function' && e.getCoalescedEvents().length)
-      ? e.getCoalescedEvents()
-      : [e];
-
-    for (const ev of list) {
-      const x = ev.clientX - rect.left;
-      const y = ev.clientY - rect.top;
-      const last = pts[pts.length - 1];
-      const dx = x - last[0], dy = y - last[1];
-      const distSq = dx * dx + dy * dy;
-      if (distSq < MIN_DIST_SQ) continue;
-
-      const sample = lastSampleRef.current;
-      const dt = Math.max(1, ev.timeStamp - sample.t);
-      const velocity = Math.sqrt(distSq) / dt; // px per ms
-      const pressure = ev.pressure > 0 ? ev.pressure : 0.5;
-      const w = widthFor(stroke, pressure, velocity);
-
-      pts.push([x, y, w]);
-      lastSampleRef.current = { x, y, t: ev.timeStamp };
-    }
+    const appended = appendPointerSamples(e);
 
     // Predicted points — extend the tip ahead of the pointer to hide latency.
     if (typeof e.getPredictedEvents === 'function') {
@@ -512,7 +636,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     // pointer handler. This keeps the input handler short so iPadOS does not
     // throttle/drop pointer events during fast writing — coalesced events
     // still capture every sample, the screen just repaints once per frame.
-    if (!rafIdRef.current) {
+    if ((appended || predictedPtsRef.current.length > 0) && !rafIdRef.current) {
       rafIdRef.current = requestAnimationFrame(() => {
         rafIdRef.current = 0;
         flushLive();
@@ -520,26 +644,69 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     }
   };
 
-  const cancelLiveRender = () => {
-    if (rafIdRef.current) {
-      cancelAnimationFrame(rafIdRef.current);
-      rafIdRef.current = 0;
-    }
-  };
-
   const onPointerUp = (e) => {
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
     if (e.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
 
+    if (e.cancelable !== false) e.preventDefault();
+    appendPointerSamples(e, { minDistSq: 0.25 });
+    canceledPenStrokeRef.current = null;
     isDrawingRef.current = false;
     activePointerIdRef.current = null;
     predictedPtsRef.current = [];
     const stroke = currentStrokeRef.current;
     currentStrokeRef.current = null;
+    try {
+      displayCanvasRef.current?.releasePointerCapture?.(e.pointerId);
+    } catch (err) {
+      console.debug('Pointer capture release skipped for working-out canvas:', err);
+    }
     finalizeStroke(stroke, e);
   };
 
-  handlersRef.current = { onPointerDown, onPointerMove, onPointerUp };
+  const onPointerCancel = (e) => {
+    if (!isDrawingRef.current || !currentStrokeRef.current) return;
+    if (e?.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
+    if (e?.cancelable !== false) e?.preventDefault?.();
+
+    const stroke = currentStrokeRef.current;
+    const wasPenStroke = stroke.hasRealPressure && !stroke.isEraser;
+
+    if (wasPenStroke) {
+      canceledPenStrokeRef.current = {
+        stroke,
+        t: e?.timeStamp || performance.now(),
+        liveDrawnIdx: liveDrawnIdxRef.current,
+        lastSample: lastSampleRef.current,
+      };
+      predictedPtsRef.current = [];
+      isDrawingRef.current = false;
+      activePointerIdRef.current = null;
+      currentStrokeRef.current = stroke;
+      setTimeout(() => {
+        if (canceledPenStrokeRef.current?.stroke === stroke) {
+          const pending = canceledPenStrokeRef.current.stroke;
+          canceledPenStrokeRef.current = null;
+          currentStrokeRef.current = null;
+          finalizeStroke(pending, null);
+        }
+      }, 220);
+      return;
+    }
+
+    isDrawingRef.current = false;
+    activePointerIdRef.current = null;
+    predictedPtsRef.current = [];
+    currentStrokeRef.current = null;
+    try {
+      displayCanvasRef.current?.releasePointerCapture?.(e?.pointerId);
+    } catch (err) {
+      console.debug('Pointer capture release skipped for working-out canvas:', err);
+    }
+    finalizeStroke(stroke, null);
+  };
+
+  handlersRef.current = { onPointerDown, onPointerMove, onPointerUp, onPointerCancel };
 
   const handleUndo = () => {
     if (!undoStack.length) return;
@@ -654,6 +821,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
 
   return (
     <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
+      <style>{SKETCH_GUARD_STYLE}</style>
       {!isSubmitted && (
         <div style={{ display: 'flex', padding: '10px 14px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>

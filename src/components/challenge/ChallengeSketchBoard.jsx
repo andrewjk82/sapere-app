@@ -53,14 +53,15 @@ const ChallengeSketchBoard = React.forwardRef(({
   
   return (
     <div style={{
-      flex: isTabletPlacement ? 'none' : 1,
+      flex: isTabletPlacement ? 'none' : '1.35 1 640px',
       width: '100%',
-      height: isTabletPlacement ? 'clamp(360px, 42vh, 480px)' : 'calc(100vh - 120px)',
+      height: isTabletPlacement ? 'clamp(360px, 42vh, 480px)' : 'calc(100vh - 116px)',
       minHeight: isTabletPlacement ? '360px' : '400px',
+      minWidth: 0,
       display: 'flex',
       flexDirection: 'column',
       position: isTabletPlacement ? 'relative' : 'sticky',
-      top: isTabletPlacement ? 'auto' : '60px',
+      top: isTabletPlacement ? 'auto' : '52px',
     }}>
       <CanvasErrorBoundary key={questionId}>
         <WorkingOutCanvas
