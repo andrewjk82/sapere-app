@@ -60,31 +60,33 @@ export const parseSolutionSteps = (question) => {
   if (!question) return [];
 
   if (Array.isArray(question.solutionSteps) && question.solutionSteps.length > 0) {
-    return question.solutionSteps.map((s) => String(s)).filter(isNonEmpty);
+    return question.solutionSteps
+      .map((s) => (typeof s === 'object' && s !== null ? s : { explanation: String(s), workingOut: '' }))
+      .filter((s) => isNonEmpty(s.explanation) || isNonEmpty(s.workingOut));
   }
 
   const raw = String(question.solution || '').trim();
   if (!raw) return [];
 
+  const toObjects = (strings) => strings.map((s) => ({ explanation: s, workingOut: '' }));
+
   // Prefer paragraph blocks for HTML-rich solutions.
   if (/<p\b/i.test(raw)) {
     const paragraphs = splitByParagraphs(unwrapOuterDiv(raw));
-    if (paragraphs && paragraphs.length >= 2) return paragraphs.map(stripStepPrefix);
+    if (paragraphs && paragraphs.length >= 2) return toObjects(paragraphs.map(stripStepPrefix));
   }
 
   // Plain-text strategies.
   const text = unwrapOuterDiv(raw);
 
   const byStep = splitByExplicitStepMarker(text);
-  if (byStep) return byStep;
+  if (byStep) return toObjects(byStep);
 
   const byNumbered = splitByNumberedList(text);
-  if (byNumbered) return byNumbered;
+  if (byNumbered) return toObjects(byNumbered);
 
   const byBlank = splitByDoubleNewline(text);
-  if (byBlank) return byBlank.map(stripStepPrefix);
+  if (byBlank) return toObjects(byBlank.map(stripStepPrefix));
 
-  // Single block — return as one step (still rendered nicely by the
-  // step UI; the "Next step" button just won't appear).
-  return [text];
+  return toObjects([text]);
 };

@@ -14,6 +14,7 @@ import { parseSolutionSteps } from '../../utils/solutionSteps';
 // badge. New steps fade + slide in with a small spring.
 const WorkedSolutionSteps = ({ question, graphData }) => {
   const steps = useMemo(() => parseSolutionSteps(question), [question]);
+  // steps is now an array of { explanation, workingOut }
   const [revealed, setRevealed] = useState(1);
 
   // Reset reveal count whenever the question changes.
@@ -70,7 +71,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
       {/* Steps list */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
         <AnimatePresence initial={false}>
-          {visibleSteps.map((stepBody, i) => (
+          {visibleSteps.map((step, i) => (
             <motion.div
               key={`step-${question?.id || ''}-${i}`}
               initial={{ opacity: 0, y: 10, scale: 0.99 }}
@@ -101,6 +102,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                 fontSize: '0.95rem',
                 boxShadow: '0 6px 14px rgba(124,58,237,0.28)',
                 marginLeft: '6px',
+                flexShrink: 0,
               }}>
                 {i + 1}
               </div>
@@ -109,13 +111,30 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                 <div style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#7c3aed', marginBottom: '6px' }}>
                   Step {i + 1}
                 </div>
-                <MathView
-                  content={stepBody}
-                  // Only pass graphData to the LAST step so figures
-                  // don't repeat. Adjust later if needed.
-                  graphData={i === totalSteps - 1 ? graphData : undefined}
-                  style={{ color: '#1e1b4b', fontWeight: 600, fontSize: '0.96rem', lineHeight: 1.6 }}
-                />
+                {step.explanation && (
+                  <MathView
+                    content={step.explanation}
+                    graphData={i === totalSteps - 1 ? graphData : undefined}
+                    style={{ color: '#1e1b4b', fontWeight: 600, fontSize: '0.96rem', lineHeight: 1.6 }}
+                  />
+                )}
+                {step.workingOut && (
+                  <div style={{
+                    marginTop: '10px',
+                    padding: '12px 16px',
+                    borderRadius: '12px',
+                    background: '#fff',
+                    border: '1px solid #ddd6fe',
+                  }}>
+                    <div style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: '6px' }}>
+                      Working Out
+                    </div>
+                    <MathView
+                      content={step.workingOut}
+                      style={{ color: '#4c1d95', fontWeight: 600, fontSize: '0.94rem', lineHeight: 1.7 }}
+                    />
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

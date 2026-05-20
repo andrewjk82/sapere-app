@@ -272,6 +272,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     ],
     answer: '',
     solution: '',
+    solutionSteps: [],
     hint: '',
     topicTitle: '',
     subQuestions: [],
@@ -345,6 +346,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answer: initialAnswer,
         answerIdx: initialAnswerIdx,
         solution: q.solution || '',
+        solutionSteps: (q.solutionSteps || []).map(s =>
+          typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
+        ),
         hint: q.hint || '',
         topicTitle: q.topicTitle || '',
         subQuestions: (q.subQuestions || []).map(sq => ({
@@ -373,6 +377,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answer: '',
         answerIdx: null,
         solution: '',
+        solutionSteps: [{ explanation: '', workingOut: '' }],
         hint: '',
         topicTitle: '',
         subQuestions: [],
@@ -441,6 +446,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         questionImage: formData.questionImage,
         answer: formData.type === 'multiple_choice' ? formData.answerIdx.toString() : formData.answer,
         solution: formData.solution,
+        solutionSteps: formData.solutionSteps.filter(s => s.explanation.trim() || s.workingOut.trim()),
         hint: formData.hint,
         subQuestions: (formData.subQuestions || []).map(sq => ({
           id: sq.id || '',
@@ -755,11 +761,72 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
               </div>
 
               <div>
-                <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Step-by-step Solution (LaTeX supported)</label>
-                <textarea rows={3} value={formData.solution} onChange={e => setFormData({...formData, solution: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="Explain the solution here..." />
-                <div style={{ marginTop: '12px' }}>
-                  <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>SOLUTION PREVIEW:</span>
-                  <MathPreview content={formData.solution} />
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Step-by-step Solution</label>
+                  <button
+                    onClick={() => setFormData(prev => ({ ...prev, solutionSteps: [...prev.solutionSteps, { explanation: '', workingOut: '' }] }))}
+                    style={{ padding: '6px 12px', fontSize: '0.75rem', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
+                  >
+                    <Plus size={14} /> Add Step
+                  </button>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  {formData.solutionSteps.map((step, sIdx) => (
+                    <div key={sIdx} style={{ padding: '20px', borderRadius: '16px', border: '2px solid #ede9fe', background: '#faf5ff', position: 'relative' }}>
+                      <button
+                        onClick={() => setFormData(prev => ({ ...prev, solutionSteps: prev.solutionSteps.filter((_, i) => i !== sIdx) }))}
+                        style={{ position: 'absolute', top: '12px', right: '12px', border: 'none', background: '#fff1f2', color: '#f43f5e', padding: '5px', borderRadius: '6px', cursor: 'pointer' }}
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+                        <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.85rem', flexShrink: 0 }}>
+                          {sIdx + 1}
+                        </div>
+                        <span style={{ fontWeight: 800, color: '#7c3aed', fontSize: '0.85rem' }}>Step {sIdx + 1}</span>
+                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        <div>
+                          <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Explanation (LaTeX supported)</label>
+                          <textarea
+                            rows={2}
+                            value={step.explanation}
+                            onChange={e => {
+                              const next = [...formData.solutionSteps];
+                              next[sIdx] = { ...next[sIdx], explanation: e.target.value };
+                              setFormData({ ...formData, solutionSteps: next });
+                            }}
+                            style={{ width: '100%', padding: '12px 14px', borderRadius: '12px', border: '1px solid #ddd6fe', outline: 'none', fontWeight: 600, fontSize: '0.92rem', resize: 'vertical', background: '#fff' }}
+                            placeholder="Describe this step..."
+                          />
+                        </div>
+                        <div>
+                          <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Working Out (calculations, LaTeX supported)</label>
+                          <textarea
+                            rows={2}
+                            value={step.workingOut}
+                            onChange={e => {
+                              const next = [...formData.solutionSteps];
+                              next[sIdx] = { ...next[sIdx], workingOut: e.target.value };
+                              setFormData({ ...formData, solutionSteps: next });
+                            }}
+                            style={{ width: '100%', padding: '12px 14px', borderRadius: '12px', border: '1px solid #ddd6fe', outline: 'none', fontWeight: 600, fontSize: '0.92rem', resize: 'vertical', background: '#fff', fontFamily: 'monospace' }}
+                            placeholder="e.g. $50 \times 1.5 = 75$"
+                          />
+                          {step.workingOut.trim() && (
+                            <div style={{ marginTop: '8px', padding: '10px 14px', background: '#fff', borderRadius: '10px', border: '1px solid #ede9fe' }}>
+                              <MathPreview content={step.workingOut} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                  {formData.solutionSteps.length === 0 && (
+                    <div style={{ textAlign: 'center', padding: '24px', borderRadius: '16px', border: '2px dashed #e2e8f0', color: '#94a3b8', fontSize: '0.85rem', fontWeight: 600 }}>
+                      No steps yet. Click "Add Step" to begin.
+                    </div>
+                  )}
                 </div>
               </div>
 
