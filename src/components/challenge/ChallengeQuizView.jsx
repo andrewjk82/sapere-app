@@ -204,17 +204,6 @@ const ChallengeQuizView = ({
             )}
           </div>
 
-          {isTabletCanvasLayout && (
-            <ChallengeSketchBoard
-              placement="tablet"
-              questionId={currentQuestion?.id || currentIdx}
-              questionType={currentQuestion?.type}
-              isSubmitted={step === 'feedback'}
-              showSplitScreen={showSplitScreen}
-              ref={canvasRef}
-            />
-          )}
-
           {currentQuestion?.subQuestions?.length > 0 ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {currentQuestion.subQuestions.map((sq, sIdx) => (
@@ -602,6 +591,18 @@ const ChallengeQuizView = ({
               </motion.div>
             );
           })()}
+
+          {/* Sketch pad — portrait layout: below the answer input */}
+          {isTabletCanvasLayout && (
+            <ChallengeSketchBoard
+              placement="tablet"
+              questionId={currentQuestion?.id || currentIdx}
+              questionType={currentQuestion?.type}
+              isSubmitted={step === 'feedback'}
+              showSplitScreen={showSplitScreen}
+              ref={canvasRef}
+            />
+          )}
         </div>
 
         {/* Right Side: Working Out Canvas */}
