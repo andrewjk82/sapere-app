@@ -503,42 +503,97 @@ const ChallengeQuizView = ({
           {step === 'feedback' && (() => {
             const isPendingReview = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
             const palette = isPendingReview
-              ? { bg: '#fffbeb', border: '#fef3c7', text: '#92400e', accent: '#d97706', icon: <Clock size={32} color="#d97706" />, label: 'Submitted for review' }
+              ? { accent: '#f59e0b', text: '#78350f', iconBg: '#fef3c7', barBg: '#fef9e7', shadow: 'rgba(245,158,11,0.18)', label: 'Submitted for review', icon: <Clock size={32} color="#f59e0b" /> }
               : isCorrect
-                ? { bg: '#f0fdf4', border: '#dcfce7', text: '#166534', accent: '#10b981', icon: <CheckCircle2 size={32} color="#10b981" />, label: 'Correct!' }
-                : { bg: '#fef2f2', border: '#fee2e2', text: '#991b1b', accent: '#ef4444', icon: <XCircle size={32} color="#ef4444" />, label: 'Not quite' };
+                ? { accent: '#10b981', text: '#065f46', iconBg: '#d1fae5', barBg: '#ecfdf5', shadow: 'rgba(16,185,129,0.20)', label: 'Correct', icon: <CheckCircle2 size={32} color="#10b981" /> }
+                : { accent: '#ef4444', text: '#7f1d1d', iconBg: '#fee2e2', barBg: '#fef2f2', shadow: 'rgba(239,68,68,0.18)', label: 'Not quite', icon: <XCircle size={32} color="#ef4444" /> };
+            const isLast = currentIdx === TOTAL_QUESTIONS - 1;
             return (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ type: 'spring', stiffness: 320, damping: 26 }}
                 style={{
                   marginTop: '10px',
-                  padding: '28px',
+                  padding: '36px 32px 28px',
                   borderRadius: '24px',
-                  background: palette.bg,
-                  border: `1px solid ${palette.border}`,
+                  background: '#fff',
+                  border: '1px solid rgba(15, 23, 42, 0.06)',
+                  boxShadow: `0 18px 40px ${palette.shadow}, 0 1px 0 rgba(15,23,42,0.02)`,
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
-                  gap: '12px',
+                  gap: '18px',
                   textAlign: 'center',
+                  position: 'relative',
+                  overflow: 'hidden',
                 }}
               >
-                {palette.icon}
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: palette.text }}>
+                {/* Top accent strip in the state colour */}
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: palette.accent }} />
+
+                {/* Icon in a tinted circle */}
+                <motion.div
+                  initial={{ scale: 0.6, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: 'spring', stiffness: 380, damping: 18, delay: 0.05 }}
+                  style={{
+                    width: '64px',
+                    height: '64px',
+                    borderRadius: '50%',
+                    background: palette.iconBg,
+                    display: 'grid',
+                    placeItems: 'center',
+                  }}
+                >
+                  {palette.icon}
+                </motion.div>
+
+                {/* Title */}
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: palette.text, letterSpacing: '-0.01em', lineHeight: 1 }}>
                   {palette.label}
                 </div>
-                <div style={{ fontSize: '0.85rem', fontWeight: 700, color: palette.text, opacity: 0.7 }}>
-                  {currentIdx === TOTAL_QUESTIONS - 1
-                    ? (countdown > 0 ? `Finishing in ${countdown}s…` : 'Finishing…')
-                    : (countdown > 0 ? `Next question in ${countdown}s…` : 'Next question…')}
+
+                {/* Thin animated countdown bar */}
+                <div style={{ width: '180px', height: '3px', background: palette.barBg, borderRadius: '999px', overflow: 'hidden' }}>
+                  <motion.div
+                    key={`countdown-bar-${currentIdx}`}
+                    initial={{ width: '100%' }}
+                    animate={{ width: '0%' }}
+                    transition={{ duration: 3, ease: 'linear' }}
+                    style={{ height: '100%', background: palette.accent }}
+                  />
                 </div>
+
+                {/* Small countdown label */}
+                <div style={{ fontSize: '0.68rem', fontWeight: 800, color: palette.text, opacity: 0.55, textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                  {isLast
+                    ? (countdown > 0 ? `Finishing in ${countdown}` : 'Finishing')
+                    : (countdown > 0 ? `Next in ${countdown}` : 'Next')}
+                </div>
+
+                {/* Solid pill Next button */}
                 <button
                   onClick={nextQuestion}
-                  className="app-button"
-                  style={{ marginTop: '4px', padding: '10px 18px', borderRadius: '14px', fontSize: '0.85rem', fontWeight: 800, background: 'rgba(255,255,255,0.7)', color: palette.text, border: `1px solid ${palette.border}` }}
+                  style={{
+                    marginTop: '4px',
+                    padding: '11px 26px',
+                    borderRadius: '999px',
+                    fontSize: '0.88rem',
+                    fontWeight: 800,
+                    background: palette.accent,
+                    color: '#fff',
+                    border: 'none',
+                    cursor: 'pointer',
+                    boxShadow: `0 10px 22px ${palette.shadow}`,
+                    letterSpacing: '0.02em',
+                    transition: 'transform 0.15s ease',
+                  }}
+                  onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.97)'; }}
+                  onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
                 >
-                  Next ▶
+                  Next →
                 </button>
               </motion.div>
             );
