@@ -165,6 +165,7 @@ const ChallengeQuizView = ({
         height: showSideCanvas ? splitScreenHeight : 'auto',
         maxHeight: showSideCanvas ? splitScreenHeight : 'none',
         minHeight: 0,
+        overflow: showSideCanvas ? 'hidden' : 'visible',
         transition: 'all 0.3s ease'
       }}>
         <div ref={leftColumnRef} style={{
@@ -175,6 +176,7 @@ const ChallengeQuizView = ({
           flexDirection: 'column',
           gap: '20px',
           minWidth: 0,
+          minHeight: 0,
           // In split view, keep the page fixed and let only this column scroll.
           // That prevents left-pane scrolling from moving the sketch surface
           // while the stylus is drawing on the right.
