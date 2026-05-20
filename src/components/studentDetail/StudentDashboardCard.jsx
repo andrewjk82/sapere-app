@@ -157,7 +157,9 @@ export default function StudentDashboardCard({
             {[1, 2, 3, 4].map(term => {
               const score = student?.[`term${term}Result`];
               const link = student?.[`term${term}Link`];
+              const examDate = student?.[`term${term}ExamDate`];
               const isEditing = editingTerm === term;
+              const dday = examDate ? Math.ceil((new Date(examDate) - new Date(new Date().toDateString())) / 86400000) : null;
 
               return (
                 <div key={term} style={{ display: "flex", flexDirection: "column" }}>
@@ -185,10 +187,15 @@ export default function StudentDashboardCard({
                       {/* Placeholder for perfect centering balance */}
                       <div style={{ width: "20px" }}></div>
 
-                      <div style={{ display: "flex", alignItems: "center", gap: "4px", flex: 1, justifyContent: "center" }}>
-                        <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
-                        {score && (
-                          <span style={{ fontSize: "0.85rem", fontWeight: 900, color: "#8b5cf6", marginLeft: "2px" }}>{score}</span>
+                      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1, gap: "2px" }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                          <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
+                          {score && <span style={{ fontSize: "0.85rem", fontWeight: 900, color: "#8b5cf6" }}>{score}</span>}
+                        </div>
+                        {dday !== null && (
+                          <span style={{ fontSize: "0.65rem", fontWeight: 800, color: dday === 0 ? "#ef4444" : dday < 0 ? "#94a3b8" : dday <= 7 ? "#f59e0b" : "#6366f1" }}>
+                            {dday === 0 ? "D-Day" : dday < 0 ? `D+${Math.abs(dday)}` : `D-${dday}`}
+                          </span>
                         )}
                       </div>
 
@@ -209,20 +216,35 @@ export default function StudentDashboardCard({
                         <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#475569" }}>Edit Term {term}</span>
                         <button onClick={() => setEditingTerm(null)} style={{ background: "none", border: "none", cursor: "pointer", color: "#64748b", padding: "4px" }}><X size={16} /></button>
                       </div>
-                      <input
-                        type="text"
-                        placeholder="Score (Optional)"
-                        value={score || ""}
-                        onChange={(e) => onUpdateCurriculumSetting(`term${term}Result`, e.target.value)}
-                        style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
-                      />
-                      <input
-                        type="url"
-                        placeholder="Link (e.g. Google Drive)"
-                        value={link || ""}
-                        onChange={(e) => onUpdateCurriculumSetting(`term${term}Link`, e.target.value)}
-                        style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
-                      />
+                      <div>
+                        <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Exam Date</label>
+                        <input
+                          type="date"
+                          value={student?.[`term${term}ExamDate`] || ""}
+                          onChange={(e) => onUpdateCurriculumSetting(`term${term}ExamDate`, e.target.value)}
+                          style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
+                        />
+                      </div>
+                      <div>
+                        <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Score (Optional)</label>
+                        <input
+                          type="text"
+                          placeholder="e.g. 85%"
+                          value={score || ""}
+                          onChange={(e) => onUpdateCurriculumSetting(`term${term}Result`, e.target.value)}
+                          style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
+                        />
+                      </div>
+                      <div>
+                        <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Report Link</label>
+                        <input
+                          type="url"
+                          placeholder="e.g. Google Drive link"
+                          value={link || ""}
+                          onChange={(e) => onUpdateCurriculumSetting(`term${term}Link`, e.target.value)}
+                          style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
+                        />
+                      </div>
                       <button
                         onClick={() => setEditingTerm(null)}
                         style={{ padding: "10px", borderRadius: "12px", background: "#6366f1", color: "white", fontWeight: 700, border: "none", cursor: "pointer", marginTop: "4px", width: "100%" }}

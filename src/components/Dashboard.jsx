@@ -295,6 +295,41 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         )}
 
         {!isAdmin && (() => {
+          const nextExam = [1, 2, 3, 4]
+            .map(t => ({ term: t, date: profile?.[`term${t}ExamDate`] }))
+            .filter(t => t.date)
+            .map(t => ({ ...t, dday: Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000) }))
+            .filter(t => t.dday >= 0)
+            .sort((a, b) => a.dday - b.dday)[0];
+
+          if (nextExam) {
+            const urgent = nextExam.dday <= 7;
+            return (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%', padding: '20px 24px', borderRadius: '28px', background: urgent ? 'linear-gradient(135deg, #f59e0b, #ef4444)' : 'linear-gradient(135deg, #6366f1, #4f46e5)', color: '#fff', boxShadow: urgent ? '0 15px 35px rgba(239,68,68,0.25)' : '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
+                <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
+                  {urgent ? '🔥' : '📅'}
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
+                    Term {nextExam.term} Exam
+                  </div>
+                  <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
+                    {nextExam.dday === 0 ? 'Exam is today! Good luck! 🎉' : `${nextExam.dday} day${nextExam.dday > 1 ? 's' : ''} to go — keep it up!`}
+                  </div>
+                </div>
+                <div style={{ textAlign: 'center', flexShrink: 0 }}>
+                  <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
+                    {nextExam.dday === 0 ? 'D-Day' : `D-${nextExam.dday}`}
+                  </div>
+                </div>
+              </div>
+            );
+          }
+          return null;
+        })()}
+
+        {!isAdmin && (() => {
           const dueTotal = getDueCount('daily', user?.uid) + getDueCount('calc', user?.uid);
           if (dueTotal === 0) return null;
           return (
