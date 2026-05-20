@@ -369,18 +369,40 @@ const Curriculum = () => {
         chapters = curSnap.data().chapters || [];
       }
       
-      const hasChapter = chapters.some(c => c.id === 'y6-wn');
-      if (!hasChapter) {
-        const y6Data = CURRICULUM_DATA['Year 6'] || [];
-        const wnChapter = y6Data.find(c => c.id === 'y6-wn');
-        if (wnChapter) {
-          chapters = [wnChapter, ...chapters.filter(c => c.id !== 'y6-wn')];
-          await setDoc(curDocRef, { chapters }, { merge: true });
-          
-          const metaRef = doc(db, 'sync_meta', 'curriculum');
-          await setDoc(metaRef, { lastUpdated: serverTimestamp() }, { merge: true });
-        }
+      // Check if y6-wn is in chapters, and prepend/replace it
+      const y6Data = CURRICULUM_DATA['Year 6'] || [];
+      const wnChapter = y6Data.find(c => c.id === 'y6-wn');
+      if (wnChapter) {
+        chapters = [wnChapter, ...chapters.filter(c => c.id !== 'y6-wn')];
       }
+
+      await setDoc(curDocRef, {
+        year: 'Year 6',
+        course: null,
+        chapters,
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+      
+      const metaRef = doc(db, 'sync_meta', 'curriculum');
+      await setDoc(metaRef, { 
+        version: Date.now(),
+        lastUpdated: serverTimestamp() 
+      }, { merge: true });
+
+      // Clear local cache for curriculum
+      localCache.remove(CURRICULUM_CACHE_KEY);
+
+      // Update local state directly so it re-renders immediately
+      setCurriculumRecords(prev => {
+        const index = prev.findIndex(r => r.id === 'Year_6');
+        if (index >= 0) {
+          const updated = [...prev];
+          updated[index] = { ...updated[index], chapters, updatedAt: new Date().toISOString() };
+          return updated;
+        } else {
+          return [...prev, { id: 'Year_6', year: 'Year 6', course: null, chapters, updatedAt: new Date().toISOString() }];
+        }
+      });
 
       // 2. Clear existing questions for y6-wn
       const collRef = collection(db, 'questions');
