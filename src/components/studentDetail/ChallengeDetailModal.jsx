@@ -144,12 +144,15 @@ export default function ChallengeDetailModal({
   }
 
   // ✅ Has data — render the exact same view students see
+  const questionComments = selectedChallenge.questionComments || [];
+
   return (
     <AnimatePresence>
       <ChallengeReviewView
         questions={questions}
         userAnswers={userAnswers}
         answerResults={answerResults}
+        questionComments={questionComments}
         startIdx={0}
         onClose={onClose}
         isMobile={false}

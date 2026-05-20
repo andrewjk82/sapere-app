@@ -40,7 +40,9 @@ const ChallengeQuizView = ({
   nextQuestion,
   canvasRef,
   answerInputRef,
-  shuffledOptions
+  shuffledOptions,
+  questionComments = [],
+  setQuestionComments,
 }) => {
   const currentQuestion = questions[currentIdx] || {};
   // Use pre-shuffled options if provided, else fall back to question's own options
@@ -664,6 +666,46 @@ const ChallengeQuizView = ({
                     ? (countdown > 0 ? `Finishing in ${countdown}` : 'Finishing')
                     : (countdown > 0 ? `Next in ${countdown}` : 'Next')}
                 </div>
+
+                {/* Student comment for teacher */}
+                {setQuestionComments && (
+                  <div style={{ width: '100%', textAlign: 'left' }}>
+                    <label style={{ display: 'block', fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+                      💬 Note for your teacher (optional)
+                    </label>
+                    <textarea
+                      value={questionComments[currentIdx] || ''}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        setQuestionComments(prev => {
+                          const next = [...prev];
+                          next[currentIdx] = val;
+                          return next;
+                        });
+                      }}
+                      placeholder="e.g. I didn't understand this question..."
+                      rows={2}
+                      style={{
+                        width: '100%',
+                        padding: '12px 14px',
+                        borderRadius: '14px',
+                        border: '1.5px solid #e2e8f0',
+                        fontSize: '0.88rem',
+                        fontWeight: 600,
+                        color: '#1e1b4b',
+                        resize: 'none',
+                        outline: 'none',
+                        boxSizing: 'border-box',
+                        fontFamily: 'inherit',
+                        lineHeight: 1.5,
+                        background: '#fafaff',
+                        transition: 'border-color 0.2s',
+                      }}
+                      onFocus={e => { e.target.style.borderColor = '#a78bfa'; }}
+                      onBlur={e => { e.target.style.borderColor = '#e2e8f0'; }}
+                    />
+                  </div>
+                )}
 
                 {/* Purple gradient pill Next button */}
                 <button

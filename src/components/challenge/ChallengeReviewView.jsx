@@ -1,6 +1,6 @@
 import { useState, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb } from 'lucide-react';
+import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle } from 'lucide-react';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import WorkedSolutionSteps from './WorkedSolutionSteps';
@@ -38,6 +38,7 @@ const ChallengeReviewView = ({
   questions = [],
   userAnswers = [],
   answerResults = [],
+  questionComments = [],
   startIdx = 0,
   onClose,
   isMobile = false,
@@ -183,6 +184,21 @@ const ChallengeReviewView = ({
                 </span>
               </div>
               <MathView content={q.hint} style={{ color: '#78350f', fontWeight: 600, fontSize: '0.95rem' }} />
+            </div>
+          )}
+
+          {/* Student comment to teacher */}
+          {questionComments[idx] && (
+            <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#faf5ff', border: '1.5px solid #e9d5ff' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', color: '#7c3aed' }}>
+                <MessageCircle size={18} />
+                <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+                  Student's note
+                </span>
+              </div>
+              <p style={{ margin: 0, color: '#4c1d95', fontWeight: 600, fontSize: '0.95rem', lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>
+                {questionComments[idx]}
+              </p>
             </div>
           )}
 

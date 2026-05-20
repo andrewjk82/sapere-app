@@ -110,6 +110,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [reportedQuestion, setReportedQuestion] = useState(null);
   const [reportMessage, setReportMessage] = useState('');
   const [subAnswers, setSubAnswers] = useState({});
+  const [questionComments, setQuestionComments] = useState([]); // per-question student comments for teacher
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const [showHint, setShowHint] = useState(false);
@@ -1554,6 +1555,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               questions: slimQuestions,
               userAnswers: slimUserAnswers,
               answerResults: slimAnswerResults,
+              questionComments: questionComments.length > 0 ? questionComments : [],
             }
           : null;
 
@@ -2120,6 +2122,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   canvasRef={canvasRef}
                   answerInputRef={answerInputRef}
                   shuffledOptions={shuffledOptions}
+                  questionComments={questionComments}
+                  setQuestionComments={setQuestionComments}
                 />
               )}
 
@@ -2157,6 +2161,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   questions={questions}
                   userAnswers={userAnswers}
                   answerResults={answerResults}
+                  questionComments={questionComments}
                   startIdx={0}
                   isMobile={isMobile}
                   onClose={() => setStep('result')}
