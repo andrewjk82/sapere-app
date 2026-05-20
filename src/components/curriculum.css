@@ -577,6 +577,7 @@
 }
 
 /* Badge colors matching grade levels */
+.sync-card-badge.y6 { background: #ecfdf5; color: #047857; }
 .sync-card-badge.y7 { background: #e0f2fe; color: #0369a1; }
 .sync-card-badge.y8 { background: #f0fdf4; color: #16a34a; }
 .sync-card-badge.y9 { background: #fef9c3; color: #854d0e; }

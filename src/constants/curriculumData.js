@@ -818,6 +818,19 @@ export const CURRICULUM_DATA = {
   ],
   'Year 6': [
     {
+      id: 'y6-wn',
+      title: 'Whole Numbers',
+      modules: 6,
+      topics: [
+        { id: 'y6-wn-1', code: 'WN1', title: 'Roman Numerals: Convert Roman numerals to Hindu-Arabic and vice-versa up to 2000' },
+        { id: 'y6-wn-2', code: 'WN2', title: 'Place Value and Expanded Notation: Place value of digits in large numbers; reading and writing numbers in words; expanded notation with powers of 10' },
+        { id: 'y6-wn-3', code: 'WN3', title: 'Rounding and Estimation: Round numbers to the nearest 10, 100, 1000, 10000; order numbers using inequality symbols' },
+        { id: 'y6-wn-4', code: 'WN4', title: 'Basic Operations: Add, subtract, multiply, and divide large whole numbers including remainders and vertical column methods' },
+        { id: 'y6-wn-5', code: 'WN5', title: 'Powers and Exponential Notation: Calculate squares and cubes; simplify using exponential notation and BODMAS order of operations' },
+        { id: 'y6-wn-6', code: 'WN6', title: 'Word Problems and Averages: Calculate averages of multiple numbers; solve word problems and translate verbal descriptions into mathematical expressions' }
+      ]
+    },
+    {
       id: 'y6-rn',
       title: 'Represents Numbers (B)',
       modules: 4,

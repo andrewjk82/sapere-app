@@ -13,6 +13,7 @@ import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
+import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import {
@@ -27,6 +28,7 @@ const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v3';
 const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 const ADMIN_TOOL_COUNT_IDS = [
+  'y6-wn',
   'y11a-1', 'y11-1', 'y11a-2', 'y11-2', 'y11a-3', 'y11-3', 'y11a-4', 'y11a-5', 'y11a-6', 
   'y10-1', 'y10-3', 'y10-4', 
   'y9-1', 
@@ -147,6 +149,18 @@ const Curriculum = () => {
         updatedAt: serverTimestamp(),
       }, { merge: true });
       localCache.remove(CURRICULUM_CACHE_KEY);
+      
+      // Update local state directly to reflect changes in UI immediately
+      setCurriculumRecords(prev => {
+        const index = prev.findIndex(r => r.id === docId);
+        if (index >= 0) {
+          const updated = [...prev];
+          updated[index] = { ...updated[index], chapters: newChapters, updatedAt: new Date().toISOString() };
+          return updated;
+        } else {
+          return [...prev, { id: docId, year: selectedYear, course: selectedCourse || null, chapters: newChapters, updatedAt: new Date().toISOString() }];
+        }
+      });
     } catch (err) {
       console.error("Error updating curriculum:", err);
       showToast("Failed to save changes.", 'error');
@@ -336,6 +350,99 @@ const Curriculum = () => {
     } catch (err) {
       console.error(err);
       showToast("Failed to update Surds questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedWholeNumbersQuestions = async () => {
+    if (!window.confirm("This will replace all existing questions for Year 6 Whole Numbers with the latest 60 questions, and ensure the curriculum chapter is present. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, getDoc, setDoc, serverTimestamp } = await import('firebase/firestore');
+      
+      // 1. Ensure the curriculum chapter exists in curriculum/Year_6
+      const curDocRef = doc(db, 'curriculum', 'Year_6');
+      const curSnap = await getDoc(curDocRef);
+      let chapters = [];
+      if (curSnap.exists()) {
+        chapters = curSnap.data().chapters || [];
+      }
+      
+      const hasChapter = chapters.some(c => c.id === 'y6-wn');
+      if (!hasChapter) {
+        const y6Data = CURRICULUM_DATA['Year 6'] || [];
+        const wnChapter = y6Data.find(c => c.id === 'y6-wn');
+        if (wnChapter) {
+          chapters = [wnChapter, ...chapters.filter(c => c.id !== 'y6-wn')];
+          await setDoc(curDocRef, { chapters }, { merge: true });
+          
+          const metaRef = doc(db, 'sync_meta', 'curriculum');
+          await setDoc(metaRef, { lastUpdated: serverTimestamp() }, { merge: true });
+        }
+      }
+
+      // 2. Clear existing questions for y6-wn
+      const collRef = collection(db, 'questions');
+      const q = query(collRef, where('chapterId', '==', 'y6-wn'));
+      const snap = await getDocs(q);
+      const deleteBatch = writeBatch(db);
+      snap.docs.forEach(d => deleteBatch.delete(d.ref));
+      await deleteBatch.commit();
+
+      // 3. Add the 60 questions
+      const addBatch = writeBatch(db);
+      
+      WHOLE_NUMBER_QUESTIONS_Y6.forEach(qData => {
+        const docRef = doc(collRef);
+        let optionsField = [];
+        let answerField = "";
+        
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: "" }));
+          answerField = correctIndex.toString();
+        } else {
+          optionsField = [];
+          answerField = qData.a;
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y6-wn',
+          chapterTitle: 'Chapter 1: Whole Numbers',
+          topicId: 'y6-wn-' + qData.c.slice(-1),
+          topicCode: qData.c,
+          topicTitle: qData.t,
+          isManual: true,
+          title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q,
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type,
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || "",
+          solution: qData.s || "",
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        });
+      });
+      
+      await addBatch.commit();
+      showToast(`Successfully updated ${WHOLE_NUMBER_QUESTIONS_Y6.length} Whole Number questions and synced curriculum!`, 'success');
+      
+      // Update cache locally
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y6-wn'] = WHOLE_NUMBER_QUESTIONS_Y6.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts(cached.counts);
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Whole Number questions.", 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -754,7 +861,7 @@ const Curriculum = () => {
                       className={`admin-tab-btn ${adminActiveTab === 'y11_12' ? 'active' : ''}`}
                       onClick={() => setAdminActiveTab('y11_12')}
                     >
-                      Year 11 & 12
+                      Questions Seeding
                     </button>
                     <button 
                       className={`admin-tab-btn ${adminActiveTab === 'utils' ? 'active' : ''}`}
@@ -798,6 +905,28 @@ const Curriculum = () => {
                             </button>
                           ) : (
                             <span className="sync-card-status">Active</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 6 Whole Numbers */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y6">Y6 WN</span>
+                          <span className="sync-card-title">Whole Numbers (Seed Y6)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y6-wn'] ? (
+                            <button onClick={handleSeedWholeNumbersQuestions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y6 WN
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y6-wn']} Qs)</span>
+                              <button onClick={handleSeedWholeNumbersQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
                           )}
                         </div>
                       </div>
