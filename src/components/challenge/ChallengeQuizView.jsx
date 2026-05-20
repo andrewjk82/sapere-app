@@ -538,7 +538,7 @@ const ChallengeQuizView = ({
                   className="app-button"
                   style={{ marginTop: '4px', padding: '10px 18px', borderRadius: '14px', fontSize: '0.85rem', fontWeight: 800, background: 'rgba(255,255,255,0.7)', color: palette.text, border: `1px solid ${palette.border}` }}
                 >
-                  Skip ▶
+                  Next ▶
                 </button>
               </motion.div>
             );
