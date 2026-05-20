@@ -64,7 +64,10 @@ const ChallengeQuizView = ({
         zIndex: 2000,
         padding: isMobile ? '20px 16px' : '32px clamp(20px, 3vw, 48px)',
         paddingBottom: isMobile ? 'max(80px, env(safe-area-inset-bottom, 20px) + 80px)' : '48px',
-        overflowY: 'auto',
+        height: '100dvh',
+        boxSizing: 'border-box',
+        overflowY: showSideCanvas ? 'hidden' : 'auto',
+        overscrollBehavior: 'contain',
         WebkitOverflowScrolling: 'touch',
         display: 'flex',
         flexDirection: 'column',
@@ -89,6 +92,8 @@ const ChallengeQuizView = ({
         flexDirection: showSideCanvas ? 'row' : 'column', 
         gap: showSideCanvas ? '28px' : (isMobile ? '20px' : '40px'),
         alignItems: showSideCanvas ? 'stretch' : 'flex-start',
+        height: showSideCanvas ? '100%' : 'auto',
+        minHeight: 0,
         transition: 'all 0.3s ease'
       }}>
         <div style={{
@@ -99,12 +104,20 @@ const ChallengeQuizView = ({
           flexDirection: 'column',
           gap: '20px',
           minWidth: 0,
-          // In split view the right column (sketch pad) is sticky/tall, which
-          // can prevent the outer container from scrolling the question column
-          // — leaving the Submit button below the fold unreachable. Cap the
-          // left column to the viewport and let it scroll on its own.
+          // In split view, keep the page fixed and let only this column scroll.
+          // That prevents left-pane scrolling from moving the sketch surface
+          // while the stylus is drawing on the right.
           ...(showSideCanvas
-            ? { maxHeight: 'calc(100vh - 48px)', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }
+            ? {
+                height: '100%',
+                maxHeight: '100%',
+                overflowY: 'auto',
+                overscrollBehaviorY: 'contain',
+                touchAction: 'pan-y',
+                WebkitOverflowScrolling: 'touch',
+                scrollbarGutter: 'stable',
+                paddingRight: '6px'
+              }
             : {}),
         }}>
           {/* Top Progress & Header */}
@@ -625,6 +638,7 @@ const ChallengeQuizView = ({
             questionType={currentQuestion?.type}
             isSubmitted={step === 'feedback'}
             showSplitScreen={showSplitScreen}
+            fillAvailableHeight
             ref={canvasRef}
           />
         )}

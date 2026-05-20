@@ -339,18 +339,20 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       e.preventDefault();
     };
 
-    // Track whether the current touch sequence started inside the canvas.
-    // Only block scroll for canvas-originated touches; allow scroll elsewhere.
+    // Track whether the current touch sequence started on the drawing surface.
+    // Toolbar taps and the question pane should remain free to scroll/tap.
     let touchStartedInCanvas = false;
 
-    const isInsideCanvas = (target) =>
-      displayCanvasRef.current?.contains(target) ||
-      bgCanvasRef.current?.contains(target) ||
-      target?.closest?.('.working-out-canvas') != null;
+    const isOnDrawingSurface = (target) =>
+      displayCanvasRef.current?.contains(target);
+
+    const resetTouchStart = () => {
+      touchStartedInCanvas = false;
+    };
 
     const blockPageTouch = (e) => {
       if (e.type === 'touchstart') {
-        touchStartedInCanvas = isInsideCanvas(e.target);
+        touchStartedInCanvas = isOnDrawingSurface(e.target);
       }
       // Always allow editable fields (keyboard inputs)
       if (isEditableTarget(e.target)) return;
@@ -365,8 +367,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     document.addEventListener('contextmenu', blockSelectionMenu, { capture: true });
     document.addEventListener('touchstart', blockPageTouch, { capture: true, passive: false });
     document.addEventListener('touchmove', blockPageTouch, { capture: true, passive: false });
-    document.addEventListener('touchend', () => { touchStartedInCanvas = false; }, { capture: true, passive: true });
-    document.addEventListener('touchcancel', () => { touchStartedInCanvas = false; }, { capture: true, passive: true });
+    document.addEventListener('touchend', resetTouchStart, { capture: true, passive: true });
+    document.addEventListener('touchcancel', resetTouchStart, { capture: true, passive: true });
     document.addEventListener('gesturestart', blockPageTouch, { capture: true, passive: false });
 
     return () => {
@@ -374,8 +376,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       document.removeEventListener('contextmenu', blockSelectionMenu, { capture: true });
       document.removeEventListener('touchstart', blockPageTouch, { capture: true });
       document.removeEventListener('touchmove', blockPageTouch, { capture: true });
-      document.removeEventListener('touchend', () => { touchStartedInCanvas = false; }, { capture: true });
-      document.removeEventListener('touchcancel', () => { touchStartedInCanvas = false; }, { capture: true });
+      document.removeEventListener('touchend', resetTouchStart, { capture: true });
+      document.removeEventListener('touchcancel', resetTouchStart, { capture: true });
       const count = Math.max(0, Number(body.dataset[SKETCH_GUARD_COUNT] || 1) - 1);
       if (count === 0) {
         delete body.dataset[SKETCH_GUARD_COUNT];
@@ -841,7 +843,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   };
 
   return (
-    <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
+    <div className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'manipulation', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
       <style>{SKETCH_GUARD_STYLE}</style>
       {!isSubmitted && (
         <div style={{ display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
