@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.9g-pen';
+const CANVAS_VERSION = 'v9.9h-pen';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -339,21 +339,24 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       e.preventDefault();
     };
 
-    const isScrollableTarget = (target) =>
-      target?.closest?.('[data-scrollable], .app-page, .app-panel, [style*="overflow"]') ||
-      (() => {
-        let el = target;
-        while (el && el !== document.body) {
-          const style = window.getComputedStyle(el);
-          if (['auto', 'scroll'].includes(style.overflowY) && el.scrollHeight > el.clientHeight) return true;
-          el = el.parentElement;
-        }
-        return false;
-      })();
+    // Track whether the current touch sequence started inside the canvas.
+    // Only block scroll for canvas-originated touches; allow scroll elsewhere.
+    let touchStartedInCanvas = false;
+
+    const isInsideCanvas = (target) =>
+      displayCanvasRef.current?.contains(target) ||
+      bgCanvasRef.current?.contains(target) ||
+      target?.closest?.('.working-out-canvas') != null;
 
     const blockPageTouch = (e) => {
+      if (e.type === 'touchstart') {
+        touchStartedInCanvas = isInsideCanvas(e.target);
+      }
+      // Always allow editable fields (keyboard inputs)
       if (isEditableTarget(e.target)) return;
-      if (isScrollableTarget(e.target)) return;
+      // Only block scroll when the touch sequence began inside the canvas
+      if (!touchStartedInCanvas) return;
+      // Allow finger taps on buttons/links even inside the canvas toolbar
       if (e.type === 'touchstart' && isTapTarget(e.target) && !isStylusTouch(e)) return;
       e.preventDefault();
     };
@@ -362,6 +365,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
     document.addEventListener('contextmenu', blockSelectionMenu, { capture: true });
     document.addEventListener('touchstart', blockPageTouch, { capture: true, passive: false });
     document.addEventListener('touchmove', blockPageTouch, { capture: true, passive: false });
+    document.addEventListener('touchend', () => { touchStartedInCanvas = false; }, { capture: true, passive: true });
+    document.addEventListener('touchcancel', () => { touchStartedInCanvas = false; }, { capture: true, passive: true });
     document.addEventListener('gesturestart', blockPageTouch, { capture: true, passive: false });
 
     return () => {
@@ -369,7 +374,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       document.removeEventListener('contextmenu', blockSelectionMenu, { capture: true });
       document.removeEventListener('touchstart', blockPageTouch, { capture: true });
       document.removeEventListener('touchmove', blockPageTouch, { capture: true });
-      document.removeEventListener('gesturestart', blockPageTouch, { capture: true });
+      document.removeEventListener('touchend', () => { touchStartedInCanvas = false; }, { capture: true });
+      document.removeEventListener('touchcancel', () => { touchStartedInCanvas = false; }, { capture: true });
       const count = Math.max(0, Number(body.dataset[SKETCH_GUARD_COUNT] || 1) - 1);
       if (count === 0) {
         delete body.dataset[SKETCH_GUARD_COUNT];
