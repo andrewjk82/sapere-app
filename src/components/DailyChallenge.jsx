@@ -897,12 +897,21 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   useEffect(() => {
     if (isAdmin || step !== 'quiz') return undefined;
 
+    // Track whether an input/textarea just received focus. iOS fires window.blur
+    // during the keyboard-raise animation — before or right as the input gets focus.
+    // We suppress termination for 1.5 s after any input focusin event.
+    let inputFocusedAt = 0;
+    const onInputFocusIn = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+        inputFocusedAt = Date.now();
+      }
+    };
+    document.addEventListener('focusin', onInputFocusIn);
+
     const handleCheatingAttempt = () => {
-      // Longer buffer: iOS raises the virtual keyboard by briefly blurring
-      // the window — 100 ms was too short and caught the keyboard animation.
       setTimeout(() => {
-        // If an input/textarea inside the page is focused (e.g. answer field,
-        // report box), the student is still on the page — don't terminate.
+        // Suppress if an input is focused or was focused within the last 1.5 s
+        // (covers the iOS keyboard-raise animation window).
         const active = document.activeElement;
         const typingInPage =
           active &&
@@ -910,6 +919,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           document.contains(active) &&
           (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable);
         if (typingInPage) return;
+        if (Date.now() - inputFocusedAt < 1500) return;
 
         if (document.visibilityState === 'hidden' || !document.hasFocus()) {
           showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
@@ -927,6 +937,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     window.addEventListener('pagehide', handleImmediateTermination);
 
     return () => {
+      document.removeEventListener('focusin', onInputFocusIn);
       window.removeEventListener('blur', handleCheatingAttempt);
       document.removeEventListener('visibilitychange', handleCheatingAttempt);
       window.removeEventListener('pagehide', handleImmediateTermination);

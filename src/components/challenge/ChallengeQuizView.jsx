@@ -63,7 +63,9 @@ const ChallengeQuizView = ({
         backgroundColor: '#f8fafc',
         zIndex: 2000,
         padding: isMobile ? '20px 16px' : '32px clamp(20px, 3vw, 48px)',
+        paddingBottom: isMobile ? 'max(80px, env(safe-area-inset-bottom, 20px) + 80px)' : '48px',
         overflowY: 'auto',
+        WebkitOverflowScrolling: 'touch',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
