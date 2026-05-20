@@ -73,9 +73,9 @@ const ChallengeQuizView = ({
         {flashColor && (
           <motion.div
             key={`flash-${currentIdx}-${flash}`}
-            initial={{ opacity: 0.45 }}
+            initial={{ opacity: 0.55 }}
             animate={{ opacity: 0 }}
-            transition={{ duration: 0.65, ease: 'easeOut' }}
+            transition={{ duration: 1.4, ease: 'easeOut' }}
             style={{ position: 'fixed', inset: 0, background: flashColor, pointerEvents: 'none', zIndex: 2050 }}
           />
         )}
