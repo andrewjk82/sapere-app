@@ -156,12 +156,50 @@ export const CURRICULUM_DATA = {
     },
     {
       id: 'calc-stage-4',
-      title: 'Stage 4: Division & Its Link to Mult (Year 3-4)',
-      modules: 3,
+      title: 'Stage 4: Division (34 steps · 7 phases)',
+      modules: 34,
       topics: [
-        { id: 'calc-4-core', code: 'C4.1', group: 'Core', title: 'Remainders & multi-digit ÷ 1-digit' },
-        { id: 'calc-4-adv', code: 'C4.2', group: 'Advanced', title: 'Long division & divisibility rules' },
-        { id: 'calc-4-enrich', code: 'C4.3', group: 'Enrichment', title: 'Estimation & sharing equally' }
+        // Phase A — Concept (steps 1–4)
+        { id: 'calc-4-a1',  code: 'D1',  group: 'A · Concept',       title: 'Fair sharing & equal groups' },
+        { id: 'calc-4-a2',  code: 'D2',  group: 'A · Concept',       title: 'Repeated subtraction' },
+        { id: 'calc-4-a3',  code: 'D3',  group: 'A · Concept',       title: 'Relationship between multiplication & division' },
+        { id: 'calc-4-a4',  code: 'D4',  group: 'A · Concept',       title: 'Understanding remainders' },
+        // Phase B — Basic facts (steps 5–9)
+        { id: 'calc-4-b5',  code: 'D5',  group: 'B · Basic facts',   title: '÷1, ÷2, ÷5, ÷10 facts' },
+        { id: 'calc-4-b6',  code: 'D6',  group: 'B · Basic facts',   title: '÷3, ÷4, ÷6 facts' },
+        { id: 'calc-4-b7',  code: 'D7',  group: 'B · Basic facts',   title: '÷7, ÷8 facts' },
+        { id: 'calc-4-b8',  code: 'D8',  group: 'B · Basic facts',   title: '÷9, ÷11, ÷12 facts' },
+        { id: 'calc-4-b9',  code: 'D9',  group: 'B · Basic facts',   title: 'Full division facts review' },
+        // Phase C — Long division (steps 10–14)
+        { id: 'calc-4-c10', code: 'D10', group: 'C · Long division',  title: '2-digit ÷ 1-digit (no remainder)' },
+        { id: 'calc-4-c11', code: 'D11', group: 'C · Long division',  title: '2-digit ÷ 1-digit (with remainder)' },
+        { id: 'calc-4-c12', code: 'D12', group: 'C · Long division',  title: '3-digit ÷ 1-digit' },
+        { id: 'calc-4-c13', code: 'D13', group: 'C · Long division',  title: '3-digit ÷ 2-digit' },
+        { id: 'calc-4-c14', code: 'D14', group: 'C · Long division',  title: 'Mental division strategies' },
+        // Phase D — Powers of 10 (steps 15–17)
+        { id: 'calc-4-d15', code: 'D15', group: 'D · Powers of 10',  title: 'Divide by 10, 100, 1000' },
+        { id: 'calc-4-d16', code: 'D16', group: 'D · Powers of 10',  title: 'Factors, multiples & divisibility' },
+        { id: 'calc-4-d17', code: 'D17', group: 'D · Powers of 10',  title: 'Introduction to square roots' },
+        // Phase E — Decimals & Fractions (steps 18–22)
+        { id: 'calc-4-e18', code: 'D18', group: 'E · Dec & Frac',    title: 'Decimal ÷ whole number' },
+        { id: 'calc-4-e19', code: 'D19', group: 'E · Dec & Frac',    title: 'Decimal ÷ decimal' },
+        { id: 'calc-4-e20', code: 'D20', group: 'E · Dec & Frac',    title: 'Fraction ÷ whole number' },
+        { id: 'calc-4-e21', code: 'D21', group: 'E · Dec & Frac',    title: 'Fraction ÷ fraction (reciprocal method)' },
+        { id: 'calc-4-e22', code: 'D22', group: 'E · Dec & Frac',    title: 'Mixed number ÷ mixed number' },
+        // Phase F — Combined (steps 23–26)
+        { id: 'calc-4-f23', code: 'D23', group: 'F · Combined',      title: 'Estimation & rounding in division' },
+        { id: 'calc-4-f24', code: 'D24', group: 'F · Combined',      title: 'Inverse operations to verify answers' },
+        { id: 'calc-4-f25', code: 'D25', group: 'F · Combined',      title: 'Mixed operations with division' },
+        { id: 'calc-4-f26', code: 'D26', group: 'F · Combined',      title: 'Introduction to division with negatives' },
+        // Phase G — Word problems (steps 27–34)
+        { id: 'calc-4-g27', code: 'D27', group: 'G · Word problems', title: 'Fair sharing & grouping word problems' },
+        { id: 'calc-4-g28', code: 'D28', group: 'G · Word problems', title: 'Unit price word problems' },
+        { id: 'calc-4-g29', code: 'D29', group: 'G · Word problems', title: 'Decimal division word problems' },
+        { id: 'calc-4-g30', code: 'D30', group: 'G · Word problems', title: 'Fraction division word problems' },
+        { id: 'calc-4-g31', code: 'D31', group: 'G · Word problems', title: 'Speed, distance & time problems' },
+        { id: 'calc-4-g32', code: 'D32', group: 'G · Word problems', title: 'Multi-step: combining stages 3–4' },
+        { id: 'calc-4-g33', code: 'D33', group: 'G · Word problems', title: 'Multi-step complex problems' },
+        { id: 'calc-4-g34', code: 'D34', group: 'G · Word problems', title: 'Challenge: all operations combined' },
       ]
     },
     {
