@@ -31,6 +31,7 @@ import {
 import ChallengeStartView from './challenge/ChallengeStartView';
 import ChallengeQuizView from './challenge/ChallengeQuizView';
 import ChallengeResultView from './challenge/ChallengeResultView';
+import ChallengeReviewView from './challenge/ChallengeReviewView';
 import SecretNoteView from './challenge/SecretNoteView';
 
 // Secret Notebook (local-only mistake review)
@@ -2055,17 +2056,28 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   elapsedSeconds={elapsedSeconds}
                   userName={studentProfile?.firstName || studentProfile?.displayName?.split(' ')?.[0] || ''}
                   recommendations={analyticsRecs}
-                  onReviewAnswers={(record) => {
-                    // Open the modal immediately. 
-                    // We also switch viewMode behind the scenes so if they close it, 
-                    // they land on the History page.
-                    setSelectedChallenge(record);
-                    setViewMode('history');
+                  onReviewAnswers={() => {
+                    // Enter the full-screen Review view with the in-memory
+                    // quiz data (questions/userAnswers/answerResults are still
+                    // in component state right after the result screen).
+                    setStep('review');
                   }}
                   onBack={() => {
                     if (setIsLocked) setIsLocked(false);
                     onBack();
                   }}
+                />
+              )}
+
+              {step === 'review' && (
+                <ChallengeReviewView
+                  key="review"
+                  questions={questions}
+                  userAnswers={userAnswers}
+                  answerResults={answerResults}
+                  startIdx={0}
+                  isMobile={isMobile}
+                  onClose={() => setStep('result')}
                 />
               )}
 
