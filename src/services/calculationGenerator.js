@@ -738,56 +738,595 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
 
-    // Stage 3
-    case 'calc-3-core': {
-      const n1 = randomInt(2, 9);
-      const n2 = Math.random() > 0.5 ? randomInt(2, 9) : randomInt(10, 99);
-      q = `$$ ${n1} \\times ${n2} = ? $$`;
-      a = String(n1 * n2);
+    // ════ Stage 3: Multiplication — 34-step curriculum ════
+    // Phase A — Concept (steps 1–4)
+    case 'calc-3-a1': { // Repeated addition & equal groups
+      const groups = randomInt(2, 9);
+      const each = randomInt(2, 10);
+      q = `There are ${groups} groups with ${each} in each group. How many altogether?`;
+      a = String(groups * each);
+      hint = `Add ${each} a total of ${groups} times, or use ${groups} × ${each}.`;
       break;
     }
-    case 'calc-3-adv': {
-      const n1 = randomInt(100, 999);
-      const n2 = randomInt(2, 9);
-      q = `$$ ${n1} \\times ${n2} = ? $$`;
-      a = String(n1 * n2);
-      hint = `Multiply ${n2} by the hundreds, then tens, then ones.`;
+    case 'calc-3-a2': { // Arrays & area model
+      const rows = randomInt(2, 9);
+      const cols = randomInt(2, 9);
+      q = `An array has ${rows} rows and ${cols} columns. How many items are there in total?`;
+      a = String(rows * cols);
+      hint = `Multiply the number of rows by the number of columns: ${rows} × ${cols}.`;
       break;
     }
-    case 'calc-3-enrich': {
-      const n = randomInt(11, 49) * 2; // Even number
-      q = `$$ ${n} \\times 5 = ? $$`;
-      a = String(n * 5);
-      hint = `Try halving ${n} and multiplying by 10.`;
+    case 'calc-3-a3': { // Commutative & associative properties
+      const n1 = randomInt(2, 9), n2 = randomInt(2, 9), n3 = randomInt(2, 5);
+      if (Math.random() > 0.5) {
+        q = `$$ ${n1} \\times ${n2} = ${n2} \\times \\, ? $$`;
+        a = String(n1);
+        hint = `The commutative property: a × b = b × a.`;
+      } else {
+        q = `$$ (${n1} \\times ${n2}) \\times ${n3} = ${n1} \\times (\\, ? \\times ${n3}) $$`;
+        a = String(n2);
+        hint = `The associative property: (a × b) × c = a × (b × c).`;
+      }
+      break;
+    }
+    case 'calc-3-a4': { // Distributive property
+      const a1 = randomInt(2, 9), b1 = randomInt(2, 9), c1 = randomInt(2, 9);
+      q = `$$ ${a1} \\times (${b1} + ${c1}) = (${a1} \\times \\, ?) + (${a1} \\times ${c1}) $$`;
+      a = String(b1);
+      hint = `Distributive property: a × (b + c) = (a × b) + (a × c).`;
       break;
     }
 
-    // Stage 4
-    case 'calc-4-core': {
-      const divisor = randomInt(2, 9);
-      const quotient = randomInt(10, 99);
-      const dividend = divisor * quotient;
-      q = `$$ ${dividend} \\div ${divisor} = ? $$`;
-      a = String(quotient);
+    // Phase B — Times tables (steps 5–9)
+    case 'calc-3-b5': { // ×1, ×2, ×5, ×10 tables
+      const multipliers5 = [1, 2, 5, 10];
+      const m5 = pick(multipliers5);
+      const n5 = randomInt(1, 12);
+      q = `$$ ${n5} \\times ${m5} = ? $$`;
+      a = String(n5 * m5);
+      hint = `This is part of the ×${m5} times table.`;
       break;
     }
-    case 'calc-4-adv': {
-      const divisor = randomInt(11, 20);
-      const quotient = randomInt(10, 50);
-      const dividend = divisor * quotient;
-      q = `$$ ${dividend} \\div ${divisor} = ? $$`;
-      a = String(quotient);
-      hint = `Use long division.`;
+    case 'calc-3-b6': { // ×3, ×4, ×6 tables
+      const multipliers6 = [3, 4, 6];
+      const m6 = pick(multipliers6);
+      const n6 = randomInt(1, 12);
+      q = `$$ ${n6} \\times ${m6} = ? $$`;
+      a = String(n6 * m6);
+      hint = `This is part of the ×${m6} times table.`;
       break;
     }
-    case 'calc-4-enrich': {
-      const divisor = randomInt(2, 9);
-      const quotient = randomInt(10, 99);
-      const rem = randomInt(1, divisor - 1);
-      const dividend = divisor * quotient + rem;
-      q = `$$ ${dividend} \\div ${divisor} = ? $$`;
-      a = `${quotient} r${rem}`;
-      hint = `Format your answer as 'quotient r remainder', e.g., '12 r3'`;
+    case 'calc-3-b7': { // ×7, ×8 tables
+      const m7 = Math.random() > 0.5 ? 7 : 8;
+      const n7 = randomInt(1, 12);
+      q = `$$ ${n7} \\times ${m7} = ? $$`;
+      a = String(n7 * m7);
+      hint = `This is part of the ×${m7} times table.`;
+      break;
+    }
+    case 'calc-3-b8': { // ×9, ×11, ×12 tables
+      const multipliers8 = [9, 11, 12];
+      const m8 = pick(multipliers8);
+      const n8 = randomInt(1, 12);
+      q = `$$ ${n8} \\times ${m8} = ? $$`;
+      a = String(n8 * m8);
+      hint = `This is part of the ×${m8} times table.`;
+      break;
+    }
+    case 'calc-3-b9': { // Full times table review
+      const n9a = randomInt(1, 12), n9b = randomInt(1, 12);
+      q = `$$ ${n9a} \\times ${n9b} = ? $$`;
+      a = String(n9a * n9b);
+      hint = `Recall the ×${n9b} times table.`;
+      break;
+    }
+
+    // Phase C — Multi-digit (steps 10–14)
+    case 'calc-3-c10': { // 2-digit × 1-digit
+      const n10a = randomInt(11, 99), n10b = randomInt(2, 9);
+      q = `$$ ${n10a} \\times ${n10b} = ? $$`;
+      a = String(n10a * n10b);
+      hint = `Split ${n10a} into tens and ones, multiply each by ${n10b}, then add.`;
+      break;
+    }
+    case 'calc-3-c11': { // 2-digit × 2-digit
+      const n11a = randomInt(11, 99), n11b = randomInt(11, 99);
+      q = `$$ ${n11a} \\times ${n11b} = ? $$`;
+      a = String(n11a * n11b);
+      hint = `Use the area model or column multiplication.`;
+      break;
+    }
+    case 'calc-3-c12': { // 3-digit × 1-digit
+      const n12a = randomInt(100, 999), n12b = randomInt(2, 9);
+      q = `$$ ${n12a} \\times ${n12b} = ? $$`;
+      a = String(n12a * n12b);
+      hint = `Multiply ${n12b} by the hundreds, then tens, then ones.`;
+      break;
+    }
+    case 'calc-3-c13': { // 3-digit × 2-digit
+      const n13a = randomInt(100, 999), n13b = randomInt(11, 99);
+      q = `$$ ${n13a} \\times ${n13b} = ? $$`;
+      a = String(n13a * n13b);
+      hint = `Use column multiplication: multiply by the ones digit first, then the tens digit.`;
+      break;
+    }
+    case 'calc-3-c14': { // Mental multiplication strategies
+      const n14 = randomInt(11, 49) * 2;
+      q = `$$ ${n14} \\times 5 = ? $$`;
+      a = String(n14 * 5);
+      hint = `Halve ${n14} and multiply by 10: ${n14 / 2} × 10 = ${n14 * 5}.`;
+      break;
+    }
+
+    // Phase D — Powers of 10 (steps 15–17)
+    case 'calc-3-d15': { // Multiply by 10, 100, 1000
+      const powers15 = [10, 100, 1000];
+      const p15 = pick(powers15);
+      const n15 = randomInt(2, 99);
+      q = `$$ ${n15} \\times ${p15} = ? $$`;
+      a = String(n15 * p15);
+      hint = `Multiplying by ${p15} shifts each digit ${Math.log10(p15)} place(s) to the left.`;
+      break;
+    }
+    case 'calc-3-d16': { // Multiply by multiples of 10
+      const base16 = randomInt(2, 9);
+      const mult16 = pick([20, 30, 40, 50, 60, 70, 80, 90]);
+      q = `$$ ${base16} \\times ${mult16} = ? $$`;
+      a = String(base16 * mult16);
+      hint = `Multiply ${base16} × ${mult16 / 10}, then multiply the result by 10.`;
+      break;
+    }
+    case 'calc-3-d17': { // Introduction to square numbers
+      const base17 = randomInt(2, 12);
+      q = `$$ ${base17}^2 = ? $$`;
+      a = String(base17 * base17);
+      hint = `${base17}² means ${base17} × ${base17}.`;
+      break;
+    }
+
+    // Phase E — Decimals & Fractions (steps 18–22)
+    case 'calc-3-e18': { // Decimal × whole number
+      const dec18 = (randomInt(1, 99) / 10).toFixed(1);
+      const wh18 = randomInt(2, 9);
+      const ans18 = Math.round(parseFloat(dec18) * wh18 * 10) / 10;
+      q = `$$ ${dec18} \\times ${wh18} = ? $$`;
+      a = String(ans18);
+      hint = `Multiply as whole numbers then adjust for the decimal point.`;
+      break;
+    }
+    case 'calc-3-e19': { // Decimal × decimal
+      const d19a = (randomInt(1, 9) / 10).toFixed(1);
+      const d19b = (randomInt(1, 9) / 10).toFixed(1);
+      const ans19 = Math.round(parseFloat(d19a) * parseFloat(d19b) * 100) / 100;
+      q = `$$ ${d19a} \\times ${d19b} = ? $$`;
+      a = String(ans19);
+      hint = `Count total decimal places in both numbers — your answer will have that many.`;
+      break;
+    }
+    case 'calc-3-e20': { // Fraction × whole number
+      const d20 = randomInt(2, 9);
+      const n20 = randomInt(1, d20 - 1);
+      const w20 = randomInt(2, 8);
+      q = `$$ \\frac{${n20}}{${d20}} \\times ${w20} = ? $$`;
+      a = simplifyFraction(n20 * w20, d20);
+      hint = `Multiply the numerator by ${w20}, keep the denominator, then simplify.`;
+      break;
+    }
+    case 'calc-3-e21': { // Fraction × fraction
+      const d21a = randomInt(2, 9), n21a = randomInt(1, d21a - 1);
+      const d21b = randomInt(2, 9), n21b = randomInt(1, d21b - 1);
+      q = `$$ \\frac{${n21a}}{${d21a}} \\times \\frac{${n21b}}{${d21b}} = ? $$`;
+      a = simplifyFraction(n21a * n21b, d21a * d21b);
+      hint = `Multiply numerators together and denominators together, then simplify.`;
+      break;
+    }
+    case 'calc-3-e22': { // Mixed number × mixed number
+      const w22a = randomInt(1, 4), n22a = randomInt(1, 3), d22a = randomInt(n22a + 1, 6);
+      const w22b = randomInt(1, 4), n22b = randomInt(1, 3), d22b = randomInt(n22b + 1, 6);
+      const top22a = w22a * d22a + n22a, top22b = w22b * d22b + n22b;
+      q = `$$ ${w22a}\\frac{${n22a}}{${d22a}} \\times ${w22b}\\frac{${n22b}}{${d22b}} = ? $$`;
+      a = simplifyFraction(top22a * top22b, d22a * d22b);
+      hint = `Convert each mixed number to an improper fraction, then multiply.`;
+      break;
+    }
+
+    // Phase F — Combined (steps 23–26)
+    case 'calc-3-f23': { // Estimation & rounding in multiplication
+      const n23a = randomInt(11, 99), n23b = randomInt(2, 9);
+      const rounded23 = Math.round(n23a / 10) * 10;
+      q = `Estimate: $$ ${n23a} \\times ${n23b} $$  Round ${n23a} to the nearest 10 first.`;
+      a = String(rounded23 * n23b);
+      hint = `Round ${n23a} → ${rounded23}, then multiply by ${n23b}.`;
+      break;
+    }
+    case 'calc-3-f24': { // Inverse operations to verify
+      const n24a = randomInt(2, 9), n24b = randomInt(2, 12);
+      const product24 = n24a * n24b;
+      q = `If $$ ${n24a} \\times ${n24b} = ${product24} $$, what is $$ ${product24} \\div ${n24a} $$?`;
+      a = String(n24b);
+      hint = `Division is the inverse of multiplication.`;
+      break;
+    }
+    case 'calc-3-f25': { // Mixed operations with multiplication
+      const n25a = randomInt(2, 9), n25b = randomInt(2, 9), n25c = randomInt(1, 20);
+      q = `$$ ${n25a} \\times ${n25b} + ${n25c} = ? $$`;
+      a = String(n25a * n25b + n25c);
+      hint = `Multiplication comes before addition (order of operations).`;
+      break;
+    }
+    case 'calc-3-f26': { // Introduction to multiplication with negatives
+      const n26a = randomInt(2, 9), n26b = randomInt(2, 9);
+      const neg26 = Math.random() > 0.5;
+      q = neg26
+        ? `$$ -${n26a} \\times ${n26b} = ? $$`
+        : `$$ ${n26a} \\times (-${n26b}) = ? $$`;
+      a = String(-(n26a * n26b));
+      hint = `A positive times a negative gives a negative result.`;
+      break;
+    }
+
+    // Phase G — Word problems (steps 27–34)
+    case 'calc-3-g27': { // Groups & area word problems
+      const rows27 = randomInt(3, 12), cols27 = randomInt(3, 12);
+      q = `A rectangular garden has ${rows27} rows of plants with ${cols27} plants in each row. How many plants are there in total?`;
+      a = String(rows27 * cols27);
+      hint = `Multiply the number of rows by plants per row.`;
+      break;
+    }
+    case 'calc-3-g28': { // Unit price word problems
+      const price28 = randomInt(2, 20), qty28 = randomInt(3, 12);
+      q = `One book costs $${price28}. How much do ${qty28} books cost?`;
+      a = String(price28 * qty28);
+      hint = `Multiply the unit price by the quantity.`;
+      break;
+    }
+    case 'calc-3-g29': { // Decimal multiplication word problems
+      const price29 = (randomInt(10, 99) / 10).toFixed(1);
+      const qty29 = randomInt(2, 9);
+      const ans29 = Math.round(parseFloat(price29) * qty29 * 10) / 10;
+      q = `A pen costs $${price29}. What is the total cost of ${qty29} pens?`;
+      a = String(ans29);
+      hint = `Multiply $${price29} by ${qty29}.`;
+      break;
+    }
+    case 'calc-3-g30': { // Fraction multiplication word problems
+      const d30 = randomInt(3, 8), n30 = randomInt(1, d30 - 1), total30 = randomInt(d30, d30 * 5) * d30 / d30;
+      const whole30 = randomInt(2, 8) * d30;
+      q = `A recipe uses $\\frac{${n30}}{${d30}}$ of a cup of sugar per batch. How many cups are needed for ${whole30 / d30} batches?`;
+      a = simplifyFraction(n30 * (whole30 / d30), d30);
+      hint = `Multiply $\\frac{${n30}}{${d30}}$ by ${whole30 / d30}.`;
+      break;
+    }
+    case 'calc-3-g31': { // Ratio & proportion problems
+      const rate31 = randomInt(2, 10), time31 = randomInt(3, 10);
+      q = `A machine produces ${rate31} parts per minute. How many parts does it produce in ${time31} minutes?`;
+      a = String(rate31 * time31);
+      hint = `Multiply the rate by the time: ${rate31} × ${time31}.`;
+      break;
+    }
+    case 'calc-3-g32': { // Multi-step: combining stages 3–4
+      const n32a = randomInt(3, 9), n32b = randomInt(3, 9), sub32 = randomInt(1, 10);
+      q = `A class has ${n32a} groups of ${n32b} students. ${sub32} students are away. How many are present?`;
+      a = String(n32a * n32b - sub32);
+      hint = `First find the total: ${n32a} × ${n32b}, then subtract ${sub32}.`;
+      break;
+    }
+    case 'calc-3-g33': { // Multi-step complex problems
+      const price33 = randomInt(3, 15), qty33a = randomInt(2, 6), qty33b = randomInt(2, 6);
+      q = `Alice buys ${qty33a} notebooks at $${price33} each, and Bob buys ${qty33b} notebooks at the same price. What is the total amount they spend together?`;
+      a = String(price33 * (qty33a + qty33b));
+      hint = `Add the quantities first, then multiply by the price: (${qty33a} + ${qty33b}) × $${price33}.`;
+      break;
+    }
+    case 'calc-3-g34': { // Challenge: all operations combined
+      const n34a = randomInt(2, 9), n34b = randomInt(2, 9), n34c = randomInt(2, 9), n34d = randomInt(1, 5);
+      q = `$$ (${n34a} \\times ${n34b}) + (${n34c} \\times ${n34d}) = ? $$`;
+      a = String(n34a * n34b + n34c * n34d);
+      hint = `Calculate each multiplication first, then add the results.`;
+      break;
+    }
+
+    // ════ Stage 4: Division — 34-step curriculum ════
+    // Phase A — Concept (steps 1–4)
+    case 'calc-4-a1': { // Fair sharing & equal groups
+      const total41 = randomInt(2, 9) * randomInt(2, 9);
+      const groups41 = pick([2, 3, 4, 5, 6, 8, 9]);
+      const q41 = Math.round(total41 / groups41) * groups41;
+      q = `${q41} apples are shared equally among ${groups41} children. How many does each child get?`;
+      a = String(q41 / groups41);
+      hint = `Divide the total by the number of groups.`;
+      break;
+    }
+    case 'calc-4-a2': { // Repeated subtraction
+      const divisor42 = randomInt(2, 6);
+      const quotient42 = randomInt(3, 8);
+      const dividend42 = divisor42 * quotient42;
+      q = `How many times can you subtract ${divisor42} from ${dividend42} before reaching 0?`;
+      a = String(quotient42);
+      hint = `Keep subtracting ${divisor42} and count: ${dividend42} → ${dividend42 - divisor42} → ... → 0.`;
+      break;
+    }
+    case 'calc-4-a3': { // Relationship between multiplication & division
+      const n43a = randomInt(2, 9), n43b = randomInt(2, 9);
+      q = `If $$ ${n43a} \\times ${n43b} = ${n43a * n43b} $$, what is $$ ${n43a * n43b} \\div ${n43b} $$?`;
+      a = String(n43a);
+      hint = `Division is the inverse of multiplication.`;
+      break;
+    }
+    case 'calc-4-a4': { // Understanding remainders
+      const divisor44 = randomInt(2, 9);
+      const quotient44 = randomInt(3, 12);
+      const rem44 = randomInt(1, divisor44 - 1);
+      const dividend44 = divisor44 * quotient44 + rem44;
+      q = `$$ ${dividend44} \\div ${divisor44} = ? $$  (Write as: quotient r remainder)`;
+      a = `${quotient44} r${rem44}`;
+      hint = `${dividend44} = ${divisor44} × ${quotient44} + ${rem44}, so the answer is ${quotient44} r${rem44}.`;
+      break;
+    }
+
+    // Phase B — Basic facts (steps 5–9)
+    case 'calc-4-b5': { // ÷1, ÷2, ÷5, ÷10 facts
+      const divs45 = [1, 2, 5, 10];
+      const d45 = pick(divs45);
+      const ans45 = randomInt(1, 12);
+      q = `$$ ${ans45 * d45} \\div ${d45} = ? $$`;
+      a = String(ans45);
+      hint = `This is part of the ÷${d45} division facts.`;
+      break;
+    }
+    case 'calc-4-b6': { // ÷3, ÷4, ÷6 facts
+      const divs46 = [3, 4, 6];
+      const d46 = pick(divs46);
+      const ans46 = randomInt(1, 12);
+      q = `$$ ${ans46 * d46} \\div ${d46} = ? $$`;
+      a = String(ans46);
+      hint = `This is part of the ÷${d46} division facts.`;
+      break;
+    }
+    case 'calc-4-b7': { // ÷7, ÷8 facts
+      const d47 = Math.random() > 0.5 ? 7 : 8;
+      const ans47 = randomInt(1, 12);
+      q = `$$ ${ans47 * d47} \\div ${d47} = ? $$`;
+      a = String(ans47);
+      hint = `This is part of the ÷${d47} division facts.`;
+      break;
+    }
+    case 'calc-4-b8': { // ÷9, ÷11, ÷12 facts
+      const divs48 = [9, 11, 12];
+      const d48 = pick(divs48);
+      const ans48 = randomInt(1, 12);
+      q = `$$ ${ans48 * d48} \\div ${d48} = ? $$`;
+      a = String(ans48);
+      hint = `This is part of the ÷${d48} division facts.`;
+      break;
+    }
+    case 'calc-4-b9': { // Full division facts review
+      const d49 = randomInt(2, 12);
+      const ans49 = randomInt(1, 12);
+      q = `$$ ${ans49 * d49} \\div ${d49} = ? $$`;
+      a = String(ans49);
+      hint = `Think: what times ${d49} equals ${ans49 * d49}?`;
+      break;
+    }
+
+    // Phase C — Long division (steps 10–14)
+    case 'calc-4-c10': { // 2-digit ÷ 1-digit (no remainder)
+      const d410 = randomInt(2, 9);
+      const ans410 = randomInt(10, 15);
+      q = `$$ ${ans410 * d410} \\div ${d410} = ? $$`;
+      a = String(ans410);
+      hint = `Use short division step by step.`;
+      break;
+    }
+    case 'calc-4-c11': { // 2-digit ÷ 1-digit (with remainder)
+      const d411 = randomInt(2, 9);
+      const ans411 = randomInt(10, 15);
+      const rem411 = randomInt(1, d411 - 1);
+      q = `$$ ${ans411 * d411 + rem411} \\div ${d411} = ? $$  (Write as: quotient r remainder)`;
+      a = `${ans411} r${rem411}`;
+      hint = `${ans411 * d411 + rem411} = ${d411} × ${ans411} + ${rem411}.`;
+      break;
+    }
+    case 'calc-4-c12': { // 3-digit ÷ 1-digit
+      const d412 = randomInt(2, 9);
+      const ans412 = randomInt(100, 150);
+      q = `$$ ${ans412 * d412} \\div ${d412} = ? $$`;
+      a = String(ans412);
+      hint = `Use long division: divide the hundreds digit first, then tens, then ones.`;
+      break;
+    }
+    case 'calc-4-c13': { // 3-digit ÷ 2-digit
+      const d413 = randomInt(11, 20);
+      const ans413 = randomInt(10, 50);
+      q = `$$ ${ans413 * d413} \\div ${d413} = ? $$`;
+      a = String(ans413);
+      hint = `Estimate how many times ${d413} fits into the first digits, then work down.`;
+      break;
+    }
+    case 'calc-4-c14': { // Mental division strategies
+      const base414 = randomInt(2, 9);
+      const ans414 = randomInt(10, 50) * 2;
+      q = `$$ ${ans414 * base414} \\div ${base414} = ? $$`;
+      a = String(ans414);
+      hint = `Halve the dividend and halve the divisor if both are even, or use known facts.`;
+      break;
+    }
+
+    // Phase D — Powers of 10 (steps 15–17)
+    case 'calc-4-d15': { // Divide by 10, 100, 1000
+      const powers415 = [10, 100, 1000];
+      const p415 = pick(powers415);
+      const n415 = randomInt(2, 9) * p415;
+      q = `$$ ${n415} \\div ${p415} = ? $$`;
+      a = String(n415 / p415);
+      hint = `Dividing by ${p415} shifts each digit ${Math.log10(p415)} place(s) to the right.`;
+      break;
+    }
+    case 'calc-4-d16': { // Factors, multiples & divisibility
+      const n416 = randomInt(12, 60);
+      const factor416 = pick([2, 3, 4, 5, 6, 10].filter(f => n416 % f === 0));
+      q = `Is ${n416} divisible by ${factor416 || 2}?  Write Yes or No.`;
+      a = n416 % (factor416 || 2) === 0 ? 'Yes' : 'No';
+      hint = `Check if ${n416} ÷ ${factor416 || 2} leaves no remainder.`;
+      break;
+    }
+    case 'calc-4-d17': { // Introduction to square roots
+      const base417 = randomInt(2, 12);
+      q = `$$ \\sqrt{${base417 * base417}} = ? $$`;
+      a = String(base417);
+      hint = `Ask yourself: what number multiplied by itself gives ${base417 * base417}?`;
+      break;
+    }
+
+    // Phase E — Decimals & Fractions (steps 18–22)
+    case 'calc-4-e18': { // Decimal ÷ whole number
+      const wh418 = randomInt(2, 5);
+      const ans418 = (randomInt(1, 9) / 10);
+      const dividend418 = Math.round(ans418 * wh418 * 10) / 10;
+      q = `$$ ${dividend418} \\div ${wh418} = ? $$`;
+      a = String(ans418);
+      hint = `Divide as a whole number then place the decimal point.`;
+      break;
+    }
+    case 'calc-4-e19': { // Decimal ÷ decimal
+      const d419 = (randomInt(1, 9) / 10).toFixed(1);
+      const mult419 = randomInt(2, 9);
+      const dividend419 = (parseFloat(d419) * mult419).toFixed(1);
+      q = `$$ ${dividend419} \\div ${d419} = ? $$`;
+      a = String(mult419);
+      hint = `Multiply both numbers by 10 to remove the decimal: ${parseFloat(dividend419) * 10} ÷ ${parseFloat(d419) * 10}.`;
+      break;
+    }
+    case 'calc-4-e20': { // Fraction ÷ whole number
+      const d420 = randomInt(2, 9), n420 = randomInt(1, d420 - 1), w420 = randomInt(2, 6);
+      q = `$$ \\frac{${n420}}{${d420}} \\div ${w420} = ? $$`;
+      a = simplifyFraction(n420, d420 * w420);
+      hint = `Multiply the denominator by ${w420}: $\\frac{${n420}}{${d420 * w420}}$.`;
+      break;
+    }
+    case 'calc-4-e21': { // Fraction ÷ fraction (reciprocal method)
+      const d421a = randomInt(2, 8), n421a = randomInt(1, d421a - 1);
+      const d421b = randomInt(2, 8), n421b = randomInt(1, d421b - 1);
+      q = `$$ \\frac{${n421a}}{${d421a}} \\div \\frac{${n421b}}{${d421b}} = ? $$`;
+      a = simplifyFraction(n421a * d421b, d421a * n421b);
+      hint = `Multiply by the reciprocal: $\\frac{${n421a}}{${d421a}} \\times \\frac{${d421b}}{${n421b}}$.`;
+      break;
+    }
+    case 'calc-4-e22': { // Mixed number ÷ mixed number
+      const w422a = randomInt(1, 3), n422a = randomInt(1, 3), d422a = randomInt(n422a + 1, 6);
+      const w422b = randomInt(1, 2), n422b = randomInt(1, 3), d422b = randomInt(n422b + 1, 6);
+      const top422a = w422a * d422a + n422a, top422b = w422b * d422b + n422b;
+      q = `$$ ${w422a}\\frac{${n422a}}{${d422a}} \\div ${w422b}\\frac{${n422b}}{${d422b}} = ? $$`;
+      a = simplifyFraction(top422a * d422b, d422a * top422b);
+      hint = `Convert to improper fractions, then multiply by the reciprocal.`;
+      break;
+    }
+
+    // Phase F — Combined (steps 23–26)
+    case 'calc-4-f23': { // Estimation & rounding in division
+      const d423 = randomInt(2, 9);
+      const ans423 = randomInt(10, 99);
+      const dividend423 = d423 * ans423 + randomInt(1, d423 - 1);
+      const rounded423 = Math.round(dividend423 / 10) * 10;
+      q = `Estimate: $$ ${dividend423} \\div ${d423} $$  Round ${dividend423} to the nearest 10 first.`;
+      a = String(Math.round(rounded423 / d423));
+      hint = `Round ${dividend423} → ${rounded423}, then divide by ${d423}.`;
+      break;
+    }
+    case 'calc-4-f24': { // Inverse operations to verify
+      const d424 = randomInt(2, 9), ans424 = randomInt(2, 12);
+      const dividend424 = d424 * ans424;
+      q = `If $$ ${dividend424} \\div ${d424} = ${ans424} $$, what is $$ ${ans424} \\times ${d424} $$?`;
+      a = String(dividend424);
+      hint = `Multiplication is the inverse of division.`;
+      break;
+    }
+    case 'calc-4-f25': { // Mixed operations with division
+      const d425 = randomInt(2, 9), m425 = randomInt(2, 9), add425 = randomInt(1, 20);
+      const dividend425 = d425 * randomInt(2, 9);
+      q = `$$ ${dividend425} \\div ${d425} + ${add425} = ? $$`;
+      a = String(dividend425 / d425 + add425);
+      hint = `Division comes before addition (order of operations).`;
+      break;
+    }
+    case 'calc-4-f26': { // Introduction to division with negatives
+      const d426 = randomInt(2, 9), ans426 = randomInt(2, 9);
+      const neg426 = Math.random() > 0.5;
+      q = neg426
+        ? `$$ -${d426 * ans426} \\div ${d426} = ? $$`
+        : `$$ ${d426 * ans426} \\div (-${d426}) = ? $$`;
+      a = String(-ans426);
+      hint = `A positive divided by a negative (or vice versa) gives a negative result.`;
+      break;
+    }
+
+    // Phase G — Word problems (steps 27–34)
+    case 'calc-4-g27': { // Fair sharing & grouping word problems
+      const total427 = randomInt(3, 9) * randomInt(2, 8);
+      const groups427 = pick([2, 3, 4, 5, 6, 8]);
+      const div427 = (Math.round(total427 / groups427)) * groups427;
+      q = `${div427} stickers are shared equally among ${groups427} students. How many stickers does each student get?`;
+      a = String(div427 / groups427);
+      hint = `Divide the total by the number of students.`;
+      break;
+    }
+    case 'calc-4-g28': { // Unit price word problems
+      const total428 = randomInt(12, 80);
+      const qty428 = pick([2, 3, 4, 5, 6, 8, 10]);
+      const price428 = Math.round(total428 / qty428) * qty428;
+      q = `${qty428} notebooks cost $${price428} in total. What is the price of one notebook?`;
+      a = String(price428 / qty428);
+      hint = `Divide the total cost by the number of notebooks.`;
+      break;
+    }
+    case 'calc-4-g29': { // Decimal division word problems
+      const price429 = randomInt(2, 9);
+      const qty429 = randomInt(2, 6);
+      const total429 = price429 * qty429;
+      q = `${qty429} friends share the cost of a $${total429} meal equally. How much does each person pay?`;
+      a = String(price429);
+      hint = `Divide $${total429} by ${qty429}.`;
+      break;
+    }
+    case 'calc-4-g30': { // Fraction division word problems
+      const d430 = randomInt(2, 6), n430 = randomInt(1, d430 - 1), w430 = randomInt(2, 5);
+      q = `A $\\frac{${n430}}{${d430}}$ kg block of cheese is cut into ${w430} equal pieces. How heavy is each piece?`;
+      a = simplifyFraction(n430, d430 * w430);
+      hint = `Divide $\\frac{${n430}}{${d430}}$ by ${w430}.`;
+      break;
+    }
+    case 'calc-4-g31': { // Speed, distance & time problems
+      const speed431 = randomInt(2, 9) * 10;
+      const time431 = randomInt(2, 6);
+      const dist431 = speed431 * time431;
+      q = `A car travels ${dist431} km in ${time431} hours at a constant speed. What is its speed in km/h?`;
+      a = String(speed431);
+      hint = `Speed = Distance ÷ Time = ${dist431} ÷ ${time431}.`;
+      break;
+    }
+    case 'calc-4-g32': { // Multi-step: combining stages 3–4
+      const price432 = randomInt(3, 12), qty432 = randomInt(3, 8), share432 = randomInt(2, 4);
+      const total432 = price432 * qty432;
+      q = `${share432} friends buy ${qty432} items that cost $${price432} each and split the total equally. How much does each person pay?`;
+      a = String(total432 / share432);
+      hint = `First find the total: ${qty432} × $${price432} = $${total432}, then divide by ${share432}.`;
+      break;
+    }
+    case 'calc-4-g33': { // Multi-step complex problems
+      const rate433 = randomInt(3, 9), workers433 = randomInt(2, 5), hours433 = randomInt(2, 6);
+      const total433 = rate433 * workers433 * hours433;
+      q = `${workers433} workers together produce ${total433} items in ${hours433} hours. How many items does each worker produce per hour?`;
+      a = String(rate433);
+      hint = `Total items ÷ workers ÷ hours = ${total433} ÷ ${workers433} ÷ ${hours433}.`;
+      break;
+    }
+    case 'calc-4-g34': { // Challenge: all operations combined
+      const d434 = randomInt(2, 6), m434 = randomInt(2, 9);
+      const dividend434 = d434 * randomInt(3, 8);
+      const add434 = randomInt(2, 10);
+      q = `$$ (${dividend434} \\div ${d434}) + (${m434} \\times ${add434}) = ? $$`;
+      a = String(dividend434 / d434 + m434 * add434);
+      hint = `Solve each bracket first, then add the results.`;
       break;
     }
 
@@ -1487,7 +2026,7 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', t
     if (yearNum >= 11) topicsToUse = ['calc-7-core', 'calc-7-adv', 'calc-7-enrich'];
     else if (yearNum >= 7) topicsToUse = ['calc-7-core', 'calc-7-adv'];
     else if (yearNum >= 5) topicsToUse = ['calc-5-core', 'calc-6-core'];
-    else if (yearNum >= 3) topicsToUse = ['calc-3-core', 'calc-4-core'];
+    else if (yearNum >= 3) topicsToUse = ['calc-3-b9', 'calc-3-c10', 'calc-4-b9', 'calc-4-c10'];
     else topicsToUse = ['calc-1-core'];
   }
   
