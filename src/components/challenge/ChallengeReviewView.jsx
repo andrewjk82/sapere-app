@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb } from 'lucide-react';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
+import WorkedSolutionSteps from './WorkedSolutionSteps';
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
 
 // Resolve the "correct answer" display text — handles MC index answers and
@@ -185,18 +186,9 @@ const ChallengeReviewView = ({
             </div>
           )}
 
-          {/* Worked solution — full text for now. Step 4 will split into steps. */}
-          {q.solution && (
-            <div style={{ padding: '24px 26px', borderRadius: '24px', background: '#fff', border: '1px solid rgba(124,58,237,0.12)', boxShadow: '0 10px 24px rgba(124,58,237,0.06)' }}>
-              <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7c3aed', marginBottom: '10px' }}>
-                Worked solution
-              </div>
-              <MathView
-                content={q.solution}
-                graphData={q.graphData}
-                style={{ color: '#1e1b4b', fontWeight: 600, fontSize: '0.98rem', lineHeight: 1.6 }}
-              />
-            </div>
+          {/* Worked solution — revealed one step at a time. */}
+          {(q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
+            <WorkedSolutionSteps question={q} graphData={q.graphData} />
           )}
 
           {/* Navigation footer */}
