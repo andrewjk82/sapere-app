@@ -59,6 +59,29 @@ const mixedNum = (maxD = 9) => {
   return { w, n, d, value: { n: w * d + n, d } };
 };
 const mixedTex = (m) => `${m.w}\\frac{${m.n}}{${m.d}}`;
+// Two proper fractions guaranteed to have DIFFERENT denominators —
+// used by "diff denom" topics so they never produce a same-denom problem.
+const diffFracs = (maxD = 9, minD = 3) => {
+  const d1 = randomInt(minD, maxD);
+  let d2 = randomInt(minD, maxD);
+  while (d2 === d1) d2 = randomInt(minD, maxD);
+  return [
+    { n: randomInt(1, d1 - 1), d: d1 },
+    { n: randomInt(1, d2 - 1), d: d2 },
+  ];
+};
+// Two mixed numerals guaranteed to have DIFFERENT fraction denominators.
+const diffMixed = (maxD = 9) => {
+  const d1 = randomInt(3, maxD);
+  let d2 = randomInt(3, maxD);
+  while (d2 === d1) d2 = randomInt(3, maxD);
+  const mk = (d) => {
+    const w = randomInt(1, 4);
+    const n = randomInt(1, d - 1);
+    return { w, n, d, value: { n: w * d + n, d } };
+  };
+  return [mk(d1), mk(d2)];
+};
 
 // ── Decimal helpers for Stage 6 (Decimals) ────────────────────────────────
 // Format a number as a clean decimal string (no float drift, no trailing 0s).
@@ -270,7 +293,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
     case 'calc-1-s21': { // fraction + fraction · diff denom
-      const f1 = properFrac(8), f2 = properFrac(8);
+      const [f1, f2] = diffFracs(8);
       q = `$$ ${fTex(f1)} + ${fTex(f2)} = ? $$`;
       a = fStr(fAdd(f1, f2));
       hint = 'Rewrite with a common denominator, then add.';
@@ -575,7 +598,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
     case 'calc-sub-s21': { // fraction − fraction · diff denom
-      let f1 = properFrac(8), f2 = properFrac(8);
+      let [f1, f2] = diffFracs(8);
       if (fVal(f1) < fVal(f2)) { const t = f1; f1 = f2; f2 = t; }
       q = `$$ ${fTex(f1)} - ${fTex(f2)} = ? $$`;
       a = fStr(fSub(f1, f2));
@@ -1351,14 +1374,14 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
     case 'calc-5-s3': { // add · diff denom · no mixed
-      const f1 = properFrac(8), f2 = properFrac(8);
+      const [f1, f2] = diffFracs(8);
       q = `$$ ${fTex(f1)} + ${fTex(f2)} = ? $$`;
       a = fStr(fAdd(f1, f2));
       hint = 'Different denominators — rewrite with a common denominator first.';
       break;
     }
     case 'calc-5-s4': { // sub · diff denom · no mixed
-      let f1 = properFrac(8), f2 = properFrac(8);
+      let [f1, f2] = diffFracs(8);
       if (fVal(f1) < fVal(f2)) { const t = f1; f1 = f2; f2 = t; }
       q = `$$ ${fTex(f1)} - ${fTex(f2)} = ? $$`;
       a = fStr(fSub(f1, f2));
@@ -1386,14 +1409,14 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
     }
     case 'calc-5-s7': { // add · diff denom · mixed
-      const m1 = mixedNum(8), m2 = mixedNum(8);
+      const [m1, m2] = diffMixed(8);
       q = `$$ ${mixedTex(m1)} + ${mixedTex(m2)} = ? $$`;
       a = fStr(fAdd(m1.value, m2.value));
       hint = 'Find a common denominator for the fraction parts.';
       break;
     }
     case 'calc-5-s8': { // sub · diff denom · mixed
-      let m1 = mixedNum(8), m2 = mixedNum(8);
+      let [m1, m2] = diffMixed(8);
       if (fVal(m1.value) < fVal(m2.value)) { const t = m1; m1 = m2; m2 = t; }
       q = `$$ ${mixedTex(m1)} - ${mixedTex(m2)} = ? $$`;
       a = fStr(fSub(m1.value, m2.value));
