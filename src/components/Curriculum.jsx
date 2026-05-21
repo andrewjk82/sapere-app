@@ -2,7 +2,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
   Layers, GraduationCap, Star, Clock, 
-  Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X
+  Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X,
+  Target, TrendingUp
 } from 'lucide-react';
 import { auth, db } from '../firebase/config';
 import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, getDoc, query, where, getCountFromServer, serverTimestamp } from 'firebase/firestore';
@@ -24,6 +25,8 @@ import {
 } from '../services/hscResultsService';
 import { localCache } from '../services/localCacheService';
 import './curriculum.css';
+import './hsc-chart.css';
+
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v3';
@@ -805,6 +808,13 @@ const Curriculum = () => {
     };
   }, [isAdmin, countChapterIds, isMigrating]);
 
+  const calculateHscBand = (pct) => {
+    if (pct >= 90) return { label: 'Band 6', className: 'band-6', color: '#f59e0b' };
+    if (pct >= 80) return { label: 'Band 5', className: 'band-5', color: '#6366f1' };
+    if (pct >= 70) return { label: 'Band 4', className: 'band-4', color: '#0ea5e9' };
+    return { label: 'Band 3 & below', className: 'band-low', color: '#94a3b8' };
+  };
+
   const renderStudentHscChart = () => {
     if (profile?.showHscGraph !== true) return null;
     const points = [...hscRecords]
@@ -820,72 +830,156 @@ const Curriculum = () => {
     const height = 96;
     const padX = 16;
     const padY = 16;
-    const minScore = Math.max(0, Math.min(...points.map((p) => p.percentage)) - 8);
-    const maxScore = Math.min(100, Math.max(...points.map((p) => p.percentage)) + 8);
+    const minScore = Math.max(0, Math.min(75, ...points.map((p) => p.percentage)) - 5);
+    const maxScore = Math.min(100, Math.max(95, ...points.map((p) => p.percentage)) + 5);
     const range = Math.max(1, maxScore - minScore);
     const xFor = (idx) => points.length === 1
       ? width / 2
       : padX + (idx * (width - padX * 2)) / (points.length - 1);
     const yFor = (value) => padY + ((maxScore - value) / range) * (height - padY * 2);
     const path = points.map((point, idx) => `${idx === 0 ? 'M' : 'L'} ${xFor(idx)} ${yFor(point.percentage)}`).join(' ');
+    const areaPath = points.length <= 1 ? '' : `${path} L ${xFor(points.length - 1)} ${height} L ${xFor(0)} ${height} Z`;
     const latest = points[points.length - 1];
+
+    const avg = points.reduce((acc, p) => acc + p.percentage, 0) / points.length;
+    const trend = latest.percentage - avg;
+    const isUp = trend >= 0;
+
+    const pct = latest.percentage;
+    let milestoneProgress = 0;
+    let milestoneText = '';
+
+    if (pct >= 90) {
+      milestoneText = 'Mastery Achieved';
+      milestoneProgress = 100;
+    } else if (pct >= 80) {
+      const distanceToNext = 90 - pct;
+      milestoneProgress = (pct - 80) * 10;
+      milestoneText = `${distanceToNext.toFixed(1)}% to Band 6`;
+    } else if (pct >= 70) {
+      const distanceToNext = 80 - pct;
+      milestoneProgress = (pct - 70) * 10;
+      milestoneText = `${distanceToNext.toFixed(1)}% to Band 5`;
+    } else {
+      const distanceToNext = 70 - pct;
+      milestoneProgress = Math.max(0, Math.min(100, ((pct - 50) / 20) * 100));
+      milestoneText = `${distanceToNext.toFixed(1)}% to Band 4`;
+    }
 
     return (
       <>
-        <button
-          type="button"
-          className="student-hsc-summary"
+        <div
+          className="hsc-dashboard-card"
           onClick={() => setHscModalOpen(true)}
-          style={{
-            width: '100%',
-            border: '1px solid rgba(99,102,241,0.14)',
-            textAlign: 'left',
-            borderRadius: 18,
-            padding: '16px 18px',
-            marginBottom: 20,
-            color: '#1f1b4d',
-            background: '#fff',
-            boxShadow: '0 12px 32px rgba(31,27,77,0.08)',
-            cursor: 'pointer',
-          }}
         >
-          <div className="student-hsc-summary__grid" style={{
-            display: 'grid',
-            gridTemplateColumns: 'minmax(150px, 0.8fr) minmax(180px, 1.2fr) minmax(120px, auto)',
-            gap: 16,
-            alignItems: 'center',
-          }}>
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#64748b' }}>
-                <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#6366f1', display: 'inline-block' }} />
+          <div className="hsc-dashboard-card__grid">
+            <div className="hsc-dashboard-card__left">
+              <div className="hsc-label-container">
+                <span className="hsc-pulse-dot" />
                 HSC Progress
               </div>
-              <div style={{ marginTop: 8, fontSize: '1.9rem', fontWeight: 950, lineHeight: 1, color: '#1e1b4b', letterSpacing: '-0.02em' }}>{latest.percentage.toFixed(1)}%</div>
+              <div className="hsc-score-row">
+                <div className="hsc-big-score">{latest.percentage.toFixed(1)}%</div>
+                <div className={`hsc-trend-badge ${isUp ? 'up' : 'down'}`}>
+                  {isUp ? <TrendingUp size={12} /> : <TrendingUp size={12} style={{ transform: 'rotate(180deg)' }} />}
+                  {isUp ? '+' : ''}{trend.toFixed(1)}%
+                </div>
+              </div>
+              <div className={`hsc-band-badge ${calculateHscBand(latest.percentage).className}`}>
+                {calculateHscBand(latest.percentage).label}
+              </div>
             </div>
-            <svg viewBox={`0 0 ${width} ${height}`} style={{ width: '100%', display: 'block' }} role="img" aria-label="HSC score trend">
-              <defs>
-                <linearGradient id="studentHscLine" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#6366f1" />
-                  <stop offset="100%" stopColor="#8b5cf6" />
-                </linearGradient>
-              </defs>
-              {[0, 1, 2].map((line) => {
-                const y = padY + (line * (height - padY * 2)) / 2;
-                return <line key={line} x1={padX} x2={width - padX} y1={y} y2={y} stroke="#e2e8f0" strokeWidth="1" />;
-              })}
-              <path d={path} fill="none" stroke="url(#studentHscLine)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-              {points.map((point, idx) => (
-                <g key={point.id || `${point.examDate}-${idx}`}>
-                  <circle cx={xFor(idx)} cy={yFor(point.percentage)} r="6" fill="#fff" stroke="#6366f1" strokeWidth="3" />
-                </g>
-              ))}
-            </svg>
-            <div style={{ textAlign: 'right', fontWeight: 800, color: '#334155', minWidth: 0 }}>
-              <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{latest.paper}</div>
-              <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: 2 }}>{latest.examDate}</div>
+
+            <div className="hsc-dashboard-card__chart-container" style={{ minWidth: 0 }}>
+              <svg viewBox={`0 0 ${width} ${height}`} className="hsc-dashboard-card__chart" role="img" aria-label="HSC score trend">
+                <defs>
+                  <linearGradient id="studentHscLine" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#6366f1" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#8b5cf6" stopOpacity="1" />
+                  </linearGradient>
+                  <linearGradient id="studentHscArea" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#6366f1" stopOpacity="0.2" />
+                    <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0.01" />
+                  </linearGradient>
+                </defs>
+
+                <line
+                  x1={padX}
+                  x2={width - padX}
+                  y1={yFor(90)}
+                  y2={yFor(90)}
+                  className="hsc-chart-bandline band-6-threshold"
+                />
+                <text
+                  x={padX}
+                  y={yFor(90) - 4}
+                  className="hsc-chart-threshold-text b6"
+                >
+                  Band 6 (90%)
+                </text>
+
+                <line
+                  x1={padX}
+                  x2={width - padX}
+                  y1={yFor(80)}
+                  y2={yFor(80)}
+                  className="hsc-chart-bandline band-5-threshold"
+                />
+                <text
+                  x={padX}
+                  y={yFor(80) - 4}
+                  className="hsc-chart-threshold-text b5"
+                >
+                  Band 5 (80%)
+                </text>
+
+                {areaPath && <path d={areaPath} fill="url(#studentHscArea)" />}
+                <path d={path} fill="none" stroke="url(#studentHscLine)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="hsc-sparkline-path" />
+
+                {points.map((point, idx) => {
+                  const isLatest = idx === points.length - 1;
+                  return (
+                    <g key={point.id || `${point.examDate}-${idx}`} className="hsc-node-group">
+                      <circle
+                        cx={xFor(idx)}
+                        cy={yFor(point.percentage)}
+                        r="4"
+                        fill="#ffffff"
+                        stroke="#6366f1"
+                        strokeWidth="2.5"
+                        className="hsc-node-outer"
+                      />
+                      {isLatest && (
+                        <circle
+                          cx={xFor(idx)}
+                          cy={yFor(point.percentage)}
+                          r="9"
+                          fill="none"
+                          stroke="#6366f1"
+                          strokeWidth="1.5"
+                          className="hsc-pulse-ring-node"
+                        />
+                      )}
+                    </g>
+                  );
+                })}
+              </svg>
+            </div>
+
+            <div className="hsc-dashboard-card__right">
+              <div className="hsc-milestone-header">
+                <span className="hsc-milestone-title">Milestone Tracker</span>
+                <span className="hsc-milestone-value">{milestoneText}</span>
+              </div>
+              <div className="hsc-progress-track">
+                <div className="hsc-progress-fill" style={{ width: `${milestoneProgress}%` }} />
+              </div>
+              <div className="hsc-card-action-link">
+                View detailed history <ChevronRight size={14} />
+              </div>
             </div>
           </div>
-        </button>
+        </div>
 
         <AnimatePresence>
           {hscModalOpen && (
@@ -900,28 +994,89 @@ const Curriculum = () => {
                 initial={{ scale: 0.96, y: 12 }}
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.96, y: 12 }}
-                style={{ position: 'relative', width: 'min(720px, 100%)', maxHeight: '82vh', overflowY: 'auto', background: 'white', borderRadius: 28, padding: 28, boxShadow: '0 30px 80px rgba(15,23,42,0.32)' }}
+                style={{
+                  position: 'relative',
+                  width: 'min(720px, 100%)',
+                  maxHeight: '82vh',
+                  overflowY: 'auto',
+                  background: 'rgba(255, 255, 255, 0.92)',
+                  backdropFilter: 'blur(24px)',
+                  WebkitBackdropFilter: 'blur(24px)',
+                  border: '1px solid rgba(167, 139, 250, 0.18)',
+                  borderRadius: 28,
+                  padding: 28,
+                  boxShadow: '0 30px 80px rgba(15,23,42,0.22)'
+                }}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginBottom: 18 }}>
+                <div className="hsc-modal-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16 }}>
                   <div>
                     <div style={{ fontSize: '0.75rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.12em', textTransform: 'uppercase' }}>HSC Papers</div>
-                    <h3 style={{ margin: '6px 0 0', color: '#1e1b4b' }}>Exam Record</h3>
+                    <h3 style={{ margin: '6px 0 0', color: '#1e1b4b' }}>Exam Records</h3>
                   </div>
-                  <button onClick={() => setHscModalOpen(false)} style={{ width: 40, height: 40, borderRadius: 12, border: 'none', background: '#f1f5f9', color: '#64748b', cursor: 'pointer' }}>
+                  <button onClick={() => setHscModalOpen(false)} style={{ width: 40, height: 40, borderRadius: 12, border: 'none', background: '#f1f5f9', color: '#64748b', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <X size={18} />
                   </button>
                 </div>
-                <div style={{ display: 'grid', gap: 10 }}>
+
+                <div className="hsc-modal-summary-grid">
+                  <div className="hsc-modal-summary-widget">
+                    <div className="hsc-modal-summary-lbl">Current Band</div>
+                    <div className="hsc-modal-summary-val" style={{ color: calculateHscBand(latest.percentage).color }}>
+                      {calculateHscBand(latest.percentage).label}
+                    </div>
+                  </div>
+                  <div className="hsc-modal-summary-widget">
+                    <div className="hsc-modal-summary-lbl">Overall Average</div>
+                    <div className="hsc-modal-summary-val">{avg.toFixed(1)}%</div>
+                  </div>
+                  <div className="hsc-modal-summary-widget">
+                    <div className="hsc-modal-summary-lbl">Exams Taken</div>
+                    <div className="hsc-modal-summary-val">{points.length}</div>
+                  </div>
+                </div>
+
+                <div style={{ display: 'grid', gap: 14 }}>
                   {[...points].reverse().map((record) => (
-                    <div key={record.id} style={{ display: 'grid', gridTemplateColumns: '110px minmax(0,1fr) 90px', gap: 14, alignItems: 'center', padding: 14, borderRadius: 16, background: '#f8fafc', border: '1px solid #eef2ff' }}>
-                      <div style={{ fontWeight: 900, color: '#64748b', fontSize: '0.82rem' }}>{record.examDate}</div>
-                      <div style={{ minWidth: 0 }}>
-                        <div style={{ fontWeight: 900, color: '#1e1b4b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{record.paper}</div>
-                        {record.notes && <div style={{ marginTop: 4, color: '#64748b', fontSize: '0.78rem' }}>{record.notes}</div>}
+                    <div key={record.id} className="hsc-paper-row-card">
+                      <div className="hsc-row-gauge">
+                        <svg viewBox="0 0 36 36" style={{ width: '100%', height: '100%' }}>
+                          <defs>
+                            <linearGradient id={`gaugeGrad-${record.id}`} x1="0" y1="0" x2="1" y2="1">
+                              <stop offset="0%" stopColor="#6366f1" />
+                              <stop offset="100%" stopColor="#10b981" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                            fill="none"
+                            stroke="#f1f5f9"
+                            strokeWidth="3"
+                          />
+                          <path
+                            strokeDasharray={`${record.percentage.toFixed(0)}, 100`}
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                            fill="none"
+                            stroke={`url(#gaugeGrad-${record.id})`}
+                            strokeWidth="3.2"
+                            strokeLinecap="round"
+                          />
+                        </svg>
+                        <span className="hsc-row-gauge-pct">{record.percentage.toFixed(0)}%</span>
                       </div>
-                      <div style={{ textAlign: 'right', fontWeight: 950, color: '#4f46e5' }}>
-                        {Number(record.score)}/{Number(record.total)}
-                        <div style={{ fontSize: '0.72rem', color: '#7c3aed' }}>{record.percentage.toFixed(1)}%</div>
+
+                      <div className="hsc-paper-main">
+                        <div className="hsc-paper-date">{record.examDate}</div>
+                        <h4 className="hsc-paper-title">{record.paper}</h4>
+                        {record.notes && (
+                          <div className="hsc-paper-comment-bubble">
+                            {record.notes}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="hsc-paper-score-col">
+                        <div className="hsc-paper-score-num">{Number(record.score)}</div>
+                        <div className="hsc-paper-score-tot">/ {Number(record.total)}</div>
                       </div>
                     </div>
                   ))}
