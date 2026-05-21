@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo } from 'react';
+import { useState, useRef, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag } from 'lucide-react';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -112,11 +112,27 @@ const ChallengeReviewView = ({
   const goPrev = () => setIdx((i) => Math.max(0, i - 1));
   const goNext = () => setIdx((i) => Math.min(total - 1, i + 1));
 
-  const viewportWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
-  const isReviewTabletLayout = isTabletLayout || (!isMobile && viewportWidth >= 768 && viewportWidth < 1100);
-  // Match the quiz layout: tablets use a single-column review to avoid nested
-  // fixed panes fighting touch scroll on iPadOS Safari / Android Chrome.
-  const showSideCanvas = !isMobile && !isReviewTabletLayout;
+  // Track viewport width so the layout reacts to resize / orientation change.
+  const [viewportWidth, setViewportWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 1200,
+  );
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined;
+    const onResize = () => setViewportWidth(window.innerWidth);
+    window.addEventListener('resize', onResize);
+    window.addEventListener('orientationchange', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+      window.removeEventListener('orientationchange', onResize);
+    };
+  }, []);
+
+  // The side-by-side layout needs genuine room for a 640px question column
+  // PLUS the sketch pad. Below that it would squash the column and push the
+  // Prev/Next buttons off-screen — so anything narrower falls back to a
+  // single-column layout.
+  const showSideCanvas = !isMobile && !isTabletLayout && viewportWidth >= 1100;
+  const isReviewTabletLayout = !isMobile && !showSideCanvas;
   const singleColumnMaxWidth = isReviewTabletLayout ? 'min(920px, calc(100vw - 32px))' : '720px';
 
   const statusBadge = isPending
