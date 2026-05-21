@@ -51,7 +51,7 @@ function write(kind, uid, items) {
 // Keep only what's needed to re-render & re-grade a question.
 function slimQuestion(q) {
   return {
-    id: q.id,
+    id: q.id || q.question || q.text,
     question: q.question || q.text || '',
     type: q.type || 'short_answer',
     answer: q.answer,
@@ -122,10 +122,11 @@ export function addMistakes(kind, uid, wrongQuestions) {
   const seen = new Set(items.map((it) => String(it.question?.id)));
   let added = 0;
   (wrongQuestions || []).forEach((q) => {
-    if (!q || !q.id || !canGrade(q)) return;
-    if (seen.has(String(q.id))) return;
+    const questionId = q?.id || q?.question || q?.text;
+    if (!q || !questionId || !canGrade(q)) return;
+    if (seen.has(String(questionId))) return;
     items.push({
-      question: slimQuestion(q),
+      question: { ...slimQuestion(q), id: questionId },
       addedAt: Date.now(),
       sourceDate: new Date().toLocaleDateString('en-CA'),
       stage: 0,
@@ -134,7 +135,7 @@ export function addMistakes(kind, uid, wrongQuestions) {
       twinPassed: false,
       mistakeTag: null,
     });
-    seen.add(String(q.id));
+    seen.add(String(questionId));
     added += 1;
   });
   if (added) write(kind, uid, items);

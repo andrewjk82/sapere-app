@@ -35,7 +35,7 @@ import ChallengeReviewView from './challenge/ChallengeReviewView';
 import SecretNoteView from './challenge/SecretNoteView';
 
 // Secret Notebook (local-only mistake review)
-import { addMistakes, getSyncSnapshot, getNoteCount, getDueCount } from '../utils/secretNote';
+import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount } from '../utils/secretNote';
 
 // Utilities
 import {
@@ -1468,6 +1468,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // Question data stays in localStorage only; just a compact count/tag
         // summary is piggy-backed onto the user doc write below (no extra write).
         let secretNoteSync = null;
+        let shouldOpenSecretNoteAfterSave = false;
+        let secretNoteKindAfterSave = null;
         if (!isAbandoned) {
           try {
             const noteKind = challengeType === 'calc' ? 'calc' : 'daily';
@@ -1475,8 +1477,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
               const r = currentAnswerResults[i];
               return r && typeof r === 'object' && r.correct === false;
             });
-            if (wrongQuestions.length > 0) {
-              addMistakes(noteKind, user.uid, wrongQuestions);
+            const reviewableWrongQuestions = wrongQuestions.filter(canGrade);
+            if (reviewableWrongQuestions.length > 0) {
+              addMistakes(noteKind, user.uid, reviewableWrongQuestions);
+              shouldOpenSecretNoteAfterSave = true;
+              secretNoteKindAfterSave = noteKind;
             }
             secretNoteSync = getSyncSnapshot(user.uid);
           } catch (e) {
@@ -1741,6 +1746,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         });
         writeChallengeStatusMeta(user.uid, today, challengeType, isAbandoned ? 'abandoned' : 'completed')
           .catch((err) => console.warn('challenge status meta update failed (non-critical):', err?.code || err));
+
+        if (shouldOpenSecretNoteAfterSave && secretNoteKindAfterSave) {
+          setSecretNoteKind(secretNoteKindAfterSave);
+          setStep('secretNote');
+        }
           
         if (challengeType === 'daily') {
           if (!isAbandoned) {
