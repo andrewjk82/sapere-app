@@ -2930,5 +2930,589 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "(0,0) \\to (4,-1)"
       }
     ]
+  },
+  {
+    "id": "y11a-5B-new-1",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Consider the parabola $y = x^2 - 4x$.\n**a)** Show that when $y$ is replaced with $-y$, the equation becomes $y = 4x - x^2$.\n**b)** Copy and complete a table of values for $x = -1, 0, 1, 2, 3, 4, 5$ for both $y = x^2 - 4x$ and $y = 4x - x^2$.\n**c)** Sketch the two parabolas on the same axes and state the vertex of each.\n**d)** What geometric transformation maps $y = x^2 - 4x$ to $y = 4x - x^2$?",
+    "a": "See solution steps for full working. Transformation is a reflection in the x-axis.",
+    "opts": [],
+    "h": "Replace y with -y and make y the subject again. A reflection in the x-axis negates all y-values.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Replace y with -y.",
+        "workingOut": "-y = x^2 - 4x \\implies y = 4x - x^2"
+      },
+      {
+        "explanation": "Part b: Evaluate y for each x.",
+        "workingOut": "\\text{For } y=x^2-4x: 5, 0, -3, -4, -3, 0, 5 \\\\ \\text{For } y=4x-x^2: -5, 0, 3, 4, 3, 0, -5"
+      },
+      {
+        "explanation": "Part c: Vertices.",
+        "workingOut": "\\text{Vertices are } (2, -4) \\text{ and } (2, 4)"
+      },
+      {
+        "explanation": "Part d: Transformation.",
+        "workingOut": "\\text{Reflection in the } x\\text{-axis}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-2",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Consider the hyperbola $y = \\frac{3}{x - 1}$.\n**a)** Show that when $x$ is replaced with $-x$, the equation becomes $y = -\\frac{3}{x + 1}$.\n**b)** Copy and complete a table of values for $x = -4, -3, -2, -1, 0, 1, 2, 3, 4$ for both equations (leave undefined where appropriate).\n**c)** Sketch the two hyperbolas and state the vertical asymptote of each.\n**d)** What geometric transformation maps $y = \\frac{3}{x - 1}$ to $y = -\\frac{3}{x + 1}$?",
+    "a": "See solution steps. Transformation is a reflection in the y-axis.",
+    "opts": [],
+    "h": "Replacing x with -x reflects the graph horizontally across the y-axis.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Replace x with -x.",
+        "workingOut": "y = \\frac{3}{-x - 1} = \\frac{3}{-(x + 1)} = -\\frac{3}{x + 1}"
+      },
+      {
+        "explanation": "Part c: Asymptotes.",
+        "workingOut": "x = 1 \\text{ and } x = -1"
+      },
+      {
+        "explanation": "Part d: Transformation.",
+        "workingOut": "\\text{Reflection in the } y\\text{-axis}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-3",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "**a)** Sketch the graph of the quadratic function $y = x^2 - 6x + 5$, showing the intercepts and vertex.\n**b)** In each case, determine the equation of the result when this parabola is reflected as indicated. Then draw a sketch of the new function.\n  **i)** in the $y$-axis\n  **ii)** in the $x$-axis\n  **iii)** in both axes",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "For y-axis reflection, replace x with -x. For x-axis reflection, replace y with -y (or multiply function by -1).",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Sketch base graph.",
+        "workingOut": "y\\text{-int: } 5, \\ x\\text{-ints: } 1, 5, \\text{ Vertex: } (3, -4)"
+      },
+      {
+        "explanation": "Part b-i: Reflection in y-axis.",
+        "workingOut": "y = (-x)^2 - 6(-x) + 5 = x^2 + 6x + 5"
+      },
+      {
+        "explanation": "Part b-ii: Reflection in x-axis.",
+        "workingOut": "y = -(x^2 - 6x + 5) = -x^2 + 6x - 5"
+      },
+      {
+        "explanation": "Part b-iii: Reflection in both axes.",
+        "workingOut": "y = -((-x)^2 - 6(-x) + 5) = -x^2 - 6x - 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-4",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "**a)** Sketch the graph of the exponential function $y = 3^{-x}$, showing the $y$-intercept, the coordinates at $x = -1$, and clearly indicating the asymptote.\n**b)** In each case, find the equation of the curve when this exponential is reflected as indicated. Then draw a sketch of the new function.\n  **i)** in the $x$-axis\n  **ii)** in the $y$-axis\n  **iii)** in both axes",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Remember that $3^{-(-x)} = 3^x$.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Base graph features.",
+        "workingOut": "y\\text{-int: } (0, 1), \\text{ At } x=-1, y=3^1=3. \\text{ Asymptote: } y=0"
+      },
+      {
+        "explanation": "Part b-i: Reflection in x-axis.",
+        "workingOut": "y = -3^{-x}"
+      },
+      {
+        "explanation": "Part b-ii: Reflection in y-axis.",
+        "workingOut": "y = 3^{-(-x)} = 3^x"
+      },
+      {
+        "explanation": "Part b-iii: Reflection in both axes.",
+        "workingOut": "y = -3^x"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-5",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "**a)** The graph of an unknown function $y = f(x)$ has zeroes at $x=1$ and $x=3$, and a local minimum at $(2, -1)$.\n  **i)** Which reflection produces $y = f(-x)$? Sketch the graph of this function.\n  **ii)** Which reflection produces $y = -f(x)$? Sketch the graph of this function.\n  **iii)** Compare the zeroes of $f(x)$, $f(-x)$, and $-f(x)$. Which pair have the same zeroes, and why?\n**b)** The graph of another function $y = P(x)$ has zeroes at $x=-2$ and $x=4$, and a local maximum at $(1, 3)$.\n  **i)** Which transformation produces $y = -P(x)$? Sketch it.\n  **ii)** Which transformation produces $y = -P(-x)$? Sketch it.\n  **iii)** In this case, do $P(x)$ and $-P(x)$ have the same zeroes? Why might that be?",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Reflecting across the x-axis keeps x-intercepts the same. Reflecting across the y-axis negates the x-intercepts.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a-i.",
+        "workingOut": "Reflection in the y-axis. Zeroes at -1, -3. Min at (-2, -1)."
+      },
+      {
+        "explanation": "Part a-ii.",
+        "workingOut": "Reflection in the x-axis. Zeroes at 1, 3. Max at (2, 1)."
+      },
+      {
+        "explanation": "Part a-iii.",
+        "workingOut": "f(x) \\text{ and } -f(x) \\text{ have the same zeroes because reflecting in the x-axis does not change x-intercepts.}"
+      },
+      {
+        "explanation": "Part b.",
+        "workingOut": "y=-P(x) \\text{ is reflection in x-axis. } y=-P(-x) \\text{ is rotation } 180^\\circ \\text{ about origin.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-6a",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Write down the new equation for the function $y = x^2 + 1$ after it is reflected in the $x$-axis. Then sketch the graph of the new curve.",
+    "a": "New equation: y = -x^2 - 1. Inverted parabola with vertex at (0, -1).",
+    "opts": [],
+    "h": "Reflecting in the $x$-axis means multiplying the entire function by $-1$.",
+    "s": "Replace $y$ with $-y$ to get $-y = x^2 + 1 \\implies y = -x^2 - 1$. The graph is an inverted parabola with its maximum turning point at $(0, -1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply x-axis reflection.",
+        "workingOut": "y \\to -y \\implies y = -(x^2 + 1) = -x^2 - 1"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-6b",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Write down the new equation for the function $y = x^3 - 2$ after it is reflected in the $y$-axis. Then sketch the graph of the new curve.",
+    "a": "New equation: y = -x^3 - 2.",
+    "opts": [],
+    "h": "Reflecting in the $y$-axis means replacing $x$ with $-x$.",
+    "s": "Replace $x$ with $-x$ to get $y = (-x)^3 - 2 = -x^3 - 2$. The graph has an inflection point at $(0, -2)$ and goes from top-left to bottom-right.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply y-axis reflection.",
+        "workingOut": "x \\to -x \\implies y = (-x)^3 - 2 = -x^3 - 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-6c",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Write down the new equation for the function $y = 3^x$ after it is rotated by $180^{\\circ}$ about the origin. Then sketch the graph of the new curve.",
+    "a": "New equation: y = -3^{-x}. Exponential curve in the third quadrant.",
+    "opts": [],
+    "h": "A $180^{\\circ}$ rotation about the origin is equivalent to reflecting in both axes: replace $x$ with $-x$ and $y$ with $-y$.",
+    "s": "Replace $x$ with $-x$ and $y$ with $-y$ to get $-y = 3^{-x} \\implies y = -3^{-x}$. The graph approaches $y=0$ from below as $x \\to -\\infty$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply 180 degree rotation.",
+        "workingOut": "-y = 3^{-x} \\implies y = -3^{-x}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-6d",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Write down the new equation for the function $y = 6x - x^2$ after it is rotated by $180^{\\circ}$ about the origin. Then sketch the graph of the new curve.",
+    "a": "New equation: y = x^2 + 6x.",
+    "opts": [],
+    "h": "Replace both $x$ with $-x$ and $y$ with $-y$.",
+    "s": "$-y = 6(-x) - (-x)^2 \\implies -y = -6x - x^2 \\implies y = x^2 + 6x$. The graph is an upright parabola with roots at $0$ and $-6$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply rotation.",
+        "workingOut": "-y = 6(-x) - (-x)^2 = -6x - x^2 \\implies y = x^2 + 6x"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-6e",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Write down the new equation for the relation $x^2 + (y-2)^2 = 16$ after it is reflected in the $y$-axis. Then sketch the graph of the new curve.",
+    "a": "New equation: x^2 + (y-2)^2 = 16. The graph is identical to the original circle.",
+    "opts": [],
+    "h": "Replacing $x$ with $-x$ in $x^2$ leaves it unchanged.",
+    "s": "$(-x)^2 + (y-2)^2 = 16 \\implies x^2 + (y-2)^2 = 16$. Because the circle's centre is on the y-axis, reflection in the y-axis leaves it unchanged.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply y-axis reflection.",
+        "workingOut": "(-x)^2 + (y-2)^2 = 16 \\implies x^2 + (y-2)^2 = 16"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-6f",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Write down the new equation for the function $y = -\\frac{2}{x}$ after it is reflected in the $x$-axis. Then sketch the graph of the new curve.",
+    "a": "New equation: y = 2/x.",
+    "opts": [],
+    "h": "Multiply the entire function by $-1$.",
+    "s": "Replace $y$ with $-y$ to get $-y = -\\frac{2}{x} \\implies y = \\frac{2}{x}$. The graph is a standard hyperbola in the 1st and 3rd quadrants.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply x-axis reflection.",
+        "workingOut": "y \\to -y \\implies y = \\frac{2}{x}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-7a",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Consider the hyperbola $y = \\frac{1}{x - 3} + 2$. Sketch this hyperbola, clearly showing the equations of its asymptotes and the exact coordinates of its intercepts.",
+    "a": "Asymptotes: x=3, y=2. x-int: (2.5, 0). y-int: (0, 5/3).",
+    "opts": [],
+    "h": "The vertical asymptote occurs where the denominator is 0. The horizontal asymptote is the constant term.",
+    "s": "Asymptotes: $x=3, y=2$. Intercepts: set $x=0 \\implies y = -1/3 + 2 = 5/3$. Set $y=0 \\implies 1/(x-3) = -2 \\implies x-3 = -1/2 \\implies x = 2.5$.",
+    "solutionSteps": [
+      {
+        "explanation": "Find asymptotes.",
+        "workingOut": "x = 3, y = 2"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "x=0 \\implies y = \\frac{5}{3}. \\ y=0 \\implies x = 2.5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-7b-i",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The hyperbola $y = \\frac{1}{x - 3} + 2$ is transformed such that its vertical asymptote is unchanged, but its horizontal asymptote changes sign. Determine the reflection required to achieve this, write down the new equation, and sketch it.",
+    "a": "Reflection in the x-axis. Equation: y = -1/(x-3) - 2.",
+    "opts": [],
+    "h": "To change the sign of the horizontal asymptote ($y=2 \\to y=-2$) while keeping the vertical asymptote ($x=3$) fixed, reflect across the x-axis.",
+    "s": "Reflection in the $x$-axis replaces $y$ with $-y$. $-y = \\frac{1}{x-3} + 2 \\implies y = -\\frac{1}{x-3} - 2$. The asymptotes are now $x=3$ and $y=-2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify transformation.",
+        "workingOut": "\\text{Reflection in the } x\\text{-axis negates } y\\text{-values.}"
+      },
+      {
+        "explanation": "Write new equation.",
+        "workingOut": "y = -\\frac{1}{x-3} - 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-7b-ii",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The hyperbola $y = \\frac{1}{x - 3} + 2$ has positive intercepts on both axes. Determine the transformation (reflection or rotation) required to achieve a new hyperbola where both intercepts are negative. Write down its equation and sketch it.",
+    "a": "Rotation of 180 degrees about the origin. Equation: y = 1/(x+3) - 2.",
+    "opts": [],
+    "h": "To make both intercepts negative, we must reflect the graph across both axes (a $180^{\\circ}$ rotation).",
+    "s": "Rotate $180^{\\circ}$ about the origin by replacing $x$ with $-x$ and $y$ with $-y$: $-y = \\frac{1}{-x-3} + 2 \\implies y = \\frac{1}{x+3} - 2$. The intercepts will now be negative.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify transformation.",
+        "workingOut": "\\text{Rotation } 180^\\circ \\implies \\text{replace } (x,y) \\text{ with } (-x,-y)."
+      },
+      {
+        "explanation": "Derive new equation.",
+        "workingOut": "-y = \\frac{1}{-x-3} + 2 \\implies y = \\frac{1}{x+3} - 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-8",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "**a)** Sketch the circles $(x - 4)^2 + y^2 = 9$ and $(x + 4)^2 + y^2 = 9$ on the same set of axes.\n**b)** What geometric transformation maps each circle onto the other?\n**c)** Confirm your answer algebraically by making an appropriate substitution into the first equation.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Where are the centres of the two circles located? How are they related?",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Identify centres and radii.",
+        "workingOut": "\\text{Circle 1: Centre } (4,0), \\text{ radius } 3. \\\\ \\text{Circle 2: Centre } (-4,0), \\text{ radius } 3."
+      },
+      {
+        "explanation": "Part b: Transformation.",
+        "workingOut": "\\text{Reflection in the } y\\text{-axis maps one onto the other.}"
+      },
+      {
+        "explanation": "Part c: Algebraic proof.",
+        "workingOut": "\\text{Replace } x \\text{ with } -x \\text{ in the first equation:} \\\\ (-x - 4)^2 + y^2 = (-(x + 4))^2 + y^2 = (x + 4)^2 + y^2 = 9"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-9",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Consider the equation $x^2 + y^2 = r^2$, representing a circle with its centre at the origin and radius $r$.\n**a)** Show algebraically that this equation is unchanged when the graph is reflected in either the $x$-axis or the $y$-axis.\n**b)** Explain this result geometrically.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Substitute $-y$ for $y$ (for x-axis reflection) and $-x$ for $x$ (for y-axis reflection). Note that squares of negatives are positive.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Reflection in x-axis.",
+        "workingOut": "\\text{Replace } y \\text{ with } -y: \\ x^2 + (-y)^2 = x^2 + y^2 = r^2"
+      },
+      {
+        "explanation": "Part a: Reflection in y-axis.",
+        "workingOut": "\\text{Replace } x \\text{ with } -x: \\ (-x)^2 + y^2 = x^2 + y^2 = r^2"
+      },
+      {
+        "explanation": "Part b: Geometric explanation.",
+        "workingOut": "\\text{A circle centred at the origin is perfectly symmetrical about both the } x\\text{-axis and the } y\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-10a",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "From the base graph $y = \\frac{1}{3}x + 2$, explain how the graph of each subsequent equation is a reflection of the first graph or a rotation of $180^{\\circ}$ about the origin. Then sketch each one.\n  **i)** $y = -\\frac{1}{3}x + 2$\n  **ii)** $y = -\\frac{1}{3}x - 2$\n  **iii)** $y = \\frac{1}{3}x - 2$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Compare $f(-x)$, $-f(x)$, and $-f(-x)$ to the original function.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part i: $f(-x)$",
+        "workingOut": "\\text{Replace } x \\text{ with } -x. \\text{ This is a reflection in the } y\\text{-axis.}"
+      },
+      {
+        "explanation": "Part ii: $-f(-x)$",
+        "workingOut": "\\text{Replace } x \\text{ with } -x \\text{ and } y \\text{ with } -y. \\text{ This is a } 180^\\circ \\text{ rotation about the origin.}"
+      },
+      {
+        "explanation": "Part iii: $-f(x)$",
+        "workingOut": "\\text{Replace } y \\text{ with } -y. \\text{ This is a reflection in the } x\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-10b",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "From the base graph $y = 5 - x$, explain how the graph of each subsequent equation is a reflection of the first graph or a rotation of $180^{\\circ}$ about the origin. Then sketch each one.\n  **i)** $y = x - 5$\n  **ii)** $y = x + 5$\n  **iii)** $y = -x - 5$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Rewrite the equations as multiples or substitutions of the original $f(x) = 5 - x$.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part i: $-f(x)$",
+        "workingOut": "-(5 - x) = x - 5 \\implies \\text{Reflection in the } x\\text{-axis.}"
+      },
+      {
+        "explanation": "Part ii: $f(-x)$",
+        "workingOut": "5 - (-x) = 5 + x \\implies \\text{Reflection in the } y\\text{-axis.}"
+      },
+      {
+        "explanation": "Part iii: $-f(-x)$",
+        "workingOut": "-(5 - (-x)) = -5 - x \\implies 180^\\circ \\text{ rotation about the origin.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-10c",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "From the base graph $y = (x - 2)^2$, explain how the graph of each subsequent equation is a reflection of the first graph or a rotation of $180^{\\circ}$ about the origin. Then sketch each one.\n  **i)** $y = -(x + 2)^2$\n  **ii)** $y = (x + 2)^2$\n  **iii)** $y = -(x - 2)^2$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Look for combinations of horizontal and vertical reflections.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part i: $-f(-x)$",
+        "workingOut": "-((-x) - 2)^2 = -(x + 2)^2 \\implies 180^\\circ \\text{ rotation.}"
+      },
+      {
+        "explanation": "Part ii: $f(-x)$",
+        "workingOut": "((-x) - 2)^2 = (x + 2)^2 \\implies \\text{Reflection in } y\\text{-axis.}"
+      },
+      {
+        "explanation": "Part iii: $-f(x)$",
+        "workingOut": "-(x - 2)^2 \\implies \\text{Reflection in } x\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-10d",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "From the base graph $y = \\sqrt{2x}$, explain how the graph of each subsequent equation is a reflection of the first graph or a rotation of $180^{\\circ}$ about the origin. Then sketch each one.\n  **i)** $y = -\\sqrt{-2x}$\n  **ii)** $y = -\\sqrt{2x}$\n  **iii)** $y = \\sqrt{-2x}$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Determine whether the negative sign is inside the square root, outside, or both.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part i: $-f(-x)$",
+        "workingOut": "180^\\circ \\text{ rotation about the origin.}"
+      },
+      {
+        "explanation": "Part ii: $-f(x)$",
+        "workingOut": "\\text{Reflection in the } x\\text{-axis.}"
+      },
+      {
+        "explanation": "Part iii: $f(-x)$",
+        "workingOut": "\\text{Reflection in the } y\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-10e",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "From the base graph $y = 4^x$, explain how the graph of each subsequent equation is a reflection of the first graph or a rotation of $180^{\\circ}$ about the origin. Then sketch each one.\n  **i)** $y = -4^x$\n  **ii)** $y = -4^{-x}$\n  **iii)** $y = 4^{-x}$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Identify whether the negative affects the exponent, the base, or both.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part i: $-f(x)$",
+        "workingOut": "\\text{Reflection in the } x\\text{-axis.}"
+      },
+      {
+        "explanation": "Part ii: $-f(-x)$",
+        "workingOut": "180^\\circ \\text{ rotation about the origin.}"
+      },
+      {
+        "explanation": "Part iii: $f(-x)$",
+        "workingOut": "\\text{Reflection in the } y\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-10f",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "From the base graph $y = 2 + \\frac{1}{x - 2}$, explain how the graph of each subsequent equation is a reflection of the first graph or a rotation of $180^{\\circ}$ about the origin. Then sketch each one.\n  **i)** $y = 2 - \\frac{1}{x + 2}$\n  **ii)** $y = -2 + \\frac{1}{x + 2}$\n  **iii)** $y = -2 + \\frac{1}{2 - x}$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Evaluate $f(-x)$, $-f(x)$, and $-f(-x)$ explicitly.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate $f(-x)$",
+        "workingOut": "f(-x) = 2 + \\frac{1}{-x-2} = 2 - \\frac{1}{x+2}. \\text{ (Part i, Reflection in y-axis)}"
+      },
+      {
+        "explanation": "Evaluate $-f(-x)$",
+        "workingOut": "-f(-x) = -(2 - \\frac{1}{x+2}) = -2 + \\frac{1}{x+2}. \\text{ (Part ii, 180 rotation)}"
+      },
+      {
+        "explanation": "Evaluate $-f(x)$",
+        "workingOut": "-f(x) = -(2 + \\frac{1}{x-2}) = -2 - \\frac{1}{x-2} = -2 + \\frac{1}{2-x}. \\text{ (Part iii, Reflection in x-axis)}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-11",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Consider the two parabolas $y = x^2 - 6x + 8$ and $y = x^2 + 6x + 8$.\n**a)** Sketch both quadratic functions on the same set of axes.\n**b)** What reflection maps each parabola onto the other?\n**c)** How can the second parabola be obtained by shifting the first?\n**d)** Confirm your answer to part **c** algebraically.\n**e)** Briefly investigate which parts of the previous reflection questions (e.g. reflecting $y=mx+c$) could also have been achieved by shifting instead.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Find the vertices of both parabolas.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Vertices.",
+        "workingOut": "\\text{First: } (3, -1). \\text{ Second: } (-3, -1)."
+      },
+      {
+        "explanation": "Part b: Reflection.",
+        "workingOut": "\\text{Reflection in the } y\\text{-axis.}"
+      },
+      {
+        "explanation": "Part c: Shift.",
+        "workingOut": "\\text{The vertex moves from } 3 \\text{ to } -3, \\text{ so it's a shift left by } 6 \\text{ units.}"
+      },
+      {
+        "explanation": "Part d: Algebraic proof.",
+        "workingOut": "\\text{Replace } x \\text{ with } (x+6): \\ (x+6)^2 - 6(x+6) + 8 = x^2 + 12x + 36 - 6x - 36 + 8 = x^2 + 6x + 8."
+      },
+      {
+        "explanation": "Part e: Conclusion.",
+        "workingOut": "\\text{Any linear or periodic function's reflections can often be achieved by translations.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5B-new-12",
+    "c": "5B",
+    "t": "Reflections",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "**a)** Let $c(x) = \\frac{3^x + 3^{-x}}{2}$. Show algebraically that $c(-x) = c(x)$, and explain this geometrically.\n**b)** Let $t(x) = \\frac{3^x - 3^{-x}}{3^x + 3^{-x}}$. Show algebraically that $-t(-x) = t(x)$, and explain this geometrically.\n**c)** Sketch both functions roughly to confirm your observations.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Substitute $-x$ into each expression. Remember that addition is commutative.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a.",
+        "workingOut": "c(-x) = \\frac{3^{-x} + 3^{-(-x)}}{2} = \\frac{3^{-x} + 3^x}{2} = c(x). \\implies \\text{Even function (symmetric about y-axis).}"
+      },
+      {
+        "explanation": "Part b.",
+        "workingOut": "t(-x) = \\frac{3^{-x} - 3^x}{3^{-x} + 3^x} = \\frac{-(3^x - 3^{-x})}{3^x + 3^{-x}} = -t(x) \\implies -t(-x) = t(x). \\implies \\text{Odd function (point symmetry about origin).}"
+      }
+    ]
   }
 ];
