@@ -210,7 +210,7 @@ const ChallengeReviewView = ({
             <MathView
               content={q.question}
               graphData={q.graphData}
-              style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.55 }}
+              style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7 }}
             />
             {q.questionImage && (
               <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '260px', objectFit: 'contain', marginTop: '14px', borderRadius: '14px', background: '#f8fafc' }} />
@@ -246,7 +246,7 @@ const ChallengeReviewView = ({
                 <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No panels shaded</div>
               )
             ) : studentText ? (
-              <MathView content={studentText} style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.98rem' }} />
+              <MathView content={studentText} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
             ) : (
               <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>
             )}
@@ -266,7 +266,7 @@ const ChallengeReviewView = ({
                   Shade exactly {q.answer} panel{Number(q.answer) !== 1 ? 's' : ''}
                 </div>
               ) : (
-                <MathView content={correctText} style={{ color: '#065f46', fontWeight: 800, fontSize: '0.98rem' }} />
+                <MathView content={correctText} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
               )}
             </div>
           )}

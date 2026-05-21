@@ -266,10 +266,10 @@ const ChallengeQuizView = ({
                 </button>
               )}
             </div>
-            <MathView 
-              content={currentQuestion?.question} 
+            <MathView
+              content={currentQuestion?.question}
               graphData={currentQuestion?.graphData}
-              style={{ fontSize: '1.2rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6, margin: 0 }} 
+              style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
             
             <AnimatePresence>
@@ -569,17 +569,18 @@ const ChallengeQuizView = ({
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                      <div style={{ 
-                        width: '32px', height: '32px', borderRadius: '50%', 
-                        background: status === 'correct' ? '#10b981' : status === 'wrong' ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9', 
+                      <div style={{
+                        width: '34px', height: '34px', borderRadius: '50%',
+                        background: status === 'correct' ? '#10b981' : status === 'wrong' ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9',
                         color: isSelected || status !== 'default' ? 'white' : '#64748b',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontWeight: 900, fontSize: '0.9rem', flexShrink: 0
+                        fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0,
+                        letterSpacing: '0.02em',
                       }}>
                         {String.fromCharCode(65 + i)}
                       </div>
                       <div style={{ flex: 1 }}>
-                        <MathView content={optText} style={{ fontWeight: 700, fontSize: '1rem' }} />
+                        <MathView content={optText} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
                         {optImage && <img src={optImage} alt="Option" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
                       </div>
                     </div>

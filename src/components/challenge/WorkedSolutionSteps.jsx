@@ -115,7 +115,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                   <MathView
                     content={step.explanation}
                     graphData={i === totalSteps - 1 ? graphData : undefined}
-                    style={{ color: '#1e1b4b', fontWeight: 600, fontSize: '0.96rem', lineHeight: 1.6 }}
+                    style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1rem', lineHeight: 1.7 }}
                   />
                 )}
                 {step.workingOut && (
@@ -131,7 +131,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                     </div>
                     <MathView
                       content={step.workingOut}
-                      style={{ color: '#4c1d95', fontWeight: 600, fontSize: '0.94rem', lineHeight: 1.7 }}
+                      style={{ color: '#4c1d95', fontWeight: 500, fontSize: '0.98rem', lineHeight: 1.7 }}
                     />
                   </div>
                 )}

@@ -173,8 +173,9 @@ const MathView = ({ content, graphData, style }) => {
   }, [safeContent]);
 
   const combinedStyle = {
-    fontFamily: '"Outfit", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-    letterSpacing: '0.01em',
+    fontFamily: '"Lora", "Georgia", "Times New Roman", serif',
+    letterSpacing: '0',
+    lineHeight: 1.65,
     fontWeight: 'inherit',
     ...style,
   };
