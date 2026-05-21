@@ -45,7 +45,9 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
   const visibleSteps = steps.slice(0, Math.min(revealed, totalSteps));
   const allRevealed = revealed >= totalSteps;
   const hasMultipleSteps = totalSteps > 1;
-  const scrollSteps = hasMultipleSteps;
+  // Treat a one-block "full solution" as Step 1 of 1 so every question uses
+  // the same stable card + internal scroll layout across Safari/PWA/iPadOS.
+  const scrollSteps = true;
 
   return (
     <div
@@ -59,13 +61,9 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        ...(scrollSteps
-          ? {
-              height: '64vh',
-              minHeight: '420px',
-              maxHeight: '760px',
-            }
-          : {}),
+        height: hasMultipleSteps ? '64vh' : '52vh',
+        minHeight: hasMultipleSteps ? '420px' : '360px',
+        maxHeight: hasMultipleSteps ? '760px' : '640px',
       }}
     >
       {/* Top accent stripe */}
@@ -81,9 +79,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
               Worked solution
             </div>
             <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#64748b', marginTop: '2px' }}>
-              {hasMultipleSteps
-                ? `Step ${Math.min(revealed, totalSteps)} of ${totalSteps}`
-                : 'Full solution'}
+              Step {Math.min(revealed, totalSteps)} of {totalSteps}
             </div>
           </div>
         </div>
