@@ -6094,5 +6094,2076 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "C \\times \\frac{x^2}{k^2} = x^2 \\implies C = k^2"
       }
     ]
+  },
+  {
+    "id": "y11a-5E-new-1a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|5|$",
+    "a": "5",
+    "opts": [
+      "5",
+      "-5",
+      "0",
+      "1/5"
+    ],
+    "h": "Absolute value is distance from zero.",
+    "s": "$|5| = 5$",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|5| = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|-6|$",
+    "a": "6",
+    "opts": [
+      "6",
+      "-6",
+      "0",
+      "1/6"
+    ],
+    "h": "Absolute value makes a negative number positive.",
+    "s": "$|-6| = 6$",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|-6| = 6"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|3 - 8|$",
+    "a": "5",
+    "opts": [
+      "5",
+      "-5",
+      "11",
+      "-11"
+    ],
+    "h": "Calculate inside the absolute value first.",
+    "s": "$|3 - 8| = |-5| = 5$",
+    "solutionSteps": [
+      {
+        "explanation": "Inside absolute value.",
+        "workingOut": "3 - 8 = -5"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|-5| = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|8 - 3|$",
+    "a": "5",
+    "opts": [
+      "5",
+      "-5",
+      "11",
+      "-11"
+    ],
+    "h": "Calculate inside the absolute value first.",
+    "s": "$|8 - 3| = |5| = 5$",
+    "solutionSteps": [
+      {
+        "explanation": "Inside absolute value.",
+        "workingOut": "8 - 3 = 5"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|5| = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1e",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|15 - 7 - 14|$",
+    "a": "6",
+    "opts": [
+      "6",
+      "-6",
+      "22",
+      "-22"
+    ],
+    "h": "Calculate inside first.",
+    "s": "$|15 - 7 - 14| = |-6| = 6$",
+    "solutionSteps": [
+      {
+        "explanation": "Inside.",
+        "workingOut": "15 - 7 - 14 = -6"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|-6| = 6"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1f",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|-9 + 5|$",
+    "a": "4",
+    "opts": [
+      "4",
+      "-4",
+      "14",
+      "-14"
+    ],
+    "h": "Calculate inside first.",
+    "s": "$|-9 + 5| = |-4| = 4$",
+    "solutionSteps": [
+      {
+        "explanation": "Inside.",
+        "workingOut": "-9 + 5 = -4"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|-4| = 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1g",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|4^2 - 6^2|$",
+    "a": "20",
+    "opts": [
+      "20",
+      "-20",
+      "52",
+      "4"
+    ],
+    "h": "Calculate exponents first.",
+    "s": "$|16 - 36| = |-20| = 20$",
+    "solutionSteps": [
+      {
+        "explanation": "Inside.",
+        "workingOut": "16 - 36 = -20"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "|-20| = 20"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-1h",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate $|14 - 18| - 7$",
+    "a": "-3",
+    "opts": [
+      "-3",
+      "3",
+      "11",
+      "-11"
+    ],
+    "h": "Evaluate absolute value before subtracting 7.",
+    "s": "$|-4| - 7 = 4 - 7 = -3$",
+    "solutionSteps": [
+      {
+        "explanation": "Absolute value.",
+        "workingOut": "|-4| = 4"
+      },
+      {
+        "explanation": "Subtract.",
+        "workingOut": "4 - 7 = -3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2a-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|x| = |-x|$ for $x = 5, y = -3$.",
+    "a": "LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.",
+    "opts": [],
+    "h": "Substitute $x=5$ into both sides.",
+    "s": "LHS: $|5| = 5$. RHS: $|-5| = 5$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|5| = 5"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|-5| = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2a-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|x - y| = |y - x|$ for $x = 5, y = -3$.",
+    "a": "LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|5 - (-3)| = |8| = 8$. RHS: $|-3 - 5| = |-8| = 8$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|5 - (-3)| = 8"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|-3 - 5| = 8"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2a-iii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|xy| = |x||y|$ for $x = 5, y = -3$.",
+    "a": "LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|5 \\times -3| = |-15| = 15$. RHS: $|5| \\times |-3| = 5 \\times 3 = 15$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-15| = 15"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "5 \\times 3 = 15"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2a-iv",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ for $x = 5, y = -3$.",
+    "a": "LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|\\frac{5}{-3}| = \\frac{5}{3}$. RHS: $\\frac{|5|}{|-3|} = \\frac{5}{3}$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|\\frac{5}{-3}| = \\frac{5}{3}"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "\\frac{5}{3}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2b-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|x| = |-x|$ for $x = -5, y = 3$.",
+    "a": "LHS = |-5| = 5. RHS = |5| = 5.",
+    "opts": [],
+    "h": "Substitute $x=-5$ into both sides.",
+    "s": "LHS: $|-5| = 5$. RHS: $|-(-5)| = |5| = 5$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-5| = 5"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|5| = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2b-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|x - y| = |y - x|$ for $x = -5, y = 3$.",
+    "a": "LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|-5 - 3| = |-8| = 8$. RHS: $|3 - (-5)| = |8| = 8$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-8| = 8"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|8| = 8"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2b-iii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|xy| = |x||y|$ for $x = -5, y = 3$.",
+    "a": "LHS = |-15| = 15. RHS = |-5| * |3| = 15.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|-5 \\times 3| = |-15| = 15$. RHS: $|-5| \\times |3| = 5 \\times 3 = 15$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-15| = 15"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "5 \\times 3 = 15"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2b-iv",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ for $x = -5, y = 3$.",
+    "a": "LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|\\frac{-5}{3}| = \\frac{5}{3}$. RHS: $\\frac{|-5|}{|3|} = \\frac{5}{3}$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "\\frac{5}{3}"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "\\frac{5}{3}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2c-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|x| = |-x|$ for $x = -5, y = -3$.",
+    "a": "LHS = |-5| = 5. RHS = |5| = 5.",
+    "opts": [],
+    "h": "Substitute $x=-5$ into both sides.",
+    "s": "LHS: $|-5| = 5$. RHS: $|-(-5)| = |5| = 5$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-5| = 5"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|5| = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2c-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|x - y| = |y - x|$ for $x = -5, y = -3$.",
+    "a": "LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|-5 + 3| = |-2| = 2$. RHS: $|-3 + 5| = |2| = 2$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-2| = 2"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|2| = 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2c-iii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $|xy| = |x||y|$ for $x = -5, y = -3$.",
+    "a": "LHS = |15| = 15. RHS = |-5| * |-3| = 15.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|-5 \\times -3| = |15| = 15$. RHS: $|-5| \\times |-3| = 5 \\times 3 = 15$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|15| = 15"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "5 \\times 3 = 15"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-2c-iv",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Verify that $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ for $x = -5, y = -3$.",
+    "a": "LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.",
+    "opts": [],
+    "h": "Substitute the values.",
+    "s": "LHS: $|\\frac{-5}{-3}| = |\\frac{5}{3}| = \\frac{5}{3}$. RHS: $\\frac{|-5|}{|-3|} = \\frac{5}{3}$. Since LHS = RHS, verified.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|5/3| = 5/3"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "\\frac{5}{3}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-3a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the absolute value equation $|x| = 2$, then graph the solution on a number line.",
+    "a": "x = 2, -2",
+    "opts": [],
+    "h": "What numbers are 2 units away from zero?",
+    "s": "The solutions are $x = 2$ and $x = -2$. The graph shows solid dots at $-2$ and $2$ on the number line.",
+    "solutionSteps": [
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = \\pm 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-3b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the absolute value equation $|x| = 5$, then graph the solution on a number line.",
+    "a": "x = 5, -5",
+    "opts": [],
+    "h": "What numbers are 5 units away from zero?",
+    "s": "The solutions are $x = 5$ and $x = -5$. The graph shows solid dots at $-5$ and $5$ on the number line.",
+    "solutionSteps": [
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = \\pm 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-3c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the absolute value equation $|3x| = 12$, then graph the solution on a number line.",
+    "a": "x = 4, -4",
+    "opts": [],
+    "h": "First, solve for $3x$.",
+    "s": "$3x = 12$ or $3x = -12$. This means $x = 4$ or $x = -4$. The graph shows solid dots at $-4$ and $4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Separate into cases.",
+        "workingOut": "3x = 12 \\text{ or } 3x = -12"
+      },
+      {
+        "explanation": "Solve for x.",
+        "workingOut": "x = \\pm 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-3d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the absolute value equation $|4x| = 20$, then graph the solution on a number line.",
+    "a": "x = 5, -5",
+    "opts": [],
+    "h": "First, solve for $4x$.",
+    "s": "$4x = 20$ or $4x = -20$. This means $x = 5$ or $x = -5$. The graph shows solid dots at $-5$ and $5$.",
+    "solutionSteps": [
+      {
+        "explanation": "Separate into cases.",
+        "workingOut": "4x = 20 \\text{ or } 4x = -20"
+      },
+      {
+        "explanation": "Solve for x.",
+        "workingOut": "x = \\pm 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-3e",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the absolute value equation $|5x| = 15$, then graph the solution on a number line.",
+    "a": "x = 3, -3",
+    "opts": [],
+    "h": "First, solve for $5x$.",
+    "s": "$5x = 15$ or $5x = -15$. This means $x = 3$ or $x = -3$. The graph shows solid dots at $-3$ and $3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Separate into cases.",
+        "workingOut": "5x = 15 \\text{ or } 5x = -15"
+      },
+      {
+        "explanation": "Solve for x.",
+        "workingOut": "x = \\pm 3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-3f",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the absolute value equation $|6x| = 24$, then graph the solution on a number line.",
+    "a": "x = 4, -4",
+    "opts": [],
+    "h": "First, solve for $6x$.",
+    "s": "$6x = 24$ or $6x = -24$. This means $x = 4$ or $x = -4$. The graph shows solid dots at $-4$ and $4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Separate into cases.",
+        "workingOut": "6x = 24 \\text{ or } 6x = -24"
+      },
+      {
+        "explanation": "Solve for x.",
+        "workingOut": "x = \\pm 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x - 5| = 2$ and graph the solution on a number line.",
+    "a": "x = 7, 3",
+    "opts": [],
+    "h": "Set $x - 5 = 2$ and $x - 5 = -2$.",
+    "s": "$x - 5 = 2 \\implies x = 7$. $x - 5 = -2 \\implies x = 3$. Solid dots at 3 and 7.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x - 5 = \\pm 2"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 7 \\text{ or } x = 3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x - 4| = 6$ and graph the solution on a number line.",
+    "a": "x = 10, -2",
+    "opts": [],
+    "h": "Set $x - 4 = 6$ and $x - 4 = -6$.",
+    "s": "$x - 4 = 6 \\implies x = 10$. $x - 4 = -6 \\implies x = -2$. Solid dots at -2 and 10.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x - 4 = \\pm 6"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 10 \\text{ or } x = -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x - 2| = 4$ and graph the solution on a number line.",
+    "a": "x = 6, -2",
+    "opts": [],
+    "h": "Set $x - 2 = 4$ and $x - 2 = -4$.",
+    "s": "$x - 2 = 4 \\implies x = 6$. $x - 2 = -4 \\implies x = -2$. Solid dots at -2 and 6.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x - 2 = \\pm 4"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 6 \\text{ or } x = -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x - 8| = 3$ and graph the solution on a number line.",
+    "a": "x = 11, 5",
+    "opts": [],
+    "h": "Set $x - 8 = 3$ and $x - 8 = -3$.",
+    "s": "$x - 8 = 3 \\implies x = 11$. $x - 8 = -3 \\implies x = 5$. Solid dots at 5 and 11.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x - 8 = \\pm 3"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 11 \\text{ or } x = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4e",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x + 6| = 3$ and graph the solution on a number line.",
+    "a": "x = -3, -9",
+    "opts": [],
+    "h": "Set $x + 6 = 3$ and $x + 6 = -3$.",
+    "s": "$x + 6 = 3 \\implies x = -3$. $x + 6 = -3 \\implies x = -9$. Solid dots at -9 and -3.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x + 6 = \\pm 3"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = -3 \\text{ or } x = -9"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4f",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x + 3| = 4$ and graph the solution on a number line.",
+    "a": "x = 1, -7",
+    "opts": [],
+    "h": "Set $x + 3 = 4$ and $x + 3 = -4$.",
+    "s": "$x + 3 = 4 \\implies x = 1$. $x + 3 = -4 \\implies x = -7$. Solid dots at -7 and 1.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x + 3 = \\pm 4"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 1 \\text{ or } x = -7"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4g",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x + 2| = 7$ and graph the solution on a number line.",
+    "a": "x = 5, -9",
+    "opts": [],
+    "h": "Set $x + 2 = 7$ and $x + 2 = -7$.",
+    "s": "$x + 2 = 7 \\implies x = 5$. $x + 2 = -7 \\implies x = -9$. Solid dots at -9 and 5.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x + 2 = \\pm 7"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 5 \\text{ or } x = -9"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-4h",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Solve the equation $|x + 4| = 2$ and graph the solution on a number line.",
+    "a": "x = -2, -6",
+    "opts": [],
+    "h": "Set $x + 4 = 2$ and $x + 4 = -2$.",
+    "s": "$x + 4 = 2 \\implies x = -2$. $x + 4 = -2 \\implies x = -6$. Solid dots at -6 and -2.",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases.",
+        "workingOut": "x + 4 = \\pm 2"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = -2 \\text{ or } x = -6"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-5",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Consider the functions $y = |x - 2|$ and $y = |x| - 2$.\n**a)** Copy and complete a table of values for both functions for integer values of $x$ from $-2$ to $4$.\n**b)** Draw the graphs of the two functions on separate number planes, and observe the similarities and differences.\n**c)** Explain how each graph is obtained by shifting the basic graph $y = |x|$.\n**d)** Write down the domain and range of each function.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "The first function shifts horizontally. The second shifts vertically.",
+    "s": "**a)** Tables:\\n$x$: -2, -1, 0, 1, 2, 3, 4\\n$|x-2|$: 4, 3, 2, 1, 0, 1, 2\\n$|x|-2$: 0, -1, -2, -1, 0, 1, 2\n**b)** $y = |x-2|$ is a V-shape with its vertex at $(2, 0)$. $y = |x|-2$ is a V-shape with its vertex at $(0, -2)$.\n**c)** $y = |x-2|$ is a horizontal shift of $y = |x|$ by 2 units to the right. $y = |x|-2$ is a vertical shift of $y = |x|$ by 2 units downwards.\n**d)** $y = |x-2|$: Domain is all real $x$, Range is $y \\ge 0$.\\n$y = |x|-2$: Domain is all real $x$, Range is $y \\ge -2$.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Evaluate tables.",
+        "workingOut": "y = |x-2|: 4,3,2,1,0,1,2. \\quad y = |x|-2: 0,-1,-2,-1,0,1,2"
+      },
+      {
+        "explanation": "c) Analyze shifts.",
+        "workingOut": "|x-2| \\implies \\text{Right 2}. \\quad |x|-2 \\implies \\text{Down 2}."
+      },
+      {
+        "explanation": "d) Domain and Range.",
+        "workingOut": "D: \\text{All real } x. \\quad R: y \\ge 0 \\text{ and } y \\ge -2."
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-6a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|4x| = 4|x|$ is true when $x = -4$.",
+    "a": "LHS = |-16| = 16. RHS = 4*|-4| = 16.",
+    "opts": [],
+    "h": "Substitute the value into both sides.",
+    "s": "LHS: $|4(-4)| = |-16| = 16$. RHS: $4|-4| = 4(4) = 16$. LHS = RHS, so it is true.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|4(-4)| = |-16| = 16"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "4|-4| = 4(4) = 16"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-6b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|-x| = |x|$ is true when $x = -4$.",
+    "a": "LHS = |4| = 4. RHS = |-4| = 4.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-(-4)| = |4| = 4$. RHS: $|-4| = 4$. LHS = RHS, so it is true.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-(-4)| = |4| = 4"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|-4| = 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-6c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x|^2 = x^2$ is true when $x = -4$.",
+    "a": "LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-4|^2 = (4)^2 = 16$. RHS: $(-4)^2 = 16$. LHS = RHS, so it is true.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-4|^2 = 16"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "(-4)^2 = 16"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-6d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x - 5| = |5 - x|$ is true when $x = -4$.",
+    "a": "LHS = |-9| = 9. RHS = |9| = 9.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-4 - 5| = |-9| = 9$. RHS: $|5 - (-4)| = |9| = 9$. LHS = RHS, so it is true.",
+    "solutionSteps": [
+      {
+        "explanation": "LHS",
+        "workingOut": "|-4-5| = |-9| = 9"
+      },
+      {
+        "explanation": "RHS",
+        "workingOut": "|5-(-4)| = |9| = 9"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-6e",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $x \\le |x|$ is true when $x = -4$.",
+    "a": "LHS = -4. RHS = 4. -4 <= 4.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $-4$. RHS: $|-4| = 4$. Since $-4 \\le 4$, the statement is true.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "-4 \\le |-4| \\implies -4 \\le 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-6f",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $-|x| \\le x$ is true when $x = -4$.",
+    "a": "LHS = -4. RHS = -4. -4 <= -4.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $-|-4| = -4$. RHS: $-4$. Since $-4 \\le -4$, the statement is true.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "-|-4| \\le -4 \\implies -4 \\le -4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-7a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x| = x$ is false when $x = -3$.",
+    "a": "LHS = 3, RHS = -3.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-3| = 3$. RHS: $-3$. Since $3 \\neq -3$, the statement is false.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "|-3| = 3 \\neq -3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-7b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|-x| = x$ is false when $x = -3$.",
+    "a": "LHS = 3, RHS = -3.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-(-3)| = |3| = 3$. RHS: $-3$. Since $3 \\neq -3$, the statement is false.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "|-(-3)| = 3 \\neq -3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-7c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x + 2| = |x| + 2$ is false when $x = -3$.",
+    "a": "LHS = 1, RHS = 5.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-3 + 2| = |-1| = 1$. RHS: $|-3| + 2 = 3 + 2 = 5$. Since $1 \\neq 5$, the statement is false.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "|-3+2| = 1, |-3|+2 = 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-7d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x + 1| = x + 1$ is false when $x = -3$.",
+    "a": "LHS = 2, RHS = -2.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-3 + 1| = |-2| = 2$. RHS: $-3 + 1 = -2$. Since $2 \\neq -2$, the statement is false.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "|-3+1| = 2, -3+1 = -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-7e",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x - 1| < |x| - 1$ is false when $x = -3$.",
+    "a": "LHS = 4, RHS = 2. 4 is not < 2.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-3 - 1| = |-4| = 4$. RHS: $|-3| - 1 = 3 - 1 = 2$. Since 4 is not less than 2, the statement is false.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "|-3-1| = 4, |-3|-1 = 2. 4 \\not< 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-7f",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Show that $|x|^3 = x^3$ is false when $x = -3$.",
+    "a": "LHS = 27, RHS = -27.",
+    "opts": [],
+    "h": "Substitute the value.",
+    "s": "LHS: $|-3|^3 = 3^3 = 27$. RHS: $(-3)^3 = -27$. Since $27 \\neq -27$, the statement is false.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate sides.",
+        "workingOut": "|-3|^3 = 27, (-3)^3 = -27"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|5x| = 30$",
+    "a": "x = 6, -6",
+    "opts": [
+      "x = 6, -6",
+      "x = 6",
+      "x = -6",
+      "No solution"
+    ],
+    "h": "$5x$ must be either 30 or -30.",
+    "s": "$5x = 30 \\implies x = 6$. $5x = -30 \\implies x = -6$.",
+    "solutionSteps": [
+      {
+        "explanation": "Split into cases.",
+        "workingOut": "5x = \\pm 30"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = \\pm 6"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|3x + 1| = 7$",
+    "a": "x = 2, -8/3",
+    "opts": [
+      "x = 2, -8/3",
+      "x = 2, -2",
+      "x = 8/3, -2",
+      "No solution"
+    ],
+    "h": "$3x + 1 = 7$ or $3x + 1 = -7$.",
+    "s": "$3x + 1 = 7 \\implies 3x = 6 \\implies x = 2$. $3x + 1 = -7 \\implies 3x = -8 \\implies x = -8/3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Split into cases.",
+        "workingOut": "3x+1 = 7 \\text{ or } 3x+1 = -7"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 2, -8/3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|2x - 3| = 11$",
+    "a": "x = 7, -4",
+    "opts": [
+      "x = 7, -4",
+      "x = -7, 4",
+      "x = 7",
+      "No solution"
+    ],
+    "h": "$2x - 3 = 11$ or $2x - 3 = -11$.",
+    "s": "$2x - 3 = 11 \\implies 2x = 14 \\implies x = 7$. $2x - 3 = -11 \\implies 2x = -8 \\implies x = -4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Split into cases.",
+        "workingOut": "2x-3 = 11 \\text{ or } 2x-3 = -11"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 7, -4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|7x - 3| = -11$",
+    "a": "No solution",
+    "opts": [
+      "No solution",
+      "x = -8/7, 14/7",
+      "x = 8/7, -14/7",
+      "x = 0"
+    ],
+    "h": "Can an absolute value ever be negative?",
+    "s": "An absolute value cannot be equal to a negative number. Thus, there is no real solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Check right side.",
+        "workingOut": "|7x-3| \\ge 0 \\text{ for all } x"
+      },
+      {
+        "explanation": "Conclusion.",
+        "workingOut": "\\text{No solution since } -11 < 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8e",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|3x + 2| = -8$",
+    "a": "No solution",
+    "opts": [
+      "No solution",
+      "x = 2, -10/3",
+      "x = -2, 10/3",
+      "x = 0"
+    ],
+    "h": "Can an absolute value ever be negative?",
+    "s": "An absolute value cannot be equal to a negative number. Thus, there is no real solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Check right side.",
+        "workingOut": "|3x+2| \\ge 0 \\text{ for all } x"
+      },
+      {
+        "explanation": "Conclusion.",
+        "workingOut": "\\text{No solution since } -8 < 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8f",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|5x + 2| = 0$",
+    "a": "x = -2/5",
+    "opts": [
+      "x = -2/5",
+      "x = 2/5",
+      "x = 0",
+      "No solution"
+    ],
+    "h": "If the absolute value is zero, the inside must be zero.",
+    "s": "$5x + 2 = 0 \\implies 5x = -2 \\implies x = -2/5$.",
+    "solutionSteps": [
+      {
+        "explanation": "Only one case.",
+        "workingOut": "5x+2 = 0"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = -2/5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8g",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|3x - 5| = 0$",
+    "a": "x = 5/3",
+    "opts": [
+      "x = 5/3",
+      "x = -5/3",
+      "x = 0",
+      "No solution"
+    ],
+    "h": "If the absolute value is zero, the inside must be zero.",
+    "s": "$3x - 5 = 0 \\implies 3x = 5 \\implies x = 5/3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Only one case.",
+        "workingOut": "3x-5 = 0"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 5/3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8h",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|6x - 7| = 5$",
+    "a": "x = 2, 1/3",
+    "opts": [
+      "x = 2, 1/3",
+      "x = 2, -1/3",
+      "x = -2, 1/3",
+      "No solution"
+    ],
+    "h": "$6x - 7 = 5$ or $6x - 7 = -5$.",
+    "s": "$6x - 7 = 5 \\implies 6x = 12 \\implies x = 2$. $6x - 7 = -5 \\implies 6x = 2 \\implies x = 1/3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Split into cases.",
+        "workingOut": "6x-7 = 5 \\text{ or } 6x-7 = -5"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 2, 1/3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-8i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve for $x$: $|5x + 4| = 6$",
+    "a": "x = 2/5, -2",
+    "opts": [
+      "x = 2/5, -2",
+      "x = -2/5, 2",
+      "x = 2, -2",
+      "No solution"
+    ],
+    "h": "$5x + 4 = 6$ or $5x + 4 = -6$.",
+    "s": "$5x + 4 = 6 \\implies 5x = 2 \\implies x = 2/5$. $5x + 4 = -6 \\implies 5x = -10 \\implies x = -2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Split into cases.",
+        "workingOut": "5x+4 = 6 \\text{ or } 5x+4 = -6"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 2/5, -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-9a-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Explain why the equation $|2 - 3x| = 5$ has the same solutions as $|3x - 2| = 5$.",
+    "a": "Because |x| = |-x| for all real numbers.",
+    "opts": [
+      "Because |x| = |-x| for all real numbers.",
+      "Because 5 is a positive number.",
+      "Because absolute value makes everything positive.",
+      "Because 2 - 3x = 3x - 2 always."
+    ],
+    "h": "Consider the property that $|-a| = |a|$.",
+    "s": "Since $|a| = |-a|$, we can factor out a negative sign: $|2 - 3x| = |-(3x - 2)| = |3x - 2|$. Thus, the equations are identical.",
+    "solutionSteps": [
+      {
+        "explanation": "Use property.",
+        "workingOut": "|-a| = |a|"
+      },
+      {
+        "explanation": "Apply to expression.",
+        "workingOut": "|2 - 3x| = |-(3x - 2)| = |3x - 2|"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-9a-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve the equation $|2 - 3x| = 5$.",
+    "a": "x = -1, 7/3",
+    "opts": [
+      "x = -1, 7/3",
+      "x = 1, -7/3",
+      "x = -1, 3/7",
+      "No solution"
+    ],
+    "h": "Solve $|3x - 2| = 5$ instead, as it is easier.",
+    "s": "$|3x - 2| = 5 implies 3x - 2 = 5$ or $3x - 2 = -5$. \\nIf $3x - 2 = 5 implies 3x = 7 implies x = 7/3$. \\nIf $3x - 2 = -5 implies 3x = -3 implies x = -1$.",
+    "solutionSteps": [
+      {
+        "explanation": "Rewrite.",
+        "workingOut": "|3x-2| = 5"
+      },
+      {
+        "explanation": "Cases.",
+        "workingOut": "3x-2 = 5 \\text{ or } 3x-2 = -5"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 7/3, -1"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-9b-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve the equation $|4 - 5x| = 6$.",
+    "a": "x = -2/5, 2",
+    "opts": [
+      "x = -2/5, 2",
+      "x = 2/5, -2",
+      "x = 2, -2",
+      "No solution"
+    ],
+    "h": "Solve $|5x - 4| = 6$.",
+    "s": "$|5x - 4| = 6 implies 5x - 4 = 6$ or $5x - 4 = -6$. \\n$5x - 4 = 6 implies 5x = 10 implies x = 2$. \\n$5x - 4 = -6 implies 5x = -2 implies x = -2/5$.",
+    "solutionSteps": [
+      {
+        "explanation": "Rewrite.",
+        "workingOut": "|5x-4| = 6"
+      },
+      {
+        "explanation": "Cases.",
+        "workingOut": "5x-4 = 6 \\text{ or } 5x-4 = -6"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 2, -2/5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-9b-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve the equation $|2 - 7x| = 5$.",
+    "a": "x = -3/7, 1",
+    "opts": [
+      "x = -3/7, 1",
+      "x = 3/7, -1",
+      "x = 1, -1",
+      "No solution"
+    ],
+    "h": "Solve $|7x - 2| = 5$.",
+    "s": "$|7x - 2| = 5 implies 7x - 2 = 5$ or $7x - 2 = -5$. \\n$7x - 2 = 5 implies 7x = 7 implies x = 1$. \\n$7x - 2 = -5 implies 7x = -3 implies x = -3/7$.",
+    "solutionSteps": [
+      {
+        "explanation": "Rewrite.",
+        "workingOut": "|7x-2| = 5"
+      },
+      {
+        "explanation": "Cases.",
+        "workingOut": "7x-2 = 5 \\text{ or } 7x-2 = -5"
+      },
+      {
+        "explanation": "Solve.",
+        "workingOut": "x = 1, -3/7"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Use cases to help sketch the branches of $y = |x|$.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Consider when $x \\ge 0$ and when $x < 0$.",
+    "s": "By definition, $|x| = x$ when $x \\ge 0$, and $|x| = -x$ when $x < 0$. The graph consists of the line $y = x$ for positive $x$, and the line $y = -x$ for negative $x$, meeting at $(0,0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Cases.",
+        "workingOut": "y = \\begin{cases} x & x \\ge 0 \\\\ -x & x < 0 \\end{cases}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10b-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Identify the shift of $y = |x-4|$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "a": "Shift right 4.",
+    "opts": [],
+    "h": "The vertex is at $x=4$.",
+    "s": "Shift: 4 units right. \\nBranches: $y = x-4$ for $x \\ge 4$, and $y = -(x-4) = 4-x$ for $x < 4$. \\nDomain: All real $x$. Range: $y \\ge 0$.",
+    "solutionSteps": [
+      {
+        "explanation": "Shift.",
+        "workingOut": "\\text{Right 4 units}"
+      },
+      {
+        "explanation": "Branches.",
+        "workingOut": "y = x-4 \\ (x \\ge 4) \\text{ and } y = 4-x \\ (x < 4)"
+      },
+      {
+        "explanation": "Domain & Range.",
+        "workingOut": "D: \\mathbb{R}, R: y \\ge 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10b-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Identify the shift of $y = |x+3|$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "a": "Shift left 3.",
+    "opts": [],
+    "h": "The vertex is at $x=-3$.",
+    "s": "Shift: 3 units left. \\nBranches: $y = x+3$ for $x \\ge -3$, and $y = -x-3$ for $x < -3$. \\nDomain: All real $x$. Range: $y \\ge 0$.",
+    "solutionSteps": [
+      {
+        "explanation": "Shift.",
+        "workingOut": "\\text{Left 3 units}"
+      },
+      {
+        "explanation": "Branches.",
+        "workingOut": "y = x+3 \\ (x \\ge -3) \\text{ and } y = -x-3 \\ (x < -3)"
+      },
+      {
+        "explanation": "Domain & Range.",
+        "workingOut": "D: \\mathbb{R}, R: y \\ge 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10b-iii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Identify the shift of $y = |x| - 4$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "a": "Shift down 4.",
+    "opts": [],
+    "h": "The vertex is at $(0, -4)$.",
+    "s": "Shift: 4 units down. \\nBranches: $y = x-4$ for $x \\ge 0$, and $y = -x-4$ for $x < 0$. \\nDomain: All real $x$. Range: $y \\ge -4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Shift.",
+        "workingOut": "\\text{Down 4 units}"
+      },
+      {
+        "explanation": "Branches.",
+        "workingOut": "y = x-4 \\ (x \\ge 0) \\text{ and } y = -x-4 \\ (x < 0)"
+      },
+      {
+        "explanation": "Domain & Range.",
+        "workingOut": "D: \\mathbb{R}, R: y \\ge -4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10b-iv",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Identify the shift of $y = |x| + 2$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "a": "Shift up 2.",
+    "opts": [],
+    "h": "The vertex is at $(0, 2)$.",
+    "s": "Shift: 2 units up. \\nBranches: $y = x+2$ for $x \\ge 0$, and $y = -x+2$ for $x < 0$. \\nDomain: All real $x$. Range: $y \\ge 2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Shift.",
+        "workingOut": "\\text{Up 2 units}"
+      },
+      {
+        "explanation": "Branches.",
+        "workingOut": "y = x+2 \\ (x \\ge 0) \\text{ and } y = -x+2 \\ (x < 0)"
+      },
+      {
+        "explanation": "Domain & Range.",
+        "workingOut": "D: \\mathbb{R}, R: y \\ge 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10b-v",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Identify the shift of $y = |x-3| - 2$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "a": "Shift right 3, down 2.",
+    "opts": [],
+    "h": "The vertex is at $(3, -2)$.",
+    "s": "Shift: 3 units right, 2 units down. \\nBranches: $y = x-3-2 = x-5$ for $x \\ge 3$, and $y = -(x-3)-2 = -x+1$ for $x < 3$. \\nDomain: All real $x$. Range: $y \\ge -2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Shift.",
+        "workingOut": "\\text{Right 3, Down 2}"
+      },
+      {
+        "explanation": "Branches.",
+        "workingOut": "y = x-5 \\ (x \\ge 3) \\text{ and } y = -x+1 \\ (x < 3)"
+      },
+      {
+        "explanation": "Domain & Range.",
+        "workingOut": "D: \\mathbb{R}, R: y \\ge -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-10b-vi",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Identify the shift of $y = |x+2| - 3$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "a": "Shift left 2, down 3.",
+    "opts": [],
+    "h": "The vertex is at $(-2, -3)$.",
+    "s": "Shift: 2 units left, 3 units down. \\nBranches: $y = x+2-3 = x-1$ for $x \\ge -2$, and $y = -(x+2)-3 = -x-5$ for $x < -2$. \\nDomain: All real $x$. Range: $y \\ge -3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Shift.",
+        "workingOut": "\\text{Left 2, Down 3}"
+      },
+      {
+        "explanation": "Branches.",
+        "workingOut": "y = x-1 \\ (x \\ge -2) \\text{ and } y = -x-5 \\ (x < -2)"
+      },
+      {
+        "explanation": "Domain & Range.",
+        "workingOut": "D: \\mathbb{R}, R: y \\ge -3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-11a-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Sketch the function $y = |3x|$ using cases. Check the graph with a small table of values.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "The branches are $y=3x$ for $x \\ge 0$ and $y=-3x$ for $x < 0$.",
+    "s": "Cases: $y = 3x$ when $x \\ge 0$, and $y = -3x$ when $x < 0$. This is a V-shape passing through $(0,0), (1,3), (-1,3)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Cases.",
+        "workingOut": "y = \\begin{cases} 3x & x \\ge 0 \\\\ -3x & x < 0 \\end{cases}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-11a-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Sketch the function $y = |\\frac{1}{3}x|$ using cases. Check the graph with a small table of values.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "The branches are $y=\\frac{1}{3}x$ for $x \\ge 0$ and $y=-\\frac{1}{3}x$ for $x < 0$.",
+    "s": "Cases: $y = \\frac{1}{3}x$ when $x \\ge 0$, and $y = -\\frac{1}{3}x$ when $x < 0$. This is a wider V-shape passing through $(0,0), (3,1), (-3,1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Cases.",
+        "workingOut": "y = \\begin{cases} x/3 & x \\ge 0 \\\\ -x/3 & x < 0 \\end{cases}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-11b-i",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Sketch the function $y = |3x|$ using a suitable vertical dilation of $y = |x|$. Verify that you get the same graph as using cases.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Notice that $|3x| = 3|x|$.",
+    "s": "Since $|3x| = 3|x|$, the graph of $y = |3x|$ is simply a vertical stretch of $y = |x|$ by a factor of 3. Every y-value is multiplied by 3, which matches the case-by-case sketch perfectly.",
+    "solutionSteps": [
+      {
+        "explanation": "Property.",
+        "workingOut": "|3x| = 3|x|"
+      },
+      {
+        "explanation": "Dilation.",
+        "workingOut": "\\text{Vertical stretch by 3}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-11b-ii",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Sketch the function $y = |\\frac{1}{3}x|$ using a suitable vertical dilation of $y = |x|$. Verify that you get the same graph as using cases.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Notice that $|\\frac{1}{3}x| = \\frac{1}{3}|x|$.",
+    "s": "Since $|\\frac{1}{3}x| = \\frac{1}{3}|x|$, the graph is a vertical compression of $y = |x|$ by a factor of $1/3$. Every y-value is divided by 3, which matches the case-by-case sketch.",
+    "solutionSteps": [
+      {
+        "explanation": "Property.",
+        "workingOut": "|x/3| = \\frac{1}{3}|x|"
+      },
+      {
+        "explanation": "Dilation.",
+        "workingOut": "\\text{Vertical compression by 1/3}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-12a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Find and plot the $x$-intercept and $y$-intercept of $y = |3x - 6|$. Complete the graph using symmetry and check with a table of values.",
+    "a": "x-int: 2, y-int: 6.",
+    "opts": [],
+    "h": "Set $y=0$ to find the vertex (x-int). Set $x=0$ for the y-int.",
+    "s": "$y$-intercept: set $x=0 \\implies y = |-6| = 6$. $(0, 6)$.\\n$x$-intercept: set $y=0 \\implies 3x - 6 = 0 \\implies x = 2$. $(2, 0)$.\\nBy symmetry, if it goes from $(2,0)$ up to $(0,6)$ on the left, it will go up to $(4,6)$ on the right.",
+    "solutionSteps": [
+      {
+        "explanation": "y-intercept.",
+        "workingOut": "|-6| = 6"
+      },
+      {
+        "explanation": "x-intercept.",
+        "workingOut": "3x-6=0 \\implies x=2"
+      },
+      {
+        "explanation": "Symmetry.",
+        "workingOut": "\\text{Vertex at } x=2. \\text{ Reflect } (0,6) \\to (4,6)."
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-12b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Find and plot the $x$-intercept and $y$-intercept of $y = |8 - 2x|$. Complete the graph using symmetry.",
+    "a": "x-int: 4, y-int: 8.",
+    "opts": [],
+    "h": "Set $y=0$ to find the vertex (x-int). Set $x=0$ for the y-int.",
+    "s": "$y$-intercept: set $x=0 \\implies y = |8| = 8$. $(0, 8)$.\\n$x$-intercept: set $y=0 \\implies 8 - 2x = 0 \\implies x = 4$. $(4, 0)$.\\nBy symmetry, since the vertex is at $x=4$, another point is $(8, 8)$.",
+    "solutionSteps": [
+      {
+        "explanation": "y-intercept.",
+        "workingOut": "|8| = 8"
+      },
+      {
+        "explanation": "x-intercept.",
+        "workingOut": "8-2x=0 \\implies x=4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-12c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Find and plot the $x$-intercept and $y$-intercept of $y = |4x + 8|$. Complete the graph using symmetry.",
+    "a": "x-int: -2, y-int: 8.",
+    "opts": [],
+    "h": "Set $y=0$ to find the vertex (x-int). Set $x=0$ for the y-int.",
+    "s": "$y$-intercept: set $x=0 \\implies y = |8| = 8$. $(0, 8)$.\\n$x$-intercept: set $y=0 \\implies 4x + 8 = 0 \\implies x = -2$. $(-2, 0)$.\\nBy symmetry, the vertex is at $x=-2$. Reflect $(0, 8)$ across $x=-2$ to get $(-4, 8)$.",
+    "solutionSteps": [
+      {
+        "explanation": "y-intercept.",
+        "workingOut": "|8| = 8"
+      },
+      {
+        "explanation": "x-intercept.",
+        "workingOut": "4x+8=0 \\implies x=-2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-13a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Use cases to sketch the function $y = -|3x|$. Check with a table of values.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "This is an upside down V-shape.",
+    "s": "Cases: If $x \\ge 0$, $y = -3x$. If $x < 0$, $y = -(-3x) = 3x$. The graph is an inverted V with vertex at $(0,0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Cases.",
+        "workingOut": "y = -3x \\ (x \\ge 0), y = 3x \\ (x < 0)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-13b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Use cases to sketch the function $y = |2x + 6|$. Check with a table of values.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Find where the inside is positive and negative. Zero is at $x = -3$.",
+    "s": "Zero is at $x = -3$.\\nCases: If $x \\ge -3$, $y = 2x + 6$. If $x < -3$, $y = -(2x + 6) = -2x - 6$. V-shape with vertex at $(-3, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Vertex.",
+        "workingOut": "2x+6 = 0 \\implies x = -3"
+      },
+      {
+        "explanation": "Cases.",
+        "workingOut": "y = 2x+6 \\ (x \\ge -3), y = -2x-6 \\ (x < -3)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-13c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Use cases to sketch the function $y = -|x + 5|$. Check with a table of values.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "This is an upside down V-shape shifted left.",
+    "s": "Zero is at $x = -5$.\\nCases: If $x \\ge -5$, $y = -(x + 5) = -x - 5$. If $x < -5$, $y = -(-(x + 5)) = x + 5$. Inverted V-shape with vertex at $(-5, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Vertex.",
+        "workingOut": "x = -5"
+      },
+      {
+        "explanation": "Cases.",
+        "workingOut": "y = -x-5 \\ (x \\ge -5), y = x+5 \\ (x < -5)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-14a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "When $y=|x|$ is shifted by $a$, it is $y=|x-a|$. Applying a horizontal stretch by $1/h$ yields $y=|hx-a|$. Use this approach (identifying the shift then stretch) to sketch $y = |3x - 6|$.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Notice that $y = |3(x-2)| = 3|x-2|$.",
+    "s": "$y = |3x - 6| = 3|x - 2|$. This can be viewed as shifting $y=|x|$ right by 2, then applying a vertical stretch by a factor of 3 (or horizontal compression by 1/3). The vertex is at $(2, 0)$, and it rises steeply.",
+    "solutionSteps": [
+      {
+        "explanation": "Factor.",
+        "workingOut": "y = 3|x-2|"
+      },
+      {
+        "explanation": "Transformations.",
+        "workingOut": "\\text{Shift right 2, Vertical stretch 3.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-14b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Use the shift-then-stretch approach to sketch $y = |2x + 4|$.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Notice that $y = |2(x+2)|$.",
+    "s": "$y = |2x + 4| = 2|x + 2|$. This is a shift left by 2 units, followed by a vertical stretch by a factor of 2. Vertex is at $(-2, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Factor.",
+        "workingOut": "y = 2|x+2|"
+      },
+      {
+        "explanation": "Transformations.",
+        "workingOut": "\\text{Shift left 2, Vertical stretch 2.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-14c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Use the shift-then-stretch approach to sketch $y = |\\frac{1}{2}x - 2|$.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Notice that $y = |\\frac{1}{2}(x - 4)|$.",
+    "s": "$y = |\\frac{1}{2}x - 2| = \\frac{1}{2}|x - 4|$. This is a shift right by 4 units, followed by a vertical compression by a factor of 1/2. Vertex is at $(4, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Factor.",
+        "workingOut": "y = \\frac{1}{2}|x-4|"
+      },
+      {
+        "explanation": "Transformations.",
+        "workingOut": "\\text{Shift right 4, Vertical compress 1/2.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-15",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "**a)** Sketch $y = |x - 4|$ and $y = 2$ on the same set of axes, clearly showing the points of intersection.\nHence write down the solution of $|x - 4| = 2$.\n**b)** Now use similar graphical methods to solve each of the following:\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** $|x + 2| = 3$\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** $|2x - 3| = 5$\n&nbsp;&nbsp;&nbsp;&nbsp;**iii)** $|4x - 1| = -3$\n&nbsp;&nbsp;&nbsp;&nbsp;**iv)** $|3x + 6| = 0$",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Find where the V-shape intersects the horizontal line.",
+    "s": "**a)** The intersection points are at $x=6$ and $x=2$. Solution: $x=6, 2$.\n**b) i)** Graph $y = |x+2|$ and $y=3$. Intersections at $x=1, -5$.\n**b) ii)** Graph $y = |2x-3|$ and $y=5$. Intersections at $x=4, -1$.\n**b) iii)** Graph $y = |4x-1|$ and $y=-3$. The V-shape is always above $y=0$, so it never intersects $y=-3$. No solution.\n**b) iv)** Graph $y = |3x+6|$ and $y=0$. The vertex touches the x-axis at $x=-2$. Solution: $x=-2$.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Intersection points.",
+        "workingOut": "x-4=2 \\implies x=6, x-4=-2 \\implies x=2"
+      },
+      {
+        "explanation": "b-ii) Solve.",
+        "workingOut": "2x-3=\\pm 5 \\implies x=4, -1"
+      },
+      {
+        "explanation": "b-iii) Observe.",
+        "workingOut": "\\text{No intersection with negative y.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-16",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Consider the absolute value function $f(x) = |x|$.\n**a)** Use the result $f(x) = \\sqrt{x^2}$ to help prove that the absolute value function is even.\n**b)** Why was this result obvious from the graph of $y = |x|$?",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Substitute $-x$ into the function.",
+    "s": "**a)** $f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)$. Since $f(-x) = f(x)$, the function is even.\n**b)** The graph of $y = |x|$ is a V-shape symmetric about the y-axis. Functions with y-axis symmetry are even functions by definition.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Prove even.",
+        "workingOut": "f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)"
+      },
+      {
+        "explanation": "b) Geometric meaning.",
+        "workingOut": "\\text{Symmetric across y-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-17a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "For what values of $x$ is $y = \\frac{|x|}{x}$ undefined?",
+    "a": "x = 0",
+    "opts": [
+      "x = 0",
+      "x < 0",
+      "x > 0",
+      "It is defined for all real x."
+    ],
+    "h": "A fraction is undefined when its denominator is zero.",
+    "s": "The function is undefined when the denominator is zero. Thus, it is undefined at $x=0$.",
+    "solutionSteps": [
+      {
+        "explanation": "Denominator condition.",
+        "workingOut": "x \\neq 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-17b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Use a table of values of $x$ from $-3$ to $3$ (excluding $x=0$) to sketch the graph of $y = \\frac{|x|}{x}$.",
+    "a": "Horizontal lines at y=1 and y=-1.",
+    "opts": [],
+    "h": "Evaluate the function for negative and positive values.",
+    "s": "For $x > 0$, $|x| = x$, so $y = \\frac{x}{x} = 1$. For $x < 0$, $|x| = -x$, so $y = \\frac{-x}{x} = -1$. The graph consists of two horizontal half-lines with open circles on the y-axis at $(0,1)$ and $(0,-1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Positive x.",
+        "workingOut": "y = 1"
+      },
+      {
+        "explanation": "Negative x.",
+        "workingOut": "y = -1"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-17c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Hence, write down the equations of the two branches of $y = \\frac{|x|}{x}$.",
+    "a": "y = 1 for x > 0, and y = -1 for x < 0.",
+    "opts": [
+      "y = 1 for x > 0, and y = -1 for x < 0.",
+      "y = x for x > 0, and y = -x for x < 0.",
+      "y = 1 for all x.",
+      "y = -1 for all x."
+    ],
+    "h": "Look at the simplified expressions from the previous graph.",
+    "s": "When $x > 0$, the equation simplifies to $y = 1$. When $x < 0$, it simplifies to $y = -1$.",
+    "solutionSteps": [
+      {
+        "explanation": "Simplify branches.",
+        "workingOut": "x>0 \\implies y=1, \\quad x<0 \\implies y=-1"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-18",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Prove that $g(x) = f(|x|)$ is an even function, for ANY function $f(x)$.",
+    "a": "See steps.",
+    "opts": [],
+    "h": "Substitute $-x$ into $g(x)$ and use the property that $|-x| = |x|$.",
+    "s": "To test if $g(x)$ is even, we evaluate $g(-x)$.\\n$g(-x) = f(|-x|)$.\\nSince absolute value is an even function itself, $|-x| = |x|$.\\nTherefore, $f(|-x|) = f(|x|) = g(x)$.\\nSince $g(-x) = g(x)$ for all $x$, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "g(-x) = f(|-x|)"
+      },
+      {
+        "explanation": "Apply absolute value property.",
+        "workingOut": "|-x| = |x| \\implies g(-x) = f(|x|) = g(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-19a",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Sketch the graph of $y = |x| + x$. Then use cases to determine the equation of each branch of the function.",
+    "a": "y=2x for x>=0, y=0 for x<0.",
+    "opts": [],
+    "h": "Separate into $x \\ge 0$ and $x < 0$.",
+    "s": "Cases:\\nIf $x \\ge 0$: $|x| = x$, so $y = x + x = 2x$.\\nIf $x < 0$: $|x| = -x$, so $y = -x + x = 0$.\\nThe graph is a horizontal line along the negative x-axis, and a straight line with gradient 2 for positive x.",
+    "solutionSteps": [
+      {
+        "explanation": "Case x>=0.",
+        "workingOut": "y = x+x = 2x"
+      },
+      {
+        "explanation": "Case x<0.",
+        "workingOut": "y = -x+x = 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-19b",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Sketch the graph of $y = |x| - x$. Then use cases to determine the equation of each branch of the function.",
+    "a": "y=0 for x>=0, y=-2x for x<0.",
+    "opts": [],
+    "h": "Separate into $x \\ge 0$ and $x < 0$.",
+    "s": "Cases:\\nIf $x \\ge 0$: $|x| = x$, so $y = x - x = 0$.\\nIf $x < 0$: $|x| = -x$, so $y = -x - x = -2x$.\\nThe graph is a straight line with gradient -2 for negative x, and a horizontal line along the positive x-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Case x>=0.",
+        "workingOut": "y = x-x = 0"
+      },
+      {
+        "explanation": "Case x<0.",
+        "workingOut": "y = -x-x = -2x"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-19c",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Sketch the graph of $y = 2(x - 2) - |x - 2|$. Then use cases to determine the equation of each branch of the function.",
+    "a": "y = x-2 for x>=2, y = 3x-6 for x<2.",
+    "opts": [],
+    "h": "Separate into $x - 2 \\ge 0$ and $x - 2 < 0$.",
+    "s": "Zero is at $x=2$.\\nCases:\\nIf $x \\ge 2$: $|x-2| = x-2$, so $y = 2(x-2) - (x-2) = x-2$.\\nIf $x < 2$: $|x-2| = -(x-2)$, so $y = 2(x-2) - (-(x-2)) = 2(x-2) + (x-2) = 3(x-2) = 3x - 6$.\\nBoth branches meet at $(2, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Case x>=2.",
+        "workingOut": "y = 2(x-2) - (x-2) = x-2"
+      },
+      {
+        "explanation": "Case x<2.",
+        "workingOut": "y = 2(x-2) + (x-2) = 3x-6"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5E-new-19d",
+    "c": "5E",
+    "t": "Absolute Value",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Sketch the graph of $y = x^2 - |4x|$. Then use cases to determine the equation of each branch of the function.",
+    "a": "y = x^2 - 4x for x>=0, y = x^2 + 4x for x<0.",
+    "opts": [],
+    "h": "Separate into $x \\ge 0$ and $x < 0$.",
+    "s": "Cases:\\nIf $x \\ge 0$: $|4x| = 4x$, so $y = x^2 - 4x$. This is a parabola opening upwards with roots at $0, 4$.\\nIf $x < 0$: $|4x| = -4x$, so $y = x^2 - (-4x) = x^2 + 4x$. This is a parabola opening upwards with roots at $-4, 0$.\\nThe graph looks like a W-shape (two parabolas meeting at the origin).",
+    "solutionSteps": [
+      {
+        "explanation": "Case x>=0.",
+        "workingOut": "y = x^2 - 4x"
+      },
+      {
+        "explanation": "Case x<0.",
+        "workingOut": "y = x^2 + 4x"
+      }
+    ]
   }
 ];
