@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, ChevronDown, CheckCircle2 } from 'lucide-react';
 import MathView from '../MathView';
@@ -16,11 +16,23 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
   const steps = useMemo(() => parseSolutionSteps(question), [question]);
   // steps is now an array of { explanation, workingOut }
   const [revealed, setRevealed] = useState(1);
+  const bottomRef = useRef(null);
+  const shouldAutoScrollRef = useRef(false);
 
-  // Reset reveal count whenever the question changes.
   useEffect(() => {
-    setRevealed(1);
-  }, [question?.id, question?.question]);
+    if (!shouldAutoScrollRef.current) return undefined;
+    shouldAutoScrollRef.current = false;
+
+    const timer = window.setTimeout(() => {
+      bottomRef.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest',
+      });
+    }, 80);
+
+    return () => window.clearTimeout(timer);
+  }, [revealed]);
 
   if (!steps || steps.length === 0) return null;
 
@@ -144,7 +156,10 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
       {/* Next step button (only if more steps remain) */}
       {hasMultipleSteps && !allRevealed && (
         <button
-          onClick={() => setRevealed((r) => Math.min(totalSteps, r + 1))}
+          onClick={() => {
+            shouldAutoScrollRef.current = true;
+            setRevealed((r) => Math.min(totalSteps, r + 1));
+          }}
           style={{
             marginTop: '18px',
             width: '100%',
@@ -171,6 +186,8 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
           Next step <ChevronDown size={18} strokeWidth={2.5} />
         </button>
       )}
+
+      <div ref={bottomRef} style={{ height: 1 }} />
     </div>
   );
 };

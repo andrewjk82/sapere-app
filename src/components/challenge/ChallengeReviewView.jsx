@@ -323,7 +323,7 @@ const ChallengeReviewView = ({
 
           {/* Worked solution — revealed one step at a time. */}
           {(q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
-            <WorkedSolutionSteps question={q} graphData={q.graphData} />
+            <WorkedSolutionSteps key={q.id || q.question || idx} question={q} graphData={q.graphData} />
           )}
 
           {/* Navigation footer */}
