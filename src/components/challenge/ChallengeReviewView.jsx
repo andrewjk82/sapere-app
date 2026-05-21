@@ -169,7 +169,11 @@ const ChallengeReviewView = ({
         display: 'flex',
         flexDirection: showSideCanvas ? 'row' : 'column',
         gap: showSideCanvas ? '28px' : '20px',
-        alignItems: 'flex-start',
+        alignItems: showSideCanvas ? 'stretch' : 'flex-start',
+        height: showSideCanvas ? 'calc(100dvh - 132px)' : 'auto',
+        maxHeight: showSideCanvas ? 'calc(100dvh - 132px)' : 'none',
+        minHeight: 0,
+        overflow: showSideCanvas ? 'hidden' : 'visible',
       }}>
         {/* Left — question / your answer / correct answer / hint / solution */}
         <div style={{
@@ -180,7 +184,21 @@ const ChallengeReviewView = ({
           flexDirection: 'column',
           gap: '16px',
           minWidth: 0,
-          ...(showSideCanvas ? { maxHeight: 'calc(100vh - 96px)', overflowY: 'auto', WebkitOverflowScrolling: 'touch' } : {}),
+          minHeight: 0,
+          ...(showSideCanvas
+            ? {
+                height: '100%',
+                maxHeight: '100%',
+                overflowY: 'auto',
+                overscrollBehaviorY: 'contain',
+                touchAction: 'pan-y',
+                WebkitOverflowScrolling: 'touch',
+                scrollbarGutter: 'stable',
+                alignSelf: 'stretch',
+                paddingRight: '6px',
+                paddingBottom: '56px',
+              }
+            : {}),
         }}>
           {/* Question card */}
           <div style={{ padding: '24px 26px', borderRadius: '24px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)', boxShadow: '0 12px 28px rgba(15,23,42,0.04)' }}>

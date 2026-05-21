@@ -15,6 +15,7 @@ import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
+import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import {
@@ -587,6 +588,75 @@ const Curriculum = () => {
     }
   };
 
+  const handleSeedY11Ch5Questions = async () => {
+    if (!window.confirm("This will replace all existing questions for Year 11 Advanced Chapter 5 with the latest questions. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      
+      const collRef = collection(db, 'questions');
+      const q = query(collRef, where('chapterId', '==', 'y11a-5'));
+      const snap = await getDocs(q);
+      const deleteBatch = writeBatch(db);
+      snap.docs.forEach(d => deleteBatch.delete(d.ref));
+      await deleteBatch.commit();
+
+      const addBatch = writeBatch(db);
+      
+      CH5_QUESTIONS_Y11A.forEach(qData => {
+        const docRef = doc(collRef);
+        let optionsField = [];
+        let answerField = "";
+        
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: "" }));
+          answerField = correctIndex.toString();
+        } else {
+          optionsField = [];
+          answerField = qData.a;
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y11a-5',
+          chapterTitle: 'Chapter 5: Transformations and symmetry',
+          topicId: 'y11a-5' + qData.c.slice(-1),
+          topicCode: qData.c,
+          topicTitle: qData.t,
+          isManual: true,
+          title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q,
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type,
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || "",
+          solution: qData.s || "",
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        });
+      });
+      
+      await addBatch.commit();
+      showToast(`Successfully updated ${CH5_QUESTIONS_Y11A.length} Ch5 questions!`, 'success');
+      
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y11a-5'] = CH5_QUESTIONS_Y11A.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts(cached.counts);
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Ch5 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -1085,6 +1155,28 @@ const Curriculum = () => {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                               <span className="sync-card-status">Active ({questionCounts['y6-frac']} Qs)</span>
                               <button onClick={handleSeedFractionsQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 11 Ch5 */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y11">Y11 Ch5</span>
+                          <span className="sync-card-title">Transformations (Seed Y11A)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y11a-5'] ? (
+                            <button onClick={handleSeedY11Ch5Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y11 Ch5
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y11a-5']} Qs)</span>
+                              <button onClick={handleSeedY11Ch5Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
                                 Re-seed
                               </button>
                             </div>
