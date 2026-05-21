@@ -1918,5 +1918,1017 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "3k + 1 = 3 \\implies k = \\frac{2}{3}"
       }
     ]
+  },
+  {
+    "id": "y11a-5A-new-5a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the parabola $y = x^2 + 5$. Mark all intercepts with the axes and indicate the turning point.",
+    "a": "Parabola shifted up 5. Vertex (0, 5), y-intercept (0, 5), no x-intercepts.",
+    "opts": [],
+    "h": "Shift the graph of $y=x^2$ vertically upwards.",
+    "s": "The graph of $y=x^2$ is shifted upwards by 5 units. The vertex is $(0, 5)$. Setting $x=0$, $y=5$. There are no $x$-intercepts as $x^2+5=0$ has no real solutions.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = x^2 + 5 \\text{ is a shift up by 5.}"
+      },
+      {
+        "explanation": "Find intercepts and vertex.",
+        "workingOut": "\\text{Vertex: } (0, 5), y\\text{-int: } (0, 5)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-5b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the parabola $y = x^2 - 4$. Mark all intercepts with the axes and indicate the turning point.",
+    "a": "Parabola shifted down 4. Vertex (0, -4), y-intercept (0, -4), x-intercepts (-2, 0) and (2, 0).",
+    "opts": [],
+    "h": "Shift the graph of $y=x^2$ vertically downwards.",
+    "s": "The graph of $y=x^2$ is shifted downwards by 4 units. Vertex is $(0, -4)$. Setting $y=0$, $x^2 - 4 = 0 \\implies x = \\pm 2$. $x$-intercepts are $(-2, 0)$ and $(2, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = x^2 - 4 \\text{ is a shift down by 4.}"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "y\\text{-int: } (0, -4), \\ x\\text{-ints: } (2, 0) \\text{ and } (-2, 0)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-5c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the parabola $y = (x - 3)^2$. Mark all intercepts with the axes and indicate the turning point.",
+    "a": "Parabola shifted right 3. Vertex (3, 0), y-intercept (0, 9), x-intercept (3, 0).",
+    "opts": [],
+    "h": "Shift the graph of $y=x^2$ horizontally to the right.",
+    "s": "The graph of $y=x^2$ is shifted to the right by 3 units. Vertex is $(3, 0)$. Setting $x=0$, $y = (-3)^2 = 9$. $y$-intercept is $(0, 9)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = (x-3)^2 \\text{ is a shift right by 3.}"
+      },
+      {
+        "explanation": "Find intercepts and vertex.",
+        "workingOut": "\\text{Vertex: } (3, 0), y\\text{-int: } (0, 9)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-5d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the parabola $y = (x + 2)^2$. Mark all intercepts with the axes and indicate the turning point.",
+    "a": "Parabola shifted left 2. Vertex (-2, 0), y-intercept (0, 4), x-intercept (-2, 0).",
+    "opts": [],
+    "h": "Shift the graph of $y=x^2$ horizontally to the left.",
+    "s": "The graph of $y=x^2$ is shifted to the left by 2 units. Vertex is $(-2, 0)$. Setting $x=0$, $y = (2)^2 = 4$. $y$-intercept is $(0, 4)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = (x+2)^2 \\text{ is a shift left by 2.}"
+      },
+      {
+        "explanation": "Find intercepts and vertex.",
+        "workingOut": "\\text{Vertex: } (-2, 0), y\\text{-int: } (0, 4)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-6a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the hyperbola $y = \\frac{1}{x + 3}$. Mark any intercepts with the axes and indicate the asymptotes.",
+    "a": "Hyperbola shifted left 3. Asymptotes: x=-3, y=0. y-int: (0, 1/3).",
+    "opts": [],
+    "h": "Shift the graph of $y=\\frac{1}{x}$ horizontally to the left.",
+    "s": "The graph of $y=\\frac{1}{x}$ is shifted left by 3 units. Asymptotes are $x = -3$ and $y = 0$. Set $x=0$, $y = \\frac{1}{3}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify asymptotes.",
+        "workingOut": "x = -3, y = 0"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "y\\text{-int: } (0, \\frac{1}{3}), \\text{No } x\\text{-int}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-6b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the hyperbola $y = \\frac{1}{x - 4}$. Mark any intercepts with the axes and indicate the asymptotes.",
+    "a": "Hyperbola shifted right 4. Asymptotes: x=4, y=0. y-int: (0, -1/4).",
+    "opts": [],
+    "h": "Shift the graph of $y=\\frac{1}{x}$ horizontally to the right.",
+    "s": "The graph of $y=\\frac{1}{x}$ is shifted right by 4 units. Asymptotes are $x = 4$ and $y = 0$. Set $x=0$, $y = -\\frac{1}{4}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify asymptotes.",
+        "workingOut": "x = 4, y = 0"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "y\\text{-int: } (0, -\\frac{1}{4}), \\text{No } x\\text{-int}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-6c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the hyperbola $y = \\frac{1}{x} + 2$. Mark any intercepts with the axes and indicate the asymptotes.",
+    "a": "Hyperbola shifted up 2. Asymptotes: x=0, y=2. x-int: (-1/2, 0).",
+    "opts": [],
+    "h": "Shift the graph of $y=\\frac{1}{x}$ vertically upwards.",
+    "s": "The graph of $y=\\frac{1}{x}$ is shifted up by 2 units. Asymptotes are $x = 0$ and $y = 2$. Set $y=0$, $\\frac{1}{x} = -2 \\implies x = -\\frac{1}{2}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify asymptotes.",
+        "workingOut": "x = 0, y = 2"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "x\\text{-int: } (-\\frac{1}{2}, 0), \\text{No } y\\text{-int}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-6d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the hyperbola $y = \\frac{1}{x} - 5$. Mark any intercepts with the axes and indicate the asymptotes.",
+    "a": "Hyperbola shifted down 5. Asymptotes: x=0, y=-5. x-int: (1/5, 0).",
+    "opts": [],
+    "h": "Shift the graph of $y=\\frac{1}{x}$ vertically downwards.",
+    "s": "The graph of $y=\\frac{1}{x}$ is shifted down by 5 units. Asymptotes are $x = 0$ and $y = -5$. Set $y=0$, $\\frac{1}{x} = 5 \\implies x = \\frac{1}{5}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify asymptotes.",
+        "workingOut": "x = 0, y = -5"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "x\\text{-int: } (\\frac{1}{5}, 0), \\text{No } y\\text{-int}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-7a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the circle $(x - 4)^2 + y^2 = 16$. Mark all intercepts with the axes and indicate the centre and radius.",
+    "a": "Circle with centre (4, 0), radius 4. x-intercepts (0,0), (8,0). y-intercept (0,0).",
+    "opts": [],
+    "h": "The standard circle equation is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Centre is $(4, 0)$, radius is $\\sqrt{16} = 4$. $y$-intercepts: set $x=0 \\implies 16 + y^2 = 16 \\implies y = 0$. $x$-intercepts: set $y=0 \\implies (x-4)^2 = 16 \\implies x = 4 \\pm 4 = 8, 0$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify centre and radius.",
+        "workingOut": "h = 4, k = 0, r = 4"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "x\\text{-ints: } 0, 8 \\quad y\\text{-int: } 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-7b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the circle $x^2 + (y - 3)^2 = 9$. Mark all intercepts with the axes and indicate the centre and radius.",
+    "a": "Circle with centre (0, 3), radius 3. x-intercept (0,0). y-intercepts (0,0), (0,6).",
+    "opts": [],
+    "h": "The standard circle equation is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Centre is $(0, 3)$, radius is $3$. $x$-intercepts: set $y=0 \\implies x^2 + 9 = 9 \\implies x = 0$. $y$-intercepts: set $x=0 \\implies (y-3)^2 = 9 \\implies y = 3 \\pm 3 = 6, 0$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify centre and radius.",
+        "workingOut": "h = 0, k = 3, r = 3"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "y\\text{-ints: } 0, 6 \\quad x\\text{-int: } 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-7c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the circle $x^2 + (y + 5)^2 = 25$. Mark all intercepts with the axes and indicate the centre and radius.",
+    "a": "Circle with centre (0, -5), radius 5. x-intercept (0,0). y-intercepts (0,0), (0,-10).",
+    "opts": [],
+    "h": "The standard circle equation is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Centre is $(0, -5)$, radius is $5$. $x$-intercepts: set $y=0 \\implies x^2 + 25 = 25 \\implies x = 0$. $y$-intercepts: set $x=0 \\implies (y+5)^2 = 25 \\implies y = -5 \\pm 5 = 0, -10$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify centre and radius.",
+        "workingOut": "h = 0, k = -5, r = 5"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "y\\text{-ints: } 0, -10 \\quad x\\text{-int: } 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-7d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Sketch the circle $(x + 2)^2 + y^2 = 4$. Mark all intercepts with the axes and indicate the centre and radius.",
+    "a": "Circle with centre (-2, 0), radius 2. x-intercepts (0,0), (-4,0). y-intercept (0,0).",
+    "opts": [],
+    "h": "The standard circle equation is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Centre is $(-2, 0)$, radius is $2$. $y$-intercepts: set $x=0 \\implies 4 + y^2 = 4 \\implies y = 0$. $x$-intercepts: set $y=0 \\implies (x+2)^2 = 4 \\implies x = -2 \\pm 2 = 0, -4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify centre and radius.",
+        "workingOut": "h = -2, k = 0, r = 2"
+      },
+      {
+        "explanation": "Find intercepts.",
+        "workingOut": "x\\text{-ints: } 0, -4 \\quad y\\text{-int: } 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-8a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = x^2$ is translated right by 3 units. Write down the new equation, then sketch its graph.",
+    "a": "New equation: y = (x - 3)^2. Parabola with vertex at (3,0).",
+    "opts": [],
+    "h": "For a translation to the right by $k$ units, replace $x$ with $(x-k)$.",
+    "s": "Replacing $x$ with $(x-3)$ gives $y = (x-3)^2$. The graph is a parabola shifted 3 units right, so its vertex is at $(3,0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the horizontal shift.",
+        "workingOut": "x \\to (x-3)"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = (x-3)^2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-8b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = 3^x$ is translated down by 4 units. Write down the new equation, then sketch its graph.",
+    "a": "New equation: y = 3^x - 4. Exponential curve with horizontal asymptote y = -4.",
+    "opts": [],
+    "h": "For a translation downwards by $k$ units, subtract $k$ from the function.",
+    "s": "Subtracting 4 gives $y = 3^x - 4$. The graph is an exponential curve shifted down by 4 units. The horizontal asymptote is $y = -4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the vertical shift.",
+        "workingOut": "f(x) \\to f(x) - 4"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = 3^x - 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-8c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = x^3$ is translated left by 2 units. Write down the new equation, then sketch its graph.",
+    "a": "New equation: y = (x + 2)^3. Cubic curve with inflection point at (-2,0).",
+    "opts": [],
+    "h": "For a translation to the left by $k$ units, replace $x$ with $(x+k)$.",
+    "s": "Replacing $x$ with $(x+2)$ gives $y = (x+2)^3$. The graph is a cubic curve shifted 2 units left, so its inflection point is at $(-2,0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the horizontal shift.",
+        "workingOut": "x \\to (x+2)"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = (x+2)^3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-8d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = \\frac{1}{x}$ is translated right by 1 unit. Write down the new equation, then sketch its graph.",
+    "a": "New equation: y = 1/(x-1). Hyperbola with vertical asymptote x = 1.",
+    "opts": [],
+    "h": "For a translation to the right by $k$ units, replace $x$ with $(x-k)$.",
+    "s": "Replacing $x$ with $(x-1)$ gives $y = \\frac{1}{x-1}$. The graph is a hyperbola shifted 1 unit right, with a new vertical asymptote at $x = 1$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the horizontal shift.",
+        "workingOut": "x \\to (x-1)"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = \\frac{1}{x-1}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-8e",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A relation $x^2 + y^2 = 16$ is translated up by 3 units. Write down the new equation, then sketch its graph.",
+    "a": "New equation: x^2 + (y-3)^2 = 16. Circle with centre (0,3) and radius 4.",
+    "opts": [],
+    "h": "For a translation upwards by $k$ units, replace $y$ with $(y-k)$.",
+    "s": "Replacing $y$ with $(y-3)$ gives $x^2 + (y-3)^2 = 16$. The graph is a circle shifted 3 units up, with centre $(0,3)$ and radius 4.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the vertical shift.",
+        "workingOut": "y \\to (y-3)"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "x^2 + (y-3)^2 = 16"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-8f",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = x^2 - 5$ is translated left by 4 units. Write down the new equation, then sketch its graph.",
+    "a": "New equation: y = (x+4)^2 - 5. Parabola with vertex (-4, -5).",
+    "opts": [],
+    "h": "For a translation to the left by $k$ units, replace $x$ with $(x+k)$.",
+    "s": "Replacing $x$ with $(x+4)$ gives $y = (x+4)^2 - 5$. The graph is a parabola with its vertex at $(-4, -5)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the horizontal shift.",
+        "workingOut": "x \\to (x+4)"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = (x+4)^2 - 5"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9a-i",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = f(x)$ has roots at $x=-3, 0, 3$ and a local maximum at $(-1.5, 2)$. Sketch the graph of $y = f(x - 4)$.",
+    "a": "Graph shifted right by 4. New roots: 1, 4, 7. New local max: (2.5, 2).",
+    "opts": [],
+    "h": "The transformation $f(x-k)$ shifts the graph $k$ units to the right.",
+    "s": "Replacing $x$ with $(x-4)$ shifts all features 4 units to the right. The roots move to $-3+4=1$, $0+4=4$, $3+4=7$. The local maximum moves to $(-1.5+4, 2) = (2.5, 2)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "Shift right 4 units."
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "(-1.5, 2) \\to (2.5, 2)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9a-ii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = f(x)$ has roots at $x=-3, 0, 3$ and a local maximum at $(-1.5, 2)$. Sketch the graph of $y = f(x + 2)$.",
+    "a": "Graph shifted left by 2. New roots: -5, -2, 1. New local max: (-3.5, 2).",
+    "opts": [],
+    "h": "The transformation $f(x+k)$ shifts the graph $k$ units to the left.",
+    "s": "Replacing $x$ with $(x+2)$ shifts all features 2 units to the left. The roots move to $-3-2=-5$, $0-2=-2$, $3-2=1$. The local maximum moves to $(-1.5-2, 2) = (-3.5, 2)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "Shift left 2 units."
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "(-1.5, 2) \\to (-3.5, 2)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9b-i",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = P(x)$ has roots at $x=-4, 2$ and a local maximum at $(-1, 4)$. Sketch the graph of $y = P(x + 3)$.",
+    "a": "Graph shifted left by 3. New roots: -7, -1. New local max: (-4, 4).",
+    "opts": [],
+    "h": "The transformation $P(x+k)$ shifts the graph $k$ units to the left.",
+    "s": "Replacing $x$ with $(x+3)$ shifts all features 3 units to the left. The roots move to $-4-3=-7$, $2-3=-1$. The local maximum moves to $(-1-3, 4) = (-4, 4)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "Shift left 3 units."
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "(-1, 4) \\to (-4, 4)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9b-ii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = P(x)$ has roots at $x=-4, 2$ and a local maximum at $(-1, 4)$. Sketch the graph of $y = P(x) + 2$.",
+    "a": "Graph shifted up by 2. New local max: (-1, 6).",
+    "opts": [],
+    "h": "Adding a constant to the function shifts the graph vertically.",
+    "s": "Adding 2 shifts the graph upwards by 2 units. The local maximum moves to $(-1, 4+2) = (-1, 6)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "Shift up 2 units."
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "(-1, 4) \\to (-1, 6)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9c-i",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = h(x)$ is a parabola with its vertex at $(2, -3)$. Sketch the graph of $y - 4 = h(x)$.",
+    "a": "Graph shifted up by 4. New vertex: (2, 1).",
+    "opts": [],
+    "h": "Rearrange the equation to make $y$ the subject.",
+    "s": "Rearranging gives $y = h(x) + 4$. This is a vertical shift upwards by 4 units. The new vertex is $(2, -3+4) = (2, 1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Rearrange the equation.",
+        "workingOut": "y = h(x) + 4"
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "(2, -3) \\to (2, 1)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9c-ii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = h(x)$ is a parabola with its vertex at $(2, -3)$. Sketch the graph of $y = h(x) - 2$.",
+    "a": "Graph shifted down by 2. New vertex: (2, -5).",
+    "opts": [],
+    "h": "Subtracting a constant shifts the graph downwards.",
+    "s": "The graph shifts downwards by 2 units. The new vertex is $(2, -3-2) = (2, -5)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "Shift down 2 units."
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "(2, -3) \\to (2, -5)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9d-i",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = g(x)$ is a semi-circle centred at $(0,0)$ with radius 3. Sketch the graph of $y - 2 = g(x)$.",
+    "a": "Semi-circle shifted up by 2. New centre: (0, 2).",
+    "opts": [],
+    "h": "Rearrange the equation to make $y$ the subject.",
+    "s": "Rearranging gives $y = g(x) + 2$. The semi-circle shifts upwards by 2 units. Its centre becomes $(0, 2)$ and its radius remains 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Rearrange the equation.",
+        "workingOut": "y = g(x) + 2"
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "Centre: (0, 0) \\to (0, 2)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-9d-ii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "A function $y = g(x)$ is a semi-circle centred at $(0,0)$ with radius 3. Sketch the graph of $y = g(x - 5)$.",
+    "a": "Semi-circle shifted right by 5. New centre: (5, 0).",
+    "opts": [],
+    "h": "Replacing $x$ with $x-5$ shifts the graph to the right.",
+    "s": "The semi-circle shifts 5 units to the right. Its centre becomes $(5, 0)$ and its radius remains 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "Shift right 5 units."
+      },
+      {
+        "explanation": "Calculate new coordinates.",
+        "workingOut": "Centre: (0, 0) \\to (5, 0)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-10a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Complete the square to express $y = x^2 + 6x + 10$ in the form $y = (x-h)^2 + k$. Identify the translation from $y = x^2$ and sketch its graph.",
+    "a": "y = (x+3)^2 + 1. Translation: left 3, up 1.",
+    "opts": [],
+    "h": "Take half of 6, square it, and add/subtract it to complete the square.",
+    "s": "$y = (x^2 + 6x + 9) - 9 + 10 = (x + 3)^2 + 1$. The graph is $y = x^2$ shifted 3 units left and 1 unit up.",
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square.",
+        "workingOut": "y = (x^2 + 6x + 9) + 1"
+      },
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = (x+3)^2 + 1 \\implies \\text{Left 3, Up 1}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-10b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Complete the square to express $y = x^2 - 4x - 5$ in the form $y = (x-h)^2 + k$. Identify the translation from $y = x^2$ and sketch its graph.",
+    "a": "y = (x-2)^2 - 9. Translation: right 2, down 9.",
+    "opts": [],
+    "h": "Take half of -4, square it, and add/subtract it.",
+    "s": "$y = (x^2 - 4x + 4) - 4 - 5 = (x - 2)^2 - 9$. The graph is $y = x^2$ shifted 2 units right and 9 units down.",
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square.",
+        "workingOut": "y = (x^2 - 4x + 4) - 9"
+      },
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = (x-2)^2 - 9 \\implies \\text{Right 2, Down 9}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-10c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Complete the square to express $y = -x^2 + 8x - 12$ in the form $y = -(x-h)^2 + k$. Identify the translation from $y = -x^2$ and sketch its graph.",
+    "a": "y = -(x-4)^2 + 4. Translation: right 4, up 4.",
+    "opts": [],
+    "h": "Factor out the negative sign first: $-(x^2 - 8x) - 12$.",
+    "s": "$y = -(x^2 - 8x + 16) + 16 - 12 = -(x - 4)^2 + 4$. The graph is $y = -x^2$ shifted 4 units right and 4 units up.",
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square.",
+        "workingOut": "y = -(x^2 - 8x + 16) + 4"
+      },
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = -(x-4)^2 + 4 \\implies \\text{Right 4, Up 4}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-10d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Complete the square to express $y = -x^2 - 2x + 8$ in the form $y = -(x-h)^2 + k$. Identify the translation from $y = -x^2$ and sketch its graph.",
+    "a": "y = -(x+1)^2 + 9. Translation: left 1, up 9.",
+    "opts": [],
+    "h": "Factor out the negative sign: $-(x^2 + 2x) + 8$.",
+    "s": "$y = -(x^2 + 2x + 1) + 1 + 8 = -(x + 1)^2 + 9$. The graph is $y = -x^2$ shifted 1 unit left and 9 units up.",
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square.",
+        "workingOut": "y = -(x^2 + 2x + 1) + 9"
+      },
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = -(x+1)^2 + 9 \\implies \\text{Left 1, Up 9}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-10e",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Complete the square to express $y = x^2 - 10x + 21$ in the form $y = (x-h)^2 + k$. Identify the translation from $y = x^2$ and sketch its graph.",
+    "a": "y = (x-5)^2 - 4. Translation: right 5, down 4.",
+    "opts": [],
+    "h": "Take half of -10, square it, and add/subtract it.",
+    "s": "$y = (x^2 - 10x + 25) - 25 + 21 = (x - 5)^2 - 4$. The graph is $y = x^2$ shifted 5 units right and 4 units down.",
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square.",
+        "workingOut": "y = (x^2 - 10x + 25) - 4"
+      },
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = (x-5)^2 - 4 \\implies \\text{Right 5, Down 4}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-10f",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Complete the square to express $y = x^2 + 4x + 6$ in the form $y = (x-h)^2 + k$. Identify the translation from $y = x^2$ and sketch its graph.",
+    "a": "y = (x+2)^2 + 2. Translation: left 2, up 2.",
+    "opts": [],
+    "h": "Take half of 4, square it, and add/subtract it.",
+    "s": "$y = (x^2 + 4x + 4) - 4 + 6 = (x + 2)^2 + 2$. The graph is $y = x^2$ shifted 2 units left and 2 units up.",
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square.",
+        "workingOut": "y = (x^2 + 4x + 4) + 2"
+      },
+      {
+        "explanation": "Identify the translation.",
+        "workingOut": "y = (x+2)^2 + 2 \\implies \\text{Left 2, Up 2}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-11a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A parabola opening upwards has its vertex at $(4, 0)$ and its shape matches $y = x^2$. Write down its equation.",
+    "a": "y=(x-4)^2",
+    "opts": [],
+    "h": "Apply a horizontal shift to $y=x^2$.",
+    "s": "The vertex $(0,0)$ has moved to $(4,0)$. This is a shift of 4 units to the right. The equation is $y = (x-4)^2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the shift.",
+        "workingOut": "(0,0) \\to (4,0) \\implies \\text{Right 4}"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = (x-4)^2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-11b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A hyperbola has asymptotes $x = -2$ and $y = 3$, and its shape matches $y = \\frac{1}{x}$. Write down its equation.",
+    "a": "y=1/(x+2)+3",
+    "opts": [],
+    "h": "Apply the horizontal and vertical shifts to $y=1/x$.",
+    "s": "The vertical asymptote $x=-2$ means a shift 2 units left ($x \\to x+2$). The horizontal asymptote $y=3$ means a shift 3 units up ($+3$). The equation is $y = \\frac{1}{x+2} + 3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the shifts.",
+        "workingOut": "x=-2 \\implies \\text{Left 2}, \\ y=3 \\implies \\text{Up 3}"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = \\frac{1}{x+2} + 3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-11c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A parabola opening upwards has its vertex at $(3, -2)$ and its shape matches $y = x^2$. Write down its equation.",
+    "a": "y=(x-3)^2-2",
+    "opts": [],
+    "h": "Apply horizontal and vertical shifts to $y=x^2$.",
+    "s": "The vertex $(0,0)$ has moved to $(3,-2)$. This is a shift of 3 units right and 2 units down. The equation is $y = (x-3)^2 - 2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the shifts.",
+        "workingOut": "\\text{Right 3, Down 2}"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = (x-3)^2 - 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-11d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A hyperbola has asymptotes $x = 5$ and $y = -1$, and its shape matches $y = \\frac{1}{x}$. Write down its equation.",
+    "a": "y=1/(x-5)-1",
+    "opts": [],
+    "h": "Apply horizontal and vertical shifts to $y=1/x$.",
+    "s": "The vertical asymptote $x=5$ means a shift 5 units right ($x \\to x-5$). The horizontal asymptote $y=-1$ means a shift 1 unit down ($-1$). The equation is $y = \\frac{1}{x-5} - 1$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the shifts.",
+        "workingOut": "x=5 \\implies \\text{Right 5}, \\ y=-1 \\implies \\text{Down 1}"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "y = \\frac{1}{x-5} - 1"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-13a",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A circle has its centre at $(3, 4)$ and a radius of $2$. Write down its standard equation.",
+    "a": "(x-3)^2+(y-4)^2=4",
+    "opts": [],
+    "h": "The standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Here $h=3$, $k=4$, and $r=2$. So $r^2 = 4$. The equation is $(x-3)^2 + (y-4)^2 = 4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify components.",
+        "workingOut": "h=3, k=4, r=2 \\implies r^2=4"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "(x-3)^2 + (y-4)^2 = 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-13b",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A circle has its centre at $(-5, -2)$ and a radius of $6$. Write down its standard equation.",
+    "a": "(x+5)^2+(y+2)^2=36",
+    "opts": [],
+    "h": "The standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Here $h=-5$, $k=-2$, and $r=6$. So $r^2 = 36$. The equation is $(x+5)^2 + (y+2)^2 = 36$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify components.",
+        "workingOut": "h=-5, k=-2, r=6 \\implies r^2=36"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "(x+5)^2 + (y+2)^2 = 36"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-13c",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A circle has its centre at $(-3, 1)$ and a radius of $7$. Write down its standard equation.",
+    "a": "(x+3)^2+(y-1)^2=49",
+    "opts": [],
+    "h": "The standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Here $h=-3$, $k=1$, and $r=7$. So $r^2 = 49$. The equation is $(x+3)^2 + (y-1)^2 = 49$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify components.",
+        "workingOut": "h=-3, k=1, r=7 \\implies r^2=49"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "(x+3)^2 + (y-1)^2 = 49"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-13d",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A circle has its centre at $(6, -5)$ and a radius of $9$. Write down its standard equation.",
+    "a": "(x-6)^2+(y+5)^2=81",
+    "opts": [],
+    "h": "The standard form is $(x-h)^2 + (y-k)^2 = r^2$.",
+    "s": "Here $h=6$, $k=-5$, and $r=9$. So $r^2 = 81$. The equation is $(x-6)^2 + (y+5)^2 = 81$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify components.",
+        "workingOut": "h=6, k=-5, r=9 \\implies r^2=81"
+      },
+      {
+        "explanation": "Write the equation.",
+        "workingOut": "(x-6)^2 + (y+5)^2 = 81"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-14a-i",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The graph of $y = \\frac{1}{2}x^3$ has a point of inflection at $(0,0)$. Sketch the graph of $y = \\frac{1}{2}x^3 - 4$, indicating the new point of inflection.",
+    "a": "Cubic shifted down 4. Inflection at (0, -4).",
+    "opts": [],
+    "h": "Subtracting 4 shifts the graph vertically downwards.",
+    "s": "The graph is translated 4 units down. The new point of inflection is $(0, -4)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify translation.",
+        "workingOut": "Shift down 4"
+      },
+      {
+        "explanation": "Find new inflection.",
+        "workingOut": "(0,0) \\to (0,-4)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-14a-ii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The graph of $y = \\frac{1}{2}x^3$ has a point of inflection at $(0,0)$. Sketch the graph of $y = \\frac{1}{2}(x-3)^3$, indicating the new point of inflection.",
+    "a": "Cubic shifted right 3. Inflection at (3, 0).",
+    "opts": [],
+    "h": "Replacing $x$ with $x-3$ shifts the graph horizontally to the right.",
+    "s": "The graph is translated 3 units right. The new point of inflection is $(3, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify translation.",
+        "workingOut": "Shift right 3"
+      },
+      {
+        "explanation": "Find new inflection.",
+        "workingOut": "(0,0) \\to (3,0)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-14a-iii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The graph of $y = \\frac{1}{2}x^3$ has a point of inflection at $(0,0)$. Sketch the graph of $y = \\frac{1}{2}(x+1)^3 + 2$, indicating the new point of inflection.",
+    "a": "Cubic shifted left 1, up 2. Inflection at (-1, 2).",
+    "opts": [],
+    "h": "Replacing $x$ with $x+1$ shifts left; adding 2 shifts up.",
+    "s": "The graph is translated 1 unit left and 2 units up. The new point of inflection is $(-1, 2)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify translations.",
+        "workingOut": "Shift left 1, up 2"
+      },
+      {
+        "explanation": "Find new inflection.",
+        "workingOut": "(0,0) \\to (-1,2)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-14b-i",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The graph of $y = -3x^3$ has a point of inflection at $(0,0)$. Sketch the graph of $y = 5 - 3x^3$, indicating the new point of inflection.",
+    "a": "Cubic shifted up 5. Inflection at (0, 5).",
+    "opts": [],
+    "h": "Adding 5 shifts the graph vertically upwards.",
+    "s": "The equation can be written as $y = -3x^3 + 5$. The graph is translated 5 units up. The new point of inflection is $(0, 5)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify translation.",
+        "workingOut": "Shift up 5"
+      },
+      {
+        "explanation": "Find new inflection.",
+        "workingOut": "(0,0) \\to (0,5)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-14b-ii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The graph of $y = -3x^3$ has a point of inflection at $(0,0)$. Sketch the graph of $y = -3(x+2)^3$, indicating the new point of inflection.",
+    "a": "Cubic shifted left 2. Inflection at (-2, 0).",
+    "opts": [],
+    "h": "Replacing $x$ with $x+2$ shifts the graph horizontally to the left.",
+    "s": "The graph is translated 2 units left. The new point of inflection is $(-2, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify translation.",
+        "workingOut": "Shift left 2"
+      },
+      {
+        "explanation": "Find new inflection.",
+        "workingOut": "(0,0) \\to (-2,0)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5A-new-14b-iii",
+    "c": "5A",
+    "t": "Translations of Known Graphs",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "The graph of $y = -3x^3$ has a point of inflection at $(0,0)$. Sketch the graph of $y = -3(x-4)^3 - 1$, indicating the new point of inflection.",
+    "a": "Cubic shifted right 4, down 1. Inflection at (4, -1).",
+    "opts": [],
+    "h": "Replacing $x$ with $x-4$ shifts right; subtracting 1 shifts down.",
+    "s": "The graph is translated 4 units right and 1 unit down. The new point of inflection is $(4, -1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify translations.",
+        "workingOut": "Shift right 4, down 1"
+      },
+      {
+        "explanation": "Find new inflection.",
+        "workingOut": "(0,0) \\to (4,-1)"
+      }
+    ]
   }
 ];
