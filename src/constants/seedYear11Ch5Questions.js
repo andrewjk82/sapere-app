@@ -3514,5 +3514,1315 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "t(-x) = \\frac{3^{-x} - 3^x}{3^{-x} + 3^x} = \\frac{-(3^x - 3^{-x})}{3^x + 3^{-x}} = -t(x) \\implies -t(-x) = t(x). \\implies \\text{Odd function (point symmetry about origin).}"
       }
     ]
+  },
+  {
+    "id": "y11a-5C-new-1a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A function $y = f(x)$ is represented by a parabola that opens upwards and has its vertex on the $y$-axis. Classify this function as even, odd, or neither.",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Check for symmetry across the y-axis or about the origin.",
+    "s": "Because the vertex is on the $y$-axis, the parabola is perfectly symmetrical across the $y$-axis. Therefore, it is an even function.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify symmetry.",
+        "workingOut": "\\text{Symmetric about the } y\\text{-axis.} \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-1b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A function $y = f(x)$ is represented by a straight line that has a positive gradient and a non-zero $y$-intercept. Classify this function as even, odd, or neither.",
+    "a": "Neither",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Does it pass through the origin? Is it symmetric across the y-axis?",
+    "s": "A straight line with a non-zero $y$-intercept does not have point symmetry about the origin, nor is it symmetrical across the $y$-axis. Thus, it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Check symmetry.",
+        "workingOut": "\\text{No } y\\text{-axis symmetry. No origin symmetry.} \\implies \\text{Neither}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-1c",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A function $y = f(x)$ is represented by a cubic curve that passes through the origin and exhibits $180^{\\circ}$ point symmetry about the origin. Classify this function.",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "What type of symmetry defines an odd function?",
+    "s": "A function with $180^{\\circ}$ point symmetry about the origin satisfies $f(-x) = -f(x)$, making it an odd function.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify symmetry.",
+        "workingOut": "\\text{Symmetric about the origin.} \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-1d",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A function $y = f(x)$ is represented by a straight line that passes directly through the origin. Classify this function.",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "A line $y=mx$ through the origin.",
+    "s": "A line passing through the origin has point symmetry about the origin, meaning $f(-x) = -f(x)$. Thus, it is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify symmetry.",
+        "workingOut": "\\text{Symmetric about the origin.} \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-1e",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A function $y = f(x)$ has a graph that looks like a wave passing through the origin, and if you rotate it $180^{\\circ}$ about the origin, it looks identical. Classify this function.",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Rotational symmetry of 180 degrees about the origin defines a specific type of function.",
+    "s": "Rotational symmetry of $180^{\\circ}$ about the origin implies $f(-x) = -f(x)$. Therefore, it is an odd function.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify symmetry.",
+        "workingOut": "\\text{Rotational symmetry about origin.} \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-1f",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A function $y = f(x)$ has a 'W' shape and is perfectly mirrored across the $y$-axis. Classify this function.",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "What type of symmetry does a mirror image across the y-axis imply?",
+    "s": "A graph that is mirrored perfectly across the $y$-axis satisfies $f(-x) = f(x)$, which is the definition of an even function.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify symmetry.",
+        "workingOut": "\\text{Symmetric across } y\\text{-axis.} \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-2a-i",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "The graph of $y = f(x)$ for $x \\ge 0$ is a quarter-circle in the first quadrant, ending at $(2, 0)$. Complete the sketch of the graph for all $x$ so that $f(x)$ becomes an **even** function.",
+    "a": "A semi-circle in the upper half plane from x=-2 to x=2.",
+    "opts": [],
+    "h": "For an even function, reflect the given part across the y-axis.",
+    "s": "To make the function even, the graph must be symmetrical across the $y$-axis. Reflecting the quarter-circle in the first quadrant across the $y$-axis creates a full semi-circle from $x=-2$ to $x=2$ in the upper half plane.",
+    "solutionSteps": [
+      {
+        "explanation": "Reflect for even symmetry.",
+        "workingOut": "\\text{Reflect across } y\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-2a-ii",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "The graph of $y = f(x)$ for $x \\ge 0$ is a quarter-circle in the first quadrant, ending at $(2, 0)$. Complete the sketch of the graph for all $x$ so that $f(x)$ becomes an **odd** function.",
+    "a": "An S-shaped curve formed by the quarter circle in Q1 and a reflected quarter circle in Q3.",
+    "opts": [],
+    "h": "For an odd function, rotate the given part $180^{\\circ}$ about the origin.",
+    "s": "To make the function odd, it must have point symmetry about the origin. Rotating the quarter-circle $180^{\\circ}$ about the origin places the other half in the third quadrant, ending at $(-2, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Rotate for odd symmetry.",
+        "workingOut": "\\text{Rotate } 180^\\circ \\text{ about origin.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-2b-i",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "The graph of $y = f(x)$ for $x \\le 0$ is a decaying curve in the second quadrant that ends at $(0, 1)$. Complete the sketch of the graph for all $x$ so that $f(x)$ becomes an **even** function.",
+    "a": "A bell-shaped or catenary-shaped curve, symmetric across the y-axis.",
+    "opts": [],
+    "h": "Reflect the left side across the y-axis to the right side.",
+    "s": "For an even function, the right side must be a mirror image of the left side across the $y$-axis. This forms a symmetrical shape with a peak at $(0, 1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Reflect for even symmetry.",
+        "workingOut": "\\text{Reflect across } y\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-2b-ii",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "The graph of $y = f(x)$ for $x \\le 0$ is a curve in the second quadrant ending at $(0, 1)$. But wait, an odd function must pass through the origin if defined at $x=0$! Assuming the curve approaches $(0,1)$ but is undefined there, sketch the right half so $f(x)$ is an **odd** function.",
+    "a": "The right half is in the fourth quadrant, approaching (0, -1).",
+    "opts": [],
+    "h": "Rotate the curve $180^{\\circ}$ about the origin.",
+    "s": "For an odd function, the curve must have point symmetry about the origin. Rotating the second-quadrant curve $180^{\\circ}$ about the origin places its counterpart in the fourth quadrant.",
+    "solutionSteps": [
+      {
+        "explanation": "Rotate for odd symmetry.",
+        "workingOut": "\\text{Rotate } 180^\\circ \\text{ about origin.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-2c-i",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "The graph of $y = f(x)$ for $x \\ge 0$ is a parabola-like curve starting at $(0, 2)$, dipping to a minimum at $(1, -1)$, and rising thereafter. Complete the sketch for all $x$ so that $f(x)$ becomes an **even** function.",
+    "a": "A W-shaped curve symmetrical across the y-axis.",
+    "opts": [],
+    "h": "Reflect the entire right side across the y-axis.",
+    "s": "To form an even function, mirror the given curve across the $y$-axis. The resulting graph will have a local maximum at $(0, 2)$ and another minimum at $(-1, -1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Reflect for even symmetry.",
+        "workingOut": "\\text{Reflect across } y\\text{-axis.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-2c-ii",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "The graph of $y = f(x)$ for $x \\ge 0$ starts at the origin $(0, 0)$, dips to a minimum at $(1, -1)$, and rises thereafter. Complete the sketch for all $x$ so that $f(x)$ becomes an **odd** function.",
+    "a": "An S-shaped curve passing through the origin with a maximum at (-1, 1).",
+    "opts": [],
+    "h": "Rotate the given right-side curve $180^{\\circ}$ about the origin.",
+    "s": "To form an odd function, apply point symmetry about the origin. The point $(1, -1)$ maps to $(-1, 1)$, creating a local maximum in the second quadrant.",
+    "solutionSteps": [
+      {
+        "explanation": "Rotate for odd symmetry.",
+        "workingOut": "\\text{Rotate } 180^\\circ \\text{ about origin.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-3",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Consider the function $f(x) = x^4 - 3x^2 + 5$.\n**a)** Simplify $f(-x)$.\n**b)** Hence, show algebraically that $f(x)$ is an even function.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Substitute $-x$ into the function and simplify. Even functions satisfy $f(-x) = f(x)$.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Substitute -x.",
+        "workingOut": "f(-x) = (-x)^4 - 3(-x)^2 + 5"
+      },
+      {
+        "explanation": "Simplify the expression.",
+        "workingOut": "= x^4 - 3x^2 + 5"
+      },
+      {
+        "explanation": "Part b: Conclude.",
+        "workingOut": "Since f(-x) = x^4 - 3x^2 + 5 = f(x), the function is even."
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-4",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Consider the function $g(x) = x^3 - 4x$.\n**a)** Simplify $g(-x)$.\n**b)** Hence, show algebraically that $g(x)$ is an odd function.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Substitute $-x$ into the function and factor out $-1$. Odd functions satisfy $g(-x) = -g(x)$.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Substitute -x.",
+        "workingOut": "g(-x) = (-x)^3 - 4(-x)"
+      },
+      {
+        "explanation": "Simplify the expression.",
+        "workingOut": "= -x^3 + 4x"
+      },
+      {
+        "explanation": "Part b: Factor out -1 and conclude.",
+        "workingOut": "= -(x^3 - 4x) = -g(x). \\text{ Since } g(-x) = -g(x), g \\text{ is odd.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-5",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "easy",
+    "q": "Consider the function $h(x) = x^3 + 2x^2 - 4$.\n**a)** Simplify $h(-x)$.\n**b)** Hence, show algebraically that $h(x)$ is neither even nor odd.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Show that $h(-x)$ is not equal to $h(x)$ and not equal to $-h(x)$.",
+    "s": "See detailed solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Part a: Substitute -x.",
+        "workingOut": "h(-x) = (-x)^3 + 2(-x)^2 - 4 = -x^3 + 2x^2 - 4"
+      },
+      {
+        "explanation": "Part b: Check if even.",
+        "workingOut": "-x^3 + 2x^2 - 4 \\neq x^3 + 2x^2 - 4, \\text{ so } h(-x) \\neq h(x)."
+      },
+      {
+        "explanation": "Check if odd.",
+        "workingOut": "-h(x) = -x^3 - 2x^2 + 4. \\text{ Since } h(-x) \\neq -h(x), \\text{ it is neither.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-6a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Simplify $f(-x)$ for the function $f(x) = x^2 - 16$, and hence determine whether it is even, odd, or neither.",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$ into the equation. What happens to $(-x)^2$?",
+    "s": "$f(-x) = (-x)^2 - 16 = x^2 - 16 = f(x)$. Since $f(-x) = f(x)$, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = (-x)^2 - 16 = x^2 - 16"
+      },
+      {
+        "explanation": "Classify.",
+        "workingOut": "f(-x) = f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-6b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Simplify $f(-x)$ for the function $f(x) = x^2 - 4x + 3$, and hence determine whether it is even, odd, or neither.",
+    "a": "Neither",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$. Does it perfectly equal $f(x)$ or $-f(x)$?",
+    "s": "$f(-x) = (-x)^2 - 4(-x) + 3 = x^2 + 4x + 3$. This is neither equal to $f(x)$ nor $-f(x)$. Thus, it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = x^2 + 4x + 3"
+      },
+      {
+        "explanation": "Classify.",
+        "workingOut": "f(-x) \\neq f(x) \\text{ and } f(-x) \\neq -f(x) \\implies \\text{Neither}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-6c",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Simplify $f(-x)$ for the function $f(x) = x^3 - 9x$, and hence determine whether it is even, odd, or neither.",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$. What happens to $(-x)^3$?",
+    "s": "$f(-x) = (-x)^3 - 9(-x) = -x^3 + 9x = -(x^3 - 9x) = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = -x^3 + 9x = -(x^3 - 9x)"
+      },
+      {
+        "explanation": "Classify.",
+        "workingOut": "f(-x) = -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-6d",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Simplify $f(-x)$ for the function $f(x) = x^4 - 16x^2$, and hence determine whether it is even, odd, or neither.",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Even powers of $-x$ become positive.",
+    "s": "$f(-x) = (-x)^4 - 16(-x)^2 = x^4 - 16x^2 = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = x^4 - 16x^2"
+      },
+      {
+        "explanation": "Classify.",
+        "workingOut": "f(-x) = f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-6e",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Simplify $f(-x)$ for the function $f(x) = x^3 + 2x^2$, and hence determine whether it is even, odd, or neither.",
+    "a": "Neither",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Does it perfectly negate or perfectly remain the same?",
+    "s": "$f(-x) = (-x)^3 + 2(-x)^2 = -x^3 + 2x^2$. This is neither equal to $f(x)$ nor $-f(x)$. Thus, it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = -x^3 + 2x^2"
+      },
+      {
+        "explanation": "Classify.",
+        "workingOut": "\\text{Neither}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-6f",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Simplify $f(-x)$ for the function $f(x) = x^5 - 25x$, and hence determine whether it is even, odd, or neither.",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$. Odd powers preserve the negative sign.",
+    "s": "$f(-x) = (-x)^5 - 25(-x) = -x^5 + 25x = -(x^5 - 25x) = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = -x^5 + 25x = -(x^5 - 25x)"
+      },
+      {
+        "explanation": "Classify.",
+        "workingOut": "f(-x) = -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-7a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "On the basis of algebraic properties, complete the following sentence: 'A polynomial function is odd if...'",
+    "a": "all its powers of x are odd, and it has no constant term.",
+    "opts": [
+      "all its powers of x are odd, and it has no constant term.",
+      "all its powers of x are even, and it may have a constant.",
+      "it contains both even and odd powers of x.",
+      "the highest power of x is an odd number."
+    ],
+    "h": "Think about what makes $f(-x) = -f(x)$ true for every term.",
+    "s": "For a polynomial to be odd, every term must change sign when $x$ is replaced with $-x$. This only happens if every term has an odd power of $x$, and there is no constant term (which is effectively an even power, $x^0$).",
+    "solutionSteps": [
+      {
+        "explanation": "Rule for odd polynomials.",
+        "workingOut": "f(-x) = -f(x) \\implies \\text{All terms must change sign.}"
+      },
+      {
+        "explanation": "Conclusion.",
+        "workingOut": "\\text{All powers must be odd.}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-7b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "On the basis of algebraic properties, complete the following sentence: 'A polynomial function is even if...'",
+    "a": "all its powers of x are even, and it may have a constant.",
+    "opts": [
+      "all its powers of x are even, and it may have a constant.",
+      "all its powers of x are odd, and it has no constant term.",
+      "it contains both even and odd powers of x.",
+      "the highest power of x is an even number."
+    ],
+    "h": "Think about what makes $f(-x) = f(x)$ true for every term.",
+    "s": "For a polynomial to be even, every term must remain unchanged when $x$ is replaced with $-x$. This only happens if every term has an even power of $x$. A constant term is $cx^0$, which is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Rule for even polynomials.",
+        "workingOut": "f(-x) = f(x) \\implies \\text{All terms must stay the same.}"
+      },
+      {
+        "explanation": "Conclusion.",
+        "workingOut": "\\text{All powers must be even (including } x^0 \\text{).}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-8a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Factor the polynomial $f(x) = x^2 - 16$ and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry for an **even** function.",
+    "a": "Zeroes at x=4, -4. U-shaped parabola symmetric about y-axis.",
+    "opts": [],
+    "h": "Difference of two squares.",
+    "s": "$f(x) = (x - 4)(x + 4)$. Zeroes are $x = 4$ and $x = -4$. The sketch is a parabola symmetric across the $y$-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Factorise.",
+        "workingOut": "x^2 - 16 = (x-4)(x+4)"
+      },
+      {
+        "explanation": "Find zeroes.",
+        "workingOut": "x = 4, -4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-8b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Factor the polynomial $f(x) = x^2 - 4x + 3$ and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry (i.e. **neither** even nor odd).",
+    "a": "Zeroes at x=1, 3. Parabola shifted right, so no y-axis symmetry.",
+    "opts": [],
+    "h": "Find two numbers that multiply to 3 and add to -4.",
+    "s": "$f(x) = (x - 1)(x - 3)$. Zeroes are $x = 1$ and $x = 3$. The vertex is at $x=2$, so it is not symmetric about the $y$-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Factorise.",
+        "workingOut": "x^2 - 4x + 3 = (x-1)(x-3)"
+      },
+      {
+        "explanation": "Find zeroes.",
+        "workingOut": "x = 1, 3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-8c",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Factor the polynomial $f(x) = x^3 - 9x$ and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry for an **odd** function.",
+    "a": "Zeroes at x=0, 3, -3. Rotational symmetry about the origin.",
+    "opts": [],
+    "h": "Factor out $x$ first.",
+    "s": "$f(x) = x(x^2 - 9) = x(x - 3)(x + 3)$. Zeroes are $x = 0, 3, -3$. The graph has point symmetry about the origin.",
+    "solutionSteps": [
+      {
+        "explanation": "Factorise.",
+        "workingOut": "x(x^2 - 9) = x(x-3)(x+3)"
+      },
+      {
+        "explanation": "Find zeroes.",
+        "workingOut": "x = -3, 0, 3"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-8d",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Factor the polynomial $f(x) = x^4 - 16x^2$ and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry for an **even** function.",
+    "a": "Zeroes at x=0 (double root), 4, -4. W-shaped graph symmetric about y-axis.",
+    "opts": [],
+    "h": "Factor out $x^2$.",
+    "s": "$f(x) = x^2(x^2 - 16) = x^2(x - 4)(x + 4)$. Zeroes are $x = 0, 4, -4$. The graph is a W-shape perfectly mirrored across the $y$-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Factorise.",
+        "workingOut": "x^2(x^2 - 16) = x^2(x-4)(x+4)"
+      },
+      {
+        "explanation": "Find zeroes.",
+        "workingOut": "x = -4, 0, 4"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-8e",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Factor the polynomial $f(x) = x^3 + 2x^2$ and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry (**neither** even nor odd).",
+    "a": "Zeroes at x=0 (double root), -2. Curve touches origin and crosses at -2. No symmetry.",
+    "opts": [],
+    "h": "Factor out $x^2$.",
+    "s": "$f(x) = x^2(x + 2)$. Zeroes are $x = 0$ and $x = -2$. The graph is not symmetrical about the $y$-axis or the origin.",
+    "solutionSteps": [
+      {
+        "explanation": "Factorise.",
+        "workingOut": "x^2(x+2)"
+      },
+      {
+        "explanation": "Find zeroes.",
+        "workingOut": "x = 0, -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-8f",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "medium",
+    "q": "Factor the polynomial $f(x) = x^5 - 25x$ and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry for an **odd** function.",
+    "a": "Zeroes at x=0, 5, -5 (plus complex roots). Actually, x(x^4-25)=x(x^2-5)(x^2+5). Roots 0, sqrt(5), -sqrt(5).",
+    "opts": [],
+    "h": "Factor out $x$, then use difference of two squares.",
+    "s": "$f(x) = x(x^4 - 25) = x(x^2 - 5)(x^2 + 5)$. Zeroes are $x = 0$ and $x = \\pm \\sqrt{5}$. It is symmetrical about the origin.",
+    "solutionSteps": [
+      {
+        "explanation": "Factorise.",
+        "workingOut": "x(x^2-5)(x^2+5)"
+      },
+      {
+        "explanation": "Find zeroes.",
+        "workingOut": "x = 0, \\sqrt{5}, -\\sqrt{5}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = \\frac{4^x + 4^{-x}}{2}$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$ for $x$. Note that addition is commutative.",
+    "s": "$f(-x) = \\frac{4^{-x} + 4^{-(-x)}}{2} = \\frac{4^{-x} + 4^x}{2} = f(x)$. Since $f(-x) = f(x)$, it is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\frac{4^{-x} + 4^x}{2}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = \\frac{4^x - 4^{-x}}{2}$$",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$ for $x$. Factor out a $-1$.",
+    "s": "$f(-x) = \\frac{4^{-x} - 4^x}{2} = \\frac{-(4^x - 4^{-x})}{2} = -f(x)$. Since $f(-x) = -f(x)$, it is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\frac{4^{-x} - 4^x}{2}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9c",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = \\sqrt[5]{x}$$",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "The fifth root of a negative number is the negative of the fifth root of the positive number.",
+    "s": "$f(-x) = \\sqrt[5]{-x} = -\\sqrt[5]{x} = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\sqrt[5]{-x} = -\\sqrt[5]{x}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9d",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = (\\sqrt[5]{x})^2$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Square the result from the previous part.",
+    "s": "$f(-x) = (\\sqrt[5]{-x})^2 = (-\\sqrt[5]{x})^2 = (\\sqrt[5]{x})^2 = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = (-\\sqrt[5]{x})^2"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= (\\sqrt[5]{x})^2 = f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9e",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = \\frac{x}{x^2 - 9}$$",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Evaluate numerator and denominator separately with $-x$.",
+    "s": "$f(-x) = \\frac{-x}{(-x)^2 - 9} = \\frac{-x}{x^2 - 9} = -\\frac{x}{x^2 - 9} = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\frac{-x}{x^2 - 9}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9f",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = \\frac{3}{x^2 - 9}$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "What happens to the denominator when $x$ is replaced with $-x$?",
+    "s": "$f(-x) = \\frac{3}{(-x)^2 - 9} = \\frac{3}{x^2 - 9} = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\frac{3}{x^2 - 9}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9g",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = \\sqrt{16 - x^2}$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Squaring a negative number gives a positive result.",
+    "s": "$f(-x) = \\sqrt{16 - (-x)^2} = \\sqrt{16 - x^2} = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\sqrt{16 - x^2}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-9h",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Simplify $f(-x)$ and compare it with $f(x)$ and $-f(x)$ to determine whether the function is even, odd, or neither: $$f(x) = x\\sqrt{16 - x^2}$$",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Evaluate both the $x$ outside and the $x$ inside the square root.",
+    "s": "$f(-x) = -x\\sqrt{16 - (-x)^2} = -x\\sqrt{16 - x^2} = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = -x\\sqrt{16 - x^2}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = 5^x$$",
+    "a": "Neither",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Does $5^{-x}$ equal $5^x$ or $-5^x$?",
+    "s": "$f(-x) = 5^{-x}$. This is neither $5^x$ nor $-5^x$, so it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = 5^{-x}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "f(-x) \\neq f(x) \\text{ and } f(-x) \\neq -f(x) \\implies \\text{Neither}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = 5^{-x}$$",
+    "a": "Neither",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Does $5^x$ equal $5^{-x}$ or $-5^{-x}$?",
+    "s": "$f(-x) = 5^{-(-x)} = 5^x$. This is neither $5^{-x}$ nor $-5^{-x}$, so it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = 5^x"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "f(-x) \\neq f(x) \\text{ and } f(-x) \\neq -f(x) \\implies \\text{Neither}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10c",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = \\sqrt{25 - x^2}$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$.",
+    "s": "$f(-x) = \\sqrt{25 - (-x)^2} = \\sqrt{25 - x^2} = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\sqrt{25 - x^2}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10d",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = \\frac{2}{x^2 + 4}$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$.",
+    "s": "$f(-x) = \\frac{2}{(-x)^2 + 4} = \\frac{2}{x^2 + 4} = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\frac{2}{x^2 + 4}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10e",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = \\frac{3x}{x^2 + 9}$$",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Substitute $-x$.",
+    "s": "$f(-x) = \\frac{3(-x)}{(-x)^2 + 9} = \\frac{-3x}{x^2 + 9} = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = \\frac{-3x}{x^2 + 9}"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10f",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = 4^x + 4^{-x}$$",
+    "a": "Even",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Addition is commutative.",
+    "s": "$f(-x) = 4^{-x} + 4^{-(-x)} = 4^{-x} + 4^x = f(x)$. Thus, the function is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = 4^{-x} + 4^x"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= f(x) \\implies \\text{Even}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10g",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = 4^x - 4^{-x}$$",
+    "a": "Odd",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Factor out $-1$.",
+    "s": "$f(-x) = 4^{-x} - 4^x = -(4^x - 4^{-x}) = -f(x)$. Thus, the function is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = 4^{-x} - 4^x"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "= -(4^x - 4^{-x}) = -f(x) \\implies \\text{Odd}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-10h",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Determine whether the function is even, odd, or neither: $$f(x) = 4^x + x^3$$",
+    "a": "Neither",
+    "opts": [
+      "Even",
+      "Odd",
+      "Neither"
+    ],
+    "h": "Does $f(-x)$ perfectly equal $f(x)$ or $-f(x)$?",
+    "s": "$f(-x) = 4^{-x} + (-x)^3 = 4^{-x} - x^3$. This is neither equal to $f(x)$ nor $-f(x)$. Thus, it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute -x.",
+        "workingOut": "f(-x) = 4^{-x} - x^3"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "\\text{Neither}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-11a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Show algebraically that the function $f(x) = x^2 - 4x - 5$ is neither even nor odd.",
+    "a": "See solution steps.",
+    "opts": [],
+    "h": "Evaluate $f(-x)$ and compare it to $f(x)$ and $-f(x)$.",
+    "s": "$f(-x) = (-x)^2 - 4(-x) - 5 = x^2 + 4x - 5$. This is not equal to $f(x) = x^2 - 4x - 5$, nor is it equal to $-f(x) = -x^2 + 4x + 5$. Therefore, it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate f(-x).",
+        "workingOut": "f(-x) = x^2 + 4x - 5"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "\\text{Neither equal to } f(x) \\text{ nor } -f(x)."
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-11b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "For the function $f(x) = x^2 - 4x - 5$, let $g(x) = \\frac{1}{2}(f(x) + f(-x))$. Determine the expression for $g(x)$ and prove that it is an even function.",
+    "a": "g(x) = x^2 - 5. It is even because g(-x) = g(x).",
+    "opts": [],
+    "h": "Substitute the expressions for $f(x)$ and $f(-x)$ into the definition of $g(x)$.",
+    "s": "$g(x) = \\frac{1}{2}(x^2 - 4x - 5 + x^2 + 4x - 5) = \\frac{1}{2}(2x^2 - 10) = x^2 - 5$. \\n$g(-x) = (-x)^2 - 5 = x^2 - 5 = g(x)$. Thus, $g(x)$ is even.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate g(x).",
+        "workingOut": "g(x) = \\frac{1}{2}(2x^2 - 10) = x^2 - 5"
+      },
+      {
+        "explanation": "Show it is even.",
+        "workingOut": "g(-x) = (-x)^2 - 5 = x^2 - 5 = g(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-11c",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "For the function $f(x) = x^2 - 4x - 5$, let $h(x) = \\frac{1}{2}(f(x) - f(-x))$. Determine the expression for $h(x)$ and prove that it is an odd function.",
+    "a": "h(x) = -4x. It is odd because h(-x) = -h(x).",
+    "opts": [],
+    "h": "Substitute the expressions for $f(x)$ and $f(-x)$ into the definition of $h(x)$.",
+    "s": "$h(x) = \\frac{1}{2}((x^2 - 4x - 5) - (x^2 + 4x - 5)) = \\frac{1}{2}(-8x) = -4x$. \\n$h(-x) = -4(-x) = 4x = -(-4x) = -h(x)$. Thus, $h(x)$ is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate h(x).",
+        "workingOut": "h(x) = \\frac{1}{2}(-8x) = -4x"
+      },
+      {
+        "explanation": "Show it is odd.",
+        "workingOut": "h(-x) = -4(-x) = 4x = -h(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-11d",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Suppose that $f(x)$ is replaced with a general cubic polynomial $f(x) = ax^3 + bx^2 + cx + d$. Let $g(x) = \\frac{1}{2}(f(x) + f(-x))$ and $h(x) = \\frac{1}{2}(f(x) - f(-x))$. Will $g(x)$ still be even and will $h(x)$ still be odd? Show your working.",
+    "a": "Yes. g(x) = bx^2 + d (even) and h(x) = ax^3 + cx (odd).",
+    "opts": [],
+    "h": "Evaluate $f(-x) = -ax^3 + bx^2 - cx + d$. Then find $g(x)$ and $h(x)$.",
+    "s": "$f(x) = ax^3 + bx^2 + cx + d$. $f(-x) = -ax^3 + bx^2 - cx + d$. \\n$g(x) = \\frac{1}{2}(2bx^2 + 2d) = bx^2 + d$, which has only even powers and is therefore even. \\n$h(x) = \\frac{1}{2}(2ax^3 + 2cx) = ax^3 + cx$, which has only odd powers and is therefore odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Find f(-x).",
+        "workingOut": "f(-x) = -ax^3 + bx^2 - cx + d"
+      },
+      {
+        "explanation": "Find g(x).",
+        "workingOut": "g(x) = bx^2 + d \\text{ (even)}"
+      },
+      {
+        "explanation": "Find h(x).",
+        "workingOut": "h(x) = ax^3 + cx \\text{ (odd)}"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-11e",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Generalise the result from the previous parts for *any* function $f(x)$. Prove that $g(x) = \\frac{1}{2}(f(x) + f(-x))$ is always even, and $h(x) = \\frac{1}{2}(f(x) - f(-x))$ is always odd.",
+    "a": "Proof provided in solution steps.",
+    "opts": [],
+    "h": "To prove $g(x)$ is even, show $g(-x) = g(x)$. To prove $h(x)$ is odd, show $h(-x) = -h(x)$.",
+    "s": "$g(-x) = \\frac{1}{2}(f(-x) + f(-(-x))) = \\frac{1}{2}(f(-x) + f(x)) = g(x)$. Thus $g$ is even. \\n$h(-x) = \\frac{1}{2}(f(-x) - f(-(-x))) = \\frac{1}{2}(f(-x) - f(x)) = -\\frac{1}{2}(f(x) - f(-x)) = -h(x)$. Thus $h$ is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Prove g is even.",
+        "workingOut": "g(-x) = \\frac{1}{2}(f(-x) + f(x)) = g(x)"
+      },
+      {
+        "explanation": "Prove h is odd.",
+        "workingOut": "h(-x) = \\frac{1}{2}(f(-x) - f(x)) = -h(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-12a",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Prove algebraically that if $f(x)$ is an odd function and is defined at $x = 0$, then the graph of $y = f(x)$ must pass through the origin.",
+    "a": "Proof provided in solution steps.",
+    "opts": [],
+    "h": "Apply the condition for a function to be odd ($f(-x) = -f(x)$) specifically at $x = 0$.",
+    "s": "Since $f(x)$ is odd, $f(-x) = -f(x)$ for all $x$ in its domain. \\nLet $x = 0$. Then $f(-0) = -f(0) \\implies f(0) = -f(0)$. \\nAdding $f(0)$ to both sides gives $2f(0) = 0 \\implies f(0) = 0$. \\nTherefore, the graph passes through $(0,0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Use odd property at x=0.",
+        "workingOut": "f(-0) = -f(0)"
+      },
+      {
+        "explanation": "Solve for f(0).",
+        "workingOut": "f(0) = -f(0) \\implies 2f(0) = 0 \\implies f(0) = 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-12b",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "If $f(x)$ is an even function defined at $x = 0$, does the graph of $y = f(x)$ have to pass through the origin? Either prove that it does or give a counter-example.",
+    "a": "No. Counter-example: f(x) = x^2 + 1.",
+    "opts": [],
+    "h": "Think of the simplest even functions you know, like parabolas.",
+    "s": "No, it does not have to pass through the origin. \\nA simple counter-example is $f(x) = x^2 + 1$. \\nThis function is even because $f(-x) = (-x)^2 + 1 = x^2 + 1 = f(x)$. However, $f(0) = 1 \\neq 0$, so it does not pass through the origin.",
+    "solutionSteps": [
+      {
+        "explanation": "State answer.",
+        "workingOut": "No."
+      },
+      {
+        "explanation": "Provide counter-example.",
+        "workingOut": "f(x) = x^2 + 1 \\text{ is even but } f(0) = 1 \\neq 0"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-13a-i",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Suppose that $h(x) = f(x) \\times g(x)$. Show that if $f$ and $g$ are both even, or if they are both odd, then $h(x)$ is an even function.",
+    "a": "Proof provided in solution steps.",
+    "opts": [],
+    "h": "Evaluate $h(-x) = f(-x) \\times g(-x)$ for both cases.",
+    "s": "**Case 1: Both even.** \\n$h(-x) = f(-x)g(-x) = f(x)g(x) = h(x)$. Thus $h$ is even.\\n**Case 2: Both odd.** \\n$h(-x) = f(-x)g(-x) = (-f(x))(-g(x)) = f(x)g(x) = h(x)$. Thus $h$ is also even.",
+    "solutionSteps": [
+      {
+        "explanation": "Case: Both even.",
+        "workingOut": "h(-x) = f(x)g(x) = h(x)"
+      },
+      {
+        "explanation": "Case: Both odd.",
+        "workingOut": "h(-x) = (-f(x))(-g(x)) = f(x)g(x) = h(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-13a-ii",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Suppose that $h(x) = f(x) \\times g(x)$. Show that if one of $f(x)$ and $g(x)$ is even and the other is odd, then $h(x)$ is an odd function.",
+    "a": "Proof provided in solution steps.",
+    "opts": [],
+    "h": "Assume $f$ is even and $g$ is odd, then evaluate $h(-x)$.",
+    "s": "Assume without loss of generality that $f$ is even and $g$ is odd. Then $f(-x) = f(x)$ and $g(-x) = -g(x)$. \\n$h(-x) = f(-x)g(-x) = f(x)(-g(x)) = -f(x)g(x) = -h(x)$. \\nThus, $h$ is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate h(-x).",
+        "workingOut": "h(-x) = f(x)(-g(x)) = -f(x)g(x) = -h(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-13b-i",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Suppose that $h(x) = f(x) + g(x)$. Show that if $f(x)$ and $g(x)$ are both even functions, then their sum $h(x)$ is also an even function.",
+    "a": "Proof provided in solution steps.",
+    "opts": [],
+    "h": "Evaluate $h(-x) = f(-x) + g(-x)$ given the even properties.",
+    "s": "Since $f$ and $g$ are both even, $f(-x) = f(x)$ and $g(-x) = g(x)$. \\n$h(-x) = f(-x) + g(-x) = f(x) + g(x) = h(x)$. \\nThus, $h$ is an even function.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate h(-x).",
+        "workingOut": "h(-x) = f(x) + g(x) = h(x)"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5C-new-13b-ii",
+    "c": "5C",
+    "t": "Even and Odd Symmetry",
+    "type": "graph_sketch",
+    "difficulty": "hard",
+    "q": "Suppose that $h(x) = f(x) + g(x)$. Show that if $f(x)$ and $g(x)$ are both odd functions, then their sum $h(x)$ is also an odd function.",
+    "a": "Proof provided in solution steps.",
+    "opts": [],
+    "h": "Evaluate $h(-x) = f(-x) + g(-x)$ given the odd properties.",
+    "s": "Since $f$ and $g$ are both odd, $f(-x) = -f(x)$ and $g(-x) = -g(x)$. \\n$h(-x) = f(-x) + g(-x) = -f(x) - g(x) = -(f(x) + g(x)) = -h(x)$. \\nThus, $h$ is an odd function.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate h(-x).",
+        "workingOut": "h(-x) = -f(x) - g(x) = -(f(x)+g(x)) = -h(x)"
+      }
+    ]
   }
 ];
