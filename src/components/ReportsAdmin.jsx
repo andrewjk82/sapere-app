@@ -7,6 +7,7 @@ import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardC
 import QuestionBankModal from './QuestionBankModal';
 import MathView from './MathView';
 import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
+import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 
 const ReportsAdmin = () => {
   const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
@@ -860,12 +861,10 @@ const ReportsAdmin = () => {
                     </div>
                   )}
 
-                  {/* Solution */}
-                  {q.solution && (
-                    <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
-                      <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#15803d', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '8px' }}>Solution</div>
-                      <MathView content={q.solution} style={{ color: '#166534', fontWeight: 700, fontSize: '0.95rem' }} />
-                    </div>
+                  {/* Solution — step-by-step when the question has solutionSteps,
+                      otherwise a single block. Same renderer the students see. */}
+                  {(q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
+                    <WorkedSolutionSteps question={q} graphData={q.graphData} />
                   )}
                 </div>
 
