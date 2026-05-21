@@ -131,11 +131,23 @@ function summarize(days, dailyByDate, calcByDate) {
     .sort((a, b) => b.errorRate - a.errorRate)
     .slice(0, 4);
 
+  // Full per-topic breakdown — every topic the student attempted this week,
+  // with how many questions were solved and how many were correct.
+  const topicBreakdown = Object.entries(topics)
+    .map(([label, t]) => ({
+      label,
+      total: t.total,
+      correct: t.total - t.wrong,
+      accuracy: Math.round(((t.total - t.wrong) / t.total) * 100),
+    }))
+    .sort((a, b) => b.total - a.total || a.label.localeCompare(b.label));
+
   return {
     challengesCompleted,
     accuracy,
     xpEarned,
     weakTopics,
+    topicBreakdown,
     hasAttempts: totalSum > 0,
   };
 }
@@ -323,6 +335,34 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
     challengeHtml += `<div style="height:14px;"></div>` + miniLabel('Calculation sprint') + dayGrid(days, calcByDate);
   }
 
+  // ── Topic breakdown — solved / correct per topic ──
+  let topicHtml = '';
+  if (s.topicBreakdown.length > 0) {
+    const headCell = (txt, align) =>
+      `<td align="${align}" style="padding:10px 14px;font-size:10px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:${C.muted};white-space:nowrap;background:#f8fafc;">${txt}</td>`;
+    const rows = s.topicBreakdown.map((t, i) => {
+      const last = i === s.topicBreakdown.length - 1;
+      const border = last ? '' : `border-bottom:1px solid ${C.lineSoft};`;
+      const accColor = t.accuracy >= 80 ? '#16a34a' : t.accuracy >= 50 ? '#d97706' : '#dc2626';
+      return `<tr>
+        <td style="padding:11px 14px;font-size:13px;font-weight:600;color:${C.ink};${border}">${esc(t.label)}</td>
+        <td align="center" style="padding:11px 10px;font-size:13px;font-weight:700;color:${C.sub};${border}">${t.total}</td>
+        <td align="center" style="padding:11px 10px;font-size:13px;font-weight:700;color:${C.sub};${border}">${t.correct}</td>
+        <td align="right" style="padding:11px 14px;font-size:13px;font-weight:800;color:${accColor};${border}">${t.accuracy}%</td>
+      </tr>`;
+    }).join('');
+    topicHtml = sectionLabel('Topic breakdown') +
+      `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid ${C.line};border-radius:12px;border-collapse:separate;">
+        <tr>
+          ${headCell('Topic', 'left')}
+          ${headCell('Solved', 'center')}
+          ${headCell('Correct', 'center')}
+          ${headCell('Accuracy', 'right')}
+        </tr>
+        ${rows}
+      </table>`;
+  }
+
   // ── Focus areas ──
   let focusHtml = '';
   if (s.weakTopics.length > 0) {
@@ -349,6 +389,7 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
     ${lessonsHtml}
     ${sectionLabel('Challenge record')}
     ${challengeHtml}
+    ${topicHtml}
     ${focusHtml}
     <p style="margin:32px 0 0;font-size:13.5px;color:#475569;line-height:1.6;">${closing}</p>`;
 
