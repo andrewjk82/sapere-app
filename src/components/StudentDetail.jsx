@@ -704,6 +704,25 @@ const StudentDetail = ({ studentId, onBack }) => {
       selectedChallenge.statCollection ||
       (selectedChallenge.challengeType === "calc" ? "calc_stats" : "daily_stats");
 
+    // The challenge record may have come from the teacher's collection
+    // (students/ or users/) OR from the linked registered account
+    // (users/{registeredUid}) — the stats listener tags each with `_source`.
+    // The detail snapshot lives next to wherever the record was written, so
+    // we must read from the SAME path. We try the source-appropriate path
+    // first, then fall back to the other so older / mistagged records still
+    // resolve.
+    const candidatePaths = [];
+    const primaryPath = [activeStudentCollection, activeStudentId];
+    const registeredPath = challengeResultsUid ? ["users", challengeResultsUid] : null;
+    if (selectedChallenge._source === "registered" && registeredPath) {
+      candidatePaths.push(registeredPath, primaryPath);
+    } else {
+      candidatePaths.push(primaryPath);
+      if (registeredPath && registeredPath[1] !== activeStudentId) {
+        candidatePaths.push(registeredPath);
+      }
+    }
+
     (async () => {
       // Always resolve the loading state — otherwise the modal spinner hangs
       // forever when the detail snapshot is missing or the read fails.
@@ -711,25 +730,20 @@ const StudentDetail = ({ studentId, onBack }) => {
         prev && prev.id === statId ? { ...prev, detailSnapshotLoaded: true } : prev,
       );
       try {
-        const snap = await getDoc(
-          doc(
-            db,
-            activeStudentCollection,
-            activeStudentId,
-            statCollection,
-            statId,
-            "detail_snapshot",
-            "main",
-          ),
-        );
-        if (cancelled) return;
-        if (!snap.exists()) {
-          // Flag said a snapshot exists but the document is missing
-          // (e.g. the detail save failed after the quiz). Stop the spinner.
+        let data = null;
+        for (const [coll, id] of candidatePaths) {
+          const snap = await getDoc(
+            doc(db, coll, id, statCollection, statId, "detail_snapshot", "main"),
+          );
+          if (cancelled) return;
+          if (snap.exists()) { data = snap.data(); break; }
+        }
+        if (!data) {
+          // Flag said a snapshot exists but no document was found on any
+          // path (e.g. the detail save failed after the quiz). Stop the spinner.
           markLoaded();
           return;
         }
-        const data = snap.data();
         setSelectedChallenge((prev) => {
           if (!prev || prev.id !== statId) return prev;
           return {
@@ -749,7 +763,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     return () => {
       cancelled = true;
     };
-  }, [selectedChallenge, activeStudentCollection, activeStudentId]);
+  }, [selectedChallenge, activeStudentCollection, activeStudentId, challengeResultsUid]);
 
   useEffect(() => {
     if (!selectedChallenge || !activeStudentId) return;
@@ -769,19 +783,33 @@ const StudentDetail = ({ studentId, onBack }) => {
       );
     if (missingWorkingOut.length === 0) return;
 
+    // Working-out images sit next to the challenge record — use the same
+    // source path the record came from (see detail-snapshot effect above).
+    const woPrimary = [activeStudentCollection, activeStudentId];
+    const woRegistered = challengeResultsUid ? ["users", challengeResultsUid] : null;
+    const woCandidates = [];
+    if (selectedChallenge._source === "registered" && woRegistered) {
+      woCandidates.push(woRegistered, woPrimary);
+    } else {
+      woCandidates.push(woPrimary);
+      if (woRegistered && woRegistered[1] !== activeStudentId) woCandidates.push(woRegistered);
+    }
+
     let cancelled = false;
     (async () => {
       const loaded = await Promise.all(
         missingWorkingOut.map(async ({ idx }) => {
-          try {
-            const snap = await getDoc(
-              doc(db, activeStudentCollection, activeStudentId, statCollection, statId, "working_out", String(idx)),
-            );
-            return snap.exists() ? { idx, data: snap.data() } : null;
-          } catch (err) {
-            console.warn(`Working out load failed for question ${idx}:`, err.code || err);
-            return null;
+          for (const [coll, id] of woCandidates) {
+            try {
+              const snap = await getDoc(
+                doc(db, coll, id, statCollection, statId, "working_out", String(idx)),
+              );
+              if (snap.exists()) return { idx, data: snap.data() };
+            } catch (err) {
+              console.warn(`Working out load failed for question ${idx}:`, err.code || err);
+            }
           }
+          return null;
         }),
       );
       if (cancelled) return;
@@ -809,7 +837,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     return () => {
       cancelled = true;
     };
-  }, [selectedChallenge, activeStudentCollection, activeStudentId]);
+  }, [selectedChallenge, activeStudentCollection, activeStudentId, challengeResultsUid]);
 
   useEffect(() => {
     if (!activeStudentId || !student?.id) return;
