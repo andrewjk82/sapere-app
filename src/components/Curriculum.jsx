@@ -14,6 +14,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
+import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import {
@@ -465,6 +466,122 @@ const Curriculum = () => {
     } catch (err) {
       console.error(err);
       showToast("Failed to seed Whole Number questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedFractionsQuestions = async () => {
+    if (!window.confirm("This will replace all existing questions for Year 6 Fractions with the latest questions, and ensure the curriculum chapter is present. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, getDoc, setDoc, serverTimestamp } = await import('firebase/firestore');
+      
+      // 1. Ensure the curriculum chapter exists in curriculum/Year_6
+      const curDocRef = doc(db, 'curriculum', 'Year_6');
+      const curSnap = await getDoc(curDocRef);
+      let chapters = [];
+      if (curSnap.exists()) {
+        chapters = curSnap.data().chapters || [];
+      }
+      
+      // Check if y6-frac is in chapters, and prepend/replace it
+      const y6Data = CURRICULUM_DATA['Year 6'] || [];
+      const fracChapter = y6Data.find(c => c.id === 'y6-frac');
+      if (fracChapter) {
+        chapters = [fracChapter, ...chapters.filter(c => c.id !== 'y6-frac')];
+      }
+
+      await setDoc(curDocRef, {
+        id: 'Year_6',
+        year: 'Year 6',
+        course: null,
+        chapters,
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+      
+      const metaRef = doc(db, 'sync_meta', 'curriculum');
+      await setDoc(metaRef, { 
+        version: Date.now(),
+        lastUpdated: serverTimestamp() 
+      }, { merge: true });
+
+      // Clear local cache for curriculum
+      localCache.remove(CURRICULUM_CACHE_KEY);
+
+      // Update local state directly so it re-renders immediately
+      setCurriculumRecords(prev => {
+        const index = prev.findIndex(r => r.id === 'Year_6');
+        if (index >= 0) {
+          const updated = [...prev];
+          updated[index] = { ...updated[index], chapters, updatedAt: new Date().toISOString() };
+          return updated;
+        } else {
+          return [...prev, { id: 'Year_6', year: 'Year 6', course: null, chapters, updatedAt: new Date().toISOString() }];
+        }
+      });
+
+      // 2. Clear existing questions for y6-frac
+      const collRef = collection(db, 'questions');
+      const q = query(collRef, where('chapterId', '==', 'y6-frac'));
+      const snap = await getDocs(q);
+      const deleteBatch = writeBatch(db);
+      snap.docs.forEach(d => deleteBatch.delete(d.ref));
+      await deleteBatch.commit();
+
+      // 3. Add the questions
+      const addBatch = writeBatch(db);
+      
+      FRACTION_QUESTIONS_Y6.forEach(qData => {
+        const docRef = doc(collRef);
+        let optionsField = [];
+        let answerField = "";
+        
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: "" }));
+          answerField = correctIndex.toString();
+        } else {
+          optionsField = [];
+          answerField = qData.a;
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y6-frac',
+          chapterTitle: 'Chapter 2: Fractions',
+          topicId: 'y6-frac-' + qData.c.slice(-1),
+          topicCode: qData.c,
+          topicTitle: qData.t,
+          isManual: true,
+          title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q,
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type,
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || "",
+          solution: qData.s || "",
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        });
+      });
+      
+      await addBatch.commit();
+      showToast(`Successfully updated ${FRACTION_QUESTIONS_Y6.length} Fraction questions and synced curriculum!`, 'success');
+      
+      // Update cache locally
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y6-frac'] = FRACTION_QUESTIONS_Y6.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts(cached.counts);
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Fraction questions.", 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -946,6 +1063,28 @@ const Curriculum = () => {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                               <span className="sync-card-status">Active ({questionCounts['y6-wn']} Qs)</span>
                               <button onClick={handleSeedWholeNumbersQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 6 Fractions */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y6">Y6 Frac</span>
+                          <span className="sync-card-title">Fractions (Seed Y6)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y6-frac'] ? (
+                            <button onClick={handleSeedFractionsQuestions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y6 Frac
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y6-frac']} Qs)</span>
+                              <button onClick={handleSeedFractionsQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
                                 Re-seed
                               </button>
                             </div>

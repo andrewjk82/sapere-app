@@ -907,6 +907,17 @@ export const CURRICULUM_DATA = {
       ]
     },
     {
+      id: 'y6-frac',
+      title: 'Fractions',
+      modules: 4,
+      topics: [
+        { id: 'y6-frac-1', code: 'FRAC1', title: 'Basic Fractions and Equivalent Fractions: Understanding basic fractions, shaded regions, equivalent fractions, and simplifying fractions.' },
+        { id: 'y6-frac-2', code: 'FRAC2', title: 'Mixed Numerals and Improper Fractions: Converting between mixed and improper fractions, and comparing fractions.' },
+        { id: 'y6-frac-3', code: 'FRAC3', title: 'Fraction Operations: Adding, subtracting, and multiplying proper and mixed fractions.' },
+        { id: 'y6-frac-4', code: 'FRAC4', title: 'Fraction Word Problems: Solving real-world problems involving fractions and fractional units.' }
+      ]
+    },
+    {
       id: 'y6-rn',
       title: 'Represents Numbers (B)',
       modules: 4,
