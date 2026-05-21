@@ -126,13 +126,13 @@ function useTypewriter(text, { startDelay = 0, charInterval = 38 } = {}) {
   return { displayed, done };
 }
 
-const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = '', onDone }) => {
+const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = '', course = '', onDone }) => {
   const greetingText = `${greeting},`;
   // Name starts after: initial delay + all greeting chars have appeared
   const nameDelay = 0.2 + greetingText.length * 0.08;
 
   // Pick one random concept once on mount
-  const concept = useMemo(() => getRandomConcept(yearLevel), [yearLevel]);
+  const concept = useMemo(() => getRandomConcept(yearLevel, course), [yearLevel, course]);
 
   // Concept typewriter starts after greeting + name animation finishes
   const conceptStartDelay = Math.round((nameDelay + name.length * 0.08 + 0.6) * 1000);
@@ -554,6 +554,13 @@ function App() {
     return profile?.year || '';
   }, [isAdmin, profile?.year]);
 
+  // Stage 6 course (Standard / Advanced / Extension 1 / Extension 2) so the
+  // key concept matches a Year 11/12 student's actual course.
+  const introCourse = useMemo(() => {
+    if (isAdmin) return '';
+    return profile?.assignedCourse || profile?.course || '';
+  }, [isAdmin, profile?.assignedCourse, profile?.course]);
+
   useEffect(() => {
     if (!user?.uid) {
       setShowOpeningIntro(false);
@@ -570,7 +577,7 @@ function App() {
     if (!showOpeningIntro) return undefined;
     // Duration: greeting + name animation + concept typewriter + reading time
     const greetingAnimMs = (introGreeting.length + introName.length) * 80 + 600;
-    const concept = getRandomConcept(introYearLevel);
+    const concept = getRandomConcept(introYearLevel, introCourse);
     const conceptMs = concept.length * 28 + 1800; // typing time + reading pause
     const messageDuration = greetingAnimMs + conceptMs;
     const timer = window.setTimeout(() => {
@@ -872,6 +879,7 @@ function App() {
             name={introName}
             greeting={introGreeting}
             yearLevel={introYearLevel}
+            course={introCourse}
             onDone={() => setShowOpeningIntro(false)}
           />
         )}
