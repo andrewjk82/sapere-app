@@ -17,9 +17,24 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   const [profileStudent, setProfileStudent] = useState(null);
   const [completionStates, setCompletionStates] = useState({}); // { studentId: 'pending' | 'done' | 'ended' }
   const [reviewPendingStates, setReviewPendingStates] = useState({});
+  const [weeklyActivity, setWeeklyActivity] = useState({}); // { studentId: number of days practised this week }
 
   const todayStr = new Date().toLocaleDateString('en-CA'); // Local YYYY-MM-DD, avoids UTC timezone shift
   const COMPLETION_REFRESH_TTL_MS = 5 * 60 * 1000;
+
+  // Mon→Sun date strings for the current week (local, YYYY-MM-DD).
+  const weekDates = useMemo(() => {
+    const now = new Date();
+    const dow = now.getDay(); // 0 = Sun
+    const mondayOffset = dow === 0 ? -6 : 1 - dow;
+    const dates = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(now);
+      d.setDate(now.getDate() + mondayOffset + i);
+      dates.push(d.toLocaleDateString('en-CA'));
+    }
+    return dates;
+  }, [todayStr]);
 
   // Build a stable ID-list from `students` so the effect doesn't re-run every
   // time the parent passes in a new array reference with the same contents.
@@ -108,6 +123,33 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
     };
   }, [studentSig]);
 
+  // Weekly activity — how many days this week each student did a challenge.
+  // 7 reads total (one admin_daily_summary doc per day), not 7 per student.
+  React.useEffect(() => {
+    if (!students || students.length === 0) return;
+    let cancelled = false;
+    (async () => {
+      const snaps = await Promise.all(
+        weekDates.map((d) => getDoc(doc(db, 'admin_daily_summary', d)).catch(() => null)),
+      );
+      if (cancelled) return;
+      const counts = {};
+      students.forEach((s) => { counts[s.id] = 0; });
+      snaps.forEach((snap) => {
+        if (!snap || !snap.exists()) return;
+        const summary = snap.data().students || {};
+        students.forEach((s) => {
+          const item = summary[s.id];
+          if (item && (item.dailyDone || item.calcDone || item.dailyEnded || item.calcEnded)) {
+            counts[s.id] = (counts[s.id] || 0) + 1;
+          }
+        });
+      });
+      setWeeklyActivity(counts);
+    })();
+    return () => { cancelled = true; };
+  }, [studentSig]);
+
   const handleManualRefresh = async () => {
     setIsRefreshing(true);
     try {
@@ -165,136 +207,89 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
             const isMenuOpen = activeMenuId === student.id;
             // Prioritize dreamImageUrl (photo) > avatarUrl > Dicebear fallback
             const studentImage = student.dreamImageUrl || student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.name || student.id)}`;
-            
+
+            const isActive = (student.status || 'Active') === 'Active';
+            // Normalise the year label — some records store just "9".
+            const rawLevel = String(student.level || '').trim();
+            const yearLabel = rawLevel
+              ? (/^\d+$/.test(rawLevel) ? `Year ${rawLevel}` : rawLevel)
+              : '';
+            const schoolLabel = student.school || student.subject || '';
+            const metaLine = [yearLabel, schoolLabel].filter(Boolean).join(' · ');
+
+            const todayState = completionStates[student.id] || 'pending';
+            const today = todayState === 'done'
+              ? { color: '#22c55e', label: 'Completed' }
+              : todayState === 'ended'
+                ? { color: '#f97316', label: 'Ended early' }
+                : { color: '#cbd5e1', label: 'Not started' };
+            const weekCount = Math.min(7, weeklyActivity[student.id] || 0);
+            const xpLabel = (student.totalXP || 0).toLocaleString();
+
+            const tileStyle = { flex: 1, minWidth: 0, background: '#f8fafc', borderRadius: '13px', padding: '10px 12px' };
+            const tileLabelStyle = { fontSize: '0.58rem', fontWeight: 800, letterSpacing: '0.09em', textTransform: 'uppercase', color: '#94a3b8' };
+
             return (
-              <motion.div 
+              <motion.div
                 key={student.id}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
+                transition={{ delay: index * 0.04 }}
                 className="app-panel student-card"
-                style={{ position: 'relative' }}
+                style={{
+                  position: 'relative',
+                  padding: '18px 20px',
+                  borderRadius: '22px',
+                  background: '#fff',
+                  border: '1px solid rgba(15,23,42,0.06)',
+                  boxShadow: '0 4px 18px rgba(15,23,42,0.04)',
+                }}
               >
-                <div className="student-card__top">
-                  <div className="student-card__main">
-                    <div
-                      className="student-card__avatar"
-                      style={{ 
-                        width: '70px', 
-                        height: '70px', 
-                        borderRadius: '18px', 
-                        overflow: 'hidden', 
-                        background: '#f8fafc',
-                        border: '1px solid rgba(0,0,0,0.05)'
-                      }}
-                    >
-                      <img 
-                        src={studentImage} 
-                        alt={student.name} 
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                      />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                        <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>{student.name}</h3>
-                        <span className={`status-badge status-badge--sm ${
-                          student.status === 'Active' ? 'status-badge--active' : 'status-badge--inactive'
-                        }`} style={{ fontSize: '0.65rem', padding: '2px 8px' }}>
-                          {student.status || 'Active'}
-                        </span>
-                        {completionStates[student.id] === 'done' && (
-                          <div 
-                            title="Today's required challenges completed"
-                            style={{ 
-                              display: 'flex', 
-                              alignItems: 'center', 
-                              gap: '4px', 
-                              background: '#f0fdf4', 
-                              color: '#16a34a', 
-                              padding: '2px 8px', 
-                              borderRadius: '8px', 
-                              fontSize: '0.65rem', 
-                              fontWeight: 900,
-                              border: '1px solid #dcfce7'
-                            }}
-                          >
-                            <CheckCircle size={10} />
-                            DONE
-                          </div>
-                        )}
-                        {completionStates[student.id] === 'ended' && (
-                          <div 
-                            title="Today's challenge was started but ended before completion"
-                            style={{ 
-                              display: 'flex', 
-                              alignItems: 'center', 
-                              gap: '4px', 
-                              background: '#fff7ed', 
-                              color: '#ea580c', 
-                              padding: '2px 8px', 
-                              borderRadius: '8px', 
-                              fontSize: '0.65rem', 
-                              fontWeight: 900,
-                              border: '1px solid #fed7aa'
-                            }}
-                          >
-                            <AlertCircle size={10} />
-                            ENDED
-                          </div>
-                        )}
-                        {completionStates[student.id] !== 'done' && completionStates[student.id] !== 'ended' && reviewPendingStates[student.id] === true && (
-                          <div 
-                            title="Manual review pending"
-                            style={{ 
-                              display: 'flex', 
-                              alignItems: 'center', 
-                              gap: '4px', 
-                              background: '#fff1f2', 
-                              color: '#f43f5e', 
-                              padding: '2px 8px', 
-                              borderRadius: '8px', 
-                              fontSize: '0.65rem', 
-                              fontWeight: 900,
-                              border: '1px solid #fecaca'
-                            }}
-                          >
-                            <AlertCircle size={10} />
-                            PENDING
-                          </div>
-                        )}
-                      </div>
-                      <p className="student-card__meta" style={{ marginBottom: '10px', fontSize: '0.85rem' }}>{student.level} • {student.school || student.subject}</p>
-                      
-                      <div className="student-card__progress-wrapper" style={{ 
-                        background: 'rgba(99, 102, 241, 0.05)', 
-                        padding: '6px 12px', 
-                        borderRadius: '10px', 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        gap: '10px',
-                        border: '1px solid rgba(99, 102, 241, 0.1)'
-                      }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#f59e0b' }}>
-                          <Trophy size={14} />
-                          <span style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.85rem' }}>
-                            {student.totalXP ? student.totalXP.toLocaleString() : '0'} XP
-                          </span>
-                        </div>
-                        <div className="student-card__progress-track" style={{ flex: 1, height: '6px', background: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
-                          <div className="student-card__progress-fill" style={{ 
-                            width: `${(student.totalXP || 0) % 1000 / 10}%`, 
-                            height: '100%', 
-                            background: 'linear-gradient(90deg, #818cf8, #a78bfa)', 
-                            borderRadius: '3px' 
-                          }}></div>
-                        </div>
-                      </div>
-                    </div>
+                {/* Top — avatar, name, meta, menu */}
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
+                  <div
+                    style={{
+                      width: '58px', height: '58px', borderRadius: '15px',
+                      overflow: 'hidden', background: '#f8fafc',
+                      border: '1px solid rgba(15,23,42,0.05)', flexShrink: 0,
+                    }}
+                  >
+                    <img src={studentImage} alt={student.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
-                  
+
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>{student.name}</h3>
+                      <span style={{
+                        display: 'inline-flex', alignItems: 'center', gap: '5px',
+                        fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase',
+                        padding: '3px 9px', borderRadius: '999px',
+                        background: isActive ? '#f0fdf4' : '#f1f5f9',
+                        color: isActive ? '#16a34a' : '#94a3b8',
+                      }}>
+                        <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: isActive ? '#22c55e' : '#cbd5e1' }} />
+                        {student.status || 'Active'}
+                      </span>
+                      {reviewPendingStates[student.id] === true && (
+                        <span title="A manual review is waiting" style={{
+                          display: 'inline-flex', alignItems: 'center', gap: '4px',
+                          fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase',
+                          padding: '3px 9px', borderRadius: '999px', background: '#fff1f2', color: '#e11d48',
+                        }}>
+                          <AlertCircle size={10} /> Review
+                        </span>
+                      )}
+                    </div>
+                    {metaLine && (
+                      <p style={{ margin: '5px 0 0', fontSize: '0.83rem', fontWeight: 600, color: '#94a3b8' }}>
+                        {metaLine}
+                      </p>
+                    )}
+                  </div>
+
                   <div style={{ position: 'relative' }}>
-                    <button 
-                      className="app-icon-button" 
+                    <button
+                      className="app-icon-button"
                       onClick={(e) => {
                         e.stopPropagation();
                         setActiveMenuId(activeMenuId === student.id ? null : student.id);
@@ -306,23 +301,23 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
 
                     <AnimatePresence>
                       {isMenuOpen && (
-                        <motion.div 
+                        <motion.div
                           initial={{ opacity: 0, scale: 0.95, y: -10 }}
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.95, y: -10 }}
                           style={{
                             position: 'absolute', top: '100%', right: 0, width: '140px',
                             background: 'white', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
-                            border: '1px solid #f1f5f9', zIndex: 10, padding: '6px', marginTop: '8px'
+                            border: '1px solid #f1f5f9', zIndex: 10, padding: '6px', marginTop: '8px',
                           }}
                         >
-                          <button 
+                          <button
                             onClick={() => { onSelectStudent(student.id); setActiveMenuId(null); }}
                             style={{ width: '100%', textAlign: 'left', padding: '10px 14px', background: 'none', border: 'none', borderRadius: '10px', fontSize: '0.85rem', fontWeight: 600, color: '#334155', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px' }}
                           >
                             Profile
                           </button>
-                          <button 
+                          <button
                             onClick={async () => {
                               if (window.confirm('Delete this student?')) {
                                 await studentService.deleteStudentRecord(student);
@@ -338,7 +333,42 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                     </AnimatePresence>
                   </div>
                 </div>
-                
+
+                {/* Divider */}
+                <div style={{ height: '1px', background: '#f1f5f9', margin: '15px 0 13px' }} />
+
+                {/* Info tiles — today / this week / XP */}
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <div style={tileStyle}>
+                    <div style={tileLabelStyle}>Today</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px' }}>
+                      <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: today.color, flexShrink: 0 }} />
+                      <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                        {today.label}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div style={tileStyle}>
+                    <div style={tileLabelStyle}>This week</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px' }}>
+                      <div style={{ display: 'flex', gap: '3px' }}>
+                        {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+                          <span key={i} style={{ width: '6px', height: '6px', borderRadius: '50%', background: i < weekCount ? '#6366f1' : '#e2e8f0' }} />
+                        ))}
+                      </div>
+                      <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#1e1b4b' }}>{weekCount}/7</span>
+                    </div>
+                  </div>
+
+                  <div style={tileStyle}>
+                    <div style={tileLabelStyle}>XP</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginTop: '6px' }}>
+                      <Trophy size={13} style={{ color: '#f59e0b', flexShrink: 0 }} />
+                      <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b' }}>{xpLabel}</span>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             );
           })
