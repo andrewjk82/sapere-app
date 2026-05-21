@@ -46,6 +46,7 @@ const ChallengeReviewView = ({
   startIdx = 0,
   onClose,
   isMobile = false,
+  isTabletLayout = false,
 }) => {
   const [idx, setIdx] = useState(() => Math.min(Math.max(0, startIdx), Math.max(0, questions.length - 1)));
   const padRef = useRef(null);
@@ -111,8 +112,12 @@ const ChallengeReviewView = ({
   const goPrev = () => setIdx((i) => Math.max(0, i - 1));
   const goNext = () => setIdx((i) => Math.min(total - 1, i + 1));
 
-  // The same desktop split as ChallengeQuizView — sketch pad sticky on the right.
-  const showSideCanvas = !isMobile;
+  const viewportWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
+  const isReviewTabletLayout = isTabletLayout || (!isMobile && viewportWidth >= 768 && viewportWidth < 1100);
+  // Match the quiz layout: tablets use a single-column review to avoid nested
+  // fixed panes fighting touch scroll on iPadOS Safari / Android Chrome.
+  const showSideCanvas = !isMobile && !isReviewTabletLayout;
+  const singleColumnMaxWidth = isReviewTabletLayout ? 'min(920px, calc(100vw - 32px))' : '720px';
 
   const statusBadge = isPending
     ? { bg: '#fef3c7', text: '#92400e', label: 'Pending review' }
@@ -138,7 +143,7 @@ const ChallengeReviewView = ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: isMobile ? '16px' : '28px clamp(20px, 3vw, 48px)',
+        padding: isMobile ? '16px' : isReviewTabletLayout ? '20px 16px' : '28px clamp(20px, 3vw, 48px)',
       }}
     >
       {/* Top bar */}
@@ -169,7 +174,7 @@ const ChallengeReviewView = ({
       {/* Body — split layout */}
       <div style={{
         width: '100%',
-        maxWidth: showSideCanvas ? 'min(1500px, calc(100vw - 64px))' : '720px',
+        maxWidth: showSideCanvas ? 'min(1500px, calc(100vw - 64px))' : singleColumnMaxWidth,
         display: 'flex',
         flexDirection: showSideCanvas ? 'row' : 'column',
         gap: showSideCanvas ? '28px' : '20px',

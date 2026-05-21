@@ -2164,6 +2164,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   questionComments={questionComments}
                   startIdx={0}
                   isMobile={isMobile}
+                  isTabletLayout={isTabletCanvasLayout}
                   onClose={() => setStep('result')}
                 />
               )}
@@ -2193,6 +2194,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             answerResults={selectedChallenge.answerResults || []}
             startIdx={0}
             isMobile={isMobile}
+            isTabletLayout={isTabletCanvasLayout}
             onClose={() => setSelectedChallenge(null)}
           />
         ) : selectedChallenge ? (

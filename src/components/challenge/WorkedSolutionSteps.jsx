@@ -58,8 +58,8 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        maxHeight: 'min(760px, calc(100dvh - 132px))',
-        minHeight: hasMultipleSteps ? 'min(620px, calc(100dvh - 180px))' : 0,
+        maxHeight: 'clamp(520px, 78dvh, 780px)',
+        minHeight: hasMultipleSteps ? 'clamp(420px, 64dvh, 680px)' : 0,
       }}
     >
       {/* Top accent stripe */}
@@ -100,6 +100,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
           minHeight: 0,
           overflowY: 'auto',
           overscrollBehaviorY: 'contain',
+          touchAction: 'pan-y',
           WebkitOverflowScrolling: 'touch',
           paddingRight: '6px',
           marginRight: '-6px',
