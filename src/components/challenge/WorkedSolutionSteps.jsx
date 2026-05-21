@@ -45,6 +45,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
   const visibleSteps = steps.slice(0, Math.min(revealed, totalSteps));
   const allRevealed = revealed >= totalSteps;
   const hasMultipleSteps = totalSteps > 1;
+  const scrollSteps = hasMultipleSteps;
 
   return (
     <div
@@ -58,8 +59,13 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        maxHeight: 'clamp(520px, 78dvh, 780px)',
-        minHeight: hasMultipleSteps ? 'clamp(420px, 64dvh, 680px)' : 0,
+        ...(scrollSteps
+          ? {
+              height: '64vh',
+              minHeight: '420px',
+              maxHeight: '760px',
+            }
+          : {}),
       }}
     >
       {/* Top accent stripe */}
@@ -96,12 +102,12 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
           display: 'flex',
           flexDirection: 'column',
           gap: '18px',
-          flex: '1 1 auto',
-          minHeight: 0,
-          overflowY: 'auto',
-          overscrollBehaviorY: 'contain',
-          touchAction: 'pan-y',
-          WebkitOverflowScrolling: 'touch',
+          flex: scrollSteps ? '1 1 auto' : '0 0 auto',
+          minHeight: scrollSteps ? 0 : 'auto',
+          overflowY: scrollSteps ? 'auto' : 'visible',
+          overscrollBehaviorY: scrollSteps ? 'contain' : 'auto',
+          touchAction: scrollSteps ? 'pan-y' : 'auto',
+          WebkitOverflowScrolling: scrollSteps ? 'touch' : 'auto',
           paddingRight: '6px',
           marginRight: '-6px',
           scrollbarGutter: 'stable',
@@ -185,7 +191,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
       <div style={{
         flexShrink: 0,
         background: '#fff',
-        boxShadow: hasMultipleSteps && !allRevealed ? '0 -12px 20px rgba(255,255,255,0.92)' : 'none',
+        boxShadow: scrollSteps && !allRevealed ? '0 -12px 20px rgba(255,255,255,0.92)' : 'none',
       }}>
         {/* Next step button (only if more steps remain) */}
         {hasMultipleSteps && !allRevealed && (
