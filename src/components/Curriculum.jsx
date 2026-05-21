@@ -406,19 +406,11 @@ const Curriculum = () => {
         }
       });
 
-      // 2. Clear existing questions for y6-wn
       const collRef = collection(db, 'questions');
-      const q = query(collRef, where('chapterId', '==', 'y6-wn'));
-      const snap = await getDocs(q);
-      const deleteBatch = writeBatch(db);
-      snap.docs.forEach(d => deleteBatch.delete(d.ref));
-      await deleteBatch.commit();
-
-      // 3. Add the 60 questions
       const addBatch = writeBatch(db);
       
       WHOLE_NUMBER_QUESTIONS_Y6.forEach(qData => {
-        const docRef = doc(collRef);
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
         let optionsField = [];
         let answerField = "";
         
@@ -451,7 +443,7 @@ const Curriculum = () => {
           solutionSteps: qData.solutionSteps || [],
           createdAt: serverTimestamp(),
           updatedAt: serverTimestamp()
-        });
+        }, { merge: true });
       });
       
       await addBatch.commit();
@@ -522,19 +514,11 @@ const Curriculum = () => {
         }
       });
 
-      // 2. Clear existing questions for y6-frac
       const collRef = collection(db, 'questions');
-      const q = query(collRef, where('chapterId', '==', 'y6-frac'));
-      const snap = await getDocs(q);
-      const deleteBatch = writeBatch(db);
-      snap.docs.forEach(d => deleteBatch.delete(d.ref));
-      await deleteBatch.commit();
-
-      // 3. Add the questions
       const addBatch = writeBatch(db);
       
       FRACTION_QUESTIONS_Y6.forEach(qData => {
-        const docRef = doc(collRef);
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
         let optionsField = [];
         let answerField = "";
         
@@ -567,7 +551,7 @@ const Curriculum = () => {
           solutionSteps: qData.solutionSteps || [],
           createdAt: serverTimestamp(),
           updatedAt: serverTimestamp()
-        });
+        }, { merge: true });
       });
       
       await addBatch.commit();
@@ -595,16 +579,10 @@ const Curriculum = () => {
       const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
       
       const collRef = collection(db, 'questions');
-      const q = query(collRef, where('chapterId', '==', 'y11a-5'));
-      const snap = await getDocs(q);
-      const deleteBatch = writeBatch(db);
-      snap.docs.forEach(d => deleteBatch.delete(d.ref));
-      await deleteBatch.commit();
-
       const addBatch = writeBatch(db);
       
       CH5_QUESTIONS_Y11A.forEach(qData => {
-        const docRef = doc(collRef);
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
         let optionsField = [];
         let answerField = "";
         
@@ -637,7 +615,7 @@ const Curriculum = () => {
           solutionSteps: qData.solutionSteps || [],
           createdAt: serverTimestamp(),
           updatedAt: serverTimestamp()
-        });
+        }, { merge: true });
       });
       
       await addBatch.commit();
