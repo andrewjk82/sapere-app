@@ -49,7 +49,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
   return (
     <div
       style={{
-        padding: '26px 28px',
+        padding: '30px 32px',
         borderRadius: '24px',
         background: '#fff',
         border: '1px solid rgba(124, 58, 237, 0.14)',
@@ -58,8 +58,8 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        maxHeight: 'min(560px, calc(100dvh - 220px))',
-        minHeight: 0,
+        maxHeight: 'min(760px, calc(100dvh - 132px))',
+        minHeight: hasMultipleSteps ? 'min(620px, calc(100dvh - 180px))' : 0,
       }}
     >
       {/* Top accent stripe */}
@@ -95,7 +95,8 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '14px',
+          gap: '18px',
+          flex: '1 1 auto',
           minHeight: 0,
           overflowY: 'auto',
           overscrollBehaviorY: 'contain',
@@ -105,7 +106,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
           scrollbarGutter: 'stable',
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
           <AnimatePresence initial={false}>
             {visibleSteps.map((step, i) => (
               <motion.div
@@ -115,8 +116,8 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                 transition={{ type: 'spring', stiffness: 280, damping: 24, delay: i === revealed - 1 ? 0.05 : 0 }}
                 style={{
                   display: 'flex',
-                  gap: '14px',
-                  padding: '16px 18px',
+                  gap: '16px',
+                  padding: '22px 24px',
                   borderRadius: '16px',
                   background: '#faf5ff',
                   border: '1px solid #ede9fe',
@@ -127,15 +128,15 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                 <div style={{ position: 'absolute', left: 0, top: '12%', bottom: '12%', width: '3px', borderRadius: '3px', background: 'linear-gradient(180deg, #a78bfa 0%, #7c3aed 100%)' }} />
 
                 <div style={{
-                  flex: '0 0 36px',
-                  height: '36px',
+                  flex: '0 0 44px',
+                  height: '44px',
                   borderRadius: '50%',
                   background: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
                   color: '#fff',
                   display: 'grid',
                   placeItems: 'center',
                   fontWeight: 900,
-                  fontSize: '0.95rem',
+                  fontSize: '1.08rem',
                   boxShadow: '0 6px 14px rgba(124,58,237,0.28)',
                   marginLeft: '6px',
                   flexShrink: 0,
@@ -144,20 +145,20 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                 </div>
 
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#7c3aed', marginBottom: '6px' }}>
+                  <div style={{ fontSize: '0.76rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#7c3aed', marginBottom: '8px' }}>
                     Step {i + 1}
                   </div>
                   {step.explanation && (
                     <MathView
                       content={step.explanation}
                       graphData={i === totalSteps - 1 ? graphData : undefined}
-                      style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1rem', lineHeight: 1.7 }}
+                      style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.12rem', lineHeight: 1.75 }}
                     />
                   )}
                   {step.workingOut && (
                     <div style={{
-                      marginTop: '10px',
-                      padding: '12px 16px',
+                      marginTop: '14px',
+                      padding: '16px 18px',
                       borderRadius: '12px',
                       background: '#fff',
                       border: '1px solid #ddd6fe',
@@ -167,7 +168,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                       </div>
                       <MathView
                         content={step.workingOut}
-                        style={{ color: '#4c1d95', fontWeight: 500, fontSize: '0.98rem', lineHeight: 1.7 }}
+                        style={{ color: '#4c1d95', fontWeight: 500, fontSize: '1.06rem', lineHeight: 1.75 }}
                       />
                     </div>
                   )}
