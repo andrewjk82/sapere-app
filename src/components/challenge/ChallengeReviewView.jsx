@@ -182,7 +182,12 @@ const ChallengeReviewView = ({
         height: showSideCanvas ? 'calc(100dvh - 132px)' : 'auto',
         maxHeight: showSideCanvas ? 'calc(100dvh - 132px)' : 'none',
         minHeight: 0,
+        // In single-column mode the body must keep its natural (tall) height —
+        // otherwise the parent column-flex shrinks it, the page stops
+        // scrolling and the worked solution / footer get clipped off-screen.
+        flexShrink: 0,
         overflow: showSideCanvas ? 'hidden' : 'visible',
+        paddingBottom: showSideCanvas ? 0 : 'max(48px, env(safe-area-inset-bottom, 0px) + 32px)',
       }}>
         {/* Left — question / your answer / correct answer / hint / solution */}
         <div style={{
