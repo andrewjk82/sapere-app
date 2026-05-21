@@ -106,6 +106,10 @@ const toDisplayText = (value, fallback = '') => {
         }
         return match;
       });
+      // Render line breaks: real newlines AND the literal "\n" sequence that
+      // leaks into imported question/solution text become <br>. Only applied
+      // outside math blocks so KaTeX content is never corrupted.
+      text = text.replace(/\\n|\r\n|\r|\n/g, '<br>');
       parts2[i] = text;
     }
   }
