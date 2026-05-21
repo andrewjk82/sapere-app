@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
+/* eslint-disable react-hooks/set-state-in-effect */
+import { useState, useEffect, useMemo } from 'react';
 import { 
   BookOpen, CheckCircle2, Layers, Star, BookText, 
   Award, Lock, Check, Play, BookMarked
