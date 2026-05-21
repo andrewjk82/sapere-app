@@ -14,6 +14,46 @@
 
 const isNonEmpty = (s) => typeof s === 'string' && s.trim().length > 0;
 
+// Strip leftover Markdown syntax (### headings, **bold**, *italic*, list
+// bullets) that sometimes survives in LLM-generated solution text. Math
+// blocks ($…$ / $$…$$) are protected so we never corrupt KaTeX content.
+const MATH_OPEN = '';
+const MATH_CLOSE = '';
+
+const stripMarkdown = (s) => {
+  if (typeof s !== 'string' || s.length === 0) return s;
+  // Skip HTML-rich content — it has its own formatting.
+  if (/<\/(p|div|ul|ol|li|strong|em|h[1-6])>|<br\s*\/?>/i.test(s)) return s;
+
+  // Protect math blocks behind private-use-area sentinels so the Markdown
+  // regexes below never touch KaTeX content (or real numbers in the text).
+  const mathBlocks = [];
+  let str = s.replace(/(\$\$[\s\S]*?\$\$|\$[^$]*?\$)/g, (m) => {
+    mathBlocks.push(m);
+    return MATH_OPEN + (mathBlocks.length - 1) + MATH_CLOSE;
+  });
+
+  // Heading markers at the start of a line: #, ##, ###…
+  str = str.replace(/^[ \t]*#{1,6}[ \t]*/gm, '');
+  // Bold / italic wrappers
+  str = str.replace(/\*\*\*([^*]+)\*\*\*/g, '$1');
+  str = str.replace(/\*\*([^*]+)\*\*/g, '$1');
+  str = str.replace(/__([^_]+)__/g, '$1');
+  // Any leftover / unbalanced bold markers
+  str = str.replace(/\*\*/g, '');
+  // List bullet markers at the start of a line
+  str = str.replace(/^[ \t]*[-*+][ \t]+/gm, '');
+  // Collapse 3+ blank lines created by removed markers
+  str = str.replace(/\n{3,}/g, '\n\n');
+
+  // Restore math blocks
+  str = str.replace(
+    new RegExp(MATH_OPEN + '(\\d+)' + MATH_CLOSE, 'g'),
+    (_, i) => mathBlocks[Number(i)] ?? ''
+  );
+  return str.trim();
+};
+
 const stripStepPrefix = (s) =>
   s.replace(/^\s*(?:step\s*\d+[:.\-)]?\s*|\d+[:.\)]\s*|[①-⑳]\s*|단계\s*\d+[:.\-)]?\s*)/i, '').trim();
 
@@ -62,13 +102,21 @@ export const parseSolutionSteps = (question) => {
   if (Array.isArray(question.solutionSteps) && question.solutionSteps.length > 0) {
     return question.solutionSteps
       .map((s) => (typeof s === 'object' && s !== null ? s : { explanation: String(s), workingOut: '' }))
+      .map((s) => ({
+        ...s,
+        explanation: stripMarkdown(s.explanation ?? ''),
+        workingOut: stripMarkdown(s.workingOut ?? ''),
+      }))
       .filter((s) => isNonEmpty(s.explanation) || isNonEmpty(s.workingOut));
   }
 
   const raw = String(question.solution || '').trim();
   if (!raw) return [];
 
-  const toObjects = (strings) => strings.map((s) => ({ explanation: s, workingOut: '' }));
+  const toObjects = (strings) =>
+    strings
+      .map((s) => ({ explanation: stripMarkdown(s), workingOut: '' }))
+      .filter((s) => isNonEmpty(s.explanation));
 
   // Prefer paragraph blocks for HTML-rich solutions.
   if (/<p\b/i.test(raw)) {
