@@ -1,5 +1,6 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
+import { doc, getDoc } from 'firebase/firestore';
 import {
   AlertTriangle,
   Eye,
@@ -12,6 +13,7 @@ import {
   Bell,
   ChevronRight,
 } from 'lucide-react';
+import { db } from '../firebase/config';
 
 // ──────────────────────────────────────────────────────────
 // Helpers
@@ -71,6 +73,8 @@ const formatDate = () =>
     month: 'long',
     year: 'numeric',
   });
+
+const getTodayKey = () => new Date().toLocaleDateString('en-CA');
 
 // Categorize a student into health bucket.
 const categorize = (s) => {
@@ -248,16 +252,57 @@ const AdminDashboard = ({
   setActiveTab,
 }) => {
   const buckets = useMemo(() => buildBuckets(students), [students]);
+  const [todayCompletionSummary, setTodayCompletionSummary] = useState(null);
+  const todayKey = useMemo(() => getTodayKey(), []);
 
   // KPI overview metrics
   const totalStudents = students.length;
-  const activeStudents = students.filter((s) => s.status === 'Active').length;
   const totalLessons = students.reduce((acc, s) => acc + (s.lessons || 0), 0);
   const hoursTutored = `${Math.round(totalLessons * 1.5)}h`;
-  const activePct =
-    totalStudents > 0
-      ? `${Math.round((activeStudents / totalStudents) * 100)}% of total`
-      : '—';
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const fetchTodayCompletions = async () => {
+      try {
+        const summarySnap = await getDoc(doc(db, 'admin_daily_summary', todayKey));
+        if (cancelled) return;
+        setTodayCompletionSummary(
+          summarySnap.exists() ? summarySnap.data().students || {} : {}
+        );
+      } catch (error) {
+        console.warn('Failed to load today completion summary:', error?.code || error);
+        if (!cancelled) setTodayCompletionSummary({});
+      }
+    };
+
+    fetchTodayCompletions();
+    return () => {
+      cancelled = true;
+    };
+  }, [todayKey]);
+
+  const completedTodayCount = useMemo(() => {
+    if (!todayCompletionSummary) return 0;
+    return (students || []).filter((student) => {
+      const item = todayCompletionSummary[student.id] || todayCompletionSummary[student.uid];
+      if (!item) return false;
+
+      const calcEnabled = student.calculationEnabled !== false;
+      const dailyDone = item.dailyDone === true || item.dailyStatus === 'completed';
+      const calcDone = item.calcDone === true || item.calcStatus === 'completed';
+      return dailyDone && (!calcEnabled || calcDone);
+    }).length;
+  }, [students, todayCompletionSummary]);
+
+  const completedTodayValue =
+    todayCompletionSummary === null ? '—' : completedTodayCount;
+  const completedTodayDetail =
+    todayCompletionSummary === null
+      ? 'loading'
+      : totalStudents > 0
+        ? `${completedTodayCount}/${totalStudents} students`
+        : '—';
 
   const pendingToday = useMemo(() => countPendingToday(students), [students]);
 
@@ -399,7 +444,12 @@ const AdminDashboard = ({
           <div className="ad__kpi-grid">
             {[
               { l: 'Total Students', v: totalStudents, d: '', muted: true },
-              { l: 'Active Students', v: activeStudents, d: activePct, muted: true },
+              {
+                l: 'Completed Today',
+                v: completedTodayValue,
+                d: completedTodayDetail,
+                muted: true,
+              },
               { l: 'Total Lessons', v: totalLessons, d: 'all-time', muted: true },
               { l: 'Hours Tutored', v: hoursTutored, d: 'all-time', muted: true },
             ].map((k) => (
