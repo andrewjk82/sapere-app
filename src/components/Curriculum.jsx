@@ -17,6 +17,8 @@ import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
+import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
+import { Y9_CH3A_QUESTIONS } from '../constants/seedYear9Ch3Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
@@ -634,6 +636,138 @@ const Curriculum = () => {
     } catch (err) {
       console.error(err);
       showToast("Failed to seed Ch5 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY9Ch2Questions = async () => {
+    if (!window.confirm("This will seed all Year 9 Chapter 2A (Pythagoras' theorem) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      // Clear existing y9-2 questions
+      const q = query(collRef, where('chapterId', '==', 'y9-2'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      // Add new questions
+      const addBatch = writeBatch(db);
+      Y9_CH2A_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y9-2',
+          chapterTitle: "Chapter 2: Pythagoras' theorem and surds",
+          topicId: 'y9-2a',
+          topicCode: '2A',
+          topicTitle: qData.t || "Review of Pythagoras' theorem and applications",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'short_answer',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y9_CH2A_QUESTIONS.length} Year 9 Ch2A questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y9-2'] = (cached.counts['y9-2'] || 0) + Y9_CH2A_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Year 9 Ch2 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY9Ch3Questions = async () => {
+    if (!window.confirm("This will seed all Year 9 Chapter 3A (Percentages) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      // Clear existing y9-3a questions (only topic 3A to avoid wiping other Ch3 topics if any exist)
+      const q = query(collRef, where('topicId', '==', 'y9-3a'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      // Add new questions
+      const addBatch = writeBatch(db);
+      Y9_CH3A_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y9-3',
+          chapterTitle: "Chapter 3: Consumer arithmetic",
+          topicId: 'y9-3a',
+          topicCode: '3A',
+          topicTitle: qData.t || "Review of percentages",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'short_answer',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y9_CH3A_QUESTIONS.length} Year 9 Ch3A questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y9-3'] = (cached.counts['y9-3'] || 0) + Y9_CH3A_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Year 9 Ch3 questions.", 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -1328,6 +1462,50 @@ const Curriculum = () => {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                               <span className="sync-card-status">Active ({questionCounts['y11a-5']} Qs)</span>
                               <button onClick={handleSeedY11Ch5Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 9 Ch2 Pythagoras */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>Y9 CH2</span>
+                          <span className="sync-card-title">Pythagoras (Seed Y9 Ch2)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y9-2'] ? (
+                            <button onClick={handleSeedY9Ch2Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y9 Ch2
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y9-2']} Qs)</span>
+                              <button onClick={handleSeedY9Ch2Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 9 Ch3 Percentages */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y9" style={{ background: '#3b82f6', color: '#fff' }}>Y9 CH3</span>
+                          <span className="sync-card-title">Consumer Arith (Seed Y9 Ch3)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y9-3'] ? (
+                            <button onClick={handleSeedY9Ch3Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y9 Ch3
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y9-3']} Qs)</span>
+                              <button onClick={handleSeedY9Ch3Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
                                 Re-seed
                               </button>
                             </div>

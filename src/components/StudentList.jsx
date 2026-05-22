@@ -235,6 +235,8 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.04 }}
+                whileHover={{ y: -2 }}
+                onClick={() => onSelectStudent(student.id)}
                 className="app-panel student-card"
                 style={{
                   position: 'relative',
@@ -243,6 +245,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                   background: '#fff',
                   border: '1px solid rgba(15,23,42,0.06)',
                   boxShadow: '0 4px 18px rgba(15,23,42,0.04)',
+                  cursor: 'pointer',
                 }}
               >
                 {/* Top — avatar, name, meta, menu */}
@@ -305,6 +308,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                           initial={{ opacity: 0, scale: 0.95, y: -10 }}
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                          onClick={(e) => e.stopPropagation()}
                           style={{
                             position: 'absolute', top: '100%', right: 0, width: '140px',
                             background: 'white', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
