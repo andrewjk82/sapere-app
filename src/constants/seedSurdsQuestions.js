@@ -79,4 +79,1106 @@ export const SURDS_QUESTIONS_Y11A = [
   { id: 's2g_3', q: "Find $a$ and $b$ if $\\frac{2}{\\sqrt{3}-1} = a + b\\sqrt{3}$.", a: "$a=1, b=1$", opts: ["$a=1, b=1$", "$a=2, b=1$", "$a=1, b=2$", "$a=1, b=-1$"], h: "Rationalize the denominator.", s: "$\\frac{2(\\sqrt{3}+1)}{3-1} = \\frac{2(\\sqrt{3}+1)}{2} = 1 + \\sqrt{3}$. So $a=1, b=1$.", t: "Surd equations", c: "2G" },
   { id: 's2g_4', q: "Find $p$ and $q$ if $\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}$.", a: "$p=10, q=2$", opts: ["$p=5, q=2$", "$p=10, q=2$", "$p=5, q=1$", "$p=2, q=1$"], h: "Rationalize by $(\\sqrt{5}+2)$.", s: "$\\frac{\\sqrt{5}(\\sqrt{5}+2)}{5-4} = 5 + 2\\sqrt{5}$. Wait, my calc was wrong. $p=5, q=2$.", t: "Surd equations", c: "2G" },
   { id: 's2g_5', q: "If $\\sqrt{20} + \\sqrt{45} = \\sqrt{x}$, find $x$.", a: "$125$", opts: ["$125$", "$65$", "$25$", "$100$"], h: "$2\\sqrt{5} + 3\\sqrt{5} = 5\\sqrt{5}$.", s: "$5\\sqrt{5} = \\sqrt{125}$", t: "Surd equations", c: "2G" }
+,
+
+  // 2A: Pythagoras Theorem Applications (Appended)
+  {
+    "id": "y9-2a-1a",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has two shorter sides of length 9 cm and 12 cm. Use Pythagoras' theorem to find the length of the hypotenuse $c$.",
+    "a": "15",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "c^2 = 9^2 + 12^2"
+      },
+      {
+        "explanation": "Calculate the squares.",
+        "workingOut": "c^2 = 81 + 144 = 225"
+      },
+      {
+        "explanation": "Take the square root to find the hypotenuse.",
+        "workingOut": "c = \\sqrt{225} = 15"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-1b",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has two shorter sides of length 8 cm and 15 cm. Use Pythagoras' theorem to find the length of the hypotenuse $h$.",
+    "a": "17",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "h^2 = 8^2 + 15^2"
+      },
+      {
+        "explanation": "Calculate the squares.",
+        "workingOut": "h^2 = 64 + 225 = 289"
+      },
+      {
+        "explanation": "Take the square root to find the hypotenuse.",
+        "workingOut": "h = \\sqrt{289} = 17"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-1c",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has two shorter sides of length 1.5 cm and 2 cm. Use Pythagoras' theorem to find the length of the hypotenuse $p$.",
+    "a": "2.5",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "p^2 = 1.5^2 + 2^2"
+      },
+      {
+        "explanation": "Calculate the squares.",
+        "workingOut": "p^2 = 2.25 + 4 = 6.25"
+      },
+      {
+        "explanation": "Take the square root to find the hypotenuse.",
+        "workingOut": "p = \\sqrt{6.25} = 2.5"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-1d",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has two shorter sides of length 20 cm and 21 cm. Use Pythagoras' theorem to find the length of the hypotenuse $m$.",
+    "a": "29",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "m^2 = 20^2 + 21^2"
+      },
+      {
+        "explanation": "Calculate the squares.",
+        "workingOut": "m^2 = 400 + 441 = 841"
+      },
+      {
+        "explanation": "Take the square root to find the hypotenuse.",
+        "workingOut": "m = \\sqrt{841} = 29"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-2a",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has a hypotenuse of 13 cm and one shorter side of 5 cm. Use Pythagoras' theorem to find the length of the unknown side $k$.",
+    "a": "12",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem and rearrange to find the shorter side.",
+        "workingOut": "k^2 = 13^2 - 5^2"
+      },
+      {
+        "explanation": "Calculate the squares and subtract.",
+        "workingOut": "k^2 = 169 - 25 = 144"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "k = \\sqrt{144} = 12"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-2b",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has a hypotenuse of 25 cm and one shorter side of 24 cm. Use Pythagoras' theorem to find the length of the unknown side $w$.",
+    "a": "7",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem and rearrange to find the shorter side.",
+        "workingOut": "w^2 = 25^2 - 24^2"
+      },
+      {
+        "explanation": "Calculate the squares and subtract.",
+        "workingOut": "w^2 = 625 - 576 = 49"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "w = \\sqrt{49} = 7"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-2c",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has a hypotenuse of 39 cm and one shorter side of 15 cm. Use Pythagoras' theorem to find the length of the unknown side $n$.",
+    "a": "36",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem and rearrange to find the shorter side.",
+        "workingOut": "n^2 = 39^2 - 15^2"
+      },
+      {
+        "explanation": "Calculate the squares and subtract.",
+        "workingOut": "n^2 = 1521 - 225 = 1296"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "n = \\sqrt{1296} = 36"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-2d",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has a hypotenuse of 41 cm and one shorter side of 9 cm. Use Pythagoras' theorem to find the length of the unknown side $r$.",
+    "a": "40",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem and rearrange to find the shorter side.",
+        "workingOut": "r^2 = 41^2 - 9^2"
+      },
+      {
+        "explanation": "Calculate the squares and subtract.",
+        "workingOut": "r^2 = 1681 - 81 = 1600"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "r = \\sqrt{1600} = 40"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-2e",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has a hypotenuse of 37 cm and one shorter side of 35 cm. Use Pythagoras' theorem to find the length of the unknown side $t$.",
+    "a": "12",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem and rearrange to find the shorter side.",
+        "workingOut": "t^2 = 37^2 - 35^2"
+      },
+      {
+        "explanation": "Calculate the squares and subtract.",
+        "workingOut": "t^2 = 1369 - 1225 = 144"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "t = \\sqrt{144} = 12"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-2f",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "A right-angled triangle has a hypotenuse of 65 cm and one shorter side of 63 cm. Use Pythagoras' theorem to find the length of the unknown side $z$.",
+    "a": "16",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem and rearrange to find the shorter side.",
+        "workingOut": "z^2 = 65^2 - 63^2"
+      },
+      {
+        "explanation": "Calculate the squares and subtract.",
+        "workingOut": "z^2 = 4225 - 3969 = 256"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "z = \\sqrt{256} = 16"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-3a",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use a calculator to find the approximation to 2 decimal places for $\\sqrt{21}$.",
+    "a": "4.58",
+    "opts": [],
+    "h": "Enter the number in your calculator and round the second decimal digit.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the square root and round to 2 decimal places.",
+        "workingOut": "\\sqrt{21} \\approx 4.58"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-3b",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use a calculator to find the approximation to 2 decimal places for $\\sqrt{43}$.",
+    "a": "6.56",
+    "opts": [],
+    "h": "Enter the number in your calculator and round the second decimal digit.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the square root and round to 2 decimal places.",
+        "workingOut": "\\sqrt{43} \\approx 6.56"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-3c",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use a calculator to find the approximation to 2 decimal places for $\\sqrt{79}$.",
+    "a": "8.89",
+    "opts": [],
+    "h": "Enter the number in your calculator and round the second decimal digit.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the square root and round to 2 decimal places.",
+        "workingOut": "\\sqrt{79} \\approx 8.89"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-3d",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use a calculator to find the approximation to 2 decimal places for $\\sqrt{515}$.",
+    "a": "22.69",
+    "opts": [],
+    "h": "Enter the number in your calculator and round the second decimal digit.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the square root and round to 2 decimal places.",
+        "workingOut": "\\sqrt{515} \\approx 22.69"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4a",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the hypotenuse $c$ in a right-angled triangle with shorter sides 4 cm and 7 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{65}, 8.06",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "c^2 = 4^2 + 7^2 = 16 + 49 = 65"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "c = \\sqrt{65} \\approx 8.06"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4b",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the hypotenuse $d$ in a right-angled triangle with shorter sides 5 cm and 9 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{106}, 10.30",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "d^2 = 5^2 + 9^2 = 25 + 81 = 106"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "d = \\sqrt{106} \\approx 10.30"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4c",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the hypotenuse $m$ in a right-angled triangle with shorter sides 8 cm and 3 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{73}, 8.54",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "m^2 = 8^2 + 3^2 = 64 + 9 = 73"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "m = \\sqrt{73} \\approx 8.54"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4d",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the hypotenuse $n$ in a right-angled triangle with shorter sides 6 cm and 4 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{52}, 7.21",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "n^2 = 6^2 + 4^2 = 36 + 16 = 52"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "n = \\sqrt{52} \\approx 7.21"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4e",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the hypotenuse $p$ in a right-angled triangle with shorter sides 10 cm and 6 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{136}, 11.66",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "p^2 = 10^2 + 6^2 = 100 + 36 = 136"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "p = \\sqrt{136} \\approx 11.66"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4f",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the hypotenuse $q$ in a right-angled triangle with shorter sides 8 cm and 5 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{89}, 9.43",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "q^2 = 8^2 + 5^2 = 64 + 25 = 89"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "q = \\sqrt{89} \\approx 9.43"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4g",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the shorter side $a$ in a right-angled triangle with hypotenuse 15 cm and the other side 5 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{200}, 14.14",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "a^2 = 15^2 - 5^2 = 225 - 25 = 200"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "a = \\sqrt{200} \\approx 14.14"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4h",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "Use Pythagoras' theorem to find the length of the shorter side $b$ in a right-angled triangle with hypotenuse 12 cm and the other side 8 cm. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{80}, 8.94",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply Pythagoras' theorem.",
+        "workingOut": "b^2 = 12^2 - 8^2 = 144 - 64 = 80"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "b = \\sqrt{80} \\approx 8.94"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4i",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "An isosceles triangle has a base of 8 cm and a height of 5 cm. Use Pythagoras' theorem to find the slant length $x$. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "\\sqrt{41}, 6.40",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Split the isosceles triangle into two right-angled triangles. The base is halved.",
+        "workingOut": "\\text{Half base} = 8 / 2 = 4"
+      },
+      {
+        "explanation": "Apply Pythagoras' theorem to find the hypotenuse (slant).",
+        "workingOut": "x^2 = 4^2 + 5^2 = 16 + 25 = 41"
+      },
+      {
+        "explanation": "Take the square root and approximate.",
+        "workingOut": "x = \\sqrt{41} \\approx 6.40"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-4j",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "q": "An isosceles triangle has a slant length of 10 cm and a height of 7 cm. Use Pythagoras' theorem to find the total base length $y$. Calculate your answer first as an exact square root and then correct to 2 decimal places. (Format answer as \"exact, approx\")",
+    "a": "2\\sqrt{51}, 14.28",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Split the isosceles triangle into two right-angled triangles to find half the base.",
+        "workingOut": "\\text{Half base}^2 = 10^2 - 7^2 = 100 - 49 = 51"
+      },
+      {
+        "explanation": "Find half the base and multiply by 2 for the full base.",
+        "workingOut": "\\text{Half base} = \\sqrt{51}\\\\ y = 2 \\times \\sqrt{51} = 2\\sqrt{51} \\approx 14.28"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-5a",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Determine whether or not the triangle with the side lengths 12, 35, 37 is right-angled.",
+    "a": "Yes",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Check if the sum of the squares of the two smaller sides equals the square of the largest side.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Square all three sides.",
+        "workingOut": "12^2 = 144, \\quad 35^2 = 1225, \\quad 37^2 = 1369"
+      },
+      {
+        "explanation": "Check if $a^2 + b^2 = c^2$.",
+        "workingOut": "144 + 1225 = 1369. This equals 1369. Therefore, Yes."
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-5b",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Determine whether or not the triangle with the side lengths 14, 48, 50 is right-angled.",
+    "a": "Yes",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Check if the sum of the squares of the two smaller sides equals the square of the largest side.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Square all three sides.",
+        "workingOut": "14^2 = 196, \\quad 48^2 = 2304, \\quad 50^2 = 2500"
+      },
+      {
+        "explanation": "Check if $a^2 + b^2 = c^2$.",
+        "workingOut": "196 + 2304 = 2500. This equals 2500. Therefore, Yes."
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-5c",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Determine whether or not the triangle with the side lengths 5, 7, 9 is right-angled.",
+    "a": "No",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Check if the sum of the squares of the two smaller sides equals the square of the largest side.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Square all three sides.",
+        "workingOut": "5^2 = 25, \\quad 7^2 = 49, \\quad 9^2 = 81"
+      },
+      {
+        "explanation": "Check if $a^2 + b^2 = c^2$.",
+        "workingOut": "25 + 49 = 74. This does not equal 81. Therefore, No."
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-5d",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Determine whether or not the triangle with the side lengths 2.5, 6, 6.5 is right-angled.",
+    "a": "Yes",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Check if the sum of the squares of the two smaller sides equals the square of the largest side.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Square all three sides.",
+        "workingOut": "2.5^2 = 6.25, \\quad 6^2 = 36, \\quad 6.5^2 = 42.25"
+      },
+      {
+        "explanation": "Check if $a^2 + b^2 = c^2$.",
+        "workingOut": "6.25 + 36 = 42.25. This equals 42.25. Therefore, Yes."
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-5e",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Determine whether or not the triangle with the side lengths 8, 12, 15 is right-angled.",
+    "a": "No",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Check if the sum of the squares of the two smaller sides equals the square of the largest side.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Square all three sides.",
+        "workingOut": "8^2 = 64, \\quad 12^2 = 144, \\quad 15^2 = 225"
+      },
+      {
+        "explanation": "Check if $a^2 + b^2 = c^2$.",
+        "workingOut": "64 + 144 = 208. This does not equal 225. Therefore, No."
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-5f",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Determine whether or not the triangle with the side lengths 11, 60, 61 is right-angled.",
+    "a": "Yes",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Check if the sum of the squares of the two smaller sides equals the square of the largest side.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Square all three sides.",
+        "workingOut": "11^2 = 121, \\quad 60^2 = 3600, \\quad 61^2 = 3721"
+      },
+      {
+        "explanation": "Check if $a^2 + b^2 = c^2$.",
+        "workingOut": "121 + 3600 = 3721. This equals 3721. Therefore, Yes."
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-6a",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "Lengths of the two shortest sides of a right-angled triangle are 5 cm and 12 cm. Find the length of the hypotenuse. (Give your answer as a whole number or square root like $\\sqrt{x}$)",
+    "a": "13",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use Pythagoras' theorem.",
+        "workingOut": "a^2 + b^2 = c^2"
+      },
+      {
+        "explanation": "Solve for the unknown side.",
+        "workingOut": "\\text{Result: } 13"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-6b",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "Lengths of the two shortest sides of a right-angled triangle are 4 cm and 7 cm. Find the length of the hypotenuse. (Give your answer as a whole number or square root like $\\sqrt{x}$)",
+    "a": "\\sqrt{65}",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use Pythagoras' theorem.",
+        "workingOut": "a^2 + b^2 = c^2"
+      },
+      {
+        "explanation": "Solve for the unknown side.",
+        "workingOut": "\\text{Result: } \\sqrt{65}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-6c",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "In a right-angled triangle, the hypotenuse is 11 cm and one shorter side is 5 cm. Find the length of the other shorter side. (Give your answer as a whole number or square root like $\\sqrt{x}$)",
+    "a": "\\sqrt{96}",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use Pythagoras' theorem.",
+        "workingOut": "a^2 + b^2 = c^2"
+      },
+      {
+        "explanation": "Solve for the unknown side.",
+        "workingOut": "\\text{Result: } \\sqrt{96}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-6d",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "Lengths of the two shortest sides of a right-angled triangle are 7 cm and 9 cm. Find the length of the hypotenuse. (Give your answer as a whole number or square root like $\\sqrt{x}$)",
+    "a": "\\sqrt{130}",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use Pythagoras' theorem.",
+        "workingOut": "a^2 + b^2 = c^2"
+      },
+      {
+        "explanation": "Solve for the unknown side.",
+        "workingOut": "\\text{Result: } \\sqrt{130}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-6e",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "In a right-angled triangle, the hypotenuse is 14 cm and one shorter side is 6 cm. Find the length of the other shorter side. (Give your answer as a whole number or square root like $\\sqrt{x}$)",
+    "a": "\\sqrt{160}",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use Pythagoras' theorem.",
+        "workingOut": "a^2 + b^2 = c^2"
+      },
+      {
+        "explanation": "Solve for the unknown side.",
+        "workingOut": "\\text{Result: } \\sqrt{160}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-7",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "A window frame has height 1.5 m and width 0.8 m. Will a piece of glass 1.8 m wide fit through the opening diagonally?",
+    "a": "No",
+    "opts": [
+      "Yes",
+      "No"
+    ],
+    "h": "Calculate the diagonal of the window frame and compare it to 1.8 m.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the diagonal using Pythagoras' theorem.",
+        "workingOut": "\\text{Diagonal}^2 = 1.5^2 + 0.8^2 = 2.25 + 0.64 = 2.89"
+      },
+      {
+        "explanation": "Take the square root.",
+        "workingOut": "\\text{Diagonal} = \\sqrt{2.89} = 1.7 \\text{ m}"
+      },
+      {
+        "explanation": "Compare with the width of the glass.",
+        "workingOut": "1.7 \\text{ m} < 1.8 \\text{ m}, \\text{ so it will not fit.}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-8",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A tradesman is making a wooden rectangular frame for a gate. In order to make the frame stronger, he will put a diagonal piece into the frame. If the frame is 1.4 m wide and 2.2 m high, find the length of the diagonal piece of wood, in metres, correct to 3 decimal places.",
+    "a": "2.608",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use Pythagoras' theorem to find the diagonal.",
+        "workingOut": "d^2 = 1.4^2 + 2.2^2"
+      },
+      {
+        "explanation": "Calculate the sum of squares.",
+        "workingOut": "d^2 = 1.96 + 4.84 = 6.8"
+      },
+      {
+        "explanation": "Take the square root and round to 3 decimal places.",
+        "workingOut": "d = \\sqrt{6.8} \\approx 2.608"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-9",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "A signwriter leans his ladder against a wall so that he can paint a sign. The wall is vertical and the ground in front of the wall is horizontal. The signwriter's ladder is 5 m long. If the signwriter wants the top of the ladder to be 4.5 m above the ground when leaning against the wall, how far, correct to 1 decimal place, should the foot of the ladder be placed from the wall?",
+    "a": "2.2",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "The ladder forms the hypotenuse of a right-angled triangle.",
+        "workingOut": "x^2 + 4.5^2 = 5^2"
+      },
+      {
+        "explanation": "Solve for the horizontal distance $x$.",
+        "workingOut": "x^2 = 25 - 20.25 = 4.75"
+      },
+      {
+        "explanation": "Take the square root and round to 1 decimal place.",
+        "workingOut": "x = \\sqrt{4.75} \\approx 2.179 \\approx 2.2"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-10",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "A boat builder needs to calculate the lengths of the stays needed to support a mast on a yacht. The mast is supported by two identical side stays ($AB$ and $AD$) going from point $A$ on the mast to each side of the boat, and a front stay ($AE$) going to the front of the boat. The base of the mast is $C$.\nGiven $AC = 4$ m, $CB = CD = 1.5$ m, and $CE = 2.2$ m:\n\na) Find the length, to the nearest centimetre, of one of the side stays, $AB$ or $AD$.\nb) Find the length, to the nearest centimetre, of the front stay, $AE$.\nc) Find the total length of stainless steel wire needed to make the three stays.",
+    "a": "a) 427 cm, b) 457 cm, c) 1311 cm",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "a) Use Pythagoras in $\\triangle ACB$.",
+        "workingOut": "AB = \\sqrt{AC^2 + CB^2} = \\sqrt{4^2 + 1.5^2} = \\sqrt{16 + 2.25} = \\sqrt{18.25} \\approx 4.272 \\text{ m} = 427 \\text{ cm}"
+      },
+      {
+        "explanation": "b) Use Pythagoras in $\\triangle ACE$.",
+        "workingOut": "AE = \\sqrt{AC^2 + CE^2} = \\sqrt{4^2 + 2.2^2} = \\sqrt{16 + 4.84} = \\sqrt{20.84} \\approx 4.565 \\text{ m} = 457 \\text{ cm}"
+      },
+      {
+        "explanation": "c) Sum the lengths of the three stays.",
+        "workingOut": "\\text{Total} = 2 \\times 4.272 + 4.565 = 8.544 + 4.565 = 13.109 \\text{ m} = 1311 \\text{ cm}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-11",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "As part of a design, an artist draws a circle passing through the four corners (vertices) of a square.\n\na) If the square has side lengths of 6 cm, what is the radius, to the nearest millimetre, of the circle?\nb) If the circle has a radius of 5 cm, what are the side lengths, to the nearest millimetre, of the square?",
+    "a": "a) 42 mm, b) 71 mm",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "a) The diagonal of the square is the diameter of the circle.",
+        "workingOut": "\\text{Diagonal} = \\sqrt{6^2 + 6^2} = \\sqrt{72} \\approx 8.485 \\text{ cm}"
+      },
+      {
+        "explanation": "Find the radius (half the diameter).",
+        "workingOut": "\\text{Radius} = 8.485 / 2 = 4.243 \\text{ cm} = 42 \\text{ mm}"
+      },
+      {
+        "explanation": "b) If radius is 5 cm, diameter is 10 cm. Let the side be $s$.",
+        "workingOut": "s^2 + s^2 = 10^2 \\Rightarrow 2s^2 = 100 \\Rightarrow s^2 = 50"
+      },
+      {
+        "explanation": "Take the square root to find the side length.",
+        "workingOut": "s = \\sqrt{50} \\approx 7.071 \\text{ cm} = 71 \\text{ mm}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-12",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "q": "Two triangular flags can be made from one square piece of material by cutting on the diagonal. If this diagonal side length is to be 120 cm long, what must be the side length of the square piece of material to the nearest mm?",
+    "a": "849",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let the side length of the square be $s$. Use Pythagoras' theorem.",
+        "workingOut": "s^2 + s^2 = 120^2"
+      },
+      {
+        "explanation": "Solve for $s^2$.",
+        "workingOut": "2s^2 = 14400 \\Rightarrow s^2 = 7200"
+      },
+      {
+        "explanation": "Find $s$ and convert to mm.",
+        "workingOut": "s = \\sqrt{7200} \\approx 84.853 \\text{ cm} = 849 \\text{ mm}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-13",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "q": "A girl planned to swim straight across a river of width 30 m. After she had swum across the river, she found she had been swept 5 m downstream. How far did she actually swim? Calculate your answer, in metres, correct to 1 decimal place.",
+    "a": "30.4",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "The actual path forms the hypotenuse of a right-angled triangle with the width and downstream distance as the legs.",
+        "workingOut": "\\text{Distance}^2 = 30^2 + 5^2 = 900 + 25 = 925"
+      },
+      {
+        "explanation": "Take the square root to find the actual distance swum.",
+        "workingOut": "\\text{Distance} = \\sqrt{925} \\approx 30.41 \\approx 30.4 \\text{ m}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-14",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "q": "A yachtsman wishes to build a shed with a rectangular base to store his sailing equipment. If the shed is to be 3.0 m wide and must be able to house a 5.2 m steel beam, which is to be stored diagonally across the floor, how long must the shed be? Calculate your answer, in metres, correct to 1 decimal place.",
+    "a": "4.2",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "The floor of the shed is a rectangle, forming a right-angled triangle with the diagonal.",
+        "workingOut": "\\text{Length}^2 + 3.0^2 = 5.2^2"
+      },
+      {
+        "explanation": "Solve for the length squared.",
+        "workingOut": "\\text{Length}^2 = 27.04 - 9 = 18.04"
+      },
+      {
+        "explanation": "Take the square root and round.",
+        "workingOut": "\\text{Length} = \\sqrt{18.04} \\approx 4.247 \\approx 4.2 \\text{ m}"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-15",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "In triangle $PQR$, the angle at $Q$ is a right angle. The line $QS$ is drawn perpendicular to $PR$. $h$ is the length of $QS$ and $x$ is the length of $RS$. Given $PQ = 15$ and $QR = 8$:\n\na) Show that the length of $PR$ is 17.\nb) Find the area of triangle $PQR$ in two ways to show that $17h = 120$.\nc) Use Pythagoras' theorem to find $x$.",
+    "a": "a) $15^2 + 8^2 = 17^2$, b) Area is 60. $0.5 \\times 17 \\times h = 60$, c) $x \\approx 3.76$",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "a) Use Pythagoras in $\\triangle PQR$.",
+        "workingOut": "PR^2 = 15^2 + 8^2 = 225 + 64 = 289 \\Rightarrow PR = 17"
+      },
+      {
+        "explanation": "b) Calculate the area using legs $PQ$ and $QR$.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times 15 \\times 8 = 60"
+      },
+      {
+        "explanation": "Calculate the area using base $PR$ and height $QS$.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times 17 \\times h = 8.5h"
+      },
+      {
+        "explanation": "Equate the two areas.",
+        "workingOut": "8.5h = 60 \\Rightarrow 17h = 120"
+      },
+      {
+        "explanation": "c) First, find $h$.",
+        "workingOut": "h = 120 / 17"
+      },
+      {
+        "explanation": "Use Pythagoras in $\\triangle QSR$ to find $x$.",
+        "workingOut": "x^2 + h^2 = 8^2 \\Rightarrow x^2 + \\left(\\frac{120}{17}\\right)^2 = 64"
+      },
+      {
+        "explanation": "Solve for $x$.",
+        "workingOut": "x^2 = 64 - \\frac{14400}{289} = \\frac{18496 - 14400}{289} = \\frac{4096}{289} \\Rightarrow x = \\frac{64}{17} \\approx 3.76"
+      }
+    ]
+  },
+  {
+    "id": "y9-2a-16",
+    "c": "2A",
+    "t": "Pythagoras' Theorem",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "In two identical squares of side length $c+d$, the first square contains an inner tilted quadrilateral formed by joining points that divide each side in the ratio $c:d$. The second square is divided into two smaller squares of sides $c$ and $d$, and two rectangles of dimensions $c \\times d$.\n\na) Prove that the tilted inner quadrilateral in the first square is a square.\nb) Using the areas of both large squares, prove Pythagoras' theorem ($a^2+b^2=c^2$ equivalent for the right triangles formed).",
+    "a": "Teacher review required for proofs.",
+    "opts": [],
+    "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "a) Show all four sides of the inner quadrilateral are equal.",
+        "workingOut": "\\text{Each side is the hypotenuse of a right triangle with legs } c \\text{ and } d. \\text{ Length } = \\sqrt{c^2 + d^2}."
+      },
+      {
+        "explanation": "Show the inner angles are $90^\\circ$.",
+        "workingOut": "\\text{The acute angles of the corner triangles sum to } 90^\\circ. \\text{ The straight line angle is } 180^\\circ, \\text{ leaving } 90^\\circ \\text{ for the inner quadrilateral's corners.}"
+      },
+      {
+        "explanation": "b) Relate the areas.",
+        "workingOut": "\\text{Area of large square} = (c+d)^2. \\text{ From the first square, this is } 4 \\times (\\frac{1}{2}cd) + \\text{Area}(\\text{inner square})."
+      },
+      {
+        "explanation": "Equate areas.",
+        "workingOut": "c^2 + 2cd + d^2 = 2cd + \\text{Hypotenuse}^2 \\Rightarrow c^2 + d^2 = \\text{Hypotenuse}^2"
+      }
+    ]
+  }
 ];
