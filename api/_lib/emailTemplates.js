@@ -182,6 +182,21 @@ export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, c
 }
 
 /* ──────────────────────────────────────────────────────────────────────────
+   Generic notification — any title + HTML body (schedule updates, messages…)
+   ────────────────────────────────────────────────────────────────────────── */
+export function genericEmail({ title = 'Sapere Aude', body = '', ctaLabel = 'Open the app', ctaHref = APP_URL }) {
+  const inner = `
+    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:28px 32px;">
+      <div style="font-family:'Outfit',sans-serif;font-size:21px;font-weight:800;color:#fff;line-height:1.3;">${esc(title)}</div>
+    </div>
+    <div style="padding:28px 32px;">
+      <div style="font-size:14.5px;line-height:1.65;color:#3f3a5c;">${body}</div>
+      ${ctaLabel ? `<div style="margin-top:24px;">${button(ctaLabel, ctaHref)}</div>` : ''}
+    </div>`;
+  return emailShell(title, inner);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
    Admin summary — internal cron / batch completion reports
    ────────────────────────────────────────────────────────────────────────── */
 export function adminSummaryEmail({ title = 'Summary', rows = [], note = '' }) {
