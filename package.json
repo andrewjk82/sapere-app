@@ -14,6 +14,7 @@
     "firebase-admin": "^13.8.0",
     "framer-motion": "^12.38.0",
     "jsdom": "^29.1.1",
+    "jsxgraph": "^1.12.2",
     "lucide-react": "^1.11.0",
     "nodemailer": "^8.0.7",
     "perfect-freehand": "^1.2.3",

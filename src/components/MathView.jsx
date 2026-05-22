@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import MathGraph from './MathGraph';
 import GeometricDiagram from './GeometricDiagram';
+import JsxGraphDiagram from './JsxGraphDiagram';
 
 /**
  * Minimal safe pre-processing.
@@ -189,8 +190,9 @@ const MathView = ({ content, graphData, style }) => {
       {/* Question text first, then the figure — questions refer to the
           diagram as "below". */}
       <div ref={containerRef} style={combinedStyle} />
-      {graphData && !graphData.html && !graphData.diagram && <MathGraph {...graphData} />}
+      {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && <MathGraph {...graphData} />}
       {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
+      {graphData?.jsxGraph && <JsxGraphDiagram data={graphData.jsxGraph} />}
       {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
     </div>
   );

@@ -1,6 +1,6 @@
 import { useState, useRef, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag } from 'lucide-react';
+import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag, PenLine } from 'lucide-react';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
@@ -318,6 +318,37 @@ const ChallengeReviewView = ({
               )}
             </div>
           )}
+
+          {/* Student's working out — drawings saved on the sketch pad during the quiz */}
+          {(() => {
+            const pages = Array.isArray(result?.workingOutPages) ? result.workingOutPages.filter(Boolean) : [];
+            const single = result?.workingOut ? [result.workingOut] : [];
+            const images = pages.length > 0 ? pages : single;
+            if (images.length === 0) return null;
+            return (
+              <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#faf5ff', border: '1.5px solid #e9d5ff' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px', color: '#7c3aed' }}>
+                  <PenLine size={18} />
+                  <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+                    Student's working out
+                  </span>
+                  {images.length > 1 && (
+                    <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#a78bfa' }}>{images.length} pages</span>
+                  )}
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {images.map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`Working out ${i + 1}`}
+                      style={{ width: '100%', borderRadius: '12px', background: '#fff', border: '1px solid #e2e8f0', display: 'block' }}
+                    />
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Hint */}
           {q.hint && (
