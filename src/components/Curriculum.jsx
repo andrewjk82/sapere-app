@@ -986,11 +986,11 @@ const Curriculum = () => {
       Y9_CH7A_QUESTIONS.forEach(qData => {
         const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
         let optionsField = [];
-        let answerField = qData.a || '';
+        let answerField = qData.a || qData.solution || '';
 
         if (qData.type === 'multiple_choice') {
           const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
+          const correctIndex = shuffledOpts.indexOf(qData.a || qData.solution);
           optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
@@ -1002,15 +1002,15 @@ const Curriculum = () => {
           topicCode: '7A',
           topicTitle: qData.t || "Review of angles",
           isManual: true,
-          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
-          question: qData.q || '',
+          title: ((qData.q || qData.question || '').replace(/\$/g, '').slice(0, 30)) + '...',
+          question: qData.q || qData.question || '',
           difficulty: qData.difficulty || 'medium',
           timeLimit: 120,
           type: qData.type || 'teacher_review',
           options: optionsField,
           answer: answerField,
           hint: qData.h || '',
-          solution: qData.s || '',
+          solution: qData.s || qData.solution || qData.a || '',
           solutionSteps: qData.solutionSteps || [],
           graphData: qData.graphData || null,
           createdAt: serverTimestamp(),
