@@ -986,10 +986,11 @@ const Curriculum = () => {
       const addBatch = writeBatch(db);
       Y9_CH7A_QUESTIONS.forEach(qData => {
         const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        const isMC = qData.type === 'multiple_choice';
         let optionsField = [];
         let answerField = qData.a || qData.solution || '';
 
-        if (qData.type === 'multiple_choice') {
+        if (isMC) {
           const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
           const correctIndex = shuffledOpts.indexOf(qData.a || qData.solution);
           optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
@@ -998,7 +999,7 @@ const Curriculum = () => {
 
         addBatch.set(docRef, {
           chapterId: 'y9-7',
-          chapterTitle: "Chapter 7: Geometry",
+          chapterTitle: "Chapter 7: Congruence and special quadrilaterals",
           topicId: 'y9-7a',
           topicCode: '7A',
           topicTitle: qData.t || "Review of angles",
@@ -1007,7 +1008,11 @@ const Curriculum = () => {
           question: qData.q || qData.question || '',
           difficulty: qData.difficulty || 'medium',
           timeLimit: 120,
-          type: qData.type || 'teacher_review',
+          // "teacher_review" seed questions are open "give reasons" prompts —
+          // store them as short-answer + manual grading so the challenge
+          // renders a text input (not empty multiple-choice options).
+          type: isMC ? 'multiple_choice' : 'short_answer',
+          requiresManualGrading: !isMC,
           options: optionsField,
           answer: answerField,
           hint: qData.h || '',
