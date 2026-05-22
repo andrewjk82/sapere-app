@@ -56,6 +56,7 @@ import ChallengeDetailModal from "./studentDetail/ChallengeDetailModal";
 import BasicCalculationPanel from "./studentDetail/BasicCalculationPanel";
 import DailyPracticeSettings from "./studentDetail/DailyPracticeSettings";
 import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
+import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
@@ -1501,6 +1502,17 @@ const StudentDetail = ({ studentId, onBack }) => {
       case "challenge":
         return (
           <div style={{ display: "grid", gap: "24px" }}>
+
+            {/* PERFORMANCE HERO — snapshot of accuracy, insight and key counters */}
+            {studentAnalytics && (
+              <ChallengePerformanceHero
+                studentAnalytics={studentAnalytics}
+                dailyStats={dailyStats}
+                dailyPracticeStats={dailyPracticeStats}
+                calculationStats={calculationStats}
+                dailyPracticeConfig={dailyPracticeConfig}
+              />
+            )}
 
             {/* ANALYTICS PANEL */}
             {studentAnalytics && (
