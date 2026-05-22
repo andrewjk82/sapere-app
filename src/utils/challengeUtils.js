@@ -16,7 +16,7 @@ export const MAX_HISTORY_PER_TYPE = 7;
 export const CALC_ENGINE_VERSION = 'calc-local-2026-05-13-v1';
 export const CHALLENGE_BOOT_CACHE_VERSION = 1;
 
-export const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', 'α', 'β', 'δ', '°', 'x', 'y', 'z', '+', '-', '×', '÷', '/', '.', '(', ')'];
+export const MATH_SYMBOLS = ['√', '²', '³', '^', 'π', 'θ', 'α', 'β', 'δ', '°', 'x', 'y', 'z', '+', '-', '×', '÷', '/', '.', '=', '<', '>', '≤', '≥', '(', ')'];
 
 // ── Pure Utility Functions ───────────────────────────────────────────────────
 
