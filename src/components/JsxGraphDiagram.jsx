@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import JXG from 'jsxgraph';
+import '../jsxgraph.css';
 
 const JsxGraphDiagram = ({ data, style }) => {
   const boardRef = useRef(null);
@@ -49,8 +50,11 @@ const JsxGraphDiagram = ({ data, style }) => {
     };
   }, [data]);
 
+  const uniqueId = useRef(`jxgbox-${Math.random().toString(36).substr(2, 9)}`);
+
   return (
     <div 
+      id={uniqueId.current}
       ref={boardRef} 
       className="jxgbox" 
       style={{ 

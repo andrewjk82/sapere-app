@@ -64,6 +64,21 @@ export const getAssignedChapters = (profile, assignedYear) => {
   return assignedYear === DEFAULT_YEAR ? [DEFAULT_CHAPTER_ID] : [];
 };
 
+// Map every curriculum chapter id → its year label, so a chapter-only daily
+// practice selection can still resolve the correct year.
+const CHAPTER_YEAR_MAP = (() => {
+  const map = {};
+  Object.entries(CURRICULUM_DATA).forEach(([yearLabel, yearData]) => {
+    const lists = Array.isArray(yearData) ? [yearData] : Object.values(yearData || {});
+    lists.forEach((list) => {
+      if (Array.isArray(list)) {
+        list.forEach((chapter) => { if (chapter?.id) map[chapter.id] = yearLabel; });
+      }
+    });
+  });
+  return map;
+})();
+
 const getValidChapterIdsForYears = (years, courses) => {
   const ids = new Set();
   years.forEach((year) => {
@@ -184,9 +199,9 @@ const slimQuestion = (data) => ({
   question: data.question || "",
   questionImage: removeDataUrl(data.questionImage || data.imageUrl || ""),
   options: getOptions(data).map((option) => (
-    typeof option === "string"
-      ? option
-      : { ...option, imageUrl: removeDataUrl(option.imageUrl || option.image || "") }
+    (typeof option === "object" && option !== null)
+      ? { ...option, imageUrl: removeDataUrl(option.imageUrl || option.image || "") }
+      : String(option)
   )),
   answer: data.answer,
   solution: data.solution || "",
@@ -200,7 +215,7 @@ const slimQuestion = (data) => ({
   topicCode: data.topicCode || "",
   topicTitle: data.topicTitle || "",
   topicGroup: data.topicGroup || "",
-  graphData: data.graphData || null,
+  graphData: data.graphData || (data.diagram ? { diagram: data.diagram } : null),
   subQuestions: Array.isArray(data.subQuestions) ? data.subQuestions : [],
   requiresManualGrading: data.requiresManualGrading === true,
   isManual: data.isManual !== false,
@@ -221,7 +236,14 @@ const buildDailyTargets = (studentProfile = {}) => {
   let assignedYears;
   if (hasConfigYears) {
     assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
-  } else {
+  } else if (hasConfigChapters) {
+    // Chapters were chosen but no year was explicitly ticked — derive the
+    // year(s) from the selected chapters so the chapters validate correctly.
+    assignedYears = [...new Set(
+      config.chapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
+    )].map(normalizeYearLabel).filter(Boolean);
+  }
+  if (!assignedYears || assignedYears.length === 0) {
     // Fallback when no Daily Practice Settings are configured: use the
     // student's enrolled year with all chapters.
     const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;

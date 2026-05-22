@@ -23,6 +23,7 @@ import { Y9_CH4A_QUESTIONS } from '../constants/seedYear9Ch4Questions.js';
 import { Y9_CH5A_QUESTIONS } from '../constants/seedYear9Ch5Questions.js';
 import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
 import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
+import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
@@ -1034,6 +1035,66 @@ const Curriculum = () => {
     }
   };
 
+  const handleSeedY9Ch8Questions = async () => {
+    if (!window.confirm("This will append Year 9 Chapter 8A (Index Laws) questions to your database without deleting existing questions. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      const addBatch = writeBatch(db);
+      Y9_CH8A_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || qData.solution || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a || qData.solution);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y9-8',
+          chapterTitle: "Chapter 8: Index Laws",
+          topicId: 'y9-8a',
+          topicCode: '8A',
+          topicTitle: qData.t || "Index Laws",
+          isManual: true,
+          title: ((qData.q || qData.question || '').replace(/\$/g, '').slice(0, 30)) + '...',
+          question: qData.q || qData.question || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'teacher_review',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || qData.solution || qData.a || '',
+          solutionSteps: qData.solutionSteps || [],
+          graphData: qData.graphData || null,
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully appended ${Y9_CH8A_QUESTIONS.length} Year 9 Ch8A questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y9-8'] = (cached.counts['y9-8'] || 0) + Y9_CH8A_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Year 9 Ch8 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -1856,6 +1917,28 @@ const Curriculum = () => {
                               <span className="sync-card-status">Active ({questionCounts['y9-7']} Qs)</span>
                               <button onClick={handleSeedY9Ch7Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
                                 Re-seed
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 9 Ch8 Index Laws */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>Y9 CH8</span>
+                          <span className="sync-card-title">Index Laws (Seed Y9 Ch8)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y9-8'] ? (
+                            <button onClick={handleSeedY9Ch8Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y9 Ch8
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y9-8']} Qs)</span>
+                              <button onClick={handleSeedY9Ch8Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Append More
                               </button>
                             </div>
                           )}
