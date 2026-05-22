@@ -20,6 +20,7 @@ import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y9_CH3A_QUESTIONS } from '../constants/seedYear9Ch3Questions.js';
 import { Y9_CH4A_QUESTIONS } from '../constants/seedYear9Ch4Questions.js';
+import { Y9_CH5A_QUESTIONS } from '../constants/seedYear9Ch5Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
@@ -838,6 +839,70 @@ const Curriculum = () => {
     }
   };
 
+  const handleSeedY9Ch5Questions = async () => {
+    if (!window.confirm("This will seed all Year 9 Chapter 5A (Expressions) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      const q = query(collRef, where('topicId', '==', 'y9-5a'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      const addBatch = writeBatch(db);
+      Y9_CH5A_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y9-5',
+          chapterTitle: "Chapter 5: Equations",
+          topicId: 'y9-5a',
+          topicCode: '5A',
+          topicTitle: qData.t || "Expressions",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'easy',
+          timeLimit: 120,
+          type: qData.type || 'multiple_choice',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y9_CH5A_QUESTIONS.length} Year 9 Ch5A questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y9-5'] = (cached.counts['y9-5'] || 0) + Y9_CH5A_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Year 9 Ch5 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedCurveQuestion = async () => {
     if (!window.confirm("Add the Year 11 Advanced curve properties question?")) return;
     setIsMigrating(true);
@@ -1593,6 +1658,28 @@ const Curriculum = () => {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                               <span className="sync-card-status">Active ({questionCounts['y9-4']} Qs)</span>
                               <button onClick={handleSeedY9Ch4Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Year 9 Ch5 Expressions */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge y9" style={{ background: '#f59e0b', color: '#fff' }}>Y9 CH5</span>
+                          <span className="sync-card-title">Expressions (Seed Y9 Ch5)</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          {!questionCounts['y9-5'] ? (
+                            <button onClick={handleSeedY9Ch5Questions} disabled={isMigrating} className="sync-btn warning">
+                              🌱 Seed Y9 Ch5
+                            </button>
+                          ) : (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({questionCounts['y9-5']} Qs)</span>
+                              <button onClick={handleSeedY9Ch5Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
                                 Re-seed
                               </button>
                             </div>
