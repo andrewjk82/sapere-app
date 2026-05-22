@@ -22,7 +22,16 @@ import {
 } from '../../utils/secretNote';
 
 // ── Grading helpers ────────────────────────────────────────────────────────
-const norm = (s) => String(s ?? '').replace(/\s+/g, '').toLowerCase();
+// Normalise a maths answer for comparison: unicode superscripts → digits,
+// drop ^ / $ / braces, unify minus signs, strip whitespace. So "3a²-10ab-8b²"
+// and "3a^2 - 10ab - 8b^2" grade as equal.
+const SUPERSCRIPTS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+const norm = (s) => String(s ?? '')
+  .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g, (c) => String(SUPERSCRIPTS.indexOf(c)))
+  .replace(/[\^${}]/g, '')
+  .replace(/[−–—]/g, '-')
+  .replace(/\s+/g, '')
+  .toLowerCase();
 
 const shuffle = (arr) => {
   const a = [...arr];
