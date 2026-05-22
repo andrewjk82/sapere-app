@@ -127,9 +127,17 @@ const toDisplayText = (value, fallback = '') => {
   return str;
 };
 
-const MathView = ({ content, graphData, style }) => {
+const MathView = ({ content, graphData: rawGraphData, style }) => {
   const containerRef = useRef(null);
   const safeContent = toDisplayText(content);
+
+  // graphData may arrive as an object OR as a JSON string (it is stringified
+  // for the Question Bank editor and can survive that way through some save
+  // paths). Normalise to an object so the diagram always renders.
+  let graphData = rawGraphData;
+  if (typeof rawGraphData === 'string' && rawGraphData.trim()) {
+    try { graphData = JSON.parse(rawGraphData); } catch { graphData = null; }
+  }
 
   // The effect fully owns the math div's DOM: it injects the raw content AND
   // runs KaTeX. We deliberately do NOT use dangerouslySetInnerHTML here —
