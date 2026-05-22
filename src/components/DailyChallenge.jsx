@@ -1450,7 +1450,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // happen, but guarantees the main doc stays small).
         const stripDataUrls = (val) => {
           if (typeof val === 'string') {
-            return val.startsWith('data:image/') ? '[image]' : val;
+            return val.startsWith('data:image/') && !val.startsWith('data:image/svg+xml') ? '[image]' : val;
           }
           if (Array.isArray(val)) return val.map(stripDataUrls);
           if (val && typeof val === 'object') {

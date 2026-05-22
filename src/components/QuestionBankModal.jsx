@@ -19,7 +19,7 @@ import {
   documentId,
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
-import MathGraph from './MathGraph';
+import { geometryToSvgDataUrl } from '../utils/geometrySvg';
 
 const QUESTION_PAGE_SIZE = 10;
 const questionBankSessionCache = new Map();
@@ -35,6 +35,46 @@ const stripUndefined = (value) => {
   }
   return value;
 };
+
+const parseGraphData = (value) => {
+  if (!value || !String(value).trim()) return null;
+  if (typeof value === 'object') return value;
+  try {
+    return JSON.parse(value);
+  } catch {
+    return null;
+  }
+};
+
+const stringifyGraphData = (value) => JSON.stringify(value || {}, null, 2);
+
+const withGeometrySnapshot = (graphData) => {
+  if (!graphData?.geometry) return graphData;
+  return {
+    ...graphData,
+    diagramSource: {
+      type: 'geometry',
+      ...(graphData.diagramSource || {}),
+      geometry: graphData.geometry,
+    },
+    diagramSvg: geometryToSvgDataUrl(graphData.geometry),
+    diagramUpdatedAt: new Date().toISOString(),
+  };
+};
+
+const createDefaultGeometryGraph = () => withGeometrySnapshot({
+  geometry: {
+    width: 280,
+    points: { A: [0, 2], B: [-2, -1], C: [2, -1] },
+    segments: [
+      { from: 'A', to: 'B' },
+      { from: 'B', to: 'C' },
+      { from: 'C', to: 'A' },
+    ],
+    angles: [{ at: 'A', label: 'x' }],
+    sideLabels: [],
+  },
+});
 
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
@@ -132,36 +172,182 @@ const FileUploader = ({ onUpload, currentUrl, label }) => {
   );
 };
 
-import MathView, { toDisplayText } from './MathView';
+import MathView from './MathView';
 
 const MathPreview = ({ content, graphData, style = {} }) => {
-  const containerRef = React.useRef(null);
-  const safeContent = toDisplayText(content);
+  return (
+    <div style={{ padding: '16px', background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', minHeight: '50px', ...style }}>
+      {content || graphData ? (
+        <MathView content={content || ''} graphData={graphData} style={{ fontSize: '1rem', color: '#1e293b', lineHeight: 1.6 }} />
+      ) : (
+        <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Preview will appear here...</span>
+      )}
+    </div>
+  );
+};
 
-  useEffect(() => {
-    if (containerRef.current && window.renderMathInElement) {
-      window.renderMathInElement(containerRef.current, {
-        delimiters: [
-          { left: '$$', right: '$$', display: true },
-          { left: '$', right: '$', display: false },
-          { left: '\\(', right: '\\)', display: false },
-          { left: '\\[', right: '\\]', display: true },
-        ],
-        throwOnError: false
-      });
-    }
-  }, [safeContent]);
+const GeometryEditor = ({ graphData, onChange }) => {
+  const geometry = graphData?.geometry;
+  const surfaceRef = React.useRef(null);
+  const [activePoint, setActivePoint] = useState(null);
+  if (!geometry) return null;
+
+  const pointNames = Object.keys(geometry.points || {});
+  const updateGeometry = (nextGeometry) => {
+    onChange(withGeometrySnapshot({ ...(graphData || {}), geometry: nextGeometry }));
+  };
+
+  const setPoint = (name, axis, value) => {
+    const point = geometry.points[name] || [0, 0];
+    updateGeometry({
+      ...geometry,
+      points: {
+        ...geometry.points,
+        [name]: axis === 0 ? [Number(value), point[1]] : [point[0], Number(value)],
+      },
+    });
+  };
+
+  const addPoint = () => {
+    const name = String.fromCharCode(65 + pointNames.length);
+    updateGeometry({
+      ...geometry,
+      points: { ...(geometry.points || {}), [name]: [0, 0] },
+    });
+  };
+
+  const removePoint = (name) => {
+    const nextPoints = { ...(geometry.points || {}) };
+    delete nextPoints[name];
+    updateGeometry({
+      ...geometry,
+      points: nextPoints,
+      segments: (geometry.segments || []).filter((seg) => seg.from !== name && seg.to !== name),
+      angles: (geometry.angles || []).filter((angle) => angle.at !== name),
+      sideLabels: (geometry.sideLabels || []).filter((label) => !label.between?.includes(name)),
+    });
+  };
+
+  const updateSegment = (idx, patch) => {
+    const segments = [...(geometry.segments || [])];
+    segments[idx] = { ...segments[idx], ...patch };
+    updateGeometry({ ...geometry, segments });
+  };
+
+  const updateAngle = (idx, patch) => {
+    const angles = [...(geometry.angles || [])];
+    angles[idx] = { ...angles[idx], ...patch };
+    updateGeometry({ ...geometry, angles });
+  };
+
+  const xs = pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0);
+  const ys = pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0);
+  const minX = Math.min(...xs, -1);
+  const maxX = Math.max(...xs, 1);
+  const minY = Math.min(...ys, -1);
+  const maxY = Math.max(...ys, 1);
+  const pad = 34;
+  const W = 360;
+  const H = 260;
+  const spanX = maxX - minX || 1;
+  const spanY = maxY - minY || 1;
+  const toSvg = (pt) => [
+    pad + ((Number(pt[0]) - minX) / spanX) * (W - pad * 2),
+    pad + ((maxY - Number(pt[1])) / spanY) * (H - pad * 2),
+  ];
+  const fromPointer = (event) => {
+    const rect = surfaceRef.current?.getBoundingClientRect();
+    if (!rect) return [0, 0];
+    const sx = Math.min(W - pad, Math.max(pad, event.clientX - rect.left));
+    const sy = Math.min(H - pad, Math.max(pad, event.clientY - rect.top));
+    const x = minX + ((sx - pad) / (W - pad * 2)) * spanX;
+    const y = maxY - ((sy - pad) / (H - pad * 2)) * spanY;
+    return [Number(x.toFixed(2)), Number(y.toFixed(2))];
+  };
+
+  const dragPoint = (event) => {
+    if (!activePoint) return;
+    event.preventDefault();
+    updateGeometry({
+      ...geometry,
+      points: { ...geometry.points, [activePoint]: fromPointer(event) },
+    });
+  };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      <div ref={containerRef} style={{ padding: '16px', background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', minHeight: '50px', fontSize: '1rem', color: '#1e293b', lineHeight: 1.6, ...style }}>
-        {safeContent || <span style={{ color: '#94a3b8', fontStyle: 'italic' }}>Preview will appear here...</span>}
-      </div>
-      {graphData && (
-        <div style={{ display: 'flex', justifyContent: 'center', padding: '16px', background: 'white', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-          <MathGraph data={graphData} />
+    <div style={{ padding: '18px', borderRadius: '18px', border: '1px solid #ddd6fe', background: '#faf5ff', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+        <div>
+          <div style={{ fontSize: '0.75rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Geometry editor</div>
+          <div style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: 700, marginTop: '3px' }}>Drag points, then adjust lines and angle labels.</div>
         </div>
-      )}
+        <button type="button" onClick={addPoint} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add point</button>
+      </div>
+
+      <svg
+        ref={surfaceRef}
+        viewBox={`0 0 ${W} ${H}`}
+        onPointerMove={dragPoint}
+        onPointerUp={() => setActivePoint(null)}
+        onPointerLeave={() => setActivePoint(null)}
+        style={{ width: '100%', maxWidth: W, alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none' }}
+      >
+        {(geometry.segments || []).map((seg, idx) => {
+          if (!geometry.points[seg.from] || !geometry.points[seg.to]) return null;
+          const [x1, y1] = toSvg(geometry.points[seg.from]);
+          const [x2, y2] = toSvg(geometry.points[seg.to]);
+          return <line key={idx} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#1e3a5f" strokeWidth="3" strokeLinecap="round" strokeDasharray={seg.dashed ? '7 5' : undefined} />;
+        })}
+        {pointNames.map((name) => {
+          const [x, y] = toSvg(geometry.points[name]);
+          return (
+            <g key={name} onPointerDown={(event) => { event.preventDefault(); setActivePoint(name); }} style={{ cursor: 'grab' }}>
+              <circle cx={x} cy={y} r="10" fill="#8b5cf6" />
+              <text x={x} y={y - 15} textAnchor="middle" fill="#475569" fontSize="13" fontWeight="800">{name}</text>
+            </g>
+          );
+        })}
+      </svg>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
+        {pointNames.map((name) => (
+          <div key={name} style={{ padding: '10px', borderRadius: '12px', background: '#fff', border: '1px solid #ede9fe' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+              <strong style={{ color: '#4c1d95' }}>{name}</strong>
+              <button type="button" onClick={() => removePoint(name)} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '3px 6px', cursor: 'pointer', fontWeight: 800 }}>Remove</button>
+            </div>
+            <div style={{ display: 'flex', gap: '6px' }}>
+              <input type="number" step="0.25" value={geometry.points[name]?.[0] ?? 0} onChange={(e) => setPoint(name, 0, e.target.value)} style={{ width: '100%', padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+              <input type="number" step="0.25" value={geometry.points[name]?.[1] ?? 0} onChange={(e) => setPoint(name, 1, e.target.value)} style={{ width: '100%', padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <button type="button" onClick={() => updateGeometry({ ...geometry, segments: [...(geometry.segments || []), { from: pointNames[0] || 'A', to: pointNames[1] || pointNames[0] || 'A' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add line</button>
+        {(geometry.segments || []).map((seg, idx) => (
+          <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr auto auto auto', gap: '8px', alignItems: 'center' }}>
+            <select value={seg.from} onChange={(e) => updateSegment(idx, { from: e.target.value })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
+            <select value={seg.to} onChange={(e) => updateSegment(idx, { to: e.target.value })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b' }}><input type="checkbox" checked={!!seg.dashed} onChange={(e) => updateSegment(idx, { dashed: e.target.checked || undefined })} /> Dashed</label>
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b' }}><input type="checkbox" checked={!!seg.arrow} onChange={(e) => updateSegment(idx, { arrow: e.target.checked || undefined })} /> Arrow</label>
+            <button type="button" onClick={() => updateGeometry({ ...geometry, segments: (geometry.segments || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '8px', cursor: 'pointer' }}>Remove</button>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <button type="button" onClick={() => updateGeometry({ ...geometry, angles: [...(geometry.angles || []), { at: pointNames[0] || 'A', label: 'x' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add angle</button>
+        {(geometry.angles || []).map((angle, idx) => (
+          <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr auto auto', gap: '8px', alignItems: 'center' }}>
+            <select value={angle.at} onChange={(e) => updateAngle(idx, { at: e.target.value })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
+            <input value={angle.label || ''} onChange={(e) => updateAngle(idx, { label: e.target.value })} placeholder="label" style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b' }}><input type="checkbox" checked={!!angle.right} onChange={(e) => updateAngle(idx, { right: e.target.checked || undefined })} /> Right</label>
+            <button type="button" onClick={() => updateGeometry({ ...geometry, angles: (geometry.angles || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '8px', cursor: 'pointer' }}>Remove</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -493,7 +679,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       let graphData = null;
       if (formData.graphData && formData.graphData.trim()) {
         try {
-          graphData = JSON.parse(formData.graphData);
+          graphData = withGeometrySnapshot(JSON.parse(formData.graphData));
         } catch {
           showToast("Graph Data JSON is invalid. Please fix it or clear the field.", 'error');
           return;
@@ -643,7 +829,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                           </div>
                         )}
                         <div style={{ marginBottom: '12px' }}>
-                          <MathPreview content={q.question} />
+                          <MathPreview content={q.question} graphData={q.graphData} />
                         </div>
                         {q.questionImage && (
                           <div style={{ marginBottom: '12px' }}>
@@ -727,7 +913,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 <textarea rows={3} value={formData.questionText} onChange={e => handleQuestionTextChange(e.target.value)} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="e.g. Solve for $x$: $x^2 = 25$" />
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>LIVE PREVIEW:</span>
-                  <MathPreview content={formData.questionText} graphData={formData.graphData ? (() => { try { return JSON.parse(formData.graphData); } catch { return null; } })() : null} />
+                  <MathPreview content={formData.questionText} graphData={parseGraphData(formData.graphData)} />
                 </div>
               </div>
 
@@ -742,7 +928,41 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }} 
                   placeholder='{ "equations": ["y = 2x + 1"], "config": { "xRange": [-5, 5], "yRange": [-5, 5] } }' 
                 />
+                <div style={{ display: 'flex', gap: '8px', marginTop: '10px', flexWrap: 'wrap' }}>
+                  <button
+                    type="button"
+                    onClick={() => setFormData(prev => ({
+                      ...prev,
+                      graphData: stringifyGraphData(createDefaultGeometryGraph()),
+                    }))}
+                    style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}
+                  >
+                    Create editable geometry
+                  </button>
+                  {parseGraphData(formData.graphData)?.geometry && (
+                    <button
+                      type="button"
+                      onClick={() => setFormData(prev => ({
+                        ...prev,
+                        graphData: stringifyGraphData(withGeometrySnapshot(parseGraphData(prev.graphData))),
+                      }))}
+                      style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #bbf7d0', background: '#f0fdf4', color: '#15803d', fontWeight: 800, cursor: 'pointer' }}
+                    >
+                      Regenerate SVG snapshot
+                    </button>
+                  )}
+                </div>
               </div>
+
+              {parseGraphData(formData.graphData)?.geometry && (
+                <GeometryEditor
+                  graphData={parseGraphData(formData.graphData)}
+                  onChange={(nextGraphData) => setFormData(prev => ({
+                    ...prev,
+                    graphData: stringifyGraphData(nextGraphData),
+                  }))}
+                />
+              )}
 
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Question Image (Optional)</label>
@@ -750,10 +970,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   <FileUploader 
                     currentUrl={formData.questionImage} 
                     onUpload={(url) => setFormData({...formData, questionImage: url})} 
-                    label="Upload Question Image"
+                    label={formData.questionImage ? 'Replace Question Image' : 'Upload Question Image'}
                   />
                   {formData.questionImage && (
-                    <img src={formData.questionImage} alt="Preview" style={{ width: '54px', height: '54px', borderRadius: '12px', objectFit: 'cover', border: '1px solid #e2e8f0' }} />
+                    <img src={formData.questionImage} alt="Preview" style={{ width: '88px', height: '64px', borderRadius: '12px', objectFit: 'contain', border: '1px solid #e2e8f0', background: '#f8fafc' }} />
                   )}
                 </div>
               </div>

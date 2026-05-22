@@ -191,7 +191,9 @@ const correctQuestionAnswer = (question) => {
 };
 
 const removeDataUrl = (value) =>
-  typeof value === "string" && value.startsWith("data:") ? "" : value;
+  typeof value === "string" && value.startsWith("data:") && !value.startsWith("data:image/svg+xml")
+    ? ""
+    : value;
 
 const slimQuestion = (data) => ({
   id: data.id,
