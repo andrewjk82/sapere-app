@@ -1,21 +1,21 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from 'react';
-import { 
-  BookOpen, CheckCircle2, Layers, Star, BookText, 
-  Award, Lock, Check, Play, BookMarked
-} from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Zap, Trophy, BookOpen, GraduationCap } from 'lucide-react';
 import { db } from '../firebase/config';
 import { doc, getDoc, onSnapshot, collection, query, where, setDoc, serverTimestamp } from 'firebase/firestore';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import './learning-path.css';
 
+// Per-chapter XP is derived from its lesson count so the numbers are stable
+// and proportional even though XP is not tracked per chapter in the database.
+const XP_PER_LESSON = 12;
+
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
   const [activeSubject, setActiveSubject] = useState('Maths');
-  const [activeChapterId, setActiveChapterId] = useState(null);
   const [curriculum, setCurriculum] = useState([]);
   const [progress, setProgress] = useState({});
   const [loading, setLoading] = useState(true);
@@ -28,14 +28,15 @@ const LearningPath = ({ profile }) => {
   const rawYears = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear || 'Year 3'];
   const years = rawYears.map(normalizeYearLabel).filter(Boolean);
   const year = years[0] || 'Year 3';
-  const term = "Term 2, 2026"; // Mocking as per design
+  const courses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
+  const course = courses[0];
 
-  // Fetch Curriculum
+  // ── Fetch curriculum ──────────────────────────────────────────────────
   useEffect(() => {
     if (activeSubject === 'English') {
       setCurriculum([
-        { id: 'eng-1', title: 'Reading Comprehension', modules: 10, topics: [{ id: 'et1', title: 'Inference', status: 'active' }, { id: 'et2', title: 'Context clues', status: 'next' }] },
-        { id: 'eng-2', title: 'Grammar & Punctuation', modules: 8, topics: [{ id: 'et3', title: 'Pronouns', status: 'done' }, { id: 'et4', title: 'Adverbs', status: 'next' }] },
+        { id: 'eng-1', title: 'Reading Comprehension', modules: 10, topics: [] },
+        { id: 'eng-2', title: 'Grammar & Punctuation', modules: 8, topics: [] },
         { id: 'eng-3', title: 'Writing: Creative', modules: 6, topics: [] },
       ]);
       setLoading(false);
@@ -43,11 +44,7 @@ const LearningPath = ({ profile }) => {
     }
 
     const isSenior = ['Year 11', 'Year 12'].includes(year);
-    const courses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
-    const course = courses[0];
-    const docId = isSenior 
-      ? `${year.replace(' ', '_')}_${course}`
-      : year.replace(' ', '_');
+    const docId = isSenior ? `${year.replace(' ', '_')}_${course}` : year.replace(' ', '_');
 
     let cancelled = false;
     const cacheKey = `curriculum-doc:v1:${docId}`;
@@ -57,13 +54,9 @@ const LearningPath = ({ profile }) => {
       setLoading(false);
     }
 
-    // Robust fallback to the bundled curriculum so chapters always render
-    // even if the Firestore curriculum doc is missing or empty.
     const resolveFallbackCurriculum = () => {
       let data = CURRICULUM_DATA[year] || CURRICULUM_DATA[normalizeYearLabel(year)] || [];
-      if (!Array.isArray(data)) {
-        data = data[course] || Object.values(data)[0] || [];
-      }
+      if (!Array.isArray(data)) data = data[course] || Object.values(data)[0] || [];
       return Array.isArray(data) ? data : [];
     };
 
@@ -78,10 +71,7 @@ const LearningPath = ({ profile }) => {
           const chapters = snap.data().chapters;
           const version = remoteVersion || Date.now();
           if (!remoteVersion) {
-            setDoc(doc(db, 'sync_meta', 'curriculum'), {
-              version,
-              updatedAt: serverTimestamp(),
-            }, { merge: true }).catch(() => {});
+            setDoc(doc(db, 'sync_meta', 'curriculum'), { version, updatedAt: serverTimestamp() }, { merge: true }).catch(() => {});
           }
           setCurriculum(chapters);
           localCache.set(cacheKey, { version, savedAt: Date.now(), chapters });
@@ -97,313 +87,236 @@ const LearningPath = ({ profile }) => {
     };
 
     loadCurriculum();
-    return () => {
-      cancelled = true;
-    };
-  }, [year, activeSubject, profile?.assignedCourse]);
+    return () => { cancelled = true; };
+  }, [year, activeSubject, profile?.assignedCourse]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Fetch Progress
+  // ── Fetch per-chapter progress ────────────────────────────────────────
   useEffect(() => {
-    if (!user?.uid) return;
+    if (!user?.uid) return undefined;
     const q = query(collection(db, 'chapterProgress'), where('userId', '==', user.uid));
     const unsub = onSnapshot(q, (snap) => {
       const prog = {};
-      snap.docs.forEach(d => {
-        const data = d.data();
-        prog[data.chapterId] = data;
-      });
+      snap.docs.forEach((d) => { const data = d.data(); prog[data.chapterId] = data; });
       setProgress(prog);
     });
     return unsub;
   }, [user?.uid]);
 
   const availableSubjects = useMemo(() => {
-    const subjects = [];
     const studentSubject = (profile?.subject || '').toLowerCase();
-    
-    // Check if Maths is included
-    if (studentSubject.includes('math') || studentSubject === '' || !profile?.subject) {
-      // Calculate dynamic progress for Maths
-      const teacherCompleted = profile?.completedChapters || [];
-      const totalChapters = curriculum.length || 1;
-      const completedInCurriculum = teacherCompleted.filter(id => 
-        curriculum.some(ch => ch.id === id)
-      ).length;
-      const dynamicProgress = Math.min(Math.round((completedInCurriculum / totalChapters) * 100), 100);
+    const subjects = [];
+    if (studentSubject.includes('math') || !profile?.subject) subjects.push('Maths');
+    if (studentSubject.includes('english') || !profile?.subject) subjects.push('English');
+    return subjects.length ? subjects : ['Maths'];
+  }, [profile?.subject]);
 
-      subjects.push({
-        id: 'Maths',
-        label: 'Maths',
-        progress: dynamicProgress,
-        color: '#6366f1',
-        lightColor: '#818cf8',
-        shadow: 'rgba(99,102,241,0.12)',
-        icon: <BookOpen size={20} className="subject-icon" style={{ color: '#6366f1' }} />
-      });
-    }
-    
-    // Check if English is included
-    if (studentSubject.includes('english') || studentSubject === '' || !profile?.subject) {
-      subjects.push({
-        id: 'English',
-        label: 'English',
-        progress: 0,
-        color: '#10b981',
-        lightColor: '#10b981',
-        shadow: 'rgba(16,185,129,0.1)',
-        icon: <BookText size={20} className="subject-icon" style={{ color: '#10b981' }} />
-      });
-    }
-    
-    return subjects;
-  }, [profile?.subject, profile?.completedChapters, curriculum]);
-
-  // Ensure activeSubject is valid for the current student
   useEffect(() => {
-    if (availableSubjects.length > 0) {
-      const isValid = availableSubjects.find(s => s.id === activeSubject);
-      if (!isValid) {
-        setActiveSubject(availableSubjects[0].id);
-      }
-    }
+    if (!availableSubjects.includes(activeSubject)) setActiveSubject(availableSubjects[0]);
   }, [availableSubjects, activeSubject]);
 
-  if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
+  // ── Derive each chapter's state, XP and lesson count ──────────────────
+  const nodes = useMemo(() => {
+    const teacherAssigned = profile?.assignedChapters || [];
+    const teacherCompleted = profile?.completedChapters || [];
+    return curriculum.map((chapter, idx) => {
+      const chapProgress = progress[chapter.id]?.progress || 0;
+      const isTeacherCompleted = teacherCompleted.includes(chapter.id);
+      const isTeacherAssigned = teacherAssigned.includes(chapter.id);
+      const noAssignments = teacherAssigned.length === 0 && teacherCompleted.length === 0;
 
-  const isMobile = window.innerWidth < 768;
+      const isDone = isTeacherCompleted || chapProgress === 100;
+      const isCurrent = !isDone && ((isTeacherAssigned) || (noAssignments && idx === 0));
+      const isNext = !isDone && !isCurrent && (isTeacherAssigned || (noAssignments && idx < 3));
+      const isLocked = !isDone && !isCurrent && !isNext;
 
-  // Circular progress calculations
-  const circleRadius = 26;
-  const circleCircumference = 2 * Math.PI * circleRadius; // ~163.36
+      const lessons = (Array.isArray(chapter.topics) && chapter.topics.length) || chapter.modules || 12;
+      const xpTotal = Math.round((lessons * XP_PER_LESSON) / 10) * 10;
+      const pct = isTeacherCompleted ? 100 : chapProgress;
+      const xpEarned = Math.round((pct / 100) * xpTotal);
+
+      return {
+        ...chapter, idx, lessons, xpTotal, xpEarned, pct,
+        state: isDone ? 'done' : isCurrent ? 'current' : isNext ? 'next' : 'locked',
+      };
+    });
+  }, [curriculum, progress, profile?.assignedChapters, profile?.completedChapters]);
+
+  const overview = useMemo(() => {
+    const total = nodes.length || 1;
+    const doneCount = nodes.filter((n) => n.state === 'done').length;
+    const xpAvailable = nodes.reduce((s, n) => s + n.xpTotal, 0);
+    const xpEarned = nodes.reduce((s, n) => s + n.xpEarned, 0);
+    const totalLessons = nodes.reduce((s, n) => s + n.lessons, 0);
+    const started = nodes.filter((n) => n.pct > 0);
+    const mastery = started.length
+      ? Math.round(started.reduce((s, n) => s + n.pct, 0) / started.length)
+      : 0;
+    return {
+      total, doneCount, xpAvailable, xpEarned, totalLessons, mastery,
+      termPct: Math.round((doneCount / total) * 100),
+    };
+  }, [nodes]);
+
+  if (loading) return <div className="app-loading"><div className="app-spinner" /></div>;
+
+  const STATE = {
+    done:    { label: 'Mastered',    accent: '#10b981', soft: '#ecfdf5', border: '#a7f3d0', cta: 'Review',   Icon: CheckCircle2, CtaIcon: RotateCcw },
+    current: { label: 'In progress', accent: '#7c3aed', soft: '#f5f3ff', border: '#ddd6fe', cta: 'Continue', Icon: BookMarked,   CtaIcon: Play },
+    next:    { label: 'Up next',     accent: '#0ea5e9', soft: '#f0f9ff', border: '#bae6fd', cta: 'Start',    Icon: BookOpen,     CtaIcon: Play },
+    locked:  { label: 'Locked',      accent: '#94a3b8', soft: '#f8fafc', border: '#e2e8f0', cta: 'Locked',   Icon: Lock,         CtaIcon: Lock },
+  };
+
+  // ── Overview pill ──────────────────────────────────────────────────────
+  const pill = (label, value, sub, { lead = false, icon = null } = {}) => (
+    <div style={{
+      padding: '18px 20px', borderRadius: '20px', position: 'relative', overflow: 'hidden', minWidth: 0,
+      background: lead ? 'linear-gradient(135deg, #1e1b4b, #312e81)' : 'rgba(255,255,255,0.92)',
+      border: lead ? 'none' : '1px solid rgba(167,139,250,0.18)',
+      boxShadow: lead ? '0 18px 40px rgba(30,27,75,0.25)' : '0 8px 24px rgba(91,33,182,0.05)',
+    }}>
+      {icon && <div style={{ position: 'absolute', right: '14px', top: '14px', color: lead ? 'rgba(245,208,254,0.55)' : 'rgba(139,92,246,0.32)' }}>{icon}</div>}
+      <div style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: lead ? 'rgba(255,255,255,0.7)' : '#8b7aa7' }}>{label}</div>
+      <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: '1.85rem', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: lead ? '#fff' : '#1e1b4b' }}>{value}</div>
+      <div style={{ fontSize: '0.78rem', fontWeight: 600, marginTop: '6px', color: lead ? 'rgba(255,255,255,0.8)' : '#6d6a85' }}>{sub}</div>
+    </div>
+  );
 
   return (
-    <div className="learning-path-wrapper">
-      {/* Premium Header Banner */}
-      <div className="learning-path-header-banner">
-        <h1 className="learning-path-header-title">My Learning Path</h1>
-        <div className="learning-path-header-subtitle">
-          {year} • {term}
+    <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+      {/* Subject switch — only when the student studies more than one subject */}
+      {availableSubjects.length > 1 && (
+        <div style={{ display: 'inline-flex', padding: '4px', borderRadius: '12px', background: 'rgba(167,139,250,0.12)', gap: '4px', marginBottom: '16px' }}>
+          {availableSubjects.map((s) => (
+            <button
+              key={s}
+              onClick={() => setActiveSubject(s)}
+              style={{
+                padding: '7px 14px', borderRadius: '9px', border: 'none', cursor: 'pointer',
+                fontSize: '0.8rem', fontWeight: 800,
+                background: activeSubject === s ? '#fff' : 'transparent',
+                color: activeSubject === s ? '#1e1b4b' : '#8b7aa7',
+              }}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Header */}
+      <div style={{ marginBottom: '20px' }}>
+        <div style={{ fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.16em', color: '#8b5cf6', textTransform: 'uppercase' }}>
+          {year}{activeSubject === 'Maths' && course ? ` · ${course} Maths` : ` · ${activeSubject}`}
+        </div>
+        <h2 style={{ fontFamily: '"Outfit", sans-serif', fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', color: '#1e1b4b', margin: '4px 0 0' }}>
+          Your learning path
+        </h2>
+        <div style={{ color: '#6d6a85', marginTop: '6px', fontSize: '0.9rem', fontWeight: 600 }}>
+          {overview.total} chapters · {overview.xpAvailable.toLocaleString()} XP available this term
         </div>
       </div>
 
-      {/* Subject Selector Tabs */}
-      <div className="subject-grid">
-        {availableSubjects.map((subject) => {
-          const isActive = activeSubject === subject.id;
-          const canSwitch = availableSubjects.length > 1;
-          const strokeDashoffset = circleCircumference - (subject.progress / 100) * circleCircumference;
-          
+      {/* Overview pills */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '12px', marginBottom: '24px' }}>
+        {pill('Term progress', `${overview.termPct}%`, `${overview.doneCount} of ${overview.total} chapters complete`, { lead: true, icon: <GraduationCap size={20} /> })}
+        {pill('XP earned', overview.xpEarned.toLocaleString(), `of ${overview.xpAvailable.toLocaleString()} available`, { icon: <Zap size={18} /> })}
+        {pill('Lessons', overview.totalLessons, `across ${overview.total} chapters`, { icon: <BookOpen size={18} /> })}
+        {pill('Mastery score', `${overview.mastery}%`, overview.mastery >= 80 ? 'excellent consistency' : 'keep building it up', { icon: <Trophy size={18} /> })}
+      </div>
+
+      {/* Vertical path */}
+      <div style={{ position: 'relative', paddingLeft: '34px' }}>
+        {/* The spine */}
+        <div style={{ position: 'absolute', left: '13px', top: '12px', bottom: '12px', width: '3px', borderRadius: '999px', background: 'linear-gradient(180deg, #ddd6fe, #f1f5f9)' }} />
+
+        {nodes.map((n) => {
+          const s = STATE[n.state];
+          const num = String(n.idx + 1).padStart(2, '0');
           return (
-            <motion.div 
-              key={subject.id}
-              whileTap={canSwitch ? { scale: 0.98 } : {}}
-              onClick={() => canSwitch && setActiveSubject(subject.id)}
-              className={`subject-tab-card ${isActive ? 'is-active' : ''} ${subject.id === 'Maths' ? 'subject-maths' : 'subject-english'}`}
-              style={{ cursor: canSwitch ? 'pointer' : 'default' }}
+            <motion.div
+              key={n.id}
+              initial={{ opacity: 0, x: 10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: n.idx * 0.04 }}
+              style={{ position: 'relative', marginBottom: '14px' }}
             >
-              <div className="subject-tab-info">
-                <div className="subject-tab-badge">
-                  <span className="subject-tab-badge-dot" style={{ backgroundColor: subject.color }} />
-                  {subject.label}
-                </div>
-                <div className="subject-tab-title-row">
-                  <span className="subject-tab-pct">{subject.progress}%</span>
-                  <span className="subject-tab-lbl" style={{ color: subject.color }}>COMPLETED</span>
-                </div>
+              {/* Node dot */}
+              <div style={{
+                position: 'absolute', left: '-34px', top: '20px',
+                width: '28px', height: '28px', borderRadius: '50%',
+                background: n.state === 'locked' ? '#f1f5f9' : s.accent,
+                border: '3px solid #fff', boxShadow: `0 0 0 2px ${s.border}`,
+                display: 'grid', placeItems: 'center', color: n.state === 'locked' ? '#94a3b8' : '#fff',
+              }}>
+                <s.Icon size={14} strokeWidth={2.6} />
               </div>
-              
-              {/* Circular SVG Progress Ring */}
-              <div className="subject-tab-progress-circle">
-                <svg width="72" height="72" viewBox="0 0 72 72">
-                  <circle className="circular-bg" cx="36" cy="36" r={circleRadius} />
-                  <circle 
-                    className="circular-indicator" 
-                    cx="36" 
-                    cy="36" 
-                    r={circleRadius} 
-                    stroke={subject.color}
-                    strokeDasharray={circleCircumference}
-                    strokeDashoffset={strokeDashoffset}
-                  />
-                </svg>
-                <div className="subject-tab-icon-center">
-                  {subject.icon}
+
+              {/* Chapter card */}
+              <div style={{
+                padding: '16px 18px', borderRadius: '18px',
+                background: n.state === 'locked' ? '#fbfbfd' : '#fff',
+                border: `1px solid ${s.border}`,
+                boxShadow: n.state === 'current' ? '0 14px 32px rgba(124,58,237,0.12)' : '0 6px 18px rgba(15,23,42,0.04)',
+                opacity: n.state === 'locked' ? 0.72 : 1,
+              }}>
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px' }}>
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontFamily: '"Outfit", sans-serif', fontSize: '0.78rem', fontWeight: 900, color: '#cbd5e1' }}>{num}</span>
+                      <span style={{
+                        fontSize: '0.6rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase',
+                        padding: '3px 8px', borderRadius: '999px', background: s.soft, color: s.accent,
+                      }}>{s.label}</span>
+                    </div>
+                    <h3 style={{ fontFamily: '"Outfit", sans-serif', fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', margin: '7px 0 0' }}>
+                      {n.title}
+                    </h3>
+                  </div>
+                  <button
+                    disabled={n.state === 'locked'}
+                    style={{
+                      flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: '6px',
+                      padding: '9px 14px', borderRadius: '12px', border: 'none',
+                      fontSize: '0.8rem', fontWeight: 800,
+                      cursor: n.state === 'locked' ? 'not-allowed' : 'pointer',
+                      background: n.state === 'locked' ? '#f1f5f9' : s.accent,
+                      color: n.state === 'locked' ? '#94a3b8' : '#fff',
+                    }}
+                  >
+                    <s.CtaIcon size={14} /> {s.cta}
+                  </button>
                 </div>
+
+                {/* Meta row */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginTop: '12px', flexWrap: 'wrap' }}>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.78rem', fontWeight: 800, color: '#64748b' }}>
+                    <Zap size={13} style={{ color: '#f59e0b' }} />
+                    {n.xpEarned} / {n.xpTotal} XP
+                  </span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.78rem', fontWeight: 700, color: '#94a3b8' }}>
+                    <BookOpen size={13} /> {n.lessons} lessons
+                  </span>
+                  {n.state === 'current' && (
+                    <span style={{ marginLeft: 'auto', fontSize: '0.78rem', fontWeight: 900, color: s.accent }}>
+                      {n.pct}% complete
+                    </span>
+                  )}
+                </div>
+
+                {/* Progress bar for the in-progress chapter */}
+                {n.state === 'current' && (
+                  <div style={{ height: '6px', borderRadius: '999px', background: '#eef2ff', marginTop: '10px', overflow: 'hidden' }}>
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={{ width: `${n.pct}%` }}
+                      style={{ height: '100%', borderRadius: '999px', background: 'linear-gradient(90deg, #a78bfa, #7c3aed)' }}
+                    />
+                  </div>
+                )}
               </div>
             </motion.div>
           );
         })}
-      </div>
-
-      {/* Chapters Container */}
-      <div className="app-panel learning-path-panel">
-        <div className="learning-path-panel-title">
-          <Layers size={15} style={{ color: 'var(--lp-primary)' }} />
-          CHAPTERS • {year.toUpperCase()}
-        </div>
-        
-        <div className="learning-timeline-container">
-          {curriculum.map((chapter, idx) => {
-            const chapProgress = progress[chapter.id]?.progress || 0;
-            
-            // Respect teacher assignments
-            const teacherAssigned = profile?.assignedChapters || [];
-            const teacherCompleted = profile?.completedChapters || [];
-            
-            const isTeacherCompleted = teacherCompleted.includes(chapter.id);
-            const isTeacherAssigned = teacherAssigned.includes(chapter.id);
-            
-            // A chapter is "Done" if the teacher marked it so OR it's 100% complete
-            const isDone = isTeacherCompleted || chapProgress === 100;
-            
-            // A chapter is active if:
-            // 1. It's the one currently opened (activeChapterId)
-            // 2. OR it's specifically assigned by the teacher
-            // 3. OR it's the fallback default (idx === 0 if no assignments exist)
-            const isActive = activeChapterId === chapter.id || 
-                           (isTeacherAssigned && !isDone) ||
-                           (!activeChapterId && teacherAssigned.length === 0 && teacherCompleted.length === 0 && idx === 0 && !isDone); 
-            
-            // A chapter is "next" if it's assigned by the teacher but not active/done
-            const isNext = !isDone && !isActive && (isTeacherAssigned || (teacherAssigned.length === 0 && teacherCompleted.length === 0 && idx < 3));
-            
-            // A chapter is locked only if it's not teacher-assigned/completed AND not within the default starting range
-            const isLocked = !isTeacherAssigned && !isTeacherCompleted && (teacherAssigned.length > 0 || teacherCompleted.length > 0 || idx > 2);
-
-            const chapterNumberText = activeSubject === 'English'
-              ? `Chapter ${idx + 1}`
-              : (year === 'Basic Calculation' ? `Stage ${idx + 1}` : `Chapter ${idx + 1}`);
-
-            // Build classes for styling states
-            const statusClass = isDone ? 'is-done' : isActive ? 'is-active' : isNext ? 'is-next' : 'is-locked';
-
-            return (
-              <motion.div 
-                key={chapter.id}
-                layout
-                onClick={() => !isLocked && setActiveChapterId(chapter.id === activeChapterId ? null : chapter.id)}
-                className={`timeline-chapter-item ${statusClass}`}
-              >
-                {/* Timeline Axis Bullet */}
-                <div className="timeline-chapter-bullet" />
-                
-                {/* Curriculum Chapter Card */}
-                <div className={`chapter-card-premium ${isActive ? 'is-active' : ''} ${isLocked ? 'is-locked' : ''}`}>
-                  <div className="chapter-card-layout">
-                    {/* Chapter Icon */}
-                    <div className="chapter-card-icon-box">
-                      {isDone ? (
-                        <CheckCircle2 size={24} />
-                      ) : isLocked ? (
-                        <Lock size={22} />
-                      ) : (
-                        <BookMarked size={24} />
-                      )}
-                    </div>
-                    
-                    {/* Content Section */}
-                    <div className="chapter-card-main">
-                      <div className="chapter-card-title-row">
-                        <div>
-                          {chapterNumberText && (
-                            <span className="chapter-card-chapter-num">
-                              {chapterNumberText}
-                            </span>
-                          )}
-                          <h3 className="chapter-card-title">{chapter.title}</h3>
-                        </div>
-                        <div className="chapter-card-meta-badge-row">
-                          <span className="chapter-card-pct-label">{isTeacherCompleted ? 100 : chapProgress}%</span>
-                          <div className={`chapter-card-status-badge status-${isDone ? 'done' : isActive ? 'active' : isNext ? 'next' : 'locked'}`}>
-                            {isDone ? 'Done' : isActive ? 'Active' : isNext ? 'Next' : 'Locked'}
-                          </div>
-                        </div>
-                      </div>
-                      
-                      {/* Chapter Progress Bar */}
-                      <div className="chapter-card-progress-track">
-                        <motion.div 
-                          initial={{ width: 0 }} 
-                          animate={{ width: `${isTeacherCompleted ? 100 : chapProgress}%` }} 
-                          className="chapter-card-progress-fill" 
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Drill-down Topics Area */}
-      <AnimatePresence>
-        {activeChapterId && (
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            className="topics-drilldown-panel"
-          >
-            <div className="topics-drilldown-title">
-              <BookOpen size={14} style={{ color: 'var(--lp-primary)', verticalAlign: 'middle', marginRight: '6px' }} />
-              {curriculum.find(c => c.id === activeChapterId)?.title.toUpperCase()} • TOPICS
-            </div>
-            <div className="topics-chips-grid">
-              {(curriculum.find(c => c.id === activeChapterId)?.topics || [
-                { id: 't1', title: 'Patterns', status: 'done' },
-                { id: 't2', title: 'Number sentences', status: 'done' },
-                { id: 't3', title: 'Equations', status: 'active' },
-                { id: 't4', title: 'Variables', status: 'next' },
-                { id: 't5', title: 'Functions', status: 'next' },
-              ]).map(topic => {
-                const topicClass = topic.status === 'active' ? 'is-active' : topic.status === 'done' ? 'is-done' : 'is-next';
-                return (
-                  <div 
-                    key={topic.id}
-                    className={`topic-interactive-chip ${topicClass}`}
-                  >
-                    {topic.status === 'done' && <Check size={16} style={{ marginRight: 4 }} />}
-                    {topic.status === 'active' && <Play size={14} style={{ marginRight: 6, fill: '#fff' }} />}
-                    {topic.title}
-                  </div>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Recent Achievements */}
-      <div className="achievements-panel">
-        <div className="achievements-title">
-          <Award size={16} style={{ color: 'var(--lp-primary)', verticalAlign: 'middle', marginRight: '6px' }} />
-          RECENT ACHIEVEMENTS
-        </div>
-        <div className="achievements-list-grid">
-          {[
-            { id: 1, title: 'Number chapter complete!', date: '22 Apr • Maths', icon: <Star size={22} style={{ fill: '#d97706' }} />, color: '#fef3c7', iconColor: '#d97706' },
-            { id: 2, title: 'Patterns mastered', date: '18 Apr • Maths • Algebra', icon: <Award size={22} style={{ fill: '#4338ca' }} />, color: '#e0e7ff', iconColor: '#4338ca' },
-            { id: 3, title: 'Algebra chapter complete', date: 'Next goal', icon: <Lock size={22} />, color: '#f1f5f9', iconColor: '#94a3b8', isLocked: true }
-          ].map(achievement => (
-            <div 
-              key={achievement.id} 
-              className={`achievement-card-premium ${achievement.isLocked ? 'is-locked' : ''}`}
-            >
-              <div 
-                className="achievement-badge-container" 
-                style={{ backgroundColor: achievement.color, color: achievement.iconColor }}
-              >
-                {achievement.icon}
-              </div>
-              <div className="achievement-card-info">
-                <h4 className="achievement-card-title">{achievement.title}</h4>
-                <p className="achievement-card-date">{achievement.date}</p>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );
