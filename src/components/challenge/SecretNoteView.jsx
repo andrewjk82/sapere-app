@@ -11,7 +11,7 @@ import { collection, addDoc, serverTimestamp, doc, setDoc, increment } from 'fir
 
 // XP awarded for each Secret Note question solved correctly.
 const XP_PER_QUESTION = 5;
-import { getOptions, getOptionText } from '../../utils/challengeUtils';
+import { getOptions, getOptionText, MATH_SYMBOLS } from '../../utils/challengeUtils';
 import {
   MISTAKE_TAGS,
   getNote,
@@ -106,6 +106,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const [reviewSentIds, setReviewSentIds] = useState([]);
   const canvasRef = useRef(null);
   const solvePadRef = useRef(null); // permanent side working-out pad (desktop)
+  const answerInputRef = useRef(null); // short-answer text input (for the symbol pad)
 
   const item = queue[idx] || null;
   const question = item?.question || null;
@@ -371,19 +372,66 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
             })}
           </div>
         ) : (
-          <input
-            className="sn__input"
-            type="text"
-            disabled={isFeedback}
-            value={answer}
-            onChange={(e) => setAnswer(e.target.value)}
-            placeholder="Type your answer..."
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && answer.trim() && !isFeedback) {
-                isTwinPhase ? submitTwin(answer) : submitOriginal(answer);
-              }
-            }}
-          />
+          <>
+            {/* Math symbol pad — same keys as the daily challenge */}
+            {!isFeedback && (
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '10px' }}>
+                {MATH_SYMBOLS.map((symbol) => (
+                  <button
+                    key={symbol}
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setAnswer((prev) => (prev || '') + symbol);
+                      answerInputRef.current?.focus();
+                    }}
+                    style={{
+                      width: '40px', height: '40px', borderRadius: '11px',
+                      border: '1px solid #e2e8f0',
+                      background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff',
+                      color: '#4f46e5',
+                      fontSize: symbol === '√' ? '1.2rem' : '1rem', fontWeight: 800,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      cursor: 'pointer', padding: 0, lineHeight: 1,
+                      fontFamily: '"KaTeX_Main", "Times New Roman", serif',
+                    }}
+                  >
+                    {symbol}
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setAnswer((prev) => (prev || '').slice(0, -1));
+                    answerInputRef.current?.focus();
+                  }}
+                  style={{
+                    width: '58px', height: '40px', borderRadius: '11px',
+                    border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48',
+                    fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer',
+                  }}
+                >
+                  Del
+                </button>
+              </div>
+            )}
+            <input
+              ref={answerInputRef}
+              className="sn__input"
+              type="text"
+              disabled={isFeedback}
+              value={answer}
+              onChange={(e) => setAnswer(e.target.value)}
+              placeholder="Type your answer..."
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && answer.trim() && !isFeedback) {
+                  isTwinPhase ? submitTwin(answer) : submitOriginal(answer);
+                }
+              }}
+            />
+          </>
         )}
 
         {/* Submit */}
