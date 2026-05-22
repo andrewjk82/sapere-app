@@ -1,7 +1,5 @@
 import { db } from '../firebase/config';
-import {
-  collection, query, where, getDocs, writeBatch, doc, serverTimestamp,
-} from 'firebase/firestore';
+import { collection, writeBatch, doc, serverTimestamp } from 'firebase/firestore';
 
 /**
  * Generic chapter question seeder.
@@ -79,14 +77,10 @@ export const seedChapterQuestions = async (chapter) => {
   if (seed.length === 0) return 0;
   const collRef = collection(db, 'questions');
 
-  // Clear existing questions for this topic so re-seeding is idempotent.
-  const existing = await getDocs(query(collRef, where('topicId', '==', chapter.topicId)));
-  if (!existing.empty) {
-    const clearBatch = writeBatch(db);
-    existing.docs.forEach((d) => clearBatch.delete(d.ref));
-    await clearBatch.commit();
-  }
-
+  // NON-DESTRUCTIVE: questions are written by their stable `id` with
+  // set({ merge: true }) — an UPSERT. Existing questions are never deleted,
+  // and re-seeding the same batch updates those docs in place rather than
+  // creating duplicates. (Every seed question must carry a unique `id`.)
   const CHUNK = 400; // Firestore writeBatch caps at 500 operations.
   for (let i = 0; i < seed.length; i += CHUNK) {
     const batch = writeBatch(db);
