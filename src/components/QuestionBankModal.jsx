@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Plus, Trash2, Edit2, Image as ImageIcon, Eye, Check, AlertTriangle, BarChart, Lightbulb } from 'lucide-react';
+import { X, Plus, Trash2, Edit2, Image as ImageIcon, Eye, Check, AlertTriangle, BarChart, Lightbulb, Clock } from 'lucide-react';
+import { MATH_SYMBOLS } from '../utils/challengeUtils';
 import { db } from '../firebase/config';
 import {
   collection,
@@ -165,79 +166,148 @@ const MathPreview = ({ content, graphData, style = {} }) => {
   );
 };
 
+// Student-view preview. Mirrors the layout/styling of ChallengeQuizView so
+// the teacher sees questions exactly as students do (header chip, progress
+// bar, padded question card, math symbol pad for short-answer, pill-style
+// option cards). The sketch board is intentionally omitted.
 const StudentViewPreview = ({ question, onClose }) => {
+  const [showHint, setShowHint] = useState(false);
   if (!question) return null;
+  const timeLimit = question.timeLimit || 120;
+  const isShortAnswer = question.type === 'short_answer';
+  const isMC = question.type === 'multiple_choice' || (!isShortAnswer && !question.subQuestions?.length && (question.options || []).length > 0);
+
   return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.8)', backdropFilter: 'blur(8px)' }} />
-      <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} style={{ position: 'relative', width: '100%', maxWidth: '500px', maxHeight: '90vh', background: '#f8fafc', borderRadius: '32px', overflowY: 'auto', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ padding: '24px', background: 'white', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'sticky', top: 0, zIndex: 1 }}>
-          <span style={{ fontWeight: 800, color: '#64748b', fontSize: '0.9rem' }}>STUDENT VIEW PREVIEW</span>
+    <div style={{ position: 'fixed', inset: 0, zIndex: 10000, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '20px', overflowY: 'auto' }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} style={{ position: 'fixed', inset: 0, backgroundColor: 'rgba(15,23,42,0.8)', backdropFilter: 'blur(8px)' }} />
+      <motion.div initial={{ scale: 0.96, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.96, opacity: 0 }} style={{ position: 'relative', width: '100%', maxWidth: '720px', background: '#f8fafc', borderRadius: '32px', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)', display: 'flex', flexDirection: 'column', margin: 'auto' }}>
+        {/* Sticky top bar (preview label + close) */}
+        <div style={{ padding: '16px 24px', background: 'white', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderRadius: '32px 32px 0 0', position: 'sticky', top: 0, zIndex: 2 }}>
+          <span style={{ fontWeight: 800, color: '#64748b', fontSize: '0.8rem', letterSpacing: '0.08em' }}>STUDENT VIEW PREVIEW</span>
           <button onClick={onClose} style={{ border: 'none', background: '#f1f5f9', width: '32px', height: '32px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}><X size={18} /></button>
         </div>
-        <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <div style={{ background: 'white', padding: '32px', borderRadius: '32px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.03)' }}>
-            <MathView content={question.question} graphData={question.graphData} style={{ fontSize: '1.3rem', fontWeight: 700, color: '#1e293b', marginBottom: '16px', lineHeight: 1.5 }} />
+
+        <div style={{ padding: '24px 28px 32px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+          {/* Challenge header (matches student) */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+            <div style={{ textAlign: 'left' }}>
+              <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Challenge</span>
+              <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question 1 of 1</div>
+            </div>
+            <div style={{ fontSize: '0.9rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '8px 12px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <Clock size={16} /> {timeLimit}s
+            </div>
+          </div>
+
+          {/* Progress bar */}
+          <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
+            <div style={{ height: '100%', width: '100%', background: '#6366f1' }} />
+          </div>
+
+          {/* Question card */}
+          <div className="app-panel" style={{ padding: '32px', borderRadius: '32px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', background: '#fff', border: '1px solid #e2e8f0', position: 'relative' }}>
+            {question.hint && (
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '16px' }}>
+                <button
+                  onClick={() => setShowHint(!showHint)}
+                  style={{ background: showHint ? '#fef3c7' : '#fff7ed', border: 'none', padding: '6px 12px', borderRadius: '10px', color: '#d97706', fontSize: '0.75rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}
+                >
+                  <Lightbulb size={14} /> {showHint ? 'Hide Hint' : 'Show Hint'}
+                </button>
+              </div>
+            )}
+            <MathView
+              content={question.question}
+              graphData={question.graphData}
+              style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
+            />
+            <AnimatePresence>
+              {showHint && question.hint && (
+                <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} style={{ overflow: 'hidden' }}>
+                  <div style={{ marginTop: '16px', padding: '16px', borderRadius: '16px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#d97706', marginBottom: '8px' }}>
+                      <Lightbulb size={16} />
+                      <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.7rem', letterSpacing: '0.05em' }}>Hint</span>
+                    </div>
+                    <MathView content={question.hint} style={{ color: '#92400e', fontSize: '0.95rem', fontWeight: 600 }} />
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
             {question.questionImage && (
-              <img src={question.questionImage} alt="Question" style={{ width: '100%', borderRadius: '16px', marginTop: '16px' }} />
+              <img src={question.questionImage} alt="Question" style={{ width: '100%', maxHeight: '240px', objectFit: 'contain', marginTop: '16px', borderRadius: '16px', background: '#f8fafc' }} />
             )}
           </div>
 
+          {/* Sub-questions */}
           {question.subQuestions?.length > 0 ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {question.subQuestions.map((sq, sIdx) => (
-                <div key={sq.id || sIdx} style={{ padding: '20px', borderRadius: '20px', background: 'white', border: '1px solid #e2e8f0' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-                    <div style={{ width: '24px', height: '24px', borderRadius: '6px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 900, flexShrink: 0 }}>
+                <div key={sq.id || sIdx} style={{ padding: '24px', borderRadius: '24px', background: 'white', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                    <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + sIdx)}
                     </div>
-                    <MathView content={sq.question} style={{ fontWeight: 700, color: '#1e293b', fontSize: '0.95rem' }} />
+                    <MathView content={sq.question} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                   </div>
                   {sq.type === 'multiple_choice' ? (
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '8px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
                       {(sq.options || []).map((opt, oIdx) => (
-                        <div
-                          key={oIdx}
-                          style={{
-                            padding: '8px 12px',
-                            borderRadius: '8px',
-                            border: '1px solid #e2e8f0',
-                            background: 'white',
-                            color: '#64748b',
-                            fontWeight: 700,
-                            fontSize: '0.8rem',
-                            textAlign: 'left'
-                          }}
-                        >
+                        <div key={oIdx} style={{ padding: '12px 16px', borderRadius: '12px', border: '2px solid #f1f5f9', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.85rem', textAlign: 'left' }}>
                           {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
                         </div>
                       ))}
                     </div>
                   ) : (
-                    <input type="text" placeholder="Type answer..." style={{ width: '100%', padding: '10px 14px', borderRadius: '8px', border: '1px solid #e2e8f0', background: 'white', fontSize: '0.85rem' }} disabled />
+                    <input type="text" placeholder="Type answer..." disabled style={{ width: '100%', padding: '12px 16px', borderRadius: '12px', border: '2px solid #f1f5f9', background: '#fff', fontWeight: 700, fontSize: '0.95rem' }} />
                   )}
                 </div>
               ))}
             </div>
-          ) : question.type === 'short_answer' ? (
-            <input type="text" placeholder="Type answer here..." style={{ width: '100%', padding: '20px', borderRadius: '20px', border: '2px solid #e2e8f0', background: 'white', outline: 'none', fontSize: '1.1rem', fontWeight: 700, textAlign: 'center' }} disabled />
-          ) : (
-            <div style={{ display: 'grid', gap: '12px' }}>
+          ) : isShortAnswer ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {/* Math symbol pad — identical to student's */}
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
+                {MATH_SYMBOLS.map(symbol => (
+                  <div key={symbol} style={{ width: '44px', height: '44px', borderRadius: '12px', border: '1px solid #e2e8f0', background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff', color: '#4f46e5', fontSize: symbol === '√' ? '1.3rem' : '1.1rem', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', fontFamily: '"KaTeX_Main", "Times New Roman", serif', lineHeight: 1, paddingBottom: symbol === '√' ? '2px' : 0 }}>
+                    {symbol}
+                  </div>
+                ))}
+                <div style={{ width: '64px', height: '44px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontSize: '0.8rem', fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', textTransform: 'uppercase' }}>Del</div>
+              </div>
+              <input
+                type="text" placeholder="Type your answer..." disabled
+                style={{ fontSize: '1.4rem', padding: '24px', borderRadius: '24px', textAlign: 'center', fontWeight: 700, fontFamily: '"KaTeX_Main", "Times New Roman", serif', letterSpacing: '0.05em', border: '2px solid #e2e8f0', background: '#fff', outline: 'none' }}
+              />
+            </div>
+          ) : isMC ? (
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
               {(question.options || []).map((opt, i) => (
-                <div key={i} style={{ padding: '16px 20px', borderRadius: '20px', border: '2px solid #e2e8f0', background: 'white', display: 'flex', alignItems: 'center', gap: '12px', fontWeight: 700, color: '#475569', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.02)' }}>
-                  <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', color: '#94a3b8', flexShrink: 0 }}>{i + 1}</div>
-                  <div style={{ flex: 1 }}>
-                    <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ fontSize: '1.05rem' }} />
-                    {typeof opt === 'object' && opt.imageUrl && <img src={opt.imageUrl} alt="" style={{ maxWidth: '100%', height: '60px', marginTop: '8px', borderRadius: '8px', objectFit: 'contain' }} />}
+                <div key={i} style={{ padding: '16px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', border: '2px solid transparent', borderRadius: '100px', background: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                    <div style={{ width: '34px', height: '34px', borderRadius: '50%', background: '#f1f5f9', color: '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>
+                      {String.fromCharCode(65 + i)}
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
+                      {typeof opt === 'object' && opt.imageUrl && <img src={opt.imageUrl} alt="Option" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
+          ) : (
+            // teacher_review / graph_sketch fallback — just show submit pill
+            <div style={{ padding: '16px', borderRadius: '16px', background: '#fef9c3', color: '#854d0e', fontSize: '0.9rem', fontWeight: 700, textAlign: 'center' }}>
+              Teacher reviews this question manually.
+            </div>
           )}
-          <div style={{ textAlign: 'center', marginTop: '10px' }}>
-             <button style={{ width: '100%', padding: '20px', borderRadius: '20px', border: 'none', background: '#6366f1', color: 'white', fontWeight: 800, opacity: 0.5, cursor: 'not-allowed', fontSize: '1.1rem' }}>Submit Answer</button>
-             <p style={{ fontSize: '0.8rem', color: '#94a3b8', marginTop: '12px', fontWeight: 600 }}>This is a non-interactive preview</p>
-          </div>
+
+          {/* Submit button (disabled — preview only) */}
+          <button disabled style={{ width: '100%', padding: '18px', borderRadius: '20px', border: 'none', background: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', color: 'white', fontWeight: 800, opacity: 0.6, cursor: 'not-allowed', fontSize: '1.1rem', boxShadow: '0 14px 28px rgba(124,58,237,0.20)' }}>
+            Submit Answer
+          </button>
+          <p style={{ fontSize: '0.75rem', color: '#94a3b8', textAlign: 'center', marginTop: '-4px', fontWeight: 600 }}>Non-interactive preview · sketch pad hidden</p>
         </div>
       </motion.div>
     </div>
@@ -350,6 +420,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
         ),
         hint: q.hint || '',
+        topicId: q.topicId || '',
+        topicCode: q.topicCode || '',
         topicTitle: q.topicTitle || '',
         subQuestions: (q.subQuestions || []).map(sq => ({
           ...sq,

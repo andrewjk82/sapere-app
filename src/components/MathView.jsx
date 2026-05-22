@@ -2,6 +2,8 @@ import React, { useLayoutEffect, useRef } from 'react';
 import MathGraph from './MathGraph';
 import GeometricDiagram from './GeometricDiagram';
 import JsxGraphDiagram from './JsxGraphDiagram';
+import GeometryFigure from './GeometryFigure';
+import { encodeSvgDataUrl } from '../utils/geometrySvg';
 
 /**
  * Minimal safe pre-processing.
@@ -138,6 +140,10 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
   if (typeof rawGraphData === 'string' && rawGraphData.trim()) {
     try { graphData = JSON.parse(rawGraphData); } catch { graphData = null; }
   }
+  const diagramSvg = graphData?.diagramSvg || graphData?.svgSnapshot || graphData?.svg;
+  const diagramSvgSrc = typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg')
+    ? encodeSvgDataUrl(diagramSvg)
+    : diagramSvg;
 
   // The effect fully owns the math div's DOM: it injects the raw content AND
   // runs KaTeX. We deliberately do NOT use dangerouslySetInnerHTML here —
@@ -198,10 +204,21 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       {/* Question text first, then the figure — questions refer to the
           diagram as "below". */}
       <div ref={containerRef} style={combinedStyle} />
-      {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && <MathGraph {...graphData} />}
-      {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
-      {graphData?.jsxGraph && <JsxGraphDiagram data={graphData.jsxGraph} />}
-      {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
+      {diagramSvgSrc ? (
+        <img
+          src={diagramSvgSrc}
+          alt="Diagram"
+          style={{ width: '100%', maxHeight: '320px', objectFit: 'contain', marginTop: '8px' }}
+        />
+      ) : (
+        <>
+          {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && !graphData.geometry && <MathGraph {...graphData} />}
+          {graphData?.geometry && <GeometryFigure {...graphData.geometry} />}
+          {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
+          {graphData?.jsxGraph && <JsxGraphDiagram data={graphData.jsxGraph} />}
+          {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
+        </>
+      )}
     </div>
   );
 };
