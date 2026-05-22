@@ -1,7 +1,7 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
-import { classReminderEmail, dailyWrapupEmail } from './_lib/emailTemplates.js';
+import { classReminderEmail, dailyWrapupEmail, adminSummaryEmail } from './_lib/emailTemplates.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -422,13 +422,24 @@ async function notifyAdminQueueComplete(db, transporter, todayStr, queueResult, 
     failed ? `Not completed: ${failed}` : 'All queued reminders processed.',
   ].join('\n');
 
+  const adminHtml = adminSummaryEmail({
+    title,
+    rows: [
+      ['Date', todayStr],
+      ['Queued', String(total)],
+      ['Sent / marked', String(sent)],
+      ...(failed ? [['Not completed', String(failed)]] : []),
+    ],
+    note: failed ? `${failed} reminder${failed === 1 ? '' : 's'} could not be completed.` : 'All queued reminders processed.',
+  });
   await sendNotification(
     db,
     transporter,
     { studentId: ADMIN_UID, email: 'andrewjk82@gmail.com' },
     'cron_summary',
     title,
-    `<p style="white-space: pre-wrap; font-size: 16px;">${body}</p>`
+    `<p style="white-space: pre-wrap; font-size: 16px;">${body}</p>`,
+    adminHtml,
   );
 
   await queueRef.set({

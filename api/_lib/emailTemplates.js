@@ -181,4 +181,29 @@ export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, c
   };
 }
 
+/* ──────────────────────────────────────────────────────────────────────────
+   Admin summary — internal cron / batch completion reports
+   ────────────────────────────────────────────────────────────────────────── */
+export function adminSummaryEmail({ title = 'Summary', rows = [], note = '' }) {
+  const rowHtml = rows.map(([k, v], i) => `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td style="padding:10px 0;${i < rows.length - 1 ? 'border-bottom:1px solid #f1f0f8;' : ''}">
+        <span style="font-size:12px;font-weight:700;color:#9890b5;">${esc(k)}</span>
+      </td>
+      <td align="right" style="padding:10px 0;${i < rows.length - 1 ? 'border-bottom:1px solid #f1f0f8;' : ''}">
+        <span style="font-size:14px;font-weight:800;color:#1e1b4b;">${esc(v)}</span>
+      </td>
+    </tr></table>`).join('');
+  const inner = `
+    <div style="background:linear-gradient(135deg,#312e81,#4338ca);padding:26px 32px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7);">Admin · automated report</div>
+      <div style="font-family:'Outfit',sans-serif;font-size:21px;font-weight:800;color:#fff;margin-top:6px;">${esc(title)}</div>
+    </div>
+    <div style="padding:26px 32px;">
+      <div style="background:#f7f5fd;border-radius:16px;padding:6px 18px;">${rowHtml}</div>
+      ${note ? `<p style="margin:16px 0 0;font-size:13px;font-weight:600;color:#6d6a85;">${esc(note)}</p>` : ''}
+    </div>`;
+  return emailShell(title, inner);
+}
+
 export { APP_URL };
