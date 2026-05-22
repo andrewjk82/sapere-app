@@ -1,6 +1,6 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
-import { genericEmail } from './_lib/emailTemplates.js';
+import { genericEmail, challengeCompleteEmail } from './_lib/emailTemplates.js';
 
 function escapeHtml(value = '') {
   return String(value)
@@ -178,11 +178,29 @@ export default async function handler(req, res) {
         secure: true,
         auth: { user: GMAIL_USER, pass: GMAIL_PASS },
       });
+      // Challenge-completed notifications get a dedicated visual template.
+      let emailSubject = subject;
+      let emailHtml;
+      if (metadata?.type === 'challenge_completed') {
+        const built = challengeCompleteEmail({
+          studentName: metadata.studentName || 'A student',
+          label: metadata.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Challenge',
+          score: Number(metadata.score) || 0,
+          total: Number(metadata.total) || 0,
+          xpEarned: Number(metadata.xpEarned) || 0,
+          reviewCount: Number(metadata.reviewCount) || 0,
+          reportCount: Number(metadata.reportCount) || 0,
+        });
+        emailSubject = built.subject;
+        emailHtml = built.html;
+      } else {
+        emailHtml = buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`);
+      }
       await transporter.sendMail({
         from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
         to: email,
-        subject: subject,
-        html: buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`)
+        subject: emailSubject,
+        html: emailHtml,
       });
       console.log(`[send-notif] Email sent to ${email}`);
       return true;

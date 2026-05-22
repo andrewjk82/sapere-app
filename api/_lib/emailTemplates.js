@@ -182,6 +182,66 @@ export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, c
 }
 
 /* ──────────────────────────────────────────────────────────────────────────
+   3 · Challenge completed — sent to the teacher when a student finishes
+   ────────────────────────────────────────────────────────────────────────── */
+export function challengeCompleteEmail({ studentName = 'A student', label = 'Daily Challenge', score = 0, total = 0, xpEarned = 0, reviewCount = 0, reportCount = 0 }) {
+  const name = esc(studentName);
+  const pct = total > 0 ? Math.round((Number(score) / Number(total)) * 100) : 0;
+  const accentColor = pct >= 80 ? '#10b981' : pct >= 50 ? '#f59e0b' : '#ef4444';
+  const fillPct = Math.max(4, Math.min(100, pct)); // keep a sliver visible
+
+  // Email-safe "graph": a two-cell table acts as a progress bar.
+  const scoreBar = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef2ff;border-radius:999px;">
+      <tr>
+        <td width="${fillPct}%" style="background:${accentColor};border-radius:999px;font-size:0;line-height:0;height:12px;">&nbsp;</td>
+        <td style="font-size:0;line-height:0;">&nbsp;</td>
+      </tr>
+    </table>`;
+
+  const stat = (val, lbl, color) =>
+    `<td width="33.33%" align="center" style="padding:14px 6px;">
+      <div style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;color:${color || '#1e1b4b'};">${val}</div>
+      <div style="font-size:10px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#9890b5;margin-top:4px;">${lbl}</div>
+    </td>`;
+
+  const attention = [];
+  if (reviewCount > 0) attention.push(`${reviewCount} answer${reviewCount === 1 ? '' : 's'} need review`);
+  if (reportCount > 0) attention.push(`${reportCount} question${reportCount === 1 ? '' : 's'} reported`);
+
+  const inner = `
+    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:28px 32px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">${esc(label)} complete</div>
+      <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">${name}</div>
+    </div>
+    <div style="padding:30px 32px;">
+      <!-- Big score -->
+      <div style="text-align:center;margin-bottom:8px;">
+        <span style="font-family:'Outfit',sans-serif;font-size:46px;font-weight:800;color:#1e1b4b;">${score}</span>
+        <span style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;color:#9890b5;"> / ${total}</span>
+      </div>
+      <div style="text-align:center;font-size:13px;font-weight:800;color:${accentColor};letter-spacing:0.04em;margin-bottom:14px;">${pct}% ACCURACY</div>
+      ${scoreBar}
+      <!-- Stat tiles -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5fd;border-radius:16px;margin-top:22px;"><tr>
+        ${stat(`${score}/${total}`, 'Score')}
+        ${stat(`${pct}%`, 'Accuracy', accentColor)}
+        ${stat(`+${xpEarned}`, 'XP earned', '#7c3aed')}
+      </tr></table>
+      ${attention.length ? `
+      <div style="margin-top:18px;background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:14px 16px;">
+        <div style="font-size:13px;font-weight:800;color:#9a3412;">⚠️ Needs your attention</div>
+        <p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#7c2d12;">${esc(attention.join(' · '))}</p>
+      </div>` : ''}
+      <div style="margin-top:24px;">${button('Go to Academy')}</div>
+    </div>`;
+  return {
+    subject: `${label} completed: ${studentName}`,
+    html: emailShell(`${name} scored ${score}/${total} on ${label}.`, inner),
+  };
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
    Generic notification — any title + HTML body (schedule updates, messages…)
    ────────────────────────────────────────────────────────────────────────── */
 export function genericEmail({ title = 'Sapere Aude', body = '', ctaLabel = 'Open the app', ctaHref = APP_URL }) {
