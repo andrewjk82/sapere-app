@@ -27,6 +27,20 @@ import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
+import { seedChapterQuestions } from '../services/chapterSeeder';
+
+// ── Chapter seed registry ──────────────────────────────────────────────────
+// Single source of truth for bulk question seeding. To add a new chapter:
+// create its seed file, import the array above, and add ONE entry here — a
+// "Seed" button appears automatically. No new handler function needed.
+const CHAPTER_SEED_REGISTRY = [
+  { chapterId: 'y9-3', chapterTitle: 'Chapter 3: Consumer arithmetic', topicId: 'y9-3a', topicCode: '3A', topicTitle: 'Review of percentages', year: 'Year 9', seed: Y9_CH3A_QUESTIONS, label: 'Y9 Ch3 · Consumer arithmetic' },
+  { chapterId: 'y9-4', chapterTitle: 'Chapter 4: Factorisation', topicId: 'y9-4a', topicCode: '4A', topicTitle: 'Factorisation', year: 'Year 9', seed: Y9_CH4A_QUESTIONS, label: 'Y9 Ch4 · Factorisation' },
+  { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5a', topicCode: '5A', topicTitle: 'Expressions', year: 'Year 9', seed: Y9_CH5A_QUESTIONS, label: 'Y9 Ch5 · Linear equations' },
+  { chapterId: 'y9-6', chapterTitle: 'Chapter 6: Formulas', topicId: 'y9-6a', topicCode: '6A', topicTitle: 'Formulas', year: 'Year 9', seed: Y9_CH6A_QUESTIONS, label: 'Y9 Ch6 · Formulas' },
+  { chapterId: 'y9-7', chapterTitle: 'Chapter 7: Congruence and special quadrilaterals', topicId: 'y9-7a', topicCode: '7A', topicTitle: 'Review of angles', year: 'Year 9', seed: Y9_CH7A_QUESTIONS, label: 'Y9 Ch7 · Angles' },
+  { chapterId: 'y9-8', chapterTitle: 'Chapter 8: Index laws', topicId: 'y9-8a', topicCode: '8A', topicTitle: 'Index laws', year: 'Year 9', seed: Y9_CH8A_QUESTIONS, label: 'Y9 Ch8 · Index laws' },
+];
 import {
   fetchHscResultsIncremental,
   loadCachedHscResults,
@@ -707,6 +721,28 @@ const Curriculum = () => {
     } catch (err) {
       console.error(err);
       showToast("Failed to seed Year 9 Ch2 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  // Generic chapter seeder — used by every CHAPTER_SEED_REGISTRY entry, so a
+  // new chapter never needs its own copy-pasted handler again.
+  const handleSeedChapter = async (entry) => {
+    if (!window.confirm(`Seed ${entry.seed.length} questions for ${entry.label}? Existing questions for this topic will be replaced.`)) return;
+    setIsMigrating(true);
+    try {
+      const count = await seedChapterQuestions(entry);
+      showToast(`Seeded ${count} questions for ${entry.label}.`, 'success');
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts[entry.chapterId] = count;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } catch (err) {
+      console.error(err);
+      showToast(`Failed to seed ${entry.label}.`, 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -1818,137 +1854,35 @@ const Curriculum = () => {
                         </div>
                       </div>
 
-                      {/* Year 9 Ch3 Percentages */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#3b82f6', color: '#fff' }}>Y9 CH3</span>
-                          <span className="sync-card-title">Consumer Arith (Seed Y9 Ch3)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-3'] ? (
-                            <button onClick={handleSeedY9Ch3Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch3
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-3']} Qs)</span>
-                              <button onClick={handleSeedY9Ch3Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
+                      {/* Year 9 chapters — rendered from CHAPTER_SEED_REGISTRY.
+                          Add a chapter there and a card appears here automatically. */}
+                      {CHAPTER_SEED_REGISTRY.map((entry) => {
+                        const count = questionCounts[entry.chapterId];
+                        return (
+                          <div className="sync-card" key={entry.chapterId}>
+                            <div className="sync-card-info">
+                              <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>
+                                {entry.chapterId.toUpperCase()}
+                              </span>
+                              <span className="sync-card-title">{entry.label} · {entry.seed.length} Qs</span>
                             </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 Ch4 Factorisation */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#ec4899', color: '#fff' }}>Y9 CH4</span>
-                          <span className="sync-card-title">Factorisation (Seed Y9 Ch4)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-4'] ? (
-                            <button onClick={handleSeedY9Ch4Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch4
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-4']} Qs)</span>
-                              <button onClick={handleSeedY9Ch4Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
+                            <div className="sync-card-actions">
+                              {!count ? (
+                                <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">
+                                  🌱 Seed
+                                </button>
+                              ) : (
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                  <span className="sync-card-status">Active ({count} Qs)</span>
+                                  <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                    Re-seed
+                                  </button>
+                                </div>
+                              )}
                             </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 Ch5 Expressions */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#f59e0b', color: '#fff' }}>Y9 CH5</span>
-                          <span className="sync-card-title">Expressions (Seed Y9 Ch5)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-5'] ? (
-                            <button onClick={handleSeedY9Ch5Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch5
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-5']} Qs)</span>
-                              <button onClick={handleSeedY9Ch5Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 Ch6 Formulas */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#8b5cf6', color: '#fff' }}>Y9 CH6</span>
-                          <span className="sync-card-title">Formulas (Seed Y9 Ch6)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-6'] ? (
-                            <button onClick={handleSeedY9Ch6Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch6
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-6']} Qs)</span>
-                              <button onClick={handleSeedY9Ch6Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 Ch7 Angles */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>Y9 CH7</span>
-                          <span className="sync-card-title">Angles (Seed Y9 Ch7)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-7'] ? (
-                            <button onClick={handleSeedY9Ch7Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch7
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-7']} Qs)</span>
-                              <button onClick={handleSeedY9Ch7Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 Ch8 Index Laws */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>Y9 CH8</span>
-                          <span className="sync-card-title">Index Laws (Seed Y9 Ch8)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-8'] ? (
-                            <button onClick={handleSeedY9Ch8Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch8
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-8']} Qs)</span>
-                              <button onClick={handleSeedY9Ch8Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Append More
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
+                          </div>
+                        );
+                      })}
 
                     </div>
                   )}
