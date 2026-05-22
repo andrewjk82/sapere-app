@@ -300,13 +300,30 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
       </tr>
     </table>`;
 
-  // ── Lessons ──
+  // ── Attendance badge ──
+  const ATTENDANCE = {
+    attended:    { label: 'Attended',    bg: '#f0fdf4', fg: '#166534' },
+    late:        { label: 'Late',        bg: '#fffbeb', fg: '#b45309' },
+    absent:      { label: 'Absent',      bg: '#fef2f2', fg: '#b91c1c' },
+    rescheduled: { label: 'Rescheduled', bg: '#eef2ff', fg: '#4338ca' },
+    cancelled:   { label: 'Cancelled',   bg: '#f1f5f9', fg: '#64748b' },
+  };
+  const attendanceBadge = (key) => {
+    const a = ATTENDANCE[key];
+    if (!a) return '';
+    return `<span style="display:inline-block;font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:999px;background:${a.bg};color:${a.fg};">${a.label}</span>`;
+  };
+
+  // ── Lessons / classes & attendance ──
   let lessonsHtml;
   if (sessions.length > 0) {
     lessonsHtml = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">` +
       sessions.map((ses, idx) => `
         <tr><td style="padding:15px 0;${idx < sessions.length - 1 ? `border-bottom:1px solid ${C.lineSoft};` : ''}">
-          <div style="font-size:15px;font-weight:700;color:${C.ink};">${esc(ses.subject || 'Lesson')}</div>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td style="font-size:15px;font-weight:700;color:${C.ink};">${esc(ses.subject || 'Lesson')}</td>
+            <td align="right">${attendanceBadge(ses.attendance)}</td>
+          </tr></table>
           <div style="font-size:12px;font-weight:600;color:${C.muted};margin-top:3px;">${esc(fmtLessonDate(ses.date, ses.startTime))}</div>
           ${ses.topicCovered ? `
           <div style="margin-top:14px;margin-bottom:6px;">
@@ -326,6 +343,32 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
       `</table>`;
   } else {
     lessonsHtml = `<div style="font-size:13px;color:${C.muted};">No lessons were scheduled this week.</div>`;
+  }
+
+  // ── Homework ──
+  const hwSessions = sessions.filter((ses) => (ses.homework || '').trim()
+    || ses.homeworkScore != null || ses.homeworkTotal != null);
+  let homeworkHtml = '';
+  if (hwSessions.length > 0) {
+    homeworkHtml = sectionLabel('Homework') +
+      `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">` +
+      hwSessions.map((ses, idx) => {
+        const hasMark = ses.homeworkScore != null && ses.homeworkTotal != null && Number(ses.homeworkTotal) > 0;
+        const done = ses.isHomeworkCompleted === true;
+        const markPct = hasMark ? (Number(ses.homeworkScore) / Number(ses.homeworkTotal)) * 100 : null;
+        const markColor = markPct == null ? C.sub : markPct >= 80 ? '#16a34a' : markPct >= 50 ? '#d97706' : '#dc2626';
+        const right = hasMark
+          ? `<span style="font-size:14px;font-weight:900;color:${markColor};">${Number(ses.homeworkScore)}/${Number(ses.homeworkTotal)}</span>`
+          : `<span style="font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:999px;background:${done ? '#f0fdf4' : '#fff7ed'};color:${done ? '#166534' : '#9a3412'};">${done ? 'Submitted' : 'Pending'}</span>`;
+        return `<tr><td style="padding:13px 0;${idx < hwSessions.length - 1 ? `border-bottom:1px solid ${C.lineSoft};` : ''}">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td style="font-size:13.5px;font-weight:700;color:${C.ink};line-height:1.5;">${esc((ses.homework || 'Homework').trim())}
+              <div style="font-size:11.5px;font-weight:600;color:${C.muted};margin-top:2px;">${esc(ses.subject || '')} · ${esc(fmtLessonDate(ses.date))}</div>
+            </td>
+            <td align="right" style="white-space:nowrap;padding-left:12px;">${right}</td>
+          </tr></table>
+        </td></tr>`;
+      }).join('') + `</table>`;
   }
 
   // ── Challenge record ──
@@ -385,8 +428,9 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
     <p style="margin:0 0 28px;font-size:14px;color:${C.sub};line-height:1.55;">Here is the learning summary for <strong style="color:${C.ink};">${esc(label)}</strong>.</p>
     ${summary}
     ${curriculumHtml}
-    ${sectionLabel("This week's lessons")}
+    ${sectionLabel("Classes & attendance")}
     ${lessonsHtml}
+    ${homeworkHtml}
     ${sectionLabel('Challenge record')}
     ${challengeHtml}
     ${topicHtml}

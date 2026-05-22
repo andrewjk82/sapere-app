@@ -99,6 +99,9 @@ const buildSessionUpdatePayload = (editData) => ({
   notes: editData.notes || '',
   homework: editData.homework || '',
   isHomeworkCompleted: Boolean(editData.isHomeworkCompleted),
+  attendance: editData.attendance || '',
+  homeworkScore: editData.homeworkScore === '' ? null : Number(editData.homeworkScore),
+  homeworkTotal: editData.homeworkTotal === '' ? null : Number(editData.homeworkTotal),
   reminderSent: false,
   updatedAt: new Date().toISOString()
 });
@@ -235,10 +238,13 @@ const Schedule = ({ students = [] }) => {
   const [loading, setLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [editData, setEditData] = useState({ 
-    notes: '', 
-    homework: '', 
+  const [editData, setEditData] = useState({
+    notes: '',
+    homework: '',
     isHomeworkCompleted: false,
+    attendance: '',
+    homeworkScore: '',
+    homeworkTotal: '',
     startTime: '',
     endTime: '',
     date: '',
@@ -316,6 +322,9 @@ const Schedule = ({ students = [] }) => {
       notes: session.notes || '',
       homework: session.homework || '',
       isHomeworkCompleted: session.isHomeworkCompleted || false,
+      attendance: session.attendance || '',
+      homeworkScore: session.homeworkScore ?? '',
+      homeworkTotal: session.homeworkTotal ?? '',
       startTime: session.startTime || '10:00 AM',
       endTime: session.endTime || '11:30 AM',
       date: session.date || '',
@@ -1153,6 +1162,62 @@ const Schedule = ({ students = [] }) => {
                   </div>
                   <span style={{ fontWeight: 900, fontSize: '1.05rem', color: '#1e1b4b' }}>Homework Completed</span>
                 </div>
+
+                {/* Homework mark — feeds the weekly report */}
+                {isAdmin && (
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Homework Mark</label>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <input
+                        type="number" min="0" placeholder="Score"
+                        value={editData.homeworkScore}
+                        onChange={e => setEditData({ ...editData, homeworkScore: e.target.value })}
+                        style={{ flex: 1, border: '2px solid #f1f5f9', borderRadius: '16px', padding: '14px 16px', fontSize: '1rem', fontWeight: 800, color: '#1e1b4b', outline: 'none', boxSizing: 'border-box' }}
+                      />
+                      <span style={{ fontWeight: 900, color: '#94a3b8' }}>/</span>
+                      <input
+                        type="number" min="1" placeholder="Out of"
+                        value={editData.homeworkTotal}
+                        onChange={e => setEditData({ ...editData, homeworkTotal: e.target.value })}
+                        style={{ flex: 1, border: '2px solid #f1f5f9', borderRadius: '16px', padding: '14px 16px', fontSize: '1rem', fontWeight: 800, color: '#1e1b4b', outline: 'none', boxSizing: 'border-box' }}
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Attendance — feeds the weekly report */}
+                {isAdmin && (
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Attendance</label>
+                    <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                      {[
+                        { key: 'attended', label: 'Attended', color: '#10b981' },
+                        { key: 'late', label: 'Late', color: '#f59e0b' },
+                        { key: 'absent', label: 'Absent', color: '#ef4444' },
+                        { key: 'rescheduled', label: 'Rescheduled', color: '#6366f1' },
+                        { key: 'cancelled', label: 'Cancelled', color: '#94a3b8' },
+                      ].map(opt => {
+                        const active = editData.attendance === opt.key;
+                        return (
+                          <button
+                            key={opt.key}
+                            type="button"
+                            onClick={() => setEditData({ ...editData, attendance: active ? '' : opt.key })}
+                            style={{
+                              padding: '10px 14px', borderRadius: '12px', cursor: 'pointer',
+                              fontSize: '0.85rem', fontWeight: 800,
+                              border: `2px solid ${active ? opt.color : '#f1f5f9'}`,
+                              background: active ? opt.color : '#fff',
+                              color: active ? '#fff' : '#64748b',
+                            }}
+                          >
+                            {opt.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
 
                 {isAdmin && (
                   <div style={{ display: 'flex', gap: '12px', marginTop: '12px' }}>
