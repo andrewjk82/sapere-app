@@ -1,7 +1,7 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
-import { classReminderEmail } from './_lib/emailTemplates.js';
+import { classReminderEmail, dailyWrapupEmail } from './_lib/emailTemplates.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -349,6 +349,7 @@ async function processSixPmQueue({
         'daily_wrapup',
         item.subject,
         item.body,
+        item.fullHtml,
       );
 
       // Only mark as sent if at least one notification method succeeded
@@ -539,12 +540,26 @@ async function buildSixPmQueue({
       tomorrowClasses.find(c => c.studentEmail || c.email)?.email
     );
 
+    // Branded HTML email — same design language as the class reminder.
+    const wrap = dailyWrapupEmail({
+      name: studentName,
+      hasUnfinishedTasks,
+      challengeDone,
+      calcDone,
+      calcEnabled,
+      tomorrowClasses: tomorrowClasses.map(c => ({
+        subject: normalizeSubjectLabel(c.subject),
+        startTime: c.startTime,
+      })),
+    });
+
     return {
       studentId,
       studentEmail: notificationEmail,
       studentName,
-      subject: hasUnfinishedTasks ? 'You have unfinished tasks today!' : 'Your schedule for tomorrow',
+      subject: wrap.subject,
       body,
+      fullHtml: wrap.html,
       reminderKey,
       hasUnfinishedTasks,
       tomorrowClassIds,

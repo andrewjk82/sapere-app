@@ -130,4 +130,55 @@ export function classReminderEmail({ name = 'there', subjectLabel = 'your class'
   };
 }
 
+/* ──────────────────────────────────────────────────────────────────────────
+   1b · Evening wrap-up — the existing 6 PM reminder, restyled
+   ────────────────────────────────────────────────────────────────────────── */
+export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, challengeDone = false, calcEnabled = false, calcDone = false, tomorrowClasses = [] }) {
+  const first = esc(String(name).split(' ')[0]);
+  const headline = hasUnfinishedTasks ? "Today's practice is waiting" : "You're all set for tomorrow";
+
+  let cards = '';
+  if (hasUnfinishedTasks) {
+    const bits = [];
+    if (!challengeDone) bits.push('your daily challenge');
+    if (calcEnabled && !calcDone) bits.push('your calculation sprint');
+    cards += `<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:15px 17px;margin-bottom:16px;">
+      <div style="font-size:13px;font-weight:800;color:#9a3412;">⏳ Not finished yet</div>
+      <p style="margin:6px 0 0;font-size:13.5px;line-height:1.6;color:#7c2d12;">
+        You still have ${bits.join(' and ') || 'practice'} to complete today — just 10 minutes keeps your streak alive.
+      </p>
+    </div>`;
+  } else {
+    cards += `<div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:14px;padding:15px 17px;margin-bottom:16px;">
+      <div style="font-size:13px;font-weight:800;color:#166534;">✓ All done for today</div>
+      <p style="margin:6px 0 0;font-size:13.5px;line-height:1.6;color:#166534;">Great consistency — here's what's coming up.</p>
+    </div>`;
+  }
+  if (tomorrowClasses.length > 0) {
+    cards += `<div style="background:#f7f5fd;border-radius:16px;padding:6px 18px;">`
+      + tomorrowClasses.map((c, i) => `
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+          <td style="padding:11px 0;${i < tomorrowClasses.length - 1 ? 'border-bottom:1px solid #f1f0f8;' : ''}">
+            <span style="font-size:11px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:#9890b5;">Tomorrow</span><br>
+            <span style="font-size:14.5px;font-weight:700;color:#1e1b4b;">${esc(c.subject)} · ${esc(c.startTime)}</span>
+          </td></tr></table>`).join('')
+      + `</div>`;
+  }
+
+  const inner = `
+    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:30px 32px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Evening check-in</div>
+      <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">${headline}</div>
+    </div>
+    <div style="padding:30px 32px;">
+      <p style="margin:0 0 16px;font-size:15px;font-weight:700;color:#1e1b4b;">Hi ${first},</p>
+      ${cards}
+      <div style="margin-top:22px;">${button(hasUnfinishedTasks ? "Finish today's practice" : 'Open the app')}</div>
+    </div>`;
+  return {
+    subject: hasUnfinishedTasks ? 'You have unfinished practice today' : 'Your schedule for tomorrow',
+    html: emailShell(hasUnfinishedTasks ? "Today's practice isn't finished yet." : "Here's what's coming up tomorrow.", inner),
+  };
+}
+
 export { APP_URL };
