@@ -1237,7 +1237,12 @@ const Curriculum = () => {
                               🌱 Seed Ch1
                             </button>
                           ) : (
-                            <span className="sync-card-status">Active</span>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({(questionCounts['y11a-1'] || 0) + (questionCounts['y11-1'] || 0)} Qs)</span>
+                              <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
                           )}
                         </div>
                       </div>
@@ -1254,7 +1259,12 @@ const Curriculum = () => {
                               🌱 Seed Ch2
                             </button>
                           ) : (
-                            <span className="sync-card-status">Active</span>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span className="sync-card-status">Active ({(questionCounts['y11a-2'] || 0) + (questionCounts['y11-2'] || 0)} Qs)</span>
+                              <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
+                                Re-seed
+                              </button>
+                            </div>
                           )}
                         </div>
                       </div>
