@@ -59,6 +59,8 @@ const mapSeedQuestion = (raw, chapter) => {
     hint: raw.h || raw.hint || '',
     solution: raw.s || raw.solution || raw.a || '',
     solutionSteps: Array.isArray(raw.solutionSteps) ? raw.solutionSteps : [],
+    questionImage: raw.questionImage || raw.imageUrl || '',
+    subQuestions: Array.isArray(raw.subQuestions) ? raw.subQuestions : [],
     graphData: raw.graphData || null,
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
