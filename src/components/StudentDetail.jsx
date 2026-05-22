@@ -226,14 +226,23 @@ const StudentDetail = ({ studentId, onBack }) => {
 
   const handleUpdateDailyConfig = (newConfig) => {
     setDailyPracticeConfig(newConfig);
-    updateDoc(doc(db, activeStudentCollection, activeStudentId), {
-      dailyPracticeConfig: newConfig,
-    })
-      .then(() => {
-        updateLocalStudentProfileCache({ dailyPracticeConfig: newConfig });
-        touchStudentListMeta();
-      })
-      .catch(console.error);
+    // Write to the teacher's record AND mirror to the linked registered
+    // account (users/{registeredUid}) — that is the doc the student's app
+    // reads dailyPracticeConfig from when generating the daily challenge.
+    const targets = [doc(db, activeStudentCollection, activeStudentId)];
+    if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
+      targets.push(doc(db, "users", challengeResultsUid));
+    }
+    Promise.all(
+      targets.map((ref) =>
+        updateDoc(ref, { dailyPracticeConfig: newConfig }).catch((e) =>
+          console.warn("daily config write failed:", e?.code || e),
+        ),
+      ),
+    ).then(() => {
+      updateLocalStudentProfileCache({ dailyPracticeConfig: newConfig });
+      touchStudentListMeta();
+    });
   };
 
   const handleToggleDailyYear = (year) => {
