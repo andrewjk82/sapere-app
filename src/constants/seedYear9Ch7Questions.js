@@ -259,16 +259,57 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            2
+          ],
+          "C": [
+            -1.5,
+            -1
+          ],
+          "D": [
+            2,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[0,0],{visible:false}); var pB=board.create('point',[0,3],{visible:false}); var pC=board.create('point',[-2.5,-1.5],{visible:false}); var pD=board.create('point',[3,-1],{visible:false}); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pA,pC],{lastArrow:true}); board.create('segment',[pA,pD],{lastArrow:true}); board.create('angle',[pC,pA,pB],{name:'θ',radius:1}); board.create('angle',[pB,pA,pD],{name:'140°',radius:1.2}); board.create('angle',[pD,pA,pC],{name:'90°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "θ"
+          },
+          {
+            "at": "A",
+            "label": "140°"
+          },
+          {
+            "at": "A",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -288,16 +329,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "M": [
+            0,
+            0
+          ],
+          "P": [
+            -2,
+            0.5
+          ],
+          "Q": [
+            2,
+            -0.5
+          ],
+          "A": [
+            1,
+            2
+          ],
+          "B": [
+            -1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "Q",
+            "arrow": true
+          },
+          {
+            "from": "Q",
+            "to": "P",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pM=board.create('point',[0,0],{visible:false}); var pP=board.create('point',[-3,0.5],{visible:false}); var pQ=board.create('point',[3,-0.5],{visible:false}); var pA=board.create('point',[1,3],{visible:false}); var pB=board.create('point',[-1,-3],{visible:false}); board.create('segment',[pP,pQ],{firstArrow:true,lastArrow:true}); board.create('segment',[pB,pA],{firstArrow:true,lastArrow:true}); board.create('angle',[pA,pM,pQ],{name:'α',radius:1}); board.create('angle',[pQ,pM,pB],{name:'120°',radius:1.2}); board.create('angle',[pB,pM,pP],{name:'β',radius:1}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "M",
+            "label": "α"
+          },
+          {
+            "at": "M",
+            "label": "120°"
+          },
+          {
+            "at": "M",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -321,16 +412,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "M": [
+            0,
+            0
+          ],
+          "P": [
+            -2,
+            0.5
+          ],
+          "Q": [
+            2,
+            -0.5
+          ],
+          "A": [
+            1,
+            2
+          ],
+          "B": [
+            -1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "Q",
+            "arrow": true
+          },
+          {
+            "from": "Q",
+            "to": "P",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pM=board.create('point',[0,0],{visible:false}); var pP=board.create('point',[-3,0.5],{visible:false}); var pQ=board.create('point',[3,-0.5],{visible:false}); var pA=board.create('point',[1,3],{visible:false}); var pB=board.create('point',[-1,-3],{visible:false}); board.create('segment',[pP,pQ],{firstArrow:true,lastArrow:true}); board.create('segment',[pB,pA],{firstArrow:true,lastArrow:true}); board.create('angle',[pA,pM,pQ],{name:'α',radius:1}); board.create('angle',[pQ,pM,pB],{name:'120°',radius:1.2}); board.create('angle',[pB,pM,pP],{name:'β',radius:1}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "M",
+            "label": "α"
+          },
+          {
+            "at": "M",
+            "label": "120°"
+          },
+          {
+            "at": "M",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -358,16 +499,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "N": [
+            0,
+            0
+          ],
+          "K": [
+            -2,
+            0
+          ],
+          "L": [
+            2,
+            0
+          ],
+          "S": [
+            1,
+            2
+          ],
+          "R": [
+            -1,
+            2
+          ]
+        },
+        "segments": [
+          {
+            "from": "K",
+            "to": "L",
+            "arrow": true
+          },
+          {
+            "from": "L",
+            "to": "K",
+            "arrow": true
+          },
+          {
+            "from": "N",
+            "to": "S",
+            "arrow": true
+          },
+          {
+            "from": "N",
+            "to": "R",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[0,0],{visible:false}); var pK=board.create('point',[-3,0],{visible:false}); var pL=board.create('point',[3,0],{visible:false}); var pS=board.create('point',[2,2],{visible:false}); var pR=board.create('point',[-1,2],{visible:false}); board.create('segment',[pK,pL],{firstArrow:true,lastArrow:true}); board.create('segment',[pN,pS],{lastArrow:true}); board.create('segment',[pN,pR],{lastArrow:true}); board.create('angle',[pR,pN,pK],{name:'α',radius:1}); board.create('angle',[pS,pN,pR],{name:'100°',radius:1}); board.create('angle',[pL,pN,pS],{name:'4α',radius:1.5}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "N",
+            "label": "α"
+          },
+          {
+            "at": "N",
+            "label": "100°"
+          },
+          {
+            "at": "N",
+            "label": "4α"
+          }
+        ]
       }
     }
   },
@@ -391,16 +582,75 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "N": [
+            0,
+            0
+          ],
+          "A": [
+            -2,
+            1
+          ],
+          "D": [
+            2,
+            -1
+          ],
+          "B": [
+            -1,
+            2
+          ],
+          "E": [
+            1,
+            -2
+          ],
+          "C": [
+            1.5,
+            1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "E",
+            "arrow": true
+          },
+          {
+            "from": "E",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "N",
+            "to": "C",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[0,0],{visible:false}); var pA=board.create('point',[-3,1],{visible:false}); var pD=board.create('point',[3,-1],{visible:false}); var pB=board.create('point',[-2,3],{visible:false}); var pE=board.create('point',[2,-3],{visible:false}); var pC=board.create('point',[1.5,2],{visible:false}); board.create('segment',[pA,pD],{firstArrow:true,lastArrow:true}); board.create('segment',[pB,pE],{firstArrow:true,lastArrow:true}); board.create('segment',[pN,pC],{lastArrow:true}); board.create('angle',[pA,pN,pB],{name:'θ',radius:1}); board.create('angle',[pB,pN,pC],{name:'90°',radius:1}); board.create('angle',[pC,pN,pD],{name:'50°',radius:1.5}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "N",
+            "label": "θ"
+          },
+          {
+            "at": "N",
+            "right": true
+          },
+          {
+            "at": "N",
+            "label": "50°"
+          }
+        ]
       }
     }
   },
@@ -428,16 +678,84 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "N": [
+            0,
+            0
+          ],
+          "A": [
+            -2,
+            1
+          ],
+          "B": [
+            2,
+            -1
+          ],
+          "C": [
+            -1,
+            2
+          ],
+          "D": [
+            1,
+            -2
+          ],
+          "E": [
+            -2,
+            -1
+          ],
+          "F": [
+            2,
+            1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "arrow": true
+          },
+          {
+            "from": "E",
+            "to": "F",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "E",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[0,0],{visible:false}); var p1=board.create('point',[-3,1],{visible:false}); var p2=board.create('point',[3,-1],{visible:false}); var p3=board.create('point',[-2,3],{visible:false}); var p4=board.create('point',[2,-3],{visible:false}); var p5=board.create('point',[-3,-1],{visible:false}); var p6=board.create('point',[3,1],{visible:false}); board.create('segment',[p1,p2],{firstArrow:true,lastArrow:true}); board.create('segment',[p3,p4],{firstArrow:true,lastArrow:true}); board.create('segment',[p5,p6],{firstArrow:true,lastArrow:true}); board.create('angle',[p6,pN,p2],{name:'α',radius:1}); board.create('angle',[p3,pN,p1],{name:'α',radius:1}); board.create('angle',[p5,pN,p4],{name:'α',radius:1}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "N",
+            "label": "α"
+          },
+          {
+            "at": "N",
+            "label": "α"
+          },
+          {
+            "at": "N",
+            "label": "α"
+          }
+        ]
       }
     }
   },
@@ -465,16 +783,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "O": [
+            0,
+            0
+          ],
+          "P": [
+            0,
+            2
+          ],
+          "S": [
+            2,
+            0
+          ],
+          "Q": [
+            1.5,
+            1.5
+          ],
+          "R": [
+            2,
+            0.8
+          ]
+        },
+        "segments": [
+          {
+            "from": "O",
+            "to": "P",
+            "arrow": true
+          },
+          {
+            "from": "O",
+            "to": "S",
+            "arrow": true
+          },
+          {
+            "from": "O",
+            "to": "Q",
+            "arrow": true
+          },
+          {
+            "from": "O",
+            "to": "R",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pO=board.create('point',[0,0],{visible:false}); var pP=board.create('point',[0,3],{visible:false}); var pS=board.create('point',[4,0],{visible:false}); var pQ=board.create('point',[2.5,2.5],{visible:false}); var pR=board.create('point',[3.5,1],{visible:false}); board.create('segment',[pO,pP],{lastArrow:true}); board.create('segment',[pO,pS],{lastArrow:true}); board.create('segment',[pO,pQ],{lastArrow:true}); board.create('segment',[pO,pR],{lastArrow:true}); board.create('angle',[pS,pO,pP],{name:'90°',radius:0.5}); board.create('angle',[pQ,pO,pP],{name:'3α',radius:1}); board.create('angle',[pR,pO,pQ],{name:'2α',radius:1.5}); board.create('angle',[pS,pO,pR],{name:'4α',radius:2}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "O",
+            "right": true
+          },
+          {
+            "at": "O",
+            "label": "3α"
+          },
+          {
+            "at": "O",
+            "label": "2α"
+          },
+          {
+            "at": "O",
+            "label": "4α"
+          }
+        ]
       }
     }
   },
@@ -498,16 +870,76 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -2,
+            1
+          ],
+          "B": [
+            2,
+            2
+          ],
+          "C": [
+            -2,
+            -1
+          ],
+          "D": [
+            2,
+            0
+          ],
+          "F": [
+            -0.5,
+            2.5
+          ],
+          "G": [
+            -1.5,
+            -1.5
+          ],
+          "I1": [
+            0,
+            1.5
+          ],
+          "I2": [
+            -0.8,
+            -0.7
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "G",
+            "to": "F",
+            "arrow": true
+          },
+          {
+            "from": "F",
+            "to": "G",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-3,1.5],{visible:false}); var pB=board.create('point',[3,2.5],{visible:false}); var pC=board.create('point',[-3,-1.5],{visible:false}); var pD=board.create('point',[3,-0.5],{visible:false}); board.create('segment',[pA,pB],{firstArrow:true,lastArrow:true}); board.create('segment',[pC,pD],{firstArrow:true,lastArrow:true}); var pT1=board.create('point',[-1,3.5],{visible:false}); var pT2=board.create('point',[-2,-3.5],{visible:false}); board.create('segment',[pT1,pT2],{firstArrow:true,lastArrow:true}); var i1=board.create('intersection',[board.create('line',[pA,pB],{visible:false}),board.create('line',[pT1,pT2],{visible:false})],{visible:false}); var i2=board.create('intersection',[board.create('line',[pC,pD],{visible:false}),board.create('line',[pT1,pT2],{visible:false})],{visible:false}); board.create('angle',[pB,i1,pT2],{name:'α',radius:0.8}); board.create('angle',[pA,i2,pT2],{name:'130°',radius:0.8}); board.create('point',[-2,1.66],{name:'→',size:0,label:{offset:[-10,-10],fontSize:16}}); board.create('point',[-2,-1.33],{name:'→',size:0,label:{offset:[-10,-10],fontSize:16}}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "I1",
+            "label": "α"
+          },
+          {
+            "at": "I2",
+            "label": "130°"
+          }
+        ]
       }
     }
   },
@@ -535,16 +967,98 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -3,
+            -1
+          ],
+          "B": [
+            3,
+            2
+          ],
+          "C": [
+            -3,
+            -3
+          ],
+          "D": [
+            3,
+            0
+          ],
+          "P": [
+            -1,
+            -4
+          ],
+          "Q": [
+            -1,
+            3
+          ],
+          "R": [
+            1,
+            -3
+          ],
+          "S": [
+            1,
+            4
+          ],
+          "I1": [
+            -1,
+            0
+          ],
+          "I2": [
+            1,
+            1
+          ],
+          "I3": [
+            -1,
+            -2
+          ],
+          "I4": [
+            1,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "Q",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "R",
+            "to": "S",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-3,0],{visible:false}); var pB=board.create('point',[3,3],{visible:false}); var pC=board.create('point',[-3,-2],{visible:false}); var pD=board.create('point',[3,1],{visible:false}); board.create('segment',[pA,pB],{firstArrow:true,lastArrow:true}); board.create('segment',[pC,pD],{firstArrow:true,lastArrow:true}); var pQ=board.create('point',[-1,3],{visible:false}); var pP=board.create('point',[-1,-3],{visible:false}); var pS=board.create('point',[1,3],{visible:false}); var pR=board.create('point',[1,-3],{visible:false}); board.create('segment',[pQ,pP],{firstArrow:true,lastArrow:true}); board.create('segment',[pS,pR],{firstArrow:true,lastArrow:true}); var i1=board.create('intersection',[board.create('line',[pA,pB],{visible:false}),board.create('line',[pQ,pP],{visible:false})],{visible:false}); var i2=board.create('intersection',[board.create('line',[pA,pB],{visible:false}),board.create('line',[pS,pR],{visible:false})],{visible:false}); var i3=board.create('intersection',[board.create('line',[pC,pD],{visible:false}),board.create('line',[pQ,pP],{visible:false})],{visible:false}); var i4=board.create('intersection',[board.create('line',[pC,pD],{visible:false}),board.create('line',[pS,pR],{visible:false})],{visible:false}); board.create('angle',[pA,i1,pQ],{name:'β',radius:0.8}); board.create('angle',[pD,i3,pQ],{name:'75°',radius:0.8}); board.create('angle',[pB,i2,pS],{name:'γ',radius:0.8}); board.create('point',[-2,0.5],{name:'→',size:0}); board.create('point',[-2,-1.5],{name:'→',size:0}); board.create('point',[-1,-2.5],{name:'↑',size:0}); board.create('point',[1,-2.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "I1",
+            "label": "β"
+          },
+          {
+            "at": "I3",
+            "label": "75°"
+          },
+          {
+            "at": "I2",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -552,28 +1066,110 @@ export const Y9_CH7A_QUESTIONS = [
     "id": "y9-7a-q3b-gamma",
     "type": "short_answer",
     "difficulty": "medium",
-    "question": "Find the angle marked with the pronumeral $\\gamma$, giving reasons.",
+    "question": "Find the angle marked with the pronumeral $\\γ$, giving reasons.",
     "a": "75^\\circ",
     "solution": "Corresponding angles are equal.",
     "t": "Review of angles",
     "hint": "Use parallel line properties.",
     "solutionSteps": [
       {
-        "explanation": "Corresponding angle to $75^\\circ$",
+        "explanation": "Corresponding angle",
         "workingOut": "$\\gamma = 75^\\circ$"
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -3,
+            -1
+          ],
+          "B": [
+            3,
+            2
+          ],
+          "C": [
+            -3,
+            -3
+          ],
+          "D": [
+            3,
+            0
+          ],
+          "P": [
+            -1,
+            -4
+          ],
+          "Q": [
+            -1,
+            3
+          ],
+          "R": [
+            1,
+            -3
+          ],
+          "S": [
+            1,
+            4
+          ],
+          "I1": [
+            -1,
+            0
+          ],
+          "I2": [
+            1,
+            1
+          ],
+          "I3": [
+            -1,
+            -2
+          ],
+          "I4": [
+            1,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "Q",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "R",
+            "to": "S",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-3,0],{visible:false}); var pB=board.create('point',[3,3],{visible:false}); var pC=board.create('point',[-3,-2],{visible:false}); var pD=board.create('point',[3,1],{visible:false}); board.create('segment',[pA,pB],{firstArrow:true,lastArrow:true}); board.create('segment',[pC,pD],{firstArrow:true,lastArrow:true}); var pQ=board.create('point',[-1,3],{visible:false}); var pP=board.create('point',[-1,-3],{visible:false}); var pS=board.create('point',[1,3],{visible:false}); var pR=board.create('point',[1,-3],{visible:false}); board.create('segment',[pQ,pP],{firstArrow:true,lastArrow:true}); board.create('segment',[pS,pR],{firstArrow:true,lastArrow:true}); var i1=board.create('intersection',[board.create('line',[pA,pB],{visible:false}),board.create('line',[pQ,pP],{visible:false})],{visible:false}); var i2=board.create('intersection',[board.create('line',[pA,pB],{visible:false}),board.create('line',[pS,pR],{visible:false})],{visible:false}); var i3=board.create('intersection',[board.create('line',[pC,pD],{visible:false}),board.create('line',[pQ,pP],{visible:false})],{visible:false}); var i4=board.create('intersection',[board.create('line',[pC,pD],{visible:false}),board.create('line',[pS,pR],{visible:false})],{visible:false}); board.create('angle',[pA,i1,pQ],{name:'β',radius:0.8}); board.create('angle',[pD,i3,pQ],{name:'75°',radius:0.8}); board.create('angle',[pB,i2,pS],{name:'γ',radius:0.8}); board.create('point',[-2,0.5],{name:'→',size:0}); board.create('point',[-2,-1.5],{name:'→',size:0}); board.create('point',[-1,-2.5],{name:'↑',size:0}); board.create('point',[1,-2.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "I1",
+            "label": "β"
+          },
+          {
+            "at": "I3",
+            "label": "75°"
+          },
+          {
+            "at": "I2",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -597,16 +1193,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "V": [
+            -1,
+            -3
+          ],
+          "W": [
+            -0.5,
+            2
+          ],
+          "X": [
+            2,
+            2
+          ],
+          "Y": [
+            1.5,
+            -1
+          ],
+          "Z": [
+            4,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "V",
+            "to": "W",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "W",
+            "to": "X",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "X",
+            "to": "Y",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "Y",
+            "to": "Z",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pV=board.create('point',[-2,-3],{visible:false}); var pW=board.create('point',[-1,2],{visible:false}); var pX=board.create('point',[2,2],{visible:false}); var pY=board.create('point',[2,-1],{visible:false}); var pZ=board.create('point',[4,-1],{visible:false}); board.create('segment',[pV,pW],{firstArrow:true,lastArrow:true}); board.create('segment',[pW,pX],{firstArrow:true,lastArrow:true}); board.create('segment',[pX,pY],{firstArrow:true,lastArrow:true}); board.create('segment',[pY,pZ],{firstArrow:true,lastArrow:true}); board.create('angle',[pV,pW,pX],{name:'110°',radius:0.8}); board.create('angle',[pW,pX,pY],{name:'α',radius:0.8}); board.create('angle',[pZ,pY,pX],{name:'β',radius:0.8}); board.create('point',[0,2],{name:'→',size:0}); board.create('point',[3,-1],{name:'→',size:0}); board.create('point',[-1.5,-0.5],{name:'↑',size:0}); board.create('point',[2,0.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "W",
+            "label": "110°"
+          },
+          {
+            "at": "X",
+            "label": "α"
+          },
+          {
+            "at": "Y",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -630,16 +1280,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "V": [
+            -1,
+            -3
+          ],
+          "W": [
+            -0.5,
+            2
+          ],
+          "X": [
+            2,
+            2
+          ],
+          "Y": [
+            1.5,
+            -1
+          ],
+          "Z": [
+            4,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "V",
+            "to": "W",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "W",
+            "to": "X",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "X",
+            "to": "Y",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "Y",
+            "to": "Z",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pV=board.create('point',[-2,-3],{visible:false}); var pW=board.create('point',[-1,2],{visible:false}); var pX=board.create('point',[2,2],{visible:false}); var pY=board.create('point',[2,-1],{visible:false}); var pZ=board.create('point',[4,-1],{visible:false}); board.create('segment',[pV,pW],{firstArrow:true,lastArrow:true}); board.create('segment',[pW,pX],{firstArrow:true,lastArrow:true}); board.create('segment',[pX,pY],{firstArrow:true,lastArrow:true}); board.create('segment',[pY,pZ],{firstArrow:true,lastArrow:true}); board.create('angle',[pV,pW,pX],{name:'110°',radius:0.8}); board.create('angle',[pW,pX,pY],{name:'α',radius:0.8}); board.create('angle',[pZ,pY,pX],{name:'β',radius:0.8}); board.create('point',[0,2],{name:'→',size:0}); board.create('point',[3,-1],{name:'→',size:0}); board.create('point',[-1.5,-0.5],{name:'↑',size:0}); board.create('point',[2,0.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "W",
+            "label": "110°"
+          },
+          {
+            "at": "X",
+            "label": "α"
+          },
+          {
+            "at": "Y",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -659,16 +1363,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "N": [
+            -2,
+            0
+          ],
+          "K": [
+            0,
+            2
+          ],
+          "L": [
+            2,
+            0
+          ],
+          "M": [
+            0,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "N",
+            "to": "K",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "L",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "K",
+            "to": "L",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "N",
+            "to": "M",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[-3,1],{visible:false}); var pK=board.create('point',[1,3],{visible:false}); var pM=board.create('point',[-1,-2],{visible:false}); var pL=board.create('point',[3,0],{visible:false}); board.create('segment',[pN,pK],{lastArrow:true}); board.create('segment',[pK,pL],{lastArrow:true}); board.create('segment',[pL,pM],{lastArrow:true}); board.create('segment',[pM,pN],{lastArrow:true}); board.create('angle',[pN,pM,pL],{name:'γ',radius:0.8}); board.create('angle',[pM,pN,pK],{name:'α',radius:0.8}); board.create('angle',[pN,pK,pL],{name:'β',radius:0.8}); board.create('angle',[pK,pL,pM],{name:'72°',radius:0.8}); board.create('point',[-1,2],{name:'→',size:0}); board.create('point',[1,-1],{name:'→',size:0}); board.create('point',[-2,-0.5],{name:'↑',size:0}); board.create('point',[2,1.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "N",
+            "label": "α"
+          },
+          {
+            "at": "K",
+            "label": "β"
+          },
+          {
+            "at": "L",
+            "label": "72°"
+          },
+          {
+            "at": "M",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -692,16 +1450,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "N": [
+            -2,
+            0
+          ],
+          "K": [
+            0,
+            2
+          ],
+          "L": [
+            2,
+            0
+          ],
+          "M": [
+            0,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "N",
+            "to": "K",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "L",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "K",
+            "to": "L",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "N",
+            "to": "M",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[-3,1],{visible:false}); var pK=board.create('point',[1,3],{visible:false}); var pM=board.create('point',[-1,-2],{visible:false}); var pL=board.create('point',[3,0],{visible:false}); board.create('segment',[pN,pK],{lastArrow:true}); board.create('segment',[pK,pL],{lastArrow:true}); board.create('segment',[pL,pM],{lastArrow:true}); board.create('segment',[pM,pN],{lastArrow:true}); board.create('angle',[pN,pM,pL],{name:'γ',radius:0.8}); board.create('angle',[pM,pN,pK],{name:'α',radius:0.8}); board.create('angle',[pN,pK,pL],{name:'β',radius:0.8}); board.create('angle',[pK,pL,pM],{name:'72°',radius:0.8}); board.create('point',[-1,2],{name:'→',size:0}); board.create('point',[1,-1],{name:'→',size:0}); board.create('point',[-2,-0.5],{name:'↑',size:0}); board.create('point',[2,1.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "N",
+            "label": "α"
+          },
+          {
+            "at": "K",
+            "label": "β"
+          },
+          {
+            "at": "L",
+            "label": "72°"
+          },
+          {
+            "at": "M",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -721,16 +1533,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "N": [
+            -2,
+            0
+          ],
+          "K": [
+            0,
+            2
+          ],
+          "L": [
+            2,
+            0
+          ],
+          "M": [
+            0,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "N",
+            "to": "K",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "M",
+            "to": "L",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "K",
+            "to": "L",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "N",
+            "to": "M",
+            "arrow": true,
+            "marks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[-3,1],{visible:false}); var pK=board.create('point',[1,3],{visible:false}); var pM=board.create('point',[-1,-2],{visible:false}); var pL=board.create('point',[3,0],{visible:false}); board.create('segment',[pN,pK],{lastArrow:true}); board.create('segment',[pK,pL],{lastArrow:true}); board.create('segment',[pL,pM],{lastArrow:true}); board.create('segment',[pM,pN],{lastArrow:true}); board.create('angle',[pN,pM,pL],{name:'γ',radius:0.8}); board.create('angle',[pM,pN,pK],{name:'α',radius:0.8}); board.create('angle',[pN,pK,pL],{name:'β',radius:0.8}); board.create('angle',[pK,pL,pM],{name:'72°',radius:0.8}); board.create('point',[-1,2],{name:'→',size:0}); board.create('point',[1,-1],{name:'→',size:0}); board.create('point',[-2,-0.5],{name:'↑',size:0}); board.create('point',[2,1.5],{name:'↑',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "N",
+            "label": "α"
+          },
+          {
+            "at": "K",
+            "label": "β"
+          },
+          {
+            "at": "L",
+            "label": "72°"
+          },
+          {
+            "at": "M",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -754,16 +1620,76 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -2,
+            1
+          ],
+          "B": [
+            2,
+            1
+          ],
+          "C": [
+            -2,
+            -1
+          ],
+          "D": [
+            2,
+            -1
+          ],
+          "P": [
+            -1,
+            -2
+          ],
+          "Q": [
+            1,
+            2
+          ],
+          "I1": [
+            0.5,
+            1
+          ],
+          "I2": [
+            -0.5,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "Q",
+            "arrow": true
+          },
+          {
+            "from": "Q",
+            "to": "P",
+            "arrow": true
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-3,1.5],{visible:false}); var pB=board.create('point',[3,2.5],{visible:false}); var pC=board.create('point',[-3,-1.5],{visible:false}); var pD=board.create('point',[3,-0.5],{visible:false}); board.create('segment',[pA,pB],{firstArrow:true,lastArrow:true}); board.create('segment',[pC,pD],{firstArrow:true,lastArrow:true}); var pT1=board.create('point',[-1,-3],{visible:false}); var pT2=board.create('point',[2,4],{visible:false}); board.create('segment',[pT1,pT2],{firstArrow:true,lastArrow:true}); var i1=board.create('intersection',[board.create('line',[pA,pB],{visible:false}),board.create('line',[pT1,pT2],{visible:false})],{visible:false}); var i2=board.create('intersection',[board.create('line',[pC,pD],{visible:false}),board.create('line',[pT1,pT2],{visible:false})],{visible:false}); board.create('angle',[pA,i1,pT1],{name:'3θ',radius:0.8}); board.create('angle',[pT2,i2,pD],{name:'θ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "I1",
+            "label": "3θ"
+          },
+          {
+            "at": "I2",
+            "label": "θ"
+          }
+        ]
       }
     }
   },
@@ -791,16 +1717,75 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -2,
+            2
+          ],
+          "D": [
+            2,
+            2
+          ],
+          "B": [
+            -2,
+            0
+          ],
+          "F": [
+            2,
+            -1.5
+          ],
+          "C": [
+            -2,
+            -1.5
+          ],
+          "E": [
+            0.5,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "E",
+            "marks": 1
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "F",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "D",
+            "to": "E"
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-3,3],{visible:false}); var pD=board.create('point',[3,3],{visible:false}); var pB=board.create('point',[-3,0],{visible:false}); var pF=board.create('point',[3,-2],{visible:false}); var pC=board.create('point',[-3,-2],{visible:false}); var pE=board.create('point',[1,0],{visible:false}); board.create('segment',[pA,pD],{firstArrow:true,lastArrow:true}); board.create('segment',[pB,board.create('point',[3,0],{visible:false})],{firstArrow:true,lastArrow:true}); board.create('segment',[pC,pF],{firstArrow:true,lastArrow:true}); board.create('segment',[pD,pE]); board.create('segment',[pE,pF]); board.create('angle',[pA,pD,pE],{name:'40°',radius:0.8}); board.create('angle',[pE,pF,pC],{name:'30°',radius:0.8}); board.create('angle',[pF,pE,pD],{name:'θ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "D",
+            "label": "40°"
+          },
+          {
+            "at": "E",
+            "label": "θ"
+          },
+          {
+            "at": "F",
+            "label": "30°"
+          }
+        ]
       }
     }
   },
@@ -926,16 +1911,50 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 200,
+        "points": {
+          "A": [
+            0,
+            2
+          ],
+          "B": [
+            -1,
+            -2
+          ],
+          "C": [
+            2,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[0,3],{visible:false}); var pB=board.create('point',[-1.5,-2],{visible:false}); var pC=board.create('point',[2,-2],{visible:false}); board.create('polygon',[pA,pB,pC]); board.create('angle',[pB,pA,pC],{name:'θ',radius:0.8}); board.create('angle',[pC,pB,pA],{name:'75°',radius:0.8}); board.create('angle',[pA,pC,pB],{name:'60°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "θ"
+          },
+          {
+            "at": "B",
+            "label": "75°"
+          },
+          {
+            "at": "C",
+            "label": "60°"
+          }
+        ]
       }
     }
   },
@@ -959,16 +1978,62 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "K": [
+            -2,
+            2
+          ],
+          "L": [
+            1,
+            2
+          ],
+          "M": [
+            2,
+            -1
+          ],
+          "N": [
+            -2,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "K",
+            "to": "L"
+          },
+          {
+            "from": "L",
+            "to": "M"
+          },
+          {
+            "from": "M",
+            "to": "N"
+          },
+          {
+            "from": "N",
+            "to": "K"
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[-2,-2],{visible:false}); var pK=board.create('point',[-2,2],{visible:false}); var pL=board.create('point',[1,2],{visible:false}); var pM=board.create('point',[3,-1],{visible:false}); board.create('polygon',[pN,pK,pL,pM]); board.create('angle',[pM,pN,pK],{name:'α',radius:0.8}); board.create('angle',[pN,pK,pL],{name:'90°',radius:0.8}); board.create('angle',[pK,pL,pM],{name:'120°',radius:0.8}); board.create('angle',[pL,pM,pN],{name:'90°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "K",
+            "right": true
+          },
+          {
+            "at": "L",
+            "label": "120°"
+          },
+          {
+            "at": "M",
+            "right": true
+          },
+          {
+            "at": "N",
+            "label": "α"
+          }
+        ]
       }
     }
   },
@@ -992,16 +2057,54 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "P": [
+            -2,
+            2
+          ],
+          "A": [
+            0,
+            2
+          ],
+          "B": [
+            2,
+            2
+          ],
+          "C": [
+            3,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "B"
+          },
+          {
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          }
         ],
-        "script": "board.suspendUpdate(); var pP=board.create('point',[-3,2],{visible:false}); var pB=board.create('point',[2,2],{visible:false}); var pA=board.create('point',[0,2],{visible:false}); var pC=board.create('point',[3,-2],{visible:false}); board.create('segment',[pP,pB]); board.create('segment',[pA,pC]); board.create('segment',[pB,pC]); board.create('angle',[pP,pA,pC],{name:'θ',radius:0.8}); board.create('angle',[pA,pB,pC],{name:'100°',radius:0.8}); board.create('angle',[pB,pC,pA],{name:'30°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "θ"
+          },
+          {
+            "at": "B",
+            "label": "100°"
+          },
+          {
+            "at": "C",
+            "label": "30°"
+          }
+        ]
       }
     }
   },
@@ -1025,16 +2128,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "U": [
+            -3,
+            0
+          ],
+          "R": [
+            -1,
+            2
+          ],
+          "S": [
+            3,
+            2
+          ],
+          "T": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "U",
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "to": "S"
+          },
+          {
+            "from": "S",
+            "to": "T"
+          },
+          {
+            "from": "T",
+            "to": "U"
+          },
+          {
+            "from": "R",
+            "to": "T"
+          }
         ],
-        "script": "board.suspendUpdate(); var pU=board.create('point',[-3,0],{visible:false}); var pR=board.create('point',[-1,3],{visible:false}); var pS=board.create('point',[3,3],{visible:false}); var pT=board.create('point',[1,-2],{visible:false}); board.create('polygon',[pU,pR,pS,pT]); board.create('segment',[pR,pT]); board.create('angle',[pT,pR,pS],{name:'70°',radius:0.8}); board.create('angle',[pU,pR,pT],{name:'50°',radius:0.8}); board.create('angle',[pR,pS,pT],{name:'α',radius:0.8}); board.create('angle',[pS,pT,pR],{name:'30°',radius:0.8}); board.create('angle',[pU,pT,pR],{name:'β',radius:0.8}); board.create('angle',[pT,pU,pR],{name:'60°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "R",
+            "label": "120°"
+          },
+          {
+            "at": "S",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "30°"
+          },
+          {
+            "at": "U",
+            "label": "60°"
+          }
+        ]
       }
     }
   },
@@ -1058,16 +2211,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "U": [
+            -3,
+            0
+          ],
+          "R": [
+            -1,
+            2
+          ],
+          "S": [
+            3,
+            2
+          ],
+          "T": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "U",
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "to": "S"
+          },
+          {
+            "from": "S",
+            "to": "T"
+          },
+          {
+            "from": "T",
+            "to": "U"
+          },
+          {
+            "from": "R",
+            "to": "T"
+          }
         ],
-        "script": "board.suspendUpdate(); var pU=board.create('point',[-3,0],{visible:false}); var pR=board.create('point',[-1,3],{visible:false}); var pS=board.create('point',[3,3],{visible:false}); var pT=board.create('point',[1,-2],{visible:false}); board.create('polygon',[pU,pR,pS,pT]); board.create('segment',[pR,pT]); board.create('angle',[pT,pR,pS],{name:'70°',radius:0.8}); board.create('angle',[pU,pR,pT],{name:'50°',radius:0.8}); board.create('angle',[pR,pS,pT],{name:'α',radius:0.8}); board.create('angle',[pS,pT,pR],{name:'30°',radius:0.8}); board.create('angle',[pU,pT,pR],{name:'β',radius:0.8}); board.create('angle',[pT,pU,pR],{name:'60°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "R",
+            "label": "120°"
+          },
+          {
+            "at": "S",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "30°"
+          },
+          {
+            "at": "U",
+            "label": "60°"
+          }
+        ]
       }
     }
   },
@@ -1091,16 +2294,62 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "E": [
+            0,
+            2
+          ],
+          "F": [
+            -2,
+            1
+          ],
+          "G": [
+            -1.5,
+            -2
+          ],
+          "H": [
+            2,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "G"
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "H",
+            "to": "E"
+          }
         ],
-        "script": "board.suspendUpdate(); var pG=board.create('point',[-2,-2],{visible:false}); var pF=board.create('point',[-1.5,1.5],{visible:false}); var pE=board.create('point',[1,2.5],{visible:false}); var pH=board.create('point',[3,0],{visible:false}); board.create('polygon',[pG,pF,pE,pH]); board.create('angle',[pH,pG,pF],{name:'θ',radius:0.8}); board.create('angle',[pG,pF,pE],{name:'110°',radius:0.8}); board.create('angle',[pF,pE,pH],{name:'140°',radius:0.8}); board.create('angle',[pE,pH,pG],{name:'70°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "E",
+            "label": "140°"
+          },
+          {
+            "at": "F",
+            "label": "110°"
+          },
+          {
+            "at": "G",
+            "label": "θ"
+          },
+          {
+            "at": "H",
+            "label": "70°"
+          }
+        ]
       }
     }
   },
@@ -1128,16 +2377,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "A": [
+            -2,
+            2
+          ],
+          "B": [
+            0,
+            2
+          ],
+          "C": [
+            2,
+            2
+          ],
+          "D": [
+            0,
+            0
+          ],
+          "E": [
+            0,
+            -2
+          ],
+          "F": [
+            0,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-2,2],{visible:false}); var pB=board.create('point',[0,2],{visible:false}); var pC=board.create('point',[2,2],{visible:false}); var pE=board.create('point',[0,-2],{visible:false}); var pD=board.create('point',[0,-0.5],{visible:false}); board.create('segment',[pA,pC]); board.create('segment',[pB,pE]); board.create('segment',[pA,pD]); board.create('segment',[pC,pD]); board.create('angle',[pD,pA,pB],{name:'50°',radius:0.8}); board.create('angle',[pA,pB,pD],{name:'90°',radius:0.6}); board.create('angle',[pA,pD,pE],{name:'β',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "50°"
+          },
+          {
+            "at": "B",
+            "right": true
+          },
+          {
+            "at": "D",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -1157,16 +2456,52 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 200,
+        "points": {
+          "B": [
+            0,
+            3
+          ],
+          "C": [
+            -1,
+            -2
+          ],
+          "A": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 2
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "ticks": 2
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
         ],
-        "script": "board.suspendUpdate(); var pB=board.create('point',[0,3],{visible:false}); var pA=board.create('point',[1.5,-2],{visible:false}); var pC=board.create('point',[-1.5,-2],{visible:false}); board.create('polygon',[pB,pA,pC]); board.create('angle',[pC,pB,pA],{name:'β',radius:0.8}); board.create('angle',[pB,pC,pA],{name:'70°',radius:0.8}); board.create('angle',[pC,pA,pB],{name:'α',radius:0.8}); board.create('point',[-0.75,0.5],{name:'//',size:0}); board.create('point',[0.75,0.5],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "β"
+          },
+          {
+            "at": "C",
+            "label": "70°"
+          },
+          {
+            "at": "A",
+            "label": "α"
+          }
+        ]
       }
     }
   },
@@ -1190,16 +2525,52 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 200,
+        "points": {
+          "B": [
+            0,
+            3
+          ],
+          "C": [
+            -1,
+            -2
+          ],
+          "A": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 2
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "ticks": 2
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
         ],
-        "script": "board.suspendUpdate(); var pB=board.create('point',[0,3],{visible:false}); var pA=board.create('point',[1.5,-2],{visible:false}); var pC=board.create('point',[-1.5,-2],{visible:false}); board.create('polygon',[pB,pA,pC]); board.create('angle',[pC,pB,pA],{name:'β',radius:0.8}); board.create('angle',[pB,pC,pA],{name:'70°',radius:0.8}); board.create('angle',[pC,pA,pB],{name:'α',radius:0.8}); board.create('point',[-0.75,0.5],{name:'//',size:0}); board.create('point',[0.75,0.5],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "β"
+          },
+          {
+            "at": "C",
+            "label": "70°"
+          },
+          {
+            "at": "A",
+            "label": "α"
+          }
+        ]
       }
     }
   },
@@ -1223,16 +2594,52 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "C": [
+            -3,
+            0
+          ],
+          "A": [
+            2,
+            1.5
+          ],
+          "B": [
+            2,
+            -1.5
+          ]
+        },
+        "segments": [
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 2
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "B"
+          }
         ],
-        "script": "board.suspendUpdate(); var pC=board.create('point',[-3,0],{visible:false}); var pA=board.create('point',[2,2],{visible:false}); var pB=board.create('point',[2,-2],{visible:false}); board.create('polygon',[pC,pA,pB]); board.create('angle',[pB,pC,pA],{name:'50°',radius:0.8}); board.create('angle',[pC,pA,pB],{name:'α',radius:0.8}); board.create('angle',[pA,pB,pC],{name:'β',radius:0.8}); board.create('point',[-0.5,1],{name:'//',size:0}); board.create('point',[-0.5,-1],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "C",
+            "label": "50°"
+          },
+          {
+            "at": "A",
+            "label": "α"
+          },
+          {
+            "at": "B",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -1252,16 +2659,52 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "C": [
+            -3,
+            0
+          ],
+          "A": [
+            2,
+            1.5
+          ],
+          "B": [
+            2,
+            -1.5
+          ]
+        },
+        "segments": [
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 2
+          },
+          {
+            "from": "C",
+            "to": "B",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "B"
+          }
         ],
-        "script": "board.suspendUpdate(); var pC=board.create('point',[-3,0],{visible:false}); var pA=board.create('point',[2,2],{visible:false}); var pB=board.create('point',[2,-2],{visible:false}); board.create('polygon',[pC,pA,pB]); board.create('angle',[pB,pC,pA],{name:'50°',radius:0.8}); board.create('angle',[pC,pA,pB],{name:'α',radius:0.8}); board.create('angle',[pA,pB,pC],{name:'β',radius:0.8}); board.create('point',[-0.5,1],{name:'//',size:0}); board.create('point',[-0.5,-1],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "C",
+            "label": "50°"
+          },
+          {
+            "at": "A",
+            "label": "α"
+          },
+          {
+            "at": "B",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -1285,16 +2728,62 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "L": [
+            -2,
+            2
+          ],
+          "M": [
+            2,
+            2
+          ],
+          "N": [
+            0,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "L",
+            "to": "M"
+          },
+          {
+            "from": "M",
+            "to": "N"
+          },
+          {
+            "from": "N",
+            "to": "L"
+          }
         ],
-        "script": "board.suspendUpdate(); var pN=board.create('point',[0,-2],{visible:false}); var pL=board.create('point',[-2,2],{visible:false}); var pM=board.create('point',[2,2],{visible:false}); board.create('polygon',[pN,pL,pM]); board.create('angle',[pN,pL,pM],{name:'50°',radius:0.8}); board.create('angle',[pL,pM,pN],{name:'50°',radius:0.8}); board.create('text',[-1.5,0,'17']); board.create('text',[1,0,'3x + 5']); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "L",
+            "label": "50°"
+          },
+          {
+            "at": "M",
+            "label": "50°"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "L",
+              "N"
+            ],
+            "text": "17"
+          },
+          {
+            "between": [
+              "M",
+              "N"
+            ],
+            "text": "3x + 5"
+          }
+        ]
       }
     }
   },
@@ -1322,16 +2811,67 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "P": [
+            0,
+            3
+          ],
+          "Q": [
+            -2,
+            0
+          ],
+          "R": [
+            2,
+            0
+          ],
+          "S": [
+            0,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "Q",
+            "ticks": 2
+          },
+          {
+            "from": "P",
+            "to": "R",
+            "ticks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "ticks": 1
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "ticks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pQ=board.create('point',[-2,0],{visible:false}); var pR=board.create('point',[2,0],{visible:false}); var pP=board.create('point',[0,3],{visible:false}); var pS=board.create('point',[0,-3],{visible:false}); board.create('polygon',[pQ,pP,pR,pS]); board.create('segment',[pQ,pR]); board.create('angle',[pR,pQ,pS],{name:'105°',radius:0.8}); board.create('angle',[pQ,pP,pR],{name:'α',radius:0.8}); board.create('angle',[pP,pS,pR],{name:'β',radius:0.8}); board.create('point',[-1,1.5],{name:'//',size:0}); board.create('point',[1,1.5],{name:'//',size:0}); board.create('point',[-1,-1.5],{name:'/',size:0}); board.create('point',[1,-1.5],{name:'/',size:0}); board.create('point',[0,0.2],{name:'/',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "P",
+            "label": "α"
+          },
+          {
+            "at": "Q",
+            "label": "105°"
+          },
+          {
+            "at": "S",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -1351,16 +2891,67 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "P": [
+            0,
+            3
+          ],
+          "Q": [
+            -2,
+            0
+          ],
+          "R": [
+            2,
+            0
+          ],
+          "S": [
+            0,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "Q",
+            "ticks": 2
+          },
+          {
+            "from": "P",
+            "to": "R",
+            "ticks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "ticks": 1
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "ticks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pQ=board.create('point',[-2,0],{visible:false}); var pR=board.create('point',[2,0],{visible:false}); var pP=board.create('point',[0,3],{visible:false}); var pS=board.create('point',[0,-3],{visible:false}); board.create('polygon',[pQ,pP,pR,pS]); board.create('segment',[pQ,pR]); board.create('angle',[pR,pQ,pS],{name:'105°',radius:0.8}); board.create('angle',[pQ,pP,pR],{name:'α',radius:0.8}); board.create('angle',[pP,pS,pR],{name:'β',radius:0.8}); board.create('point',[-1,1.5],{name:'//',size:0}); board.create('point',[1,1.5],{name:'//',size:0}); board.create('point',[-1,-1.5],{name:'/',size:0}); board.create('point',[1,-1.5],{name:'/',size:0}); board.create('point',[0,0.2],{name:'/',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "P",
+            "label": "α"
+          },
+          {
+            "at": "Q",
+            "label": "105°"
+          },
+          {
+            "at": "S",
+            "label": "β"
+          }
+        ]
       }
     }
   },
@@ -1380,16 +2971,73 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "K": [
+            0,
+            2
+          ],
+          "L": [
+            -2,
+            -2
+          ],
+          "M": [
+            2,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "K",
+            "to": "L"
+          },
+          {
+            "from": "L",
+            "to": "M"
+          },
+          {
+            "from": "M",
+            "to": "K"
+          }
         ],
-        "script": "board.suspendUpdate(); var pL=board.create('point',[-2,-2],{visible:false}); var pM=board.create('point',[2,-2],{visible:false}); var pK=board.create('point',[0,1.5],{visible:false}); board.create('polygon',[pL,pM,pK]); board.create('angle',[pM,pL,pK],{name:'α',radius:0.8}); board.create('angle',[pK,pM,pL],{name:'α',radius:0.8}); board.create('angle',[pL,pK,pM],{name:'α',radius:0.8}); board.create('text',[0,-2.3,'8']); board.create('text',[-1.3,0,'4y']); board.create('text',[1,0,'x']); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "K",
+            "label": "α"
+          },
+          {
+            "at": "L",
+            "label": "α"
+          },
+          {
+            "at": "M",
+            "label": "α"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "K",
+              "L"
+            ],
+            "text": "4y"
+          },
+          {
+            "between": [
+              "K",
+              "M"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "L",
+              "M"
+            ],
+            "text": "8"
+          }
+        ]
       }
     }
   },
@@ -1409,16 +3057,73 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "K": [
+            0,
+            2
+          ],
+          "L": [
+            -2,
+            -2
+          ],
+          "M": [
+            2,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "K",
+            "to": "L"
+          },
+          {
+            "from": "L",
+            "to": "M"
+          },
+          {
+            "from": "M",
+            "to": "K"
+          }
         ],
-        "script": "board.suspendUpdate(); var pL=board.create('point',[-2,-2],{visible:false}); var pM=board.create('point',[2,-2],{visible:false}); var pK=board.create('point',[0,1.5],{visible:false}); board.create('polygon',[pL,pM,pK]); board.create('angle',[pM,pL,pK],{name:'α',radius:0.8}); board.create('angle',[pK,pM,pL],{name:'α',radius:0.8}); board.create('angle',[pL,pK,pM],{name:'α',radius:0.8}); board.create('text',[0,-2.3,'8']); board.create('text',[-1.3,0,'4y']); board.create('text',[1,0,'x']); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "K",
+            "label": "α"
+          },
+          {
+            "at": "L",
+            "label": "α"
+          },
+          {
+            "at": "M",
+            "label": "α"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "K",
+              "L"
+            ],
+            "text": "4y"
+          },
+          {
+            "between": [
+              "K",
+              "M"
+            ],
+            "text": "x"
+          },
+          {
+            "between": [
+              "L",
+              "M"
+            ],
+            "text": "8"
+          }
+        ]
       }
     }
   },
@@ -1442,16 +3147,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "R": [
+            0,
+            3
+          ],
+          "T": [
+            -2,
+            0
+          ],
+          "U": [
+            2,
+            0
+          ],
+          "S": [
+            0,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "R",
+            "to": "T",
+            "ticks": 2
+          },
+          {
+            "from": "R",
+            "to": "U",
+            "ticks": 2
+          },
+          {
+            "from": "S",
+            "to": "T",
+            "ticks": 3
+          },
+          {
+            "from": "S",
+            "to": "U",
+            "ticks": 3
+          },
+          {
+            "from": "T",
+            "to": "U"
+          }
         ],
-        "script": "board.suspendUpdate(); var pT=board.create('point',[-2,0],{visible:false}); var pU=board.create('point',[2,0],{visible:false}); var pR=board.create('point',[0,3],{visible:false}); var pS=board.create('point',[0,-3],{visible:false}); board.create('polygon',[pT,pR,pU,pS]); board.create('segment',[pT,pU]); board.create('angle',[pT,pR,pU],{name:'α',radius:0.8}); board.create('angle',[pR,pT,pU],{name:'60°',radius:0.8}); board.create('angle',[pS,pT,pU],{name:'β',radius:0.8}); board.create('angle',[pT,pS,pU],{name:'γ',radius:0.8}); board.create('angle',[pT,pU,pS],{name:'80°',radius:0.8}); board.create('point',[-1,1.5],{name:'//',size:0}); board.create('point',[1,1.5],{name:'//',size:0}); board.create('point',[-1,-1.5],{name:'///',size:0}); board.create('point',[1,-1.5],{name:'///',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "R",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "60°"
+          },
+          {
+            "at": "U",
+            "label": "80°"
+          },
+          {
+            "at": "S",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -1471,16 +3230,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "R": [
+            0,
+            3
+          ],
+          "T": [
+            -2,
+            0
+          ],
+          "U": [
+            2,
+            0
+          ],
+          "S": [
+            0,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "R",
+            "to": "T",
+            "ticks": 2
+          },
+          {
+            "from": "R",
+            "to": "U",
+            "ticks": 2
+          },
+          {
+            "from": "S",
+            "to": "T",
+            "ticks": 3
+          },
+          {
+            "from": "S",
+            "to": "U",
+            "ticks": 3
+          },
+          {
+            "from": "T",
+            "to": "U"
+          }
         ],
-        "script": "board.suspendUpdate(); var pT=board.create('point',[-2,0],{visible:false}); var pU=board.create('point',[2,0],{visible:false}); var pR=board.create('point',[0,3],{visible:false}); var pS=board.create('point',[0,-3],{visible:false}); board.create('polygon',[pT,pR,pU,pS]); board.create('segment',[pT,pU]); board.create('angle',[pT,pR,pU],{name:'α',radius:0.8}); board.create('angle',[pR,pT,pU],{name:'60°',radius:0.8}); board.create('angle',[pS,pT,pU],{name:'β',radius:0.8}); board.create('angle',[pT,pS,pU],{name:'γ',radius:0.8}); board.create('angle',[pT,pU,pS],{name:'80°',radius:0.8}); board.create('point',[-1,1.5],{name:'//',size:0}); board.create('point',[1,1.5],{name:'//',size:0}); board.create('point',[-1,-1.5],{name:'///',size:0}); board.create('point',[1,-1.5],{name:'///',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "R",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "60°"
+          },
+          {
+            "at": "U",
+            "label": "80°"
+          },
+          {
+            "at": "S",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -1500,16 +3313,70 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 220,
+        "points": {
+          "R": [
+            0,
+            3
+          ],
+          "T": [
+            -2,
+            0
+          ],
+          "U": [
+            2,
+            0
+          ],
+          "S": [
+            0,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "R",
+            "to": "T",
+            "ticks": 2
+          },
+          {
+            "from": "R",
+            "to": "U",
+            "ticks": 2
+          },
+          {
+            "from": "S",
+            "to": "T",
+            "ticks": 3
+          },
+          {
+            "from": "S",
+            "to": "U",
+            "ticks": 3
+          },
+          {
+            "from": "T",
+            "to": "U"
+          }
         ],
-        "script": "board.suspendUpdate(); var pT=board.create('point',[-2,0],{visible:false}); var pU=board.create('point',[2,0],{visible:false}); var pR=board.create('point',[0,3],{visible:false}); var pS=board.create('point',[0,-3],{visible:false}); board.create('polygon',[pT,pR,pU,pS]); board.create('segment',[pT,pU]); board.create('angle',[pT,pR,pU],{name:'α',radius:0.8}); board.create('angle',[pR,pT,pU],{name:'60°',radius:0.8}); board.create('angle',[pS,pT,pU],{name:'β',radius:0.8}); board.create('angle',[pT,pS,pU],{name:'γ',radius:0.8}); board.create('angle',[pT,pU,pS],{name:'80°',radius:0.8}); board.create('point',[-1,1.5],{name:'//',size:0}); board.create('point',[1,1.5],{name:'//',size:0}); board.create('point',[-1,-1.5],{name:'///',size:0}); board.create('point',[1,-1.5],{name:'///',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "R",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "60°"
+          },
+          {
+            "at": "U",
+            "label": "80°"
+          },
+          {
+            "at": "S",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -1537,16 +3404,64 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "B": [
+            -2,
+            3
+          ],
+          "A": [
+            1,
+            3
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            -2,
+            -3
+          ],
+          "E": [
+            1,
+            -3
+          ]
+        },
+        "segments": [
+          {
+            "from": "B",
+            "to": "A",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "E",
+            "arrow": true
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[1,3],{visible:false}); var pB=board.create('point',[-2,3],{visible:false}); var pC=board.create('point',[0,0],{visible:false}); var pD=board.create('point',[-2,-3],{visible:false}); var pE=board.create('point',[1,-3],{visible:false}); board.create('segment',[pB,pA],{lastArrow:true}); board.create('segment',[pD,pE],{lastArrow:true}); board.create('segment',[pB,pC]); board.create('segment',[pC,pD]); board.create('angle',[pA,pB,pC],{name:'35°',radius:0.8}); board.create('angle',[pE,pD,pC],{name:'55°',radius:0.8}); board.create('angle',[pD,pC,pB],{name:'θ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "35°"
+          },
+          {
+            "at": "C",
+            "label": "θ"
+          },
+          {
+            "at": "D",
+            "label": "55°"
+          }
+        ]
       }
     }
   },
@@ -1574,16 +3489,64 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "Q": [
+            -2,
+            2
+          ],
+          "P": [
+            2,
+            2
+          ],
+          "R": [
+            -3,
+            -1
+          ],
+          "S": [
+            0,
+            -0.5
+          ],
+          "T": [
+            3,
+            -0.5
+          ]
+        },
+        "segments": [
+          {
+            "from": "Q",
+            "to": "P",
+            "arrow": true
+          },
+          {
+            "from": "S",
+            "to": "T",
+            "arrow": true
+          },
+          {
+            "from": "Q",
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "to": "S"
+          }
         ],
-        "script": "board.suspendUpdate(); var pQ=board.create('point',[-2,2],{visible:false}); var pP=board.create('point',[2,2],{visible:false}); var pR=board.create('point',[-3,-1],{visible:false}); var pS=board.create('point',[0,-0.5],{visible:false}); var pT=board.create('point',[3,-0.5],{visible:false}); board.create('segment',[pQ,pP],{lastArrow:true}); board.create('segment',[pS,pT],{lastArrow:true}); board.create('segment',[pQ,pR]); board.create('segment',[pR,pS]); board.create('angle',[pR,pQ,pP],{name:'α',radius:0.8}); board.create('angle',[pT,pS,pR],{name:'130°',radius:0.8}); board.create('angle',[pS,pR,pQ],{name:'60°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "Q",
+            "label": "α"
+          },
+          {
+            "at": "R",
+            "label": "60°"
+          },
+          {
+            "at": "S",
+            "label": "130°"
+          }
+        ]
       }
     }
   },
@@ -1611,16 +3574,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "B": [
+            -1,
+            -1
+          ],
+          "P": [
+            -1,
+            3
+          ],
+          "A": [
+            -3,
+            1
+          ],
+          "C": [
+            1,
+            -3
+          ],
+          "D": [
+            2,
+            -2
+          ],
+          "Q": [
+            2,
+            3
+          ],
+          "E": [
+            3,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "B",
+            "to": "P",
+            "arrow": true
+          },
+          {
+            "from": "D",
+            "to": "Q",
+            "arrow": true
+          },
+          {
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          }
         ],
-        "script": "board.suspendUpdate(); var pB=board.create('point',[-1,-1],{visible:false}); var pP=board.create('point',[-1,3],{visible:false}); var pA=board.create('point',[-3,1],{visible:false}); var pC=board.create('point',[1,-3],{visible:false}); var pD=board.create('point',[2,-2],{visible:false}); var pQ=board.create('point',[2,3],{visible:false}); var pE=board.create('point',[3,-1],{visible:false}); board.create('segment',[pB,pP],{lastArrow:true}); board.create('segment',[pD,pQ],{lastArrow:true}); board.create('segment',[pA,pC]); board.create('segment',[pB,pC]); board.create('segment',[pC,pD]); board.create('segment',[pD,pE]); board.create('angle',[pP,pB,pA],{name:'θ',radius:0.8}); board.create('angle',[pD,pC,pB],{name:'90°',radius:0.6}); board.create('angle',[pQ,pD,pE],{name:'40°',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "θ"
+          },
+          {
+            "at": "C",
+            "right": true
+          },
+          {
+            "at": "D",
+            "label": "40°"
+          }
+        ]
       }
     }
   },
@@ -1640,16 +3667,88 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 280,
+        "points": {
+          "P": [
+            -3,
+            2
+          ],
+          "Q": [
+            0,
+            2
+          ],
+          "R": [
+            3,
+            2
+          ],
+          "T": [
+            -2,
+            -2
+          ],
+          "S": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "R",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "T",
+            "to": "S",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "T",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "ticks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "ticks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pP=board.create('point',[-3,2],{visible:false}); var pQ=board.create('point',[0,2],{visible:false}); var pR=board.create('point',[3,2],{visible:false}); var pT=board.create('point',[-2,-2],{visible:false}); var pS=board.create('point',[1,-2],{visible:false}); board.create('segment',[pP,pR],{lastArrow:true}); board.create('segment',[pT,pS],{lastArrow:true}); board.create('segment',[pP,pT],{lastArrow:true}); board.create('segment',[pQ,pS],{lastArrow:true}); board.create('segment',[pS,pR]); board.create('angle',[pT,pP,pQ],{name:'β',radius:0.8}); board.create('angle',[pS,pT,pP],{name:'60°',radius:0.8}); board.create('angle',[pP,pQ,pS],{name:'130°',radius:0.8}); board.create('angle',[pT,pS,pQ],{name:'α',radius:0.8}); board.create('angle',[pQ,pR,pS],{name:'γ',radius:0.8}); board.create('point',[0.5,0],{name:'//',size:0}); board.create('point',[2,0],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "P",
+            "label": "β"
+          },
+          {
+            "at": "Q",
+            "label": "130°"
+          },
+          {
+            "at": "R",
+            "label": "γ"
+          },
+          {
+            "at": "S",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "60°"
+          }
+        ]
       }
     }
   },
@@ -1669,16 +3768,88 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 280,
+        "points": {
+          "P": [
+            -3,
+            2
+          ],
+          "Q": [
+            0,
+            2
+          ],
+          "R": [
+            3,
+            2
+          ],
+          "T": [
+            -2,
+            -2
+          ],
+          "S": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "R",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "T",
+            "to": "S",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "T",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "ticks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "ticks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pP=board.create('point',[-3,2],{visible:false}); var pQ=board.create('point',[0,2],{visible:false}); var pR=board.create('point',[3,2],{visible:false}); var pT=board.create('point',[-2,-2],{visible:false}); var pS=board.create('point',[1,-2],{visible:false}); board.create('segment',[pP,pR],{lastArrow:true}); board.create('segment',[pT,pS],{lastArrow:true}); board.create('segment',[pP,pT],{lastArrow:true}); board.create('segment',[pQ,pS],{lastArrow:true}); board.create('segment',[pS,pR]); board.create('angle',[pT,pP,pQ],{name:'β',radius:0.8}); board.create('angle',[pS,pT,pP],{name:'60°',radius:0.8}); board.create('angle',[pP,pQ,pS],{name:'130°',radius:0.8}); board.create('angle',[pT,pS,pQ],{name:'α',radius:0.8}); board.create('angle',[pQ,pR,pS],{name:'γ',radius:0.8}); board.create('point',[0.5,0],{name:'//',size:0}); board.create('point',[2,0],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "P",
+            "label": "β"
+          },
+          {
+            "at": "Q",
+            "label": "130°"
+          },
+          {
+            "at": "R",
+            "label": "γ"
+          },
+          {
+            "at": "S",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "60°"
+          }
+        ]
       }
     }
   },
@@ -1698,16 +3869,88 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 280,
+        "points": {
+          "P": [
+            -3,
+            2
+          ],
+          "Q": [
+            0,
+            2
+          ],
+          "R": [
+            3,
+            2
+          ],
+          "T": [
+            -2,
+            -2
+          ],
+          "S": [
+            1,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "R",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "T",
+            "to": "S",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "T",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "S",
+            "to": "R",
+            "ticks": 2
+          },
+          {
+            "from": "Q",
+            "to": "S",
+            "ticks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pP=board.create('point',[-3,2],{visible:false}); var pQ=board.create('point',[0,2],{visible:false}); var pR=board.create('point',[3,2],{visible:false}); var pT=board.create('point',[-2,-2],{visible:false}); var pS=board.create('point',[1,-2],{visible:false}); board.create('segment',[pP,pR],{lastArrow:true}); board.create('segment',[pT,pS],{lastArrow:true}); board.create('segment',[pP,pT],{lastArrow:true}); board.create('segment',[pQ,pS],{lastArrow:true}); board.create('segment',[pS,pR]); board.create('angle',[pT,pP,pQ],{name:'β',radius:0.8}); board.create('angle',[pS,pT,pP],{name:'60°',radius:0.8}); board.create('angle',[pP,pQ,pS],{name:'130°',radius:0.8}); board.create('angle',[pT,pS,pQ],{name:'α',radius:0.8}); board.create('angle',[pQ,pR,pS],{name:'γ',radius:0.8}); board.create('point',[0.5,0],{name:'//',size:0}); board.create('point',[2,0],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "P",
+            "label": "β"
+          },
+          {
+            "at": "Q",
+            "label": "130°"
+          },
+          {
+            "at": "R",
+            "label": "γ"
+          },
+          {
+            "at": "S",
+            "label": "α"
+          },
+          {
+            "at": "T",
+            "label": "60°"
+          }
+        ]
       }
     }
   },
@@ -1735,16 +3978,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -2,
+            2
+          ],
+          "B": [
+            2,
+            2
+          ],
+          "C": [
+            -2,
+            -2
+          ],
+          "D": [
+            2,
+            -2
+          ],
+          "M": [
+            0,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "C",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-2,2],{visible:false}); var pB=board.create('point',[2,2],{visible:false}); var pC=board.create('point',[-2,-2],{visible:false}); var pD=board.create('point',[2,-2],{visible:false}); var pM=board.create('point',[0,0],{visible:false}); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pC,pD],{lastArrow:true}); board.create('segment',[pA,pD]); board.create('segment',[pB,pC]); board.create('angle',[pM,pA,pB],{name:'45°',radius:0.8}); board.create('angle',[pD,pM,pC],{name:'80°',radius:0.8}); board.create('angle',[pD,pC,pM],{name:'θ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "45°"
+          },
+          {
+            "at": "C",
+            "label": "θ"
+          },
+          {
+            "at": "M",
+            "label": "80°"
+          }
+        ]
       }
     }
   },
@@ -1772,16 +4065,69 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 240,
+        "points": {
+          "A": [
+            0,
+            3
+          ],
+          "B": [
+            -3,
+            0
+          ],
+          "O": [
+            0,
+            0
+          ],
+          "M": [
+            -1.5,
+            1.5
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "O"
+          },
+          {
+            "from": "O",
+            "to": "A"
+          },
+          {
+            "from": "M",
+            "to": "O",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "M",
+            "ticks": 2
+          },
+          {
+            "from": "M",
+            "to": "B",
+            "ticks": 2
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[0,3],{visible:false}); var pB=board.create('point',[-3,0],{visible:false}); var pO=board.create('point',[0,0],{visible:false}); var pM=board.create('point',[-1.5,1.5],{visible:false}); board.create('polygon',[pA,pB,pO]); board.create('segment',[pM,pO]); board.create('angle',[pO,pB,pA],{name:'25°',radius:0.8}); board.create('angle',[pM,pA,pO],{name:'α',radius:0.8}); board.create('point',[-2.25,0.75],{name:'//',size:0}); board.create('point',[-0.75,2.25],{name:'//',size:0}); board.create('point',[-0.75,0.75],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "25°"
+          },
+          {
+            "at": "O",
+            "right": true
+          },
+          {
+            "at": "M",
+            "label": "α"
+          }
+        ]
       }
     }
   },
@@ -1809,16 +4155,66 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 240,
+        "points": {
+          "O": [
+            0,
+            3
+          ],
+          "X": [
+            -2,
+            -2
+          ],
+          "Y": [
+            2,
+            -2
+          ],
+          "P": [
+            -1,
+            0.5
+          ],
+          "Q": [
+            1,
+            0.5
+          ]
+        },
+        "segments": [
+          {
+            "from": "O",
+            "to": "X"
+          },
+          {
+            "from": "O",
+            "to": "Y"
+          },
+          {
+            "from": "X",
+            "to": "Y",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "P",
+            "to": "Q",
+            "arrow": true,
+            "marks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pO=board.create('point',[0,3],{visible:false}); var pX=board.create('point',[-2,-2],{visible:false}); var pY=board.create('point',[2,-2],{visible:false}); var pP=board.create('point',[-1,0.5],{visible:false}); var pQ=board.create('point',[1,0.5],{visible:false}); board.create('polygon',[pO,pX,pY]); board.create('segment',[pP,pQ],{lastArrow:true}); board.create('segment',[pX,pY],{lastArrow:true}); board.create('angle',[pP,pO,pQ],{name:'50°',radius:0.8}); board.create('angle',[pY,pX,pO],{name:'60°',radius:0.8}); board.create('angle',[pY,pQ,pP],{name:'θ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "O",
+            "label": "50°"
+          },
+          {
+            "at": "X",
+            "label": "60°"
+          },
+          {
+            "at": "Q",
+            "label": "θ"
+          }
+        ]
       }
     }
   },
@@ -1846,16 +4242,68 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "A": [
+            -2,
+            2
+          ],
+          "F": [
+            2,
+            2
+          ],
+          "B": [
+            -1,
+            -2
+          ],
+          "C": [
+            1,
+            -2
+          ],
+          "G": [
+            3,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "F",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "G",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 2
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "C"
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-2,2],{visible:false}); var pF=board.create('point',[2,2],{visible:false}); var pB=board.create('point',[-1,-2],{visible:false}); var pC=board.create('point',[1,-2],{visible:false}); var pG=board.create('point',[3,-2],{visible:false}); board.create('segment',[pA,pF],{lastArrow:true}); board.create('segment',[pB,pG],{lastArrow:true}); board.create('segment',[pA,pB]); board.create('segment',[pA,pC]); board.create('angle',[pC,pA,pF],{name:'35°',radius:0.8}); board.create('angle',[pC,pB,pA],{name:'θ',radius:0.8}); board.create('point',[-1.5,0],{name:'//',size:0}); board.create('point',[0,-2],{name:'//',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "35°"
+          },
+          {
+            "at": "B",
+            "label": "θ"
+          }
+        ]
       }
     }
   },
@@ -1879,16 +4327,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "B": [
+            -2,
+            0
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            2,
+            0
+          ],
+          "A": [
+            0,
+            3.46
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 2
+          },
+          {
+            "from": "B",
+            "to": "D"
+          },
+          {
+            "from": "A",
+            "to": "C"
+          }
         ],
-        "script": "board.suspendUpdate(); var pB=board.create('point',[-2,0],{visible:false}); var pD=board.create('point',[2,0],{visible:false}); var pC=board.create('point',[0,0],{visible:false}); var pA=board.create('point',[0,3.46],{visible:false}); board.create('polygon',[pA,pB,pD]); board.create('segment',[pA,pC]); board.create('angle',[pA,pC,pB],{name:'90°',radius:0.5}); board.create('angle',[pA,pD,pB],{name:'60°',radius:0.8}); board.create('angle',[pD,pA,pC],{name:'α',radius:0.8}); board.create('angle',[pC,pB,pA],{name:'β',radius:0.8}); board.create('point',[-1,1.73],{name:'/',size:0}); board.create('point',[1,1.73],{name:'/',size:0}); board.create('text',[1,2,'5x - 2']); board.create('text',[1,-0.5,'2x + 3']); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "C",
+            "right": true
+          },
+          {
+            "at": "A",
+            "label": "α"
+          },
+          {
+            "at": "B",
+            "label": "β"
+          },
+          {
+            "at": "D",
+            "label": "60°"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "5x - 2"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "2x + 3"
+          }
+        ]
       }
     }
   },
@@ -1908,16 +4420,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "B": [
+            -2,
+            0
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            2,
+            0
+          ],
+          "A": [
+            0,
+            3.46
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 2
+          },
+          {
+            "from": "B",
+            "to": "D"
+          },
+          {
+            "from": "A",
+            "to": "C"
+          }
         ],
-        "script": "board.suspendUpdate(); var pB=board.create('point',[-2,0],{visible:false}); var pD=board.create('point',[2,0],{visible:false}); var pC=board.create('point',[0,0],{visible:false}); var pA=board.create('point',[0,3.46],{visible:false}); board.create('polygon',[pA,pB,pD]); board.create('segment',[pA,pC]); board.create('angle',[pA,pC,pB],{name:'90°',radius:0.5}); board.create('angle',[pA,pD,pB],{name:'60°',radius:0.8}); board.create('angle',[pD,pA,pC],{name:'α',radius:0.8}); board.create('angle',[pC,pB,pA],{name:'β',radius:0.8}); board.create('point',[-1,1.73],{name:'/',size:0}); board.create('point',[1,1.73],{name:'/',size:0}); board.create('text',[1,2,'5x - 2']); board.create('text',[1,-0.5,'2x + 3']); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "C",
+            "right": true
+          },
+          {
+            "at": "A",
+            "label": "α"
+          },
+          {
+            "at": "B",
+            "label": "β"
+          },
+          {
+            "at": "D",
+            "label": "60°"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "5x - 2"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "2x + 3"
+          }
+        ]
       }
     }
   },
@@ -1945,16 +4521,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 260,
+        "points": {
+          "B": [
+            -2,
+            0
+          ],
+          "C": [
+            0,
+            0
+          ],
+          "D": [
+            2,
+            0
+          ],
+          "A": [
+            0,
+            3.46
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 2
+          },
+          {
+            "from": "B",
+            "to": "D"
+          },
+          {
+            "from": "A",
+            "to": "C"
+          }
         ],
-        "script": "board.suspendUpdate(); var pB=board.create('point',[-2,0],{visible:false}); var pD=board.create('point',[2,0],{visible:false}); var pC=board.create('point',[0,0],{visible:false}); var pA=board.create('point',[0,3.46],{visible:false}); board.create('polygon',[pA,pB,pD]); board.create('segment',[pA,pC]); board.create('angle',[pA,pC,pB],{name:'90°',radius:0.5}); board.create('angle',[pA,pD,pB],{name:'60°',radius:0.8}); board.create('angle',[pD,pA,pC],{name:'α',radius:0.8}); board.create('angle',[pC,pB,pA],{name:'β',radius:0.8}); board.create('point',[-1,1.73],{name:'/',size:0}); board.create('point',[1,1.73],{name:'/',size:0}); board.create('text',[1,2,'5x - 2']); board.create('text',[1,-0.5,'2x + 3']); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "C",
+            "right": true
+          },
+          {
+            "at": "A",
+            "label": "α"
+          },
+          {
+            "at": "B",
+            "label": "β"
+          },
+          {
+            "at": "D",
+            "label": "60°"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "5x - 2"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "2x + 3"
+          }
+        ]
       }
     }
   },
@@ -1978,16 +4618,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 240,
+        "points": {
+          "A": [
+            -1,
+            3
+          ],
+          "B": [
+            -3,
+            -1
+          ],
+          "E": [
+            1,
+            3
+          ],
+          "X": [
+            0,
+            -1
+          ],
+          "D": [
+            -1,
+            -3
+          ],
+          "C": [
+            3,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "E",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "X",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "X",
+            "to": "D",
+            "ticks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-1,3],{visible:false}); var pB=board.create('point',[-3,-1],{visible:false}); var pE=board.create('point',[1,3],{visible:false}); var pD=board.create('point',[-1,-3],{visible:false}); var pC=board.create('point',[3,-1],{visible:false}); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pE,pD],{lastArrow:true}); board.create('segment',[pB,pC]); board.create('segment',[pA,pD]); board.create('angle',[pC,pB,pA],{name:'75°',radius:0.8}); var pX=board.create('point',[0,-1],{visible:false}); board.create('angle',[pA,pX,pE],{name:'α',radius:0.8}); board.create('angle',[pD,pX,pB],{name:'β',radius:0.8}); board.create('angle',[pX,pD,pC],{name:'γ',radius:0.8}); board.create('point',[1.5,-1],{name:'/',size:0}); board.create('point',[0.5,-2],{name:'/',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "75°"
+          },
+          {
+            "at": "X",
+            "label": "α"
+          },
+          {
+            "at": "D",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -2007,16 +4711,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 240,
+        "points": {
+          "A": [
+            -1,
+            3
+          ],
+          "B": [
+            -3,
+            -1
+          ],
+          "E": [
+            1,
+            3
+          ],
+          "X": [
+            0,
+            -1
+          ],
+          "D": [
+            -1,
+            -3
+          ],
+          "C": [
+            3,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "E",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "X",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "X",
+            "to": "D",
+            "ticks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-1,3],{visible:false}); var pB=board.create('point',[-3,-1],{visible:false}); var pE=board.create('point',[1,3],{visible:false}); var pD=board.create('point',[-1,-3],{visible:false}); var pC=board.create('point',[3,-1],{visible:false}); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pE,pD],{lastArrow:true}); board.create('segment',[pB,pC]); board.create('segment',[pA,pD]); board.create('angle',[pC,pB,pA],{name:'75°',radius:0.8}); var pX=board.create('point',[0,-1],{visible:false}); board.create('angle',[pA,pX,pE],{name:'α',radius:0.8}); board.create('angle',[pD,pX,pB],{name:'β',radius:0.8}); board.create('angle',[pX,pD,pC],{name:'γ',radius:0.8}); board.create('point',[1.5,-1],{name:'/',size:0}); board.create('point',[0.5,-2],{name:'/',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "75°"
+          },
+          {
+            "at": "X",
+            "label": "α"
+          },
+          {
+            "at": "D",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -2040,16 +4808,80 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 240,
+        "points": {
+          "A": [
+            -1,
+            3
+          ],
+          "B": [
+            -3,
+            -1
+          ],
+          "E": [
+            1,
+            3
+          ],
+          "X": [
+            0,
+            -1
+          ],
+          "D": [
+            -1,
+            -3
+          ],
+          "C": [
+            3,
+            -1
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "E",
+            "to": "D",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "X",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "X",
+            "to": "D",
+            "ticks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-1,3],{visible:false}); var pB=board.create('point',[-3,-1],{visible:false}); var pE=board.create('point',[1,3],{visible:false}); var pD=board.create('point',[-1,-3],{visible:false}); var pC=board.create('point',[3,-1],{visible:false}); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pE,pD],{lastArrow:true}); board.create('segment',[pB,pC]); board.create('segment',[pA,pD]); board.create('angle',[pC,pB,pA],{name:'75°',radius:0.8}); var pX=board.create('point',[0,-1],{visible:false}); board.create('angle',[pA,pX,pE],{name:'α',radius:0.8}); board.create('angle',[pD,pX,pB],{name:'β',radius:0.8}); board.create('angle',[pX,pD,pC],{name:'γ',radius:0.8}); board.create('point',[1.5,-1],{name:'/',size:0}); board.create('point',[0.5,-2],{name:'/',size:0}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "B",
+            "label": "75°"
+          },
+          {
+            "at": "X",
+            "label": "α"
+          },
+          {
+            "at": "D",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -2069,16 +4901,74 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 280,
+        "points": {
+          "A": [
+            -2,
+            -2
+          ],
+          "B": [
+            -1,
+            2
+          ],
+          "C": [
+            3,
+            2
+          ],
+          "D": [
+            2,
+            -2
+          ],
+          "E": [
+            4,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "arrow": true,
+            "marks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-2,-2],{visible:false}); var pB=board.create('point',[-1,2],{visible:false}); var pC=board.create('point',[3,2],{visible:false}); var pD=board.create('point',[2,-2],{visible:false}); var pE=board.create('point',[4,-2],{visible:false}); board.create('polygon',[pA,pB,pC,pD]); board.create('segment',[pD,pE]); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pD,pC],{lastArrow:true}); board.create('segment',[pB,pC],{lastArrow:true}); board.create('segment',[pA,pE],{lastArrow:true}); board.create('angle',[pD,pA,pB],{name:'70°',radius:0.8}); board.create('angle',[pA,pB,pC],{name:'α',radius:0.8}); board.create('angle',[pB,pC,pD],{name:'β',radius:0.8}); board.create('angle',[pE,pD,pC],{name:'γ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "70°"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "C",
+            "label": "β"
+          },
+          {
+            "at": "D",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -2098,16 +4988,74 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 280,
+        "points": {
+          "A": [
+            -2,
+            -2
+          ],
+          "B": [
+            -1,
+            2
+          ],
+          "C": [
+            3,
+            2
+          ],
+          "D": [
+            2,
+            -2
+          ],
+          "E": [
+            4,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "arrow": true,
+            "marks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-2,-2],{visible:false}); var pB=board.create('point',[-1,2],{visible:false}); var pC=board.create('point',[3,2],{visible:false}); var pD=board.create('point',[2,-2],{visible:false}); var pE=board.create('point',[4,-2],{visible:false}); board.create('polygon',[pA,pB,pC,pD]); board.create('segment',[pD,pE]); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pD,pC],{lastArrow:true}); board.create('segment',[pB,pC],{lastArrow:true}); board.create('segment',[pA,pE],{lastArrow:true}); board.create('angle',[pD,pA,pB],{name:'70°',radius:0.8}); board.create('angle',[pA,pB,pC],{name:'α',radius:0.8}); board.create('angle',[pB,pC,pD],{name:'β',radius:0.8}); board.create('angle',[pE,pD,pC],{name:'γ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "70°"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "C",
+            "label": "β"
+          },
+          {
+            "at": "D",
+            "label": "γ"
+          }
+        ]
       }
     }
   },
@@ -2127,16 +5075,74 @@ export const Y9_CH7A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": "260px",
-        "height": "220px",
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -5
+      "geometry": {
+        "width": 280,
+        "points": {
+          "A": [
+            -2,
+            -2
+          ],
+          "B": [
+            -1,
+            2
+          ],
+          "C": [
+            3,
+            2
+          ],
+          "D": [
+            2,
+            -2
+          ],
+          "E": [
+            4,
+            -2
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "arrow": true,
+            "marks": 2
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "arrow": true,
+            "marks": 1
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "arrow": true,
+            "marks": 1
+          }
         ],
-        "script": "board.suspendUpdate(); var pA=board.create('point',[-2,-2],{visible:false}); var pB=board.create('point',[-1,2],{visible:false}); var pC=board.create('point',[3,2],{visible:false}); var pD=board.create('point',[2,-2],{visible:false}); var pE=board.create('point',[4,-2],{visible:false}); board.create('polygon',[pA,pB,pC,pD]); board.create('segment',[pD,pE]); board.create('segment',[pA,pB],{lastArrow:true}); board.create('segment',[pD,pC],{lastArrow:true}); board.create('segment',[pB,pC],{lastArrow:true}); board.create('segment',[pA,pE],{lastArrow:true}); board.create('angle',[pD,pA,pB],{name:'70°',radius:0.8}); board.create('angle',[pA,pB,pC],{name:'α',radius:0.8}); board.create('angle',[pB,pC,pD],{name:'β',radius:0.8}); board.create('angle',[pE,pD,pC],{name:'γ',radius:0.8}); board.unsuspendUpdate();"
+        "angles": [
+          {
+            "at": "A",
+            "label": "70°"
+          },
+          {
+            "at": "B",
+            "label": "α"
+          },
+          {
+            "at": "C",
+            "label": "β"
+          },
+          {
+            "at": "D",
+            "label": "γ"
+          }
+        ]
       }
     }
   }
