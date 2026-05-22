@@ -255,6 +255,15 @@ const ChallengeReviewView = ({
                 </button>
               )}
             </div>
+            {(q.topicCode || q.topicTitle || q.chapterTitle) && (
+              <div style={{
+                display: 'inline-block', marginBottom: '12px',
+                fontSize: '0.66rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase',
+                color: '#7c3aed', background: '#f5f3ff', padding: '5px 11px', borderRadius: '999px',
+              }}>
+                {[q.topicCode, q.topicTitle || q.chapterTitle].filter(Boolean).join(' · ')}
+              </div>
+            )}
             <MathView
               content={q.question}
               graphData={q.graphData}
