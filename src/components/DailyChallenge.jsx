@@ -1468,8 +1468,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // Question data stays in localStorage only; just a compact count/tag
         // summary is piggy-backed onto the user doc write below (no extra write).
         let secretNoteSync = null;
-        let shouldOpenSecretNoteAfterSave = false;
-        let secretNoteKindAfterSave = null;
         if (!isAbandoned) {
           try {
             const noteKind = challengeType === 'calc' ? 'calc' : 'daily';
@@ -1479,9 +1477,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             });
             const reviewableWrongQuestions = wrongQuestions.filter(canGrade);
             if (reviewableWrongQuestions.length > 0) {
+              // Wrong questions are added to the Secret Note silently — the
+              // student stays on the result screen and can open it manually.
               addMistakes(noteKind, user.uid, reviewableWrongQuestions);
-              shouldOpenSecretNoteAfterSave = true;
-              secretNoteKindAfterSave = noteKind;
             }
             secretNoteSync = getSyncSnapshot(user.uid);
           } catch (e) {
@@ -1747,11 +1745,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         writeChallengeStatusMeta(user.uid, today, challengeType, isAbandoned ? 'abandoned' : 'completed')
           .catch((err) => console.warn('challenge status meta update failed (non-critical):', err?.code || err));
 
-        if (shouldOpenSecretNoteAfterSave && secretNoteKindAfterSave) {
-          setSecretNoteKind(secretNoteKindAfterSave);
-          setStep('secretNote');
-        }
-          
         if (challengeType === 'daily') {
           if (!isAbandoned) {
             markDailyAssignmentCompleted(user.uid, today)
