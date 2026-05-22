@@ -57,6 +57,7 @@ import BasicCalculationPanel from "./studentDetail/BasicCalculationPanel";
 import DailyPracticeSettings from "./studentDetail/DailyPracticeSettings";
 import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
 import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
+import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
@@ -1526,16 +1527,28 @@ const StudentDetail = ({ studentId, onBack }) => {
             <SecretNotebookPanel student={student} />
 
             {/* DAILY PRACTICE SETTINGS - Accordion Design */}
-            <DailyPracticeSettings
-              styles={styles}
-              student={student}
-              dailyPracticeConfig={dailyPracticeConfig}
-              onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
-              onUpdateDailyConfig={handleUpdateDailyConfig}
-              onToggleDailyYear={handleToggleDailyYear}
-              onToggleDailyChapter={handleToggleDailyChapter}
-            />
-            <div style={styles.card} className="profile-card-mobile">
+            <CollapsibleSection
+              title="Daily practice settings"
+              summary={`${student.dailyQuestionCount || 10} questions per day`}
+              badge="Active"
+              badgeTone="green"
+            >
+              <DailyPracticeSettings
+                styles={{ ...styles, card: {} }}
+                student={student}
+                dailyPracticeConfig={dailyPracticeConfig}
+                onUpdateCurriculumSetting={handleUpdateCurriculumSetting}
+                onUpdateDailyConfig={handleUpdateDailyConfig}
+                onToggleDailyYear={handleToggleDailyYear}
+                onToggleDailyChapter={handleToggleDailyChapter}
+              />
+            </CollapsibleSection>
+
+            <CollapsibleSection
+              title="Challenge history"
+              summary={`${dailyPracticeStats.length} daily · ${calculationStats.length} calc sessions`}
+              badge={String(dailyPracticeStats.length + calculationStats.length)}
+            >
               <div
                 style={{
                   display: "flex",
@@ -1729,8 +1742,17 @@ const StudentDetail = ({ studentId, onBack }) => {
                     No Basic Calculation history yet.
                   </div>
                 )}
+              </div>
+            </CollapsibleSection>
+
+            <CollapsibleSection
+              title="Basic calculation"
+              summary={student.calculationEnabled === false ? 'Disabled' : 'Timed calculation rounds'}
+              badge={student.calculationEnabled === false ? 'Off' : 'On'}
+              badgeTone={student.calculationEnabled === false ? 'amber' : 'green'}
+            >
                 <BasicCalculationPanel
-                  styles={styles}
+                  styles={{ ...styles, card: {} }}
                   student={student}
                   assignedChapters={assignedChapters}
                   completedChapters={completedChapters}
@@ -1753,8 +1775,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                       .catch(console.error);
                   }}
                 />
-              </div>
-            </div>
+            </CollapsibleSection>
           </div>
         );
       case "hsc":
