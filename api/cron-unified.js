@@ -1,6 +1,7 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
+import { classReminderEmail } from './_lib/emailTemplates.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -114,20 +115,23 @@ export default async function handler(req, res) {
         const sessionMin = parseTimeStr(s.startTime);
         if (sessionMin !== null && Math.abs(sessionMin - normalizedTarget) <= windowMin) {
           const subjectLabel = normalizeSubjectLabel(s.subject);
-          const reminderBody = `
-            <div style="background: #eef2ff; padding: 20px; border-radius: 16px; border: 1px solid #e0e7ff; margin-bottom: 20px;">
-              <h3 style="margin: 0 0 10px 0; color: #4338ca; font-size: 1.1rem; font-weight: 800;">🔔 Class Reminder</h3>
-              <p style="margin: 0; color: #3730a3; font-size: 1rem; font-weight: 600;">
-                Your <strong>${subjectLabel}</strong> session is starting in <strong>2 hours</strong>!
-              </p>
-              <div style="margin-top: 15px; display: flex; align-items: center; gap: 8px; color: #475569; font-size: 0.9rem; font-weight: 700;">
-                <span style="background: white; padding: 4px 10px; border-radius: 8px; border: 1px solid #e2e8f0;">🕒 ${s.startTime}</span>
-                <span style="background: white; padding: 4px 10px; border-radius: 8px; border: 1px solid #e2e8f0;">📅 Today</span>
-              </div>
-            </div>
-            <p style="color: #64748b; font-size: 0.9rem; line-height: 1.5;">We recommend logging in a few minutes early to prepare your materials. See you soon!</p>
-          `;
-          await sendNotification(db, transporter, s, 'class_reminder', `Your ${subjectLabel} class starts in 2 hours!`, reminderBody);
+          // First non-empty line of topicCovered makes a tidy "topic" line.
+          const topicLine = String(s.topicCovered || s.topic || '')
+            .split('\n').map((l) => l.trim()).filter(Boolean)[0] || '';
+          const whenLabel = s.endTime ? `${s.startTime} – ${s.endTime}` : String(s.startTime || '');
+          const { subject: emailSubject, html } = classReminderEmail({
+            name: s.studentName || 'there',
+            subjectLabel,
+            whenLabel,
+            dateLabel: dateStr === todayStr ? 'Today' : 'Tomorrow',
+            teacher: s.tutorName || s.teacherName || '',
+            topic: topicLine,
+            room: s.room || s.location || '',
+            bring: s.bring || '',
+            hoursAway: 2,
+          });
+          const pushBody = `Your ${subjectLabel} class starts in 2 hours${whenLabel ? ` (${whenLabel})` : ''}.`;
+          await sendNotification(db, transporter, s, 'class_reminder', emailSubject, pushBody, html);
           await docSnapshot.ref.update({ reminderSent: true });
           logs.push(`2hr reminder sent to ${s.studentName}`);
         }
@@ -728,7 +732,7 @@ async function sendPushToUser(userRef, userData, title, body) {
   };
 }
 
-async function sendNotification(db, transporter, session, type, subject, body) {
+async function sendNotification(db, transporter, session, type, subject, body, fullHtml = null) {
   const studentId    = session.studentId;
   const studentEmail = session.studentEmail || session.email;
   let emailSent = false;
@@ -742,7 +746,7 @@ async function sendNotification(db, transporter, session, type, subject, body) {
         from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
         to: studentEmail,
         subject: `[Sapere] ${subject}`,
-        html: buildEmailTemplate(subject, body)
+        html: fullHtml || buildEmailTemplate(subject, body)
       });
       emailSent = true;
     } catch (e) { 
