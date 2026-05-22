@@ -1,12 +1,11 @@
 export const Y9_CH7A_QUESTIONS = [
   {
-    "id": "y9-7a-1a_i",
+    "id": "y9-7a-1a",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Classify this angle using the standard terms: $140^\\circ$",
-    "a": "Obtuse",
+    "question": "Classify this angle using the standard terms: $15^\\circ$",
     "opts": [
       "Acute",
       "Right",
@@ -15,19 +14,16 @@ export const Y9_CH7A_QUESTIONS = [
       "Reflex",
       "Revolution"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "Acute",
     "graphData": null
   },
   {
-    "id": "y9-7a-1a_ii",
+    "id": "y9-7a-1b",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Classify this angle using the standard terms: $360^\\circ$",
-    "a": "Revolution",
+    "question": "Classify this angle using the standard terms: $163^\\circ$",
     "opts": [
       "Acute",
       "Right",
@@ -36,19 +32,16 @@ export const Y9_CH7A_QUESTIONS = [
       "Reflex",
       "Revolution"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "Obtuse",
     "graphData": null
   },
   {
-    "id": "y9-7a-1a_iii",
+    "id": "y9-7a-1c",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Classify this angle using the standard terms: $33^\\circ$",
-    "a": "Acute",
+    "question": "Classify this angle using the standard terms: $244^\\circ$",
     "opts": [
       "Acute",
       "Right",
@@ -57,19 +50,16 @@ export const Y9_CH7A_QUESTIONS = [
       "Reflex",
       "Revolution"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "Reflex",
     "graphData": null
   },
   {
-    "id": "y9-7a-1a_iv",
+    "id": "y9-7a-1d",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Classify this angle using the standard terms: $180^\\circ$",
-    "a": "Straight",
+    "question": "Classify this angle using the standard terms: $90^\\circ$",
     "opts": [
       "Acute",
       "Right",
@@ -78,19 +68,16 @@ export const Y9_CH7A_QUESTIONS = [
       "Reflex",
       "Revolution"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "Right",
     "graphData": null
   },
   {
-    "id": "y9-7a-1a_v",
+    "id": "y9-7a-1e",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Classify this angle using the standard terms: $90^\\circ$",
-    "a": "Right",
+    "question": "Classify this angle using the standard terms: $360^\\circ$",
     "opts": [
       "Acute",
       "Right",
@@ -99,19 +86,16 @@ export const Y9_CH7A_QUESTIONS = [
       "Reflex",
       "Revolution"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "Revolution",
     "graphData": null
   },
   {
-    "id": "y9-7a-1a_vi",
+    "id": "y9-7a-1f",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Classify this angle using the standard terms: $350^\\circ$",
-    "a": "Reflex",
+    "question": "Classify this angle using the standard terms: $180^\\circ$",
     "opts": [
       "Acute",
       "Right",
@@ -120,123 +104,103 @@ export const Y9_CH7A_QUESTIONS = [
       "Reflex",
       "Revolution"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "Straight",
     "graphData": null
   },
   {
-    "id": "y9-7a-1b_i",
+    "id": "y9-7a-1g",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the complement of $20^\\circ$.",
-    "a": "70",
+    "question": "Write down the complement of $10^\\circ$.",
     "opts": [
-      "70",
-      "15",
-      "110",
-      "80"
+      "80",
+      "5",
+      "100",
+      "90"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "80",
     "graphData": null
   },
   {
-    "id": "y9-7a-1b_ii",
+    "id": "y9-7a-1h",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the complement of $72^\\circ$.",
-    "a": "18",
-    "opts": [
-      "18",
-      "67",
-      "162",
-      "28"
-    ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
-    "graphData": null
-  },
-  {
-    "id": "y9-7a-1b_iii",
-    "c": "7A",
-    "t": "Review of angles",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "q": "Write down the complement of $45^\\circ$.",
-    "a": "45",
+    "question": "Write down the complement of $45^\\circ$.",
     "opts": [
       "45",
       "40",
       "135",
       "55"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "45",
     "graphData": null
   },
   {
-    "id": "y9-7a-1c_i",
+    "id": "y9-7a-1i",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the supplement of $20^\\circ$.",
-    "a": "160",
+    "question": "Write down the complement of $88^\\circ$.",
     "opts": [
-      "160",
-      "10",
-      "-70",
-      "180"
+      "2",
+      "83",
+      "178",
+      "12"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "2",
     "graphData": null
   },
   {
-    "id": "y9-7a-1c_ii",
+    "id": "y9-7a-1j",
     "c": "7A",
     "t": "Review of angles",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the supplement of $172^\\circ$.",
-    "a": "8",
+    "question": "Write down the supplement of $10^\\circ$.",
     "opts": [
-      "8",
-      "162",
-      "82",
-      "28"
-    ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
-    "graphData": null
-  },
-  {
-    "id": "y9-7a-1c_iii",
-    "c": "7A",
-    "t": "Review of angles",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "q": "Write down the supplement of $90^\\circ$.",
-    "a": "90",
-    "opts": [
-      "90",
-      "80",
+      "170",
       "0",
-      "110"
+      "-80",
+      "190"
     ],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "solution": "170",
+    "graphData": null
+  },
+  {
+    "id": "y9-7a-1k",
+    "c": "7A",
+    "t": "Review of angles",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "Write down the supplement of $123^\\circ$.",
+    "opts": [
+      "57",
+      "113",
+      "33",
+      "77"
+    ],
+    "solution": "57",
+    "graphData": null
+  },
+  {
+    "id": "y9-7a-1l",
+    "c": "7A",
+    "t": "Review of angles",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "question": "Write down the supplement of $175^\\circ$.",
+    "opts": [
+      "5",
+      "165",
+      "85",
+      "25"
+    ],
+    "solution": "5",
     "graphData": null
   },
   {
@@ -245,14 +209,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 125^\\circ$ (angles at a point)",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\theta = 125^\\circ$ (angles at a point)",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"120\" y1=\"100\" x2=\"120\" y2=\"20\"/><line x1=\"120\" y1=\"100\" x2=\"180\" y2=\"160\"/><line x1=\"120\" y1=\"100\" x2=\"60\" y2=\"160\"/><polyline points=\"120,70 90,70 90,100\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"155\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >145°</text><text x=\"90\" y=\"130\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var p0 = board.create('point', [0,0], {visible:false});\n  var p1 = board.create('point', [0, 4], {visible:false});\n  var p2 = board.create('point', [3, -3], {visible:false});\n  var p3 = board.create('point', [-3, -3], {visible:false});\n  board.create('segment', [p0, p1], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [p0, p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [p0, p3], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('angle', [p2, p0, p1], {radius: 1.5, name: \"145°\", fillColor: 'transparent'});\n  board.create('angle', [p1, p0, p3], {radius: 1.5, name: \"90°\", fillColor: 'transparent'}); // Right angle mark via options if needed, but simple name is fine\n  board.create('angle', [p3, p0, p2], {radius: 1.5, name: \"θ\", fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -261,14 +232,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Find $\\alpha$ and $\\beta$, giving reasons.",
-    "a": "$\\alpha = 115^\\circ, \\beta = 65^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$ and $\\beta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 115^\\circ, \\beta = 65^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <line x1=\"20\" y1=\"100\" x2=\"220\" y2=\"100\" />\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    <!-- Arcs -->\n    <path d=\"M 135 100 A 15 15 0 0 0 125 86\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 100 A 15 15 0 0 1 115 86\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 100 A 15 15 0 0 0 115 114\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n    \n    <text x=\"150\" y=\"85\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n    <text x=\"90\" y=\"85\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n    <text x=\"90\" y=\"115\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >115°</text>\n    \n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var p1 = board.create('point', [-4, -2], {visible:false});\n  var p2 = board.create('point', [4, 2], {visible:false});\n  var p3 = board.create('point', [-2, 4], {visible:false});\n  var p4 = board.create('point', [2, -4], {visible:false});\n  var intersection = board.create('intersection', [\n    board.create('line', [p1, p2], {strokeColor: '#1e293b', strokeWidth: 2}),\n    board.create('line', [p3, p4], {strokeColor: '#1e293b', strokeWidth: 2})\n  ], {visible:false});\n\n  if (\"\\alpha\") board.create('angle', [p2, intersection, p3], {radius: 1.5, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [p3, intersection, p1], {radius: 1.5, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"115^\\circ\") board.create('angle', [p1, intersection, p4], {radius: 1.5, name: \"115^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [p4, intersection, p2], {radius: 1.5, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -277,14 +255,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Find $\\alpha$, giving reasons (right angle).",
-    "a": "$\\alpha = 22.5^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$, giving reasons (right angle).",
+    "opts": null,
+    "solution": "$\\alpha = 22.5^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <line x1=\"20\" y1=\"100\" x2=\"220\" y2=\"100\" />\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    <!-- Arcs -->\n    <path d=\"M 135 100 A 15 15 0 0 0 125 86\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 100 A 15 15 0 0 1 115 86\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n    \n    \n    <text x=\"150\" y=\"85\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">3α</text>\n    <text x=\"90\" y=\"85\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n    \n    \n  <polyline points=\"120,80 140,80 140,100\" stroke=\"#0f172a\" stroke-width=\"1.5\"/></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var p1 = board.create('point', [-4, -2], {visible:false});\n  var p2 = board.create('point', [4, 2], {visible:false});\n  var p3 = board.create('point', [-2, 4], {visible:false});\n  var p4 = board.create('point', [2, -4], {visible:false});\n  var intersection = board.create('intersection', [\n    board.create('line', [p1, p2], {strokeColor: '#1e293b', strokeWidth: 2}),\n    board.create('line', [p3, p4], {strokeColor: '#1e293b', strokeWidth: 2})\n  ], {visible:false});\n\n  if (\"3\\alpha\") board.create('angle', [p2, intersection, p3], {radius: 1.5, name: \"3\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [p3, intersection, p1], {radius: 1.5, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"90^\\circ\") board.create('angle', [p1, intersection, p4], {radius: 1.5, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [p4, intersection, p2], {radius: 1.5, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -293,14 +278,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 30^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\theta = 30^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <line x1=\"20\" y1=\"100\" x2=\"220\" y2=\"100\" />\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    <!-- Arcs -->\n    \n    <path d=\"M 105 100 A 15 15 0 0 1 115 86\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 100 A 15 15 0 0 0 115 114\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n    \n    \n    <text x=\"90\" y=\"85\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >60°</text>\n    <text x=\"90\" y=\"115\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n    \n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var p1 = board.create('point', [-4, -2], {visible:false});\n  var p2 = board.create('point', [4, 2], {visible:false});\n  var p3 = board.create('point', [-2, 4], {visible:false});\n  var p4 = board.create('point', [2, -4], {visible:false});\n  var intersection = board.create('intersection', [\n    board.create('line', [p1, p2], {strokeColor: '#1e293b', strokeWidth: 2}),\n    board.create('line', [p3, p4], {strokeColor: '#1e293b', strokeWidth: 2})\n  ], {visible:false});\n\n  if (\"\") board.create('angle', [p2, intersection, p3], {radius: 1.5, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"60^\\circ\") board.create('angle', [p3, intersection, p1], {radius: 1.5, name: \"60^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [p1, intersection, p4], {radius: 1.5, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [p4, intersection, p2], {radius: 1.5, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -309,14 +301,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 45^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\theta = 45^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"20\" y1=\"100\" x2=\"220\" y2=\"100\"/><line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"180\"/><line x1=\"40\" y1=\"20\" x2=\"200\" y2=\"180\"/><line x1=\"200\" y1=\"20\" x2=\"40\" y2=\"180\"/><text x=\"140\" y=\"80\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text><text x=\"100\" y=\"80\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text><text x=\"100\" y=\"120\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text><text x=\"140\" y=\"120\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var p1 = board.create('point', [-4, -2], {visible:false});\n  var p2 = board.create('point', [4, 2], {visible:false});\n  var p3 = board.create('point', [-2, 4], {visible:false});\n  var p4 = board.create('point', [2, -4], {visible:false});\n  var intersection = board.create('intersection', [\n    board.create('line', [p1, p2], {strokeColor: '#1e293b', strokeWidth: 2}),\n    board.create('line', [p3, p4], {strokeColor: '#1e293b', strokeWidth: 2})\n  ], {visible:false});\n\n  if (\"\\theta\") board.create('angle', [p2, intersection, p3], {radius: 1.5, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [p3, intersection, p1], {radius: 1.5, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [p1, intersection, p4], {radius: 1.5, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [p4, intersection, p2], {radius: 1.5, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -325,14 +324,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Find $\\alpha$, giving reasons.",
-    "a": "$\\alpha = 15^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 15^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"60\" y1=\"160\" x2=\"200\" y2=\"160\"/><line x1=\"60\" y1=\"160\" x2=\"60\" y2=\"20\"/><line x1=\"60\" y1=\"160\" x2=\"130\" y2=\"60\"/><line x1=\"60\" y1=\"160\" x2=\"160\" y2=\"110\"/><polyline points=\"60,140 80,140 80,160\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"80\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">3α</text><text x=\"115\" y=\"130\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">2α</text><text x=\"140\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var p1 = board.create('point', [-4, -2], {visible:false});\n  var p2 = board.create('point', [4, 2], {visible:false});\n  var p3 = board.create('point', [-2, 4], {visible:false});\n  var p4 = board.create('point', [2, -4], {visible:false});\n  var intersection = board.create('intersection', [\n    board.create('line', [p1, p2], {strokeColor: '#1e293b', strokeWidth: 2}),\n    board.create('line', [p3, p4], {strokeColor: '#1e293b', strokeWidth: 2})\n  ], {visible:false});\n\n  if (\"3\\alpha\") board.create('angle', [p2, intersection, p3], {radius: 1.5, name: \"3\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"2\\alpha\") board.create('angle', [p3, intersection, p1], {radius: 1.5, name: \"2\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"90^\\circ\") board.create('angle', [p1, intersection, p4], {radius: 1.5, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [p4, intersection, p2], {radius: 1.5, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -341,14 +347,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$, giving reasons.",
-    "a": "$\\alpha = 135^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 135^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    <polygon points=\"190,60 180,55 180,65\" fill=\"#0f172a\" stroke=\"none\"/>\n    <polygon points=\"190,140 180,135 180,145\" fill=\"#0f172a\" stroke=\"none\"/>\n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    \n    <path d=\"M 105 60 A 15 15 0 0 0 115 74\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    \n    <path d=\"M 105 140 A 15 15 0 0 1 95 154\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n    \n    <text x=\"95\" y=\"75\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >135°</text>\n    \n    <text x=\"110\" y=\"155\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"135^\\circ\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"135^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -357,14 +370,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\beta$ and $\\gamma$, giving reasons.",
-    "a": "$\\beta = 70^\\circ, \\gamma = 70^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 110^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    <polygon points=\"190,60 180,55 180,65\" fill=\"#0f172a\" stroke=\"none\"/>\n    <polygon points=\"190,140 180,135 180,145\" fill=\"#0f172a\" stroke=\"none\"/>\n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    <path d=\"M 135 60 A 15 15 0 0 0 125 46\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 60 A 15 15 0 0 0 115 74\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    <path d=\"M 75 140 A 15 15 0 0 1 85 126\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n\n    <text x=\"145\" y=\"45\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">γ</text>\n    <text x=\"95\" y=\"75\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n    <text x=\"85\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >70°</text>\n    \n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"\\alpha\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"110^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"110^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -373,14 +393,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$ and $\\beta$, giving reasons.",
-    "a": "$\\alpha = 105^\\circ, \\beta = 75^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$ and $\\beta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 105^\\circ, \\beta = 75^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    <polygon points=\"190,60 180,55 180,65\" fill=\"#0f172a\" stroke=\"none\"/>\n    <polygon points=\"190,140 180,135 180,145\" fill=\"#0f172a\" stroke=\"none\"/>\n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    <path d=\"M 135 60 A 15 15 0 0 0 125 46\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 60 A 15 15 0 0 0 115 74\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    \n    <path d=\"M 105 140 A 15 15 0 0 1 95 154\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n    <text x=\"145\" y=\"45\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n    <text x=\"95\" y=\"75\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >105°</text>\n    \n    <text x=\"110\" y=\"155\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"\\alpha\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"105^\\circ\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"105^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -389,14 +416,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$, $\\beta$, $\\gamma$.",
-    "a": "$\\alpha=110^\\circ, \\beta=70^\\circ, \\gamma=110^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$, $\\beta$, $\\gamma$.",
+    "opts": null,
+    "solution": "$\\alpha=110^\\circ, \\beta=70^\\circ, \\gamma=110^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"70,40 210,40 170,160 30,160\" />\n  <!-- Arrows for parallel -->\n  <polygon points=\"140,40 130,35 130,45\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"100,160 90,155 90,165\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"50,100 45,110 55,110\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"190,100 185,110 195,110\" fill=\"#0f172a\" stroke=\"none\"/>\n  \n  <text x=\"90\" y=\"65\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"175\" y=\"65\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >70°</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">γ</text>\n  <text x=\"65\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [2, -2], {visible:false});\n  var C = board.create('point', [3, 2], {visible:false});\n  var D = board.create('point', [-2, 2], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\beta\") board.create('angle', [B, A, D], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"70^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"70^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\gamma\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\\gamma\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [A, D, C], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -405,14 +439,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 60^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\theta = 60^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    <polygon points=\"190,60 180,55 180,65\" fill=\"#0f172a\" stroke=\"none\"/>\n    <polygon points=\"190,140 180,135 180,145\" fill=\"#0f172a\" stroke=\"none\"/>\n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    \n    \n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    <path d=\"M 75 140 A 15 15 0 0 1 85 126\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 140 A 15 15 0 0 1 95 154\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n    \n    \n    <text x=\"85\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n    <text x=\"110\" y=\"155\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">2θ</text>\n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"2\\theta\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"2\\theta\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -421,14 +462,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 85^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\theta = 85^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\"/><line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\"/><line x1=\"30\" y1=\"100\" x2=\"210\" y2=\"100\"/><line x1=\"120\" y1=\"100\" x2=\"180\" y2=\"60\"/><line x1=\"120\" y1=\"100\" x2=\"180\" y2=\"140\"/><text x=\"155\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >55°</text><text x=\"155\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >30°</text><text x=\"100\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"55^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"55^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"30^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"30^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -437,14 +485,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Name parallel lines, giving reasons.",
-    "a": "AB || CD (alternate angles equal)",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Name parallel lines, giving reasons.",
+    "opts": null,
+    "solution": "AB || CD (alternate angles equal)",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    \n    \n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    \n    <path d=\"M 105 60 A 15 15 0 0 0 115 74\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    <path d=\"M 75 140 A 15 15 0 0 1 85 126\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n\n    \n    <text x=\"95\" y=\"75\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >38°</text>\n    <text x=\"85\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >38°</text>\n    \n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"38^\\circ\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"38^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"38^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"38^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -453,14 +508,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Name parallel lines, giving reasons.",
-    "a": "AC || ED (corresponding angles equal)",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Name parallel lines, giving reasons.",
+    "opts": null,
+    "solution": "XY || WZ (corresponding angles equal)",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    \n    \n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    <path d=\"M 135 60 A 15 15 0 0 0 125 46\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    <path d=\"M 75 140 A 15 15 0 0 1 85 126\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n\n    <text x=\"145\" y=\"45\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >55°</text>\n    \n    <text x=\"85\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >55°</text>\n    \n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"110^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"110^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"110^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"110^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -469,14 +531,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Name parallel lines, giving reasons.",
-    "a": "PQ || RS (co-interior sum to 180)",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Name parallel lines, giving reasons.",
+    "opts": null,
+    "solution": "PQ || RS (co-interior sum to 180)",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <!-- Parallel Lines -->\n    <line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\" />\n    <line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\" />\n    <!-- Arrows -->\n    \n    \n    <!-- Transversal -->\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    \n    <!-- Arcs Top Intersection (Center 120,60) -->\n    <path d=\"M 135 60 A 15 15 0 0 0 125 46\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n    <!-- Arcs Bottom Intersection (Center 90,140) -->\n    <path d=\"M 75 140 A 15 15 0 0 1 85 126\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n\n    <text x=\"145\" y=\"45\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >90°</text>\n    \n    <text x=\"85\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >90°</text>\n    \n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"90^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"90^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -485,14 +554,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Name parallel lines, giving reasons.",
-    "a": "AB || CD (co-interior sum to $180^\\circ$)",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Name parallel lines, giving reasons.",
+    "opts": null,
+    "solution": "AB || CD (co-interior sum to $180^\\circ$)",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"30\" y1=\"80\" x2=\"210\" y2=\"80\"/><line x1=\"30\" y1=\"140\" x2=\"210\" y2=\"140\"/><line x1=\"80\" y1=\"40\" x2=\"80\" y2=\"180\"/><line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"180\"/><text x=\"95\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >80°</text><text x=\"95\" y=\"130\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >80°</text><text x=\"130\" y=\"130\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >100°</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"80^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"80^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"100^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"100^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -501,14 +577,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Name parallel lines, giving reasons.",
-    "a": "KL || NO (alternate angles are $50^\\circ$)",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Name parallel lines, giving reasons.",
+    "opts": null,
+    "solution": "KL || NO (alternate angles are $50^\\circ$)",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"30\" y1=\"60\" x2=\"210\" y2=\"60\"/><line x1=\"30\" y1=\"140\" x2=\"120\" y2=\"140\"/><line x1=\"120\" y1=\"140\" x2=\"170\" y2=\"60\"/><text x=\"150\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >85°</text><text x=\"125\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >45°</text><text x=\"80\" y=\"130\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >135°</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"85^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"85^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"45^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"45^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"135^\\circ\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"135^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -517,14 +600,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Name parallel lines, giving reasons.",
-    "a": "AD || BC",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Name parallel lines, giving reasons.",
+    "opts": null,
+    "solution": "AD || BC",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >95°</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >85°</text>\n  \n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >85°</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [2, 2], {visible:false});\n  var D = board.create('point', [-2, 3], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"95^\\circ\") board.create('angle', [B, A, D], {radius: 1.2, name: \"95^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"85^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"85^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n  if (\"85^\\circ\") board.create('angle', [A, D, C], {radius: 1.2, name: \"85^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -533,14 +623,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 45^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $x, y, z$.",
+    "opts": null,
+    "solution": "$x=50^\\circ, y=50^\\circ, z=80^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"30,160 210,160 120,40\" />\n  <path d=\"M 112 55 A 15 15 0 0 0 128 55\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 50 160 A 20 20 0 0 0 45 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 190 160 A 20 20 0 0 1 195 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n  <text x=\"60\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >75°</text>\n  <text x=\"180\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >60°</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [-1, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"x\") board.create('angle', [B, A, C], {radius: 1.2, name: \"x\", color: '#333', fillColor: 'transparent'});\n  if (\"y\") board.create('angle', [C, B, A], {radius: 1.2, name: \"y\", color: '#333', fillColor: 'transparent'});\n  if (\"80^\\circ\") board.create('angle', [A, C, B], {radius: 1.2, name: \"80^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -549,14 +646,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$, giving reasons.",
-    "a": "$\\alpha = 65^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $x, y$.",
+    "opts": null,
+    "solution": "$x=115^\\circ, y=65^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >90°</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >115°</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >90°</text>\n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"x\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"x\", color: '#333', fillColor: 'transparent'});\n  if (\"y\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"y\", color: '#333', fillColor: 'transparent'});\n  if (\"65^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"65^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -565,14 +669,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 110^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $x, y$.",
+    "opts": null,
+    "solution": "$x=60^\\circ, y=30^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >110°</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >25°</text>\n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >115°</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [-1, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"x\") board.create('angle', [B, A, C], {radius: 1.2, name: \"x\", color: '#333', fillColor: 'transparent'});\n  if (\"y\") board.create('angle', [C, B, A], {radius: 1.2, name: \"y\", color: '#333', fillColor: 'transparent'});\n  if (\"90^\\circ\") board.create('angle', [A, C, B], {radius: 1.2, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -581,46 +692,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$ and $\\beta$, giving reasons.",
-    "a": "$\\alpha=110^\\circ, \\beta=85^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta$.",
+    "opts": null,
+    "solution": "$\\alpha=120^\\circ, \\beta=60^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >105°</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >45°</text>\n</svg></div>"
-    }
-  },
-  {
-    "id": "y9-7a-5e",
-    "c": "7A",
-    "t": "Review of angles",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "q": "Find $\\theta$, giving reasons.",
-    "a": "$\\theta = 55^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
-    "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">2θ</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >125°</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >70°</text>\n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n</svg></div>"
-    }
-  },
-  {
-    "id": "y9-7a-5f",
-    "c": "7A",
-    "t": "Review of angles",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "q": "Find $\\beta$, giving reasons.",
-    "a": "$\\beta = 135^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
-    "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"30,160 210,160 120,40\" />\n  <path d=\"M 112 55 A 15 15 0 0 0 128 55\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 50 160 A 20 20 0 0 0 45 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 190 160 A 20 20 0 0 1 195 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >45°</text>\n  <text x=\"60\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >90°</text>\n  <text x=\"180\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"\\alpha\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"60^\\circ\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"60^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -629,14 +715,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$ and $\\beta$, giving reasons.",
-    "a": "$\\alpha = 80^\\circ, \\beta = 20^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$ and $\\beta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 80^\\circ, \\beta = 20^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,160 190,160 120,20\" />\n  <!-- Tick marks -->\n  <line x1=\"75\" y1=\"90\" x2=\"95\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"145\" y1=\"90\" x2=\"165\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  \n  <path d=\"M 112 35 A 15 15 0 0 0 128 35\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 70 160 A 20 20 0 0 0 65 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 170 160 A 20 20 0 0 1 175 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"80\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >80°</text>\n  <text x=\"160\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [0, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  // Tick marks for isosceles\n  var midAC = board.create('midpoint', [A, C], {visible:false});\n  var midBC = board.create('midpoint', [B, C], {visible:false});\n  board.create('segment', [A, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [B, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  // JSXGraph ticks:\n  board.create('ticks', [board.create('segment', [A, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n  board.create('ticks', [board.create('segment', [B, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n\n  if (\"\\beta\") board.create('angle', [B, A, C], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"80^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"80^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -645,14 +738,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$ and $\\beta$, giving reasons.",
-    "a": "$\\alpha = 70^\\circ, \\beta = 70^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$ and $\\beta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha = 70^\\circ, \\beta = 70^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,160 190,160 120,20\" />\n  <!-- Tick marks -->\n  <line x1=\"75\" y1=\"90\" x2=\"95\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"145\" y1=\"90\" x2=\"165\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  \n  <path d=\"M 112 35 A 15 15 0 0 0 128 35\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 70 160 A 20 20 0 0 0 65 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 170 160 A 20 20 0 0 1 175 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >40°</text>\n  <text x=\"80\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"160\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [0, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  // Tick marks for isosceles\n  var midAC = board.create('midpoint', [A, C], {visible:false});\n  var midBC = board.create('midpoint', [B, C], {visible:false});\n  board.create('segment', [A, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [B, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  // JSXGraph ticks:\n  board.create('ticks', [board.create('segment', [A, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n  board.create('ticks', [board.create('segment', [B, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n\n  if (\"40^\\circ\") board.create('angle', [B, A, C], {radius: 1.2, name: \"40^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -661,14 +761,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $x$, giving reasons (isosceles).",
-    "a": "$x = 2$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $x$, giving reasons (isosceles).",
+    "opts": null,
+    "solution": "$x = 2$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,160 190,160 120,20\" />\n  <!-- Tick marks -->\n  <line x1=\"75\" y1=\"90\" x2=\"95\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"145\" y1=\"90\" x2=\"165\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  \n  <path d=\"M 112 35 A 15 15 0 0 0 128 35\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 70 160 A 20 20 0 0 0 65 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 170 160 A 20 20 0 0 1 175 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >80°</text>\n  <text x=\"80\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >50°</text>\n  <text x=\"160\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >50°</text>\n<text x=\"70\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >11</text><text x=\"165\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >2x+7</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [0, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  // Tick marks for isosceles\n  var midAC = board.create('midpoint', [A, C], {visible:false});\n  var midBC = board.create('midpoint', [B, C], {visible:false});\n  board.create('segment', [A, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [B, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  // JSXGraph ticks:\n  board.create('ticks', [board.create('segment', [A, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n  board.create('ticks', [board.create('segment', [B, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n\n  if (\"80^\\circ\") board.create('angle', [B, A, C], {radius: 1.2, name: \"80^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"50^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"50^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"50^\\circ\") board.create('angle', [A, C, B], {radius: 1.2, name: \"50^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -677,14 +784,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha$ and $\\beta$, giving reasons.",
-    "a": "$\\alpha=45^\\circ, \\beta=45^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$ and $\\beta$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha=45^\\circ, \\beta=45^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >90°</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [2, 2], {visible:false});\n  var D = board.create('point', [-2, 3], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\alpha\") board.create('angle', [B, A, D], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"90^\\circ\") board.create('angle', [A, D, C], {radius: 1.2, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -693,14 +807,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha, x, y$, giving reasons.",
-    "a": "$\\alpha=60^\\circ, x=6, y=2$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, x, y$, giving reasons.",
+    "opts": null,
+    "solution": "$\\alpha=60^\\circ, x=6, y=2$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,160 190,160 120,20\" />\n  <!-- Tick marks -->\n  <line x1=\"75\" y1=\"90\" x2=\"95\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"145\" y1=\"90\" x2=\"165\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  \n  <path d=\"M 112 35 A 15 15 0 0 0 128 35\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 70 160 A 20 20 0 0 0 65 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 170 160 A 20 20 0 0 1 175 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"80\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"160\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n<text x=\"70\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">3y</text><text x=\"165\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">x</text><text x=\"120\" y=\"175\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >6</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [0, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  // Tick marks for isosceles\n  var midAC = board.create('midpoint', [A, C], {visible:false});\n  var midBC = board.create('midpoint', [B, C], {visible:false});\n  board.create('segment', [A, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [B, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  // JSXGraph ticks:\n  board.create('ticks', [board.create('segment', [A, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n  board.create('ticks', [board.create('segment', [B, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n\n  if (\"\\alpha\") board.create('angle', [B, A, C], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -709,14 +830,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find $\\alpha, \\beta, \\gamma$.",
-    "a": "$\\alpha=40^\\circ, \\beta=40^\\circ, \\gamma=100^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta, \\gamma$.",
+    "opts": null,
+    "solution": "$\\alpha=40^\\circ, \\beta=40^\\circ, \\gamma=100^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,40 200,60 180,160 30,140\" />\n  <text x=\"65\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >80°</text>\n  <text x=\"160\" y=\"85\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">γ</text>\n  <text x=\"60\" y=\"125\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >40°</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [2, 2], {visible:false});\n  var D = board.create('point', [-2, 3], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"80^\\circ\") board.create('angle', [B, A, D], {radius: 1.2, name: \"80^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\gamma\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\\gamma\", color: '#333', fillColor: 'transparent'});\n  if (\"40^\\circ\") board.create('angle', [A, D, C], {radius: 1.2, name: \"40^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -725,14 +853,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Use a construction to find $\\theta$.",
-    "a": "$\\theta = 115^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Use a construction to find $\\theta$.",
+    "opts": null,
+    "solution": "$\\theta = 115^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"30\" y1=\"40\" x2=\"120\" y2=\"40\"/><line x1=\"30\" y1=\"160\" x2=\"120\" y2=\"160\"/><line x1=\"120\" y1=\"40\" x2=\"160\" y2=\"100\"/><line x1=\"160\" y1=\"100\" x2=\"120\" y2=\"160\"/><text x=\"175\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text><text x=\"125\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >50°</text><text x=\"125\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >65°</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"50^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"50^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"65^\\circ\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"65^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -741,14 +876,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Use a construction to find $\\alpha$.",
-    "a": "$\\alpha = 130^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Use a construction to find $\\alpha$.",
+    "opts": null,
+    "solution": "$\\alpha = 130^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"120\" y1=\"40\" x2=\"210\" y2=\"40\"/><line x1=\"120\" y1=\"40\" x2=\"80\" y2=\"160\"/><line x1=\"80\" y1=\"160\" x2=\"160\" y2=\"100\"/><line x1=\"160\" y1=\"100\" x2=\"210\" y2=\"100\"/><text x=\"125\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text><text x=\"100\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >45°</text><text x=\"130\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >140°</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"45^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"45^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"140^\\circ\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"140^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -757,14 +899,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Use a construction to find $\\theta$.",
-    "a": "$\\theta = 120^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Use a construction to find $\\theta$.",
+    "opts": null,
+    "solution": "$\\theta = 120^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"80\" y1=\"40\" x2=\"80\" y2=\"120\"/><line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"120\"/><line x1=\"30\" y1=\"100\" x2=\"120\" y2=\"160\"/><line x1=\"120\" y1=\"160\" x2=\"180\" y2=\"80\"/><text x=\"65\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text><text x=\"165\" y=\"90\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >25°</text><polyline points=\"120,140 140,140 140,160\" stroke=\"#0f172a\" stroke-width=\"1.5\"/></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var l1p1 = board.create('point', [-4, 2], {visible:false});\n  var l1p2 = board.create('point', [4, 2], {visible:false});\n  var l2p1 = board.create('point', [-4, -2], {visible:false});\n  var l2p2 = board.create('point', [4, -2], {visible:false});\n  board.create('line', [l1p1, l1p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('line', [l2p1, l2p2], {strokeColor: '#1e293b', strokeWidth: 2});\n  \n  var t1 = board.create('point', [-2, 4], {visible:false});\n  var t2 = board.create('point', [2, -4], {visible:false});\n  board.create('line', [t1, t2], {strokeColor: '#1e293b', strokeWidth: 2});\n\n  var i1 = board.create('intersection', [board.create('line',[l1p1,l1p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n  var i2 = board.create('intersection', [board.create('line',[l2p1,l2p2],{visible:false}), board.create('line',[t1,t2],{visible:false})], {visible:false});\n\n  if (\"25^\\circ\") board.create('angle', [l1p2, i1, t1], {radius: 1.2, name: \"25^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"90^\\circ\") board.create('angle', [l2p2, i2, i1], {radius: 1.2, name: \"90^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [i1, i2, l2p1], {radius: 1.2, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [l1p1, i1, i2], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -773,14 +922,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\alpha, \\beta, \\gamma$.",
-    "a": "$\\alpha=115^\\circ, \\beta=65^\\circ, \\gamma=65^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta, \\gamma$.",
+    "opts": null,
+    "solution": "$\\alpha=115^\\circ, \\beta=65^\\circ, \\gamma=65^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"70,40 210,40 170,160 30,160\" />\n  <!-- Arrows for parallel -->\n  <polygon points=\"140,40 130,35 130,45\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"100,160 90,155 90,165\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"50,100 45,110 55,110\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"190,100 185,110 195,110\" fill=\"#0f172a\" stroke=\"none\"/>\n  \n  <text x=\"90\" y=\"65\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"175\" y=\"65\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >135°</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">γ</text>\n  <text x=\"65\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [2, -2], {visible:false});\n  var C = board.create('point', [3, 2], {visible:false});\n  var D = board.create('point', [-2, 2], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\beta\") board.create('angle', [B, A, D], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"135^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"135^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\gamma\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\\gamma\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [A, D, C], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -789,14 +945,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\theta$.",
-    "a": "$\\theta = 45^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta$.",
+    "opts": null,
+    "solution": "$\\alpha=45^\\circ, \\beta=45^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n    <line x1=\"20\" y1=\"100\" x2=\"220\" y2=\"100\" />\n    <line x1=\"150\" y1=\"20\" x2=\"90\" y2=\"180\" />\n    <!-- Arcs -->\n    \n    <path d=\"M 105 100 A 15 15 0 0 1 115 86\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 105 100 A 15 15 0 0 0 115 114\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    <path d=\"M 135 100 A 15 15 0 0 1 125 114\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n    \n    \n    <text x=\"90\" y=\"85\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >45°</text>\n    <text x=\"90\" y=\"115\" text-anchor=\"end\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n    <text x=\"150\" y=\"115\" text-anchor=\"start\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >65°</text>\n  </svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [2, 2], {visible:false});\n  var D = board.create('point', [-2, 3], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\alpha\") board.create('angle', [B, A, D], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\alpha\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [A, D, C], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -805,14 +968,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\alpha$.",
-    "a": "$\\alpha = 55^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha$.",
+    "opts": null,
+    "solution": "$\\alpha = 55^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"50,160 190,160 120,20\" />\n  <!-- Tick marks -->\n  <line x1=\"75\" y1=\"90\" x2=\"95\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"145\" y1=\"90\" x2=\"165\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  \n  <path d=\"M 112 35 A 15 15 0 0 0 128 35\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 70 160 A 20 20 0 0 0 65 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  \n\n  <text x=\"120\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"80\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >40°</text>\n  \n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [0, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  // Tick marks for isosceles\n  var midAC = board.create('midpoint', [A, C], {visible:false});\n  var midBC = board.create('midpoint', [B, C], {visible:false});\n  board.create('segment', [A, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  board.create('segment', [B, C], {strokeColor: '#1e293b', strokeWidth: 2});\n  // JSXGraph ticks:\n  board.create('ticks', [board.create('segment', [A, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n  board.create('ticks', [board.create('segment', [B, C], {visible:false}), 2], {strokeColor: '#1e293b', tickEndings: [1, 1]});\n\n  if (\"\\alpha\") board.create('angle', [B, A, C], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"40^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"40^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -821,14 +991,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\theta$.",
-    "a": "$\\theta = 65^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$.",
+    "opts": null,
+    "solution": "$\\theta = 65^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"30,160 210,160 120,40\" />\n  <path d=\"M 112 55 A 15 15 0 0 0 128 55\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 50 160 A 20 20 0 0 0 45 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 190 160 A 20 20 0 0 1 195 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >45°</text>\n  <text x=\"60\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >65°</text>\n  <text x=\"180\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [-1, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"45^\\circ\") board.create('angle', [B, A, C], {radius: 1.2, name: \"45^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"65^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"65^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -837,14 +1014,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\theta$.",
-    "a": "$\\theta = 50^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\theta$.",
+    "opts": null,
+    "solution": "$\\theta = 50^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"30,160 210,160 120,40\" />\n  <path d=\"M 112 55 A 15 15 0 0 0 128 55\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 50 160 A 20 20 0 0 0 45 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  \n\n  <text x=\"120\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >35°</text>\n  <text x=\"60\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">θ</text>\n  \n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [-1, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"35^\\circ\") board.create('angle', [B, A, C], {radius: 1.2, name: \"35^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\theta\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\theta\", color: '#333', fillColor: 'transparent'});\n  if (\"\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -853,14 +1037,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\alpha, \\beta, x$.",
-    "a": "$\\alpha=60^\\circ, \\beta=30^\\circ, x=1$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta, x$.",
+    "opts": null,
+    "solution": "$\\alpha=60^\\circ, \\beta=30^\\circ, x=1$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"30,160 210,160 120,40\" />\n  <path d=\"M 112 55 A 15 15 0 0 0 128 55\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 50 160 A 20 20 0 0 0 45 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 190 160 A 20 20 0 0 1 195 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"60\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"180\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >60°</text>\n<text x=\"155\" y=\"90\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >3x+6</text><text x=\"120\" y=\"175\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >2x+7</text></svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [-1, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\alpha\") board.create('angle', [B, A, C], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"60^\\circ\") board.create('angle', [A, C, B], {radius: 1.2, name: \"60^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -869,14 +1060,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\alpha, \\beta, \\gamma$.",
-    "a": "$\\alpha=60^\\circ, \\beta=60^\\circ, \\gamma=60^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta, \\gamma$.",
+    "opts": null,
+    "solution": "$\\alpha=60^\\circ, \\beta=60^\\circ, \\gamma=60^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"30,160 210,160 120,40\" />\n  <path d=\"M 112 55 A 15 15 0 0 0 128 55\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 50 160 A 20 20 0 0 0 45 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n  <path d=\"M 190 160 A 20 20 0 0 1 195 140\" stroke=\"rgba(15, 23, 42, 0.4)\"/>\n\n  <text x=\"120\" y=\"75\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"60\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >60°</text>\n  <text x=\"180\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">γ</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [3, -2], {visible:false});\n  var C = board.create('point', [-1, 3], {visible:false});\n  board.create('polygon', [A, B, C], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\alpha\") board.create('angle', [B, A, C], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"60^\\circ\") board.create('angle', [C, B, A], {radius: 1.2, name: \"60^\\circ\", color: '#333', fillColor: 'transparent'});\n  if (\"\\gamma\") board.create('angle', [A, C, B], {radius: 1.2, name: \"\\gamma\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   },
   {
@@ -885,14 +1083,21 @@ export const Y9_CH7A_QUESTIONS = [
     "t": "Review of angles",
     "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Find $\\alpha, \\beta, \\gamma$.",
-    "a": "$\\alpha=125^\\circ, \\beta=55^\\circ, \\gamma=125^\\circ$",
-    "opts": [],
-    "h": "Use geometric properties of angles to find the unknowns.",
-    "s": "",
-    "solutionSteps": [],
+    "question": "Find $\\alpha, \\beta, \\gamma$.",
+    "opts": null,
+    "solution": "$\\alpha=125^\\circ, \\beta=55^\\circ, \\gamma=125^\\circ$",
     "graphData": {
-      "html": "<div style=\"display:flex;justify-content:center;margin: 24px 0;\"><svg width=\"240\" height=\"200\" viewBox=\"0 0 240 200\" stroke=\"#0f172a\" stroke-width=\"1.5\" fill=\"none\">\n  <polygon points=\"70,40 210,40 170,160 30,160\" />\n  <!-- Arrows for parallel -->\n  <polygon points=\"140,40 130,35 130,45\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"100,160 90,155 90,165\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"50,100 45,110 55,110\" fill=\"#0f172a\" stroke=\"none\"/>\n  <polygon points=\"190,100 185,110 195,110\" fill=\"#0f172a\" stroke=\"none\"/>\n  \n  <text x=\"90\" y=\"65\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">α</text>\n  <text x=\"175\" y=\"65\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">β</text>\n  <text x=\"150\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" font-style=\"italic\">γ</text>\n  <text x=\"65\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" fill=\"#0f172a\" stroke=\"none\" font-size=\"16\" font-family=\"Times New Roman, serif\" >55°</text>\n</svg></div>"
+      "jsxGraph": {
+        "width": "240px",
+        "height": "200px",
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -5
+        ],
+        "script": "\n      board.suspendUpdate();\n      // Define styles globally\n      var lineStyle = {strokeColor: '#1e293b', strokeWidth: 2, straightFirst: false, straightLast: false};\n      var angleStyle = {fillColor: 'transparent', strokeColor: '#1e293b', radius: 1.2, name: ''};\n      \n  var A = board.create('point', [-3, -2], {visible:false});\n  var B = board.create('point', [2, -2], {visible:false});\n  var C = board.create('point', [3, 2], {visible:false});\n  var D = board.create('point', [-2, 2], {visible:false});\n  board.create('polygon', [A, B, C, D], {borders: {strokeColor: '#1e293b', strokeWidth: 2}, fillColor: 'transparent'});\n  \n  if (\"\\alpha\") board.create('angle', [B, A, D], {radius: 1.2, name: \"\\alpha\", color: '#333', fillColor: 'transparent'});\n  if (\"\\beta\") board.create('angle', [C, B, A], {radius: 1.2, name: \"\\beta\", color: '#333', fillColor: 'transparent'});\n  if (\"\\gamma\") board.create('angle', [D, C, B], {radius: 1.2, name: \"\\gamma\", color: '#333', fillColor: 'transparent'});\n  if (\"55^\\circ\") board.create('angle', [A, D, C], {radius: 1.2, name: \"55^\\circ\", color: '#333', fillColor: 'transparent'});\n\n      board.unsuspendUpdate();\n    "
+      }
     }
   }
 ];
