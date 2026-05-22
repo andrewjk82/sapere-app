@@ -19,6 +19,7 @@ import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.
 import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import LearningPath from './LearningPath';
+import HscJourney from './HscJourney';
 import {
   fetchHscResultsIncremental,
   loadCachedHscResults,
@@ -1100,10 +1101,17 @@ const Curriculum = () => {
       </div>
 
       {!isAdmin ? (
-        <>
-          {renderStudentHscChart()}
+        profile?.showHscGraph === true ? (
+          // HSC-activated students see the past-paper journey by default,
+          // with an in-view toggle back to the regular curriculum roadmap.
+          <HscJourney
+            hscRecords={hscRecords}
+            profile={profile}
+            curriculumSlot={<LearningPath profile={profile} />}
+          />
+        ) : (
           <LearningPath profile={profile} />
-        </>
+        )
       ) : (
         <>
           {/* ── Sticky top bar ── */}

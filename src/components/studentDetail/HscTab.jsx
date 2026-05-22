@@ -108,6 +108,31 @@ const HscTab = ({
             <Plus size={17} />
             {hscSaving ? "Saving" : "Add"}
           </button>
+          {/* Topic breakdown — optional per-strand percentages */}
+          <div style={{ gridColumn: "1 / -1" }}>
+            <div style={{ fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase", marginBottom: "8px" }}>
+              Topic breakdown <span style={{ color: "#94a3b8", fontWeight: 700 }}>(optional · % per strand)</span>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: "10px" }}>
+              {["Algebra", "Calculus", "Statistics", "Trigonometry"].map((topic) => (
+                <label key={topic} style={{ display: "grid", gap: "5px", fontSize: "0.68rem", fontWeight: 800, color: "#94a3b8" }}>
+                  {topic}
+                  <input
+                    type="number"
+                    min="0"
+                    max="100"
+                    value={hscForm.topics?.[topic] ?? ""}
+                    onChange={(e) => setHscForm({
+                      ...hscForm,
+                      topics: { ...(hscForm.topics || {}), [topic]: e.target.value },
+                    })}
+                    placeholder="%"
+                    style={{ padding: "10px 12px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
+                  />
+                </label>
+              ))}
+            </div>
+          </div>
           <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase", gridColumn: "1 / -1" }}>
             Notes
             <textarea

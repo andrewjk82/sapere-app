@@ -163,6 +163,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     score: "",
     total: "100",
     notes: "",
+    topics: { Algebra: "", Calculus: "", Statistics: "", Trigonometry: "" },
   });
   const [selectedChallenge, setSelectedChallenge] = useState(null);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
@@ -1354,6 +1355,11 @@ const StudentDetail = ({ studentId, onBack }) => {
       return;
     }
 
+    // Per-topic breakdown — keep only topics the teacher filled in.
+    const topics = Object.entries(hscForm.topics || {})
+      .map(([name, raw]) => ({ name, pct: Number(raw) }))
+      .filter((t) => t.name && Number.isFinite(t.pct) && String(hscForm.topics[t.name]).trim() !== "");
+
     try {
       setHscSaving(true);
       const docRef = await addDoc(collection(db, activeStudentCollection, activeStudentId, "hsc_results"), {
@@ -1363,6 +1369,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         total,
         percentage: Math.round((score / total) * 1000) / 10,
         notes: hscForm.notes.trim(),
+        topics,
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       });
@@ -1377,6 +1384,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         total,
         percentage: Math.round((score / total) * 1000) / 10,
         notes: hscForm.notes.trim(),
+        topics,
         createdAtMs: nowMs,
         updatedAtMs: nowMs,
       };
@@ -1390,6 +1398,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         score: "",
         total: "100",
         notes: "",
+        topics: { Algebra: "", Calculus: "", Statistics: "", Trigonometry: "" },
       });
       showToast("HSC result saved.", "success");
     } catch (err) {
