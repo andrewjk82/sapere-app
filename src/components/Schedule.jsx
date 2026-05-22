@@ -345,11 +345,27 @@ const Schedule = ({ students = [] }) => {
     setEditData(prev => {
       const current = Array.isArray(prev.learnedTopics) ? prev.learnedTopics : [];
       const exists = current.some(item => item.id === topic.id);
+
+      // Keep the Homework field in sync — a checked "Today covered" topic is
+      // added as a homework line; unchecking removes it. Manual homework text
+      // the teacher typed is preserved.
+      const topicLine = String(topic?.label || topic?.title || topic?.id || '').trim();
+      const lines = String(prev.homework || '').split('\n');
+      let nextHomework;
+      if (exists) {
+        nextHomework = lines.filter(l => l.trim() !== topicLine).join('\n').trim();
+      } else if (topicLine && !lines.some(l => l.trim() === topicLine)) {
+        nextHomework = [String(prev.homework || '').trim(), topicLine].filter(Boolean).join('\n');
+      } else {
+        nextHomework = prev.homework;
+      }
+
       return {
         ...prev,
         learnedTopics: exists
           ? current.filter(item => item.id !== topic.id)
-          : [...current, topic]
+          : [...current, topic],
+        homework: nextHomework,
       };
     });
   };
