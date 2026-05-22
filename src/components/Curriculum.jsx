@@ -25,7 +25,9 @@ import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
 import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
 import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
+import { Y8_CH4A_QUESTIONS } from '../constants/seedYear8Ch4Questions.js';
 import QuestionBankModal from './QuestionBankModal';
+import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
 import { seedChapterQuestions } from '../services/chapterSeeder';
@@ -42,6 +44,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-7', chapterTitle: 'Chapter 7: Congruence and special quadrilaterals', topicId: 'y9-7a', topicCode: '7A', topicTitle: 'Review of angles', year: 'Year 9', seed: Y9_CH7A_QUESTIONS, label: 'Y9 Ch7 · Angles' },
   { chapterId: 'y9-8', chapterTitle: 'Chapter 8: Index laws', topicId: 'y9-8a', topicCode: '8A', topicTitle: 'Index laws', year: 'Year 9', seed: Y9_CH8A_QUESTIONS, label: 'Y9 Ch8 · Index laws' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: HCF and LCM', topicId: 'y8-3a', topicCode: '3A', topicTitle: 'HCF and LCM', year: 'Year 8', seed: Y8_CH3A_QUESTIONS, label: 'Y8 Ch3 · HCF and LCM' },
+  { chapterId: 'y8-4', chapterTitle: 'Chapter 4: Integers', topicId: 'y8-4a', topicCode: '4A', topicTitle: 'Integers', year: 'Year 8', seed: Y8_CH4A_QUESTIONS, label: 'Y8 Ch4 · Integers' },
 ];
 import {
   fetchHscResultsIncremental,
@@ -103,7 +106,10 @@ const Curriculum = () => {
     setEditingSubtopicIndex(-1);
     setSubtopicForm({ code: '', title: '', page: '' });
   };
+  // Chapter card click navigates to a topics list page (not a modal); choosing
+  // a topic opens the student-style question bank page for that topic.
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
+  const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
@@ -1591,6 +1597,63 @@ const Curriculum = () => {
 
   if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
 
+  // Early-return navigation: chapter card → topics page → bank page.
+  // These replace the old QuestionBankModal overlay so the user gets a real
+  // page transition instead of a modal stack.
+  if (selectedTopicForBank) {
+    return (
+      <QuestionBankPage
+        chapter={selectedTopicForBank.chapter}
+        topic={selectedTopicForBank.topic}
+        onBack={() => setSelectedTopicForBank(null)}
+      />
+    );
+  }
+  if (selectedChapterForQuestions) {
+    const ch = selectedChapterForQuestions;
+    const topics = ch.topics || [];
+    return (
+      <div className="app-page" style={{ padding: '24px 20px 80px', background: '#f8fafc', minHeight: '100vh' }}>
+        <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <button
+            onClick={() => setSelectedChapterForQuestions(null)}
+            style={{ alignSelf: 'flex-start', display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#475569', fontWeight: 700, cursor: 'pointer' }}
+          >
+            ← Back to chapters
+          </button>
+          <div>
+            <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '4px' }}>{ch.year || ''}</div>
+            <h2 style={{ margin: 0, fontSize: '1.7rem', fontWeight: 900, color: '#1e1b4b' }}>{ch.title}</h2>
+            <p style={{ margin: '4px 0 0', color: '#64748b', fontWeight: 600 }}>{topics.length} {topics.length === 1 ? 'topic' : 'topics'}</p>
+          </div>
+          {topics.length === 0 ? (
+            <div style={{ padding: '40px', background: '#fff', borderRadius: '20px', border: '1px dashed #cbd5e1', textAlign: 'center', color: '#94a3b8', fontWeight: 700 }}>
+              No topics in this chapter. Use the chapter editor to add some.
+            </div>
+          ) : (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
+              {topics.map((t, idx) => (
+                <button
+                  key={t.id || idx}
+                  onClick={() => setSelectedTopicForBank({ chapter: ch, topic: t })}
+                  style={{ textAlign: 'left', padding: '20px 22px', borderRadius: '20px', border: '1px solid #e2e8f0', background: '#fff', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '8px', boxShadow: '0 4px 14px rgba(0,0,0,0.03)', transition: 'transform 0.15s, box-shadow 0.15s' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 30px rgba(99,102,241,0.10)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.03)'; }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{t.code || `Topic ${idx + 1}`}</span>
+                    <ChevronRight size={18} color="#94a3b8" />
+                  </div>
+                  <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{t.title}</div>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="app-page">
       <div className="app-page__header">
@@ -2104,11 +2167,9 @@ const Curriculum = () => {
         )}
       </AnimatePresence>
 
-      <AnimatePresence>
-        {selectedChapterForQuestions && (
-          <QuestionBankModal chapter={selectedChapterForQuestions} onClose={() => setSelectedChapterForQuestions(null)} />
-        )}
-      </AnimatePresence>
+      {/* Chapter-card click no longer opens a modal here — it triggers the
+          early-return at the top of this component which renders the topics
+          page, then the student-style QuestionBankPage on topic select. */}
     </div>
   );
 };
