@@ -14,10 +14,18 @@ import { collection, writeBatch, doc, serverTimestamp } from 'firebase/firestore
  */
 
 // Normalise one raw seed question → the app's question document.
+// Open tasks that genuinely need a teacher to grade — drawing, proof and
+// construction. A "Find x, giving reasons" question has a definite answer
+// and is auto-graded, so it must NOT be flagged for manual review.
+const MANUAL_GRADE_KEYWORDS = /(draw|sketch|construct|show that|prove|justify|explain why)/i;
+
 const mapSeedQuestion = (raw, chapter) => {
   const isMC = raw.type === 'multiple_choice';
-  const isOpenReview = raw.type === 'teacher_review';
   const questionText = raw.q || raw.question || '';
+  // requiresManualGrading is set ONLY for true open/construction/proof tasks,
+  // regardless of whether the seed labelled the question "teacher_review".
+  const isOpenReview = (raw.requiresManualGrading === true)
+    || (raw.type === 'teacher_review' && MANUAL_GRADE_KEYWORDS.test(questionText));
 
   let options = [];
   let answer = raw.a ?? raw.answer ?? raw.solution ?? '';
