@@ -641,6 +641,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     topicTitle: '',
     subQuestions: [],
     requiresManualGrading: false,
+    blanks: [], // [{ label, answer }] for type === 'fill_blank'
     graphData: ''
   });
 
@@ -723,6 +724,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           options: sq.options || [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }]
         })),
         requiresManualGrading: q.requiresManualGrading || false,
+        blanks: Array.isArray(q.blanks)
+          ? q.blanks.map((b) => ({ label: b.label || '', answer: b.answer || '' }))
+          : [],
         graphData: q.graphData ? JSON.stringify(q.graphData, null, 2) : ''
       });
       setEditingQuestion(q.id);
@@ -748,6 +752,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         topicTitle: '',
         subQuestions: [],
         requiresManualGrading: false,
+        blanks: [],
         graphData: ''
       });
       setEditingQuestion(null);
@@ -777,7 +782,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   };
 
   const handleSave = async () => {
-    if (!formData.questionText || (formData.type === 'short_answer' && !formData.answer) || (formData.type === 'multiple_choice' && formData.answerIdx === null)) {
+    // Teacher-graded questions don't need a machine-checkable answer — the
+    // teacher reads the student's response and assigns the mark. The `answer`
+    // field, if filled, is shown as a model answer for student reference.
+    const teacherGraded = formData.requiresManualGrading === true;
+    const needsAnswer = !teacherGraded;
+    const fillBlankOk = formData.type !== 'fill_blank'
+      || (formData.blanks || []).some((b) => (b.answer || '').trim() !== '');
+
+    if (!formData.questionText
+      || (needsAnswer && formData.type === 'short_answer' && !formData.answer)
+      || (needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx === null)
+      || (needsAnswer && formData.type === 'fill_blank' && !fillBlankOk)
+    ) {
       showToast("Question content and answer are required.", 'warning');
       return;
     }
@@ -806,11 +823,20 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         difficulty: formData.difficulty,
         timeLimit: Number(formData.timeLimit),
         type: formData.type,
-        options: formData.type === 'multiple_choice' 
-          ? formData.options.filter(o => o.text.trim() !== '' || o.imageUrl !== '') 
+        options: formData.type === 'multiple_choice'
+          ? formData.options.filter(o => o.text.trim() !== '' || o.imageUrl !== '')
           : [],
         questionImage: formData.questionImage,
-        answer: formData.type === 'multiple_choice' ? formData.answerIdx.toString() : formData.answer,
+        // fill_blank: pipe-joined answers serve as a fallback for old grading
+        // paths; the canonical source is the `blanks` array below.
+        answer: formData.type === 'multiple_choice'
+          ? (formData.answerIdx != null ? formData.answerIdx.toString() : '')
+          : formData.type === 'fill_blank'
+            ? (formData.blanks || []).map((b) => (b.answer || '').trim()).join(' | ')
+            : formData.answer,
+        blanks: formData.type === 'fill_blank'
+          ? (formData.blanks || []).map((b) => ({ label: b.label || '', answer: b.answer || '' }))
+          : [],
         solution: formData.solution,
         solutionSteps: formData.solutionSteps.filter(s => s.explanation.trim() || s.workingOut.trim()),
         hint: formData.hint,
@@ -1136,16 +1162,57 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
               <div>
                 <label style={{ display: 'block', marginBottom: '12px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Question Type</label>
                 <div style={{ display: 'flex', gap: '8px', background: '#f1f5f9', padding: '6px', borderRadius: '16px' }}>
-                  {['multiple_choice', 'short_answer'].map(type => (
-                    <button 
-                      key={type} 
-                      onClick={() => setFormData({...formData, type})}
-                      style={{ flex: 1, padding: '10px', borderRadius: '12px', border: 'none', background: formData.type === type ? 'white' : 'transparent', color: formData.type === type ? '#6366f1' : '#64748b', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', boxShadow: formData.type === type ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
+                  {[
+                    { id: 'multiple_choice', label: 'Multiple Choice' },
+                    { id: 'short_answer', label: 'Short Answer' },
+                    { id: 'fill_blank', label: 'Fill in the Blank' },
+                  ].map(({ id, label }) => (
+                    <button
+                      key={id}
+                      onClick={() => setFormData({ ...formData, type: id })}
+                      style={{ flex: 1, padding: '10px', borderRadius: '12px', border: 'none', background: formData.type === id ? 'white' : 'transparent', color: formData.type === id ? '#6366f1' : '#64748b', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', boxShadow: formData.type === id ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
                     >
-                      {type === 'multiple_choice' ? 'Multiple Choice' : 'Short Answer'}
+                      {label}
                     </button>
                   ))}
                 </div>
+              </div>
+
+              {/* Teacher-grades toggle. When ON the question is sent for manual
+                  marking — useful for "giving reasons", "show that", proof or
+                  drawing tasks where a single string answer cannot capture the
+                  full response. The Answer field below is then optional and
+                  acts as a model answer that students can reference after. */}
+              <div style={{
+                padding: '14px 18px', borderRadius: '16px',
+                background: formData.requiresManualGrading ? '#fffbeb' : '#f8fafc',
+                border: `1px solid ${formData.requiresManualGrading ? '#fde68a' : '#e2e8f0'}`,
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px',
+              }}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 800, color: formData.requiresManualGrading ? '#92400e' : '#1e293b' }}>
+                    Teacher grades this question
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '2px', lineHeight: 1.4 }}>
+                    Use for "giving reasons", "show that", proof or drawing tasks. The Answer field becomes optional and is shown to students as a model answer.
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setFormData((prev) => ({ ...prev, requiresManualGrading: !prev.requiresManualGrading }))}
+                  aria-pressed={formData.requiresManualGrading}
+                  style={{
+                    width: '52px', height: '30px', borderRadius: '999px', border: 'none', cursor: 'pointer',
+                    background: formData.requiresManualGrading ? '#f59e0b' : '#cbd5e1',
+                    position: 'relative', transition: 'background 0.2s', flexShrink: 0,
+                  }}
+                >
+                  <span style={{
+                    position: 'absolute', top: '3px', left: formData.requiresManualGrading ? '25px' : '3px',
+                    width: '24px', height: '24px', borderRadius: '50%', background: '#fff',
+                    boxShadow: '0 2px 6px rgba(0,0,0,0.15)', transition: 'left 0.2s',
+                  }} />
+                </button>
               </div>
 
               {formData.type === 'multiple_choice' ? (
@@ -1176,10 +1243,80 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                     ))}
                   </div>
                 </div>
+              ) : formData.type === 'fill_blank' ? (
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                    <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
+                      Blanks ({(formData.blanks || []).length})
+                    </label>
+                    <button
+                      type="button"
+                      onClick={() => setFormData((prev) => ({
+                        ...prev,
+                        blanks: [...(prev.blanks || []), { label: '', answer: '' }],
+                      }))}
+                      style={{ padding: '6px 12px', fontSize: '0.75rem', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
+                    >
+                      <Plus size={14} /> Add Blank
+                    </button>
+                  </div>
+                  <p style={{ fontSize: '0.75rem', color: '#94a3b8', margin: '0 0 12px', lineHeight: 1.4 }}>
+                    Write the question with <code style={{ background: '#f1f5f9', padding: '1px 6px', borderRadius: '6px' }}>()</code> where each blank should appear (e.g. <em>α = (), β = ()</em>). Add one row below per blank — label is shown next to the input (e.g. "α ="), answer is the correct value.
+                  </p>
+                  {(formData.blanks || []).length === 0 ? (
+                    <div style={{ padding: '20px', textAlign: 'center', color: '#94a3b8', fontWeight: 700, background: '#f8fafc', borderRadius: '12px', border: '1px dashed #cbd5e1' }}>
+                      No blanks yet. Click "Add Blank" to start.
+                    </div>
+                  ) : (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                      {formData.blanks.map((b, bIdx) => (
+                        <div key={bIdx} style={{ display: 'flex', gap: '10px', alignItems: 'center', padding: '12px 14px', background: '#fff', border: '1px solid #e2e8f0', borderRadius: '14px' }}>
+                          <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: '#eef2ff', color: '#4f46e5', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem', fontWeight: 900, flexShrink: 0 }}>
+                            {bIdx + 1}
+                          </div>
+                          <input
+                            type="text"
+                            placeholder="Label (e.g. α =)"
+                            value={b.label || ''}
+                            onChange={(e) => setFormData((prev) => {
+                              const next = [...(prev.blanks || [])];
+                              next[bIdx] = { ...next[bIdx], label: e.target.value };
+                              return { ...prev, blanks: next };
+                            })}
+                            style={{ flex: '0 0 140px', padding: '10px 12px', borderRadius: '10px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.9rem' }}
+                          />
+                          <input
+                            type="text"
+                            placeholder="Correct answer (e.g. 115°)"
+                            value={b.answer || ''}
+                            onChange={(e) => setFormData((prev) => {
+                              const next = [...(prev.blanks || [])];
+                              next[bIdx] = { ...next[bIdx], answer: e.target.value };
+                              return { ...prev, blanks: next };
+                            })}
+                            style={{ flex: 1, padding: '10px 12px', borderRadius: '10px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.9rem', background: '#f0fdf4', color: '#166534' }}
+                          />
+                          <button
+                            type="button"
+                            onClick={() => setFormData((prev) => ({
+                              ...prev,
+                              blanks: (prev.blanks || []).filter((_, i) => i !== bIdx),
+                            }))}
+                            style={{ background: '#fff1f2', color: '#f43f5e', border: 'none', padding: '8px', borderRadius: '8px', cursor: 'pointer', display: 'flex' }}
+                          >
+                            <Trash2 size={14} />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ) : (
                 <div>
-                  <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Correct Answer (Plain Text)</label>
-                  <input type="text" value={formData.answer} onChange={e => setFormData({...formData, answer: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', background: '#f0fdf4', color: '#166534' }} placeholder="e.g. 25" />
+                  <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
+                    {formData.requiresManualGrading ? 'Model Answer (Optional — shown to students)' : 'Correct Answer (Plain Text)'}
+                  </label>
+                  <input type="text" value={formData.answer} onChange={e => setFormData({...formData, answer: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', background: '#f0fdf4', color: '#166534' }} placeholder={formData.requiresManualGrading ? 'e.g. AB ∥ CD (alternate angles equal)' : 'e.g. 25'} />
                 </div>
               )}
 

@@ -52,8 +52,9 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
 
   const q = questions[currentIdx];
   const total = questions.length;
+  const isFillBlank = q?.type === 'fill_blank';
   const isShort = q?.type === 'short_answer';
-  const isMC = q && !isShort && !q.subQuestions?.length && (q.options || []).length > 0;
+  const isMC = q && !isShort && !isFillBlank && !q.subQuestions?.length && (q.options || []).length > 0;
   const isTeacherReview = q?.type === 'teacher_review' || q?.requiresManualGrading === true;
 
   const goPrev = () => { setCurrentIdx((i) => Math.max(0, i - 1)); setShowHint(false); };
@@ -225,6 +226,39 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                 {q.answer && (
                   <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
                     Answer: <MathView content={String(q.answer)} style={{ display: 'inline', fontWeight: 800 }} />
+                  </div>
+                )}
+              </div>
+            ) : isFillBlank ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ padding: '20px 24px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0', display: 'flex', flexWrap: 'wrap', gap: '12px 18px', alignItems: 'center' }}>
+                  {(q.blanks || []).length === 0 ? (
+                    <span style={{ color: '#94a3b8', fontWeight: 700, fontSize: '0.9rem' }}>No blanks defined for this question.</span>
+                  ) : (
+                    (q.blanks || []).map((b, i) => (
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        {b.label && (
+                          <MathView content={b.label} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '1.05rem' }} />
+                        )}
+                        <input
+                          type="text"
+                          placeholder="—"
+                          disabled
+                          style={{ width: '110px', padding: '10px 14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f8fafc', textAlign: 'center', fontWeight: 700, fontSize: '0.95rem', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+                        />
+                      </div>
+                    ))
+                  )}
+                </div>
+                {(q.blanks || []).some((b) => (b.answer || '').trim()) && (
+                  <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 700, fontSize: '0.9rem', display: 'flex', flexWrap: 'wrap', gap: '6px 14px' }}>
+                    <span style={{ fontWeight: 900 }}>Answers:</span>
+                    {(q.blanks || []).map((b, i) => (
+                      <span key={i} style={{ display: 'inline-flex', gap: '6px', alignItems: 'center' }}>
+                        {b.label && <MathView content={b.label} style={{ display: 'inline', fontWeight: 700 }} />}
+                        <MathView content={String(b.answer || '—')} style={{ display: 'inline', fontWeight: 800 }} />
+                      </span>
+                    ))}
                   </div>
                 )}
               </div>
