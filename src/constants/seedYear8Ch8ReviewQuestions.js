@@ -216,7 +216,7 @@ export const Y8_CH8D_QUESTIONS = [
         "points": {
           "A": [
             0,
-            84
+            30
           ],
           "B": [
             0,
