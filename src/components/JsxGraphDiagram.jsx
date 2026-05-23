@@ -29,6 +29,14 @@ const JsxGraphDiagram = ({ data, style }) => {
       });
       
       boardInstance.current = board;
+      board.options.point = {
+        ...(board.options.point || {}),
+        fixed: true,
+        highlight: false,
+        showInfobox: false,
+        visible: false,
+        withLabel: false,
+      };
       const originalCreate = board.create.bind(board);
 
       board.create = (elementType, parents, attributes = {}) => {
