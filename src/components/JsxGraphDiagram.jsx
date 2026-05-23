@@ -21,6 +21,13 @@ const JsxGraphDiagram = ({ data, style }) => {
         showCopyright: false,
         showNavigation: false,
         keepaspectratio: true,
+        point: {
+          fixed: true,
+          highlight: false,
+          showInfobox: false,
+          visible: false,
+          withLabel: false,
+        },
       };
 
       const board = JXG.JSXGraph.initBoard(boardRef.current, {
@@ -40,7 +47,19 @@ const JsxGraphDiagram = ({ data, style }) => {
       const originalCreate = board.create.bind(board);
 
       board.create = (elementType, parents, attributes = {}) => {
-        if (String(elementType).toLowerCase() !== 'angle') {
+        const type = String(elementType).toLowerCase();
+        if (type === 'point') {
+          return originalCreate(elementType, parents, {
+            fixed: true,
+            highlight: false,
+            showInfobox: false,
+            ...attributes,
+            visible: attributes.visible === true ? true : false,
+            withLabel: attributes.withLabel === true ? true : false,
+          });
+        }
+
+        if (type !== 'angle') {
           return originalCreate(elementType, parents, attributes);
         }
 
@@ -89,6 +108,20 @@ const JsxGraphDiagram = ({ data, style }) => {
         // Evaluate script string safely if necessary, though function is preferred
         const executeScript = new Function('board', 'JXG', data.script);
         executeScript(board, JXG);
+      }
+
+      if (data.showConstructionPoints !== true) {
+        Object.values(board.objects || {}).forEach((object) => {
+          if (object?.elType === 'point' && object.setAttribute) {
+            object.setAttribute({
+              fixed: true,
+              highlight: false,
+              showInfobox: false,
+              visible: false,
+              withLabel: false,
+            });
+          }
+        });
       }
     } catch (err) {
       console.error('Error initializing JSXGraph board:', err);
