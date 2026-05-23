@@ -59,7 +59,7 @@ import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
 import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
-import ExamPrepCard from "./studentDetail/ExamPrepCard";
+import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -1539,12 +1539,6 @@ const StudentDetail = ({ studentId, onBack }) => {
             {/* SECRET NOTEBOOK PANEL */}
             <SecretNotebookPanel student={student} />
 
-            {/* EXAM PREP — cumulative results & topic analysis */}
-            <ExamPrepCard
-              studentId={studentId}
-              examPrepEnabled={student?.examPrepEnabled === true}
-            />
-
             {/* DAILY PRACTICE SETTINGS - Accordion Design */}
             <CollapsibleSection
               title="Daily practice settings"
@@ -1794,6 +1788,23 @@ const StudentDetail = ({ studentId, onBack }) => {
                       .catch(console.error);
                   }}
                 />
+            </CollapsibleSection>
+
+            {/* EXAM PREP — same accordion shape as Basic calculation. The
+                ENABLE/DISABLE toggle inside the panel controls the per-student
+                flag, replacing the toggle that used to live in Edit Student. */}
+            <CollapsibleSection
+              title="Exam prep"
+              summary={student.examPrepEnabled === true ? '15-question random rounds · no daily limit' : 'Disabled'}
+              badge={student.examPrepEnabled === true ? 'On' : 'Off'}
+              badgeTone={student.examPrepEnabled === true ? 'green' : 'amber'}
+            >
+              <ExamPrepPanel
+                styles={{ ...styles, card: {} }}
+                student={student}
+                studentId={studentId}
+                onUpdateSetting={handleUpdateCurriculumSetting}
+              />
             </CollapsibleSection>
           </div>
         );
