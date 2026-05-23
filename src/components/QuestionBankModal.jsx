@@ -493,7 +493,16 @@ const GeometryEditor = ({ graphData, onChange }) => {
           <div style={{ fontSize: '0.75rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Geometry editor</div>
           <div style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: 700, marginTop: '3px' }}>Drag points and labels directly on the diagram.</div>
         </div>
-        <button type="button" onClick={addPoint} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add point</button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6d28d9' }}>Width:</label>
+          <input
+            type="number"
+            value={geometry.width || 300}
+            onChange={(e) => updateGeometry({ ...geometry, width: Number(e.target.value) || 300 })}
+            style={{ width: '70px', padding: '6px 8px', borderRadius: '8px', border: '1px solid #c4b5fd', fontWeight: 700, textAlign: 'center' }}
+          />
+          <button type="button" onClick={addPoint} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add point</button>
+        </div>
       </div>
 
       <svg
@@ -668,10 +677,11 @@ const GeometryEditor = ({ graphData, onChange }) => {
         {(geometry.freeLabels || []).map((label, idx) => {
           const point = Array.isArray(label.point) ? label.point : [label.x || 0, label.y || 0];
           return (
-            <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr 0.8fr auto', gap: '8px', alignItems: 'center' }}>
+            <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 0.7fr 0.7fr 0.6fr auto', gap: '8px', alignItems: 'center' }}>
               <input value={label.text || ''} onChange={(e) => updateFreeLabel(idx, { text: e.target.value })} placeholder="label" style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
-              <input type="number" step="0.25" value={point[0]} onChange={(e) => updateFreeLabel(idx, { point: [Number(e.target.value), point[1]] })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
-              <input type="number" step="0.25" value={point[1]} onChange={(e) => updateFreeLabel(idx, { point: [point[0], Number(e.target.value)] })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+              <input type="number" step="0.25" value={point[0]} onChange={(e) => updateFreeLabel(idx, { point: [Number(e.target.value), point[1]] })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} title="X" />
+              <input type="number" step="0.25" value={point[1]} onChange={(e) => updateFreeLabel(idx, { point: [point[0], Number(e.target.value)] })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} title="Y" />
+              <input type="number" value={label.fontSize || 15} onChange={(e) => updateFreeLabel(idx, { fontSize: Number(e.target.value) || 15 })} placeholder="px" style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} title="Font Size" />
               <button type="button" onClick={() => updateGeometry({ ...geometry, freeLabels: (geometry.freeLabels || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '8px', cursor: 'pointer' }}>Remove</button>
             </div>
           );
