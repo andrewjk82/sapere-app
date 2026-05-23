@@ -3,17 +3,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
   Lock, Trophy, Sparkles, Clock, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
+  Flag, BookmarkPlus, X,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
 import { gradeQuestion } from '../utils/answerMatching';
+import { db } from '../firebase/config';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import { getNoteCount, getDueCount } from '../utils/secretNote';
+import SecretNoteView from './challenge/SecretNoteView';
 import {
   getSelection, setSelection,
   getStats, getTopicAnalysis,
   startRound, finishRound,
-  ROUND_SIZE_CONST,
+  ROUND_SIZE_CONST, EXAM_PREP_NOTE_KIND,
 } from '../services/examPrepService';
 
 const flattenChapters = (yearKey) => {
@@ -153,7 +159,7 @@ const TopicAnalysisCard = ({ analysis }) => (
 );
 
 // ── Quiz view (one question at a time, self-contained) ─────────────────
-const QuizView = ({ questions, onFinish }) => {
+const QuizView = ({ questions, onFinish, onReport }) => {
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState([]); // [{userAnswer, correct}]
   const [draft, setDraft] = useState(null);
@@ -209,8 +215,17 @@ const QuizView = ({ questions, onFinish }) => {
           <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Exam Prep</div>
           <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {idx + 1} of {total}</div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-          <Clock size={14} /> {q.timeLimit || 120}s
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            onClick={() => onReport?.(q)}
+            title="Report a problem with this question"
+            style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
+          >
+            <Flag size={16} />
+          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+            <Clock size={14} /> {q.timeLimit || 120}s
+          </div>
         </div>
       </div>
       <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
@@ -353,6 +368,11 @@ const ResultPanel = ({ result, onRestart, onExit, cumulativeAnalysis }) => (
       <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Round complete</div>
       <div style={{ fontSize: '2.4rem', fontWeight: 900, color: '#1e1b4b', margin: '6px 0' }}>{result.correct} / {result.total}</div>
       <div style={{ fontSize: '1rem', color: '#7c3aed', fontWeight: 800 }}>+{result.xp} XP earned</div>
+      {result.addedToNote > 0 && (
+        <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', padding: '6px 12px', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 800 }}>
+          <BookmarkPlus size={14} /> {result.addedToNote} added to Secret Note
+        </div>
+      )}
     </div>
 
     <div className="app-panel" style={{ padding: '24px', borderRadius: '24px' }}>
@@ -392,23 +412,65 @@ const ResultPanel = ({ result, onRestart, onExit, cumulativeAnalysis }) => (
 // ── Top-level ExamPrep page ────────────────────────────────────────────
 const ExamPrep = ({ profile }) => {
   const { user } = useAuth();
+  const { showToast } = useToast();
   const uid = user?.uid;
   const enabled = profile?.examPrepEnabled === true;
 
   const [selection, setSelectionState] = useState(() => uid ? getSelection(uid) : { years: [], chapters: [] });
-  const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result'
+  const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'secretNote'
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [analysis, setAnalysis] = useState(() => uid ? getTopicAnalysis(uid) : []);
   const [stats, setStats] = useState(() => uid ? getStats(uid) : { sessions: 0, correct: 0, attempted: 0 });
+  const [noteCount, setNoteCount] = useState(0);
+  const [dueCount, setDueCount] = useState(0);
+  const [reportTarget, setReportTarget] = useState(null);
+  const [reportMessage, setReportMessage] = useState('');
+  const [submittingReport, setSubmittingReport] = useState(false);
 
   useEffect(() => {
     if (!uid) return;
     setSelectionState(getSelection(uid));
     setAnalysis(getTopicAnalysis(uid));
     setStats(getStats(uid));
-  }, [uid]);
+    setNoteCount(getNoteCount(EXAM_PREP_NOTE_KIND, uid));
+    setDueCount(getDueCount(EXAM_PREP_NOTE_KIND, uid));
+  }, [uid, stage]);
+
+  const submitReport = async () => {
+    if (!reportTarget || !reportMessage.trim() || !user?.uid) return;
+    setSubmittingReport(true);
+    try {
+      await addDoc(collection(db, 'reports'), {
+        studentId: user.uid,
+        studentName: user.displayName || user.email || 'Student',
+        questionId: reportTarget.id || '',
+        source: 'exam_prep',
+        questionData: {
+          id: reportTarget.id || '',
+          question: reportTarget.question || '',
+          answer: String(reportTarget.answer ?? ''),
+          type: reportTarget.type || '',
+          chapterId: reportTarget.chapterId || '',
+          chapterTitle: reportTarget.chapterTitle || '',
+          topicId: reportTarget.topicId || '',
+          topicTitle: reportTarget.topicTitle || '',
+        },
+        message: reportMessage.trim(),
+        status: 'open',
+        createdAt: serverTimestamp(),
+      });
+      showToast('Report submitted — we will review it.', 'success');
+      setReportTarget(null);
+      setReportMessage('');
+    } catch (err) {
+      console.error(err);
+      showToast('Failed to submit report.', 'error');
+    } finally {
+      setSubmittingReport(false);
+    }
+  };
 
   if (!enabled) {
     return (
@@ -488,6 +550,27 @@ const ExamPrep = ({ profile }) => {
               </div>
             </div>
 
+            {noteCount > 0 && (
+              <button
+                onClick={() => setStage('secretNote')}
+                className="app-panel"
+                style={{ padding: '16px 20px', borderRadius: '18px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', border: '1px solid #fde68a', background: '#fffbeb', cursor: 'pointer', width: '100%' }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#fcd34d', display: 'grid', placeItems: 'center', color: '#78350f' }}>
+                    <BookmarkPlus size={18} />
+                  </div>
+                  <div style={{ textAlign: 'left' }}>
+                    <div style={{ fontWeight: 900, color: '#78350f' }}>Exam Prep Secret Note</div>
+                    <div style={{ fontSize: '0.8rem', color: '#92400e', fontWeight: 700 }}>
+                      {noteCount} {noteCount === 1 ? 'note' : 'notes'} · {dueCount} due now
+                    </div>
+                  </div>
+                </div>
+                <ChevronRight size={18} color="#92400e" />
+              </button>
+            )}
+
             <SelectionPanel uid={uid} selection={selection} onChange={handleSelectionChange} onStart={handleStart} hasPool={false} />
             <TopicAnalysisCard analysis={analysis} />
             {loading && <div style={{ textAlign: 'center', color: '#7c3aed', fontWeight: 800 }}>Loading questions…</div>}
@@ -495,13 +578,58 @@ const ExamPrep = ({ profile }) => {
         )}
 
         {stage === 'quiz' && questions.length > 0 && (
-          <QuizView questions={questions} onFinish={handleFinishRound} />
+          <QuizView questions={questions} onFinish={handleFinishRound} onReport={(q) => setReportTarget(q)} />
+        )}
+
+        {stage === 'secretNote' && uid && (
+          <SecretNoteView
+            kind={EXAM_PREP_NOTE_KIND}
+            uid={uid}
+            user={user}
+            studentName={user?.displayName || user?.email || 'Student'}
+            onClose={() => setStage('setup')}
+            isMobile={false}
+          />
         )}
 
         {stage === 'result' && result && (
           <ResultPanel result={result} onRestart={handleRestart} onExit={() => setStage('setup')} cumulativeAnalysis={analysis} />
         )}
       </div>
+
+      {/* Report-question modal */}
+      <AnimatePresence>
+        {reportTarget && (
+          <div style={{ position: 'fixed', inset: 0, zIndex: 10000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setReportTarget(null)} style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.7)', backdropFilter: 'blur(8px)' }} />
+            <motion.div initial={{ scale: 0.94, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.94, opacity: 0 }} style={{ position: 'relative', maxWidth: '480px', width: '100%', background: '#fff', borderRadius: '24px', padding: '24px', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.4)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+                <div>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Report a problem</div>
+                  <h3 style={{ margin: '4px 0 0', fontWeight: 900, color: '#1e1b4b' }}>Ask the teacher</h3>
+                </div>
+                <button onClick={() => setReportTarget(null)} style={{ border: 'none', background: '#f1f5f9', width: '32px', height: '32px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}><X size={16} /></button>
+              </div>
+              <p style={{ margin: '0 0 12px', fontSize: '0.85rem', color: '#64748b', fontWeight: 600 }}>
+                Describe what's wrong, or write a question for the teacher about this problem. They'll see it in the Reports tab.
+              </p>
+              <textarea
+                rows={4}
+                value={reportMessage}
+                onChange={(e) => setReportMessage(e.target.value)}
+                placeholder="e.g. The answer doesn't look right, or I don't understand step 2…"
+                style={{ width: '100%', padding: '14px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontFamily: 'inherit', fontSize: '0.95rem', resize: 'vertical', fontWeight: 500 }}
+              />
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '12px' }}>
+                <button onClick={() => setReportTarget(null)} style={{ padding: '10px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#475569', fontWeight: 700, cursor: 'pointer' }}>Cancel</button>
+                <button onClick={submitReport} disabled={!reportMessage.trim() || submittingReport} style={{ padding: '10px 18px', borderRadius: '12px', border: 'none', background: !reportMessage.trim() ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', fontWeight: 800, cursor: !reportMessage.trim() ? 'not-allowed' : 'pointer' }}>
+                  {submittingReport ? 'Sending…' : 'Send report'}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

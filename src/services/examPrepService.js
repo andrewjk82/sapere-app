@@ -16,7 +16,10 @@
  *   examPrep:v1:<uid>:history     Session[]   recent rounds (capped)
  */
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, updateDoc, increment } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, updateDoc, increment, setDoc, serverTimestamp } from 'firebase/firestore';
+import { addMistakes } from '../utils/secretNote';
+
+export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
 const ROUND_SIZE = 15;
 const POOL_TTL_MS = 1000 * 60 * 60 * 6; // 6h — pool refresh
@@ -226,7 +229,43 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
     }
   }
 
-  return { correct, total: results.length, xp: xpEarned, perTopic };
+  // Wrong questions roll into the Exam Prep Secret Note deck for review.
+  const wrongQuestions = results
+    .map((res, i) => (res?.correct ? null : questions[i]))
+    .filter(Boolean);
+  let addedToNote = 0;
+  if (wrongQuestions.length > 0 && uid) {
+    try {
+      addedToNote = addMistakes(EXAM_PREP_NOTE_KIND, uid, wrongQuestions);
+    } catch (err) {
+      console.warn('Exam Prep secret-note write failed:', err);
+    }
+  }
+
+  // Mirror a compact summary to Firestore so the teacher app can see the
+  // student's cumulative topic analysis without reading their device cache.
+  if (uid) {
+    try {
+      await setDoc(doc(db, 'students', uid, 'exam_prep', 'summary'), {
+        sessions: stats.sessions,
+        attempted: stats.attempted,
+        correct: stats.correct,
+        byTopic: stats.byTopic,
+        lastRound: {
+          finishedAt: Date.now(),
+          total: results.length,
+          correct,
+          xp: xpEarned,
+          perTopic,
+        },
+        updatedAt: serverTimestamp(),
+      }, { merge: true });
+    } catch (err) {
+      console.warn('Exam Prep summary mirror failed:', err);
+    }
+  }
+
+  return { correct, total: results.length, xp: xpEarned, perTopic, addedToNote };
 };
 
 // ── Topic-analysis helper for the UI ───────────────────────────────────

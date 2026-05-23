@@ -59,6 +59,7 @@ import ChallengeAnalyticsPanel from "./studentDetail/ChallengeAnalyticsPanel";
 import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
+import ExamPrepCard from "./studentDetail/ExamPrepCard";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -1537,6 +1538,12 @@ const StudentDetail = ({ studentId, onBack }) => {
 
             {/* SECRET NOTEBOOK PANEL */}
             <SecretNotebookPanel student={student} />
+
+            {/* EXAM PREP — cumulative results & topic analysis */}
+            <ExamPrepCard
+              studentId={studentId}
+              examPrepEnabled={student?.examPrepEnabled === true}
+            />
 
             {/* DAILY PRACTICE SETTINGS - Accordion Design */}
             <CollapsibleSection
