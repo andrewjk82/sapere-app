@@ -518,7 +518,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
           if (!geometry.points[seg.from] || !geometry.points[seg.to]) return null;
           const [x1, y1] = toSvg(geometry.points[seg.from]);
           const [x2, y2] = toSvg(geometry.points[seg.to]);
-          return <line key={idx} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#1e3a5f" strokeWidth="3" strokeLinecap="round" strokeDasharray={seg.dashed ? '7 5' : undefined} />;
+          return <line key={idx} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeDasharray={seg.dashed ? '6 4' : undefined} />;
         })}
         {(() => {
           const edCx = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[0], 0) / (pointNames.length || 1);
@@ -569,10 +569,11 @@ const GeometryEditor = ({ graphData, onChange }) => {
                   x={rx}
                   y={ry + 5}
                   textAnchor="middle"
-                  fill="#7c3aed"
+                  fill="#000000"
                   fontSize="14"
                   fontStyle="italic"
                   fontWeight="700"
+                  fontFamily='"KaTeX_Main", "Times New Roman", serif'
                 >
                   {ang.label}
                 </text>
@@ -612,8 +613,8 @@ const GeometryEditor = ({ graphData, onChange }) => {
           return (
             <g key={name} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'point', name }); }} style={{ cursor: 'grab' }}>
               <circle cx={x} cy={y} r="9" fill="#8b5cf6" opacity="0.16" />
-              <circle cx={x} cy={y} r="4.5" fill="#1e3a5f" />
-              {showPointLabels && <text x={x} y={y - 15} textAnchor="middle" fill="#475569" fontSize="13" fontWeight="800">{name}</text>}
+              <circle cx={x} cy={y} r="3" fill="#000000" />
+              {showPointLabels && <text x={x} y={y - 15} textAnchor="middle" fill="#000000" fontSize="14" fontWeight="600" fontFamily='"KaTeX_Main", "Times New Roman", serif'>{name}</text>}
             </g>
           );
         })}
@@ -623,7 +624,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
           return (
             <g key={`label-${idx}`} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'freeLabel', index: idx }); }} style={{ cursor: 'grab' }}>
               <circle cx={x} cy={y} r="11" fill="#0ea5e9" opacity="0.08" />
-              <text x={x} y={y + 5} textAnchor="middle" fill={label.color || '#0369a1'} fontSize={label.fontSize || 15} fontStyle={label.italic === false ? 'normal' : 'italic'} fontWeight="800">{label.text}</text>
+              <text x={x} y={y + 5} textAnchor="middle" fill="#000000" fontSize={label.fontSize || 15} fontStyle={label.italic === false ? 'normal' : 'italic'} fontFamily='"KaTeX_Main", "Times New Roman", serif'>{label.text}</text>
             </g>
           );
         })}
