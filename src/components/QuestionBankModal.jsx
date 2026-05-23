@@ -637,7 +637,10 @@ const GeometryEditor = ({ graphData, onChange }) => {
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <button type="button" onClick={() => updateGeometry({ ...geometry, angles: [...(geometry.angles || []), { at: pointNames[0] || 'A', label: 'x' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add angle</button>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button type="button" onClick={() => updateGeometry({ ...geometry, angles: [...(geometry.angles || []), { at: pointNames[0] || 'A', label: 'x' }] })} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add angle</button>
+          <button type="button" onClick={() => updateGeometry({ ...geometry, angles: [...(geometry.angles || []), { at: pointNames[0] || 'A', right: true }] })} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add right angle</button>
+        </div>
         {(geometry.angles || []).map((angle, idx) => (
           <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr auto auto', gap: '8px', alignItems: 'center' }}>
             <select value={angle.at} onChange={(e) => updateAngle(idx, { at: e.target.value })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>

@@ -16,7 +16,6 @@ import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
 import SecretNoteView from './challenge/SecretNoteView';
 import {
-  getSelection, setSelection,
   getStats, getTopicAnalysis,
   startRound, finishRound,
   ROUND_SIZE_CONST, EXAM_PREP_NOTE_KIND,
@@ -32,23 +31,22 @@ const flattenChapters = (yearKey) => {
 
 const allYearKeys = Object.keys(CURRICULUM_DATA);
 
-// ── Selection screen ────────────────────────────────────────────────────
-const SelectionPanel = ({ uid, selection, onChange, onStart, hasPool }) => {
-  const [activeYear, setActiveYear] = useState(selection.years[0] || 'Year 9');
-  const yearChapters = flattenChapters(activeYear);
-
-  const toggleYear = (y) => {
-    const next = selection.years.includes(y)
-      ? selection.years.filter((v) => v !== y)
-      : [...selection.years, y];
-    onChange({ ...selection, years: next });
-  };
-  const toggleChapter = (chId) => {
-    const next = selection.chapters.includes(chId)
-      ? selection.chapters.filter((v) => v !== chId)
-      : [...selection.chapters, chId];
-    onChange({ ...selection, chapters: next });
-  };
+// ── Student-side "ready to start" card ─────────────────────────────────
+// Topic selection is the teacher's job (set in Student Detail → Challenge
+// tab). The student just sees what's been chosen and presses Start.
+const ChosenTopicsCard = ({ selection, onStart, loading }) => {
+  // Flatten all selected chapters to their {id, title} pairs so we can
+  // render them as chips for the student to see what's being tested.
+  const allChapters = useMemo(() => {
+    const list = [];
+    allYearKeys.forEach((y) => {
+      flattenChapters(y).forEach((ch) => { list.push({ ...ch, year: y }); });
+    });
+    return list;
+  }, []);
+  const selectedChips = selection.chapters
+    .map((id) => allChapters.find((c) => c.id === id))
+    .filter(Boolean);
 
   return (
     <div className="app-panel" style={{ padding: '28px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -57,72 +55,39 @@ const SelectionPanel = ({ uid, selection, onChange, onStart, hasPool }) => {
           <GraduationCap size={22} />
         </div>
         <div>
-          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b' }}>Exam Prep — Choose Topics</h3>
+          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b' }}>Ready when you are</h3>
           <p style={{ margin: '4px 0 0', color: '#64748b', fontSize: '0.9rem', fontWeight: 600 }}>
-            Pick the year(s) and chapters you're being tested on. {ROUND_SIZE_CONST} random questions per round.
+            {ROUND_SIZE_CONST} random questions from the topics your teacher set below.
           </p>
         </div>
       </div>
 
-      <div>
-        <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Year</div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-          {allYearKeys.map((y) => {
-            const on = selection.years.includes(y);
-            return (
-              <button
-                key={y}
-                onClick={() => { toggleYear(y); setActiveYear(y); }}
-                style={{ padding: '8px 14px', borderRadius: '999px', border: `1px solid ${on ? '#7c3aed' : '#e2e8f0'}`, background: on ? '#ede9fe' : '#fff', color: on ? '#5b21b6' : '#475569', fontWeight: 800, cursor: 'pointer', fontSize: '0.85rem' }}
-              >
-                {y}
-              </button>
-            );
-          })}
+      {selectedChips.length === 0 ? (
+        <div style={{ padding: '20px', background: '#fffbeb', border: '1px dashed #fcd34d', borderRadius: '14px', color: '#92400e', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
+          Your teacher hasn't picked any exam topics yet. Ask them to set chapters in your profile.
         </div>
-      </div>
-
-      <div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-          <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Chapters in {activeYear}</div>
-          <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontWeight: 700 }}>
-            {selection.chapters.length} selected
+      ) : (
+        <div>
+          <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
+            {selectedChips.length} {selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            {selectedChips.map((ch) => (
+              <span key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '999px', background: '#faf5ff', border: '1px solid #ddd6fe', color: '#5b21b6', fontWeight: 800, fontSize: '0.8rem' }}>
+                {ch.year} · {ch.title}
+              </span>
+            ))}
           </div>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '10px' }}>
-          {yearChapters.length === 0 ? (
-            <div style={{ gridColumn: '1 / -1', padding: '20px', background: '#f8fafc', borderRadius: '12px', color: '#94a3b8', fontWeight: 700, textAlign: 'center' }}>
-              No chapters defined for this year yet.
-            </div>
-          ) : yearChapters.map((ch) => {
-            const on = selection.chapters.includes(ch.id);
-            return (
-              <label
-                key={ch.id}
-                style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '12px 14px', borderRadius: '14px', border: `1.5px solid ${on ? '#a78bfa' : '#e2e8f0'}`, background: on ? '#faf5ff' : '#fff', cursor: 'pointer', userSelect: 'none' }}
-              >
-                <input
-                  type="checkbox"
-                  checked={on}
-                  onChange={() => toggleChapter(ch.id)}
-                  style={{ width: '18px', height: '18px', accentColor: '#7c3aed', cursor: 'pointer' }}
-                />
-                <span style={{ fontWeight: 700, color: on ? '#5b21b6' : '#334155', fontSize: '0.9rem', lineHeight: 1.3 }}>
-                  {ch.title}
-                </span>
-              </label>
-            );
-          })}
-        </div>
-      </div>
+      )}
 
       <button
         onClick={onStart}
-        disabled={selection.chapters.length === 0}
+        disabled={selectedChips.length === 0 || loading}
         className="app-button app-button--primary"
-        style={{ padding: '18px', borderRadius: '20px', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px', background: selection.chapters.length === 0 ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: selection.chapters.length === 0 ? 'not-allowed' : 'pointer' }}
+        style={{ padding: '18px', borderRadius: '20px', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px', background: (selectedChips.length === 0 || loading) ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: (selectedChips.length === 0 || loading) ? 'not-allowed' : 'pointer' }}
       >
-        <Play size={18} /> {hasPool ? 'Start round' : 'Load pool & start'}
+        <Play size={18} /> {loading ? 'Loading questions…' : 'Start round'}
       </button>
     </div>
   );
@@ -416,7 +381,13 @@ const ExamPrep = ({ profile }) => {
   const uid = user?.uid;
   const enabled = profile?.examPrepEnabled === true;
 
-  const [selection, setSelectionState] = useState(() => uid ? getSelection(uid) : { years: [], chapters: [] });
+  // Chapter selection is teacher-controlled: it lives on the student doc
+  // (profile.examPrepSelection). The student no longer picks topics — they
+  // just see what the teacher set and hit Start.
+  const selection = useMemo(() => ({
+    years: Array.isArray(profile?.examPrepSelection?.years) ? profile.examPrepSelection.years : [],
+    chapters: Array.isArray(profile?.examPrepSelection?.chapters) ? profile.examPrepSelection.chapters : [],
+  }), [profile?.examPrepSelection]);
   const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'secretNote'
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -431,7 +402,6 @@ const ExamPrep = ({ profile }) => {
 
   useEffect(() => {
     if (!uid) return;
-    setSelectionState(getSelection(uid));
     setAnalysis(getTopicAnalysis(uid));
     setStats(getStats(uid));
     setNoteCount(getNoteCount(EXAM_PREP_NOTE_KIND, uid));
@@ -487,11 +457,6 @@ const ExamPrep = ({ profile }) => {
       </div>
     );
   }
-
-  const handleSelectionChange = (next) => {
-    setSelectionState(next);
-    if (uid) setSelection(uid, next);
-  };
 
   const handleStart = async () => {
     if (!uid) return;
@@ -571,7 +536,7 @@ const ExamPrep = ({ profile }) => {
               </button>
             )}
 
-            <SelectionPanel uid={uid} selection={selection} onChange={handleSelectionChange} onStart={handleStart} hasPool={false} />
+            <ChosenTopicsCard selection={selection} onStart={handleStart} loading={loading} />
             <TopicAnalysisCard analysis={analysis} />
             {loading && <div style={{ textAlign: 'center', color: '#7c3aed', fontWeight: 800 }}>Loading questions…</div>}
           </>

@@ -124,6 +124,7 @@ const curriculumSyncFields = [
   "calcQuestionCount",
   "showHscGraph",
   "examPrepEnabled",
+  "examPrepSelection",
 ];
 
 const pickDefinedCurriculumFields = (data = {}) =>

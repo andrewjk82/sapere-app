@@ -1,8 +1,18 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { Sparkles, Trophy } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { Sparkles, Trophy, Target } from "lucide-react";
 import { db } from "../../firebase/config";
 import { doc, onSnapshot } from "firebase/firestore";
+import { CURRICULUM_DATA } from "../../constants/curriculumData";
+
+// Flatten Year 11/12 (which are split by course) into a flat chapter list.
+const flattenChapters = (yearKey) => {
+  const data = CURRICULUM_DATA[yearKey];
+  if (!data) return [];
+  if (Array.isArray(data)) return data;
+  return Object.values(data).flat();
+};
+const allYearKeys = Object.keys(CURRICULUM_DATA);
 
 /**
  * Teacher-side Exam Prep panel.
@@ -16,6 +26,35 @@ import { doc, onSnapshot } from "firebase/firestore";
 export default function ExamPrepPanel({ styles, student, studentId, onUpdateSetting }) {
   const enabled = student?.examPrepEnabled === true;
   const [summary, setSummary] = useState(null);
+
+  // Teacher-controlled selection. Stored on the student doc so the student
+  // app picks it up automatically; falls back to an empty selection.
+  const selection = useMemo(() => ({
+    years: Array.isArray(student?.examPrepSelection?.years) ? student.examPrepSelection.years : [],
+    chapters: Array.isArray(student?.examPrepSelection?.chapters) ? student.examPrepSelection.chapters : [],
+  }), [student?.examPrepSelection]);
+
+  const [activeYear, setActiveYear] = useState(selection.years[0] || student?.assignedYear || "Year 9");
+  const yearChapters = flattenChapters(activeYear);
+
+  const writeSelection = (next) => {
+    onUpdateSetting("examPrepSelection", {
+      years: Array.isArray(next?.years) ? next.years : [],
+      chapters: Array.isArray(next?.chapters) ? next.chapters : [],
+    });
+  };
+  const toggleYear = (y) => {
+    const years = selection.years.includes(y)
+      ? selection.years.filter((v) => v !== y)
+      : [...selection.years, y];
+    writeSelection({ ...selection, years });
+  };
+  const toggleChapter = (chId) => {
+    const chapters = selection.chapters.includes(chId)
+      ? selection.chapters.filter((v) => v !== chId)
+      : [...selection.chapters, chId];
+    writeSelection({ ...selection, chapters });
+  };
 
   useEffect(() => {
     if (!studentId || !enabled) { setSummary(null); return undefined; }
