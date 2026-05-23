@@ -10,7 +10,8 @@ import {
   Trophy,
   Inbox,
   BookMarked,
-  Bell
+  Bell,
+  GraduationCap
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
@@ -99,6 +100,9 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} disabled={isLocked} />
         {!isAdmin && (
           <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
+        )}
+        {!isAdmin && profile?.examPrepEnabled === true && (
+          <SidebarItem icon={GraduationCap} label="Exam Prep" active={activeTab === 'ExamPrep'} onClick={() => setActiveTab('ExamPrep')} disabled={isLocked} />
         )}
         {isAdmin && (
           <SidebarItem icon={Inbox} label="Reports & Review" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount + gradingCount} />

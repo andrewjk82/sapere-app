@@ -247,6 +247,55 @@ export default function EditStudentModal({
               />
             </div>
           </div>
+          {/* Exam Prep toggle — opt this student into the Exam Prep page. */}
+          <div
+            onClick={() => setEditForm({ ...editForm, examPrepEnabled: !editForm.examPrepEnabled })}
+            style={{
+              gridColumn: "1 / -1",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "16px",
+              padding: "18px",
+              borderRadius: "18px",
+              background: editForm.examPrepEnabled ? "#f5f3ff" : "#f8fafc",
+              border: `1.5px solid ${editForm.examPrepEnabled ? "#c4b5fd" : "#e2e8f0"}`,
+              cursor: "pointer",
+            }}
+          >
+            <div>
+              <div style={{ fontWeight: 900, color: "#1e1b4b" }}>
+                Enable Exam Prep for this student
+              </div>
+              <div style={{ marginTop: "4px", fontSize: "0.8rem", color: "#64748b", fontWeight: 700 }}>
+                Adds the Exam Prep tab to the student app. 15 random questions per round with cumulative topic analysis. No daily limit.
+              </div>
+            </div>
+            <div
+              style={{
+                width: "48px",
+                height: "28px",
+                borderRadius: "999px",
+                background: editForm.examPrepEnabled ? "#7c3aed" : "#cbd5e1",
+                position: "relative",
+                flexShrink: 0,
+                transition: "all 0.2s",
+              }}
+            >
+              <motion.div
+                animate={{ x: editForm.examPrepEnabled ? 22 : 4 }}
+                style={{
+                  width: "20px",
+                  height: "20px",
+                  borderRadius: "50%",
+                  background: "white",
+                  position: "absolute",
+                  top: "4px",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.16)",
+                }}
+              />
+            </div>
+          </div>
           <div>
             <label
               style={{

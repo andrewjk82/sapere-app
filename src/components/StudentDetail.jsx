@@ -122,6 +122,7 @@ const curriculumSyncFields = [
   "calculationEnabled",
   "calcQuestionCount",
   "showHscGraph",
+  "examPrepEnabled",
 ];
 
 const pickDefinedCurriculumFields = (data = {}) =>
@@ -310,6 +311,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     dailyQuestionCount: 10,
     calculationEnabled: true,
     showHscGraph: false,
+    examPrepEnabled: false,
   });
 
   const styles = {
@@ -402,6 +404,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         dailyQuestionCount: data.dailyQuestionCount || 10,
         calculationEnabled: data.calculationEnabled !== false,
         showHscGraph: data.showHscGraph === true,
+        examPrepEnabled: data.examPrepEnabled === true,
       });
       setLoading(false);
     };

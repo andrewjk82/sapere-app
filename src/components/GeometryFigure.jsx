@@ -206,7 +206,11 @@ const GeometryFigure = ({
   names.forEach((n) => {
     const [vx, vy] = P(n);
     if (showPointLabels !== false) {
-      const [dx, dy] = norm(vx - cx, vy - cy);   // outward
+      let [dx, dy] = norm(vx - cx, vy - cy);   // outward
+      if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
+        dx = 0;
+        dy = -1;
+      }
       els.push(
         <text
           key={`v${key++}`}

@@ -143,7 +143,11 @@ export const geometryToSvgMarkup = ({
   names.forEach((name) => {
     const [vx, vy] = P(name);
     if (showPointLabels !== false) {
-      const [dx, dy] = norm(vx - cx, vy - cy);
+      let [dx, dy] = norm(vx - cx, vy - cy);
+      if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
+        dx = 0;
+        dy = -1;
+      }
       els.push(svgText(`x="${vx + dx * 16}" y="${vy + dy * 16 + 5}" text-anchor="middle" fill="#475569" font-size="14" font-style="italic" font-weight="600"`, name));
     }
     els.push(`<circle cx="${vx}" cy="${vy}" r="2.6" fill="#1e3a5f" />`);
