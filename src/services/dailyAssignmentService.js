@@ -207,6 +207,7 @@ const slimQuestion = (data) => ({
   )),
   answer: data.answer,
   solution: data.solution || "",
+  solutionSteps: Array.isArray(data.solutionSteps) ? data.solutionSteps : [],
   hint: data.hint || "",
   timeLimit: data.timeLimit || 60,
   difficulty: data.difficulty || "manual",
