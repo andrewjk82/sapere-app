@@ -1348,13 +1348,14 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-3',
       title: 'Chapter 3: Review of factors and indices',
-      modules: 5,
+      modules: 6,
       topics: [
         { id: 'y8-3a', code: '3A', title: 'Factors, prime and composite numbers, multiples' },
         { id: 'y8-3b', code: '3B', title: 'Indices and the index laws' },
         { id: 'y8-3c', code: '3C', title: 'Order of operations' },
         { id: 'y8-3d', code: '3D', title: 'Divisibility tests' },
-        { id: 'y8-3e', code: '3E', title: 'Prime factorisation and its applications' }
+        { id: 'y8-3e', code: '3E', title: 'Prime factorisation and its applications' },
+        { id: 'y8-3f', code: '3F', title: 'Review of factors and indices' }
       ]
     },
     {
