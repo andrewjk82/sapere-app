@@ -25,7 +25,7 @@ const GeometryFigure = ({
   freeLabels = [],
   showPointLabels = true,
   width = 300,
-  fontSize = 15,
+  fontSize = 14,
   style,
 }) => {
   const names = Object.keys(points);
@@ -73,7 +73,7 @@ const GeometryFigure = ({
       <line
         key={`s${key++}`}
         x1={ax} y1={ay} x2={bx} y2={by}
-        stroke="#000000" strokeWidth="1.5"
+        stroke="#000000" strokeWidth="1.2"
         strokeDasharray={seg.dashed ? '6 4' : undefined}
         strokeLinecap="round"
       />
@@ -96,7 +96,7 @@ const GeometryFigure = ({
             key={`t${key++}`}
             x1={tx + px * 6} y1={ty + py * 6}
             x2={tx - px * 6} y2={ty - py * 6}
-            stroke="#000000" strokeWidth="1.5"
+            stroke="#000000" strokeWidth="1.2"
           />
         );
       }
@@ -117,7 +117,7 @@ const GeometryFigure = ({
           <polyline
             key={`m${key++}`}
             points={`${bx1},${by1} ${tipx},${tipy} ${bx2},${by2}`}
-            fill="none" stroke="#000000" strokeWidth="1.5"
+            fill="none" stroke="#000000" strokeWidth="1.2"
           />
         );
       }
@@ -135,7 +135,7 @@ const GeometryFigure = ({
         <polyline
           key={`a${key++}`}
           points={`${a1x},${a1y} ${hx},${hy} ${a2x},${a2y}`}
-          fill="none" stroke="#000000" strokeWidth="1.5"
+          fill="none" stroke="#000000" strokeWidth="1.2"
         />
       );
     }
@@ -171,7 +171,7 @@ const GeometryFigure = ({
         <polyline
           key={`ar${key++}`}
           points={`${bx1},${by1} ${bx2},${by2} ${bx3},${by3}`}
-          fill="none" stroke="#000000" strokeWidth="1.2"
+          fill="none" stroke="#000000" strokeWidth="1.0"
         />
       );
     }
@@ -182,7 +182,7 @@ const GeometryFigure = ({
           key={`al${key++}`}
           x={rx} y={ry + 5}
           textAnchor="middle" fill="#000000"
-          fontSize={ang.fontSize || fontSize} fontStyle="italic"
+          fontSize={fontSize} fontStyle="italic"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'
         >
           {ang.label}
@@ -208,7 +208,7 @@ const GeometryFigure = ({
       <text
         key={`sl${key++}`}
         x={mx + px * 16} y={my + py * 16 + 5}
-        textAnchor="middle" fill="#000000" fontSize={sl.fontSize || fontSize}
+        textAnchor="middle" fill="#000000" fontSize={fontSize}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >
         {sl.text}
@@ -225,8 +225,8 @@ const GeometryFigure = ({
         key={`fl${key++}`}
         x={x} y={y}
         textAnchor="middle"
-        fill={label.color === '#0369a1' ? '#000000' : (label.color || '#000000')}
-        fontSize={label.fontSize || fontSize}
+        fill="#000000"
+        fontSize={fontSize}
         fontStyle={label.italic === false ? 'normal' : 'italic'}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >
@@ -257,7 +257,7 @@ const GeometryFigure = ({
       );
     }
     els.push(
-      <circle key={`vd${key++}`} cx={vx} cy={vy} r="1.5" fill="#000000" />
+      <circle key={`vd${key++}`} cx={vx} cy={vy} r="1.0" fill="#000000" />
     );
   });
 
