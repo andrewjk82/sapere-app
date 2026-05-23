@@ -376,6 +376,18 @@ function App() {
   
   // Scroll tracking for mobile capsule
   const [isVisible, setIsVisible] = useState(true);
+  // Desktop sidebar already exposes the same quick actions, so the floating
+  // mobile capsule is only useful below the layout breakpoint. We render it
+  // conditionally rather than rely on CSS, because the capsule's JSX sets
+  // `display: 'flex'` inline which beats stylesheet `display: none`.
+  const [isMobileViewport, setIsMobileViewport] = useState(() =>
+    typeof window === 'undefined' ? false : window.innerWidth < 921
+  );
+  useEffect(() => {
+    const onResize = () => setIsMobileViewport(window.innerWidth < 921);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -1031,9 +1043,9 @@ function App() {
         students={students}
       />
 
-      {createPortal(
+      {isMobileViewport && createPortal(
         <>
-          <motion.div 
+          <motion.div
             className="mobile-user-capsule"
             initial={{ y: 0, opacity: 1 }}
             animate={{ 
