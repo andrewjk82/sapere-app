@@ -222,13 +222,23 @@ const StudentDetail = ({ studentId, onBack }) => {
   const touchStudentListMeta = () => {
     touchStudentsSyncMeta(student?.tutorId, true).catch(() => {});
     if (student?.tutorId) touchStudentsSyncMeta(student.tutorId, false).catch(() => {});
-    if (activeStudentCollection === "users" && activeStudentId) {
-      setDoc(doc(db, "sync_meta", getChallengeBootMetaId(activeStudentId)), {
+    // Bump the registered user's sync_meta/{bootDocId} doc so the student
+    // app's onSnapshot listener picks up the teacher's change and refreshes
+    // its cached studentProfile. Without this the student keeps using a
+    // stale local profile (e.g. old dailyQuestionCount, old examPrepEnabled).
+    const bumpTargets = new Set();
+    if (activeStudentCollection === "users" && activeStudentId) bumpTargets.add(activeStudentId);
+    // For manual student records that are linked to a registered account,
+    // also bump the registered user's doc — that's the one the student app
+    // actually subscribes to.
+    if (challengeResultsUid) bumpTargets.add(challengeResultsUid);
+    bumpTargets.forEach((uid) => {
+      setDoc(doc(db, "sync_meta", getChallengeBootMetaId(uid)), {
         version: Date.now(),
         profileVersion: Date.now(),
         updatedAt: serverTimestamp(),
       }, { merge: true }).catch(() => {});
-    }
+    });
   };
 
   const handleUpdateDailyConfig = (newConfig) => {
