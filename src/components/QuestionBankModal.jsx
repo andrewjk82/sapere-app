@@ -622,7 +622,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
           return (
             <g key={name} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'point', name }); }} style={{ cursor: 'grab' }}>
               <circle cx={x} cy={y} r="9" fill="#8b5cf6" opacity="0.16" />
-              <circle cx={x} cy={y} r="3" fill="#000000" />
+              <circle cx={x} cy={y} r="1.5" fill="#000000" />
               {showPointLabels && <text x={x} y={y - 15} textAnchor="middle" fill="#000000" fontSize="14" fontWeight="600" fontFamily='"KaTeX_Main", "Times New Roman", serif'>{name}</text>}
             </g>
           );

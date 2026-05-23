@@ -257,7 +257,7 @@ const GeometryFigure = ({
       );
     }
     els.push(
-      <circle key={`vd${key++}`} cx={vx} cy={vy} r="2.6" fill="#000000" />
+      <circle key={`vd${key++}`} cx={vx} cy={vy} r="1.5" fill="#000000" />
     );
   });
 
