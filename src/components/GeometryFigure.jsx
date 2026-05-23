@@ -271,7 +271,7 @@ const GeometryFigure = ({
       }}
     >
       <svg width={drawW} height={drawH} viewBox={`0 0 ${drawW} ${drawH}`}
-        style={{ overflow: 'visible' }}>
+        style={{ overflow: 'visible', width: drawW, height: drawH, maxWidth: '100%' }}>
         {els}
       </svg>
     </div>

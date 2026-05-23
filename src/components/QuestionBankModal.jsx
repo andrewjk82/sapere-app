@@ -521,7 +521,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
         onPointerUp={() => setActiveDrag(null)}
         onPointerCancel={() => setActiveDrag(null)}
         onPointerLeave={() => setActiveDrag(null)}
-        style={{ width: '100%', maxWidth: Math.max(W, 260), alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none', overflow: 'visible' }}
+        style={{ width: W, height: H, maxWidth: '100%', alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none', overflow: 'visible' }}
       >
         {(geometry.segments || []).map((seg, idx) => {
           if (!geometry.points[seg.from] || !geometry.points[seg.to]) return null;
