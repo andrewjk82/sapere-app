@@ -463,59 +463,56 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
         </div>
       </div>
 
-      {/* Two-column: topics on the left, Secret Note on the right */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(220px, 1fr)', gap: '16px' }}>
-        {/* TOPICS */}
-        <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-            <Target size={16} color="#7c3aed" />
-            <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Your exam topics</h3>
-          </div>
-          {!hasTopics ? (
-            <div style={{ padding: '20px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
-              No topics yet — ask your teacher.
-            </div>
-          ) : (
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-              {selectedChips.map((ch) => (
-                <div key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '14px', background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', border: '1px solid #ddd6fe', fontWeight: 700, fontSize: '0.85rem' }}>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#5b21b6', background: '#fff', padding: '2px 8px', borderRadius: '999px', letterSpacing: '0.05em' }}>
-                    {ch.year.replace('Year ', 'Y')}
-                  </span>
-                  <span style={{ color: '#312e81' }}>{ch.title}</span>
-                </div>
-              ))}
-            </div>
-          )}
+      {/* SECRET NOTE — full-width bar above topics */}
+      <button
+        onClick={onOpenSecretNote}
+        disabled={noteCount === 0}
+        style={{
+          width: '100%',
+          padding: '18px 24px', borderRadius: '22px', textAlign: 'left',
+          cursor: noteCount === 0 ? 'default' : 'pointer',
+          border: '1px solid ' + (noteCount > 0 ? '#fde68a' : '#e2e8f0'),
+          background: noteCount > 0 ? 'linear-gradient(135deg, #fffbeb, #fef3c7)' : '#fff',
+          display: 'flex', alignItems: 'center', gap: '14px',
+          transition: 'transform 0.15s, box-shadow 0.15s',
+        }}
+        onMouseEnter={(e) => { if (noteCount > 0) { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 28px rgba(0,0,0,0.06)'; } }}
+        onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
+      >
+        <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: noteCount > 0 ? '#fcd34d' : '#f1f5f9', display: 'grid', placeItems: 'center', color: noteCount > 0 ? '#78350f' : '#94a3b8', flexShrink: 0 }}>
+          <BookmarkPlus size={20} />
         </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontWeight: 900, color: noteCount > 0 ? '#78350f' : '#475569', fontSize: '0.95rem' }}>Exam Prep Secret Note</div>
+          <div style={{ fontSize: '0.8rem', color: noteCount > 0 ? '#92400e' : '#94a3b8', fontWeight: 700, marginTop: '2px' }}>
+            {noteCount === 0 ? 'Mistakes you make will appear here for review.' : `${noteCount} ${noteCount === 1 ? 'note' : 'notes'} · ${dueCount} due now`}
+          </div>
+        </div>
+        {noteCount > 0 && <ChevronRight size={18} color="#92400e" />}
+      </button>
 
-        {/* SECRET NOTE — compact side card */}
-        <button
-          onClick={onOpenSecretNote}
-          style={{
-            padding: '22px 20px', borderRadius: '22px', textAlign: 'left', cursor: 'pointer',
-            border: '1px solid ' + (noteCount > 0 ? '#fde68a' : '#e2e8f0'),
-            background: noteCount > 0 ? 'linear-gradient(135deg, #fffbeb, #fef3c7)' : '#fff',
-            display: 'flex', flexDirection: 'column', gap: '10px',
-            transition: 'transform 0.15s, box-shadow 0.15s',
-          }}
-          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 28px rgba(0,0,0,0.06)'; }}
-          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
-          disabled={noteCount === 0}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: noteCount > 0 ? '#fcd34d' : '#f1f5f9', display: 'grid', placeItems: 'center', color: noteCount > 0 ? '#78350f' : '#94a3b8' }}>
-              <BookmarkPlus size={18} />
-            </div>
-            {noteCount > 0 && <ChevronRight size={18} color="#92400e" />}
+      {/* TOPICS — full width below Secret Note */}
+      <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+          <Target size={16} color="#7c3aed" />
+          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Your exam topics</h3>
+        </div>
+        {!hasTopics ? (
+          <div style={{ padding: '20px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
+            No topics yet — ask your teacher.
           </div>
-          <div>
-            <div style={{ fontWeight: 900, color: noteCount > 0 ? '#78350f' : '#475569', fontSize: '0.95rem' }}>Secret Note</div>
-            <div style={{ fontSize: '0.8rem', color: noteCount > 0 ? '#92400e' : '#94a3b8', fontWeight: 700, marginTop: '2px' }}>
-              {noteCount === 0 ? 'No notes yet' : `${noteCount} ${noteCount === 1 ? 'note' : 'notes'} · ${dueCount} due`}
-            </div>
+        ) : (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            {selectedChips.map((ch) => (
+              <div key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '14px', background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', border: '1px solid #ddd6fe', fontWeight: 700, fontSize: '0.85rem' }}>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#5b21b6', background: '#fff', padding: '2px 8px', borderRadius: '999px', letterSpacing: '0.05em' }}>
+                  {ch.year.replace('Year ', 'Y')}
+                </span>
+                <span style={{ color: '#312e81' }}>{ch.title}</span>
+              </div>
+            ))}
           </div>
-        </button>
+        )}
       </div>
 
       {/* Where to focus — visual progress chart */}
