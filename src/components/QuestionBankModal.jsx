@@ -76,6 +76,33 @@ const createDefaultGeometryGraph = () => withGeometrySnapshot({
   },
 });
 
+const evaluateJsxGraphNumber = (expression, variables = {}) => {
+  const substituted = String(expression || '').replace(
+    /\b[A-Za-z_$][\w$]*\b/g,
+    (name) => (Object.prototype.hasOwnProperty.call(variables, name) ? variables[name] : name)
+  );
+  if (!/^[\d+\-*/().\s]+$/.test(substituted)) return null;
+  try {
+    const value = Function(`"use strict"; return (${substituted});`)();
+    return Number.isFinite(value) ? Number(value) : null;
+  } catch {
+    return null;
+  }
+};
+
+const getLineIntersection = (a1, a2, b1, b2) => {
+  const x1 = a1[0], y1 = a1[1];
+  const x2 = a2[0], y2 = a2[1];
+  const x3 = b1[0], y3 = b1[1];
+  const x4 = b2[0], y4 = b2[1];
+  const denominator = ((x1 - x2) * (y3 - y4)) - ((y1 - y2) * (x3 - x4));
+  if (Math.abs(denominator) < 0.0001) return null;
+  return [
+    (((x1 * y2) - (y1 * x2)) * (x3 - x4) - (x1 - x2) * ((x3 * y4) - (y3 * x4))) / denominator,
+    (((x1 * y2) - (y1 * x2)) * (y3 - y4) - (y1 - y2) * ((x3 * y4) - (y3 * x4))) / denominator,
+  ];
+};
+
 const convertJsxGraphToGeometryGraph = (graphData) => {
   const jsxGraph = graphData?.jsxGraph;
   const script = String(jsxGraph?.script || '');
@@ -85,6 +112,8 @@ const convertJsxGraphToGeometryGraph = (graphData) => {
   const segments = [];
   const freeLabels = [];
   const coordNames = new Map();
+  const pointAliases = new Map();
+  const numericVars = {};
   let nextPointCode = 65;
 
   const getPointName = (x, y) => {
@@ -101,6 +130,75 @@ const convertJsxGraphToGeometryGraph = (graphData) => {
     coordNames.set(key, name);
     return name;
   };
+
+  const getAliasPointName = (alias) => pointAliases.get(alias);
+  const getAliasPoint = (alias) => points[getAliasPointName(alias)];
+  const addSegment = (from, to, patch = {}) => {
+    if (!from || !to) return;
+    const key = [from, to].sort().join(':');
+    if (segments.some((seg) => [seg.from, seg.to].sort().join(':') === key)) return;
+    segments.push({ from, to, ...patch });
+  };
+
+  script.replace(/\b(?:var|let|const)\s+([A-Za-z_$][\w$]*)\s*=\s*([^;\n]+)/g, (_, name, expression) => {
+    const value = evaluateJsxGraphNumber(expression, numericVars);
+    if (value !== null) numericVars[name] = value;
+    return '';
+  });
+
+  const pointRegex = /(?:\b(?:var|let|const)\s+([A-Za-z_$][\w$]*)\s*=\s*)?board\.create\(\s*['"]point['"]\s*,\s*\[\s*([^,\]]+)\s*,\s*([^\]]+)\s*\]/g;
+  [...script.matchAll(pointRegex)].forEach((match) => {
+    const [, alias, xExpression, yExpression] = match;
+    const x = evaluateJsxGraphNumber(xExpression, numericVars);
+    const y = evaluateJsxGraphNumber(yExpression, numericVars);
+    if (x === null || y === null) return;
+    const pointName = getPointName(x, y);
+    if (alias) pointAliases.set(alias, pointName);
+  });
+
+  const intersectionRegex = /(?:\b(?:var|let|const)\s+([A-Za-z_$][\w$]*)\s*=\s*)?board\.create\(\s*['"]intersection['"][\s\S]*?board\.create\(\s*['"]line['"]\s*,\s*\[\s*([A-Za-z_$][\w$]*)\s*,\s*([A-Za-z_$][\w$]*)\s*\][\s\S]*?board\.create\(\s*['"]line['"]\s*,\s*\[\s*([A-Za-z_$][\w$]*)\s*,\s*([A-Za-z_$][\w$]*)\s*\]/g;
+  [...script.matchAll(intersectionRegex)].forEach((match) => {
+    const [, alias, a, b, c, d] = match;
+    const intersection = getLineIntersection(getAliasPoint(a), getAliasPoint(b), getAliasPoint(c), getAliasPoint(d));
+    if (!intersection) return;
+    const pointName = getPointName(intersection[0], intersection[1]);
+    if (alias) pointAliases.set(alias, pointName);
+  });
+
+  const variableLineRegex = /board\.create\(\s*['"](line|segment|arrow)['"]\s*,\s*\[\s*([A-Za-z_$][\w$]*)\s*,\s*([A-Za-z_$][\w$]*)\s*\]/g;
+  [...script.matchAll(variableLineRegex)].forEach((match) => {
+    const [, type, fromAlias, toAlias] = match;
+    addSegment(getAliasPointName(fromAlias), getAliasPointName(toAlias), { arrow: type === 'arrow' || undefined });
+  });
+
+  const variablePolygonRegex = /board\.create\(\s*['"]polygon['"]\s*,\s*\[\s*([A-Za-z_$][\w$]*(?:\s*,\s*[A-Za-z_$][\w$]*){2,})\s*\]/g;
+  [...script.matchAll(variablePolygonRegex)].forEach((match) => {
+    const names = match[1].split(',').map((name) => getAliasPointName(name.trim())).filter(Boolean);
+    names.forEach((name, idx) => addSegment(name, names[(idx + 1) % names.length]));
+  });
+
+  const angleRegex = /board\.create\(\s*['"]angle['"]\s*,\s*\[\s*([A-Za-z_$][\w$]*)\s*,\s*([A-Za-z_$][\w$]*)\s*,\s*([A-Za-z_$][\w$]*)\s*\]\s*,\s*\{([^}]*)\}/g;
+  [...script.matchAll(angleRegex)].forEach((match) => {
+    const [, fromAlias, atAlias, toAlias, options] = match;
+    const label = options.match(/\b(?:name|label)\s*:\s*['"`]([^'"`]+)['"`]/)?.[1];
+    if (!label) return;
+    const at = getAliasPoint(atAlias);
+    const from = getAliasPoint(fromAlias);
+    const to = getAliasPoint(toAlias);
+    if (!at || !from || !to) return;
+    const v1 = [from[0] - at[0], from[1] - at[1]];
+    const v2 = [to[0] - at[0], to[1] - at[1]];
+    const l1 = Math.hypot(v1[0], v1[1]) || 1;
+    const l2 = Math.hypot(v2[0], v2[1]) || 1;
+    const direction = [(v1[0] / l1) + (v2[0] / l2), (v1[1] / l1) + (v2[1] / l2)];
+    const len = Math.hypot(direction[0], direction[1]) || 1;
+    freeLabels.push({
+      point: [at[0] + (direction[0] / len) * 0.7, at[1] + (direction[1] / len) * 0.7],
+      text: label,
+      color: '#0369a1',
+      fontSize: 15,
+    });
+  });
 
   script.split('\n').forEach((rawLine) => {
     const line = rawLine.trim();
@@ -688,6 +786,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     if (q) {
       let initialAnswerIdx = null;
       let initialAnswer = q.answer || '';
+      const initialGraphData = q.graphData?.geometry
+        ? withGeometrySnapshot(q.graphData)
+        : convertJsxGraphToGeometryGraph(q.graphData) || q.graphData;
       
       if (q.type === 'multiple_choice') {
         if (['0', '1', '2', '3'].includes(q.answer)) {
@@ -727,7 +828,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         blanks: Array.isArray(q.blanks)
           ? q.blanks.map((b) => ({ label: b.label || '', answer: b.answer || '' }))
           : [],
-        graphData: q.graphData ? JSON.stringify(q.graphData, null, 2) : ''
+        graphData: initialGraphData ? stringifyGraphData(initialGraphData) : ''
       });
       setEditingQuestion(q.id);
     } else {
@@ -912,6 +1013,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const hasEditableGeometry = Boolean(currentGraphData?.geometry);
   const hasRenderOnlyDiagram = hasGraphData && !hasEditableGeometry;
   const canConvertJsxGraph = Boolean(currentGraphData?.jsxGraph?.script);
+  const graphDataInvalid = Boolean(formData.graphData?.trim() && !currentGraphData);
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
@@ -1059,45 +1161,53 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
               <div>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
-                  <BarChart size={14} /> Graph Data (JSON - Optional)
+                  <BarChart size={14} /> Diagram tools
                 </label>
-                <textarea 
-                  rows={4} 
-                  value={formData.graphData} 
-                  onChange={e => setFormData({...formData, graphData: e.target.value})} 
-                  style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }} 
-                  placeholder='{ "equations": ["y = 2x + 1"], "config": { "xRange": [-5, 5], "yRange": [-5, 5] } }' 
-                />
-                <div style={{ display: 'flex', gap: '8px', marginTop: '10px', flexWrap: 'wrap' }}>
-                  {!hasGraphData && (
-                    <button
-                      type="button"
-                      onClick={() => setFormData(prev => ({
-                        ...prev,
-                        graphData: stringifyGraphData(createDefaultGeometryGraph()),
-                      }))}
-                      style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}
-                    >
-                      Create editable geometry
-                    </button>
+                <div style={{ padding: '14px', borderRadius: '16px', border: '1px solid #e2e8f0', background: '#f8fafc' }}>
+                  {hasEditableGeometry ? (
+                    <div style={{ color: '#166534', fontSize: '0.82rem', fontWeight: 800, lineHeight: 1.45 }}>
+                      Editable diagram is ready. Use the geometry editor below to drag points and adjust lines or labels.
+                    </div>
+                  ) : hasRenderOnlyDiagram ? (
+                    <div style={{ color: '#92400e', fontSize: '0.82rem', fontWeight: 800, lineHeight: 1.45 }}>
+                      This diagram previews correctly, but it is still stored in a render-only format.
+                    </div>
+                  ) : graphDataInvalid ? (
+                    <div style={{ color: '#b91c1c', fontSize: '0.82rem', fontWeight: 800, lineHeight: 1.45 }}>
+                      Graph JSON is invalid. Open Advanced graph JSON to fix or clear it.
+                    </div>
+                  ) : (
+                    <div style={{ color: '#64748b', fontSize: '0.82rem', fontWeight: 800, lineHeight: 1.45 }}>
+                      No diagram data yet.
+                    </div>
                   )}
-                  {hasEditableGeometry && (
-                    <button
-                      type="button"
-                      onClick={() => setFormData(prev => ({
-                        ...prev,
-                        graphData: stringifyGraphData(withGeometrySnapshot(parseGraphData(prev.graphData))),
-                      }))}
-                      style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #bbf7d0', background: '#f0fdf4', color: '#15803d', fontWeight: 800, cursor: 'pointer' }}
-                    >
-                      Regenerate SVG snapshot
-                    </button>
-                  )}
-                </div>
-                {hasRenderOnlyDiagram && (
-                  <div style={{ marginTop: '10px', padding: '12px 14px', borderRadius: '12px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', fontSize: '0.82rem', fontWeight: 700, lineHeight: 1.45 }}>
-                    This diagram is stored as JSXGraph or another render-only format. It previews correctly. Convert it first to edit points, lines, and labels.
-                    {canConvertJsxGraph && (
+
+                  <div style={{ display: 'flex', gap: '8px', marginTop: '10px', flexWrap: 'wrap' }}>
+                    {!hasGraphData && !graphDataInvalid && (
+                      <button
+                        type="button"
+                        onClick={() => setFormData(prev => ({
+                          ...prev,
+                          graphData: stringifyGraphData(createDefaultGeometryGraph()),
+                        }))}
+                        style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}
+                      >
+                        Create editable geometry
+                      </button>
+                    )}
+                    {hasEditableGeometry && (
+                      <button
+                        type="button"
+                        onClick={() => setFormData(prev => ({
+                          ...prev,
+                          graphData: stringifyGraphData(withGeometrySnapshot(parseGraphData(prev.graphData))),
+                        }))}
+                        style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #bbf7d0', background: '#f0fdf4', color: '#15803d', fontWeight: 800, cursor: 'pointer' }}
+                      >
+                        Regenerate SVG snapshot
+                      </button>
+                    )}
+                    {hasRenderOnlyDiagram && canConvertJsxGraph && (
                       <button
                         type="button"
                         onClick={() => {
@@ -1111,13 +1221,26 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                             graphData: stringifyGraphData(converted),
                           }));
                         }}
-                        style={{ display: 'block', marginTop: '10px', padding: '8px 12px', borderRadius: '10px', border: '1px solid #f59e0b', background: '#fff', color: '#92400e', fontWeight: 800, cursor: 'pointer' }}
+                        style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #f59e0b', background: '#fff', color: '#92400e', fontWeight: 800, cursor: 'pointer' }}
                       >
-                        Convert current diagram to editable geometry
+                        Convert to editable geometry
                       </button>
                     )}
                   </div>
-                )}
+                </div>
+
+                <details style={{ marginTop: '10px' }}>
+                  <summary style={{ cursor: 'pointer', color: '#64748b', fontWeight: 800, fontSize: '0.78rem' }}>
+                    Advanced graph JSON
+                  </summary>
+                  <textarea
+                    rows={4}
+                    value={formData.graphData}
+                    onChange={e => setFormData({...formData, graphData: e.target.value})}
+                    style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: `1px solid ${graphDataInvalid ? '#fecaca' : '#e2e8f0'}`, outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: graphDataInvalid ? '#fff1f2' : '#f8fafc', resize: 'vertical' }}
+                    placeholder='{ "equations": ["y = 2x + 1"], "config": { "xRange": [-5, 5], "yRange": [-5, 5] } }'
+                  />
+                </details>
               </div>
 
               {hasEditableGeometry && (
