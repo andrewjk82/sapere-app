@@ -374,11 +374,29 @@ const ResultPanel = ({ result, onRestart, onExit, cumulativeAnalysis }) => (
   </div>
 );
 
+// Small viewport hook — re-renders on width breakpoints so the dashboard
+// can swap layouts (column counts, padding, stacking) responsively.
+const useViewport = () => {
+  const get = () => (typeof window === 'undefined' ? 1024 : window.innerWidth);
+  const [w, setW] = useState(get);
+  useEffect(() => {
+    const onResize = () => setW(get());
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+  return {
+    width: w,
+    isNarrow: w < 560,   // phones
+    isMid: w < 900,      // small tablets
+  };
+};
+
 // ── Setup dashboard ────────────────────────────────────────────────────
 // A single composed view that fills the page when stage === 'setup'. It
 // reads like a dashboard: hero (stats + CTA) on top, two-column row with
 // topics & secret-note side by side, and the topic analysis chart below.
 const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
+  const { isNarrow, isMid } = useViewport();
   const accuracy = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
   // Flatten the curriculum once so we can render the teacher-set chapter
   // chips with a year prefix.
@@ -398,8 +416,8 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
       <div
         style={{
           position: 'relative',
-          padding: '32px 32px 28px',
-          borderRadius: '32px',
+          padding: isNarrow ? '22px 20px 20px' : '32px 32px 28px',
+          borderRadius: isNarrow ? '24px' : '32px',
           color: '#1e1b4b',
           overflow: 'hidden',
           background: 'linear-gradient(135deg, #a78bfa 0%, #c4b5fd 60%, #ddd6fe 100%)',
@@ -418,19 +436,19 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
             </div>
             <div>
               <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5b21b6' }}>Exam Prep</div>
-              <h1 style={{ margin: '2px 0 0', fontSize: '1.8rem', fontWeight: 900, letterSpacing: '-0.01em', color: '#1e1b4b' }}>Time to practise</h1>
+              <h1 style={{ margin: '2px 0 0', fontSize: isNarrow ? '1.4rem' : '1.8rem', fontWeight: 900, letterSpacing: '-0.01em', color: '#1e1b4b' }}>Time to practise</h1>
             </div>
           </div>
 
-          {/* Row 2: stat tiles (glassy) */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
-            <GlassStat label="Sessions" value={stats.sessions} />
-            <GlassStat label="Accuracy" value={`${accuracy}%`} />
-            <GlassStat label="Attempted" value={stats.attempted} />
+          {/* Row 2: stat tiles (glassy) — 3 cols on tablets+, 3-compact on phones */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: isNarrow ? '6px' : '10px' }}>
+            <GlassStat label="Sessions" value={stats.sessions} compact={isNarrow} />
+            <GlassStat label="Accuracy" value={`${accuracy}%`} compact={isNarrow} />
+            <GlassStat label="Attempted" value={stats.attempted} compact={isNarrow} />
           </div>
 
-          {/* Row 3: CTA */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+          {/* Row 3: CTA — stacks on narrow; primary button stretches */}
+          <div style={{ display: 'flex', flexDirection: isNarrow ? 'column' : 'row', alignItems: isNarrow ? 'stretch' : 'center', gap: '12px', flexWrap: 'wrap' }}>
             <button
               onClick={onStart}
               disabled={!hasTopics || loading}
@@ -454,7 +472,7 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
               <Play size={18} /> {loading ? 'Loading…' : 'Start round'}
               <span style={{ fontSize: '0.8rem', fontWeight: 800, opacity: 0.65 }}>· 15 Qs</span>
             </button>
-            <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#5b21b6', lineHeight: 1.4 }}>
+            <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#5b21b6', lineHeight: 1.4, textAlign: isNarrow ? 'center' : 'left' }}>
               {hasTopics
                 ? `${selectedChips.length} ${selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher`
                 : 'Your teacher hasn\'t picked topics yet.'}
@@ -554,17 +572,17 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
   );
 };
 
-const GlassStat = ({ label, value }) => (
+const GlassStat = ({ label, value, compact }) => (
   <div style={{
     background: 'rgba(255,255,255,0.55)',
     backdropFilter: 'blur(6px)',
     border: '1px solid rgba(255,255,255,0.7)',
-    borderRadius: '16px',
-    padding: '12px 14px',
+    borderRadius: compact ? '12px' : '16px',
+    padding: compact ? '8px 8px' : '12px 14px',
     textAlign: 'center',
   }}>
-    <div style={{ fontSize: '0.65rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5b21b6' }}>{label}</div>
-    <div style={{ fontSize: '1.6rem', fontWeight: 900, marginTop: '2px', color: '#1e1b4b' }}>{value}</div>
+    <div style={{ fontSize: compact ? '0.6rem' : '0.65rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#5b21b6' }}>{label}</div>
+    <div style={{ fontSize: compact ? '1.2rem' : '1.6rem', fontWeight: 900, marginTop: '2px', color: '#1e1b4b' }}>{value}</div>
   </div>
 );
 
@@ -684,8 +702,8 @@ const ExamPrep = ({ profile }) => {
   };
 
   return (
-    <div className="app-page" style={{ padding: '24px 20px 80px' }}>
-      <div style={{ maxWidth: '780px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <div className="app-page" style={{ padding: 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px' }}>
+      <div style={{ maxWidth: 'min(1080px, 100%)', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {stage === 'setup' && (
           <SetupDashboard
             stats={stats}
