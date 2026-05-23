@@ -3,7 +3,7 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1a_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom horizontal lines are parallel, and the two slanted lines with double arrows are parallel. A vertical line is perpendicular to the bottom line. Find the value of $\\alpha$.",
+    "question": "In the diagram, the top and bottom horizontal lines are parallel, and the two slanted lines with double arrows are parallel. A vertical line is perpendicular to the bottom line. The transversal line $FC$ makes an angle of $130^\\circ$ with the top line ($\\angle EFC = 130^\\circ$). Find the value of $\\alpha$.",
     "a": "18",
     "solution": "1. The slanted lines with double arrows are parallel, so their corresponding angles with the bottom horizontal line are equal.\n2. The left slanted line makes an angle of $90^\\circ - 4\\alpha$ with the bottom line (since the vertical line is perpendicular to the bottom line, forming a right-angled triangle where the third angle is $90^\\circ - 4\\alpha$).\n3. The right slanted line makes an angle of $\\alpha$ with the bottom line.\n4. Since the two lines are parallel, their angles with the bottom line are equal:\n   $$90^\\circ - 4\\alpha = \\alpha$$\n   $$5\\alpha = 90^\\circ$$\n   $$\\alpha = 18^\\circ$$",
     "t": "Geometry challenge",
@@ -47,7 +47,7 @@ export const Y8_CH5I_QUESTIONS = [
         ],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.5, 3.6], "text": "130°" },
+          { "point": [2.8, 3.6], "text": "130°" },
           { "point": [3.6, 3.2], "text": "4α" },
           { "point": [5.2, 0.4], "text": "β" },
           { "point": [6.6, 0.3], "text": "α" }
@@ -59,7 +59,7 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1a_beta",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom horizontal lines are parallel, and the two slanted lines with double arrows are parallel. Find the value of $\\beta$.",
+    "question": "In the diagram, the top and bottom horizontal lines are parallel, and the two slanted lines with double arrows are parallel. The transversal line $FC$ makes an angle of $130^\\circ$ with the top line ($\\angle EFC = 130^\\circ$). Find the value of $\\beta$.",
     "a": "32",
     "solution": "1. The top and bottom horizontal lines are parallel. The transversal line making an angle of $130^\\circ$ with the top line makes an interior angle of $180^\\circ - 130^\\circ = 50^\\circ$ with the bottom line (co-interior/alternate angles).\n2. The slanted parallel line makes an angle of $\\alpha = 18^\\circ$ with the bottom line.\n3. The angle $\\beta$ is the difference between the transversal angle and the slanted line angle at the bottom intersection:\n   $$\\beta = 50^\\circ - \\alpha = 50^\\circ - 18^\\circ = 32^\\circ$$",
     "t": "Geometry challenge",
@@ -99,7 +99,7 @@ export const Y8_CH5I_QUESTIONS = [
         ],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.5, 3.6], "text": "130°" },
+          { "point": [2.8, 3.6], "text": "130°" },
           { "point": [3.6, 3.2], "text": "4α" },
           { "point": [5.2, 0.4], "text": "β" },
           { "point": [6.6, 0.3], "text": "α" }
