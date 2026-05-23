@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
   Lock, Trophy, Sparkles, Clock, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
-  Flag, BookmarkPlus, X,
+  Flag, BookmarkPlus, X, Target,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -374,6 +374,203 @@ const ResultPanel = ({ result, onRestart, onExit, cumulativeAnalysis }) => (
   </div>
 );
 
+// ── Setup dashboard ────────────────────────────────────────────────────
+// A single composed view that fills the page when stage === 'setup'. It
+// reads like a dashboard: hero (stats + CTA) on top, two-column row with
+// topics & secret-note side by side, and the topic analysis chart below.
+const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
+  const accuracy = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
+  // Flatten the curriculum once so we can render the teacher-set chapter
+  // chips with a year prefix.
+  const allChapters = useMemo(() => {
+    const list = [];
+    allYearKeys.forEach((y) => flattenChapters(y).forEach((ch) => list.push({ ...ch, year: y })));
+    return list;
+  }, []);
+  const selectedChips = selection.chapters
+    .map((id) => allChapters.find((c) => c.id === id))
+    .filter(Boolean);
+  const hasTopics = selectedChips.length > 0;
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {/* HERO — full-bleed gradient with stats and the primary CTA */}
+      <div
+        style={{
+          position: 'relative',
+          padding: '32px 32px 28px',
+          borderRadius: '32px',
+          color: '#fff',
+          overflow: 'hidden',
+          background: 'linear-gradient(135deg, #4338ca 0%, #7c3aed 55%, #a855f7 100%)',
+          boxShadow: '0 24px 50px -18px rgba(124,58,237,0.55)',
+        }}
+      >
+        {/* decorative glow */}
+        <div aria-hidden style={{ position: 'absolute', top: '-60px', right: '-40px', width: '220px', height: '220px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.22), transparent 70%)' }} />
+        <div aria-hidden style={{ position: 'absolute', bottom: '-80px', left: '-40px', width: '260px', height: '260px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%)' }} />
+
+        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          {/* Row 1: badge + title */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'rgba(255,255,255,0.18)', backdropFilter: 'blur(6px)', display: 'grid', placeItems: 'center' }}>
+              <GraduationCap size={24} />
+            </div>
+            <div>
+              <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', opacity: 0.75 }}>Exam Prep</div>
+              <h1 style={{ margin: '2px 0 0', fontSize: '1.8rem', fontWeight: 900, letterSpacing: '-0.01em' }}>Time to practise</h1>
+            </div>
+          </div>
+
+          {/* Row 2: stat tiles (glassy) */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
+            <GlassStat label="Sessions" value={stats.sessions} />
+            <GlassStat label="Accuracy" value={`${accuracy}%`} />
+            <GlassStat label="Attempted" value={stats.attempted} />
+          </div>
+
+          {/* Row 3: CTA */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <button
+              onClick={onStart}
+              disabled={!hasTopics || loading}
+              style={{
+                flex: 1, minWidth: '200px',
+                padding: '16px 22px',
+                borderRadius: '18px',
+                border: 'none',
+                background: !hasTopics || loading ? 'rgba(255,255,255,0.25)' : '#fff',
+                color: !hasTopics || loading ? 'rgba(255,255,255,0.7)' : '#5b21b6',
+                fontWeight: 900, fontSize: '1.05rem',
+                cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
+                boxShadow: !hasTopics || loading ? 'none' : '0 12px 24px rgba(15,23,42,0.18)',
+                transition: 'transform 0.15s, box-shadow 0.15s',
+              }}
+              onMouseDown={(e) => { if (hasTopics && !loading) e.currentTarget.style.transform = 'scale(0.98)'; }}
+              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+            >
+              <Play size={18} /> {loading ? 'Loading…' : 'Start round'}
+              <span style={{ fontSize: '0.8rem', fontWeight: 800, opacity: 0.65 }}>· 15 Qs</span>
+            </button>
+            <div style={{ fontSize: '0.8rem', fontWeight: 700, opacity: 0.85, lineHeight: 1.4 }}>
+              {hasTopics
+                ? `${selectedChips.length} ${selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher`
+                : 'Your teacher hasn\'t picked topics yet.'}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Two-column: topics on the left, Secret Note on the right */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(220px, 1fr)', gap: '16px' }}>
+        {/* TOPICS */}
+        <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+            <Target size={16} color="#7c3aed" />
+            <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Your exam topics</h3>
+          </div>
+          {!hasTopics ? (
+            <div style={{ padding: '20px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
+              No topics yet — ask your teacher.
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+              {selectedChips.map((ch) => (
+                <div key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '14px', background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', border: '1px solid #ddd6fe', fontWeight: 700, fontSize: '0.85rem' }}>
+                  <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#5b21b6', background: '#fff', padding: '2px 8px', borderRadius: '999px', letterSpacing: '0.05em' }}>
+                    {ch.year.replace('Year ', 'Y')}
+                  </span>
+                  <span style={{ color: '#312e81' }}>{ch.title}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* SECRET NOTE — compact side card */}
+        <button
+          onClick={onOpenSecretNote}
+          style={{
+            padding: '22px 20px', borderRadius: '22px', textAlign: 'left', cursor: 'pointer',
+            border: '1px solid ' + (noteCount > 0 ? '#fde68a' : '#e2e8f0'),
+            background: noteCount > 0 ? 'linear-gradient(135deg, #fffbeb, #fef3c7)' : '#fff',
+            display: 'flex', flexDirection: 'column', gap: '10px',
+            transition: 'transform 0.15s, box-shadow 0.15s',
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 28px rgba(0,0,0,0.06)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
+          disabled={noteCount === 0}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: noteCount > 0 ? '#fcd34d' : '#f1f5f9', display: 'grid', placeItems: 'center', color: noteCount > 0 ? '#78350f' : '#94a3b8' }}>
+              <BookmarkPlus size={18} />
+            </div>
+            {noteCount > 0 && <ChevronRight size={18} color="#92400e" />}
+          </div>
+          <div>
+            <div style={{ fontWeight: 900, color: noteCount > 0 ? '#78350f' : '#475569', fontSize: '0.95rem' }}>Secret Note</div>
+            <div style={{ fontSize: '0.8rem', color: noteCount > 0 ? '#92400e' : '#94a3b8', fontWeight: 700, marginTop: '2px' }}>
+              {noteCount === 0 ? 'No notes yet' : `${noteCount} ${noteCount === 1 ? 'note' : 'notes'} · ${dueCount} due`}
+            </div>
+          </div>
+        </button>
+      </div>
+
+      {/* Where to focus — visual progress chart */}
+      <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+          <Sparkles size={16} color="#7c3aed" />
+          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Where to focus</h3>
+          <span style={{ marginLeft: 'auto', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>
+            Weakest topics first
+          </span>
+        </div>
+        {analysis.length === 0 ? (
+          <div style={{ padding: '24px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center' }}>
+            Finish a round to see your topic breakdown.
+          </div>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {analysis.slice(0, 8).map((t) => {
+              const color = t.attempted < 3 ? '#94a3b8' : t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+              return (
+                <div key={t.topicId} style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 80px', gap: '14px', alignItems: 'center' }}>
+                  <div>
+                    <div style={{ fontWeight: 800, color: '#1e293b', fontSize: '0.85rem', marginBottom: '6px' }}>{t.title}</div>
+                    <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '999px', overflow: 'hidden' }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, background: color, transition: 'width 0.4s' }} />
+                    </div>
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <div style={{ fontSize: '1.05rem', fontWeight: 900, color }}>{t.pct}%</div>
+                    <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#94a3b8' }}>{t.correct}/{t.attempted}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const GlassStat = ({ label, value }) => (
+  <div style={{
+    background: 'rgba(255,255,255,0.14)',
+    backdropFilter: 'blur(6px)',
+    border: '1px solid rgba(255,255,255,0.18)',
+    borderRadius: '16px',
+    padding: '12px 14px',
+    textAlign: 'center',
+  }}>
+    <div style={{ fontSize: '0.65rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.75 }}>{label}</div>
+    <div style={{ fontSize: '1.6rem', fontWeight: 900, marginTop: '2px' }}>{value}</div>
+  </div>
+);
+
 // ── Top-level ExamPrep page ────────────────────────────────────────────
 const ExamPrep = ({ profile }) => {
   const { user } = useAuth();
@@ -493,53 +690,16 @@ const ExamPrep = ({ profile }) => {
     <div className="app-page" style={{ padding: '24px 20px 80px' }}>
       <div style={{ maxWidth: '780px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {stage === 'setup' && (
-          <>
-            <div className="app-panel" style={{ padding: '24px 28px', borderRadius: '24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-              <div>
-                <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Cumulative</div>
-                <h2 style={{ margin: '4px 0 0', fontWeight: 900, color: '#1e1b4b' }}>Exam Prep</h2>
-              </div>
-              <div style={{ display: 'flex', gap: '14px' }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em' }}>SESSIONS</div>
-                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#7c3aed' }}>{stats.sessions}</div>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em' }}>ACCURACY</div>
-                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#10b981' }}>{stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0}%</div>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em' }}>ATTEMPTED</div>
-                  <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{stats.attempted}</div>
-                </div>
-              </div>
-            </div>
-
-            {noteCount > 0 && (
-              <button
-                onClick={() => setStage('secretNote')}
-                className="app-panel"
-                style={{ padding: '16px 20px', borderRadius: '18px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', border: '1px solid #fde68a', background: '#fffbeb', cursor: 'pointer', width: '100%' }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#fcd34d', display: 'grid', placeItems: 'center', color: '#78350f' }}>
-                    <BookmarkPlus size={18} />
-                  </div>
-                  <div style={{ textAlign: 'left' }}>
-                    <div style={{ fontWeight: 900, color: '#78350f' }}>Exam Prep Secret Note</div>
-                    <div style={{ fontSize: '0.8rem', color: '#92400e', fontWeight: 700 }}>
-                      {noteCount} {noteCount === 1 ? 'note' : 'notes'} · {dueCount} due now
-                    </div>
-                  </div>
-                </div>
-                <ChevronRight size={18} color="#92400e" />
-              </button>
-            )}
-
-            <ChosenTopicsCard selection={selection} onStart={handleStart} loading={loading} />
-            <TopicAnalysisCard analysis={analysis} />
-            {loading && <div style={{ textAlign: 'center', color: '#7c3aed', fontWeight: 800 }}>Loading questions…</div>}
-          </>
+          <SetupDashboard
+            stats={stats}
+            selection={selection}
+            analysis={analysis}
+            noteCount={noteCount}
+            dueCount={dueCount}
+            loading={loading}
+            onStart={handleStart}
+            onOpenSecretNote={() => setStage('secretNote')}
+          />
         )}
 
         {stage === 'quiz' && questions.length > 0 && (
