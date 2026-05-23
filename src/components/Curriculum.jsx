@@ -39,6 +39,7 @@ import { Y8_CH7A_QUESTIONS } from '../constants/seedYear8Ch7Questions.js';
 import { Y8_CH7I_QUESTIONS } from '../constants/seedYear8Ch7ReviewQuestions.js';
 import { Y8_CH8D_QUESTIONS } from '../constants/seedYear8Ch8ReviewQuestions.js';
 import { Y8_CH9A_QUESTIONS } from '../constants/seedYear8Ch9Questions.js';
+import { Y8_CH10A_QUESTIONS } from '../constants/seedYear8Ch10Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -71,6 +72,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-7', chapterTitle: 'Chapter 7: Percentages', topicId: 'y8-7a', topicCode: '7A', topicTitle: 'Percentages', year: 'Year 8', seed: Y8_CH7A_QUESTIONS, label: 'Y8 Ch7 · Percentages' },
   { chapterId: 'y8-8', chapterTitle: "Chapter 8: Pythagoras' theorem", topicId: 'y8-8d', topicCode: '8D', topicTitle: "Review of Pythagoras' theorem", year: 'Year 8', seed: Y8_CH8D_QUESTIONS, label: 'Y8 Ch8 · Review' },
   { chapterId: 'y8-9', chapterTitle: 'Chapter 9: Pythagoras Theorem', topicId: 'y8-9a', topicCode: '9A', topicTitle: 'Pythagoras theorem', year: 'Year 8', seed: Y8_CH9A_QUESTIONS, label: 'Y8 Ch9 · Pythagoras theorem' },
+  { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10a', topicCode: '10A', topicTitle: 'Review of the unitary method', year: 'Year 8', seed: Y8_CH10A_QUESTIONS, label: 'Y8 Ch10 · Rates and ratios' },
 ];
 import {
   fetchHscResultsIncremental,
