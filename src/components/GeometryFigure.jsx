@@ -143,23 +143,28 @@ const GeometryFigure = ({
   // --- Angle marks / labels --------------------------------------------
   angles.forEach((ang) => {
     const [vx, vy] = P(ang.at);
-    let [dx, dy] = norm(cx - vx, cy - vy);   // toward interior
-    if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
-      dx = 0;
-      dy = -1;
-    }
+    const [defdx, defdy] = norm(cx - vx, cy - vy);   // toward interior
 
-    const rx = ang.labelPos ? ((ang.labelPos[0] - minX) * scale + pad) : vx;
-    const ry = ang.labelPos ? ((maxY - ang.labelPos[1]) * scale + pad) : vy;
+    // Draggable position
+    const rx = ang.labelPos ? ((ang.labelPos[0] - minX) * scale + pad) : (vx + defdx * 26);
+    const ry = ang.labelPos ? ((maxY - ang.labelPos[1]) * scale + pad) : (vy + defdy * 26);
+
+    // Calculate rotation vector from vertex to labelPos
+    let [dx, dy] = norm(rx - vx, ry - vy);
+    if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
+      dx = defdx;
+      dy = defdy;
+    }
 
     if (ang.right) {
       const sz = 12;
-      const bx1 = rx + dx * sz + dy * sz;
-      const by1 = ry + dy * sz - dx * sz;
-      const bx2 = rx + dx * sz;
-      const by2 = ry + dy * sz;
-      const bx3 = rx + dy * sz;
-      const by3 = ry - dx * sz;
+      // Anchor always at vx, vy
+      const bx1 = vx + dx * sz + dy * sz;
+      const by1 = vy + dy * sz - dx * sz;
+      const bx2 = vx + dx * sz;
+      const by2 = vy + dy * sz;
+      const bx3 = vx + dy * sz;
+      const by3 = vy - dx * sz;
       els.push(
         <polyline
           key={`ar${key++}`}
@@ -170,16 +175,10 @@ const GeometryFigure = ({
     }
 
     if (ang.label) {
-      const lx = ang.labelPos
-        ? (((ang.labelPos[0] - minX) * scale + pad) + (ang.right ? dx * 16 : 0))
-        : (vx + dx * 26);
-      const ly = ang.labelPos
-        ? (((maxY - ang.labelPos[1]) * scale + pad) + (ang.right ? dy * 16 : 0))
-        : (vy + dy * 26);
       els.push(
         <text
           key={`al${key++}`}
-          x={lx} y={ly + 5}
+          x={rx} y={ry + 5}
           textAnchor="middle" fill="#1e3a5f"
           fontSize="15" fontStyle="italic"
         >

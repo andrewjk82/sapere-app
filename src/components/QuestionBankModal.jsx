@@ -518,17 +518,28 @@ const GeometryEditor = ({ graphData, onChange }) => {
           return (geometry.angles || []).map((ang, idx) => {
             if (!geometry.points[ang.at]) return null;
             const [vx, vy] = toSvg(geometry.points[ang.at]);
-            const [dx, dy] = edNorm(edCx - vx, edCy - vy);
-            const rx = ang.labelPos ? toSvg(ang.labelPos)[0] : vx;
-            const ry = ang.labelPos ? toSvg(ang.labelPos)[1] : vy;
+            const [eddx, eddy] = edNorm(edCx - vx, edCy - vy);
+            
+            // Draggable handle position
+            const rx = ang.labelPos ? toSvg(ang.labelPos)[0] : vx + eddx * 26;
+            const ry = ang.labelPos ? toSvg(ang.labelPos)[1] : vy + eddy * 26;
+            
+            // Calculate direction from vertex to handle
+            let [dx, dy] = edNorm(rx - vx, ry - vy);
+            if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
+              dx = eddx;
+              dy = eddy;
+            }
+
             const els = [];
 
             if (ang.right) {
               const sz = 12;
+              // Anchored at vx, vy; pointing towards dx, dy
               els.push(
                 <polyline
                   key="rt"
-                  points={`${rx + dx * sz + dy * sz},${ry + dy * sz - dx * sz} ${rx + dx * sz},${ry + dy * sz} ${rx + dy * sz},${ry - dx * sz}`}
+                  points={`${vx + dx * sz + dy * sz},${vy + dy * sz - dx * sz} ${vx + dx * sz},${vy + dy * sz} ${vx + dy * sz},${vy - dx * sz}`}
                   fill="none"
                   stroke="#7c3aed"
                   strokeWidth="2"
@@ -537,13 +548,11 @@ const GeometryEditor = ({ graphData, onChange }) => {
             }
 
             if (ang.label) {
-              const lx = ang.right ? rx + dx * 16 : rx;
-              const ly = ang.right ? ry + dy * 16 : ry;
               els.push(
                 <text
                   key="lbl"
-                  x={lx}
-                  y={ly + 5}
+                  x={rx}
+                  y={ry + 5}
                   textAnchor="middle"
                   fill="#7c3aed"
                   fontSize="14"
@@ -559,17 +568,14 @@ const GeometryEditor = ({ graphData, onChange }) => {
               els.push(
                 <circle
                   key="helper"
-                  cx={rx + dx * 12}
-                  cy={ry + dy * 12}
+                  cx={rx}
+                  cy={ry}
                   r="6"
                   fill="#7c3aed"
                   opacity="0.4"
                 />
               );
             }
-
-            const clickX = ang.right ? rx + dx * 6 : rx;
-            const clickY = ang.right ? ry + dy * 6 : ry;
 
             return (
               <g
@@ -580,7 +586,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
                 }}
                 style={{ cursor: 'grab' }}
               >
-                <circle cx={clickX} cy={clickY} r="14" fill="#7c3aed" opacity="0.1" />
+                <circle cx={rx} cy={ry} r="14" fill="#7c3aed" opacity="0.1" />
                 {els}
               </g>
             );
