@@ -506,6 +506,30 @@ const GeometryEditor = ({ graphData, onChange }) => {
           const [x2, y2] = toSvg(geometry.points[seg.to]);
           return <line key={idx} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#1e3a5f" strokeWidth="3" strokeLinecap="round" strokeDasharray={seg.dashed ? '7 5' : undefined} />;
         })}
+        {(() => {
+          const edCx = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[0], 0) / (pointNames.length || 1);
+          const edCy = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[1], 0) / (pointNames.length || 1);
+          const edNorm = (dx, dy) => { const l = Math.hypot(dx, dy) || 1; return [dx / l, dy / l]; };
+          return (geometry.angles || []).map((ang, idx) => {
+            if (!geometry.points[ang.at]) return null;
+            const [vx, vy] = toSvg(geometry.points[ang.at]);
+            const [dx, dy] = edNorm(edCx - vx, edCy - vy);
+            if (ang.right) {
+              const sz = 12;
+              return (
+                <g key={`ang-${idx}`}>
+                  <polyline points={`${vx + dx * sz + dy * sz},${vy + dy * sz - dx * sz} ${vx + dx * sz},${vy + dy * sz} ${vx + dy * sz},${vy - dx * sz}`} fill="none" stroke="#1e3a5f" strokeWidth="1.5" />
+                </g>
+              );
+            }
+            if (!ang.label) return null;
+            return (
+              <text key={`ang-${idx}`} x={vx + dx * 26} y={vy + dy * 26 + 5} textAnchor="middle" fill="#7c3aed" fontSize="14" fontStyle="italic" fontWeight="700">
+                {ang.label}
+              </text>
+            );
+          });
+        })()}
         {pointNames.map((name) => {
           const [x, y] = toSvg(geometry.points[name]);
           return (
