@@ -110,7 +110,9 @@ export const geometryToSvgMarkup = ({
     const [vx, vy] = P(angle.at);
     const [dx, dy] = norm(cx - vx, cy - vy);
     if (angle.label) {
-      els.push(svgText(`x="${vx + dx * 26}" y="${vy + dy * 26 + 5}" text-anchor="middle" fill="#1e3a5f" font-size="15" font-style="italic"`, angle.label));
+      const lx = angle.labelPos ? (((Number(angle.labelPos[0]) || 0) - minX) * scale + pad) : (vx + dx * 26);
+      const ly = angle.labelPos ? ((maxY - (Number(angle.labelPos[1]) || 0)) * scale + pad) : (vy + dy * 26);
+      els.push(svgText(`x="${lx}" y="${ly + 5}" text-anchor="middle" fill="#1e3a5f" font-size="15" font-style="italic"`, angle.label));
     }
   });
 
