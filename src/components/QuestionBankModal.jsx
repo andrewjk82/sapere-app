@@ -773,6 +773,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     setFormData({ ...formData, options: newOpts });
   };
 
+  const currentGraphData = parseGraphData(formData.graphData);
+  const hasGraphData = Boolean(currentGraphData && Object.keys(currentGraphData).length > 0);
+  const hasEditableGeometry = Boolean(currentGraphData?.geometry);
+  const hasRenderOnlyDiagram = hasGraphData && !hasEditableGeometry;
+
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(4px)' }} />
@@ -913,7 +918,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 <textarea rows={3} value={formData.questionText} onChange={e => handleQuestionTextChange(e.target.value)} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="e.g. Solve for $x$: $x^2 = 25$" />
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>LIVE PREVIEW:</span>
-                  <MathPreview content={formData.questionText} graphData={parseGraphData(formData.graphData)} />
+                  <MathPreview content={formData.questionText} graphData={currentGraphData} />
                 </div>
               </div>
 
@@ -929,17 +934,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   placeholder='{ "equations": ["y = 2x + 1"], "config": { "xRange": [-5, 5], "yRange": [-5, 5] } }' 
                 />
                 <div style={{ display: 'flex', gap: '8px', marginTop: '10px', flexWrap: 'wrap' }}>
-                  <button
-                    type="button"
-                    onClick={() => setFormData(prev => ({
-                      ...prev,
-                      graphData: stringifyGraphData(createDefaultGeometryGraph()),
-                    }))}
-                    style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}
-                  >
-                    Create editable geometry
-                  </button>
-                  {parseGraphData(formData.graphData)?.geometry && (
+                  {!hasGraphData && (
+                    <button
+                      type="button"
+                      onClick={() => setFormData(prev => ({
+                        ...prev,
+                        graphData: stringifyGraphData(createDefaultGeometryGraph()),
+                      }))}
+                      style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}
+                    >
+                      Create editable geometry
+                    </button>
+                  )}
+                  {hasEditableGeometry && (
                     <button
                       type="button"
                       onClick={() => setFormData(prev => ({
@@ -952,11 +959,29 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                     </button>
                   )}
                 </div>
+                {hasRenderOnlyDiagram && (
+                  <div style={{ marginTop: '10px', padding: '12px 14px', borderRadius: '12px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', fontSize: '0.82rem', fontWeight: 700, lineHeight: 1.45 }}>
+                    This diagram is stored as JSXGraph or another render-only format. It will preview correctly, but the point/line/angle editor only opens for geometry JSON. Replacing it creates a new blank geometry diagram.
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (!window.confirm('Replace this existing diagram with a blank editable geometry diagram? This cannot convert the current JSXGraph drawing automatically.')) return;
+                        setFormData(prev => ({
+                          ...prev,
+                          graphData: stringifyGraphData(createDefaultGeometryGraph()),
+                        }));
+                      }}
+                      style={{ display: 'block', marginTop: '10px', padding: '8px 12px', borderRadius: '10px', border: '1px solid #f59e0b', background: '#fff', color: '#92400e', fontWeight: 800, cursor: 'pointer' }}
+                    >
+                      Replace with blank editable geometry
+                    </button>
+                  </div>
+                )}
               </div>
 
-              {parseGraphData(formData.graphData)?.geometry && (
+              {hasEditableGeometry && (
                 <GeometryEditor
-                  graphData={parseGraphData(formData.graphData)}
+                  graphData={currentGraphData}
                   onChange={(nextGraphData) => setFormData(prev => ({
                     ...prev,
                     graphData: stringifyGraphData(nextGraphData),
