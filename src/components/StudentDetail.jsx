@@ -903,8 +903,25 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const handleUpdateCurriculumSetting = async (field, value) => {
+    // Write to BOTH the teacher's record and the linked registered account
+    // (users/{registeredUid}) so the student app — which reads its profile
+    // from users/{uid} — sees the change. Without this mirror, fields like
+    // dailyQuestionCount or examPrepEnabled would only update on the
+    // teacher's manual record and never reach the student.
+    const targets = [doc(db, activeStudentCollection, activeStudentId)];
+    if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
+      targets.push(doc(db, "users", challengeResultsUid));
+    }
     try {
-      await updateDoc(doc(db, activeStudentCollection, activeStudentId), { [field]: value });
+      await Promise.all(
+        targets.map((ref) =>
+          updateDoc(ref, { [field]: value }).catch((e) => {
+            // Mirror is best-effort: log and continue rather than failing
+            // the whole write if the registered doc isn't writable.
+            console.warn("curriculum setting mirror failed:", e?.code || e);
+          })
+        )
+      );
       updateLocalStudentProfileCache({ [field]: value });
       touchStudentListMeta();
     } catch (e) {
