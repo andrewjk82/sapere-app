@@ -737,69 +737,70 @@ export const Y8_CH8D_QUESTIONS = [
       "geometry": {
         "width": 250,
         "points": {
-          "TL": [
+          "A": [
             0,
             11
           ],
-          "TR": [
+          "B": [
             60,
             11
           ],
-          "BL": [
+          "C": [
             0,
             0
           ],
-          "BR": [
+          "D": [
             60,
             0
           ]
         },
         "segments": [
           {
-            "from": "TL",
-            "to": "TR"
+            "from": "A",
+            "to": "B"
           },
           {
-            "from": "TR",
-            "to": "BR"
+            "from": "B",
+            "to": "D"
           },
           {
-            "from": "BR",
-            "to": "BL"
+            "from": "D",
+            "to": "C"
           },
           {
-            "from": "BL",
-            "to": "TL"
+            "from": "C",
+            "to": "A"
           },
           {
-            "from": "BL",
-            "to": "TR"
+            "from": "C",
+            "to": "B"
           }
         ],
         "angles": [],
-        "sideLabels": [
+        "freeLabels": [
           {
-            "between": [
-              "TR",
-              "BR"
+            "point": [
+              63,
+              5.5
             ],
             "text": "11 cm"
           },
           {
-            "between": [
-              "BL",
-              "BR"
+            "point": [
+              30,
+              -2
             ],
             "text": "b"
           },
           {
-            "between": [
-              "BL",
-              "TR"
+            "point": [
+              28,
+              7
             ],
             "text": "61 cm"
           }
-        ]
+        ],
+        "sideLabels": []
       }
     }
   },
