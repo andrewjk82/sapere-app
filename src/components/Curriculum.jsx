@@ -1715,6 +1715,16 @@ const Curriculum = () => {
                 <div className="curriculum-header__title">
                   <h1>{selectedYear}</h1>
                   {courses && selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
+                  {/* Total question count across all chapters of the year. */}
+                  {(() => {
+                    const total = displayData.reduce((sum, ch) => sum + (questionCounts[ch.id] || 0), 0);
+                    if (total === 0) return null;
+                    return (
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '4px 10px', borderRadius: '999px', background: '#ede9fe', color: '#5b21b6', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.02em' }}>
+                        {total.toLocaleString()} questions
+                      </span>
+                    );
+                  })()}
                 </div>
                 <div className="curriculum-header__actions">
                   <div className={`curriculum-search${searchOpen || searchQuery ? ' is-open' : ''}`}>
