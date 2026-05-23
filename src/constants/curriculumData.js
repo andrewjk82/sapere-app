@@ -1323,10 +1323,11 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-1',
       title: 'Chapter 1: Whole numbers',
-      modules: 2,
+      modules: 3,
       topics: [
         { id: 'y8-1a', code: '1A', title: 'Addition and subtraction of whole numbers' },
-        { id: 'y8-1b', code: '1B', title: 'Multiplication and division of whole numbers' }
+        { id: 'y8-1b', code: '1B', title: 'Multiplication and division of whole numbers' },
+        { id: 'y8-1c', code: '1C', title: 'Problem solving' }
       ]
     },
     {

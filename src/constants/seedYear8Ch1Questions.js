@@ -1,6 +1,6 @@
-export const Y8_CH1A_QUESTIONS = [
+export const Y8_CH1C_QUESTIONS = [
   {
-    "id": "y8-1a-q1",
+    "id": "y8-1c-q1",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "The population of an ant colony was $14\\,000$ at the start of January. By the end of the month, $256$ ants had died, $89$ ants had moved into the colony and $123$ ants had moved out. The population at the end of January was $14\\,298$. How many ants were born between the start and the end of the month?",
@@ -21,7 +21,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q2",
+    "id": "y8-1c-q2",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "If each of $37$ students in $24$ classes ate $5$ pies in one week, how many pies were eaten in total?",
@@ -42,7 +42,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q3a",
+    "id": "y8-1c-q3a",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "The cost of $20$ packets of chips is $\\$9.50$, while each packet costs $65$ cents when sold individually. If you want to buy $40$ packets of chips, which option is cheaper?",
@@ -67,7 +67,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q3b",
+    "id": "y8-1c-q3b",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "The cost of $20$ packets of chips is $\\$9.50$, while each packet costs $65$ cents when sold individually. If you buy $40$ packets of chips taking the cheaper option, how much do you save?",
@@ -84,7 +84,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q4",
+    "id": "y8-1c-q4",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "What is the smallest number that must be subtracted from $34\\,657$ so that the result may be exactly divided by $129$?",
@@ -105,7 +105,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q5",
+    "id": "y8-1c-q5",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "The quotient arising from the division of a number by $53$ is $29$ and the remainder is $23$. What is this number?",
@@ -126,7 +126,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q6",
+    "id": "y8-1c-q6",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "The product of two numbers is $67\\,267$, and the smaller of them is $137$. Find the sum of the two numbers.",
@@ -147,7 +147,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q7a",
+    "id": "y8-1c-q7a",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "Andrew and Bashir play marbles. At one stage of the game, Andrew has $347$ marbles and Bashir has $135$. Bashir wins $106$ marbles from Andrew. How many marbles does Andrew have now?",
@@ -164,7 +164,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q7b",
+    "id": "y8-1c-q7b",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "Andrew and Bashir play marbles. At one stage of the game, Andrew has $347$ marbles and Bashir has $135$. Bashir wins $106$ marbles from Andrew. How many marbles does Bashir have now?",
@@ -181,7 +181,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q8",
+    "id": "y8-1c-q8",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "What number multiplied by $23$ will give the same product as $391$ multiplied by $37$?",
@@ -206,7 +206,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q9",
+    "id": "y8-1c-q9",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "How many times must $43$ be added to $1649$ to give $4186$?",
@@ -227,7 +227,7 @@ export const Y8_CH1A_QUESTIONS = [
     "graphData": null
   },
   {
-    "id": "y8-1a-q10",
+    "id": "y8-1c-q10",
     "type": "short_answer",
     "difficulty": "medium",
     "question": "At an election, there are three candidates, A, B and C. A obtains $19\\,878$ more votes than C, and B obtains $12\\,435$ more votes than C. A and B together obtain $137\\,187$ votes. How many voted for C?",
