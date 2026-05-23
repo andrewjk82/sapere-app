@@ -159,6 +159,40 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     // Let question diagrams overflow so edge labels stay visible.
     el.querySelectorAll('svg').forEach((svg) => { svg.style.overflow = 'visible'; });
 
+    // SVG <text> elements don't go through KaTeX, so authors who write
+    // "\theta" or "60^\circ" inside inline SVG would see the literal LaTeX
+    // string. We post-process every text node inside any rendered SVG and
+    // swap the common LaTeX greek/math commands for their unicode glyph.
+    // This is a pure visual fix — the underlying string in the DB is left
+    // alone so it remains editable.
+    const LATEX_TO_UNICODE = [
+      [/\\theta\b/g, 'θ'], [/\\Theta\b/g, 'Θ'],
+      [/\\alpha\b/g, 'α'], [/\\beta\b/g, 'β'],
+      [/\\gamma\b/g, 'γ'], [/\\Gamma\b/g, 'Γ'],
+      [/\\delta\b/g, 'δ'], [/\\Delta\b/g, 'Δ'],
+      [/\\phi\b/g, 'φ'], [/\\Phi\b/g, 'Φ'],
+      [/\\varphi\b/g, 'φ'],
+      [/\\pi\b/g, 'π'], [/\\Pi\b/g, 'Π'],
+      [/\\mu\b/g, 'μ'], [/\\lambda\b/g, 'λ'],
+      [/\\omega\b/g, 'ω'], [/\\Omega\b/g, 'Ω'],
+      [/\\sigma\b/g, 'σ'], [/\\Sigma\b/g, 'Σ'],
+      [/\\epsilon\b/g, 'ε'], [/\\rho\b/g, 'ρ'],
+      [/\\circ\b/g, '°'], [/\^\s*\\?circ\b/g, '°'],
+      [/\\pm\b/g, '±'], [/\\mp\b/g, '∓'],
+      [/\\times\b/g, '×'], [/\\div\b/g, '÷'],
+      [/\\le\b|\\leq\b/g, '≤'], [/\\ge\b|\\geq\b/g, '≥'],
+      [/\\neq\b|\\ne\b/g, '≠'], [/\\approx\b/g, '≈'],
+      [/\\cdot\b/g, '·'], [/\\sqrt\b/g, '√'],
+      [/\\infty\b/g, '∞'],
+    ];
+    el.querySelectorAll('svg text').forEach((node) => {
+      const original = node.textContent;
+      if (!original || original.indexOf('\\') < 0) return;
+      let next = original;
+      LATEX_TO_UNICODE.forEach(([re, glyph]) => { next = next.replace(re, glyph); });
+      if (next !== original) node.textContent = next;
+    });
+
     let cancelled = false;
     let retryTimer = null;
     const renderMath = () => {
