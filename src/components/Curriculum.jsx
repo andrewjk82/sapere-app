@@ -24,11 +24,13 @@ import { Y9_CH5A_QUESTIONS } from '../constants/seedYear9Ch5Questions.js';
 import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
 import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
 import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
+import { Y8_CH1A_QUESTIONS } from '../constants/seedYear8Ch1Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
 import { Y8_CH4A_QUESTIONS } from '../constants/seedYear8Ch4Questions.js';
 import { Y8_CH5A_QUESTIONS } from '../constants/seedYear8Ch5Questions.js';
 import { Y8_CH6A_QUESTIONS } from '../constants/seedYear8Ch6Questions.js';
 import { Y8_CH7A_QUESTIONS } from '../constants/seedYear8Ch7Questions.js';
+import { Y8_CH9A_QUESTIONS } from '../constants/seedYear8Ch9Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -46,11 +48,13 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-6', chapterTitle: 'Chapter 6: Formulas', topicId: 'y9-6a', topicCode: '6A', topicTitle: 'Formulas', year: 'Year 9', seed: Y9_CH6A_QUESTIONS, label: 'Y9 Ch6 · Formulas' },
   { chapterId: 'y9-7', chapterTitle: 'Chapter 7: Congruence and special quadrilaterals', topicId: 'y9-7a', topicCode: '7A', topicTitle: 'Review of angles', year: 'Year 9', seed: Y9_CH7A_QUESTIONS, label: 'Y9 Ch7 · Angles' },
   { chapterId: 'y9-8', chapterTitle: 'Chapter 8: Index laws', topicId: 'y9-8a', topicCode: '8A', topicTitle: 'Index laws', year: 'Year 9', seed: Y9_CH8A_QUESTIONS, label: 'Y9 Ch8 · Index laws' },
+  { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1a', topicCode: '1A', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1A_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: HCF and LCM', topicId: 'y8-3a', topicCode: '3A', topicTitle: 'HCF and LCM', year: 'Year 8', seed: Y8_CH3A_QUESTIONS, label: 'Y8 Ch3 · HCF and LCM' },
   { chapterId: 'y8-4', chapterTitle: 'Chapter 4: Integers', topicId: 'y8-4a', topicCode: '4A', topicTitle: 'Integers', year: 'Year 8', seed: Y8_CH4A_QUESTIONS, label: 'Y8 Ch4 · Integers' },
   { chapterId: 'y8-5', chapterTitle: 'Chapter 5: Angles', topicId: 'y8-5a', topicCode: '5A', topicTitle: 'Angles', year: 'Year 8', seed: Y8_CH5A_QUESTIONS, label: 'Y8 Ch5 · Angles' },
   { chapterId: 'y8-6', chapterTitle: 'Chapter 6: Substitution', topicId: 'y8-6a', topicCode: '6A', topicTitle: 'Substitution', year: 'Year 8', seed: Y8_CH6A_QUESTIONS, label: 'Y8 Ch6 · Substitution' },
   { chapterId: 'y8-7', chapterTitle: 'Chapter 7: Percentages', topicId: 'y8-7a', topicCode: '7A', topicTitle: 'Percentages', year: 'Year 8', seed: Y8_CH7A_QUESTIONS, label: 'Y8 Ch7 · Percentages' },
+  { chapterId: 'y8-9', chapterTitle: 'Chapter 9: Pythagoras Theorem', topicId: 'y8-9a', topicCode: '9A', topicTitle: 'Pythagoras theorem', year: 'Year 8', seed: Y8_CH9A_QUESTIONS, label: 'Y8 Ch9 · Pythagoras theorem' },
 ];
 import {
   fetchHscResultsIncremental,
