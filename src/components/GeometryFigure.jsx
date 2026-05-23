@@ -12,8 +12,8 @@
  *                  ticks  = N short cross-strokes (equal-length notation)
  *                  marks  = N chevrons along the line (parallel notation)
  *                  arrow  = true → arrowhead at `to`
- *   angles:      [ { at, label, right? } ]            // label drawn just
- *                  inside the figure at vertex `at`; right:true → small square
+ *   angles:      [ { at, label } ]                    // label drawn just
+ *                  inside the figure at vertex `at`
  *   sideLabels:  [ { between: [a, b], text, side? } ] // text on a segment;
  *                  side "out" (default) or "in"
  */
@@ -144,24 +144,6 @@ const GeometryFigure = ({
   angles.forEach((ang) => {
     const [vx, vy] = P(ang.at);
     const [dx, dy] = norm(cx - vx, cy - vy);   // toward interior
-    if (ang.right) {
-      const [px, py] = [-dy, dx];
-      const L = 13;
-      // square sitting in the interior corner at the vertex
-      const c1x = vx + dx * L * 0.7 + px * L * 0.7;
-      const c1y = vy + dy * L * 0.7 + py * L * 0.7;
-      const c2x = vx + dx * L * 1.4;
-      const c2y = vy + dy * L * 1.4;
-      const c3x = vx + dx * L * 0.7 - px * L * 0.7;
-      const c3y = vy + dy * L * 0.7 - py * L * 0.7;
-      els.push(
-        <polyline
-          key={`r${key++}`}
-          points={`${c1x},${c1y} ${c2x},${c2y} ${c3x},${c3y}`}
-          fill="none" stroke="#1e3a5f" strokeWidth="1.8"
-        />
-      );
-    }
     if (ang.label) {
       els.push(
         <text

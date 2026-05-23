@@ -109,17 +109,6 @@ export const geometryToSvgMarkup = ({
     if (!points[angle.at]) return;
     const [vx, vy] = P(angle.at);
     const [dx, dy] = norm(cx - vx, cy - vy);
-    if (angle.right) {
-      const [px, py] = [-dy, dx];
-      const L = 13;
-      const c1x = vx + dx * L * 0.7 + px * L * 0.7;
-      const c1y = vy + dy * L * 0.7 + py * L * 0.7;
-      const c2x = vx + dx * L * 1.4;
-      const c2y = vy + dy * L * 1.4;
-      const c3x = vx + dx * L * 0.7 - px * L * 0.7;
-      const c3y = vy + dy * L * 0.7 - py * L * 0.7;
-      els.push(`<polyline points="${c1x},${c1y} ${c2x},${c2y} ${c3x},${c3y}" fill="none" stroke="#1e3a5f" stroke-width="1.8" />`);
-    }
     if (angle.label) {
       els.push(svgText(`x="${vx + dx * 26}" y="${vy + dy * 26 + 5}" text-anchor="middle" fill="#1e3a5f" font-size="15" font-style="italic"`, angle.label));
     }

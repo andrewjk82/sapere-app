@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useId, useRef } from 'react';
 import JXG from 'jsxgraph';
 import '../jsxgraph.css';
 
@@ -29,6 +29,50 @@ const JsxGraphDiagram = ({ data, style }) => {
       });
       
       boardInstance.current = board;
+      const originalCreate = board.create.bind(board);
+
+      board.create = (elementType, parents, attributes = {}) => {
+        if (String(elementType).toLowerCase() !== 'angle') {
+          return originalCreate(elementType, parents, attributes);
+        }
+
+        const label = attributes.name || attributes.label;
+        if (!label || !Array.isArray(parents) || parents.length < 3) {
+          return originalCreate('text', [0, 0, ''], { visible: false });
+        }
+
+        const [from, vertex, to] = parents;
+        if (!from?.X || !from?.Y || !vertex?.X || !vertex?.Y || !to?.X || !to?.Y) {
+          return originalCreate('text', [0, 0, label], {
+            anchorX: 'middle',
+            anchorY: 'middle',
+            fixed: true,
+            strokeColor: attributes.labelColor || '#0369a1',
+          });
+        }
+
+        const vx = vertex.X();
+        const vy = vertex.Y();
+        const v1 = [from.X() - vx, from.Y() - vy];
+        const v2 = [to.X() - vx, to.Y() - vy];
+        const l1 = Math.hypot(v1[0], v1[1]) || 1;
+        const l2 = Math.hypot(v2[0], v2[1]) || 1;
+        const direction = [(v1[0] / l1) + (v2[0] / l2), (v1[1] / l1) + (v2[1] / l2)];
+        const len = Math.hypot(direction[0], direction[1]) || 1;
+        const radius = Number(attributes.radius) || 1.2;
+
+        return originalCreate('text', [
+          vx + (direction[0] / len) * radius * 0.75,
+          vy + (direction[1] / len) * radius * 0.75,
+          label,
+        ], {
+          anchorX: 'middle',
+          anchorY: 'middle',
+          fixed: true,
+          fontSize: attributes.fontSize || 15,
+          strokeColor: attributes.labelColor || '#0369a1',
+        });
+      };
 
       // Ensure data.script is a function that takes the board and JXG as arguments
       if (typeof data.script === 'function') {
@@ -50,11 +94,11 @@ const JsxGraphDiagram = ({ data, style }) => {
     };
   }, [data]);
 
-  const uniqueId = useRef(`jxgbox-${Math.random().toString(36).substr(2, 9)}`);
+  const uniqueId = useId();
 
   return (
     <div 
-      id={uniqueId.current}
+      id={uniqueId}
       ref={boardRef} 
       className="jxgbox" 
       style={{ 

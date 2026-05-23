@@ -374,7 +374,7 @@ const MathPreview = ({ content, graphData, style = {} }) => {
 const GeometryEditor = ({ graphData, onChange }) => {
   const geometry = graphData?.geometry;
   const surfaceRef = React.useRef(null);
-  const [activePoint, setActivePoint] = useState(null);
+  const [activeDrag, setActiveDrag] = useState(null);
   if (!geometry) return null;
 
   const pointNames = Object.keys(geometry.points || {});
@@ -431,8 +431,17 @@ const GeometryEditor = ({ graphData, onChange }) => {
     updateGeometry({ ...geometry, freeLabels });
   };
 
-  const xs = pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0);
-  const ys = pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0);
+  const labelPoints = (geometry.freeLabels || [])
+    .map((label) => (Array.isArray(label.point) ? label.point : [label.x, label.y]))
+    .filter((point) => point.every((coord) => Number.isFinite(Number(coord))));
+  const xs = [
+    ...pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0),
+    ...labelPoints.map((point) => Number(point[0]) || 0),
+  ];
+  const ys = [
+    ...pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0),
+    ...labelPoints.map((point) => Number(point[1]) || 0),
+  ];
   const minX = Math.min(...xs, -1);
   const maxX = Math.max(...xs, 1);
   const minY = Math.min(...ys, -1);
@@ -449,20 +458,31 @@ const GeometryEditor = ({ graphData, onChange }) => {
   const fromPointer = (event) => {
     const rect = surfaceRef.current?.getBoundingClientRect();
     if (!rect) return [0, 0];
-    const sx = Math.min(W - pad, Math.max(pad, event.clientX - rect.left));
-    const sy = Math.min(H - pad, Math.max(pad, event.clientY - rect.top));
+    const rawX = ((event.clientX - rect.left) / (rect.width || W)) * W;
+    const rawY = ((event.clientY - rect.top) / (rect.height || H)) * H;
+    const sx = Math.min(W - pad, Math.max(pad, rawX));
+    const sy = Math.min(H - pad, Math.max(pad, rawY));
     const x = minX + ((sx - pad) / (W - pad * 2)) * spanX;
     const y = maxY - ((sy - pad) / (H - pad * 2)) * spanY;
     return [Number(x.toFixed(2)), Number(y.toFixed(2))];
   };
 
-  const dragPoint = (event) => {
-    if (!activePoint) return;
+  const dragSelection = (event) => {
+    if (!activeDrag) return;
     event.preventDefault();
-    updateGeometry({
-      ...geometry,
-      points: { ...geometry.points, [activePoint]: fromPointer(event) },
-    });
+    const point = fromPointer(event);
+    if (activeDrag.type === 'point') {
+      updateGeometry({
+        ...geometry,
+        points: { ...geometry.points, [activeDrag.name]: point },
+      });
+      return;
+    }
+    if (activeDrag.type === 'freeLabel') {
+      const freeLabels = [...(geometry.freeLabels || [])];
+      freeLabels[activeDrag.index] = { ...freeLabels[activeDrag.index], point };
+      updateGeometry({ ...geometry, freeLabels });
+    }
   };
 
   return (
@@ -470,7 +490,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
         <div>
           <div style={{ fontSize: '0.75rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Geometry editor</div>
-          <div style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: 700, marginTop: '3px' }}>Drag points, then adjust lines and angle labels.</div>
+          <div style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: 700, marginTop: '3px' }}>Drag points and labels directly on the diagram.</div>
         </div>
         <button type="button" onClick={addPoint} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add point</button>
       </div>
@@ -478,9 +498,10 @@ const GeometryEditor = ({ graphData, onChange }) => {
       <svg
         ref={surfaceRef}
         viewBox={`0 0 ${W} ${H}`}
-        onPointerMove={dragPoint}
-        onPointerUp={() => setActivePoint(null)}
-        onPointerLeave={() => setActivePoint(null)}
+        onPointerMove={dragSelection}
+        onPointerUp={() => setActiveDrag(null)}
+        onPointerCancel={() => setActiveDrag(null)}
+        onPointerLeave={() => setActiveDrag(null)}
         style={{ width: '100%', maxWidth: W, alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none' }}
       >
         {(geometry.segments || []).map((seg, idx) => {
@@ -492,9 +513,19 @@ const GeometryEditor = ({ graphData, onChange }) => {
         {pointNames.map((name) => {
           const [x, y] = toSvg(geometry.points[name]);
           return (
-            <g key={name} onPointerDown={(event) => { event.preventDefault(); setActivePoint(name); }} style={{ cursor: 'grab' }}>
+            <g key={name} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'point', name }); }} style={{ cursor: 'grab' }}>
               <circle cx={x} cy={y} r="10" fill="#8b5cf6" />
               <text x={x} y={y - 15} textAnchor="middle" fill="#475569" fontSize="13" fontWeight="800">{name}</text>
+            </g>
+          );
+        })}
+        {(geometry.freeLabels || []).map((label, idx) => {
+          const point = Array.isArray(label.point) ? label.point : [label.x || 0, label.y || 0];
+          const [x, y] = toSvg(point);
+          return (
+            <g key={`label-${idx}`} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'freeLabel', index: idx }); }} style={{ cursor: 'grab' }}>
+              <circle cx={x} cy={y} r="12" fill="#dbeafe" opacity="0.65" />
+              <text x={x} y={y + 5} textAnchor="middle" fill={label.color || '#0369a1'} fontSize={label.fontSize || 15} fontStyle={label.italic === false ? 'normal' : 'italic'} fontWeight="800">{label.text}</text>
             </g>
           );
         })}
