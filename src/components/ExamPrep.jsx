@@ -400,7 +400,7 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
           position: 'relative',
           padding: '32px 32px 28px',
           borderRadius: '32px',
-          color: '#fff',
+          color: '#1e1b4b',
           overflow: 'hidden',
           background: 'linear-gradient(135deg, #a78bfa 0%, #c4b5fd 60%, #ddd6fe 100%)',
           boxShadow: '0 18px 36px -16px rgba(124,58,237,0.35)',
@@ -413,12 +413,12 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
         <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           {/* Row 1: badge + title */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'rgba(255,255,255,0.18)', backdropFilter: 'blur(6px)', display: 'grid', placeItems: 'center' }}>
+            <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'rgba(255,255,255,0.6)', backdropFilter: 'blur(6px)', display: 'grid', placeItems: 'center', color: '#5b21b6' }}>
               <GraduationCap size={24} />
             </div>
             <div>
-              <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', opacity: 0.75 }}>Exam Prep</div>
-              <h1 style={{ margin: '2px 0 0', fontSize: '1.8rem', fontWeight: 900, letterSpacing: '-0.01em' }}>Time to practise</h1>
+              <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5b21b6' }}>Exam Prep</div>
+              <h1 style={{ margin: '2px 0 0', fontSize: '1.8rem', fontWeight: 900, letterSpacing: '-0.01em', color: '#1e1b4b' }}>Time to practise</h1>
             </div>
           </div>
 
@@ -454,7 +454,7 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
               <Play size={18} /> {loading ? 'Loading…' : 'Start round'}
               <span style={{ fontSize: '0.8rem', fontWeight: 800, opacity: 0.65 }}>· 15 Qs</span>
             </button>
-            <div style={{ fontSize: '0.8rem', fontWeight: 700, opacity: 0.85, lineHeight: 1.4 }}>
+            <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#5b21b6', lineHeight: 1.4 }}>
               {hasTopics
                 ? `${selectedChips.length} ${selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher`
                 : 'Your teacher hasn\'t picked topics yet.'}
@@ -556,15 +556,15 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
 
 const GlassStat = ({ label, value }) => (
   <div style={{
-    background: 'rgba(255,255,255,0.14)',
+    background: 'rgba(255,255,255,0.55)',
     backdropFilter: 'blur(6px)',
-    border: '1px solid rgba(255,255,255,0.18)',
+    border: '1px solid rgba(255,255,255,0.7)',
     borderRadius: '16px',
     padding: '12px 14px',
     textAlign: 'center',
   }}>
-    <div style={{ fontSize: '0.65rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.75 }}>{label}</div>
-    <div style={{ fontSize: '1.6rem', fontWeight: 900, marginTop: '2px' }}>{value}</div>
+    <div style={{ fontSize: '0.65rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5b21b6' }}>{label}</div>
+    <div style={{ fontSize: '1.6rem', fontWeight: 900, marginTop: '2px', color: '#1e1b4b' }}>{value}</div>
   </div>
 );
 
