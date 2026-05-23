@@ -1415,7 +1415,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-7e', code: '7E', title: 'Discount' },
         { id: 'y8-7f', code: '7F', title: 'Percentage increase and decrease' },
         { id: 'y8-7g', code: '7G', title: 'The unitary method' },
-        { id: 'y8-7h', code: '7H', title: 'Simple interest II' }
+        { id: 'y8-7h', code: '7H', title: 'Simple interest II' },
+        { id: 'y8-7i', code: '7I', title: 'Review of percentages' }
       ]
     },
     {

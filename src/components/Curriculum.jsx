@@ -35,6 +35,7 @@ import { Y8_CH5H_QUESTIONS } from '../constants/seedYear8Ch5ReviewQuestions.js';
 import { Y8_CH6A_QUESTIONS } from '../constants/seedYear8Ch6Questions.js';
 import { Y8_CH6H_QUESTIONS } from '../constants/seedYear8Ch6ReviewQuestions.js';
 import { Y8_CH7A_QUESTIONS } from '../constants/seedYear8Ch7Questions.js';
+import { Y8_CH7I_QUESTIONS } from '../constants/seedYear8Ch7ReviewQuestions.js';
 import { Y8_CH9A_QUESTIONS } from '../constants/seedYear8Ch9Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
@@ -63,6 +64,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-5', chapterTitle: 'Chapter 5: Angles', topicId: 'y8-5a', topicCode: '5A', topicTitle: 'Angles', year: 'Year 8', seed: Y8_CH5A_QUESTIONS, label: 'Y8 Ch5 · Angles' },
   { chapterId: 'y8-6', chapterTitle: 'Chapter 6: Review of algebra', topicId: 'y8-6h', topicCode: '6H', topicTitle: 'Review of algebra', year: 'Year 8', seed: Y8_CH6H_QUESTIONS, label: 'Y8 Ch6 · Review' },
   { chapterId: 'y8-6', chapterTitle: 'Chapter 6: Substitution', topicId: 'y8-6a', topicCode: '6A', topicTitle: 'Substitution', year: 'Year 8', seed: Y8_CH6A_QUESTIONS, label: 'Y8 Ch6 · Substitution' },
+  { chapterId: 'y8-7', chapterTitle: 'Chapter 7: Percentages', topicId: 'y8-7i', topicCode: '7I', topicTitle: 'Review of percentages', year: 'Year 8', seed: Y8_CH7I_QUESTIONS, label: 'Y8 Ch7 · Review' },
   { chapterId: 'y8-7', chapterTitle: 'Chapter 7: Percentages', topicId: 'y8-7a', topicCode: '7A', topicTitle: 'Percentages', year: 'Year 8', seed: Y8_CH7A_QUESTIONS, label: 'Y8 Ch7 · Percentages' },
   { chapterId: 'y8-9', chapterTitle: 'Chapter 9: Pythagoras Theorem', topicId: 'y8-9a', topicCode: '9A', topicTitle: 'Pythagoras theorem', year: 'Year 8', seed: Y8_CH9A_QUESTIONS, label: 'Y8 Ch9 · Pythagoras theorem' },
 ];
