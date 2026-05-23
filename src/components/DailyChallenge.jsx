@@ -1213,6 +1213,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     } else if (isShortAnswer) {
       correct = answersMatch(optionText, currentQ.answer);
       if (correct) setScore(prev => prev + 1);
+    } else if (currentQ?.type === 'fill_blank') {
+      // Per-blank grading: every blank must match its expected answer.
+      // `optionText` arrives as an array of user-entered strings.
+      const blanks = Array.isArray(currentQ.blanks) ? currentQ.blanks : [];
+      const userArr = Array.isArray(optionText) ? optionText : [];
+      const perBlank = blanks.map((b, i) => answersMatch(userArr[i] || '', b.answer || ''));
+      correct = blanks.length > 0 && perBlank.every(Boolean);
+      currentQ.lastBlankResults = perBlank;
+      currentQ.pointsEarned = perBlank.filter(Boolean).length;
+      currentQ.totalPoints = blanks.length;
+      if (correct) setScore(prev => prev + 1);
     } else if (currentQ?.type === 'interactive_grid') {
       correct = Array.isArray(optionText) && optionText.length === parseInt(currentQ.answer, 10);
       if (correct) setScore(prev => prev + 1);

@@ -219,6 +219,9 @@ const slimQuestion = (data) => ({
   topicGroup: data.topicGroup || "",
   graphData: data.graphData || (data.diagram ? { diagram: data.diagram } : null),
   subQuestions: Array.isArray(data.subQuestions) ? data.subQuestions : [],
+  // fill_blank questions carry their per-blank metadata (label + answer)
+  // in `blanks`; without this they'd render as a single short-answer.
+  blanks: Array.isArray(data.blanks) ? data.blanks : [],
   requiresManualGrading: data.requiresManualGrading === true,
   isManual: data.isManual !== false,
 });

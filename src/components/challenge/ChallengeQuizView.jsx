@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Flag, Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
 import MathView from '../MathView';
@@ -53,6 +53,10 @@ const ChallengeQuizView = ({
   const sideScrollTouchYRef = useRef(null);
 
   const splitScreenHeight = 'calc(100dvh - 80px)';
+
+  // fill_blank: which blank the math symbol pad should write into.
+  const [focusedBlankIdx, setFocusedBlankIdx] = useState(0);
+  useEffect(() => { setFocusedBlankIdx(0); }, [currentIdx]);
 
   const scrollLeftColumnBy = (deltaY) => {
     const node = leftColumnRef.current;
@@ -383,7 +387,106 @@ const ChallengeQuizView = ({
                 </button>
               )}
             </div>
-          ) : currentQuestion?.type === 'short_answer' ? (
+          ) : currentQuestion?.type === 'fill_blank' ? (() => {
+            const blanks = Array.isArray(currentQuestion.blanks) ? currentQuestion.blanks : [];
+            const ensureArr = (val) => {
+              if (Array.isArray(val)) return [...val, ...Array(Math.max(0, blanks.length - val.length)).fill('')].slice(0, blanks.length);
+              return Array(blanks.length).fill('');
+            };
+            const answersArr = isFeedback ? ensureArr(userAnswers[currentIdx]) : ensureArr(selectedOption);
+            const perBlank = currentQuestion.lastBlankResults || [];
+            const updateBlank = (idx, val) => {
+              if (isFeedback) return;
+              const next = ensureArr(selectedOption);
+              next[idx] = val;
+              setSelectedOption(next);
+            };
+            const allFilled = answersArr.every((s) => String(s || '').trim() !== '');
+            return (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {/* Math symbol toolbar — inserts into the focused blank */}
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
+                  {MATH_SYMBOLS.map((symbol) => (
+                    <button
+                      key={symbol}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (isFeedback) return;
+                        const cur = ensureArr(selectedOption);
+                        cur[focusedBlankIdx] = (cur[focusedBlankIdx] || '') + symbol;
+                        setSelectedOption(cur);
+                      }}
+                      aria-disabled={isFeedback}
+                      style={{ width: '44px', height: '44px', borderRadius: '12px', border: '1px solid #e2e8f0', background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff', color: '#4f46e5', fontSize: symbol === '√' ? '1.3rem' : '1.1rem', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', fontFamily: '"KaTeX_Main", "Times New Roman", serif', lineHeight: 1, padding: 0, paddingBottom: symbol === '√' ? '2px' : 0 }}
+                    >
+                      {symbol}
+                    </button>
+                  ))}
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (isFeedback) return;
+                      const cur = ensureArr(selectedOption);
+                      cur[focusedBlankIdx] = (cur[focusedBlankIdx] || '').slice(0, -1);
+                      setSelectedOption(cur);
+                    }}
+                    aria-disabled={isFeedback}
+                    style={{ width: '64px', height: '44px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontSize: '0.8rem', fontWeight: 900, cursor: 'pointer', textTransform: 'uppercase' }}
+                  >
+                    Del
+                  </button>
+                </div>
+
+                {/* Blanks */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '20px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0' }}>
+                  {blanks.map((b, i) => {
+                    const status = isFeedback ? (perBlank[i] ? 'correct' : 'wrong') : (focusedBlankIdx === i ? 'focus' : 'idle');
+                    const borderColor = status === 'correct' ? '#10b981' : status === 'wrong' ? '#ef4444' : status === 'focus' ? '#6366f1' : '#e2e8f0';
+                    const bg = status === 'correct' ? '#f0fdf4' : status === 'wrong' ? '#fef2f2' : '#fff';
+                    return (
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                        {b.label && (
+                          <div style={{ minWidth: '60px' }}>
+                            <MathView content={b.label} style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '1.1rem' }} />
+                          </div>
+                        )}
+                        <input
+                          type="text"
+                          inputMode="text"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoCapitalize="off"
+                          spellCheck={false}
+                          readOnly={isFeedback}
+                          value={answersArr[i] || ''}
+                          onChange={(e) => updateBlank(i, e.target.value)}
+                          onFocus={() => setFocusedBlankIdx(i)}
+                          placeholder="—"
+                          style={{ flex: 1, padding: '14px 16px', borderRadius: '14px', border: `2px solid ${borderColor}`, background: bg, fontWeight: 700, fontSize: '1.05rem', fontFamily: '"KaTeX_Main", "Times New Roman", serif', textAlign: 'center', outline: 'none', letterSpacing: '0.04em' }}
+                        />
+                        {isFeedback && !perBlank[i] && (
+                          <div style={{ fontSize: '0.75rem', color: '#166534', fontWeight: 800, background: '#f0fdf4', padding: '4px 10px', borderRadius: '8px', whiteSpace: 'nowrap' }}>
+                            <MathView content={String(b.answer || '')} style={{ display: 'inline' }} />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {!isFeedback && (
+                  <button
+                    onClick={() => handleAnswer(ensureArr(selectedOption))}
+                    disabled={!allFilled}
+                    className="app-button app-button--primary"
+                    style={{ padding: '18px', borderRadius: '20px' }}
+                  >
+                    Submit Answer
+                  </button>
+                )}
+              </div>
+            );
+          })() : currentQuestion?.type === 'short_answer' ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {/* Math Symbol Toolbar */}
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
