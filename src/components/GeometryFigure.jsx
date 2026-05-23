@@ -149,14 +149,17 @@ const GeometryFigure = ({
       dy = -1;
     }
 
+    const rx = ang.labelPos ? ((ang.labelPos[0] - minX) * scale + pad) : vx;
+    const ry = ang.labelPos ? ((maxY - ang.labelPos[1]) * scale + pad) : vy;
+
     if (ang.right) {
       const sz = 12;
-      const bx1 = vx + dx * sz + dy * sz;
-      const by1 = vy + dy * sz - dx * sz;
-      const bx2 = vx + dx * sz;
-      const by2 = vy + dy * sz;
-      const bx3 = vx + dy * sz;
-      const by3 = vy - dx * sz;
+      const bx1 = rx + dx * sz + dy * sz;
+      const by1 = ry + dy * sz - dx * sz;
+      const bx2 = rx + dx * sz;
+      const by2 = ry + dy * sz;
+      const bx3 = rx + dy * sz;
+      const by3 = ry - dx * sz;
       els.push(
         <polyline
           key={`ar${key++}`}
@@ -167,8 +170,12 @@ const GeometryFigure = ({
     }
 
     if (ang.label) {
-      const lx = ang.labelPos ? ((ang.labelPos[0] - minX) * scale + pad) : (vx + dx * 26);
-      const ly = ang.labelPos ? ((maxY - ang.labelPos[1]) * scale + pad) : (vy + dy * 26);
+      const lx = ang.labelPos
+        ? (((ang.labelPos[0] - minX) * scale + pad) + (ang.right ? dx * 16 : 0))
+        : (vx + dx * 26);
+      const ly = ang.labelPos
+        ? (((maxY - ang.labelPos[1]) * scale + pad) + (ang.right ? dy * 16 : 0))
+        : (vy + dy * 26);
       els.push(
         <text
           key={`al${key++}`}

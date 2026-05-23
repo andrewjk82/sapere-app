@@ -519,23 +519,69 @@ const GeometryEditor = ({ graphData, onChange }) => {
             if (!geometry.points[ang.at]) return null;
             const [vx, vy] = toSvg(geometry.points[ang.at]);
             const [dx, dy] = edNorm(edCx - vx, edCy - vy);
+            const rx = ang.labelPos ? toSvg(ang.labelPos)[0] : vx;
+            const ry = ang.labelPos ? toSvg(ang.labelPos)[1] : vy;
+            const els = [];
+
             if (ang.right) {
               const sz = 12;
-              return (
-                <g key={`ang-${idx}`}>
-                  <polyline points={`${vx + dx * sz + dy * sz},${vy + dy * sz - dx * sz} ${vx + dx * sz},${vy + dy * sz} ${vx + dy * sz},${vy - dx * sz}`} fill="none" stroke="#1e3a5f" strokeWidth="1.5" />
-                </g>
+              els.push(
+                <polyline
+                  key="rt"
+                  points={`${rx + dx * sz + dy * sz},${ry + dy * sz - dx * sz} ${rx + dx * sz},${ry + dy * sz} ${rx + dy * sz},${ry - dx * sz}`}
+                  fill="none"
+                  stroke="#7c3aed"
+                  strokeWidth="2"
+                />
               );
             }
-            if (!ang.label) return null;
-            const lx = ang.labelPos ? toSvg(ang.labelPos)[0] : vx + dx * 26;
-            const ly = ang.labelPos ? toSvg(ang.labelPos)[1] : vy + dy * 26;
-            return (
-              <g key={`ang-${idx}`} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'angle', index: idx }); }} style={{ cursor: 'grab' }}>
-                <circle cx={lx} cy={ly} r="14" fill="#7c3aed" opacity="0.10" />
-                <text x={lx} y={ly + 5} textAnchor="middle" fill="#7c3aed" fontSize="14" fontStyle="italic" fontWeight="700">
+
+            if (ang.label) {
+              const lx = ang.right ? rx + dx * 16 : rx;
+              const ly = ang.right ? ry + dy * 16 : ry;
+              els.push(
+                <text
+                  key="lbl"
+                  x={lx}
+                  y={ly + 5}
+                  textAnchor="middle"
+                  fill="#7c3aed"
+                  fontSize="14"
+                  fontStyle="italic"
+                  fontWeight="700"
+                >
                   {ang.label}
                 </text>
+              );
+            }
+
+            if (!ang.right && !ang.label) {
+              els.push(
+                <circle
+                  key="helper"
+                  cx={rx + dx * 12}
+                  cy={ry + dy * 12}
+                  r="6"
+                  fill="#7c3aed"
+                  opacity="0.4"
+                />
+              );
+            }
+
+            const clickX = ang.right ? rx + dx * 6 : rx;
+            const clickY = ang.right ? ry + dy * 6 : ry;
+
+            return (
+              <g
+                key={`ang-${idx}`}
+                onPointerDown={(event) => {
+                  event.preventDefault();
+                  setActiveDrag({ type: 'angle', index: idx });
+                }}
+                style={{ cursor: 'grab' }}
+              >
+                <circle cx={clickX} cy={clickY} r="14" fill="#7c3aed" opacity="0.1" />
+                {els}
               </g>
             );
           });

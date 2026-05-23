@@ -114,20 +114,27 @@ export const geometryToSvgMarkup = ({
       dy = -1;
     }
 
+    const rx = angle.labelPos ? (((Number(angle.labelPos[0]) || 0) - minX) * scale + pad) : vx;
+    const ry = angle.labelPos ? ((maxY - (Number(angle.labelPos[1]) || 0)) * scale + pad) : vy;
+
     if (angle.right) {
       const sz = 12;
-      const bx1 = vx + dx * sz + dy * sz;
-      const by1 = vy + dy * sz - dx * sz;
-      const bx2 = vx + dx * sz;
-      const by2 = vy + dy * sz;
-      const bx3 = vx + dy * sz;
-      const by3 = vy - dx * sz;
+      const bx1 = rx + dx * sz + dy * sz;
+      const by1 = ry + dy * sz - dx * sz;
+      const bx2 = rx + dx * sz;
+      const by2 = ry + dy * sz;
+      const bx3 = rx + dy * sz;
+      const by3 = ry - dx * sz;
       els.push(`<polyline points="${bx1},${by1} ${bx2},${by2} ${bx3},${by3}" fill="none" stroke="#1e3a5f" stroke-width="1.5" />`);
     }
 
     if (angle.label) {
-      const lx = angle.labelPos ? (((Number(angle.labelPos[0]) || 0) - minX) * scale + pad) : (vx + dx * 26);
-      const ly = angle.labelPos ? ((maxY - (Number(angle.labelPos[1]) || 0)) * scale + pad) : (vy + dy * 26);
+      const lx = angle.labelPos
+        ? ((((Number(angle.labelPos[0]) || 0) - minX) * scale + pad) + (angle.right ? dx * 16 : 0))
+        : (vx + dx * 26);
+      const ly = angle.labelPos
+        ? (((maxY - (Number(angle.labelPos[1]) || 0)) * scale + pad) + (angle.right ? dy * 16 : 0))
+        : (vy + dy * 26);
       els.push(svgText(`x="${lx}" y="${ly + 5}" text-anchor="middle" fill="#1e3a5f" font-size="15" font-style="italic"`, angle.label));
     }
   });
