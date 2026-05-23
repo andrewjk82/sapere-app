@@ -378,6 +378,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
   if (!geometry) return null;
 
   const pointNames = Object.keys(geometry.points || {});
+  if (pointNames.length === 0) return null;
   const updateGeometry = (nextGeometry) => {
     onChange(withGeometrySnapshot({ ...(graphData || {}), geometry: nextGeometry }));
   };
@@ -431,29 +432,24 @@ const GeometryEditor = ({ graphData, onChange }) => {
     updateGeometry({ ...geometry, freeLabels });
   };
 
-  const labelPoints = (geometry.freeLabels || [])
-    .map((label) => (Array.isArray(label.point) ? label.point : [label.x, label.y]))
-    .filter((point) => point.every((coord) => Number.isFinite(Number(coord))));
-  const xs = [
-    ...pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0),
-    ...labelPoints.map((point) => Number(point[0]) || 0),
-  ];
-  const ys = [
-    ...pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0),
-    ...labelPoints.map((point) => Number(point[1]) || 0),
-  ];
-  const minX = Math.min(...xs, -1);
-  const maxX = Math.max(...xs, 1);
-  const minY = Math.min(...ys, -1);
-  const maxY = Math.max(...ys, 1);
-  const pad = 34;
-  const W = 360;
-  const H = 260;
+  const xs = pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0);
+  const ys = pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0);
+  const minX = Math.min(...xs);
+  const maxX = Math.max(...xs);
+  const minY = Math.min(...ys);
+  const maxY = Math.max(...ys);
+  const pad = 48;
+  const figureWidth = Number(geometry.width) || 300;
   const spanX = maxX - minX || 1;
   const spanY = maxY - minY || 1;
+  const inner = Math.max(120, figureWidth - pad * 2);
+  const scale = inner / Math.max(spanX, spanY);
+  const W = spanX * scale + pad * 2;
+  const H = spanY * scale + pad * 2;
+  const showPointLabels = geometry.showPointLabels !== false;
   const toSvg = (pt) => [
-    pad + ((Number(pt[0]) - minX) / spanX) * (W - pad * 2),
-    pad + ((maxY - Number(pt[1])) / spanY) * (H - pad * 2),
+    ((Number(pt[0]) || 0) - minX) * scale + pad,
+    (maxY - (Number(pt[1]) || 0)) * scale + pad,
   ];
   const fromPointer = (event) => {
     const rect = surfaceRef.current?.getBoundingClientRect();
@@ -462,8 +458,8 @@ const GeometryEditor = ({ graphData, onChange }) => {
     const rawY = ((event.clientY - rect.top) / (rect.height || H)) * H;
     const sx = Math.min(W - pad, Math.max(pad, rawX));
     const sy = Math.min(H - pad, Math.max(pad, rawY));
-    const x = minX + ((sx - pad) / (W - pad * 2)) * spanX;
-    const y = maxY - ((sy - pad) / (H - pad * 2)) * spanY;
+    const x = minX + ((sx - pad) / scale);
+    const y = maxY - ((sy - pad) / scale);
     return [Number(x.toFixed(2)), Number(y.toFixed(2))];
   };
 
@@ -502,7 +498,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
         onPointerUp={() => setActiveDrag(null)}
         onPointerCancel={() => setActiveDrag(null)}
         onPointerLeave={() => setActiveDrag(null)}
-        style={{ width: '100%', maxWidth: W, alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none' }}
+        style={{ width: '100%', maxWidth: Math.max(W, 260), alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none', overflow: 'visible' }}
       >
         {(geometry.segments || []).map((seg, idx) => {
           if (!geometry.points[seg.from] || !geometry.points[seg.to]) return null;
@@ -514,8 +510,9 @@ const GeometryEditor = ({ graphData, onChange }) => {
           const [x, y] = toSvg(geometry.points[name]);
           return (
             <g key={name} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'point', name }); }} style={{ cursor: 'grab' }}>
-              <circle cx={x} cy={y} r="10" fill="#8b5cf6" />
-              <text x={x} y={y - 15} textAnchor="middle" fill="#475569" fontSize="13" fontWeight="800">{name}</text>
+              <circle cx={x} cy={y} r="9" fill="#8b5cf6" opacity="0.16" />
+              <circle cx={x} cy={y} r="4.5" fill="#1e3a5f" />
+              {showPointLabels && <text x={x} y={y - 15} textAnchor="middle" fill="#475569" fontSize="13" fontWeight="800">{name}</text>}
             </g>
           );
         })}
@@ -524,7 +521,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
           const [x, y] = toSvg(point);
           return (
             <g key={`label-${idx}`} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'freeLabel', index: idx }); }} style={{ cursor: 'grab' }}>
-              <circle cx={x} cy={y} r="12" fill="#dbeafe" opacity="0.65" />
+              <circle cx={x} cy={y} r="11" fill="#0ea5e9" opacity="0.08" />
               <text x={x} y={y + 5} textAnchor="middle" fill={label.color || '#0369a1'} fontSize={label.fontSize || 15} fontStyle={label.italic === false ? 'normal' : 'italic'} fontWeight="800">{label.text}</text>
             </g>
           );
