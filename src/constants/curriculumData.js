@@ -1333,7 +1333,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-2',
       title: 'Chapter 2: Fractions and decimals',
-      modules: 7,
+      modules: 8,
       topics: [
         { id: 'y8-2a', code: '2A', title: 'Equivalent fractions and simplest form' },
         { id: 'y8-2b', code: '2B', title: 'Adding and subtracting fractions' },
@@ -1341,7 +1341,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-2d', code: '2D', title: 'The unitary method' },
         { id: 'y8-2e', code: '2E', title: 'Decimal notation' },
         { id: 'y8-2f', code: '2F', title: 'Operations on decimals' },
-        { id: 'y8-2g', code: '2G', title: 'Fractions, decimals and rounding' }
+        { id: 'y8-2g', code: '2G', title: 'Fractions, decimals and rounding' },
+        { id: 'y8-2h', code: '2H', title: 'Review of fractions and decimals' }
       ]
     },
     {
