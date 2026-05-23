@@ -547,19 +547,40 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
             Finish a round to see your topic breakdown.
           </div>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {analysis.slice(0, 8).map((t) => {
-              const color = t.attempted < 3 ? '#94a3b8' : t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+              // Tier the row by % so the background tint instantly communicates
+              // strong / weak topics at a glance.
+              const tier = t.attempted < 3
+                ? 'neutral'
+                : t.pct < 50
+                  ? 'weak'
+                  : t.pct < 75
+                    ? 'mid'
+                    : 'strong';
+              const palette = {
+                neutral: { bg: '#f8fafc', border: '#e2e8f0', track: '#e2e8f0', accent: '#94a3b8' },
+                weak:    { bg: '#fef2f2', border: '#fecaca', track: '#fee2e2', accent: '#ef4444' },
+                mid:     { bg: '#fffbeb', border: '#fde68a', track: '#fef3c7', accent: '#f59e0b' },
+                strong:  { bg: '#f0fdf4', border: '#bbf7d0', track: '#dcfce7', accent: '#10b981' },
+              }[tier];
               return (
-                <div key={t.topicId} style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 80px', gap: '14px', alignItems: 'center' }}>
+                <div
+                  key={t.topicId}
+                  style={{
+                    display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 80px', gap: '14px', alignItems: 'center',
+                    padding: '12px 16px', borderRadius: '14px',
+                    background: palette.bg, border: `1px solid ${palette.border}`,
+                  }}
+                >
                   <div>
                     <div style={{ fontWeight: 800, color: '#1e293b', fontSize: '0.85rem', marginBottom: '6px' }}>{t.title}</div>
-                    <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '999px', overflow: 'hidden' }}>
-                      <div style={{ height: '100%', width: `${t.pct}%`, background: color, transition: 'width 0.4s' }} />
+                    <div style={{ height: '8px', background: palette.track, borderRadius: '999px', overflow: 'hidden' }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, background: palette.accent, transition: 'width 0.4s' }} />
                     </div>
                   </div>
                   <div style={{ textAlign: 'right' }}>
-                    <div style={{ fontSize: '1.05rem', fontWeight: 900, color }}>{t.pct}%</div>
+                    <div style={{ fontSize: '1.05rem', fontWeight: 900, color: palette.accent }}>{t.pct}%</div>
                     <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#94a3b8' }}>{t.correct}/{t.attempted}</div>
                   </div>
                 </div>
