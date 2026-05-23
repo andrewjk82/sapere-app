@@ -402,8 +402,8 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
           borderRadius: '32px',
           color: '#fff',
           overflow: 'hidden',
-          background: 'linear-gradient(135deg, #4338ca 0%, #7c3aed 55%, #a855f7 100%)',
-          boxShadow: '0 24px 50px -18px rgba(124,58,237,0.55)',
+          background: 'linear-gradient(135deg, #a78bfa 0%, #c4b5fd 60%, #ddd6fe 100%)',
+          boxShadow: '0 18px 36px -16px rgba(124,58,237,0.35)',
         }}
       >
         {/* decorative glow */}
