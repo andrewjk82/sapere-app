@@ -1426,7 +1426,8 @@ export const CURRICULUM_DATA = {
       topics: [
         { id: 'y8-8a', code: '8A', title: "Applying Pythagoras' theorem" },
         { id: 'y8-8b', code: '8B', title: 'Finding a shorter side' },
-        { id: 'y8-8c', code: '8C', title: 'Irrational numbers' }
+        { id: 'y8-8c', code: '8C', title: 'Irrational numbers' },
+        { id: 'y8-8d', code: '8D', title: "Review of Pythagoras' theorem" }
       ]
     },
     {
