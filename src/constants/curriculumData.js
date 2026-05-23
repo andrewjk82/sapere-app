@@ -1399,7 +1399,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-6d', code: '6D', title: 'Solving equations with brackets' },
         { id: 'y8-6e', code: '6E', title: 'Collecting like terms and solving equations' },
         { id: 'y8-6f', code: '6F', title: 'Problem-solving using algebra' },
-        { id: 'y8-6g', code: '6G', title: 'Multiplying and dividing algebraic fractions' }
+        { id: 'y8-6g', code: '6G', title: 'Multiplying and dividing algebraic fractions' },
+        { id: 'y8-6h', code: '6H', title: 'Review of algebra' }
       ]
     },
     {
