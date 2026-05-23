@@ -190,6 +190,75 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
             <Stat label="Attempted" value={attempted} color="#1e1b4b" />
           </div>
 
+          {/* Teacher-driven topic picker. Lives here (NOT on the student
+              app) — the student only sees the chosen chapters and a Start
+              button on their Exam Prep page. */}
+          <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: "16px", padding: "18px 20px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
+              <Target size={16} color="#7c3aed" />
+              <span style={{ fontWeight: 900, color: "#1e1b4b", fontSize: "0.9rem" }}>Exam topics for this student</span>
+              <span style={{ marginLeft: "auto", fontSize: "0.7rem", color: "#94a3b8", fontWeight: 800 }}>
+                {selection.chapters.length} selected
+              </span>
+            </div>
+
+            {/* Year tabs */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "12px" }}>
+              {allYearKeys.map((y) => {
+                const on = selection.years.includes(y);
+                const isActive = activeYear === y;
+                return (
+                  <button
+                    key={y}
+                    type="button"
+                    onClick={() => { setActiveYear(y); if (!on) toggleYear(y); }}
+                    style={{
+                      padding: "6px 12px", borderRadius: "999px",
+                      border: `1px solid ${isActive ? "#7c3aed" : on ? "#c4b5fd" : "#e2e8f0"}`,
+                      background: isActive ? "#ede9fe" : on ? "#faf5ff" : "#fff",
+                      color: isActive ? "#5b21b6" : on ? "#6d28d9" : "#475569",
+                      fontWeight: 800, fontSize: "0.78rem", cursor: "pointer",
+                    }}
+                  >
+                    {y}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Chapter checkboxes for the active year */}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "8px" }}>
+              {yearChapters.length === 0 ? (
+                <div style={{ gridColumn: "1 / -1", padding: "16px", background: "#f8fafc", borderRadius: "12px", color: "#94a3b8", fontWeight: 700, textAlign: "center", fontSize: "0.85rem" }}>
+                  No chapters defined for {activeYear} yet.
+                </div>
+              ) : yearChapters.map((ch) => {
+                const on = selection.chapters.includes(ch.id);
+                return (
+                  <label
+                    key={ch.id}
+                    style={{
+                      display: "flex", alignItems: "center", gap: "10px",
+                      padding: "10px 12px", borderRadius: "12px",
+                      border: `1.5px solid ${on ? "#a78bfa" : "#e2e8f0"}`,
+                      background: on ? "#faf5ff" : "#fff",
+                      cursor: "pointer", userSelect: "none",
+                    }}
+                  >
+                    <input
+                      type="checkbox" checked={on}
+                      onChange={() => toggleChapter(ch.id)}
+                      style={{ width: "16px", height: "16px", accentColor: "#7c3aed", cursor: "pointer" }}
+                    />
+                    <span style={{ fontWeight: 700, color: on ? "#5b21b6" : "#334155", fontSize: "0.85rem", lineHeight: 1.3 }}>
+                      {ch.title}
+                    </span>
+                  </label>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Topic analysis */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>

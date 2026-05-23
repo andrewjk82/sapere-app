@@ -407,6 +407,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         calculationEnabled: data.calculationEnabled !== false,
         showHscGraph: data.showHscGraph === true,
         examPrepEnabled: data.examPrepEnabled === true,
+        examPrepSelection: data.examPrepSelection || { years: [], chapters: [] },
       });
       setLoading(false);
     };
