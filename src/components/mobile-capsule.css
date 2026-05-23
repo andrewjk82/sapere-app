@@ -182,5 +182,13 @@
     right: auto !important;
     width: 320px !important;
   }
+
+  /* The mobile user capsule (avatar + Trophy/Settings/Bell/Logout) duplicates
+     what the desktop sidebar already shows in its footer. Hide it on
+     desktop so it stops floating over the layout. */
+  .mobile-user-capsule,
+  .mobile-user-capsule__version {
+    display: none !important;
+  }
 }
 
