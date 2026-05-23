@@ -238,7 +238,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       {/* Question text first, then the figure — questions refer to the
           diagram as "below". */}
       <div ref={containerRef} style={combinedStyle} />
-      {diagramSvgSrc ? (
+      {diagramSvgSrc && !graphData?.geometry ? (
         <img
           src={diagramSvgSrc}
           alt="Diagram"

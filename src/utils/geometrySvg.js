@@ -31,6 +31,7 @@ export const geometryToSvgMarkup = ({
   freeLabels = [],
   showPointLabels = true,
   width = 300,
+  fontSize = 14,
 } = {}) => {
   const names = Object.keys(points);
   if (names.length === 0) return '';
@@ -67,7 +68,7 @@ export const geometryToSvgMarkup = ({
     if (!points[seg.from] || !points[seg.to]) return;
     const [ax, ay] = P(seg.from);
     const [bx, by] = P(seg.to);
-    els.push(svgLine(`x1="${ax}" y1="${ay}" x2="${bx}" y2="${by}" stroke="#1e3a5f" stroke-width="2.2" stroke-linecap="round"${seg.dashed ? ' stroke-dasharray="6 4"' : ''}`));
+    els.push(svgLine(`x1="${ax}" y1="${ay}" x2="${bx}" y2="${by}" stroke="#000000" stroke-width="1.2" stroke-linecap="round"${seg.dashed ? ' stroke-dasharray="6 4"' : ''}`));
 
     const [ux, uy] = norm(bx - ax, by - ay);
     const [px, py] = [-uy, ux];
@@ -79,7 +80,7 @@ export const geometryToSvgMarkup = ({
         const off = (i - (seg.ticks - 1) / 2) * 6;
         const tx = mx + ux * off;
         const ty = my + uy * off;
-        els.push(svgLine(`x1="${tx + px * 6}" y1="${ty + py * 6}" x2="${tx - px * 6}" y2="${ty - py * 6}" stroke="#1e3a5f" stroke-width="2"`));
+        els.push(svgLine(`x1="${tx + px * 6}" y1="${ty + py * 6}" x2="${tx - px * 6}" y2="${ty - py * 6}" stroke="#000000" stroke-width="1.2"`));
       }
     }
 
@@ -92,7 +93,7 @@ export const geometryToSvgMarkup = ({
         const by1 = my + uy * (off - 4) + py * 5;
         const bx2 = mx + ux * (off - 4) - px * 5;
         const by2 = my + uy * (off - 4) - py * 5;
-        els.push(`<polyline points="${bx1},${by1} ${tipx},${tipy} ${bx2},${by2}" fill="none" stroke="#1e3a5f" stroke-width="2" />`);
+        els.push(`<polyline points="${bx1},${by1} ${tipx},${tipy} ${bx2},${by2}" fill="none" stroke="#000000" stroke-width="1.2" />`);
       }
     }
 
@@ -101,7 +102,7 @@ export const geometryToSvgMarkup = ({
       const a1y = by - uy * 11 + py * 6;
       const a2x = bx - ux * 11 - px * 6;
       const a2y = by - uy * 11 - py * 6;
-      els.push(`<polyline points="${a1x},${a1y} ${bx},${by} ${a2x},${a2y}" fill="none" stroke="#1e3a5f" stroke-width="2.2" />`);
+      els.push(`<polyline points="${a1x},${a1y} ${bx},${by} ${a2x},${a2y}" fill="none" stroke="#000000" stroke-width="1.2" />`);
     }
   });
 
@@ -129,11 +130,11 @@ export const geometryToSvgMarkup = ({
       const by2 = vy + sqrt2 * dy * sz;
       const bx3 = vx + ((dx - dy) / sqrt2) * sz;
       const by3 = vy + ((dy + dx) / sqrt2) * sz;
-      els.push(`<polyline points="${bx1},${by1} ${bx2},${by2} ${bx3},${by3}" fill="none" stroke="#1e3a5f" stroke-width="1.5" />`);
+      els.push(`<polyline points="${bx1},${by1} ${bx2},${by2} ${bx3},${by3}" fill="none" stroke="#000000" stroke-width="1.0" />`);
     }
 
     if (angle.label) {
-      els.push(svgText(`x="${rx}" y="${ry + 5}" text-anchor="middle" fill="#1e3a5f" font-size="15" font-style="italic"`, angle.label));
+      els.push(svgText(`x="${rx}" y="${ry + 5}" text-anchor="middle" fill="#000000" font-size="${fontSize}" font-style="italic" font-family='"KaTeX_Main", "Times New Roman", serif'`, angle.label));
     }
   });
 
@@ -149,7 +150,7 @@ export const geometryToSvgMarkup = ({
     const towardIn = (mx - px - cx) ** 2 + (my - py - cy) ** 2;
     const outward = label.side === 'in' ? towardOut < towardIn : towardOut > towardIn;
     if (!outward) { px = -px; py = -py; }
-    els.push(svgText(`x="${mx + px * 16}" y="${my + py * 16 + 5}" text-anchor="middle" fill="#1e3a5f" font-size="14"`, label.text));
+    els.push(svgText(`x="${mx + px * 16}" y="${my + py * 16 + 5}" text-anchor="middle" fill="#000000" font-size="${fontSize}" font-family='"KaTeX_Main", "Times New Roman", serif'`, label.text));
   });
 
   freeLabels.forEach((label) => {
@@ -158,7 +159,7 @@ export const geometryToSvgMarkup = ({
       ((Number(pt[0]) || 0) - minX) * scale + pad,
       (maxY - (Number(pt[1]) || 0)) * scale + pad,
     ];
-    els.push(svgText(`x="${x}" y="${y}" text-anchor="middle" fill="${label.color || '#0369a1'}" font-size="${label.fontSize || 15}" font-style="${label.italic === false ? 'normal' : 'italic'}"`, label.text));
+    els.push(svgText(`x="${x}" y="${y}" text-anchor="middle" fill="#000000" font-size="${fontSize}" font-style="${label.italic === false ? 'normal' : 'italic'}" font-family='"KaTeX_Main", "Times New Roman", serif'`, label.text));
   });
 
   names.forEach((name) => {
@@ -169,9 +170,9 @@ export const geometryToSvgMarkup = ({
         dx = 0;
         dy = -1;
       }
-      els.push(svgText(`x="${vx + dx * 16}" y="${vy + dy * 16 + 5}" text-anchor="middle" fill="#475569" font-size="14" font-style="italic" font-weight="600"`, name));
+      els.push(svgText(`x="${vx + dx * 16}" y="${vy + dy * 16 + 5}" text-anchor="middle" fill="#000000" font-size="${fontSize}" font-style="italic" font-weight="600" font-family='"KaTeX_Main", "Times New Roman", serif'`, name));
     }
-    els.push(`<circle cx="${vx}" cy="${vy}" r="2.6" fill="#1e3a5f" />`);
+    els.push(`<circle cx="${vx}" cy="${vy}" r="1.0" fill="#000000" />`);
   });
 
   return `<svg xmlns="${SVG_NS}" width="${drawW}" height="${drawH}" viewBox="0 0 ${drawW} ${drawH}" role="img" aria-label="Geometry diagram">${els.join('')}</svg>`;
