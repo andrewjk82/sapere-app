@@ -4,7 +4,7 @@ import {
   ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import MathView from './MathView';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
 import QuestionBankModal from './QuestionBankModal';
@@ -65,6 +65,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     if (!window.confirm(`Delete this question (${q.id})?`)) return;
     try {
       await updateDoc(doc(db, 'questions', q.id), { isActive: false, updatedAt: serverTimestamp() });
+      // Bump the global questions sync_meta so chapter-card counts on the
+      // Curriculum page refresh on next visit instead of staying stale.
+      await setDoc(doc(db, 'sync_meta', 'questions'), {
+        version: Date.now(),
+        updatedAt: serverTimestamp(),
+      }, { merge: true }).catch(() => {});
       showToast('Question deleted', 'success');
       await reload();
     } catch (e) {

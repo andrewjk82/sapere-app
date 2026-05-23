@@ -1,5 +1,5 @@
 import { db } from '../firebase/config';
-import { collection, writeBatch, doc, serverTimestamp } from 'firebase/firestore';
+import { collection, writeBatch, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 /**
  * Generic chapter question seeder.
@@ -100,6 +100,17 @@ export const seedChapterQuestions = async (chapter) => {
       batch.set(docRef, mapSeedQuestion(raw, chapter), { merge: true });
     });
     await batch.commit();
+  }
+  // Bump the questions sync_meta so the Curriculum chapter cards know to
+  // refetch their per-chapter counts on next mount; without this the cached
+  // "N questions" pill stays at its pre-seed value.
+  try {
+    await setDoc(doc(db, 'sync_meta', 'questions'), {
+      version: Date.now(),
+      updatedAt: serverTimestamp(),
+    }, { merge: true });
+  } catch (err) {
+    console.warn('sync_meta bump after seed failed (non-fatal):', err);
   }
   return seed.length;
 };

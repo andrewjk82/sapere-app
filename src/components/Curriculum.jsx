@@ -66,7 +66,12 @@ import './hsc-chart.css';
 
 
 const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
-const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v3';
+// Bump the cache key suffix to invalidate every client's stored counts once.
+// Pre-existing caches were written before the seeder & delete paths bumped
+// sync_meta, so chapter cards could show pre-seed numbers indefinitely even
+// after thousands of questions were added. Forcing one re-fetch resyncs all
+// existing installs.
+const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v4';
 const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 const ADMIN_TOOL_COUNT_IDS = [
@@ -750,12 +755,24 @@ const Curriculum = () => {
     if (!window.confirm(`Seed ${entry.seed.length} questions for ${entry.label}? Existing questions for this topic will be replaced.`)) return;
     setIsMigrating(true);
     try {
-      const count = await seedChapterQuestions(entry);
-      showToast(`Seeded ${count} questions for ${entry.label}.`, 'success');
+      await seedChapterQuestions(entry);
+      // The seeder is a non-destructive upsert (set merge:true), so the
+      // chapter's *total* count is seed.length + any pre-existing questions.
+      // Fetch the live count from the server instead of trusting seed.length.
+      let liveCount = entry.seed.length;
+      try {
+        const snap = await getCountFromServer(
+          query(collection(db, 'questions'), where('chapterId', '==', entry.chapterId))
+        );
+        liveCount = snap.data().count || 0;
+      } catch (e) {
+        console.warn('Post-seed count fetch failed; falling back to seed length:', e);
+      }
+      showToast(`Seeded ${entry.label}. Chapter now has ${liveCount} questions.`, 'success');
       if (typeof window !== 'undefined') {
         const cached = loadCachedQuestionCounts();
-        cached.counts[entry.chapterId] = count;
-        saveCachedQuestionCounts(cached.counts, cached.version);
+        cached.counts[entry.chapterId] = liveCount;
+        saveCachedQuestionCounts(cached.counts, Date.now());
         setQuestionCounts({ ...cached.counts });
       }
     } catch (err) {
