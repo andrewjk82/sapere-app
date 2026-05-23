@@ -108,7 +108,23 @@ export const geometryToSvgMarkup = ({
   angles.forEach((angle) => {
     if (!points[angle.at]) return;
     const [vx, vy] = P(angle.at);
-    const [dx, dy] = norm(cx - vx, cy - vy);
+    let [dx, dy] = norm(cx - vx, cy - vy);
+    if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
+      dx = 0;
+      dy = -1;
+    }
+
+    if (angle.right) {
+      const sz = 12;
+      const bx1 = vx + dx * sz + dy * sz;
+      const by1 = vy + dy * sz - dx * sz;
+      const bx2 = vx + dx * sz;
+      const by2 = vy + dy * sz;
+      const bx3 = vx + dy * sz;
+      const by3 = vy - dx * sz;
+      els.push(`<polyline points="${bx1},${by1} ${bx2},${by2} ${bx3},${by3}" fill="none" stroke="#1e3a5f" stroke-width="1.5" />`);
+    }
+
     if (angle.label) {
       const lx = angle.labelPos ? (((Number(angle.labelPos[0]) || 0) - minX) * scale + pad) : (vx + dx * 26);
       const ly = angle.labelPos ? ((maxY - (Number(angle.labelPos[1]) || 0)) * scale + pad) : (vy + dy * 26);

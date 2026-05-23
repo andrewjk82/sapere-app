@@ -143,7 +143,29 @@ const GeometryFigure = ({
   // --- Angle marks / labels --------------------------------------------
   angles.forEach((ang) => {
     const [vx, vy] = P(ang.at);
-    const [dx, dy] = norm(cx - vx, cy - vy);   // toward interior
+    let [dx, dy] = norm(cx - vx, cy - vy);   // toward interior
+    if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
+      dx = 0;
+      dy = -1;
+    }
+
+    if (ang.right) {
+      const sz = 12;
+      const bx1 = vx + dx * sz + dy * sz;
+      const by1 = vy + dy * sz - dx * sz;
+      const bx2 = vx + dx * sz;
+      const by2 = vy + dy * sz;
+      const bx3 = vx + dy * sz;
+      const by3 = vy - dx * sz;
+      els.push(
+        <polyline
+          key={`ar${key++}`}
+          points={`${bx1},${by1} ${bx2},${by2} ${bx3},${by3}`}
+          fill="none" stroke="#1e3a5f" strokeWidth="1.5"
+        />
+      );
+    }
+
     if (ang.label) {
       const lx = ang.labelPos ? ((ang.labelPos[0] - minX) * scale + pad) : (vx + dx * 26);
       const ly = ang.labelPos ? ((maxY - ang.labelPos[1]) * scale + pad) : (vy + dy * 26);
