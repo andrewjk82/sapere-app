@@ -1385,7 +1385,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-5e', code: '5E', title: 'Angles in triangles' },
         { id: 'y8-5f', code: '5F', title: 'Isosceles and equilateral triangles' },
         { id: 'y8-5g', code: '5G', title: 'Quadrilaterals' },
-        { id: 'y8-5h', code: '5H', title: 'Review of geometry' }
+        { id: 'y8-5h', code: '5H', title: 'Review of geometry' },
+        { id: 'y8-5i', code: '5I', title: 'Geometry challenge' }
       ]
     },
     {
