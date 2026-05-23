@@ -500,6 +500,15 @@ const GeometryEditor = ({ graphData, onChange }) => {
             value={geometry.width || 300}
             onChange={(e) => updateGeometry({ ...geometry, width: Number(e.target.value) || 300 })}
             style={{ width: '70px', padding: '6px 8px', borderRadius: '8px', border: '1px solid #c4b5fd', fontWeight: 700, textAlign: 'center' }}
+            title="Width of the geometry"
+          />
+          <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#6d28d9', marginLeft: '8px' }}>Font Size:</label>
+          <input
+            type="number"
+            value={geometry.fontSize || 15}
+            onChange={(e) => updateGeometry({ ...geometry, fontSize: Number(e.target.value) || 15 })}
+            style={{ width: '60px', padding: '6px 8px', borderRadius: '8px', border: '1px solid #c4b5fd', fontWeight: 700, textAlign: 'center' }}
+            title="Global Font Size"
           />
           <button type="button" onClick={addPoint} style={{ padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add point</button>
         </div>

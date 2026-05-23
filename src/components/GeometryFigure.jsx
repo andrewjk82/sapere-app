@@ -25,6 +25,7 @@ const GeometryFigure = ({
   freeLabels = [],
   showPointLabels = true,
   width = 300,
+  fontSize = 15,
   style,
 }) => {
   const names = Object.keys(points);
@@ -181,7 +182,7 @@ const GeometryFigure = ({
           key={`al${key++}`}
           x={rx} y={ry + 5}
           textAnchor="middle" fill="#000000"
-          fontSize="15" fontStyle="italic"
+          fontSize={ang.fontSize || fontSize} fontStyle="italic"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'
         >
           {ang.label}
@@ -207,7 +208,7 @@ const GeometryFigure = ({
       <text
         key={`sl${key++}`}
         x={mx + px * 16} y={my + py * 16 + 5}
-        textAnchor="middle" fill="#000000" fontSize="14"
+        textAnchor="middle" fill="#000000" fontSize={sl.fontSize || fontSize}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >
         {sl.text}
@@ -225,7 +226,7 @@ const GeometryFigure = ({
         x={x} y={y}
         textAnchor="middle"
         fill={label.color === '#0369a1' ? '#000000' : (label.color || '#000000')}
-        fontSize={label.fontSize || 15}
+        fontSize={label.fontSize || fontSize}
         fontStyle={label.italic === false ? 'normal' : 'italic'}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >
@@ -248,7 +249,7 @@ const GeometryFigure = ({
           key={`v${key++}`}
           x={vx + dx * 16} y={vy + dy * 16 + 5}
           textAnchor="middle" fill="#000000"
-          fontSize="14" fontStyle="italic" fontWeight="600"
+          fontSize={fontSize} fontStyle="italic" fontWeight="600"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'
         >
           {n}
