@@ -145,10 +145,12 @@ const GeometryFigure = ({
     const [vx, vy] = P(ang.at);
     const [dx, dy] = norm(cx - vx, cy - vy);   // toward interior
     if (ang.label) {
+      const lx = ang.labelPos ? ((ang.labelPos[0] - minX) * scale + pad) : (vx + dx * 26);
+      const ly = ang.labelPos ? ((maxY - ang.labelPos[1]) * scale + pad) : (vy + dy * 26);
       els.push(
         <text
           key={`al${key++}`}
-          x={vx + dx * 26} y={vy + dy * 26 + 5}
+          x={lx} y={ly + 5}
           textAnchor="middle" fill="#1e3a5f"
           fontSize="15" fontStyle="italic"
         >

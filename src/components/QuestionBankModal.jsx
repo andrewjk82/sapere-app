@@ -479,6 +479,11 @@ const GeometryEditor = ({ graphData, onChange }) => {
       freeLabels[activeDrag.index] = { ...freeLabels[activeDrag.index], point };
       updateGeometry({ ...geometry, freeLabels });
     }
+    if (activeDrag.type === 'angle') {
+      const angles = [...(geometry.angles || [])];
+      angles[activeDrag.index] = { ...angles[activeDrag.index], labelPos: point };
+      updateGeometry({ ...geometry, angles });
+    }
   };
 
   return (
@@ -523,10 +528,15 @@ const GeometryEditor = ({ graphData, onChange }) => {
               );
             }
             if (!ang.label) return null;
+            const lx = ang.labelPos ? toSvg(ang.labelPos)[0] : vx + dx * 26;
+            const ly = ang.labelPos ? toSvg(ang.labelPos)[1] : vy + dy * 26;
             return (
-              <text key={`ang-${idx}`} x={vx + dx * 26} y={vy + dy * 26 + 5} textAnchor="middle" fill="#7c3aed" fontSize="14" fontStyle="italic" fontWeight="700">
-                {ang.label}
-              </text>
+              <g key={`ang-${idx}`} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'angle', index: idx }); }} style={{ cursor: 'grab' }}>
+                <circle cx={lx} cy={ly} r="14" fill="#7c3aed" opacity="0.10" />
+                <text x={lx} y={ly + 5} textAnchor="middle" fill="#7c3aed" fontSize="14" fontStyle="italic" fontWeight="700">
+                  {ang.label}
+                </text>
+              </g>
             );
           });
         })()}
