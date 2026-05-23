@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
-import { Sparkles, Trophy, Target } from "lucide-react";
+import { Sparkles, Trophy, Target, CalendarDays } from "lucide-react";
 import { db } from "../../firebase/config";
 import { doc, onSnapshot } from "firebase/firestore";
 import { CURRICULUM_DATA } from "../../constants/curriculumData";
@@ -196,6 +196,45 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
             <Stat label="Sessions" value={sessions} color="#7c3aed" />
             <Stat label="Accuracy" value={`${accuracy}%`} color="#10b981" />
             <Stat label="Attempted" value={attempted} color="#1e1b4b" />
+          </div>
+
+          {/* Term exam dates. Writes the same termNExamDate fields the
+              student dashboard's D-Day banner reads from, but kept here for
+              convenience so the teacher doesn't have to hunt for it. */}
+          <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: "16px", padding: "18px 20px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
+              <CalendarDays size={16} color="#7c3aed" />
+              <span style={{ fontWeight: 900, color: "#1e1b4b", fontSize: "0.9rem" }}>Term exam dates</span>
+              <span style={{ marginLeft: "auto", fontSize: "0.7rem", color: "#94a3b8", fontWeight: 700 }}>
+                Drives the student's D-Day banner
+              </span>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px" }}>
+              {[1, 2, 3, 4].map((t) => {
+                const date = student?.[`term${t}ExamDate`] || "";
+                const dday = date ? Math.ceil((new Date(date) - new Date(new Date().toDateString())) / 86400000) : null;
+                const urgent = dday !== null && dday >= 0 && dday <= 7;
+                const past = dday !== null && dday < 0;
+                return (
+                  <div key={t} style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      <span style={{ fontSize: "0.7rem", fontWeight: 800, color: "#64748b", letterSpacing: "0.06em", textTransform: "uppercase" }}>Term {t}</span>
+                      {dday !== null && (
+                        <span style={{ fontSize: "0.65rem", fontWeight: 900, padding: "2px 8px", borderRadius: "999px", background: past ? "#f1f5f9" : urgent ? "#fef2f2" : "#ede9fe", color: past ? "#64748b" : urgent ? "#b91c1c" : "#5b21b6" }}>
+                          {dday === 0 ? "D-Day" : past ? `D+${Math.abs(dday)}` : `D-${dday}`}
+                        </span>
+                      )}
+                    </div>
+                    <input
+                      type="date"
+                      value={date}
+                      onChange={(e) => onUpdateSetting(`term${t}ExamDate`, e.target.value)}
+                      style={{ padding: "9px 12px", borderRadius: "10px", border: `1px solid ${date ? "#c4b5fd" : "#e2e8f0"}`, background: date ? "#faf5ff" : "#fff", fontSize: "0.85rem", fontWeight: 700, color: "#1e1b4b", outline: "none" }}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
           {/* Teacher-driven topic picker. Lives here (NOT on the student

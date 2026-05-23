@@ -125,6 +125,10 @@ const curriculumSyncFields = [
   "showHscGraph",
   "examPrepEnabled",
   "examPrepSelection",
+  "term1ExamDate",
+  "term2ExamDate",
+  "term3ExamDate",
+  "term4ExamDate",
 ];
 
 const pickDefinedCurriculumFields = (data = {}) =>
