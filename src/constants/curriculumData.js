@@ -1361,7 +1361,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-4',
       title: 'Chapter 4: Negative numbers',
-      modules: 7,
+      modules: 8,
       topics: [
         { id: 'y8-4a', code: '4A', title: 'Negative integers' },
         { id: 'y8-4b', code: '4B', title: 'Addition and subtraction of a positive integer' },
@@ -1369,7 +1369,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-4d', code: '4D', title: 'Multiplication and division with negative integers' },
         { id: 'y8-4e', code: '4E', title: 'Indices and order of operations' },
         { id: 'y8-4f', code: '4F', title: 'The Cartesian plane' },
-        { id: 'y8-4g', code: '4G', title: 'Negative fractions' }
+        { id: 'y8-4g', code: '4G', title: 'Negative fractions' },
+        { id: 'y8-4h', code: '4H', title: 'Review of negative numbers' }
       ]
     },
     {

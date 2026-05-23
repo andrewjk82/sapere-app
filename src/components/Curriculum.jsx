@@ -29,6 +29,7 @@ import { Y8_CH2H_QUESTIONS } from '../constants/seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
 import { Y8_CH3F_QUESTIONS } from '../constants/seedYear8Ch3ReviewQuestions.js';
 import { Y8_CH4A_QUESTIONS } from '../constants/seedYear8Ch4Questions.js';
+import { Y8_CH4H_QUESTIONS } from '../constants/seedYear8Ch4ReviewQuestions.js';
 import { Y8_CH5A_QUESTIONS } from '../constants/seedYear8Ch5Questions.js';
 import { Y8_CH6A_QUESTIONS } from '../constants/seedYear8Ch6Questions.js';
 import { Y8_CH7A_QUESTIONS } from '../constants/seedYear8Ch7Questions.js';
@@ -54,6 +55,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-2', chapterTitle: 'Chapter 2: Fractions and decimals', topicId: 'y8-2h', topicCode: '2H', topicTitle: 'Review of fractions and decimals', year: 'Year 8', seed: Y8_CH2H_QUESTIONS, label: 'Y8 Ch2 · Review' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: Review of factors and indices', topicId: 'y8-3f', topicCode: '3F', topicTitle: 'Review of factors and indices', year: 'Year 8', seed: Y8_CH3F_QUESTIONS, label: 'Y8 Ch3 · Review' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: HCF and LCM', topicId: 'y8-3a', topicCode: '3A', topicTitle: 'HCF and LCM', year: 'Year 8', seed: Y8_CH3A_QUESTIONS, label: 'Y8 Ch3 · HCF and LCM' },
+  { chapterId: 'y8-4', chapterTitle: 'Chapter 4: Negative numbers', topicId: 'y8-4h', topicCode: '4H', topicTitle: 'Review of negative numbers', year: 'Year 8', seed: Y8_CH4H_QUESTIONS, label: 'Y8 Ch4 · Review' },
   { chapterId: 'y8-4', chapterTitle: 'Chapter 4: Integers', topicId: 'y8-4a', topicCode: '4A', topicTitle: 'Integers', year: 'Year 8', seed: Y8_CH4A_QUESTIONS, label: 'Y8 Ch4 · Integers' },
   { chapterId: 'y8-5', chapterTitle: 'Chapter 5: Angles', topicId: 'y8-5a', topicCode: '5A', topicTitle: 'Angles', year: 'Year 8', seed: Y8_CH5A_QUESTIONS, label: 'Y8 Ch5 · Angles' },
   { chapterId: 'y8-6', chapterTitle: 'Chapter 6: Substitution', topicId: 'y8-6a', topicCode: '6A', topicTitle: 'Substitution', year: 'Year 8', seed: Y8_CH6A_QUESTIONS, label: 'Y8 Ch6 · Substitution' },
