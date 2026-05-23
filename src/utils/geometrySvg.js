@@ -28,6 +28,8 @@ export const geometryToSvgMarkup = ({
   segments = [],
   angles = [],
   sideLabels = [],
+  freeLabels = [],
+  showPointLabels = true,
   width = 300,
 } = {}) => {
   const names = Object.keys(points);
@@ -138,10 +140,21 @@ export const geometryToSvgMarkup = ({
     els.push(svgText(`x="${mx + px * 16}" y="${my + py * 16 + 5}" text-anchor="middle" fill="#1e3a5f" font-size="14"`, label.text));
   });
 
+  freeLabels.forEach((label) => {
+    const pt = Array.isArray(label.point) ? label.point : [label.x, label.y];
+    const [x, y] = [
+      ((Number(pt[0]) || 0) - minX) * scale + pad,
+      (maxY - (Number(pt[1]) || 0)) * scale + pad,
+    ];
+    els.push(svgText(`x="${x}" y="${y}" text-anchor="middle" fill="${label.color || '#0369a1'}" font-size="${label.fontSize || 15}" font-style="${label.italic === false ? 'normal' : 'italic'}"`, label.text));
+  });
+
   names.forEach((name) => {
     const [vx, vy] = P(name);
-    const [dx, dy] = norm(vx - cx, vy - cy);
-    els.push(svgText(`x="${vx + dx * 16}" y="${vy + dy * 16 + 5}" text-anchor="middle" fill="#475569" font-size="14" font-style="italic" font-weight="600"`, name));
+    if (showPointLabels !== false) {
+      const [dx, dy] = norm(vx - cx, vy - cy);
+      els.push(svgText(`x="${vx + dx * 16}" y="${vy + dy * 16 + 5}" text-anchor="middle" fill="#475569" font-size="14" font-style="italic" font-weight="600"`, name));
+    }
     els.push(`<circle cx="${vx}" cy="${vy}" r="2.6" fill="#1e3a5f" />`);
   });
 

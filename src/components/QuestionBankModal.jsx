@@ -76,6 +76,93 @@ const createDefaultGeometryGraph = () => withGeometrySnapshot({
   },
 });
 
+const convertJsxGraphToGeometryGraph = (graphData) => {
+  const jsxGraph = graphData?.jsxGraph;
+  const script = String(jsxGraph?.script || '');
+  if (!script.trim()) return null;
+
+  const points = {};
+  const segments = [];
+  const freeLabels = [];
+  const coordNames = new Map();
+  let nextPointCode = 65;
+
+  const getPointName = (x, y) => {
+    const key = `${Number(x).toFixed(4)},${Number(y).toFixed(4)}`;
+    if (coordNames.has(key)) return coordNames.get(key);
+    let name;
+    do {
+      name = nextPointCode <= 90
+        ? String.fromCharCode(nextPointCode)
+        : `P${nextPointCode - 90}`;
+      nextPointCode += 1;
+    } while (points[name]);
+    points[name] = [Number(x), Number(y)];
+    coordNames.set(key, name);
+    return name;
+  };
+
+  script.split('\n').forEach((rawLine) => {
+    const line = rawLine.trim();
+    if (!line.includes('board.create')) return;
+    const typeMatch = line.match(/board\.create\(\s*['"]([^'"]+)['"]/);
+    if (!typeMatch) return;
+    const type = typeMatch[1];
+    const coords = [...line.matchAll(/\[\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\]/g)]
+      .map((match) => [Number(match[1]), Number(match[2])]);
+
+    if ((type === 'line' || type === 'segment' || type === 'arrow') && coords.length >= 2) {
+      segments.push({
+        from: getPointName(coords[0][0], coords[0][1]),
+        to: getPointName(coords[1][0], coords[1][1]),
+        arrow: type === 'arrow' || undefined,
+      });
+      return;
+    }
+
+    if (type === 'polygon' && coords.length >= 3) {
+      const names = coords.map(([x, y]) => getPointName(x, y));
+      names.forEach((name, idx) => {
+        segments.push({ from: name, to: names[(idx + 1) % names.length] });
+      });
+      return;
+    }
+
+    if (type === 'point' && coords.length >= 1) {
+      getPointName(coords[0][0], coords[0][1]);
+      return;
+    }
+
+    if (type === 'text' && coords.length >= 1) {
+      const textMatch = line.match(/,\s*['"`]([^'"`]+)['"`]\s*\]/);
+      const text = textMatch?.[1];
+      if (text) {
+        freeLabels.push({ point: coords[0], text, color: '#0369a1', fontSize: 15 });
+      }
+    }
+  });
+
+  if (Object.keys(points).length === 0 || segments.length === 0) return null;
+
+  const converted = {
+    ...graphData,
+    jsxGraph: undefined,
+    originalJsxGraph: jsxGraph,
+    conversionNote: 'Converted from JSXGraph script for geometry editing.',
+    geometry: {
+      width: 320,
+      points,
+      segments,
+      angles: [],
+      sideLabels: [],
+      freeLabels,
+      showPointLabels: false,
+    },
+  };
+
+  return withGeometrySnapshot(converted);
+};
+
 // Firebase Storage imports removed
 const compressImageToDataUrl = (file) => {
   return new Promise((resolve, reject) => {
@@ -240,6 +327,12 @@ const GeometryEditor = ({ graphData, onChange }) => {
     updateGeometry({ ...geometry, angles });
   };
 
+  const updateFreeLabel = (idx, patch) => {
+    const freeLabels = [...(geometry.freeLabels || [])];
+    freeLabels[idx] = { ...freeLabels[idx], ...patch };
+    updateGeometry({ ...geometry, freeLabels });
+  };
+
   const xs = pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0);
   const ys = pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0);
   const minX = Math.min(...xs, -1);
@@ -347,6 +440,21 @@ const GeometryEditor = ({ graphData, onChange }) => {
             <button type="button" onClick={() => updateGeometry({ ...geometry, angles: (geometry.angles || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '8px', cursor: 'pointer' }}>Remove</button>
           </div>
         ))}
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <button type="button" onClick={() => updateGeometry({ ...geometry, freeLabels: [...(geometry.freeLabels || []), { point: [0, 0], text: 'x' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add free label</button>
+        {(geometry.freeLabels || []).map((label, idx) => {
+          const point = Array.isArray(label.point) ? label.point : [label.x || 0, label.y || 0];
+          return (
+            <div key={idx} style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr 0.8fr auto', gap: '8px', alignItems: 'center' }}>
+              <input value={label.text || ''} onChange={(e) => updateFreeLabel(idx, { text: e.target.value })} placeholder="label" style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+              <input type="number" step="0.25" value={point[0]} onChange={(e) => updateFreeLabel(idx, { point: [Number(e.target.value), point[1]] })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+              <input type="number" step="0.25" value={point[1]} onChange={(e) => updateFreeLabel(idx, { point: [point[0], Number(e.target.value)] })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe' }} />
+              <button type="button" onClick={() => updateGeometry({ ...geometry, freeLabels: (geometry.freeLabels || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '8px', cursor: 'pointer' }}>Remove</button>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -777,6 +885,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const hasGraphData = Boolean(currentGraphData && Object.keys(currentGraphData).length > 0);
   const hasEditableGeometry = Boolean(currentGraphData?.geometry);
   const hasRenderOnlyDiagram = hasGraphData && !hasEditableGeometry;
+  const canConvertJsxGraph = Boolean(currentGraphData?.jsxGraph?.script);
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
@@ -961,20 +1070,26 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 </div>
                 {hasRenderOnlyDiagram && (
                   <div style={{ marginTop: '10px', padding: '12px 14px', borderRadius: '12px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', fontSize: '0.82rem', fontWeight: 700, lineHeight: 1.45 }}>
-                    This diagram is stored as JSXGraph or another render-only format. It will preview correctly, but the point/line/angle editor only opens for geometry JSON. Replacing it creates a new blank geometry diagram.
-                    <button
-                      type="button"
-                      onClick={() => {
-                        if (!window.confirm('Replace this existing diagram with a blank editable geometry diagram? This cannot convert the current JSXGraph drawing automatically.')) return;
-                        setFormData(prev => ({
-                          ...prev,
-                          graphData: stringifyGraphData(createDefaultGeometryGraph()),
-                        }));
-                      }}
-                      style={{ display: 'block', marginTop: '10px', padding: '8px 12px', borderRadius: '10px', border: '1px solid #f59e0b', background: '#fff', color: '#92400e', fontWeight: 800, cursor: 'pointer' }}
-                    >
-                      Replace with blank editable geometry
-                    </button>
+                    This diagram is stored as JSXGraph or another render-only format. It previews correctly. Convert it first to edit points, lines, and labels.
+                    {canConvertJsxGraph && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const converted = convertJsxGraphToGeometryGraph(currentGraphData);
+                          if (!converted) {
+                            showToast('Could not convert this JSXGraph diagram automatically.', 'warning');
+                            return;
+                          }
+                          setFormData(prev => ({
+                            ...prev,
+                            graphData: stringifyGraphData(converted),
+                          }));
+                        }}
+                        style={{ display: 'block', marginTop: '10px', padding: '8px 12px', borderRadius: '10px', border: '1px solid #f59e0b', background: '#fff', color: '#92400e', fontWeight: 800, cursor: 'pointer' }}
+                      >
+                        Convert current diagram to editable geometry
+                      </button>
+                    )}
                   </div>
                 )}
               </div>

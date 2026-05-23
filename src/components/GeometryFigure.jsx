@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * Declarative geometry renderer.
  *
@@ -24,6 +22,8 @@ const GeometryFigure = ({
   segments = [],
   angles = [],
   sideLabels = [],
+  freeLabels = [],
+  showPointLabels = true,
   width = 300,
   style,
 }) => {
@@ -200,20 +200,40 @@ const GeometryFigure = ({
     );
   });
 
+  freeLabels.forEach((label) => {
+    const pt = Array.isArray(label.point) ? label.point : [label.x, label.y];
+    const x = ((Number(pt[0]) || 0) - minX) * scale + pad;
+    const y = (maxY - (Number(pt[1]) || 0)) * scale + pad;
+    els.push(
+      <text
+        key={`fl${key++}`}
+        x={x} y={y}
+        textAnchor="middle"
+        fill={label.color || '#0369a1'}
+        fontSize={label.fontSize || 15}
+        fontStyle={label.italic === false ? 'normal' : 'italic'}
+      >
+        {label.text}
+      </text>
+    );
+  });
+
   // --- Vertex name labels (drawn last, on top) -------------------------
   names.forEach((n) => {
     const [vx, vy] = P(n);
-    const [dx, dy] = norm(vx - cx, vy - cy);   // outward
-    els.push(
-      <text
-        key={`v${key++}`}
-        x={vx + dx * 16} y={vy + dy * 16 + 5}
-        textAnchor="middle" fill="#475569"
-        fontSize="14" fontStyle="italic" fontWeight="600"
-      >
-        {n}
-      </text>
-    );
+    if (showPointLabels !== false) {
+      const [dx, dy] = norm(vx - cx, vy - cy);   // outward
+      els.push(
+        <text
+          key={`v${key++}`}
+          x={vx + dx * 16} y={vy + dy * 16 + 5}
+          textAnchor="middle" fill="#475569"
+          fontSize="14" fontStyle="italic" fontWeight="600"
+        >
+          {n}
+        </text>
+      );
+    }
     els.push(
       <circle key={`vd${key++}`} cx={vx} cy={vy} r="2.6" fill="#1e3a5f" />
     );
