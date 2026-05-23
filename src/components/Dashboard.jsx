@@ -294,7 +294,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </div>
         )}
 
-        {!isAdmin && (() => {
+        {!isAdmin && profile?.examPrepEnabled === true && (() => {
+          // D-Day is only useful for students whose teacher has enabled Exam
+          // Prep AND has set at least one term exam date — otherwise hide.
           const nextExam = [1, 2, 3, 4]
             .map(t => ({ term: t, date: profile?.[`term${t}ExamDate`] }))
             .filter(t => t.date)
@@ -302,31 +304,50 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             .filter(t => t.dday >= 0)
             .sort((a, b) => a.dday - b.dday)[0];
 
-          if (nextExam) {
-            const urgent = nextExam.dday <= 7;
-            return (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%', padding: '20px 24px', borderRadius: '28px', background: urgent ? 'linear-gradient(135deg, #f59e0b, #ef4444)' : 'linear-gradient(135deg, #6366f1, #4f46e5)', color: '#fff', boxShadow: urgent ? '0 15px 35px rgba(239,68,68,0.25)' : '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
-                <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
-                  {urgent ? '🔥' : '📅'}
+          if (!nextExam) return null;
+
+          const urgent = nextExam.dday <= 7;
+          return (
+            <button
+              type="button"
+              onClick={() => setActiveTab('ExamPrep')}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
+                margin: isMobile ? '0 20px 16px' : '0 0 24px',
+                maxWidth: isMobile ? 'calc(100% - 40px)' : '100%',
+                padding: '20px 24px', borderRadius: '28px',
+                background: urgent ? 'linear-gradient(135deg, #f59e0b, #ef4444)' : 'linear-gradient(135deg, #6366f1, #4f46e5)',
+                color: '#fff', border: 'none', cursor: 'pointer', textAlign: 'left',
+                boxShadow: urgent ? '0 15px 35px rgba(239,68,68,0.25)' : '0 15px 35px rgba(99,102,241,0.25)',
+                position: 'relative', overflow: 'hidden',
+                transition: 'transform 0.15s, box-shadow 0.15s',
+              }}
+              onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.99)'; }}
+              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+            >
+              <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
+              <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
+                {urgent ? '🔥' : '📅'}
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
+                  Term {nextExam.term} Exam · Tap to practise
                 </div>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
-                    Term {nextExam.term} Exam
-                  </div>
-                  <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
-                    {nextExam.dday === 0 ? 'Exam is today! Good luck! 🎉' : `${nextExam.dday} day${nextExam.dday > 1 ? 's' : ''} to go — keep it up!`}
-                  </div>
-                </div>
-                <div style={{ textAlign: 'center', flexShrink: 0 }}>
-                  <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
-                    {nextExam.dday === 0 ? 'D-Day' : `D-${nextExam.dday}`}
-                  </div>
+                <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
+                  {nextExam.dday === 0 ? 'Exam is today! Good luck! 🎉' : `${nextExam.dday} day${nextExam.dday > 1 ? 's' : ''} to go — keep it up!`}
                 </div>
               </div>
-            );
-          }
-          return null;
+              <div style={{ textAlign: 'center', flexShrink: 0, display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
+                  {nextExam.dday === 0 ? 'D-Day' : `D-${nextExam.dday}`}
+                </div>
+                <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(255,255,255,0.18)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                  <ArrowRight size={16} />
+                </div>
+              </div>
+            </button>
+          );
         })()}
 
         {!isAdmin && (() => {
