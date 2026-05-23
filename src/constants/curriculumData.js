@@ -1376,7 +1376,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-5',
       title: 'Chapter 5: Review of geometry',
-      modules: 7,
+      modules: 8,
       topics: [
         { id: 'y8-5a', code: '5A', title: 'Angles at a point' },
         { id: 'y8-5b', code: '5B', title: 'Angles associated with transversals' },
@@ -1384,7 +1384,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-5d', code: '5D', title: 'Proving that two lines are parallel' },
         { id: 'y8-5e', code: '5E', title: 'Angles in triangles' },
         { id: 'y8-5f', code: '5F', title: 'Isosceles and equilateral triangles' },
-        { id: 'y8-5g', code: '5G', title: 'Quadrilaterals' }
+        { id: 'y8-5g', code: '5G', title: 'Quadrilaterals' },
+        { id: 'y8-5h', code: '5H', title: 'Review of geometry' }
       ]
     },
     {
