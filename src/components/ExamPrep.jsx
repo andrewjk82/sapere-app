@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
   Lock, Trophy, Sparkles, Clock, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
-  Flag, BookmarkPlus, X, Target,
+  Flag, BookmarkPlus, X, Target, PenLine,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -15,6 +15,7 @@ import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
 import SecretNoteView from './challenge/SecretNoteView';
+import WorkingOutCanvas from './WorkingOutCanvas';
 import {
   getStats, getTopicAnalysis,
   startRound, finishRound,
@@ -131,6 +132,10 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const [showHint, setShowHint] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [focusedBlank, setFocusedBlank] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [questionStartTime, setQuestionStartTime] = useState(null);
+  const [showCanvas, setShowCanvas] = useState(false);
+  const canvasRef = useRef(null);
 
   const q = questions[idx];
   const total = questions.length;
@@ -143,7 +148,23 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     setShowHint(false);
     setShowFeedback(false);
     setFocusedBlank(0);
+    const limit = q.timeLimit || 120;
+    setTimeLeft(limit);
+    setQuestionStartTime(Date.now());
   }, [idx, q?.id]);
+
+  // Countdown timer
+  useEffect(() => {
+    if (!questionStartTime || showFeedback) return;
+    const limit = (q?.timeLimit || 120) * 1000;
+    const endTime = questionStartTime + limit;
+    const timer = setInterval(() => {
+      const remaining = Math.max(0, Math.ceil((endTime - Date.now()) / 1000));
+      setTimeLeft(remaining);
+      if (remaining <= 0) clearInterval(timer);
+    }, 200);
+    return () => clearInterval(timer);
+  }, [questionStartTime, showFeedback, q?.timeLimit, q?.id]);
 
   if (!q) return null;
 
@@ -188,8 +209,22 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           >
             <Flag size={16} />
           </button>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-            <Clock size={14} /> {q.timeLimit || 120}s
+          <button
+            onClick={() => setShowCanvas(v => !v)}
+            title="Toggle working out pad"
+            style={{ width: '36px', height: '36px', borderRadius: '12px', border: `1px solid ${showCanvas ? '#ddd6fe' : '#e2e8f0'}`, background: showCanvas ? '#f5f3ff' : '#fff', color: showCanvas ? '#7c3aed' : '#64748b', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
+          >
+            <PenLine size={16} />
+          </button>
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800,
+            color: timeLeft <= 10 ? '#e11d48' : timeLeft <= 30 ? '#d97706' : '#64748b',
+            background: timeLeft <= 10 ? '#fff1f2' : timeLeft <= 30 ? '#fffbeb' : '#fff',
+            padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
+            transition: 'background 0.3s, color 0.3s',
+            minWidth: '70px', justifyContent: 'center',
+          }}>
+            <Clock size={14} /> {timeLeft}s
           </div>
         </div>
       </div>
@@ -308,6 +343,20 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           )}
         </div>
       )}
+
+      {/* Working out canvas */}
+      <AnimatePresence>
+        {showCanvas && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 320 }}
+            exit={{ opacity: 0, height: 0 }}
+            style={{ overflow: 'hidden', borderRadius: '20px' }}
+          >
+            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Action button */}
       {!showFeedback ? (
