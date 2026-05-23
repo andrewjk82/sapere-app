@@ -43,12 +43,20 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
       chapters: Array.isArray(next?.chapters) ? next.chapters : [],
     });
   };
-  const toggleYear = (y) => {
-    const years = selection.years.includes(y)
-      ? selection.years.filter((v) => v !== y)
-      : [...selection.years, y];
-    writeSelection({ ...selection, years });
-  };
+  // Selection is driven by chapter checkboxes only. The Year strip is a
+  // pure navigation control — clicking it just changes which year's chapters
+  // are shown. The set of "active" years is derived from selected chapters
+  // so the UI stays consistent without a separate year toggle.
+  const yearsForChapters = useMemo(() => {
+    const set = new Set();
+    allYearKeys.forEach((y) => {
+      flattenChapters(y).forEach((ch) => {
+        if (selection.chapters.includes(ch.id)) set.add(y);
+      });
+    });
+    return set;
+  }, [selection.chapters]);
+
   const toggleChapter = (chId) => {
     const chapters = selection.chapters.includes(chId)
       ? selection.chapters.filter((v) => v !== chId)
@@ -202,21 +210,23 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
               </span>
             </div>
 
-            {/* Year tabs */}
+            {/* Year tabs — pure navigation. "Active" = currently viewing.
+                "Has selections" (light tint) = at least one chapter from that
+                year is checked. Clicking only switches the visible year. */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "12px" }}>
               {allYearKeys.map((y) => {
-                const on = selection.years.includes(y);
+                const hasSelections = yearsForChapters.has(y);
                 const isActive = activeYear === y;
                 return (
                   <button
                     key={y}
                     type="button"
-                    onClick={() => { setActiveYear(y); if (!on) toggleYear(y); }}
+                    onClick={() => setActiveYear(y)}
                     style={{
                       padding: "6px 12px", borderRadius: "999px",
-                      border: `1px solid ${isActive ? "#7c3aed" : on ? "#c4b5fd" : "#e2e8f0"}`,
-                      background: isActive ? "#ede9fe" : on ? "#faf5ff" : "#fff",
-                      color: isActive ? "#5b21b6" : on ? "#6d28d9" : "#475569",
+                      border: `1px solid ${isActive ? "#7c3aed" : hasSelections ? "#c4b5fd" : "#e2e8f0"}`,
+                      background: isActive ? "#ede9fe" : hasSelections ? "#faf5ff" : "#fff",
+                      color: isActive ? "#5b21b6" : hasSelections ? "#6d28d9" : "#475569",
                       fontWeight: 800, fontSize: "0.78rem", cursor: "pointer",
                     }}
                   >
@@ -226,7 +236,8 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
               })}
             </div>
 
-            {/* Chapter checkboxes for the active year */}
+            {/* Chapter cards — single onClick on the whole card so a click
+                anywhere toggles selection cleanly (no label/input nesting). */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "8px" }}>
               {yearChapters.length === 0 ? (
                 <div style={{ gridColumn: "1 / -1", padding: "16px", background: "#f8fafc", borderRadius: "12px", color: "#94a3b8", fontWeight: 700, textAlign: "center", fontSize: "0.85rem" }}>
@@ -235,25 +246,43 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
               ) : yearChapters.map((ch) => {
                 const on = selection.chapters.includes(ch.id);
                 return (
-                  <label
+                  <div
                     key={ch.id}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => toggleChapter(ch.id)}
+                    onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggleChapter(ch.id); } }}
                     style={{
                       display: "flex", alignItems: "center", gap: "10px",
                       padding: "10px 12px", borderRadius: "12px",
                       border: `1.5px solid ${on ? "#a78bfa" : "#e2e8f0"}`,
                       background: on ? "#faf5ff" : "#fff",
                       cursor: "pointer", userSelect: "none",
+                      transition: "all 0.15s",
                     }}
                   >
-                    <input
-                      type="checkbox" checked={on}
-                      onChange={() => toggleChapter(ch.id)}
-                      style={{ width: "16px", height: "16px", accentColor: "#7c3aed", cursor: "pointer" }}
-                    />
+                    {/* Custom checkbox visual (no real <input> to avoid
+                        label/input double-click toggling). */}
+                    <div
+                      aria-hidden
+                      style={{
+                        width: "18px", height: "18px", borderRadius: "5px",
+                        border: `2px solid ${on ? "#7c3aed" : "#cbd5e1"}`,
+                        background: on ? "#7c3aed" : "#fff",
+                        display: "grid", placeItems: "center", flexShrink: 0,
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      {on && (
+                        <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+                          <path d="M2.5 6.5L4.8 8.8L9.5 3.5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      )}
+                    </div>
                     <span style={{ fontWeight: 700, color: on ? "#5b21b6" : "#334155", fontSize: "0.85rem", lineHeight: 1.3 }}>
                       {ch.title}
                     </span>
-                  </label>
+                  </div>
                 );
               })}
             </div>
