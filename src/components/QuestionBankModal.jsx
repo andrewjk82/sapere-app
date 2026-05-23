@@ -535,11 +535,17 @@ const GeometryEditor = ({ graphData, onChange }) => {
 
             if (ang.right) {
               const sz = 12;
-              // Anchored at vx, vy; pointing towards dx, dy
+              const sqrt2 = Math.sqrt(2);
+              const bx1 = vx + ((dx + dy) / sqrt2) * sz;
+              const by1 = vy + ((dy - dx) / sqrt2) * sz;
+              const bx2 = vx + sqrt2 * dx * sz;
+              const by2 = vy + sqrt2 * dy * sz;
+              const bx3 = vx + ((dx - dy) / sqrt2) * sz;
+              const by3 = vy + ((dy + dx) / sqrt2) * sz;
               els.push(
                 <polyline
                   key="rt"
-                  points={`${vx + dx * sz + dy * sz},${vy + dy * sz - dx * sz} ${vx + dx * sz},${vy + dy * sz} ${vx + dy * sz},${vy - dx * sz}`}
+                  points={`${bx1},${by1} ${bx2},${by2} ${bx3},${by3}`}
                   fill="none"
                   stroke="#7c3aed"
                   strokeWidth="2"

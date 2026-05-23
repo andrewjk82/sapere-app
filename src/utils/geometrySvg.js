@@ -121,13 +121,14 @@ export const geometryToSvgMarkup = ({
 
     if (angle.right) {
       const sz = 12;
+      const sqrt2 = Math.sqrt(2);
       // Anchor always at vx, vy
-      const bx1 = vx + dx * sz + dy * sz;
-      const by1 = vy + dy * sz - dx * sz;
-      const bx2 = vx + dx * sz;
-      const by2 = vy + dy * sz;
-      const bx3 = vx + dy * sz;
-      const by3 = vy - dx * sz;
+      const bx1 = vx + ((dx + dy) / sqrt2) * sz;
+      const by1 = vy + ((dy - dx) / sqrt2) * sz;
+      const bx2 = vx + sqrt2 * dx * sz;
+      const by2 = vy + sqrt2 * dy * sz;
+      const bx3 = vx + ((dx - dy) / sqrt2) * sz;
+      const by3 = vy + ((dy + dx) / sqrt2) * sz;
       els.push(`<polyline points="${bx1},${by1} ${bx2},${by2} ${bx3},${by3}" fill="none" stroke="#1e3a5f" stroke-width="1.5" />`);
     }
 
