@@ -390,82 +390,83 @@ export const Y8_CH8D_QUESTIONS = [
       "geometry": {
         "width": 250,
         "points": {
-          "Top": [
+          "A": [
             5,
             12
           ],
-          "Left": [
+          "B": [
             0,
             0
           ],
-          "Mid": [
+          "C": [
             5,
             0
           ],
-          "Right": [
+          "D": [
             21,
             0
           ]
         },
         "segments": [
           {
-            "from": "Left",
-            "to": "Top"
+            "from": "B",
+            "to": "A"
           },
           {
-            "from": "Top",
-            "to": "Right"
+            "from": "A",
+            "to": "D"
           },
           {
-            "from": "Left",
-            "to": "Right"
+            "from": "B",
+            "to": "D"
           },
           {
-            "from": "Top",
-            "to": "Mid"
+            "from": "A",
+            "to": "C"
           }
         ],
         "angles": [
           {
-            "at": "Mid",
+            "at": "C",
             "right": true
           }
         ],
         "sideLabels": [
           {
             "between": [
-              "Left",
-              "Top"
+              "B",
+              "A"
             ],
             "text": "x"
           },
           {
             "between": [
-              "Top",
-              "Right"
+              "A",
+              "D"
             ],
             "text": "y"
           },
           {
             "between": [
-              "Left",
-              "Mid"
+              "B",
+              "C"
             ],
             "text": "5"
           },
           {
             "between": [
-              "Mid",
-              "Right"
+              "C",
+              "D"
             ],
             "text": "16"
           },
           {
             "between": [
-              "Top",
-              "Mid"
+              "A",
+              "C"
             ],
-            "text": "12"
+            "text": "12",
+            "side": "in"
           }
         ]
       }
@@ -498,82 +499,83 @@ export const Y8_CH8D_QUESTIONS = [
       "geometry": {
         "width": 250,
         "points": {
-          "Top": [
+          "A": [
             5,
             12
           ],
-          "Left": [
+          "B": [
             0,
             0
           ],
-          "Mid": [
+          "C": [
             5,
             0
           ],
-          "Right": [
+          "D": [
             21,
             0
           ]
         },
         "segments": [
           {
-            "from": "Left",
-            "to": "Top"
+            "from": "B",
+            "to": "A"
           },
           {
-            "from": "Top",
-            "to": "Right"
+            "from": "A",
+            "to": "D"
           },
           {
-            "from": "Left",
-            "to": "Right"
+            "from": "B",
+            "to": "D"
           },
           {
-            "from": "Top",
-            "to": "Mid"
+            "from": "A",
+            "to": "C"
           }
         ],
         "angles": [
           {
-            "at": "Mid",
+            "at": "C",
             "right": true
           }
         ],
         "sideLabels": [
           {
             "between": [
-              "Left",
-              "Top"
+              "B",
+              "A"
             ],
             "text": "x"
           },
           {
             "between": [
-              "Top",
-              "Right"
+              "A",
+              "D"
             ],
             "text": "y"
           },
           {
             "between": [
-              "Left",
-              "Mid"
+              "B",
+              "C"
             ],
             "text": "5"
           },
           {
             "between": [
-              "Mid",
-              "Right"
+              "C",
+              "D"
             ],
             "text": "16"
           },
           {
             "between": [
-              "Top",
-              "Mid"
+              "A",
+              "C"
             ],
-            "text": "12"
+            "text": "12",
+            "side": "in"
           }
         ]
       }
@@ -610,92 +612,95 @@ export const Y8_CH8D_QUESTIONS = [
       "geometry": {
         "width": 180,
         "points": {
-          "TL": [
+          "A": [
             0,
             16
           ],
-          "TR": [
+          "B": [
             15,
             8
           ],
-          "ML": [
+          "C": [
             0,
             8
           ],
-          "BL": [
+          "D": [
             0,
             0
           ],
-          "BR": [
+          "E": [
             15,
             0
           ]
         },
         "segments": [
           {
-            "from": "TL",
-            "to": "TR"
+            "from": "A",
+            "to": "B"
           },
           {
-            "from": "TR",
-            "to": "BR"
+            "from": "B",
+            "to": "E"
           },
           {
-            "from": "BR",
-            "to": "BL"
+            "from": "E",
+            "to": "D"
           },
           {
-            "from": "BL",
-            "to": "TL"
+            "from": "D",
+            "to": "A"
           },
           {
-            "from": "ML",
-            "to": "TR",
+            "from": "C",
+            "to": "B",
             "dashed": true
           }
         ],
         "angles": [
           {
-            "at": "BL",
+            "at": "D",
             "right": true
           },
           {
-            "at": "BR",
+            "at": "E",
             "right": true
           },
           {
-            "at": "ML",
+            "at": "C",
             "right": true
           }
         ],
         "sideLabels": [
           {
             "between": [
-              "TL",
-              "TR"
+              "A",
+              "B"
             ],
             "text": "x"
           },
           {
             "between": [
-              "TL",
-              "ML"
+              "A",
+              "C"
             ],
-            "text": "8"
+            "text": "8",
+            "side": "in"
           },
           {
             "between": [
-              "ML",
-              "BL"
+              "C",
+              "D"
             ],
-            "text": "8"
+            "text": "8",
+            "side": "in"
           },
           {
             "between": [
-              "BL",
-              "BR"
+              "D",
+              "E"
             ],
-            "text": "15"
+            "text": "15",
+            "side": "in"
           }
         ]
       }
