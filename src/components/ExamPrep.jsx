@@ -362,24 +362,27 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </button>
   );
 
-  // Wide layout: question on left, canvas on right (side by side, matching heights)
+  // Wide layout: question on left, canvas on right — both fill viewport height
   if (isWide && showCanvas) {
     return (
-      <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch' }}>
-        {/* Left: question + answer + button — shrinks/grows with content */}
+      <div style={{
+        display: 'flex', gap: '16px', alignItems: 'stretch',
+        height: 'calc(100vh - 120px)', // fill viewport minus page chrome
+      }}>
+        {/* Left: question + answer + button */}
         <div className="app-panel" style={{
           padding: '28px', borderRadius: '28px',
           display: 'flex', flexDirection: 'column', gap: '16px',
-          flex: '0 0 48%', minWidth: 0,
+          flex: '0 0 46%', minWidth: 0, overflow: 'auto',
         }}>
           {header}
           {progressBar}
           {questionCard}
           {answerArea}
-          <div style={{ flex: 1 }} /> {/* push button to bottom */}
+          <div style={{ flex: 1 }} />
           {actionButton}
         </div>
-        {/* Right: canvas fills exact same height as left panel */}
+        {/* Right: canvas fills full height */}
         <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
           <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
             <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
