@@ -29,6 +29,7 @@ const SUPERSCRIPTS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
 const norm = (s) => String(s ?? '')
   .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
   .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
+  .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2')
   .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g, (c) => String(SUPERSCRIPTS.indexOf(c)))
   .replace(/[\^${}\\]/g, '')
   .replace(/[−–—]/g, '-')
