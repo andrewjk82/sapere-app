@@ -1532,8 +1532,15 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   </select>
                 </div>
                 <div>
-                  <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Time Limit (s)</label>
-                  <input type="number" value={formData.timeLimit} onChange={e => setFormData({...formData, timeLimit: e.target.value})} style={{ width: '100%', height: '54px', padding: '0 16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem' }} />
+                  <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Time Limit</label>
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                    {[{ label: '30s', value: 30 }, { label: '1m 30s', value: 90 }, { label: '2min', value: 120 }, { label: '3min', value: 180 }, { label: '5min', value: 300 }].map(({ label, value }) => (
+                      <button key={value} type="button" onClick={() => setFormData({ ...formData, timeLimit: value })}
+                        style={{ padding: '10px 16px', borderRadius: '12px', border: `2px solid ${Number(formData.timeLimit) === value ? '#6366f1' : '#e2e8f0'}`, background: Number(formData.timeLimit) === value ? '#6366f1' : '#fff', color: Number(formData.timeLimit) === value ? '#fff' : '#1e293b', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', transition: 'all 0.15s' }}>
+                        {label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
 
