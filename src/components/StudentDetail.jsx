@@ -41,7 +41,7 @@ import {
   saveCachedHscResults,
   touchHscResultsSyncMeta,
 } from "../services/hscResultsService";
-import { createDailyAssignment } from "../services/dailyAssignmentService";
+import { createDailyAssignment, getCurriculumSignature, getDailyAssignmentCacheKey } from "../services/dailyAssignmentService";
 import { touchStudentsSyncMeta } from "../services/studentService";
 import { localCache } from "../services/localCacheService";
 import { generateLearningRecommendations } from "../utils/analyticsUtils";
@@ -256,9 +256,34 @@ const StudentDetail = ({ studentId, onBack }) => {
           console.warn("daily config write failed:", e?.code || e),
         ),
       ),
-    ).then(() => {
+    ).then(async () => {
       updateLocalStudentProfileCache({ dailyPracticeConfig: newConfig });
       touchStudentListMeta();
+
+      // Invalidate today's daily assignment for the student if the new config
+      // produces a different curriculum signature — so the student gets fresh
+      // questions matching the updated settings next time they open the challenge.
+      const studentUid = challengeResultsUid;
+      if (!studentUid) return;
+      const today = new Date().toLocaleDateString("en-CA");
+      const assignmentRef = doc(db, "users", studentUid, "daily_assignments", today);
+      try {
+        const snap = await getDoc(assignmentRef);
+        if (!snap.exists()) return;
+        const existing = snap.data();
+        // Only invalidate "open" assignments — never touch started/completed ones.
+        if (existing.status !== "open") return;
+        const updatedProfile = { ...(student || {}), dailyPracticeConfig: newConfig };
+        const newSig = getCurriculumSignature(updatedProfile);
+        if (existing.curriculumSignature !== newSig) {
+          // Delete so fetchOrCreateDailyAssignment regenerates with new settings.
+          await deleteDoc(assignmentRef);
+          localCache.remove(getDailyAssignmentCacheKey(studentUid, today));
+          console.log("[StudentDetail] Today's open assignment invalidated — new dailyPracticeConfig applied.");
+        }
+      } catch (e) {
+        console.warn("Failed to invalidate daily assignment:", e?.code || e);
+      }
     });
   };
 
