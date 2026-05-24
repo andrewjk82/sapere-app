@@ -82,8 +82,8 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-7', chapterTitle: 'Chapter 7: Percentages', topicId: 'y8-7a', topicCode: '7A', topicTitle: 'Percentages', year: 'Year 8', seed: Y8_CH7A_QUESTIONS, label: 'Y8 Ch7 · Percentages' },
   { chapterId: 'y8-8', chapterTitle: "Chapter 8: Pythagoras' theorem", topicId: 'y8-8d', topicCode: '8D', topicTitle: "Review of Pythagoras' theorem", year: 'Year 8', seed: Y8_CH8D_QUESTIONS, label: 'Y8 Ch8 · Review' },
   { chapterId: 'y8-9', chapterTitle: 'Chapter 9: Pythagoras Theorem', topicId: 'y8-9a', topicCode: '9A', topicTitle: 'Pythagoras theorem', year: 'Year 8', seed: Y8_CH9A_QUESTIONS, label: 'Y8 Ch9 · Pythagoras theorem' },
-  { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10a', topicCode: '10A', topicTitle: 'Review of the unitary method', year: 'Year 8', seed: Y8_CH10A_QUESTIONS, label: 'Y8 Ch10 · Rates and ratios' },
-  { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10G', topicCode: '10G', topicTitle: 'Review of rates and ratios', year: 'Year 8', seed: Y8_CH10G_QUESTIONS, label: 'Y8 Ch10 · Rates and ratios' },
+  { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10a', topicCode: '10A', topicTitle: 'Review of the unitary method', year: 'Year 8', seed: Y8_CH10A_QUESTIONS, label: 'Y8 Ch10 · Unitary method' },
+  { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10G', topicCode: '10G', topicTitle: 'Review of rates and ratios', year: 'Year 8', seed: Y8_CH10G_QUESTIONS, label: 'Y8 Ch10 · Review' },
   { chapterId: 'y8-11', chapterTitle: 'Chapter 11: Algebra - part 2', topicId: 'y8-11a', topicCode: '11A', topicTitle: 'Expanding brackets and collecting like terms', year: 'Year 8', seed: Y8_CH11A_QUESTIONS, label: 'Y8 Ch11 · Algebra part 2' },
   { chapterId: 'y8-12', chapterTitle: 'Chapter 12: Congruence', topicId: 'y8-12a', topicCode: '12A', topicTitle: 'Congruence of figures in the plane', year: 'Year 8', seed: Y8_CH12A_QUESTIONS, label: 'Y8 Ch12 · Congruence' },
   { chapterId: 'y8-13', chapterTitle: 'Chapter 13: Congruence and special quadrilaterals', topicId: 'y8-13a', topicCode: '13A', topicTitle: 'Parallelograms and their properties', year: 'Year 8', seed: Y8_CH13A_QUESTIONS, label: 'Y8 Ch13 · Congruence and special quadrilaterals' },
@@ -796,20 +796,27 @@ const Curriculum = () => {
       await seedChapterQuestions(entry);
       // The seeder is a non-destructive upsert (set merge:true), so the
       // chapter's *total* count is seed.length + any pre-existing questions.
-      // Fetch the live count from the server instead of trusting seed.length.
-      let liveCount = entry.seed.length;
+      // Fetch the live counts from the server.
+      let liveChapterCount = entry.seed.length;
+      let liveTopicCount = entry.seed.length;
       try {
-        const snap = await getCountFromServer(
+        const chapSnap = await getCountFromServer(
           query(collection(db, 'questions'), where('chapterId', '==', entry.chapterId))
         );
-        liveCount = snap.data().count || 0;
+        liveChapterCount = chapSnap.data().count || 0;
+
+        const topicSnap = await getCountFromServer(
+          query(collection(db, 'questions'), where('topicId', '==', entry.topicId))
+        );
+        liveTopicCount = topicSnap.data().count || 0;
       } catch (e) {
         console.warn('Post-seed count fetch failed; falling back to seed length:', e);
       }
-      showToast(`Seeded ${entry.label}. Chapter now has ${liveCount} questions.`, 'success');
+      showToast(`Seeded ${entry.label}. Topic now has ${liveTopicCount} questions.`, 'success');
       if (typeof window !== 'undefined') {
         const cached = loadCachedQuestionCounts();
-        cached.counts[entry.chapterId] = liveCount;
+        cached.counts[entry.chapterId] = liveChapterCount;
+        cached.counts[entry.topicId] = liveTopicCount;
         saveCachedQuestionCounts(cached.counts, Date.now());
         setQuestionCounts({ ...cached.counts });
       }
@@ -1343,6 +1350,12 @@ const Curriculum = () => {
     return [...ids];
   }, [displayData, isAdmin, showAdminTools]);
 
+  const countTopicIds = useMemo(() => {
+    if (!isAdmin || !showAdminTools) return [];
+    const ids = new Set(CHAPTER_SEED_REGISTRY.map((entry) => entry.topicId).filter(Boolean));
+    return [...ids];
+  }, [isAdmin, showAdminTools]);
+
   useEffect(() => {
     if (countChapterIds.length === 0) return undefined;
     let cancelled = false;
@@ -1355,7 +1368,8 @@ const Curriculum = () => {
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
         const hasFreshCounts = Date.now() - Number(cached.savedAt || 0) < QUESTION_COUNT_CACHE_TTL_MS
           && (!remoteVersion || Number(cached.version || 0) === remoteVersion)
-          && countChapterIds.every((chapterId) => cached.counts[chapterId] !== undefined);
+          && countChapterIds.every((chapterId) => cached.counts[chapterId] !== undefined)
+          && countTopicIds.every((topicId) => cached.counts[topicId] !== undefined);
         if (hasFreshCounts && !isMigrating) return;
 
         const nextCounts = {};
@@ -1363,6 +1377,11 @@ const Curriculum = () => {
           const countQuery = query(collection(db, 'questions'), where('chapterId', '==', chapterId));
           const snap = await getCountFromServer(countQuery);
           nextCounts[chapterId] = snap.data().count || 0;
+        }));
+        await Promise.all(countTopicIds.map(async (topicId) => {
+          const countQuery = query(collection(db, 'questions'), where('topicId', '==', topicId));
+          const snap = await getCountFromServer(countQuery);
+          nextCounts[topicId] = snap.data().count || 0;
         }));
         if (cancelled) return;
         const merged = { ...cached.counts, ...nextCounts };
@@ -1377,7 +1396,7 @@ const Curriculum = () => {
     return () => {
       cancelled = true;
     };
-  }, [isAdmin, countChapterIds, isMigrating]);
+  }, [isAdmin, countChapterIds, countTopicIds, isMigrating]);
 
   const calculateHscBand = (pct) => {
     if (pct >= 90) return { label: 'Band 6', className: 'band-6', color: '#f59e0b' };
@@ -1920,7 +1939,7 @@ const Curriculum = () => {
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                         {yearOrder.map((year) => {
                           const registryCards = (byYear[year] || []).map((entry) => {
-                            const count = questionCounts[entry.chapterId];
+                            const count = questionCounts[entry.topicId];
                             return (
                               <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`} style={{ opacity: count ? 0.45 : 1 }}>
                                 <div className="sync-card-info">
