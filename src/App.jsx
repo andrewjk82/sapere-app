@@ -1166,228 +1166,200 @@ function App() {
           </motion.div>
 
           <AnimatePresence>
-            {showNotifs && (
-              <>
-                {/* Backdrop */}
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setShowNotifs(false)}
-                  style={{
-                    position: 'fixed',
-                    inset: 0,
-                    zIndex: 9998,
-                    background: 'rgba(15,23,42,0.4)',
-                    backdropFilter: 'blur(6px)',
-                    WebkitBackdropFilter: 'blur(6px)',
-                  }}
-                />
-                {/* Centered modal */}
-                {/* Centering wrapper */}
-                <div style={{
-                  position: 'fixed',
-                  inset: 0,
-                  zIndex: 9999,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '16px',
-                  pointerEvents: 'none',
-                }}>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.92, y: 16 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.92, y: 16 }}
-                  transition={{ type: 'spring', stiffness: 340, damping: 28 }}
-                  style={{
-                    pointerEvents: 'auto',
-                    width: '100%',
-                    maxWidth: '460px',
-                    maxHeight: '78vh',
-                    background: 'linear-gradient(145deg, rgba(255,255,255,0.99) 0%, rgba(248,246,255,0.99) 100%)',
-                    backdropFilter: 'blur(20px)',
-                    WebkitBackdropFilter: 'blur(20px)',
-                    borderRadius: '32px',
-                    border: '1px solid rgba(167,139,250,0.25)',
-                    boxShadow: '0 32px 64px -12px rgba(99,102,241,0.18), 0 8px 24px -4px rgba(0,0,0,0.12)',
-                    overflow: 'hidden',
-                    display: 'flex',
-                    flexDirection: 'column',
-                  }}
-                >
-                  {/* Header */}
-                  <div style={{
-                    padding: '22px 24px 18px',
-                    background: 'linear-gradient(135deg, #6366f1 0%, #a78bfa 100%)',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    flexShrink: 0,
-                  }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <div style={{
-                        width: 36, height: 36, borderRadius: '12px',
-                        background: 'rgba(255,255,255,0.2)',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: '1.1rem'
-                      }}>🔔</div>
-                      <div>
-                        <div style={{ fontWeight: 800, color: '#fff', fontSize: '1rem', letterSpacing: '-0.01em' }}>
-                          Notifications
-                        </div>
-                        <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.75)', fontWeight: 600 }}>
-                          {notifications.filter(n => !n.read).length > 0
-                            ? `${notifications.filter(n => !n.read).length} unread`
-                            : 'All caught up'}
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => setShowNotifs(false)}
-                      style={{
-                        background: 'rgba(255,255,255,0.2)',
-                        border: 'none',
-                        cursor: 'pointer',
-                        color: '#fff',
-                        width: 32, height: 32,
-                        borderRadius: '10px',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontSize: '0.85rem',
-                        fontWeight: 700,
-                        transition: 'background 0.2s',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.3)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
-                    >✕</button>
-                  </div>
-
-                  {/* Notification list */}
-                  <div style={{ overflowY: 'auto', padding: '12px', flex: 1 }}>
-                    {notifications.length === 0 ? (
-                      <div style={{
-                        padding: '60px 20px',
-                        textAlign: 'center',
-                        color: '#94a3b8',
-                      }}>
-                        <div style={{ fontSize: '2.5rem', marginBottom: '12px' }}>🎉</div>
-                        <div style={{ fontWeight: 700, fontSize: '0.95rem', color: '#64748b', marginBottom: 4 }}>No notifications yet</div>
-                        <div style={{ fontSize: '0.8rem' }}>You're all caught up!</div>
-                      </div>
-                    ) : (
-                      notifications.map((n, idx) => {
-                        const isUnread = !n.read;
-                        const time = n.timestamp?.toDate ? n.timestamp.toDate() : null;
-                        const timeStr = time ? time.toLocaleString('en-AU', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : 'Just now';
-
-                        // Pick icon by title keyword
-                        const icon = n.title?.toLowerCase().includes('reset') ? '🔄'
-                          : n.title?.toLowerCase().includes('challeng') ? '⚡'
-                          : n.title?.toLowerCase().includes('xp') ? '✨'
-                          : n.title?.toLowerCase().includes('review') ? '📝'
-                          : '📣';
-
-                        return (
-                          <div key={n.id} style={{
-                            display: 'flex',
-                            gap: '12px',
-                            padding: '14px 16px',
-                            borderRadius: '18px',
-                            marginBottom: '6px',
-                            background: isUnread
-                              ? 'linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(167,139,250,0.06) 100%)'
-                              : 'rgba(255,255,255,0.6)',
-                            border: isUnread
-                              ? '1px solid rgba(99,102,241,0.15)'
-                              : '1px solid rgba(167,139,250,0.08)',
-                            transition: 'all 0.2s ease',
-                            position: 'relative',
-                          }}>
-                            {/* Unread dot */}
-                            {isUnread && (
-                              <div style={{
-                                position: 'absolute', top: 14, right: 14,
-                                width: 8, height: 8, borderRadius: '50%',
-                                background: 'linear-gradient(135deg, #6366f1, #a78bfa)',
-                                boxShadow: '0 0 6px rgba(99,102,241,0.5)',
-                              }} />
-                            )}
-
-                            {/* Icon */}
-                            <div style={{
-                              width: 40, height: 40, borderRadius: '14px', flexShrink: 0,
-                              background: isUnread
-                                ? 'linear-gradient(135deg, rgba(99,102,241,0.12), rgba(167,139,250,0.12))'
-                                : 'rgba(167,139,250,0.08)',
-                              display: 'flex', alignItems: 'center', justifyContent: 'center',
-                              fontSize: '1.1rem',
-                            }}>
-                              {icon}
-                            </div>
-
-                            {/* Content */}
-                            <div style={{ flex: 1, minWidth: 0 }}>
-                              <div style={{
-                                fontWeight: 700,
-                                fontSize: '0.87rem',
-                                color: '#1e1b4b',
-                                marginBottom: '3px',
-                                letterSpacing: '-0.01em',
-                                lineHeight: 1.3,
-                              }}>
-                                {n.title}
-                              </div>
-                              <div style={{
-                                fontSize: '0.78rem',
-                                color: '#64748b',
-                                lineHeight: 1.5,
-                                marginBottom: '6px',
-                              }}>
-                                {n.body}
-                              </div>
-                              <div style={{
-                                fontSize: '0.68rem',
-                                color: '#a78bfa',
-                                fontWeight: 700,
-                                letterSpacing: '0.02em',
-                              }}>
-                                {timeStr}
-                              </div>
-
-                              {/* Reset button */}
-                              {n.metadata?.type === 'challenge_reset' && isTodayDateKey(n.metadata?.date) && !n.resetApplied && (
-                                <button
-                                  onClick={() => handleApplyChallengeReset(n)}
-                                  style={{
-                                    marginTop: 10,
-                                    width: '100%',
-                                    border: 'none',
-                                    borderRadius: 12,
-                                    padding: '9px 12px',
-                                    background: 'linear-gradient(135deg, #6366f1, #a78bfa)',
-                                    color: '#fff',
-                                    fontWeight: 800,
-                                    fontSize: '0.8rem',
-                                    cursor: 'pointer',
-                                    letterSpacing: '0.01em',
-                                    boxShadow: '0 4px 12px rgba(99,102,241,0.3)',
-                                  }}
-                                >
-                                  🔄 Apply Reset
-                                </button>
-                              )}
-                            </div>
-                          </div>
-                        );
-                      })
-                    )}
-                  </div>
-                </motion.div>
-                </div>{/* end centering wrapper */}
-              </>
-            )}
+            {null}
           </AnimatePresence>
         </>,
+        document.body
+      )}
+
+      {/* ── Notification Panel (always rendered, for all viewports) ── */}
+      {createPortal(
+        <AnimatePresence>
+          {showNotifs && (
+            <>
+              {/* Backdrop */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setShowNotifs(false)}
+                style={{
+                  position: 'fixed',
+                  inset: 0,
+                  zIndex: 9998,
+                  background: 'rgba(15,23,42,0.4)',
+                  backdropFilter: 'blur(6px)',
+                  WebkitBackdropFilter: 'blur(6px)',
+                }}
+              />
+              {/* Centering wrapper */}
+              <div style={{
+                position: 'fixed',
+                inset: 0,
+                zIndex: 9999,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '16px',
+                pointerEvents: 'none',
+              }}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.92, y: 16 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.92, y: 16 }}
+                transition={{ type: 'spring', stiffness: 340, damping: 28 }}
+                style={{
+                  pointerEvents: 'auto',
+                  width: '100%',
+                  maxWidth: '460px',
+                  maxHeight: '78vh',
+                  background: 'linear-gradient(145deg, rgba(255,255,255,0.99) 0%, rgba(248,246,255,0.99) 100%)',
+                  backdropFilter: 'blur(20px)',
+                  WebkitBackdropFilter: 'blur(20px)',
+                  borderRadius: '32px',
+                  border: '1px solid rgba(167,139,250,0.25)',
+                  boxShadow: '0 32px 64px -12px rgba(99,102,241,0.18), 0 8px 24px -4px rgba(0,0,0,0.12)',
+                  overflow: 'hidden',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                {/* Header */}
+                <div style={{
+                  padding: '22px 24px 18px',
+                  background: 'linear-gradient(135deg, #6366f1 0%, #a78bfa 100%)',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  flexShrink: 0,
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <div style={{
+                      width: 36, height: 36, borderRadius: '12px',
+                      background: 'rgba(255,255,255,0.2)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '1.1rem'
+                    }}>🔔</div>
+                    <div>
+                      <div style={{ fontWeight: 800, color: '#fff', fontSize: '1rem', letterSpacing: '-0.01em' }}>
+                        Notifications
+                      </div>
+                      <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.75)', fontWeight: 600 }}>
+                        {notifications.filter(n => !n.read).length > 0
+                          ? `${notifications.filter(n => !n.read).length} unread`
+                          : 'All caught up'}
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setShowNotifs(false)}
+                    style={{
+                      background: 'rgba(255,255,255,0.2)',
+                      border: 'none',
+                      cursor: 'pointer',
+                      color: '#fff',
+                      width: 32, height: 32,
+                      borderRadius: '10px',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '0.85rem',
+                      fontWeight: 700,
+                      transition: 'background 0.2s',
+                    }}
+                    onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.3)'}
+                    onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
+                  >✕</button>
+                </div>
+
+                {/* Notification list */}
+                <div style={{ overflowY: 'auto', padding: '12px', flex: 1 }}>
+                  {notifications.length === 0 ? (
+                    <div style={{
+                      padding: '60px 20px',
+                      textAlign: 'center',
+                      color: '#94a3b8',
+                    }}>
+                      <div style={{ fontSize: '2.5rem', marginBottom: '12px' }}>🎉</div>
+                      <div style={{ fontWeight: 700, fontSize: '0.95rem', color: '#64748b', marginBottom: 4 }}>No notifications yet</div>
+                      <div style={{ fontSize: '0.8rem' }}>You're all caught up!</div>
+                    </div>
+                  ) : (
+                    notifications.map((n) => {
+                      const isUnread = !n.read;
+                      const time = n.timestamp?.toDate ? n.timestamp.toDate() : null;
+                      const timeStr = time ? time.toLocaleString('en-AU', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : 'Just now';
+                      const icon = n.title?.toLowerCase().includes('reset') ? '🔄'
+                        : n.title?.toLowerCase().includes('challeng') ? '⚡'
+                        : n.title?.toLowerCase().includes('xp') ? '✨'
+                        : n.title?.toLowerCase().includes('review') ? '📝'
+                        : '📣';
+                      return (
+                        <div key={n.id} style={{
+                          display: 'flex',
+                          gap: '12px',
+                          padding: '14px 16px',
+                          borderRadius: '18px',
+                          marginBottom: '6px',
+                          background: isUnread
+                            ? 'linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(167,139,250,0.06) 100%)'
+                            : 'rgba(255,255,255,0.6)',
+                          border: isUnread
+                            ? '1px solid rgba(99,102,241,0.15)'
+                            : '1px solid rgba(167,139,250,0.08)',
+                          transition: 'all 0.2s ease',
+                          position: 'relative',
+                        }}>
+                          {isUnread && (
+                            <div style={{
+                              position: 'absolute', top: 14, right: 14,
+                              width: 8, height: 8, borderRadius: '50%',
+                              background: 'linear-gradient(135deg, #6366f1, #a78bfa)',
+                              boxShadow: '0 0 6px rgba(99,102,241,0.5)',
+                            }} />
+                          )}
+                          <div style={{
+                            width: 40, height: 40, borderRadius: '14px', flexShrink: 0,
+                            background: isUnread
+                              ? 'linear-gradient(135deg, rgba(99,102,241,0.12), rgba(167,139,250,0.12))'
+                              : 'rgba(167,139,250,0.08)',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            fontSize: '1.1rem',
+                          }}>
+                            {icon}
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ fontWeight: 700, fontSize: '0.87rem', color: '#1e1b4b', marginBottom: '3px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
+                              {n.title}
+                            </div>
+                            <div style={{ fontSize: '0.78rem', color: '#64748b', lineHeight: 1.5, marginBottom: '6px' }}>
+                              {n.body}
+                            </div>
+                            <div style={{ fontSize: '0.68rem', color: '#a78bfa', fontWeight: 700, letterSpacing: '0.02em' }}>
+                              {timeStr}
+                            </div>
+                            {n.metadata?.type === 'challenge_reset' && isTodayDateKey(n.metadata?.date) && !n.resetApplied && (
+                              <button
+                                onClick={() => handleApplyChallengeReset(n)}
+                                style={{
+                                  marginTop: 10, width: '100%', border: 'none', borderRadius: 12,
+                                  padding: '9px 12px', background: 'linear-gradient(135deg, #6366f1, #a78bfa)',
+                                  color: '#fff', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer',
+                                  letterSpacing: '0.01em', boxShadow: '0 4px 12px rgba(99,102,241,0.3)',
+                                }}
+                              >
+                                🔄 Apply Reset
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })
+                  )}
+                </div>
+              </motion.div>
+              </div>
+            </>
+          )}
+        </AnimatePresence>,
         document.body
       )}
     </div>
