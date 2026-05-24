@@ -242,8 +242,12 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                   position: 'relative',
                   padding: '18px 20px',
                   borderRadius: '22px',
-                  background: '#fff',
-                  border: '1px solid rgba(15,23,42,0.06)',
+                  background: todayState === 'done'
+                    ? '#f0fdf4'
+                    : todayState === 'ended'
+                      ? '#fefce8'
+                      : '#fff5f5',
+                  border: `1px solid ${todayState === 'done' ? '#bbf7d0' : todayState === 'ended' ? '#fde68a' : '#fecaca'}`,
                   boxShadow: '0 4px 18px rgba(15,23,42,0.04)',
                   cursor: 'pointer',
                 }}
@@ -263,16 +267,6 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                       <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>{student.name}</h3>
-                      <span style={{
-                        display: 'inline-flex', alignItems: 'center', gap: '5px',
-                        fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase',
-                        padding: '3px 9px', borderRadius: '999px',
-                        background: isActive ? '#f0fdf4' : '#f1f5f9',
-                        color: isActive ? '#16a34a' : '#94a3b8',
-                      }}>
-                        <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: isActive ? '#22c55e' : '#cbd5e1' }} />
-                        {student.status || 'Active'}
-                      </span>
                       {reviewPendingStates[student.id] === true && (
                         <span title="A manual review is waiting" style={{
                           display: 'inline-flex', alignItems: 'center', gap: '4px',
