@@ -345,12 +345,20 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           studentProfile: localBoot.studentProfile || {},
           chapterProgress: localBoot.chapterProgress ?? null,
         };
-        // Always fetch a fresh profile so teacher changes (dailyPracticeConfig,
-        // assignedChapters, etc.) are picked up immediately instead of relying
-        // on a stale local cache.
-        const profileSnap = await getDoc(doc(db, 'users', user.uid));
-        if (cancelled) return;
-        nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : (localBoot.studentProfile || {});
+        // Fetch a fresh profile if the cached copy is older than 5 minutes so
+        // teacher changes (dailyPracticeConfig, assignedChapters, etc.) propagate
+        // quickly without hitting Firestore on every single page load.
+        const PROFILE_TTL_MS = 5 * 60 * 1000;
+        const profileAge = Date.now() - (cached?.savedAt || 0);
+        const shouldFetchProfile = !localBoot.studentProfile
+          || Object.keys(localBoot.studentProfile).length === 0
+          || profileAge > PROFILE_TTL_MS;
+
+        if (shouldFetchProfile) {
+          const profileSnap = await getDoc(doc(db, 'users', user.uid));
+          if (cancelled) return;
+          nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : (localBoot.studentProfile || {});
+        }
 
         setStudentProfile(nextBoot.studentProfile);
 
