@@ -662,4 +662,3 @@ export const Y8_CH18I_QUESTIONS = [
     "graphData": null
   }
 ];
-$$

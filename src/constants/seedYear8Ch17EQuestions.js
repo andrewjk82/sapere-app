@@ -909,4 +909,3 @@ export const Y8_CH17E_QUESTIONS = [
     "graphData": null
   }
 ];
-$$
