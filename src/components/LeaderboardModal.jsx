@@ -88,7 +88,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <span style={{ fontSize: '1.5rem' }}>🏟️</span>
             <div>
-              <h2 style={{ margin: 0, fontSize: '1rem', fontWeight: 900, color: '#fff' }}>100m Sprint</h2>
+              <h2 style={{ margin: 0, fontSize: '1rem', fontWeight: 900, color: '#fff' }}>Challenge Sprint</h2>
               <p  style={{ margin: 0, fontSize: '0.68rem', color: 'rgba(255,255,255,0.5)', fontWeight: 600 }}>XP Leaderboard Race</p>
             </div>
           </div>
