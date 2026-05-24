@@ -1548,7 +1548,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-18',
       title: 'Chapter 18: Graphing straight lines',
-      modules: 8,
+      modules: 9,
       topics: [
         { id: 'y8-18a', code: '18A', title: 'The Cartesian plane' },
         { id: 'y8-18b', code: '18B', title: 'Straight-line graphs that pass through the origin' },
@@ -1557,7 +1557,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-18e', code: '18E', title: 'The y-intercept and the gradient of a line' },
         { id: 'y8-18f', code: '18F', title: 'More on gradients' },
         { id: 'y8-18g', code: '18G', title: 'Applications to constant rate problems' },
-        { id: 'y8-18h', code: '18H', title: 'Not all graphs are straight lines' }
+        { id: 'y8-18h', code: '18H', title: 'Not all graphs are straight lines' },
+        { id: 'y8-18i', code: '18I', title: 'Review' }
       ]
     },
     {
