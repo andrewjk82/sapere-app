@@ -450,8 +450,21 @@ const GeometryEditor = ({ graphData, onChange }) => {
     updateGeometry({ ...geometry, freeLabels });
   };
 
-  const xs = pointNames.map((name) => Number(geometry.points[name]?.[0]) || 0);
-  const ys = pointNames.map((name) => Number(geometry.points[name]?.[1]) || 0);
+  const is3D = pointNames.some((n) => Array.isArray(geometry.points[n]) && geometry.points[n].length >= 3);
+  const ISO_COS = Math.cos(Math.PI / 6);
+  const ISO_SIN = Math.sin(Math.PI / 6);
+  const toFlat = (pt) => {
+    if (!pt) return [0, 0];
+    if (is3D) {
+      const [x = 0, y = 0, z = 0] = pt;
+      return [(x - z) * ISO_COS, y + (x + z) * ISO_SIN];
+    }
+    return [Number(pt[0]) || 0, Number(pt[1]) || 0];
+  };
+  const flatPoints = {};
+  pointNames.forEach((n) => { flatPoints[n] = toFlat(geometry.points[n]); });
+  const xs = pointNames.map((n) => flatPoints[n][0]);
+  const ys = pointNames.map((n) => flatPoints[n][1]);
   const minX = Math.min(...xs);
   const maxX = Math.max(...xs);
   const minY = Math.min(...ys);
@@ -465,10 +478,10 @@ const GeometryEditor = ({ graphData, onChange }) => {
   const W = spanX * scale + pad * 2;
   const H = spanY * scale + pad * 2;
   const showPointLabels = geometry.showPointLabels !== false;
-  const toSvg = (pt) => [
-    ((Number(pt[0]) || 0) - minX) * scale + pad,
-    (maxY - (Number(pt[1]) || 0)) * scale + pad,
-  ];
+  const toSvg = (pt) => {
+    const [fx, fy] = toFlat(pt);
+    return [(fx - minX) * scale + pad, (maxY - fy) * scale + pad];
+  };
   const fromPointer = (event) => {
     const rect = surfaceRef.current?.getBoundingClientRect();
     if (!rect) return [0, 0];

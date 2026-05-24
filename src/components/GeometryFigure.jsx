@@ -32,8 +32,27 @@ const GeometryFigure = ({
   const names = Object.keys(points);
   if (names.length === 0) return null;
 
-  const xs = names.map((n) => points[n][0]);
-  const ys = names.map((n) => points[n][1]);
+  // Detect 3D mode: any point has 3 coordinates
+  const is3D = names.some((n) => Array.isArray(points[n]) && points[n].length >= 3);
+
+  // Isometric projection: [x,y,z] → [isoX, isoY] (2D flat coords)
+  // x=right, y=up, z=depth(toward viewer)
+  const ISO_COS = Math.cos(Math.PI / 6); // √3/2
+  const ISO_SIN = Math.sin(Math.PI / 6); // 0.5
+  const toIso = (p) => {
+    const [x, y, z = 0] = p;
+    return [(x - z) * ISO_COS, y + (x + z) * ISO_SIN];
+  };
+
+  // Flat 2D coords for each point (iso-projected if 3D, passthrough if 2D)
+  const flat = {};
+  names.forEach((n) => {
+    const p = points[n] || [0, 0];
+    flat[n] = is3D ? toIso(p) : [p[0], p[1]];
+  });
+
+  const xs = names.map((n) => flat[n][0]);
+  const ys = names.map((n) => flat[n][1]);
   const minX = Math.min(...xs);
   const maxX = Math.max(...xs);
   const minY = Math.min(...ys);
@@ -47,11 +66,10 @@ const GeometryFigure = ({
   const drawW = spanX * scale + pad * 2;
   const drawH = spanY * scale + pad * 2;
 
-  // math coords → svg coords (y flipped)
+  // flat coords → svg coords (y flipped)
   const P = (n) => {
-    const p = points[n];
-    if (!p) return [0, 0];
-    return [(p[0] - minX) * scale + pad, (maxY - p[1]) * scale + pad];
+    const [fx, fy] = flat[n] || [0, 0];
+    return [(fx - minX) * scale + pad, (maxY - fy) * scale + pad];
   };
 
   // centroid in svg space — used to push labels inward/outward
