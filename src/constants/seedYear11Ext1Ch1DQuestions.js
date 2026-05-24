@@ -11,7 +11,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = 4, -4"
       }
     ],
@@ -29,7 +37,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = 6, -6"
       }
     ],
@@ -47,7 +63,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 3, -3"
       }
     ],
@@ -65,7 +89,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "d = 7, -7"
       }
     ],
@@ -83,7 +115,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = 1, -1"
       }
     ],
@@ -101,7 +141,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "u = \\frac{4}{3}, -\\frac{4}{3}"
       }
     ],
@@ -119,7 +167,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = \\frac{1}{3}, -\\frac{1}{3}"
       }
     ],
@@ -137,7 +193,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = \\frac{5}{2}, -\\frac{5}{2}"
       }
     ],
@@ -155,7 +219,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Take the square root of both sides, remembering the ± sign",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = \\frac{7}{6}, -\\frac{7}{6}"
       }
     ],
@@ -173,7 +245,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = 0, 6"
       }
     ],
@@ -191,7 +271,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = 0, -2"
       }
     ],
@@ -209,7 +297,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "d = 0, -3"
       }
     ],
@@ -227,7 +323,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = 0, 8"
       }
     ],
@@ -245,7 +349,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "u = 0, 2"
       }
     ],
@@ -263,7 +375,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 0, 4"
       }
     ],
@@ -281,7 +401,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "c = 0, \\frac{1}{3}"
       }
     ],
@@ -299,7 +427,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "v = 0, -\\frac{1}{4}"
       }
     ],
@@ -317,7 +453,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = 0, -\\frac{2}{5}"
       }
     ],
@@ -335,7 +479,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = 0, \\frac{7}{3}"
       }
     ],
@@ -353,7 +505,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "q = 0, \\frac{3}{5}"
       }
     ],
@@ -371,7 +531,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term and equate each part to zero",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = 0, -\\frac{4}{7}"
       }
     ],
@@ -389,7 +557,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = -1, -4"
       }
     ],
@@ -407,7 +583,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = 1, 3"
       }
     ],
@@ -425,7 +609,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = -2, -5"
       }
     ],
@@ -443,7 +635,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 2, 6"
       }
     ],
@@ -461,7 +661,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = 7, -2"
       }
     ],
@@ -479,7 +687,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "d = 6"
       }
     ],
@@ -497,7 +713,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "q = 1, 9"
       }
     ],
@@ -515,7 +739,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "r = 2, -5"
       }
     ],
@@ -533,7 +765,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "w = 13, -2"
       }
     ],
@@ -551,7 +791,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "k = 1, -6"
       }
     ],
@@ -569,7 +817,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "u = 4, -3"
       }
     ],
@@ -587,7 +843,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 13, -12"
       }
     ],
@@ -605,7 +869,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "d = 4, 5"
       }
     ],
@@ -623,7 +895,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "v = 12, -2"
       }
     ],
@@ -641,7 +921,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "w = 8, -9"
       }
     ],
@@ -659,7 +947,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "x = 7, -5"
       }
     ],
@@ -677,7 +973,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = -20, -3"
       }
     ],
@@ -695,7 +999,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the monic quadratic into two binomials and solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "c = 2, -24"
       }
     ],
@@ -713,7 +1025,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = -1, -\\frac{1}{3}"
       }
     ],
@@ -731,7 +1051,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 2, \\frac{1}{2}"
       }
     ],
@@ -749,7 +1077,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = 1, \\frac{1}{5}"
       }
     ],
@@ -767,7 +1103,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = -3, -\\frac{1}{3}"
       }
     ],
@@ -785,7 +1129,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "q = 1, -\\frac{5}{3}"
       }
     ],
@@ -803,7 +1155,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = \\frac{5}{2}, -1"
       }
     ],
@@ -821,7 +1181,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "c = 2, -\\frac{2}{5}"
       }
     ],
@@ -839,7 +1207,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "d = \\frac{2}{3}, -4"
       }
     ],
@@ -857,7 +1233,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "x = 3, -\\frac{7}{3}"
       }
     ],
@@ -875,7 +1259,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = \\frac{3}{2}, -5"
       }
     ],
@@ -893,7 +1285,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = 6, \\frac{1}{6}"
       }
     ],
@@ -911,7 +1311,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "q = 2, \\frac{4}{5}"
       }
     ],
@@ -929,7 +1337,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "u = 6, -\\frac{1}{3}"
       }
     ],
@@ -947,7 +1363,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "v = \\frac{2}{3}, -\\frac{3}{2}"
       }
     ],
@@ -965,7 +1389,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "w = \\frac{1}{4}"
       }
     ],
@@ -983,7 +1415,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = -\\frac{3}{2}, -\\frac{3}{5}"
       }
     ],
@@ -1001,7 +1441,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "c = -\\frac{1}{3}, -\\frac{2}{5}"
       }
     ],
@@ -1019,7 +1467,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Use the cross method or splitting the middle term to factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = \\frac{1}{4}, -\\frac{3}{2}"
       }
     ],
@@ -1037,7 +1493,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "y = \\frac{1 \\pm \\sqrt{13}}{2}"
       }
     ],
@@ -1055,7 +1519,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "z = \\frac{-1 \\pm \\sqrt{17}}{2}"
       }
     ],
@@ -1073,7 +1545,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "p = \\frac{5 \\pm \\sqrt{13}}{2}"
       }
     ],
@@ -1091,7 +1571,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "v = -2 \\pm \\sqrt{5}"
       }
     ],
@@ -1109,7 +1597,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "d = 4 \\pm \\sqrt{13}"
       }
     ],
@@ -1127,7 +1623,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "x = \\frac{-3 \\pm \\sqrt{3}}{3}"
       }
     ],
@@ -1145,7 +1649,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "b = \\frac{3 \\pm \\sqrt{6}}{3}"
       }
     ],
@@ -1163,7 +1675,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "y = \\frac{-7 \\pm \\sqrt{89}}{4}"
       }
     ],
@@ -1181,7 +1701,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "c = \\frac{-5 \\pm \\sqrt{57}}{8}"
       }
     ],
@@ -1199,7 +1727,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "d = \\frac{3 \\pm \\sqrt{19}}{5}"
       }
     ],
@@ -1217,7 +1753,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "u = \\frac{3 \\pm \\sqrt{29}}{10}"
       }
     ],
@@ -1235,7 +1779,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Apply the quadratic formula",
+        "explanation": "Identify the coefficients $a, b,$ and $c$ from the standard form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Identify a, b, c}"
+      },
+      {
+        "explanation": "Substitute these values into the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "workingOut": "\\text{Substitute into formula}"
+      },
+      {
+        "explanation": "Simplify the discriminant (the value under the square root) to find the exact solutions.",
         "workingOut": "No real solutions"
       }
     ],
@@ -1253,7 +1805,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "y = 5, -1"
       }
     ],
@@ -1271,7 +1831,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "z = 8, 0"
       }
     ],
@@ -1289,7 +1857,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "b = -4, -6"
       }
     ],
@@ -1307,7 +1883,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "y = -3 \\pm \\sqrt{7}"
       }
     ],
@@ -1325,7 +1909,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "p = 6 \\pm \\sqrt{6}"
       }
     ],
@@ -1343,7 +1935,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "q = 2, -7"
       }
     ],
@@ -1361,7 +1961,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "m = 9, -2"
       }
     ],
@@ -1379,7 +1987,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "No real solutions"
       }
     ],
@@ -1397,7 +2013,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Add the square of half the coefficient of the linear term to both sides",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "c = \\frac{-9 \\pm 3\\sqrt{5}}{2}"
       }
     ],
@@ -1415,7 +2039,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange into standard quadratic form and factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "y = 3, -2"
       }
     ],
@@ -1433,7 +2065,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange into standard quadratic form and factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 3, 4"
       }
     ],
@@ -1451,7 +2091,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange into standard quadratic form and factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = \\frac{1}{2}, 6"
       }
     ],
@@ -1469,7 +2117,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Rearrange into standard quadratic form and factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = 2, -\\frac{5}{2}"
       }
     ],
@@ -1487,7 +2143,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply to clear fractions, then use the quadratic formula",
+        "explanation": "Analyze the equation and rewrite it in standard quadratic form if necessary.",
+        "workingOut": "\\text{Standard form}"
+      },
+      {
+        "explanation": "Apply the appropriate method (factoring, completing the square, or quadratic formula) to solve.",
+        "workingOut": "\\text{Apply solving method}"
+      },
+      {
+        "explanation": "Simplify to obtain the final exact values for the variable.",
         "workingOut": "y = \\frac{3 \\pm \\sqrt{17}}{2}"
       }
     ],
@@ -1505,7 +2169,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply to clear fractions, then use the quadratic formula",
+        "explanation": "Analyze the equation and rewrite it in standard quadratic form if necessary.",
+        "workingOut": "\\text{Standard form}"
+      },
+      {
+        "explanation": "Apply the appropriate method (factoring, completing the square, or quadratic formula) to solve.",
+        "workingOut": "\\text{Apply solving method}"
+      },
+      {
+        "explanation": "Simplify to obtain the final exact values for the variable.",
         "workingOut": "z = \\frac{5 \\pm \\sqrt{17}}{2}"
       }
     ],
@@ -1523,7 +2195,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply to clear fractions, then use the quadratic formula",
+        "explanation": "Analyze the equation and rewrite it in standard quadratic form if necessary.",
+        "workingOut": "\\text{Standard form}"
+      },
+      {
+        "explanation": "Apply the appropriate method (factoring, completing the square, or quadratic formula) to solve.",
+        "workingOut": "\\text{Apply solving method}"
+      },
+      {
+        "explanation": "Simplify to obtain the final exact values for the variable.",
         "workingOut": "b = \\frac{3 \\pm \\sqrt{29}}{2}"
       }
     ],
@@ -1541,7 +2221,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply to clear fractions, then use the quadratic formula",
+        "explanation": "Analyze the equation and rewrite it in standard quadratic form if necessary.",
+        "workingOut": "\\text{Standard form}"
+      },
+      {
+        "explanation": "Apply the appropriate method (factoring, completing the square, or quadratic formula) to solve.",
+        "workingOut": "\\text{Apply solving method}"
+      },
+      {
+        "explanation": "Simplify to obtain the final exact values for the variable.",
         "workingOut": "p = \\frac{1 \\pm \\sqrt{13}}{3}"
       }
     ],
@@ -1559,7 +2247,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Divide by leading coefficient, then complete the square",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "y = \\frac{3 \\pm \\sqrt{15}}{3}"
       }
     ],
@@ -1577,7 +2273,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Divide by leading coefficient, then complete the square",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "z = \\frac{-6 \\pm \\sqrt{21}}{3}"
       }
     ],
@@ -1595,7 +2299,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Divide by leading coefficient, then complete the square",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "No real solutions"
       }
     ],
@@ -1613,7 +2325,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Divide by leading coefficient, then complete the square",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "q = \\frac{1}{2}, -\\frac{5}{2}"
       }
     ],
@@ -1631,7 +2351,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Divide by leading coefficient, then complete the square",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "r = \\frac{3 \\pm \\sqrt{13}}{4}"
       }
     ],
@@ -1649,7 +2377,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Divide by leading coefficient, then complete the square",
+        "explanation": "If the leading coefficient is not $1$, divide the entire equation by it. Then move the constant term to the right side.",
+        "workingOut": "\\text{Prepare the equation}"
+      },
+      {
+        "explanation": "Add the square of half the coefficient of the linear term to both sides to complete the square.",
+        "workingOut": "\\text{Add } (b/2)^2"
+      },
+      {
+        "explanation": "Write the left side as a perfect square and take the square root of both sides to solve for the variable.",
         "workingOut": "w = \\frac{4 \\pm \\sqrt{6}}{2}"
       }
     ],
@@ -1667,7 +2403,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Treat it as a quadratic in one variable and factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = 3q, p = 4q"
       }
     ],
@@ -1685,7 +2429,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Treat it as a quadratic in one variable and factor",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "x = \\frac{y}{2}, x = -3y"
       }
     ],
@@ -1703,7 +2455,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the expression to solve for q",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "q = 3p, q = -3p"
       }
     ],
@@ -1721,7 +2481,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the expression to solve for q",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "q = \\frac{p}{10}, q = -\\frac{p}{2}"
       }
     ],
@@ -1739,7 +2507,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = \\frac{5 \\pm \\sqrt{113}}{4}"
       }
     ],
@@ -1757,7 +2533,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "x = \\frac{2 \\pm \\sqrt{10}}{3}"
       }
     ],
@@ -1775,7 +2559,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "z = 1 \\pm 2\\sqrt{3}"
       }
     ],
@@ -1793,7 +2585,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = \\frac{-2 \\pm \\sqrt{55}}{3}"
       }
     ],
@@ -1811,7 +2611,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "b = 4, -\\frac{1}{2}"
       }
     ],
@@ -1829,7 +2637,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "m = \\frac{7 \\pm \\sqrt{145}}{2}"
       }
     ],
@@ -1847,7 +2663,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "u = \\sqrt{2} \\pm \\sqrt{10}"
       }
     ],
@@ -1865,7 +2689,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cross-multiply or find a common denominator to form a standard quadratic equation, then solve",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "n = \\frac{2 \\pm \\sqrt{13}}{2}"
       }
     ],
@@ -1883,7 +2715,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Form a quadratic equation in the target variable and factor or use the quadratic formula",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "p = \\frac{11q}{14}, p = 2q"
       }
     ],
@@ -1901,7 +2741,15 @@ export const Y11_EXT1_CH1D_QUESTIONS = [
     "hint": "Use factoring, completing the square, or the quadratic formula as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Form a quadratic equation in the target variable and factor or use the quadratic formula",
+        "explanation": "Rearrange the equation into the standard quadratic form $ax^2+bx+c=0$.",
+        "workingOut": "\\text{Rearrange to standard form}"
+      },
+      {
+        "explanation": "Factorize the quadratic expression on the left-hand side.",
+        "workingOut": "\\text{Factorize}"
+      },
+      {
+        "explanation": "Use the null factor law by setting each factor to zero to find the solutions.",
         "workingOut": "u = p, u = \\frac{pq}{p-2q}"
       }
     ],
