@@ -72,15 +72,14 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
         <div style={{
           background: '#2d6a2d',
           padding: '0',
-          overflowX: 'auto',
-          overflowY: 'hidden',
+          overflow: 'hidden',
         }}>
           {loading ? (
             <div style={{ textAlign: 'center', padding: '60px', color: '#fff' }}>
               <div className="app-spinner" style={{ margin: '0 auto', borderColor: 'rgba(255,255,255,0.3)', borderTopColor: '#fff' }} />
             </div>
           ) : (
-            <div style={{ minWidth: '600px', position: 'relative' }}>
+            <div style={{ position: 'relative', width: '100%' }}>
 
               {/* Finish line */}
               <div style={{
