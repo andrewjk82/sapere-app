@@ -94,7 +94,12 @@ export function generateTwin(q) {
 
 // ── Reads ─────────────────────────────────────────────────────────────────
 export function getNote(kind, uid) {
-  return read(kind, uid);
+  const items = read(kind, uid);
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+  return items;
 }
 
 export function getNoteCount(kind, uid) {

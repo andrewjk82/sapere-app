@@ -77,7 +77,9 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
           <div className="sn__bar-sub">{subtitle}</div>
         </div>
       </div>
-      <button className="sn__close" onClick={onClose}><X size={18} /></button>
+      <button onClick={onClose} style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 16px', borderRadius: '20px', border: '2px solid rgba(255,255,255,0.5)', background: 'rgba(255,255,255,0.15)', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', backdropFilter: 'blur(4px)' }}>
+        <X size={15} /> 종료
+      </button>
     </div>
     {showProgress && (
       <div className="sn__progress-wrap">
