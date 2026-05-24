@@ -1536,12 +1536,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-17',
       title: 'Chapter 17: Formulas and factorisation',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y8-17a', code: '17A', title: 'Formulas' },
         { id: 'y8-17b', code: '17B', title: 'Expansion and factorisation' },
         { id: 'y8-17c', code: '17C', title: 'Binomial products' },
-        { id: 'y8-17d', code: '17D', title: 'Factorisation of simple quadratics' }
+        { id: 'y8-17d', code: '17D', title: 'Factorisation of simple quadratics' },
+        { id: 'y8-17e', code: '17E', title: 'Review' }
       ]
     },
     {
