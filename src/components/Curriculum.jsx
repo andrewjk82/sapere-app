@@ -52,6 +52,7 @@ import { Y8_CH14E_QUESTIONS } from '../constants/seedYear8Ch14EQuestions.js';
 import { Y8_CH15A_QUESTIONS } from '../constants/seedYear8Ch15Questions.js';
 import { Y8_CH15I_QUESTIONS } from '../constants/seedYear8Ch15IQuestions.js';
 import { Y8_CH16A_QUESTIONS } from '../constants/seedYear8Ch16Questions.js';
+import { Y8_CH16E_QUESTIONS } from '../constants/seedYear8Ch16EQuestions.js';
 import { Y8_CH17A_QUESTIONS } from '../constants/seedYear8Ch17Questions.js';
 import { Y8_CH18A_QUESTIONS } from '../constants/seedYear8Ch18Questions.js';
 import { Y8_CH19A_QUESTIONS } from '../constants/seedYear8Ch19Questions.js';
@@ -100,6 +101,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-15', chapterTitle: 'Chapter 15: Area, volume and time', topicId: 'y8-15a', topicCode: '15A', topicTitle: 'Review of area and length', year: 'Year 8', seed: Y8_CH15A_QUESTIONS, label: 'Y8 Ch15 · Area, volume and time' },
   { chapterId: 'y8-15', chapterTitle: 'Chapter 15: Areas, volumes and time', topicId: 'y8-15i', code: '15I', topicCode: '15I', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH15I_QUESTIONS, label: 'Y8 Ch15 · Review' },
   { chapterId: 'y8-16', chapterTitle: 'Chapter 16: Probability', topicId: 'y8-16a', topicCode: '16A', topicTitle: 'An introduction to probability', year: 'Year 8', seed: Y8_CH16A_QUESTIONS, label: 'Y8 Ch16 · Probability' },
+  { chapterId: 'y8-16', chapterTitle: 'Chapter 16: Probability', topicId: 'y8-16e', topicCode: '16E', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH16E_QUESTIONS, label: 'Y8 Ch16 · Review' },
   { chapterId: 'y8-17', chapterTitle: 'Chapter 17: Formulas and factorisation', topicId: 'y8-17a', topicCode: '17A', topicTitle: 'Formulas', year: 'Year 8', seed: Y8_CH17A_QUESTIONS, label: 'Y8 Ch17 · Formulas' },
   { chapterId: 'y8-18', chapterTitle: 'Chapter 18: Graphing straight lines', topicId: 'y8-18a', topicCode: '18A', topicTitle: 'The Cartesian plane', year: 'Year 8', seed: Y8_CH18A_QUESTIONS, label: 'Y8 Ch18 · Graphing straight lines' },
   { chapterId: 'y8-19', chapterTitle: 'Chapter 19: Statistics', topicId: 'y8-19a', topicCode: '19A', topicTitle: 'Comparing means and medians', year: 'Year 8', seed: Y8_CH19A_QUESTIONS, label: 'Y8 Ch19 · Statistics' },

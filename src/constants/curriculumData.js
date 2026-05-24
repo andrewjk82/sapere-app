@@ -1524,12 +1524,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-16',
       title: 'Chapter 16: Probability',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y8-16a', code: '16A', title: 'An introduction to probability' },
         { id: 'y8-16b', code: '16B', title: "'Or' and 'and'" },
         { id: 'y8-16c', code: '16C', title: 'Two-way tables' },
-        { id: 'y8-16d', code: '16D', title: 'Further uses of Venn diagrams' }
+        { id: 'y8-16d', code: '16D', title: 'Further uses of Venn diagrams' },
+        { id: 'y8-16e', code: '16E', title: 'Review' }
       ]
     },
     {
