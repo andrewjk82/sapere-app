@@ -78,7 +78,7 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
         </div>
       </div>
       <button onClick={onClose} style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 16px', borderRadius: '20px', border: '2px solid rgba(255,255,255,0.5)', background: 'rgba(255,255,255,0.15)', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', backdropFilter: 'blur(4px)' }}>
-        <X size={15} /> 종료
+        <X size={15} /> Exit
       </button>
     </div>
     {showProgress && (

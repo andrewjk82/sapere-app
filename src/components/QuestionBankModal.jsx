@@ -784,11 +784,11 @@ const GeometryEditor = ({ graphData, onChange }) => {
                   const { labelPos: _, ...rest } = sideLabels[idx];
                   sideLabels[idx] = rest;
                   updateGeometry({ ...geometry, sideLabels });
-                }} style={{ border: 0, background: '#f5f3ff', color: '#7c3aed', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>위치 초기화</button>
+                }} style={{ border: 0, background: '#f5f3ff', color: '#7c3aed', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>Reset position</button>
               ) : (
-                <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>기본 위치</span>
+                <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>Default position</span>
               )}
-              <button type="button" onClick={() => updateGeometry({ ...geometry, sideLabels: (geometry.sideLabels || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>삭제</button>
+              <button type="button" onClick={() => updateGeometry({ ...geometry, sideLabels: (geometry.sideLabels || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>Remove</button>
             </div>
           ))}
         </div>
