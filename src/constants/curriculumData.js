@@ -1445,14 +1445,15 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-10',
       title: 'Chapter 10: Rates and ratios',
-      modules: 6,
+      modules: 7,
       topics: [
         { id: 'y8-10a', code: '10A', title: 'Review of the unitary method' },
         { id: 'y8-10b', code: '10B', title: 'Solving problems using the unitary method' },
         { id: 'y8-10c', code: '10C', title: 'Speed' },
         { id: 'y8-10d', code: '10D', title: 'Ratios' },
         { id: 'y8-10e', code: '10E', title: 'Using ratios in problems' },
-        { id: 'y8-10f', code: '10F', title: 'Scale drawings' }
+        { id: 'y8-10f', code: '10F', title: 'Scale drawings' },
+        { id: 'y8-10G', code: '10G', title: 'Review of rates and ratios' }
       ]
     },
     {
