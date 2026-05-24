@@ -46,6 +46,7 @@ import { Y8_CH11E_QUESTIONS } from '../constants/seedYear8Ch11EQuestions.js';
 import { Y8_CH12A_QUESTIONS } from '../constants/seedYear8Ch12Questions.js';
 import { Y8_CH12G_QUESTIONS } from '../constants/seedYear8Ch12GQuestions.js';
 import { Y8_CH13A_QUESTIONS } from '../constants/seedYear8Ch13Questions.js';
+import { Y8_CH13D_QUESTIONS } from '../constants/seedYear8Ch13DQuestions.js';
 import { Y8_CH14A_QUESTIONS } from '../constants/seedYear8Ch14Questions.js';
 import { Y8_CH15A_QUESTIONS } from '../constants/seedYear8Ch15Questions.js';
 import { Y8_CH16A_QUESTIONS } from '../constants/seedYear8Ch16Questions.js';
@@ -91,6 +92,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-12', chapterTitle: 'Chapter 12: Congruent triangles', topicId: 'y8-12a', topicCode: '12A', topicTitle: 'Congruence of figures in the plane', year: 'Year 8', seed: Y8_CH12A_QUESTIONS, label: 'Y8 Ch12 · Congruence' },
   { chapterId: 'y8-12', chapterTitle: 'Chapter 12: Congruent triangles', topicId: 'y8-12g', topicCode: '12G', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH12G_QUESTIONS, label: 'Y8 Ch12 · Review' },
   { chapterId: 'y8-13', chapterTitle: 'Chapter 13: Congruence and special quadrilaterals', topicId: 'y8-13a', topicCode: '13A', topicTitle: 'Parallelograms and their properties', year: 'Year 8', seed: Y8_CH13A_QUESTIONS, label: 'Y8 Ch13 · Congruence and special quadrilaterals' },
+  { chapterId: 'y8-13', chapterTitle: 'Chapter 13: Congruence and special quadrilaterals', topicId: 'y8-13d', topicCode: '13D', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH13D_QUESTIONS, label: 'Y8 Ch13 · Review' },
   { chapterId: 'y8-14', chapterTitle: 'Chapter 14: Circles', topicId: 'y8-14a', topicCode: '14A', topicTitle: 'Features of the circle', year: 'Year 8', seed: Y8_CH14A_QUESTIONS, label: 'Y8 Ch14 · Circles' },
   { chapterId: 'y8-15', chapterTitle: 'Chapter 15: Area, volume and time', topicId: 'y8-15a', topicCode: '15A', topicTitle: 'Review of area and length', year: 'Year 8', seed: Y8_CH15A_QUESTIONS, label: 'Y8 Ch15 · Area, volume and time' },
   { chapterId: 'y8-16', chapterTitle: 'Chapter 16: Probability', topicId: 'y8-16a', topicCode: '16A', topicTitle: 'An introduction to probability', year: 'Year 8', seed: Y8_CH16A_QUESTIONS, label: 'Y8 Ch16 · Probability' },

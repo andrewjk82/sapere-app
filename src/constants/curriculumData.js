@@ -1485,11 +1485,12 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-13',
       title: 'Chapter 13: Congruence and special quadrilaterals',
-      modules: 3,
+      modules: 4,
       topics: [
         { id: 'y8-13a', code: '13A', title: 'Parallelograms and their properties' },
         { id: 'y8-13b', code: '13B', title: 'Rhombuses and their properties' },
-        { id: 'y8-13c', code: '13C', title: 'Rectangles and squares and their properties' }
+        { id: 'y8-13c', code: '13C', title: 'Rectangles and squares and their properties' },
+        { id: 'y8-13d', code: '13D', title: 'Review' }
       ]
     },
     {
