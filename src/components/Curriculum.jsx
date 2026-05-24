@@ -18,6 +18,7 @@ import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQues
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
+import { Y11_EXT1_CH1A_QUESTIONS } from '../constants/seedYear11Ext1Ch1AQuestions.js';
 import { Y9_CH3A_QUESTIONS } from '../constants/seedYear9Ch3Questions.js';
 import { Y9_CH4A_QUESTIONS } from '../constants/seedYear9Ch4Questions.js';
 import { Y9_CH5A_QUESTIONS } from '../constants/seedYear9Ch5Questions.js';
@@ -69,6 +70,7 @@ import { seedChapterQuestions } from '../services/chapterSeeder';
 // create its seed file, import the array above, and add ONE entry here — a
 // "Seed" button appears automatically. No new handler function needed.
 const CHAPTER_SEED_REGISTRY = [
+  { chapterId: 'y11-1A', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11-1a', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },
   { chapterId: 'y9-3', chapterTitle: 'Chapter 3: Consumer arithmetic', topicId: 'y9-3a', topicCode: '3A', topicTitle: 'Review of percentages', year: 'Year 9', seed: Y9_CH3A_QUESTIONS, label: 'Y9 Ch3 · Consumer arithmetic' },
   { chapterId: 'y9-4', chapterTitle: 'Chapter 4: Factorisation', topicId: 'y9-4a', topicCode: '4A', topicTitle: 'Factorisation', year: 'Year 9', seed: Y9_CH4A_QUESTIONS, label: 'Y9 Ch4 · Factorisation' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5a', topicCode: '5A', topicTitle: 'Expressions', year: 'Year 9', seed: Y9_CH5A_QUESTIONS, label: 'Y9 Ch5 · Linear equations' },

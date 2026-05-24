@@ -2286,6 +2286,14 @@ export const CURRICULUM_DATA = {
     ],
     'Extension 1': [
       {
+        id: 'y11-1A',
+        title: 'Chapter 1: Algebra review',
+        modules: 1,
+        topics: [
+          { id: 'y11-1a', code: '1A', title: 'Algebra review' }
+        ]
+      },
+      {
         id: 'y11e1-4',
         title: 'Chapter 4: Equations and inequations',
         modules: 4,
