@@ -774,6 +774,26 @@ const GeometryEditor = ({ graphData, onChange }) => {
         ))}
       </div>
 
+      {(geometry.sideLabels || []).length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Side Labels</div>
+          {(geometry.sideLabels || []).map((sl, idx) => (
+            <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontWeight: 700, color: '#4c1d95', minWidth: '60px' }}>{sl.text} ({sl.between?.[0]}–{sl.between?.[1]})</span>
+              {sl.labelPos && (
+                <button type="button" onClick={() => {
+                  const sideLabels = [...(geometry.sideLabels || [])];
+                  const { labelPos: _, ...rest } = sideLabels[idx];
+                  sideLabels[idx] = rest;
+                  updateGeometry({ ...geometry, sideLabels });
+                }} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>위치 초기화</button>
+              )}
+              {!sl.labelPos && <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>기본 위치</span>}
+            </div>
+          ))}
+        </div>
+      )}
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         <button type="button" onClick={() => updateGeometry({ ...geometry, freeLabels: [...(geometry.freeLabels || []), { point: [0, 0], text: 'x' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add free label</button>
         {(geometry.freeLabels || []).map((label, idx) => {
@@ -1268,7 +1288,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         </div>
 
         {/* Body */}
-        <div style={{ padding: '32px' }}>
+        <div style={{ padding: '24px 20px' }}>
           {!isFormOpen ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
