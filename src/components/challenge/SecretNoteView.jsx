@@ -27,8 +27,10 @@ import {
 // and "3a^2 - 10ab - 8b^2" grade as equal.
 const SUPERSCRIPTS = '⁰¹²³⁴⁵⁶⁷⁸⁹';
 const norm = (s) => String(s ?? '')
+  .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
+  .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
   .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g, (c) => String(SUPERSCRIPTS.indexOf(c)))
-  .replace(/[\^${}]/g, '')
+  .replace(/[\^${}\\]/g, '')
   .replace(/[−–—]/g, '-')
   .replace(/\s+/g, '')
   .toLowerCase();
