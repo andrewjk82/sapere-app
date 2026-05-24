@@ -1496,12 +1496,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-14',
       title: 'Chapter 14: Circles',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y8-14a', code: '14A', title: 'Features of the circle' },
         { id: 'y8-14b', code: '14B', title: 'Circumference of a circle' },
         { id: 'y8-14c', code: '14C', title: 'Area of a circle' },
-        { id: 'y8-14d', code: '14D', title: 'Areas of composite figures' }
+        { id: 'y8-14d', code: '14D', title: 'Areas of composite figures' },
+        { id: 'y8-14e', code: '14E', title: 'Review' }
       ]
     },
     {
