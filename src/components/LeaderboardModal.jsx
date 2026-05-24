@@ -183,7 +183,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
                       <motion.div
                         initial={{ left: '6%' }}
                         animate={{ left: runLeft }}
-                        transition={{ duration: 1.1, delay: runDelay, ease: [0.34, 1.1, 0.64, 1] }}
+                        transition={{ duration: 3.2, delay: runDelay, ease: [0.25, 0.46, 0.45, 0.94] }}
                         style={{
                           position: 'absolute',
                           top:   `${laneTop}px`,
