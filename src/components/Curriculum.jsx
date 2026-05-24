@@ -42,6 +42,7 @@ import { Y8_CH9A_QUESTIONS } from '../constants/seedYear8Ch9Questions.js';
 import { Y8_CH10A_QUESTIONS } from '../constants/seedYear8Ch10Questions.js';
 import { Y8_CH10G_QUESTIONS } from '../constants/seedYear8Ch10GQuestions.js';
 import { Y8_CH11A_QUESTIONS } from '../constants/seedYear8Ch11Questions.js';
+import { Y8_CH11E_QUESTIONS } from '../constants/seedYear8Ch11EQuestions.js';
 import { Y8_CH12A_QUESTIONS } from '../constants/seedYear8Ch12Questions.js';
 import { Y8_CH13A_QUESTIONS } from '../constants/seedYear8Ch13Questions.js';
 import { Y8_CH14A_QUESTIONS } from '../constants/seedYear8Ch14Questions.js';
@@ -85,6 +86,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10a', topicCode: '10A', topicTitle: 'Review of the unitary method', year: 'Year 8', seed: Y8_CH10A_QUESTIONS, label: 'Y8 Ch10 · Unitary method' },
   { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10G', topicCode: '10G', topicTitle: 'Review of rates and ratios', year: 'Year 8', seed: Y8_CH10G_QUESTIONS, label: 'Y8 Ch10 · Review' },
   { chapterId: 'y8-11', chapterTitle: 'Chapter 11: Algebra - part 2', topicId: 'y8-11a', topicCode: '11A', topicTitle: 'Expanding brackets and collecting like terms', year: 'Year 8', seed: Y8_CH11A_QUESTIONS, label: 'Y8 Ch11 · Algebra part 2' },
+  { chapterId: 'y8-11', chapterTitle: 'Chapter 11: Algebra - part 2', topicId: 'y8-11e', topicCode: '11E', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH11E_QUESTIONS, label: 'Y8 Ch11 · Review' },
   { chapterId: 'y8-12', chapterTitle: 'Chapter 12: Congruence', topicId: 'y8-12a', topicCode: '12A', topicTitle: 'Congruence of figures in the plane', year: 'Year 8', seed: Y8_CH12A_QUESTIONS, label: 'Y8 Ch12 · Congruence' },
   { chapterId: 'y8-13', chapterTitle: 'Chapter 13: Congruence and special quadrilaterals', topicId: 'y8-13a', topicCode: '13A', topicTitle: 'Parallelograms and their properties', year: 'Year 8', seed: Y8_CH13A_QUESTIONS, label: 'Y8 Ch13 · Congruence and special quadrilaterals' },
   { chapterId: 'y8-14', chapterTitle: 'Chapter 14: Circles', topicId: 'y8-14a', topicCode: '14A', topicTitle: 'Features of the circle', year: 'Year 8', seed: Y8_CH14A_QUESTIONS, label: 'Y8 Ch14 · Circles' },

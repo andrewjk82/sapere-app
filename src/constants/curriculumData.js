@@ -1459,12 +1459,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-11',
       title: 'Chapter 11: Algebra - part 2',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y8-11a', code: '11A', title: 'Expanding brackets and collecting like terms' },
         { id: 'y8-11b', code: '11B', title: 'Addition and subtraction of algebraic fractions' },
         { id: 'y8-11c', code: '11C', title: 'Solving equations' },
-        { id: 'y8-11d', code: '11D', title: 'Problem-solving with equations' }
+        { id: 'y8-11d', code: '11D', title: 'Problem-solving with equations' },
+        { id: 'y8-11e', code: '11E', title: 'Review' }
       ]
     },
     {
