@@ -522,7 +522,11 @@ export const fetchOrCreateDailyAssignment = async ({
     // Regenerate whenever the assignment's curriculum signature does not match
     // the student's current curriculum (e.g. the teacher changed it).
     const signatureMatches = assignment.curriculumSignature === expectedSignature;
-    if (assignment.status === "open" && hasQuestions && countMatches && signatureMatches) {
+    // Never overwrite a started or completed assignment — the student already
+    // interacted with it today.  Only regenerate "open" assignments whose
+    // curriculum or count no longer matches.
+    const isLocked = assignment.status === "started" || assignment.status === "completed";
+    if (isLocked || (hasQuestions && countMatches && signatureMatches)) {
       const value = { ...assignment, savedAt: Date.now() };
       localCache.set(cacheKey, value);
       return value;
