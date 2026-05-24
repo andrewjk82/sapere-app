@@ -26,6 +26,7 @@ const GeometryFigure = ({
   showPointLabels = true,
   width = 300,
   fontSize = 14,
+  labelOffsets = {},
   style,
 }) => {
   const names = Object.keys(points);
@@ -239,15 +240,20 @@ const GeometryFigure = ({
   names.forEach((n) => {
     const [vx, vy] = P(n);
     if (showPointLabels !== false) {
-      let [dx, dy] = norm(vx - cx, vy - cy);   // outward
-      if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
-        dx = 0;
-        dy = -1;
+      let lx, ly;
+      if (labelOffsets[n]) {
+        lx = vx + labelOffsets[n][0];
+        ly = vy + labelOffsets[n][1] + 5;
+      } else {
+        let [dx, dy] = norm(vx - cx, vy - cy);
+        if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) { dx = 0; dy = -1; }
+        lx = vx + dx * 16;
+        ly = vy + dy * 16 + 5;
       }
       els.push(
         <text
           key={`v${key++}`}
-          x={vx + dx * 16} y={vy + dy * 16 + 5}
+          x={lx} y={ly}
           textAnchor="middle" fill="#000000"
           fontSize={fontSize} fontStyle="italic" fontWeight="600"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'

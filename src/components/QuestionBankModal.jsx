@@ -479,6 +479,20 @@ const GeometryEditor = ({ graphData, onChange }) => {
       freeLabels[activeDrag.index] = { ...freeLabels[activeDrag.index], point };
       updateGeometry({ ...geometry, freeLabels });
     }
+    if (activeDrag.type === 'pointLabel') {
+      const rect = surfaceRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const cursorX = ((event.clientX - rect.left) / (rect.width || W)) * W;
+      const cursorY = ((event.clientY - rect.top) / (rect.height || H)) * H;
+      const [ptX, ptY] = toSvg(geometry.points[activeDrag.name]);
+      updateGeometry({
+        ...geometry,
+        labelOffsets: {
+          ...(geometry.labelOffsets || {}),
+          [activeDrag.name]: [Number((cursorX - ptX).toFixed(1)), Number((cursorY - ptY).toFixed(1))],
+        },
+      });
+    }
     if (activeDrag.type === 'angle') {
       const angles = [...(geometry.angles || [])];
       angles[activeDrag.index] = { ...angles[activeDrag.index], labelPos: point };
@@ -618,11 +632,21 @@ const GeometryEditor = ({ graphData, onChange }) => {
         })()}
         {pointNames.map((name) => {
           const [x, y] = toSvg(geometry.points[name]);
+          const labelOff = (geometry.labelOffsets || {})[name] || [0, -15];
+          const lx = x + labelOff[0];
+          const ly = y + labelOff[1];
           return (
-            <g key={name} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'point', name }); }} style={{ cursor: 'grab' }}>
-              <circle cx={x} cy={y} r="9" fill="#8b5cf6" opacity="0.16" />
-              <circle cx={x} cy={y} r="1.0" fill="#000000" />
-              {showPointLabels && <text x={x} y={y - 15} textAnchor="middle" fill="#000000" fontSize={geometry.fontSize || 14} fontStyle="italic" fontWeight="600" fontFamily='"KaTeX_Main", "Times New Roman", serif'>{name}</text>}
+            <g key={name}>
+              <g onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'point', name }); }} style={{ cursor: 'grab' }}>
+                <circle cx={x} cy={y} r="9" fill="#8b5cf6" opacity="0.16" />
+                <circle cx={x} cy={y} r="1.0" fill="#000000" />
+              </g>
+              {showPointLabels && (
+                <g onPointerDown={(event) => { event.preventDefault(); event.stopPropagation(); setActiveDrag({ type: 'pointLabel', name }); }} style={{ cursor: 'move' }}>
+                  <rect x={lx - 12} y={ly - 14} width="24" height="20" fill="transparent" />
+                  <text x={lx} y={ly + 5} textAnchor="middle" fill="#000000" fontSize={geometry.fontSize || 14} fontStyle="italic" fontWeight="600" fontFamily='"KaTeX_Main", "Times New Roman", serif'>{name}</text>
+                </g>
+              )}
             </g>
           );
         })}
