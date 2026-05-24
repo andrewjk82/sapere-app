@@ -362,30 +362,28 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </button>
   );
 
-  const canvasPanel = (
-    <div style={{
-      borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0',
-      height: '100%', minHeight: isWide ? '100%' : 480,
-    }}>
-      <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
-    </div>
-  );
-
-  // Wide layout: question on left, canvas on right (side by side)
+  // Wide layout: question on left, canvas on right (side by side, matching heights)
   if (isWide && showCanvas) {
     return (
-      <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-        {/* Left: question + answer + button */}
-        <div className="app-panel" style={{ padding: '28px', borderRadius: '28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: '0 0 50%', minWidth: 0 }}>
+      <div style={{ display: 'flex', gap: '16px', alignItems: 'stretch' }}>
+        {/* Left: question + answer + button — shrinks/grows with content */}
+        <div className="app-panel" style={{
+          padding: '28px', borderRadius: '28px',
+          display: 'flex', flexDirection: 'column', gap: '16px',
+          flex: '0 0 48%', minWidth: 0,
+        }}>
           {header}
           {progressBar}
           {questionCard}
           {answerArea}
+          <div style={{ flex: 1 }} /> {/* push button to bottom */}
           {actionButton}
         </div>
-        {/* Right: canvas */}
-        <div style={{ flex: 1, minWidth: 0, minHeight: 600, display: 'flex', flexDirection: 'column' }}>
-          {canvasPanel}
+        {/* Right: canvas fills exact same height as left panel */}
+        <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+          <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
+          </div>
         </div>
       </div>
     );
