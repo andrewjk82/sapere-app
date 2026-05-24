@@ -121,18 +121,9 @@ export const listenForForegroundNotifications = (handler) => {
   getMessagingInstance().then((messaging) => {
     if (!active || !messaging) return;
     unsubscribe = onMessage(messaging, (payload) => {
+      // Service worker handles system notifications for background/hidden tabs.
+      // Here we only call the handler (which shows an in-app toast when visible).
       handler?.(payload);
-
-      const title = payload.notification?.title || payload.data?.title || 'Sapereaude Academia';
-      const body = payload.notification?.body || payload.data?.body || 'You have a new notification.';
-
-      if (Notification.permission === 'granted' && document.visibilityState !== 'visible') {
-        new Notification(title, {
-          body,
-          icon: '/logo.png',
-          badge: '/logo.png'
-        });
-      }
     });
   });
 
