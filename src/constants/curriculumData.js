@@ -1471,14 +1471,15 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-12',
       title: 'Chapter 12: Congruent triangles',
-      modules: 6,
+      modules: 7,
       topics: [
         { id: 'y8-12a', code: '12A', title: 'Congruence of figures in the plane' },
         { id: 'y8-12b', code: '12B', title: 'Congruent triangles' },
         { id: 'y8-12c', code: '12C', title: 'Congruent triangles: The SSS and AAS tests' },
         { id: 'y8-12d', code: '12D', title: 'Congruent triangles: The SAS and RHS tests' },
         { id: 'y8-12e', code: '12E', title: 'Using congruence in geometrical problems' },
-        { id: 'y8-12f', code: '12F', title: 'Congruence and special triangles' }
+        { id: 'y8-12f', code: '12F', title: 'Congruence and special triangles' },
+        { id: 'y8-12g', code: '12G', title: 'Review' }
       ]
     },
     {
