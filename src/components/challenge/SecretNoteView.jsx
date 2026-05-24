@@ -116,8 +116,21 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const [reviewSending, setReviewSending] = useState(false);
   const [reviewSentIds, setReviewSentIds] = useState([]);
   const canvasRef = useRef(null);
-  const solvePadRef = useRef(null); // permanent side working-out pad (desktop)
-  const answerInputRef = useRef(null); // short-answer text input (for the symbol pad)
+  const solvePadRef = useRef(null);
+  const answerInputRef = useRef(null);
+  const snFracDenRef = useRef(null);
+  const [snFracMode, setSnFracMode] = useState(false);
+  const [snFracNum, setSnFracNum] = useState('');
+  const [snFracDen, setSnFracDen] = useState('');
+  useEffect(() => { setSnFracMode(false); setSnFracNum(''); setSnFracDen(''); }, [idx]);
+  const snCommitFraction = (num, den) => {
+    if (!den) { setSnFracMode(false); answerInputRef.current?.focus(); return; }
+    const base = answer;
+    const prefix = base.endsWith(num) ? base.slice(0, base.length - num.length) : base;
+    setAnswer(prefix + `(${num || '0'})/(${den})`);
+    setSnFracMode(false); setSnFracNum(''); setSnFracDen('');
+    setTimeout(() => answerInputRef.current?.focus(), 50);
+  };
 
   const item = queue[idx] || null;
   const question = item?.question || null;
@@ -428,15 +441,27 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
                 </button>
               </div>
             )}
+            {snFracMode && (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
+                <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+                  <input value={snFracNum} onChange={(e) => setSnFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); snFracDenRef.current?.focus(); } if (e.key === 'Escape') { setSnFracMode(false); answerInputRef.current?.focus(); } }} style={{ width: Math.max(40, snFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.3rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
+                  <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
+                  <input ref={snFracDenRef} value={snFracDen} onChange={(e) => setSnFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') snCommitFraction(snFracNum, snFracDen); if (e.key === 'Escape') { setSnFracMode(false); answerInputRef.current?.focus(); } }} style={{ width: Math.max(40, snFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.3rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
+                </div>
+                <button onClick={() => snCommitFraction(snFracNum, snFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
+                <button onClick={() => { setSnFracMode(false); answerInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
+              </div>
+            )}
             <input
               ref={answerInputRef}
               className="sn__input"
               type="text"
-              disabled={isFeedback}
+              disabled={isFeedback || snFracMode}
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
-              placeholder="Type your answer..."
+              placeholder={snFracMode ? '' : 'Type your answer... (press / for fraction)'}
               onKeyDown={(e) => {
+                if (e.key === '/') { e.preventDefault(); setSnFracNum(answer); setSnFracDen(''); setSnFracMode(true); setTimeout(() => snFracDenRef.current?.focus(), 50); return; }
                 if (e.key === 'Enter' && answer.trim() && !isFeedback) {
                   isTwinPhase ? submitTwin(answer) : submitOriginal(answer);
                 }
