@@ -344,6 +344,17 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         </div>
       )}
 
+      {/* Action button — above canvas so layout shift doesn't cause ghost clicks */}
+      {!showFeedback ? (
+        <button onClick={submit} disabled={!canSubmit} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: !canSubmit ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: !canSubmit ? 'not-allowed' : 'pointer' }}>
+          Submit Answer
+        </button>
+      ) : (
+        <button onClick={advance} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+          {idx + 1 >= total ? 'Finish round' : 'Next question'} <ArrowRight size={18} />
+        </button>
+      )}
+
       {/* Working out canvas */}
       <AnimatePresence>
         {showCanvas && (
@@ -357,17 +368,6 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Action button */}
-      {!showFeedback ? (
-        <button onClick={submit} disabled={!canSubmit} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: !canSubmit ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: !canSubmit ? 'not-allowed' : 'pointer' }}>
-          Submit Answer
-        </button>
-      ) : (
-        <button onClick={advance} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-          {idx + 1 >= total ? 'Finish round' : 'Next question'} <ArrowRight size={18} />
-        </button>
-      )}
     </div>
   );
 };
