@@ -41,6 +41,7 @@ import { Y8_CH8D_QUESTIONS } from '../constants/seedYear8Ch8ReviewQuestions.js';
 import { Y8_CH9A_QUESTIONS } from '../constants/seedYear8Ch9Questions.js';
 import { Y8_CH10A_QUESTIONS } from '../constants/seedYear8Ch10Questions.js';
 import { Y8_CH11A_QUESTIONS } from '../constants/seedYear8Ch11Questions.js';
+import { Y8_CH12A_QUESTIONS } from '../constants/seedYear8Ch12Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -75,6 +76,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-9', chapterTitle: 'Chapter 9: Pythagoras Theorem', topicId: 'y8-9a', topicCode: '9A', topicTitle: 'Pythagoras theorem', year: 'Year 8', seed: Y8_CH9A_QUESTIONS, label: 'Y8 Ch9 · Pythagoras theorem' },
   { chapterId: 'y8-10', chapterTitle: 'Chapter 10: Rates and ratios', topicId: 'y8-10a', topicCode: '10A', topicTitle: 'Review of the unitary method', year: 'Year 8', seed: Y8_CH10A_QUESTIONS, label: 'Y8 Ch10 · Rates and ratios' },
   { chapterId: 'y8-11', chapterTitle: 'Chapter 11: Algebra - part 2', topicId: 'y8-11a', topicCode: '11A', topicTitle: 'Expanding brackets and collecting like terms', year: 'Year 8', seed: Y8_CH11A_QUESTIONS, label: 'Y8 Ch11 · Algebra part 2' },
+  { chapterId: 'y8-12', chapterTitle: 'Chapter 12: Congruence', topicId: 'y8-12a', topicCode: '12A', topicTitle: 'Congruence of figures in the plane', year: 'Year 8', seed: Y8_CH12A_QUESTIONS, label: 'Y8 Ch12 · Congruence' },
 ];
 import {
   fetchHscResultsIncremental,
