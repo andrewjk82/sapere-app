@@ -1872,10 +1872,7 @@ const Curriculum = () => {
                             {!count ? (
                               <button onClick={onSeed} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
                             ) : (
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <span className="sync-card-status">Active ({count} Qs)</span>
-                                <button onClick={onSeed} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>Re-seed</button>
-                              </div>
+                              <span className="sync-card-status">✓ {count} Qs</span>
                             )}
                           </div>
                         </div>
@@ -1933,10 +1930,7 @@ const Curriculum = () => {
                                   {!count ? (
                                     <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
                                   ) : (
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                      <span className="sync-card-status">Active ({count} Qs)</span>
-                                      <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>Re-seed</button>
-                                    </div>
+                                    <span className="sync-card-status">✓ {count} Qs</span>
                                   )}
                                 </div>
                               </div>
