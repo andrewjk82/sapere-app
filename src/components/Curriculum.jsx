@@ -1862,6 +1862,7 @@ const Curriculum = () => {
                       const count = extraCount !== undefined
                         ? extraCount
                         : (questionCounts[countKey] || 0);
+                      if (count) return null; // already seeded — hide the card
                       return (
                         <div className="sync-card">
                           <div className="sync-card-info">
@@ -1869,11 +1870,7 @@ const Curriculum = () => {
                             <span className="sync-card-title">{title}</span>
                           </div>
                           <div className="sync-card-actions">
-                            {!count ? (
-                              <button onClick={onSeed} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
-                            ) : (
-                              <span className="sync-card-status">✓ {count} Qs</span>
-                            )}
+                            <button onClick={onSeed} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
                           </div>
                         </div>
                       );
@@ -1916,9 +1913,9 @@ const Curriculum = () => {
                     return (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                         {yearOrder.map((year) => {
-                          const registryCards = (byYear[year] || []).map((entry) => {
-                            const count = questionCounts[entry.chapterId];
-                            return (
+                          const registryCards = (byYear[year] || [])
+                            .filter((entry) => !questionCounts[entry.chapterId])
+                            .map((entry) => (
                               <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`}>
                                 <div className="sync-card-info">
                                   <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
@@ -1927,15 +1924,10 @@ const Curriculum = () => {
                                   <span className="sync-card-title">{entry.label}</span>
                                 </div>
                                 <div className="sync-card-actions">
-                                  {!count ? (
-                                    <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
-                                  ) : (
-                                    <span className="sync-card-status">✓ {count} Qs</span>
-                                  )}
+                                  <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
                                 </div>
                               </div>
-                            );
-                          });
+                            ));
 
                           const manualCards = manualByYear[year] || [];
                           const allCards = [...manualCards, ...registryCards];
