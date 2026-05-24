@@ -780,15 +780,17 @@ const GeometryEditor = ({ graphData, onChange }) => {
           {(geometry.sideLabels || []).map((sl, idx) => (
             <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontWeight: 700, color: '#4c1d95', minWidth: '60px' }}>{sl.text} ({sl.between?.[0]}–{sl.between?.[1]})</span>
-              {sl.labelPos && (
+              {sl.labelPos ? (
                 <button type="button" onClick={() => {
                   const sideLabels = [...(geometry.sideLabels || [])];
                   const { labelPos: _, ...rest } = sideLabels[idx];
                   sideLabels[idx] = rest;
                   updateGeometry({ ...geometry, sideLabels });
-                }} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>위치 초기화</button>
+                }} style={{ border: 0, background: '#f5f3ff', color: '#7c3aed', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>위치 초기화</button>
+              ) : (
+                <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>기본 위치</span>
               )}
-              {!sl.labelPos && <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>기본 위치</span>}
+              <button type="button" onClick={() => updateGeometry({ ...geometry, sideLabels: (geometry.sideLabels || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '4px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>삭제</button>
             </div>
           ))}
         </div>
