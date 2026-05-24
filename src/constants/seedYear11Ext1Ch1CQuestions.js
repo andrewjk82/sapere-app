@@ -11,7 +11,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "1"
       }
     ],
@@ -29,7 +37,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "3"
       }
     ],
@@ -47,7 +63,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{3}"
       }
     ],
@@ -65,7 +89,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{b}"
       }
     ],
@@ -83,7 +115,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{m}{3n}"
       }
     ],
@@ -101,7 +141,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{3}{x}"
       }
     ],
@@ -119,7 +167,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "1"
       }
     ],
@@ -137,7 +193,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{2}"
       }
     ],
@@ -155,7 +219,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "5p"
       }
     ],
@@ -173,7 +245,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{c}{3}"
       }
     ],
@@ -191,7 +271,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{5}{2y}"
       }
     ],
@@ -209,7 +297,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{2x}"
       }
     ],
@@ -227,7 +323,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{6}{q}"
       }
     ],
@@ -245,7 +349,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply or divide fractions and cancel common factors",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "12"
       }
     ],
@@ -263,7 +375,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{4y}{3}"
       }
     ],
@@ -281,7 +401,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{z}{2}"
       }
     ],
@@ -299,7 +427,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{n}{3}"
       }
     ],
@@ -317,7 +453,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{7p}{12}"
       }
     ],
@@ -335,7 +479,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{3a-2b}{18}"
       }
     ],
@@ -353,7 +505,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{25b}{12}"
       }
     ],
@@ -371,7 +531,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{c}{6}"
       }
     ],
@@ -389,7 +557,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "-\\frac{pq}{60}"
       }
     ],
@@ -407,7 +583,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine numerators",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{5}{b}"
       }
     ],
@@ -425,7 +609,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine numerators",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "-\\frac{2}{y}"
       }
     ],
@@ -443,7 +635,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine numerators",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{4}{3x}"
       }
     ],
@@ -461,7 +661,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine numerators",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{1}{12y}"
       }
     ],
@@ -479,7 +687,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine numerators",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{29}{10p}"
       }
     ],
@@ -497,7 +713,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine numerators",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{5}{8q}"
       }
     ],
@@ -515,7 +739,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator, expand numerators, and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{7y+17}{12}"
       }
     ],
@@ -533,7 +765,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator, expand numerators, and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{27z-6}{20}"
       }
     ],
@@ -551,7 +791,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator, expand numerators, and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{3m+4}{16}"
       }
     ],
@@ -569,7 +817,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator, expand numerators, and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{p}{12}"
       }
     ],
@@ -587,7 +843,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator, expand numerators, and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{3q+17}{30}"
       }
     ],
@@ -605,7 +869,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator, expand numerators, and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{3r-6}{8}"
       }
     ],
@@ -623,7 +895,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "3"
       }
     ],
@@ -641,7 +921,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{4}{3}"
       }
     ],
@@ -659,7 +947,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{y}{4}"
       }
     ],
@@ -677,7 +973,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{1}{x+y}"
       }
     ],
@@ -695,7 +999,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{4}{3q}"
       }
     ],
@@ -713,7 +1025,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{m}{m-3}"
       }
     ],
@@ -731,7 +1051,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{b+4}{b+5}"
       }
     ],
@@ -749,7 +1077,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{z+2}{z-2}"
       }
     ],
@@ -767,7 +1103,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the numerator and denominator, then cancel common terms",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{w+6}{w+4}"
       }
     ],
@@ -785,7 +1129,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{2y+2}{y(y+2)}"
       }
     ],
@@ -803,7 +1155,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{3}{z(z+3)}"
       }
     ],
@@ -821,7 +1181,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{2p}{p^2-4}"
       }
     ],
@@ -839,7 +1207,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{7q-25}{(q-4)(q-3)}"
       }
     ],
@@ -857,7 +1233,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{m-14}{m^2-4}"
       }
     ],
@@ -875,7 +1259,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator and combine",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{25}{(n-1)(n+4)}"
       }
     ],
@@ -893,7 +1285,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor all expressions and perform multiplication/division",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{4y}{3(y-1)}"
       }
     ],
@@ -911,7 +1311,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor all expressions and perform multiplication/division",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{b}{b-2}"
       }
     ],
@@ -929,7 +1337,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor all expressions and perform multiplication/division",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{d+3}{d+5}"
       }
     ],
@@ -947,7 +1363,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor all expressions and perform multiplication/division",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "p"
       }
     ],
@@ -965,7 +1389,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor all expressions and perform multiplication/division",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{4y-1}{(y-2)(p+q)}"
       }
     ],
@@ -983,7 +1415,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor all expressions and perform multiplication/division",
+        "explanation": "To add or subtract fractions, first find a common denominator for all terms.",
+        "workingOut": "\\text{Find common denominator}"
+      },
+      {
+        "explanation": "Rewrite each fraction with the common denominator and combine the numerators over it.",
+        "workingOut": "\\text{Combine numerators}"
+      },
+      {
+        "explanation": "Expand and simplify the numerator by collecting like terms.",
         "workingOut": "\\frac{y-5}{3(y+2)}"
       }
     ],
@@ -1001,7 +1441,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that (a-b) = -(b-a) to simplify signs",
+        "explanation": "Factorize the denominators of the fractions to find the lowest common denominator (LCD).",
+        "workingOut": "\\text{Factorize denominators}"
+      },
+      {
+        "explanation": "Express each fraction with the LCD and combine them into a single fraction.",
+        "workingOut": "\\text{Combine over LCD}"
+      },
+      {
+        "explanation": "Simplify the resulting numerator and cancel any common factors with the denominator.",
         "workingOut": "-1"
       }
     ],
@@ -1019,7 +1467,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that (a-b) = -(b-a) to simplify signs",
+        "explanation": "Factorize the denominators of the fractions to find the lowest common denominator (LCD).",
+        "workingOut": "\\text{Factorize denominators}"
+      },
+      {
+        "explanation": "Express each fraction with the LCD and combine them into a single fraction.",
+        "workingOut": "\\text{Combine over LCD}"
+      },
+      {
+        "explanation": "Simplify the resulting numerator and cancel any common factors with the denominator.",
         "workingOut": "-(p+q)"
       }
     ],
@@ -1037,7 +1493,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that (a-b) = -(b-a) to simplify signs",
+        "explanation": "Factorize the denominators of the fractions to find the lowest common denominator (LCD).",
+        "workingOut": "\\text{Factorize denominators}"
+      },
+      {
+        "explanation": "Express each fraction with the LCD and combine them into a single fraction.",
+        "workingOut": "\\text{Combine over LCD}"
+      },
+      {
+        "explanation": "Simplify the resulting numerator and cancel any common factors with the denominator.",
         "workingOut": "4-z"
       }
     ],
@@ -1055,7 +1519,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that (a-b) = -(b-a) to simplify signs",
+        "explanation": "Factorize the denominators of the fractions to find the lowest common denominator (LCD).",
+        "workingOut": "\\text{Factorize denominators}"
+      },
+      {
+        "explanation": "Express each fraction with the LCD and combine them into a single fraction.",
+        "workingOut": "\\text{Combine over LCD}"
+      },
+      {
+        "explanation": "Simplify the resulting numerator and cancel any common factors with the denominator.",
         "workingOut": "\\frac{2}{p-q}"
       }
     ],
@@ -1073,7 +1545,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that (a-b) = -(b-a) to simplify signs",
+        "explanation": "Factorize the denominators of the fractions to find the lowest common denominator (LCD).",
+        "workingOut": "\\text{Factorize denominators}"
+      },
+      {
+        "explanation": "Express each fraction with the LCD and combine them into a single fraction.",
+        "workingOut": "\\text{Combine over LCD}"
+      },
+      {
+        "explanation": "Simplify the resulting numerator and cancel any common factors with the denominator.",
         "workingOut": "1"
       }
     ],
@@ -1091,7 +1571,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that (a-b) = -(b-a) to simplify signs",
+        "explanation": "Factorize the denominators of the fractions to find the lowest common denominator (LCD).",
+        "workingOut": "\\text{Factorize denominators}"
+      },
+      {
+        "explanation": "Express each fraction with the LCD and combine them into a single fraction.",
+        "workingOut": "\\text{Combine over LCD}"
+      },
+      {
+        "explanation": "Simplify the resulting numerator and cancel any common factors with the denominator.",
         "workingOut": "-\\frac{1}{2a+b}"
       }
     ],
@@ -1109,7 +1597,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the denominators to find the lowest common denominator",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{2}{y^2-4}"
       }
     ],
@@ -1127,7 +1623,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the denominators to find the lowest common denominator",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{2z}{(z-3)^2(z+3)}"
       }
     ],
@@ -1145,7 +1649,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the denominators to find the lowest common denominator",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{3p}{p^2-q^2}"
       }
     ],
@@ -1163,7 +1675,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the denominators to find the lowest common denominator",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{m-27}{(m-2)(m+5)(m+3)}"
       }
     ],
@@ -1181,7 +1701,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the denominators to find the lowest common denominator",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{yq}{p(p-q)(p+q)}"
       }
     ],
@@ -1199,7 +1727,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor the denominators to find the lowest common denominator",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{(w-1)(w-2)(w-4)}"
       }
     ],
@@ -1217,7 +1753,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{2}"
       }
     ],
@@ -1235,7 +1779,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "1"
       }
     ],
@@ -1253,7 +1805,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{13}"
       }
     ],
@@ -1271,7 +1831,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{3}{5}"
       }
     ],
@@ -1289,7 +1857,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{y+3}"
       }
     ],
@@ -1307,7 +1883,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{w^2-4}{w^2+4}"
       }
     ],
@@ -1325,7 +1909,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{pq}{p+q}"
       }
     ],
@@ -1343,7 +1935,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{p^2+q^2}{p^2-q^2}"
       }
     ],
@@ -1361,7 +1961,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{y(y+1)}{2y+3}"
       }
     ],
@@ -1379,7 +1987,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Multiply numerator and denominator by the lowest common multiple of the inner denominators",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{z-1}{z-2}"
       }
     ],
@@ -1397,20 +2013,16 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Substitute p into q",
-        "workingOut": "q = \\frac{1}{1 - \\frac{1}{k}} = \\frac{k}{k-1}"
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
       },
       {
-        "explanation": "Substitute q into r",
-        "workingOut": "r = \\frac{\\frac{k}{k-1}}{\\frac{k}{k-1} - 1}"
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
       },
       {
-        "explanation": "Simplify the denominator of r",
-        "workingOut": "\\frac{k}{k-1} - 1 = \\frac{k - (k-1)}{k-1} = \\frac{1}{k-1}"
-      },
-      {
-        "explanation": "Simplify r",
-        "workingOut": "r = \\frac{k}{k-1} \\times \\frac{k-1}{1} = k"
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
@@ -1427,7 +2039,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor and simplify carefully",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{xy}"
       }
     ],
@@ -1445,7 +2065,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor and simplify carefully",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{(3y+4)(3y-2)}{(3y-4)(5y+1)}"
       }
     ],
@@ -1463,7 +2091,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor and simplify carefully",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{2}{u}"
       }
     ],
@@ -1481,7 +2117,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Factor and simplify carefully",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{1}{(y+2)^2}"
       }
     ],
@@ -1499,7 +2143,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Simplify step by step",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "0"
       }
     ],
@@ -1517,7 +2169,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Simplify step by step",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "3"
       }
     ],
@@ -1535,7 +2195,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Simplify step by step",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{x}{x+2}"
       }
     ],
@@ -1553,7 +2221,15 @@ export const Y11_EXT1_CH1C_QUESTIONS = [
     "hint": "Find a common denominator, factorise, or simplify as appropriate.",
     "solutionSteps": [
       {
-        "explanation": "Simplify step by step",
+        "explanation": "For dividing fractions, multiply by the reciprocal of the second fraction. For multiplication, multiply the numerators together and the denominators together.",
+        "workingOut": "\\text{Set up the multiplication}"
+      },
+      {
+        "explanation": "Factorize the numerators and denominators if possible to find common factors.",
+        "workingOut": "\\text{Factorize terms}"
+      },
+      {
+        "explanation": "Cancel out the common factors from the numerator and denominator to simplify.",
         "workingOut": "\\frac{(w-1)^2}{w^2}"
       }
     ],
