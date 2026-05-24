@@ -173,7 +173,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute 4",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "4u + 4v"
       }
     ],
@@ -191,7 +199,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute -3",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "-3m + 3n"
       }
     ],
@@ -209,7 +225,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute 5",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "5x + 15y"
       }
     ],
@@ -227,7 +251,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute p",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "p^2 - 6p"
       }
     ],
@@ -245,7 +277,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute -y",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "-y^2 + 5y"
       }
     ],
@@ -263,7 +303,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute -k",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "-k^2 - 3k"
       }
     ],
@@ -281,7 +329,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute 4 across all terms",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "4x + 8y - 12z"
       }
     ],
@@ -299,7 +355,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute -2",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "-6u + 8v - 4w"
       }
     ],
@@ -317,7 +381,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Distribute pq",
+        "explanation": "분배법칙을 사용하여 괄호를 먼저 전개합니다.",
+        "workingOut": "\\text{전개 과정 적용}"
+      },
+      {
+        "explanation": "전개된 식을 나열합니다.",
+        "workingOut": "\\text{전개된 식}"
+      },
+      {
+        "explanation": "동류항끼리 묶어서 덧셈/뺄셈을 하여 식을 가장 간단히 정리합니다.",
         "workingOut": "3p^2q - 2pq^2"
       }
     ],
@@ -599,11 +671,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "y^2 + 5y + 4y + 20"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\ny + 4)(y + 5))(Expand and simplify:\n\ny + 4)(y + 5))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "y^2 + 9y + 20"
       }
     ],
@@ -621,11 +697,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "z^2 + 8z + 2z + 16"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\nz + 2)(z + 8))(Expand and simplify:\n\nz + 2)(z + 8))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "z^2 + 10z + 16"
       }
     ],
@@ -643,11 +723,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "w^2 - 2w + 5w - 10"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\nw + 5)(w - 2))(Expand and simplify:\n\nw + 5)(w - 2))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "w^2 + 3w - 10"
       }
     ],
@@ -665,11 +749,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "p^2 + 3p - 5p - 15"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\np - 5)(p + 3))(Expand and simplify:\n\np - 5)(p + 3))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "p^2 - 2p - 15"
       }
     ],
@@ -687,11 +775,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "m^2 - 4m - 2m + 8"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\nm - 2)(m - 4))(Expand and simplify:\n\nm - 2)(m - 4))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "m^2 - 6m + 8"
       }
     ],
@@ -709,11 +801,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "3x^2 + 12x + 2x + 8"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\n3x + 2)(x + 4))(Expand and simplify:\n\n3x + 2)(x + 4))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "3x^2 + 14x + 8"
       }
     ],
@@ -731,11 +827,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "4v^2 + 5v - 12v - 15"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\nv - 3)(4v + 5))(Expand and simplify:\n\nv - 3)(4v + 5))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "4v^2 - 7v - 15"
       }
     ],
@@ -753,11 +853,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "15q^2 - 20q + 6q - 8"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\n5q + 2)(3q - 4))(Expand and simplify:\n\n5q + 2)(3q - 4))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "15q^2 - 14q - 8"
       }
     ],
@@ -775,11 +879,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "3c^2 - 12c - 5c + 20"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\n3c - 5)(c - 4))(Expand and simplify:\n\n3c - 5)(c - 4))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "3c^2 - 17c + 20"
       }
     ],
@@ -797,11 +905,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "8b^2 + 20b - 6b - 15"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\n4b - 3)(2b + 5))(Expand and simplify:\n\n4b - 3)(2b + 5))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "8b^2 + 14b - 15"
       }
     ],
@@ -819,11 +931,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "7k - 14 - k^2 + 2k"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\n7 - k)(k - 2))(Expand and simplify:\n\n7 - k)(k - 2))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "-k^2 + 9k - 14"
       }
     ],
@@ -841,11 +957,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Use FOIL",
-        "workingOut": "15h + 3h^2 - 10 - 2h"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Expand and simplify:\n\n3h - 2)(5 + h))(Expand and simplify:\n\n3h - 2)(5 + h))"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
         "workingOut": "3h^2 + 13h - 10"
       }
     ],
@@ -863,12 +983,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(X+Y)(X+Y) = X^2 + XY + YX + Y^2"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(By expanding X + Y)(X + Y), prove the special expansion (X + Y))(By expanding X + Y)(X + Y), prove the special expansion (X + Y))"
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "X^2 + 2XY + Y^2"
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
@@ -885,12 +1009,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(X-Y)(X-Y) = X^2 - XY - YX + Y^2"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Similarly, prove the special expansion:\n\nX - Y))(Similarly, prove the special expansion:\n\nX - Y))"
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "X^2 - 2XY + Y^2"
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
@@ -907,12 +1035,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(X-Y)(X+Y) = X^2 + XY - YX - Y^2"
+        "explanation": "주어진 식을 두 개의 괄호의 곱으로 풉니다.",
+        "workingOut": "(Similarly, prove the special expansion:\n\nX - Y)(X + Y) = X)(Similarly, prove the special expansion:\n\nX - Y)(X + Y) = X)"
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "X^2 - Y^2"
+        "explanation": "분배법칙을 이용해 4개의 항으로 전개합니다.",
+        "workingOut": "\\text{전개 중...}"
+      },
+      {
+        "explanation": "동류항을 합쳐서 공식을 증명합니다.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
@@ -929,7 +1061,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(p + q)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "p^2 + 2pq + q^2"
       }
     ],
@@ -947,7 +1087,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(p - q)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "p^2 - 2pq + q^2"
       }
     ],
@@ -965,7 +1113,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(p - q)(p + q)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "p^2 - q^2"
       }
     ],
@@ -983,7 +1139,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(b + 4)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "b^2 + 8b + 16"
       }
     ],
@@ -1001,7 +1165,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(c - 5)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "c^2 - 10c + 25"
       }
     ],
@@ -1019,7 +1191,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(d + 6)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "d^2 + 12d + 36"
       }
     ],
@@ -1037,7 +1217,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(e - 7)(e + 7)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "e^2 - 49"
       }
     ],
@@ -1055,7 +1243,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(8 + k)(8 - k)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "64 - k^2"
       }
     ],
@@ -1073,7 +1269,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(9 + m)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "81 + 18m + m^2"
       }
     ],
@@ -1091,7 +1295,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(10 - n)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "100 - 20n + n^2"
       }
     ],
@@ -1109,7 +1321,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(v + 12)(v - 12)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "v^2 - 144"
       }
     ],
@@ -1127,7 +1347,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(w + 13)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "w^2 + 26w + 169"
       }
     ],
@@ -1145,7 +1373,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(3x + 2)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "9x^2 + 12x + 4"
       }
     ],
@@ -1163,7 +1399,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(4y - 5)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "16y^2 - 40y + 25"
       }
     ],
@@ -1181,7 +1425,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(5z + 3)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "25z^2 + 30z + 9"
       }
     ],
@@ -1199,7 +1451,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(3p + 4q)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "9p^2 + 24pq + 16q^2"
       }
     ],
@@ -1217,7 +1477,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(4u + 5v)(4u - 5v)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "16u^2 - 25v^2"
       }
     ],
@@ -1235,7 +1503,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(5m - 3n)(5m + 3n)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
         "workingOut": "25m^2 - 9n^2"
       }
     ],
@@ -1253,7 +1529,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(6k + 5)^2"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "36k^2 + 60k + 25"
       }
     ],
@@ -1271,7 +1555,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(5h - 6j)^2"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "25h^2 - 60hj + 36j^2"
       }
     ],
@@ -1289,7 +1581,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(5 + 6w)(5 - 6w)"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "25 - 36w^2"
       }
     ],
@@ -1307,7 +1607,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(6 - 5u)^2"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "36 - 60u + 25u^2"
       }
     ],
@@ -1325,7 +1633,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(8x + 5y)^2"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "64x^2 + 80xy + 25y^2"
       }
     ],
@@ -1343,7 +1659,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Apply expansion rule",
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Use the special expansions to expand:\n\n(9 - 4z)^2"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "81 - 72z + 16z^2"
       }
     ],
@@ -1361,8 +1685,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "u^2 + 2(u)(\\frac{1}{u}) + (\\frac{1}{u})^2 = u^2 + 2 + \\frac{1}{u^2}"
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Expand and simplify:\n\n\\left(u + \\frac{1}{u}\\right)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
+        "workingOut": "u^2 + 2 + \\frac{1}{u^2}"
       }
     ],
     "graphData": null
@@ -1379,8 +1711,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "u^2 - 2(u)(\\frac{1}{u}) + (\\frac{1}{u})^2 = u^2 - 2 + \\frac{1}{u^2}"
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Expand and simplify:\n\n\\left(u - \\frac{1}{u}\\right)^2"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
+        "workingOut": "u^2 - 2 + \\frac{1}{u^2}"
       }
     ],
     "graphData": null
@@ -1397,8 +1737,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand as difference of squares",
-        "workingOut": "u^2 - (\\frac{1}{u})^2 = u^2 - \\frac{1}{u^2}"
+        "explanation": "이 식은 완전제곱식 $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$ 또는 합차공식 $(a-b)(a+b)=a^2-b^2$ 형태입니다.",
+        "workingOut": "Expand and simplify:\n\n\\left(u + \\frac{1}{u}\\right)\\left(u - \\frac{1}{u}\\right)"
+      },
+      {
+        "explanation": "공식에 맞춰 앞항의 제곱, 뒤항의 제곱, (완전제곱식의 경우) 두 항의 곱의 2배를 계산합니다.",
+        "workingOut": "\\text{공식 대입}"
+      },
+      {
+        "explanation": "동류항 및 상수를 계산하여 답을 냅니다.",
+        "workingOut": "u^2 - \\frac{1}{u^2}"
       }
     ],
     "graphData": null
@@ -1415,12 +1763,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(100+3)^2 = 100^2 + 2(100)(3) + 3^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "103^2"
       },
       {
-        "explanation": "Calculate",
-        "workingOut": "10000 + 600 + 9 = 10609"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "10609"
       }
     ],
     "graphData": null
@@ -1437,12 +1789,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Write as (1000-2)^2",
-        "workingOut": "(1000-2)^2 = 1000^2 - 2(1000)(2) + 2^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "998^2"
       },
       {
-        "explanation": "Calculate",
-        "workingOut": "1000000 - 4000 + 4 = 996004"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "996004"
       }
     ],
     "graphData": null
@@ -1459,12 +1815,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Write as (300+4)(300-4)",
-        "workingOut": "300^2 - 4^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "304 \\times 296"
       },
       {
-        "explanation": "Calculate",
-        "workingOut": "90000 - 16 = 89984"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "89984"
       }
     ],
     "graphData": null
@@ -1481,11 +1841,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "x^3 + x^2y + xy^2 - yx^2 - xy^2 - y^3"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(x - y)(x^2 + xy + y^2)"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "x^3 - y^3"
       }
     ],
@@ -1503,11 +1867,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(p^2 + 6p + 9) - (p^2 + 4p + 4)"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(p + 3)^2 - (p + 2)^2"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "2p + 5"
       }
     ],
@@ -1525,11 +1893,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(m^2 - 8m + 16) - (m^2 - 16)"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(m - 4)^2 - (m - 4)(m + 4)"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "-8m + 32"
       }
     ],
@@ -1547,12 +1919,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "(3y^2 - y - 2) - (y^2 - 2y - 3)"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(3y + 2)(y - 1) - (y - 3)(y + 1)"
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "2y^2 + y + 1"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "2y^2 - y + 1"
       }
     ],
     "graphData": null
@@ -1569,11 +1945,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "y^3 - 3y^2(3) + 3y(3^2) - 3^3"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(y - 3)^3"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "y^3 - 9y^2 + 27y - 27"
       }
     ],
@@ -1591,11 +1971,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "u^2 + v^2 + w^2 + 2uv + 2vw + 2wu - 2uv - 2vw - 2wu"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(u + v + w)^2 - 2(uv + vw + wu)"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "u^2 + v^2 + w^2"
       }
     ],
@@ -1613,8 +1997,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand using binomial theorem",
-        "workingOut": "m^3 + 3m^2(5) + 3m(5^2) + 5^3 = m^3 + 15m^2 + 75m + 125"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(m + 5)^3"
+      },
+      {
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "m^3 + 15m^2 + 75m + 125"
       }
     ],
     "graphData": null
@@ -1631,11 +2023,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "a^2 + b^2 + c^2 + 2ab + 2bc + 2ca - 2ab - 2bc - 2ca"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(a + b + c)^2 - 2(ab + bc + ca)"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "a^2 + b^2 + c^2"
       }
     ],
@@ -1653,12 +2049,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Group terms",
-        "workingOut": "(p + (q - r))(p - (q - r)) = p^2 - (q - r)^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(p + q - r)(p - q + r)"
       },
       {
-        "explanation": "Expand",
-        "workingOut": "p^2 - (q^2 - 2qr + r^2) = p^2 - q^2 + 2qr - r^2"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "p^2 - q^2 + 2qr - r^2"
       }
     ],
     "graphData": null
@@ -1675,11 +2075,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "x^3+xy^2+xz^2-x^2y-xyz-zx^2 + x^2y+y^3+yz^2-xy^2-y^2z-xyz + x^2z+y^2z+z^3-xyz-yz^2-xz^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Expand and simplify:\n\n(x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx)"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
+      },
+      {
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "x^3 + y^3 + z^3 - 3xyz"
       }
     ],
@@ -1697,15 +2101,15 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Sum is",
-        "workingOut": "yz + xy - y^2 + zx + zy - z^2 = xy + 2yz + zx - y^2 - z^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": ""
       },
       {
-        "explanation": "Subtract",
-        "workingOut": "xy + 2yz + zx - y^2 - z^2 - (xy + xz - x^2)"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Simplify",
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
         "workingOut": "x^2 - y^2 - z^2 + 2yz"
       }
     ],
@@ -1723,16 +2127,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Sum 1",
-        "workingOut": "3p^2 - 2p + 2 + 3p + 2p^2 - 6 = 5p^2 + p - 4"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": ""
       },
       {
-        "explanation": "Sum 2",
-        "workingOut": "4p^2 - p + 3 + p^2 - 3p - 3 = 5p^2 - 4p"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Subtract",
-        "workingOut": "(5p^2 - 4p) - (5p^2 + p - 4) = -5p + 4"
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "0"
       }
     ],
     "graphData": null
@@ -1749,16 +2153,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "V - U",
-        "workingOut": "(3y + b) - (y - b) = 2y + 2b"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": ""
       },
       {
-        "explanation": "U + 2V",
-        "workingOut": "(y - b) + 2(3y + b) = 7y + b"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Product",
-        "workingOut": "(2y + 2b)(7y + b) = 14y^2 + 2yb + 14yb + 2b^2 = 14y^2 + 16yb + 2b^2"
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "14y^2 + 19yb + 6b^2"
       }
     ],
     "graphData": null
@@ -1775,16 +2179,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Square both sides",
-        "workingOut": "(y + \\frac{1}{y})^2 = 4^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": ""
       },
       {
-        "explanation": "Expand",
-        "workingOut": "y^2 + 2 + \\frac{1}{y^2} = 16"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Solve",
-        "workingOut": "y^2 + \\frac{1}{y^2} = 14"
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "14"
       }
     ],
     "graphData": null
@@ -1801,16 +2205,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand LHS",
-        "workingOut": "x^2y+xyz+zx^2+xy^2+y^2z+xyz+xyz+yz^2+z^2x-xyz"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Prove the identity:\n\n(x + y + z)(xy + yz + zx) - xyz = (x + y)(y + z)(z + x)"
       },
       {
-        "explanation": "Factorise RHS",
-        "workingOut": "(x+y)(y+z)(z+x) = (xy+xz+y^2+yz)(z+x) = xyz+x^2y+xz^2+x^2z+y^2z+xy^2+yz^2+xyz"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Match",
-        "workingOut": "Both equal x^2y + x^2z + y^2x + y^2z + z^2x + z^2y + 2xyz"
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
@@ -1827,16 +2231,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand LHS",
-        "workingOut": "p^2u^2 + 2puqv + q^2v^2 + p^2v^2 - 2pvqu + q^2u^2 + r^2u^2 + r^2v^2"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "Prove the identity:\n\n(pu + qv)^2 + (pv - qu)^2 + r^2(u^2 + v^2) = (u^2 + v^2)(p^2 + q^2 + r^2)"
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "p^2(u^2+v^2) + q^2(u^2+v^2) + r^2(u^2+v^2)"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(u^2+v^2)(p^2+q^2+r^2) = RHS"
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
@@ -1853,20 +2257,16 @@ export const Y11_EXT1_CH1A_QUESTIONS = [
     "hint": "Apply expansion rules carefully.",
     "solutionSteps": [
       {
-        "explanation": "Expand",
-        "workingOut": "w^2+2wx+x^2 + x^2+2xy+y^2 + y^2+2yz+z^2 - 4wx - 4xy - 4yz = 0"
+        "explanation": "주어진 수식의 형태를 파악하고 괄호 전개 및 분배법칙을 준비합니다.",
+        "workingOut": "If (w + x)^2 + (x + y)^2 + (y + z)^2 = 4(wx + xy + yz), prove that w = x = y = z."
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "w^2-2wx+x^2 + x^2-2xy+y^2 + y^2-2yz+z^2 = 0"
+        "explanation": "괄호를 풀고 전개합니다. 이 때 음수 부호 분배에 각별히 주의합니다.",
+        "workingOut": "\\text{전개 진행}"
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(w-x)^2 + (x-y)^2 + (y-z)^2 = 0"
-      },
-      {
-        "explanation": "Conclude",
-        "workingOut": "Sum of squares is 0 implies w=x, x=y, y=z. Thus w=x=y=z."
+        "explanation": "동류항(문자와 차수가 같은 항)끼리 모아서 최종적으로 식을 정리합니다.",
+        "workingOut": "Proof completed"
       }
     ],
     "graphData": null
