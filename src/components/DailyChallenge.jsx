@@ -345,13 +345,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           studentProfile: localBoot.studentProfile || {},
           chapterProgress: localBoot.chapterProgress ?? null,
         };
-        let shouldFetchProfile = !localBoot.studentProfile || Object.keys(localBoot.studentProfile).length === 0;
-
-        if (shouldFetchProfile) {
-          const profileSnap = await getDoc(doc(db, 'users', user.uid));
-          if (cancelled) return;
-          nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : {};
-        }
+        // Always fetch a fresh profile so teacher changes (dailyPracticeConfig,
+        // assignedChapters, etc.) are picked up immediately instead of relying
+        // on a stale local cache.
+        const profileSnap = await getDoc(doc(db, 'users', user.uid));
+        if (cancelled) return;
+        nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : (localBoot.studentProfile || {});
 
         setStudentProfile(nextBoot.studentProfile);
 
