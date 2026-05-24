@@ -47,6 +47,7 @@ import { Y8_CH14A_QUESTIONS } from '../constants/seedYear8Ch14Questions.js';
 import { Y8_CH15A_QUESTIONS } from '../constants/seedYear8Ch15Questions.js';
 import { Y8_CH16A_QUESTIONS } from '../constants/seedYear8Ch16Questions.js';
 import { Y8_CH17A_QUESTIONS } from '../constants/seedYear8Ch17Questions.js';
+import { Y8_CH18A_QUESTIONS } from '../constants/seedYear8Ch18Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -87,6 +88,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-15', chapterTitle: 'Chapter 15: Area, volume and time', topicId: 'y8-15a', topicCode: '15A', topicTitle: 'Review of area and length', year: 'Year 8', seed: Y8_CH15A_QUESTIONS, label: 'Y8 Ch15 · Area, volume and time' },
   { chapterId: 'y8-16', chapterTitle: 'Chapter 16: Probability', topicId: 'y8-16a', topicCode: '16A', topicTitle: 'An introduction to probability', year: 'Year 8', seed: Y8_CH16A_QUESTIONS, label: 'Y8 Ch16 · Probability' },
   { chapterId: 'y8-17', chapterTitle: 'Chapter 17: Formulas and factorisation', topicId: 'y8-17a', topicCode: '17A', topicTitle: 'Formulas', year: 'Year 8', seed: Y8_CH17A_QUESTIONS, label: 'Y8 Ch17 · Formulas' },
+  { chapterId: 'y8-18', chapterTitle: 'Chapter 18: Graphing straight lines', topicId: 'y8-18a', topicCode: '18A', topicTitle: 'The Cartesian plane', year: 'Year 8', seed: Y8_CH18A_QUESTIONS, label: 'Y8 Ch18 · Graphing straight lines' },
 ];
 import {
   fetchHscResultsIncremental,
@@ -1854,172 +1856,113 @@ const Curriculum = () => {
                 </div>
 
                 <div className="admin-panel-body">
-                  {adminActiveTab === 'y11_12' && (
-                    <div className="admin-sync-grid">
-                      {/* Year 11 Chapter 1 Algebra */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y11">Y11 CH1</span>
-                          <span className="sync-card-title">Algebra (Seed Ch1)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!(questionCounts['y11a-1'] || questionCounts['y11-1']) ? (
-                            <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Ch1
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({(questionCounts['y11a-1'] || 0) + (questionCounts['y11-1'] || 0)} Qs)</span>
-                              <button onClick={handleSeedAlgebraQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 11 Chapter 2 Surds */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y11">Y11 CH2</span>
-                          <span className="sync-card-title">Surds & Indices (Seed Ch2)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!(questionCounts['y11a-2'] || questionCounts['y11-2']) ? (
-                            <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Ch2
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({(questionCounts['y11a-2'] || 0) + (questionCounts['y11-2'] || 0)} Qs)</span>
-                              <button onClick={handleSeedSurdsQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 6 Whole Numbers */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y6">Y6 WN</span>
-                          <span className="sync-card-title">Whole Numbers (Seed Y6)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y6-wn'] ? (
-                            <button onClick={handleSeedWholeNumbersQuestions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y6 WN
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y6-wn']} Qs)</span>
-                              <button onClick={handleSeedWholeNumbersQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 6 Fractions */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y6">Y6 Frac</span>
-                          <span className="sync-card-title">Fractions (Seed Y6)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y6-frac'] ? (
-                            <button onClick={handleSeedFractionsQuestions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y6 Frac
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y6-frac']} Qs)</span>
-                              <button onClick={handleSeedFractionsQuestions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 11 Ch5 */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y11">Y11 Ch5</span>
-                          <span className="sync-card-title">Transformations (Seed Y11A)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y11a-5'] ? (
-                            <button onClick={handleSeedY11Ch5Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y11 Ch5
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y11a-5']} Qs)</span>
-                              <button onClick={handleSeedY11Ch5Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 Ch2 Pythagoras */}
-                      <div className="sync-card">
-                        <div className="sync-card-info">
-                          <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>Y9 CH2</span>
-                          <span className="sync-card-title">Pythagoras (Seed Y9 Ch2)</span>
-                        </div>
-                        <div className="sync-card-actions">
-                          {!questionCounts['y9-2'] ? (
-                            <button onClick={handleSeedY9Ch2Questions} disabled={isMigrating} className="sync-btn warning">
-                              🌱 Seed Y9 Ch2
-                            </button>
-                          ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <span className="sync-card-status">Active ({questionCounts['y9-2']} Qs)</span>
-                              <button onClick={handleSeedY9Ch2Questions} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                Re-seed
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Year 9 chapters — rendered from CHAPTER_SEED_REGISTRY.
-                          Add a chapter there and a card appears here automatically. */}
-                      {CHAPTER_SEED_REGISTRY.map((entry) => {
-                        const count = questionCounts[entry.chapterId];
-                        return (
-                          <div className="sync-card" key={entry.chapterId}>
-                            <div className="sync-card-info">
-                              <span className="sync-card-badge y9" style={{ background: '#10b981', color: '#fff' }}>
-                                {entry.chapterId.toUpperCase()}
-                              </span>
-                              <span className="sync-card-title">{entry.label} · {entry.seed.length} Qs</span>
-                            </div>
-                            <div className="sync-card-actions">
-                              {!count ? (
-                                <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">
-                                  🌱 Seed
-                                </button>
-                              ) : (
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                  <span className="sync-card-status">Active ({count} Qs)</span>
-                                  <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>
-                                    Re-seed
-                                  </button>
-                                </div>
-                              )}
-                            </div>
+                  {adminActiveTab === 'y11_12' && (() => {
+                    // Helper to render a single seed card
+                    const SeedCard = ({ badge, badgeStyle, title, countKey, onSeed, extraCount }) => {
+                      const count = extraCount !== undefined
+                        ? extraCount
+                        : (questionCounts[countKey] || 0);
+                      return (
+                        <div className="sync-card">
+                          <div className="sync-card-info">
+                            <span className="sync-card-badge" style={badgeStyle}>{badge}</span>
+                            <span className="sync-card-title">{title}</span>
                           </div>
-                        );
-                      })}
+                          <div className="sync-card-actions">
+                            {!count ? (
+                              <button onClick={onSeed} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
+                            ) : (
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <span className="sync-card-status">Active ({count} Qs)</span>
+                                <button onClick={onSeed} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>Re-seed</button>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    };
 
-                    </div>
-                  )}
+                    // Group CHAPTER_SEED_REGISTRY by year
+                    const byYear = CHAPTER_SEED_REGISTRY.reduce((acc, entry) => {
+                      const y = entry.year || 'Other';
+                      if (!acc[y]) acc[y] = [];
+                      acc[y].push(entry);
+                      return acc;
+                    }, {});
+
+                    const yearOrder = ['Year 11', 'Year 12', 'Year 9', 'Year 8', 'Year 6', 'Other'];
+                    const yearColors = {
+                      'Year 11': { bg: '#6366f1', label: '#fff' },
+                      'Year 12': { bg: '#8b5cf6', label: '#fff' },
+                      'Year 9':  { bg: '#10b981', label: '#fff' },
+                      'Year 8':  { bg: '#3b82f6', label: '#fff' },
+                      'Year 6':  { bg: '#f59e0b', label: '#fff' },
+                      'Other':   { bg: '#94a3b8', label: '#fff' },
+                    };
+
+                    // Manual cards keyed by year
+                    const manualByYear = {
+                      'Year 11': [
+                        <SeedCard key="y11-1" badge="Y11 CH1" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Algebra (Ch1)" countKey={null} extraCount={(questionCounts['y11a-1'] || 0) + (questionCounts['y11-1'] || 0)} onSeed={handleSeedAlgebraQuestions} />,
+                        <SeedCard key="y11-2" badge="Y11 CH2" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Surds & Indices (Ch2)" countKey={null} extraCount={(questionCounts['y11a-2'] || 0) + (questionCounts['y11-2'] || 0)} onSeed={handleSeedSurdsQuestions} />,
+                        <SeedCard key="y11-5" badge="Y11 CH5" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Transformations (Ch5)" countKey="y11a-5" onSeed={handleSeedY11Ch5Questions} />,
+                      ],
+                      'Year 9': [
+                        <SeedCard key="y9-2" badge="Y9 CH2" badgeStyle={{ background: '#10b981', color: '#fff' }} title="Pythagoras (Ch2)" countKey="y9-2" onSeed={handleSeedY9Ch2Questions} />,
+                      ],
+                      'Year 6': [
+                        <SeedCard key="y6-wn" badge="Y6 WN" badgeStyle={{ background: '#f59e0b', color: '#fff' }} title="Whole Numbers" countKey="y6-wn" onSeed={handleSeedWholeNumbersQuestions} />,
+                        <SeedCard key="y6-frac" badge="Y6 Frac" badgeStyle={{ background: '#f59e0b', color: '#fff' }} title="Fractions" countKey="y6-frac" onSeed={handleSeedFractionsQuestions} />,
+                      ],
+                    };
+
+                    return (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                        {yearOrder.map((year) => {
+                          const registryCards = (byYear[year] || []).map((entry) => {
+                            const count = questionCounts[entry.chapterId];
+                            return (
+                              <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`}>
+                                <div className="sync-card-info">
+                                  <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
+                                    {entry.chapterId.toUpperCase()}
+                                  </span>
+                                  <span className="sync-card-title">{entry.label}</span>
+                                </div>
+                                <div className="sync-card-actions">
+                                  {!count ? (
+                                    <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
+                                  ) : (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                      <span className="sync-card-status">Active ({count} Qs)</span>
+                                      <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning" style={{ padding: '4px 8px', fontSize: '0.8rem' }}>Re-seed</button>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          });
+
+                          const manualCards = manualByYear[year] || [];
+                          const allCards = [...manualCards, ...registryCards];
+                          if (allCards.length === 0) return null;
+
+                          return (
+                            <div key={year}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+                                <span style={{ background: yearColors[year]?.bg, color: '#fff', fontWeight: 900, fontSize: '0.75rem', padding: '4px 12px', borderRadius: '999px' }}>{year}</span>
+                                <div style={{ flex: 1, height: '1px', background: '#e2e8f0' }} />
+                                <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8' }}>{allCards.length} sets</span>
+                              </div>
+                              <div className="admin-sync-grid">
+                                {allCards}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    );
+                  })()}
 
                   {adminActiveTab === 'utils' && (
                     <div className="admin-sync-grid">
