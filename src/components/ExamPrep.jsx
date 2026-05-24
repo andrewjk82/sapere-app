@@ -349,7 +349,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         {showCanvas && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 320 }}
+            animate={{ opacity: 1, height: 480 }}
             exit={{ opacity: 0, height: 0 }}
             style={{ overflow: 'hidden', borderRadius: '20px' }}
           >
