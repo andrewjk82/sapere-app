@@ -194,21 +194,27 @@ const GeometryFigure = ({
 
   // --- Side labels ------------------------------------------------------
   sideLabels.forEach((sl) => {
-    const [ax, ay] = P(sl.between[0]);
-    const [bx, by] = P(sl.between[1]);
-    const mx = (ax + bx) / 2;
-    const my = (ay + by) / 2;
-    const [ux, uy] = norm(bx - ax, by - ay);
-    let [px, py] = [-uy, ux];
-    // default: push label to the OUTSIDE of the figure
-    const towardOut = (mx + px - cx) ** 2 + (my + py - cy) ** 2;
-    const towardIn = (mx - px - cx) ** 2 + (my - py - cy) ** 2;
-    const outward = sl.side === 'in' ? towardOut < towardIn : towardOut > towardIn;
-    if (!outward) { px = -px; py = -py; }
+    let tx, ty;
+    if (sl.labelPos) {
+      tx = ((Number(sl.labelPos[0]) || 0) - minX) * scale + pad;
+      ty = (maxY - (Number(sl.labelPos[1]) || 0)) * scale + pad;
+    } else {
+      const [ax, ay] = P(sl.between[0]);
+      const [bx, by] = P(sl.between[1]);
+      const mx = (ax + bx) / 2;
+      const my = (ay + by) / 2;
+      const [ux, uy] = norm(bx - ax, by - ay);
+      let [px, py] = [-uy, ux];
+      const towardOut = (mx + px - cx) ** 2 + (my + py - cy) ** 2;
+      const towardIn = (mx - px - cx) ** 2 + (my - py - cy) ** 2;
+      const outward = sl.side === 'in' ? towardOut < towardIn : towardOut > towardIn;
+      if (!outward) { px = -px; py = -py; }
+      tx = mx + px * 16; ty = my + py * 16;
+    }
     els.push(
       <text
         key={`sl${key++}`}
-        x={mx + px * 16} y={my + py * 16 + 5}
+        x={tx} y={ty + 5}
         textAnchor="middle" fill="#000000" fontSize={fontSize}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >

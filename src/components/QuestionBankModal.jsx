@@ -498,6 +498,11 @@ const GeometryEditor = ({ graphData, onChange }) => {
       angles[activeDrag.index] = { ...angles[activeDrag.index], labelPos: point };
       updateGeometry({ ...geometry, angles });
     }
+    if (activeDrag.type === 'sideLabel') {
+      const sideLabels = [...(geometry.sideLabels || [])];
+      sideLabels[activeDrag.index] = { ...sideLabels[activeDrag.index], labelPos: point };
+      updateGeometry({ ...geometry, sideLabels });
+    }
   };
 
   return (
@@ -687,6 +692,35 @@ const GeometryEditor = ({ graphData, onChange }) => {
             </g>
           );
         })}
+        {(() => {
+          const edCx = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[0], 0) / (pointNames.length || 1);
+          const edCy = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[1], 0) / (pointNames.length || 1);
+          return (geometry.sideLabels || []).map((sl, idx) => {
+            if (!sl.between?.[0] || !sl.between?.[1]) return null;
+            if (!geometry.points[sl.between[0]] || !geometry.points[sl.between[1]]) return null;
+            let lx, ly;
+            if (sl.labelPos) {
+              [lx, ly] = toSvg(sl.labelPos);
+            } else {
+              const [ax, ay] = toSvg(geometry.points[sl.between[0]]);
+              const [bx, by] = toSvg(geometry.points[sl.between[1]]);
+              const mx = (ax + bx) / 2; const my = (ay + by) / 2;
+              const len2 = Math.hypot(bx - ax, by - ay) || 1;
+              let px = -(by - ay) / len2; let py = (bx - ax) / len2;
+              const towardOut = (mx + px - edCx) ** 2 + (my + py - edCy) ** 2;
+              const towardIn = (mx - px - edCx) ** 2 + (my - py - edCy) ** 2;
+              const outward = sl.side === 'in' ? towardOut < towardIn : towardOut > towardIn;
+              if (!outward) { px = -px; py = -py; }
+              lx = mx + px * 16; ly = my + py * 16;
+            }
+            return (
+              <g key={`sl-${idx}`} onPointerDown={(event) => { event.preventDefault(); setActiveDrag({ type: 'sideLabel', index: idx }); }} style={{ cursor: 'grab' }}>
+                <circle cx={lx} cy={ly} r="11" fill="#10b981" opacity="0.12" />
+                <text x={lx} y={ly + 5} textAnchor="middle" fill="#000000" fontSize={geometry.fontSize || 14} fontFamily='"KaTeX_Main", "Times New Roman", serif'>{sl.text}</text>
+              </g>
+            );
+          });
+        })()}
       </svg>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
