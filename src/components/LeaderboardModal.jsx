@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, onSnapshot, query, orderBy, limit } from 'firebase/firestore';
 
-const RANK_LABELS = ['🥇', '🥈', '🥉'];
-
-const LANE_COLORS = [
-  '#fde68a', // 1st — gold
-  '#e2e8f0', // 2nd — silver
-  '#fed7aa', // 3rd — bronze
-  '#dbeafe', '#d1fae5', '#ede9fe', '#fce7f3',
-  '#f0fdf4', '#fefce8', '#f0f9ff',
-];
+const RANK_EMOJI = ['🥇', '🥈', '🥉'];
 
 const LeaderboardModal = ({ open, onClose, currentUserId }) => {
   const [leaders, setLeaders] = useState([]);
@@ -21,7 +13,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
   useEffect(() => {
     if (!open) return;
     setLoading(true);
-    const q = query(collection(db, 'leaderboard'), orderBy('totalXP', 'desc'), limit(20));
+    const q = query(collection(db, 'leaderboard'), orderBy('totalXP', 'desc'), limit(12));
     const unsub = onSnapshot(q, (snap) => {
       setLeaders(snap.docs.map(d => ({ id: d.id, ...d.data() })));
       setLoading(false);
@@ -32,6 +24,8 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
   if (!open) return null;
 
   const maxXP = leaders[0]?.totalXP || 1;
+  const LANE_H = 56; // px per lane
+  const AVATAR_SIZE = 40;
 
   return (
     <div className="app-modal" style={{ zIndex: 99999 }}>
@@ -41,181 +35,215 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
         className="app-modal__backdrop"
       />
       <motion.div
-        initial={{ opacity: 0, scale: 0.93, y: 24 }}
+        initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.93, y: 24 }}
-        className="app-panel app-modal__card"
+        exit={{ opacity: 0, scale: 0.95, y: 20 }}
         style={{
-          maxWidth: '560px', width: '95%',
-          padding: 0, overflow: 'hidden', borderRadius: '32px',
-          maxHeight: '90vh', display: 'flex', flexDirection: 'column',
+          position: 'relative', zIndex: 1,
+          width: '92vw', maxWidth: '900px',
+          borderRadius: '28px', overflow: 'hidden',
+          boxShadow: '0 32px 80px rgba(0,0,0,0.35)',
+          display: 'flex', flexDirection: 'column',
         }}
       >
         {/* Header */}
-        <div style={{ background: 'linear-gradient(135deg, #6366f1, #4f46e5)', padding: '20px 24px', flexShrink: 0, position: 'relative' }}>
+        <div style={{
+          background: 'linear-gradient(135deg, #1e1b4b, #312e81)',
+          padding: '16px 24px',
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          flexShrink: 0,
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{ fontSize: '1.6rem' }}>🏁</span>
+            <div>
+              <h2 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 900, color: '#fff' }}>100m Sprint</h2>
+              <p style={{ margin: 0, fontSize: '0.72rem', color: 'rgba(255,255,255,0.55)', fontWeight: 600 }}>XP leaderboard race</p>
+            </div>
+          </div>
           <button
             onClick={onClose}
-            style={{ position: 'absolute', top: '16px', right: '16px', background: 'rgba(255,255,255,0.2)', border: 'none', color: '#fff', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+            style={{ background: 'rgba(255,255,255,0.12)', border: 'none', color: '#fff', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
           >
             <X size={16} />
           </button>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span style={{ fontSize: '1.8rem' }}>🏁</span>
-            <div>
-              <h2 style={{ margin: 0, fontSize: '1.3rem', fontWeight: 900, color: '#fff' }}>Race Leaderboard</h2>
-              <p style={{ margin: 0, fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', fontWeight: 600 }}>XP race — who's ahead?</p>
-            </div>
-          </div>
         </div>
 
-        {/* Race track */}
-        <div style={{ overflowY: 'auto', flex: 1, padding: '20px 16px 24px', display: 'flex', flexDirection: 'column', gap: '0', background: '#f8fafc' }}>
+        {/* Track */}
+        <div style={{
+          background: '#2d6a2d',
+          padding: '0',
+          overflowX: 'auto',
+          overflowY: 'hidden',
+        }}>
           {loading ? (
-            <div style={{ textAlign: 'center', padding: '60px 0' }}>
-              <div className="app-spinner" style={{ margin: '0 auto', borderColor: '#e2e8f0', borderTopColor: '#6366f1' }} />
+            <div style={{ textAlign: 'center', padding: '60px', color: '#fff' }}>
+              <div className="app-spinner" style={{ margin: '0 auto', borderColor: 'rgba(255,255,255,0.3)', borderTopColor: '#fff' }} />
             </div>
-          ) : leaders.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '60px 0', color: '#94a3b8', fontWeight: 600 }}>No students yet.</div>
           ) : (
-            <>
-              {/* Finish line label */}
-              <div style={{ display: 'flex', justifyContent: 'flex-end', paddingRight: '12px', marginBottom: '4px' }}>
-                <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>🏁 Finish</span>
-              </div>
+            <div style={{ minWidth: '600px', position: 'relative' }}>
 
+              {/* Finish line */}
+              <div style={{
+                position: 'absolute', right: '48px', top: 0, bottom: 0,
+                width: '4px',
+                background: 'repeating-linear-gradient(to bottom, #fff 0px, #fff 8px, #111 8px, #111 16px)',
+                zIndex: 5,
+              }} />
+              <div style={{
+                position: 'absolute', right: '20px', top: '8px',
+                fontSize: '0.65rem', fontWeight: 900, color: '#fff',
+                textTransform: 'uppercase', letterSpacing: '0.08em', writingMode: 'vertical-rl',
+                opacity: 0.8,
+              }}>FINISH</div>
+
+              {/* Start line */}
+              <div style={{
+                position: 'absolute', left: '14px', top: 0, bottom: 0,
+                width: '3px', background: 'rgba(255,255,255,0.4)', zIndex: 5,
+              }} />
+
+              {/* Lanes */}
               {leaders.map((student, idx) => {
                 const rank = idx + 1;
                 const xp = student.totalXP || 0;
                 const pct = maxXP > 0 ? xp / maxXP : 0;
                 const isCurrentUser = student.id === currentUserId;
-                const laneColor = LANE_COLORS[idx] || '#f1f5f9';
-                const avatarUrl = student.avatarUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.id || 'sapere')}`;
-                const rankLabel = rank <= 3 ? RANK_LABELS[rank - 1] : `${rank}`;
-                const isTop3 = rank <= 3;
+                const avatarUrl = student.avatarUrl
+                  || `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(student.id || 'sapere')}`;
+                const isLast = idx === leaders.length - 1;
+
+                // Avatar runs in the lane, positioned from left (16px start) to right (finish area)
+                // Track usable width: from 16px to (100% - 60px)
+                const TRACK_LEFT = 16;   // px — start line
+                const TRACK_RIGHT = 60;  // px — right margin (finish line area)
 
                 return (
-                  <motion.div
+                  <div
                     key={student.id}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.05 }}
                     style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0',
-                      marginBottom: '6px',
+                      position: 'relative',
+                      height: `${LANE_H}px`,
+                      borderBottom: isLast ? 'none' : '1px solid rgba(255,255,255,0.18)',
+                      background: isCurrentUser
+                        ? 'rgba(99,102,241,0.25)'
+                        : idx % 2 === 0
+                          ? 'rgba(0,0,0,0.08)'
+                          : 'transparent',
                     }}
                   >
-                    {/* Lane */}
+                    {/* Lane number on far left */}
                     <div style={{
-                      flex: 1,
-                      height: isTop3 ? '62px' : '52px',
-                      background: laneColor,
-                      borderRadius: '16px',
-                      position: 'relative',
-                      overflow: 'visible',
-                      border: isCurrentUser ? '2px solid #6366f1' : '2px solid transparent',
-                      boxShadow: isCurrentUser ? '0 0 0 3px rgba(99,102,241,0.2)' : 'none',
+                      position: 'absolute', left: 0, top: 0, bottom: 0,
+                      width: '14px',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '0.5rem', fontWeight: 900, color: 'rgba(255,255,255,0.35)',
                     }}>
-                      {/* Progress bar fill */}
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: `${pct * 100}%` }}
-                        transition={{ duration: 0.8, delay: idx * 0.05 + 0.2, ease: 'easeOut' }}
-                        style={{
-                          position: 'absolute',
-                          left: 0, top: 0, bottom: 0,
-                          background: isTop3
-                            ? `linear-gradient(90deg, ${laneColor}, ${rank === 1 ? '#fbbf24' : rank === 2 ? '#94a3b8' : '#f97316'})`
-                            : `linear-gradient(90deg, ${laneColor}, rgba(99,102,241,0.15))`,
-                          borderRadius: '14px',
-                          opacity: 0.6,
-                        }}
-                      />
+                      {rank}
+                    </div>
 
-                      {/* Runner avatar — positioned at the progress point */}
-                      <motion.div
-                        initial={{ left: '0%' }}
-                        animate={{ left: `calc(${pct * 100}% - 28px)` }}
-                        transition={{ duration: 0.8, delay: idx * 0.05 + 0.2, ease: 'easeOut' }}
-                        style={{
-                          position: 'absolute',
-                          top: '50%',
-                          transform: 'translateY(-50%)',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'center',
-                          zIndex: 10,
-                        }}
-                      >
-                        {/* Rank badge above head */}
-                        <div style={{
-                          fontSize: isTop3 ? '1rem' : '0.65rem',
-                          fontWeight: 900,
-                          color: isTop3 ? undefined : '#475569',
-                          background: isTop3 ? 'transparent' : '#e2e8f0',
-                          borderRadius: '999px',
-                          padding: isTop3 ? '0' : '1px 5px',
-                          marginBottom: '2px',
-                          lineHeight: 1,
-                          whiteSpace: 'nowrap',
-                        }}>
-                          {rankLabel}
-                        </div>
-
-                        {/* Avatar */}
-                        <div style={{
-                          width: isTop3 ? '40px' : '32px',
-                          height: isTop3 ? '40px' : '32px',
-                          borderRadius: '50%',
-                          overflow: 'hidden',
-                          border: isCurrentUser ? '2px solid #6366f1' : `2px solid ${rank === 1 ? '#fbbf24' : rank === 2 ? '#94a3b8' : rank === 3 ? '#f97316' : '#fff'}`,
-                          boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
-                          background: '#fff',
-                          flexShrink: 0,
-                          // Slight bounce to simulate running
-                        }}>
-                          <img src={avatarUrl} alt={student.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                        </div>
-                      </motion.div>
-
-                      {/* Name tag on the left */}
-                      <div style={{
+                    {/* Progress fill */}
+                    <motion.div
+                      initial={{ width: `${TRACK_LEFT}px` }}
+                      animate={{ width: `calc(${TRACK_LEFT}px + ${pct} * (100% - ${TRACK_LEFT + TRACK_RIGHT}px))` }}
+                      transition={{ duration: 1.2, delay: idx * 0.06, ease: [0.34, 1.56, 0.64, 1] }}
+                      style={{
                         position: 'absolute',
-                        left: '10px',
+                        left: 0, top: 0, bottom: 0,
+                        background: rank === 1
+                          ? 'rgba(251,191,36,0.22)'
+                          : rank === 2
+                            ? 'rgba(148,163,184,0.18)'
+                            : rank === 3
+                              ? 'rgba(251,146,60,0.18)'
+                              : 'rgba(255,255,255,0.06)',
+                        pointerEvents: 'none',
+                      }}
+                    />
+
+                    {/* Runner (avatar + rank badge) */}
+                    <motion.div
+                      initial={{ left: `${TRACK_LEFT}px` }}
+                      animate={{ left: `calc(${TRACK_LEFT}px + ${pct} * (100% - ${TRACK_LEFT + TRACK_RIGHT + AVATAR_SIZE}px))` }}
+                      transition={{ duration: 1.2, delay: idx * 0.06, ease: [0.34, 1.56, 0.64, 1] }}
+                      style={{
+                        position: 'absolute',
                         top: '50%',
                         transform: 'translateY(-50%)',
-                        zIndex: 5,
                         display: 'flex',
                         flexDirection: 'column',
+                        alignItems: 'center',
                         gap: '1px',
+                        zIndex: 10,
+                      }}
+                    >
+                      {/* Rank above head */}
+                      <div style={{
+                        fontSize: rank <= 3 ? '1rem' : '0.6rem',
+                        fontWeight: 900,
+                        lineHeight: 1,
+                        color: rank <= 3 ? undefined : 'rgba(255,255,255,0.8)',
+                        background: rank <= 3 ? 'transparent' : 'rgba(0,0,0,0.35)',
+                        borderRadius: '999px',
+                        padding: rank <= 3 ? '0' : '1px 4px',
+                        marginBottom: '1px',
                       }}>
-                        <span style={{
-                          fontSize: isTop3 ? '0.8rem' : '0.72rem',
-                          fontWeight: 900,
-                          color: '#1e1b4b',
-                          whiteSpace: 'nowrap',
-                          maxWidth: '90px',
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                        }}>
-                          {student.name || 'Student'}
-                        </span>
-                        <span style={{ fontSize: '0.62rem', fontWeight: 700, color: '#64748b' }}>
-                          {xp.toLocaleString()} XP
-                        </span>
+                        {rank <= 3 ? RANK_EMOJI[rank - 1] : rank}
                       </div>
-                    </div>
-                  </motion.div>
+
+                      {/* Avatar */}
+                      <div style={{
+                        width: `${AVATAR_SIZE}px`,
+                        height: `${AVATAR_SIZE}px`,
+                        borderRadius: '50%',
+                        overflow: 'hidden',
+                        border: isCurrentUser
+                          ? '2.5px solid #818cf8'
+                          : rank === 1 ? '2.5px solid #fbbf24'
+                          : rank === 2 ? '2.5px solid #94a3b8'
+                          : rank === 3 ? '2.5px solid #f97316'
+                          : '2px solid rgba(255,255,255,0.4)',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+                        background: '#fff',
+                        flexShrink: 0,
+                      }}>
+                        <img src={avatarUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      </div>
+                    </motion.div>
+
+                    {/* XP badge — floats at the right end of the progress fill */}
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: idx * 0.06 + 1.0 }}
+                      style={{
+                        position: 'absolute',
+                        right: `${TRACK_RIGHT + 8}px`,
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        fontSize: '0.6rem',
+                        fontWeight: 800,
+                        color: 'rgba(255,255,255,0.55)',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {xp.toLocaleString()} XP
+                    </motion.div>
+                  </div>
                 );
               })}
 
-              {/* Track dashes at bottom */}
-              <div style={{ display: 'flex', gap: '4px', marginTop: '8px', paddingLeft: '4px', paddingRight: '12px', alignItems: 'center' }}>
-                <div style={{ flex: 1, borderTop: '2px dashed #cbd5e1' }} />
-                <span style={{ fontSize: '0.65rem', color: '#94a3b8', fontWeight: 700 }}>Start 🚀</span>
+              {/* Bottom distance markers */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                padding: '4px 60px 6px 16px',
+                background: 'rgba(0,0,0,0.25)',
+              }}>
+                {[0, 25, 50, 75, 100].map(m => (
+                  <span key={m} style={{ fontSize: '0.55rem', color: 'rgba(255,255,255,0.4)', fontWeight: 700 }}>{m}m</span>
+                ))}
               </div>
-            </>
+            </div>
           )}
         </div>
       </motion.div>
