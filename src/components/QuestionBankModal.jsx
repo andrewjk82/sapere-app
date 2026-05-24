@@ -414,6 +414,24 @@ const GeometryEditor = ({ graphData, onChange }) => {
     });
   };
 
+  const renamePoint = (oldName, newName) => {
+    const trimmed = newName.trim();
+    if (!trimmed || trimmed === oldName || geometry.points[trimmed]) return;
+    const points = {};
+    for (const [k, v] of Object.entries(geometry.points || {})) {
+      points[k === oldName ? trimmed : k] = v;
+    }
+    const mapName = (n) => (n === oldName ? trimmed : n);
+    const segments = (geometry.segments || []).map((s) => ({ ...s, from: mapName(s.from), to: mapName(s.to) }));
+    const angles = (geometry.angles || []).map((a) => ({ ...a, at: mapName(a.at) }));
+    const sideLabels = (geometry.sideLabels || []).map((sl) => ({ ...sl, between: sl.between?.map(mapName) }));
+    const labelOffsets = {};
+    for (const [k, v] of Object.entries(geometry.labelOffsets || {})) {
+      labelOffsets[k === oldName ? trimmed : k] = v;
+    }
+    updateGeometry({ ...geometry, points, segments, angles, sideLabels, labelOffsets });
+  };
+
   const updateSegment = (idx, patch) => {
     const segments = [...(geometry.segments || [])];
     segments[idx] = { ...segments[idx], ...patch };
@@ -726,8 +744,14 @@ const GeometryEditor = ({ graphData, onChange }) => {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
         {pointNames.map((name) => (
           <div key={name} style={{ padding: '10px', borderRadius: '12px', background: '#fff', border: '1px solid #ede9fe' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-              <strong style={{ color: '#4c1d95' }}>{name}</strong>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px', gap: '6px' }}>
+              <input
+                defaultValue={name}
+                onBlur={(e) => renamePoint(name, e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter') e.target.blur(); }}
+                style={{ width: '60px', padding: '4px 6px', borderRadius: '6px', border: '1px solid #c4b5fd', fontWeight: 800, color: '#4c1d95', fontSize: '0.95rem', textAlign: 'center' }}
+                title="Click to rename"
+              />
               <button type="button" onClick={() => removePoint(name)} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '3px 6px', cursor: 'pointer', fontWeight: 800 }}>Remove</button>
             </div>
             <div style={{ display: 'flex', gap: '6px' }}>
