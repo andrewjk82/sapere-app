@@ -246,11 +246,16 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
         />
       ) : (
         <>
-          {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && !graphData.geometry && <MathGraph {...graphData} />}
-          {graphData?.geometry && <GeometryFigure {...graphData.geometry} />}
-          {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
-          {graphData?.jsxGraph && <JsxGraphDiagram data={graphData.jsxGraph} />}
-          {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
+          {graphData?.geometry ? (
+            <GeometryFigure {...graphData.geometry} />
+          ) : (
+            <>
+              {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && <MathGraph {...graphData} />}
+              {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
+              {graphData?.jsxGraph && <JsxGraphDiagram data={graphData.jsxGraph} />}
+              {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
+            </>
+          )}
         </>
       )}
     </div>

@@ -520,6 +520,7 @@ const ChallengeQuizView = ({
                     onClick={(e) => {
                       e.preventDefault();
                       if (isFeedback) return;
+                      if (symbol === '/') { enterFracMode(selectedOption || ''); return; }
                       const currentVal = selectedOption || '';
                       setSelectedOption(currentVal + symbol);
                       answerInputRef.current?.focus();
