@@ -347,23 +347,125 @@ export const Y8_CH15I_QUESTIONS = [
       }
     }
   },
-  // --- Question 4a to 4h ---
+  // --- Question 4a ---
   {
-    "id": "y8-15i-q4a-to-h",
-    "type": "teacher_review",
+    "id": "y8-15i-q4a",
+    "type": "short_answer",
     "difficulty": "medium",
-    "question": "Write these measurements in the units given:\na. $5 \\text{ cm}^2 = \\_\\_\\_ \\text{ mm}^2$\nb. $12 \\text{ m}^2 = \\_\\_\\_ \\text{ cm}^2$\nc. $4000 \\text{ mm}^2 = \\_\\_\\_ \\text{ cm}^2$\nd. $7.2 \\text{ ha} = \\_\\_\\_ \\text{ m}^2$\ne. $500 \\text{ mm}^3 = \\_\\_\\_ \\text{ cm}^3$\nf. $3 \\text{ m}^3 = \\_\\_\\_ \\text{ cm}^3$\ng. $2500 \\text{ L} = \\_\\_\\_ \\text{ kL}$\nh. $0.4 \\text{ ML} = \\_\\_\\_ \\text{ L}$",
-    "solution": "a. $1 \\text{ cm}^2 = 100 \\text{ mm}^2$. $5 \\times 100 = 500 \\text{ mm}^2$.\n\nb. $1 \\text{ m}^2 = 10000 \\text{ cm}^2$. $12 \\times 10000 = 120000 \\text{ cm}^2$.\n\nc. $100 \\text{ mm}^2 = 1 \\text{ cm}^2$. $4000 \\div 100 = 40 \\text{ cm}^2$.\n\nd. $1 \\text{ ha} = 10000 \\text{ m}^2$. $7.2 \\times 10000 = 72000 \\text{ m}^2$.\n\ne. $1 \\text{ cm}^3 = 1000 \\text{ mm}^3$. $500 \\div 1000 = 0.5 \\text{ cm}^3$.\n\nf. $1 \\text{ m}^3 = 1000000 \\text{ cm}^3$. $3 \\times 1000000 = 3000000 \\text{ cm}^3$.\n\ng. $1000 \\text{ L} = 1 \\text{ kL}$. $2500 \\div 1000 = 2.5 \\text{ kL}$.\n\nh. $1 \\text{ ML} = 1000000 \\text{ L}$. $0.4 \\times 1000000 = 400000 \\text{ L}$.",
-    "hint": "When converting square units, square the conversion factor. When converting cubic units, cube the conversion factor."
+    "question": "Write the measurement in the unit given:\n$5 \\text{ cm}^2 = \\_\\_\\_ \\text{ mm}^2$\n(Enter only the number)",
+    "a": "500",
+    "solution": "$1 \\text{ cm}^2 = 100 \\text{ mm}^2$.\n$5 \\times 100 = 500 \\text{ mm}^2$.\n\n**Answer:** $500$",
+    "hint": "When converting from $\\text{cm}^2$ to $\\text{mm}^2$, multiply by $10^2 = 100$."
   },
-  // --- Question 5 ---
+  // --- Question 4b ---
   {
-    "id": "y8-15i-q5",
-    "type": "teacher_review",
+    "id": "y8-15i-q4b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$12 \\text{ m}^2 = \\_\\_\\_ \\text{ cm}^2$\n(Enter only the number)",
+    "a": "120000",
+    "solution": "$1 \\text{ m}^2 = 10000 \\text{ cm}^2$.\n$12 \\times 10000 = 120000 \\text{ cm}^2$.\n\n**Answer:** $120000$",
+    "hint": "When converting from $\\text{m}^2$ to $\\text{cm}^2$, multiply by $100^2 = 10000$."
+  },
+  // --- Question 4c ---
+  {
+    "id": "y8-15i-q4c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$4000 \\text{ mm}^2 = \\_\\_\\_ \\text{ cm}^2$\n(Enter only the number)",
+    "a": "40",
+    "solution": "$100 \\text{ mm}^2 = 1 \\text{ cm}^2$.\n$4000 \\div 100 = 40 \\text{ cm}^2$.\n\n**Answer:** $40$",
+    "hint": "When converting from $\\text{mm}^2$ to $\\text{cm}^2$, divide by $10^2 = 100$."
+  },
+  // --- Question 4d ---
+  {
+    "id": "y8-15i-q4d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$7.2 \\text{ ha} = \\_\\_\\_ \\text{ m}^2$\n(Enter only the number)",
+    "a": "72000",
+    "solution": "$1 \\text{ ha} = 10000 \\text{ m}^2$.\n$7.2 \\times 10000 = 72000 \\text{ m}^2$.\n\n**Answer:** $72000$",
+    "hint": "There are $10000 \\text{ m}^2$ in one hectare."
+  },
+  // --- Question 4e ---
+  {
+    "id": "y8-15i-q4e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$500 \\text{ mm}^3 = \\_\\_\\_ \\text{ cm}^3$\n(Enter only the number)",
+    "a": "0.5",
+    "solution": "$1 \\text{ cm}^3 = 1000 \\text{ mm}^3$.\n$500 \\div 1000 = 0.5 \\text{ cm}^3$.\n\n**Answer:** $0.5$",
+    "hint": "When converting from $\\text{mm}^3$ to $\\text{cm}^3$, divide by $10^3 = 1000$."
+  },
+  // --- Question 4f ---
+  {
+    "id": "y8-15i-q4f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$3 \\text{ m}^3 = \\_\\_\\_ \\text{ cm}^3$\n(Enter only the number)",
+    "a": "3000000",
+    "solution": "$1 \\text{ m}^3 = 1000000 \\text{ cm}^3$.\n$3 \\times 1000000 = 3000000 \\text{ cm}^3$.\n\n**Answer:** $3000000$",
+    "hint": "When converting from $\\text{m}^3$ to $\\text{cm}^3$, multiply by $100^3 = 1000000$."
+  },
+  // --- Question 4g ---
+  {
+    "id": "y8-15i-q4g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$2500 \\text{ L} = \\_\\_\\_ \\text{ kL}$\n(Enter only the number)",
+    "a": "2.5",
+    "solution": "$1000 \\text{ L} = 1 \\text{ kL}$.\n$2500 \\div 1000 = 2.5 \\text{ kL}$.\n\n**Answer:** $2.5$",
+    "hint": "To convert from Litres to kilolitres, divide by $1000$."
+  },
+  // --- Question 4h ---
+  {
+    "id": "y8-15i-q4h",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Write the measurement in the unit given:\n$0.4 \\text{ ML} = \\_\\_\\_ \\text{ L}$\n(Enter only the number)",
+    "a": "400000",
+    "solution": "$1 \\text{ ML} = 1000000 \\text{ L}$.\n$0.4 \\times 1000000 = 400000 \\text{ L}$.\n\n**Answer:** $400000$",
+    "hint": "To convert from Megalitres to Litres, multiply by $1000000$."
+  },
+  // --- Question 5a ---
+  {
+    "id": "y8-15i-q5a",
+    "type": "short_answer",
     "difficulty": "easy",
-    "question": "Complete the following time conversions:\na. $5 \\text{ weeks} = \\_\\_\\_ \\text{ days}$\nb. $180 \\text{ min} = \\_\\_\\_ \\text{ h}$\nc. $2\\frac{1}{2} \\text{ days} = \\_\\_\\_ \\text{ hours}$\nd. $1 \\text{ year} = \\_\\_\\_ \\text{ weeks}$",
-    "solution": "a. $5 \\times 7 = 35 \\text{ days}$.\nb. $180 \\div 60 = 3 \\text{ h}$.\nc. $2.5 \\times 24 = 60 \\text{ hours}$.\nd. There are $52$ full weeks in a standard year.",
-    "hint": "Remember there are 7 days in a week, 60 minutes in an hour, and 24 hours in a day."
+    "question": "Complete the following time conversion:\n$5 \\text{ weeks} = \\_\\_\\_ \\text{ days}$\n(Enter only the number)",
+    "a": "35",
+    "solution": "$5 \\times 7 = 35 \\text{ days}$.\n\n**Answer:** $35$",
+    "hint": "There are 7 days in a week."
+  },
+  // --- Question 5b ---
+  {
+    "id": "y8-15i-q5b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Complete the following time conversion:\n$180 \\text{ min} = \\_\\_\\_ \\text{ h}$\n(Enter only the number)",
+    "a": "3",
+    "solution": "$180 \\div 60 = 3 \\text{ h}$.\n\n**Answer:** $3$",
+    "hint": "There are 60 minutes in an hour."
+  },
+  // --- Question 5c ---
+  {
+    "id": "y8-15i-q5c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Complete the following time conversion:\n$2\\frac{1}{2} \\text{ days} = \\_\\_\\_ \\text{ hours}$\n(Enter only the number)",
+    "a": "60",
+    "solution": "$2.5 \\times 24 = 60 \\text{ hours}$.\n\n**Answer:** $60$",
+    "hint": "There are 24 hours in a day."
+  },
+  // --- Question 5d ---
+  {
+    "id": "y8-15i-q5d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Complete the following time conversion:\n$1 \\text{ year} = \\_\\_\\_ \\text{ weeks}$\n(Enter only the number of full weeks)",
+    "a": "52",
+    "solution": "There are $52$ full weeks in a standard year.\n\n**Answer:** $52$",
+    "hint": "Think about how many weeks are conventionally in a year."
   },
   // --- Question 6a ---
   {
