@@ -193,169 +193,212 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const lastRes = showFeedback ? answers[answers.length - 1] : null;
   const correctMc = q.type === 'multiple_choice' ? Number(q.answer) : null;
 
+  const [viewW, setViewW] = useState(() => (typeof window !== 'undefined' ? window.innerWidth : 1024));
+  useEffect(() => {
+    const onResize = () => setViewW(window.innerWidth);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+  const isWide = viewW >= 860;
+
+  const header = (
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div>
+        <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Exam Prep</div>
+        <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {idx + 1} of {total}</div>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <button
+          onClick={() => onReport?.(q)}
+          title="Report a problem with this question"
+          style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
+        >
+          <Flag size={16} />
+        </button>
+        <button
+          onClick={() => setShowCanvas(v => !v)}
+          title="Toggle working out pad"
+          style={{ width: '36px', height: '36px', borderRadius: '12px', border: `1px solid ${showCanvas ? '#ddd6fe' : '#e2e8f0'}`, background: showCanvas ? '#f5f3ff' : '#fff', color: showCanvas ? '#7c3aed' : '#64748b', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
+        >
+          <PenLine size={16} />
+        </button>
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800,
+          color: timeLeft <= 10 ? '#e11d48' : timeLeft <= 30 ? '#d97706' : '#64748b',
+          background: timeLeft <= 10 ? '#fff1f2' : timeLeft <= 30 ? '#fffbeb' : '#fff',
+          padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
+          transition: 'background 0.3s, color 0.3s',
+          minWidth: '70px', justifyContent: 'center',
+        }}>
+          <Clock size={14} /> {timeLeft}s
+        </div>
+      </div>
+    </div>
+  );
+
+  const progressBar = (
+    <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
+      <div style={{ height: '100%', width: `${((idx + (showFeedback ? 1 : 0)) / total) * 100}%`, background: '#7c3aed', transition: 'width 0.3s' }} />
+    </div>
+  );
+
+  const questionCard = (
+    <div style={{ background: '#fff', padding: '24px', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
+          {q.topicTitle || q.chapterTitle}
+        </span>
+        {q.hint && (
+          <button onClick={() => setShowHint((v) => !v)} style={{ background: showHint ? '#fef3c7' : '#fff7ed', border: 'none', padding: '6px 12px', borderRadius: '10px', color: '#d97706', fontSize: '0.75rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
+            <Lightbulb size={14} /> {showHint ? 'Hide Hint' : 'Show Hint'}
+          </button>
+        )}
+      </div>
+      <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
+      <AnimatePresence>
+        {showHint && q.hint && (
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} style={{ overflow: 'hidden' }}>
+            <div style={{ marginTop: '14px', padding: '14px', borderRadius: '14px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
+              <MathView content={q.hint} style={{ color: '#92400e', fontSize: '0.9rem', fontWeight: 600 }} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+
+  const answerArea = q.type === 'multiple_choice' ? (
+    <div style={{ display: 'grid', gap: '10px' }}>
+      {(q.options || []).map((opt, i) => {
+        const optText = typeof opt === 'string' ? opt : opt.text;
+        const selected = draft === i;
+        const isCorrect = showFeedback && i === correctMc;
+        const isWrong = showFeedback && selected && !isCorrect;
+        return (
+          <button
+            key={i}
+            onClick={() => !showFeedback && setDraft(i)}
+            disabled={showFeedback}
+            style={{ padding: '14px 22px', borderRadius: '100px', border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : selected ? '#6366f1' : 'transparent'}`, background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '14px', cursor: showFeedback ? 'default' : 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', textAlign: 'left' }}
+          >
+            <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrect ? '#10b981' : selected ? '#6366f1' : '#f1f5f9', color: isCorrect || selected ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
+              {String.fromCharCode(65 + i)}
+            </div>
+            <MathView content={optText} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+            {isCorrect && <CheckCircle2 size={20} color="#10b981" />}
+            {isWrong && <XCircle size={20} color="#ef4444" />}
+          </button>
+        );
+      })}
+    </div>
+  ) : q.type === 'fill_blank' ? (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {MATH_SYMBOLS.map((s) => (
+          <button key={s} onClick={() => {
+            if (showFeedback) return;
+            const next = [...(draft || [])];
+            next[focusedBlank] = (next[focusedBlank] || '') + s;
+            setDraft(next);
+          }} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
+        ))}
+        <button onClick={() => {
+          if (showFeedback) return;
+          const next = [...(draft || [])];
+          next[focusedBlank] = (next[focusedBlank] || '').slice(0, -1);
+          setDraft(next);
+        }} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
+      </div>
+      <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '18px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        {(q.blanks || []).map((b, i) => {
+          const borderColor = !showFeedback ? (focusedBlank === i ? '#6366f1' : '#e2e8f0') : (gradeQuestion(q, draft).perBlank?.[i] ? '#10b981' : '#ef4444');
+          return (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              {b.label && <div style={{ minWidth: '60px' }}><MathView content={b.label} style={{ fontWeight: 800, color: '#1e1b4b' }} /></div>}
+              <input
+                type="text" value={(draft || [])[i] || ''} readOnly={showFeedback} onFocus={() => setFocusedBlank(i)}
+                onChange={(e) => { const next = [...(draft || [])]; next[i] = e.target.value; setDraft(next); }}
+                style={{ flex: 1, padding: '12px 14px', borderRadius: '12px', border: `2px solid ${borderColor}`, fontWeight: 700, textAlign: 'center', fontFamily: '"KaTeX_Main", serif' }}
+              />
+              {showFeedback && !gradeQuestion(q, draft).perBlank?.[i] && (
+                <div style={{ fontSize: '0.75rem', color: '#166534', fontWeight: 800, background: '#f0fdf4', padding: '4px 8px', borderRadius: '8px' }}>
+                  <MathView content={String(b.answer || '')} style={{ display: 'inline' }} />
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  ) : (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {MATH_SYMBOLS.map((s) => (
+          <button key={s} onClick={() => !showFeedback && setDraft((draft || '') + s)} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
+        ))}
+        <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
+      </div>
+      <input
+        type="text" value={draft || ''} readOnly={showFeedback}
+        onChange={(e) => setDraft(e.target.value)}
+        placeholder="Type your answer…"
+        style={{ padding: '20px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}`, background: '#fff', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif' }}
+      />
+      {showFeedback && !lastRes?.correct && (
+        <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
+          Correct: <MathView content={String(q.answer)} style={{ display: 'inline' }} />
+        </div>
+      )}
+    </div>
+  );
+
+  const actionButton = !showFeedback ? (
+    <button onClick={submit} disabled={!canSubmit} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: !canSubmit ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: !canSubmit ? 'not-allowed' : 'pointer' }}>
+      Submit Answer
+    </button>
+  ) : (
+    <button onClick={advance} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+      {idx + 1 >= total ? 'Finish round' : 'Next question'} <ArrowRight size={18} />
+    </button>
+  );
+
+  const canvasPanel = (
+    <div style={{
+      borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0',
+      height: '100%', minHeight: isWide ? '100%' : 480,
+    }}>
+      <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
+    </div>
+  );
+
+  // Wide layout: question on left, canvas on right (side by side)
+  if (isWide && showCanvas) {
+    return (
+      <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+        {/* Left: question + answer + button */}
+        <div className="app-panel" style={{ padding: '28px', borderRadius: '28px', display: 'flex', flexDirection: 'column', gap: '16px', flex: '0 0 50%', minWidth: 0 }}>
+          {header}
+          {progressBar}
+          {questionCard}
+          {answerArea}
+          {actionButton}
+        </div>
+        {/* Right: canvas */}
+        <div style={{ flex: 1, minWidth: 0, minHeight: 600, display: 'flex', flexDirection: 'column' }}>
+          {canvasPanel}
+        </div>
+      </div>
+    );
+  }
+
+  // Narrow layout: stacked
   return (
     <div className="app-panel" style={{ padding: '28px', borderRadius: '28px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      {/* Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Exam Prep</div>
-          <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {idx + 1} of {total}</div>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <button
-            onClick={() => onReport?.(q)}
-            title="Report a problem with this question"
-            style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
-          >
-            <Flag size={16} />
-          </button>
-          <button
-            onClick={() => setShowCanvas(v => !v)}
-            title="Toggle working out pad"
-            style={{ width: '36px', height: '36px', borderRadius: '12px', border: `1px solid ${showCanvas ? '#ddd6fe' : '#e2e8f0'}`, background: showCanvas ? '#f5f3ff' : '#fff', color: showCanvas ? '#7c3aed' : '#64748b', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
-          >
-            <PenLine size={16} />
-          </button>
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800,
-            color: timeLeft <= 10 ? '#e11d48' : timeLeft <= 30 ? '#d97706' : '#64748b',
-            background: timeLeft <= 10 ? '#fff1f2' : timeLeft <= 30 ? '#fffbeb' : '#fff',
-            padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
-            transition: 'background 0.3s, color 0.3s',
-            minWidth: '70px', justifyContent: 'center',
-          }}>
-            <Clock size={14} /> {timeLeft}s
-          </div>
-        </div>
-      </div>
-      <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
-        <div style={{ height: '100%', width: `${((idx + (showFeedback ? 1 : 0)) / total) * 100}%`, background: '#7c3aed', transition: 'width 0.3s' }} />
-      </div>
-
-      {/* Question card */}
-      <div style={{ background: '#fff', padding: '24px', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-          <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
-            {q.topicTitle || q.chapterTitle}
-          </span>
-          {q.hint && (
-            <button onClick={() => setShowHint((v) => !v)} style={{ background: showHint ? '#fef3c7' : '#fff7ed', border: 'none', padding: '6px 12px', borderRadius: '10px', color: '#d97706', fontSize: '0.75rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
-              <Lightbulb size={14} /> {showHint ? 'Hide Hint' : 'Show Hint'}
-            </button>
-          )}
-        </div>
-        <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
-        <AnimatePresence>
-          {showHint && q.hint && (
-            <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} style={{ overflow: 'hidden' }}>
-              <div style={{ marginTop: '14px', padding: '14px', borderRadius: '14px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-                <MathView content={q.hint} style={{ color: '#92400e', fontSize: '0.9rem', fontWeight: 600 }} />
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-
-      {/* Answer area */}
-      {q.type === 'multiple_choice' ? (
-        <div style={{ display: 'grid', gap: '10px' }}>
-          {(q.options || []).map((opt, i) => {
-            const optText = typeof opt === 'string' ? opt : opt.text;
-            const selected = draft === i;
-            const isCorrect = showFeedback && i === correctMc;
-            const isWrong = showFeedback && selected && !isCorrect;
-            return (
-              <button
-                key={i}
-                onClick={() => !showFeedback && setDraft(i)}
-                disabled={showFeedback}
-                style={{ padding: '14px 22px', borderRadius: '100px', border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : selected ? '#6366f1' : 'transparent'}`, background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '14px', cursor: showFeedback ? 'default' : 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', textAlign: 'left' }}
-              >
-                <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrect ? '#10b981' : selected ? '#6366f1' : '#f1f5f9', color: isCorrect || selected ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
-                  {String.fromCharCode(65 + i)}
-                </div>
-                <MathView content={optText} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
-                {isCorrect && <CheckCircle2 size={20} color="#10b981" />}
-                {isWrong && <XCircle size={20} color="#ef4444" />}
-              </button>
-            );
-          })}
-        </div>
-      ) : q.type === 'fill_blank' ? (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {MATH_SYMBOLS.map((s) => (
-              <button key={s} onClick={() => {
-                if (showFeedback) return;
-                const next = [...(draft || [])];
-                next[focusedBlank] = (next[focusedBlank] || '') + s;
-                setDraft(next);
-              }} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
-            ))}
-            <button onClick={() => {
-              if (showFeedback) return;
-              const next = [...(draft || [])];
-              next[focusedBlank] = (next[focusedBlank] || '').slice(0, -1);
-              setDraft(next);
-            }} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
-          </div>
-          <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '18px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {(q.blanks || []).map((b, i) => {
-              const ok = showFeedback && (lastRes?.userAnswer || [])[i] != null && lastRes.userAnswer[i] === draft[i] ? gradeQuestion(q, draft).perBlank?.[i] : null;
-              const borderColor = !showFeedback ? (focusedBlank === i ? '#6366f1' : '#e2e8f0') : (gradeQuestion(q, draft).perBlank?.[i] ? '#10b981' : '#ef4444');
-              return (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  {b.label && <div style={{ minWidth: '60px' }}><MathView content={b.label} style={{ fontWeight: 800, color: '#1e1b4b' }} /></div>}
-                  <input
-                    type="text" value={(draft || [])[i] || ''} readOnly={showFeedback} onFocus={() => setFocusedBlank(i)}
-                    onChange={(e) => { const next = [...(draft || [])]; next[i] = e.target.value; setDraft(next); }}
-                    style={{ flex: 1, padding: '12px 14px', borderRadius: '12px', border: `2px solid ${borderColor}`, fontWeight: 700, textAlign: 'center', fontFamily: '"KaTeX_Main", serif' }}
-                  />
-                  {showFeedback && !gradeQuestion(q, draft).perBlank?.[i] && (
-                    <div style={{ fontSize: '0.75rem', color: '#166534', fontWeight: 800, background: '#f0fdf4', padding: '4px 8px', borderRadius: '8px' }}>
-                      <MathView content={String(b.answer || '')} style={{ display: 'inline' }} />
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      ) : (
-        // short_answer
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {MATH_SYMBOLS.map((s) => (
-              <button key={s} onClick={() => !showFeedback && setDraft((draft || '') + s)} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
-            ))}
-            <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
-          </div>
-          <input
-            type="text" value={draft || ''} readOnly={showFeedback}
-            onChange={(e) => setDraft(e.target.value)}
-            placeholder="Type your answer…"
-            style={{ padding: '20px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}`, background: '#fff', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif' }}
-          />
-          {showFeedback && !lastRes?.correct && (
-            <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
-              Correct: <MathView content={String(q.answer)} style={{ display: 'inline' }} />
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Action button — above canvas so layout shift doesn't cause ghost clicks */}
-      {!showFeedback ? (
-        <button onClick={submit} disabled={!canSubmit} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: !canSubmit ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: !canSubmit ? 'not-allowed' : 'pointer' }}>
-          Submit Answer
-        </button>
-      ) : (
-        <button onClick={advance} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-          {idx + 1 >= total ? 'Finish round' : 'Next question'} <ArrowRight size={18} />
-        </button>
-      )}
-
-      {/* Working out canvas */}
+      {header}
+      {progressBar}
+      {questionCard}
+      {answerArea}
+      {actionButton}
       <AnimatePresence>
         {showCanvas && (
           <motion.div
