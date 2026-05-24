@@ -1959,10 +1959,8 @@ const Curriculum = () => {
                                   <span className="sync-card-title">{entry.label}</span>
                                 </div>
                                 <div className="sync-card-actions">
-                                  {count
-                                    ? <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981' }}>✓ Done</span>
-                                    : <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
-                                  }
+                                  {count && <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981', marginRight: '8px' }}>✓ Done</span>}
+                                  <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
                                 </div>
                               </div>
                             );
