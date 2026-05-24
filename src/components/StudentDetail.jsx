@@ -1365,9 +1365,12 @@ const StudentDetail = ({ studentId, onBack }) => {
 
       // Step 3: Recreate daily assignment if needed
       if (isDailyReset) {
+        // Merge the current dailyPracticeConfig state so the reset always
+        // generates questions using the teacher's latest settings.
+        const profileForReset = { ...student, dailyPracticeConfig };
         await createDailyAssignment({
           uid: syncUid,
-          studentProfile: student,
+          studentProfile: profileForReset,
           dateKey: stat.id,
           questionCount: student?.dailyQuestionCount || stat.questionCount || stat.total || 10,
           generatedBy: "teacher-reset",
