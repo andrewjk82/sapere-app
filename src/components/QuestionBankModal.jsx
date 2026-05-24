@@ -741,20 +741,18 @@ const GeometryEditor = ({ graphData, onChange }) => {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         <button type="button" onClick={() => updateGeometry({ ...geometry, segments: [...(geometry.segments || []), { from: pointNames[0] || 'A', to: pointNames[1] || pointNames[0] || 'A' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add line</button>
         {(geometry.segments || []).map((seg, idx) => (
-          <div key={idx} style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
-            <select value={seg.from} onChange={(e) => updateSegment(idx, { from: e.target.value })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '90px' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
-            <select value={seg.to} onChange={(e) => updateSegment(idx, { to: e.target.value })} style={{ padding: '8px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '90px' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
+          <div key={idx} style={{ display: 'grid', gridTemplateColumns: '80px 80px auto auto 70px 80px auto', gap: '6px', alignItems: 'center' }}>
+            <select value={seg.from} onChange={(e) => updateSegment(idx, { from: e.target.value })} style={{ padding: '6px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '100%' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
+            <select value={seg.to} onChange={(e) => updateSegment(idx, { to: e.target.value })} style={{ padding: '6px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '100%' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
             <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', whiteSpace: 'nowrap' }}><input type="checkbox" checked={!!seg.dashed} onChange={(e) => updateSegment(idx, { dashed: e.target.checked || undefined })} /> Dashed</label>
             <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', whiteSpace: 'nowrap' }}><input type="checkbox" checked={!!seg.arrow} onChange={(e) => updateSegment(idx, { arrow: e.target.checked || undefined })} /> Arrow</label>
-            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              Ticks
-              <input type="number" min="0" max="5" value={seg.ticks || 0} onChange={(e) => updateSegment(idx, { ticks: Number(e.target.value) || undefined })} style={{ width: '40px', padding: '4px 6px', borderRadius: '6px', border: '1px solid #ddd6fe', fontWeight: 700, textAlign: 'center' }} title="등변 표시 (0=없음)" />
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', display: 'flex', alignItems: 'center', gap: '3px' }}>
+              Ticks<input type="number" min="0" max="5" value={seg.ticks || 0} onChange={(e) => updateSegment(idx, { ticks: Number(e.target.value) || undefined })} style={{ width: '36px', padding: '4px', borderRadius: '6px', border: '1px solid #ddd6fe', fontWeight: 700, textAlign: 'center' }} />
             </label>
-            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              ∥ Marks
-              <input type="number" min="0" max="5" value={seg.marks || 0} onChange={(e) => updateSegment(idx, { marks: Number(e.target.value) || undefined })} style={{ width: '40px', padding: '4px 6px', borderRadius: '6px', border: '1px solid #ddd6fe', fontWeight: 700, textAlign: 'center' }} title="평행 표시 (0=없음)" />
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', display: 'flex', alignItems: 'center', gap: '3px' }}>
+              ∥ Marks<input type="number" min="0" max="5" value={seg.marks || 0} onChange={(e) => updateSegment(idx, { marks: Number(e.target.value) || undefined })} style={{ width: '36px', padding: '4px', borderRadius: '6px', border: '1px solid #ddd6fe', fontWeight: 700, textAlign: 'center' }} />
             </label>
-            <button type="button" onClick={() => updateGeometry({ ...geometry, segments: (geometry.segments || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '8px', cursor: 'pointer' }}>Remove</button>
+            <button type="button" onClick={() => updateGeometry({ ...geometry, segments: (geometry.segments || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '6px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>Remove</button>
           </div>
         ))}
       </div>
