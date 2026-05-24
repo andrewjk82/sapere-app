@@ -45,6 +45,7 @@ import { Y8_CH12A_QUESTIONS } from '../constants/seedYear8Ch12Questions.js';
 import { Y8_CH13A_QUESTIONS } from '../constants/seedYear8Ch13Questions.js';
 import { Y8_CH14A_QUESTIONS } from '../constants/seedYear8Ch14Questions.js';
 import { Y8_CH15A_QUESTIONS } from '../constants/seedYear8Ch15Questions.js';
+import { Y8_CH16A_QUESTIONS } from '../constants/seedYear8Ch16Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -83,6 +84,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-13', chapterTitle: 'Chapter 13: Congruence and special quadrilaterals', topicId: 'y8-13a', topicCode: '13A', topicTitle: 'Parallelograms and their properties', year: 'Year 8', seed: Y8_CH13A_QUESTIONS, label: 'Y8 Ch13 · Congruence and special quadrilaterals' },
   { chapterId: 'y8-14', chapterTitle: 'Chapter 14: Circles', topicId: 'y8-14a', topicCode: '14A', topicTitle: 'Features of the circle', year: 'Year 8', seed: Y8_CH14A_QUESTIONS, label: 'Y8 Ch14 · Circles' },
   { chapterId: 'y8-15', chapterTitle: 'Chapter 15: Area, volume and time', topicId: 'y8-15a', topicCode: '15A', topicTitle: 'Review of area and length', year: 'Year 8', seed: Y8_CH15A_QUESTIONS, label: 'Y8 Ch15 · Area, volume and time' },
+  { chapterId: 'y8-16', chapterTitle: 'Chapter 16: Probability', topicId: 'y8-16a', topicCode: '16A', topicTitle: 'An introduction to probability', year: 'Year 8', seed: Y8_CH16A_QUESTIONS, label: 'Y8 Ch16 · Probability' },
 ];
 import {
   fetchHscResultsIncremental,
