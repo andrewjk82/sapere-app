@@ -367,7 +367,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     return (
       <div style={{
         display: 'flex', gap: '16px', alignItems: 'stretch',
-        height: 'calc(100vh - 120px)', // fill viewport minus page chrome
+        height: 'calc(100vh - 80px)', // fill viewport minus page chrome
       }}>
         {/* Left: question + answer + button */}
         <div className="app-panel" style={{
@@ -816,8 +816,8 @@ const ExamPrep = ({ profile }) => {
   };
 
   return (
-    <div className="app-page" style={{ padding: 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px' }}>
-      <div style={{ maxWidth: 'min(1080px, 100%)', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <div className="app-page" style={{ padding: stage === 'quiz' ? 'clamp(12px, 2vw, 20px)' : 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px' }}>
+      <div style={{ maxWidth: stage === 'quiz' ? '100%' : 'min(1080px, 100%)', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {stage === 'setup' && (
           <SetupDashboard
             stats={stats}
