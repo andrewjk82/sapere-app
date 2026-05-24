@@ -1508,7 +1508,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y8-15',
       title: 'Chapter 15: Areas, volumes and time',
-      modules: 8,
+      modules: 9,
       topics: [
         { id: 'y8-15a', code: '15A', title: 'Review of area and length' },
         { id: 'y8-15b', code: '15B', title: 'Areas of special quadrilaterals' },
@@ -1517,7 +1517,8 @@ export const CURRICULUM_DATA = {
         { id: 'y8-15e', code: '15E', title: 'Volume of a cylinder' },
         { id: 'y8-15f', code: '15F', title: 'Surface area of a prism' },
         { id: 'y8-15g', code: '15G', title: 'Conversion of units' },
-        { id: 'y8-15h', code: '15H', title: 'Time' }
+        { id: 'y8-15h', code: '15H', title: 'Time' },
+        { id: 'y8-15i', code: '15I', title: 'Review' }
       ]
     },
     {
