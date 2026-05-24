@@ -230,28 +230,30 @@ const slimQuestion = (data) => ({
 const shuffle = (items) => [...items].sort(() => Math.random() - 0.5);
 
 const buildDailyTargets = (studentProfile = {}) => {
-  // ── Daily Practice is driven ONLY by the teacher's "Daily Practice Settings"
-  // (dailyPracticeConfig: years + chapters) found under Challenge tab.
-  // The Curriculum tab's per-chapter assignment (profile.assignedChapters /
-  // assignedTopics) is for tracking student progress only and is NOT used to
-  // generate daily practice questions.
   const config = studentProfile.dailyPracticeConfig || {};
   const hasConfigYears = Array.isArray(config.years) && config.years.length > 0;
   const hasConfigChapters = Array.isArray(config.chapters) && config.chapters.length > 0;
+
+  // Curriculum-tab chapter assignment — used as fallback when no dailyPracticeConfig is set.
+  const curriculumChapters = Array.isArray(studentProfile.assignedChapters) && studentProfile.assignedChapters.length > 0
+    ? studentProfile.assignedChapters
+    : [];
+  const hasCurriculumChapters = curriculumChapters.length > 0;
 
   let assignedYears;
   if (hasConfigYears) {
     assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
   } else if (hasConfigChapters) {
-    // Chapters were chosen but no year was explicitly ticked — derive the
-    // year(s) from the selected chapters so the chapters validate correctly.
     assignedYears = [...new Set(
       config.chapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
     )].map(normalizeYearLabel).filter(Boolean);
+  } else if (hasCurriculumChapters) {
+    // No dailyPracticeConfig set — fall back to curriculum-tab chapter assignment.
+    assignedYears = [...new Set(
+      curriculumChapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
+    )].map(normalizeYearLabel).filter(Boolean);
   }
   if (!assignedYears || assignedYears.length === 0) {
-    // Fallback when no Daily Practice Settings are configured: use the
-    // student's enrolled year with all chapters.
     const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
     assignedYears = (Array.isArray(rawYear)
       ? rawYear
@@ -260,13 +262,40 @@ const buildDailyTargets = (studentProfile = {}) => {
   }
   if (assignedYears.length === 0) assignedYears = [DEFAULT_YEAR];
 
-  // Empty = all chapters of the selected year(s).
-  let assignedChapters = hasConfigChapters ? config.chapters.slice() : [];
+  // Priority: dailyPracticeConfig.chapters → curriculum assignedChapters → all chapters of year.
+  let assignedChapters = hasConfigChapters
+    ? config.chapters.slice()
+    : hasCurriculumChapters
+      ? curriculumChapters.slice()
+      : [];
 
   const assignedTopics = [];
-  const assignedCourses = Array.isArray(studentProfile.assignedCourse)
-    ? studentProfile.assignedCourse
-    : [studentProfile.assignedCourse || "Advanced"];
+
+  // Derive courses: include all courses that contain the assigned chapters.
+  const assignedCourses = (() => {
+    const profileCourses = Array.isArray(studentProfile.assignedCourse)
+      ? studentProfile.assignedCourse
+      : [studentProfile.assignedCourse || "Advanced"];
+    if (assignedChapters.length === 0) return profileCourses;
+    // Find which courses in curriculum contain these chapter IDs.
+    const chapterSet = new Set(assignedChapters);
+    const found = new Set();
+    assignedYears.forEach((yr) => {
+      const yearData = CURRICULUM_DATA[yr];
+      if (!yearData) return;
+      if (Array.isArray(yearData)) {
+        yearData.forEach((ch) => { if (chapterSet.has(ch.id)) found.add("Standard"); });
+      } else {
+        Object.entries(yearData).forEach(([course, chapters]) => {
+          if (Array.isArray(chapters)) {
+            chapters.forEach((ch) => { if (chapterSet.has(ch.id)) found.add(course); });
+          }
+        });
+      }
+    });
+    return found.size > 0 ? [...found] : profileCourses;
+  })();
+
   const validChapterIds = getValidChapterIdsForYears(assignedYears, assignedCourses);
   assignedChapters = assignedChapters.filter((chapterId) => validChapterIds.has(chapterId));
 
