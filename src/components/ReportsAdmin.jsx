@@ -132,16 +132,20 @@ const ReportsAdmin = () => {
     if (!question?.id) return;
     if (!window.confirm(`Delete "${question.question || question.title || 'this question'}" from the Question Bank? This cannot be undone.`)) return;
     try {
-      // Find all reports linked to this question (match on questionId OR questionData.id)
+      // Find all open reports linked to this question (match on questionId OR questionData.id)
       const linkedReports = reports.filter(r =>
         r.status !== 'resolved' && (
           (r.questionId && r.questionId === question.id) ||
           (r.questionData?.id && r.questionData.id === question.id)
         )
       );
+      // Delete question and restore credit for all linked reports concurrently.
+      // Credit restore is best-effort — failures don't block the delete.
       await Promise.all([
         updateDoc(doc(db, 'questions', question.id), { isActive: false }),
-        ...linkedReports.map(r => updateDoc(doc(db, 'reports', r.id), { status: 'resolved', resolvedAt: serverTimestamp() })),
+        ...linkedReports.map(r => restoreCreditForReport(r).catch(() =>
+          updateDoc(doc(db, 'reports', r.id), { status: 'resolved', resolvedAt: serverTimestamp() })
+        )),
       ]);
       setPreviewReport(null);
       setPreviewQuestion(null);
@@ -242,30 +246,19 @@ const ReportsAdmin = () => {
     return attempts.find(a => a.results[a.resultIndex]?.correct !== true) || attempts[0] || null;
   };
 
-  const handleRestoreCredit = async (report) => {
-    if (processingId) return;
-    if (report.creditRestored) {
-      alert('Credit has already been restored for this report.');
-      return;
-    }
+  // Core credit-restore logic — no UI, returns true on success, false if attempt not found,
+  // throws on unexpected errors. Used both by the manual Restore Credit button and auto-restore on delete.
+  const restoreCreditForReport = async (report) => {
+    if (report.creditRestored) return false;
+    const attempt = await findReportAttempt(report);
+    if (!attempt) return false;
 
-    const confirmed = window.confirm('Restore the removed score for this reported answer and mark the report resolved?');
-    if (!confirmed) return;
+    const { root, statCollection, statId, statRef, detailRef, resultIndex } = attempt;
+    const userRef = doc(db, root, report.studentId);
+    const reportRef = doc(db, 'reports', report.id);
+    let leaderboardUpdate = null;
 
-    try {
-      setProcessingId(report.id);
-      const attempt = await findReportAttempt(report);
-      if (!attempt) {
-        alert('Could not find the matching completed attempt for this report.');
-        return;
-      }
-
-      const { root, statCollection, statId, statRef, detailRef, resultIndex } = attempt;
-      const userRef = doc(db, root, report.studentId);
-      const reportRef = doc(db, 'reports', report.id);
-      let leaderboardUpdate = null;
-
-      await runTransaction(db, async (transaction) => {
+    await runTransaction(db, async (transaction) => {
         const statSnap = await transaction.get(statRef);
         const detailSnap = await transaction.get(detailRef);
         const userSnap = await transaction.get(userRef);
@@ -331,10 +324,7 @@ const ReportsAdmin = () => {
         if (userSnap.exists()) {
           const userData = userSnap.data();
           const newTotalXP = (Number(userData.totalXP) || 0) + xpToRestore;
-          const updatedUserData = {
-            ...userData,
-            totalXP: newTotalXP,
-          };
+          const updatedUserData = { ...userData, totalXP: newTotalXP };
           transaction.update(userRef, {
             totalXP: newTotalXP,
             points: increment(actualPointsRestored * 10),
@@ -370,15 +360,35 @@ const ReportsAdmin = () => {
           matchedStatCollection: statCollection,
           matchedStatId: statId,
         });
-      });
+    });
 
-      if (leaderboardUpdate) {
-        const { root, studentId, data } = leaderboardUpdate;
-        if (root === 'students') {
-          upsertManualStudentLeaderboard(studentId, data).catch(() => {});
-        } else {
-          upsertRegisteredUserLeaderboard(studentId, data).catch(() => {});
-        }
+    if (leaderboardUpdate) {
+      const { root, studentId, data } = leaderboardUpdate;
+      if (root === 'students') {
+        upsertManualStudentLeaderboard(studentId, data).catch(() => {});
+      } else {
+        upsertRegisteredUserLeaderboard(studentId, data).catch(() => {});
+      }
+    }
+    return true;
+  };
+
+  const handleRestoreCredit = async (report) => {
+    if (processingId) return;
+    if (report.creditRestored) {
+      alert('Credit has already been restored for this report.');
+      return;
+    }
+
+    const confirmed = window.confirm('Restore the removed score for this reported answer and mark the report resolved?');
+    if (!confirmed) return;
+
+    try {
+      setProcessingId(report.id);
+      const restored = await restoreCreditForReport(report);
+      if (!restored) {
+        alert('Could not find the matching completed attempt for this report.');
+        return;
       }
       setPreviewReport(null);
       setPreviewQuestion(null);
@@ -392,13 +402,12 @@ const ReportsAdmin = () => {
         'result-not-found': 'This answer could not be located within the matched attempt. The detail snapshot may be missing.',
         'score-already-full': "This attempt's score is already full — there is nothing left to restore.",
       };
-      const message = KNOWN[code]
-        || `Failed to restore credit (${code}). Please check the matching attempt and try again.`;
-      alert(message);
+      alert(KNOWN[code] || `Failed to restore credit (${code}). Please check the matching attempt and try again.`);
     } finally {
       setProcessingId(null);
     }
   };
+
 
   const handleDeleteAllReports = async () => {
     if (reports.length === 0 || isDeletingAll) return;
