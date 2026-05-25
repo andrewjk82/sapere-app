@@ -1902,7 +1902,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                           />
                           {step.workingOut.trim() && (
                             <div style={{ marginTop: '8px', padding: '10px 14px', background: '#fff', borderRadius: '10px', border: '1px solid #ede9fe' }}>
-                              <MathPreview content={step.workingOut} />
+                              <MathPreview content={/\$/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
                             </div>
                           )}
                         </div>
