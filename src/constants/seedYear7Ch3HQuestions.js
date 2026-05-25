@@ -2044,4 +2044,4 @@ export const Y7_CH3H_QUESTIONS = [
       }
     }
   }
-];\n
+];
