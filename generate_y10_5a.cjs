@@ -225,7 +225,7 @@ function generateExpanded(qId, varName, eqType, A, B, C, a, b, c, d, multiplier)
         });
     } else if (eqType === 'shifted_x') {
         // e.g. x^2 = 8x
-        qText = `Solve the equation:\\n\\n$$${formatPolynomial([A, 0, C], varName)} = ${formatPolynomial([-B], varName)}$$`;
+        qText = `Solve the equation:\\n\\n$$${formatPolynomial([A, 0, C], varName)} = ${formatPolynomial([-B, 0], varName)}$$`;
         steps.push({
             explanation: "Rearrange the equation so one side is zero.",
             workingOut: `${formatPolynomial([A, B, C], varName)} = 0`

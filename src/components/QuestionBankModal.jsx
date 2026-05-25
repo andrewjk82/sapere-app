@@ -55,8 +55,8 @@ const sanitizeGeometry = (geometry) => {
     result.shadedPolygons = result.shadedPolygons
       .map((sp) => {
         const rings = Array.isArray(sp.polygons)
-          ? sp.polygons.filter((r) => Array.isArray(r) && r.length > 0)
-          : Array.isArray(sp.points) && sp.points.length > 0 ? [sp.points] : [];
+          ? sp.polygons.map(r => Array.isArray(r) ? r.join(',') : r).filter(r => typeof r === 'string' && r.length > 0)
+          : Array.isArray(sp.points) && sp.points.length > 0 ? [sp.points.join(',')] : [];
         const { points: _p, ...rest } = sp;
         return { ...rest, polygons: rings };
       })
@@ -588,7 +588,8 @@ const GeometryEditor = ({ graphData, onChange }) => {
   const faceKey = (face) => [...face].sort().join(',');
   const shadedMap = {};
   (geometry.shadedPolygons || []).forEach((sp) => {
-    const ring = Array.isArray(sp.polygons) ? sp.polygons[0] : sp.points;
+    let ring = Array.isArray(sp.polygons) ? sp.polygons[0] : sp.points;
+    if (typeof ring === 'string') ring = ring.split(',');
     if (!Array.isArray(ring)) return;
     const k = [...ring].sort().join(',');
     shadedMap[k] = sp.opacity >= 0.45 ? 2 : 1;
@@ -618,7 +619,8 @@ const GeometryEditor = ({ graphData, onChange }) => {
     const current = shadedMap[k] || 0;
     const next = (current + 1) % 3;
     const existing = (geometry.shadedPolygons || []).filter((sp) => {
-      const ring = Array.isArray(sp.polygons) ? sp.polygons[0] : sp.points;
+      let ring = Array.isArray(sp.polygons) ? sp.polygons[0] : sp.points;
+      if (typeof ring === 'string') ring = ring.split(',');
       if (!Array.isArray(ring)) return true;
       return [...ring].sort().join(',') !== k;
     });
@@ -633,7 +635,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
       const polygons = innerRings.length > 0 ? [face, ...innerRings] : [face];
       updateGeometry({
         ...geometry,
-        shadedPolygons: [...existing, { polygons, color: level.color, opacity: level.opacity }],
+        shadedPolygons: [...existing, { polygons: polygons.map(p => p.join(',')), color: level.color, opacity: level.opacity }],
       });
     }
   };

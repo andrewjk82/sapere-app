@@ -94,7 +94,9 @@ const GeometryFigure = ({
   // Each entry in shadedPolygons can contain multiple polygon rings.
   // Using SVG evenodd fill rule cuts inner rings out (donut effect).
   shadedPolygons.forEach((sp) => {
-    const rings = Array.isArray(sp.polygons) ? sp.polygons : [sp.points].filter(Boolean);
+    const rings = Array.isArray(sp.polygons) 
+      ? sp.polygons.map(r => typeof r === 'string' ? r.split(',') : r) 
+      : [typeof sp.points === 'string' ? sp.points.split(',') : sp.points].filter(Boolean);
     if (rings.length === 0) return;
     const d = rings.map((ring) => {
       if (!Array.isArray(ring) || ring.length < 2) return '';
