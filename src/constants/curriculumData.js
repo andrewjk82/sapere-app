@@ -1317,6 +1317,23 @@ export const CURRICULUM_DATA = {
         { id: 'y7-22g', code: '22G', title: 'Keeping count with Venn diagrams' },
         { id: 'y7-22h', code: '22H', title: 'Problem-solving using Venn diagrams' }
       ]
+    },
+    {
+      id: 'y7-23',
+      title: 'Algebra',
+      modules: 10,
+      topics: [
+        { id: 'y7-23a', code: '23A', title: 'Algebraic expressions', page: 80 },
+        { id: 'y7-23b', code: '23B', title: 'Like terms and unlike terms', page: 81 },
+        { id: 'y7-23c', code: '23C', title: 'Simplifying algebraic expressions', page: 82 },
+        { id: 'y7-23d', code: '23D', title: 'Collecting like terms', page: 83 },
+        { id: 'y7-23e', code: '23E', title: 'Algebraic abbreviations', page: 84 },
+        { id: 'y7-23f', code: '23F', title: 'Substitution', page: 85 },
+        { id: 'y7-23g', code: '23G', title: 'Index notation', page: 86 },
+        { id: 'y7-23h', code: '23H', title: 'Multiplying, dividing and expanding', page: 87 },
+        { id: 'y7-23i', code: '23I', title: 'Applying algebra', page: 88 },
+        { id: 'y7-23j', code: '23J', title: 'Problem solving with algebra', page: 89 }
+      ]
     }
   ],
   'Year 8': [
