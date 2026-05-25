@@ -1283,6 +1283,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         isActive: false,
         updatedAt: serverTimestamp(),
       });
+      // Resolve all open reports linked to this question
+      const reportsSnap = await getDocs(query(collection(db, 'reports'), where('questionId', '==', id), where('status', '==', 'open')));
+      await Promise.all(reportsSnap.docs.map(r => updateDoc(r.ref, { status: 'resolved', resolvedAt: serverTimestamp() })));
+
       const nextQuestions = questions.filter(q => q.id !== id);
       setQuestions(nextQuestions);
       const cached = questionBankSessionCache.get(`questions:${chapterId}`);

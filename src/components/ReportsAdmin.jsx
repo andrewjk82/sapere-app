@@ -132,7 +132,12 @@ const ReportsAdmin = () => {
     if (!question?.id) return;
     if (!window.confirm(`Delete "${question.question || question.title || 'this question'}" from the Question Bank? This cannot be undone.`)) return;
     try {
-      await updateDoc(doc(db, 'questions', question.id), { isActive: false });
+      await Promise.all([
+        updateDoc(doc(db, 'questions', question.id), { isActive: false }),
+        previewReport?.id
+          ? updateDoc(doc(db, 'reports', previewReport.id), { status: 'resolved', resolvedAt: serverTimestamp() })
+          : Promise.resolve(),
+      ]);
       setPreviewReport(null);
       setPreviewQuestion(null);
     } catch (err) {
