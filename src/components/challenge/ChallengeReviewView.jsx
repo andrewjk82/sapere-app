@@ -388,8 +388,21 @@ const ChallengeReviewView = ({
           )}
 
           {/* Worked solution — revealed one step at a time. */}
-          {(q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
-            <WorkedSolutionSteps key={q.id || q.question || idx} question={q} graphData={q.graphData} />
+          {q.subQuestions?.length > 0 ? (
+            q.subQuestions.map((sq, sqIdx) => (
+              (sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0)) && (
+                <div key={sqIdx}>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
+                    Part ({String.fromCharCode(97 + sqIdx)}) — Worked Solution
+                  </div>
+                  <WorkedSolutionSteps question={sq} graphData={q.graphData} />
+                </div>
+              )
+            ))
+          ) : (
+            (q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
+              <WorkedSolutionSteps key={q.id || q.question || idx} question={q} graphData={q.graphData} />
+            )
           )}
 
           {/* Navigation footer */}

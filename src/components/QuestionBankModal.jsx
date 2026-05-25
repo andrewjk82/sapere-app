@@ -1303,6 +1303,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         subQuestions: (q.subQuestions || []).map(sq => ({
           ...sq,
           solution: sq.solution || '',
+          solutionSteps: (sq.solutionSteps || []).map(s =>
+            typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
+          ),
           options: sq.options || [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }]
         })),
         requiresManualGrading: q.requiresManualGrading || false,
@@ -1431,6 +1434,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             : [],
           answer: sq.type === 'multiple_choice' ? (sq.answerIdx?.toString() || '') : (sq.answer || ''),
           solution: sq.solution || '',
+          solutionSteps: (sq.solutionSteps || []).filter(s => s.explanation.trim() || s.workingOut.trim()),
           hint: sq.hint || ''
         })),
         requiresManualGrading: formData.requiresManualGrading || false,
@@ -1962,7 +1966,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 </div>
               </div>
 
-              <div>
+              {formData.subQuestions.length === 0 && <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                   <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Step-by-step Solution</label>
                   <button
@@ -2030,7 +2034,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>}
 
       <div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
@@ -2038,14 +2042,15 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           <button 
             onClick={() => setFormData(prev => ({
               ...prev,
-              subQuestions: [...prev.subQuestions, { 
-                id: Date.now().toString(), 
-                question: '', 
-                type: 'short_answer', 
-                options: [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }], 
+              subQuestions: [...prev.subQuestions, {
+                id: Date.now().toString(),
+                question: '',
+                type: 'short_answer',
+                options: [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }],
                 answer: '',
                 answerIdx: null,
                 solution: '',
+                solutionSteps: [],
                 hint: ''
               }]
             }))}
@@ -2170,28 +2175,85 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   </div>
                 )}
 
-                {/* Sub-question Worked Solution */}
+                {/* Sub-question Step-by-step Solution */}
                 <div style={{ marginTop: '8px' }}>
-                  <label style={{ fontSize: '0.7rem', fontWeight: 800, color: '#64748b', display: 'block', marginBottom: '8px', textTransform: 'uppercase' }}>Worked Solution (Optional)</label>
-                  <textarea 
-                    rows={2} 
-                    value={sq.solution || ''} 
-                    onChange={e => {
-                      const newSub = [...formData.subQuestions];
-                      newSub[sIdx].solution = e.target.value;
-                      setFormData({...formData, subQuestions: newSub});
-                    }} 
-                    style={{ width: '100%', padding: '12px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', color: '#4338ca', background: '#f5f7ff', marginBottom: '8px' }} 
-                    placeholder="Explain how to solve this part..." 
-                  />
-                  {sq.solution && (
-                    <div style={{ padding: '10px 14px', background: '#f5f7ff', borderRadius: '12px', border: '1px solid #e0e7ff' }}>
-                       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#6366f1', marginBottom: '4px' }}>
-                          <Lightbulb size={14} /> <span style={{ fontSize: '0.65rem', fontWeight: 900 }}>SOLUTION PREVIEW</span>
-                       </div>
-                       <MathView content={sq.solution} />
-                    </div>
-                  )}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <label style={{ fontSize: '0.7rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Step-by-step Solution</label>
+                    <button
+                      onClick={() => {
+                        const newSub = [...formData.subQuestions];
+                        newSub[sIdx].solutionSteps = [...(newSub[sIdx].solutionSteps || []), { explanation: '', workingOut: '' }];
+                        setFormData({ ...formData, subQuestions: newSub });
+                      }}
+                      style={{ padding: '5px 10px', fontSize: '0.72rem', borderRadius: '8px', background: '#f5f3ff', color: '#6366f1', border: '1px solid #ddd6fe', cursor: 'pointer', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
+                    >
+                      <Plus size={13} /> Add Step
+                    </button>
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    {(sq.solutionSteps || []).map((step, stIdx) => (
+                      <div key={stIdx} style={{ padding: '16px', borderRadius: '14px', border: '2px solid #ede9fe', background: '#faf5ff', position: 'relative' }}>
+                        <button
+                          onClick={() => {
+                            const newSub = [...formData.subQuestions];
+                            newSub[sIdx].solutionSteps = (newSub[sIdx].solutionSteps || []).filter((_, i) => i !== stIdx);
+                            setFormData({ ...formData, subQuestions: newSub });
+                          }}
+                          style={{ position: 'absolute', top: '10px', right: '10px', border: 'none', background: '#fff1f2', color: '#f43f5e', padding: '4px', borderRadius: '6px', cursor: 'pointer' }}
+                        >
+                          <Trash2 size={12} />
+                        </button>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+                          <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.78rem', flexShrink: 0 }}>{stIdx + 1}</div>
+                          <span style={{ fontWeight: 800, color: '#7c3aed', fontSize: '0.8rem' }}>Step {stIdx + 1}</span>
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                          <div>
+                            <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Explanation</label>
+                            <textarea
+                              rows={2}
+                              value={step.explanation}
+                              onChange={e => {
+                                const newSub = [...formData.subQuestions];
+                                const steps = [...(newSub[sIdx].solutionSteps || [])];
+                                steps[stIdx] = { ...steps[stIdx], explanation: e.target.value };
+                                newSub[sIdx].solutionSteps = steps;
+                                setFormData({ ...formData, subQuestions: newSub });
+                              }}
+                              style={{ width: '100%', padding: '10px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', outline: 'none', fontWeight: 600, fontSize: '0.88rem', resize: 'vertical', background: '#fff' }}
+                              placeholder="Describe this step..."
+                            />
+                          </div>
+                          <div>
+                            <label style={{ display: 'block', marginBottom: '5px', fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Working Out (LaTeX)</label>
+                            <textarea
+                              rows={2}
+                              value={step.workingOut}
+                              onChange={e => {
+                                const newSub = [...formData.subQuestions];
+                                const steps = [...(newSub[sIdx].solutionSteps || [])];
+                                steps[stIdx] = { ...steps[stIdx], workingOut: e.target.value };
+                                newSub[sIdx].solutionSteps = steps;
+                                setFormData({ ...formData, subQuestions: newSub });
+                              }}
+                              style={{ width: '100%', padding: '10px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', outline: 'none', fontWeight: 600, fontSize: '0.88rem', resize: 'vertical', background: '#fff', fontFamily: 'monospace' }}
+                              placeholder="e.g. $x = 5$"
+                            />
+                            {step.workingOut.trim() && (
+                              <div style={{ marginTop: '6px', padding: '8px 12px', background: '#fff', borderRadius: '8px', border: '1px solid #ede9fe' }}>
+                                <MathPreview content={/\$/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                    {(sq.solutionSteps || []).length === 0 && (
+                      <div style={{ textAlign: 'center', padding: '16px', borderRadius: '12px', border: '2px dashed #e2e8f0', color: '#94a3b8', fontSize: '0.8rem', fontWeight: 600 }}>
+                        No steps yet. Click "Add Step" to begin.
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
