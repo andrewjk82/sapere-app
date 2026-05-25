@@ -78,6 +78,7 @@ import { Y7_CH23F_QUESTIONS } from '../constants/seedYear7Ch23FQuestions.js';
 import { Y7_CH23H_QUESTIONS } from '../constants/seedYear7Ch23HQuestions.js';
 import { Y7_CH23I_QUESTIONS } from '../constants/seedYear7Ch23IQuestions.js';
 import { Y7_CH23J_QUESTIONS } from '../constants/seedYear7Ch23JQuestions.js';
+import { Y10_CH5A_QUESTIONS } from '../constants/seedYear10Ch5AQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -149,6 +150,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23h', topicCode: '23H', topicTitle: 'Multiplying, dividing and expanding', year: 'Year 7', seed: Y7_CH23H_QUESTIONS, label: 'Y7 Ch23 · Multiplying, dividing and expanding' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23i', topicCode: '23I', topicTitle: 'Applying algebra', year: 'Year 7', seed: Y7_CH23I_QUESTIONS, label: 'Y7 Ch23 · Applying algebra' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23j', topicCode: '23J', topicTitle: 'Problem solving with algebra', year: 'Year 7', seed: Y7_CH23J_QUESTIONS, label: 'Y7 Ch23 · Problem solving with algebra' },
+  { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5a', topicCode: '5A', topicTitle: 'Solution of quadratic equations', year: 'Year 10', seed: Y10_CH5A_QUESTIONS, label: 'Y10 Ch5 · Solution of quadratic equations' },
 ];
 import {
   fetchHscResultsIncremental,
