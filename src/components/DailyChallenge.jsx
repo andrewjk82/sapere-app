@@ -20,6 +20,7 @@ import {
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
+  updateSeenQuestions,
 } from '../services/dailyAssignmentService';
 
 // Sub-components
@@ -689,6 +690,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           date: new Date().toLocaleDateString('en-CA'), // Explicit local date for stat lookup
           questionId: currentQ?.id || null,
           questionText: currentQ?.question || currentQ?.text || '',
+          questionImage: currentQ?.questionImage || null,
+          questionType: currentQ?.type || 'short_answer',
+          options: Array.isArray(currentQ?.options) ? currentQ.options.map(opt =>
+            typeof opt === 'string' ? opt : (opt?.text || String(opt))
+          ) : [],
+          graphData: currentQ?.graphData || null,
           answerImage: canvasDataUrl || null,
           // Filter out empty/falsy pages so the grading view doesn't render blank image slots
           answerImages: (canvasPageImages || []).filter(url => url && url.length > 100),
@@ -1156,6 +1163,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // --- Local State Updates ---
         pruneOldChallengeStats(user.uid, challengeType === 'calc' ? 'calc_stats' : 'daily_stats').catch(() => {});
 
+        // Record seen manual question IDs so tomorrow's assignment avoids repeats.
+        const seenIds = questions.map(q => q?.id).filter(Boolean);
+        if (seenIds.length > 0) updateSeenQuestions(user.uid, seenIds).catch(() => {});
+
         setChapterProgress(prev => ({
           ...(prev || {}),
           difficultyMix: nextDifficultyMix,
@@ -1573,7 +1584,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   userAnswers={userAnswers}
                   showHint={showHint}
                   setShowHint={setShowHint}
-                  setIsReporting={setIsReporting}
                   isSubmittingCanvas={isSubmittingCanvas}
                   isMobile={isMobile}
                   showSplitScreen={showSplitScreen}

@@ -8,6 +8,7 @@ import QuestionBankModal from './QuestionBankModal';
 import MathView from './MathView';
 import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
+import { parseSolutionSteps } from '../utils/solutionSteps';
 
 const ReportsAdmin = () => {
   const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
@@ -126,10 +127,30 @@ const ReportsAdmin = () => {
     }
   };
 
+  const handleDeletePreviewQuestion = async () => {
+    const question = previewQuestion || previewReport?.questionData;
+    if (!question?.id) return;
+    if (!window.confirm(`Delete "${question.question || question.title || 'this question'}" from the Question Bank? This cannot be undone.`)) return;
+    try {
+      await updateDoc(doc(db, 'questions', question.id), { isActive: false });
+      setPreviewReport(null);
+      setPreviewQuestion(null);
+    } catch (err) {
+      console.error(err);
+      alert('Failed to delete question.');
+    }
+  };
+
   const handleFixPreviewQuestion = () => {
     const question = previewQuestion || previewReport?.questionData;
     if (question?.isManual && question?.id) {
-      setEditingQuestion(question);
+      // If the question only has a solution string (no solutionSteps array),
+      // convert it so the editor shows the existing steps instead of "No steps yet".
+      const hasSolutionSteps = Array.isArray(question.solutionSteps) && question.solutionSteps.length > 0;
+      const enriched = hasSolutionSteps
+        ? question
+        : { ...question, solutionSteps: parseSolutionSteps(question) };
+      setEditingQuestion(enriched);
       setPreviewReport(null);
       setPreviewQuestion(null);
       return;
@@ -141,7 +162,8 @@ const ReportsAdmin = () => {
   const findReportAttempt = async (report) => {
     const studentId = report.studentId;
     const questionId = report.questionId || report.questionData?.id;
-    if (!studentId || !questionId) return null;
+    const fallbackIndex = report.questionIndex ?? null;
+    if (!studentId || (!questionId && fallbackIndex == null)) return null;
 
     const roots = ['users', 'students'];
     const statCollections = ['daily_stats', 'calc_stats'];
@@ -176,7 +198,13 @@ const ReportsAdmin = () => {
             console.warn('Could not read detail snapshot while locating report attempt:', err);
           }
 
-          const resultIndex = results.findIndex(r => String(r?.questionId || '') === String(questionId));
+          let resultIndex = questionId
+            ? results.findIndex(r => String(r?.questionId || '') === String(questionId))
+            : -1;
+          // Fallback: match by index when no questionId (AI-generated questions)
+          if (resultIndex === -1 && fallbackIndex != null && results[fallbackIndex] != null) {
+            resultIndex = fallbackIndex;
+          }
           if (resultIndex === -1) continue;
 
           attempts.push({
@@ -590,7 +618,27 @@ const ReportsAdmin = () => {
               <div style={{ marginBottom: '24px' }}>
                 <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Question</span>
                 <div style={{ marginTop: '10px', padding: '16px', background: '#f1f5f9', borderRadius: '16px' }}>
-                  <MathView content={item.questionText} style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e1b4b' }} />
+                  <MathView content={item.questionText} graphData={item.graphData} style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e1b4b' }} />
+                  {item.questionImage && (
+                    <img src={item.questionImage} alt="Question diagram" style={{ width: '100%', maxHeight: '220px', objectFit: 'contain', marginTop: '12px', borderRadius: '10px', background: '#fff' }} />
+                  )}
+                  {Array.isArray(item.options) && item.options.length > 0 && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '14px' }}>
+                      {item.options.map((opt, i) => {
+                        const text = typeof opt === 'string' ? opt : (opt?.text || String(opt));
+                        const isCorrect = String(item.correctAnswer) === String(i) || String(item.correctAnswer) === String(text);
+                        return (
+                          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', borderRadius: '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: isCorrect ? '0 0 0 2px #10b981' : '0 0 0 1px #e2e8f0' }}>
+                            <div style={{ width: '28px', height: '28px', borderRadius: '50%', flexShrink: 0, background: isCorrect ? '#10b981' : '#f1f5f9', color: isCorrect ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.85rem' }}>
+                              {String.fromCharCode(65 + i)}
+                            </div>
+                            <MathView content={text} style={{ fontWeight: 600, color: '#1e1b4b', flex: 1 }} />
+                            {isCorrect && <CheckCircle size={16} style={{ color: '#10b981', flexShrink: 0 }} />}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -970,6 +1018,14 @@ const ReportsAdmin = () => {
                     >
                       <Wrench size={18} /> Fix Question
                     </button>
+                    {q.isManual && q.id && (
+                      <button
+                        onClick={handleDeletePreviewQuestion}
+                        style={{ width: '100%', padding: '14px', borderRadius: '18px', border: '1.5px solid #fecaca', background: '#fff1f2', color: '#b91c1c', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                      >
+                        <Trash2 size={17} /> Delete Question
+                      </button>
+                    )}
                     {previewReport.status !== 'resolved' && (
                       <button
                         onClick={() => { handleMarkResolved(previewReport.id); closePreview(); }}

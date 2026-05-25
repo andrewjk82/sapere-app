@@ -219,6 +219,7 @@ function App() {
   const [isLocked, setIsLocked] = useState(false);
   const isLockedRef = useRef(false);
   useEffect(() => { isLockedRef.current = isLocked; }, [isLocked]);
+  const [examInProgress, setExamInProgress] = useState(false);
   
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   const keyboardActivityAtRef = useRef(0);
@@ -845,7 +846,7 @@ function App() {
       case 'Curriculum':
         return <Curriculum />;
       case 'ExamPrep':
-        return <ExamPrep profile={profile} />;
+        return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
       case 'Library':
         return <Library />;
       case 'Reports':
@@ -900,15 +901,17 @@ function App() {
         )}
       </AnimatePresence>
 
-      <Sidebar
-        activeTab={activeTab}
-        setActiveTab={handleTabChange}
-        isLocked={isLocked}
-        onShowLeaderboard={() => setShowLeaderboard(true)}
-        onShowNotifs={() => { setShowNotifs(prev => !prev); if (!showNotifs) handleMarkAsRead(); }}
-        unreadCount={unreadCount}
-      />
-      <div className="app-shell__main">
+      {!examInProgress && (
+        <Sidebar
+          activeTab={activeTab}
+          setActiveTab={handleTabChange}
+          isLocked={isLocked}
+          onShowLeaderboard={() => setShowLeaderboard(true)}
+          onShowNotifs={() => { setShowNotifs(prev => !prev); if (!showNotifs) handleMarkAsRead(); }}
+          unreadCount={unreadCount}
+        />
+      )}
+      <div className="app-shell__main" style={examInProgress ? { padding: 0 } : undefined}>
         <ErrorBoundary key={activeTab}>
           <Suspense fallback={<div className="app-loading"><div className="app-spinner"></div></div>}>
             {renderContent()}

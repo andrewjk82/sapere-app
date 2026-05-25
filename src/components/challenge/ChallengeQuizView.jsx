@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Flag, Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
+import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { 
@@ -29,7 +29,6 @@ const ChallengeQuizView = ({
   userAnswers,
   showHint,
   setShowHint,
-  setIsReporting,
   isSubmittingCanvas,
   isMobile,
   showSplitScreen,
@@ -232,20 +231,6 @@ const ChallengeQuizView = ({
               <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {TOTAL_QUESTIONS}</div>
             </div>
             <div style={{ textAlign: 'right', display: 'flex', flexWrap: 'nowrap', alignItems: 'center', gap: '8px' }}>
-              {currentQuestion?.isManual && (
-                <button 
-                  onClick={() => setIsReporting(true)}
-                  className="app-icon-button"
-                  style={{ 
-                    background: '#fff', 
-                    color: '#ef4444',
-                    boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-                    width: '36px', height: '36px'
-                  }}
-                >
-                  <Flag size={18} />
-                </button>
-              )}
                <div style={{ fontSize: '0.9rem', fontWeight: 800, color: timeLeft < 10 ? '#f43f5e' : '#64748b', background: '#fff', padding: '8px 12px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                  <Clock size={16} /> {timeLeft}s
                </div>

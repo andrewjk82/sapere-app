@@ -1,4 +1,5 @@
 import {
+  arrayUnion,
   collection,
   doc,
   getDoc,
@@ -361,10 +362,63 @@ const fetchManualQuestions = async (targets) => {
     .filter((question) => filterManualQuestion(question, targets));
 };
 
-const buildQuestionsForStudent = async (studentProfile, questionCount) => {
+// ISO week key: "YYYY-WNN" — resets the seen-question list every Monday.
+const getWeekKey = (date = new Date()) => {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = d.getUTCDay() || 7; // Mon=1 … Sun=7
+  d.setUTCDate(d.getUTCDate() + 4 - day); // shift to Thursday of the same week (ISO standard)
+  const year = d.getUTCFullYear();
+  const week = Math.ceil(((d - Date.UTC(year, 0, 1)) / 86400000 + 1) / 7);
+  return `${year}-W${String(week).padStart(2, "0")}`;
+};
+
+const seenQuestionsRef = (uid) => doc(db, "users", uid, "seen_questions", "current_week");
+
+// Returns a Set of question IDs the student has seen this week (1 Firestore read).
+const fetchRecentlySeenQuestionIds = async (uid) => {
+  const seen = new Set();
+  if (!uid) return seen;
+  try {
+    const snap = await getDoc(seenQuestionsRef(uid));
+    if (!snap.exists()) return seen;
+    const data = snap.data();
+    // If stored week is different from current week the data is stale — ignore it.
+    if (data.weekKey !== getWeekKey()) return seen;
+    (data.questionIds || []).forEach((id) => seen.add(String(id)));
+  } catch {
+    // permission denied or network error — skip silently
+  }
+  return seen;
+};
+
+// Call this after each quiz completion to record which questions were seen.
+export const updateSeenQuestions = async (uid, questionIds) => {
+  if (!uid || !Array.isArray(questionIds) || questionIds.length === 0) return;
+  const ids = questionIds.filter(Boolean).map(String);
+  if (ids.length === 0) return;
+  const weekKey = getWeekKey();
+  try {
+    await setDoc(seenQuestionsRef(uid), {
+      weekKey,
+      questionIds: arrayUnion(...ids),
+      updatedAt: serverTimestamp(),
+    }, { merge: true });
+  } catch (err) {
+    console.warn("updateSeenQuestions failed (non-critical):", err?.code || err);
+  }
+};
+
+const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
   const targets = buildDailyTargets(studentProfile);
-  const manualQuestions = await fetchManualQuestions(targets);
-  const selectedManual = pickBalancedManualQuestions(manualQuestions, questionCount);
+  const [manualQuestions, recentlySeen] = await Promise.all([
+    fetchManualQuestions(targets),
+    fetchRecentlySeenQuestionIds(uid),
+  ]);
+
+  // Prefer unseen questions; fall back to full pool if too few remain.
+  const unseenManual = manualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
+  const poolToUse = unseenManual.length >= questionCount ? unseenManual : manualQuestions;
+  const selectedManual = pickBalancedManualQuestions(poolToUse, questionCount);
   const numAI = Math.max(0, questionCount - selectedManual.length);
   const aiQuestions = [];
 
@@ -423,7 +477,7 @@ export const createDailyAssignment = async ({
 }) => {
   if (!uid) throw new Error("Daily assignment requires a user id.");
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
-  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount);
+  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid);
 
   const assignment = {
     date: dateKey,
@@ -453,7 +507,7 @@ export const prepareNextDailyAssignment = async ({
 }) => {
   if (!uid) throw new Error("Daily assignment prep requires a user id.");
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
-  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount);
+  const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid);
 
   const prepAssignment = {
     date: "next_prep",

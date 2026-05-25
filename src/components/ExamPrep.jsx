@@ -731,7 +731,7 @@ const GlassStat = ({ label, value, compact }) => (
 );
 
 // ── Top-level ExamPrep page ────────────────────────────────────────────
-const ExamPrep = ({ profile }) => {
+const ExamPrep = ({ profile, onExamActiveChange }) => {
   const { user } = useAuth();
   const { showToast } = useToast();
   const uid = user?.uid;
@@ -745,6 +745,10 @@ const ExamPrep = ({ profile }) => {
     chapters: Array.isArray(profile?.examPrepSelection?.chapters) ? profile.examPrepSelection.chapters : [],
   }), [profile?.examPrepSelection]);
   const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'secretNote'
+
+  useEffect(() => {
+    onExamActiveChange?.(stage === 'quiz');
+  }, [stage, onExamActiveChange]);
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
@@ -846,7 +850,7 @@ const ExamPrep = ({ profile }) => {
   };
 
   return (
-    <div className="app-page" style={{ padding: stage === 'quiz' ? 'clamp(12px, 2vw, 20px)' : 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px' }}>
+    <div className="app-page" style={{ padding: stage === 'quiz' ? 'clamp(8px, 1.5vw, 16px)' : 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px', minHeight: stage === 'quiz' ? '100vh' : undefined }}>
       <div style={{ maxWidth: stage === 'quiz' ? '100%' : 'min(1080px, 100%)', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {stage === 'setup' && (
           <SetupDashboard

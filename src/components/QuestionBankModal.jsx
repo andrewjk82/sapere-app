@@ -1276,8 +1276,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     }
   };
 
-  const handleDelete = async (id) => {
-    if (window.confirm("Delete this question?")) {
+  const handleDelete = async (id, { closeAfter = false } = {}) => {
+    if (!window.confirm("Delete this question? This cannot be undone.")) return;
+    try {
       await updateDoc(doc(db, 'questions', id), {
         isActive: false,
         updatedAt: serverTimestamp(),
@@ -1291,6 +1292,13 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           questions: cached.questions.filter(q => q.id !== id),
         });
       }
+      if (closeAfter) {
+        directEditQuestion ? onClose() : setIsFormOpen(false);
+      }
+      showToast("Question deleted.", 'success');
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to delete question.", 'error');
     }
   };
 
@@ -1989,7 +1997,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       </div>
 
       <div style={{ display: 'flex', gap: '16px', paddingTop: '16px', borderTop: '1px solid #f1f5f9' }}>
-        <button onClick={() => setIsFormOpen(false)} style={{ padding: '16px', borderRadius: '16px', background: '#f1f5f9', color: '#475569', fontWeight: 700, border: 'none', cursor: 'pointer', flex: 1 }}>Cancel</button>
+        <button onClick={() => directEditQuestion ? onClose() : setIsFormOpen(false)} style={{ padding: '16px', borderRadius: '16px', background: '#f1f5f9', color: '#475569', fontWeight: 700, border: 'none', cursor: 'pointer', flex: 1 }}>Cancel</button>
+        {editingQuestion && (
+          <button onClick={() => handleDelete(editingQuestion, { closeAfter: true })} style={{ padding: '16px', borderRadius: '16px', border: '1.5px solid #fecaca', background: '#fff1f2', color: '#b91c1c', fontWeight: 700, cursor: 'pointer', flex: 1 }}>Delete</button>
+        )}
         <button onClick={handleSave} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '16px', flex: 2 }}>{editingQuestion ? 'Update Question' : 'Save Question'}</button>
       </div>
             </div>
