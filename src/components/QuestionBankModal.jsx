@@ -48,16 +48,36 @@ const parseGraphData = (value) => {
 
 const stringifyGraphData = (value) => JSON.stringify(value || {}, null, 2);
 
+const sanitizeGeometry = (geometry) => {
+  if (!geometry) return geometry;
+  const result = { ...geometry };
+  if (Array.isArray(result.shadedPolygons)) {
+    result.shadedPolygons = result.shadedPolygons
+      .map((sp) => {
+        const rings = Array.isArray(sp.polygons)
+          ? sp.polygons.filter((r) => Array.isArray(r) && r.length > 0)
+          : Array.isArray(sp.points) && sp.points.length > 0 ? [sp.points] : [];
+        const { points: _p, ...rest } = sp;
+        return { ...rest, polygons: rings };
+      })
+      .filter((sp) => sp.polygons.length > 0);
+    if (result.shadedPolygons.length === 0) delete result.shadedPolygons;
+  }
+  return result;
+};
+
 const withGeometrySnapshot = (graphData) => {
   if (!graphData?.geometry) return graphData;
+  const geometry = sanitizeGeometry(graphData.geometry);
   return {
     ...graphData,
+    geometry,
     diagramSource: {
       type: 'geometry',
       ...(graphData.diagramSource || {}),
-      geometry: graphData.geometry,
+      geometry,
     },
-    diagramSvg: geometryToSvgDataUrl(graphData.geometry),
+    diagramSvg: geometryToSvgDataUrl(geometry),
     diagramUpdatedAt: new Date().toISOString(),
   };
 };
