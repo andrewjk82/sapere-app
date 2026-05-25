@@ -125,7 +125,10 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div>
                 <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Question Bank</span>
-                <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {total}</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {total}</div>
+                  {q?.id && <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', background: '#f1f5f9', borderRadius: '6px', padding: '2px 7px', fontFamily: 'monospace', userSelect: 'all' }}>ID: {q.id}</span>}
+                </div>
               </div>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '6px' }}>

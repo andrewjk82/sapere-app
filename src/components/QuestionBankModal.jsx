@@ -1302,6 +1302,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         topicTitle: q.topicTitle || '',
         subQuestions: (q.subQuestions || []).map(sq => ({
           ...sq,
+          answer: sq.answer || sq.a || '',
           solution: sq.solution || '',
           solutionSteps: (sq.solutionSteps || []).map(s =>
             typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
@@ -1561,10 +1562,15 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 	                  {questions.map((q, idx) => (
                     <div key={q.id} style={{ padding: '20px', borderRadius: '16px', border: `1px solid ${q.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`, background: q.requiresManualGrading ? '#fffbeb' : '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div style={{ flex: 1, paddingRight: '20px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', flexWrap: 'wrap' }}>
                           <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase' }}>
                             {q.title || `Question ${idx + 1}`} • {q.difficulty}
                           </div>
+                          {q.id && (
+                            <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', background: '#f1f5f9', borderRadius: '6px', padding: '2px 7px', fontFamily: 'monospace', letterSpacing: '0.02em', userSelect: 'all' }}>
+                              ID: {q.id}
+                            </span>
+                          )}
                           {q.requiresManualGrading && (
                             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.65rem', fontWeight: 800, background: '#fef3c7', color: '#92400e', borderRadius: '100px', padding: '2px 8px', border: '1px solid #fcd34d' }}>
                               <AlertTriangle size={10} /> Teacher Review
@@ -1852,7 +1858,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 </button>
               </div>
 
-              {formData.type === 'multiple_choice' ? (
+              {formData.subQuestions.length === 0 && formData.type === 'multiple_choice' ? (
                 <div>
                   <label style={{ display: 'block', marginBottom: '16px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Multiple Choice Options (LaTeX & Images)</label>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -1948,14 +1954,14 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                     </div>
                   )}
                 </div>
-              ) : (
+              ) : formData.subQuestions.length === 0 ? (
                 <div>
                   <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
                     {formData.requiresManualGrading ? 'Model Answer (Optional — shown to students)' : 'Correct Answer (Plain Text)'}
                   </label>
                   <input type="text" value={formData.answer} onChange={e => setFormData({...formData, answer: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', background: '#f0fdf4', color: '#166534' }} placeholder={formData.requiresManualGrading ? 'e.g. AB ∥ CD (alternate angles equal)' : 'e.g. 25'} />
                 </div>
-              )}
+              ) : null}
 
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Hint (Optional, LaTeX supported)</label>
