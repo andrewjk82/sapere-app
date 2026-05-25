@@ -6,7 +6,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$m \\times m \\times m \\times m$",
     a: "m^4",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Count how many times the variable is multiplied by itself.",
     solutionSteps: [
       { explanation: "The variable $m$ is multiplied by itself 4 times.", workingOut: "m^4" }
@@ -20,7 +20,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$k \\times k \\times k \\times k \\times k$",
     a: "k^5",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "The number of times the variable appears becomes the power.",
     solutionSteps: [
       { explanation: "The variable $k$ appears 5 times in the multiplication.", workingOut: "k^5" }
@@ -34,7 +34,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$y \\times y \\times y \\times y \\times y \\times y \\times y$",
     a: "y^7",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Count the number of $y$'s.",
     solutionSteps: [
       { explanation: "The variable $y$ is multiplied by itself 7 times.", workingOut: "y^7" }
@@ -48,7 +48,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$p \\times p \\times p \\times q \\times q$",
     a: "p^3q^2",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Group the $p$'s and the $q$'s separately.",
     solutionSteps: [
       { explanation: "There are three $p$'s, so that is $p^3$.", workingOut: "p^3" },
@@ -64,7 +64,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$n \\times n \\times n \\times n$",
     a: "n^4",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Count how many $n$'s are multiplied.",
     solutionSteps: [
       { explanation: "The variable $n$ is multiplied by itself 4 times.", workingOut: "n^4" }
@@ -78,7 +78,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$x \\times x \\times y \\times y \\times y \\times y$",
     a: "x^2y^4",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write each letter with its own power.",
     solutionSteps: [
       { explanation: "There are two $x$'s ($x^2$) and four $y$'s ($y^4$).", workingOut: "x^2y^4" }
@@ -92,7 +92,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$b \\times b \\times b \\times b \\times b \\times b$",
     a: "b^6",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Count the number of $b$'s.",
     solutionSteps: [
       { explanation: "The variable $b$ is multiplied by itself 6 times.", workingOut: "b^6" }
@@ -106,7 +106,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index notation.\\n\\n$m \\times m \\times m \\times n \\times n \\times n \\times n$",
     a: "m^3n^4",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Count the $m$'s and count the $n$'s.",
     solutionSteps: [
       { explanation: "There are three $m$'s ($m^3$) and four $n$'s ($n^4$).", workingOut: "m^3n^4" }
@@ -120,7 +120,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$a^4$",
     a: "a \\times a \\times a \\times a",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $a$ multiplied by itself $4$ times.",
     solutionSteps: [
       { explanation: "The index is $4$, which means $a$ is written $4$ times with multiplication signs.", workingOut: "a \\times a \\times a \\times a" }
@@ -134,7 +134,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$p^5$",
     a: "p \\times p \\times p \\times p \\times p",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $p$ multiplied by itself $5$ times.",
     solutionSteps: [
       { explanation: "The index is $5$, which means $p$ is written $5$ times with multiplication signs.", workingOut: "p \\times p \\times p \\times p \\times p" }
@@ -148,7 +148,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$y^6$",
     a: "y \\times y \\times y \\times y \\times y \\times y",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $y$ multiplied by itself $6$ times.",
     solutionSteps: [
       { explanation: "The index is $6$, so write $y$ six times separated by multiplication signs.", workingOut: "y \\times y \\times y \\times y \\times y \\times y" }
@@ -162,7 +162,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$k^4$",
     a: "k \\times k \\times k \\times k",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $k$ multiplied by itself $4$ times.",
     solutionSteps: [
       { explanation: "The index is $4$, so write $k$ four times.", workingOut: "k \\times k \\times k \\times k" }
@@ -176,7 +176,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$w^5$",
     a: "w \\times w \\times w \\times w \\times w",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $w$ multiplied by itself $5$ times.",
     solutionSteps: [
       { explanation: "The index is $5$, so write $w$ five times.", workingOut: "w \\times w \\times w \\times w \\times w" }
@@ -190,7 +190,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$x^7$",
     a: "x \\times x \\times x \\times x \\times x \\times x \\times x",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $x$ multiplied by itself $7$ times.",
     solutionSteps: [
       { explanation: "The index is $7$, so write $x$ seven times.", workingOut: "x \\times x \\times x \\times x \\times x \\times x \\times x" }
@@ -204,7 +204,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$m^3$",
     a: "m \\times m \\times m",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $m$ multiplied by itself $3$ times.",
     solutionSteps: [
       { explanation: "The index is $3$, so write $m$ three times.", workingOut: "m \\times m \\times m" }
@@ -218,7 +218,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in expanded form.\\n\\n$c^5$",
     a: "c \\times c \\times c \\times c \\times c",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Write $c$ multiplied by itself $5$ times.",
     solutionSteps: [
       { explanation: "The index is $5$, so write $c$ five times.", workingOut: "c \\times c \\times c \\times c \\times c" }
@@ -232,7 +232,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$p^3$",
     a: "8",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Substitute $p = 2$ into the expression.",
     solutionSteps: [
       { explanation: "Substitute $2$ for $p$.", workingOut: "2^3" },
@@ -247,7 +247,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$p^5$",
     a: "32",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Substitute $p = 2$ and multiply $2$ by itself $5$ times.",
     solutionSteps: [
       { explanation: "Substitute $2$ for $p$.", workingOut: "2^5" },
@@ -262,7 +262,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$pq^2$",
     a: "18",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Evaluate the power first before multiplying by $p$.",
     solutionSteps: [
       { explanation: "Substitute $p = 2$ and $q = 3$.", workingOut: "2 \\times 3^2" },
@@ -278,7 +278,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$p^4$",
     a: "16",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply $2$ by itself $4$ times.",
     solutionSteps: [
       { explanation: "Substitute $p = 2$.", workingOut: "2^4" },
@@ -293,7 +293,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$q^3$",
     a: "27",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply $3$ by itself $3$ times.",
     solutionSteps: [
       { explanation: "Substitute $q = 3$.", workingOut: "3^3" },
@@ -308,7 +308,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$p^3q^2$",
     a: "72",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Calculate both powers before multiplying them together.",
     solutionSteps: [
       { explanation: "Substitute the values.", workingOut: "2^3 \\times 3^2" },
@@ -324,7 +324,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$q^4$",
     a: "81",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply $3$ by itself $4$ times.",
     solutionSteps: [
       { explanation: "Substitute $q = 3$.", workingOut: "3^4" },
@@ -339,7 +339,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$p^6$",
     a: "64",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply $2$ by itself $6$ times.",
     solutionSteps: [
       { explanation: "Substitute $p = 2$.", workingOut: "2^6" },
@@ -354,7 +354,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$4pq$",
     a: "24",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply all the numbers together.",
     solutionSteps: [
       { explanation: "Substitute the values.", workingOut: "4 \\times 2 \\times 3" },
@@ -369,7 +369,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$q^2$",
     a: "9",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply $3$ by itself.",
     solutionSteps: [
       { explanation: "Substitute $q = 3$.", workingOut: "3^2" },
@@ -384,7 +384,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$p^2q^2$",
     a: "36",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Calculate both powers before multiplying.",
     solutionSteps: [
       { explanation: "Substitute the values.", workingOut: "2^2 \\times 3^2" },
@@ -400,7 +400,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Find the value of the following when $p = 2$ and $q = 3$.\\n\\n$5p^2q$",
     a: "60",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Evaluate $p^2$ first, then multiply.",
     solutionSteps: [
       { explanation: "Substitute the values.", workingOut: "5 \\times 2^2 \\times 3" },
@@ -416,7 +416,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index form.\\n\\n$12 \\times x \\times x \\times x$",
     a: "12x^3",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Group the $x$'s into a power.",
     solutionSteps: [
       { explanation: "There are three $x$'s multiplied together.", workingOut: "x^3" },
@@ -431,7 +431,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index form.\\n\\n$m \\times m \\times 8 \\times m \\times m \\times m$",
     a: "8m^5",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Count the total number of $m$'s.",
     solutionSteps: [
       { explanation: "The number 8 goes at the front.", workingOut: "8" },
@@ -447,7 +447,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index form.\\n\\n$y \\times y \\times y \\times 9 \\times y$",
     a: "9y^4",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "The number goes first. Count the total $y$'s.",
     solutionSteps: [
       { explanation: "The number 9 goes at the front.", workingOut: "9" },
@@ -463,7 +463,7 @@ export const Y7_CH23H_QUESTIONS = [
     timeLimit: 30,
     question: "Write the following in simplest index form.\\n\\n$4 \\times x \\times x \\times 3 \\times x$",
     a: "12x^3",
-    t: "Index notation",
+    t: "Multiplying, dividing and expanding",
     hint: "Multiply the numbers together first.",
     solutionSteps: [
       { explanation: "Multiply the numbers: $4 \\times 3 = 12$.", workingOut: "12" },
