@@ -1066,7 +1066,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y7-3',
       title: 'An introduction to algebra',
-      modules: 7,
+      modules: 8,
       topics: [
         { id: 'y7-3a', code: '3A', title: 'Using algebra', page: 70 },
         { id: 'y7-3b', code: '3B', title: 'Algebraic notation', page: 74 },
@@ -1074,7 +1074,8 @@ export const CURRICULUM_DATA = {
         { id: 'y7-3d', code: '3D', title: 'Addition and subtraction of like terms', page: 79 },
         { id: 'y7-3e', code: '3E', title: 'Brackets', page: 82 },
         { id: 'y7-3f', code: '3F', title: 'Multiplying terms', page: 86 },
-        { id: 'y7-3g', code: '3G', title: 'Describing arrays, areas and number patterns', page: 87 }
+        { id: 'y7-3g', code: '3G', title: 'Describing arrays, areas and number patterns', page: 87 },
+        { id: 'y7-3h', code: '3H', title: 'Chapter review', page: 90 }
       ]
     },
     {
