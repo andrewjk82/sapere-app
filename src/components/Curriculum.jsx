@@ -63,6 +63,7 @@ import { Y8_CH18A_QUESTIONS } from '../constants/seedYear8Ch18Questions.js';
 import { Y8_CH18I_QUESTIONS } from '../constants/seedYear8Ch18IQuestions.js';
 import { Y8_CH19A_QUESTIONS } from '../constants/seedYear8Ch19Questions.js';
 import { Y7_CH23A_QUESTIONS } from '../constants/seedYear7Ch23AQuestions.js';
+import { Y7_CH23B_QUESTIONS } from '../constants/seedYear7Ch23BQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -119,6 +120,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-18', chapterTitle: 'Chapter 18: Graphing straight lines', topicId: 'y8-18i', topicCode: '18I', topicTitle: 'Review', year: 'Year 8', seed: Y8_CH18I_QUESTIONS, label: 'Y8 Ch18 · Review' },
   { chapterId: 'y8-19', chapterTitle: 'Chapter 19: Statistics', topicId: 'y8-19a', topicCode: '19A', topicTitle: 'Comparing means and medians', year: 'Year 8', seed: Y8_CH19A_QUESTIONS, label: 'Y8 Ch19 · Statistics' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23a', topicCode: '23A', topicTitle: 'Algebraic expressions', year: 'Year 7', seed: Y7_CH23A_QUESTIONS, label: 'Y7 Ch23 · Algebraic expressions' },
+  { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23b', topicCode: '23B', topicTitle: 'Like terms and unlike terms', year: 'Year 7', seed: Y7_CH23B_QUESTIONS, label: 'Y7 Ch23 · Like terms and unlike terms' },
 ];
 import {
   fetchHscResultsIncremental,
