@@ -857,7 +857,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
                       const newRings = [...rings];
                       newRings[rIdx] = newRing;
                       const updated = [...(geometry.shadedPolygons || [])];
-                      updated[idx] = { ...sp, polygons: newRings, points: undefined };
+                      updated[idx] = { ...sp, polygons: newRings, points: null };
                       updateGeometry({ ...geometry, shadedPolygons: updated });
                     }}
                     placeholder="A, B, C, D"
@@ -867,7 +867,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
                     <button type="button" onClick={() => {
                       const newRings = rings.filter((_, i) => i !== rIdx);
                       const updated = [...(geometry.shadedPolygons || [])];
-                      updated[idx] = { ...sp, polygons: newRings, points: undefined };
+                      updated[idx] = { ...sp, polygons: newRings, points: null };
                       updateGeometry({ ...geometry, shadedPolygons: updated });
                     }} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '6px', padding: '3px 7px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem' }}>✕</button>
                   )}
@@ -877,7 +877,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
                 <button type="button" onClick={() => {
                   const newRings = [...rings, []];
                   const updated = [...(geometry.shadedPolygons || [])];
-                  updated[idx] = { ...sp, polygons: newRings, points: undefined };
+                  updated[idx] = { ...sp, polygons: newRings, points: null };
                   updateGeometry({ ...geometry, shadedPolygons: updated });
                 }} style={{ border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', borderRadius: '7px', padding: '3px 8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem' }}>+ Ring (cutout)</button>
                 <label style={{ fontSize: '0.72rem', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
