@@ -65,6 +65,7 @@ import { Y8_CH19A_QUESTIONS } from '../constants/seedYear8Ch19Questions.js';
 import { Y7_CH23A_QUESTIONS } from '../constants/seedYear7Ch23AQuestions.js';
 import { Y7_CH23B_QUESTIONS } from '../constants/seedYear7Ch23BQuestions.js';
 import { Y7_CH23C_QUESTIONS } from '../constants/seedYear7Ch23CQuestions.js';
+import { Y7_CH23D_QUESTIONS } from '../constants/seedYear7Ch23DQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -123,6 +124,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23a', topicCode: '23A', topicTitle: 'Algebraic expressions', year: 'Year 7', seed: Y7_CH23A_QUESTIONS, label: 'Y7 Ch23 · Algebraic expressions' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23b', topicCode: '23B', topicTitle: 'Like terms and unlike terms', year: 'Year 7', seed: Y7_CH23B_QUESTIONS, label: 'Y7 Ch23 · Like terms and unlike terms' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23c', topicCode: '23C', topicTitle: 'Simplifying algebraic expressions', year: 'Year 7', seed: Y7_CH23C_QUESTIONS, label: 'Y7 Ch23 · Simplifying algebraic expressions' },
+  { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23d', topicCode: '23D', topicTitle: 'Collecting like terms', year: 'Year 7', seed: Y7_CH23D_QUESTIONS, label: 'Y7 Ch23 · Collecting like terms' },
 ];
 import {
   fetchHscResultsIncremental,
