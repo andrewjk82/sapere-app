@@ -813,8 +813,17 @@ const GeometryEditor = ({ graphData, onChange }) => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Side Labels</div>
           {(geometry.sideLabels || []).map((sl, idx) => (
-            <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontWeight: 700, color: '#4c1d95', minWidth: '60px' }}>{sl.text} ({sl.between?.[0]}–{sl.between?.[1]})</span>
+            <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+              <input
+                value={sl.text || ''}
+                onChange={(e) => {
+                  const sideLabels = [...(geometry.sideLabels || [])];
+                  sideLabels[idx] = { ...sideLabels[idx], text: e.target.value };
+                  updateGeometry({ ...geometry, sideLabels });
+                }}
+                style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', fontWeight: 700, color: '#4c1d95', width: '90px', fontSize: '0.85rem' }}
+              />
+              <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>({sl.between?.[0]}–{sl.between?.[1]})</span>
               {sl.labelPos ? (
                 <button type="button" onClick={() => {
                   const sideLabels = [...(geometry.sideLabels || [])];
