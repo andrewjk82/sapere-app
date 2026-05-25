@@ -1,232 +1,530 @@
 export const Y7_CH23J_QUESTIONS = [
   {
     id: "y7-23j-q1",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "Find an expression for the perimeter of a square with side length of $3y$ units.",
-    a: "12y",
-    t: "Problem solving with algebra",
-    hint: "A square has four sides of equal length. Perimeter is the sum of all sides.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$4y + 5y$ equals",
+    a: "9y",
+    opts: [
+      "9y^2",
+      "20y^2",
+      "9y",
+      "20y"
+    ],
+    t: "Chapter review",
+    hint: "Combine like terms by adding the coefficients.",
     solutionSteps: [
-      { explanation: "The perimeter of a square is $4 \\times$ side length.", workingOut: "4 \\times 3y" },
-      { explanation: "Multiply the numbers.", workingOut: "12y" }
+      { explanation: "Both terms have the same variable, $y$.", workingOut: "4y + 5y" },
+      { explanation: "Add their coefficients: $4 + 5 = 9$.", workingOut: "9y" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q2",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "If a bag contains $4p$ marbles, how many marbles are in $5$ similar bags?",
-    a: "20p",
-    t: "Problem solving with algebra",
-    hint: "Multiply the number of bags by the number of marbles in each bag.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$12xy \\div 12x =$",
+    a: "y",
+    opts: [
+      "0",
+      "1",
+      "y",
+      "12y"
+    ],
+    t: "Chapter review",
+    hint: "Write the division as a fraction and cancel common factors.",
     solutionSteps: [
-      { explanation: "Multiply $5$ by $4p$.", workingOut: "5 \\times 4p" },
-      { explanation: "Multiply the numbers together.", workingOut: "20p" }
+      { explanation: "Write as a fraction.", workingOut: "\\frac{12xy}{12x}" },
+      { explanation: "Cancel out the common factors $12$ and $x$.", workingOut: "y" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q3",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "A rope is $k$ metres long. A further $4k$ metres is added. How long is the rope now?",
-    a: "5k",
-    t: "Problem solving with algebra",
-    hint: "Add the two lengths together.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$5 \\times m + 2 \\times n$ equals",
+    a: "5m + 2n",
+    opts: [
+      "m^5 + n^2",
+      "10mn",
+      "5m + 2n",
+      "7mn"
+    ],
+    t: "Chapter review",
+    hint: "Remove the multiplication signs between numbers and variables.",
     solutionSteps: [
-      { explanation: "The original length is $k$ and the added length is $4k$.", workingOut: "k + 4k" },
-      { explanation: "Combine the like terms.", workingOut: "5k" }
+      { explanation: "$5 \\times m = 5m$", workingOut: "5m" },
+      { explanation: "$2 \\times n = 2n$", workingOut: "2n" },
+      { explanation: "Combine them.", workingOut: "5m + 2n" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q4",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "The sum of a number and $9$ is $25$. What is the number?",
-    a: "16",
-    t: "Problem solving with algebra",
-    hint: "Let the unknown number be a variable, then write an equation.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "If $b = 3$ and $k = 4$ then $\\frac{1}{2}bk^2$ equals",
+    a: "24",
+    opts: [
+      "24",
+      "48",
+      "72",
+      "12"
+    ],
+    t: "Chapter review",
+    hint: "Substitute the values and follow the order of operations (calculate the power first).",
     solutionSteps: [
-      { explanation: "Let the number be $x$. Set up an equation.", workingOut: "x + 9 = 25" },
-      { explanation: "Subtract $9$ from $25$.", workingOut: "x = 25 - 9" },
-      { explanation: "Calculate the result.", workingOut: "16" }
+      { explanation: "Substitute $b = 3$ and $k = 4$.", workingOut: "\\frac{1}{2} \\times 3 \\times 4^2" },
+      { explanation: "Calculate the power.", workingOut: "\\frac{1}{2} \\times 3 \\times 16" },
+      { explanation: "Multiply.", workingOut: "24" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q5",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "Alex has $\\$m$ and gets $\\$5n$ from the bank. How much does he have now?",
-    a: "m + 5n",
-    t: "Problem solving with algebra",
-    hint: "Add the new amount to the original amount.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$m^4 + m^4$ equals",
+    a: "2m^4",
+    opts: [
+      "m^8",
+      "m^{16}",
+      "2m^4",
+      "2m^8"
+    ],
+    t: "Chapter review",
+    hint: "These are like terms. Add their coefficients.",
     solutionSteps: [
-      { explanation: "Start with the original amount, $m$.", workingOut: "m" },
-      { explanation: "Add the amount received from the bank, $5n$.", workingOut: "m + 5n" }
+      { explanation: "The terms $m^4$ and $m^4$ are identical.", workingOut: "1m^4 + 1m^4" },
+      { explanation: "Add the coefficients ($1 + 1 = 2$).", workingOut: "2m^4" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q6",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "The product of a number and $8$ is $56$. What is the number?",
-    a: "7",
-    t: "Problem solving with algebra",
-    hint: "Product means multiplication. Divide to find the unknown number.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$2x^2 - 4x + 7x + 5x^2$ equals",
+    a: "7x^2 + 3x",
+    opts: [
+      "7x^2 + 3x",
+      "7x^2 - 3x",
+      "7x^3 + 3x",
+      "7x^4 - 3x"
+    ],
+    t: "Chapter review",
+    hint: "Group the $x^2$ terms together and the $x$ terms together.",
     solutionSteps: [
-      { explanation: "Let the number be $n$. Set up an equation.", workingOut: "8n = 56" },
-      { explanation: "Divide $56$ by $8$.", workingOut: "n = 56 \\div 8" },
-      { explanation: "Calculate the result.", workingOut: "7" }
+      { explanation: "Identify like terms.", workingOut: "(2x^2 + 5x^2) + (-4x + 7x)" },
+      { explanation: "Add coefficients for $x^2$.", workingOut: "7x^2" },
+      { explanation: "Add coefficients for $x$.", workingOut: "+ 3x" },
+      { explanation: "Combine.", workingOut: "7x^2 + 3x" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q7",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "If a number is multiplied by $6$, and $4$ is added to the product, the result is $34$. What is the number?",
-    a: "5",
-    t: "Problem solving with algebra",
-    hint: "Work backwards: subtract first, then divide.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$4xy^2$ equals",
+    a: "4 \\times x \\times y \\times y",
+    opts: [
+      "4 \\times x \\times y \\times y",
+      "4 \\times x \\times y \\times 2",
+      "4 \\times xy \\times xy",
+      "4xy \\times 4xy"
+    ],
+    t: "Chapter review",
+    hint: "Expand the index notation. Only $y$ is squared.",
     solutionSteps: [
-      { explanation: "Let the number be $x$. Write an equation.", workingOut: "6x + 4 = 34" },
-      { explanation: "Subtract $4$ from $34$.", workingOut: "6x = 30" },
-      { explanation: "Divide by $6$.", workingOut: "x = 5" }
+      { explanation: "$y^2$ means $y \\times y$.", workingOut: "y^2 = y \\times y" },
+      { explanation: "Insert multiplication signs everywhere.", workingOut: "4 \\times x \\times y \\times y" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q8",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "If $12$ is subtracted from a number, the result is $19$. What is the number?",
-    a: "31",
-    t: "Problem solving with algebra",
-    hint: "To find the original number, add $12$ to the result.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$5p^4 \\times (-3p^2)$ equals",
+    a: "-15p^6",
+    opts: [
+      "15p^6",
+      "15p^8",
+      "-15p^6",
+      "-15p^8"
+    ],
+    t: "Chapter review",
+    hint: "Multiply the numbers, then multiply the powers by adding their indices.",
     solutionSteps: [
-      { explanation: "Let the number be $n$. Write an equation.", workingOut: "n - 12 = 19" },
-      { explanation: "Add $12$ to both sides.", workingOut: "n = 19 + 12" },
-      { explanation: "Calculate the sum.", workingOut: "31" }
+      { explanation: "Multiply the coefficients: $5 \\times -3$.", workingOut: "-15" },
+      { explanation: "Multiply the variables: $p^4 \\times p^2$. Add the indices.", workingOut: "p^{4+2} = p^6" },
+      { explanation: "Combine.", workingOut: "-15p^6" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q9",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "The sum of a number and $15$ is $42$. What is the number?",
-    a: "27",
-    t: "Problem solving with algebra",
-    hint: "Subtract $15$ from the total sum.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "If $y = 4$ find $3y^2$",
+    a: "48",
+    opts: [
+      "48",
+      "144",
+      "12",
+      "36"
+    ],
+    t: "Chapter review",
+    hint: "Substitute $y = 4$, square it first, then multiply by $3$.",
     solutionSteps: [
-      { explanation: "Let the number be $x$. Write an equation.", workingOut: "x + 15 = 42" },
-      { explanation: "Subtract $15$ from $42$.", workingOut: "x = 42 - 15" },
-      { explanation: "Calculate the difference.", workingOut: "27" }
+      { explanation: "Substitute $4$ for $y$.", workingOut: "3 \\times 4^2" },
+      { explanation: "Calculate the square.", workingOut: "3 \\times 16" },
+      { explanation: "Multiply.", workingOut: "48" }
     ],
     graphData: null
   },
   {
     id: "y7-23j-q10",
-    type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "If a number is divided by $12$, the result is $8$. What is the number?",
-    a: "96",
-    t: "Problem solving with algebra",
-    hint: "Multiply the result by the divisor.",
+    type: "multiple_choice",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "$4(y + 3) - y =$",
+    a: "3y + 12",
+    opts: [
+      "12",
+      "15",
+      "3y + 12",
+      "3y + 3"
+    ],
+    t: "Chapter review",
+    hint: "Expand the brackets first, then combine like terms.",
     solutionSteps: [
-      { explanation: "Let the number be $n$. Write an equation.", workingOut: "\\frac{n}{12} = 8" },
-      { explanation: "Multiply both sides by $12$.", workingOut: "n = 8 \\times 12" },
-      { explanation: "Calculate the product.", workingOut: "96" }
+      { explanation: "Expand $4(y + 3)$.", workingOut: "4y + 12" },
+      { explanation: "Include the $- y$ term.", workingOut: "4y + 12 - y" },
+      { explanation: "Combine like terms ($4y - y = 3y$).", workingOut: "3y + 12" }
     ],
     graphData: null
   },
   {
-    id: "y7-23j-q11",
+    id: "y7-23j-q11a",
     type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "If $6$ is subtracted from the product of $4$ and a number, the result is $34$. What is the number?",
-    a: "10",
-    t: "Problem solving with algebra",
-    hint: "Translate the sentence into an equation, then solve.",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify.\\n\\n$4 \\times x \\times 7 \\times y$",
+    a: "28xy",
+    t: "Chapter review",
+    hint: "Multiply the numbers and write the letters next to each other.",
     solutionSteps: [
-      { explanation: "Let the number be $n$. Write the equation.", workingOut: "4n - 6 = 34" },
-      { explanation: "Add $6$ to both sides.", workingOut: "4n = 40" },
-      { explanation: "Divide by $4$.", workingOut: "n = 10" }
+      { explanation: "Multiply the numbers $4$ and $7$.", workingOut: "28" },
+      { explanation: "Multiply the variables $x$ and $y$.", workingOut: "xy" },
+      { explanation: "Combine them without multiplication signs.", workingOut: "28xy" }
     ],
     graphData: null
   },
   {
-    id: "y7-23j-q12",
+    id: "y7-23j-q11b",
     type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "A photograph is $3x$ cm long and $y$ cm wide. Find its area.",
-    a: "3xy",
-    t: "Problem solving with algebra",
-    hint: "The area of a rectangle is length $\\times$ width.",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify.\\n\\n$15a + 8b - 4a - 2b$",
+    a: "11a + 6b",
+    t: "Chapter review",
+    hint: "Group the $a$ terms together and the $b$ terms together.",
     solutionSteps: [
-      { explanation: "Multiply the length by the width.", workingOut: "3x \\times y" },
-      { explanation: "Simplify the expression.", workingOut: "3xy" }
+      { explanation: "Group the $a$ terms: $15a - 4a$.", workingOut: "11a" },
+      { explanation: "Group the $b$ terms: $8b - 2b$.", workingOut: "6b" },
+      { explanation: "Combine them.", workingOut: "11a + 6b" }
     ],
     graphData: null
   },
   {
-    id: "y7-23j-q13",
+    id: "y7-23j-q11c",
     type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "A room is $6p$ metres long and $2q$ metres wide. Find its area.",
-    a: "12pq",
-    t: "Problem solving with algebra",
-    hint: "Multiply the length by the width to find the area.",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Write in a shorter way.\\n\\n$6 \\times 4(3 \\times b - 2)$",
+    a: "24(3b - 2)",
+    t: "Chapter review",
+    hint: "Multiply the numbers outside the bracket and remove unnecessary multiplication signs inside.",
     solutionSteps: [
-      { explanation: "Multiply the length and width.", workingOut: "6p \\times 2q" },
-      { explanation: "Multiply the numbers ($6 \\times 2$) and group the variables.", workingOut: "12pq" }
+      { explanation: "Multiply $6$ and $4$.", workingOut: "24" },
+      { explanation: "Simplify $3 \\times b$ inside the bracket.", workingOut: "3b" },
+      { explanation: "Write the final expression.", workingOut: "24(3b - 2)" }
     ],
     graphData: null
   },
   {
-    id: "y7-23j-q14",
+    id: "y7-23j-q11d",
     type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "I walked $5m$ km on Monday and $4n$ km on Tuesday. How many kilometres did I walk altogether?",
-    a: "5m + 4n",
-    t: "Problem solving with algebra",
-    hint: "Add the two distances together.",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "If $m = 5$, find $4m^2$",
+    a: "100",
+    t: "Chapter review",
+    hint: "Substitute $m = 5$, calculate the square, then multiply by $4$.",
     solutionSteps: [
-      { explanation: "The total distance is the sum of the distances walked on both days.", workingOut: "5m + 4n" }
+      { explanation: "Substitute $5$ for $m$.", workingOut: "4 \\times 5^2" },
+      { explanation: "Calculate the square.", workingOut: "4 \\times 25" },
+      { explanation: "Multiply.", workingOut: "100" }
     ],
     graphData: null
   },
   {
-    id: "y7-23j-q15",
+    id: "y7-23j-q11e",
     type: "short_answer",
-    difficulty: "medium",
-    timeLimit: 90,
-    question: "Find the perimeter of a rectangular block of land $7x$ metres long and $3y$ metres wide.",
-    a: "14x + 6y",
-    t: "Problem solving with algebra",
-    hint: "The perimeter of a rectangle is $2 \\times (length + width)$.",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "If $p = 4$ and $q = 6$, find $3p + 8q$",
+    a: "60",
+    t: "Chapter review",
+    hint: "Substitute the values for $p$ and $q$ and evaluate.",
     solutionSteps: [
-      { explanation: "Use the perimeter formula.", workingOut: "2(7x + 3y)" },
-      { explanation: "Expand the bracket by multiplying $2$ by each term inside.", workingOut: "14x + 6y" }
+      { explanation: "Substitute $p = 4$ and $q = 6$.", workingOut: "3(4) + 8(6)" },
+      { explanation: "Multiply.", workingOut: "12 + 48" },
+      { explanation: "Add the results.", workingOut: "60" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q12a",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Find the sum of $7m + 4n$ and $32$.",
+    a: "7m + 4n + 32",
+    t: "Chapter review",
+    hint: "Sum means to add the expressions together.",
+    solutionSteps: [
+      { explanation: "Write the addition of the two parts.", workingOut: "(7m + 4n) + 32" },
+      { explanation: "Remove brackets as there are no like terms to combine.", workingOut: "7m + 4n + 32" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q12b",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Add $5b$ to the sum of $8a$ and $2b$.",
+    a: "8a + 7b",
+    t: "Chapter review",
+    hint: "First find the sum of $8a$ and $2b$, then add $5b$ and simplify.",
+    solutionSteps: [
+      { explanation: "Sum of $8a$ and $2b$.", workingOut: "8a + 2b" },
+      { explanation: "Add $5b$ to this sum.", workingOut: "8a + 2b + 5b" },
+      { explanation: "Combine the like terms for $b$.", workingOut: "8a + 7b" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q12c",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Divide $7x$ by $4y$ and then add $8$.",
+    a: "\\frac{7x}{4y} + 8",
+    t: "Chapter review",
+    hint: "Write division as a fraction.",
+    solutionSteps: [
+      { explanation: "Write $7x$ divided by $4y$ as a fraction.", workingOut: "\\frac{7x}{4y}" },
+      { explanation: "Add $8$ to the fraction.", workingOut: "\\frac{7x}{4y} + 8" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q12d",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Write in a shorter way:\\n\\n$15$ plus $k$ all divided by $7$",
+    a: "\\frac{15 + k}{7}",
+    t: "Chapter review",
+    hint: "Use a fraction bar to represent 'all divided by'.",
+    solutionSteps: [
+      { explanation: "Write $15$ plus $k$.", workingOut: "15 + k" },
+      { explanation: "Divide the entire expression by $7$.", workingOut: "\\frac{15 + k}{7}" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q12e",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Divide the difference of $x$ and $y$ by the sum of $x$ and $y$.",
+    a: "\\frac{x - y}{x + y}",
+    t: "Chapter review",
+    hint: "Difference means subtract, sum means add. Use a fraction for division.",
+    solutionSteps: [
+      { explanation: "The difference of $x$ and $y$.", workingOut: "x - y" },
+      { explanation: "The sum of $x$ and $y$.", workingOut: "x + y" },
+      { explanation: "Divide the first by the second.", workingOut: "\\frac{x - y}{x + y}" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q13a",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "What is the product of $4, y$ and $7$?",
+    a: "28y",
+    t: "Chapter review",
+    hint: "Product means multiply them all together.",
+    solutionSteps: [
+      { explanation: "Multiply the values.", workingOut: "4 \\times y \\times 7" },
+      { explanation: "Multiply the numbers and append the variable.", workingOut: "28y" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q13b",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "What is $5x$ subtracted from the product of $4x$ and $2y$?",
+    a: "8xy - 5x",
+    t: "Chapter review",
+    hint: "Find the product first, then subtract $5x$ from it.",
+    solutionSteps: [
+      { explanation: "Find the product of $4x$ and $2y$.", workingOut: "4x \\times 2y = 8xy" },
+      { explanation: "Subtract $5x$ from this product.", workingOut: "8xy - 5x" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q13c",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify.\\n\\n$6y \\times 3y \\times 4y$",
+    a: "72y^3",
+    t: "Chapter review",
+    hint: "Multiply all the numbers, then multiply all the variables.",
+    solutionSteps: [
+      { explanation: "Multiply the numbers: $6 \\times 3 \\times 4$.", workingOut: "72" },
+      { explanation: "Multiply the variables: $y \\times y \\times y$.", workingOut: "y^3" },
+      { explanation: "Combine.", workingOut: "72y^3" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q13d",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Expand.\\n\\n$4(3m + 5)$",
+    a: "12m + 20",
+    t: "Chapter review",
+    hint: "Multiply the term outside the bracket by each term inside.",
+    solutionSteps: [
+      { explanation: "Multiply $4$ by $3m$.", workingOut: "12m" },
+      { explanation: "Multiply $4$ by $5$.", workingOut: "20" },
+      { explanation: "Combine.", workingOut: "12m + 20" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q13e",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Expand and simplify.\\n\\n$7(4y - 10) - 25$",
+    a: "28y - 95",
+    t: "Chapter review",
+    hint: "Expand the bracket first, then combine the number terms.",
+    solutionSteps: [
+      { explanation: "Expand the bracket.", workingOut: "28y - 70" },
+      { explanation: "Include the $- 25$.", workingOut: "28y - 70 - 25" },
+      { explanation: "Combine $-70 - 25$.", workingOut: "28y - 95" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q14a",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify the following.\\n\\n$6x + 12 + 14x - 5$",
+    a: "20x + 7",
+    t: "Chapter review",
+    hint: "Group the $x$ terms and the number terms.",
+    solutionSteps: [
+      { explanation: "Group $x$ terms: $6x + 14x$.", workingOut: "20x" },
+      { explanation: "Group numbers: $12 - 5$.", workingOut: "7" },
+      { explanation: "Combine.", workingOut: "20x + 7" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q14b",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify the following.\\n\\n$18 \\times m \\times n$",
+    a: "18mn",
+    t: "Chapter review",
+    hint: "Remove the multiplication signs.",
+    solutionSteps: [
+      { explanation: "Write the number and variables next to each other.", workingOut: "18mn" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q14c",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify the following.\\n\\n$12k - 4k - 2k - k$",
+    a: "5k",
+    t: "Chapter review",
+    hint: "These are all like terms. Subtract their coefficients in order.",
+    solutionSteps: [
+      { explanation: "Subtract coefficients: $12 - 4 - 2 - 1$.", workingOut: "5" },
+      { explanation: "Attach the variable.", workingOut: "5k" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q14d",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify the following.\\n\\n$14p + 8q - 6p + 5q$",
+    a: "8p + 13q",
+    t: "Chapter review",
+    hint: "Group the $p$ terms and the $q$ terms.",
+    solutionSteps: [
+      { explanation: "Group $p$ terms: $14p - 6p$.", workingOut: "8p" },
+      { explanation: "Group $q$ terms: $8q + 5q$.", workingOut: "13q" },
+      { explanation: "Combine.", workingOut: "8p + 13q" }
+    ],
+    graphData: null
+  },
+  {
+    id: "y7-23j-q14e",
+    type: "short_answer",
+    difficulty: "easy",
+    timeLimit: 30,
+    question: "Simplify the following.\\n\\n$xy + 6x + 4xy - 3x + 7xy$",
+    a: "12xy + 3x",
+    t: "Chapter review",
+    hint: "Group the $xy$ terms and the $x$ terms.",
+    solutionSteps: [
+      { explanation: "Group $xy$ terms: $1xy + 4xy + 7xy$.", workingOut: "12xy" },
+      { explanation: "Group $x$ terms: $6x - 3x$.", workingOut: "3x" },
+      { explanation: "Combine.", workingOut: "12xy + 3x" }
     ],
     graphData: null
   }
