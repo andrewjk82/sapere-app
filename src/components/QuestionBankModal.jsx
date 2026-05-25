@@ -840,6 +840,71 @@ const GeometryEditor = ({ graphData, onChange }) => {
         </div>
       )}
 
+      {/* Shaded regions */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Shaded Regions</div>
+        {(geometry.shadedPolygons || []).map((sp, idx) => {
+          const rings = Array.isArray(sp.polygons) ? sp.polygons : [sp.points].filter(Boolean);
+          return (
+            <div key={idx} style={{ background: '#f8fafc', borderRadius: '10px', padding: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              {rings.map((ring, rIdx) => (
+                <div key={rIdx} style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700 }}>Ring {rIdx + 1}:</span>
+                  <input
+                    value={Array.isArray(ring) ? ring.join(', ') : ''}
+                    onChange={(e) => {
+                      const newRing = e.target.value.split(',').map(s => s.trim()).filter(Boolean);
+                      const newRings = [...rings];
+                      newRings[rIdx] = newRing;
+                      const updated = [...(geometry.shadedPolygons || [])];
+                      updated[idx] = { ...sp, polygons: newRings, points: undefined };
+                      updateGeometry({ ...geometry, shadedPolygons: updated });
+                    }}
+                    placeholder="A, B, C, D"
+                    style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', fontSize: '0.82rem', flex: 1, minWidth: '120px' }}
+                  />
+                  {rings.length > 1 && (
+                    <button type="button" onClick={() => {
+                      const newRings = rings.filter((_, i) => i !== rIdx);
+                      const updated = [...(geometry.shadedPolygons || [])];
+                      updated[idx] = { ...sp, polygons: newRings, points: undefined };
+                      updateGeometry({ ...geometry, shadedPolygons: updated });
+                    }} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '6px', padding: '3px 7px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem' }}>✕</button>
+                  )}
+                </div>
+              ))}
+              <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                <button type="button" onClick={() => {
+                  const newRings = [...rings, []];
+                  const updated = [...(geometry.shadedPolygons || [])];
+                  updated[idx] = { ...sp, polygons: newRings, points: undefined };
+                  updateGeometry({ ...geometry, shadedPolygons: updated });
+                }} style={{ border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', borderRadius: '7px', padding: '3px 8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem' }}>+ Ring (cutout)</button>
+                <label style={{ fontSize: '0.72rem', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  Color
+                  <input type="color" value={sp.color || '#94a3b8'} onChange={(e) => {
+                    const updated = [...(geometry.shadedPolygons || [])];
+                    updated[idx] = { ...sp, color: e.target.value };
+                    updateGeometry({ ...geometry, shadedPolygons: updated });
+                  }} style={{ width: '28px', height: '22px', border: 'none', borderRadius: '4px', cursor: 'pointer' }} />
+                </label>
+                <label style={{ fontSize: '0.72rem', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  Opacity
+                  <input type="range" min="0.05" max="1" step="0.05" value={sp.opacity ?? 0.35} onChange={(e) => {
+                    const updated = [...(geometry.shadedPolygons || [])];
+                    updated[idx] = { ...sp, opacity: Number(e.target.value) };
+                    updateGeometry({ ...geometry, shadedPolygons: updated });
+                  }} style={{ width: '70px' }} />
+                  <span>{Math.round((sp.opacity ?? 0.35) * 100)}%</span>
+                </label>
+                <button type="button" onClick={() => updateGeometry({ ...geometry, shadedPolygons: (geometry.shadedPolygons || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '7px', padding: '3px 8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem', marginLeft: 'auto' }}>Remove</button>
+              </div>
+            </div>
+          );
+        })}
+        <button type="button" onClick={() => updateGeometry({ ...geometry, shadedPolygons: [...(geometry.shadedPolygons || []), { polygons: [[]], color: '#94a3b8', opacity: 0.35 }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer', fontSize: '0.82rem' }}>+ Add shaded region</button>
+      </div>
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         <button type="button" onClick={() => updateGeometry({ ...geometry, freeLabels: [...(geometry.freeLabels || []), { point: [0, 0], text: 'x' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add free label</button>
         {(geometry.freeLabels || []).map((label, idx) => {

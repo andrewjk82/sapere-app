@@ -16,6 +16,11 @@
  *                  inside the figure at vertex `at`
  *   sideLabels:  [ { between: [a, b], text, side? } ] // text on a segment;
  *                  side "out" (default) or "in"
+ *   shadedPolygons: [ { points: ["A","B","C",...], color?, opacity? } ]
+ *                  Shaded filled regions. List multiple polygons in one entry
+ *                  to shade between them (uses SVG evenodd fill rule so the
+ *                  inner polygon is cut out — useful for donut/frame regions).
+ *                  color defaults to "#94a3b8", opacity defaults to 0.35.
  */
 const GeometryFigure = ({
   points = {},
@@ -23,6 +28,7 @@ const GeometryFigure = ({
   angles = [],
   sideLabels = [],
   freeLabels = [],
+  shadedPolygons = [],
   showPointLabels = true,
   width = 300,
   fontSize = 14,
@@ -83,6 +89,33 @@ const GeometryFigure = ({
 
   const els = [];
   let key = 0;
+
+  // --- Shaded polygons --------------------------------------------------
+  // Each entry in shadedPolygons can contain multiple polygon rings.
+  // Using SVG evenodd fill rule cuts inner rings out (donut effect).
+  shadedPolygons.forEach((sp) => {
+    const rings = Array.isArray(sp.polygons) ? sp.polygons : [sp.points].filter(Boolean);
+    if (rings.length === 0) return;
+    const d = rings.map((ring) => {
+      if (!Array.isArray(ring) || ring.length < 2) return '';
+      const coords = ring.map((name) => {
+        const [sx, sy] = P(name);
+        return `${sx},${sy}`;
+      });
+      return `M ${coords.join(' L ')} Z`;
+    }).join(' ');
+    if (!d.trim()) return;
+    els.push(
+      <path
+        key={`sh${key++}`}
+        d={d}
+        fill={sp.color || '#94a3b8'}
+        fillOpacity={sp.opacity ?? 0.35}
+        fillRule="evenodd"
+        stroke="none"
+      />
+    );
+  });
 
   // --- Segments ---------------------------------------------------------
   segments.forEach((seg) => {
