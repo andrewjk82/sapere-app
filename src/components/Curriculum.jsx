@@ -132,7 +132,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23e', topicCode: '23E', topicTitle: 'Writing algebraic expressions', year: 'Year 7', seed: Y7_CH23E_QUESTIONS, label: 'Y7 Ch23 · Writing algebraic expressions' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23f', topicCode: '23F', topicTitle: 'Substitution', year: 'Year 7', seed: Y7_CH23F_QUESTIONS, label: 'Y7 Ch23 · Substitution' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23h', topicCode: '23H', topicTitle: 'Multiplying, dividing and expanding', year: 'Year 7', seed: Y7_CH23H_QUESTIONS, label: 'Y7 Ch23 · Multiplying, dividing and expanding' },
-  { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23i', topicCode: '23I', topicTitle: 'Word problems', year: 'Year 7', seed: Y7_CH23I_QUESTIONS, label: 'Y7 Ch23 · Word problems' },
+  { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23i', topicCode: '23I', topicTitle: 'Applying algebra', year: 'Year 7', seed: Y7_CH23I_QUESTIONS, label: 'Y7 Ch23 · Applying algebra' },
 ];
 import {
   fetchHscResultsIncremental,
