@@ -391,6 +391,73 @@ const MathPreview = ({ content, graphData, style = {} }) => {
   );
 };
 
+// Find all minimal closed polygon regions from the segment graph using DFS.
+function findFaces(points, segments) {
+  const names = Object.keys(points);
+  if (names.length < 3 || !segments || segments.length < 3) return [];
+
+  // Build undirected adjacency
+  const adj = {};
+  names.forEach((n) => { adj[n] = []; });
+  segments.forEach((s) => {
+    if (!points[s.from] || !points[s.to]) return;
+    if (!adj[s.from].includes(s.to)) adj[s.from].push(s.to);
+    if (!adj[s.to].includes(s.from)) adj[s.to].push(s.from);
+  });
+
+  const allCycles = [];
+  const sortedNames = [...names].sort();
+
+  // DFS: find all simple cycles, only going to nodes >= start to avoid duplicates
+  function dfs(start, cur, path, visited) {
+    for (const nb of adj[cur] || []) {
+      if (nb === start && path.length >= 3) {
+        allCycles.push([...path]);
+        continue;
+      }
+      if (!visited.has(nb) && nb > start) {
+        visited.add(nb);
+        path.push(nb);
+        dfs(start, nb, path, visited);
+        path.pop();
+        visited.delete(nb);
+      }
+    }
+  }
+
+  sortedNames.forEach((start) => {
+    dfs(start, start, [start], new Set([start]));
+  });
+
+  if (allCycles.length === 0) return [];
+
+  // Deduplicate (ABCD and ADCB are the same region)
+  const seenKeys = new Set();
+  const unique = allCycles.filter((c) => {
+    const k = [...c].sort().join(',');
+    if (seenKeys.has(k)) return false;
+    seenKeys.add(k);
+    return true;
+  });
+
+  // Keep only minimal cycles
+  unique.sort((a, b) => a.length - b.length);
+  const minimal = [];
+  unique.forEach((cycle) => {
+    const cs = new Set(cycle);
+    const dominated = minimal.some((m) => m.length < cycle.length && m.every((p) => cs.has(p)));
+    if (!dominated) minimal.push(cycle);
+  });
+
+  return minimal;
+}
+
+const SHADE_LEVELS = [
+  null,                               // 0 = unshaded (light dashed border shown)
+  { color: '#94a3b8', opacity: 0.30 }, // 1 = light shade
+  { color: '#94a3b8', opacity: 0.65 }, // 2 = dark shade
+];
+
 const GeometryEditor = ({ graphData, onChange }) => {
   const geometry = graphData?.geometry;
   const surfaceRef = React.useRef(null);
@@ -514,6 +581,63 @@ const GeometryEditor = ({ graphData, onChange }) => {
     return [Number(x.toFixed(2)), Number(y.toFixed(2))];
   };
 
+  // Compute clickable faces from segment graph (plain call — no hook needed here)
+  const faces = findFaces(flatPoints, geometry.segments || []);
+
+  // Map face canonical key → shade level index (0 = none, 1 = light, 2 = dark)
+  const faceKey = (face) => [...face].sort().join(',');
+  const shadedMap = {};
+  (geometry.shadedPolygons || []).forEach((sp) => {
+    const ring = Array.isArray(sp.polygons) ? sp.polygons[0] : sp.points;
+    if (!Array.isArray(ring)) return;
+    const k = [...ring].sort().join(',');
+    shadedMap[k] = sp.opacity >= 0.45 ? 2 : 1;
+  });
+
+  // Check if polygon A fully contains polygon B using ray-casting point-in-polygon
+  const polygonContains = (outerFace, innerFace) => {
+    // All points of innerFace must be inside outerFace
+    const outerCoords = outerFace.map((n) => flatPoints[n] || [0, 0]);
+    return innerFace.every((n) => {
+      const pt = flatPoints[n] || [0, 0];
+      // Point-in-polygon test (ray casting)
+      let inside = false;
+      for (let i = 0, j = outerCoords.length - 1; i < outerCoords.length; j = i++) {
+        const [xi, yi] = outerCoords[i];
+        const [xj, yj] = outerCoords[j];
+        if (((yi > pt[1]) !== (yj > pt[1])) && (pt[0] < (xj - xi) * (pt[1] - yi) / (yj - yi) + xi)) {
+          inside = !inside;
+        }
+      }
+      return inside;
+    });
+  };
+
+  const handleFaceClick = (face) => {
+    const k = faceKey(face);
+    const current = shadedMap[k] || 0;
+    const next = (current + 1) % 3;
+    const existing = (geometry.shadedPolygons || []).filter((sp) => {
+      const ring = Array.isArray(sp.polygons) ? sp.polygons[0] : sp.points;
+      if (!Array.isArray(ring)) return true;
+      return [...ring].sort().join(',') !== k;
+    });
+    if (next === 0) {
+      updateGeometry({ ...geometry, shadedPolygons: existing });
+    } else {
+      const level = SHADE_LEVELS[next];
+      // Find inner faces that are geometrically contained within this face
+      const innerRings = faces
+        .filter((f) => faceKey(f) !== k && polygonContains(face, f))
+        .map((f) => f);
+      const polygons = innerRings.length > 0 ? [face, ...innerRings] : [face];
+      updateGeometry({
+        ...geometry,
+        shadedPolygons: [...existing, { polygons, color: level.color, opacity: level.opacity }],
+      });
+    }
+  };
+
   const dragSelection = (event) => {
     if (!activeDrag) return;
     event.preventDefault();
@@ -584,6 +708,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
         </div>
       </div>
 
+      <div style={{ alignSelf: 'center', maxWidth: '100%', position: 'relative', zIndex: 0, overflow: 'hidden', borderRadius: '14px', border: '1px solid #e9d5ff', width: W, height: H }}>
       <svg
         ref={surfaceRef}
         viewBox={`0 0 ${W} ${H}`}
@@ -591,8 +716,33 @@ const GeometryEditor = ({ graphData, onChange }) => {
         onPointerUp={() => setActiveDrag(null)}
         onPointerCancel={() => setActiveDrag(null)}
         onPointerLeave={() => setActiveDrag(null)}
-        style={{ width: W, height: H, maxWidth: '100%', alignSelf: 'center', borderRadius: '14px', background: '#fff', border: '1px solid #e9d5ff', touchAction: 'none', overflow: 'visible' }}
+        style={{ width: W, height: H, maxWidth: '100%', alignSelf: 'center', borderRadius: '14px', background: '#fff', touchAction: 'none', overflow: 'visible' }}
       >
+        {/* DEBUG */}
+        <text x="4" y="14" fontSize="10" fill="red">{faces.length} faces</text>
+        {/* Clickable face regions — click cycles shade: none → light → dark → none */}
+        {faces.map((face, fi) => {
+          const k = faceKey(face);
+          const level = shadedMap[k] || 0;
+          const pts = face.map((n) => toSvg(flatPoints[n]).join(',')).join(' ');
+          const fill = SHADE_LEVELS[level]?.color || '#7c3aed';
+          const opacity = SHADE_LEVELS[level]?.opacity ?? 0.08;
+          return (
+            <polygon
+              key={`face-${fi}`}
+              points={pts}
+              fill={fill}
+              fillOpacity={opacity}
+              stroke="#a78bfa"
+              strokeWidth="1"
+              strokeDasharray="4 3"
+              strokeOpacity="0.5"
+              pointerEvents="all"
+              style={{ cursor: 'pointer' }}
+              onClick={(e) => { e.stopPropagation(); handleFaceClick(face); }}
+            />
+          );
+        })}
         {(geometry.segments || []).map((seg, idx) => {
           if (!geometry.points[seg.from] || !geometry.points[seg.to]) return null;
           const [x1, y1] = toSvg(geometry.points[seg.from]);
@@ -773,6 +923,7 @@ const GeometryEditor = ({ graphData, onChange }) => {
           });
         })()}
       </svg>
+      </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
         {pointNames.map((name) => (
@@ -860,70 +1011,12 @@ const GeometryEditor = ({ graphData, onChange }) => {
         </div>
       )}
 
-      {/* Shaded regions */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Shaded Regions</div>
-        {(geometry.shadedPolygons || []).map((sp, idx) => {
-          const rings = Array.isArray(sp.polygons) ? sp.polygons : [sp.points].filter(Boolean);
-          return (
-            <div key={idx} style={{ background: '#f8fafc', borderRadius: '10px', padding: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-              {rings.map((ring, rIdx) => (
-                <div key={rIdx} style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-                  <span style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 700 }}>Ring {rIdx + 1}:</span>
-                  <input
-                    value={Array.isArray(ring) ? ring.join(', ') : ''}
-                    onChange={(e) => {
-                      const newRing = e.target.value.split(',').map(s => s.trim()).filter(Boolean);
-                      const newRings = [...rings];
-                      newRings[rIdx] = newRing;
-                      const updated = [...(geometry.shadedPolygons || [])];
-                      updated[idx] = { ...sp, polygons: newRings, points: null };
-                      updateGeometry({ ...geometry, shadedPolygons: updated });
-                    }}
-                    placeholder="A, B, C, D"
-                    style={{ padding: '4px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', fontSize: '0.82rem', flex: 1, minWidth: '120px' }}
-                  />
-                  {rings.length > 1 && (
-                    <button type="button" onClick={() => {
-                      const newRings = rings.filter((_, i) => i !== rIdx);
-                      const updated = [...(geometry.shadedPolygons || [])];
-                      updated[idx] = { ...sp, polygons: newRings, points: null };
-                      updateGeometry({ ...geometry, shadedPolygons: updated });
-                    }} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '6px', padding: '3px 7px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem' }}>✕</button>
-                  )}
-                </div>
-              ))}
-              <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
-                <button type="button" onClick={() => {
-                  const newRings = [...rings, []];
-                  const updated = [...(geometry.shadedPolygons || [])];
-                  updated[idx] = { ...sp, polygons: newRings, points: null };
-                  updateGeometry({ ...geometry, shadedPolygons: updated });
-                }} style={{ border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', borderRadius: '7px', padding: '3px 8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem' }}>+ Ring (cutout)</button>
-                <label style={{ fontSize: '0.72rem', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  Color
-                  <input type="color" value={sp.color || '#94a3b8'} onChange={(e) => {
-                    const updated = [...(geometry.shadedPolygons || [])];
-                    updated[idx] = { ...sp, color: e.target.value };
-                    updateGeometry({ ...geometry, shadedPolygons: updated });
-                  }} style={{ width: '28px', height: '22px', border: 'none', borderRadius: '4px', cursor: 'pointer' }} />
-                </label>
-                <label style={{ fontSize: '0.72rem', color: '#64748b', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  Opacity
-                  <input type="range" min="0.05" max="1" step="0.05" value={sp.opacity ?? 0.35} onChange={(e) => {
-                    const updated = [...(geometry.shadedPolygons || [])];
-                    updated[idx] = { ...sp, opacity: Number(e.target.value) };
-                    updateGeometry({ ...geometry, shadedPolygons: updated });
-                  }} style={{ width: '70px' }} />
-                  <span>{Math.round((sp.opacity ?? 0.35) * 100)}%</span>
-                </label>
-                <button type="button" onClick={() => updateGeometry({ ...geometry, shadedPolygons: (geometry.shadedPolygons || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '7px', padding: '3px 8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.7rem', marginLeft: 'auto' }}>Remove</button>
-              </div>
-            </div>
-          );
-        })}
-        <button type="button" onClick={() => updateGeometry({ ...geometry, shadedPolygons: [...(geometry.shadedPolygons || []), { polygons: [[]], color: '#94a3b8', opacity: 0.35 }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer', fontSize: '0.82rem' }}>+ Add shaded region</button>
-      </div>
+      {/* Shaded regions — click a region in the diagram above to shade it */}
+      {faces.length > 0 && (
+        <div style={{ fontSize: '0.72rem', color: '#94a3b8', fontStyle: 'italic', textAlign: 'center' }}>
+          Click a region in the diagram to shade it · click again to darken · click once more to remove
+        </div>
+      )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         <button type="button" onClick={() => updateGeometry({ ...geometry, freeLabels: [...(geometry.freeLabels || []), { point: [0, 0], text: 'x' }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add free label</button>
