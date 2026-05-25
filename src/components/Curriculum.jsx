@@ -1935,12 +1935,13 @@ const Curriculum = () => {
                       return acc;
                     }, {});
 
-                    const yearOrder = ['Year 11', 'Year 12', 'Year 9', 'Year 8', 'Year 6', 'Other'];
+                    const yearOrder = ['Year 11', 'Year 12', 'Year 9', 'Year 8', 'Year 7', 'Year 6', 'Other'];
                     const yearColors = {
                       'Year 11': { bg: '#6366f1', label: '#fff' },
                       'Year 12': { bg: '#8b5cf6', label: '#fff' },
                       'Year 9':  { bg: '#10b981', label: '#fff' },
                       'Year 8':  { bg: '#3b82f6', label: '#fff' },
+                      'Year 7':  { bg: '#ec4899', label: '#fff' },
                       'Year 6':  { bg: '#f59e0b', label: '#fff' },
                       'Other':   { bg: '#94a3b8', label: '#fff' },
                     };
