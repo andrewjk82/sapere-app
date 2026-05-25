@@ -1283,9 +1283,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         isActive: false,
         updatedAt: serverTimestamp(),
       });
-      // Resolve all open reports linked to this question
-      const reportsSnap = await getDocs(query(collection(db, 'reports'), where('questionId', '==', id), where('status', '==', 'open')));
-      await Promise.all(reportsSnap.docs.map(r => updateDoc(r.ref, { status: 'resolved', resolvedAt: serverTimestamp() })));
+      // Resolve all open reports linked to this question.
+      // Query both questionId field and questionData.id (some reports store ID only in questionData).
+      const [snap1, snap2] = await Promise.all([
+        getDocs(query(collection(db, 'reports'), where('questionId', '==', id), where('status', '==', 'open'))),
+        getDocs(query(collection(db, 'reports'), where('questionData.id', '==', id), where('status', '==', 'open'))),
+      ]);
+      const seen = new Set();
+      const toResolve = [...snap1.docs, ...snap2.docs].filter(d => {
+        if (seen.has(d.id)) return false;
+        seen.add(d.id);
+        return true;
+      });
+      await Promise.all(toResolve.map(r => updateDoc(r.ref, { status: 'resolved', resolvedAt: serverTimestamp() })));
 
       const nextQuestions = questions.filter(q => q.id !== id);
       setQuestions(nextQuestions);

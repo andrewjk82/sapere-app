@@ -132,11 +132,16 @@ const ReportsAdmin = () => {
     if (!question?.id) return;
     if (!window.confirm(`Delete "${question.question || question.title || 'this question'}" from the Question Bank? This cannot be undone.`)) return;
     try {
+      // Find all reports linked to this question (match on questionId OR questionData.id)
+      const linkedReports = reports.filter(r =>
+        r.status !== 'resolved' && (
+          (r.questionId && r.questionId === question.id) ||
+          (r.questionData?.id && r.questionData.id === question.id)
+        )
+      );
       await Promise.all([
         updateDoc(doc(db, 'questions', question.id), { isActive: false }),
-        previewReport?.id
-          ? updateDoc(doc(db, 'reports', previewReport.id), { status: 'resolved', resolvedAt: serverTimestamp() })
-          : Promise.resolve(),
+        ...linkedReports.map(r => updateDoc(doc(db, 'reports', r.id), { status: 'resolved', resolvedAt: serverTimestamp() })),
       ]);
       setPreviewReport(null);
       setPreviewQuestion(null);
