@@ -109,6 +109,15 @@ const ChallengeReviewView = ({
   const studentText = formatStudentAnswer(q, studentRaw);
   const correctText = useMemo(() => getCorrectAnswerText(q), [q]);
 
+  // Auto-wrap plain text (no $ signs) in $...$ so MathView renders LaTeX properly
+  const wrapMath = (text) => {
+    if (!text) return text;
+    if (/\$/.test(text)) return text;
+    // Only wrap if it looks like it contains math (^, _, \, fractions etc)
+    if (/[\^_\\]|[0-9][a-zA-Z]|[a-zA-Z][0-9]/.test(text)) return `$${text}$`;
+    return text;
+  };
+
   const goPrev = () => setIdx((i) => Math.max(0, i - 1));
   const goNext = () => setIdx((i) => Math.min(total - 1, i + 1));
 
@@ -303,7 +312,7 @@ const ChallengeReviewView = ({
                 <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No panels shaded</div>
               )
             ) : studentText ? (
-              <MathView content={studentText} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
+              <MathView content={wrapMath(studentText)} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
             ) : (
               <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>
             )}
@@ -323,7 +332,7 @@ const ChallengeReviewView = ({
                   Shade exactly {q.answer} panel{Number(q.answer) !== 1 ? 's' : ''}
                 </div>
               ) : (
-                <MathView content={correctText} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
+                <MathView content={wrapMath(correctText)} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
               )}
             </div>
           )}

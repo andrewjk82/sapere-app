@@ -1300,15 +1300,24 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         topicId: q.topicId || '',
         topicCode: q.topicCode || '',
         topicTitle: q.topicTitle || '',
-        subQuestions: (q.subQuestions || []).map(sq => ({
-          ...sq,
-          answer: sq.answer || sq.a || '',
-          solution: sq.solution || '',
-          solutionSteps: (sq.solutionSteps || []).map(s =>
-            typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
-          ),
-          options: sq.options || [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }]
-        })),
+        subQuestions: (q.subQuestions || []).map(sq => {
+          const isMCQ = sq.type === 'multiple_choice';
+          const answerIdx = isMCQ && sq.answer !== undefined && sq.answer !== ''
+            ? parseInt(sq.answer, 10)
+            : (sq.answerIdx != null ? sq.answerIdx : null);
+          return {
+            ...sq,
+            answer: isMCQ ? '' : (sq.answer || sq.a || ''),
+            answerIdx: isMCQ ? (isNaN(answerIdx) ? null : answerIdx) : null,
+            solution: sq.solution || '',
+            solutionSteps: (sq.solutionSteps || []).map(s =>
+              typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
+            ),
+            options: (sq.options && sq.options.length > 0)
+              ? sq.options.map(o => typeof o === 'string' ? { text: o, imageUrl: '' } : { text: o.text || '', imageUrl: o.imageUrl || '' })
+              : [{ text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }, { text: '', imageUrl: '' }]
+          };
+        }),
         requiresManualGrading: q.requiresManualGrading || false,
         blanks: Array.isArray(q.blanks)
           ? q.blanks.map((b) => ({ label: b.label || '', answer: b.answer || '' }))

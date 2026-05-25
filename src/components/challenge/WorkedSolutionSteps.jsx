@@ -170,7 +170,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                         Working Out
                       </div>
                       <MathView
-                        content={/\$/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`}
+                        content={step.workingOut}
                         style={{ color: '#4c1d95', fontWeight: 500, fontSize: '1.06rem', lineHeight: 1.75 }}
                       />
                     </div>
