@@ -2885,19 +2885,23 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "\u2460 = a\u00b2, \u2461 = 5a, \u2462 = 4a, \u2463 = 20",
         "solutionSteps": [
           {
-            "explanation": "To find the area of a rectangle, we multiply its width by its height. For rectangle \u2460, both the width and height are $a$.",
+            "explanation": "To find the area of a rectangle, we use the formula: Area = width \u00d7 height. Let's look at each small rectangle one by one.",
+            "workingOut": "\\text{Area} = \\text{width} \\times \\text{height}"
+          },
+          {
+            "explanation": "For rectangle \u2460, the diagram shows it has a width of $a$ and a height of $a$.",
             "workingOut": "\\text{Area \u2460} = a \\times a = a^2"
           },
           {
-            "explanation": "For rectangle \u2461, the width is 5 and the height is $a$.",
+            "explanation": "For rectangle \u2461, it is next to rectangle \u2460. The total width of the top is $a + 5$, so its width is $5$. Its height is the same as rectangle \u2460, which is $a$.",
             "workingOut": "\\text{Area \u2461} = 5 \\times a = 5a"
           },
           {
-            "explanation": "For rectangle \u2462, the width is $a$ and the height is 4.",
+            "explanation": "For rectangle \u2462, it is below rectangle \u2460. Its width is the same as rectangle \u2460 ($a$). The total height is $a + 4$, so its height is $4$.",
             "workingOut": "\\text{Area \u2462} = a \\times 4 = 4a"
           },
           {
-            "explanation": "For rectangle \u2463, the width is 5 and the height is 4.",
+            "explanation": "For rectangle \u2463, it is below rectangle \u2461 and next to rectangle \u2462. Its width is $5$ and its height is $4$.",
             "workingOut": "\\text{Area \u2463} = 5 \\times 4 = 20"
           }
         ]
@@ -2909,11 +2913,19 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "(a + 5)(a + 4)",
         "solutionSteps": [
           {
-            "explanation": "We need to find the area of the large rectangle $ABCD$. The formula for the area of a rectangle is width $\\times$ height.",
+            "explanation": "Now we need to find the area of the entire large rectangle $ABCD$. We still use the formula: Area = width \u00d7 height.",
             "workingOut": "\\text{Area} = \\text{width} \\times \\text{height}"
           },
           {
-            "explanation": "Looking at the diagram, the total width of the large rectangle is $(a + 5)$ and the total height is $(a + 4)$. We multiply these two expressions together. We must use brackets to show we are multiplying the whole width by the whole height.",
+            "explanation": "Look at the labels on the outside of the large rectangle. The total width across the top is given as $(a + 5)$.",
+            "workingOut": "\\text{Total width} = (a + 5)"
+          },
+          {
+            "explanation": "The total height down the side is given as $(a + 4)$.",
+            "workingOut": "\\text{Total height} = (a + 4)"
+          },
+          {
+            "explanation": "Multiply the total width by the total height. We must use brackets around both expressions to show that we are multiplying the entire width by the entire height.",
             "workingOut": "\\text{Area } ABCD = (a + 5)(a + 4)"
           }
         ]
@@ -2925,15 +2937,19 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "a\u00b2 + 9a + 20",
         "solutionSteps": [
           {
-            "explanation": "The area of the large rectangle $ABCD$ must be exactly equal to the sum of the areas of the four smaller rectangles \u2460, \u2461, \u2462, and \u2463.",
+            "explanation": "The total area of the large rectangle $ABCD$ must be exactly equal to the sum of the areas of the four smaller rectangles that make it up.",
             "workingOut": "\\text{Area } ABCD = \\text{Area \u2460} + \\text{Area \u2461} + \\text{Area \u2462} + \\text{Area \u2463}"
           },
           {
-            "explanation": "We already found the expression for the area of $ABCD$ in part b: $(a + 5)(a + 4)$. We also found the areas of the smaller rectangles in part a. Let's add them all up.",
+            "explanation": "In part (b), we wrote the total area as $(a + 5)(a + 4)$. In part (a), we found the four smaller areas: $a^2$, $5a$, $4a$, and $20$. Let's substitute these into our equation.",
             "workingOut": "(a + 5)(a + 4) = a^2 + 5a + 4a + 20"
           },
           {
-            "explanation": "Now we simplify the right side of our equation by collecting the like terms. We have $5a$ and $4a$, which add up to $9a$.",
+            "explanation": "Now we simplify the right side of the equation. We have two 'like terms' that both have an '$a$': $5a$ and $4a$.",
+            "workingOut": "5a + 4a = 9a"
+          },
+          {
+            "explanation": "Replace $5a + 4a$ with $9a$ to get the final simplified expression. This shows how expanding double brackets works geometrically!",
             "workingOut": "(a + 5)(a + 4) = a^2 + 9a + 20"
           }
         ]
@@ -2945,19 +2961,23 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "\u2460 = 4a, \u2461 = 2a + 10, \u2462 = 2a + 8, \u2463 = 18",
         "solutionSteps": [
           {
-            "explanation": "The perimeter is the total distance around the outside of a shape. To find it, we add up all four sides of each rectangle. For rectangle \u2460, all four sides are $a$.",
+            "explanation": "The perimeter is the total distance around the outside edge of a shape. For a rectangle, we add up the lengths of all four sides: width + width + height + height.",
+            "workingOut": "\\text{Perimeter} = 2 \\times \\text{width} + 2 \\times \\text{height}"
+          },
+          {
+            "explanation": "For rectangle \u2460, the width is $a$ and the height is $a$.",
             "workingOut": "\\text{Perimeter \u2460} = a + a + a + a = 4a"
           },
           {
-            "explanation": "For rectangle \u2461, it has two sides of length 5 and two sides of length $a$.",
+            "explanation": "For rectangle \u2461, it has two horizontal sides of length $5$ and two vertical sides of length $a$.",
             "workingOut": "\\text{Perimeter \u2461} = 5 + 5 + a + a = 2a + 10"
           },
           {
-            "explanation": "For rectangle \u2462, it has two sides of length $a$ and two sides of length 4.",
+            "explanation": "For rectangle \u2462, it has two horizontal sides of length $a$ and two vertical sides of length $4$.",
             "workingOut": "\\text{Perimeter \u2462} = a + a + 4 + 4 = 2a + 8"
           },
           {
-            "explanation": "For rectangle \u2463, it has two sides of length 5 and two sides of length 4.",
+            "explanation": "For rectangle \u2463, it has two horizontal sides of length $5$ and two vertical sides of length $4$.",
             "workingOut": "\\text{Perimeter \u2463} = 5 + 5 + 4 + 4 = 18"
           }
         ]
@@ -2969,15 +2989,19 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "4a + 18",
         "solutionSteps": [
           {
-            "explanation": "To find the perimeter of the large rectangle $ABCD$, we add up its four outer sides. It has two sides of length $(a + 5)$ and two sides of length $(a + 4)$.",
+            "explanation": "To find the perimeter of the large rectangle $ABCD$, we need to add the lengths of its four outer edges. The total width is $(a + 5)$ and the total height is $(a + 4)$.",
             "workingOut": "\\text{Perimeter } ABCD = (a + 5) + (a + 5) + (a + 4) + (a + 4)"
           },
           {
-            "explanation": "Let's collect the like terms. First, let's add up all the $a$'s: $a + a + a + a = 4a$.",
-            "workingOut": "4a + 5 + 5 + 4 + 4"
+            "explanation": "To simplify, let's group all the like terms together. First, collect all the '$a$' terms.",
+            "workingOut": "a + a + a + a = 4a"
           },
           {
-            "explanation": "Now let's add up all the numbers: $5 + 5 + 4 + 4 = 18$. Adding this to our $4a$ gives us the final simplified perimeter.",
+            "explanation": "Next, collect all the number terms.",
+            "workingOut": "5 + 5 + 4 + 4 = 18"
+          },
+          {
+            "explanation": "Add the simplified parts together to get the final perimeter.",
             "workingOut": "4a + 18"
           }
         ]
