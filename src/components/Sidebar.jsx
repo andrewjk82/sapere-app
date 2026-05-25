@@ -210,6 +210,12 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
             { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() },
             { merge: true },
           );
+          // Sync avatar to leaderboard so the race view updates immediately
+          setDoc(
+            doc(db, 'leaderboard', user.uid),
+            { avatarUrl: nextUrl },
+            { merge: true },
+          ).catch(e => console.warn('leaderboard avatar sync failed:', e?.code || e));
           setAvatarOpen(false);
         }}
       />

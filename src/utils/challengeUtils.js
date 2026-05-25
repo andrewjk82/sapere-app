@@ -235,16 +235,17 @@ export const summarizeResults = (results) => {
   }, {});
 };
 
-export const summarizeByKey = (results, key, labelKey) => {
+export const summarizeByKey = (results, key, labelKey, codeKey) => {
   return (results || []).reduce((summary, result) => {
     const id = result?.[key];
     if (!id) return summary;
-    const current = summary[id] || {
-      id,
-      label: result?.[labelKey] || id,
-      correct: 0,
-      total: 0,
-    };
+    const rawTitle = result?.[labelKey] || '';
+    const code = codeKey ? (result?.[codeKey] || '') : '';
+    // Prefer "Code Title" > "Title" > "Code" > id (raw ID as last resort)
+    const label = rawTitle
+      ? (code ? `${code} ${rawTitle}` : rawTitle)
+      : (code || id);
+    const current = summary[id] || { id, label, correct: 0, total: 0 };
     return {
       ...summary,
       [id]: {

@@ -598,21 +598,65 @@ const ReportsAdmin = () => {
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
                   <div style={{ marginTop: '10px', minHeight: '150px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column' }}>
-                    {item.answerImages && item.answerImages.length > 0 ? (
-                      item.answerImages.map((imgUrl, i) => (
-                        <div key={i} style={{ borderBottom: i < item.answerImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px', background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
-                          <img src={imgUrl} alt={`Student Drawing Page ${i+1}`} style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block' }} />
+                    {(() => {
+                      // Filter empty/corrupt data URLs before deciding which branch to render
+                      const validImages = (item.answerImages || []).filter(url => url && url.length > 100);
+                      const singleImage = item.answerImage && item.answerImage.length > 100 ? item.answerImage : null;
+                      const GRID_BG = { background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' };
+
+                      const hasImages = validImages.length > 0 || singleImage;
+
+                      if (validImages.length > 0) {
+                        return (
+                          <>
+                            {validImages.map((imgUrl, i) => (
+                              <div key={i} style={{ ...GRID_BG, borderBottom: i < validImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px' }}>
+                                <img src={imgUrl} alt={`Student Drawing Page ${i + 1}`} style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block' }} />
+                              </div>
+                            ))}
+                            {item.answerText && (
+                              <div style={{ padding: '12px 16px', borderTop: '1px dashed #cbd5e1', background: '#f8fafc' }}>
+                                <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Written Answer</span>
+                                <MathView content={item.answerText} style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b', marginTop: '4px' }} />
+                              </div>
+                            )}
+                          </>
+                        );
+                      }
+
+                      if (singleImage) {
+                        return (
+                          <>
+                            <div style={{ ...GRID_BG, padding: '16px', flex: 1, display: 'flex' }}>
+                              <img src={singleImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', margin: 'auto' }} />
+                            </div>
+                            {item.answerText && (
+                              <div style={{ padding: '12px 16px', borderTop: '1px dashed #cbd5e1', background: '#f8fafc' }}>
+                                <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Written Answer</span>
+                                <MathView content={item.answerText} style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b', marginTop: '4px' }} />
+                              </div>
+                            )}
+                          </>
+                        );
+                      }
+
+                      if (item.answerText) {
+                        return (
+                          <div style={{ padding: '20px', textAlign: 'center', margin: 'auto' }}>
+                            <MathView content={item.answerText} style={{ fontSize: '1.2rem', fontWeight: 800 }} />
+                          </div>
+                        );
+                      }
+
+                      // No image and no text — student submitted a blank canvas
+                      return (
+                        <div style={{ padding: '24px', textAlign: 'center', margin: 'auto', color: '#94a3b8' }}>
+                          <div style={{ fontSize: '2rem', marginBottom: '8px' }}>✏️</div>
+                          <p style={{ margin: 0, fontWeight: 700, fontSize: '0.9rem' }}>No drawing submitted</p>
+                          <p style={{ margin: '4px 0 0', fontSize: '0.8rem' }}>Student submitted a blank canvas.</p>
                         </div>
-                      ))
-                    ) : item.answerImage ? (
-                      <div style={{ padding: '16px', flex: 1, display: 'flex', background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
-                        <img src={item.answerImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', margin: 'auto' }} />
-                      </div>
-                    ) : (
-                      <div style={{ padding: '20px', textAlign: 'center', margin: 'auto' }}>
-                         <MathView content={item.answerText || 'No text answer'} style={{ fontSize: '1.2rem', fontWeight: 800 }} />
-                      </div>
-                    )}
+                      );
+                    })()}
                   </div>
                 </div>
                 <div>

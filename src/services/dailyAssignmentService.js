@@ -19,6 +19,11 @@ import {
   getQuestionTargets,
 } from "./questionGenerator";
 import { localCache } from "./localCacheService";
+import {
+  getYearNumber,
+  normalizeYearLabel,
+  getValidChapterIdsForYears,
+} from "../utils/challengeUtils";
 
 const DEFAULT_YEAR = "Year 1";
 const DEFAULT_CHAPTER_ID = "y1-number";
@@ -47,16 +52,6 @@ const stripUndefined = (value) => {
   return value;
 };
 
-const getYearNumber = (value) => {
-  const parsed = parseInt(String(value || "").replace(/\D/g, ""), 10);
-  return Number.isFinite(parsed) ? parsed : null;
-};
-
-const normalizeYearLabel = (value) => {
-  const yearNumber = getYearNumber(value);
-  return yearNumber === null ? String(value || "").trim() : `Year ${yearNumber}`;
-};
-
 export const getAssignedChapters = (profile, assignedYear) => {
   if (Array.isArray(profile?.assignedChapters) && profile.assignedChapters.length > 0) {
     return profile.assignedChapters;
@@ -78,22 +73,6 @@ const CHAPTER_YEAR_MAP = (() => {
   });
   return map;
 })();
-
-const getValidChapterIdsForYears = (years, courses) => {
-  const ids = new Set();
-  years.forEach((year) => {
-    const yearData = CURRICULUM_DATA[normalizeYearLabel(year)];
-    if (!yearData) return;
-    let chapters = Array.isArray(yearData)
-      ? yearData
-      : courses.flatMap((course) => yearData[course] || []);
-    if (!Array.isArray(yearData) && chapters.length === 0) {
-      chapters = yearData.Advanced || Object.values(yearData)[0] || [];
-    }
-    chapters.forEach((chapter) => ids.add(chapter.id));
-  });
-  return ids;
-};
 
 // Builds a stable signature of the inputs that drive Daily Practice question
 // generation — i.e. the teacher's Daily Practice Settings (dailyPracticeConfig)

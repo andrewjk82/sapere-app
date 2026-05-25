@@ -1,6 +1,31 @@
 // ── Student Analytics & Learning Recommendation Engine ───────────────────────
 // Pure utility functions — no Firestore imports. Data fetching stays in components.
 
+import { CURRICULUM_DATA } from '../constants/curriculumData';
+
+// Lazy-built map: topicId → { code, title } from curriculum data
+let _topicLookup = null;
+const getTopicLookup = () => {
+  if (_topicLookup) return _topicLookup;
+  _topicLookup = {};
+  Object.values(CURRICULUM_DATA).forEach(yearData => {
+    const chapters = Array.isArray(yearData)
+      ? yearData
+      : Object.values(yearData || {}).flat();
+    chapters.forEach(chapter => {
+      (chapter?.topics || []).forEach(topic => {
+        if (topic?.id) {
+          _topicLookup[topic.id] = {
+            code: topic.code || '',
+            title: topic.title || '',
+          };
+        }
+      });
+    });
+  });
+  return _topicLookup;
+};
+
 /**
  * Aggregates topicStats across all historical stat documents (daily + calc).
  * Returns a map: { [topicId]: { label, correct, total } }
@@ -13,7 +38,19 @@ export const aggregateTopicStats = (allStats = []) => {
     Object.entries(ts).forEach(([topicId, data]) => {
       if (!topicId || topicId === 'undefined' || !data?.total) return;
       if (!map[topicId]) {
-        map[topicId] = { label: data.label || topicId, correct: 0, total: 0 };
+        const savedLabel = data.label || '';
+        const isRawId = savedLabel === topicId || !savedLabel;
+        let label = savedLabel;
+        if (isRawId) {
+          // Saved label is just the raw ID — look up in curriculum data
+          const entry = getTopicLookup()[topicId];
+          if (entry?.title) {
+            label = entry.code ? `${entry.code} ${entry.title}` : entry.title;
+          } else {
+            label = topicId; // last resort
+          }
+        }
+        map[topicId] = { label, correct: 0, total: 0 };
       }
       map[topicId].correct += data.correct || 0;
       map[topicId].total += data.total || 0;

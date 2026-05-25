@@ -111,6 +111,9 @@ const Settings = () => {
         try {
           await setDoc(doc(db, 'users', user.uid), { dreamImageUrl: compressedDataUrl }, { merge: true });
           setEditData(prev => ({ ...prev, dreamImageUrl: compressedDataUrl }));
+          // Sync dream image to leaderboard so the race view updates immediately
+          setDoc(doc(db, 'leaderboard', user.uid), { avatarUrl: compressedDataUrl }, { merge: true })
+            .catch(e => console.warn('leaderboard avatar sync failed:', e?.code || e));
         } catch (error) {
           console.error("Save failed:", error);
           showToast("Failed to save image.", 'error');
@@ -583,6 +586,12 @@ const Settings = () => {
             { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() },
             { merge: true },
           );
+          // Sync avatar to leaderboard so the race view updates immediately
+          setDoc(
+            doc(db, 'leaderboard', user.uid),
+            { avatarUrl: nextUrl },
+            { merge: true },
+          ).catch(e => console.warn('leaderboard avatar sync failed:', e?.code || e));
           setAvatarOpen(false);
         }}
       />

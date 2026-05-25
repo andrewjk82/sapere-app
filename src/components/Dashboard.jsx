@@ -464,6 +464,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       <AvatarPickerModal open={avatarOpen} onClose={() => setAvatarOpen(false)} onApply={async ({ avatarStyle, avatarSeed, avatarUrl: nextUrl }) => {
         if (!user?.uid) return;
         await setDoc(doc(db, 'users', user.uid), { avatarStyle, avatarSeed, avatarUrl: nextUrl, updatedAt: new Date().toISOString() }, { merge: true });
+        // Sync avatar to leaderboard so the race view updates immediately
+        setDoc(doc(db, 'leaderboard', user.uid), { avatarUrl: nextUrl }, { merge: true })
+          .catch(e => console.warn('leaderboard avatar sync failed:', e?.code || e));
         setAvatarOpen(false);
       }} />
 

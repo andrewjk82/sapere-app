@@ -1,21 +1,17 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  X, Check, Flag, ChevronLeft, ChevronRight, Clock, 
-  Trophy, Lightbulb, AlertTriangle, TrendingUp, Target,
-  CheckCircle2, XCircle
+import {
+  X, Flag, ChevronLeft, ChevronRight,
+  Trophy, AlertTriangle, Check, Lightbulb,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { db } from '../firebase/config';
-import { 
-  doc, getDoc, setDoc, collection, getDocs, 
-  query, where, addDoc, serverTimestamp, onSnapshot, runTransaction,
-  orderBy, limit
+import {
+  doc, getDoc, setDoc, collection, addDoc, serverTimestamp, runTransaction,
 } from 'firebase/firestore';
-import { generateQuestion, getQuestionTargets } from '../services/questionGenerator';
-import { generateCalculationSet } from '../services/calculationGenerator';
 import { localCache } from '../services/localCacheService';
+import { generateCalculationSet } from '../services/calculationGenerator';
 import { generateLearningRecommendations } from '../utils/analyticsUtils';
 import MathView, { toDisplayText } from './MathView';
 import {
@@ -24,7 +20,6 @@ import {
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
-  getDailyAssignmentCacheKey,
 } from '../services/dailyAssignmentService';
 
 // Sub-components
@@ -33,9 +28,19 @@ import ChallengeQuizView from './challenge/ChallengeQuizView';
 import ChallengeResultView from './challenge/ChallengeResultView';
 import ChallengeReviewView from './challenge/ChallengeReviewView';
 import SecretNoteView from './challenge/SecretNoteView';
+import ReportModal from './challenge/ReportModal';
+
+// Custom hooks
+import { useKeyboardActivity } from '../hooks/useKeyboardActivity';
+import { useAntiCheat } from '../hooks/useAntiCheat';
+import { useChallengeStatus } from '../hooks/useChallengeStatus';
+import { useChallengeHistory } from '../hooks/useChallengeHistory';
 
 // Secret Notebook (local-only mistake review)
 import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount } from '../utils/secretNote';
+
+// Answer matching (shared with ExamPrep)
+import { answersMatch } from '../utils/answerMatching';
 
 // Utilities
 import {
@@ -43,16 +48,12 @@ import {
   CHALLENGE_BLUEPRINT,
   CHALLENGE_CHAPTER_ID,
   CALC_ENGINE_VERSION,
-  MAX_HISTORY_PER_TYPE,
   getChallengeBootCacheKey,
-  getChallengeBootMetaId,
   getManualQuestionCacheKey,
   applyChallengeStatus,
   getChallengeStatusState,
   writeChallengeStatusMeta,
-  getTodayChallengeStatus,
   mergeChallengeBootCache,
-  pickWeightedDifficulty,
   summarizeResults,
   summarizeByKey,
   adjustDifficultyMix,
@@ -68,19 +69,13 @@ import {
   formatHistoryDate,
   getOptions,
   getOptionText,
-  getOptionImage,
 } from '../utils/challengeUtils';
-
-const KEYBOARD_ACTIVITY_GRACE_MS = 8000;
-const VIEWPORT_ACTIVITY_GRACE_MS = 4000;
-
-const isEditableElement = (target) =>
-  Boolean(target?.closest?.('input, textarea, select, [contenteditable="true"]')) ||
-  ['INPUT', 'TEXTAREA', 'SELECT'].includes(target?.tagName);
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
+
+  // ── Quiz flow state ──
   const [step, setStep] = useState('start');
   const [currentIdx, setCurrentIdx] = useState(0);
   const [questions, setQuestions] = useState([]);
@@ -89,90 +84,97 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOptionIdx, setSelectedOptionIdx] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
-  const [todayCompleted, setTodayCompleted] = useState(false);
-  const [abandonedToday, setAbandonedToday] = useState(false);
-  const [calcCompletedToday, setCalcCompletedToday] = useState(false);
-  const [calcAbandonedToday, setCalcAbandonedToday] = useState(false);
-  const [isFinishing, setIsFinishing] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [todayStatusReady, setTodayStatusReady] = useState(false);
-  const [history, setHistory] = useState([]);
-  const [studentProfile, setStudentProfile] = useState(null);
-  const [dailyStats, setDailyStats] = useState([]);
   const [shuffledOptions, setShuffledOptions] = useState([]);
-  const [viewMode, setViewMode] = useState('challenge');
   const [userAnswers, setUserAnswers] = useState([]);
   const [answerResults, setAnswerResults] = useState([]);
-  const [chapterProgress, setChapterProgress] = useState(null);
+  const [subAnswers, setSubAnswers] = useState({});
+  const [questionComments, setQuestionComments] = useState([]);
+  const [showHint, setShowHint] = useState(false);
+  const [autoTransitionTimer, setAutoTransitionTimer] = useState(null);
+  // 'correct' | 'wrong' | 'pending' | null — brief pastel flash right after grading
+  const [flash, setFlash] = useState(null);
+  const [countdown, setCountdown] = useState(0);
+  const [questionStartTime, setQuestionStartTime] = useState(null);
+
+  // ── Quiz session metadata ──
+  const [challengeType, setChallengeType] = useState('daily');
+  const [currentSessionId, setCurrentSessionId] = useState(null);
+  const [calcSessionMeta, setCalcSessionMeta] = useState(null);
+  const [isFinishing, setIsFinishing] = useState(false);
+  const isFinishingRef = useRef(false);
+  const [loading, setLoading] = useState(false);
+
+  // ── Post-quiz state ──
+  const [elapsedSeconds, setElapsedSeconds] = useState(null);
+  const [analyticsRecs, setAnalyticsRecs] = useState(null);
+
+  // ── UI state ──
+  const [viewMode, setViewMode] = useState('challenge');
   const [selectedChallenge, setSelectedChallenge] = useState(null);
-  const [workingOutByIdx, setWorkingOutByIdx] = useState({}); // questionIdx -> { workingOut, workingOutPages }
+  const [workingOutByIdx, setWorkingOutByIdx] = useState({});
+  const [workingOutPreview, setWorkingOutPreview] = useState(null);
+  const [warnings, setWarnings] = useState(0);
+  const [secretNoteKind, setSecretNoteKind] = useState(null);
+
+  // ── Report modal state ──
   const [isReporting, setIsReporting] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
   const [reportMessage, setReportMessage] = useState('');
-  const [subAnswers, setSubAnswers] = useState({});
-  const [questionComments, setQuestionComments] = useState([]); // per-question student comments for teacher
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
-  const [workingOutPreview, setWorkingOutPreview] = useState(null);
-  const [showHint, setShowHint] = useState(false);
-  const [autoTransitionTimer, setAutoTransitionTimer] = useState(null);
-  const canvasRef = useRef(null);
   const [isSubmittingCanvas, setIsSubmittingCanvas] = useState(false);
-  const quizStartTimeRef = useRef(null);
-  const [elapsedSeconds, setElapsedSeconds] = useState(null);
-  const [analyticsRecs, setAnalyticsRecs] = useState(null);
-  const [countdown, setCountdown] = useState(0);
-  // 'correct' | 'wrong' | 'pending' | null — brief pastel flash on the quiz
-  // view right after grading. Cleared when the next question starts.
-  const [flash, setFlash] = useState(null);
-  const [challengeType, setChallengeType] = useState('daily');
-  const [secretNoteKind, setSecretNoteKind] = useState(null);
-  const [warnings, setWarnings] = useState(0);
-  const [currentSessionId, setCurrentSessionId] = useState(null);
-  const [calcSessionMeta, setCalcSessionMeta] = useState(null);
-  const [questionStartTime, setQuestionStartTime] = useState(null);
-  // historyLoaded tracks whether we've ever fetched history — used to
-  // preload data right after quiz ends so Review list is ready immediately.
-  const [historyLoaded, setHistoryLoaded] = useState(false);
+
+  // ── Refs ──
+  const canvasRef = useRef(null);
   const answerInputRef = useRef(null);
+  const quizStartTimeRef = useRef(null);
+  // Always-current ref so useAntiCheat never captures a stale finishQuiz closure
+  const finishQuizRef = useRef(null);
+  const handleAnswerRef = useRef(null);
   const sessionReviewCountRef = useRef(0);
   const sessionReportCountRef = useRef(0);
-  // Always-current ref so the anti-cheat effect doesn't capture a stale finishQuiz closure.
-  const finishQuizRef = useRef(null);
-  const keyboardActivityAtRef = useRef(0);
-  const viewportActivityAtRef = useRef(0);
 
-  const markKeyboardActivity = useCallback(() => {
-    keyboardActivityAtRef.current = Date.now();
-  }, []);
+  // ── Custom hooks ──
+  const { markKeyboardActivity, markViewportKeyboardActivity, hasRecentKeyboardActivity } = useKeyboardActivity();
 
-  const markViewportKeyboardActivity = useCallback(() => {
-    viewportActivityAtRef.current = Date.now();
-  }, []);
+  const {
+    todayCompleted, setTodayCompleted,
+    abandonedToday, setAbandonedToday,
+    calcCompletedToday, setCalcCompletedToday,
+    calcAbandonedToday, setCalcAbandonedToday,
+    todayStatusReady,
+    studentProfile, setStudentProfile,
+    chapterProgress, setChapterProgress,
+    refreshStudentProfile,
+  } = useChallengeStatus(user?.uid);
 
-  const hasRecentKeyboardActivity = useCallback(() => {
-    const now = Date.now();
-    return (
-      isEditableElement(document.activeElement) ||
-      now - keyboardActivityAtRef.current < KEYBOARD_ACTIVITY_GRACE_MS ||
-      now - viewportActivityAtRef.current < VIEWPORT_ACTIVITY_GRACE_MS
-    );
-  }, []);
+  const {
+    history, dailyStats, fetchHistory,
+  } = useChallengeHistory(user?.uid, {
+    setTodayCompleted, setAbandonedToday, setCalcCompletedToday, setCalcAbandonedToday,
+  });
 
+  useAntiCheat({
+    step,
+    isAdmin,
+    isReporting,
+    showToast,
+    hasRecentKeyboardActivity,
+    markKeyboardActivity,
+    markViewportKeyboardActivity,
+    onFocusLost: () => setWarnings(w => w + 1),
+    finishQuizRef,
+  });
+
+  // ── Convenience helpers ──
   const resetSessionAttentionCounts = () => {
     sessionReviewCountRef.current = 0;
     sessionReportCountRef.current = 0;
   };
+  const markSessionReviewRequested  = () => { sessionReviewCountRef.current += 1; };
+  const markSessionReportSubmitted  = () => { sessionReportCountRef.current += 1; };
 
-  const markSessionReviewRequested = () => {
-    sessionReviewCountRef.current += 1;
-  };
-
-  const markSessionReportSubmitted = () => {
-    sessionReportCountRef.current += 1;
-  };
-
-  // window.innerWidth is read on every render intentionally — no React dep exists for resize.
-  // Memoizing these with [] would freeze them at mount time, which is worse.
+  // window.innerWidth is read on every render — no React dep exists for resize.
+  // Memoizing with [] would freeze at mount time.
   const viewportWidth = window.innerWidth;
   const isMobile = viewportWidth < 768;
   const isTabletCanvasLayout = viewportWidth >= 768 && viewportWidth < 1100;
@@ -212,54 +214,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   }, [questions, TOTAL_QUESTIONS]);
 
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
-
-
-
-  // Anti-Cheat: Detect Focus Loss
-  useEffect(() => {
-    if (step !== 'quiz') return;
-
-    const handleFocusLost = () => {
-      if (hasRecentKeyboardActivity()) return;
-      setWarnings(w => w + 1);
-      showToast("Please do not leave the challenge window! Switching tabs or apps is not allowed during the challenge.", 'warning');
-    };
-
-    const handleVisibilityChange = () => {
-      if (document.hidden) handleFocusLost();
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-    window.addEventListener("blur", handleFocusLost);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-      window.removeEventListener("blur", handleFocusLost);
-    };
-  }, [step, hasRecentKeyboardActivity, showToast]);
-
-  useEffect(() => {
-    if (step !== 'quiz') return undefined;
-
-    const onInputActivity = (e) => {
-      if (isEditableElement(e.target)) markKeyboardActivity();
-    };
-    const onViewportResize = () => {
-      if (hasRecentKeyboardActivity()) markViewportKeyboardActivity();
-    };
-
-    document.addEventListener('focusin', onInputActivity);
-    document.addEventListener('focusout', onInputActivity);
-    document.addEventListener('input', onInputActivity);
-    window.visualViewport?.addEventListener('resize', onViewportResize);
-
-    return () => {
-      document.removeEventListener('focusin', onInputActivity);
-      document.removeEventListener('focusout', onInputActivity);
-      document.removeEventListener('input', onInputActivity);
-      window.visualViewport?.removeEventListener('resize', onViewportResize);
-    };
-  }, [step, markKeyboardActivity, markViewportKeyboardActivity, hasRecentKeyboardActivity]);
 
   const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
@@ -307,315 +261,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
 
 
-  // Local-only status boot. Challenge buttons must not spend Firestore reads
-  // just to decide whether today's attempts are available.
-  useEffect(() => {
-    if (!user?.uid) return;
-    let cancelled = false;
-    const today = new Date().toLocaleDateString('en-CA');
-    const cacheKey = getChallengeBootCacheKey(user.uid);
-    const cached = localCache.get(cacheKey);
-    const localBoot = cached?.date === today
-      ? cached
-      : {
-          date: today,
-          todayCompleted: false,
-          abandonedToday: false,
-          calcCompletedToday: false,
-          calcAbandonedToday: false,
-          dailyStatus: 'open',
-          calcStatus: 'open',
-          studentProfile: cached?.studentProfile || {},
-          chapterProgress: cached?.chapterProgress ?? null,
-        };
-
-    setTodayCompleted(Boolean(localBoot.todayCompleted));
-    setAbandonedToday(Boolean(localBoot.abandonedToday));
-    setCalcCompletedToday(Boolean(localBoot.calcCompletedToday));
-    setCalcAbandonedToday(Boolean(localBoot.calcAbandonedToday));
-    setTodayStatusReady(true);
-    if (localBoot.studentProfile) setStudentProfile(localBoot.studentProfile);
-    if (localBoot.chapterProgress !== undefined) setChapterProgress(localBoot.chapterProgress);
-    localCache.set(cacheKey, { ...localBoot, savedAt: Date.now() });
-
-    const fetchData = async () => {
-      try {
-        const nextBoot = {
-          ...localBoot,
-          studentProfile: localBoot.studentProfile || {},
-          chapterProgress: localBoot.chapterProgress ?? null,
-        };
-        // Fetch a fresh profile if the cached copy is older than 5 minutes so
-        // teacher changes (dailyPracticeConfig, assignedChapters, etc.) propagate
-        // quickly without hitting Firestore on every single page load.
-        const PROFILE_TTL_MS = 5 * 60 * 1000;
-        const profileAge = Date.now() - (cached?.savedAt || 0);
-        const shouldFetchProfile = !localBoot.studentProfile
-          || Object.keys(localBoot.studentProfile).length === 0
-          || profileAge > PROFILE_TTL_MS;
-
-        if (shouldFetchProfile) {
-          const profileSnap = await getDoc(doc(db, 'users', user.uid));
-          if (cancelled) return;
-          nextBoot.studentProfile = profileSnap.exists() ? profileSnap.data() : (localBoot.studentProfile || {});
-        }
-
-        setStudentProfile(nextBoot.studentProfile);
-
-        const assignedYears = Array.isArray(nextBoot.studentProfile.assignedYear)
-          ? nextBoot.studentProfile.assignedYear
-          : [nextBoot.studentProfile.assignedYear || nextBoot.studentProfile.year || CHALLENGE_YEAR];
-        const assignedYear = assignedYears[0];
-        try {
-          const shouldFetchProgress = localBoot.chapterProgress === undefined;
-          if (shouldFetchProgress) {
-            const progressSnap = await getDoc(doc(db, 'users', user.uid, 'chapterProgress', `${String(assignedYear).replace(' ', '_')}_daily`));
-            if (cancelled) return;
-            nextBoot.chapterProgress = progressSnap.exists() ? progressSnap.data() : null;
-          }
-          setChapterProgress(nextBoot.chapterProgress);
-          // Merge only profile/progress into the CURRENT cache so that any
-          // reset status already applied by the onSnapshot listener is preserved.
-          const latestCache = localCache.get(cacheKey) || {};
-          localCache.set(cacheKey, { ...latestCache, studentProfile: nextBoot.studentProfile, chapterProgress: nextBoot.chapterProgress, savedAt: Date.now() });
-        } catch (e) {
-          console.warn('progress meta fetch failed (non-fatal):', e?.code || e);
-          const latestCache = localCache.get(cacheKey) || {};
-          localCache.set(cacheKey, { ...latestCache, studentProfile: nextBoot.studentProfile, chapterProgress: nextBoot.chapterProgress, savedAt: Date.now() });
-        }
-      } catch (err) {
-        console.error("Error fetching challenge data:", err);
-      }
-    };
-    fetchData();
-    return () => {
-      cancelled = true;
-    };
-  }, [user?.uid]);
-
-  // Re-fetch the student profile from Firestore and refresh local caches.
-  // Called only when a curriculum change is detected (teacher updated it, or
-  // a test just finished) — NOT on every app load — to keep Firestore reads low.
-  const refreshStudentProfile = useCallback(async (newProfileVersion) => {
-    if (!user?.uid) return;
-    try {
-      const profileSnap = await getDoc(doc(db, 'users', user.uid));
-      if (!profileSnap.exists()) return;
-      const freshProfile = profileSnap.data();
-      setStudentProfile(freshProfile);
-      // Update boot cache with the fresh profile + applied profileVersion.
-      const bootKey = getChallengeBootCacheKey(user.uid);
-      const bootCache = localCache.get(bootKey) || {};
-      localCache.set(bootKey, {
-        ...bootCache,
-        studentProfile: freshProfile,
-        profileVersion: newProfileVersion || bootCache.profileVersion || Date.now(),
-        savedAt: Date.now(),
-      });
-      // Invalidate today's cached daily assignment so it regenerates with the
-      // new curriculum (the stored doc is also re-checked via curriculumSignature).
-      const today = new Date().toLocaleDateString('en-CA');
-      localCache.remove(getDailyAssignmentCacheKey(user.uid, today));
-      return freshProfile;
-    } catch (e) {
-      console.warn('refreshStudentProfile failed (non-fatal):', e?.code || e);
-      return null;
-    }
-  }, [user?.uid]);
-
-  useEffect(() => {
-    if (!user?.uid) return undefined;
-    const cacheKey = `sapere-cache:${getChallengeBootCacheKey(user.uid)}`;
-    const applyCachedStatus = () => {
-      const today = new Date().toLocaleDateString('en-CA');
-      const cached = localCache.get(getChallengeBootCacheKey(user.uid));
-      if (cached?.date !== today) return;
-      setTodayCompleted(Boolean(cached.todayCompleted));
-      setAbandonedToday(Boolean(cached.abandonedToday));
-      setCalcCompletedToday(Boolean(cached.calcCompletedToday));
-      setCalcAbandonedToday(Boolean(cached.calcAbandonedToday));
-    };
-
-    // ── Realtime Boot Record (sync_meta) Listener ──
-    // Ensures teacher-initiated resets are reflected immediately on the student's phone.
-    const today = new Date().toLocaleDateString('en-CA');
-    const bootDocId = getChallengeBootMetaId(user.uid, today);
-    const unsubBoot = onSnapshot(doc(db, 'sync_meta', bootDocId), (snap) => {
-      if (snap.exists()) {
-        const data = snap.data();
-        const currentCache = localCache.get(getChallengeBootCacheKey(user.uid)) || {};
-
-        // ── Teacher-initiated curriculum update detection ──
-        // The teacher app bumps `profileVersion` in sync_meta whenever it
-        // changes a student's curriculum. When we see a newer value than the
-        // one we last applied, re-fetch the profile (one read) instead of
-        // re-fetching on every app load.
-        const serverProfileVersion = Number(data.profileVersion || 0);
-        if (serverProfileVersion > 0 && serverProfileVersion > Number(currentCache.profileVersion || 0)) {
-          refreshStudentProfile(serverProfileVersion);
-        }
-
-        // If the server says 'open' but we have 'abandoned'/'completed' locally, update it.
-        const serverDaily = data.status?.daily || 'open';
-        const serverCalc = data.status?.calc || 'open';
-        
-        // Robust YYYY-MM-DD check to avoid cross-day sync issues if device time is slightly off
-        const currentTodayStr = new Date().toLocaleDateString('en-CA');
-        if (today !== currentTodayStr) {
-           console.log('[sync_meta] Date changed, skipping stale sync.');
-           return;
-        }
-
-        // Use per-type reset timestamps so resetting one type doesn't accidentally unlock the other
-        const serverDailyResetTime = data.dailyResetAt ? new Date(data.dailyResetAt).getTime() : (data.resetAt ? new Date(data.resetAt).getTime() : 0);
-        const serverCalcResetTime = data.calcResetAt ? new Date(data.calcResetAt).getTime() : (data.resetAt ? new Date(data.resetAt).getTime() : 0);
-        // Compare against the last reset timestamp we already applied (not savedAt, which is
-        // updated on every app load and would be newer than the teacher's reset if the student
-        // opened the app after the reset, causing the reset to be silently ignored).
-        const cachedDailyResetAt = currentCache.dailyResetAt || 0;
-        const cachedCalcResetAt = currentCache.calcResetAt || 0;
-        const hasNewerDailyReset = serverDailyResetTime > cachedDailyResetAt;
-        const hasNewerCalcReset = serverCalcResetTime > cachedCalcResetAt;
-        // The teacher reset writes in two steps: setDoc (adds resetAt timestamp) then updateDoc
-        // (sets status.calc = 'open'). The first snapshot caches the timestamp so the second
-        // snapshot sees serverCalcResetTime === cachedCalcResetAt → hasNewerCalcReset = false,
-        // which would incorrectly keep the local 'abandoned' status. We treat a matching non-zero
-        // reset timestamp as "this reset was acknowledged — trust the server's current status."
-        const dailyResetAlreadyApplied = serverDailyResetTime > 0 && serverDailyResetTime === cachedDailyResetAt;
-        const calcResetAlreadyApplied = serverCalcResetTime > 0 && serverCalcResetTime === cachedCalcResetAt;
-
-        const finalDailyStatus = (serverDaily === 'open' && (currentCache.dailyStatus === 'completed' || currentCache.dailyStatus === 'abandoned') && !hasNewerDailyReset && !dailyResetAlreadyApplied)
-          ? (currentCache.dailyStatus || 'open')
-          : serverDaily;
-
-        const finalCalcStatus = (serverCalc === 'open' && (currentCache.calcStatus === 'completed' || currentCache.calcStatus === 'abandoned') && !hasNewerCalcReset && !calcResetAlreadyApplied)
-          ? (currentCache.calcStatus || 'open')
-          : serverCalc;
-
-        const patch = {
-          date: today,
-          dailyStatus: finalDailyStatus,
-          calcStatus: finalCalcStatus,
-          todayCompleted: finalDailyStatus === 'completed',
-          abandonedToday: finalDailyStatus === 'abandoned',
-          calcCompletedToday: finalCalcStatus === 'completed',
-          calcAbandonedToday: finalCalcStatus === 'abandoned',
-          dailyResetAt: hasNewerDailyReset ? serverDailyResetTime : cachedDailyResetAt,
-          calcResetAt: hasNewerCalcReset ? serverCalcResetTime : cachedCalcResetAt,
-          savedAt: currentCache.savedAt || 0,
-        };
-
-        // Only update if something actually changed to avoid infinite flush cycles
-        if (JSON.stringify(patch) !== JSON.stringify(currentCache)) {
-           localCache.set(getChallengeBootCacheKey(user.uid), patch);
-           applyCachedStatus();
-        }
-      }
-    }, (err) => {
-      console.warn('[DailyChallenge] Boot listener failed:', err);
-    });
-
-    const handleStorage = (event) => {
-      if (!event || event.key === cacheKey) applyCachedStatus();
-    };
-    window.addEventListener('storage', handleStorage);
-    window.addEventListener('sapere-challenge-reset-applied', handleStorage);
-    return () => {
-      unsubBoot();
-      window.removeEventListener('storage', handleStorage);
-      window.removeEventListener('sapere-challenge-reset-applied', handleStorage);
-    };
-  }, [user?.uid, refreshStudentProfile]);
-
-  // ── Challenge history loader ──
-  // One-shot getDocs (NOT a realtime listener) — past challenge records change
-  // rarely, so a live subscription would bill reads continuously for nothing.
-  // Fetched when entering the start/history screens and after finishQuiz.
-  // Teacher-initiated resets still arrive in realtime via the sync_meta
-  // listener above — that path is untouched.
-  const fetchHistory = useCallback(async ({ deriveStatus = true } = {}) => {
-    if (!user?.uid) return;
-    const today = new Date().toLocaleDateString('en-CA');
-    try {
-      const [dailySnap, calcSnap] = await Promise.all([
-        getDocs(query(
-          collection(db, 'users', user.uid, 'daily_stats'),
-          orderBy('timestamp', 'desc'),
-          limit(MAX_HISTORY_PER_TYPE),
-        )),
-        getDocs(query(
-          collection(db, 'users', user.uid, 'calc_stats'),
-          orderBy('timestamp', 'desc'),
-          limit(MAX_HISTORY_PER_TYPE),
-        )),
-      ]);
-      const dailyData = dailySnap.docs.map(d => ({ id: d.id, statCollection: 'daily_stats', ...d.data() }));
-      const calcData = calcSnap.docs.map(d => ({ id: d.id, statCollection: 'calc_stats', ...d.data() }));
-      const merged = [...dailyData, ...calcData]
-        .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
-        .slice(0, 30);
-      setHistory(merged);
-      // dailyStats (used by learning-insights) reuses the same fetch
-      setDailyStats(dailyData);
-      setHistoryLoaded(true);
-
-      // Reconcile today's completion state from the fetched records.
-      // Skipped right after finishQuiz (deriveStatus:false) — finishQuiz has
-      // already set the correct local state.
-      if (deriveStatus) {
-        const todayDaily = dailyData.find(item => item.id === today);
-        const todayCalc = calcData.find(item => item.id === today);
-        const cachedBoot = localCache.get(getChallengeBootCacheKey(user.uid));
-        const dailyWasReset = cachedBoot?.date === today && cachedBoot.dailyStatus === 'open';
-        const calcWasReset = cachedBoot?.date === today && cachedBoot.calcStatus === 'open';
-
-        if (dailyWasReset && !todayDaily) {
-          setTodayCompleted(false);
-          setAbandonedToday(false);
-        } else if (todayDaily) {
-          const completed = Boolean(todayDaily.completed);
-          setTodayCompleted(completed);
-          setAbandonedToday(!completed);
-        } else if (cachedBoot?.date === today && cachedBoot.todayCompleted === false && cachedBoot.abandonedToday === false) {
-          setTodayCompleted(false);
-          setAbandonedToday(false);
-        }
-
-        if (calcWasReset && !todayCalc) {
-          setCalcCompletedToday(false);
-          setCalcAbandonedToday(false);
-        } else if (todayCalc) {
-          const completed = Boolean(todayCalc.completed);
-          setCalcCompletedToday(completed);
-          setCalcAbandonedToday(!completed);
-        } else if (cachedBoot?.date === today && cachedBoot.calcCompletedToday === false && cachedBoot.calcAbandonedToday === false) {
-          setCalcCompletedToday(false);
-          setCalcAbandonedToday(false);
-        }
-        if (!dailyWasReset && !calcWasReset && (todayDaily || todayCalc)) {
-          const statusPatch = {
-            date: today,
-            ...(todayDaily ? {
-              dailyStatus: todayDaily.completed ? 'completed' : 'abandoned',
-              todayCompleted: Boolean(todayDaily.completed),
-              abandonedToday: !todayDaily.completed,
-            } : {}),
-            ...(todayCalc ? {
-              calcStatus: todayCalc.completed ? 'completed' : 'abandoned',
-              calcCompletedToday: Boolean(todayCalc.completed),
-              calcAbandonedToday: !todayCalc.completed,
-            } : {}),
-          };
-          mergeChallengeBootCache(user.uid, statusPatch);
-        }
-      }
-    } catch (err) {
-      console.warn('history fetch failed (non-fatal):', err?.code || err);
-    }
-  }, [user?.uid]);
-
-  // Load history when entering the start or history screens. Past records
-  // change rarely; finishQuiz triggers its own refresh after writing.
+  // ── Load history when entering start/history screens ──
+  // finishQuiz triggers its own refresh after writing.
   useEffect(() => {
     if (!user?.uid) return;
     if (viewMode === 'history' || step === 'start') {
@@ -692,11 +339,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     let cancelled = false;
     (async () => {
-      const { getDoc: gd, doc: docFn } = await import('firebase/firestore');
       await Promise.allSettled(
         indicesNeedingFetch.map(async ({ idx }) => {
           try {
-            const snap = await gd(docFn(db, 'users', user.uid, statColName, dateId, 'working_out', String(idx)));
+            const snap = await getDoc(doc(db, 'users', user.uid, statColName, dateId, 'working_out', String(idx)));
             if (!cancelled && snap.exists()) {
               const data = snap.data();
               setWorkingOutByIdx(prev => ({
@@ -713,6 +359,28 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     return () => { cancelled = true; };
   }, [selectedChallenge, user?.uid]);
 
+  // ── Shared quiz initialisation ──
+  // Both calc and daily write an "abandoned" start record to Firestore before
+  // any questions are shown — this is the crash-safety lock. On a normal
+  // completion, finishQuiz overwrites it with completed:true.
+  const initQuizState = (combinedQs) => {
+    setQuestions(combinedQs);
+    setUserAnswers(new Array(combinedQs.length).fill(null));
+    setAnswerResults(new Array(combinedQs.length).fill(null));
+    setCurrentIdx(0);
+    setScore(0);
+    resetSessionAttentionCounts();
+  };
+
+  const beginQuiz = (combinedQs) => {
+    quizStartTimeRef.current = Date.now();
+    setElapsedSeconds(null);
+    setStep('quiz');
+    setupQuestion(combinedQs[0]);
+    if (setIsLocked) setIsLocked(true);
+    setLoading(false);
+  };
+
   const startCalculationQuiz = async () => {
     const today = new Date().toLocaleDateString('en-CA');
     if (calcCompletedToday || calcAbandonedToday) {
@@ -722,84 +390,49 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
-    const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
-    const assignedYear = assignedYears[0];
-    const assignedChapters = Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [];
-    const calcTopics = assignedChapters.filter(id => id.startsWith('calc-'));
-    
-    const timeLimit = studentProfile?.calcTimeLimit || 30;
-    const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, timeLimit);
+    const calcTopics = (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [])
+      .filter(id => id.startsWith('calc-'));
+    const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, studentProfile?.calcTimeLimit || 30);
+
     const sessionMeta = {
       engineVersion: CALC_ENGINE_VERSION,
       generationMode: 'local-random',
       seed: createSessionSeed(),
       startedAt: new Date().toISOString(),
     };
-    
-    const sessionId = today;
-    setCurrentSessionId(sessionId);
+    setCurrentSessionId(today);
     setCalcSessionMeta(sessionMeta);
-    resetSessionAttentionCounts();
+    initQuizState(combinedQs);
 
-    setQuestions(combinedQs);
-    setUserAnswers(new Array(qCount).fill(null));
-    setAnswerResults(new Array(qCount).fill(null));
-    setCurrentIdx(0);
-    setScore(0);
-
-    // --- Firebase Lock (Method 2) ---
-    // We write the 0-point record BEFORE starting.
+    // Firebase start-record (crash-safety lock)
     if (user?.uid) {
       setLoading(true);
       try {
         const now = new Date();
-        const startRecord = {
-          completed: false,
-          abandoned: true,
-          score: 0,
-          total: qCount,
+        await setDoc(doc(db, 'users', user.uid, 'calc_stats', today), {
+          completed: false, abandoned: true, score: 0, total: qCount,
           challengeType: 'calc',
-          timestamp: now.toISOString(),
-          date: today,
+          timestamp: now.toISOString(), date: today,
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questionCount: qCount,
           engineVersion: sessionMeta.engineVersion,
           generationMode: sessionMeta.generationMode,
           seed: sessionMeta.seed,
-        };
-        await setDoc(doc(db, 'users', user.uid, 'calc_stats', today), startRecord, { merge: true });
+        }, { merge: true });
         await writeChallengeStatusMeta(user.uid, today, 'calc', 'abandoned');
-        await updateAdminDailySummary({
-          userId: user.uid,
-          date: today,
-          challengeType: 'calc',
-          score: 0,
-          total: qCount,
-          studentProfile,
-          user,
-        }).catch(e => console.warn('Admin summary pre-write failed:', e));
+        updateAdminDailySummary({ userId: user.uid, date: today, challengeType: 'calc', score: 0, total: qCount, studentProfile, user })
+          .catch(e => console.warn('Admin summary pre-write failed:', e));
       } catch (err) {
-        console.error("Start-up Firebase lock failed:", err);
-        showToast("Connection failed. Please check your internet and try again.", 'error');
+        console.error('Calc start-up Firebase lock failed:', err);
+        showToast('Connection failed. Please check your internet and try again.', 'error');
         setLoading(false);
         return;
       }
     }
 
-    quizStartTimeRef.current = Date.now();
-    setElapsedSeconds(null);
-    setStep('quiz');
-    setupQuestion(combinedQs[0]);
-    if (setIsLocked) setIsLocked(true);
-    setLoading(false);
+    beginQuiz(combinedQs);
     setCalcAbandonedToday(true);
-    mergeChallengeBootCache(user?.uid, {
-      date: today,
-      calcStatus: 'abandoned',
-      calcCompletedToday: false,
-      calcAbandonedToday: true,
-      savedAt: Date.now()
-    });
+    mergeChallengeBootCache(user?.uid, { date: today, calcStatus: 'abandoned', calcCompletedToday: false, calcAbandonedToday: true, savedAt: Date.now() });
   };
 
   const startDailyQuiz = async () => {
@@ -808,72 +441,41 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       const qCount = getQuestionCount('daily');
       setLoading(true);
       const today = new Date().toLocaleDateString('en-CA');
+
       const assignment = await fetchOrCreateDailyAssignment({
         uid: user?.uid,
-        studentProfile: {
-          ...(studentProfile || {}),
-          difficultyMix: chapterProgress?.difficultyMix,
-        },
+        studentProfile: { ...(studentProfile || {}), difficultyMix: chapterProgress?.difficultyMix },
         dateKey: today,
         questionCount: qCount,
       });
       const combinedQs = (assignment.questions || []).map(correctQuestionAnswer);
-      if (combinedQs.length === 0) {
-        throw new Error('No daily assignment questions were generated.');
-      }
-      resetSessionAttentionCounts();
+      if (combinedQs.length === 0) throw new Error('No daily assignment questions were generated.');
 
-      setQuestions(combinedQs);
-      setUserAnswers(new Array(combinedQs.length).fill(null));
-      setAnswerResults(new Array(combinedQs.length).fill(null));
-      setCurrentIdx(0);
-      setScore(0);
+      initQuizState(combinedQs);
 
-      // --- Firebase Lock (Method 2) ---
+      // Firebase start-record (crash-safety lock)
       if (user?.uid) {
         const now = new Date();
-        const startRecord = {
-          completed: false,
-          abandoned: true,
-          score: 0,
-          total: combinedQs.length,
+        await setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
+          completed: false, abandoned: true, score: 0, total: combinedQs.length,
           challengeType: 'daily',
-          timestamp: now.toISOString(),
-          date: today,
+          timestamp: now.toISOString(), date: today,
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questionCount: combinedQs.length,
-          assignmentVersion: assignment.version || null
-        };
-        await setDoc(doc(db, 'users', user.uid, 'daily_stats', today), startRecord, { merge: true });
+          assignmentVersion: assignment.version || null,
+        }, { merge: true });
         await writeChallengeStatusMeta(user.uid, today, 'daily', 'abandoned');
         await markDailyAssignmentStarted(user.uid, today).catch(() => {});
-        await updateAdminDailySummary({
-          userId: user.uid,
-          date: today,
-          challengeType: 'daily',
-          score: 0,
-          total: combinedQs.length,
-          studentProfile,
-          user,
-        }).catch(e => console.warn('Admin summary pre-write failed:', e));
+        updateAdminDailySummary({ userId: user.uid, date: today, challengeType: 'daily', score: 0, total: combinedQs.length, studentProfile, user })
+          .catch(e => console.warn('Admin summary pre-write failed:', e));
       }
 
-      setStep('quiz');
-      setupQuestion(combinedQs[0]);
-      if (setIsLocked) setIsLocked(true);
-      setLoading(false);
+      beginQuiz(combinedQs);
       setAbandonedToday(true);
-      mergeChallengeBootCache(user?.uid, {
-        date: today,
-        dailyStatus: 'abandoned',
-        todayCompleted: false,
-        abandonedToday: true,
-        savedAt: Date.now()
-      });
+      mergeChallengeBootCache(user?.uid, { date: today, dailyStatus: 'abandoned', todayCompleted: false, abandonedToday: true, savedAt: Date.now() });
     } catch (error) {
-      console.error("Critical error in startDailyQuiz:", error);
-      const detail = error?.message ? ` (${error.message})` : '';
-      showToast(`Failed to start challenge${detail}. Please check your assigned curriculum or try again later.`, 'error');
+      console.error('Critical error in startDailyQuiz:', error);
+      showToast(`Failed to start challenge${error?.message ? ` (${error.message})` : ''}. Please check your assigned curriculum or try again later.`, 'error');
       setLoading(false);
     }
   };
@@ -932,66 +534,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
       if (remaining <= 0) {
         clearInterval(timer);
-        handleAnswer(null, null); // Time's up
+        handleAnswerRef.current?.(null, null); // Time's up — use ref to avoid stale closure
       }
     }, 100); // Check more frequently for smooth UI
     
     return () => clearInterval(timer);
   }, [step, selectedOption, questionStartTime, currentIdx]);
 
-  // Prevent accidental navigation
-  useEffect(() => {
-    if ((step === 'quiz' || step === 'feedback') && !isReporting) {
-      const handleBeforeUnload = (e) => {
-        e.preventDefault();
-        e.returnValue = '';
-      };
-      window.addEventListener('beforeunload', handleBeforeUnload);
-      return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-    }
-  }, [step, isReporting]);
-
-  // Strict termination: end quiz only for real app/tab switching.
-  // iPadOS can emit blur, pagehide, and visibility events while the math
-  // answer keyboard is opening or closing, so keyboard activity is ignored.
-  useEffect(() => {
-    if (isAdmin || step !== 'quiz') return undefined;
-
-    let terminationTimer = null;
-    const clearTerminationTimer = () => {
-      if (terminationTimer) {
-        window.clearTimeout(terminationTimer);
-        terminationTimer = null;
-      }
-    };
-
-    const handleCheatingAttempt = () => {
-      if (hasRecentKeyboardActivity()) return;
-      if (document.visibilityState !== 'hidden') {
-        clearTerminationTimer();
-        return;
-      }
-      clearTerminationTimer();
-      terminationTimer = window.setTimeout(() => {
-        if (document.visibilityState !== 'hidden' || hasRecentKeyboardActivity()) return;
-        showToast("⚠️ Challenge Terminated: Screen switching or screenshots detected.", 'error', 5000);
-        finishQuizRef.current?.(true);
-      }, 500);
-    };
-    document.addEventListener('visibilitychange', handleCheatingAttempt);
-
-    const handleImmediateTermination = () => {
-      if (hasRecentKeyboardActivity()) return;
-      finishQuizRef.current?.(true);
-    };
-    window.addEventListener('pagehide', handleImmediateTermination);
-
-    return () => {
-      clearTerminationTimer();
-      document.removeEventListener('visibilitychange', handleCheatingAttempt);
-      window.removeEventListener('pagehide', handleImmediateTermination);
-    };
-  }, [step, isAdmin, showToast, hasRecentKeyboardActivity]);
+  // Anti-cheat (focus-loss warnings, beforeunload, termination) is handled by useAntiCheat hook above.
 
   const handleReportSubmit = async () => {
     if (!reportMessage.trim()) return;
@@ -1043,120 +593,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
   };
 
-  const closeReportModal = () => {
+  const closeReportModal = useCallback(() => {
     setIsReporting(false);
     setReportedQuestion(null);
     setReportMessage('');
-  };
-
-  const renderReportModal = () => (
-    <AnimatePresence>
-      {isReporting && (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 100001, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-          <motion.div 
-            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} 
-            onClick={closeReportModal} 
-            style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.8)', backdropFilter: 'blur(8px)' }} 
-          />
-          <motion.div 
-            initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} 
-            style={{ position: 'relative', width: '100%', maxWidth: '400px', background: 'white', borderRadius: '32px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)', padding: '32px' }}
-          >
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-              <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 800, color: '#1e293b', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Flag size={20} style={{ color: '#ef4444' }} /> Report Issue
-              </h3>
-              <button onClick={closeReportModal} style={{ border: 'none', background: '#f1f5f9', width: '32px', height: '32px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#64748b' }}>
-                <X size={18} />
-              </button>
-            </div>
-            <p style={{ color: '#475569', fontSize: '0.95rem', marginBottom: '16px', lineHeight: 1.5 }}>
-              Found a mistake? Tell us what's wrong with this question.
-            </p>
-            <textarea
-              value={reportMessage}
-              onChange={(e) => setReportMessage(e.target.value)}
-              placeholder="e.g., I got the answer right but it flagged it as wrong."
-              style={{ width: '100%', height: '120px', padding: '16px', borderRadius: '16px', border: '2px solid #e2e8f0', outline: 'none', resize: 'none', fontSize: '1rem', color: '#1e293b', marginBottom: '24px' }}
-            />
-            <button 
-              onClick={handleReportSubmit}
-              disabled={isSubmittingReport || !reportMessage.trim()}
-              style={{ width: '100%', padding: '16px', borderRadius: '16px', border: 'none', background: '#ef4444', color: 'white', fontWeight: 800, fontSize: '1.1rem', cursor: isSubmittingReport || !reportMessage.trim() ? 'not-allowed' : 'pointer', opacity: isSubmittingReport || !reportMessage.trim() ? 0.5 : 1 }}
-            >
-              {isSubmittingReport ? 'Submitting...' : 'Submit Report'}
-            </button>
-          </motion.div>
-        </div>
-      )}
-    </AnimatePresence>
-  );
-
-  const robustNormalize = (str) => {
-    if (!str) return '';
-    let s = String(str)
-      .toLowerCase()
-      // Unify superscript / power notation so keypad "²" matches stored "^2".
-      .replace(/⁰/g, '^0').replace(/¹/g, '^1').replace(/²/g, '^2').replace(/³/g, '^3')
-      .replace(/⁴/g, '^4').replace(/⁵/g, '^5').replace(/⁶/g, '^6')
-      .replace(/⁷/g, '^7').replace(/⁸/g, '^8').replace(/⁹/g, '^9')
-      .replace(/\^\{([^{}]*)\}/g, '^$1')   // ^{2} -> ^2
-      // Unify minus-sign variants (unicode minus / en/em dash) with ASCII "-".
-      .replace(/[−–—]/g, '-')
-      // Drop explicit multiplication signs so "3*a"/"3·a"/"3×a" == "3a".
-      .replace(/\\cdot|\\times|×|·|⋅|∙|\*/g, '')
-      .replace(/\\left|\\right/g, '')      // Strip LaTeX sizing wrappers
-      .replace(/\$/g, '')                 // Strip math delimiters
-      .replace(/[{}]/g, '')               // Strip leftover LaTeX braces
-      .replace(/\s+/g, '')                // Remove whitespace
-      .replace(/[,.;]/g, '')             // Remove punctuation
-      .replace(/\\ge|\\geq|≥/g, '>=')     // Normalize >=
-      .replace(/\\le|\\leq|≤/g, '<=')     // Normalize <=
-      .replace(/([a-z])>([0-9.-]+)(?:or|\|\|)([a-z])=\2/, '$1>=$2') // x>1orx=1 -> x>=1
-      .replace(/([a-z])=([0-9.-]+)(?:or|\|\|)([a-z])>\2/, '$1>=$2') // x=1orx>1 -> x>=1
-      .trim();
-
-    // Polynomial term reorder: a plain expression like "3a^2-10ab-8b^2" should
-    // match the same terms written in any order. Only applied to expressions
-    // with no relation (=,<,>) or division so inequalities/fractions are safe.
-    if (s && /[a-z]/.test(s) && !/[=<>/]/.test(s) && /[+-]/.test(s.slice(1))) {
-      const body = (s[0] === '+' || s[0] === '-') ? s : '+' + s;
-      const terms = body.match(/[+-][^+-]+/g);
-      if (terms && terms.join('') === body) {
-        s = terms.slice().sort().join('').replace(/^\+/, '');
-      }
-    }
-    return s;
-  };
-
-  const parseNumericAnswer = (value) => {
-    if (value === null || value === undefined) return null;
-    const raw = String(value).trim();
-    if (!raw) return null;
-
-    const cleaned = raw
-      .replace(/[−–—]/g, '-')
-      .replace(/\$/g, '')
-      .replace(/,/g, '')
-      .replace(/\b(aud|usd|nzd|dollars?|cents?)\b/gi, '')
-      .trim();
-
-    if (!/^-?\d+(?:\.\d+)?%?$/.test(cleaned)) return null;
-    const isPercent = cleaned.endsWith('%');
-    const number = Number(cleaned.replace(/%$/, ''));
-    return Number.isFinite(number) ? { number, isPercent } : null;
-  };
-
-  const answersMatch = (studentAnswer, expectedAnswer) => {
-    const studentNumeric = parseNumericAnswer(studentAnswer);
-    const expectedNumeric = parseNumericAnswer(expectedAnswer);
-
-    if (studentNumeric && expectedNumeric && studentNumeric.isPercent === expectedNumeric.isPercent) {
-      return Math.abs(studentNumeric.number - expectedNumeric.number) < 0.000001;
-    }
-
-    return robustNormalize(studentAnswer) === robustNormalize(expectedAnswer);
-  };
+  }, []);
 
   const handleAnswer = async (optionText, optIdx = null) => {
     if (step === 'feedback' || isSubmittingCanvas) return;
@@ -1196,14 +637,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       // Handle sub-questions
       const subResults = currentQ.subQuestions.map((sq, idx) => {
         const userAnswer = (optionText && typeof optionText === 'object') ? optionText[sq.id || idx] : '';
-        
-        let isSqCorrect = false;
-        if (sq.type === 'multiple_choice') {
-          isSqCorrect = answersMatch(userAnswer, sq.answer);
-        } else {
-          isSqCorrect = answersMatch(userAnswer, sq.answer);
-        }
-        return { id: sq.id || idx, correct: isSqCorrect, answer: userAnswer };
+        return { id: sq.id || idx, correct: answersMatch(userAnswer, sq.answer), answer: userAnswer };
       });
       
       correct = subResults.every(r => r.correct);
@@ -1256,8 +690,11 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           questionId: currentQ?.id || null,
           questionText: currentQ?.question || currentQ?.text || '',
           answerImage: canvasDataUrl || null,
-          answerImages: canvasPageImages || [],
-          answerText: !canvasDataUrl ? (typeof optionText === 'string' ? optionText : '') : null,
+          // Filter out empty/falsy pages so the grading view doesn't render blank image slots
+          answerImages: (canvasPageImages || []).filter(url => url && url.length > 100),
+          // Always save typed text — shown alongside or instead of the drawing
+          answerText: typeof optionText === 'string' && optionText.trim() ? optionText.trim() : null,
+          hasDrawing: Boolean(canvasDataUrl),
           status: 'pending',
           submittedAt: serverTimestamp(),
           year: currentQ?.year || CHALLENGE_YEAR,
@@ -1372,11 +809,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     }
   };
   const finishQuiz = async (isAbandoned = false) => {
-    if (isFinishing) return;
+    if (isFinishingRef.current) return;
+    isFinishingRef.current = true;
     // Declared outside try so catch block can safely reference it
     const currentAnswerResults = answerResults || [];
     let actualScore = isAbandoned ? 0 : currentAnswerResults.reduce((acc, r) => acc + (r?.pointsEarned || (r?.correct ? 1 : 0)), 0);
-    
+
     try {
       setIsFinishing(true);
       if (isAbandoned) {
@@ -1418,7 +856,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
         const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType, hasCalculationTest);
         const resultStats = summarizeResults(currentAnswerResults);
-        const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle');
+        const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle', 'topicCode');
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
         const nextDifficultyMix = adjustDifficultyMix(chapterProgress?.difficultyMix, resultStats);
         
@@ -1788,10 +1226,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       setStep('result');
     }
   };
-  // Keep ref current so the anti-cheat effect always calls the latest finishQuiz.
+  // Keep refs current so effects never capture stale closures.
   useEffect(() => {
     finishQuizRef.current = finishQuiz;
   }, [finishQuiz]);
+  useEffect(() => {
+    handleAnswerRef.current = handleAnswer;
+  }, [handleAnswer]);
 
   const renderDetailModal = () => {
     if (!selectedChallenge) return null;
@@ -2228,7 +1669,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       <AnimatePresence>
         {workingOutPreview && renderWorkingOutPreview()}
       </AnimatePresence>
-      {renderReportModal()}
+      <ReportModal
+        isOpen={isReporting}
+        onClose={closeReportModal}
+        reportMessage={reportMessage}
+        onChange={(e) => setReportMessage(e.target.value)}
+        onSubmit={handleReportSubmit}
+        isSubmitting={isSubmittingReport}
+      />
     </div>
   );
 };
