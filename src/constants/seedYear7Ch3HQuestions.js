@@ -10,7 +10,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Addition is commutative.",
+        "explanation": "Identify the starting variable in the expression. Here, the variable is $y$.",
+        "workingOut": "y"
+      },
+      {
+        "explanation": "The phrase 'is added to' means we use the addition operator ($+$).",
+        "workingOut": "y +"
+      },
+      {
+        "explanation": "The number $4$ is being added to $y$, so we write $y + 4$. Note that addition is commutative ($4 + y$ is also correct), but $y + 4$ directly translates '$4$ is added to $y$'.",
         "workingOut": "y + 4"
       }
     ],
@@ -27,7 +35,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Start with $m$ and subtract $5$.",
+        "explanation": "Identify the starting variable. The phrase 'subtracted from $m$' means we start with $m$.",
+        "workingOut": "m"
+      },
+      {
+        "explanation": "The phrase 'subtracted from' means we use the subtraction operator ($-$). Remember that in subtraction, order matters.",
+        "workingOut": "m -"
+      },
+      {
+        "explanation": "The number $5$ is what we are taking away, so we place it after the minus sign.",
         "workingOut": "m - 5"
       }
     ],
@@ -44,7 +60,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Write the number before the variable.",
+        "explanation": "Identify the variable and the number. We are multiplying $y$ and $5$.",
+        "workingOut": "y \\times 5"
+      },
+      {
+        "explanation": "In algebra, when a number and a variable are multiplied together, we omit the multiplication sign.",
+        "workingOut": "y5"
+      },
+      {
+        "explanation": "By convention, we always write the number (the coefficient) in front of the variable.",
         "workingOut": "5y"
       }
     ],
@@ -61,7 +85,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Start with $15$ and subtract $k$.",
+        "explanation": "Identify the starting value. The phrase 'subtracted from $15$' means our starting value is $15$.",
+        "workingOut": "15"
+      },
+      {
+        "explanation": "The phrase 'subtracted from' indicates the minus sign ($-$). We place this after our starting value.",
+        "workingOut": "15 -"
+      },
+      {
+        "explanation": "The variable $k$ is being subtracted, so we place it after the minus sign.",
         "workingOut": "15 - k"
       }
     ],
@@ -78,11 +110,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $4$ by $a$.",
+        "explanation": "Break the sentence into two parts. First, look at '$4$ is multiplied by $a$'.",
+        "workingOut": "4 \\times a"
+      },
+      {
+        "explanation": "Write the multiplication algebraically by omitting the multiplication sign and placing the number first.",
         "workingOut": "4a"
       },
       {
-        "explanation": "Add $5$.",
+        "explanation": "Now look at the second part: 'and $5$ is added to the result'. This means we add $5$ to our previous expression.",
         "workingOut": "4a + 5"
       }
     ],
@@ -99,11 +135,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Add $3$ to $m$.",
+        "explanation": "First, look at the first operation: '$3$ is added to $m$'.",
         "workingOut": "m + 3"
       },
       {
-        "explanation": "Multiply the entire result by $5$ using brackets.",
+        "explanation": "The phrase 'and the result is multiplied by $5$' means we must multiply the ENTIRE expression ($m + 3$) by $5$.",
+        "workingOut": "(m + 3) \\times 5"
+      },
+      {
+        "explanation": "To show that the whole expression is multiplied, we keep it in brackets, omit the multiplication sign, and write the number $5$ in front.",
         "workingOut": "5(m + 3)"
       }
     ],
@@ -120,11 +160,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Multiply $y$ by $y$.",
+        "explanation": "First, look at the first operation: '$y$ is multiplied by $y$'.",
+        "workingOut": "y \\times y"
+      },
+      {
+        "explanation": "When a variable is multiplied by itself, we write it using index (power) notation as $y$ squared.",
         "workingOut": "y^2"
       },
       {
-        "explanation": "Add $2$.",
+        "explanation": "Next, look at the second part: 'and $2$ is added to the result'. We add $2$ to our squared term.",
         "workingOut": "y^2 + 2"
       }
     ],
@@ -141,11 +185,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
       {
-        "explanation": "Divide $a$ by $b$.",
+        "explanation": "First, look at the division part: '$a$ is divided by a number, $b$'.",
+        "workingOut": "a \\div b"
+      },
+      {
+        "explanation": "In algebra, we write division as a fraction. $a$ is the numerator (top) and $b$ is the denominator (bottom).",
         "workingOut": "\\frac{a}{b}"
       },
       {
-        "explanation": "Add $4$.",
+        "explanation": "Finally, look at the second part: 'and then $4$ is added to it', so we add $4$ to the fraction.",
         "workingOut": "\\frac{a}{b} + 4"
       }
     ],
@@ -162,11 +210,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Substitute the values of $q$ and $p$ into the expression. We are given $q = 5$.",
         "workingOut": "5 - 2"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Calculate the final answer by subtracting $2$ from $5$.",
         "workingOut": "3"
       }
     ],
@@ -183,11 +231,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Substitute the values of $p$ and $q$ into the expression. We are given $p = 3$ and $q = 5$.",
         "workingOut": "3 + 5"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Calculate the final answer by adding $3$ and $5$.",
         "workingOut": "8"
       }
     ],
@@ -204,11 +252,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "In algebra, two variables written together like $qp$ means they are being multiplied ($q \\times p$). Substitute $q = 5$ and $p = 3$.",
         "workingOut": "5 \\times 3"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Calculate the final answer by multiplying $5$ and $3$.",
         "workingOut": "15"
       }
     ],
@@ -225,15 +273,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "First, substitute the values of $p = 3$ and $q = 5$ into the expression.",
         "workingOut": "2(5) - 3"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Following BODMAS/PEMDAS, perform the multiplication first ($2 \\times 5$).",
         "workingOut": "10 - 3"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Finally, subtract $3$ from $10$ to get the answer.",
         "workingOut": "7"
       }
     ],
@@ -250,15 +298,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Substitute the value of $p = 3$ into the expression.",
         "workingOut": "3^2 - 5"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Following BODMAS/PEMDAS, evaluate the indices (powers) first. $3^2$ means $3 \\times 3$.",
         "workingOut": "9 - 5"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Subtract $5$ from $9$ to calculate the final answer.",
         "workingOut": "4"
       }
     ],
@@ -275,15 +323,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Substitute the values of $p = 3$ and $q = 5$ into the expression.",
         "workingOut": "4(3) + 3(5)"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Following BODMAS/PEMDAS, perform the multiplications first. $4 \\times 3 = 12$ and $3 \\times 5 = 15$.",
         "workingOut": "12 + 15"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Add the two results together to find the final answer.",
         "workingOut": "27"
       }
     ],
@@ -300,19 +348,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Substitute the value of $p = 3$ into the expression.",
         "workingOut": "(3 \\times 3)^2 - 5"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Following BODMAS/PEMDAS, evaluate the expression inside the brackets first ($3 \\times 3$).",
         "workingOut": "9^2 - 5"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Next, evaluate the indices (powers). $9^2$ means $9 \\times 9$.",
         "workingOut": "81 - 5"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Finally, subtract $5$ from $81$ to get the final answer.",
         "workingOut": "76"
       }
     ],
@@ -329,19 +377,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Substitute the value of $p = 3$ into the expression.",
         "workingOut": "3(3^2) - 2"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Following BODMAS/PEMDAS, evaluate the indices (powers) first. $3^2$ means $3 \\times 3$.",
         "workingOut": "3(9) - 2"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Next, perform the multiplication ($3 \\times 9$).",
         "workingOut": "27 - 2"
       },
       {
-        "explanation": "Evaluate step-by-step.",
+        "explanation": "Finally, subtract $2$ from $27$ to get the answer.",
         "workingOut": "25"
       }
     ],
@@ -358,7 +406,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $n = 11$ into the formula.",
     "solutionSteps": [
       {
-        "explanation": "Calculate $11^2$.",
+        "explanation": "To find the 11th square number, substitute $n = 11$ into the formula $n^2$.",
+        "workingOut": "11^2"
+      },
+      {
+        "explanation": "Calculate $11^2$, which means $11 \\times 11$.",
         "workingOut": "11 \\times 11 = 121"
       }
     ],
@@ -375,12 +427,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $n = 25$ into the formula.",
     "solutionSteps": [
       {
-        "explanation": "Substitute $n = 25$.",
+        "explanation": "To find the 25th odd number, substitute $n = 25$ into the formula $2n - 1$.",
         "workingOut": "2(25) - 1"
       },
       {
-        "explanation": "Multiply and subtract.",
-        "workingOut": "50 - 1 = 49"
+        "explanation": "Following BODMAS/PEMDAS, perform the multiplication first ($2 \\times 25$).",
+        "workingOut": "50 - 1"
+      },
+      {
+        "explanation": "Finally, subtract $1$ from $50$ to get the answer.",
+        "workingOut": "49"
       }
     ],
     "graphData": null
@@ -396,7 +452,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "A square has four equal sides.",
     "solutionSteps": [
       {
-        "explanation": "Divide the perimeter by $4$.",
+        "explanation": "A square has four sides of equal length. Let's call the side length $s$. The perimeter is the total length of all four sides ($s + s + s + s = 4s$).",
+        "workingOut": "4s = p"
+      },
+      {
+        "explanation": "To find the length of one side ($s$), we need to divide the total perimeter ($p$) by $4$. In algebra, we write division as a fraction.",
         "workingOut": "\\frac{p}{4}"
       }
     ],
@@ -413,7 +473,7 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Add all the amounts together.",
     "solutionSteps": [
       {
-        "explanation": "Sum the variables.",
+        "explanation": "To find the total amount of money, we need to add the amounts that Tom, Jerry, and Spike have together.",
         "workingOut": "a + b + c"
       }
     ],
@@ -430,7 +490,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Subtract the known number from the total sum.",
     "solutionSteps": [
       {
-        "explanation": "The other number is the total minus $k$.",
+        "explanation": "We know that two numbers add up to $30$. Let's call the unknown number $x$. We can write the equation: $k + x = 30$.",
+        "workingOut": "k + x = 30"
+      },
+      {
+        "explanation": "To find the other number ($x$), we need to subtract the known number ($k$) from the total sum ($30$).",
         "workingOut": "30 - k"
       }
     ],
@@ -447,7 +511,7 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression.",
+        "explanation": "In algebra, when variables are multiplied together, we omit the multiplication sign.",
         "workingOut": "ab"
       }
     ],
@@ -464,7 +528,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression.",
+        "explanation": "First, identify the variable being multiplied by itself. Here, $p$ is multiplied by itself $3$ times.",
+        "workingOut": "p \\times p \\times p = p^3"
+      },
+      {
+        "explanation": "Combine this with the number $5$. We write the number (coefficient) first, followed by the variable, omitting the multiplication sign.",
         "workingOut": "5p^3"
       }
     ],
@@ -481,7 +549,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression.",
+        "explanation": "First, identify the variable being multiplied by itself. Here, $k$ is multiplied by itself $3$ times, which we write as $k^3$.",
+        "workingOut": "k \\times k \\times k = k^3"
+      },
+      {
+        "explanation": "Combine this with the number $8$. We write the number first, followed by the variable.",
         "workingOut": "8k^3"
       }
     ],
@@ -498,7 +570,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression.",
+        "explanation": "First, multiply the numbers together. We have $3 \\times 5$.",
+        "workingOut": "15"
+      },
+      {
+        "explanation": "Next, group the variables. $m$ is multiplied by itself $3$ times ($m \\times m \\times m$), which we write as $m^3$.",
+        "workingOut": "15 \\times m^3"
+      },
+      {
+        "explanation": "Finally, combine the number and the variable, omitting the multiplication sign.",
         "workingOut": "15m^3"
       }
     ],
@@ -515,7 +595,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression.",
+        "explanation": "First, multiply the numbers together. We have $4 \\times 5$.",
+        "workingOut": "20"
+      },
+      {
+        "explanation": "Next, group the like variables. $a$ is multiplied by itself $2$ times ($a \\times a$), which is $a^2$. The variable $b$ is on its own.",
+        "workingOut": "20 \\times a^2 \\times b"
+      },
+      {
+        "explanation": "Combine everything, omitting the multiplication signs. We usually write variables in alphabetical order.",
         "workingOut": "20a^2b"
       }
     ],
@@ -532,7 +620,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression.",
+        "explanation": "First, multiply the numbers together. We have $2 \\times 7$.",
+        "workingOut": "14"
+      },
+      {
+        "explanation": "Next, group the variables. $y$ is multiplied by itself $4$ times, which we write as $y^4$.",
+        "workingOut": "14 \\times y^4"
+      },
+      {
+        "explanation": "Combine the number and the variable, omitting the multiplication sign.",
         "workingOut": "14y^4"
       }
     ],
@@ -549,7 +645,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use a fraction bar instead of the division sign.",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction.",
+        "explanation": "In algebra, we write division as a fraction. The first number (or letter) goes on top, and the number we are dividing by goes on the bottom.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "So, $m \\div 4$ becomes the fraction $\\frac{m}{4}$.",
         "workingOut": "\\frac{m}{4}"
       }
     ],
@@ -566,7 +666,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use a fraction bar instead of the division sign.",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction.",
+        "explanation": "In algebra, we write division as a fraction. The first number goes on top, and the letter we are dividing by goes on the bottom.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "So, $15 \\div k$ becomes the fraction $\\frac{15}{k}$.",
         "workingOut": "\\frac{15}{k}"
       }
     ],
@@ -583,7 +687,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use a fraction bar instead of the division sign.",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction.",
+        "explanation": "In algebra, we write division as a fraction. The first letter goes on top, and the letter we are dividing by goes on the bottom.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "So, $a \\div b$ becomes the fraction $\\frac{a}{b}$.",
         "workingOut": "\\frac{a}{b}"
       }
     ],
@@ -600,7 +708,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "The word 'product' means we need to multiply the two things together.",
+        "workingOut": "12 \\times m"
+      },
+      {
+        "explanation": "In algebra, we don't write the multiplication sign between a number and a letter. We just write them next to each other.",
         "workingOut": "12m"
       }
     ],
@@ -617,7 +729,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "The word 'quotient' means we need to divide the first thing by the second thing.",
+        "workingOut": "y \\div 4"
+      },
+      {
+        "explanation": "In algebra, we write division as a fraction. The $y$ goes on top and the $4$ goes on the bottom.",
         "workingOut": "\\frac{y}{4}"
       }
     ],
@@ -634,7 +750,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "The 'cube' of a number means multiplying it by itself three times. We write this with a small $3$ at the top right, which is called a power or index.",
+        "workingOut": "m \\times m \\times m"
+      },
+      {
+        "explanation": "Using index notation, we write this as $m$ to the power of $3$.",
         "workingOut": "m^3"
       }
     ],
@@ -651,7 +771,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "The 'fourth power' of a number means multiplying it by itself four times. We write this with a small $4$ at the top right.",
+        "workingOut": "y \\times y \\times y \\times y"
+      },
+      {
+        "explanation": "Using index notation, we write this as $y$ to the power of $4$.",
         "workingOut": "y^4"
       }
     ],
@@ -668,7 +792,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "The word 'product' means we need to multiply $5k$ and $4k$ together.",
+        "workingOut": "5k \\times 4k"
+      },
+      {
+        "explanation": "First, multiply the numbers together: $5 \\times 4 = 20$.",
+        "workingOut": "20 \\times k \\times k"
+      },
+      {
+        "explanation": "Next, multiply the letters together. $k \\times k$ is written as $k^2$.",
         "workingOut": "20k^2"
       }
     ],
@@ -685,7 +817,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "The 'cube' of something means multiplying it by itself three times. We need to cube the whole expression $2a$.",
+        "workingOut": "(2a)^3"
+      },
+      {
+        "explanation": "This means $2a \\times 2a \\times 2a$.",
+        "workingOut": "2a \\times 2a \\times 2a"
+      },
+      {
+        "explanation": "First, multiply the numbers: $2 \\times 2 \\times 2 = 8$.",
+        "workingOut": "8 \\times a \\times a \\times a"
+      },
+      {
+        "explanation": "Next, multiply the letters: $a \\times a \\times a = a^3$. So the final answer is $8a^3$.",
         "workingOut": "8a^3"
       }
     ],
@@ -702,15 +846,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression. Remember that $8y$ means $8 \\times y$.",
         "workingOut": "8(4) + 5"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we do the multiplication first. $8 \\times 4 = 32$.",
         "workingOut": "32 + 5"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, add the numbers together.",
         "workingOut": "37"
       }
     ],
@@ -727,11 +871,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression.",
         "workingOut": "20 - 4"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Now do the subtraction to find the final answer.",
         "workingOut": "16"
       }
     ],
@@ -748,19 +892,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression. Remember that $2y^2$ means $2 \\times y^2$.",
         "workingOut": "2(4^2) + 5"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we must calculate the power (indices) first. $4^2$ means $4 \\times 4$, which is $16$.",
         "workingOut": "2(16) + 5"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Next, do the multiplication. $2 \\times 16 = 32$.",
         "workingOut": "32 + 5"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, add the numbers together.",
         "workingOut": "37"
       }
     ],
@@ -777,11 +921,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression.",
         "workingOut": "4^3"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "$4^3$ means $4 \\times 4 \\times 4$. First do $4 \\times 4 = 16$, then $16 \\times 4 = 64$.",
         "workingOut": "64"
       }
     ],
@@ -798,15 +942,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression. Remember that $5y$ means $5 \\times y$.",
         "workingOut": "40 - 5(4)"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we do the multiplication first. $5 \\times 4 = 20$.",
         "workingOut": "40 - 20"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, do the subtraction.",
         "workingOut": "20"
       }
     ],
@@ -823,19 +967,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression. Remember that $5y^2$ means $5 \\times y^2$.",
         "workingOut": "5(4^2) + 3"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we must calculate the power (indices) first. $4^2 = 16$.",
         "workingOut": "5(16) + 3"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Next, do the multiplication. $5 \\times 16 = 80$.",
         "workingOut": "80 + 3"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, add the numbers together.",
         "workingOut": "83"
       }
     ],
@@ -852,11 +996,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression.",
         "workingOut": "4^4"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "$4^4$ means multiplying $4$ by itself four times: $4 \\times 4 \\times 4 \\times 4$. That is $16 \\times 16 = 256$.",
         "workingOut": "256"
       }
     ],
@@ -873,11 +1017,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $y = 4$ into the expression.",
         "workingOut": "4^5"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "$4^5$ means multiplying $4$ by itself five times: $4 \\times 4 \\times 4 \\times 4 \\times 4$. We know $4^4$ is $256$, so multiply that by $4$ one more time to get $1024$.",
         "workingOut": "1024"
       }
     ],
@@ -894,7 +1038,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine like terms.",
+        "explanation": "These are all 'like terms' because they all have exactly the same letter ($y$). This means we can add and subtract their numbers just like regular counting.",
+        "workingOut": "8y + 5y - 3y"
+      },
+      {
+        "explanation": "First, let's do the addition: $8y + 5y = 13y$.",
+        "workingOut": "13y - 3y"
+      },
+      {
+        "explanation": "Now, do the subtraction: $13y - 3y = 10y$.",
         "workingOut": "10y"
       }
     ],
@@ -911,7 +1063,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine like terms.",
+        "explanation": "These are all 'like terms' because they all have exactly the same letters ($ab$). Let's work from left to right.",
+        "workingOut": "5ab - 2ab + 4ab"
+      },
+      {
+        "explanation": "First, do the subtraction: $5ab - 2ab = 3ab$.",
+        "workingOut": "3ab + 4ab"
+      },
+      {
+        "explanation": "Now, do the addition: $3ab + 4ab = 7ab$.",
         "workingOut": "7ab"
       }
     ],
@@ -928,7 +1088,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine like terms.",
+        "explanation": "These are all 'like terms' because they all have exactly the same letter and power ($m^2$). Let's work from left to right.",
+        "workingOut": "5m^2 + 8m^2 - 3m^2"
+      },
+      {
+        "explanation": "First, do the addition: $5m^2 + 8m^2 = 13m^2$.",
+        "workingOut": "13m^2 - 3m^2"
+      },
+      {
+        "explanation": "Now, do the subtraction: $13m^2 - 3m^2 = 10m^2$.",
         "workingOut": "10m^2"
       }
     ],
@@ -945,7 +1113,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine like terms.",
+        "explanation": "These are like terms. Remember that $pq$ is the same as $1pq$. If there's no number in front of the letters, there is a hidden $1$.",
+        "workingOut": "4pq - 1pq"
+      },
+      {
+        "explanation": "Now subtract the numbers: $4 - 1 = 3$. So we are left with $3pq$.",
         "workingOut": "3pq"
       }
     ],
@@ -962,7 +1134,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine like terms.",
+        "explanation": "These are like terms. Remember that $- mn$ is the same as $- 1mn$. Let's work from left to right.",
+        "workingOut": "3mn + 5mn - 1mn"
+      },
+      {
+        "explanation": "First, do the addition: $3mn + 5mn = 8mn$.",
+        "workingOut": "8mn - 1mn"
+      },
+      {
+        "explanation": "Now do the subtraction: $8mn - 1mn = 7mn$.",
         "workingOut": "7mn"
       }
     ],
@@ -979,7 +1159,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
       {
-        "explanation": "Combine like terms.",
+        "explanation": "We can only combine terms that have the same letters. Let's group the '$a$' terms together and the '$b$' terms together.",
+        "workingOut": "10a + 30a + 40b + 10b"
+      },
+      {
+        "explanation": "Combine the '$a$' terms: $10a + 30a = 40a$.",
+        "workingOut": "40a + 40b + 10b"
+      },
+      {
+        "explanation": "Combine the '$b$' terms: $40b + 10b = 50b$.",
+        "workingOut": "40a + 50b"
+      },
+      {
+        "explanation": "Since '$a$' and '$b$' are different letters, they are not like terms and we cannot add them together. This is our final answer.",
         "workingOut": "40a + 50b"
       }
     ],
@@ -996,7 +1188,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use brackets for the addition so it happens first.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "First, '$7$ is added to $p$' can be written as $p + 7$.",
+        "workingOut": "p + 7"
+      },
+      {
+        "explanation": "The problem says 'the result is multiplied by $5$'. To show that we need to do the addition *first*, we put $p + 7$ inside brackets.",
+        "workingOut": "(p + 7) \\times 5"
+      },
+      {
+        "explanation": "In algebra, we write the number that multiplies the brackets at the front without a multiplication sign.",
         "workingOut": "5(p + 7)"
       }
     ],
@@ -1013,7 +1213,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use brackets for the subtraction so it happens first.",
     "solutionSteps": [
       {
-        "explanation": "Write the expression.",
+        "explanation": "First, '$4$ is subtracted from a number, $k$' means we start with $k$ and take away $4$. We write this as $k - 4$.",
+        "workingOut": "k - 4"
+      },
+      {
+        "explanation": "The problem says 'the result is multiplied by $8$'. To make sure the subtraction happens *first*, we must put $k - 4$ inside brackets.",
+        "workingOut": "(k - 4) \\times 8"
+      },
+      {
+        "explanation": "In algebra, we write the number multiplying the brackets at the very front.",
         "workingOut": "8(k - 4)"
       }
     ],
@@ -1030,7 +1238,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
       {
-        "explanation": "Expand and simplify.",
+        "explanation": "The power of $2$ outside the brackets means everything inside the brackets is multiplied by itself.",
+        "workingOut": "5m \\times 5m"
+      },
+      {
+        "explanation": "First, multiply the numbers: $5 \\times 5 = 25$.",
+        "workingOut": "25 \\times m \\times m"
+      },
+      {
+        "explanation": "Next, multiply the letters: $m \\times m = m^2$.",
         "workingOut": "25m^2"
       }
     ],
@@ -1047,7 +1263,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
       {
-        "explanation": "Expand and simplify.",
+        "explanation": "The power of $3$ outside the brackets means everything inside the brackets is multiplied by itself three times.",
+        "workingOut": "3p \\times 3p \\times 3p"
+      },
+      {
+        "explanation": "First, multiply the numbers: $3 \\times 3 \\times 3$. $3 \\times 3$ is $9$, and $9 \\times 3$ is $27$.",
+        "workingOut": "27 \\times p \\times p \\times p"
+      },
+      {
+        "explanation": "Next, multiply the letters: $p \\times p \\times p = p^3$.",
         "workingOut": "27p^3"
       }
     ],
@@ -1064,7 +1288,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
       {
-        "explanation": "Expand and simplify.",
+        "explanation": "First, let's expand the part with the brackets. $(3m)^2$ means $3m \\times 3m$.",
+        "workingOut": "(3m \\times 3m) \\times 2m"
+      },
+      {
+        "explanation": "Multiply the numbers in the brackets: $3 \\times 3 = 9$. Multiply the letters: $m \\times m = m^2$. So $(3m)^2$ becomes $9m^2$.",
+        "workingOut": "9m^2 \\times 2m"
+      },
+      {
+        "explanation": "Now multiply $9m^2$ and $2m$. First the numbers: $9 \\times 2 = 18$.",
+        "workingOut": "18 \\times m^2 \\times m"
+      },
+      {
+        "explanation": "Then the letters: $m^2 \\times m$ is the same as $m \\times m \\times m$, which is $m^3$.",
         "workingOut": "18m^3"
       }
     ],
@@ -1081,7 +1317,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
       {
-        "explanation": "Expand and simplify.",
+        "explanation": "First, expand the part in brackets. $(4y)^2$ means we square both the $4$ and the $y$. $4^2 = 16$ and $y^2$ is just $y^2$.",
+        "workingOut": "16y^2 \\times 3y^2"
+      },
+      {
+        "explanation": "Now multiply the two terms together. Start with the numbers: $16 \\times 3 = 48$.",
+        "workingOut": "48 \\times y^2 \\times y^2"
+      },
+      {
+        "explanation": "Next multiply the letters: $y^2 \\times y^2$ is $y \\times y \\times y \\times y$, which is $y^4$.",
         "workingOut": "48y^4"
       }
     ],
@@ -1098,15 +1342,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $m = 5$ into the expression.",
         "workingOut": "3(5 + 2)"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we must calculate the part inside the brackets first. $5 + 2 = 7$.",
         "workingOut": "3(7)"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "The number $3$ next to the bracket means multiply. So we do $3 \\times 7$.",
         "workingOut": "21"
       }
     ],
@@ -1123,15 +1367,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $m = 5$ into the expression. Remember $3m$ means $3 \\times m$.",
         "workingOut": "3(5) + 2"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we must do the multiplication before addition. $3 \\times 5 = 15$.",
         "workingOut": "15 + 2"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, add the numbers together.",
         "workingOut": "17"
       }
     ],
@@ -1148,15 +1392,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $m = 5$ into the expression.",
         "workingOut": "5^2 + 4"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, we must calculate the power (indices) first. $5^2$ means $5 \\times 5$, which is $25$.",
         "workingOut": "25 + 4"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, add the numbers together.",
         "workingOut": "29"
       }
     ],
@@ -1173,19 +1417,19 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "First, substitute $m = 5$ into the expression.",
         "workingOut": "5 + 3(5 - 1)"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Following BODMAS/PEMDAS, calculate what is inside the brackets first. $5 - 1 = 4$.",
         "workingOut": "5 + 3(4)"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Next, do the multiplication. $3(4)$ means $3 \\times 4$, which is $12$.",
         "workingOut": "5 + 12"
       },
       {
-        "explanation": "Evaluate.",
+        "explanation": "Finally, add the numbers together.",
         "workingOut": "17"
       }
     ],
@@ -1202,8 +1446,20 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Area = length times width.",
     "solutionSteps": [
       {
-        "explanation": "Multiply width and height.",
-        "workingOut": "6m \\times 3m = 18m^2"
+        "explanation": "First, recall the formula for the area of a rectangle. The area is found by multiplying the length by the width.",
+        "workingOut": "\\text{Area} = \\text{length} \\times \\text{width}"
+      },
+      {
+        "explanation": "Identify the length and width from the image. The length is $6m$ and the width is $3m$.",
+        "workingOut": "\\text{length} = 6m, \\text{width} = 3m"
+      },
+      {
+        "explanation": "Substitute these values into our area formula.",
+        "workingOut": "\\text{Area} = 6m \\times 3m"
+      },
+      {
+        "explanation": "To multiply these algebraic terms, first multiply the numbers (coefficients) together: $6 \\times 3 = 18$. Then multiply the letters (variables) together: $m \\times m = m^2$.",
+        "workingOut": "\\text{Area} = 18m^2"
       }
     ],
     "graphData": {
@@ -1275,16 +1531,20 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Subtract the area of the inner square from the outer square.",
     "solutionSteps": [
       {
-        "explanation": "Outer area is $(3y)^2 = 9y^2$.",
-        "workingOut": "9y^2"
+        "explanation": "To find the area of the shaded region, we need to calculate the area of the large outer square and subtract the area of the smaller inner square.",
+        "workingOut": "\\text{Shaded Area} = \\text{Outer Area} - \\text{Inner Area}"
       },
       {
-        "explanation": "Inner area is $y^2$.",
-        "workingOut": "y^2"
+        "explanation": "First, find the area of the large outer square. It has side lengths of $3y$. We multiply the side length by itself.",
+        "workingOut": "\\text{Outer Area} = 3y \\times 3y = (3 \\times 3) \\times (y \\times y) = 9y^2"
       },
       {
-        "explanation": "Subtract.",
-        "workingOut": "9y^2 - y^2 = 8y^2"
+        "explanation": "Next, find the area of the small inner square. It has side lengths of $y$.",
+        "workingOut": "\\text{Inner Area} = y \\times y = y^2"
+      },
+      {
+        "explanation": "Now, subtract the inner area from the outer area. Since $9y^2$ and $y^2$ are 'like terms' (they have the exact same variable part), we can just subtract their coefficients: $9 - 1 = 8$.",
+        "workingOut": "\\text{Shaded Area} = 9y^2 - y^2 = 8y^2"
       }
     ],
     "graphData": {
@@ -1402,16 +1662,20 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Subtract the area of the inner rectangle from the outer rectangle.",
     "solutionSteps": [
       {
-        "explanation": "Outer area is $4p \\times 3p = 12p^2$.",
-        "workingOut": "12p^2"
+        "explanation": "To find the shaded area, we need to calculate the area of the large outer rectangle and subtract the area of the unshaded inner rectangle.",
+        "workingOut": "\\text{Shaded Area} = \\text{Outer Area} - \\text{Inner Area}"
       },
       {
-        "explanation": "Inner area is $3p \\times p = 3p^2$.",
-        "workingOut": "3p^2"
+        "explanation": "Find the area of the outer rectangle by multiplying its length and width ($4p$ and $3p$). Multiply the numbers ($4 \\times 3=12$) and the letters ($p \\times p = p^2$).",
+        "workingOut": "\\text{Outer Area} = 4p \\times 3p = 12p^2"
       },
       {
-        "explanation": "Subtract.",
-        "workingOut": "12p^2 - 3p^2 = 9p^2"
+        "explanation": "Find the area of the inner rectangle. Its dimensions are $3p$ and $p$.",
+        "workingOut": "\\text{Inner Area} = 3p \\times p = 3p^2"
+      },
+      {
+        "explanation": "Subtract the inner area from the outer area. They are like terms, so we just subtract the numbers: $12 - 3 = 9$.",
+        "workingOut": "\\text{Shaded Area} = 12p^2 - 3p^2 = 9p^2"
       }
     ],
     "graphData": {
@@ -1529,16 +1793,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "We are given the expression $3(10 - y)$ and told that $y = 6$. The first step is to substitute, or replace, the letter $y$ with the number $6$.",
         "workingOut": "3(10 - 6)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "3(4)"
+        "explanation": "Following the order of operations (BODMAS/BIDMAS), we must calculate what is inside the brackets first. Let's do $10 - 6$.",
+        "workingOut": "= 3(4)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "12"
+        "explanation": "A number right next to brackets means multiply. So $3(4)$ means $3 \\times 4$. Calculate the final answer.",
+        "workingOut": "= 12"
       }
     ],
     "graphData": null
@@ -1554,20 +1818,20 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "4(2(6) - 5)"
+        "explanation": "Our expression is $4(2y - 5)$ and we need to evaluate it when $y = 6$. First, replace the $y$ with $6$. Remember that $2y$ means $2 \\times y$.",
+        "workingOut": "4(2 \\times 6 - 5)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "4(12 - 5)"
+        "explanation": "Look inside the brackets. According to the order of operations, we must do the multiplication before the subtraction. Multiply $2 \\times 6$.",
+        "workingOut": "= 4(12 - 5)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "4(7)"
+        "explanation": "Now we can finish calculating what's inside the brackets. Subtract $5$ from $12$.",
+        "workingOut": "= 4(7)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "28"
+        "explanation": "Finally, the $4$ outside the bracket means we multiply. Multiply $4$ by $7$ to get the answer.",
+        "workingOut": "= 28"
       }
     ],
     "graphData": null
@@ -1583,16 +1847,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "(3(6))^2"
+        "explanation": "We need to evaluate the expression $(3y)^2$ when $y = 6$. Start by substituting $6$ in place of $y$. Remember $3y$ means $3 \\times y$.",
+        "workingOut": "(3 \\times 6)^2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "18^2"
+        "explanation": "According to the order of operations, we calculate inside the brackets first. Multiply $3$ by $6$.",
+        "workingOut": "= (18)^2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "324"
+        "explanation": "Now we square the result. Squaring a number means multiplying it by itself, so we calculate $18 \\times 18$.",
+        "workingOut": "= 324"
       }
     ],
     "graphData": null
@@ -1608,16 +1872,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "2(6^2)"
+        "explanation": "For the expression $2y^2$, replace $y$ with $6$. Be careful: only the $y$ is being squared, not the $2$.",
+        "workingOut": "2 \\times 6^2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "2(36)"
+        "explanation": "Order of operations says we must do indices (powers) before multiplication. So calculate $6^2$, which means $6 \\times 6$.",
+        "workingOut": "= 2 \\times 36"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "72"
+        "explanation": "Now, perform the multiplication to get the final answer.",
+        "workingOut": "= 72"
       }
     ],
     "graphData": null
@@ -1633,16 +1897,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "8(5) + 2"
+        "explanation": "We are evaluating $8p + 2$ when $p = 5$. First, substitute $5$ for $p$. Remember that $8p$ means $8 \\times p$.",
+        "workingOut": "8 \\times 5 + 2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "40 + 2"
+        "explanation": "Following order of operations, we multiply before we add. Calculate $8 \\times 5$.",
+        "workingOut": "= 40 + 2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "42"
+        "explanation": "Finally, add $2$ to the result.",
+        "workingOut": "= 42"
       }
     ],
     "graphData": null
@@ -1658,16 +1922,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "(4(5))^2"
+        "explanation": "Substitute $p = 5$ into the expression $(4p)^2$. Since $4p$ means $4 \\times p$, we write it inside the brackets.",
+        "workingOut": "(4 \\times 5)^2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "20^2"
+        "explanation": "Brackets come first in the order of operations, so we multiply $4$ and $5$.",
+        "workingOut": "= (20)^2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "400"
+        "explanation": "Now square the result. This means multiplying $20$ by itself ($20 \\times 20$).",
+        "workingOut": "= 400"
       }
     ],
     "graphData": null
@@ -1683,16 +1947,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "Substitute $p = 5$ into the expression $4(15 - p)$.",
         "workingOut": "4(15 - 5)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "4(10)"
+        "explanation": "Calculate what is inside the brackets first by subtracting $5$ from $15$.",
+        "workingOut": "= 4(10)"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "40"
+        "explanation": "A number right next to brackets means we multiply. Multiply $4$ by $10$.",
+        "workingOut": "= 40"
       }
     ],
     "graphData": null
@@ -1708,16 +1972,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\frac{3(5)}{5}"
+        "explanation": "We need to evaluate the fraction \\(\\frac{3p}{5}\\) when \\(p = 5\\). Substitute \\(5\\) for \\(p\\) in the numerator (the top part).",
+        "workingOut": "\\frac{3 \\times 5}{5}"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\frac{15}{5}"
+        "explanation": "Calculate the multiplication on top first. \\(3 \\times 5 = 15\\).",
+        "workingOut": "= \\frac{15}{5}"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "3"
+        "explanation": "A fraction bar means division. Divide \\(15\\) by \\(5\\) to find the final answer.",
+        "workingOut": "= 3"
       }
     ],
     "graphData": null
@@ -1733,12 +1997,12 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "This expression uses two variables. We are given $m = 24$ and $n = 6$. Replace $m$ and $n$ with these numbers in the expression $m - n$.",
         "workingOut": "24 - 6"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "18"
+        "explanation": "Now simply perform the subtraction.",
+        "workingOut": "= 18"
       }
     ],
     "graphData": null
@@ -1754,16 +2018,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "In the expression $\\frac{m + 6}{6}$, replace the $m$ with $24$.",
         "workingOut": "\\frac{24 + 6}{6}"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\frac{30}{6}"
+        "explanation": "When working with a fraction that has an operation on top, treat the top as if it's in brackets. Calculate $24 + 6$ first.",
+        "workingOut": "= \\frac{30}{6}"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "5"
+        "explanation": "The fraction bar means division. Divide the top number by the bottom number: $30 \\div 6$.",
+        "workingOut": "= 5"
       }
     ],
     "graphData": null
@@ -1779,16 +2043,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "In the expression $\\frac{m}{6} + 6$, replace the $m$ with $24$.",
         "workingOut": "\\frac{24}{6} + 6"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "4 + 6"
+        "explanation": "Order of operations tells us to do division (the fraction) before addition. Divide $24$ by $6$.",
+        "workingOut": "= 4 + 6"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "10"
+        "explanation": "Now add the numbers together for the final answer.",
+        "workingOut": "= 10"
       }
     ],
     "graphData": null
@@ -1804,16 +2068,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
+        "explanation": "Substitute $m = 24$ and $n = 6$ into the expression $m^2 - n^2$.",
         "workingOut": "24^2 - 6^2"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "576 - 36"
+        "explanation": "According to the order of operations, calculate the indices (powers) before subtracting. First calculate $24^2$ ($24 \\times 24$) and $6^2$ ($6 \\times 6$).",
+        "workingOut": "= 576 - 36"
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "540"
+        "explanation": "Finally, subtract the two results.",
+        "workingOut": "= 540"
       }
     ],
     "graphData": null
@@ -1829,7 +2093,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
       {
-        "explanation": "Group and combine.",
+        "explanation": "To simplify, we can only add or subtract 'like terms'. Like terms have the exact same variables. First, group the $m$ terms together and the $n$ terms together.",
+        "workingOut": "(8m - m) + (3n - n)"
+      },
+      {
+        "explanation": "Now combine them. Remember that an $m$ by itself means $1m$. So for the $m$ terms, we have $8 - 1 = 7$. For the $n$ terms, we have $3 - 1 = 2$.",
+        "workingOut": "7m + 2n"
+      },
+      {
+        "explanation": "Since $7m$ and $2n$ are not like terms, we cannot combine them any further. This is our final answer.",
         "workingOut": "7m + 2n"
       }
     ],
@@ -1846,7 +2118,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
       {
-        "explanation": "Group and combine.",
+        "explanation": "Look at the terms: $15p^2, 5p^2, 12p^2,$ and $-3p^2$. Notice that every single term has the exact same variable part: $p^2$. This means they are all 'like terms'.",
+        "workingOut": "15p^2 + 5p^2 + 12p^2 - 3p^2"
+      },
+      {
+        "explanation": "Because they are all like terms, we can simply add and subtract their numbers (coefficients) exactly as they are written: $15 + 5 + 12 - 3$.",
+        "workingOut": "= 29"
+      },
+      {
+        "explanation": "Attach the common variable part $p^2$ back onto our result.",
         "workingOut": "29p^2"
       }
     ],
@@ -1863,7 +2143,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
       {
-        "explanation": "Group and combine.",
+        "explanation": "Check if the terms are like terms. Every term has $m^2n$. Since the variable parts are exactly identical, all of these are like terms.",
+        "workingOut": "3m^2n + 5m^2n + 9m^2n + m^2n"
+      },
+      {
+        "explanation": "To simplify, add their coefficients together. Remember that a term like $m^2n$ with no number in front actually has a coefficient of $1$. So we calculate $3 + 5 + 9 + 1$.",
+        "workingOut": "= 18"
+      },
+      {
+        "explanation": "Write the combined coefficient with the variable part to get the final answer.",
         "workingOut": "18m^2n"
       }
     ],
@@ -1880,7 +2168,15 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
       {
-        "explanation": "Group and combine.",
+        "explanation": "First, identify the like terms. Remember that the order of letters doesn't matter in multiplication, so $qp^2$ is exactly the same as $p^2q$. Let's rewrite the terms so they match.",
+        "workingOut": "3p^2q + 4pq + 5p^2q + 2pq"
+      },
+      {
+        "explanation": "Now group the like terms together: the $p^2q$ terms together, and the $pq$ terms together.",
+        "workingOut": "(3p^2q + 5p^2q) + (4pq + 2pq)"
+      },
+      {
+        "explanation": "Add the coefficients for each group. For $p^2q$, $3 + 5 = 8$. For $pq$, $4 + 2 = 6$. The remaining terms cannot be combined because they are not like terms.",
         "workingOut": "8p^2q + 6pq"
       }
     ],
@@ -1897,8 +2193,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "The shaded region is half of the square.",
     "solutionSteps": [
       {
-        "explanation": "The square's area is $m^2$. The shaded region is half of it.",
-        "workingOut": "\\frac{m^2}{2}"
+        "explanation": "Let's find the area of the entire square first. The side length is given as $m$. The area of a square is the side length multiplied by itself.",
+        "workingOut": "\\text{Total Area} = m \\times m = m^2"
+      },
+      {
+        "explanation": "Notice that the diagonal line cuts the square exactly in half, creating two identical triangles. The shaded region is one of these halves.",
+        "workingOut": "\\text{Shaded Area} = \\text{Half of Total Area}"
+      },
+      {
+        "explanation": "To find half of the area, we simply divide the total area by $2$.",
+        "workingOut": "\\text{Shaded Area} = \\frac{m^2}{2}"
       }
     ],
     "graphData": {
@@ -1974,8 +2278,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "The two shaded triangles make up half of the square.",
     "solutionSteps": [
       {
-        "explanation": "The square's area is $p^2$. The shaded triangles form half the area.",
-        "workingOut": "\\frac{p^2}{2}"
+        "explanation": "First, let's find the area of the full square. The side length is $p$, so the area is $p$ multiplied by $p$.",
+        "workingOut": "\\text{Total Area} = p \\times p = p^2"
+      },
+      {
+        "explanation": "The square is divided into four smaller, identical triangles by the two diagonals. Two of these four triangles are shaded.",
+        "workingOut": "\\text{Shaded parts} = 2 \\text{ out of } 4 = \\text{Half of the shape}"
+      },
+      {
+        "explanation": "Since the shaded triangles make up exactly half of the whole square, we just need to divide the total area by $2$.",
+        "workingOut": "\\text{Shaded Area} = \\frac{p^2}{2}"
       }
     ],
     "graphData": {
@@ -2055,12 +2367,20 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Area of a triangle = \\frac{1}{2} \\times \\text{base} \\times \\text{height}.",
     "solutionSteps": [
       {
-        "explanation": "Identify base and height of the right triangle.",
-        "workingOut": "\\text{base} = b\\ \\text{cm},\\ \\text{height} = a\\ \\text{cm}"
+        "explanation": "This shape is a right-angled triangle. Recall the formula for the area of a triangle: Area = $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$.",
+        "workingOut": "\\text{Area} = \\frac{1}{2}bh"
       },
       {
-        "explanation": "Apply the formula.",
-        "workingOut": "A = \\frac{1}{2} \\times b \\times a = \\frac{ab}{2}\\ \\text{cm}^2"
+        "explanation": "From the image, identify the base and the perpendicular height. The base is the length of the bottom side, which is $b$. The height is the length of the vertical side, which is $a$.",
+        "workingOut": "\\text{base} = b, \\text{height} = a"
+      },
+      {
+        "explanation": "Substitute these values into the area formula.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times b \\times a"
+      },
+      {
+        "explanation": "To write this neatly in algebra, we multiply the letters together. Remember that we usually write letters in alphabetical order, so $b \\times a$ is written as $ab$.",
+        "workingOut": "\\text{Area} = \\frac{1}{2}ab \\text{ (which can also be written as } \\frac{ab}{2})"
       }
     ],
     "graphData": {
@@ -2130,8 +2450,24 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "The total base is $2b$ cm and the height is $a$ cm.",
     "solutionSteps": [
       {
-        "explanation": "Total base = b + b = 2b. Height = a.",
-        "workingOut": "A = \\frac{1}{2} \\times 2b \\times a = ab\\ \\text{cm}^2"
+        "explanation": "This shape is a large triangle made up of two smaller right-angled triangles. We need to use the area formula for a triangle: Area = $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$.",
+        "workingOut": "\\text{Area} = \\frac{1}{2}bh"
+      },
+      {
+        "explanation": "First, find the total length of the base. The base is made of two sections, each with length $b$. Add them together.",
+        "workingOut": "\\text{Total base} = b + b = 2b"
+      },
+      {
+        "explanation": "Next, identify the perpendicular height. The height from the base to the top point is given as $a$.",
+        "workingOut": "\\text{height} = a"
+      },
+      {
+        "explanation": "Substitute the total base and the height into our area formula.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times (2b) \\times a"
+      },
+      {
+        "explanation": "Simplify the expression. Half of $2$ is $1$, so the numbers cancel out. We are left with $b \\times a$, which we write alphabetically as $ab$.",
+        "workingOut": "\\text{Area} = ab"
       }
     ],
     "graphData": {
@@ -2217,8 +2553,24 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Area of a rhombus = $\\frac{1}{2} \\times d_1 \\times d_2$ where $d_1, d_2$ are the diagonals.",
     "solutionSteps": [
       {
-        "explanation": "Vertical diagonal = 2a, horizontal diagonal = 2b.",
-        "workingOut": "A = \\frac{1}{2} \\times 2a \\times 2b = 2ab\\ \\text{cm}^2"
+        "explanation": "This shape is a rhombus. The formula for the area of a rhombus uses its diagonals (the lines across the middle): Area = $\\frac{1}{2} \\times \\text{diagonal 1} \\times \\text{diagonal 2}$.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times d_1 \\times d_2"
+      },
+      {
+        "explanation": "Let's find the length of the first diagonal (the horizontal one). It is made of two sections of length $b$.",
+        "workingOut": "\\text{Horizontal diagonal} = b + b = 2b"
+      },
+      {
+        "explanation": "Now find the length of the second diagonal (the vertical one). It is made of two sections of length $a$.",
+        "workingOut": "\\text{Vertical diagonal} = a + a = 2a"
+      },
+      {
+        "explanation": "Substitute these total diagonal lengths into the formula.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} \\times 2b \\times 2a"
+      },
+      {
+        "explanation": "Simplify. Multiply the numbers first: $\\frac{1}{2} \\times 2 = 1$, and then $1 \\times 2 = 2$. Then multiply the letters: $b \\times a = ab$.",
+        "workingOut": "\\text{Area} = 2ab"
       }
     ],
     "graphData": {
@@ -2320,11 +2672,11 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Translate each operation into algebra step by step.",
     "solutionSteps": [
       {
-        "explanation": "Multiply n by 4.",
-        "workingOut": "4n"
+        "explanation": "First, let's look at the instruction 'Multiply the number by 4'. Since our number is $n$, multiplying it by 4 gives us $4 \\times n$. In algebra, we write this simply as $4n$.",
+        "workingOut": "4 \\times n = 4n"
       },
       {
-        "explanation": "Subtract 8.",
+        "explanation": "Next, the instruction says 'subtract 8'. We take our current result, $4n$, and subtract 8 from it. This gives us our final algebraic expression.",
         "workingOut": "4n - 8"
       }
     ],
@@ -2341,8 +2693,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use the distributive law: $2(4n - 8)$.",
     "solutionSteps": [
       {
-        "explanation": "Multiply each term by 2.",
-        "workingOut": "2(4n - 8) = 8n - 16"
+        "explanation": "We start with our expression from part a), which is $4n - 8$. The instruction says to 'Multiply the result by 2'. This means we must multiply the ENTIRE expression by 2. To show this in algebra, we put $4n - 8$ in brackets and put a 2 in front.",
+        "workingOut": "2(4n - 8)"
+      },
+      {
+        "explanation": "To write the simplified expression, we use the distributive law to expand the brackets. This means we multiply every term inside the brackets by the 2 outside.",
+        "workingOut": "(2 \\times 4n) - (2 \\times 8)"
+      },
+      {
+        "explanation": "Now we calculate those multiplications: $2 \\times 4n$ is $8n$, and $2 \\times 8$ is 16. So the simplified expression is $8n - 16$.",
+        "workingOut": "8n - 16"
       }
     ],
     "graphData": null
@@ -2358,8 +2718,12 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Combine the constant terms: $-16 + 16 = 0$.",
     "solutionSteps": [
       {
-        "explanation": "Add 16.",
-        "workingOut": "8n - 16 + 16 = 8n"
+        "explanation": "We start with our expression from part b), which is $8n - 16$. The instruction says to 'Add 16'. So we write $+ 16$ at the end of our expression.",
+        "workingOut": "8n - 16 + 16"
+      },
+      {
+        "explanation": "Now we simplify. We look for 'like terms' (terms that are just numbers). We have $-16$ and $+16$. Since subtracting 16 and then adding 16 gets us back to 0, these terms cancel each other out.",
+        "workingOut": "8n + 0 = 8n"
       }
     ],
     "graphData": null
@@ -2375,12 +2739,16 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "7 times the original number is $7n$. Subtract from $8n$.",
     "solutionSteps": [
       {
-        "explanation": "Subtract 7n from 8n.",
-        "workingOut": "8n - 7n = n"
+        "explanation": "We start with our result from part c), which is $8n$. The instruction says 'Subtract 7 times the number you first thought of'. The number we first thought of was $n$, so 7 times that number is $7n$. We need to subtract $7n$ from $8n$.",
+        "workingOut": "8n - 7n"
       },
       {
-        "explanation": "The answer is always n \u2014 the original number \u2014 because 8 \u2212 7 = 1, so the coefficients cancel to 1.",
-        "workingOut": "8n - 7n = 1 \\times n = n"
+        "explanation": "Now we simplify by collecting like terms. If you have 8 lots of $n$, and you take away 7 lots of $n$, you are left with just 1 lot of $n$.",
+        "workingOut": "8n - 7n = 1n = n"
+      },
+      {
+        "explanation": "The final answer is $n$, which is the original number we thought of! This happens because all the operations we did (multiplying, subtracting, then multiplying again and adding) perfectly cancelled out, leaving us with exactly what we started with.",
+        "workingOut": "\\text{Final Answer: } n"
       }
     ],
     "graphData": null
@@ -2396,20 +2764,20 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Use the labelled dimensions to find each sub-rectangle's area and perimeter.",
     "solutionSteps": [
       {
-        "explanation": "Area of \u2460: a \u00d7 a.",
-        "workingOut": "a^2"
+        "explanation": "To understand the whole shape, let's look at the dimensions of the four smaller rectangles. The problem tells us that rectangle \u2460 has side length $a$. Since it's a rectangle and the diagram shows it's a square, its width is $a$ and height is $a$.",
+        "workingOut": "\\text{Rectangle \u2460 is } a \\times a"
       },
       {
-        "explanation": "Area of \u2461: 5 \u00d7 a.",
-        "workingOut": "5a"
+        "explanation": "We can see the total width is $a + 5$. Since rectangle \u2460 has width $a$, rectangle \u2461 next to it must have width 5. So rectangle \u2461 is $5$ wide and $a$ high.",
+        "workingOut": "\\text{Rectangle \u2461 is } 5 \\times a"
       },
       {
-        "explanation": "Area of \u2462: a \u00d7 4.",
-        "workingOut": "4a"
+        "explanation": "Similarly, the total height is $a + 4$. Since rectangle \u2460 has height $a$, rectangle \u2462 below it must have height 4. So rectangle \u2462 is $a$ wide and $4$ high.",
+        "workingOut": "\\text{Rectangle \u2462 is } a \\times 4"
       },
       {
-        "explanation": "Area of \u2463: 5 \u00d7 4.",
-        "workingOut": "20"
+        "explanation": "Finally, rectangle \u2463 is below rectangle \u2461 (width 5) and next to rectangle \u2462 (height 4). So rectangle \u2463 has width 5 and height 4.",
+        "workingOut": "\\text{Rectangle \u2463 is } 5 \\times 4"
       }
     ],
     "graphData": {
@@ -2517,20 +2885,20 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "\u2460 = a\u00b2, \u2461 = 5a, \u2462 = 4a, \u2463 = 20",
         "solutionSteps": [
           {
-            "explanation": "\u2460 = a \u00d7 a",
-            "workingOut": "a^2"
+            "explanation": "To find the area of a rectangle, we multiply its width by its height. For rectangle \u2460, both the width and height are $a$.",
+            "workingOut": "\\text{Area \u2460} = a \\times a = a^2"
           },
           {
-            "explanation": "\u2461 = 5 \u00d7 a",
-            "workingOut": "5a"
+            "explanation": "For rectangle \u2461, the width is 5 and the height is $a$.",
+            "workingOut": "\\text{Area \u2461} = 5 \\times a = 5a"
           },
           {
-            "explanation": "\u2462 = a \u00d7 4",
-            "workingOut": "4a"
+            "explanation": "For rectangle \u2462, the width is $a$ and the height is 4.",
+            "workingOut": "\\text{Area \u2462} = a \\times 4 = 4a"
           },
           {
-            "explanation": "\u2463 = 5 \u00d7 4",
-            "workingOut": "20"
+            "explanation": "For rectangle \u2463, the width is 5 and the height is 4.",
+            "workingOut": "\\text{Area \u2463} = 5 \\times 4 = 20"
           }
         ]
       },
@@ -2541,8 +2909,12 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "(a + 5)(a + 4)",
         "solutionSteps": [
           {
-            "explanation": "Width \u00d7 Height.",
-            "workingOut": "(a + 5)(a + 4)"
+            "explanation": "We need to find the area of the large rectangle $ABCD$. The formula for the area of a rectangle is width $\\times$ height.",
+            "workingOut": "\\text{Area} = \\text{width} \\times \\text{height}"
+          },
+          {
+            "explanation": "Looking at the diagram, the total width of the large rectangle is $(a + 5)$ and the total height is $(a + 4)$. We multiply these two expressions together. We must use brackets to show we are multiplying the whole width by the whole height.",
+            "workingOut": "\\text{Area } ABCD = (a + 5)(a + 4)"
           }
         ]
       },
@@ -2553,16 +2925,16 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "a\u00b2 + 9a + 20",
         "solutionSteps": [
           {
-            "explanation": "Sum the four sub-rectangle areas.",
-            "workingOut": "a^2 + 5a + 4a + 20"
+            "explanation": "The area of the large rectangle $ABCD$ must be exactly equal to the sum of the areas of the four smaller rectangles \u2460, \u2461, \u2462, and \u2463.",
+            "workingOut": "\\text{Area } ABCD = \\text{Area \u2460} + \\text{Area \u2461} + \\text{Area \u2462} + \\text{Area \u2463}"
           },
           {
-            "explanation": "Collect like terms.",
-            "workingOut": "a^2 + 9a + 20"
+            "explanation": "We already found the expression for the area of $ABCD$ in part b: $(a + 5)(a + 4)$. We also found the areas of the smaller rectangles in part a. Let's add them all up.",
+            "workingOut": "(a + 5)(a + 4) = a^2 + 5a + 4a + 20"
           },
           {
-            "explanation": "This equals ABCD area, so the identity holds.",
-            "workingOut": "(a+5)(a+4) = a^2 + 9a + 20"
+            "explanation": "Now we simplify the right side of our equation by collecting the like terms. We have $5a$ and $4a$, which add up to $9a$.",
+            "workingOut": "(a + 5)(a + 4) = a^2 + 9a + 20"
           }
         ]
       },
@@ -2573,20 +2945,20 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "\u2460 = 4a, \u2461 = 2a + 10, \u2462 = 2a + 8, \u2463 = 18",
         "solutionSteps": [
           {
-            "explanation": "P\u2460 = 2(a + a)",
-            "workingOut": "4a"
+            "explanation": "The perimeter is the total distance around the outside of a shape. To find it, we add up all four sides of each rectangle. For rectangle \u2460, all four sides are $a$.",
+            "workingOut": "\\text{Perimeter \u2460} = a + a + a + a = 4a"
           },
           {
-            "explanation": "P\u2461 = 2(5 + a)",
-            "workingOut": "2a + 10"
+            "explanation": "For rectangle \u2461, it has two sides of length 5 and two sides of length $a$.",
+            "workingOut": "\\text{Perimeter \u2461} = 5 + 5 + a + a = 2a + 10"
           },
           {
-            "explanation": "P\u2462 = 2(a + 4)",
-            "workingOut": "2a + 8"
+            "explanation": "For rectangle \u2462, it has two sides of length $a$ and two sides of length 4.",
+            "workingOut": "\\text{Perimeter \u2462} = a + a + 4 + 4 = 2a + 8"
           },
           {
-            "explanation": "P\u2463 = 2(5 + 4)",
-            "workingOut": "18"
+            "explanation": "For rectangle \u2463, it has two sides of length 5 and two sides of length 4.",
+            "workingOut": "\\text{Perimeter \u2463} = 5 + 5 + 4 + 4 = 18"
           }
         ]
       },
@@ -2597,8 +2969,16 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "4a + 18",
         "solutionSteps": [
           {
-            "explanation": "P = 2(width + height).",
-            "workingOut": "2[(a+5)+(a+4)] = 2(2a+9) = 4a + 18\\ \\text{cm}"
+            "explanation": "To find the perimeter of the large rectangle $ABCD$, we add up its four outer sides. It has two sides of length $(a + 5)$ and two sides of length $(a + 4)$.",
+            "workingOut": "\\text{Perimeter } ABCD = (a + 5) + (a + 5) + (a + 4) + (a + 4)"
+          },
+          {
+            "explanation": "Let's collect the like terms. First, let's add up all the $a$'s: $a + a + a + a = 4a$.",
+            "workingOut": "4a + 5 + 5 + 4 + 4"
+          },
+          {
+            "explanation": "Now let's add up all the numbers: $5 + 5 + 4 + 4 = 18$. Adding this to our $4a$ gives us the final simplified perimeter.",
+            "workingOut": "4a + 18"
           }
         ]
       }
@@ -2615,12 +2995,12 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Trace all 6 outer edges for the perimeter. Split into two rectangles for the area.",
     "solutionSteps": [
       {
-        "explanation": "Six sides of the staircase shape.",
-        "workingOut": "4 + 2p + 4 + p + 8 + 3p = 6p + 16"
+        "explanation": "To answer this question, we need to understand how to find the perimeter and area of composite shapes. Perimeter is the distance around the outside, so we will need to add all the outer edge lengths together.",
+        "workingOut": "\\text{Perimeter} = \\text{Sum of all outer sides}"
       },
       {
-        "explanation": "Area: split into left (2p \u00d7 4) + right (p \u00d7 8).",
-        "workingOut": "8p + 8p = 16p"
+        "explanation": "For the area, since it is an L-shaped region, we can't use a single formula. Instead, we can split it into two simpler rectangles, find their individual areas, and add them together.",
+        "workingOut": "\\text{Area} = \\text{Area of Rectangle 1} + \\text{Area of Rectangle 2}"
       }
     ],
     "graphData": {
@@ -2758,8 +3138,16 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "6p + 16",
         "solutionSteps": [
           {
-            "explanation": "Add all 6 sides.",
-            "workingOut": "4 + 2p + 4 + p + 8 + 3p = 6p + 16\\ \\text{cm}"
+            "explanation": "The perimeter is the total distance around the outside of the shape. We need to add up all 6 outer sides. From the diagram, the sides are: $4$, $2p$, $4$, $p$, $8$, and $3p$.",
+            "workingOut": "\\text{Perimeter} = 4 + 2p + 4 + p + 8 + 3p"
+          },
+          {
+            "explanation": "Now collect the like terms. Group the '$p$' terms together: $2p + p + 3p = 6p$. Group the number terms together: $4 + 4 + 8 = 16$.",
+            "workingOut": "= 6p + 16"
+          },
+          {
+            "explanation": "Don't forget to include the units.",
+            "workingOut": "\\text{Perimeter} = (6p + 16) \\text{ cm}"
           }
         ]
       },
@@ -2770,8 +3158,20 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "16p",
         "solutionSteps": [
           {
-            "explanation": "Split: left rectangle (2p \u00d7 4) + right column (p \u00d7 8).",
-            "workingOut": "8p + 8p = 16p\\ \\text{cm}^2"
+            "explanation": "This is an L-shaped figure. To find the area, we split it into two simpler rectangles. One way is to split it into a left rectangle and a right rectangle.",
+            "workingOut": "\\text{Area} = \\text{Area of Left Rectangle} + \\text{Area of Right Rectangle}"
+          },
+          {
+            "explanation": "The left rectangle has a width of $2p$ cm and a height of $4$ cm. Its area is width $\\times$ height.",
+            "workingOut": "\\text{Left Rectangle Area} = 2p \\times 4 = 8p"
+          },
+          {
+            "explanation": "The right rectangle has a width of $p$ cm and a height of $8$ cm.",
+            "workingOut": "\\text{Right Rectangle Area} = p \\times 8 = 8p"
+          },
+          {
+            "explanation": "Add the two areas together to get the total area of the L-shape.",
+            "workingOut": "\\text{Total Area} = 8p + 8p = 16p \\text{ cm}^2"
           }
         ]
       }
@@ -2788,16 +3188,8 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "$ABCD$ has dimensions $(m+4)$ cm by $(2m+4)$ cm. The shaded rectangle is $m$ cm by $2m$ cm.",
     "solutionSteps": [
       {
-        "explanation": "Area of ABCD = (m+4)(2m+4).",
-        "workingOut": "2m^2 + 4m + 8m + 16 = 2m^2 + 12m + 16"
-      },
-      {
-        "explanation": "Area of shaded = m \u00d7 2m.",
-        "workingOut": "2m^2"
-      },
-      {
-        "explanation": "Difference.",
-        "workingOut": "(2m^2 + 12m + 16) - 2m^2 = 12m + 16"
+        "explanation": "This question asks us to find areas and their difference. In part a), we need to find the area of the large rectangle $ABCD$ and the shaded rectangle separately. In part b), we subtract to find the difference.",
+        "workingOut": "\\text{We need: Area of ABCD, Area of shaded, then their difference.}"
       }
     ],
     "graphData": {
@@ -2933,12 +3325,20 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "ABCD: 2m\u00b2 + 12m + 16; shaded: 2m\u00b2",
         "solutionSteps": [
           {
-            "explanation": "Area of ABCD.",
-            "workingOut": "(m+4)(2m+4) = 2m^2 + 12m + 16"
+            "explanation": "First, find the area of the large rectangle $ABCD$. From the diagram, its width is $(m + 4)$ cm and its height is $(2m + 4)$ cm. Multiply these together.",
+            "workingOut": "\\text{Area of ABCD} = (m + 4)(2m + 4)"
           },
           {
-            "explanation": "Area of shaded.",
-            "workingOut": "m \\times 2m = 2m^2"
+            "explanation": "To expand $(m + 4)(2m + 4)$, multiply each term in the first bracket by each term in the second bracket.",
+            "workingOut": "= m \\times 2m + m \\times 4 + 4 \\times 2m + 4 \\times 4"
+          },
+          {
+            "explanation": "Calculate each multiplication, then collect like terms ($4m + 8m = 12m$).",
+            "workingOut": "= 2m^2 + 4m + 8m + 16 = 2m^2 + 12m + 16 \\text{ cm}^2"
+          },
+          {
+            "explanation": "Now find the area of the shaded rectangle. From the diagram, it has width $m$ cm and height $2m$ cm.",
+            "workingOut": "\\text{Area of shaded} = m \\times 2m = 2m^2 \\text{ cm}^2"
           }
         ]
       },
@@ -2949,8 +3349,12 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "12m + 16",
         "solutionSteps": [
           {
-            "explanation": "Subtract shaded area from ABCD area.",
-            "workingOut": "(2m^2 + 12m + 16) - 2m^2 = 12m + 16\\ \\text{cm}^2"
+            "explanation": "The 'difference' means we subtract. We take the area of the large rectangle and subtract the area of the shaded rectangle.",
+            "workingOut": "\\text{Difference} = (2m^2 + 12m + 16) - 2m^2"
+          },
+          {
+            "explanation": "Simplify by collecting like terms. The $2m^2$ terms cancel each other out: $2m^2 - 2m^2 = 0$. The remaining terms stay as they are.",
+            "workingOut": "= 12m + 16 \\text{ cm}^2"
           }
         ]
       }
@@ -2967,8 +3371,8 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "The last digit of $p^2$ depends only on the last digit of $p$. Check digits 0\u20139.",
     "solutionSteps": [
       {
-        "explanation": "Check squares of digits 0\u20139 for their last digits.",
-        "workingOut": "0,1,4,9,6,5,6,9,4,1 \\Rightarrow \\{0,1,4,5,6,9\\}"
+        "explanation": "The key insight is that the last digit of $p^2$ depends only on the last digit of $p$. So we only need to check what happens when we square each digit from $0$ to $9$.",
+        "workingOut": "\\text{We will square 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 and look at the last digit each time.}"
       }
     ],
     "graphData": null,
@@ -2980,12 +3384,16 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "0, 1, 4, 5, 6, 9",
         "solutionSteps": [
           {
-            "explanation": "Compute last digit of n\u00b2 for n = 0 to 9.",
-            "workingOut": "0\\to0,\\ 1\\to1,\\ 2\\to4,\\ 3\\to9,\\ 4\\to6,\\ 5\\to5,\\ 6\\to6,\\ 7\\to9,\\ 8\\to4,\\ 9\\to1"
+            "explanation": "The last digit of any number squared only depends on the last digit of the number itself. So we just need to square every digit from $0$ to $9$ and see what last digits we get.",
+            "workingOut": "0^2=0,\\ 1^2=1,\\ 2^2=4,\\ 3^2=9,\\ 4^2=16,\\ 5^2=25"
           },
           {
-            "explanation": "Collect distinct values.",
-            "workingOut": "\\{0, 1, 4, 5, 6, 9\\}"
+            "explanation": "Continue with digits $6$ to $9$.",
+            "workingOut": "6^2=36,\\ 7^2=49,\\ 8^2=64,\\ 9^2=81"
+          },
+          {
+            "explanation": "Now list the last digits of each result: $0, 1, 4, 9, 6, 5, 6, 9, 4, 1$. Remove the duplicates to get the set of possible last digits.",
+            "workingOut": "\\text{Possible last digits of } p^2: \\{0, 1, 4, 5, 6, 9\\}"
           }
         ]
       },
@@ -2996,12 +3404,16 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "1, 5, 7",
         "solutionSteps": [
           {
-            "explanation": "Even p ends in 0,2,4,6,8. Compute p\u00b2+1 last digit for each.",
+            "explanation": "Since $p$ is even, it must end in one of these digits: $0, 2, 4, 6,$ or $8$. We need to square each of these and then add $1$.",
             "workingOut": "0^2+1=1,\\ 2^2+1=5,\\ 4^2+1=17,\\ 6^2+1=37,\\ 8^2+1=65"
           },
           {
-            "explanation": "Last digits are 1, 5, 7, 7, 5.",
-            "workingOut": "\\text{Possible last digits: }\\{1, 5, 7\\}"
+            "explanation": "Now look at the last digit of each result: $1, 5, 7, 7, 5$.",
+            "workingOut": "\\text{Last digits: } 1, 5, 7, 7, 5"
+          },
+          {
+            "explanation": "Remove duplicates to get the set of possible last digits.",
+            "workingOut": "\\text{Possible last digits of } p^2+1: \\{1, 5, 7\\}"
           }
         ]
       },
@@ -3012,8 +3424,16 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "0",
         "solutionSteps": [
           {
-            "explanation": "Even AND divisible by 5 \u2192 divisible by 10.",
-            "workingOut": "q = 10, 20, 30, \\ldots \\Rightarrow \\text{last digit always } 0"
+            "explanation": "An even number ends in $0, 2, 4, 6,$ or $8$. A number divisible by $5$ ends in $0$ or $5$.",
+            "workingOut": "\\text{Even last digits: } \\{0,2,4,6,8\\} \\quad \\text{Divisible by 5 last digits: } \\{0,5\\}"
+          },
+          {
+            "explanation": "For $q$ to be BOTH even AND divisible by $5$, its last digit must appear in both lists. The only digit that is in both sets is $0$.",
+            "workingOut": "\\{0,2,4,6,8\\} \\cap \\{0,5\\} = \\{0\\}"
+          },
+          {
+            "explanation": "Therefore $q$ must be divisible by $10$, and the only possible last digit is $0$.",
+            "workingOut": "\\text{Possible last digit of } q: 0"
           }
         ]
       },
@@ -3024,20 +3444,24 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "Yes. From part b), p\u00b2+1 for even p always ends in 1, 5 or 7. More formally: for any integer p, either p \u2261 0, 1 or 2 (mod 3). Then p\u00b2 \u2261 0, 1 or 1 (mod 3) respectively, so p\u00b2+1 \u2261 1, 2 or 2 (mod 3). In every case the remainder is not 0, so p\u00b2+1 is never divisible by 3.",
         "solutionSteps": [
           {
-            "explanation": "p \u2261 0 (mod 3):",
-            "workingOut": "p^2 + 1 \\equiv 0 + 1 = 1 \\pmod{3}"
+            "explanation": "Yes, it is true. To prove this, we consider all possible remainders when dividing $p$ by $3$. Any whole number $p$ gives a remainder of $0$, $1$, or $2$ when divided by $3$.",
+            "workingOut": "\\text{Case 1: } p = 3k \\text{ (remainder 0)}"
           },
           {
-            "explanation": "p \u2261 1 (mod 3):",
-            "workingOut": "p^2 + 1 \\equiv 1 + 1 = 2 \\pmod{3}"
+            "explanation": "If $p$ is divisible by $3$, then $p^2$ is also divisible by $3$, so $p^2 + 1$ has remainder $1$ when divided by $3$. Since the remainder is not $0$, it is NOT divisible by $3$.",
+            "workingOut": "p^2 + 1 \\equiv 0 + 1 = 1 \\pmod{3} \\quad \\text{(not divisible by 3)}"
           },
           {
-            "explanation": "p \u2261 2 (mod 3):",
-            "workingOut": "p^2 + 1 \\equiv 4 + 1 = 5 \\equiv 2 \\pmod{3}"
+            "explanation": "If $p$ has remainder $1$ when divided by $3$, then $p^2$ has remainder $1$, and $p^2 + 1$ has remainder $2$.",
+            "workingOut": "p^2 + 1 \\equiv 1 + 1 = 2 \\pmod{3} \\quad \\text{(not divisible by 3)}"
           },
           {
-            "explanation": "In all cases p\u00b2+1 is not divisible by 3.",
-            "workingOut": "\\therefore p^2 + 1 \\not\\equiv 0 \\pmod{3}"
+            "explanation": "If $p$ has remainder $2$ when divided by $3$, then $p^2$ has remainder $4$, which is the same as remainder $1$. So $p^2 + 1$ has remainder $2$.",
+            "workingOut": "p^2 + 1 \\equiv 4 + 1 = 5 \\equiv 2 \\pmod{3} \\quad \\text{(not divisible by 3)}"
+          },
+          {
+            "explanation": "In all three possible cases, $p^2 + 1$ gives a non-zero remainder when divided by $3$. Therefore $p^2 + 1$ is NEVER divisible by $3$, for any whole number $p$.",
+            "workingOut": "\\therefore p^2 + 1 \\text{ is never divisible by 3 } \\checkmark"
           }
         ]
       }
@@ -3054,8 +3478,8 @@ export const Y7_CH3H_QUESTIONS = [
     "hint": "Fill each row of the table, then observe that $(m+3)(m-3)$ always equals $m^2 - 9$.",
     "solutionSteps": [
       {
-        "explanation": "Expand (m+3)(m-3) algebraically.",
-        "workingOut": "(m+3)(m-3) = m^2 - 3m + 3m - 9 = m^2 - 9"
+        "explanation": "This question explores a special algebraic identity called the 'difference of two squares'. We will verify it numerically using a table, then prove it algebraically by expanding the brackets.",
+        "workingOut": "\\text{We want to show that } (m+3)(m-3) = m^2 - 9"
       }
     ],
     "graphData": null,
@@ -3067,24 +3491,24 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "m=4: 7,1,7,16; m=5: 8,2,16,25; m=6: 9,3,27,36; m=7: 10,4,40,49; m=8: 11,5,55,64",
         "solutionSteps": [
           {
-            "explanation": "m=4",
-            "workingOut": "7,\\ 1,\\ 7,\\ 16"
+            "explanation": "For each value of $m$, we need to calculate $m+3$, $m-3$, $(m+3)(m-3)$, and $m^2$. Let's start with $m = 4$.",
+            "workingOut": "m=4:\\ m+3=7,\\ m-3=1,\\ (m+3)(m-3)=7 \\times 1=7,\\ m^2=16"
           },
           {
-            "explanation": "m=5",
-            "workingOut": "8,\\ 2,\\ 16,\\ 25"
+            "explanation": "Now $m = 5$.",
+            "workingOut": "m=5:\\ m+3=8,\\ m-3=2,\\ (m+3)(m-3)=8 \\times 2=16,\\ m^2=25"
           },
           {
-            "explanation": "m=6",
-            "workingOut": "9,\\ 3,\\ 27,\\ 36"
+            "explanation": "Now $m = 6$.",
+            "workingOut": "m=6:\\ m+3=9,\\ m-3=3,\\ (m+3)(m-3)=9 \\times 3=27,\\ m^2=36"
           },
           {
-            "explanation": "m=7",
-            "workingOut": "10,\\ 4,\\ 40,\\ 49"
+            "explanation": "Now $m = 7$.",
+            "workingOut": "m=7:\\ m+3=10,\\ m-3=4,\\ (m+3)(m-3)=10 \\times 4=40,\\ m^2=49"
           },
           {
-            "explanation": "m=8",
-            "workingOut": "11,\\ 5,\\ 55,\\ 64"
+            "explanation": "Finally, $m = 8$.",
+            "workingOut": "m=8:\\ m+3=11,\\ m-3=5,\\ (m+3)(m-3)=11 \\times 5=55,\\ m^2=64"
           }
         ]
       },
@@ -3095,28 +3519,32 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "From the table: m=3: 0=9-9=0 \u2713; m=4: 7=16-9=7 \u2713; m=5: 16=25-9=16 \u2713; m=6: 27=36-9=27 \u2713; m=7: 40=49-9=40 \u2713; m=8: 55=64-9=55 \u2713. The (m+3)(m-3) column matches m\u00b2-9 in every row.",
         "solutionSteps": [
           {
-            "explanation": "m=3: (m+3)(m-3)=0, m\u00b2-9=0",
-            "workingOut": "0 = 9-9 = 0\\ \\checkmark"
+            "explanation": "To 'deduce' means to show using our results from the table. For each value of $m$, we check: does $(m+3)(m-3)$ equal $m^2 - 9$? Let's compare the two columns from our table.",
+            "workingOut": "\\text{We check: is } (m+3)(m-3) = m^2 - 9 \\text{ ?}"
           },
           {
-            "explanation": "m=4",
-            "workingOut": "7 = 16-9 = 7\\ \\checkmark"
+            "explanation": "$m=3$: From the table, $(m+3)(m-3) = 0$. And $m^2 - 9 = 9 - 9 = 0$. They match! ✓",
+            "workingOut": "0 = 9 - 9 = 0 \\ \\checkmark"
           },
           {
-            "explanation": "m=5",
-            "workingOut": "16 = 25-9 = 16\\ \\checkmark"
+            "explanation": "$m=4$: $(m+3)(m-3) = 7$. And $m^2 - 9 = 16 - 9 = 7$. They match! ✓",
+            "workingOut": "7 = 16 - 9 = 7 \\ \\checkmark"
           },
           {
-            "explanation": "m=6",
-            "workingOut": "27 = 36-9 = 27\\ \\checkmark"
+            "explanation": "$m=5$: $(m+3)(m-3) = 16$. And $m^2 - 9 = 25 - 9 = 16$. ✓",
+            "workingOut": "16 = 25 - 9 = 16 \\ \\checkmark"
           },
           {
-            "explanation": "m=7",
-            "workingOut": "40 = 49-9 = 40\\ \\checkmark"
+            "explanation": "$m=6$: $(m+3)(m-3) = 27$. And $m^2 - 9 = 36 - 9 = 27$. ✓",
+            "workingOut": "27 = 36 - 9 = 27 \\ \\checkmark"
           },
           {
-            "explanation": "m=8",
-            "workingOut": "55 = 64-9 = 55\\ \\checkmark"
+            "explanation": "$m=7$: $(m+3)(m-3) = 40$. And $m^2 - 9 = 49 - 9 = 40$. ✓",
+            "workingOut": "40 = 49 - 9 = 40 \\ \\checkmark"
+          },
+          {
+            "explanation": "$m=8$: $(m+3)(m-3) = 55$. And $m^2 - 9 = 64 - 9 = 55$. ✓  In every row, the values match.",
+            "workingOut": "55 = 64 - 9 = 55 \\ \\checkmark"
           }
         ]
       },
@@ -3127,12 +3555,24 @@ export const Y7_CH3H_QUESTIONS = [
         "a": "Expand (m+3)(m-3) using the distributive law: (m+3)(m-3) = m\u00b2-3m+3m-9 = m\u00b2-9. The middle terms cancel, so the identity holds for every value of m.",
         "solutionSteps": [
           {
-            "explanation": "Expand using distributive law.",
-            "workingOut": "(m+3)(m-3) = m^2 - 3m + 3m - 9"
+            "explanation": "To prove this works for ALL whole numbers (not just $3$ to $8$), we need to expand the brackets algebraically. Use the distributive law: multiply each term in the first bracket by each term in the second bracket.",
+            "workingOut": "(m+3)(m-3)"
           },
           {
-            "explanation": "The middle terms cancel.",
-            "workingOut": "= m^2 - 9\\ \\checkmark"
+            "explanation": "Multiply $m$ by both terms in the second bracket, then multiply $3$ by both terms in the second bracket.",
+            "workingOut": "= m \\times m + m \\times (-3) + 3 \\times m + 3 \\times (-3)"
+          },
+          {
+            "explanation": "Calculate each multiplication.",
+            "workingOut": "= m^2 - 3m + 3m - 9"
+          },
+          {
+            "explanation": "Notice that $-3m$ and $+3m$ are like terms that cancel each other out ($-3m + 3m = 0$). This always happens with this pattern!",
+            "workingOut": "= m^2 - 9 \\ \\checkmark"
+          },
+          {
+            "explanation": "Since this expansion works for any value of $m$ (we used algebra, not specific numbers), the identity $(m+3)(m-3) = m^2 - 9$ is true for ALL whole numbers $m$.",
+            "workingOut": "\\therefore (m+3)(m-3) = m^2 - 9 \\text{ for all } m"
           }
         ]
       }
