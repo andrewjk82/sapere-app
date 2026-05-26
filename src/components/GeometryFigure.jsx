@@ -21,6 +21,8 @@
  *                  to shade between them (uses SVG evenodd fill rule so the
  *                  inner polygon is cut out — useful for donut/frame regions).
  *                  color defaults to "#94a3b8", opacity defaults to 0.35.
+ *   circles:     [ { center: "O", through: "A", radius?, color?, dashed?, filled?, fillOpacity? } ]
+ *                  Draws a circle centered at `center`. Radius is determined by the distance to `through` or explicitly via `radius` in data units.
  */
 const GeometryFigure = ({
   points = {},
@@ -29,6 +31,7 @@ const GeometryFigure = ({
   sideLabels = [],
   freeLabels = [],
   shadedPolygons = [],
+  circles = [],
   showPointLabels = true,
   width = 300,
   fontSize = 14,
@@ -117,6 +120,31 @@ const GeometryFigure = ({
         stroke="none"
       />
     );
+  });
+
+  // --- Circles ----------------------------------------------------------
+  circles.forEach((circ) => {
+    const [cx_svg, cy_svg] = P(circ.center);
+    let r_svg = 0;
+    if (circ.through) {
+      const [tx_svg, ty_svg] = P(circ.through);
+      r_svg = Math.hypot(tx_svg - cx_svg, ty_svg - cy_svg);
+    } else if (circ.radius) {
+      r_svg = circ.radius * scale;
+    }
+    
+    if (r_svg > 0) {
+      els.push(
+        <circle
+          key={`c${key++}`}
+          cx={cx_svg} cy={cy_svg} r={r_svg}
+          stroke={circ.color || "#000000"} strokeWidth="1.2"
+          strokeDasharray={circ.dashed ? '6 4' : undefined}
+          fill={circ.filled ? (circ.color || "#000000") : "none"}
+          fillOpacity={circ.filled ? (circ.fillOpacity ?? 0.1) : undefined}
+        />
+      );
+    }
   });
 
   // --- Segments ---------------------------------------------------------

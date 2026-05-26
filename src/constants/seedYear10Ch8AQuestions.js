@@ -1297,6 +1297,12 @@ export const Y10_CH8A_QUESTIONS = [
             "at": "B",
             "text": "\\beta"
           }
+        ],
+        "circles": [
+          {
+            "center": "O",
+            "through": "A"
+          }
         ]
       }
     }
@@ -1380,6 +1386,12 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "B",
             "text": "\\beta"
+          }
+        ],
+        "circles": [
+          {
+            "center": "O",
+            "through": "A"
           }
         ]
       }
@@ -1637,6 +1649,12 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "C",
             "text": "\\alpha"
+          }
+        ],
+        "circles": [
+          {
+            "center": "O",
+            "through": "A"
           }
         ]
       }
