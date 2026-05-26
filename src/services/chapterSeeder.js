@@ -46,12 +46,26 @@ const mapSeedQuestion = (raw, chapter) => {
     answer = String(correctIndex >= 0 ? correctIndex : 0);
   }
 
+  // Per-question overrides (e.g. exam papers that span multiple topics)
+  const resolvedTopicId = raw.topicId || chapter.topicId;
+  const resolvedTopicCode = raw.c || raw.topicCode || chapter.topicCode || '';
+  const resolvedTopicTitle = raw.t || raw.topicTitle || chapter.topicTitle || '';
+
+  // Derive the real chapter ID from topicId (e.g. 'y12a-3D' → 'y12a-3').
+  // This lets exam-paper questions live in their proper curriculum chapters so
+  // they appear in Daily Challenge and regular Exam Prep, while the examPaper
+  // field still lets teachers pull only HSC trial questions when needed.
+  const resolvedChapterId = raw.chapterId
+    || (resolvedTopicId !== chapter.topicId
+      ? resolvedTopicId.replace(/[A-Z]+$/, '')
+      : chapter.chapterId);
+
   return {
-    chapterId: chapter.chapterId,
+    chapterId: resolvedChapterId,
     chapterTitle: chapter.chapterTitle,
-    topicId: chapter.topicId,
-    topicCode: chapter.topicCode || '',
-    topicTitle: raw.t || raw.topicTitle || chapter.topicTitle || '',
+    topicId: resolvedTopicId,
+    topicCode: resolvedTopicCode,
+    topicTitle: resolvedTopicTitle,
     year: chapter.year,
     isManual: true,
     title: `${questionText.replace(/\$/g, '').slice(0, 30)}...`,
@@ -71,6 +85,9 @@ const mapSeedQuestion = (raw, chapter) => {
     subQuestions: Array.isArray(raw.subQuestions) ? raw.subQuestions : [],
     blanks: Array.isArray(raw.blanks) ? raw.blanks : [],
     graphData: raw.graphData || null,
+    // Exam-paper provenance — lets teachers filter "HSC trial only" in Exam
+    // Prep without disconnecting the question from its real curriculum chapter.
+    examPaper: raw.examPaper || chapter.examPaper || '',
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
   };

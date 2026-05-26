@@ -32,6 +32,7 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
   const selection = useMemo(() => ({
     years: Array.isArray(student?.examPrepSelection?.years) ? student.examPrepSelection.years : [],
     chapters: Array.isArray(student?.examPrepSelection?.chapters) ? student.examPrepSelection.chapters : [],
+    examPaperOnly: student?.examPrepSelection?.examPaperOnly === true,
   }), [student?.examPrepSelection]);
 
   const [activeYear, setActiveYear] = useState(selection.years[0] || student?.assignedYear || "Year 9");
@@ -41,6 +42,7 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
     onUpdateSetting("examPrepSelection", {
       years: Array.isArray(next?.years) ? next.years : [],
       chapters: Array.isArray(next?.chapters) ? next.chapters : [],
+      examPaperOnly: next?.examPaperOnly === true,
     });
   };
   // Selection is driven by chapter checkboxes only. The Year strip is a
@@ -247,6 +249,44 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
               <span style={{ marginLeft: "auto", fontSize: "0.7rem", color: "#94a3b8", fontWeight: 800 }}>
                 {selection.chapters.length} selected
               </span>
+            </div>
+
+            {/* HSC Papers Only toggle */}
+            <div
+              role="button"
+              tabIndex={0}
+              onClick={() => writeSelection({ ...selection, examPaperOnly: !selection.examPaperOnly })}
+              onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); writeSelection({ ...selection, examPaperOnly: !selection.examPaperOnly }); } }}
+              style={{
+                display: "flex", alignItems: "center", gap: "10px",
+                padding: "10px 14px", borderRadius: "12px", marginBottom: "14px",
+                border: `1.5px solid ${selection.examPaperOnly ? "#a78bfa" : "#e2e8f0"}`,
+                background: selection.examPaperOnly ? "#faf5ff" : "#f8fafc",
+                cursor: "pointer", userSelect: "none",
+              }}
+            >
+              <div style={{
+                width: "36px", height: "20px", borderRadius: "999px", flexShrink: 0,
+                background: selection.examPaperOnly ? "#7c3aed" : "#cbd5e1",
+                position: "relative", transition: "background 0.2s",
+              }}>
+                <div style={{
+                  position: "absolute", top: "3px",
+                  left: selection.examPaperOnly ? "19px" : "3px",
+                  width: "14px", height: "14px", borderRadius: "50%",
+                  background: "#fff", transition: "left 0.2s",
+                }} />
+              </div>
+              <div>
+                <div style={{ fontWeight: 800, fontSize: "0.82rem", color: selection.examPaperOnly ? "#5b21b6" : "#475569" }}>
+                  HSC Trial Papers only
+                </div>
+                <div style={{ fontSize: "0.72rem", color: "#94a3b8", fontWeight: 600 }}>
+                  {selection.examPaperOnly
+                    ? "Only HSC exam paper questions will appear in selected topics"
+                    : "All questions (textbook + exam papers) for selected topics"}
+                </div>
+              </div>
             </div>
 
             {/* Year tabs — pure navigation. "Active" = currently viewing.

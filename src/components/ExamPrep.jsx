@@ -446,8 +446,179 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   );
 };
 
+// ── Review screen — question-by-question solution walkthrough ──────────
+const ReviewView = ({ questions, answers, onDone }) => {
+  const [idx, setIdx] = useState(0);
+  const [expandedSteps, setExpandedSteps] = useState(true);
+  const q = questions[idx];
+  const ans = answers[idx];
+  const total = questions.length;
+
+  useEffect(() => { setExpandedSteps(true); }, [idx]);
+
+  if (!q) return null;
+
+  const isCorrect = ans?.correct;
+  const solutionSteps = q.solutionSteps || [];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+      {/* header */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <button onClick={onDone} style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', flexShrink: 0 }}>
+          <ArrowLeft size={16} />
+        </button>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Review</div>
+          <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '1rem' }}>Question {idx + 1} of {total}</div>
+        </div>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <button disabled={idx === 0} onClick={() => setIdx(idx - 1)} style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', cursor: idx === 0 ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: idx === 0 ? '#cbd5e1' : '#475569' }}>
+            <ArrowLeft size={16} />
+          </button>
+          <button disabled={idx + 1 >= total} onClick={() => setIdx(idx + 1)} style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', cursor: idx + 1 >= total ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: idx + 1 >= total ? '#cbd5e1' : '#475569' }}>
+            <ArrowRight size={16} />
+          </button>
+        </div>
+      </div>
+
+      {/* progress dots */}
+      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+        {questions.map((_, i) => {
+          const a = answers[i];
+          const color = a?.correct ? '#10b981' : '#ef4444';
+          return (
+            <button key={i} onClick={() => setIdx(i)} style={{ width: '28px', height: '8px', borderRadius: '999px', border: 'none', background: i === idx ? '#7c3aed' : color, cursor: 'pointer', opacity: i === idx ? 1 : 0.55, transition: 'all 0.15s' }} />
+          );
+        })}
+      </div>
+
+      {/* question card */}
+      <div className="app-panel" style={{ padding: '22px', borderRadius: '22px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
+          <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
+            {q.topicTitle || q.chapterTitle}
+          </span>
+          <span style={{
+            display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 12px', borderRadius: '999px', fontWeight: 800, fontSize: '0.82rem',
+            background: isCorrect ? '#f0fdf4' : '#fef2f2', color: isCorrect ? '#16a34a' : '#dc2626',
+            border: `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}`,
+          }}>
+            {isCorrect ? <CheckCircle2 size={14} /> : <XCircle size={14} />}
+            {isCorrect ? 'Correct' : 'Incorrect'}
+          </span>
+        </div>
+        <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
+      </div>
+
+      {/* your answer vs correct */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+        <div style={{ padding: '16px', borderRadius: '18px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}` }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: isCorrect ? '#16a34a' : '#dc2626', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Your answer</div>
+          <MathView
+            content={
+              q.type === 'multiple_choice'
+                ? (q.options?.[ans?.userAnswer] ?? '—')
+                : (Array.isArray(ans?.userAnswer) ? ans.userAnswer.join(', ') : String(ans?.userAnswer ?? '—'))
+            }
+            style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b' }}
+          />
+        </div>
+        <div style={{ padding: '16px', borderRadius: '18px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#16a34a', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Correct answer</div>
+          <MathView
+            content={
+              q.type === 'multiple_choice'
+                ? (q.options?.[Number(q.answer)] ?? String(q.answer))
+                : String(q.answer ?? '')
+            }
+            style={{ fontSize: '1rem', fontWeight: 700, color: '#166534' }}
+          />
+        </div>
+      </div>
+
+      {/* step-by-step solution */}
+      {solutionSteps.length > 0 && (
+        <div className="app-panel" style={{ padding: '20px', borderRadius: '22px', border: '1px solid #e0e7ff' }}>
+          <button
+            onClick={() => setExpandedSteps((v) => !v)}
+            style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '10px', background: 'none', border: 'none', cursor: 'pointer', padding: 0, marginBottom: expandedSteps ? '16px' : 0 }}
+          >
+            <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff', flexShrink: 0 }}>
+              <Lightbulb size={16} />
+            </div>
+            <div style={{ flex: 1, textAlign: 'left' }}>
+              <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Step-by-step solution</div>
+              <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>{solutionSteps.length} steps</div>
+            </div>
+            <ChevronRight size={18} color="#94a3b8" style={{ transform: expandedSteps ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s' }} />
+          </button>
+
+          <AnimatePresence initial={false}>
+            {expandedSteps && (
+              <motion.div
+                key="steps"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                style={{ overflow: 'hidden' }}
+              >
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {solutionSteps.map((step, si) => (
+                    <div key={si} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                      <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.75rem', flexShrink: 0, marginTop: '2px' }}>
+                        {si + 1}
+                      </div>
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        {step.explanation && (
+                          <MathView content={step.explanation} style={{ fontSize: '0.9rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6, marginBottom: step.workingOut ? '8px' : 0 }} />
+                        )}
+                        {step.workingOut && (
+                          <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
+                            <MathView content={`$${step.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      )}
+
+      {/* hint (if any) */}
+      {q.hint && (
+        <div style={{ padding: '14px 18px', borderRadius: '16px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#d97706', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>Hint</div>
+          <MathView content={q.hint} style={{ color: '#92400e', fontSize: '0.9rem', fontWeight: 600 }} />
+        </div>
+      )}
+
+      {/* nav buttons */}
+      <div style={{ display: 'grid', gridTemplateColumns: idx + 1 >= total ? '1fr 1fr' : '1fr', gap: '10px' }}>
+        {idx + 1 < total ? (
+          <button onClick={() => setIdx(idx + 1)} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+            Next question <ArrowRight size={16} />
+          </button>
+        ) : (
+          <>
+            <button onClick={onDone} className="app-button" style={{ padding: '16px', borderRadius: '18px', border: '1px solid #e2e8f0', background: '#fff', color: '#475569', fontWeight: 800, display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+              <ArrowLeft size={16} /> Back to results
+            </button>
+            <button onClick={onDone} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+              <CheckCircle2 size={16} /> Done reviewing
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
 // ── Result screen ──────────────────────────────────────────────────────
-const ResultPanel = ({ result, onRestart, onExit, cumulativeAnalysis }) => (
+const ResultPanel = ({ result, onRestart, onExit, onReview, cumulativeAnalysis }) => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
     <div className="app-panel" style={{ padding: '28px', borderRadius: '28px', textAlign: 'center', background: 'linear-gradient(135deg, #ede9fe, #fff)' }}>
       <div style={{ width: '72px', height: '72px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff', margin: '0 auto 14px' }}>
@@ -485,6 +656,10 @@ const ResultPanel = ({ result, onRestart, onExit, cumulativeAnalysis }) => (
     </div>
 
     <TopicAnalysisCard analysis={cumulativeAnalysis} />
+
+    <button onClick={onReview} className="app-button" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #f0fdf4, #dcfce7)', color: '#166534', fontWeight: 800, border: '1px solid #bbf7d0', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px', width: '100%' }}>
+      <Lightbulb size={16} /> Review step-by-step solutions
+    </button>
 
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
       <button onClick={onExit} className="app-button" style={{ padding: '16px', borderRadius: '18px', background: '#fff', color: '#475569', fontWeight: 800, border: '1px solid #e2e8f0', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
@@ -743,8 +918,10 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   const selection = useMemo(() => ({
     years: Array.isArray(profile?.examPrepSelection?.years) ? profile.examPrepSelection.years : [],
     chapters: Array.isArray(profile?.examPrepSelection?.chapters) ? profile.examPrepSelection.chapters : [],
+    examPaperOnly: profile?.examPrepSelection?.examPaperOnly === true,
   }), [profile?.examPrepSelection]);
-  const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'secretNote'
+  const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'review' | 'secretNote'
+  const [lastAnswers, setLastAnswers] = useState([]);
 
   useEffect(() => {
     onExamActiveChange?.(stage === 'quiz');
@@ -838,6 +1015,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     if (!uid) return;
     const r = await finishRound(uid, answers, { questions });
     setResult(r);
+    setLastAnswers(answers);
     setAnalysis(getTopicAnalysis(uid));
     setStats(getStats(uid));
     setStage('result');
@@ -881,7 +1059,11 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         )}
 
         {stage === 'result' && result && (
-          <ResultPanel result={result} onRestart={handleRestart} onExit={() => setStage('setup')} cumulativeAnalysis={analysis} />
+          <ResultPanel result={result} onRestart={handleRestart} onExit={() => setStage('setup')} onReview={() => setStage('review')} cumulativeAnalysis={analysis} />
+        )}
+
+        {stage === 'review' && questions.length > 0 && (
+          <ReviewView questions={questions} answers={lastAnswers} onDone={() => setStage('result')} />
         )}
       </div>
 

@@ -3305,6 +3305,6 @@ export const CURRICULUM_DATA = {
       { id: 'y12e2-1', title: 'Complex Numbers', modules: 15 },
       { id: 'y12e2-2', title: 'Nature of Proof', modules: 12 },
       { id: 'y12e2-3', title: 'Integration Techniques', modules: 18 }
-    ]
+    ],
   }
 };

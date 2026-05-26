@@ -41,6 +41,7 @@ export const setSelection = (uid, selection) => {
   const normalised = {
     years: Array.isArray(selection?.years) ? selection.years : [],
     chapters: Array.isArray(selection?.chapters) ? selection.chapters : [],
+    examPaperOnly: selection?.examPaperOnly === true,
   };
   localStorage.setItem(k(uid, 'selection'), JSON.stringify(normalised));
   // Invalidate the pool when selection changes — different scope, new pool.
@@ -72,7 +73,7 @@ const pushHistory = (uid, session) => {
 
 // ── Question pool (the cached candidate set) ──────────────────────────
 const signatureFor = (selection) =>
-  `${[...(selection.years || [])].sort().join('|')}::${[...(selection.chapters || [])].sort().join('|')}`;
+  `${[...(selection.years || [])].sort().join('|')}::${[...(selection.chapters || [])].sort().join('|')}::${selection.examPaperOnly ? '1' : '0'}`;
 
 const loadCachedPool = (uid, selection) => {
   const cached = safeParse(localStorage.getItem(k(uid, 'pool')), null);
@@ -120,7 +121,12 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
     });
   }
   // Drop teacher_review questions — exam prep auto-grades.
-  const usable = all.filter((q) => q.type !== 'teacher_review' && !q.requiresManualGrading);
+  // When examPaperOnly is set, restrict to questions sourced from HSC trial papers.
+  const usable = all.filter((q) =>
+    q.type !== 'teacher_review'
+    && !q.requiresManualGrading
+    && (!selection.examPaperOnly || Boolean(q.examPaper))
+  );
   saveCachedPool(uid, selection, usable);
   return usable;
 };
