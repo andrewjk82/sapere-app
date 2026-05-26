@@ -1190,338 +1190,97 @@ export const Y10_CH6_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A modern sculpture consists of three cubes, with side lengths 1 m, 2 m, and 3 m respectively, placed on top of each other as shown. Calculate the exposed surface area of the sculpture. Do not include the base of the large cube in your calculations.",
-    "a": "66",
+    "a": "65",
     "solutionSteps": [
       {
-        "explanation": "Surface area of top cube (5 faces exposed).",
-        "workingOut": "SA_{top} = 5(1^2) = 5"
+        "explanation": "Find the exposed surface area of the top cube (1 m sides). All 6 faces are exposed except the bottom face, which sits on the middle cube.",
+        "workingOut": "SA_{\\text{top}} = 5 \\times 1^2 = 5 \\text{ m}^2"
       },
       {
-        "explanation": "Exposed area of middle cube (4 sides + top minus bottom of top cube).",
-        "workingOut": "SA_{mid} = 4(2^2) + (2^2 - 1^2) = 16 + 3 = 19"
+        "explanation": "Find the exposed surface area of the middle cube (2 m sides). The 4 side faces are fully exposed. The top face is exposed except where the top cube sits (a 1×1 square). The bottom face is hidden (sitting on the bottom cube).",
+        "workingOut": "SA_{\\text{mid}} = 4 \\times 2^2 + (2^2 - 1^2) = 16 + 3 = 19 \\text{ m}^2"
       },
       {
-        "explanation": "Exposed area of bottom cube (4 sides + top minus bottom of middle cube).",
-        "workingOut": "SA_{bot} = 4(3^2) + (3^2 - 2^2) = 36 + 5 = 41"
+        "explanation": "Find the exposed surface area of the bottom cube (3 m sides). The 4 side faces are fully exposed. The top face is exposed except where the middle cube sits (a 2×2 square). The base is excluded as stated in the question.",
+        "workingOut": "SA_{\\text{bot}} = 4 \\times 3^2 + (3^2 - 2^2) = 36 + 5 = 41 \\text{ m}^2"
       },
       {
-        "explanation": "Alternatively, sum of 4 sides of each cube + top area of bottom cube.",
-        "workingOut": "Sides = 4(1^2) + 4(2^2) + 4(3^2) = 4 + 16 + 36 = 56. Top area = 3^2 = 9. Total = 56 + 9 = 65. Wait."
-      },
-      {
-        "explanation": "Let us recalculate. Top: 5 faces = 5. Mid: 4 sides + top ring = 16 + 3 = 19. Bot: 4 sides + top ring = 36 + 5 = 41. Total = 5 + 19 + 41 = 65. Oh, wait, the top of the middle cube is 2^2, minus the bottom of the top cube (1^2), which is 4-1=3. Yes. 5 + 19 + 41 = 65."
-      },
-      {
-        "explanation": "Let me re-check. Total SA without base = 4*(1^2) + 1^2 (top) + 4*(2^2) + (2^2 - 1^2) + 4*(3^2) + (3^2 - 2^2) = 4 + 1 + 16 + 3 + 36 + 5 = 65."
-      },
-      {
-        "explanation": "Calculations.",
-        "workingOut": "Total SA = 65"
+        "explanation": "Add all three parts to find the total exposed surface area.",
+        "workingOut": "SA_{\\text{total}} = 5 + 19 + 41 = 65 \\text{ m}^2"
       }
     ],
     "graphData": {
       "geometry": {
-        "width": 250,
+        "width": 280,
         "projection": "isometric",
         "points": {
-          "B1": [
-            0,
-            0,
-            0
-          ],
-          "B2": [
-            3,
-            0,
-            0
-          ],
-          "B3": [
-            3,
-            0,
-            3
-          ],
-          "B4": [
-            0,
-            0,
-            3
-          ],
-          "B5": [
-            0,
-            3,
-            0
-          ],
-          "B6": [
-            3,
-            3,
-            0
-          ],
-          "B7": [
-            3,
-            3,
-            3
-          ],
-          "B8": [
-            0,
-            3,
-            3
-          ],
-          "M1": [
-            0,
-            3,
-            0
-          ],
-          "M2": [
-            2,
-            3,
-            0
-          ],
-          "M3": [
-            2,
-            3,
-            2
-          ],
-          "M4": [
-            0,
-            3,
-            2
-          ],
-          "M5": [
-            0,
-            5,
-            0
-          ],
-          "M6": [
-            2,
-            5,
-            0
-          ],
-          "M7": [
-            2,
-            5,
-            2
-          ],
-          "M8": [
-            0,
-            5,
-            2
-          ],
-          "T1": [
-            0,
-            5,
-            0
-          ],
-          "T2": [
-            1,
-            5,
-            0
-          ],
-          "T3": [
-            1,
-            5,
-            1
-          ],
-          "T4": [
-            0,
-            5,
-            1
-          ],
-          "T5": [
-            0,
-            6,
-            0
-          ],
-          "T6": [
-            1,
-            6,
-            0
-          ],
-          "T7": [
-            1,
-            6,
-            1
-          ],
-          "T8": [
-            0,
-            6,
-            1
-          ]
+          "B1": [0, 0, 0],
+          "B2": [3, 0, 0],
+          "B3": [3, 0, 3],
+          "B4": [0, 0, 3],
+          "B5": [0, 3, 0],
+          "B6": [3, 3, 0],
+          "B7": [3, 3, 3],
+          "B8": [0, 3, 3],
+          "M1": [0.5, 3, 0.5],
+          "M2": [2.5, 3, 0.5],
+          "M3": [2.5, 3, 2.5],
+          "M4": [0.5, 3, 2.5],
+          "M5": [0.5, 5, 0.5],
+          "M6": [2.5, 5, 0.5],
+          "M7": [2.5, 5, 2.5],
+          "M8": [0.5, 5, 2.5],
+          "T1": [1, 5, 1],
+          "T2": [2, 5, 1],
+          "T3": [2, 5, 2],
+          "T4": [1, 5, 2],
+          "T5": [1, 6, 1],
+          "T6": [2, 6, 1],
+          "T7": [2, 6, 2],
+          "T8": [1, 6, 2]
         },
         "segments": [
-          {
-            "from": "B1",
-            "to": "B2"
-          },
-          {
-            "from": "B2",
-            "to": "B3"
-          },
-          {
-            "from": "B3",
-            "to": "B4"
-          },
-          {
-            "from": "B4",
-            "to": "B1",
-            "dashed": true
-          },
-          {
-            "from": "B5",
-            "to": "B6"
-          },
-          {
-            "from": "B6",
-            "to": "B7"
-          },
-          {
-            "from": "B7",
-            "to": "B8"
-          },
-          {
-            "from": "B8",
-            "to": "B5"
-          },
-          {
-            "from": "B1",
-            "to": "B5",
-            "dashed": true
-          },
-          {
-            "from": "B2",
-            "to": "B6"
-          },
-          {
-            "from": "B3",
-            "to": "B7"
-          },
-          {
-            "from": "B4",
-            "to": "B8",
-            "dashed": true
-          },
-          {
-            "from": "M1",
-            "to": "M2"
-          },
-          {
-            "from": "M2",
-            "to": "M3"
-          },
-          {
-            "from": "M3",
-            "to": "M4"
-          },
-          {
-            "from": "M4",
-            "to": "M1",
-            "dashed": true
-          },
-          {
-            "from": "M5",
-            "to": "M6"
-          },
-          {
-            "from": "M6",
-            "to": "M7"
-          },
-          {
-            "from": "M7",
-            "to": "M8"
-          },
-          {
-            "from": "M8",
-            "to": "M5"
-          },
-          {
-            "from": "M1",
-            "to": "M5",
-            "dashed": true
-          },
-          {
-            "from": "M2",
-            "to": "M6"
-          },
-          {
-            "from": "M3",
-            "to": "M7"
-          },
-          {
-            "from": "M4",
-            "to": "M8",
-            "dashed": true
-          },
-          {
-            "from": "T1",
-            "to": "T2"
-          },
-          {
-            "from": "T2",
-            "to": "T3"
-          },
-          {
-            "from": "T3",
-            "to": "T4"
-          },
-          {
-            "from": "T4",
-            "to": "T1",
-            "dashed": true
-          },
-          {
-            "from": "T5",
-            "to": "T6"
-          },
-          {
-            "from": "T6",
-            "to": "T7"
-          },
-          {
-            "from": "T7",
-            "to": "T8"
-          },
-          {
-            "from": "T8",
-            "to": "T5"
-          },
-          {
-            "from": "T1",
-            "to": "T5",
-            "dashed": true
-          },
-          {
-            "from": "T2",
-            "to": "T6"
-          },
-          {
-            "from": "T3",
-            "to": "T7"
-          },
-          {
-            "from": "T4",
-            "to": "T8",
-            "dashed": true
-          }
+          { "from": "B1", "to": "B2" },
+          { "from": "B2", "to": "B3" },
+          { "from": "B3", "to": "B4", "dashed": true },
+          { "from": "B4", "to": "B1", "dashed": true },
+          { "from": "B5", "to": "B6" },
+          { "from": "B6", "to": "B7" },
+          { "from": "B7", "to": "B8" },
+          { "from": "B8", "to": "B5" },
+          { "from": "B1", "to": "B5" },
+          { "from": "B2", "to": "B6" },
+          { "from": "B3", "to": "B7" },
+          { "from": "B4", "to": "B8", "dashed": true },
+          { "from": "M1", "to": "M2" },
+          { "from": "M2", "to": "M3" },
+          { "from": "M3", "to": "M4", "dashed": true },
+          { "from": "M4", "to": "M1", "dashed": true },
+          { "from": "M5", "to": "M6" },
+          { "from": "M6", "to": "M7" },
+          { "from": "M7", "to": "M8" },
+          { "from": "M8", "to": "M5" },
+          { "from": "M1", "to": "M5" },
+          { "from": "M2", "to": "M6" },
+          { "from": "M3", "to": "M7" },
+          { "from": "M4", "to": "M8", "dashed": true },
+          { "from": "T1", "to": "T2" },
+          { "from": "T2", "to": "T3" },
+          { "from": "T3", "to": "T4", "dashed": true },
+          { "from": "T4", "to": "T1", "dashed": true },
+          { "from": "T5", "to": "T6" },
+          { "from": "T6", "to": "T7" },
+          { "from": "T7", "to": "T8" },
+          { "from": "T8", "to": "T5" },
+          { "from": "T1", "to": "T5" },
+          { "from": "T2", "to": "T6" },
+          { "from": "T3", "to": "T7" },
+          { "from": "T4", "to": "T8", "dashed": true }
         ],
         "sideLabels": [
-          {
-            "between": [
-              "B2",
-              "B3"
-            ],
-            "text": "3 m"
-          },
-          {
-            "between": [
-              "M2",
-              "M3"
-            ],
-            "text": "2 m"
-          },
-          {
-            "between": [
-              "T2",
-              "T3"
-            ],
-            "text": "1 m"
-          }
+          { "between": ["B1", "B2"], "text": "3 m" },
+          { "between": ["M1", "M2"], "text": "2 m" },
+          { "between": ["T1", "T2"], "text": "1 m" }
         ]
       }
     },
