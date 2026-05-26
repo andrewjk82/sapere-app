@@ -1641,5 +1641,307 @@ export const Y10_CH8A_QUESTIONS = [
         ]
       }
     }
+  },
+  {
+    "id": "y10-8a-q2k-alpha",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Review of triangles",
+    "question": "In quadrilateral $ABCD$, Angle $A = 80^\\circ$, Angle $B = 110^\\circ$, Angle $D = 40^\\circ$. Find $\\alpha$ (Angle $C$) in degrees.",
+    "a": "130",
+    "solutionSteps": [
+      {
+        "explanation": "Sum = 360.",
+        "workingOut": "\\alpha = 360 - (80 + 110 + 40) = 130^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            2,
+            4
+          ],
+          "C": [
+            6,
+            4
+          ],
+          "D": [
+            8,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "80°"
+          },
+          {
+            "at": "B",
+            "text": "110°"
+          },
+          {
+            "at": "D",
+            "text": "40°"
+          },
+          {
+            "at": "C",
+            "text": "\\alpha"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2l-alpha",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "Find the size of the interior angle $\\alpha$ of a regular pentagon in degrees.",
+    "a": "108",
+    "solutionSteps": [
+      {
+        "explanation": "Formula.",
+        "workingOut": "\\alpha = 180 \\times (5-2) / 5 = 108^\\circ"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y10-8a-q2m-alpha",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "In parallelogram $ABCD$, Angle $A = 60^\\circ$. Find $\\alpha$ (Angle $D$) in degrees.",
+    "a": "120",
+    "solutionSteps": [
+      {
+        "explanation": "Adjacent angles.",
+        "workingOut": "\\alpha = 180 - 60 = 120^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            2,
+            4
+          ],
+          "C": [
+            8,
+            4
+          ],
+          "D": [
+            6,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 2
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "60°"
+          },
+          {
+            "at": "D",
+            "text": "\\alpha"
+          },
+          {
+            "at": "C",
+            "text": "\\beta"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2m-beta",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "In parallelogram $ABCD$, Angle $A = 60^\\circ$. Find $\\beta$ (Angle $C$) in degrees.",
+    "a": "60",
+    "solutionSteps": [
+      {
+        "explanation": "Opposite angles.",
+        "workingOut": "\\beta = 60^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            2,
+            4
+          ],
+          "C": [
+            8,
+            4
+          ],
+          "D": [
+            6,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "C",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 2
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "60°"
+          },
+          {
+            "at": "D",
+            "text": "\\alpha"
+          },
+          {
+            "at": "C",
+            "text": "\\beta"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q3",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Review of triangles",
+    "question": "The exterior angles of a regular polygon are each $45^\\circ$. How many sides does the polygon have?",
+    "a": "8",
+    "solutionSteps": [
+      {
+        "explanation": "360 / 45",
+        "workingOut": "n = 8"
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y10-8a-q4",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "Three angles of a pentagon are each $150^\\circ$ and the remaining angles are equal. Find the size of each of the two remaining angles in degrees.",
+    "a": "45",
+    "solutionSteps": [
+      {
+        "explanation": "Sum = 540.",
+        "workingOut": "540 - 450 = 90. 90 / 2 = 45^\\circ"
+      }
+    ],
+    "graphData": null
   }
 ];
