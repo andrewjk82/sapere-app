@@ -59,6 +59,7 @@ function slimQuestion(q) {
     isManual: !!q.isManual,
     hint: q.hint || null,
     solution: q.solution || null,
+    solutionSteps: Array.isArray(q.solutionSteps) ? q.solutionSteps : null,
     chapterTitle: q.chapterTitle || '',
     topicId: q.topicId || '',
     topicCode: q.topicCode || '',
