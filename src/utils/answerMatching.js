@@ -2,10 +2,30 @@
 // DailyChallenge.jsx so Exam Prep (and any future quiz surface) can grade
 // against the exact same normalisation rules.
 
+// Strip LaTeX \text{...} wrappers and common measurement unit suffixes so
+// "9355\text{ m}" matches "9355" and "15m" matches "15".
+const stripUnits = (s) =>
+  s
+    // LaTeX \text{ m }, \text{metres}, etc.
+    .replace(/\\text\s*\{[^{}]*\}/g, '')
+    // Standalone unit words / abbreviations at the end or after a digit
+    // Order matters: longer words first to avoid partial matches
+    .replace(/\b(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?|cm²|m²|km²|cm³|m³)\b/gi, '')
+    .replace(/(?<=\d)\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\b/g, '')
+    .replace(/(?<=\d)\s*m\b/g, '')   // trailing "m" after a number
+    .replace(/(?<=\d)\s*g\b/g, '')   // trailing "g"
+    .replace(/(?<=\d)\s*L\b/gi, '')  // trailing "L" / "l"
+    .replace(/(?<=\d)\s*s\b/g, '')   // trailing "s" (seconds)
+    // LaTeX percent \% → %
+    .replace(/\\%/g, '%');
+
 export const robustNormalize = (str) => {
   if (!str) return '';
   let s = String(str)
     .toLowerCase()
+    // Strip units before other processing
+    .replace(/\\text\s*\{[^{}]*\}/g, '')
+    .replace(/\\%/g, '%')
     // \frac{a}{b} → (a)/(b)
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     // nested \frac (one level deep)
@@ -45,8 +65,17 @@ export const parseNumericAnswer = (value) => {
   const cleaned = raw
     .replace(/[−–—]/g, '-')
     .replace(/\$/g, '')
+    .replace(/\\%/g, '%')          // LaTeX \% → %
     .replace(/,/g, '')
     .replace(/\b(aud|usd|nzd|dollars?|cents?)\b/gi, '')
+    // Strip measurement units so "9355 m" → "9355", "15m" → "15"
+    .replace(/\s*(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?)\s*/gi, '')
+    .replace(/\\text\s*\{[^{}]*\}/g, '')
+    .replace(/\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\s*/g, '')
+    .replace(/(\d)\s*m\b/, '$1')   // trailing m after digit
+    .replace(/(\d)\s*g\b/, '$1')   // trailing g after digit
+    .replace(/(\d)\s*[Ll]\b/, '$1') // trailing L after digit
+    .replace(/(\d)\s*s\b/, '$1')   // trailing s (seconds) after digit
     .trim();
 
   if (!/^-?\d+(?:\.\d+)?%?$/.test(cleaned)) return null;
@@ -58,9 +87,14 @@ export const parseNumericAnswer = (value) => {
 export const answersMatch = (studentAnswer, expectedAnswer) => {
   const studentNumeric = parseNumericAnswer(studentAnswer);
   const expectedNumeric = parseNumericAnswer(expectedAnswer);
-  if (studentNumeric && expectedNumeric && studentNumeric.isPercent === expectedNumeric.isPercent) {
-    return Math.abs(studentNumeric.number - expectedNumeric.number) < 0.000001;
+
+  if (studentNumeric && expectedNumeric) {
+    // Same number, allow % vs no-% mismatch (student may or may not include symbol)
+    if (Math.abs(studentNumeric.number - expectedNumeric.number) < 0.000001) {
+      return true;
+    }
   }
+
   return robustNormalize(studentAnswer) === robustNormalize(expectedAnswer);
 };
 
