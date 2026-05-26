@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  X, CheckCircle2, XCircle, Lightbulb, ArrowRight,
+  X, CheckCircle2, XCircle, Lightbulb, ArrowRight, ChevronDown,
   Sparkles, GraduationCap, MessageCircleQuestion, Send, BookLock,
 } from 'lucide-react';
 import MathView from '../MathView';
@@ -59,6 +59,94 @@ const prepareQuestion = (q) => {
     return { mode: 'mc', options: shuffle(opts), correctText };
   }
   return { mode: 'text', options: [], correctText: String(q.answer) };
+};
+
+// ── Worked solution step-by-step viewer ───────────────────────────────────
+const WorkedSolution = ({ question }) => {
+  const steps = question?.solutionSteps;
+  const fallback = question?.solution;
+  const [stepIdx, setStepIdx] = useState(0);
+
+  // Reset when question changes
+  useEffect(() => { setStepIdx(0); }, [question?.id]);
+
+  // No steps and no fallback → nothing to show
+  if ((!steps || steps.length === 0) && !fallback) return null;
+
+  // Fallback: render old-style solution text
+  if (!steps || steps.length === 0) {
+    return (
+      <div className="sn__solution">
+        <div className="sn__solution-h"><Lightbulb size={14} /> Solution</div>
+        <MathView content={fallback} style={{ color: '#475569', fontSize: '0.92rem' }} />
+      </div>
+    );
+  }
+
+  const total = steps.length;
+  const current = steps[stepIdx];
+  const isLast = stepIdx === total - 1;
+
+  return (
+    <div className="sn__ws">
+      {/* Header */}
+      <div className="sn__ws-header">
+        <div className="sn__ws-icon"><Sparkles size={16} /></div>
+        <div>
+          <div className="sn__ws-label">Worked Solution</div>
+          <div className="sn__ws-sub">Step {stepIdx + 1} of {total}</div>
+        </div>
+        {/* Step dots */}
+        <div className="sn__ws-dots">
+          {steps.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setStepIdx(i)}
+              className={`sn__ws-dot${i === stepIdx ? ' sn__ws-dot--on' : i < stepIdx ? ' sn__ws-dot--done' : ''}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Step card */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={stepIdx}
+          initial={{ opacity: 0, x: 12 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -12 }}
+          transition={{ duration: 0.18 }}
+          className="sn__ws-step"
+        >
+          <div className="sn__ws-num">{stepIdx + 1}</div>
+          <div className="sn__ws-content">
+            <div className="sn__ws-step-label">Step {stepIdx + 1}</div>
+            {current.explanation && (
+              <MathView content={current.explanation} style={{ fontSize: '0.95rem', color: '#1e1b4b', fontWeight: 600, lineHeight: 1.6 }} />
+            )}
+            {current.workingOut && (
+              <div className="sn__ws-working">
+                <div className="sn__ws-working-label">Working out</div>
+                <MathView content={`$${current.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
+              </div>
+            )}
+          </div>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Next step button */}
+      {!isLast && (
+        <button className="sn__ws-next" onClick={() => setStepIdx((i) => i + 1)}>
+          Next step <ChevronDown size={16} />
+        </button>
+      )}
+      {isLast && (
+        <div className="sn__ws-done">
+          <CheckCircle2 size={14} /> All steps complete
+        </div>
+      )}
+    </div>
+  );
 };
 
 // ── Full-screen shell (defined at module scope so it never remounts) ───────
@@ -509,12 +597,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
                     Correct answer: <MathView content={activePrep.correctText} style={{ display: 'inline', fontWeight: 800 }} />
                   </div>
                 )}
-                {activeQ?.solution && (
-                  <div className="sn__solution">
-                    <div className="sn__solution-h"><Lightbulb size={14} /> Solution</div>
-                    <MathView content={activeQ.solution} graphData={activeQ.graphData} style={{ color: '#475569', fontSize: '0.92rem' }} />
-                  </div>
-                )}
+                <WorkedSolution question={activeQ} />
               </div>
 
               {/* Mistake tag — only on the original question feedback */}
@@ -807,6 +890,25 @@ const secretNoteStyles = `
     .sn__solve-row .sn__card { max-width: none; width: 100%; }
     .sn__solve-pad { min-width: 0; width: 100%; }
   }
+
+  .sn__ws { margin-top: 10px; background: #fff; border-radius: 18px; padding: 18px; border: 1px solid #e0e7ff; display: flex; flex-direction: column; gap: 14px; }
+  .sn__ws-header { display: flex; align-items: center; gap: 10px; }
+  .sn__ws-icon { width: 32px; height: 32px; border-radius: 10px; background: linear-gradient(135deg,#a78bfa,#7c3aed); display: grid; place-items: center; color: #fff; flex-shrink: 0; }
+  .sn__ws-label { font-weight: 900; color: #1e1b4b; font-size: 0.9rem; }
+  .sn__ws-sub { font-size: 0.72rem; color: #94a3b8; font-weight: 700; }
+  .sn__ws-dots { display: flex; gap: 5px; margin-left: auto; }
+  .sn__ws-dot { width: 10px; height: 10px; border-radius: 50%; border: none; background: #e2e8f0; cursor: pointer; padding: 0; transition: all 0.15s; }
+  .sn__ws-dot--on { background: #7c3aed; transform: scale(1.2); }
+  .sn__ws-dot--done { background: #a78bfa; }
+  .sn__ws-step { display: flex; gap: 14px; align-items: flex-start; padding: 16px; background: #f5f3ff; border-radius: 16px; border-left: 4px solid #7c3aed; }
+  .sn__ws-num { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg,#a78bfa,#7c3aed); color: #fff; display: grid; place-items: center; font-weight: 900; font-size: 0.8rem; flex-shrink: 0; margin-top: 2px; }
+  .sn__ws-content { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .sn__ws-step-label { font-size: 0.68rem; font-weight: 900; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.1em; }
+  .sn__ws-working { padding: 10px 14px; border-radius: 12px; background: #fff; border: 1px solid #ddd6fe; }
+  .sn__ws-working-label { font-size: 0.65rem; font-weight: 900; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .sn__ws-next { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 20px; border-radius: 14px; border: none; background: linear-gradient(135deg,#a78bfa,#7c3aed); color: #fff; font-weight: 800; font-size: 0.9rem; cursor: pointer; width: 100%; transition: transform 0.15s; }
+  .sn__ws-next:hover { transform: translateY(-1px); }
+  .sn__ws-done { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 11px; border-radius: 12px; background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; font-weight: 800; font-size: 0.85rem; }
 `;
 
 export default SecretNoteView;
