@@ -21,7 +21,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -168,7 +168,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -319,7 +319,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "shape": "cylinder",
         "radius": 5,
         "height": 12,
@@ -363,7 +363,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "shape": "cylinder",
         "radius": 4,
         "height": 10,
@@ -407,7 +407,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -675,7 +675,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -822,7 +822,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "shape": "cylinder",
         "radius": 5,
         "height": 12,
@@ -862,7 +862,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -1012,7 +1012,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -1268,7 +1268,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 250,
         "projection": "isometric",
         "vertices": {
@@ -1605,7 +1605,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -1790,7 +1790,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -1953,7 +1953,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -2096,7 +2096,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
@@ -2243,7 +2243,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry3d": {
+      "geometry": {
         "width": 280,
         "projection": "isometric",
         "vertices": {
