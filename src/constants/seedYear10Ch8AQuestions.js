@@ -4,22 +4,13 @@ export const Y10_CH8A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "In the right-angled triangle $ABC$, the right angle is at $B$. Angle $A = 45^\\circ$ and side $BC = 12$. Find the value of $x$ (side $AB$).",
+    "question": "In right triangle $ABC$ (right angle at $B$), Angle $A = 45^\\circ$ and $BC = 12$. Find $x$ (side $AB$).",
     "a": "12",
     "t": "Review of triangles",
-    "hint": "What type of triangle is this if one angle is 90 and another is 45?",
     "solutionSteps": [
       {
-        "explanation": "The sum of angles in a triangle is 180°.",
-        "workingOut": "Angle C = 180^\\circ - 90^\\circ - 45^\\circ = 45^\\circ"
-      },
-      {
-        "explanation": "Since Angle A = Angle C, the triangle is an isosceles right triangle.",
-        "workingOut": "AB = BC"
-      },
-      {
-        "explanation": "Substitute the given value.",
-        "workingOut": "x = 12"
+        "explanation": "Isosceles right triangle.",
+        "workingOut": "AB = BC = 12"
       }
     ],
     "graphData": {
@@ -77,1106 +68,6 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "A",
             "text": "45°"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1a-alpha",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "question": "In the right-angled triangle $ABC$, the right angle is at $B$. Angle $A = 45^\\circ$ and side $BC = 12$. Find the value of $\\alpha$ (Angle $C$) in degrees.",
-    "a": "45",
-    "t": "Review of triangles",
-    "hint": "The sum of angles in a triangle is 180°.",
-    "solutionSteps": [
-      {
-        "explanation": "Use the angle sum of a triangle.",
-        "workingOut": "\\alpha = 180^\\circ - 90^\\circ - 45^\\circ = 45^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            0,
-            4
-          ],
-          "B": [
-            0,
-            0
-          ],
-          "C": [
-            4,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "12"
-          }
-        ],
-        "angles": [
-          {
-            "at": "B",
-            "right": true
-          },
-          {
-            "at": "A",
-            "text": "45°"
-          },
-          {
-            "at": "C",
-            "text": "\\alpha"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1b-x",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $ABC$, Angle $A = 130^\\circ$ and Angle $B = 25^\\circ$. Side $AC = 8$. Find the value of $x$ (side $AB$).",
-    "a": "8",
-    "hint": "Find the size of Angle C first.",
-    "solutionSteps": [
-      {
-        "explanation": "Find the third angle of the triangle.",
-        "workingOut": "Angle C = 180^\\circ - (130^\\circ + 25^\\circ) = 25^\\circ"
-      },
-      {
-        "explanation": "Since Angle B = Angle C, the triangle is isosceles.",
-        "workingOut": "AB = AC"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            2,
-            2
-          ],
-          "B": [
-            0,
-            0
-          ],
-          "C": [
-            8,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "x"
-          },
-          {
-            "between": [
-              "A",
-              "C"
-            ],
-            "text": "8"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "text": "130°"
-          },
-          {
-            "at": "B",
-            "text": "25°"
-          },
-          {
-            "at": "C",
-            "text": "\\alpha"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1b-alpha",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $ABC$, Angle $A = 130^\\circ$ and Angle $B = 25^\\circ$. Find the value of $\\alpha$ (Angle $C$) in degrees.",
-    "a": "25",
-    "hint": "The sum of angles in a triangle is 180°.",
-    "solutionSteps": [
-      {
-        "explanation": "Subtract the known angles from 180°.",
-        "workingOut": "\\alpha = 180^\\circ - 130^\\circ - 25^\\circ = 25^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            2,
-            2
-          ],
-          "B": [
-            0,
-            0
-          ],
-          "C": [
-            8,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "x"
-          },
-          {
-            "between": [
-              "A",
-              "C"
-            ],
-            "text": "8"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "text": "130°"
-          },
-          {
-            "at": "B",
-            "text": "25°"
-          },
-          {
-            "at": "C",
-            "text": "\\alpha"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1c-alpha",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $LMN$, the exterior angle at $N$ is $110^\\circ$. The interior angles at $M$ and $N$ are both equal to $\\alpha$. Find $\\alpha$ in degrees.",
-    "a": "70",
-    "hint": "Interior and exterior angles on a straight line add to 180°.",
-    "solutionSteps": [
-      {
-        "explanation": "Calculate the interior angle at N.",
-        "workingOut": "\\alpha = 180^\\circ - 110^\\circ = 70^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "L": [
-            3,
-            4
-          ],
-          "M": [
-            0,
-            0
-          ],
-          "N": [
-            6,
-            0
-          ],
-          "P": [
-            8,
-            0
-          ],
-          "Q": [
-            -2,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "L",
-            "to": "M"
-          },
-          {
-            "from": "M",
-            "to": "N"
-          },
-          {
-            "from": "N",
-            "to": "L"
-          },
-          {
-            "from": "N",
-            "to": "P",
-            "dashed": true
-          },
-          {
-            "from": "M",
-            "to": "Q",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "L",
-              "N"
-            ],
-            "text": "9"
-          },
-          {
-            "between": [
-              "L",
-              "M"
-            ],
-            "text": "x"
-          }
-        ],
-        "angles": [
-          {
-            "at": "M",
-            "text": "\\alpha"
-          },
-          {
-            "at": "N",
-            "text": "\\alpha"
-          },
-          {
-            "at": "L",
-            "text": "\\gamma"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1c-gamma",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $LMN$, exterior angle at $N$ is $110^\\circ$. Interior angles at $M, N$ are $\\alpha$. Find $\\gamma$ (Angle $L$) in degrees.",
-    "a": "40",
-    "hint": "Find alpha first, then use angle sum.",
-    "solutionSteps": [
-      {
-        "explanation": "\\alpha = 70^\\circ",
-        "workingOut": "\\gamma = 180^\\circ - 2(70^\\circ) = 40^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "L": [
-            3,
-            4
-          ],
-          "M": [
-            0,
-            0
-          ],
-          "N": [
-            6,
-            0
-          ],
-          "P": [
-            8,
-            0
-          ],
-          "Q": [
-            -2,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "L",
-            "to": "M"
-          },
-          {
-            "from": "M",
-            "to": "N"
-          },
-          {
-            "from": "N",
-            "to": "L"
-          },
-          {
-            "from": "N",
-            "to": "P",
-            "dashed": true
-          },
-          {
-            "from": "M",
-            "to": "Q",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "L",
-              "N"
-            ],
-            "text": "9"
-          },
-          {
-            "between": [
-              "L",
-              "M"
-            ],
-            "text": "x"
-          }
-        ],
-        "angles": [
-          {
-            "at": "M",
-            "text": "\\alpha"
-          },
-          {
-            "at": "N",
-            "text": "\\alpha"
-          },
-          {
-            "at": "L",
-            "text": "\\gamma"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1c-x",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $LMN$, exterior angle at $N$ is $110^\\circ$. Interior angles $M$ and $N$ are equal. Side $LN = 9$. Find $x$ (side $LM$).",
-    "a": "9",
-    "hint": "Equal angles mean equal opposite sides.",
-    "solutionSteps": [
-      {
-        "explanation": "Since base angles are equal, triangle is isosceles.",
-        "workingOut": "LM = LN = 9"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "L": [
-            3,
-            4
-          ],
-          "M": [
-            0,
-            0
-          ],
-          "N": [
-            6,
-            0
-          ],
-          "P": [
-            8,
-            0
-          ],
-          "Q": [
-            -2,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "L",
-            "to": "M"
-          },
-          {
-            "from": "M",
-            "to": "N"
-          },
-          {
-            "from": "N",
-            "to": "L"
-          },
-          {
-            "from": "N",
-            "to": "P",
-            "dashed": true
-          },
-          {
-            "from": "M",
-            "to": "Q",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "L",
-              "N"
-            ],
-            "text": "9"
-          },
-          {
-            "between": [
-              "L",
-              "M"
-            ],
-            "text": "x"
-          }
-        ],
-        "angles": [
-          {
-            "at": "M",
-            "text": "\\alpha"
-          },
-          {
-            "at": "N",
-            "text": "\\alpha"
-          },
-          {
-            "at": "L",
-            "text": "\\gamma"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1c-beta",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $LMN$, exterior angle at $N$ is $110^\\circ$. Interior angles $M, N$ are equal. Find $\\beta$ (exterior angle at $M$) in degrees.",
-    "a": "110",
-    "hint": "Find interior M, then find its supplement.",
-    "solutionSteps": [
-      {
-        "explanation": "Interior M = Interior N = 70°.",
-        "workingOut": "\\beta = 180^\\circ - 70^\\circ = 110^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "L": [
-            3,
-            4
-          ],
-          "M": [
-            0,
-            0
-          ],
-          "N": [
-            6,
-            0
-          ],
-          "P": [
-            8,
-            0
-          ],
-          "Q": [
-            -2,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "L",
-            "to": "M"
-          },
-          {
-            "from": "M",
-            "to": "N"
-          },
-          {
-            "from": "N",
-            "to": "L"
-          },
-          {
-            "from": "N",
-            "to": "P",
-            "dashed": true
-          },
-          {
-            "from": "M",
-            "to": "Q",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "L",
-              "N"
-            ],
-            "text": "9"
-          },
-          {
-            "between": [
-              "L",
-              "M"
-            ],
-            "text": "x"
-          }
-        ],
-        "angles": [
-          {
-            "at": "M",
-            "text": "\\alpha"
-          },
-          {
-            "at": "N",
-            "text": "\\alpha"
-          },
-          {
-            "at": "L",
-            "text": "\\gamma"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1d-alpha",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $ABC$, $AB = 8, AC = 8, BC = 8$. Line $AP$ bisects angle $A$. Find $\\alpha$ (angle $APB$) in degrees.",
-    "a": "90",
-    "hint": "In an equilateral triangle, the angle bisector is also the altitude.",
-    "solutionSteps": [
-      {
-        "explanation": "The angle bisector of an equilateral triangle is perpendicular to the base.",
-        "workingOut": "\\alpha = 90^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            3,
-            5
-          ],
-          "B": [
-            0,
-            0
-          ],
-          "C": [
-            6,
-            0
-          ],
-          "P": [
-            3,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "A",
-            "to": "P"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "A",
-              "C"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "8"
-          }
-        ],
-        "angles": [
-          {
-            "at": "P",
-            "text": "\\alpha"
-          },
-          {
-            "at": "C",
-            "text": "\\beta"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1d-beta",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In triangle $ABC$, $AB = 8, AC = 8, BC = 8$. Find $\\beta$ (angle $C$) in degrees.",
-    "a": "60",
-    "hint": "What are the angles in an equilateral triangle?",
-    "solutionSteps": [
-      {
-        "explanation": "Equilateral triangle angles are 60°.",
-        "workingOut": "\\beta = 60^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            3,
-            5
-          ],
-          "B": [
-            0,
-            0
-          ],
-          "C": [
-            6,
-            0
-          ],
-          "P": [
-            3,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "A",
-            "to": "P"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "A",
-              "C"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "8"
-          }
-        ],
-        "angles": [
-          {
-            "at": "P",
-            "text": "\\alpha"
-          },
-          {
-            "at": "C",
-            "text": "\\beta"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1e-x",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "In right triangle $ABC$ (right angle at $C$), altitude $CN$ is drawn to hypotenuse $AB$. Angle $B = 45^\\circ$. The total length of $AB = 10$, and $NB = 5$. Find $x$ (length $AN$).",
-    "a": "5",
-    "hint": "AB = AN + NB",
-    "solutionSteps": [
-      {
-        "explanation": "Subtract NB from total length AB.",
-        "workingOut": "x = 10 - 5 = 5"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "C": [
-            0,
-            0
-          ],
-          "A": [
-            0,
-            4
-          ],
-          "B": [
-            4,
-            0
-          ],
-          "N": [
-            2,
-            2
-          ]
-        },
-        "segments": [
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "N"
-          }
-        ],
-        "angles": [
-          {
-            "at": "C",
-            "right": true
-          },
-          {
-            "at": "N",
-            "right": true
-          },
-          {
-            "at": "B",
-            "text": "45°"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1e-alpha",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "In right triangle $ABC$ (right angle at $C$), altitude $CN$ is drawn. Angle $B = 45^\\circ$. Find $\\alpha$ (Angle $ACN$) in degrees.",
-    "a": "45",
-    "hint": "Find Angle A first.",
-    "solutionSteps": [
-      {
-        "explanation": "Angle A = 90 - 45 = 45.",
-        "workingOut": "\\alpha = 180 - 90 - 45 = 45^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "C": [
-            0,
-            0
-          ],
-          "A": [
-            0,
-            4
-          ],
-          "B": [
-            4,
-            0
-          ],
-          "N": [
-            2,
-            2
-          ]
-        },
-        "segments": [
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "N"
-          }
-        ],
-        "angles": [
-          {
-            "at": "C",
-            "right": true
-          },
-          {
-            "at": "N",
-            "right": true
-          },
-          {
-            "at": "B",
-            "text": "45°"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1f-alpha",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "In triangle $APQ$, angle $PAQ = 90^\\circ$. $AP = 8$ and $AQ = 8$. Find $\\alpha$ (angle $AQP$) in degrees.",
-    "a": "45",
-    "hint": "It is an isosceles right triangle.",
-    "solutionSteps": [
-      {
-        "explanation": "Base angles are equal.",
-        "workingOut": "\\alpha = (180 - 90) / 2 = 45^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            2,
-            4
-          ],
-          "P": [
-            0,
-            0
-          ],
-          "Q": [
-            4,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "P"
-          },
-          {
-            "from": "A",
-            "to": "Q"
-          },
-          {
-            "from": "P",
-            "to": "Q"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "right": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "P"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "A",
-              "Q"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "P",
-              "Q"
-            ],
-            "text": "x"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q1f-x",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "timeLimit": 120,
-    "t": "Review of triangles",
-    "question": "In triangle $APQ$, angle $PAQ = 90^\\circ$. $AP = 8$ and $AQ = 8$. Find $x^2$, where $x$ is the length $PQ$.",
-    "a": "128",
-    "hint": "Use Pythagoras.",
-    "solutionSteps": [
-      {
-        "explanation": "Apply Pythagoras theorem.",
-        "workingOut": "x^2 = 8^2 + 8^2 = 64 + 64 = 128"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            2,
-            4
-          ],
-          "P": [
-            0,
-            0
-          ],
-          "Q": [
-            4,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "P"
-          },
-          {
-            "from": "A",
-            "to": "Q"
-          },
-          {
-            "from": "P",
-            "to": "Q"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "right": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "P"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "A",
-              "Q"
-            ],
-            "text": "8"
-          },
-          {
-            "between": [
-              "P",
-              "Q"
-            ],
-            "text": "x"
           }
         ]
       }
@@ -1188,12 +79,11 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "t": "Review of triangles",
-    "question": "Triangle $RST$ is equilateral. Find the values of $\\alpha, \\beta, \\gamma$ in degrees. (Write as alpha,beta,gamma e.g., 60,60,60)",
+    "question": "Triangle $RST$ is equilateral. Find the values of $\\alpha, \\beta, \\gamma$ in degrees. (Write as e.g., 60,60,60)",
     "a": "60,60,60",
-    "hint": "Equilateral means all angles equal.",
     "solutionSteps": [
       {
-        "explanation": "All angles are equal.",
+        "explanation": "All angles equal.",
         "workingOut": "180/3 = 60^\\circ"
       }
     ],
@@ -1217,15 +107,18 @@ export const Y10_CH8A_QUESTIONS = [
         "segments": [
           {
             "from": "R",
-            "to": "S"
+            "to": "S",
+            "ticks": 1
           },
           {
             "from": "S",
-            "to": "T"
+            "to": "T",
+            "ticks": 1
           },
           {
             "from": "T",
-            "to": "R"
+            "to": "R",
+            "ticks": 1
           }
         ],
         "angles": [
@@ -1251,13 +144,12 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Review of triangles",
-    "question": "Triangle $WXY$ has $WX = XY$. The exterior angle at $X$ is $130^\\circ$. Find $\\theta$ (Angle $W$) in degrees.",
-    "a": "65",
-    "hint": "Find interior angle X first.",
+    "question": "In triangle $WXY$, $WX = XY$. The exterior angle at $X$ is $80^\\circ$. Find $\\theta$ (Angle $W$) in degrees.",
+    "a": "50",
     "solutionSteps": [
       {
-        "explanation": "Interior X = 180 - 130 = 50°.",
-        "workingOut": "\\theta = (180 - 50) / 2 = 65^\\circ"
+        "explanation": "Interior X = 180 - 80 = 100°.",
+        "workingOut": "\\theta = (180 - 100) / 2 = 40^\\circ"
       }
     ],
     "graphData": {
@@ -1270,25 +162,27 @@ export const Y10_CH8A_QUESTIONS = [
           ],
           "X": [
             4,
-            4
+            3
           ],
           "Y": [
-            6,
+            7,
             0
           ],
           "Z": [
-            8,
-            8
+            5.33,
+            4
           ]
         },
         "segments": [
           {
             "from": "W",
-            "to": "X"
+            "to": "X",
+            "ticks": 1
           },
           {
             "from": "X",
-            "to": "Y"
+            "to": "Y",
+            "ticks": 1
           },
           {
             "from": "Y",
@@ -1303,7 +197,7 @@ export const Y10_CH8A_QUESTIONS = [
         "angles": [
           {
             "at": "X",
-            "text": "x"
+            "text": "80°"
           },
           {
             "at": "W",
@@ -1319,13 +213,12 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Review of triangles",
-    "question": "Triangle $PQR$ has a right angle at $P$, and $PR = PQ$. Find $\\theta$ (Angle $R$) in degrees.",
-    "a": "45",
-    "hint": "It is an isosceles right triangle.",
+    "question": "In triangle $PQR$, $PQ = QR$ and Angle $Q = 60^\\circ$. $QR = 7$ cm. Find $\\theta$ (Angle $P$) in degrees.",
+    "a": "60",
     "solutionSteps": [
       {
-        "explanation": "Base angles are equal.",
-        "workingOut": "\\theta = (180 - 90) / 2 = 45^\\circ"
+        "explanation": "Isosceles with 60° is equilateral.",
+        "workingOut": "\\theta = 60^\\circ"
       }
     ],
     "graphData": {
@@ -1333,26 +226,28 @@ export const Y10_CH8A_QUESTIONS = [
         "width": 300,
         "points": {
           "P": [
-            0,
-            0
+            2,
+            4
           ],
           "Q": [
             0,
-            6
+            0
           ],
           "R": [
-            6,
+            4,
             0
           ]
         },
         "segments": [
           {
             "from": "P",
-            "to": "Q"
+            "to": "Q",
+            "ticks": 1
           },
           {
             "from": "Q",
-            "to": "R"
+            "to": "R",
+            "ticks": 1
           },
           {
             "from": "R",
@@ -1361,11 +256,71 @@ export const Y10_CH8A_QUESTIONS = [
         ],
         "angles": [
           {
-            "at": "P",
-            "right": true
+            "at": "Q",
+            "text": "60°"
           },
           {
-            "at": "R",
+            "at": "P",
+            "text": "\\theta"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2c-y",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "t": "Review of triangles",
+    "question": "In triangle $PQR$, $PQ = QR$ and Angle $Q = 60^\\circ$. $QR = 7$ cm. Find $y$ ($PR$).",
+    "a": "7",
+    "solutionSteps": [
+      {
+        "explanation": "Triangle is equilateral.",
+        "workingOut": "PR = 7"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "P": [
+            2,
+            4
+          ],
+          "Q": [
+            0,
+            0
+          ],
+          "R": [
+            4,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "P",
+            "to": "Q",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "R",
+            "ticks": 1
+          },
+          {
+            "from": "R",
+            "to": "P"
+          }
+        ],
+        "angles": [
+          {
+            "at": "Q",
+            "text": "60°"
+          },
+          {
+            "at": "P",
             "text": "\\theta"
           }
         ]
@@ -1376,14 +331,13 @@ export const Y10_CH8A_QUESTIONS = [
     "id": "y10-8a-q2d-alpha",
     "type": "short_answer",
     "difficulty": "medium",
-    "timeLimit": 90,
+    "timeLimit": 60,
     "t": "Review of triangles",
-    "question": "Triangle $LNQ$ is equilateral ($LN = NQ = QL = 6$). Find $\\alpha$ (Angle $LQN$) in degrees.",
+    "question": "Triangle $LNQ$ is equilateral. $M$ is on $NQ$ extended, and $NQ = QM$. Find $\\alpha$ (Angle $N$) in degrees.",
     "a": "60",
-    "hint": "All angles in equilateral triangle are 60.",
     "solutionSteps": [
       {
-        "explanation": "Equilateral triangle angles are 60°.",
+        "explanation": "Equilateral triangle.",
         "workingOut": "\\alpha = 60^\\circ"
       }
     ],
@@ -1393,47 +347,71 @@ export const Y10_CH8A_QUESTIONS = [
         "points": {
           "L": [
             3,
-            5
+            5.2
           ],
           "N": [
             0,
             0
           ],
-          "M": [
-            8,
+          "Q": [
+            6,
             0
           ],
-          "Q": [
-            4,
+          "M": [
+            12,
             0
           ]
         },
         "segments": [
           {
             "from": "L",
-            "to": "N"
+            "to": "N",
+            "ticks": 1
           },
           {
             "from": "N",
-            "to": "M"
+            "to": "Q",
+            "ticks": 1
           },
           {
-            "from": "M",
-            "to": "L"
+            "from": "Q",
+            "to": "L",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "M",
+            "ticks": 1
           },
           {
             "from": "L",
-            "to": "Q"
+            "to": "M"
           }
         ],
         "angles": [
           {
-            "at": "Q",
+            "at": "N",
             "text": "\\alpha"
           },
           {
             "at": "M",
             "text": "\\beta"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "L",
+              "N"
+            ],
+            "text": "5"
+          },
+          {
+            "between": [
+              "N",
+              "M"
+            ],
+            "text": "y"
           }
         ]
       }
@@ -1445,12 +423,11 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Review of triangles",
-    "question": "Triangle $LNQ$ is equilateral ($LN=NQ=QL=6$). $M$ is on the line $NQ$ extended, such that $QM = 6$. Find $\\beta$ (Angle $M$) in degrees.",
+    "question": "Triangle $LNQ$ is equilateral. $M$ is on $NQ$ extended, and $NQ = QM$. Find $\\beta$ (Angle $M$) in degrees.",
     "a": "30",
-    "hint": "Triangle LQM is isosceles with LQ=QM.",
     "solutionSteps": [
       {
-        "explanation": "Angle LQM = 180 - 60 = 120.",
+        "explanation": "Angle LQM = 120°. Triangle LQM is isosceles.",
         "workingOut": "\\beta = (180 - 120) / 2 = 30^\\circ"
       }
     ],
@@ -1460,47 +437,161 @@ export const Y10_CH8A_QUESTIONS = [
         "points": {
           "L": [
             3,
-            5
+            5.2
           ],
           "N": [
             0,
             0
           ],
-          "M": [
-            8,
+          "Q": [
+            6,
             0
           ],
-          "Q": [
-            4,
+          "M": [
+            12,
             0
           ]
         },
         "segments": [
           {
             "from": "L",
-            "to": "N"
+            "to": "N",
+            "ticks": 1
           },
           {
             "from": "N",
-            "to": "M"
+            "to": "Q",
+            "ticks": 1
           },
           {
-            "from": "M",
-            "to": "L"
+            "from": "Q",
+            "to": "L",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "M",
+            "ticks": 1
           },
           {
             "from": "L",
-            "to": "Q"
+            "to": "M"
           }
         ],
         "angles": [
           {
-            "at": "Q",
+            "at": "N",
             "text": "\\alpha"
           },
           {
             "at": "M",
             "text": "\\beta"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "L",
+              "N"
+            ],
+            "text": "5"
+          },
+          {
+            "between": [
+              "N",
+              "M"
+            ],
+            "text": "y"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2d-y",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 60,
+    "t": "Review of triangles",
+    "question": "Triangle $LNQ$ is equilateral with side 5. $M$ is on $NQ$ extended, $NQ = QM$. Find $y$ (length $NM$).",
+    "a": "10",
+    "solutionSteps": [
+      {
+        "explanation": "NM = NQ + QM = 5 + 5",
+        "workingOut": "y = 10"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "L": [
+            3,
+            5.2
+          ],
+          "N": [
+            0,
+            0
+          ],
+          "Q": [
+            6,
+            0
+          ],
+          "M": [
+            12,
+            0
+          ]
+        },
+        "segments": [
+          {
+            "from": "L",
+            "to": "N",
+            "ticks": 1
+          },
+          {
+            "from": "N",
+            "to": "Q",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "L",
+            "ticks": 1
+          },
+          {
+            "from": "Q",
+            "to": "M",
+            "ticks": 1
+          },
+          {
+            "from": "L",
+            "to": "M"
+          }
+        ],
+        "angles": [
+          {
+            "at": "N",
+            "text": "\\alpha"
+          },
+          {
+            "at": "M",
+            "text": "\\beta"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "L",
+              "N"
+            ],
+            "text": "5"
+          },
+          {
+            "between": [
+              "N",
+              "M"
+            ],
+            "text": "y"
           }
         ]
       }
@@ -1509,61 +600,418 @@ export const Y10_CH8A_QUESTIONS = [
   {
     "id": "y10-8a-q2e-theta",
     "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
+    "difficulty": "hard",
+    "timeLimit": 120,
     "t": "Review of triangles",
-    "question": "Lines $AB$ and $CD$ are parallel. A transversal intersects them. If the alternate interior angle is $110^\\circ$, find $\\theta$.",
-    "a": "110",
-    "hint": "Alternate interior angles are equal.",
+    "question": "Line $CA$ // Line $HJ$. $C, D, F, E$ are collinear. $AC = AD$. Angle $ACE = 55^\\circ$. Find $\\theta$ (Angle $ADE$) in degrees.",
+    "a": "125",
     "solutionSteps": [
       {
-        "explanation": "Alternate interior angles are equal.",
-        "workingOut": "\\theta = 110^\\circ"
+        "explanation": "Isosceles triangle ACD.",
+        "workingOut": "Angle ADC = 55°"
+      },
+      {
+        "explanation": "Supplementary angles on line.",
+        "workingOut": "\\theta = 180 - 55 = 125^\\circ"
       }
     ],
     "graphData": {
       "geometry": {
         "width": 300,
         "points": {
-          "A": [
-            0,
-            4
-          ],
-          "B": [
-            6,
-            4
-          ],
           "C": [
             2,
             0
           ],
+          "E": [
+            10,
+            0
+          ],
           "D": [
+            6,
+            0
+          ],
+          "A": [
+            4,
+            3
+          ],
+          "F": [
             8,
             0
+          ],
+          "G": [
+            7,
+            -1.5
+          ],
+          "H": [
+            7,
+            -3
+          ],
+          "J": [
+            9,
+            3
           ]
         },
         "segments": [
           {
-            "from": "A",
-            "to": "B"
+            "from": "C",
+            "to": "E"
           },
           {
             "from": "C",
-            "to": "D"
+            "to": "A",
+            "ticks": 2
           },
           {
             "from": "A",
-            "to": "D"
+            "to": "D",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "G"
+          },
+          {
+            "from": "H",
+            "to": "J"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "H",
+            "to": "J"
           }
         ],
         "angles": [
           {
-            "at": "A",
-            "text": "110°"
+            "at": "C",
+            "text": "55°"
           },
           {
             "at": "D",
             "text": "\\theta"
+          },
+          {
+            "at": "G",
+            "text": "\\alpha"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2e-alpha",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Review of triangles",
+    "question": "Line $CA$ // Line $HJ$. $AC = AD$. Angle $ACE = 55^\\circ$. Line $AD$ intersects $HJ$ at $G$. Find $\\alpha$ (obtuse angle at intersection $G$) in degrees.",
+    "a": "110",
+    "solutionSteps": [
+      {
+        "explanation": "Angle CAD = 180 - 110 = 70°.",
+        "workingOut": "Alt. int. angle HGA = 70°"
+      },
+      {
+        "explanation": "Supplementary angle.",
+        "workingOut": "\\alpha = 180 - 70 = 110^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "C": [
+            2,
+            0
+          ],
+          "E": [
+            10,
+            0
+          ],
+          "D": [
+            6,
+            0
+          ],
+          "A": [
+            4,
+            3
+          ],
+          "F": [
+            8,
+            0
+          ],
+          "G": [
+            7,
+            -1.5
+          ],
+          "H": [
+            7,
+            -3
+          ],
+          "J": [
+            9,
+            3
+          ]
+        },
+        "segments": [
+          {
+            "from": "C",
+            "to": "E"
+          },
+          {
+            "from": "C",
+            "to": "A",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 2
+          },
+          {
+            "from": "A",
+            "to": "G"
+          },
+          {
+            "from": "H",
+            "to": "J"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "H",
+            "to": "J"
+          }
+        ],
+        "angles": [
+          {
+            "at": "C",
+            "text": "55°"
+          },
+          {
+            "at": "D",
+            "text": "\\theta"
+          },
+          {
+            "at": "G",
+            "text": "\\alpha"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2f-alpha",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "Line $DB$ // Line $EF$. $H,G,C,A$ are collinear. Triangle $DGC$ has $DG = DC$. Angle $DCG = 55^\\circ$. Find $\\alpha$ (Angle $DGC$) in degrees.",
+    "a": "55",
+    "solutionSteps": [
+      {
+        "explanation": "Isosceles triangle.",
+        "workingOut": "\\alpha = 55^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "H": [
+            0,
+            4
+          ],
+          "A": [
+            8,
+            4
+          ],
+          "D": [
+            4,
+            8
+          ],
+          "B": [
+            8,
+            0
+          ],
+          "E": [
+            2,
+            0
+          ],
+          "F": [
+            6,
+            8
+          ],
+          "G": [
+            5,
+            4
+          ],
+          "C": [
+            6,
+            4
+          ]
+        },
+        "segments": [
+          {
+            "from": "H",
+            "to": "A"
+          },
+          {
+            "from": "D",
+            "to": "B"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "D",
+            "to": "G",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          }
+        ],
+        "arrows": [
+          {
+            "from": "D",
+            "to": "B"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          }
+        ],
+        "angles": [
+          {
+            "at": "C",
+            "text": "55°"
+          },
+          {
+            "at": "G",
+            "text": "\\alpha",
+            "color": "blue"
+          },
+          {
+            "at": "G",
+            "text": "\\beta",
+            "color": "red"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2f-beta",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "Find $\\beta$ (Angle $HGD$) in degrees.",
+    "a": "125",
+    "solutionSteps": [
+      {
+        "explanation": "Supplementary to alpha.",
+        "workingOut": "\\beta = 180 - 55 = 125^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "H": [
+            0,
+            4
+          ],
+          "A": [
+            8,
+            4
+          ],
+          "D": [
+            4,
+            8
+          ],
+          "B": [
+            8,
+            0
+          ],
+          "E": [
+            2,
+            0
+          ],
+          "F": [
+            6,
+            8
+          ],
+          "G": [
+            5,
+            4
+          ],
+          "C": [
+            6,
+            4
+          ]
+        },
+        "segments": [
+          {
+            "from": "H",
+            "to": "A"
+          },
+          {
+            "from": "D",
+            "to": "B"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "D",
+            "to": "G",
+            "ticks": 1
+          },
+          {
+            "from": "D",
+            "to": "C",
+            "ticks": 1
+          }
+        ],
+        "arrows": [
+          {
+            "from": "D",
+            "to": "B"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          }
+        ],
+        "angles": [
+          {
+            "at": "C",
+            "text": "55°"
+          },
+          {
+            "at": "G",
+            "text": "\\alpha",
+            "color": "blue"
+          },
+          {
+            "at": "G",
+            "text": "\\beta",
+            "color": "red"
           }
         ]
       }
@@ -1575,12 +1023,11 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Review of triangles",
-    "question": "In right triangle $FCD$, angle $C = 90^\\circ$ and angle $F = 40^\\circ$. Find $\\alpha$ (Angle $D$) in degrees.",
+    "question": "Line $CE$ // Line $AB$. $FA \\perp AB$. In triangle $FAD$, $FD = AD$. Angle $FAD = 40^\\circ$. Line $CE$ intersects $FD$ at $D$. Find $\\alpha$ (Angle $ADC$) in degrees.",
     "a": "50",
-    "hint": "Angle sum is 180.",
     "solutionSteps": [
       {
-        "explanation": "Angle sum is 180.",
+        "explanation": "In right triangle ACD, Angle C=90, A=40.",
         "workingOut": "\\alpha = 180 - 90 - 40 = 50^\\circ"
       }
     ],
@@ -1590,43 +1037,181 @@ export const Y10_CH8A_QUESTIONS = [
         "points": {
           "F": [
             0,
-            4
+            6
           ],
-          "C": [
+          "A": [
             0,
             0
           ],
-          "D": [
-            4,
+          "B": [
+            6,
             0
+          ],
+          "C": [
+            0,
+            3
+          ],
+          "E": [
+            6,
+            3
+          ],
+          "D": [
+            3,
+            3
           ]
         },
         "segments": [
           {
             "from": "F",
-            "to": "C"
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "B"
           },
           {
             "from": "C",
-            "to": "D"
+            "to": "E"
           },
           {
-            "from": "D",
-            "to": "F"
+            "from": "F",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 1
+          }
+        ],
+        "arrows": [
+          {
+            "from": "C",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "B"
           }
         ],
         "angles": [
           {
-            "at": "C",
+            "at": "A",
             "right": true
           },
           {
-            "at": "F",
+            "at": "A",
             "text": "40°"
           },
           {
             "at": "D",
-            "text": "\\alpha"
+            "text": "\\alpha",
+            "color": "blue"
+          },
+          {
+            "at": "D",
+            "text": "\\theta",
+            "color": "red"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2g-theta",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Review of triangles",
+    "question": "Find $\\theta$ (Angle $FDE$) in degrees.",
+    "a": "130",
+    "solutionSteps": [
+      {
+        "explanation": "Angle FDC = 50°. Angles on a straight line CE.",
+        "workingOut": "\\theta = 180 - 50 = 130^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "F": [
+            0,
+            6
+          ],
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            6,
+            0
+          ],
+          "C": [
+            0,
+            3
+          ],
+          "E": [
+            6,
+            3
+          ],
+          "D": [
+            3,
+            3
+          ]
+        },
+        "segments": [
+          {
+            "from": "F",
+            "to": "A"
+          },
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "C",
+            "to": "E"
+          },
+          {
+            "from": "F",
+            "to": "D",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "ticks": 1
+          }
+        ],
+        "arrows": [
+          {
+            "from": "C",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "B"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "A",
+            "text": "40°"
+          },
+          {
+            "at": "D",
+            "text": "\\alpha",
+            "color": "blue"
+          },
+          {
+            "at": "D",
+            "text": "\\theta",
+            "color": "red"
           }
         ]
       }
@@ -1638,13 +1223,12 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Review of triangles",
-    "question": "Points $A, B, C$ lie on a circle with center $O$. Angle $BOC = 120^\\circ$. Find $\\alpha$ (Angle $OBC$) in degrees.",
-    "a": "30",
-    "hint": "Triangle OBC is isosceles (OB and OC are radii).",
+    "question": "Points $A, B, C$ are on a circle center $O$. Angle $AOB = 130^\\circ$, Angle $BOC = 60^\\circ$. Find $\\alpha$ (Angle $OBC$).",
+    "a": "60",
     "solutionSteps": [
       {
-        "explanation": "Radii are equal.",
-        "workingOut": "\\alpha = (180 - 120) / 2 = 30^\\circ"
+        "explanation": "Triangle OBC is isosceles with vertex 60°, so equilateral.",
+        "workingOut": "\\alpha = 60^\\circ"
       }
     ],
     "graphData": {
@@ -1652,20 +1236,20 @@ export const Y10_CH8A_QUESTIONS = [
         "width": 300,
         "points": {
           "O": [
-            3,
-            3
+            4,
+            4
           ],
           "A": [
-            3,
-            6
+            4,
+            8
           ],
           "B": [
-            1,
-            1
+            0.5,
+            2
           ],
           "C": [
-            5,
-            1
+            7.5,
+            2
           ]
         },
         "segments": [
@@ -1686,22 +1270,32 @@ export const Y10_CH8A_QUESTIONS = [
             "to": "B"
           },
           {
-            "from": "A",
+            "from": "B",
             "to": "C"
           },
           {
-            "from": "B",
-            "to": "C"
+            "from": "C",
+            "to": "A"
           }
         ],
         "angles": [
           {
             "at": "O",
-            "text": "120°"
+            "text": "130°",
+            "color": "blue"
+          },
+          {
+            "at": "O",
+            "text": "60°",
+            "color": "red"
           },
           {
             "at": "B",
             "text": "\\alpha"
+          },
+          {
+            "at": "B",
+            "text": "\\beta"
           }
         ]
       }
@@ -1713,13 +1307,12 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Review of triangles",
-    "question": "Points $A, B, C$ lie on a circle with center $O$. Angle $BOC = 120^\\circ$. Find $\\beta$ (Angle $BAC$) in degrees.",
-    "a": "60",
-    "hint": "Angle at center is twice angle at circumference.",
+    "question": "Points $A, B, C$ are on a circle center $O$. Angle $AOB = 130^\\circ$, Angle $BOC = 60^\\circ$. Find $\\beta$ (Angle $OBA$).",
+    "a": "25",
     "solutionSteps": [
       {
-        "explanation": "Use circle theorems.",
-        "workingOut": "\\beta = 120 / 2 = 60^\\circ"
+        "explanation": "Triangle OAB is isosceles.",
+        "workingOut": "\\beta = (180 - 130) / 2 = 25^\\circ"
       }
     ],
     "graphData": {
@@ -1727,20 +1320,20 @@ export const Y10_CH8A_QUESTIONS = [
         "width": 300,
         "points": {
           "O": [
-            3,
-            3
+            4,
+            4
           ],
           "A": [
-            3,
-            6
+            4,
+            8
           ],
           "B": [
-            1,
-            1
+            0.5,
+            2
           ],
           "C": [
-            5,
-            1
+            7.5,
+            2
           ]
         },
         "segments": [
@@ -1756,65 +1349,6 @@ export const Y10_CH8A_QUESTIONS = [
             "from": "O",
             "to": "C"
           },
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "A",
-            "to": "C"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          }
-        ],
-        "angles": [
-          {
-            "at": "O",
-            "text": "120°"
-          },
-          {
-            "at": "B",
-            "text": "\\alpha"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q2i-alpha",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "In isosceles triangle $ABC$, $AB = AC$. Angle $B = 70^\\circ$. Find $\\alpha$ (Angle $A$) in degrees.",
-    "a": "40",
-    "hint": "Base angles are equal.",
-    "solutionSteps": [
-      {
-        "explanation": "Angle C = 70.",
-        "workingOut": "\\alpha = 180 - 70 - 70 = 40^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            3,
-            5
-          ],
-          "B": [
-            0,
-            0
-          ],
-          "C": [
-            6,
-            0
-          ]
-        },
-        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -1830,12 +1364,190 @@ export const Y10_CH8A_QUESTIONS = [
         ],
         "angles": [
           {
+            "at": "O",
+            "text": "130°",
+            "color": "blue"
+          },
+          {
+            "at": "O",
+            "text": "60°",
+            "color": "red"
+          },
+          {
             "at": "B",
-            "text": "70°"
+            "text": "\\alpha"
+          },
+          {
+            "at": "B",
+            "text": "\\beta"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2i-alpha",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Review of triangles",
+    "question": "In triangle $ABC$, $AB = AC$. Line $AD$ // $BC$. Angle $BAC = \\alpha$ and Angle $CAD = 2\\alpha$. Find $\\alpha$ in degrees.",
+    "a": "36",
+    "solutionSteps": [
+      {
+        "explanation": "Alternate interior angle ACB = 2α. Triangle is isosceles so ABC = 2α.",
+        "workingOut": "5\\alpha = 180 \\implies \\alpha = 36^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            4,
+            6
+          ],
+          "B": [
+            0,
+            0
+          ],
+          "C": [
+            8,
+            0
+          ],
+          "D": [
+            8,
+            6
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "A",
+            "to": "D"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "\\alpha",
+            "color": "blue"
           },
           {
             "at": "A",
-            "text": "\\alpha"
+            "text": "2\\alpha",
+            "color": "red"
+          },
+          {
+            "at": "B",
+            "text": "\\beta"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-8a-q2i-beta",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "t": "Review of triangles",
+    "question": "Find $\\beta$ (Angle $ABC$) in degrees.",
+    "a": "72",
+    "solutionSteps": [
+      {
+        "explanation": "\\beta = 2\\alpha",
+        "workingOut": "\\beta = 72^\\circ"
+      }
+    ],
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            4,
+            6
+          ],
+          "B": [
+            0,
+            0
+          ],
+          "C": [
+            8,
+            0
+          ],
+          "D": [
+            8,
+            6
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B",
+            "ticks": 1
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "ticks": 1
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "A",
+            "to": "D"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "\\alpha",
+            "color": "blue"
+          },
+          {
+            "at": "A",
+            "text": "2\\alpha",
+            "color": "red"
+          },
+          {
+            "at": "B",
+            "text": "\\beta"
           }
         ]
       }
@@ -1847,13 +1559,12 @@ export const Y10_CH8A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Review of triangles",
-    "question": "Points $B, C$ lie on a circle with center $O$. Angle $BOC = 100^\\circ$. If $A$ is a point on the major arc $BC$, find angle $BAC$ ($\\alpha$) in degrees.",
-    "a": "50",
-    "hint": "Angle at center is twice angle at circumference.",
+    "question": "Points $A, B, C$ on circle center $O$. Line $CD$ // $AB$. Angle $AOB = 120^\\circ$. Angle $ACD = 80^\\circ$. Find $\\alpha$ (Angle $ACB$) in degrees.",
+    "a": "60",
     "solutionSteps": [
       {
-        "explanation": "Circle theorem.",
-        "workingOut": "\\alpha = 100 / 2 = 50^\\circ"
+        "explanation": "Angle at circumference is half angle at center.",
+        "workingOut": "\\alpha = 120 / 2 = 60^\\circ"
       }
     ],
     "graphData": {
@@ -1861,36 +1572,67 @@ export const Y10_CH8A_QUESTIONS = [
         "width": 300,
         "points": {
           "O": [
-            3,
-            3
+            4,
+            4
           ],
-          "C": [
-            5,
-            5
+          "A": [
+            1,
+            2
           ],
           "B": [
-            4,
-            1
+            7,
+            2
+          ],
+          "C": [
+            2,
+            7.5
+          ],
+          "D": [
+            8,
+            7.5
           ]
         },
         "segments": [
           {
             "from": "O",
-            "to": "C"
+            "to": "A"
           },
           {
             "from": "O",
             "to": "B"
           },
           {
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
             "from": "C",
+            "to": "D"
+          }
+        ],
+        "arrows": [
+          {
+            "from": "A",
             "to": "B"
+          },
+          {
+            "from": "C",
+            "to": "D"
           }
         ],
         "angles": [
           {
             "at": "O",
-            "text": "100°"
+            "text": "120°"
+          },
+          {
+            "at": "C",
+            "text": "80°",
+            "color": "blue"
           },
           {
             "at": "C",
@@ -1899,256 +1641,5 @@ export const Y10_CH8A_QUESTIONS = [
         ]
       }
     }
-  },
-  {
-    "id": "y10-8a-q2k-alpha",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "In quadrilateral $ABCD$, Angle $A = 80^\\circ$, Angle $B = 110^\\circ$, Angle $D = 40^\\circ$. Find $\\alpha$ (Angle $C$) in degrees.",
-    "a": "130",
-    "hint": "Quadrilateral angles sum to 360.",
-    "solutionSteps": [
-      {
-        "explanation": "Sum = 360.",
-        "workingOut": "\\alpha = 360 - (80 + 110 + 40) = 130^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            0,
-            0
-          ],
-          "B": [
-            2,
-            4
-          ],
-          "C": [
-            6,
-            4
-          ],
-          "D": [
-            8,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "text": "80°"
-          },
-          {
-            "at": "B",
-            "text": "110°"
-          },
-          {
-            "at": "D",
-            "text": "40°"
-          },
-          {
-            "at": "C",
-            "text": "\\alpha"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q2m-alpha",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "In parallelogram $ABCD$, Angle $A = 60^\\circ$. Find $\\alpha$ (Angle $D$) in degrees.",
-    "a": "120",
-    "hint": "Adjacent angles in a parallelogram sum to 180.",
-    "solutionSteps": [
-      {
-        "explanation": "Adjacent angles.",
-        "workingOut": "\\alpha = 180 - 60 = 120^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            0,
-            0
-          ],
-          "B": [
-            2,
-            4
-          ],
-          "C": [
-            8,
-            4
-          ],
-          "D": [
-            6,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "text": "60°"
-          },
-          {
-            "at": "D",
-            "text": "\\alpha"
-          },
-          {
-            "at": "C",
-            "text": "\\beta"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q2m-beta",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "In parallelogram $ABCD$, Angle $A = 60^\\circ$. Find $\\beta$ (Angle $C$) in degrees.",
-    "a": "60",
-    "hint": "Opposite angles are equal.",
-    "solutionSteps": [
-      {
-        "explanation": "Opposite angles.",
-        "workingOut": "\\beta = 60^\\circ"
-      }
-    ],
-    "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            0,
-            0
-          ],
-          "B": [
-            2,
-            4
-          ],
-          "C": [
-            8,
-            4
-          ],
-          "D": [
-            6,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A"
-          }
-        ],
-        "angles": [
-          {
-            "at": "A",
-            "text": "60°"
-          },
-          {
-            "at": "D",
-            "text": "\\alpha"
-          },
-          {
-            "at": "C",
-            "text": "\\beta"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "y10-8a-q3",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "t": "Review of triangles",
-    "question": "The exterior angles of a regular polygon are each $45^\\circ$. How many sides does the polygon have?",
-    "a": "8",
-    "hint": "Exterior angles sum to 360.",
-    "solutionSteps": [
-      {
-        "explanation": "360 / 45",
-        "workingOut": "n = 8"
-      }
-    ],
-    "graphData": null
-  },
-  {
-    "id": "y10-8a-q4",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "t": "Review of triangles",
-    "question": "Three angles of a pentagon are each $150^\\circ$ and the remaining angles are equal. Find the size of each of the two remaining angles in degrees.",
-    "a": "45",
-    "hint": "Pentagon angle sum is 540.",
-    "solutionSteps": [
-      {
-        "explanation": "Sum = 540.",
-        "workingOut": "540 - 450 = 90. 90 / 2 = 45^\\circ"
-      }
-    ],
-    "graphData": null
   }
 ];
