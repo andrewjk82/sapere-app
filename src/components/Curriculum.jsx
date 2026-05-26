@@ -93,7 +93,7 @@ import { seedChapterQuestions } from '../services/chapterSeeder';
 // create its seed file, import the array above, and add ONE entry here — a
 // "Seed" button appears automatically. No new handler function needed.
 const CHAPTER_SEED_REGISTRY = [
-  { chapterId: 'y10-7a', chapterTitle: 'Chapter 7A', topicId: 'y10-7a', topicCode: '7A', topicTitle: 'Parabolas congruent to y = x^2', year: 'Year 10', seed: Y10_CH7A_QUESTIONS, label: 'Y10 Ch7A · Parabolas' },
+  { chapterId: 'y10-7', chapterTitle: 'Chapter 7: The parabola', topicId: 'y10-7a', topicCode: '7A', topicTitle: 'Parabolas congruent to y = x^2', year: 'Year 10', seed: Y10_CH7A_QUESTIONS, label: 'Y10 Ch7A · Parabolas' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1A', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1B', topicCode: '1B', topicTitle: 'Factoring', year: 'Year 11', seed: Y11_EXT1_CH1B_QUESTIONS, label: 'Y11 Ext1 Ch1 · Factoring' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1C', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11', seed: Y11_EXT1_CH1C_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebraic fractions' },
