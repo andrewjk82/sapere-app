@@ -24,7 +24,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -66,7 +66,7 @@ export const Y10_CH6_QUESTIONS = [
             5
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -119,7 +119,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -171,7 +171,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -213,7 +213,7 @@ export const Y10_CH6_QUESTIONS = [
             10
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -266,7 +266,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -318,23 +318,7 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "SA = 50\\pi + 120\\pi = 170\\pi"
       }
     ],
-    "graphData": {
-      "geometry": {
-        "shape": "cylinder",
-        "radius": 5,
-        "height": 12,
-        "edgeLabels": [
-          {
-            "part": "radius",
-            "text": "5 cm"
-          },
-          {
-            "part": "height",
-            "text": "12 cm"
-          }
-        ]
-      }
-    },
+    "graphData": null,
     "t": "Review of prisms and cylinders"
   },
   {
@@ -362,23 +346,7 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "SA = 16\\pi + 40\\pi + 80 = 56\\pi + 80"
       }
     ],
-    "graphData": {
-      "geometry": {
-        "shape": "cylinder",
-        "radius": 4,
-        "height": 10,
-        "edgeLabels": [
-          {
-            "part": "radius",
-            "text": "4 cm"
-          },
-          {
-            "part": "height",
-            "text": "10 cm"
-          }
-        ]
-      }
-    },
+    "graphData": null,
     "t": "Review of prisms and cylinders"
   },
   {
@@ -410,7 +378,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -442,7 +410,7 @@ export const Y10_CH6_QUESTIONS = [
             20
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -482,7 +450,7 @@ export const Y10_CH6_QUESTIONS = [
             "to": "F"
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -678,7 +646,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -720,7 +688,7 @@ export const Y10_CH6_QUESTIONS = [
             8
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -773,7 +741,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -821,23 +789,7 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "V = 25 \\times 12 \\times \\pi = 300\\pi"
       }
     ],
-    "graphData": {
-      "geometry": {
-        "shape": "cylinder",
-        "radius": 5,
-        "height": 12,
-        "edgeLabels": [
-          {
-            "part": "radius",
-            "text": "5 cm"
-          },
-          {
-            "part": "height",
-            "text": "12 cm"
-          }
-        ]
-      }
-    },
+    "graphData": null,
     "t": "Review of prisms and cylinders"
   },
   {
@@ -865,7 +817,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             4,
             6,
@@ -897,7 +849,7 @@ export const Y10_CH6_QUESTIONS = [
             15
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -963,7 +915,7 @@ export const Y10_CH6_QUESTIONS = [
             "text": "F"
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -1015,7 +967,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             4,
             6,
@@ -1047,7 +999,7 @@ export const Y10_CH6_QUESTIONS = [
             15
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -1113,7 +1065,7 @@ export const Y10_CH6_QUESTIONS = [
             "text": "F"
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -1271,7 +1223,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 250,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "B1": [
             0,
             0,
@@ -1393,7 +1345,7 @@ export const Y10_CH6_QUESTIONS = [
             1
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "B1",
             "to": "B2"
@@ -1548,7 +1500,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "B2",
@@ -1608,7 +1560,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -1650,7 +1602,7 @@ export const Y10_CH6_QUESTIONS = [
             15
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -1737,7 +1689,7 @@ export const Y10_CH6_QUESTIONS = [
             "text": "H"
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -1793,7 +1745,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             5,
@@ -1845,7 +1797,7 @@ export const Y10_CH6_QUESTIONS = [
             20
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -1911,7 +1863,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -1956,7 +1908,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -1998,7 +1950,7 @@ export const Y10_CH6_QUESTIONS = [
             12
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -2051,7 +2003,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -2099,7 +2051,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -2141,7 +2093,7 @@ export const Y10_CH6_QUESTIONS = [
             12
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -2194,7 +2146,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
@@ -2246,7 +2198,7 @@ export const Y10_CH6_QUESTIONS = [
       "geometry": {
         "width": 280,
         "projection": "isometric",
-        "vertices": {
+        "points": {
           "A": [
             0,
             0,
@@ -2288,7 +2240,7 @@ export const Y10_CH6_QUESTIONS = [
             12
           ]
         },
-        "edges": [
+        "segments": [
           {
             "from": "A",
             "to": "B"
@@ -2341,7 +2293,7 @@ export const Y10_CH6_QUESTIONS = [
             "dashed": true
           }
         ],
-        "edgeLabels": [
+        "sideLabels": [
           {
             "between": [
               "A",
