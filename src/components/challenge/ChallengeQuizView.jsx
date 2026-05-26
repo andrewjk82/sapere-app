@@ -640,11 +640,23 @@ const ChallengeQuizView = ({
             </div>
           ) : currentQuestion?.type === 'graph_sketch' ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <p style={{ color: '#64748b', fontSize: '0.95rem', textAlign: 'center', marginBottom: '8px' }}>
-                Draw your graph on the canvas, then submit it for grading.
+              {/* Inline canvas for mobile / non-split-screen layouts so the
+                  student always has somewhere to draw AND the export captures ink */}
+              {!showSideCanvas && !isTabletCanvasLayout && (
+                <ChallengeSketchBoard
+                  placement="tablet"
+                  questionId={currentQuestion?.id || currentIdx}
+                  questionType={currentQuestion?.type}
+                  isSubmitted={step === 'feedback'}
+                  showSplitScreen={true}
+                  ref={canvasRef}
+                />
+              )}
+              <p style={{ color: '#64748b', fontSize: '0.9rem', textAlign: 'center', margin: 0 }}>
+                Draw your answer on the canvas above, then submit for grading.
               </p>
               {step !== 'feedback' ? (
-                <button 
+                <button
                   onClick={() => handleAnswer('Graph Submitted')}
                   disabled={isSubmittingCanvas}
                   className="app-button app-button--primary"
