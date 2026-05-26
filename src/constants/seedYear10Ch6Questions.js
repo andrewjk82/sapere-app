@@ -362,7 +362,23 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "SA = 16\\pi + 40\\pi + 80 = 56\\pi + 80"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "shape": "cylinder",
+        "radius": 4,
+        "height": 10,
+        "edgeLabels": [
+          {
+            "part": "radius",
+            "text": "4 cm"
+          },
+          {
+            "part": "height",
+            "text": "10 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -845,7 +861,133 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "h = 8"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            4,
+            6,
+            0
+          ],
+          "B": [
+            8,
+            0,
+            0
+          ],
+          "C": [
+            0,
+            0,
+            0
+          ],
+          "D": [
+            4,
+            6,
+            15
+          ],
+          "E": [
+            8,
+            0,
+            15
+          ],
+          "F": [
+            0,
+            0,
+            15
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "D",
+            "dashed": true
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "E"
+          },
+          {
+            "from": "C",
+            "to": "F",
+            "dashed": true
+          }
+        ],
+        "vertexLabels": [
+          {
+            "at": "A",
+            "text": "A"
+          },
+          {
+            "at": "B",
+            "text": "B"
+          },
+          {
+            "at": "C",
+            "text": "C"
+          },
+          {
+            "at": "D",
+            "text": "D"
+          },
+          {
+            "at": "E",
+            "text": "E"
+          },
+          {
+            "at": "F",
+            "text": "F"
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "10 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "20 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -869,7 +1011,133 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "V = 48 \\times 20 = 960"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            4,
+            6,
+            0
+          ],
+          "B": [
+            8,
+            0,
+            0
+          ],
+          "C": [
+            0,
+            0,
+            0
+          ],
+          "D": [
+            4,
+            6,
+            15
+          ],
+          "E": [
+            8,
+            0,
+            15
+          ],
+          "F": [
+            0,
+            0,
+            15
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "D",
+            "dashed": true
+          },
+          {
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "from": "B",
+            "to": "E"
+          },
+          {
+            "from": "C",
+            "to": "F",
+            "dashed": true
+          }
+        ],
+        "vertexLabels": [
+          {
+            "at": "A",
+            "text": "A"
+          },
+          {
+            "at": "B",
+            "text": "B"
+          },
+          {
+            "at": "C",
+            "text": "C"
+          },
+          {
+            "at": "D",
+            "text": "D"
+          },
+          {
+            "at": "E",
+            "text": "E"
+          },
+          {
+            "at": "F",
+            "text": "F"
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "10 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "A",
+              "D"
+            ],
+            "text": "20 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -999,7 +1267,312 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "Total SA = 65"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 250,
+        "projection": "isometric",
+        "vertices": {
+          "B1": [
+            0,
+            0,
+            0
+          ],
+          "B2": [
+            3,
+            0,
+            0
+          ],
+          "B3": [
+            3,
+            0,
+            3
+          ],
+          "B4": [
+            0,
+            0,
+            3
+          ],
+          "B5": [
+            0,
+            3,
+            0
+          ],
+          "B6": [
+            3,
+            3,
+            0
+          ],
+          "B7": [
+            3,
+            3,
+            3
+          ],
+          "B8": [
+            0,
+            3,
+            3
+          ],
+          "M1": [
+            0,
+            3,
+            0
+          ],
+          "M2": [
+            2,
+            3,
+            0
+          ],
+          "M3": [
+            2,
+            3,
+            2
+          ],
+          "M4": [
+            0,
+            3,
+            2
+          ],
+          "M5": [
+            0,
+            5,
+            0
+          ],
+          "M6": [
+            2,
+            5,
+            0
+          ],
+          "M7": [
+            2,
+            5,
+            2
+          ],
+          "M8": [
+            0,
+            5,
+            2
+          ],
+          "T1": [
+            0,
+            5,
+            0
+          ],
+          "T2": [
+            1,
+            5,
+            0
+          ],
+          "T3": [
+            1,
+            5,
+            1
+          ],
+          "T4": [
+            0,
+            5,
+            1
+          ],
+          "T5": [
+            0,
+            6,
+            0
+          ],
+          "T6": [
+            1,
+            6,
+            0
+          ],
+          "T7": [
+            1,
+            6,
+            1
+          ],
+          "T8": [
+            0,
+            6,
+            1
+          ]
+        },
+        "edges": [
+          {
+            "from": "B1",
+            "to": "B2"
+          },
+          {
+            "from": "B2",
+            "to": "B3"
+          },
+          {
+            "from": "B3",
+            "to": "B4"
+          },
+          {
+            "from": "B4",
+            "to": "B1",
+            "dashed": true
+          },
+          {
+            "from": "B5",
+            "to": "B6"
+          },
+          {
+            "from": "B6",
+            "to": "B7"
+          },
+          {
+            "from": "B7",
+            "to": "B8"
+          },
+          {
+            "from": "B8",
+            "to": "B5"
+          },
+          {
+            "from": "B1",
+            "to": "B5",
+            "dashed": true
+          },
+          {
+            "from": "B2",
+            "to": "B6"
+          },
+          {
+            "from": "B3",
+            "to": "B7"
+          },
+          {
+            "from": "B4",
+            "to": "B8",
+            "dashed": true
+          },
+          {
+            "from": "M1",
+            "to": "M2"
+          },
+          {
+            "from": "M2",
+            "to": "M3"
+          },
+          {
+            "from": "M3",
+            "to": "M4"
+          },
+          {
+            "from": "M4",
+            "to": "M1",
+            "dashed": true
+          },
+          {
+            "from": "M5",
+            "to": "M6"
+          },
+          {
+            "from": "M6",
+            "to": "M7"
+          },
+          {
+            "from": "M7",
+            "to": "M8"
+          },
+          {
+            "from": "M8",
+            "to": "M5"
+          },
+          {
+            "from": "M1",
+            "to": "M5",
+            "dashed": true
+          },
+          {
+            "from": "M2",
+            "to": "M6"
+          },
+          {
+            "from": "M3",
+            "to": "M7"
+          },
+          {
+            "from": "M4",
+            "to": "M8",
+            "dashed": true
+          },
+          {
+            "from": "T1",
+            "to": "T2"
+          },
+          {
+            "from": "T2",
+            "to": "T3"
+          },
+          {
+            "from": "T3",
+            "to": "T4"
+          },
+          {
+            "from": "T4",
+            "to": "T1",
+            "dashed": true
+          },
+          {
+            "from": "T5",
+            "to": "T6"
+          },
+          {
+            "from": "T6",
+            "to": "T7"
+          },
+          {
+            "from": "T7",
+            "to": "T8"
+          },
+          {
+            "from": "T8",
+            "to": "T5"
+          },
+          {
+            "from": "T1",
+            "to": "T5",
+            "dashed": true
+          },
+          {
+            "from": "T2",
+            "to": "T6"
+          },
+          {
+            "from": "T3",
+            "to": "T7"
+          },
+          {
+            "from": "T4",
+            "to": "T8",
+            "dashed": true
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "B2",
+              "B3"
+            ],
+            "text": "3 m"
+          },
+          {
+            "between": [
+              "M2",
+              "M3"
+            ],
+            "text": "2 m"
+          },
+          {
+            "between": [
+              "T2",
+              "T3"
+            ],
+            "text": "1 m"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -1031,7 +1604,164 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "24 = 6 \\times \\text{height} \\implies \\text{height} = 4"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            0,
+            0,
+            0
+          ],
+          "B": [
+            7,
+            0,
+            0
+          ],
+          "C": [
+            6,
+            4,
+            0
+          ],
+          "D": [
+            1,
+            4,
+            0
+          ],
+          "E": [
+            0,
+            0,
+            15
+          ],
+          "F": [
+            7,
+            0,
+            15
+          ],
+          "G": [
+            6,
+            4,
+            15
+          ],
+          "H": [
+            1,
+            4,
+            15
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A"
+          },
+          {
+            "from": "E",
+            "to": "F",
+            "dashed": true
+          },
+          {
+            "from": "F",
+            "to": "G"
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "H",
+            "to": "E",
+            "dashed": true
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "G"
+          },
+          {
+            "from": "D",
+            "to": "H"
+          }
+        ],
+        "vertexLabels": [
+          {
+            "at": "A",
+            "text": "A"
+          },
+          {
+            "at": "B",
+            "text": "B"
+          },
+          {
+            "at": "C",
+            "text": "C"
+          },
+          {
+            "at": "D",
+            "text": "D"
+          },
+          {
+            "at": "E",
+            "text": "E"
+          },
+          {
+            "at": "F",
+            "text": "F"
+          },
+          {
+            "at": "G",
+            "text": "G"
+          },
+          {
+            "at": "H",
+            "text": "H"
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "7 cm"
+          },
+          {
+            "between": [
+              "C",
+              "D"
+            ],
+            "text": "5 cm"
+          },
+          {
+            "between": [
+              "A",
+              "E"
+            ],
+            "text": "20 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -1059,7 +1789,146 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "L = \\frac{600,000}{2000} = 300 \\text{ cm}"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            0,
+            5,
+            0
+          ],
+          "B": [
+            8,
+            5,
+            0
+          ],
+          "C": [
+            8,
+            2,
+            0
+          ],
+          "D": [
+            4,
+            0,
+            0
+          ],
+          "E": [
+            0,
+            2,
+            0
+          ],
+          "A2": [
+            0,
+            5,
+            20
+          ],
+          "B2": [
+            8,
+            5,
+            20
+          ],
+          "C2": [
+            8,
+            2,
+            20
+          ],
+          "D2": [
+            4,
+            0,
+            20
+          ],
+          "E2": [
+            0,
+            2,
+            20
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "from": "E",
+            "to": "A"
+          },
+          {
+            "from": "A2",
+            "to": "B2"
+          },
+          {
+            "from": "B2",
+            "to": "C2"
+          },
+          {
+            "from": "C2",
+            "to": "D2"
+          },
+          {
+            "from": "D2",
+            "to": "E2",
+            "dashed": true
+          },
+          {
+            "from": "E2",
+            "to": "A2",
+            "dashed": true
+          },
+          {
+            "from": "A",
+            "to": "A2",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "B2"
+          },
+          {
+            "from": "C",
+            "to": "C2"
+          },
+          {
+            "from": "D",
+            "to": "D2"
+          },
+          {
+            "from": "E",
+            "to": "E2",
+            "dashed": true
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "30 cm"
+          },
+          {
+            "between": [
+              "B",
+              "B2"
+            ],
+            "text": "L cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -1083,7 +1952,130 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "V \\approx 1696.46"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            0,
+            0,
+            0
+          ],
+          "B": [
+            12,
+            0,
+            0
+          ],
+          "C": [
+            12,
+            0,
+            12
+          ],
+          "D": [
+            0,
+            0,
+            12
+          ],
+          "E": [
+            0,
+            15,
+            0
+          ],
+          "F": [
+            12,
+            15,
+            0
+          ],
+          "G": [
+            12,
+            15,
+            12
+          ],
+          "H": [
+            0,
+            15,
+            12
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "dashed": true
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "G"
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "H",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "G"
+          },
+          {
+            "from": "D",
+            "to": "H",
+            "dashed": true
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "B",
+              "F"
+            ],
+            "text": "15 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -1103,7 +2095,130 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "V = 12 \\times 12 \\times 15 = 2160"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            0,
+            0,
+            0
+          ],
+          "B": [
+            12,
+            0,
+            0
+          ],
+          "C": [
+            12,
+            0,
+            12
+          ],
+          "D": [
+            0,
+            0,
+            12
+          ],
+          "E": [
+            0,
+            15,
+            0
+          ],
+          "F": [
+            12,
+            15,
+            0
+          ],
+          "G": [
+            12,
+            15,
+            12
+          ],
+          "H": [
+            0,
+            15,
+            12
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "dashed": true
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "G"
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "H",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "G"
+          },
+          {
+            "from": "D",
+            "to": "H",
+            "dashed": true
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "B",
+              "F"
+            ],
+            "text": "15 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   },
   {
@@ -1127,7 +2242,130 @@ export const Y10_CH6_QUESTIONS = [
         "workingOut": "V_{\\text{unused}} = 463.54"
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "geometry3d": {
+        "width": 280,
+        "projection": "isometric",
+        "vertices": {
+          "A": [
+            0,
+            0,
+            0
+          ],
+          "B": [
+            12,
+            0,
+            0
+          ],
+          "C": [
+            12,
+            0,
+            12
+          ],
+          "D": [
+            0,
+            0,
+            12
+          ],
+          "E": [
+            0,
+            15,
+            0
+          ],
+          "F": [
+            12,
+            15,
+            0
+          ],
+          "G": [
+            12,
+            15,
+            12
+          ],
+          "H": [
+            0,
+            15,
+            12
+          ]
+        },
+        "edges": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "D"
+          },
+          {
+            "from": "D",
+            "to": "A",
+            "dashed": true
+          },
+          {
+            "from": "E",
+            "to": "F"
+          },
+          {
+            "from": "F",
+            "to": "G"
+          },
+          {
+            "from": "G",
+            "to": "H"
+          },
+          {
+            "from": "H",
+            "to": "E"
+          },
+          {
+            "from": "A",
+            "to": "E",
+            "dashed": true
+          },
+          {
+            "from": "B",
+            "to": "F"
+          },
+          {
+            "from": "C",
+            "to": "G"
+          },
+          {
+            "from": "D",
+            "to": "H",
+            "dashed": true
+          }
+        ],
+        "edgeLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "B",
+              "F"
+            ],
+            "text": "15 cm"
+          }
+        ]
+      }
+    },
     "t": "Review of prisms and cylinders"
   }
 ];
