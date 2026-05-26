@@ -6,12 +6,21 @@ import { doc, onSnapshot } from "firebase/firestore";
 import { CURRICULUM_DATA } from "../../constants/curriculumData";
 
 // Flatten Year 11/12 (which are split by course) into a flat chapter list.
-const flattenChapters = (yearKey) => {
+const flattenChapters = (yearKey, courseKey = null) => {
   const data = CURRICULUM_DATA[yearKey];
   if (!data) return [];
   if (Array.isArray(data)) return data;
+  if (courseKey && data[courseKey]) return data[courseKey];
   return Object.values(data).flat();
 };
+
+// Return course sub-keys for years that have them (e.g. 'Year 11' → ['Standard','Advanced'])
+const getCourses = (yearKey) => {
+  const data = CURRICULUM_DATA[yearKey];
+  if (!data || Array.isArray(data)) return null;
+  return Object.keys(data);
+};
+
 const allYearKeys = Object.keys(CURRICULUM_DATA);
 
 /**
@@ -36,7 +45,9 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
   }), [student?.examPrepSelection]);
 
   const [activeYear, setActiveYear] = useState(selection.years[0] || student?.assignedYear || "Year 9");
-  const yearChapters = flattenChapters(activeYear);
+  const courses = getCourses(activeYear);
+  const [activeCourse, setActiveCourse] = useState(null); // null = show all courses
+  const yearChapters = flattenChapters(activeYear, activeCourse);
 
   const writeSelection = (next) => {
     onUpdateSetting("examPrepSelection", {
@@ -64,6 +75,22 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
       ? selection.chapters.filter((v) => v !== chId)
       : [...selection.chapters, chId];
     writeSelection({ ...selection, chapters });
+  };
+
+  // Select / deselect all visible chapters at once
+  const toggleSelectAll = () => {
+    const visibleIds = yearChapters.map((ch) => ch.id);
+    const allSelected = visibleIds.every((id) => selection.chapters.includes(id));
+    const chapters = allSelected
+      ? selection.chapters.filter((id) => !visibleIds.includes(id))
+      : [...new Set([...selection.chapters, ...visibleIds])];
+    writeSelection({ ...selection, chapters });
+  };
+
+  // Reset activeCourse when switching years
+  const switchYear = (y) => {
+    setActiveYear(y);
+    setActiveCourse(null);
   };
 
   useEffect(() => {
@@ -289,10 +316,8 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
               </div>
             </div>
 
-            {/* Year tabs — pure navigation. "Active" = currently viewing.
-                "Has selections" (light tint) = at least one chapter from that
-                year is checked. Clicking only switches the visible year. */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "12px" }}>
+            {/* Year tabs */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "8px" }}>
               {allYearKeys.map((y) => {
                 const hasSelections = yearsForChapters.has(y);
                 const isActive = activeYear === y;
@@ -300,7 +325,7 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
                   <button
                     key={y}
                     type="button"
-                    onClick={() => setActiveYear(y)}
+                    onClick={() => switchYear(y)}
                     style={{
                       padding: "6px 12px", borderRadius: "999px",
                       border: `1px solid ${isActive ? "#7c3aed" : hasSelections ? "#c4b5fd" : "#e2e8f0"}`,
@@ -314,6 +339,69 @@ export default function ExamPrepPanel({ styles, student, studentId, onUpdateSett
                 );
               })}
             </div>
+
+            {/* Course sub-tabs (only for Year 11 / Year 12) */}
+            {courses && (
+              <div style={{ display: "flex", gap: "6px", marginBottom: "12px", flexWrap: "wrap" }}>
+                <button
+                  type="button"
+                  onClick={() => setActiveCourse(null)}
+                  style={{
+                    padding: "4px 12px", borderRadius: "999px", fontSize: "0.74rem", fontWeight: 800,
+                    border: `1px solid ${activeCourse === null ? "#7c3aed" : "#e2e8f0"}`,
+                    background: activeCourse === null ? "#ede9fe" : "#f8fafc",
+                    color: activeCourse === null ? "#5b21b6" : "#64748b",
+                    cursor: "pointer",
+                  }}
+                >
+                  All
+                </button>
+                {courses.map((c) => {
+                  const isActive = activeCourse === c;
+                  const courseChIds = flattenChapters(activeYear, c).map((ch) => ch.id);
+                  const hasAny = courseChIds.some((id) => selection.chapters.includes(id));
+                  return (
+                    <button
+                      key={c}
+                      type="button"
+                      onClick={() => setActiveCourse(isActive ? null : c)}
+                      style={{
+                        padding: "4px 12px", borderRadius: "999px", fontSize: "0.74rem", fontWeight: 800,
+                        border: `1px solid ${isActive ? "#7c3aed" : hasAny ? "#c4b5fd" : "#e2e8f0"}`,
+                        background: isActive ? "#ede9fe" : hasAny ? "#faf5ff" : "#f8fafc",
+                        color: isActive ? "#5b21b6" : hasAny ? "#6d28d9" : "#64748b",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {c}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* Select All / Deselect All for current view */}
+            {yearChapters.length > 0 && (() => {
+              const visibleIds = yearChapters.map((ch) => ch.id);
+              const allSelected = visibleIds.every((id) => selection.chapters.includes(id));
+              return (
+                <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "10px" }}>
+                  <button
+                    type="button"
+                    onClick={toggleSelectAll}
+                    style={{
+                      padding: "4px 12px", borderRadius: "999px", fontSize: "0.72rem", fontWeight: 800,
+                      border: `1px solid ${allSelected ? "#fca5a5" : "#a78bfa"}`,
+                      background: allSelected ? "#fff1f2" : "#faf5ff",
+                      color: allSelected ? "#b91c1c" : "#5b21b6",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {allSelected ? "Deselect all" : "Select all"}
+                  </button>
+                </div>
+              );
+            })()}
 
             {/* Chapter cards — single onClick on the whole card so a click
                 anywhere toggles selection cleanly (no label/input nesting). */}
