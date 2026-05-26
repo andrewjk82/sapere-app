@@ -79,6 +79,8 @@ import { Y7_CH23H_QUESTIONS } from '../constants/seedYear7Ch23HQuestions.js';
 import { Y7_CH23I_QUESTIONS } from '../constants/seedYear7Ch23IQuestions.js';
 import { Y7_CH23J_QUESTIONS } from '../constants/seedYear7Ch23JQuestions.js';
 import { Y10_CH5A_QUESTIONS } from '../constants/seedYear10Ch5AQuestions.js';
+import { Y10_CH6_QUESTIONS } from '../constants/seedYear10Ch6Questions.js';
+import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -151,6 +153,9 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23i', topicCode: '23I', topicTitle: 'Applying algebra', year: 'Year 7', seed: Y7_CH23I_QUESTIONS, label: 'Y7 Ch23 · Applying algebra' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23j', topicCode: '23J', topicTitle: 'Problem solving with algebra', year: 'Year 7', seed: Y7_CH23J_QUESTIONS, label: 'Y7 Ch23 · Problem solving with algebra' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5a', topicCode: '5A', topicTitle: 'Solution of quadratic equations', year: 'Year 10', seed: Y10_CH5A_QUESTIONS, label: 'Y10 Ch5 · Solution of quadratic equations' },
+  { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6a', topicCode: '6A', topicTitle: 'Review of prisms and cylinders', year: 'Year 10', seed: Y10_CH6_QUESTIONS, label: 'Y10 Ch6 · Review of prisms and cylinders' },
+  // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
+  { chapterId: 'exam:abbotsleigh-2020', badgeLabel: 'Y12 EXAM', examPaper: 'abbotsleigh-2020', chapterTitle: 'Abbotsleigh 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam', year: 'Year 12', seed: ABBOTSLEIGH_2020_QUESTIONS, label: 'Y12 · Abbotsleigh 2020 HSC Trial (Advanced)' },
 ];
 import {
   fetchHscResultsIncremental,
@@ -224,6 +229,7 @@ const Curriculum = () => {
   const [questionCounts, setQuestionCounts] = useState({});
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
+  const [expandedSeedYears, setExpandedSeedYears] = useState({});
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
@@ -1995,8 +2001,11 @@ const Curriculum = () => {
                       ],
                     };
 
+                    const toggleYear = (year) =>
+                      setExpandedSeedYears((prev) => ({ ...prev, [year]: !prev[year] }));
+
                     return (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                         {yearOrder.map((year) => {
                           const registryCards = (byYear[year] || []).map((entry) => {
                             const count = questionCounts[entry.topicId];
@@ -2004,7 +2013,7 @@ const Curriculum = () => {
                               <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`} style={{ opacity: count ? 0.45 : 1 }}>
                                 <div className="sync-card-info">
                                   <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
-                                    {entry.chapterId.toUpperCase()}
+                                    {(entry.badgeLabel || entry.chapterId).toUpperCase()}
                                   </span>
                                   <span className="sync-card-title">{entry.label}</span>
                                 </div>
@@ -2020,16 +2029,32 @@ const Curriculum = () => {
                           const allCards = [...manualCards, ...registryCards];
                           if (allCards.length === 0) return null;
 
+                          const doneCount = (byYear[year] || []).filter((entry) => questionCounts[entry.topicId]).length;
+                          const isOpen = expandedSeedYears[year] ?? false;
+
                           return (
-                            <div key={year}>
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
-                                <span style={{ background: yearColors[year]?.bg, color: '#fff', fontWeight: 900, fontSize: '0.75rem', padding: '4px 12px', borderRadius: '999px' }}>{year}</span>
-                                <div style={{ flex: 1, height: '1px', background: '#e2e8f0' }} />
-                                <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8' }}>{allCards.length} sets</span>
-                              </div>
-                              <div className="admin-sync-grid">
-                                {allCards}
-                              </div>
+                            <div key={year} style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden' }}>
+                              <button
+                                onClick={() => toggleYear(year)}
+                                style={{
+                                  width: '100%', display: 'flex', alignItems: 'center', gap: '12px',
+                                  padding: '14px 18px', background: isOpen ? '#faf5ff' : '#fff',
+                                  border: 'none', cursor: 'pointer', textAlign: 'left',
+                                  borderBottom: isOpen ? '1px solid #e2e8f0' : 'none',
+                                }}
+                              >
+                                <span style={{ background: yearColors[year]?.bg, color: '#fff', fontWeight: 900, fontSize: '0.75rem', padding: '4px 12px', borderRadius: '999px', flexShrink: 0 }}>{year}</span>
+                                <span style={{ fontWeight: 700, fontSize: '0.82rem', color: '#475569' }}>{allCards.length} sets</span>
+                                <span style={{ marginLeft: 'auto', fontSize: '0.72rem', fontWeight: 700, color: doneCount > 0 ? '#10b981' : '#94a3b8' }}>
+                                  {doneCount > 0 ? `${doneCount} seeded` : 'not seeded'}
+                                </span>
+                                <span style={{ fontSize: '0.85rem', color: '#94a3b8', flexShrink: 0 }}>{isOpen ? '▲' : '▼'}</span>
+                              </button>
+                              {isOpen && (
+                                <div className="admin-sync-grid" style={{ padding: '16px' }}>
+                                  {allCards}
+                                </div>
+                              )}
                             </div>
                           );
                         })}
