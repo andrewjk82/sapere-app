@@ -575,7 +575,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
                         )}
                         {step.workingOut && (
                           <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-                            <MathView content={`$${step.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
+                            <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
                           </div>
                         )}
                       </div>

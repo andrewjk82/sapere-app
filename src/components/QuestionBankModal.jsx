@@ -2036,7 +2036,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                           />
                           {step.workingOut.trim() && (
                             <div style={{ marginTop: '8px', padding: '10px 14px', background: '#fff', borderRadius: '10px', border: '1px solid #ede9fe' }}>
-                              <MathPreview content={/\$/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
+                              <MathPreview content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
                             </div>
                           )}
                         </div>
@@ -2256,7 +2256,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                             />
                             {step.workingOut.trim() && (
                               <div style={{ marginTop: '6px', padding: '8px 12px', background: '#fff', borderRadius: '8px', border: '1px solid #ede9fe' }}>
-                                <MathPreview content={/\$/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
+                                <MathPreview content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
                               </div>
                             )}
                           </div>

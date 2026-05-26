@@ -127,7 +127,7 @@ const WorkedSolution = ({ question }) => {
             {current.workingOut && (
               <div className="sn__ws-working">
                 <div className="sn__ws-working-label">Working out</div>
-                <MathView content={`$${current.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
+                <MathView content={/\$|\\\(|\\\[/.test(current.workingOut) ? current.workingOut : `$${current.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
               </div>
             )}
           </div>
