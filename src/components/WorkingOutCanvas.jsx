@@ -656,7 +656,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
       isDrawingRef.current &&
       currentStrokeRef.current &&
       e.pointerId === activePointerIdRef.current;
-    const isRejectedPalm = e.pointerType === 'touch' && (palmGuardRef.current || penSeenRef.current);
+    // isRejectedPalm: only block palm touches that are inside the canvas itself,
+    // NOT touches on the answer input or other page elements. Calling
+    // preventDefault on moves outside the canvas blocks iOS soft-keyboard focus.
+    const isRejectedPalm = e.pointerType === 'touch' && (palmGuardRef.current || penSeenRef.current)
+      && displayCanvasRef.current?.contains(e.target);
     if ((isActivePointer || isRejectedPalm) && e.cancelable !== false) e.preventDefault();
     if (!isActivePointer) return;
 

@@ -521,16 +521,26 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   };
 
   // Timer logic
+  // Keep a ref so the timer can read the latest answered state without
+  // re-creating the interval on every keystroke (selectedOption changes each
+  // time the user types, but the timer only needs the final snapshot).
+  const selectedOptionRef = useRef(selectedOption);
+  const selectedOptionIdxRef = useRef(selectedOptionIdx);
+  useEffect(() => { selectedOptionRef.current = selectedOption; }, [selectedOption]);
+  useEffect(() => { selectedOptionIdxRef.current = selectedOptionIdx; }, [selectedOptionIdx]);
+
   useEffect(() => {
-    if (step !== 'quiz' || (selectedOption !== null && selectedOptionIdx !== null) || !questionStartTime) return;
-    
+    if (step !== 'quiz' || !questionStartTime) return;
+
     const timeLimit = (questions[currentIdx]?.timeLimit || 30) * 1000;
     const endTime = questionStartTime + timeLimit;
 
     const timer = setInterval(() => {
+      // Skip if the question has already been answered (MC: both option + idx set)
+      if (selectedOptionRef.current !== null && selectedOptionIdxRef.current !== null) return;
       const now = Date.now();
       const remaining = Math.max(0, Math.ceil((endTime - now) / 1000));
-      
+
       setTimeLeft(remaining);
 
       if (remaining <= 0) {
@@ -538,9 +548,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         handleAnswerRef.current?.(null, null); // Time's up — use ref to avoid stale closure
       }
     }, 100); // Check more frequently for smooth UI
-    
+
     return () => clearInterval(timer);
-  }, [step, selectedOption, questionStartTime, currentIdx]);
+  }, [step, questionStartTime, currentIdx]);
 
   // Anti-cheat (focus-loss warnings, beforeunload, termination) is handled by useAntiCheat hook above.
 
