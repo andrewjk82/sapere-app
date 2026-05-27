@@ -191,8 +191,9 @@ const Library = () => {
             const isDrive = isDriveLink(m.url);
             const catColor = getCategoryColor(m.category);
             return (
-              <motion.div
+              <motion.a
                 key={m.id}
+                href={m.url} target="_blank" rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 6 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.03 }}
@@ -202,6 +203,7 @@ const Library = () => {
                   background: 'white', borderRadius: '16px',
                   border: '1px solid rgba(167,139,250,0.14)',
                   boxShadow: '0 2px 8px rgba(91,33,182,0.05)',
+                  textDecoration: 'none', cursor: 'pointer',
                 }}
               >
                 {/* Icon */}
@@ -244,20 +246,17 @@ const Library = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
                   {isAdmin && (
                     <button
-                      onClick={() => handleDelete(m.id)}
-                      style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(239,68,68,0.08)', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#ef4444' }}
+                      onClick={(e) => { e.preventDefault(); handleDelete(m.id); }}
+                      style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(239,68,68,0.08)', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#ef4444', flexShrink: 0 }}
                     >
                       <Trash2 size={13} />
                     </button>
                   )}
-                  <a
-                    href={m.url} target="_blank" rel="noopener noreferrer"
-                    style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'rgba(124,58,237,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#7c3aed', textDecoration: 'none', flexShrink: 0 }}
-                  >
+                  <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'rgba(124,58,237,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#7c3aed', flexShrink: 0 }}>
                     <ExternalLink size={15} />
-                  </a>
+                  </div>
                 </div>
-              </motion.div>
+              </motion.a>
             );
           })}
         </div>
