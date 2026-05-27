@@ -927,6 +927,10 @@ const GeometryEditor = ({ graphData, onChange }) => {
       </svg>
       </div>
 
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '-4px' }}>
+        <button type="button" onClick={addPoint} style={{ padding: '7px 14px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer', fontSize: '0.85rem' }}>+ Add point</button>
+      </div>
+
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '10px' }}>
         {pointNames.map((name) => (
           <div key={name} style={{ padding: '10px', borderRadius: '12px', background: '#fff', border: '1px solid #ede9fe' }}>
@@ -938,6 +942,16 @@ const GeometryEditor = ({ graphData, onChange }) => {
                 style={{ width: '60px', padding: '4px 6px', borderRadius: '6px', border: '1px solid #c4b5fd', fontWeight: 800, color: '#4c1d95', fontSize: '0.95rem', textAlign: 'center' }}
                 title="Click to rename"
               />
+              <button
+                type="button"
+                title={((geometry.hiddenPoints || []).includes(name)) ? 'Show point' : 'Hide point'}
+                onClick={() => {
+                  const hidden = geometry.hiddenPoints || [];
+                  const next = hidden.includes(name) ? hidden.filter(n => n !== name) : [...hidden, name];
+                  updateGeometry({ ...geometry, hiddenPoints: next });
+                }}
+                style={{ border: 0, background: (geometry.hiddenPoints || []).includes(name) ? '#fef9c3' : '#f3f4f6', color: (geometry.hiddenPoints || []).includes(name) ? '#92400e' : '#6b7280', borderRadius: '8px', padding: '3px 6px', cursor: 'pointer', fontWeight: 800, fontSize: '0.85rem' }}
+              >{(geometry.hiddenPoints || []).includes(name) ? '🙈' : '👁'}</button>
               <button type="button" onClick={() => removePoint(name)} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '3px 6px', cursor: 'pointer', fontWeight: 800 }}>Remove</button>
             </div>
             <div style={{ display: 'flex', gap: '6px' }}>
@@ -1269,7 +1283,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       let initialAnswer = q.answer || '';
       const initialGraphData = q.graphData?.geometry
         ? withGeometrySnapshot(q.graphData)
-        : convertJsxGraphToGeometryGraph(q.graphData) || q.graphData;
+        : q.graphData;
       
       if (q.type === 'multiple_choice') {
         if (['0', '1', '2', '3'].includes(q.answer)) {
