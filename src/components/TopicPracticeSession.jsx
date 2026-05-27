@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, XCircle, Zap, BookOpen,
-  ChevronRight, Play, RotateCcw, Trophy, Circle,
+  Play, RotateCcw, Trophy,
   Lightbulb, Check, X,
 } from 'lucide-react';
 import { db } from '../firebase/config';
@@ -249,41 +249,6 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           </div>
         ) : (
           <>
-            {/* Question preview list */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '24px' }}>
-              {questions.map((q, i) => (
-                <motion.div
-                  key={q.id}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.04 }}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: '14px',
-                    padding: '14px 18px', borderRadius: '16px',
-                    background: '#fff', border: '1px solid #e2e8f0',
-                    boxShadow: '0 2px 8px rgba(15,23,42,0.04)',
-                  }}
-                >
-                  <div style={{
-                    width: '32px', height: '32px', borderRadius: '10px', flexShrink: 0,
-                    background: '#f5f3ff', display: 'grid', placeItems: 'center',
-                    fontFamily: '"Outfit", sans-serif', fontWeight: 900, fontSize: '0.85rem', color: '#7c3aed',
-                  }}>
-                    {i + 1}
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1e1b4b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {shortText(q.question, 90)}
-                    </div>
-                    <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', marginTop: '2px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                      {q.type?.replace('_', ' ') || 'question'} · {q.difficulty || 'medium'}
-                    </div>
-                  </div>
-                  <ChevronRight size={15} style={{ color: '#cbd5e1', flexShrink: 0 }} />
-                </motion.div>
-              ))}
-            </div>
-
             {/* Start button */}
             <motion.button
               onClick={() => { setCurrentIdx(0); setResults([]); setView('quiz'); }}
