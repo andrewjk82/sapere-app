@@ -390,9 +390,15 @@ function App() {
   const [isCapsuleExpanded, setIsCapsuleExpanded] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [showNotifs, setShowNotifs] = useState(false);
-  const [showOpeningIntro, setShowOpeningIntro] = useState(true);
-  const [openingIntroVisible, setOpeningIntroVisible] = useState(true);
-  const introShownOnceRef = useRef(false); // prevent re-trigger on profile re-loads
+  // Use sessionStorage so the intro never re-appears within the same browser session,
+  // even if App remounts or the user switches tabs (which can cause re-renders).
+  const [showOpeningIntro, setShowOpeningIntro] = useState(
+    () => !sessionStorage.getItem('sapere:intro-shown')
+  );
+  const [openingIntroVisible, setOpeningIntroVisible] = useState(
+    () => !sessionStorage.getItem('sapere:intro-shown')
+  );
+  const introShownOnceRef = useRef(!!sessionStorage.getItem('sapere:intro-shown'));
   const [isStandaloneIntro, setIsStandaloneIntro] = useState(() => isStandaloneAppDisplay());
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
@@ -605,6 +611,7 @@ function App() {
     if (!user?.uid) {
       // User logged out — reset so next login gets the intro
       introShownOnceRef.current = false;
+      sessionStorage.removeItem('sapere:intro-shown');
       setShowOpeningIntro(false);
       setOpeningIntroVisible(false);
       return undefined;
@@ -613,6 +620,7 @@ function App() {
     // Only show once per session — don't re-trigger on profile reloads / re-renders
     if (introShownOnceRef.current) return undefined;
     introShownOnceRef.current = true;
+    sessionStorage.setItem('sapere:intro-shown', '1');
 
     setShowOpeningIntro(true);
     setOpeningIntroVisible(true);
