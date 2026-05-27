@@ -1907,7 +1907,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-4c', code: '4C', title: 'Gradient-intercept form and the general form of the equation of a line' },
         { id: 'y10-4d', code: '4D', title: 'Point-gradient form of an equation of a line' },
         { id: 'y10-4e', code: '4E', title: 'Review of simultaneous linear equations' },
-        { id: 'y10-4f', code: '4F', title: 'Solving word problems using simultaneous equations' }
+        { id: 'y10-4f', code: '4F', title: 'Solving word problems using simultaneous equations' },
+        { id: 'y10-4g', code: '4G', title: 'Revision' }
       ]
     },
     {
