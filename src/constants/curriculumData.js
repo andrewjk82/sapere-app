@@ -1863,7 +1863,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-1b', code: '1B', title: 'Percentage increase and decrease' },
         { id: 'y10-1c', code: '1C', title: 'Repeated increases and decreases' },
         { id: 'y10-1d', code: '1D', title: 'Compound interest' },
-        { id: 'y10-1e', code: '1E', title: 'Compound depreciation' }
+        { id: 'y10-1e', code: '1E', title: 'Compound depreciation' },
+        { id: 'y10-1f', code: '1F', title: 'Revision' }
       ]
     },
     {
