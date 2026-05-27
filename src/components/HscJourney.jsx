@@ -99,15 +99,17 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '20px' }}>
       <div>
         <div style={{ fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.16em', color: '#8b5cf6', textTransform: 'uppercase' }}>
-          {yearLabel} · HSC Prep · {courseLabel}
+          {yearLabel} · {view === 'curriculum' ? 'Curriculum' : 'HSC Prep'} · {courseLabel}
         </div>
         <h2 style={{ fontFamily: '"Outfit", sans-serif', fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', color: '#1e1b4b', margin: '4px 0 0' }}>
-          Past paper journey
+          {view === 'curriculum' ? 'Your learning path' : 'Past paper journey'}
         </h2>
         <div style={{ color: '#6d6a85', marginTop: '6px', fontSize: '0.9rem', fontWeight: 600 }}>
-          {papers.length > 0
-            ? `${papers.length} paper${papers.length === 1 ? '' : 's'} completed · scores tracked by your teacher`
-            : 'Your teacher will log each past paper you complete here'}
+          {view === 'curriculum'
+            ? 'Work through each chapter and topic at your own pace'
+            : papers.length > 0
+              ? `${papers.length} paper${papers.length === 1 ? '' : 's'} completed · scores tracked by your teacher`
+              : 'Your teacher will log each past paper you complete here'}
         </div>
       </div>
       {toggle}
