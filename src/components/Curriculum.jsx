@@ -87,6 +87,7 @@ import { Y10_CH5A_QUESTIONS } from '../constants/seedYear10Ch5AQuestions.js';
 import { Y10_CH6_QUESTIONS } from '../constants/seedYear10Ch6Questions.js';
 import { Y10_CH6K_QUESTIONS } from '../constants/seedYear10Ch6KQuestions.js';
 import { Y10_CH7A_QUESTIONS } from '../constants/seedYear10Ch7AQuestions.js';
+import { Y10_CH7H_QUESTIONS } from '../constants/seedYear10Ch7HQuestions.js';
 import { Y10_CH8A_QUESTIONS } from '../constants/seedYear10Ch8AQuestions.js';
 import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -108,6 +109,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5g', topicCode: '5G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH5_QUESTIONS, label: 'Y10 Ch5 · 5G Revision' },
   { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6k', topicCode: '6K', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH6K_QUESTIONS, label: 'Y10 Ch6 · 6K Revision' },
   { chapterId: 'y10-7', chapterTitle: 'Chapter 7: The parabola', topicId: 'y10-7a', topicCode: '7A', topicTitle: 'Parabolas congruent to y = x^2', year: 'Year 10', seed: Y10_CH7A_QUESTIONS, label: 'Y10 Ch7A · Parabolas' },
+  { chapterId: 'y10-7', chapterTitle: 'Chapter 7: The parabola', topicId: 'y10-7h', topicCode: '7H', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH7H_QUESTIONS, label: 'Y10 Ch7 · 7H Revision' },
   { chapterId: 'y10-8', chapterTitle: 'Chapter 8: Review of geometry', topicId: 'y10-8a', topicCode: '8A', topicTitle: 'Review of triangles', year: 'Year 10', seed: Y10_CH8A_QUESTIONS, label: 'Y10 Ch8 · Review of triangles' },
   { chapterId: 'y10-9', chapterTitle: 'Chapter 9: Indices, Exponentials and Logarithms', topicId: 'y10-9a', topicCode: '9A', topicTitle: 'Review of powers and integer indices', year: 'Year 10', seed: Y10_CH9_QUESTIONS, label: 'Y10 Ch9 · 9A Review of powers and integer indices' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1A', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },

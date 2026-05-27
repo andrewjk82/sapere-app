@@ -1949,7 +1949,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-7d', code: '7D', title: 'Symmetry and factorisation' },
         { id: 'y10-7e', code: '7E', title: 'Sketching via the discriminant' },
         { id: 'y10-7f', code: '7F', title: 'Applications involving quadratics' },
-        { id: 'y10-7g', code: '7G', title: 'Quadratic inequalities' }
+        { id: 'y10-7g', code: '7G', title: 'Quadratic inequalities' },
+        { id: 'y10-7h', code: '7H', title: 'Revision' }
       ]
     },
     {
