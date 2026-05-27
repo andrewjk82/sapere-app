@@ -1934,7 +1934,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-6b', code: '6B', title: 'Pyramids' },
         { id: 'y10-6c', code: '6C', title: 'Cones' },
         { id: 'y10-6d', code: '6D', title: 'Spheres' },
-        { id: 'y10-6e', code: '6E', title: 'Enlargement' }
+        { id: 'y10-6e', code: '6E', title: 'Enlargement' },
+        { id: 'y10-6k', code: '6K', title: 'Revision' }
       ]
     },
     {
