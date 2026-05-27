@@ -12,30 +12,55 @@ import ErrorBoundary from './components/ErrorBoundary';
 // After a new deploy the hashed chunk filenames change. A browser still
 // running the old build will request a stale chunk; the server answers with
 // index.html (text/html), which fails as "not a valid JavaScript MIME type".
-// lazyWithReload detects that failed dynamic import and reloads the page once
-// to pick up the fresh build (guarded so it can never loop).
-const CHUNK_RELOAD_KEY = 'sapere:chunk-reload';
-const lazyWithReload = (importer) => lazy(() =>
-  importer()
-    .then((mod) => { sessionStorage.removeItem(CHUNK_RELOAD_KEY); return mod; })
-    .catch((err) => {
-      if (!sessionStorage.getItem(CHUNK_RELOAD_KEY)) {
-        sessionStorage.setItem(CHUNK_RELOAD_KEY, String(Date.now()));
-        window.location.reload();
-        return new Promise(() => {}); // never resolves — the page is reloading
+// lazyWithReload detects a failed dynamic import (stale chunk after a deploy)
+// and reloads the page once per chunk to pick up the fresh build.
+// Each chunk gets its own sessionStorage key so multiple chunks can each
+// trigger one reload independently without blocking each other.
+// On module load, purge any stale reload guards older than 60 s so they
+// never permanently block retries across app sessions.
+(() => {
+  try {
+    const now = Date.now();
+    Object.keys(sessionStorage).forEach((k) => {
+      if (k.startsWith('sapere:chunk-reload')) {
+        const ts = Number(sessionStorage.getItem(k));
+        if (!ts || now - ts > 60_000) sessionStorage.removeItem(k);
       }
-      throw err;
-    })
-);
-const Dashboard = lazyWithReload(() => import('./components/Dashboard'));
+    });
+  } catch (_) { /* sessionStorage unavailable */ }
+})();
+
+const lazyWithReload = (importer) => {
+  // Convert the importer function to a stable string key for sessionStorage.
+  const chunkKey = `sapere:chunk-reload:${importer.toString().replace(/\s+/g, '')}`;
+  return lazy(() =>
+    importer()
+      .then((mod) => { sessionStorage.removeItem(chunkKey); return mod; })
+      .catch((err) => {
+        if (!sessionStorage.getItem(chunkKey)) {
+          sessionStorage.setItem(chunkKey, String(Date.now()));
+          // Use replace() with a cache-bust param so mobile browsers don't
+          // serve a stale index.html from their local cache on reload.
+          const sep = window.location.search ? '&' : '?';
+          window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+          return new Promise(() => {}); // never resolves — the page is navigating
+        }
+        throw err;
+      })
+  );
+};
+// Dashboard and Schedule are eagerly imported — they are the first screens
+// students and tutors see, so lazy-loading them only adds latency and risks
+// "Failed to fetch dynamically imported module" errors on stale deploys.
+import Dashboard from './components/Dashboard';
+import Schedule from './components/Schedule';
+import Library from './components/Library';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
-const Schedule = lazyWithReload(() => import('./components/Schedule'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
 const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
 const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
-const Library = lazyWithReload(() => import('./components/Library'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -367,6 +392,7 @@ function App() {
   const [showNotifs, setShowNotifs] = useState(false);
   const [showOpeningIntro, setShowOpeningIntro] = useState(true);
   const [openingIntroVisible, setOpeningIntroVisible] = useState(true);
+  const introShownOnceRef = useRef(false); // prevent re-trigger on profile re-loads
   const [isStandaloneIntro, setIsStandaloneIntro] = useState(() => isStandaloneAppDisplay());
   const [verificationChecking, setVerificationChecking] = useState(false);
   const [verificationMessage, setVerificationMessage] = useState('');
@@ -577,11 +603,16 @@ function App() {
 
   useEffect(() => {
     if (!user?.uid) {
+      // User logged out — reset so next login gets the intro
+      introShownOnceRef.current = false;
       setShowOpeningIntro(false);
       setOpeningIntroVisible(false);
       return undefined;
     }
     if (!profileLoaded && !isAdmin) return undefined;
+    // Only show once per session — don't re-trigger on profile reloads / re-renders
+    if (introShownOnceRef.current) return undefined;
+    introShownOnceRef.current = true;
 
     setShowOpeningIntro(true);
     setOpeningIntroVisible(true);
