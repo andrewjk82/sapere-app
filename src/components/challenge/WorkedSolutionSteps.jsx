@@ -154,7 +154,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                   {step.explanation && (
                     <MathView
                       content={step.explanation}
-                      graphData={i === totalSteps - 1 ? graphData : undefined}
+                      graphData={step.graphData || (i === totalSteps - 1 ? graphData : undefined)}
                       style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.12rem', lineHeight: 1.75 }}
                     />
                   )}
