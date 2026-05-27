@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Search, Link2, ExternalLink,
@@ -54,6 +54,8 @@ const Library = () => {
   const [linkCategory, setLinkCategory] = useState('General');
   const [linkDescription, setLinkDescription] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [loadedPreviews, setLoadedPreviews] = useState({});
+  const isPointerFine = useRef(typeof window !== 'undefined' && window.matchMedia('(pointer:fine)').matches).current;
 
   useEffect(() => {
     const q = query(collection(db, 'materials'), orderBy('createdAt', 'desc'));
@@ -213,13 +215,26 @@ const Library = () => {
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = ''; }}
               >
                 {/* Preview area */}
-                <div style={{ position: 'relative', height: '180px', background: '#f8fafc', overflow: 'hidden' }}>
+                <div
+                  style={{ position: 'relative', height: '180px', background: '#f8fafc', overflow: 'hidden', cursor: previewUrl && !loadedPreviews[m.id] ? 'pointer' : 'default' }}
+                  onClick={() => previewUrl && !loadedPreviews[m.id] && setLoadedPreviews(prev => ({ ...prev, [m.id]: true }))}
+                >
                   {previewUrl ? (
-                    <iframe 
-                      src={previewUrl} 
-                      style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none' }} 
-                      title="Drive Preview"
-                    />
+                    loadedPreviews[m.id] ? (
+                      <iframe
+                        src={previewUrl}
+                        style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none', touchAction: 'none' }}
+                        title="Drive Preview"
+                        sandbox="allow-scripts allow-same-origin"
+                      />
+                    ) : (
+                      <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(224,231,255,0.6), rgba(243,232,255,0.8))', gap: '8px' }}>
+                        <div className="page-list__icon" style={{ width: '56px', height: '56px', borderRadius: '18px' }}>
+                          <Link2 size={24} />
+                        </div>
+                        <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#7c3aed', opacity: 0.7 }}>클릭하여 미리보기</span>
+                      </div>
+                    )
                   ) : (
                     <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(224,231,255,0.6), rgba(243,232,255,0.8))' }}>
                       <div className="page-list__icon" style={{ width: '56px', height: '56px', borderRadius: '18px' }}>
@@ -241,10 +256,12 @@ const Library = () => {
                     </button>
                   )}
                   
-                  {/* Hover overlay */}
+                  {/* Hover overlay — desktop only (pointer:fine). On touch devices
+                      a full-inset transparent element captures taps and blocks
+                      the bottom nav bar, so we skip it entirely on mobile. */}
                   <a
                     href={m.url} target="_blank" rel="noopener noreferrer"
-                    style={{ position: 'absolute', inset: 0, background: 'rgba(109,40,217,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, transition: 'opacity 0.2s', textDecoration: 'none', zIndex: 20 }}
+                    style={{ position: 'absolute', inset: 0, background: 'rgba(109,40,217,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, transition: 'opacity 0.2s', textDecoration: 'none', zIndex: 20, pointerEvents: isPointerFine ? 'auto' : 'none' }}
                     onMouseEnter={e => e.currentTarget.style.opacity = '1'}
                     onMouseLeave={e => e.currentTarget.style.opacity = '0'}
                   >
