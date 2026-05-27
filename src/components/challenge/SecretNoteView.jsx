@@ -61,6 +61,157 @@ const prepareQuestion = (q) => {
   return { mode: 'text', options: [], correctText: String(q.answer) };
 };
 
+// ── Parse a hint string into ordered steps ────────────────────────────────
+// Splits on blank lines, numbered prefixes (1. / Step 1:), or bullet chars.
+const parseHintSteps = (hint) => {
+  if (!hint) return [];
+  // Try numbered steps first: "1. foo\n2. bar"
+  const numbered = hint.split(/\n(?=\d+[\.\)]\s)/);
+  if (numbered.length > 1) return numbered.map((s) => s.replace(/^\d+[\.\)]\s*/, '').trim()).filter(Boolean);
+  // Try "Step N:" prefix
+  const stepped = hint.split(/\n(?=Step\s+\d+\s*[:–-])/i);
+  if (stepped.length > 1) return stepped.map((s) => s.replace(/^Step\s+\d+\s*[:–-]\s*/i, '').trim()).filter(Boolean);
+  // Blank-line paragraphs
+  const paras = hint.split(/\n{2,}/);
+  if (paras.length > 1) return paras.map((s) => s.trim()).filter(Boolean);
+  // Single newlines
+  const lines = hint.split(/\n/).map((s) => s.trim()).filter(Boolean);
+  if (lines.length > 1) return lines;
+  // Single block
+  return [hint.trim()];
+};
+
+// ── Step-by-step hint panel ───────────────────────────────────────────────
+const StepwiseHint = ({ hint, accent }) => {
+  const steps = useMemo(() => parseHintSteps(hint), [hint]);
+  const [revealed, setRevealed] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  // Reset when hint changes (new question)
+  useEffect(() => { setRevealed(0); setOpen(false); }, [hint]);
+
+  const hasHint = steps.length > 0;
+
+  if (!hasHint) {
+    return (
+      <div style={{
+        display: 'flex', alignItems: 'center', gap: '8px',
+        padding: '12px 16px', borderRadius: '14px',
+        background: '#f8fafc', border: '1.5px dashed #e2e8f0',
+        color: '#94a3b8', fontSize: '0.84rem', fontWeight: 700,
+      }}>
+        <Lightbulb size={15} style={{ opacity: 0.4 }} />
+        No hint provided for this question
+      </div>
+    );
+  }
+
+  const accentColor = accent?.from || '#a78bfa';
+  const accentSoft = accent?.soft || '#ede9fe';
+  const accentText = accent?.text || '#6d28d9';
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+      {/* Toggle button */}
+      {!open ? (
+        <button
+          onClick={() => { setOpen(true); setRevealed(1); }}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '8px',
+            padding: '11px 16px', borderRadius: '14px', border: 'none',
+            background: accentSoft, color: accentText,
+            fontSize: '0.86rem', fontWeight: 800, cursor: 'pointer', width: '100%',
+            justifyContent: 'center',
+          }}
+        >
+          <Lightbulb size={15} />
+          Show hint {steps.length > 1 ? `(${steps.length} steps)` : ''}
+        </button>
+      ) : (
+        <div style={{
+          background: '#fffbeb', border: '1px solid #fef3c7',
+          borderRadius: '16px', padding: '14px 16px',
+          display: 'flex', flexDirection: 'column', gap: '10px',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '2px' }}>
+            <Lightbulb size={14} style={{ color: '#d97706', flexShrink: 0 }} />
+            <span style={{ fontSize: '0.68rem', fontWeight: 900, color: '#d97706', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              Hint {steps.length > 1 ? `· Step ${revealed} of ${steps.length}` : ''}
+            </span>
+            {/* Step dots */}
+            {steps.length > 1 && (
+              <div style={{ display: 'flex', gap: '4px', marginLeft: 'auto' }}>
+                {steps.map((_, i) => (
+                  <div key={i} style={{
+                    width: '8px', height: '8px', borderRadius: '50%',
+                    background: i < revealed ? '#d97706' : '#fde68a',
+                    transition: 'background 0.2s',
+                  }} />
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Revealed steps */}
+          <AnimatePresence initial={false}>
+            {steps.slice(0, revealed).map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+                style={{
+                  padding: '10px 13px', borderRadius: '12px',
+                  background: i === revealed - 1 ? '#fff' : 'rgba(255,255,255,0.6)',
+                  border: i === revealed - 1 ? '1px solid #fde68a' : '1px solid transparent',
+                  display: 'flex', gap: '10px', alignItems: 'flex-start',
+                }}
+              >
+                {steps.length > 1 && (
+                  <div style={{
+                    width: '22px', height: '22px', borderRadius: '50%', flexShrink: 0,
+                    background: '#fde68a', color: '#92400e',
+                    display: 'grid', placeItems: 'center',
+                    fontSize: '0.7rem', fontWeight: 900,
+                  }}>
+                    {i + 1}
+                  </div>
+                )}
+                <MathView content={step} style={{ fontSize: '0.9rem', color: '#92400e', fontWeight: 600, lineHeight: 1.6, flex: 1 }} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+
+          {/* Next hint step button */}
+          {revealed < steps.length ? (
+            <button
+              onClick={() => setRevealed((r) => r + 1)}
+              style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
+                padding: '10px', borderRadius: '11px', border: 'none',
+                background: '#fef3c7', color: '#d97706',
+                fontSize: '0.84rem', fontWeight: 800, cursor: 'pointer',
+              }}
+            >
+              <Lightbulb size={13} />
+              {steps.length > 1 ? `Next hint (${revealed}/${steps.length})` : 'Show hint'}
+            </button>
+          ) : (
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: '6px',
+              padding: '8px 12px', borderRadius: '10px',
+              background: '#fff7ed', color: '#d97706',
+              fontSize: '0.78rem', fontWeight: 800,
+            }}>
+              <CheckCircle2 size={13} /> All hints shown
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
 // ── Worked solution step-by-step viewer ───────────────────────────────────
 const WorkedSolution = ({ question }) => {
   const steps = question?.solutionSteps;
@@ -454,10 +605,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
           style={{ fontSize: '1.2rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6 }}
         />
 
-        {activeQ?.hint && !isFeedback && (
-          <div className="sn__hint">
-            <Lightbulb size={15} /> <MathView content={activeQ.hint} style={{ display: 'inline' }} />
-          </div>
+        {/* Step-by-step hint — always shown (not hidden in feedback) */}
+        {!isFeedback && (
+          <StepwiseHint hint={activeQ?.hint} accent={accent} />
         )}
 
         {/* Answer inputs */}
