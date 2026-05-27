@@ -54,7 +54,6 @@ const Library = () => {
   const [linkCategory, setLinkCategory] = useState('General');
   const [linkDescription, setLinkDescription] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [loadedPreviews, setLoadedPreviews] = useState({});
   const isPointerFine = useRef(typeof window !== 'undefined' && window.matchMedia('(pointer:fine)').matches).current;
 
   useEffect(() => {
@@ -215,33 +214,16 @@ const Library = () => {
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = ''; }}
               >
                 {/* Preview area */}
-                <div
-                  style={{ position: 'relative', height: '180px', background: '#f8fafc', overflow: 'hidden', cursor: previewUrl && !loadedPreviews[m.id] ? 'pointer' : 'default' }}
-                  onClick={() => previewUrl && !loadedPreviews[m.id] && setLoadedPreviews(prev => ({ ...prev, [m.id]: true }))}
+                <a
+                  href={m.url} target="_blank" rel="noopener noreferrer"
+                  style={{ position: 'relative', height: '180px', background: '#f8fafc', overflow: 'hidden', display: 'block', textDecoration: 'none' }}
                 >
-                  {previewUrl ? (
-                    loadedPreviews[m.id] ? (
-                      <iframe
-                        src={previewUrl}
-                        style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none', touchAction: 'none' }}
-                        title="Drive Preview"
-                        sandbox="allow-scripts allow-same-origin"
-                      />
-                    ) : (
-                      <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(224,231,255,0.6), rgba(243,232,255,0.8))', gap: '8px' }}>
-                        <div className="page-list__icon" style={{ width: '56px', height: '56px', borderRadius: '18px' }}>
-                          <Link2 size={24} />
-                        </div>
-                        <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#7c3aed', opacity: 0.7 }}>클릭하여 미리보기</span>
-                      </div>
-                    )
-                  ) : (
-                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(224,231,255,0.6), rgba(243,232,255,0.8))' }}>
-                      <div className="page-list__icon" style={{ width: '56px', height: '56px', borderRadius: '18px' }}>
-                        <Link2 size={24} />
-                      </div>
+                  <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(224,231,255,0.6), rgba(243,232,255,0.8))', gap: '10px' }}>
+                    <div className="page-list__icon" style={{ width: '56px', height: '56px', borderRadius: '18px' }}>
+                      {previewUrl ? <Link2 size={24} /> : <Link2 size={24} />}
                     </div>
-                  )}
+                    <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#7c3aed', opacity: 0.8 }}>탭하여 열기</span>
+                  </div>
                   
                   <div style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '0.6rem', fontWeight: 900, background: 'white', color: '#7c3aed', padding: '3px 8px', borderRadius: '6px', boxShadow: '0 2px 6px rgba(0,0,0,0.08)', letterSpacing: '0.05em', zIndex: 10 }}>
                     {previewUrl ? 'DOC' : 'LINK'}
@@ -249,27 +231,25 @@ const Library = () => {
                   
                   {isAdmin && (
                     <button
-                      onClick={() => handleDelete(m.id)}
+                      onClick={(e) => { e.preventDefault(); handleDelete(m.id); }}
                       style={{ position: 'absolute', top: '10px', left: '10px', width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(255,255,255,0.9)', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#ef4444', zIndex: 10 }}
                     >
                       <Trash2 size={12} />
                     </button>
                   )}
                   
-                  {/* Hover overlay — desktop only (pointer:fine). On touch devices
-                      a full-inset transparent element captures taps and blocks
-                      the bottom nav bar, so we skip it entirely on mobile. */}
-                  <a
-                    href={m.url} target="_blank" rel="noopener noreferrer"
-                    style={{ position: 'absolute', inset: 0, background: 'rgba(109,40,217,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, transition: 'opacity 0.2s', textDecoration: 'none', zIndex: 20, pointerEvents: isPointerFine ? 'auto' : 'none' }}
-                    onMouseEnter={e => e.currentTarget.style.opacity = '1'}
-                    onMouseLeave={e => e.currentTarget.style.opacity = '0'}
-                  >
-                    <div style={{ background: 'white', color: '#6d28d9', padding: '8px 18px', borderRadius: '12px', fontWeight: 800, fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      View Resource <ExternalLink size={12} />
+                  {/* Hover overlay — desktop only */}
+                  {isPointerFine && (
+                    <div
+                      style={{ position: 'absolute', inset: 0, background: 'rgba(109,40,217,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, transition: 'opacity 0.2s', zIndex: 20, pointerEvents: 'none' }}
+                      className="preview-hover-overlay"
+                    >
+                      <div style={{ background: 'white', color: '#6d28d9', padding: '8px 18px', borderRadius: '12px', fontWeight: 800, fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        View Resource <ExternalLink size={12} />
+                      </div>
                     </div>
-                  </a>
-                </div>
+                  )}
+                </a>
 
                 {/* Card details */}
                 <div style={{ padding: '16px' }}>
