@@ -167,15 +167,30 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     setQuestionStartTime(Date.now());
   }, [idx, q?.id]);
 
-  // Countdown timer
+  // Countdown timer — ref tracks whether feedback is showing to prevent
+  // stale-closure double-fire after the timer hits zero.
+  const showFeedbackRef = useRef(showFeedback);
+  useEffect(() => { showFeedbackRef.current = showFeedback; }, [showFeedback]);
+
   useEffect(() => {
     if (!questionStartTime || showFeedback) return;
     const limit = (q?.timeLimit || 120) * 1000;
     const endTime = questionStartTime + limit;
     const timer = setInterval(() => {
+      if (showFeedbackRef.current) { clearInterval(timer); return; }
       const remaining = Math.max(0, Math.ceil((endTime - Date.now()) / 1000));
       setTimeLeft(remaining);
-      if (remaining <= 0) clearInterval(timer);
+      if (remaining <= 0) {
+        clearInterval(timer);
+        // Auto-submit with empty answer so the session advances
+        if (!showFeedbackRef.current) {
+          setAnswers((prev) => {
+            const userAnswer = '';
+            return [...prev, { userAnswer, correct: false, questionId: q?.id, topicId: q?.topicId, topicTitle: q?.topicTitle, timedOut: true }];
+          });
+          setShowFeedback(true);
+        }
+      }
     }, 200);
     return () => clearInterval(timer);
   }, [questionStartTime, showFeedback, q?.timeLimit, q?.id]);
@@ -238,8 +253,8 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         </button>
         <div style={{
           display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800,
-          color: timeLeft <= 10 ? '#e11d48' : timeLeft <= 30 ? '#d97706' : '#64748b',
-          background: timeLeft <= 10 ? '#fff1f2' : timeLeft <= 30 ? '#fffbeb' : '#fff',
+          color: timeLeft <= 10 ? '#f43f5e' : timeLeft <= 30 ? '#f97316' : '#64748b',
+          background: timeLeft <= 10 ? '#fff1f2' : timeLeft <= 30 ? '#fff7ed' : '#fff',
           padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
           transition: 'background 0.3s, color 0.3s',
           minWidth: '70px', justifyContent: 'center',
@@ -250,9 +265,30 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </div>
   );
 
+  const timeLimit = q?.timeLimit || 120;
+  const timerPct = Math.min(100, (timeLeft / timeLimit) * 100);
+  const timerBarColor = timeLeft <= 10 ? '#f43f5e' : timeLeft <= 30 ? '#f97316' : '#6366f1';
+  const timerGlow = timeLeft <= 10 ? 'rgba(244,63,94,0.35)' : timeLeft <= 30 ? 'rgba(249,115,22,0.25)' : 'transparent';
+
   const progressBar = (
-    <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
-      <div style={{ height: '100%', width: `${((idx + (showFeedback ? 1 : 0)) / total) * 100}%`, background: '#7c3aed', transition: 'width 0.3s' }} />
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+      {/* Question progress */}
+      <div style={{ width: '100%', height: '3px', background: '#e2e8f0', borderRadius: '999px', overflow: 'hidden' }}>
+        <div style={{ height: '100%', width: `${((idx + (showFeedback ? 1 : 0)) / total) * 100}%`, background: '#a78bfa', borderRadius: '999px', transition: 'width 0.3s' }} />
+      </div>
+      {/* Timer bar */}
+      <div style={{ width: '100%', height: '5px', background: '#e2e8f0', borderRadius: '999px', overflow: 'visible' }}>
+        <motion.div
+          initial={false}
+          animate={{ width: `${timerPct}%`, backgroundColor: timerBarColor }}
+          transition={{ duration: 0.2 }}
+          style={{
+            height: '100%', borderRadius: '999px',
+            boxShadow: timeLeft <= 30 ? `0 0 8px 2px ${timerGlow}` : 'none',
+            transition: 'box-shadow 0.3s',
+          }}
+        />
+      </div>
     </div>
   );
 
