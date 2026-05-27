@@ -8,6 +8,7 @@ import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import ChapterDetailView from './ChapterDetailView';
+import TopicPracticeSession from './TopicPracticeSession';
 import './learning-path.css';
 
 // Per-chapter XP is derived from its lesson count so the numbers are stable
@@ -21,6 +22,7 @@ const LearningPath = ({ profile }) => {
   const [progress, setProgress] = useState({});
   const [loading, setLoading] = useState(true);
   const [selectedChapter, setSelectedChapter] = useState(null); // { chapter, state }
+  const [selectedTopic, setSelectedTopic] = useState(null);    // { topic, chapter }
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -161,6 +163,21 @@ const LearningPath = ({ profile }) => {
 
   if (loading) return <div className="app-loading"><div className="app-spinner" /></div>;
 
+  // Show topic practice session
+  if (selectedTopic) {
+    return (
+      <AnimatePresence mode="wait">
+        <TopicPracticeSession
+          key={selectedTopic.topic.id}
+          topic={selectedTopic.topic}
+          chapter={selectedTopic.chapter}
+          profile={profile}
+          onBack={() => setSelectedTopic(null)}
+        />
+      </AnimatePresence>
+    );
+  }
+
   // Show chapter detail view
   if (selectedChapter) {
     return (
@@ -172,8 +189,7 @@ const LearningPath = ({ profile }) => {
           profile={profile}
           onBack={() => setSelectedChapter(null)}
           onStartTopic={(topic, chapter) => {
-            // TODO: navigate to topic quiz/lesson
-            console.log('Start topic:', topic, chapter);
+            setSelectedTopic({ topic, chapter });
           }}
         />
       </AnimatePresence>
