@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
 import MathView from '../MathView';
@@ -12,6 +12,139 @@ import {
   getOptionImage
 } from '../../utils/challengeUtils';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
+
+// ── Hint parser (mirrors SecretNoteView) ──────────────────────────────────
+const parseHintSteps = (hint) => {
+  if (!hint) return [];
+  const numbered = hint.split(/\n(?=\d+[\.\)]\s)/);
+  if (numbered.length > 1) return numbered.map((s) => s.replace(/^\d+[\.\)]\s*/, '').trim()).filter(Boolean);
+  const stepped = hint.split(/\n(?=Step\s+\d+\s*[:–-])/i);
+  if (stepped.length > 1) return stepped.map((s) => s.replace(/^Step\s+\d+\s*[:–-]\s*/i, '').trim()).filter(Boolean);
+  const paras = hint.split(/\n{2,}/);
+  if (paras.length > 1) return paras.map((s) => s.trim()).filter(Boolean);
+  const lines = hint.split(/\n/).map((s) => s.trim()).filter(Boolean);
+  if (lines.length > 1) return lines;
+  return hint.trim() ? [hint.trim()] : [];
+};
+
+// ── StepwiseHint component ────────────────────────────────────────────────
+const StepwiseHint = ({ hint, questionKey }) => {
+  const steps = useMemo(() => parseHintSteps(hint), [hint]);
+  const [revealed, setRevealed] = useState(0);
+  const [open, setOpen] = useState(false);
+  useEffect(() => { setRevealed(0); setOpen(false); }, [questionKey]);
+
+  if (!steps.length) {
+    return (
+      <div style={{
+        display: 'flex', alignItems: 'center', gap: '8px',
+        padding: '12px 16px', borderRadius: '14px',
+        background: '#f8fafc', border: '1.5px dashed #e2e8f0',
+        color: '#94a3b8', fontSize: '0.84rem', fontWeight: 700,
+      }}>
+        <Lightbulb size={15} style={{ opacity: 0.4 }} />
+        No hint provided for this question
+      </div>
+    );
+  }
+
+  if (!open) {
+    return (
+      <button
+        onClick={() => { setOpen(true); setRevealed(1); }}
+        style={{
+          display: 'inline-flex', alignItems: 'center', gap: '8px',
+          padding: '11px 16px', borderRadius: '14px', border: 'none',
+          background: '#fef3c7', color: '#b45309',
+          fontSize: '0.86rem', fontWeight: 800, cursor: 'pointer', width: '100%',
+          justifyContent: 'center',
+        }}
+      >
+        <Lightbulb size={15} />
+        Show hint{steps.length > 1 ? ` (${steps.length} steps)` : ''}
+      </button>
+    );
+  }
+
+  const allRevealed = revealed >= steps.length;
+
+  return (
+    <div style={{
+      background: '#fffbeb', border: '1px solid #fef3c7',
+      borderRadius: '16px', padding: '14px 16px',
+      display: 'flex', flexDirection: 'column', gap: '10px',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '7px', marginBottom: '2px' }}>
+        <Lightbulb size={14} style={{ color: '#d97706', flexShrink: 0 }} />
+        <span style={{ fontSize: '0.68rem', fontWeight: 900, color: '#d97706', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+          Hint{steps.length > 1 ? ` · Step ${Math.min(revealed, steps.length)} of ${steps.length}` : ''}
+        </span>
+        {steps.length > 1 && (
+          <div style={{ display: 'flex', gap: '4px', marginLeft: 'auto' }}>
+            {steps.map((_, i) => (
+              <div key={i} style={{
+                width: '8px', height: '8px', borderRadius: '50%',
+                background: i < revealed ? '#d97706' : '#fde68a',
+                transition: 'background 0.2s',
+              }} />
+            ))}
+          </div>
+        )}
+      </div>
+
+      <AnimatePresence initial={false}>
+        {steps.slice(0, revealed).map((step, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+            style={{
+              padding: '10px 13px', borderRadius: '12px',
+              background: i === revealed - 1 ? '#fff' : 'rgba(255,255,255,0.6)',
+              border: i === revealed - 1 ? '1px solid #fde68a' : '1px solid transparent',
+              display: 'flex', gap: '10px', alignItems: 'flex-start',
+            }}
+          >
+            {steps.length > 1 && (
+              <div style={{
+                width: '22px', height: '22px', borderRadius: '50%', flexShrink: 0,
+                background: '#fde68a', color: '#92400e',
+                display: 'grid', placeItems: 'center',
+                fontSize: '0.7rem', fontWeight: 900,
+              }}>{i + 1}</div>
+            )}
+            <MathView content={step} style={{ fontSize: '0.9rem', color: '#92400e', fontWeight: 600, lineHeight: 1.6, flex: 1 }} />
+          </motion.div>
+        ))}
+      </AnimatePresence>
+
+      {!allRevealed ? (
+        <button
+          onClick={() => setRevealed((r) => r + 1)}
+          style={{
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
+            padding: '10px', borderRadius: '11px', border: 'none',
+            background: '#fef3c7', color: '#d97706',
+            fontSize: '0.84rem', fontWeight: 800, cursor: 'pointer',
+          }}
+        >
+          <Lightbulb size={13} />
+          {steps.length > 1 ? `Next hint (${revealed}/${steps.length})` : 'Show hint'}
+        </button>
+      ) : (
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: '6px',
+          padding: '8px 12px', borderRadius: '10px',
+          background: '#fff7ed', color: '#d97706',
+          fontSize: '0.78rem', fontWeight: 800,
+        }}>
+          <CheckCircle2 size={13} /> All hints shown
+        </div>
+      )}
+    </div>
+  );
+};
 
 const ChallengeQuizView = ({
   step,
@@ -274,52 +407,17 @@ const ChallengeQuizView = ({
                   {currentQuestion?.year || CHALLENGE_YEAR} • {currentQuestion?.chapterTitle || CHALLENGE_BLUEPRINT?.title || 'Numbers'}
                 </span>
               )}
-              {currentQuestion?.hint && (
-                <button 
-                  onClick={() => setShowHint(!showHint)}
-                  style={{ 
-                    background: showHint ? '#fef3c7' : '#fff7ed', 
-                    border: 'none', 
-                    padding: '6px 12px', 
-                    borderRadius: '10px', 
-                    color: '#d97706', 
-                    fontSize: '0.75rem', 
-                    fontWeight: 800, 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: '6px', 
-                    cursor: 'pointer',
-                    transition: 'all 0.2s'
-                  }}
-                >
-                  <Lightbulb size={14} /> {showHint ? 'Hide Hint' : 'Show Hint'}
-                </button>
-              )}
             </div>
             <MathView
               content={currentQuestion?.question}
               graphData={currentQuestion?.graphData}
               style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
-            
-            <AnimatePresence>
-              {showHint && currentQuestion?.hint && (
-                <motion.div 
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  style={{ overflow: 'hidden' }}
-                >
-                  <div style={{ marginTop: '16px', padding: '16px', borderRadius: '16px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#d97706', marginBottom: '8px' }}>
-                      <Lightbulb size={16} />
-                      <span style={{ fontWeight: 800, textTransform: 'uppercase', fontSize: '0.7rem', letterSpacing: '0.05em' }}>Hint</span>
-                    </div>
-                    <MathView content={currentQuestion.hint} style={{ color: '#92400e', fontSize: '0.95rem', fontWeight: 600 }} />
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+
+            {/* Step-by-step hint — shown only while solving (hidden after feedback) */}
+            {!isFeedback && (
+              <StepwiseHint hint={currentQuestion?.hint} questionKey={`${currentIdx}-${currentQuestion?.id}`} />
+            )}
 
             {currentQuestion?.questionImage && (
               <img src={currentQuestion.questionImage} alt="Question" style={{ width: '100%', maxHeight: '200px', objectFit: 'contain', marginTop: '16px', borderRadius: '16px', background: '#f8fafc' }} />
