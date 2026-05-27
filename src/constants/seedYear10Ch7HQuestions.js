@@ -264,7 +264,7 @@ export const Y10_CH7H_QUESTIONS = [
       },
       {
         "explanation": "Substitute point (1, 10)",
-        "workingOut": "10 = a(1 - 2)(1 - 6) = a(-1)(-5) = 5a \\Rightarrow a = 2"
+        "workingOut": "10 = a(1 - 2)(1 - 6) = 5a \\Rightarrow a = 2"
       },
       {
         "explanation": "Expand",
@@ -290,15 +290,11 @@ export const Y10_CH7H_QUESTIONS = [
       },
       {
         "explanation": "Substitute y-intercept (0, 13)",
-        "workingOut": "13 = a(0 - 4)^2 - 3 = 16a - 3"
-      },
-      {
-        "explanation": "Solve for a",
-        "workingOut": "16 = 16a \\Rightarrow a = 1"
+        "workingOut": "13 = 16a - 3 \\Rightarrow a = 1"
       },
       {
         "explanation": "Expand",
-        "workingOut": "y = (x - 4)^2 - 3 = x^2 - 8x + 16 - 3 = x^2 - 8x + 13"
+        "workingOut": "y = x^2 - 8x + 13"
       }
     ],
     "hint": "",
@@ -320,15 +316,11 @@ export const Y10_CH7H_QUESTIONS = [
       },
       {
         "explanation": "Substitute point (1, -2)",
-        "workingOut": "-2 = a(1 - 3)^2 + 6 = 4a + 6"
-      },
-      {
-        "explanation": "Solve for a",
-        "workingOut": "-8 = 4a \\Rightarrow a = -2"
+        "workingOut": "-2 = 4a + 6 \\Rightarrow a = -2"
       },
       {
         "explanation": "Expand",
-        "workingOut": "y = -2(x^2 - 6x + 9) + 6 = -2x^2 + 12x - 12"
+        "workingOut": "y = -2x^2 + 12x - 12"
       }
     ],
     "hint": "",
@@ -403,23 +395,23 @@ export const Y10_CH7H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = x^2 - 4x + 3 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "Vertex: (2, -1), y-intercept: 3, x-intercepts: 1, 3",
-    "solution": "Vertex: (2, -1), y-intercept: 3, x-intercepts: 1, 3",
+    "a": "",
+    "solution": "Vertex: (2, -1), y-intercept: (0, 3), x-intercept(s): (1, 0), (3, 0), Axis of symmetry: x = 2",
     "solutionSteps": [
       {
-        "explanation": "Here is the sketch of the graph:",
+        "explanation": "Key features: Vertex (2, -1), x-intercept(s): 1, 3, y-intercept: (0, 3), Axis of symmetry: x = 2",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
             "width": 400,
             "height": 400,
             "boundingbox": [
-              -10,
-              20,
-              10,
-              -20
+              -2,
+              7,
+              7,
+              -4
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return x*x - 4*x + 3; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -1], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return x*x - 4*x + 3;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[2,0],[2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[2.3,0.5,'x = 2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[2,-1],{name:'V(2, -1)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,-16],fontsize:13}});\nboard.create('point',[0,3],{name:'(0, 3)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[1,0],{name:'(1, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[3,0],{name:'(3, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -434,23 +426,23 @@ export const Y10_CH7H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = -x^2 - 2x + 8 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "Vertex: (-1, 9), y-intercept: 8, x-intercepts: -4, 2",
-    "solution": "Vertex: (-1, 9), y-intercept: 8, x-intercepts: -4, 2",
+    "a": "",
+    "solution": "Vertex: (-1, 9), y-intercept: (0, 8), x-intercept(s): (-4, 0), (2, 0), Axis of symmetry: x = -1",
     "solutionSteps": [
       {
-        "explanation": "Here is the sketch of the graph:",
+        "explanation": "Key features: Vertex (-1, 9), x-intercept(s): -4, 2, y-intercept: (0, 8), Axis of symmetry: x = -1",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
             "width": 400,
             "height": 400,
             "boundingbox": [
-              -10,
-              20,
-              10,
-              -20
+              -7,
+              13,
+              5,
+              -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return -x*x - 2*x + 8; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return -x*x - 2*x + 8;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[-1,0],[-1,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[-0.7,3.6,'x = -1'],{color:'#dc2626',fontSize:13});\nboard.create('point',[-1,9],{name:'V(-1, 9)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,8],fontsize:13}});\nboard.create('point',[0,8],{name:'(0, 8)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-4,0],{name:'(-4, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[2,0],{name:'(2, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -465,23 +457,23 @@ export const Y10_CH7H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = 9 - x^2 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "Vertex: (0, 9), y-intercept: 9, x-intercepts: -3, 3",
-    "solution": "Vertex: (0, 9), y-intercept: 9, x-intercepts: -3, 3",
+    "a": "",
+    "solution": "Vertex: (0, 9), y-intercept: (0, 9), x-intercept(s): (-3, 0), (3, 0), Axis of symmetry: x = 0",
     "solutionSteps": [
       {
-        "explanation": "Here is the sketch of the graph:",
+        "explanation": "Key features: Vertex (0, 9), x-intercept(s): -3, 3, y-intercept: (0, 9), Axis of symmetry: x = 0",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
             "width": 400,
             "height": 400,
             "boundingbox": [
-              -10,
-              20,
-              10,
-              -20
+              -6,
+              13,
+              6,
+              -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return 9 - x*x; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return 9 - x*x;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[0,0],[0,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[0.3,3.6,'x = 0'],{color:'#dc2626',fontSize:13});\nboard.create('point',[0,9],{name:'V(0, 9)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,8],fontsize:13}});\nboard.create('point',[0,9],{name:'(0, 9)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-3,0],{name:'(-3, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[3,0],{name:'(3, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -496,23 +488,23 @@ export const Y10_CH7H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = (x + 2)^2 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "Vertex: (-2, 0), y-intercept: 4, x-intercepts: -2",
-    "solution": "Vertex: (-2, 0), y-intercept: 4, x-intercepts: -2",
+    "a": "",
+    "solution": "Vertex: (-2, 0), y-intercept: (0, 4), x-intercept(s): (-2, 0), Axis of symmetry: x = -2",
     "solutionSteps": [
       {
-        "explanation": "Here is the sketch of the graph:",
+        "explanation": "Key features: Vertex (-2, 0), x-intercept(s): -2, y-intercept: (0, 4), Axis of symmetry: x = -2",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
             "width": 400,
             "height": 400,
             "boundingbox": [
-              -10,
-              20,
-              10,
-              -20
+              -7,
+              12,
+              4,
+              -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return (x + 2)*(x + 2); };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 0], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return (x+2)*(x+2);};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[-2,0],[-2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[-1.7,1,'x = -2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[-2,0],{name:'V(-2, 0)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,-16],fontsize:13}});\nboard.create('point',[0,4],{name:'(0, 4)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-2,0],{name:'(-2, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -527,23 +519,23 @@ export const Y10_CH7H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = (x - 2)^2 - 9 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "Vertex: (2, -9), y-intercept: -5, x-intercepts: -1, 5",
-    "solution": "Vertex: (2, -9), y-intercept: -5, x-intercepts: -1, 5",
+    "a": "",
+    "solution": "Vertex: (2, -9), y-intercept: (0, -5), x-intercept(s): (-1, 0), (5, 0), Axis of symmetry: x = 2",
     "solutionSteps": [
       {
-        "explanation": "Here is the sketch of the graph:",
+        "explanation": "Key features: Vertex (2, -9), x-intercept(s): -1, 5, y-intercept: (0, -5), Axis of symmetry: x = 2",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
             "width": 400,
             "height": 400,
             "boundingbox": [
-              -10,
-              20,
-              10,
-              -20
+              -4,
+              6,
+              8,
+              -12
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return (x - 2)*(x - 2) - 9; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return (x-2)*(x-2) - 9;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[2,0],[2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[2.3,-3.5,'x = 2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[2,-9],{name:'V(2, -9)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-5],{name:'(0, -5)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-1,0],{name:'(-1, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[5,0],{name:'(5, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -558,23 +550,23 @@ export const Y10_CH7H_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = x^2 - 4 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "Vertex: (0, -4), y-intercept: -4, x-intercepts: -2, 2",
-    "solution": "Vertex: (0, -4), y-intercept: -4, x-intercepts: -2, 2",
+    "a": "",
+    "solution": "Vertex: (0, -4), y-intercept: (0, -4), x-intercept(s): (-2, 0), (2, 0), Axis of symmetry: x = 0",
     "solutionSteps": [
       {
-        "explanation": "Here is the sketch of the graph:",
+        "explanation": "Key features: Vertex (0, -4), x-intercept(s): -2, 2, y-intercept: (0, -4), Axis of symmetry: x = 0",
         "workingOut": "",
         "graphData": {
           "jsxGraph": {
             "width": 400,
             "height": 400,
             "boundingbox": [
-              -10,
-              20,
-              10,
-              -20
+              -5,
+              6,
+              5,
+              -7
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return x*x - 4; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -4], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return x*x - 4;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[0,0],[0,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[0.3,-1,'x = 0'],{color:'#dc2626',fontSize:13});\nboard.create('point',[0,-4],{name:'V(0, -4)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-4],{name:'(0, -4)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-2,0],{name:'(-2, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[2,0],{name:'(2, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -609,7 +601,7 @@ export const Y10_CH7H_QUESTIONS = [
           },
           {
             "explanation": "Complete the square",
-            "workingOut": "y = 2(x^2 - 2x + 1 - 1) - 6 = 2(x - 1)^2 - 2 - 6 = 2(x - 1)^2 - 8"
+            "workingOut": "y = 2(x - 1)^2 - 8"
           },
           {
             "explanation": "State vertex",
@@ -736,12 +728,12 @@ export const Y10_CH7H_QUESTIONS = [
         "solution": "",
         "solutionSteps": [
           {
-            "explanation": "Total timber = 4 vertical sides (length x) + 2 horizontal sides (length y)",
+            "explanation": "4 vertical sides + 2 horizontal sides",
             "workingOut": "4x + 2y = 32"
           },
           {
             "explanation": "Solve for y",
-            "workingOut": "2y = 32 - 4x \\Rightarrow y = 16 - 2x"
+            "workingOut": "y = 16 - 2x"
           }
         ],
         "graphData": null
@@ -749,12 +741,12 @@ export const Y10_CH7H_QUESTIONS = [
       {
         "id": "y10-7h-q8b",
         "type": "short_answer",
-        "question": "b) Let \\( A \\) m\\(^2\\) be the area of the garden. Write an equation for the area of the garden in terms of \\( x \\).",
+        "question": "b) Let \\( A \\) m\\(^2\\) be the area of the garden. Write an equation for \\( A \\) in terms of \\( x \\).",
         "a": "A = 16x - 2x^2",
         "solution": "",
         "solutionSteps": [
           {
-            "explanation": "Area = width \\(\\times\\) length",
+            "explanation": "Area = length × width",
             "workingOut": "A = x(16 - 2x) = 16x - 2x^2"
           }
         ],
@@ -763,16 +755,16 @@ export const Y10_CH7H_QUESTIONS = [
       {
         "id": "y10-7h-q8c",
         "type": "short_answer",
-        "question": "c) Find the length and width of the garden in order for the area to be a maximum.",
+        "question": "c) Find the length and width in order for the area to be a maximum.",
         "a": "length 8 m, width 4 m",
         "solution": "",
         "solutionSteps": [
           {
-            "explanation": "Complete the square to find max A",
-            "workingOut": "A = -2(x^2 - 8x) = -2(x^2 - 8x + 16) + 32 = -2(x - 4)^2 + 32"
+            "explanation": "Complete the square",
+            "workingOut": "A = -2(x - 4)^2 + 32"
           },
           {
-            "explanation": "Max area occurs when x = 4",
+            "explanation": "Max at x = 4",
             "workingOut": "\\text{Width } x = 4 \\text{ m}"
           },
           {
@@ -800,13 +792,13 @@ export const Y10_CH7H_QUESTIONS = [
       {
         "id": "y10-7h-q9a",
         "type": "short_answer",
-        "question": "a) By expressing the quadratic equation in the form \\( y = a(x - h)^2 + k \\), find the coordinates of the turning point.",
+        "question": "a) By expressing the equation in the form \\( y = a(x - h)^2 + k \\), find the turning point.",
         "a": "(-2, -9)",
         "solution": "",
         "solutionSteps": [
           {
             "explanation": "Complete the square",
-            "workingOut": "y = (x^2 + 4x + 4) - 4 - 5 = (x + 2)^2 - 9"
+            "workingOut": "y = (x + 2)^2 - 9"
           },
           {
             "explanation": "State turning point",
@@ -818,7 +810,7 @@ export const Y10_CH7H_QUESTIONS = [
       {
         "id": "y10-7h-q9b",
         "type": "short_answer",
-        "question": "b) Find the points of intersection with the axes of the graph.",
+        "question": "b) Find the points of intersection with the axes.",
         "a": "(0, -5), (-5, 0), (1, 0)",
         "solution": "",
         "solutionSteps": [
@@ -828,7 +820,7 @@ export const Y10_CH7H_QUESTIONS = [
           },
           {
             "explanation": "x-intercepts (y=0)",
-            "workingOut": "x^2 + 4x - 5 = 0 \\Rightarrow (x + 5)(x - 1) = 0 \\Rightarrow x = -5, 1 \\Rightarrow (-5, 0), (1, 0)"
+            "workingOut": "(x + 5)(x - 1) = 0 \\Rightarrow x = -5, 1"
           }
         ],
         "graphData": null
@@ -838,10 +830,10 @@ export const Y10_CH7H_QUESTIONS = [
         "type": "teacher_review",
         "question": "c) Sketch the graph, marking on your sketch the points found in a and b.",
         "a": "",
-        "solution": "Sketch showing vertex at (-2, -9) and intercepts at (0, -5), (-5, 0), (1, 0)",
+        "solution": "Sketch: vertex (-2, -9), x-intercepts (-5, 0) and (1, 0), y-intercept (0, -5), axis of symmetry x = -2",
         "solutionSteps": [
           {
-            "explanation": "Here is the sketch of the graph:",
+            "explanation": "Key features: Vertex (-2, -9), x-intercepts: (-5, 0) and (1, 0), y-intercept: (0, -5), Axis of symmetry: x = -2",
             "workingOut": "",
             "graphData": {
               "jsxGraph": {
@@ -849,11 +841,11 @@ export const Y10_CH7H_QUESTIONS = [
                 "height": 400,
                 "boundingbox": [
                   -8,
+                  6,
                   5,
-                  4,
-                  -12
+                  -13
                 ],
-                "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return x*x + 4*x - 5; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+                "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return x*x + 4*x - 5;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[-2,0],[-2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[-1.7,-3.5,'x = -2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[-2,-9],{name:'V(-2, -9)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-5],{name:'(0, -5)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-5,0],{name:'(-5, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[1,0],{name:'(1, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
               }
             }
           }
@@ -868,11 +860,7 @@ export const Y10_CH7H_QUESTIONS = [
         "solution": "",
         "solutionSteps": [
           {
-            "explanation": "From the graph or factorisation",
-            "workingOut": "The parabola is below or on the x-axis between the x-intercepts."
-          },
-          {
-            "explanation": "State inequality",
+            "explanation": "Parabola is below/on x-axis between the intercepts",
             "workingOut": "-5 \\le x \\le 1"
           }
         ],
@@ -898,10 +886,10 @@ export const Y10_CH7H_QUESTIONS = [
         "type": "teacher_review",
         "question": "a) Sketch the graph, labelling clearly the coordinates of the turning point and the points of intersection with the axes.",
         "a": "",
-        "solution": "Sketch showing vertex at (1, -8) and intercepts at (0, -6), (-1, 0), (3, 0)",
+        "solution": "Sketch: vertex (1, -8), x-intercepts (-1, 0) and (3, 0), y-intercept (0, -6), axis of symmetry x = 1",
         "solutionSteps": [
           {
-            "explanation": "Here is the sketch of the graph:",
+            "explanation": "Key features: Vertex (1, -8), x-intercepts: (-1, 0) and (3, 0), y-intercept: (0, -6), Axis of symmetry: x = 1",
             "workingOut": "",
             "graphData": {
               "jsxGraph": {
@@ -909,11 +897,11 @@ export const Y10_CH7H_QUESTIONS = [
                 "height": 400,
                 "boundingbox": [
                   -4,
-                  5,
                   6,
-                  -10
+                  7,
+                  -12
                 ],
-                "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return 2*x*x - 4*x - 6; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+                "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return 2*x*x - 4*x - 6;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[1,0],[1,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[1.3,-3,'x = 1'],{color:'#dc2626',fontSize:13});\nboard.create('point',[1,-8],{name:'V(1, -8)',size:5,color:'#dc2626',fixed:true,label:{offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-6],{name:'(0, -6)',size:4,color:'#2563eb',fixed:true,label:{offset:[10,0],fontsize:13}});\nboard.create('point',[-1,0],{name:'(-1, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.create('point',[3,0],{name:'(3, 0)',size:4,color:'#2563eb',fixed:true,label:{offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
               }
             }
           }
@@ -928,11 +916,7 @@ export const Y10_CH7H_QUESTIONS = [
         "solution": "",
         "solutionSteps": [
           {
-            "explanation": "From the graph",
-            "workingOut": "The parabola is strictly below the x-axis between the x-intercepts."
-          },
-          {
-            "explanation": "State inequality",
+            "explanation": "Parabola is strictly below x-axis between the intercepts",
             "workingOut": "-1 < x < 3"
           }
         ],
@@ -950,16 +934,12 @@ export const Y10_CH7H_QUESTIONS = [
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Rearrange inequality",
+        "explanation": "Rearrange",
         "workingOut": "x^2 + 2x - 15 < 0"
       },
       {
         "explanation": "Factorise",
         "workingOut": "(x + 5)(x - 3) < 0"
-      },
-      {
-        "explanation": "Determine region",
-        "workingOut": "Between the roots -5 and 3"
       },
       {
         "explanation": "State solution",
@@ -980,16 +960,12 @@ export const Y10_CH7H_QUESTIONS = [
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Rearrange inequality",
+        "explanation": "Rearrange",
         "workingOut": "x^2 + 4x + 3 \\ge 0"
       },
       {
         "explanation": "Factorise",
         "workingOut": "(x + 3)(x + 1) \\ge 0"
-      },
-      {
-        "explanation": "Determine region",
-        "workingOut": "Outside the roots -3 and -1"
       },
       {
         "explanation": "State solution",
@@ -1016,10 +992,6 @@ export const Y10_CH7H_QUESTIONS = [
       {
         "explanation": "Factorise",
         "workingOut": "(x - 6)(x + 4) \\ge 0"
-      },
-      {
-        "explanation": "Determine region",
-        "workingOut": "Outside the roots -4 and 6"
       },
       {
         "explanation": "State solution",
