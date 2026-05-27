@@ -287,22 +287,62 @@ const QuizView = ({ questions, onFinish, onReport }) => {
 
   const questionCard = (
     <div style={{ background: '#fff', padding: '24px', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-        <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+        <span style={{ fontSize: '0.68rem', fontWeight: 900, background: '#e0e7ff', color: '#4f46e5', padding: '5px 11px', borderRadius: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
           {q.topicTitle || q.chapterTitle}
         </span>
         {q.hint && (
-          <button onClick={() => setShowHint((v) => !v)} style={{ background: showHint ? '#fef3c7' : '#fff7ed', border: 'none', padding: '6px 12px', borderRadius: '10px', color: '#d97706', fontSize: '0.75rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
-            <Lightbulb size={14} /> {showHint ? 'Hide Hint' : 'Show Hint'}
+          <button
+            onClick={() => setShowHint((v) => !v)}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '7px',
+              padding: '7px 14px', borderRadius: '20px', border: 'none', cursor: 'pointer',
+              background: showHint
+                ? 'linear-gradient(135deg, #fbbf24, #f59e0b)'
+                : 'rgba(251,191,36,0.1)',
+              color: showHint ? '#fff' : '#d97706',
+              fontSize: '0.78rem', fontWeight: 800,
+              boxShadow: showHint ? '0 4px 12px rgba(245,158,11,0.28)' : 'none',
+              transition: 'all 0.2s',
+            }}
+          >
+            <Lightbulb size={13} fill={showHint ? '#fff' : 'none'} />
+            {showHint ? 'Hide Hint' : 'Show Hint'}
           </button>
         )}
       </div>
-      <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
+      <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
       <AnimatePresence>
         {showHint && q.hint && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} style={{ overflow: 'hidden' }}>
-            <div style={{ marginTop: '14px', padding: '14px', borderRadius: '14px', background: '#fffbeb', border: '1px solid #fef3c7' }}>
-              <MathView content={q.hint} style={{ color: '#92400e', fontSize: '0.9rem', fontWeight: 600 }} />
+          <motion.div
+            initial={{ opacity: 0, height: 0, y: -4 }}
+            animate={{ opacity: 1, height: 'auto', y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -4 }}
+            style={{ overflow: 'hidden' }}
+          >
+            <div style={{
+              marginTop: '16px',
+              background: 'linear-gradient(135deg, #fffbeb, #fef9e7)',
+              border: '1px solid #fde68a',
+              borderLeft: '4px solid #f59e0b',
+              borderRadius: '14px',
+              padding: '14px 18px',
+              display: 'flex', gap: '12px', alignItems: 'flex-start',
+            }}>
+              <div style={{
+                width: '30px', height: '30px', borderRadius: '10px', flexShrink: 0,
+                background: 'linear-gradient(135deg, #fbbf24, #f59e0b)',
+                display: 'grid', placeItems: 'center',
+                boxShadow: '0 4px 10px rgba(245,158,11,0.3)',
+              }}>
+                <Lightbulb size={14} style={{ color: '#fff' }} fill="#fff" />
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: '0.62rem', fontWeight: 900, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>
+                  Hint
+                </div>
+                <MathView content={q.hint} style={{ color: '#78350f', fontSize: '0.95rem', fontWeight: 600, lineHeight: 1.65 }} />
+              </div>
             </div>
           </motion.div>
         )}
