@@ -70,6 +70,7 @@ import {
   formatHistoryDate,
   getOptions,
   getOptionText,
+  getChallengeBootMetaId,
 } from '../utils/challengeUtils';
 
 const DailyChallenge = ({ onBack, setIsLocked }) => {
