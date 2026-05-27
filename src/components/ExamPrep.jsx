@@ -134,7 +134,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const [focusedBlank, setFocusedBlank] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(null);
-  const [showCanvas, setShowCanvas] = useState(false);
+  const [showCanvas, setShowCanvas] = useState(true);
   const canvasRef = useRef(null);
   const examInputRef = useRef(null);
   const examFracDenRef = useRef(null);
@@ -243,13 +243,6 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
         >
           <Flag size={16} />
-        </button>
-        <button
-          onClick={() => setShowCanvas(v => !v)}
-          title="Toggle working out pad"
-          style={{ width: '36px', height: '36px', borderRadius: '12px', border: `1px solid ${showCanvas ? '#ddd6fe' : '#e2e8f0'}`, background: showCanvas ? '#f5f3ff' : '#fff', color: showCanvas ? '#7c3aed' : '#64748b', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
-        >
-          <PenLine size={16} />
         </button>
         <div style={{
           display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 800,
