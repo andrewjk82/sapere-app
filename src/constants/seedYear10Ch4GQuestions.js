@@ -1331,7 +1331,7 @@ export const Y10_CH4G_QUESTIONS = [
         "height": 300,
         "boundingbox": [
           -200,
-          55000,
+          65000,
           700,
           -15000
         ],
