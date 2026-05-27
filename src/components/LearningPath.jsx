@@ -224,19 +224,6 @@ const LearningPath = ({ profile }) => {
         </div>
       )}
 
-      {/* Header */}
-      <div style={{ marginBottom: '20px' }}>
-        <div style={{ fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.16em', color: '#8b5cf6', textTransform: 'uppercase' }}>
-          {year}{activeSubject === 'Maths' && course ? ` · ${course} Maths` : ` · ${activeSubject}`}
-        </div>
-        <h2 style={{ fontFamily: '"Outfit", sans-serif', fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', color: '#1e1b4b', margin: '4px 0 0' }}>
-          Your learning path
-        </h2>
-        <div style={{ color: '#6d6a85', marginTop: '6px', fontSize: '0.9rem', fontWeight: 600 }}>
-          {overview.total} chapters · {overview.xpAvailable.toLocaleString()} XP available this term
-        </div>
-      </div>
-
       {/* Overview pills */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '12px', marginBottom: '24px' }}>
         {pill('Term progress', `${overview.termPct}%`, `${overview.doneCount} of ${overview.total} chapters complete`, { lead: true, icon: <GraduationCap size={20} /> })}
