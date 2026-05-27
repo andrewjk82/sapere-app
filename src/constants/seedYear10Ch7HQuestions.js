@@ -418,7 +418,7 @@ export const Y10_CH7H_QUESTIONS = [
           10,
           -20
         ],
-        "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) {\n  let eqStr = \"x^2 - 4x + 3\";\n  eqStr = eqStr.replace(/x\\^2/g, '(x*x)').replace(/([0-9]+)x/g, '$1*x');\n  return eval(eqStr);\n};\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -1], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();\n      "
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return x*x - 4*x + 3; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -1], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -443,7 +443,7 @@ export const Y10_CH7H_QUESTIONS = [
           10,
           -20
         ],
-        "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) {\n  let eqStr = \"-x^2 - 2x + 8\";\n  eqStr = eqStr.replace(/x\\^2/g, '(x*x)').replace(/([0-9]+)x/g, '$1*x');\n  return eval(eqStr);\n};\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();\n      "
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return -x*x - 2*x + 8; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -468,7 +468,7 @@ export const Y10_CH7H_QUESTIONS = [
           10,
           -20
         ],
-        "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) {\n  let eqStr = \"9 - x^2\";\n  eqStr = eqStr.replace(/x\\^2/g, '(x*x)').replace(/([0-9]+)x/g, '$1*x');\n  return eval(eqStr);\n};\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();\n      "
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return 9 - x*x; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -493,7 +493,7 @@ export const Y10_CH7H_QUESTIONS = [
           10,
           -20
         ],
-        "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) {\n  let eqStr = \"(x + 2)^2\";\n  eqStr = eqStr.replace(/x\\^2/g, '(x*x)').replace(/([0-9]+)x/g, '$1*x');\n  return eval(eqStr);\n};\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 0], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();\n      "
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return (x + 2)*(x + 2); };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 0], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -518,7 +518,7 @@ export const Y10_CH7H_QUESTIONS = [
           10,
           -20
         ],
-        "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) {\n  let eqStr = \"(x - 2)^2 - 9\";\n  eqStr = eqStr.replace(/x\\^2/g, '(x*x)').replace(/([0-9]+)x/g, '$1*x');\n  return eval(eqStr);\n};\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();\n      "
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return (x - 2)*(x - 2) - 9; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -9], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -543,7 +543,7 @@ export const Y10_CH7H_QUESTIONS = [
           10,
           -20
         ],
-        "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) {\n  let eqStr = \"x^2 - 4\";\n  eqStr = eqStr.replace(/x\\^2/g, '(x*x)').replace(/([0-9]+)x/g, '$1*x');\n  return eval(eqStr);\n};\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -4], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();\n      "
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return x*x - 4; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -4], {name: 'Vertex', label: {offset: [10, -10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -814,7 +814,7 @@ export const Y10_CH7H_QUESTIONS = [
               4,
               -12
             ],
-            "script": "board.suspendUpdate();\n      board.create('axis', [[0,0], [1,0]]);\n      board.create('axis', [[0,0], [0,1]]);\n      var f = function(x) { return x*x + 4*x - 5; };\n      board.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\n      board.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return x*x + 4*x - 5; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
           }
         }
       },
@@ -868,7 +868,7 @@ export const Y10_CH7H_QUESTIONS = [
               6,
               -10
             ],
-            "script": "board.suspendUpdate();\n      board.create('axis', [[0,0], [1,0]]);\n      board.create('axis', [[0,0], [0,1]]);\n      var f = function(x) { return 2*x*x - 4*x - 6; };\n      board.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\n      board.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nvar f = function(x) { return 2*x*x - 4*x - 6; };\nboard.create('functiongraph', [f], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
           }
         }
       },
