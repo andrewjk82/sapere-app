@@ -78,7 +78,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const { showToast } = useToast();
 
   // ── Quiz flow state ──
-  const [step, setStep] = useState('start');
+  const [step, setStep_] = useState('start');
+  const setStep = (s) => { stepRef.current = s; setStep_(s); };
   const [currentIdx, setCurrentIdx] = useState(0);
   const [questions, setQuestions] = useState([]);
   const [score, setScore] = useState(0);
@@ -132,6 +133,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   // Always-current ref so useAntiCheat never captures a stale finishQuiz closure
   const finishQuizRef = useRef(null);
   const handleAnswerRef = useRef(null);
+  const stepRef = useRef('idle'); // mirrors `step` so timer interval can read it without stale closure
   const sessionReviewCountRef = useRef(0);
   const sessionReportCountRef = useRef(0);
 
@@ -537,8 +539,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const endTime = questionStartTime + timeLimit;
 
     const timer = setInterval(() => {
-      // Skip if the question has already been answered (MC: both option + idx set)
-      if (selectedOptionRef.current !== null && selectedOptionIdxRef.current !== null) return;
+      // Skip if already in feedback/result (question answered or timer already fired)
+      if (stepRef.current !== 'quiz') { clearInterval(timer); return; }
+      // Skip if MC already answered (both text + idx set)
+      if (selectedOptionRef.current !== null && selectedOptionIdxRef.current !== null) { clearInterval(timer); return; }
       const now = Date.now();
       const remaining = Math.max(0, Math.ceil((endTime - now) / 1000));
 
@@ -546,7 +550,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
       if (remaining <= 0) {
         clearInterval(timer);
-        handleAnswerRef.current?.(null, null); // Time's up — use ref to avoid stale closure
+        if (stepRef.current === 'quiz') {
+          handleAnswerRef.current?.(null, null); // Time's up — use ref to avoid stale closure
+        }
       }
     }, 100); // Check more frequently for smooth UI
 
@@ -622,11 +628,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     let canvasDataUrl = null;
     let canvasPageImages = [];
 
+    // Helper: canvas export with a 4-second timeout so a hanging canvas never freezes the quiz
+    const canvasExportWithTimeout = (fn, ms = 4000) =>
+      Promise.race([fn(), new Promise((_, rej) => setTimeout(() => rej(new Error('canvas export timeout')), ms))]);
+
     // Capture canvas for graph_sketch always, or for any question if split screen is active (Senior Students)
     if (canvasRef.current && (isGraphSketch || (showSplitScreen && canvasRef.current?.hasContent?.()))) {
       try {
-        canvasPageImages = await canvasRef.current.exportPageImages?.() || [];
-        canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage();
+        canvasPageImages = await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportPageImages?.() || []));
+        canvasDataUrl = canvasPageImages[0] || await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportImage()));
       } catch (err) {
         console.error("Failed to export working out image", err);
       }
@@ -638,8 +648,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       // detection misses a stroke after recent traffic-saving changes.
       if (!canvasDataUrl && canvasRef.current) {
         try {
-          canvasPageImages = await canvasRef.current.exportPageImages?.({ force: true }) || [];
-          canvasDataUrl = canvasPageImages[0] || await canvasRef.current.exportImage?.({ force: true });
+          canvasPageImages = await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportPageImages?.({ force: true }) || []));
+          canvasDataUrl = canvasPageImages[0] || await canvasExportWithTimeout(() => Promise.resolve(canvasRef.current.exportImage?.({ force: true })));
         } catch (err) {
           console.error("Failed to export graph answer image", err);
         }

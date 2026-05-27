@@ -231,23 +231,40 @@ const ChallengeQuizView = ({
               <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {TOTAL_QUESTIONS}</div>
             </div>
             <div style={{ textAlign: 'right', display: 'flex', flexWrap: 'nowrap', alignItems: 'center', gap: '8px' }}>
-               <div style={{ fontSize: '0.9rem', fontWeight: 800, color: timeLeft < 10 ? '#f43f5e' : '#64748b', background: '#fff', padding: '8px 12px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+               <div style={{
+                 fontSize: '0.9rem', fontWeight: 800,
+                 color: timeLeft <= 5 ? '#f43f5e' : timeLeft <= 10 ? '#f97316' : '#64748b',
+                 background: timeLeft <= 5 ? '#fff1f2' : timeLeft <= 10 ? '#fff7ed' : '#fff',
+                 padding: '8px 12px', borderRadius: '12px',
+                 boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
+                 display: 'flex', alignItems: 'center', gap: '6px',
+                 transition: 'color 0.3s, background 0.3s',
+               }}>
                  <Clock size={16} /> {timeLeft}s
                </div>
             </div>
           </div>
 
           {/* Time Progress Bar */}
-          <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden', marginBottom: '8px' }}>
-            <motion.div 
-              initial={false}
-              animate={{ 
-                width: `${(timeLeft / (currentQuestion?.timeLimit || 30)) * 100}%`,
-                backgroundColor: timeLeft < 10 ? '#f43f5e' : '#6366f1'
-              }}
-              style={{ height: '100%' }}
-            />
-          </div>
+          {(() => {
+            const pct = (timeLeft / (currentQuestion?.timeLimit || 30)) * 100;
+            const barColor = timeLeft <= 5 ? '#f43f5e' : timeLeft <= 10 ? '#f97316' : '#6366f1';
+            const glowColor = timeLeft <= 5 ? 'rgba(244,63,94,0.35)' : timeLeft <= 10 ? 'rgba(249,115,22,0.25)' : 'transparent';
+            return (
+              <div style={{ width: '100%', height: '5px', background: '#e2e8f0', borderRadius: '999px', overflow: 'visible', marginBottom: '10px', position: 'relative' }}>
+                <motion.div
+                  initial={false}
+                  animate={{ width: `${pct}%`, backgroundColor: barColor }}
+                  transition={{ duration: 0.15 }}
+                  style={{
+                    height: '100%', borderRadius: '999px', position: 'relative',
+                    boxShadow: timeLeft <= 10 ? `0 0 8px 2px ${glowColor}` : 'none',
+                    transition: 'box-shadow 0.3s',
+                  }}
+                />
+              </div>
+            );
+          })()}
 
           {/* Question Card */}
           <div className="app-panel" style={{ padding: '32px', borderRadius: '32px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', position: 'relative' }}>
