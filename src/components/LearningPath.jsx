@@ -3,10 +3,11 @@ import { useState, useEffect, useMemo } from 'react';
 import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Zap, Trophy, BookOpen, GraduationCap } from 'lucide-react';
 import { db } from '../firebase/config';
 import { doc, getDoc, onSnapshot, collection, query, where, setDoc, serverTimestamp } from 'firebase/firestore';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
+import ChapterDetailView from './ChapterDetailView';
 import './learning-path.css';
 
 // Per-chapter XP is derived from its lesson count so the numbers are stable
@@ -19,6 +20,7 @@ const LearningPath = ({ profile }) => {
   const [curriculum, setCurriculum] = useState([]);
   const [progress, setProgress] = useState({});
   const [loading, setLoading] = useState(true);
+  const [selectedChapter, setSelectedChapter] = useState(null); // { chapter, state }
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -159,6 +161,25 @@ const LearningPath = ({ profile }) => {
 
   if (loading) return <div className="app-loading"><div className="app-spinner" /></div>;
 
+  // Show chapter detail view
+  if (selectedChapter) {
+    return (
+      <AnimatePresence mode="wait">
+        <ChapterDetailView
+          key={selectedChapter.chapter.id}
+          chapter={selectedChapter.chapter}
+          chapterState={selectedChapter.state}
+          profile={profile}
+          onBack={() => setSelectedChapter(null)}
+          onStartTopic={(topic, chapter) => {
+            // TODO: navigate to topic quiz/lesson
+            console.log('Start topic:', topic, chapter);
+          }}
+        />
+      </AnimatePresence>
+    );
+  }
+
   const STATE = {
     done:    { label: 'Mastered',    accent: '#10b981', soft: '#ecfdf5', border: '#a7f3d0', cta: 'Review',   Icon: CheckCircle2, CtaIcon: RotateCcw },
     current: { label: 'In progress', accent: '#7c3aed', soft: '#f5f3ff', border: '#ddd6fe', cta: 'Continue', Icon: BookMarked,   CtaIcon: Play },
@@ -274,6 +295,7 @@ const LearningPath = ({ profile }) => {
                   </div>
                   <button
                     disabled={n.state === 'locked'}
+                    onClick={() => n.state !== 'locked' && setSelectedChapter({ chapter: n, state: n.state })}
                     style={{
                       flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: '6px',
                       padding: '9px 14px', borderRadius: '12px', border: 'none',
