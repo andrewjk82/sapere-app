@@ -80,6 +80,7 @@ import { Y7_CH23I_QUESTIONS } from '../constants/seedYear7Ch23IQuestions.js';
 import { Y7_CH23J_QUESTIONS } from '../constants/seedYear7Ch23JQuestions.js';
 import { Y10_CH1F_QUESTIONS } from '../constants/seedYear10Ch1FQuestions.js';
 import { Y10_CH2F_QUESTIONS } from '../constants/seedYear10Ch2FQuestions.js';
+import { Y10_CH3J_QUESTIONS } from '../constants/seedYear10Ch3JQuestions.js';
 import { Y10_CH5A_QUESTIONS } from '../constants/seedYear10Ch5AQuestions.js';
 import { Y10_CH6_QUESTIONS } from '../constants/seedYear10Ch6Questions.js';
 import { Y10_CH7A_QUESTIONS } from '../constants/seedYear10Ch7AQuestions.js';
@@ -99,6 +100,7 @@ import { seedChapterQuestions } from '../services/chapterSeeder';
 const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1f', topicCode: '1F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH1F_QUESTIONS, label: 'Y10 Ch1 · 1F Revision' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
   { chapterId: 'y10-7', chapterTitle: 'Chapter 7: The parabola', topicId: 'y10-7a', topicCode: '7A', topicTitle: 'Parabolas congruent to y = x^2', year: 'Year 10', seed: Y10_CH7A_QUESTIONS, label: 'Y10 Ch7A · Parabolas' },
   { chapterId: 'y10-8', chapterTitle: 'Chapter 8: Review of geometry', topicId: 'y10-8a', topicCode: '8A', topicTitle: 'Review of triangles', year: 'Year 10', seed: Y10_CH8A_QUESTIONS, label: 'Y10 Ch8 · Review of triangles' },
   { chapterId: 'y10-9', chapterTitle: 'Chapter 9: Indices, Exponentials and Logarithms', topicId: 'y10-9a', topicCode: '9A', topicTitle: 'Review of powers and integer indices', year: 'Year 10', seed: Y10_CH9_QUESTIONS, label: 'Y10 Ch9 · 9A Review of powers and integer indices' },

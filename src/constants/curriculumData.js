@@ -1893,7 +1893,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-3f', code: '3F', title: 'Monic quadratics and grouping' },
         { id: 'y10-3g', code: '3G', title: 'Non-monic quadratics' },
         { id: 'y10-3h', code: '3H', title: 'An introduction to algebraic fractions' },
-        { id: 'y10-3i', code: '3I', title: 'Further algebraic fractions' }
+        { id: 'y10-3i', code: '3I', title: 'Further algebraic fractions' },
+        { id: 'y10-3j', code: '3J', title: 'Revision' }
       ]
     },
     {
