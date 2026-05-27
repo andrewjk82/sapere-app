@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, XCircle, Zap, BookOpen,
-  Play, RotateCcw, Trophy,
+  ChevronRight, Play, RotateCcw, Trophy,
   Lightbulb, Check, X,
 } from 'lucide-react';
 import { db } from '../firebase/config';
