@@ -1921,7 +1921,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-5c', code: '5C', title: 'Applications of quadratic equations' },
         { id: 'y10-5d', code: '5D', title: 'Perfect squares and completing the square' },
         { id: 'y10-5e', code: '5E', title: 'Solving quadratic equations by completing the square' },
-        { id: 'y10-5f', code: '5F', title: 'The quadratic formula' }
+        { id: 'y10-5f', code: '5F', title: 'The quadratic formula' },
+        { id: 'y10-5g', code: '5G', title: 'Revision' }
       ]
     },
     {
