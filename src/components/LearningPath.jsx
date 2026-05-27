@@ -190,16 +190,15 @@ const LearningPath = ({ profile }) => {
   // ── Overview pill ──────────────────────────────────────────────────────
   const pill = (label, value, sub, { lead = false, icon = null } = {}) => (
     <div style={{
-      padding: 'clamp(12px, 2vw, 18px) clamp(12px, 2vw, 20px)',
-      borderRadius: '20px', position: 'relative', overflow: 'hidden', minWidth: 0,
-      background: lead ? 'linear-gradient(135deg, #1e1b4b, #312e81)' : 'rgba(255,255,255,0.92)',
+      padding: '18px 20px', borderRadius: '20px', position: 'relative', overflow: 'hidden', minWidth: 0,
+      background: lead ? 'linear-gradient(135deg, #1e1b4b, #312e81)' : 'rgba(255,255,255,0.9)',
       border: lead ? 'none' : '1px solid rgba(167,139,250,0.18)',
       boxShadow: lead ? '0 18px 40px rgba(30,27,75,0.25)' : '0 8px 24px rgba(91,33,182,0.05)',
     }}>
-      {icon && <div style={{ position: 'absolute', right: 'clamp(10px, 1.5vw, 14px)', top: 'clamp(10px, 1.5vw, 14px)', color: lead ? 'rgba(245,208,254,0.55)' : 'rgba(139,92,246,0.32)' }}>{icon}</div>}
-      <div style={{ fontSize: 'clamp(0.55rem, 1vw, 0.64rem)', fontWeight: 900, letterSpacing: '0.10em', textTransform: 'uppercase', color: lead ? 'rgba(255,255,255,0.7)' : '#8b7aa7' }}>{label}</div>
-      <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: 'clamp(1.3rem, 3.5vw, 1.85rem)', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: lead ? '#fff' : '#1e1b4b' }}>{value}</div>
-      <div style={{ fontSize: 'clamp(0.65rem, 1.2vw, 0.78rem)', fontWeight: 600, marginTop: '5px', color: lead ? 'rgba(255,255,255,0.8)' : '#6d6a85' }}>{sub}</div>
+      {icon && <div style={{ position: 'absolute', right: '16px', top: '14px', color: lead ? 'rgba(245,208,254,0.55)' : 'rgba(139,92,246,0.32)' }}>{icon}</div>}
+      <div style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: lead ? 'rgba(255,255,255,0.7)' : '#8b7aa7' }}>{label}</div>
+      <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: '2rem', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: lead ? '#fff' : '#1e1b4b' }}>{value}</div>
+      <div style={{ fontSize: '0.8rem', fontWeight: 700, marginTop: '6px', color: lead ? 'rgba(255,255,255,0.8)' : '#6d6a85' }}>{sub}</div>
     </div>
   );
 
@@ -226,7 +225,7 @@ const LearningPath = ({ profile }) => {
       )}
 
       {/* Overview pills */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 'clamp(6px, 1.5vw, 12px)', marginBottom: '24px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '14px', marginBottom: '22px' }}>
         {pill('Term progress', `${overview.termPct}%`, `${overview.doneCount} of ${overview.total} chapters complete`, { lead: true, icon: <GraduationCap size={20} /> })}
         {pill('XP earned', overview.xpEarned.toLocaleString(), `of ${overview.xpAvailable.toLocaleString()} available`, { icon: <Zap size={18} /> })}
         {pill('Lessons', overview.totalLessons, `across ${overview.total} chapters`, { icon: <BookOpen size={18} /> })}
