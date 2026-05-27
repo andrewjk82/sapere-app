@@ -1987,69 +1987,12 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
               ) : null}
 
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <label style={{ fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Hint (Optional, LaTeX supported)</label>
-                  <div style={{ display: 'flex', gap: '6px' }}>
-                    <button
-                      type="button"
-                      onClick={() => setFormData(prev => ({ ...prev, hint: '1. \n2. \n3. ' }))}
-                      style={{ padding: '4px 10px', borderRadius: '8px', border: '1px solid #fde68a', background: '#fffbeb', color: '#b45309', fontSize: '0.7rem', fontWeight: 800, cursor: 'pointer' }}
-                    >
-                      + Numbered steps
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setFormData(prev => ({ ...prev, hint: 'Step 1: \nStep 2: \nStep 3: ' }))}
-                      style={{ padding: '4px 10px', borderRadius: '8px', border: '1px solid #fde68a', background: '#fffbeb', color: '#b45309', fontSize: '0.7rem', fontWeight: 800, cursor: 'pointer' }}
-                    >
-                      + Step format
-                    </button>
-                  </div>
+                <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Hint (Optional, LaTeX supported)</label>
+                <textarea rows={2} value={formData.hint} onChange={e => setFormData({...formData, hint: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical' }} placeholder="Provide a hint for the student..." />
+                <div style={{ marginTop: '12px' }}>
+                  <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>HINT PREVIEW:</span>
+                  <MathPreview content={formData.hint} />
                 </div>
-
-                {/* Hint writing guide */}
-                <div style={{ marginBottom: '10px', padding: '12px 14px', borderRadius: '12px', background: 'linear-gradient(135deg, #fffbeb, #fef9e7)', border: '1px solid #fde68a', borderLeft: '3px solid #f59e0b' }}>
-                  <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#b45309', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    💡 Step-by-step hint format
-                  </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                    {[
-                      { label: 'Numbered', example: '1. Identify the formula\n2. Substitute values\n3. Simplify' },
-                      { label: '"Step N:" prefix', example: 'Step 1: Find the derivative\nStep 2: Set equal to zero' },
-                      { label: 'Blank line paragraphs', example: 'First think about...\n\nThen apply...' },
-                      { label: 'Single hint', example: 'Use the quadratic formula.' },
-                    ].map((f) => (
-                      <div key={f.label} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#92400e', minWidth: '110px' }}>{f.label}</span>
-                        <code style={{ fontSize: '0.66rem', color: '#78350f', background: 'rgba(255,255,255,0.7)', padding: '2px 7px', borderRadius: '6px', fontFamily: 'monospace', whiteSpace: 'pre', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis' }}>{f.example.replace(/\n/g, ' ↵ ')}</code>
-                        <button
-                          type="button"
-                          onClick={() => setFormData(prev => ({ ...prev, hint: f.example }))}
-                          style={{ padding: '2px 8px', borderRadius: '6px', border: 'none', background: '#f59e0b', color: '#fff', fontSize: '0.62rem', fontWeight: 800, cursor: 'pointer', flexShrink: 0 }}
-                        >
-                          Use
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                  <div style={{ marginTop: '8px', fontSize: '0.68rem', color: '#92400e', fontWeight: 600 }}>
-                    Each line / paragraph becomes a separate hint step revealed one at a time.
-                  </div>
-                </div>
-
-                <textarea
-                  rows={4}
-                  value={formData.hint}
-                  onChange={e => setFormData({...formData, hint: e.target.value})}
-                  style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #fde68a', outline: 'none', fontWeight: 600, fontSize: '0.95rem', resize: 'vertical', background: '#fffbeb', fontFamily: 'monospace' }}
-                  placeholder={'1. First hint step...\n2. Second hint step...\n3. Final nudge...'}
-                />
-                {formData.hint && (
-                  <div style={{ marginTop: '12px' }}>
-                    <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>HINT PREVIEW:</span>
-                    <MathPreview content={formData.hint} />
-                  </div>
-                )}
               </div>
 
               {formData.subQuestions.length === 0 && <div>
