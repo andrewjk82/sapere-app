@@ -105,16 +105,17 @@ export const seedChapterQuestions = async (chapter) => {
   if (seed.length === 0) return 0;
   const collRef = collection(db, 'questions');
 
-  // NON-DESTRUCTIVE: questions are written by their stable `id` with
-  // set({ merge: true }) — an UPSERT. Existing questions are never deleted,
-  // and re-seeding the same batch updates those docs in place rather than
-  // creating duplicates. (Every seed question must carry a unique `id`.)
+  // FULL OVERWRITE: questions are written by their stable `id` with
+  // set({ merge: false }) — a full REPLACE. This ensures stale fields
+  // (e.g. old geometry data on jsxGraph questions) are completely removed
+  // when re-seeding. New questions are upserted and existing ones are fully
+  // replaced with the latest seed data. (Every seed question must carry a unique `id`.)
   const CHUNK = 400; // Firestore writeBatch caps at 500 operations.
   for (let i = 0; i < seed.length; i += CHUNK) {
     const batch = writeBatch(db);
     seed.slice(i, i + CHUNK).forEach((raw) => {
       const docRef = raw.id ? doc(collRef, raw.id) : doc(collRef);
-      batch.set(docRef, mapSeedQuestion(raw, chapter), { merge: true });
+      batch.set(docRef, mapSeedQuestion(raw, chapter), { merge: false });
     });
     await batch.commit();
   }
