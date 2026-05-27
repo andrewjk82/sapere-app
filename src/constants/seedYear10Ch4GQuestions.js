@@ -1326,26 +1326,16 @@ export const Y10_CH4G_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            0,
-            400
-          ],
-          "B": [
-            500,
-            200
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          }
+      "jsxGraph": {
+        "width": 350,
+        "height": 250,
+        "boundingbox": [
+          -50,
+          48000,
+          650,
+          -5000
         ],
-        "sideLabels": [],
-        "angles": []
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 48000]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [600, 0]], {strokeColor: 'black', strokeWidth: 1});\n\nboard.create('text', [600, -2500, 't (hours)'], {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('text', [-20, 48000, 'V (litres)'], {anchorX: 'right', anchorY: 'top', fontSize: 14});\n\nboard.create('segment', [[-10, 40000], [0, 40000]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [-20, 40000, '40 000'], {anchorX: 'right', anchorY: 'middle', fontSize: 14});\n\nboard.create('segment', [[-10, 20000], [0, 20000]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [-20, 20000, '15 000'], {anchorX: 'right', anchorY: 'middle', fontSize: 14, visible: false}); // just placeholder\nboard.create('text', [-20, 20000, '20 000'], {anchorX: 'right', anchorY: 'middle', fontSize: 14});\n\nboard.create('segment', [[500, -1000], [500, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [500, -2000, '500'], {anchorX: 'middle', anchorY: 'top', fontSize: 14});\n\nvar p = board.create('point', [500, 20000], {visible: false});\nboard.create('text', [520, 20000, '(500, 20 000)'], {anchorX: 'left', anchorY: 'middle', fontSize: 14});\n\nvar pStart = board.create('point', [0, 40000], {visible: false});\nboard.create('segment', [pStart, p], {strokeColor: 'blue', strokeWidth: 1.5});\n\nboard.create('segment', [[500,0], p], {strokeColor: 'red', strokeWidth: 1.5, dash: 2});\n\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1516,38 +1506,16 @@ export const Y10_CH4G_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "AStart": [
-            0,
-            30
-          ],
-          "AEnd": [
-            2.5,
-            180
-          ],
-          "BStart": [
-            0,
-            120
-          ],
-          "BEnd": [
-            1.5,
-            0
-          ]
-        },
-        "segments": [
-          {
-            "from": "AStart",
-            "to": "AEnd"
-          },
-          {
-            "from": "BStart",
-            "to": "BEnd"
-          }
+      "jsxGraph": {
+        "width": 350,
+        "height": 250,
+        "boundingbox": [
+          -0.3,
+          220,
+          3.2,
+          -20
         ],
-        "sideLabels": [],
-        "angles": []
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 210]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [3.1, 0]], {strokeColor: 'black', strokeWidth: 1});\n\nboard.create('text', [3.1, -5, 't (hours)'], {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('text', [-0.05, 210, 'd (km)'], {anchorX: 'right', anchorY: 'top', fontSize: 14});\n\nvar yTicks = [30, 120, 180];\nyTicks.forEach(function(y) {\n  board.create('segment', [[-0.05, y], [0, y]], {strokeColor: 'black', strokeWidth: 1});\n  board.create('text', [-0.08, y, y.toString()], {anchorX: 'right', anchorY: 'middle', fontSize: 14});\n});\n\nvar xTicks = [1.5, 2.5];\nxTicks.forEach(function(x) {\n  board.create('segment', [[x, -3], [x, 0]], {strokeColor: 'black', strokeWidth: 1});\n  board.create('text', [x, -5, x.toString()], {anchorX: 'middle', anchorY: 'top', fontSize: 14});\n});\n\nvar aStart = board.create('point', [0, 30], {visible: true, name: '', size: 2, color: 'red'});\nvar aEnd = board.create('point', [2.5, 180], {visible: true, name: '', size: 2, color: 'red'});\nboard.create('segment', [aStart, aEnd], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('text', [2.5, 190, 'Car A'], {anchorX: 'middle', anchorY: 'bottom', fontSize: 14});\n\nvar bStart = board.create('point', [0, 120], {visible: true, name: '', size: 2, color: 'red'});\nvar bEnd = board.create('point', [1.5, 0], {visible: true, name: '', size: 2, color: 'red'});\nboard.create('segment', [bStart, bEnd], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('text', [0.5, 20, 'Car B'], {anchorX: 'left', anchorY: 'bottom', fontSize: 14});\n\nboard.unsuspendUpdate();"
       }
     }
   }
