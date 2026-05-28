@@ -57,7 +57,11 @@ class ErrorBoundary extends React.Component {
         }}>{message}</pre>
         <button
           type="button"
-          onClick={() => window.location.reload()}
+          onClick={() => {
+            // Hard-navigate with cache-bust so mobile browsers fetch fresh index.html
+            const sep = window.location.search ? '&' : '?';
+            window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+          }}
           style={{
             background: 'linear-gradient(135deg, #8b5cf6, #6366f1)',
             color: '#fff',

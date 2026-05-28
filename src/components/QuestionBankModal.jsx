@@ -1308,7 +1308,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         answerIdx: initialAnswerIdx,
         solution: q.solution || '',
         solutionSteps: (q.solutionSteps || []).map(s =>
-          typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
+          typeof s === 'string'
+            ? { explanation: s, workingOut: '', graphData: null }
+            : { explanation: s.explanation || '', workingOut: s.workingOut || '', graphData: s.graphData || null }
         ),
         hint: q.hint || '',
         topicId: q.topicId || '',
@@ -1325,7 +1327,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             answerIdx: isMCQ ? (isNaN(answerIdx) ? null : answerIdx) : null,
             solution: sq.solution || '',
             solutionSteps: (sq.solutionSteps || []).map(s =>
-              typeof s === 'string' ? { explanation: s, workingOut: '' } : { explanation: s.explanation || '', workingOut: s.workingOut || '' }
+              typeof s === 'string'
+                ? { explanation: s, workingOut: '', graphData: null }
+                : { explanation: s.explanation || '', workingOut: s.workingOut || '', graphData: s.graphData || null }
             ),
             options: (sq.options && sq.options.length > 0)
               ? sq.options.map(o => typeof o === 'string' ? { text: o, imageUrl: '' } : { text: o.text || '', imageUrl: o.imageUrl || '' })

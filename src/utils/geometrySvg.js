@@ -30,6 +30,7 @@ export const geometryToSvgMarkup = ({
   sideLabels = [],
   freeLabels = [],
   showPointLabels = true,
+  hiddenPoints = [],
   width = 300,
   fontSize = 14,
 } = {}) => {
@@ -164,6 +165,7 @@ export const geometryToSvgMarkup = ({
 
   names.forEach((name) => {
     const [vx, vy] = P(name);
+    if (hiddenPoints.includes(name)) return; // hidden — skip dot and label
     if (showPointLabels !== false) {
       let [dx, dy] = norm(vx - cx, vy - cy);
       if (Math.abs(dx) < 1e-3 && Math.abs(dy) < 1e-3) {
