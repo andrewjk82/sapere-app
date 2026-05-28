@@ -25,6 +25,7 @@ import { Y11_EXT1_CH1D_QUESTIONS } from '../constants/seedYear11Ext1Ch1DQuestion
 import { Y9_CH3A_QUESTIONS } from '../constants/seedYear9Ch3Questions.js';
 import { Y9_CH4A_QUESTIONS } from '../constants/seedYear9Ch4Questions.js';
 import { Y9_CH5A_QUESTIONS } from '../constants/seedYear9Ch5Questions.js';
+import { Y9_CH5B_QUESTIONS } from '../constants/seedYear9Ch5BQuestions.js';
 import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
 import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
 import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
@@ -130,6 +131,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-3', chapterTitle: 'Chapter 3: Consumer arithmetic', topicId: 'y9-3a', topicCode: '3A', topicTitle: 'Review of percentages', year: 'Year 9', seed: Y9_CH3A_QUESTIONS, label: 'Y9 Ch3 · Consumer arithmetic' },
   { chapterId: 'y9-4', chapterTitle: 'Chapter 4: Factorisation', topicId: 'y9-4a', topicCode: '4A', topicTitle: 'Factorisation', year: 'Year 9', seed: Y9_CH4A_QUESTIONS, label: 'Y9 Ch4 · Factorisation' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5a', topicCode: '5A', topicTitle: 'Expressions', year: 'Year 9', seed: Y9_CH5A_QUESTIONS, label: 'Y9 Ch5 · Linear equations' },
+  { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5b', topicCode: '5B', topicTitle: 'Solving simple linear equations', year: 'Year 9', seed: Y9_CH5B_QUESTIONS, label: 'Y9 Ch5 · Solving simple linear equations' },
   { chapterId: 'y9-6', chapterTitle: 'Chapter 6: Formulas', topicId: 'y9-6a', topicCode: '6A', topicTitle: 'Formulas', year: 'Year 9', seed: Y9_CH6A_QUESTIONS, label: 'Y9 Ch6 · Formulas' },
   { chapterId: 'y9-7', chapterTitle: 'Chapter 7: Congruence and special quadrilaterals', topicId: 'y9-7a', topicCode: '7A', topicTitle: 'Review of angles', year: 'Year 9', seed: Y9_CH7A_QUESTIONS, label: 'Y9 Ch7 · Angles' },
   { chapterId: 'y9-8', chapterTitle: 'Chapter 8: Index laws', topicId: 'y9-8a', topicCode: '8A', topicTitle: 'Index laws', year: 'Year 9', seed: Y9_CH8A_QUESTIONS, label: 'Y9 Ch8 · Index laws' },
