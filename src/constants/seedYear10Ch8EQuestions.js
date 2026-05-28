@@ -1170,28 +1170,38 @@ export const Y10_CH8E_QUESTIONS = [
       geometry: {
         width: 300,
         points: {
-          "B": [0, -3],
+          "B": [0, -5],
           "A": [-4, 0],
           "C": [4, 0],
           "G": [0, 0],
-          "E": [0, 4],
-          "F": [-2.4, -1.2],
-          "D": [-4.8, 0.6]
+          "E": [0, 1],
+          "F": [-2.93, -1.34],
+          "D": [-5.85, -3.68]
         },
         segments: [
           { from: "A", to: "B" },
           { from: "B", to: "C" },
           { from: "A", to: "C" },
-          { from: "B", to: "D" },
-          { from: "B", to: "E" },
+          { from: "B", to: "D", ticks: 1 },
+          { from: "B", to: "E", ticks: 1 },
           { from: "D", to: "E" },
           { from: "A", to: "D" },
-          { from: "C", to: "E" }
+          { from: "C", to: "E" },
+          { from: "G", to: "A", marks: 1 }
         ],
         angles: [
           { at: "G", right: true },
-          { at: "F", right: true }
-        ]
+          { at: "F", right: true, labelPos: [-2.8, -0.3] }
+        ],
+        labelOffsets: {
+          "E": [0, -15],
+          "B": [0, 15],
+          "D": [-15, 5],
+          "C": [15, 0],
+          "G": [12, -10],
+          "A": [-12, -12],
+          "F": [-15, 10]
+        }
       }
     },
     subQuestions: [
@@ -1223,15 +1233,15 @@ export const Y10_CH8E_QUESTIONS = [
         id: "y10-8e-q13b",
         type: "teacher_review",
         question: "b) Prove that \\(\\Delta ABD \\equiv \\Delta CBE\\).",
-        solution: "1. From part a, since \\(\\Delta DFB \\equiv \\Delta EFB\\), their corresponding angles are equal:\n   \\(\\angle DBF = \\angle EBF \\implies \\angle ABD = \\angle ABE\\)\n2. In triangles \\(ABG\\) and \\(CBG\\):\n   - \\(AB = BC\\) (given).\n   - \\(BG\\) is common.\n   - \\(\\angle BGA = \\angle BGC = 90^\\circ\\) (since \\(BE \\perp AC\\) at \\(G\\)).\n   - Therefore, \\(\\Delta ABG \\equiv \\Delta CBG\\) by RHS.\n   - This implies \\(\\angle ABG = \\angle CBG \\implies \\angle ABE = \\angle CBE\\).\n3. Since \\(\\angle ABD = \\angle ABE\\) and \\(\\angle ABE = \\angle CBE\\), we have:\n   \\(\\angle ABD = \\angle CBE\\)\n4. Now, in triangles \\(ABD\\) and \\(CBE\\):\n   - \\(AB = CB\\) (given).\n   - \\(BD = BE\\) (given).\n   - \\(\\angle ABD = \\angle CBE\\) (proven above).\n   - Therefore, \\(\\Delta ABD \\equiv \\Delta CBE\\) by the SAS congruence test.",
+        solution: "1. From part a, since \\(\\Delta DFB \\equiv \\Delta EFB\\), their corresponding angles are equal:\n   \\(\\angle DBF = \\angle EBF \\implies \\angle ABD = \\angle ABE\\)\n2. In triangles \\(ABG\\) and \\(CBG\\):\n   - \\(GA = GC\\) (since the figure is symmetric about the vertical diagonal \\(EB\\)).\n   - \\(BG\\) is common.\n   - \\(\\angle BGA = \\angle BGC = 90^\\circ\\) (since \\(BE \\perp AC\\) at \\(G\\)).\n   - Therefore, \\(\\Delta ABG \\equiv \\Delta CBG\\) by the SAS congruence test.\n   - This implies \\(AB = CB\\) and \\(\\angle ABG = \\angle CBG \\implies \\angle ABE = \\angle CBE\\).\n3. Since \\(\\angle ABD = \\angle ABE\\) and \\(\\angle ABE = \\angle CBE\\), we have:\n   \\(\\angle ABD = \\angle CBE\\)\n4. Now, in triangles \\(ABD\\) and \\(CBE\\):\n   - \\(AB = CB\\) (proven in step 2).\n   - \\(BD = BE\\) (given).\n   - \\(\\angle ABD = \\angle CBE\\) (proven in step 3).\n   - Therefore, \\(\\Delta ABD \\equiv \\Delta CBE\\) by the SAS congruence test.",
         solutionSteps: [
           {
             explanation: "Use CPCTC from part a to show angle equality.",
             workingOut: "\\angle ABD = \\angle ABE"
           },
           {
-            explanation: "Prove \\(\\Delta ABG \\equiv \\Delta CBG\\) by RHS to show \\(\\angle ABE = \\angle CBE\\).",
-            workingOut: "\\Delta ABG \\equiv \\Delta CBG \\implies \\angle ABE = \\angle CBE"
+            explanation: "Prove \\(\\Delta ABG \\equiv \\Delta CBG\\) by SAS to show \\(AB = CB\\) and \\(\\angle ABE = \\angle CBE\\).",
+            workingOut: "\\Delta ABG \\equiv \\Delta CBG \\implies AB = CB \\text{ and } \\angle ABE = \\angle CBE"
           },
           {
             explanation: "Combine the angle equations to get \\(\\angle ABD = \\angle CBE\\).",
