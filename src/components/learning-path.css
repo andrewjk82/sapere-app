@@ -938,3 +938,9 @@
   font-weight: 600;
   margin-top: 3px;
 }
+
+.cg3d-tooltip__status {
+  font-size: 0.72rem;
+  margin-top: 5px;
+  color: rgba(255,255,255,0.55);
+}

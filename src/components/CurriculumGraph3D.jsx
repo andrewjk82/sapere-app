@@ -40,7 +40,9 @@ const STRAND_EDGE_COLORS = {
 };
 
 // ─── Build graph data from CURRICULUM_DATA ─────────────────────────────────────
-function buildGraphData() {
+function buildGraphData(completedChapters = [], assignedChapters = []) {
+  const completedSet = new Set(completedChapters);
+  const assignedSet  = new Set(assignedChapters);
   const nodes = [];
   const links = [];
 
@@ -94,9 +96,19 @@ function buildGraphData() {
     subjects.forEach((subj) => {
       const subjNodeId = `subj-${subj.id}`;
       const strand = detectStrand(subj.title);
-      const subjColor = strand
+      const strandColor = strand
         ? (STRAND_EDGE_COLORS[strand] || '#64748bcc').replace('cc', '')
         : '#64748b';
+
+      // Completion state from teacher
+      const isCompleted = completedSet.has(subj.id);
+      const isAssigned  = assignedSet.has(subj.id);
+
+      // Completed → full strand colour; assigned/current → softer; locked → dim gray
+      const subjColor = isCompleted ? strandColor
+        : isAssigned ? strandColor + '88'
+        : '#2a2a3a';
+      const subjOpacity = isCompleted ? 1 : isAssigned ? 0.65 : 0.3;
 
       nodes.push({
         id: subjNodeId,
@@ -105,15 +117,18 @@ function buildGraphData() {
         year,
         strand,
         color: subjColor,
-        size: 7,
+        opacity: subjOpacity,
+        isCompleted,
+        isAssigned,
+        size: isCompleted ? 8 : 6,
       });
 
-      links.push({ source: yearNodeId, target: subjNodeId, color: yearColor + '88' });
+      links.push({ source: yearNodeId, target: subjNodeId, color: isCompleted ? yearColor + 'aa' : '#ffffff18' });
 
       // Collect for cross-year linking
       if (strand) {
         if (!strandBuckets[strand]) strandBuckets[strand] = [];
-        strandBuckets[strand].push({ subjNodeId, yi });
+        strandBuckets[strand].push({ subjNodeId, yi, isCompleted });
       }
 
       const topics = Array.isArray(subj.topics) ? subj.topics : [];
@@ -126,10 +141,12 @@ function buildGraphData() {
           year,
           strand,
           group: topic.group || '',
-          color: subjColor,
+          color: isCompleted ? strandColor : '#1e1e2e',
+          opacity: isCompleted ? 0.85 : 0.2,
+          isCompleted,
           size: 3,
         });
-        links.push({ source: subjNodeId, target: topicNodeId, color: subjColor + '55' });
+        links.push({ source: subjNodeId, target: topicNodeId, color: isCompleted ? strandColor + '44' : '#ffffff08' });
       });
     });
 
@@ -149,12 +166,15 @@ function buildGraphData() {
   // This creates a visible "thread" connecting e.g. all Algebra subjects Y1→Y12.
   Object.entries(strandBuckets).forEach(([strand, entries]) => {
     entries.sort((a, b) => a.yi - b.yi);
-    const edgeColor = STRAND_EDGE_COLORS[strand] || '#ffffff55';
+    const baseColor = STRAND_EDGE_COLORS[strand] || '#ffffff55';
     for (let i = 0; i < entries.length - 1; i++) {
+      const bothDone = entries[i].isCompleted && entries[i + 1].isCompleted;
+      const eitherDone = entries[i].isCompleted || entries[i + 1].isCompleted;
       links.push({
         source: entries[i].subjNodeId,
         target: entries[i + 1].subjNodeId,
-        color: edgeColor,
+        // Full colour when both ends complete; half when one; invisible when neither
+        color: bothDone ? baseColor : eitherDone ? baseColor.replace('cc', '55') : '#ffffff0a',
         isStrandLink: true,
         strand,
       });
@@ -165,7 +185,7 @@ function buildGraphData() {
 }
 
 // ─── Main component ───────────────────────────────────────────────────────────
-export default function CurriculumGraph3D({ onClose }) {
+export default function CurriculumGraph3D({ onClose, profile }) {
   const containerRef = useRef(null);
   const graphRef = useRef(null);
   const [tooltip, setTooltip] = useState(null);
@@ -177,7 +197,9 @@ export default function CurriculumGraph3D({ onClose }) {
     if (!containerRef.current || graphRef.current) return;
 
     const ForceGraph3D = (await import('3d-force-graph')).default;
-    const { nodes, links } = buildGraphData();
+    const completed = profile?.completedChapters || [];
+    const assigned  = profile?.assignedChapters  || [];
+    const { nodes, links } = buildGraphData(completed, assigned);
 
     const width = containerRef.current.clientWidth;
     const height = containerRef.current.clientHeight;
@@ -189,7 +211,7 @@ export default function CurriculumGraph3D({ onClose }) {
       .nodeLabel(() => '')
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
-      .nodeOpacity(0.9)
+      .nodeOpacity(n => n.opacity ?? 0.9)
       .linkColor(l => l.color)
       .linkWidth(l => {
         if (l.isYearLink) return 1.5;
@@ -203,9 +225,12 @@ export default function CurriculumGraph3D({ onClose }) {
         setTooltip({
           label: node.label,
           type: node.nodeType,
+          nodeType: node.nodeType,
           year: node.year,
           group: node.group,
           strand: node.strand,
+          isCompleted: node.isCompleted,
+          isAssigned: node.isAssigned,
         });
         containerRef.current.style.cursor = 'pointer';
       })
@@ -283,6 +308,11 @@ export default function CurriculumGraph3D({ onClose }) {
           {tooltip.year && <div className="cg3d-tooltip__year">{tooltip.year}</div>}
           {tooltip.strand && <div className="cg3d-tooltip__strand" style={{ color: (STRAND_EDGE_COLORS[tooltip.strand] || '#64748b').replace('cc','') }}>{STRAND_LABELS[tooltip.strand]}</div>}
           {tooltip.group && <div className="cg3d-tooltip__group">{tooltip.group}</div>}
+          {tooltip.nodeType === 'subject' && (
+            <div className="cg3d-tooltip__status">
+              {tooltip.isCompleted ? '✅ Teacher completed' : tooltip.isAssigned ? '📖 In progress' : '🔒 Not yet assigned'}
+            </div>
+          )}
         </div>
       )}
 
@@ -301,6 +331,11 @@ export default function CurriculumGraph3D({ onClose }) {
           <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#a78bfa', width: 14, height: 14 }} />Year level</div>
           <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#6366f1', width: 9, height: 9 }} />Subject / chapter</div>
           <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#64748b', width: 5, height: 5 }} />Topic</div>
+          <div className="cg3d-legend__divider" />
+          <div className="cg3d-legend__title">Colour = progress</div>
+          <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#a78bfa', width: 9, height: 9 }} />Teacher completed</div>
+          <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#a78bfa44', width: 9, height: 9, border: '1px solid #a78bfa66' }} />In progress</div>
+          <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#2a2a3a', width: 9, height: 9, border: '1px solid #ffffff22' }} />Not yet assigned</div>
           <div className="cg3d-legend__divider" />
           <div className="cg3d-legend__title">Strand threads</div>
           {Object.entries(STRAND_LABELS).map(([k, label]) => (

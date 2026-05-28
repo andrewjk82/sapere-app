@@ -260,7 +260,7 @@ const LearningPath = ({ profile }) => {
       </div>
 
       {/* 3D Graph overlay */}
-      {showGraph3D && <CurriculumGraph3D onClose={() => setShowGraph3D(false)} />}
+      {showGraph3D && <CurriculumGraph3D onClose={() => setShowGraph3D(false)} profile={profile} />}
 
       {/* Overview pills */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '14px', marginBottom: '22px' }}>
