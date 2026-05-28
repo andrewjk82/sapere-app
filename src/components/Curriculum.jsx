@@ -31,6 +31,7 @@ import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
 import { Y9_CH11_QUESTIONS } from '../constants/seedYear9Ch11Questions.js';
 import { Y9_CH11B_QUESTIONS } from '../constants/seedYear9Ch11BQuestions.js';
 import { Y9_CH11C_QUESTIONS } from '../constants/seedYear9Ch11CQuestions.js';
+import { Y9_CH11D_QUESTIONS } from '../constants/seedYear9Ch11DQuestions.js';
 import { Y9_CH11E_QUESTIONS } from '../constants/seedYear9Ch11EQuestions.js';
 import { Y8_CH1C_QUESTIONS } from '../constants/seedYear8Ch1Questions.js';
 import { Y8_CH2H_QUESTIONS } from '../constants/seedYear8Ch2Questions.js';
@@ -131,6 +132,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11a', topicCode: '11A', topicTitle: 'Distance between two points', year: 'Year 9', seed: Y9_CH11_QUESTIONS, label: 'Y9 Ch11 · Distance between two points' },
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11b', topicCode: '11B', topicTitle: 'The midpoint of an interval', year: 'Year 9', seed: Y9_CH11B_QUESTIONS, label: 'Y9 Ch11 · The midpoint of an interval' },
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11c', topicCode: '11C', topicTitle: 'The gradient of a line', year: 'Year 9', seed: Y9_CH11C_QUESTIONS, label: 'Y9 Ch11 · The gradient of a line' },
+  { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11d', topicCode: '11D', topicTitle: 'The equation of a straight line', year: 'Year 9', seed: Y9_CH11D_QUESTIONS, label: 'Y9 Ch11 · The equation of a straight line' },
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11e', topicCode: '11E', topicTitle: 'Graphing straight lines', year: 'Year 9', seed: Y9_CH11E_QUESTIONS, label: 'Y9 Ch11 · Graphing straight lines' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1c', topicCode: '1C', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1C_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
   { chapterId: 'y8-2', chapterTitle: 'Chapter 2: Fractions and decimals', topicId: 'y8-2h', topicCode: '2H', topicTitle: 'Review of fractions and decimals', year: 'Year 8', seed: Y8_CH2H_QUESTIONS, label: 'Y8 Ch2 · Review' },
