@@ -53,6 +53,7 @@ const lazyWithReload = (importer) => {
 // students and tutors see, so lazy-loading them only adds latency and risks
 // "Failed to fetch dynamically imported module" errors on stale deploys.
 import Dashboard from './components/Dashboard';
+import CurriculumGraph3D from './components/CurriculumGraph3D';
 import Schedule from './components/Schedule';
 import Library from './components/Library';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
@@ -384,6 +385,7 @@ function App() {
   }, [showToast, user?.uid]);
   const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
   const [activeTab, setActiveTab] = useState('Dashboard');
+  const [showJourneyMap, setShowJourneyMap] = useState(false);
   const [selectedStudentId, setSelectedStudentId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState('login');
@@ -861,6 +863,7 @@ function App() {
             onSelectStudent={(id) => setSelectedStudentId(id)}
             onShowLeaderboard={() => setShowLeaderboard(true)}
             setActiveTab={handleTabChange}
+            onOpenJourneyMap={() => setShowJourneyMap(true)}
           />
         );
       case 'Students':
@@ -957,6 +960,11 @@ function App() {
           </Suspense>
         </ErrorBoundary>
       </div>
+
+      {/* ── Journey Map overlay (App-level so it's always truly full-screen) ── */}
+      {showJourneyMap && (
+        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />
+      )}
 
       {/* ── Version Update Banner ── */}
       <AnimatePresence>
