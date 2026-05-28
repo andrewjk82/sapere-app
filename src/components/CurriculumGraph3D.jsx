@@ -40,6 +40,13 @@ const STRAND_EDGE_COLORS = {
 };
 
 // ─── Build graph data from CURRICULUM_DATA ─────────────────────────────────────
+// Encode opacity (0–1) into a hex colour string's alpha channel
+function withAlpha(hex, alpha) {
+  const a = Math.round(Math.max(0, Math.min(1, alpha)) * 255).toString(16).padStart(2, '0');
+  // Strip any existing alpha (8-char hex) then re-append
+  return hex.slice(0, 7) + a;
+}
+
 function buildGraphData(completedChapters = [], assignedChapters = [], currentYear = null) {
   const YEAR_ORDER = ['Year 1','Year 2','Year 3','Year 4','Year 5','Year 6',
                       'Year 7','Year 8','Year 9','Year 10','Year 11','Year 12'];
@@ -85,8 +92,7 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
       label: year,
       nodeType: 'year',
       year,
-      color: yearColor,
-      opacity: isYearPast ? 1 : isYearCurrent ? 0.95 : 0.35,
+      color: withAlpha(yearColor, isYearPast ? 1 : isYearCurrent ? 0.95 : 0.35),
       size: isYearCurrent ? 18 : 14,
       yi,
     });
@@ -113,14 +119,12 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
       const isCompleted = completedSet.has(subj.id) || isPastYear;
       const isAssigned  = !isCompleted && assignedSet.has(subj.id);
 
-      // Colour logic:
-      //   completed (teacher or auto-past) → full strand colour
-      //   assigned/in-progress             → strand colour, dimmer
-      //   not yet reached                  → neutral grey (still visible)
-      const subjColor = isCompleted ? strandColor
-        : isAssigned  ? strandColor
-        : '#4a4a5a';
-      const subjOpacity = isCompleted ? 1 : isAssigned ? 0.55 : 0.25;
+      // Colour: completed → full strand colour; assigned → 55% alpha; locked → grey 30%
+      const subjColor = isCompleted
+        ? withAlpha(strandColor, 1)
+        : isAssigned
+        ? withAlpha(strandColor, 0.55)
+        : withAlpha('#8888aa', 0.3);
 
       nodes.push({
         id: subjNodeId,
@@ -129,7 +133,6 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
         year,
         strand,
         color: subjColor,
-        opacity: subjOpacity,
         isCompleted,
         isAssigned,
         isPastYear,
@@ -153,8 +156,7 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
           year,
           strand,
           group: topic.group || '',
-          color: isCompleted ? strandColor : '#3a3a4a',
-          opacity: isCompleted ? 0.85 : 0.18,
+          color: isCompleted ? withAlpha(strandColor, 0.85) : withAlpha('#8888aa', 0.15),
           isCompleted,
           size: 3,
         });
@@ -225,7 +227,7 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       .nodeLabel(() => '')
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
-      .nodeOpacity(n => n.opacity ?? 0.9)
+      .nodeOpacity(1)
       .linkColor(l => l.color)
       .linkWidth(l => {
         if (l.isYearLink) return 1.5;
