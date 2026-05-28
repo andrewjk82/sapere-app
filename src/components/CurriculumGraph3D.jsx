@@ -75,6 +75,16 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
   const years = ['Year 1','Year 2','Year 3','Year 4','Year 5','Year 6',
                   'Year 7','Year 8','Year 9','Year 10','Year 11','Year 12'];
 
+  // ── Central student node ────────────────────────────────────────────────────
+  nodes.push({
+    id: 'student',
+    label: 'Student',
+    nodeType: 'student',
+    color: '#ffffff',
+    size: 22,
+    fx: 0, fy: 0, fz: 0,   // pin to origin so it stays centred
+  });
+
   // strandBuckets: strand → [{ subjNodeId, yi }]  (for cross-year links)
   const strandBuckets = {};
 
@@ -168,15 +178,13 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
       }
     });
 
-    // Year → prev-year backbone link
-    if (yi > 0) {
-      links.push({
-        source: `year-${years[yi - 1]}`,
-        target: yearNodeId,
-        color: '#ffffff22',
-        isYearLink: true,
-      });
-    }
+    // Student → Year link (all years radiate from the student centre)
+    links.push({
+      source: 'student',
+      target: yearNodeId,
+      color: withAlpha(yearColor, isYearPast || isYearCurrent ? 0.7 : 0.3),
+      isYearLink: true,
+    });
   });
 
   // ── Cross-year strand links ─────────────────────────────────────────────────
@@ -215,6 +223,7 @@ export default function CurriculumGraph3D({ onClose, profile }) {
     if (!containerRef.current || graphRef.current) return;
 
     const ForceGraph3D = (await import('3d-force-graph')).default;
+    const THREE = (await import('three')).default || await import('three');
     const completed = profile?.completedChapters || [];
     const assigned  = profile?.assignedChapters  || [];
     const rawYear   = Array.isArray(profile?.assignedYear) ? profile.assignedYear[0] : profile?.assignedYear;
@@ -232,6 +241,46 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
       .nodeOpacity(0.92)
+      // Custom Three.js object for the student node — glowing white sphere
+      .nodeThreeObject(node => {
+        if (node.nodeType !== 'student') return null;
+        const group = new THREE.Group();
+
+        // Core bright sphere
+        const coreMat = new THREE.MeshLambertMaterial({ color: 0xffffff, emissive: 0xccccff, emissiveIntensity: 1 });
+        const core = new THREE.Mesh(new THREE.SphereGeometry(6, 32, 32), coreMat);
+        group.add(core);
+
+        // Outer glow shell (additive blending, transparent)
+        const glowMat = new THREE.MeshBasicMaterial({
+          color: 0x8888ff,
+          transparent: true,
+          opacity: 0.18,
+          side: THREE.BackSide,
+        });
+        const glow = new THREE.Mesh(new THREE.SphereGeometry(11, 32, 32), glowMat);
+        group.add(glow);
+
+        // Sprite label "YOU"
+        const canvas = document.createElement('canvas');
+        canvas.width = 128; canvas.height = 48;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'rgba(0,0,0,0)';
+        ctx.fillRect(0,0,128,48);
+        ctx.font = 'bold 22px sans-serif';
+        ctx.fillStyle = '#ffffff';
+        ctx.textAlign = 'center';
+        ctx.fillText('YOU', 64, 32);
+        const tex = new THREE.CanvasTexture(canvas);
+        const spriteMat = new THREE.SpriteMaterial({ map: tex, transparent: true });
+        const sprite = new THREE.Sprite(spriteMat);
+        sprite.scale.set(20, 8, 1);
+        sprite.position.set(0, 14, 0);
+        group.add(sprite);
+
+        return group;
+      })
+      .nodeThreeObjectExtend(false)
       .linkColor(l => l.color)
       .linkWidth(l => {
         if (l.isYearLink) return 1.5;
