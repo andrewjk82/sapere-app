@@ -1271,6 +1271,39 @@ export const Y10_CH8E_QUESTIONS = [
         workingOut: ""
       }
     ],
+    graphData: {
+      geometry: {
+        width: 300,
+        points: {
+          "C": [0, 0],
+          "B": [5, 0],
+          "E": [11, 0],
+          "D": [3, 4],
+          "A": [8, 4],
+          "F": [6.6, 8.8]
+        },
+        segments: [
+          { from: "A", to: "B", ticks: 1 },
+          { from: "B", to: "C" },
+          { from: "C", to: "D" },
+          { from: "D", to: "A", ticks: 2 },
+          { from: "B", to: "E" },
+          { from: "D", to: "F" },
+          { from: "A", to: "E", ticks: 1 },
+          { from: "A", to: "F", ticks: 2 },
+          { from: "D", to: "E" },
+          { from: "B", to: "F" }
+        ],
+        labelOffsets: {
+          "C": [-15, -15],
+          "B": [0, -15],
+          "E": [15, -15],
+          "D": [-15, 15],
+          "A": [10, 15],
+          "F": [15, 15]
+        }
+      }
+    },
     subQuestions: [
       {
         id: "y10-8e-q14a",
