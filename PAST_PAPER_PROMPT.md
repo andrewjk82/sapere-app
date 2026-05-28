@@ -91,6 +91,10 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 - The correct answer (`a`) must appear verbatim as one of the opts
 - For short_answer: set `opts: []`
 
+**subQuestions and graphData (Geometry diagrams):**
+- If a question has sub-questions (`subQuestions` array) and all sub-questions refer to the same diagram (e.g. "in the diagram shown"), define `graphData` ONCE on the parent question level. Set `graphData: null` or omit it on the individual sub-question objects.
+- If the sub-questions require different diagrams, define `graphData` directly inside each sub-question object, and set the parent's `graphData` to `null`.
+
 ### Topic ID map (CambridgeMATHS Year 11/12 Advanced)
 
 **Year 11 (y11a-)**
