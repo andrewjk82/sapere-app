@@ -255,7 +255,7 @@ const LearningPath = ({ profile }) => {
           }}
         >
           <Network size={15} />
-          Knowledge Graph
+          Journey Map
         </button>
       </div>
 

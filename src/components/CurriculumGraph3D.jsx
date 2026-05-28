@@ -538,8 +538,12 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       )}
 
       <div className="cg3d-title">
-        <div className="cg3d-title__main">Knowledge Graph</div>
-        <div className="cg3d-title__sub">Year 1 – 12 · strands connected across years</div>
+        <div className="cg3d-title__main">
+          {profile?.displayName || profile?.name
+            ? `${(profile.displayName || profile.name).split(' ')[0]}'s Journey Map`
+            : 'My Journey Map'}
+        </div>
+        <div className="cg3d-title__sub">Year 1 – 12 · every strand of your learning</div>
       </div>
     </div>
   );
