@@ -1670,7 +1670,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-5e', code: '5E', title: 'Using linear equations to solve problems' },
         { id: 'y9-5f', code: '5F', title: 'Literal equations' },
         { id: 'y9-5g', code: '5G', title: 'Inequalities' },
-        { id: 'y9-5h', code: '5H', title: 'Solving linear inequalities' }
+        { id: 'y9-5h', code: '5H', title: 'Solving linear inequalities' },
+        { id: 'y9-5i', code: '5I', title: 'Revision' }
       ]
     },
     {
