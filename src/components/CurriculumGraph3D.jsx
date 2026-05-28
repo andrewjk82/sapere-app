@@ -226,8 +226,8 @@ export default function CurriculumGraph3D({ onClose, profile }) {
     const THREE = (await import('three')).default || await import('three');
     const completed = profile?.completedChapters || [];
     const assigned  = profile?.assignedChapters  || [];
-    const rawYear   = Array.isArray(profile?.assignedYear) ? profile.assignedYear[0] : profile?.assignedYear;
-    const currentYear = rawYear ? (String(rawYear).startsWith('Year') ? rawYear : `Year ${rawYear}`) : null;
+    const rawYear     = Array.isArray(profile?.assignedYear) ? profile.assignedYear[0] : profile?.assignedYear;
+    const currentYear = rawYear ? (String(rawYear).startsWith('Year') ? String(rawYear) : `Year ${rawYear}`) : null;
     const { nodes, links } = buildGraphData(completed, assigned, currentYear);
 
     const width = containerRef.current.clientWidth;
@@ -241,8 +241,40 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
       .nodeOpacity(0.92)
-      // Custom Three.js object for the student node — avatar sphere
+      // Custom Three.js object for year + student nodes
       .nodeThreeObject(node => {
+        // ── Year label sprite ────────────────────────────────────────────────
+        if (node.nodeType === 'year') {
+          const canvas = document.createElement('canvas');
+          canvas.width = 256; canvas.height = 80;
+          const ctx = canvas.getContext('2d');
+
+          // Background pill
+          const isCurrent = node.label === currentYear;
+          ctx.clearRect(0, 0, 256, 80);
+          ctx.beginPath();
+          ctx.roundRect(8, 12, 240, 56, 28);
+          ctx.fillStyle = isCurrent ? 'rgba(99,102,241,0.85)' : 'rgba(20,20,40,0.75)';
+          ctx.fill();
+          ctx.strokeStyle = node.color.slice(0, 7) + (isCurrent ? 'ff' : 'aa');
+          ctx.lineWidth = 3;
+          ctx.stroke();
+
+          // Text
+          ctx.font = `bold ${isCurrent ? 28 : 24}px sans-serif`;
+          ctx.fillStyle = '#ffffff';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(node.label, 128, 40);
+
+          const tex = new THREE.CanvasTexture(canvas);
+          const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false }));
+          sprite.scale.set(28, 9, 1);
+          sprite.position.set(0, 20, 0);  // float above the sphere
+          return sprite;
+        }
+
+        // ── Student avatar sphere ────────────────────────────────────────────
         if (node.nodeType !== 'student') return null;
         const group = new THREE.Group();
         const R = 10; // sphere radius
@@ -346,7 +378,7 @@ export default function CurriculumGraph3D({ onClose, profile }) {
 
         return group;
       })
-      .nodeThreeObjectExtend(false)
+      .nodeThreeObjectExtend(node => node.nodeType === 'year') // extend default sphere for year nodes
       .linkColor(l => l.color)
       .linkWidth(l => {
         if (l.isYearLink) return 1.5;
