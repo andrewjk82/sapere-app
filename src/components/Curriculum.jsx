@@ -29,6 +29,7 @@ import { Y9_CH5B_QUESTIONS } from '../constants/seedYear9Ch5BQuestions.js';
 import { Y9_CH5C_QUESTIONS } from '../constants/seedYear9Ch5CQuestions.js';
 import { Y9_CH5D_QUESTIONS } from '../constants/seedYear9Ch5DQuestions.js';
 import { Y9_CH5E_QUESTIONS } from '../constants/seedYear9Ch5EQuestions.js';
+import { Y9_CH5F_QUESTIONS } from '../constants/seedYear9Ch5FQuestions.js';
 import { Y9_CH5I_QUESTIONS } from '../constants/seedYear9Ch5IQuestions.js';
 import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
 import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
@@ -139,6 +140,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5c', topicCode: '5C', topicTitle: 'Equations with brackets', year: 'Year 9', seed: Y9_CH5C_QUESTIONS, label: 'Y9 Ch5 · Equations with brackets' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5d', topicCode: '5D', topicTitle: 'Linear equations involving fractions', year: 'Year 9', seed: Y9_CH5D_QUESTIONS, label: 'Y9 Ch5 · Linear equations involving fractions' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5e', topicCode: '5E', topicTitle: 'Using linear equations to solve problems', year: 'Year 9', seed: Y9_CH5E_QUESTIONS, label: 'Y9 Ch5 · Using linear equations to solve problems' },
+  { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5f', topicCode: '5F', topicTitle: 'Literal equations', year: 'Year 9', seed: Y9_CH5F_QUESTIONS, label: 'Y9 Ch5 · Literal equations' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5i', topicCode: '5I', topicTitle: 'Revision', year: 'Year 9', seed: Y9_CH5I_QUESTIONS, label: 'Y9 Ch5 · Revision' },
   { chapterId: 'y9-6', chapterTitle: 'Chapter 6: Formulas', topicId: 'y9-6a', topicCode: '6A', topicTitle: 'Formulas', year: 'Year 9', seed: Y9_CH6A_QUESTIONS, label: 'Y9 Ch6 · Formulas' },
   { chapterId: 'y9-7', chapterTitle: 'Chapter 7: Congruence and special quadrilaterals', topicId: 'y9-7a', topicCode: '7A', topicTitle: 'Review of angles', year: 'Year 9', seed: Y9_CH7A_QUESTIONS, label: 'Y9 Ch7 · Angles' },
