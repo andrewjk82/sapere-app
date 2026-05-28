@@ -1740,7 +1740,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-11e', code: '11E', title: 'Graphing straight lines' },
         { id: 'y9-11f', code: '11F', title: 'The equation of a line using the gradient and a point' },
         { id: 'y9-11g', code: '11G', title: 'Parallel and perpendicular straight lines' },
-        { id: 'y9-11h', code: '11H', title: 'The equation of a circle' }
+        { id: 'y9-11h', code: '11H', title: 'The equation of a circle' },
+        { id: 'y9-11i', code: '11I', title: 'Challenge exercise' }
       ]
     },
     {
