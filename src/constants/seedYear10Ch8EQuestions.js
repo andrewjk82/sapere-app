@@ -1236,7 +1236,7 @@ export const Y10_CH8E_QUESTIONS = [
         solution: "1. From part a, since \\(\\Delta DFB \\equiv \\Delta EFB\\), their corresponding angles are equal:\n   \\(\\angle DBF = \\angle EBF \\implies \\angle ABD = \\angle ABE\\)\n2. In triangles \\(ABG\\) and \\(CBG\\):\n   - \\(GA = GC\\) (since the figure is symmetric about the vertical diagonal \\(EB\\)).\n   - \\(BG\\) is common.\n   - \\(\\angle BGA = \\angle BGC = 90^\\circ\\) (since \\(BE \\perp AC\\) at \\(G\\)).\n   - Therefore, \\(\\Delta ABG \\equiv \\Delta CBG\\) by the SAS congruence test.\n   - This implies \\(AB = CB\\) and \\(\\angle ABG = \\angle CBG \\implies \\angle ABE = \\angle CBE\\).\n3. Since \\(\\angle ABD = \\angle ABE\\) and \\(\\angle ABE = \\angle CBE\\), we have:\n   \\(\\angle ABD = \\angle CBE\\)\n4. Now, in triangles \\(ABD\\) and \\(CBE\\):\n   - \\(AB = CB\\) (proven in step 2).\n   - \\(BD = BE\\) (given).\n   - \\(\\angle ABD = \\angle CBE\\) (proven in step 3).\n   - Therefore, \\(\\Delta ABD \\equiv \\Delta CBE\\) by the SAS congruence test.",
         solutionSteps: [
           {
-            explanation: "Use CPCTC from part a to show angle equality.",
+            explanation: "Use corresponding angles of congruent triangles to show angle equality.",
             workingOut: "\\angle ABD = \\angle ABE"
           },
           {
@@ -1301,7 +1301,7 @@ export const Y10_CH8E_QUESTIONS = [
         id: "y10-8e-q14b",
         type: "teacher_review",
         question: "b) Prove that \\(DE = BF\\).",
-        solution: "In triangles \\(ADE\\) and \\(ABF\\):\n- \\(AE = AB\\) (since \\(\\Delta ABE\\) is isosceles with \\(AB = AE\\)).\n- \\(AD = AF\\) (since \\(\\Delta ADF\\) is isosceles with \\(AD = AF\\)).\n- Now let's calculate the included angles:\n  \\(\\angle EAD = \\angle EAB + \\angle BAD = (180^\\circ - 2\\theta) + \\theta = 180^\\circ - \\theta\\)\n  \\(\\angle FAB = \\angle FAD + \\angle BAD = (180^\\circ - 2\\theta) + \\theta = 180^\\circ - \\theta\\)\n  So \\(\\angle EAD = \\angle FAB\\).\n\nTherefore, \\(\\Delta ADE \\equiv \\Delta ABF\\) by the SAS congruence test.\n\nBy CPCTC, \\(DE = BF\\).",
+        solution: "In triangles \\(ADE\\) and \\(ABF\\):\n- \\(AE = AB\\) (since \\(\\Delta ABE\\) is isosceles with \\(AB = AE\\)).\n- \\(AD = AF\\) (since \\(\\Delta ADF\\) is isosceles with \\(AD = AF\\)).\n- Now let's calculate the included angles:\n  \\(\\angle EAD = \\angle EAB + \\angle BAD = (180^\\circ - 2\\theta) + \\theta = 180^\\circ - \\theta\\)\n  \\(\\angle FAB = \\angle FAD + \\angle BAD = (180^\\circ - 2\\theta) + \\theta = 180^\\circ - \\theta\\)\n  So \\(\\angle EAD = \\angle FAB\\).\n\nTherefore, \\(\\Delta ADE \\equiv \\Delta ABF\\) by the SAS congruence test.\n\nSince corresponding sides of congruent triangles are equal, \\(DE = BF\\).",
         solutionSteps: [
           {
             explanation: "State the equal sides from the isosceles properties.",
