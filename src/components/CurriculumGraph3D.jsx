@@ -2,7 +2,44 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { X, ZoomIn, ZoomOut, RotateCcw, Info } from 'lucide-react';
 
-// ─── Build graph data from CURRICULUM_DATA ────────────────────────────────────
+// ─── Strand detection ─────────────────────────────────────────────────────────
+// Maps a subject title to a canonical strand key.
+// The same strand across different years → cross-year edge.
+const STRAND_RULES = [
+  // More-specific rules FIRST so they win over broader ones
+  ['complex',          ['complex number', 'nature of proof']],
+  ['calculus',         ['differentiation', 'integration', 'calculus', 'motion and rates', 'curve-sketching', 'euler', "euler's number"]],
+  ['trigonometry',     ['trigonometry', 'trigonometric', 'radian', 'further trigonometry', 'projectile']],
+  ['statistics',       ['statistics', 'displaying and interpreting', 'graphs and tables']],
+  ['probability',      ['probability', 'chance', 'binomial', 'venn diagram', 'sets and']],
+  ['measurement',      ['non-spatial measure', 'measurement', 'surface area', 'area', 'volume', 'perimeter', 'capacity', 'mass', 'length']],
+  ['geometry',         ['geometry', 'geometric measure', 'spatial structure', '2d spatial', '3d spatial', 'space', 'triangle', 'congruen', 'similar', 'polyhedra', 'transformation', 'symmetry', 'vector', 'pythagoras', 'circle geometry']],
+  ['algebra',          ['algebra', 'equations', 'formulae', 'linear equation', 'quadratic', 'polynomial', 'factori', 'simultaneous', 'coordinate geometry', 'cartesian', 'straight line', 'sequence', 'series', 'mathematical induction', 'additive relation', 'multiplicative relation', 'combining and separating', 'forming groups', 'functions and graph', 'function']],
+  ['number',           ['number', 'whole number', 'place value', 'arithmetic', 'integer', 'surds', 'indices', 'index law', 'exponential', 'logarithm', 'consumer arithmetic', 'financial', 'ratio', 'proportion', 'rate', 'percentages', 'decimal', 'fraction', 'partitioned', 'quantity fraction']],
+];
+
+function detectStrand(title) {
+  const t = title.toLowerCase();
+  for (const [strand, keywords] of STRAND_RULES) {
+    if (keywords.some(k => t.includes(k))) return strand;
+  }
+  return null;
+}
+
+// Strand → colour for cross-year edges
+const STRAND_EDGE_COLORS = {
+  algebra:      '#a855f7cc',
+  number:       '#6366f1cc',
+  geometry:     '#14b8a6cc',
+  measurement:  '#ec4899cc',
+  statistics:   '#f59e0bcc',
+  probability:  '#ef4444cc',
+  trigonometry: '#f97316cc',
+  calculus:     '#22c55ecc',
+  complex:      '#06b6d4cc',
+};
+
+// ─── Build graph data from CURRICULUM_DATA ─────────────────────────────────────
 function buildGraphData() {
   const nodes = [];
   const links = [];
@@ -22,20 +59,11 @@ function buildGraphData() {
     'Year 12': '#06b6d4',
   };
 
-  const SUBJECT_COLORS = {
-    'Number': '#6366f1',
-    'Algebra': '#8b5cf6',
-    'Measurement': '#ec4899',
-    'Space': '#14b8a6',
-    'Statistics': '#f59e0b',
-    'Probability': '#ef4444',
-    'Representing Whole Numbers': '#6366f1',
-    'Fractions and Decimals': '#8b5cf6',
-    'default': '#64748b',
-  };
-
   const years = ['Year 1','Year 2','Year 3','Year 4','Year 5','Year 6',
                   'Year 7','Year 8','Year 9','Year 10','Year 11','Year 12'];
+
+  // strandBuckets: strand → [{ subjNodeId, yi }]  (for cross-year links)
+  const strandBuckets = {};
 
   years.forEach((year, yi) => {
     const yearData = CURRICULUM_DATA[year];
@@ -54,7 +82,7 @@ function buildGraphData() {
       yi,
     });
 
-    // yearData can be array (Year 1–10) or object (Year 11–12)
+    // yearData is array (Y1–10) or object (Y11–12)
     const subjects = Array.isArray(yearData)
       ? yearData
       : Object.entries(yearData).map(([course, chaps]) => ({
@@ -65,18 +93,28 @@ function buildGraphData() {
 
     subjects.forEach((subj) => {
       const subjNodeId = `subj-${subj.id}`;
-      const subjColor = SUBJECT_COLORS[subj.title] || SUBJECT_COLORS['default'];
+      const strand = detectStrand(subj.title);
+      const subjColor = strand
+        ? (STRAND_EDGE_COLORS[strand] || '#64748bcc').replace('cc', '')
+        : '#64748b';
 
       nodes.push({
         id: subjNodeId,
         label: subj.title,
         nodeType: 'subject',
         year,
+        strand,
         color: subjColor,
         size: 7,
       });
 
       links.push({ source: yearNodeId, target: subjNodeId, color: yearColor + '88' });
+
+      // Collect for cross-year linking
+      if (strand) {
+        if (!strandBuckets[strand]) strandBuckets[strand] = [];
+        strandBuckets[strand].push({ subjNodeId, yi });
+      }
 
       const topics = Array.isArray(subj.topics) ? subj.topics : [];
       topics.forEach((topic) => {
@@ -86,6 +124,7 @@ function buildGraphData() {
           label: topic.title,
           nodeType: 'topic',
           year,
+          strand,
           group: topic.group || '',
           color: subjColor,
           size: 3,
@@ -94,13 +133,30 @@ function buildGraphData() {
       });
     });
 
-    // link year → prev year
+    // Year → prev-year backbone link
     if (yi > 0) {
       links.push({
         source: `year-${years[yi - 1]}`,
         target: yearNodeId,
         color: '#ffffff22',
         isYearLink: true,
+      });
+    }
+  });
+
+  // ── Cross-year strand links ─────────────────────────────────────────────────
+  // For each strand, sort by year index and link consecutive subject nodes.
+  // This creates a visible "thread" connecting e.g. all Algebra subjects Y1→Y12.
+  Object.entries(strandBuckets).forEach(([strand, entries]) => {
+    entries.sort((a, b) => a.yi - b.yi);
+    const edgeColor = STRAND_EDGE_COLORS[strand] || '#ffffff55';
+    for (let i = 0; i < entries.length - 1; i++) {
+      links.push({
+        source: entries[i].subjNodeId,
+        target: entries[i + 1].subjNodeId,
+        color: edgeColor,
+        isStrandLink: true,
+        strand,
       });
     }
   });
@@ -115,6 +171,7 @@ export default function CurriculumGraph3D({ onClose }) {
   const [tooltip, setTooltip] = useState(null);
   const [infoOpen, setInfoOpen] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [highlightStrand, setHighlightStrand] = useState(null);
 
   const initGraph = useCallback(async () => {
     if (!containerRef.current || graphRef.current) return;
@@ -132,11 +189,14 @@ export default function CurriculumGraph3D({ onClose }) {
       .nodeLabel(() => '')
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
-      .nodeOpacity(0.95)
+      .nodeOpacity(0.9)
       .linkColor(l => l.color)
-      .linkWidth(l => l.isYearLink ? 1.5 : 0.5)
-      .linkOpacity(0.6)
-      .nodeThreeObjectExtend(false)
+      .linkWidth(l => {
+        if (l.isYearLink) return 1.5;
+        if (l.isStrandLink) return 1.2;
+        return 0.4;
+      })
+      .linkOpacity(l => l.isStrandLink ? 0.85 : 0.5)
       .graphData({ nodes, links })
       .onNodeHover((node) => {
         if (!node) { setTooltip(null); return; }
@@ -145,19 +205,19 @@ export default function CurriculumGraph3D({ onClose }) {
           type: node.nodeType,
           year: node.year,
           group: node.group,
+          strand: node.strand,
         });
         containerRef.current.style.cursor = 'pointer';
       })
       .onNodeClick((node) => {
         graph.centerAt(node.x, node.y, 1000);
         graph.zoom(node.nodeType === 'year' ? 1.5 : node.nodeType === 'subject' ? 3 : 5, 800);
+        if (node.strand) setHighlightStrand(node.strand);
       })
-      .cooldownTicks(120)
+      .cooldownTicks(150)
       .onEngineStop(() => setLoaded(true));
 
-    // Initial camera position — look from a bit above
     graph.cameraPosition({ x: 0, y: 0, z: 1200 });
-
     graphRef.current = graph;
   }, []);
 
@@ -171,7 +231,6 @@ export default function CurriculumGraph3D({ onClose }) {
     };
   }, [initGraph]);
 
-  // Resize
   useEffect(() => {
     const obs = new ResizeObserver(() => {
       if (graphRef.current && containerRef.current) {
@@ -183,20 +242,23 @@ export default function CurriculumGraph3D({ onClose }) {
     return () => obs.disconnect();
   }, []);
 
-  const handleZoomIn = () => graphRef.current?.zoom(
-    (graphRef.current.zoom() || 1) * 1.4, 400
-  );
-  const handleZoomOut = () => graphRef.current?.zoom(
-    (graphRef.current.zoom() || 1) / 1.4, 400
-  );
+  const handleZoomIn = () => graphRef.current?.zoom((graphRef.current.zoom() || 1) * 1.4, 400);
+  const handleZoomOut = () => graphRef.current?.zoom((graphRef.current.zoom() || 1) / 1.4, 400);
   const handleReset = () => {
     graphRef.current?.cameraPosition({ x: 0, y: 0, z: 1200 }, { x: 0, y: 0, z: 0 }, 800);
     graphRef.current?.zoom(1, 600);
+    setHighlightStrand(null);
+  };
+
+  const STRAND_LABELS = {
+    algebra: 'Algebra', number: 'Number', geometry: 'Geometry',
+    measurement: 'Measurement', statistics: 'Statistics',
+    probability: 'Probability', trigonometry: 'Trigonometry',
+    calculus: 'Calculus', complex: 'Complex / Proof',
   };
 
   return (
     <div className="cg3d-overlay">
-      {/* Controls */}
       <div className="cg3d-controls">
         <button className="cg3d-btn" onClick={handleZoomIn} title="Zoom in"><ZoomIn size={16} /></button>
         <button className="cg3d-btn" onClick={handleZoomOut} title="Zoom out"><ZoomOut size={16} /></button>
@@ -205,10 +267,8 @@ export default function CurriculumGraph3D({ onClose }) {
         <button className="cg3d-btn cg3d-btn--close" onClick={onClose} title="Close"><X size={16} /></button>
       </div>
 
-      {/* Canvas */}
       <div ref={containerRef} className="cg3d-canvas" />
 
-      {/* Loading */}
       {!loaded && (
         <div className="cg3d-loading">
           <div className="cg3d-spinner" />
@@ -216,23 +276,39 @@ export default function CurriculumGraph3D({ onClose }) {
         </div>
       )}
 
-      {/* Tooltip */}
       {tooltip && (
         <div className="cg3d-tooltip">
           <div className="cg3d-tooltip__type">{tooltip.type}</div>
           <div className="cg3d-tooltip__label">{tooltip.label}</div>
           {tooltip.year && <div className="cg3d-tooltip__year">{tooltip.year}</div>}
+          {tooltip.strand && <div className="cg3d-tooltip__strand" style={{ color: (STRAND_EDGE_COLORS[tooltip.strand] || '#64748b').replace('cc','') }}>{STRAND_LABELS[tooltip.strand]}</div>}
           {tooltip.group && <div className="cg3d-tooltip__group">{tooltip.group}</div>}
         </div>
       )}
 
-      {/* Legend */}
+      {highlightStrand && (
+        <div className="cg3d-strand-badge" style={{ borderColor: (STRAND_EDGE_COLORS[highlightStrand] || '#64748b').replace('cc','') }}>
+          <span style={{ color: (STRAND_EDGE_COLORS[highlightStrand] || '#64748b').replace('cc','') }}>
+            {STRAND_LABELS[highlightStrand]} strand
+          </span>
+          <button onClick={() => setHighlightStrand(null)} className="cg3d-strand-badge__close">×</button>
+        </div>
+      )}
+
       {infoOpen && (
         <div className="cg3d-legend">
-          <div className="cg3d-legend__title">How to navigate</div>
+          <div className="cg3d-legend__title">Nodes</div>
           <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#a78bfa', width: 14, height: 14 }} />Year level</div>
-          <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#6366f1', width: 9, height: 9 }} />Subject strand</div>
+          <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#6366f1', width: 9, height: 9 }} />Subject / chapter</div>
           <div className="cg3d-legend__row"><span className="cg3d-legend__dot" style={{ background: '#64748b', width: 5, height: 5 }} />Topic</div>
+          <div className="cg3d-legend__divider" />
+          <div className="cg3d-legend__title">Strand threads</div>
+          {Object.entries(STRAND_LABELS).map(([k, label]) => (
+            <div key={k} className="cg3d-legend__row">
+              <span className="cg3d-legend__line" style={{ background: (STRAND_EDGE_COLORS[k] || '#64748b').replace('cc','') }} />
+              {label}
+            </div>
+          ))}
           <div className="cg3d-legend__divider" />
           <div className="cg3d-legend__tip">🖱 Drag to rotate</div>
           <div className="cg3d-legend__tip">🖱 Scroll to zoom</div>
@@ -240,10 +316,9 @@ export default function CurriculumGraph3D({ onClose }) {
         </div>
       )}
 
-      {/* Title */}
       <div className="cg3d-title">
         <div className="cg3d-title__main">Knowledge Graph</div>
-        <div className="cg3d-title__sub">Year 1 – 12 NSW Mathematics</div>
+        <div className="cg3d-title__sub">Year 1 – 12 · strands connected across years</div>
       </div>
     </div>
   );
