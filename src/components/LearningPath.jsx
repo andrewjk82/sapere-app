@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from 'react';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Zap, Trophy, BookOpen, GraduationCap } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Zap, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
+import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, onSnapshot, collection, query, where, setDoc, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -23,6 +24,7 @@ const LearningPath = ({ profile }) => {
   const [loading, setLoading] = useState(true);
   const [selectedChapter, setSelectedChapter] = useState(null); // { chapter, state }
   const [selectedTopic, setSelectedTopic] = useState(null);    // { topic, chapter }
+  const [showGraph3D, setShowGraph3D] = useState(false);
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -239,6 +241,26 @@ const LearningPath = ({ profile }) => {
           ))}
         </div>
       )}
+
+      {/* Knowledge Graph button */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+        <button
+          onClick={() => setShowGraph3D(true)}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '7px',
+            padding: '8px 16px', borderRadius: '12px', border: 'none', cursor: 'pointer',
+            background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+            color: '#fff', fontSize: '0.82rem', fontWeight: 700,
+            boxShadow: '0 2px 12px rgba(99,102,241,0.35)',
+          }}
+        >
+          <Network size={15} />
+          Knowledge Graph
+        </button>
+      </div>
+
+      {/* 3D Graph overlay */}
+      {showGraph3D && <CurriculumGraph3D onClose={() => setShowGraph3D(false)} />}
 
       {/* Overview pills */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '14px', marginBottom: '22px' }}>
