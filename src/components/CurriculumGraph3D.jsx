@@ -40,7 +40,11 @@ const STRAND_EDGE_COLORS = {
 };
 
 // ─── Build graph data from CURRICULUM_DATA ─────────────────────────────────────
-function buildGraphData(completedChapters = [], assignedChapters = []) {
+function buildGraphData(completedChapters = [], assignedChapters = [], currentYear = null) {
+  const YEAR_ORDER = ['Year 1','Year 2','Year 3','Year 4','Year 5','Year 6',
+                      'Year 7','Year 8','Year 9','Year 10','Year 11','Year 12'];
+  const currentYearIdx = currentYear ? YEAR_ORDER.indexOf(currentYear) : -1;
+
   const completedSet = new Set(completedChapters);
   const assignedSet  = new Set(assignedChapters);
   const nodes = [];
@@ -74,13 +78,16 @@ function buildGraphData(completedChapters = [], assignedChapters = []) {
     const yearColor = YEAR_COLORS[year] || '#64748b';
     const yearNodeId = `year-${year}`;
 
+    const isYearPast    = currentYearIdx > 0 && yi < currentYearIdx;
+    const isYearCurrent = currentYearIdx >= 0 && yi === currentYearIdx;
     nodes.push({
       id: yearNodeId,
       label: year,
       nodeType: 'year',
       year,
       color: yearColor,
-      size: 14,
+      opacity: isYearPast ? 1 : isYearCurrent ? 0.95 : 0.35,
+      size: isYearCurrent ? 18 : 14,
       yi,
     });
 
@@ -100,15 +107,20 @@ function buildGraphData(completedChapters = [], assignedChapters = []) {
         ? (STRAND_EDGE_COLORS[strand] || '#64748bcc').replace('cc', '')
         : '#64748b';
 
-      // Completion state from teacher
-      const isCompleted = completedSet.has(subj.id);
-      const isAssigned  = assignedSet.has(subj.id);
+      // Auto-complete: if student's current year is e.g. Year 10,
+      // all subjects in Year 1–9 are treated as completed automatically.
+      const isPastYear = currentYearIdx > 0 && yi < currentYearIdx;
+      const isCompleted = completedSet.has(subj.id) || isPastYear;
+      const isAssigned  = !isCompleted && assignedSet.has(subj.id);
 
-      // Completed → full strand colour; assigned/current → softer; locked → dim gray
+      // Colour logic:
+      //   completed (teacher or auto-past) → full strand colour
+      //   assigned/in-progress             → strand colour, dimmer
+      //   not yet reached                  → neutral grey (still visible)
       const subjColor = isCompleted ? strandColor
-        : isAssigned ? strandColor + '88'
-        : '#2a2a3a';
-      const subjOpacity = isCompleted ? 1 : isAssigned ? 0.65 : 0.3;
+        : isAssigned  ? strandColor
+        : '#4a4a5a';
+      const subjOpacity = isCompleted ? 1 : isAssigned ? 0.55 : 0.25;
 
       nodes.push({
         id: subjNodeId,
@@ -120,12 +132,12 @@ function buildGraphData(completedChapters = [], assignedChapters = []) {
         opacity: subjOpacity,
         isCompleted,
         isAssigned,
-        size: isCompleted ? 8 : 6,
+        isPastYear,
+        size: isCompleted ? 8 : 5,
       });
 
-      links.push({ source: yearNodeId, target: subjNodeId, color: isCompleted ? yearColor + 'aa' : '#ffffff18' });
+      links.push({ source: yearNodeId, target: subjNodeId, color: isCompleted ? yearColor + 'cc' : '#ffffff22' });
 
-      // Collect for cross-year linking
       if (strand) {
         if (!strandBuckets[strand]) strandBuckets[strand] = [];
         strandBuckets[strand].push({ subjNodeId, yi, isCompleted });
@@ -141,12 +153,12 @@ function buildGraphData(completedChapters = [], assignedChapters = []) {
           year,
           strand,
           group: topic.group || '',
-          color: isCompleted ? strandColor : '#1e1e2e',
-          opacity: isCompleted ? 0.85 : 0.2,
+          color: isCompleted ? strandColor : '#3a3a4a',
+          opacity: isCompleted ? 0.85 : 0.18,
           isCompleted,
           size: 3,
         });
-        links.push({ source: subjNodeId, target: topicNodeId, color: isCompleted ? strandColor + '44' : '#ffffff08' });
+        links.push({ source: subjNodeId, target: topicNodeId, color: isCompleted ? strandColor + '55' : '#ffffff10' });
       });
     });
 
@@ -199,7 +211,9 @@ export default function CurriculumGraph3D({ onClose, profile }) {
     const ForceGraph3D = (await import('3d-force-graph')).default;
     const completed = profile?.completedChapters || [];
     const assigned  = profile?.assignedChapters  || [];
-    const { nodes, links } = buildGraphData(completed, assigned);
+    const rawYear   = Array.isArray(profile?.assignedYear) ? profile.assignedYear[0] : profile?.assignedYear;
+    const currentYear = rawYear ? (String(rawYear).startsWith('Year') ? rawYear : `Year ${rawYear}`) : null;
+    const { nodes, links } = buildGraphData(completed, assigned, currentYear);
 
     const width = containerRef.current.clientWidth;
     const height = containerRef.current.clientHeight;
@@ -231,6 +245,7 @@ export default function CurriculumGraph3D({ onClose, profile }) {
           strand: node.strand,
           isCompleted: node.isCompleted,
           isAssigned: node.isAssigned,
+          isPastYear: node.isPastYear,
         });
         containerRef.current.style.cursor = 'pointer';
       })
@@ -310,7 +325,10 @@ export default function CurriculumGraph3D({ onClose, profile }) {
           {tooltip.group && <div className="cg3d-tooltip__group">{tooltip.group}</div>}
           {tooltip.nodeType === 'subject' && (
             <div className="cg3d-tooltip__status">
-              {tooltip.isCompleted ? '✅ Teacher completed' : tooltip.isAssigned ? '📖 In progress' : '🔒 Not yet assigned'}
+              {tooltip.isPastYear ? '✅ Past year (auto-complete)'
+                : tooltip.isCompleted ? '✅ Teacher completed'
+                : tooltip.isAssigned ? '📖 In progress'
+                : '🔒 Not yet assigned'}
             </div>
           )}
         </div>
