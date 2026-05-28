@@ -92,7 +92,7 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
       label: year,
       nodeType: 'year',
       year,
-      color: withAlpha(yearColor, isYearPast ? 1 : isYearCurrent ? 0.95 : 0.35),
+      color: withAlpha(yearColor, isYearPast ? 1 : isYearCurrent ? 1 : 0.6),
       size: isYearCurrent ? 18 : 14,
       yi,
     });
@@ -119,12 +119,12 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
       const isCompleted = completedSet.has(subj.id) || isPastYear;
       const isAssigned  = !isCompleted && assignedSet.has(subj.id);
 
-      // Colour: completed → full strand colour; assigned → 55% alpha; locked → grey 30%
+      // Colour: completed → full strand colour; assigned → 75%; not-yet → visible grey
       const subjColor = isCompleted
         ? withAlpha(strandColor, 1)
         : isAssigned
-        ? withAlpha(strandColor, 0.55)
-        : withAlpha('#8888aa', 0.3);
+        ? withAlpha(strandColor, 0.75)
+        : withAlpha('#7777aa', 0.6);
 
       nodes.push({
         id: subjNodeId,
@@ -146,22 +146,26 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
         strandBuckets[strand].push({ subjNodeId, yi, isCompleted });
       }
 
+      // Topic nodes — only rendered when the parent subject is completed,
+      // so the graph doesn't get overwhelmed with hundreds of dim blobs.
       const topics = Array.isArray(subj.topics) ? subj.topics : [];
-      topics.forEach((topic) => {
-        const topicNodeId = `topic-${topic.id}`;
-        nodes.push({
-          id: topicNodeId,
-          label: topic.title,
-          nodeType: 'topic',
-          year,
-          strand,
-          group: topic.group || '',
-          color: isCompleted ? withAlpha(strandColor, 0.85) : withAlpha('#8888aa', 0.15),
-          isCompleted,
-          size: 3,
+      if (isCompleted) {
+        topics.forEach((topic) => {
+          const topicNodeId = `topic-${topic.id}`;
+          nodes.push({
+            id: topicNodeId,
+            label: topic.title,
+            nodeType: 'topic',
+            year,
+            strand,
+            group: topic.group || '',
+            color: withAlpha(strandColor, 0.75),
+            isCompleted: true,
+            size: 2.5,
+          });
+          links.push({ source: subjNodeId, target: topicNodeId, color: strandColor + '44' });
         });
-        links.push({ source: subjNodeId, target: topicNodeId, color: isCompleted ? strandColor + '55' : '#ffffff10' });
-      });
+      }
     });
 
     // Year → prev-year backbone link
@@ -227,7 +231,7 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       .nodeLabel(() => '')
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
-      .nodeOpacity(1)
+      .nodeOpacity(0.92)
       .linkColor(l => l.color)
       .linkWidth(l => {
         if (l.isYearLink) return 1.5;
