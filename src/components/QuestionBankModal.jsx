@@ -2053,6 +2053,14 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                               <MathPreview content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
                             </div>
                           )}
+                          {step.graphData && (
+                            <div style={{ marginTop: '10px' }}>
+                              <div style={{ fontSize: '0.65rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
+                                📊 Graph Preview (solution graph)
+                              </div>
+                              <MathPreview content="" graphData={step.graphData} style={{ minHeight: '320px' }} />
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -2271,6 +2279,14 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                             {step.workingOut.trim() && (
                               <div style={{ marginTop: '6px', padding: '8px 12px', background: '#fff', borderRadius: '8px', border: '1px solid #ede9fe' }}>
                                 <MathPreview content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
+                              </div>
+                            )}
+                            {step.graphData && (
+                              <div style={{ marginTop: '8px' }}>
+                                <div style={{ fontSize: '0.62rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '5px' }}>
+                                  📊 Graph Preview (solution graph)
+                                </div>
+                                <MathPreview content="" graphData={step.graphData} style={{ minHeight: '300px' }} />
                               </div>
                             )}
                           </div>
