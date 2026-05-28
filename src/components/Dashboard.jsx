@@ -19,11 +19,13 @@ import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { getDueCount } from '../utils/secretNote';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 import JourneyMapSnapshot from './JourneyMapSnapshot';
+import CurriculumGraph3D from './CurriculumGraph3D';
 
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   const { profile } = useProfile();
+  const [showJourneyMap, setShowJourneyMap] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -236,6 +238,11 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
   return (
     <>
+      {/* Journey Map full-screen overlay */}
+      {showJourneyMap && (
+        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />
+      )}
+
       <style>{`
         @media (max-width: 720px) {
           .no-top-padding-mobile {
@@ -267,7 +274,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               {/* Journey Map snapshot */}
               <JourneyMapSnapshot
                 profile={profile}
-                onClick={() => setActiveTab('Curriculum')}
+                onClick={() => setShowJourneyMap(true)}
               />
               <div style={{ flex: 1, background: 'linear-gradient(135deg, #1e1b4b, #312e81)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(30,27,75,0.2)', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden', minHeight: '82px' }}>
                 <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}><Trophy size={100} /></div>
