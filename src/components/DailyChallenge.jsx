@@ -60,7 +60,6 @@ import {
   adjustDifficultyMix,
   notifyTeacherChallengeCompleted,
   updateAdminDailySummary,
-  pruneOldChallengeStats,
   createSessionSeed,
   correctQuestionAnswer,
   getEarnedXp,
@@ -1182,7 +1181,6 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         }
 
         // --- Local State Updates ---
-        pruneOldChallengeStats(user.uid, challengeType === 'calc' ? 'calc_stats' : 'daily_stats').catch(() => {});
 
         // Record seen manual question IDs so tomorrow's assignment avoids repeats.
         const seenIds = questions.map(q => q?.id).filter(Boolean);

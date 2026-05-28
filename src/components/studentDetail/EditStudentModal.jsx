@@ -276,6 +276,7 @@ export default function EditStudentModal({
               }}
             />
           </div>
+
           <div style={{ gridColumn: "span 2" }}>
             <label
               style={{

@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { FileText, Plus, Trash2 } from "lucide-react";
 import HscScoreChart from "../HscScoreChart";
+import { NSW_SCHOOL_RANKINGS } from "../../constants/nswSchoolRankings";
 
-// HSC exam log tab — extracted from StudentDetail.jsx.
-// State (hscForm/hscSaving/hscRecords) and the save/delete handlers stay in
-// StudentDetail; this component is purely presentational.
 const HscTab = ({
   hscRecords,
   styles,
@@ -13,11 +11,180 @@ const HscTab = ({
   hscSaving,
   onSaveRecord,
   onDeleteRecord,
+  student,
+  onUpdateModeration,
 }) => {
+  const [modForm, setModForm] = useState({
+    assignedCourse: Array.isArray(student?.assignedCourse) ? student.assignedCourse[0] : (student?.assignedCourse || ""),
+    school: student?.school || "",
+    schoolSubjectRank: student?.schoolSubjectRank || "",
+    internalRank: student?.internalRank || "",
+    internalTotal: student?.internalTotal || "",
+  });
+  const [modSaving, setModSaving] = useState(false);
+  const [schoolSearch, setSchoolSearch] = useState(student?.school || "");
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const filteredSchools = schoolSearch.trim().length >= 2
+    ? NSW_SCHOOL_RANKINGS.filter((s) =>
+        s.school.toLowerCase().includes(schoolSearch.toLowerCase())
+      ).slice(0, 8)
+    : [];
+
+  const handleSelectSchool = (s) => {
+    setSchoolSearch(s.school);
+    setModForm((f) => ({ ...f, school: s.school, schoolSubjectRank: s.rank }));
+    setShowDropdown(false);
+  };
+
+  const handleModSave = async () => {
+    if (!onUpdateModeration) return;
+    setModSaving(true);
+    const fields = {
+      school: modForm.school || null,
+      schoolSubjectRank: modForm.schoolSubjectRank ? Number(modForm.schoolSubjectRank) : null,
+      internalRank: modForm.internalRank ? Number(modForm.internalRank) : null,
+      internalTotal: modForm.internalTotal ? Number(modForm.internalTotal) : null,
+    };
+    if (modForm.assignedCourse) fields.assignedCourse = [modForm.assignedCourse];
+    await onUpdateModeration(fields);
+    setModSaving(false);
+  };
+
   return (
     <div style={{ display: "grid", gap: "24px" }}>
       <HscScoreChart hscRecords={hscRecords} />
 
+      {/* ── HSC Moderation Inputs ── */}
+      <div style={{ ...styles.card, padding: "20px 24px" }} className="profile-card-mobile">
+        <div style={{ fontSize: "0.75rem", fontWeight: 900, color: "#7c3aed", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "4px" }}>
+          HSC Moderation Inputs
+        </div>
+        <div style={{ fontSize: "0.8rem", color: "#6d6a85", fontWeight: 600, marginBottom: "16px" }}>
+          Used to calculate the student's projected HSC band via NSW moderation logic.
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "12px" }}>
+          {/* School autocomplete */}
+          <div style={{ position: "relative" }} ref={dropdownRef}>
+            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
+              School
+            </label>
+            <input
+              type="text"
+              value={schoolSearch}
+              onChange={(e) => {
+                setSchoolSearch(e.target.value);
+                setModForm((f) => ({ ...f, school: e.target.value, schoolSubjectRank: "" }));
+                setShowDropdown(true);
+              }}
+              onFocus={() => setShowDropdown(true)}
+              onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
+              placeholder="Search school…"
+              style={{ width: "100%", padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem", boxSizing: "border-box", outline: "none" }}
+            />
+            {showDropdown && filteredSchools.length > 0 && (
+              <div style={{
+                position: "absolute", top: "100%", left: 0, right: 0, zIndex: 50,
+                background: "#fff", borderRadius: "12px", boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+                border: "1.5px solid #e2e8f0", overflow: "hidden", marginTop: "4px",
+              }}>
+                {filteredSchools.map((s) => (
+                  <div
+                    key={s.rank}
+                    onMouseDown={() => handleSelectSchool(s)}
+                    style={{
+                      padding: "10px 14px", cursor: "pointer", display: "flex", alignItems: "center", gap: "10px",
+                      fontSize: "0.85rem", fontWeight: 700, color: "#1e1b4b",
+                      borderBottom: "1px solid #f1f5f9",
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = "#f5f3ff"}
+                    onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
+                  >
+                    <span style={{ minWidth: "28px", fontWeight: 900, color: "#7c3aed", fontSize: "0.78rem" }}>#{s.rank}</span>
+                    {s.school}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+          <div>
+            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
+              HSC Subject
+            </label>
+            <select
+              value={modForm.assignedCourse}
+              onChange={(e) => setModForm((f) => ({ ...f, assignedCourse: e.target.value }))}
+              style={{
+                width: "100%", padding: "11px 14px", borderRadius: "12px",
+                border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem",
+                background: "white", color: "#1e1b4b", cursor: "pointer", boxSizing: "border-box",
+              }}
+            >
+              <option value="">Select subject…</option>
+              <option value="Advanced">Mathematics Advanced</option>
+              <option value="Standard 2">Mathematics Standard 2</option>
+              <option value="Standard 1">Mathematics Standard 1</option>
+              <option value="Extension 1">Mathematics Extension 1</option>
+              <option value="Extension 2">Mathematics Extension 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px", marginBottom: "16px" }}>
+          <div>
+            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
+              School Rank (NSW 2025)
+            </label>
+            <div style={{
+              padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0",
+              background: modForm.schoolSubjectRank ? "#f5f3ff" : "#f8fafc",
+              fontWeight: 800, fontSize: "0.88rem",
+              color: modForm.schoolSubjectRank ? "#4c1d95" : "#94a3b8",
+            }}>
+              {modForm.schoolSubjectRank ? `#${modForm.schoolSubjectRank}` : "Auto from school"}
+            </div>
+          </div>
+          <div>
+            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
+              Internal Rank
+            </label>
+            <input
+              type="number" min="1" placeholder="e.g. 3"
+              value={modForm.internalRank}
+              onChange={(e) => setModForm((f) => ({ ...f, internalRank: e.target.value }))}
+              style={{ width: "100%", padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem", boxSizing: "border-box", outline: "none" }}
+            />
+          </div>
+          <div>
+            <label style={{ display: "block", marginBottom: "6px", fontWeight: 800, fontSize: "0.72rem", color: "#64748b", textTransform: "uppercase" }}>
+              Total in Cohort
+            </label>
+            <input
+              type="number" min="1" placeholder="e.g. 25"
+              value={modForm.internalTotal}
+              onChange={(e) => setModForm((f) => ({ ...f, internalTotal: e.target.value }))}
+              style={{ width: "100%", padding: "11px 14px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 700, fontSize: "0.88rem", boxSizing: "border-box", outline: "none" }}
+            />
+          </div>
+        </div>
+
+        <button
+          onClick={handleModSave}
+          disabled={modSaving || !onUpdateModeration}
+          style={{
+            padding: "11px 24px", borderRadius: "12px", border: "none",
+            background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
+            color: "#fff", fontWeight: 900, fontSize: "0.88rem",
+            cursor: modSaving ? "wait" : "pointer", opacity: modSaving ? 0.7 : 1,
+          }}
+        >
+          {modSaving ? "Saving…" : "Save"}
+        </button>
+      </div>
+
+      {/* ── Trial papers card ── */}
       <div style={styles.card} className="profile-card-mobile">
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", marginBottom: "24px", flexWrap: "wrap" }}>
           <div>
@@ -69,8 +236,7 @@ const HscTab = ({
           <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
             Score
             <input
-              type="number"
-              min="0"
+              type="number" min="0"
               value={hscForm.score}
               onChange={(e) => setHscForm({ ...hscForm, score: e.target.value })}
               style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
@@ -79,8 +245,7 @@ const HscTab = ({
           <label style={{ display: "grid", gap: "6px", fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase" }}>
             Out of
             <input
-              type="number"
-              min="1"
+              type="number" min="1"
               value={hscForm.total}
               onChange={(e) => setHscForm({ ...hscForm, total: e.target.value })}
               style={{ padding: "12px", borderRadius: "14px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
@@ -90,25 +255,17 @@ const HscTab = ({
             type="submit"
             disabled={hscSaving}
             style={{
-              height: "45px",
-              padding: "0 18px",
-              borderRadius: "14px",
-              border: "none",
+              height: "45px", padding: "0 18px", borderRadius: "14px", border: "none",
               background: "linear-gradient(135deg, #7c3aed, #4f46e5)",
-              color: "white",
-              fontWeight: 900,
+              color: "white", fontWeight: 900,
               cursor: hscSaving ? "wait" : "pointer",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              justifyContent: "center",
-              whiteSpace: "nowrap",
+              display: "flex", alignItems: "center", gap: "8px",
+              justifyContent: "center", whiteSpace: "nowrap",
             }}
           >
             <Plus size={17} />
             {hscSaving ? "Saving" : "Add"}
           </button>
-          {/* Topic breakdown — optional per-strand percentages */}
           <div style={{ gridColumn: "1 / -1" }}>
             <div style={{ fontSize: "0.72rem", fontWeight: 900, color: "#64748b", textTransform: "uppercase", marginBottom: "8px" }}>
               Topic breakdown <span style={{ color: "#94a3b8", fontWeight: 700 }}>(optional · % per strand)</span>
@@ -118,14 +275,9 @@ const HscTab = ({
                 <label key={topic} style={{ display: "grid", gap: "5px", fontSize: "0.68rem", fontWeight: 800, color: "#94a3b8" }}>
                   {topic}
                   <input
-                    type="number"
-                    min="0"
-                    max="100"
+                    type="number" min="0" max="100"
                     value={hscForm.topics?.[topic] ?? ""}
-                    onChange={(e) => setHscForm({
-                      ...hscForm,
-                      topics: { ...(hscForm.topics || {}), [topic]: e.target.value },
-                    })}
+                    onChange={(e) => setHscForm({ ...hscForm, topics: { ...(hscForm.topics || {}), [topic]: e.target.value } })}
                     placeholder="%"
                     style={{ padding: "10px 12px", borderRadius: "12px", border: "1.5px solid #e2e8f0", fontWeight: 900, color: "#1e1b4b", outline: "none" }}
                   />
@@ -154,12 +306,9 @@ const HscTab = ({
                 style={{
                   display: "grid",
                   gridTemplateColumns: "110px minmax(0, 1fr) 90px auto",
-                  gap: "16px",
-                  alignItems: "center",
-                  padding: "16px",
-                  borderRadius: "18px",
-                  background: "white",
-                  border: "1px solid #eef2ff",
+                  gap: "16px", alignItems: "center",
+                  padding: "16px", borderRadius: "18px",
+                  background: "white", border: "1px solid #eef2ff",
                   boxShadow: "0 10px 24px rgba(79,70,229,0.05)",
                 }}
               >

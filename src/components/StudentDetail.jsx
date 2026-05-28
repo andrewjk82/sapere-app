@@ -353,6 +353,10 @@ const StudentDetail = ({ studentId, onBack }) => {
     calculationEnabled: true,
     showHscGraph: false,
     examPrepEnabled: false,
+    schoolSubjectRank: "",
+    internalRank: "",
+    internalTotal: "",
+    hscSubject: "",
   });
 
   const styles = {
@@ -447,6 +451,10 @@ const StudentDetail = ({ studentId, onBack }) => {
         showHscGraph: data.showHscGraph === true,
         examPrepEnabled: data.examPrepEnabled === true,
         examPrepSelection: data.examPrepSelection || { years: [], chapters: [] },
+        schoolSubjectRank: data.schoolSubjectRank || "",
+        internalRank: data.internalRank || "",
+        internalTotal: data.internalTotal || "",
+        hscSubject: data.hscSubject || "",
       });
       setLoading(false);
     };
@@ -937,6 +945,20 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
+  const handleUpdateHscModeration = async (fields) => {
+    try {
+      await updateDoc(doc(db, activeStudentCollection, activeStudentId), {
+        ...fields,
+        updatedAt: serverTimestamp(),
+      });
+      setStudent((prev) => ({ ...prev, ...fields }));
+      updateLocalStudentProfileCache({ ...fields });
+    } catch (e) {
+      console.error(e);
+      showToast("Failed to save moderation data", "error");
+    }
+  };
+
   const handleUpdateCurriculumSetting = async (field, value) => {
     // Write to BOTH the teacher's record and the linked registered account
     // (users/{registeredUid}) so the student app — which reads its profile
@@ -1221,12 +1243,6 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   const recalculateStudentTotals = async (colName = activeStudentCollection) => {
-    const dailySnap = await getDocs(
-      collection(db, colName, activeStudentId, "daily_stats"),
-    );
-    const calcSnap = await getDocs(
-      collection(db, colName, activeStudentId, "calc_stats"),
-    );
     const hasCalculationTest = student.calculationEnabled !== false;
     const getFallbackXp = (data, type) => {
       const score = Number(data.score) || 0;
@@ -1235,20 +1251,37 @@ const StudentDetail = ({ studentId, onBack }) => {
       const maxXp = type === "calc" ? 50 : hasCalculationTest ? 50 : 100;
       return Math.round((score / total) * maxXp);
     };
+    const includeStat = (data) =>
+      data.completed || (Number(data.score) || 0) > 0;
+
+    // Collect stats from both paths, deduplicating by doc ID so registered
+    // students (whose results are written to users/{registeredUid}) aren't
+    // under-counted when the primary and registered paths differ.
+    const paths = [[colName, activeStudentId]];
+    if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
+      paths.push(["users", challengeResultsUid]);
+    }
+
+    const mergedDaily = new Map();
+    const mergedCalc = new Map();
+    await Promise.all(paths.map(async ([col, uid]) => {
+      const [dailySnap, calcSnap] = await Promise.all([
+        getDocs(collection(db, col, uid, "daily_stats")),
+        getDocs(collection(db, col, uid, "calc_stats")),
+      ]);
+      dailySnap.forEach((d) => { if (!mergedDaily.has(d.id)) mergedDaily.set(d.id, d.data()); });
+      calcSnap.forEach((d) => { if (!mergedCalc.has(d.id)) mergedCalc.set(d.id, d.data()); });
+    }));
 
     let totalXP = 0;
     let challengesCompleted = 0;
 
-    const includeStat = (data) =>
-      data.completed || (Number(data.score) || 0) > 0;
-    dailySnap.forEach((d) => {
-      const data = d.data();
+    mergedDaily.forEach((data) => {
       if (!includeStat(data)) return;
       totalXP += Number(data.xpEarned) || getFallbackXp(data, "daily");
       challengesCompleted += 1;
     });
-    calcSnap.forEach((d) => {
-      const data = d.data();
+    mergedCalc.forEach((data) => {
       if (!includeStat(data)) return;
       totalXP += Number(data.xpEarned) || getFallbackXp(data, "calc");
       challengesCompleted += 1;
@@ -1879,6 +1912,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             hscSaving={hscSaving}
             onSaveRecord={handleSaveHscRecord}
             onDeleteRecord={handleDeleteHscRecord}
+            student={student}
+            onUpdateModeration={handleUpdateHscModeration}
           />
         );
       default:
