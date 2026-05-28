@@ -80,8 +80,8 @@ function buildGraphData(completedChapters = [], assignedChapters = [], currentYe
     id: 'student',
     label: 'Student',
     nodeType: 'student',
-    color: '#ffffff',
-    size: 22,
+    color: '#00000000',  // invisible default sphere — Three.js custom object takes over
+    size: 10,
     fx: 0, fy: 0, fz: 0,   // pin to origin so it stays centred
   });
 
@@ -241,42 +241,108 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       .nodeColor(n => n.color)
       .nodeVal(n => n.size * n.size)
       .nodeOpacity(0.92)
-      // Custom Three.js object for the student node — glowing white sphere
+      // Custom Three.js object for the student node — avatar sphere
       .nodeThreeObject(node => {
         if (node.nodeType !== 'student') return null;
         const group = new THREE.Group();
+        const R = 10; // sphere radius
 
-        // Core bright sphere
-        const coreMat = new THREE.MeshLambertMaterial({ color: 0xffffff, emissive: 0xccccff, emissiveIntensity: 1 });
-        const core = new THREE.Mesh(new THREE.SphereGeometry(6, 32, 32), coreMat);
-        group.add(core);
+        // ── Build avatar canvas texture ──────────────────────────────────────
+        const avatarCanvas = document.createElement('canvas');
+        avatarCanvas.width = 256; avatarCanvas.height = 256;
+        const ac = avatarCanvas.getContext('2d');
 
-        // Outer glow shell (additive blending, transparent)
+        const photoURL   = profile?.photoURL;
+        const name       = profile?.displayName || profile?.name || 'Student';
+        const initials   = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+
+        const buildTexture = (imgEl = null) => {
+          // Background gradient
+          const grad = ac.createRadialGradient(128, 128, 10, 128, 128, 128);
+          grad.addColorStop(0, '#3730a3');
+          grad.addColorStop(1, '#1e1b4b');
+          ac.fillStyle = grad;
+          ac.beginPath();
+          ac.arc(128, 128, 128, 0, Math.PI * 2);
+          ac.fill();
+
+          if (imgEl) {
+            // Clip photo into circle
+            ac.save();
+            ac.beginPath();
+            ac.arc(128, 128, 120, 0, Math.PI * 2);
+            ac.clip();
+            ac.drawImage(imgEl, 8, 8, 240, 240);
+            ac.restore();
+          } else {
+            // Initials fallback
+            ac.font = 'bold 96px sans-serif';
+            ac.fillStyle = '#ffffff';
+            ac.textAlign = 'center';
+            ac.textBaseline = 'middle';
+            ac.fillText(initials, 128, 128);
+          }
+
+          // Subtle white rim
+          ac.strokeStyle = 'rgba(255,255,255,0.25)';
+          ac.lineWidth = 8;
+          ac.beginPath();
+          ac.arc(128, 128, 122, 0, Math.PI * 2);
+          ac.stroke();
+
+          return new THREE.CanvasTexture(avatarCanvas);
+        };
+
+        // Sphere with avatar texture
+        const sphereGeo = new THREE.SphereGeometry(R, 64, 64);
+        const sphereMat = new THREE.MeshLambertMaterial({ map: buildTexture() });
+        const sphere = new THREE.Mesh(sphereGeo, sphereMat);
+        group.add(sphere);
+
+        // If photoURL available, load it and swap texture
+        if (photoURL) {
+          const img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.onload = () => {
+            sphereMat.map = buildTexture(img);
+            sphereMat.map.needsUpdate = true;
+            sphereMat.needsUpdate = true;
+          };
+          img.src = photoURL;
+        }
+
+        // Outer glow shell
         const glowMat = new THREE.MeshBasicMaterial({
-          color: 0x8888ff,
+          color: 0x818cf8,
           transparent: true,
-          opacity: 0.18,
+          opacity: 0.22,
           side: THREE.BackSide,
         });
-        const glow = new THREE.Mesh(new THREE.SphereGeometry(11, 32, 32), glowMat);
-        group.add(glow);
+        group.add(new THREE.Mesh(new THREE.SphereGeometry(R * 1.55, 32, 32), glowMat));
 
-        // Sprite label "YOU"
-        const canvas = document.createElement('canvas');
-        canvas.width = 128; canvas.height = 48;
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'rgba(0,0,0,0)';
-        ctx.fillRect(0,0,128,48);
-        ctx.font = 'bold 22px sans-serif';
-        ctx.fillStyle = '#ffffff';
-        ctx.textAlign = 'center';
-        ctx.fillText('YOU', 64, 32);
-        const tex = new THREE.CanvasTexture(canvas);
-        const spriteMat = new THREE.SpriteMaterial({ map: tex, transparent: true });
-        const sprite = new THREE.Sprite(spriteMat);
-        sprite.scale.set(20, 8, 1);
-        sprite.position.set(0, 14, 0);
-        group.add(sprite);
+        // Second softer glow ring
+        const glowMat2 = new THREE.MeshBasicMaterial({
+          color: 0x6366f1,
+          transparent: true,
+          opacity: 0.08,
+          side: THREE.BackSide,
+        });
+        group.add(new THREE.Mesh(new THREE.SphereGeometry(R * 2.1, 32, 32), glowMat2));
+
+        // Name label sprite below sphere
+        const labelCanvas = document.createElement('canvas');
+        labelCanvas.width = 320; labelCanvas.height = 64;
+        const lc = labelCanvas.getContext('2d');
+        lc.font = 'bold 28px sans-serif';
+        lc.fillStyle = '#e0e7ff';
+        lc.textAlign = 'center';
+        lc.textBaseline = 'middle';
+        lc.fillText(name, 160, 32);
+        const labelTex = new THREE.CanvasTexture(labelCanvas);
+        const labelSprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: labelTex, transparent: true }));
+        labelSprite.scale.set(28, 7, 1);
+        labelSprite.position.set(0, -(R + 9), 0);
+        group.add(labelSprite);
 
         return group;
       })
