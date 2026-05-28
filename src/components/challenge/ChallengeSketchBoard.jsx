@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
+import { LayoutGrid, AlignJustify } from 'lucide-react';
 
 const CanvasErrorBoundary = ({ children }) => {
   const [hasError, setHasError] = React.useState(false);
@@ -49,8 +50,10 @@ const ChallengeSketchBoard = React.forwardRef(({
   fillAvailableHeight = false,
   scrollProxyHandlers
 }, ref) => {
+  const [isGraphPaper, setIsGraphPaper] = useState(false);
+
   if (!showSplitScreen) return null;
-  
+
   const isTabletPlacement = placement === 'tablet';
   const sideHeight = fillAvailableHeight ? '100%' : 'calc(100vh - 116px)';
   const sideMinHeight = fillAvailableHeight ? 0 : '400px';
@@ -67,11 +70,28 @@ const ChallengeSketchBoard = React.forwardRef(({
       position: isTabletPlacement || fillAvailableHeight ? 'relative' : 'sticky',
       top: isTabletPlacement || fillAvailableHeight ? 'auto' : '52px',
     }} {...(scrollProxyHandlers || {})}>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '6px' }}>
+        <button
+          onClick={() => setIsGraphPaper(v => !v)}
+          title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '5px',
+            padding: '5px 12px', borderRadius: '10px', border: '1px solid #e2e8f0',
+            background: isGraphPaper ? '#ede9fe' : '#f8fafc',
+            color: isGraphPaper ? '#7c3aed' : '#64748b',
+            fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer',
+          }}
+        >
+          {isGraphPaper ? <AlignJustify size={13} /> : <LayoutGrid size={13} />}
+          {isGraphPaper ? 'Lined' : 'Grid'}
+        </button>
+      </div>
       <CanvasErrorBoundary key={questionId}>
         <WorkingOutCanvas
           ref={ref}
           questionType={questionType}
           isSubmitted={isSubmitted}
+          isGraph={isGraphPaper}
         />
       </CanvasErrorBoundary>
     </div>

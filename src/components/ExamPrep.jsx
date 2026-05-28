@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
   Lock, Trophy, Sparkles, Clock, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
-  Flag, BookmarkPlus, X, Target, PenLine,
+  Flag, BookmarkPlus, X, Target, PenLine, LayoutGrid, AlignJustify,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -135,6 +135,8 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const [timeLeft, setTimeLeft] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const [showCanvas, setShowCanvas] = useState(true);
+  const [isGraphPaper, setIsGraphPaper] = useState(false);
+  const [sketchSnapshots, setSketchSnapshots] = useState({}); // { [questionId]: dataURL }
   const canvasRef = useRef(null);
   const examInputRef = useRef(null);
   const examFracDenRef = useRef(null);
@@ -205,7 +207,17 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     setShowFeedback(true);
   };
 
-  const advance = () => {
+  const advance = async () => {
+    // Save sketch snapshot for the current question, then clear canvas
+    if (canvasRef.current) {
+      try {
+        const dataURL = await canvasRef.current.exportImage({ force: false });
+        if (dataURL && q?.id) {
+          setSketchSnapshots(prev => ({ ...prev, [q.id]: dataURL }));
+        }
+      } catch (e) { /* ignore */ }
+      canvasRef.current.clear();
+    }
     if (idx + 1 >= total) {
       onFinish(answers);
     } else {
@@ -482,9 +494,25 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           {actionButton}
         </div>
         {/* Right: canvas fills full height */}
-        <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+        <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <button
+              onClick={() => setIsGraphPaper(v => !v)}
+              title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '5px',
+                padding: '5px 12px', borderRadius: '10px', border: '1px solid #e2e8f0',
+                background: isGraphPaper ? '#ede9fe' : '#f8fafc',
+                color: isGraphPaper ? '#7c3aed' : '#64748b',
+                fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer',
+              }}
+            >
+              {isGraphPaper ? <AlignJustify size={13} /> : <LayoutGrid size={13} />}
+              {isGraphPaper ? 'Lined' : 'Grid'}
+            </button>
+          </div>
           <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
+            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
           </div>
         </div>
       </div>
@@ -503,11 +531,29 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         {showCanvas && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 480 }}
+            animate={{ opacity: 1, height: 500 }}
             exit={{ opacity: 0, height: 0 }}
-            style={{ overflow: 'hidden', borderRadius: '20px' }}
+            style={{ overflow: 'hidden', borderRadius: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}
           >
-            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} />
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <button
+                onClick={() => setIsGraphPaper(v => !v)}
+                title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '5px',
+                  padding: '5px 12px', borderRadius: '10px', border: '1px solid #e2e8f0',
+                  background: isGraphPaper ? '#ede9fe' : '#f8fafc',
+                  color: isGraphPaper ? '#7c3aed' : '#64748b',
+                  fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer',
+                }}
+              >
+                {isGraphPaper ? <AlignJustify size={13} /> : <LayoutGrid size={13} />}
+                {isGraphPaper ? 'Lined' : 'Grid'}
+              </button>
+            </div>
+            <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+              <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

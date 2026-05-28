@@ -797,6 +797,39 @@ export const Y10_CH8E_QUESTIONS = [
         workingOut: ""
       }
     ],
+    graphData: {
+      geometry: {
+        width: 300,
+        points: {
+          "P": [0, 4],
+          "T": [4, 4],
+          "Q": [0, 0],
+          "L": [4, 0],
+          "M": [6, 0],
+          "N": [6, -2]
+        },
+        segments: [
+          { from: "P", to: "T", marks: 1 },
+          { from: "Q", to: "L", marks: 1 },
+          { from: "L", to: "M" },
+          { from: "P", to: "Q" },
+          { from: "T", to: "L" },
+          { from: "M", to: "N" },
+          { from: "P", to: "L" },
+          { from: "L", to: "N" }
+        ],
+        angles: [
+          { at: "Q", right: true },
+          { at: "T", right: true },
+          { at: "M", right: true }
+        ],
+        sideLabels: [
+          { between: ["Q", "L"], text: "80 m" },
+          { between: ["L", "M"], text: "40 m" },
+          { between: ["M", "N"], text: "60 m" }
+        ]
+      }
+    },
     subQuestions: [
       {
         id: "y10-8e-q7a",
@@ -1063,6 +1096,26 @@ export const Y10_CH8E_QUESTIONS = [
         workingOut: ""
       }
     ],
+    graphData: {
+      geometry: {
+        width: 300,
+        points: {
+          "A": [1.5, 3],
+          "B": [4.5, 3],
+          "C": [6, 0],
+          "D": [0, 0],
+          "O": [3, 2]
+        },
+        segments: [
+          { from: "A", to: "B", marks: 1 },
+          { from: "D", to: "C", marks: 1 },
+          { from: "A", to: "D" },
+          { from: "B", to: "C" },
+          { from: "A", to: "C" },
+          { from: "B", to: "D" }
+        ]
+      }
+    },
     subQuestions: [
       {
         id: "y10-8e-q11a",
@@ -1219,6 +1272,34 @@ export const Y10_CH8E_QUESTIONS = [
         workingOut: ""
       }
     ],
+    graphData: {
+      geometry: {
+        width: 300,
+        points: {
+          "B": [0, -3],
+          "A": [-4, 0],
+          "C": [4, 0],
+          "G": [0, 0],
+          "E": [0, 4],
+          "F": [-2.4, -1.2],
+          "D": [-4.8, 0.6]
+        },
+        segments: [
+          { from: "A", to: "B" },
+          { from: "B", to: "C" },
+          { from: "A", to: "C" },
+          { from: "B", to: "D" },
+          { from: "B", to: "E" },
+          { from: "D", to: "E" },
+          { from: "A", to: "D" },
+          { from: "C", to: "E" }
+        ],
+        angles: [
+          { at: "G", right: true },
+          { at: "F", right: true }
+        ]
+      }
+    },
     subQuestions: [
       {
         id: "y10-8e-q13a",

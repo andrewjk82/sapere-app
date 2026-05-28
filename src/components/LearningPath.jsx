@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Zap, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
@@ -259,8 +260,11 @@ const LearningPath = ({ profile }) => {
         </button>
       </div>
 
-      {/* 3D Graph overlay */}
-      {showGraph3D && <CurriculumGraph3D onClose={() => setShowGraph3D(false)} profile={profile} />}
+      {/* 3D Graph overlay — portal to escape Framer Motion stacking context */}
+      {showGraph3D && createPortal(
+        <CurriculumGraph3D onClose={() => setShowGraph3D(false)} profile={profile} />,
+        document.body
+      )}
 
       {/* Overview pills */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '14px', marginBottom: '22px' }}>

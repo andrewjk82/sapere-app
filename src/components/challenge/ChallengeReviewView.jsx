@@ -9,6 +9,7 @@ import ChallengeSketchBoard from './ChallengeSketchBoard';
 import WorkedSolutionSteps from './WorkedSolutionSteps';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
+import { answersMatch } from '../../utils/answerMatching';
 
 // Resolve the "correct answer" display text — handles MC index answers and
 // shuffled-option questions stored with `_shuffledAnswer`.
@@ -283,58 +284,104 @@ const ChallengeReviewView = ({
             )}
           </div>
 
-          {/* Your answer */}
-          <div style={{ padding: '20px 22px', borderRadius: '20px', background: isCorrect ? '#f0fdf4' : isPending ? '#fffbeb' : '#fef2f2', border: `1px solid ${isCorrect ? '#dcfce7' : isPending ? '#fef3c7' : '#fee2e2'}` }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-              {isPending
-                ? null
-                : isCorrect
-                  ? <CheckCircle2 size={20} color="#10b981" />
-                  : <XCircle size={20} color="#ef4444" />}
-              <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: statusBadge.text }}>
-                Your answer
-              </span>
-            </div>
-            {q.type === 'interactive_grid' ? (
-              Array.isArray(studentRaw) && studentRaw.length > 0 ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-start' }}>
-                  <InteractiveFractionGrid
-                    gridConfig={q.gridConfig || { type: 'rect', rows: 2, cols: 2 }}
-                    selectedCells={studentRaw}
-                    onChange={() => {}}
-                    disabled={true}
-                  />
-                  <div style={{ fontSize: '0.85rem', color: statusBadge.text, fontWeight: 700 }}>
-                    {studentRaw.length} panel{studentRaw.length !== 1 ? 's' : ''} shaded
+          {/* Your answer / sub-questions review */}
+          {q.subQuestions?.length > 0 ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              {q.subQuestions.map((sq, sIdx) => {
+                const sqKey = sq.id || sIdx;
+                const rawSqAns = typeof studentRaw === 'object' && studentRaw !== null ? studentRaw[sqKey] : '';
+                const sqAnsText = formatStudentAnswer(sq, rawSqAns);
+                const isSqCorrect = answersMatch(sqAnsText || '', sq.answer);
+                const showCorrect = !isSqCorrect && sq.answer;
+                
+                return (
+                  <div key={sqKey} style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+                      <div style={{ width: '24px', height: '24px', borderRadius: '6px', background: '#7c3aed', color: '#fff', display: 'grid', placeItems: 'center', fontSize: '0.75rem', fontWeight: 900, flexShrink: 0 }}>
+                        {String.fromCharCode(97 + sIdx)}
+                      </div>
+                      <MathView content={sq.question} graphData={sq.graphData || q.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
+                    </div>
+                    
+                    {/* Student's answer for this sub-question */}
+                    <div style={{ padding: '12px 14px', borderRadius: '12px', background: isSqCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isSqCorrect ? '#dcfce7' : '#fee2e2'}`, display: 'flex', alignItems: 'center', gap: '8px', marginBottom: showCorrect ? '8px' : 0 }}>
+                      {isSqCorrect ? <CheckCircle2 size={16} color="#10b981" /> : <XCircle size={16} color="#ef4444" />}
+                      <span style={{ fontSize: '0.75rem', fontWeight: 800, color: isSqCorrect ? '#065f46' : '#991b1b', textTransform: 'uppercase', marginRight: '6px' }}>Your answer:</span>
+                      {sqAnsText ? (
+                        <MathView content={wrapMath(sqAnsText)} style={{ color: isSqCorrect ? '#065f46' : '#991b1b', fontWeight: 600, fontSize: '0.92rem' }} />
+                      ) : (
+                        <span style={{ color: '#94a3b8', fontStyle: 'italic', fontSize: '0.92rem' }}>No answer recorded</span>
+                      )}
+                    </div>
+                    
+                    {/* Correct answer if wrong */}
+                    {showCorrect && (
+                      <div style={{ padding: '12px 14px', borderRadius: '12px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <CheckCircle2 size={16} color="#10b981" />
+                        <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#065f46', textTransform: 'uppercase', marginRight: '6px' }}>Correct answer:</span>
+                        <MathView content={wrapMath(String(sq.answer))} style={{ color: '#065f46', fontWeight: 600, fontSize: '0.92rem' }} />
+                      </div>
+                    )}
                   </div>
-                </div>
-              ) : (
-                <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No panels shaded</div>
-              )
-            ) : studentText ? (
-              <MathView content={wrapMath(studentText)} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
-            ) : (
-              <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>
-            )}
-          </div>
-
-          {/* Correct answer (only when student got it wrong / different) */}
-          {!isCorrect && !isPending && (q.type === 'interactive_grid' ? q.answer : correctText) && (
-            <div style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid #dcfce7' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <CheckCircle2 size={20} color="#10b981" />
-                <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#065f46' }}>
-                  Correct answer
-                </span>
-              </div>
-              {q.type === 'interactive_grid' ? (
-                <div style={{ fontSize: '0.95rem', color: '#065f46', fontWeight: 800 }}>
-                  Shade exactly {q.answer} panel{Number(q.answer) !== 1 ? 's' : ''}
-                </div>
-              ) : (
-                <MathView content={wrapMath(correctText)} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
-              )}
+                );
+              })}
             </div>
+          ) : (
+            <>
+              {/* Your answer */}
+              <div style={{ padding: '20px 22px', borderRadius: '20px', background: isCorrect ? '#f0fdf4' : isPending ? '#fffbeb' : '#fef2f2', border: `1px solid ${isCorrect ? '#dcfce7' : isPending ? '#fef3c7' : '#fee2e2'}` }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                  {isPending
+                    ? null
+                    : isCorrect
+                      ? <CheckCircle2 size={20} color="#10b981" />
+                      : <XCircle size={20} color="#ef4444" />}
+                  <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: statusBadge.text }}>
+                    Your answer
+                  </span>
+                </div>
+                {q.type === 'interactive_grid' ? (
+                  Array.isArray(studentRaw) && studentRaw.length > 0 ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-start' }}>
+                      <InteractiveFractionGrid
+                        gridConfig={q.gridConfig || { type: 'rect', rows: 2, cols: 2 }}
+                        selectedCells={studentRaw}
+                        onChange={() => {}}
+                        disabled={true}
+                      />
+                      <div style={{ fontSize: '0.85rem', color: statusBadge.text, fontWeight: 700 }}>
+                        {studentRaw.length} panel{studentRaw.length !== 1 ? 's' : ''} shaded
+                      </div>
+                    </div>
+                  ) : (
+                    <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No panels shaded</div>
+                  )
+                ) : studentText ? (
+                  <MathView content={wrapMath(studentText)} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
+                ) : (
+                  <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>
+                )}
+              </div>
+
+              {/* Correct answer (only when student got it wrong / different) */}
+              {!isCorrect && !isPending && (q.type === 'interactive_grid' ? q.answer : correctText) && (
+                <div style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid #dcfce7' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+                    <CheckCircle2 size={20} color="#10b981" />
+                    <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#065f46' }}>
+                      Correct answer
+                    </span>
+                  </div>
+                  {q.type === 'interactive_grid' ? (
+                    <div style={{ fontSize: '0.95rem', color: '#065f46', fontWeight: 800 }}>
+                      Shade exactly {q.answer} panel{Number(q.answer) !== 1 ? 's' : ''}
+                    </div>
+                  ) : (
+                    <MathView content={wrapMath(correctText)} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
+                  )}
+                </div>
+              )}
+            </>
           )}
 
           {/* Student's working out — drawings saved on the sketch pad during the quiz */}
@@ -404,7 +451,7 @@ const ChallengeReviewView = ({
                   <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
                     Part ({String.fromCharCode(97 + sqIdx)}) — Worked Solution
                   </div>
-                  <WorkedSolutionSteps question={sq} graphData={q.graphData} />
+                  <WorkedSolutionSteps question={sq} graphData={sq.graphData || q.graphData} />
                 </div>
               )
             ))

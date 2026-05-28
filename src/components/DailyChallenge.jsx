@@ -1363,7 +1363,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                             return (
                               <div key={sIdx} style={{ padding: '16px', background: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
                                 <div style={{ fontWeight: 700, marginBottom: '8px', color: '#334155' }}>
-                                  ({String.fromCharCode(97 + sIdx)}) <MathView content={toDisplayText(sq.text || sq.question)} />
+                                  ({String.fromCharCode(97 + sIdx)}) <MathView content={toDisplayText(sq.text || sq.question)} graphData={sq.graphData || qData.graphData} />
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: sIsCorrect ? '#10b981' : '#f43f5e', fontWeight: 700, flexWrap: 'wrap' }}>
                                   {sIsCorrect ? <Check size={16} /> : <X size={16} />}

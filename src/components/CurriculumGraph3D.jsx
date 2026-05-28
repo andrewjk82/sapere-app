@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { X, ZoomIn, ZoomOut, RotateCcw, Info } from 'lucide-react';
+import './learning-path.css';
 
 // ─── Strand detection ─────────────────────────────────────────────────────────
 // Maps a subject title to a canonical strand key.

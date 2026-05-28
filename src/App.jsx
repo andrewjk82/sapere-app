@@ -961,9 +961,10 @@ function App() {
         </ErrorBoundary>
       </div>
 
-      {/* ── Journey Map overlay (App-level so it's always truly full-screen) ── */}
-      {showJourneyMap && (
-        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />
+      {/* ── Journey Map overlay — rendered via portal to escape filter/stacking context ── */}
+      {showJourneyMap && createPortal(
+        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />,
+        document.body
       )}
 
       {/* ── Version Update Banner ── */}

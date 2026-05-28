@@ -165,7 +165,7 @@ const pageHasInk = (pageStrokes = []) =>
     !stroke?.isEraser && Array.isArray(stroke.points) && stroke.points.length > 0
   );
 
-const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, ref) => {
+const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp }, ref) => {
   const bgCanvasRef = useRef(null);
   const liveCanvasRef = useRef(null);
   const displayCanvasRef = useRef(null); // top layer: tip + pointer events
@@ -221,7 +221,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   strokeColorRef.current = strokeColor;
   strokeWidthRef.current = strokeWidth;
 
-  const isGraph = questionType === 'graph_sketch';
+  const isGraph = isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch';
 
   // ─── Cached drawing contexts ──────────────────────────────────────────────
   // NOTE: `desynchronized: true` promotes each canvas to an opaque hardware
@@ -857,6 +857,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted }, r
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
     backgroundSize: '20px 20px',
+    backgroundPosition: 'calc(50% - 10px) calc(50% + 10px)',
   } : {
     backgroundImage: `linear-gradient(to bottom, transparent 31px, #dbeafe 32px)`,
     backgroundSize: '100% 32px',
