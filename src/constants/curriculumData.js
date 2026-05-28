@@ -1956,12 +1956,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y10-8',
       title: 'Chapter 8: Review of congruence and similarity',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y10-8a', code: '8A', title: 'Review of triangles' },
         { id: 'y10-8b', code: '8B', title: 'Congruence' },
         { id: 'y10-8c', code: '8C', title: 'Enlargements and similarity' },
-        { id: 'y10-8d', code: '8D', title: 'Similarity and intervals within a triangle' }
+        { id: 'y10-8d', code: '8D', title: 'Similarity and intervals within a triangle' },
+        { id: 'y10-8e', code: '8E', title: 'Revision' }
       ]
     },
     {
