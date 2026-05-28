@@ -460,7 +460,7 @@ export const Y9_CH11B_QUESTIONS = [
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    question: "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n|---|---|---|---|\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| **b** | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| **e** | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |",
+    question: "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
     a: "a) (4, 8), b) (12, 15), c) (6, 1), d) (4.6, 3.75), e) (3.5, 0.1), f) (4.8, 3)",
     solution: "Using the midpoint formula and its rearrangements:\n- **a**: \\(M = \\left(\\frac{2+6}{2}, \\frac{5+11}{2}\\right) = (4, 8)\\)\n- **b**: \\(A = 2M - B = 2(8, 10) - (4, 5) = (16, 20) - (4, 5) = (12, 15)\\)\n- **c**: \\(B = 2M - A = 2(2, -2) - (-2, -5) = (4, -4) - (-2, -5) = (6, 1)\\)\n- **d**: \\(M = \\left(\\frac{1.5+7.7}{2}, \\frac{5.3+2.2}{2}\\right) = (4.6, 3.75)\\)\n- **e**: \\(A = 2M - B = 2(0.5, -1.5) - (-2.5, -3.1) = (1, -3) - (-2.5, -3.1) = (3.5, 0.1)\\)\n- **f**: \\(B = 2M - A = 2(0, 4) - (-4.8, 5) = (0, 8) - (-4.8, 5) = (4.8, 3)\\)",
     t: "The midpoint of an interval",
@@ -1245,38 +1245,16 @@ export const Y9_CH11B_QUESTIONS = [
       }
     ],
     graphData: {
-      geometry: {
-        width: 300,
-        points: {
-          "A": [0, 0],
-          "B": [4, 8],
-          "C": [12, 10],
-          "D": [2, 6],
-          "M": [2, 4],
-          "N": [8, 9],
-          "O": [7, 8],
-          "P": [1, 3]
+      jsxGraph: {
+        width: 350,
+        height: 300,
+        boundingbox: [-2, 12, 14, -2],
+        showConstructionPoints: true,
+        boardOptions: {
+          axis: true,
+          grid: true
         },
-        segments: [
-          { from: "A", to: "B" },
-          { from: "B", to: "C" },
-          { from: "C", to: "D" },
-          { from: "D", to: "A" },
-          { from: "M", to: "N", color: "blue" },
-          { from: "N", to: "O", color: "blue" },
-          { from: "O", to: "P", color: "blue" },
-          { from: "P", to: "M", color: "blue" }
-        ],
-        labelOffsets: {
-          "A": [-15, -15],
-          "B": [0, 15],
-          "C": [15, 10],
-          "D": [-15, 10],
-          "M": [-15, -5],
-          "N": [10, 10],
-          "O": [10, -10],
-          "P": [-15, -5]
-        }
+        script: "board.suspendUpdate();\nvar pA = board.create('point', [0, 0], {size: 3, color: 'black', name: 'A(0, 0)', withLabel: true, label: {offset: [-20, -15]}});\nvar pB = board.create('point', [4, 8], {size: 3, color: 'black', name: 'B(4, 8)', withLabel: true, label: {offset: [5, 15]}});\nvar pC = board.create('point', [12, 10], {size: 3, color: 'black', name: 'C(12, 10)', withLabel: true, label: {offset: [10, 5]}});\nvar pD = board.create('point', [2, 6], {size: 3, color: 'black', name: 'D(2, 6)', withLabel: true, label: {offset: [-25, 15]}});\nvar pM = board.create('point', [2, 4], {size: 3, color: 'blue', name: 'M(2, 4)', withLabel: true, label: {offset: [-20, -15]}});\nvar pN = board.create('point', [8, 9], {size: 3, color: 'blue', name: 'N(8, 9)', withLabel: true, label: {offset: [5, 15]}});\nvar pO = board.create('point', [7, 8], {size: 3, color: 'blue', name: 'O(7, 8)', withLabel: true, label: {offset: [5, -15]}});\nvar pP = board.create('point', [1, 3], {size: 3, color: 'blue', name: 'P(1, 3)', withLabel: true, label: {offset: [-20, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.create('polygon', [pM, pN, pO, pP], {fillColor: '#bfdbfe', fillOpacity: 0.3, borders: {strokeColor: 'blue', strokeWidth: 2}});\nboard.unsuspendUpdate();"
       }
     }
   }
