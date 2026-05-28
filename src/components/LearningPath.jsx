@@ -24,7 +24,13 @@ const LearningPath = ({ profile }) => {
   const [loading, setLoading] = useState(true);
   const [selectedChapter, setSelectedChapter] = useState(null); // { chapter, state }
   const [selectedTopic, setSelectedTopic] = useState(null);    // { topic, chapter }
-  const [showGraph3D, setShowGraph3D] = useState(false);
+  const [showGraph3D, setShowGraph3D] = useState(() => {
+    if (sessionStorage.getItem('sapere:open-journey-map')) {
+      sessionStorage.removeItem('sapere:open-journey-map');
+      return true;
+    }
+    return false;
+  });
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
