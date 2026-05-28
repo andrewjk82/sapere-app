@@ -95,6 +95,16 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 - If a question has sub-questions (`subQuestions` array) and all sub-questions refer to the same diagram (e.g. "in the diagram shown"), define `graphData` ONCE on the parent question level. Set `graphData: null` or omit it on the individual sub-question objects.
 - If the sub-questions require different diagrams, define `graphData` directly inside each sub-question object, and set the parent's `graphData` to `null`.
 
+**Geometry Diagrams (graphData.geometry):**
+- **Mathematical Accuracy:** All coordinates, intersections, perpendicularity, and side lengths MUST be mathematically consistent and validated. Do not guess coordinates. For example, if a point $F$ is defined as the perpendicular intersection of two lines, calculate its coordinates exactly.
+- **No Degenerate Triangles:** Ensure that no three vertices of a triangle in the proof are collinear (which would render it as a straight line segment instead of a triangle).
+- **Proportions and Orientation:** Verify that the coordinates reflect the visual hierarchy (e.g., if a vertex is at the bottom in the textbook, it must have the lowest y-coordinate, and the figure should be balanced).
+- **Tick Marks and Angle Labels:** Use `ticks: 1` or `ticks: 2` on segments to indicate equal lengths (e.g., `{ from: "B", to: "D", ticks: 1 }`). Use `labelPos` for angles (especially right angles) to ensure the marker is drawn inside the correct quadrant.
+
+**Terminology & Proof Logic:**
+- **Australian NSW Curriculum Terminology:** NEVER use American terms or acronyms like **"CPCTC"** (Corresponding Parts of Congruent Triangles are Congruent). Instead, write out: *"corresponding angles/sides of congruent triangles are equal"*.
+- **Logical Proof Flow:** Do not assume properties that are not explicitly marked as given in the diagram. For example, if $AB = CB$ is not given, prove it first (e.g., using SAS congruence on $\Delta ABG \equiv \Delta CBG$) rather than stating it is given.
+
 ### Topic ID map (CambridgeMATHS Year 11/12 Advanced)
 
 **Year 11 (y11a-)**
