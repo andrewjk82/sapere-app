@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight } from 'lucide-react';
 import StatCard from './StatCard';
@@ -238,9 +239,10 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
   return (
     <>
-      {/* Journey Map full-screen overlay */}
-      {showJourneyMap && (
-        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />
+      {/* Journey Map — rendered via portal so fixed positioning escapes motion stacking context */}
+      {showJourneyMap && createPortal(
+        <CurriculumGraph3D profile={profile} onClose={() => setShowJourneyMap(false)} />,
+        document.body
       )}
 
       <style>{`
