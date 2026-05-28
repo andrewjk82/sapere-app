@@ -432,7 +432,7 @@ const ChallengeQuizView = ({
                     <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + sIdx)}
                     </div>
-                    <MathView content={sq.question} graphData={sq.graphData || currentQuestion.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
+                    <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                   </div>
 
                   {sq.type === 'multiple_choice' ? (

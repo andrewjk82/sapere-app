@@ -335,7 +335,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                     <div style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#7c3aed', color: '#fff', display: 'grid', placeItems: 'center', fontSize: '0.8rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + i)}
                     </div>
-                    <MathView content={sq.question} graphData={sq.graphData || q.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
+                    <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
                   </div>
                   {sq.type === 'multiple_choice' ? (
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>

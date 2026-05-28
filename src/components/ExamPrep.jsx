@@ -477,14 +477,17 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   if (isWide && showCanvas) {
     return (
       <div style={{
-        display: 'flex', gap: '16px', alignItems: 'stretch',
-        height: 'calc(100vh - 80px)', // fill viewport minus page chrome
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '16px',
+        height: 'calc(100vh - 80px)',
+        alignItems: 'stretch',
       }}>
         {/* Left: question + answer + button */}
         <div className="app-panel" style={{
           padding: '28px', borderRadius: '28px',
           display: 'flex', flexDirection: 'column', gap: '16px',
-          flex: '0 0 46%', minWidth: 0, overflow: 'auto',
+          minWidth: 0, overflow: 'auto',
         }}>
           {header}
           {progressBar}
@@ -494,7 +497,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           {actionButton}
         </div>
         {/* Right: canvas fills full height */}
-        <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ minWidth: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <button
               onClick={() => setIsGraphPaper(v => !v)}

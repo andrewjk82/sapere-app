@@ -300,7 +300,7 @@ const ChallengeReviewView = ({
                       <div style={{ width: '24px', height: '24px', borderRadius: '6px', background: '#7c3aed', color: '#fff', display: 'grid', placeItems: 'center', fontSize: '0.75rem', fontWeight: 900, flexShrink: 0 }}>
                         {String.fromCharCode(97 + sIdx)}
                       </div>
-                      <MathView content={sq.question} graphData={sq.graphData || q.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
+                      <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
                     </div>
                     
                     {/* Student's answer for this sub-question */}
@@ -451,7 +451,7 @@ const ChallengeReviewView = ({
                   <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
                     Part ({String.fromCharCode(97 + sqIdx)}) — Worked Solution
                   </div>
-                  <WorkedSolutionSteps question={sq} graphData={sq.graphData || q.graphData} />
+                  <WorkedSolutionSteps question={sq} graphData={sq.graphData} />
                 </div>
               )
             ))
