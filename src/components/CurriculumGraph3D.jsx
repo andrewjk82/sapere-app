@@ -245,32 +245,47 @@ export default function CurriculumGraph3D({ onClose, profile }) {
       .nodeThreeObject(node => {
         // ── Year label sprite ────────────────────────────────────────────────
         if (node.nodeType === 'year') {
-          const canvas = document.createElement('canvas');
-          canvas.width = 256; canvas.height = 80;
-          const ctx = canvas.getContext('2d');
-
-          // Background pill
           const isCurrent = node.label === currentYear;
-          ctx.clearRect(0, 0, 256, 80);
+          const W = 320, H = 96;
+          const canvas = document.createElement('canvas');
+          canvas.width = W; canvas.height = H;
+          const ctx = canvas.getContext('2d');
+          ctx.clearRect(0, 0, W, H);
+
+          // Rounded pill — manual path so roundRect isn't needed
+          const rx = 36, x = 8, y = 8, w = W - 16, h = H - 16;
           ctx.beginPath();
-          ctx.roundRect(8, 12, 240, 56, 28);
-          ctx.fillStyle = isCurrent ? 'rgba(99,102,241,0.85)' : 'rgba(20,20,40,0.75)';
+          ctx.moveTo(x + rx, y);
+          ctx.lineTo(x + w - rx, y);
+          ctx.quadraticCurveTo(x + w, y, x + w, y + rx);
+          ctx.lineTo(x + w, y + h - rx);
+          ctx.quadraticCurveTo(x + w, y + h, x + w - rx, y + h);
+          ctx.lineTo(x + rx, y + h);
+          ctx.quadraticCurveTo(x, y + h, x, y + h - rx);
+          ctx.lineTo(x, y + rx);
+          ctx.quadraticCurveTo(x, y, x + rx, y);
+          ctx.closePath();
+          ctx.fillStyle = isCurrent ? 'rgba(99,102,241,0.92)' : 'rgba(15,15,35,0.82)';
           ctx.fill();
-          ctx.strokeStyle = node.color.slice(0, 7) + (isCurrent ? 'ff' : 'aa');
-          ctx.lineWidth = 3;
+          const hexColor = node.color.slice(0, 7);
+          ctx.strokeStyle = hexColor;
+          ctx.lineWidth = isCurrent ? 4 : 3;
           ctx.stroke();
 
           // Text
-          ctx.font = `bold ${isCurrent ? 28 : 24}px sans-serif`;
+          ctx.font = `bold ${isCurrent ? 38 : 32}px sans-serif`;
           ctx.fillStyle = '#ffffff';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
-          ctx.fillText(node.label, 128, 40);
+          ctx.fillText(node.label, W / 2, H / 2);
 
           const tex = new THREE.CanvasTexture(canvas);
-          const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false }));
-          sprite.scale.set(28, 9, 1);
-          sprite.position.set(0, 20, 0);  // float above the sphere
+          const sprite = new THREE.Sprite(
+            new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false })
+          );
+          // Scale and position: year spheres have radius ~14, so float well above
+          sprite.scale.set(48, 14, 1);
+          sprite.position.set(0, 28, 0);
           return sprite;
         }
 
