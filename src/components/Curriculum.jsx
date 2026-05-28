@@ -30,6 +30,7 @@ import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
 import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
 import { Y9_CH11_QUESTIONS } from '../constants/seedYear9Ch11Questions.js';
 import { Y9_CH11B_QUESTIONS } from '../constants/seedYear9Ch11BQuestions.js';
+import { Y9_CH11C_QUESTIONS } from '../constants/seedYear9Ch11CQuestions.js';
 import { Y8_CH1C_QUESTIONS } from '../constants/seedYear8Ch1Questions.js';
 import { Y8_CH2H_QUESTIONS } from '../constants/seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
@@ -128,6 +129,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-8', chapterTitle: 'Chapter 8: Index laws', topicId: 'y9-8a', topicCode: '8A', topicTitle: 'Index laws', year: 'Year 9', seed: Y9_CH8A_QUESTIONS, label: 'Y9 Ch8 · Index laws' },
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11a', topicCode: '11A', topicTitle: 'Distance between two points', year: 'Year 9', seed: Y9_CH11_QUESTIONS, label: 'Y9 Ch11 · Distance between two points' },
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11b', topicCode: '11B', topicTitle: 'The midpoint of an interval', year: 'Year 9', seed: Y9_CH11B_QUESTIONS, label: 'Y9 Ch11 · The midpoint of an interval' },
+  { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11c', topicCode: '11C', topicTitle: 'The gradient of a line', year: 'Year 9', seed: Y9_CH11C_QUESTIONS, label: 'Y9 Ch11 · The gradient of a line' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1c', topicCode: '1C', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1C_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
   { chapterId: 'y8-2', chapterTitle: 'Chapter 2: Fractions and decimals', topicId: 'y8-2h', topicCode: '2H', topicTitle: 'Review of fractions and decimals', year: 'Year 8', seed: Y8_CH2H_QUESTIONS, label: 'Y8 Ch2 · Review' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: Review of factors and indices', topicId: 'y8-3f', topicCode: '3F', topicTitle: 'Review of factors and indices', year: 'Year 8', seed: Y8_CH3F_QUESTIONS, label: 'Y8 Ch3 · Review' },
