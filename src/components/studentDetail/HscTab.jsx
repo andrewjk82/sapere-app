@@ -54,7 +54,7 @@ const HscTab = ({
 
   return (
     <div style={{ display: "grid", gap: "24px" }}>
-      <HscScoreChart hscRecords={hscRecords} />
+      <HscScoreChart hscRecords={hscRecords} student={student} />
 
       {/* ── HSC Moderation Inputs ── */}
       <div style={{ ...styles.card, padding: "20px 24px" }} className="profile-card-mobile">

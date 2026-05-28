@@ -1,11 +1,12 @@
 import React from 'react';
+import { calcProjectedMark } from '../constants/hscBandData';
 
 const WIDTH = 760;
 const HEIGHT = 280;
 const PAD_X = 54;
 const PAD_Y = 42;
 
-const HscScoreChart = ({ hscRecords }) => {
+const HscScoreChart = ({ hscRecords, student }) => {
   const points = [...(hscRecords || [])]
     .filter((r) => r.examDate && Number(r.total) > 0)
     .sort((a, b) => String(a.examDate).localeCompare(String(b.examDate)))
@@ -13,6 +14,16 @@ const HscScoreChart = ({ hscRecords }) => {
       ...r,
       percentage: Number(r.percentage ?? ((Number(r.score) / Number(r.total)) * 100)),
     }));
+
+  const course = Array.isArray(student?.assignedCourse) ? student.assignedCourse[0] : (student?.assignedCourse || '');
+  const projectedPoints = (() => {
+    if (!student?.schoolSubjectRank || !student?.internalRank || !student?.internalTotal || points.length === 0) return [];
+    return points.map((_, i) => {
+      const avg = points.slice(0, i + 1).reduce((s, p) => s + p.percentage, 0) / (i + 1);
+      const r = calcProjectedMark({ schoolRank: student.schoolSubjectRank, internalRank: student.internalRank, internalTotal: student.internalTotal, pastPaperAvg: avg, course });
+      return r ? r.projectedMark : null;
+    }).filter((v) => v != null);
+  })();
 
   if (points.length === 0) {
     return (
@@ -31,8 +42,9 @@ const HscScoreChart = ({ hscRecords }) => {
     );
   }
 
-  const minScore = Math.max(0, Math.min(...points.map((p) => p.percentage)) - 8);
-  const maxScore = Math.min(100, Math.max(...points.map((p) => p.percentage)) + 8);
+  const allValues = [...points.map((p) => p.percentage), ...projectedPoints];
+  const minScore = Math.max(0, Math.min(...allValues) - 8);
+  const maxScore = Math.min(100, Math.max(...allValues) + 8);
   const range = Math.max(1, maxScore - minScore);
   const xFor = (idx) => points.length === 1
     ? WIDTH / 2
@@ -41,7 +53,9 @@ const HscScoreChart = ({ hscRecords }) => {
 
   const path = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xFor(i)} ${yFor(p.percentage)}`).join(' ');
   const fillPath = `${path} L ${xFor(points.length - 1)} ${HEIGHT - PAD_Y} L ${xFor(0)} ${HEIGHT - PAD_Y} Z`;
+  const projPath = projectedPoints.map((v, i) => `${i === 0 ? 'M' : 'L'} ${xFor(i)} ${yFor(v)}`).join(' ');
   const latest = points[points.length - 1];
+  const latestProjected = projectedPoints.length > 0 ? projectedPoints[projectedPoints.length - 1] : null;
 
   return (
     <div style={{
@@ -60,6 +74,11 @@ const HscScoreChart = ({ hscRecords }) => {
           <div style={{ fontSize: '2.3rem', fontWeight: 950, lineHeight: 1, marginTop: '8px' }}>
             {latest.percentage.toFixed(1)}%
           </div>
+          {latestProjected != null && (
+            <div style={{ fontSize: '0.82rem', fontWeight: 800, marginTop: '6px', color: '#fde68a' }}>
+              Projected HSC: {latestProjected.toFixed(1)}
+            </div>
+          )}
         </div>
         <div style={{ textAlign: 'right', fontWeight: 800, opacity: 0.9 }}>
           <div>{latest.paper}</div>
@@ -90,6 +109,12 @@ const HscScoreChart = ({ hscRecords }) => {
         })}
         {points.length > 1 && <path d={fillPath} fill="url(#hscFill)" />}
         <path d={path} fill="none" stroke="url(#hscLine)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+        {projPath && projectedPoints.length > 0 && (
+          <path d={projPath} fill="none" stroke="#fbbf24" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="8 5" opacity="0.9" />
+        )}
+        {projectedPoints.map((v, i) => (
+          <circle key={`proj-${i}`} cx={xFor(i)} cy={yFor(v)} r="5" fill="#fbbf24" opacity="0.9" />
+        ))}
         {points.map((p, i) => (
           <g key={p.id || `${p.examDate}-${i}`}>
             <circle cx={xFor(i)} cy={yFor(p.percentage)} r="8" fill="#ffffff" opacity="0.95" />
@@ -100,6 +125,18 @@ const HscScoreChart = ({ hscRecords }) => {
           </g>
         ))}
       </svg>
+      {projectedPoints.length > 0 && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginTop: '10px', fontSize: '0.72rem', fontWeight: 800, opacity: 0.75 }}>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="white" strokeWidth="2.5" strokeLinecap="round" /></svg>
+            Raw score
+          </span>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="#fbbf24" strokeWidth="2.5" strokeDasharray="5 3" strokeLinecap="round" /></svg>
+            Projected HSC
+          </span>
+        </div>
+      )}
     </div>
   );
 };
