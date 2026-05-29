@@ -417,5 +417,36 @@ export const Y9_CH5I_QUESTIONS = [
       }
     ],
     "graphData": null
+  },
+  {
+    "id": "y9-5i-q10c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "question": "A person has twice as many 20-cent coins as 10-cent coins. If their total value is \\(\\$25\\), how many 10-cent coins are there?",
+    "a": "50",
+    "t": "Revision",
+    "hint": "Let the number of 10-cent coins be \\(x\\). Then 20-cent coins = \\(2x\\). Write the total value in cents.",
+    "solution": "Let the number of 10-cent coins be \\(x\\). Then the number of 20-cent coins is \\(2x\\).\n\nTotal value = \\(10(x) + 20(2x) = 2500\\) cents.\n\n\\(10x + 40x = 2500 \\Rightarrow 50x = 2500 \\Rightarrow x = 50\\).\n\nSo there are 50 of the 10-cent coins.",
+    "solutionSteps": [
+      {
+        "explanation": "Let x = number of 10-cent coins, so 20-cent coins = 2x.",
+        "workingOut": "\\$25 = 2500 \\text{ cents}"
+      },
+      {
+        "explanation": "Write the total value equation in cents.",
+        "workingOut": "10x + 20(2x) = 2500"
+      },
+      {
+        "explanation": "Simplify.",
+        "workingOut": "10x + 40x = 50x = 2500"
+      },
+      {
+        "explanation": "Solve for x.",
+        "workingOut": "x = 50"
+      }
+    ],
+    "graphData": null
   }
 ];
+
