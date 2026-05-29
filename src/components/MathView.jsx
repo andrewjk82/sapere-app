@@ -121,7 +121,7 @@ const toDisplayText = (value, fallback = '') => {
   str = parts2.join('');
 
   // 5. Final cleanup: If entire string is equation
-  if (!str.includes('$') && str.includes('=') && !/[a-zA-Z]{3,}/.test(str)) {
+  if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[') && str.includes('=') && !/[a-zA-Z]{3,}/.test(str)) {
     str = `$${str.trim()}$`;
   }
 
