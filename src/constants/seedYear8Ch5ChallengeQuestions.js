@@ -108,15 +108,19 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1b_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom lines are parallel, and the two main transversals are parallel. The bottom-left angle is trisected into three equal angles $\\beta$. Find the value of $\\alpha$.",
-    "a": "60",
-    "solution": "1. The top-right angle is $76^\\circ$. By alternate angles, the interior angle $\\gamma = 76^\\circ$.\n2. The angles $\\alpha$, $\\gamma$, and the adjacent angle lie on a straight line or form co-interior relations. From the geometry of the parallel lines, we have:\n   $$\\alpha = 180^\\circ - 76^\\circ - 44^\\circ = 60^\\circ$$",
+    "question": "In the diagram, the top and bottom lines are parallel, and the two slanted transversals are parallel ($AC \\parallel FE$). The angle at the top-right is $76^\\circ$. The angle $\\alpha$ is between the right transversal and the top parallel line (below the $76^\\circ$ angle). Find the value of $\\alpha$.",
+    "a": "104",
+    "solution": "1. The two parallel slanted transversals cut the top parallel line at the same angles.\n2. The angle of $76^\\circ$ and $\\alpha$ are supplementary (they form a straight line along the top parallel line), but $\\alpha$ is above the top line, which means:\n   $$\\alpha + 76^\\circ = 180^\\circ$$\n   Wait — looking at the diagram, $\\alpha$ and $76^\\circ$ are co-interior angles between the two parallel transversals, so:\n   $$\\alpha = 180^\\circ - 76^\\circ = 104^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "Use angles on a straight line at the right transversal.",
+    "hint": "$\\alpha$ and $76^\\circ$ are co-interior angles between the two parallel transversals, so they add to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Find $\\alpha$ by subtracting $\\gamma$ ($76^\\circ$) and $44^\\circ$ from $180^\\circ$.",
-        "workingOut": "\\alpha = 180^\\circ - 76^\\circ - 44^\\circ = 60"
+        "explanation": "$\\alpha$ and $76^\\circ$ are co-interior (same-side interior) angles between the two parallel transversals.",
+        "workingOut": "\\alpha + 76^\\circ = 180^\\circ"
+      },
+      {
+        "explanation": "Solve for $\\alpha$.",
+        "workingOut": "\\alpha = 180^\\circ - 76^\\circ = 104"
       }
     ],
     "graphData": {
@@ -206,14 +210,14 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1b_gamma",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom lines are parallel. Find the value of $\\gamma$.",
+    "question": "In the diagram, the top and bottom lines are parallel, and the two slanted transversals are parallel. The angle at the top-right (above the top line) is $76^\\circ$. Find the value of $\\gamma$, which is the angle directly below the top line at the same intersection.",
     "a": "76",
-    "solution": "1. The top-right angle is $76^\\circ$.\n2. The angle $\\gamma$ and the top-right angle are alternate angles between the top parallel line and the slanted transversal:\n   $$\\gamma = 76^\\circ$$",
+    "solution": "The $76^\\circ$ angle and $\\gamma$ are vertically opposite angles at the top-right intersection:\n$$\\gamma = 76^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "Identify the alternate angle relationship.",
+    "hint": "$\\gamma$ and $76^\\circ$ are vertically opposite at the same intersection point.",
     "solutionSteps": [
       {
-        "explanation": "Use alternate angles to find $\\gamma$.",
+        "explanation": "Vertically opposite angles are equal.",
         "workingOut": "\\gamma = 76"
       }
     ],
@@ -253,23 +257,23 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1c_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom lines are parallel. The reflex angle at the top-left is $290^\\circ$, and the interior angle at the middle is $110^\\circ$. Find the value of $\\alpha$.",
-    "a": "110",
-    "solution": "1. The reflex angle is $290^\\circ$. The interior angle of this vertex is $360^\\circ - 290^\\circ = 70^\\circ$.\n2. Draw a helper line parallel to the top and bottom lines through the middle vertex.\n3. The interior angle of $110^\\circ$ is split into two parts: the top part (which is $70^\\circ$ by alternate angles with the top $70^\\circ$ angle) and the bottom part.\n4. The bottom part of the angle is $110^\\circ - 70^\\circ = 40^\\circ$.\n5. By co-interior angles, the angle $\\alpha$ and this bottom part of $40^\\circ$ sum to $180^\\circ$:\n   $$\\alpha = 180^\\circ - 40^\\circ = 110^\\circ$$",
+    "question": "In the diagram, the top and bottom lines are parallel. A zigzag line connects the two parallel lines, making a reflex angle of $290^\\circ$ at the top-left vertex and an angle of $110^\\circ$ at the middle vertex. The angle $\\alpha$ is at the bottom-left where the zigzag meets the bottom parallel line. Find the value of $\\alpha$.",
+    "a": "140",
+    "solution": "1. The reflex angle at the top-left is $290^\\circ$, so the interior angle at that vertex is $360^\\circ - 290^\\circ = 70^\\circ$.\n2. Draw a helper line through the middle vertex, parallel to both horizontal lines.\n3. This splits the $110^\\circ$ angle into two parts: the upper part equals $70^\\circ$ (alternate angles with the top line), and the lower part = $110^\\circ - 70^\\circ = 40^\\circ$.\n4. By co-interior angles between the helper line and the bottom parallel line:\n   $$\\alpha = 180^\\circ - 40^\\circ = 140^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "Draw a helper parallel line through the middle vertex to split the $110^\\circ$ angle.",
+    "hint": "Draw a helper parallel line through the middle vertex. The $110^\\circ$ splits into $70^\\circ$ (alternate with top) and $40^\\circ$ (remaining). Then $\\alpha$ is co-interior with $40^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Calculate the interior angle of the reflex vertex.",
+        "explanation": "Find the interior angle at the top-left vertex (reflex = 290°).",
         "workingOut": "360^\\circ - 290^\\circ = 70^\\circ"
       },
       {
-        "explanation": "Split the $110^\\circ$ angle and find the lower part.",
+        "explanation": "Draw a helper parallel through the middle vertex. Upper part of 110° = 70° (alternate angles). Lower part = 110° - 70° = 40°.",
         "workingOut": "110^\\circ - 70^\\circ = 40^\\circ"
       },
       {
-        "explanation": "Find $\\alpha$ using co-interior angles with the lower part.",
-        "workingOut": "\\alpha = 180^\\circ - 40^\\circ = 110"
+        "explanation": "Co-interior angles between helper line and bottom: $\\alpha + 40^\\circ = 180^\\circ$.",
+        "workingOut": "\\alpha = 180^\\circ - 40^\\circ = 140"
       }
     ],
     "graphData": {
@@ -353,14 +357,14 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1d_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the two slanted lines with double arrows are parallel. Find the value of $\\alpha$.",
+    "question": "In the diagram, the two horizontal lines are parallel (shown by arrows). Two transversals cross these lines forming a trapezium. The bottom-left angle is $75^\\circ$ and the top-right angle (at the upper parallel line) is $\\alpha$. The two transversals are parallel to each other. Find the value of $\\alpha$.",
     "a": "75",
-    "solution": "1. The two slanted lines with double arrows are parallel.\n2. The angle at the bottom-left is $75^\\circ$.\n3. The angle $\\alpha$ at the top-right and the bottom-left angle of $75^\\circ$ are alternate angles between the parallel lines:\n   $$\\alpha = 75^\\circ$$",
+    "solution": "Since the two transversals are parallel to each other, the angles they make with the top parallel line equal the angles they make with the bottom parallel line (alternate angles).\n\nThe bottom-left angle is $75^\\circ$, and $\\alpha$ is the alternate angle:\n$$\\alpha = 75^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "Identify the alternate angle relationship with the parallel lines.",
+    "hint": "The two transversals are parallel — use alternate angles.",
     "solutionSteps": [
       {
-        "explanation": "Use alternate angles to find $\\alpha$.",
+        "explanation": "Since the transversals are parallel, alternate angles with the parallel horizontal lines are equal.",
         "workingOut": "\\alpha = 75"
       }
     ],
@@ -368,24 +372,22 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [8, 1],
-          "C": [6, 4],
-          "D": [2, 3]
+          "L": [0, 0],
+          "R": [8, 0],
+          "L2": [2, 4],
+          "R2": [8, 4]
         },
         "segments": [
-          { "from": "A", "to": "D", "marks": 2 },
-          { "from": "B", "to": "C", "marks": 2 },
-          { "from": "D", "to": "C" },
-          { "from": "A", "to": "B" }
+          { "from": "L", "to": "R", "arrow": true },
+          { "from": "L2", "to": "R2", "arrow": true },
+          { "from": "L", "to": "L2", "marks": 2 },
+          { "from": "R", "to": "R2", "marks": 2 }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [0.6, 0.5], "text": "75°" },
-          { "point": [6.2, 3.6], "text": "α" },
-          { "point": [4.0, 0.9], "text": "β" },
-          { "point": [2.3, 2.6], "text": "65°" }
+          { "point": [0.8, 0.5], "text": "75°" },
+          { "point": [7.2, 3.5], "text": "α" }
         ]
       }
     }
