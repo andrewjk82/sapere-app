@@ -3,23 +3,23 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1a_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom horizontal lines are parallel, and the two slanted lines with double arrows are parallel. A vertical line is perpendicular to the bottom line. The transversal line $FC$ makes an angle of $130^\\circ$ with the top line ($\\angle EFC = 130^\\circ$). Find the value of $\\alpha$.",
+    "question": "In the diagram, the top and bottom horizontal lines are parallel ($AD \\parallel EG$), and the two slanted lines with double arrows are also parallel ($AF \\parallel CG$). The vertical line $FB$ is perpendicular to the bottom line. At $F$, the left slanted line makes an angle of $4\\alpha$ with the vertical $FB$. The right slanted line makes an angle of $\\alpha$ with the bottom line at $C$. Find the value of $\\alpha$.",
     "a": "18",
-    "solution": "1. The slanted lines with double arrows are parallel, so their corresponding angles with the bottom horizontal line are equal.\n2. The left slanted line makes an angle of $90^\\circ - 4\\alpha$ with the bottom line (since the vertical line is perpendicular to the bottom line, forming a right-angled triangle where the third angle is $90^\\circ - 4\\alpha$).\n3. The right slanted line makes an angle of $\\alpha$ with the bottom line.\n4. Since the two lines are parallel, their angles with the bottom line are equal:\n   $$90^\\circ - 4\\alpha = \\alpha$$\n   $$5\\alpha = 90^\\circ$$\n   $$\\alpha = 18^\\circ$$",
+    "solution": "1. Since $FB \\perp AD$, the angle $\\angle FBD = 90^\\circ$. The left slanted line $AF$ makes angle $4\\alpha$ with the vertical $FB$ at $F$, so it makes angle $90^\\circ - 4\\alpha$ with the horizontal bottom line.\n2. The right slanted line $CG$ makes angle $\\alpha$ with the bottom line at $C$.\n3. Since $AF \\parallel CG$, they make equal angles with the bottom horizontal (alternate angles between parallels):\n   $$90^\\circ - 4\\alpha = \\alpha$$\n   $$5\\alpha = 90^\\circ$$\n   $$\\alpha = 18^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "Use the parallel lines to set up an equation: $90^\\circ - 4\\alpha = \\alpha$.",
+    "hint": "The angle the left slanted line makes with the bottom = $90^\\circ - 4\\alpha$. Set this equal to $\\alpha$ (since the two slanted lines are parallel).",
     "solutionSteps": [
       {
-        "explanation": "Form an equation using the angles of the right-angled triangle and parallel lines.",
+        "explanation": "The left slanted line makes angle $4\\alpha$ with the vertical $FB$, so it makes $90^\\circ - 4\\alpha$ with the horizontal bottom.",
+        "workingOut": "\\text{Angle with bottom} = 90^\\circ - 4\\alpha"
+      },
+      {
+        "explanation": "Since $AF \\parallel CG$, both make equal angles with the bottom line.",
         "workingOut": "90^\\circ - 4\\alpha = \\alpha"
       },
       {
-        "explanation": "Add $4\\alpha$ to both sides.",
-        "workingOut": "5\\alpha = 90^\\circ"
-      },
-      {
-        "explanation": "Divide by 5.",
-        "workingOut": "\\alpha = 18"
+        "explanation": "Solve: add $4\\alpha$ to both sides, then divide by 5.",
+        "workingOut": "5\\alpha = 90^\\circ \\Rightarrow \\alpha = 18"
       }
     ],
     "graphData": {
@@ -39,17 +39,14 @@ export const Y8_CH5I_QUESTIONS = [
           { "from": "E", "to": "G", "arrow": true },
           { "from": "F", "to": "B" },
           { "from": "A", "to": "F", "marks": 2 },
-          { "from": "C", "to": "G", "marks": 2 },
-          { "from": "C", "to": "F" }
+          { "from": "C", "to": "G", "marks": 2 }
         ],
         "angles": [
           { "at": "B", "right": true }
         ],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [2.8, 3.6], "text": "130°" },
           { "point": [3.6, 3.2], "text": "4α" },
-          { "point": [5.2, 0.4], "text": "β" },
           { "point": [6.6, 0.3], "text": "α" }
         ]
       }
