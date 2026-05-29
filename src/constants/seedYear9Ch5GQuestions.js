@@ -412,22 +412,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}"
+        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -1,
+              1,
+              13,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[0,0], [12,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [6, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[6, 0], [11, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -1,
-          1,
-          13,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[0,0], [12,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [6, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[6, 0], [11, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3b",
@@ -446,22 +447,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}"
+        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -6,
+              1,
+              8,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[1, 0], [-4, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -6,
-          1,
-          8,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[1, 0], [-4, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3c",
@@ -480,22 +482,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}"
+        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -10,
+              1,
+              4,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [-8, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -10,
-          1,
-          4,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [-8, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3d",
@@ -514,22 +517,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}"
+        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -9,
+              1,
+              5,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-2, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -9,
-          1,
-          5,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-2, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3e",
@@ -548,22 +552,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}"
+        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -8,
+              1,
+              6,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-7,0], [5,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-1, 0], [-6, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -8,
-          1,
-          6,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-7,0], [5,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-1, 0], [-6, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3f",
@@ -582,22 +587,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}"
+        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -10,
+              1,
+              4,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [2, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -10,
-          1,
-          4,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [2, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3g",
@@ -616,22 +622,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}"
+        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -5,
+              1,
+              9,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-4,0], [8,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1.5, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[1.5, 0], [-3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -5,
-          1,
-          9,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-4,0], [8,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1.5, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[1.5, 0], [-3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3h",
@@ -650,22 +657,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}"
+        "workingOut": "x > \\text{value} \\implies \\text{Arrow points right}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -9,
+              1,
+              5,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-2.5, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -9,
-          1,
-          5,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-2.5, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q3i",
@@ -684,22 +692,23 @@ export const Y9_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Determine direction of the arrow.",
-        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}"
+        "workingOut": "x \\le \\text{value} \\implies \\text{Arrow points left}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 80,
+            "boundingbox": [
+              -7,
+              1,
+              7,
+              -1
+            ],
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-6,0], [6,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-0.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-0.5, 0], [-5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 80,
-        "boundingbox": [
-          -7,
-          1,
-          7,
-          -1
-        ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-6,0], [6,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-0.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-0.5, 0], [-5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
-      }
-    }
+    "graphData": null
   },
   {
     "id": "y9-5g-q4a",

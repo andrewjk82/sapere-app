@@ -51,6 +51,8 @@ const toDisplayText = (value, fallback = '') => {
   // 2. Safety catches for broken data imports (Double backslashes & excessive dollars)
   // Replaces \\ with \ unless it's a structural newline like \\n
   str = str.replace(/\\\\([a-zA-Z0-9])/g, '\\$1');
+  // Also clean up double backslashes before parenthesis / brackets for KaTeX delimiters
+  str = str.replace(/\\\\([\(\)\[\]])/g, '\\$1');
   // Fix weird triple dollars that sometimes happen in LLM data
   str = str.replace(/\$\$\$/g, '$$');
 
@@ -131,7 +133,19 @@ const toDisplayText = (value, fallback = '') => {
 
 const MathView = ({ content, graphData: rawGraphData, style }) => {
   const containerRef = useRef(null);
-  const safeContent = toDisplayText(content);
+  
+  let lines = typeof content === 'string'
+    ? content.split(/\r?\n|\\n/)
+    : [content];
+
+  // Auto-split trailing math block at the end of a single-line question to center it
+  if (lines.length === 1 && typeof content === 'string') {
+    // Match text followed by optional spacing/punctuation and a math block (e.g. \(...\) or $$...$$ or $...$) at the end
+    const match = content.match(/^(.*?)(?:\s+|:\s*|,\s*)([\\\(|\$|\\\[].+?[\\\)|\\\]|\$])$/);
+    if (match) {
+      lines = [match[1].trim(), match[2].trim()];
+    }
+  }
 
   // graphData may arrive as an object OR as a JSON string (it is stringified
   // for the Question Bank editor and can survive that way through some save
@@ -152,7 +166,13 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
   useLayoutEffect(() => {
     const el = containerRef.current;
     if (!el) return undefined;
-    el.innerHTML = safeContent;
+
+    lines.forEach((line, idx) => {
+      const childEl = el.querySelector(`.math-view-line-${idx}`);
+      if (childEl) {
+        childEl.innerHTML = toDisplayText(line);
+      }
+    });
 
     // Inline diagram SVGs sometimes place labels (e.g. the angle "α") right on
     // the viewBox edge, where the default SVG overflow:hidden clips them.
@@ -223,7 +243,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       cancelled = true;
       if (retryTimer) clearTimeout(retryTimer);
     };
-  }, [safeContent]);
+  }, [content]);
 
   const combinedStyle = {
     fontFamily: '"Lora", "Georgia", "Times New Roman", serif',
@@ -237,7 +257,25 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       {/* Question text first, then the figure — questions refer to the
           diagram as "below". */}
-      <div ref={containerRef} style={combinedStyle} />
+      <div ref={containerRef} style={combinedStyle}>
+        {lines.map((line, idx) => {
+          const isSecondLine = idx === 1;
+          const hasMath = /\\\(|\\\[|\$|\\dots/.test(String(line));
+          const isCentered = idx > 0 && (isSecondLine || hasMath || String(line).trim().length < 30);
+          return (
+            <div
+              key={idx}
+              className={`math-view-line-${idx}`}
+              style={{
+                textAlign: isCentered ? 'center' : 'inherit',
+                width: '100%',
+                display: 'block',
+                marginTop: idx > 0 ? '8px' : '0px'
+              }}
+            />
+          );
+        })}
+      </div>
       {diagramSvgSrc && !graphData?.geometry ? (
         <img
           src={diagramSvgSrc}
