@@ -1781,7 +1781,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-14c', code: '14C', title: 'Elimination' },
         { id: 'y9-14d', code: '14D', title: 'Problems involving simultaneous linear equations' },
         { id: 'y9-14e', code: '14E', title: 'Geometry and simultaneous equations' },
-        { id: 'y9-14f', code: '14F', title: 'Families of straight lines' }
+        { id: 'y9-14f', code: '14F', title: 'Families of straight lines' },
+        { id: 'y9-14g', code: '14G', title: 'Revision' }
       ]
     },
     {

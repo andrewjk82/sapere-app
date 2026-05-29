@@ -12,6 +12,7 @@ import { collection, addDoc, serverTimestamp, doc, setDoc, increment } from 'fir
 // XP awarded for each Secret Note question solved correctly.
 const XP_PER_QUESTION = 5;
 import { getOptions, getOptionText, MATH_SYMBOLS } from '../../utils/challengeUtils';
+import { answersMatch } from '../../utils/answerMatching';
 import {
   MISTAKE_TAGS,
   getNote,
@@ -404,7 +405,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
 
   const submitOriginal = (textVal, optText) => {
     const val = optText != null ? optText : textVal;
-    const correct = norm(val) === norm(prep.correctText);
+    const correct = answersMatch(val, prep.correctText);
     const status = recordResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
     if (correct) {
@@ -417,7 +418,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
 
   const submitTwin = (textVal, optText) => {
     const val = optText != null ? optText : textVal;
-    const correct = norm(val) === norm(twinPrep.correctText);
+    const correct = answersMatch(val, twinPrep.correctText);
     setTwinGraded(correct);
     const status = recordTwinResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
@@ -618,7 +619,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
               const isSel = selectedIdx === i;
               let status = 'default';
               if (isFeedback) {
-                if (norm(optText) === norm(activePrep.correctText)) status = 'correct';
+                if (answersMatch(optText, activePrep.correctText)) status = 'correct';
                 else if (isSel) status = 'wrong';
               }
               return (
@@ -738,9 +739,6 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
                     ? <CheckCircle2 size={20} style={{ color: '#16a34a' }} />
                     : <XCircle size={20} style={{ color: '#ef4444' }} />}
                   <span>{feedbackCorrect ? 'Correct!' : 'Not quite'}</span>
-                  {phase === 'feedback' && graded?.correct && (
-                    <span className="sn__xp-chip">+{XP_PER_QUESTION} XP</span>
-                  )}
                 </div>
                 {!feedbackCorrect && (
                   <div className="sn__fb-answer">

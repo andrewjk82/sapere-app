@@ -84,6 +84,20 @@ export const parseNumericAnswer = (value) => {
   return Number.isFinite(number) ? { number, isPercent } : null;
 };
 
+// Extract the numeric (or algebraic) value from an equation like "c = 16" → "16",
+// "x = -3" → "-3", "y = 2x + 1" → "2x+1".
+// Returns null if the string doesn't look like a simple "var = value" form.
+const extractRhs = (s) => {
+  if (!s) return null;
+  // Match "letter(s) = <rest>", ignoring spaces and LaTeX wrappers
+  const m = String(s).replace(/\$/g, '').replace(/\s+/g, '').match(/^[a-zA-Z]+=-?[\d.]+$/);
+  if (m) {
+    // e.g. "c=16" → "16",  "x=-3" → "-3"
+    return String(s).replace(/\$/g, '').replace(/\s+/g, '').replace(/^[a-zA-Z]+=/, '');
+  }
+  return null;
+};
+
 export const answersMatch = (studentAnswer, expectedAnswer) => {
   const studentNumeric = parseNumericAnswer(studentAnswer);
   const expectedNumeric = parseNumericAnswer(expectedAnswer);
@@ -95,7 +109,40 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
     }
   }
 
-  return robustNormalize(studentAnswer) === robustNormalize(expectedAnswer);
+  const sNorm = robustNormalize(studentAnswer);
+  const eNorm = robustNormalize(expectedAnswer);
+  if (sNorm === eNorm) return true;
+
+  // Allow "c = 16" to match "16" and vice versa
+  // Extract RHS of both sides, then compare numerically and textually
+  const sRhs = extractRhs(studentAnswer);
+  const eRhs = extractRhs(expectedAnswer);
+
+  // student typed just a number, expected is "var = number"
+  if (sRhs === null && eRhs !== null) {
+    if (robustNormalize(studentAnswer) === robustNormalize(eRhs)) return true;
+    const sNum = parseNumericAnswer(studentAnswer);
+    const eNum = parseNumericAnswer(eRhs);
+    if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
+  }
+
+  // student typed "var = number", expected is just a number
+  if (sRhs !== null && eRhs === null) {
+    if (robustNormalize(sRhs) === robustNormalize(expectedAnswer)) return true;
+    const sNum = parseNumericAnswer(sRhs);
+    const eNum = parseNumericAnswer(expectedAnswer);
+    if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
+  }
+
+  // both are "var = value" forms — compare RHS only (different variable names OK)
+  if (sRhs !== null && eRhs !== null) {
+    if (robustNormalize(sRhs) === robustNormalize(eRhs)) return true;
+    const sNum = parseNumericAnswer(sRhs);
+    const eNum = parseNumericAnswer(eRhs);
+    if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
+  }
+
+  return false;
 };
 
 /**

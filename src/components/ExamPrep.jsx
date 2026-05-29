@@ -744,7 +744,6 @@ const ResultPanel = ({ result, onRestart, onExit, onReview, cumulativeAnalysis }
       </div>
       <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Round complete</div>
       <div style={{ fontSize: '2.4rem', fontWeight: 900, color: '#1e1b4b', margin: '6px 0' }}>{result.correct} / {result.total}</div>
-      <div style={{ fontSize: '1rem', color: '#7c3aed', fontWeight: 800 }}>+{result.xp} XP earned</div>
       {result.addedToNote > 0 && (
         <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', padding: '6px 12px', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 800 }}>
           <BookmarkPlus size={14} /> {result.addedToNote} added to Secret Note

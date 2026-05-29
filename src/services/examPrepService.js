@@ -16,7 +16,7 @@
  *   examPrep:v1:<uid>:history     Session[]   recent rounds (capped)
  */
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, updateDoc, increment, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { addMistakes } from '../utils/secretNote';
 
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
@@ -213,27 +213,15 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
   // intentionally only tracks attempted; correctness is tallied here).
   stats.correct += correct;
 
-  // XP: up to 10 per round, scaled to correctness.
   const total = results.length || 1;
-  const xpEarned = Math.round((correct / total) * 10);
 
   localStorage.setItem(k(uid, 'stats'), JSON.stringify(stats));
   pushHistory(uid, {
     finishedAt: Date.now(),
     total: results.length,
     correct,
-    xp: xpEarned,
     perTopic,
   });
-
-  // XP is the only thing that touches Firestore. One write per round.
-  if (xpEarned > 0 && uid) {
-    try {
-      await updateDoc(doc(db, 'students', uid), { xp: increment(xpEarned) });
-    } catch (err) {
-      console.warn('Exam Prep XP write failed:', err);
-    }
-  }
 
   // Wrong questions roll into the Exam Prep Secret Note deck for review.
   const wrongQuestions = results
@@ -261,7 +249,6 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
           finishedAt: Date.now(),
           total: results.length,
           correct,
-          xp: xpEarned,
           perTopic,
         },
         updatedAt: serverTimestamp(),
@@ -271,7 +258,7 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
     }
   }
 
-  return { correct, total: results.length, xp: xpEarned, perTopic, addedToNote };
+  return { correct, total: results.length, xp: 0, perTopic, addedToNote };
 };
 
 // ── Topic-analysis helper for the UI ───────────────────────────────────
