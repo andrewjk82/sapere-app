@@ -4,7 +4,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(8 \\dots 3\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(8 \\; \\Box \\; 3\\)",
     "a": ">",
     "opts": [
       "<",
@@ -26,7 +26,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(2 \\dots -5\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(2 \\; \\Box \\; -5\\)",
     "a": ">",
     "opts": [
       "<",
@@ -48,7 +48,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-6 \\dots -3\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-6 \\; \\Box \\; -3\\)",
     "a": "<",
     "opts": [
       "<",
@@ -70,7 +70,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-72 \\dots -600\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-72 \\; \\Box \\; -600\\)",
     "a": ">",
     "opts": [
       "<",
@@ -92,7 +92,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-8 \\dots 0\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-8 \\; \\Box \\; 0\\)",
     "a": "<",
     "opts": [
       "<",
@@ -114,7 +114,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-15 \\dots -38\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-15 \\; \\Box \\; -38\\)",
     "a": ">",
     "opts": [
       "<",
@@ -136,7 +136,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(24 \\dots 35\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(24 \\; \\Box \\; 35\\)",
     "a": "<",
     "opts": [
       "<",
@@ -158,7 +158,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-3 \\dots 6\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-3 \\; \\Box \\; 6\\)",
     "a": "<",
     "opts": [
       "<",
@@ -180,7 +180,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(85 \\dots -90\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(85 \\; \\Box \\; -90\\)",
     "a": ">",
     "opts": [
       "<",
@@ -202,7 +202,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-8 \\dots -3\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-8 \\; \\Box \\; -3\\)",
     "a": "\\le",
     "opts": [
       "\\le",
@@ -224,7 +224,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(6 \\dots -5\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(6 \\; \\Box \\; -5\\)",
     "a": "\\ge",
     "opts": [
       "\\le",
@@ -246,7 +246,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-4 \\dots -4\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-4 \\; \\Box \\; -4\\)",
     "a": "\\le",
     "opts": [
       "\\le",
@@ -268,7 +268,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-15 \\dots -40\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-15 \\; \\Box \\; -40\\)",
     "a": "\\ge",
     "opts": [
       "\\le",
@@ -290,7 +290,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(1 \\dots 1\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(1 \\; \\Box \\; 1\\)",
     "a": "\\le",
     "opts": [
       "\\le",
@@ -312,7 +312,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(-18 \\dots -35\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(-18 \\; \\Box \\; -35\\)",
     "a": "\\ge",
     "opts": [
       "\\le",
@@ -334,7 +334,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(14 \\dots 28\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(14 \\; \\Box \\; 28\\)",
     "a": "\\le",
     "opts": [
       "\\le",
@@ -356,7 +356,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(8 \\dots 8\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(8 \\; \\Box \\; 8\\)",
     "a": "\\ge",
     "opts": [
       "\\le",
@@ -378,7 +378,7 @@ export const Y9_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Choose the correct symbol to make the statement true:\n\\(95 \\dots 85\\)",
+    "question": "Choose the correct symbol to make the statement true:\n\\(95 \\; \\Box \\; 85\\)",
     "a": "\\ge",
     "opts": [
       "\\le",
