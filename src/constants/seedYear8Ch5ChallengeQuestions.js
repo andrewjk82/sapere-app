@@ -397,43 +397,47 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1d_beta",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the two slanted lines with double arrows are parallel. Find the value of $\\beta$.",
+    "question": "In the diagram, the two horizontal lines are parallel (shown by arrows). Two transversals cross these lines and meet above the top line, forming a triangle. The left transversal makes an angle of $75°$ with the bottom parallel line, and the right transversal makes an angle of $65°$ with the bottom parallel line. Find $\\beta$, the apex angle of the triangle.",
     "a": "40",
-    "solution": "1. In the quadrilateral formed by the lines, the interior angles sum to $360^\\circ$ or we can use the parallel lines: the interior angles on the same side of the transversal sum to $180^\\circ$.\n2. The sum of the angles in the triangle or the parallel co-interior angles gives:\n   $$\\beta = 180^\\circ - 75^\\circ - 65^\\circ = 40^\\circ$$",
+    "solution": "1. By alternate angles, the left transversal makes an angle of $75°$ inside the triangle at the top-left.\n2. By alternate angles, the right transversal makes an angle of $65°$ inside the triangle at the top-right.\n3. The three interior angles of the triangle must sum to $180°$:\n   $$\\beta + 75° + 65° = 180°$$\n   $$\\beta = 40°$$",
     "t": "Geometry challenge",
-    "hint": "Use the angle sum property of the parallel interior angles: $75^\\circ + 65^\\circ + \\beta = 180^\\circ$.",
+    "hint": "Use alternate angles to find the base angles of the triangle, then apply the angle sum of a triangle.",
     "solutionSteps": [
       {
-        "explanation": "Set up the equation for the interior angles between parallel lines.",
-        "workingOut": "75^\\circ + 65^\\circ + \\beta = 180^\\circ"
+        "explanation": "By alternate angles with the parallel lines, the base angles of the triangle are $75°$ and $65°$.",
+        "workingOut": "\\text{Base angles: }75° \\text{ and } 65°"
+      },
+      {
+        "explanation": "Apply the angle sum of a triangle.",
+        "workingOut": "\\beta + 75° + 65° = 180°"
       },
       {
         "explanation": "Solve for $\\beta$.",
-        "workingOut": "\\beta = 180^\\circ - 140^\\circ = 40"
+        "workingOut": "\\beta = 180° - 140° = 40"
       }
     ],
     "graphData": {
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [8, 1],
-          "C": [6, 4],
-          "D": [2, 3]
+          "L": [0, 0],
+          "R": [8, 0],
+          "L2": [1, 3],
+          "R2": [7, 3],
+          "T": [4, 6]
         },
         "segments": [
-          { "from": "A", "to": "D", "marks": 2 },
-          { "from": "B", "to": "C", "marks": 2 },
-          { "from": "D", "to": "C" },
-          { "from": "A", "to": "B" }
+          { "from": "L", "to": "R", "arrow": true },
+          { "from": "L2", "to": "R2", "arrow": true },
+          { "from": "L", "to": "T" },
+          { "from": "R", "to": "T" }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [0.6, 0.5], "text": "75°" },
-          { "point": [6.2, 3.6], "text": "α" },
-          { "point": [4.0, 0.9], "text": "β" },
-          { "point": [2.3, 2.6], "text": "65°" }
+          { "point": [1.0, 0.5], "text": "75°" },
+          { "point": [6.4, 0.5], "text": "65°" },
+          { "point": [3.7, 5.3], "text": "β" }
         ]
       }
     }
