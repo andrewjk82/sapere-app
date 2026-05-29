@@ -130,5 +130,22 @@ export const seedChapterQuestions = async (chapter) => {
   } catch (err) {
     console.warn('sync_meta bump after seed failed (non-fatal):', err);
   }
+  // Invalidate all ExamPrep pool caches in localStorage so every student
+  // picks up the freshly-seeded questions on their next session start.
+  try {
+    const keysToRemove = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith('examPrep:') && key.endsWith(':pool')) {
+        keysToRemove.push(key);
+      }
+    }
+    keysToRemove.forEach((k) => localStorage.removeItem(k));
+    if (keysToRemove.length > 0) {
+      console.log(`Invalidated ${keysToRemove.length} ExamPrep pool cache(s) after seed.`);
+    }
+  } catch (err) {
+    console.warn('ExamPrep cache invalidation after seed failed (non-fatal):', err);
+  }
   return seed.length;
 };

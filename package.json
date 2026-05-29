@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "get-inputs": "node scratch/read_last_user_input.js",
+    "gen-5d": "node scratch/generateYear12Ch5DQuestions.js"
   },
   "dependencies": {
     "3d-force-graph": "^1.80.0",
