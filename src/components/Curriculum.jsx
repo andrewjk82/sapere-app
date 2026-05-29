@@ -48,6 +48,7 @@ import { Y9_CH11I_QUESTIONS } from '../constants/seedYear9Ch11IQuestions.js';
 import { Y9_CH14_QUESTIONS } from '../constants/seedYear9Ch14Questions.js';
 import { Y9_CH14B_QUESTIONS } from '../constants/seedYear9Ch14BQuestions.js';
 import { Y9_CH14C_QUESTIONS } from '../constants/seedYear9Ch14CQuestions.js';
+import { Y9_CH14D_QUESTIONS } from '../constants/seedYear9Ch14DQuestions.js';
 import { Y8_CH1C_QUESTIONS } from '../constants/seedYear8Ch1Questions.js';
 import { Y8_CH2H_QUESTIONS } from '../constants/seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
@@ -164,6 +165,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14a', topicCode: '14A', topicTitle: 'Solving simultaneous equations by drawing graphs', year: 'Year 9', seed: Y9_CH14_QUESTIONS, label: 'Y9 Ch14 · 14A Graphical solution' },
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14b', topicCode: '14B', topicTitle: 'Substitution', year: 'Year 9', seed: Y9_CH14B_QUESTIONS, label: 'Y9 Ch14 · 14B Substitution' },
   { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14c', topicCode: '14C', topicTitle: 'Elimination', year: 'Year 9', seed: Y9_CH14C_QUESTIONS, label: 'Y9 Ch14 · 14C Elimination' },
+  { chapterId: 'y9-14', chapterTitle: 'Chapter 14: Simultaneous linear equations', topicId: 'y9-14d', topicCode: '14D', topicTitle: 'Word Problems', year: 'Year 9', seed: Y9_CH14D_QUESTIONS, label: 'Y9 Ch14 · 14D Word Problems' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1c', topicCode: '1C', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1C_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
   { chapterId: 'y8-2', chapterTitle: 'Chapter 2: Fractions and decimals', topicId: 'y8-2h', topicCode: '2H', topicTitle: 'Review of fractions and decimals', year: 'Year 8', seed: Y8_CH2H_QUESTIONS, label: 'Y8 Ch2 · Review' },
   { chapterId: 'y8-3', chapterTitle: 'Chapter 3: Review of factors and indices', topicId: 'y8-3f', topicCode: '3F', topicTitle: 'Review of factors and indices', year: 'Year 8', seed: Y8_CH3F_QUESTIONS, label: 'Y8 Ch3 · Review' },
