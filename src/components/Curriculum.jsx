@@ -59,6 +59,7 @@ import { Y12A_CH5D_QUESTIONS } from '../constants/seedYear12Ch5DQuestions.js';
 import { Y12A_CH5E_QUESTIONS } from '../constants/seedYear12Ch5EQuestions.js';
 import { Y12A_CH5F_QUESTIONS } from '../constants/seedYear12Ch5FQuestions.js';
 import { Y12A_CH5G_QUESTIONS } from '../constants/seedYear12Ch5GQuestions.js';
+import { Y12A_CH5H_QUESTIONS } from '../constants/seedYear12Ch5HQuestions.js';
 import { Y8_CH1C_QUESTIONS } from '../constants/seedYear8Ch1Questions.js';
 import { Y8_CH2H_QUESTIONS } from '../constants/seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
@@ -240,6 +241,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5E', topicCode: '5E', topicTitle: 'Applications of integration', year: 'Year 12', seed: Y12A_CH5E_QUESTIONS, label: 'Y12 Ch5 · 5E Applications of integration' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5F', topicCode: '5F', topicTitle: 'Review of logarithmic functions', year: 'Year 12', seed: Y12A_CH5F_QUESTIONS, label: 'Y12 Ch5 · 5F Review of logarithmic functions' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5G', topicCode: '5G', topicTitle: 'Differentiation of logarithmic functions', year: 'Year 12', seed: Y12A_CH5G_QUESTIONS, label: 'Y12 Ch5 · 5G Differentiation of logarithmic functions' },
+  { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5H', topicCode: '5H', topicTitle: 'Applications of differentiation', year: 'Year 12', seed: Y12A_CH5H_QUESTIONS, label: 'Y12 Ch5 · 5H Applications of differentiation' },
 ];
 import {
   fetchHscResultsIncremental,
