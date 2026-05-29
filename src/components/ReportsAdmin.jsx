@@ -560,9 +560,14 @@ const ReportsAdmin = () => {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
               <div>
                 <h3 style={{ margin: '0 0 4px', fontSize: '1.1rem', fontWeight: 800 }}>{report.studentName || 'Student'}</h3>
-                <div style={{ fontSize: '0.85rem', color: '#94a3b8', display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <div style={{ fontSize: '0.85rem', color: '#94a3b8', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
                   <span>{report.createdAt?.toDate ? report.createdAt.toDate().toLocaleDateString() : 'Just now'}</span>
                   <span style={{ padding: '2px 8px', background: '#f1f5f9', borderRadius: '12px', fontWeight: 600 }}>{report.questionData?.type || 'Multiple Choice'}</span>
+                  {(report.questionId || report.questionData?.id) && (
+                    <span style={{ padding: '2px 10px', background: '#ede9fe', color: '#6d28d9', borderRadius: '12px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.78rem' }}>
+                      ID: {report.questionId || report.questionData?.id}
+                    </span>
+                  )}
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '8px' }}>
@@ -619,7 +624,14 @@ const ReportsAdmin = () => {
                 </div>
                 <div>
                   <h4 style={{ margin: 0, fontWeight: 800, fontSize: '1.1rem' }}>{item.userName}</h4>
-                  <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>{item.year} • {item.chapterTitle}</span>
+                  <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap', marginTop: '2px' }}>
+                    <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>{item.year} • {item.chapterTitle}</span>
+                    {item.questionId && (
+                      <span style={{ padding: '1px 8px', background: '#ede9fe', color: '#6d28d9', borderRadius: '10px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.72rem' }}>
+                        ID: {item.questionId}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
               <div style={{ textAlign: 'right' }}>
@@ -894,7 +906,7 @@ const ReportsAdmin = () => {
                   {/* Question card */}
                   <div style={{ padding: '24px 26px', borderRadius: '24px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)', boxShadow: '0 12px 28px rgba(15,23,42,0.04)' }}>
                     <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '10px' }}>Question</div>
-                    <MathView content={q.question || q.text || 'No question text'} style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.55 }} />
+                    <MathView content={q.question || q.text || 'No question text'} graphData={q.graphData} style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.55 }} />
                     {q.questionImage && (
                       <img src={q.questionImage} alt="Question" style={{ width: '100%', maxHeight: '260px', objectFit: 'contain', marginTop: '14px', borderRadius: '14px', background: '#f8fafc' }} />
                     )}
