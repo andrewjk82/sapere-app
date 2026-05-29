@@ -3005,7 +3005,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-5',
         title: 'Chapter 5: The exponential and logarithmic functions',
-        modules: 11,
+        modules: 12,
         topics: [
           { id: 'y12a-5A', code: '5A', title: 'Review of exponential functions base e' },
           { id: 'y12a-5B', code: '5B', title: 'Differentiation of exponential functions' },
@@ -3017,7 +3017,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12a-5H', code: '5H', title: 'Applications of differentiation of loge x' },
           { id: 'y12a-5I', code: '5I', title: 'Integration of the reciprocal function' },
           { id: 'y12a-5J', code: '5J', title: 'Applications of integration of 1 / x' },
-          { id: 'y12a-5K', code: '5K', title: 'Calculus with other bases' }
+          { id: 'y12a-5K', code: '5K', title: 'Calculus with other bases' },
+          { id: 'y12a-5L', code: '5L', title: 'Chapter 5 Revision' }
         ]
       },
       {
