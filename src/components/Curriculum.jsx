@@ -52,6 +52,7 @@ import { Y9_CH14D_QUESTIONS } from '../constants/seedYear9Ch14DQuestions.js';
 import { Y9_CH14E_QUESTIONS } from '../constants/seedYear9Ch14EQuestions.js';
 import { Y9_CH14F_QUESTIONS } from '../constants/seedYear9Ch14FQuestions.js';
 import { Y9_CH14G_QUESTIONS } from '../constants/seedYear9Ch14GQuestions.js';
+import { Y12A_CH5A_QUESTIONS } from '../constants/seedYear12Ch5Questions.js';
 import { Y8_CH1C_QUESTIONS } from '../constants/seedYear8Ch1Questions.js';
 import { Y8_CH2H_QUESTIONS } from '../constants/seedYear8Ch2Questions.js';
 import { Y8_CH3A_QUESTIONS } from '../constants/seedYear8Ch3Questions.js';
@@ -226,6 +227,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6a', topicCode: '6A', topicTitle: 'Review of prisms and cylinders', year: 'Year 10', seed: Y10_CH6_QUESTIONS, label: 'Y10 Ch6 · Review of prisms and cylinders' },
   // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
   { chapterId: 'exam:abbotsleigh-2020', badgeLabel: 'Y12 EXAM', examPaper: 'abbotsleigh-2020', chapterTitle: 'Abbotsleigh 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam', year: 'Year 12', seed: ABBOTSLEIGH_2020_QUESTIONS, label: 'Y12 · Abbotsleigh 2020 HSC Trial (Advanced)' },
+  { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5A', topicCode: '5A', topicTitle: 'Review of exponential functions base e', year: 'Year 12', seed: Y12A_CH5A_QUESTIONS, label: 'Y12 Ch5 · 5A Review of exponential functions base e' },
 ];
 import {
   fetchHscResultsIncremental,
