@@ -158,7 +158,7 @@ const CHAPTER_SEED_REGISTRY = [
     topicId: 'y12-6b',
     topicCode: '6B',
     topicTitle: 'Calculus of trigonometric functions',
-    year: 'Year 12 Advanced',
+    year: 'Year 12',
     seed: Y12A_CH6B_QUESTIONS,
     label: 'Y12A Ch6 · 6B Calculus of trigonometric functions',
   },
