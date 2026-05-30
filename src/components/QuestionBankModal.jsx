@@ -519,6 +519,13 @@ const GeometryEditor = ({ graphData, onChange }) => {
     updateGeometry({ ...geometry, points, segments, angles, sideLabels, labelOffsets });
   };
 
+  
+  const updateCircle = (idx, patch) => {
+    const circles = [...(geometry.circles || [])];
+    circles[idx] = { ...circles[idx], ...patch };
+    updateGeometry({ ...geometry, circles });
+  };
+
   const updateSegment = (idx, patch) => {
     const segments = [...(geometry.segments || [])];
     segments[idx] = { ...segments[idx], ...patch };
@@ -778,6 +785,33 @@ const GeometryEditor = ({ graphData, onChange }) => {
           }
           return <g key={idx}><line x1={x1} y1={y1} x2={x2} y2={y2} stroke="#000000" strokeWidth="1.2" strokeLinecap="round" strokeDasharray={seg.dashed ? '6 4' : undefined} />{tickEls}</g>;
         })}
+
+        {(geometry.circles || []).map((circ, idx) => {
+          if (!geometry.points[circ.center]) return null;
+          const [cx, cy] = toSvg(geometry.points[circ.center]);
+          let r = 0;
+          if (circ.through && geometry.points[circ.through]) {
+            const [tx, ty] = toSvg(geometry.points[circ.through]);
+            r = Math.hypot(tx - cx, ty - cy);
+          } else if (circ.radius) {
+            r = circ.radius * scale;
+          }
+          if (r <= 0) return null;
+          return (
+            <circle
+              key={`c${idx}`}
+              cx={cx}
+              cy={cy}
+              r={r}
+              stroke={circ.color || "#000000"}
+              strokeWidth="1.2"
+              strokeDasharray={circ.dashed ? '6 4' : undefined}
+              fill={circ.filled ? (circ.color || "#000000") : "none"}
+              fillOpacity={circ.filled ? (circ.fillOpacity ?? 0.1) : undefined}
+              pointerEvents="none"
+            />
+          );
+        })}
         {(() => {
           const edCx = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[0], 0) / (pointNames.length || 1);
           const edCy = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[1], 0) / (pointNames.length || 1);
@@ -895,6 +929,33 @@ const GeometryEditor = ({ graphData, onChange }) => {
             </g>
           );
         })}
+
+        {(geometry.circles || []).map((circ, idx) => {
+          if (!geometry.points[circ.center]) return null;
+          const [cx, cy] = toSvg(geometry.points[circ.center]);
+          let r = 0;
+          if (circ.through && geometry.points[circ.through]) {
+            const [tx, ty] = toSvg(geometry.points[circ.through]);
+            r = Math.hypot(tx - cx, ty - cy);
+          } else if (circ.radius) {
+            r = circ.radius * scale;
+          }
+          if (r <= 0) return null;
+          return (
+            <circle
+              key={`c${idx}`}
+              cx={cx}
+              cy={cy}
+              r={r}
+              stroke={circ.color || "#000000"}
+              strokeWidth="1.2"
+              strokeDasharray={circ.dashed ? '6 4' : undefined}
+              fill={circ.filled ? (circ.color || "#000000") : "none"}
+              fillOpacity={circ.filled ? (circ.fillOpacity ?? 0.1) : undefined}
+              pointerEvents="none"
+            />
+          );
+        })}
         {(() => {
           const edCx = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[0], 0) / (pointNames.length || 1);
           const edCy = pointNames.reduce((s, n) => s + toSvg(geometry.points[n])[1], 0) / (pointNames.length || 1);
@@ -977,6 +1038,25 @@ const GeometryEditor = ({ graphData, onChange }) => {
               ∥ Marks<input type="number" min="0" max="5" value={seg.marks || 0} onChange={(e) => updateSegment(idx, { marks: Number(e.target.value) || undefined })} style={{ width: '36px', padding: '4px', borderRadius: '6px', border: '1px solid #ddd6fe', fontWeight: 700, textAlign: 'center' }} />
             </label>
             <button type="button" onClick={() => updateGeometry({ ...geometry, segments: (geometry.segments || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '6px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>Remove</button>
+          </div>
+        ))}
+      </div>
+
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <button type="button" onClick={() => updateGeometry({ ...geometry, circles: [...(geometry.circles || []), { center: pointNames[0] || 'A', radius: 2 }] })} style={{ alignSelf: 'flex-start', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c4b5fd', background: '#fff', color: '#6d28d9', fontWeight: 800, cursor: 'pointer' }}>Add circle</button>
+        {(geometry.circles || []).map((circ, idx) => (
+          <div key={idx} style={{ display: 'grid', gridTemplateColumns: '80px 80px 80px auto auto 70px 80px', gap: '6px', alignItems: 'center' }}>
+            <select value={circ.center} onChange={(e) => updateCircle(idx, { center: e.target.value })} style={{ padding: '6px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '100%' }}>{pointNames.map((name) => <option key={name} value={name}>{name}</option>)}</select>
+            <select value={circ.through || ''} onChange={(e) => updateCircle(idx, { through: e.target.value || undefined })} style={{ padding: '6px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '100%' }}>
+              <option value="">(Radius)</option>
+              {pointNames.map((name) => <option key={name} value={name}>{name}</option>)}
+            </select>
+            <input type="number" step="0.1" value={circ.radius || ''} disabled={!!circ.through} onChange={(e) => updateCircle(idx, { radius: Number(e.target.value) || 0 })} style={{ padding: '6px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '100%' }} placeholder="Rad" />
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', whiteSpace: 'nowrap' }}><input type="checkbox" checked={!!circ.dashed} onChange={(e) => updateCircle(idx, { dashed: e.target.checked || undefined })} /> Dashed</label>
+            <label style={{ fontSize: '0.72rem', fontWeight: 800, color: '#64748b', whiteSpace: 'nowrap' }}><input type="checkbox" checked={!!circ.filled} onChange={(e) => updateCircle(idx, { filled: e.target.checked || undefined })} /> Filled</label>
+            <input type="text" value={circ.color || ''} onChange={(e) => updateCircle(idx, { color: e.target.value || undefined })} style={{ padding: '6px', borderRadius: '8px', border: '1px solid #ddd6fe', width: '100%' }} placeholder="#color" />
+            <button type="button" onClick={() => updateGeometry({ ...geometry, circles: (geometry.circles || []).filter((_, i) => i !== idx) })} style={{ border: 0, background: '#fff1f2', color: '#e11d48', borderRadius: '8px', padding: '6px 8px', cursor: 'pointer', fontWeight: 800, fontSize: '0.72rem' }}>Remove</button>
           </div>
         ))}
       </div>
