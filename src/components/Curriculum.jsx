@@ -1,3 +1,4 @@
+import { Y12A_CH6_QUESTIONS } from '../constants/seedYear12aCh6Questions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
