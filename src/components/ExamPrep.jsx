@@ -818,198 +818,231 @@ const useViewport = () => {
 // reads like a dashboard: hero (stats + CTA) on top, two-column row with
 // topics & secret-note side by side, and the topic analysis chart below.
 const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
-  const { isNarrow, isMid } = useViewport();
+  const { isNarrow } = useViewport();
   const accuracy = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
-  // Flatten the curriculum once so we can render the teacher-set chapter
-  // chips with a year prefix.
   const allChapters = useMemo(() => {
     const list = [];
     allYearKeys.forEach((y) => flattenChapters(y).forEach((ch) => list.push({ ...ch, year: y })));
     return list;
   }, []);
-  const selectedChips = selection.chapters
-    .map((id) => allChapters.find((c) => c.id === id))
-    .filter(Boolean);
+  const selectedChips = selection.chapters.map((id) => allChapters.find((c) => c.id === id)).filter(Boolean);
   const hasTopics = selectedChips.length > 0;
+  const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  // Weakest topics for focus grid
+  const focusTopics = analysis.filter(t => t.attempted >= 1).slice(0, 4);
+  const worstTopic = analysis.find(t => t.attempted >= 2 && t.pct < 70);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      {/* HERO — full-bleed gradient with stats and the primary CTA */}
-      <div
-        style={{
-          position: 'relative',
-          padding: isNarrow ? '22px 20px 20px' : '32px 32px 28px',
-          borderRadius: isNarrow ? '24px' : '32px',
-          color: '#1e1b4b',
-          overflow: 'hidden',
-          background: 'linear-gradient(135deg, #a78bfa 0%, #c4b5fd 60%, #ddd6fe 100%)',
-          boxShadow: '0 18px 36px -16px rgba(124,58,237,0.35)',
-        }}
-      >
-        {/* decorative glow */}
-        <div aria-hidden style={{ position: 'absolute', top: '-60px', right: '-40px', width: '220px', height: '220px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.22), transparent 70%)' }} />
-        <div aria-hidden style={{ position: 'absolute', bottom: '-80px', left: '-40px', width: '260px', height: '260px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%)' }} />
+    <div style={{ maxWidth: '1040px', margin: '0 auto', padding: isNarrow ? '0' : '0' }}>
 
-        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          {/* Row 1: badge + title */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'rgba(255,255,255,0.6)', backdropFilter: 'blur(6px)', display: 'grid', placeItems: 'center', color: '#5b21b6' }}>
-              <GraduationCap size={24} />
-            </div>
-            <div>
-              <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5b21b6' }}>Exam Prep</div>
-              <h1 style={{ margin: '2px 0 0', fontSize: isNarrow ? '1.4rem' : '1.8rem', fontWeight: 900, letterSpacing: '-0.01em', color: '#1e1b4b' }}>Time to practise</h1>
-            </div>
+      {/* ── MASTHEAD ── */}
+      <div style={{ borderBottom: '2.5px solid #1e1b4b', paddingBottom: '18px', marginBottom: '26px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+        <div>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#7c3aed' }}>
+            EXAM PREP · SAPERE
           </div>
+          <h1 style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontWeight: 800, fontSize: isNarrow ? '2.4rem' : '3.2rem', lineHeight: 0.98, color: '#1e1b4b', margin: '8px 0 0', letterSpacing: '-0.01em' }}>
+            Exam Prep
+          </h1>
+        </div>
+        <div style={{ textAlign: 'right', fontSize: '0.76rem', color: '#8b7aa7', fontWeight: 700, lineHeight: 1.6 }}>
+          <div>{today}</div>
+          <div>{stats.sessions} {stats.sessions === 1 ? 'session' : 'sessions'} completed</div>
+        </div>
+      </div>
 
-          {/* Row 2: stat tiles (glassy) — 3 cols on tablets+, 3-compact on phones */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: isNarrow ? '6px' : '10px' }}>
-            <GlassStat label="Sessions" value={stats.sessions} compact={isNarrow} />
-            <GlassStat label="Accuracy" value={`${accuracy}%`} compact={isNarrow} />
-            <GlassStat label="Attempted" value={stats.attempted} compact={isNarrow} />
-          </div>
-
-          {/* Row 3: CTA — stacks on narrow; primary button stretches */}
-          <div style={{ display: 'flex', flexDirection: isNarrow ? 'column' : 'row', alignItems: isNarrow ? 'stretch' : 'center', gap: '12px', flexWrap: 'wrap' }}>
+      {/* ── LEAD: standfirst + figures rail ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1fr 260px', gap: '28px', marginBottom: '30px' }}>
+        {/* Left: standfirst + CTA */}
+        <div>
+          <p style={{ fontSize: '1.1rem', lineHeight: 1.6, color: '#3b2b68', fontWeight: 500, margin: '0 0 6px' }}>
+            <b style={{ color: '#1e1b4b' }}>Practise smarter, not harder.</b>{' '}
+            {hasTopics
+              ? `Your teacher has selected ${selectedChips.length} topic${selectedChips.length > 1 ? 's' : ''} for you to master. Each round gives you ${ROUND_SIZE_CONST} carefully chosen questions.`
+              : 'Your teacher will set your exam topics. Once they\'re ready, start practising with targeted questions.'}
+          </p>
+          <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
             <button
               onClick={onStart}
               disabled={!hasTopics || loading}
               style={{
-                flex: 1, minWidth: '200px',
-                padding: '16px 22px',
-                borderRadius: '18px',
-                border: 'none',
-                background: !hasTopics || loading ? 'rgba(255,255,255,0.25)' : '#fff',
-                color: !hasTopics || loading ? 'rgba(255,255,255,0.7)' : '#5b21b6',
-                fontWeight: 900, fontSize: '1.05rem',
+                display: 'inline-flex', alignItems: 'center', gap: '10px',
+                padding: '14px 26px', borderRadius: '14px',
+                background: !hasTopics || loading ? '#cbd5e1' : '#1e1b4b',
+                color: '#fff', fontWeight: 800, border: 'none',
                 cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
-                boxShadow: !hasTopics || loading ? 'none' : '0 12px 24px rgba(15,23,42,0.18)',
-                transition: 'transform 0.15s, box-shadow 0.15s',
+                fontSize: '0.95rem', letterSpacing: '-0.01em',
+                boxShadow: !hasTopics || loading ? 'none' : '0 14px 28px rgba(15,23,42,0.22)',
               }}
-              onMouseDown={(e) => { if (hasTopics && !loading) e.currentTarget.style.transform = 'scale(0.98)'; }}
-              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
             >
-              <Play size={18} /> {loading ? 'Loading…' : 'Start round'}
-              <span style={{ fontSize: '0.8rem', fontWeight: 800, opacity: 0.65 }}>· 15 Qs</span>
+              <Play size={16} fill="currentColor" />
+              {loading ? 'Loading…' : 'Start round'}
+              <span style={{ opacity: 0.6, fontWeight: 600, paddingLeft: '10px', marginLeft: '2px', borderLeft: '1px solid rgba(255,255,255,0.25)', fontSize: '0.82rem' }}>
+                {ROUND_SIZE_CONST} Qs
+              </span>
             </button>
-            <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#5b21b6', lineHeight: 1.4, textAlign: isNarrow ? 'center' : 'left' }}>
-              {hasTopics
-                ? `${selectedChips.length} ${selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher`
-                : 'Your teacher hasn\'t picked topics yet.'}
-            </div>
+            {noteCount > 0 && (
+              <button
+                onClick={onOpenSecretNote}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '8px',
+                  padding: '14px 18px', borderRadius: '14px',
+                  background: '#fffbeb', border: '1px solid #fcd34d',
+                  color: '#78350f', fontWeight: 800, cursor: 'pointer', fontSize: '0.88rem',
+                }}
+              >
+                <BookmarkPlus size={15} />
+                {noteCount} note{noteCount > 1 ? 's' : ''}
+                {dueCount > 0 && <span style={{ background: '#fbbf24', color: '#fff', borderRadius: '999px', padding: '1px 7px', fontSize: '0.7rem', fontWeight: 900 }}>{dueCount} due</span>}
+              </button>
+            )}
           </div>
         </div>
-      </div>
 
-      {/* SECRET NOTE — full-width bar above topics */}
-      <button
-        onClick={onOpenSecretNote}
-        disabled={noteCount === 0}
-        style={{
-          width: '100%',
-          padding: '18px 24px', borderRadius: '22px', textAlign: 'left',
-          cursor: noteCount === 0 ? 'default' : 'pointer',
-          border: '1px solid ' + (noteCount > 0 ? '#fde68a' : '#e2e8f0'),
-          background: noteCount > 0 ? 'linear-gradient(135deg, #fffbeb, #fef3c7)' : '#fff',
-          display: 'flex', alignItems: 'center', gap: '14px',
-          transition: 'transform 0.15s, box-shadow 0.15s',
-        }}
-        onMouseEnter={(e) => { if (noteCount > 0) { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 28px rgba(0,0,0,0.06)'; } }}
-        onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
-      >
-        <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: noteCount > 0 ? '#fcd34d' : '#f1f5f9', display: 'grid', placeItems: 'center', color: noteCount > 0 ? '#78350f' : '#94a3b8', flexShrink: 0 }}>
-          <BookmarkPlus size={20} />
-        </div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontWeight: 900, color: noteCount > 0 ? '#78350f' : '#475569', fontSize: '0.95rem' }}>Exam Prep Secret Note</div>
-          <div style={{ fontSize: '0.8rem', color: noteCount > 0 ? '#92400e' : '#94a3b8', fontWeight: 700, marginTop: '2px' }}>
-            {noteCount === 0 ? 'Mistakes you make will appear here for review.' : `${noteCount} ${noteCount === 1 ? 'note' : 'notes'} · ${dueCount} due now`}
-          </div>
-        </div>
-        {noteCount > 0 && <ChevronRight size={18} color="#92400e" />}
-      </button>
-
-      {/* TOPICS — full width below Secret Note */}
-      <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-          <Target size={16} color="#7c3aed" />
-          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Your exam topics</h3>
-        </div>
-        {!hasTopics ? (
-          <div style={{ padding: '20px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
-            No topics yet — ask your teacher.
-          </div>
-        ) : (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-            {selectedChips.map((ch) => (
-              <div key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '14px', background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', border: '1px solid #ddd6fe', fontWeight: 700, fontSize: '0.85rem' }}>
-                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#5b21b6', background: '#fff', padding: '2px 8px', borderRadius: '999px', letterSpacing: '0.05em' }}>
-                  {ch.year.replace('Year ', 'Y')}
-                </span>
-                <span style={{ color: '#312e81' }}>{ch.title}</span>
+        {/* Right: figures rail */}
+        {!isNarrow && (
+          <div style={{ borderLeft: '1px solid rgba(124,58,237,0.25)', paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '18px' }}>
+            {[
+              { n: `${accuracy}%`, small: null, l: 'Accuracy' },
+              { n: stats.attempted, small: null, l: 'Questions attempted' },
+              { n: stats.sessions, small: null, l: 'Rounds completed' },
+            ].map(({ n, small, l }) => (
+              <div key={l}>
+                <div style={{ fontFamily: 'Georgia, serif', fontWeight: 800, fontSize: '2.2rem', color: '#1e1b4b', lineHeight: 1 }}>
+                  {n}{small && <small style={{ fontSize: '1rem', color: '#8b7aa7' }}>{small}</small>}
+                </div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8b7aa7', marginTop: '4px' }}>{l}</div>
               </div>
             ))}
           </div>
         )}
       </div>
 
-      {/* Where to focus — visual progress chart */}
-      <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
-          <Sparkles size={16} color="#7c3aed" />
-          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Where to focus</h3>
-          <span style={{ marginLeft: 'auto', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>
-            Weakest topics first
-          </span>
-        </div>
-        {analysis.length === 0 ? (
-          <div style={{ padding: '24px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center' }}>
-            Finish a round to see your topic breakdown.
+      {/* ── TWO COLUMNS ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1.6fr 1fr', gap: '28px', alignItems: 'start' }}>
+
+        {/* LEFT: Focus grid */}
+        <div>
+          <div style={{ fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#7c3aed', paddingBottom: '8px', borderBottom: '1px solid rgba(124,58,237,0.2)', marginBottom: '16px' }}>
+            Where to focus
           </div>
-        ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {analysis.slice(0, 8).map((t) => {
-              // Tier the row by % so the background tint instantly communicates
-              // strong / weak topics at a glance.
-              const tier = t.attempted < 3
-                ? 'neutral'
-                : t.pct < 50
-                  ? 'weak'
-                  : t.pct < 75
-                    ? 'mid'
-                    : 'strong';
-              const palette = {
-                neutral: { bg: '#f8fafc', border: '#e2e8f0', track: '#e2e8f0', accent: '#94a3b8' },
-                weak:    { bg: '#fef2f2', border: '#fecaca', track: '#fee2e2', accent: '#ef4444' },
-                mid:     { bg: '#fffbeb', border: '#fde68a', track: '#fef3c7', accent: '#f59e0b' },
-                strong:  { bg: '#f0fdf4', border: '#bbf7d0', track: '#dcfce7', accent: '#10b981' },
-              }[tier];
-              return (
-                <div
-                  key={t.topicId}
-                  style={{
-                    display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 80px', gap: '14px', alignItems: 'center',
-                    padding: '12px 16px', borderRadius: '14px',
-                    background: palette.bg, border: `1px solid ${palette.border}`,
-                  }}
-                >
-                  <div>
-                    <div style={{ fontWeight: 800, color: '#1e293b', fontSize: '0.85rem', marginBottom: '6px' }}>{t.title}</div>
-                    <div style={{ height: '8px', background: palette.track, borderRadius: '999px', overflow: 'hidden' }}>
-                      <div style={{ height: '100%', width: `${t.pct}%`, background: palette.accent, transition: 'width 0.4s' }} />
+          {focusTopics.length === 0 ? (
+            <div style={{ padding: '32px', background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(167,139,250,0.18)', borderRadius: '16px', textAlign: 'center', color: '#8b7aa7', fontWeight: 700, fontSize: '0.9rem' }}>
+              Complete a round to see your topic breakdown.
+            </div>
+          ) : (
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+              {focusTopics.map((t) => {
+                const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+                return (
+                  <div key={t.topicId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
+                      <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{t.title}</div>
+                      <div style={{ fontFamily: 'Georgia, serif', fontWeight: 800, fontSize: '1.4rem', color, flexShrink: 0 }}>{t.pct}%</div>
+                    </div>
+                    <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>{t.correct}/{t.attempted} correct</div>
+                    <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
                     </div>
                   </div>
-                  <div style={{ textAlign: 'right' }}>
-                    <div style={{ fontSize: '1.05rem', fontWeight: 900, color: palette.accent }}>{t.pct}%</div>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#94a3b8' }}>{t.correct}/{t.attempted}</div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Extended analysis (> 4 topics) */}
+          {analysis.length > 4 && (
+            <div style={{ marginTop: '12px' }}>
+              {analysis.slice(4, 10).map((t) => {
+                const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+                return (
+                  <div key={t.topicId} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 0', borderBottom: '1px solid rgba(167,139,250,0.1)' }}>
+                    <div style={{ flex: 1, fontSize: '0.88rem', fontWeight: 600, color: '#1e1b4b', minWidth: 0 }}>{t.title}</div>
+                    <div style={{ width: '90px', height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden', flexShrink: 0 }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color }} />
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.82rem', color, width: '36px', textAlign: 'right', flexShrink: 0 }}>{t.pct}%</div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        {/* RIGHT: Sidebar */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+
+          {/* Pull quote — recommended topic */}
+          {worstTopic ? (
+            <div style={{ padding: '20px', borderRadius: '18px', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', border: '1px solid #fcd34d' }}>
+              <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#b45309', marginBottom: '8px' }}>
+                Recommended focus
+              </div>
+              <div style={{ fontFamily: 'Georgia, serif', fontSize: '1.25rem', color: '#78350f', lineHeight: 1.35, marginBottom: '14px', fontWeight: 700 }}>
+                "{worstTopic.title}"
+              </div>
+              <div style={{ fontSize: '0.8rem', color: '#92400e', fontWeight: 700 }}>
+                {worstTopic.pct}% accuracy · {worstTopic.correct}/{worstTopic.attempted} correct — needs work
+              </div>
+              <button
+                onClick={onStart}
+                disabled={!hasTopics || loading}
+                style={{ marginTop: '14px', width: '100%', padding: '11px', borderRadius: '12px', background: '#92400e', color: '#fff', fontWeight: 800, fontSize: '0.86rem', border: 'none', cursor: !hasTopics || loading ? 'not-allowed' : 'pointer' }}
+              >
+                Practise now →
+              </button>
+            </div>
+          ) : noteCount > 0 ? (
+            <button
+              onClick={onOpenSecretNote}
+              style={{ padding: '18px', borderRadius: '18px', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', border: '1px solid #fcd34d', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', textAlign: 'left', width: '100%' }}
+            >
+              <div style={{ width: '44px', height: '44px', borderRadius: '13px', background: '#fbbf24', color: '#fff', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                <BookmarkPlus size={20} />
+              </div>
+              <div>
+                <div style={{ fontWeight: 900, color: '#78350f', fontSize: '0.95rem' }}>Secret Note</div>
+                <div style={{ fontSize: '0.78rem', color: '#b45309', fontWeight: 700 }}>{noteCount} note{noteCount > 1 ? 's' : ''} · {dueCount} due now</div>
+              </div>
+              <ChevronRight size={16} color="#b45309" style={{ marginLeft: 'auto' }} />
+            </button>
+          ) : null}
+
+          {/* Topics list */}
+          <div style={{ padding: '18px', borderRadius: '18px', background: 'rgba(255,255,255,0.88)', border: '1px solid rgba(167,139,250,0.16)' }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Target size={12} /> Your exam topics
+            </div>
+            {!hasTopics ? (
+              <div style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: 700, textAlign: 'center', padding: '12px 0' }}>
+                No topics set yet — ask your teacher.
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+                {selectedChips.map((ch, i) => (
+                  <div key={ch.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0', borderBottom: i < selectedChips.length - 1 ? '1px solid rgba(167,139,250,0.1)' : 'none' }}>
+                    <span style={{ fontFamily: 'inherit', fontSize: '0.62rem', fontWeight: 800, color: '#6d28d9', background: 'rgba(139,92,246,0.1)', padding: '3px 8px', borderRadius: '7px', flexShrink: 0 }}>
+                      {ch.year.replace('Year ', 'Y')}
+                    </span>
+                    <span style={{ fontSize: '0.86rem', fontWeight: 600, color: '#1e1b4b' }}>{ch.title}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        )}
+
+          {/* Secret note shortcut if no worst topic shown */}
+          {!worstTopic && noteCount === 0 && (
+            <button
+              onClick={onOpenSecretNote}
+              style={{ padding: '14px 16px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'default', textAlign: 'left', width: '100%', opacity: 0.6 }}
+            >
+              <BookmarkPlus size={16} color="#94a3b8" />
+              <div style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 700 }}>Mistakes will appear here for review.</div>
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
