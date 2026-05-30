@@ -164,7 +164,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
   // Auto-split trailing math block at the end of a single-line question to center it
   if (lines.length === 1 && typeof lines[0] === 'string') {
     // Match text followed by optional spacing/punctuation and a math block (e.g. \(...\) or $$...$$ or $...$) at the end
-    const match = lines[0].match(/^(.*?)(?:\s+|:\s*|,\s*)([\\\(|\$|\\\[].+?[\\\)|\\\]|\$])$/);
+    const match = lines[0].match(/^(.*?)(?:\s+|:\s*|,\s*)(\$\$[\s\S]+?\$\$|\$[\s\S]+?\$|\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])$/);
     if (match) {
       lines = [match[1].trim(), match[2].trim()];
     }
