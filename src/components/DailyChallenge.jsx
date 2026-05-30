@@ -1330,6 +1330,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           <Flag size={14} /> REPORT
                         </button>
                       )}
+                      {qData.source && (
+                        <div style={{ marginBottom: '8px' }}>
+                          <span style={{ fontSize: '0.62rem', fontWeight: 900, background: '#fef3c7', color: '#92400e', padding: '3px 9px', borderRadius: '7px', letterSpacing: '0.04em' }}>
+                            📄 {qData.source}
+                          </span>
+                        </div>
+                      )}
                       <div style={{ fontWeight: 800, marginBottom: '16px', color: '#1e293b', fontSize: '1.05rem', lineHeight: 1.5, paddingRight: qData.isManual ? '80px' : '0' }}>
                         {idx + 1}. <MathView content={questionText} graphData={qData.graphData} />
                       </div>

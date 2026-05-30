@@ -528,12 +528,22 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           marginBottom: '16px',
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-            <span style={{
-              fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase',
-              padding: '3px 9px', borderRadius: '7px', background: '#f5f3ff', color: '#7c3aed',
-            }}>
-              {q?.difficulty || 'medium'} · {(q?.type || 'question').replace('_', ' ')}
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+              <span style={{
+                fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase',
+                padding: '3px 9px', borderRadius: '7px', background: '#f5f3ff', color: '#7c3aed',
+              }}>
+                {q?.difficulty || 'medium'} · {(q?.type || 'question').replace('_', ' ')}
+              </span>
+              {q?.source && (
+                <span style={{
+                  fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.06em',
+                  padding: '3px 9px', borderRadius: '7px', background: '#fef3c7', color: '#92400e',
+                }}>
+                  📄 {q.source}
+                </span>
+              )}
+            </div>
             {q?.hint && (
               <button
                 onClick={() => setShowHint((v) => !v)}

@@ -300,9 +300,16 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const questionCard = (
     <div style={{ background: '#fff', padding: '24px', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <span style={{ fontSize: '0.68rem', fontWeight: 900, background: '#e0e7ff', color: '#4f46e5', padding: '5px 11px', borderRadius: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-          {q.topicTitle || q.chapterTitle}
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.68rem', fontWeight: 900, background: '#e0e7ff', color: '#4f46e5', padding: '5px 11px', borderRadius: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            {q.topicTitle || q.chapterTitle}
+          </span>
+          {q.source && (
+            <span style={{ fontSize: '0.65rem', fontWeight: 900, background: '#fef3c7', color: '#92400e', padding: '5px 10px', borderRadius: '8px', letterSpacing: '0.03em' }}>
+              📄 {q.source}
+            </span>
+          )}
+        </div>
         {q.hint && (
           <button
             onClick={() => setShowHint((v) => !v)}
