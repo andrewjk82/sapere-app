@@ -24,7 +24,26 @@
  *   circles:     [ { center: "O", through: "A", radius?, color?, dashed?, filled?, fillOpacity? } ]
  *                  Draws a circle centered at `center`. Radius is determined by the distance to `through` or explicitly via `radius` in data units.
  */
+
+const formatLabel = (str) => {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/\^\\circ/g, '°')
+    .replace(/\\circ/g, '°')
+    .replace(/\\alpha/g, 'α')
+    .replace(/\\beta/g, 'β')
+    .replace(/\\gamma/g, 'γ')
+    .replace(/\\theta/g, 'θ')
+    .replace(/\\pi/g, 'π')
+    .replace(/\^2/g, '²')
+    .replace(/\^3/g, '³')
+    .replace(/\\sqrt/g, '√')
+    .replace(/\\/g, '') // remove trailing backslashes if any
+    .replace(/\$+/g, '');
+};
+
 const GeometryFigure = ({
+
   points = {},
   segments = [],
   angles = [],
@@ -267,7 +286,7 @@ const GeometryFigure = ({
           fontSize={fontSize} fontStyle="italic"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'
         >
-          {ang.label}
+          {formatLabel(ang.label)}
         </text>
       );
     }
@@ -299,7 +318,7 @@ const GeometryFigure = ({
         textAnchor="middle" fill="#000000" fontSize={fontSize}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >
-        {sl.text}
+        {formatLabel(sl.text)}
       </text>
     );
   });
@@ -318,7 +337,7 @@ const GeometryFigure = ({
         fontStyle={label.italic === false ? 'normal' : 'italic'}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
       >
-        {label.text}
+        {formatLabel(label.text)}
       </text>
     );
   });
