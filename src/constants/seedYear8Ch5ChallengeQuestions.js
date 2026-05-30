@@ -523,18 +523,22 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1f_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, find the value of $\\alpha$.",
+    "question": "In the diagram, the base of the triangle is extended to form an exterior angle of $100^\\circ$. The two opposite interior angles are given as $2\\alpha$ and $3\\alpha$. Find the value of $\\alpha$.",
     "a": "20",
-    "solution": "1. The reflex angle at the bottom vertex is $345^\\circ$, so the interior angle of this vertex is $360^\\circ - 345^\\circ = 15^\\circ$.\n2. In the bottom-right small triangle, the exterior angle is equal to the sum of the opposite interior angles.\n3. Solving the system of angles, we find:\n   $$\\alpha = 20^\\circ$$",
+    "solution": "1. The exterior angle of a triangle is equal to the sum of the two opposite interior angles.\n2. Therefore, $2\\alpha + 3\\alpha = 100^\\circ$.\n3. $5\\alpha = 100^\\circ \\implies \\alpha = 20^\\circ$.",
     "t": "Geometry challenge",
-    "hint": "Find the interior angle at the reflex vertex first: $360^\\circ - 345^\\circ = 15^\\circ$.",
+    "hint": "The exterior angle is equal to the sum of the two opposite interior angles.",
     "solutionSteps": [
       {
-        "explanation": "Calculate the interior angle of the reflex vertex.",
-        "workingOut": "360^\\circ - 345^\\circ = 15^\\circ"
+        "explanation": "Set up the exterior angle equation.",
+        "workingOut": "2\\alpha + 3\\alpha = 100^\\circ"
       },
       {
-        "explanation": "Use the angle properties of the triangles to solve for $\\alpha$.",
+        "explanation": "Combine like terms.",
+        "workingOut": "5\\alpha = 100^\\circ"
+      },
+      {
+        "explanation": "Divide by 5 to solve for $\\alpha$.",
         "workingOut": "\\alpha = 20"
       }
     ],
@@ -542,27 +546,24 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4],
-          "B": [8, 2],
-          "C": [6, 0],
-          "D": [4, 1.5]
+          "A": [4, 4],
+          "B": [1, 0],
+          "C": [7, 0],
+          "D": [10, 0]
         },
         "segments": [
           { "from": "A", "to": "B" },
           { "from": "B", "to": "C" },
           { "from": "C", "to": "A" },
-          { "from": "A", "to": "D" },
-          { "from": "B", "to": "D" }
+          { "from": "C", "to": "D", "arrow": true }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.4, 3.5], "text": "15°" },
-          { "point": [1.2, 2.9], "text": "20°" },
-          { "point": [2.6, 2.6], "text": "β" },
-          { "point": [7.6, 2.1], "text": "α" },
-          { "point": [7.6, 1.5], "text": "345°" },
-          { "point": [6.2, 1.7], "text": "5α" }
+          { "point": [4.0, 3.2], "text": "2α" },
+          { "point": [2.0, 0.4], "text": "3α" },
+          { "point": [6.4, 0.4], "text": "β" },
+          { "point": [7.8, 0.6], "text": "100°" }
         ]
       }
     }
@@ -571,42 +572,43 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1f_beta",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, find the value of $\\beta$.",
-    "a": "15",
-    "solution": "1. Using the angle properties of the intersecting triangles, we find:\n   $$\\beta = 15^\\circ$$",
+    "question": "In the same diagram, the exterior angle is $100^\\circ$ and the adjacent interior angle is $\\beta$. Find the value of $\\beta$.",
+    "a": "80",
+    "solution": "1. The interior angle $\\beta$ and the exterior angle $100^\\circ$ lie on a straight line.\n2. Therefore, they sum to $180^\\circ$:\n   $$\\beta + 100^\\circ = 180^\\circ$$\n3. $$\\beta = 80^\\circ$$.",
     "t": "Geometry challenge",
-    "hint": "Apply the angle sum of triangles using the value of $\\alpha = 20^\\circ$.",
+    "hint": "Angles on a straight line add to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "Use $\\alpha = 20^\\circ$ to solve for $\\beta$.",
-        "workingOut": "\\beta = 15"
+        "explanation": "Set up the equation for angles on a straight line.",
+        "workingOut": "\\beta + 100^\\circ = 180^\\circ"
+      },
+      {
+        "explanation": "Solve for $\\beta$.",
+        "workingOut": "\\beta = 80"
       }
     ],
     "graphData": {
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 4],
-          "B": [8, 2],
-          "C": [6, 0],
-          "D": [4, 1.5]
+          "A": [4, 4],
+          "B": [1, 0],
+          "C": [7, 0],
+          "D": [10, 0]
         },
         "segments": [
           { "from": "A", "to": "B" },
           { "from": "B", "to": "C" },
           { "from": "C", "to": "A" },
-          { "from": "A", "to": "D" },
-          { "from": "B", "to": "D" }
+          { "from": "C", "to": "D", "arrow": true }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [1.4, 3.5], "text": "15°" },
-          { "point": [1.2, 2.9], "text": "20°" },
-          { "point": [2.6, 2.6], "text": "β" },
-          { "point": [7.6, 2.1], "text": "α" },
-          { "point": [7.6, 1.5], "text": "345°" },
-          { "point": [6.2, 1.7], "text": "5α" }
+          { "point": [4.0, 3.2], "text": "2α" },
+          { "point": [2.0, 0.4], "text": "3α" },
+          { "point": [6.4, 0.4], "text": "β" },
+          { "point": [7.8, 0.6], "text": "100°" }
         ]
       }
     }
