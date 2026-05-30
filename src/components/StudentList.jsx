@@ -163,13 +163,16 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   };
 
   const handleRemindInactive = async () => {
-    // Students with 0 challenge days this week
-    const inactive = students.filter((s) => (weeklyActivity[s.id] || 0) === 0);
+    // Students who haven't completed today's challenge
+    const inactive = students.filter((s) => {
+      const state = completionStates[s.id] || 'pending';
+      return state === 'pending';
+    });
     if (inactive.length === 0) {
-      alert('All students have done at least one challenge this week! 🎉');
+      alert("All students have completed today's challenge! 🎉");
       return;
     }
-    if (!window.confirm(`Send a reminder to ${inactive.length} student${inactive.length > 1 ? 's' : ''} who haven't done any challenges this week?`)) return;
+    if (!window.confirm(`Send a reminder to ${inactive.length} student${inactive.length > 1 ? 's' : ''} who haven't done today's challenge?`)) return;
 
     setIsSendingReminders(true);
     let sent = 0;
@@ -184,8 +187,8 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
               studentId: student.id,
               email: student.email || '',
               subject: "Don't forget your daily challenge! 🔥",
-              text: `Hi ${student.name || 'there'},\n\nYou haven't done a challenge yet this week. Log in to Sapere and keep your streak going!\n\nYour teacher`,
-              html: `<p>Hi <strong>${student.name || 'there'}</strong>,</p><p>You haven't done a challenge yet this week. Log in to <strong>Sapere</strong> and keep your streak going! 🔥</p><p>Your teacher</p>`,
+              text: `Hi ${student.name || 'there'},\n\nYou haven't done today's challenge yet. Log in to Sapere and keep your streak going!\n\nYour teacher`,
+              html: `<p>Hi <strong>${student.name || 'there'}</strong>,</p><p>You haven't done today's challenge yet. Log in to <strong>Sapere</strong> and keep your streak going! 🔥</p><p>Your teacher</p>`,
               metadata: { type: 'inactivity_reminder' },
             }),
           });
@@ -215,7 +218,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button
             onClick={handleRemindInactive}
-            disabled={isSendingReminders || Object.keys(weeklyActivity).length === 0}
+            disabled={isSendingReminders || Object.keys(completionStates).length === 0}
             className="app-button app-button--secondary"
             style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
             title="Send reminder to students who haven't done any challenges this week"
