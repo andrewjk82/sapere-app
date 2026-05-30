@@ -310,13 +310,7 @@ export const Y12A_CH6_QUESTIONS = [
             -1.5
           ]
         },
-        "circles": [
-          {
-            "center": "O",
-            "through": "A",
-            "dashed": true
-          }
-        ],
+        
         "segments": [
           {
             "from": "O",
@@ -412,13 +406,7 @@ export const Y12A_CH6_QUESTIONS = [
             -1
           ]
         },
-        "circles": [
-          {
-            "center": "O",
-            "through": "A",
-            "dashed": true
-          }
-        ],
+        
         "segments": [
           {
             "from": "O",
