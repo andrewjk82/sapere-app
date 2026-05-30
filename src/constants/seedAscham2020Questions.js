@@ -1770,30 +1770,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q32 — Tinplate area optimisation
   {
-    id: 'asc2020-q32a',
-    topicId: 'y12a-3G',
-    c: '3G',
-    t: 'Applications of maximisation and minimisation',
-    source: 'Ascham 2020 Trial Q32',
-    examPaper: 'asc-2020',
-    type: 'teacher_review',
-    requiresManualGrading: true,
-    difficulty: 'hard',
-    q: 'A circular piece of tinplate of radius 10 cm has three segments removed (two identical segments on the sides and one at the top), leaving a shaded shape. The central angle is $\\theta$ (in radians).\n\n(a) Show that the remaining shaded area is given by $A = 50(\\theta + 3\\sin\\theta)$ cm².',
-    a: 'Shown — the shaded area equals the sector of angle $\\theta$ plus the three triangular regions, each with area $\\frac{1}{2}r^2\\sin\\theta = 50\\sin\\theta$, giving $A = 50\\theta + 150\\sin\\theta = 50(\\theta + 3\\sin\\theta)$.',
-    opts: [],
-    h: 'The shaded area = sector area (angle $\\theta$, radius 10) + area of isosceles triangle formed by the chord $BC$ + two other triangular regions. Each triangle has area $\\frac{1}{2}(10)^2\\sin\\theta$.',
-    s: 'Sector area $= \\frac{1}{2}r^2\\theta = \\frac{1}{2}(100)\\theta = 50\\theta$. Each of the three triangle areas $= \\frac{1}{2}r^2\\sin\\theta = 50\\sin\\theta$. Total shaded area $= 50\\theta + 3 \\times 50\\sin\\theta = 50(\\theta + 3\\sin\\theta)$ cm².',
-    solutionSteps: [
-      { explanation: 'Identify the shaded area as a sector plus three triangular regions, each subtending angle $\\theta$ at the centre.', workingOut: 'A = A_{\\text{sector}} + 3 \\times A_{\\text{triangle}}' },
-      { explanation: 'Calculate the sector area with central angle $\\theta$ and radius 10.', workingOut: 'A_{\\text{sector}} = \\frac{1}{2}r^2\\theta = \\frac{1}{2}(100)\\theta = 50\\theta' },
-      { explanation: 'Each triangle has two sides equal to the radius 10, with included angle $\\theta$.', workingOut: 'A_{\\text{triangle}} = \\frac{1}{2}(10)(10)\\sin\\theta = 50\\sin\\theta' },
-      { explanation: 'Sum all parts.', workingOut: 'A = 50\\theta + 3(50\\sin\\theta) = 50(\\theta + 3\\sin\\theta) \\checkmark' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q32b',
+    id: 'asc2020-q32',
     topicId: 'y12a-3G',
     c: '3G',
     t: 'Applications of maximisation and minimisation',
@@ -1801,16 +1778,42 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'hard',
-    q: '(b) Using $A = 50(\\theta + 3\\sin\\theta)$, find the angle $\\theta$ so that the area of the shaded shape is a maximum. Give your answer correct to 2 decimal places.',
-    a: '$\\theta \\approx 1.91$ radians',
+    q: 'A circular piece of tinplate of radius 10 cm has three segments removed, leaving a shaded shape. The central angle $\\theta$ is measured in radians.',
+    a: 'See parts (a) and (b)',
     opts: [],
-    h: 'Differentiate $A$ with respect to $\\theta$, set $\\frac{dA}{d\\theta} = 0$, and solve for $\\theta$.',
-    s: '$\\dfrac{dA}{d\\theta} = 50(1 + 3\\cos\\theta) = 0 \\Rightarrow \\cos\\theta = -\\dfrac{1}{3} \\Rightarrow \\theta = \\cos^{-1}\\!\\left(-\\dfrac{1}{3}\\right) \\approx 1.91$ rad.\n\nVerify: $\\dfrac{d^2A}{d\\theta^2} = -150\\sin\\theta < 0$ for $\\theta \\in (0,\\pi)$ ✓ (maximum).',
+    h: 'Sector area + 3 triangles for (a). Differentiate $A$ for (b).',
+    s: '$A = 50(\\theta + 3\\sin\\theta)$; maximum at $\\theta \\approx 1.91$ rad.',
     solutionSteps: [
-      { explanation: 'Differentiate $A = 50(\\theta + 3\\sin\\theta)$ with respect to $\\theta$.', workingOut: '\\frac{dA}{d\\theta} = 50(1 + 3\\cos\\theta)' },
-      { explanation: 'Set $\\frac{dA}{d\\theta} = 0$.', workingOut: '1 + 3\\cos\\theta = 0 \\Rightarrow \\cos\\theta = -\\frac{1}{3}' },
-      { explanation: 'Solve for $\\theta$.', workingOut: '\\theta = \\cos^{-1}\\!\\left(-\\tfrac{1}{3}\\right) \\approx 1.9106 \\approx 1.91 \\text{ rad}' },
-      { explanation: 'Confirm it is a maximum using the second derivative.', workingOut: '\\frac{d^2A}{d\\theta^2} = -150\\sin\\theta < 0 \\text{ for } \\theta \\in (0,\\pi) \\Rightarrow \\text{maximum} \\checkmark' }
+      { explanation: '$A = 50\\theta + 3 \\times 50\\sin\\theta = 50(\\theta + 3\\sin\\theta)$.', workingOut: 'A = 50(\\theta + 3\\sin\\theta)' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q32-a',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'hard',
+        question: '(a) Show that the remaining shaded area is given by $A = 50(\\theta + 3\\sin\\theta)$ cm².',
+        answer: 'Shown — sector area $50\\theta$ + three triangles each $50\\sin\\theta$ = $50(\\theta + 3\\sin\\theta)$.',
+        hint: 'Sector area $= \\frac{1}{2}r^2\\theta$. Each triangle area $= \\frac{1}{2}r^2\\sin\\theta$.',
+        solutionSteps: [
+          { explanation: 'Sector area.', workingOut: 'A_{\\text{sector}} = \\frac{1}{2}(100)\\theta = 50\\theta' },
+          { explanation: 'Three triangles.', workingOut: '3 \\times \\frac{1}{2}(100)\\sin\\theta = 150\\sin\\theta' },
+          { explanation: 'Total.', workingOut: 'A = 50\\theta + 150\\sin\\theta = 50(\\theta+3\\sin\\theta) \\checkmark' }
+        ]
+      },
+      {
+        id: 'asc2020-q32-b',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(b) Find the angle $\\theta$ so that the area is a maximum. Give your answer correct to 2 decimal places.',
+        answer: '$\\theta \\approx 1.91$ radians',
+        hint: 'Set $\\frac{dA}{d\\theta} = 0$ and solve.',
+        solutionSteps: [
+          { explanation: 'Differentiate.', workingOut: '\\frac{dA}{d\\theta} = 50(1 + 3\\cos\\theta) = 0 \\Rightarrow \\cos\\theta = -\\frac{1}{3}' },
+          { explanation: 'Solve.', workingOut: '\\theta = \\cos^{-1}(-\\tfrac{1}{3}) \\approx 1.91 \\text{ rad}' },
+          { explanation: 'Confirm maximum: $\\frac{d^2A}{d\\theta^2} = -150\\sin\\theta < 0$ ✓', workingOut: '\\text{Maximum confirmed}' }
+        ]
+      }
     ]
   },
 
@@ -1837,7 +1840,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q33 — Normal distribution (swimming championship)
   {
-    id: 'asc2020-q33a',
+    id: 'asc2020-q33',
     topicId: 'y12a-10E',
     c: '10E',
     t: 'Normal distributions',
@@ -1845,60 +1848,50 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Swimmers who took longer than 16.5 minutes were disqualified. About 16% of swimmers were disqualified. The mean time was 15 minutes.\n\n(a) Find the standard deviation of swim times for this race.',
-    a: '$\\sigma = 1.5$ minutes',
+    q: 'A number of people participated in a Swimming Championship. Swimmers who took longer than 16.5 minutes to complete the swim were disqualified. About 16% of swimmers were disqualified. The mean time to complete the race was 15 minutes.',
+    a: 'See parts (a), (b), (c)',
     opts: [],
-    h: 'In a normal distribution, approximately 16% of data lies above $\\mu + \\sigma$ (i.e. more than 1 SD above the mean). Use this to set up an equation.',
-    s: '$P(X > 16.5) \\approx 16\\% \\approx P(Z > 1)$. So 16.5 is 1 standard deviation above the mean: $\\mu + \\sigma = 16.5$. With $\\mu = 15$: $\\sigma = 16.5 - 15 = 1.5$ minutes.',
+    h: 'Use the 68% rule for (a) and (b), then z-tables for (c).',
+    s: '$\\sigma = 1.5$ min; qualifying time $\\approx 11.51$ min.',
     solutionSteps: [
-      { explanation: 'Recall the 68-95-99.7 rule: approximately 16% of data lies more than 1 SD above the mean.', workingOut: 'P(Z > 1) \\approx 0.16' },
-      { explanation: '16% are disqualified, so 16.5 corresponds to 1 SD above the mean.', workingOut: '\\mu + \\sigma = 16.5' },
-      { explanation: 'Substitute $\\mu = 15$ and solve.', workingOut: '15 + \\sigma = 16.5 \\Rightarrow \\sigma = 1.5 \\text{ minutes}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q33b',
-    topicId: 'y12a-10E',
-    c: '10E',
-    t: 'Normal distributions',
-    source: 'Ascham 2020 Trial Q33',
-    examPaper: 'asc-2020',
-    type: 'teacher_review',
-    requiresManualGrading: true,
-    difficulty: 'easy',
-    q: '(b) Sketch the normal distribution curve for the swim time data, with $\\mu = 15$ min and $\\sigma = 1.5$ min. Label the mean and mark the disqualification threshold at 16.5 min.',
-    a: 'Bell-shaped curve centred at 15, symmetric. The value 16.5 (= $\\mu + \\sigma$) is marked on the right, with the shaded tail (16%) beyond it.',
-    opts: [],
-    h: 'Draw a symmetric bell curve. Mark $\\mu = 15$ at the centre and $\\sigma = 1.5$ intervals on each side. Shade the region $x > 16.5$.',
-    s: 'The curve is centred at 15. Key values: $15 - 1.5 = 13.5$, $15$, $15 + 1.5 = 16.5$. The region $x > 16.5$ represents approximately 16% of swimmers (those disqualified).',
-    solutionSteps: [
-      { explanation: 'Draw a symmetric bell-shaped curve centred at $\\mu = 15$.', workingOut: '\\text{Centre at } \\mu = 15' },
-      { explanation: 'Mark $\\mu \\pm \\sigma$: $13.5$ and $16.5$ on the x-axis.', workingOut: '\\mu - \\sigma = 13.5, \\quad \\mu + \\sigma = 16.5' },
-      { explanation: 'Shade the right tail beyond 16.5 — this represents the 16% who were disqualified.', workingOut: 'P(X > 16.5) \\approx 16\\%' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q33c',
-    topicId: 'y12a-10F',
-    c: '10F',
-    t: 'Applications of the normal distribution',
-    source: 'Ascham 2020 Trial Q33',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: '(c) The fastest 1% of swimmers immediately qualify for the next competition. Using the standard normal distribution tables (provided on pages 33–34 of the exam), determine the qualifying time.\n\nUse $\\mu = 15$ min, $\\sigma = 1.5$ min.',
-    a: 'Qualifying time $\\approx 11.51$ minutes',
-    opts: [],
-    h: 'Find the $z$-score such that $P(Z < z) = 0.01$ from the table, then convert back using $x = \\mu + z\\sigma$.',
-    s: 'The fastest 1% have the shortest times, so $P(X < t) = 0.01$. From the table: $P(Z < -2.33) \\approx 0.0099 \\approx 0.01$, so $z = -2.33$.\n\n$t = \\mu + z\\sigma = 15 + (-2.33)(1.5) = 15 - 3.495 \\approx 11.51$ minutes.',
-    solutionSteps: [
-      { explanation: 'The fastest 1% have times below the qualifying threshold: $P(X < t) = 0.01$.', workingOut: 'P(X < t) = 0.01' },
-      { explanation: 'Standardise: $P\\!\\left(Z < \\frac{t - 15}{1.5}\\right) = 0.01$.', workingOut: 'P(Z < z) = 0.01' },
-      { explanation: 'From the $z$-table: $P(Z < -2.33) \\approx 0.0099$, so $z \\approx -2.33$.', workingOut: 'z = -2.33' },
-      { explanation: 'Convert back to raw score.', workingOut: 't = 15 + (-2.33)(1.5) = 15 - 3.495 = 11.505' },
-      { explanation: 'State the qualifying time.', workingOut: 't \\approx 11.51 \\text{ minutes}' }
+      { explanation: '$P(Z>1)\\approx 16\\%$ so $\\sigma = 16.5 - 15 = 1.5$.', workingOut: '\\sigma = 1.5 \\text{ min}' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q33-a',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(a) Find the standard deviation of swim times for this race.',
+        answer: '$\\sigma = 1.5$ minutes',
+        hint: 'About 16% lie above $\\mu + \\sigma$. Use this with $\\mu = 15$ and the threshold 16.5.',
+        solutionSteps: [
+          { explanation: '$P(Z>1) \\approx 16\\%$, so 16.5 is $\\mu + \\sigma$.', workingOut: '\\mu + \\sigma = 16.5 \\Rightarrow \\sigma = 1.5 \\text{ min}' }
+        ]
+      },
+      {
+        id: 'asc2020-q33-b',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'easy',
+        question: '(b) Sketch the normal distribution curve for this information.',
+        answer: 'Bell curve centred at 15, with 16.5 marked as $\\mu + \\sigma$ and the tail beyond shaded (16%).',
+        hint: 'Mark $\\mu = 15$ at centre. Label $13.5$, $15$, $16.5$ on the axis.',
+        solutionSteps: [
+          { explanation: 'Bell curve centred at $\\mu = 15$, shade region $x > 16.5$.', workingOut: 'P(X > 16.5) \\approx 16\\%' }
+        ]
+      },
+      {
+        id: 'asc2020-q33-c',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(c) The fastest 1% of swimmers immediately qualify for the next level. Use the probability tables for the standard normal distribution to determine the qualifying time.',
+        answer: 'Qualifying time $\\approx 11.51$ minutes',
+        hint: 'Find $z$ where $P(Z < z) = 0.01$ from the table, then $t = \\mu + z\\sigma$.',
+        solutionSteps: [
+          { explanation: 'Fastest 1%: $P(X < t) = 0.01 \\Rightarrow z = -2.33$.', workingOut: 'z = -2.33' },
+          { explanation: 'Convert to raw score.', workingOut: 't = 15 + (-2.33)(1.5) = 11.51 \\text{ min}' }
+        ]
+      }
     ]
   },
 
@@ -1924,29 +1917,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q34 — Swimming pool pump (rates and trig integration)
   {
-    id: 'asc2020-q34a',
-    topicId: 'y12a-6C',
-    c: '6C',
-    t: 'Applications of differentiation of trigonometric functions',
-    source: 'Ascham 2020 Trial Q34',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'medium',
-    q: 'A swimming pool contains 100 kL when full. The flow rate of water through the pump (in kL/min) is:\n$$\\frac{dV}{dt} = -0.3\\sin\\frac{\\pi t}{30}$$\n\nAt 9:45 am the pool is full and the pump is switched on ($t = 0$). What is the first time after 9:45 am at which the flow rate is zero?',
-    a: '$t = 30$ minutes after 9:45 am, i.e. at $10{:}15$ am',
-    opts: [],
-    h: 'Set $\\frac{dV}{dt} = 0$. Since $-0.3 \\neq 0$, solve $\\sin\\frac{\\pi t}{30} = 0$ for the first positive $t$.',
-    s: '$-0.3\\sin\\dfrac{\\pi t}{30} = 0 \\Rightarrow \\sin\\dfrac{\\pi t}{30} = 0 \\Rightarrow \\dfrac{\\pi t}{30} = 0, \\pi, 2\\pi, \\ldots$\n\nFirst positive solution: $\\dfrac{\\pi t}{30} = \\pi \\Rightarrow t = 30$ minutes.\n\nTime: 9:45 am + 30 min = $10{:}15$ am.',
-    solutionSteps: [
-      { explanation: 'Set the flow rate equal to zero.', workingOut: '-0.3\\sin\\frac{\\pi t}{30} = 0 \\Rightarrow \\sin\\frac{\\pi t}{30} = 0' },
-      { explanation: 'General solution of $\\sin(u) = 0$: $u = n\\pi$ for integer $n$.', workingOut: '\\frac{\\pi t}{30} = n\\pi \\Rightarrow t = 30n' },
-      { explanation: 'First positive value (excluding $t = 0$): $n = 1$.', workingOut: 't = 30 \\text{ minutes}' },
-      { explanation: 'Convert to clock time.', workingOut: '9{:}45 \\text{ am} + 30 \\text{ min} = 10{:}15 \\text{ am}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q34b',
+    id: 'asc2020-q34',
     topicId: 'y12a-6D',
     c: '6D',
     t: 'Integrating the trigonometric functions',
@@ -1954,37 +1925,50 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'hard',
-    q: '(b) Find an expression for the volume $V$ (in kL) of water in the pool after $t$ minutes.\n\nGiven: $\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}$, and $V = 100$ when $t = 0$.',
-    a: '$V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)$',
+    q: 'A small-sized home swimming pool contains 100 kL of water when full. The flow rate of the volume of water that the pump filters in kL/min is given by:\n$$\\frac{dV}{dt} = -0.3\\sin\\frac{\\pi t}{30}$$\n\nAt 9:45 am the swimming pool is full and the pump is switched on.',
+    a: 'See parts (a), (b), (c)',
     opts: [],
-    h: 'Integrate $\\frac{dV}{dt}$ with respect to $t$, using $\\int\\sin(kt)\\,dt = -\\frac{1}{k}\\cos(kt) + C$. Apply the initial condition $V(0) = 100$.',
-    s: '$V = \\displaystyle\\int -0.3\\sin\\frac{\\pi t}{30}\\,dt = -0.3 \\times \\left(-\\frac{30}{\\pi}\\right)\\cos\\frac{\\pi t}{30} + C = \\frac{9}{\\pi}\\cos\\frac{\\pi t}{30} + C$.\n\nAt $t = 0$: $100 = \\frac{9}{\\pi} + C \\Rightarrow C = 100 - \\frac{9}{\\pi}$.\n\n$V = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + 100 - \\dfrac{9}{\\pi} = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)$.',
+    h: 'Set $dV/dt = 0$ for (a). Integrate for (b). Minimise $\\cos$ for (c).',
+    s: '$t = 30$ min (10:15 am); $V = 100 + \\frac{9}{\\pi}(\\cos(\\pi t/30)-1)$; $V_{\\min} = 100 - 18/\\pi$ kL.',
     solutionSteps: [
-      { explanation: 'Integrate $\\frac{dV}{dt} = -0.3\\sin\\frac{\\pi t}{30}$.', workingOut: 'V = \\int -0.3\\sin\\frac{\\pi t}{30}\\,dt' },
-      { explanation: 'Use $\\int\\sin(kt)\\,dt = -\\frac{1}{k}\\cos(kt)$, with $k = \\frac{\\pi}{30}$.', workingOut: 'V = -0.3 \\times \\left(-\\frac{30}{\\pi}\\right)\\cos\\frac{\\pi t}{30} + C = \\frac{9}{\\pi}\\cos\\frac{\\pi t}{30} + C' },
-      { explanation: 'Apply initial condition $V(0) = 100$.', workingOut: '100 = \\frac{9}{\\pi}\\cos(0) + C = \\frac{9}{\\pi} + C \\Rightarrow C = 100 - \\frac{9}{\\pi}' },
-      { explanation: 'Substitute $C$ and simplify.', workingOut: 'V = \\frac{9}{\\pi}\\cos\\frac{\\pi t}{30} + 100 - \\frac{9}{\\pi} = 100 + \\frac{9}{\\pi}\\!\\left(\\cos\\frac{\\pi t}{30} - 1\\right)' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q34c',
-    topicId: 'y12a-3F',
-    c: '3F',
-    t: 'Global maximum and minimum',
-    source: 'Ascham 2020 Trial Q34',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: '(c) Using $V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)$, find the minimum volume of water in the pool during the pumping cycle. Leave your answer in terms of $\\pi$.',
-    a: '$V_{\\min} = 100 - \\dfrac{18}{\\pi}$ kL',
-    opts: [],
-    h: '$V$ is minimised when $\\cos\\dfrac{\\pi t}{30}$ is minimised, i.e. when $\\cos\\dfrac{\\pi t}{30} = -1$.',
-    s: '$V$ is minimum when $\\cos\\dfrac{\\pi t}{30} = -1$ (which occurs at $t = 30$).\n\n$V_{\\min} = 100 + \\dfrac{9}{\\pi}(-1 - 1) = 100 - \\dfrac{18}{\\pi}$ kL.',
-    solutionSteps: [
-      { explanation: 'The minimum of $V$ occurs when $\\cos\\frac{\\pi t}{30}$ is at its minimum value of $-1$.', workingOut: '\\cos\\frac{\\pi t}{30} = -1 \\Rightarrow t = 30' },
-      { explanation: 'Substitute $\\cos\\frac{\\pi t}{30} = -1$ into the formula for $V$.', workingOut: 'V_{\\min} = 100 + \\frac{9}{\\pi}(-1-1) = 100 + \\frac{9}{\\pi}(-2)' },
-      { explanation: 'Simplify.', workingOut: 'V_{\\min} = 100 - \\frac{18}{\\pi} \\text{ kL}' }
+      { explanation: 'Integrate to find $V(t)$.', workingOut: 'V = 100 + \\frac{9}{\\pi}\\left(\\cos\\frac{\\pi t}{30} - 1\\right)' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q34-a',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(a) What is the first time after 9:45 am at which the flow rate is zero?',
+        answer: '$t = 30$ minutes after 9:45 am, i.e. at 10:15 am',
+        hint: 'Set $\\sin\\frac{\\pi t}{30} = 0$ and find the first positive solution.',
+        solutionSteps: [
+          { explanation: 'Set flow rate to zero.', workingOut: '\\sin\\frac{\\pi t}{30} = 0 \\Rightarrow \\frac{\\pi t}{30} = \\pi \\Rightarrow t = 30 \\text{ min}' },
+          { explanation: 'Clock time.', workingOut: '9{:}45 + 30 = 10{:}15 \\text{ am}' }
+        ]
+      },
+      {
+        id: 'asc2020-q34-b',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(b) Find an expression for the volume $V$ of water in the pool after $t$ minutes.',
+        answer: '$V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)$',
+        hint: 'Integrate $dV/dt$ and apply $V(0) = 100$.',
+        solutionSteps: [
+          { explanation: 'Integrate.', workingOut: 'V = \\frac{9}{\\pi}\\cos\\frac{\\pi t}{30} + C' },
+          { explanation: 'Apply $V(0)=100$.', workingOut: 'C = 100 - \\frac{9}{\\pi} \\Rightarrow V = 100 + \\frac{9}{\\pi}\\left(\\cos\\frac{\\pi t}{30}-1\\right)' }
+        ]
+      },
+      {
+        id: 'asc2020-q34-c',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(c) Find the minimum volume of water in the pool during the pumping cycle. Leave your answer in terms of $\\pi$.',
+        answer: '$V_{\\min} = 100 - \\dfrac{18}{\\pi}$ kL',
+        hint: '$V$ is minimised when $\\cos\\frac{\\pi t}{30} = -1$.',
+        solutionSteps: [
+          { explanation: 'Minimum when $\\cos = -1$ (at $t = 30$).', workingOut: 'V_{\\min} = 100 + \\frac{9}{\\pi}(-1-1) = 100 - \\frac{18}{\\pi} \\text{ kL}' }
+        ]
+      }
     ]
   },
 
