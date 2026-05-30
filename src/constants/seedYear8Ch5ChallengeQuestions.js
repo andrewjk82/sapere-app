@@ -108,15 +108,15 @@ export const Y8_CH5I_QUESTIONS = [
     "id": "y8-5i-q1b_alpha",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom lines are parallel, and the two slanted transversals are parallel ($AC \\parallel FE$). The angle at the top-right is $76^\\circ$. The angle $\\alpha$ is between the right transversal and the top parallel line (below the $76^\\circ$ angle). Find the value of $\\alpha$.",
+    "question": "In the diagram, the two horizontal lines are parallel. A transversal crosses both lines. The angle marked at the top-right (interior, below the top line) is $76^\\circ$, and $\\alpha$ is the co-interior angle at the bottom-left (interior, above the bottom line). Find the value of $\\alpha$.",
     "a": "104",
-    "solution": "1. The two parallel slanted transversals cut the top parallel line at the same angles.\n2. The angle of $76^\\circ$ and $\\alpha$ are supplementary (they form a straight line along the top parallel line), but $\\alpha$ is above the top line, which means:\n   $$\\alpha + 76^\\circ = 180^\\circ$$\n   Wait — looking at the diagram, $\\alpha$ and $76^\\circ$ are co-interior angles between the two parallel transversals, so:\n   $$\\alpha = 180^\\circ - 76^\\circ = 104^\\circ$$",
+    "solution": "Co-interior angles (also called same-side interior angles) between parallel lines add up to $180^\\circ$:\n$$76^\\circ + \\alpha = 180^\\circ$$\n$$\\alpha = 104^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "$\\alpha$ and $76^\\circ$ are co-interior angles between the two parallel transversals, so they add to $180^\\circ$.",
+    "hint": "Co-interior angles between parallel lines always add to $180^\\circ$.",
     "solutionSteps": [
       {
-        "explanation": "$\\alpha$ and $76^\\circ$ are co-interior (same-side interior) angles between the two parallel transversals.",
-        "workingOut": "\\alpha + 76^\\circ = 180^\\circ"
+        "explanation": "Co-interior angles (same side of the transversal, between the parallel lines) sum to $180^\\circ$.",
+        "workingOut": "76^\\circ + \\alpha = 180^\\circ"
       },
       {
         "explanation": "Solve for $\\alpha$.",
@@ -127,50 +127,48 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [8, 0],
-          "C": [2, 4],
-          "D": [10, 4],
-          "E": [8.5, 4],
-          "F": [5.5, 0]
+          "L1": [0, 0],
+          "R1": [8, 0],
+          "L2": [0, 4],
+          "R2": [8, 4],
+          "BL": [1.5, 0],
+          "TR": [6.5, 4]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true },
-          { "from": "C", "to": "D", "arrow": true },
-          { "from": "A", "to": "C", "marks": 2 },
-          { "from": "F", "to": "E", "marks": 2 },
-          { "from": "A", "to": "E" }
+          { "from": "L1", "to": "R1", "arrow": true },
+          { "from": "L2", "to": "R2", "arrow": true },
+          { "from": "BL", "to": "TR" }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [8.8, 4.3], "text": "76°" },
-          { "point": [8.3, 3.6], "text": "γ" },
-          { "point": [8.1, 2.9], "text": "α" },
-          { "point": [6.8, 1.8], "text": "108°" },
-          { "point": [0.6, 0.2], "text": "β" },
-          { "point": [0.8, 0.5], "text": "β" },
-          { "point": [0.4, 0.9], "text": "β" }
+          { "point": [6.7, 3.5], "text": "76\u00b0" },
+          { "point": [1.3, 0.6], "text": "\u03b1" }
         ]
       }
     }
   },
+
   {
     "id": "y8-5i-q1b_beta",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom lines are parallel, and the two main transversals are parallel. Find the value of $\\beta$.",
+    "question": "In the diagram, the two horizontal lines are parallel. A transversal meets the bottom line at point $A$, and the angle at $A$ (between the transversal and the bottom line) is divided into three equal parts of $\\beta$ each, so the total angle is $3\\beta$. The co-interior angle at the top is $108^\\circ$. Find the value of $\\beta$.",
     "a": "24",
-    "solution": "1. The interior angle shown is $108^\\circ$.\n2. Since the two slanted transversals are parallel, the interior angle of $108^\\circ$ and the total bottom-left angle ($3\\beta$) are co-interior angles, which sum to $180^\\circ$:\n   $$3\\beta + 108^\\circ = 180^\\circ$$\n   $$3\\beta = 72^\\circ$$\n   $$\\beta = 24^\\circ$$",
+    "solution": "Co-interior angles between parallel lines sum to $180^\\circ$:\n$$3\\beta + 108^\\circ = 180^\\circ$$\n$$3\\beta = 72^\\circ$$\n$$\\beta = 24^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "Set up a co-interior angle equation: $3\\beta + 108^\\circ = 180^\\circ$.",
+    "hint": "Use co-interior angles: $3\\beta + 108^\\circ = 180^\\circ$. Then divide by 3.",
     "solutionSteps": [
       {
-        "explanation": "Use co-interior angles to find the total bottom-left angle $3\\beta$.",
-        "workingOut": "3\\beta = 180^\\circ - 108^\\circ = 72^\\circ"
+        "explanation": "Set up the co-interior angle equation.",
+        "workingOut": "3\\beta + 108^\\circ = 180^\\circ"
       },
       {
-        "explanation": "Divide by 3 to find $\\beta$.",
+        "explanation": "Solve for $3\\beta$.",
+        "workingOut": "3\\beta = 72^\\circ"
+      },
+      {
+        "explanation": "Divide by 3.",
         "workingOut": "\\beta = 24"
       }
     ],
@@ -178,46 +176,42 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [8, 0],
-          "C": [2, 4],
-          "D": [10, 4],
-          "E": [8.5, 4],
-          "F": [5.5, 0]
+          "L1": [0, 0],
+          "R1": [8, 0],
+          "L2": [0, 4],
+          "R2": [8, 4],
+          "A": [1, 0],
+          "T": [5, 4]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true },
-          { "from": "C", "to": "D", "arrow": true },
-          { "from": "A", "to": "C", "marks": 2 },
-          { "from": "F", "to": "E", "marks": 2 },
-          { "from": "A", "to": "E" }
+          { "from": "L1", "to": "R1", "arrow": true },
+          { "from": "L2", "to": "R2", "arrow": true },
+          { "from": "A", "to": "T" }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [8.8, 4.3], "text": "76°" },
-          { "point": [8.3, 3.6], "text": "γ" },
-          { "point": [8.1, 2.9], "text": "α" },
-          { "point": [6.8, 1.8], "text": "108°" },
-          { "point": [0.6, 0.2], "text": "β" },
-          { "point": [0.8, 0.5], "text": "β" },
-          { "point": [0.4, 0.9], "text": "β" }
+          { "point": [1.3, 0.5], "text": "\u03b2" },
+          { "point": [1.8, 0.9], "text": "\u03b2" },
+          { "point": [2.4, 1.4], "text": "\u03b2" },
+          { "point": [4.8, 3.5], "text": "108\u00b0" }
         ]
       }
     }
   },
+
   {
     "id": "y8-5i-q1b_gamma",
     "type": "short_answer",
     "difficulty": "hard",
-    "question": "In the diagram, the top and bottom lines are parallel, and the two slanted transversals are parallel. The angle at the top-right (above the top line) is $76^\\circ$. Find the value of $\\gamma$, which is the angle directly below the top line at the same intersection.",
+    "question": "In the diagram, the two horizontal lines are parallel. A transversal crosses both lines. The angle at the top-left (interior, below the top line, on the left of the transversal) is $76^\\circ$. Find the value of $\\gamma$, the alternate angle at the bottom-right (interior, above the bottom line, on the right of the transversal).",
     "a": "76",
-    "solution": "The $76^\\circ$ angle and $\\gamma$ are vertically opposite angles at the top-right intersection:\n$$\\gamma = 76^\\circ$$",
+    "solution": "Alternate interior angles between parallel lines are equal:\n$$\\gamma = 76^\\circ$$",
     "t": "Geometry challenge",
-    "hint": "$\\gamma$ and $76^\\circ$ are vertically opposite at the same intersection point.",
+    "hint": "Alternate interior angles are on opposite sides of the transversal between the parallel lines — they are always equal.",
     "solutionSteps": [
       {
-        "explanation": "Vertically opposite angles are equal.",
+        "explanation": "Identify alternate interior angles: they are on opposite sides of the transversal, between the two parallel lines.",
         "workingOut": "\\gamma = 76"
       }
     ],
@@ -225,34 +219,28 @@ export const Y8_CH5I_QUESTIONS = [
       "geometry": {
         "width": 280,
         "points": {
-          "A": [0, 0],
-          "B": [8, 0],
-          "C": [2, 4],
-          "D": [10, 4],
-          "E": [8.5, 4],
-          "F": [5.5, 0]
+          "L1": [0, 0],
+          "R1": [8, 0],
+          "L2": [0, 4],
+          "R2": [8, 4],
+          "BL": [2, 0],
+          "TR": [6, 4]
         },
         "segments": [
-          { "from": "A", "to": "B", "arrow": true },
-          { "from": "C", "to": "D", "arrow": true },
-          { "from": "A", "to": "C", "marks": 2 },
-          { "from": "F", "to": "E", "marks": 2 },
-          { "from": "A", "to": "E" }
+          { "from": "L1", "to": "R1", "arrow": true },
+          { "from": "L2", "to": "R2", "arrow": true },
+          { "from": "BL", "to": "TR" }
         ],
         "angles": [],
         "sideLabels": [],
         "freeLabels": [
-          { "point": [8.8, 4.3], "text": "76°" },
-          { "point": [8.3, 3.6], "text": "γ" },
-          { "point": [8.1, 2.9], "text": "α" },
-          { "point": [6.8, 1.8], "text": "108°" },
-          { "point": [0.6, 0.2], "text": "β" },
-          { "point": [0.8, 0.5], "text": "β" },
-          { "point": [0.4, 0.9], "text": "β" }
+          { "point": [5.5, 3.5], "text": "76\u00b0" },
+          { "point": [2.6, 0.6], "text": "\u03b3" }
         ]
       }
     }
   },
+
   {
     "id": "y8-5i-q1c_alpha",
     "type": "short_answer",
