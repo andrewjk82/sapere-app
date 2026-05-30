@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw } from 'lucide-react';
+import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, BellRing } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
 import { collection, doc, getDoc, getDocs, limit, query, where } from 'firebase/firestore';
@@ -9,6 +9,7 @@ import StudentProfileModal from './StudentProfileModal';
 
 const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStudent }) => {
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [isSendingReminders, setIsSendingReminders] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [activeStudent, setActiveStudent] = useState(null);
@@ -161,6 +162,43 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
     }
   };
 
+  const handleRemindInactive = async () => {
+    // Students with 0 challenge days this week
+    const inactive = students.filter((s) => (weeklyActivity[s.id] || 0) === 0);
+    if (inactive.length === 0) {
+      alert('All students have done at least one challenge this week! 🎉');
+      return;
+    }
+    if (!window.confirm(`Send a reminder to ${inactive.length} student${inactive.length > 1 ? 's' : ''} who haven't done any challenges this week?`)) return;
+
+    setIsSendingReminders(true);
+    let sent = 0;
+    let failed = 0;
+    await Promise.allSettled(
+      inactive.map(async (student) => {
+        try {
+          const res = await fetch('/api/send-notif', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              studentId: student.id,
+              email: student.email || '',
+              subject: "Don't forget your daily challenge! 🔥",
+              text: `Hi ${student.name || 'there'},\n\nYou haven't done a challenge yet this week. Log in to Sapere and keep your streak going!\n\nYour teacher`,
+              html: `<p>Hi <strong>${student.name || 'there'}</strong>,</p><p>You haven't done a challenge yet this week. Log in to <strong>Sapere</strong> and keep your streak going! 🔥</p><p>Your teacher</p>`,
+              metadata: { type: 'inactivity_reminder' },
+            }),
+          });
+          if (res.ok) sent++; else failed++;
+        } catch {
+          failed++;
+        }
+      })
+    );
+    setIsSendingReminders(false);
+    alert(`Reminders sent: ${sent}${failed > 0 ? ` (${failed} failed)` : ''}`);
+  };
+
   
   const filteredStudents = students.filter(s => {
     const nameMatch = (s.name || '').toLowerCase().includes(searchTerm.toLowerCase());
@@ -174,15 +212,27 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
         <div className="app-page__title">
           <h2>Students</h2>
         </div>
-        <button 
-          onClick={handleManualRefresh}
-          disabled={isRefreshing}
-          className="app-button app-button--primary"
-          style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
-        >
-          <RefreshCw size={18} className={isRefreshing ? 'animate-spin' : ''} />
-          {isRefreshing ? 'Syncing...' : 'Sync Students'}
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            onClick={handleRemindInactive}
+            disabled={isSendingReminders || Object.keys(weeklyActivity).length === 0}
+            className="app-button app-button--secondary"
+            style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+            title="Send reminder to students who haven't done any challenges this week"
+          >
+            <BellRing size={18} />
+            {isSendingReminders ? 'Sending...' : 'Remind Inactive'}
+          </button>
+          <button
+            onClick={handleManualRefresh}
+            disabled={isRefreshing}
+            className="app-button app-button--primary"
+            style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+          >
+            <RefreshCw size={18} className={isRefreshing ? 'animate-spin' : ''} />
+            {isRefreshing ? 'Syncing...' : 'Sync Students'}
+          </button>
+        </div>
       </div>
 
       <div className="app-page__actions">
