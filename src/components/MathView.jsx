@@ -134,14 +134,37 @@ const toDisplayText = (value, fallback = '') => {
 const MathView = ({ content, graphData: rawGraphData, style }) => {
   const containerRef = useRef(null);
   
-  let lines = typeof content === 'string'
-    ? content.split(/\r?\n|\\n/)
-    : [content];
+  let lines = [];
+  if (typeof content === 'string') {
+    // Only split on newlines that are OUTSIDE of math blocks.
+    const mathBlockRegex = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
+    const parts = content.split(mathBlockRegex);
+    let currentLine = "";
+    for (let i = 0; i < parts.length; i++) {
+      if (i % 2 === 0) {
+        // Plain text part: split by actual newlines or the literal string "\n"
+        const textParts = parts[i].split(/\r?\n|\\n/);
+        for (let j = 0; j < textParts.length; j++) {
+          if (j > 0) {
+            lines.push(currentLine);
+            currentLine = "";
+          }
+          currentLine += textParts[j];
+        }
+      } else {
+        // Math block: keep it intact on the current line
+        currentLine += parts[i];
+      }
+    }
+    lines.push(currentLine);
+  } else {
+    lines = [content];
+  }
 
   // Auto-split trailing math block at the end of a single-line question to center it
-  if (lines.length === 1 && typeof content === 'string') {
+  if (lines.length === 1 && typeof lines[0] === 'string') {
     // Match text followed by optional spacing/punctuation and a math block (e.g. \(...\) or $$...$$ or $...$) at the end
-    const match = content.match(/^(.*?)(?:\s+|:\s*|,\s*)([\\\(|\$|\\\[].+?[\\\)|\\\]|\$])$/);
+    const match = lines[0].match(/^(.*?)(?:\s+|:\s*|,\s*)([\\\(|\$|\\\[].+?[\\\)|\\\]|\$])$/);
     if (match) {
       lines = [match[1].trim(), match[2].trim()];
     }
