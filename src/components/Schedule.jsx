@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc } from 'firebase/firestore';
+import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -316,6 +316,24 @@ const Schedule = ({ students = [] }) => {
     const studentId = session.studentId || session.groupStudents?.[0]?.studentId;
     if (studentId && cachedProfile) {
       setStudentProfileCache(prev => ({ ...prev, [studentId]: cachedProfile }));
+    }
+    // Fetch latest profile from Firestore in background so assignedChapters
+    // reflects any changes the teacher made after the session was created.
+    if (studentId) {
+      const collections = ['users', 'students'];
+      collections.forEach(async (col) => {
+        try {
+          const snap = await getDoc(doc(db, col, studentId));
+          if (snap.exists()) {
+            const fresh = { id: snap.id, ...snap.data() };
+            setStudentProfileCache(prev => ({ ...prev, [studentId]: fresh }));
+            localCache.set(getScheduleStudentProfileCacheKey(studentId), {
+              savedAt: Date.now(),
+              profile: fresh,
+            });
+          }
+        } catch (_) {}
+      });
     }
     setSelectedSession(session);
     setEditData({
