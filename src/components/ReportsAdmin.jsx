@@ -590,9 +590,9 @@ const ReportsAdmin = () => {
             {report.questionData && (
               <div style={{ marginTop: '16px', borderTop: '1px solid #f1f5f9', paddingTop: '16px' }}>
                 <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>Reported Question</span>
-                <p style={{ margin: '8px 0 0', fontWeight: 600, color: '#1e293b' }}>
-                  {report.questionData.question || report.questionData.text || 'No question text'}
-                </p>
+                <div style={{ margin: '8px 0 0' }}>
+                  <MathView content={report.questionData.question || report.questionData.text || 'No question text'} graphData={report.questionData.graphData} style={{ fontWeight: 600, color: '#1e293b' }} />
+                </div>
                 {report.creditRestored && (
                   <div style={{ marginTop: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 10px', borderRadius: '999px', background: '#ecfdf5', color: '#047857', fontSize: '0.75rem', fontWeight: 900 }}>
                     <CheckCircle size={14} /> Credit restored +{report.restoredPoints || 0} point{report.restoredPoints === 1 ? '' : 's'}
