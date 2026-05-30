@@ -550,7 +550,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (remaining <= 0) {
         clearInterval(timer);
         if (stepRef.current === 'quiz') {
-          handleAnswerRef.current?.(null, null); // Time's up — use ref to avoid stale closure
+          // Pass whatever the student has typed so far — avoids "No answer recorded"
+          // when the timer runs out while a student is mid-entry.
+          const typed = selectedOptionRef.current ?? answerInputRef.current?.value ?? null;
+          handleAnswerRef.current?.(typed, null);
         }
       }
     }, 100); // Check more frequently for smooth UI
