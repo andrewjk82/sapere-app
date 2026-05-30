@@ -16,6 +16,9 @@ import {
   Clock,
   X,
   Target,
+  ClipboardList,
+  CheckCircle2,
+  Circle,
 } from "lucide-react";
 import { db } from "../firebase/config";
 import {
@@ -156,6 +159,8 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [activeTab, setActiveTab] = useState("curriculum");
   const [assignedChapters, setAssignedChapters] = useState([]);
   const [completedChapters, setCompletedChapters] = useState([]);
+  const [homeworkSessions, setHomeworkSessions] = useState([]);
+  const [homeworkLoading, setHomeworkLoading] = useState(false);
   const [dailyPracticeConfig, setDailyPracticeConfig] = useState({ years: [], chapters: [] });
 
   const [booking, setBooking] = useState(false);
@@ -1594,6 +1599,25 @@ const StudentDetail = ({ studentId, onBack }) => {
   });
   chapters = uniqueChapters;
 
+  // Fetch homework sessions when tab is activated
+  useEffect(() => {
+    if (activeTab !== 'homework') return;
+    if (!activeStudentId) return;
+    setHomeworkLoading(true);
+    const q = query(
+      collection(db, 'sessions'),
+      where('studentId', '==', activeStudentId),
+    );
+    getDocs(q).then((snap) => {
+      const all = snap.docs
+        .map((d) => ({ id: d.id, ...d.data() }))
+        .filter((s) => s.homework || (s.learnedTopics && s.learnedTopics.length > 0))
+        .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+      setHomeworkSessions(all);
+      setHomeworkLoading(false);
+    }).catch(() => setHomeworkLoading(false));
+  }, [activeTab, activeStudentId]);
+
   const renderTabContent = () => {
     switch (activeTab) {
       case "curriculum":
@@ -1902,6 +1926,91 @@ const StudentDetail = ({ studentId, onBack }) => {
             </CollapsibleSection>
           </div>
         );
+      case "homework":
+        return (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
+              <ClipboardList size={20} style={{ color: '#7c3aed' }} />
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>Homework History</h3>
+            </div>
+            {homeworkLoading ? (
+              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700 }}>Loading…</div>
+            ) : homeworkSessions.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '40px', color: '#94a3b8', fontWeight: 700, background: '#f8fafc', borderRadius: '16px', border: '1px dashed #e2e8f0' }}>
+                No homework recorded yet.
+              </div>
+            ) : (
+              homeworkSessions.map((session) => {
+                const done = session.isHomeworkCompleted === true;
+                const hasPending = session.homework && !done;
+                return (
+                  <div key={session.id} style={{
+                    background: '#fff',
+                    borderRadius: '16px',
+                    border: `1.5px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
+                    padding: '18px 20px',
+                    boxShadow: '0 2px 8px rgba(15,23,42,0.04)',
+                  }}>
+                    {/* Header row */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#64748b' }}>
+                        📅 {session.date || '—'}
+                        {session.startTime && ` · ${session.startTime}`}
+                      </span>
+                      <span style={{
+                        display: 'inline-flex', alignItems: 'center', gap: '5px',
+                        fontSize: '0.72rem', fontWeight: 900, padding: '3px 10px', borderRadius: '999px',
+                        background: done ? '#f0fdf4' : hasPending ? '#fffbeb' : '#f8fafc',
+                        color: done ? '#15803d' : hasPending ? '#b45309' : '#64748b',
+                        border: `1px solid ${done ? '#bbf7d0' : hasPending ? '#fde68a' : '#e2e8f0'}`,
+                      }}>
+                        {done ? <><CheckCircle2 size={12} /> Done</> : hasPending ? <><Circle size={12} /> Pending</> : 'No homework'}
+                      </span>
+                    </div>
+
+                    {/* Topics covered */}
+                    {Array.isArray(session.learnedTopics) && session.learnedTopics.length > 0 && (
+                      <div style={{ marginBottom: '10px' }}>
+                        <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>Topics Covered</div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                          {session.learnedTopics.map((t, i) => (
+                            <span key={i} style={{ background: '#f5f3ff', color: '#6d28d9', fontSize: '0.75rem', fontWeight: 700, padding: '3px 10px', borderRadius: '999px' }}>
+                              {t.label || t.id || t}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Homework text */}
+                    {session.homework && (
+                      <div>
+                        <div style={{ fontSize: '0.7rem', fontWeight: 900, color: '#f59e0b', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>Homework</div>
+                        <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#1e293b', whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
+                          {session.homework}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Score */}
+                    {(session.homeworkScore !== undefined && session.homeworkScore !== '') && (
+                      <div style={{ marginTop: '10px', fontSize: '0.8rem', fontWeight: 800, color: '#64748b' }}>
+                        Score: <span style={{ color: '#7c3aed' }}>{session.homeworkScore}{session.homeworkTotal ? ` / ${session.homeworkTotal}` : ''}</span>
+                      </div>
+                    )}
+
+                    {/* Notes */}
+                    {session.notes && (
+                      <div style={{ marginTop: '10px', padding: '10px 12px', background: '#f8fafc', borderRadius: '10px', fontSize: '0.82rem', color: '#475569', fontWeight: 600, lineHeight: 1.5 }}>
+                        📝 {session.notes}
+                      </div>
+                    )}
+                  </div>
+                );
+              })
+            )}
+          </div>
+        );
       case "hsc":
         return (
           <HscTab
@@ -1985,6 +2094,15 @@ const StudentDetail = ({ studentId, onBack }) => {
           }}
         >
           <Trophy size={18} /> Challenge
+        </button>
+        <button
+          onClick={() => setActiveTab("homework")}
+          style={{
+            ...styles.navBtn,
+            ...(activeTab === "homework" ? styles.navBtnActive : {}),
+          }}
+        >
+          <ClipboardList size={18} /> Homework
         </button>
         <button
           onClick={() => setActiveTab("hsc")}

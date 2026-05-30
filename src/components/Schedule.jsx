@@ -33,7 +33,7 @@ const formatDateKey = (date) => {
 const getAdminScheduleWindow = () => {
   const start = new Date();
   start.setHours(0, 0, 0, 0);
-  start.setFullYear(start.getFullYear() - 2); // Keep all sessions from the past 2 years
+  start.setDate(start.getDate() - 14); // Show past 14 days
 
   const end = new Date();
   end.setHours(0, 0, 0, 0);
