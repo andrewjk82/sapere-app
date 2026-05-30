@@ -67,7 +67,6 @@ export default function ChallengeDetailModal({
     !selectedChallenge.detailSnapshotLoaded &&
     !hasQuestions) || (hasQuestions && !liveQuestions);
 
-  const hasQuestions =
   // Build the arrays ChallengeReviewView expects
   const questions = liveQuestions || selectedChallenge.questions || [];
   const userAnswers = selectedChallenge.userAnswers || [];
