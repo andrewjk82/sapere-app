@@ -927,6 +927,25 @@ const StudentDetail = ({ studentId, onBack }) => {
     };
   }, [activeStudentCollection, activeStudentId, student?.id]);
 
+  // Fetch homework sessions — must be here, above ALL early returns (loading, !student)
+  useEffect(() => {
+    if (activeTab !== 'homework') return;
+    if (!activeStudentId) return;
+    setHomeworkLoading(true);
+    const q = query(
+      collection(db, 'sessions'),
+      where('studentId', '==', activeStudentId),
+    );
+    getDocs(q).then((snap) => {
+      const all = snap.docs
+        .map((d) => ({ id: d.id, ...d.data() }))
+        .filter((s) => s.homework || (s.learnedTopics && s.learnedTopics.length > 0))
+        .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+      setHomeworkSessions(all);
+      setHomeworkLoading(false);
+    }).catch(() => setHomeworkLoading(false));
+  }, [activeTab, activeStudentId]);
+
   const handleUpdateProfile = async () => {
     try {
       const normalizedRole = editForm.role || "";
@@ -1552,25 +1571,6 @@ const StudentDetail = ({ studentId, onBack }) => {
         <div className="app-spinner"></div>
       </div>
     );
-  // Fetch homework sessions when tab is activated — must be above early returns
-  useEffect(() => {
-    if (activeTab !== 'homework') return;
-    if (!activeStudentId) return;
-    setHomeworkLoading(true);
-    const q = query(
-      collection(db, 'sessions'),
-      where('studentId', '==', activeStudentId),
-    );
-    getDocs(q).then((snap) => {
-      const all = snap.docs
-        .map((d) => ({ id: d.id, ...d.data() }))
-        .filter((s) => s.homework || (s.learnedTopics && s.learnedTopics.length > 0))
-        .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-      setHomeworkSessions(all);
-      setHomeworkLoading(false);
-    }).catch(() => setHomeworkLoading(false));
-  }, [activeTab, activeStudentId]);
-
   if (!student) return <div className="app-empty">Student not found.</div>;
 
   const dailyPracticeStats = dailyStats.filter(
