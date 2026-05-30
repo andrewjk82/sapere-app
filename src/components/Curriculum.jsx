@@ -472,7 +472,8 @@ const Curriculum = () => {
 
   const handleDeleteChapter = async (chapterId) => {
     if (!window.confirm("Are you sure you want to delete this chapter?")) return;
-    const newChapters = (currentRecord?.chapters || []).filter(c => c.id !== chapterId);
+    const base = currentRecord?.chapters ? [...currentRecord.chapters] : [...displayData];
+    const newChapters = base.filter(c => c.id !== chapterId);
     await handleUpdateChapters(newChapters);
   };
 
@@ -541,13 +542,26 @@ const Curriculum = () => {
   const handleSaveChapter = async (e) => {
     e.preventDefault();
     const chapterData = editingChapter.chapter;
-    let newChapters = [...(currentRecord?.chapters || [])];
+    // Use currentRecord if it exists; otherwise fall back to displayData so
+    // CURRICULUM_DATA chapters are preserved when no Firestore record exists yet.
+    let newChapters = currentRecord?.chapters
+      ? [...currentRecord.chapters]
+      : [...displayData];
 
     if (editingChapter.mode === 'add') {
+      if (!chapterData.title?.trim()) {
+        showToast("Please enter a chapter title.", "warning");
+        return;
+      }
       const newId = `${selectedYear.toLowerCase().replace(' ', '')}-${Date.now()}`;
       newChapters.push({ ...chapterData, id: newId });
     } else {
-      newChapters = newChapters.map(c => c.id === chapterData.id ? chapterData : c);
+      const idx = newChapters.findIndex(c => c.id === chapterData.id);
+      if (idx >= 0) {
+        newChapters[idx] = chapterData;
+      } else {
+        newChapters.push(chapterData); // fallback: chapter wasn't in list yet
+      }
     }
 
     await handleUpdateChapters(newChapters);
