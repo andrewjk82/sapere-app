@@ -51,14 +51,17 @@ const mapSeedQuestion = (raw, chapter) => {
   const resolvedTopicCode = raw.c || raw.topicCode || chapter.topicCode || '';
   const resolvedTopicTitle = raw.t || raw.topicTitle || chapter.topicTitle || '';
 
-  // Derive the real chapter ID from topicId (e.g. 'y12a-3D' → 'y12a-3').
-  // This lets exam-paper questions live in their proper curriculum chapters so
-  // they appear in Daily Challenge and regular Exam Prep, while the examPaper
-  // field still lets teachers pull only HSC trial questions when needed.
+  // For exam-paper chapters (chapterId starts with 'exam:'), always store the
+  // exam chapterId so the exam paper view can find these questions via
+  // where('chapterId', '==', 'exam:xxx-yyyy'). The topicId field still maps
+  // to the curriculum topic so subject filtering still works.
+  const isExamChapter = chapter.chapterId?.startsWith('exam:');
   const resolvedChapterId = raw.chapterId
-    || (resolvedTopicId !== chapter.topicId
-      ? resolvedTopicId.replace(/[A-Z]+$/, '')
-      : chapter.chapterId);
+    || (isExamChapter
+      ? chapter.chapterId
+      : (resolvedTopicId !== chapter.topicId
+          ? resolvedTopicId.replace(/[A-Z]+$/, '')
+          : chapter.chapterId));
 
   return {
     chapterId: resolvedChapterId,
