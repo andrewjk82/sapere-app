@@ -44,7 +44,7 @@ const toDisplayText = (value, fallback = '') => {
   // 1b. Rich HTML content (e.g. a solution with <p>/<strong>/<br>) must NOT
   // go through the math-string transforms below — they corrupt the markup.
   // Return as-is after symbol substitution; KaTeX still renders any $...$.
-  if (/<\/(p|div|ul|ol|li|strong|em|h[1-6])>|<br\s*\/?>/i.test(str)) {
+  if (/<\/(p|div|ul|ol|li|strong|em|h[1-6]|svg)>|<br\s*\/?>/i.test(str)) {
     return str;
   }
 
@@ -136,9 +136,13 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
   
   let lines = [];
   if (typeof content === 'string') {
-    // Only split on newlines that are OUTSIDE of math blocks.
-    const mathBlockRegex = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
-    const parts = content.split(mathBlockRegex);
+    // If it looks like block HTML (contains block tags), don't split by newline, treat as one block
+    if (/<(div|p|ul|ol|table|svg|h[1-6])[>\s]/i.test(content)) {
+      lines = [content];
+    } else {
+      // Only split on newlines that are OUTSIDE of math blocks.
+      const mathBlockRegex = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
+      const parts = content.split(mathBlockRegex);
     let currentLine = "";
     for (let i = 0; i < parts.length; i++) {
       if (i % 2 === 0) {
@@ -157,6 +161,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       }
     }
     lines.push(currentLine);
+    }
   } else {
     lines = [content];
   }
