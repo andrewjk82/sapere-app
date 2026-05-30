@@ -787,7 +787,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q16 — Cost/income equations and break-even (two parts, coded as 16a and 16b)
   {
-    id: 'asc2020-q16a',
+    id: 'asc2020-q16',
     topicId: 'y11a-1E',
     c: '1E',
     t: 'Solving simultaneous equations',
@@ -795,36 +795,42 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'easy',
-    q: 'Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20.\n\n(a) Write equations for the cost $C$, and income $I$, for the sale of $x$ items.',
-    a: '$C = 60 + 16x$ and $I = 20x$',
+    q: 'Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $\\$60$ on equipment and estimates that it costs her $\\$16$ to manufacture each crochet doll. She plans to sell each doll for $\\$20$.',
+    a: 'See parts (a) and (b)',
     opts: [],
-    h: 'Cost includes fixed costs (equipment) plus variable costs per item. Income equals price per item times number sold.',
-    s: 'Cost: $C = 60 + 16x$ (fixed equipment cost plus $16 per doll). Income: $I = 20x$ ($20 per doll sold).',
+    h: 'Write cost and income equations, then set them equal to find break-even.',
+    s: '$C = 60 + 16x$, $I = 20x$. Break-even: $x = 15$ dolls.',
     solutionSteps: [
-      { explanation: 'Write the cost equation: fixed cost of $60 plus $16 per doll.', workingOut: 'C = 60 + 16x' },
-      { explanation: 'Write the income equation: $20 per doll sold.', workingOut: 'I = 20x' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q16b',
-    topicId: 'y11a-1E',
-    c: '1E',
-    t: 'Solving simultaneous equations',
-    source: 'Ascham 2020 Trial Q16',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'easy',
-    q: 'Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20.\n\n(b) Solve the equations simultaneously to determine the number of dolls Ali needs to sell to break even.',
-    a: '$x = 15$ dolls',
-    opts: [],
-    h: 'Set $C = I$ and solve for $x$.',
-    s: 'Set $60 + 16x = 20x$. Then $60 = 4x$, so $x = 15$. Ali must sell 15 dolls to break even.',
-    solutionSteps: [
-      { explanation: 'At break-even, cost equals income: set $C = I$.', workingOut: '60 + 16x = 20x' },
-      { explanation: 'Collect $x$ terms on one side.', workingOut: '60 = 20x - 16x = 4x' },
-      { explanation: 'Solve for $x$.', workingOut: 'x = \\frac{60}{4} = 15' },
-      { explanation: 'State the answer.', workingOut: '\\text{Ali must sell } 15 \\text{ dolls to break even.}' }
+      { explanation: 'Write cost equation (fixed + variable).', workingOut: 'C = 60 + 16x' },
+      { explanation: 'Write income equation.', workingOut: 'I = 20x' },
+      { explanation: 'Set $C = I$ and solve for break-even.', workingOut: '60 + 16x = 20x \\Rightarrow x = 15' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q16-a',
+        type: 'short_answer',
+        difficulty: 'easy',
+        question: '(a) Write equations for the cost $C$, and income $I$, for the sale of $x$ items.',
+        answer: '$C = 60 + 16x$ and $I = 20x$',
+        hint: 'Cost = fixed cost + cost per item × number of items. Income = price per item × number sold.',
+        solutionSteps: [
+          { explanation: 'Write the cost equation: fixed cost of $\\$60$ plus $\\$16$ per doll.', workingOut: 'C = 60 + 16x' },
+          { explanation: 'Write the income equation: $\\$20$ per doll sold.', workingOut: 'I = 20x' }
+        ]
+      },
+      {
+        id: 'asc2020-q16-b',
+        type: 'short_answer',
+        difficulty: 'easy',
+        question: '(b) Solve the equations simultaneously to determine the number of dolls Ali needs to sell to break even.',
+        answer: '$x = 15$ dolls',
+        hint: 'Set $C = I$ and solve for $x$.',
+        solutionSteps: [
+          { explanation: 'At break-even, cost equals income.', workingOut: '60 + 16x = 20x' },
+          { explanation: 'Collect $x$ terms.', workingOut: '60 = 4x \\Rightarrow x = 15' },
+          { explanation: 'Ali must sell 15 dolls to break even.', workingOut: 'x = 15 \\text{ dolls}' }
+        ]
+      }
     ]
   },
 
@@ -850,7 +856,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q17 — Bivariate data (Pearson's r and regression line)
   {
-    id: 'asc2020-q17a',
+    id: 'asc2020-q17',
     topicId: 'y12a-9D',
     c: '9D',
     t: 'Bivariate data',
@@ -858,38 +864,42 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'The table below shows data for 10 countries: research spending (% of GDP) $x$ and cases of Figtree Syndrome (1000s) $y$.\n\n| $x$ | 2.0 | 2.4 | 3.0 | 3.2 | 3.5 | 3.8 | 4.1 | 4.5 | 4.6 | 5.0 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $y$ | 7.8 | 6.8 | 7.2 | 6.6 | 5.8 | 5.6 | 4.6 | 5.0 | 4.0 | 4.2 |\n\n(a) Determine Pearson\'s correlation coefficient for this data correct to 3 decimal places.',
-    a: '$r \\approx -0.980$',
+    q: 'Figtree Syndrome is a rare disease. The table shows research spending (% of GDP) $x$ and cases of Figtree Syndrome (1000s) $y$ for 10 countries.\n\n| $x$ | 2.0 | 2.4 | 3.0 | 3.2 | 3.5 | 3.8 | 4.1 | 4.5 | 4.6 | 5.0 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $y$ | 7.8 | 6.8 | 7.2 | 6.6 | 5.8 | 5.6 | 4.6 | 5.0 | 4.0 | 4.2 |',
+    a: 'See parts (a) and (b)',
     opts: [],
-    h: 'Use a calculator with statistical functions. Enter the data as bivariate pairs and compute the correlation coefficient.',
-    s: 'Using a calculator: $r \\approx -0.980$. The strong negative correlation indicates that as research spending increases, cases of Figtree Syndrome decrease.',
+    h: 'Use your calculator\'s statistical functions for both parts.',
+    s: '$r \\approx -0.980$; regression line $\\hat{y} = -1.07x + 9.63$.',
     solutionSteps: [
-      { explanation: 'Enter all data pairs $(x_i, y_i)$ into a calculator with bivariate statistics capability.', workingOut: '\\bar{x} = \\frac{2.0+2.4+3.0+3.2+3.5+3.8+4.1+4.5+4.6+5.0}{10} = 3.61' },
-      { explanation: 'Calculate the mean of $y$.', workingOut: '\\bar{y} = \\frac{7.8+6.8+7.2+6.6+5.8+5.6+4.6+5.0+4.0+4.2}{10} = 5.76' },
-      { explanation: 'Use the calculator\'s correlation function to obtain $r$.', workingOut: 'r \\approx -0.980' },
-      { explanation: 'Interpret: $r$ close to $-1$ indicates a strong negative linear relationship.', workingOut: '|r| = 0.980 \\Rightarrow \\text{strong negative correlation}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q17b',
-    topicId: 'y12a-9E',
-    c: '9E',
-    t: 'Line of best fit',
-    source: 'Ascham 2020 Trial Q17',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'medium',
-    q: 'Using the same data as Q17(a), find the least squares regression line for this data. Round your values to 3 significant figures.',
-    a: '$\\hat{y} = -1.07x + 9.63$',
-    opts: [],
-    h: 'Use your calculator\'s linear regression function to find the slope $b$ and intercept $a$ of $\\hat{y} = a + bx$.',
-    s: 'Using the calculator: slope $b \\approx -1.07$, intercept $a \\approx 9.63$. Regression line: $\\hat{y} = -1.07x + 9.63$.',
-    solutionSteps: [
-      { explanation: 'Use the calculator\'s linear regression (LinReg) function with the data pairs.', workingOut: 'b = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{\\sum(x_i - \\bar{x})^2}' },
-      { explanation: 'From the calculator: slope $b \\approx -1.07$ (3 s.f.).', workingOut: 'b \\approx -1.07' },
-      { explanation: 'Intercept: $a = \\bar{y} - b\\bar{x} = 5.76 - (-1.07)(3.61) \\approx 5.76 + 3.86 = 9.62 \\approx 9.63$.', workingOut: 'a = 5.76 - (-1.07)(3.61) \\approx 9.63' },
-      { explanation: 'Write the regression equation.', workingOut: '\\hat{y} = -1.07x + 9.63' }
+      { explanation: 'Enter data pairs and compute $r$ using calculator.', workingOut: 'r \\approx -0.980' },
+      { explanation: 'Use LinReg to find slope and intercept.', workingOut: '\\hat{y} = -1.07x + 9.63' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q17-a',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(a) Determine Pearson\'s correlation coefficient for this data correct to 3 decimal places.',
+        answer: '$r \\approx -0.980$',
+        hint: 'Enter the data pairs into a calculator and use the correlation function.',
+        solutionSteps: [
+          { explanation: 'Calculate means: $\\bar{x} = 3.61$, $\\bar{y} = 5.76$.', workingOut: '\\bar{x} = 3.61, \\quad \\bar{y} = 5.76' },
+          { explanation: 'Use the calculator\'s correlation function.', workingOut: 'r \\approx -0.980' },
+          { explanation: 'Strong negative correlation: as spending increases, cases decrease.', workingOut: '|r| = 0.980 \\Rightarrow \\text{strong negative}' }
+        ]
+      },
+      {
+        id: 'asc2020-q17-b',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(b) Find the least squares regression line for this data. Round values to 3 significant figures.',
+        answer: '$\\hat{y} = -1.07x + 9.63$',
+        hint: 'Use your calculator\'s LinReg function. The line passes through $(\\bar{x}, \\bar{y})$.',
+        solutionSteps: [
+          { explanation: 'Use LinReg: slope $b \\approx -1.07$.', workingOut: 'b \\approx -1.07' },
+          { explanation: 'Intercept: $a = \\bar{y} - b\\bar{x} = 5.76 - (-1.07)(3.61) \\approx 9.63$.', workingOut: 'a \\approx 9.63' },
+          { explanation: 'Write the regression equation.', workingOut: '\\hat{y} = -1.07x + 9.63' }
+        ]
+      }
     ]
   },
 
@@ -916,7 +926,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q18 — Cosine rule + bearing (6 marks)
   {
-    id: 'asc2020-q18a',
+    id: 'asc2020-q18',
     topicId: 'y11a-6I',
     c: '6I',
     t: 'The cosine rule',
@@ -924,40 +934,43 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'There are plans to construct a series of straight paths at the top of a mountain connecting three landmarks: cable car station $C$, communications tower $T$ and camp site $E$.\n\nThe length of path from $C$ to $T$ is 950 m. The length of path from $C$ to $E$ is 1400 m. The bearing of $T$ from $C$ is $060°$ and the bearing of $E$ from $C$ is $100°$.\n\n(a) What is the length of the straight path between the communications tower $T$ and the campsite $E$? Give your answer correct to two significant figures.',
-    a: '$TE \\approx 910$ m',
+    q: 'There are plans to construct straight paths connecting three landmarks: cable car station $C$, communications tower $T$ and camp site $E$. The path from $C$ to $T$ is 950 m and from $C$ to $E$ is 1400 m. The bearing of $T$ from $C$ is $060°$ and the bearing of $E$ from $C$ is $100°$.',
+    a: 'See parts (a) and (b)',
     opts: [],
-    h: 'The angle $\\angle TCE = 100° - 60° = 40°$. Apply the cosine rule: $TE^2 = CT^2 + CE^2 - 2 \\cdot CT \\cdot CE \\cdot \\cos(\\angle TCE)$.',
-    s: '$\\angle TCE = 100° - 60° = 40°$. $TE^2 = 950^2 + 1400^2 - 2(950)(1400)\\cos 40° = 902500 + 1960000 - 2660000 \\times 0.766 = 2862500 - 2037560 = 824940$. $TE = \\sqrt{824940} \\approx 908$ m $\\approx 910$ m.',
+    h: 'Use the cosine rule for (a), then the sine rule and bearings logic for (b).',
+    s: '$TE \\approx 910$ m; bearing of $E$ from $T \\approx 157°$.',
     solutionSteps: [
-      { explanation: 'Find the angle at $C$ between the two paths. The bearings differ by $100° - 60° = 40°$.', workingOut: '\\angle TCE = 100° - 60° = 40°' },
-      { explanation: 'Apply the cosine rule: $TE^2 = CT^2 + CE^2 - 2 \\cdot CT \\cdot CE \\cdot \\cos(\\angle TCE)$.', workingOut: 'TE^2 = 950^2 + 1400^2 - 2(950)(1400)\\cos 40°' },
-      { explanation: 'Evaluate the squared terms.', workingOut: '950^2 = 902\\,500 \\quad 1400^2 = 1\\,960\\,000' },
-      { explanation: 'Evaluate the cosine term.', workingOut: '2 \\times 950 \\times 1400 \\times \\cos 40° = 2\\,660\\,000 \\times 0.7660 \\approx 2\\,037\\,560' },
-      { explanation: 'Calculate $TE^2$.', workingOut: 'TE^2 = 902\\,500 + 1\\,960\\,000 - 2\\,037\\,560 = 824\\,940' },
-      { explanation: 'Take the square root.', workingOut: 'TE = \\sqrt{824\\,940} \\approx 908 \\approx 910 \\text{ m (2 s.f.)}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q18b',
-    topicId: 'y11a-6J',
-    c: '6J',
-    t: 'Problems with general triangles',
-    source: 'Ascham 2020 Trial Q18',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: 'Using the triangle from Q18(a) where $CT = 950$ m, $CE = 1400$ m, $\\angle TCE = 40°$ and $TE \\approx 908$ m:\n\n(b) Use your answer from (a) to find the true bearing of the camp site $E$ from the communications tower $T$.',
-    a: '$\\approx 157°$',
-    opts: [],
-    h: 'Use the sine rule to find $\\angle CTE$, then use the bearing of $C$ from $T$ ($= 240°$) and the angle at $T$ to find the bearing of $E$ from $T$.',
-    s: 'Using the sine rule: $\\frac{\\sin(\\angle CTE)}{CE} = \\frac{\\sin(\\angle TCE)}{TE}$. $\\sin(\\angle CTE) = \\frac{1400 \\sin 40°}{908} \\approx \\frac{1400 \\times 0.6428}{908} \\approx 0.9916$. $\\angle CTE \\approx 82.7°$. Bearing of $C$ from $T = 060° + 180° = 240°$. Since $E$ is to the east/south-east of $T$, bearing of $E$ from $T = 240° - 82.7° \\approx 157°$.',
-    solutionSteps: [
-      { explanation: 'Apply the sine rule to find $\\angle CTE$ (angle at $T$).', workingOut: '\\frac{\\sin(\\angle CTE)}{CE} = \\frac{\\sin(\\angle TCE)}{TE} \\Rightarrow \\sin(\\angle CTE) = \\frac{1400 \\sin 40°}{908}' },
-      { explanation: 'Evaluate.', workingOut: '\\sin(\\angle CTE) = \\frac{1400 \\times 0.6428}{908} \\approx 0.9916 \\Rightarrow \\angle CTE \\approx 82.7°' },
-      { explanation: 'The bearing of $T$ from $C$ is $060°$, so the bearing of $C$ from $T$ is the reverse: $060° + 180° = 240°$.', workingOut: '\\text{Bearing of } C \\text{ from } T = 240°' },
-      { explanation: 'Since $E$ is to the south-east of $T$, subtract $\\angle CTE$ from the direction toward $C$: $240° - 82.7° \\approx 157°$.', workingOut: '\\text{Bearing of } E \\text{ from } T \\approx 240° - 82.7° \\approx 157°' }
+      { explanation: 'Angle at C between paths: $100° - 60° = 40°$.', workingOut: '\\angle TCE = 40°' },
+      { explanation: 'Cosine rule gives $TE \\approx 910$ m.', workingOut: 'TE = \\sqrt{950^2 + 1400^2 - 2(950)(1400)\\cos 40°} \\approx 910 \\text{ m}' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q18-a',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(a) What is the length of the straight path between $T$ and $E$? Give your answer correct to two significant figures.',
+        answer: '$TE \\approx 910$ m',
+        hint: 'The angle $\\angle TCE = 100° - 60° = 40°$. Apply the cosine rule.',
+        solutionSteps: [
+          { explanation: 'Find angle at $C$.', workingOut: '\\angle TCE = 100° - 60° = 40°' },
+          { explanation: 'Apply cosine rule.', workingOut: 'TE^2 = 950^2 + 1400^2 - 2(950)(1400)\\cos 40°' },
+          { explanation: 'Evaluate.', workingOut: 'TE^2 = 902500 + 1960000 - 2037560 = 824940' },
+          { explanation: 'Take the square root.', workingOut: 'TE \\approx 908 \\approx 910 \\text{ m (2 s.f.)}' }
+        ]
+      },
+      {
+        id: 'asc2020-q18-b',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(b) Use your answer from (a) to find the true bearing of the camp site $E$ from the communications tower $T$.',
+        answer: '$\\approx 157°$',
+        hint: 'Use the sine rule to find $\\angle CTE$, then use bearing of $C$ from $T$ ($= 240°$) to find bearing of $E$ from $T$.',
+        solutionSteps: [
+          { explanation: 'Sine rule to find $\\angle CTE$.', workingOut: '\\sin(\\angle CTE) = \\frac{1400 \\sin 40°}{908} \\approx 0.9916 \\Rightarrow \\angle CTE \\approx 82.7°' },
+          { explanation: 'Bearing of $C$ from $T$ = $060° + 180° = 240°$.', workingOut: '\\text{Bearing}_{CT} = 240°' },
+          { explanation: 'Bearing of $E$ from $T$.', workingOut: '240° - 82.7° \\approx 157°' }
+        ]
+      }
     ]
   },
 
@@ -1124,29 +1137,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q22 — Sketching transformations (teacher_review)
   {
-    id: 'asc2020-q22a',
-    topicId: 'y12a-2F',
-    c: '2F',
-    t: 'Review of translations and reflections',
-    source: 'Ascham 2020 Trial Q22',
-    examPaper: 'asc-2020',
-    type: 'teacher_review',
-    requiresManualGrading: true,
-    difficulty: 'medium',
-    q: 'Consider the graph of $f(x)$ (a U-shaped parabola with the point $(-1, 3)$ marked).\n\n(a) On the same set of axes, sketch the graph of $y = -2f(x)$.',
-    a: 'Graph reflected in the x-axis and stretched vertically by factor 2. The point $(-1, 3)$ maps to $(-1, -6)$.',
-    opts: [],
-    h: 'Multiplying by $-2$ reflects the graph in the x-axis and stretches it vertically by a factor of 2. Multiply each $y$-value by $-2$.',
-    s: 'Each point $(x, y)$ on $f(x)$ maps to $(x, -2y)$ on $y = -2f(x)$. The parabola is reflected (inverted) and stretched vertically by factor 2. The marked point $(-1, 3)$ maps to $(-1, -6)$.',
-    solutionSteps: [
-      { explanation: 'Identify the transformations in $y = -2f(x)$: the $-$ reflects in the x-axis, the $2$ stretches vertically by factor 2.', workingOut: '(x,\\, y) \\to (x,\\, -2y)' },
-      { explanation: 'Apply to the key point: $(-1, 3) \\to (-1, -6)$.', workingOut: '(-1,\\, 3) \\to (-1,\\, -2 \\times 3) = (-1,\\, -6)' },
-      { explanation: 'The resulting graph is an inverted (∩-shaped) parabola, stretched to twice the height of the original.', workingOut: '\\text{Sketch: \\cap-shaped parabola passing through }(-1, -6)' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q22b',
+    id: 'asc2020-q22',
     topicId: 'y12a-2G',
     c: '2G',
     t: 'Dilations',
@@ -1155,16 +1146,42 @@ export const ASCHAM_2020_QUESTIONS = [
     type: 'teacher_review',
     requiresManualGrading: true,
     difficulty: 'hard',
-    q: 'Consider the graph of $f(x)$ (a U-shaped parabola with the point $(-1, 3)$ marked).\n\n(b) On the same set of axes, sketch the graph of $y = f\\!\\left(\\dfrac{x}{2} + 2\\right)$.',
-    a: 'Horizontal stretch by factor 2 followed by translation left by 4. The point $(-1, 3)$ maps to $(-6, 3)$.',
+    q: 'Consider the two identical graphs of $f(x)$ below (a U-shaped parabola with the point $(-1, 3)$ marked). On the same set of axes, sketch the graphs:',
+    a: 'See parts (a) and (b)',
     opts: [],
-    h: 'Write $\\frac{x}{2} + 2 = \\frac{x+4}{2}$. This is a horizontal dilation by factor 2 (replacing $x$ with $\\frac{x}{2}$) and a translation of 4 units to the left.',
-    s: '$y = f\\!\\left(\\frac{x}{2} + 2\\right)$. Replacing $x$ with $\\frac{x}{2}$ dilates horizontally by factor 2. Adding 2 inside shifts the input left (translates 4 units left overall). The point $(-1, 3)$ on $f$ satisfies $f(-1) = 3$; setting $\\frac{x}{2} + 2 = -1$ gives $x = -6$. So $(-1, 3) \\to (-6, 3)$.',
+    h: 'For (a): multiply $y$-values by $-2$. For (b): apply horizontal dilation by 2 then shift left 4.',
+    s: '(a) Point $(-1,3) \\to (-1,-6)$. (b) Point $(-1,3) \\to (-6,3)$.',
     solutionSteps: [
-      { explanation: 'Rewrite the argument: $\\frac{x}{2} + 2 = \\frac{x - (-4)}{2}$, so there is a horizontal dilation by 2 and a translation 4 units to the left.', workingOut: '\\frac{x}{2} + 2 = \\frac{x+4}{2}' },
-      { explanation: 'Each $x$-value is found by setting $\\frac{x}{2} + 2 = x_0$ (original x), giving $x = 2(x_0 - 2) = 2x_0 - 4$.', workingOut: 'x_{\\text{new}} = 2x_0 - 4' },
-      { explanation: 'Apply to the key point $(-1, 3)$: $x_{\\text{new}} = 2(-1) - 4 = -6$.', workingOut: '(-1,\\, 3) \\to (-6,\\, 3)' },
-      { explanation: 'The graph is wider (stretched horizontally by factor 2) and shifted 4 units to the left.', workingOut: '\\text{Sketch accordingly}' }
+      { explanation: '(a) $y = -2f(x)$: reflect in x-axis and stretch vertically by 2.', workingOut: '(-1, 3) \\to (-1, -6)' },
+      { explanation: '(b) $y = f(x/2+2)$: horizontal dilation by 2, shift left 4.', workingOut: '(-1, 3) \\to (-6, 3)' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q22-a',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'medium',
+        question: '(a) $y = -2f(x)$',
+        answer: 'Reflected in x-axis and stretched vertically by 2. The point $(-1, 3)$ maps to $(-1, -6)$.',
+        hint: 'Multiply each $y$-value by $-2$: the graph flips and stretches.',
+        solutionSteps: [
+          { explanation: 'Transformation: $(x, y) \\to (x, -2y)$.', workingOut: '(-1, 3) \\to (-1, -6)' },
+          { explanation: 'Sketch an inverted ∩-shaped parabola, twice as tall.', workingOut: '\\text{∩-shaped, passing through } (-1, -6)' }
+        ]
+      },
+      {
+        id: 'asc2020-q22-b',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'hard',
+        question: '(b) $y = f\\!\\left(\\dfrac{x}{2} + 2\\right)$',
+        answer: 'Horizontal stretch by 2 and shift left 4. The point $(-1, 3)$ maps to $(-6, 3)$.',
+        hint: 'Set $\\frac{x}{2} + 2 = -1$ to find where $(-1, 3)$ maps to.',
+        solutionSteps: [
+          { explanation: 'Rewrite: $\\frac{x}{2} + 2 = \\frac{x+4}{2}$ — horizontal dilation by 2, shift left 4.', workingOut: 'x_{\\text{new}} = 2x_0 - 4' },
+          { explanation: 'Key point: $(-1, 3) \\to (-6, 3)$.', workingOut: '(-1, 3) \\to (-6, 3)' }
+        ]
+      }
     ]
   },
 
@@ -1239,7 +1256,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q24 — Curve sketching: y = 3+2x²−x⁴
   {
-    id: 'asc2020-q24a',
+    id: 'asc2020-q24',
     topicId: 'y12a-3B',
     c: '3B',
     t: 'Stationary points and turning points',
@@ -1247,62 +1264,55 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'Consider the even function $y = 3 + 2x^2 - x^4 = (3-x^2)(1+x^2)$.\n\n(a) Find the stationary points and determine their nature.',
-    a: 'Local minimum at $(0,\\, 3)$; local maxima at $(1,\\, 4)$ and $(-1,\\, 4)$',
+    q: 'Consider the even function $y = 3 + 2x^2 - x^4 = (3-x^2)(1+x^2)$.',
+    a: 'See parts (a), (b), (c)',
     opts: [],
-    h: 'Find $y\'$ and set it equal to zero. Use the second derivative to determine the nature of each stationary point.',
-    s: '$y\' = 4x - 4x^3 = 4x(1 - x^2) = 4x(1-x)(1+x)$. Setting $y\' = 0$: $x = 0, 1, -1$.\n\n$y(0) = 3$, $y(1) = 4$, $y(-1) = 4$.\n\n$y\'\' = 4 - 12x^2$. At $x=0$: $y\'\'(0) = 4 > 0$ → local min. At $x=\\pm 1$: $y\'\'(\\pm 1) = -8 < 0$ → local max.',
+    h: 'Differentiate to find stationary points, use second derivative for nature, set $y\'\'=0$ for inflections.',
+    s: 'Stationary points: min $(0,3)$, maxima $(\\pm 1, 4)$. Inflections: $(\\pm 1/\\sqrt{3}, 32/9)$.',
     solutionSteps: [
-      { explanation: 'Differentiate $y = 3 + 2x^2 - x^4$.', workingOut: "y' = 4x - 4x^3 = 4x(1-x^2) = 4x(1-x)(1+x)" },
-      { explanation: 'Set $y\' = 0$ to find stationary points.', workingOut: '4x(1-x)(1+x) = 0 \\Rightarrow x = 0,\\; 1,\\; -1' },
-      { explanation: 'Find the $y$-values at each stationary point.', workingOut: 'y(0) = 3, \\quad y(1) = 3+2-1 = 4, \\quad y(-1) = 3+2-1 = 4' },
-      { explanation: 'Find the second derivative.', workingOut: "y'' = 4 - 12x^2" },
-      { explanation: 'Test each stationary point.', workingOut: "y''(0) = 4 > 0 \\Rightarrow \\text{local min at }(0,3)" },
-      { explanation: 'Test $x = \\pm 1$.', workingOut: "y''(\\pm 1) = 4 - 12 = -8 < 0 \\Rightarrow \\text{local maxima at }(\\pm 1,\\, 4)" }
-    ]
-  },
-
-  {
-    id: 'asc2020-q24b',
-    topicId: 'y12a-3D',
-    c: '3D',
-    t: 'Concavity and points of inflection',
-    source: 'Ascham 2020 Trial Q24',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: 'For the function $y = 3 + 2x^2 - x^4$:\n\n(b) Find the coordinates of any points of inflection.',
-    a: '$\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)$',
-    opts: [],
-    h: 'Set $y\'\'= 0$ and verify that concavity changes at those points.',
-    s: '$y\'\' = 4 - 12x^2 = 0 \\Rightarrow x^2 = \\frac{1}{3} \\Rightarrow x = \\pm\\frac{1}{\\sqrt{3}}$.\n\n$y\\!\\left(\\frac{1}{\\sqrt{3}}\\right) = 3 + 2 \\cdot \\frac{1}{3} - \\frac{1}{9} = \\frac{27+6-1}{9} = \\frac{32}{9}$.\n\nConcavity changes at each point ✓.',
-    solutionSteps: [
-      { explanation: 'Set $y\'\' = 0$: $4 - 12x^2 = 0$.', workingOut: 'x^2 = \\frac{1}{3} \\Rightarrow x = \\pm\\frac{1}{\\sqrt{3}}' },
-      { explanation: 'Find the $y$-values.', workingOut: 'y\\!\\left(\\pm\\frac{1}{\\sqrt{3}}\\right) = 3 + \\frac{2}{3} - \\frac{1}{9} = \\frac{27+6-1}{9} = \\frac{32}{9}' },
-      { explanation: 'Verify concavity changes: $y\'\'$ changes sign at each $x = \\pm\\frac{1}{\\sqrt{3}}$ (from positive to negative moving right through $x = \\frac{1}{\\sqrt{3}}$) ✓.', workingOut: 'y\'\'\\!\\left(0\\right) = 4 > 0, \\quad y\'\'(1) = -8 < 0 \\Rightarrow \\text{sign change confirmed}' },
-      { explanation: 'State the points of inflection.', workingOut: '\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q24c',
-    topicId: 'y12a-3E',
-    c: '3E',
-    t: 'Systematic curve sketching with the derivative',
-    source: 'Ascham 2020 Trial Q24',
-    examPaper: 'asc-2020',
-    type: 'teacher_review',
-    requiresManualGrading: true,
-    difficulty: 'hard',
-    q: 'For the function $y = 3 + 2x^2 - x^4$:\n\n(c) Sketch the graph showing stationary points, points of inflection and intercepts.',
-    a: 'Graph showing: y-intercept $(0,3)$ (local min), local maxima at $(\\pm 1, 4)$, points of inflection at $(\\pm\\frac{1}{\\sqrt{3}}, \\frac{32}{9})$, x-intercepts at $x = \\pm\\sqrt{3}$, even function symmetry.',
-    opts: [],
-    h: 'Plot the key points from parts (a) and (b). Also find x-intercepts by solving $3 + 2x^2 - x^4 = 0$, i.e. $(3-x^2)(1+x^2) = 0$.',
-    s: 'x-intercepts: $(3-x^2)(1+x^2) = 0 \\Rightarrow x^2 = 3 \\Rightarrow x = \\pm\\sqrt{3}$. The curve is even (symmetric about y-axis), with local min at $(0,3)$, maxima at $(\\pm 1, 4)$, inflections at $(\\pm\\frac{1}{\\sqrt{3}}, \\frac{32}{9})$, and x-intercepts at $(\\pm\\sqrt{3}, 0)$.',
-    solutionSteps: [
-      { explanation: 'Find x-intercepts: $(3-x^2)(1+x^2) = 0$. Since $1+x^2 > 0$, we need $x^2 = 3$.', workingOut: 'x = \\pm\\sqrt{3} \\approx \\pm 1.73' },
-      { explanation: 'Compile all key points: y-intercept $(0,3)$, maxima $(\\pm 1, 4)$, inflections $(\\pm\\frac{1}{\\sqrt{3}}, \\frac{32}{9})$, x-intercepts $(\\pm\\sqrt{3}, 0)$.', workingOut: '\\text{Plot all key points on the axes}' },
-      { explanation: 'Sketch the even function: rises from $-\\infty$ to max at $(-1,4)$, falls to min at $(0,3)$, rises to max at $(1,4)$, then falls to $-\\infty$.', workingOut: '\\text{Sketch symmetric about y-axis with the identified features}' }
+      { explanation: "$y' = 4x - 4x^3 = 4x(1-x)(1+x)$", workingOut: "y' = 0 \\Rightarrow x = 0, \\pm 1" },
+      { explanation: "Inflections: $y'' = 4-12x^2 = 0$", workingOut: 'x = \\pm 1/\\sqrt{3}' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q24-a',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(a) Find the stationary points and determine their nature.',
+        answer: 'Local minimum at $(0, 3)$; local maxima at $(1, 4)$ and $(-1, 4)$',
+        hint: "Find $y'$, set to zero, then use $y''$ to classify each point.",
+        solutionSteps: [
+          { explanation: "Differentiate.", workingOut: "y' = 4x - 4x^3 = 4x(1-x)(1+x) = 0 \\Rightarrow x = 0,\\, \\pm 1" },
+          { explanation: 'y-values.', workingOut: 'y(0)=3,\\quad y(\\pm 1)=4' },
+          { explanation: "Second derivative test.", workingOut: "y''=4-12x^2 \\Rightarrow y''(0)=4>0 \\text{ (min)},\\quad y''(\\pm 1)=-8<0 \\text{ (max)}" }
+        ]
+      },
+      {
+        id: 'asc2020-q24-b',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(b) Find the coordinates of any points of inflection.',
+        answer: '$\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)$',
+        hint: "Set $y'' = 0$ and verify concavity changes.",
+        solutionSteps: [
+          { explanation: "Set $y''=0$.", workingOut: '4-12x^2=0 \\Rightarrow x = \\pm\\frac{1}{\\sqrt{3}}' },
+          { explanation: 'y-value.', workingOut: 'y = 3 + \\frac{2}{3} - \\frac{1}{9} = \\frac{32}{9}' },
+          { explanation: 'Concavity changes at both points ✓.', workingOut: '\\left(\\pm\\frac{1}{\\sqrt{3}},\\, \\frac{32}{9}\\right)' }
+        ]
+      },
+      {
+        id: 'asc2020-q24-c',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'hard',
+        question: '(c) Sketch the graph of $y = 3 + 2x^2 - x^4$ showing stationary points, points of inflection and intercepts.',
+        answer: 'Even function; y-intercept $(0,3)$ (min); maxima $( \\pm 1, 4)$; inflections $(\\pm 1/\\sqrt{3}, 32/9)$; x-intercepts $(\\pm\\sqrt{3}, 0)$.',
+        hint: 'Find x-intercepts: $(3-x^2)(1+x^2)=0 \\Rightarrow x = \\pm\\sqrt{3}$.',
+        solutionSteps: [
+          { explanation: 'x-intercepts from $(3-x^2)(1+x^2)=0$.', workingOut: 'x = \\pm\\sqrt{3}' },
+          { explanation: 'Plot all key points and sketch even-function curve.', workingOut: '\\text{Symmetric about y-axis}' }
+        ]
+      }
     ]
   },
 
@@ -1461,7 +1471,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q28 — Expected value and variance (3 parts)
   {
-    id: 'asc2020-q28a',
+    id: 'asc2020-q28',
     topicId: 'y12a-10C',
     c: '10C',
     t: 'Mean and variance of a distribution',
@@ -1469,57 +1479,52 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'medium',
-    q: 'Kelly has been offered two part-time jobs at local furniture shops. At shop $X$ she receives a retainer of $300 per week plus $200 for each lounge suite sold. At shop $Y$ she receives $450 per week plus $100 per suite sold.\n\nPast weekly sales follow this probability distribution:\n\n| Suites sold | 0 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|---|\n| Probability | 0.1 | 0.2 | 0.5 | 0.15 | 0.04 | 0.01 |\n\n(a) Find the expected number of lounge suites sold per week. Give your answer to the nearest whole number.',
-    a: '$E(X) \\approx 2$',
+    q: 'Kelly has been offered two part-time jobs at local furniture shops. At shop $X$ she receives a retainer of $\\$300$ per week plus $\\$200$ for each lounge suite sold. At shop $Y$ she receives $\\$450$ per week plus $\\$100$ per suite sold.\n\nPast weekly sales follow this probability distribution:\n\n| Suites sold | 0 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|---|\n| Probability | 0.1 | 0.2 | 0.5 | 0.15 | 0.04 | 0.01 |',
+    a: 'See parts (a), (b), (c)',
     opts: [],
-    h: 'Use $E(X) = \\sum x \\cdot P(X=x)$.',
-    s: '$E(X) = 0(0.1) + 1(0.2) + 2(0.5) + 3(0.15) + 4(0.04) + 5(0.01) = 0 + 0.2 + 1.0 + 0.45 + 0.16 + 0.05 = 1.86 \\approx 2$.',
+    h: 'Use $E(X) = \\sum xP(x)$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.',
+    s: '$E(X) \\approx 2$, $\\text{Var}(X) \\approx 0.98$. Shop $X$ pays more ($\\$700$ vs $\\$650$).',
     solutionSteps: [
-      { explanation: 'Apply the formula $E(X) = \\sum x_i \\cdot P(X = x_i)$.', workingOut: 'E(X) = 0(0.1) + 1(0.2) + 2(0.5) + 3(0.15) + 4(0.04) + 5(0.01)' },
-      { explanation: 'Evaluate each term.', workingOut: '= 0 + 0.2 + 1.0 + 0.45 + 0.16 + 0.05 = 1.86' },
-      { explanation: 'Round to the nearest whole number.', workingOut: 'E(X) \\approx 2 \\text{ suites per week}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q28b',
-    topicId: 'y12a-10C',
-    c: '10C',
-    t: 'Mean and variance of a distribution',
-    source: 'Ascham 2020 Trial Q28',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'medium',
-    q: 'Using the probability distribution from Q28(a), find the variance for this data.',
-    a: '$\\text{Var}(X) \\approx 0.9804$',
-    opts: [],
-    h: 'Use $\\text{Var}(X) = E(X^2) - [E(X)]^2$. First calculate $E(X^2) = \\sum x^2 \\cdot P(X=x)$.',
-    s: '$E(X^2) = 0(0.1)+1(0.2)+4(0.5)+9(0.15)+16(0.04)+25(0.01) = 0+0.2+2.0+1.35+0.64+0.25 = 4.44$.\n\n$\\text{Var}(X) = 4.44 - (1.86)^2 = 4.44 - 3.4596 \\approx 0.9804$.',
-    solutionSteps: [
-      { explanation: 'Calculate $E(X^2) = \\sum x^2 \\cdot P(X=x)$.', workingOut: 'E(X^2) = 0^2(0.1) + 1^2(0.2) + 2^2(0.5) + 3^2(0.15) + 4^2(0.04) + 5^2(0.01)' },
-      { explanation: 'Evaluate each term.', workingOut: '= 0 + 0.2 + 2.0 + 1.35 + 0.64 + 0.25 = 4.44' },
-      { explanation: 'Apply $\\text{Var}(X) = E(X^2) - [E(X)]^2$.', workingOut: '\\text{Var}(X) = 4.44 - (1.86)^2 = 4.44 - 3.4596 = 0.9804' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q28c',
-    topicId: 'y12a-10C',
-    c: '10C',
-    t: 'Mean and variance of a distribution',
-    source: 'Ascham 2020 Trial Q28',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'medium',
-    q: 'Using your result from Q28(a) where $E(X) \\approx 2$: which furniture shop job should Kelly take? Justify your answer by referring to her expected weekly pay.',
-    a: 'Kelly should take Shop $X$ ($\\$700$ expected weekly pay vs $\\$650$ at Shop $Y$).',
-    opts: [],
-    h: 'Calculate the expected weekly pay at each shop using $E(\\text{pay}) = \\text{retainer} + \\text{commission} \\times E(X)$.',
-    s: 'Shop $X$: $E(\\text{pay}) = 300 + 200 \\times 2 = \\$700$. Shop $Y$: $E(\\text{pay}) = 450 + 100 \\times 2 = \\$650$. Kelly should take Shop $X$ as her expected weekly pay is $\\$700 > \\$650$.',
-    solutionSteps: [
-      { explanation: 'Calculate expected weekly pay at Shop $X$ using $E(X) = 2$.', workingOut: 'E(\\text{pay}_X) = 300 + 200 \\times 2 = 300 + 400 = \\$700' },
-      { explanation: 'Calculate expected weekly pay at Shop $Y$.', workingOut: 'E(\\text{pay}_Y) = 450 + 100 \\times 2 = 450 + 200 = \\$650' },
-      { explanation: 'Compare and conclude.', workingOut: '\\$700 > \\$650 \\Rightarrow \\text{Kelly should take Shop } X' }
+      { explanation: 'Calculate $E(X)$.', workingOut: 'E(X) = 1.86 \\approx 2' },
+      { explanation: 'Calculate $\\text{Var}(X)$.', workingOut: '\\text{Var}(X) = 4.44 - (1.86)^2 \\approx 0.98' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q28-a',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(a) Find the expected number of lounge suites sold per week. Give your answer to the nearest whole number.',
+        answer: '$E(X) \\approx 2$',
+        hint: 'Use $E(X) = \\sum x \\cdot P(X=x)$.',
+        solutionSteps: [
+          { explanation: 'Apply $E(X) = \\sum x_i P(x_i)$.', workingOut: 'E(X) = 0(0.1)+1(0.2)+2(0.5)+3(0.15)+4(0.04)+5(0.01) = 1.86 \\approx 2' }
+        ]
+      },
+      {
+        id: 'asc2020-q28-b',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(b) Find the variance for this data.',
+        answer: '$\\text{Var}(X) \\approx 0.9804$',
+        hint: 'Use $\\text{Var}(X) = E(X^2) - [E(X)]^2$.',
+        solutionSteps: [
+          { explanation: 'Calculate $E(X^2)$.', workingOut: 'E(X^2) = 0+0.2+2.0+1.35+0.64+0.25 = 4.44' },
+          { explanation: 'Apply variance formula.', workingOut: '\\text{Var}(X) = 4.44 - (1.86)^2 = 0.9804' }
+        ]
+      },
+      {
+        id: 'asc2020-q28-c',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(c) Which furniture shop job should Kelly take? Justify your answer by referring to the expected weekly pay based on your result from part (a).',
+        answer: 'Kelly should take Shop $X$. Expected pay: Shop $X$ = $\\$700$, Shop $Y$ = $\\$650$.',
+        hint: 'Calculate expected pay at each shop: retainer + commission × $E(X)$.',
+        solutionSteps: [
+          { explanation: 'Shop $X$ expected pay.', workingOut: '300 + 200 \\times 2 = \\$700' },
+          { explanation: 'Shop $Y$ expected pay.', workingOut: '450 + 100 \\times 2 = \\$650' },
+          { explanation: 'Conclusion.', workingOut: '\\$700 > \\$650 \\Rightarrow \\text{Take Shop } X' }
+        ]
+      }
     ]
   },
 
@@ -1604,83 +1609,63 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'The drop-bear population is endangered. On January 1, 2003 there were 1000 drop-bears. The population increases by 5% per year, but 100 are poached each year.\n\n(a) Show that the drop-bear population remaining after two years is given by:\n$$T_2 = 1000 \\times (1.05)^2 - 100 \\times (1.05 + 1)$$',
-    a: 'Shown — see working.',
+    q: 'The drop-bear population is endangered. On January 1, 2003 there were 1000 drop-bears. The population increases by 5% per year, but 100 are poached each year.',
+    a: 'See parts (a)–(d)',
     opts: [],
-    h: 'Write out $T_1$, then compute $T_2 = 1.05 \\times T_1 - 100$ and expand.',
-    s: '$T_1 = 1000 \\times 1.05 - 100$.\n\n$T_2 = T_1 \\times 1.05 - 100 = (1000 \\times 1.05 - 100) \\times 1.05 - 100$\n\n$= 1000 \\times 1.05^2 - 100 \\times 1.05 - 100 = 1000 \\times (1.05)^2 - 100 \\times (1.05 + 1)$ ✓',
+    h: 'Write recurrence relation $T_{n+1} = 1.05 T_n - 100$, then find closed form using geometric series.',
+    s: '$T_n = 2000 - 1000(1.05)^n$. Extinction during 2017.',
     solutionSteps: [
-      { explanation: 'After year 1: multiply by 1.05 for growth, subtract 100 for poaching.', workingOut: 'T_1 = 1000 \\times 1.05 - 100' },
-      { explanation: 'After year 2: apply the same process to $T_1$.', workingOut: 'T_2 = T_1 \\times 1.05 - 100 = (1000 \\times 1.05 - 100) \\times 1.05 - 100' },
-      { explanation: 'Expand the bracket.', workingOut: '= 1000 \\times 1.05^2 - 100 \\times 1.05 - 100' },
-      { explanation: 'Factorise the $-100$ terms.', workingOut: '= 1000 \\times (1.05)^2 - 100\\times(1.05 + 1) \\checkmark' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q30b',
-    topicId: 'y12a-8A',
-    c: '8A',
-    t: 'Applications of arithmetic and geometric series',
-    source: 'Ascham 2020 Trial Q30',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: '(b) Find an expression for $T_n$, the number of drop-bears remaining after $n$ years.',
-    a: '$T_n = 2000 - 1000 \\times (1.05)^n$',
-    opts: [],
-    h: 'The poaching amounts form a geometric series. Use the geometric sum formula to sum: $100(1 + 1.05 + 1.05^2 + \\ldots + 1.05^{n-1})$.',
-    s: '$T_n = 1000 \\times 1.05^n - 100(1 + 1.05 + \\ldots + 1.05^{n-1})$\n\n$= 1000 \\times 1.05^n - 100 \\cdot \\dfrac{1.05^n - 1}{1.05 - 1}$\n\n$= 1000 \\times 1.05^n - 2000(1.05^n - 1)$\n\n$= 1000 \\times 1.05^n - 2000 \\times 1.05^n + 2000 = 2000 - 1000 \\times 1.05^n$.',
-    solutionSteps: [
-      { explanation: 'Write the general term: each year, multiply by 1.05 and subtract 100. The poaching terms accumulated sum to a geometric series.', workingOut: 'T_n = 1000\\times 1.05^n - 100(1 + 1.05 + 1.05^2 + \\cdots + 1.05^{n-1})' },
-      { explanation: 'Sum the geometric series with first term 1, ratio 1.05, $n$ terms.', workingOut: '\\sum_{k=0}^{n-1} 1.05^k = \\frac{1.05^n - 1}{1.05 - 1} = \\frac{1.05^n - 1}{0.05} = 20(1.05^n - 1)' },
-      { explanation: 'Substitute back.', workingOut: 'T_n = 1000\\times 1.05^n - 100 \\times 20(1.05^n - 1) = 1000\\times 1.05^n - 2000(1.05^n - 1)' },
-      { explanation: 'Expand and simplify.', workingOut: 'T_n = 1000\\times 1.05^n - 2000\\times 1.05^n + 2000 = 2000 - 1000\\times 1.05^n' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q30c',
-    topicId: 'y12a-8A',
-    c: '8A',
-    t: 'Applications of arithmetic and geometric series',
-    source: 'Ascham 2020 Trial Q30',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'medium',
-    q: '(c) Using $T_n = 2000 - 1000 \\times (1.05)^n$, what is the drop-bear population on January 1, 2008?',
-    a: 'Approximately $724$ drop-bears',
-    opts: [],
-    h: 'January 1, 2008 is 5 years after January 1, 2003, so use $n = 5$.',
-    s: '$n = 2008 - 2003 = 5$.\n\n$T_5 = 2000 - 1000 \\times (1.05)^5 = 2000 - 1000 \\times 1.27628 \\approx 2000 - 1276.3 \\approx 724$.',
-    solutionSteps: [
-      { explanation: 'Determine $n$: January 1, 2008 is 5 years after January 1, 2003.', workingOut: 'n = 5' },
-      { explanation: 'Substitute into the formula.', workingOut: 'T_5 = 2000 - 1000 \\times (1.05)^5' },
-      { explanation: 'Evaluate $(1.05)^5$.', workingOut: '(1.05)^5 \\approx 1.27628' },
-      { explanation: 'Calculate.', workingOut: 'T_5 = 2000 - 1276.3 \\approx 724 \\text{ drop-bears}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q30d',
-    topicId: 'y12a-8A',
-    c: '8A',
-    t: 'Applications of arithmetic and geometric series',
-    source: 'Ascham 2020 Trial Q30',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: '(d) During what calendar year will the drop-bears become extinct if no interventions are put in place?\n\nUse $T_n = 2000 - 1000 \\times (1.05)^n$.',
-    a: 'During $2017$',
-    opts: [],
-    h: 'Set $T_n = 0$ and solve for $n$ using logarithms. The extinction year is $2003 + n$.',
-    s: '$2000 - 1000 \\times 1.05^n = 0 \\Rightarrow 1.05^n = 2 \\Rightarrow n = \\dfrac{\\ln 2}{\\ln 1.05} \\approx \\dfrac{0.6931}{0.04879} \\approx 14.2$.\n\n$T_{14} \\approx 20 > 0$ (alive), $T_{15} < 0$ (extinct). Extinction occurs during year $n = 15$ from 2003, i.e. during $2017$.',
-    solutionSteps: [
-      { explanation: 'Set $T_n = 0$ to find when extinction occurs.', workingOut: '2000 - 1000 \\times 1.05^n = 0 \\Rightarrow 1.05^n = 2' },
-      { explanation: 'Take logarithms of both sides.', workingOut: 'n\\ln(1.05) = \\ln 2 \\Rightarrow n = \\frac{\\ln 2}{\\ln 1.05} \\approx 14.2' },
-      { explanation: 'Verify: $T_{14} = 2000 - 1000(1.05)^{14} \\approx 2000 - 1979.9 \\approx 20 > 0$ (still alive Jan 1, 2017).', workingOut: 'T_{14} \\approx 20 > 0' },
-      { explanation: '$T_{15} = 2000 - 1000(1.05)^{15} \\approx 2000 - 2078.9 < 0$ (extinct by Jan 1, 2018).', workingOut: 'T_{15} < 0' },
-      { explanation: 'Extinction occurs between Jan 1, 2017 and Jan 1, 2018 — i.e. during the calendar year $2017$.', workingOut: '2003 + 14 = 2017' }
+      { explanation: 'Recurrence: $T_1 = 1000(1.05) - 100$.', workingOut: 'T_n = 2000 - 1000 \\times 1.05^n' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q30-a',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'hard',
+        question: '(a) Show that the drop-bear population remaining after two years is given by: $T_2 = 1000 \\times (1.05)^2 - 100 \\times (1.05 + 1)$.',
+        answer: 'Shown — see working.',
+        hint: 'Write $T_1 = 1000 \\times 1.05 - 100$, then $T_2 = T_1 \\times 1.05 - 100$ and expand.',
+        solutionSteps: [
+          { explanation: 'Year 1.', workingOut: 'T_1 = 1000 \\times 1.05 - 100' },
+          { explanation: 'Year 2.', workingOut: 'T_2 = T_1 \\times 1.05 - 100 = 1000(1.05)^2 - 100(1.05) - 100 = 1000(1.05)^2 - 100(1.05+1) \\checkmark' }
+        ]
+      },
+      {
+        id: 'asc2020-q30-b',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(b) Find an expression for $T_n$, the number of drop-bears remaining after $n$ years.',
+        answer: '$T_n = 2000 - 1000 \\times (1.05)^n$',
+        hint: 'Sum the geometric series of poaching terms: $100(1 + 1.05 + \\cdots + 1.05^{n-1})$.',
+        solutionSteps: [
+          { explanation: 'Write general term.', workingOut: 'T_n = 1000(1.05)^n - 100 \\cdot \\frac{1.05^n - 1}{0.05}' },
+          { explanation: 'Simplify.', workingOut: '= 1000(1.05)^n - 2000(1.05^n - 1) = 2000 - 1000(1.05)^n' }
+        ]
+      },
+      {
+        id: 'asc2020-q30-c',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(c) What is the drop-bear population on January 1, 2008?',
+        answer: 'Approximately $724$ drop-bears',
+        hint: 'January 1, 2008 is $n = 5$ years after 2003.',
+        solutionSteps: [
+          { explanation: 'Substitute $n = 5$.', workingOut: 'T_5 = 2000 - 1000(1.05)^5 \\approx 2000 - 1276.3 \\approx 724' }
+        ]
+      },
+      {
+        id: 'asc2020-q30-d',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(d) During what calendar year will the drop-bears become extinct if no interventions are put in place?',
+        answer: 'During $2017$',
+        hint: 'Set $T_n = 0$ and solve for $n$ using logarithms.',
+        solutionSteps: [
+          { explanation: 'Set $T_n = 0$.', workingOut: '1.05^n = 2 \\Rightarrow n = \\frac{\\ln 2}{\\ln 1.05} \\approx 14.2' },
+          { explanation: '$T_{14} > 0$, $T_{15} < 0$: extinct during year 15, i.e. 2017.', workingOut: '2003 + 14 = 2017' }
+        ]
+      }
     ]
   },
 
@@ -1707,7 +1692,7 @@ export const ASCHAM_2020_QUESTIONS = [
 
   // Q31 — Continuous PDF f(x) = ax(10-x)
   {
-    id: 'asc2020-q31a',
+    id: 'asc2020-q31',
     topicId: 'y12a-10B',
     c: '10B',
     t: 'Continuous distributions',
@@ -1715,59 +1700,50 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'short_answer',
     difficulty: 'hard',
-    q: 'The length of time (in minutes) that a person waits for an ambulance is modelled by:\n$$f(x) = \\begin{cases} ax(10-x), & 0 \\leq x \\leq 10 \\\\ 0, & \\text{otherwise} \\end{cases}$$\n\n(a) Show that the value of $a$ is $\\dfrac{3}{500}$.',
-    a: 'Shown — see working.',
+    q: 'The length of time (in minutes) that a person in the Sydney metropolitan area waits for an ambulance is a continuous probability distribution function defined by:\n$$f(x) = \\begin{cases} ax(10-x), & 0 \\leq x \\leq 10 \\\\ 0, & \\text{otherwise} \\end{cases}$$',
+    a: 'See parts (a), (b), (c)',
     opts: [],
-    h: 'For a valid PDF, $\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1$. Integrate $ax(10-x)$ over $[0, 10]$ and set equal to 1.',
-    s: '$\\displaystyle\\int_0^{10} ax(10-x)\\,dx = 1$.\n\n$a\\displaystyle\\int_0^{10}(10x - x^2)\\,dx = a\\left[5x^2 - \\frac{x^3}{3}\\right]_0^{10} = a\\left(500 - \\frac{1000}{3}\\right) = a \\cdot \\frac{500}{3} = 1$.\n\n$\\therefore a = \\dfrac{3}{500}$ ✓',
+    h: 'Integrate to find $a$, then integrate again for CDF, then use $P(X>7) = 1 - F(7)$.',
+    s: '$a = 3/500$; $F(x) = x^2(15-x)/500$; $P(X>7) = 0.216$.',
     solutionSteps: [
-      { explanation: 'For a valid PDF, the total area under the curve must equal 1.', workingOut: '\\int_0^{10} ax(10-x)\\,dx = 1' },
-      { explanation: 'Expand the integrand.', workingOut: 'a\\int_0^{10}(10x - x^2)\\,dx' },
-      { explanation: 'Integrate term by term.', workingOut: 'a\\left[5x^2 - \\frac{x^3}{3}\\right]_0^{10} = a\\left(500 - \\frac{1000}{3}\\right) = a \\cdot \\frac{500}{3}' },
-      { explanation: 'Set equal to 1 and solve for $a$.', workingOut: 'a \\cdot \\frac{500}{3} = 1 \\Rightarrow a = \\frac{3}{500} \\checkmark' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q31b',
-    topicId: 'y12a-10B',
-    c: '10B',
-    t: 'Continuous distributions',
-    source: 'Ascham 2020 Trial Q31',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'hard',
-    q: '(b) Using $a = \\dfrac{3}{500}$, find the cumulative distribution function $F(x)$.',
-    a: '$F(x) = \\dfrac{x^2(15-x)}{500}$ for $0 \\leq x \\leq 10$',
-    opts: [],
-    h: '$F(x) = \\int_0^x f(t)\\,dt$. Integrate $\\frac{3}{500}t(10-t)$ from 0 to $x$.',
-    s: '$F(x) = \\displaystyle\\int_0^x \\frac{3}{500}t(10-t)\\,dt = \\frac{3}{500}\\left[5t^2 - \\frac{t^3}{3}\\right]_0^x = \\frac{3}{500}\\left(5x^2 - \\frac{x^3}{3}\\right) = \\frac{15x^2 - x^3}{500} = \\dfrac{x^2(15-x)}{500}$.',
-    solutionSteps: [
-      { explanation: 'The CDF is found by integrating the PDF from 0 to $x$.', workingOut: 'F(x) = \\int_0^x \\frac{3}{500}t(10-t)\\,dt' },
-      { explanation: 'Integrate.', workingOut: '= \\frac{3}{500}\\left[5t^2 - \\frac{t^3}{3}\\right]_0^x = \\frac{3}{500}\\left(5x^2 - \\frac{x^3}{3}\\right)' },
-      { explanation: 'Simplify.', workingOut: '= \\frac{15x^2 - x^3}{500} = \\frac{x^2(15-x)}{500}' },
-      { explanation: 'State the full CDF.', workingOut: 'F(x) = \\begin{cases} 0 & x < 0 \\\\ \\dfrac{x^2(15-x)}{500} & 0 \\leq x \\leq 10 \\\\ 1 & x > 10 \\end{cases}' }
-    ]
-  },
-
-  {
-    id: 'asc2020-q31c',
-    topicId: 'y12a-10B',
-    c: '10B',
-    t: 'Continuous distributions',
-    source: 'Ascham 2020 Trial Q31',
-    examPaper: 'asc-2020',
-    type: 'short_answer',
-    difficulty: 'medium',
-    q: '(c) Using $F(x) = \\dfrac{x^2(15-x)}{500}$, find the probability, as a decimal, that a person will have to wait more than 7 minutes.',
-    a: '$0.216$',
-    opts: [],
-    h: '$P(X > 7) = 1 - F(7)$.',
-    s: '$F(7) = \\dfrac{49(15-7)}{500} = \\dfrac{49 \\times 8}{500} = \\dfrac{392}{500} = 0.784$.\n\n$P(X > 7) = 1 - 0.784 = 0.216$.',
-    solutionSteps: [
-      { explanation: 'Use the complement: $P(X > 7) = 1 - F(7)$.', workingOut: 'P(X > 7) = 1 - F(7)' },
-      { explanation: 'Evaluate $F(7)$.', workingOut: 'F(7) = \\frac{7^2(15-7)}{500} = \\frac{49 \\times 8}{500} = \\frac{392}{500} = 0.784' },
-      { explanation: 'Calculate the probability.', workingOut: 'P(X > 7) = 1 - 0.784 = 0.216' }
+      { explanation: 'Set integral to 1 to find $a$.', workingOut: 'a = \\frac{3}{500}' }
+    ],
+    subQuestions: [
+      {
+        id: 'asc2020-q31-a',
+        type: 'teacher_review',
+        requiresManualGrading: true,
+        difficulty: 'hard',
+        question: '(a) Show that the value of $a$ is $\\dfrac{3}{500}$.',
+        answer: 'Shown — see working.',
+        hint: 'For a valid PDF, $\\int_0^{10} ax(10-x)\\,dx = 1$.',
+        solutionSteps: [
+          { explanation: 'Integrate $ax(10-x)$ over $[0,10]$ and set equal to 1.', workingOut: 'a\\left[5x^2 - \\frac{x^3}{3}\\right]_0^{10} = a \\cdot \\frac{500}{3} = 1 \\Rightarrow a = \\frac{3}{500} \\checkmark' }
+        ]
+      },
+      {
+        id: 'asc2020-q31-b',
+        type: 'short_answer',
+        difficulty: 'hard',
+        question: '(b) Find the cumulative distribution function.',
+        answer: '$F(x) = \\dfrac{x^2(15-x)}{500}$ for $0 \\leq x \\leq 10$',
+        hint: '$F(x) = \\int_0^x \\frac{3}{500}t(10-t)\\,dt$.',
+        solutionSteps: [
+          { explanation: 'Integrate PDF from 0 to $x$.', workingOut: 'F(x) = \\frac{3}{500}\\left[5t^2 - \\frac{t^3}{3}\\right]_0^x = \\frac{15x^2 - x^3}{500} = \\frac{x^2(15-x)}{500}' }
+        ]
+      },
+      {
+        id: 'asc2020-q31-c',
+        type: 'short_answer',
+        difficulty: 'medium',
+        question: '(c) Find the probability, as a decimal, that a person will have to wait more than 7 minutes.',
+        answer: '$0.216$',
+        hint: '$P(X > 7) = 1 - F(7)$.',
+        solutionSteps: [
+          { explanation: 'Evaluate $F(7)$.', workingOut: 'F(7) = \\frac{49 \\times 8}{500} = 0.784' },
+          { explanation: 'Apply complement.', workingOut: 'P(X > 7) = 1 - 0.784 = 0.216' }
+        ]
+      }
     ]
   },
 
