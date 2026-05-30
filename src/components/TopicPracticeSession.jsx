@@ -63,8 +63,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     (async () => {
       setLoading(true);
       try {
+        const isExamChapter = chapter.id?.startsWith('exam:');
+        const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
         const snap = await getDocs(
-          query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
+          isExamChapter
+            ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
+            : query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
         );
         const all = snap.docs
           .map((d) => ({ id: d.id, ...d.data() }))

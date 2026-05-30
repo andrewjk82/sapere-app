@@ -51,17 +51,14 @@ const mapSeedQuestion = (raw, chapter) => {
   const resolvedTopicCode = raw.c || raw.topicCode || chapter.topicCode || '';
   const resolvedTopicTitle = raw.t || raw.topicTitle || chapter.topicTitle || '';
 
-  // For exam-paper chapters (chapterId starts with 'exam:'), always store the
-  // exam chapterId so the exam paper view can find these questions via
-  // where('chapterId', '==', 'exam:xxx-yyyy'). The topicId field still maps
-  // to the curriculum topic so subject filtering still works.
-  const isExamChapter = chapter.chapterId?.startsWith('exam:');
+  // Derive the real chapter ID from topicId (e.g. 'y12a-3D' → 'y12a-3').
+  // Exam-paper questions are stored under their curriculum chapters so they
+  // appear in topic practice and Daily Challenge. The examPaper field lets
+  // the exam paper view filter them separately.
   const resolvedChapterId = raw.chapterId
-    || (isExamChapter
-      ? chapter.chapterId
-      : (resolvedTopicId !== chapter.topicId
-          ? resolvedTopicId.replace(/[A-Z]+$/, '')
-          : chapter.chapterId));
+    || (resolvedTopicId !== chapter.topicId
+      ? resolvedTopicId.replace(/[A-Z]+$/, '')
+      : chapter.chapterId);
 
   return {
     chapterId: resolvedChapterId,

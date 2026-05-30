@@ -33,7 +33,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const reload = useCallback(async () => {
     setLoading(true);
     try {
-      const snap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', chapter.id)));
+      // Exam paper chapters use examPaper field; regular chapters use chapterId.
+      const isExamChapter = chapter.id?.startsWith('exam:');
+      const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
+      const snap = await getDocs(
+        isExamChapter
+          ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
+          : query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
+      );
       const all = snap.docs
         .map((d) => ({ id: d.id, ...d.data() }))
         .filter((q) => q.isActive !== false && (!topic?.id || q.topicId === topic.id));
