@@ -141,6 +141,16 @@ import { seedChapterQuestions } from '../services/chapterSeeder';
 // create its seed file, import the array above, and add ONE entry here — a
 // "Seed" button appears automatically. No new handler function needed.
 const CHAPTER_SEED_REGISTRY = [
+  {
+    chapterId: 'y12a-6',
+    chapterTitle: 'Chapter 6: The trigonometric functions',
+    topicId: 'y12a-6A',
+    topicCode: '6A',
+    topicTitle: 'The behaviour of sin x near the origin',
+    year: 'Year 12',
+    seed: Y12A_CH6_QUESTIONS,
+    label: 'Y12A Ch6 · 6A The behaviour of sin x near the origin',
+  },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1f', topicCode: '1F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH1F_QUESTIONS, label: 'Y10 Ch1 · 1F Revision' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
