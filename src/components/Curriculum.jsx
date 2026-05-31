@@ -10,6 +10,7 @@ import { Y12A_CH8C_QUESTIONS } from '../constants/seedYear12aCh8CQuestions';
 import { Y12A_CH8D_QUESTIONS } from '../constants/seedYear12aCh8DQuestions';
 import { Y12A_CH8E_QUESTIONS } from '../constants/seedYear12aCh8EQuestions';
 import { Y12A_CH8F_QUESTIONS } from '../constants/seedYear12aCh8FQuestions';
+import { Y12A_CH3_QUESTIONS } from '../constants/seedYear12aCh3Questions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -152,6 +153,16 @@ import { seedChapterQuestions } from '../services/chapterSeeder';
 // create its seed file, import the array above, and add ONE entry here — a
 // "Seed" button appears automatically. No new handler function needed.
 const CHAPTER_SEED_REGISTRY = [
+  {
+    chapterId: 'y12a-3',
+    chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
+    topicId: 'y12a-3A',
+    topicCode: '3A',
+    topicTitle: 'Increasing, decreasing and stationary at a point',
+    year: 'Year 12',
+    seed: Y12A_CH3_QUESTIONS,
+    label: 'Y12A Ch3 · 3A Increasing, decreasing and stationary',
+  },
   {
     chapterId: 'y12a-6',
     chapterTitle: 'Chapter 6: The trigonometric functions',
