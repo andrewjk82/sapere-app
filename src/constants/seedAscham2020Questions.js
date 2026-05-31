@@ -404,7 +404,7 @@ export const ASCHAM_2020_QUESTIONS = [
     examPaper: 'asc-2020',
     type: 'multiple_choice',
     difficulty: 'medium',
-    q: 'Percy hopes to have $25\\,000 in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the compound interest table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?\n\nNote: 4% p.a. compounded every 6 months means 2% per period, and 4 years = 8 periods. The compounded value of $\\$1$ at 2% over 8 periods is 1.1717.',
+    q: 'Percy hopes to have $\\\\$25\\\\,000$ in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the compound interest table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?\n\nNote: 4% p.a. compounded every 6 months means 2% per period, and 4 years = 8 periods. The compounded value of $\\$1$ at 2% over 8 periods is 1.1717.',
     a: '$25\\,000 \\div 1.1717$',
     opts: [
       '$25000 \\times 1.3686$',
