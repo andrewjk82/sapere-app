@@ -56,6 +56,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const [results, setResults] = useState([]);   // [{correct, answer, q}]
   const [showHint, setShowHint] = useState(false);
   const inputRef = useRef(null);
+  // Fraction input mode — pressing "/" builds a stacked a/b fraction.
+  const [fracMode, setFracMode] = useState(false);
+  const [fracNum, setFracNum] = useState('');
+  const [fracDen, setFracDen] = useState('');
+  const fracNumRef = useRef(null);
+  const fracDenRef = useRef(null);
 
   // Load questions for this topic
   useEffect(() => {
@@ -98,6 +104,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     setSubmitted(false);
     setIsCorrect(null);
     setShowHint(false);
+    setFracMode(false); setFracNum(''); setFracDen('');
     if (q) {
       if (hasSubs) {
         const init = {};
@@ -164,13 +171,33 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     setView('quiz');
   };
 
+  // ── Fraction input mode ───────────────────────────────────────────────────
+  const enterFracMode = (currentVal) => {
+    setFracNum(String(currentVal ?? ''));
+    setFracDen('');
+    setFracMode(true);
+    setTimeout(() => fracDenRef.current?.focus(), 50);
+  };
+  const commitFraction = (num, den) => {
+    if (!den) { setFracMode(false); inputRef.current?.focus(); return; }
+    const base = String(userAnswer ?? '');
+    const prefix = base.endsWith(num) ? base.slice(0, base.length - num.length) : base;
+    setUserAnswer(prefix + `(${num || '0'})/(${den})`);
+    setFracMode(false);
+    setFracNum(''); setFracDen('');
+    setTimeout(() => inputRef.current?.focus(), 50);
+  };
+  const cancelFracMode = () => { setFracMode(false); inputRef.current?.focus(); };
+
   // ── Math keyboard input ───────────────────────────────────────────────────
   const insertSymbol = (sym) => {
     if (hasSubs || isFill) return; // handled inline
     if (sym === '⌫') {
       setUserAnswer((v) => String(v).slice(0, -1));
+    } else if (sym === '/') {
+      enterFracMode(userAnswer || '');
     } else {
-      setUserAnswer((v) => String(v) + sym);
+      setUserAnswer((v) => String(v ?? '') + sym);
     }
     inputRef.current?.focus();
   };
@@ -458,20 +485,57 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
               </button>
             ))}
           </div>
+          {/* Live fraction builder */}
+          {fracMode && (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '12px', background: '#f5f3ff', borderRadius: '16px', border: '2px solid #a78bfa' }}>
+              {String(userAnswer ?? '').replace(fracNum, '') && (
+                <span style={{ fontSize: '1.4rem', fontFamily: '"KaTeX_Main","Times New Roman",serif', fontWeight: 700 }}>
+                  {String(userAnswer ?? '').replace(fracNum, '')}
+                </span>
+              )}
+              <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+                <input
+                  ref={fracNumRef}
+                  value={fracNum}
+                  onChange={(e) => setFracNum(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); fracDenRef.current?.focus(); } if (e.key === 'Escape') cancelFracMode(); }}
+                  style={{ width: Math.max(40, fracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.4rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
+                  placeholder="a"
+                />
+                <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
+                <input
+                  ref={fracDenRef}
+                  value={fracDen}
+                  onChange={(e) => setFracDen(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === 'Enter') commitFraction(fracNum, fracDen); if (e.key === 'Escape') cancelFracMode(); }}
+                  style={{ width: Math.max(40, fracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.4rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
+                  placeholder="b"
+                  autoFocus
+                />
+              </div>
+              <button onClick={() => commitFraction(fracNum, fracDen)} style={{ padding: '6px 14px', borderRadius: '10px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>OK</button>
+              <button onClick={cancelFracMode} style={{ padding: '6px 10px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>✕</button>
+            </div>
+          )}
           <input
             ref={inputRef}
             type="text"
             value={userAnswer ?? ''}
+            readOnly={submitted || fracMode}
             onChange={(e) => !submitted && setUserAnswer(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && !submitted && userAnswer && handleSubmit()}
+            onKeyDown={(e) => {
+              if (e.key === '/') { e.preventDefault(); if (!submitted) enterFracMode(userAnswer || ''); return; }
+              if (e.key === 'Enter' && !submitted && userAnswer) handleSubmit();
+            }}
             disabled={submitted}
-            placeholder="Type your answer…"
+            placeholder={fracMode ? '' : 'Type your answer… (press / for fraction)'}
             style={{
               fontSize: '1.35rem', padding: '20px', borderRadius: '18px', textAlign: 'center',
               border: `2px solid ${submitted ? (isCorrect ? '#10b981' : '#f43f5e') : '#a78bfa'}`,
               background: submitted ? (isCorrect ? '#f0fdf4' : '#fff1f2') : '#fff',
               fontWeight: 700, fontFamily: '"KaTeX_Main", "Times New Roman", serif',
               letterSpacing: '0.04em', width: '100%', boxSizing: 'border-box',
+              opacity: fracMode ? 0.4 : 1,
             }}
           />
           {submitted && !isCorrect && q.answer != null && (

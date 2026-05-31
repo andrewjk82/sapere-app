@@ -436,7 +436,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
       <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
         {MATH_SYMBOLS.map((s) => (
-          <button key={s} onClick={() => !showFeedback && setDraft((draft || '') + s)} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
+          <button key={s} onClick={() => { if (showFeedback) return; if (s === '/') { setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); } else { setDraft((draft || '') + s); } }} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
         ))}
         <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
       </div>
