@@ -541,7 +541,28 @@ const Curriculum = () => {
 
   const handleSaveChapter = async (e) => {
     e.preventDefault();
-    const chapterData = editingChapter.chapter;
+    let chapterData = { ...editingChapter.chapter };
+
+    // UX FIX: If user typed in the "Add Subtopic" form but forgot to click [+], 
+    // we automatically append it to the topics array before saving!
+    if (subtopicForm.code && subtopicForm.title) {
+      const currentTopics = [...(chapterData.topics || [])];
+      const newSubtopic = {
+        id: subtopicForm.id || `${chapterData.id || ''}-${subtopicForm.code.toLowerCase()}`,
+        code: subtopicForm.code,
+        title: subtopicForm.title,
+        page: subtopicForm.page ? parseInt(subtopicForm.page) : ''
+      };
+      if (editingSubtopicIndex >= 0) {
+        currentTopics[editingSubtopicIndex] = newSubtopic;
+      } else {
+        currentTopics.push(newSubtopic);
+      }
+      chapterData.topics = currentTopics;
+      setSubtopicForm({ code: '', title: '', page: '' });
+      setEditingSubtopicIndex(-1);
+    }
+
     // Use currentRecord if it exists; otherwise fall back to displayData so
     // CURRICULUM_DATA chapters are preserved when no Firestore record exists yet.
     let newChapters = currentRecord?.chapters
