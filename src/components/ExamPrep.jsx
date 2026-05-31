@@ -10,7 +10,7 @@ import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
-import { gradeQuestion } from '../utils/answerMatching';
+import { gradeQuestion, answersMatch } from '../utils/answerMatching';
 import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
@@ -160,7 +160,12 @@ const QuizView = ({ questions, onFinish, onReport }) => {
 
   useEffect(() => {
     if (!q) return;
-    if (q.type === 'multiple_choice') setDraft(null);
+    if (q.subQuestions?.length > 0) {
+      const init = {};
+      q.subQuestions.forEach((sq, i) => { init[sq.id ?? i] = ''; });
+      setDraft(init);
+    }
+    else if (q.type === 'multiple_choice') setDraft(null);
     else if (q.type === 'fill_blank') setDraft(Array((q.blanks || []).length).fill(''));
     else setDraft('');
     setShowHint(false);
@@ -202,9 +207,19 @@ const QuizView = ({ questions, onFinish, onReport }) => {
 
   if (!q) return null;
 
+  // Grade a multi-part question: correct only if every sub-answer matches.
+  const subList = Array.isArray(q.subQuestions) ? q.subQuestions : [];
+  const hasSubs = subList.length > 0;
+  const gradeSub = (sq, i) => {
+    const given = (draft && typeof draft === 'object') ? draft[sq.id ?? i] : '';
+    const expected = sq.a ?? sq.answer ?? '';
+    return answersMatch(given, expected);
+  };
+  const allSubsCorrect = () => hasSubs && subList.every((sq, i) => gradeSub(sq, i));
+
   const submit = () => {
     const userAnswer = draft;
-    const { correct } = gradeQuestion(q, userAnswer);
+    const correct = hasSubs ? allSubsCorrect() : gradeQuestion(q, userAnswer).correct;
     const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle }];
     setAnswers(next);
     setShowFeedback(true);
@@ -229,6 +244,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   };
 
   const canSubmit = (() => {
+    if (hasSubs) return draft && typeof draft === 'object' && subList.every((sq, i) => String(draft[sq.id ?? i] || '').trim() !== '');
     if (q.type === 'multiple_choice') return draft !== null && draft !== undefined;
     if (q.type === 'fill_blank') return Array.isArray(draft) && draft.every((s) => String(s || '').trim() !== '');
     return String(draft || '').trim() !== '';
@@ -372,7 +388,58 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </div>
   );
 
-  const answerArea = q.type === 'multiple_choice' ? (
+  const answerArea = hasSubs ? (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+      {subList.map((sq, sIdx) => {
+        const key = sq.id ?? sIdx;
+        const given = (draft && typeof draft === 'object') ? (draft[key] || '') : '';
+        const correctSub = showFeedback && gradeSub(sq, sIdx);
+        const wrongSub = showFeedback && !correctSub;
+        const subOpts = sq.opts || sq.options || [];
+        const isSubMC = (sq.type === 'multiple_choice') && subOpts.length > 0;
+        return (
+          <div key={key} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '18px' }}>
+            <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem', marginBottom: '12px' }} />
+            {isSubMC ? (
+              <div style={{ display: 'grid', gap: '8px' }}>
+                {subOpts.map((opt, oi) => {
+                  const optText = typeof opt === 'string' ? opt : opt.text;
+                  const selected = given === optText;
+                  return (
+                    <button key={oi} onClick={() => { if (showFeedback) return; setDraft((prev) => ({ ...(prev || {}), [key]: optText })); }} disabled={showFeedback}
+                      style={{ padding: '12px 16px', borderRadius: '12px', border: `2px solid ${selected ? '#6366f1' : '#e2e8f0'}`, background: selected ? '#f5f3ff' : '#fff', textAlign: 'left', cursor: showFeedback ? 'default' : 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <span style={{ fontWeight: 800, color: '#64748b' }}>{String.fromCharCode(65 + oi)}.</span>
+                      <MathView content={optText} style={{ display: 'inline' }} />
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
+              <input
+                type="text"
+                value={given}
+                readOnly={showFeedback}
+                onChange={(e) => setDraft((prev) => ({ ...(prev || {}), [key]: e.target.value }))}
+                placeholder="Type your answer…"
+                style={{ width: '100%', boxSizing: 'border-box', padding: '14px 16px', borderRadius: '12px', fontWeight: 700, fontSize: '1.05rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif', border: `2px solid ${showFeedback ? (correctSub ? '#10b981' : '#ef4444') : '#a78bfa'}`, background: showFeedback ? (correctSub ? '#f0fdf4' : '#fff1f2') : '#fff' }}
+              />
+            )}
+            {showFeedback && String(given).includes('/') && (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', marginTop: '8px' }}>
+                <span style={{ fontSize: '0.62rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase' }}>You wrote</span>
+                <MathView content={String(given)} style={{ fontSize: '1.2rem', color: '#1e1b4b' }} />
+              </div>
+            )}
+            {showFeedback && wrongSub && (
+              <div style={{ marginTop: '10px', padding: '8px 12px', borderRadius: '10px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                Correct: <MathView content={String(sq.a ?? sq.answer ?? '')} style={{ display: 'inline' }} />
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  ) : q.type === 'multiple_choice' ? (
     <div style={{ display: 'grid', gap: '10px' }}>
       {(q.options || []).map((opt, i) => {
         const optText = typeof opt === 'string' ? opt : opt.text;
@@ -654,6 +721,30 @@ const ReviewView = ({ questions, answers, onDone }) => {
       </div>
 
       {/* your answer vs correct */}
+      {Array.isArray(q.subQuestions) && q.subQuestions.length > 0 ? (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {q.subQuestions.map((sq, sIdx) => {
+            const key = sq.id ?? sIdx;
+            const given = (ans?.userAnswer && typeof ans.userAnswer === 'object') ? (ans.userAnswer[key] || '') : '';
+            const subOK = answersMatch(given, sq.a ?? sq.answer ?? '');
+            return (
+              <div key={key} style={{ padding: '14px 16px', borderRadius: '16px', background: '#fff', border: '1px solid #e2e8f0' }}>
+                <MathView content={sq.question} style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1e293b', marginBottom: '8px' }} />
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                  <div style={{ padding: '10px 12px', borderRadius: '12px', background: subOK ? '#f0fdf4' : '#fef2f2', border: `1px solid ${subOK ? '#bbf7d0' : '#fecaca'}` }}>
+                    <div style={{ fontSize: '0.62rem', fontWeight: 800, color: subOK ? '#16a34a' : '#dc2626', textTransform: 'uppercase', marginBottom: '4px' }}>Your answer</div>
+                    <MathView content={String(given || '—')} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1e293b' }} />
+                  </div>
+                  <div style={{ padding: '10px 12px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+                    <div style={{ fontSize: '0.62rem', fontWeight: 800, color: '#16a34a', textTransform: 'uppercase', marginBottom: '4px' }}>Correct</div>
+                    <MathView content={String(sq.a ?? sq.answer ?? '')} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#166534' }} />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
         <div style={{ padding: '16px', borderRadius: '18px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}` }}>
           <div style={{ fontSize: '0.68rem', fontWeight: 800, color: isCorrect ? '#16a34a' : '#dc2626', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Your answer</div>
@@ -678,6 +769,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
           />
         </div>
       </div>
+      )}
 
       {/* step-by-step solution */}
       {solutionSteps.length > 0 && (
