@@ -760,8 +760,20 @@ const ChallengeQuizView = ({
                 }}
                 autoFocus
               />
+              {/* Live fraction preview — the text input can't render stacked
+                  fractions, so show how the answer actually looks. */}
+              {!fracMode && (() => {
+                const previewVal = step === 'feedback' ? (userAnswers[currentIdx] || '') : (selectedOption || '');
+                if (!String(previewVal).includes('/')) return null;
+                return (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 16px', background: '#faf5ff', borderRadius: '14px', border: '1px solid #ede9fe' }}>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Preview</span>
+                    <MathView content={String(previewVal)} style={{ fontSize: '1.5rem', color: '#1e1b4b' }} />
+                  </div>
+                );
+              })()}
               {step !== 'feedback' && (
-                <button 
+                <button
                   onClick={() => handleAnswer(selectedOption)}
                   disabled={!selectedOption}
                   className="app-button app-button--primary"

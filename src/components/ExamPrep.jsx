@@ -472,6 +472,13 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         placeholder={examFracMode ? '' : 'Type your answer… (press / for fraction)'}
         style={{ padding: '20px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}`, background: '#fff', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif', opacity: examFracMode ? 0.4 : 1 }}
       />
+      {/* Live fraction preview — input can't render stacked fractions */}
+      {!examFracMode && String(draft || '').includes('/') && (
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '8px 14px', background: '#faf5ff', borderRadius: '12px', border: '1px solid #ede9fe' }}>
+          <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Preview</span>
+          <MathView content={String(draft)} style={{ fontSize: '1.4rem', color: '#1e1b4b' }} />
+        </div>
+      )}
       {showFeedback && !lastRes?.correct && (
         <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
           Correct: <MathView content={String(q.answer)} style={{ display: 'inline' }} />

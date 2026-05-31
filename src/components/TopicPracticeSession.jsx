@@ -550,6 +550,13 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
               opacity: fracMode ? 0.4 : 1,
             }}
           />
+          {/* Live fraction preview — input can't render stacked fractions */}
+          {!fracMode && String(userAnswer ?? '').includes('/') && (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 16px', background: '#faf5ff', borderRadius: '14px', border: '1px solid #ede9fe' }}>
+              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Preview</span>
+              <MathView content={String(userAnswer)} style={{ fontSize: '1.5rem', color: '#1e1b4b' }} />
+            </div>
+          )}
           {submitted && !isCorrect && q.answer != null && (
             <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Check size={16} style={{ color: '#10b981', flexShrink: 0 }} />
