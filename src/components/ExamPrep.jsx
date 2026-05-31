@@ -141,14 +141,17 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const examInputRef = useRef(null);
   const examFracDenRef = useRef(null);
   const [examFracMode, setExamFracMode] = useState(false);
+  const [examFracWhole, setExamFracWhole] = useState('');
   const [examFracNum, setExamFracNum] = useState('');
   const [examFracDen, setExamFracDen] = useState('');
-  const commitExamFrac = (num, den) => {
+  const examFracNumRef = useRef(null);
+  const commitExamFrac = (whole, num, den) => {
     if (!den) { setExamFracMode(false); examInputRef.current?.focus(); return; }
     const base = typeof draft === 'string' ? draft : '';
     const prefix = base.endsWith(num) ? base.slice(0, base.length - num.length) : base;
-    setDraft(prefix + `(${num || '0'})/(${den})`);
-    setExamFracMode(false); setExamFracNum(''); setExamFracDen('');
+    const frac = `(${num || '0'})/(${den})`;
+    setDraft(prefix + (whole ? `${whole} ${frac}` : frac));
+    setExamFracMode(false); setExamFracWhole(''); setExamFracNum(''); setExamFracDen('');
     setTimeout(() => examInputRef.current?.focus(), 50);
   };
 
@@ -163,7 +166,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     setShowHint(false);
     setShowFeedback(false);
     setFocusedBlank(0);
-    setExamFracMode(false); setExamFracNum(''); setExamFracDen('');
+    setExamFracMode(false); setExamFracWhole(''); setExamFracNum(''); setExamFracDen('');
     const limit = q.timeLimit || 120;
     setTimeLeft(limit);
     setQuestionStartTime(Date.now());
@@ -436,19 +439,26 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
       <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
         {MATH_SYMBOLS.map((s) => (
-          <button key={s} onClick={() => { if (showFeedback) return; if (s === '/') { setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); } else { setDraft((draft || '') + s); } }} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
+          <button key={s} onClick={() => { if (showFeedback) return; if (s === '/') { setExamFracWhole(''); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); } else { setDraft((draft || '') + s); } }} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
         ))}
         <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
       </div>
       {examFracMode && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
-          <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-            <input value={examFracNum} onChange={(e) => setExamFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracDenRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
-            <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
-            <input ref={examFracDenRef} value={examFracDen} onChange={(e) => setExamFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') commitExamFrac(examFracNum, examFracDen); if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+            {/* whole number for mixed numbers (e.g. 2½) */}
+            <input value={examFracWhole} onChange={(e) => setExamFracWhole(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracNumRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracWhole.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #cbd5e1', outline: 'none', fontSize: '1.5rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="0" />
+            <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+              <input ref={examFracNumRef} value={examFracNum} onChange={(e) => setExamFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracDenRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
+              <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
+              <input ref={examFracDenRef} value={examFracDen} onChange={(e) => setExamFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') commitExamFrac(examFracWhole, examFracNum, examFracDen); if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
+            </div>
+            <button onClick={() => commitExamFrac(examFracWhole, examFracNum, examFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
+            <button onClick={() => { setExamFracMode(false); examInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
           </div>
-          <button onClick={() => commitExamFrac(examFracNum, examFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
-          <button onClick={() => { setExamFracMode(false); examInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
+          <div style={{ textAlign: 'center', fontSize: '0.7rem', color: '#7c3aed', fontWeight: 700 }}>
+            Left box empty = normal fraction · fill it for a mixed number (e.g. 2½)
+          </div>
         </div>
       )}
       <input
@@ -456,7 +466,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         type="text" value={draft || ''} readOnly={showFeedback || examFracMode}
         onChange={(e) => setDraft(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === '/' && !showFeedback) { e.preventDefault(); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); }
+          if (e.key === '/' && !showFeedback) { e.preventDefault(); setExamFracWhole(''); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); }
           if (e.key === 'Enter' && draft && !showFeedback) submit();
         }}
         placeholder={examFracMode ? '' : 'Type your answer… (press / for fraction)'}

@@ -57,6 +57,39 @@ export const robustNormalize = (str) => {
   return s;
 };
 
+// Evaluate a fraction or mixed number to its decimal value so that
+// "1/2", "(1)/(2)", "\frac{1}{2}", "0.5" all compare equal, and mixed
+// numbers like "2 1/2", "2 (1)/(2)" evaluate to 2.5 (= "5/2").
+// Returns a finite number, or null if the string isn't a (mixed) fraction/number.
+export const evalFractionValue = (value) => {
+  if (value === null || value === undefined) return null;
+  let s = String(value)
+    .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
+    .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2') // (a)/(b) → a/b
+    .replace(/[−–—]/g, '-')
+    .replace(/\\left|\\right|\$|,/g, '')
+    .trim();
+
+  // Mixed number: "w a/b" or "w+a/b"  (separator = space or +)
+  let m = s.match(/^(-?\d+)\s*[+ ]\s*(\d+)\/(\d+)$/);
+  if (m) {
+    const w = parseInt(m[1], 10), a = parseInt(m[2], 10), b = parseInt(m[3], 10);
+    if (b === 0) return null;
+    const sign = w < 0 ? -1 : 1;
+    return w + sign * (a / b);
+  }
+  // Simple fraction: "a/b"
+  m = s.match(/^(-?\d+)\/(-?\d+)$/);
+  if (m) {
+    const a = parseInt(m[1], 10), b = parseInt(m[2], 10);
+    if (b === 0) return null;
+    return a / b;
+  }
+  // Plain integer / decimal
+  if (/^-?\d+(?:\.\d+)?$/.test(s)) return parseFloat(s);
+  return null;
+};
+
 export const parseNumericAnswer = (value) => {
   if (value === null || value === undefined) return null;
   const raw = String(value).trim();
@@ -99,6 +132,13 @@ const extractRhs = (s) => {
 };
 
 export const answersMatch = (studentAnswer, expectedAnswer) => {
+  // Fraction / mixed-number equivalence: "2 1/2" == "5/2" == "2.5".
+  const sFrac = evalFractionValue(studentAnswer);
+  const eFrac = evalFractionValue(expectedAnswer);
+  if (sFrac !== null && eFrac !== null && Math.abs(sFrac - eFrac) < 0.000001) {
+    return true;
+  }
+
   const studentNumeric = parseNumericAnswer(studentAnswer);
   const expectedNumeric = parseNumericAnswer(expectedAnswer);
 
