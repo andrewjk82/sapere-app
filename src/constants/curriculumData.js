@@ -3049,13 +3049,14 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-8',
         title: 'Chapter 8: Series and finance',
-        modules: 5,
+        modules: 6,
         topics: [
           { id: 'y12a-8A', code: '8A', title: 'Applications of APs and GPs' },
           { id: 'y12a-8B', code: '8B', title: 'The use of logarithms with GPs' },
           { id: 'y12a-8C', code: '8C', title: 'Simple and compound interest' },
           { id: 'y12a-8D', code: '8D', title: 'Investing money by regular instalments' },
-          { id: 'y12a-8E', code: '8E', title: 'Paying off a loan' }
+          { id: 'y12a-8E', code: '8E', title: 'Paying off a loan' },
+          { id: 'y12a-8F', code: '8F', title: 'Chapter review exercise' }
         ]
       },
       {

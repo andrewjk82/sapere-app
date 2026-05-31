@@ -9,6 +9,7 @@ import { Y12A_CH8B_QUESTIONS } from '../constants/seedYear12aCh8BQuestions';
 import { Y12A_CH8C_QUESTIONS } from '../constants/seedYear12aCh8CQuestions';
 import { Y12A_CH8D_QUESTIONS } from '../constants/seedYear12aCh8DQuestions';
 import { Y12A_CH8E_QUESTIONS } from '../constants/seedYear12aCh8EQuestions';
+import { Y12A_CH8F_QUESTIONS } from '../constants/seedYear12aCh8FQuestions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -260,6 +261,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH8E_QUESTIONS,
     label: 'Y12A Ch8 · 8E Paying off a loan',
+  },
+  {
+    chapterId: 'y12a-8',
+    chapterTitle: 'Chapter 8: Series and finance',
+    topicId: 'y12a-8F',
+    topicCode: '8F',
+    topicTitle: 'Chapter review exercise',
+    year: 'Year 12',
+    seed: Y12A_CH8F_QUESTIONS,
+    label: 'Y12A Ch8 · 8F Chapter review',
   },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1f', topicCode: '1F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH1F_QUESTIONS, label: 'Y10 Ch1 · 1F Revision' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
