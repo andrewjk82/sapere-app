@@ -65,9 +65,62 @@ body {
   background: #000;
   color: #fff;
   pointer-events: none;
+  overflow: hidden;
+}
+
+/* Soft breathing radial glow behind the greeting text */
+.opening-intro__glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120vmax;
+  height: 120vmax;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(212,168,83,0.16) 0%, rgba(212,168,83,0.05) 28%, transparent 60%);
+  pointer-events: none;
+  animation: intro-glow-breathe 6s ease-in-out infinite;
+}
+
+@keyframes intro-glow-breathe {
+  0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(0.92); }
+  50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.06); }
+}
+
+/* Drifting gold particles */
+.opening-intro__particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.opening-intro__particle {
+  position: absolute;
+  bottom: -10px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(212,168,83,0.9);
+  box-shadow: 0 0 6px 1px rgba(212,168,83,0.55);
+  opacity: 0;
+  animation: intro-particle-rise linear infinite;
+}
+
+@keyframes intro-particle-rise {
+  0%   { transform: translateY(0) scale(0.6); opacity: 0; }
+  12%  { opacity: 0.9; }
+  85%  { opacity: 0.7; }
+  100% { transform: translateY(-104vh) scale(1.1); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opening-intro__glow,
+  .opening-intro__particle { animation: none; }
+  .opening-intro__particle { opacity: 0; }
 }
 
 .opening-intro__text {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: 14px;
   align-items: center;

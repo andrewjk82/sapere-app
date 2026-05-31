@@ -153,10 +153,59 @@ function useTypewriter(text, { startDelay = 0, charInterval = 38 } = {}) {
   return { displayed, done };
 }
 
+// Soft, synthesized "sunrise" chime — a gentle ascending arpeggio with a
+// smooth bell-like envelope. No audio asset needed (Web Audio API). Autoplay
+// rejection is caught silently. Respects the sapere:intro-muted preference.
+const playIntroChime = () => {
+  try {
+    if (localStorage.getItem('sapere:intro-muted') === '1') return;
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    const ctx = new Ctx();
+    const now = ctx.currentTime;
+    const master = ctx.createGain();
+    master.gain.value = 0.0001;
+    master.connect(ctx.destination);
+    // Gentle swell in, slow release out.
+    master.gain.setValueAtTime(0.0001, now);
+    master.gain.exponentialRampToValueAtTime(0.16, now + 0.25);
+    master.gain.exponentialRampToValueAtTime(0.0001, now + 3.2);
+    // Warm major arpeggio: C5, E5, G5, C6
+    const notes = [523.25, 659.25, 783.99, 1046.5];
+    notes.forEach((freq, i) => {
+      const t = now + i * 0.18;
+      const osc = ctx.createOscillator();
+      const g = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.9, t + 0.04);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 1.6);
+      osc.connect(g);
+      g.connect(master);
+      osc.start(t);
+      osc.stop(t + 1.7);
+    });
+    // Close the context after the sound finishes to free resources.
+    setTimeout(() => { ctx.close?.(); }, 3600);
+  } catch (_) { /* autoplay blocked or unsupported — silent */ }
+};
+
 const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = '', course = '', onDone }) => {
   const greetingText = `${greeting},`;
   // Name starts after: initial delay + all greeting chars have appeared
   const nameDelay = 0.2 + greetingText.length * 0.08;
+
+  // Play the chime once when the intro mounts.
+  useEffect(() => { playIntroChime(); }, []);
+
+  // Pre-computed particle field — random positions/durations, stable per mount.
+  const particles = useMemo(() => Array.from({ length: 18 }, () => ({
+    left: Math.random() * 100,
+    size: 2 + Math.random() * 3,
+    duration: 6 + Math.random() * 6,
+    delay: Math.random() * 5,
+  })), []);
 
   // Pick one random concept once on mount
   const concept = useMemo(() => getRandomConcept(yearLevel, course), [yearLevel, course]);
@@ -193,6 +242,24 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = 
         if (definition?.opacity === 0) onDone?.();
       }}
     >
+      {/* Ambient background: breathing glow + drifting gold particles */}
+      <div className="opening-intro__glow" aria-hidden="true" />
+      <div className="opening-intro__particles" aria-hidden="true">
+        {particles.map((p, i) => (
+          <span
+            key={i}
+            className="opening-intro__particle"
+            style={{
+              left: `${p.left}%`,
+              width: `${p.size}px`,
+              height: `${p.size}px`,
+              animationDuration: `${p.duration}s`,
+              animationDelay: `${p.delay}s`,
+            }}
+          />
+        ))}
+      </div>
+
       <div
         className="opening-intro__text opening-intro__text--single"
         aria-label={`${greeting}, ${name}`}
