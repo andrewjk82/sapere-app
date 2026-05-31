@@ -4,6 +4,7 @@ import { Y12A_CH6C_QUESTIONS } from '../constants/seedYear12aCh6CQuestions';
 import { Y12A_CH6D_QUESTIONS } from '../constants/seedYear12aCh6DQuestions';
 import { Y12A_CH6E_QUESTIONS } from '../constants/seedYear12aCh6EQuestions';
 import { Y12A_CH6F_QUESTIONS } from '../constants/seedYear12aCh6FQuestions';
+import { Y12_CH8_QUESTIONS } from '../constants/seedYear12Ch8Questions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -205,6 +206,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH6F_QUESTIONS,
     label: 'Y12A Ch6 · 6F Chapter review',
+  },
+  {
+    chapterId: 'y12a-8',
+    chapterTitle: 'Chapter 8: Series and finance',
+    topicId: 'y12a-8A',
+    topicCode: '8A',
+    topicTitle: 'Applications of APs and GPs',
+    year: 'Year 12',
+    seed: Y12_CH8_QUESTIONS,
+    label: 'Y12A Ch8 · 8A Applications of APs and GPs',
   },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1f', topicCode: '1F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH1F_QUESTIONS, label: 'Y10 Ch1 · 1F Revision' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
