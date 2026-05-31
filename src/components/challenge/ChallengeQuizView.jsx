@@ -689,9 +689,9 @@ const ChallengeQuizView = ({
               {fracMode && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '12px', background: '#f5f3ff', borderRadius: '16px', border: '2px solid #a78bfa' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                    {selectedOption.replace(fracNum, '') && (
+                    {String(selectedOption ?? '').replace(fracNum, '') && (
                       <span style={{ fontSize: '1.4rem', fontFamily: '"KaTeX_Main","Times New Roman",serif', fontWeight: 700 }}>
-                        {selectedOption.replace(fracNum, '')}
+                        {String(selectedOption ?? '').replace(fracNum, '')}
                       </span>
                     )}
                     {/* whole number for mixed numbers (e.g. 2½) */}
