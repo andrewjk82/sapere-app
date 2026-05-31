@@ -11,6 +11,7 @@ import { Y12A_CH8D_QUESTIONS } from '../constants/seedYear12aCh8DQuestions';
 import { Y12A_CH8E_QUESTIONS } from '../constants/seedYear12aCh8EQuestions';
 import { Y12A_CH8F_QUESTIONS } from '../constants/seedYear12aCh8FQuestions';
 import { Y12A_CH3_QUESTIONS } from '../constants/seedYear12aCh3Questions';
+import { Y12A_CH3B_QUESTIONS } from '../constants/seedYear12aCh3BQuestions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -162,6 +163,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH3_QUESTIONS,
     label: 'Y12A Ch3 · 3A Increasing, decreasing and stationary',
+  },
+  {
+    chapterId: 'y12a-3',
+    chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
+    topicId: 'y12a-3B',
+    topicCode: '3B',
+    topicTitle: 'Stationary points and turning points',
+    year: 'Year 12',
+    seed: Y12A_CH3B_QUESTIONS,
+    label: 'Y12A Ch3 · 3B Stationary points and turning points',
   },
   {
     chapterId: 'y12a-6',
