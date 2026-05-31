@@ -80,7 +80,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         const all = snap.docs
           .map((d) => ({ id: d.id, ...d.data() }))
           .filter((q) => q.isActive !== false && q.topicId === topic.id);
-        all.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+        // Shuffle so each practice session presents questions in a fresh
+        // random order (Fisher–Yates).
+        for (let i = all.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [all[i], all[j]] = [all[j], all[i]];
+        }
         if (!cancelled) setQuestions(all);
       } catch (e) {
         console.error('Failed to load topic questions:', e);
