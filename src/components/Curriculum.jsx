@@ -14,6 +14,7 @@ import { Y12A_CH3_QUESTIONS } from '../constants/seedYear12aCh3Questions';
 import { Y12A_CH3B_QUESTIONS } from '../constants/seedYear12aCh3BQuestions';
 import { Y12A_CH3C_QUESTIONS } from '../constants/seedYear12aCh3CQuestions';
 import { Y12A_CH3D_QUESTIONS } from '../constants/seedYear12aCh3DQuestions';
+import { Y12A_CH3E_QUESTIONS } from '../constants/seedYear12aCh3EQuestions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -195,6 +196,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH3D_QUESTIONS,
     label: 'Y12A Ch3 · 3D Concavity and points of inflection',
+  },
+  {
+    chapterId: 'y12a-3',
+    chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
+    topicId: 'y12a-3E',
+    topicCode: '3E',
+    topicTitle: 'Systematic curve sketching with the derivative',
+    year: 'Year 12',
+    seed: Y12A_CH3E_QUESTIONS,
+    label: 'Y12A Ch3 · 3E Systematic curve sketching with the derivative',
   },
   {
     chapterId: 'y12a-6',
