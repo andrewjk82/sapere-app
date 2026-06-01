@@ -95,7 +95,7 @@ const toDisplayText = (value, fallback = '') => {
   //   - the trailing (?![\d.,]*[a-zA-Z^]) ensures "$3x^2$" / "$5y$" stay MATH:
   //     a number followed by a letter/caret is algebra, not money.
   const CURRENCY_PLACEHOLDER = '\uE000';
-  str = str.replace(/(?<!\$)\$(?!\$)(\s*\d[\d.,]*)(?![\w^])/g, CURRENCY_PLACEHOLDER + '$1');
+  str = str.replace(/(?<!\$)\$(?!\$)(\s*\d[\d.,]*)(?=\s+[a-zA-Z]|\s*$|\s*[.,)])/g, CURRENCY_PLACEHOLDER + '$1');
 
   // 4. Tokenize to separate Math Blocks from Plain Text
   // This prevents wrapping commands that are already inside $...$ or \(...\)
