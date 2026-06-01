@@ -120,6 +120,17 @@ const toDisplayText = (value, fallback = '') => {
         }
         return match;
       });
+      // Convert caret superscripts that leaked into plain text, e.g.
+      // "x^3", "x^{3}", "(3x+4)^2", "a^-2" → real superscript math.
+      // Base = a paren group or a single letter/digit; exponent = a braced
+      // group, signed integer, or single letter.
+      text = text.replace(
+        /(\([^()]*\)|[a-zA-Z0-9])\s*\^\s*(\{[^{}]*\}|-?\d+|[a-zA-Z])/g,
+        (m, base, exp) => {
+          const e = exp.replace(/^\{|\}$/g, '');
+          return `$${base}^{${e}}$`;
+        },
+      );
       // Render line breaks: real newlines AND the literal "\n" sequence that
       // leaks into imported question/solution text become <br>. Only applied
       // outside math blocks so KaTeX content is never corrupted.
