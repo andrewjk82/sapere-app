@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2,
@@ -6,8 +6,18 @@ import {
 import { db } from '../firebase/config';
 import { collection, query, where, getDocs, doc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import MathView from './MathView';
-import { MATH_SYMBOLS } from '../utils/challengeUtils';
+import MathInput from './MathInput';
 import QuestionBankModal from './QuestionBankModal';
+
+// Quick-insert buttons matching the student answer view.
+const QB_QUICK_INSERTS = [
+  { label: '√', latex: '\\sqrt{#?}', title: 'Square root' },
+  { label: 'ⁿ√', latex: '\\sqrt[#?]{#?}', title: 'nth root' },
+  { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
+  { label: 'xⁿ', latex: '^{#?}', title: 'Exponent' },
+  { label: 'π', latex: '\\pi', title: 'Pi' },
+  { label: '( )', latex: '(#?)', title: 'Brackets' },
+];
 import { useToast } from '../context/ToastContext';
 
 /**
@@ -28,6 +38,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [editingQuestion, setEditingQuestion] = useState(null);
+  const [previewAnswer, setPreviewAnswer] = useState(''); // teacher can test-type like a student
+  const qbMathRef = useRef(null);
   const [creatingNew, setCreatingNew] = useState(false);
 
   const reload = useCallback(async () => {
@@ -64,8 +76,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const isMC = q && !isShort && !isFillBlank && !q.subQuestions?.length && (q.options || []).length > 0;
   const isTeacherReview = q?.type === 'teacher_review' || q?.requiresManualGrading === true;
 
-  const goPrev = () => { setCurrentIdx((i) => Math.max(0, i - 1)); setShowHint(false); };
-  const goNext = () => { setCurrentIdx((i) => Math.min(total - 1, i + 1)); setShowHint(false); };
+  const goPrev = () => { setCurrentIdx((i) => Math.max(0, i - 1)); setShowHint(false); setPreviewAnswer(''); };
+  const goNext = () => { setCurrentIdx((i) => Math.min(total - 1, i + 1)); setShowHint(false); setPreviewAnswer(''); };
 
   const handleDelete = async () => {
     if (!q) return;
@@ -230,15 +242,27 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               </div>
             ) : isShort ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {/* Quick-insert buttons + MathLive editor — identical to the student view */}
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                  {MATH_SYMBOLS.map((symbol) => (
-                    <div key={symbol} style={{ width: '40px', height: '40px', borderRadius: '12px', border: '1px solid #e2e8f0', background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff', color: '#4f46e5', fontSize: symbol === '√' ? '1.2rem' : '1rem', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', fontFamily: '"KaTeX_Main", "Times New Roman", serif', lineHeight: 1 }}>
-                      {symbol}
-                    </div>
+                  {QB_QUICK_INSERTS.map((b) => (
+                    <button
+                      key={b.label}
+                      type="button"
+                      onClick={() => qbMathRef.current?.insert(b.latex)}
+                      title={b.title}
+                      style={{ minWidth: '46px', height: '42px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.05rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+                    >
+                      {b.label}
+                    </button>
                   ))}
-                  <div style={{ width: '56px', height: '40px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontSize: '0.75rem', fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', textTransform: 'uppercase' }}>Del</div>
                 </div>
-                <input type="text" placeholder="Type your answer..." disabled style={{ fontSize: '1.4rem', padding: '24px', borderRadius: '24px', textAlign: 'center', fontWeight: 700, fontFamily: '"KaTeX_Main", "Times New Roman", serif', letterSpacing: '0.05em', border: '2px solid #e2e8f0', background: '#fff' }} />
+                <MathInput
+                  ref={qbMathRef}
+                  value={previewAnswer}
+                  onChange={setPreviewAnswer}
+                  placeholder="Type your answer…  (same editor students use)"
+                  style={{ fontSize: '1.4rem', padding: '22px', borderRadius: '24px' }}
+                />
                 {q.answer && (
                   <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
                     Answer: <MathView content={String(q.answer)} style={{ display: 'inline', fontWeight: 800 }} />
@@ -310,6 +334,38 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                 )}
               </div>
             ) : null}
+
+            {/* Step-by-step solution */}
+            {Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0 && (
+              <div style={{ padding: '20px 24px', borderRadius: '20px', background: '#fff', border: '1px solid #e0e7ff' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                  <div style={{ width: '30px', height: '30px', borderRadius: '10px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff' }}>
+                    <Lightbulb size={15} />
+                  </div>
+                  <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Step-by-step solution</div>
+                  <span style={{ marginLeft: 'auto', fontSize: '0.72rem', fontWeight: 800, color: '#94a3b8' }}>{q.solutionSteps.length} steps</span>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {q.solutionSteps.map((step, si) => (
+                    <div key={si} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                      <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.75rem', flexShrink: 0, marginTop: '2px' }}>
+                        {si + 1}
+                      </div>
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        {step.explanation && (
+                          <MathView content={step.explanation} style={{ fontSize: '0.9rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6, marginBottom: step.workingOut ? '6px' : 0 }} />
+                        )}
+                        {step.workingOut && (
+                          <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f8fafc', border: '1px solid #eef2f7' }}>
+                            <MathView content={step.workingOut} style={{ fontSize: '0.95rem', color: '#1e1b4b' }} />
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Solution preview (if any) */}
             {q?.solution && (
