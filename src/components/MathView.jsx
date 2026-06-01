@@ -68,6 +68,24 @@ const toDisplayText = (value, fallback = '') => {
     (m) => `$$${m}$$`,
   );
 
+  // 3c. Pure-LaTeX expression with NO delimiters (typical of solution
+  // "workingOut" fields). Piecemeal command-wrapping cannot handle
+  // \left…\right, \!, or nested \frac, so wrap the WHOLE thing in \(…\) and
+  // let KaTeX render it as one unit. Guard so we never wrap real prose:
+  //   - no existing math delimiters or environments
+  //   - contains a LaTeX command / superscript / spacing macro
+  //   - single line, and no 3+ letter "words" once commands/\text are stripped
+  if (!/[$]|\\\(|\\\[|\\begin/.test(str) && /\\[a-zA-Z]|\^|_|\\!/.test(str) && !/[\r\n]/.test(str)) {
+    const probe = str
+      .replace(/\\(text|operatorname|mathrm|mathbf|mathbb|mathcal)\s*\{[^{}]*\}/g, '')
+      .replace(/\\[a-zA-Z]+/g, '')
+      .replace(/\\[!,;:>\s]/g, '');
+    const proseWords = (probe.match(/[a-zA-Z]{3,}/g) || []).length;
+    if (proseWords === 0) {
+      return `\\(${str}\\)`;
+    }
+  }
+
   // 3b. Currency protection: a lone "$" immediately before a plain number
   // (e.g. "$37.00", "$ 195") is a dollar sign, NOT a LaTeX math delimiter.
   // Left as-is it would open a spurious math block and swallow the text + $.
@@ -94,7 +112,7 @@ const toDisplayText = (value, fallback = '') => {
       // NOTE: list longer prefixes before shorter ones (geq before ge, leq
       // before le, neq before ne, infty before in, qquad before quad) so the
       // alternation never leaves a dangling tail like the "q" in "\geq".
-      const nakedCommandRegex = /\\(sqrt|frac|mathbb|mathrm|operatorname|text|varphi|phi|pi|theta|approx|times|div|cdot|pm|geq|leq|neq|ge|le|ne|infty|in|notin|quad|qquad|forall|exists|Rightarrow|rightarrow|Leftarrow|leftarrow|implies|times|cup|cap|subseteq|to|circ|deg)(\{[^{}]*\})*/g;
+      const nakedCommandRegex = /\\(sqrt|frac|mathbb|mathrm|operatorname|text|varphi|phi|pi|theta|approx|times|div|cdot|pm|geq|leq|neq|ge|le|ne|infty|in|notin|quad|qquad|forall|exists|Rightarrow|rightarrow|Leftarrow|leftarrow|implies|times|cup|cap|subseteq|to|circ|deg)(?![a-zA-Z])(\{[^{}]*\})*/g;
       text = text.replace(nakedCommandRegex, (match) => {
         return `$${match}$`;
       });
