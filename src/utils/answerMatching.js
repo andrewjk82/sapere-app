@@ -26,6 +26,12 @@ export const robustNormalize = (str) => {
     // Strip units before other processing
     .replace(/\\text\s*\{[^{}]*\}/g, '')
     .replace(/\\%/g, '%')
+    // Temperature / degree units: make "12.5", "12.5°c", "12.5^\circ\text{c}",
+    // "12.5 celsius" all compare equal (and likewise for angles "60°" == "60").
+    .replace(/\\circ/g, '°')
+    .replace(/\^\s*°/g, '°')
+    .replace(/°\s*[cf]?/g, '')
+    .replace(/\b(celsius|centigrade|fahrenheit)\b/g, '')
     // Normalise square roots so "√26", "sqrt26", "\sqrt{26}", "\sqrt26" all
     // compare equal: collapse every form to "sqrt".
     .replace(/√/g, 'sqrt')
