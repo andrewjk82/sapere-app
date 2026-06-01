@@ -2974,7 +2974,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-3',
         title: 'Chapter 3: Curve-sketching using the derivative',
-        modules: 8,
+        modules: 9,
         topics: [
           { id: 'y12a-3A', code: '3A', title: 'Increasing, decreasing and stationary at a point' },
           { id: 'y12a-3B', code: '3B', title: 'Stationary points and turning points' },
@@ -2983,7 +2983,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12a-3E', code: '3E', title: 'Systematic curve sketching with the derivative' },
           { id: 'y12a-3F', code: '3F', title: 'Global maximum and minimum' },
           { id: 'y12a-3G', code: '3G', title: 'Applications of maximisation and minimisation' },
-          { id: 'y12a-3H', code: '3H', title: 'Primitive functions' }
+          { id: 'y12a-3H', code: '3H', title: 'Primitive functions' },
+          { id: 'y12a-3I', code: '3I', title: 'Chapter review exercise' }
         ]
       },
       {
