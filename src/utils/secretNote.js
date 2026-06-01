@@ -231,6 +231,26 @@ export function removeQuestion(kind, uid, questionId) {
   return items;
 }
 
+// Teacher-driven cleanup: remove every locally-stored note whose question id
+// is in the server blocklist (a teacher flagged it as broken). Sweeps all
+// notebooks. Returns the number of notes removed. Cheap to call on every load.
+const ALL_NOTE_KINDS = ['daily', 'calc', 'exam_prep'];
+export function pruneBlocked(uid, blockedIds) {
+  if (!Array.isArray(blockedIds) || blockedIds.length === 0) return 0;
+  const blocked = new Set(blockedIds.map((x) => String(x)));
+  let removed = 0;
+  for (const kind of ALL_NOTE_KINDS) {
+    const items = read(kind, uid);
+    const next = items.filter((it) => {
+      const id = String(it.question?.id ?? '');
+      if (id && blocked.has(id)) { removed += 1; return false; }
+      return true;
+    });
+    if (next.length !== items.length) write(kind, uid, next);
+  }
+  return removed;
+}
+
 // Compact summary for piggy-backing onto the end-of-test Firestore save.
 export function getSyncSnapshot(uid) {
   return {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, runTransaction, where, increment, serverTimestamp, limit } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, runTransaction, where, increment, serverTimestamp, limit, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
 import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench } from 'lucide-react';
@@ -143,6 +143,12 @@ const ReportsAdmin = () => {
       // Credit restore is best-effort — failures don't block the delete.
       await Promise.all([
         updateDoc(doc(db, 'questions', question.id), { isActive: false }),
+        // Add to the Secret-Note blocklist so students' locally-saved copies of
+        // this broken question are purged on their next app load.
+        setDoc(doc(db, 'system_config', 'secretNoteBlocklist'), {
+          ids: arrayUnion(String(question.id)),
+          updatedAt: serverTimestamp(),
+        }, { merge: true }),
         ...linkedReports.map(r => restoreCreditForReport(r).catch(() =>
           updateDoc(doc(db, 'reports', r.id), { status: 'resolved', resolvedAt: serverTimestamp() })
         )),

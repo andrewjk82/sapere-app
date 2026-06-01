@@ -74,6 +74,7 @@ import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
 import { getChallengeBootCacheKey } from './utils/challengeUtils';
+import { pruneBlocked } from './utils/secretNote';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -380,6 +381,20 @@ function App() {
     };
   }, [isAdmin, user, showToast]);
   
+  // Secret-Note blocklist: when a teacher flags a broken question, purge any
+  // locally-saved copy from this student's Secret Note(s). Live subscription so
+  // it clears immediately even while the student is using the app.
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return undefined;
+    const ref = doc(db, 'system_config', 'secretNoteBlocklist');
+    return onSnapshot(ref, (snap) => {
+      const ids = snap.exists() ? snap.data().ids : null;
+      if (Array.isArray(ids) && ids.length) {
+        try { pruneBlocked(user.uid, ids); } catch (_) { /* non-fatal */ }
+      }
+    }, () => { /* ignore permission/transient errors */ });
+  }, [user?.uid, isAdmin]);
+
   // Real-time Version Check
   useEffect(() => {
     const versionRef = doc(db, 'system_config', 'app');
