@@ -15,6 +15,7 @@ import { Y12A_CH3B_QUESTIONS } from '../constants/seedYear12aCh3BQuestions';
 import { Y12A_CH3C_QUESTIONS } from '../constants/seedYear12aCh3CQuestions';
 import { Y12A_CH3D_QUESTIONS } from '../constants/seedYear12aCh3DQuestions';
 import { Y12A_CH3E_QUESTIONS } from '../constants/seedYear12aCh3EQuestions';
+import { Y12A_CH3F_QUESTIONS } from '../constants/seedYear12aCh3FQuestions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -206,6 +207,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH3E_QUESTIONS,
     label: 'Y12A Ch3 · 3E Systematic curve sketching with the derivative',
+  },
+  {
+    chapterId: 'y12a-3',
+    chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
+    topicId: 'y12a-3F',
+    topicCode: '3F',
+    topicTitle: 'Global maximum and minimum',
+    year: 'Year 12',
+    seed: Y12A_CH3F_QUESTIONS,
+    label: 'Y12A Ch3 · 3F Global maximum and minimum',
   },
   {
     chapterId: 'y12a-6',
