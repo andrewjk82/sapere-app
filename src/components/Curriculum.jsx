@@ -17,6 +17,7 @@ import { Y12A_CH3D_QUESTIONS } from '../constants/seedYear12aCh3DQuestions';
 import { Y12A_CH3E_QUESTIONS } from '../constants/seedYear12aCh3EQuestions';
 import { Y12A_CH3F_QUESTIONS } from '../constants/seedYear12aCh3FQuestions';
 import { Y12A_CH3G_QUESTIONS } from '../constants/seedYear12aCh3GQuestions';
+import { Y12A_CH3H_QUESTIONS } from '../constants/seedYear12aCh3HQuestions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -228,6 +229,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH3G_QUESTIONS,
     label: 'Y12A Ch3 · 3G Applications of maximisation and minimisation',
+  },
+  {
+    chapterId: 'y12a-3',
+    chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
+    topicId: 'y12a-3H',
+    topicCode: '3H',
+    topicTitle: 'Primitive functions',
+    year: 'Year 12',
+    seed: Y12A_CH3H_QUESTIONS,
+    label: 'Y12A Ch3 · 3H Primitive functions',
   },
   {
     chapterId: 'y12a-6',
