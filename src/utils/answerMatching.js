@@ -36,6 +36,8 @@ export const robustNormalize = (str) => {
     // compare equal: collapse every form to "sqrt".
     .replace(/√/g, 'sqrt')
     .replace(/\\sqrt/g, 'sqrt')
+    // Normalise ratio colons so "1\Colon4" and "1\colon4" match "1:4"
+    .replace(/\\colon/g, ':')
     // Strip any leftover "unit"/"units" word, even when concatenated to a
     // number (e.g. "26units") which word-boundary stripping above misses.
     .replace(/units?/gi, '')

@@ -37,6 +37,8 @@ const toDisplayText = (value, fallback = '') => {
   str = str.replace(/±/g, '\\pm');
   str = str.replace(/×/g, '\\times');
   str = str.replace(/÷/g, '\\div');
+  // Fix unrecognized \Colon macro from MathLive/DB
+  str = str.replace(/\\Colon\b/g, '\\colon');
   // Fix a bad-data artifact: SVG diagram labels sometimes contain "60^°"
   // (a stray caret before the degree sign). It is never valid, so drop it.
   str = str.replace(/\^\s*°/g, '°');
