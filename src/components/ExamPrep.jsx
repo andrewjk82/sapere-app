@@ -9,7 +9,18 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
+import MathInput from './MathInput';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
+
+// Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
+const EXAM_QUICK_INSERTS = [
+  { label: '√', latex: '\\sqrt{#?}', title: 'Square root' },
+  { label: 'ⁿ√', latex: '\\sqrt[#?]{#?}', title: 'nth root' },
+  { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
+  { label: 'xⁿ', latex: '^{#?}', title: 'Exponent' },
+  { label: 'π', latex: '\\pi', title: 'Pi' },
+  { label: '( )', latex: '(#?)', title: 'Brackets' },
+];
 import { gradeQuestion, answersMatch } from '../utils/answerMatching';
 import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
@@ -139,6 +150,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const [sketchSnapshots, setSketchSnapshots] = useState({}); // { [questionId]: dataURL }
   const canvasRef = useRef(null);
   const examInputRef = useRef(null);
+  const examMathRef = useRef(null);
   const examFracDenRef = useRef(null);
   const [zoomImage, setZoomImage] = useState(null);
   const [examFracMode, setExamFracMode] = useState(false);
@@ -520,48 +532,27 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </div>
   ) : (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {MATH_SYMBOLS.map((s) => (
-          <button key={s} onClick={() => { if (showFeedback) return; if (s === '/') { setExamFracWhole(''); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); } else { setDraft((draft || '') + s); } }} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
-        ))}
-        <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
-      </div>
-      {examFracMode && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-            {/* whole number for mixed numbers (e.g. 2½) */}
-            <input value={examFracWhole} onChange={(e) => setExamFracWhole(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracNumRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracWhole.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #cbd5e1', outline: 'none', fontSize: '1.5rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="0" />
-            <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-              <input ref={examFracNumRef} value={examFracNum} onChange={(e) => setExamFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracDenRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
-              <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
-              <input ref={examFracDenRef} value={examFracDen} onChange={(e) => setExamFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') commitExamFrac(examFracWhole, examFracNum, examFracDen); if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
-            </div>
-            <button onClick={() => commitExamFrac(examFracWhole, examFracNum, examFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
-            <button onClick={() => { setExamFracMode(false); examInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
-          </div>
-          <div style={{ textAlign: 'center', fontSize: '0.7rem', color: '#7c3aed', fontWeight: 700 }}>
-            Left box empty = normal fraction · fill it for a mixed number (e.g. 2½)
-          </div>
+      {/* Quick-insert buttons for the MathLive editor */}
+      {!showFeedback && (
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          {EXAM_QUICK_INSERTS.map((b) => (
+            <button key={b.label} type="button" onClick={() => examMathRef.current?.insert(b.latex)} title={b.title}
+              style={{ minWidth: '46px', height: '42px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.05rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}>
+              {b.label}
+            </button>
+          ))}
         </div>
       )}
-      <input
-        ref={examInputRef}
-        type="text" value={draft || ''} readOnly={showFeedback || examFracMode}
-        onChange={(e) => setDraft(e.target.value)}
-        onKeyDown={(e) => {
-          if (e.key === '/' && !showFeedback) { e.preventDefault(); setExamFracWhole(''); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); }
-          if (e.key === 'Enter' && draft && !showFeedback) submit();
-        }}
-        placeholder={examFracMode ? '' : 'Type your answer… (press / for fraction)'}
-        style={{ padding: '20px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}`, background: '#fff', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif', opacity: examFracMode ? 0.4 : 1 }}
+      <MathInput
+        ref={examMathRef}
+        value={typeof draft === 'string' ? draft : ''}
+        onChange={(latex) => !showFeedback && setDraft(latex)}
+        onEnter={() => { if (draft && !showFeedback) submit(); }}
+        readOnly={showFeedback}
+        placeholder="Type your answer…  (use the buttons for √ and fractions)"
+        autoFocus
+        style={{ fontSize: '1.2rem', padding: '18px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}` }}
       />
-      {/* Live fraction preview — input can't render stacked fractions */}
-      {!examFracMode && String(draft || '').includes('/') && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '8px 14px', background: '#faf5ff', borderRadius: '12px', border: '1px solid #ede9fe' }}>
-          <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Preview</span>
-          <MathView content={String(draft)} style={{ fontSize: '1.4rem', color: '#1e1b4b' }} />
-        </div>
-      )}
       {showFeedback && !lastRes?.correct && (
         <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
           Correct: <MathView content={String(q.answer)} style={{ display: 'inline' }} />

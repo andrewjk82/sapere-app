@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
 import MathView from '../MathView';
+import MathInput from '../MathInput';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { 
   MATH_SYMBOLS, 
@@ -12,6 +13,16 @@ import {
   getOptionImage
 } from '../../utils/challengeUtils';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
+
+// Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
+const CHALLENGE_QUICK_INSERTS = [
+  { label: '√', latex: '\\sqrt{#?}', title: 'Square root' },
+  { label: 'ⁿ√', latex: '\\sqrt[#?]{#?}', title: 'nth root' },
+  { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
+  { label: 'xⁿ', latex: '^{#?}', title: 'Exponent' },
+  { label: 'π', latex: '\\pi', title: 'Pi' },
+  { label: '( )', latex: '(#?)', title: 'Brackets' },
+];
 
 // ── Hint parser (mirrors SecretNoteView) ──────────────────────────────────
 const parseHintSteps = (hint) => {
@@ -201,6 +212,7 @@ const ChallengeQuizView = ({
   const fracDenRef = useRef(null);
   const fracNumRef = useRef(null);
   const fracWholeRef = useRef(null);
+  const mathInputRef = useRef(null);
   useEffect(() => { setFracMode(false); setFracWhole(''); setFracNum(''); setFracDen(''); }, [currentIdx]);
 
   const enterFracMode = (currentVal) => {
@@ -619,162 +631,32 @@ const ChallengeQuizView = ({
             );
           })() : currentQuestion?.type === 'short_answer' ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {/* Math Symbol Toolbar */}
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '8px', justifyContent: 'center' }}>
-                {MATH_SYMBOLS.map(symbol => (
-                  <button
-                    key={symbol}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      if (isFeedback) return;
-                      if (symbol === '/') { enterFracMode(selectedOption || ''); return; }
-                      const currentVal = selectedOption || '';
-                      setSelectedOption(currentVal + symbol);
-                      answerInputRef.current?.focus();
-                    }}
-                    aria-disabled={isFeedback}
-                    style={{
-                      width: '44px',
-                      height: '44px',
-                      borderRadius: '12px',
-                      border: '1px solid #e2e8f0',
-                      background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff',
-                      color: '#4f46e5',
-                      fontSize: symbol === '√' ? '1.3rem' : '1.1rem',
-                      fontWeight: 800,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      cursor: 'pointer',
-                      boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
-                      transition: 'all 0.2s',
-                      fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-                      lineHeight: 1,
-                      padding: 0,
-                      paddingBottom: symbol === '√' ? '2px' : '0'
-                    }}
-                  >
-                    {symbol}
-                  </button>
-                ))}
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (isFeedback) return;
-                    const currentVal = selectedOption || '';
-                    setSelectedOption(currentVal.slice(0, -1));
-                    answerInputRef.current?.focus();
-                  }}
-                  aria-disabled={isFeedback}
-                  style={{
-                    width: '64px',
-                    height: '44px',
-                    borderRadius: '12px',
-                    border: '1px solid #fee2e2',
-                    background: '#fff1f2',
-                    color: '#e11d48',
-                    fontSize: '0.8rem',
-                    fontWeight: 900,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: 'pointer',
-                    boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
-                    transition: 'all 0.2s',
-                    textTransform: 'uppercase'
-                  }}
-                >
-                  Del
-                </button>
-              </div>
-
-              {/* Live fraction display — whole field enables mixed numbers */}
-              {fracMode && (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '12px', background: '#f5f3ff', borderRadius: '16px', border: '2px solid #a78bfa' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                    {String(selectedOption ?? '').replace(fracNum, '') && (
-                      <span style={{ fontSize: '1.4rem', fontFamily: '"KaTeX_Main","Times New Roman",serif', fontWeight: 700 }}>
-                        {String(selectedOption ?? '').replace(fracNum, '')}
-                      </span>
-                    )}
-                    {/* whole number for mixed numbers (e.g. 2½) */}
-                    <input
-                      ref={fracWholeRef}
-                      value={fracWhole}
-                      onChange={(e) => setFracWhole(e.target.value)}
-                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); fracNumRef.current?.focus(); } if (e.key === 'Escape') { setFracMode(false); answerInputRef.current?.focus(); } }}
-                      style={{ width: Math.max(40, fracWhole.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #cbd5e1', outline: 'none', fontSize: '1.7rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
-                      placeholder="0"
-                    />
-                    <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                      <input
-                        ref={fracNumRef}
-                        value={fracNum}
-                        onChange={(e) => setFracNum(e.target.value)}
-                        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); fracDenRef.current?.focus(); } if (e.key === 'Escape') { setFracMode(false); answerInputRef.current?.focus(); } }}
-                        style={{ width: Math.max(40, fracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.4rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
-                        placeholder="a"
-                      />
-                      <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
-                      <input
-                        ref={fracDenRef}
-                        value={fracDen}
-                        onChange={(e) => setFracDen(e.target.value)}
-                        onKeyDown={(e) => { if (e.key === 'Enter') { commitFraction(fracWhole, fracNum, fracDen); } if (e.key === 'Escape') { setFracMode(false); answerInputRef.current?.focus(); } }}
-                        style={{ width: Math.max(40, fracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.4rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
-                        placeholder="b"
-                        autoFocus
-                      />
-                    </div>
-                    <button onClick={() => commitFraction(fracWhole, fracNum, fracDen)} style={{ padding: '6px 14px', borderRadius: '10px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>OK</button>
-                    <button onClick={() => { setFracMode(false); answerInputRef.current?.focus(); }} style={{ padding: '6px 10px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>✕</button>
-                  </div>
-                  <div style={{ textAlign: 'center', fontSize: '0.72rem', color: '#7c3aed', fontWeight: 700 }}>
-                    Leave the left box empty for a normal fraction · fill it for a mixed number (e.g. 2½)
-                  </div>
+              {/* Quick-insert buttons — insert proper LaTeX into the math field */}
+              {!isFeedback && (
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                  {CHALLENGE_QUICK_INSERTS.map((b) => (
+                    <button
+                      key={b.label}
+                      type="button"
+                      onClick={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
+                      title={b.title}
+                      style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+                    >
+                      {b.label}
+                    </button>
+                  ))}
                 </div>
               )}
-              <input
-                ref={answerInputRef}
-                type="text"
-                inputMode="text"
-                autoComplete="off"
-                autoCorrect="off"
-                autoCapitalize="off"
-                spellCheck={false}
-                readOnly={isFeedback || fracMode}
-                value={step === 'feedback' ? userAnswers[currentIdx] || '' : selectedOption || ''}
-                onChange={(e) => { if (step === 'feedback') return; setSelectedOption(e.target.value); }}
-                onKeyDown={(e) => {
-                  if (e.key === '/') { e.preventDefault(); enterFracMode(selectedOption || ''); return; }
-                  if (e.key === 'Enter' && selectedOption) handleAnswer(selectedOption);
-                }}
-                placeholder={fracMode ? '' : 'Type your answer... (press / for fraction)'}
-                className="app-input"
-                style={{
-                  fontSize: '1.4rem',
-                  padding: '24px',
-                  borderRadius: '24px',
-                  textAlign: 'center',
-                  fontWeight: 700,
-                  fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-                  letterSpacing: '0.05em',
-                  opacity: fracMode ? 0.4 : 1,
-                }}
+              <MathInput
+                ref={mathInputRef}
+                value={step === 'feedback' ? (userAnswers[currentIdx] || '') : (selectedOption || '')}
+                onChange={(latex) => { if (step !== 'feedback') setSelectedOption(latex); }}
+                onEnter={() => { if (selectedOption) handleAnswer(selectedOption); }}
+                readOnly={isFeedback}
+                placeholder="Type your answer…  (use the buttons for √ and fractions)"
                 autoFocus
+                style={{ fontSize: '1.4rem', padding: '22px', borderRadius: '24px' }}
               />
-              {/* Live fraction preview — the text input can't render stacked
-                  fractions, so show how the answer actually looks. */}
-              {!fracMode && (() => {
-                const previewVal = step === 'feedback' ? (userAnswers[currentIdx] || '') : (selectedOption || '');
-                if (!String(previewVal).includes('/')) return null;
-                return (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 16px', background: '#faf5ff', borderRadius: '14px', border: '1px solid #ede9fe' }}>
-                    <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Preview</span>
-                    <MathView content={String(previewVal)} style={{ fontSize: '1.5rem', color: '#1e1b4b' }} />
-                  </div>
-                );
-              })()}
               {step !== 'feedback' && (
                 <button
                   onClick={() => handleAnswer(selectedOption)}

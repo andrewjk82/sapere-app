@@ -11,6 +11,18 @@ import { useAuth } from '../context/AuthContext';
 import MathView from './MathView';
 import { answersMatch } from '../utils/answerMatching';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
+import MathInput from './MathInput';
+
+// Quick-insert buttons for the MathLive editor. `#?` is a placeholder the
+// cursor lands in, so students can immediately type the radicand/numerator.
+const QUICK_INSERTS = [
+  { label: '√', latex: '\\sqrt{#?}', title: 'Square root' },
+  { label: 'ⁿ√', latex: '\\sqrt[#?]{#?}', title: 'nth root' },
+  { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
+  { label: 'xⁿ', latex: '^{#?}', title: 'Exponent' },
+  { label: 'π', latex: '\\pi', title: 'Pi' },
+  { label: '( )', latex: '(#?)', title: 'Brackets' },
+];
 
 const XP_PER_TOPIC = 15;
 
@@ -63,6 +75,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const [fracDen, setFracDen] = useState('');
   const fracNumRef = useRef(null);
   const fracDenRef = useRef(null);
+  const mathInputRef = useRef(null);
 
   // Load questions for this topic
   useEffect(() => {
@@ -471,97 +484,43 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         );
       }
 
-      // Short answer
+      // Short answer — MathLive math editor (handles fractions, surds, exponents)
       return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {/* Symbol keyboard */}
-          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {[...MATH_SYMBOLS, '⌫'].map((sym) => (
-              <button
-                key={sym}
-                onClick={() => !submitted && insertSymbol(sym)}
-                style={{
-                  width: sym === '⌫' ? '52px' : '40px', height: '40px', borderRadius: '10px',
-                  border: `1px solid ${sym === '⌫' ? '#fee2e2' : '#e2e8f0'}`,
-                  background: sym === '⌫' ? '#fff1f2' : '#fff',
-                  color: sym === '⌫' ? '#e11d48' : '#4f46e5',
-                  fontSize: sym === '√' ? '1.15rem' : '0.95rem',
-                  fontWeight: 800, cursor: 'pointer',
-                  fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-                }}
-              >
-                {sym}
-              </button>
-            ))}
-          </div>
-          {/* Live fraction builder — whole field on the left enables mixed numbers */}
-          {fracMode && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', padding: '12px', background: '#f5f3ff', borderRadius: '16px', border: '2px solid #a78bfa' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                {/* whole number (for mixed numbers like 2½) */}
-                <input
-                  value={fracWhole}
-                  onChange={(e) => setFracWhole(e.target.value)}
-                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); fracNumRef.current?.focus(); } if (e.key === 'Escape') cancelFracMode(); }}
-                  style={{ width: Math.max(40, fracWhole.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #cbd5e1', outline: 'none', fontSize: '1.7rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
-                  placeholder="0"
-                />
-                <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                  <input
-                    ref={fracNumRef}
-                    value={fracNum}
-                    onChange={(e) => setFracNum(e.target.value)}
-                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); fracDenRef.current?.focus(); } if (e.key === 'Escape') cancelFracMode(); }}
-                    style={{ width: Math.max(40, fracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.4rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
-                    placeholder="a"
-                  />
-                  <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
-                  <input
-                    ref={fracDenRef}
-                    value={fracDen}
-                    onChange={(e) => setFracDen(e.target.value)}
-                    onKeyDown={(e) => { if (e.key === 'Enter') commitFraction(fracWhole, fracNum, fracDen); if (e.key === 'Escape') cancelFracMode(); }}
-                    style={{ width: Math.max(40, fracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.4rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }}
-                    placeholder="b"
-                    autoFocus
-                  />
-                </div>
-                <button onClick={() => commitFraction(fracWhole, fracNum, fracDen)} style={{ padding: '6px 14px', borderRadius: '10px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>OK</button>
-                <button onClick={cancelFracMode} style={{ padding: '6px 10px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>✕</button>
-              </div>
-              <div style={{ textAlign: 'center', fontSize: '0.72rem', color: '#7c3aed', fontWeight: 700 }}>
-                Leave the left box empty for a normal fraction · fill it for a mixed number (e.g. 2½)
-              </div>
+          {/* Quick-insert buttons — insert proper LaTeX into the math field */}
+          {!submitted && (
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {QUICK_INSERTS.map((b) => (
+                <button
+                  key={b.label}
+                  type="button"
+                  onClick={() => mathInputRef.current?.insert(b.latex)}
+                  title={b.title}
+                  style={{
+                    minWidth: '46px', height: '42px', padding: '0 12px', borderRadius: '12px',
+                    border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5',
+                    fontSize: '1.05rem', fontWeight: 800, cursor: 'pointer',
+                    fontFamily: '"KaTeX_Main", "Times New Roman", serif',
+                  }}
+                >
+                  {b.label}
+                </button>
+              ))}
             </div>
           )}
-          <input
-            ref={inputRef}
-            type="text"
-            value={userAnswer ?? ''}
-            readOnly={submitted || fracMode}
-            onChange={(e) => !submitted && setUserAnswer(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === '/') { e.preventDefault(); if (!submitted) enterFracMode(userAnswer || ''); return; }
-              if (e.key === 'Enter' && !submitted && userAnswer) handleSubmit();
-            }}
-            disabled={submitted}
-            placeholder={fracMode ? '' : 'Type your answer… (press / for fraction)'}
+          <MathInput
+            ref={mathInputRef}
+            value={typeof userAnswer === 'string' ? userAnswer : ''}
+            onChange={(latex) => !submitted && setUserAnswer(latex)}
+            onEnter={() => { if (!submitted && userAnswer) handleSubmit(); }}
+            readOnly={submitted}
+            placeholder="Type your answer…  (use the buttons for √ and fractions)"
+            autoFocus
             style={{
-              fontSize: '1.35rem', padding: '20px', borderRadius: '18px', textAlign: 'center',
               border: `2px solid ${submitted ? (isCorrect ? '#10b981' : '#f43f5e') : '#a78bfa'}`,
               background: submitted ? (isCorrect ? '#f0fdf4' : '#fff1f2') : '#fff',
-              fontWeight: 700, fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-              letterSpacing: '0.04em', width: '100%', boxSizing: 'border-box',
-              opacity: fracMode ? 0.4 : 1,
             }}
           />
-          {/* Live fraction preview — input can't render stacked fractions */}
-          {!fracMode && String(userAnswer ?? '').includes('/') && (
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px 16px', background: '#faf5ff', borderRadius: '14px', border: '1px solid #ede9fe' }}>
-              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Preview</span>
-              <MathView content={String(userAnswer)} style={{ fontSize: '1.5rem', color: '#1e1b4b' }} />
-            </div>
-          )}
           {submitted && !isCorrect && q.answer != null && (
             <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Check size={16} style={{ color: '#10b981', flexShrink: 0 }} />
