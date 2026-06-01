@@ -59,6 +59,15 @@ const toDisplayText = (value, fallback = '') => {
   // 3. Fix surd syntax: \sqrt18 -> \sqrt{18}
   str = str.replace(/\\sqrt(\d+)/g, '\\sqrt{$1}');
 
+  // 3a. Wrap LaTeX environments (aligned/cases/matrix/…) in display math so
+  // KaTeX renders them. They often arrive as raw LaTeX without $ delimiters
+  // (e.g. solution "workingOut" fields), which would otherwise show literally.
+  // The lookbehind/ahead avoid double-wrapping an already-delimited block.
+  str = str.replace(
+    /(?<!\$)\\begin\{(aligned|aligned\*|align|align\*|alignedat|array|cases|matrix|pmatrix|bmatrix|vmatrix|Bmatrix|gathered|gather|split)\}[\s\S]*?\\end\{\1\}(?!\$)/g,
+    (m) => `$$${m}$$`,
+  );
+
   // 3b. Currency protection: a lone "$" immediately before a plain number
   // (e.g. "$37.00", "$ 195") is a dollar sign, NOT a LaTeX math delimiter.
   // Left as-is it would open a spurious math block and swallow the text + $.
