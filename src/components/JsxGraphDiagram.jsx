@@ -66,6 +66,7 @@ const JsxGraphDiagram = ({ data, style }) => {
         const type = String(elementType).toLowerCase();
 
         // 1. Unified premium styling for curves and functions
+        // Automatically extend function graph domain to bounding box edges
         if (type === 'functiongraph' || type === 'curve') {
           const originalColor = attributes.strokeColor || 'blue';
           let mappedColor = '#4f46e5'; // Default premium Indigo
@@ -80,26 +81,84 @@ const JsxGraphDiagram = ({ data, style }) => {
             // Thinner lines as requested: limit max thickness to 1.5
             strokeWidth: attributes.strokeWidth !== undefined ? Math.min(attributes.strokeWidth, 1.5) : 1.5,
           };
+
+          // Extend domain for functiongraph to avoid mid-air truncation
+          if (type === 'functiongraph' && parents && parents.length >= 3) {
+            parents[1] = bbox[0]; // Set to left edge of bounding box
+            parents[2] = bbox[2]; // Set to right edge of bounding box
+          }
         }
         
         // 2. Softer colors for axes and arrows (Slate instead of harsh black)
+        // Add double-headed arrows and labels for x/y axes dynamically
         if (type === 'arrow' || type === 'line' || type === 'axis') {
           const originalColor = attributes.strokeColor || 'black';
           if (originalColor === 'black' || originalColor === '#000' || originalColor === '#000000') {
+            // Check if it's the x-axis: horizontal line at y=0
+            const isXAxis = parents && parents[0] && parents[1] && 
+                            Math.abs(parents[0][1]) < 0.001 && Math.abs(parents[1][1]) < 0.001;
+            
+            // Check if it's the y-axis: vertical line at x=0
+            const isYAxis = parents && parents[0] && parents[1] && 
+                            Math.abs(parents[0][0]) < 0.001 && Math.abs(parents[1][0]) < 0.001;
+
             attributes = {
               ...attributes,
               strokeColor: '#64748b', // Slate 500
-              strokeWidth: attributes.strokeWidth || 1,
+              strokeWidth: attributes.strokeWidth || 1.2,
             };
+
+            if (isXAxis) {
+              attributes.firstArrow = true;
+              attributes.lastArrow = true;
+              
+              // Automatically label x-axis near the positive end
+              const xPos = parents[1][0];
+              const xLabelOffset = dx * 0.03;
+              board.create('text', [xPos - xLabelOffset, dy * 0.04, 'x'], {
+                fixed: true,
+                fontSize: 12,
+                fontFamily: '"Outfit", "Inter", sans-serif',
+                strokeColor: '#64748b',
+                fontWeight: 'bold',
+              });
+            }
+
+            if (isYAxis) {
+              attributes.firstArrow = true;
+              attributes.lastArrow = true;
+
+              // Automatically label y-axis near the positive end
+              const yPos = parents[1][1];
+              const yLabelOffset = dy * 0.03;
+              board.create('text', [dx * 0.03, yPos - yLabelOffset, 'y'], {
+                fixed: true,
+                fontSize: 12,
+                fontFamily: '"Outfit", "Inter", sans-serif',
+                strokeColor: '#64748b',
+                fontWeight: 'bold',
+              });
+            }
+
+            // Label Origin (O) once
+            if ((isXAxis || isYAxis) && !board._originLabeled) {
+              board._originLabeled = true;
+              // Origin label positioned slightly down-left of (0,0)
+              board.create('text', [-dx * 0.03, -dy * 0.04, 'O'], {
+                fixed: true,
+                fontSize: 11,
+                fontFamily: '"Outfit", "Inter", sans-serif',
+                strokeColor: '#64748b',
+                fontWeight: 'bold',
+              });
+            }
           }
         }
 
-        // 3. Keep explicit points visible & styled premium
+        // 3. Keep explicit points visible & styled premium (unified theme color)
         if (type === 'point') {
-          const originalColor = attributes.color || attributes.strokeColor || 'red';
-          let mappedColor = '#f43f5e'; // Rose 500 for points
-          if (originalColor === 'blue') mappedColor = '#2563eb'; // Royal Blue
-          else if (originalColor === 'green') mappedColor = '#10b981'; // Emerald
+          // Unified color: use the theme Indigo (#4f46e5) by default
+          let mappedColor = '#4f46e5'; 
           
           const labelAttrs = attributes.label || {};
           const pointAttributes = {
@@ -110,13 +169,13 @@ const JsxGraphDiagram = ({ data, style }) => {
             color: mappedColor,
             strokeColor: mappedColor,
             fillColor: mappedColor,
-            size: attributes.size || 3.5,
+            size: attributes.size || 4, // Slightly larger point for premium look
             visible: attributes.visible !== false,
             withLabel: attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false),
             label: {
               fontSize: 11,
               fontFamily: '"Outfit", "Inter", sans-serif',
-              strokeColor: '#334155', // Slate 700
+              strokeColor: '#312e81', // Dark Indigo for unified labels
               ...labelAttrs,
               offset: labelAttrs.offset || [10, 10]
             }
