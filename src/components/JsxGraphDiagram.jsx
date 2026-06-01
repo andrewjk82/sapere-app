@@ -76,6 +76,8 @@ const JsxGraphDiagram = ({ data, style }) => {
           else if (originalColor === 'purple') mappedColor = '#8b5cf6'; // Violet
           
           attributes = {
+            firstArrow: true,
+            lastArrow: true,
             ...attributes,
             strokeColor: mappedColor,
             // Thinner lines as requested: limit max thickness to 1.5
