@@ -21,11 +21,18 @@ const stripUnits = (s) =>
 
 export const robustNormalize = (str) => {
   if (!str) return '';
-  let s = String(str)
+  let s = stripUnits(String(str))
     .toLowerCase()
     // Strip units before other processing
     .replace(/\\text\s*\{[^{}]*\}/g, '')
     .replace(/\\%/g, '%')
+    // Normalise square roots so "√26", "sqrt26", "\sqrt{26}", "\sqrt26" all
+    // compare equal: collapse every form to "sqrt".
+    .replace(/√/g, 'sqrt')
+    .replace(/\\sqrt/g, 'sqrt')
+    // Strip any leftover "unit"/"units" word, even when concatenated to a
+    // number (e.g. "26units") which word-boundary stripping above misses.
+    .replace(/units?/gi, '')
     // \frac{a}{b} → (a)/(b)
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     // nested \frac (one level deep)
