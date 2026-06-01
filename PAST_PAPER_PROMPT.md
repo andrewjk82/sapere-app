@@ -101,6 +101,14 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 - **Proportions and Orientation:** Verify that the coordinates reflect the visual hierarchy (e.g., if a vertex is at the bottom in the textbook, it must have the lowest y-coordinate, and the figure should be balanced).
 - **Tick Marks and Angle Labels:** Use `ticks: 1` or `ticks: 2` on segments to indicate equal lengths (e.g., `{ from: "B", to: "D", ticks: 1 }`). Use `labelPos` for angles (especially right angles) to ensure the marker is drawn inside the correct quadrant.
 
+**Function Graphs (graphData.jsxGraph):**
+- **Sizing:** Default width/height should be set to `width: 400, height: 300` for clear layout.
+- **Axes & Arrows:** Axes should be created with double-ended arrows pointing in both positive and negative directions (e.g. `firstArrow: true, lastArrow: true` will be automatically formatted).
+- **Labels:** Always label the x-axis, y-axis (using text objects near the tips), and the origin with `'O'`.
+- **Curve Bounds:** Draw function curves from the very left edge of the bounding box to the very right edge (avoid leaving gaps or letting them float in mid-air).
+- **Points:** Plot and label all crucial features mentioned in the question (such as stationary points $P, Q$, vertices, intercepts) on the graph.
+- **Aspect Ratio:** If the graph is a function sketch (e.g. cubic, exponential) with unbalanced x and y domains, set `keepaspectratio: false` in `boardOptions` so it is not vertically squished.
+
 **Terminology & Proof Logic:**
 - **Australian NSW Curriculum Terminology:** NEVER use American terms or acronyms like **"CPCTC"** (Corresponding Parts of Congruent Triangles are Congruent). Instead, write out: *"corresponding angles/sides of congruent triangles are equal"*.
 - **Logical Proof Flow:** Do not assume properties that are not explicitly marked as given in the diagram. For example, if $AB = CB$ is not given, prove it first (e.g., using SAS congruence on $\Delta ABG \equiv \Delta CBG$) rather than stating it is given.
