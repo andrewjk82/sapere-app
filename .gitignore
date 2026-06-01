@@ -26,3 +26,12 @@ dist-ssr
 .env*.local
 .claude/
 scratch/
+
+# Local one-off helper/patch scripts
+/check_*.js
+/generate_*.py
+/generate_*.js
+/patch_*.py
+/patch_*.js
+/test_regex*.js
+/scratch/
