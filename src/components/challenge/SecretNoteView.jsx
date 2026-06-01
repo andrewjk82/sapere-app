@@ -10,7 +10,7 @@ import { db } from '../../firebase/config';
 import { collection, addDoc, serverTimestamp, doc, setDoc, increment, getDoc } from 'firebase/firestore';
 
 // XP awarded for each Secret Note question solved correctly.
-const XP_PER_QUESTION = 5;
+const XP_PER_QUESTION = 1;
 import { getOptions, getOptionText, MATH_SYMBOLS } from '../../utils/challengeUtils';
 import { answersMatch } from '../../utils/answerMatching';
 import {
@@ -432,7 +432,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const isFeedback = phase === 'feedback' || phase === 'twinFeedback';
 
   // ── Actions ──────────────────────────────────────────────────────────────
-  // Reward effort: +5 XP for each Secret Note question solved correctly.
+  // Reward effort: +1 XP for each Secret Note question solved correctly.
   const awardXp = (amount) => {
     if (!uid || !amount) return;
     try {

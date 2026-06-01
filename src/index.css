@@ -685,3 +685,20 @@ input:focus {
     font-size: 1.4rem !important;
   }
 }
+
+/* ── MathLive virtual keyboard ──────────────────────────────────────────────
+   The on-screen math keyboard renders in a layer appended to <body>. Our
+   quiz/Secret-Note modals sit at z-index 100000, so without this the keyboard
+   would appear BEHIND them (looking like "no keyboard shows up" on phones).
+   Lift it above everything, and give the math-field a comfortable tap target. */
+.ML__keyboard {
+  z-index: 2000000 !important;
+}
+math-field {
+  --keyboard-zindex: 2000000;
+  font-size: 1.2rem;
+  touch-action: manipulation;
+}
+math-field::part(virtual-keyboard-toggle) {
+  display: inline-flex; /* keep the on-screen keyboard toggle visible on mobile */
+}

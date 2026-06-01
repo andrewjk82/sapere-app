@@ -50,10 +50,17 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     if (!mf) return;
 
     // Configuration (set as properties on the element).
-    mf.mathVirtualKeyboardPolicy = 'auto'; // virtual keyboard on touch devices; physical keyboard + buttons on desktop
+    mf.mathVirtualKeyboardPolicy = 'manual'; // we control the on-screen keyboard explicitly (below)
     mf.smartMode = true;        // typing "sin" etc. becomes operators, "1/2" → fraction
     mf.smartFence = true;
     if (placeholder) mf.setAttribute('placeholder', placeholder);
+
+    // Touch devices: explicitly show MathLive's on-screen keyboard on focus.
+    // ('auto' policy is unreliable inside our high-z-index modals, which is why
+    //  phones were seeing "no keyboard". CSS lifts the keyboard above modals.)
+    const isTouch = typeof window !== 'undefined' &&
+      (('ontouchstart' in window) || navigator.maxTouchPoints > 0 ||
+       window.matchMedia?.('(pointer: coarse)')?.matches);
 
     const handleInput = () => onChange?.(mf.value);
     const handleKeydown = (e) => {
@@ -62,13 +69,25 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
         onEnter?.();
       }
     };
+    const handleFocus = () => {
+      if (isTouch && !readOnly) {
+        try { window.mathVirtualKeyboard?.show(); } catch (_) { /* ignore */ }
+      }
+    };
+    const handleBlur = () => {
+      try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
+    };
     mf.addEventListener('input', handleInput);
     mf.addEventListener('keydown', handleKeydown);
+    mf.addEventListener('focusin', handleFocus);
+    mf.addEventListener('focusout', handleBlur);
     return () => {
       mf.removeEventListener('input', handleInput);
       mf.removeEventListener('keydown', handleKeydown);
+      mf.removeEventListener('focusin', handleFocus);
+      mf.removeEventListener('focusout', handleBlur);
     };
-  }, [onChange, onEnter, placeholder]);
+  }, [onChange, onEnter, placeholder, readOnly]);
 
   // Sync controlled value (guard against feedback loops).
   useEffect(() => {
