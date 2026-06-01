@@ -82,7 +82,10 @@ const toDisplayText = (value, fallback = '') => {
       
       // Step A: Wrap naked LaTeX commands FIRST (before fraction conversion)
       // so that \sqrt{3} becomes $\sqrt{3}$ as a single token.
-      const nakedCommandRegex = /\\(sqrt|pi|theta|pm|approx|times|div|le|ge|frac|varphi|phi)(\{[^{}]*\})*/g;
+      // NOTE: list longer prefixes before shorter ones (geq before ge, leq
+      // before le, neq before ne, infty before in, qquad before quad) so the
+      // alternation never leaves a dangling tail like the "q" in "\geq".
+      const nakedCommandRegex = /\\(sqrt|frac|mathbb|mathrm|operatorname|text|varphi|phi|pi|theta|approx|times|div|cdot|pm|geq|leq|neq|ge|le|ne|infty|in|notin|quad|qquad|forall|exists|Rightarrow|rightarrow|Leftarrow|leftarrow|implies|times|cup|cap|subseteq|to|circ|deg)(\{[^{}]*\})*/g;
       text = text.replace(nakedCommandRegex, (match) => {
         return `$${match}$`;
       });
