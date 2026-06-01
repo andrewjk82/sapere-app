@@ -76,8 +76,27 @@ const toDisplayText = (value, fallback = '') => {
   //   - contains a LaTeX command / superscript / spacing macro
   //   - single line, and no 3+ letter "words" once commands/\text are stripped
   if (!/[$]|\\\(|\\\[|\\begin/.test(str) && /\\[a-zA-Z]|\^|_|\\!/.test(str) && !/[\r\n]/.test(str)) {
+    // Case A: a SENTENCE written in LaTeX (prose inside \text{…}). Wrapping it
+    // whole as inline math would never line-break and overflows its box, so
+    // render the \text{} parts as real prose (which wraps) and only the math
+    // between them as inline $…$.
+    const textProse = (str.match(/\\text\s*\{([^{}]*)\}/g) || []).join(' ');
+    const hasSentence = (textProse.match(/[a-zA-Z]{3,}/g) || []).length >= 1;
+    if (hasSentence) {
+      return str
+        .split(/(\\text\s*\{[^{}]*\})/g)
+        .map((p) => {
+          const m = p.match(/^\\text\s*\{([^{}]*)\}$/);
+          if (m) return m[1];          // \text{...} → plain prose (wraps)
+          if (p.trim() === '') return p; // whitespace between parts
+          return `$${p}$`;             // remaining math → inline math
+        })
+        .join('');
+    }
+    // Case B: a pure formula (no prose). Piecemeal wrapping can't handle
+    // \left…\right / nested \frac, so wrap the whole thing in \(…\).
     const probe = str
-      .replace(/\\(text|operatorname|mathrm|mathbf|mathbb|mathcal)\s*\{[^{}]*\}/g, '')
+      .replace(/\\(operatorname|mathrm|mathbf|mathbb|mathcal)\s*\{[^{}]*\}/g, '')
       .replace(/\\[a-zA-Z]+/g, '')
       .replace(/\\[!,;:>\s]/g, '');
     const proseWords = (probe.match(/[a-zA-Z]{3,}/g) || []).length;
