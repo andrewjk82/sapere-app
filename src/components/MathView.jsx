@@ -59,6 +59,15 @@ const toDisplayText = (value, fallback = '') => {
   // 3. Fix surd syntax: \sqrt18 -> \sqrt{18}
   str = str.replace(/\\sqrt(\d+)/g, '\\sqrt{$1}');
 
+  // 3b. Currency protection: a lone "$" immediately before a number (e.g.
+  // "$37.00", "$ 195") is a dollar sign, NOT a LaTeX math delimiter. Left as-is
+  // it would open a spurious math block and swallow the text + the $ signs.
+  // Swap currency dollars for a private-use placeholder so the tokenizer below
+  // ignores them; we restore literal "$" right before returning. The
+  // lookbehind/ahead keep real "$$...$$" display-math delimiters untouched.
+  const CURRENCY_PLACEHOLDER = '\uE000';
+  str = str.replace(/(?<!\$)\$(?!\$)(\s*\d)/g, CURRENCY_PLACEHOLDER + '$1');
+
   // 4. Tokenize to separate Math Blocks from Plain Text
   // This prevents wrapping commands that are already inside $...$ or \(...\)
   const mathBlockRegex = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
@@ -127,6 +136,9 @@ const toDisplayText = (value, fallback = '') => {
 
   // Cleanup potential artifact from messy DB entries: $$$ -> $$
   str = str.replace(/\$\$\$/g, '$$');
+
+  // Restore currency dollar signs protected from the tokenizer.
+  str = str.replace(/\uE000/g, '$');
 
   return str;
 };
