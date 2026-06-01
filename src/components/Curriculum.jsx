@@ -16,6 +16,7 @@ import { Y12A_CH3C_QUESTIONS } from '../constants/seedYear12aCh3CQuestions';
 import { Y12A_CH3D_QUESTIONS } from '../constants/seedYear12aCh3DQuestions';
 import { Y12A_CH3E_QUESTIONS } from '../constants/seedYear12aCh3EQuestions';
 import { Y12A_CH3F_QUESTIONS } from '../constants/seedYear12aCh3FQuestions';
+import { Y12A_CH3G_QUESTIONS } from '../constants/seedYear12aCh3GQuestions';
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BookOpen, CheckCircle2, ChevronRight, 
@@ -217,6 +218,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 12',
     seed: Y12A_CH3F_QUESTIONS,
     label: 'Y12A Ch3 · 3F Global maximum and minimum',
+  },
+  {
+    chapterId: 'y12a-3',
+    chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
+    topicId: 'y12a-3G',
+    topicCode: '3G',
+    topicTitle: 'Applications of maximisation and minimisation',
+    year: 'Year 12',
+    seed: Y12A_CH3G_QUESTIONS,
+    label: 'Y12A Ch3 · 3G Applications of maximisation and minimisation',
   },
   {
     chapterId: 'y12a-6',
