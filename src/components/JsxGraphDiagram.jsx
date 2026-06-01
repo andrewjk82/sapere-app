@@ -15,12 +15,18 @@ const JsxGraphDiagram = ({ data, style }) => {
     }
 
     try {
+      const bbox = data.boundingbox || [-5, 5, 5, -5];
+      const dx = Math.abs(bbox[2] - bbox[0]);
+      const dy = Math.abs(bbox[3] - bbox[1]);
+      const ratio = dy / dx;
+      const autoKeepAspectRatio = ratio > 0.55 && ratio < 1.8;
+
       const defaultOptions = {
-        boundingbox: data.boundingbox || [-5, 5, 5, -5],
+        boundingbox: bbox,
         axis: data.axis !== undefined ? data.axis : false,
         showCopyright: false,
         showNavigation: false,
-        keepaspectratio: true,
+        keepaspectratio: data.keepaspectratio !== undefined ? data.keepaspectratio : (data.boardOptions?.keepaspectratio !== undefined ? data.boardOptions.keepaspectratio : autoKeepAspectRatio),
         point: {
           fixed: true,
           highlight: false,
@@ -44,19 +50,82 @@ const JsxGraphDiagram = ({ data, style }) => {
         visible: false,
         withLabel: false,
       };
+
+      // Create a gorgeous, faint grid to make the graph look professional
+      if (data.grid !== false) {
+        board.create('grid', [], {
+          strokeColor: '#cbd5e1', // Slate 300
+          strokeWidth: 0.5,
+          strokeOpacity: 0.35, // Very soft opacity so it doesn't distract
+        });
+      }
+
       const originalCreate = board.create.bind(board);
 
       board.create = (elementType, parents, attributes = {}) => {
         const type = String(elementType).toLowerCase();
+
+        // 1. Unified premium styling for curves and functions
+        if (type === 'functiongraph' || type === 'curve') {
+          const originalColor = attributes.strokeColor || 'blue';
+          let mappedColor = '#4f46e5'; // Default premium Indigo
+          if (originalColor === 'red') mappedColor = '#f43f5e'; // Rose
+          else if (originalColor === 'green') mappedColor = '#10b981'; // Emerald
+          else if (originalColor === 'orange') mappedColor = '#f59e0b'; // Amber
+          else if (originalColor === 'purple') mappedColor = '#8b5cf6'; // Violet
+          
+          attributes = {
+            ...attributes,
+            strokeColor: mappedColor,
+            // Thinner lines as requested: limit max thickness to 1.5
+            strokeWidth: attributes.strokeWidth !== undefined ? Math.min(attributes.strokeWidth, 1.5) : 1.5,
+          };
+        }
+        
+        // 2. Softer colors for axes and arrows (Slate instead of harsh black)
+        if (type === 'arrow' || type === 'line' || type === 'axis') {
+          const originalColor = attributes.strokeColor || 'black';
+          if (originalColor === 'black' || originalColor === '#000' || originalColor === '#000000') {
+            attributes = {
+              ...attributes,
+              strokeColor: '#64748b', // Slate 500
+              strokeWidth: attributes.strokeWidth || 1,
+            };
+          }
+        }
+
+        // 3. Keep explicit points visible & styled premium
         if (type === 'point') {
-          return originalCreate(elementType, parents, {
+          const originalColor = attributes.color || attributes.strokeColor || 'red';
+          let mappedColor = '#f43f5e'; // Rose 500 for points
+          if (originalColor === 'blue') mappedColor = '#2563eb'; // Royal Blue
+          else if (originalColor === 'green') mappedColor = '#10b981'; // Emerald
+          
+          const labelAttrs = attributes.label || {};
+          const pointAttributes = {
             fixed: true,
             highlight: false,
             showInfobox: false,
             ...attributes,
-            visible: attributes.visible === true ? true : false,
-            withLabel: attributes.withLabel === true ? true : false,
-          });
+            color: mappedColor,
+            strokeColor: mappedColor,
+            fillColor: mappedColor,
+            size: attributes.size || 3.5,
+            visible: attributes.visible !== false,
+            withLabel: attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false),
+            label: {
+              fontSize: 11,
+              fontFamily: '"Outfit", "Inter", sans-serif',
+              strokeColor: '#334155', // Slate 700
+              ...labelAttrs,
+              offset: labelAttrs.offset || [10, 10]
+            }
+          };
+          const pt = originalCreate(elementType, parents, pointAttributes);
+          if (pt) {
+            pt._explicit = true; // Tag explicit points so they are not hidden
+          }
+          return pt;
         }
 
         if (type !== 'angle') {
@@ -112,7 +181,8 @@ const JsxGraphDiagram = ({ data, style }) => {
 
       if (data.showConstructionPoints !== true) {
         Object.values(board.objects || {}).forEach((object) => {
-          if (object?.elType === 'point' && object.setAttribute) {
+          // Hide only implicit construction points, preserve explicitly created points
+          if (object?.elType === 'point' && !object._explicit && object.setAttribute) {
             object.setAttribute({
               fixed: true,
               highlight: false,
@@ -137,15 +207,27 @@ const JsxGraphDiagram = ({ data, style }) => {
 
   const uniqueId = useId();
 
+  const baseWidth = typeof data.width === 'number' ? data.width : (parseInt(data.width) || 300);
+  const baseHeight = typeof data.height === 'number' ? data.height : (parseInt(data.height) || 300);
+  
+  // Scale up by 1.2x for better readability as requested
+  const displayWidth = baseWidth * 1.2;
+  const displayHeight = baseHeight * 1.2;
+
   return (
     <div 
       id={uniqueId}
       ref={boardRef} 
       className="jxgbox" 
       style={{ 
-        width: data.width || '300px', 
-        height: data.height || '300px', 
+        width: `${displayWidth}px`, 
+        height: `${displayHeight}px`, 
+        maxWidth: '100%',
         margin: '0 auto', 
+        borderRadius: '16px',
+        boxShadow: '0 4px 16px rgba(15,23,42,0.04)',
+        border: '1px solid #e2e8f0', // slate-200 border for a premium card feel
+        overflow: 'hidden',
         ...style 
       }} 
     />
