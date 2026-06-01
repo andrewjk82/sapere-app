@@ -108,6 +108,9 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 - **Curve Bounds:** Draw function curves from the very left edge of the bounding box to the very right edge (avoid leaving gaps or letting them float in mid-air).
 - **Points:** Plot and label all crucial features mentioned in the question (such as stationary points $P, Q$, vertices, intercepts) on the graph.
 - **Aspect Ratio:** If the graph is a function sketch (e.g. cubic, exponential) with unbalanced x and y domains, set `keepaspectratio: false` in `boardOptions` so it is not vertically squished.
+- **Styling / Color:** Do not specify color on `functiongraph`, `curve`, or `point` elements unless a specific color coding is requested. They automatically default to Slate (`#64748b`) matching the axes. Point markers automatically display with a clean, smaller size of `2.2`.
+- **Sketch Questions:** For questions that ask the student to draw or sketch a graph (e.g. "Sketch the graph of..."), set `type: "teacher_review"` in the seed question. This tells the application to hide the graph in the question body so the student can sketch it independently on the canvas, while queuing it in the teacher's grading list. Put the correct graph only in the worked solution.
+
 
 **Terminology & Proof Logic:**
 - **Australian NSW Curriculum Terminology:** NEVER use American terms or acronyms like **"CPCTC"** (Corresponding Parts of Congruent Triangles are Congruent). Instead, write out: *"corresponding angles/sides of congruent triangles are equal"*.

@@ -69,7 +69,7 @@ const JsxGraphDiagram = ({ data, style }) => {
         // Automatically extend function graph domain to bounding box edges
         if (type === 'functiongraph' || type === 'curve') {
           const originalColor = attributes.strokeColor || 'blue';
-          let mappedColor = '#4f46e5'; // Default premium Indigo
+          let mappedColor = '#64748b'; // Default premium Slate to match the axes
           if (originalColor === 'red') mappedColor = '#f43f5e'; // Rose
           else if (originalColor === 'green') mappedColor = '#10b981'; // Emerald
           else if (originalColor === 'orange') mappedColor = '#f59e0b'; // Amber
@@ -157,8 +157,8 @@ const JsxGraphDiagram = ({ data, style }) => {
 
         // 3. Keep explicit points visible & styled premium (unified theme color)
         if (type === 'point') {
-          // Unified color: use the theme Indigo (#4f46e5) by default
-          let mappedColor = '#4f46e5'; 
+          // Unified color: use the theme Slate (#64748b) to match curves and axes
+          let mappedColor = '#64748b'; 
           
           const labelAttrs = attributes.label || {};
           const pointAttributes = {
@@ -169,13 +169,13 @@ const JsxGraphDiagram = ({ data, style }) => {
             color: mappedColor,
             strokeColor: mappedColor,
             fillColor: mappedColor,
-            size: attributes.size || 4, // Slightly larger point for premium look
+            size: attributes.size || 2.2, // Smaller point size as requested by the user
             visible: attributes.visible !== false,
             withLabel: attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false),
             label: {
               fontSize: 11,
               fontFamily: '"Outfit", "Inter", sans-serif',
-              strokeColor: '#312e81', // Dark Indigo for unified labels
+              strokeColor: '#475569', // Dark Slate for unified labels
               ...labelAttrs,
               offset: labelAttrs.offset || [10, 10]
             }

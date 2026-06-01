@@ -429,7 +429,7 @@ const ChallengeQuizView = ({
             </div>
             <MathView
               content={currentQuestion?.question}
-              graphData={currentQuestion?.graphData}
+              graphData={currentQuestion?.requiresManualGrading || currentQuestion?.type === 'teacher_review' ? (isFeedback ? currentQuestion?.graphData : null) : currentQuestion?.graphData}
               style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
 
@@ -451,7 +451,7 @@ const ChallengeQuizView = ({
                     <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + sIdx)}
                     </div>
-                    <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
+                    <MathView content={sq.question} graphData={sq.requiresManualGrading || sq.type === 'teacher_review' ? (isFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                   </div>
 
                   {sq.type === 'multiple_choice' ? (

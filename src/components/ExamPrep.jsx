@@ -362,7 +362,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           </button>
         )}
       </div>
-      <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+      <MathView content={q.question} graphData={q.requiresManualGrading || q.type === 'teacher_review' ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
       <AnimatePresence>
         {showHint && q.hint && (
           <motion.div
@@ -412,7 +412,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         const isSubMC = (sq.type === 'multiple_choice') && subOpts.length > 0;
         return (
           <div key={key} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '18px' }}>
-            <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem', marginBottom: '12px' }} />
+            <MathView content={sq.question} graphData={sq.requiresManualGrading || sq.type === 'teacher_review' ? (showFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem', marginBottom: '12px' }} />
             {isSubMC ? (
               <div style={{ display: 'grid', gap: '8px' }}>
                 {subOpts.map((opt, oi) => {
