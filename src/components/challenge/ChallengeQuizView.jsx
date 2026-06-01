@@ -190,6 +190,9 @@ const ChallengeQuizView = ({
   const [focusedBlankIdx, setFocusedBlankIdx] = useState(0);
   useEffect(() => { setFocusedBlankIdx(0); }, [currentIdx]);
 
+  // Fullscreen image zoom (for graph-choice options that are hard to see small)
+  const [zoomImage, setZoomImage] = useState(null);
+
   // Fraction input mode: triggered when user types "/"
   const [fracMode, setFracMode] = useState(false);
   const [fracWhole, setFracWhole] = useState('');
@@ -853,28 +856,29 @@ const ChallengeQuizView = ({
                   else if (isSelected) status = 'wrong';
                 }
 
+                const hasImage = !!optImage;
                 return (
                   <button
                     key={i}
                     onClick={() => step !== 'feedback' && handleAnswer(optText, i)}
                     aria-disabled={isFeedback}
                     className={`app-option-card ${status !== 'default' ? `app-option-card--${status}` : isSelected ? 'app-option-card--selected' : ''}`}
-                    style={{ 
-                      padding: '16px 28px', 
-                      textAlign: 'left', 
-                      display: 'flex', 
-                      justifyContent: 'space-between', 
+                    style={{
+                      padding: hasImage ? '16px' : '16px 28px',
+                      textAlign: 'left',
+                      display: 'flex',
+                      justifyContent: 'space-between',
                       alignItems: 'center',
                       gap: '16px',
                       border: '2px solid transparent',
                       transition: 'all 0.2s',
                       cursor: step === 'feedback' ? 'default' : 'pointer',
-                      borderRadius: '100px',
+                      borderRadius: hasImage ? '24px' : '100px',
                       background: status === 'correct' ? '#f0fdf4' : status === 'wrong' ? '#fef2f2' : isSelected ? '#f5f3ff' : '#fff',
                       boxShadow: status === 'correct' ? '0 0 0 2px #10b981' : status === 'wrong' ? '0 0 0 2px #ef4444' : isSelected ? '0 0 0 2px #6366f1' : '0 4px 12px rgba(0,0,0,0.03)'
                     }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flex: 1, minWidth: 0 }}>
                       <div style={{
                         width: '34px', height: '34px', borderRadius: '50%',
                         background: status === 'correct' ? '#10b981' : status === 'wrong' ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9',
@@ -885,9 +889,18 @@ const ChallengeQuizView = ({
                       }}>
                         {String.fromCharCode(65 + i)}
                       </div>
-                      <div style={{ flex: 1 }}>
-                        <MathView content={optText} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
-                        {optImage && <img src={optImage} alt="Option" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        {(!hasImage || (optText && optText !== String.fromCharCode(65 + i))) && (
+                          <MathView content={optText} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
+                        )}
+                        {hasImage && (
+                          <img
+                            src={optImage}
+                            alt={`Option ${String.fromCharCode(65 + i)}`}
+                            onClick={(e) => { e.stopPropagation(); setZoomImage(optImage); }}
+                            style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: optText && optText !== String.fromCharCode(65 + i) ? '8px' : 0, display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9', cursor: 'zoom-in' }}
+                          />
+                        )}
                       </div>
                     </div>
                     <div style={{ flexShrink: 0 }}>
@@ -1044,6 +1057,35 @@ const ChallengeQuizView = ({
           />
         )}
       </div>
+
+      {/* Fullscreen zoom for graph-choice option images */}
+      <AnimatePresence>
+        {zoomImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setZoomImage(null)}
+            style={{ position: 'fixed', inset: 0, zIndex: 100000, background: 'rgba(15,23,42,0.88)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px', cursor: 'zoom-out' }}
+          >
+            <motion.img
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.92, opacity: 0 }}
+              src={zoomImage}
+              alt="Enlarged option"
+              onClick={(e) => e.stopPropagation()}
+              style={{ maxWidth: '92vw', maxHeight: '88vh', objectFit: 'contain', borderRadius: '16px', background: '#fff', padding: '12px', boxShadow: '0 25px 60px rgba(0,0,0,0.5)' }}
+            />
+            <button
+              onClick={() => setZoomImage(null)}
+              style={{ position: 'absolute', top: '20px', right: '20px', width: '44px', height: '44px', borderRadius: '50%', border: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff', fontSize: '1.4rem', fontWeight: 800, cursor: 'pointer' }}
+            >
+              ✕
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

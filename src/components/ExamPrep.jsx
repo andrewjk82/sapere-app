@@ -140,6 +140,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const canvasRef = useRef(null);
   const examInputRef = useRef(null);
   const examFracDenRef = useRef(null);
+  const [zoomImage, setZoomImage] = useState(null);
   const [examFracMode, setExamFracMode] = useState(false);
   const [examFracWhole, setExamFracWhole] = useState('');
   const [examFracNum, setExamFracNum] = useState('');
@@ -443,20 +444,35 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     <div style={{ display: 'grid', gap: '10px' }}>
       {(q.options || []).map((opt, i) => {
         const optText = typeof opt === 'string' ? opt : opt.text;
+        const optImage = (opt && typeof opt === 'object') ? (opt.imageUrl || opt.image || '') : '';
+        const hasImage = !!optImage;
         const selected = draft === i;
         const isCorrect = showFeedback && i === correctMc;
         const isWrong = showFeedback && selected && !isCorrect;
+        const letter = String.fromCharCode(65 + i);
         return (
           <button
             key={i}
             onClick={() => !showFeedback && setDraft(i)}
             disabled={showFeedback}
-            style={{ padding: '14px 22px', borderRadius: '100px', border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : selected ? '#6366f1' : 'transparent'}`, background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '14px', cursor: showFeedback ? 'default' : 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', textAlign: 'left' }}
+            style={{ padding: hasImage ? '14px' : '14px 22px', borderRadius: hasImage ? '20px' : '100px', border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : selected ? '#6366f1' : 'transparent'}`, background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '14px', cursor: showFeedback ? 'default' : 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', textAlign: 'left' }}
           >
             <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrect ? '#10b981' : selected ? '#6366f1' : '#f1f5f9', color: isCorrect || selected ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
-              {String.fromCharCode(65 + i)}
+              {letter}
             </div>
-            <MathView content={optText} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+            <div style={{ flex: 1, minWidth: 0 }}>
+              {(!hasImage || (optText && optText !== letter)) && (
+                <MathView content={optText} style={{ fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+              )}
+              {hasImage && (
+                <img
+                  src={optImage}
+                  alt={`Option ${letter}`}
+                  onClick={(e) => { e.stopPropagation(); setZoomImage(optImage); }}
+                  style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: optText && optText !== letter ? '8px' : 0, display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9', cursor: 'zoom-in' }}
+                />
+              )}
+            </div>
             {isCorrect && <CheckCircle2 size={20} color="#10b981" />}
             {isWrong && <XCircle size={20} color="#ef4444" />}
           </button>
@@ -648,6 +664,35 @@ const QuizView = ({ questions, onFinish, onReport }) => {
             <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
               <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
             </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Fullscreen zoom for graph-choice option images */}
+      <AnimatePresence>
+        {zoomImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setZoomImage(null)}
+            style={{ position: 'fixed', inset: 0, zIndex: 100000, background: 'rgba(15,23,42,0.88)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px', cursor: 'zoom-out' }}
+          >
+            <motion.img
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.92, opacity: 0 }}
+              src={zoomImage}
+              alt="Enlarged option"
+              onClick={(e) => e.stopPropagation()}
+              style={{ maxWidth: '92vw', maxHeight: '88vh', objectFit: 'contain', borderRadius: '16px', background: '#fff', padding: '12px', boxShadow: '0 25px 60px rgba(0,0,0,0.5)' }}
+            />
+            <button
+              onClick={() => setZoomImage(null)}
+              style={{ position: 'absolute', top: '20px', right: '20px', width: '44px', height: '44px', borderRadius: '50%', border: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff', fontSize: '1.4rem', fontWeight: 800, cursor: 'pointer' }}
+            >
+              ✕
+            </button>
           </motion.div>
         )}
       </AnimatePresence>
