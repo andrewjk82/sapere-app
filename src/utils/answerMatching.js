@@ -79,6 +79,7 @@ export const robustNormalize = (str) => {
 export const evalFractionValue = (value) => {
   if (value === null || value === undefined) return null;
   let s = String(value)
+    .replace(/(-?\d+)\s*\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '$1 $2/$3')
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2') // (a)/(b) → a/b
     .replace(/[−–—]/g, '-')
