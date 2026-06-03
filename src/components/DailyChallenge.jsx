@@ -192,7 +192,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   );
   const assignedYear = assignedYears[0];
 
-  const isGraphSketchQuestion = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
+  const isGraphSketchQuestion = currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review' || currentQuestion?.requiresManualGrading === true;
   // The working-out sketch board now shows for ALL year levels:
   //  - graph_sketch questions always (even on mobile) so the image can be graded
   //  - Basic Calculation challenges always (even on mobile) so students can work out
@@ -624,7 +624,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     
     const currentQ = questions[currentIdx];
     const isShortAnswer = currentQ?.type === 'short_answer';
-    const isGraphSketch = currentQ?.type === 'graph_sketch' || currentQ?.requiresManualGrading === true;
+    const isGraphSketch = currentQ?.type === 'graph_sketch' || currentQ?.type === 'teacher_review' || currentQ?.requiresManualGrading === true;
     
     let correct = false;
     let canvasDataUrl = null;
@@ -946,7 +946,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           }
           return val;
         };
-        const slimQuestions = stripDataUrls(questions || []);
+        // Strip large fields that are re-fetched live from the questions collection
+        // (solutionSteps, graphData, etc.) so the detail_snapshot stays well under
+        // Firestore's 1 MB document limit. ChallengeDetailModal re-fetches them.
+        const LARGE_QUESTION_FIELDS = ['solutionSteps', 'graphData', 'hint', 'solution', 'subQuestions'];
+        const stripLargeFields = (q) => {
+          if (!q || typeof q !== 'object') return q;
+          const out = { ...q };
+          for (const f of LARGE_QUESTION_FIELDS) delete out[f];
+          return out;
+        };
+        const slimQuestions = stripDataUrls((questions || []).map(stripLargeFields));
         const slimUserAnswers = stripDataUrls(userAnswers || []);
         const hasWorkingOut = slimAnswerResults.some(r => r?.hasWorkingOut);
 

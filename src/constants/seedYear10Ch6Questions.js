@@ -506,7 +506,7 @@ export const Y10_CH6_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Calculate the exact surface area of the prism from the previous question.",
+    "question": "The base of a right prism of height 10 cm is an equilateral triangle with side length 8 cm. Calculate the exact surface area of the prism.",
     "a": "32\\sqrt{3} + 240",
     "solutionSteps": [
       {

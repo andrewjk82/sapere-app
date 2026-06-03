@@ -9,6 +9,7 @@ import { useAdminFeed } from '../context/AdminFeedContext';
 import { useProfile } from '../context/ProfileContext';
 import { db } from '../firebase/config';
 import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
+import { gradeSubmission } from '../services/gradingService';
 
 import AvatarPickerModal from './AvatarPickerModal';
 import AdminDashboard from './AdminDashboard';
@@ -181,50 +182,17 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const handleGrade = async (status) => {
     if (!selectedGradingItem) return;
     try {
-      await deleteDoc(doc(db, 'grading_queue', selectedGradingItem.id));
-      const type = selectedGradingItem.challengeType || 'daily';
-      const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
-      const userId = selectedGradingItem.userId;
-      
-      let statId = selectedGradingItem.date;
-      if (!statId && selectedGradingItem.submittedAt) {
-        const sAt = selectedGradingItem.submittedAt;
-        const d = (typeof sAt.toDate === 'function') ? sAt.toDate() : new Date(sAt);
-        if (!isNaN(d.getTime())) statId = d.toLocaleDateString('en-CA');
+      const approved = status === 'correct';
+      const { xpAwarded } = await gradeSubmission(selectedGradingItem, approved);
+      if (approved) {
+        showToast(`Graded as Correct. Student received ${xpAwarded} XP!`, 'success');
+      } else {
+        showToast('Graded as Incorrect.', 'info');
       }
-
-      if (status === 'correct') {
-        const totalQ = selectedGradingItem.totalQuestions || 10;
-        const maxXP = type === 'calc' ? 50 : 100;
-        const xpPerQuestion = Math.round(maxXP / totalQ);
-        const xpPayload = { totalXP: increment(xpPerQuestion), updatedAt: new Date().toISOString() };
-        try { await updateDoc(doc(db, 'users', userId), xpPayload); } catch {
-          await updateDoc(doc(db, 'students', userId), xpPayload);
-        }
-        if (statId && userId) {
-          const safeStatId = typeof statId === 'string' ? statId.replace(/\//g, '-') : String(statId);
-          let statRef = doc(db, 'users', userId, colName, safeStatId);
-          let statSnap = await getDoc(statRef);
-          if (!statSnap.exists()) {
-            statRef = doc(db, 'students', userId, colName, safeStatId);
-            statSnap = await getDoc(statRef);
-          }
-          if (statSnap.exists()) {
-            const statsData = statSnap.data();
-            const updatedResults = [...(statsData.answerResults || [])];
-            const qIndex = updatedResults.findIndex(r => r.questionId === selectedGradingItem.questionId);
-            if (qIndex !== -1) {
-              updatedResults[qIndex].correct = true;
-              updatedResults[qIndex].isPending = false;
-              updatedResults[qIndex].selectedAnswer = 'Approved';
-            }
-            await updateDoc(statRef, { score: increment(1), xpEarned: increment(xpPerQuestion), ...(qIndex !== -1 ? { answerResults: updatedResults } : {}) });
-          }
-        }
-        showToast(`Graded as Correct. Student received ${xpPerQuestion} XP!`, 'success');
-      } else { showToast(`Graded as Incorrect.`, 'info'); }
       setSelectedGradingItem(null);
-    } catch (err) { showToast("Failed to update grade", 'error'); }
+    } catch (err) {
+      showToast('Failed to update grade', 'error');
+    }
   };
 
   const getGreeting = () => {

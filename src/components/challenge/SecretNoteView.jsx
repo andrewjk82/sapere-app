@@ -5,13 +5,22 @@ import {
   Sparkles, GraduationCap, MessageCircleQuestion, Send, BookLock, Flag,
 } from 'lucide-react';
 import MathView from '../MathView';
+import MathInput from '../MathInput';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { db } from '../../firebase/config';
 import { collection, addDoc, serverTimestamp, doc, setDoc, increment, getDoc } from 'firebase/firestore';
 
 // XP awarded for each Secret Note question solved correctly.
 const XP_PER_QUESTION = 1;
-import { getOptions, getOptionText, MATH_SYMBOLS } from '../../utils/challengeUtils';
+import { getOptions, getOptionText } from '../../utils/challengeUtils';
+
+const SN_QUICK_INSERTS = [
+  { label: '√',   latex: '\\sqrt{#?}',        title: 'Square root' },
+  { label: 'a/b', latex: '\\frac{#?}{#?}',    title: 'Fraction' },
+  { label: 'xⁿ',  latex: '^{#?}',             title: 'Exponent' },
+  { label: 'π',   latex: '\\pi',              title: 'Pi' },
+  { label: '( )', latex: '(#?)',              title: 'Brackets' },
+];
 import { answersMatch } from '../../utils/answerMatching';
 import {
   MISTAKE_TAGS,
@@ -366,20 +375,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const [reviewSentIds, setReviewSentIds] = useState([]);
   const canvasRef = useRef(null);
   const solvePadRef = useRef(null);
-  const answerInputRef = useRef(null);
-  const snFracDenRef = useRef(null);
-  const [snFracMode, setSnFracMode] = useState(false);
-  const [snFracNum, setSnFracNum] = useState('');
-  const [snFracDen, setSnFracDen] = useState('');
-  useEffect(() => { setSnFracMode(false); setSnFracNum(''); setSnFracDen(''); }, [idx]);
-  const snCommitFraction = (num, den) => {
-    if (!den) { setSnFracMode(false); answerInputRef.current?.focus(); return; }
-    const base = answer;
-    const prefix = base.endsWith(num) ? base.slice(0, base.length - num.length) : base;
-    setAnswer(prefix + `(${num || '0'})/(${den})`);
-    setSnFracMode(false); setSnFracNum(''); setSnFracDen('');
-    setTimeout(() => answerInputRef.current?.focus(), 50);
-  };
+  const mathInputRef = useRef(null);
 
   const [liveQueue, setLiveQueue] = useState(null);
 
@@ -747,75 +743,30 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
           </div>
         ) : (
           <>
-            {/* Math symbol pad — same keys as the daily challenge */}
+            {/* Quick-insert buttons (same as daily challenge) */}
             {!isFeedback && (
-              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '10px' }}>
-                {MATH_SYMBOLS.map((symbol) => (
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '4px' }}>
+                {SN_QUICK_INSERTS.map((b) => (
                   <button
-                    key={symbol}
+                    key={b.label}
                     type="button"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setAnswer((prev) => (prev || '') + symbol);
-                      answerInputRef.current?.focus();
-                    }}
-                    style={{
-                      width: '40px', height: '40px', borderRadius: '11px',
-                      border: '1px solid #e2e8f0',
-                      background: symbol === '²' || symbol === '³' ? '#f5f3ff' : '#fff',
-                      color: '#4f46e5',
-                      fontSize: symbol === '√' ? '1.2rem' : '1rem', fontWeight: 800,
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      cursor: 'pointer', padding: 0, lineHeight: 1,
-                      fontFamily: '"KaTeX_Main", "Times New Roman", serif',
-                    }}
+                    title={b.title}
+                    onClick={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
+                    style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
                   >
-                    {symbol}
+                    {b.label}
                   </button>
                 ))}
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setAnswer((prev) => (prev || '').slice(0, -1));
-                    answerInputRef.current?.focus();
-                  }}
-                  style={{
-                    width: '58px', height: '40px', borderRadius: '11px',
-                    border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48',
-                    fontSize: '0.72rem', fontWeight: 900, textTransform: 'uppercase',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer',
-                  }}
-                >
-                  Del
-                </button>
               </div>
             )}
-            {snFracMode && (
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
-                <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                  <input value={snFracNum} onChange={(e) => setSnFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); snFracDenRef.current?.focus(); } if (e.key === 'Escape') { setSnFracMode(false); answerInputRef.current?.focus(); } }} style={{ width: Math.max(40, snFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.3rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
-                  <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
-                  <input ref={snFracDenRef} value={snFracDen} onChange={(e) => setSnFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') snCommitFraction(snFracNum, snFracDen); if (e.key === 'Escape') { setSnFracMode(false); answerInputRef.current?.focus(); } }} style={{ width: Math.max(40, snFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.3rem', fontWeight: 700, fontFamily: '"KaTeX_Main","Times New Roman",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
-                </div>
-                <button onClick={() => snCommitFraction(snFracNum, snFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
-                <button onClick={() => { setSnFracMode(false); answerInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
-              </div>
-            )}
-            <input
-              ref={answerInputRef}
-              className="sn__input"
-              type="text"
-              disabled={isFeedback || snFracMode}
+            <MathInput
+              ref={mathInputRef}
               value={answer}
-              onChange={(e) => setAnswer(e.target.value)}
-              placeholder={snFracMode ? '' : 'Type your answer... (press / for fraction)'}
-              onKeyDown={(e) => {
-                if (e.key === '/') { e.preventDefault(); setSnFracNum(answer); setSnFracDen(''); setSnFracMode(true); setTimeout(() => snFracDenRef.current?.focus(), 50); return; }
-                if (e.key === 'Enter' && answer.trim() && !isFeedback) {
-                  isTwinPhase ? submitTwin(answer) : submitOriginal(answer);
-                }
-              }}
+              onChange={(latex) => { if (!isFeedback) setAnswer(latex); }}
+              onEnter={() => { if (answer.trim() && !isFeedback) { isTwinPhase ? submitTwin(answer) : submitOriginal(answer); } }}
+              readOnly={isFeedback}
+              placeholder="Type your answer…"
+              autoFocus
             />
           </>
         )}

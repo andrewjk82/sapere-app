@@ -668,7 +668,7 @@ const ChallengeQuizView = ({
                 </button>
               )}
             </div>
-          ) : currentQuestion?.type === 'graph_sketch' ? (
+          ) : (currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review') ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {/* Inline canvas for mobile / non-split-screen layouts so the
                   student always has somewhere to draw AND the export captures ink */}
@@ -796,7 +796,7 @@ const ChallengeQuizView = ({
           )}
 
           {step === 'feedback' && (() => {
-            const isPendingReview = currentQuestion?.type === 'graph_sketch' || currentQuestion?.requiresManualGrading === true;
+            const isPendingReview = currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review' || currentQuestion?.requiresManualGrading === true;
             const palette = isPendingReview
               ? { accent: '#f59e0b', text: '#78350f', iconBg: '#fef3c7', barBg: '#fef9e7', shadow: 'rgba(245,158,11,0.18)', label: 'Submitted for review', icon: <Clock size={32} color="#f59e0b" /> }
               : isCorrect

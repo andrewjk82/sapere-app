@@ -32,6 +32,16 @@ if (typeof window !== 'undefined' && MathfieldElement) {
  */
 const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false, placeholder = '', autoFocus = false, style }, ref) => {
   const mfRef = useRef(null);
+  // Keep callback refs so event listeners never need to be torn down and
+  // re-attached on every render (avoids missing rapid-fire input events).
+  const onChangeRef = useRef(onChange);
+  const onEnterRef  = useRef(onEnter);
+  useEffect(() => { onChangeRef.current = onChange; }, [onChange]);
+  useEffect(() => { onEnterRef.current  = onEnter;  }, [onEnter]);
+
+  // Track whether the current mf.value change originated from the user
+  // (input event) so the sync effect doesn't fight MathLive mid-keystroke.
+  const userTypingRef = useRef(false);
 
   useImperativeHandle(ref, () => ({
     insert: (latex, options) => {
@@ -44,7 +54,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     getValue: () => mfRef.current?.value ?? '',
   }), []);
 
-  // Wire up change + Enter handlers.
+  // Wire up change + Enter handlers — runs ONCE on mount only.
   useEffect(() => {
     const mf = mfRef.current;
     if (!mf) return;
@@ -56,21 +66,30 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     if (placeholder) mf.setAttribute('placeholder', placeholder);
 
     // Touch devices: explicitly show MathLive's on-screen keyboard on focus.
-    // ('auto' policy is unreliable inside our high-z-index modals, which is why
-    //  phones were seeing "no keyboard". CSS lifts the keyboard above modals.)
     const isTouch = typeof window !== 'undefined' &&
       (('ontouchstart' in window) || navigator.maxTouchPoints > 0 ||
        window.matchMedia?.('(pointer: coarse)')?.matches);
 
-    const handleInput = () => onChange?.(mf.value);
+    const handleInput = () => {
+      userTypingRef.current = true;   // suppress sync effect for this update
+      onChangeRef.current?.(mf.value);
+    };
     const handleKeydown = (e) => {
+      if (e.key === ':') {
+        // MathLive smartMode converts ':' → '\Colon' and treats the next digit
+        // as a superscript. Override: insert a plain \colon (renders as ':')
+        // which our answer normaliser converts back to ':' for grading.
+        e.preventDefault();
+        mf.insert('\\colon');
+        return;
+      }
       if (e.key === 'Enter') {
         e.preventDefault();
-        onEnter?.();
+        onEnterRef.current?.();
       }
     };
     const handleFocus = () => {
-      if (isTouch && !readOnly) {
+      if (isTouch && !mf.readOnly) {
         try { window.mathVirtualKeyboard?.show(); } catch (_) { /* ignore */ }
       }
     };
@@ -87,15 +106,28 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
       mf.removeEventListener('focusin', handleFocus);
       mf.removeEventListener('focusout', handleBlur);
     };
-  }, [onChange, onEnter, placeholder, readOnly]);
+  }, []); // ← empty deps: register once, use refs for callbacks
 
-  // Sync controlled value (guard against feedback loops).
+  // Sync controlled value — only when the change came from the parent
+  // (e.g. clearing the field on question change), not from user typing.
   useEffect(() => {
     const mf = mfRef.current;
-    if (mf && typeof value === 'string' && mf.value !== value) {
+    if (!mf || typeof value !== 'string') return;
+    if (userTypingRef.current) {
+      // User just typed — MathLive already has the right value; skip the reset.
+      userTypingRef.current = false;
+      return;
+    }
+    if (mf.value !== value) {
       mf.value = value;
     }
   }, [value]);
+
+  // Placeholder sync.
+  useEffect(() => {
+    const mf = mfRef.current;
+    if (mf && placeholder) mf.setAttribute('placeholder', placeholder);
+  }, [placeholder]);
 
   // Read-only toggle.
   useEffect(() => {

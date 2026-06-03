@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, runTransaction, where, increment, serverTimestamp, limit, setDoc, arrayUnion } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, where, limit, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
 import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
@@ -435,115 +436,7 @@ const ReportsAdmin = () => {
     if (processingId) return;
     try {
       setProcessingId(item.id);
-      
-      // 1. Delete the grading queue item immediately
-      await deleteDoc(doc(db, 'grading_queue', item.id));
-
-      if (approved) {
-        const type = item.challengeType || 'daily';
-        const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
-        const userId = item.userId;
-        
-        // Match statId logic from Dashboard
-        let statId = item.date;
-        if (!statId && item.submittedAt) {
-          const sAt = item.submittedAt;
-          const d = (typeof sAt.toDate === 'function') ? sAt.toDate() : new Date(sAt);
-          if (!isNaN(d.getTime())) {
-            statId = d.toLocaleDateString('en-CA');
-          }
-        }
-        if (!statId) statId = item.id.split('_')[0];
-        
-        const totalQ = item.totalQuestions || 10;
-        const maxXP = type === 'calc' ? 50 : 100;
-        const xpPerQuestion = Math.round(maxXP / totalQ);
-
-        // Sync XP and Leaderboard via Transaction for atomicity
-        try {
-          await runTransaction(db, async (transaction) => {
-            let userRef = doc(db, 'users', userId);
-            let userSnap = await transaction.get(userRef);
-            let source = 'registered';
-
-            if (!userSnap.exists()) {
-              userRef = doc(db, 'students', userId);
-              userSnap = await transaction.get(userRef);
-              source = 'manual';
-            }
-
-            if (userSnap.exists()) {
-              const userData = userSnap.data();
-              const newXP = (Number(userData.totalXP) || 0) + xpPerQuestion;
-              
-              // Update user doc
-              transaction.update(userRef, {
-                totalXP: newXP,
-                points: increment(10),
-                updatedAt: new Date().toISOString()
-              });
-
-              // Update leaderboard doc
-              const leaderboardId = source === 'manual' ? `manual-${userId}` : userId;
-              const leaderboardRef = doc(db, 'leaderboard', leaderboardId);
-              
-              const displayName = userData.name || userData.displayName || 
-                                (userData.firstName ? `${userData.firstName} ${userData.lastName || ''}`.trim() : '') || 'Student';
-              
-              const avatarUrl = userData.avatarUrl || userData.dreamImageUrl || 
-                               `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(userId)}`;
-
-              transaction.set(leaderboardRef, {
-                name: displayName,
-                avatarUrl: avatarUrl,
-                totalXP: newXP,
-                lastUpdated: serverTimestamp(),
-                role: userData.role || 'student',
-                year: userData.year || userData.assignedYear || ''
-              }, { merge: true });
-            }
-          });
-        } catch (err) {
-          console.error("XP/Leaderboard sync failed:", err);
-        }
-
-        // Update stats document
-        if (statId && userId) {
-          const safeStatId = typeof statId === 'string' ? statId.replace(/\//g, '-') : String(statId);
-          let statRef = doc(db, 'users', userId, colName, safeStatId);
-          try {
-            let statSnap = await getDoc(statRef);
-            if (!statSnap.exists()) {
-              statRef = doc(db, 'students', userId, colName, statId);
-              statSnap = await getDoc(statRef);
-            }
-
-            if (statSnap.exists()) {
-              const statsData = statSnap.data();
-              const updatedResults = [...(statsData.answerResults || [])];
-              const qIndex = updatedResults.findIndex(r => r.questionId === item.questionId);
-              
-              if (qIndex !== -1) {
-                updatedResults[qIndex].correct = true;
-                updatedResults[qIndex].isPending = false;
-                updatedResults[qIndex].selectedAnswer = 'Approved';
-              }
-
-              await updateDoc(statRef, {
-                score: increment(1),
-                xpEarned: increment(xpPerQuestion),
-                ...(qIndex !== -1 ? { answerResults: updatedResults } : {})
-              });
-            }
-          } catch (err) {
-             console.warn("Could not update stat score/results", err);
-          }
-        }
-      }
-
-      // Notify via server if needed (simulated)
-      console.log(`Submission ${item.id} ${approved ? 'approved' : 'rejected'}`);
-
+      await gradeSubmission(item, approved);
     } catch (err) {
       console.error('Error grading submission:', err);
       alert('Failed to update grade. Please check your connection.');
