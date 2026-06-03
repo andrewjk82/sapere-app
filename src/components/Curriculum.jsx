@@ -2258,20 +2258,38 @@ const Curriculum = () => {
               </div>
 
               {/* Row 2 — Year tabs */}
-              <div className="curriculum-year-tabs">
-                {YEARS.map(year => (
-                  <button
-                    key={year}
-                    onClick={() => {
-                      setSelectedYear(year);
-                      if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
-                    }}
-                    className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
-                  >
-                    {year}
-                  </button>
-                ))}
-              </div>
+              {(() => {
+                // Pre-compute total seeded questions per year from CHAPTER_SEED_REGISTRY
+                const seedCountByYear = CHAPTER_SEED_REGISTRY.reduce((acc, entry) => {
+                  const y = entry.year;
+                  acc[y] = (acc[y] || 0) + (Array.isArray(entry.seed) ? entry.seed.length : 0);
+                  return acc;
+                }, {});
+                return (
+                  <div className="curriculum-year-tabs">
+                    {YEARS.map(year => {
+                      const count = seedCountByYear[year] || 0;
+                      return (
+                        <button
+                          key={year}
+                          onClick={() => {
+                            setSelectedYear(year);
+                            if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
+                          }}
+                          className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
+                        >
+                          {year}
+                          {count > 0 && (
+                            <span style={{ display: 'block', fontSize: '0.62rem', fontWeight: 700, opacity: 0.7, lineHeight: 1, marginTop: '2px' }}>
+                              {count.toLocaleString()} Qs
+                            </span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                );
+              })()}
 
               {/* Row 3 — Course tabs (Year 11/12 only) */}
               {courses && (
