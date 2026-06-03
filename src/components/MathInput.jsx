@@ -32,6 +32,9 @@ if (typeof window !== 'undefined' && MathfieldElement) {
  */
 const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false, placeholder = '', autoFocus = false, style }, ref) => {
   const mfRef = useRef(null);
+  // Capture the initial value so we can seed mf.value on mount without
+  // making it a reactive dependency (we do NOT want mount effect to re-run).
+  const initialValueRef = useRef(value);
   // Keep callback refs so event listeners never need to be torn down and
   // re-attached on every render (avoids missing rapid-fire input events).
   const onChangeRef = useRef(onChange);
@@ -64,6 +67,11 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     mf.smartMode = true;        // typing "sin" etc. becomes operators, "1/2" → fraction
     mf.smartFence = true;
     if (placeholder) mf.setAttribute('placeholder', placeholder);
+
+    // Set initial value from the prop (child text is NOT updated after mount,
+    // so we must seed the field here to avoid MathLive reinitialising on every
+    // render when React updates the child text node).
+    if (initialValueRef.current) mf.value = initialValueRef.current;
 
     // Touch devices: explicitly show MathLive's on-screen keyboard on focus.
     const isTouch = typeof window !== 'undefined' &&
@@ -157,9 +165,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
         background: '#fff',
         ...style,
       }}
-    >
-      {value}
-    </math-field>
+    />
   );
 });
 
