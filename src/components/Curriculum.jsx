@@ -39,6 +39,7 @@ import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQues
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import { Y11_CH3B_QUESTIONS } from '../constants/seedYear11Ch3BQuestions.js';
+import { Y11_CH3C_QUESTIONS } from '../constants/seedYear11Ch3CQuestions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y11_EXT1_CH1A_QUESTIONS } from '../constants/seedYear11Ext1Ch1AQuestions.js';
 import { Y11_EXT1_CH1B_QUESTIONS } from '../constants/seedYear11Ext1Ch1BQuestions.js';
@@ -385,6 +386,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-8', chapterTitle: 'Chapter 8: Review of congruence and similarity', topicId: 'y10-8e', topicCode: '8E', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH8E_QUESTIONS, label: 'Y10 Ch8 · 8E Revision' },
   { chapterId: 'y10-9', chapterTitle: 'Chapter 9: Indices, Exponentials and Logarithms', topicId: 'y10-9a', topicCode: '9A', topicTitle: 'Review of powers and integer indices', year: 'Year 10', seed: Y10_CH9_QUESTIONS, label: 'Y10 Ch9 · 9A Review of powers and integer indices' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
+  { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1A', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1B', topicCode: '1B', topicTitle: 'Factoring', year: 'Year 11', seed: Y11_EXT1_CH1B_QUESTIONS, label: 'Y11 Ext1 Ch1 · Factoring' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1C', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11', seed: Y11_EXT1_CH1C_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebraic fractions' },
