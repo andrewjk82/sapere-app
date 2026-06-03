@@ -12,16 +12,16 @@
 학년:        Year 11
 챕터 번호:   3
 chapterId:   y11-3
-서브토픽 ID: y11-3c
-토픽 코드:   3C
+서브토픽 ID: y11-3d
+토픽 코드:   3D
 서브토픽 제목: <서브토픽 제목>
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1  ~ Q8  → easy
-Q9  ~ Q13 → medium
+Q1  ~ Q6  → easy
+Q7  ~ Q13 → medium
 Q14 ~     → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
@@ -46,7 +46,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q3, Q5, Q6,Q7, Q10, Q12
+  Q5 ~ Q15
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
