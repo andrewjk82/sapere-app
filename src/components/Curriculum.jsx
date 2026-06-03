@@ -151,6 +151,7 @@ import { Y10_CH8E_QUESTIONS } from '../constants/seedYear10Ch8EQuestions.js';
 import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
 import { ASCHAM_2020_QUESTIONS } from '../constants/seedAscham2020Questions.js';
+import { BARKER_2020_QUESTIONS } from '../constants/seedBarker2020Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -473,6 +474,7 @@ const CHAPTER_SEED_REGISTRY = [
   // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
   { chapterId: 'exam:abbotsleigh-2020', badgeLabel: 'Y12 EXAM', examPaper: 'abbotsleigh-2020', chapterTitle: 'Abbotsleigh 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam', year: 'Year 12', seed: ABBOTSLEIGH_2020_QUESTIONS, label: 'Y12 · Abbotsleigh 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:asc-2020', badgeLabel: 'Y12 EXAM', examPaper: 'asc-2020', chapterTitle: 'Ascham 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Ascham 2020 Trial Exam', year: 'Year 12', seed: ASCHAM_2020_QUESTIONS, label: 'Y12 · Ascham 2020 HSC Trial (Advanced)' },
+  { chapterId: 'exam:bar-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bar-2020', chapterTitle: 'Barker 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Barker 2020 Trial Exam', year: 'Year 12', seed: BARKER_2020_QUESTIONS, label: 'Y12 · Barker 2020 HSC Trial (Advanced)' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5A', topicCode: '5A', topicTitle: 'Review of exponential functions base e', year: 'Year 12', seed: Y12A_CH5A_QUESTIONS, label: 'Y12 Ch5 · 5A Review of exponential functions base e' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5B', topicCode: '5B', topicTitle: 'Differentiation of exponential functions', year: 'Year 12', seed: Y12A_CH5B_QUESTIONS, label: 'Y12 Ch5 · 5B Differentiation of exponential functions' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5C', topicCode: '5C', topicTitle: 'Applications of differentiation', year: 'Year 12', seed: Y12A_CH5C_QUESTIONS, label: 'Y12 Ch5 · 5C Applications of differentiation' },
