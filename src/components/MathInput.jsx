@@ -101,14 +101,24 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
         try { window.mathVirtualKeyboard?.show(); } catch (_) { /* ignore */ }
       }
     };
+    let blurTimer = null;
     const handleBlur = () => {
-      try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
+      // Delay so MathLive can return focus to the field after a virtual
+      // keyboard button tap — without the delay, every key press causes a
+      // brief focusout that hides the keyboard immediately.
+      clearTimeout(blurTimer);
+      blurTimer = setTimeout(() => {
+        const active = document.activeElement;
+        if (active === mf || mf.contains(active)) return; // focus came back
+        try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
+      }, 300);
     };
     mf.addEventListener('input', handleInput);
     mf.addEventListener('keydown', handleKeydown);
     mf.addEventListener('focusin', handleFocus);
     mf.addEventListener('focusout', handleBlur);
     return () => {
+      clearTimeout(blurTimer);
       mf.removeEventListener('input', handleInput);
       mf.removeEventListener('keydown', handleKeydown);
       mf.removeEventListener('focusin', handleFocus);
