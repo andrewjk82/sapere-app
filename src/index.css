@@ -693,6 +693,9 @@ input:focus {
    Lift it above everything, and give the math-field a comfortable tap target. */
 .ML__keyboard {
   z-index: 2000000 !important;
+  /* Gentle height reduction via the official keycap-height variable only.
+     (Avoid overriding gaps/padding — that can shift key hit-areas.) */
+  --keycap-height: 38px;
 }
 math-field {
   --keyboard-zindex: 2000000;
@@ -700,5 +703,6 @@ math-field {
   touch-action: manipulation;
 }
 math-field::part(virtual-keyboard-toggle) {
-  display: inline-flex; /* keep the on-screen keyboard toggle visible on mobile */
+  display: none; /* hidden — MathInput.jsx renders its own toggle OUTSIDE the field
+                    so closing isn't undone by the field re-focusing under 'auto' */
 }

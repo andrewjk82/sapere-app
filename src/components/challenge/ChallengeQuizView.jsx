@@ -21,6 +21,7 @@ const CHALLENGE_QUICK_INSERTS = [
   { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
   { label: 'xⁿ', latex: '^{#?}', title: 'Exponent' },
   { label: 'π', latex: '\\pi', title: 'Pi' },
+  { label: '±', latex: '\\pm', title: 'Plus or minus' },
   { label: '( )', latex: '(#?)', title: 'Brackets' },
 ];
 

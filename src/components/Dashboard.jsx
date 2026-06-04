@@ -272,8 +272,14 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         {!isAdmin && profile?.examPrepEnabled === true && (() => {
           // D-Day is only useful for students whose teacher has enabled Exam
           // Prep AND has set at least one term exam date — otherwise hide.
-          const nextExam = [1, 2, 3, 4]
-            .map(t => ({ term: t, date: profile?.[`term${t}ExamDate`] }))
+          const assignedCourses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
+          const isExtension = assignedCourses.some(c => c === 'Extension 1' || c === 'Extension 2');
+          const examEntries = [1, 2, 3, 4].flatMap(t => {
+            const entries = [{ term: t, label: `Term ${t}`, date: profile?.[`term${t}ExamDate`] }];
+            if (isExtension) entries.push({ term: t, label: `Ext1 Term ${t}`, date: profile?.[`ext1term${t}ExamDate`] });
+            return entries;
+          });
+          const nextExam = examEntries
             .filter(t => t.date)
             .map(t => ({ ...t, dday: Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000) }))
             .filter(t => t.dday >= 0)
@@ -307,7 +313,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
-                  Term {nextExam.term} Exam · Tap to practise
+                  {nextExam.label} Exam · Tap to practise
                 </div>
                 <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
                   {nextExam.dday === 0 ? 'Exam is today! Good luck! 🎉' : `${nextExam.dday} day${nextExam.dday > 1 ? 's' : ''} to go — keep it up!`}

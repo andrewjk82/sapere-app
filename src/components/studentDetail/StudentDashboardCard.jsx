@@ -1,5 +1,93 @@
 import { X } from "lucide-react";
 
+function TermResultsSection({ label, prefix, student, editingTerm, setEditingTerm, showToast, onUpdateCurriculumSetting }) {
+  return (
+    <div>
+      {label && (
+        <div style={{ fontSize: "0.7rem", fontWeight: 800, color: "#6366f1", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+          {label}
+        </div>
+      )}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
+        {[1, 2, 3, 4].map(term => {
+          const scoreKey = `${prefix}term${term}Result`;
+          const linkKey = `${prefix}term${term}Link`;
+          const dateKey = `${prefix}term${term}ExamDate`;
+          const editKey = `${prefix}${term}`;
+          const score = student?.[scoreKey];
+          const link = student?.[linkKey];
+          const examDate = student?.[dateKey];
+          const isEditing = editingTerm === editKey;
+          const dday = examDate ? Math.ceil((new Date(examDate) - new Date(new Date().toDateString())) / 86400000) : null;
+
+          return (
+            <div key={term} style={{ display: "flex", flexDirection: "column" }}>
+              {!isEditing ? (
+                <div
+                  style={{
+                    display: "flex", alignItems: "center", justifyContent: "space-between",
+                    padding: "10px 16px", borderRadius: "100px", border: "2px solid #6366f1",
+                    background: "white", cursor: "pointer", transition: "all 0.2s"
+                  }}
+                  onClick={() => {
+                    if (link) { window.open(link, "_blank"); }
+                    else { showToast("No report card available.", "warning"); }
+                  }}
+                >
+                  <div style={{ width: "20px" }}></div>
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1, gap: "2px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                      <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
+                      {score && <span style={{ fontSize: "0.85rem", fontWeight: 900, color: "#8b5cf6" }}>{score}</span>}
+                    </div>
+                    {dday !== null && (
+                      <span style={{ fontSize: "0.65rem", fontWeight: 800, color: dday === 0 ? "#ef4444" : dday < 0 ? "#94a3b8" : dday <= 7 ? "#f59e0b" : "#6366f1" }}>
+                        {dday === 0 ? "D-Day" : dday < 0 ? `D+${Math.abs(dday)}` : `D-${dday}`}
+                      </span>
+                    )}
+                  </div>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setEditingTerm(editKey); }}
+                    style={{ background: "none", border: "none", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", color: "#94a3b8", padding: "2px", width: "20px", height: "20px" }}
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                  </button>
+                </div>
+              ) : (
+                <div style={{ padding: "16px", borderRadius: "24px", border: "2px solid #e2e8f0", background: "#f8fafc", display: "flex", flexDirection: "column", gap: "12px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "4px" }}>
+                    <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#475569" }}>Edit Term {term}</span>
+                    <button onClick={() => setEditingTerm(null)} style={{ background: "none", border: "none", cursor: "pointer", color: "#64748b", padding: "4px" }}><X size={16} /></button>
+                  </div>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Exam Date</label>
+                    <input type="date" value={student?.[dateKey] || ""} onChange={(e) => onUpdateCurriculumSetting(dateKey, e.target.value)}
+                      style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }} />
+                  </div>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Score (Optional)</label>
+                    <input type="text" placeholder="e.g. 85%" value={score || ""} onChange={(e) => onUpdateCurriculumSetting(scoreKey, e.target.value)}
+                      style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }} />
+                  </div>
+                  <div>
+                    <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Report Link</label>
+                    <input type="url" placeholder="e.g. Google Drive link" value={link || ""} onChange={(e) => onUpdateCurriculumSetting(linkKey, e.target.value)}
+                      style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }} />
+                  </div>
+                  <button onClick={() => setEditingTerm(null)}
+                    style={{ padding: "10px", borderRadius: "12px", background: "#6366f1", color: "white", fontWeight: 700, border: "none", cursor: "pointer", marginTop: "4px", width: "100%" }}>
+                    Done
+                  </button>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 export default function StudentDashboardCard({
   styles,
   student,
@@ -13,6 +101,10 @@ export default function StudentDashboardCard({
   showToast,
   onUpdateCurriculumSetting,
 }) {
+  const assignedCourses = Array.isArray(student?.assignedCourse)
+    ? student.assignedCourse
+    : [student?.assignedCourse || "Advanced"];
+  const isExtension = assignedCourses.some(c => c === "Extension 1" || c === "Extension 2");
   return (
     <div
       className="stats-grid-mobile"
@@ -143,120 +235,43 @@ export default function StudentDashboardCard({
         <div style={{ ...styles.card, flex: "none", padding: "24px" }}>
           <div
             className="section-title"
-            style={{
-              fontSize: "0.75rem",
-              fontWeight: 800,
-              color: "#94a3b8",
-              marginBottom: "16px",
-            }}
+            style={{ fontSize: "0.75rem", fontWeight: 800, color: "#94a3b8", marginBottom: "16px" }}
           >
             TERM RESULTS & REPORTS
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" }}>
-            {[1, 2, 3, 4].map(term => {
-              const score = student?.[`term${term}Result`];
-              const link = student?.[`term${term}Link`];
-              const examDate = student?.[`term${term}ExamDate`];
-              const isEditing = editingTerm === term;
-              const dday = examDate ? Math.ceil((new Date(examDate) - new Date(new Date().toDateString())) / 86400000) : null;
-
-              return (
-                <div key={term} style={{ display: "flex", flexDirection: "column" }}>
-                  {!isEditing ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        padding: "10px 16px",
-                        borderRadius: "100px",
-                        border: "2px solid #6366f1",
-                        background: "white",
-                        cursor: "pointer",
-                        transition: "all 0.2s"
-                      }}
-                      onClick={() => {
-                        if (link) {
-                          window.open(link, "_blank");
-                        } else {
-                          showToast("No report card available.", "warning");
-                        }
-                      }}
-                    >
-                      {/* Placeholder for perfect centering balance */}
-                      <div style={{ width: "20px" }}></div>
-
-                      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1, gap: "2px" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-                          <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
-                          {score && <span style={{ fontSize: "0.85rem", fontWeight: 900, color: "#8b5cf6" }}>{score}</span>}
-                        </div>
-                        {dday !== null && (
-                          <span style={{ fontSize: "0.65rem", fontWeight: 800, color: dday === 0 ? "#ef4444" : dday < 0 ? "#94a3b8" : dday <= 7 ? "#f59e0b" : "#6366f1" }}>
-                            {dday === 0 ? "D-Day" : dday < 0 ? `D+${Math.abs(dday)}` : `D-${dday}`}
-                          </span>
-                        )}
-                      </div>
-
-                      <button
-                        onClick={(e) => { e.stopPropagation(); setEditingTerm(term); }}
-                        style={{
-                          background: "none", border: "none", cursor: "pointer",
-                          display: "flex", alignItems: "center", justifyContent: "center",
-                          color: "#94a3b8", padding: "2px", width: "20px", height: "20px"
-                        }}
-                      >
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
-                      </button>
-                    </div>
-                  ) : (
-                    <div style={{ padding: "16px", borderRadius: "24px", border: "2px solid #e2e8f0", background: "#f8fafc", display: "flex", flexDirection: "column", gap: "12px" }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "4px" }}>
-                        <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#475569" }}>Edit Term {term}</span>
-                        <button onClick={() => setEditingTerm(null)} style={{ background: "none", border: "none", cursor: "pointer", color: "#64748b", padding: "4px" }}><X size={16} /></button>
-                      </div>
-                      <div>
-                        <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Exam Date</label>
-                        <input
-                          type="date"
-                          value={student?.[`term${term}ExamDate`] || ""}
-                          onChange={(e) => onUpdateCurriculumSetting(`term${term}ExamDate`, e.target.value)}
-                          style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
-                        />
-                      </div>
-                      <div>
-                        <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Score (Optional)</label>
-                        <input
-                          type="text"
-                          placeholder="e.g. 85%"
-                          value={score || ""}
-                          onChange={(e) => onUpdateCurriculumSetting(`term${term}Result`, e.target.value)}
-                          style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
-                        />
-                      </div>
-                      <div>
-                        <label style={{ display: "block", fontSize: "0.7rem", fontWeight: 700, color: "#94a3b8", marginBottom: "4px", textTransform: "uppercase" }}>Report Link</label>
-                        <input
-                          type="url"
-                          placeholder="e.g. Google Drive link"
-                          value={link || ""}
-                          onChange={(e) => onUpdateCurriculumSetting(`term${term}Link`, e.target.value)}
-                          style={{ padding: "10px 14px", borderRadius: "12px", border: "1px solid #cbd5e1", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }}
-                        />
-                      </div>
-                      <button
-                        onClick={() => setEditingTerm(null)}
-                        style={{ padding: "10px", borderRadius: "12px", background: "#6366f1", color: "white", fontWeight: 700, border: "none", cursor: "pointer", marginTop: "4px", width: "100%" }}
-                      >
-                        Done
-                      </button>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
+          {isExtension ? (
+            <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+              <TermResultsSection
+                label="Advanced"
+                prefix=""
+                student={student}
+                editingTerm={editingTerm}
+                setEditingTerm={setEditingTerm}
+                showToast={showToast}
+                onUpdateCurriculumSetting={onUpdateCurriculumSetting}
+              />
+              <TermResultsSection
+                label="Extension 1"
+                prefix="ext1"
+                student={student}
+                editingTerm={editingTerm}
+                setEditingTerm={setEditingTerm}
+                showToast={showToast}
+                onUpdateCurriculumSetting={onUpdateCurriculumSetting}
+              />
+            </div>
+          ) : (
+            <TermResultsSection
+              label={null}
+              prefix=""
+              student={student}
+              editingTerm={editingTerm}
+              setEditingTerm={setEditingTerm}
+              showToast={showToast}
+              onUpdateCurriculumSetting={onUpdateCurriculumSetting}
+            />
+          )}
         </div>
       </div>
     </div>
