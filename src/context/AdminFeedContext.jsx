@@ -90,6 +90,8 @@ export const AdminFeedProvider = ({ children }) => {
       (snap) => {
         const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
         setOpenReports(items);
+        // Skip cache snapshots — only trust server-confirmed data for notifications.
+        if (snap.metadata.fromCache) return;
         if (seenReportIdsRef.current === null) {
           seenReportIdsRef.current = new Set(items.map(i => i.id));
           return;
