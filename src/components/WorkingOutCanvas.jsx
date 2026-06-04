@@ -165,7 +165,7 @@ const pageHasInk = (pageStrokes = []) =>
     !stroke?.isEraser && Array.isArray(stroke.points) && stroke.points.length > 0
   );
 
-const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp }, ref) => {
+const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange }, ref) => {
   const bgCanvasRef = useRef(null);
   const liveCanvasRef = useRef(null);
   const displayCanvasRef = useRef(null); // top layer: tip + pointer events
@@ -205,6 +205,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [undoStack, setUndoStack] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [pages, setPages] = useState([[]]);
+  const initialIsGraph = isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch';
+  const [pageTypes, setPageTypes] = useState([initialIsGraph]);
 
   const [activeTool, setActiveTool] = useState('pen');
   const [eraserMode, setEraserMode] = useState('area');
@@ -221,7 +223,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   strokeColorRef.current = strokeColor;
   strokeWidthRef.current = strokeWidth;
 
-  const isGraph = isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch';
+  const isGraph = pageTypes[currentPage] ?? (isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch');
 
   // ─── Cached drawing contexts ──────────────────────────────────────────────
   // NOTE: `desynchronized: true` promotes each canvas to an opaque hardware
@@ -415,6 +417,13 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     if (!isAppend) redrawBackground();
     bgRenderedRef.current = strokes;
   }, [strokes, redrawBackground]);
+
+  // Notify parent when current page type changes (page switch or type toggle).
+  const onPageChangeRef = useRef(onPageChange);
+  onPageChangeRef.current = onPageChange;
+  useEffect(() => {
+    onPageChangeRef.current?.();
+  }, [currentPage, pageTypes]);
 
   // ─── Native pointer listeners (non-passive → preventDefault works) ────────
   useEffect(() => {
@@ -773,6 +782,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       next.push([]);
       return next;
     });
+    setPageTypes(prev => [...prev, false]);
     setCurrentPage(prev => prev + 1);
     setStrokes([]);
     setUndoStack([]);
@@ -849,10 +859,19 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       clear: () => {
         setStrokes([]);
         setPages([[]]); setCurrentPage(0);
+        setPageTypes([initialIsGraph]);
         setUndoStack([]);
-      }
+      },
+      getCurrentPageType: () => pageTypes[currentPage] ?? false,
+      setCurrentPageType: (val) => {
+        setPageTypes(prev => {
+          const next = [...prev];
+          next[currentPage] = val;
+          return next;
+        });
+      },
     };
-  }, [pages, currentPage, isGraph]);
+  }, [pages, currentPage, isGraph, pageTypes, initialIsGraph]);
 
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,

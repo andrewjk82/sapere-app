@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import { LayoutGrid, AlignJustify } from 'lucide-react';
 
@@ -41,23 +41,41 @@ const CanvasErrorBoundary = ({ children }) => {
   return children;
 };
 
-const ChallengeSketchBoard = React.forwardRef(({ 
-  placement = 'side', 
-  questionId, 
-  questionType, 
+const ChallengeSketchBoard = React.forwardRef(({
+  placement = 'side',
+  questionId,
+  questionType,
   isSubmitted,
   showSplitScreen,
   fillAvailableHeight = false,
   scrollProxyHandlers
 }, ref) => {
+  const canvasRef = useRef(null);
   const [isGraphPaper, setIsGraphPaper] = useState(false);
+
+  const handleRef = useCallback((node) => {
+    canvasRef.current = node;
+    if (typeof ref === 'function') ref(node);
+    else if (ref) ref.current = node;
+  }, [ref]);
+
+  const togglePaperType = () => {
+    const newVal = !isGraphPaper;
+    setIsGraphPaper(newVal);
+    canvasRef.current?.setCurrentPageType(newVal);
+  };
+
+  const handlePageChange = useCallback(() => {
+    const type = canvasRef.current?.getCurrentPageType() ?? false;
+    setIsGraphPaper(type);
+  }, []);
 
   if (!showSplitScreen) return null;
 
   const isTabletPlacement = placement === 'tablet';
   const sideHeight = fillAvailableHeight ? '100%' : 'calc(100vh - 116px)';
   const sideMinHeight = fillAvailableHeight ? 0 : '400px';
-  
+
   return (
     <div style={{
       flex: isTabletPlacement ? 'none' : '1.35 1 640px',
@@ -72,7 +90,7 @@ const ChallengeSketchBoard = React.forwardRef(({
     }} {...(scrollProxyHandlers || {})}>
       <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '6px' }}>
         <button
-          onClick={() => setIsGraphPaper(v => !v)}
+          onClick={togglePaperType}
           title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
           style={{
             display: 'inline-flex', alignItems: 'center', gap: '5px',
@@ -88,10 +106,10 @@ const ChallengeSketchBoard = React.forwardRef(({
       </div>
       <CanvasErrorBoundary key={questionId}>
         <WorkingOutCanvas
-          ref={ref}
+          ref={handleRef}
           questionType={questionType}
           isSubmitted={isSubmitted}
-          isGraph={isGraphPaper}
+          onPageChange={handlePageChange}
         />
       </CanvasErrorBoundary>
     </div>

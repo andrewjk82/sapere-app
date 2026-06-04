@@ -600,7 +600,11 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         <div style={{ minWidth: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <button
-              onClick={() => setIsGraphPaper(v => !v)}
+              onClick={() => {
+                const newVal = !isGraphPaper;
+                setIsGraphPaper(newVal);
+                canvasRef.current?.setCurrentPageType(newVal);
+              }}
               title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '5px',
@@ -615,7 +619,8 @@ const QuizView = ({ questions, onFinish, onReport }) => {
             </button>
           </div>
           <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
+            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false}
+              onPageChange={() => setIsGraphPaper(canvasRef.current?.getCurrentPageType() ?? false)} />
           </div>
         </div>
       </div>
@@ -640,7 +645,11 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           >
             <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
               <button
-                onClick={() => setIsGraphPaper(v => !v)}
+                onClick={() => {
+                  const newVal = !isGraphPaper;
+                  setIsGraphPaper(newVal);
+                  canvasRef.current?.setCurrentPageType(newVal);
+                }}
                 title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '5px',
@@ -655,7 +664,8 @@ const QuizView = ({ questions, onFinish, onReport }) => {
               </button>
             </div>
             <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-              <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
+              <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false}
+                onPageChange={() => setIsGraphPaper(canvasRef.current?.getCurrentPageType() ?? false)} />
             </div>
           </motion.div>
         )}
