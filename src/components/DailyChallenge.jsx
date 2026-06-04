@@ -406,6 +406,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setCurrentSessionId(today);
     setCalcSessionMeta(sessionMeta);
     initQuizState(combinedQs);
+    // Lock immediately so auto-update can't reload the page during Firebase writes.
+    if (setIsLocked) setIsLocked(true);
 
     // Firebase start-record (crash-safety lock)
     if (user?.uid) {
@@ -428,6 +430,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       } catch (err) {
         console.error('Calc start-up Firebase lock failed:', err);
         showToast('Connection failed. Please check your internet and try again.', 'error');
+        if (setIsLocked) setIsLocked(false);
         setLoading(false);
         return;
       }
@@ -455,6 +458,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (combinedQs.length === 0) throw new Error('No daily assignment questions were generated.');
 
       initQuizState(combinedQs);
+      // Lock immediately so auto-update can't reload the page during Firebase writes.
+      if (setIsLocked) setIsLocked(true);
 
       // Firebase start-record (crash-safety lock)
       if (user?.uid) {
@@ -479,6 +484,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     } catch (error) {
       console.error('Critical error in startDailyQuiz:', error);
       showToast(`Failed to start challenge${error?.message ? ` (${error.message})` : ''}. Please check your assigned curriculum or try again later.`, 'error');
+      if (setIsLocked) setIsLocked(false);
       setLoading(false);
     }
   };
