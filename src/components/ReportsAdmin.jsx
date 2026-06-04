@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, where, limit, setDoc, arrayUnion } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, where, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
@@ -380,6 +380,48 @@ const ReportsAdmin = () => {
     return true;
   };
 
+  // Fallback: grant XP/points directly when no completed attempt exists
+  // (e.g. student filed the report during quiz and never completed it).
+  const grantCreditDirectly = async (report) => {
+    const studentId = report.studentId;
+    const restoredAt = new Date().toISOString();
+    const XP_GRANT = 10;
+    const POINTS_GRANT = 10;
+
+    const roots = ['users', 'students'];
+    let userRef = null;
+    let userSnap = null;
+
+    for (const root of roots) {
+      const ref = doc(db, root, studentId);
+      const snap = await getDoc(ref);
+      if (snap.exists()) { userRef = ref; userSnap = snap; break; }
+    }
+
+    if (!userRef || !userSnap) throw new Error('user-not-found');
+
+    await runTransaction(db, async (transaction) => {
+      const snap = await transaction.get(userRef);
+      if (!snap.exists()) throw new Error('user-not-found');
+      const data = snap.data();
+      const newXP = (Number(data.totalXP) || 0) + XP_GRANT;
+      transaction.update(userRef, {
+        totalXP: newXP,
+        points: increment(POINTS_GRANT),
+        updatedAt: restoredAt,
+      });
+      const reportRef = doc(db, 'reports', report.id);
+      transaction.update(reportRef, {
+        status: 'resolved',
+        creditRestored: true,
+        creditRestoredAt: restoredAt,
+        creditRestoredDirectly: true,
+        restoredPoints: 1,
+        restoredXp: XP_GRANT,
+      });
+    });
+  };
+
   const handleRestoreCredit = async (report) => {
     if (processingId) return;
     if (report.creditRestored) {
@@ -394,8 +436,13 @@ const ReportsAdmin = () => {
       setProcessingId(report.id);
       const restored = await restoreCreditForReport(report);
       if (!restored) {
-        alert('Could not find the matching completed attempt for this report.');
-        return;
+        // No completed attempt found (e.g. student reported mid-quiz and abandoned).
+        // Offer to grant credit directly instead.
+        const directGrant = window.confirm(
+          "No completed quiz attempt was found for this question — the student may have reported it before finishing the quiz.\n\nGrant credit directly to the student anyway?"
+        );
+        if (!directGrant) return;
+        await grantCreditDirectly(report);
       }
       setPreviewReport(null);
       setPreviewQuestion(null);
@@ -408,6 +455,7 @@ const ReportsAdmin = () => {
         'stat-not-found': "The student's challenge record for this question could not be found. It may have been pruned or never saved.",
         'result-not-found': 'This answer could not be located within the matched attempt. The detail snapshot may be missing.',
         'score-already-full': "This attempt's score is already full — there is nothing left to restore.",
+        'user-not-found': "The student's account could not be found.",
       };
       alert(KNOWN[code] || `Failed to restore credit (${code}). Please check the matching attempt and try again.`);
     } finally {
