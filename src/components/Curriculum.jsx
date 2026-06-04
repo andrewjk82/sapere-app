@@ -44,6 +44,7 @@ import { Y11_CH3D_QUESTIONS } from '../constants/seedYear11Ch3DQuestions.js';
 import { Y11_CH3E_QUESTIONS } from '../constants/seedYear11Ch3EQuestions.js';
 import { Y11_CH3F_QUESTIONS } from '../constants/seedYear11Ch3FQuestions.js';
 import { Y11_CH3G_QUESTIONS } from '../constants/seedYear11Ch3GQuestions.js';
+import { Y11_CH3H_QUESTIONS } from '../constants/seedYear11Ch3HQuestions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y11_EXT1_CH1A_QUESTIONS } from '../constants/seedYear11Ext1Ch1AQuestions.js';
 import { Y11_EXT1_CH1B_QUESTIONS } from '../constants/seedYear11Ext1Ch1BQuestions.js';
@@ -396,6 +397,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3E', topicCode: '3E', topicTitle: 'Completing the square and the graph', year: 'Year 11', seed: Y11_CH3E_QUESTIONS, label: 'Y11A Ch3 · 3E Completing the square and the graph' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3F', topicCode: '3F', topicTitle: 'The quadratic formulae and the graph', year: 'Year 11', seed: Y11_CH3F_QUESTIONS, label: 'Y11A Ch3 · 3F The quadratic formulae and the graph' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3G', topicCode: '3G', topicTitle: 'Powers, cubics, and circles', year: 'Year 11', seed: Y11_CH3G_QUESTIONS, label: 'Y11A Ch3 · 3G Powers, cubics, and circles' },
+  { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3H', topicCode: '3H', topicTitle: 'Two graphs that have asymptotes', year: 'Year 11', seed: Y11_CH3H_QUESTIONS, label: 'Y11A Ch3 · 3H Two graphs that have asymptotes' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1A', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1B', topicCode: '1B', topicTitle: 'Factoring', year: 'Year 11', seed: Y11_EXT1_CH1B_QUESTIONS, label: 'Y11 Ext1 Ch1 · Factoring' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1C', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11', seed: Y11_EXT1_CH1C_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebraic fractions' },
