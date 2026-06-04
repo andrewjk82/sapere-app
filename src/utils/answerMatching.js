@@ -57,7 +57,7 @@ export const robustNormalize = (str) => {
     .replace(/[−–—]/g, '-')
     .replace(/\\cdot|\\times|×|·|⋅|∙|\*/g, '')
     .replace(/\\left|\\right/g, '')
-    .replace(/\$/g, '')
+    .replace(/\\\$/g, '').replace(/\$/g, '')
     .replace(/[{}]/g, '')
     .replace(/\s+/g, '')
     .replace(/[,.;]/g, '')
@@ -89,7 +89,7 @@ export const evalFractionValue = (value) => {
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2') // (a)/(b) → a/b
     .replace(/[−–—]/g, '-')
-    .replace(/\\left|\\right|\$|,/g, '')
+    .replace(/\\\$|\$|\\left|\\right|,/g, '')
     .trim();
 
   // Mixed number: "w a/b" or "w+a/b"  (separator = space or +)
@@ -119,7 +119,7 @@ export const parseNumericAnswer = (value) => {
 
   const cleaned = raw
     .replace(/[−–—]/g, '-')
-    .replace(/\$/g, '')
+    .replace(/\\\$/g, '').replace(/\$/g, '')
     .replace(/\\%/g, '%')          // LaTeX \% → %
     .replace(/,/g, '')
     .replace(/\b(aud|usd|nzd|dollars?|cents?)\b/gi, '')
