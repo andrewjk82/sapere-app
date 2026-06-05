@@ -2175,7 +2175,7 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-3G', code: '3G', title: 'Powers, cubics, and circles' },
           { id: 'y11a-3H', code: '3H', title: 'Two graphs that have asymptotes' },
           { id: 'y11a-3I', code: '3I', title: 'Direct and inverse variation' },
-          { id: 'y11a-3J', code: '3J', title: 'Revision' }
+          { id: 'y11a-3-3j', code: '3J', title: 'Revision' }
         ]
       },
       {
