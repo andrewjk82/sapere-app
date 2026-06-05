@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, BellRing } from 'lucide-react';
+import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, BellRing, RotateCcw } from 'lucide-react';
 import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
-import { collection, doc, getDoc, getDocs, limit, query, where } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, limit, query, where, setDoc, writeBatch } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
@@ -19,6 +19,50 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   const [completionStates, setCompletionStates] = useState({}); // { studentId: 'pending' | 'done' | 'ended' }
   const [reviewPendingStates, setReviewPendingStates] = useState({});
   const [weeklyActivity, setWeeklyActivity] = useState({}); // { studentId: number of days practised this week }
+
+  const [isResettingAllXP, setIsResettingAllXP] = useState(false);
+
+  const handleResetAllXP = async () => {
+    if (!confirm('⚠️ Reset ALL students\' XP to 0?\n\nThis cannot be undone. Are you absolutely sure?')) return;
+    if (!confirm('Final confirmation: this will set every student\'s totalXP to 0 on both the student doc and the leaderboard.')) return;
+    setIsResettingAllXP(true);
+    try {
+      // Process in batches of 500 (Firestore writeBatch limit)
+      const resetCollection = async (colId) => {
+        const snap = await getDocs(collection(db, colId));
+        const chunks = [];
+        let batch = writeBatch(db);
+        let count = 0;
+        snap.forEach((d) => {
+          batch.set(doc(db, colId, d.id), { totalXP: 0, challengesCompleted: 0 }, { merge: true });
+          count++;
+          if (count === 499) { chunks.push(batch); batch = writeBatch(db); count = 0; }
+        });
+        if (count > 0) chunks.push(batch);
+        await Promise.all(chunks.map(b => b.commit()));
+      };
+      await resetCollection('students');
+      await resetCollection('users');
+      // Reset leaderboard too
+      const lbSnap = await getDocs(collection(db, 'leaderboard'));
+      const chunks = [];
+      let batch = writeBatch(db);
+      let count = 0;
+      lbSnap.forEach((d) => {
+        batch.set(doc(db, 'leaderboard', d.id), { totalXP: 0 }, { merge: true });
+        count++;
+        if (count === 499) { chunks.push(batch); batch = writeBatch(db); count = 0; }
+      });
+      if (count > 0) chunks.push(batch);
+      await Promise.all(chunks.map(b => b.commit()));
+      alert('✅ All students\' XP has been reset to 0.');
+      onRefreshStudents?.();
+    } catch (err) {
+      alert('Failed to reset XP: ' + err.message);
+    } finally {
+      setIsResettingAllXP(false);
+    }
+  };
 
   const todayStr = new Date().toLocaleDateString('en-CA'); // Local YYYY-MM-DD, avoids UTC timezone shift
   const COMPLETION_REFRESH_TTL_MS = 5 * 60 * 1000;
@@ -216,6 +260,16 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
           <h2>Students</h2>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            onClick={handleResetAllXP}
+            disabled={isResettingAllXP}
+            className="app-button app-button--secondary"
+            style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#dc2626', borderColor: '#fecaca', background: '#fff1f2' }}
+            title="Reset ALL students' XP to 0"
+          >
+            <RotateCcw size={16} />
+            {isResettingAllXP ? 'Resetting...' : 'Reset All XP'}
+          </button>
           <button
             onClick={handleRemindInactive}
             disabled={isSendingReminders || Object.keys(completionStates).length === 0}

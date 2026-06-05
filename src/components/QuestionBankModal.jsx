@@ -1381,9 +1381,12 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         difficulty: q.difficulty || 'easy',
         timeLimit: q.timeLimit || 60,
         type: q.type || 'multiple_choice',
-        options: q.options && q.options.length > 0 && typeof q.options[0] === 'object' 
-          ? q.options 
-          : (q.options || ['', '', '', '']).map(opt => typeof opt === 'string' ? { text: opt, imageUrl: '' } : opt),
+        options: (() => {
+          // [] is truthy so `|| fallback` won't fire — use explicit length check
+          const raw = q.options && q.options.length > 0 ? q.options : ['', '', '', ''];
+          if (raw.length > 0 && typeof raw[0] === 'object') return raw;
+          return raw.map(opt => typeof opt === 'string' ? { text: opt, imageUrl: '' } : { text: '', imageUrl: '' });
+        })(),
         answer: initialAnswer,
         answerIdx: initialAnswerIdx,
         solution: q.solution || '',
@@ -1483,10 +1486,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     const fillBlankOk = formData.type !== 'fill_blank'
       || (formData.blanks || []).some((b) => (b.answer || '').trim() !== '');
 
+    const hasSubQuestions = (formData.subQuestions || []).length > 0;
     if (!formData.questionText
-      || (needsAnswer && formData.type === 'short_answer' && !formData.answer)
-      || (needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx === null)
-      || (needsAnswer && formData.type === 'fill_blank' && !fillBlankOk)
+      || (!hasSubQuestions && needsAnswer && formData.type === 'short_answer' && !formData.answer)
+      || (!hasSubQuestions && needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx === null)
+      || (!hasSubQuestions && needsAnswer && formData.type === 'fill_blank' && !fillBlankOk)
     ) {
       showToast("Question content and answer are required.", 'warning');
       return;
@@ -1517,7 +1521,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         timeLimit: Number(formData.timeLimit),
         type: formData.type,
         options: formData.type === 'multiple_choice'
-          ? formData.options.filter(o => o.text.trim() !== '' || o.imageUrl !== '')
+          ? (() => {
+              const filled = formData.options.filter(o => o.text.trim() !== '' || o.imageUrl !== '');
+              // 빈 옵션만 있으면 빈 배열 대신 원본 유지 (options:[] 로 저장되면 다시 불러올 때 표시 안 됨)
+              return filled.length > 0 ? filled : formData.options;
+            })()
           : [],
         questionImage: formData.questionImage,
         // fill_blank: pipe-joined answers serve as a fallback for old grading

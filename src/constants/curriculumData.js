@@ -2164,7 +2164,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y11a-3',
         title: 'Chapter 3: Functions and graphs',
-        modules: 9,
+        modules: 10,
         topics: [
           { id: 'y11a-3A', code: '3A', title: 'Functions and function notation' },
           { id: 'y11a-3B', code: '3B', title: 'Functions, relations, and graphs' },
@@ -2174,7 +2174,8 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-3F', code: '3F', title: 'The quadratic formulae and the graph' },
           { id: 'y11a-3G', code: '3G', title: 'Powers, cubics, and circles' },
           { id: 'y11a-3H', code: '3H', title: 'Two graphs that have asymptotes' },
-          { id: 'y11a-3I', code: '3I', title: 'Direct and inverse variation' }
+          { id: 'y11a-3I', code: '3I', title: 'Direct and inverse variation' },
+          { id: 'y11a-3J', code: '3J', title: 'Revision' }
         ]
       },
       {

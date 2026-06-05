@@ -1191,71 +1191,12 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     try {
       setLoading(true);
-      console.log(`Recalculating for ${activeStudentCollection}/${activeStudentId}`);
-
-      // 1. Fetch all daily stats
-      const dailySnap = await getDocs(
-        collection(db, activeStudentCollection, activeStudentId, "daily_stats"),
-      );
-      const calcSnap = await getDocs(
-        collection(db, activeStudentCollection, activeStudentId, "calc_stats"),
-      );
-      const hasCalculationTest = student.calculationEnabled !== false;
-      const getFallbackXp = (data, type) => {
-        const score = Number(data.score) || 0;
-        const total = Number(data.total) || 0;
-        if (total <= 0) return 0;
-        const maxXp = type === "calc" ? 50 : hasCalculationTest ? 50 : 100;
-        return Math.round((score / total) * maxXp);
-      };
-
-      let totalXP = 0;
-      let challengesCompleted = 0;
-
-      dailySnap.forEach((d) => {
-        const data = d.data();
-        // Be more flexible with score parsing
-        const score = Number(data.score) || 0;
-        if (data.completed || score > 0) {
-          totalXP += Number(data.xpEarned) || getFallbackXp(data, "daily");
-          challengesCompleted += 1;
-        }
-      });
-
-      calcSnap.forEach((d) => {
-        const data = d.data();
-        const score = Number(data.score) || 0;
-        if (data.completed || score > 0) {
-          totalXP += Number(data.xpEarned) || getFallbackXp(data, "calc");
-          challengesCompleted += 1;
-        }
-      });
-
-      console.log(`Computed: XP=${totalXP}, Count=${challengesCompleted}`);
-
-      await setDoc(
-        doc(db, activeStudentCollection, activeStudentId),
-        {
-          totalXP,
-          challengesCompleted,
-        },
-        { merge: true },
-      );
-
-      // Sync to Leaderboard
-      try {
-        const fullStudentData = { ...student, totalXP, challengesCompleted };
-        if (student.source === 'manual') {
-          await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
-        } else {
-          await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
-        }
-      } catch (lbErr) {
-        console.warn('Leaderboard sync failed during recalculate:', lbErr);
-      }
+      // Delegates to recalculateStudentTotals with allowDecrease:false
+      // so Secret Note / bonus XP is never silently wiped.
+      const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: false });
 
       showToast(
-        `Success! Total XP: ${totalXP}, Challenges: ${challengesCompleted}`,
+        `Success! Total XP: ${totals.totalXP}, Challenges: ${totals.challengesCompleted}`,
         "success",
       );
     } catch (err) {
@@ -1266,7 +1207,36 @@ const StudentDetail = ({ studentId, onBack }) => {
     }
   };
 
-  const recalculateStudentTotals = async (colName = activeStudentCollection) => {
+  // ── Manual XP adjustment (add or subtract a fixed amount) ──────────────
+  const handleAdjustXP = async () => {
+    const raw = window.prompt(`Manually adjust XP for ${student?.name || student?.firstName || 'this student'}.\nEnter a number (positive to add, negative to subtract):`);
+    if (raw === null) return; // cancelled
+    const delta = parseInt(raw, 10);
+    if (isNaN(delta) || delta === 0) { alert('Invalid number — nothing changed.'); return; }
+    if (!confirm(`${delta > 0 ? 'Add' : 'Remove'} ${Math.abs(delta)} XP ${delta > 0 ? 'to' : 'from'} ${student?.name || student?.firstName}?`)) return;
+    try {
+      setLoading(true);
+      const { increment: fbIncrement, getDoc: fbGetDoc } = await import('firebase/firestore');
+      const userRef = doc(db, activeStudentCollection, activeStudentId);
+      const snap = await fbGetDoc(userRef);
+      const currentXP = Number(snap.data()?.totalXP) || 0;
+      const newXP = Math.max(0, currentXP + delta);
+      await setDoc(userRef, { totalXP: newXP }, { merge: true });
+      // Sync leaderboard
+      try {
+        const fullStudentData = { ...student, totalXP: newXP };
+        if (student.source === 'manual') await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
+        else await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
+      } catch {}
+      showToast(`XP adjusted: ${currentXP} → ${newXP} (${delta > 0 ? '+' : ''}${delta})`, 'success');
+    } catch (err) {
+      showToast('XP adjustment failed: ' + err.message, 'error');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const recalculateStudentTotals = async (colName = activeStudentCollection, { allowDecrease = false } = {}) => {
     const hasCalculationTest = student.calculationEnabled !== false;
     const getFallbackXp = (data, type) => {
       const score = Number(data.score) || 0;
@@ -1311,10 +1281,20 @@ const StudentDetail = ({ studentId, onBack }) => {
       challengesCompleted += 1;
     });
 
+    // ── Never silently reduce XP unless teacher explicitly allows it ──
+    // allowDecrease=true only when called from a deliberate challenge reset.
+    // Recalculate button uses allowDecrease=false so Secret Note XP is preserved.
+    let finalXP = totalXP;
+    if (!allowDecrease) {
+      const currentSnap = await getDoc(doc(db, colName, activeStudentId));
+      const currentXP = Number(currentSnap.data()?.totalXP) || 0;
+      finalXP = Math.max(totalXP, currentXP);
+    }
+
     await setDoc(
       doc(db, colName, activeStudentId),
       {
-        totalXP,
+        totalXP: finalXP,
         challengesCompleted,
       },
       { merge: true },
@@ -1322,7 +1302,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     // Sync to Leaderboard
     try {
-      const fullStudentData = { ...student, totalXP, challengesCompleted };
+      const fullStudentData = { ...student, totalXP: finalXP, challengesCompleted };
       if (student.source === 'manual') {
         await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
       } else {
@@ -1332,7 +1312,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       console.warn('Leaderboard sync failed during totals update:', lbErr);
     }
 
-    return { totalXP, challengesCompleted };
+    return { totalXP: finalXP, challengesCompleted };
   };
 
   const deleteWorkingOutForChallenge = async (stat) => {
@@ -1464,7 +1444,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         }),
       }).catch((err) => console.warn("Challenge reset notification failed:", err));
 
-      const totals = await recalculateStudentTotals(activeStudentCollection);
+      const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: true });
       showToast(
         `Challenge reset. XP recalculated to ${totals.totalXP}. Removed ${deletedWorkingOutCount} saved working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
         "success",
@@ -1713,6 +1693,21 @@ const StudentDetail = ({ studentId, onBack }) => {
                   }}
                 >
                   Recalculate XP
+                </button>
+                <button
+                  onClick={handleAdjustXP}
+                  style={{
+                    padding: "6px 12px",
+                    borderRadius: "8px",
+                    background: "#fefce8",
+                    color: "#ca8a04",
+                    border: "1px solid #fef08a",
+                    fontSize: "0.7rem",
+                    fontWeight: 800,
+                    cursor: "pointer",
+                  }}
+                >
+                  ± Adjust XP
                 </button>
                 <button
                   onClick={async () => {

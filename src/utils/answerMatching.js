@@ -41,8 +41,10 @@ export const robustNormalize = (str) => {
     // Strip any leftover "unit"/"units" word, even when concatenated to a
     // number (e.g. "26units") which word-boundary stripping above misses.
     .replace(/units?/gi, '')
-    // Normalise \dfrac → \frac and allow optional space between \frac and {
+    // Normalise \dfrac / \tfrac / \cfrac → \frac
     .replace(/\\dfrac\s*/g, '\\frac')
+    .replace(/\\tfrac\s*/g, '\\frac')
+    .replace(/\\cfrac\s*/g, '\\frac')
     .replace(/\\frac\s+\{/g, '\\frac{')
     // \frac{a}{b} → (a)/(b)
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
@@ -82,14 +84,22 @@ export const robustNormalize = (str) => {
 export const evalFractionValue = (value) => {
   if (value === null || value === undefined) return null;
   let s = String(value)
-    // Normalise \dfrac → \frac and allow optional space between \frac and {
+    // Normalise \dfrac / \tfrac / \cfrac → \frac
     .replace(/\\dfrac\s*/g, '\\frac')
+    .replace(/\\tfrac\s*/g, '\\frac')
+    .replace(/\\cfrac\s*/g, '\\frac')
     .replace(/\\frac\s+\{/g, '\\frac{')
+    // Strip \left / \right wrappers before processing
+    .replace(/\\left\s*/g, '')
+    .replace(/\\right\s*/g, '')
     .replace(/(-?\d+)\s*\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '$1 $2/$3')
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2') // (a)/(b) → a/b
+    // Strip outer parens: (-5/6) → -5/6
+    .replace(/^\((-?[\d./]+)\)$/, '$1')
     .replace(/[−–—]/g, '-')
-    .replace(/\\\$|\$|\\left|\\right|,/g, '')
+    .replace(/\\\$|\$|,/g, '')
+    .replace(/\s+/g, '')   // strip all whitespace so "- 5/6" → "-5/6"
     .trim();
 
   // Mixed number: "w a/b" or "w+a/b"  (separator = space or +)

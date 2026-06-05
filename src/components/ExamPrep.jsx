@@ -1091,6 +1091,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   const [noteCount, setNoteCount] = useState(0);
   const [dueCount, setDueCount] = useState(0);
   const [reportTarget, setReportTarget] = useState(null);
+  const reportTargetRef = useRef(null);
   const [reportMessage, setReportMessage] = useState('');
   const [submittingReport, setSubmittingReport] = useState(false);
 
@@ -1103,29 +1104,31 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   }, [uid, stage]);
 
   const submitReport = async () => {
-    if (!reportTarget || !reportMessage.trim() || !user?.uid) return;
+    const target = reportTargetRef.current || reportTarget;
+    if (!target || !reportMessage.trim() || !user?.uid) return;
     setSubmittingReport(true);
     try {
       await addDoc(collection(db, 'reports'), {
         studentId: user.uid,
         studentName: user.displayName || user.email || 'Student',
-        questionId: reportTarget.id || '',
+        questionId: target.id || '',
         source: 'exam_prep',
         questionData: {
-          id: reportTarget.id || '',
-          question: reportTarget.question || '',
-          answer: String(reportTarget.answer ?? ''),
-          type: reportTarget.type || '',
-          chapterId: reportTarget.chapterId || '',
-          chapterTitle: reportTarget.chapterTitle || '',
-          topicId: reportTarget.topicId || '',
-          topicTitle: reportTarget.topicTitle || '',
+          id: target.id || '',
+          question: target.question || '',
+          answer: String(target.answer ?? ''),
+          type: target.type || '',
+          chapterId: target.chapterId || '',
+          chapterTitle: target.chapterTitle || '',
+          topicId: target.topicId || '',
+          topicTitle: target.topicTitle || '',
         },
         message: reportMessage.trim(),
         status: 'open',
         createdAt: serverTimestamp(),
       });
       showToast('Report submitted — we will review it.', 'success');
+      reportTargetRef.current = null;
       setReportTarget(null);
       setReportMessage('');
     } catch (err) {
@@ -1201,7 +1204,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         )}
 
         {stage === 'quiz' && questions.length > 0 && (
-          <QuizView questions={questions} onFinish={handleFinishRound} onReport={(q) => setReportTarget(q)} />
+          <QuizView questions={questions} onFinish={handleFinishRound} onReport={(q) => { reportTargetRef.current = q; setReportTarget(q); }} />
         )}
 
         {stage === 'secretNote' && uid && (

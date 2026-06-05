@@ -121,6 +121,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   // ── Report modal state ──
   const [isReporting, setIsReporting] = useState(false);
   const [reportedQuestion, setReportedQuestion] = useState(null);
+  // ref에도 저장 — submit 시 렌더링 타이밍과 무관하게 항상 정확한 문제를 참조
+  const reportedQuestionRef = useRef(null);
   const [reportMessage, setReportMessage] = useState('');
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [isSubmittingCanvas, setIsSubmittingCanvas] = useState(false);
@@ -573,7 +575,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     if (!reportMessage.trim()) return;
     setIsSubmittingReport(true);
     try {
-      const currentQ = reportedQuestion || questions[currentIdx];
+      // ref를 우선 사용 — state보다 안정적으로 클릭 시점의 문제를 가리킴
+      const currentQ = reportedQuestionRef.current || reportedQuestion || questions[currentIdx];
       const reportedIndex = reportedQuestion
         ? questions.findIndex(q => String(q?.id || '') === String(reportedQuestion?.id || ''))
         : currentIdx;
@@ -609,6 +612,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       markSessionReportSubmitted();
       setIsReporting(false);
       setReportedQuestion(null);
+      reportedQuestionRef.current = null;
       setReportMessage('');
       showToast("Report submitted! We will review it.", 'success');
     } catch (error) {
@@ -1342,6 +1346,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                           onClick={(e) => {
                             e.stopPropagation();
                             setReportedQuestion(qData);
+                            reportedQuestionRef.current = qData;
                             setIsReporting(true);
                           }}
                           style={{ position: 'absolute', top: '16px', right: '16px', border: 'none', background: '#fff', padding: '6px', borderRadius: '8px', cursor: 'pointer', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.7rem', fontWeight: 800, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}

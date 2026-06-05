@@ -368,6 +368,8 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   const [reportMsg, setReportMsg] = useState('');
   const [reportSending, setReportSending] = useState(false);
   const [reportSentIds, setReportSentIds] = useState([]);
+  // 리포트 버튼 클릭 시점의 문제를 고정 — idx가 바뀌어도 올바른 문제를 가리킴
+  const [frozenReportQuestion, setFrozenReportQuestion] = useState(null);
 
   // Teacher-review panel
   const [reviewOpen, setReviewOpen] = useState(false);
@@ -568,7 +570,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   // teacher reviews (and can delete the question from, which purges it from
   // everyone's Secret Note).
   const sendReport = async () => {
-    if (!question || reportSending) return;
+    // frozenReportQuestion: 버튼 클릭 시점에 고정된 문제 (idx 변경에 영향 없음)
+    const reportQ = frozenReportQuestion || question;
+    if (!reportQ || reportSending) return;
     setReportSending(true);
     try {
       await addDoc(collection(db, 'reports'), {
@@ -576,19 +580,19 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
         studentName: studentName || user?.displayName || user?.email || 'Student',
         source: 'secret_note',
         noteKind: kind,
-        questionId: question.id || '',
+        questionId: reportQ.id || '',
         studentAnswer: '',
         questionData: {
-          id: question.id || '',
-          question: question.question || '',
-          answer: String(question.answer ?? ''),
-          type: question.type || '',
-          chapterTitle: question.chapterTitle || '',
-          topicId: question.topicId || '',
-          topicCode: question.topicCode || '',
-          topicTitle: question.topicTitle || '',
-          isManual: !!question.isManual,
-          options: getOptions(question).map((opt) =>
+          id: reportQ.id || '',
+          question: reportQ.question || '',
+          answer: String(reportQ.answer ?? ''),
+          type: reportQ.type || '',
+          chapterTitle: reportQ.chapterTitle || '',
+          topicId: reportQ.topicId || '',
+          topicCode: reportQ.topicCode || '',
+          topicTitle: reportQ.topicTitle || '',
+          isManual: !!reportQ.isManual,
+          options: getOptions(reportQ).map((opt) =>
             typeof opt === 'object' ? { text: String(opt.text || '') } : String(opt ?? ''),
           ),
         },
@@ -596,7 +600,8 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
         status: 'open',
         createdAt: serverTimestamp(),
       });
-      setReportSentIds((ids) => [...ids, question.id]);
+      setReportSentIds((ids) => [...ids, reportQ.id]);
+      setFrozenReportQuestion(null);
       setReportOpen(false);
       setReportMsg('');
     } catch (e) {
@@ -698,7 +703,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
               </span>
             ) : (
               <button
-                onClick={() => setReportOpen(true)}
+                onClick={() => { setFrozenReportQuestion(question); setReportOpen(true); }}
                 title="Report a problem with this question"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', flexShrink: 0, padding: '6px 11px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontSize: '0.72rem', fontWeight: 800, cursor: 'pointer' }}
               >
