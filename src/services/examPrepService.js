@@ -18,6 +18,7 @@
 import { db } from '../firebase/config';
 import { collection, query, where, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { addMistakes } from '../utils/secretNote';
+import { idbGet, idbSet, idbDel } from '../utils/idbStore';
 
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
@@ -75,20 +76,42 @@ const pushHistory = (uid, session) => {
 const signatureFor = (selection) =>
   `${[...(selection.years || [])].sort().join('|')}::${[...(selection.chapters || [])].sort().join('|')}::${selection.examPaperOnly ? '1' : '0'}`;
 
-const loadCachedPool = (uid, selection) => {
-  const cached = safeParse(localStorage.getItem(k(uid, 'pool')), null);
+// The question pool (and pre-fetched next round) can be large — hundreds of
+// questions with embedded base64 diagrams. localStorage's ~5 MB quota throws
+// QuotaExceededError on overflow, which used to block the round entirely.
+// These now live in IndexedDB (large quota, stores structured data directly,
+// no JSON string-length ceiling). All writes are best-effort: if persistence
+// fails the round still runs from the in-memory pool.
+
+// One-time cleanup: remove any legacy localStorage pool/next entries that an
+// older build may have written (and that may be hogging the localStorage quota
+// for everything else in the app). Safe to run on every load.
+let legacyCleaned = false;
+const purgeLegacyLocalStoragePool = () => {
+  if (legacyCleaned) return;
+  legacyCleaned = true;
+  try {
+    Object.keys(localStorage)
+      .filter((kk) => kk.startsWith('examPrep:') && (kk.endsWith(':pool') || kk.endsWith(':next')))
+      .forEach((kk) => localStorage.removeItem(kk));
+  } catch { /* ignore */ }
+};
+
+const loadCachedPool = async (uid, selection) => {
+  purgeLegacyLocalStoragePool();
+  const cached = await idbGet(k(uid, 'pool'));
   if (!cached) return null;
   if (cached.signature !== signatureFor(selection)) return null;
   if (Date.now() - (cached.fetchedAt || 0) > POOL_TTL_MS) return null;
   return cached.questions || [];
 };
 
-const saveCachedPool = (uid, selection, questions) => {
-  localStorage.setItem(k(uid, 'pool'), JSON.stringify({
+const saveCachedPool = async (uid, selection, questions) => {
+  await idbSet(k(uid, 'pool'), {
     fetchedAt: Date.now(),
     signature: signatureFor(selection),
     questions,
-  }));
+  });
 };
 
 /**
@@ -97,11 +120,14 @@ const saveCachedPool = (uid, selection, questions) => {
  */
 export const ensurePool = async (uid, selection, { force = false } = {}) => {
   if (!force) {
-    const cached = loadCachedPool(uid, selection);
-    if (cached) return cached;
+    const cached = await loadCachedPool(uid, selection);
+    // Only reuse a NON-empty cached pool. An empty cache (e.g. fetched before
+    // the teacher added questions) should fall through to a fresh fetch rather
+    // than block rounds until the TTL expires.
+    if (cached && cached.length > 0) return cached;
   }
   if (!selection?.chapters?.length) {
-    saveCachedPool(uid, selection, []);
+    await saveCachedPool(uid, selection, []);
     return [];
   }
   // Firestore `in` is limited to 30. Chunk the chapter list.
@@ -127,7 +153,7 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
     && !q.requiresManualGrading
     && (!selection.examPaperOnly || Boolean(q.examPaper))
   );
-  saveCachedPool(uid, selection, usable);
+  await saveCachedPool(uid, selection, usable);
   return usable;
 };
 
@@ -144,20 +170,21 @@ const shuffle = (arr) => {
 export const pickRound = (pool, n = ROUND_SIZE) => shuffle(pool).slice(0, n);
 
 // ── Pre-fetched "next round" (so the student can start immediately) ────
-export const getNextRound = (uid) =>
-  safeParse(localStorage.getItem(k(uid, 'next')), null);
+// Stored in IndexedDB (same reasoning as the pool — can include base64 images).
+export const getNextRound = (uid) => idbGet(k(uid, 'next'));
 
-export const stashNextRound = (uid, questions) => {
+export const stashNextRound = async (uid, questions) => {
   if (!Array.isArray(questions) || questions.length === 0) {
-    localStorage.removeItem(k(uid, 'next'));
+    await idbDel(k(uid, 'next'));
     return;
   }
-  localStorage.setItem(k(uid, 'next'), JSON.stringify(questions));
+  // Best-effort — never throws (round is already in-memory).
+  await idbSet(k(uid, 'next'), questions);
 };
 
-export const consumeNextRound = (uid) => {
-  const next = getNextRound(uid);
-  if (next) localStorage.removeItem(k(uid, 'next'));
+export const consumeNextRound = async (uid) => {
+  const next = await getNextRound(uid);
+  if (next) await idbDel(k(uid, 'next'));
   return next;
 };
 
@@ -168,12 +195,19 @@ export const consumeNextRound = (uid) => {
  */
 export const startRound = async (uid, selection) => {
   // Make sure the pool is loaded once. Cheap if already cached.
-  const pool = await ensurePool(uid, selection);
+  let pool = await ensurePool(uid, selection);
+  // A previously-cached EMPTY pool (e.g. fetched before the teacher added
+  // questions, or after a transient failure) would otherwise block the round
+  // for the full cache TTL. If empty, force a fresh fetch before giving up.
+  if (pool.length === 0) {
+    pool = await ensurePool(uid, selection, { force: true });
+  }
   if (pool.length === 0) return { questions: [], pool };
 
-  const stashed = consumeNextRound(uid);
+  const stashed = await consumeNextRound(uid);
   const round = (stashed && stashed.length > 0) ? stashed : pickRound(pool);
   // Stash a new "next" round for instant restart after this one finishes.
+  // Fire-and-forget — it's a pre-fetch optimisation, not required for this run.
   stashNextRound(uid, pickRound(pool));
   return { questions: round, pool };
 };

@@ -1156,11 +1156,14 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     try {
       const { questions: q } = await startRound(uid, selection);
       if (!q || q.length === 0) {
-        alert('No questions found for the chosen chapters yet. Try adding more chapters.');
+        showToast('No questions found for the chosen topics yet. Ask your teacher to add questions.', 'warning', 6000);
         return;
       }
       setQuestions(q);
       setStage('quiz');
+    } catch (err) {
+      console.error('[ExamPrep] startRound failed:', err);
+      showToast(`Could not start the round: ${err?.message || 'unknown error'}`, 'error', 6000);
     } finally {
       setLoading(false);
     }
