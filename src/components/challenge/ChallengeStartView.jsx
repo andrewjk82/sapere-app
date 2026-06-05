@@ -12,24 +12,55 @@ import {
   BookLock,
 } from 'lucide-react';
 
-// ── Secret Notebook footer strip (lives inside the test card) ──────────────
+// ── Per-kind palette + glyph for the session cards ─────────
+const KIND = {
+  daily: { Glyph: BookOpen, ring: '#7c3aed', noteGrad: 'linear-gradient(135deg,#f5f3ff,#e7e0fb)', noteBorder: '#ddd6fe', badge: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
+  calc:  { Glyph: Target,   ring: '#d97706', noteGrad: 'linear-gradient(135deg,#fffbeb,#fef3c7)', noteBorder: '#fde68a', badge: 'linear-gradient(135deg,#fbbf24,#d97706)' },
+};
+
+// ── Progress ring icon: done → green ring + check; else dashed ring + glyph ──
+const SessionRing = ({ kind, done }) => {
+  const m = KIND[kind];
+  const Glyph = m.Glyph;
+  const size = 60, stroke = 6, r = (size - stroke) / 2;
+  return (
+    <div className="cs__sess-ring">
+      <svg width={size} height={size} aria-hidden="true">
+        {done ? (
+          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#10b981" strokeWidth={stroke} strokeLinecap="round" />
+        ) : (
+          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#ddd6fe" strokeWidth={stroke} strokeLinecap="round" strokeDasharray="2 7" />
+        )}
+      </svg>
+      <span className="cs__ring-ico" style={{ color: done ? '#10b981' : m.ring }}>
+        {done ? <CheckCircle2 size={26} strokeWidth={2.4} /> : <Glyph size={24} strokeWidth={2.1} />}
+      </span>
+    </div>
+  );
+};
+
+// ── Secret Notebook footer strip (gradient CTA, lives inside the card) ──────
 const SecretNoteStrip = ({ kind, note, onOpen }) => {
+  const m = KIND[kind];
   const total = note?.total || 0;
   const due = note?.due || 0;
-  if (total === 0) return null;
+  const sub = total === 0
+    ? 'no notes yet'
+    : due > 0
+    ? `${due} questions ready to review`
+    : `${total} saved · all reviewed`;
   return (
     <button
       type="button"
       className={`cs__note-strip cs__note-strip--${kind}`}
       onClick={() => onOpen?.(kind)}
     >
-      <BookLock size={16} className="cs__note-strip-ico" />
-      <span className="cs__note-strip-text">
-        <strong>Secret Note</strong> · {total} saved
-        {due === 0 ? ' · all reviewed' : ''}
+      <span className="cs__note-badge" style={{ background: m.badge }}><BookLock size={17} /></span>
+      <span className="cs__note-main">
+        <strong>Secret Note</strong>
+        <span className="cs__note-sub">{sub}</span>
       </span>
-      {due > 0 && <span className={`cs__note-strip-due cs__note-strip-due--${kind}`}>{due} due</span>}
-      <ArrowRight size={15} className="cs__note-strip-arrow" />
+      <span className="cs__note-cta">Review <ArrowRight size={15} /></span>
     </button>
   );
 };
@@ -193,41 +224,35 @@ const TestRow = ({
   note,
   onOpenNote,
 }) => {
-  const isCalc = kind === 'calc';
-  const beginClass = isCalc ? 'cs__begin cs__begin--calc' : 'cs__begin cs__begin--daily';
+  const done = state === 'completed';
+  const ended = state === 'abandoned';
+  const loading = state === 'loading';
   return (
     <div className="cs__test-card">
       <div className="cs__test">
-        <div className={`cs__test-ico cs__test-ico--${kind}`}>
-          {isCalc ? <Target size={24} /> : <BookOpen size={24} />}
-        </div>
+        <SessionRing kind={kind} done={done} />
         <div className="cs__test-main">
-          <h3>{title}</h3>
+          <div className="cs__test-titlerow">
+            <h3>{title}</h3>
+            {done ? (
+              <span className="cs__chip-state cs__chip-state--done"><CheckCircle2 size={13} /> Done today</span>
+            ) : ended ? (
+              <span className="cs__chip-state cs__chip-state--ended"><AlertTriangle size={13} /> Ended</span>
+            ) : loading ? null : (
+              <span className="cs__chip-state cs__chip-state--todo"><span className="cs__chip-dot" /> Not done yet</span>
+            )}
+          </div>
           <p>{meta}</p>
         </div>
         <div className="cs__test-actions">
-          {state !== 'loading' && (
-            <button
-              type="button"
-              className="cs__review"
-              onClick={onReview}
-              title={`Past records for ${title}`}
-            >
-              <History size={14} /> Review
+          {loading ? (
+            <span className="cs__status">Checking…</span>
+          ) : done || ended ? (
+            <button type="button" className="cs__primary cs__primary--review" onClick={onReview} title={`Review ${title}`}>
+              <History size={16} /> Review
             </button>
-          )}
-          {state === 'completed' ? (
-            <span className="cs__status cs__status--done">
-              <CheckCircle2 size={16} /> Done today
-            </span>
-          ) : state === 'abandoned' ? (
-            <span className="cs__status cs__status--ended">
-              <AlertTriangle size={16} /> Ended — try tomorrow
-            </span>
-          ) : state === 'loading' ? (
-            <span className="cs__status">Checking...</span>
           ) : (
-            <button type="button" className={beginClass} onClick={onBegin}>
+            <button type="button" className="cs__primary cs__primary--begin" onClick={onBegin}>
               Begin <ArrowRight size={16} />
             </button>
           )}
@@ -587,7 +612,7 @@ const challengeStartStyles = `
     font-weight: 800; font-size: 0.7rem;
   }
 
-  /* Test cards */
+  /* Test cards (original vertical list) */
   .cs__tests { display: flex; flex-direction: column; gap: 12px; }
   .cs__test-card {
     background: #ffffff; border-radius: 24px; border: 1px solid #f1f5f9;
@@ -598,60 +623,68 @@ const challengeStartStyles = `
     padding: 18px 22px;
   }
 
-  /* Secret Note footer strip (attached inside the test card) */
-  .cs__note-strip {
-    display: flex; align-items: center; gap: 10px; width: 100%;
-    padding: 12px 22px; cursor: pointer; text-align: left;
-    border: 0; border-top: 1px solid #f1f5f9;
-    background: #faf8ff; transition: background 0.15s ease;
-  }
-  .cs__note-strip:hover { background: #f3f0ff; }
-  .cs__note-strip--calc { background: #fffbeb; }
-  .cs__note-strip--calc:hover { background: #fdf3da; }
-  .cs__note-strip-ico { color: #8b5cf6; flex-shrink: 0; }
-  .cs__note-strip--calc .cs__note-strip-ico { color: #d97706; }
-  .cs__note-strip-text { flex: 1; font-size: 0.84rem; color: #6d6a85; font-weight: 600; }
-  .cs__note-strip-text strong { color: #1e1b4b; font-weight: 900; }
-  .cs__note-strip-due {
-    padding: 3px 11px; border-radius: 999px; font-size: 0.7rem; font-weight: 900;
-    background: #8b5cf6; color: #fff; flex-shrink: 0;
-  }
-  .cs__note-strip-due--calc { background: #f59e0b; }
-  .cs__note-strip-arrow { color: #a78bfa; flex-shrink: 0; }
-  .cs__note-strip--calc .cs__note-strip-arrow { color: #f0b04f; }
-  .cs__test-ico { width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; flex-shrink: 0; }
-  .cs__test-ico--daily { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); color: #4338ca; }
-  .cs__test-ico--calc { background: linear-gradient(135deg, #fde68a, #fbbf24); color: #b45309; }
+  /* Session ring icon: done → green ring + check, else dashed ring + glyph */
+  .cs__sess-ring { position: relative; width: 60px; height: 60px; flex-shrink: 0; }
+  .cs__sess-ring svg { display: block; }
+  .cs__ring-ico { position: absolute; inset: 0; display: grid; place-items: center; }
+
   .cs__test-main { flex: 1; min-width: 0; }
-  .cs__test-main h3 { font-size: 1.18rem; font-weight: 900; color: #1e1b4b; margin: 0 0 3px; }
-  .cs__test-main p { color: #6d6a85; margin: 0; font-size: 0.9rem; }
-  .cs__test-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-  .cs__review {
+  .cs__test-titlerow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .cs__test-main h3 { font-size: 1.18rem; font-weight: 900; color: #1e1b4b; margin: 0; }
+  .cs__test-main p { color: #6d6a85; margin: 4px 0 0; font-size: 0.9rem; }
+
+  /* Status chip next to the title */
+  .cs__chip-state {
     display: inline-flex; align-items: center; gap: 6px;
-    padding: 11px 16px; border-radius: 999px;
-    background: white; color: #6d6a85;
-    border: 1.5px solid #e2e8f0;
-    font-weight: 700; font-size: 0.84rem; cursor: pointer;
-    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+    padding: 4px 10px; border-radius: 999px;
+    font-weight: 900; font-size: 0.72rem; border: 1.5px solid;
   }
-  .cs__review:hover { border-color: #c4b5fd; color: #8b5cf6; background: #faf8ff; }
-  .cs__begin {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 13px 26px; border-radius: 999px;
-    font-weight: 800; font-size: 0.92rem; cursor: pointer; border: 0;
-    transition: transform 0.15s ease;
+  .cs__chip-state--done { color: #15803d; background: #ecfdf5; border-color: #a7f3d0; }
+  .cs__chip-state--ended { color: #b91c1c; background: #fef2f2; border-color: #fecaca; }
+  .cs__chip-state--todo { color: #b45309; background: #fffbeb; border-color: #fde68a; }
+  .cs__chip-dot { width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; }
+
+  .cs__test-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+  /* Unified primary button — Begin (to-do) ⇄ Review (done), same size */
+  .cs__primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 13px 24px; border-radius: 999px;
+    font-weight: 800; font-size: 0.9rem; cursor: pointer; border: 0;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .cs__begin:hover { transform: translateY(-1px); }
-  .cs__begin--daily { background: #1e1b4b; color: white; box-shadow: 0 10px 24px rgba(30,27,75,0.22); }
-  .cs__begin--calc { background: white; color: #d97706; border: 1.5px solid #fcd34d; }
+  .cs__primary:hover { transform: translateY(-1px); }
+  .cs__primary--begin { background: #1e1b4b; color: #fff; box-shadow: 0 10px 24px rgba(30,27,75,0.22); }
+  .cs__primary--review { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: #fff; box-shadow: 0 10px 24px rgba(124,58,237,0.24); }
   .cs__status {
     display: inline-flex; align-items: center; gap: 8px;
-    padding: 10px 18px; border-radius: 999px;
+    padding: 12px 18px; border-radius: 999px;
     font-weight: 800; font-size: 0.85rem; color: #475569;
     background: #f8fafc; border: 1px solid #e2e8f0;
   }
-  .cs__status--done { background: #f0fdf4; color: #166534; border-color: #bbf7d0; }
-  .cs__status--ended { background: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+
+  /* Secret Note footer — gradient CTA, same button size as above */
+  .cs__note-strip {
+    display: flex; align-items: center; gap: 12px; width: 100%;
+    padding: 13px 18px; cursor: pointer; text-align: left;
+    border: 0; border-top: 1px solid #ddd6fe;
+    background: linear-gradient(135deg, #f5f3ff, #e7e0fb);
+    transition: filter 0.15s ease;
+  }
+  .cs__note-strip:hover { filter: brightness(0.98); }
+  .cs__note-strip--calc { border-top-color: #fde68a; background: linear-gradient(135deg, #fffbeb, #fef3c7); }
+  .cs__note-badge { width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0; display: grid; place-items: center; color: #fff; }
+  .cs__note-main { flex: 1; min-width: 0; line-height: 1.25; }
+  .cs__note-main strong { display: block; font-size: 0.9rem; font-weight: 900; color: #1e1b4b; }
+  .cs__note-sub { display: block; font-size: 0.72rem; font-weight: 700; color: #7c3aed; }
+  .cs__note-strip--calc .cs__note-sub { color: #b45309; }
+  .cs__note-cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 13px 24px; border-radius: 999px; flex-shrink: 0;
+    background: #7c3aed; color: #fff; font-weight: 800; font-size: 0.9rem;
+    box-shadow: 0 8px 18px rgba(124,58,237,0.3);
+  }
+  .cs__note-strip--calc .cs__note-cta { background: #d97706; box-shadow: 0 8px 18px rgba(217,119,6,0.3); }
 
   /* Panels */
   .cs__row2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; }
@@ -748,13 +781,11 @@ const challengeStartStyles = `
     .cs__row3 { grid-template-columns: 1fr; }
     .cs__test { flex-wrap: wrap; }
     .cs__test-actions { width: 100%; justify-content: flex-end; }
-    .cs__begin { padding: 11px 20px; }
   }
   @media (max-width: 540px) {
     .cs__head { flex-direction: column; align-items: flex-start; gap: 10px; }
     .cs__test-actions { gap: 8px; }
-    .cs__review { padding: 9px 12px; }
-    .cs__begin { padding: 11px 18px; font-size: 0.88rem; }
+    .cs__primary, .cs__note-cta { padding: 11px 18px; font-size: 0.86rem; }
     .cs__day-bar-wrap { height: 70px; }
   }
 `;

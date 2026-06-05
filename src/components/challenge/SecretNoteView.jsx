@@ -430,8 +430,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
 
   // ── Actions ──────────────────────────────────────────────────────────────
   // Reward effort: +1 XP for each Secret Note question solved correctly.
+  // Exam Prep Secret Note does NOT award XP (review-only mode).
   const awardXp = (amount) => {
-    if (!uid || !amount) return;
+    if (!uid || !amount || kind === 'exam_prep') return;
     try {
       setDoc(
         doc(db, 'users', uid),
@@ -650,10 +651,12 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
               <div className="sn__done-num" style={{ color: accent.text }}>{summary.kept}</div>
               <div className="sn__done-lbl">Still practising</div>
             </div>
-            <div className="sn__done-stat">
-              <div className="sn__done-num" style={{ color: '#8b5cf6' }}>+{summary.xp}</div>
-              <div className="sn__done-lbl">XP earned</div>
-            </div>
+            {kind !== 'exam_prep' && (
+              <div className="sn__done-stat">
+                <div className="sn__done-num" style={{ color: '#8b5cf6' }}>+{summary.xp}</div>
+                <div className="sn__done-lbl">XP earned</div>
+              </div>
+            )}
           </div>
           <p className="sn__muted">
             Graduated questions left your notebook. The rest will come back on

@@ -9,21 +9,8 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
-import MathInput from './MathInput';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
-
-// Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
-const EXAM_QUICK_INSERTS = [
-  { label: '√', latex: '\\sqrt{#?}', title: 'Square root' },
-  { label: 'ⁿ√', latex: '\\sqrt[#?]{#?}', title: 'nth root' },
-  { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
-  { label: 'xⁿ', latex: '^{#?}', title: 'Exponent' },
-  { label: 'π', latex: '\\pi', title: 'Pi' },
-  { label: '±', latex: '\\pm', title: 'Plus or minus' },
-  { label: '°', latex: '^{\\circ}', title: 'Degrees' },
-  { label: '( )', latex: '(#?)', title: 'Brackets' },
-];
-import { gradeQuestion, answersMatch } from '../utils/answerMatching';
+import { gradeQuestion } from '../utils/answerMatching';
 import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
@@ -152,21 +139,16 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const [sketchSnapshots, setSketchSnapshots] = useState({}); // { [questionId]: dataURL }
   const canvasRef = useRef(null);
   const examInputRef = useRef(null);
-  const examMathRef = useRef(null);
   const examFracDenRef = useRef(null);
-  const [zoomImage, setZoomImage] = useState(null);
   const [examFracMode, setExamFracMode] = useState(false);
-  const [examFracWhole, setExamFracWhole] = useState('');
   const [examFracNum, setExamFracNum] = useState('');
   const [examFracDen, setExamFracDen] = useState('');
-  const examFracNumRef = useRef(null);
-  const commitExamFrac = (whole, num, den) => {
+  const commitExamFrac = (num, den) => {
     if (!den) { setExamFracMode(false); examInputRef.current?.focus(); return; }
     const base = typeof draft === 'string' ? draft : '';
     const prefix = base.endsWith(num) ? base.slice(0, base.length - num.length) : base;
-    const frac = `(${num || '0'})/(${den})`;
-    setDraft(prefix + (whole ? `${whole} ${frac}` : frac));
-    setExamFracMode(false); setExamFracWhole(''); setExamFracNum(''); setExamFracDen('');
+    setDraft(prefix + `(${num || '0'})/(${den})`);
+    setExamFracMode(false); setExamFracNum(''); setExamFracDen('');
     setTimeout(() => examInputRef.current?.focus(), 50);
   };
 
@@ -175,18 +157,13 @@ const QuizView = ({ questions, onFinish, onReport }) => {
 
   useEffect(() => {
     if (!q) return;
-    if (q.subQuestions?.length > 0) {
-      const init = {};
-      q.subQuestions.forEach((sq, i) => { init[sq.id ?? i] = ''; });
-      setDraft(init);
-    }
-    else if (q.type === 'multiple_choice') setDraft(null);
+    if (q.type === 'multiple_choice') setDraft(null);
     else if (q.type === 'fill_blank') setDraft(Array((q.blanks || []).length).fill(''));
     else setDraft('');
     setShowHint(false);
     setShowFeedback(false);
     setFocusedBlank(0);
-    setExamFracMode(false); setExamFracWhole(''); setExamFracNum(''); setExamFracDen('');
+    setExamFracMode(false); setExamFracNum(''); setExamFracDen('');
     const limit = q.timeLimit || 120;
     setTimeLeft(limit);
     setQuestionStartTime(Date.now());
@@ -222,19 +199,9 @@ const QuizView = ({ questions, onFinish, onReport }) => {
 
   if (!q) return null;
 
-  // Grade a multi-part question: correct only if every sub-answer matches.
-  const subList = Array.isArray(q.subQuestions) ? q.subQuestions : [];
-  const hasSubs = subList.length > 0;
-  const gradeSub = (sq, i) => {
-    const given = (draft && typeof draft === 'object') ? draft[sq.id ?? i] : '';
-    const expected = sq.a ?? sq.answer ?? '';
-    return answersMatch(given, expected);
-  };
-  const allSubsCorrect = () => hasSubs && subList.every((sq, i) => gradeSub(sq, i));
-
   const submit = () => {
     const userAnswer = draft;
-    const correct = hasSubs ? allSubsCorrect() : gradeQuestion(q, userAnswer).correct;
+    const { correct } = gradeQuestion(q, userAnswer);
     const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle }];
     setAnswers(next);
     setShowFeedback(true);
@@ -259,7 +226,6 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   };
 
   const canSubmit = (() => {
-    if (hasSubs) return draft && typeof draft === 'object' && subList.every((sq, i) => String(draft[sq.id ?? i] || '').trim() !== '');
     if (q.type === 'multiple_choice') return draft !== null && draft !== undefined;
     if (q.type === 'fill_blank') return Array.isArray(draft) && draft.every((s) => String(s || '').trim() !== '');
     return String(draft || '').trim() !== '';
@@ -364,7 +330,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           </button>
         )}
       </div>
-      <MathView content={q.question} graphData={q.requiresManualGrading || q.type === 'teacher_review' ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+      <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
       <AnimatePresence>
         {showHint && q.hint && (
           <motion.div
@@ -403,90 +369,24 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </div>
   );
 
-  const answerArea = hasSubs ? (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-      {subList.map((sq, sIdx) => {
-        const key = sq.id ?? sIdx;
-        const given = (draft && typeof draft === 'object') ? (draft[key] || '') : '';
-        const correctSub = showFeedback && gradeSub(sq, sIdx);
-        const wrongSub = showFeedback && !correctSub;
-        const subOpts = sq.opts || sq.options || [];
-        const isSubMC = (sq.type === 'multiple_choice') && subOpts.length > 0;
-        return (
-          <div key={key} style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '18px' }}>
-            <MathView content={sq.question} graphData={sq.requiresManualGrading || sq.type === 'teacher_review' ? (showFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem', marginBottom: '12px' }} />
-            {isSubMC ? (
-              <div style={{ display: 'grid', gap: '8px' }}>
-                {subOpts.map((opt, oi) => {
-                  const optText = typeof opt === 'string' ? opt : opt.text;
-                  const selected = given === optText;
-                  return (
-                    <button key={oi} onClick={() => { if (showFeedback) return; setDraft((prev) => ({ ...(prev || {}), [key]: optText })); }} disabled={showFeedback}
-                      style={{ padding: '12px 16px', borderRadius: '12px', border: `2px solid ${selected ? '#6366f1' : '#e2e8f0'}`, background: selected ? '#f5f3ff' : '#fff', textAlign: 'left', cursor: showFeedback ? 'default' : 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <span style={{ fontWeight: 800, color: '#64748b' }}>{String.fromCharCode(65 + oi)}.</span>
-                      <MathView content={optText} style={{ display: 'inline' }} />
-                    </button>
-                  );
-                })}
-              </div>
-            ) : (
-              <input
-                type="text"
-                value={given}
-                readOnly={showFeedback}
-                onChange={(e) => setDraft((prev) => ({ ...(prev || {}), [key]: e.target.value }))}
-                placeholder="Type your answer…"
-                style={{ width: '100%', boxSizing: 'border-box', padding: '14px 16px', borderRadius: '12px', fontWeight: 700, fontSize: '1.05rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif', border: `2px solid ${showFeedback ? (correctSub ? '#10b981' : '#ef4444') : '#a78bfa'}`, background: showFeedback ? (correctSub ? '#f0fdf4' : '#fff1f2') : '#fff' }}
-              />
-            )}
-            {showFeedback && String(given).includes('/') && (
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', marginTop: '8px' }}>
-                <span style={{ fontSize: '0.62rem', fontWeight: 800, color: '#a78bfa', textTransform: 'uppercase' }}>You wrote</span>
-                <MathView content={String(given)} style={{ fontSize: '1.2rem', color: '#1e1b4b' }} />
-              </div>
-            )}
-            {showFeedback && wrongSub && (
-              <div style={{ marginTop: '10px', padding: '8px 12px', borderRadius: '10px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-                Correct: <MathView content={String(sq.a ?? sq.answer ?? '')} style={{ display: 'inline' }} />
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
-  ) : q.type === 'multiple_choice' ? (
+  const answerArea = q.type === 'multiple_choice' ? (
     <div style={{ display: 'grid', gap: '10px' }}>
       {(q.options || []).map((opt, i) => {
         const optText = typeof opt === 'string' ? opt : opt.text;
-        const optImage = (opt && typeof opt === 'object') ? (opt.imageUrl || opt.image || '') : '';
-        const hasImage = !!optImage;
         const selected = draft === i;
         const isCorrect = showFeedback && i === correctMc;
         const isWrong = showFeedback && selected && !isCorrect;
-        const letter = String.fromCharCode(65 + i);
         return (
           <button
             key={i}
             onClick={() => !showFeedback && setDraft(i)}
             disabled={showFeedback}
-            style={{ padding: hasImage ? '14px' : '14px 22px', borderRadius: hasImage ? '20px' : '100px', border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : selected ? '#6366f1' : 'transparent'}`, background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '14px', cursor: showFeedback ? 'default' : 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', textAlign: 'left' }}
+            style={{ padding: '14px 22px', borderRadius: '100px', border: `2px solid ${isCorrect ? '#10b981' : isWrong ? '#ef4444' : selected ? '#6366f1' : 'transparent'}`, background: isCorrect ? '#f0fdf4' : isWrong ? '#fef2f2' : selected ? '#f5f3ff' : '#fff', display: 'flex', alignItems: 'center', gap: '14px', cursor: showFeedback ? 'default' : 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', textAlign: 'left' }}
           >
             <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrect ? '#10b981' : selected ? '#6366f1' : '#f1f5f9', color: isCorrect || selected ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
-              {letter}
+              {String.fromCharCode(65 + i)}
             </div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              {(!hasImage || (optText && optText !== letter)) && (
-                <MathView content={optText} style={{ fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
-              )}
-              {hasImage && (
-                <img
-                  src={optImage}
-                  alt={`Option ${letter}`}
-                  onClick={(e) => { e.stopPropagation(); setZoomImage(optImage); }}
-                  style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: optText && optText !== letter ? '8px' : 0, display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9', cursor: 'zoom-in' }}
-                />
-              )}
-            </div>
+            <MathView content={optText} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
             {isCorrect && <CheckCircle2 size={20} color="#10b981" />}
             {isWrong && <XCircle size={20} color="#ef4444" />}
           </button>
@@ -534,26 +434,33 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </div>
   ) : (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-      {/* Quick-insert buttons for the MathLive editor */}
-      {!showFeedback && (
-        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
-          {EXAM_QUICK_INSERTS.map((b) => (
-            <button key={b.label} type="button" onClick={() => examMathRef.current?.insert(b.latex)} title={b.title}
-              style={{ minWidth: '46px', height: '42px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.05rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}>
-              {b.label}
-            </button>
-          ))}
+      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {MATH_SYMBOLS.map((s) => (
+          <button key={s} onClick={() => !showFeedback && setDraft((draft || '') + s)} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
+        ))}
+        <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
+      </div>
+      {examFracMode && (
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
+          <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+            <input value={examFracNum} onChange={(e) => setExamFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracDenRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
+            <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
+            <input ref={examFracDenRef} value={examFracDen} onChange={(e) => setExamFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') commitExamFrac(examFracNum, examFracDen); if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
+          </div>
+          <button onClick={() => commitExamFrac(examFracNum, examFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
+          <button onClick={() => { setExamFracMode(false); examInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
         </div>
       )}
-      <MathInput
-        ref={examMathRef}
-        value={typeof draft === 'string' ? draft : ''}
-        onChange={(latex) => !showFeedback && setDraft(latex)}
-        onEnter={() => { if (draft && !showFeedback) submit(); }}
-        readOnly={showFeedback}
-        placeholder="Type your answer…  (use the buttons for √ and fractions)"
-        autoFocus
-        style={{ fontSize: '1.2rem', padding: '18px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}` }}
+      <input
+        ref={examInputRef}
+        type="text" value={draft || ''} readOnly={showFeedback || examFracMode}
+        onChange={(e) => setDraft(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === '/' && !showFeedback) { e.preventDefault(); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); }
+          if (e.key === 'Enter' && draft && !showFeedback) submit();
+        }}
+        placeholder={examFracMode ? '' : 'Type your answer… (press / for fraction)'}
+        style={{ padding: '20px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}`, background: '#fff', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif', opacity: examFracMode ? 0.4 : 1 }}
       />
       {showFeedback && !lastRes?.correct && (
         <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
@@ -600,11 +507,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
         <div style={{ minWidth: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <button
-              onClick={() => {
-                const newVal = !isGraphPaper;
-                setIsGraphPaper(newVal);
-                canvasRef.current?.setCurrentPageType(newVal);
-              }}
+              onClick={() => setIsGraphPaper(v => !v)}
               title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '5px',
@@ -619,8 +522,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
             </button>
           </div>
           <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false}
-              onPageChange={() => setIsGraphPaper(canvasRef.current?.getCurrentPageType() ?? false)} />
+            <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
           </div>
         </div>
       </div>
@@ -645,11 +547,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
           >
             <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
               <button
-                onClick={() => {
-                  const newVal = !isGraphPaper;
-                  setIsGraphPaper(newVal);
-                  canvasRef.current?.setCurrentPageType(newVal);
-                }}
+                onClick={() => setIsGraphPaper(v => !v)}
                 title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '5px',
@@ -664,38 +562,8 @@ const QuizView = ({ questions, onFinish, onReport }) => {
               </button>
             </div>
             <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-              <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false}
-                onPageChange={() => setIsGraphPaper(canvasRef.current?.getCurrentPageType() ?? false)} />
+              <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Fullscreen zoom for graph-choice option images */}
-      <AnimatePresence>
-        {zoomImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setZoomImage(null)}
-            style={{ position: 'fixed', inset: 0, zIndex: 100000, background: 'rgba(15,23,42,0.88)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px', cursor: 'zoom-out' }}
-          >
-            <motion.img
-              initial={{ scale: 0.92, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.92, opacity: 0 }}
-              src={zoomImage}
-              alt="Enlarged option"
-              onClick={(e) => e.stopPropagation()}
-              style={{ maxWidth: '92vw', maxHeight: '88vh', objectFit: 'contain', borderRadius: '16px', background: '#fff', padding: '12px', boxShadow: '0 25px 60px rgba(0,0,0,0.5)' }}
-            />
-            <button
-              onClick={() => setZoomImage(null)}
-              style={{ position: 'absolute', top: '20px', right: '20px', width: '44px', height: '44px', borderRadius: '50%', border: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff', fontSize: '1.4rem', fontWeight: 800, cursor: 'pointer' }}
-            >
-              ✕
-            </button>
           </motion.div>
         )}
       </AnimatePresence>
@@ -769,30 +637,6 @@ const ReviewView = ({ questions, answers, onDone }) => {
       </div>
 
       {/* your answer vs correct */}
-      {Array.isArray(q.subQuestions) && q.subQuestions.length > 0 ? (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          {q.subQuestions.map((sq, sIdx) => {
-            const key = sq.id ?? sIdx;
-            const given = (ans?.userAnswer && typeof ans.userAnswer === 'object') ? (ans.userAnswer[key] || '') : '';
-            const subOK = answersMatch(given, sq.a ?? sq.answer ?? '');
-            return (
-              <div key={key} style={{ padding: '14px 16px', borderRadius: '16px', background: '#fff', border: '1px solid #e2e8f0' }}>
-                <MathView content={sq.question} style={{ fontSize: '0.92rem', fontWeight: 700, color: '#1e293b', marginBottom: '8px' }} />
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
-                  <div style={{ padding: '10px 12px', borderRadius: '12px', background: subOK ? '#f0fdf4' : '#fef2f2', border: `1px solid ${subOK ? '#bbf7d0' : '#fecaca'}` }}>
-                    <div style={{ fontSize: '0.62rem', fontWeight: 800, color: subOK ? '#16a34a' : '#dc2626', textTransform: 'uppercase', marginBottom: '4px' }}>Your answer</div>
-                    <MathView content={String(given || '—')} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1e293b' }} />
-                  </div>
-                  <div style={{ padding: '10px 12px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
-                    <div style={{ fontSize: '0.62rem', fontWeight: 800, color: '#16a34a', textTransform: 'uppercase', marginBottom: '4px' }}>Correct</div>
-                    <MathView content={String(sq.a ?? sq.answer ?? '')} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#166534' }} />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      ) : (
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
         <div style={{ padding: '16px', borderRadius: '18px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}` }}>
           <div style={{ fontSize: '0.68rem', fontWeight: 800, color: isCorrect ? '#16a34a' : '#dc2626', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Your answer</div>
@@ -817,7 +661,6 @@ const ReviewView = ({ questions, answers, onDone }) => {
           />
         </div>
       </div>
-      )}
 
       {/* step-by-step solution */}
       {solutionSteps.length > 0 && (
@@ -975,198 +818,231 @@ const useViewport = () => {
 // reads like a dashboard: hero (stats + CTA) on top, two-column row with
 // topics & secret-note side by side, and the topic analysis chart below.
 const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
-  const { isNarrow, isMid } = useViewport();
+  const { isNarrow } = useViewport();
   const accuracy = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
-  // Flatten the curriculum once so we can render the teacher-set chapter
-  // chips with a year prefix.
   const allChapters = useMemo(() => {
     const list = [];
     allYearKeys.forEach((y) => flattenChapters(y).forEach((ch) => list.push({ ...ch, year: y })));
     return list;
   }, []);
-  const selectedChips = selection.chapters
-    .map((id) => allChapters.find((c) => c.id === id))
-    .filter(Boolean);
+  const selectedChips = selection.chapters.map((id) => allChapters.find((c) => c.id === id)).filter(Boolean);
   const hasTopics = selectedChips.length > 0;
+  const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  // Weakest topics for focus grid
+  const focusTopics = analysis.filter(t => t.attempted >= 1).slice(0, 4);
+  const worstTopic = analysis.find(t => t.attempted >= 2 && t.pct < 70);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      {/* HERO — full-bleed gradient with stats and the primary CTA */}
-      <div
-        style={{
-          position: 'relative',
-          padding: isNarrow ? '22px 20px 20px' : '32px 32px 28px',
-          borderRadius: isNarrow ? '24px' : '32px',
-          color: '#1e1b4b',
-          overflow: 'hidden',
-          background: 'linear-gradient(135deg, #a78bfa 0%, #c4b5fd 60%, #ddd6fe 100%)',
-          boxShadow: '0 18px 36px -16px rgba(124,58,237,0.35)',
-        }}
-      >
-        {/* decorative glow */}
-        <div aria-hidden style={{ position: 'absolute', top: '-60px', right: '-40px', width: '220px', height: '220px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.22), transparent 70%)' }} />
-        <div aria-hidden style={{ position: 'absolute', bottom: '-80px', left: '-40px', width: '260px', height: '260px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(255,255,255,0.12), transparent 70%)' }} />
+    <div style={{ maxWidth: '1040px', margin: '0 auto', padding: isNarrow ? '0' : '0' }}>
 
-        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          {/* Row 1: badge + title */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '52px', height: '52px', borderRadius: '16px', background: 'rgba(255,255,255,0.6)', backdropFilter: 'blur(6px)', display: 'grid', placeItems: 'center', color: '#5b21b6' }}>
-              <GraduationCap size={24} />
-            </div>
-            <div>
-              <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5b21b6' }}>Exam Prep</div>
-              <h1 style={{ margin: '2px 0 0', fontSize: isNarrow ? '1.4rem' : '1.8rem', fontWeight: 900, letterSpacing: '-0.01em', color: '#1e1b4b' }}>Time to practise</h1>
-            </div>
+      {/* ── MASTHEAD ── */}
+      <div style={{ borderBottom: '1px solid rgba(124,58,237,0.18)', paddingBottom: '18px', marginBottom: '26px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+        <div>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7c3aed' }}>
+            EXAM PREP · SAPERE
           </div>
+          <h1 style={{ fontWeight: 800, fontSize: isNarrow ? '2.1rem' : 'clamp(2rem, 3vw, 2.75rem)', lineHeight: 1.05, color: '#1e1b4b', margin: '8px 0 0', letterSpacing: '-0.02em' }}>
+            Exam Prep
+          </h1>
+        </div>
+        <div style={{ textAlign: 'right', fontSize: '0.76rem', color: '#8b7aa7', fontWeight: 700, lineHeight: 1.6 }}>
+          <div>{today}</div>
+          <div>{stats.sessions} {stats.sessions === 1 ? 'session' : 'sessions'} completed</div>
+        </div>
+      </div>
 
-          {/* Row 2: stat tiles (glassy) — 3 cols on tablets+, 3-compact on phones */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: isNarrow ? '6px' : '10px' }}>
-            <GlassStat label="Sessions" value={stats.sessions} compact={isNarrow} />
-            <GlassStat label="Accuracy" value={`${accuracy}%`} compact={isNarrow} />
-            <GlassStat label="Attempted" value={stats.attempted} compact={isNarrow} />
-          </div>
-
-          {/* Row 3: CTA — stacks on narrow; primary button stretches */}
-          <div style={{ display: 'flex', flexDirection: isNarrow ? 'column' : 'row', alignItems: isNarrow ? 'stretch' : 'center', gap: '12px', flexWrap: 'wrap' }}>
+      {/* ── LEAD: standfirst + figures rail ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1fr 260px', gap: '28px', marginBottom: '30px' }}>
+        {/* Left: standfirst + CTA */}
+        <div>
+          <p style={{ fontSize: '1.1rem', lineHeight: 1.6, color: '#3b2b68', fontWeight: 500, margin: '0 0 6px' }}>
+            <b style={{ color: '#1e1b4b' }}>Practise smarter, not harder.</b>{' '}
+            {hasTopics
+              ? `Your teacher has selected ${selectedChips.length} topic${selectedChips.length > 1 ? 's' : ''} for you to master. Each round gives you ${ROUND_SIZE_CONST} carefully chosen questions.`
+              : 'Your teacher will set your exam topics. Once they\'re ready, start practising with targeted questions.'}
+          </p>
+          <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
             <button
               onClick={onStart}
               disabled={!hasTopics || loading}
               style={{
-                flex: 1, minWidth: '200px',
-                padding: '16px 22px',
-                borderRadius: '18px',
-                border: 'none',
-                background: !hasTopics || loading ? 'rgba(255,255,255,0.25)' : '#fff',
-                color: !hasTopics || loading ? 'rgba(255,255,255,0.7)' : '#5b21b6',
-                fontWeight: 900, fontSize: '1.05rem',
+                display: 'inline-flex', alignItems: 'center', gap: '10px',
+                padding: '14px 26px', borderRadius: '14px',
+                background: !hasTopics || loading ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #8b5cf6 55%, #7c3aed 100%)',
+                color: '#fff', fontWeight: 800, border: 'none',
                 cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
-                boxShadow: !hasTopics || loading ? 'none' : '0 12px 24px rgba(15,23,42,0.18)',
-                transition: 'transform 0.15s, box-shadow 0.15s',
+                fontSize: '0.95rem', letterSpacing: '-0.01em',
+                boxShadow: !hasTopics || loading ? 'none' : '0 14px 28px rgba(124,58,237,0.24)',
               }}
-              onMouseDown={(e) => { if (hasTopics && !loading) e.currentTarget.style.transform = 'scale(0.98)'; }}
-              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
             >
-              <Play size={18} /> {loading ? 'Loading…' : 'Start round'}
-              <span style={{ fontSize: '0.8rem', fontWeight: 800, opacity: 0.65 }}>· 15 Qs</span>
+              <Play size={16} fill="currentColor" />
+              {loading ? 'Loading…' : 'Start round'}
+              <span style={{ opacity: 0.6, fontWeight: 600, paddingLeft: '10px', marginLeft: '2px', borderLeft: '1px solid rgba(255,255,255,0.25)', fontSize: '0.82rem' }}>
+                {ROUND_SIZE_CONST} Qs
+              </span>
             </button>
-            <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#5b21b6', lineHeight: 1.4, textAlign: isNarrow ? 'center' : 'left' }}>
-              {hasTopics
-                ? `${selectedChips.length} ${selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher`
-                : 'Your teacher hasn\'t picked topics yet.'}
-            </div>
+            {noteCount > 0 && (
+              <button
+                onClick={onOpenSecretNote}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '8px',
+                  padding: '14px 18px', borderRadius: '14px',
+                  background: '#fffbeb', border: '1px solid #fcd34d',
+                  color: '#78350f', fontWeight: 800, cursor: 'pointer', fontSize: '0.88rem',
+                }}
+              >
+                <BookmarkPlus size={15} />
+                {noteCount} note{noteCount > 1 ? 's' : ''}
+                {dueCount > 0 && <span style={{ background: '#fbbf24', color: '#fff', borderRadius: '999px', padding: '1px 7px', fontSize: '0.7rem', fontWeight: 900 }}>{dueCount} due</span>}
+              </button>
+            )}
           </div>
         </div>
-      </div>
 
-      {/* SECRET NOTE — full-width bar above topics */}
-      <button
-        onClick={onOpenSecretNote}
-        disabled={noteCount === 0}
-        style={{
-          width: '100%',
-          padding: '18px 24px', borderRadius: '22px', textAlign: 'left',
-          cursor: noteCount === 0 ? 'default' : 'pointer',
-          border: '1px solid ' + (noteCount > 0 ? '#fde68a' : '#e2e8f0'),
-          background: noteCount > 0 ? 'linear-gradient(135deg, #fffbeb, #fef3c7)' : '#fff',
-          display: 'flex', alignItems: 'center', gap: '14px',
-          transition: 'transform 0.15s, box-shadow 0.15s',
-        }}
-        onMouseEnter={(e) => { if (noteCount > 0) { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 28px rgba(0,0,0,0.06)'; } }}
-        onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
-      >
-        <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: noteCount > 0 ? '#fcd34d' : '#f1f5f9', display: 'grid', placeItems: 'center', color: noteCount > 0 ? '#78350f' : '#94a3b8', flexShrink: 0 }}>
-          <BookmarkPlus size={20} />
-        </div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontWeight: 900, color: noteCount > 0 ? '#78350f' : '#475569', fontSize: '0.95rem' }}>Exam Prep Secret Note</div>
-          <div style={{ fontSize: '0.8rem', color: noteCount > 0 ? '#92400e' : '#94a3b8', fontWeight: 700, marginTop: '2px' }}>
-            {noteCount === 0 ? 'Mistakes you make will appear here for review.' : `${noteCount} ${noteCount === 1 ? 'note' : 'notes'} · ${dueCount} due now`}
-          </div>
-        </div>
-        {noteCount > 0 && <ChevronRight size={18} color="#92400e" />}
-      </button>
-
-      {/* TOPICS — full width below Secret Note */}
-      <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-          <Target size={16} color="#7c3aed" />
-          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Your exam topics</h3>
-        </div>
-        {!hasTopics ? (
-          <div style={{ padding: '20px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
-            No topics yet — ask your teacher.
-          </div>
-        ) : (
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-            {selectedChips.map((ch) => (
-              <div key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '14px', background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)', border: '1px solid #ddd6fe', fontWeight: 700, fontSize: '0.85rem' }}>
-                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: '#5b21b6', background: '#fff', padding: '2px 8px', borderRadius: '999px', letterSpacing: '0.05em' }}>
-                  {ch.year.replace('Year ', 'Y')}
-                </span>
-                <span style={{ color: '#312e81' }}>{ch.title}</span>
+        {/* Right: figures rail */}
+        {!isNarrow && (
+          <div style={{ borderLeft: '1px solid rgba(124,58,237,0.25)', paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '18px' }}>
+            {[
+              { n: `${accuracy}%`, small: null, l: 'Accuracy' },
+              { n: stats.attempted, small: null, l: 'Questions attempted' },
+              { n: stats.sessions, small: null, l: 'Rounds completed' },
+            ].map(({ n, small, l }) => (
+              <div key={l}>
+                <div style={{ fontWeight: 800, fontSize: '2.2rem', color: '#1e1b4b', lineHeight: 1 }}>
+                  {n}{small && <small style={{ fontSize: '1rem', color: '#8b7aa7' }}>{small}</small>}
+                </div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8b7aa7', marginTop: '4px' }}>{l}</div>
               </div>
             ))}
           </div>
         )}
       </div>
 
-      {/* Where to focus — visual progress chart */}
-      <div className="app-panel" style={{ padding: '22px 24px', borderRadius: '22px', background: '#fff', border: '1px solid #e2e8f0' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
-          <Sparkles size={16} color="#7c3aed" />
-          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Where to focus</h3>
-          <span style={{ marginLeft: 'auto', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>
-            Weakest topics first
-          </span>
-        </div>
-        {analysis.length === 0 ? (
-          <div style={{ padding: '24px', background: '#f8fafc', borderRadius: '14px', color: '#94a3b8', fontWeight: 700, textAlign: 'center' }}>
-            Finish a round to see your topic breakdown.
+      {/* ── TWO COLUMNS ── */}
+      <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1.6fr 1fr', gap: '28px', alignItems: 'start' }}>
+
+        {/* LEFT: Focus grid */}
+        <div>
+          <div style={{ fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#7c3aed', paddingBottom: '8px', borderBottom: '1px solid rgba(124,58,237,0.2)', marginBottom: '16px' }}>
+            Where to focus
           </div>
-        ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {analysis.slice(0, 8).map((t) => {
-              // Tier the row by % so the background tint instantly communicates
-              // strong / weak topics at a glance.
-              const tier = t.attempted < 3
-                ? 'neutral'
-                : t.pct < 50
-                  ? 'weak'
-                  : t.pct < 75
-                    ? 'mid'
-                    : 'strong';
-              const palette = {
-                neutral: { bg: '#f8fafc', border: '#e2e8f0', track: '#e2e8f0', accent: '#94a3b8' },
-                weak:    { bg: '#fef2f2', border: '#fecaca', track: '#fee2e2', accent: '#ef4444' },
-                mid:     { bg: '#fffbeb', border: '#fde68a', track: '#fef3c7', accent: '#f59e0b' },
-                strong:  { bg: '#f0fdf4', border: '#bbf7d0', track: '#dcfce7', accent: '#10b981' },
-              }[tier];
-              return (
-                <div
-                  key={t.topicId}
-                  style={{
-                    display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 80px', gap: '14px', alignItems: 'center',
-                    padding: '12px 16px', borderRadius: '14px',
-                    background: palette.bg, border: `1px solid ${palette.border}`,
-                  }}
-                >
-                  <div>
-                    <div style={{ fontWeight: 800, color: '#1e293b', fontSize: '0.85rem', marginBottom: '6px' }}>{t.title}</div>
-                    <div style={{ height: '8px', background: palette.track, borderRadius: '999px', overflow: 'hidden' }}>
-                      <div style={{ height: '100%', width: `${t.pct}%`, background: palette.accent, transition: 'width 0.4s' }} />
+          {focusTopics.length === 0 ? (
+            <div style={{ padding: '32px', background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(167,139,250,0.18)', borderRadius: '16px', textAlign: 'center', color: '#8b7aa7', fontWeight: 700, fontSize: '0.9rem' }}>
+              Complete a round to see your topic breakdown.
+            </div>
+          ) : (
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+              {focusTopics.map((t) => {
+                const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+                return (
+                  <div key={t.topicId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
+                      <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{t.title}</div>
+                      <div style={{ fontWeight: 900, fontSize: '1.4rem', color, flexShrink: 0 }}>{t.pct}%</div>
+                    </div>
+                    <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>{t.correct}/{t.attempted} correct</div>
+                    <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
                     </div>
                   </div>
-                  <div style={{ textAlign: 'right' }}>
-                    <div style={{ fontSize: '1.05rem', fontWeight: 900, color: palette.accent }}>{t.pct}%</div>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#94a3b8' }}>{t.correct}/{t.attempted}</div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Extended analysis (> 4 topics) */}
+          {analysis.length > 4 && (
+            <div style={{ marginTop: '12px' }}>
+              {analysis.slice(4, 10).map((t) => {
+                const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+                return (
+                  <div key={t.topicId} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 0', borderBottom: '1px solid rgba(167,139,250,0.1)' }}>
+                    <div style={{ flex: 1, fontSize: '0.88rem', fontWeight: 600, color: '#1e1b4b', minWidth: 0 }}>{t.title}</div>
+                    <div style={{ width: '90px', height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden', flexShrink: 0 }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color }} />
+                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '0.82rem', color, width: '36px', textAlign: 'right', flexShrink: 0 }}>{t.pct}%</div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        {/* RIGHT: Sidebar */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+
+          {/* Pull quote — recommended topic */}
+          {worstTopic ? (
+            <div style={{ padding: '20px', borderRadius: '18px', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', border: '1px solid #fcd34d' }}>
+              <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#b45309', marginBottom: '8px' }}>
+                Recommended focus
+              </div>
+              <div style={{ fontSize: '1.2rem', color: '#78350f', lineHeight: 1.35, marginBottom: '14px', fontWeight: 800 }}>
+                "{worstTopic.title}"
+              </div>
+              <div style={{ fontSize: '0.8rem', color: '#92400e', fontWeight: 700 }}>
+                {worstTopic.pct}% accuracy · {worstTopic.correct}/{worstTopic.attempted} correct — needs work
+              </div>
+              <button
+                onClick={onStart}
+                disabled={!hasTopics || loading}
+                style={{ marginTop: '14px', width: '100%', padding: '11px', borderRadius: '12px', background: '#92400e', color: '#fff', fontWeight: 800, fontSize: '0.86rem', border: 'none', cursor: !hasTopics || loading ? 'not-allowed' : 'pointer' }}
+              >
+                Practise now →
+              </button>
+            </div>
+          ) : noteCount > 0 ? (
+            <button
+              onClick={onOpenSecretNote}
+              style={{ padding: '18px', borderRadius: '18px', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', border: '1px solid #fcd34d', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', textAlign: 'left', width: '100%' }}
+            >
+              <div style={{ width: '44px', height: '44px', borderRadius: '13px', background: '#fbbf24', color: '#fff', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+                <BookmarkPlus size={20} />
+              </div>
+              <div>
+                <div style={{ fontWeight: 900, color: '#78350f', fontSize: '0.95rem' }}>Secret Note</div>
+                <div style={{ fontSize: '0.78rem', color: '#b45309', fontWeight: 700 }}>{noteCount} note{noteCount > 1 ? 's' : ''} · {dueCount} due now</div>
+              </div>
+              <ChevronRight size={16} color="#b45309" style={{ marginLeft: 'auto' }} />
+            </button>
+          ) : null}
+
+          {/* Topics list */}
+          <div style={{ padding: '18px', borderRadius: '18px', background: 'rgba(255,255,255,0.88)', border: '1px solid rgba(167,139,250,0.16)' }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Target size={12} /> Your exam topics
+            </div>
+            {!hasTopics ? (
+              <div style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: 700, textAlign: 'center', padding: '12px 0' }}>
+                No topics set yet — ask your teacher.
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+                {selectedChips.map((ch, i) => (
+                  <div key={ch.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0', borderBottom: i < selectedChips.length - 1 ? '1px solid rgba(167,139,250,0.1)' : 'none' }}>
+                    <span style={{ fontFamily: 'inherit', fontSize: '0.62rem', fontWeight: 800, color: '#6d28d9', background: 'rgba(139,92,246,0.1)', padding: '3px 8px', borderRadius: '7px', flexShrink: 0 }}>
+                      {ch.year.replace('Year ', 'Y')}
+                    </span>
+                    <span style={{ fontSize: '0.86rem', fontWeight: 600, color: '#1e1b4b' }}>{ch.title}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        )}
+
+          {/* Secret note shortcut if no worst topic shown */}
+          {!worstTopic && noteCount === 0 && (
+            <button
+              onClick={onOpenSecretNote}
+              style={{ padding: '14px 16px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'default', textAlign: 'left', width: '100%', opacity: 0.6 }}
+            >
+              <BookmarkPlus size={16} color="#94a3b8" />
+              <div style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 700 }}>Mistakes will appear here for review.</div>
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
