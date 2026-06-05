@@ -3,15 +3,70 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, XCircle, Zap, BookOpen,
   ChevronRight, Play, RotateCcw, Trophy,
-  Lightbulb, Check, X,
+  Lightbulb, Check, X, Flag,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, setDoc, addDoc, serverTimestamp } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
 import MathView from './MathView';
 import { answersMatch } from '../utils/answerMatching';
-import { MATH_SYMBOLS } from '../utils/challengeUtils';
 import MathInput from './MathInput';
+import ChallengeSketchBoard from './challenge/ChallengeSketchBoard';
+
+// Fisher–Yates shuffle (returns a new array).
+const shuffleArray = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
+// Shuffle a multiple-choice question's options and remap the answer index so
+// the correct option follows its new position. Sub-question MC options are
+// shuffled too. Non-MC questions are returned unchanged.
+const shuffleQuestionOptions = (q) => {
+  const isMCQ = (qq) =>
+    (qq.options?.length > 0) && qq.type !== 'short_answer' && qq.type !== 'fill_blank';
+
+  const remap = (opts, answer) => {
+    if (!opts || opts.length < 2) return { options: opts, answer };
+    const order = shuffleArray(opts.map((_, i) => i));
+    const newOptions = order.map((i) => opts[i]);
+    const correctIdx = Number(answer);
+    const newAnswer = Number.isInteger(correctIdx) ? String(order.indexOf(correctIdx)) : answer;
+    return { options: newOptions, answer: newAnswer };
+  };
+
+  let next = { ...q };
+  if (!q.subQuestions?.length && isMCQ(q)) {
+    const { options, answer } = remap(q.options, q.answer);
+    next.options = options;
+    next.answer = answer;
+  }
+  if (q.subQuestions?.length) {
+    next.subQuestions = q.subQuestions.map((sq) => {
+      if (sq.type !== 'multiple_choice' || !(sq.options?.length > 1)) return sq;
+      const { options, answer } = remap(sq.options, sq.answer);
+      return { ...sq, options, answer };
+    });
+  }
+  return next;
+};
+
+// Small viewport-width hook so the quiz can switch between the side-by-side
+// canvas layout (wide) and a stacked layout (narrow).
+const useViewportWidth = () => {
+  const [w, setW] = useState(() => (typeof window === 'undefined' ? 1024 : window.innerWidth));
+  useEffect(() => {
+    const onResize = () => setW(window.innerWidth);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+  return w;
+};
 
 // Quick-insert buttons for the MathLive editor. `#?` is a placeholder the
 // cursor lands in, so students can immediately type the radicand/numerator.
@@ -60,6 +115,13 @@ const shortText = (str, max = 80) => {
 // ── Main component ───────────────────────────────────────────────────────────
 const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const { user } = useAuth();
+  const { showToast } = useToast();
+  // Report-a-problem state. reportTargetRef freezes the question at click time
+  // so the correct question is reported even if the view changes.
+  const [reportOpen, setReportOpen] = useState(false);
+  const [reportMessage, setReportMessage] = useState('');
+  const [submittingReport, setSubmittingReport] = useState(false);
+  const reportTargetRef = useRef(null);
   const [view, setView] = useState('list'); // 'list' | 'quiz' | 'done'
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -78,6 +140,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const fracNumRef = useRef(null);
   const fracDenRef = useRef(null);
   const mathInputRef = useRef(null);
+  const sketchRef = useRef(null);
+  const viewportW = useViewportWidth();
+  const isWide = viewportW >= 980;
 
   // Load questions for this topic
   useEffect(() => {
@@ -95,13 +160,10 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
         const all = snap.docs
           .map((d) => ({ id: d.id, ...d.data() }))
           .filter((q) => q.isActive !== false && q.topicId === topic.id);
-        // Shuffle so each practice session presents questions in a fresh
-        // random order (Fisher–Yates).
-        for (let i = all.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [all[i], all[j]] = [all[j], all[i]];
-        }
-        if (!cancelled) setQuestions(all);
+        // Shuffle question order (fresh random order each time the student
+        // enters), and shuffle each multiple-choice question's options.
+        const prepared = shuffleArray(all).map(shuffleQuestionOptions);
+        if (!cancelled) setQuestions(prepared);
       } catch (e) {
         console.error('Failed to load topic questions:', e);
       } finally {
@@ -184,12 +246,58 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   }, [results, isCorrect, user, chapter.id, topic.id]);
 
   const handleRestart = () => {
+    // Reshuffle question order + MC options for a fresh attempt.
+    setQuestions((prev) => shuffleArray(prev).map(shuffleQuestionOptions));
     setCurrentIdx(0);
     setResults([]);
     setUserAnswer('');
     setSubmitted(false);
     setIsCorrect(null);
     setView('quiz');
+  };
+
+  // ── Report a problem with the current question ─────────────────────────────
+  const openReport = () => {
+    reportTargetRef.current = q;
+    setReportMessage('');
+    setReportOpen(true);
+  };
+  const submitReport = async () => {
+    const target = reportTargetRef.current || q;
+    if (!target || !reportMessage.trim() || !user?.uid) return;
+    setSubmittingReport(true);
+    try {
+      await addDoc(collection(db, 'reports'), {
+        studentId: user.uid,
+        studentName: user.displayName || user.email || profile?.name || 'Student',
+        questionId: target.id || '',
+        source: 'topic_practice',
+        questionData: {
+          id: target.id || '',
+          question: target.question || '',
+          answer: String(target.answer ?? ''),
+          type: target.type || '',
+          chapterId: chapter?.id || '',
+          chapterTitle: chapter?.title || '',
+          topicId: topic?.id || '',
+          topicCode: topic?.code || '',
+          topicTitle: topic?.title || '',
+          isManual: !!target.isManual,
+        },
+        message: reportMessage.trim(),
+        status: 'open',
+        createdAt: serverTimestamp(),
+      });
+      showToast('Report submitted — your teacher will review it.', 'success');
+      reportTargetRef.current = null;
+      setReportOpen(false);
+      setReportMessage('');
+    } catch (err) {
+      console.error('Topic practice report failed:', err);
+      showToast('Failed to submit report.', 'error');
+    } finally {
+      setSubmittingReport(false);
+    }
   };
 
   // ── Fraction input mode (supports mixed numbers via the whole field) ───────
@@ -534,34 +642,10 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
       );
     };
 
-    return (
-      <motion.div
-        initial={{ opacity: 0, x: 32 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 32 }}
-        transition={{ type: 'spring', damping: 26, stiffness: 280 }}
-        style={{ maxWidth: '760px', margin: '0 auto' }}
-      >
-        {/* Top bar */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
-          <button
-            onClick={() => setView('list')}
-            style={{
-              display: 'inline-flex', alignItems: 'center', gap: '6px',
-              padding: '8px 14px', borderRadius: '12px', border: 'none',
-              background: 'rgba(167,139,250,0.1)', color: '#7c3aed',
-              fontSize: '0.82rem', fontWeight: 800, cursor: 'pointer',
-            }}
-          >
-            <ArrowLeft size={15} /> {topic.code}
-          </button>
-          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b' }}>
-            {currentIdx + 1} / {total}
-          </div>
-        </div>
-
+    const leftPanel = (
+      <div style={{ minWidth: 0, overflowY: 'auto', WebkitOverflowScrolling: 'touch', display: 'flex', flexDirection: 'column', paddingRight: isWide ? '4px' : 0 }}>
         {/* Progress bar */}
-        <div style={{ height: '6px', borderRadius: '999px', background: '#e2e8f0', marginBottom: '20px', overflow: 'hidden' }}>
+        <div style={{ height: '6px', borderRadius: '999px', background: '#e2e8f0', marginBottom: '20px', overflow: 'hidden', flexShrink: 0 }}>
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${progressPct}%` }}
@@ -593,19 +677,32 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                 </span>
               )}
             </div>
-            {q?.hint && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+              {q?.hint && (
+                <button
+                  onClick={() => setShowHint((v) => !v)}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: '5px',
+                    padding: '5px 11px', borderRadius: '9px', border: 'none',
+                    background: showHint ? '#fef3c7' : '#fff7ed',
+                    color: '#d97706', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer',
+                  }}
+                >
+                  <Lightbulb size={13} /> {showHint ? 'Hide' : 'Hint'}
+                </button>
+              )}
               <button
-                onClick={() => setShowHint((v) => !v)}
+                onClick={openReport}
+                title="Report a problem with this question"
                 style={{
                   display: 'flex', alignItems: 'center', gap: '5px',
-                  padding: '5px 11px', borderRadius: '9px', border: 'none',
-                  background: showHint ? '#fef3c7' : '#fff7ed',
-                  color: '#d97706', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer',
+                  padding: '5px 11px', borderRadius: '9px', border: '1px solid #fee2e2',
+                  background: '#fff1f2', color: '#e11d48', fontSize: '0.75rem', fontWeight: 800, cursor: 'pointer',
                 }}
               >
-                <Lightbulb size={13} /> {showHint ? 'Hide' : 'Hint'}
+                <Flag size={13} /> Report
               </button>
-            )}
+            </div>
           </div>
 
           <MathView
@@ -713,7 +810,120 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             )}
           </motion.button>
         )}
-      </motion.div>
+
+        {/* Sketch board (stacked, narrow screens only) */}
+        {!isWide && (
+          <div style={{ marginTop: '16px', minHeight: '420px', display: 'flex' }}>
+            <ChallengeSketchBoard
+              ref={sketchRef}
+              placement="tablet"
+              questionId={q?.id}
+              questionType={q?.type}
+              isSubmitted={submitted}
+              showSplitScreen
+            />
+          </div>
+        )}
+      </div>
+    );
+
+    return (
+      <div style={{ position: 'fixed', inset: 0, zIndex: 1200, background: '#f6f7fb', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        {/* Header bar: back-to-topic-list (left), counter (center), exit-to-chapter (right) */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', padding: '12px 16px', borderBottom: '1px solid #e9e7f3', background: '#fff', flexShrink: 0 }}>
+          <button
+            onClick={() => setView('list')}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '6px',
+              padding: '8px 14px', borderRadius: '12px', border: 'none',
+              background: 'rgba(167,139,250,0.1)', color: '#7c3aed',
+              fontSize: '0.82rem', fontWeight: 800, cursor: 'pointer',
+            }}
+          >
+            <ArrowLeft size={15} /> {topic.code}
+          </button>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b' }}>
+            {currentIdx + 1} / {total}
+          </div>
+          <button
+            onClick={onBack}
+            title="Exit to chapter"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '6px',
+              padding: '8px 14px', borderRadius: '12px', border: '1px solid #fee2e2',
+              background: '#fff1f2', color: '#e11d48',
+              fontSize: '0.82rem', fontWeight: 800, cursor: 'pointer',
+            }}
+          >
+            <X size={15} /> Exit
+          </button>
+        </div>
+
+        {/* Body: question/answer (left) + sketch board (right, wide only) */}
+        <div style={{
+          flex: 1, minHeight: 0,
+          display: 'grid',
+          gridTemplateColumns: isWide ? '1fr 1fr' : '1fr',
+          gap: '16px', padding: '16px',
+          maxWidth: '1500px', width: '100%', margin: '0 auto', boxSizing: 'border-box',
+          overflow: 'hidden',
+        }}>
+          {leftPanel}
+          {isWide && (
+            <div style={{ minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
+              <ChallengeSketchBoard
+                ref={sketchRef}
+                placement="side"
+                questionId={q?.id}
+                questionType={q?.type}
+                isSubmitted={submitted}
+                showSplitScreen
+                fillAvailableHeight
+              />
+            </div>
+          )}
+        </div>
+
+        {/* Report-a-problem modal */}
+        <AnimatePresence>
+          {reportOpen && (
+            <div style={{ position: 'fixed', inset: 0, zIndex: 1400, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+              <motion.div
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                onClick={() => !submittingReport && setReportOpen(false)}
+                style={{ position: 'absolute', inset: 0, background: 'rgba(15,23,42,0.7)', backdropFilter: 'blur(6px)' }}
+              />
+              <motion.div
+                initial={{ scale: 0.94, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.94, opacity: 0 }}
+                style={{ position: 'relative', maxWidth: '460px', width: '100%', background: '#fff', borderRadius: '22px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0,0,0,0.4)' }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 20px', background: 'linear-gradient(135deg, #f87171, #e11d48)', color: '#fff' }}>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontWeight: 900 }}><Flag size={16} /> Report a problem</span>
+                  <button onClick={() => !submittingReport && setReportOpen(false)} style={{ border: 'none', background: 'rgba(255,255,255,0.25)', color: '#fff', width: '30px', height: '30px', borderRadius: '50%', cursor: 'pointer', display: 'grid', placeItems: 'center' }}><X size={15} /></button>
+                </div>
+                <div style={{ padding: '20px' }}>
+                  <p style={{ margin: '0 0 12px', fontSize: '0.85rem', color: '#64748b', fontWeight: 600, lineHeight: 1.5 }}>
+                    Is something wrong with this question (answer looks incorrect, doesn't make sense)? Tell your teacher — they'll see it in the Reports tab.
+                  </p>
+                  <textarea
+                    rows={4}
+                    value={reportMessage}
+                    onChange={(e) => setReportMessage(e.target.value)}
+                    placeholder="e.g. The answer doesn't look right, or I don't understand…"
+                    style={{ width: '100%', padding: '14px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontFamily: 'inherit', fontSize: '0.95rem', resize: 'vertical', fontWeight: 500, boxSizing: 'border-box' }}
+                  />
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '12px' }}>
+                    <button onClick={() => setReportOpen(false)} disabled={submittingReport} style={{ padding: '10px 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#475569', fontWeight: 700, cursor: 'pointer' }}>Cancel</button>
+                    <button onClick={submitReport} disabled={!reportMessage.trim() || submittingReport} style={{ padding: '10px 18px', borderRadius: '12px', border: 'none', background: !reportMessage.trim() ? '#cbd5e1' : 'linear-gradient(135deg, #f87171, #e11d48)', color: '#fff', fontWeight: 800, cursor: !reportMessage.trim() ? 'not-allowed' : 'pointer' }}>
+                      {submittingReport ? 'Sending…' : 'Send report'}
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
+      </div>
     );
   }
 

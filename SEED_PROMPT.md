@@ -9,11 +9,11 @@
 ### 기본 정보
 
 ```
-학년:        Year 11
-챕터 번호:   3
-chapterId:   y11-3
-서브토픽 ID: y11-3j
-토픽 코드:   3J
+학년:        Year 7
+챕터 번호:   1
+chapterId:   y7-1
+서브토픽 ID: y7-1b
+토픽 코드:   1B
 서브토픽 제목: <서브토픽 제목>
 ```
 
@@ -21,8 +21,8 @@ chapterId:   y11-3
 
 ```
 none  → easy
-Q1  ~ Q15 → medium
-Q16 ~     → hard
+Q1  ~ Q4 → medium
+Q5 ~     → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
 
@@ -46,7 +46,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1 ~ Q17
+  Q1 ~ Q4
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 

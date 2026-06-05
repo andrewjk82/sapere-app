@@ -9,8 +9,19 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
+import MathInput from './MathInput';
 import { MATH_SYMBOLS } from '../utils/challengeUtils';
 import { gradeQuestion } from '../utils/answerMatching';
+
+// Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
+const EXAM_QUICK_INSERTS = [
+  { label: '√',   latex: '\\sqrt{#?}',     title: 'Square root' },
+  { label: 'a/b', latex: '\\frac{#?}{#?}', title: 'Fraction' },
+  { label: 'xⁿ',  latex: '^{#?}',          title: 'Exponent' },
+  { label: 'π',   latex: '\\pi',           title: 'Pi' },
+  { label: '±',   latex: '\\pm',           title: 'Plus or minus' },
+  { label: '( )', latex: '(#?)',           title: 'Brackets' },
+];
 import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
@@ -138,19 +149,7 @@ const QuizView = ({ questions, onFinish, onReport }) => {
   const [isGraphPaper, setIsGraphPaper] = useState(false);
   const [sketchSnapshots, setSketchSnapshots] = useState({}); // { [questionId]: dataURL }
   const canvasRef = useRef(null);
-  const examInputRef = useRef(null);
-  const examFracDenRef = useRef(null);
-  const [examFracMode, setExamFracMode] = useState(false);
-  const [examFracNum, setExamFracNum] = useState('');
-  const [examFracDen, setExamFracDen] = useState('');
-  const commitExamFrac = (num, den) => {
-    if (!den) { setExamFracMode(false); examInputRef.current?.focus(); return; }
-    const base = typeof draft === 'string' ? draft : '';
-    const prefix = base.endsWith(num) ? base.slice(0, base.length - num.length) : base;
-    setDraft(prefix + `(${num || '0'})/(${den})`);
-    setExamFracMode(false); setExamFracNum(''); setExamFracDen('');
-    setTimeout(() => examInputRef.current?.focus(), 50);
-  };
+  const mathInputRef = useRef(null);
 
   const q = questions[idx];
   const total = questions.length;
@@ -163,7 +162,6 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     setShowHint(false);
     setShowFeedback(false);
     setFocusedBlank(0);
-    setExamFracMode(false); setExamFracNum(''); setExamFracDen('');
     const limit = q.timeLimit || 120;
     setTimeLeft(limit);
     setQuestionStartTime(Date.now());
@@ -434,33 +432,30 @@ const QuizView = ({ questions, onFinish, onReport }) => {
     </div>
   ) : (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {MATH_SYMBOLS.map((s) => (
-          <button key={s} onClick={() => !showFeedback && setDraft((draft || '') + s)} style={{ width: '40px', height: '40px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}>{s}</button>
-        ))}
-        <button onClick={() => !showFeedback && setDraft((draft || '').slice(0, -1))} style={{ width: '56px', height: '40px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontWeight: 900, cursor: 'pointer' }}>DEL</button>
-      </div>
-      {examFracMode && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '10px', background: '#f5f3ff', borderRadius: '14px', border: '2px solid #a78bfa' }}>
-          <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-            <input value={examFracNum} onChange={(e) => setExamFracNum(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === 'Tab') { e.preventDefault(); examFracDenRef.current?.focus(); } if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracNum.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="a" />
-            <div style={{ width: '100%', height: '2px', background: '#1e1b4b', borderRadius: '2px' }} />
-            <input ref={examFracDenRef} value={examFracDen} onChange={(e) => setExamFracDen(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') commitExamFrac(examFracNum, examFracDen); if (e.key === 'Escape') { setExamFracMode(false); examInputRef.current?.focus(); } }} style={{ width: Math.max(40, examFracDen.length * 16 + 20) + 'px', textAlign: 'center', border: 'none', borderBottom: '2px solid #7c3aed', outline: 'none', fontSize: '1.2rem', fontWeight: 700, fontFamily: '"KaTeX_Main",serif', background: 'transparent', padding: '2px 4px' }} placeholder="b" autoFocus />
-          </div>
-          <button onClick={() => commitExamFrac(examFracNum, examFracDen)} style={{ padding: '6px 12px', borderRadius: '8px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>OK</button>
-          <button onClick={() => { setExamFracMode(false); examInputRef.current?.focus(); }} style={{ padding: '6px 8px', borderRadius: '8px', border: '1px solid #ddd6fe', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}>✕</button>
+      {/* Quick-insert buttons (same MathLive editor as Daily Challenge / Secret Note) */}
+      {!showFeedback && (
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '4px' }}>
+          {EXAM_QUICK_INSERTS.map((b) => (
+            <button
+              key={b.label}
+              type="button"
+              title={b.title}
+              onClick={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
+              style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
+            >
+              {b.label}
+            </button>
+          ))}
         </div>
       )}
-      <input
-        ref={examInputRef}
-        type="text" value={draft || ''} readOnly={showFeedback || examFracMode}
-        onChange={(e) => setDraft(e.target.value)}
-        onKeyDown={(e) => {
-          if (e.key === '/' && !showFeedback) { e.preventDefault(); setExamFracNum(draft || ''); setExamFracDen(''); setExamFracMode(true); setTimeout(() => examFracDenRef.current?.focus(), 50); }
-          if (e.key === 'Enter' && draft && !showFeedback) submit();
-        }}
-        placeholder={examFracMode ? '' : 'Type your answer… (press / for fraction)'}
-        style={{ padding: '20px', borderRadius: '20px', border: `2px solid ${showFeedback ? (lastRes?.correct ? '#10b981' : '#ef4444') : '#e2e8f0'}`, background: '#fff', fontWeight: 700, fontSize: '1.2rem', textAlign: 'center', fontFamily: '"KaTeX_Main", serif', opacity: examFracMode ? 0.4 : 1 }}
+      <MathInput
+        ref={mathInputRef}
+        value={typeof draft === 'string' ? draft : ''}
+        onChange={(latex) => { if (!showFeedback) setDraft(latex); }}
+        onEnter={() => { if (String(draft || '').trim() && !showFeedback) submit(); }}
+        readOnly={showFeedback}
+        placeholder="Type your answer…"
+        autoFocus
       />
       {showFeedback && !lastRes?.correct && (
         <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
