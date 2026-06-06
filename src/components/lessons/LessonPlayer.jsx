@@ -193,16 +193,16 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
           <g key={'ln' + i}>
             <motion.line x1={X1} y1={Y1} x2={X2} y2={Y2} stroke={ln.color || '#475569'} strokeWidth={ln.width || 2.6} strokeLinecap="round" strokeDasharray={ln.dashed ? '6 5' : undefined}
               initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 0.7, delay: ln.delay ?? 0.5 }} />
-            {ln.label && <motion.text x={lp[0]} y={lp[1]} fontSize="13" fontWeight="800" fill={ln.color || '#475569'} textAnchor="middle"
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: (ln.delay ?? 0.5) + 0.5 }} style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 3.5 }}>{ln.label}</motion.text>}
+            {ln.label && <motion.text x={lp[0]} y={lp[1]} fontSize="15" fontWeight="800" fill={ln.color || '#475569'} textAnchor="middle"
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: (ln.delay ?? 0.5) + 0.5 }} style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{ln.label}</motion.text>}
           </g>
         );
       })}
 
       {/* free-floating labels (angle marks, annotations) */}
       {texts.map((t, i) => (
-        <motion.text key={'tx' + i} x={sx(t.x)} y={sy(t.y)} fontSize={t.size || 13} fontWeight="800" fill={t.color || '#1e1b4b'} textAnchor="middle"
-          initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: t.delay ?? 0.8 }} style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 3.5 }}>{t.text}</motion.text>
+        <motion.text key={'tx' + i} x={sx(t.x)} y={sy(t.y)} fontSize={t.size || 13} fontWeight="700" fill={t.color || '#1e1b4b'} textAnchor="middle"
+          initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: t.delay ?? 0.8 }} style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{t.text}</motion.text>
       ))}
 
       {/* curves (draw themselves) */}
