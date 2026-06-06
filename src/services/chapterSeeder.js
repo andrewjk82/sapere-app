@@ -105,31 +105,7 @@ export const seedChapterQuestions = async (chapter) => {
   if (seed.length === 0) return 0;
   const collRef = collection(db, 'questions');
 
-  // 1. CLEAR EXISTING QUESTIONS for this topicId to avoid dirty/lingering old questions
-  try {
-    const q = query(collRef, where('topicId', '==', chapter.topicId));
-    const snapshot = await getDocs(q);
-    if (snapshot.size > 0) {
-      console.log(`Clearing ${snapshot.size} existing questions for topic ${chapter.topicId}...`);
-      const deleteChunks = [];
-      const docs = snapshot.docs;
-      const CHUNK_SIZE = 400;
-      for (let i = 0; i < docs.length; i += CHUNK_SIZE) {
-        deleteChunks.push(docs.slice(i, i + CHUNK_SIZE));
-      }
-      for (const chunk of deleteChunks) {
-        const batch = writeBatch(db);
-        chunk.forEach((docSnap) => {
-          batch.delete(docSnap.ref);
-        });
-        await batch.commit();
-      }
-    }
-  } catch (err) {
-    console.warn(`Non-fatal warning: failed to clear existing questions for topic ${chapter.topicId}:`, err);
-  }
-
-  // 2. WRITE NEW SEED QUESTIONS
+  // WRITE NEW SEED QUESTIONS
   // FULL OVERWRITE: questions are written by their stable `id` with
   // set({ merge: false }) — a full REPLACE. This ensures stale fields
   // (e.g. old geometry data on jsxGraph questions) are completely removed
