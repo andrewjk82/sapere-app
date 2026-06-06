@@ -153,6 +153,7 @@ import { Y7_CH1L_QUESTIONS } from '../constants/seedYear7Ch1LQuestions.js';
 import { Y7_CH1M_QUESTIONS } from '../constants/seedYear7Ch1MQuestions.js';
 import { Y7_CH1B_QUESTIONS } from '../constants/seedYear7Ch1BQuestions.js';
 import { Y7_CH1C_QUESTIONS } from '../constants/seedYear7Ch1CQuestions.js';
+import { Y7_CH2B_QUESTIONS } from '../constants/seedYear7Ch2BQuestions.js';
 import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from '../constants/seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from '../constants/seedYear7Ch1FQuestions.js';
@@ -494,6 +495,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1k', topicCode: '1K', topicTitle: 'The long division algorithm', year: 'Year 7', seed: Y7_CH1K_QUESTIONS, label: 'Y7 Ch1 · 1K The long division algorithm' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1l', topicCode: '1L', topicTitle: 'Order of operations', year: 'Year 7', seed: Y7_CH1L_QUESTIONS, label: 'Y7 Ch1 · 1L Order of operations' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1m', topicCode: '1M', topicTitle: 'Revision', year: 'Year 7', seed: Y7_CH1M_QUESTIONS, label: 'Y7 Ch1 · 1M Revision' },
+  { chapterId: 'y7-2', chapterTitle: 'Chapter 2: Factors, multiples, primes and divisibility', topicId: 'y7-2b', topicCode: '2B', topicTitle: 'Odd and even numbers', year: 'Year 7', seed: Y7_CH2B_QUESTIONS, label: 'Y7 Ch2 · 2B Odd and even numbers' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3b', topicCode: '3B', topicTitle: 'Algebraic notation', year: 'Year 7', seed: Y7_CH3B_QUESTIONS, label: 'Y7 Ch3 · Algebraic notation' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3c', topicCode: '3C', topicTitle: 'Substitution', year: 'Year 7', seed: Y7_CH3C_QUESTIONS, label: 'Y7 Ch3 · Substitution' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3d', topicCode: '3D', topicTitle: 'Adding and subtracting like terms', year: 'Year 7', seed: Y7_CH3D_QUESTIONS, label: 'Y7 Ch3 · Adding and subtracting like terms' },
