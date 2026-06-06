@@ -623,6 +623,7 @@ const Curriculum = () => {
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
   const [expandedSeedYears, setExpandedSeedYears] = useState({});
+  const [seedSubTab, setSeedSubTab] = useState('chapters');
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
@@ -2417,8 +2418,12 @@ const Curriculum = () => {
                       );
                     };
 
-                    // Group CHAPTER_SEED_REGISTRY by year
-                    const byYear = CHAPTER_SEED_REGISTRY.reduce((acc, entry) => {
+                    // Split registry into chapters vs past papers
+                    const chapterRegistry = CHAPTER_SEED_REGISTRY.filter(e => !e.chapterId.startsWith('exam:'));
+                    const pastPaperRegistry = CHAPTER_SEED_REGISTRY.filter(e => e.chapterId.startsWith('exam:'));
+
+                    // Group chapters by year
+                    const byYear = chapterRegistry.reduce((acc, entry) => {
                       const y = entry.year || 'Other';
                       if (!acc[y]) acc[y] = [];
                       acc[y].push(entry);
@@ -2456,27 +2461,47 @@ const Curriculum = () => {
                     const toggleYear = (year) =>
                       setExpandedSeedYears((prev) => ({ ...prev, [year]: !prev[year] }));
 
-                    return (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                        {yearOrder.map((year) => {
-                          const registryCards = (byYear[year] || []).map((entry) => {
-                            const count = questionCounts[entry.topicId];
-                            return (
-                              <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`} style={{ opacity: count ? 0.45 : 1 }}>
-                                <div className="sync-card-info">
-                                  <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
-                                    {(entry.badgeLabel || entry.chapterId).toUpperCase()}
-                                  </span>
-                                  <span className="sync-card-title">{entry.label}</span>
-                                </div>
-                                <div className="sync-card-actions">
-                                  {count && <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981', marginRight: '8px' }}>✓ Done</span>}
-                                  <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
-                                </div>
-                              </div>
-                            );
-                          });
+                    const renderChapterCard = (entry, year) => {
+                      const count = questionCounts[entry.topicId];
+                      return (
+                        <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`} style={{ opacity: count ? 0.45 : 1 }}>
+                          <div className="sync-card-info">
+                            <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
+                              {(entry.badgeLabel || entry.chapterId).toUpperCase()}
+                            </span>
+                            <span className="sync-card-title">{entry.label}</span>
+                          </div>
+                          <div className="sync-card-actions">
+                            {count && <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981', marginRight: '8px' }}>✓ Done</span>}
+                            <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
+                          </div>
+                        </div>
+                      );
+                    };
 
+                    return (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        {/* Sub-tabs */}
+                        <div style={{ display: 'flex', gap: '6px', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>
+                          {[{ id: 'chapters', label: '📚 Chapter Questions' }, { id: 'past_papers', label: '📝 Past Papers' }].map(({ id, label }) => (
+                            <button
+                              key={id}
+                              onClick={() => setSeedSubTab(id)}
+                              style={{
+                                padding: '6px 16px', borderRadius: '999px', border: 'none', cursor: 'pointer',
+                                fontSize: '0.78rem', fontWeight: 700,
+                                background: seedSubTab === id ? '#8b5cf6' : '#f1f5f9',
+                                color: seedSubTab === id ? '#fff' : '#64748b',
+                              }}
+                            >
+                              {label}
+                            </button>
+                          ))}
+                        </div>
+
+                        {/* Chapter Questions */}
+                        {seedSubTab === 'chapters' && yearOrder.map((year) => {
+                          const registryCards = (byYear[year] || []).map((entry) => renderChapterCard(entry, year));
                           const manualCards = manualByYear[year] || [];
                           const allCards = [...manualCards, ...registryCards];
                           if (allCards.length === 0) return null;
@@ -2510,6 +2535,72 @@ const Curriculum = () => {
                             </div>
                           );
                         })}
+
+                        {/* Past Papers */}
+                        {seedSubTab === 'past_papers' && (() => {
+                          // Group past papers by year
+                          const ppByYear = pastPaperRegistry.reduce((acc, entry) => {
+                            const y = entry.year || 'Other';
+                            if (!acc[y]) acc[y] = [];
+                            acc[y].push(entry);
+                            return acc;
+                          }, {});
+
+                          const ppYears = yearOrder.filter(y => ppByYear[y]);
+                          if (ppYears.length === 0) {
+                            return <div style={{ color: '#94a3b8', fontSize: '0.85rem', padding: '24px', textAlign: 'center' }}>No past papers added yet.</div>;
+                          }
+
+                          return ppYears.map((year) => {
+                            const entries = ppByYear[year];
+                            const doneCount = entries.filter(e => questionCounts[e.topicId]).length;
+                            const isOpen = expandedSeedYears[`pp-${year}`] ?? false;
+
+                            return (
+                              <div key={`pp-${year}`} style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden' }}>
+                                <button
+                                  onClick={() => setExpandedSeedYears(prev => ({ ...prev, [`pp-${year}`]: !prev[`pp-${year}`] }))}
+                                  style={{
+                                    width: '100%', display: 'flex', alignItems: 'center', gap: '12px',
+                                    padding: '14px 18px', background: isOpen ? '#fdf4ff' : '#fff',
+                                    border: 'none', cursor: 'pointer', textAlign: 'left',
+                                    borderBottom: isOpen ? '1px solid #e2e8f0' : 'none',
+                                  }}
+                                >
+                                  <span style={{ background: yearColors[year]?.bg || '#94a3b8', color: '#fff', fontWeight: 900, fontSize: '0.75rem', padding: '4px 12px', borderRadius: '999px', flexShrink: 0 }}>{year}</span>
+                                  <span style={{ fontWeight: 700, fontSize: '0.82rem', color: '#475569' }}>{entries.length} papers</span>
+                                  <span style={{ marginLeft: 'auto', fontSize: '0.72rem', fontWeight: 700, color: doneCount > 0 ? '#10b981' : '#94a3b8' }}>
+                                    {doneCount > 0 ? `${doneCount} seeded` : 'not seeded'}
+                                  </span>
+                                  <span style={{ fontSize: '0.85rem', color: '#94a3b8', flexShrink: 0 }}>{isOpen ? '▲' : '▼'}</span>
+                                </button>
+                                {isOpen && (
+                                  <div className="admin-sync-grid" style={{ padding: '16px' }}>
+                                    {entries.map(entry => {
+                                      const count = questionCounts[entry.topicId];
+                                      return (
+                                        <div className="sync-card" key={entry.chapterId} style={{ opacity: count ? 0.45 : 1 }}>
+                                          <div className="sync-card-info">
+                                            <span className="sync-card-badge" style={{ background: '#8b5cf6', color: '#fff' }}>
+                                              {entry.badgeLabel || 'EXAM'}
+                                            </span>
+                                            <span className="sync-card-title">{entry.chapterTitle}</span>
+                                          </div>
+                                          <div className="sync-card-actions">
+                                            {count
+                                              ? <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981' }}>✓ Done</span>
+                                              : <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
+                                            }
+                                          </div>
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          });
+                        })()}
                       </div>
                     );
                   })()}
