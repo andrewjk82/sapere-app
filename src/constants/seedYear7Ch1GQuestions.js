@@ -1,7 +1,7 @@
-export const Y7_CH1A_QUESTIONS = [
+export const Y7_CH1G_QUESTIONS = [
   // Q1 a-h
   {
-    id: 'y7-1a-q1a',
+    id: 'y7-1g-q1a',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -22,7 +22,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1b',
+    id: 'y7-1g-q1b',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -43,7 +43,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1c',
+    id: 'y7-1g-q1c',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -64,7 +64,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1d',
+    id: 'y7-1g-q1d',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -85,7 +85,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1e',
+    id: 'y7-1g-q1e',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -106,7 +106,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1f',
+    id: 'y7-1g-q1f',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -127,7 +127,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1g',
+    id: 'y7-1g-q1g',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -148,7 +148,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q1h',
+    id: 'y7-1g-q1h',
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
@@ -171,7 +171,7 @@ export const Y7_CH1A_QUESTIONS = [
 
   // Q2 a-f
   {
-    id: 'y7-1a-q2a',
+    id: 'y7-1g-q2a',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 60,
@@ -202,7 +202,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q2b',
+    id: 'y7-1g-q2b',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 60,
@@ -233,7 +233,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q2c',
+    id: 'y7-1g-q2c',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 60,
@@ -264,7 +264,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q2d',
+    id: 'y7-1g-q2d',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 60,
@@ -295,7 +295,7 @@ export const Y7_CH1A_QUESTIONS = [
     graphData: null
   },
   {
-    id: 'y7-1a-q2e',
+    id: 'y7-1g-q2e',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 60,
