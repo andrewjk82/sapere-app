@@ -81,36 +81,75 @@ const pickVoice = () => {
 const LessonPlayer = ({ lesson, onClose }) => {
   const [idx, setIdx] = useState(0);
   const [voiceOn, setVoiceOn] = useState(true);
+  const [hd, setHd] = useState(false);        // HD (Kokoro neural) voice opt-in
+  const [hdLoading, setHdLoading] = useState(false);
   const [auto, setAuto] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const steps = lesson?.steps || [];
   const step = steps[idx];
 
-  // Refs so the speech callbacks read fresh values without re-subscribing.
+  // Refs so the async audio callbacks read fresh values without re-subscribing.
   const autoRef = useRef(auto); useEffect(() => { autoRef.current = auto; }, [auto]);
   const voiceRef = useRef(voiceOn); useEffect(() => { voiceRef.current = voiceOn; }, [voiceOn]);
+  const hdRef = useRef(hd); useEffect(() => { hdRef.current = hd; }, [hd]);
   const advTimer = useRef(null);
+  const audioRef = useRef(null);              // current HD <audio> element
+  const tokenRef = useRef(0);                 // guards against stale async playback
 
   const clearAdvance = () => { if (advTimer.current) { clearTimeout(advTimer.current); advTimer.current = null; } };
-  const stopSpeak = useCallback(() => {
+  const stopAudio = () => {
     if (window.speechSynthesis) speechSynthesis.cancel();
+    if (audioRef.current) { try { audioRef.current.pause(); } catch {} audioRef.current = null; }
+  };
+  const stopSpeak = useCallback(() => {
+    tokenRef.current++;
+    stopAudio();
     clearAdvance();
     setSpeaking(false);
+    setHdLoading(false);
   }, []);
 
   const nextOrStop = useCallback(() => {
     setIdx((i) => { if (i >= steps.length - 1) { setAuto(false); return i; } return i + 1; });
   }, [steps.length]);
 
-  // Speak the current step. In auto-play, advance to the NEXT step only AFTER
-  // the narration finishes (so voices never overlap). Without voice, fall back
-  // to a readable fixed delay.
-  const speakStep = useCallback((text) => {
-    if (window.speechSynthesis) speechSynthesis.cancel();
+  // Play the current step's narration. In auto-play, advance to the NEXT step
+  // only AFTER the narration finishes — so voices never overlap.
+  const speakStep = useCallback(async (text) => {
+    tokenRef.current++;
+    const myToken = tokenRef.current;
+    stopAudio();
     clearAdvance();
-    const proceed = () => { if (autoRef.current) advTimer.current = setTimeout(nextOrStop, 650); };
+    const proceed = () => { if (autoRef.current && tokenRef.current === myToken) advTimer.current = setTimeout(nextOrStop, 650); };
+    const fixedDelay = () => { if (autoRef.current) advTimer.current = setTimeout(nextOrStop, 3600); };
 
-    if (voiceRef.current && window.speechSynthesis && text) {
+    if (!voiceRef.current || !text) { setSpeaking(false); fixedDelay(); return; }
+
+    // ── HD path: Kokoro neural voice (lazy-loaded, cached) ──
+    if (hdRef.current) {
+      try {
+        const { synthKokoro } = await import('../../lessons/kokoroVoice');
+        setHdLoading(true);
+        const url = await synthKokoro(text);
+        if (tokenRef.current !== myToken) return;       // step changed while generating
+        setHdLoading(false);
+        const audio = new Audio(url);
+        audioRef.current = audio;
+        audio.onplay = () => setSpeaking(true);
+        audio.onended = () => { setSpeaking(false); proceed(); };
+        audio.onerror = () => { setSpeaking(false); proceed(); };
+        await audio.play();
+        return;
+      } catch (e) {
+        // Fall back to the built-in voice on any failure.
+        if (tokenRef.current !== myToken) return;
+        setHdLoading(false);
+        console.warn('[LessonPlayer] HD voice failed, using standard voice:', e?.message || e);
+      }
+    }
+
+    // ── Standard path: Web Speech API (instant) ──
+    if (window.speechSynthesis) {
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'en-GB'; u.rate = 0.95; u.pitch = 1.0;
       const v = pickVoice(); if (v) { u.voice = v; u.lang = v.lang; }
@@ -118,16 +157,13 @@ const LessonPlayer = ({ lesson, onClose }) => {
       u.onend = () => { setSpeaking(false); proceed(); };
       u.onerror = () => { setSpeaking(false); proceed(); };
       speechSynthesis.speak(u);
-    } else {
-      setSpeaking(false);
-      if (autoRef.current) advTimer.current = setTimeout(nextOrStop, 3600);
-    }
+    } else { setSpeaking(false); fixedDelay(); }
   }, [nextOrStop]);
 
-  // Re-run whenever the step, auto, or voice toggle changes.
+  // Re-run whenever the step, auto, voice, or HD toggle changes.
   useEffect(() => { speakStep(step?.speech); return clearAdvance;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [idx, auto, voiceOn]);
+  }, [idx, auto, voiceOn, hd]);
 
   // Clean up on unmount.
   useEffect(() => () => stopSpeak(), [stopSpeak]);
@@ -135,6 +171,12 @@ const LessonPlayer = ({ lesson, onClose }) => {
   if (!lesson || !step) return null;
 
   const go = (n) => { setAuto(false); stopSpeak(); setIdx(Math.max(0, Math.min(steps.length - 1, n))); };
+
+  const toggleHd = () => {
+    const next = !hd;
+    setHd(next);
+    if (next) { import('../../lessons/kokoroVoice').then(m => m.preloadKokoro()).catch(() => {}); }
+  };
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 1300, background: 'linear-gradient(135deg,#f5f3ff,#eef2ff)', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
@@ -159,10 +201,18 @@ const LessonPlayer = ({ lesson, onClose }) => {
           <div style={{ background: 'linear-gradient(135deg,#faf5ff,#eef2ff)', border: '1px solid #e0d9fb', borderRadius: '16px', padding: '18px 20px', display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
             <div style={{ position: 'relative', flexShrink: 0, width: '38px', height: '38px', borderRadius: '12px', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900 }}>
               {idx + 1}
-              {speaking && <span style={{ position: 'absolute', inset: '-4px', borderRadius: '14px', border: '2px solid #a78bfa', animation: 'lp-pulse 1s ease-out infinite' }} />}
+              {(speaking || hdLoading) && <span style={{ position: 'absolute', inset: '-4px', borderRadius: '14px', border: '2px solid #a78bfa', animation: 'lp-pulse 1s ease-out infinite' }} />}
             </div>
-            <div style={{ fontSize: '1rem', lineHeight: 1.65, fontWeight: 600, color: '#3b2b68' }}
-                 dangerouslySetInnerHTML={{ __html: step.narration || '' }} />
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: '1rem', lineHeight: 1.65, fontWeight: 600, color: '#3b2b68' }}
+                   dangerouslySetInnerHTML={{ __html: step.narration || '' }} />
+              {hdLoading && (
+                <div style={{ marginTop: '8px', fontSize: '0.78rem', fontWeight: 700, color: '#7c3aed', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <span style={{ width: '12px', height: '12px', border: '2px solid #c4b5fd', borderTopColor: '#7c3aed', borderRadius: '50%', display: 'inline-block', animation: 'lp-spin 0.8s linear infinite' }} />
+                  Preparing natural voice… (one-time download)
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Dots */}
@@ -185,9 +235,12 @@ const LessonPlayer = ({ lesson, onClose }) => {
         <button onClick={() => setVoiceOn(v => !v)} style={btn(voiceOn ? 'on' : 'off')}>
           {voiceOn ? <><Volume2 size={15} /> Voice on</> : <><VolumeX size={15} /> Voice off</>}
         </button>
+        <button onClick={toggleHd} disabled={!voiceOn} style={btn(hd ? 'hd' : 'ghost', !voiceOn)} title="Higher-quality neural voice (downloads once)">
+          ✨ HD voice: {hd ? 'on' : 'off'}
+        </button>
       </div>
 
-      <style>{`@keyframes lp-pulse{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.25)}}`}</style>
+      <style>{`@keyframes lp-pulse{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.25)}}@keyframes lp-spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   );
 };
@@ -197,6 +250,7 @@ const btn = (variant, disabled) => {
   if (variant === 'primary') return { ...base, background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff' };
   if (variant === 'on') return { ...base, background: '#ecfdf5', color: '#059669', border: '1px solid #a7f3d0' };
   if (variant === 'off') return { ...base, background: '#f1f5f9', color: '#94a3b8', border: '1px solid #e2e8f0' };
+  if (variant === 'hd') return { ...base, background: 'linear-gradient(135deg,#fce7f3,#ede9fe)', color: '#9333ea', border: '1px solid #e9d5ff' };
   return { ...base, background: '#f5f3ff', color: '#7c3aed', border: '1px solid #ddd6fe' };
 };
 

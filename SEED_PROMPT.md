@@ -12,16 +12,16 @@
 학년:        Year 7
 챕터 번호:   1
 chapterId:   y7-1
-서브토픽 ID: y7-1i
-토픽 코드:   1I
-서브토픽 제목: Division
+서브토픽 ID: y7-1j
+토픽 코드:   1J
+서브토픽 제목: The short division algorithm
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1  ~ Q5  → easy
-Q6 ~  Q10 → medium
+Q1  ~ Q3  → easy
+Q4 ~  Q10 → medium
 Q11 → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
@@ -46,7 +46,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1 ~ Q11
+  Q1 ~ Q2
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
