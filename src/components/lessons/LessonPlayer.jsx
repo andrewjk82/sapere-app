@@ -449,7 +449,13 @@ const pickVoice = () => {
  * Props: lesson (spec), onClose()
  */
 const LessonPlayer = ({ lesson, onClose }) => {
-  const [idx, setIdx] = useState(0);
+  const progressKey = lesson?.topicId ? `lesson_progress_${lesson.topicId}` : null;
+  const [idx, setIdx] = useState(() => {
+    const steps = lesson?.steps || [];
+    const saved = progressKey ? parseInt(localStorage.getItem(progressKey) || '0', 10) : 0;
+    // If saved index is the last step, start from beginning (lesson was completed)
+    return saved > 0 && saved < steps.length ? saved : 0;
+  });
   const [voiceOn, setVoiceOn] = useState(true);
   const [hd, setHd] = useState(false);        // HD (Kokoro neural) voice opt-in
   const [hdLoading, setHdLoading] = useState(false);
@@ -463,6 +469,11 @@ const LessonPlayer = ({ lesson, onClose }) => {
   const hasPregenAudio = steps.length > 0 && steps.every((s) => s.audioUrl);
   // Glossary: lesson-wide terms plus any step-specific ones.
   const glossary = { ...(lesson?.glossary || {}), ...(step?.glossary || {}) };
+
+  // Persist progress so the user can resume where they left off.
+  useEffect(() => {
+    if (progressKey) localStorage.setItem(progressKey, String(idx));
+  }, [idx, progressKey]);
 
   // Clicking a highlighted term shows its definition in a popover.
   const onTermClick = (e) => {
@@ -591,6 +602,13 @@ const LessonPlayer = ({ lesson, onClose }) => {
 
   const go = (n) => { setAuto(false); stopSpeak(); setIdx(Math.max(0, Math.min(steps.length - 1, n))); };
 
+  const handleClose = () => {
+    // If on the last step, clear saved progress (lesson completed)
+    if (progressKey && idx >= steps.length - 1) localStorage.removeItem(progressKey);
+    stopSpeak();
+    onClose?.();
+  };
+
   const toggleHd = () => {
     const next = !hd;
     setHd(next);
@@ -620,7 +638,7 @@ const LessonPlayer = ({ lesson, onClose }) => {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#8b7aa7' }}>{idx + 1} <span style={{ color: '#cbbbe6' }}>/ {steps.length}</span></div>
-          <button onClick={() => { stopSpeak(); onClose?.(); }} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #eee', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer', fontFamily: FONT }}>
+          <button onClick={handleClose} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #eee', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer', fontFamily: FONT }}>
             <X size={15} /> Close
           </button>
         </div>
