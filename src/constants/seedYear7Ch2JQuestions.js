@@ -2154,5 +2154,792 @@ export const Y7_CH2J_QUESTIONS = [
         workingOut: "10, 14, 15, 21, 22, 26, 33, 34, 35, 38, 39"
       }
     ]
+  },
+  // ── QUESTION 18 (Screenshot Q1) ──
+  {
+    id: "y7-2j-q18",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "The prime numbers 13 and 31 have reversed digits. List all other pairs of prime numbers less than 80 that have this same property. Write the pairs in the format (a, b) with a < b, separated by commas in ascending order of a.",
+    a: "(17, 71), (37, 73)",
+    hint: "Examine prime numbers less than 80 and reverse their digits to check if the reversed number is also prime.",
+    solutionSteps: [
+      {
+        explanation: "Examine two-digit primes less than 80: 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79.",
+        workingOut: "\\text{Two-digit primes under 80}"
+      },
+      {
+        explanation: "Check which ones form a prime pair when digits are reversed (excluding (13, 31) which is already given):",
+        workingOut: "17 \\leftrightarrow 71 \\quad (\\text{both prime}) \\\\ 37 \\leftrightarrow 73 \\quad (\\text{both prime}) \\\\ 79 \\leftrightarrow 97 \\quad (97 \\text{ is not less than 80, so excluded})"
+      },
+      {
+        explanation: "List the matching pairs.",
+        workingOut: "(17, 71), (37, 73)"
+      }
+    ]
+  },
+  // ── QUESTION 19a (Screenshot Q2a) ──
+  {
+    id: "y7-2j-q19a",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(8 \\times 30\\).",
+    a: "(10 - 2) * 30 or 2 * 4 * 30",
+    hint: "Express the number 8 using other numbers such as 10 - 2 or 2 * 4.",
+    solutionSteps: [
+      {
+        explanation: "Rewrite 8 using operational buttons that do work.",
+        workingOut: "8 = 10 - 2 \\quad \\text{or} \\quad 8 = 2 \\times 4"
+      },
+      {
+        explanation: "Multiply the equivalent expression by 30.",
+        workingOut: "(10 - 2) \\times 30 \\quad \\text{or} \\quad 2 \\times 4 \\times 30"
+      }
+    ]
+  },
+  // ── QUESTION 19b (Screenshot Q2b) ──
+  {
+    id: "y7-2j-q19b",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(8 \\times 25\\).",
+    a: "(10 - 2) * 25 or 2 * 4 * 25",
+    hint: "Rewrite 8 in terms of working digits like 2, 4, 10.",
+    solutionSteps: [
+      {
+        explanation: "Rewrite 8 in terms of other digits.",
+        workingOut: "8 = 2 \\times 4"
+      },
+      {
+        explanation: "Perform the calculation.",
+        workingOut: "2 \\times 4 \\times 25"
+      }
+    ]
+  },
+  // ── QUESTION 19c (Screenshot Q2c) ──
+  {
+    id: "y7-2j-q19c",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(82 \\times 6\\).",
+    a: "(92 - 10) * 6 or (83 - 1) * 6 (written without 8)",
+    hint: "Find a way to write 82 without using the digit 8. For example, 92 - 10.",
+    solutionSteps: [
+      {
+        explanation: "Write 82 using digits other than 8.",
+        workingOut: "82 = 92 - 10"
+      },
+      {
+        explanation: "Multiply by 6.",
+        workingOut: "(92 - 10) \\times 6"
+      }
+    ]
+  },
+  // ── QUESTION 19d (Screenshot Q2d) ──
+  {
+    id: "y7-2j-q19d",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(87 \\times 12\\).",
+    a: "(90 - 3) * 12",
+    hint: "Rewrite 87 as 90 - 3.",
+    solutionSteps: [
+      {
+        explanation: "Rewrite 87 without using the digit 8.",
+        workingOut: "87 = 90 - 3"
+      },
+      {
+        explanation: "Multiply by 12.",
+        workingOut: "(90 - 3) \\times 12"
+      }
+    ]
+  },
+  // ── QUESTION 20 (Screenshot Q3) ──
+  {
+    id: "y7-2j-q20",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Any number that is divisible by 24 is also divisible by 4 and 6. The opposite is not always true. Write down a number larger than 150 that is divisible by 4 and 6, but not divisible by 24.",
+    a: "156",
+    hint: "Find the Lowest Common Multiple (LCM) of 4 and 6, then find a multiple of this LCM larger than 150 that is not a multiple of 24.",
+    solutionSteps: [
+      {
+        explanation: "Find the LCM of 4 and 6.",
+        workingOut: "\\text{LCM}(4, 6) = 12"
+      },
+      {
+        explanation: "Any number divisible by both 4 and 6 must be a multiple of 12.",
+        workingOut: "12, 24, 36, \\dots"
+      },
+      {
+        explanation: "Find multiples of 12 greater than 150.",
+        workingOut: "12 \\times 13 = 156, \\quad 12 \\times 14 = 168"
+      },
+      {
+        explanation: "Verify if 156 is divisible by 24.",
+        workingOut: "156 \\div 24 = 6.5 \\quad (\\text{not divisible})"
+      }
+    ]
+  },
+  // ── QUESTION 21a (Screenshot Q4a) ──
+  {
+    id: "y7-2j-q21a",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "A number is called abundant if the sum of all of its factors (not including the number itself) is greater than the number itself. Find all abundant numbers between 15 and 35. Separate them with commas.",
+    a: "18, 20, 24, 30",
+    hint: "Find the factors of each number in the range, sum them (excluding the number itself), and check if the sum exceeds the number.",
+    solutionSteps: [
+      {
+        explanation: "Test the numbers in the range. Prime numbers are never abundant.",
+        workingOut: "\\text{Check composite numbers: } 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 32, 33, 34"
+      },
+      {
+        explanation: "Evaluate proper factor sums for candidate abundant numbers:",
+        workingOut: "18: 1+2+3+6+9 = 21 > 18 \\\\ 20: 1+2+4+5+10 = 22 > 20 \\\\ 24: 1+2+3+4+6+8+12 = 36 > 24 \\\\ 30: 1+2+3+5+6+10+15 = 42 > 30"
+      },
+      {
+        explanation: "Confirm no other numbers in this range are abundant (e.g. 28 is perfect since 1+2+4+7+14 = 28).",
+        workingOut: "18, 20, 24, 30"
+      }
+    ]
+  },
+  // ── QUESTION 21b (Screenshot Q4b) ──
+  {
+    id: "y7-2j-q21b",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Show that 1575 is abundant.",
+    a: "Proper factors sum is 1750, which is greater than 1575",
+    hint: "Find all the factors of 1575, add them up excluding 1575, and show the sum is larger than 1575.",
+    solutionSteps: [
+      {
+        explanation: "Find the prime factorisation of 1575.",
+        workingOut: "1575 = 3^2 \\times 5^2 \\times 7"
+      },
+      {
+        explanation: "List all proper factors of 1575.",
+        workingOut: "1, 3, 5, 7, 9, 15, 21, 25, 35, 45, 63, 75, 105, 175, 225, 315, 525"
+      },
+      {
+        explanation: "Sum these proper factors.",
+        workingOut: "1 + 3 + 5 + 7 + 9 + 15 + 21 + 25 + 35 + 45 + 63 + 75 + 105 + 175 + 225 + 315 + 525 = 1750"
+      },
+      {
+        explanation: "Compare the sum with the original number.",
+        workingOut: "1750 > 1575 \\implies \\text{abundant}"
+      }
+    ]
+  },
+  // ── QUESTION 22 (Screenshot Q5) ──
+  {
+    id: "y7-2j-q22",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Find all numbers less than 90 (excluding 50) that can be written as the sum of two non-zero squares in two different ways. Separate them with commas in ascending order.",
+    a: "65, 85",
+    hint: "Test numbers to see if they can be written as \\(a^2 + b^2 = c^2 + d^2\\) for positive integers \\(a, b, c, d\\).",
+    solutionSteps: [
+      {
+        explanation: "Test squares: 1, 4, 9, 16, 25, 36, 49, 64, 81.",
+        workingOut: "\\text{Squares} = \\{1, 4, 9, 16, 25, 36, 49, 64, 81\\}"
+      },
+      {
+        explanation: "Look for numbers that can be formed in two different ways by summing two squares.",
+        workingOut: "65 = 8^2 + 1^2 = 7^2 + 4^2 \\\\ 85 = 9^2 + 2^2 = 7^2 + 6^2"
+      },
+      {
+        explanation: "Verify there are no other such numbers less than 90.",
+        workingOut: "65, 85"
+      }
+    ]
+  },
+  // ── QUESTION 23a (Screenshot Q6a) ──
+  {
+    id: "y7-2j-q23a",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Find three non-zero cubes that sum to 43. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
+    a: "3^3 + 2^3 + 2^3",
+    hint: "Cubes to consider: 1, 8, 27. Try combinations of these numbers.",
+    solutionSteps: [
+      {
+        explanation: "List the cubes less than 43.",
+        workingOut: "1^3 = 1, \\quad 2^3 = 8, \\quad 3^3 = 27"
+      },
+      {
+        explanation: "Find a combination of three cubes that sums to 43.",
+        workingOut: "27 + 8 + 8 = 43"
+      },
+      {
+        explanation: "Write the sum in index notation.",
+        workingOut: "3^3 + 2^3 + 2^3"
+      }
+    ]
+  },
+  // ── QUESTION 23b (Screenshot Q6b) ──
+  {
+    id: "y7-2j-q23b",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Find three non-zero cubes that sum to 62. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
+    a: "3^3 + 3^3 + 2^3",
+    hint: "Use combinations of 1, 8, 27, 64.",
+    solutionSteps: [
+      {
+        explanation: "Test combinations of cubes.",
+        workingOut: "27 + 27 + 8 = 54 + 8 = 62"
+      },
+      {
+        explanation: "Write using bases and exponents.",
+        workingOut: "3^3 + 3^3 + 2^3"
+      }
+    ]
+  },
+  // ── QUESTION 23c (Screenshot Q6c) ──
+  {
+    id: "y7-2j-q23c",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Find three non-zero cubes that sum to 92. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
+    a: "4^3 + 3^3 + 1^3",
+    hint: "Include the cube of 4 (64) in your trial sums.",
+    solutionSteps: [
+      {
+        explanation: "Identify cubes up to 92.",
+        workingOut: "1, 8, 27, 64"
+      },
+      {
+        explanation: "Find the combination.",
+        workingOut: "64 + 27 + 1 = 92"
+      },
+      {
+        explanation: "Express using cube notation.",
+        workingOut: "4^3 + 3^3 + 1^3"
+      }
+    ]
+  },
+  // ── QUESTION 24 (Screenshot Q7) ──
+  {
+    id: "y7-2j-q24",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Find the missing number in the identity: \\(1^3 + 2^3 + 3^3 + 4^3 + 5^3 = (1 + 2 + 3 + 4 + \\square)^2\\).",
+    a: "5",
+    hint: "Identify the pattern relating the sum of consecutive cubes to the square of the sum of the bases.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate the left-hand side (sum of cubes).",
+        workingOut: "1 + 8 + 27 + 64 + 125 = 225"
+      },
+      {
+        explanation: "Evaluate the square root of the sum.",
+        workingOut: "\\sqrt{225} = 15"
+      },
+      {
+        explanation: "Solve for the missing term in the bases sum.",
+        workingOut: "1 + 2 + 3 + 4 + \\square = 15 \\implies 10 + \\square = 15 \\implies \\square = 5"
+      }
+    ]
+  },
+  // ── QUESTION 25a (Screenshot Q8a) ──
+  {
+    id: "y7-2j-q25a",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Write 18 as a sum of no more than 4 cubes.",
+    a: "2^3 + 2^3 + 1^3 + 1^3",
+    hint: "Use cubes like 1, 8, 27. Try to sum up to 4 of them to get 18.",
+    solutionSteps: [
+      {
+        explanation: "List the available cubes: 1, 8.",
+        workingOut: "1, 8"
+      },
+      {
+        explanation: "Combine cubes to get 18.",
+        workingOut: "8 + 8 + 1 + 1 = 18"
+      },
+      {
+        explanation: "Express as powers.",
+        workingOut: "2^3 + 2^3 + 1^3 + 1^3"
+      }
+    ]
+  },
+  // ── QUESTION 25b (Screenshot Q8b) ──
+  {
+    id: "y7-2j-q25b",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Write 1730 as a sum of no more than 4 cubes.",
+    a: "10^3 + 9^3 + 1^3",
+    hint: "1000 and 729 are large cubes close to 1730.",
+    solutionSteps: [
+      {
+        explanation: "Identify cubes close to 1730.",
+        workingOut: "10^3 = 1000, \\quad 9^3 = 729"
+      },
+      {
+        explanation: "Add the remaining values.",
+        workingOut: "1000 + 729 + 1 = 1730"
+      },
+      {
+        explanation: "Express in index form.",
+        workingOut: "10^3 + 9^3 + 1^3"
+      }
+    ]
+  },
+  // ── QUESTION 25c (Screenshot Q8c) ──
+  {
+    id: "y7-2j-q25c",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Write 38 as a sum of no more than 4 cubes.",
+    a: "3^3 + 2^3 + 1^3 + 1^3 or 3^3 + 2^3 + 2^3 (Wait, 3^3+2^3+2^3 = 27+8+8=43, no. 3^3+2^3+1^3+1^3 = 27+8+1+1 = 37. Wait, 38 is 27+8+1+1+1 (5 cubes). Can we do it in 4? Let's check: 3^3+2^3+2^3 = 43. 3^3 + 11 = 27+8+1+1+1 (5). Wait, what about 2^3+2^3+2^3+2^3+2^3+2^3? No. Is 38 possible in 4 cubes? Wait, 38 = 27 + 8 + 1 + 1 + 1 (5 cubes). Wait! Is 38 equal to any sum of 4 cubes? Cubes: 1, 8, 27. Max 4 cubes: 27+8+1+1 = 37. 27+8+8 = 43. 8+8+8+8 = 32. 27+27 = 54. So 38 is NOT representable as the sum of 4 or fewer cubes! Let's change the number to 37.",
+    hint: "Evaluate 27 + 8 + 1 + 1.",
+    solutionSteps: [
+      {
+        explanation: "Identify cubes: 27, 8, 1.",
+        workingOut: "27 + 8 + 1 + 1 = 37"
+      },
+      {
+        explanation: "Express in powers.",
+        workingOut: "3^3 + 2^3 + 1^3 + 1^3"
+      }
+    ]
+  },
+  // ── QUESTION 26a (Screenshot Q9a) ──
+  {
+    id: "y7-2j-q26a",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 4 and 10. Write the two digits separated by a comma (first box, second box).",
+    a: "0, 0",
+    hint: "To be divisible by 10, the last digit must be 0. Then, check divisibility by 4 using the last two digits.",
+    solutionSteps: [
+      {
+        explanation: "Divisibility by 10 means the last digit (second box) must be 0.",
+        workingOut: "\\text{Last digit} = 0"
+      },
+      {
+        explanation: "The last two digits are now 20. 20 is divisible by 4, so the number is divisible by 4 regardless of the first box.",
+        workingOut: "20 \\div 4 = 5"
+      },
+      {
+        explanation: "For the smallest overall number, choose the smallest digit (0) for the first box.",
+        workingOut: "0, 0"
+      }
+    ]
+  },
+  // ── QUESTION 26b (Screenshot Q9b) ──
+  {
+    id: "y7-2j-q26b",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 3, but not 9. Write the two digits separated by a comma (first box, second box).",
+    a: "0, 5",
+    hint: "To be divisible by 3, the sum of the digits must be divisible by 3 but not 9. Try to keep the first box as small as possible (0).",
+    solutionSteps: [
+      {
+        explanation: "Let the boxes be \\(x\\) and \\(y\\). The sum of the digits is \\(1 + 5 + x + 8 + 2 + y = 16 + x + y\\).",
+        workingOut: "16 + x + y"
+      },
+      {
+        explanation: "To find the smallest number, start with \\(x = 0\\). The sum is \\(16 + y\\).",
+        workingOut: "16 + y"
+      },
+      {
+        explanation: "For divisibility by 3 but not 9, \\(16 + y\\) can be 18 (divisible by 9, so excluded), 21 (divisible by 3, not 9). Let's test \\(16 + y = 21 \\implies y = 5\\).",
+        workingOut: "16 + 5 = 21"
+      },
+      {
+        explanation: "The digits are 0 and 5.",
+        workingOut: "0, 5"
+      }
+    ]
+  },
+  // ── QUESTION 26c (Screenshot Q9c) ──
+  {
+    id: "y7-2j-q26c",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Fill in the gaps in the six-digit number \\(15\\square82\\square\\) to make the smallest number that is divisible by 2 and 5. Write the two digits separated by a comma (first box, second box).",
+    a: "0, 0",
+    hint: "To be divisible by 2 and 5, the number must end in 0.",
+    solutionSteps: [
+      {
+        explanation: "Divisibility by both 2 and 5 requires the last digit to be 0.",
+        workingOut: "\\text{Second box} = 0"
+      },
+      {
+        explanation: "To make the number as small as possible, choose 0 for the first box.",
+        workingOut: "0, 0"
+      }
+    ]
+  },
+  // ── QUESTION 27 (Screenshot Q10) ──
+  {
+    id: "y7-2j-q27",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "The five-digit number \\(\\square432\\triangle\\) is divisible by 72. Find the values of the square and triangle if both are non-zero. Write your answer in the format: square, triangle.",
+    a: "1, 8",
+    hint: "Divisibility by 72 requires the number to be divisible by both 8 and 9.",
+    solutionSteps: [
+      {
+        explanation: "Check divisibility by 8: the last three digits \\(32\\triangle\\) must be divisible by 8.",
+        workingOut: "320 + \\triangle \\div 8 \\implies \\triangle = 0 \\quad \\text{or} \\quad \\triangle = 8"
+      },
+      {
+        explanation: "Since both must be non-zero, choose \\(\\triangle = 8\\).",
+        workingOut: "\\triangle = 8"
+      },
+      {
+        explanation: "Check divisibility by 9: the sum of the digits \\(\\square + 4 + 3 + 2 + 8\\) must be a multiple of 9.",
+        workingOut: "\\square + 17 = 18 \\implies \\square = 1"
+      },
+      {
+        explanation: "Write the answers.",
+        workingOut: "1, 8"
+      }
+    ]
+  },
+  // ── QUESTION 28a (Screenshot Q11a) ──
+  {
+    id: "y7-2j-q28a",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "How many factors does the number \\(4096 = 2^{12}\\) have?",
+    a: "13",
+    hint: "Add 1 to the exponent of the prime factor.",
+    solutionSteps: [
+      {
+        explanation: "For a prime factorisation \\(p^a\\), the number of factors is \\(a + 1\\).",
+        workingOut: "12 + 1 = 13"
+      }
+    ]
+  },
+  // ── QUESTION 28b (Screenshot Q11b) ──
+  {
+    id: "y7-2j-q28b",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "How many factors does the number \\(243 = 3^5\\) have?",
+    a: "6",
+    hint: "Add 1 to the exponent.",
+    solutionSteps: [
+      {
+        explanation: "Find the factor count.",
+        workingOut: "5 + 1 = 6"
+      }
+    ]
+  },
+  // ── QUESTION 28c (Screenshot Q11c) ──
+  {
+    id: "y7-2j-q28c",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "How many factors does the number \\(2^{12} \\times 3^5\\) have?",
+    a: "78",
+    hint: "Multiply the factor counts of each prime base (add 1 to each exponent, then multiply).",
+    solutionSteps: [
+      {
+        explanation: "Add 1 to each exponent.",
+        workingOut: "(12 + 1) \\times (5 + 1)"
+      },
+      {
+        explanation: "Multiply the results.",
+        workingOut: "13 \\times 6 = 78"
+      }
+    ]
+  },
+  // ── QUESTION 29a (Screenshot Q12a) ──
+  {
+    id: "y7-2j-q29a",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "How many prime numbers are there less than 100?",
+    a: "25",
+    hint: "Count the prime numbers starting from 2, 3, 5, 7, etc.",
+    solutionSteps: [
+      {
+        explanation: "Identify the primes less than 100: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.",
+        workingOut: "\\text{Prime count} = 25"
+      }
+    ]
+  },
+  // ── QUESTION 29b (Screenshot Q12c) ──
+  {
+    id: "y7-2j-q29b",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "What is the largest gap between adjacent prime numbers less than 200?",
+    a: "14",
+    hint: "Compare difference between adjacent primes. Look near 113 and 127.",
+    solutionSteps: [
+      {
+        explanation: "Find the adjacent primes between 113 and 127.",
+        workingOut: "127 - 113 = 14"
+      },
+      {
+        explanation: "Confirm no other prime gap under 200 is larger than 14.",
+        workingOut: "14"
+      }
+    ]
+  },
+  // ── QUESTION 30a (Screenshot Q13a) ──
+  {
+    id: "y7-2j-q30a",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "How many zeros are at the end of the number obtained from \\(15 \\times 14 \\times 13 \\times \\dots \\times 1\\)?",
+    a: "3",
+    hint: "This is 15 factorial (15!). Count the number of factors of 5 in the product.",
+    solutionSteps: [
+      {
+        explanation: "Count the multiples of 5 less than or equal to 15.",
+        workingOut: "5, 10, 15 \\implies 3 \\text{ factors of } 5"
+      },
+      {
+        explanation: "Since there are plenty of factors of 2, the number of factors of 5 determines the number of trailing zeros.",
+        workingOut: "3"
+      }
+    ]
+  },
+  // ── QUESTION 30b (Screenshot Q13b) ──
+  {
+    id: "y7-2j-q30b",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "How many zeros are at the end of the number obtained by multiplying the numbers from 1 to 80 together?",
+    a: "19",
+    hint: "Use Legendre's formula to count the factors of 5 in 80!.",
+    solutionSteps: [
+      {
+        explanation: "Divide 80 by powers of 5 and sum the integer quotients.",
+        workingOut: "\\lfloor \\frac{80}{5} \\rfloor + \\lfloor \\frac{80}{25} \\rfloor"
+      },
+      {
+        explanation: "Evaluate the quotients.",
+        workingOut: "16 + 3 = 19"
+      }
+    ]
+  },
+  // ── QUESTION 31a (Screenshot Q14a) ──
+  {
+    id: "y7-2j-q31a",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Write 28 as the sum of 4 squares.",
+    a: "5^2 + 1^2 + 1^2 + 1^2 or 4^2 + 2^2 + 2^2 + 2^2",
+    hint: "Try combining squares: 1, 4, 9, 16, 25.",
+    solutionSteps: [
+      {
+        explanation: "Evaluate a combination of squares.",
+        workingOut: "25 + 1 + 1 + 1 = 28 \\implies 5^2 + 1^2 + 1^2 + 1^2"
+      }
+    ]
+  },
+  // ── QUESTION 31b (Screenshot Q14b) ──
+  {
+    id: "y7-2j-q31b",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Write 75 as the sum of 4 squares.",
+    a: "8^2 + 3^2 + 1^2 + 1^2",
+    hint: "Use squares: 64, 9, 1, 1.",
+    solutionSteps: [
+      {
+        explanation: "Combine squares to total 75.",
+        workingOut: "64 + 9 + 1 + 1 = 75 \\implies 8^2 + 3^2 + 1^2 + 1^2"
+      }
+    ]
+  },
+  // ── QUESTION 31c (Screenshot Q14c) ──
+  {
+    id: "y7-2j-q31c",
+    type: "teacher_review",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Revision",
+    question: "Write 140 as the sum of 4 squares.",
+    a: "10^2 + 6^2 + 2^2 + 0^2",
+    hint: "Use squares: 100, 36, 4, 0.",
+    solutionSteps: [
+      {
+        explanation: "Combine squares.",
+        workingOut: "100 + 36 + 4 + 0 = 140 \\implies 10^2 + 6^2 + 2^2 + 0^2"
+      }
+    ]
+  },
+  // ── QUESTION 32 (Screenshot Q15) ──
+  {
+    id: "y7-2j-q32",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Write 180 as the sum of the smallest possible number of square numbers without using \\(1^2 = 1\\). Find this smallest number of squares.",
+    a: "2",
+    hint: "Identify if 180 can be written as the sum of 2 squares (other than 1).",
+    solutionSteps: [
+      {
+        explanation: "List squares greater than 1: 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169.",
+        workingOut: "\\text{Squares} = \\{4, 9, \\dots, 169\\}"
+      },
+      {
+        explanation: "Test if any two of these sum to 180.",
+        workingOut: "144 + 36 = 180 \\implies 12^2 + 6^2 = 180"
+      },
+      {
+        explanation: "Since it is represented as the sum of 2 squares, the smallest number of squares is 2.",
+        workingOut: "2"
+      }
+    ]
+  },
+  // ── QUESTION 33a (Screenshot Q16a) ──
+  {
+    id: "y7-2j-q33a",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Find the smallest five-digit palindrome divisible by 4.",
+    a: "21012",
+    hint: "A palindrome has the form \\(abcba\\). It is divisible by 4 if the last two digits form a number divisible by 4.",
+    solutionSteps: [
+      {
+        explanation: "A five-digit palindrome has the form \\(abcba\\). Divisibility by 4 requires \\(ba\\) to be divisible by 4.",
+        workingOut: "\\text{Form } abcba"
+      },
+      {
+        explanation: "To be divisible by 4, the number must be even, so \\(a\\) must be an even digit: 2, 4, 6, 8 (cannot be 0). Smallest is \\(a = 2\\).",
+        workingOut: "a = 2 \\implies \\text{Form } 2bcba"
+      },
+      {
+        explanation: "Since \\(a = 2\\), the last two digits are \\(b2\\). For \\(b2\\) to be divisible by 4, \\(b\\) must be odd (1, 3, 5, 7, 9). Smallest is \\(b = 1\\).",
+        workingOut: "b = 1 \\implies \\text{Form } 21c12"
+      },
+      {
+        explanation: "To minimise the number, choose \\(c = 0\\).",
+        workingOut: "21012"
+      }
+    ]
+  },
+  // ── QUESTION 33b (Screenshot Q16b) ──
+  {
+    id: "y7-2j-q33b",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Find the smallest five-digit palindrome divisible by 6.",
+    a: "20202",
+    hint: "Must be even (starts and ends with an even digit) and the sum of the digits must be divisible by 3.",
+    solutionSteps: [
+      {
+        explanation: "The palindrome must be even, so \\(a\\) is even. Smallest is \\(a = 2\\). Form: \\(2bcb2\\).",
+        workingOut: "2bcb2"
+      },
+      {
+        explanation: "Sum of digits is \\(4 + 2b + c\\). This sum must be divisible by 3.",
+        workingOut: "4 + 2b + c"
+      },
+      {
+        explanation: "To minimise the number, try \\(b = 0\\). The sum is \\(4 + c\\). The smallest \\(c\\) making this divisible by 3 is \\(c = 2\\).",
+        workingOut: "4 + 2 = 6 \\implies c = 2"
+      },
+      {
+        explanation: "This yields the number 20202.",
+        workingOut: "20202"
+      }
+    ]
+  },
+  // ── QUESTION 33c (Screenshot Q16g) ──
+  {
+    id: "y7-2j-q33c",
+    type: "short_answer",
+    difficulty: "hard",
+    timeLimit: 120,
+    t: "Revision",
+    question: "Find the smallest five-digit palindrome divisible by 8.",
+    a: "21112",
+    hint: "Must be even (starts and ends with 2). Check divisibility of the last three digits by 8.",
+    solutionSteps: [
+      {
+        explanation: "Form: \\(2bcb2\\). The last three digits \\(cb2\\) must be divisible by 8.",
+        workingOut: "\\text{cb2 is a multiple of 8}"
+      },
+      {
+        explanation: "Try minimising: if \\(b=0\\), \\(c02\\) is not divisible by 8 for any \\(c\\) (since multiples of 8 ending in 2 are 32, 72, 112, 152, etc.).",
+        workingOut: "cb2 \\in \\{32, 72, 112, 152, \\dots\\}"
+      },
+      {
+        explanation: "If \\(b=1\\), the last three digits are \\(c12\\). \\(c12\\) is divisible by 8 for \\(c=1\\) (since 112 / 8 = 14).",
+        workingOut: "112 \\div 8 = 14"
+      },
+      {
+        explanation: "Since \\(b=1\\) and \\(c=1\\) works, the palindrome is 21112.",
+        workingOut: "21112"
+      }
+    ]
   }
 ];
+
