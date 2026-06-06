@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, XCircle, Zap, BookOpen,
@@ -16,6 +16,7 @@ import ChallengeSketchBoard from './challenge/ChallengeSketchBoard';
 import LessonPlayer from './lessons/LessonPlayer';
 import { getLesson } from '../lessons/registry';
 import { GraduationCap, Volume2 } from 'lucide-react';
+import { parseSolutionSteps } from '../utils/solutionSteps';
 
 // Fisher–Yates shuffle (returns a new array).
 const shuffleArray = (arr) => {
@@ -180,6 +181,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   }, [chapter.id, topic.id]);
 
   const q = questions[currentIdx];
+  const steps = useMemo(() => parseSolutionSteps(q), [q]);
   const total = questions.length;
 
   // Detect question type
@@ -801,7 +803,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
         {/* Step-by-step solution — shown right after answering (practice space) */}
         <AnimatePresence>
-          {submitted && (Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0) && (
+          {submitted && steps.length > 0 && (
             <motion.div
               initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
               style={{ padding: '20px', borderRadius: '18px', marginBottom: '16px', background: '#fff', border: '1px solid #e0e7ff', boxShadow: '0 8px 24px rgba(99,102,241,0.06)' }}
@@ -812,11 +814,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                 </div>
                 <div>
                   <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Step-by-step solution</div>
-                  <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>{q.solutionSteps.length} step{q.solutionSteps.length !== 1 ? 's' : ''}</div>
+                  <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>{steps.length} step{steps.length !== 1 ? 's' : ''}</div>
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {q.solutionSteps.map((step, si) => (
+                {steps.map((step, si) => (
                   <div key={si} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
                     <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.75rem', flexShrink: 0, marginTop: '2px' }}>
                       {si + 1}
@@ -839,22 +841,6 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                   </div>
                 ))}
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        {/* Plain-text solution fallback when there are no structured steps */}
-        <AnimatePresence>
-          {submitted && !(Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0) && q?.solution && (
-            <motion.div
-              initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-              style={{ padding: '16px 20px', borderRadius: '16px', marginBottom: '16px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-                <Lightbulb size={15} style={{ color: '#7c3aed' }} />
-                <span style={{ fontWeight: 900, color: '#4c1d95', fontSize: '0.82rem' }}>Solution</span>
-              </div>
-              <MathView content={q.solution} style={{ fontSize: '0.92rem', color: '#5b21b6', fontWeight: 600, lineHeight: 1.6 }} />
             </motion.div>
           )}
         </AnimatePresence>
