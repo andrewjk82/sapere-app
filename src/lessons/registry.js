@@ -409,21 +409,24 @@ export const buildRadianLesson = ({ audioBase = null } = {}) => {
     ],
   });
   // Special right triangle helper.
-  const triangle = (verts, sides, angles, rightAt) => ({
-    type: 'graph', showAxes: false, width: 380, height: 320,
-    xMin: -0.5, xMax: 2.6, yMin: -0.5, yMax: 2.4,
-    lines: [
-      { from: verts[0], to: verts[1], color: '#7c3aed', width: 3, label: sides[0].t, labelAt: sides[0].at, delay: 0.4 },
-      { from: verts[1], to: verts[2], color: '#7c3aed', width: 3, label: sides[1].t, labelAt: sides[1].at, delay: 0.6 },
-      { from: verts[2], to: verts[0], color: '#7c3aed', width: 3, label: sides[2].t, labelAt: sides[2].at, delay: 0.8 },
-      // right-angle marker
-      ...(rightAt ? [
-        { from: [rightAt[0], rightAt[1] + 0.12], to: [rightAt[0] + 0.12, rightAt[1] + 0.12], color: '#7c3aed', width: 1.8, delay: 0.9 },
-        { from: [rightAt[0] + 0.12, rightAt[1] + 0.12], to: [rightAt[0] + 0.12, rightAt[1]], color: '#7c3aed', width: 1.8, delay: 0.9 },
-      ] : []),
-    ],
-    texts: angles.map((a, i) => ({ x: a.at[0], y: a.at[1], text: a.t, color: '#1e1b4b', size: 14, delay: 1.0 + i * 0.1 })),
-  });
+  // verts: [[x0,y0],[x1,y1],[x2,y2]] going CCW; right angle is at verts[1]=[rx,ry]
+  const triangle = (verts, sides, angles) => {
+    const [rx, ry] = verts[1]; // right-angle vertex (bottom-right)
+    const d = 0.11; // marker size in data units
+    return {
+      type: 'graph', showAxes: false, width: 380, height: 320,
+      xMin: -0.5, xMax: 2.0, yMin: -0.5, yMax: 2.1,
+      lines: [
+        { from: verts[0], to: verts[1], color: '#7c3aed', width: 3, label: sides[0].t, labelAt: sides[0].at, delay: 0.4 },
+        { from: verts[1], to: verts[2], color: '#7c3aed', width: 3, label: sides[1].t, labelAt: sides[1].at, delay: 0.6 },
+        { from: verts[2], to: verts[0], color: '#7c3aed', width: 3, label: sides[2].t, labelAt: sides[2].at, delay: 0.8 },
+        // right-angle marker — goes LEFT then UP (inside the triangle)
+        { from: [rx - d, ry], to: [rx - d, ry + d], color: '#7c3aed', width: 1.8, delay: 0.95 },
+        { from: [rx - d, ry + d], to: [rx, ry + d], color: '#7c3aed', width: 1.8, delay: 0.95 },
+      ],
+      texts: angles.map((a, i) => ({ x: a.at[0], y: a.at[1], text: a.t, color: '#1e1b4b', size: 14, delay: 1.0 + i * 0.1 })),
+    };
+  };
 
   const steps = [
     {
@@ -499,15 +502,13 @@ export const buildRadianLesson = ({ audioBase = null } = {}) => {
       board: [
         triangle(
           [[0, 0], [1, 0], [1, Math.sqrt(3)]],
-          [{ t: '1', at: [0.5, -0.22] }, { t: '√3', at: [1.28, Math.sqrt(3) / 2] }, { t: '2', at: [0.34, Math.sqrt(3) / 2 + 0.12] }],
-          [{ t: '60°', at: [0.30, 0.16] }, { t: '90°', at: [0.78, 0.22] }, { t: '30°', at: [0.82, Math.sqrt(3) - 0.26] }],
-          [1, 0],
+          [{ t: '1', at: [0.5, -0.22] }, { t: '√3', at: [1.14, Math.sqrt(3) / 2] }, { t: '2', at: [0.36, Math.sqrt(3) / 2 + 0.14] }],
+          [{ t: '60°', at: [0.26, 0.18] }, { t: '90°', at: [0.70, 0.20] }, { t: '30°', at: [0.72, Math.sqrt(3) - 0.22] }],
         ),
         triangle(
           [[0, 0], [1, 0], [1, 1]],
-          [{ t: '1', at: [0.5, -0.22] }, { t: '1', at: [1.28, 0.5] }, { t: '√2', at: [0.36, 0.62] }],
-          [{ t: '45°', at: [0.30, 0.16] }, { t: '90°', at: [0.78, 0.22] }, { t: '45°', at: [0.78, 0.82] }],
-          [1, 0],
+          [{ t: '1', at: [0.5, -0.22] }, { t: '1', at: [1.14, 0.5] }, { t: '√2', at: [0.36, 0.60] }],
+          [{ t: '45°', at: [0.26, 0.18] }, { t: '90°', at: [0.70, 0.20] }, { t: '45°', at: [0.72, 0.82] }],
         ),
       ],
     },
