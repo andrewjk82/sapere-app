@@ -12,17 +12,17 @@
 학년:        Year 7
 챕터 번호:   1
 chapterId:   y7-1
-서브토픽 ID: y7-1k
-토픽 코드:   1K
-서브토픽 제목: The long division algorithm
+서브토픽 ID: y7-1m
+토픽 코드:   1M
+서브토픽 제목: Revision
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1  ~ Q3  → easy
-Q4 ~  Q8 → medium
-Q9 → hard
+Q1  ~ Q4  → easy
+Q5  ~ Q8  → medium
+Q9  ~ Q10 → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
 
@@ -46,7 +46,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1 ~ Q2
+  Q1
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 

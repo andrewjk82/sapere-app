@@ -1031,7 +1031,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y7-1',
       title: 'Whole numbers',
-      modules: 12,
+      modules: 13,
       topics: [
         { id: 'y7-1a', code: '1A', title: 'The number line', page: 2 },
         { id: 'y7-1b', code: '1B', title: 'Addition', page: 4 },
@@ -1044,7 +1044,8 @@ export const CURRICULUM_DATA = {
         { id: 'y7-1i', code: '1I', title: 'Division', page: 23 },
         { id: 'y7-1j', code: '1J', title: 'The short division algorithm', page: 28 },
         { id: 'y7-1k', code: '1K', title: 'The long division algorithm', page: 30 },
-        { id: 'y7-1l', code: '1L', title: 'Order of operations', page: 32 }
+        { id: 'y7-1l', code: '1L', title: 'Order of operations', page: 32 },
+        { id: 'y7-1m', code: '1M', title: 'Revision' }
       ]
     },
     {
