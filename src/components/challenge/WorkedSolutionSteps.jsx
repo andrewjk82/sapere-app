@@ -61,9 +61,9 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        height: hasMultipleSteps ? '64vh' : '52vh',
-        minHeight: hasMultipleSteps ? '420px' : '360px',
-        maxHeight: hasMultipleSteps ? '760px' : '640px',
+        height: '64vh',
+        minHeight: '420px',
+        maxHeight: '760px',
       }}
     >
       {/* Top accent stripe */}
@@ -84,7 +84,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
           </div>
         </div>
 
-        {hasMultipleSteps && allRevealed && (
+        {allRevealed && (
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '999px', background: '#dcfce7', color: '#166534', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
             <CheckCircle2 size={14} /> Complete
           </div>
