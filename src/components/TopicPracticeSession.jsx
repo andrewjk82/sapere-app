@@ -750,9 +750,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                 <div style={{ fontWeight: 900, fontSize: '0.95rem', color: isCorrect ? '#065f46' : '#be123c' }}>
                   {isCorrect ? 'Correct! 🎉' : 'Not quite'}
                 </div>
-                {!isCorrect && q?.solution && (
+                {!isCorrect && q?.answer != null && (
                   <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#9f1239', marginTop: '2px' }}>
-                    <MathView content={q.solution} style={{ display: 'inline' }} />
+                    Answer: <MathView content={String(q.answer)} style={{ display: 'inline', fontWeight: 800 }} />
                   </div>
                 )}
               </div>
@@ -761,6 +761,66 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                   <Zap size={14} /> +{Math.round(XP_PER_TOPIC / total)} XP
                 </div>
               )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Step-by-step solution — shown right after answering (practice space) */}
+        <AnimatePresence>
+          {submitted && (Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0) && (
+            <motion.div
+              initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+              style={{ padding: '20px', borderRadius: '18px', marginBottom: '16px', background: '#fff', border: '1px solid #e0e7ff', boxShadow: '0 8px 24px rgba(99,102,241,0.06)' }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+                <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff', flexShrink: 0 }}>
+                  <Lightbulb size={16} />
+                </div>
+                <div>
+                  <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Step-by-step solution</div>
+                  <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>{q.solutionSteps.length} step{q.solutionSteps.length !== 1 ? 's' : ''}</div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {q.solutionSteps.map((step, si) => (
+                  <div key={si} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
+                    <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.75rem', flexShrink: 0, marginTop: '2px' }}>
+                      {si + 1}
+                    </div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      {step.explanation && (
+                        <MathView content={step.explanation} style={{ fontSize: '0.92rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6, marginBottom: step.workingOut ? '8px' : 0 }} />
+                      )}
+                      {step.workingOut && (
+                        <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
+                          <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
+                        </div>
+                      )}
+                      {step.graphData && (
+                        <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                          <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Plain-text solution fallback when there are no structured steps */}
+        <AnimatePresence>
+          {submitted && !(Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0) && q?.solution && (
+            <motion.div
+              initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+              style={{ padding: '16px 20px', borderRadius: '16px', marginBottom: '16px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                <Lightbulb size={15} style={{ color: '#7c3aed' }} />
+                <span style={{ fontWeight: 900, color: '#4c1d95', fontSize: '0.82rem' }}>Solution</span>
+              </div>
+              <MathView content={q.solution} style={{ fontSize: '0.92rem', color: '#5b21b6', fontWeight: 600, lineHeight: 1.6 }} />
             </motion.div>
           )}
         </AnimatePresence>

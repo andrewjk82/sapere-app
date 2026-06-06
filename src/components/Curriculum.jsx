@@ -146,6 +146,7 @@ import { Y7_CH23I_QUESTIONS } from '../constants/seedYear7Ch23IQuestions.js';
 import { Y7_CH23J_QUESTIONS } from '../constants/seedYear7Ch23JQuestions.js';
 import { Y7_CH1B_QUESTIONS } from '../constants/seedYear7Ch1BQuestions.js';
 import { Y7_CH1C_QUESTIONS } from '../constants/seedYear7Ch1CQuestions.js';
+import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y10_CH1F_QUESTIONS } from '../constants/seedYear10Ch1FQuestions.js';
 import { Y10_CH2F_QUESTIONS } from '../constants/seedYear10Ch2FQuestions.js';
 import { Y10_CH3J_QUESTIONS } from '../constants/seedYear10Ch3JQuestions.js';
@@ -474,6 +475,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y8-19', chapterTitle: 'Chapter 19: Statistics', topicId: 'y8-19a', topicCode: '19A', topicTitle: 'Comparing means and medians', year: 'Year 8', seed: Y8_CH19A_QUESTIONS, label: 'Y8 Ch19 · Statistics' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1b', topicCode: '1B', topicTitle: 'Addition', year: 'Year 7', seed: Y7_CH1B_QUESTIONS, label: 'Y7 Ch1 · 1B Addition' },
   { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1c', topicCode: '1C', topicTitle: 'The standard addition algorithm', year: 'Year 7', seed: Y7_CH1C_QUESTIONS, label: 'Y7 Ch1 · 1C The standard addition algorithm' },
+  { chapterId: 'y7-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y7-1d', topicCode: '1D', topicTitle: 'Subtraction', year: 'Year 7', seed: Y7_CH1D_QUESTIONS, label: 'Y7 Ch1 · 1D Subtraction' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3b', topicCode: '3B', topicTitle: 'Algebraic notation', year: 'Year 7', seed: Y7_CH3B_QUESTIONS, label: 'Y7 Ch3 · Algebraic notation' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3c', topicCode: '3C', topicTitle: 'Substitution', year: 'Year 7', seed: Y7_CH3C_QUESTIONS, label: 'Y7 Ch3 · Substitution' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3d', topicCode: '3D', topicTitle: 'Adding and subtracting like terms', year: 'Year 7', seed: Y7_CH3D_QUESTIONS, label: 'Y7 Ch3 · Adding and subtracting like terms' },

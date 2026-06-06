@@ -220,6 +220,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
   const hasCalculationTest = studentProfile?.calculationEnabled !== false;
 
+  // Question-based correct count for display (a multi-part question counts as
+  // correct only when every part is right). Keeps the headline/denominator in
+  // terms of assigned questions while XP stays point-based.
+  const resultQuestionsCorrect = useMemo(() => (answerResults || []).filter((r) => {
+    if (!r || typeof r !== 'object') return false;
+    if (r.totalPoints) return Number(r.pointsEarned || 0) >= Number(r.totalPoints);
+    return !!r.correct || Number(r.pointsEarned || 0) >= 1;
+  }).length, [answerResults]);
+
   const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
 
@@ -853,7 +862,19 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     isFinishingRef.current = true;
     // Declared outside try so catch block can safely reference it
     const currentAnswerResults = answerResults || [];
+    // Point-based score (each sub-question part = 1 point) — used ONLY for XP.
     let actualScore = isAbandoned ? 0 : currentAnswerResults.reduce((acc, r) => acc + (r?.pointsEarned || (r?.correct ? 1 : 0)), 0);
+    // Question-based score — what we SAVE/DISPLAY so the denominator matches the
+    // number of assigned questions (e.g. 15), not the expanded sub-question
+    // point total (e.g. 21). A multi-part question counts as fully correct only
+    // when every part is right.
+    const isQuestionFullyCorrect = (r) => {
+      if (!r || typeof r !== 'object') return false;
+      if (r.totalPoints) return Number(r.pointsEarned || 0) >= Number(r.totalPoints);
+      return !!r.correct || Number(r.pointsEarned || 0) >= 1;
+    };
+    const questionsCorrect = isAbandoned ? 0 : currentAnswerResults.filter(isQuestionFullyCorrect).length;
+    const displayTotal = TOTAL_QUESTIONS;
 
     try {
       setIsFinishing(true);
@@ -1015,8 +1036,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           completed: !isAbandoned,
           abandoned: isAbandoned,
           id: today,
-          score: actualScore,
-          total: totalPossibleScore,
+          // Saved score is question-based so it matches the assigned question
+          // count. Point-based marks are kept separately for reference.
+          score: questionsCorrect,
+          total: displayTotal,
+          pointsScore: actualScore,
+          pointsTotal: totalPossibleScore,
           challengeType,
           maxXp,
           xpEarned,
@@ -1106,8 +1131,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           userId: user.uid,
           date: today,
           challengeType,
-          score: actualScore,
-          total: totalPossibleScore,
+          score: questionsCorrect,
+          total: displayTotal,
           xpEarned,
           studentProfile,
           user,
@@ -1192,8 +1217,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             studentId: user.uid,
             studentName: displayName,
             challengeType,
-            score: actualScore,
-            total: totalPossibleScore,
+            score: questionsCorrect,
+            total: displayTotal,
             xpEarned,
             completedAt: now.toISOString(),
             reviewCount: sessionReviewCountRef.current,
@@ -1655,8 +1680,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   questions={questions}
                   userAnswers={userAnswers}
                   answerResults={answerResults}
-                  score={score}
-                  totalPossibleScore={totalPossibleScore}
+                  score={resultQuestionsCorrect}
+                  totalPossibleScore={TOTAL_QUESTIONS}
+                  xpEarnedOverride={getEarnedXp(score, totalPossibleScore, challengeType, hasCalculationTest)}
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   challengeType={challengeType}
                   challengeBlueprint={CHALLENGE_BLUEPRINT}

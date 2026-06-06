@@ -16,7 +16,7 @@
  *   examPrep:v1:<uid>:history     Session[]   recent rounds (capped)
  */
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, getDoc, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { addMistakes } from '../utils/secretNote';
 import { idbGet, idbSet, idbDel } from '../utils/idbStore';
 
@@ -59,6 +59,8 @@ export const getStats = (uid) =>
 export const resetStats = (uid) => {
   localStorage.removeItem(k(uid, 'stats'));
   localStorage.removeItem(k(uid, 'history'));
+  // Mirror the reset to the server so it doesn't re-hydrate stale data.
+  persistStateToServer(uid);
 };
 
 // ── History (recent sessions, capped) ──────────────────────────────────
@@ -70,6 +72,65 @@ const pushHistory = (uid, session) => {
   list.unshift(session);
   if (list.length > HISTORY_CAP) list.length = HISTORY_CAP;
   localStorage.setItem(k(uid, 'history'), JSON.stringify(list));
+};
+
+// ── Cross-device sync (stats + history persisted to Firestore) ─────────
+// localStorage stays the fast local cache; Firestore is the canonical store so
+// a student's progress follows them across devices/browsers. The doc lives
+// under the student's own user document: users/{uid}/examPrep/state.
+const stateDocRef = (uid) => doc(db, 'users', uid, 'examPrep', 'state');
+
+// Persist the current local stats + history to Firestore (best-effort).
+export const persistStateToServer = async (uid) => {
+  if (!uid) return;
+  try {
+    await setDoc(stateDocRef(uid), {
+      stats: getStats(uid),
+      history: getHistory(uid),
+      updatedAt: serverTimestamp(),
+    }, { merge: true });
+  } catch (e) {
+    console.warn('[examPrep] state persist failed (non-fatal):', e?.message || e);
+  }
+};
+
+// Pull server-saved stats/history into localStorage so the synchronous getters
+// (getStats/getHistory/getTopicAnalysis) return the cross-device values.
+// The server is treated as canonical when it has at least as many sessions as
+// the local copy — this restores progress on a fresh device while never
+// clobbering newer local progress that hasn't been pushed yet.
+// Track which uids have already been hydrated this page-load so navigating in
+// and out of Exam Prep doesn't re-read the server doc each time. A full page
+// reload resets this (module state is cleared), triggering one fresh sync.
+const hydratedUids = new Set();
+
+export const hydrateExamPrepState = async (uid, { force = false } = {}) => {
+  if (!uid) return false;
+  if (!force && hydratedUids.has(uid)) return false; // already synced this session
+  hydratedUids.add(uid);
+  try {
+    const snap = await getDoc(stateDocRef(uid));
+    if (!snap.exists()) return false;
+    const data = snap.data() || {};
+    const serverStats = data.stats;
+    if (!serverStats) return false;
+    const serverHistory = Array.isArray(data.history) ? data.history : [];
+    const localSessions = Number(getStats(uid).sessions) || 0;
+    const serverSessions = Number(serverStats.sessions) || 0;
+    if (serverSessions >= localSessions) {
+      localStorage.setItem(k(uid, 'stats'), JSON.stringify(serverStats));
+      localStorage.setItem(k(uid, 'history'), JSON.stringify(serverHistory.slice(0, HISTORY_CAP)));
+      return true;
+    }
+    // Local is ahead (offline rounds not yet pushed) — push it up instead.
+    persistStateToServer(uid);
+    return false;
+  } catch (e) {
+    // Let a transient failure retry on the next attempt this session.
+    hydratedUids.delete(uid);
+    console.warn('[examPrep] hydrate failed (non-fatal):', e?.message || e);
+    return false;
+  }
 };
 
 // ── Question pool (the cached candidate set) ──────────────────────────
@@ -256,6 +317,10 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
     correct,
     perTopic,
   });
+
+  // Persist the updated stats + history to Firestore so progress follows the
+  // student across devices. Best-effort; never blocks the result screen.
+  persistStateToServer(uid);
 
   // Wrong questions roll into the Exam Prep Secret Note deck for review.
   const wrongQuestions = results

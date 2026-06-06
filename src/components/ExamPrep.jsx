@@ -30,6 +30,7 @@ import WorkingOutCanvas from './WorkingOutCanvas';
 import {
   getStats, getTopicAnalysis,
   startRound, finishRound,
+  hydrateExamPrepState,
   ROUND_SIZE_CONST, EXAM_PREP_NOTE_KIND,
 } from '../services/examPrepService';
 
@@ -1097,6 +1098,21 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     setNoteCount(getNoteCount(EXAM_PREP_NOTE_KIND, uid));
     setDueCount(getDueCount(EXAM_PREP_NOTE_KIND, uid));
   }, [uid, stage]);
+
+  // On login/device change, pull server-saved stats + history so progress
+  // follows the student across devices, then refresh the on-screen values.
+  useEffect(() => {
+    if (!uid) return;
+    let cancelled = false;
+    (async () => {
+      const hydrated = await hydrateExamPrepState(uid);
+      if (hydrated && !cancelled) {
+        setAnalysis(getTopicAnalysis(uid));
+        setStats(getStats(uid));
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [uid]);
 
   const submitReport = async () => {
     const target = reportTargetRef.current || reportTarget;

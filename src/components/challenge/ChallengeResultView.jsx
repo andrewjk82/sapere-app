@@ -68,7 +68,11 @@ const ChallengeResultView = ({
   elapsedSeconds = null,
   streakDays = null,
   userName = '',
-  recommendations = null
+  recommendations = null,
+  // When the headline score is shown question-based (score/totalPossibleScore
+  // are question counts), pass the point-based XP here so the XP figure still
+  // reflects per-part marking instead of being recomputed from question counts.
+  xpEarnedOverride = null,
 }) => {
   const isAbandoned =
     (answerResults || []).some(r => r === 'abandoned') ||
@@ -79,12 +83,14 @@ const ChallengeResultView = ({
       ? Math.round((score / totalPossibleScore) * 100)
       : 0;
 
-  const xpEarned = getEarnedXp(
-    score,
-    totalPossibleScore,
-    challengeType,
-    hasCalculationTest
-  );
+  const xpEarned = xpEarnedOverride != null
+    ? xpEarnedOverride
+    : getEarnedXp(
+        score,
+        totalPossibleScore,
+        challengeType,
+        hasCalculationTest
+      );
 
   const topics = useMemo(
     () => buildTopicBreakdown(questions, answerResults),
