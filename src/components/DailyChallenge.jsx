@@ -170,6 +170,47 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     finishQuizRef,
   });
 
+  // ── Quiz draft persistence (survive accidental window close) ──
+  const draftKey = user?.uid ? `quiz_draft_${user.uid}` : null;
+  const today = new Date().toLocaleDateString('en-CA');
+
+  // Save draft whenever quiz is in progress
+  useEffect(() => {
+    if (step !== 'quiz' || !draftKey || questions.length === 0) return;
+    const draft = {
+      date: today,
+      challengeType,
+      currentSessionId,
+      calcSessionMeta,
+      questions,
+      currentIdx,
+      score,
+      userAnswers,
+      answerResults,
+      shuffledOptions,
+      subAnswers,
+      timeLeft,
+      savedAt: Date.now(),
+    };
+    try { localStorage.setItem(draftKey, JSON.stringify(draft)); } catch {}
+  }, [step, currentIdx, score, userAnswers, answerResults, shuffledOptions, subAnswers, timeLeft]);
+
+  // Clear draft when quiz finishes
+  const clearDraft = () => { if (draftKey) try { localStorage.removeItem(draftKey); } catch {} };
+
+  // Restore draft on mount (only if same day)
+  const [restoredDraft, setRestoredDraft] = useState(null);
+  useEffect(() => {
+    if (!draftKey) return;
+    try {
+      const raw = localStorage.getItem(draftKey);
+      if (!raw) return;
+      const draft = JSON.parse(raw);
+      if (draft.date !== today) { localStorage.removeItem(draftKey); return; }
+      setRestoredDraft(draft);
+    } catch {}
+  }, [draftKey]);
+
   // ── Convenience helpers ──
   const resetSessionAttentionCounts = () => {
     sessionReviewCountRef.current = 0;
@@ -860,6 +901,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const finishQuiz = async (isAbandoned = false) => {
     if (isFinishingRef.current) return;
     isFinishingRef.current = true;
+    clearDraft();
     // Declared outside try so catch block can safely reference it
     const currentAnswerResults = answerResults || [];
     // Point-based score (each sub-question part = 1 point) — used ONLY for XP.
@@ -1608,6 +1650,45 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
           >
             <AnimatePresence mode="wait">
+              {step === 'start' && restoredDraft && (
+                <motion.div
+                  initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }}
+                  style={{ margin: '16px 16px 0', padding: '14px 18px', borderRadius: '16px', background: 'linear-gradient(135deg,#faf5ff,#f3f0ff)', border: '1.5px solid #c4b5fd', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap' }}>
+                  <div>
+                    <div style={{ fontWeight: 800, fontSize: '0.92rem', color: '#5b21b6' }}>📋 진행 중인 테스트가 있어요</div>
+                    <div style={{ fontSize: '0.8rem', color: '#7c3aed', marginTop: '2px' }}>
+                      {restoredDraft.currentIdx + 1}번 문제까지 진행됨 · {restoredDraft.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Sprint'}
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '8px' }}>
+                    <button onClick={() => {
+                      const d = restoredDraft;
+                      setChallengeType(d.challengeType);
+                      setCurrentSessionId(d.currentSessionId);
+                      setCalcSessionMeta(d.calcSessionMeta);
+                      setQuestions(d.questions);
+                      setCurrentIdx(d.currentIdx);
+                      setScore(d.score);
+                      setUserAnswers(d.userAnswers);
+                      setAnswerResults(d.answerResults);
+                      setShuffledOptions(d.shuffledOptions || []);
+                      setSubAnswers(d.subAnswers || {});
+                      // Adjust timeLeft for time elapsed while window was closed
+                      const elapsed = Math.floor((Date.now() - (d.savedAt || Date.now())) / 1000);
+                      setTimeLeft(Math.max(0, (d.timeLeft || 0) - elapsed));
+                      quizStartTimeRef.current = Date.now();
+                      setStep('quiz');
+                      if (setIsLocked) setIsLocked(true);
+                      setRestoredDraft(null);
+                    }} style={{ padding: '8px 16px', borderRadius: '10px', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.83rem', border: 'none', cursor: 'pointer' }}>
+                      이어하기
+                    </button>
+                    <button onClick={() => { clearDraft(); setRestoredDraft(null); }} style={{ padding: '8px 12px', borderRadius: '10px', background: '#fff', color: '#94a3b8', fontWeight: 700, fontSize: '0.83rem', border: '1px solid #e2e8f0', cursor: 'pointer' }}>
+                      새로 시작
+                    </button>
+                  </div>
+                </motion.div>
+              )}
               {step === 'start' && (
                 <ChallengeStartView
                   key="start"
