@@ -38,7 +38,7 @@ const PV_SPOKEN = ['1', '10', '100', '1 thousand', '10 thousand', '100 thousand'
 const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, '\\,');
 const fmtPlain = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
-export const buildPlaceValueLesson = (number, title = 'Place value') => {
+export const buildPlaceValueLesson = (number, title = 'Place value', { audioBase = null } = {}) => {
   const s = String(Math.max(0, Math.floor(number)));
   const digits = s.split('').map(Number);
   const len = digits.length;
@@ -97,13 +97,19 @@ export const buildPlaceValueLesson = (number, title = 'Place value') => {
     board: [table(-1, len - 1, true), { type: 'math', content: `$$${fmt(value)} = ${powTerms.join(' + ')}$$`, emphasis: true }],
   });
 
+  // Attach pre-generated audio file URLs (step-0.wav, step-1.wav, …) when a
+  // base path is given. The LessonPlayer plays these small files directly —
+  // students never download the TTS model.
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+
   return { topicId: null, title, number, steps };
 };
 
 // ── Registered lessons (topicId → spec) ────────────────────────────────────
 export const LESSONS = {
-  // Year 7 · 1G · Place value (textbook example uses 3721)
-  'y7-1g': { ...buildPlaceValueLesson(3721, 'Place value'), topicId: 'y7-1g' },
+  // Year 7 · 1G · Place value (textbook example uses 3721).
+  // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
+  'y7-1g': { ...buildPlaceValueLesson(3721, 'Place value', { audioBase: '/lessons/audio/y7-1g' }), topicId: 'y7-1g' },
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;

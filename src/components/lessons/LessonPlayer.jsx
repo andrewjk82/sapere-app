@@ -87,6 +87,9 @@ const LessonPlayer = ({ lesson, onClose }) => {
   const [speaking, setSpeaking] = useState(false);
   const steps = lesson?.steps || [];
   const step = steps[idx];
+  // When every step has a pre-generated audio file, voice is already HD —
+  // the in-browser "HD voice" toggle (model download) isn't needed.
+  const hasPregenAudio = steps.length > 0 && steps.every((s) => s.audioUrl);
 
   // Refs so the async audio callbacks read fresh values without re-subscribing.
   const autoRef = useRef(auto); useEffect(() => { autoRef.current = auto; }, [auto]);
@@ -115,7 +118,8 @@ const LessonPlayer = ({ lesson, onClose }) => {
 
   // Play the current step's narration. In auto-play, advance to the NEXT step
   // only AFTER the narration finishes — so voices never overlap.
-  const speakStep = useCallback(async (text) => {
+  const speakStep = useCallback(async (stepObj) => {
+    const text = stepObj?.speech;
     tokenRef.current++;
     const myToken = tokenRef.current;
     stopAudio();
@@ -123,9 +127,28 @@ const LessonPlayer = ({ lesson, onClose }) => {
     const proceed = () => { if (autoRef.current && tokenRef.current === myToken) advTimer.current = setTimeout(nextOrStop, 650); };
     const fixedDelay = () => { if (autoRef.current) advTimer.current = setTimeout(nextOrStop, 3600); };
 
-    if (!voiceRef.current || !text) { setSpeaking(false); fixedDelay(); return; }
+    if (!voiceRef.current) { setSpeaking(false); fixedDelay(); return; }
 
-    // ── HD path: Kokoro neural voice (lazy-loaded, cached) ──
+    // ── Best path: pre-generated audio file (small, instant, no model) ──
+    const fileUrl = stepObj?.audioUrl;
+    if (fileUrl) {
+      try {
+        const audio = new Audio(fileUrl);
+        audioRef.current = audio;
+        audio.onplay = () => setSpeaking(true);
+        audio.onended = () => { setSpeaking(false); proceed(); };
+        audio.onerror = () => { setSpeaking(false); proceed(); };
+        await audio.play();   // rejects if the file is missing → caught below
+        return;
+      } catch (e) {
+        if (tokenRef.current !== myToken) return;
+        // fall through to generated voice
+      }
+    }
+
+    if (!text) { setSpeaking(false); fixedDelay(); return; }
+
+    // ── HD path: Kokoro neural voice generated in-browser (lazy, cached) ──
     if (hdRef.current) {
       try {
         const { synthKokoro } = await import('../../lessons/kokoroVoice');
@@ -161,7 +184,7 @@ const LessonPlayer = ({ lesson, onClose }) => {
   }, [nextOrStop]);
 
   // Re-run whenever the step, auto, voice, or HD toggle changes.
-  useEffect(() => { speakStep(step?.speech); return clearAdvance;
+  useEffect(() => { speakStep(step); return clearAdvance;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idx, auto, voiceOn, hd]);
 
@@ -235,9 +258,11 @@ const LessonPlayer = ({ lesson, onClose }) => {
         <button onClick={() => setVoiceOn(v => !v)} style={btn(voiceOn ? 'on' : 'off')}>
           {voiceOn ? <><Volume2 size={15} /> Voice on</> : <><VolumeX size={15} /> Voice off</>}
         </button>
-        <button onClick={toggleHd} disabled={!voiceOn} style={btn(hd ? 'hd' : 'ghost', !voiceOn)} title="Higher-quality neural voice (downloads once)">
-          ✨ HD voice: {hd ? 'on' : 'off'}
-        </button>
+        {!hasPregenAudio && (
+          <button onClick={toggleHd} disabled={!voiceOn} style={btn(hd ? 'hd' : 'ghost', !voiceOn)} title="Higher-quality neural voice (downloads once)">
+            ✨ HD voice: {hd ? 'on' : 'off'}
+          </button>
+        )}
       </div>
 
       <style>{`@keyframes lp-pulse{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.25)}}@keyframes lp-spin{to{transform:rotate(360deg)}}`}</style>
