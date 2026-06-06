@@ -170,11 +170,12 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     finishQuizRef,
   });
 
-  // ── Quiz draft persistence (survive accidental window close) ──
+  // ── Quiz draft persistence — timer keeps running even when window is closed ──
   const draftKey = user?.uid ? `quiz_draft_${user.uid}` : null;
   const today = new Date().toLocaleDateString('en-CA');
 
-  // Save draft whenever quiz is in progress
+  // Save draft on every meaningful state change while quiz is running.
+  // We record savedAt so on return we can compute elapsed time precisely.
   useEffect(() => {
     if (step !== 'quiz' || !draftKey || questions.length === 0) return;
     const draft = {
@@ -195,10 +196,14 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     try { localStorage.setItem(draftKey, JSON.stringify(draft)); } catch {}
   }, [step, currentIdx, score, userAnswers, answerResults, shuffledOptions, subAnswers, timeLeft]);
 
-  // Clear draft when quiz finishes
+  // Clear draft when quiz finishes (normally or abandoned).
   const clearDraft = () => { if (draftKey) try { localStorage.removeItem(draftKey); } catch {} };
 
-  // Restore draft on mount (only if same day)
+  // On mount: check for an in-progress draft from today.
+  // Fast-forward the timer: each question that would have timed out while the
+  // window was closed is marked as wrong (0 points). If ALL questions expired,
+  // auto-submit the quiz right away. Otherwise resume at the right question
+  // with the correct remaining time.
   const [restoredDraft, setRestoredDraft] = useState(null);
   useEffect(() => {
     if (!draftKey) return;
@@ -207,7 +212,35 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       if (!raw) return;
       const draft = JSON.parse(raw);
       if (draft.date !== today) { localStorage.removeItem(draftKey); return; }
-      setRestoredDraft(draft);
+
+      // How many seconds elapsed since the window was closed?
+      let elapsed = Math.max(0, (Date.now() - (draft.savedAt || Date.now())) / 1000);
+
+      // Fast-forward: burn through questions whose time has expired.
+      let idx = draft.currentIdx;
+      let qTimeLeft = draft.timeLeft || 0;
+      const ua = [...(draft.userAnswers || [])];
+      const ar = [...(draft.answerResults || [])];
+
+      while (elapsed > 0 && idx < draft.questions.length) {
+        if (elapsed >= qTimeLeft) {
+          // This question timed out while away — mark wrong if not yet answered.
+          if (ua[idx] === null || ua[idx] === undefined) {
+            ua[idx] = '__timeout__';
+            ar[idx] = { correct: false, pointsEarned: 0, timedOut: true };
+          }
+          elapsed -= qTimeLeft;
+          idx++;
+          // Next question gets its full time limit.
+          qTimeLeft = draft.questions[idx]?.timeLimit || 30;
+        } else {
+          qTimeLeft -= elapsed;
+          elapsed = 0;
+        }
+      }
+
+      const allExpired = idx >= draft.questions.length;
+      setRestoredDraft({ ...draft, currentIdx: idx, userAnswers: ua, answerResults: ar, timeLeft: Math.floor(qTimeLeft), allExpired });
     } catch {}
   }, [draftKey]);
 
@@ -1650,45 +1683,45 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
           >
             <AnimatePresence mode="wait">
-              {step === 'start' && restoredDraft && (
-                <motion.div
-                  initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }}
-                  style={{ margin: '16px 16px 0', padding: '14px 18px', borderRadius: '16px', background: 'linear-gradient(135deg,#faf5ff,#f3f0ff)', border: '1.5px solid #c4b5fd', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap' }}>
-                  <div>
-                    <div style={{ fontWeight: 800, fontSize: '0.92rem', color: '#5b21b6' }}>📋 진행 중인 테스트가 있어요</div>
-                    <div style={{ fontSize: '0.8rem', color: '#7c3aed', marginTop: '2px' }}>
-                      {restoredDraft.currentIdx + 1}번 문제까지 진행됨 · {restoredDraft.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Sprint'}
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '8px' }}>
-                    <button onClick={() => {
-                      const d = restoredDraft;
-                      setChallengeType(d.challengeType);
-                      setCurrentSessionId(d.currentSessionId);
-                      setCalcSessionMeta(d.calcSessionMeta);
-                      setQuestions(d.questions);
-                      setCurrentIdx(d.currentIdx);
-                      setScore(d.score);
-                      setUserAnswers(d.userAnswers);
-                      setAnswerResults(d.answerResults);
-                      setShuffledOptions(d.shuffledOptions || []);
-                      setSubAnswers(d.subAnswers || {});
-                      // Adjust timeLeft for time elapsed while window was closed
-                      const elapsed = Math.floor((Date.now() - (d.savedAt || Date.now())) / 1000);
-                      setTimeLeft(Math.max(0, (d.timeLeft || 0) - elapsed));
-                      quizStartTimeRef.current = Date.now();
-                      setStep('quiz');
-                      if (setIsLocked) setIsLocked(true);
-                      setRestoredDraft(null);
-                    }} style={{ padding: '8px 16px', borderRadius: '10px', background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.83rem', border: 'none', cursor: 'pointer' }}>
-                      이어하기
-                    </button>
-                    <button onClick={() => { clearDraft(); setRestoredDraft(null); }} style={{ padding: '8px 12px', borderRadius: '10px', background: '#fff', color: '#94a3b8', fontWeight: 700, fontSize: '0.83rem', border: '1px solid #e2e8f0', cursor: 'pointer' }}>
-                      새로 시작
-                    </button>
-                  </div>
-                </motion.div>
-              )}
+              {step === 'start' && restoredDraft && (() => {
+                // Auto-resume: restore state and jump straight back into quiz.
+                // This runs once after mount when a draft is found.
+                const d = restoredDraft;
+                if (d.allExpired) {
+                  // All questions timed out — auto-submit as abandoned/zero.
+                  clearDraft();
+                  setRestoredDraft(null);
+                  // Kick off finishQuiz after state settles via a tiny timeout.
+                  setChallengeType(d.challengeType);
+                  setCurrentSessionId(d.currentSessionId);
+                  setCalcSessionMeta(d.calcSessionMeta);
+                  setQuestions(d.questions);
+                  setUserAnswers(d.userAnswers);
+                  setAnswerResults(d.answerResults);
+                  setScore(d.score);
+                  setTimeout(() => {
+                    finishQuizRef.current?.(true); // isAbandoned=true
+                  }, 100);
+                } else {
+                  // Resume mid-quiz at the fast-forwarded question + time.
+                  setChallengeType(d.challengeType);
+                  setCurrentSessionId(d.currentSessionId);
+                  setCalcSessionMeta(d.calcSessionMeta);
+                  setQuestions(d.questions);
+                  setCurrentIdx(d.currentIdx);
+                  setScore(d.score);
+                  setUserAnswers(d.userAnswers);
+                  setAnswerResults(d.answerResults);
+                  setShuffledOptions(d.shuffledOptions || []);
+                  setSubAnswers(d.subAnswers || {});
+                  setTimeLeft(d.timeLeft);
+                  quizStartTimeRef.current = Date.now();
+                  setStep('quiz');
+                  if (setIsLocked) setIsLocked(true);
+                  setRestoredDraft(null);
+                }
+                return null;
+              })()}
               {step === 'start' && (
                 <ChallengeStartView
                   key="start"
