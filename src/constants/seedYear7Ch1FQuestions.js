@@ -11,15 +11,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Remember the order of operations: multiplication comes before subtraction.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 뺄셈보다 곱셈을 먼저 계산해야 합니다.',
+        explanation: 'Following the order of operations, multiplication must be performed before subtraction.',
         workingOut: '4 \\times 7 = 28'
       },
       {
-        explanation: '곱셈 결과에서 5를 뺍니다.',
+        explanation: 'Subtract 5 from the multiplication result.',
         workingOut: '28 - 5 = 23'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 23\\)'
       }
     ],
@@ -36,15 +36,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Remember the order of operations: calculations inside parentheses are done first.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 괄호 안의 뺄셈을 먼저 계산합니다.',
+        explanation: 'Following the order of operations, the subtraction inside the parentheses is performed first.',
         workingOut: '7 - 5 = 2'
       },
       {
-        explanation: '그 결과에 4를 곱합니다.',
+        explanation: 'Multiply that result by 4.',
         workingOut: '4 \\times 2 = 8'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 8\\)'
       }
     ],
@@ -61,15 +61,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Remember the order of operations: multiplication comes before addition.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 덧셈보다 곱셈을 먼저 계산해야 합니다.',
+        explanation: 'Following the order of operations, multiplication must be performed before addition.',
         workingOut: '7 \\times 4 = 28'
       },
       {
-        explanation: '곱셈 결과에 6을 더합니다.',
+        explanation: 'Add 6 to the multiplication result.',
         workingOut: '28 + 6 = 34'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 34\\)'
       }
     ],
@@ -86,15 +86,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Remember the order of operations: calculations inside parentheses are done first.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 괄호 안의 덧셈을 먼저 계산합니다.',
+        explanation: 'Following the order of operations, the addition inside the parentheses is performed first.',
         workingOut: '4 + 6 = 10'
       },
       {
-        explanation: '그 결과에 7을 곱합니다.',
+        explanation: 'Multiply that result by 7.',
         workingOut: '7 \\times 10 = 70'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 70\\)'
       }
     ],
@@ -111,15 +111,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Calculate the sum inside the parentheses first.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 괄호 안의 덧셈을 가장 먼저 계산합니다.',
+        explanation: 'Following the order of operations, the addition inside the parentheses is performed first.',
         workingOut: '3 + 4 = 7'
       },
       {
-        explanation: '괄호 앞의 12와 덧셈 결과를 곱합니다.',
+        explanation: 'Multiply 12 by the addition result.',
         workingOut: '12 \\times 7 = 84'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 84\\)'
       }
     ],
@@ -136,15 +136,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Multiplication is always performed before addition unless there are parentheses.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 덧셈보다 곱셈을 먼저 계산해야 합니다.',
+        explanation: 'Following the order of operations, multiplication must be performed before addition.',
         workingOut: '3 \\times 8 = 24'
       },
       {
-        explanation: '15에 곱셈 결과를 더합니다.',
+        explanation: 'Add the multiplication result to 15.',
         workingOut: '15 + 24 = 39'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 39\\)'
       }
     ],
@@ -161,15 +161,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Calculations inside parentheses are done first.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 괄호 안의 덧셈을 가장 먼저 계산합니다.',
+        explanation: 'Following the order of operations, the addition inside the parentheses is performed first.',
         workingOut: '15 + 3 = 18'
       },
       {
-        explanation: '그 결과에 8을 곱합니다.',
+        explanation: 'Multiply that result by 8.',
         workingOut: '18 \\times 8 = 144'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 144\\)'
       }
     ],
@@ -186,15 +186,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Multiplication is performed before subtraction.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 뺄셈보다 곱셈을 먼저 계산해야 합니다.',
+        explanation: 'Following the order of operations, multiplication must be performed before subtraction.',
         workingOut: '7 \\times 3 = 21'
       },
       {
-        explanation: '25에서 곱셈 결과를 뺍니다.',
+        explanation: 'Subtract the multiplication result from 25.',
         workingOut: '25 - 21 = 4'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 4\\)'
       }
     ],
@@ -211,15 +211,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Calculations inside parentheses are done first.',
     solutionSteps: [
       {
-        explanation: '사칙연산의 순서에 따라 괄호 안의 뺄셈을 가장 먼저 계산합니다.',
+        explanation: 'Following the order of operations, the subtraction inside the parentheses is performed first.',
         workingOut: '25 - 7 = 18'
       },
       {
-        explanation: '그 결과에 3을 곱합니다.',
+        explanation: 'Multiply that result by 3.',
         workingOut: '18 \\times 3 = 54'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 54\\)'
       }
     ],
@@ -238,15 +238,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Notice that 63 is a common factor. Use the distributive law: \\(a \\times c + b \\times c = (a + b) \\times c\\)',
     solutionSteps: [
       {
-        explanation: '분배법칙을 역으로 적용하여 공통으로 곱해진 63으로 두 항을 묶습니다.',
+        explanation: 'Apply the distributive law in reverse to factor out the common multiplier, 63.',
         workingOut: '7 \\times 63 + 3 \\times 63 = (7 + 3) \\times 63'
       },
       {
-        explanation: '괄호 안의 7과 3을 더하면 10이 되어 계산이 아주 쉬워집니다.',
+        explanation: 'Adding 7 and 3 inside the parentheses gives 10, making the calculation very simple.',
         workingOut: '10 \\times 63 = 630'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 630\\)'
       }
     ],
@@ -263,15 +263,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Notice that 52 is a common factor.',
     solutionSteps: [
       {
-        explanation: '분배법칙을 사용하여 공통으로 곱해진 52로 두 항을 묶습니다.',
+        explanation: 'Use the distributive law to group the terms with the common multiplier, 52.',
         workingOut: '48 \\times 52 + 52 \\times 52 = (48 + 52) \\times 52'
       },
       {
-        explanation: '괄호 안의 48과 52를 더하면 100이 됩니다.',
+        explanation: 'Adding 48 and 52 inside the parentheses gives 100.',
         workingOut: '100 \\times 52 = 5200'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 5200\\)'
       }
     ],
@@ -288,15 +288,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Group the terms by pulling out the common factor of 64.',
     solutionSteps: [
       {
-        explanation: '분배법칙을 사용하여 공통 인수인 64로 묶어줍니다.',
+        explanation: 'Use the distributive law to factor out the common multiplier, 64.',
         workingOut: '18 \\times 64 + 82 \\times 64 = (18 + 82) \\times 64'
       },
       {
-        explanation: '괄호 안을 먼저 더하면 100이 나옵니다.',
+        explanation: 'First add the numbers inside the parentheses to get 100.',
         workingOut: '100 \\times 64 = 6400'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 6400\\)'
       }
     ],
@@ -313,19 +313,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Try splitting 36 into 30 + 6, or note that multiplying by 5 is the same as multiplying by 10 and halving.',
     solutionSteps: [
       {
-        explanation: '분배법칙을 사용하기 위해 36을 계산하기 쉬운 (30 + 6)으로 나눕니다.',
+        explanation: 'To make the calculation easier, split 36 into the sum of 30 and 6 to use the distributive law.',
         workingOut: '36 \\times 5 = (30 + 6) \\times 5'
       },
       {
-        explanation: '분배법칙을 적용하여 5를 30과 6에 각각 곱합니다.',
+        explanation: 'Apply the distributive law by multiplying 5 by 30 and 6 respectively.',
         workingOut: '(30 \\times 5) + (6 \\times 5)'
       },
       {
-        explanation: '두 곱셈의 결과를 더합니다.',
+        explanation: 'Add the results of the two multiplications.',
         workingOut: '150 + 30 = 180'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 180\\)'
       }
     ],
@@ -342,19 +342,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Split 103 into (100 + 3) to use the distributive law.',
     solutionSteps: [
       {
-        explanation: '계산을 쉽게 하기 위해 103을 100과 3의 합으로 나타냅니다.',
+        explanation: 'To make the calculation easier, represent 103 as the sum of 100 and 3.',
         workingOut: '7 \\times 103 = 7 \\times (100 + 3)'
       },
       {
-        explanation: '분배법칙을 적용하여 7을 100과 3에 각각 곱합니다.',
+        explanation: 'Apply the distributive law by multiplying 7 by 100 and 3 respectively.',
         workingOut: '(7 \\times 100) + (7 \\times 3)'
       },
       {
-        explanation: '각각의 결과를 구한 뒤 더해줍니다.',
+        explanation: 'Calculate each part and add them together.',
         workingOut: '700 + 21 = 721'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 721\\)'
       }
     ],
@@ -371,19 +371,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Split 102 into (100 + 2).',
     solutionSteps: [
       {
-        explanation: '102를 계산이 편한 100과 2의 합으로 분리합니다.',
+        explanation: 'Split 102 into the convenient sum of 100 and 2.',
         workingOut: '64 \\times 102 = 64 \\times (100 + 2)'
       },
       {
-        explanation: '분배법칙을 사용하여 64를 괄호 안의 두 수에 각각 곱합니다.',
+        explanation: 'Use the distributive law to multiply 64 by both numbers inside the parentheses.',
         workingOut: '(64 \\times 100) + (64 \\times 2)'
       },
       {
-        explanation: '곱셈을 수행한 후 두 수를 더합니다.',
+        explanation: 'Perform the multiplications and add the two numbers together.',
         workingOut: '6400 + 128 = 6528'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 6528\\)'
       }
     ],
@@ -402,15 +402,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Compare both sides using the distributive law: \\(a \\times (b + c) = a \\times b + a \\times c\\).',
     solutionSteps: [
       {
-        explanation: '분배법칙 \\(a \\times (b + c) = a \\times b + a \\times c\\)를 사용하여 왼쪽 식을 전개합니다.',
+        explanation: 'Expand the left side using the distributive law: \\(a \\times (b + c) = a \\times b + a \\times c\\).',
         workingOut: '13 \\times (8 + \\Box) = 13 \\times 8 + 13 \\times \\Box'
       },
       {
-        explanation: '전개한 왼쪽 식과 주어진 오른쪽 식을 비교합니다.',
+        explanation: 'Compare the expanded left side with the given right side.',
         workingOut: '13 \\times 8 + 13 \\times \\Box = 13 \\times 8 + 13 \\times 6'
       },
       {
-        explanation: '두 식이 같아지려면 네모 안의 수는 6이 되어야 합니다.',
+        explanation: 'For the two equations to be equal, the number in the box must be 6.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 6\\)'
       }
     ],
@@ -427,15 +427,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'What is the common factor being distributed?',
     solutionSteps: [
       {
-        explanation: '왼쪽 식에서 14가 두 항에 공통으로 곱해져 있음을 확인합니다.',
+        explanation: 'Notice that 14 is a common multiplier in both terms on the left side.',
         workingOut: '14 \\times 6 + 14 \\times 9'
       },
       {
-        explanation: '분배법칙을 역으로 적용하여 공통 인수인 14로 식을 묶습니다.',
+        explanation: 'Apply the distributive law in reverse to factor out the common multiplier, 14.',
         workingOut: '14 \\times (6 + 9)'
       },
       {
-        explanation: '오른쪽 식과 비교해보면 네모 안의 수는 14입니다.',
+        explanation: 'Comparing this with the right side, the number in the box is 14.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 14\\)'
       }
     ],
@@ -452,15 +452,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Combine the terms on the right side by pulling out the common factor of 12.',
     solutionSteps: [
       {
-        explanation: '오른쪽 식에 공통으로 곱해진 12를 분배법칙을 이용해 묶어냅니다.',
+        explanation: 'On the right side, factor out the common multiplier 12 using the distributive law.',
         workingOut: '12 \\times 30 + 12 \\times 4 = 12 \\times (30 + 4)'
       },
       {
-        explanation: '괄호 안의 숫자들을 더합니다.',
+        explanation: 'Add the numbers inside the parentheses.',
         workingOut: '30 + 4 = 34'
       },
       {
-        explanation: '따라서 오른쪽 식은 \\(12 \\times 34\\)가 되며, 왼쪽 식과 비교하면 네모는 34입니다.',
+        explanation: 'Therefore, the right side becomes \\(12 \\times 34\\). Comparing this with the left side, the box is 34.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 34\\)'
       }
     ],
@@ -477,15 +477,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Use the distributive law backwards to group the terms on the left side.',
     solutionSteps: [
       {
-        explanation: '왼쪽 식에서 공통 인수인 18을 찾아 분배법칙을 역으로 적용합니다.',
+        explanation: 'Identify the common multiplier 18 on the left side and apply the distributive law in reverse.',
         workingOut: '18 \\times 5 + 18 \\times 7 = 18 \\times (5 + 7)'
       },
       {
-        explanation: '이 결과를 오른쪽 식 \\(\\Box \\times (5 + 7)\\)과 비교합니다.',
+        explanation: 'Compare this result with the right side expression \\(\\Box \\times (5 + 7)\\).',
         workingOut: '18 \\times (5 + 7) = \\Box \\times (5 + 7)'
       },
       {
-        explanation: '두 식이 같으려면 네모 안의 숫자는 18이어야 합니다.',
+        explanation: 'For the two equations to be equal, the number in the box must be 18.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 18\\)'
       }
     ],
@@ -504,19 +504,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Factor out the common multiplier (72) first.',
     solutionSteps: [
       {
-        explanation: '두 항에 공통으로 곱해진 72를 분배법칙을 사용하여 묶어줍니다.',
+        explanation: 'Use the distributive law to factor out the common multiplier, 72.',
         workingOut: '8 \\times 72 - 3 \\times 72 = (8 - 3) \\times 72'
       },
       {
-        explanation: '괄호 안의 뺄셈을 먼저 계산합니다.',
+        explanation: 'Calculate the subtraction inside the parentheses first.',
         workingOut: '(8 - 3) = 5'
       },
       {
-        explanation: '그 결과에 72를 곱합니다.',
+        explanation: 'Multiply that result by 72.',
         workingOut: '5 \\times 72 = 360'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 360\\)'
       }
     ],
@@ -533,15 +533,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Group the terms by factoring out 63.',
     solutionSteps: [
       {
-        explanation: '분배법칙을 적용하여 공통 인수인 63으로 묶어 식을 정리합니다.',
+        explanation: 'Apply the distributive law to factor out the common multiplier, 63, and simplify the expression.',
         workingOut: '145 \\times 63 - 45 \\times 63 = (145 - 45) \\times 63'
       },
       {
-        explanation: '괄호 안의 뺄셈을 계산하면 100이 되어 뒤의 곱셈이 매우 쉬워집니다.',
+        explanation: 'Calculating the subtraction inside the parentheses gives 100, which makes the following multiplication very easy.',
         workingOut: '100 \\times 63 = 6300'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 6300\\)'
       }
     ],
@@ -558,15 +558,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Pull out the common factor of 59.',
     solutionSteps: [
       {
-        explanation: '공통으로 곱해진 59를 묶어 분배법칙을 적용합니다.',
+        explanation: 'Apply the distributive law to factor out the common multiplier, 59.',
         workingOut: '34 \\times 59 - 24 \\times 59 = (34 - 24) \\times 59'
       },
       {
-        explanation: '괄호 안의 뺄셈을 계산하여 10을 만듭니다.',
+        explanation: 'Calculate the subtraction inside the parentheses to get 10.',
         workingOut: '10 \\times 59 = 590'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 590\\)'
       }
     ],
@@ -583,19 +583,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Group the terms by the common factor of 150.',
     solutionSteps: [
       {
-        explanation: '두 항에서 150이 공통으로 곱해져 있으므로 분배법칙으로 묶어냅니다.',
+        explanation: 'Since 150 is a common multiplier in both terms, factor it out using the distributive law.',
         workingOut: '24 \\times 150 - 14 \\times 150 = (24 - 14) \\times 150'
       },
       {
-        explanation: '괄호 안의 뺄셈을 수행합니다.',
+        explanation: 'Perform the subtraction inside the parentheses.',
         workingOut: '(24 - 14) = 10'
       },
       {
-        explanation: '10에 150을 곱하여 최종 결과를 구합니다.',
+        explanation: 'Multiply 10 by 150 to get the final result.',
         workingOut: '10 \\times 150 = 1500'
       },
       {
-        explanation: '최종 답을 구했습니다.',
+        explanation: 'We have found the final answer.',
         workingOut: '\\(\\therefore\\; 1500\\)'
       }
     ],
@@ -614,15 +614,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Apply the distributive law to the left side and compare it with the right side.',
     solutionSteps: [
       {
-        explanation: '왼쪽 식을 분배법칙을 사용하여 전개합니다.',
+        explanation: 'Expand the left side using the distributive law.',
         workingOut: '14 \\times (9 - \\Box) = 14 \\times 9 - 14 \\times \\Box'
       },
       {
-        explanation: '전개된 왼쪽 식을 오른쪽 식과 비교합니다.',
+        explanation: 'Compare the expanded left side with the right side.',
         workingOut: '14 \\times 9 - 14 \\times \\Box = 14 \\times 9 - 14 \\times 4'
       },
       {
-        explanation: '두 식이 동일해야 하므로 네모 안의 수는 4입니다.',
+        explanation: 'Since both sides must be equal, the number in the box is 4.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 4\\)'
       }
     ],
@@ -639,15 +639,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Look for the common factor on the left side.',
     solutionSteps: [
       {
-        explanation: '왼쪽 식의 두 항에 공통으로 16이 곱해져 있습니다. 이를 분배법칙으로 묶어냅니다.',
+        explanation: '16 is a common multiplier in both terms on the left side. Factor it out using the distributive law.',
         workingOut: '16 \\times 9 - 16 \\times 5 = 16 \\times (9 - 5)'
       },
       {
-        explanation: '결과를 오른쪽 식과 비교합니다.',
+        explanation: 'Compare the result with the right side.',
         workingOut: '16 \\times (9 - 5) = \\Box \\times (9 - 5)'
       },
       {
-        explanation: '따라서 네모 안의 수는 16입니다.',
+        explanation: 'Therefore, the number in the box is 16.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 16\\)'
       }
     ],
@@ -664,15 +664,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Use the distributive law on the right side to find what is multiplied by 8.',
     solutionSteps: [
       {
-        explanation: '오른쪽 식에서 공통 인수인 8을 묶어냅니다.',
+        explanation: 'Factor out the common multiplier 8 on the right side.',
         workingOut: '8 \\times 30 - 8 \\times 2 = 8 \\times (30 - 2)'
       },
       {
-        explanation: '괄호 안의 뺄셈을 계산합니다.',
+        explanation: 'Calculate the subtraction inside the parentheses.',
         workingOut: '30 - 2 = 28'
       },
       {
-        explanation: '오른쪽 식은 8 x 28이 되므로, 왼쪽 식과 비교하면 네모는 28입니다.',
+        explanation: 'The equation becomes 8 x 28, so comparing it with the left side, the box is 28.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 28\\)'
       }
     ],
@@ -689,15 +689,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Factor out the 7 on the right side.',
     solutionSteps: [
       {
-        explanation: '오른쪽 식을 분배법칙을 사용하여 7로 묶습니다.',
+        explanation: 'Use the distributive law to factor out 7 on the right side.',
         workingOut: '7 \\times 100 - 7 \\times 3 = 7 \\times (100 - 3)'
       },
       {
-        explanation: '괄호 안의 값을 뺍니다.',
+        explanation: 'Subtract the values inside the parentheses.',
         workingOut: '100 - 3 = 97'
       },
       {
-        explanation: '식이 7 x 97이 되므로 왼쪽 식과 비교할 때 네모는 97입니다.',
+        explanation: 'The expression becomes 7 x 97, so comparing it with the left side, the box is 97.',
         workingOut: '\\(\\therefore\\; \\text{Box} = 97\\)'
       }
     ],
@@ -716,15 +716,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Subtract the number of passengers who leave, and add the number who get on.',
     solutionSteps: [
       {
-        explanation: '처음 기차에 있던 승객 수에서 내린 승객의 수를 뺍니다.',
+        explanation: 'Subtract the number of passengers who got off from the initial number of passengers on the train.',
         workingOut: '45 - 13 = 32'
       },
       {
-        explanation: '그 다음, 새로 탑승한 승객의 수를 더해줍니다.',
+        explanation: 'Next, add the number of newly boarded passengers.',
         workingOut: '32 + 9 = 41'
       },
       {
-        explanation: '기차에 남아있는 전체 승객 수를 구했습니다.',
+        explanation: 'We have found the total number of passengers remaining on the train.',
         workingOut: '\\(\\therefore\\; 41 \\text{ passengers}\\)'
       }
     ],
@@ -743,19 +743,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'First find the number of candies in the boxes, then add the loose candies.',
     solutionSteps: [
       {
-        explanation: '상자에 들어있는 사탕의 총 개수를 구하기 위해 상자 수에 상자 당 사탕 수를 곱합니다.',
+        explanation: 'To find the total number of candies in the boxes, multiply the number of boxes by the number of candies per box.',
         workingOut: '\\text{Candies in boxes} = 8 \\times 30'
       },
       {
-        explanation: '8과 3을 곱하고 0을 붙여 계산합니다.',
+        explanation: 'Calculate by multiplying 8 and 3, then appending a zero.',
         workingOut: '8 \\times 30 = 240'
       },
       {
-        explanation: '여기에 상자에 들어있지 않은 낱개 사탕의 수를 더합니다.',
+        explanation: 'Add the number of loose candies to this amount.',
         workingOut: '240 + 45 = 285'
       },
       {
-        explanation: '크리스가 가진 모든 사탕의 총합을 구했습니다.',
+        explanation: 'We have found the total sum of all candies Chris has.',
         workingOut: '\\(\\therefore\\; 285 \\text{ candies}\\)'
       }
     ],
@@ -774,11 +774,11 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Add the number of bracelets Emma and Sophie have.',
     solutionSteps: [
       {
-        explanation: '엠마와 소피가 가진 팔찌의 개수를 단순히 더합니다.',
+        explanation: 'Simply add the number of bracelets Emma and Sophie have.',
         workingOut: '7 + 13 = 20'
       },
       {
-        explanation: '두 사람이 가진 총 팔찌 개수를 구했습니다.',
+        explanation: 'We have found the total number of bracelets they have together.',
         workingOut: '\\(\\therefore\\; 20 \\text{ bracelets}\\)'
       }
     ],
@@ -795,19 +795,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'You can calculate their amounts individually and add them, or use the distributive law: \\(4 \\times 7 + 4 \\times 13 = 4 \\times (7 + 13)\\).',
     solutionSteps: [
       {
-        explanation: '미아와 올리비아가 가진 팔찌의 수는 엠마와 소피가 가진 수의 각각 4배입니다. 이를 수식으로 세웁니다.',
+        explanation: 'Mia and Olivia have 4 times the number of bracelets that Emma and Sophie have, respectively. We can write this as an equation.',
         workingOut: '\\text{Total} = 4 \\times 7 + 4 \\times 13'
       },
       {
-        explanation: '분배법칙을 사용하여 공통 인수인 4로 묶으면 훨씬 계산이 쉽습니다.',
+        explanation: 'Using the distributive law to factor out the common multiplier 4 makes the calculation much easier.',
         workingOut: '= 4 \\times (7 + 13)'
       },
       {
-        explanation: '괄호 안의 덧셈을 먼저 계산합니다 (엠마와 소피의 팔찌 총합).',
+        explanation: 'Calculate the addition inside the parentheses first (the total sum of Emma\'s and Sophie\'s bracelets).',
         workingOut: '= 4 \\times 20'
       },
       {
-        explanation: '4와 20을 곱해 최종 답을 구합니다.',
+        explanation: 'Multiply 4 and 20 to get the final answer.',
         workingOut: '\\(\\therefore\\; 80 \\text{ bracelets}\\)'
       }
     ],
@@ -826,19 +826,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Find the total distance they both run in one day, then multiply by 14.',
     solutionSteps: [
       {
-        explanation: '알렉스와 샘이 하루 동안 뛰는 총 거리를 먼저 구합니다.',
+        explanation: 'First, find the total distance Alex and Sam run in one day.',
         workingOut: '\\text{Distance per day} = 8 + 4 = 12 \\text{ km}'
       },
       {
-        explanation: '14일 동안 뛰므로 하루 총 거리에 14를 곱합니다.',
+        explanation: 'Since they run for 14 days, multiply the total daily distance by 14.',
         workingOut: '\\text{Total distance} = 14 \\times 12'
       },
       {
-        explanation: '두 수를 곱하여 14일 동안의 총 거리를 계산합니다.',
+        explanation: 'Multiply the two numbers to calculate the total distance over 14 days.',
         workingOut: '14 \\times 12 = 168'
       },
       {
-        explanation: '두 사람이 14일 동안 뛴 총 거리를 구했습니다.',
+        explanation: 'We have found the total distance run by both.',
         workingOut: '\\(\\therefore\\; 168 \\text{ km}\\)'
       }
     ],
@@ -855,19 +855,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Find the difference in their daily distance, then multiply by 14.',
     solutionSteps: [
       {
-        explanation: '하루 동안 알렉스가 샘보다 얼마나 더 뛰는지 그 차이를 구합니다.',
+        explanation: 'Find the difference between the distance Alex and Sam run in one day.',
         workingOut: '\\text{Daily difference} = 8 - 4 = 4 \\text{ km}'
       },
       {
-        explanation: '매일 4km씩 더 뛰므로, 14일 동안의 차이를 구하기 위해 14를 곱합니다.',
+        explanation: 'Since they run 4km more each day, multiply by 14 to find the difference over 14 days.',
         workingOut: '\\text{Total difference} = 14 \\times 4'
       },
       {
-        explanation: '14와 4를 곱합니다.',
+        explanation: 'Multiply 14 by 4.',
         workingOut: '14 \\times 4 = 56'
       },
       {
-        explanation: '알렉스가 샘보다 더 뛴 총 거리를 구했습니다.',
+        explanation: 'We have found the extra distance run by Alex.',
         workingOut: '\\(\\therefore\\; 56 \\text{ km}\\)'
       }
     ],
@@ -886,15 +886,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'First find out how many comic books Kevin has, then multiply by 4 to find Brian\'s amount.',
     solutionSteps: [
       {
-        explanation: '먼저 케빈이 가진 만화책의 수를 알아냅니다. 케빈은 로라(15권)보다 8권 적습니다.',
+        explanation: 'First, determine the number of comic books Kevin has. Kevin has 8 fewer than Laura (15).',
         workingOut: '\\text{Kevin} = 15 - 8 = 7'
       },
       {
-        explanation: '브라이언은 케빈이 가진 수의 4배를 가지고 있습니다.',
+        explanation: 'Brian has 4 times the number of comic books Kevin has.',
         workingOut: '\\text{Brian} = 7 \\times 4'
       },
       {
-        explanation: '7에 4를 곱하여 브라이언의 만화책 수를 계산합니다.',
+        explanation: 'Multiply 7 by 4 to calculate Brian\'s number of comic books.',
         workingOut: '\\(\\therefore\\; 28 \\text{ comic books}\\)'
       }
     ],
@@ -907,21 +907,21 @@ export const Y7_CH1F_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'hard',
     timeLimit: 120,
-    question: 'Rachel saves $8 less than Ryan each week, and Mark saves 3 times the amount that Rachel saves each week. Ryan saves $25 each week. How much does Mark save each week?',
+    question: 'Rachel saves \\$8 less than Ryan each week, and Mark saves 3 times the amount that Rachel saves each week. Ryan saves \\$25 each week. How much does Mark save each week?',
     a: '51',
     t: 'Mental strategies and distributive law',
     hint: 'First calculate how much Rachel saves, then multiply that amount by 3.',
     solutionSteps: [
       {
-        explanation: '레이첼이 매주 저축하는 금액을 구합니다. 라이언($25)보다 $8 적습니다.',
+        explanation: 'Find the amount Rachel saves each week. She saves $8 less than Ryan ($25).',
         workingOut: '\\text{Rachel} = 25 - 8 = 17'
       },
       {
-        explanation: '마크는 레이첼이 저축하는 금액의 3배를 저축합니다.',
+        explanation: 'Mark saves 3 times the amount Rachel saves.',
         workingOut: '\\text{Mark} = 17 \\times 3'
       },
       {
-        explanation: '17과 3을 곱하여 마크의 저축액을 구합니다.',
+        explanation: 'Multiply 17 by 3 to find Mark\'s savings.',
         workingOut: '\\(\\therefore\\; \\$51\\)'
       }
     ],
@@ -940,15 +940,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Write the operations in order and calculate.',
     solutionSteps: [
       {
-        explanation: '문장의 내용을 수식으로 바꿉니다. 먼저 8에 4를 곱하고, 그 결과에 9를 더합니다.',
+        explanation: 'Convert the sentence into a mathematical expression. First multiply 8 by 4, and then add 9 to that result.',
         workingOut: '8 \\times 4 + 9'
       },
       {
-        explanation: '곱셈을 먼저 계산합니다.',
+        explanation: 'Perform the multiplication first.',
         workingOut: '32 + 9'
       },
       {
-        explanation: '두 숫자를 더합니다.',
+        explanation: 'Add the two numbers together.',
         workingOut: '\\(\\therefore\\; 41\\)'
       }
     ],
@@ -965,15 +965,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Use parentheses to ensure the addition happens before the multiplication.',
     solutionSteps: [
       {
-        explanation: '덧셈을 먼저 수행해야 하므로 괄호를 사용하여 수식을 만듭니다.',
+        explanation: 'Since the addition must be performed first, use parentheses to form the equation.',
         workingOut: '(8 + 9) \\times 4'
       },
       {
-        explanation: '괄호 안의 덧셈을 계산합니다.',
+        explanation: 'Calculate the addition inside the parentheses.',
         workingOut: '17 \\times 4'
       },
       {
-        explanation: '17에 4를 곱하여 최종 결과를 얻습니다.',
+        explanation: 'Multiply 17 by 4 to get the final result.',
         workingOut: '\\(\\therefore\\; 68\\)'
       }
     ],
@@ -990,15 +990,15 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Use parentheses to ensure the subtraction happens before the multiplication.',
     solutionSteps: [
       {
-        explanation: '뺄셈 결과를 곱셈보다 먼저 얻기 위해 괄호를 사용합니다.',
+        explanation: 'To get the subtraction result before the multiplication, use parentheses.',
         workingOut: '(30 - 13) \\times 3'
       },
       {
-        explanation: '괄호 안의 뺄셈을 계산합니다.',
+        explanation: 'Calculate the subtraction inside the parentheses.',
         workingOut: '17 \\times 3'
       },
       {
-        explanation: '17에 3을 곱합니다.',
+        explanation: 'Multiply 17 by 3.',
         workingOut: '\\(\\therefore\\; 51\\)'
       }
     ],
@@ -1015,19 +1015,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Write the full expression and optionally use the distributive law to make it easier.',
     solutionSteps: [
       {
-        explanation: '문장의 내용을 그대로 수식으로 바꿉니다.',
+        explanation: 'Convert the sentence directly into a mathematical expression.',
         workingOut: '(6 \\times 9) + (6 \\times 4)'
       },
       {
-        explanation: '공통으로 곱해진 6을 이용해 분배법칙을 역으로 적용하면 계산이 훨씬 쉬워집니다.',
+        explanation: 'Applying the distributive law in reverse using the common multiplier 6 makes the calculation much easier.',
         workingOut: '= 6 \\times (9 + 4)'
       },
       {
-        explanation: '괄호 안을 더합니다.',
+        explanation: 'Add the values inside the parentheses.',
         workingOut: '= 6 \\times 13'
       },
       {
-        explanation: '6에 13을 곱하여 결과를 구합니다.',
+        explanation: 'Multiply 6 by 13 to get the result.',
         workingOut: '\\(\\therefore\\; 78\\)'
       }
     ],
@@ -1044,19 +1044,19 @@ export const Y7_CH1F_QUESTIONS = [
     hint: 'Write the expression carefully (A is subtracted from B means B - A). Consider using the distributive law.',
     solutionSteps: [
       {
-        explanation: '문장의 설명에 따라 식을 세웁니다. "~에서 뺀다"에 주의하여 순서를 잡습니다.',
+        explanation: 'Set up the equation according to the sentence. Pay attention to the order when it says "subtracted from".',
         workingOut: '(8 \\times 12) - (8 \\times 4)'
       },
       {
-        explanation: '공통 인수인 8로 묶어 분배법칙을 적용합니다.',
+        explanation: 'Apply the distributive law by factoring out the common multiplier 8.',
         workingOut: '= 8 \\times (12 - 4)'
       },
       {
-        explanation: '괄호 안의 뺄셈을 계산합니다.',
+        explanation: 'Calculate the subtraction inside the parentheses.',
         workingOut: '= 8 \\times 8'
       },
       {
-        explanation: '8과 8을 곱해 최종 결과를 구합니다.',
+        explanation: 'Multiply 8 by 8 to get the final result.',
         workingOut: '\\(\\therefore\\; 64\\)'
       }
     ],
