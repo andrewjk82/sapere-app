@@ -2463,15 +2463,15 @@ const Curriculum = () => {
                     const toggleYear = (year) =>
                       setExpandedSeedYears((prev) => ({ ...prev, [year]: !prev[year] }));
 
-                    const renderChapterCard = (entry, year) => {
+                    const renderTopicCard = (entry, year) => {
                       const count = questionCounts[entry.topicId];
                       return (
                         <div className="sync-card" key={`${entry.chapterId}-${entry.topicId}`} style={{ opacity: count ? 0.45 : 1 }}>
                           <div className="sync-card-info">
                             <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
-                              {(entry.badgeLabel || entry.chapterId).toUpperCase()}
+                              {entry.topicCode || entry.chapterId}
                             </span>
-                            <span className="sync-card-title">{entry.label}</span>
+                            <span className="sync-card-title">{entry.topicTitle || entry.label}</span>
                           </div>
                           <div className="sync-card-actions">
                             {count && <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981', marginRight: '8px' }}>✓ Done</span>}
@@ -2501,18 +2501,31 @@ const Curriculum = () => {
                           ))}
                         </div>
 
-                        {/* Chapter Questions */}
+                        {/* Chapter Questions — Year → Chapter tabs → Topic seeds */}
                         {seedSubTab === 'chapters' && yearOrder.map((year) => {
-                          const registryCards = (byYear[year] || []).map((entry) => renderChapterCard(entry, year));
+                          const yearEntries = byYear[year] || [];
                           const manualCards = manualByYear[year] || [];
-                          const allCards = [...manualCards, ...registryCards];
-                          if (allCards.length === 0) return null;
+                          if (yearEntries.length === 0 && manualCards.length === 0) return null;
 
-                          const doneCount = (byYear[year] || []).filter((entry) => questionCounts[entry.topicId]).length;
+                          // Group registry entries by chapterId
+                          const chapterMap = yearEntries.reduce((acc, entry) => {
+                            if (!acc[entry.chapterId]) acc[entry.chapterId] = { title: entry.chapterTitle, entries: [] };
+                            acc[entry.chapterId].entries.push(entry);
+                            return acc;
+                          }, {});
+                          const chapterIds = Object.keys(chapterMap);
+
+                          const totalSets = yearEntries.length + manualCards.length;
+                          const doneCount = yearEntries.filter(e => questionCounts[e.topicId]).length;
                           const isOpen = expandedSeedYears[year] ?? false;
+
+                          // Selected chapter within this year
+                          const selectedChapterKey = `sel-${year}`;
+                          const selectedChapterId = expandedSeedYears[selectedChapterKey] ?? chapterIds[0];
 
                           return (
                             <div key={year} style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden' }}>
+                              {/* Year header */}
                               <button
                                 onClick={() => toggleYear(year)}
                                 style={{
@@ -2523,15 +2536,73 @@ const Curriculum = () => {
                                 }}
                               >
                                 <span style={{ background: yearColors[year]?.bg, color: '#fff', fontWeight: 900, fontSize: '0.75rem', padding: '4px 12px', borderRadius: '999px', flexShrink: 0 }}>{year}</span>
-                                <span style={{ fontWeight: 700, fontSize: '0.82rem', color: '#475569' }}>{allCards.length} sets</span>
+                                <span style={{ fontWeight: 700, fontSize: '0.82rem', color: '#475569' }}>{totalSets} sets</span>
                                 <span style={{ marginLeft: 'auto', fontSize: '0.72rem', fontWeight: 700, color: doneCount > 0 ? '#10b981' : '#94a3b8' }}>
                                   {doneCount > 0 ? `${doneCount} seeded` : 'not seeded'}
                                 </span>
                                 <span style={{ fontSize: '0.85rem', color: '#94a3b8', flexShrink: 0 }}>{isOpen ? '▲' : '▼'}</span>
                               </button>
+
                               {isOpen && (
-                                <div className="admin-sync-grid" style={{ padding: '16px' }}>
-                                  {allCards}
+                                <div style={{ padding: '12px 16px 16px' }}>
+                                  {/* Manual cards (no chapter grouping) */}
+                                  {manualCards.length > 0 && (
+                                    <div className="admin-sync-grid" style={{ marginBottom: chapterIds.length > 0 ? '12px' : 0 }}>
+                                      {manualCards}
+                                    </div>
+                                  )}
+
+                                  {/* Chapter pill tabs */}
+                                  {chapterIds.length > 0 && (
+                                    <>
+                                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px' }}>
+                                        {chapterIds.map(cid => {
+                                          const chEntries = chapterMap[cid].entries;
+                                          const chDone = chEntries.filter(e => questionCounts[e.topicId]).length;
+                                          const isSelected = selectedChapterId === cid;
+                                          // Extract short chapter label e.g. "Ch3" from chapterId "y11a-3"
+                                          const shortLabel = chapterMap[cid].title.match(/Chapter\s+(\S+)/i)?.[1]
+                                            ? `Ch${chapterMap[cid].title.match(/Chapter\s+(\S+)/i)[1]}`
+                                            : cid;
+                                          return (
+                                            <button
+                                              key={cid}
+                                              onClick={() => setExpandedSeedYears(prev => ({ ...prev, [selectedChapterKey]: cid }))}
+                                              style={{
+                                                padding: '5px 14px', borderRadius: '999px', border: 'none', cursor: 'pointer',
+                                                fontSize: '0.74rem', fontWeight: 700,
+                                                background: isSelected ? yearColors[year]?.bg : '#f1f5f9',
+                                                color: isSelected ? '#fff' : '#475569',
+                                                position: 'relative',
+                                              }}
+                                            >
+                                              {shortLabel}
+                                              {chDone > 0 && (
+                                                <span style={{
+                                                  position: 'absolute', top: '-4px', right: '-4px',
+                                                  background: '#10b981', color: '#fff',
+                                                  fontSize: '0.6rem', fontWeight: 900,
+                                                  borderRadius: '999px', padding: '1px 4px', lineHeight: 1.4,
+                                                }}>✓</span>
+                                              )}
+                                            </button>
+                                          );
+                                        })}
+                                      </div>
+
+                                      {/* Selected chapter title */}
+                                      {selectedChapterId && chapterMap[selectedChapterId] && (
+                                        <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b', marginBottom: '10px', paddingLeft: '2px' }}>
+                                          {chapterMap[selectedChapterId].title}
+                                        </div>
+                                      )}
+
+                                      {/* Topic seed cards for selected chapter */}
+                                      <div className="admin-sync-grid">
+                                        {(chapterMap[selectedChapterId]?.entries || []).map(entry => renderTopicCard(entry, year))}
+                                      </div>
+                                    </>
+                                  )}
                                 </div>
                               )}
                             </div>
