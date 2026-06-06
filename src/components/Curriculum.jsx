@@ -164,6 +164,8 @@ import { Y7_CH2I_QUESTIONS } from '../constants/seedYear7Ch2IQuestions.js';
 import { Y7_CH2J_QUESTIONS } from '../constants/seedYear7Ch2JQuestions.js';
 import { Y7_CH6A_QUESTIONS } from '../constants/seedYear7Ch6AQuestions.js';
 import { Y7_CH6B_QUESTIONS } from '../constants/seedYear7Ch6BQuestions.js';
+import { Y7_CH6C_QUESTIONS } from '../constants/seedYear7Ch6CQuestions.js';
+import { Y7_CH6D_QUESTIONS } from '../constants/seedYear7Ch6DQuestions.js';
 import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from '../constants/seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from '../constants/seedYear7Ch1FQuestions.js';
@@ -184,6 +186,7 @@ import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Ques
 import { ASCHAM_2020_QUESTIONS } from '../constants/seedAscham2020Questions.js';
 import { BARKER_2020_QUESTIONS } from '../constants/seedBarker2020Questions.js';
 import { BAULKHAM_2020_QUESTIONS } from '../constants/seedBaulkham2020Questions.js';
+import { BLACKTOWN_BOYS_2020_QUESTIONS } from '../constants/seedBlacktownBoys2020Questions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -523,6 +526,8 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3h', topicCode: '3H', topicTitle: 'Chapter review', year: 'Year 7', seed: Y7_CH3H_QUESTIONS, label: 'Y7 Ch3 · Chapter review' },
   { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6a', topicCode: '6A', topicTitle: 'Division in algebra', year: 'Year 7', seed: Y7_CH6A_QUESTIONS, label: 'Y7 Ch6 · 6A Division in algebra' },
   { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6b', topicCode: '6B', topicTitle: 'Multiplication and division in algebra', year: 'Year 7', seed: Y7_CH6B_QUESTIONS, label: 'Y7 Ch6 · 6B Multiplication and division in algebra' },
+  { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6c', topicCode: '6C', topicTitle: 'Dividing and cancelling', year: 'Year 7', seed: Y7_CH6C_QUESTIONS, label: 'Y7 Ch6 · 6C Dividing and cancelling' },
+  { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6d', topicCode: '6D', topicTitle: 'Revision', year: 'Year 7', seed: Y7_CH6D_QUESTIONS, label: 'Y7 Ch6 · 6D Revision' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23a', topicCode: '23A', topicTitle: 'Algebraic expressions', year: 'Year 7', seed: Y7_CH23A_QUESTIONS, label: 'Y7 Ch23 · Algebraic expressions' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23b', topicCode: '23B', topicTitle: 'Like terms and unlike terms', year: 'Year 7', seed: Y7_CH23B_QUESTIONS, label: 'Y7 Ch23 · Like terms and unlike terms' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23c', topicCode: '23C', topicTitle: 'Simplifying algebraic expressions', year: 'Year 7', seed: Y7_CH23C_QUESTIONS, label: 'Y7 Ch23 · Simplifying algebraic expressions' },
@@ -539,6 +544,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'exam:asc-2020', badgeLabel: 'Y12 EXAM', examPaper: 'asc-2020', chapterTitle: 'Ascham 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Ascham 2020 Trial Exam', year: 'Year 12', seed: ASCHAM_2020_QUESTIONS, label: 'Y12 · Ascham 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:bar-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bar-2020', chapterTitle: 'Barker 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Barker 2020 Trial Exam', year: 'Year 12', seed: BARKER_2020_QUESTIONS, label: 'Y12 · Barker 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:baulko-2020', badgeLabel: 'Y12 EXAM', examPaper: 'baulko-2020', chapterTitle: 'Baulkham Hills 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Baulkham Hills 2020 Trial Exam', year: 'Year 12', seed: BAULKHAM_2020_QUESTIONS, label: 'Y12 · Baulkham Hills 2020 HSC Trial (Advanced)' },
+  { chapterId: 'exam:bbhs-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bbhs-2020', chapterTitle: 'Blacktown Boys 2020 HSC Trial', topicId: 'y12a-exam-bbhs', topicCode: 'EXAM', topicTitle: 'Blacktown Boys 2020 Trial Exam', year: 'Year 12', seed: BLACKTOWN_BOYS_2020_QUESTIONS, label: 'Y12 · Blacktown Boys 2020 HSC Trial (Advanced)' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5A', topicCode: '5A', topicTitle: 'Review of exponential functions base e', year: 'Year 12', seed: Y12A_CH5A_QUESTIONS, label: 'Y12 Ch5 · 5A Review of exponential functions base e' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5B', topicCode: '5B', topicTitle: 'Differentiation of exponential functions', year: 'Year 12', seed: Y12A_CH5B_QUESTIONS, label: 'Y12 Ch5 · 5B Differentiation of exponential functions' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5C', topicCode: '5C', topicTitle: 'Applications of differentiation', year: 'Year 12', seed: Y12A_CH5C_QUESTIONS, label: 'Y12 Ch5 · 5C Applications of differentiation' },
