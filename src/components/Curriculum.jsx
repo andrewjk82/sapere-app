@@ -164,6 +164,7 @@ import { Y7_CH2I_QUESTIONS } from '../constants/seedYear7Ch2IQuestions.js';
 import { Y7_CH2J_QUESTIONS } from '../constants/seedYear7Ch2JQuestions.js';
 import { Y7_CH7B_QUESTIONS } from '../constants/seedYear7Ch7BQuestions.js';
 import { Y7_CH7C_QUESTIONS } from '../constants/seedYear7Ch7CQuestions.js';
+import { Y7_CH7D_QUESTIONS } from '../constants/seedYear7Ch7DQuestions.js';
 import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from '../constants/seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from '../constants/seedYear7Ch1FQuestions.js';
@@ -523,6 +524,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3h', topicCode: '3H', topicTitle: 'Chapter review', year: 'Year 7', seed: Y7_CH3H_QUESTIONS, label: 'Y7 Ch3 · Chapter review' },
   { chapterId: 'y7-7', chapterTitle: 'Chapter 7: Decimals', topicId: 'y7-7b', topicCode: '7B', topicTitle: 'Multiplication and division', year: 'Year 7', seed: Y7_CH7B_QUESTIONS, label: 'Y7 Ch7 · 7B Multiplication and division' },
   { chapterId: 'y7-7', chapterTitle: 'Chapter 7: Decimals', topicId: 'y7-7c', topicCode: '7C', topicTitle: 'Dividing and cancelling', year: 'Year 7', seed: Y7_CH7C_QUESTIONS, label: 'Y7 Ch7 · 7C Dividing and cancelling' },
+  { chapterId: 'y7-7', chapterTitle: 'Chapter 7: Decimals', topicId: 'y7-7d', topicCode: '7D', topicTitle: 'Revision', year: 'Year 7', seed: Y7_CH7D_QUESTIONS, label: 'Y7 Ch7 · 7D Revision' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23a', topicCode: '23A', topicTitle: 'Algebraic expressions', year: 'Year 7', seed: Y7_CH23A_QUESTIONS, label: 'Y7 Ch23 · Algebraic expressions' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23b', topicCode: '23B', topicTitle: 'Like terms and unlike terms', year: 'Year 7', seed: Y7_CH23B_QUESTIONS, label: 'Y7 Ch23 · Like terms and unlike terms' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23c', topicCode: '23C', topicTitle: 'Simplifying algebraic expressions', year: 'Year 7', seed: Y7_CH23C_QUESTIONS, label: 'Y7 Ch23 · Simplifying algebraic expressions' },

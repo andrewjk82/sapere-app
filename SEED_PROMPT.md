@@ -10,18 +10,18 @@
 
 ```
 학년:        Year 7
-챕터 번호:   1
+챕터 번호:   7
 chapterId:   y7-7
-서브토픽 ID: y7-7c
-토픽 코드:   7C
-서브토픽 제목: Dividing and cancelling
+서브토픽 ID: y7-7d
+토픽 코드:   7D
+서브토픽 제목: Revision
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
 Q1 ~ Q6  → easy
-Q7 ~ Q13 → medium
+Q7 ~ Q12 → medium
 None  hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
@@ -46,7 +46,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1 ~ Q10
+  Q1 ~ Q12
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
