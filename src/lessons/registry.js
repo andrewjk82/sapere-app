@@ -408,25 +408,18 @@ export const buildRadianLesson = ({ audioBase = null } = {}) => {
       { x: 0, y: R + 0.32, text: 'one full turn', color: '#b45309', size: 12, delay: 1.0 },
     ],
   });
-  // Special right triangle helper.
-  // verts: [[x0,y0],[x1,y1],[x2,y2]] going CCW; right angle is at verts[1]=[rx,ry]
-  const triangle = (verts, sides, angles) => {
-    const [rx, ry] = verts[1]; // right-angle vertex (bottom-right)
-    const d = 0.11; // marker size in data units
-    return {
-      type: 'graph', showAxes: false, width: 380, height: 320,
-      xMin: -0.5, xMax: 2.0, yMin: -0.5, yMax: 2.1,
-      lines: [
-        { from: verts[0], to: verts[1], color: '#7c3aed', width: 3, label: sides[0].t, labelAt: sides[0].at, delay: 0.4 },
-        { from: verts[1], to: verts[2], color: '#7c3aed', width: 3, label: sides[1].t, labelAt: sides[1].at, delay: 0.6 },
-        { from: verts[2], to: verts[0], color: '#7c3aed', width: 3, label: sides[2].t, labelAt: sides[2].at, delay: 0.8 },
-        // right-angle marker — goes LEFT then UP (inside the triangle)
-        { from: [rx - d, ry], to: [rx - d, ry + d], color: '#7c3aed', width: 1.8, delay: 0.95 },
-        { from: [rx - d, ry + d], to: [rx, ry + d], color: '#7c3aed', width: 1.8, delay: 0.95 },
-      ],
-      texts: angles.map((a, i) => ({ x: a.at[0], y: a.at[1], text: a.t, color: '#1e1b4b', size: 14, delay: 1.0 + i * 0.1 })),
-    };
-  };
+  // Special right triangle helper — uses dedicated SpecialTriangle renderer.
+  // verts: [A, B, C] where B is the right-angle vertex (bottom-right).
+  // sideLabels: [bottom, right, hypotenuse]
+  // angleLabels: [A-angle, B-angle=90°, C-angle]
+  const triangle = (verts, sideLabels, angleLabels) => ({
+    type: 'triangle',
+    verts,
+    sideLabels,
+    angleLabels,
+    width: 300,
+    height: 260,
+  });
 
   const steps = [
     {
@@ -502,13 +495,13 @@ export const buildRadianLesson = ({ audioBase = null } = {}) => {
       board: [
         triangle(
           [[0, 0], [1, 0], [1, Math.sqrt(3)]],
-          [{ t: '1', at: [0.5, -0.22] }, { t: '√3', at: [1.14, Math.sqrt(3) / 2] }, { t: '2', at: [0.32, Math.sqrt(3) / 2 + 0.16] }],
-          [{ t: '60°', at: [0.23, 0.20] }, { t: '90°', at: [0.76, 0.20] }, { t: '30°', at: [1.66, 1.22] }],
+          ['1', '√3', '2'],
+          ['60°', '90°', '30°'],
         ),
         triangle(
           [[0, 0], [1, 0], [1, 1]],
-          [{ t: '1', at: [0.5, -0.22] }, { t: '1', at: [1.14, 0.5] }, { t: '√2', at: [0.32, 0.58] }],
-          [{ t: '45°', at: [1.23, 0.17] }, { t: '90°', at: [1.76, 0.20] }, { t: '45°', at: [1.66, 0.66] }],
+          ['1', '1', '√2'],
+          ['45°', '90°', '45°'],
         ),
       ],
     },

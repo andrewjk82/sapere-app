@@ -110,6 +110,70 @@ const Tracer = ({ fn, from, to, dur = 2600, label, approach, sx, sy, x0, y0, yMi
   );
 };
 
+// Dedicated right-triangle SVG — auto-computes all label positions from geometry.
+const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height = 260 }) => {
+  const pad = 48;
+  const [A, B, C] = verts; // A=bottom-left (acute), B=bottom-right (right angle), C=top-right (acute)
+
+  // Scale triangle to fill the SVG
+  const xs = verts.map(v => v[0]), ys = verts.map(v => v[1]);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const scale = Math.min((width - 2 * pad) / (maxX - minX), (height - 2 * pad) / (maxY - minY));
+  const sx = x => pad + (x - minX) * scale;
+  const sy = y => height - pad - (y - minY) * scale;
+  const pt = ([x, y]) => [sx(x), sy(y)];
+  const [pA, pB, pC] = [A, B, C].map(pt);
+
+  // Centroid in SVG space
+  const G = [(pA[0] + pB[0] + pC[0]) / 3, (pA[1] + pB[1] + pC[1]) / 3];
+
+  // Angle label: move each vertex 30% toward centroid
+  const toward = ([px, py], frac) => [px + (G[0] - px) * frac, py + (G[1] - py) * frac];
+  const aPos = toward(pA, 0.30);
+  const bPos = toward(pB, 0.28);
+  const cPos = toward(pC, 0.32);
+
+  // Side label: midpoint of each side + perpendicular offset away from interior
+  const sidePos = ([P1, P2], d = 20) => {
+    const mid = [(P1[0] + P2[0]) / 2, (P1[1] + P2[1]) / 2];
+    const dx = P2[0] - P1[0], dy = P2[1] - P1[1], len = Math.hypot(dx, dy) || 1;
+    let nx = -dy / len, ny = dx / len;
+    // flip if pointing toward centroid
+    if (nx * (G[0] - mid[0]) + ny * (G[1] - mid[1]) > 0) { nx = -nx; ny = -ny; }
+    return [mid[0] + nx * d, mid[1] + ny * d];
+  };
+  const sAB = sidePos([pA, pB]); // bottom
+  const sBC = sidePos([pB, pC]); // right
+  const sCA = sidePos([pC, pA]); // hypotenuse
+
+  // Right-angle marker at B — small square inside the triangle
+  const rm = 10;
+  const rmPts = `${pB[0] - rm},${pB[1]} ${pB[0] - rm},${pB[1] - rm} ${pB[0]},${pB[1] - rm}`;
+  const polyPts = [pA, pB, pC].map(([x, y]) => `${x},${y}`).join(' ');
+
+  return (
+    <svg width={width} height={height} style={{ display: 'block', margin: '0 auto', overflow: 'visible' }}>
+      <motion.polygon points={polyPts} fill="rgba(124,58,237,0.07)" stroke="#7c3aed" strokeWidth="3" strokeLinejoin="round"
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
+      <motion.polyline points={rmPts} fill="none" stroke="#7c3aed" strokeWidth="2" strokeLinejoin="round"
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} />
+      {[[sAB, sideLabels[0]], [sBC, sideLabels[1]], [sCA, sideLabels[2]]].map(([pos, label], i) => (
+        <motion.text key={'s' + i} x={pos[0]} y={pos[1]} textAnchor="middle" dominantBaseline="middle"
+          fontSize="15" fontWeight="800" fill="#7c3aed"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.55 + i * 0.1 }}>{label}</motion.text>
+      ))}
+      {[[aPos, angleLabels[0]], [bPos, angleLabels[1]], [cPos, angleLabels[2]]].map(([pos, label], i) => (
+        <motion.text key={'a' + i} x={pos[0]} y={pos[1]} textAnchor="middle" dominantBaseline="middle"
+          fontSize="13" fontWeight="700" fill="#1e1b4b"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.85 + i * 0.1 }}>{label}</motion.text>
+      ))}
+    </svg>
+  );
+};
+
 // Function graph (SVG) with drawn-on animations: axes fade in, curves draw
 // themselves, asymptotes sweep, points pop, and tracers demonstrate limits.
 const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], asymptotes = [], points = [], traces = [], segments = [], bands = [], axisBars = [], circles = [], lines = [], texts = [], showAxes = true, width = 480, height = 340 }) => {
@@ -341,6 +405,7 @@ const itemVariants = {
 const BoardItem = ({ item }) => {
   let inner = null;
   if (item.type === 'placeValueTable') inner = <PlaceValueTable columns={item.columns} />;
+  else if (item.type === 'triangle') inner = <SpecialTriangle {...item} />;
   else if (item.type === 'graph') inner = <div style={{ display: 'flex', justifyContent: 'center' }}><FunctionGraph {...item} /></div>;
   else if (item.type === 'valueTable') inner = <ValueTable rows={item.rows} />;
   else if (item.type === 'math') inner = (
