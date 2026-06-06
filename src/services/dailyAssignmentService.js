@@ -453,6 +453,10 @@ export const createDailyAssignment = async ({
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
   const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid);
 
+  // Record the current question-bank version so we can detect future edits.
+  const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
+  const questionsVersion = syncMetaSnap?.exists() ? (syncMetaSnap.data().version || 0) : 0;
+
   const assignment = {
     date: dateKey,
     status: "open",
@@ -460,6 +464,7 @@ export const createDailyAssignment = async ({
     questionCount: questions.length,
     requestedQuestionCount: resolvedQuestionCount,
     curriculumSignature: getCurriculumSignature(studentProfile),
+    questionsVersion,
     questionIds: questions.map((question) => question.id).filter(Boolean),
     questions,
     source,
@@ -520,20 +525,27 @@ export const fetchOrCreateDailyAssignment = async ({
   const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
   const cached = localCache.get(cacheKey);
 
-  const assignmentRef = doc(db, "users", uid, "daily_assignments", dateKey);
-  const assignmentSnap = await getDoc(assignmentRef);
+  // Fetch the latest question-bank version so we can detect edits.
+  const [assignmentSnap, syncMetaSnap] = await Promise.all([
+    getDoc(doc(db, "users", uid, "daily_assignments", dateKey)),
+    getDoc(doc(db, "sync_meta", "questions")),
+  ]);
+  const latestQuestionsVersion = syncMetaSnap.exists() ? (syncMetaSnap.data().version || 0) : 0;
+
   if (assignmentSnap.exists()) {
     const assignment = { id: assignmentSnap.id, ...assignmentSnap.data() };
     const hasQuestions = Array.isArray(assignment.questions) && assignment.questions.length > 0;
     const countMatches = Number(assignment.requestedQuestionCount || assignment.questionCount || 0) === expectedQuestionCount;
-    // Regenerate whenever the assignment's curriculum signature does not match
-    // the student's current curriculum (e.g. the teacher changed it).
     const signatureMatches = assignment.curriculumSignature === expectedSignature;
-    // Never overwrite a started or completed assignment — the student already
-    // interacted with it today.  Only regenerate "open" assignments whose
-    // curriculum or count no longer matches.
+    // Never overwrite a started or completed assignment.
     const isLocked = assignment.status === "started" || assignment.status === "completed";
-    if (isLocked || (hasQuestions && countMatches && signatureMatches)) {
+    // For open assignments: also regenerate if questions were edited after this
+    // assignment was generated (e.g. teacher changed type from fill_blank → MC).
+    const questionsStale = !isLocked
+      && latestQuestionsVersion > 0
+      && latestQuestionsVersion > (assignment.questionsVersion || 0);
+
+    if (isLocked || (hasQuestions && countMatches && signatureMatches && !questionsStale)) {
       const value = { ...assignment, savedAt: Date.now() };
       localCache.set(cacheKey, value);
       return value;
