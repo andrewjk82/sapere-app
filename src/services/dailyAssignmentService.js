@@ -15,7 +15,6 @@ import { db } from "../firebase/config";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import {
   DEFAULT_DIFFICULTY_MIX,
-  generateQuestion,
   getQuestionBlueprint,
   getQuestionTargets,
 } from "./questionGenerator";
@@ -419,36 +418,11 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
   const unseenManual = manualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
   const poolToUse = unseenManual.length >= questionCount ? unseenManual : manualQuestions;
   const selectedManual = pickBalancedManualQuestions(poolToUse, questionCount);
-  const numAI = Math.max(0, questionCount - selectedManual.length);
-  const aiQuestions = [];
 
-  if (numAI > 0) {
-    const chapters = targets.assignedChapters.length > 0
-      ? targets.assignedChapters
-      : Array.from(targets.targetChapterIds);
-    for (let index = 0; index < numAI; index += 1) {
-      const difficulty = (() => {
-        const mix = studentProfile?.difficultyMix || DEFAULT_DIFFICULTY_MIX;
-        const rand = Math.random();
-        if (rand < (mix.easy || 0.3)) return "easy";
-        if (rand < (mix.easy || 0.3) + (mix.medium || 0.5)) return "medium";
-        return "hard";
-      })();
-      const targetChapterId = chapters[index % chapters.length];
-      aiQuestions.push(generateQuestion({
-        year: targets.assignedYears,
-        course: targets.assignedCourses,
-        assignedChapters: [targetChapterId],
-        assignedTopics: targets.assignedTopics,
-        difficulty,
-      }));
-    }
-  }
-
-  const questions = shuffle([
-    ...shuffle(selectedManual),
-    ...shuffle(aiQuestions).map((question) => slimQuestion({ ...question, isManual: false })),
-  ]).slice(0, questionCount).map(correctQuestionAnswer);
+  // AI generation removed — seed questions (Year 7–12) are sufficient.
+  const questions = shuffle(selectedManual)
+    .slice(0, questionCount)
+    .map(correctQuestionAnswer);
 
   return {
     questions,
@@ -459,7 +433,7 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
       assignedChapters: targets.assignedChapters,
       assignedTopics: targets.assignedTopics,
       manualQuestionCount: selectedManual.length,
-      generatedQuestionCount: aiQuestions.length,
+      generatedQuestionCount: 0,
     },
   };
 };
