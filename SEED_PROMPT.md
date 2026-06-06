@@ -99,7 +99,7 @@ export const Y8_CH1_QUESTIONS = [
 | `t` | string | 서브토픽 제목 |
 | `hint` | string | 힌트 한 줄 |
 | 10. **Language Requirements**: ALL text, including explanations, questions, and hints, MUST be written strictly in English. **DO NOT use Korean or any other language.** |
-| 11. **Dollar Sign Escaping**: The `$` character acts as an inline math delimiter in our Markdown/LaTeX parser. If you use a literal dollar sign in normal text (e.g., for currency like `$25`), you MUST escape it in the JavaScript string as `\\$` (e.g., `\\$25`). If you fail to do this, all text between two `$` signs will be incorrectly rendered as a giant, unformatted math block. |
+| 11. **Currency/Dollar Signs**: Do NOT use the `$` symbol anywhere in the text (questions, hints, or explanations). The `$` symbol acts as an inline math delimiter in the Markdown parser and will break the formatting. Instead, always write out the word 'dollars' (e.g., '25 dollars' instead of '$25'). |
 | `solutionSteps` | array | 단계별 working out: `[{ "explanation": "단계 설명", "workingOut": "수식" }, ...]` |
 | `graphData` | object\|null | 그림 없으면 `null`. 있으면 [7] 형식 참고 |
 | `subQuestions` | array | 서브문제 ([4] 참고). `SPLIT_SUB_QUESTIONS = true`일 때만 적용. 없으면 생략 |

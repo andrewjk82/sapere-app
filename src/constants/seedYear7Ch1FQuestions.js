@@ -907,13 +907,13 @@ export const Y7_CH1F_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'hard',
     timeLimit: 120,
-    question: 'Rachel saves \\$8 less than Ryan each week, and Mark saves 3 times the amount that Rachel saves each week. Ryan saves \\$25 each week. How much does Mark save each week?',
+    question: 'Rachel saves 8 dollars less than Ryan each week, and Mark saves 3 times the amount that Rachel saves each week. Ryan saves 25 dollars each week. How much does Mark save each week?',
     a: '51',
     t: 'Mental strategies and distributive law',
     hint: 'First calculate how much Rachel saves, then multiply that amount by 3.',
     solutionSteps: [
       {
-        explanation: 'Find the amount Rachel saves each week. She saves $8 less than Ryan ($25).',
+        explanation: 'Find the amount Rachel saves each week. She saves 8 dollars less than Ryan (25 dollars).',
         workingOut: '\\text{Rachel} = 25 - 8 = 17'
       },
       {
@@ -922,7 +922,7 @@ export const Y7_CH1F_QUESTIONS = [
       },
       {
         explanation: 'Multiply 17 by 3 to find Mark\'s savings.',
-        workingOut: '\\(\\therefore\\; \\$51\\)'
+        workingOut: '\\(\\therefore\\; 51 \\text{ dollars}\\)'
       }
     ],
     graphData: null
