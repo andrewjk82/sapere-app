@@ -1130,7 +1130,7 @@ export const CURRICULUM_DATA = {
       topics: [
         { id: 'y7-7a', code: '7A', title: 'Place value and comparison of decimals', page: 202 },
         { id: 'y7-7b', code: '7B', title: 'Multiplication and division', page: 207 },
-        { id: 'y7-7c', code: '7C', title: 'Addition and subtraction of decimals', page: 211 },
+        { id: 'y7-7c', code: '7C', title: 'Dividing and cancelling', page: 211 },
         { id: 'y7-7d', code: '7D', title: 'Multiplication and division by powers of 10', page: 213 },
         { id: 'y7-7e', code: '7E', title: 'Multiplication of one decimal by another', page: 217 },
         { id: 'y7-7f', code: '7F', title: 'Division of decimals', page: 219 },
