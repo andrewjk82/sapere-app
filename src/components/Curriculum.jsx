@@ -161,6 +161,7 @@ import { Y7_CH2F_QUESTIONS } from '../constants/seedYear7Ch2FQuestions.js';
 import { Y7_CH2G_QUESTIONS } from '../constants/seedYear7Ch2GQuestions.js';
 import { Y7_CH2H_QUESTIONS } from '../constants/seedYear7Ch2HQuestions.js';
 import { Y7_CH2I_QUESTIONS } from '../constants/seedYear7Ch2IQuestions.js';
+import { Y7_CH2J_QUESTIONS } from '../constants/seedYear7Ch2JQuestions.js';
 import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from '../constants/seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from '../constants/seedYear7Ch1FQuestions.js';
@@ -510,6 +511,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-2', chapterTitle: 'Chapter 2: Factors, multiples, primes and divisibility', topicId: 'y7-2g', topicCode: '2G', topicTitle: 'Squares and square roots', year: 'Year 7', seed: Y7_CH2G_QUESTIONS, label: 'Y7 Ch2 · 2G Squares and square roots' },
   { chapterId: 'y7-2', chapterTitle: 'Chapter 2: Factors, multiples, primes and divisibility', topicId: 'y7-2h', topicCode: '2H', topicTitle: 'Lowest common multiple and highest common factor', year: 'Year 7', seed: Y7_CH2H_QUESTIONS, label: 'Y7 Ch2 · 2H Lowest common multiple and highest common factor' },
   { chapterId: 'y7-2', chapterTitle: 'Chapter 2: Factors, multiples, primes and divisibility', topicId: 'y7-2i', topicCode: '2I', topicTitle: 'Divisibility tests', year: 'Year 7', seed: Y7_CH2I_QUESTIONS, label: 'Y7 Ch2 · 2I Divisibility tests' },
+  { chapterId: 'y7-2', chapterTitle: 'Chapter 2: Factors, multiples, primes and divisibility', topicId: 'y7-2j', topicCode: '2J', topicTitle: 'Revision', year: 'Year 7', seed: Y7_CH2J_QUESTIONS, label: 'Y7 Ch2 · 2J Revision' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3b', topicCode: '3B', topicTitle: 'Algebraic notation', year: 'Year 7', seed: Y7_CH3B_QUESTIONS, label: 'Y7 Ch3 · Algebraic notation' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3c', topicCode: '3C', topicTitle: 'Substitution', year: 'Year 7', seed: Y7_CH3C_QUESTIONS, label: 'Y7 Ch3 · Substitution' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3d', topicCode: '3D', topicTitle: 'Adding and subtracting like terms', year: 'Year 7', seed: Y7_CH3D_QUESTIONS, label: 'Y7 Ch3 · Adding and subtracting like terms' },

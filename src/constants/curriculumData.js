@@ -1051,7 +1051,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y7-2',
       title: 'Factors, multiples, primes and divisibility',
-      modules: 9,
+      modules: 10,
       topics: [
         { id: 'y7-2a', code: '2A', title: 'Factors and multiples', page: 39 },
         { id: 'y7-2b', code: '2B', title: 'Odd and even numbers', page: 43 },
@@ -1061,7 +1061,8 @@ export const CURRICULUM_DATA = {
         { id: 'y7-2f', code: '2F', title: 'Using powers in factorisation', page: 54 },
         { id: 'y7-2g', code: '2G', title: 'Squares and square roots', page: 57 },
         { id: 'y7-2h', code: '2H', title: 'Lowest common multiple and highest common factor', page: 59 },
-        { id: 'y7-2i', code: '2I', title: 'Divisibility tests', page: 61 }
+        { id: 'y7-2i', code: '2I', title: 'Divisibility tests', page: 61 },
+        { id: 'y7-2j', code: '2J', title: 'Revision' }
       ]
     },
     {
