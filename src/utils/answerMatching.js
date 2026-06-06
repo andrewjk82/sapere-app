@@ -173,6 +173,9 @@ const extractRhs = (s) => {
 };
 
 export const answersMatch = (studentAnswer, expectedAnswer) => {
+  // Empty student answer is never correct.
+  if (studentAnswer === null || studentAnswer === undefined || String(studentAnswer ?? '').trim() === '') return false;
+
   // Fraction / mixed-number equivalence: "2 1/2" == "5/2" == "2.5".
   const sFrac = evalFractionValue(studentAnswer);
   const eFrac = evalFractionValue(expectedAnswer);
@@ -232,16 +235,26 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
  */
 export const gradeQuestion = (question, userAnswer) => {
   if (!question) return { correct: false };
+
+  // Empty answer is always wrong — guards against blank matching blank when
+  // a question's answer field is missing, and against accidental submission.
+  const isEmptyValue = (v) =>
+    v === null || v === undefined || String(v ?? '').trim() === '' || v === '__timeout__';
+
   if (question.type === 'multiple_choice') {
     const optText = typeof userAnswer === 'object' && userAnswer !== null ? userAnswer.text : userAnswer;
+    if (isEmptyValue(optText)) return { correct: false };
     return { correct: answersMatch(optText, question.answer) };
   }
   if (question.type === 'fill_blank') {
     const blanks = Array.isArray(question.blanks) ? question.blanks : [];
     const arr = Array.isArray(userAnswer) ? userAnswer : [];
+    // Any blank left empty → wrong
+    if (arr.some((v) => isEmptyValue(v))) return { correct: false, perBlank: blanks.map(() => false) };
     const perBlank = blanks.map((b, i) => answersMatch(arr[i] || '', b.answer || ''));
     return { correct: blanks.length > 0 && perBlank.every(Boolean), perBlank };
   }
   // short_answer + anything else stringy
+  if (isEmptyValue(userAnswer)) return { correct: false };
   return { correct: answersMatch(userAnswer, question.answer) };
 };
