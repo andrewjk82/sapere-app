@@ -99,47 +99,8 @@ export const useAntiCheat = ({
     return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, [isActive, isReporting]);
 
-  // ── 4 & 5. Cheat termination (visibility + pagehide) ──
-  // iPadOS emits blur/pagehide/visibility while the math keyboard opens/closes
-  // so recent keyboard activity is ignored (500 ms grace after visible again).
-  useEffect(() => {
-    if (isAdmin || !isQuiz) return;
-
-    let terminationTimer = null;
-
-    const clearTerminationTimer = () => {
-      if (terminationTimer) {
-        window.clearTimeout(terminationTimer);
-        terminationTimer = null;
-      }
-    };
-
-    const handleCheatingAttempt = () => {
-      if (hasRecentKeyboardActivity()) return;
-      if (document.visibilityState !== 'hidden') {
-        clearTerminationTimer();
-        return;
-      }
-      clearTerminationTimer();
-      terminationTimer = window.setTimeout(() => {
-        if (document.visibilityState !== 'hidden' || hasRecentKeyboardActivity()) return;
-        showToast('⚠️ Challenge Terminated: Screen switching or screenshots detected.', 'error', 5000);
-        finishQuizRef.current?.(true);
-      }, 500);
-    };
-
-    const handleImmediateTermination = () => {
-      if (hasRecentKeyboardActivity()) return;
-      finishQuizRef.current?.(true);
-    };
-
-    document.addEventListener('visibilitychange', handleCheatingAttempt);
-    window.addEventListener('pagehide', handleImmediateTermination);
-
-    return () => {
-      clearTerminationTimer();
-      document.removeEventListener('visibilitychange', handleCheatingAttempt);
-      window.removeEventListener('pagehide', handleImmediateTermination);
-    };
-  }, [isQuiz, isAdmin, showToast, hasRecentKeyboardActivity, finishQuizRef]);
+  // ── 4 & 5. Cheat termination — DISABLED ──
+  // Students should be able to switch apps/tabs and resume the quiz on return.
+  // Focus-loss warnings (step 1) are still shown, but the session is never
+  // force-terminated by a visibility change or pagehide event.
 };
