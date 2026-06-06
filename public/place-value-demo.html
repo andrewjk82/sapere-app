@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sapere · Place Value — Step-by-step (with voice)</title>
+<style>
+  :root{ --p1:#a78bfa; --p2:#7c3aed; --ink:#1e1b4b; --muted:#6d6a85; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:linear-gradient(135deg,#f5f3ff,#eef2ff); color:var(--ink); min-height:100vh;
+    display:flex; flex-direction:column; align-items:center; padding:26px 16px 70px; }
+  h1{ font-size:1.5rem; font-weight:900; margin:0 0 4px; }
+  .sub{ color:var(--muted); font-weight:600; margin:0 0 20px; font-size:.92rem; text-align:center; }
+  .card{ width:100%; max-width:880px; background:#fff; border:1px solid #ece9fb; border-radius:24px;
+    box-shadow:0 16px 44px rgba(124,58,237,.10); padding:24px; }
+  .topbar{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:18px; }
+  .topbar label{ font-weight:800; font-size:.85rem; color:var(--muted); }
+  input[type=number]{ font-family:inherit; font-weight:800; font-size:1.1rem; padding:10px 14px; width:170px;
+    border:2px solid #ddd6fe; border-radius:12px; outline:none; color:var(--ink); }
+  button{ font-family:inherit; font-weight:800; border:none; border-radius:12px; padding:11px 16px; cursor:pointer; font-size:.88rem; }
+  .primary{ background:linear-gradient(135deg,var(--p1),var(--p2)); color:#fff; box-shadow:0 8px 20px rgba(124,58,237,.26); }
+  .ghost{ background:#f5f3ff; color:var(--p2); border:1px solid #ddd6fe; }
+  .ghost:disabled{ opacity:.4; cursor:default; }
+  .toggle{ background:#ecfdf5; color:#059669; border:1px solid #a7f3d0; }
+  .toggle.off{ background:#f1f5f9; color:#94a3b8; border-color:#e2e8f0; }
+
+  .pvtable{ display:flex; gap:8px; justify-content:center; margin:8px 0 18px; flex-wrap:wrap; }
+  .col{ min-width:96px; border-radius:14px; overflow:hidden; border:2px solid #e6e1fb; transition:all .35s; opacity:.5; transform:translateY(6px); }
+  .col.show{ opacity:1; transform:none; }
+  .col.active{ border-color:var(--p2); box-shadow:0 10px 24px rgba(124,58,237,.22); transform:translateY(-3px); opacity:1; }
+  .col .name{ background:#ece9fb; color:#5b21b6; font-weight:800; font-size:.72rem; text-align:center; padding:7px 4px; }
+  .col.active .name{ background:linear-gradient(135deg,var(--p1),var(--p2)); color:#fff; }
+  .col .digit{ font-size:2rem; font-weight:900; text-align:center; padding:12px 4px 4px; color:var(--ink); }
+  .col .pv{ text-align:center; font-size:.72rem; font-weight:800; color:var(--p2); padding:0 4px 10px; min-height:18px; }
+  .col .pow{ text-align:center; font-size:.66rem; font-weight:700; color:#94a3b8; padding:0 4px 9px; }
+
+  .narr{ background:linear-gradient(135deg,#faf5ff,#eef2ff); border:1px solid #e0d9fb; border-radius:16px;
+    padding:18px 20px; min-height:92px; display:flex; gap:14px; align-items:flex-start; }
+  .narr .step-no{ flex-shrink:0; width:38px; height:38px; border-radius:12px; background:linear-gradient(135deg,var(--p1),var(--p2));
+    color:#fff; display:grid; place-items:center; font-weight:900; position:relative; }
+  .narr .step-no.speaking::after{ content:''; position:absolute; inset:-4px; border-radius:14px; border:2px solid var(--p1);
+    animation:pulse 1s ease-out infinite; }
+  @keyframes pulse{ 0%{opacity:.7; transform:scale(1)} 100%{opacity:0; transform:scale(1.25)} }
+  .narr .txt{ font-size:1rem; line-height:1.65; font-weight:600; color:#3b2b68; }
+  .narr b{ color:var(--p2); }
+  .big{ font-size:1.25rem; font-weight:900; color:var(--ink); }
+
+  .expanded{ margin-top:16px; padding:16px 18px; border-radius:14px; background:#fbfaff; border:1px dashed #ddd6fe; min-height:30px;
+    font-size:1.15rem; font-weight:800; color:var(--ink); text-align:center; line-height:1.9; }
+  .term{ display:inline-block; }
+  .term.hot{ background:#ede9fe; border-radius:8px; padding:1px 7px; color:var(--p2); }
+  sup{ font-size:.62em; }
+
+  .controls{ display:flex; gap:10px; justify-content:center; margin-top:20px; flex-wrap:wrap; }
+  .dots{ display:flex; gap:6px; justify-content:center; margin-top:16px; }
+  .dot{ width:9px; height:9px; border-radius:50%; background:#ddd6fe; transition:all .2s; }
+  .dot.on{ background:var(--p2); width:22px; border-radius:6px; }
+  .presets{ display:flex; gap:6px; flex-wrap:wrap; }
+  .preset{ background:#fff; border:1px solid #e6e1fb; color:var(--p2); font-weight:800; font-size:.8rem; padding:7px 11px; border-radius:10px; cursor:pointer; }
+</style>
+</head>
+<body>
+  <h1>🔢 Place Value — Step-by-step</h1>
+  <p class="sub">Type a number and the lesson explains its place values, expanded form and powers of 10 — read aloud.</p>
+
+  <div class="card">
+    <div class="topbar">
+      <label>Number:</label>
+      <input id="num" type="number" value="3721" min="0" max="9999999" />
+      <button class="primary" id="go">Start lesson</button>
+      <div class="presets">
+        <span class="preset" data-n="523">523</span>
+        <span class="preset" data-n="3721">3721</span>
+        <span class="preset" data-n="750987">750987</span>
+      </div>
+    </div>
+
+    <div class="pvtable" id="pvtable"></div>
+
+    <div class="narr">
+      <div class="step-no" id="stepNo">1</div>
+      <div class="txt" id="narr">Press <b>Start lesson</b> to begin the step-by-step explanation.</div>
+    </div>
+
+    <div class="expanded" id="expanded"></div>
+
+    <div class="dots" id="dots"></div>
+
+    <div class="controls">
+      <button class="ghost" id="prev">◀ Back</button>
+      <button class="ghost" id="auto">▶ Auto-play</button>
+      <button class="primary" id="next">Next ▶</button>
+      <button class="ghost" id="replay">↺ Restart</button>
+      <button class="toggle" id="voice">🔊 Voice: on</button>
+    </div>
+  </div>
+
+<script>
+const PLACE_NAMES = ['Ones','Tens','Hundreds','Thousands','Ten thousands','Hundred thousands','Millions'];
+const PV_WORD     = ['1','10','100','1000','10 000','100 000','1 000 000'];
+const PV_SPOKEN   = ['1','10','100','1 thousand','10 thousand','100 thousand','1 million'];
+
+let steps = [], cur = 0, autoT = null, data = null, voiceOn = true;
+
+function buildData(n){
+  const s = String(Math.max(0, Math.floor(n)));
+  const digits = s.split('').map(Number);
+  const len = digits.length;
+  return digits.map((d, i) => {
+    const power = len - 1 - i;
+    return { d, power, place: PLACE_NAMES[power] || `10^${power}`,
+             pvWord: PV_WORD[power] || ('10^'+power),
+             pvSpoken: PV_SPOKEN[power] || ('ten to the power '+power),
+             value: d * Math.pow(10, power) };
+  });
+}
+function fmt(num){ return num.toLocaleString('en-US').replace(/,/g, ' '); }
+
+function renderTable(activeIndex, revealUpto){
+  const wrap = document.getElementById('pvtable');
+  wrap.innerHTML = '';
+  data.forEach((c, i) => {
+    const shown = i <= revealUpto;
+    const div = document.createElement('div');
+    div.className = 'col' + (shown ? ' show' : '') + (i === activeIndex ? ' active' : '');
+    div.innerHTML = `
+      <div class="name">${c.place}</div>
+      <div class="digit">${shown ? c.d : ''}</div>
+      <div class="pv">${(shown && c.showPv) ? (c.d ? fmt(c.value) : '0') : ''}</div>
+      <div class="pow">${(shown && c.showPow) ? (c.power>0 ? `${c.d}×10<sup>${c.power}</sup>` : `${c.d}`) : ''}</div>`;
+    wrap.appendChild(div);
+  });
+}
+
+function buildSteps(){
+  const len = data.length;
+  const value = data.reduce((s,c)=>s+c.value,0);
+  const arr = [];
+  arr.push({
+    active:-1, reveal:len-1,
+    txt:`The number <span class="big">${fmt(value)}</span> is a <b>${len}-digit number</b>. Each place has a name: ${data.map(c=>c.place).join(', ')}.`,
+    speech:`The number ${fmt(value)} is a ${len} digit number. Each place has a name: ${data.map(c=>c.place.toLowerCase()).join(', ')}.`
+  });
+  data.forEach((c, i) => {
+    arr.push({
+      active:i, reveal:len-1, pvUpto:i,
+      txt: c.d === 0
+        ? `The digit in the <b>${c.place}</b> place is <b>0</b>. A zero place has a value of <b>0</b>, so there is nothing to add.`
+        : `In the <b>${c.place}</b> place, the digit <b>${c.d}</b> has a place value of <b>${c.d} × ${c.pvWord} = ${fmt(c.value)}</b>.`,
+      speech: c.d === 0
+        ? `The digit in the ${c.place.toLowerCase()} place is zero. A zero place has a value of zero, so there is nothing to add.`
+        : `In the ${c.place.toLowerCase()} place, the digit ${c.d} has a place value of ${c.d} times ${c.pvSpoken}, which equals ${fmt(c.value)}.`,
+      expandStep:i
+    });
+  });
+  arr.push({
+    active:-1, reveal:len-1, pvUpto:len-1,
+    txt:`Adding all the place values gives the number back. Writing a number this way is called <b>expanded form</b>.`,
+    speech:`Adding all the place values gives the number back. Writing a number this way is called expanded form.`,
+    form:'standard'
+  });
+  arr.push({
+    active:-1, reveal:len-1, pvUpto:len-1, pow:true,
+    txt:`Using <b>powers of 10</b> makes it shorter: 10 = 10<sup>1</sup>, 100 = 10<sup>2</sup>, 1000 = 10<sup>3</sup>, and so on.`,
+    speech:`Using powers of ten makes it shorter. Ten is ten to the power one, one hundred is ten to the power two, one thousand is ten to the power three, and so on.`,
+    form:'powers'
+  });
+  return arr;
+}
+
+function termHTML(c, mode, hot){
+  if(c.d===0) return '';
+  const cls = 'term' + (hot?' hot':'');
+  if(mode==='powers') return `<span class="${cls}">${c.d}${c.power>0?`×10<sup>${c.power}</sup>`:''}</span>`;
+  return `<span class="${cls}">${c.d}${c.power>0?`×${c.pvWord.replace(/ /g,'')}`:''}</span>`;
+}
+function renderExpanded(mode){
+  const parts = data.map(c=>termHTML(c, mode, false)).filter(Boolean);
+  document.getElementById('expanded').innerHTML =
+    `${fmt(data.reduce((s,c)=>s+c.value,0))} = ` + parts.join(' <span style="color:#a78bfa">+</span> ');
+}
+
+// ── Voice (Web Speech API) ──────────────────────────────────────────────
+function pickVoice(){
+  const vs = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+  return vs.find(v=>/en[-_]?(GB|AU)/i.test(v.lang) && /female|samantha|karen|google/i.test(v.name))
+      || vs.find(v=>/^en/i.test(v.lang)) || vs[0] || null;
+}
+function speak(text){
+  if(!voiceOn || !window.speechSynthesis) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-GB'; u.rate = 0.98; u.pitch = 1.0;
+  const v = pickVoice(); if(v) u.voice = v;
+  const badge = document.getElementById('stepNo');
+  u.onstart = ()=>badge.classList.add('speaking');
+  u.onend   = ()=>badge.classList.remove('speaking');
+  speechSynthesis.speak(u);
+}
+function stopSpeak(){ if(window.speechSynthesis) speechSynthesis.cancel(); document.getElementById('stepNo').classList.remove('speaking'); }
+
+function renderStep(i, withVoice=true){
+  cur = Math.max(0, Math.min(steps.length-1, i));
+  const st = steps[cur];
+  data.forEach((c, idx)=>{ c.showPv = (st.pvUpto!==undefined && idx<=st.pvUpto); c.showPow = !!st.pow; });
+  renderTable(st.active, st.reveal);
+  document.getElementById('stepNo').textContent = cur+1;
+  document.getElementById('narr').innerHTML = st.txt;
+
+  if(st.form){ renderExpanded(st.form); }
+  else if(st.expandStep!==undefined){
+    const parts=[];
+    for(let k=0;k<=st.expandStep;k++){ const h=termHTML(data[k],'standard', k===st.expandStep); if(h) parts.push(h); }
+    document.getElementById('expanded').innerHTML = parts.length? ('= '+parts.join(' <span style="color:#a78bfa">+</span> ')) : '';
+  } else { document.getElementById('expanded').innerHTML=''; }
+
+  document.getElementById('dots').innerHTML = steps.map((_,k)=>`<span class="dot ${k===cur?'on':''}"></span>`).join('');
+  document.getElementById('prev').disabled = cur===0;
+  document.getElementById('next').disabled = cur===steps.length-1;
+
+  if(withVoice) speak(st.speech);
+}
+
+function start(){
+  const n = parseInt(document.getElementById('num').value,10);
+  if(isNaN(n)) return;
+  data = buildData(n); steps = buildSteps(); renderStep(0);
+}
+
+document.getElementById('go').onclick = ()=>{ stopAuto(); start(); };
+document.getElementById('next').onclick = ()=>{ stopAuto(); renderStep(cur+1); };
+document.getElementById('prev').onclick = ()=>{ stopAuto(); renderStep(cur-1); };
+document.getElementById('replay').onclick = ()=>{ stopAuto(); renderStep(0); };
+document.querySelectorAll('.preset').forEach(p=>p.onclick=()=>{ document.getElementById('num').value=p.dataset.n; stopAuto(); start(); });
+
+document.getElementById('voice').onclick = ()=>{
+  voiceOn = !voiceOn;
+  const b = document.getElementById('voice');
+  b.textContent = voiceOn ? '🔊 Voice: on' : '🔇 Voice: off';
+  b.classList.toggle('off', !voiceOn);
+  if(!voiceOn) stopSpeak(); else speak(steps[cur]?.speech || '');
+};
+
+function stopAuto(){ if(autoT){ clearInterval(autoT); autoT=null; document.getElementById('auto').textContent='▶ Auto-play'; } }
+document.getElementById('auto').onclick = ()=>{
+  if(autoT){ stopAuto(); return; }
+  if(cur===steps.length-1) renderStep(0);
+  document.getElementById('auto').textContent='⏸ Pause';
+  // advance when speech finishes (fallback timer for muted mode)
+  const tick = ()=>{
+    if(cur>=steps.length-1){ stopAuto(); return; }
+    renderStep(cur+1);
+  };
+  autoT = setInterval(tick, 4200);
+};
+
+// voices load async in some browsers
+if(window.speechSynthesis) speechSynthesis.onvoiceschanged = ()=>{};
+start();
+</script>
+</body>
+</html>

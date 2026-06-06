@@ -285,6 +285,7 @@ const GeometryFigure = ({
           textAnchor="middle" fill="#000000"
           fontSize={fontSize} fontStyle="italic"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'
+          stroke="#ffffff" strokeWidth={3.5} paintOrder="stroke" strokeLinejoin="round"
         >
           {formatLabel(ang.label)}
         </text>
@@ -293,7 +294,17 @@ const GeometryFigure = ({
   });
 
   // --- Side labels ------------------------------------------------------
-  sideLabels.forEach((sl) => {
+  // Defensive de-duplication: figure editing/regeneration can leave duplicate
+  // side labels (same text on the same segment), which render as overlapping
+  // text like "12 cmcm". Keep only the first occurrence of each.
+  const seenSide = new Set();
+  const uniqueSideLabels = sideLabels.filter((sl) => {
+    const sig = `${(sl.text ?? '').toString().trim()}|${Array.isArray(sl.between) ? sl.between.join('-') : ''}|${Array.isArray(sl.labelPos) ? sl.labelPos.join(',') : ''}`;
+    if (seenSide.has(sig)) return false;
+    seenSide.add(sig);
+    return true;
+  });
+  uniqueSideLabels.forEach((sl) => {
     let tx, ty;
     if (sl.labelPos) {
       tx = ((Number(sl.labelPos[0]) || 0) - minX) * scale + pad;
@@ -317,13 +328,21 @@ const GeometryFigure = ({
         x={tx} y={ty + 5}
         textAnchor="middle" fill="#000000" fontSize={fontSize}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
+        stroke="#ffffff" strokeWidth={3.5} paintOrder="stroke" strokeLinejoin="round"
       >
         {formatLabel(sl.text)}
       </text>
     );
   });
 
-  freeLabels.forEach((label) => {
+  const seenFree = new Set();
+  freeLabels.filter((label) => {
+    const pt = Array.isArray(label.point) ? label.point : [label.x, label.y];
+    const sig = `${(label.text ?? '').toString().trim()}|${(Number(pt?.[0]) || 0).toFixed(2)},${(Number(pt?.[1]) || 0).toFixed(2)}`;
+    if (seenFree.has(sig)) return false;
+    seenFree.add(sig);
+    return true;
+  }).forEach((label) => {
     const pt = Array.isArray(label.point) ? label.point : [label.x, label.y];
     const x = ((Number(pt[0]) || 0) - minX) * scale + pad;
     const y = (maxY - (Number(pt[1]) || 0)) * scale + pad;
@@ -336,6 +355,7 @@ const GeometryFigure = ({
         fontSize={fontSize}
         fontStyle={label.italic === false ? 'normal' : 'italic'}
         fontFamily='"KaTeX_Main", "Times New Roman", serif'
+        stroke="#ffffff" strokeWidth={3.5} paintOrder="stroke" strokeLinejoin="round"
       >
         {formatLabel(label.text)}
       </text>
@@ -363,6 +383,7 @@ const GeometryFigure = ({
           textAnchor="middle" fill="#000000"
           fontSize={fontSize} fontStyle="italic" fontWeight="600"
           fontFamily='"KaTeX_Main", "Times New Roman", serif'
+          stroke="#ffffff" strokeWidth={3.5} paintOrder="stroke" strokeLinejoin="round"
         >
           {n}
         </text>

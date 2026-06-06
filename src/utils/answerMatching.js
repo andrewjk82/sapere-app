@@ -46,6 +46,11 @@ export const robustNormalize = (str) => {
     .replace(/\\tfrac\s*/g, '\\frac')
     .replace(/\\cfrac\s*/g, '\\frac')
     .replace(/\\frac\s+\{/g, '\\frac{')
+    // MathLive emits single-token fractions WITHOUT braces (e.g. "\frac56").
+    // Wrap bare args so the brace-based rules below can parse them.
+    .replace(/\\frac\s*(\{[^{}]*\})\s*([0-9a-zA-Z])/g, '\\frac$1{$2}')
+    .replace(/\\frac\s*([0-9a-zA-Z])\s*(\{[^{}]*\})/g, '\\frac{$1}$2')
+    .replace(/\\frac\s*([0-9a-zA-Z])\s*([0-9a-zA-Z])/g, '\\frac{$1}{$2}')
     // \frac{a}{b} → (a)/(b)
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     // nested \frac (one level deep)
@@ -89,6 +94,10 @@ export const evalFractionValue = (value) => {
     .replace(/\\tfrac\s*/g, '\\frac')
     .replace(/\\cfrac\s*/g, '\\frac')
     .replace(/\\frac\s+\{/g, '\\frac{')
+    // Wrap brace-less single-token \frac args (MathLive emits "\frac56").
+    .replace(/\\frac\s*(\{[^{}]*\})\s*([0-9a-zA-Z])/g, '\\frac$1{$2}')
+    .replace(/\\frac\s*([0-9a-zA-Z])\s*(\{[^{}]*\})/g, '\\frac{$1}$2')
+    .replace(/\\frac\s*([0-9a-zA-Z])\s*([0-9a-zA-Z])/g, '\\frac{$1}{$2}')
     // Strip \left / \right wrappers before processing
     .replace(/\\left\s*/g, '')
     .replace(/\\right\s*/g, '')

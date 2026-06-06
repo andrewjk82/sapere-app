@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sapere · 수학 애니메이션 데모 (브라우저 네이티브)</title>
+<style>
+  :root { --p1:#a78bfa; --p2:#7c3aed; --ink:#1e1b4b; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+    background: linear-gradient(135deg,#f5f3ff,#eef2ff); color: var(--ink);
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 28px 16px 60px;
+  }
+  h1 { font-size: 1.5rem; font-weight: 900; margin: 0 0 4px; }
+  .sub { color:#6d6a85; font-weight:600; margin:0 0 22px; font-size:.92rem; text-align:center; }
+  .wrap { width: 100%; max-width: 1080px; display: grid; grid-template-columns: 1fr 360px; gap: 18px; align-items: start; }
+  @media (max-width: 880px){ .wrap{ grid-template-columns:1fr; } }
+  .card { background:#fff; border:1px solid #ece9fb; border-radius:22px; box-shadow:0 14px 40px rgba(124,58,237,.08); overflow:hidden; }
+  canvas { display:block; width:100%; background:#fbfaff; }
+  .panel { padding:18px 20px; }
+  .panel h2 { font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--p2); margin:0 0 10px; font-weight:900; }
+  pre { margin:0; background:#1e1b3a; color:#e9e6ff; border-radius:14px; padding:14px; font-size:.72rem; line-height:1.55; overflow:auto; max-height:300px; }
+  .controls { display:flex; gap:10px; flex-wrap:wrap; padding:16px 20px; border-top:1px solid #f1edff; }
+  button { font-family:inherit; font-weight:800; border:none; border-radius:12px; padding:12px 18px; cursor:pointer; font-size:.9rem; display:inline-flex; align-items:center; gap:8px; }
+  .primary { background:linear-gradient(135deg,var(--p1),var(--p2)); color:#fff; box-shadow:0 8px 20px rgba(124,58,237,.28); }
+  .ghost { background:#f5f3ff; color:var(--p2); border:1px solid #ddd6fe; }
+  .rec { background:#fff1f2; color:#e11d48; border:1px solid #fecdd3; }
+  .note { font-size:.78rem; color:#8b7aa7; font-weight:600; margin-top:12px; line-height:1.5; }
+  .prompt { background:#faf5ff; border:1px dashed #ddd6fe; border-radius:12px; padding:12px 14px; font-size:.85rem; color:#5b21b6; font-weight:700; margin-bottom:14px; }
+</style>
+</head>
+<body>
+  <h1>🎬 브라우저 네이티브 수학 애니메이션</h1>
+  <p class="sub">서버·Manim 없이 — AI가 만든 <b>애니메이션 스펙</b>을 브라우저 엔진이 바로 렌더링합니다.</p>
+
+  <div class="wrap">
+    <div class="card">
+      <canvas id="stage" width="700" height="460"></canvas>
+      <div class="controls">
+        <button class="primary" id="play">▶ 재생</button>
+        <button class="ghost" id="replay">↺ 다시</button>
+        <button class="rec" id="record">● 영상으로 저장(.webm)</button>
+      </div>
+    </div>
+
+    <div class="card panel">
+      <div class="prompt">프롬프트: "피타고라스 정리를 애니메이션으로 보여줘"</div>
+      <h2>AI가 생성한 애니메이션 스펙</h2>
+      <pre id="specView"></pre>
+      <p class="note">이 JSON을 Claude가 생성하고, 아래 <b>~120줄짜리 엔진</b>이 브라우저 캔버스에서 그립니다. 서버 왕복·렌더 대기 없이 즉시 재생되고, MediaRecorder로 영상 파일까지 내려받을 수 있습니다.</p>
+    </div>
+  </div>
+
+<script>
+// ── AI가 생성하는 "애니메이션 스펙" (예시) ───────────────────────────────
+// 실제 제품에서는 이 객체를 Claude API가 프롬프트에 맞춰 생성합니다.
+const SPEC = {
+  title: "피타고라스 정리",
+  triangle: { a: 3, b: 4, c: 5 },     // 직각변 a,b / 빗변 c
+  timeline: [
+    { t: 0.00, do: "drawTriangle",  label: "직각삼각형 (3, 4, 5)" },
+    { t: 0.18, do: "squareA",       label: "a² = 3² = 9" },
+    { t: 0.40, do: "squareB",       label: "b² = 4² = 16" },
+    { t: 0.62, do: "squareC",       label: "c² = 5² = 25" },
+    { t: 0.84, do: "equation",      label: "9 + 16 = 25  ⟹  a² + b² = c²" }
+  ]
+};
+document.getElementById('specView').textContent = JSON.stringify(SPEC, null, 2);
+
+// ── 미니 애니메이션 엔진 ────────────────────────────────────────────────
+const cv = document.getElementById('stage');
+const ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height;
+const DUR = 6200; // ms
+let start = null, raf = null;
+
+const ease = t => t<.5 ? 2*t*t : 1-Math.pow(-2*t+2,2)/2;     // easeInOutQuad
+const seg = (p, a, b) => Math.max(0, Math.min(1, (p-a)/(b-a))); // 구간 진행도 0..1
+
+// 좌표계: 직각을 왼쪽 아래에 둔 3-4-5 삼각형
+const unit = 56, ox = 250, oy = 320;
+const A = {x: ox,             y: oy};                 // 직각 꼭짓점
+const B = {x: ox,             y: oy - SPEC.triangle.a*unit}; // 위 (변 a = 세로)
+const C = {x: ox + SPEC.triangle.b*unit, y: oy};     // 오른쪽 (변 b = 가로)
+
+function sq(p0, p1, dir, prog, color){
+  // p0-p1 변 바깥쪽으로 정사각형을 prog(0..1)만큼 자라게
+  const dx = p1.x-p0.x, dy = p1.y-p0.y;
+  const nx = dir*(-dy), ny = dir*(dx);    // 바깥 법선
+  const k = prog;
+  const q0 = p0, q1 = p1;
+  const q2 = {x: p1.x + nx*k, y: p1.y + ny*k};
+  const q3 = {x: p0.x + nx*k, y: p0.y + ny*k};
+  ctx.beginPath();
+  ctx.moveTo(q0.x,q0.y); ctx.lineTo(q1.x,q1.y); ctx.lineTo(q2.x,q2.y); ctx.lineTo(q3.x,q3.y); ctx.closePath();
+  ctx.fillStyle = color+'33'; ctx.fill();
+  ctx.lineWidth = 2.5; ctx.strokeStyle = color; ctx.stroke();
+  // 가운데 라벨
+  if (k > .55){
+    const cxp=(q0.x+q1.x+q2.x+q3.x)/4, cyp=(q0.y+q1.y+q2.y+q3.y)/4;
+    ctx.fillStyle = color; ctx.font='700 20px serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+  }
+}
+
+function frame(now){
+  if(!start) start = now;
+  const p = Math.min(1, (now-start)/DUR);
+  ctx.clearRect(0,0,W,H);
+
+  // 배경 그리드
+  ctx.strokeStyle='#efeafd'; ctx.lineWidth=1;
+  for(let x=0;x<W;x+=28){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let y=0;y<H;y+=28){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+
+  // 제목
+  ctx.fillStyle='#1e1b4b'; ctx.font='800 22px sans-serif'; ctx.textAlign='left'; ctx.textBaseline='top';
+  ctx.fillText('피타고라스 정리: a² + b² = c²', 24, 20);
+
+  // 삼각형 (그려지는 애니메이션)
+  const tp = ease(seg(p, 0, .16));
+  ctx.lineWidth=3.5; ctx.strokeStyle='#7c3aed'; ctx.beginPath();
+  ctx.moveTo(A.x,A.y);
+  ctx.lineTo(A.x+(B.x-A.x)*tp, A.y+(B.y-A.y)*tp);
+  ctx.stroke();
+  if(tp>=1){
+    ctx.beginPath(); ctx.moveTo(B.x,B.y); ctx.lineTo(C.x,C.y); ctx.lineTo(A.x,A.y); ctx.stroke();
+    // 직각 표시
+    ctx.strokeStyle='#94a3b8'; ctx.lineWidth=2;
+    ctx.strokeRect(A.x, A.y-16, 16, 16);
+  }
+
+  // 세 정사각형
+  sq(A, B, -1, ease(seg(p,.18,.38)), '#6366f1');   // a²  (왼쪽 바깥)
+  sq(C, A,  1, ease(seg(p,.40,.60)), '#f59e0b');   // b²  (아래 바깥)
+  sq(B, C,  1, ease(seg(p,.62,.82)), '#10b981');   // c²  (빗변 바깥)
+
+  // 변 라벨
+  if(p>.16){ ctx.fillStyle='#6366f1'; ctx.font='700 18px serif'; ctx.textAlign='right'; ctx.textBaseline='middle';
+    ctx.fillText('a=3', A.x-10, (A.y+B.y)/2); }
+  if(p>.40){ ctx.fillStyle='#b45309'; ctx.textAlign='center'; ctx.fillText('b=4', (A.x+C.x)/2, A.y+22); }
+  if(p>.62){ ctx.fillStyle='#047857'; ctx.save(); ctx.translate((B.x+C.x)/2,(B.y+C.y)/2);
+    ctx.rotate(Math.atan2(C.y-B.y,C.x-B.x)); ctx.fillText('c=5', 0,-14); ctx.restore(); }
+
+  // 면적 숫자
+  if(seg(p,.18,.38)>.6){ ctx.fillStyle='#6366f1'; ctx.font='800 22px serif'; ctx.textAlign='center';
+    ctx.fillText('9', A.x-1.5*unit, (A.y+B.y)/2); }
+  if(seg(p,.40,.60)>.6){ ctx.fillStyle='#d97706'; ctx.fillText('16', (A.x+C.x)/2, A.y+2*unit); }
+  if(seg(p,.62,.82)>.6){ ctx.fillStyle='#059669';
+    const mx=(B.x+C.x)/2, my=(B.y+C.y)/2, nx=(C.y-B.y), ny=-(C.x-B.x), L=Math.hypot(nx,ny);
+    ctx.fillText('25', mx+nx/L*2.5*unit, my+ny/L*2.5*unit); }
+
+  // 최종 식
+  const ep = ease(seg(p,.84,1));
+  if(ep>0){
+    ctx.globalAlpha = ep;
+    ctx.fillStyle='#1e1b4b'; ctx.font='900 30px serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText('9 + 16 = 25', W/2, H-46);
+    ctx.globalAlpha = 1;
+  }
+
+  if(p<1){ raf = requestAnimationFrame(frame); }
+}
+
+function play(){ cancelAnimationFrame(raf); start=null; raf=requestAnimationFrame(frame); }
+document.getElementById('play').onclick = play;
+document.getElementById('replay').onclick = play;
+play();
+
+// ── 브라우저에서 영상으로 저장 (MediaRecorder) ──────────────────────────
+document.getElementById('record').onclick = () => {
+  const stream = cv.captureStream(30);
+  const rec = new MediaRecorder(stream, { mimeType: 'video/webm' });
+  const chunks = [];
+  rec.ondataavailable = e => e.data.size && chunks.push(e.data);
+  rec.onstop = () => {
+    const url = URL.createObjectURL(new Blob(chunks, {type:'video/webm'}));
+    const a = document.createElement('a');
+    a.href = url; a.download = 'pythagoras.webm'; a.click();
+    URL.revokeObjectURL(url);
+  };
+  rec.start();
+  play();
+  setTimeout(() => rec.stop(), DUR + 300);
+};
+</script>
+</body>
+</html>

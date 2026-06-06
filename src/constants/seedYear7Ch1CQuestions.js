@@ -11,7 +11,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 5 & 1 & 4 \\\\ + & 3 & 6 & 2 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c} & 5 & 1 & 4 \\\\ + & 3 & 6 & 2 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Add the units column: \\( 4 + 2 = 6 \\).",
@@ -44,7 +44,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 3 & 4 & 6 \\\\ + & 4 & 2 & 8 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c} & 3 & 4 & 6 \\\\ + & 4 & 2 & 8 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Add the units column: \\( 6 + 8 = 14 \\). Write down 4 and carry over 1 to the tens column.",
@@ -77,7 +77,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 2 & 0 & 7 \\\\ + & 6 & 5 & 8 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c} & 2 & 0 & 7 \\\\ + & 6 & 5 & 8 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Add the units column: \\( 7 + 8 = 15 \\). Write down 5 and carry over 1 to the tens column.",
@@ -110,7 +110,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 5 & 7 & 9 \\\\ + & 8 & 4 & 2 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c} & 5 & 7 & 9 \\\\ + & 8 & 4 & 2 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Add the units column: \\( 9 + 2 = 11 \\). Write down 1 and carry over 1 to the tens column.",
@@ -143,7 +143,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 8 & 6 & 4 \\\\ + & 3 & 8 & 7 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c} & 8 & 6 & 4 \\\\ + & 3 & 8 & 7 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Add the units column: \\( 4 + 7 = 11 \\). Write down 1 and carry over 1.",
@@ -172,7 +172,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 3 & 2 & 0 & 8 \\\\ + & & 8 & 9 & 7 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c c} & 3 & 2 & 0 & 8 \\\\ + & & 8 & 9 & 7 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Add the units: \\( 8 + 7 = 15 \\). Write 5, carry 1.",
@@ -305,7 +305,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Align the numbers vertically by place value.",
-        "workingOut": "\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & & 4 & 6 \\\\ & & 2 & 3 & 8 \\\\ + & 1 & 5 & 8 & 4 \\\\ \\hline \\end{array}"
+        "workingOut": "\\begin{array}{r c c c c} & & & 4 & 6 \\\\ & & 2 & 3 & 8 \\\\ + & 1 & 5 & 8 & 4 \\\\ \\hline \\end{array}"
       },
       {
         "explanation": "Units column: \\( 6 + 8 + 4 = 18 \\). Write 8, carry 1.",
@@ -454,7 +454,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 5 & A & 7 \\\\ + & B & 4 & 8 \\\\ \\hline & 8 & 9 & 5 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c} & 5 & A & 7 \\\\ + & B & 4 & 8 \\\\ \\hline & 8 & 9 & 5 \\end{array}\\)",
     "a": "4",
     "solutionSteps": [
       {
@@ -475,7 +475,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 5 & A & 7 \\\\ + & B & 4 & 8 \\\\ \\hline & 8 & 9 & 5 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c} & 5 & A & 7 \\\\ + & B & 4 & 8 \\\\ \\hline & 8 & 9 & 5 \\end{array}\\)",
     "a": "3",
     "solutionSteps": [
       {
@@ -496,7 +496,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
     "a": "2",
     "solutionSteps": [
       {
@@ -517,7 +517,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
     "a": "1",
     "solutionSteps": [
       {
@@ -538,7 +538,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( C \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
+    "question": "Find the missing digit \\( C \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
     "a": "7",
     "solutionSteps": [
       {
@@ -555,7 +555,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( D \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
+    "question": "Find the missing digit \\( D \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c} & 7 & A & 5 \\\\ + & B & 8 & C \\\\ \\hline & D & 1 & 2 \\end{array}\\)",
     "a": "9",
     "solutionSteps": [
       {
@@ -572,7 +572,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 8 & 2 & 8 \\\\ + & & 7 & 8 & A \\\\ \\hline & 1 & B & 1 & 6 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 8 & 2 & 8 \\\\ + & & 7 & 8 & A \\\\ \\hline & 1 & B & 1 & 6 \\end{array}\\)",
     "a": "8",
     "solutionSteps": [
       {
@@ -589,7 +589,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 8 & 2 & 8 \\\\ + & & 7 & 8 & A \\\\ \\hline & 1 & B & 1 & 6 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 8 & 2 & 8 \\\\ + & & 7 & 8 & A \\\\ \\hline & 1 & B & 1 & 6 \\end{array}\\)",
     "a": "6",
     "solutionSteps": [
       {
@@ -610,7 +610,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 5 & A & 4 \\\\ + & & B & 7 & 8 \\\\ \\hline & 1 & 3 & 6 & 2 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 5 & A & 4 \\\\ + & & B & 7 & 8 \\\\ \\hline & 1 & 3 & 6 & 2 \\end{array}\\)",
     "a": "8",
     "solutionSteps": [
       {
@@ -631,7 +631,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 5 & A & 4 \\\\ + & & B & 7 & 8 \\\\ \\hline & 1 & 3 & 6 & 2 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 5 & A & 4 \\\\ + & & B & 7 & 8 \\\\ \\hline & 1 & 3 & 6 & 2 \\end{array}\\)",
     "a": "7",
     "solutionSteps": [
       {
@@ -652,7 +652,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 6 & A & 2 \\\\ + & & B & 8 & 5 \\\\ \\hline & 1 & 0 & 7 & C \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 6 & A & 2 \\\\ + & & B & 8 & 5 \\\\ \\hline & 1 & 0 & 7 & C \\end{array}\\)",
     "a": "9",
     "solutionSteps": [
       {
@@ -673,7 +673,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 6 & A & 2 \\\\ + & & B & 8 & 5 \\\\ \\hline & 1 & 0 & 7 & C \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 6 & A & 2 \\\\ + & & B & 8 & 5 \\\\ \\hline & 1 & 0 & 7 & C \\end{array}\\)",
     "a": "3",
     "solutionSteps": [
       {
@@ -694,7 +694,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( C \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 6 & A & 2 \\\\ + & & B & 8 & 5 \\\\ \\hline & 1 & 0 & 7 & C \\end{array}\\)",
+    "question": "Find the missing digit \\( C \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 6 & A & 2 \\\\ + & & B & 8 & 5 \\\\ \\hline & 1 & 0 & 7 & C \\end{array}\\)",
     "a": "7",
     "solutionSteps": [
       {
@@ -711,7 +711,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 4 & A & 5 \\\\ + & & 8 & 8 & B \\\\ \\hline & C & 3 & 3 & 0 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 4 & A & 5 \\\\ + & & 8 & 8 & B \\\\ \\hline & C & 3 & 3 & 0 \\end{array}\\)",
     "a": "4",
     "solutionSteps": [
       {
@@ -732,7 +732,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 4 & A & 5 \\\\ + & & 8 & 8 & B \\\\ \\hline & C & 3 & 3 & 0 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 4 & A & 5 \\\\ + & & 8 & 8 & B \\\\ \\hline & C & 3 & 3 & 0 \\end{array}\\)",
     "a": "5",
     "solutionSteps": [
       {
@@ -749,7 +749,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "The standard addition algorithm",
-    "question": "Find the missing digit \\( C \\) to make the column addition correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & 4 & A & 5 \\\\ + & & 8 & 8 & B \\\\ \\hline & C & 3 & 3 & 0 \\end{array}\\)",
+    "question": "Find the missing digit \\( C \\) to make the column addition correct:\n\n\\(\\begin{array}{r c c c c} & & 4 & A & 5 \\\\ + & & 8 & 8 & B \\\\ \\hline & C & 3 & 3 & 0 \\end{array}\\)",
     "a": "1",
     "solutionSteps": [
       {
@@ -972,7 +972,7 @@ export const Y7_CH1C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "The standard addition algorithm",
-    "question": "Complete the column addition below by finding the missing digits in the boxes:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & & [A] & 7 & 4 \\\\ & & 6 & [B] & 5 \\\\ + & & 4 & 8 & [C] \\\\ \\hline & [D] & 0 & 1 & 7 \\end{array}\\)",
+    "question": "Complete the column addition below by finding the missing digits in the boxes:\n\n\\(\\begin{array}{r c c c c} & & [A] & 7 & 4 \\\\ & & 6 & [B] & 5 \\\\ + & & 4 & 8 & [C] \\\\ \\hline & [D] & 0 & 1 & 7 \\end{array}\\)",
     "subQuestions": [
       {
         "id": "y7-1c-q10a",

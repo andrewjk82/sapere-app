@@ -12,15 +12,15 @@ export const Y7_CH1H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: 'Set up the multiplication vertically.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} 42 \\\\ \\times \\quad 6 \\\\ \\hline \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} 42 \\\\ \\times \\quad 6 \\\\ \\hline \\end{array}\\)'
       },
       {
         explanation: 'Multiply the units: \\(2 \\times 6 = 12\\). Write down 2 and carry over 1 to the tens column.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} \\overset{1}{\\phantom{0}}42 \\\\ \\times \\quad 6 \\\\ \\hline 2 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} \\overset{1}{\\phantom{0}}42 \\\\ \\times \\quad 6 \\\\ \\hline 2 \\end{array}\\)'
       },
       {
         explanation: 'Multiply the tens: \\(4 \\times 6 = 24\\). Add the carried over 1: \\(24 + 1 = 25\\). Write down 25.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} \\overset{1}{\\phantom{0}}42 \\\\ \\times \\quad 6 \\\\ \\hline 252 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} \\overset{1}{\\phantom{0}}42 \\\\ \\times \\quad 6 \\\\ \\hline 252 \\end{array}\\)'
       },
       {
         explanation: 'The final answer is 252.',
@@ -41,15 +41,15 @@ export const Y7_CH1H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: 'Multiply the units: \\(4 \\times 5 = 20\\). Write 0, carry 2.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} \\overset{\\phantom{0}2}{624} \\\\ \\times \\quad 5 \\\\ \\hline 0 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} \\overset{\\phantom{0}2}{624} \\\\ \\times \\quad 5 \\\\ \\hline 0 \\end{array}\\)'
       },
       {
         explanation: 'Multiply the tens: \\(2 \\times 5 = 10\\). Add the carried 2: \\(10 + 2 = 12\\). Write 2, carry 1.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} \\overset{12}{624} \\\\ \\times \\quad 5 \\\\ \\hline 20 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} \\overset{12}{624} \\\\ \\times \\quad 5 \\\\ \\hline 20 \\end{array}\\)'
       },
       {
         explanation: 'Multiply the hundreds: \\(6 \\times 5 = 30\\). Add the carried 1: \\(30 + 1 = 31\\). Write 31.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} \\overset{12}{624} \\\\ \\times \\quad 5 \\\\ \\hline 3120 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} \\overset{12}{624} \\\\ \\times \\quad 5 \\\\ \\hline 3120 \\end{array}\\)'
       },
       {
         explanation: 'The final answer is 3120.',
@@ -113,7 +113,7 @@ export const Y7_CH1H_QUESTIONS = [
       },
       {
         explanation: 'Add the two results together to find the final product.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} 2810 \\\\ + \\; 16860 \\\\ \\hline 19670 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} 2810 \\\\ + \\; 16860 \\\\ \\hline 19670 \\end{array}\\)'
       },
       {
         explanation: 'The final answer is 19670.',
@@ -142,7 +142,7 @@ export const Y7_CH1H_QUESTIONS = [
       },
       {
         explanation: 'Add the two results together.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} 2428 \\\\ + \\; 42490 \\\\ \\hline 44918 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} 2428 \\\\ + \\; 42490 \\\\ \\hline 44918 \\end{array}\\)'
       },
       {
         explanation: 'The final answer is 44918.',
@@ -175,7 +175,7 @@ export const Y7_CH1H_QUESTIONS = [
       },
       {
         explanation: 'Add the three results together.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} 2475 \\\\ 41250 \\\\ + \\; 330000 \\\\ \\hline 373725 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} 2475 \\\\ 41250 \\\\ + \\; 330000 \\\\ \\hline 373725 \\end{array}\\)'
       },
       {
         explanation: 'The final answer is 373725.',
@@ -202,7 +202,7 @@ export const Y7_CH1H_QUESTIONS = [
       },
       {
         explanation: 'Perform the multiplication.',
-        workingOut: '\\(\\begin{array}{r@{\\quad}l} 24 \\\\ \\times \\quad 8 \\\\ \\hline 192 \\end{array}\\)'
+        workingOut: '\\(\\begin{array}{r l} 24 \\\\ \\times \\quad 8 \\\\ \\hline 192 \\end{array}\\)'
       },
       {
         explanation: 'The teacher needs to supply 192 pencils.',
@@ -387,7 +387,7 @@ export const Y7_CH1H_QUESTIONS = [
     type: 'teacher_review',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'Copy and complete the following short multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r@{\\quad}l} * \\; 8 \\\\ \\times \\quad 6 \\\\ \\hline 5 \\; 2 \\; * \\end{array}\\)',
+    question: 'Copy and complete the following short multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r l} * \\; 8 \\\\ \\times \\quad 6 \\\\ \\hline 5 \\; 2 \\; * \\end{array}\\)',
     a: '88 x 6 = 528',
     t: 'The standard multiplication algorithms',
     hint: 'Look at the units column first: 8 x 6. What does it end in?',
@@ -420,7 +420,7 @@ export const Y7_CH1H_QUESTIONS = [
     type: 'teacher_review',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'Copy and complete the following short multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r@{\\quad}l} * \\; * \\; 7 \\\\ \\times \\quad 4 \\\\ \\hline 9 \\; 0 \\; * \\end{array}\\)',
+    question: 'Copy and complete the following short multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r l} * \\; * \\; 7 \\\\ \\times \\quad 4 \\\\ \\hline 9 \\; 0 \\; * \\end{array}\\)',
     a: '227 x 4 = 908',
     t: 'The standard multiplication algorithms',
     hint: 'Look at the units column first: 7 x 4. What does it end in?',
@@ -457,7 +457,7 @@ export const Y7_CH1H_QUESTIONS = [
     type: 'teacher_review',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'Copy and complete the following long multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r@{\\quad}l} * \\; * \\; * \\\\ \\times \\quad * \\; 4 \\\\ \\hline 8 \\; 5 \\; 2 \\\\ * \\; * \\; * \\; 0 \\\\ \\hline 5 \\; 1 \\; 1 \\; 2 \\end{array}\\)',
+    question: 'Copy and complete the following long multiplication by finding the correct digit for each star (*):\n\\(\\begin{array}{r l} * \\; * \\; * \\\\ \\times \\quad * \\; 4 \\\\ \\hline 8 \\; 5 \\; 2 \\\\ * \\; * \\; * \\; 0 \\\\ \\hline 5 \\; 1 \\; 1 \\; 2 \\end{array}\\)',
     a: '213 x 24 = 5112',
     t: 'The standard multiplication algorithms',
     hint: 'Use division to find the top number. 852 is the result of multiplying the top number by 4.',

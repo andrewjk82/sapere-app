@@ -491,7 +491,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c} & 8 & 5 \\\\ - & 3 & A \\\\ \\hline & B & 8 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c} & 8 & 5 \\\\ - & 3 & A \\\\ \\hline & B & 8 \\end{array}\\)",
     "a": "7",
     "solutionSteps": [
       {
@@ -508,7 +508,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c} & 8 & 5 \\\\ - & 3 & A \\\\ \\hline & B & 8 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c} & 8 & 5 \\\\ - & 3 & A \\\\ \\hline & B & 8 \\end{array}\\)",
     "a": "4",
     "solutionSteps": [
       {
@@ -525,7 +525,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c} & 8 & A \\\\ - & B & 6 \\\\ \\hline & 3 & 8 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c} & 8 & A \\\\ - & B & 6 \\\\ \\hline & 3 & 8 \\end{array}\\)",
     "a": "4",
     "solutionSteps": [
       {
@@ -542,7 +542,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c} & 8 & A \\\\ - & B & 6 \\\\ \\hline & 3 & 8 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c} & 8 & A \\\\ - & B & 6 \\\\ \\hline & 3 & 8 \\end{array}\\)",
     "a": "4",
     "solutionSteps": [
       {
@@ -559,7 +559,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
     "a": "3",
     "solutionSteps": [
       {
@@ -580,7 +580,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
     "a": "5",
     "solutionSteps": [
       {
@@ -597,7 +597,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( C \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
+    "question": "Find the missing digit \\( C \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
     "a": "3",
     "solutionSteps": [
       {
@@ -618,7 +618,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( D \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
+    "question": "Find the missing digit \\( D \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array}\\)",
     "a": "3",
     "solutionSteps": [
       {
@@ -635,7 +635,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array}\\)",
     "a": "1",
     "solutionSteps": [
       {
@@ -660,7 +660,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array}\\)",
     "a": "5",
     "solutionSteps": [
       {
@@ -677,7 +677,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( C \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array}\\)",
+    "question": "Find the missing digit \\( C \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array}\\)",
     "a": "3",
     "solutionSteps": [
       {
@@ -694,7 +694,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array}\\)",
     "a": "2",
     "solutionSteps": [
       {
@@ -719,7 +719,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array}\\)",
     "a": "7",
     "solutionSteps": [
       {
@@ -736,7 +736,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( C \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array}\\)",
+    "question": "Find the missing digit \\( C \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array}\\)",
     "a": "9",
     "solutionSteps": [
       {
@@ -753,7 +753,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 6 & 4 & 8 & A \\\\ - & 3 & 2 & 5 & 7 \\\\ \\hline & 3 & 2 & B & 9 \\end{array}\\)",
+    "question": "Find the missing digit \\( A \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 6 & 4 & 8 & A \\\\ - & 3 & 2 & 5 & 7 \\\\ \\hline & 3 & 2 & B & 9 \\end{array}\\)",
     "a": "6",
     "solutionSteps": [
       {
@@ -770,7 +770,7 @@ export const Y7_CH1D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Subtraction",
-    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r@{\\quad}c@{\\quad}c@{\\quad}c@{\\quad}c} & 6 & 4 & 8 & A \\\\ - & 3 & 2 & 5 & 7 \\\\ \\hline & 3 & 2 & B & 9 \\end{array}\\)",
+    "question": "Find the missing digit \\( B \\) to make the vertical subtraction correct:\n\n\\(\\begin{array}{r c c c c} & 6 & 4 & 8 & A \\\\ - & 3 & 2 & 5 & 7 \\\\ \\hline & 3 & 2 & B & 9 \\end{array}\\)",
     "a": "2",
     "solutionSteps": [
       {

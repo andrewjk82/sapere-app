@@ -946,6 +946,25 @@ const StudentDetail = ({ studentId, onBack }) => {
     }).catch(() => setHomeworkLoading(false));
   }, [activeTab, activeStudentId]);
 
+  // Toggle a homework session's completed flag (teacher checks off HW as done).
+  const toggleHomeworkComplete = async (session) => {
+    if (!session?.id) return;
+    const next = !(session.isHomeworkCompleted === true);
+    // Optimistic update so the UI responds instantly.
+    setHomeworkSessions((prev) => prev.map((s) => s.id === session.id ? { ...s, isHomeworkCompleted: next } : s));
+    try {
+      await updateDoc(doc(db, 'sessions', session.id), {
+        isHomeworkCompleted: next,
+        homeworkCompletedAt: next ? new Date().toISOString() : null,
+      });
+      showToast(next ? 'Homework marked as completed.' : 'Homework set back to pending.', 'success');
+    } catch (err) {
+      // Revert on failure.
+      setHomeworkSessions((prev) => prev.map((s) => s.id === session.id ? { ...s, isHomeworkCompleted: !next } : s));
+      showToast('Failed to update homework status.', 'error');
+    }
+  };
+
   const handleUpdateProfile = async () => {
     try {
       const normalizedRole = editForm.role || "";
@@ -1998,6 +2017,28 @@ const StudentDetail = ({ studentId, onBack }) => {
                     {session.notes && (
                       <div style={{ marginTop: '10px', padding: '10px 12px', background: '#f8fafc', borderRadius: '10px', fontSize: '0.82rem', color: '#475569', fontWeight: 600, lineHeight: 1.5 }}>
                         📝 {session.notes}
+                      </div>
+                    )}
+
+                    {/* Complete toggle — teacher checks HW off as done */}
+                    {session.homework && (
+                      <div style={{ marginTop: '14px', display: 'flex', justifyContent: 'flex-end' }}>
+                        <button
+                          onClick={() => toggleHomeworkComplete(session)}
+                          style={{
+                            display: 'inline-flex', alignItems: 'center', gap: '7px',
+                            padding: '9px 16px', borderRadius: '12px', cursor: 'pointer',
+                            border: `1.5px solid ${done ? '#bbf7d0' : '#ddd6fe'}`,
+                            background: done ? '#f0fdf4' : 'linear-gradient(135deg, #a78bfa, #7c3aed)',
+                            color: done ? '#15803d' : '#fff',
+                            fontSize: '0.82rem', fontWeight: 800,
+                            boxShadow: done ? 'none' : '0 6px 16px rgba(124,58,237,0.22)',
+                          }}
+                        >
+                          {done
+                            ? <><CheckCircle2 size={15} /> Completed · tap to undo</>
+                            : <><Circle size={15} /> Mark as completed</>}
+                        </button>
                       </div>
                     )}
                   </div>

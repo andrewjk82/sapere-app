@@ -13,6 +13,9 @@ import MathView from './MathView';
 import { answersMatch } from '../utils/answerMatching';
 import MathInput from './MathInput';
 import ChallengeSketchBoard from './challenge/ChallengeSketchBoard';
+import LessonPlayer from './lessons/LessonPlayer';
+import { getLesson } from '../lessons/registry';
+import { GraduationCap, Volume2 } from 'lucide-react';
 
 // Fisher–Yates shuffle (returns a new array).
 const shuffleArray = (arr) => {
@@ -143,6 +146,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const sketchRef = useRef(null);
   const viewportW = useViewportWidth();
   const isWide = viewportW >= 980;
+  // Authored step-by-step lesson for this topic (only some topics have one).
+  const lesson = getLesson(topic.id);
+  const [showLesson, setShowLesson] = useState(false);
 
   // Load questions for this topic
   useEffect(() => {
@@ -396,23 +402,46 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           )}
         </div>
 
-        {loading ? (
-          <div style={{ textAlign: 'center', padding: '60px', color: '#94a3b8', fontWeight: 700 }}>Loading questions…</div>
-        ) : total === 0 ? (
-          // Empty state
-          <div style={{
-            padding: '60px 30px', textAlign: 'center', borderRadius: '22px',
-            background: '#fff', border: '1px dashed #e2e8f0',
-          }}>
-            <BookOpen size={40} style={{ color: '#cbd5e1', margin: '0 auto 12px', display: 'block' }} />
-            <div style={{ fontWeight: 800, color: '#475569', fontSize: '1rem' }}>No practice questions yet</div>
-            <div style={{ color: '#94a3b8', marginTop: '6px', fontSize: '0.88rem', fontWeight: 600 }}>
-              Your teacher will add questions for this topic soon.
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {/* Learn step-by-step — shown whenever an authored lesson exists,
+              regardless of whether practice questions have been added yet. */}
+          {lesson && (
+            <motion.button
+              onClick={() => setShowLesson(true)}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              style={{
+                width: '100%', padding: '16px', borderRadius: '18px',
+                background: '#fff', border: '2px solid #ddd6fe',
+                color: '#7c3aed', fontFamily: '"Outfit", sans-serif',
+                fontSize: '1rem', fontWeight: 900, cursor: 'pointer',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
+                boxShadow: '0 6px 18px rgba(124,58,237,0.10)',
+              }}
+            >
+              <GraduationCap size={19} /> Learn step-by-step
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.72rem', fontWeight: 800, color: '#94a3b8' }}>
+                <Volume2 size={12} /> with voice
+              </span>
+            </motion.button>
+          )}
+
+          {loading ? (
+            <div style={{ textAlign: 'center', padding: '60px', color: '#94a3b8', fontWeight: 700 }}>Loading questions…</div>
+          ) : total === 0 ? (
+            // Empty state
+            <div style={{
+              padding: '60px 30px', textAlign: 'center', borderRadius: '22px',
+              background: '#fff', border: '1px dashed #e2e8f0',
+            }}>
+              <BookOpen size={40} style={{ color: '#cbd5e1', margin: '0 auto 12px', display: 'block' }} />
+              <div style={{ fontWeight: 800, color: '#475569', fontSize: '1rem' }}>No practice questions yet</div>
+              <div style={{ color: '#94a3b8', marginTop: '6px', fontSize: '0.88rem', fontWeight: 600 }}>
+                Your teacher will add questions for this topic soon.
+              </div>
             </div>
-          </div>
-        ) : (
-          <>
-            {/* Start button */}
+          ) : (
+            // Start button
             <motion.button
               onClick={() => { setCurrentIdx(0); setResults([]); setView('quiz'); }}
               whileHover={{ scale: 1.02 }}
@@ -429,7 +458,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
               <Play size={20} fill="#fff" />
               {topic.pct > 0 ? 'Practice again' : 'Start practice'}
             </motion.button>
-          </>
+          )}
+        </div>
+
+        {/* Step-by-step lesson overlay */}
+        {showLesson && lesson && (
+          <LessonPlayer lesson={lesson} onClose={() => setShowLesson(false)} />
         )}
       </motion.div>
     );
@@ -498,7 +532,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                     <div style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#7c3aed', color: '#fff', display: 'grid', placeItems: 'center', fontSize: '0.8rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + i)}
                     </div>
-                    <MathView content={sq.question} graphData={sq.requiresManualGrading || sq.type === 'teacher_review' ? (submitted ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
+                    <MathView content={sq.question} graphData={sq.type === 'graph_sketch' ? (submitted ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
                   </div>
                   {sq.type === 'multiple_choice' ? (
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -707,7 +741,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
           <MathView
             content={q?.question}
-            graphData={q?.requiresManualGrading || q?.type === 'teacher_review' ? (submitted ? q?.graphData : null) : q?.graphData}
+            graphData={q?.type === 'graph_sketch' ? (submitted ? q?.graphData : null) : q?.graphData}
             style={{ fontSize: '1.1rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.7 }}
           />
 

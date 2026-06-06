@@ -453,7 +453,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         explanation: "Add these numbers together, noting the zero placeholders.",
-        workingOut: "\\begin{array}{r@{\\quad}l} 6,000,000 & \\\\ 72,000 & \\\\ + \\quad \\quad \\quad 5 & \\\\ \\hline \\mathbf{6,072,005} & \\end{array}"
+        workingOut: "\\begin{array}{r l} 6,000,000 & \\\\ 72,000 & \\\\ + \\quad \\quad \\quad 5 & \\\\ \\hline \\mathbf{6,072,005} & \\end{array}"
       }
     ]
   },
@@ -765,7 +765,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     solutionSteps: [
       {
         explanation: "Align numbers vertically by place value.",
-        workingOut: "\\begin{array}{r@{\\quad}l} 85,314 & \\\\ - \\quad 67,429 & \\\\ \\hline \\end{array}"
+        workingOut: "\\begin{array}{r l} 85,314 & \\\\ - \\quad 67,429 & \\\\ \\hline \\end{array}"
       },
       {
         explanation: "Subtract column-by-column starting from units, borrowing from the next left columns where necessary.",
@@ -799,7 +799,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         explanation: "Sum the three partial products.",
-        workingOut: "\\begin{array}{r@{\\quad}l} 18,760 & \\\\ 140,700 & \\\\ + \\quad 234,500 & \\\\ \\hline \\mathbf{393,960} & \\end{array}"
+        workingOut: "\\begin{array}{r l} 18,760 & \\\\ 140,700 & \\\\ + \\quad 234,500 & \\\\ \\hline \\mathbf{393,960} & \\end{array}"
       }
     ]
   },
@@ -840,7 +840,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     solutionSteps: [
       {
         explanation: "Align the digits vertically.",
-        workingOut: "\\begin{array}{r@{\\quad}l} 2146 & \\\\ 824 & \\\\ 513 & \\\\ 27 & \\\\ + \\quad \\quad 9 & \\\\ \\hline \\end{array}"
+        workingOut: "\\begin{array}{r l} 2146 & \\\\ 824 & \\\\ 513 & \\\\ 27 & \\\\ + \\quad \\quad 9 & \\\\ \\hline \\end{array}"
       },
       {
         explanation: "Add the units column ($6+4+3+7+9 = 29$), write $9$, carry $2$. Add the tens column ($2 \\text{ carried} + 4 + 2 + 1 + 2 = 11$), write $1$, carry $1$. Add the hundreds column ($1 \\text{ carried} + 1 + 8 + 5 = 15$), write $5$, carry $1$. Add the thousands column ($1 \\text{ carried} + 2 = 3$).",
@@ -892,7 +892,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         explanation: "Sum the two partial products.",
-        workingOut: "\\begin{array}{r@{\\quad}l} 1,404 & \\\\ + \\quad 2,340 & \\\\ \\hline \\mathbf{3,744} & \\end{array}"
+        workingOut: "\\begin{array}{r l} 1,404 & \\\\ + \\quad 2,340 & \\\\ \\hline \\mathbf{3,744} & \\end{array}"
       }
     ]
   },
