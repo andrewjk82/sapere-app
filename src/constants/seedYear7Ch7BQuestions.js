@@ -1,11 +1,11 @@
-export const Y7_CH6A_QUESTIONS = [
+export const Y7_CH7B_QUESTIONS = [
   // ── QUESTION 1a ──
   {
-    id: "y7-6a-q1a",
+    id: "y7-7b-q1a",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is multiplied by 5 and then divided by 4.",
     a: "5x/4",
     hint: "Multiplication by 5 gives \\(5x\\). How do you write division by 4 as a fraction?",
@@ -22,11 +22,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1b ──
   {
-    id: "y7-6a-q1b",
+    id: "y7-7b-q1b",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is divided by 5 and then multiplied by 2.",
     a: "2x/5",
     hint: "First divide \\(x\\) by 5 to get a fraction, then multiply the whole term by 2.",
@@ -43,11 +43,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1c ──
   {
-    id: "y7-6a-q1c",
+    id: "y7-7b-q1c",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is multiplied by 4, divided by 3, and 7 is added to the result.",
     a: "4x/3 + 7",
     hint: "Follow the operations step-by-step: multiply, divide, and then add.",
@@ -68,11 +68,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1d ──
   {
-    id: "y7-6a-q1d",
+    id: "y7-7b-q1d",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is multiplied by 3, then 4 is subtracted from the result, and the result of this is then divided by 2.",
     a: "(3x-4)/2",
     hint: "Use fraction notation to show that the entire subtraction is divided by 2.",
@@ -93,11 +93,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1e ──
   {
-    id: "y7-6a-q1e",
+    id: "y7-7b-q1e",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): 2/5 of a number.",
     a: "2x/5",
     hint: "Recall that 'of' in mathematics indicates multiplication.",
@@ -110,11 +110,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1f ──
   {
-    id: "y7-6a-q1f",
+    id: "y7-7b-q1f",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): 5 is added to 3/7 of a number.",
     a: "3x/7 + 5",
     hint: "Find 3/7 of \\(x\\) first, then add 5.",
@@ -131,11 +131,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1g ──
   {
-    id: "y7-6a-q1g",
+    id: "y7-7b-q1g",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): 9 is added to a number multiplied by 4/5.",
     a: "4x/5 + 9",
     hint: "First multiply \\(x\\) by 4/5, then add 9.",
@@ -152,11 +152,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1h ──
   {
-    id: "y7-6a-q1h",
+    id: "y7-7b-q1h",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is divided by 4, then 5 is added to the result, and the result of this is then multiplied by 3.",
     a: "3(x/4 + 5)",
     hint: "Use brackets to group the division and addition before multiplying by 3.",
@@ -177,11 +177,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1i ──
   {
-    id: "y7-6a-q1i",
+    id: "y7-7b-q1i",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is divided by 6, then 3 is subtracted from the result, and the result of this is then multiplied by 5.",
     a: "5(x/6 - 3)",
     hint: "Make sure brackets enclose the subtraction before multiplying by 5.",
@@ -202,11 +202,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1j ──
   {
-    id: "y7-6a-q1j",
+    id: "y7-7b-q1j",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): 2 is taken away from 3/4 of a number, and the result of this is then multiplied by 5.",
     a: "5(3x/4 - 2)",
     hint: "Recall that 'taken away from' indicates subtraction.",
@@ -223,11 +223,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1k ──
   {
-    id: "y7-6a-q1k",
+    id: "y7-7b-q1k",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): 3/5 of a number is subtracted from 12, and the result of this is then multiplied by 2/3.",
     a: "2/3(12 - 3x/5)",
     hint: "Subtract \\(\\frac{3x}{5}\\) from 12, then multiply by \\(\\frac{2}{3}\\).",
@@ -244,11 +244,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1l ──
   {
-    id: "y7-6a-q1l",
+    id: "y7-7b-q1l",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): 3/8 of a number is subtracted from 4/5, and the result of this is then multiplied by 3/7.",
     a: "3/7(4/5 - 3x/8)",
     hint: "Write the subtraction expression inside brackets first.",
@@ -265,11 +265,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 1m ──
   {
-    id: "y7-6a-q1m",
+    id: "y7-7b-q1m",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Write this expression using algebraic notation, using the pronumeral \\(x\\): A number is multiplied by itself, and the result is then multiplied by 3/5.",
     a: "3x^2/5",
     hint: "A number multiplied by itself is \\(x^2\\).",
@@ -286,11 +286,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 2a ──
   {
-    id: "y7-6a-q2a",
+    id: "y7-7b-q2a",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{5x}{3}\\) for \\(x = 9\\).",
     a: "15",
     hint: "Substitute 9 for \\(x\\) and simplify.",
@@ -307,11 +307,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 2b ──
   {
-    id: "y7-6a-q2b",
+    id: "y7-7b-q2b",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{7x}{4} - 5\\) for \\(x = 8\\).",
     a: "9",
     hint: "Perform the division first before subtracting 5.",
@@ -332,11 +332,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 2c ──
   {
-    id: "y7-6a-q2c",
+    id: "y7-7b-q2c",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{2(x + 3)}{5}\\) for \\(x = 7\\).",
     a: "4",
     hint: "Add 3 to \\(x\\) first inside the bracket.",
@@ -357,11 +357,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 3a ──
   {
-    id: "y7-6a-q3a",
+    id: "y7-7b-q3a",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{3(x + 6)}{8}\\) for \\(x = 2\\).",
     a: "3",
     hint: "Substitute 2 for \\(x\\) and compute.",
@@ -382,11 +382,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 3b ──
   {
-    id: "y7-6a-q3b",
+    id: "y7-7b-q3b",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{3x}{6} + 7\\) for \\(x = 2\\).",
     a: "8",
     hint: "Evaluate the fraction term before adding 7.",
@@ -407,11 +407,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 3c ──
   {
-    id: "y7-6a-q3c",
+    id: "y7-7b-q3c",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(9\\left(\\frac{x - 2}{4}\\right)\\) for \\(x = 6\\).",
     a: "9",
     hint: "Compute the bracket first.",
@@ -432,11 +432,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 3d ──
   {
-    id: "y7-6a-q3d",
+    id: "y7-7b-q3d",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(10 - \\frac{5x}{3}\\) for \\(x = 3\\).",
     a: "5",
     hint: "Subtract the value of the fraction from 10.",
@@ -457,11 +457,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4a ──
   {
-    id: "y7-6a-q4a",
+    id: "y7-7b-q4a",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{3(x + 40)}{5}\\) for \\(x = 60\\).",
     a: "60",
     hint: "Substitute 60 and solve step-by-step.",
@@ -482,7 +482,7 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4b ──
   {
-    id: "y7-6a-q4b",
+    id: "y7-7b-q4b",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
@@ -507,12 +507,12 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4c ──
   {
-    id: "y7-6a-q4c",
+    id: "y7-7b-q4c",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
     t: "Division in algebra",
-    question: "Evaluate \\(2\\left(\\frac{x - 30}{6}\right)\\) for \\(x = 60\\).",
+    question: "Evaluate \\(2\\left(\\frac{x - 30}{6}\\right)\\) for \\(x = 60\\).",
     a: "10",
     hint: "Evaluate inside the bracket first.",
     solutionSteps: [
@@ -532,7 +532,7 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4d ──
   {
-    id: "y7-6a-q4d",
+    id: "y7-7b-q4d",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
@@ -557,7 +557,7 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4e ──
   {
-    id: "y7-6a-q4e",
+    id: "y7-7b-q4e",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
@@ -582,7 +582,7 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4f ──
   {
-    id: "y7-6a-q4f",
+    id: "y7-7b-q4f",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
@@ -607,7 +607,7 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4g ──
   {
-    id: "y7-6a-q4g",
+    id: "y7-7b-q4g",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
@@ -632,7 +632,7 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 4h ──
   {
-    id: "y7-6a-q4h",
+    id: "y7-7b-q4h",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
@@ -661,12 +661,12 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5a ──
   {
-    id: "y7-6a-q5a",
+    id: "y7-7b-q5a",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
-    question: "Evaluate \\(m + n\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\). Write your answer as a simplified mixed numeral or fraction (e.g. 6 1/3 or 19/3).",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
+    question: "Evaluate \\(m + n\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\). Write your answer as a simplified fraction.",
     a: "19/3",
     hint: "Add the integer and the fraction together.",
     solutionSteps: [
@@ -682,11 +682,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5b ──
   {
-    id: "y7-6a-q5b",
+    id: "y7-7b-q5b",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(2m + n\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\). Write your answer as a simplified fraction.",
     a: "37/3",
     hint: "Multiply \\(m\\) by 2 before adding \\(n\\).",
@@ -707,11 +707,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5c ──
   {
-    id: "y7-6a-q5c",
+    id: "y7-7b-q5c",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(2m - 3n\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\).",
     a: "11",
     hint: "Multiply each variable first, then subtract.",
@@ -726,17 +726,17 @@ export const Y7_CH6A_QUESTIONS = [
       },
       {
         explanation: "Subtract.",
-        workingOut: "11"
+        workingOut: "12 - 1 = 11"
       }
     ]
   },
   // ── QUESTION 5d ──
   {
-    id: "y7-6a-q5d",
+    id: "y7-7b-q5d",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{m}{3}\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\).",
     a: "2",
     hint: "Substitute \\(m = 6\\) and divide.",
@@ -753,11 +753,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5e ──
   {
-    id: "y7-6a-q5e",
+    id: "y7-7b-q5e",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(n \\div 2\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\). Write your answer as a fraction.",
     a: "1/6",
     hint: "Dividing a fraction by 2 is equivalent to multiplying the denominator by 2.",
@@ -774,11 +774,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5f ──
   {
-    id: "y7-6a-q5f",
+    id: "y7-7b-q5f",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(mn\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\).",
     a: "2",
     hint: "Multiply the integer by the fraction.",
@@ -795,11 +795,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5g ──
   {
-    id: "y7-6a-q5g",
+    id: "y7-7b-q5g",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(n \\div m\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\). Write your answer as a fraction.",
     a: "1/18",
     hint: "Recall that dividing by 6 is the same as multiplying by 1/6.",
@@ -816,11 +816,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 5h ──
   {
-    id: "y7-6a-q5h",
+    id: "y7-7b-q5h",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{m + n}{19}\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\). Write your answer as a fraction.",
     a: "1/3",
     hint: "First find \\(m + n\\) as an improper fraction, then divide by 19.",
@@ -837,11 +837,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 6a ──
   {
-    id: "y7-6a-q6a",
+    id: "y7-7b-q6a",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "The perimeter of a square with all sides of equal length is \\(x\\) cm. Find the length of each side in terms of \\(x\\).",
     a: "x/4",
     hint: "A square has 4 equal sides. Divide the total perimeter by 4.",
@@ -854,11 +854,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 6b ──
   {
-    id: "y7-6a-q6b",
+    id: "y7-7b-q6b",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "If the perimeter of the square is \\(x = 36\\) cm, find the length of each side.",
     a: "9",
     hint: "Substitute 36 into your expression for side length.",
@@ -875,11 +875,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 7a ──
   {
-    id: "y7-6a-q7a",
+    id: "y7-7b-q7a",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "A piece of string is \\(x\\) metres in length. It is divided into 6 equal parts. Find the length of each part in terms of \\(x\\).",
     a: "x/6",
     hint: "Divide the total length by the number of parts.",
@@ -892,11 +892,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 7bi ──
   {
-    id: "y7-6a-q7bi",
+    id: "y7-7b-q7bi",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "For the string divided into 6 equal parts, find the length of each part if \\(x = 18\\).",
     a: "3",
     hint: "Substitute 18 for \\(x\\) in \\(\\frac{x}{6}\\).",
@@ -913,11 +913,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 7bii ──
   {
-    id: "y7-6a-q7bii",
+    id: "y7-7b-q7bii",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "For the string divided into 6 equal parts, find the length of each part if \\(x = 45\\). Write your answer as a decimal or fraction.",
     a: "7.5",
     hint: "Substitute 45 for \\(x\\).",
@@ -934,11 +934,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 7biii ──
   {
-    id: "y7-6a-q7biii",
+    id: "y7-7b-q7biii",
     type: "short_answer",
     difficulty: "easy",
     timeLimit: 60,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "For the string divided into 6 equal parts, find the length of each part if \\(x = 84\\).",
     a: "14",
     hint: "Substitute 84 for \\(x\\).",
@@ -955,11 +955,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 8a ──
   {
-    id: "y7-6a-q8a",
+    id: "y7-7b-q8a",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "A number, \\(x\\), is tripled and the result is divided by 6. Write this using algebraic notation.",
     a: "x/2",
     hint: "Tripling \\(x\\) gives \\(3x\\). Divide this by 6 and simplify the fraction.",
@@ -976,11 +976,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 8b ──
   {
-    id: "y7-6a-q8b",
+    id: "y7-7b-q8b",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "If the number \\(x\\) is tripled and divided by 6, and \\(x = 8\\), what is the final result?",
     a: "4",
     hint: "Substitute 8 into your simplified expression \\(\\frac{x}{2}\\).",
@@ -997,11 +997,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 9a ──
   {
-    id: "y7-6a-q9a",
+    id: "y7-7b-q9a",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "A number, \\(x\\), is multiplied by 3/5, and 4 is subtracted from the result. Write this using algebraic notation.",
     a: "3x/5 - 4",
     hint: "Multiply \\(x\\) by 3/5 to get \\(\\frac{3x}{5}\\), then subtract 4.",
@@ -1018,11 +1018,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 9b ──
   {
-    id: "y7-6a-q9b",
+    id: "y7-7b-q9b",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Using the expression \\(\\frac{3x}{5} - 4\\), find the final result if \\(x = 15\\).",
     a: "5",
     hint: "Substitute 15 for \\(x\\).",
@@ -1043,11 +1043,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 10a ──
   {
-    id: "y7-6a-q10a",
+    id: "y7-7b-q10a",
     type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate the expression \\(3\\left(\\frac{m}{n} + 10\\right)\\) for \\(m = 8\\) and \\(n = \\frac{1}{4}\\).",
     a: "126",
     hint: "Recall that dividing by 1/4 is the same as multiplying by 4.",
@@ -1068,11 +1068,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 10b ──
   {
-    id: "y7-6a-q10b",
+    id: "y7-7b-q10b",
     type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(n\\left(\\frac{35 - m}{3}\\right)\\) for \\(m = 8\\) and \\(n = \\frac{1}{4}\\). Write your answer as a simplified fraction.",
     a: "9/4",
     hint: "Simplify the term inside brackets first.",
@@ -1093,36 +1093,36 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 10c ──
   {
-    id: "y7-6a-q10c",
+    id: "y7-7b-q10c",
     type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Division in algebra",
-    question: "Evaluate \\(m + \\frac{2m - 12n}{4}\\) for \\(m = 8\\) and \\(n = \\frac{1}{4}\\).",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
+    question: "Evaluate \\(m + \\frac{2m - 16n}{4}\\) for \\(m = 8\\) and \\(n = \\frac{1}{4}\\).",
     a: "11",
     hint: "Evaluate the numerator first, then divide by 4, and add \\(m\\).",
     solutionSteps: [
       {
         explanation: "Substitute the variables.",
-        workingOut: "8 + \\frac{2(8) - 12(\\frac{1}{4})}{4}"
+        workingOut: "8 + \\frac{2(8) - 16(\\frac{1}{4})}{4}"
       },
       {
         explanation: "Evaluate the numerator.",
-        workingOut: "8 + \\frac{16 - 3}{4} = 8 + \\frac{13}{4}"
+        workingOut: "8 + \\frac{16 - 4}{4} = 8 + \\frac{12}{4}"
       },
       {
-        explanation: "Wait, let's re-verify the values: m = 8, n = 1/4. The formula is: m + (2m - 12n)/4. Numerator is 2(8) - 12(1/4) = 16 - 3 = 13. So 8 + 13/4 = 45/4. Let's fix the question values to yield a nice whole number. Let's change 12n to 16n in the formula: 2m - 16n. Numerator is 16 - 4 = 12. 12 / 4 = 3. 8 + 3 = 11. Let's make the formula: \\(m + \\frac{2m - 16n}{4}\\).",
-        workingOut: "8 + \\frac{2(8) - 16(\\frac{1}{4})}{4} = 8 + \\frac{16 - 4}{4} = 8 + 3 = 11"
+        explanation: "Simplify and add.",
+        workingOut: "8 + 3 = 11"
       }
     ]
   },
   // ── QUESTION 10d ──
   {
-    id: "y7-6a-q10d",
+    id: "y7-7b-q10d",
     type: "short_answer",
-    difficulty: "hard",
-    timeLimit: 120,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "Evaluate \\(\\frac{m + 12}{n} - 2m\\) for \\(m = 8\\) and \\(n = \\frac{1}{4}\\).",
     a: "64",
     hint: "Substitute and evaluate the fraction by multiplying the numerator by 4.",
@@ -1143,11 +1143,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 11 ──
   {
-    id: "y7-6a-q11",
+    id: "y7-7b-q11",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "A supermarket charges \\(\\frac{a}{4}\\) dollars for \\(a\\) kg of apples, and \\(\\frac{c}{3}\\) dollars for \\(c\\) kg of bananas. If 12 kg of apples and 9 kg of bananas are bought, what is the total cost in dollars?",
     a: "63",
     hint: "Substitute \\(a = 12\\) and \\(c = 9\\) into each cost expression and find the total.",
@@ -1168,11 +1168,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 12a ──
   {
-    id: "y7-6a-q12a",
+    id: "y7-7b-q12a",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "A ribbon of length 15 m is divided into \\(x\\) parts of equal length. What is the length of each part in terms of \\(x\\)?",
     a: "15/x",
     hint: "Divide the total length by the number of parts.",
@@ -1185,11 +1185,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 12b ──
   {
-    id: "y7-6a-q12b",
+    id: "y7-7b-q12b",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "For the ribbon of length 15 m divided into \\(x\\) equal parts, if \\(x = 10\\), what is the length of each part?",
     a: "1.5",
     hint: "Substitute 10 for \\(x\\).",
@@ -1206,11 +1206,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 13 ──
   {
-    id: "y7-6a-q13",
+    id: "y7-7b-q13",
     type: "short_answer",
-    difficulty: "easy",
-    timeLimit: 60,
-    t: "Division in algebra",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
     question: "\\(x\\) kg of a swimming pool chemical cost 120 dollars. How much, in terms of \\(x\\), did 1 kg cost?",
     a: "120/x",
     hint: "Divide the total cost by the total weight.",
@@ -1223,11 +1223,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 14a ──
   {
-    id: "y7-6a-q14a",
+    id: "y7-7b-q14a",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "The area of a rectangle is \\(8x^2\\) cm\\(^2\\). The width of the rectangle is 4 cm. What is the length of the rectangle in terms of \\(x\\)?",
     a: "2x^2",
     hint: "Recall that Area = length * width. Divide Area by width to find length.",
@@ -1244,11 +1244,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 14b ──
   {
-    id: "y7-6a-q14b",
+    id: "y7-7b-q14b",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Using the expression \\(2x^2\\) for the length, what is the length of the rectangle if \\(x = 3\\)?",
     a: "18",
     hint: "Substitute 3 for \\(x\\) and evaluate the power before multiplying.",
@@ -1269,11 +1269,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 15a ──
   {
-    id: "y7-6a-q15a",
+    id: "y7-7b-q15a",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "The area of a rectangle is \\(10x^2\\) cm\\(^2\\). The width of the rectangle is 3 cm. What is the length of the rectangle in terms of \\(x\\)?",
     a: "10x^2/3",
     hint: "Divide Area by Width.",
@@ -1286,11 +1286,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 15b ──
   {
-    id: "y7-6a-q15b",
+    id: "y7-7b-q15b",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Using the expression \\(\\frac{10x^2}{3}\\), what is the length of the rectangle if \\(x = 6\\)?",
     a: "120",
     hint: "Substitute 6 for \\(x\\).",
@@ -1311,11 +1311,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16a ──
   {
-    id: "y7-6a-q16a",
+    id: "y7-7b-q16a",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(a - b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "7/20",
     hint: "Find a common denominator (20) to subtract the fractions.",
@@ -1336,11 +1336,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16b ──
   {
-    id: "y7-6a-q16b",
+    id: "y7-7b-q16b",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(3a\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "9/4",
     hint: "Multiply 3 by the fraction.",
@@ -1357,11 +1357,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16c ──
   {
-    id: "y7-6a-q16c",
+    id: "y7-7b-q16c",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(2a + 3b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "27/10",
     hint: "Multiply each term first, then find a common denominator.",
@@ -1382,11 +1382,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16d ──
   {
-    id: "y7-6a-q16d",
+    id: "y7-7b-q16d",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(4a - b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "13/5",
     hint: "Perform multiplication first.",
@@ -1407,11 +1407,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16e ──
   {
-    id: "y7-6a-q16e",
+    id: "y7-7b-q16e",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(ab\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "3/10",
     hint: "Multiply the numerators and the denominators together.",
@@ -1428,11 +1428,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16f ──
   {
-    id: "y7-6a-q16f",
+    id: "y7-7b-q16f",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(a \\div b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "15/8",
     hint: "Multiply \\(a\\) by the reciprocal of \\(b\\).",
@@ -1449,11 +1449,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16g ──
   {
-    id: "y7-6a-q16g",
+    id: "y7-7b-q16g",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(b \\div a\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "8/15",
     hint: "Multiply \\(b\\) by the reciprocal of \\(a\\).",
@@ -1470,11 +1470,11 @@ export const Y7_CH6A_QUESTIONS = [
   },
   // ── QUESTION 16h ──
   {
-    id: "y7-6a-q16h",
+    id: "y7-7b-q16h",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
-    t: "Division in algebra",
+    t: "Multiplication and division",
     question: "Evaluate \\(2b \\div a\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\). Write your answer as a simplified fraction.",
     a: "16/15",
     hint: "Calculate \\(2b\\) first, then divide by \\(a\\).",

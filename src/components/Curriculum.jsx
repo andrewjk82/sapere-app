@@ -162,7 +162,7 @@ import { Y7_CH2G_QUESTIONS } from '../constants/seedYear7Ch2GQuestions.js';
 import { Y7_CH2H_QUESTIONS } from '../constants/seedYear7Ch2HQuestions.js';
 import { Y7_CH2I_QUESTIONS } from '../constants/seedYear7Ch2IQuestions.js';
 import { Y7_CH2J_QUESTIONS } from '../constants/seedYear7Ch2JQuestions.js';
-import { Y7_CH6A_QUESTIONS } from '../constants/seedYear7Ch6AQuestions.js';
+import { Y7_CH7B_QUESTIONS } from '../constants/seedYear7Ch7BQuestions.js';
 import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from '../constants/seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from '../constants/seedYear7Ch1FQuestions.js';
@@ -520,7 +520,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3f', topicCode: '3F', topicTitle: 'Multiplying algebraic terms', year: 'Year 7', seed: Y7_CH3F_QUESTIONS, label: 'Y7 Ch3 · Multiplying algebraic terms' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3g', topicCode: '3G', topicTitle: 'Describing arrays, areas and number patterns', year: 'Year 7', seed: Y7_CH3G_QUESTIONS, label: 'Y7 Ch3 · Describing arrays, areas and number patterns' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3h', topicCode: '3H', topicTitle: 'Chapter review', year: 'Year 7', seed: Y7_CH3H_QUESTIONS, label: 'Y7 Ch3 · Chapter review' },
-  { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6a', topicCode: '6A', topicTitle: 'Division in algebra', year: 'Year 7', seed: Y7_CH6A_QUESTIONS, label: 'Y7 Ch6 · 6A Division in algebra' },
+  { chapterId: 'y7-7', chapterTitle: 'Chapter 7: Decimals', topicId: 'y7-7b', topicCode: '7B', topicTitle: 'Multiplication and division', year: 'Year 7', seed: Y7_CH7B_QUESTIONS, label: 'Y7 Ch7 · 7B Multiplication and division' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23a', topicCode: '23A', topicTitle: 'Algebraic expressions', year: 'Year 7', seed: Y7_CH23A_QUESTIONS, label: 'Y7 Ch23 · Algebraic expressions' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23b', topicCode: '23B', topicTitle: 'Like terms and unlike terms', year: 'Year 7', seed: Y7_CH23B_QUESTIONS, label: 'Y7 Ch23 · Like terms and unlike terms' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23c', topicCode: '23C', topicTitle: 'Simplifying algebraic expressions', year: 'Year 7', seed: Y7_CH23C_QUESTIONS, label: 'Y7 Ch23 · Simplifying algebraic expressions' },
