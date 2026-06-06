@@ -6,14 +6,15 @@
  * Usage:  node scripts/generateLessonAudio.mjs
  */
 import { KokoroTTS } from 'kokoro-js';
-import { buildPlaceValueLesson } from '../src/lessons/registry.js';
+import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson } from '../src/lessons/registry.js';
 import fs from 'node:fs';
 import path from 'node:path';
 
 const VOICE = 'bf_emma'; // British female, teacher-like
 
+// To regenerate only one lesson, comment out the others.
 const JOBS = [
-  { id: 'y7-1g', steps: buildPlaceValueLesson(3721, 'Place value').steps },
+  { id: 'y11a-11B', steps: buildTrigEquationsLesson().steps },
 ];
 
 const main = async () => {
