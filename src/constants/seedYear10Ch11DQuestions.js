@@ -19,7 +19,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region above the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y > x + 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -44,7 +60,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y < 3x + 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -69,7 +101,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\le 2x - 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -94,7 +142,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region above the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y > 2 - x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -119,7 +183,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x + y \\le 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -144,7 +224,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '2x - 3y > 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -169,7 +265,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region above the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '2x + y > 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -194,7 +306,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region above the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'x - 3y < 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -219,7 +347,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\le 3x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -244,7 +388,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region above the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\ge 2x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -269,7 +429,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region right the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'x \\ge 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -294,7 +470,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region left the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'x < 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -319,7 +511,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y < 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -344,7 +552,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\le -1']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -369,7 +593,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x + 2y \\le 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -394,7 +634,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region above the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x - y \\le 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -419,7 +675,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x - y \\ge 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -444,7 +716,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Test a point not on the line (like the origin if possible) to determine which side to shade. Shade the region below the line.",
-        "workingOut": "\\text{See the final sketch.}"
+        "workingOut": "\\text{See the final sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y < 2 - 3x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -613,7 +901,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -638,7 +942,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -663,7 +983,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -688,7 +1024,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -713,7 +1065,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -738,7 +1106,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -763,7 +1147,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -788,7 +1188,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -813,7 +1229,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -838,7 +1270,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -863,7 +1311,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -888,7 +1352,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the final region by shading the intersection of all inequalities.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -1125,7 +1605,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the circle (solid or dashed) and shade the correct region.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -1146,7 +1642,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the circle (solid or dashed) and shade the correct region.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -1167,7 +1679,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the circle (solid or dashed) and shade the correct region.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -1188,7 +1716,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Sketch the circle (solid or dashed) and shade the correct region.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
@@ -1209,7 +1753,23 @@ export const Y10_CH11D_QUESTIONS = [
       },
       {
         "explanation": "Shade the region above the curve in both quadrants.",
-        "workingOut": "\\text{See sketch.}"
+        "workingOut": "\\text{See sketch.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\n// Generic placeholder graph for sketch\nvar p1 = board.create('point', [0, 1], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null
