@@ -187,6 +187,8 @@ import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
 import { Y10_CH11A_QUESTIONS } from '../constants/seedYear10Ch11AQuestions.js';
 import { Y10_CH11B_QUESTIONS } from '../constants/seedYear10Ch11BQuestions.js';
 import { Y10_CH11C_QUESTIONS } from '../constants/seedYear10Ch11CQuestions.js';
+import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
+import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
 import { ABB_2020_EXT1_QUESTIONS } from '../constants/seedAbbotsleigh2020Ext1Questions.js';
 import { ABB_2020_EXT1_SIMILAR_QUESTIONS } from '../constants/seedAbbotsleigh2020Ext1SimilarQuestions.js';
@@ -551,6 +553,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5a', topicCode: '5A', topicTitle: 'Solution of quadratic equations', year: 'Year 10', seed: Y10_CH5A_QUESTIONS, label: 'Y10 Ch5 · Solution of quadratic equations' },
   { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6a', topicCode: '6A', topicTitle: 'Review of prisms and cylinders', year: 'Year 10', seed: Y10_CH6_QUESTIONS, label: 'Y10 Ch6 · Review of prisms and cylinders' },
   // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
+  { chapterId: 'exam:caringbah-2020', badgeLabel: 'Y12 EXAM', examPaper: 'caringbah-2020', chapterTitle: 'Caringbah 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Caringbah 2020 Trial Exam', year: 'Year 12', seed: [...CARINGBAH_2020_QUESTIONS, ...CARINGBAH_2020_SIMILAR_QUESTIONS], label: 'Y12 · Caringbah 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:abbotsleigh-2020', badgeLabel: 'Y12 EXAM', examPaper: 'abbotsleigh-2020', chapterTitle: 'Abbotsleigh 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam', year: 'Year 12', seed: ABBOTSLEIGH_2020_QUESTIONS, label: 'Y12 · Abbotsleigh 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:abb-2020-ext1', badgeLabel: 'Y12 EXAM', examPaper: 'abb-2020-ext1', chapterTitle: 'Abbotsleigh 2020 HSC Trial (Ext 1)', topicId: 'y12e1-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam (Extension 1)', year: 'Year 12', seed: [...ABB_2020_EXT1_QUESTIONS, ...ABB_2020_EXT1_SIMILAR_QUESTIONS], label: 'Y12 · Abbotsleigh 2020 HSC Trial (Extension 1)' },
   { chapterId: 'exam:asc-2020', badgeLabel: 'Y12 EXAM', examPaper: 'asc-2020', chapterTitle: 'Ascham 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Ascham 2020 Trial Exam', year: 'Year 12', seed: ASCHAM_2020_QUESTIONS, label: 'Y12 · Ascham 2020 HSC Trial (Advanced)' },
