@@ -281,4 +281,24 @@ export function adminSummaryEmail({ title = 'Summary', rows = [], note = '' }) {
   return emailShell(title, inner);
 }
 
+/* ──────────────────────────────────────────────────────────────────────────
+   Teacher · pending review notification
+   ────────────────────────────────────────────────────────────────────────── */
+export function pendingReviewEmail({ studentName = 'A student', source = 'Daily Challenge', topicTitle = '', chapterTitle = '', questionPreview = '' }) {
+  const context = [topicTitle, chapterTitle].filter(Boolean).join(' · ');
+  const inner = `
+    <div style="background:linear-gradient(135deg,#f59e0b,#fbbf24);padding:28px 32px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(0,0,0,0.55);">Grading Required</div>
+      <div style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:900;color:#1e1b4b;margin-top:6px;">📝 ${esc(studentName)} submitted for marking</div>
+    </div>
+    <div style="padding:28px 32px;">
+      ${row('Source', esc(source))}
+      ${context ? row('Topic', esc(context)) : ''}
+      ${questionPreview ? row('Question', `<span style="font-size:13px;color:#475569;">${esc(questionPreview)}${questionPreview.length >= 120 ? '…' : ''}</span>`) : ''}
+      <p style="margin:20px 0 0;font-size:14px;line-height:1.6;color:#475569;">Open the <strong>Grading Queue</strong> in the admin panel to review and mark this submission.</p>
+      <div style="margin-top:22px;">${button('Open Grading Queue', APP_URL)}</div>
+    </div>`;
+  return { subject: `📝 Marking needed: ${studentName}`, html: emailShell(`Marking needed: ${studentName}`, inner) };
+}
+
 export { APP_URL };

@@ -338,6 +338,60 @@ export const notifyTeacherChallengeCompleted = async ({
   if (!response.ok) throw new Error(`send-notif failed: ${response.status}`);
 };
 
+// Notify the teacher whenever a student submits an answer that requires manual marking.
+// Called immediately after writing to grading_queue — never blocks the student flow.
+export const notifyTeacherPendingReview = async ({
+  studentId,
+  studentName,
+  studentEmail,
+  questionText,
+  challengeType,
+  topicTitle,
+  chapterTitle,
+}) => {
+  if (!ADMIN_UID || studentId === ADMIN_UID) return;
+  const source = challengeType === 'curriculum' ? 'Curriculum'
+    : challengeType === 'exam_prep'             ? 'Exam Prep'
+    : challengeType === 'calc'                  ? 'Basic Calculation'
+    :                                             'Daily Challenge';
+  const context = [topicTitle, chapterTitle].filter(Boolean).join(' · ');
+  const preview = questionText ? questionText.replace(/<[^>]+>/g, '').slice(0, 120) : '(no preview)';
+  const body = [
+    `${studentName || 'A student'} submitted a question for teacher marking.`,
+    context ? `Topic: ${context}` : '',
+    `Source: ${source}`,
+    `Question: ${preview}`,
+    '',
+    'Open the Grading Queue to mark it.',
+  ].filter(s => s !== undefined).join('\n');
+
+  try {
+    const response = await fetch('/api/send-notif', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        studentId: ADMIN_UID,
+        email: ADMIN_EMAIL,
+        subject: `📝 Marking needed: ${studentName || 'Student'}`,
+        text: body,
+        metadata: {
+          type: 'pending_review',
+          studentId,
+          studentName: studentName || 'Student',
+          studentEmail: studentEmail || '',
+          challengeType,
+          topicTitle,
+          chapterTitle,
+          questionPreview: preview,
+        },
+      }),
+    });
+    if (!response.ok) console.warn('[notifyTeacherPendingReview] send-notif returned', response.status);
+  } catch (err) {
+    console.warn('[notifyTeacherPendingReview] non-critical error:', err.message);
+  }
+};
+
 export const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_HISTORY_PER_TYPE) => {
   if (!userId) return;
   const snap = await getDocs(collection(db, 'users', userId, statCollection));

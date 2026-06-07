@@ -1,6 +1,6 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
-import { genericEmail, challengeCompleteEmail } from './_lib/emailTemplates.js';
+import { genericEmail, challengeCompleteEmail, pendingReviewEmail } from './_lib/emailTemplates.js';
 
 function escapeHtml(value = '') {
   return String(value)
@@ -190,6 +190,19 @@ export default async function handler(req, res) {
           xpEarned: Number(metadata.xpEarned) || 0,
           reviewCount: Number(metadata.reviewCount) || 0,
           reportCount: Number(metadata.reportCount) || 0,
+        });
+        emailSubject = built.subject;
+        emailHtml = built.html;
+      } else if (metadata?.type === 'pending_review') {
+        const built = pendingReviewEmail({
+          studentName: metadata.studentName || 'A student',
+          source: metadata.challengeType === 'curriculum' ? 'Curriculum'
+                : metadata.challengeType === 'exam_prep'  ? 'Exam Prep'
+                : metadata.challengeType === 'calc'       ? 'Basic Calculation'
+                :                                           'Daily Challenge',
+          topicTitle: metadata.topicTitle || '',
+          chapterTitle: metadata.chapterTitle || '',
+          questionPreview: metadata.questionPreview || '',
         });
         emailSubject = built.subject;
         emailHtml = built.html;
