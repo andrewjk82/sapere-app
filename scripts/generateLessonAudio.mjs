@@ -6,7 +6,7 @@
  * Usage:  node scripts/generateLessonAudio.mjs
  */
 import { KokoroTTS } from 'kokoro-js';
-import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson } from '../src/lessons/registry.js';
+import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson, buildPolyhedraLesson } from '../src/lessons/registry.js';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -14,7 +14,7 @@ const VOICE = 'bf_emma'; // British female, teacher-like
 
 // To regenerate only one lesson, comment out the others.
 const JOBS = [
-  { id: 'y11a-11B', steps: buildTrigEquationsLesson().steps },
+  { id: 'y7-20a', steps: buildPolyhedraLesson().steps },
 ];
 
 const main = async () => {

@@ -911,7 +911,7 @@ export const LESSONS = {
   'y11a-11B': { ...buildTrigEquationsLesson({ audioBase: '/lessons/audio/y11a-11B' }), topicId: 'y11a-11B' },
 
   // Year 7 · 20A · Polyhedra.
-  'y7-20a': { ...buildPolyhedraLesson(), topicId: 'y7-20a' },
+  'y7-20a': { ...buildPolyhedraLesson({ audioBase: '/lessons/audio/y7-20a' }), topicId: 'y7-20a' },
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;
