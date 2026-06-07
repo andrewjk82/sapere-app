@@ -3788,7 +3788,7 @@ const GENERATORS_BY_TYPE = {
   equivalent_fractions: genFractionStage,
   fraction_add_subtract: genFractionStage,
   decimal_place_value: genDecimalPercent,
-  percent_quantity: genDecimalPercent,
+  percent_quantity: genPercentageProblems,
   fraction_decimal_percent: genDecimalPercent,
   integers_number_line: genIntegerNumberLine,
   metric_length: genMeasurementStage,
@@ -3934,7 +3934,7 @@ const inferPrimaryGeneratorTypes = ({ year, chapterTitle = '', topicTitle = '', 
       if (!types.includes(item)) types.push(item);
     });
 
-    if (/consumer|percentage|percent|increase|decrease|interest|depreciation|discount|finance|growth|decay/.test(text)) add('percent_quantity', 'money_budget', 'problem_solving_money');
+    if (/consumer|percentage|percent|increase|decrease|interest|depreciation|discount|finance|growth|decay/.test(text)) add('percentage_problems', 'percentage_discount', 'percent_quantity', 'money_budget', 'problem_solving_money');
     if (/surd|irrational|rationalis|special product|indices|powers|scientific notation|logarithm|exponential/.test(text)) add('algebra_yr11', 'order_operations');
     if (/algebra|equation|inequalit|formula|factoris|quadratic|polynomial|function|domain|range|inverse/.test(text)) add('algebra_yr11', 'order_operations');
     if (/line|linear|gradient|midpoint|distance|coordinate|cartesian|simultaneous/.test(text)) add('coordinate_gradient', 'coordinate_midpoint', 'algebra_yr11');
@@ -3993,7 +3993,7 @@ const inferPrimaryGeneratorTypes = ({ year, chapterTitle = '', topicTitle = '', 
     else add('decimal_tenths_hundredths');
     add('decimal_place_value_new', 'decimal_place_value', 'decimal_add_subtract', 'fraction_decimal_percent');
   }
-  if (/percentage|percent|discount|gst/.test(text)) add('percentage_discount', 'percentage_problems', 'percent_quantity', 'fraction_decimal_percent');
+  if (/percentage|percent|discount|gst/.test(text)) add('percentage_discount', 'percentage_problems', 'percent_quantity');
   if (/negative|integer/.test(text)) add('negative_context', 'integers_number_line', 'number_line');
   if (isFractionTopic) add('fraction_of_shape', 'fraction_of_quantity', 'fraction_add_subtract_same_denom', 'fraction_as_division', 'fraction_equivalent_related_denom', 'fraction_quantity', 'equivalent_fractions', 'fraction_number_line');
   if (!isFractionTopic && /additive|addition|subtraction|add and subtract|budget|money/.test(text)) add('money_add_sub', 'money_budgeting', 'money_dollars', 'large_add_subtract', 'decimal_add_subtract');
