@@ -19,21 +19,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -5.748,
-          11.388,
-          17.618,
-          -3.968
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            11.87,
+            0
+          ],
+          "C": [
+            11.87,
+            7.42
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [11.87, 0], [11.87, 7.42]];\nvar sides = [\"\", \"a cm\", \"14 cm\"];\nvar angles = [\"32&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            var labelOpts = angles[i] === '32&deg;' ? { offset: [20, 5] } : {};\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1, label: labelOpts});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "a cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "14 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "32°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -57,21 +98,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -2.4800000000000004,
-          16.974,
-          6.180000000000001,
-          -5.564
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            11.41
+          ],
+          "C": [
+            3.7,
+            11.41
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [0, 11.41], [3.7, 11.41]];\nvar sides = [\"b cm\", \"\", \"12 cm\"];\nvar angles = [\"72&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "b cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "12 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "72°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -95,21 +177,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -3.0,
-          9.638,
-          8.0,
-          -3.468
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            6.17
+          ],
+          "B": [
+            5,
+            6.17
+          ],
+          "C": [
+            5,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 6.17], [5, 6.17], [5, 0]];\nvar sides = [\"5 m\", \"c m\", \"\"];\nvar angles = [\"51&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "5 m"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "c m"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "51°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -133,21 +256,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -4.328,
-          4.08,
-          12.648,
-          -1.8800000000000001
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            8.32,
+            0
+          ],
+          "C": [
+            0.63,
+            2.2
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [8.32, 0], [0.63, 2.2]];\nvar sides = [\"\", \"8 cm\", \"d cm\"];\nvar angles = [\"\", \"16&deg;\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "8 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "d cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "text": "16°"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -171,21 +335,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -2.92,
-          1.956,
-          7.72,
-          -4.346
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            4.8,
+            0
+          ],
+          "C": [
+            2.23,
+            -2.39
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [4.8, 0], [2.23, -2.39]];\nvar sides = [\"4.8 cm\", \"i cm\", \"\"];\nvar angles = [\"47&deg;\", \"\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "4.8 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "i cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "47°"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -209,21 +414,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -11.08,
-          18.374000000000002,
-          36.28,
-          -5.964
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            25.2,
+            0
+          ],
+          "C": [
+            10.41,
+            12.41
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [25.2, 0], [10.41, 12.41]];\nvar sides = [\"\", \"j cm\", \"16.2 cm\"];\nvar angles = [\"\", \"40&deg;\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "j cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "16.2 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "text": "40°"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -247,21 +493,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -6.896000000000001,
-          4.640000000000001,
-          21.636000000000003,
-          -2.04
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            14.74,
+            0
+          ],
+          "C": [
+            14.74,
+            2.6
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [14.74, 0], [14.74, 2.6]];\nvar sides = [\"\", \"2.6 cm\", \"a cm\"];\nvar angles = [\"10&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "2.6 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "a cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "10°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -285,21 +572,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -3.8000000000000003,
-          8.938,
-          10.8,
-          -3.2680000000000002
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            5.67
+          ],
+          "C": [
+            7,
+            5.67
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [0, 5.67], [7, 5.67]];\nvar sides = [\"\", \"7 cm\", \"b cm\"];\nvar angles = [\"51&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "7 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "b cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "51°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -323,21 +651,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -4.6,
-          11.57,
-          13.6,
-          -4.02
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            9,
+            0
+          ],
+          "C": [
+            0,
+            7.55
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [9, 0], [0, 7.55]];\nvar sides = [\"9 m\", \"e m\", \"\"];\nvar angles = [\"\", \"40&deg;\", \"\"];\nvar rightAngleIdx = 0;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "9 m"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "e m"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "B",
+            "text": "40°"
+          }
+        ]
       }
     }
   },
@@ -361,21 +730,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -16.480000000000004,
-          17.674,
-          55.18000000000001,
-          -5.764
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            38.7,
+            0
+          ],
+          "C": [
+            34.6,
+            11.91
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [38.7, 0], [34.6, 11.91]];\nvar sides = [\"h cm\", \"12.6 cm\", \"\"];\nvar angles = [\"\", \"71&deg;\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "h cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12.6 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "text": "71°"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -384,7 +794,7 @@ export const Y10_CH12A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Calculate the value of &theta;, correct to one decimal place.",
+    "question": "Calculate the value of \\theta, correct to one decimal place.",
     "a": "25.4",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use inverse trigonometric functions.",
@@ -399,21 +809,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -6.0600000000000005,
-          9.4,
-          18.71,
-          -3.4000000000000004
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            12.65,
+            0
+          ],
+          "C": [
+            0,
+            6
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [12.65, 0], [0, 6]];\nvar sides = [\"\", \"14 cm\", \"6 cm\"];\nvar angles = [\"\", \"&theta;\", \"\"];\nvar rightAngleIdx = 0;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "14 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "6 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "B",
+            "text": "\\theta"
+          }
+        ]
       }
     }
   },
@@ -422,7 +873,7 @@ export const Y10_CH12A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Calculate the value of &theta;, correct to one decimal place.",
+    "question": "Calculate the value of \\theta, correct to one decimal place.",
     "a": "33.7",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use inverse trigonometric functions.",
@@ -437,21 +888,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -3.9920000000000004,
-          8.0,
-          11.472000000000001,
-          -3.0
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            5
+          ],
+          "C": [
+            7.48,
+            5
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [0, 5], [7.48, 5]];\nvar sides = [\"5 cm\", \"\", \"9 cm\"];\nvar angles = [\"&theta;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "5 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "9 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "\\theta"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -460,7 +952,7 @@ export const Y10_CH12A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Calculate the value of &theta;, correct to one decimal place.",
+    "question": "Calculate the value of \\theta, correct to one decimal place.",
     "a": "60.3",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use inverse trigonometric functions.",
@@ -475,21 +967,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -6.6000000000000005,
-          12.2,
-          20.6,
-          -4.2
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            8
+          ],
+          "B": [
+            14,
+            8
+          ],
+          "C": [
+            14,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 8], [14, 8], [14, 0]];\nvar sides = [\"14 cm\", \"8 cm\", \"\"];\nvar angles = [\"\", \"\", \"&theta;\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "14 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "8 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "right": true
+          },
+          {
+            "at": "C",
+            "text": "\\theta"
+          }
+        ]
       }
     }
   },
@@ -498,7 +1031,7 @@ export const Y10_CH12A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Calculate the value of &theta;, correct to one decimal place.",
+    "question": "Calculate the value of \\theta, correct to one decimal place.",
     "a": "19.1",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use inverse trigonometric functions.",
@@ -513,21 +1046,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -5.64,
-          2.7359999999999998,
-          17.24,
-          -1.496
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            11.6,
+            0
+          ],
+          "C": [
+            8.01,
+            1.24
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [11.6, 0], [8.01, 1.24]];\nvar sides = [\"11.6 cm\", \"3.8 cm\", \"\"];\nvar angles = [\"\", \"&theta;\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "11.6 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "3.8 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "text": "\\theta"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -536,7 +1110,7 @@ export const Y10_CH12A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Calculate the value of &theta;, correct to one decimal place.",
+    "question": "Calculate the value of \\theta, correct to one decimal place.",
     "a": "39.6",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use inverse trigonometric functions.",
@@ -551,21 +1125,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -4.2,
-          6.502000000000001,
-          12.2,
-          -2.572
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            8,
+            0
+          ],
+          "C": [
+            3.25,
+            3.93
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [8, 0], [3.25, 3.93]];\nvar sides = [\"8 cm\", \"\", \"5.1 cm\"];\nvar angles = [\"\", \"&theta;\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "8 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "5.1 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "text": "\\theta"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -574,7 +1189,7 @@ export const Y10_CH12A_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Calculate the value of &theta;, correct to one decimal place.",
+    "question": "Calculate the value of \\theta, correct to one decimal place.",
     "a": "70.8",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use inverse trigonometric functions.",
@@ -589,21 +1204,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -6.28,
-          7.4399999999999995,
-          19.48,
-          -2.84
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            13.2,
+            0
+          ],
+          "C": [
+            0,
+            4.6
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [13.2, 0], [0, 4.6]];\nvar sides = [\"13.2 cm\", \"\", \"4.6 cm\"];\nvar angles = [\"\", \"\", \"&theta;\"];\nvar rightAngleIdx = 0;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "13.2 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "4.6 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "right": true
+          },
+          {
+            "at": "C",
+            "text": "\\theta"
+          }
+        ]
       }
     }
   },
@@ -627,21 +1283,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -3.84,
-          21.384,
-          10.94,
-          -6.824000000000001
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            14.56
+          ],
+          "B": [
+            0,
+            0
+          ],
+          "C": [
+            7.1,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 14.56], [0, 0], [7.1, 0]];\nvar sides = [\"\", \"x cm\", \"16.2 cm\"];\nvar angles = [\"26&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "x cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "16.2 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "26°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -665,21 +1362,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -5.800000000000001,
-          17.855999999999998,
-          17.8,
-          -5.816
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            12.04
+          ],
+          "C": [
+            12,
+            12.04
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [0, 12.04], [12, 12.04]];\nvar sides = [\"\", \"12 cm\", \"17 cm\"];\nvar angles = [\"&theta;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "12 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "17 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "\\theta"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -703,21 +1441,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -7.08,
-          41.012,
-          22.28,
-          -12.432
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            28.58
+          ],
+          "B": [
+            15.2,
+            28.58
+          ],
+          "C": [
+            15.2,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 28.58], [15.2, 28.58], [15.2, 0]];\nvar sides = [\"15.2 cm\", \"a cm\", \"\"];\nvar angles = [\"\", \"\", \"62&deg;\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "15.2 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "a cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "right": true
+          },
+          {
+            "at": "C",
+            "text": "62°"
+          }
+        ]
       }
     }
   },
@@ -741,21 +1520,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -1.904,
-          12.032,
-          4.164,
-          -4.152
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            7.88
+          ],
+          "B": [
+            0,
+            0
+          ],
+          "C": [
+            2.26,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 7.88], [0, 0], [2.26, 0]];\nvar sides = [\"\", \"a m\", \"8.2 m\"];\nvar angles = [\"\", \"\", \"74&deg;\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "a m"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "8.2 m"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "right": true
+          },
+          {
+            "at": "C",
+            "text": "74°"
+          }
+        ]
       }
     }
   },
@@ -779,21 +1599,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -7.0,
-          3.708,
-          22.0,
-          -10.478
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            15,
+            0
+          ],
+          "C": [
+            4.27,
+            -6.77
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [15, 0], [4.27, -6.77]];\nvar sides = [\"15 cm\", \"\", \"8 cm\"];\nvar angles = [\"&theta;\", \"\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "15 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "8 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "\\theta"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -817,21 +1678,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -8.600000000000001,
-          13.908000000000001,
-          27.6,
-          -4.688000000000001
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            19,
+            0
+          ],
+          "C": [
+            11.84,
+            9.22
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [19, 0], [11.84, 9.22]];\nvar sides = [\"19 cm\", \"\", \"15 cm\"];\nvar angles = [\"&theta;\", \"\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "19 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "15 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "\\theta"
+          },
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -855,21 +1757,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -1.7040000000000002,
-          15.0,
-          3.464,
-          -5.0
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            10
+          ],
+          "C": [
+            1.76,
+            10
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [0, 10], [1.76, 10]];\nvar sides = [\"10 m\", \"\", \"x m\"];\nvar angles = [\"\", \"\", \"80&deg;\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "10 m"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "x m"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "right": true
+          },
+          {
+            "at": "C",
+            "text": "80°"
+          }
+        ]
       }
     }
   },
@@ -893,21 +1836,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -4.4399999999999995,
-          9.75,
-          13.04,
-          -3.5
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            6.25
+          ],
+          "B": [
+            8.6,
+            6.25
+          ],
+          "C": [
+            8.6,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 6.25], [8.6, 6.25], [8.6, 0]];\nvar sides = [\"8.6 cm\", \"\", \"y cm\"];\nvar angles = [\"36&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "8.6 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "y cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "36°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -931,21 +1915,62 @@ export const Y10_CH12A_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -4.04,
-          14.146,
-          11.64,
-          -4.756
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            7.6,
+            0
+          ],
+          "C": [
+            7.6,
+            9.39
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [7.6, 0], [7.6, 9.39]];\nvar sides = [\"7.6 cm\", \"a cm\", \"\"];\nvar angles = [\"51&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "7.6 cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "a cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "51°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -955,7 +1980,7 @@ export const Y10_CH12A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
-    "a": "Sides: 4.67 cm, 2.52 cm. Angle: 50&deg;",
+    "a": "Sides: 4.67 cm, 2.52 cm. Angle: 50°",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
     "solutionSteps": [
@@ -965,25 +1990,59 @@ export const Y10_CH12A_QUESTIONS = [
       },
       {
         "explanation": "Final answers.",
-        "workingOut": "\\therefore Sides: 4.67 cm, 2.52 cm. Angle: 50&deg;"
+        "workingOut": "\\therefore Sides: 4.67 cm, 2.52 cm. Angle: 50°"
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -2.008,
-          5.2,
-          4.5280000000000005,
-          -2.2
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            0,
+            3
+          ],
+          "C": [
+            2.52,
+            3
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [0, 3], [2.52, 3]];\nvar sides = [\"3 cm\", \"\", \"\"];\nvar angles = [\"40&deg;\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "3 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "text": "40°"
+          },
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -993,7 +2052,7 @@ export const Y10_CH12A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
-    "a": "Side: 6.97 cm. Angles: 40.7&deg;, 49.3&deg;",
+    "a": "Side: 6.97 cm. Angles: 40.7°, 49.3°",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
     "solutionSteps": [
@@ -1003,25 +2062,62 @@ export const Y10_CH12A_QUESTIONS = [
       },
       {
         "explanation": "Final answers.",
-        "workingOut": "\\therefore Side: 6.97 cm. Angles: 40.7&deg;, 49.3&deg;"
+        "workingOut": "\\therefore Side: 6.97 cm. Angles: 40.7°, 49.3°"
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -3.7880000000000003,
-          9.4,
-          10.758,
-          -3.4000000000000004
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            6
+          ],
+          "B": [
+            0,
+            0
+          ],
+          "C": [
+            6.97,
+            0
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 6], [0, 0], [6.97, 0]];\nvar sides = [\"6 cm\", \"\", \"9.2 cm\"];\nvar angles = [\"\", \"\", \"\"];\nvar rightAngleIdx = 1;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "6 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "9.2 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "right": true
+          }
+        ]
       }
     }
   },
@@ -1031,7 +2127,7 @@ export const Y10_CH12A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
-    "a": "Side: 9.78 cm. Angles: 30.8&deg;, 59.2&deg;",
+    "a": "Side: 9.78 cm. Angles: 30.8°, 59.2°",
     "t": "Review of the basic trigonometric ratios",
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
     "solutionSteps": [
@@ -1041,25 +2137,62 @@ export const Y10_CH12A_QUESTIONS = [
       },
       {
         "explanation": "Final answers.",
-        "workingOut": "\\therefore Side: 9.78 cm. Angles: 30.8&deg;, 59.2&deg;"
+        "workingOut": "\\therefore Side: 9.78 cm. Angles: 30.8°, 59.2°"
       }
     ],
     "graphData": {
-      "jsxGraph": {
+      "geometry": {
         "width": 300,
-        "height": 250,
-        "boundingbox": [
-          -4.912,
-          7.006,
-          14.692,
-          -2.716
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "axis": false
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            9.78,
+            0
+          ],
+          "C": [
+            2.56,
+            4.29
+          ]
         },
-        "script": "board.suspendUpdate();\nvar pts = [[0, 0], [9.78, 0], [2.56, 4.29]];\nvar sides = [\"\", \"8.4 cm\", \"5 cm\"];\nvar angles = [\"\", \"\", \"\"];\nvar rightAngleIdx = 2;\n\n    var A = board.create('point', pts[0], {visible: false});\n    var B = board.create('point', pts[1], {visible: false});\n    var C = board.create('point', pts[2], {visible: false});\n    var poly = board.create('polygon', [A, B, C], {borders: {strokeColor: '#2563eb', strokeWidth: 2}, fillColor: 'none'});\n    \n    var ptsArr = [A, B, C];\n    for (var i=0; i<3; i++) {\n        var p1 = ptsArr[i];\n        var p2 = ptsArr[(i+1)%3];\n        var p3 = ptsArr[(i+2)%3];\n        if (sides[i]) {\n            var mx = (p1.X() + p2.X())/2;\n            var my = (p1.Y() + p2.Y())/2;\n            var dx = p2.X() - p1.X();\n            var dy = p2.Y() - p1.Y();\n            var len = Math.sqrt(dx*dx + dy*dy);\n            var nx = -dy/len;\n            var ny = dx/len;\n            var cross = (p3.X()-p1.X())*nx + (p3.Y()-p1.Y())*ny;\n            if (cross > 0) { nx = -nx; ny = -ny; }\n            board.create('text', [mx + nx*1.2, my + ny*1.2, sides[i]], {anchorX: 'middle', anchorY: 'middle', fontSize: 14});\n        }\n        if (angles[i]) {\n            board.create('angle', [p2, p1, p3], {name: angles[i], radius: 1.2, strokeColor: '#2563eb', fillColor: '#3b82f6', fillOpacity: 0.1});\n        }\n        if (rightAngleIdx === i) {\n            board.create('angle', [p2, p1, p3], {name: '', radius: 0.8, rightAngle: true, strokeColor: '#2563eb'});\n        }\n    }\n    board.unsuspendUpdate();\n    "
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "8.4 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "5 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "C",
+            "right": true
+          }
+        ]
       }
     }
   }
