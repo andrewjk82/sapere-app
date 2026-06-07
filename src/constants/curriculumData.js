@@ -1998,12 +1998,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y10-11',
       title: 'Chapter 11: Circles, hyperbolas and simultaneous equations',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y10-11a', code: '11A', title: 'Cartesian equation of a circle' },
         { id: 'y10-11b', code: '11B', title: 'The rectangular hyperbola' },
         { id: 'y10-11c', code: '11C', title: 'Intersections of graphs' },
-        { id: 'y10-11d', code: '11D', title: 'Regions of the plane' }
+        { id: 'y10-11d', code: '11D', title: 'Regions of the plane' },
+        { id: 'y10-11e', code: '11E', title: 'Revision' }
       ]
     },
     {
