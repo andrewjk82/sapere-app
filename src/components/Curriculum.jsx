@@ -900,6 +900,24 @@ const Curriculum = () => {
         });
       });
       await addBatch.commit();
+
+      // Bump sync_meta so the hasFreshCounts check detects a new version
+      try {
+        const { setDoc: sd, doc: d2, serverTimestamp: st2 } = await import('firebase/firestore');
+        await sd(d2(db, 'sync_meta', 'questions'), { version: Date.now(), updatedAt: st2() }, { merge: true });
+      } catch (e) { console.warn('sync_meta bump failed:', e); }
+
+      // Fetch live count and update cache
+      try {
+        const { getCountFromServer: gcfs, query: q2, collection: col2, where: w2 } = await import('firebase/firestore');
+        const snap2 = await gcfs(q2(col2(db, 'questions'), w2('chapterId', '==', 'y11a-1')));
+        const count = snap2.data().count || 0;
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y11a-1'] = count;
+        saveCachedQuestionCounts(cached.counts, Date.now());
+        setQuestionCounts(prev => ({ ...prev, 'y11a-1': count }));
+      } catch (e) { console.warn('Post-seed count fetch failed:', e); }
+
       showToast("Successfully updated 74 Algebra questions!", 'success');
     } catch (err) {
       console.error(err);
@@ -952,6 +970,21 @@ const Curriculum = () => {
         });
       });
       await addBatch.commit();
+      // Bump sync_meta + update count cache
+      try {
+        const { setDoc: sd, doc: d2, serverTimestamp: st2 } = await import('firebase/firestore');
+        await sd(d2(db, 'sync_meta', 'questions'), { version: Date.now(), updatedAt: st2() }, { merge: true });
+      } catch (e) { console.warn('sync_meta bump failed:', e); }
+      try {
+        const { getCountFromServer: gcfs, query: q2, collection: col2, where: w2 } = await import('firebase/firestore');
+        const snap2 = await gcfs(q2(col2(db, 'questions'), w2('chapterId', '==', 'y11a-2')));
+        const count = snap2.data().count || 0;
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y11a-2'] = count;
+        saveCachedQuestionCounts(cached.counts, Date.now());
+        setQuestionCounts(prev => ({ ...prev, 'y11a-2': count }));
+      } catch (e) { console.warn('Post-seed count fetch failed:', e); }
+
       showToast(`Successfully updated ${SURDS_QUESTIONS_Y11A.length} Surds questions!`, 'success');
     } catch (err) {
       console.error(err);
@@ -1180,11 +1213,11 @@ const Curriculum = () => {
     if (!window.confirm("This will replace all existing questions for Year 11 Advanced Chapter 5 with the latest questions. Continue?")) return;
     setIsMigrating(true);
     try {
-      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
-      
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp, setDoc, getCountFromServer } = await import('firebase/firestore');
+
       const collRef = collection(db, 'questions');
       const addBatch = writeBatch(db);
-      
+
       CH5_QUESTIONS_Y11A.forEach(qData => {
         const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
         let optionsField = [];
@@ -1223,14 +1256,29 @@ const Curriculum = () => {
       });
       
       await addBatch.commit();
-      showToast(`Successfully updated ${CH5_QUESTIONS_Y11A.length} Ch5 questions!`, 'success');
-      
-      if (typeof window !== 'undefined') {
+
+      // Bump sync_meta + fetch live count
+      try {
+        await setDoc(doc(db, 'sync_meta', 'questions'), { version: Date.now(), updatedAt: serverTimestamp() }, { merge: true });
+      } catch (e) { console.warn('sync_meta bump failed:', e); }
+      try {
+        const chapSnap = await getCountFromServer(query(collection(db, 'questions'), where('chapterId', '==', 'y11a-5')));
+        const count = chapSnap.data().count || 0;
+        if (typeof window !== 'undefined') {
+          const cached = loadCachedQuestionCounts();
+          cached.counts['y11a-5'] = count;
+          saveCachedQuestionCounts(cached.counts, Date.now());
+          setQuestionCounts(prev => ({ ...prev, 'y11a-5': count }));
+        }
+      } catch (e) {
+        // fallback to seed length
         const cached = loadCachedQuestionCounts();
         cached.counts['y11a-5'] = CH5_QUESTIONS_Y11A.length;
-        saveCachedQuestionCounts(cached.counts, cached.version);
-        setQuestionCounts(cached.counts);
+        saveCachedQuestionCounts(cached.counts, Date.now());
+        setQuestionCounts(prev => ({ ...prev, 'y11a-5': CH5_QUESTIONS_Y11A.length }));
       }
+
+      showToast(`Successfully updated ${CH5_QUESTIONS_Y11A.length} Ch5 questions!`, 'success');
     } catch (err) {
       console.error(err);
       showToast("Failed to seed Ch5 questions.", 'error');
@@ -1882,6 +1930,12 @@ const Curriculum = () => {
         map[chapterId] = (map[chapterId] || 0) + seed.length;
       }
     });
+    // Custom-handler chapters not in the registry — add their seed lengths so
+    // the chapter card fallback shows a count before Firestore data loads.
+    map['y11a-1'] = (map['y11a-1'] || 0) + ALGEBRA_QUESTIONS_Y11A.length;
+    map['y11a-2'] = (map['y11a-2'] || 0) + SURDS_QUESTIONS_Y11A.length;
+    map['y11a-5'] = (map['y11a-5'] || 0) + CH5_QUESTIONS_Y11A.length;
+    map['y6-wn'] = (map['y6-wn'] || 0) + WHOLE_NUMBER_QUESTIONS_Y6.length;
     return map;
   }, []);
 
