@@ -182,11 +182,13 @@ import { Y10_CH7H_QUESTIONS } from '../constants/seedYear10Ch7HQuestions.js';
 import { Y10_CH8A_QUESTIONS } from '../constants/seedYear10Ch8AQuestions.js';
 import { Y10_CH8E_QUESTIONS } from '../constants/seedYear10Ch8EQuestions.js';
 import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
+import { Y10_CH11A_QUESTIONS } from '../constants/seedYear10Ch11AQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
 import { ASCHAM_2020_QUESTIONS } from '../constants/seedAscham2020Questions.js';
 import { BARKER_2020_QUESTIONS } from '../constants/seedBarker2020Questions.js';
 import { BAULKHAM_2020_QUESTIONS } from '../constants/seedBaulkham2020Questions.js';
 import { BLACKTOWN_BOYS_2020_QUESTIONS } from '../constants/seedBlacktownBoys2020Questions.js';
+import { BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS } from '../constants/seedBlacktownBoys2020SimilarQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -419,6 +421,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-8', chapterTitle: 'Chapter 8: Review of geometry', topicId: 'y10-8a', topicCode: '8A', topicTitle: 'Review of triangles', year: 'Year 10', seed: Y10_CH8A_QUESTIONS, label: 'Y10 Ch8 · Review of triangles' },
   { chapterId: 'y10-8', chapterTitle: 'Chapter 8: Review of congruence and similarity', topicId: 'y10-8e', topicCode: '8E', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH8E_QUESTIONS, label: 'Y10 Ch8 · 8E Revision' },
   { chapterId: 'y10-9', chapterTitle: 'Chapter 9: Indices, Exponentials and Logarithms', topicId: 'y10-9a', topicCode: '9A', topicTitle: 'Review of powers and integer indices', year: 'Year 10', seed: Y10_CH9_QUESTIONS, label: 'Y10 Ch9 · 9A Review of powers and integer indices' },
+  { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11a', topicCode: '11A', topicTitle: 'Cartesian equation of a circle', year: 'Year 10', seed: Y10_CH11A_QUESTIONS, label: 'Y10 Ch11 · 11A Cartesian equation of a circle' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
@@ -544,7 +547,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'exam:asc-2020', badgeLabel: 'Y12 EXAM', examPaper: 'asc-2020', chapterTitle: 'Ascham 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Ascham 2020 Trial Exam', year: 'Year 12', seed: ASCHAM_2020_QUESTIONS, label: 'Y12 · Ascham 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:bar-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bar-2020', chapterTitle: 'Barker 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Barker 2020 Trial Exam', year: 'Year 12', seed: BARKER_2020_QUESTIONS, label: 'Y12 · Barker 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:baulko-2020', badgeLabel: 'Y12 EXAM', examPaper: 'baulko-2020', chapterTitle: 'Baulkham Hills 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Baulkham Hills 2020 Trial Exam', year: 'Year 12', seed: BAULKHAM_2020_QUESTIONS, label: 'Y12 · Baulkham Hills 2020 HSC Trial (Advanced)' },
-  { chapterId: 'exam:bbhs-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bbhs-2020', chapterTitle: 'Blacktown Boys 2020 HSC Trial', topicId: 'y12a-exam-bbhs', topicCode: 'EXAM', topicTitle: 'Blacktown Boys 2020 Trial Exam', year: 'Year 12', seed: BLACKTOWN_BOYS_2020_QUESTIONS, label: 'Y12 · Blacktown Boys 2020 HSC Trial (Advanced)' },
+  { chapterId: 'exam:bbhs-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bbhs-2020', chapterTitle: 'Blacktown Boys 2020 HSC Trial', topicId: 'y12a-exam-bbhs', topicCode: 'EXAM', topicTitle: 'Blacktown Boys 2020 Trial Exam', year: 'Year 12', seed: [...BLACKTOWN_BOYS_2020_QUESTIONS, ...BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS], label: 'Y12 · Blacktown Boys 2020 HSC Trial (Advanced)' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5A', topicCode: '5A', topicTitle: 'Review of exponential functions base e', year: 'Year 12', seed: Y12A_CH5A_QUESTIONS, label: 'Y12 Ch5 · 5A Review of exponential functions base e' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5B', topicCode: '5B', topicTitle: 'Differentiation of exponential functions', year: 'Year 12', seed: Y12A_CH5B_QUESTIONS, label: 'Y12 Ch5 · 5B Differentiation of exponential functions' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5C', topicCode: '5C', topicTitle: 'Applications of differentiation', year: 'Year 12', seed: Y12A_CH5C_QUESTIONS, label: 'Y12 Ch5 · 5C Applications of differentiation' },
