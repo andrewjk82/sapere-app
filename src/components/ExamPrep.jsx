@@ -137,7 +137,7 @@ const TopicAnalysisCard = ({ analysis }) => (
 );
 
 // ── Quiz view (one question at a time, self-contained) ─────────────────
-const QuizView = ({ questions, onFinish, onReport }) => {
+const QuizView = ({ questions, onFinish, onReport, user }) => {
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState([]); // [{userAnswer, correct}]
   const [draft, setDraft] = useState(null);
@@ -200,10 +200,36 @@ const QuizView = ({ questions, onFinish, onReport }) => {
 
   const submit = () => {
     const userAnswer = draft;
-    const { correct } = gradeQuestion(q, userAnswer);
-    const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle }];
+    const needsTeacher = q?.type === 'teacher_review' || q?.requiresManualGrading === true;
+    const { correct } = needsTeacher ? { correct: null } : gradeQuestion(q, userAnswer);
+    const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle, pending: needsTeacher }];
     setAnswers(next);
     setShowFeedback(true);
+
+    if (needsTeacher && user?.uid) {
+      const canvasDataUrl = (() => { try { return canvasRef.current?.exportImageSync?.() || null; } catch { return null; } })();
+      addDoc(collection(db, 'grading_queue'), {
+        userId: user.uid,
+        userName: user.displayName || user.email || 'Student',
+        userEmail: user.email || '',
+        date: new Date().toLocaleDateString('en-CA'),
+        questionId: q.id || null,
+        questionText: q.question || q.text || '',
+        questionType: q.type || 'short_answer',
+        options: Array.isArray(q.options) ? q.options.map(o => typeof o === 'string' ? o : (o?.text || String(o))) : [],
+        answerText: typeof userAnswer === 'string' ? userAnswer.trim() : null,
+        answerImage: canvasDataUrl,
+        hasDrawing: Boolean(canvasDataUrl),
+        status: 'pending',
+        submittedAt: serverTimestamp(),
+        challengeType: 'exam_prep',
+        topicTitle: q.topicTitle || '',
+        chapterTitle: q.chapterTitle || '',
+        correctAnswer: q.answer || '',
+        solution: q.solution || '',
+        requiresManualGrading: true,
+      }).catch(err => console.warn('grading_queue write failed:', err));
+    }
   };
 
   const advance = async () => {
@@ -579,7 +605,8 @@ const ReviewView = ({ questions, answers, onDone }) => {
 
   if (!q) return null;
 
-  const isCorrect = ans?.correct;
+  const isPending = ans?.pending === true;
+  const isCorrect = !isPending && ans?.correct;
   const solutionSteps = q.solutionSteps || [];
 
   return (
@@ -607,7 +634,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
       <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
         {questions.map((_, i) => {
           const a = answers[i];
-          const color = a?.correct ? '#10b981' : '#ef4444';
+          const color = a?.pending ? '#f59e0b' : a?.correct ? '#10b981' : '#ef4444';
           return (
             <button key={i} onClick={() => setIdx(i)} style={{ width: '28px', height: '8px', borderRadius: '999px', border: 'none', background: i === idx ? '#7c3aed' : color, cursor: 'pointer', opacity: i === idx ? 1 : 0.55, transition: 'all 0.15s' }} />
           );
@@ -622,11 +649,12 @@ const ReviewView = ({ questions, answers, onDone }) => {
           </span>
           <span style={{
             display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 12px', borderRadius: '999px', fontWeight: 800, fontSize: '0.82rem',
-            background: isCorrect ? '#f0fdf4' : '#fef2f2', color: isCorrect ? '#16a34a' : '#dc2626',
-            border: `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}`,
+            background: isPending ? '#fffbeb' : isCorrect ? '#f0fdf4' : '#fef2f2',
+            color: isPending ? '#b45309' : isCorrect ? '#16a34a' : '#dc2626',
+            border: `1px solid ${isPending ? '#fde68a' : isCorrect ? '#bbf7d0' : '#fecaca'}`,
           }}>
-            {isCorrect ? <CheckCircle2 size={14} /> : <XCircle size={14} />}
-            {isCorrect ? 'Correct' : 'Incorrect'}
+            {isPending ? '⏳' : isCorrect ? <CheckCircle2 size={14} /> : <XCircle size={14} />}
+            {isPending ? 'Teacher marking' : isCorrect ? 'Correct' : 'Incorrect'}
           </span>
         </div>
         <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '1.05rem', lineHeight: 1.7, color: '#1e1b4b', fontWeight: 500 }} />
@@ -634,8 +662,8 @@ const ReviewView = ({ questions, answers, onDone }) => {
 
       {/* your answer vs correct */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-        <div style={{ padding: '16px', borderRadius: '18px', background: isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isCorrect ? '#bbf7d0' : '#fecaca'}` }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: isCorrect ? '#16a34a' : '#dc2626', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Your answer</div>
+        <div style={{ padding: '16px', borderRadius: '18px', background: isPending ? '#fffbeb' : isCorrect ? '#f0fdf4' : '#fef2f2', border: `1px solid ${isPending ? '#fde68a' : isCorrect ? '#bbf7d0' : '#fecaca'}` }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: isPending ? '#b45309' : isCorrect ? '#16a34a' : '#dc2626', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Your answer</div>
           <MathView
             content={
               q.type === 'multiple_choice'
@@ -1218,7 +1246,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         )}
 
         {stage === 'quiz' && questions.length > 0 && (
-          <QuizView questions={questions} onFinish={handleFinishRound} onReport={(q) => { reportTargetRef.current = q; setReportTarget(q); }} />
+          <QuizView questions={questions} onFinish={handleFinishRound} user={user} onReport={(q) => { reportTargetRef.current = q; setReportTarget(q); }} />
         )}
 
         {stage === 'secretNote' && uid && (

@@ -207,12 +207,11 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
       all.push({ id: d.id, ...data });
     });
   }
-  // Drop teacher_review questions — exam prep auto-grades.
+  // Keep teacher_review / requiresManualGrading questions — they get queued in
+  // grading_queue when the student submits, and appear in the teacher's Reports tab.
   // When examPaperOnly is set, restrict to questions sourced from HSC trial papers.
   const usable = all.filter((q) =>
-    q.type !== 'teacher_review'
-    && !q.requiresManualGrading
-    && (!selection.examPaperOnly || Boolean(q.examPaper))
+    (!selection.examPaperOnly || Boolean(q.examPaper))
   );
   await saveCachedPool(uid, selection, usable);
   return usable;
