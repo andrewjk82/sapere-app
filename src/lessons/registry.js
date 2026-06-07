@@ -1079,7 +1079,7 @@ const NL_GLOSSARY = {
   'whole number': 'The counting numbers 0, 1, 2, 3, … continuing forever to the right.',
 };
 
-export const buildNumberLineLesson = () => {
+export const buildNumberLineLesson = ({ audioBase = null } = {}) => {
   const nl = (opts) => ({ type: 'numberLine', min: 0, max: 7, ...opts });
   const nl44 = (opts) => ({ type: 'numberLine', min: 44, max: 52, arrowLeft: true, ...opts });
 
@@ -1141,6 +1141,7 @@ export const buildNumberLineLesson = () => {
     },
   ];
 
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
   return { topicId: 'y7-1a', emoji: '📏', title: 'The number line', steps, glossary: { ...BASE_GLOSSARY, ...NL_GLOSSARY } };
 };
 
@@ -1166,7 +1167,7 @@ export const LESSONS = {
   'y7-20a': { ...buildPolyhedraLesson({ audioBase: '/lessons/audio/y7-20a' }), topicId: 'y7-20a' },
 
   // Year 7 · 1A · The number line.
-  'y7-1a': buildNumberLineLesson(),
+  'y7-1a': { ...buildNumberLineLesson({ audioBase: '/lessons/audio/y7-1a' }), topicId: 'y7-1a' },
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;
