@@ -187,6 +187,7 @@ import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
 import { Y10_CH11A_QUESTIONS } from '../constants/seedYear10Ch11AQuestions.js';
 import { Y10_CH11B_QUESTIONS } from '../constants/seedYear10Ch11BQuestions.js';
 import { Y10_CH11C_QUESTIONS } from '../constants/seedYear10Ch11CQuestions.js';
+import { Y10_CH11D_QUESTIONS } from '../constants/seedYear10Ch11DQuestions.js';
 import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -432,6 +433,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11a', topicCode: '11A', topicTitle: 'Cartesian equation of a circle', year: 'Year 10', seed: Y10_CH11A_QUESTIONS, label: 'Y10 Ch11 · 11A Cartesian equation of a circle' },
   { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11b', topicCode: '11B', topicTitle: 'The rectangular hyperbola', year: 'Year 10', seed: Y10_CH11B_QUESTIONS, label: 'Y10 Ch11 · 11B The rectangular hyperbola' },
   { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11c', topicCode: '11C', topicTitle: 'Simultaneous equations', year: 'Year 10', seed: Y10_CH11C_QUESTIONS, label: 'Y10 Ch11 · 11C Simultaneous equations' },
+  { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11d', topicCode: '11D', topicTitle: 'Regions of the plane', year: 'Year 10', seed: Y10_CH11D_QUESTIONS, label: 'Y10 Ch11 · 11D Regions of the plane' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
