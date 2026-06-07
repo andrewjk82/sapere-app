@@ -700,26 +700,44 @@ export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
 
   // ── Triangular prism (cross-section step) ──
   // Front △: F1(0.5,0.3) F2(4.2,0.3) F3(2.35,3.2)
-  // Back △: B1(1.4,1.1) B2(5.1,1.1) B3(3.25,4.0)
+  // Back  △: B1(1.4,1.1) B2(5.1,1.1) B3(3.25,4.0)
+  // Cross-section at 45% depth from front → back
+  // C1=(0.905,0.66)  C2=(4.605,0.66)  C3=(2.755,3.56)
   const prismGraph = ({ highlightFront=false } = {}) => {
-    const fc = highlightFront ? HL : V;
-    const fw = highlightFront ? 3.5 : 2.2;
+    const t = 0.45; // interpolation depth for cross-section plane
+    const C1 = [0.5 + t*(1.4-0.5),  0.3 + t*(1.1-0.3)];  // ≈ (0.91, 0.66)
+    const C2 = [4.2 + t*(5.1-4.2),  0.3 + t*(1.1-0.3)];  // ≈ (4.61, 0.66)
+    const C3 = [2.35+ t*(3.25-2.35),3.2 + t*(4.0-3.2)];  // ≈ (2.76, 3.56)
+    const csLines = highlightFront ? [
+      // cross-section triangle (the actual "slice")
+      { from:C1, to:C2, color:HL, width:3.0, delay:0.9  },
+      { from:C2, to:C3, color:HL, width:3.0, delay:0.95 },
+      { from:C3, to:C1, color:HL, width:3.0, delay:1.0  },
+      // dashed guide lines from cross-section vertices to prism edges (shows "the cut")
+      { from:[0.5,0.3],  to:C1, color:HL, width:1.2, dashed:true, delay:1.05 },
+      { from:[4.2,0.3],  to:C2, color:HL, width:1.2, dashed:true, delay:1.05 },
+      { from:[2.35,3.2], to:C3, color:HL, width:1.2, dashed:true, delay:1.05 },
+    ] : [];
     return {
       type:'graph', showAxes:false,
       xMin:-0.3, xMax:6.0, yMin:-0.3, yMax:4.6, width:420, height:310,
       lines:[
-        { from:[0.5,0.3], to:[4.2,0.3], color:fc, width:fw, delay:0.3  },
-        { from:[4.2,0.3], to:[2.35,3.2], color:fc, width:fw, delay:0.35 },
-        { from:[2.35,3.2], to:[0.5,0.3], color:fc, width:fw, delay:0.4  },
+        // front face (neutral purple — it is a face, not the cross-section)
+        { from:[0.5,0.3], to:[4.2,0.3], color:V, width:2.2, delay:0.3  },
+        { from:[4.2,0.3], to:[2.35,3.2], color:V, width:2.2, delay:0.35 },
+        { from:[2.35,3.2], to:[0.5,0.3], color:V, width:2.2, delay:0.4  },
+        // lateral edges
         { from:[4.2,0.3], to:[5.1,1.1], color:V, width:2.2, delay:0.45 },
         { from:[2.35,3.2], to:[3.25,4.0], color:V, width:2.2, delay:0.5 },
-        { from:[5.1,1.1], to:[3.25,4.0], color:V, width:2.2, delay:0.55 },
-        { from:[5.1,1.1], to:[1.4,1.1], color:V, width:2.2, delay:0.6 },
-        { from:[3.25,4.0], to:[1.4,1.1], color:V, width:2.2, delay:0.65 },
-        { from:[0.5,0.3], to:[1.4,1.1], color:H, width:1.5, dashed:true, delay:0.7 },
+        { from:[0.5,0.3], to:[1.4,1.1], color:H, width:1.5, dashed:true, delay:0.55 },
+        // back face
+        { from:[5.1,1.1], to:[3.25,4.0], color:V, width:2.2, delay:0.6 },
+        { from:[5.1,1.1], to:[1.4,1.1], color:V, width:2.2, delay:0.65 },
+        { from:[3.25,4.0], to:[1.4,1.1], color:V, width:2.2, delay:0.7 },
+        ...csLines,
       ],
       texts: highlightFront ? [
-        { x:1.8, y:1.9, text:'cross-section ▲', color:HL, size:12, delay:1.1 },
+        { x: C1[0]+0.3, y: C1[1]+0.8, text:'cross-section ▲', color:HL, size:12, delay:1.2 },
       ] : [],
     };
   };
