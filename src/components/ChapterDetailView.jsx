@@ -2,11 +2,13 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, Lock, Play, BookOpen, Zap,
-  Circle, ChevronRight, BookMarked, RotateCcw
+  Circle, ChevronRight, BookMarked, RotateCcw, GraduationCap
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
+import { hasLesson, getLesson } from '../lessons/registry';
+import LessonPlayer from './lessons/LessonPlayer';
 
 const XP_PER_TOPIC = 15;
 
@@ -28,6 +30,7 @@ const STATE = {
 const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic }) => {
   const { user } = useAuth();
   const [topicProgress, setTopicProgress] = useState({});
+  const [previewLesson, setPreviewLesson] = useState(null);
 
   // Load per-topic progress
   useEffect(() => {
@@ -207,6 +210,27 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                 )}
               </div>
 
+              {/* Lesson preview button */}
+              {hasLesson(topic.id) && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setPreviewLesson(getLesson(topic.id));
+                  }}
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', gap: '5px',
+                    padding: '5px 11px', borderRadius: '999px', border: 'none',
+                    background: 'linear-gradient(135deg,#a78bfa,#7c3aed)',
+                    color: '#fff', fontSize: '0.72rem', fontWeight: 800,
+                    cursor: 'pointer', flexShrink: 0, letterSpacing: '0.01em',
+                    boxShadow: '0 2px 8px rgba(124,58,237,0.3)',
+                  }}
+                >
+                  <GraduationCap size={13} />
+                  Lesson
+                </button>
+              )}
+
               {/* XP */}
               <div style={{ textAlign: 'right', flexShrink: 0 }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.78rem', fontWeight: 800, color: topic.state === 'done' ? '#10b981' : '#94a3b8' }}>
@@ -228,6 +252,11 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
           <BookOpen size={40} style={{ margin: '0 auto 12px', display: 'block', opacity: 0.4 }} />
           <p style={{ fontWeight: 700, margin: 0 }}>No topics available yet</p>
         </div>
+      )}
+
+      {/* Lesson preview overlay */}
+      {previewLesson && (
+        <LessonPlayer lesson={previewLesson} onClose={() => setPreviewLesson(null)} />
       )}
     </motion.div>
   );

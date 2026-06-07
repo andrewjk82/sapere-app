@@ -301,10 +301,14 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
       })}
       {segments.map((s, i) => {
         if (!s.label) return null;
-        const at = s.labelAt || [(s.from + s.to) / 2, 0];
-        return <motion.text key={'segl' + i} x={sx(at[0])} y={sy(at[1])} fontSize="13" fontWeight="800" fill={s.color} textAnchor="middle"
-          initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: (s.delay ?? 1.2) + 0.7 }}
-          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 3.5 }}>{s.label}</motion.text>;
+        const fn = s.fn || curves[0]?.fn;
+        const midX = (s.from + s.to) / 2;
+        const midY = fn ? fn(midX) : 0;
+        const at = s.labelAt || [midX, midY];
+        const yOffset = s.labelYOffset ?? (at[1] >= 0 ? 1.8 : -1.8);
+        return <motion.text key={'segl' + i} x={sx(at[0])} y={sy(at[1] + yOffset)} fontSize="16" fontWeight="900" fill={s.color} textAnchor="middle"
+          initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: (s.delay ?? 1.2) + 0.7, type: 'spring', stiffness: 300 }}
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{s.label}</motion.text>;
       })}
 
       {/* points (pop in after curve; `pulse` keeps gesturing at it) */}
@@ -373,28 +377,38 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
 
 // Cells render through MathView so LaTeX renders properly — e.g. '\frac{1}{2}'
 // shows as a real stacked fraction, 'x' as italic math, '-2' as a number.
-const ValueTable = ({ rows = [] }) => (
-  <div style={{ display: 'flex', justifyContent: 'center', overflowX: 'auto', fontFamily: FONT }}>
-    <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: '14px', overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
-      <tbody>
-        {rows.map((r, ri) => (
-          <tr key={ri}>
-            {r.map((c, ci) => {
-              const header = ci === 0;
-              return (
-                <td key={ci} style={{ borderBottom: ri < rows.length - 1 ? '1px solid #ece9fb' : 'none', borderRight: ci < r.length - 1 ? '1px solid #ece9fb' : 'none', padding: '9px 16px', textAlign: 'center', background: header ? 'linear-gradient(135deg,#a78bfa,#7c3aed)' : '#fff', whiteSpace: 'nowrap' }}>
-                  {(c !== '' && c != null) && (
-                    <MathView content={`$${c}$`} style={{ display: 'inline-block', fontSize: '1rem', fontWeight: header ? 800 : 600, color: header ? '#fff' : '#1e1b4b' }} />
-                  )}
-                </td>
-              );
-            })}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-);
+const SIGN_BG = { '-': 'rgba(239,68,68,0.12)', '+': 'rgba(16,185,129,0.12)', '0': 'rgba(148,163,184,0.12)' };
+const SIGN_COLOR = { '-': '#dc2626', '+': '#059669', '0': '#64748b' };
+
+const ValueTable = ({ rows = [] }) => {
+  const signRowIndex = rows.findIndex(r => String(r[0]).toLowerCase() === 'sign');
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', overflowX: 'auto', fontFamily: FONT }}>
+      <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: '14px', overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
+        <tbody>
+          {rows.map((r, ri) => (
+            <tr key={ri}>
+              {r.map((c, ci) => {
+                const header = ci === 0;
+                const isSignRow = ri === signRowIndex && !header;
+                const signVal = isSignRow ? String(c) : null;
+                const signBg = isSignRow ? (SIGN_BG[signVal] || '#fff') : undefined;
+                const signClr = isSignRow ? (SIGN_COLOR[signVal] || '#1e1b4b') : undefined;
+                return (
+                  <td key={ci} style={{ borderBottom: ri < rows.length - 1 ? '1px solid #ece9fb' : 'none', borderRight: ci < r.length - 1 ? '1px solid #ece9fb' : 'none', padding: '9px 16px', textAlign: 'center', background: header ? 'linear-gradient(135deg,#a78bfa,#7c3aed)' : (signBg || '#fff'), whiteSpace: 'nowrap' }}>
+                    {(c !== '' && c != null) && (
+                      <MathView content={`$${c}$`} style={{ display: 'inline-block', fontSize: '1rem', fontWeight: header ? 800 : (isSignRow ? 900 : 600), color: header ? '#fff' : (signClr || '#1e1b4b') }} />
+                    )}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
@@ -411,11 +425,23 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'math') inner = (
     <div style={{
       padding: item.emphasis ? '18px 22px' : '8px', borderRadius: '16px',
-      background: item.emphasis ? 'linear-gradient(135deg,#faf5ff,#f3f0ff)' : 'transparent',
-      border: item.emphasis ? '1px solid #e9e2fb' : 'none', textAlign: 'center',
-      boxShadow: item.emphasis ? '0 6px 18px rgba(124,58,237,0.06)' : 'none',
+      background: item.highlightColor ? item.highlightColor : (item.emphasis ? 'linear-gradient(135deg,#faf5ff,#f3f0ff)' : 'transparent'),
+      border: item.emphasis || item.highlightColor ? '1px solid #e9e2fb' : 'none', textAlign: 'center',
+      boxShadow: item.emphasis || item.highlightColor ? '0 6px 18px rgba(124,58,237,0.06)' : 'none',
     }}>
       <MathView content={item.content} style={{ fontSize: '1.3rem', fontWeight: 700, color: '#1e1b4b' }} />
+    </div>
+  );
+  else if (item.type === 'mathRow') inner = (
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', alignItems: 'center' }}>
+      {item.formulas.map((f, fi) => (
+        <motion.div key={fi}
+          initial={{ opacity: 0, scale: 0.88 }} animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: 'spring', stiffness: 280, damping: 22, delay: f.delay ?? fi * 0.25 }}
+          style={{ padding: '12px 18px', borderRadius: '14px', background: f.highlightColor || 'linear-gradient(135deg,#faf5ff,#f3f0ff)', border: '1.5px solid', borderColor: f.borderColor || '#e9e2fb', boxShadow: '0 4px 14px rgba(0,0,0,0.06)', textAlign: 'center' }}>
+          <MathView content={f.content} style={{ fontSize: '1.15rem', fontWeight: 700, color: '#1e1b4b' }} />
+        </motion.div>
+      ))}
     </div>
   );
   else if (item.type === 'text') inner = <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#475569', textAlign: 'center', fontFamily: FONT }}>{item.content}</div>;

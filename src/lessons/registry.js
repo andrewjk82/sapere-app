@@ -270,7 +270,7 @@ export const buildPowersCubicsCirclesLesson = ({ audioBase = null } = {}) => {
     {
       narration: `A <b>polynomial</b> is a sum of multiples of x, x², x³, … and a constant. The highest power is its <b>degree</b>. We now sketch <b>cubics</b> (degree 3) that are <b>factored into linear factors</b>.`,
       speech: `A polynomial is a sum of multiples of x, x squared, x cubed, and so on, plus a constant. The highest power is called its degree. We now sketch cubics, degree three, that are factored into linear factors.`,
-      board: [{ type: 'math', content: `$$3x^{4} + 4x^{2} - 2x \\qquad x^{3} - x^{2} = x^{2}(x-1)$$` }],
+      board: [{ type: 'math', content: `$$\\color{#7c3aed}{3x^{4}} + 4x^{2} - 2x \\qquad \\color{#7c3aed}{x^{3}} - x^{2} = x^{2}(x-1)$$` }],
     },
     {
       narration: `Consider <b>y = (x + 1)(x − 2)(x − 4)</b>. The factors give <b>zeros at x = −1, 2, 4</b> — the only places the curve can change sign.`,
@@ -287,10 +287,10 @@ export const buildPowersCubicsCirclesLesson = ({ audioBase = null } = {}) => {
         { type: 'valueTable', rows: [['x', '-2', '-1', '0', '2', '3', '4', '5'], ['y', '-24', '0', '8', '0', '-4', '0', '18'], ['sign', '-', '0', '+', '0', '-', '0', '+']] },
         { type: 'graph', xMin: -2.2, xMax: 5.2, yMin: -26, yMax: 22, curves: [{ fn: fcubic }],
           segments: [
-            { from: -1.9, to: -1, color: '#ef4444', delay: 1.0 },
-            { from: -1, to: 2, color: '#10b981', delay: 1.25 },
-            { from: 2, to: 4, color: '#ef4444', delay: 1.5 },
-            { from: 4, to: 4.9, color: '#10b981', delay: 1.75 },
+            { from: -1.9, to: -1, color: '#ef4444', delay: 1.0, label: '−' },
+            { from: -1, to: 2, color: '#10b981', delay: 1.25, label: '+' },
+            { from: 2, to: 4, color: '#ef4444', delay: 1.5, label: '−' },
+            { from: 4, to: 4.9, color: '#10b981', delay: 1.75, label: '+' },
           ] },
       ],
     },
@@ -337,14 +337,20 @@ export const buildPowersCubicsCirclesLesson = ({ audioBase = null } = {}) => {
       narration: `Solving for <b>x</b> instead gives $x = \\pm\\sqrt{r^{2} - y^{2}}$ — the <b>left and right semicircles</b>. These are <b>relations, not functions</b> (they fail the vertical line test).`,
       speech: `Solving for x instead gives x equals plus or minus the square root of r squared minus y squared. These are the left and right semicircles. They are relations, not functions, because they fail the vertical line test.`,
       board: [
-        { type: 'graph', width: 300, height: 340, xMin: -0.7, xMax: 2.7, yMin: -2.7, yMax: 2.7, circles: [{ cx: 0, cy: 0, r: R, from: -90, to: 90 }] },
-        { type: 'math', content: `$$x = \\pm\\sqrt{r^{2} - y^{2}}$$`, emphasis: true },
+        { type: 'graph', width: 300, height: 340, xMin: -2.7, xMax: 2.7, yMin: -2.7, yMax: 2.7, circles: [{ cx: 0, cy: 0, r: R, from: -90, to: 90, color: '#10b981' }, { cx: 0, cy: 0, r: R, from: 90, to: 270, color: '#ef4444' }] },
+        { type: 'math', content: `$$x = \\color{#10b981}{+}\\sqrt{r^{2} - y^{2}} \\qquad x = \\color{#ef4444}{-}\\sqrt{r^{2} - y^{2}}$$`, emphasis: true },
       ],
     },
     {
       narration: `<b>Recap:</b> √x is half a sideways parabola; <b>odd powers</b> have a horizontal inflection at O, <b>even powers</b> a turning point; factored cubics <b>change sign at their zeros</b> (a double zero is a tangent); and <b>x² + y² = r²</b> is a circle made of semicircle functions.`,
       speech: `Recap. Square root of x is half a sideways parabola. Odd powers have a horizontal inflection at the origin, even powers have a turning point. Factored cubics change sign at their zeros, and a double zero gives a tangent. And x squared plus y squared equals r squared is a circle, made of semicircle functions.`,
-      board: [{ type: 'math', content: `$$y=\\sqrt{x} \\quad y=x^{3} \\quad y=x^{4} \\quad y=(x+1)(x-2)(x-4) \\quad x^{2}+y^{2}=r^{2}$$` }],
+      board: [{ type: 'mathRow', formulas: [
+        { content: `$$y=\\sqrt{x}$$`,               highlightColor: 'rgba(245,158,11,0.12)',  borderColor: '#fcd34d', delay: 0.1 },
+        { content: `$$y=x^{3}$$`,                   highlightColor: 'rgba(59,130,246,0.12)',  borderColor: '#93c5fd', delay: 0.35 },
+        { content: `$$y=x^{4}$$`,                   highlightColor: 'rgba(249,115,22,0.12)', borderColor: '#fdba74', delay: 0.6 },
+        { content: `$$y=(x+1)(x-2)(x-4)$$`,         highlightColor: 'rgba(16,185,129,0.12)', borderColor: '#6ee7b7', delay: 0.85 },
+        { content: `$$x^{2}+y^{2}=r^{2}$$`,         highlightColor: 'rgba(124,58,237,0.12)', borderColor: '#c4b5fd', delay: 1.1 },
+      ]}],
     },
   ];
 
@@ -645,6 +651,247 @@ export const buildTrigEquationsLesson = ({ audioBase = null } = {}) => {
   return { emoji: '🧭', title: 'Solving trigonometric equations', steps, glossary };
 };
 
+// ── Lesson: Year 7 · 20A · Polyhedra ────────────────────────────────────────
+export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
+  const V = '#7c3aed';   // visible edge colour (purple)
+  const H = '#c4b5fd';   // hidden edge colour (dashed, light purple)
+  const HL = '#10b981';  // highlight green (face / cross-section)
+  const HR = '#ef4444';  // highlight red (edge)
+
+  // ── Square pyramid (used for face / edge / vertex steps) ──
+  // A=(0.5,0.3) B=(4.1,0.3) C=(4.8,1.2) D=(1.2,1.2) E=(2.65,4.0)
+  const pyrBase = [
+    { from:[0.5,0.3], to:[4.1,0.3], color:V, width:2.2, delay:0.3  }, // AB
+    { from:[4.1,0.3], to:[4.8,1.2], color:V, width:2.2, delay:0.35 }, // BC
+    { from:[0.5,0.3], to:[2.65,4.0], color:V, width:2.2, delay:0.4  }, // AE
+    { from:[4.1,0.3], to:[2.65,4.0], color:V, width:2.2, delay:0.45 }, // BE
+    { from:[4.8,1.2], to:[2.65,4.0], color:V, width:2.2, delay:0.5  }, // CE
+    { from:[4.8,1.2], to:[1.2,1.2], color:H, width:1.5, dashed:true, delay:0.55 }, // CD hidden
+    { from:[1.2,1.2], to:[0.5,0.3], color:H, width:1.5, dashed:true, delay:0.6  }, // DA hidden
+    { from:[1.2,1.2], to:[2.65,4.0], color:H, width:1.5, dashed:true, delay:0.65 }, // DE hidden
+  ];
+  const pyrGraph = ({ lines: extra=[], points=[], texts=[] } = {}) => ({
+    type:'graph', showAxes:false,
+    xMin:-0.3, xMax:5.5, yMin:-0.3, yMax:4.9, width:360, height:350,
+    lines:[...pyrBase, ...extra], points, texts,
+  });
+
+  // ── Rectangular prism / box (used for prism intro & recap) ──
+  // Front face: (0,0)-(4,0)-(4,3)-(0,3). Back offset (+1.3,+1.0).
+  const boxLines = [
+    { from:[0,0], to:[4,0], color:V, width:2.2, delay:0.3  },
+    { from:[4,0], to:[4,3], color:V, width:2.2, delay:0.35 },
+    { from:[4,3], to:[0,3], color:V, width:2.2, delay:0.4  },
+    { from:[0,3], to:[0,0], color:V, width:2.2, delay:0.45 },
+    { from:[4,3], to:[5.3,4.0], color:V, width:2.2, delay:0.5  },
+    { from:[4,0], to:[5.3,1.0], color:V, width:2.2, delay:0.55 },
+    { from:[5.3,1.0], to:[5.3,4.0], color:V, width:2.2, delay:0.6 },
+    { from:[0,3], to:[1.3,4.0], color:V, width:2.2, delay:0.65 },
+    { from:[1.3,4.0], to:[5.3,4.0], color:V, width:2.2, delay:0.7 },
+    { from:[0,0], to:[1.3,1.0], color:H, width:1.5, dashed:true, delay:0.75 },
+    { from:[1.3,1.0], to:[5.3,1.0], color:H, width:1.5, dashed:true, delay:0.8 },
+    { from:[1.3,1.0], to:[1.3,4.0], color:H, width:1.5, dashed:true, delay:0.85 },
+  ];
+  const boxGraph = ({ texts=[] } = {}) => ({
+    type:'graph', showAxes:false,
+    xMin:-0.3, xMax:6.2, yMin:-0.3, yMax:4.9, width:400, height:310,
+    lines:boxLines, texts,
+  });
+
+  // ── Triangular prism (cross-section step) ──
+  // Front △: F1(0.5,0.3) F2(4.2,0.3) F3(2.35,3.2)
+  // Back △: B1(1.4,1.1) B2(5.1,1.1) B3(3.25,4.0)
+  const prismGraph = ({ highlightFront=false } = {}) => {
+    const fc = highlightFront ? HL : V;
+    const fw = highlightFront ? 3.5 : 2.2;
+    return {
+      type:'graph', showAxes:false,
+      xMin:-0.3, xMax:6.0, yMin:-0.3, yMax:4.6, width:420, height:310,
+      lines:[
+        { from:[0.5,0.3], to:[4.2,0.3], color:fc, width:fw, delay:0.3  },
+        { from:[4.2,0.3], to:[2.35,3.2], color:fc, width:fw, delay:0.35 },
+        { from:[2.35,3.2], to:[0.5,0.3], color:fc, width:fw, delay:0.4  },
+        { from:[4.2,0.3], to:[5.1,1.1], color:V, width:2.2, delay:0.45 },
+        { from:[2.35,3.2], to:[3.25,4.0], color:V, width:2.2, delay:0.5 },
+        { from:[5.1,1.1], to:[3.25,4.0], color:V, width:2.2, delay:0.55 },
+        { from:[5.1,1.1], to:[1.4,1.1], color:V, width:2.2, delay:0.6 },
+        { from:[3.25,4.0], to:[1.4,1.1], color:V, width:2.2, delay:0.65 },
+        { from:[0.5,0.3], to:[1.4,1.1], color:H, width:1.5, dashed:true, delay:0.7 },
+      ],
+      texts: highlightFront ? [
+        { x:1.8, y:1.9, text:'cross-section ▲', color:HL, size:12, delay:1.1 },
+      ] : [],
+    };
+  };
+
+  const POLYHEDRA_GLOSSARY = {
+    'polyhedron': 'A solid whose entire surface is made of flat polygonal faces, with no curved parts and no holes.',
+    'polyhedra': 'The plural of polyhedron.',
+    'face': 'A flat polygonal panel forming part of the surface of a polyhedron.',
+    'edge': 'A straight line segment where two faces of a polyhedron meet.',
+    'vertex': 'A corner point of a polyhedron — where three or more edges meet.',
+    'vertices': 'The plural of vertex.',
+    'regular polyhedron': 'A polyhedron whose faces are all identical regular polygons, with the same number meeting at every vertex.',
+    'Platonic solid': 'One of the five regular polyhedra: tetrahedron, cube, octahedron, dodecahedron, icosahedron.',
+    'prism': 'A polyhedron with two identical parallel faces (bases) joined by rectangular or parallelogram faces.',
+    'cross-section': 'The shape you see when a solid is cut by a plane parallel to its base.',
+    'uniform cross-section': 'When every cross-section of a prism parallel to the base is identical.',
+    'oblique prism': 'A prism where the lateral edges are not perpendicular to the bases — it leans.',
+    'Euler\'s formula': 'For any convex polyhedron: Faces + Vertices − Edges = 2.',
+  };
+
+  const steps = [
+    // ── Step 0 ── Definition ──────────────────────────────────────────────────
+    {
+      narration: `A <b>polyhedron</b> is a solid whose outside surface is made up entirely of flat panels called <b>faces</b>. Every face must be a simple <b>polygonal shape</b>, and the solid must not be pierced by holes.`,
+      speech: `A polyhedron is a solid whose outside surface is made up entirely of flat panels called faces. Every face must be a simple polygonal shape, and the solid must not be pierced by holes.`,
+      board: [
+        boxGraph({ texts:[ { x:2, y:-0.1, text:'Rectangular prism — a polyhedron', color:'#64748b', size:11, delay:1.0 } ] }),
+        { type:'math', content:`$$\\text{Polyhedron} = \\text{solid with flat polygonal faces (no curves, no holes)}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 1 ── Not polyhedra ───────────────────────────────────────────────
+    {
+      narration: `Solids like a <b>sphere</b>, <b>cylinder</b>, and <b>cone</b> are <b>not</b> polyhedra — their surfaces include curved parts, not flat polygons.`,
+      speech: `Solids like a sphere, cylinder, and cone are not polyhedra. Their surfaces include curved parts, not flat polygons.`,
+      board: [
+        { type:'mathRow', formulas:[
+          { content:`$$\\text{⚽ Sphere}$$`,   highlightColor:'rgba(239,68,68,0.1)',  borderColor:'#fca5a5', delay:0.1 },
+          { content:`$$\\text{🥫 Cylinder}$$`, highlightColor:'rgba(239,68,68,0.1)',  borderColor:'#fca5a5', delay:0.3 },
+          { content:`$$\\text{🍦 Cone}$$`,     highlightColor:'rgba(239,68,68,0.1)',  borderColor:'#fca5a5', delay:0.5 },
+        ]},
+        { type:'math', content:`$$\\text{curved surface} \\Rightarrow \\textbf{NOT}\\text{ a polyhedron}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 2 ── Face ────────────────────────────────────────────────────────
+    {
+      narration: `Each flat polygon forming part of the surface is called a <b>face</b>. This square pyramid has <b>5 faces</b>: one square base and four triangular sides.`,
+      speech: `Each flat polygon forming part of the surface is called a face. This square pyramid has five faces: one square base and four triangular sides.`,
+      board: [
+        pyrGraph({
+          lines:[
+            { from:[0.5,0.3], to:[4.1,0.3], color:HL, width:4, delay:1.0 },
+            { from:[4.1,0.3], to:[2.65,4.0], color:HL, width:4, delay:1.05 },
+            { from:[0.5,0.3], to:[2.65,4.0], color:HL, width:4, delay:1.1 },
+          ],
+          texts:[ { x:2.0, y:2.0, text:'face ▲', color:HL, size:13, delay:1.3 } ],
+        }),
+        { type:'math', content:`$$\\textbf{F} = 5 \\quad (\\text{1 square base} + \\text{4 triangles})$$`, emphasis:true },
+      ],
+    },
+    // ── Step 3 ── Edge ────────────────────────────────────────────────────────
+    {
+      narration: `Two faces meet along a line called an <b>edge</b>. The square pyramid has <b>8 edges</b>: 4 around the base and 4 going up to the apex.`,
+      speech: `Two faces meet along a line called an edge. The square pyramid has eight edges: four around the base and four going up to the apex.`,
+      board: [
+        pyrGraph({
+          lines:[
+            { from:[0.5,0.3], to:[4.1,0.3], color:HR, width:5, delay:1.0 },
+          ],
+          texts:[ { x:2.3, y:-0.1, text:'edge', color:HR, size:13, delay:1.3 } ],
+        }),
+        { type:'math', content:`$$\\textbf{E} = 8 \\quad (\\text{4 base edges} + \\text{4 lateral edges})$$`, emphasis:true },
+      ],
+    },
+    // ── Step 4 ── Vertex ──────────────────────────────────────────────────────
+    {
+      narration: `The point where three or more edges meet is called a <b>vertex</b> (plural: <b>vertices</b>). The square pyramid has <b>5 vertices</b>: 4 base corners and 1 apex.`,
+      speech: `The point where three or more edges meet is called a vertex. The plural is vertices. The square pyramid has five vertices: four base corners and one apex.`,
+      board: [
+        pyrGraph({
+          points:[
+            { x:2.65, y:4.0, label:'vertex (apex)', pulse:true },
+            { x:0.5, y:0.3, label:'V' },
+            { x:4.1, y:0.3, label:'V' },
+          ],
+        }),
+        { type:'math', content:`$$\\textbf{V} = 5 \\quad (\\text{4 base corners} + \\text{1 apex})$$`, emphasis:true },
+      ],
+    },
+    // ── Step 5 ── Euler's formula ─────────────────────────────────────────────
+    {
+      narration: `For any convex polyhedron: <b>Faces + Vertices − Edges = 2</b>. This is <b>Euler's formula</b>. Check it on the pyramid: $5 + 5 - 8 = 2$ ✓`,
+      speech: `For any convex polyhedron, faces plus vertices minus edges equals 2. This is Euler's formula. Check it on the pyramid: 5 plus 5 minus 8 equals 2. It works!`,
+      board: [
+        { type:'math', content:`$$F + V - E = 2$$`, emphasis:true },
+        { type:'valueTable', rows:[
+          ['shape', 'F', 'V', 'E', 'F+V−E'],
+          ['Square pyramid', '5', '5', '8', '2'],
+          ['Rectangular prism', '6', '8', '12', '2'],
+        ]},
+      ],
+    },
+    // ── Step 6 ── Platonic solids definition ──────────────────────────────────
+    {
+      narration: `A <b>regular polyhedron</b> has faces that are all identical regular polygons, with the same number of edges meeting at every vertex. There are exactly <b>five</b> such solids — the <b>Platonic solids</b>.`,
+      speech: `A regular polyhedron has faces that are all identical regular polygons, with the same number of edges meeting at every vertex. There are exactly five such solids. They are called the Platonic solids.`,
+      board: [
+        { type:'mathRow', formulas:[
+          { content:`$$\\text{Tetrahedron}$$`,   highlightColor:'rgba(245,158,11,0.12)',  borderColor:'#fcd34d', delay:0.1  },
+          { content:`$$\\text{Cube}$$`,           highlightColor:'rgba(59,130,246,0.12)',  borderColor:'#93c5fd', delay:0.35 },
+          { content:`$$\\text{Octahedron}$$`,     highlightColor:'rgba(16,185,129,0.12)', borderColor:'#6ee7b7', delay:0.6  },
+          { content:`$$\\text{Dodecahedron}$$`,   highlightColor:'rgba(239,68,68,0.12)',  borderColor:'#fca5a5', delay:0.85 },
+          { content:`$$\\text{Icosahedron}$$`,    highlightColor:'rgba(124,58,237,0.12)', borderColor:'#c4b5fd', delay:1.1  },
+        ]},
+        { type:'math', content:`$$\\text{Only 5 Platonic solids exist}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 7 ── Platonic solids properties ─────────────────────────────────
+    {
+      narration: `Here are the five Platonic solids with their face, edge, and vertex counts. Each satisfies <b>F + V − E = 2</b>.`,
+      speech: `Here are the five Platonic solids with their face, edge, and vertex counts. Each one satisfies Euler's formula: F plus V minus E equals 2.`,
+      board: [
+        { type:'valueTable', rows:[
+          ['Solid',          'Face shape',  'F',  'E',  'V' ],
+          ['Tetrahedron',    'Triangle',    '4',  '6',  '4' ],
+          ['Cube',           'Square',      '6',  '12', '8' ],
+          ['Octahedron',     'Triangle',    '8',  '12', '6' ],
+          ['Dodecahedron',   'Pentagon',    '12', '30', '20'],
+          ['Icosahedron',    'Triangle',    '20', '30', '12'],
+        ]},
+      ],
+    },
+    // ── Step 8 ── Prisms ──────────────────────────────────────────────────────
+    {
+      narration: `A <b>prism</b> is a polyhedron with <b>two identical parallel faces</b> (the bases) joined by parallelogram faces. All rectangular boxes are prisms — so are triangular prisms, hexagonal prisms, and more.`,
+      speech: `A prism is a polyhedron with two identical parallel faces, called the bases, joined by parallelogram faces. All rectangular boxes are prisms, as are triangular prisms, hexagonal prisms, and more.`,
+      board: [
+        boxGraph({ texts:[
+          { x:2.0, y:-0.1, text:'front face (base)', color:HL, size:11, delay:1.1 },
+          { x:3.5, y:4.3, text:'back face (base)', color:HL, size:11, delay:1.3 },
+        ]}),
+        { type:'math', content:`$$\\text{Prism: 2 identical parallel bases} + \\text{rectangular faces}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 9 ── Cross-section ───────────────────────────────────────────────
+    {
+      narration: `A <b>cross-section</b> of a prism is the shape you get by cutting it with a plane parallel to its base. For a triangular prism, every cross-section is an identical triangle — it has a <b>uniform cross-section</b>.`,
+      speech: `A cross-section of a prism is the shape you get by cutting it with a plane parallel to its base. For a triangular prism, every cross-section is an identical triangle. We say it has a uniform cross-section.`,
+      board: [
+        prismGraph({ highlightFront:true }),
+        { type:'math', content:`$$\\text{uniform cross-section} = \\text{same shape all the way through}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 10 ── Recap ──────────────────────────────────────────────────────
+    {
+      narration: `<b>Recap:</b> A <b>polyhedron</b> has flat polygonal <b>faces</b>. Two faces share an <b>edge</b>; edges meet at a <b>vertex</b>. Euler's formula: $F + V - E = 2$. There are exactly <b>5 Platonic solids</b>. A <b>prism</b> has a <b>uniform cross-section</b>.`,
+      speech: `Recap. A polyhedron has flat polygonal faces. Two faces share an edge, and edges meet at a vertex. Euler's formula says F plus V minus E equals 2. There are exactly five Platonic solids. And a prism has a uniform cross-section.`,
+      board: [
+        { type:'mathRow', formulas:[
+          { content:`$$\\text{face}$$`,   highlightColor:'rgba(16,185,129,0.12)',  borderColor:'#6ee7b7', delay:0.1  },
+          { content:`$$\\text{edge}$$`,   highlightColor:'rgba(239,68,68,0.12)',   borderColor:'#fca5a5', delay:0.3  },
+          { content:`$$\\text{vertex}$$`, highlightColor:'rgba(59,130,246,0.12)',  borderColor:'#93c5fd', delay:0.5  },
+          { content:`$$F+V-E=2$$`,        highlightColor:'rgba(124,58,237,0.12)', borderColor:'#c4b5fd', delay:0.7  },
+          { content:`$$\\text{prism}$$`,  highlightColor:'rgba(245,158,11,0.12)', borderColor:'#fcd34d', delay:0.9  },
+        ]},
+      ],
+    },
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return { emoji:'🔷', title:'Polyhedra', steps, glossary:{ ...BASE_GLOSSARY, ...POLYHEDRA_GLOSSARY } };
+};
+
 // ── Registered lessons (topicId → spec) ────────────────────────────────────
 export const LESSONS = {
   // Year 7 · 1G · Place value (textbook example uses 3721).
@@ -662,6 +909,9 @@ export const LESSONS = {
 
   // Year 11 Advanced · 11B · Solving trigonometric equations.
   'y11a-11B': { ...buildTrigEquationsLesson({ audioBase: '/lessons/audio/y11a-11B' }), topicId: 'y11a-11B' },
+
+  // Year 7 · 20A · Polyhedra.
+  'y7-20a': { ...buildPolyhedraLesson(), topicId: 'y7-20a' },
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;
