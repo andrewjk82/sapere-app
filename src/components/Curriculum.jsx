@@ -192,6 +192,8 @@ import { Y10_CH11E_QUESTIONS } from '../constants/seedYear10Ch11EQuestions.js';
 import { Y10_CH12A_QUESTIONS } from '../constants/seedYear10Ch12AQuestions.js';
 import { Y10_CH12B_QUESTIONS } from '../constants/seedYear10Ch12BQuestions.js';
 import { Y10_CH12C_QUESTIONS } from '../constants/seedYear10Ch12CQuestions.js';
+import { Y10_CH12C_APP_QUESTIONS } from '../constants/seedYear10Ch12C_AppQuestions.js';
+import { Y10_CH12D_QUESTIONS } from '../constants/seedYear10Ch12DQuestions.js';
 import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -442,6 +444,8 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12a', topicCode: '12A', topicTitle: 'Review of the basic trigonometric ratios', year: 'Year 10', seed: Y10_CH12A_QUESTIONS, label: 'Y10 Ch12 · 12A Review of the basic trigonometric ratios' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12b', topicCode: '12B', topicTitle: 'Exact trigonometric ratios', year: 'Year 10', seed: Y10_CH12B_QUESTIONS, label: 'Y10 Ch12 · 12B Exact trigonometric ratios' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12c', topicCode: '12C', topicTitle: '3D Trigonometry', year: 'Year 10', seed: Y10_CH12C_QUESTIONS, label: 'Y10 Ch12 · 12C 3D Trigonometry' },
+  { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12c-app', topicCode: '12C(Apps)', topicTitle: 'Applications of Trigonometry', year: 'Year 10', seed: Y10_CH12C_APP_QUESTIONS, label: 'Y10 Ch12 · 12C(Apps) Applications of Trigonometry' },
+  { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12d', topicCode: '12D', topicTitle: 'The Sine Rule', year: 'Year 10', seed: Y10_CH12D_QUESTIONS, label: 'Y10 Ch12 · 12D The Sine Rule' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
