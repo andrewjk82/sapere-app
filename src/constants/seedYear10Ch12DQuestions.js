@@ -22,7 +22,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "b \\approx 10.46"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            11.65,
+            0
+          ],
+          "C": [
+            3.8760042918454922,
+            6.998327709502844
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "8 cm"
+          },
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "$b$ cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "61°"
+          },
+          {
+            "at": "B",
+            "label": "42°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q1b",
@@ -47,7 +105,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "b \\approx 6.88"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            13.723676332193188,
+            0
+          ],
+          "C": [
+            5.635286359383302,
+            3.9468908836891465
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "9 cm"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "$b$ cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "35°"
+          },
+          {
+            "at": "B",
+            "label": "26°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q1c",
@@ -72,7 +188,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "b \\approx 8.69"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            10
+          ],
+          "B": [
+            3.84,
+            10
+          ],
+          "C": [
+            1.13,
+            1.14
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "C"
+            ],
+            "text": "9 m"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "$b$ m"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "73°"
+          },
+          {
+            "at": "B",
+            "label": "82°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q2a",
@@ -101,7 +275,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "x \\approx 8.63"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            9.5,
+            0
+          ],
+          "C": [
+            1.6722684210526308,
+            3.6336645866053927
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "4 cm"
+          },
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "$x$ cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "83°"
+          },
+          {
+            "at": "B",
+            "label": "26°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q2b",
@@ -130,7 +362,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "x \\approx 10.89"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            20.47,
+            0
+          ],
+          "C": [
+            8.344235466536393,
+            6.997559180099601
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "14 cm"
+          },
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "$x$ cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "C",
+            "label": "110°"
+          },
+          {
+            "at": "B",
+            "label": "40°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q2c",
@@ -159,7 +449,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "x \\approx 9.34"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            10
+          ],
+          "B": [
+            9.34,
+            10
+          ],
+          "C": [
+            5.6,
+            2.5
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "A",
+              "B"
+            ],
+            "text": "$x$ cm"
+          },
+          {
+            "between": [
+              "B",
+              "C"
+            ],
+            "text": "8 cm"
+          }
+        ],
+        "angles": [
+          {
+            "at": "B",
+            "label": "52°"
+          },
+          {
+            "at": "C",
+            "label": "73°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q3a",
@@ -230,7 +578,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{10 \\sin(76^\\circ)}{12}\\right) \\approx 54^\\circ"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            11.23,
+            0
+          ],
+          "C": [
+            3.6559617097061454,
+            9.307735706237178
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "12"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "10"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "76°"
+          },
+          {
+            "at": "B",
+            "label": "$\\theta$"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q4b",
@@ -255,7 +661,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{5 \\sin(63^\\circ)}{8}\\right) \\approx 34^\\circ"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            8.85,
+            0
+          ],
+          "C": [
+            2.221610169491525,
+            4.47933569347195
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "8"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "5"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "$\\theta$"
+          },
+          {
+            "at": "B",
+            "label": "63°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q4c",
@@ -280,7 +744,65 @@ export const Y10_CH12D_QUESTIONS = [
         "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{23 \\sin(85^\\circ)}{25}\\right) \\approx 66^\\circ"
       }
     ],
-    "graphData": null
+    "graphData": {
+      "geometry": {
+        "width": 300,
+        "points": {
+          "A": [
+            0,
+            0
+          ],
+          "B": [
+            13,
+            0
+          ],
+          "C": [
+            2.8076923076923075,
+            22.827984227814014
+          ]
+        },
+        "segments": [
+          {
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "A"
+          }
+        ],
+        "sideLabels": [
+          {
+            "between": [
+              "C",
+              "B"
+            ],
+            "text": "25"
+          },
+          {
+            "between": [
+              "C",
+              "A"
+            ],
+            "text": "23"
+          }
+        ],
+        "angles": [
+          {
+            "at": "A",
+            "label": "$\\theta$"
+          },
+          {
+            "at": "B",
+            "label": "85°"
+          }
+        ]
+      }
+    }
   },
   {
     "id": "y10-12d-q5a",
