@@ -1083,61 +1083,119 @@ export const buildNumberLineLesson = ({ audioBase = null } = {}) => {
   const nl = (opts) => ({ type: 'numberLine', min: 0, max: 7, ...opts });
   const nl44 = (opts) => ({ type: 'numberLine', min: 44, max: 52, arrowLeft: true, ...opts });
 
+  // mark object helpers
+  const dot  = (n, color, delay, label, pulse) => ({ n, color, delay, label, pulse });
+  const PURPLE = '#7c3aed', RED = '#ef4444', GREEN = '#10b981';
+
   const steps = [
+    // ── Step 0: introduce the number line ──────────────────────────────────
     {
       narration: `Whole numbers can be shown as points on a line. Start at <b>0</b>, then mark equally-spaced points moving to the right: 1, 2, 3, 4, … The arrow shows the line continues forever. This is called the <b>number line</b>.`,
       speech: `Whole numbers can be shown as points on a line. Start at zero, then mark equally spaced points moving to the right: one, two, three, four, and so on. The arrow shows the line continues forever. This is called the number line.`,
-      board: [nl()],
+      board: [
+        nl({
+          // dots pop in one-by-one from 0 to 7 to show the "building" of the line
+          marks: [0,1,2,3,4,5,6,7].map((n) => dot(n, PURPLE, n * 0.14)),
+        }),
+        { type: 'text', content: '← whole numbers, equally spaced, continuing forever →' },
+      ],
     },
+    // ── Step 1: less than (2 < 6) ──────────────────────────────────────────
     {
       narration: `Look at <b>2</b> and <b>6</b> on the line. Because <b>2 is to the left of 6</b>, we say <b>2 is less than 6</b>. We write this as <b>2 < 6</b>. The sharp end of < points to the smaller number.`,
       speech: `Look at 2 and 6 on the line. Because 2 is to the left of 6, we say 2 is less than 6. We write this as 2 is less than 6. The sharp end of the symbol points to the smaller number.`,
       board: [
-        nl({ marks: [2, 6] }),
+        nl({
+          marks: [
+            dot(2, PURPLE, 0.1, 'smaller', true),
+            dot(6, RED,    0.5, 'larger',  true),
+          ],
+          connector: { from: 2, to: 6, label: '2 is to the LEFT of 6', color: PURPLE, delay: 1.0 },
+        }),
         { type: 'math', content: `$$2 < 6$$`, emphasis: true },
       ],
     },
+    // ── Step 2: greater than (6 > 2) ───────────────────────────────────────
     {
       narration: `We can also turn this around: because <b>6 is to the right of 2</b>, we say <b>6 is greater than 2</b>. We write this as <b>6 > 2</b>. The open end of > faces the larger number.`,
       speech: `We can also turn this around. Because 6 is to the right of 2, we say 6 is greater than 2. We write this as 6 is greater than 2. The open end of the symbol faces the larger number.`,
       board: [
-        nl({ marks: [2, 6] }),
+        nl({
+          marks: [
+            dot(2, PURPLE, 0.1, 'smaller', true),
+            dot(6, RED,    0.5, 'larger',  true),
+          ],
+          connector: { from: 6, to: 2, label: '6 is to the RIGHT of 2', color: RED, delay: 1.0 },
+        }),
         { type: 'math', content: `$$6 > 2$$`, emphasis: true },
       ],
     },
+    // ── Step 3: zero is less than every whole number ────────────────────────
     {
       narration: `Key rule: <b>zero is less than every other whole number</b>. Any number you pick is to the right of 0 on the number line.`,
       speech: `Key rule: zero is less than every other whole number. Any number you pick sits to the right of zero on the number line.`,
       board: [
-        nl({ marks: [0] }),
+        nl({
+          marks: [dot(0, GREEN, 0.1, '0', true)],
+          sweepRight: { from: 0, label: '0 < 1, 2, 3, 4 …', color: GREEN, delay: 0.6 },
+        }),
         { type: 'math', content: `$$0 < 1,\\quad 0 < 2,\\quad 0 < 3,\\quad \\ldots$$` },
       ],
     },
+    // ── Step 4: Example 1a — whole numbers less than 5 ─────────────────────
     {
-      narration: `<b>Example 1a</b> — List all whole numbers <b>less than 5</b>. These are the whole numbers that sit to the left of 5 on the number line: <b>0, 1, 2, 3, 4</b>.`,
+      narration: `<b>Example 1a</b> — List all whole numbers <b>less than 5</b>. These are the whole numbers that sit to the left of 5: <b>0, 1, 2, 3, 4</b>.`,
       speech: `Example 1a. List all whole numbers less than 5. These are the whole numbers that sit to the left of 5 on the number line: 0, 1, 2, 3, 4.`,
       board: [
-        nl({ marks: [0, 1, 2, 3, 4] }),
+        nl({
+          marks: [0,1,2,3,4].map((n) => dot(n, PURPLE, n * 0.15, String(n))),
+          boundaries: [{ n: 5, color: RED, label: '← stop here (5 not included)', delay: 0.9 }],
+        }),
         { type: 'math', content: `$$\\{0,\\,1,\\,2,\\,3,\\,4\\}$$`, emphasis: true },
       ],
     },
+    // ── Step 5: Example 1b — between 1 and 10 ──────────────────────────────
     {
       narration: `<b>Example 1b</b> — List all whole numbers <b>less than 10 and greater than 1</b>. We need numbers strictly between 1 and 10: <b>2, 3, 4, 5, 6, 7, 8, 9</b>.`,
       speech: `Example 1b. List all whole numbers less than 10 and greater than 1. We need numbers strictly between 1 and 10: 2, 3, 4, 5, 6, 7, 8, 9.`,
       board: [
-        { type: 'numberLine', min: 0, max: 11, marks: [2, 3, 4, 5, 6, 7, 8, 9] },
+        {
+          type: 'numberLine', min: 0, max: 11,
+          marks: [2,3,4,5,6,7,8,9].map((n) => dot(n, PURPLE, (n - 2) * 0.12, String(n))),
+          boundaries: [
+            { n: 1,  color: RED, label: 'not included',  delay: 1.2 },
+            { n: 10, color: RED, label: 'not included', delay: 1.4 },
+          ],
+        },
         { type: 'math', content: `$$\\{2,\\,3,\\,4,\\,5,\\,6,\\,7,\\,8,\\,9\\}$$`, emphasis: true },
       ],
     },
+    // ── Step 6: Example 2a — mark on number line ───────────────────────────
     {
-      narration: `<b>Example 2a</b> — Mark all whole numbers <b>less than 5</b> on a number line. The dots land on 0, 1, 2, 3, 4.`,
-      speech: `Example 2a. Mark all whole numbers less than 5 on a number line. The dots land on 0, 1, 2, 3, 4.`,
-      board: [nl({ marks: [0, 1, 2, 3, 4], label: 'Whole numbers less than 5' })],
+      narration: `<b>Example 2a</b> — Mark all whole numbers <b>less than 5</b> on a number line. The dots land on 0, 1, 2, 3, 4. The dashed line at 5 shows the boundary.`,
+      speech: `Example 2a. Mark all whole numbers less than 5 on a number line. The dots land on 0, 1, 2, 3, 4. The dashed line at 5 shows the boundary.`,
+      board: [
+        nl({
+          marks: [0,1,2,3,4].map((n) => dot(n, PURPLE, n * 0.15, String(n))),
+          boundaries: [{ n: 5, color: RED, label: '5 not included', delay: 0.9 }],
+          label: 'Whole numbers less than 5',
+        }),
+      ],
     },
+    // ── Step 7: Example 2b — 45 < n < 52 ───────────────────────────────────
     {
-      narration: `<b>Example 2b</b> — Mark all whole numbers <b>greater than 45 and less than 52</b>. The dots land on 46, 47, 48, 49, 50, 51. Note: 45 and 52 are NOT included because the conditions are strict inequalities.`,
-      speech: `Example 2b. Mark all whole numbers greater than 45 and less than 52. The dots land on 46, 47, 48, 49, 50, 51. Note: 45 and 52 are not included because the conditions are strict inequalities.`,
-      board: [nl44({ marks: [46, 47, 48, 49, 50, 51], label: 'Whole numbers greater than 45 and less than 52' })],
+      narration: `<b>Example 2b</b> — Mark all whole numbers <b>greater than 45 and less than 52</b>. The dots land on 46, 47, 48, 49, 50, 51. Both 45 and 52 are excluded.`,
+      speech: `Example 2b. Mark all whole numbers greater than 45 and less than 52. The dots land on 46, 47, 48, 49, 50, 51. Both 45 and 52 are excluded because the conditions are strict inequalities.`,
+      board: [
+        nl44({
+          marks: [46,47,48,49,50,51].map((n, i) => dot(n, PURPLE, i * 0.12, String(n))),
+          boundaries: [
+            { n: 45, color: RED, label: '45 not included', delay: 0.9 },
+            { n: 52, color: RED, label: '52 not included', delay: 1.1 },
+          ],
+          label: 'Whole numbers greater than 45 and less than 52',
+        }),
+      ],
     },
   ];
 

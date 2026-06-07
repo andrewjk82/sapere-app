@@ -421,59 +421,190 @@ const ValueTable = ({ rows = [] }) => {
 };
 
 // ── Number Line ─────────────────────────────────────────────────────────────
-// Props:
-//   min, max        — integers shown on the line (e.g. 0, 7)
-//   marks           — array of numbers to show as filled dots
-//   highlightRange  — { from, to } exclusive range drawn in a highlight colour
-//   arrowLeft       — draw left-facing arrow (for lines that extend both ways)
-//   label           — optional caption below the diagram
-const NumberLineBoard = ({ min = 0, max = 7, marks = [], highlightRange, arrowLeft, label }) => {
-  const W = 560, H = 80;
-  const PAD = 44;
+// marks   — array of numbers OR objects { n, label?, labelPos?('above'|'below'),
+//            color?, delay?, pulse? }
+// connector — { from, to, label?, color?, delay? } — animated arc arrow between two points
+// boundaries — [{ n, color?, delay?, label? }] — dashed vertical lines (excluded endpoints)
+// sweepRight — { from, label?, color?, delay? } — animated arrow sweeping right from a point
+// highlightRange — { from, to } — fills dots in range with dim colour
+// arrowLeft — draw left-facing arrow
+// label — caption below
+const NumberLineBoard = ({
+  min = 0, max = 7,
+  marks = [],
+  connector,
+  boundaries = [],
+  sweepRight,
+  highlightRange,
+  arrowLeft,
+  label,
+}) => {
+  const W = 560, H = 150;
+  const PAD = 48;
   const usableW = W - PAD * 2;
-  const step = usableW / (max - min);
-  const toX = (n) => PAD + (n - min) * step;
+  const colW = usableW / (max - min);
+  const toX = (n) => PAD + (n - min) * colW;
 
-  const tickY1 = 36, tickY2 = 52, axisY = 44;
-  const dotR = 6;
+  const axisY = 90;
+  const tickY1 = 82, tickY2 = 98;
+  const dotR = 7;
+  const C_PURPLE = '#7c3aed', C_RED = '#ef4444', C_GREEN = '#10b981';
 
   const ticks = [];
   for (let n = min; n <= max; n++) ticks.push(n);
 
+  // normalise marks → objects
+  const normMarks = marks.map((m, i) =>
+    typeof m === 'number' ? { n: m, delay: i * 0.12 } : { delay: i * 0.12, ...m }
+  );
+
+  // range highlight dots (dim)
   const hlPts = highlightRange
     ? ticks.filter((n) => n > highlightRange.from && n < highlightRange.to)
     : [];
+
+  // connector arc (bezier above axis)
+  let connEl = null;
+  if (connector) {
+    const x1 = toX(connector.from), x2 = toX(connector.to);
+    const midX = (x1 + x2) / 2;
+    const arcH = Math.min(46, Math.abs(x2 - x1) * 0.38 + 18);
+    const cpY = axisY - dotR - arcH;
+    const d = `M ${x1} ${axisY - dotR - 1} Q ${midX} ${cpY} ${x2} ${axisY - dotR - 1}`;
+    // tangent direction at t=1 of quadratic bezier: 2*(end - ctrl)
+    const tx = x2 - midX, ty = (axisY - dotR - 1) - cpY;
+    const tLen = Math.sqrt(tx * tx + ty * ty);
+    const nx = tx / tLen, ny = ty / tLen;
+    const AS = 9;
+    const ax = x2, ay = axisY - dotR - 1;
+    const p1x = ax - AS * (nx - ny * 0.45), p1y = ay - AS * (ny + nx * 0.45);
+    const p2x = ax - AS * (nx + ny * 0.45), p2y = ay - AS * (ny - nx * 0.45);
+    const col = connector.color || C_PURPLE;
+    const d0 = connector.delay ?? 0.7;
+    connEl = (
+      <g>
+        <motion.path d={d} fill="none" stroke={col} strokeWidth={2.2}
+          initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }}
+          transition={{ duration: 0.65, delay: d0, ease: 'easeInOut' }} />
+        <motion.polygon points={`${ax},${ay} ${p1x},${p1y} ${p2x},${p2y}`} fill={col}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+          transition={{ delay: d0 + 0.6 }} />
+        {connector.label && (
+          <motion.text x={midX} y={cpY - 9} textAnchor="middle" fontSize={11.5} fontWeight={800}
+            fontFamily={FONT} fill={col}
+            initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: d0 + 0.35 }}
+          >{connector.label}</motion.text>
+        )}
+      </g>
+    );
+  }
+
+  // sweepRight: animated arrow that grows right from a point
+  let sweepEl = null;
+  if (sweepRight) {
+    const sx = toX(sweepRight.from);
+    const ex = toX(max) + 12;
+    const col = sweepRight.color || C_GREEN;
+    const d0 = sweepRight.delay ?? 0.5;
+    sweepEl = (
+      <g>
+        <motion.line x1={sx} y1={axisY} x2={ex} y2={axisY}
+          stroke={col} strokeWidth={4} strokeLinecap="round"
+          initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }}
+          transition={{ duration: 0.8, delay: d0 }} />
+        <motion.polygon
+          points={`${ex + 2},${axisY} ${ex - 7},${axisY - 5} ${ex - 7},${axisY + 5}`}
+          fill={col}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+          transition={{ delay: d0 + 0.75 }} />
+        {sweepRight.label && (
+          <motion.text x={(sx + ex) / 2} y={axisY - 14} textAnchor="middle"
+            fontSize={11} fontWeight={800} fontFamily={FONT} fill={col}
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            transition={{ delay: d0 + 0.5 }}
+          >{sweepRight.label}</motion.text>
+        )}
+      </g>
+    );
+  }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ maxWidth: W, overflow: 'visible' }}>
         {/* axis line */}
         <line x1={PAD - 4} y1={axisY} x2={W - PAD + 12} y2={axisY} stroke="#475569" strokeWidth={2} />
-        {/* right arrow */}
         <polygon points={`${W - PAD + 12},${axisY} ${W - PAD + 4},${axisY - 5} ${W - PAD + 4},${axisY + 5}`} fill="#475569" />
-        {/* left arrow */}
         {arrowLeft && <polygon points={`${PAD - 4},${axisY} ${PAD + 4},${axisY - 5} ${PAD + 4},${axisY + 5}`} fill="#475569" />}
-        {/* ticks and labels */}
+        {/* ticks */}
         {ticks.map((n) => (
           <g key={n}>
             <line x1={toX(n)} y1={tickY1} x2={toX(n)} y2={tickY2} stroke="#475569" strokeWidth={1.5} />
-            <text x={toX(n)} y={tickY2 + 14} textAnchor="middle" fontSize={13} fontFamily={FONT} fontWeight={600} fill="#334155">{n}</text>
+            <text x={toX(n)} y={tickY2 + 16} textAnchor="middle" fontSize={13} fontFamily={FONT} fontWeight={600} fill="#334155">{n}</text>
           </g>
         ))}
-        {/* highlight dots (light colour — numbers in the range) */}
+        {/* sweep arrow */}
+        {sweepEl}
+        {/* connector arc */}
+        {connEl}
+        {/* range highlight dots */}
         {hlPts.map((n) => (
           <motion.circle key={`hl-${n}`} cx={toX(n)} cy={axisY} r={dotR}
-            initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 320, damping: 20 }}
-            fill="#7c3aed" opacity={0.25} />
+            initial={{ scale: 0 }} animate={{ scale: 1 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20, delay: ticks.indexOf(n) * 0.08 }}
+            fill={C_PURPLE} opacity={0.22} />
         ))}
-        {/* explicit marks (filled dots) */}
-        {marks.map((n) => (
-          <motion.circle key={`m-${n}`} cx={toX(n)} cy={axisY} r={dotR}
-            initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 320, damping: 20 }}
-            fill="#7c3aed" stroke="#fff" strokeWidth={1.5} />
-        ))}
+        {/* boundary dashed lines */}
+        {boundaries.map((b, i) => {
+          const bx = toX(b.n);
+          const col = b.color || C_RED;
+          return (
+            <g key={`bd-${i}`}>
+              <motion.line x1={bx} y1={axisY - 22} x2={bx} y2={axisY + 22}
+                stroke={col} strokeWidth={2} strokeDasharray="5 4"
+                initial={{ scaleY: 0, opacity: 0 }} animate={{ scaleY: 1, opacity: 1 }}
+                style={{ transformOrigin: `${bx}px ${axisY}px` }}
+                transition={{ duration: 0.3, delay: b.delay ?? 0.3 }} />
+              {b.label && (
+                <motion.text x={bx} y={axisY - 28} textAnchor="middle"
+                  fontSize={10.5} fontWeight={800} fontFamily={FONT} fill={col}
+                  initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                  transition={{ delay: (b.delay ?? 0.3) + 0.2 }}
+                >{b.label}</motion.text>
+              )}
+            </g>
+          );
+        })}
+        {/* marks */}
+        {normMarks.map((m) => {
+          const cx = toX(m.n);
+          const col = m.color || C_PURPLE;
+          const above = m.labelPos !== 'below';
+          return (
+            <g key={`m-${m.n}-${m.color}`}>
+              {m.pulse && (
+                <motion.circle cx={cx} cy={axisY} r={dotR + 6}
+                  initial={{ scale: 0.6, opacity: 0 }}
+                  animate={{ scale: [1, 1.45, 1], opacity: [0.28, 0.1, 0.28] }}
+                  transition={{ delay: m.delay ?? 0, duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
+                  fill={col} />
+              )}
+              <motion.circle cx={cx} cy={axisY} r={dotR}
+                initial={{ scale: 0 }} animate={{ scale: 1 }}
+                transition={{ type: 'spring', stiffness: 340, damping: 18, delay: m.delay ?? 0 }}
+                fill={col} stroke="#fff" strokeWidth={2} />
+              {m.label && (
+                <motion.text x={cx} y={above ? axisY - dotR - 10 : axisY + dotR + 18}
+                  textAnchor="middle" fontSize={11.5} fontWeight={800} fontFamily={FONT} fill={col}
+                  initial={{ opacity: 0, y: above ? 6 : -6 }} animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: (m.delay ?? 0) + 0.22 }}
+                >{m.label}</motion.text>
+              )}
+            </g>
+          );
+        })}
       </svg>
-      {label && <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b', fontFamily: FONT }}>{label}</div>}
+      {label && <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b', fontFamily: FONT, textAlign: 'center' }}>{label}</div>}
     </div>
   );
 };
