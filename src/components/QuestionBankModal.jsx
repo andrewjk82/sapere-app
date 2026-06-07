@@ -1561,6 +1561,22 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
 
       if (editingQuestion) {
         await updateDoc(doc(db, 'questions', editingQuestion), payload);
+        
+        if (import.meta.env.DEV) {
+          try {
+            const syncRes = await fetch('/__local-api/sync-seed', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ id: editingQuestion, graphData })
+            });
+            const syncData = await syncRes.json();
+            if (syncData.success) {
+              console.log('Local seed file synced:', syncData.file);
+            }
+          } catch (err) {
+            console.error('Failed to sync local seed file:', err);
+          }
+        }
       } else {
         payload.createdAt = serverTimestamp();
         await addDoc(collection(db, 'questions'), payload);
