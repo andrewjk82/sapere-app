@@ -31,6 +31,8 @@ import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, get
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
+import { hasLesson, getLesson } from '../lessons/registry';
+import LessonPlayer from './lessons/LessonPlayer';
 import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
@@ -183,6 +185,8 @@ import { Y10_CH8A_QUESTIONS } from '../constants/seedYear10Ch8AQuestions.js';
 import { Y10_CH8E_QUESTIONS } from '../constants/seedYear10Ch8EQuestions.js';
 import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
 import { Y10_CH11A_QUESTIONS } from '../constants/seedYear10Ch11AQuestions.js';
+import { Y10_CH11B_QUESTIONS } from '../constants/seedYear10Ch11BQuestions.js';
+import { Y10_CH11C_QUESTIONS } from '../constants/seedYear10Ch11CQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
 import { ABB_2020_EXT1_QUESTIONS } from '../constants/seedAbbotsleigh2020Ext1Questions.js';
 import { ABB_2020_EXT1_SIMILAR_QUESTIONS } from '../constants/seedAbbotsleigh2020Ext1SimilarQuestions.js';
@@ -424,6 +428,8 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-8', chapterTitle: 'Chapter 8: Review of congruence and similarity', topicId: 'y10-8e', topicCode: '8E', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH8E_QUESTIONS, label: 'Y10 Ch8 · 8E Revision' },
   { chapterId: 'y10-9', chapterTitle: 'Chapter 9: Indices, Exponentials and Logarithms', topicId: 'y10-9a', topicCode: '9A', topicTitle: 'Review of powers and integer indices', year: 'Year 10', seed: Y10_CH9_QUESTIONS, label: 'Y10 Ch9 · 9A Review of powers and integer indices' },
   { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11a', topicCode: '11A', topicTitle: 'Cartesian equation of a circle', year: 'Year 10', seed: Y10_CH11A_QUESTIONS, label: 'Y10 Ch11 · 11A Cartesian equation of a circle' },
+  { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11b', topicCode: '11B', topicTitle: 'The rectangular hyperbola', year: 'Year 10', seed: Y10_CH11B_QUESTIONS, label: 'Y10 Ch11 · 11B The rectangular hyperbola' },
+  { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11c', topicCode: '11C', topicTitle: 'Simultaneous equations', year: 'Year 10', seed: Y10_CH11C_QUESTIONS, label: 'Y10 Ch11 · 11C Simultaneous equations' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
@@ -633,6 +639,7 @@ const Curriculum = () => {
   // a topic opens the student-style question bank page for that topic.
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
   const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
+  const [previewLesson, setPreviewLesson] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
@@ -2224,6 +2231,9 @@ const Curriculum = () => {
             <h2 style={{ margin: 0, fontSize: '1.7rem', fontWeight: 900, color: '#1e1b4b' }}>{ch.title}</h2>
             <p style={{ margin: '4px 0 0', color: '#64748b', fontWeight: 600 }}>{topics.length} {topics.length === 1 ? 'topic' : 'topics'}</p>
           </div>
+          {previewLesson && (
+            <LessonPlayer lesson={previewLesson} onClose={() => setPreviewLesson(null)} />
+          )}
           {topics.length === 0 ? (
             <div style={{ padding: '40px', background: '#fff', borderRadius: '20px', border: '1px dashed #cbd5e1', textAlign: 'center', color: '#94a3b8', fontWeight: 700 }}>
               No topics in this chapter. Use the chapter editor to add some.
@@ -2231,19 +2241,34 @@ const Curriculum = () => {
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
               {topics.map((t, idx) => (
-                <button
+                <div
                   key={t.id || idx}
-                  onClick={() => setSelectedTopicForBank({ chapter: ch, topic: t })}
-                  style={{ textAlign: 'left', padding: '20px 22px', borderRadius: '20px', border: '1px solid #e2e8f0', background: '#fff', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '8px', boxShadow: '0 4px 14px rgba(0,0,0,0.03)', transition: 'transform 0.15s, box-shadow 0.15s' }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 30px rgba(99,102,241,0.10)'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 14px rgba(0,0,0,0.03)'; }}
+                  style={{ borderRadius: '20px', border: '1px solid #e2e8f0', background: '#fff', display: 'flex', flexDirection: 'column', gap: '0', boxShadow: '0 4px 14px rgba(0,0,0,0.03)', overflow: 'hidden' }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{t.code || `Topic ${idx + 1}`}</span>
-                    <ChevronRight size={18} color="#94a3b8" />
-                  </div>
-                  <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{t.title}</div>
-                </button>
+                  <button
+                    onClick={() => setSelectedTopicForBank({ chapter: ch, topic: t })}
+                    style={{ textAlign: 'left', padding: '20px 22px', background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '8px', transition: 'background 0.15s', width: '100%' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = '#f8f7ff'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{t.code || `Topic ${idx + 1}`}</span>
+                      <ChevronRight size={18} color="#94a3b8" />
+                    </div>
+                    <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{t.title}</div>
+                  </button>
+                  {hasLesson(t.id) && (
+                    <button
+                      onClick={() => setPreviewLesson(getLesson(t.id))}
+                      style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', padding: '9px', borderTop: '1px solid #f1f0fe', background: '#faf8ff', border: 'none', borderTop: '1px solid #ede9fe', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed', letterSpacing: '0.02em', transition: 'background 0.15s', width: '100%' }}
+                      onMouseEnter={(e) => { e.currentTarget.style.background = '#f5f3ff'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.background = '#faf8ff'; }}
+                    >
+                      <GraduationCap size={14} />
+                      Preview Lesson
+                    </button>
+                  )}
+                </div>
               ))}
             </div>
           )}
