@@ -1395,8 +1395,15 @@ const genDecimalPercent = (difficulty) => {
       { f: '1/10', d: '0.1', p: '10%' },
     ];
     const item = pick(pairs);
-    const answer = pick([item.d, item.p]);
-    return q('fraction_decimal_percent', `Which value is equivalent to ${item.f}?`, wordOptions(answer, [item.d, item.p, '0.2', '20%', '0.05']), answer, `${item.f} = ${item.d} = ${item.p}.`, 35);
+    // Ask for either the decimal OR the percentage form — never include both in
+    // the options, since both are correct and would confuse the student.
+    const askDecimal = pick([true, false]);
+    const answer = askDecimal ? item.d : item.p;
+    // Distractors must NOT include the other equivalent form.
+    const distractors = askDecimal
+      ? ['0.2', '0.02', '0.05']
+      : ['20%', '2%', '5%'];
+    return q('fraction_decimal_percent', `Which ${askDecimal ? 'decimal' : 'percentage'} is equivalent to ${item.f}?`, wordOptions(answer, distractors), answer, `${item.f} = ${item.d} = ${item.p}.`, 35);
   }
   const number = (randomInt(100, 9999) / 1000).toFixed(3);
   const digit = number.split('.')[1][2];
