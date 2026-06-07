@@ -420,6 +420,64 @@ const ValueTable = ({ rows = [] }) => {
   );
 };
 
+// ── Number Line ─────────────────────────────────────────────────────────────
+// Props:
+//   min, max        — integers shown on the line (e.g. 0, 7)
+//   marks           — array of numbers to show as filled dots
+//   highlightRange  — { from, to } exclusive range drawn in a highlight colour
+//   arrowLeft       — draw left-facing arrow (for lines that extend both ways)
+//   label           — optional caption below the diagram
+const NumberLineBoard = ({ min = 0, max = 7, marks = [], highlightRange, arrowLeft, label }) => {
+  const W = 560, H = 80;
+  const PAD = 44;
+  const usableW = W - PAD * 2;
+  const step = usableW / (max - min);
+  const toX = (n) => PAD + (n - min) * step;
+
+  const tickY1 = 36, tickY2 = 52, axisY = 44;
+  const dotR = 6;
+
+  const ticks = [];
+  for (let n = min; n <= max; n++) ticks.push(n);
+
+  const hlPts = highlightRange
+    ? ticks.filter((n) => n > highlightRange.from && n < highlightRange.to)
+    : [];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ maxWidth: W, overflow: 'visible' }}>
+        {/* axis line */}
+        <line x1={PAD - 4} y1={axisY} x2={W - PAD + 12} y2={axisY} stroke="#475569" strokeWidth={2} />
+        {/* right arrow */}
+        <polygon points={`${W - PAD + 12},${axisY} ${W - PAD + 4},${axisY - 5} ${W - PAD + 4},${axisY + 5}`} fill="#475569" />
+        {/* left arrow */}
+        {arrowLeft && <polygon points={`${PAD - 4},${axisY} ${PAD + 4},${axisY - 5} ${PAD + 4},${axisY + 5}`} fill="#475569" />}
+        {/* ticks and labels */}
+        {ticks.map((n) => (
+          <g key={n}>
+            <line x1={toX(n)} y1={tickY1} x2={toX(n)} y2={tickY2} stroke="#475569" strokeWidth={1.5} />
+            <text x={toX(n)} y={tickY2 + 14} textAnchor="middle" fontSize={13} fontFamily={FONT} fontWeight={600} fill="#334155">{n}</text>
+          </g>
+        ))}
+        {/* highlight dots (light colour — numbers in the range) */}
+        {hlPts.map((n) => (
+          <motion.circle key={`hl-${n}`} cx={toX(n)} cy={axisY} r={dotR}
+            initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+            fill="#7c3aed" opacity={0.25} />
+        ))}
+        {/* explicit marks (filled dots) */}
+        {marks.map((n) => (
+          <motion.circle key={`m-${n}`} cx={toX(n)} cy={axisY} r={dotR}
+            initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+            fill="#7c3aed" stroke="#fff" strokeWidth={1.5} />
+        ))}
+      </svg>
+      {label && <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b', fontFamily: FONT }}>{label}</div>}
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -454,6 +512,7 @@ const BoardItem = ({ item }) => {
       ))}
     </div>
   );
+  else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
   else if (item.type === 'text') inner = <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#475569', textAlign: 'center', fontFamily: FONT }}>{item.content}</div>;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;

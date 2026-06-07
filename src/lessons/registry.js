@@ -718,9 +718,13 @@ export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
       { from:[4.2,0.3],  to:C2, color:HL, width:1.2, dashed:true, delay:1.05 },
       { from:[2.35,3.2], to:C3, color:HL, width:1.2, dashed:true, delay:1.05 },
     ] : [];
+    const csPolygon = highlightFront ? [
+      { vertices:[C1, C2, C3], color:'rgba(16,185,129,0.25)', stroke:HL, strokeWidth:0, delay:0.9 },
+    ] : [];
     return {
       type:'graph', showAxes:false,
       xMin:-0.3, xMax:6.0, yMin:-0.3, yMax:4.6, width:420, height:310,
+      polygons: csPolygon,
       lines:[
         // front face (neutral purple — it is a face, not the cross-section)
         { from:[0.5,0.3], to:[4.2,0.3], color:V, width:2.2, delay:0.3  },
@@ -1067,6 +1071,79 @@ export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
   return { emoji:'🔷', title:'Polyhedra', steps, glossary:{ ...BASE_GLOSSARY, ...POLYHEDRA_GLOSSARY } };
 };
 
+// ── Lesson: Year 7 · 1A · The number line ───────────────────────────────────
+const NL_GLOSSARY = {
+  'number line': 'A line where every point represents a number — whole numbers sit at equally spaced marks.',
+  'less than': 'A number is less than another if it sits to the left on the number line. Written with the symbol <.',
+  'greater than': 'A number is greater than another if it sits to the right on the number line. Written with the symbol >.',
+  'whole number': 'The counting numbers 0, 1, 2, 3, … continuing forever to the right.',
+};
+
+export const buildNumberLineLesson = () => {
+  const nl = (opts) => ({ type: 'numberLine', min: 0, max: 7, ...opts });
+  const nl44 = (opts) => ({ type: 'numberLine', min: 44, max: 52, arrowLeft: true, ...opts });
+
+  const steps = [
+    {
+      narration: `Whole numbers can be shown as points on a line. Start at <b>0</b>, then mark equally-spaced points moving to the right: 1, 2, 3, 4, … The arrow shows the line continues forever. This is called the <b>number line</b>.`,
+      speech: `Whole numbers can be shown as points on a line. Start at zero, then mark equally spaced points moving to the right: one, two, three, four, and so on. The arrow shows the line continues forever. This is called the number line.`,
+      board: [nl()],
+    },
+    {
+      narration: `Look at <b>2</b> and <b>6</b> on the line. Because <b>2 is to the left of 6</b>, we say <b>2 is less than 6</b>. We write this as <b>2 < 6</b>. The sharp end of < points to the smaller number.`,
+      speech: `Look at 2 and 6 on the line. Because 2 is to the left of 6, we say 2 is less than 6. We write this as 2 is less than 6. The sharp end of the symbol points to the smaller number.`,
+      board: [
+        nl({ marks: [2, 6] }),
+        { type: 'math', content: `$$2 < 6$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `We can also turn this around: because <b>6 is to the right of 2</b>, we say <b>6 is greater than 2</b>. We write this as <b>6 > 2</b>. The open end of > faces the larger number.`,
+      speech: `We can also turn this around. Because 6 is to the right of 2, we say 6 is greater than 2. We write this as 6 is greater than 2. The open end of the symbol faces the larger number.`,
+      board: [
+        nl({ marks: [2, 6] }),
+        { type: 'math', content: `$$6 > 2$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `Key rule: <b>zero is less than every other whole number</b>. Any number you pick is to the right of 0 on the number line.`,
+      speech: `Key rule: zero is less than every other whole number. Any number you pick sits to the right of zero on the number line.`,
+      board: [
+        nl({ marks: [0] }),
+        { type: 'math', content: `$$0 < 1,\\quad 0 < 2,\\quad 0 < 3,\\quad \\ldots$$` },
+      ],
+    },
+    {
+      narration: `<b>Example 1a</b> — List all whole numbers <b>less than 5</b>. These are the whole numbers that sit to the left of 5 on the number line: <b>0, 1, 2, 3, 4</b>.`,
+      speech: `Example 1a. List all whole numbers less than 5. These are the whole numbers that sit to the left of 5 on the number line: 0, 1, 2, 3, 4.`,
+      board: [
+        nl({ marks: [0, 1, 2, 3, 4] }),
+        { type: 'math', content: `$$\\{0,\\,1,\\,2,\\,3,\\,4\\}$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `<b>Example 1b</b> — List all whole numbers <b>less than 10 and greater than 1</b>. We need numbers strictly between 1 and 10: <b>2, 3, 4, 5, 6, 7, 8, 9</b>.`,
+      speech: `Example 1b. List all whole numbers less than 10 and greater than 1. We need numbers strictly between 1 and 10: 2, 3, 4, 5, 6, 7, 8, 9.`,
+      board: [
+        { type: 'numberLine', min: 0, max: 11, marks: [2, 3, 4, 5, 6, 7, 8, 9] },
+        { type: 'math', content: `$$\\{2,\\,3,\\,4,\\,5,\\,6,\\,7,\\,8,\\,9\\}$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `<b>Example 2a</b> — Mark all whole numbers <b>less than 5</b> on a number line. The dots land on 0, 1, 2, 3, 4.`,
+      speech: `Example 2a. Mark all whole numbers less than 5 on a number line. The dots land on 0, 1, 2, 3, 4.`,
+      board: [nl({ marks: [0, 1, 2, 3, 4], label: 'Whole numbers less than 5' })],
+    },
+    {
+      narration: `<b>Example 2b</b> — Mark all whole numbers <b>greater than 45 and less than 52</b>. The dots land on 46, 47, 48, 49, 50, 51. Note: 45 and 52 are NOT included because the conditions are strict inequalities.`,
+      speech: `Example 2b. Mark all whole numbers greater than 45 and less than 52. The dots land on 46, 47, 48, 49, 50, 51. Note: 45 and 52 are not included because the conditions are strict inequalities.`,
+      board: [nl44({ marks: [46, 47, 48, 49, 50, 51], label: 'Whole numbers greater than 45 and less than 52' })],
+    },
+  ];
+
+  return { topicId: 'y7-1a', emoji: '📏', title: 'The number line', steps, glossary: { ...BASE_GLOSSARY, ...NL_GLOSSARY } };
+};
+
 // ── Registered lessons (topicId → spec) ────────────────────────────────────
 export const LESSONS = {
   // Year 7 · 1G · Place value (textbook example uses 3721).
@@ -1087,6 +1164,9 @@ export const LESSONS = {
 
   // Year 7 · 20A · Polyhedra.
   'y7-20a': { ...buildPolyhedraLesson({ audioBase: '/lessons/audio/y7-20a' }), topicId: 'y7-20a' },
+
+  // Year 7 · 1A · The number line.
+  'y7-1a': buildNumberLineLesson(),
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;
