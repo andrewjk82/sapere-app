@@ -59,6 +59,7 @@ import {
   summarizeByKey,
   adjustDifficultyMix,
   notifyTeacherChallengeCompleted,
+  notifyTeacherPendingReview,
   updateAdminDailySummary,
   createSessionSeed,
   correctQuestionAnswer,
@@ -831,6 +832,15 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         };
         await addDoc(collection(db, 'grading_queue'), gradingEntry);
         markSessionReviewRequested();
+        notifyTeacherPendingReview({
+          studentId: user.uid,
+          studentName: gradingEntry.userName,
+          studentEmail: gradingEntry.userEmail,
+          questionText: gradingEntry.questionText,
+          challengeType: gradingEntry.challengeType,
+          topicTitle: gradingEntry.topicTitle,
+          chapterTitle: gradingEntry.chapterTitle,
+        }).catch(() => {});
       } catch (err) {
         console.error("Failed to submit for review", err);
       } finally {

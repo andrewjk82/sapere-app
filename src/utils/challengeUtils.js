@@ -372,6 +372,7 @@ export const notifyTeacherPendingReview = async ({
       body: JSON.stringify({
         studentId: ADMIN_UID,
         email: ADMIN_EMAIL,
+        skipEmail: true,
         subject: `📝 Marking needed: ${studentName || 'Student'}`,
         text: body,
         metadata: {

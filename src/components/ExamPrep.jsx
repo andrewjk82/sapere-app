@@ -10,7 +10,7 @@ import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
 import MathInput from './MathInput';
-import { MATH_SYMBOLS } from '../utils/challengeUtils';
+import { MATH_SYMBOLS, notifyTeacherPendingReview } from '../utils/challengeUtils';
 import { gradeQuestion } from '../utils/answerMatching';
 
 // Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
@@ -229,6 +229,15 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         solution: q.solution || '',
         requiresManualGrading: true,
       }).catch(err => console.warn('grading_queue write failed:', err));
+      notifyTeacherPendingReview({
+        studentId: user.uid,
+        studentName: user.displayName || user.email || 'Student',
+        studentEmail: user.email || '',
+        questionText: q.question || q.text || '',
+        challengeType: 'exam_prep',
+        topicTitle: q.topicTitle || '',
+        chapterTitle: q.chapterTitle || '',
+      }).catch(() => {});
     }
   };
 

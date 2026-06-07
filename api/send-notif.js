@@ -156,7 +156,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { studentId, email, subject, text, html, metadata } = req.body;
+  const { studentId, email, subject, text, html, metadata, skipEmail } = req.body;
   console.log(`[send-notif] Request: studentId=${studentId} email=${email} subject="${subject}"`);
 
   const db = getAdminDb();
@@ -164,6 +164,7 @@ export default async function handler(req, res) {
 
   // Run email and Firebase in parallel — cuts total time roughly in half
   const emailTask = (async () => {
+    if (skipEmail) return false;
     try {
       const GMAIL_USER = process.env.GMAIL_USER;
       const GMAIL_PASS = process.env.GMAIL_PASS;
