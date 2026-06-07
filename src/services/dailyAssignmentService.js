@@ -17,6 +17,7 @@ import {
   DEFAULT_DIFFICULTY_MIX,
   getQuestionBlueprint,
   getQuestionTargets,
+  generateQuestion,
 } from "./questionGenerator";
 import { localCache } from "./localCacheService";
 import {
@@ -349,8 +350,25 @@ const pickBalancedManualQuestions = (manualQuestions, questionCount) => {
 
 const fetchManualQuestions = async (targets) => {
   const qRef = collection(db, "questions");
+
+  // Group chapter IDs by year to ensure each assigned year gets queried.
+  // This prevents a student assigned to Year 5 + Year 6 + Year 7 (all chapters)
+  // from only hitting Year 5/6 chapters due to a flat slice limit.
+  const chaptersByYear = {};
+  Array.from(targets.targetChapterIds).forEach((chapterId) => {
+    const yr = CHAPTER_YEAR_MAP[chapterId] || "unknown";
+    if (!chaptersByYear[yr]) chaptersByYear[yr] = [];
+    chaptersByYear[yr].push(chapterId);
+  });
+
+  // Pick up to 6 chapters per year (max ~36 total queries across 6 years).
+  const MAX_PER_YEAR = 6;
+  const chaptersToQuery = Object.values(chaptersByYear).flatMap((ids) =>
+    shuffle([...ids]).slice(0, MAX_PER_YEAR),
+  );
+
   const docs = (await Promise.all(
-    Array.from(targets.targetChapterIds).slice(0, 12).map(async (chapterId) => {
+    chaptersToQuery.map(async (chapterId) => {
       const snap = await getDocs(query(qRef, where("chapterId", "==", chapterId), limit(100)));
       return snap.docs.map((item) => ({ id: item.id, ...item.data() }));
     }),
@@ -419,10 +437,37 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
   const poolToUse = unseenManual.length >= questionCount ? unseenManual : manualQuestions;
   const selectedManual = pickBalancedManualQuestions(poolToUse, questionCount);
 
-  // AI generation removed — seed questions (Year 7–12) are sufficient.
-  const questions = shuffle(selectedManual)
-    .slice(0, questionCount)
-    .map(correctQuestionAnswer);
+  // For Year 1–6 only: fall back to AI-generated questions when seed pool is insufficient.
+  const needsAiFallback = targets.assignedYears.every((yr) => (getYearNumber(yr) ?? 99) <= 6);
+  const numAI = needsAiFallback ? Math.max(0, questionCount - selectedManual.length) : 0;
+  const aiQuestions = [];
+
+  if (numAI > 0) {
+    const chapters = targets.assignedChapters.length > 0
+      ? targets.assignedChapters
+      : Array.from(targets.targetChapterIds);
+    for (let i = 0; i < numAI; i++) {
+      const difficulty = (() => {
+        const mix = studentProfile?.difficultyMix || DEFAULT_DIFFICULTY_MIX;
+        const rand = Math.random();
+        if (rand < (mix.easy ?? 0.3)) return "easy";
+        if (rand < (mix.easy ?? 0.3) + (mix.medium ?? 0.5)) return "medium";
+        return "hard";
+      })();
+      aiQuestions.push(generateQuestion({
+        year: targets.assignedYears,
+        course: targets.assignedCourses,
+        assignedChapters: [chapters[i % chapters.length]],
+        assignedTopics: targets.assignedTopics,
+        difficulty,
+      }));
+    }
+  }
+
+  const questions = shuffle([
+    ...shuffle(selectedManual),
+    ...shuffle(aiQuestions).map((q) => slimQuestion({ ...q, isManual: false })),
+  ]).slice(0, questionCount).map(correctQuestionAnswer);
 
   return {
     questions,
@@ -433,7 +478,7 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
       assignedChapters: targets.assignedChapters,
       assignedTopics: targets.assignedTopics,
       manualQuestionCount: selectedManual.length,
-      generatedQuestionCount: 0,
+      generatedQuestionCount: aiQuestions.length,
     },
   };
 };

@@ -176,7 +176,7 @@ const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height =
 
 // Function graph (SVG) with drawn-on animations: axes fade in, curves draw
 // themselves, asymptotes sweep, points pop, and tracers demonstrate limits.
-const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], asymptotes = [], points = [], traces = [], segments = [], bands = [], axisBars = [], circles = [], lines = [], texts = [], showAxes = true, width = 480, height = 340 }) => {
+const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], asymptotes = [], points = [], traces = [], segments = [], bands = [], axisBars = [], circles = [], lines = [], texts = [], polygons = [], showAxes = true, width = 480, height = 340 }) => {
   const pad = 38;
   const sx = (x) => pad + (x - xMin) / (xMax - xMin) * (width - 2 * pad);
   const sy = (y) => height - pad - (y - yMin) / (yMax - yMin) * (height - 2 * pad);
@@ -248,6 +248,16 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
         {xticks.map((t) => <text key={'x' + t} x={sx(t)} y={y0 + 15} fontSize="10.5" textAnchor="middle" fill="#94a3b8" fontWeight="600">{tickFmt(t)}</text>)}
         {yticks.map((t) => <text key={'y' + t} x={x0 - 9} y={sy(t) + 3.5} fontSize="10.5" textAnchor="end" fill="#94a3b8" fontWeight="600">{tickFmt(t)}</text>)}
       </>)}
+
+      {/* filled polygons — highlight faces with semi-transparent colour */}
+      {polygons.map((pg, i) => {
+        const pts = pg.vertices.map(([x, y]) => `${sx(x).toFixed(1)},${sy(y).toFixed(1)}`).join(' ');
+        return (
+          <motion.polygon key={'pg' + i} points={pts}
+            fill={pg.color || 'rgba(16,185,129,0.18)'} stroke={pg.stroke || 'none'} strokeWidth={pg.strokeWidth || 0}
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: pg.delay ?? 0.5 }} />
+        );
+      })}
 
       {/* line segments — radii, triangle sides, chords … (with optional label) */}
       {lines.map((ln, i) => {

@@ -70,12 +70,16 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 - Approximately: `\\approx`
 - Greek letters: `\\alpha`, `\\beta`, `\\theta`, `\\pi`, etc.
 
-**solutionSteps — write 5–8 steps:**
-- Step 1: Identify what type of problem this is / what formula or rule to use
-- Step 2: Set up the equation / expression
-- Steps 3–6: Execute each mathematical operation one at a time (factorise, differentiate, substitute, etc.)
-- Second-to-last step: Verify the answer (check domain, second derivative test, substitute back, etc.)
-- Last step: State the final answer clearly
+**solutionSteps — write 5–8 steps, detailed and professional:**
+- Every step must have a clear `explanation` (what you are doing and **why**) and a precise `workingOut` (the exact mathematical expression for that step only — no skipping).
+- Step 1: Identify the problem type and state the exact formula, rule, or theorem to be used (e.g. "Apply the cosine rule: $c^2 = a^2 + b^2 - 2ab\cos C$").
+- Step 2: Set up the equation or expression by substituting known values — show every substitution explicitly.
+- Steps 3–6: Execute **one mathematical operation per step** — factorise, differentiate, simplify, substitute, expand, etc. Do not combine multiple operations into one step.
+- Second-to-last step: Verify the answer — check the domain, apply the second derivative test, substitute back into the original equation, or confirm units/sign.
+- Last step: State the final answer clearly and completely, including units where applicable.
+- Write `explanation` in plain English as if explaining to a student who has never seen this type of problem. Avoid vague phrases like "simplify" — say exactly what is being simplified and how.
+- **Each `explanation` must be a full 1–3 sentence description** that covers: (1) what operation is being performed, (2) why it is being done at this point in the solution, and (3) what mathematical principle or rule justifies it. For example, instead of `"Differentiate."`, write `"Differentiate $y$ with respect to $x$ using the chain rule, because the function is a composition of an outer power and an inner trigonometric function. Bring down the power, reduce the exponent by 1, then multiply by the derivative of the inner function."`.
+- Never leave an `explanation` as a single word or a fragment. Every step must be self-contained and understandable without reading the other steps.
 
 **type field:**
 - `multiple_choice` — Section I questions with 4 options
@@ -104,7 +108,7 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 **Function Graphs (graphData.jsxGraph):**
 - **Sizing:** Default width/height should be set to `width: 400, height: 300` for clear layout.
 - **Axes & Arrows:** Axes should be created with double-ended arrows pointing in both positive and negative directions (e.g. `firstArrow: true, lastArrow: true` will be automatically formatted).
-- **Labels:** Always label the x-axis, y-axis (using text objects near the tips), and the origin with `'O'`.
+- **Labels:** Always label the x-axis, y-axis (using text objects near the tips), and the origin with `'O'`. Point labels with LaTeX (e.g. `$(0, \sqrt{5})$`) are dynamically rendered as premium speech bubbles (tooltips) pointing directly to the dot. The app automatically aligns them along the 4 cardinal directions (top, bottom, left, right) depending on boundary proximity and axes to prevent covering the point markers and overlapping with tick marks. Avoid hardcoding custom offsets (like `[10, 10]`) so the automatic speech bubble alignment works perfectly.
 - **Curve Bounds:** Draw function curves from the very left edge of the bounding box to the very right edge (avoid leaving gaps or letting them float in mid-air).
 - **Points:** Plot and label all crucial features mentioned in the question (such as stationary points $P, Q$, vertices, intercepts) on the graph.
 - **Aspect Ratio:** If the graph is a function sketch (e.g. cubic, exponential) with unbalanced x and y domains, set `keepaspectratio: false` in `boardOptions` so it is not vertically squished.
@@ -184,6 +188,42 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 10G Investigations using the normal distribution
 ```
 
+### Source labelling (REQUIRED)
+
+Every question **must** have a `source` field that names the school and year:
+
+```
+source: 'Blacktown Boys 2020 Trial Q1'
+```
+
+This applies to both original questions and similar variant questions — the source label is the same for both.
+
+---
+
+### Similar variant questions (REQUIRED)
+
+For **every** original question, you must also create a paired **similar variant** question in a **separate file**:
+
+- File: `seed[SchoolName][Year]SimilarQuestions.js`
+- Export: `[SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS`
+- Use the same `id` prefix but append `s-`: e.g. `bbhs2020s-mc1`, `bbhs2020s-11a`
+
+**What to change in each variant:**
+- Numbers and values (e.g. side lengths 8, 10, 7 → 9, 12, 6)
+- Pronumerals and variable names (e.g. $A$ → $B$, $r$ → $k$)
+- Person names in word problems (e.g. Jesse → Mia, Shaon → Kaito)
+- Context/scenario (e.g. roses → sunflowers, cake shop → music store)
+- Keep the **same topic, same structure, same difficulty**
+
+The similar variants are combined with the originals in `Curriculum.jsx`:
+```js
+seed: [...SCHOOLNAME_YEAR_QUESTIONS, ...SCHOOLNAME_YEAR_SIMILAR_QUESTIONS]
+```
+
+Result: **2× the question count** (50 original + 50 similar = 100 total for a standard HSC paper).
+
+---
+
 ### After generating the file
 
 **Step 1: Register in Curriculum.jsx**
@@ -193,6 +233,7 @@ Open `/Users/andrewkim/Desktop/sapere1/src/components/Curriculum.jsx`.
 At the top with the other imports (around line 83), add:
 ```js
 import { [SCHOOLNAME]_[YEAR]_QUESTIONS } from '../constants/seed[SchoolName][Year]Questions.js';
+import { [SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS } from '../constants/seed[SchoolName][Year]SimilarQuestions.js';
 ```
 
 Then find the array where exam papers are listed (search for `chapterId: 'exam:abbotsleigh-2020'`) and add a new entry in the same format:
@@ -206,7 +247,7 @@ Then find the array where exam papers are listed (search for `chapterId: 'exam:a
   topicCode: 'EXAM',
   topicTitle: '[School] [Year] Trial Exam',
   year: 'Year 12',
-  seed: [SCHOOLNAME]_[YEAR]_QUESTIONS,
+  seed: [...[SCHOOLNAME]_[YEAR]_QUESTIONS, ...[SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS],
   label: 'Y12 · [School] [Year] HSC Trial (Advanced)'
 },
 ```

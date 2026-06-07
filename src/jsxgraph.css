@@ -234,3 +234,138 @@
     border-color: #f0e442;
     padding: 1px 7px 1px 7px;
 }
+
+/* Speech bubble tooltip labels for premium JSXGraph point marking */
+.jxg-tooltip-container {
+    position: absolute;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    overflow: visible !important;
+}
+
+.jxg-tooltip-bubble {
+    font-family: "Outfit", "Inter", -apple-system, sans-serif !important;
+    font-size: 11px;
+    color: #334155 !important;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(203, 213, 225, 0.9);
+    padding: 2px 6px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    pointer-events: none;
+    position: absolute;
+    display: inline-block;
+    z-index: 50;
+}
+
+.jxg-tooltip-bubble::after,
+.jxg-tooltip-bubble::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Tooltip is to the RIGHT of the point. Arrow points LEFT to the point. */
+.jxg-tooltip-bubble.arrow-left {
+    margin-left: 9px;
+    transform: translateY(-50%);
+}
+.jxg-tooltip-bubble.arrow-left::after {
+    border-style: solid;
+    border-width: 4px 5px 4px 0;
+    border-color: transparent rgba(255, 255, 255, 0.95) transparent transparent;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.jxg-tooltip-bubble.arrow-left::before {
+    border-style: solid;
+    border-width: 5px 6px 5px 0;
+    border-color: transparent rgba(203, 213, 225, 0.9) transparent transparent;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* Tooltip is to the LEFT of the point. Arrow points RIGHT to the point. */
+.jxg-tooltip-bubble.arrow-right {
+    margin-left: -9px;
+    transform: translate(-100%, -50%);
+}
+.jxg-tooltip-bubble.arrow-right::after {
+    border-style: solid;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.95);
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.jxg-tooltip-bubble.arrow-right::before {
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent rgba(203, 213, 225, 0.9);
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* Tooltip is ABOVE the point. Arrow points DOWN to the point. */
+.jxg-tooltip-bubble.arrow-bottom {
+    margin-top: -9px;
+    transform: translate(-50%, -100%);
+}
+.jxg-tooltip-bubble.arrow-bottom::after {
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.jxg-tooltip-bubble.arrow-bottom::before {
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: rgba(203, 213, 225, 0.9) transparent transparent transparent;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Tooltip is BELOW the point. Arrow points UP to the point. */
+.jxg-tooltip-bubble.arrow-top {
+    margin-top: 9px;
+    transform: translateX(-50%);
+}
+.jxg-tooltip-bubble.arrow-top::after {
+    border-style: solid;
+    border-width: 0 4px 5px 4px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.95) transparent;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.jxg-tooltip-bubble.arrow-top::before {
+    border-style: solid;
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent rgba(203, 213, 225, 0.9) transparent;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.jxg-tooltip-bubble.no-arrow {
+    transform: translate(-50%, -50%);
+}

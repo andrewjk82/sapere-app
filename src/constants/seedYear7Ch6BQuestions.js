@@ -1456,28 +1456,108 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ]
   },
-  // ── QUESTION 16h ──
+  // ── QUESTION 17 (Screenshot Q10) ──
   {
-    id: "y7-6b-q16h",
+    id: "y7-6b-q17",
     type: "short_answer",
     difficulty: "medium",
     timeLimit: 90,
     t: "Multiplication and division",
-    question: "Evaluate \\(2b \\div a\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
-    a: "16/15",
-    hint: "Calculate \\(2b\\) first, then divide by \\(a\\).",
+    question: "Sarah spends \\(\\frac{3}{5}\\) of her monthly income on rent. If she earns \\(y\\) dollars a month, how much does she spend on rent each month?",
+    a: "3y/5",
+    hint: "Calculate \\(\\frac{3}{5}\\) of \\(y\\).",
     solutionSteps: [
       {
-        explanation: "Substitute values.",
-        workingOut: "2\\left(\\frac{2}{5}\\right) \\div \\frac{3}{4} = \\frac{4}{5} \\div \\frac{3}{4}"
+        explanation: "Represent the fraction of income spent.",
+        workingOut: "\\frac{3}{5} \\times y = \\frac{3y}{5}"
+      }
+    ]
+  },
+  // ── QUESTION 18 (Screenshot Q11) ──
+  {
+    id: "y7-6b-q18",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
+    question: "A certain type of fabric for clothing costs \\(y\\) dollars a metre. How much would \\(2\\frac{1}{3}\\) metres cost?",
+    a: "7y/3",
+    hint: "Convert the mixed number to an improper fraction, then multiply by the cost per metre.",
+    solutionSteps: [
+      {
+        explanation: "Convert \\(2\\frac{1}{3}\\) to an improper fraction.",
+        workingOut: "2\\frac{1}{3} = \\frac{2 \\times 3 + 1}{3} = \\frac{7}{3}"
       },
       {
-        explanation: "Multiply by the reciprocal.",
-        workingOut: "\\frac{4}{5} \\times \\frac{4}{3}"
+        explanation: "Multiply by the cost per metre \\(y\\).",
+        workingOut: "\\frac{7}{3} \\times y = \\frac{7y}{3}"
+      }
+    ]
+  },
+  // ── QUESTION 19 (Screenshot Q12) ──
+  {
+    id: "y7-6b-q19",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
+    question: "Twelve people go to a concert. Each ticket costs \\(w\\) dollars. The total cost of the tickets is to be shared equally among 8 people. How much does each of these people pay?",
+    a: "3w/2",
+    hint: "Find the total cost of all 12 tickets first, then divide that cost by 8.",
+    solutionSteps: [
+      {
+        explanation: "Find the total cost of the tickets.",
+        workingOut: "12 \\times w = 12w"
       },
       {
-        explanation: "Multiply.",
-        workingOut: "\\frac{16}{15}"
+        explanation: "Divide the total cost by 8.",
+        workingOut: "\\frac{12w}{8}"
+      },
+      {
+        explanation: "Simplify the fraction by dividing the top and bottom by 4.",
+        workingOut: "\\frac{3w}{2}"
+      }
+    ]
+  },
+  // ── QUESTION 20a (Screenshot Q13a) ──
+  {
+    id: "y7-6b-q20a",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
+    question: "A delivery service employs a team of \\(k\\) couriers. The team has to deliver \\(8z\\) packages every afternoon. How many packages on average does each courier have to deliver?",
+    a: "8z/k",
+    hint: "Divide the total number of packages by the number of couriers.",
+    solutionSteps: [
+      {
+        explanation: "Divide the total packages \\(8z\\) by \\(k\\).",
+        workingOut: "\\frac{8z}{k}"
+      }
+    ]
+  },
+  // ── QUESTION 20b (Screenshot Q13b) ──
+  {
+    id: "y7-6b-q20b",
+    type: "short_answer",
+    difficulty: "medium",
+    timeLimit: 90,
+    t: "Multiplication and division",
+    question: "A delivery service employs a team of \\(k\\) couriers. The team has to deliver \\(8z\\) packages every afternoon. Find the average number of packages each courier delivers if \\(z = 15\\) and \\(k = 6\\).",
+    a: "20",
+    hint: "Substitute the values into the formula \\(\\frac{8z}{k}\\).",
+    solutionSteps: [
+      {
+        explanation: "Substitute the values into the formula.",
+        workingOut: "\\frac{8(15)}{6}"
+      },
+      {
+        explanation: "Multiply in the numerator.",
+        workingOut: "\\frac{120}{6}"
+      },
+      {
+        explanation: "Divide to get the final answer.",
+        workingOut: "20"
       }
     ]
   }

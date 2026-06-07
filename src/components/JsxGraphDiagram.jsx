@@ -2,6 +2,39 @@ import { useEffect, useId, useRef } from 'react';
 import JXG from 'jsxgraph';
 import '../jsxgraph.css';
 
+/**
+ * Pre-process a JSXGraph script string BEFORE it is passed to new Function().
+ * 
+ * ROOT CAUSE: Script strings in seed data go through TWO levels of JS string parsing:
+ *   1. Module import:    "\\\\sqrt"  →  "\sqrt"   (in data.script runtime value)
+ *   2. new Function():   '\sqrt'  →  'sqrt'     (backslash eaten as invalid escape)
+ * 
+ * FIX: Double the backslashes inside $...$ blocks so LaTeX commands survive
+ * the second parse and KaTeX can render them properly.
+ */
+function preprocessScriptLatex(script) {
+  // Find all string literals (single or double quoted) that contain $...$ math
+  return script.replace(
+    /(['"])((?:[^'"\n\\]|\\.)*?\$(?:[^'"\n\\]|\\.)*?\$(?:[^'"\n\\]|\\.)*)\1/g,
+    (fullMatch, quote, content) => {
+      // Inside each $...$ block, double the backslashes so they survive new Function()
+      const processed = content.replace(
+        /\$([^$]+)\$/g,
+        (_m, latexContent) => {
+          // Double every backslash: \sqrt → \\sqrt
+          // After new Function() parses this, \\sqrt becomes \sqrt — exactly what KaTeX needs
+          const escaped = latexContent.replace(/\\/g, '\\\\');
+          return '$' + escaped + '$';
+        }
+      );
+      return quote + processed + quote;
+    }
+  );
+}
+
+
+
+
 const JsxGraphDiagram = ({ data, style }) => {
   const boardRef = useRef(null);
   const boardInstance = useRef(null);
@@ -163,6 +196,11 @@ const JsxGraphDiagram = ({ data, style }) => {
           let mappedColor = '#64748b'; 
           
           const labelAttrs = attributes.label || {};
+          const rawName = attributes.name || '';
+          const hasLatex = rawName.includes('$');
+          
+          // If name contains $...$ LaTeX, we'll create a separate KaTeX label
+          // instead of using JSXGraph's default SVG text label
           const pointAttributes = {
             fixed: true,
             highlight: false,
@@ -171,21 +209,163 @@ const JsxGraphDiagram = ({ data, style }) => {
             color: mappedColor,
             strokeColor: mappedColor,
             fillColor: mappedColor,
-            size: attributes.size || 2.2, // Smaller point size as requested by the user
+            size: attributes.size || 2.2,
             visible: attributes.visible !== false,
-            withLabel: attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false),
+            withLabel: hasLatex ? false : (attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false)),
             label: {
               fontSize: 11,
               fontFamily: '"Outfit", "Inter", sans-serif',
-              strokeColor: '#475569', // Dark Slate for unified labels
+              strokeColor: '#475569',
               ...labelAttrs,
               offset: labelAttrs.offset || [10, 10]
             }
           };
+          
           const pt = originalCreate(elementType, parents, pointAttributes);
           if (pt) {
             pt._explicit = true; // Tag explicit points so they are not hidden
           }
+          
+          // Create a KaTeX-rendered HTML label for points with LaTeX names
+          if (pt && hasLatex) {
+            const latex = rawName
+              .replace(/^["'`$\s]+/, '')
+              .replace(/["'`$\s]+$/, '')
+              .replace(/[^\x20-\x7E]/g, ''); // Keep only printable ASCII to strip hidden unicode characters causing tofu squares
+                 // Smart quadrant-aware and boundary-aware positioning to prevent clipping and overlaps
+            const px = pt.X();
+            const py = pt.Y();
+            
+            let anchorX = 'left';
+            let anchorY = 'middle';
+            let offsetX = 12;
+            let offsetY = 0;
+            let arrowClass = 'arrow-left';
+
+            // Detect closeness to the borders of the bounding box (within 22% of board dimensions)
+            const nearLeft = (px - bbox[0]) < dx * 0.22;
+            const nearRight = (bbox[2] - px) < dx * 0.22;
+            const nearTop = (bbox[1] - py) < dy * 0.22;
+            const nearBottom = (py - bbox[3]) < dy * 0.22;
+
+            // Cardinal positioning rules:
+            if (nearLeft) {
+              // Too close to left: place to the RIGHT
+              anchorX = 'left';
+              anchorY = 'middle';
+              offsetX = 12;
+              offsetY = 0;
+              arrowClass = 'arrow-left';
+            } else if (nearRight) {
+              // Too close to right: place to the LEFT
+              anchorX = 'right';
+              anchorY = 'middle';
+              offsetX = -12;
+              offsetY = 0;
+              arrowClass = 'arrow-right';
+            } else if (nearTop) {
+              // Too close to top: place BELOW
+              anchorX = 'middle';
+              anchorY = 'top';
+              offsetX = 0;
+              offsetY = 12;
+              arrowClass = 'arrow-top';
+            } else if (nearBottom) {
+              // Too close to bottom: place ABOVE
+              anchorX = 'middle';
+              anchorY = 'bottom';
+              offsetX = 0;
+              offsetY = -12;
+              arrowClass = 'arrow-bottom';
+            } else if (Math.abs(px) < 0.05) {
+              // On Y-axis: place to the RIGHT to clear Y-axis ticks
+              anchorX = 'left';
+              anchorY = 'middle';
+              offsetX = 12;
+              offsetY = 0;
+              arrowClass = 'arrow-left';
+            } else if (Math.abs(py) < 0.05) {
+              // On X-axis: place ABOVE to clear X-axis ticks
+              anchorX = 'middle';
+              anchorY = 'bottom';
+              offsetX = 0;
+              offsetY = -12;
+              arrowClass = 'arrow-bottom';
+            } else {
+              // General quadrant positioning: place outward/safely
+              if (px >= 0) {
+                anchorX = 'left';
+                anchorY = 'middle';
+                offsetX = 12;
+                offsetY = 0;
+                arrowClass = 'arrow-left';
+              } else {
+                anchorX = 'right';
+                anchorY = 'middle';
+                offsetX = -12;
+                offsetY = 0;
+                arrowClass = 'arrow-right';
+              }
+            }
+
+            // Configure tooltip positioning mathematically using JSXGraph coordinates.
+            // Place the HTML text element's anchor point EXACTLY at the center of the point marker (the dot)
+            // and use absolute CSS positioning + translation on the inner bubble to achieve 
+            // perfect pixel-based arrow pointing that automatically respects KaTeX render height/width.
+            let finalX = () => pt.X();
+            let finalY = () => pt.Y();
+            let activeArrowClass = arrowClass;
+
+            if (labelAttrs.offset) {
+              const offX = labelAttrs.offset[0];
+              const offY = labelAttrs.offset[1];
+              const coordOffsetX = (offX / (boardRef.current?.clientWidth || 300)) * dx;
+              const coordOffsetY = -(offY / (boardRef.current?.clientHeight || 300)) * dy;
+              finalX = () => pt.X() + coordOffsetX;
+              finalY = () => pt.Y() + coordOffsetY;
+              activeArrowClass = 'no-arrow';
+            }
+            
+            let labelContent = latex; // fallback: plain text
+            if (window.katex) {
+              try {
+                labelContent = window.katex.renderToString(latex, {
+                  throwOnError: false,
+                  displayMode: false,
+                  output: 'html',
+                });
+              } catch (e) {
+                // If KaTeX fails, use cleaned text
+              }
+            }
+            
+            // Create an HTML text element positioned near the point with the premium tooltip style
+            try {
+              originalCreate('text', [
+                finalX,
+                finalY,
+                `<div class="jxg-tooltip-bubble ${activeArrowClass}">${labelContent}</div>`,
+              ], {
+                display: 'html',
+                fixed: true,
+                highlight: false,
+                anchorX: 'left',
+                anchorY: 'top',
+                cssClass: 'jxg-tooltip-container',
+                parse: false,
+                strokeColor: 'transparent',
+                fillColor: 'transparent',
+                highlightStrokeColor: 'transparent',
+                highlightFillColor: 'transparent',
+              });
+            } catch (e) {
+              // If HTML text creation fails, fall back to basic label
+              if (pt.setAttribute) {
+                pt.setAttribute({ withLabel: true, name: latex });
+              }
+            }
+          }
+          
           return pt;
         }
 
@@ -231,12 +411,14 @@ const JsxGraphDiagram = ({ data, style }) => {
         });
       };
 
-      // Ensure data.script is a function that takes the board and JXG as arguments
+      // ── Execute the user script ──
       if (typeof data.script === 'function') {
         data.script(board, JXG);
       } else if (typeof data.script === 'string') {
-        // Evaluate script string safely if necessary, though function is preferred
-        const executeScript = new Function('board', 'JXG', data.script);
+        // PRE-PROCESS: Convert LaTeX in string literals to Unicode BEFORE new Function()
+        // This prevents the double-parsing problem where backslashes get eaten
+        const processedScript = preprocessScriptLatex(data.script);
+        const executeScript = new Function('board', 'JXG', processedScript);
         executeScript(board, JXG);
       }
 

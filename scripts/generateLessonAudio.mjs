@@ -14,7 +14,7 @@ const VOICE = 'bf_emma'; // British female, teacher-like
 
 // To regenerate only one lesson, comment out the others.
 const JOBS = [
-  { id: 'y7-20a', steps: buildPolyhedraLesson().steps },
+  { id: 'y7-20a', steps: buildPolyhedraLesson().steps, forceAll: true },
 ];
 
 const main = async () => {

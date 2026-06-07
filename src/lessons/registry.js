@@ -763,48 +763,153 @@ export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
         { type:'math', content:`$$\\text{curved surface} \\Rightarrow \\textbf{NOT}\\text{ a polyhedron}$$`, emphasis:true },
       ],
     },
-    // ── Step 2 ── Face ────────────────────────────────────────────────────────
+    // ── Step 2 ── Face intro: highlight one face ─────────────────────────────
     {
-      narration: `Each flat polygon forming part of the surface is called a <b>face</b>. This square pyramid has <b>5 faces</b>: one square base and four triangular sides.`,
-      speech: `Each flat polygon forming part of the surface is called a face. This square pyramid has five faces: one square base and four triangular sides.`,
+      narration: `Each flat polygon forming part of the surface is called a <b>face</b>. The green region here is one face — a flat triangular panel sitting on the side of the pyramid.`,
+      speech: `Each flat polygon forming part of the surface is called a face. The green region here is one face — a flat triangular panel sitting on the side of the pyramid.`,
       board: [
         pyrGraph({
           lines:[
-            { from:[0.5,0.3], to:[4.1,0.3], color:HL, width:4, delay:1.0 },
-            { from:[4.1,0.3], to:[2.65,4.0], color:HL, width:4, delay:1.05 },
-            { from:[0.5,0.3], to:[2.65,4.0], color:HL, width:4, delay:1.1 },
+            { from:[0.5,0.3], to:[4.1,0.3], color:HL, width:5, delay:0.9 },
+            { from:[4.1,0.3], to:[2.65,4.0], color:HL, width:5, delay:0.95 },
+            { from:[0.5,0.3], to:[2.65,4.0], color:HL, width:5, delay:1.0 },
           ],
-          texts:[ { x:2.0, y:2.0, text:'face ▲', color:HL, size:13, delay:1.3 } ],
+          texts:[ { x:1.8, y:2.1, text:'face ▲', color:HL, size:14, delay:1.2 } ],
         }),
+        { type:'math', content:`$$\\text{face} = \\text{one flat polygonal panel}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 2b ── Count all 5 faces ─────────────────────────────────────────
+    {
+      narration: `This square pyramid has exactly <b>5 faces</b>. Let's count them — four triangular sides plus one square base.`,
+      speech: `This square pyramid has exactly five faces. Let's count them — four triangular sides plus one square base.`,
+      board: [
+        // Slightly zoomed-in graph (tighter bounds, larger canvas)
+        {
+          type:'graph', showAxes:false,
+          xMin:0.0, xMax:5.2, yMin:-0.2, yMax:4.6, width:420, height:390,
+          lines:[
+            // Base wireframe
+            ...pyrBase,
+            // ① Front face ABE — green
+            { from:[0.5,0.3], to:[4.1,0.3], color:HL,       width:4.5, delay:0.8  },
+            { from:[4.1,0.3], to:[2.65,4.0], color:HL,      width:4.5, delay:0.85 },
+            { from:[0.5,0.3], to:[2.65,4.0], color:HL,      width:4.5, delay:0.9  },
+            // ② Right face BCE — amber
+            { from:[4.1,0.3], to:[4.8,1.2], color:'#f59e0b', width:4.5, delay:1.5  },
+            { from:[4.8,1.2], to:[2.65,4.0], color:'#f59e0b',width:4.5, delay:1.55 },
+            { from:[4.1,0.3], to:[2.65,4.0], color:'#f59e0b',width:4.5, delay:1.6  },
+            // ③ Left face DAE — purple (hidden edges, shown solid for counting)
+            { from:[1.2,1.2], to:[0.5,0.3], color:'#8b5cf6', width:3.5, delay:2.2  },
+            { from:[0.5,0.3], to:[2.65,4.0], color:'#8b5cf6',width:3.5, delay:2.25 },
+            { from:[1.2,1.2], to:[2.65,4.0], color:'#8b5cf6',width:3.5, delay:2.3  },
+            // ④ Back face CDE — red (fully hidden, solid for clarity)
+            { from:[4.8,1.2], to:[1.2,1.2], color:'#ef4444', width:3.5, delay:2.9  },
+            { from:[1.2,1.2], to:[2.65,4.0], color:'#ef4444',width:3.5, delay:2.95 },
+            { from:[4.8,1.2], to:[2.65,4.0], color:'#ef4444',width:3.5, delay:3.0  },
+            // ⑤ Base ABCD — blue
+            { from:[0.5,0.3], to:[4.1,0.3], color:'#3b82f6', width:4.5, delay:3.6  },
+            { from:[4.1,0.3], to:[4.8,1.2], color:'#3b82f6', width:4.5, delay:3.65 },
+            { from:[4.8,1.2], to:[1.2,1.2], color:'#3b82f6', width:4.5, delay:3.7  },
+            { from:[1.2,1.2], to:[0.5,0.3], color:'#3b82f6', width:4.5, delay:3.75 },
+          ],
+          texts:[
+            { x:2.15, y:1.6,  text:'① front △',  color:HL,        size:12, delay:1.05 },
+            { x:3.9,  y:1.85, text:'② right △',  color:'#f59e0b', size:12, delay:1.75 },
+            { x:1.15, y:1.85, text:'③ left △',   color:'#8b5cf6', size:12, delay:2.45 },
+            { x:2.65, y:2.7,  text:'④ back △',   color:'#ef4444', size:12, delay:3.15 },
+            { x:2.65, y:0.55, text:'⑤ base □',   color:'#3b82f6', size:12, delay:3.9  },
+          ],
+        },
         { type:'math', content:`$$\\textbf{F} = 5 \\quad (\\text{1 square base} + \\text{4 triangles})$$`, emphasis:true },
       ],
     },
-    // ── Step 3 ── Edge ────────────────────────────────────────────────────────
+    // ── Step 3 ── Edge intro ──────────────────────────────────────────────────
     {
-      narration: `Two faces meet along a line called an <b>edge</b>. The square pyramid has <b>8 edges</b>: 4 around the base and 4 going up to the apex.`,
-      speech: `Two faces meet along a line called an edge. The square pyramid has eight edges: four around the base and four going up to the apex.`,
+      narration: `Two faces meet along a line called an <b>edge</b>. The red line at the bottom is one edge — the straight line where the front face and the base meet.`,
+      speech: `Two faces meet along a line called an edge. The red line at the bottom is one edge — the straight line where the front face and the base meet.`,
       board: [
         pyrGraph({
           lines:[
-            { from:[0.5,0.3], to:[4.1,0.3], color:HR, width:5, delay:1.0 },
+            { from:[0.5,0.3], to:[4.1,0.3], color:HR, width:5, delay:0.9 },
           ],
-          texts:[ { x:2.3, y:-0.1, text:'edge', color:HR, size:13, delay:1.3 } ],
+          texts:[ { x:2.3, y:-0.1, text:'edge', color:HR, size:13, delay:1.2 } ],
         }),
+        { type:'math', content:`$$\\text{edge} = \\text{where two faces meet}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 3b ── Count all 8 edges ──────────────────────────────────────────
+    {
+      narration: `The square pyramid has <b>8 edges</b> total: <b>4 base edges</b> running around the bottom, then <b>4 lateral edges</b> rising up to the apex.`,
+      speech: `The square pyramid has eight edges in total. Four base edges run around the bottom, then four lateral edges rise up to the apex.`,
+      board: [
+        {
+          type:'graph', showAxes:false,
+          xMin:0.0, xMax:5.2, yMin:-0.3, yMax:4.6, width:420, height:390,
+          lines:[
+            ...pyrBase,
+            // 4 base edges — red, sequential
+            { from:[0.5,0.3],  to:[4.1,0.3],  color:HR, width:5, delay:0.8  },
+            { from:[4.1,0.3],  to:[4.8,1.2],  color:HR, width:5, delay:1.1  },
+            { from:[4.8,1.2],  to:[1.2,1.2],  color:HR, width:5, delay:1.4  },
+            { from:[1.2,1.2],  to:[0.5,0.3],  color:HR, width:5, delay:1.7  },
+            // 4 lateral edges — amber, sequential
+            { from:[0.5,0.3],  to:[2.65,4.0], color:'#f59e0b', width:5, delay:2.4  },
+            { from:[4.1,0.3],  to:[2.65,4.0], color:'#f59e0b', width:5, delay:2.7  },
+            { from:[4.8,1.2],  to:[2.65,4.0], color:'#f59e0b', width:5, delay:3.0  },
+            { from:[1.2,1.2],  to:[2.65,4.0], color:'#f59e0b', width:5, delay:3.3  },
+          ],
+          texts:[
+            { x:2.65, y:-0.15, text:'① base',  color:HR,        size:12, delay:0.9  },
+            { x:4.55, y:0.75,  text:'② base',  color:HR,        size:12, delay:1.2  },
+            { x:2.8,  y:0.95,  text:'③ base',  color:HR,        size:12, delay:1.5  },
+            { x:0.6,  y:0.75,  text:'④ base',  color:HR,        size:12, delay:1.8  },
+            { x:1.2,  y:2.35,  text:'⑤ up',    color:'#f59e0b', size:12, delay:2.5  },
+            { x:3.65, y:2.2,   text:'⑥ up',    color:'#f59e0b', size:12, delay:2.8  },
+            { x:4.05, y:2.9,   text:'⑦ up',    color:'#f59e0b', size:12, delay:3.1  },
+            { x:1.85, y:3.1,   text:'⑧ up',    color:'#f59e0b', size:12, delay:3.4  },
+          ],
+        },
         { type:'math', content:`$$\\textbf{E} = 8 \\quad (\\text{4 base edges} + \\text{4 lateral edges})$$`, emphasis:true },
       ],
     },
-    // ── Step 4 ── Vertex ──────────────────────────────────────────────────────
+    // ── Step 4 ── Vertex intro ────────────────────────────────────────────────
     {
-      narration: `The point where three or more edges meet is called a <b>vertex</b> (plural: <b>vertices</b>). The square pyramid has <b>5 vertices</b>: 4 base corners and 1 apex.`,
-      speech: `The point where three or more edges meet is called a vertex. The plural is vertices. The square pyramid has five vertices: four base corners and one apex.`,
+      narration: `The point where three or more edges meet is called a <b>vertex</b>. The tip at the very top of the pyramid — where all four lateral edges converge — is the <b>apex vertex</b>.`,
+      speech: `The point where three or more edges meet is called a vertex. The tip at the very top of the pyramid — where all four lateral edges converge — is the apex vertex.`,
       board: [
         pyrGraph({
           points:[
             { x:2.65, y:4.0, label:'vertex (apex)', pulse:true },
-            { x:0.5, y:0.3, label:'V' },
-            { x:4.1, y:0.3, label:'V' },
           ],
         }),
+        { type:'math', content:`$$\\text{vertex} = \\text{point where edges meet}$$`, emphasis:true },
+      ],
+    },
+    // ── Step 4b ── Count all 5 vertices ───────────────────────────────────────
+    {
+      narration: `The square pyramid has <b>5 vertices</b> in total: <b>4 base corners</b> and <b>1 apex</b> at the top.`,
+      speech: `The square pyramid has five vertices in total: four base corners and one apex at the top.`,
+      board: [
+        {
+          type:'graph', showAxes:false,
+          xMin:0.0, xMax:5.2, yMin:-0.3, yMax:4.6, width:420, height:390,
+          lines:[...pyrBase],
+          points:[
+            { x:0.5,  y:0.3,  color:'#3b82f6', size:8, delay:0.8  },
+            { x:4.1,  y:0.3,  color:'#3b82f6', size:8, delay:1.3  },
+            { x:4.8,  y:1.2,  color:'#3b82f6', size:8, delay:1.8  },
+            { x:1.2,  y:1.2,  color:'#3b82f6', size:8, delay:2.3  },
+            { x:2.65, y:4.0,  color:HR,        size:10, delay:2.9, pulse:true },
+          ],
+          texts:[
+            { x:0.0,  y:0.1,  text:'① corner', color:'#3b82f6', size:11, delay:0.9  },
+            { x:4.2,  y:0.1,  text:'② corner', color:'#3b82f6', size:11, delay:1.4  },
+            { x:4.9,  y:1.0,  text:'③ corner', color:'#3b82f6', size:11, delay:1.9  },
+            { x:0.3,  y:1.35, text:'④ corner', color:'#3b82f6', size:11, delay:2.4  },
+            { x:2.65, y:4.35, text:'⑤ apex',   color:HR,        size:12, delay:3.1  },
+          ],
+        },
         { type:'math', content:`$$\\textbf{V} = 5 \\quad (\\text{4 base corners} + \\text{1 apex})$$`, emphasis:true },
       ],
     },
@@ -819,6 +924,46 @@ export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
           ['Square pyramid', '5', '5', '8', '2'],
           ['Rectangular prism', '6', '8', '12', '2'],
         ]},
+      ],
+    },
+    // ── Step 5b ── Euler's formula worked example (rectangular prism) ─────────
+    {
+      narration: `Let's verify Euler's formula on a <b>rectangular box</b>. Count the faces first: front, back, left, right, top, bottom — that's <b>F = 6</b>. Now the vertices — <b>V = 8</b> corners. Then the edges — <b>E = 12</b> lines. So: $6 + 8 - 12 = 2$ ✓`,
+      speech: `Let's verify Euler's formula on a rectangular box. Count the faces first: front, back, left, right, top, and bottom — that's F equals 6. Now the vertices — V equals 8 corners. Then the edges — E equals 12 lines. So: 6 plus 8 minus 12 equals 2. Euler's formula checks out!`,
+      board: [
+        {
+          type:'graph', showAxes:false,
+          xMin:-0.5, xMax:6.8, yMin:-0.5, yMax:5.4, width:430, height:340,
+          lines:[...boxLines],
+          // Faces: highlight each face group sequentially
+          // Front face ABCD: (0,0)-(4,0)-(4,3)-(0,3)
+          // Back face: (1.3,1)-(5.3,1)-(5.3,4)-(1.3,4)
+          // Vertices: 8 corners
+          points:[
+            // Front-bottom
+            { x:0,   y:0,   color:'#3b82f6', size:7, delay:2.5 },
+            { x:4,   y:0,   color:'#3b82f6', size:7, delay:2.6 },
+            { x:4,   y:3,   color:'#3b82f6', size:7, delay:2.7 },
+            { x:0,   y:3,   color:'#3b82f6', size:7, delay:2.8 },
+            // Back corners
+            { x:1.3, y:1.0, color:'#3b82f6', size:7, delay:2.9 },
+            { x:5.3, y:1.0, color:'#3b82f6', size:7, delay:3.0 },
+            { x:5.3, y:4.0, color:'#3b82f6', size:7, delay:3.1 },
+            { x:1.3, y:4.0, color:'#3b82f6', size:7, delay:3.2 },
+          ],
+          texts:[
+            // Face labels (staggered)
+            { x:2.0,  y:1.5,  text:'F① front',  color:HL,        size:11, delay:0.6  },
+            { x:3.3,  y:2.4,  text:'F② back',   color:HL,        size:11, delay:0.9  },
+            { x:-0.4, y:1.5,  text:'F③ left',   color:HL,        size:11, delay:1.2  },
+            { x:5.4,  y:2.0,  text:'F④ right',  color:HL,        size:11, delay:1.5  },
+            { x:2.3,  y:3.7,  text:'F⑤ top',    color:HL,        size:11, delay:1.8  },
+            { x:2.3,  y:-0.3, text:'F⑥ bottom', color:HL,        size:11, delay:2.1  },
+            // Vertex count label
+            { x:5.6,  y:0.5,  text:'V=8 corners', color:'#3b82f6', size:11, delay:3.4  },
+          ],
+        },
+        { type:'math', content:`$$F + V - E = 6 + 8 - 12 = \\mathbf{2} \\checkmark$$`, emphasis:true },
       ],
     },
     // ── Step 6 ── Platonic solids definition ──────────────────────────────────
@@ -856,10 +1001,22 @@ export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
       narration: `A <b>prism</b> is a polyhedron with <b>two identical parallel faces</b> (the bases) joined by parallelogram faces. All rectangular boxes are prisms — so are triangular prisms, hexagonal prisms, and more.`,
       speech: `A prism is a polyhedron with two identical parallel faces, called the bases, joined by parallelogram faces. All rectangular boxes are prisms, as are triangular prisms, hexagonal prisms, and more.`,
       board: [
-        boxGraph({ texts:[
-          { x:2.0, y:-0.1, text:'front face (base)', color:HL, size:11, delay:1.1 },
-          { x:3.5, y:4.3, text:'back face (base)', color:HL, size:11, delay:1.3 },
-        ]}),
+        {
+          type:'graph', showAxes:false,
+          xMin:-0.3, xMax:6.2, yMin:-0.3, yMax:4.9, width:400, height:310,
+          lines: boxLines,
+          // Highlight the two identical parallel base faces with colour fill
+          polygons:[
+            // Front face (0,0)-(4,0)-(4,3)-(0,3) — green
+            { vertices:[[0,0],[4,0],[4,3],[0,3]],   color:'rgba(16,185,129,0.22)', stroke:HL, strokeWidth:2.5, delay:0.9 },
+            // Back face (1.3,1)-(5.3,1)-(5.3,4)-(1.3,4) — green
+            { vertices:[[1.3,1.0],[5.3,1.0],[5.3,4.0],[1.3,4.0]], color:'rgba(16,185,129,0.18)', stroke:HL, strokeWidth:2.5, delay:1.3 },
+          ],
+          texts:[
+            { x:2.0, y:-0.1, text:'front face (base)', color:HL, size:11, delay:1.1 },
+            { x:3.5, y:4.35, text:'back face (base)',  color:HL, size:11, delay:1.5 },
+          ],
+        },
         { type:'math', content:`$$\\text{Prism: 2 identical parallel bases} + \\text{rectangular faces}$$`, emphasis:true },
       ],
     },

@@ -310,8 +310,21 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       [/\\infty\b/g, '∞'],
     ];
     el.querySelectorAll('svg text').forEach((node) => {
-      const original = node.textContent;
-      if (!original || original.indexOf('\\') < 0) return;
+      let original = node.textContent;
+      if (!original) return;
+
+      // Clean up math delimiters if they leaked into SVG text nodes
+      original = original.replace(/^\$|\$$/g, '');
+
+      // Replace \sqrt{...} with √(...)
+      original = original.replace(/\\sqrt\s*\{([^}]+)\}/g, '√$1');
+      original = original.replace(/\\sqrt\s*([a-zA-Z0-9])/g, '√$1');
+
+      if (original.indexOf('\\') < 0) {
+        node.textContent = original;
+        return;
+      }
+
       let next = original;
       LATEX_TO_UNICODE.forEach(([re, glyph]) => { next = next.replace(re, glyph); });
       if (next !== original) node.textContent = next;

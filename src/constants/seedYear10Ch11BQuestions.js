@@ -1,6 +1,6 @@
 export const Y10_CH11B_QUESTIONS = [
   {
-    "id": "y10-11b-q1a",
+    "id": "y10-11b-1a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -20,7 +20,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q1b",
+    "id": "y10-11b-1b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -40,7 +40,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q1c",
+    "id": "y10-11b-1c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -60,7 +60,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q1d",
+    "id": "y10-11b-1d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -80,7 +80,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q1e",
+    "id": "y10-11b-1e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -100,7 +100,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q2a",
+    "id": "y10-11b-2a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -120,7 +120,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q2b",
+    "id": "y10-11b-2b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -140,7 +140,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q2c",
+    "id": "y10-11b-2c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -160,7 +160,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q2d",
+    "id": "y10-11b-2d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -180,7 +180,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q2e",
+    "id": "y10-11b-2e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -200,7 +200,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q3a",
+    "id": "y10-11b-3a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -220,7 +220,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q3b",
+    "id": "y10-11b-3b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -240,7 +240,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q3c",
+    "id": "y10-11b-3c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -260,7 +260,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q3d",
+    "id": "y10-11b-3d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -280,7 +280,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q3e",
+    "id": "y10-11b-3e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -300,7 +300,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q4a",
+    "id": "y10-11b-4a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -320,7 +320,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q4b",
+    "id": "y10-11b-4b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -340,7 +340,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q4c",
+    "id": "y10-11b-4c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -360,7 +360,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q4d",
+    "id": "y10-11b-4d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -380,7 +380,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q4e",
+    "id": "y10-11b-4e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -400,7 +400,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q5a",
+    "id": "y10-11b-5a",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -442,7 +442,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q5b",
+    "id": "y10-11b-5b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -462,7 +462,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q6a",
+    "id": "y10-11b-6a",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -504,7 +504,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q6b",
+    "id": "y10-11b-6b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -524,7 +524,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q7a",
+    "id": "y10-11b-7a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -544,7 +544,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q7b",
+    "id": "y10-11b-7b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -564,7 +564,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q7c",
+    "id": "y10-11b-7c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -584,7 +584,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q7d",
+    "id": "y10-11b-7d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -604,7 +604,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q7e",
+    "id": "y10-11b-7e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -624,7 +624,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q8a",
+    "id": "y10-11b-8a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -644,7 +644,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q8b",
+    "id": "y10-11b-8b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -664,7 +664,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q8c",
+    "id": "y10-11b-8c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -684,7 +684,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q8d",
+    "id": "y10-11b-8d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -704,7 +704,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q8e",
+    "id": "y10-11b-8e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -724,7 +724,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q9a",
+    "id": "y10-11b-9a",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -744,7 +744,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q9b",
+    "id": "y10-11b-9b",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -764,7 +764,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q9c",
+    "id": "y10-11b-9c",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -784,7 +784,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q9d",
+    "id": "y10-11b-9d",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -804,7 +804,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q9e",
+    "id": "y10-11b-9e",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -824,7 +824,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q10a",
+    "id": "y10-11b-10a",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -866,7 +866,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q10b",
+    "id": "y10-11b-10b",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -908,7 +908,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q10c",
+    "id": "y10-11b-10c",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -950,7 +950,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q10d",
+    "id": "y10-11b-10d",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -992,7 +992,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q11a",
+    "id": "y10-11b-11a",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1034,7 +1034,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q11b",
+    "id": "y10-11b-11b",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1076,7 +1076,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q11c",
+    "id": "y10-11b-11c",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1118,7 +1118,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q11d",
+    "id": "y10-11b-11d",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1160,7 +1160,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q12a",
+    "id": "y10-11b-12a",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1202,7 +1202,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q12b",
+    "id": "y10-11b-12b",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1244,7 +1244,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q12c",
+    "id": "y10-11b-12c",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1286,7 +1286,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q12d",
+    "id": "y10-11b-12d",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1328,7 +1328,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13ai",
+    "id": "y10-11b-13ai",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1370,7 +1370,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13aii",
+    "id": "y10-11b-13aii",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1412,7 +1412,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13bi",
+    "id": "y10-11b-13bi",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1454,7 +1454,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13bii",
+    "id": "y10-11b-13bii",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1496,7 +1496,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13ci",
+    "id": "y10-11b-13ci",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1538,7 +1538,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13cii",
+    "id": "y10-11b-13cii",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1580,7 +1580,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13di",
+    "id": "y10-11b-13di",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1622,7 +1622,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q13dii",
+    "id": "y10-11b-13dii",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1664,7 +1664,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q14a",
+    "id": "y10-11b-14a",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1706,7 +1706,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q14b",
+    "id": "y10-11b-14b",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1748,7 +1748,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q14c",
+    "id": "y10-11b-14c",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
@@ -1790,7 +1790,7 @@ export const Y10_CH11B_QUESTIONS = [
     "c": "11B"
   },
   {
-    "id": "y10-11b-q14d",
+    "id": "y10-11b-14d",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,

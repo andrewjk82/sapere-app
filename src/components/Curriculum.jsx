@@ -588,7 +588,7 @@ const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 // sync_meta, so chapter cards could show pre-seed numbers indefinitely even
 // after thousands of questions were added. Forcing one re-fetch resyncs all
 // existing installs.
-const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v4';
+const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v5';
 const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 const ADMIN_TOOL_COUNT_IDS = [
@@ -1874,6 +1874,18 @@ const Curriculum = () => {
     return [...ids];
   }, [displayData, isAdmin, showAdminTools]);
 
+  // Seed 파일에 있는 문제 수를 chapterId별로 합산 — Firestore 쿼리 불필요
+  const seedCountByChapter = useMemo(() => {
+    const map = {};
+    CHAPTER_SEED_REGISTRY.forEach(({ chapterId, seed }) => {
+      if (chapterId && Array.isArray(seed)) {
+        map[chapterId] = (map[chapterId] || 0) + seed.length;
+      }
+    });
+    return map;
+  }, []);
+
+
   const countTopicIds = useMemo(() => {
     if (!isAdmin || !showAdminTools) return [];
     const ids = new Set(CHAPTER_SEED_REGISTRY.map((entry) => entry.topicId).filter(Boolean));
@@ -2312,7 +2324,7 @@ const Curriculum = () => {
                   {courses && selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
                   {/* Total question count across all chapters of the year. */}
                   {(() => {
-                    const total = displayData.reduce((sum, ch) => sum + (questionCounts[ch.id] || 0), 0);
+                    const total = displayData.reduce((sum, ch) => sum + (seedCountByChapter[ch.id] || 0), 0);
                     if (total === 0) return null;
                     return (
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '4px 10px', borderRadius: '999px', background: '#ede9fe', color: '#5b21b6', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.02em' }}>
@@ -2809,8 +2821,8 @@ const Curriculum = () => {
                       <h3 className="chapter-card__title">{chapter.title}</h3>
                       <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
-                        {questionCounts[chapter.id] > 0 && (
-                          <span className="chapter-card__meta-pill"> · {questionCounts[chapter.id]} questions</span>
+                        {(seedCountByChapter[chapter.id] || 0) > 0 && (
+                          <span className="chapter-card__meta-pill"> · {seedCountByChapter[chapter.id]} questions</span>
                         )}
                       </p>
                     </div>

@@ -1,5 +1,5 @@
 import { db } from '../firebase/config';
-import { collection, writeBatch, doc, setDoc, serverTimestamp, query, where, getDocs } from 'firebase/firestore';
+import { collection, writeBatch, doc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
 
 /**
  * Generic chapter question seeder.
@@ -104,6 +104,20 @@ export const seedChapterQuestions = async (chapter) => {
   const seed = Array.isArray(chapter?.seed) ? chapter.seed : [];
   if (seed.length === 0) return 0;
   const collRef = collection(db, 'questions');
+
+  // CLEAR EXISTING QUESTIONS FOR THIS TOPIC
+  // Use getDocsFromServer (not getDocs) to bypass IndexedDB offline cache — otherwise
+  // stale cached results could silently skip deleting documents that actually exist in Firestore.
+  const q = query(collRef, where('topicId', '==', chapter.topicId));
+  const snap = await getDocsFromServer(q);
+  if (!snap.empty) {
+    const CHUNK = 400;
+    for (let i = 0; i < snap.docs.length; i += CHUNK) {
+      const clearBatch = writeBatch(db);
+      snap.docs.slice(i, i + CHUNK).forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+    }
+  }
 
   // WRITE NEW SEED QUESTIONS
   // FULL OVERWRITE: questions are written by their stable `id` with
