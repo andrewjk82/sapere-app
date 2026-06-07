@@ -184,6 +184,8 @@ import { Y10_CH8E_QUESTIONS } from '../constants/seedYear10Ch8EQuestions.js';
 import { Y10_CH9_QUESTIONS } from '../constants/seedYear10Ch9Questions.js';
 import { Y10_CH11A_QUESTIONS } from '../constants/seedYear10Ch11AQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
+import { ABB_2020_EXT1_QUESTIONS } from '../constants/seedAbbotsleigh2020Ext1Questions.js';
+import { ABB_2020_EXT1_SIMILAR_QUESTIONS } from '../constants/seedAbbotsleigh2020Ext1SimilarQuestions.js';
 import { ASCHAM_2020_QUESTIONS } from '../constants/seedAscham2020Questions.js';
 import { BARKER_2020_QUESTIONS } from '../constants/seedBarker2020Questions.js';
 import { BAULKHAM_2020_QUESTIONS } from '../constants/seedBaulkham2020Questions.js';
@@ -544,6 +546,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6a', topicCode: '6A', topicTitle: 'Review of prisms and cylinders', year: 'Year 10', seed: Y10_CH6_QUESTIONS, label: 'Y10 Ch6 · Review of prisms and cylinders' },
   // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
   { chapterId: 'exam:abbotsleigh-2020', badgeLabel: 'Y12 EXAM', examPaper: 'abbotsleigh-2020', chapterTitle: 'Abbotsleigh 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam', year: 'Year 12', seed: ABBOTSLEIGH_2020_QUESTIONS, label: 'Y12 · Abbotsleigh 2020 HSC Trial (Advanced)' },
+  { chapterId: 'exam:abb-2020-ext1', badgeLabel: 'Y12 EXAM', examPaper: 'abb-2020-ext1', chapterTitle: 'Abbotsleigh 2020 HSC Trial (Ext 1)', topicId: 'y12e1-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam (Extension 1)', year: 'Year 12', seed: [...ABB_2020_EXT1_QUESTIONS, ...ABB_2020_EXT1_SIMILAR_QUESTIONS], label: 'Y12 · Abbotsleigh 2020 HSC Trial (Extension 1)' },
   { chapterId: 'exam:asc-2020', badgeLabel: 'Y12 EXAM', examPaper: 'asc-2020', chapterTitle: 'Ascham 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Ascham 2020 Trial Exam', year: 'Year 12', seed: ASCHAM_2020_QUESTIONS, label: 'Y12 · Ascham 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:bar-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bar-2020', chapterTitle: 'Barker 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Barker 2020 Trial Exam', year: 'Year 12', seed: BARKER_2020_QUESTIONS, label: 'Y12 · Barker 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:baulko-2020', badgeLabel: 'Y12 EXAM', examPaper: 'baulko-2020', chapterTitle: 'Baulkham Hills 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Baulkham Hills 2020 Trial Exam', year: 'Year 12', seed: BAULKHAM_2020_QUESTIONS, label: 'Y12 · Baulkham Hills 2020 HSC Trial (Advanced)' },
@@ -635,6 +638,7 @@ const Curriculum = () => {
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
   const [expandedSeedYears, setExpandedSeedYears] = useState({});
   const [seedSubTab, setSeedSubTab] = useState('chapters');
+  const [seedSearch, setSeedSearch] = useState('');
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
@@ -2493,11 +2497,11 @@ const Curriculum = () => {
                     return (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                         {/* Sub-tabs */}
-                        <div style={{ display: 'flex', gap: '6px', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', borderBottom: '1px solid #e2e8f0', paddingBottom: '10px' }}>
                           {[{ id: 'chapters', label: '📚 Chapter Questions' }, { id: 'past_papers', label: '📝 Past Papers' }].map(({ id, label }) => (
                             <button
                               key={id}
-                              onClick={() => setSeedSubTab(id)}
+                              onClick={() => { setSeedSubTab(id); setSeedSearch(''); }}
                               style={{
                                 padding: '6px 16px', borderRadius: '999px', border: 'none', cursor: 'pointer',
                                 fontSize: '0.78rem', fontWeight: 700,
@@ -2508,12 +2512,40 @@ const Curriculum = () => {
                               {label}
                             </button>
                           ))}
+                          <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '6px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '999px', padding: '4px 12px' }}>
+                            <Search size={13} style={{ color: '#a78bfa', flexShrink: 0 }} />
+                            <input
+                              type="text"
+                              placeholder={seedSubTab === 'past_papers' ? 'Search papers…' : 'Search chapters…'}
+                              value={seedSearch}
+                              onChange={e => setSeedSearch(e.target.value)}
+                              style={{ border: 'none', background: 'transparent', outline: 'none', fontSize: '0.78rem', color: '#1e1b4b', width: '140px' }}
+                            />
+                            {seedSearch && (
+                              <button onClick={() => setSeedSearch('')} style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0, display: 'flex', color: '#94a3b8' }}>
+                                <X size={12} />
+                              </button>
+                            )}
+                          </div>
                         </div>
 
                         {/* Chapter Questions — Year → Chapter tabs → Topic seeds */}
                         {seedSubTab === 'chapters' && yearOrder.map((year) => {
-                          const yearEntries = byYear[year] || [];
-                          const manualCards = manualByYear[year] || [];
+                          const sq = seedSearch.toLowerCase();
+                          let yearEntries = byYear[year] || [];
+                          let manualCards = manualByYear[year] || [];
+                          if (sq) {
+                            yearEntries = yearEntries.filter(e =>
+                              e.chapterTitle?.toLowerCase().includes(sq) ||
+                              e.topicTitle?.toLowerCase().includes(sq) ||
+                              e.topicCode?.toLowerCase().includes(sq) ||
+                              e.label?.toLowerCase().includes(sq)
+                            );
+                            manualCards = manualCards.filter(e =>
+                              e.label?.toLowerCase().includes(sq) ||
+                              e.chapterTitle?.toLowerCase().includes(sq)
+                            );
+                          }
                           if (yearEntries.length === 0 && manualCards.length === 0) return null;
 
                           // Group registry entries by chapterId
@@ -2526,7 +2558,7 @@ const Curriculum = () => {
 
                           const totalSets = yearEntries.length + manualCards.length;
                           const doneCount = yearEntries.filter(e => questionCounts[e.topicId]).length;
-                          const isOpen = expandedSeedYears[year] ?? false;
+                          const isOpen = sq ? true : (expandedSeedYears[year] ?? false);
 
                           // Selected chapter within this year
                           const selectedChapterKey = `sel-${year}`;
@@ -2620,8 +2652,17 @@ const Curriculum = () => {
 
                         {/* Past Papers */}
                         {seedSubTab === 'past_papers' && (() => {
-                          // Group past papers by year
-                          const ppByYear = pastPaperRegistry.reduce((acc, entry) => {
+                          // Group past papers by year (with optional search filter)
+                          const sq = seedSearch.toLowerCase();
+                          const filteredRegistry = sq
+                            ? pastPaperRegistry.filter(e =>
+                                e.chapterTitle?.toLowerCase().includes(sq) ||
+                                e.label?.toLowerCase().includes(sq) ||
+                                e.chapterId?.toLowerCase().includes(sq)
+                              )
+                            : pastPaperRegistry;
+
+                          const ppByYear = filteredRegistry.reduce((acc, entry) => {
                             const y = entry.year || 'Other';
                             if (!acc[y]) acc[y] = [];
                             acc[y].push(entry);
@@ -2630,13 +2671,13 @@ const Curriculum = () => {
 
                           const ppYears = yearOrder.filter(y => ppByYear[y]);
                           if (ppYears.length === 0) {
-                            return <div style={{ color: '#94a3b8', fontSize: '0.85rem', padding: '24px', textAlign: 'center' }}>No past papers added yet.</div>;
+                            return <div style={{ color: '#94a3b8', fontSize: '0.85rem', padding: '24px', textAlign: 'center' }}>{sq ? `No results for "${seedSearch}"` : 'No past papers added yet.'}</div>;
                           }
 
                           return ppYears.map((year) => {
                             const entries = ppByYear[year];
                             const doneCount = entries.filter(e => questionCounts[e.topicId]).length;
-                            const isOpen = expandedSeedYears[`pp-${year}`] ?? false;
+                            const isOpen = sq ? true : (expandedSeedYears[`pp-${year}`] ?? false);
 
                             return (
                               <div key={`pp-${year}`} style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden' }}>
