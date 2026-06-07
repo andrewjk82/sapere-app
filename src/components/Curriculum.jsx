@@ -2322,9 +2322,12 @@ const Curriculum = () => {
                 <div className="curriculum-header__title">
                   <h1>{selectedYear}</h1>
                   {courses && selectedCourse && <span className="curriculum-course-badge">{selectedCourse}</span>}
-                  {/* Total question count across all chapters of the year. */}
+                  {/* Total question count: prefer seed count; fall back to Firestore count for chapters with no seed entry */}
                   {(() => {
-                    const total = displayData.reduce((sum, ch) => sum + (seedCountByChapter[ch.id] || 0), 0);
+                    const total = displayData.reduce((sum, ch) => {
+                      const cnt = Math.max(seedCountByChapter[ch.id] || 0, questionCounts[ch.id] || 0);
+                      return sum + cnt;
+                    }, 0);
                     if (total === 0) return null;
                     return (
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', padding: '4px 10px', borderRadius: '999px', background: '#ede9fe', color: '#5b21b6', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.02em' }}>
@@ -2821,9 +2824,13 @@ const Curriculum = () => {
                       <h3 className="chapter-card__title">{chapter.title}</h3>
                       <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
-                        {(seedCountByChapter[chapter.id] || 0) > 0 && (
-                          <span className="chapter-card__meta-pill"> · {seedCountByChapter[chapter.id]} questions</span>
-                        )}
+                        {(() => {
+                          // 시드 파일 기준 우선, 없으면 Firestore 쿼리 기준
+                          const cnt = Math.max(seedCountByChapter[chapter.id] || 0, questionCounts[chapter.id] || 0);
+                          return cnt > 0 ? (
+                            <span className="chapter-card__meta-pill"> · {cnt} questions</span>
+                          ) : null;
+                        })()}
                       </p>
                     </div>
 
