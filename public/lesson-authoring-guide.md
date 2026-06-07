@@ -382,35 +382,61 @@ character (e.g. a caricature of the teacher):
 
 ## 6. Recipe: from a screenshot to a finished lesson
 
+> **Audio is NOT optional.** Every new lesson MUST ship with pre-generated Kokoro
+> mp3 files. A lesson without mp3s shows a "Preparing natural voice… (one-time
+> download)" spinner to every user on first play — this is unacceptable UX.
+> Steps 4–6 below are **mandatory, not optional**.
+
 1. **Find the topicId** in `src/constants/curriculumData.js` (search the title /
    code, e.g. `3H` → `y11a-3H`).
 2. **Outline the steps** from the screenshot — one concept each. Typical order:
    definition → worked example (table + graph) → key points → limits/asymptotes
    (with traces) → domain & range (emphasis math).
 3. **Write the spec** in `registry.js`:
-   - Either inline a `buildXxxLesson({ audioBase })` helper (preferred for
-     reusable families) or a literal `{ emoji, title, steps:[…] }`.
+   - Use a `buildXxxLesson({ audioBase })` helper (preferred for reusable
+     families). The helper must accept `audioBase` and wire it into each step's
+     `audioUrl` — see the pattern in every existing builder.
    - For each step write `narration` (HTML), `speech` (plain), and `board`.
    - Apply the **animation principle** table above.
-4. **Register** it in `LESSONS` with the right `topicId` and
-   `audioBase: '/lessons/audio/<topicId>'`.
-5. **Add an audio job** in `scripts/generateLessonAudio.mjs`:
+4. **Register** it in `LESSONS` with the right `topicId` **and always set
+   `audioBase`**:
    ```js
-   { id: '<topicId>', steps: buildXxxLesson().steps },
+   'y7-20a': { ...buildPolyhedraLesson({ audioBase: '/lessons/audio/y7-20a' }), topicId: 'y7-20a' },
    ```
-6. **Generate + compress voice** (dev machine):
+   ⚠️ Never register a lesson with `audioBase` omitted or `null` — the player
+   will fall back to browser TTS and prompt users to download a model.
+5. **Add the lesson to the audio generator** in `scripts/generateLessonAudio.mjs`:
+   - Import the new builder at the top.
+   - Add a job entry (set this as the ONLY active job to avoid re-generating
+     existing lessons):
+   ```js
+   import { buildPolyhedraLesson } from '../src/lessons/registry.js';
+   const JOBS = [
+     { id: 'y7-20a', steps: buildPolyhedraLesson().steps },
+   ];
+   ```
+6. **Generate + compress voice** (run on the dev machine — takes 1–3 min):
    ```bash
+   mkdir -p public/lessons/audio/<topicId>
    node scripts/generateLessonAudio.mjs
    cd public/lessons/audio/<topicId>
    for f in step-*.wav; do ffmpeg -y -i "$f" -codec:a libmp3lame -qscale:a 4 "${f%.wav}.mp3"; done
    rm -f *.wav
    ```
-7. **Build & deploy:** `npm run build` then `npx vercel --prod`.
+   Verify: `ls public/lessons/audio/<topicId>/` should show one `.mp3` per step,
+   with NO `.wav` files remaining.
+7. **Build & deploy:**
+   ```bash
+   npm run build
+   git add public/lessons/audio/<topicId>/ scripts/generateLessonAudio.mjs src/lessons/registry.js
+   git commit -m "feat: add <TopicName> lesson with Kokoro audio"
+   git push && npx vercel --prod
+   ```
 8. The **"Learn step-by-step 🔊"** button now appears on that topic (Curriculum →
-   topic). Done.
+   topic). Audio plays instantly — no download prompt. Done.
 
-> ⚠️ If you change a step's `speech`, **re-run the audio generator** for that
-> lesson — the mp3 must match the new words.
+> ⚠️ If you change any step's `speech` text, **re-run steps 5–7** for that
+> lesson — the mp3 must exactly match the new words or the audio will be wrong.
 
 ---
 
@@ -444,5 +470,9 @@ character (e.g. a caricature of the teacher):
 - [ ] Recap steps use `mathRow` with one coloured card per formula, delays ordered
       to match the narration.
 - [ ] One idea per step; graphs reuse the same window so motion is comparable.
-- [ ] `topicId` matches `curriculumData.js`; `audioBase` set; mp3s generated.
-- [ ] `npm run build` passes; deployed; button shows on the topic.
+- [ ] `topicId` matches `curriculumData.js`.
+- [ ] **`audioBase` is set** in the `LESSONS` registration — never `null` or omitted.
+- [ ] **mp3s exist** in `public/lessons/audio/<topicId>/` — one per step, no `.wav` files.
+- [ ] Lesson added to `scripts/generateLessonAudio.mjs` job list.
+- [ ] `npm run build` passes; `git push`; `npx vercel --prod` deployed.
+- [ ] Open the lesson in the app — voice plays instantly with **no download spinner**.
