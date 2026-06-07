@@ -11,17 +11,17 @@
 ```
 학년:        Year 10
 챕터 번호:   1
-chapterId:   y10-11
-서브토픽 ID: y7-11d
-토픽 코드:   11D
-서브토픽 제목: Regions of the plane
+chapterId:   y10-12
+서브토픽 ID: y7-12a
+토픽 코드:   12A
+서브토픽 제목: Review of the basic trigonometric ratios
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
 Q1 ~ Q5  → easy
-Q6  → medium
+none → medium
 none → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
@@ -46,7 +46,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1 ~Q6
+  Q1 ~Q5
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
@@ -98,11 +98,18 @@ export const Y8_CH1_QUESTIONS = [
 | `solution` | string | 풀이 설명문(모범답안). teacher_review는 여기에 모범답안 작성 |
 | `t` | string | 서브토픽 제목 |
 | `hint` | string | 힌트 한 줄 |
-| 10. **Language Requirements**: ALL text, including explanations, questions, and hints, MUST be written strictly in English. **DO NOT use Korean or any other language.** |
-| 11. **Currency/Dollar Signs**: Do NOT use the `$` symbol anywhere in the text (questions, hints, or explanations). The `$` symbol acts as an inline math delimiter in the Markdown parser and will break the formatting. Instead, always write out the word 'dollars' (e.g., '25 dollars' instead of '$25'). |
 | `solutionSteps` | array | 단계별 working out: `[{ "explanation": "단계 설명", "workingOut": "수식", "graphData": null }, ...]` ★ "Sketch the graph" 류의 문제에서 정답이 되는 그래프(`graphData`)는 절대로 최상위(`question` 객체)에 넣지 말고, 반드시 `solutionSteps`의 마지막 단계에만 넣으세요 (미리 답이 보이는 현상 방지). |
 | `graphData` | object\|null | 문제 본문과 함께 보여져야 할 그림. 없으면 `null`. ★ (중요) 문제의 정답이 되는 그래프(예: "Sketch each graph")는 여기에 넣으면 안 됩니다! 대신 `solutionSteps` 안에 넣으세요. |
 | `subQuestions` | array | 서브문제 ([4] 참고). `SPLIT_SUB_QUESTIONS = true`일 때만 적용. 없으면 생략 |
+
+### 중요 텍스트 및 데이터 무결성 규칙 (CRITICAL RULES)
+
+1. **Language Requirements**: ALL text, including explanations, questions, and hints, MUST be written strictly in English. **DO NOT use Korean or any other language.**
+2. **Currency/Dollar Signs**: Do NOT use the `$` symbol anywhere in the text (questions, hints, or explanations). The `$` symbol acts as an inline math delimiter in the Markdown parser and will break the formatting. Instead, always write out the word 'dollars' (e.g., '25 dollars' instead of '$25').
+3. **Strict LaTeX Formatting**: 기호, 변수, 각도 표시(예: $\theta$, $\alpha$, $x^2$) 등 모든 수학적 표현은 **반드시** 정확한 LaTeX 문법으로 감싸야 합니다(예: `$\theta$`). `graphData` 내부의 텍스트 라벨에서도 LaTeX 기호가 깨지지 않도록 올바르게 입력하세요 (예: `"text": "$\\theta$"`).
+4. **NO Missing Information (Zero Omission Policy)**: 원본 문제 이미지나 텍스트에 포함된 **어떤 정보도 절대 누락해서는 안 됩니다**. 
+   - 각도(예: $\theta$, $32^\circ$), 변의 길이, 꼭짓점 알파벳(A, B, C 등)이 원본에 있다면 `question` 텍스트나 `graphData` 그림 내에 **반드시 모두 똑같이 명시**되어야 합니다. (예: 그림에 $\theta$가 빠져서 학생이 무엇을 구해야 할지 모르는 상황 절대 금지)
+
 
 ---
 
