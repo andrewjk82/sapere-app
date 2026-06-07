@@ -1721,7 +1721,7 @@ export const Y12A_CH3_QUESTIONS = [
         "width": 300,
         "height": 220,
         "boundingbox": [-4, 4, 4, -4],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return (x+2.2)*(x)*(x-2.2)/6;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return (x+2.2)*(x)*(x-2.2)/6;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('point', [-1.27, 0], {name: 'a', size: 1, color: 'black', label: {offset: [0, -15]}});\nboard.create('point', [1.27, 0], {name: 'b', size: 1, color: 'black', label: {offset: [0, 15]}});\nboard.create('segment', [[-1.27, 0], [-1.27, 0.68]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[1.27, 0], [1.27, -0.68]], {dash: 2, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1744,7 +1744,7 @@ export const Y12A_CH3_QUESTIONS = [
         "width": 300,
         "height": 220,
         "boundingbox": [-4, 6, 4, -2],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.15*(x+2)*(x+2)*(x-2)*(x-2) - 1;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.15*(x+2)*(x+2)*(x-2)*(x-2) - 1;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('point', [-2, 0], {name: 'a', size: 1, color: 'black', label: {offset: [0, 15]}});\nboard.create('point', [0, 0], {name: 'b', size: 1, color: 'black', label: {offset: [10, 15]}});\nboard.create('point', [2, 0], {name: 'c', size: 1, color: 'black', label: {offset: [0, 15]}});\nboard.create('segment', [[-2, 0], [-2, -1]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[2, 0], [2, -1]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0, 0], [0, 1.4]], {dash: 2, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }
   },
