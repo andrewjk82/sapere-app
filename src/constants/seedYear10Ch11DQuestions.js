@@ -26,14 +26,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y > x + 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 2], {visible: false});\nvar p2 = board.create('point', [2, 4], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 4.5, 'y > x + 2']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -67,14 +67,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y < 3x + 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 2], {visible: false});\nvar p2 = board.create('point', [1, 5], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [1.5, 5.5, 'y < 3x + 2']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -108,14 +108,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\le 2x - 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, -3], {visible: false});\nvar p2 = board.create('point', [2, 1], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 1.5, 'y \\le 2x - 3']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -149,14 +149,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y > 2 - x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 2], {visible: false});\nvar p2 = board.create('point', [2, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 0.5, 'y > 2 - x']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -190,14 +190,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x + y \\le 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 6], {visible: false});\nvar p2 = board.create('point', [2, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 0.5, '3x + y \\le 6']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -231,14 +231,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '2x - 3y > 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, -2], {visible: false});\nvar p2 = board.create('point', [3, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [3.5, 0.5, '2x - 3y > 6']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -272,14 +272,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '2x + y > 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 2], {visible: false});\nvar p2 = board.create('point', [1, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [1.5, 0.5, '2x + y > 2']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -313,14 +313,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'x - 3y < 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, -1], {visible: false});\nvar p2 = board.create('point', [3, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [3.5, 0.5, 'x - 3y < 3']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -354,14 +354,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\le 3x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 0], {visible: false});\nvar p2 = board.create('point', [1, 3], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [1.5, 3.5, 'y \\le 3x']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -395,14 +395,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\ge 2x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 0], {visible: false});\nvar p2 = board.create('point', [1, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [1.5, 2.5, 'y \\ge 2x']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -436,14 +436,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'x \\ge 2']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [2, 0], {visible: false});\nvar p2 = board.create('point', [2, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 2.5, 'x \\ge 2']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -477,14 +477,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'x < 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [3, 0], {visible: false});\nvar p2 = board.create('point', [3, 2], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [3.5, 2.5, 'x < 3']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -518,14 +518,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y < 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 3], {visible: false});\nvar p2 = board.create('point', [2, 3], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 3.5, 'y < 3']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -559,14 +559,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y \\le -1']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, -1], {visible: false});\nvar p2 = board.create('point', [2, -1], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, -0.5, 'y \\le -1']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -600,14 +600,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x + 2y \\le 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 3], {visible: false});\nvar p2 = board.create('point', [2, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 0.5, '3x + 2y \\le 6']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -641,14 +641,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x - y \\le 6']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, -6], {visible: false});\nvar p2 = board.create('point', [2, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: true, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [2.5, 0.5, '3x - y \\le 6']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -682,14 +682,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, '3x - y \\ge 3']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, -3], {visible: false});\nvar p2 = board.create('point', [1, 0], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5'});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [1.5, 0.5, '3x - y \\ge 3']);\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -723,14 +723,14 @@ export const Y10_CH11D_QUESTIONS = [
             "height": 250,
             "boundingbox": [
               -5,
-              5,
-              5,
+              7,
+              7,
               -5
             ],
             "boardOptions": {
               "keepaspectratio": false
             },
-            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar l1 = board.create('line', [[0,0],[1,1]], {strokeColor: '#4f46e5'});\nboard.create('text', [1,2, 'y < 2 - 3x']);\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {firstArrow: true, lastArrow: true});\nboard.create('axis', [[0,0],[0,1]], {firstArrow: true, lastArrow: true});\nvar p1 = board.create('point', [0, 2], {visible: false});\nvar p2 = board.create('point', [1, -1], {visible: false});\nvar l1 = board.create('line', [p1, p2], {strokeColor: '#4f46e5', dash: 2});\nboard.create('inequality', [l1], {inverse: false, fillColor: '#4f46e5', fillOpacity: 0.2});\nboard.create('text', [1.5, -0.5, 'y < 2 - 3x']);\nboard.unsuspendUpdate();"
           }
         }
       }
