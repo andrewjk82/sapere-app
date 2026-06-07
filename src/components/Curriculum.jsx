@@ -1941,8 +1941,17 @@ const Curriculum = () => {
 
 
   const countTopicIds = useMemo(() => {
-    if (!isAdmin || !showAdminTools) return [];
-    const ids = new Set(CHAPTER_SEED_REGISTRY.map((entry) => entry.topicId).filter(Boolean));
+    const ids = new Set();
+    // Always fetch topic-level counts so chapter cards can sum them as a
+    // fallback when questions were stored with wrong chapterId (e.g. topicId
+    // used as chapterId in older seeding scripts).
+    displayData.forEach(ch => {
+      (ch.topics || []).forEach(t => { if (t.id) ids.add(t.id); });
+    });
+    // Admin seed-card topics (registry)
+    if (isAdmin && showAdminTools) {
+      CHAPTER_SEED_REGISTRY.forEach(e => { if (e.topicId) ids.add(e.topicId); });
+    }
     return [...ids];
   }, [isAdmin, showAdminTools]);
 
@@ -2379,7 +2388,8 @@ const Curriculum = () => {
                   {/* Total question count: prefer seed count; fall back to Firestore count for chapters with no seed entry */}
                   {(() => {
                     const total = displayData.reduce((sum, ch) => {
-                      const cnt = Math.max(seedCountByChapter[ch.id] || 0, questionCounts[ch.id] || 0);
+                      const topicSum = (ch.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
+                      const cnt = Math.max(seedCountByChapter[ch.id] || 0, questionCounts[ch.id] || 0, topicSum);
                       return sum + cnt;
                     }, 0);
                     if (total === 0) return null;
@@ -2879,8 +2889,8 @@ const Curriculum = () => {
                       <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
                         {(() => {
-                          // 시드 파일 기준 우선, 없으면 Firestore 쿼리 기준
-                          const cnt = Math.max(seedCountByChapter[chapter.id] || 0, questionCounts[chapter.id] || 0);
+                          const topicSum = (chapter.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
+                          const cnt = Math.max(seedCountByChapter[chapter.id] || 0, questionCounts[chapter.id] || 0, topicSum);
                           return cnt > 0 ? (
                             <span className="chapter-card__meta-pill"> · {cnt} questions</span>
                           ) : null;
