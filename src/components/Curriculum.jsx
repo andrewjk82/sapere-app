@@ -2444,16 +2444,27 @@ const Curriculum = () => {
 
               {/* Row 2 — Year tabs */}
               {(() => {
-                // Pre-compute total seeded questions per year from CHAPTER_SEED_REGISTRY
-                const seedCountByYear = CHAPTER_SEED_REGISTRY.reduce((acc, entry) => {
-                  const y = entry.year;
-                  acc[y] = (acc[y] || 0) + (Array.isArray(entry.seed) ? entry.seed.length : 0);
+                // Compute total questions per year using the same logic as the top
+                // badge: Math.max(seedCount, firestoreChapterCount, topicSum).
+                // This keeps the year tab in sync with the displayed total.
+                const countByYear = YEARS.reduce((acc, year) => {
+                  let fallbackData = CURRICULUM_DATA[year] || [];
+                  if (!Array.isArray(fallbackData)) {
+                    // multi-course year — flatten all courses
+                    fallbackData = Object.values(fallbackData).flat();
+                  }
+                  const total = fallbackData.reduce((sum, ch) => {
+                    const topicSum = (ch.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
+                    const cnt = Math.max(seedCountByChapter[ch.id] || 0, questionCounts[ch.id] || 0, topicSum);
+                    return sum + cnt;
+                  }, 0);
+                  acc[year] = total;
                   return acc;
                 }, {});
                 return (
                   <div className="curriculum-year-tabs">
                     {YEARS.map(year => {
-                      const count = seedCountByYear[year] || 0;
+                      const count = countByYear[year] || 0;
                       return (
                         <button
                           key={year}
