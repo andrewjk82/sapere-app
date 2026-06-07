@@ -190,6 +190,7 @@ import { Y10_CH11C_QUESTIONS } from '../constants/seedYear10Ch11CQuestions.js';
 import { Y10_CH11D_QUESTIONS } from '../constants/seedYear10Ch11DQuestions.js';
 import { Y10_CH11E_QUESTIONS } from '../constants/seedYear10Ch11EQuestions.js';
 import { Y10_CH12A_QUESTIONS } from '../constants/seedYear10Ch12AQuestions.js';
+import { Y10_CH12B_QUESTIONS } from '../constants/seedYear10Ch12BQuestions.js';
 import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -438,6 +439,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11d', topicCode: '11D', topicTitle: 'Regions of the plane', year: 'Year 10', seed: Y10_CH11D_QUESTIONS, label: 'Y10 Ch11 · 11D Regions of the plane' },
   { chapterId: 'y10-11', chapterTitle: 'Chapter 11: Circles, hyperbolas and simultaneous equations', topicId: 'y10-11e', topicCode: '11E', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH11E_QUESTIONS, label: 'Y10 Ch11 · 11E Revision' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12a', topicCode: '12A', topicTitle: 'Review of the basic trigonometric ratios', year: 'Year 10', seed: Y10_CH12A_QUESTIONS, label: 'Y10 Ch12 · 12A Review of the basic trigonometric ratios' },
+  { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12b', topicCode: '12B', topicTitle: 'Exact trigonometric ratios', year: 'Year 10', seed: Y10_CH12B_QUESTIONS, label: 'Y10 Ch12 · 12B Exact trigonometric ratios' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
