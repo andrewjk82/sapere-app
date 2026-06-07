@@ -476,7 +476,10 @@ const pickVoice = () => {
  */
 const LessonPlayer = ({ lesson, onClose }) => {
   const [idx, setIdx] = useState(0);
-  const [voiceOn, setVoiceOn] = useState(true);
+  // Only auto-enable voice when the lesson has pre-generated audio files.
+  // Without mp3s the player falls back to browser TTS which prompts a download.
+  const hasPregen = (lesson?.steps || []).length > 0 && (lesson.steps[0]?.audioUrl != null);
+  const [voiceOn, setVoiceOn] = useState(hasPregen);
   const [hd, setHd] = useState(false);        // HD (Kokoro neural) voice opt-in
   const [hdLoading, setHdLoading] = useState(false);
   const [auto, setAuto] = useState(false);
