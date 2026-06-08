@@ -1893,7 +1893,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                     Advanced graph JSON
                   </summary>
                   <textarea
-                    rows={4}
+                    rows={20}
                     value={formData.graphData}
                     onChange={e => setFormData({...formData, graphData: e.target.value})}
                     style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: `1px solid ${graphDataInvalid ? '#fecaca' : '#e2e8f0'}`, outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: graphDataInvalid ? '#fff1f2' : '#f8fafc', resize: 'vertical' }}
