@@ -6,15 +6,15 @@ const Y10_CH12I_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'Calculate the value of the pronumeral in the triangle. Give all angles correct to one decimal place.\n\nA right-angled triangle $PQR$ with $\\angle R = 90°$. The side $PR = 6\\text{ cm}$ and $RQ = 10\\text{ cm}$. The angle at $Q$ is $\\theta$.',
+    question: 'Calculate the value of the pronumeral in the triangle. Give all angles correct to one decimal place.\n\nA right-angled triangle $PQR$ with $\\angle R = 90°$. The side $PR = 6\\text{ cm}$ and $RQ = 10\\text{ cm}$. The angle at $Q$ is $θ$.',
     a: '31.0',
-    solution: 'In $\\triangle PQR$:\nOpposite side to $\\theta$ is $PR = 6\\text{ cm}$.\nAdjacent side to $\\theta$ is $RQ = 10\\text{ cm}$.\n$\\tan \\theta = \\frac{6}{10} = 0.6$\n$\\theta = \\tan^{-1}(0.6) \\approx 30.96°$\n\nCorrect to one decimal place, $\\theta = 31.0°$.',
+    solution: 'In $\\triangle PQR$:\nOpposite side to $θ$ is $PR = 6\\text{ cm}$.\nAdjacent side to $θ$ is $RQ = 10\\text{ cm}$.\n$\\tan θ = \\frac{6}{10} = 0.6$\n$θ = \\tan^{-1}(0.6) \\approx 30.96°$\n\nCorrect to one decimal place, $θ = 31.0°$.',
     t: 'Revision: Trigonometry',
-    hint: 'Use the tangent ratio: $\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.',
+    hint: 'Use the tangent ratio: $\\tan θ = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.',
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 8, 12, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar R = board.create('point', [0,0], {name: 'R', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar Q = board.create('point', [10,0], {name: 'Q', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar P = board.create('point', [0,6], {name: 'P', size: 2, color: '#64748b', label: {offset: [-10,10]}});\nboard.create('polygon', [P,R,Q], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, 3, '6 cm']);\nboard.create('text', [5, -1, '10 cm']);\nboard.create('angle', [P,Q,R], {radius: 1.5, name: '\\\\theta'});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar R = board.create('point', [0,0], {name: 'R', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar Q = board.create('point', [10,0], {name: 'Q', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar P = board.create('point', [0,6], {name: 'P', size: 2, color: '#64748b', label: {offset: [-10,10]}});\nboard.create('polygon', [P,R,Q], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, 3, '6 cm']);\nboard.create('text', [5, -1, '10 cm']);\nboard.create('angle', [P,Q,R], {radius: 1.5, name: '\\θ'});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -23,15 +23,15 @@ const Y10_CH12I_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'Calculate the value of the pronumeral in the triangle. Give all angles correct to one decimal place.\n\nA right-angled triangle with a hypotenuse of $18\\text{ cm}$ and an adjacent side of $15\\text{ cm}$. The angle is $\\theta$.',
+    question: 'Calculate the value of the pronumeral in the triangle. Give all angles correct to one decimal place.\n\nA right-angled triangle with a hypotenuse of $18\\text{ cm}$ and an adjacent side of $15\\text{ cm}$. The angle is $θ$.',
     a: '33.6',
-    solution: 'Using the cosine ratio:\n$\\cos \\theta = \\frac{15}{18}$\n$\\theta = \\cos^{-1}\\left(\\frac{15}{18}\\right) \\approx 33.557°$\n\nCorrect to one decimal place, $\\theta = 33.6°$.',
+    solution: 'Using the cosine ratio:\n$\\cos θ = \\frac{15}{18}$\n$θ = \\cos^{-1}\\left(\\frac{15}{18}\\right) \\approx 33.557°$\n\nCorrect to one decimal place, $θ = 33.6°$.',
     t: 'Revision: Trigonometry',
-    hint: 'Use the cosine ratio: $\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$.',
+    hint: 'Use the cosine ratio: $\\cos θ = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$.',
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 12, 17, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [15,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 9.95], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [7.5, 9, '18 cm']);\nboard.create('text', [7.5, -1, '15 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '\\\\theta'});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [15,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 9.95], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [7.5, 9, '18 cm']);\nboard.create('text', [7.5, -1, '15 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '\\θ'});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -44,7 +44,7 @@ const Y10_CH12I_QUESTIONS = [
     a: '10.58',
     solution: 'From the diagram, the angle is $36°$. The side $x$ is opposite to $36°$, and the hypotenuse is $18\\text{ cm}$.\n$\\sin 36° = \\frac{x}{18}$\n$x = 18 \\sin 36° \\approx 10.580$\n\nCorrect to two decimal places, $x = 10.58\\text{ cm}$.',
     t: 'Revision: Trigonometry',
-    hint: 'Use the sine ratio: $\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$.',
+    hint: 'Use the sine ratio: $\\sin θ = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$.',
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 16, 12, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
@@ -61,7 +61,7 @@ const Y10_CH12I_QUESTIONS = [
     a: '7.20',
     solution: 'In $\\triangle STU$, the side opposite the $42°$ angle is $SU = x$ and the adjacent side is $ST = 8$.\n$\\tan 42° = \\frac{x}{8}$\n$x = 8 \\tan 42° \\approx 7.203$\n\nCorrect to two decimal places, $x = 7.20\\text{ cm}$.',
     t: 'Revision: Trigonometry',
-    hint: 'Use the tangent ratio: $\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.',
+    hint: 'Use the tangent ratio: $\\tan θ = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.',
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-4, 5, 12, -12],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },

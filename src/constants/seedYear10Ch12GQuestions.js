@@ -85,9 +85,9 @@ export const Y10_CH12G_QUESTIONS = [
       }
 },
 
-    solution: 'The area of a rhombus can be found using the formula $A = a^2 \\sin \\theta$, or by finding the area of two identical triangles.\nArea $= 2 \\times \\left(\\frac{1}{2} \\times 8 \\times 8 \\times \\sin 128°\\right)$\nArea $= 64 \\sin 128°$\nArea $\\approx 64 \\times 0.7880 \\approx 50.43\\text{ m}^2$',
+    solution: 'The area of a rhombus can be found using the formula $A = a^2 \\sin θ$, or by finding the area of two identical triangles.\nArea $= 2 \\times \\left(\\frac{1}{2} \\times 8 \\times 8 \\times \\sin 128°\\right)$\nArea $= 64 \\sin 128°$\nArea $\\approx 64 \\times 0.7880 \\approx 50.43\\text{ m}^2$',
     t: 'Finding angles using the cosine rule',
-    hint: 'Use the sine area formula: $\\text{Area} = ab\\sin C$ for the two triangles that make up the rhombus, or $A = a^2\\sin\\theta$.'
+    hint: 'Use the sine area formula: $\\text{Area} = ab\\sin C$ for the two triangles that make up the rhombus, or $A = a^2\\sinθ$.'
   },
   {
     id: 'y10-12g-q7',

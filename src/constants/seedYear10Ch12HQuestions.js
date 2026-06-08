@@ -126,7 +126,7 @@ export const Y10_CH12H_QUESTIONS = [
     timeLimit: 60,
     question: 'Calculate the area, correct to two decimal places.\n\nA parallelogram $ABCD$ with adjacent sides $5\\text{ cm}$ and $10\\text{ cm}$, and an included angle of $70°$.',
     a: '46.98',
-    solution: 'The area of a parallelogram is given by $ab\\sin\\theta$.\n$\\text{Area} = 5 \\times 10 \\times \\sin 70°$\n$\\text{Area} = 50 \\times 0.9397 \\approx 46.985$\nCorrect to two decimal places, the area is $46.98\\text{ cm}^2$.',
+    solution: 'The area of a parallelogram is given by $ab\\sinθ$.\n$\\text{Area} = 5 \\times 10 \\times \\sin 70°$\n$\\text{Area} = 50 \\times 0.9397 \\approx 46.985$\nCorrect to two decimal places, the area is $46.98\\text{ cm}^2$.',
     graphData: { jsxGraph: {
             width: 300,
             height: 250,
@@ -147,7 +147,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
     t: 'Area of a triangle',
-    hint: 'A parallelogram can be split into two identical triangles. Its area is $ab\\sin\\theta$.'
+    hint: 'A parallelogram can be split into two identical triangles. Its area is $ab\\sinθ$.'
   },
   {
     id: 'y10-12h-q2c',
@@ -956,7 +956,7 @@ export const Y10_CH12H_QUESTIONS = [
     timeLimit: 90,
     question: 'A quadrilateral has diagonals of length $12\\text{ cm}$ and $18\\text{ cm}$. If the angle between the diagonals is $65°$, find the area of the quadrilateral, correct to the nearest square centimetre.',
     a: '98',
-    solution: 'The area of a quadrilateral with diagonals $d_1$ and $d_2$ intersecting at an angle $\\theta$ is $\\frac{1}{2} d_1 d_2 \\sin \\theta$.\n$\\text{Area} = \\frac{1}{2} \\times 12 \\times 18 \\times \\sin 65°$\n$\\text{Area} = 108 \\times 0.9063 \\approx 97.88$\nCorrect to the nearest square centimetre, the area is $98\\text{ cm}^2$.',
+    solution: 'The area of a quadrilateral with diagonals $d_1$ and $d_2$ intersecting at an angle $θ$ is $\\frac{1}{2} d_1 d_2 \\sin θ$.\n$\\text{Area} = \\frac{1}{2} \\times 12 \\times 18 \\times \\sin 65°$\n$\\text{Area} = 108 \\times 0.9063 \\approx 97.88$\nCorrect to the nearest square centimetre, the area is $98\\text{ cm}^2$.',
     graphData: { jsxGraph: {
             width: 300,
             height: 250,
@@ -977,7 +977,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
     t: 'Area of a triangle',
-    hint: 'Use the formula $\\text{Area} = \\frac{1}{2} d_1 d_2 \\sin \\theta$.'
+    hint: 'Use the formula $\\text{Area} = \\frac{1}{2} d_1 d_2 \\sin θ$.'
   },
   {
     id: 'y10-12h-q11',
@@ -1016,7 +1016,7 @@ export const Y10_CH12H_QUESTIONS = [
     timeLimit: 90,
     question: 'Prove that the formula $\\text{Area} = \\frac{1}{2}ab\\sin C$ gives the area of a triangle when $C$ is obtuse.',
     a: '',
-    solution: 'Let $\\triangle ABC$ have an obtuse angle at $C$. Drop a perpendicular of height $h$ from $A$ to the line $BC$ extended, meeting at $D$.\nThe area of the triangle is $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} a h$.\nIn the right-angled triangle $\\triangle ADC$, the hypotenuse is $b$ and the angle inside the triangle at $C$ is $180° - C$.\nThus, $\\sin(180° - C) = \\frac{h}{b}$, which means $h = b\\sin(180° - C)$.\nWe know that $\\sin(180° - \\theta) = \\sin\\theta$, so $\\sin(180° - C) = \\sin C$.\nTherefore, $h = b\\sin C$.\nSubstituting this back into the area formula gives $\\text{Area} = \\frac{1}{2} a (b\\sin C) = \\frac{1}{2}ab\\sin C$.',
+    solution: 'Let $\\triangle ABC$ have an obtuse angle at $C$. Drop a perpendicular of height $h$ from $A$ to the line $BC$ extended, meeting at $D$.\nThe area of the triangle is $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} a h$.\nIn the right-angled triangle $\\triangle ADC$, the hypotenuse is $b$ and the angle inside the triangle at $C$ is $180° - C$.\nThus, $\\sin(180° - C) = \\frac{h}{b}$, which means $h = b\\sin(180° - C)$.\nWe know that $\\sin(180° - θ) = \\sinθ$, so $\\sin(180° - C) = \\sin C$.\nTherefore, $h = b\\sin C$.\nSubstituting this back into the area formula gives $\\text{Area} = \\frac{1}{2} a (b\\sin C) = \\frac{1}{2}ab\\sin C$.',
     graphData: { jsxGraph: {
             width: 300,
             height: 250,
@@ -1094,7 +1094,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
         hint: 'The smallest angle is opposite the smallest side. Use the cosine rule.',
-        solution: 'Let the smallest angle be $\\theta$. It is opposite the $8\\text{ cm}$ side.\n$\\cos \\theta = \\frac{11^2 + 15^2 - 8^2}{2(11)(15)} = \\frac{121 + 225 - 64}{330} = \\frac{282}{330} \\approx 0.8545$\n$\\theta = \\cos^{-1}(0.8545) \\approx 31.29°$.'
+        solution: 'Let the smallest angle be $θ$. It is opposite the $8\\text{ cm}$ side.\n$\\cos θ = \\frac{11^2 + 15^2 - 8^2}{2(11)(15)} = \\frac{121 + 225 - 64}{330} = \\frac{282}{330} \\approx 0.8545$\n$θ = \\cos^{-1}(0.8545) \\approx 31.29°$.'
       },
       {
         id: 'y10-12h-q13b',
