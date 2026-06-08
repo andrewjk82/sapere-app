@@ -107,6 +107,20 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $AB$ is a diameter, the angle in a semicircle is a right angle, so $\\alpha = 90^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In $\\triangle PAB$, the sum of angles is $180^\\circ$, so $\\beta = 180^\\circ - 90^\\circ - 15^\\circ = 75^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q2b",
@@ -206,6 +220,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $PQ$ is a diameter, the angle in a semicircle is a right angle. Therefore, the angle at $T$ is $90^\\circ$, so $\\theta = 90^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q2c",
@@ -305,6 +327,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $JL$ is a diameter (passing through the centre $O$), the angle in a semicircle is a right angle. Therefore, the angle at $K$ is $90^\\circ$, so $\\theta = 90^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q2d",
@@ -437,6 +467,37 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation: "Since $RS$ is a diameter, $\\angle RTS = 90^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In $\\triangle OST$, $OS = OT$ (radii), so it is isosceles. Thus $\\gamma = 70^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In right $\\triangle RTS$, $\\beta = 90^\\circ - 70^\\circ = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle OST$, $\\alpha = 180^\\circ - 2(70^\\circ) = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Angles on a straight line: $\\theta = 180^\\circ - \\alpha = 140^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q2e",
@@ -551,6 +612,26 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $XY$ is a diameter, $\\alpha = \\angle XZY = 90^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle OYZ$, $\\angle OYZ = \\angle OZY = (180^\\circ - 70^\\circ)/2 = 55^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In $\\triangle XYZ$, $\\beta = 180^\\circ - 90^\\circ - 55^\\circ = 35^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q2f",
@@ -655,6 +736,20 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $AOB$ is a straight line, $\\angle AOC = 180^\\circ - 160^\\circ = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle AOC$, $\\theta = (180^\\circ - 20^\\circ)/2 = 80^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3a",
@@ -759,6 +854,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the centre is twice the angle at the circumference subtended by the same arc. $\\alpha = 55^\\circ / 2 = 27.5^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3b",
@@ -863,6 +966,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the centre is twice the angle at the circumference subtended by the same arc. $\\gamma = 88^\\circ / 2 = 44^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3c",
@@ -967,6 +1078,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The reflex angle at the centre is twice the angle at the circumference. $\\alpha = 2 \\times 95^\\circ = 190^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3d",
@@ -1071,6 +1190,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the circumference is half the reflex angle at the centre. $\\gamma = 200^\\circ / 2 = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3e",
@@ -1175,6 +1302,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the circumference is half the reflex angle at the centre. $\\theta = 258^\\circ / 2 = 129^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3f",
@@ -1279,6 +1414,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the circumference is half the angle at the centre. $\\alpha = 80^\\circ / 2 = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3g",
@@ -1383,6 +1526,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the circumference is half the angle at the centre subtended by the same arc. $\\beta = 60^\\circ / 2 = 30^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3h",
@@ -1487,6 +1638,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the centre is twice the angle at the circumference subtended by the same arc. $\\gamma = 2 \\times 50^\\circ = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q3i",
@@ -1591,6 +1750,14 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the centre is twice the angle at the circumference. $\\theta = 2 \\times 12^\\circ = 24^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4a",
@@ -1705,6 +1872,20 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The reflex angle is $240^\\circ$. The obtuse angle at the centre is $\\alpha = 360^\\circ - 240^\\circ = 120^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\beta$ is the angle at the circumference subtended by the minor arc, so $\\beta = 120^\\circ / 2 = 60^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4b",
@@ -1809,6 +1990,20 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The obtuse angle at the centre is $360^\\circ - 300^\\circ = 60^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle at the circumference is half the angle at the centre subtended by the same minor arc, so $\\theta = 60^\\circ / 2 = 30^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4c",
@@ -1913,6 +2108,19 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the centre is twice the angle at the circumference subtended by the same arc.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation: "$\\theta = 2 \\times 70^\\circ = 140^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4d",
@@ -2041,6 +2249,20 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the circumference is half the angle at the centre: $\\alpha = 80^\\circ / 2 = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Angles subtended by the same arc are equal, so $\\beta = \\alpha = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4e",
@@ -2169,6 +2391,20 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Angles subtended by the same arc are equal, so $\\alpha = \\angle PSR = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle at the centre is twice the angle at the circumference, so $\\theta = 2 \\times 20^\\circ = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4f",
@@ -2306,6 +2542,38 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "In isosceles $\\triangle POQ$, $\\angle OPQ = (180^\\circ - 120^\\circ)/2 = 30^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\angle PRQ = 120^\\circ / 2 = 60^\\circ$. We are given $\\angle ORQ = 40^\\circ$, so $\\angle ORP = 60^\\circ - 40^\\circ = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle OQR$, $\\angle OQR = 40^\\circ$, so $\\alpha = \\angle ROQ = 180^\\circ - 80^\\circ = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle OPR$, $\\beta = \\angle OPR = \\angle ORP = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\gamma = \\angle RPQ = \\angle OPQ + \\angle OPR = 30^\\circ + 20^\\circ = 50^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4g",
@@ -2445,6 +2713,26 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The reflex angle at the centre is $\\beta = 360^\\circ - 160^\\circ = 200^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\gamma$ subtends the minor arc $AB$, so $\\gamma = 160^\\circ / 2 = 80^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\alpha$ subtends the major arc $AB$, so $\\alpha = \\beta / 2 = 200^\\circ / 2 = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4h",
@@ -2578,6 +2866,38 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $AC$ and $BD$ pass through $O$, they are diameters. So $ABCD$ is a rectangle.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\angle ADC = 90^\\circ$. In $\\triangle AOD$, $OA=OD$, so $\\angle ADO = 30^\\circ$, $\\angle AOD = 120^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\gamma$ and $\\angle AOD$ are vertically opposite, so $\\gamma = 120^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\angle DAB = 90^\\circ$. $\\alpha = 90^\\circ - 30^\\circ = 60^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In right $\\triangle DAB$, $\\beta = 90^\\circ - 30^\\circ = 60^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q4i",
@@ -2698,6 +3018,25 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $JL$ and $KM$ are perpendicular diameters, $\\triangle JOK$ is a right isosceles triangle ($OJ = OK$).",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\alpha = \\angle OJK = (180^\\circ - 90^\\circ) / 2 = 45^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation: "Similarly, $\\beta = \\angle OKL = 45^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q5a",
@@ -2725,6 +3064,32 @@ export const Y10_CH13A_QUESTIONS = [
           "board.suspendUpdate();\nvar O = board.create('point', [0,0], {name: 'O', size: 2, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nvar circle = board.create('circle', [O, 5], {strokeColor: '#3b82f6', highlight: false, strokeWidth: 2});\nvar A = board.create('point', [-5,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [5,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar F = board.create('point', [5*Math.cos(200*Math.PI/180), 5*Math.sin(200*Math.PI/180)], {name: 'F', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-12, -12]}});\nvar G = board.create('point', [5*Math.cos(340*Math.PI/180), 5*Math.sin(340*Math.PI/180)], {name: 'G', size: 2, color: '#64748b', label: {autoPosition: false, offset: [12, -12]}});\nboard.create('segment', [A,B], {strokeColor: 'black', lastArrow: true});\nboard.create('segment', [F,G], {strokeColor: 'black', lastArrow: true});\nboard.create('segment', [A,G], {strokeColor: 'black'});\nboard.create('segment', [F,B], {strokeColor: 'black'});\nvar M = board.create('intersection', [board.create('line',[A,G],{visible:false}), board.create('line',[F,B],{visible:false}), 0], {name: '', visible: false});\nboard.create('angle', [A,B,F], {radius: 1.5, name: '10°', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('angle', [A,F,G], {radius: 1, name: 'α', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('angle', [F,M,G], {radius: 1, name: 'β', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();",
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Since $AB \\parallel FG$, alternate interior angles are equal: $\\angle BFG = \\angle ABF = 10^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle in a semicircle is a right angle, so $\\angle AFB = 90^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Thus, $\\alpha = \\angle AFG = \\angle AFB + \\angle BFG = 90^\\circ + 10^\\circ = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle $\\beta$ is the angle between chords $AG$ and $FB$. Angles subtended by arcs $AB$ ($180^\\circ$) and $FG$ ($140^\\circ$). The acute angle $\\beta = \\frac{1}{2}(180^\\circ - 140^\\circ) = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q5b",
@@ -2851,6 +3216,26 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "In $\\triangle OAP$, $OA = OP$ (radii) and $OA = AP$ (given). Thus $\\triangle OAP$ is equilateral, so $\\alpha = \\angle AOP = 60^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Since $AOB$ is a straight line (diameter), $\\angle POB = 180^\\circ - 60^\\circ = 120^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle OPB$ ($OB = OP$ radii), $\\beta = \\angle OBP = (180^\\circ - 120^\\circ) / 2 = 30^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q5c",
@@ -2981,6 +3366,32 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "In isosceles $\\triangle ORP$ (radii $OR = OP$), $\\angle ORP = \\angle OPR = 20^\\circ$. So $\\gamma = \\angle POR = 180^\\circ - 40^\\circ = 140^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Since $PQ \\parallel OR$, alternate interior angles give $\\angle QPR = \\angle ORP = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Thus $\\alpha = \\angle OPQ = \\angle OPR + \\angle QPR = 20^\\circ + 20^\\circ = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle $\\beta = \\angle PQR$ subtends the major arc $PR$ ($360^\\circ - 140^\\circ = 220^\\circ$), so $\\beta = 220^\\circ / 2 = 110^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q5d",
@@ -3118,6 +3529,32 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The angle at the circumference $\\angle BAC = 50^\\circ$ subtends arc $BC$, so $\\angle BOC = 2 \\times 50^\\circ = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "We are given $\\angle AOB = 140^\\circ$, so $\\alpha = \\angle AOC = 360^\\circ - 140^\\circ - 100^\\circ = 120^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle $\\beta = \\angle ABC$ subtends arc $AC$ (central angle $120^\\circ$), so $\\beta = 120^\\circ / 2 = 60^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "The angle $\\gamma = \\angle ACB$ subtends arc $AB$ (central angle $140^\\circ$), so $\\gamma = 140^\\circ / 2 = 70^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q5e",
@@ -3254,6 +3691,44 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "Let $OQ$ and $PR$ be parallel. $\\angle POQ = 160^\\circ$. By alternate interior angles, $\\angle ORP = \\angle ROQ = \\gamma$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "In isosceles $\\triangle OPR$, $\\angle ORP = \\angle OPR = \\gamma$. In $\\triangle OQR$, $OQ = OR$, so $\\angle OQR = \\angle ORQ = \\beta$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "From the parallel lines, $\\angle OQP + \\angle POQ = 180^\\circ$, etc. But more simply, if we set angles: $Q$ at $0^\\circ$, $P$ at $160^\\circ$, $PR$ horizontal $\\implies R$ is at $20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Then $\\alpha = \\angle POR = 160^\\circ - 20^\\circ = 140^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\gamma = \\angle ORP = (180^\\circ - 140^\\circ)/2 = 20^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\beta = \\angle OQR = (180^\\circ - 20^\\circ)/2 = 80^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q5f",
@@ -3403,6 +3878,38 @@ export const Y10_CH13A_QUESTIONS = [
         ],
       },
     },
+    solutionSteps: [
+      {
+        explanation:
+          "The reflex $\\angle AOC = 200^\\circ$, so the interior $\\angle AOC = 360^\\circ - 200^\\circ = 160^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "Since $AB = BC$, the arcs are equal, and $\\angle AOB = \\angle BOC = (360^\\circ - 200^\\circ) / 2 = 100^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\alpha = \\angle OAB$ in isosceles $\\triangle OAB$, so $\\alpha = (180^\\circ - 100^\\circ)/2 = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\beta = \\angle OBC$ in isosceles $\\triangle OBC$, so $\\beta = (180^\\circ - 100^\\circ)/2 = 40^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+      {
+        explanation:
+          "$\\gamma = \\angle OCA$ in isosceles $\\triangle OAC$, so $\\gamma = (180^\\circ - 160^\\circ)/2 = 10^\\circ$.",
+        workingOut: "",
+        graphData: null,
+      },
+    ],
   },
   {
     id: "y10-13a-q6a",
