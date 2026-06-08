@@ -1654,6 +1654,21 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const canConvertJsxGraph = Boolean(currentGraphData?.jsxGraph?.script);
   const graphDataInvalid = Boolean(formData.graphData?.trim() && !currentGraphData);
 
+  const handleJsxScriptChange = (newScript) => {
+    if (!currentGraphData || !currentGraphData.jsxGraph) return;
+    const nextGraphData = {
+      ...currentGraphData,
+      jsxGraph: {
+        ...currentGraphData.jsxGraph,
+        script: newScript
+      }
+    };
+    setFormData(prev => ({
+      ...prev,
+      graphData: JSON.stringify(nextGraphData, null, 2)
+    }));
+  };
+
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15,23,42,0.6)', backdropFilter: 'blur(4px)' }} />
@@ -1885,6 +1900,22 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                     placeholder='{ "equations": ["y = 2x + 1"], "config": { "xRange": [-5, 5], "yRange": [-5, 5] } }'
                   />
                 </details>
+
+                {canConvertJsxGraph && (
+                  <details style={{ marginTop: '10px' }} open>
+                    <summary style={{ cursor: 'pointer', color: '#6366f1', fontWeight: 800, fontSize: '0.78rem' }}>
+                      Edit JSXGraph Script (Live)
+                    </summary>
+                    <textarea
+                      rows={10}
+                      value={currentGraphData?.jsxGraph?.script || ''}
+                      onChange={e => handleJsxScriptChange(e.target.value)}
+                      style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: '2px solid #c7d2fe', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }}
+                      placeholder="board.create('point', [0,0]);"
+                      spellCheck={false}
+                    />
+                  </details>
+                )}
               </div>
 
               {hasEditableGeometry && (
