@@ -172,6 +172,16 @@ const extractRhs = (s) => {
   return null;
 };
 
+/**
+ * Check if a student answer matches any of the accepted answers.
+ * acceptedAnswers can be an array of strings, or a single string.
+ * If an array is provided, the student answer is checked against each one.
+ */
+export const answersMatchAny = (studentAnswer, acceptedAnswers) => {
+  if (!Array.isArray(acceptedAnswers) || acceptedAnswers.length === 0) return false;
+  return acceptedAnswers.some((a) => answersMatch(studentAnswer, String(a ?? '')));
+};
+
 export const answersMatch = (studentAnswer, expectedAnswer) => {
   // Empty student answer is never correct.
   if (studentAnswer === null || studentAnswer === undefined || String(studentAnswer ?? '').trim() === '') return false;
@@ -256,5 +266,10 @@ export const gradeQuestion = (question, userAnswer) => {
   }
   // short_answer + anything else stringy
   if (isEmptyValue(userAnswer)) return { correct: false };
+
+  // If the question has multiple accepted answers, check against all of them
+  if (Array.isArray(question.acceptedAnswers) && question.acceptedAnswers.length > 0) {
+    return { correct: answersMatchAny(userAnswer, question.acceptedAnswers) };
+  }
   return { correct: answersMatch(userAnswer, question.answer) };
 };

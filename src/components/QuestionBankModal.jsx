@@ -1315,7 +1315,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     subQuestions: [],
     requiresManualGrading: false,
     blanks: [], // [{ label, answer }] for type === 'fill_blank'
-    graphData: ''
+    graphData: '',
+    acceptedAnswers: [], // additional accepted answer strings
   });
 
   const loadQuestionPage = React.useCallback(async ({ reset = false, cursor = null, currentQuestions = [] } = {}) => {
@@ -1423,7 +1424,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         blanks: Array.isArray(q.blanks)
           ? q.blanks.map((b) => ({ label: b.label || '', answer: b.answer || '' }))
           : [],
-        graphData: initialGraphData ? stringifyGraphData(initialGraphData) : ''
+        graphData: initialGraphData ? stringifyGraphData(initialGraphData) : '',
+        acceptedAnswers: Array.isArray(q.acceptedAnswers) ? q.acceptedAnswers : [],
       });
       setEditingQuestion(q.id);
     } else {
@@ -1555,6 +1557,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         })),
         requiresManualGrading: formData.requiresManualGrading || false,
         graphData,
+        acceptedAnswers: (formData.acceptedAnswers || []).filter(Boolean),
         isActive: true,
         updatedAt: serverTimestamp()
       });
@@ -2121,7 +2124,39 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
                     {formData.requiresManualGrading ? 'Model Answer (Optional — shown to students)' : 'Correct Answer (Plain Text)'}
                   </label>
-                  <input type="text" value={formData.answer} onChange={e => setFormData({...formData, answer: e.target.value})} style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', background: '#f0fdf4', color: '#166534' }} placeholder={formData.requiresManualGrading ? 'e.g. AB ∥ CD (alternate angles equal)' : 'e.g. 25'} />
+                  <input
+                    type="text"
+                    value={formData.answer}
+                    onChange={e => setFormData({...formData, answer: e.target.value})}
+                    style={{ width: '100%', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 600, fontSize: '0.95rem', background: '#f0fdf4', color: '#166534' }}
+                    placeholder={formData.requiresManualGrading ? 'e.g. AB ∥ CD (alternate angles equal)' : 'e.g. 90'}
+                  />
+                  {!formData.requiresManualGrading && (
+                    <div style={{ marginTop: '12px' }}>
+                      <label style={{ display: 'block', marginBottom: '6px', fontSize: '0.75rem', fontWeight: 800, color: '#64748b', textTransform: 'uppercase' }}>
+                        Also Accept (Optional) — other valid forms, one per line
+                      </label>
+                      <textarea
+                        rows={3}
+                        value={(formData.acceptedAnswers || []).join('\n')}
+                        onChange={e => {
+                          const lines = e.target.value.split('\n').map(s => s.trim()).filter(Boolean);
+                          setFormData({ ...formData, acceptedAnswers: lines });
+                        }}
+                        style={{ width: '100%', padding: '14px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.9rem', resize: 'vertical', background: '#f8fafc', color: '#166534', fontFamily: 'monospace' }}
+                        placeholder={'90°\n\\theta=90\n\\theta=90°'}
+                      />
+                      {(formData.acceptedAnswers || []).length > 0 && (
+                        <div style={{ marginTop: '6px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                          {[formData.answer, ...(formData.acceptedAnswers || [])].filter(Boolean).map((a, i) => (
+                            <span key={i} style={{ padding: '3px 10px', borderRadius: '20px', background: '#dcfce7', color: '#166534', fontSize: '0.8rem', fontWeight: 700, fontFamily: 'monospace' }}>
+                              {a}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               ) : null}
 

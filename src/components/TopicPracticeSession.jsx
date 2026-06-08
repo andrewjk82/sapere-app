@@ -107,6 +107,10 @@ const gradeQuestion = (q, userAnswer) => {
     const blanks = q.blanks || [];
     return blanks.every((b, i) => answersMatch(String(userAnswer?.[i] ?? ''), String(b.answer ?? '')));
   }
+  // Multiple accepted answers
+  if (Array.isArray(q.acceptedAnswers) && q.acceptedAnswers.length > 0) {
+    return q.acceptedAnswers.some((a) => answersMatch(String(userAnswer ?? ''), String(a ?? '')));
+  }
   return answersMatch(String(userAnswer ?? ''), String(q.answer));
 };
 
