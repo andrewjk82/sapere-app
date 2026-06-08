@@ -108,7 +108,10 @@ Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
 **Function Graphs (graphData.jsxGraph):**
 - **Sizing:** Default width/height should be set to `width: 400, height: 300` for clear layout.
 - **Axes & Arrows:** Axes should be created with double-ended arrows pointing in both positive and negative directions (e.g. `firstArrow: true, lastArrow: true` will be automatically formatted).
-- **Labels:** Always label the x-axis, y-axis (using text objects near the tips), and the origin with `'O'`. Point labels with LaTeX (e.g. `$(0, \sqrt{5})$`) are dynamically rendered as premium speech bubbles (tooltips) pointing directly to the dot. The app automatically aligns them along the 4 cardinal directions (top, bottom, left, right) depending on boundary proximity and axes to prevent covering the point markers and overlapping with tick marks. Avoid hardcoding custom offsets (like `[10, 10]`) so the automatic speech bubble alignment works perfectly.
+- **Labels:** Always label the x-axis, y-axis (using text objects near the tips), and the origin with `'O'`. Point labels with LaTeX (e.g. `$(0, \sqrt{5})$`) are dynamically rendered as premium speech bubbles. When creating points and angles, always specify a default label offset option so they can be easily adjusted by the admin:
+  - **All angle objects:** add `label: {offset: [0, 0]}` by default.
+  - **All named point objects:** add `label: {offset: [0, 10]}` by default.
+  - This allows the administrator to fine-tune the positions [dx, dy] directly in the admin code editor.
 - **Curve Bounds:** Draw function curves from the very left edge of the bounding box to the very right edge (avoid leaving gaps or letting them float in mid-air).
 - **Points:** Plot and label all crucial features mentioned in the question (such as stationary points $P, Q$, vertices, intercepts) on the graph.
 - **Aspect Ratio:** If the graph is a function sketch (e.g. cubic, exponential) with unbalanced x and y domains, set `keepaspectratio: false` in `boardOptions` so it is not vertically squished.
