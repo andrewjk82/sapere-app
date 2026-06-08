@@ -37,6 +37,7 @@ const fmtDate = (s) => {
 
 const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) => {
   const [view, setView] = useState('papers'); // 'papers' | 'curriculum'
+  const [paperSeed, setPaperSeed] = useState(() => Date.now());
   const [showRankModal, setShowRankModal] = useState(false);
   const [rankSearch, setRankSearch] = useState('');
   const highlightRef = useRef(null);
@@ -581,8 +582,7 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
           <button
             onClick={() => {
-              const seed = Date.now();
-              window.open(`/api/generate-past-paper?seed=${seed}&mode=paper`, '_blank');
+              window.open(`/api/generate-past-paper?seed=${paperSeed}&mode=paper`, '_blank');
             }}
             style={{
               display: 'flex', alignItems: 'center', gap: '8px',
@@ -601,8 +601,7 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
           </button>
           <button
             onClick={() => {
-              const seed = Date.now();
-              window.open(`/api/generate-past-paper?seed=${seed}&mode=answers`, '_blank');
+              window.open(`/api/generate-past-paper?seed=${paperSeed}&mode=answers`, '_blank');
             }}
             style={{
               display: 'flex', alignItems: 'center', gap: '8px',
@@ -617,6 +616,22 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
           >
             <BookOpen size={15} />
             Answer Booklet
+          </button>
+          <button
+            onClick={() => setPaperSeed(Date.now())}
+            style={{
+              display: 'flex', alignItems: 'center', gap: '6px',
+              padding: '10px 16px', borderRadius: '999px',
+              background: 'transparent', color: '#9ca3af',
+              border: '1.5px solid #d1d5db', cursor: 'pointer',
+              fontFamily: '"Outfit", sans-serif', fontWeight: 700, fontSize: '0.82rem',
+              transition: 'color 0.15s, border-color 0.15s',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.color = '#4f46e5'; e.currentTarget.style.borderColor = '#4f46e5'; }}
+            onMouseLeave={e => { e.currentTarget.style.color = '#9ca3af'; e.currentTarget.style.borderColor = '#d1d5db'; }}
+            title="Generate a new random paper"
+          >
+            ↻ New Paper
           </button>
         </div>
       </div>
