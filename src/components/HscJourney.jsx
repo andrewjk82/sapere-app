@@ -268,7 +268,7 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
   );
 
   // ── Score trend chart ───────────────────────────────────────────────────
-  const W = 760, H = 300, PX = 46, PY = 34;
+  const W = 760, H = 200, PX = 46, PY = 30;
 
   // Projected HSC mark recalculated at each paper using cumulative average
   const course = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse[0] : (profile?.assignedCourse || 'default');
@@ -298,7 +298,7 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
   const projectedPath = projectedPoints.map((v, i) => `${i === 0 ? 'M' : 'L'} ${xFor(i)} ${yFor(v)}`).join(' ');
 
   const chart = (
-    <div style={{ padding: '24px 26px', borderRadius: '24px', background: 'rgba(255,255,255,0.92)', border: '1px solid rgba(167,139,250,0.18)', boxShadow: '0 22px 50px rgba(91,33,182,0.06)', marginBottom: '22px' }}>
+    <div style={{ height: '100%', padding: '24px 26px', borderRadius: '24px', background: 'rgba(255,255,255,0.92)', border: '1px solid rgba(167,139,250,0.18)', boxShadow: '0 22px 50px rgba(91,33,182,0.06)' }}>
       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' }}>
         <div>
           <h3 style={{ fontFamily: '"Outfit", sans-serif', fontSize: '1.2rem', color: '#1e1b4b', margin: 0 }}>Score trend</h3>
@@ -382,7 +382,7 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
   const studentSchoolNorm = (profile?.school || '').toLowerCase().trim();
 
   const moderationCard = (
-    <div style={{ padding: '22px 24px', borderRadius: '24px', background: 'rgba(255,255,255,0.92)', border: '1px solid rgba(167,139,250,0.18)', boxShadow: '0 8px 24px rgba(91,33,182,0.05)', marginBottom: '22px' }}>
+    <div style={{ height: '100%', padding: '22px 24px', borderRadius: '24px', background: 'rgba(255,255,255,0.92)', border: '1px solid rgba(167,139,250,0.18)', boxShadow: '0 8px 24px rgba(91,33,182,0.05)' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <h3 style={{ fontFamily: '"Outfit", sans-serif', fontSize: '1.15rem', color: '#1e1b4b', margin: 0 }}>
@@ -551,8 +551,10 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
     <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
       {banner}
       {kpiStrip}
-      {chart}
-      {moderationCard}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '22px', alignItems: 'stretch', marginBottom: '22px' }}>
+        <div style={{ flex: '1 1 440px', minWidth: 0 }}>{chart}</div>
+        <div style={{ flex: '1 1 320px', minWidth: 0 }}>{moderationCard}</div>
+      </div>
       {list}
 
       {/* ── School Rankings Modal ─────────────────────────────────────── */}
