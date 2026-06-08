@@ -196,6 +196,7 @@ import { Y10_CH12C_APP_QUESTIONS } from '../constants/seedYear10Ch12C_AppQuestio
 import { Y10_CH12D_QUESTIONS } from '../constants/seedYear10Ch12DQuestions.js';
 import { Y10_CH12E_QUESTIONS } from '../constants/seedYear10Ch12EQuestions.js';
 import { Y10_CH12F_QUESTIONS } from '../constants/seedYear10Ch12FQuestions.js';
+import { Y10_CH12G_QUESTIONS } from '../constants/seedYear10Ch12GQuestions.js';
 import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -450,6 +451,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12d', topicCode: '12D', topicTitle: 'The Sine Rule', year: 'Year 10', seed: Y10_CH12D_QUESTIONS, label: 'Y10 Ch12 · 12D The Sine Rule' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12e', topicCode: '12E', topicTitle: 'Trigonometric ratios of obtuse angles', year: 'Year 10', seed: Y10_CH12E_QUESTIONS, label: 'Y10 Ch12 · 12E Trigonometric ratios of obtuse angles' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12f', topicCode: '12F', topicTitle: 'The Cosine Rule', year: 'Year 10', seed: Y10_CH12F_QUESTIONS, label: 'Y10 Ch12 · 12F The Cosine Rule' },
+  { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12g', topicCode: '12G', topicTitle: 'Finding angles using the cosine rule', year: 'Year 10', seed: Y10_CH12G_QUESTIONS, label: 'Y10 Ch12 · 12G Finding angles using the cosine rule' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
