@@ -265,8 +265,14 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   };
 
   // ── Report a problem with the current question ─────────────────────────────
-  const openReport = () => {
-    reportTargetRef.current = q;
+  const openReport = async () => {
+    let sketchDataUrl = null;
+    try { sketchDataUrl = await sketchRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
+    reportTargetRef.current = {
+      ...q,
+      _studentAnswer: userAnswer,
+      _sketchDataUrl: sketchDataUrl,
+    };
     setReportMessage('');
     setReportOpen(true);
   };
@@ -292,6 +298,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
           topicTitle: topic?.title || '',
           isManual: !!target.isManual,
         },
+        studentAnswer: target._studentAnswer !== undefined && target._studentAnswer !== null
+          ? (typeof target._studentAnswer === 'string' ? target._studentAnswer : JSON.stringify(target._studentAnswer))
+          : null,
+        sketchDataUrl: target._sketchDataUrl || null,
+        hasSketch: Boolean(target._sketchDataUrl),
         message: reportMessage.trim(),
         status: 'open',
         createdAt: serverTimestamp(),

@@ -284,7 +284,11 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         <button
-          onClick={() => onReport?.(q)}
+          onClick={async () => {
+            let sketchDataUrl = null;
+            try { sketchDataUrl = await canvasRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
+            onReport?.(q, draft, sketchDataUrl);
+          }}
           title="Report a problem with this question"
           style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
         >
@@ -493,12 +497,76 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         placeholder="Type your answer…"
         autoFocus
       />
-      {showFeedback && !lastRes?.correct && (
-        <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
-          Correct: <MathView content={String(q.answer)} style={{ display: 'inline' }} />
+    </div>
+  );
+
+  const feedbackPanel = showFeedback && (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.25 }}
+      style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
+    >
+      {/* Result banner */}
+      {!lastRes?.pending && (
+        <div style={{
+          display: 'flex', alignItems: 'center', gap: '10px',
+          padding: '14px 18px', borderRadius: '16px',
+          background: lastRes?.correct ? '#f0fdf4' : '#fef2f2',
+          border: `1.5px solid ${lastRes?.correct ? '#bbf7d0' : '#fecaca'}`,
+        }}>
+          {lastRes?.correct
+            ? <CheckCircle2 size={22} color="#16a34a" />
+            : <XCircle size={22} color="#dc2626" />}
+          <div>
+            <div style={{ fontWeight: 900, fontSize: '1rem', color: lastRes?.correct ? '#15803d' : '#dc2626' }}>
+              {lastRes?.correct ? 'Correct!' : 'Incorrect'}
+            </div>
+            {!lastRes?.correct && q.answer != null && (
+              <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#475569', marginTop: '2px' }}>
+                Correct answer: <MathView content={
+                  q.type === 'multiple_choice'
+                    ? (typeof q.options?.[Number(q.answer)] === 'string' ? q.options[Number(q.answer)] : q.options?.[Number(q.answer)]?.text ?? String(q.answer))
+                    : String(q.answer)
+                } style={{ display: 'inline', color: '#15803d', fontWeight: 800 }} />
+              </div>
+            )}
+          </div>
         </div>
       )}
-    </div>
+
+      {/* Solution */}
+      {(q.solution || (q.solutionSteps || []).length > 0) && (
+        <div style={{ padding: '16px 18px', borderRadius: '16px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+            <Lightbulb size={16} color="#7c3aed" />
+            <span style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Solution</span>
+          </div>
+          {q.solution && (
+            <MathView content={q.solution} style={{ fontSize: '0.92rem', color: '#3730a3', fontWeight: 600, lineHeight: 1.65 }} />
+          )}
+          {(q.solutionSteps || []).length > 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: q.solution ? '12px' : 0 }}>
+              {q.solutionSteps.map((step, si) => (
+                <div key={si} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                  <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.7rem', flexShrink: 0 }}>
+                    {si + 1}
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    {step.explanation && <MathView content={step.explanation} style={{ fontSize: '0.88rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6 }} />}
+                    {step.workingOut && (
+                      <div style={{ marginTop: '6px', padding: '8px 12px', borderRadius: '10px', background: '#ede9fe', border: '1px solid #c4b5fd' }}>
+                        <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#4f46e5' }} />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </motion.div>
   );
 
   const actionButton = !showFeedback ? (
@@ -531,6 +599,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
           {progressBar}
           {questionCard}
           {answerArea}
+          {feedbackPanel}
           <div style={{ flex: 1 }} />
           {actionButton}
         </div>
@@ -567,6 +636,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
       {progressBar}
       {questionCard}
       {answerArea}
+      {feedbackPanel}
       {actionButton}
       <AnimatePresence>
         {showCanvas && (
@@ -1171,6 +1241,11 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
           topicId: target.topicId || '',
           topicTitle: target.topicTitle || '',
         },
+        studentAnswer: target._studentAnswer !== undefined && target._studentAnswer !== null
+          ? (typeof target._studentAnswer === 'string' ? target._studentAnswer : JSON.stringify(target._studentAnswer))
+          : null,
+        sketchDataUrl: target._sketchDataUrl || null,
+        hasSketch: Boolean(target._sketchDataUrl),
         message: reportMessage.trim(),
         status: 'open',
         createdAt: serverTimestamp(),
@@ -1255,7 +1330,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         )}
 
         {stage === 'quiz' && questions.length > 0 && (
-          <QuizView questions={questions} onFinish={handleFinishRound} user={user} onReport={(q) => { reportTargetRef.current = q; setReportTarget(q); }} />
+          <QuizView questions={questions} onFinish={handleFinishRound} user={user} onReport={(q, studentAnswer, sketchDataUrl) => { reportTargetRef.current = { ...q, _studentAnswer: studentAnswer, _sketchDataUrl: sketchDataUrl }; setReportTarget(q); }} />
         )}
 
         {stage === 'secretNote' && uid && (

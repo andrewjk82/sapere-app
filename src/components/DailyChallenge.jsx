@@ -665,8 +665,21 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         ? questions.findIndex(q => String(q?.id || '') === String(reportedQuestion?.id || ''))
         : currentIdx;
       const answerIndex = reportedIndex >= 0 ? reportedIndex : currentIdx;
-      const studentAnswer = userAnswers[answerIndex] ?? selectedOption ?? '';
       const answerResult = answerResults[answerIndex] || null;
+
+      // History-mode report carries pre-saved answer + sketch from the ref;
+      // quiz-mode falls back to live state + canvas capture.
+      const hasPreSaved = currentQ?._studentAnswer !== undefined || currentQ?._sketchDataUrl !== undefined;
+      const studentAnswer = hasPreSaved
+        ? (currentQ._studentAnswer ?? '')
+        : (userAnswers[answerIndex] ?? selectedOption ?? '');
+
+      let sketchDataUrl = currentQ?._sketchDataUrl || null;
+      if (!hasPreSaved) {
+        // Capture canvas sketch at the moment of report (quiz mode only)
+        try { sketchDataUrl = await canvasRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
+      }
+
       await addDoc(collection(db, 'reports'), {
         studentId: user.uid,
         studentName: user.displayName || user.email || 'Student',
@@ -674,6 +687,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         questionIndex: answerIndex,
         studentAnswer,
         answerResult,
+        sketchDataUrl,
+        hasSketch: Boolean(sketchDataUrl),
         questionData: {
           id: currentQ?.id || '',
           question: currentQ?.question || currentQ?.text || '',
@@ -1452,11 +1467,18 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   return (
                     <div key={idx} style={{ padding: '20px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', position: 'relative' }}>
                       {qData.isManual && (
-                        <button 
+                        <button
                           onClick={(e) => {
                             e.stopPropagation();
+                            const savedSketch = (lazyWO ? { ...result, ...lazyWO } : result)?.workingOut
+                              || (lazyWO ? { ...result, ...lazyWO } : result)?.answerImage
+                              || null;
                             setReportedQuestion(qData);
-                            reportedQuestionRef.current = qData;
+                            reportedQuestionRef.current = {
+                              ...qData,
+                              _studentAnswer: userAnswer,
+                              _sketchDataUrl: savedSketch,
+                            };
                             setIsReporting(true);
                           }}
                           style={{ position: 'absolute', top: '16px', right: '16px', border: 'none', background: '#fff', padding: '6px', borderRadius: '8px', cursor: 'pointer', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.7rem', fontWeight: 800, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}

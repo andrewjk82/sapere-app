@@ -64,13 +64,18 @@ const ChallengeReviewView = ({
     setIsSubmittingReport(true);
     try {
       const reportQ = questions[reportingIdx] || {};
+      const result = answerResults[reportingIdx] || null;
+      // Pull the saved sketch from the stored result (captured when student submitted)
+      const savedSketch = result?.workingOut || result?.answerImage || null;
       await addDoc(collection(db, 'reports'), {
         studentId: user?.uid || '',
         studentName: user?.displayName || user?.email || 'Student',
         questionId: reportQ.id || '',
         questionIndex: reportingIdx,
         studentAnswer: String(userAnswers[reportingIdx] ?? ''),
-        answerResult: answerResults[reportingIdx] || null,
+        answerResult: result,
+        sketchDataUrl: savedSketch,
+        hasSketch: Boolean(savedSketch),
         source: 'review', // flagged during review, not during quiz
         questionData: {
           id: reportQ.id || '',

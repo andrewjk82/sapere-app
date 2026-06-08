@@ -536,7 +536,9 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
         source: 'secret_note',
         noteKind: kind,
         questionId: question.id || '',
-        studentAnswer: '',
+        studentAnswer: typeof answer === 'string' ? answer : (answer !== null && answer !== undefined ? JSON.stringify(answer) : ''),
+        sketchDataUrl: canvasImage || null,
+        hasSketch: Boolean(canvasImage),
         questionData: {
           id: question.id || '',
           question: question.question || '',
@@ -575,13 +577,17 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
     if (!reportQ || reportSending) return;
     setReportSending(true);
     try {
+      let reportSketchDataUrl = null;
+      try { reportSketchDataUrl = await canvasRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
       await addDoc(collection(db, 'reports'), {
         studentId: uid,
         studentName: studentName || user?.displayName || user?.email || 'Student',
         source: 'secret_note',
         noteKind: kind,
         questionId: reportQ.id || '',
-        studentAnswer: '',
+        studentAnswer: typeof answer === 'string' ? answer : (answer !== null && answer !== undefined ? JSON.stringify(answer) : ''),
+        sketchDataUrl: reportSketchDataUrl,
+        hasSketch: Boolean(reportSketchDataUrl),
         questionData: {
           id: reportQ.id || '',
           question: reportQ.question || '',
