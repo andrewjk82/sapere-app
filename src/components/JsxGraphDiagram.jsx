@@ -373,7 +373,14 @@ const JsxGraphDiagram = ({ data, style }) => {
           return originalCreate(elementType, parents, attributes);
         }
 
-        const label = attributes.name || attributes.label;
+        // Extract label text and label attributes (label can be a string or an object)
+        const rawLabelAttr = attributes.label;
+        const labelAttrs = (typeof rawLabelAttr === 'object' && rawLabelAttr !== null) ? rawLabelAttr : {};
+        const labelTextFromObj =
+          typeof rawLabelAttr === 'string' ? rawLabelAttr :
+          (labelAttrs.text || labelAttrs.content || labelAttrs.name || '');
+        const label = attributes.name || labelTextFromObj;
+
         if (!label || !Array.isArray(parents) || parents.length < 3) {
           return originalCreate('text', [0, 0, ''], { visible: false });
         }
@@ -384,7 +391,7 @@ const JsxGraphDiagram = ({ data, style }) => {
             anchorX: 'middle',
             anchorY: 'middle',
             fixed: true,
-            strokeColor: attributes.labelColor || '#0369a1',
+            strokeColor: labelAttrs.strokeColor || attributes.labelColor || '#0369a1',
           });
         }
 
@@ -398,16 +405,30 @@ const JsxGraphDiagram = ({ data, style }) => {
         const len = Math.hypot(direction[0], direction[1]) || 1;
         const radius = Number(attributes.radius) || 1.2;
 
+        // Base position: along the bisector at 75% of radius
+        let textX = vx + (direction[0] / len) * radius * 0.75;
+        let textY = vy + (direction[1] / len) * radius * 0.75;
+
+        // Apply pixel offset from label.offset — convert px → board coordinates
+        // JSXGraph y-axis: positive = UP, so negate the pixel y offset
+        const offsetPx = labelAttrs.offset;
+        if (Array.isArray(offsetPx) && offsetPx.length === 2) {
+          const boardWidth  = boardRef.current?.clientWidth  || 300;
+          const boardHeight = boardRef.current?.clientHeight || 300;
+          textX += (offsetPx[0] / boardWidth)  * dx;
+          textY -= (offsetPx[1] / boardHeight) * dy;
+        }
+
         return originalCreate('text', [
-          vx + (direction[0] / len) * radius * 0.75,
-          vy + (direction[1] / len) * radius * 0.75,
+          textX,
+          textY,
           label,
         ], {
-          anchorX: 'middle',
-          anchorY: 'middle',
+          anchorX: labelAttrs.anchorX || 'middle',
+          anchorY: labelAttrs.anchorY || 'middle',
           fixed: true,
-          fontSize: attributes.fontSize || 15,
-          strokeColor: attributes.labelColor || '#0369a1',
+          fontSize: labelAttrs.fontSize || attributes.fontSize || 15,
+          strokeColor: labelAttrs.strokeColor || attributes.labelColor || '#0369a1',
         });
       };
 

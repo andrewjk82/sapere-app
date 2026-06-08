@@ -168,122 +168,94 @@ export const Y8_CH1_QUESTIONS = [
 
 ---
 
-## [7] 그림 (선언형 도형 — 좌표만 채우면 됨)
-
-도형 종류에 따라 아래 세 가지 방식 중 하나를 선택합니다. **스크립트를 짜지 말고 JSON 선언만** 작성합니다.
-
-| 도형 종류 | 사용 방식 |
-|---|---|
-| 삼각형·사각형·평행선·각도 등 **평면 도형** | `graphData.geometry` (2D) |
-| 직육면체·각뿔·원기둥·원뿔·구 등 **입체 도형** | `graphData.geometry` (3D 아이소메트릭) |
-| 포물선·함수 그래프 등 **곡선** | `graphData.jsxGraph` |
-| 그림 없음 | `"graphData": null` |
+## [7] 그림 (선언형 도형)
 
 ### 1. 선언형 다면체 / 다각형 (graphData.geometry)
 
 - **2D 평면 도형:** `points`의 좌표를 2개(`[x, y]`)로 입력하면 자동으로 평면(2D)으로 렌더링됩니다.
 - **3D 입체 도형:** `points`의 좌표를 3개(`[x, y, z]`)로 입력하면 자동으로 3D 아이소메트릭(입체)으로 렌더링됩니다.
 - **원 (Circle):** `circles` 배열에 중심점(`center`)과 지나는 점(`through`) 또는 반지름(`radius`)을 명시하여 원을 그립니다.
-- ※ `shape: 'cylinder'` 등의 단축키는 현재 미지원이므로 곡면은 다면체로 근사하거나 생략합니다.
+- **angles 배열 키값:** `text` 속성 금지, 반드시 `"label"` 속성 사용 (예: `{"at": "A", "label": "32°"}`)
 
-**[작성 예시]**
+---
+
+### 2. 함수 그래프 및 기하 도형 (graphData.jsxGraph)
+
+원·각도·다각형 등 **기하 도형**과 좌표계 문제 모두 `jsxGraph`를 사용합니다.
+
+---
+
+#### 기하 도형: elements 배열 형식 (항상 이 형식 사용)
+
+**`"elements"` 배열을 사용합니다. `"script"` 방식은 함수 그래프에만 사용하세요.**
 
 ```json
 "graphData": {
-  "geometry": {
+  "jsxGraph": {
     "width": 300,
-    "points": {
-      "A": [0, 0, 0],
-      "B": [4, 0, 0],
-      "C": [4, 0, 3],
-      "D": [0, 0, 3]
-    },
-    "circles": [
-      { "center": "O", "through": "B" },
-      { "center": "A", "radius": 2, "dashed": true }
-    ],
-    "segments": [
-      { "from": "A", "to": "B" },
-      { "from": "A", "to": "D", "dashed": true }
-    ],
-    "sideLabels": [
-      { "between": ["A", "B"], "text": "4 cm" }
-    ],
-    "angles": [
-      { "at": "A", "right": true },
-      { "at": "B", "label": "32°" }
+    "height": 300,
+    "boundingbox": [-7, 7, 7, -7],
+    "boardOptions": { "keepaspectratio": true },
+    "elements": [
+      { "type": "circle",  "id": "c1", "center": [0, 0], "radius": 5 },
+      { "type": "point",   "id": "O",  "coords": [0, 0], "name": "O", "color": "red",  "label": { "offset": [8, 0] } },
+      { "type": "point",   "id": "P",  "on": "c1", "angle": 155, "name": "P", "label": { "offset": [-12, 0] } },
+      { "type": "point",   "id": "Q",  "on": "c1", "angle": 35,  "name": "Q", "label": { "offset": [8, 8] } },
+      { "type": "segment", "from": "O", "to": "P" },
+      { "type": "segment", "from": "O", "to": "Q" },
+      { "type": "polygon", "points": ["P", "Q", "O"] },
+      { "type": "angle",   "points": ["Q", "O", "P"], "name": "20", "radius": 1.2, "label": { "offset": [0, 14] } }
     ]
   }
 }
 ```
 
-**[매우 중요: Geometry Angles 키값]**
-- `angles` 배열 안에 각도 문자열을 지정할 때, 절대 `text` 속성을 사용하지 마세요! 렌더러가 인식하지 못해 화면에 표시되지 않습니다. 반드시 **`"label"`** 속성을 사용하세요. (예: `{"at": "A", "label": "32°"}`)
+#### 요소(element) 타입 레퍼런스
 
+| type | 필수 | 선택 |
+|------|------|------|
+| `circle` | `id`, `center`, `radius` | `color`, `strokeWidth`, `fillColor` |
+| `point` | `id`, `coords` 또는 `on`+`angle` | `name`, `color`, `size`, `label` |
+| `segment` | `from`, `to` | `color`, `strokeWidth`, `dash`, `firstArrow`, `lastArrow` |
+| `line` | `through`([id,id]) | `color`, `strokeWidth` |
+| `arrow` | `from`, `to` | `color`, `strokeWidth`, `bidirectional` |
+| `polygon` | `points`([id,...]) | `fillColor`, `fillOpacity`, `color`, `strokeWidth` |
+| `angle` | `points`([from-id, vertex-id, to-id]) | `name`, `radius`, `color`, `label` |
+| `rightangle` | `points`([from-id, vertex-id, to-id]) | `size`(기본 0.4), `color` |
+| `arc` | `center`, `from`, `to` | `color`, `strokeWidth` |
+| `text` | `coords`, `content` | `color`, `fontSize`, `anchorX`, `anchorY` |
+| `tick` | `segment` | `count` |
 
-### 2. 함수 그래프 및 좌표평면 (graphData.jsxGraph)
+**point 배치:** `coords:[x,y]` 또는 `on`(circle id)+`angle`(0-360, 0=오른쪽, 반시계방향+)
 
-x축/y축이 있는 데카르트 좌표계 문제(선형 그래프, 포물선 등)는 반드시 `jsxGraph`를 사용해 정교하게 그립니다.
+**label:** `"label": { "offset": [dx, dy] }` — dx: 오른쪽+, dy: 위+ (픽셀 단위)
 
-**[작성 예시]**
+**named 색상:** `"blue"` `"red"` `"green"` `"orange"` `"purple"` `"slate"` `"black"`
+
+---
+
+#### 함수 그래프: script 방식
 
 ```json
 "graphData": {
   "jsxGraph": {
-    "width": 350,
-    "height": 250,
-    "boundingbox": [-5, 50, 50, -5],
-    "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0],[0,45]], {strokeColor:'black',strokeWidth:1});\nboard.create('arrow', [[0,0],[45,0]], {strokeColor:'black',strokeWidth:1});\nboard.create('text', [45,-2], 't (hours)', {anchorX:'right',anchorY:'top',fontSize:14});\nboard.create('text', [-1,45], 'V (litres)', {anchorX:'right',anchorY:'top',fontSize:14});\nboard.create('segment', [[-1,20],[0,20]], {strokeColor:'black'});\nboard.create('text', [-1,20,'20'], {anchorX:'right',anchorY:'middle'});\nboard.create('segment', [[0,40],[20,20]], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+    "width": 400, "height": 300,
+    "boundingbox": [-2, 12, 10, -2],
+    "boardOptions": { "keepaspectratio": false },
+    "script": "board.suspendUpdate();\nboard.create('arrow', [[0,-1],[0,11]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x/4; }, -1, 9], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
   }
 }
 ```
 
-### jsxGraph 작성 필수 규칙
+### jsxGraph 필수 규칙
 
-1. **차트 크기 및 비율**
-   - 기본 캔버스: `width: 400, height: 300`
-   - 함수 그래프: `boardOptions: { keepaspectratio: false }`
-   - 기하학 문제: `keepaspectratio: true`
-
-2. **곡선 연장 및 좌표축**
-   - 함수 곡선은 boundingbox 기준 가로축 끝까지 꽉 채워 렌더링
-   - 좌표축은 양방향 연장 화살표(`firstArrow: true, lastArrow: true`) 명시
-
-3. **원점, 축 및 주요 좌표 라벨**
-   - 원점 `O`, 축 라벨 `x`, `y` 반드시 명시
-   - 극대·극소·꼭짓점·절편 등 주요 좌표는 텍스트와 함께 포인트로 마킹
-
-4. **색상 통일**
-   - 함수 선·특징점·텍스트 라벨: 인디고 테마(`#4f46e5`)
-   - 보조 좌표축선: 슬레이트 그레이(`#64748b`)
-   - `functiongraph`, `curve`, `point`에는 별도 색상 미지정 시 자동 적용
-
-5. **Boundingbox 여백**
-   - 텍스트·화살표가 잘리지 않도록 상하좌우 20% 이상 넉넉하게 설정
-   - 예: 최대 Y값이 200이라면 top은 250~280으로 설정
-
-6. **텍스트 및 레이블 겹침/가림 방지**
-   - 축 라벨은 `anchorX`, `anchorY`로 숫자와 겹치지 않게 배치
-   - 수식/LaTeX 포인트 레이블(예: `name: '$(0, \\sqrt{5})$'`)은 앱 내부에서 사분면 및 경계면 위치를 고려하여 **말풍선(Speech Bubble) 툴팁** 형태로 렌더링되며, 뾰족한 화살표 꼬리가 포인트를 정확히 가리키도록 자동 정렬됩니다.
-   - 말풍선 박스가 포인트를 절대 가리지 않도록 4대 방위(상/하/좌/우)에 최적화되어 배치됩니다.
-    - 포인트와 각도 생성 시, 사용자가 직접 조정할 수 있도록 기본 오프셋을 명시해야 합니다:
-      - **모든 각도(angle) 객체**: 기본 `label: {offset: [0, 0]}` 속성을 추가해야 합니다.
-      - **이름을 갖는 포인트(point) 객체**: 기본 `label: {offset: [0, 10]}` 속성을 추가해야 합니다.
-    - 이렇게 설정된 오프셋 숫자를 이용해 Admin 코드 에디터 화면에서 직접 편집하여 텍스트 위치를 미세 조정하게 됩니다.
-    - 긴 좌표 텍스트는 공백 제거 (예: `(500,20000)`)
-
-7. **Sketch 문제**
-   - "Sketch the graph of…" 등 학생이 직접 그려야 하는 문제는 `type: "teacher_review"` 설정
-   - 정답 그래프는 `solutionSteps`에만 포함 (문제 본문엔 숨김)
-
-8. **정의역 제한 및 화살표 비활성화**
-   - 정의역에 경계가 있어 그래프가 특정 지점에서 시작하거나 끝나는 경우(예: 무리함수 \\( y = \\sqrt{x} \\)의 원점 시작점, 또는 범위가 제한된 실생활 문제 등), 그 시작점/끝점에는 화살표를 넣지 않아야 합니다.
-   - ★ 특히 원점(Origin, (0,0))이나 경계점(Boundary)에서 함수 그래프가 시작하거나 끝날 때 그 지점에 화살표가 표시되지 않도록 하십시오.
-   - JSXGraph 컴포넌트는 기본적으로 곡선 양 끝에 화살표를 그리도록 설정되어 있으므로, 경계 지점에서는 `{ firstArrow: false }` 또는 `{ lastArrow: false }`를 설정에 추가하여 화살표를 명시적으로 꺼주어야 합니다.
-
-9. **부등식 경계선 (Dashed vs Solid)**
-   - 부등식 영역을 표현할 때, 등호가 포함되지 않은 부등호(`<`, `>`)의 경계선은 반드시 점선(예: `{ dash: 2 }`)으로 설정해야 합니다.
-   - 등호가 포함된 부등호(`\\le`, `\\ge`)의 경계선은 실선으로 설정해야 합니다.
+1. **기하 도형 → `elements` 배열**, 함수 그래프 → `script` (혼용 금지)
+2. **`label.offset` 항상 명시** — angle과 named point 모두 `"label": { "offset": [0, 0] }`
+3. **원 위의 점** → `"on": "circleId", "angle": degrees` (Math.cos 직접 계산 금지)
+4. **선언 순서** — 참조될 요소를 먼저 선언 (circle → point → segment 순)
+5. **boundingbox 여백** — 텍스트가 잘리지 않게 20% 이상 여유
+6. **부등식 경계선** — 등호 없으면 `"dash": 2` (점선)
+7. **함수 화살표** — 정의역 경계가 있으면 `firstArrow: false` 또는 `lastArrow: false`
 
 ---
 

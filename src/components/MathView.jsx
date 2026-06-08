@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import MathGraph from './MathGraph';
 import GeometricDiagram from './GeometricDiagram';
 import JsxGraphDiagram from './JsxGraphDiagram';
+import GeometryRenderer from './GeometryRenderer';
 import GeometryFigure from './GeometryFigure';
 import { encodeSvgDataUrl } from '../utils/geometrySvg';
 
@@ -407,7 +408,11 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
             <>
               {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && <MathGraph {...graphData} />}
               {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
-              {graphData?.jsxGraph && <JsxGraphDiagram data={graphData.jsxGraph} />}
+              {graphData?.jsxGraph && (
+                graphData.jsxGraph.elements
+                  ? <GeometryRenderer data={graphData.jsxGraph} />
+                  : <JsxGraphDiagram data={graphData.jsxGraph} />
+              )}
               {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}
             </>
           )}
