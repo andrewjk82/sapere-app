@@ -63,7 +63,7 @@ const Y10_CH12I_QUESTIONS = [
     t: 'Revision: Trigonometry',
     hint: 'Use the tangent ratio: $\\tan \\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.',
     graphData: { jsxGraph: {
-        width: 300, height: 250, boundingbox: [-2, 10, 10, -2],
+        width: 300, height: 250, boundingbox: [-4, 5, 12, -12],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
         script: "board.suspendUpdate();\nvar S = board.create('point', [0,0], {name: 'S', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar U = board.create('point', [0,-7.2], {name: 'U', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar T = board.create('point', [8,0], {name: 'T', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nboard.create('polygon', [S,T,U], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [4, 1, '8 cm']);\nboard.create('text', [-2, -3.6, 'x cm']);\nboard.create('angle', [S,T,U], {radius: 2, name: '42^\\°'});\nboard.create('segment', [[0,-0.5], [0.5,-0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,-0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
@@ -321,7 +321,7 @@ const Y10_CH12I_QUESTIONS = [
     t: 'Revision: Trigonometry',
     hint: 'Use the cosine rule. Note that $\\cos 120° = -0.5$.',
     graphData: { jsxGraph: {
-        width: 300, height: 250, boundingbox: [-6, 12, 10, -2],
+        width: 300, height: 250, boundingbox: [-15, 15, 10, -5],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
         script: "board.suspendUpdate();\nvar B = board.create('point', [0,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [0,-10]} });\nvar A = board.create('point', [-10,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar C = board.create('point', [12*Math.cos(60*Math.PI/180), 12*Math.sin(60*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {offset: [10,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-5, -1, '10 cm']);\nboard.create('text', [4, 5, '12 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '120^\\°'});\nboard.unsuspendUpdate();"
       }
@@ -340,7 +340,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 10, 16, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar B = board.create('point', [8,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar C = board.create('point', [15*Math.cos(31*Math.PI/180), 15*Math.sin(31*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [6, 5, '15 cm']);\nboard.create('text', [12, 3, '8 cm']);\nboard.create('angle', [B,A,C], {radius: 2, name: '31^\\°'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar B = board.create('point', [8,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar C = board.create('point', [15*Math.cos(31*Math.PI/180), 15*Math.sin(31*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [6, 5, '15 cm']);\nboard.create('text', [12, 3, '8 cm']);\nboard.create('angle', [B,A,C], {radius: 3, name: '31^\\°'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -355,7 +355,7 @@ const Y10_CH12I_QUESTIONS = [
     t: 'Revision: Trigonometry',
     hint: 'Use the cosine rule.',
     graphData: { jsxGraph: {
-        width: 300, height: 250, boundingbox: [-2, 10, 26, -6],
+        width: 300, height: 250, boundingbox: [-5, 10, 30, -15],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
         script: "board.suspendUpdate();\nvar C = board.create('point', [0,5], {name: 'C', size: 2, color: '#64748b', label: {offset: [-10,10]} });\nvar A = board.create('point', [0,-10], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar B = board.create('point', [25*Math.cos(-18*Math.PI/180), 5+25*Math.sin(-18*Math.PI/180)], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, -2.5, '15 cm']);\nboard.create('text', [12, 3, '25 cm']);\nboard.create('angle', [A,C,B], {radius: 3, name: '18^\\°'});\nboard.unsuspendUpdate();"
       }
