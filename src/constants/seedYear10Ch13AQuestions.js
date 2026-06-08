@@ -683,15 +683,7 @@ export const Y10_CH13A_QUESTIONS = [
         "boundingbox": [
           -6,
           6,
-          6,
-          -6
-        ],
-        "boardOptions": {
-          "axis": false,
-          "keepaspectratio": true,
-          "showNavigation": false
-        },
-        "script": "board.suspendUpdate();\nvar O = board.create('point', [0,0], {name: 'O', size: 2, color: 'red'});\nvar circle = board.create('circle', [O, 5], {strokeColor: '#3b82f6', highlight: false, strokeWidth: 2});\nvar J = board.create('point', [5*Math.cos(135*Math.PI/180), 5*Math.sin(135*Math.PI/180)], {name: 'J', size: 2, color: '#64748b', label: {offset: [-8.48528137423857, 8.485281374238571]}});\nvar K = board.create('point', [5*Math.cos(45*Math.PI/180), 5*Math.sin(45*Math.PI/180)], {name: 'K', size: 2, color: '#64748b', label: {offset: [8.485281374238571, 8.48528137423857]}});\nvar L = board.create('point', [5*Math.cos(-45*Math.PI/180), 5*Math.sin(-45*Math.PI/180)], {name: 'L', size: 2, color: '#64748b', label: {offset: [8.485281374238571, -8.48528137423857]}});\nvar M = board.create('point', [5*Math.cos(225*Math.PI/180), 5*Math.sin(225*Math.PI/180)], {name: 'M', size: 2, color: '#64748b', label: {offset: [-8.485281374238571, -8.48528137423857]}});\nboard.create('polygon', [J,K,L,M], {fillColor: 'transparent', borders: {strokeColor: 'black'}});\nboard.create('segment', [J,L], {strokeColor: 'black'});\nboard.create('segment', [K,M], {strokeColor: 'black'});\nboard.create('angle', [O,J,K], {radius: 1, name: 'α'});\nboard.create('angle', [O,K,L], {radius: 1, name: 'β'});\n// draw right angle square\nboard.create('polygon', [[0,0], [0,0.5], [0.5,0.5], [0.5,0]], {fillColor: 'black'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar O = board.create('point', [0,0], {name: 'O', size: 2, color: 'red'});\nvar circle = board.create('circle', [O, 5], {strokeColor: '#3b82f6', highlight: false, strokeWidth: 2});\nvar J = board.create('point', [5*Math.cos(135*Math.PI/180), 5*Math.sin(135*Math.PI/180)], {name: 'J', size: 2, color: '#64748b', label: {offset: [-8.48528137423857, 8.485281374238571]}});\nvar K = board.create('point', [5*Math.cos(45*Math.PI/180), 5*Math.sin(45*Math.PI/180)], {name: 'K', size: 2, color: '#64748b', label: {offset: [8.485281374238571, 8.48528137423857]}});\nvar L = board.create('point', [5*Math.cos(-45*Math.PI/180), 5*Math.sin(-45*Math.PI/180)], {name: 'L', size: 2, color: '#64748b', label: {offset: [8.485281374238571, -8.48528137423857]}});\nvar M = board.create('point', [5*Math.cos(225*Math.PI/180), 5*Math.sin(225*Math.PI/180)], {name: 'M', size: 2, color: '#64748b', label: {offset: [-8.485281374238571, -8.48528137423857]}});\nboard.create('polygon', [J,K,L,M], {fillColor: 'transparent', borders: {strokeColor: 'black'}});\nboard.create('segment', [J,L], {strokeColor: 'black'});\nboard.create('segment', [K,M], {strokeColor: 'black'});\nboard.create('angle', [O,J,K], {radius: 1, name: 'α'});\nboard.create('angle', [O,K,L], {radius: 1, name: 'β'});\nboard.create('rightangle', [K,O,J], {size: 0.4});\nboard.unsuspendUpdate();"
       }
     }
   },
