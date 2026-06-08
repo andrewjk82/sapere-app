@@ -902,7 +902,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "G",
             "text": "\\alpha",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "G",
@@ -1006,7 +1006,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "G",
             "text": "\\alpha",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "G",
@@ -1106,7 +1106,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "D",
             "text": "\\alpha",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "D",
@@ -1206,7 +1206,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "D",
             "text": "\\alpha",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "D",
@@ -1282,7 +1282,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "O",
             "text": "130°",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "O",
@@ -1372,7 +1372,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "O",
             "text": "130°",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "O",
@@ -1466,7 +1466,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "A",
             "text": "\\alpha",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "A",
@@ -1550,7 +1550,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "A",
             "text": "\\alpha",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "A",
@@ -1644,7 +1644,7 @@ export const Y10_CH8A_QUESTIONS = [
           {
             "at": "C",
             "text": "80°",
-            "color": "blue"
+            "color": "black"
           },
           {
             "at": "C",

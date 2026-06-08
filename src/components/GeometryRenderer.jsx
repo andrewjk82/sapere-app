@@ -1,57 +1,63 @@
 /**
  * GeometryRenderer — Declarative JSXGraph renderer
  *
- * Instead of raw JS strings (which are hard to read, write, and modify),
- * this renderer accepts a structured `elements` array in the jsxGraph data.
+ * ── 기본 원칙 ─────────────────────────────────────────────────────────────────
+ *  • 모든 기본 색상 = 검정 (#1e293b)
+ *  • 그리드 기본값 = 꺼짐  (켜려면 "grid": true)
+ *  • 각도 호 fill  = 투명  (색상 채우려면 fillColor + fillOpacity 명시)
+ *  • 점은 "on" + "angle"(°)으로 원 위에 바로 배치 가능
  *
- * USAGE in graphData.jsxGraph:
+ * ── 최소 예시 (원 위의 삼각형) ────────────────────────────────────────────────
  * {
- *   "boundingbox": [-7, 7, 7, -7],
+ *   "boundingbox": [-6, 6, 6, -6],
  *   "elements": [
- *     { "type": "circle",  "id": "c1", "center": [0, 0], "radius": 5 },
- *     { "type": "point",   "id": "O",  "coords": [0, 0], "name": "O", "color": "red",  "label": { "offset": [8, 0] } },
- *     { "type": "point",   "id": "P",  "on": "c1", "angle": 155, "name": "P", "label": { "offset": [-12, 0] } },
- *     { "type": "segment", "from": "P", "to": "Q" },
- *     { "type": "polygon", "points": ["A", "P", "B"] },
- *     { "type": "angle",   "points": ["Q", "O", "P"], "name": "20°", "radius": 1.2, "label": { "offset": [0, 12] } },
- *     { "type": "text",    "coords": [2, -3], "content": "5 cm" },
- *     { "type": "rightangle", "points": ["A", "B", "C"] }
+ *     { "type": "circle",  "id": "c1", "center": [0,0], "radius": 5 },
+ *     { "type": "point",   "id": "O",  "coords": [0,0], "name": "O", "color": "red" },
+ *     { "type": "point",   "id": "A",  "on": "c1", "angle": 210, "name": "A", "label": {"offset": [-14, -4]} },
+ *     { "type": "point",   "id": "B",  "on": "c1", "angle": 90,  "name": "B", "label": {"offset": [0, 10]} },
+ *     { "type": "point",   "id": "P",  "on": "c1", "angle": 0,   "name": "P", "label": {"offset": [12, 0]} },
+ *     { "type": "segment", "from": "A", "to": "B" },
+ *     { "type": "segment", "from": "A", "to": "P" },
+ *     { "type": "segment", "from": "O", "to": "B" },
+ *     { "type": "segment", "from": "O", "to": "P" },
+ *     { "type": "angle",   "id": "angA", "points": ["B","A","P"], "name": "α", "radius": 1.5, "label": {"offset": [16, -8]} },
+ *     { "type": "angle",   "id": "angO", "points": ["B","O","P"], "name": "β", "radius": 1.2, "label": {"offset": [14, 0]} }
  *   ]
  * }
  *
- * ELEMENT REFERENCE:
- *   circle     — id, center ([x,y] or id), radius, color, strokeWidth, fillColor
- *   point      — id, coords ([x,y])  OR  on (circle id) + angle (degrees), name, color, size, label
- *   segment    — id, from, to, color, strokeWidth, dash, firstArrow, lastArrow
- *   line       — id, through ([id, id]), color, strokeWidth
+ * ── ELEMENT 전체 옵션 ──────────────────────────────────────────────────────────
+ *   circle     — id, center ([x,y] or id), radius, color, strokeWidth, fillColor, fillOpacity
+ *   point      — id, coords ([x,y])  OR  on (circle id) + angle (°, 0=오른쪽, 반시계방향+)
+ *                name, color, size, visible, label: { offset:[dx,dy], color, fontSize }
+ *   segment    — id, from, to, color, strokeWidth, dash(0=실선/1=점선), firstArrow, lastArrow
+ *   line       — id, through ([id,id]), color, strokeWidth
  *   arrow      — id, from, to, color, strokeWidth, bidirectional
- *   polygon    — id, points ([id, ...]), fillColor, color, strokeWidth, dash
- *   angle      — id, points ([from, vertex, to]), name, radius, color, label
- *   rightangle — id, points ([from, vertex, to]), size, color
+ *   polygon    — id, points ([id,...]), fillColor, fillOpacity, color, strokeWidth, dash
+ *   angle      — id, points ([from, vertex, to]), name(레이블), radius, color
+ *                fillColor, fillOpacity, label: { offset:[dx,dy], color, fontSize }
+ *   rightangle — id, points ([from, vertex, to]), size (default 0.4), color
  *   arc        — id, center, from, to, color, strokeWidth
- *   text       — id, coords, content, color, fontSize, anchorX, anchorY
+ *   text       — id, coords([x,y]), content, color, fontSize, anchorX, anchorY
  *   tick       — id, segment (id), count
  *
- * LABEL options (for point and angle):
- *   offset: [dx, dy]  — pixel offset from auto-position (dx: right+, dy: up+)
- *   color:  string    — label text color
- *   fontSize: number  — label font size
+ * ── 레이블 offset 팁 ──────────────────────────────────────────────────────────
+ *   offset: [dx, dy]  — 픽셀 단위. dx 양수=오른쪽, dy 양수=위
+ *   점 레이블: 원 외부 방향으로 밀어내려면 원에서 멀어지는 방향으로 설정
  */
 
 import { useEffect, useId, useRef } from 'react';
 import JXG from 'jsxgraph';
 import '../jsxgraph.css';
 
-// ─── Premium color palette ────────────────────────────────────────────────────
-// Named colors map to premium theme colors. Hex/rgb strings pass through as-is.
+// ─── Color palette ────────────────────────────────────────────────────────────
 const NAMED_COLORS = {
   blue:   '#3b82f6',
   red:    '#ef4444',
   green:  '#10b981',
   orange: '#f59e0b',
   purple: '#8b5cf6',
-  gray:   '#64748b',
-  slate:  '#64748b',
+  gray:   '#1e293b',
+  slate:  '#1e293b',
   black:  '#1e293b',
   white:  '#ffffff',
   none:   'none',
@@ -87,14 +93,14 @@ const GeometryRenderer = ({ data, style }) => {
         axis:           false,
         showCopyright:  false,
         showNavigation: false,
-        // Auto keepaspectratio unless overridden in boardOptions
         keepaspectratio: data.keepaspectratio ?? (ar > 0.55 && ar < 1.8),
+        backgroundColor: '#ffffff',
         ...data.boardOptions,
       });
       boardInstance.current = board;
 
-      // ── Optional decorative grid ──
-      if (data.grid !== false) {
+      // ── Optional decorative grid (off by default) ──
+      if (data.grid === true) {
         board.create('grid', [], {
           strokeColor:   '#cbd5e1',
           strokeWidth:   0.5,
@@ -149,7 +155,7 @@ const GeometryRenderer = ({ data, style }) => {
             case 'circle': {
               const center = resolve(el.center) ?? [0, 0];
               jxgEl = board.create('circle', [center, el.radius ?? 5], {
-                strokeColor:  resolveColor(el.color ?? el.strokeColor ?? 'blue'),
+                strokeColor:  resolveColor(el.color ?? el.strokeColor ?? 'black'),
                 strokeWidth:  el.strokeWidth ?? 2,
                 fillColor:    resolveColor(el.fillColor ?? 'none'),
                 fillOpacity:  el.fillOpacity ?? 0,
@@ -194,7 +200,7 @@ const GeometryRenderer = ({ data, style }) => {
               }
 
               const labelOpts = el.label ?? {};
-              const color     = resolveColor(el.color ?? 'slate');
+              const color     = resolveColor(el.color ?? 'black');
 
               jxgEl = board.create('point', coords, {
                 name:         el.name ?? '',
@@ -210,7 +216,7 @@ const GeometryRenderer = ({ data, style }) => {
                 label: {
                   fontSize:      labelOpts.fontSize ?? 13,
                   fontFamily:    '"Outfit", "Inter", sans-serif',
-                  strokeColor:   resolveColor(labelOpts.color ?? 'slate'),
+                  strokeColor:   resolveColor(labelOpts.color ?? 'black'),
                   offset:        labelOpts.offset ?? [10, 10],
                   autoPosition:  false,
                 },
@@ -325,12 +331,12 @@ const GeometryRenderer = ({ data, style }) => {
                 radius:      el.radius ?? 1.2,
                 strokeColor: resolveColor(el.color ?? el.strokeColor ?? 'black'),
                 strokeWidth: el.strokeWidth ?? 1.5,
-                fillColor:   resolveColor(el.fillColor ?? 'blue'),
-                fillOpacity: el.fillOpacity ?? 0.08,
+                fillColor:   resolveColor(el.fillColor ?? 'none'),
+                fillOpacity: el.fillOpacity ?? 0,
                 label: {
                   fontSize:     labelOpts.fontSize ?? 14,
                   fontFamily:   '"Outfit", "Inter", sans-serif',
-                  strokeColor:  resolveColor(labelOpts.color ?? 'blue'),
+                  strokeColor:  resolveColor(labelOpts.color ?? 'black'),
                   offset:       labelOpts.offset ?? [0, 0],
                   autoPosition: false,
                 },
@@ -395,7 +401,7 @@ const GeometryRenderer = ({ data, style }) => {
                 fixed:       true,
                 fontSize:    el.fontSize ?? 13,
                 fontFamily:  '"Outfit", "Inter", sans-serif',
-                strokeColor: resolveColor(el.color ?? 'slate'),
+                strokeColor: resolveColor(el.color ?? 'black'),
                 anchorX:     el.anchorX ?? 'middle',
                 anchorY:     el.anchorY ?? 'middle',
               });
@@ -467,8 +473,9 @@ const GeometryRenderer = ({ data, style }) => {
         maxWidth:     '100%',
         margin:       '0 auto',
         borderRadius: '16px',
-        boxShadow:    '0 4px 16px rgba(15,23,42,0.04)',
+        boxShadow:    'none',
         border:       '1px solid #e2e8f0',
+        background:   '#ffffff',
         overflow:     'hidden',
         ...style,
       }}
