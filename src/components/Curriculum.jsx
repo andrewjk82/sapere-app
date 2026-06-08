@@ -199,6 +199,7 @@ import { Y10_CH12F_QUESTIONS } from '../constants/seedYear10Ch12FQuestions.js';
 import { Y10_CH12G_QUESTIONS } from '../constants/seedYear10Ch12GQuestions.js';
 import { Y10_CH12H_QUESTIONS } from '../constants/seedYear10Ch12HQuestions.js';
 import { Y10_CH12I_QUESTIONS } from '../constants/seedYear10Ch12IQuestions.js';
+import { Y10_CH13A_QUESTIONS } from '../constants/seedYear10Ch13AQuestions.js';
 import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -456,6 +457,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12g', topicCode: '12G', topicTitle: 'Finding angles using the cosine rule', year: 'Year 10', seed: Y10_CH12G_QUESTIONS, label: 'Y10 Ch12 · 12G Finding angles using the cosine rule' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12h', topicCode: '12H', topicTitle: 'Area of a triangle', year: 'Year 10', seed: Y10_CH12H_QUESTIONS, label: 'Y10 Ch12 · 12H Area of a triangle' },
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12i', topicCode: '12I', topicTitle: 'Revision: Trigonometry', year: 'Year 10', seed: Y10_CH12I_QUESTIONS, label: 'Y10 Ch12 · 12I Revision: Trigonometry' },
+  { chapterId: 'y10-13', chapterTitle: 'Chapter 13: Circle geometry', topicId: 'y10-13a', topicCode: '13A', topicTitle: 'Angles at the centre and the circumference', year: 'Year 10', seed: Y10_CH13A_QUESTIONS, label: 'Y10 Ch13 · 13A Angles at the centre and the circumference' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
