@@ -2010,7 +2010,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y10-12',
       title: 'Chapter 12: Further trigonometry',
-      modules: 8,
+      modules: 9,
       topics: [
         { id: 'y10-12a', code: '12A', title: 'Review of the basic trigonometric ratios' },
         { id: 'y10-12b', code: '12B', title: 'Exact values' },
@@ -2019,7 +2019,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-12e', code: '12E', title: 'Trigonometric ratios of obtuse angles' },
         { id: 'y10-12f', code: '12F', title: 'The cosine rule' },
         { id: 'y10-12g', code: '12G', title: 'Finding angles using the cosine rule' },
-        { id: 'y10-12h', code: '12H', title: 'Area of a triangle' }
+        { id: 'y10-12h', code: '12H', title: 'Area of a triangle' },
+        { id: 'y10-12i', code: '12I', title: 'Revision: Trigonometry' }
       ]
     },
     {
