@@ -4,7 +4,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area, correct to one decimal place.\n\nA triangle with sides $9\\text{ cm}$ and $12\\text{ cm}$, and an included angle of $47°$.',
+    question: 'Calculate the area, correct to one decimal place.\n\nA triangle with sides $9$ cm and $12$ cm, and an included angle of $47°$.',
     a: '39.5',
     solution: '$\\text{Area} = \\frac{1}{2}ab\\sin C$\n$\\text{Area} = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 47°$\n$\\text{Area} = 54 \\times 0.73135 \\approx 39.493$\nCorrect to one decimal place, the area is $39.5\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -34,7 +34,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area, correct to one decimal place.\n\nA triangle with sides $6\\text{ cm}$ and $10\\text{ cm}$, and an included angle of $83°$.',
+    question: 'Calculate the area, correct to one decimal place.\n\nA triangle with sides $6$ cm and $10$ cm, and an included angle of $83°$.',
     a: '29.8',
     solution: '$\\text{Area} = \\frac{1}{2}ab\\sin C$\n$\\text{Area} = \\frac{1}{2} \\times 6 \\times 10 \\times \\sin 83°$\n$\\text{Area} = 30 \\times 0.9925 \\approx 29.776$\nCorrect to one decimal place, the area is $29.8\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -64,7 +64,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area, correct to one decimal place.\n\nA triangle with sides $8\\text{ cm}$ and $15\\text{ cm}$, and an included angle of $126°$.',
+    question: 'Calculate the area, correct to one decimal place.\n\nA triangle with sides $8$ cm and $15$ cm, and an included angle of $126°$.',
     a: '48.5',
     solution: '$\\text{Area} = \\frac{1}{2}ab\\sin C$\n$\\text{Area} = \\frac{1}{2} \\times 8 \\times 15 \\times \\sin 126°$\n$\\text{Area} = 60 \\times 0.8090 \\approx 48.541$\nCorrect to one decimal place, the area is $48.5\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -94,7 +94,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area, correct to two decimal places.\n\nAn isosceles triangle $ABC$ with equal sides $AB = 5.6\\text{ cm}$ and $AC = 5.6\\text{ cm}$. The base angles $\\angle B$ and $\\angle C$ are both $70°$.',
+    question: 'Calculate the area, correct to two decimal places.\n\nAn isosceles triangle $ABC$ with equal sides $AB = 5.6$ cm and $AC = 5.6$ cm. The base angles $\\angle B$ and $\\angle C$ are both $70°$.',
     a: '10.08',
     solution: 'The included angle between the sides $AB$ and $AC$ is $\\angle A$.\nThe sum of angles in a triangle is $180°$, so $\\angle A = 180° - 70° - 70° = 40°$.\n$\\text{Area} = \\frac{1}{2}bc\\sin A = \\frac{1}{2}(5.6)(5.6)\\sin 40°$\n$\\text{Area} = 15.68 \\times 0.6428 \\approx 10.078$\nCorrect to two decimal places, the area is $10.08\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -124,7 +124,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area, correct to two decimal places.\n\nA parallelogram $ABCD$ with adjacent sides $5\\text{ cm}$ and $10\\text{ cm}$, and an included angle of $70°$.',
+    question: 'Calculate the area, correct to two decimal places.\n\nA parallelogram $ABCD$ with adjacent sides $5$ cm and $10$ cm, and an included angle of $70°$.',
     a: '46.98',
     solution: 'The area of a parallelogram is given by $ab\\sinθ$.\n$\\text{Area} = 5 \\times 10 \\times \\sin 70°$\n$\\text{Area} = 50 \\times 0.9397 \\approx 46.985$\nCorrect to two decimal places, the area is $46.98\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -154,7 +154,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area, correct to two decimal places.\n\nAn equilateral triangle $ABC$ with side lengths of $10\\text{ cm}$.',
+    question: 'Calculate the area, correct to two decimal places.\n\nAn equilateral triangle $ABC$ with side lengths of $10$ cm.',
     a: '43.30',
     solution: 'An equilateral triangle has all angles equal to $60°$.\nUsing any two sides and the included angle:\n$\\text{Area} = \\frac{1}{2}(10)(10)\\sin 60°$\n$\\text{Area} = 50 \\times \\frac{\\sqrt{3}}{2} = 25\\sqrt{3} \\approx 43.301$\nCorrect to two decimal places, the area is $43.30\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -184,7 +184,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'In $\\triangle ABC$, $\\angle CAB$ is an acute angle. The side $AB = 16\\text{ cm}$, $BC = 20\\text{ cm}$, and $\\angle C = 50°$.',
+    question: 'In $\\triangle ABC$, $\\angle CAB$ is an acute angle. The side $AB = 16$ cm, $BC = 20$ cm, and $\\angle C = 50°$.',
     a: '',
     solution: 'This problem contains multiple parts.',
     graphData: { jsxGraph: {
@@ -297,7 +297,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'In $\\triangle ABC$, the side lengths are $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$, and $BC = 12\\text{ cm}$.',
+    question: 'In $\\triangle ABC$, the side lengths are $AB = 6$ cm, $AC = 8$ cm, and $BC = 12$ cm.',
     a: '',
     solution: 'This problem contains multiple parts.',
     graphData: { jsxGraph: {
@@ -383,7 +383,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area of the triangle, correct to the nearest square centimetre.\n\nA triangle with side lengths $10\\text{ cm}$, $12\\text{ cm}$, and $18\\text{ cm}$.',
+    question: 'Calculate the area of the triangle, correct to the nearest square centimetre.\n\nA triangle with side lengths $10$ cm, $12$ cm, and $18$ cm.',
     a: '57',
     solution: 'Let $a=18$, $b=10$, $c=12$.\nUsing Heron\'s formula:\nSemi-perimeter $s = \\frac{10+12+18}{2} = 20$.\n$\\text{Area} = \\sqrt{s(s-a)(s-b)(s-c)} = \\sqrt{20(2)(10)(8)} = \\sqrt{3200} \\approx 56.57$\nCorrect to the nearest square centimetre, the area is $57\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -413,7 +413,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area of the triangle, correct to the nearest square centimetre.\n\nA triangle with sides $7\\text{ cm}$ and $11\\text{ cm}$, and an included angle of $52°$.',
+    question: 'Calculate the area of the triangle, correct to the nearest square centimetre.\n\nA triangle with sides $7$ cm and $11$ cm, and an included angle of $52°$.',
     a: '30',
     solution: '$\\text{Area} = \\frac{1}{2}ab\\sin C$\n$\\text{Area} = \\frac{1}{2} \\times 7 \\times 11 \\times \\sin 52°$\n$\\text{Area} = 38.5 \\times 0.7880 \\approx 30.34$\nCorrect to the nearest square centimetre, the area is $30\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -443,9 +443,9 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'easy',
     timeLimit: 60,
-    question: 'Calculate the area of the triangle, correct to the nearest square centimetre.\n\nA triangle with angles $72°$ and $64°$, and the side between these two angles has length $18\\text{ cm}$.',
+    question: 'Calculate the area of the triangle, correct to the nearest square centimetre.\n\nA triangle with angles $72°$ and $64°$, and the side between these two angles has length $18$ cm.',
     a: '199',
-    solution: 'The third angle is $180° - 72° - 64° = 44°$.\nUsing the sine rule to find another side $x$ opposite $64°$:\n$\\frac{x}{\\sin 64°} = \\frac{18}{\\sin 44°} \\implies x = \\frac{18\\sin 64°}{\\sin 44°} \\approx 23.28\\text{ cm}$.\nNow find the area using the $18\\text{ cm}$ side, the $23.28\\text{ cm}$ side, and the included angle $72°$.\n$\\text{Area} = \\frac{1}{2}(18)(23.28)\\sin 72° \\approx 199.25$\nCorrect to the nearest square centimetre, the area is $199\\text{ cm}^2$.',
+    solution: 'The third angle is $180° - 72° - 64° = 44°$.\nUsing the sine rule to find another side $x$ opposite $64°$:\n$\\frac{x}{\\sin 64°} = \\frac{18}{\\sin 44°} \\implies x = \\frac{18\\sin 64°}{\\sin 44°} \\approx 23.28$ cm.\nNow find the area using the $18$ cm side, the $23.28$ cm side, and the included angle $72°$.\n$\\text{Area} = \\frac{1}{2}(18)(23.28)\\sin 72° \\approx 199.25$\nCorrect to the nearest square centimetre, the area is $199\\text{ cm}^2$.',
     graphData: { jsxGraph: {
             width: 300,
             height: 250,
@@ -473,9 +473,9 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'In $\\triangle ABC$, the area of the triangle is $40\\text{ cm}^2$. The side $BC = 14\\text{ cm}$ and $\\angle B = 42°$. Find $AB$, correct to one decimal place.',
+    question: 'In $\\triangle ABC$, the area of the triangle is $40\\text{ cm}^2$. The side $BC = 14$ cm and $\\angle B = 42°$. Find $AB$, correct to one decimal place.',
     a: '8.5',
-    solution: 'Using the area formula: $\\text{Area} = \\frac{1}{2}ac\\sin B$\n$40 = \\frac{1}{2}(14)(AB)\\sin 42°$\n$40 = 7 \\times AB \\times 0.6691$\n$40 = 4.6839 \\times AB$\n$AB = \\frac{40}{4.6839} \\approx 8.54$\nCorrect to one decimal place, $AB = 8.5\\text{ cm}$.',
+    solution: 'Using the area formula: $\\text{Area} = \\frac{1}{2}ac\\sin B$\n$40 = \\frac{1}{2}(14)(AB)\\sin 42°$\n$40 = 7 \\times AB \\times 0.6691$\n$40 = 4.6839 \\times AB$\n$AB = \\frac{40}{4.6839} \\approx 8.54$\nCorrect to one decimal place, $AB = 8.5$ cm.',
     graphData: { jsxGraph: {
             width: 300,
             height: 250,
@@ -503,9 +503,9 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'In $\\triangle ABC$, the area of the triangle is $40\\text{ cm}^2$. The side $BC = 14\\text{ cm}$ and $\\angle B = 42°$. You found $AB \\approx 8.54\\text{ cm}$. Find $AC$, correct to one decimal place.',
+    question: 'In $\\triangle ABC$, the area of the triangle is $40\\text{ cm}^2$. The side $BC = 14$ cm and $\\angle B = 42°$. You found $AB \\approx 8.54$ cm. Find $AC$, correct to one decimal place.',
     a: '9.6',
-    solution: 'Using the cosine rule in $\\triangle ABC$:\n$AC^2 = AB^2 + BC^2 - 2(AB)(BC)\\cos B$\n$AC^2 = 8.54^2 + 14^2 - 2(8.54)(14)\\cos 42°$\n$AC^2 \\approx 72.93 + 196 - 239.12(0.7431) \\approx 268.93 - 177.69 = 91.24$\n$AC = \\sqrt{91.24} \\approx 9.55$\nCorrect to one decimal place, $AC = 9.6\\text{ cm}$.',
+    solution: 'Using the cosine rule in $\\triangle ABC$:\n$AC^2 = AB^2 + BC^2 - 2(AB)(BC)\\cos B$\n$AC^2 = 8.54^2 + 14^2 - 2(8.54)(14)\\cos 42°$\n$AC^2 \\approx 72.93 + 196 - 239.12(0.7431) \\approx 268.93 - 177.69 = 91.24$\n$AC = \\sqrt{91.24} \\approx 9.55$\nCorrect to one decimal place, $AC = 9.6$ cm.',
     graphData: { jsxGraph: {
             width: 300,
             height: 250,
@@ -533,7 +533,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'In $\\triangle ABC$, the area of the triangle is $40\\text{ cm}^2$. The side $BC = 14\\text{ cm}$, $\\angle B = 42°$, $AB \\approx 8.54\\text{ cm}$, and $AC \\approx 9.55\\text{ cm}$. Find $\\angle ACB$, correct to one decimal place.',
+    question: 'In $\\triangle ABC$, the area of the triangle is $40\\text{ cm}^2$. The side $BC = 14$ cm, $\\angle B = 42°$, $AB \\approx 8.54$ cm, and $AC \\approx 9.55$ cm. Find $\\angle ACB$, correct to one decimal place.',
     a: '36.7',
     solution: 'Using the sine rule:\n$\\frac{\\sin C}{AB} = \\frac{\\sin B}{AC}$\n$\\frac{\\sin C}{8.54} = \\frac{\\sin 42°}{9.55}$\n$\\sin C = \\frac{8.54 \\sin 42°}{9.55} \\approx \\frac{8.54(0.6691)}{9.55} \\approx 0.5983$\n$C = \\sin^{-1}(0.5983) \\approx 36.7°$.',
     graphData: { jsxGraph: {
@@ -563,7 +563,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'An acute-angled triangle of area $60\\text{ cm}^2$ has side lengths of $16\\text{ cm}$ and $20\\text{ cm}$. What is the magnitude of the included angle, correct to the nearest degree?',
+    question: 'An acute-angled triangle of area $60\\text{ cm}^2$ has side lengths of $16$ cm and $20$ cm. What is the magnitude of the included angle, correct to the nearest degree?',
     a: '22',
     solution: '$\\text{Area} = \\frac{1}{2}ab\\sin C$\n$60 = \\frac{1}{2}(16)(20)\\sin C$\n$60 = 160\\sin C$\n$\\sin C = \\frac{60}{160} = 0.375$\nSince the triangle is acute-angled, $C = \\sin^{-1}(0.375) \\approx 22.02°$.\nCorrect to the nearest degree, the angle is $22°$.',
     graphData: { jsxGraph: {
@@ -593,7 +593,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'An irregular block of land, $ABCD$, has $\\angle D = 90°$. The sides are $AD = 80\\text{ m}$, $CD = 130\\text{ m}$, $AB = 65\\text{ m}$, and $BC = 90\\text{ m}$.',
+    question: 'An irregular block of land, $ABCD$, has $\\angle D = 90°$. The sides are $AD = 80$ m, $CD = 130$ m, $AB = 65$ m, and $BC = 90$ m.',
     a: '',
     solution: 'This problem contains multiple parts.',
     graphData: { jsxGraph: {
@@ -643,7 +643,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
         hint: 'Use Pythagoras\' theorem on the right-angled triangle $\\triangle ADC$.',
-        solution: 'In $\\triangle ADC$, $\\angle D = 90°$.\n$AC^2 = AD^2 + CD^2 = 80° + 130^2 = 6400 + 16900 = 23300$\n$AC = \\sqrt{23300} \\approx 152.64$\nCorrect to one decimal place, $AC = 152.6\\text{ m}$.'
+        solution: 'In $\\triangle ADC$, $\\angle D = 90°$.\n$AC^2 = AD^2 + CD^2 = 80° + 130^2 = 6400 + 16900 = 23300$\n$AC = \\sqrt{23300} \\approx 152.64$\nCorrect to one decimal place, $AC = 152.6$ m.'
       },
       {
         id: 'y10-12h-q8b',
@@ -706,7 +706,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: '$ABCDE$ is a regular pentagon with side lengths $10\\text{ cm}$. Diagonals $AD$ and $AC$ are drawn.',
+    question: '$ABCDE$ is a regular pentagon with side lengths $10$ cm. Diagonals $AD$ and $AC$ are drawn.',
     a: '',
     solution: 'This problem contains multiple parts.',
     graphData: { jsxGraph: {
@@ -810,7 +810,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
         hint: 'Use the cosine rule in $\\triangle ADE$.',
-        solution: '$AD^2 = 10^2 + 10^2 - 2(10)(10)\\cos 108° = 200 - 200(-0.3090) = 261.8$\n$AD = \\sqrt{261.8} \\approx 16.18\\text{ cm}$.'
+        solution: '$AD^2 = 10^2 + 10^2 - 2(10)(10)\\cos 108° = 200 - 200(-0.3090) = 261.8$\n$AD = \\sqrt{261.8} \\approx 16.18$ cm.'
       },
       {
         id: 'y10-12h-q9d',
@@ -954,7 +954,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'A quadrilateral has diagonals of length $12\\text{ cm}$ and $18\\text{ cm}$. If the angle between the diagonals is $65°$, find the area of the quadrilateral, correct to the nearest square centimetre.',
+    question: 'A quadrilateral has diagonals of length $12$ cm and $18$ cm. If the angle between the diagonals is $65°$, find the area of the quadrilateral, correct to the nearest square centimetre.',
     a: '98',
     solution: 'The area of a quadrilateral with diagonals $d_1$ and $d_2$ intersecting at an angle $θ$ is $\\frac{1}{2} d_1 d_2 \\sin θ$.\n$\\text{Area} = \\frac{1}{2} \\times 12 \\times 18 \\times \\sin 65°$\n$\\text{Area} = 108 \\times 0.9063 \\approx 97.88$\nCorrect to the nearest square centimetre, the area is $98\\text{ cm}^2$.',
     graphData: { jsxGraph: {
@@ -1044,7 +1044,7 @@ export const Y10_CH12H_QUESTIONS = [
     type: 'short_answer',
     difficulty: 'medium',
     timeLimit: 90,
-    question: 'A triangle has sides of length $8\\text{ cm}$, $11\\text{ cm}$ and $15\\text{ cm}$.',
+    question: 'A triangle has sides of length $8$ cm, $11$ cm and $15$ cm.',
     a: '',
     solution: 'This problem contains multiple parts.',
     graphData: { jsxGraph: {
@@ -1094,7 +1094,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
         hint: 'The smallest angle is opposite the smallest side. Use the cosine rule.',
-        solution: 'Let the smallest angle be $θ$. It is opposite the $8\\text{ cm}$ side.\n$\\cos θ = \\frac{11^2 + 15^2 - 8^2}{2(11)(15)} = \\frac{121 + 225 - 64}{330} = \\frac{282}{330} \\approx 0.8545$\n$θ = \\cos^{-1}(0.8545) \\approx 31.29°$.'
+        solution: 'Let the smallest angle be $θ$. It is opposite the $8$ cm side.\n$\\cos θ = \\frac{11^2 + 15^2 - 8^2}{2(11)(15)} = \\frac{121 + 225 - 64}{330} = \\frac{282}{330} \\approx 0.8545$\n$θ = \\cos^{-1}(0.8545) \\approx 31.29°$.'
       },
       {
         id: 'y10-12h-q13b',
@@ -1148,7 +1148,7 @@ export const Y10_CH12H_QUESTIONS = [
 },
 
         hint: 'Add up the lengths of all three sides.',
-        solution: 'Perimeter $= 8 + 11 + 15 = 34\\text{ cm}$.'
+        solution: 'Perimeter $= 8 + 11 + 15 = 34$ cm.'
       },
       {
         id: 'y10-12h-q13d',
