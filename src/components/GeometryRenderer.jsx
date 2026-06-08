@@ -330,8 +330,8 @@ const GeometryRenderer = ({ data, style }) => {
                 name:        el.name ?? '',
                 radius:      el.radius ?? 1.2,
                 type:        'sector', // Force sector to prevent auto-square right angles that give away answers
-                strokeColor: resolveColor(el.color ?? el.strokeColor ?? 'black'),
-                strokeWidth: el.strokeWidth ?? 1.5,
+                strokeColor: resolveColor(el.color ?? el.strokeColor ?? 'none'),
+                strokeWidth: el.strokeWidth ?? 0,
                 fillColor:   resolveColor(el.fillColor ?? 'none'),
                 fillOpacity: el.fillOpacity ?? 0,
                 label: {
