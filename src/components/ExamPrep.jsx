@@ -20,6 +20,7 @@ const EXAM_QUICK_INSERTS = [
   { label: 'xⁿ',  latex: '^{#?}',          title: 'Exponent' },
   { label: 'π',   latex: '\\pi',           title: 'Pi' },
   { label: '±',   latex: '\\pm',           title: 'Plus or minus' },
+  { label: '°',   latex: '^{\\circ}',      title: 'Degrees' },
   { label: '( )', latex: '(#?)',           title: 'Brackets' },
 ];
 import { db } from '../firebase/config';
