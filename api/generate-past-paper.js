@@ -244,18 +244,27 @@ function renderAnswersSA(q, num) {
     </div>`;
   }
 
+  // Split the combined answer string into per-part answers
+  const fullAnswer = q.a || q.answer || '';
+  const answerParts = splitParts(fullAnswer);
+  const answerMap = {};
+  answerParts.forEach(p => { if (p.label) answerMap[p.label] = p.body; });
+
   const perPart = Math.max(1, Math.round(marks / subParts.length));
-  const subHtml = subParts.map(p => `
+  const subHtml = subParts.map(p => {
+    const partAnswer = answerMap[p.label] || fullAnswer;
+    return `
     <div class="sol-subpart">
       <div class="sol-subpart-row">
         <span class="sol-sublbl">(${p.label})</span>
         <div class="sol-subbody">
           <div class="sol-q-text">${tex(p.body)}</div>
           ${stepsHtml(q.solutionSteps)}
-          ${answerBox(q.a || q.answer)}
+          ${answerBox(partAnswer)}
         </div>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 
   return `<div class="sol-question">
     <div class="sol-q-header">
