@@ -100,7 +100,7 @@ export const Y9_CH14_QUESTIONS = [
               7,
               -6
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-4],[2,2]],{strokeColor:'#10b981',strokeWidth:2.5,straightFirst:true,straightLast:true});\nboard.create('point',[0,-4],{name:'(0, -4)',size:3,color:'#10b981',fixed:true, label: {offset: [0, 10]}});\nboard.create('point',[2,2],{name:'(2, 2)',size:3,color:'#10b981',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-4],[2,2]],{strokeColor:'#10b981',strokeWidth:2.5,straightFirst:true,straightLast:true});\nboard.create('point',[0,-4],{name:'(0, -4)',size:3,color:'#10b981',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point',[2,2],{name:'(2, 2)',size:3,color:'#10b981',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -131,7 +131,7 @@ export const Y9_CH14_QUESTIONS = [
               10,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[8,0],[0,8]],{strokeColor:'#f59e0b',strokeWidth:2.5,straightFirst:true,straightLast:true});\nboard.create('point',[8,0],{name:'(8, 0)',size:3,color:'#f59e0b',fixed:true, label: {offset: [0, 10]}});\nboard.create('point',[0,8],{name:'(0, 8)',size:3,color:'#f59e0b',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[8,0],[0,8]],{strokeColor:'#f59e0b',strokeWidth:2.5,straightFirst:true,straightLast:true});\nboard.create('point',[8,0],{name:'(8, 0)',size:3,color:'#f59e0b',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point',[0,8],{name:'(0, 8)',size:3,color:'#f59e0b',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -170,7 +170,7 @@ export const Y9_CH14_QUESTIONS = [
               7,
               -5
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,0],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-4],[2,2]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,2],{name:'Intersection (2, 2)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,0],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-4],[2,2]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,2],{name:'Intersection (2, 2)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -209,7 +209,7 @@ export const Y9_CH14_QUESTIONS = [
               10,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,0],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[8,0],[0,8]],{strokeColor:'#f59e0b',strokeWidth:2});\nboard.create('point',[4,4],{name:'Intersection (4, 4)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,0],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[8,0],[0,8]],{strokeColor:'#f59e0b',strokeWidth:2});\nboard.create('point',[4,4],{name:'Intersection (4, 4)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -248,7 +248,7 @@ export const Y9_CH14_QUESTIONS = [
               10,
               -5
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-4],[2,2]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('line',[[8,0],[0,8]],{strokeColor:'#f59e0b',strokeWidth:2});\nboard.create('point',[3,5],{name:'Intersection (3, 5)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-4],[2,2]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('line',[[8,0],[0,8]],{strokeColor:'#f59e0b',strokeWidth:2});\nboard.create('point',[3,5],{name:'Intersection (3, 5)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -291,7 +291,7 @@ export const Y9_CH14_QUESTIONS = [
               4,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,3],[1,4]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,5],[1,7]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[-2,1],{name:'(-2, 1)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,3],[1,4]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,5],[1,7]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[-2,1],{name:'(-2, 1)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -334,7 +334,7 @@ export const Y9_CH14_QUESTIONS = [
               6,
               -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-1],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-3],[1,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-1],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-3],[1,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -377,7 +377,7 @@ export const Y9_CH14_QUESTIONS = [
               10,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,1],[1,2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,7],[7,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[3,4],{name:'(3, 4)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,1],[1,2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,7],[7,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[3,4],{name:'(3, 4)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -420,7 +420,7 @@ export const Y9_CH14_QUESTIONS = [
               10,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,2],[1,4]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,8],[8,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,6],{name:'(2, 6)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,2],[1,4]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,8],[8,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,6],{name:'(2, 6)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -463,7 +463,7 @@ export const Y9_CH14_QUESTIONS = [
               9,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[5,0],[0,5]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[3.5,0],[0,7]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[5,0],[0,5]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[3.5,0],[0,7]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -506,7 +506,7 @@ export const Y9_CH14_QUESTIONS = [
               8,
               -4
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[2,0],[0,-2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[2,0],[0,6]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,0],{name:'(2, 0)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[2,0],[0,-2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[2,0],[0,6]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,0],{name:'(2, 0)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -549,7 +549,7 @@ export const Y9_CH14_QUESTIONS = [
               8,
               -9
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[2,0],[0,-2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-8],[2.67,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[3,1],{name:'(3, 1)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[2,0],[0,-2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-8],[2.67,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[3,1],{name:'(3, 1)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -592,7 +592,7 @@ export const Y9_CH14_QUESTIONS = [
               6,
               -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,4],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,0],[1,1]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[1,1],{name:'(1, 1)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,4],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,0],[1,1]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[1,1],{name:'(1, 1)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -635,7 +635,7 @@ export const Y9_CH14_QUESTIONS = [
               8,
               -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-1],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,5],[5,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-1],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,5],[5,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -678,7 +678,7 @@ export const Y9_CH14_QUESTIONS = [
               12,
               -4
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-2],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,10],[10,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[3,7],{name:'(3, 7)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-2],[1,1]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,10],[10,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[3,7],{name:'(3, 7)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -721,7 +721,7 @@ export const Y9_CH14_QUESTIONS = [
               12,
               -4
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[3,0],[0,-3]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[-2,0],[0,1]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[8,5],{name:'(8, 5)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[3,0],[0,-3]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[-2,0],[0,1]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[8,5],{name:'(8, 5)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -768,7 +768,7 @@ export const Y9_CH14_QUESTIONS = [
               4,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[7,0],[1,2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,7],[-3.5,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[-2,3],{name:'(-2, 3)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[7,0],[1,2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,7],[-3.5,0]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[-2,3],{name:'(-2, 3)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -939,7 +939,7 @@ export const Y9_CH14_QUESTIONS = [
               8,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,3],[1,4]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,1],[1,4]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[1,4],{name:'(1, 4)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,3],[1,4]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,1],[1,4]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[1,4],{name:'(1, 4)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -982,7 +982,7 @@ export const Y9_CH14_QUESTIONS = [
               10,
               -4
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-2],[1,2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,4],[1,5]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,6],{name:'(2, 6)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[0,-2],[1,2]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,4],[1,5]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,6],{name:'(2, 6)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -1029,7 +1029,7 @@ export const Y9_CH14_QUESTIONS = [
               8,
               -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[4,0],[0,6]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-1],[1,1]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nboard.create('line',[[4,0],[0,6]],{strokeColor:'#2563eb',strokeWidth:2});\nboard.create('line',[[0,-1],[1,1]],{strokeColor:'#10b981',strokeWidth:2});\nboard.create('point',[2,3],{name:'(2, 3)',size:4,color:'#dc2626',fixed:true, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
           }
         }
       }

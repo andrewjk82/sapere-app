@@ -68,7 +68,7 @@ export const Y11_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-8, 8, 8, -8],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 6/x; }, 0.1, 7.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 6/x; }, -7.5, -0.1], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [1,6], {name: '(1,6)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [2,3], {name: '(2,3)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [-1,-6], {name: '(-1,-6)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [-2,-3], {name: '(-2,-3)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 6/x; }, 0.1, 7.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 6/x; }, -7.5, -0.1], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [1,6], {name: '(1,6)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [2,3], {name: '(2,3)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-1,-6], {name: '(-1,-6)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-2,-3], {name: '(-2,-3)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -244,7 +244,7 @@ export const Y11_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 5, 3, -1],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(2,x); }, -2.8, 2.8], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,1], {name: '(0,1)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [1,2], {name: '(1,2)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [2,4], {name: '(2,4)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(2,x); }, -2.8, 2.8], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,1], {name: '(0,1)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [1,2], {name: '(1,2)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [2,4], {name: '(2,4)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -307,7 +307,7 @@ export const Y11_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 3, 4, -5],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('line', [[-4,-4], [4,-4]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(2,x) - 4; }, -3.8, 2.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,-3], {name: '-3', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [2,0], {name: '2', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('line', [[-4,-4], [4,-4]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(2,x) - 4; }, -3.8, 2.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,-3], {name: '-3', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [2,0], {name: '2', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -433,7 +433,7 @@ export const Y11_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 8, 2, -1],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(6,x); }, -2.8, 1.2], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,1], {name: '(0,1)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [1,6], {name: '(1,6)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(6,x); }, -2.8, 1.2], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,1], {name: '(0,1)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [1,6], {name: '(1,6)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -458,7 +458,7 @@ export const Y11_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 5, 3, -1],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(3,-x); }, -1.2, 2.8], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,1], {name: '(0,1)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [-1,3], {name: '(-1,3)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.pow(3,-x); }, -1.2, 2.8], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0,1], {name: '(0,1)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-1,3], {name: '(-1,3)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -647,7 +647,7 @@ export const Y11_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-7, 3, 7, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 4*x/(x*x+1); }, -6.5, 6.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [1,2], {name: 'Max(1,2)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [-1,-2], {name: 'Min(-1,-2)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.create('point', [0,0], {name: '(0,0)', visible: true, size: 2, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 4*x/(x*x+1); }, -6.5, 6.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [1,2], {name: 'Max(1,2)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-1,-2], {name: 'Min(-1,-2)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0,0], {name: '(0,0)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   }

@@ -120,7 +120,7 @@ export const Y9_CH11C_QUESTIONS = [
         width: 250,
         height: 250,
         boundingbox: [-2, 6, 4, -2],
-        script: "board.suspendUpdate();\nboard.create('arrow', [[-1.5, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1.5], [0, 5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 5.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, 4]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [1, 4], {size: 3, color: 'red', name: '(1, 4)', withLabel: true, label: {offset: [5, 5]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-1.5, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1.5], [0, 5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 5.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, 4]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [1, 4], {size: 3, color: 'red', name: '(1, 4)', withLabel: true, label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -149,7 +149,7 @@ export const Y9_CH11C_QUESTIONS = [
         width: 250,
         height: 250,
         boundingbox: [-5, 5, 2, -2],
-        script: "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [1, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1], [0, 4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [0.8, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 3.8, 'y'], {fontSize: 12});\nboard.create('text', [0.2, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-3, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {offset: [-15, -10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {offset: [5, 5]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [1, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1], [0, 4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [0.8, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 3.8, 'y'], {fontSize: 12});\nboard.create('text', [0.2, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-3, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -178,7 +178,7 @@ export const Y9_CH11C_QUESTIONS = [
         width: 250,
         height: 250,
         boundingbox: [-1, 2, 4, -8],
-        script: "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 1.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, 0.3, '0'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {offset: [5, -5]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 1.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, 0.3, '0'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {autoPosition: false, offset: [5, -5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -207,7 +207,7 @@ export const Y9_CH11C_QUESTIONS = [
         width: 250,
         height: 250,
         boundingbox: [-8, 2, 2, -4],
-        script: "board.suspendUpdate();\nboard.create('arrow', [[-7.5, 0], [1.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -3.5], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 1.3, 'y'], {fontSize: 12});\nboard.create('text', [0.2, 0.2, '0'], {fontSize: 12});\nboard.create('line', [[-6, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {offset: [-15, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {offset: [5, -5]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-7.5, 0], [1.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -3.5], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 1.3, 'y'], {fontSize: 12});\nboard.create('text', [0.2, 0.2, '0'], {fontSize: 12});\nboard.create('line', [[-6, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [5, -5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -236,7 +236,7 @@ export const Y9_CH11C_QUESTIONS = [
         width: 250,
         height: 250,
         boundingbox: [-3, 7, 5, -2],
-        script: "board.suspendUpdate();\nboard.create('arrow', [[-2.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 6.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-1, 2], [3, 5]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-1, 2], {size: 3, color: 'red', name: '(-1, 2)', withLabel: true, label: {offset: [-15, 10]}});\nboard.create('point', [3, 5], {size: 3, color: 'red', name: '(3, 5)', withLabel: true, label: {offset: [5, -5]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-2.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 6.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-1, 2], [3, 5]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-1, 2], {size: 3, color: 'red', name: '(-1, 2)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [3, 5], {size: 3, color: 'red', name: '(3, 5)', withLabel: true, label: {autoPosition: false, offset: [5, -5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -265,7 +265,7 @@ export const Y9_CH11C_QUESTIONS = [
         width: 250,
         height: 250,
         boundingbox: [-4, 6, 4, -3],
-        script: "board.suspendUpdate();\nboard.create('arrow', [[-3.5, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -2.5], [0, 5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 5.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-2, 4], [2, -1]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-2, 4], {size: 3, color: 'red', name: '(-2, 4)', withLabel: true, label: {offset: [-15, 10]}});\nboard.create('point', [2, -1], {size: 3, color: 'red', name: '(2, -1)', withLabel: true, label: {offset: [5, 5]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-3.5, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -2.5], [0, 5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 5.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-2, 4], [2, -1]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-2, 4], {size: 3, color: 'red', name: '(-2, 4)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [2, -1], {size: 3, color: 'red', name: '(2, -1)', withLabel: true, label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },

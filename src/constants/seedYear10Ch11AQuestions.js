@@ -25,7 +25,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-6, 6, 6, -6],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 4], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [4, 0], {size: 3, color: '#4f46e5', name: '(4, 0)', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-4, 0], {size: 3, color: '#4f46e5', name: '(-4, 0)', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 4], {size: 3, color: '#4f46e5', name: '(0, 4)', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -4], {size: 3, color: '#4f46e5', name: '(0, -4)', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 4], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [4, 0], {size: 3, color: '#4f46e5', name: '(4, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-4, 0], {size: 3, color: '#4f46e5', name: '(-4, 0)', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 4], {size: 3, color: '#4f46e5', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -4], {size: 3, color: '#4f46e5', name: '(0, -4)', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -55,7 +55,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-3, 3, 3, -3],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2, 0], {size: 3, color: '#4f46e5', name: '(2, 0)', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-2, 0], {size: 3, color: '#4f46e5', name: '(-2, 0)', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 2], {size: 3, color: '#4f46e5', name: '(0, 2)', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -2], {size: 3, color: '#4f46e5', name: '(0, -2)', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2, 0], {size: 3, color: '#4f46e5', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-2, 0], {size: 3, color: '#4f46e5', name: '(-2, 0)', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 2], {size: 3, color: '#4f46e5', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -2], {size: 3, color: '#4f46e5', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -85,7 +85,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 4, 4, -4],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.64575], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.64575, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{7}, 0)$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-2.64575, 0], {size: 3, color: '#4f46e5', name: '$(-\\sqrt{7}, 0)$', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 2.64575], {size: 3, color: '#4f46e5', name: '$(0, \\sqrt{7})$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -2.64575], {size: 3, color: '#4f46e5', name: '$(0, -\\sqrt{7})$', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.64575], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.64575, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{7}, 0)$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-2.64575, 0], {size: 3, color: '#4f46e5', name: '$(-\\sqrt{7}, 0)$', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 2.64575], {size: 3, color: '#4f46e5', name: '$(0, \\sqrt{7})$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -2.64575], {size: 3, color: '#4f46e5', name: '$(0, -\\sqrt{7})$', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -115,7 +115,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-3.5, 3.5, 3.5, -3.5],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.236], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.236, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{5}, 0)$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-2.236, 0], {size: 3, color: '#4f46e5', name: '$(-\\sqrt{5}, 0)$', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 2.236], {size: 3, color: '#4f46e5', name: '$(0, \\sqrt{5})$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -2.236], {size: 3, color: '#4f46e5', name: '$(0, -\\sqrt{5})$', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.236], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.236, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{5}, 0)$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-2.236, 0], {size: 3, color: '#4f46e5', name: '$(-\\sqrt{5}, 0)$', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 2.236], {size: 3, color: '#4f46e5', name: '$(0, \\sqrt{5})$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -2.236], {size: 3, color: '#4f46e5', name: '$(0, -\\sqrt{5})$', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -149,7 +149,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-5, 5, 5, -5],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [3, 0], {size: 3, color: '#4f46e5', name: '(3, 0)', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-3, 0], {size: 3, color: '#4f46e5', name: '(-3, 0)', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 3], {size: 3, color: '#4f46e5', name: '(0, 3)', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -3], {size: 3, color: '#4f46e5', name: '(0, -3)', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [3, 0], {size: 3, color: '#4f46e5', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-3, 0], {size: 3, color: '#4f46e5', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 3], {size: 3, color: '#4f46e5', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -3], {size: 3, color: '#4f46e5', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -183,7 +183,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 4, 4, -4],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.8284], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.8284, 0], {size: 3, color: '#4f46e5', name: '$(2\\sqrt{2}, 0)$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-2.8284, 0], {size: 3, color: '#4f46e5', name: '$(-2\\sqrt{2}, 0)$', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 2.8284], {size: 3, color: '#4f46e5', name: '$(0, 2\\sqrt{2})$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -2.8284], {size: 3, color: '#4f46e5', name: '$(0, -2\\sqrt{2})$', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.8284], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.8284, 0], {size: 3, color: '#4f46e5', name: '$(2\\sqrt{2}, 0)$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-2.8284, 0], {size: 3, color: '#4f46e5', name: '$(-2\\sqrt{2}, 0)$', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 2.8284], {size: 3, color: '#4f46e5', name: '$(0, 2\\sqrt{2})$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -2.8284], {size: 3, color: '#4f46e5', name: '$(0, -2\\sqrt{2})$', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -217,7 +217,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 4, 4, -4],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.449], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.449, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{6}, 0)$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-2.449, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{6}, 0)$', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 2.449], {size: 3, color: '#4f46e5', name: '$(0, \\sqrt{6})$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -2.449], {size: 3, color: '#4f46e5', name: '$(0, -\\sqrt{6})$', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 2.449], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2.449, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{6}, 0)$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-2.449, 0], {size: 3, color: '#4f46e5', name: '$(\\sqrt{6}, 0)$', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 2.449], {size: 3, color: '#4f46e5', name: '$(0, \\sqrt{6})$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -2.449], {size: 3, color: '#4f46e5', name: '$(0, -\\sqrt{6})$', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -251,7 +251,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-5, 5, 5, -5],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 3.464], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [3.464, 0], {size: 3, color: '#4f46e5', name: '$(2\\sqrt{3}, 0)$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [-3.464, 0], {size: 3, color: '#4f46e5', name: '$(-2\\sqrt{3}, 0)$', withLabel: true, label: {offset: [-35, 10]}});\nboard.create('point', [0, 3.464], {size: 3, color: '#4f46e5', name: '$(0, 2\\sqrt{3})$', withLabel: true, label: {offset: [10, 10]}});\nboard.create('point', [0, -3.464], {size: 3, color: '#4f46e5', name: '$(0, -2\\sqrt{3})$', withLabel: true, label: {offset: [10, -15]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 0], 3.464], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [3.464, 0], {size: 3, color: '#4f46e5', name: '$(2\\sqrt{3}, 0)$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-3.464, 0], {size: 3, color: '#4f46e5', name: '$(-2\\sqrt{3}, 0)$', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.create('point', [0, 3.464], {size: 3, color: '#4f46e5', name: '$(0, 2\\sqrt{3})$', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -3.464], {size: 3, color: '#4f46e5', name: '$(0, -2\\sqrt{3})$', withLabel: true, label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -537,7 +537,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-1, 4, 5, -2],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[2, 1], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 1], {size: 3, color: '#64748b', name: '$(0, 1)$', label: {offset: [0, 10]}});\nboard.create('point', [3.732, 0], {size: 3, color: '#64748b', name: '$(2+\\sqrt{3}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [0.268, 0], {size: 3, color: '#64748b', name: '$(2-\\sqrt{3}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [2, 1], {size: 2, color: 'black', name: 'Centre (2,1)', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[2, 1], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 1], {size: 3, color: '#64748b', name: '$(0, 1)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [3.732, 0], {size: 3, color: '#64748b', name: '$(2+\\sqrt{3}, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0.268, 0], {size: 3, color: '#64748b', name: '$(2-\\sqrt{3}, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [2, 1], {size: 2, color: 'black', name: 'Centre (2,1)', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -571,7 +571,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-2, 9, 10, -3],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[4, 3], 5], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '$(0, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [8, 0], {size: 3, color: '#64748b', name: '$(8, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '$(0, 6)$', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[4, 3], 5], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '$(0, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [8, 0], {size: 3, color: '#64748b', name: '$(8, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '$(0, 6)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -605,7 +605,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-1, 6, 7, -2],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[3, 2], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 2], {size: 3, color: '#64748b', name: '$(0, 2)$', label: {offset: [0, 10]}});\nboard.create('point', [5.236, 0], {size: 3, color: '#64748b', name: '$(3+\\sqrt{5}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [0.764, 0], {size: 3, color: '#64748b', name: '$(3-\\sqrt{5}, 0)$', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[3, 2], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 2], {size: 3, color: '#64748b', name: '$(0, 2)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [5.236, 0], {size: 3, color: '#64748b', name: '$(3+\\sqrt{5}, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0.764, 0], {size: 3, color: '#64748b', name: '$(3-\\sqrt{5}, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -639,7 +639,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 8, 6, -2],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[1, 3], 4], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 6.873], {size: 3, color: '#64748b', name: '$(0, 3+\\sqrt{15})$', label: {offset: [0, 10]}});\nboard.create('point', [0, -0.873], {size: 3, color: '#64748b', name: '$(0, 3-\\sqrt{15})$', label: {offset: [0, 10]}});\nboard.create('point', [3.646, 0], {size: 3, color: '#64748b', name: '$(1+\\sqrt{7}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [-1.646, 0], {size: 3, color: '#64748b', name: '$(1-\\sqrt{7}, 0)$', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[1, 3], 4], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 6.873], {size: 3, color: '#64748b', name: '$(0, 3+\\sqrt{15})$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, -0.873], {size: 3, color: '#64748b', name: '$(0, 3-\\sqrt{15})$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [3.646, 0], {size: 3, color: '#64748b', name: '$(1+\\sqrt{7}, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-1.646, 0], {size: 3, color: '#64748b', name: '$(1-\\sqrt{7}, 0)$', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -669,7 +669,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-1, 3, 5, -3],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[2, 0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)', label: {offset: [0, 10]}});\nboard.create('point', [4, 0], {size: 3, color: '#64748b', name: '(4, 0)', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[2, 0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [4, 0], {size: 3, color: '#64748b', name: '(4, 0)', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -699,7 +699,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 7, 4, -1],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 3], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)', label: {offset: [0, 10]}});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '(0, 6)', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 3], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '(0, 6)', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },

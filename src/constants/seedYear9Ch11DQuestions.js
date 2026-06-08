@@ -166,7 +166,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, 5], {size: 3, color: 'red', name: '(1, 5)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 5], {size: 3, color: 'red', name: '(1, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -205,7 +205,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 5], [1, 7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, 7], {size: 3, color: 'red', name: '(1, 7)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 5], [1, 7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 7], {size: 3, color: 'red', name: '(1, 7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -244,7 +244,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, 1], {size: 3, color: 'red', name: '(1, 1)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 1], {size: 3, color: 'red', name: '(1, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -283,7 +283,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, 0], {size: 3, color: 'red', name: '(1, 0)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 0], {size: 3, color: 'red', name: '(1, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -322,7 +322,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [1, -7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, -7], {size: 3, color: 'red', name: '(1, -7)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [1, -7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -7], {size: 3, color: 'red', name: '(1, -7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -361,7 +361,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -10.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -5], [1, -8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -5], {size: 3, color: 'red', name: '(0, -5)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, -8], {size: 3, color: 'red', name: '(1, -8)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -10.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -5], [1, -8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -5], {size: 3, color: 'red', name: '(0, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -8], {size: 3, color: 'red', name: '(1, -8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -400,7 +400,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5, 0], [5.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [3, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [3, -2], {size: 3, color: 'red', name: '(3, -2)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5, 0], [5.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [3, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [3, -2], {size: 3, color: 'red', name: '(3, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -439,7 +439,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5, 0], [6.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [4, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [4, 5], {size: 3, color: 'red', name: '(4, 5)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5, 0], [6.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [4, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [4, 5], {size: 3, color: 'red', name: '(4, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -478,7 +478,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, -3], {size: 3, color: 'red', name: '(1, -3)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -3], {size: 3, color: 'red', name: '(1, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -517,7 +517,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, -5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, -5], {size: 3, color: 'red', name: '(1, -5)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, -5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -5], {size: 3, color: 'red', name: '(1, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -556,7 +556,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, -2], {size: 3, color: 'red', name: '(1, -2)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -2], {size: 3, color: 'red', name: '(1, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -595,7 +595,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 3], [1, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {offset: [10, 5]}});\nboard.create('point', [1, -3], {size: 3, color: 'red', name: '(1, -3)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 3], [1, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -3], {size: 3, color: 'red', name: '(1, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1166,7 +1166,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('line', [[0, 6], [1, 9]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 6], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {offset: [10, 0]}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {offset: [-10, 10]}});\nboard.create('point', [1, 9], {size: 3, color: 'red', name: '(1, c)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('line', [[0, 6], [1, 9]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 6], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {autoPosition: false, offset: [10, 0]}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [1, 9], {size: 3, color: 'red', name: '(1, c)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1209,7 +1209,7 @@ export const Y9_CH11D_QUESTIONS = [
           "axis": true,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nboard.create('line', [[0, 8], [4, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 8], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {offset: [10, 0]}});\nboard.create('point', [4, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {offset: [-10, 10]}});\nboard.create('point', [-1, 10], {size: 3, color: 'red', name: '(-1, c)', withLabel: true, label: {offset: [10, 5]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('line', [[0, 8], [4, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 8], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {autoPosition: false, offset: [10, 0]}});\nboard.create('point', [4, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [-1, 10], {size: 3, color: 'red', name: '(-1, c)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
       }
     }
   },

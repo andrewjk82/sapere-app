@@ -14,7 +14,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 8, 12, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar R = board.create('point', [0,0], {name: 'R', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar Q = board.create('point', [10,0], {name: 'Q', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar P = board.create('point', [0,6], {name: 'P', size: 2, color: '#64748b', label: {offset: [-10,10]}});\nboard.create('polygon', [P,R,Q], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, 3, '6 cm']);\nboard.create('text', [5, -1, '10 cm']);\nboard.create('angle', [P,Q,R], {radius: 1.5, name: '\\θ', label: {offset: [0, 0]}});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar R = board.create('point', [0,0], {name: 'R', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar Q = board.create('point', [10,0], {name: 'Q', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar P = board.create('point', [0,6], {name: 'P', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,10]}});\nboard.create('polygon', [P,R,Q], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, 3, '6 cm']);\nboard.create('text', [5, -1, '10 cm']);\nboard.create('angle', [P,Q,R], {radius: 1.5, name: '\\θ', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -31,7 +31,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 12, 17, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [15,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 9.95], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [7.5, 9, '18 cm']);\nboard.create('text', [7.5, -1, '15 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '\\θ', label: {offset: [0, 0]}});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [15,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 9.95], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [7.5, 9, '18 cm']);\nboard.create('text', [7.5, -1, '15 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '\\θ', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -48,7 +48,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 16, 12, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [10.58,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 14.56], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [5, -1, 'x cm']);\nboard.create('text', [5, 8, '18 cm']);\nboard.create('angle', [A,C,B], {radius: 2, name: '36^\\°', label: {offset: [0, 0]}});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [10.58,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 14.56], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [5, -1, 'x cm']);\nboard.create('text', [5, 8, '18 cm']);\nboard.create('angle', [A,C,B], {radius: 2, name: '36^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('segment', [[0,0.5], [0.5,0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -65,7 +65,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-4, 5, 12, -12],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar S = board.create('point', [0,0], {name: 'S', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar U = board.create('point', [0,-7.2], {name: 'U', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar T = board.create('point', [8,0], {name: 'T', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nboard.create('polygon', [S,T,U], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [4, 1, '8 cm']);\nboard.create('text', [-2, -3.6, 'x cm']);\nboard.create('angle', [S,T,U], {radius: 2, name: '42^\\°', label: {offset: [0, 0]}});\nboard.create('segment', [[0,-0.5], [0.5,-0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,-0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar S = board.create('point', [0,0], {name: 'S', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar U = board.create('point', [0,-7.2], {name: 'U', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]}});\nvar T = board.create('point', [8,0], {name: 'T', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nboard.create('polygon', [S,T,U], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [4, 1, '8 cm']);\nboard.create('text', [-2, -3.6, 'x cm']);\nboard.create('angle', [S,T,U], {radius: 2, name: '42^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('segment', [[0,-0.5], [0.5,-0.5]], {strokeColor: 'black'});\nboard.create('segment', [[0.5,-0.5], [0.5,0]], {strokeColor: 'black'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -82,7 +82,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 12, 20, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [17.32,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 10], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [-1.5, 5, 'x cm']);\nboard.create('text', [9, 6, '20 cm']);\nboard.create('angle', [C,B,A], {radius: 3, name: '30^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [17.32,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 10], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [-1.5, 5, 'x cm']);\nboard.create('text', [9, 6, '20 cm']);\nboard.create('angle', [C,B,A], {radius: 3, name: '30^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -99,7 +99,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 40, 40, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [36,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 36], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [-2, 18, 'x cm']);\nboard.create('text', [18, 38, '36 cm']);\nboard.create('angle', [A,C,B], {radius: 5, name: '45^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [36,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 36], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [-2, 18, 'x cm']);\nboard.create('text', [18, 38, '36 cm']);\nboard.create('angle', [A,C,B], {radius: 5, name: '45^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -116,7 +116,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 50, 30, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [25,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 43.3], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [12.5, 45, 'x cm']);\nboard.create('text', [15, 20, '50 cm']);\nboard.create('angle', [A,B,C], {radius: 4, name: '60^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [25,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [0, 43.3], {visible: true, size: 2, color: '#64748b'});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('text', [12.5, 45, 'x cm']);\nboard.create('text', [15, 20, '50 cm']);\nboard.create('angle', [A,B,C], {radius: 4, name: '60^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -133,7 +133,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 10, 14, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar C = board.create('point', [12,0], {name: 'C', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar B = board.create('point', [7.16, 3.52], {name: 'B', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [6, -1, '12']);\nboard.create('text', [2, 3, '8']);\nboard.create('text', [10, 3, '6']);\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar C = board.create('point', [12,0], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar B = board.create('point', [7.16, 3.52], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [6, -1, '12']);\nboard.create('text', [2, 3, '8']);\nboard.create('text', [10, 3, '6']);\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -194,7 +194,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 8, 10, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar Y = board.create('point', [0,0], {name: 'Y', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar X = board.create('point', [6.2,0], {name: 'X', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar Z = board.create('point', [8.3*Math.cos(72*Math.PI/180), 8.3*Math.sin(72*Math.PI/180)], {name: 'Z', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [Y,X,Z], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('angle', [X,Y,Z], {radius: 1.5, name: '72^\\°', label: {offset: [0, 0]}});\nboard.create('text', [3, -1, '6.2 cm']);\nboard.create('text', [1, 5, '8.3 cm']);\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar Y = board.create('point', [0,0], {name: 'Y', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar X = board.create('point', [6.2,0], {name: 'X', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar Z = board.create('point', [8.3*Math.cos(72*Math.PI/180), 8.3*Math.sin(72*Math.PI/180)], {name: 'Z', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nboard.create('polygon', [Y,X,Z], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('angle', [X,Y,Z], {radius: 1.5, name: '72^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('text', [3, -1, '6.2 cm']);\nboard.create('text', [1, 5, '8.3 cm']);\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -255,7 +255,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 4, 12, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar X = board.create('point', [0,0], {name: 'X', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar B = board.create('point', [10,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar A = board.create('point', [0, 1.76], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,10]}});\nboard.create('segment', [X,B], {strokeColor: 'black', strokeWidth: 2});\nboard.create('segment', [X,A], {strokeColor: 'black', strokeWidth: 2});\nboard.create('segment', [A,B], {strokeColor: 'red', dash: 2});\nboard.create('text', [4, -1, '800 m']);\nboard.create('text', [-1, 0.8, 'A']);\nboard.create('text', [10, 0.8, 'B']);\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar X = board.create('point', [0,0], {name: 'X', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [10,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar A = board.create('point', [0, 1.76], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,10]}});\nboard.create('segment', [X,B], {strokeColor: 'black', strokeWidth: 2});\nboard.create('segment', [X,A], {strokeColor: 'black', strokeWidth: 2});\nboard.create('segment', [A,B], {strokeColor: 'red', dash: 2});\nboard.create('text', [4, -1, '800 m']);\nboard.create('text', [-1, 0.8, 'A']);\nboard.create('text', [10, 0.8, 'B']);\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -272,7 +272,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 6, 10, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar B = board.create('point', [7,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar C = board.create('point', [2.71, 3.35], {name: 'C', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [3, -1, '7 cm']);\nboard.create('angle', [B,A,C], {radius: 1, name: '51^\\°', label: {offset: [0, 0]}});\nboard.create('angle', [C,B,A], {radius: 1, name: '38^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [7,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [2.71, 3.35], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [3, -1, '7 cm']);\nboard.create('angle', [B,A,C], {radius: 1, name: '51^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.create('angle', [C,B,A], {radius: 1, name: '38^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -289,7 +289,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 6, 8, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar B = board.create('point', [6,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar C = board.create('point', [4*Math.cos(48*Math.PI/180), 4*Math.sin(48*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [3, -1, '6 cm']);\nboard.create('text', [0.5, 2, '4 cm']);\nboard.create('angle', [B,A,C], {radius: 1, name: '48^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [6,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [4*Math.cos(48*Math.PI/180), 4*Math.sin(48*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [3, -1, '6 cm']);\nboard.create('text', [0.5, 2, '4 cm']);\nboard.create('angle', [B,A,C], {radius: 1, name: '48^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -306,7 +306,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-6, 12, 10, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar C = board.create('point', [0,8], {name: 'C', size: 2, color: '#64748b', label: {offset: [0,10]} });\nvar A = board.create('point', [-4,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar B = board.create('point', [7,1], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-3, 5, '10 cm']);\nboard.create('text', [4, 5, '7 cm']);\nboard.create('angle', [A,C,B], {radius: 2, name: '80^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar C = board.create('point', [0,8], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]} });\nvar A = board.create('point', [-4,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]}});\nvar B = board.create('point', [7,1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-3, 5, '10 cm']);\nboard.create('text', [4, 5, '7 cm']);\nboard.create('angle', [A,C,B], {radius: 2, name: '80^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -323,7 +323,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-15, 15, 10, -5],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar B = board.create('point', [0,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [0,-10]} });\nvar A = board.create('point', [-10,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar C = board.create('point', [12*Math.cos(60*Math.PI/180), 12*Math.sin(60*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {offset: [10,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-5, -1, '10 cm']);\nboard.create('text', [4, 5, '12 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '120^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar B = board.create('point', [0,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,-10]} });\nvar A = board.create('point', [-10,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]}});\nvar C = board.create('point', [12*Math.cos(60*Math.PI/180), 12*Math.sin(60*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-5, -1, '10 cm']);\nboard.create('text', [4, 5, '12 cm']);\nboard.create('angle', [C,B,A], {radius: 2, name: '120^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -340,7 +340,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-2, 10, 16, -2],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]} });\nvar B = board.create('point', [8,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar C = board.create('point', [15*Math.cos(31*Math.PI/180), 15*Math.sin(31*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [6, 5, '15 cm']);\nboard.create('text', [12, 3, '8 cm']);\nboard.create('angle', [B,A,C], {radius: 3, name: '31^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [8,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [15*Math.cos(31*Math.PI/180), 15*Math.sin(31*Math.PI/180)], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [6, 5, '15 cm']);\nboard.create('text', [12, 3, '8 cm']);\nboard.create('angle', [B,A,C], {radius: 3, name: '31^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -357,7 +357,7 @@ const Y10_CH12I_QUESTIONS = [
     graphData: { jsxGraph: {
         width: 300, height: 250, boundingbox: [-5, 10, 30, -15],
         boardOptions: { axis: false, keepaspectratio: true, showNavigation: false },
-        script: "board.suspendUpdate();\nvar C = board.create('point', [0,5], {name: 'C', size: 2, color: '#64748b', label: {offset: [-10,10]} });\nvar A = board.create('point', [0,-10], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar B = board.create('point', [25*Math.cos(-18*Math.PI/180), 5+25*Math.sin(-18*Math.PI/180)], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, -2.5, '15 cm']);\nboard.create('text', [12, 3, '25 cm']);\nboard.create('angle', [A,C,B], {radius: 3, name: '18^\\°', label: {offset: [0, 0]}});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nvar C = board.create('point', [0,5], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,10]} });\nvar A = board.create('point', [0,-10], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]}});\nvar B = board.create('point', [25*Math.cos(-18*Math.PI/180), 5+25*Math.sin(-18*Math.PI/180)], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nboard.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('text', [-1.5, -2.5, '15 cm']);\nboard.create('text', [12, 3, '25 cm']);\nboard.create('angle', [A,C,B], {radius: 3, name: '18^\\°', label: {autoPosition: false, offset: [0, 0]}});\nboard.unsuspendUpdate();"
       }
     }
   }

@@ -314,7 +314,7 @@ export const Y12A_CH5F_QUESTIONS = [
                   1,
                   -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[0,-2], [0, 3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[-2,0], [1, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [0.8, -0.2], 'x', {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('text', [-0.1, 2.8], 'y', {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('functiongraph', [function(x){ return Math.log(-2*x); }, -2, -0.01], {strokeColor: 'black', strokeWidth: 1});\nboard.create('point', [-0.5, 0], {name: '-1/2', size: 2, label: {offset: [5, 10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[0,-2], [0, 3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[-2,0], [1, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [0.8, -0.2], 'x', {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('text', [-0.1, 2.8], 'y', {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('functiongraph', [function(x){ return Math.log(-2*x); }, -2, -0.01], {strokeColor: 'black', strokeWidth: 1});\nboard.create('point', [-0.5, 0], {name: '-1/2', size: 2, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
       }
 },
   },

@@ -515,7 +515,7 @@ export const Y12A_CH5A_QUESTIONS = [
           4,
           -1
         ],
-        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {ticks:{visible:false}}); board.create('axis', [[0,0],[0,1]], {ticks:{visible:false}});\nboard.create('line', [[-4, 2], [4, 2]], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){ return Math.exp(x) + 2; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {name: '(0,3)', size: 3, color: 'red', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {ticks:{visible:false}}); board.create('axis', [[0,0],[0,1]], {ticks:{visible:false}});\nboard.create('line', [[-4, 2], [4, 2]], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){ return Math.exp(x) + 2; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {name: '(0,3)', size: 3, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -709,7 +709,7 @@ export const Y12A_CH5A_QUESTIONS = [
           2.5,
           -0.5
         ],
-        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {ticks:{visible:false}}); board.create('axis', [[0,0],[0,1]], {ticks:{visible:false}});\nboard.create('functiongraph', [function(x){ return Math.exp(-2*x); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 1], {name: '(0,1)', size: 3, color: 'red', label: {offset: [0, 10]}});\nboard.create('point', [-0.5, Math.E], {name: '(-0.5, e)', size: 3, color: 'red', label: {offset: [0, 10]}});\nboard.create('line', [[-0.5, 0], [-0.5, Math.E]], {strokeColor: 'gray', strokeWidth: 1, dash: 1});\nboard.create('line', [[0, Math.E], [-0.5, Math.E]], {strokeColor: 'gray', strokeWidth: 1, dash: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('axis', [[0,0],[1,0]], {ticks:{visible:false}}); board.create('axis', [[0,0],[0,1]], {ticks:{visible:false}});\nboard.create('functiongraph', [function(x){ return Math.exp(-2*x); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 1], {name: '(0,1)', size: 3, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-0.5, Math.E], {name: '(-0.5, e)', size: 3, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('line', [[-0.5, 0], [-0.5, Math.E]], {strokeColor: 'gray', strokeWidth: 1, dash: 1});\nboard.create('line', [[0, Math.E], [-0.5, Math.E]], {strokeColor: 'gray', strokeWidth: 1, dash: 1});\nboard.unsuspendUpdate();"
       }
     }
   },

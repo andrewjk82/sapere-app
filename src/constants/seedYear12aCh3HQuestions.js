@@ -859,7 +859,7 @@ export const Y12A_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 8, 3, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.8,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return -x*x + 6;}, -3, 3], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return -x*x + 2;}, -3, 3], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return -x*x;}, -3, 3], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return -x*x + 4;}, -3, 3], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 3], {name: 'A(1,3)', size: 3, color: 'red', label: {offset: [10, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.8,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return -x*x + 6;}, -3, 3], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return -x*x + 2;}, -3, 3], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return -x*x;}, -3, 3], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return -x*x + 4;}, -3, 3], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 3], {name: 'A(1,3)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -891,7 +891,7 @@ export const Y12A_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 8, 4, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.8,0], [3.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 2*x - 2;}, -2, 4], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x;}, -2, 4], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x + 4;}, -2, 4], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x + 2;}, -2, 4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 4], {name: 'A(1,4)', size: 3, color: 'red', label: {offset: [-15, 12]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.8,0], [3.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 2*x - 2;}, -2, 4], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x;}, -2, 4], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x + 4;}, -2, 4], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x + 2;}, -2, 4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 4], {name: 'A(1,4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 12]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -923,7 +923,7 @@ export const Y12A_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 10, 3, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.8,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 2*x*x*x - 1;}, -2, 2.5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x*x*x + 1;}, -2, 2.5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x*x*x + 5;}, -2, 2.5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x*x*x + 3;}, -2, 2.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 5], {name: 'A(1,5)', size: 3, color: 'red', label: {offset: [-15, 12]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.8,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 2*x*x*x - 1;}, -2, 2.5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x*x*x + 1;}, -2, 2.5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x*x*x + 5;}, -2, 2.5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2*x*x*x + 3;}, -2, 2.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 5], {name: 'A(1,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 12]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -955,7 +955,7 @@ export const Y12A_CH3H_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-1, 8, 5, -1],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.8,0], [4.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.8], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 2/x;}, 0.2, 5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2/x + 4;}, 0.2, 5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2/x + 2;}, 0.2, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 3], {name: 'A(2,3)', size: 3, color: 'red', label: {offset: [10, 10]}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.8,0], [4.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.8], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 2/x;}, 0.2, 5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2/x + 4;}, 0.2, 5], {strokeColor: 'gray', strokeWidth: 1, dash: 2});\nboard.create('functiongraph', [function(x){return 2/x + 2;}, 0.2, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 3], {name: 'A(2,3)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1670,7 +1670,7 @@ export const Y12A_CH3H_QUESTIONS = [
             "width": 350,
             "height": 250,
             "boundingbox": [-5, 10, 5, -6],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0], [4.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 4/x + 2;}, 0.1, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){return 4/x + 3;}, -5, -0.1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 6], {name: 'A(1,6)', size: 3, color: 'red', label: {offset: [10, 10]}});\nboard.create('point', [-2, 1], {name: 'B(-2,1)', size: 3, color: 'red', label: {offset: [-15, -15]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0], [4.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return 4/x + 2;}, 0.1, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){return 4/x + 3;}, -5, -0.1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 6], {name: 'A(1,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-2, 1], {name: 'B(-2,1)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.unsuspendUpdate();"
           }
         }
       }

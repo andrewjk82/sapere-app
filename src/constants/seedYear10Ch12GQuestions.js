@@ -267,7 +267,7 @@ export const Y10_CH12G_QUESTIONS = [
             "keepaspectratio": true,
             "showNavigation": false
         },
-        "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-10]}});\nvar B = board.create('point', [6,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-10]}});\nvar C = board.create('point', [8,3], {name: 'C', size: 2, color: '#64748b', label: {offset: [10,10]}});\nvar D = board.create('point', [2,3], {name: 'D', size: 2, color: '#64748b', label: {offset: [-10,10]}});\nvar p = board.create('polygon', [A,B,C,D], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('segment', [B,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]}});\nvar B = board.create('point', [6,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [8,3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,10]}});\nvar D = board.create('point', [2,3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,10]}});\nvar p = board.create('polygon', [A,B,C,D], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.create('segment', [B,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
     }
 },
 
@@ -298,7 +298,7 @@ export const Y10_CH12G_QUESTIONS = [
             "keepaspectratio": true,
             "showNavigation": false
         },
-        "script": "board.suspendUpdate();\nvar A = board.create('point', [-3,0], {name: 'A', size: 2, color: '#64748b', label: {offset: [-10,-15]}});\nvar B = board.create('point', [4,0], {name: 'B', size: 2, color: '#64748b', label: {offset: [10,-15]}});\nvar O = board.create('point', [0,0], {name: 'O', size: 2, color: '#64748b', label: {offset: [0,-15]}});\nvar V = board.create('point', [0,4], {name: 'V', size: 2, color: '#64748b', label: {offset: [0,10]}});\nboard.create('segment', [A,B], {strokeColor: 'gray', strokeWidth: 2});\nboard.create('segment', [O,V], {strokeColor: 'black', strokeWidth: 3});\nboard.create('segment', [V,A], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('segment', [V,B], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar A = board.create('point', [-3,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-15]}});\nvar B = board.create('point', [4,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-15]}});\nvar O = board.create('point', [0,0], {name: 'O', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,-15]}});\nvar V = board.create('point', [0,4], {name: 'V', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nboard.create('segment', [A,B], {strokeColor: 'gray', strokeWidth: 2});\nboard.create('segment', [O,V], {strokeColor: 'black', strokeWidth: 3});\nboard.create('segment', [V,A], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('segment', [V,B], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
     }
 },
 
