@@ -423,7 +423,7 @@ export const Y9_CH5G_QUESTIONS = [
               13,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[0,0], [12,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [6, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[6, 0], [11, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[0,0], [12,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [6, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[6, 0], [11, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -458,7 +458,7 @@ export const Y9_CH5G_QUESTIONS = [
               8,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[1, 0], [-4, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[1, 0], [-4, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -493,7 +493,7 @@ export const Y9_CH5G_QUESTIONS = [
               4,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [-8, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-3, 0], [-8, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -528,7 +528,7 @@ export const Y9_CH5G_QUESTIONS = [
               5,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-2, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-2, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -563,7 +563,7 @@ export const Y9_CH5G_QUESTIONS = [
               6,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-7,0], [5,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-1, 0], [-6, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-7,0], [5,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-1, 0], [-6, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -598,7 +598,7 @@ export const Y9_CH5G_QUESTIONS = [
               4,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [2, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-9,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-3, 0], [2, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -633,7 +633,7 @@ export const Y9_CH5G_QUESTIONS = [
               9,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-4,0], [8,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1.5, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[1.5, 0], [-3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-4,0], [8,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [1.5, 0], {size: 3, color: 'red', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[1.5, 0], [-3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -668,7 +668,7 @@ export const Y9_CH5G_QUESTIONS = [
               5,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-2.5, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-8,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-2.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-2.5, 0], [3, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -703,7 +703,7 @@ export const Y9_CH5G_QUESTIONS = [
               7,
               -1
             ],
-            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-6,0], [6,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-0.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-0.5, 0], [-5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-6,0], [6,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-0.5, 0], {size: 3, color: 'red', fillColor: 'red', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-0.5, 0], [-5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
           }
         }
       }
@@ -741,7 +741,7 @@ export const Y9_CH5G_QUESTIONS = [
           3,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-6,0], [2,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-3, 0], [1.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-6,0], [2,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-3, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-3, 0], [1.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -776,7 +776,7 @@ export const Y9_CH5G_QUESTIONS = [
           8,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-1,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [3, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[3, 0], [-0.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-1,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [3, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[3, 0], [-0.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -811,7 +811,7 @@ export const Y9_CH5G_QUESTIONS = [
           4,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-1, 0], [-4.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-1, 0], [-4.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -846,7 +846,7 @@ export const Y9_CH5G_QUESTIONS = [
           7,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-2,0], [6,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [2, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[2, 0], [5.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-2,0], [6,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [2, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[2, 0], [5.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -881,7 +881,7 @@ export const Y9_CH5G_QUESTIONS = [
           4,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1.5, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-1.5, 0], [-4.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1.5, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-1.5, 0], [-4.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -916,7 +916,7 @@ export const Y9_CH5G_QUESTIONS = [
           5,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-4,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-0.5, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-0.5, 0], [3.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-4,0], [4,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-0.5, 0], {size: 3, color: 'blue', fillColor: 'blue', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-0.5, 0], [3.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -951,7 +951,7 @@ export const Y9_CH5G_QUESTIONS = [
           8,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-1,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [2.5, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[2.5, 0], [-0.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-1,0], [7,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [2.5, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[2.5, 0], [-0.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -986,7 +986,7 @@ export const Y9_CH5G_QUESTIONS = [
           6,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-3,0], [5,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [0.5, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[0.5, 0], [4.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-3,0], [5,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [0.5, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[0.5, 0], [4.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1021,7 +1021,7 @@ export const Y9_CH5G_QUESTIONS = [
           4,
           -1
         ],
-        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1.5, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false});\nboard.create('arrow', [[-1.5, 0], [2.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nvar axis = board.create('axis', [[-5,0], [3,0]], {ticks: {insertTicks: false, ticksDistance: 1, minorTicks: 0}});\nboard.create('point', [-1.5, 0], {size: 3, color: 'blue', fillColor: 'white', name: '', fixed: true, withLabel: false, label: {offset: [0, 10]}});\nboard.create('arrow', [[-1.5, 0], [2.5, 0]], {strokeColor: 'blue', strokeWidth: 3});\nboard.unsuspendUpdate();"
       }
     }
   }

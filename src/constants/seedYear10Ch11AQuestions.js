@@ -537,7 +537,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-1, 4, 5, -2],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[2, 1], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 1], {size: 3, color: '#64748b', name: '$(0, 1)$'});\nboard.create('point', [3.732, 0], {size: 3, color: '#64748b', name: '$(2+\\sqrt{3}, 0)$'});\nboard.create('point', [0.268, 0], {size: 3, color: '#64748b', name: '$(2-\\sqrt{3}, 0)$'});\nboard.create('point', [2, 1], {size: 2, color: 'black', name: 'Centre (2,1)'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[2, 1], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 1], {size: 3, color: '#64748b', name: '$(0, 1)$', label: {offset: [0, 10]}});\nboard.create('point', [3.732, 0], {size: 3, color: '#64748b', name: '$(2+\\sqrt{3}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [0.268, 0], {size: 3, color: '#64748b', name: '$(2-\\sqrt{3}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [2, 1], {size: 2, color: 'black', name: 'Centre (2,1)', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -571,7 +571,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-2, 9, 10, -3],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[4, 3], 5], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '$(0, 0)$'});\nboard.create('point', [8, 0], {size: 3, color: '#64748b', name: '$(8, 0)$'});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '$(0, 6)$'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[4, 3], 5], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '$(0, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [8, 0], {size: 3, color: '#64748b', name: '$(8, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '$(0, 6)$', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -605,7 +605,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-1, 6, 7, -2],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[3, 2], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 2], {size: 3, color: '#64748b', name: '$(0, 2)$'});\nboard.create('point', [5.236, 0], {size: 3, color: '#64748b', name: '$(3+\\sqrt{5}, 0)$'});\nboard.create('point', [0.764, 0], {size: 3, color: '#64748b', name: '$(3-\\sqrt{5}, 0)$'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[3, 2], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 2], {size: 3, color: '#64748b', name: '$(0, 2)$', label: {offset: [0, 10]}});\nboard.create('point', [5.236, 0], {size: 3, color: '#64748b', name: '$(3+\\sqrt{5}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [0.764, 0], {size: 3, color: '#64748b', name: '$(3-\\sqrt{5}, 0)$', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -639,7 +639,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 8, 6, -2],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[1, 3], 4], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 6.873], {size: 3, color: '#64748b', name: '$(0, 3+\\sqrt{15})$'});\nboard.create('point', [0, -0.873], {size: 3, color: '#64748b', name: '$(0, 3-\\sqrt{15})$'});\nboard.create('point', [3.646, 0], {size: 3, color: '#64748b', name: '$(1+\\sqrt{7}, 0)$'});\nboard.create('point', [-1.646, 0], {size: 3, color: '#64748b', name: '$(1-\\sqrt{7}, 0)$'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[1, 3], 4], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 6.873], {size: 3, color: '#64748b', name: '$(0, 3+\\sqrt{15})$', label: {offset: [0, 10]}});\nboard.create('point', [0, -0.873], {size: 3, color: '#64748b', name: '$(0, 3-\\sqrt{15})$', label: {offset: [0, 10]}});\nboard.create('point', [3.646, 0], {size: 3, color: '#64748b', name: '$(1+\\sqrt{7}, 0)$', label: {offset: [0, 10]}});\nboard.create('point', [-1.646, 0], {size: 3, color: '#64748b', name: '$(1-\\sqrt{7}, 0)$', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -669,7 +669,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-1, 3, 5, -3],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[2, 0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)'});\nboard.create('point', [4, 0], {size: 3, color: '#64748b', name: '(4, 0)'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[2, 0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)', label: {offset: [0, 10]}});\nboard.create('point', [4, 0], {size: 3, color: '#64748b', name: '(4, 0)', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -699,7 +699,7 @@ export const Y10_CH11A_QUESTIONS = [
         height: 300,
         boundingbox: [-4, 7, 4, -1],
         boardOptions: { axis: true, grid: true, keepaspectratio: true },
-        script: "board.suspendUpdate();\nboard.create('circle', [[0, 3], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)'});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '(0, 6)'});\nboard.unsuspendUpdate();"
+        script: "board.suspendUpdate();\nboard.create('circle', [[0, 3], 3], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0, 0], {size: 3, color: '#64748b', name: '(0, 0)', label: {offset: [0, 10]}});\nboard.create('point', [0, 6], {size: 3, color: '#64748b', name: '(0, 6)', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },

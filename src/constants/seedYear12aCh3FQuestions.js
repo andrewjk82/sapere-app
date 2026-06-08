@@ -336,7 +336,7 @@ export const Y12A_CH3F_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-5, 5, 4, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0], [3.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('segment', [[-5,-2], [-3,-2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('segment', [[-3,-2], [2,3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('segment', [[2,3], [4,3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, -2], {size: 2, color: 'blue', name: ''});\nboard.create('point', [2, 3], {size: 2, color: 'blue', name: ''});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0], [3.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('segment', [[-5,-2], [-3,-2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('segment', [[-3,-2], [2,3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('segment', [[2,3], [4,3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, -2], {size: 2, color: 'blue', name: '', label: {offset: [0, 10]}});\nboard.create('point', [2, 3], {size: 2, color: 'blue', name: '', label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },

@@ -252,7 +252,27 @@ Then find the array where exam papers are listed (search for `chapterId: 'exam:a
 },
 ```
 
-**Step 2: Build and deploy**
+**Step 2: Register in allPastPaperQuestions.js (Practice Paper Generator)**
+
+Open `/Users/andrewkim/Desktop/sapere1/src/constants/allPastPaperQuestions.js`.
+
+Add the import near the top with the other imports:
+```js
+import { [SCHOOLNAME]_[YEAR]_QUESTIONS } from './seed[SchoolName][Year]Questions.js';
+```
+
+Then add the spread inside the `ALL_PAST_PAPER_QUESTIONS` array:
+```js
+export const ALL_PAST_PAPER_QUESTIONS = [
+  // ... existing entries ...
+  ...[SCHOOLNAME]_[YEAR]_QUESTIONS,
+  // ─── Add new past paper arrays above this line ────────────────────────────
+];
+```
+
+> This file powers the "Generate Practice Paper" button in HscJourney — students get randomised questions drawn from every registered past paper.
+
+**Step 3: Build and deploy**
 ```
 npm run build
 git add -A

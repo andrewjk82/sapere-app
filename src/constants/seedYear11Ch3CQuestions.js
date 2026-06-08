@@ -61,7 +61,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 5, 4, -5],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 3*x - 3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -3], {name: '(0,-3)', visible: true, withLabel: true});\nboard.create('point', [1, 0], {name: '(1,0)', visible: true, withLabel: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 3*x - 3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -3], {name: '(0,-3)', visible: true, withLabel: true, label: {offset: [0, 10]}});\nboard.create('point', [1, 0], {name: '(1,0)', visible: true, withLabel: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -128,7 +128,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 5, 5, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (6 - 2*x)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, withLabel: true});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, withLabel: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (6 - 2*x)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, withLabel: true, label: {offset: [0, 10]}});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, withLabel: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -157,7 +157,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 5, 3, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x + 2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 2], {name: '(0,2)', visible: true});\nboard.create('point', [-2, 0], {name: '(-2,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x + 2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [-2, 0], {name: '(-2,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -184,7 +184,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 8, 5, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 6 - 3*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 6], {name: '(0,6)', visible: true});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 6 - 3*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 6], {name: '(0,6)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -211,7 +211,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 3, 6, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 0.5*x - 2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 0.5*x - 2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -238,7 +238,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 4, 4, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 2 - x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 2], {name: '(0,2)', visible: true});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 2 - x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -265,7 +265,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 5, 2, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 3*x + 3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 3], {name: '(0,3)', visible: true});\nboard.create('point', [-1, 0], {name: '(-1,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 3*x + 3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 3], {name: '(0,3)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [-1, 0], {name: '(-1,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -292,7 +292,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 3, 6, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 0.5*x - 2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 0.5*x - 2; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -319,7 +319,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 3, 6, -8],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 1.5*x - 6; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -6], {name: '(0,-6)', visible: true});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 1.5*x - 6; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -6], {name: '(0,-6)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -346,7 +346,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-8, 2, 2, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (-x - 6)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true});\nboard.create('point', [-6, 0], {name: '(-6,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (-x - 6)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [-6, 0], {name: '(-6,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -373,7 +373,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 6, 5, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (12 - 4*x)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 4], {name: '(0,4)', visible: true});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (12 - 4*x)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 4], {name: '(0,4)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -421,7 +421,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 5, 3, -5],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -3*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [1, -3], {name: '(1,-3)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -3*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [1, -3], {name: '(1,-3)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -450,7 +450,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-3, 4, 3, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 2*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [1, 2], {name: '(1,2)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 2*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [1, 2], {name: '(1,2)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -477,7 +477,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 6, 2, -6],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 4*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [1, 4], {name: '(1,4)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 4*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [1, 4], {name: '(1,4)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -504,7 +504,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 6, 2, -6],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -5*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [1, -5], {name: '(1,-5)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -5*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [1, -5], {name: '(1,-5)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -531,7 +531,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 3, 4, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -0.5*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [2, -1], {name: '(2,-1)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -0.5*x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [2, -1], {name: '(2,-1)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -558,7 +558,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-5, 3, 5, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [3, 1], {name: '(3,1)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [3, 1], {name: '(3,1)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -585,7 +585,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-5, 4, 5, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (-2*x)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [3, -2], {name: '(3,-2)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return (-2*x)/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [3, -2], {name: '(3,-2)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -614,7 +614,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 3, 3, -6],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -2*x - 4; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -4], {name: '(0,-4)', visible: true});\nboard.create('point', [-2, 0], {name: '(-2,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -2*x - 4; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -4], {name: '(0,-4)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [-2, 0], {name: '(-2,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -641,7 +641,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 3, 5, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x/3 - 1; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -1], {name: '(0,-1)', visible: true});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x/3 - 1; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -1], {name: '(0,-1)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -668,7 +668,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-5, 3, 5, -3],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -x/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true});\nboard.create('point', [3, -1], {name: '(3,-1)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -x/3; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 0], {name: '(0,0)', visible: true, label: {offset: [0, 10]}});\nboard.create('point', [3, -1], {name: '(3,-1)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -693,7 +693,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 4, 5, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('line', [[2, -4], [2, 4]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [2, 0], {name: '2', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('line', [[2, -4], [2, 4]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [2, 0], {name: '2', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -716,7 +716,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 5, 4, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('line', [[-4, 3], [4, 3]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 3], {name: '3', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.2, 'y'], {fontSize: 14});\nboard.create('line', [[-4, 3], [4, 3]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, 3], {name: '3', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -739,7 +739,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-5, 4, 2, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('line', [[-3, -4], [-3, 4]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [-3, 0], {name: '-3', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('line', [[-3, -4], [-3, 4]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [-3, 0], {name: '-3', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -762,7 +762,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 2, 4, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('line', [[-4, -2], [4, -2]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '-2', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('line', [[-4, -2], [4, -2]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2], {name: '-2', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -789,7 +789,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-4, 2, 4, -5],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('line', [[-4, -2.5], [4, -2.5]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2.5], {name: '-2.5', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 1.2, 'y'], {fontSize: 14});\nboard.create('line', [[-4, -2.5], [4, -2.5]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [0, -2.5], {name: '-2.5', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -816,7 +816,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 4, 4, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.5, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('line', [[4/3, -4], [4/3, 4]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [4/3, 0], {name: '4/3', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.5, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.2, 'y'], {fontSize: 14});\nboard.create('line', [[4/3, -4], [4/3, 4]], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [4/3, 0], {name: '4/3', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1133,7 +1133,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 350,
         "height": 250,
         "boundingbox": [-2, 8, 8, -4],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 6 - x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('functiongraph', [function(x){ return x - 2; }], {strokeColor: '#f43f5e', strokeWidth: 1.5});\nboard.create('point', [4, 2], {name: '(4,2)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 6 - x; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('functiongraph', [function(x){ return x - 2; }], {strokeColor: '#f43f5e', strokeWidth: 1.5});\nboard.create('point', [4, 2], {name: '(4,2)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1336,7 +1336,7 @@ export const Y11_CH3C_QUESTIONS = [
         "width": 400,
         "height": 300,
         "boundingbox": [-2, 8, 6, -2],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x + 1; }], {strokeColor: '#4f46e5', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return 2*x - 1; }], {strokeColor: '#8b5cf6', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return -0.5*x + 4; }], {strokeColor: '#10b981', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return 3; }], {strokeColor: '#f43f5e', strokeWidth: 1.2});\nboard.create('point', [2, 3], {name: '(2,3)', visible: true});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return x + 1; }], {strokeColor: '#4f46e5', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return 2*x - 1; }], {strokeColor: '#8b5cf6', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return -0.5*x + 4; }], {strokeColor: '#10b981', strokeWidth: 1.2});\nboard.create('functiongraph', [function(x){ return 3; }], {strokeColor: '#f43f5e', strokeWidth: 1.2});\nboard.create('point', [2, 3], {name: '(2,3)', visible: true, label: {offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     }
   },
