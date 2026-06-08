@@ -618,7 +618,11 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
             Answer Booklet
           </button>
           <button
-            onClick={() => setPaperSeed(Date.now())}
+            onClick={() => {
+              const newSeed = Date.now();
+              setPaperSeed(newSeed);
+              window.open(`/api/generate-past-paper?seed=${newSeed}&mode=paper`, '_blank');
+            }}
             style={{
               display: 'flex', alignItems: 'center', gap: '6px',
               padding: '10px 16px', borderRadius: '999px',
