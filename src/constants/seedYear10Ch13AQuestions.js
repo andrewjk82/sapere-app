@@ -79,7 +79,7 @@ export const Y10_CH13A_QUESTIONS = [
           },
           {
             type: "angle",
-            points: ["P", "A", "B"],
+            points: ["B", "A", "P"],
             name: "15°",
             radius: 1.5,
             label: {
