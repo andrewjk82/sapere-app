@@ -279,7 +279,7 @@ const BASE_CSS = `
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 body { font-family:'Times New Roman',Times,serif; font-size:11.5pt; color:#000; background:white; }
 
-.exam-page { padding:16px 54px; }
+.exam-page { padding:16px 32px; }
 .page-hdr  { font-size:9pt; color:#444; margin-bottom:14px; }
 .section-hdr { margin:20px 0 10px; }
 .section-hdr h2 { font-size:13pt; font-weight:bold; margin-bottom:3px; }
