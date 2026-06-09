@@ -43,7 +43,7 @@ export const Y10_CH2B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "-4\\sqrt{3} + 7\\sqrt{3}",
+    "question": "Simplify \\(-4\\sqrt{3} + 7\\sqrt{3}\\).",
     "a": "3\\sqrt{3}",
     "solutionSteps": [
       {
