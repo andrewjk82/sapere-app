@@ -212,6 +212,7 @@ import { Y10_CH12H_QUESTIONS } from '../constants/seedYear10Ch12HQuestions.js';
 import { Y10_CH12I_QUESTIONS } from '../constants/seedYear10Ch12IQuestions.js';
 import { Y10_CH13A_QUESTIONS } from '../constants/seedYear10Ch13AQuestions.js';
 import { Y10_CH14A_QUESTIONS } from '../constants/seedYear10Ch14AQuestions.js';
+import { Y10_CH14B_QUESTIONS } from '../constants/seedYear10Ch14BQuestions.js';
 import { Y10_CH15_QUESTIONS } from '../constants/seedYear10Ch15Questions.js';
 import { Y10_CH15B_QUESTIONS } from '../constants/seedYear10Ch15BQuestions.js';
 import { Y10_CH15C_QUESTIONS } from '../constants/seedYear10Ch15CQuestions.js';
@@ -489,6 +490,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-12', chapterTitle: 'Chapter 12: Further trigonometry', topicId: 'y10-12i', topicCode: '12I', topicTitle: 'Revision: Trigonometry', year: 'Year 10', seed: Y10_CH12I_QUESTIONS, label: 'Y10 Ch12 · 12I Revision: Trigonometry' },
   { chapterId: 'y10-13', chapterTitle: 'Chapter 13: Circle geometry', topicId: 'y10-13a', topicCode: '13A', topicTitle: 'Angles at the centre and the circumference', year: 'Year 10', seed: Y10_CH13A_QUESTIONS, label: 'Y10 Ch13 · 13A Angles at the centre and the circumference' },
   { chapterId: 'y10-14', chapterTitle: 'Chapter 14: Logarithms', topicId: 'y10-14a', topicCode: '14A', topicTitle: 'Logarithm rules', year: 'Year 10', seed: Y10_CH14A_QUESTIONS, label: 'Y10 Ch14 · 14A Logarithm rules' },
+  { chapterId: 'y10-14', chapterTitle: 'Chapter 14: Logarithms', topicId: 'y10-14b', topicCode: '14B', topicTitle: 'Change of base', year: 'Year 10', seed: Y10_CH14B_QUESTIONS, label: 'Y10 Ch14 · 14B Change of base' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15a', topicCode: '15A', topicTitle: 'Review of probability', year: 'Year 10', seed: Y10_CH15_QUESTIONS, label: 'Y10 Ch15 · 15A Review of probability' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15b', topicCode: '15B', topicTitle: 'The complement, union and intersection', year: 'Year 10', seed: Y10_CH15B_QUESTIONS, label: 'Y10 Ch15 · 15B The complement, union and intersection' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15c', topicCode: '15C', topicTitle: 'Conditional probability', year: 'Year 10', seed: Y10_CH15C_QUESTIONS, label: 'Y10 Ch15 · 15C Conditional probability' },
