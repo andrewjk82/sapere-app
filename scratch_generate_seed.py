@@ -4,543 +4,560 @@ import math
 
 questions = []
 
-# Q1: Find final value after successive change
-# Original: a) 10000 increased by 5%, 8%, 10%  b) 10000 decreased by 8%, 7%, 6%  c) 90000 increased by 10% ten times
-# New: a) 20000 increased by 4%, 6%, 12%  b) 20000 decreased by 5%, 6%, 8%  c) 80000 increased by 8% ten times
+# Q1: Ming invested $100 000 for 5 years at 7% p.a.
+# New: principal = 200000, years = 5, rate = 6% p.a.
 # Math:
-# a) 20000 * 1.04 * 1.06 * 1.12 = 24693.76
-# b) 20000 * 0.95 * 0.94 * 0.92 = 16431.20
-# c) 80000 * (1.08)^10 = 172714.00
+# a) after 1 year: 200000 * 1.06 = 212000.00
+# b) after 2 years: 200000 * 1.06^2 = 224720.00
+# c) after 5 years: 200000 * 1.06^5 = 267645.12
+# d) pct increase: (1.06^5 - 1)*100 = 33.82%
+# e) total interest: 267645.12 - 200000 = 67645.12
+# f) simple interest: 200000 * 0.06 * 5 = 60000.00
 q1_data = [
-    {"sub": "a", "orig": 20000, "pcts": [4, 6, 12], "mode": "increased", "ans": "24693.76"},
-    {"sub": "b", "orig": 20000, "pcts": [5, 6, 8], "mode": "decreased", "ans": "16431.20"},
-    {"sub": "c", "orig": 80000, "pcts": [8]*10, "mode": "increased", "ans": "172714.00"}
+    {"sub": "a", "q": "Find the amount invested after one year.", "ans": "212000.00"},
+    {"sub": "b", "q": "Find the amount invested after two years.", "ans": "224720.00"},
+    {"sub": "c", "q": "Find the amount invested after five years, correct to the nearest cent.", "ans": "267645.12"},
+    {"sub": "d", "q": "Find the percentage increase in the investment over the five-year period, correct to two decimal places. (Enter value only, e.g. 33.82%)", "ans": "33.82%"},
+    {"sub": "e", "q": "Find the total interest earned over the five years, correct to the nearest cent.", "ans": "67645.12"},
+    {"sub": "f", "q": "Find the simple interest on the principal of 200000 dollars over the five years at the same annual interest rate of \\(6\\%\\) p.a.", "ans": "60000.00"}
 ]
 for item in q1_data:
-    if item["sub"] == "c":
-        q_text = f"Find the final value after {item['orig']} dollars has been increased by \\(8\\%\\) ten times successively. Give your answer correct to the nearest cent."
-    else:
-        pct_list_str = ", ".join(f"\\({p}\\%\\)" for p in item["pcts"][:-1]) + f" and \\({item['pcts'][-1]}\\%\\)"
-        q_text = f"Find the final value after {item['orig']} dollars is successively {item['mode']} by {pct_list_str}."
-    
     questions.append({
-        "id": f"y10-1c-q1{item['sub']}",
+        "id": f"y10-1d-q1{item['sub']}",
         "type": "short_answer",
         "difficulty": "easy",
         "timeLimit": 60,
-        "question": q_text,
+        "question": f"Ming invested 200000 dollars for five years at \\(6\\%\\) p.a. interest, compounded annually. {item['q']}",
         "a": item["ans"],
         "solutionSteps": [
             {
-                "explanation": "Identify the multiplier for each successive change.",
-                "workingOut": ""
-            },
-            {
-                "explanation": "Multiply the original value by the successive multipliers.",
+                "explanation": "Identify the values and formula for compound interest or simple interest.",
                 "workingOut": f"\\(\\text{{Answer}} = {item['ans']}\\)"
             }
         ],
-        "t": "Repeated increases and decreases"
+        "t": "Compound interest"
     })
 
-# Q2: Apples cost...
-# Original: Three years ago $2.80, increased by 8%, 15% and 10%.
-# New: Three years ago apples cost 3.20 dollars per kg, but the price has increased by 5%, 12% and 10% in the past three successive years.
-# Math: 3.20 * 1.05 * 1.12 * 1.10 = 4.14
-questions.append({
-    "id": "y10-1c-q2",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "question": "Three years ago, apples cost 3.20 dollars per kg, but the price has increased by \\(5\\%\\), \\(12\\%\\) and \\(10\\%\\) in the past three successive years. Multiply by \\(1.05 \\times 1.12 \\times 1.10\\) to find the price of apples now, correct to two decimal places.",
-    "a": "4.14",
-    "solutionSteps": [
-        {
-            "explanation": "Write down the expression with the original price and successive increase factors.",
-            "workingOut": "\\(3.20 \\times 1.05 \\times 1.12 \\times 1.10\\)"
-        },
-        {
-            "explanation": "Evaluate the product and round to two decimal places.",
-            "workingOut": "\\(= 4.14336 \\approx 4.14\\)"
-        }
-    ],
-    "t": "Repeated increases and decreases"
-})
+# Q2: Town population increases at rate 5.8% p.a. for 10 years. Initially 34000.
+# New: increases at rate 4.5% p.a. for 10 years. Initially 45000.
+# Math:
+# a) end of 10 years: 45000 * 1.045^10 = 69883.69 -> nearest integer = 69884
+# b) total percentage increase: (1.045^10 - 1)*100 = 55.29% -> nearest 1% = 55%
+q2_data = [
+    {"sub": "a", "q": "What was the population at the end of the 10-year period? Correct to the nearest integer.", "ans": "69884"},
+    {"sub": "b", "q": "What was the total percentage increase, correct to the nearest \\(1\\%\\)? (Enter value only, e.g. 55%)", "ans": "55%"}
+]
+for item in q2_data:
+    questions.append({
+        "id": f"y10-1d-q2{item['sub']}",
+        "type": "short_answer",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": f"The population of a town increases at a rate of \\(4.5\\%\\) p.a. for 10 years, compounded annually. Initially, the population was 45000. {item['q']}",
+        "a": item["ans"],
+        "solutionSteps": [
+            {
+                "explanation": "Compute using successive annual growth multiplier.",
+                "workingOut": f"\\(\\text{{Answer}} = {item['ans']}\\)"
+            }
+        ],
+        "t": "Compound interest"
+    })
 
-# Q3: Knowledge Bank Company dividend
-# Original: risen by 32%, 112%, 155% and 8%. Find dividend for: a) $1000  b) $12472  c) $16.64  d) $512.21
-# New: risen by 25%, 100%, 150% and 10%. Multiplier: 1.25 * 2.0 * 2.50 * 1.10 = 6.875
-# a) 1000 => 6875
-# b) 8000 => 55000
-# c) 16.00 => 110.00
-# d) 400.00 => 2750.00
+# Q3: Housing loan of 380 000 over 25 years.
+# New: Housing loan of 400 000 over 25 years.
+# a i) owe if compound interest 5% p.a. => 400000 * 1.05^25 = 1353520.62 -> round to nearest cent: 1353520.62
+# a ii) pct increase in debt => (1.05^25 - 1)*100 = 238.38% -> nearest 1% = 238%
+# b i) owe if compound interest 0.4% per month => 400000 * 1.004^300 = 1324087.05
+# b ii) pct increase in debt => (1.004^300 - 1)*100 = 231.02% -> nearest 1% = 231%
 q3_data = [
-    {"sub": "a", "orig": 1000, "ans": "6875"},
-    {"sub": "b", "orig": 8000, "ans": "55000"},
-    {"sub": "c", "orig": 16.00, "ans": "110.00"},
-    {"sub": "d", "orig": 400.00, "ans": "2750"}
+    {"sub": "ai", "q": "How much money would they owe if compound interest were payable at \\(5\\%\\) p.a.? Correct to the nearest cent.", "ans": "1353520.62"},
+    {"sub": "aii", "q": "What would the percentage increase in the debt be if compound interest were payable at \\(5\\%\\) p.a.? Correct to the nearest \\(1\\%\\). (Enter value only, e.g. 238%)", "ans": "238%"},
+    {"sub": "bi", "q": "How much money would they owe if compound interest were payable at \\(0.4\\%\\) per month? Correct to the nearest cent.", "ans": "1324087.05"},
+    {"sub": "bii", "q": "What would the percentage increase in the debt be if compound interest were payable at \\(0.4\\%\\) per month? Correct to the nearest \\(1\\%\\). (Enter value only, e.g. 231%)", "ans": "231%"}
 ]
 for item in q3_data:
     questions.append({
-        "id": f"y10-1c-q3{item['sub']}",
+        "id": f"y10-1d-q3{item['sub']}",
         "type": "short_answer",
         "difficulty": "easy",
         "timeLimit": 60,
-        "question": f"The dividend per share in a bank company has risen over the last four years by \\(25\\%\\), \\(100\\%\\), \\(150\\%\\) and \\(10\\%\\), respectively. Find the total dividend received now by a shareholder whose dividend four years ago was {item['orig']} dollars.",
+        "question": f"A couple takes out a housing loan of 400000 dollars over a period of 25 years. They make no repayments during the 25-year period. {item['q']}",
         "a": item["ans"],
         "solutionSteps": [
             {
-                "explanation": "The successive increase factors are \\(1.25\\), \\(2.00\\), \\(2.50\\), and \\(1.10\\).",
-                "workingOut": "\\(\\text{{Multiplier}} = 1.25 \\times 2.00 \\times 2.50 \\times 1.10 = 6.875\\)"
-            },
-            {
-                "explanation": "Multiply the original dividend by the total multiplier.",
-                "workingOut": f"\\({item['orig']} \\times 6.875 = {item['ans']}\\)"
-            }
-        ],
-        "t": "Repeated increases and decreases"
-    })
-
-# Q4: Land rates Crookwell Shire
-# Original: risen 6% every year for last seven years.
-# a) By what percentage have the land rates risen? (1.06^7 - 1 = 50.1%)
-# b) Find rates now for: i) $1000  ii) $17268.24  iii) $216.04
-# New: risen 5% every year for last seven years.
-# a) Multiplier = 1.05^7 = 1.4071 (40.7% rise)
-# b) i) 2000 => 2000 * 1.05^7 = 2814.20
-#    ii) 15000 => 15000 * 1.05^7 = 21106.50
-#    iii) 300 => 300 * 1.05^7 = 422.13
-questions.append({
-    "id": "y10-1c-q4a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "question": "Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years. By what percentage have the land rates risen over the seven-year period? Correct to one decimal place.",
-    "a": "40.7%",
-    "solutionSteps": [
-        {
-            "explanation": "The multiplier for a \\(5\\%\\) increase is \\(1.05\\). Since this happens for 7 years, the overall multiplier is \\(1.05^7\\).",
-            "workingOut": "\\(1.05^7 \\approx 1.4071\\)"
-        },
-        {
-            "explanation": "Convert this multiplier to a percentage increase.",
-            "workingOut": "\\((1.4071 - 1) \\times 100\\% \\approx 40.7\\%\\)"
-        }
-    ],
-    "t": "Repeated increases and decreases"
-})
-
-q4b_data = [
-    {"sub": "bi", "orig": 2000, "ans": "2814.20"},
-    {"sub": "bii", "orig": 15000, "ans": "21106.50"},
-    {"sub": "biii", "orig": 300, "ans": "422.13"}
-]
-for item in q4b_data:
-    questions.append({
-        "id": f"y10-1c-q4{item['sub']}",
-        "type": "short_answer",
-        "difficulty": "easy",
-        "timeLimit": 60,
-        "question": f"Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years. Find the rates now payable by a landowner whose rates seven years ago were {item['orig']} dollars, correct to the nearest cent.",
-        "a": item["ans"],
-        "solutionSteps": [
-            {
-                "explanation": "Using the overall multiplier of \\(1.05^7\\) for the 7 years.",
-                "workingOut": f"\\({item['orig']} \\times 1.05^7\\)"
-            },
-            {
-                "explanation": "Evaluate and round to the nearest cent.",
-                "workingOut": f"\\({item['orig']} \\times 1.407100 = {item['ans']}\\)"
-            }
-        ],
-        "t": "Repeated increases and decreases"
-    })
-
-# Q5: Overweight falling
-# Original: fell by 4.8%, 7.1%, 10.5% and 6.2%. Find pct decrease. (1 - 0.952*0.929*0.895*0.938 = 25.66%)
-# New: fell by 5%, 8%, 10% and 6%.
-# Math: 0.95 * 0.92 * 0.90 * 0.94 = 0.739224
-# Percentage decrease: (1 - 0.739224) * 100 = 26.08%
-questions.append({
-    "id": "y10-1c-q5",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "question": "In four successive years, the number of overweight people in a community fell by \\(5\\%\\), \\(8\\%\\), \\(10\\%\\) and \\(6\\%\\), respectively. Find, correct to two decimal places, the percentage decrease over the four-year period.",
-    "a": "26.08%",
-    "solutionSteps": [
-        {
-            "explanation": "The successive multipliers for the decreases are \\(0.95\\), \\(0.92\\), \\(0.90\\), and \\(0.94\\).",
-            "workingOut": "\\(\\text{{Overall multiplier}} = 0.95 \\times 0.92 \\times 0.90 \\times 0.94 = 0.739224\\)"
-        },
-        {
-            "explanation": "Calculate the percentage decrease from the multiplier.",
-            "workingOut": "\\((1 - 0.739224) \\times 100\\% \\approx 26.08\\%\\)"
-        }
-    ],
-    "t": "Repeated increases and decreases"
-})
-
-# Q6: Calculate total increase or decrease
-# Original: a) inc 20% then dec 20% (dec 4%)  b) inc 80% then dec 80% (dec 64%)
-# New: a) inc 30% then dec 30% (dec 9%) b) inc 60% then dec 60% (dec 36%)
-q6_data = [
-    {"sub": "a", "pct": 30, "ans": "decrease of 9%"},
-    {"sub": "b", "pct": 60, "ans": "decrease of 36%"}
-]
-for item in q6_data:
-    p = item["pct"]
-    factor = (1 + p/100) * (1 - p/100)
-    change = round((1 - factor)*100)
-    questions.append({
-        "id": f"y10-1c-q6{item['sub']}",
-        "type": "short_answer",
-        "difficulty": "easy",
-        "timeLimit": 60,
-        "question": f"Calculate the total percentage change (stating if it is an increase or decrease, e.g. 'decrease of 9%') when a quantity is increased by \\({p}\\%\\) and then decreased by \\({p}\\%\\).",
-        "a": item["ans"],
-        "solutionSteps": [
-            {
-                "explanation": "Let the original quantity be \\(x\\). Multiply by the increase and decrease factors.",
-                "workingOut": f"\\(x \\times {1 + p/100:.2f} \\times {1 - p/100:.2f}\\)"
-            },
-            {
-                "explanation": "Simplify the product.",
-                "workingOut": f"\\(x \\times {factor:.4f}\\)"
-            },
-            {
-                "explanation": f"Since the multiplier is less than 1, it is a decrease.",
-                "workingOut": f"\\((1 - {factor:.4f}) \\times 100\\% = {change}\\%\\)"
-            }
-        ],
-        "t": "Repeated increases and decreases"
-    })
-
-# Q7: Price of beans rising...
-# Original: risen 10%, 15%, 35% in three years, now cost $3.40. Find: a) price 1 yr ago  b) price 2 yrs ago  c) price 3 yrs ago
-# New: risen 8%, 12%, 30% in three years, now cost 4.50 dollars per kg.
-# Math:
-# Now = 4.50
-# 1 year ago = 4.50 / 1.30 = 3.46
-# 2 years ago = (4.50 / 1.30) / 1.12 = 3.09
-# 3 years ago = ((4.50 / 1.30) / 1.12) / 1.08 = 2.86
-q7_data = [
-    {"sub": "a", "step": "price one year ago", "ans": "3.46"},
-    {"sub": "b", "step": "price two years ago", "ans": "3.09"},
-    {"sub": "c", "step": "original price three years ago", "ans": "2.86"}
-]
-for item in q7_data:
-    questions.append({
-        "id": f"y10-1c-q7{item['sub']}",
-        "type": "short_answer",
-        "difficulty": "easy",
-        "timeLimit": 60,
-        "question": f"The price of beans has risen by \\(8\\%\\), \\(12\\%\\) and \\(30\\%\\) in three successive years, and they now cost 4.50 dollars per kg. Find the {item['step']}, correct to two decimal places.",
-        "a": item["ans"],
-        "solutionSteps": [
-            {
-                "explanation": "Work backwards from the current price by dividing by the successive percentage increase factors.",
+                "explanation": "Use compound interest formula with correct frequency of compounding.",
                 "workingOut": f"\\(\\text{{Answer}} = {item['ans']}\\)"
             }
         ],
-        "t": "Repeated increases and decreases"
+        "t": "Compound interest"
     })
 
-# Q8: Shares Value Radios falling
-# Original: falling 18% per year for last 5 years.
-# a) Present worth of: i) $1000  ii) $24000  iii) $11328512
-# b) By what percentage has value fallen?
-# New: falling 15% per year for last 5 years.
-# Multiplier: 0.85^5 = 0.4437
-# a) i) 1000 => 1000 * 0.85^5 = 443.71
-#    ii) 25000 => 25000 * 0.85^5 = 11092.63
-#    iii) 80000 => 80000 * 0.85^5 = 35496.42
-# b) fallen pct: (1 - 0.443705) * 100 = 55.63%
-q8a_data = [
-    {"sub": "ai", "orig": 1000, "ans": "443.71"},
-    {"sub": "aii", "orig": 25000, "ans": "11092.63"},
-    {"sub": "aiii", "orig": 80000, "ans": "35496.42"}
+# Q4: Emmanuel borrowed $300 000 for 7 years at 9% p.a.
+# New: principal = 250000, years = 7, rate = 8% p.a.
+# Math:
+# a) after 1 year: 250000 * 1.08 = 270000.00
+# b) after 7 years: 250000 * 1.08^7 = 428459.78
+# c) pct increase: (1.08^7 - 1)*100 = 71.38%
+# d) interest: 428459.78 - 250000 = 178459.78
+# e) simple interest: 250000 * 0.08 * 7 = 140000.00
+q4_data = [
+    {"sub": "a", "q": "Find the amount owing after one year.", "ans": "270000.00"},
+    {"sub": "b", "q": "Find the amount owing after seven years, correct to the nearest cent.", "ans": "428459.78"},
+    {"sub": "c", "q": "Find the percentage increase in the debt over the seven-year period, correct to two decimal places. (Enter value only, e.g. 71.38%)", "ans": "71.38%"},
+    {"sub": "d", "q": "Find the total interest charged over the seven years, correct to the nearest cent.", "ans": "178459.78"},
+    {"sub": "e", "q": "Find the simple interest on the principal of 250000 dollars over the seven-year period at the same annual interest rate of \\(8\\%\\) p.a.", "ans": "140000.00"}
 ]
-for item in q8a_data:
+for item in q4_data:
     questions.append({
-        "id": f"y10-1c-q8{item['sub']}",
+        "id": f"y10-1d-q4{item['sub']}",
         "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "question": f"Shares have been falling by \\(15\\%\\) per year for the last five years. Find the present worth of a parcel of shares with an original worth five years ago of {item['orig']} dollars, correct to the nearest cent.",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": f"Emmanuel has borrowed 250000 dollars for seven years at \\(8\\%\\) p.a. interest, compounded annually, in order to start his business. He intends to pay the whole amount back, plus interest, at the end of seven years. {item['q']}",
         "a": item["ans"],
         "solutionSteps": [
             {
-                "explanation": "Apply the five successive decreases of \\(15\\%\\) using the multiplier \\(0.85^5\\).",
-                "workingOut": f"\\({item['orig']} \\times 0.85^5\\)"
-            },
-            {
-                "explanation": "Evaluate the value and round to two decimal places.",
-                "workingOut": f"\\({item['orig']} \\times 0.443705 = {item['ans']}\\)"
+                "explanation": "Apply compound interest formula.",
+                "workingOut": f"\\(\\text{{Answer}} = {item['ans']}\\)"
             }
         ],
-        "t": "Repeated increases and decreases"
+        "t": "Compound interest"
     })
 
+# Q5: Find compound interest on 1000...
+# New: principal = 2000, 100 years.
+# a) 12% p.a. for 100 years => 2000 * (1.12^100 - 1) = 167389146.40
+# b) 1% per month for 100 years (1200 months) => 2000 * (1.01^1200 - 1) = 295551381.18
+# c) simple interest 12% p.a. for 100 years => 2000 * 0.12 * 100 = 24000.00
+q5_data = [
+    {"sub": "a", "q": "Find the compound interest on 2000 dollars at \\(12\\%\\) p.a. for 100 years, compounded annually. Correct to the nearest cent.", "ans": "167389146.40"},
+    {"sub": "b", "q": "Find the compound interest on 2000 dollars at \\(1\\%\\) per month for 100 years (1200 months). Correct to the nearest cent.", "ans": "295551381.18"},
+    {"sub": "c", "q": "Find the simple interest on 2000 dollars at \\(12\\%\\) p.a. for 100 years.", "ans": "24000.00"}
+]
+for item in q5_data:
+    questions.append({
+        "id": f"y10-1d-q5{item['sub']}",
+        "type": "short_answer",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": item["q"],
+        "a": item["ans"],
+        "solutionSteps": [
+            {
+                "explanation": "Use interest formulas to solve.",
+                "workingOut": f"\\(\\text{{Answer}} = {item['ans']}\\)"
+            }
+        ],
+        "t": "Compound interest"
+    })
+
+# Q6: borrows 20000 for 6 years, 9% p.a. (uses subQuestions)
+# New: borrows 30000 for 6 years, 8% p.a.
+# Math:
+# a) owed: 30000 * 1.08^6 = 47606.23
+# b) interest: 47606.23 - 30000 = 17606.23
 questions.append({
-    "id": "y10-1c-q8b",
+    "id": "y10-1d-q6",
     "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Shares have been falling by \\(15\\%\\) per year for the last five years. By what percentage has the value fallen over the five-year period? Correct to two decimal places.",
-    "a": "55.63%",
-    "solutionSteps": [
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "A student borrows 30000 dollars from a bank for six years. Compound interest at \\(8\\%\\) p.a. must be paid.",
+    "subQuestions": [
         {
-            "explanation": "The overall multiplier after five years of \\(15\\%\\) annual decrease is \\(0.85^5\\).",
-            "workingOut": "\\(0.85^5 \\approx 0.443705\\)"
+            "id": "y10-1d-q6a",
+            "type": "short_answer",
+            "question": "How much money is owed to the bank at the end of the six-year period? Correct to the nearest cent.",
+            "a": "47606.23",
+            "solutionSteps": [
+                {
+                    "explanation": "Apply the compound interest formula: \\(A = P(1+r)^n\\).",
+                    "workingOut": "\\(30000 \\times 1.08^6 = 47606.233\\)"
+                }
+            ]
         },
         {
-            "explanation": "Subtract this multiplier from 1 to find the percentage decrease.",
-            "workingOut": "\\((1 - 0.443705) \\times 100\\% \\approx 55.63\\%\\)"
+            "id": "y10-1d-q6b",
+            "type": "short_answer",
+            "question": "How much of this amount is interest? Correct to the nearest cent.",
+            "a": "17606.23",
+            "solutionSteps": [
+                {
+                    "explanation": "Subtract the principal from the final amount owed.",
+                    "workingOut": "\\(47606.23 - 30000 = 17606.23\\)"
+                }
+            ]
         }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Compound interest"
 })
 
-# Q9: Bacteria increases 18%... original population 4 hours ago:
-# Original: now a) 10000  b) 1000000  c) 120000
-# New: increase 15% every hour. now: a) 20000  b) 500000  c) 150000
+# Q7: rate of 8% p.a. grew to 100000 in 7 years. (uses subQuestions)
+# New: rate of 6% p.a. grew to 150000 in 8 years.
 # Math:
-# Multiplier: 1.15^4 = 1.749006
-# a) 20000 / 1.749006 = 11435.07 -> nearest integer = 11435
-# b) 500000 / 1.749006 = 285876.6 => 285877
-# c) 150000 / 1.749006 = 85762.98 => 85763
+# a) original: 150000 / 1.06^8 = 94112.59
+# b) total percentage increase: (1.06^8 - 1)*100 = 59.38% -> nearest 1% = 59%
+questions.append({
+    "id": "y10-1d-q7",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Money borrowed at an interest rate of \\(6\\%\\) p.a. grew to 150000 dollars in eight years.",
+    "subQuestions": [
+        {
+            "id": "y10-1d-q7a",
+            "type": "short_answer",
+            "question": "Find the original amount invested, correct to the nearest cent.",
+            "a": "94112.59",
+            "solutionSteps": [
+                {
+                    "explanation": "Solve for principal \\(P\\) in \\(A = P(1+r)^n\\).",
+                    "workingOut": "\\(150000 \\div 1.06^8 = 94112.585\\)"
+                }
+            ]
+        },
+        {
+            "id": "y10-1d-q7b",
+            "type": "short_answer",
+            "question": "Find the total percentage increase in the investment, correct to the nearest \\(1\\%\\). (Enter value only, e.g. 59%)",
+            "a": "59%",
+            "solutionSteps": [
+                {
+                    "explanation": "Compute the growth multiplier and convert to percentage increase.",
+                    "workingOut": "\\((1.06^8 - 1) \\times 100\\% \\approx 59.38\\% \\approx 59\\%\\)"
+                }
+            ]
+        }
+    ],
+    "t": "Compound interest"
+})
+
+# Q8: grow to 250000 in 8 years, 0.5% per month. (uses subQuestions)
+# New: grow to 300000 in 6 years, 0.6% per month (72 months).
+# Math:
+# a) invest now: 300000 / 1.006^72 = 195079.46
+# b) total percentage increase: (1.006^72 - 1)*100 = 53.78% -> nearest 1% = 54%
+questions.append({
+    "id": "y10-1d-q8",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Emily wants to invest some money now so that it will grow to 300000 dollars in six years' time. The compound interest rate is \\(0.6\\%\\) per month.",
+    "subQuestions": [
+        {
+            "id": "y10-1d-q8a",
+            "type": "short_answer",
+            "question": "How much should she invest now? Correct to the nearest cent.",
+            "a": "195079.46",
+            "solutionSteps": [
+                {
+                    "explanation": "Solve for the principal with monthly compounding over 72 months.",
+                    "workingOut": "\\(300000 \\div 1.006^{72} = 195079.458\\)"
+                }
+            ]
+        },
+        {
+            "id": "y10-1d-q8b",
+            "type": "short_answer",
+            "question": "What will the total percentage increase be, correct to the nearest \\(1\\%\\)? (Enter value only, e.g. 54%)",
+            "a": "54%",
+            "solutionSteps": [
+                {
+                    "explanation": "Calculate the ratio of the increase over the initial principal.",
+                    "workingOut": "\\((1.006^{72} - 1) \\times 100\\% \\approx 53.78\\% \\approx 54\\%\\)"
+                }
+            ]
+        }
+    ],
+    "t": "Compound interest"
+})
+
+# Q9: Bank offers 0.7% per month. Worth 100000 in: a) 10 years  b) 25 years
+# New: bank offers 0.8% per month. Worth 150000 in: a) 10 years (120 months)  b) 20 years (240 months)
+# Math:
+# a) 10 years => 150000 / 1.008^120 = 57672.48
+# b) 20 years => 150000 / 1.008^240 = 22173.83
 q9_data = [
-    {"sub": "a", "now": 20000, "ans": "11435"},
-    {"sub": "b", "now": 500000, "ans": "285877"},
-    {"sub": "c", "now": 150000, "ans": "85763"}
+    {"sub": "a", "years": 10, "months": 120, "ans": "57672.48"},
+    {"sub": "b", "years": 20, "months": 240, "ans": "22173.83"}
 ]
 for item in q9_data:
     questions.append({
-        "id": f"y10-1c-q9{item['sub']}",
+        "id": f"y10-1d-q9{item['sub']}",
         "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "question": f"A particular strain of bacteria increases its population by \\(15\\%\\) every hour. Calculate the size of the original population four hours ago if there are now {item['now']} bacteria, correct to the nearest integer.",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": f"A bank offers \\(0.8\\%\\) per month compound interest. How much needs to be invested if the investment is to be worth 150000 dollars in {item['years']} years? Correct to the nearest cent.",
         "a": item["ans"],
         "solutionSteps": [
             {
-                "explanation": "To find the original population four hours ago, divide the current population by the growth factor \\(1.15^4\\).",
-                "workingOut": f"\\({item['now']} \\div 1.15^4\\)"
-            },
-            {
-                "explanation": "Evaluate the division and round to the nearest whole number.",
-                "workingOut": f"\\({item['now']} \\div 1.749006 \\approx {item['ans']}\\)"
+                "explanation": f"The number of compounding periods is \\({item['months']}\\) months.",
+                "workingOut": f"\\(150000 \\div 1.008^{{{item['months']}}} = {item['ans']}\\)"
             }
         ],
-        "t": "Repeated increases and decreases"
+        "t": "Compound interest"
     })
 
-# Q10: Potato drops 16% per minute
-# Original:
-# a) temp after: i) 4 min ii) 8 min iii) 20 min
-# b) temp now 12C. temp at: i) 3 min ago ii) 6 min ago iii) 10 min ago
-# New: drops 15% per minute.
-# a) temp after:
-#    i) 4 min => 100 * 0.85^4 = 52.20
-#    ii) 8 min => 100 * 0.85^8 = 27.25
-#    iii) 20 min => 100 * 0.85^20 = 3.88
-# b) temp now 15C. temp at:
-#    i) 3 min ago => 15 / 0.85^3 = 24.43
-#    ii) 6 min ago => 15 / 0.85^6 = 39.77
-#    iii) 10 min ago => 15 / 0.85^10 = 76.20
-# Round correct to two decimal places.
-q10a_data = [
-    {"sub": "ai", "min": 4, "ans": "52.20"},
-    {"sub": "aii", "min": 8, "ans": "27.25"},
-    {"sub": "aiii", "min": 20, "ans": "3.88"}
-]
-for item in q10a_data:
-    questions.append({
-        "id": f"y10-1c-q10{item['sub']}",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "question": f"A potato is taken from boiling water at \\(100^\\circ\\mathrm{{C}}\\) and placed in a fridge. Every minute, the temperature of the potato drops by \\(15\\%\\). Find the temperature of the potato after {item['min']} minutes, correct to two decimal places.",
-        "a": item["ans"],
-        "solutionSteps": [
-            {
-                "explanation": f"Using the decay formula: \\(T = 100 \\times 0.85^{{{item['min']}}}\\).",
-                "workingOut": f"\\(100 \\times 0.85^{{{item['min']}}} = {item['ans']}\\)"
-            }
-        ],
-        "t": "Repeated increases and decreases"
-    })
-
-q10b_data = [
-    {"sub": "bi", "min": 3, "ans": "24.43"},
-    {"sub": "bii", "min": 6, "ans": "39.77"},
-    {"sub": "biii", "min": 10, "ans": "76.20"}
-]
-for item in q10b_data:
-    questions.append({
-        "id": f"y10-1c-q10{item['sub']}",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "question": f"A potato drops temperature by \\(15\\%\\) every minute in a fridge. If its temperature is now \\(15^\\circ\\mathrm{{C}}\\), find its temperature {item['min']} minutes ago, correct to two decimal places.",
-        "a": item["ans"],
-        "solutionSteps": [
-            {
-                "explanation": f"To find the temperature in the past, divide by \\(0.85^{{{item['min']}}}\\).",
-                "workingOut": f"\\(15 \\div 0.85^{{{item['min']}}} = {item['ans']}\\)"
-            }
-        ],
-        "t": "Repeated increases and decreases"
-    })
-
-# Q11: Inflation rate table
-# 2005: 2.3%, 2006: 2.7%, 2007: 3.8%, 2008: 2.3%, 2009: 4.4%, 2010: 1.8%
-# Let's change rates slightly:
-# 2005: 2.5%, 2006: 3.0%, 2007: 3.5%, 2008: 2.0%, 2009: 4.0%, 2010: 2.0%
+# Q10: population Granite Peak growing 7.4%, reached 80000.
+# New: growing 6.5%, reached 90000.
+# Find population: a) 1 yr ago  b) 2 yrs ago  c) 5 yrs ago  d) 10 yrs ago
 # Math:
-# a) whole six-year: 1.025 * 1.03 * 1.035 * 1.02 * 1.04 * 1.02 = 1.1843 => 18.4%
-# b) first four-year (2005-2008): 1.025 * 1.03 * 1.035 * 1.02 = 1.1147 => 11.5%
-q11_table = "Years: 2005 (2.5%), 2006 (3.0%), 2007 (3.5%), 2008 (2.0%), 2009 (4.0%), 2010 (2.0%)"
-questions.append({
-    "id": "y10-1c-q11a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": f"Given the annual inflation rates: {q11_table}. Calculate the percentage increase in prices, correct to one decimal place, over the whole six-year period.",
-    "a": "18.4%",
-    "solutionSteps": [
-        {
-            "explanation": "Determine the overall price multiplier by multiplying successive inflation factors.",
-            "workingOut": "\\(1.025 \\times 1.03 \\times 1.035 \\times 1.02 \\times 1.04 \\times 1.02 \\approx 1.1843\\)"
-        },
-        {
-            "explanation": "Convert the multiplier to a percentage increase.",
-            "workingOut": "\\((1.1843 - 1) \\times 100\\% \\approx 18.4\\%\\)"
-        }
-    ],
-    "t": "Repeated increases and decreases"
-})
-
-questions.append({
-    "id": "y10-1c-q11b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": f"Given the annual inflation rates: {q11_table}. Calculate the percentage increase in prices, correct to one decimal place, during the first four-year period (2005 to 2008 inclusive).",
-    "a": "11.5%",
-    "solutionSteps": [
-        {
-            "explanation": "Multiply the inflation factors for 2005, 2006, 2007, and 2008.",
-            "workingOut": "\\(1.025 \\times 1.03 \\times 1.035 \\times 1.02 \\approx 1.1147\\)"
-        },
-        {
-            "explanation": "Convert this multiplier to a percentage increase.",
-            "workingOut": "\\((1.1147 - 1) \\times 100\\% \\approx 11.5\\%\\)"
-        }
-    ],
-    "t": "Repeated increases and decreases"
-})
-
-# Q12: iodine-131 radioactivity decreases 55% every seven days
-# Original: find percentage reduction in radioactivity over: a) 3 weeks  b) 10 weeks  c) 26 weeks
-# New: decreases by 50% every seven days.
-# Multiplier after w weeks (which is 7w days => w periods of 7 days): 0.50^w.
-# Pct reduction: (1 - 0.50^w) * 100.
-# a) 3 weeks => 1 - 0.5^3 = 1 - 0.125 = 87.5%
-# b) 5 weeks => 1 - 0.5^5 = 1 - 0.03125 = 96.9%
-# c) 10 weeks => 1 - 0.5^10 = 1 - 0.000976 = 99.9%
-q12_data = [
-    {"sub": "a", "weeks": 3, "ans": "87.5%"},
-    {"sub": "b", "weeks": 5, "ans": "96.9%"},
-    {"sub": "c", "weeks": 10, "ans": "99.9%"}
+# a) 90000 / 1.065 = 84507.04 => 84507
+# b) 90000 / 1.065^2 = 79349.33 => 79349
+# c) 90000 / 1.065^5 = 65690.35 => 65690
+# d) 90000 / 1.065^10 = 47942.50 => 47943
+q10_data = [
+    {"sub": "a", "step": "one year ago", "factor": 1.065, "ans": "84507"},
+    {"sub": "b", "step": "two years ago", "factor": 1.065**2, "ans": "79349"},
+    {"sub": "c", "step": "five years ago", "factor": 1.065**5, "ans": "65690"},
+    {"sub": "d", "step": "10 years ago", "factor": 1.065**10, "ans": "47943"}
 ]
-for item in q12_data:
+for item in q10_data:
     questions.append({
-        "id": f"y10-1c-q12{item['sub']}",
+        "id": f"y10-1d-q10{item['sub']}",
         "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "question": f"The radioactivity of a sample decreases by \\(50\\%\\) every seven days. Find the percentage reduction in radioactivity over a period of {item['weeks']} weeks, correct to one decimal place.",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": f"The population of a town has been growing at \\(6.5\\%\\) every year and has now reached 90000. Find the population {item['step']}, correct to the nearest integer.",
         "a": item["ans"],
         "solutionSteps": [
             {
-                "explanation": f"Since 7 days is 1 week, {item['weeks']} weeks represents {item['weeks']} decay cycles. The multiplier for each cycle is \\(0.50\\).",
-                "workingOut": f"\\(\\text{{Overall multiplier}} = 0.50^{{{item['weeks']}}} = {0.50**item['weeks']:.6f}\\)"
-            },
-            {
-                "explanation": "Compute the percentage reduction.",
-                "workingOut": f"\\((1 - {0.50**item['weeks']:.6f}) \\times 100\\% \\approx {item['ans']}\\)"
+                "explanation": "Divide the current population by the growth multiplier for the given number of years.",
+                "workingOut": f"\\(90000 \\div {item['factor']:.6f} \\approx {item['ans']}\\)"
             }
         ],
-        "t": "Repeated increases and decreases"
+        "t": "Compound interest"
     })
 
-# Q13: coat discount 50%... not top-level split, will use subQuestions
-# Let's change 50% to 40% discount and 40% increase.
-# a) coat is discounted by 40%, and then increased by 40%. By what percentage is it increased or decreased from original?
-#    Math: 1 * 0.60 * 1.40 = 0.84 => 16% decrease
-# b) coat is increased by 40%, then decreased by 40%.
-#    Math: 1 * 1.40 * 0.60 = 0.84 => 16% decrease
-# c) explain relationship: they are both the same because multiplication is commutative.
+# Q11: Mr Brown reconstruct missing entries in table (uses SPLIT_MULTI_UNKNOWN = true)
+# New table values:
+# Row a: Principal: 5000, Rate: 6%, Years: 20 => final amount & total interest
+#   Final amount: 5000 * 1.06^20 = 16035.67
+#   Total interest: 16035.67 - 5000 = 11035.67
+# Row b: Principal: 4000, Rate: 6%, Years: 20 => final amount: 4000 => Principal & Total interest
+#   Principal: 4000 / 1.06^20 = 1247.22
+#   Total interest: 4000 - 1247.22 = 2752.78
+q11_data = [
+    {"sub": "a_final", "q": "Reconstruct Mr Brown's spreadsheet entry. Find the final amount if Principal is 5000 dollars, Rate is \\(6\\%\\) p.a., and Number of years is 20. Correct to the nearest cent.", "ans": "16035.67"},
+    {"sub": "a_interest", "q": "Reconstruct Mr Brown's spreadsheet entry. Find the total interest if Principal is 5000 dollars, Rate is \\(6\\%\\) p.a., and Number of years is 20. Correct to the nearest cent.", "ans": "11035.67"},
+    {"sub": "b_principal", "q": "Reconstruct Mr Brown's spreadsheet entry. Find the principal if Rate is \\(6\\%\\) p.a., Number of years is 20, and the Final amount is 4000 dollars. Correct to the nearest cent.", "ans": "1247.22"},
+    {"sub": "b_interest", "q": "Reconstruct Mr Brown's spreadsheet entry. Find the total interest if Rate is \\(6\\%\\) p.a., Number of years is 20, and the Final amount is 4000 dollars. Correct to the nearest cent.", "ans": "2752.78"}
+]
+for item in q11_data:
+    questions.append({
+        "id": f"y10-1d-q11{item['sub']}",
+        "type": "short_answer",
+        "difficulty": "medium",
+        "timeLimit": 90,
+        "question": item["q"],
+        "a": item["ans"],
+        "solutionSteps": [
+            {
+                "explanation": "Use the compound interest formulas to find the missing spreadsheet cells.",
+                "workingOut": f"\\(\\text{{Answer}} = {item['ans']}\\)"
+            }
+        ],
+        "t": "Compound interest"
+    })
+
+# Q12: Mr Yang interest earned each year. (uses subQuestions)
+# New: Mr Yang invested 80000 at compound rate of 5% p.a. for 3 years.
+# a) Calculate interest earned each year.
+#    Year 1: 80000 * 0.05 = 4000.00
+#    Year 2: 84000 * 0.05 = 4200.00
+#    Year 3: 88200 * 0.05 = 4410.00
+# b) Repeat with rate of 0.4% per month (36 months).
+#    Since it says "interest earned each year", we calculate:
+#    Year 1: 80000 * (1.004^12 - 1) = 3923.63
+#    Year 2: (80000 * 1.004^12) * (1.004^12 - 1) = 4116.07
+#    Year 3: (80000 * 1.004^24) * (1.004^12 - 1) = 4317.95
 questions.append({
-    "id": "y10-1c-q13",
+    "id": "y10-1d-q12",
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Analyze successive price changes on a coat.",
+    "question": "Mr Yang invested 80000 dollars for three years.",
     "subQuestions": [
         {
-            "id": "y10-1c-q13a",
+            "id": "y10-1d-q12a",
             "type": "short_answer",
-            "question": "A coat is discounted by \\(40\\%\\), and the resulting price is then increased by \\(40\\%\\). By what percentage is the price increased or decreased from its original value? (e.g. 'decrease of 16%')",
-            "a": "decrease of 16%",
+            "question": "Calculate the interest earned in each of the three years if the compound interest rate is \\(5\\%\\) p.a., compounded annually. (Enter the interest earned in Year 3, correct to the nearest cent).",
+            "a": "4410.00",
             "solutionSteps": [
                 {
-                    "explanation": "Calculate the combined multiplier.",
-                    "workingOut": "\\(0.60 \\times 1.40 = 0.84\\)"
+                    "explanation": "Year 1 interest: \\(80000 \\times 0.05 = 4000\\). Balance: 84000.",
+                    "workingOut": ""
                 },
                 {
-                    "explanation": "Convert this multiplier into percentage change.",
-                    "workingOut": "\\((1 - 0.84) \\times 100\\% = 16\\% \\text{ decrease}\\)"
+                    "explanation": "Year 2 interest: \\(84000 \\times 0.05 = 4200\\). Balance: 88200.",
+                    "workingOut": ""
+                },
+                {
+                    "explanation": "Year 3 interest: \\(88200 \\times 0.05 = 4410\\).",
+                    "workingOut": "\\(4410.00\\)"
                 }
             ]
         },
         {
-            "id": "y10-1c-q13b",
+            "id": "y10-1d-q12b",
             "type": "short_answer",
-            "question": "The price of a coat is increased by \\(40\\%\\), and the resulting price is then decreased by \\(40\\%\\). By what percentage is the price increased or decreased from its original value? (e.g. 'decrease of 16%')",
-            "a": "decrease of 16%",
+            "question": "Calculate the interest earned in Year 3 if the compound interest rate is \\(0.4\\%\\) per month. Correct to the nearest cent.",
+            "a": "4317.95",
             "solutionSteps": [
                 {
-                    "explanation": "Calculate the combined multiplier.",
-                    "workingOut": "\\(1.40 \\times 0.60 = 0.84\\)"
+                    "explanation": "Balance at end of Year 2 (24 months): \\(80000 \\times 1.004^{24} = 88043.68\\).",
+                    "workingOut": ""
                 },
                 {
-                    "explanation": "Convert this multiplier into percentage change.",
-                    "workingOut": "\\((1 - 0.84) \\times 100\\% = 16\\% \\text{ decrease}\\)"
-                }
-            ]
-        },
-        {
-            "id": "y10-1c-q13c",
-            "type": "teacher_review",
-            "question": "Explain the relationship between the results of parts a and b.",
-            "a": "Both successive operations yield the same final result of a 16% decrease because multiplication is commutative, i.e., 1.40 * 0.60 = 0.60 * 1.40.",
-            "solutionSteps": [
+                    "explanation": "Balance at end of Year 3 (36 months): \\(80000 \\times 1.004^{36} = 92361.63\\).",
+                    "workingOut": ""
+                },
                 {
-                    "explanation": "Multiplication is commutative.",
-                    "workingOut": "\\(0.60 \\times 1.40 = 1.40 \\times 0.60 = 0.84\\)"
+                    "explanation": "Interest earned in Year 3: \\(92361.63 - 88043.68 = 4317.95\\).",
+                    "workingOut": "\\(4317.95\\)"
                 }
             ]
         }
     ],
-    "t": "Repeated increases and decreases"
+    "t": "Compound interest"
+})
+
+# Q13: Daily compound interest
+# New: 15 000 000 dollars, daily compound rate 0.015%.
+# Math: 15000000 * (1.00015^365 - 1) = 842603.95
+questions.append({
+    "id": "y10-1d-q13",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "A holding company sold a property for 15000000 dollars and invested the money at a daily compound interest rate of \\(0.015\\%\\). How much interest did the company earn in the first year (assume 365 days)? Correct to the nearest cent.",
+    "a": "842603.95",
+    "solutionSteps": [
+        {
+            "explanation": "The daily interest rate is \\(0.015\\% = 0.00015\\).",
+            "workingOut": "\\(\\text{{Multiplier}} = 1.00015^{365} \\approx 1.0561735\\)"
+        },
+        {
+            "explanation": "Calculate the interest earned.",
+            "workingOut": "\\(15000000 \\times (1.00015^{365} - 1) = 842603.952\\)"
+        }
+    ],
+    "t": "Compound interest"
+})
+
+# Q14: Find percentage increase in each situation (top level split)
+# New:
+# a) 200000 at 0.01% per day for one year => (1.0001^365 - 1)*100 = 3.72%
+# b) 200000 at 0.03% per day for one year => (1.0003^365 - 1)*100 = 11.57%
+q14_data = [
+    {"sub": "a", "rate": 0.01, "factor": 1.0001, "ans": "3.72%"},
+    {"sub": "b", "rate": 0.03, "factor": 1.0003, "ans": "11.57%"}
+]
+for item in q14_data:
+    questions.append({
+        "id": f"y10-1d-q14{item['sub']}",
+        "type": "short_answer",
+        "difficulty": "medium",
+        "timeLimit": 90,
+        "question": f"Find the total percentage increase for an investment at a compound interest rate of {item['rate']}% per day for one year (365 days), correct to the nearest \\(0.01\\%\\). (Enter value only, e.g. 3.72%)",
+        "a": item["ans"],
+        "solutionSteps": [
+            {
+                "explanation": "Apply daily compounding factor over 365 days.",
+                "workingOut": f"\\(({item['factor']:.4f}^{{365}} - 1) \\times 100\\% = {item['ans']}\\)"
+            }
+        ],
+        "t": "Compound interest"
+    })
+
+# Q15: total percentage growth (top-level split)
+# New:
+# a) 12% p.a. for two years => (1.12^2 - 1)*100 = 25.4%
+# b) 8% p.a. for three years => (1.08^3 - 1)*100 = 26.0%
+# c) 5% p.a. for five years => (1.05^5 - 1)*100 = 27.6%
+# d) 4% p.a. for six years => (1.04^6 - 1)*100 = 26.5%
+# e) 2.5% p.a. for 10 years => (1.025^10 - 1)*100 = 28.0%
+# f) 1.8% p.a. for 15 years => (1.018^15 - 1)*100 = 30.6%
+# g) qualitative: "The products of interest rate and years are similar, yet the final growth varies. In general, higher compounding periods or rates yield larger growth." Let's formulate it as multiple choice.
+q15_data = [
+    {"sub": "a", "rate": 12, "years": 2, "ans": "25.4%"},
+    {"sub": "b", "rate": 8, "years": 3, "ans": "26.0%"},
+    {"sub": "c", "rate": 5, "years": 5, "ans": "27.6%"},
+    {"sub": "d", "rate": 4, "years": 6, "ans": "26.5%"},
+    {"sub": "e", "rate": 2.5, "years": 10, "ans": "28.0%"},
+    {"sub": "f", "rate": 1.8, "years": 15, "ans": "30.6%"}
+]
+for item in q15_data:
+    questions.append({
+        "id": f"y10-1d-q15{item['sub']}",
+        "type": "short_answer",
+        "difficulty": "medium",
+        "timeLimit": 90,
+        "question": f"Find the total percentage growth, correct to the nearest \\(0.1\\%\\), in a compound interest investment at \\({item['rate']}\\%\\) p.a. for {item['years']} years.",
+        "a": item["ans"],
+        "solutionSteps": [
+            {
+                "explanation": "Calculate the compound interest growth factor and convert to a percentage.",
+                "workingOut": f"\\(((1 + {item['rate']/100:.3f})^{{{item['years']}}} - 1) \\times 100\\% = {item['ans']}\\)"
+            }
+        ],
+        "t": "Compound interest"
+    })
+
+questions.append({
+    "id": "y10-1d-q15g",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "What do you observe about the results of the total growth for products of interest rate and years that are roughly equal (e.g. 12% * 2 = 24, 8% * 3 = 24, etc.)?",
+    "a": "Although the simple interest products are similar, higher compound interest rates or longer compounding durations yield different overall growth rates, with longer periods compounding more.",
+    "opts": [
+        "Although the simple interest products are similar, higher compound interest rates or longer compounding durations yield different overall growth rates, with longer periods compounding more.",
+        "All growth rates are mathematically identical regardless of the compounding period.",
+        "Longer compounding periods always yield significantly lower growth rates.",
+        "Compounding has no effect over long durations."
+    ],
+    "solutionSteps": [
+        {
+            "explanation": "Compounding frequency over time means longer durations at even lower rates can accumulate more compound interest than short durations at high rates.",
+            "workingOut": ""
+        }
+    ],
+    "t": "Compound interest"
+})
+
+# Q16: Doctor loan rate 9% for first 3 years, then 13% for second 3-year period
+# New: rate 8% for first 3 years, then 12% for second 3-year period.
+# Math:
+# Multiplier: 1.08^3 * 1.12^3 = 1.259712 * 1.404928 = 1.7698
+# Percentage increase: (1.7698 - 1)*100 = 76.98% => 77%
+questions.append({
+    "id": "y10-1d-q16",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "A doctor took out a six-year loan to start a medical practice. For the first three years, he was charged compound interest at a rate of \\(8\\%\\) p.a. For the second three-year period, he was charged compound interest at a rate of \\(12\\%\\) p.a. Find the total percentage increase in the money owing, correct to the nearest \\(1\\%\\). (Enter value only, e.g. 77%)",
+    "a": "77%",
+    "solutionSteps": [
+        {
+            "explanation": "Calculate the multiplier for the first 3 years.",
+            "workingOut": "\\(M_1 = 1.08^3 \\approx 1.2597\\)"
+        },
+        {
+            "explanation": "Calculate the multiplier for the next 3 years.",
+            "workingOut": "\\(M_2 = 1.12^3 \\approx 1.4049\\)"
+        },
+        {
+            "explanation": "Multiply them to find the overall growth multiplier, and convert to percentage increase.",
+            "workingOut": "\\(\\text{{Total Multiplier}} = 1.2597 \\times 1.4049 \\approx 1.7698 \\implies 77\\%\\)"
+        }
+    ],
+    "t": "Compound interest"
 })
 
 # Write file
-output = "export const Y10_CH1C_QUESTIONS = " + json.dumps(questions, indent=2, ensure_ascii=False) + ";\n"
-with open("/Users/andrewkim/Desktop/sapere1/src/constants/seedYear10Ch1CQuestions.js", "w", encoding="utf-8") as f:
+output = "export const Y10_CH1D_QUESTIONS = " + json.dumps(questions, indent=2, ensure_ascii=False) + ";\n"
+with open("/Users/andrewkim/Desktop/sapere1/src/constants/seedYear10Ch1DQuestions.js", "w", encoding="utf-8") as f:
     f.write(output)
 
 print("Done! Generated", len(questions), "questions.")
