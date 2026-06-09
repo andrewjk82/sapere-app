@@ -163,6 +163,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     // only the selection — never keyboard visibility — so there is no race.
     const isAndroid = typeof navigator !== 'undefined' && /android/i.test(navigator.userAgent);
     const handleFocusIn = () => {
+      wrapInnerDelete();   // inner mathfield exists once focused — wrap its delete
       try { mf.executeCommand('moveToMathfieldEnd'); } catch (_) { /* ignore */ }
       // Android only: the first time the virtual keyboard opens in a session,
       // the field↔keyboard connection isn't ready yet, so the first keystroke
@@ -180,6 +181,16 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
         } catch (_) { /* ignore */ }
       }
     };
+    // Holds the inner mathfield's ORIGINAL executeCommand so smartBackspace can
+    // issue raw deletes without re-entering our wrapper (which would recurse).
+    const rawExecRef = { current: null };
+    const rawExec = (cmd) => {
+      if (rawExecRef.current) {
+        try { return rawExecRef.current(cmd); } catch (_) { /* ignore */ }
+      }
+      try { return mf.executeCommand(cmd); } catch (_) { /* ignore */ }
+      return undefined;
+    };
     // Smart backspace: an empty math structure (e.g. a fraction inserted via
     // the a/b button but left blank) keeps required placeholder boxes, so a
     // plain backspace can get "stuck" and never removes the structure. When a
@@ -187,15 +198,33 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     // delete that; if still stuck, clear the field. Fixes "this won't delete".
     const smartBackspace = () => {
       const before = mf.value;
-      try { mf.executeCommand('deleteBackward'); } catch (_) { /* ignore */ }
+      rawExec('deleteBackward');
       if (mf.value !== before) return;
-      try {
-        mf.executeCommand('extendSelectionBackward');
-        mf.executeCommand('deleteBackward');
-      } catch (_) { /* ignore */ }
+      rawExec('extendSelectionBackward');
+      rawExec('deleteBackward');
       if (mf.value !== before) return;
       // Last resort — wipe the field so the student is never stuck.
       try { mf.value = ''; onChangeRef.current?.(''); } catch (_) { /* ignore */ }
+    };
+    // Route the on-screen keyboard's backspace (the ✕/⌫ key at the right edge)
+    // through smartBackspace too. MathLive's virtual keyboard runs deleteBackward
+    // straight on the inner mathfield, bypassing our keydown handler — so an
+    // empty fraction/root would get "stuck" and the ✕ key appears to do nothing.
+    // We wrap the inner mathfield's executeCommand so the keyboard key gets the
+    // exact same smart-delete behaviour as the physical Backspace key.
+    const wrapInnerDelete = () => {
+      const inner = mf._mathfield;
+      if (!inner || typeof inner.executeCommand !== 'function' || inner.__smartDeleteWrapped) return;
+      const orig = inner.executeCommand.bind(inner);
+      rawExecRef.current = orig;
+      inner.executeCommand = (command) => {
+        const sel = Array.isArray(command)
+          ? (command[0] === 'performWithFeedback' ? command[1] : command[0])
+          : command;
+        if (sel === 'deleteBackward') { smartBackspace(); return true; }
+        return orig(command);
+      };
+      inner.__smartDeleteWrapped = true;
     };
     const handleKeydown = (e) => {
       if (e.key === ':') {
@@ -224,6 +253,9 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     mf.addEventListener('keydown', handleKeydown);
     mf.addEventListener('focusin', handleFocusIn);
     kb?.addEventListener('virtual-keyboard-toggle', handleKbToggle);
+    // Belt-and-suspenders: wrap the inner delete as soon as it materialises,
+    // even if the field is never explicitly focused first.
+    requestAnimationFrame(() => wrapInnerDelete());
     return () => {
       mf.removeEventListener('input', handleInput);
       mf.removeEventListener('keydown', handleKeydown);
