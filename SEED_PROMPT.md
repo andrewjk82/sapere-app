@@ -4,7 +4,7 @@
 > ## 🚨 CRITICAL WORKFLOW SOP: ADDING NEW QUESTIONS
 > **NEVER upload questions directly to Firestore using one-off scripts without updating the Curriculum map.**
 > If questions are uploaded to the DB but not mapped in `Curriculum.jsx`, the UI will NOT show them.
-> 
+>
 > **MANDATORY 3-STEP PROCESS:**
 > 1. **Write to a Seed File:** Generate your question data as an array inside a new file in `src/constants/` (e.g., `seedYear10Ch1Questions.js`).
 > 2. **Update Curriculum.jsx:** You MUST add the new topic to the `CURRICULUM` array in `src/components/Curriculum.jsx` and link the seed file via the `seed:` property.
@@ -22,16 +22,16 @@
 학년:        Year 10
 챕터 번호:   1
 chapterId:   y10-1
-서브토픽 ID: y7-1a
-토픽 코드:   1A
-서브토픽 제목: Review of percentage
+서브토픽 ID: y10-1b
+토픽 코드:   1B
+서브토픽 제목: Percentage increase and decrease
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1 ~ Q13  → easy
-Q14 ~ Q23 → medium
+Q1 ~ Q7  → easy
+Q8 ~ Q15 → medium
 none → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
@@ -56,7 +56,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1~ Q8, Q13 ,Q15, Q16, Q18, Q17, Q20 ~ Q23
+  Q1~ Q15
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 

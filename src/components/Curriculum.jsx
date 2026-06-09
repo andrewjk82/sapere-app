@@ -172,6 +172,7 @@ import { Y7_CH1D_QUESTIONS } from '../constants/seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from '../constants/seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from '../constants/seedYear7Ch1FQuestions.js';
 import { Y10_CH1_QUESTIONS } from '../constants/seedYear10Ch1Questions.js';
+import { Y10_CH1B_QUESTIONS } from '../constants/seedYear10Ch1BQuestions.js';
 import { Y10_CH1F_QUESTIONS } from '../constants/seedYear10Ch1FQuestions.js';
 import { Y10_CH2F_QUESTIONS } from '../constants/seedYear10Ch2FQuestions.js';
 import { Y10_CH3J_QUESTIONS } from '../constants/seedYear10Ch3JQuestions.js';
@@ -435,7 +436,7 @@ const CHAPTER_SEED_REGISTRY = [
     label: 'Y12A Ch8 · 8F Chapter review',
   },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1a', topicCode: '1A', topicTitle: 'Review of percentage', year: 'Year 10', seed: Y10_CH1_QUESTIONS, label: 'Y10 Ch1 · 1A Review of percentage' },
-  { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1b', topicCode: '1B', topicTitle: 'Percentage increase and decrease', year: 'Year 10', seed: [], label: 'Y10 Ch1 · 1B Percentage increase and decrease' },
+  { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1b', topicCode: '1B', topicTitle: 'Percentage increase and decrease', year: 'Year 10', seed: Y10_CH1B_QUESTIONS, label: 'Y10 Ch1 · 1B Percentage increase and decrease' },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1c', topicCode: '1C', topicTitle: 'Repeated increases and decreases', year: 'Year 10', seed: [], label: 'Y10 Ch1 · 1C Repeated increases and decreases' },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1d', topicCode: '1D', topicTitle: 'Compound interest', year: 'Year 10', seed: [], label: 'Y10 Ch1 · 1D Compound interest' },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1e', topicCode: '1E', topicTitle: 'Compound depreciation', year: 'Year 10', seed: [], label: 'Y10 Ch1 · 1E Compound depreciation' },
