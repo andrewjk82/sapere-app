@@ -627,7 +627,7 @@ const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
 // sync_meta, so chapter cards could show pre-seed numbers indefinitely even
 // after thousands of questions were added. Forcing one re-fetch resyncs all
 // existing installs.
-const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v6';
+const QUESTION_COUNT_CACHE_KEY = 'sapere:question-counts:v7';
 const QUESTION_COUNT_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const CURRICULUM_CACHE_KEY = 'curriculum-records:v1';
 const ADMIN_TOOL_COUNT_IDS = [
@@ -1958,6 +1958,16 @@ const Curriculum = () => {
   const countChapterIds = useMemo(() => {
     const ids = new Set(displayData.map((chapter) => chapter.id).filter(Boolean));
     if (isAdmin && showAdminTools) ADMIN_TOOL_COUNT_IDS.forEach((id) => ids.add(id));
+    // Admins want accurate year-tab AND chapter totals across EVERY year, not
+    // just the selected one. The year tabs sum questionCounts for all years, so
+    // counts must be fetched for all curriculum chapters — otherwise a
+    // non-selected year shows a stale/seed-only number that appears "frozen".
+    if (isAdmin) {
+      Object.values(CURRICULUM_DATA).forEach((yearData) => {
+        const chapters = Array.isArray(yearData) ? yearData : Object.values(yearData).flat();
+        chapters.forEach((ch) => { if (ch.id) ids.add(ch.id); });
+      });
+    }
     return [...ids];
   }, [displayData, isAdmin, showAdminTools]);
 
@@ -1991,8 +2001,17 @@ const Curriculum = () => {
     if (isAdmin && showAdminTools) {
       CHAPTER_SEED_REGISTRY.forEach(e => { if (e.topicId) ids.add(e.topicId); });
     }
+    // All-year topic counts for admins — feeds the max() fallback for chapters
+    // whose questions were stored under topicId instead of chapterId, so every
+    // year/chapter total is accurate, not just the selected year's.
+    if (isAdmin) {
+      Object.values(CURRICULUM_DATA).forEach((yearData) => {
+        const chapters = Array.isArray(yearData) ? yearData : Object.values(yearData).flat();
+        chapters.forEach((ch) => (ch.topics || []).forEach((t) => { if (t.id) ids.add(t.id); }));
+      });
+    }
     return [...ids];
-  }, [isAdmin, showAdminTools]);
+  }, [displayData, isAdmin, showAdminTools]);
 
   useEffect(() => {
     if (countChapterIds.length === 0) return undefined;
@@ -2011,16 +2030,29 @@ const Curriculum = () => {
         if (hasFreshCounts && !isMigrating) return;
 
         const nextCounts = {};
-        await Promise.all(countChapterIds.map(async (chapterId) => {
-          const countQuery = query(collection(db, 'questions'), where('chapterId', '==', chapterId));
-          const snap = await getCountFromServer(countQuery);
-          nextCounts[chapterId] = snap.data().count || 0;
-        }));
-        await Promise.all(countTopicIds.map(async (topicId) => {
-          const countQuery = query(collection(db, 'questions'), where('topicId', '==', topicId));
-          const snap = await getCountFromServer(countQuery);
-          nextCounts[topicId] = snap.data().count || 0;
-        }));
+        // Bounded concurrency: admins now fetch counts for ALL years (~1,600
+        // aggregation queries), so firing them all at once would swamp the
+        // network. Batch them, and push a progressive UI update after each batch
+        // so the year-tab / chapter numbers fill in as they resolve.
+        const runBatched = async (ids, field, batchSize = 40) => {
+          for (let i = 0; i < ids.length; i += batchSize) {
+            if (cancelled) return;
+            const slice = ids.slice(i, i + batchSize);
+            await Promise.all(slice.map(async (id) => {
+              try {
+                const snap = await getCountFromServer(
+                  query(collection(db, 'questions'), where(field, '==', id))
+                );
+                nextCounts[id] = snap.data().count || 0;
+              } catch (e) {
+                // Leave undefined → cached/seed value remains the fallback.
+              }
+            }));
+            if (!cancelled) setQuestionCounts((prev) => ({ ...prev, ...nextCounts }));
+          }
+        };
+        await runBatched(countChapterIds, 'chapterId');
+        await runBatched(countTopicIds, 'topicId');
         if (cancelled) return;
         const merged = { ...cached.counts, ...nextCounts };
         setQuestionCounts(merged);
