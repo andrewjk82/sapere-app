@@ -1,5 +1,15 @@
 # NSW 수학 커리큘럼 → 디지털 학습 앱 시드 데이터 변환 프롬프트
 
+> [!CAUTION]
+> ## 🚨 CRITICAL WORKFLOW SOP: ADDING NEW QUESTIONS
+> **NEVER upload questions directly to Firestore using one-off scripts without updating the Curriculum map.**
+> If questions are uploaded to the DB but not mapped in `Curriculum.jsx`, the UI will NOT show them.
+> 
+> **MANDATORY 3-STEP PROCESS:**
+> 1. **Write to a Seed File:** Generate your question data as an array inside a new file in `src/constants/` (e.g., `seedYear10Ch1Questions.js`).
+> 2. **Update Curriculum.jsx:** You MUST add the new topic to the `CURRICULUM` array in `src/components/Curriculum.jsx` and link the seed file via the `seed:` property.
+> 3. **Sync via Admin Seeder:** Run the standard sync script (e.g., `sync_curriculum.cjs`) or click the Seeder button in the Admin UI. This ensures the DB, Curriculum mapping, and cache metadata (`sync_meta`) are updated together.
+
 ---
 
 ## ✏️ 설정값 (여기만 바꾸세요)
@@ -11,17 +21,17 @@
 ```
 학년:        Year 10
 챕터 번호:   1
-chapterId:   y10-13
-서브토픽 ID: y7-13a
-토픽 코드:   13A
-서브토픽 제목: Angles at the centre and the circumference
+chapterId:   y10-1
+서브토픽 ID: y7-1a
+토픽 코드:   1A
+서브토픽 제목: Review of percentage
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1 ~ Q5  → easy
-Q6 ~ Q10 → medium
+Q1 ~ Q13  → easy
+Q14 ~ Q23 → medium
 none → hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
@@ -46,7 +56,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q2~ Q7
+  Q1~ Q8, Q13 ,Q15, Q16, Q18, Q17, Q20 ~ Q23
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
@@ -109,7 +119,7 @@ export const Y8_CH1_QUESTIONS = [
 3. **Strict LaTeX Formatting**: 기호, 변수, 각도 표시(예: $\theta$, $\alpha$, $x^2$) 등 모든 수학적 표현은 **반드시** 정확한 LaTeX 문법으로 감싸야 합니다(예: `$\theta$`). `graphData` 내부의 텍스트 라벨에서도 LaTeX 기호가 깨지지 않도록 올바르게 입력하세요 (예: `"text": "$\\theta$"`).
 4. **NO Missing Information (Zero Omission Policy)**: 원본 문제 이미지나 텍스트에 포함된 **어떤 정보도 절대 누락해서는 안 됩니다**.
    - 각도(예: $\theta$, $32^\circ$), 변의 길이, 꼭짓점 알파벳(A, B, C 등)이 원본에 있다면 `question` 텍스트나 `graphData` 그림 내에 **반드시 모두 똑같이 명시**되어야 합니다. (예: 그림에 $\theta$가 빠져서 학생이 무엇을 구해야 할지 모르는 상황 절대 금지)
-5. **DO NOT Skip or Simplify Hard Problems**: 원본 교재나 자료에 있는 **고난이도 문제, 증명(Proof) 문제, 실생활 응용 문제 등을 절대 임의로 생략하거나 쉬운 형태로 단순화해서는 안 됩니다**. 
+5. **DO NOT Skip or Simplify Hard Problems**: 원본 교재나 자료에 있는 **고난이도 문제, 증명(Proof) 문제, 실생활 응용 문제 등을 절대 임의로 생략하거나 쉬운 형태로 단순화해서는 안 됩니다**.
    - 모든 문제는 원문 그대로의 복잡도와 요구사항을 유지하여 `teacher_review` 혹은 적절한 포맷으로 전부 포함시켜야 합니다.
 6. **Prevent JSXGraph Angle Label Overlap**: JSXGraph에서 중심각/원주각 등을 그릴 때, **각도 레이블(Label)이 겹치지 않도록 점의 좌표를 정교하게 설정**해야 합니다.
    - 한 점(예: 중심 $O$)을 기준으로 내부 각도($160^\circ$)와 반사각($200^\circ$)을 동시에 그릴 경우, 두 선분이 직선($180^\circ$)에 가깝게 설정되면 레이블이 중앙에서 겹쳐버릴 수 있습니다.
