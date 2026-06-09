@@ -225,6 +225,23 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
   const isGraph = pageTypes[currentPage] ?? (isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch');
 
+  // Controlled mode (ExamPrep): the parent drives the paper type via the
+  // `isGraph` prop. Because pageTypes[currentPage] is always a defined boolean
+  // (seeded at mount), it takes precedence in the `isGraph` derivation above and
+  // the `?? isGraphProp` fallback never fires — so prop changes were silently
+  // ignored and the Grid/Lined toggle did nothing. Sync the prop into the
+  // current page's type so controlled toggling works again. Uncontrolled callers
+  // (ChallengeSketchBoard) pass no prop, so this is a no-op for them.
+  useEffect(() => {
+    if (isGraphProp === undefined) return;
+    setPageTypes(prev => {
+      if (prev[currentPage] === isGraphProp) return prev;
+      const next = [...prev];
+      next[currentPage] = isGraphProp;
+      return next;
+    });
+  }, [isGraphProp, currentPage]);
+
   // ─── Cached drawing contexts ──────────────────────────────────────────────
   // NOTE: `desynchronized: true` promotes each canvas to an opaque hardware
   // overlay plane on some devices, which makes the stacked lower canvases
