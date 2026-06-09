@@ -689,6 +689,10 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         answerResult,
         sketchDataUrl,
         hasSketch: Boolean(sketchDataUrl),
+        // Direct pointers so Restore Credit never needs to scan all stat docs
+        statRoot: 'users',
+        statCollection: challengeType === 'calc' ? 'calc_stats' : 'daily_stats',
+        statId: today,
         questionData: {
           id: currentQ?.id || '',
           question: currentQ?.question || currentQ?.text || '',

@@ -180,6 +180,47 @@ const ReportsAdmin = () => {
     alert("This is an AI-generated question and cannot be directly edited in the Question Bank. You may need to review the generator logic.");
   };
 
+  // Probe a single stat document by dateKey. Returns a matched attempt or null.
+  const probeStatDoc = async (root, studentId, statCollection, dateKey, questionId, fallbackIndex) => {
+    const statRef = doc(db, root, studentId, statCollection, dateKey);
+    let statData;
+    try {
+      const snap = await getDoc(statRef);
+      if (!snap.exists()) return null;
+      statData = snap.data();
+    } catch (err) {
+      console.warn(`Could not read ${root}/${statCollection}/${dateKey}:`, err?.message);
+      return null;
+    }
+
+    const detailRef = doc(db, root, studentId, statCollection, dateKey, 'detail_snapshot', 'main');
+    let results = Array.isArray(statData.answerResults) ? statData.answerResults : [];
+    let detailData = null;
+    try {
+      const detailSnap = await getDoc(detailRef);
+      if (detailSnap.exists()) {
+        detailData = detailSnap.data();
+        if (Array.isArray(detailData.answerResults)) results = detailData.answerResults;
+      }
+    } catch (err) {
+      console.warn('Could not read detail snapshot:', err);
+    }
+
+    let resultIndex = questionId
+      ? results.findIndex(r => String(r?.questionId || '') === String(questionId))
+      : -1;
+    if (resultIndex === -1 && fallbackIndex != null && results[fallbackIndex] != null) {
+      resultIndex = fallbackIndex;
+    }
+    if (resultIndex === -1) return null;
+
+    return {
+      root, statCollection, statId: dateKey,
+      statRef, detailRef, statData, detailData, results, resultIndex,
+      timestamp: statData.timestamp || statData.completedAt || statData.createdAt || dateKey,
+    };
+  };
+
   const findReportAttempt = async (report) => {
     const studentId = report.studentId;
     const questionId = report.questionId || report.questionData?.id;
@@ -188,58 +229,46 @@ const ReportsAdmin = () => {
 
     const roots = ['users', 'students'];
     const statCollections = ['daily_stats', 'calc_stats'];
-    const attempts = [];
 
+    // ── Fast path: probe the report's date (and ±1 day for timezone edge cases) ──
+    const reportDate = report.createdAt?.toDate
+      ? report.createdAt.toDate()
+      : new Date(report.createdAt || Date.now());
+    const candidateDates = [-1, 0, 1].map(offset => {
+      const d = new Date(reportDate);
+      d.setDate(d.getDate() + offset);
+      return d.toLocaleDateString('en-CA');
+    });
+
+    for (const dateKey of candidateDates) {
+      for (const root of roots) {
+        for (const statCollection of statCollections) {
+          const attempt = await probeStatDoc(root, studentId, statCollection, dateKey, questionId, fallbackIndex);
+          if (attempt) {
+            const isUnresolved = attempt.results[attempt.resultIndex]?.correct !== true;
+            if (isUnresolved) return attempt;
+          }
+        }
+      }
+    }
+
+    // ── Slow fallback: scan all stat docs (rare; catches old reports with no createdAt) ──
+    console.warn('Fast-path miss — falling back to full stat scan for report', report.id);
+    const attempts = [];
     for (const root of roots) {
       for (const statCollection of statCollections) {
         let snap;
         try {
           snap = await getDocs(collection(db, root, studentId, statCollection));
         } catch (err) {
-          // e.g. students/{id}/daily_stats has no security rule → permission
-          // denied. Registered students keep their data under users/, so skip
-          // this root gracefully rather than aborting the whole lookup.
           console.warn(`Skipping ${root}/${statCollection} for report match:`, err?.message);
           continue;
         }
         for (const statDoc of snap.docs) {
-          const statData = statDoc.data();
-          const statRef = doc(db, root, studentId, statCollection, statDoc.id);
-          const detailRef = doc(db, root, studentId, statCollection, statDoc.id, 'detail_snapshot', 'main');
-          let detailData = null;
-          let results = Array.isArray(statData.answerResults) ? statData.answerResults : [];
-
-          try {
-            const detailSnap = await getDoc(detailRef);
-            if (detailSnap.exists()) {
-              detailData = detailSnap.data();
-              if (Array.isArray(detailData.answerResults)) results = detailData.answerResults;
-            }
-          } catch (err) {
-            console.warn('Could not read detail snapshot while locating report attempt:', err);
-          }
-
-          let resultIndex = questionId
-            ? results.findIndex(r => String(r?.questionId || '') === String(questionId))
-            : -1;
-          // Fallback: match by index when no questionId (AI-generated questions)
-          if (resultIndex === -1 && fallbackIndex != null && results[fallbackIndex] != null) {
-            resultIndex = fallbackIndex;
-          }
-          if (resultIndex === -1) continue;
-
-          attempts.push({
-            root,
-            statCollection,
-            statId: statDoc.id,
-            statRef,
-            detailRef,
-            statData,
-            detailData,
-            results,
-            resultIndex,
-            timestamp: statData.timestamp || statData.completedAt || statData.createdAt || statDoc.id,
-          });
+          // Skip dates already probed above
+          if (candidateDates.includes(statDoc.id)) continue;
+          const attempt = await probeStatDoc(root, studentId, statCollection, statDoc.id, questionId, fallbackIndex);
+          if (attempt) attempts.push(attempt);
         }
       }
     }
@@ -257,7 +286,19 @@ const ReportsAdmin = () => {
   // throws on unexpected errors. Used both by the manual Restore Credit button and auto-restore on delete.
   const restoreCreditForReport = async (report) => {
     if (report.creditRestored) return false;
-    const attempt = await findReportAttempt(report);
+
+    // Fast path: report was saved with direct stat pointers (new reports)
+    let attempt = null;
+    if (report.statRoot && report.statCollection && report.statId) {
+      attempt = await probeStatDoc(
+        report.statRoot, report.studentId,
+        report.statCollection, report.statId,
+        report.questionId || report.questionData?.id,
+        report.questionIndex ?? null,
+      );
+    }
+    // Fallback: scan (old reports without direct pointers)
+    if (!attempt) attempt = await findReportAttempt(report);
     if (!attempt) return false;
 
     const { root, statCollection, statId, statRef, detailRef, resultIndex } = attempt;
