@@ -66,8 +66,9 @@ const toDisplayText = (value, fallback = '') => {
   // KaTeX renders them. They often arrive as raw LaTeX without $ delimiters
   // (e.g. solution "workingOut" fields), which would otherwise show literally.
   // The lookbehind/ahead avoid double-wrapping an already-delimited block.
+  // Also skip environments already inside \(...\) or \[...\] delimiters.
   str = str.replace(
-    /(?<!\$)\\begin\{(aligned|aligned\*|align|align\*|alignedat|array|cases|matrix|pmatrix|bmatrix|vmatrix|Bmatrix|gathered|gather|split)\}[\s\S]*?\\end\{\1\}(?!\$)/g,
+    /(?<!\$|\\\(|\\\[)\\begin\{(aligned|aligned\*|align|align\*|alignedat|array|cases|matrix|pmatrix|bmatrix|vmatrix|Bmatrix|gathered|gather|split)\}[\s\S]*?\\end\{\1\}(?!\$|\\\)|\\\])/g,
     (m) => `$$${m}$$`,
   );
 

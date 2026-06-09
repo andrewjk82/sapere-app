@@ -29,14 +29,23 @@ if (typeof window !== 'undefined' && MathfieldElement) {
       document.body.appendChild(tmp);
       tmp.focus();
       try { tmp.executeCommand(['insert', '1']); } catch (_) { /* ignore */ }
-      // Build the keyboard panel DOM too, but hide it again immediately (two
-      // animation frames) so it is not visibly flashed on screen.
+      // Build the keyboard panel DOM too. show() is what makes MathLive lazily
+      // build the keyboard DOM + wire the keystroke pipeline — but it also pops
+      // the REAL on-screen keyboard, which flashed visibly at the bottom of the
+      // screen ~1s after every page load. opacity:0 lets the panel build fully
+      // (layout/DOM are unaffected by opacity) while staying invisible, so the
+      // priming still works but the student never sees a keyboard flash.
+      const suppress = document.createElement('style');
+      suppress.textContent = '.ML__keyboard{opacity:0 !important;pointer-events:none !important;transition:none !important;}';
+      document.head.appendChild(suppress);
+      const removeSuppress = () => { try { suppress.remove(); } catch (_) { /* ignore */ } };
       try {
         window.mathVirtualKeyboard?.show();
         requestAnimationFrame(() => requestAnimationFrame(() => {
           try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
+          removeSuppress();
         }));
-      } catch (_) { /* ignore */ }
+      } catch (_) { removeSuppress(); }
       setTimeout(() => {
         try { tmp.blur(); tmp.remove(); } catch (_) { /* ignore */ }
       }, 400);
