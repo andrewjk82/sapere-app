@@ -685,6 +685,11 @@ const Curriculum = () => {
   const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
   const [previewLesson, setPreviewLesson] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
+  // Live "questions changed" signal. Any add/delete path bumps
+  // sync_meta/questions.version; this realtime listener mirrors that version so
+  // the count-fetch effect re-runs automatically — counts update without a
+  // page refresh whenever a question is added or removed anywhere.
+  const [questionsSyncVersion, setQuestionsSyncVersion] = useState(0);
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
   const [expandedSeedYears, setExpandedSeedYears] = useState({});
@@ -2068,7 +2073,25 @@ const Curriculum = () => {
     return () => {
       cancelled = true;
     };
-  }, [isAdmin, countChapterIds, countTopicIds, isMigrating]);
+  }, [isAdmin, countChapterIds, countTopicIds, isMigrating, questionsSyncVersion]);
+
+  // Realtime "questions changed" subscription. Every question add/delete path
+  // bumps sync_meta/questions.version; mirroring it into state re-triggers the
+  // count-fetch effect above, so counts refresh live (no page reload needed)
+  // whenever a question is added or removed — from this page, the question bank
+  // modal, the seeder, or any other client.
+  useEffect(() => {
+    const ref = doc(db, 'sync_meta', 'questions');
+    const unsub = onSnapshot(
+      ref,
+      (snap) => {
+        const v = Number(snap.data()?.version || snap.data()?.updatedAt?.toMillis?.() || 0);
+        setQuestionsSyncVersion((prev) => (v && v !== prev ? v : prev));
+      },
+      () => { /* permission/offline — fall back to mount-time fetch + TTL */ }
+    );
+    return () => unsub();
+  }, []);
 
   const calculateHscBand = (pct) => {
     if (pct >= 90) return { label: 'Band 6', className: 'band-6', color: '#f59e0b' };
