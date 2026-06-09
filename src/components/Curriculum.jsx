@@ -179,6 +179,7 @@ import { Y10_CH1E_QUESTIONS } from '../constants/seedYear10Ch1EQuestions.js';
 import { Y10_CH1F_QUESTIONS } from '../constants/seedYear10Ch1FQuestions.js';
 import { Y10_CH2F_QUESTIONS } from '../constants/seedYear10Ch2FQuestions.js';
 import { Y10_CH2A_QUESTIONS } from '../constants/seedYear10Ch2Questions.js';
+import { Y10_CH2B_QUESTIONS } from '../constants/seedYear10Ch2BQuestions.js';
 import { Y10_CH3J_QUESTIONS } from '../constants/seedYear10Ch3JQuestions.js';
 import { Y10_CH4G_QUESTIONS } from '../constants/seedYear10Ch4GQuestions.js';
 import { Y10_CH5_QUESTIONS } from '../constants/seedYear10Ch5GQuestions.js';
@@ -446,6 +447,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1e', topicCode: '1E', topicTitle: 'Compound depreciation', year: 'Year 10', seed: Y10_CH1E_QUESTIONS, label: 'Y10 Ch1 · 1E Compound depreciation' },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1f', topicCode: '1F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH1F_QUESTIONS, label: 'Y10 Ch1 · 1F Revision' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2a', topicCode: '2A', topicTitle: 'Irrational numbers and surds', year: 'Year 10', seed: Y10_CH2A_QUESTIONS, label: 'Y10 Ch2 · 2A Irrational numbers and surds' },
+  { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2b', topicCode: '2B', topicTitle: 'Addition and subtraction of surds', year: 'Year 10', seed: Y10_CH2B_QUESTIONS, label: 'Y10 Ch2 · 2B Addition and subtraction of surds' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
   { chapterId: 'y10-4', chapterTitle: 'Chapter 4: Lines and linear equations', topicId: 'y10-4g', topicCode: '4G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH4G_QUESTIONS, label: 'Y10 Ch4 · 4G Revision' },
