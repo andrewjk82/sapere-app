@@ -11,6 +11,8 @@ import { ASCHAM_2020_QUESTIONS }         from './seedAscham2020Questions.js';
 import { BARKER_2020_QUESTIONS }         from './seedBarker2020Questions.js';
 import { BAULKHAM_2020_QUESTIONS }       from './seedBaulkham2020Questions.js';
 import { BLACKTOWN_BOYS_2020_QUESTIONS } from './seedBlacktownBoys2020Questions.js';
+import { CTHS_2020_QUESTIONS }           from './seedCherrybrookTech2020Questions.js';
+import { CTHS_2020_SIMILAR_QUESTIONS }   from './seedCherrybrookTech2020SimilarQuestions.js';
 
 // ─── Add new past paper imports above this line ───────────────────────────────
 
@@ -21,5 +23,7 @@ export const ALL_PAST_PAPER_QUESTIONS = [
   ...BARKER_2020_QUESTIONS,
   ...BAULKHAM_2020_QUESTIONS,
   ...BLACKTOWN_BOYS_2020_QUESTIONS,
+  ...CTHS_2020_QUESTIONS,
+  ...CTHS_2020_SIMILAR_QUESTIONS,
   // ─── Add new past paper arrays above this line ────────────────────────────
 ];

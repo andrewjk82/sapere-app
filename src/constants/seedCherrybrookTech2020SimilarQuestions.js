@@ -1,0 +1,1 @@
+export const CTHS_2020_SIMILAR_QUESTIONS = [];
