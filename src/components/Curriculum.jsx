@@ -215,6 +215,7 @@ import { Y10_CH14A_QUESTIONS } from '../constants/seedYear10Ch14AQuestions.js';
 import { Y10_CH14B_QUESTIONS } from '../constants/seedYear10Ch14BQuestions.js';
 import { Y10_CH14C_QUESTIONS } from '../constants/seedYear10Ch14CQuestions.js';
 import { Y10_CH14D_QUESTIONS } from '../constants/seedYear10Ch14DQuestions.js';
+import { Y10_CH14E_QUESTIONS } from '../constants/seedYear10Ch14EQuestions.js';
 import { Y10_CH15_QUESTIONS } from '../constants/seedYear10Ch15Questions.js';
 import { Y10_CH15B_QUESTIONS } from '../constants/seedYear10Ch15BQuestions.js';
 import { Y10_CH15C_QUESTIONS } from '../constants/seedYear10Ch15CQuestions.js';
@@ -495,6 +496,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-14', chapterTitle: 'Chapter 14: Logarithms', topicId: 'y10-14b', topicCode: '14B', topicTitle: 'Change of base', year: 'Year 10', seed: Y10_CH14B_QUESTIONS, label: 'Y10 Ch14 · 14B Change of base' },
   { chapterId: 'y10-14', chapterTitle: 'Chapter 14: Logarithms', topicId: 'y10-14c', topicCode: '14C', topicTitle: 'Graphs of exponential and logarithm functions', year: 'Year 10', seed: Y10_CH14C_QUESTIONS, label: 'Y10 Ch14 · 14C Graphs of exponential and logarithm functions' },
   { chapterId: 'y10-14', chapterTitle: 'Chapter 14: Logarithms', topicId: 'y10-14d', topicCode: '14D', topicTitle: 'Applications to science, population growth and finance', year: 'Year 10', seed: Y10_CH14D_QUESTIONS, label: 'Y10 Ch14 · 14D Applications to science, population growth and finance' },
+  { chapterId: 'y10-14', chapterTitle: 'Chapter 14: Logarithms', topicId: 'y10-14e', topicCode: '14E', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH14E_QUESTIONS, label: 'Y10 Ch14 · 14E Revision' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15a', topicCode: '15A', topicTitle: 'Review of probability', year: 'Year 10', seed: Y10_CH15_QUESTIONS, label: 'Y10 Ch15 · 15A Review of probability' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15b', topicCode: '15B', topicTitle: 'The complement, union and intersection', year: 'Year 10', seed: Y10_CH15B_QUESTIONS, label: 'Y10 Ch15 · 15B The complement, union and intersection' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15c', topicCode: '15C', topicTitle: 'Conditional probability', year: 'Year 10', seed: Y10_CH15C_QUESTIONS, label: 'Y10 Ch15 · 15C Conditional probability' },
