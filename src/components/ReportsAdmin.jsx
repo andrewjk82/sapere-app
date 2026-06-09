@@ -913,12 +913,24 @@ const ReportsAdmin = () => {
                   )}
 
                   {/* Working out / sketch image */}
-                  {(previewReport.sketchDataUrl || previewReport.workingOut) && (
-                    <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#faf5ff', border: '1.5px solid #e9d5ff' }}>
-                      <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Student's Sketch / Working Out</div>
-                      <img src={previewReport.sketchDataUrl || previewReport.workingOut} alt="Student sketch" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', borderRadius: '12px', background: '#fff', border: '1px solid #e2e8f0' }} />
-                    </div>
-                  )}
+                  {(() => {
+                    const pages = Array.isArray(previewReport.workingOutPages) ? previewReport.workingOutPages.filter(Boolean) : [];
+                    const single = previewReport.sketchDataUrl || previewReport.workingOut || null;
+                    const images = pages.length > 0 ? pages : (single ? [single] : []);
+                    if (images.length === 0) return null;
+                    return (
+                      <div style={{ padding: '18px 22px', borderRadius: '20px', background: '#faf5ff', border: '1.5px solid #e9d5ff' }}>
+                        <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>
+                          Student's Sketch / Working Out{images.length > 1 ? ` (${images.length} pages)` : ''}
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                          {images.map((src, i) => (
+                            <img key={i} src={src} alt={`Student sketch page ${i + 1}`} style={{ width: '100%', maxHeight: '400px', objectFit: 'contain', borderRadius: '12px', background: '#fff', border: '1px solid #e2e8f0' }} />
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })()}
 
                   {/* Hint */}
                   {q.hint && (

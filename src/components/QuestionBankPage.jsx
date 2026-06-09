@@ -370,7 +370,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             )}
 
             {/* Solution preview (if any) */}
-            {q?.solution && (
+            {q?.solution && !(Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0) && (
               <div style={{ padding: '20px 24px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0' }}>
                 <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Solution</div>
                 <MathView content={q.solution} style={{ color: '#334155', fontSize: '0.95rem', lineHeight: 1.6 }} />

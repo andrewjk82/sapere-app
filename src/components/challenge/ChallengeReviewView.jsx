@@ -1,7 +1,7 @@
 import { useState, useRef, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag, PenLine } from 'lucide-react';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp, doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import MathView from '../MathView';
@@ -48,6 +48,8 @@ const ChallengeReviewView = ({
   onClose,
   isMobile = false,
   isTabletLayout = false,
+  statColName = null,
+  sessionId = null,
 }) => {
   const [idx, setIdx] = useState(() => Math.min(Math.max(0, startIdx), Math.max(0, questions.length - 1)));
   const padRef = useRef(null);
@@ -65,8 +67,30 @@ const ChallengeReviewView = ({
     try {
       const reportQ = questions[reportingIdx] || {};
       const result = answerResults[reportingIdx] || null;
-      // Pull the saved sketch from the stored result (captured when student submitted)
-      const savedSketch = result?.workingOut || result?.answerImage || null;
+
+      // workingOut 이미지는 Firestore 크기 제한으로 인해 answerResults에서 제거되고
+      // working_out 서브컬렉션에 별도 저장됨 — 리포트 제출 시 직접 fetch
+      let sketchDataUrl = result?.workingOut || result?.answerImage || null;
+      let workingOutPages = Array.isArray(result?.workingOutPages) ? result.workingOutPages.filter(Boolean) : [];
+
+      if (!sketchDataUrl && workingOutPages.length === 0 && result?.hasWorkingOut && user?.uid && statColName && sessionId) {
+        try {
+          const woSnap = await getDoc(doc(db, 'users', user.uid, statColName, sessionId, 'working_out', String(reportingIdx)));
+          if (woSnap.exists()) {
+            const woData = woSnap.data();
+            sketchDataUrl = woData.workingOut || null;
+            workingOutPages = Array.isArray(woData.workingOutPages) ? woData.workingOutPages.filter(Boolean) : [];
+          }
+        } catch (woErr) {
+          console.warn('working_out fetch failed (non-fatal):', woErr?.code || woErr);
+        }
+      }
+
+      // workingOutPages가 있으면 첫 번째 페이지를 sketchDataUrl로 사용 (단일 이미지 미리보기용)
+      if (!sketchDataUrl && workingOutPages.length > 0) {
+        sketchDataUrl = workingOutPages[0];
+      }
+
       await addDoc(collection(db, 'reports'), {
         studentId: user?.uid || '',
         studentName: user?.displayName || user?.email || 'Student',
@@ -74,8 +98,9 @@ const ChallengeReviewView = ({
         questionIndex: reportingIdx,
         studentAnswer: String(userAnswers[reportingIdx] ?? ''),
         answerResult: result,
-        sketchDataUrl: savedSketch,
-        hasSketch: Boolean(savedSketch),
+        sketchDataUrl,
+        workingOutPages,
+        hasSketch: Boolean(sketchDataUrl) || workingOutPages.length > 0,
         source: 'review', // flagged during review, not during quiz
         questionData: {
           id: reportQ.id || '',

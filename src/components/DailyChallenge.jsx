@@ -1860,6 +1860,8 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
                   isMobile={isMobile}
                   isTabletLayout={isTabletCanvasLayout}
                   onClose={() => setStep('result')}
+                  statColName={challengeType === 'calc' ? 'calc_stats' : 'daily_stats'}
+                  sessionId={currentSessionId}
                 />
               )}
 

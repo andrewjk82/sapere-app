@@ -543,7 +543,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
             <Lightbulb size={16} color="#7c3aed" />
             <span style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Solution</span>
           </div>
-          {q.solution && (
+          {q.solution && !(Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0) && (
             <MathView content={q.solution} style={{ fontSize: '0.92rem', color: '#3730a3', fontWeight: 600, lineHeight: 1.65 }} />
           )}
           {(q.solutionSteps || []).length > 0 && (
