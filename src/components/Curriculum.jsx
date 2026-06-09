@@ -2546,7 +2546,7 @@ const Curriculum = () => {
                           className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
                         >
                           {year}
-                          {count > 0 && (
+                          {isAdmin && count > 0 && (
                             <span style={{ display: 'block', fontSize: '0.62rem', fontWeight: 700, opacity: 0.7, lineHeight: 1, marginTop: '2px' }}>
                               {count.toLocaleString()} Qs
                             </span>
@@ -2970,7 +2970,7 @@ const Curriculum = () => {
                       <h3 className="chapter-card__title">{chapter.title}</h3>
                       <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
-                        {(() => {
+                        {isAdmin && (() => {
                           const topicSum = (chapter.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
                           const cnt = Math.max(seedCountByChapter[chapter.id] || 0, questionCounts[chapter.id] || 0, topicSum);
                           return cnt > 0 ? (
