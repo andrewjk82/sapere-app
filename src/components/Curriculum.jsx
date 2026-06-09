@@ -178,6 +178,7 @@ import { Y10_CH1D_QUESTIONS } from '../constants/seedYear10Ch1DQuestions.js';
 import { Y10_CH1E_QUESTIONS } from '../constants/seedYear10Ch1EQuestions.js';
 import { Y10_CH1F_QUESTIONS } from '../constants/seedYear10Ch1FQuestions.js';
 import { Y10_CH2F_QUESTIONS } from '../constants/seedYear10Ch2FQuestions.js';
+import { Y10_CH2G_QUESTIONS } from '../constants/seedYear10Ch2GQuestions.js';
 import { Y10_CH2A_QUESTIONS } from '../constants/seedYear10Ch2Questions.js';
 import { Y10_CH2B_QUESTIONS } from '../constants/seedYear10Ch2BQuestions.js';
 import { Y10_CH2C_QUESTIONS } from '../constants/seedYear10Ch2CQuestions.js';
@@ -455,6 +456,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2d', topicCode: '2D', topicTitle: 'Special products', year: 'Year 10', seed: Y10_CH2D_QUESTIONS, label: 'Y10 Ch2 · 2D Special products' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2e', topicCode: '2E', topicTitle: 'Rationalising denominators', year: 'Year 10', seed: Y10_CH2E_QUESTIONS, label: 'Y10 Ch2 · 2E Rationalising denominators' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
+  { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2g', topicCode: '2G', topicTitle: 'Challenge exercise', year: 'Year 10', seed: Y10_CH2G_QUESTIONS, label: 'Y10 Ch2 · 2G Challenge exercise' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
   { chapterId: 'y10-4', chapterTitle: 'Chapter 4: Lines and linear equations', topicId: 'y10-4g', topicCode: '4G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH4G_QUESTIONS, label: 'Y10 Ch4 · 4G Revision' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5g', topicCode: '5G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH5_QUESTIONS, label: 'Y10 Ch5 · 5G Revision' },

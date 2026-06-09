@@ -1883,7 +1883,8 @@ export const CURRICULUM_DATA = {
         { id: 'y10-2c', code: '2C', title: 'Multiplication and division of surds' },
         { id: 'y10-2d', code: '2D', title: 'Special products' },
         { id: 'y10-2e', code: '2E', title: 'Irrational numbers and surds' },
-        { id: 'y10-2f', code: '2F', title: 'Revision' }
+        { id: 'y10-2f', code: '2F', title: 'Revision' },
+        { id: 'y10-2g', code: '2G', title: 'Challenge exercise' }
       ]
     },
     {
