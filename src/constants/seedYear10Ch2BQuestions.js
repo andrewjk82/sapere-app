@@ -1113,21 +1113,22 @@ export const Y10_CH2B_QUESTIONS = [
     "a": "2\\sqrt{3}+2\\sqrt{2}",
     "graphData": {
       "geometry": {
-        "points": [
-          [0, 0],
-          [3, 0],
-          [3, 2],
-          [0, 2]
+        "showPointLabels": false,
+        "points": {
+          "A": [0, 0],
+          "B": [3, 0],
+          "C": [3, 2],
+          "D": [0, 2]
+        },
+        "segments": [
+          { "from": "A", "to": "B" },
+          { "from": "B", "to": "C" },
+          { "from": "C", "to": "D" },
+          { "from": "D", "to": "A" }
         ],
-        "polygons": [
-          {
-            "points": [[0, 0], [3, 0], [3, 2], [0, 2]],
-            "label": ""
-          }
-        ],
-        "labels": [
-          { "coords": [1.5, -0.4], "text": "\\sqrt{3}" },
-          { "coords": [3.4, 1.0], "text": "\\sqrt{2}" }
+        "sideLabels": [
+          { "between": ["A", "B"], "text": "\\sqrt{3}" },
+          { "between": ["B", "C"], "text": "\\sqrt{2}" }
         ]
       }
     },
@@ -1152,21 +1153,22 @@ export const Y10_CH2B_QUESTIONS = [
     "a": "\\sqrt{6}",
     "graphData": {
       "geometry": {
-        "points": [
-          [0, 0],
-          [3, 0],
-          [3, 2],
-          [0, 2]
+        "showPointLabels": false,
+        "points": {
+          "A": [0, 0],
+          "B": [3, 0],
+          "C": [3, 2],
+          "D": [0, 2]
+        },
+        "segments": [
+          { "from": "A", "to": "B" },
+          { "from": "B", "to": "C" },
+          { "from": "C", "to": "D" },
+          { "from": "D", "to": "A" }
         ],
-        "polygons": [
-          {
-            "points": [[0, 0], [3, 0], [3, 2], [0, 2]],
-            "label": ""
-          }
-        ],
-        "labels": [
-          { "coords": [1.5, -0.4], "text": "\\sqrt{3}" },
-          { "coords": [3.4, 1.0], "text": "\\sqrt{2}" }
+        "sideLabels": [
+          { "between": ["A", "B"], "text": "\\sqrt{3}" },
+          { "between": ["B", "C"], "text": "\\sqrt{2}" }
         ]
       }
     },
@@ -1191,21 +1193,22 @@ export const Y10_CH2B_QUESTIONS = [
     "a": "\\sqrt{5}",
     "graphData": {
       "geometry": {
-        "points": [
-          [0, 0],
-          [3, 0],
-          [3, 2],
-          [0, 2]
+        "showPointLabels": false,
+        "points": {
+          "A": [0, 0],
+          "B": [3, 0],
+          "C": [3, 2],
+          "D": [0, 2]
+        },
+        "segments": [
+          { "from": "A", "to": "B" },
+          { "from": "B", "to": "C" },
+          { "from": "C", "to": "D" },
+          { "from": "D", "to": "A" }
         ],
-        "polygons": [
-          {
-            "points": [[0, 0], [3, 0], [3, 2], [0, 2]],
-            "label": ""
-          }
-        ],
-        "labels": [
-          { "coords": [1.5, -0.4], "text": "\\sqrt{3}" },
-          { "coords": [3.4, 1.0], "text": "\\sqrt{2}" }
+        "sideLabels": [
+          { "between": ["A", "B"], "text": "\\sqrt{3}" },
+          { "between": ["B", "C"], "text": "\\sqrt{2}" }
         ]
       }
     },
@@ -1236,21 +1239,22 @@ export const Y10_CH2B_QUESTIONS = [
     "a": "2\\sqrt{5}+2\\sqrt{3}",
     "graphData": {
       "geometry": {
-        "points": [
-          [0, 0],
-          [4, 0],
-          [4, 2.5],
-          [0, 2.5]
+        "showPointLabels": false,
+        "points": {
+          "A": [0, 0],
+          "B": [4, 0],
+          "C": [4, 2.5],
+          "D": [0, 2.5]
+        },
+        "segments": [
+          { "from": "A", "to": "B" },
+          { "from": "B", "to": "C" },
+          { "from": "C", "to": "D" },
+          { "from": "D", "to": "A" }
         ],
-        "polygons": [
-          {
-            "points": [[0, 0], [4, 0], [4, 2.5], [0, 2.5]],
-            "label": ""
-          }
-        ],
-        "labels": [
-          { "coords": [2.0, -0.4], "text": "\\sqrt{5}" },
-          { "coords": [4.4, 1.25], "text": "\\sqrt{3}" }
+        "sideLabels": [
+          { "between": ["A", "B"], "text": "\\sqrt{5}" },
+          { "between": ["B", "C"], "text": "\\sqrt{3}" }
         ]
       }
     },
@@ -1275,21 +1279,22 @@ export const Y10_CH2B_QUESTIONS = [
     "a": "\\sqrt{15}",
     "graphData": {
       "geometry": {
-        "points": [
-          [0, 0],
-          [4, 0],
-          [4, 2.5],
-          [0, 2.5]
+        "showPointLabels": false,
+        "points": {
+          "A": [0, 0],
+          "B": [4, 0],
+          "C": [4, 2.5],
+          "D": [0, 2.5]
+        },
+        "segments": [
+          { "from": "A", "to": "B" },
+          { "from": "B", "to": "C" },
+          { "from": "C", "to": "D" },
+          { "from": "D", "to": "A" }
         ],
-        "polygons": [
-          {
-            "points": [[0, 0], [4, 0], [4, 2.5], [0, 2.5]],
-            "label": ""
-          }
-        ],
-        "labels": [
-          { "coords": [2.0, -0.4], "text": "\\sqrt{5}" },
-          { "coords": [4.4, 1.25], "text": "\\sqrt{3}" }
+        "sideLabels": [
+          { "between": ["A", "B"], "text": "\\sqrt{5}" },
+          { "between": ["B", "C"], "text": "\\sqrt{3}" }
         ]
       }
     },
@@ -1314,21 +1319,22 @@ export const Y10_CH2B_QUESTIONS = [
     "a": "\\sqrt{8}",
     "graphData": {
       "geometry": {
-        "points": [
-          [0, 0],
-          [4, 0],
-          [4, 2.5],
-          [0, 2.5]
+        "showPointLabels": false,
+        "points": {
+          "A": [0, 0],
+          "B": [4, 0],
+          "C": [4, 2.5],
+          "D": [0, 2.5]
+        },
+        "segments": [
+          { "from": "A", "to": "B" },
+          { "from": "B", "to": "C" },
+          { "from": "C", "to": "D" },
+          { "from": "D", "to": "A" }
         ],
-        "polygons": [
-          {
-            "points": [[0, 0], [4, 0], [4, 2.5], [0, 2.5]],
-            "label": ""
-          }
-        ],
-        "labels": [
-          { "coords": [2.0, -0.4], "text": "\\sqrt{5}" },
-          { "coords": [4.4, 1.25], "text": "\\sqrt{3}" }
+        "sideLabels": [
+          { "between": ["A", "B"], "text": "\\sqrt{5}" },
+          { "between": ["B", "C"], "text": "\\sqrt{3}" }
         ]
       }
     },
@@ -1343,7 +1349,7 @@ export const Y10_CH2B_QUESTIONS = [
       },
       {
         "explanation": "Take the square root. Although \\(\\sqrt{8}\\) simplifies to \\(2\\sqrt{2}\\), the unsimplified exact form \\(\\sqrt{8}\\) matches standard exact diagonal expressions of rectangle hypotenuses.",
-        "workingOut": "\\(d = \\sqrt{8}\\)" // Let's keep it as \sqrt{8}
+        "workingOut": "\\(d = \\sqrt{8}\\)"
       }
     ],
     "t": "Addition and subtraction of Surds"

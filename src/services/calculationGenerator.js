@@ -2040,10 +2040,126 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   };
 };
 
+// ── MCQ distractor generator for Y1-Y4 calc sprint ──────────────────────────
+// Produces exactly 4 unique options (correct answer + 3 plausible distractors).
+const shuffleArr = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
+const calcMCQOptions = (answerStr) => {
+  const s = String(answerStr).trim();
+
+  // ── Integer answer ────────────────────────────────────────────
+  const intVal = parseInt(s, 10);
+  if (!isNaN(intVal) && String(intVal) === s) {
+    const seen = new Set([intVal]);
+    const distractors = [];
+    const offsets = [1, -1, 2, -2, 3, -3, 5, -5, 4, -4, 6, -6, 10, -10];
+    for (const off of offsets) {
+      const d = intVal + off;
+      if (d >= 0 && !seen.has(d)) { seen.add(d); distractors.push(String(d)); }
+      if (distractors.length >= 3) break;
+    }
+    // safety fill: random nearby if offsets exhausted
+    while (distractors.length < 3) {
+      const d = intVal + randomInt(1, 8) * (Math.random() > 0.5 ? 1 : -1);
+      if (d >= 0 && !seen.has(d)) { seen.add(d); distractors.push(String(d)); }
+    }
+    return shuffleArr([s, ...distractors]);
+  }
+
+  // ── Decimal answer ────────────────────────────────────────────
+  if (s.includes('.') && !s.includes('/') && !s.includes(' ')) {
+    const decVal = parseFloat(s);
+    if (!isNaN(decVal)) {
+      const dp = (s.split('.')[1] || '').length;
+      const step = Math.pow(10, -dp);
+      const seen = new Set([s]);
+      const distractors = [];
+      const offsets = [1, -1, 2, -2, 3, -3, 5, -5];
+      for (const off of offsets) {
+        const d = Math.round((decVal + off * step) * 1e8) / 1e8;
+        const ds = d >= 0 ? d.toFixed(dp).replace(/\.?0+$/, '') : null;
+        if (ds && d >= 0 && !seen.has(ds)) { seen.add(ds); distractors.push(ds); }
+        if (distractors.length >= 3) break;
+      }
+      while (distractors.length < 3) {
+        const d = Math.round((decVal + randomInt(1, 5) * step * (Math.random() > 0.5 ? 1 : -1)) * 1e8) / 1e8;
+        const ds = d >= 0 ? d.toFixed(dp).replace(/\.?0+$/, '') : null;
+        if (ds && d >= 0 && !seen.has(ds)) { seen.add(ds); distractors.push(ds); }
+      }
+      return shuffleArr([s, ...distractors]);
+    }
+  }
+
+  // ── Simple fraction answer e.g. "3/4" ────────────────────────
+  const fracMatch = s.match(/^(\d+)\/(\d+)$/);
+  if (fracMatch) {
+    const n = parseInt(fracMatch[1], 10);
+    const d = parseInt(fracMatch[2], 10);
+    const seen = new Set([s]);
+    const distractors = [];
+    // vary numerator ±1, then denominator ±1
+    const variants = [
+      `${n + 1}/${d}`, `${n - 1}/${d}`,
+      `${n}/${d + 1}`, `${n}/${d - 1}`,
+      `${n + 2}/${d}`, `${n}/${d + 2}`,
+    ];
+    for (const v of variants) {
+      const [vn, vd] = v.split('/').map(Number);
+      if (vn > 0 && vd > 1 && vn < vd && !seen.has(v)) { seen.add(v); distractors.push(v); }
+      if (distractors.length >= 3) break;
+    }
+    while (distractors.length < 3) {
+      const vn = Math.max(1, n + randomInt(1, 3) * (Math.random() > 0.5 ? 1 : -1));
+      const v = `${vn}/${d}`;
+      if (vn > 0 && vn < d && !seen.has(v)) { seen.add(v); distractors.push(v); }
+    }
+    return shuffleArr([s, ...distractors]);
+  }
+
+  // ── Mixed number answer e.g. "1 2/3" ─────────────────────────
+  const mixMatch = s.match(/^(\d+) (\d+)\/(\d+)$/);
+  if (mixMatch) {
+    const w = parseInt(mixMatch[1], 10);
+    const n = parseInt(mixMatch[2], 10);
+    const d = parseInt(mixMatch[3], 10);
+    const seen = new Set([s]);
+    const distractors = [];
+    const variants = [
+      `${w + 1} ${n}/${d}`, `${w - 1} ${n}/${d}`,
+      `${w} ${n + 1}/${d}`, `${w} ${Math.max(1, n - 1)}/${d}`,
+      `${w + 1} ${Math.max(1, n - 1)}/${d}`,
+    ];
+    for (const v of variants) {
+      const parts = v.match(/^(\d+) (\d+)\/(\d+)$/);
+      if (parts) {
+        const [, vw, vn, vd] = parts.map(Number);
+        if (vw >= 0 && vn > 0 && vn < vd && !seen.has(v)) { seen.add(v); distractors.push(v); }
+      }
+      if (distractors.length >= 3) break;
+    }
+    while (distractors.length < 3) {
+      const vw = Math.max(0, w + randomInt(1, 2) * (Math.random() > 0.5 ? 1 : -1));
+      const v = `${vw} ${n}/${d}`;
+      if (!seen.has(v)) { seen.add(v); distractors.push(v); }
+    }
+    return shuffleArr([s, ...distractors]);
+  }
+
+  // ── Fallback: return empty (question stays as short_answer) ──
+  return [];
+};
+
 export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', timeLimit = 30) => {
   // If no topics assigned, pick a default based on year
   let topicsToUse = assignedTopics && assignedTopics.length > 0 ? assignedTopics : null;
-  
+
   if (!topicsToUse) {
     const yearNum = parseInt(String(year).replace('Year ', '')) || 1;
     if (yearNum >= 11) topicsToUse = ['calc-7-core', 'calc-7-adv', 'calc-7-enrich'];
@@ -2052,11 +2168,22 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', t
     else if (yearNum >= 3) topicsToUse = ['calc-3-b9', 'calc-3-c10', 'calc-4-b9', 'calc-4-c10'];
     else topicsToUse = ['calc-1-core'];
   }
-  
+
+  const yearNum = parseInt(String(year).replace(/[^0-9]/g, '')) || 99;
+  const useMCQ = yearNum >= 1 && yearNum <= 4;
+
   const questions = [];
   for (let i = 0; i < count; i++) {
     const topic = pick(topicsToUse);
-    questions.push(generateCalculationQuestion(topic, timeLimit));
+    const q = generateCalculationQuestion(topic, timeLimit);
+    if (useMCQ) {
+      const options = calcMCQOptions(q.answer);
+      if (options.length === 4) {
+        q.options = options;
+        q.type = 'multiple_choice';
+      }
+    }
+    questions.push(q);
   }
   return questions;
 };
