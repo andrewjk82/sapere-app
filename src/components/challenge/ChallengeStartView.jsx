@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   BookOpen,
@@ -10,7 +10,10 @@ import {
   History,
   ArrowRight,
   BookLock,
+  GraduationCap,
 } from 'lucide-react';
+import { getLesson } from '../../lessons/registry';
+import LessonPlayer from '../lessons/LessonPlayer';
 
 // ── Per-kind palette + glyph for the session cards ─────────
 const KIND = {
@@ -292,6 +295,20 @@ const ChallengeStartView = ({
 }) => {
   const calculationEnabled = studentProfile?.calculationEnabled !== false;
 
+  // Lessons for assigned Clock Reading topics — one entry per distinct lesson
+  // (each clock stage maps several topic ids to the same lesson spec).
+  const [previewLesson, setPreviewLesson] = useState(null);
+  const clockLessons = useMemo(() => {
+    const assigned = Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [];
+    const seen = new Set();
+    const lessons = [];
+    assigned.filter((id) => id.startsWith('clock-')).forEach((id) => {
+      const lesson = getLesson(id);
+      if (lesson && !seen.has(lesson.title)) { seen.add(lesson.title); lessons.push(lesson); }
+    });
+    return lessons;
+  }, [studentProfile?.assignedChapters]);
+
   const dailyNote = secretNote?.daily || { total: 0, due: 0 };
   const calcNote = secretNote?.calc || { total: 0, due: 0 };
 
@@ -388,6 +405,10 @@ const ChallengeStartView = ({
     <div className="app-page">
       <style>{challengeStartStyles}</style>
 
+      {previewLesson && (
+        <LessonPlayer lesson={previewLesson} onClose={() => setPreviewLesson(null)} />
+      )}
+
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -432,6 +453,40 @@ const ChallengeStartView = ({
               note={calcNote}
               onOpenNote={onOpenSecretNote}
             />
+          )}
+          {calculationEnabled && clockLessons.length > 0 && (
+            <div
+              style={{
+                borderRadius: '18px',
+                border: '1.5px solid #fde68a',
+                background: 'linear-gradient(135deg,#fffbeb,#fef3c7)',
+                padding: '14px 18px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, fontSize: '0.85rem', color: '#92400e' }}>
+                <GraduationCap size={16} /> Learn before you sprint — reading a clock
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {clockLessons.map((lesson) => (
+                  <button
+                    key={lesson.title}
+                    onClick={() => setPreviewLesson(lesson)}
+                    style={{
+                      display: 'inline-flex', alignItems: 'center', gap: '6px',
+                      padding: '8px 14px', borderRadius: '100px',
+                      border: '1.5px solid #fbbf24', background: '#fff',
+                      color: '#92400e', fontWeight: 700, fontSize: '0.8rem',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {lesson.emoji} {lesson.title} <ArrowRight size={13} />
+                  </button>
+                ))}
+              </div>
+            </div>
           )}
         </div>
 
