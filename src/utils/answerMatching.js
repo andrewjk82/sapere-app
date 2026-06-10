@@ -218,6 +218,31 @@ export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false)
   // Empty student answer is never correct.
   if (studentAnswer === null || studentAnswer === undefined || String(studentAnswer ?? '').trim() === '') return false;
 
+  const sStr = String(studentAnswer).trim();
+  const eStr = String(expectedAnswer).trim();
+
+  // If the answer is a list of comma-separated items, compare as sets/lists
+  // Ensure it's not a coordinate/interval like (1, 2) or [3, 4]
+  const isListLike = (str) =>
+    str.includes(',') && !str.startsWith('(') && !str.endsWith(')') && !str.startsWith('[') && !str.endsWith(']');
+
+  if (isListLike(eStr) || isListLike(sStr)) {
+    const sParts = sStr.split(/\s*,\s*/).map(x => x.trim()).filter(Boolean);
+    const eParts = eStr.split(/\s*,\s*/).map(x => x.trim()).filter(Boolean);
+    if (sParts.length === eParts.length && sParts.length > 1) {
+      const unmatched = [...sParts];
+      const allMatched = eParts.every((ep) => {
+        const idx = unmatched.findIndex((sp) => answersMatch(sp, ep, isAlgebraic));
+        if (idx !== -1) {
+          unmatched.splice(idx, 1);
+          return true;
+        }
+        return false;
+      });
+      if (allMatched) return true;
+    }
+  }
+
   const isAlg = isAlgebraic || isAlgebraicStr(expectedAnswer) || isAlgebraicStr(studentAnswer);
 
   // Fraction / mixed-number equivalence: "2 1/2" == "5/2" == "2.5".
