@@ -1234,27 +1234,37 @@ export const buildClockBasicsLesson = ({ audioBase = null } = {}) => {
     {
       narration: `When the <b>minute hand</b> points straight up to <b>12</b>, it is an <b>o'clock</b> time. The hour hand tells you which hour: this clock shows <b>3 o'clock</b>.`,
       speech: `When the minute hand points straight up to twelve, it is an o'clock time. The hour hand tells you which hour. This clock shows three o'clock.`,
-      board: [{ type: 'clock', times: [{ hour: 3, minute: 0, label: "3 o'clock = 3:00" }] }],
+      board: [{ type: 'clock', times: [{ hour: 3, minute: 0, label: "3 o'clock = 3:00" }], highlights: [
+        { hand: 'minute', begin: 0.9, label: 'minute hand' },
+        { hand: 'hour', begin: 4.6, label: 'hour hand' },
+      ] }],
     },
     {
       narration: `The hour hand moves around the clock once every 12 hours. Watch how each o'clock time looks — only the <b>short hand</b> moves to a new number.`,
       speech: `The hour hand moves around the clock once every twelve hours. Watch how each o'clock time looks. Only the short hand moves to a new number.`,
+      // The 2nd and 3rd clocks sweep on from the previous hour ("the hour hand
+      // moves…"), then all hour hands pulse at "only the short hand moves".
       board: [{ type: 'clock', size: 130, times: [
-        { hour: 1, minute: 0, label: "1 o'clock" },
-        { hour: 5, minute: 0, label: "5 o'clock" },
-        { hour: 9, minute: 0, label: "9 o'clock" },
+        { hour: 1, minute: 0, label: "1 o'clock", highlights: [{ hand: 'hour', begin: 6.2 }] },
+        { hour: 5, minute: 0, label: "5 o'clock", sweep: { fromHour: 1, fromMinute: 0, begin: 1.2, dur: 1.5 }, highlights: [{ hand: 'hour', begin: 6.2 }] },
+        { hour: 9, minute: 0, label: "9 o'clock", sweep: { fromHour: 5, fromMinute: 0, begin: 3.0, dur: 1.5 }, highlights: [{ hand: 'hour', begin: 6.2 }] },
       ] }],
     },
     {
       narration: `When the <b>minute hand</b> points straight down to <b>6</b>, it has travelled HALF way around the clock — 30 minutes. We call this <b>half past</b>.`,
       speech: `When the minute hand points straight down to six, it has travelled half way around the clock. That is thirty minutes. We call this half past.`,
-      board: [{ type: 'clock', times: [{ hour: 4, minute: 30, label: 'half past 4 = 4:30' }] }],
+      // Minute hand travels 12 → 6 while the narration says "travelled half
+      // way around the clock" (hour hand creeps along with it).
+      board: [{ type: 'clock', times: [{ hour: 4, minute: 30, label: 'half past 4 = 4:30',
+        highlights: [{ hand: 'minute', begin: 0.9, label: 'minute hand' }],
+        sweep: { fromHour: 4, fromMinute: 0, begin: 3.4, dur: 2.2 },
+      }] }],
     },
     {
       narration: `Look carefully: at half past, the <b>hour hand</b> sits HALFWAY between two numbers. Here it is between 4 and 5 — so it is still half past <b>4</b>, not 5.`,
       speech: `Look carefully. At half past, the hour hand sits halfway between two numbers. Here it is between four and five, so it is still half past four, not five.`,
       board: [{ type: 'clock', times: [
-        { hour: 4, minute: 30, label: 'half past 4 ✓' },
+        { hour: 4, minute: 30, label: 'half past 4 ✓', highlights: [{ hand: 'hour', begin: 2.2, label: 'hour hand' }] },
         { hour: 5, minute: 0, label: "5 o'clock" },
       ], size: 150 }],
     },
@@ -1280,41 +1290,50 @@ export const buildClockQuartersLesson = ({ audioBase = null } = {}) => {
     {
       narration: `A full turn of the minute hand is <b>60 minutes</b>. We can cut it into four equal <b>quarters</b> of 15 minutes each.`,
       speech: `A full turn of the minute hand is sixty minutes. We can cut it into four equal quarters of fifteen minutes each.`,
+      // 1st clock's minute hand does a full lap during "a full turn … is 60
+      // minutes"; the quarter clocks then pulse in sequence.
       board: [{ type: 'clock', size: 130, times: [
-        { hour: 12, minute: 0, label: "o'clock" },
-        { hour: 12, minute: 15, label: 'quarter past' },
-        { hour: 12, minute: 30, label: 'half past' },
-        { hour: 12, minute: 45, label: 'quarter to' },
+        { hour: 12, minute: 0, label: "o'clock", sweep: { fromHour: 12, fromMinute: 0, begin: 0.6, dur: 2.2, extraMinuteTurns: 1 } },
+        { hour: 12, minute: 15, label: 'quarter past', highlights: [{ hand: 'minute', begin: 4.5 }] },
+        { hour: 12, minute: 30, label: 'half past', highlights: [{ hand: 'minute', begin: 5.1 }] },
+        { hour: 12, minute: 45, label: 'quarter to', highlights: [{ hand: 'minute', begin: 5.7 }] },
       ] }],
     },
     {
       narration: `When the minute hand points to <b>3</b>, a quarter of an hour has passed: <b>quarter past</b>. This clock shows quarter past 7, written <b>7:15</b>.`,
       speech: `When the minute hand points to three, a quarter of an hour has passed. We say quarter past. This clock shows quarter past seven, written seven fifteen.`,
-      board: [{ type: 'clock', times: [{ hour: 7, minute: 15, label: 'quarter past 7 = 7:15' }] }],
+      board: [{ type: 'clock', times: [{ hour: 7, minute: 15, label: 'quarter past 7 = 7:15',
+        highlights: [{ hand: 'minute', begin: 0.9, label: 'minute hand' }],
+        sweep: { fromHour: 7, fromMinute: 0, begin: 2.7, dur: 1.6 },
+      }] }],
     },
     {
       narration: `When the minute hand points to <b>9</b>, there is one quarter LEFT until the next hour: <b>quarter to</b>. This clock shows quarter to 3 — the digital time is <b>2:45</b>, because the hour is still 2.`,
       speech: `When the minute hand points to nine, there is one quarter left until the next hour. We say quarter to. This clock shows quarter to three. The digital time is two forty five, because the hour is still two.`,
-      board: [{ type: 'clock', times: [{ hour: 2, minute: 45, label: 'quarter to 3 = 2:45' }] }],
+      board: [{ type: 'clock', times: [{ hour: 2, minute: 45, label: 'quarter to 3 = 2:45', highlights: [
+        { hand: 'minute', begin: 0.9, label: 'minute hand' },
+        { hand: 'hour', begin: 10.0, label: 'hour hand' },
+      ] }] }],
     },
     {
       narration: `Each number on the clock is <b>5 minutes</b> for the minute hand. To read any time, count in 5s: 5, 10, 15, 20 … around the clock.`,
       speech: `Each number on the clock is five minutes for the minute hand. To read any time, count in fives. Five, ten, fifteen, twenty, around the clock.`,
+      // Numbers 1-4 light up one by one as the narration counts "5, 10, 15, 20".
       board: [
-        { type: 'clock', times: [{ hour: 6, minute: 20, label: '4 numbers × 5 = 20 minutes' }] },
+        { type: 'clock', times: [{ hour: 6, minute: 20, label: '4 numbers × 5 = 20 minutes', countNumbers: { upTo: 4, begin: 6.2, step: 0.55 } }] },
         { type: 'math', content: `$$1 \\to 5,\\; 2 \\to 10,\\; 3 \\to 15,\\; 4 \\to 20,\\; \\dots,\\; 12 \\to 60$$` },
       ],
     },
     {
       narration: `Before half past we say "<b>minutes past</b>" the hour. This clock shows <b>20 minutes past 6</b> — digital <b>6:20</b>.`,
       speech: `Before half past, we say minutes past the hour. This clock shows twenty minutes past six. The digital time is six twenty.`,
-      board: [{ type: 'clock', times: [{ hour: 6, minute: 20, label: '20 past 6 = 6:20' }] }],
+      board: [{ type: 'clock', times: [{ hour: 6, minute: 20, label: '20 past 6 = 6:20', highlights: [{ hand: 'minute', begin: 4.2, label: 'minute hand' }] }] }],
     },
     {
       narration: `After half past we count DOWN to the next hour and say "<b>minutes to</b>". The minute hand on 10 means 50 minutes past — or <b>10 minutes to</b> the next hour: <b>8:50</b> is 10 to 9.`,
       speech: `After half past, we count down to the next hour and say minutes to. The minute hand on ten means fifty minutes past, or ten minutes to the next hour. Eight fifty is ten to nine.`,
       board: [
-        { type: 'clock', times: [{ hour: 8, minute: 50, label: '10 to 9 = 8:50' }] },
+        { type: 'clock', times: [{ hour: 8, minute: 50, label: '10 to 9 = 8:50', highlights: [{ hand: 'minute', begin: 4.5, label: 'minute hand' }] }] },
         { type: 'math', content: `$$60 - 50 = 10 \\text{ minutes to the next hour}$$`, emphasis: true },
       ],
     },
@@ -1330,13 +1349,16 @@ export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
       narration: `The small marks between the numbers are <b>1 minute</b> each. Count to the nearest number in 5s, then add the extra marks: this clock shows <b>3:23</b>.`,
       speech: `The small marks between the numbers are one minute each. Count to the nearest number in fives, then add the extra marks. This clock shows three twenty three.`,
       board: [
-        { type: 'clock', times: [{ hour: 3, minute: 23, label: '20 + 3 = 23 minutes → 3:23' }] },
+        { type: 'clock', times: [{ hour: 3, minute: 23, label: '20 + 3 = 23 minutes → 3:23',
+          countNumbers: { upTo: 4, begin: 4.0, step: 0.35 },
+          highlights: [{ hand: 'minute', begin: 7.6 }],
+        }] },
       ],
     },
     {
       narration: `Late in the hour the <b>hour hand</b> looks very close to the NEXT number — don't be tricked! Here it is nearly on 8, but the time is <b>7:55</b>: the hour is still 7.`,
       speech: `Late in the hour, the hour hand looks very close to the next number. Don't be tricked! Here it is nearly on eight, but the time is seven fifty five. The hour is still seven.`,
-      board: [{ type: 'clock', times: [{ hour: 7, minute: 55, label: '7:55 — still 7, not 8!' }] }],
+      board: [{ type: 'clock', times: [{ hour: 7, minute: 55, label: '7:55 — still 7, not 8!', highlights: [{ hand: 'hour', begin: 1.7, label: 'hour hand' }] }] }],
     },
     {
       narration: `A clock face only shows 12 hours, but a day has 24. We use <b>am</b> for midnight→midday and <b>pm</b> for midday→midnight. 7:30 am is breakfast time; 7:30 pm is dinner time.`,
@@ -1360,9 +1382,11 @@ export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
       narration: `<b>Elapsed time</b> is how long something takes. From 2:40 to 4:10: count hours first (2:40 → 3:40 is 1 hour), then minutes (3:40 → 4:10 is 30 minutes). Total: <b>1 hour 30 minutes</b>.`,
       speech: `Elapsed time is how long something takes. From two forty to four ten, count hours first. Two forty to three forty is one hour. Then minutes. Three forty to four ten is thirty minutes. The total is one hour thirty minutes.`,
       board: [
+        // The finish clock plays the journey: hands sweep 2:40 → 4:10
+        // (1½ minute-hand turns) while the narration counts the elapsed time.
         { type: 'clock', size: 130, times: [
           { hour: 2, minute: 40, label: 'start 2:40' },
-          { hour: 4, minute: 10, label: 'finish 4:10' },
+          { hour: 4, minute: 10, label: 'finish 4:10', sweep: { fromHour: 2, fromMinute: 40, begin: 5.8, dur: 4.5, extraMinuteTurns: 1 } },
         ] },
         { type: 'math', content: `$$2\\text{:}40 \\to 3\\text{:}40 \\to 4\\text{:}10 = 1\\text{ h } 30\\text{ min}$$`, emphasis: true },
       ],
