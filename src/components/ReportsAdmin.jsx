@@ -10,6 +10,7 @@ import MathView from './MathView';
 import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import { parseSolutionSteps } from '../utils/solutionSteps';
+import { answersMatch } from '../utils/answerMatching';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -1027,7 +1028,7 @@ const ReportsAdmin = () => {
                       {options.map((opt, i) => {
                         const text = typeof opt === 'string' ? opt : opt.text;
                         const img = opt?.imageUrl || opt?.image || '';
-                        const isCorrect = String(q.answer) === String(i) || String(q.answer) === String(text);
+                        const isCorrect = String(q.answer) === String(i) || answersMatch(text, q.answer);
                         const isChosen = String(studentAnswer) === String(text);
                         const isWrong = isChosen && !isCorrect;
                         return (

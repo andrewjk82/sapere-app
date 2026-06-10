@@ -13,6 +13,7 @@ import {
   getOptionImage
 } from '../../utils/challengeUtils';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
+import { answersMatch } from '../../utils/answerMatching';
 
 // Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
 const CHALLENGE_QUICK_INSERTS = [
@@ -735,7 +736,7 @@ const ChallengeQuizView = ({
                 let status = 'default';
                 if (step === 'feedback') {
                   const effectiveAnswer = currentQuestion._shuffledAnswer !== undefined ? currentQuestion._shuffledAnswer : currentQuestion.answer;
-                  const isCorrectChoice = String(optText) === String(effectiveAnswer) || (currentQuestion._shuffledAnswer === undefined && currentQuestion.isManual && String(i) === String(currentQuestion.answer));
+                  const isCorrectChoice = answersMatch(optText, effectiveAnswer) || (currentQuestion._shuffledAnswer === undefined && currentQuestion.isManual && String(i) === String(currentQuestion.answer));
                   if (isCorrectChoice) status = 'correct';
                   else if (isSelected) status = 'wrong';
                 }

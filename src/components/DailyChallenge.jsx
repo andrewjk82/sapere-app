@@ -810,7 +810,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
       // Use _shuffledAnswer (text-normalised) if options were shuffled, else original answer.
       const effectiveAnswer = currentQ._shuffledAnswer !== undefined ? currentQ._shuffledAnswer : currentQ.answer;
       // 1. Text match against (possibly normalised) answer
-      const isTextMatch = String(optionText) === String(effectiveAnswer);
+      const isTextMatch = answersMatch(optionText, effectiveAnswer);
       // 2. Fallback index match for non-shuffled isManual questions
       const isIndexMatch = currentQ._shuffledAnswer === undefined && optIdx !== null && String(currentQ.answer) === String(optIdx);
 
