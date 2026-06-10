@@ -480,7 +480,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
     const calcTopics = (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [])
-      .filter(id => id.startsWith('calc-'));
+      .filter(id => id.startsWith('calc-') || id.startsWith('clock-'));
     const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, studentProfile?.calcTimeLimit || 30);
 
     const sessionMeta = {
@@ -1013,7 +1013,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         const assignedYears = Array.isArray(studentProfile?.assignedYear) ? studentProfile.assignedYear : [studentProfile?.assignedYear || studentProfile?.year || CHALLENGE_YEAR];
         const assignedYear = assignedYears[0];
         const assignedChapters = challengeType === 'calc'
-          ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-')) : [])
+          ? (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters.filter(id => id.startsWith('calc-') || id.startsWith('clock-')) : [])
           : getAssignedChapters(studentProfile, assignedYear);
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
         // Pass hasCalculationTest so a daily-only student earns the full 100 XP

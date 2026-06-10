@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, X, RotateCcw, Play, Pause, Volume2, VolumeX, Sparkles } from 'lucide-react';
 import MathView from '../MathView';
+import { clockSvg } from '../../utils/clockSvg';
 
 const FONT = '"Outfit", -apple-system, "Segoe UI", Roboto, sans-serif';
 
@@ -644,6 +645,21 @@ const BoardItem = ({ item }) => {
     </div>
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
+  else if (item.type === 'clock') inner = (
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', flexWrap: 'wrap' }}>
+        {(item.times || [{ hour: item.hour, minute: item.minute }]).map((t, ti) => (
+          <motion.div key={ti}
+            initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: 'spring', stiffness: 280, damping: 22, delay: ti * 0.25 }}>
+            <div dangerouslySetInnerHTML={{ __html: clockSvg(t.hour, t.minute, { size: item.size || 170 }) }} />
+            {t.label && <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#7c3aed', fontFamily: FONT, marginTop: '4px' }}>{t.label}</div>}
+          </motion.div>
+        ))}
+      </div>
+      {item.label && <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#64748b', fontFamily: FONT, marginTop: '6px' }}>{item.label}</div>}
+    </div>
+  );
   else if (item.type === 'text') inner = <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#475569', textAlign: 'center', fontFamily: FONT }}>{item.content}</div>;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;

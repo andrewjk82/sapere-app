@@ -296,6 +296,71 @@ export const CURRICULUM_DATA = {
         { id: 'calc-7-adv', code: 'C7.2', group: 'Advanced', title: 'Nested brackets & negative numbers' },
         { id: 'calc-7-enrich', code: 'C7.3', group: 'Enrichment', title: 'Problem-solving & percentages' }
       ]
+    },
+    {
+      id: 'clock-stage-1',
+      title: 'Clock Stage 1: O\'clock & Half Past (Year 1)',
+      modules: 6,
+      topics: [
+        { id: 'clock-1-s1', code: 'T1', group: 'A · O\'clock', title: 'Read o\'clock times (hour hand on a number)' },
+        { id: 'clock-1-s2', code: 'T2', group: 'A · O\'clock', title: 'Match o\'clock times to digital (3:00)' },
+        { id: 'clock-1-s3', code: 'T3', group: 'B · Half past', title: 'Read half past times (minute hand on 6)' },
+        { id: 'clock-1-s4', code: 'T4', group: 'B · Half past', title: 'Match half past times to digital (3:30)' },
+        { id: 'clock-1-s5', code: 'T5', group: 'C · Mixed', title: 'Mixed o\'clock & half past reading' },
+        { id: 'clock-1-s6', code: 'T6', group: 'C · Mixed', title: 'Pick the clock that shows the given time' }
+      ]
+    },
+    {
+      id: 'clock-stage-2',
+      title: 'Clock Stage 2: Quarter Past & Quarter To (Year 2)',
+      modules: 6,
+      topics: [
+        { id: 'clock-2-s1', code: 'T7',  group: 'A · Quarter past', title: 'Read quarter past times (minute hand on 3)' },
+        { id: 'clock-2-s2', code: 'T8',  group: 'A · Quarter past', title: 'Match quarter past to digital (3:15)' },
+        { id: 'clock-2-s3', code: 'T9',  group: 'B · Quarter to',   title: 'Read quarter to times (minute hand on 9)' },
+        { id: 'clock-2-s4', code: 'T10', group: 'B · Quarter to',   title: 'Match quarter to to digital (2:45)' },
+        { id: 'clock-2-s5', code: 'T11', group: 'C · Mixed',        title: 'Mixed quarters, half past & o\'clock' },
+        { id: 'clock-2-s6', code: 'T12', group: 'C · Mixed',        title: 'Pick the clock for a quarter past/to time' }
+      ]
+    },
+    {
+      id: 'clock-stage-3',
+      title: 'Clock Stage 3: 5-Minute Intervals (Year 2-3)',
+      modules: 6,
+      topics: [
+        { id: 'clock-3-s1', code: 'T13', group: 'A · Minutes past', title: 'Count minutes in 5s (minute hand → minutes)' },
+        { id: 'clock-3-s2', code: 'T14', group: 'A · Minutes past', title: 'Read times to 5 minutes (digital answer)' },
+        { id: 'clock-3-s3', code: 'T15', group: 'B · Past & to',    title: 'Say times as "minutes past" the hour' },
+        { id: 'clock-3-s4', code: 'T16', group: 'B · Past & to',    title: 'Say times as "minutes to" the next hour' },
+        { id: 'clock-3-s5', code: 'T17', group: 'C · Both ways',    title: 'Analogue ↔ digital conversion (5-min times)' },
+        { id: 'clock-3-s6', code: 'T18', group: 'C · Both ways',    title: 'Pick the clock for a 5-minute time' }
+      ]
+    },
+    {
+      id: 'clock-stage-4',
+      title: 'Clock Stage 4: Minute-Precise & am/pm (Year 3-4)',
+      modules: 6,
+      topics: [
+        { id: 'clock-4-s1', code: 'T19', group: 'A · To the minute', title: 'Read times to the nearest minute' },
+        { id: 'clock-4-s2', code: 'T20', group: 'A · To the minute', title: 'Use the hour hand to find the hour' },
+        { id: 'clock-4-s3', code: 'T21', group: 'B · am / pm',       title: 'Choose am or pm for daily events' },
+        { id: 'clock-4-s4', code: 'T22', group: 'B · am / pm',       title: 'Write times with am/pm notation' },
+        { id: 'clock-4-s5', code: 'T23', group: 'C · Mixed',         title: 'Mixed minute-precise reading' },
+        { id: 'clock-4-s6', code: 'T24', group: 'C · Mixed',         title: 'Pick the clock for an exact minute time' }
+      ]
+    },
+    {
+      id: 'clock-stage-5',
+      title: 'Clock Stage 5: Elapsed Time & 24-Hour (Year 4-5)',
+      modules: 6,
+      topics: [
+        { id: 'clock-5-s1', code: 'T25', group: 'A · Elapsed time', title: 'How much time has passed? (whole hours)' },
+        { id: 'clock-5-s2', code: 'T26', group: 'A · Elapsed time', title: 'How much time has passed? (hours & minutes)' },
+        { id: 'clock-5-s3', code: 'T27', group: 'B · Forward & back', title: 'What time will it be in … / was it … ago?' },
+        { id: 'clock-5-s4', code: 'T28', group: 'C · 24-hour',      title: 'Convert 12-hour ↔ 24-hour time' },
+        { id: 'clock-5-s5', code: 'T29', group: 'C · 24-hour',      title: 'Read 24-hour times (timetables)' },
+        { id: 'clock-5-s6', code: 'T30', group: 'D · Word problems', title: 'Time word problems (start, end, duration)' }
+      ]
     }
   ],
   'Year 1': [

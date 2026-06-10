@@ -1203,8 +1203,191 @@ export const buildNumberLineLesson = ({ audioBase = null } = {}) => {
   return { topicId: 'y7-1a', emoji: '📏', title: 'The number line', steps, glossary: { ...BASE_GLOSSARY, ...NL_GLOSSARY } };
 };
 
+// ── Lessons: Clock Reading (Basic Calculation · clock-stage-1…5) ───────────
+const CLOCK_GLOSSARY = {
+  'hour hand': 'The SHORT, thick hand. It points to the hour.',
+  'minute hand': 'The LONG hand. It points to the minutes.',
+  "o'clock": 'A time exactly on the hour, when the minute hand points straight up to 12.',
+  'half past': '30 minutes after the hour — the minute hand points straight down to 6.',
+  'quarter past': '15 minutes after the hour — the minute hand points to 3.',
+  'quarter to': '15 minutes before the next hour — the minute hand points to 9.',
+  'digital time': 'Time written with numbers, like 3:15 — hours, then two digits for minutes.',
+  'am': 'The 12 hours from midnight to midday (morning).',
+  'pm': 'The 12 hours from midday to midnight (afternoon and evening).',
+  '24-hour time': 'A way of writing time that counts all 24 hours of the day, so 5:45 pm becomes 17:45.',
+  'elapsed time': 'How much time has passed between a start time and an end time.',
+};
+
+// Lesson 1 — clock structure, o'clock & half past (Clock Stage 1)
+export const buildClockBasicsLesson = ({ audioBase = null } = {}) => {
+  const steps = [
+    {
+      narration: `A clock face has the numbers <b>1 to 12</b> and two hands. The <b>hour hand</b> is short and thick. The <b>minute hand</b> is long.`,
+      speech: `A clock face has the numbers one to twelve, and two hands. The hour hand is short and thick. The minute hand is long.`,
+      board: [{ type: 'clock', times: [{ hour: 3, minute: 0 }], label: 'Short hand = hours · Long hand = minutes' }],
+    },
+    {
+      narration: `When the <b>minute hand</b> points straight up to <b>12</b>, it is an <b>o'clock</b> time. The hour hand tells you which hour: this clock shows <b>3 o'clock</b>.`,
+      speech: `When the minute hand points straight up to twelve, it is an o'clock time. The hour hand tells you which hour. This clock shows three o'clock.`,
+      board: [{ type: 'clock', times: [{ hour: 3, minute: 0, label: "3 o'clock = 3:00" }] }],
+    },
+    {
+      narration: `The hour hand moves around the clock once every 12 hours. Watch how each o'clock time looks — only the <b>short hand</b> moves to a new number.`,
+      speech: `The hour hand moves around the clock once every twelve hours. Watch how each o'clock time looks. Only the short hand moves to a new number.`,
+      board: [{ type: 'clock', size: 130, times: [
+        { hour: 1, minute: 0, label: "1 o'clock" },
+        { hour: 5, minute: 0, label: "5 o'clock" },
+        { hour: 9, minute: 0, label: "9 o'clock" },
+      ] }],
+    },
+    {
+      narration: `When the <b>minute hand</b> points straight down to <b>6</b>, it has travelled HALF way around the clock — 30 minutes. We call this <b>half past</b>.`,
+      speech: `When the minute hand points straight down to six, it has travelled half way around the clock. That is thirty minutes. We call this half past.`,
+      board: [{ type: 'clock', times: [{ hour: 4, minute: 30, label: 'half past 4 = 4:30' }] }],
+    },
+    {
+      narration: `Look carefully: at half past, the <b>hour hand</b> sits HALFWAY between two numbers. Here it is between 4 and 5 — so it is still half past <b>4</b>, not 5.`,
+      speech: `Look carefully. At half past, the hour hand sits halfway between two numbers. Here it is between four and five, so it is still half past four, not five.`,
+      board: [{ type: 'clock', times: [
+        { hour: 4, minute: 30, label: 'half past 4 ✓' },
+        { hour: 5, minute: 0, label: "5 o'clock" },
+      ], size: 150 }],
+    },
+    {
+      narration: `In <b>digital time</b> we write the hour, two dots, then the minutes: <b>3:00</b> means 3 o'clock and <b>4:30</b> means half past 4. Now you are ready to practise!`,
+      speech: `In digital time we write the hour, two dots, then the minutes. Three colon zero zero means three o'clock, and four colon thirty means half past four. Now you are ready to practise!`,
+      board: [
+        { type: 'clock', size: 130, times: [
+          { hour: 3, minute: 0, label: '3:00' },
+          { hour: 4, minute: 30, label: '4:30' },
+        ] },
+        { type: 'math', content: `$$3\\text{:}00 = 3 \\text{ o'clock} \\qquad 4\\text{:}30 = \\text{half past } 4$$`, emphasis: true },
+      ],
+    },
+  ];
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return { topicId: null, emoji: '🕒', title: "Reading a clock: o'clock & half past", steps, glossary: { ...BASE_GLOSSARY, ...CLOCK_GLOSSARY } };
+};
+
+// Lesson 2 — quarters & 5-minute intervals (Clock Stages 2–3)
+export const buildClockQuartersLesson = ({ audioBase = null } = {}) => {
+  const steps = [
+    {
+      narration: `A full turn of the minute hand is <b>60 minutes</b>. We can cut it into four equal <b>quarters</b> of 15 minutes each.`,
+      speech: `A full turn of the minute hand is sixty minutes. We can cut it into four equal quarters of fifteen minutes each.`,
+      board: [{ type: 'clock', size: 130, times: [
+        { hour: 12, minute: 0, label: "o'clock" },
+        { hour: 12, minute: 15, label: 'quarter past' },
+        { hour: 12, minute: 30, label: 'half past' },
+        { hour: 12, minute: 45, label: 'quarter to' },
+      ] }],
+    },
+    {
+      narration: `When the minute hand points to <b>3</b>, a quarter of an hour has passed: <b>quarter past</b>. This clock shows quarter past 7, written <b>7:15</b>.`,
+      speech: `When the minute hand points to three, a quarter of an hour has passed. We say quarter past. This clock shows quarter past seven, written seven fifteen.`,
+      board: [{ type: 'clock', times: [{ hour: 7, minute: 15, label: 'quarter past 7 = 7:15' }] }],
+    },
+    {
+      narration: `When the minute hand points to <b>9</b>, there is one quarter LEFT until the next hour: <b>quarter to</b>. This clock shows quarter to 3 — the digital time is <b>2:45</b>, because the hour is still 2.`,
+      speech: `When the minute hand points to nine, there is one quarter left until the next hour. We say quarter to. This clock shows quarter to three. The digital time is two forty five, because the hour is still two.`,
+      board: [{ type: 'clock', times: [{ hour: 2, minute: 45, label: 'quarter to 3 = 2:45' }] }],
+    },
+    {
+      narration: `Each number on the clock is <b>5 minutes</b> for the minute hand. To read any time, count in 5s: 5, 10, 15, 20 … around the clock.`,
+      speech: `Each number on the clock is five minutes for the minute hand. To read any time, count in fives. Five, ten, fifteen, twenty, around the clock.`,
+      board: [
+        { type: 'clock', times: [{ hour: 6, minute: 20, label: '4 numbers × 5 = 20 minutes' }] },
+        { type: 'math', content: `$$1 \\to 5,\\; 2 \\to 10,\\; 3 \\to 15,\\; 4 \\to 20,\\; \\dots,\\; 12 \\to 60$$` },
+      ],
+    },
+    {
+      narration: `Before half past we say "<b>minutes past</b>" the hour. This clock shows <b>20 minutes past 6</b> — digital <b>6:20</b>.`,
+      speech: `Before half past, we say minutes past the hour. This clock shows twenty minutes past six. The digital time is six twenty.`,
+      board: [{ type: 'clock', times: [{ hour: 6, minute: 20, label: '20 past 6 = 6:20' }] }],
+    },
+    {
+      narration: `After half past we count DOWN to the next hour and say "<b>minutes to</b>". The minute hand on 10 means 50 minutes past — or <b>10 minutes to</b> the next hour: <b>8:50</b> is 10 to 9.`,
+      speech: `After half past, we count down to the next hour and say minutes to. The minute hand on ten means fifty minutes past, or ten minutes to the next hour. Eight fifty is ten to nine.`,
+      board: [
+        { type: 'clock', times: [{ hour: 8, minute: 50, label: '10 to 9 = 8:50' }] },
+        { type: 'math', content: `$$60 - 50 = 10 \\text{ minutes to the next hour}$$`, emphasis: true },
+      ],
+    },
+  ];
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return { topicId: null, emoji: '🕒', title: 'Quarters & counting in 5 minutes', steps, glossary: { ...BASE_GLOSSARY, ...CLOCK_GLOSSARY } };
+};
+
+// Lesson 3 — minute-precise, am/pm & 24-hour (Clock Stages 4–5)
+export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
+  const steps = [
+    {
+      narration: `The small marks between the numbers are <b>1 minute</b> each. Count to the nearest number in 5s, then add the extra marks: this clock shows <b>3:23</b>.`,
+      speech: `The small marks between the numbers are one minute each. Count to the nearest number in fives, then add the extra marks. This clock shows three twenty three.`,
+      board: [
+        { type: 'clock', times: [{ hour: 3, minute: 23, label: '20 + 3 = 23 minutes → 3:23' }] },
+      ],
+    },
+    {
+      narration: `Late in the hour the <b>hour hand</b> looks very close to the NEXT number — don't be tricked! Here it is nearly on 8, but the time is <b>7:55</b>: the hour is still 7.`,
+      speech: `Late in the hour, the hour hand looks very close to the next number. Don't be tricked! Here it is nearly on eight, but the time is seven fifty five. The hour is still seven.`,
+      board: [{ type: 'clock', times: [{ hour: 7, minute: 55, label: '7:55 — still 7, not 8!' }] }],
+    },
+    {
+      narration: `A clock face only shows 12 hours, but a day has 24. We use <b>am</b> for midnight→midday and <b>pm</b> for midday→midnight. 7:30 am is breakfast time; 7:30 pm is dinner time.`,
+      speech: `A clock face only shows twelve hours, but a day has twenty four. We use a m for midnight to midday, and p m for midday to midnight. Seven thirty a m is breakfast time. Seven thirty p m is dinner time.`,
+      board: [{ type: 'clock', size: 140, times: [
+        { hour: 7, minute: 30, label: '7:30 am 🌅' },
+        { hour: 7, minute: 30, label: '7:30 pm 🌙' },
+      ] }],
+    },
+    {
+      narration: `<b>24-hour time</b> keeps counting after midday: 13:00, 14:00 … up to 23:59. To convert a pm time, <b>add 12</b> to the hours: 5:45 pm → <b>17:45</b>.`,
+      speech: `Twenty four hour time keeps counting after midday. Thirteen hundred, fourteen hundred, up to twenty three fifty nine. To convert a p m time, add twelve to the hours. Five forty five p m becomes seventeen forty five.`,
+      board: [{ type: 'math', content: `$$5\\text{:}45\\text{ pm} \\;\\xrightarrow{+12\\text{ hours}}\\; 17\\text{:}45$$`, emphasis: true }],
+    },
+    {
+      narration: `To go back the other way, <b>subtract 12</b>: a train leaving at 19:20 leaves at <b>7:20 pm</b>. Morning times (before 13:00) stay the same.`,
+      speech: `To go back the other way, subtract twelve. A train leaving at nineteen twenty leaves at seven twenty p m. Morning times, before thirteen hundred, stay the same.`,
+      board: [{ type: 'math', content: `$$19\\text{:}20 \\;\\xrightarrow{-12\\text{ hours}}\\; 7\\text{:}20\\text{ pm}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>Elapsed time</b> is how long something takes. From 2:40 to 4:10: count hours first (2:40 → 3:40 is 1 hour), then minutes (3:40 → 4:10 is 30 minutes). Total: <b>1 hour 30 minutes</b>.`,
+      speech: `Elapsed time is how long something takes. From two forty to four ten, count hours first. Two forty to three forty is one hour. Then minutes. Three forty to four ten is thirty minutes. The total is one hour thirty minutes.`,
+      board: [
+        { type: 'clock', size: 130, times: [
+          { hour: 2, minute: 40, label: 'start 2:40' },
+          { hour: 4, minute: 10, label: 'finish 4:10' },
+        ] },
+        { type: 'math', content: `$$2\\text{:}40 \\to 3\\text{:}40 \\to 4\\text{:}10 = 1\\text{ h } 30\\text{ min}$$`, emphasis: true },
+      ],
+    },
+  ];
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return { topicId: null, emoji: '🕒', title: 'Exact minutes, am/pm & 24-hour time', steps, glossary: { ...BASE_GLOSSARY, ...CLOCK_GLOSSARY } };
+};
+
 // ── Registered lessons (topicId → spec) ────────────────────────────────────
+
+// Register one lesson spec under every topic of a clock stage so the
+// "Learn step-by-step" button appears throughout the stage.
+const clockBasics = buildClockBasicsLesson({ audioBase: '/lessons/audio/clock-basics' });
+const clockQuarters = buildClockQuartersLesson({ audioBase: '/lessons/audio/clock-quarters' });
+const clockPrecise = buildClockPreciseLesson({ audioBase: '/lessons/audio/clock-precise' });
+const CLOCK_LESSONS = {};
+['clock-1-s1', 'clock-1-s2', 'clock-1-s3', 'clock-1-s4', 'clock-1-s5', 'clock-1-s6']
+  .forEach((id) => { CLOCK_LESSONS[id] = { ...clockBasics, topicId: id }; });
+['clock-2-s1', 'clock-2-s2', 'clock-2-s3', 'clock-2-s4', 'clock-2-s5', 'clock-2-s6',
+ 'clock-3-s1', 'clock-3-s2', 'clock-3-s3', 'clock-3-s4', 'clock-3-s5', 'clock-3-s6']
+  .forEach((id) => { CLOCK_LESSONS[id] = { ...clockQuarters, topicId: id }; });
+['clock-4-s1', 'clock-4-s2', 'clock-4-s3', 'clock-4-s4', 'clock-4-s5', 'clock-4-s6',
+ 'clock-5-s1', 'clock-5-s2', 'clock-5-s3', 'clock-5-s4', 'clock-5-s5', 'clock-5-s6']
+  .forEach((id) => { CLOCK_LESSONS[id] = { ...clockPrecise, topicId: id }; });
+
 export const LESSONS = {
+  // Clock Reading (Basic Calculation clock stages 1–5).
+  ...CLOCK_LESSONS,
+
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
   'y7-1g': { ...buildPlaceValueLesson(3721, 'Place value', { audioBase: '/lessons/audio/y7-1g' }), topicId: 'y7-1g' },

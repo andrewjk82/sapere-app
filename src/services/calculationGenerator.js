@@ -1,4 +1,5 @@
 import { CURRICULUM_DATA } from '../constants/curriculumData.js';
+import { clockSvg, digital12, digital24, timePhrase } from '../utils/clockSvg.js';
 
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const pick = (arr) => arr[randomInt(0, arr.length - 1)];
@@ -96,7 +97,395 @@ const randDec = (dp, maxInt = 9) => {
   return randomInt(1, (maxInt + 1) * scale - 1) / scale;
 };
 
+// ── Clock Reading (clock-stage-1 … clock-stage-5) ──────────────────────────
+// All clock questions are self-contained multiple_choice: the question embeds
+// an inline clock SVG (rendered by MathView) and options are either time
+// strings or clock SVGs ("pick the clock" topics).
+
+const shuffleInPlace = (arr) => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
+// 3 distractor times near (h, m), distinct from it and from each other.
+// Classic confusions: swapped hands (m/5 ↔ h), ±1 hour, ±5/±15 minutes.
+const clockDistractorTimes = (h, m, minuteStep) => {
+  const seen = new Set([`${((h % 12) + 12) % 12}:${m}`]);
+  const out = [];
+  const tryAdd = (dh, dm) => {
+    dm = ((dm % 60) + 60) % 60;
+    dh = ((dh % 12) + 12) % 12;
+    const key = `${dh}:${dm}`;
+    if (!seen.has(key) && out.length < 3) { seen.add(key); out.push([dh, dm]); }
+  };
+  // swapped hands (only meaningful when minute sits on a number)
+  if (m % 5 === 0 && m / 5 >= 1) tryAdd(m / 5, (h % 12) * 5);
+  tryAdd(h + 1, m);
+  tryAdd(h - 1, m);
+  tryAdd(h, m + minuteStep);
+  tryAdd(h, m - minuteStep);
+  tryAdd(h + 1, m + minuteStep);
+  tryAdd(h - 1, m - minuteStep);
+  while (out.length < 3) tryAdd(randomInt(1, 12), randomInt(0, 59 / minuteStep) * minuteStep);
+  return out;
+};
+
+const clockQuestionFromTime = (h, m, minuteStep, answerFmt) => {
+  const fmt = answerFmt === 'phrase' ? timePhrase : digital12;
+  const a = fmt(h, m);
+  const options = clockDistractorTimes(h, m, minuteStep).map(([dh, dm]) => fmt(dh, dm));
+  // distractor formats can collide after formatting (e.g. phrase rounding) — dedupe
+  const unique = [...new Set([a, ...options])];
+  while (unique.length < 4) {
+    const rh = randomInt(1, 12), rm = randomInt(0, Math.floor(59 / minuteStep)) * minuteStep;
+    const s = fmt(rh, rm);
+    if (!unique.includes(s)) unique.push(s);
+  }
+  return {
+    question: `What time does the clock show?\n${clockSvg(h, m)}`,
+    answer: a,
+    options: shuffleInPlace(unique.slice(0, 4)),
+  };
+};
+
+// "Pick the clock that shows <time>" — options are clock SVGs.
+const pickTheClockQuestion = (h, m, minuteStep, labelFmt) => {
+  const label = labelFmt === 'phrase' ? timePhrase(h, m) : digital12(h, m);
+  const correct = clockSvg(h, m, { size: 120 });
+  const options = clockDistractorTimes(h, m, minuteStep)
+    .map(([dh, dm]) => clockSvg(dh === 0 ? 12 : dh, dm, { size: 120 }));
+  return {
+    question: `Which clock shows <b>${label}</b>?`,
+    answer: correct,
+    options: shuffleInPlace([correct, ...options]),
+  };
+};
+
+const minutesPhrase = (mins) => {
+  const hrs = Math.floor(mins / 60), rem = mins % 60;
+  if (hrs === 0) return `${rem} minutes`;
+  const hPart = `${hrs} hour${hrs === 1 ? '' : 's'}`;
+  return rem === 0 ? hPart : `${hPart} ${rem} minutes`;
+};
+
+const generateClockQuestion = (topicId, timeLimit = 30) => {
+  const h = randomInt(1, 12);
+  let q = '', a = '', hint = '', options = null;
+
+  const setQ = (obj) => { q = obj.question; a = obj.answer; options = obj.options; };
+
+  switch (topicId) {
+    // ── Stage 1: o'clock & half past ──
+    case 'clock-1-s1': {
+      setQ(clockQuestionFromTime(h, 0, 30, 'phrase'));
+      hint = 'When the long (minute) hand points to 12, it is an o\'clock time. The short hand tells the hour.';
+      break;
+    }
+    case 'clock-1-s2': {
+      setQ(clockQuestionFromTime(h, 0, 30, 'digital'));
+      hint = 'O\'clock times are written as the hour then :00.';
+      break;
+    }
+    case 'clock-1-s3': {
+      setQ(clockQuestionFromTime(h, 30, 30, 'phrase'));
+      hint = 'When the long hand points to 6, it is half past. The short hand has moved halfway past the hour.';
+      break;
+    }
+    case 'clock-1-s4': {
+      setQ(clockQuestionFromTime(h, 30, 30, 'digital'));
+      hint = 'Half past means 30 minutes, so write the hour then :30.';
+      break;
+    }
+    case 'clock-1-s5': {
+      const m = pick([0, 30]);
+      setQ(clockQuestionFromTime(h, m, 30, pick(['phrase', 'digital'])));
+      hint = 'Long hand on 12 → o\'clock. Long hand on 6 → half past.';
+      break;
+    }
+    case 'clock-1-s6': {
+      const m = pick([0, 30]);
+      setQ(pickTheClockQuestion(h, m, 30, 'phrase'));
+      hint = 'Find the clock whose minute hand and hour hand both match the time.';
+      break;
+    }
+
+    // ── Stage 2: quarter past & quarter to ──
+    case 'clock-2-s1': {
+      setQ(clockQuestionFromTime(h, 15, 15, 'phrase'));
+      hint = 'When the long hand points to 3, it is quarter past the hour.';
+      break;
+    }
+    case 'clock-2-s2': {
+      setQ(clockQuestionFromTime(h, 15, 15, 'digital'));
+      hint = 'Quarter past means 15 minutes, so write the hour then :15.';
+      break;
+    }
+    case 'clock-2-s3': {
+      setQ(clockQuestionFromTime(h, 45, 15, 'phrase'));
+      hint = 'When the long hand points to 9, it is quarter to the NEXT hour.';
+      break;
+    }
+    case 'clock-2-s4': {
+      setQ(clockQuestionFromTime(h, 45, 15, 'digital'));
+      hint = 'Quarter to 5 is the same as 4:45 — the hour shown is the one before.';
+      break;
+    }
+    case 'clock-2-s5': {
+      const m = pick([0, 15, 30, 45]);
+      setQ(clockQuestionFromTime(h, m, 15, pick(['phrase', 'digital'])));
+      hint = 'Long hand: 12 → o\'clock, 3 → quarter past, 6 → half past, 9 → quarter to.';
+      break;
+    }
+    case 'clock-2-s6': {
+      const m = pick([15, 45]);
+      setQ(pickTheClockQuestion(h, m, 15, 'phrase'));
+      hint = 'Quarter past → minute hand on 3. Quarter to → minute hand on 9.';
+      break;
+    }
+
+    // ── Stage 3: 5-minute intervals ──
+    case 'clock-3-s1': {
+      const m = randomInt(1, 11) * 5;
+      q = `How many minutes past the hour does the clock show?\n${clockSvg(h, m)}`;
+      a = String(m);
+      hint = 'Count in 5s around the clock: each number the minute hand passes is 5 more minutes.';
+      const ds = new Set([a]);
+      options = [a];
+      [m + 5, m - 5, m + 10, m / 5].forEach((d) => {
+        const v = ((d % 60) + 60) % 60;
+        const s = String(v);
+        if (v > 0 && !ds.has(s) && options.length < 4) { ds.add(s); options.push(s); }
+      });
+      while (options.length < 4) {
+        const s = String(randomInt(1, 11) * 5);
+        if (!ds.has(s)) { ds.add(s); options.push(s); }
+      }
+      shuffleInPlace(options);
+      break;
+    }
+    case 'clock-3-s2': {
+      setQ(clockQuestionFromTime(h, randomInt(1, 11) * 5, 5, 'digital'));
+      hint = 'Count the minutes in 5s, then write hour:minutes.';
+      break;
+    }
+    case 'clock-3-s3': {
+      const m = randomInt(1, 5) * 5;
+      setQ(clockQuestionFromTime(h, m, 5, 'phrase'));
+      hint = 'Before half past, say "minutes past" the hour shown.';
+      break;
+    }
+    case 'clock-3-s4': {
+      const m = randomInt(7, 11) * 5;
+      setQ(clockQuestionFromTime(h, m, 5, 'phrase'));
+      hint = 'After half past, count UP to 60 and say "minutes to" the NEXT hour.';
+      break;
+    }
+    case 'clock-3-s5': {
+      setQ(clockQuestionFromTime(h, randomInt(0, 11) * 5, 5, pick(['phrase', 'digital'])));
+      hint = 'Digital time is hour:minutes. Phrases use past (before 30) and to (after 30).';
+      break;
+    }
+    case 'clock-3-s6': {
+      const m = randomInt(1, 11) * 5;
+      setQ(pickTheClockQuestion(h, m, 5, pick(['phrase', 'digital'])));
+      hint = 'Check the minute hand first, then make sure the hour hand matches too.';
+      break;
+    }
+
+    // ── Stage 4: minute-precise & am/pm ──
+    case 'clock-4-s1': {
+      setQ(clockQuestionFromTime(h, randomInt(1, 59), 1, 'digital'));
+      hint = 'Count the small marks: each one is 1 minute.';
+      break;
+    }
+    case 'clock-4-s2': {
+      const m = randomInt(35, 59);
+      setQ(clockQuestionFromTime(h, m, 1, 'digital'));
+      hint = 'Late in the hour the hour hand looks close to the NEXT number — but the hour has not changed yet.';
+      break;
+    }
+    case 'clock-4-s3': {
+      const events = [
+        ['eat breakfast', randomInt(6, 8), 'am'],
+        ['start school', 9, 'am'],
+        ['eat lunch', 12, 'pm'],
+        ['finish school', 3, 'pm'],
+        ['eat dinner', randomInt(6, 7), 'pm'],
+        ['go to bed at night', randomInt(8, 9), 'pm'],
+        ['wake up in the morning', 7, 'am'],
+      ];
+      const [event, eh, ap] = pick(events);
+      q = `Sam ${event}s at ${eh} o'clock. Is that ${eh}:00 am or ${eh}:00 pm?`;
+      a = `${eh}:00 ${ap}`;
+      options = shuffleInPlace([`${eh}:00 am`, `${eh}:00 pm`]);
+      hint = 'am is from midnight to midday. pm is from midday to midnight.';
+      break;
+    }
+    case 'clock-4-s4': {
+      const m = randomInt(0, 11) * 5;
+      const isPm = Math.random() > 0.5;
+      const when = isPm
+        ? pick(['in the afternoon', 'in the evening'])
+        : pick(['in the morning', 'before midday']);
+      const hh = isPm ? (h <= 6 ? h : randomInt(1, 6)) : h;
+      q = `Write "${timePhrase(hh, m)} ${when}" in digital am/pm notation.`;
+      a = `${digital12(hh, m)} ${isPm ? 'pm' : 'am'}`;
+      const alt = `${digital12(hh, m)} ${isPm ? 'am' : 'pm'}`;
+      const off = `${digital12(hh + 1, m)} ${isPm ? 'pm' : 'am'}`;
+      const off2 = `${digital12(hh, (m + 30) % 60)} ${isPm ? 'pm' : 'am'}`;
+      options = shuffleInPlace([...new Set([a, alt, off, off2])].slice(0, 4));
+      hint = 'Morning → am. Afternoon and evening → pm.';
+      break;
+    }
+    case 'clock-4-s5': {
+      setQ(clockQuestionFromTime(h, randomInt(1, 59), 1, 'digital'));
+      hint = 'Minute hand for the minutes, hour hand for the hour.';
+      break;
+    }
+    case 'clock-4-s6': {
+      setQ(pickTheClockQuestion(h, randomInt(1, 59), 1, 'digital'));
+      hint = 'Match the exact minute: count marks past the nearest number.';
+      break;
+    }
+
+    // ── Stage 5: elapsed time & 24-hour ──
+    case 'clock-5-s1': {
+      const dur = randomInt(1, 5);
+      const endH = h + dur;
+      q = `How much time passes from ${digital12(h, 0)} to ${digital12(endH, 0)}?`;
+      a = `${dur} hour${dur === 1 ? '' : 's'}`;
+      options = shuffleInPlace([...new Set([
+        a,
+        `${dur + 1} hour${dur + 1 === 1 ? '' : 's'}`,
+        `${Math.max(1, dur - 1)} hour${dur - 1 === 1 ? '' : 's'}`,
+        `${dur + 2} hours`,
+      ])].slice(0, 4));
+      hint = 'Count on from the start hour to the end hour.';
+      break;
+    }
+    case 'clock-5-s2': {
+      const m0 = randomInt(0, 5) * 10;
+      const durH = randomInt(1, 3), durM = pick([15, 20, 30, 45]);
+      const total = h * 60 + m0 + durH * 60 + durM;
+      q = `How much time passes from ${digital12(h, m0)} to ${digital12(Math.floor(total / 60), total % 60)}?`;
+      a = minutesPhrase(durH * 60 + durM);
+      options = shuffleInPlace([...new Set([
+        a,
+        minutesPhrase(durH * 60 + durM + 15),
+        minutesPhrase(Math.max(15, durH * 60 + durM - 15)),
+        minutesPhrase((durH + 1) * 60 + durM),
+      ])].slice(0, 4));
+      hint = 'Count whole hours first, then count the extra minutes.';
+      break;
+    }
+    case 'clock-5-s3': {
+      const m0 = randomInt(0, 11) * 5;
+      const delta = pick([15, 20, 25, 30, 40, 45, 50]);
+      const fwd = Math.random() > 0.5;
+      const total = h * 60 + m0 + (fwd ? delta : -delta) + 24 * 60;
+      q = fwd
+        ? `What time will it be ${delta} minutes after ${digital12(h, m0)}?`
+        : `What time was it ${delta} minutes before ${digital12(h, m0)}?`;
+      a = digital12(Math.floor(total / 60) % 24, total % 60);
+      const mk = (t) => digital12(Math.floor(((t + 24 * 60) % (24 * 60)) / 60), ((t % 60) + 60) % 60);
+      options = shuffleInPlace([...new Set([
+        a,
+        mk(total + 10), mk(total - 10), mk(total + (fwd ? -2 : 2) * delta),
+      ])].slice(0, 4));
+      hint = fwd ? 'Add the minutes; if you pass 60, move to the next hour.' : 'Subtract the minutes; if you go below 0, borrow an hour.';
+      break;
+    }
+    case 'clock-5-s4': {
+      const m = randomInt(0, 11) * 5;
+      const h24 = randomInt(13, 23);
+      const to24 = Math.random() > 0.5;
+      if (to24) {
+        q = `Write ${digital12(h24, m)} pm in 24-hour time.`;
+        a = digital24(h24, m);
+        options = shuffleInPlace([...new Set([
+          a, digital24(h24 - 12, m), digital24(h24 + 1, m), digital24(h24, (m + 30) % 60),
+        ])].slice(0, 4));
+      } else {
+        q = `Write ${digital24(h24, m)} in 12-hour am/pm time.`;
+        a = `${digital12(h24, m)} pm`;
+        options = shuffleInPlace([...new Set([
+          a, `${digital12(h24, m)} am`, `${digital12(h24 + 1, m)} pm`, `${digital12(h24, (m + 30) % 60)} pm`,
+        ])].slice(0, 4));
+      }
+      hint = 'After midday, 24-hour time = 12-hour time + 12 hours.';
+      break;
+    }
+    case 'clock-5-s5': {
+      const m = randomInt(0, 11) * 5;
+      const h24 = randomInt(13, 22);
+      const vehicle = pick(['train', 'bus', 'ferry', 'plane']);
+      q = `The ${vehicle} leaves at ${digital24(h24, m)}. What time is that on a normal (12-hour) clock?`;
+      a = `${digital12(h24, m)} pm`;
+      options = shuffleInPlace([...new Set([
+        a, `${digital12(h24, m)} am`, `${digital12(h24 - 1, m)} pm`, `${digital12(h24 + 1, m)} pm`,
+      ])].slice(0, 4));
+      hint = 'Subtract 12 from the hours to get the pm time.';
+      break;
+    }
+    case 'clock-5-s6': {
+      const names = ['Mia', 'Tom', 'Aisha', 'Leo', 'Chloe'];
+      const acts = ['soccer practice', 'a movie', 'her homework', 'a swimming lesson', 'a board game'];
+      const name = pick(names), act = pick(acts);
+      const m0 = randomInt(0, 5) * 10;
+      const durH = randomInt(1, 2), durM = pick([15, 30, 45]);
+      const total = h * 60 + m0 + durH * 60 + durM;
+      const variant = randomInt(0, 1);
+      if (variant === 0) {
+        q = `${name} starts ${act} at ${digital12(h, m0)} and finishes at ${digital12(Math.floor(total / 60), total % 60)}. How long did it take?`;
+        a = minutesPhrase(durH * 60 + durM);
+        options = shuffleInPlace([...new Set([
+          a,
+          minutesPhrase(durH * 60 + durM + 15),
+          minutesPhrase(Math.max(15, durH * 60 + durM - 15)),
+          minutesPhrase((durH + 1) * 60 + durM),
+        ])].slice(0, 4));
+        hint = 'Count from the start time to the finish time: hours first, then minutes.';
+      } else {
+        q = `${name} starts ${act} at ${digital12(h, m0)}. It takes ${minutesPhrase(durH * 60 + durM)}. What time does it finish?`;
+        a = digital12(Math.floor(total / 60), total % 60);
+        const mk = (t) => digital12(Math.floor((t % (24 * 60)) / 60), t % 60);
+        options = shuffleInPlace([...new Set([
+          a, mk(total + 15), mk(total - 15), mk(total + 60),
+        ])].slice(0, 4));
+        hint = 'Add the hours first, then add the minutes.';
+      }
+      break;
+    }
+
+    default: {
+      setQ(clockQuestionFromTime(h, 0, 30, 'digital'));
+      hint = 'The short hand shows the hour, the long hand shows the minutes.';
+      break;
+    }
+  }
+
+  return {
+    id: `calc-${Date.now()}-${randomInt(1000, 9999)}`,
+    type: 'multiple_choice',
+    question: q,
+    answer: a,
+    options,
+    hint,
+    chapterTitle: 'Basic Calculation',
+    topicId,
+    generatorType: 'calculation',
+    timeLimit,
+  };
+};
+
 export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
+  // Clock Reading topics have their own generator (SVG clock faces + MCQ).
+  if (typeof topicId === 'string' && topicId.startsWith('clock-')) {
+    return generateClockQuestion(topicId, timeLimit);
+  }
   // Legacy Stage 5 topic ids → representative new step (assignments made
   // before the 28-step fraction curriculum still produce sensible questions).
   if (topicId === 'calc-5-core') topicId = 'calc-5-s1';
@@ -2176,7 +2565,7 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', t
   for (let i = 0; i < count; i++) {
     const topic = pick(topicsToUse);
     const q = generateCalculationQuestion(topic, timeLimit);
-    if (useMCQ) {
+    if (useMCQ && q.type !== 'multiple_choice') {
       const options = calcMCQOptions(q.answer);
       if (options.length === 4) {
         q.options = options;
