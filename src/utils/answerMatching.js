@@ -60,10 +60,10 @@ export const robustNormalize = (str, isAlgebraic = false) => {
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     // nested \frac (one level deep)
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
-    // strip outer parens from fraction UI format
-    .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2')
-    .replace(/\(([^()]+)\)\/([^()]+)/g, '$1/$2')
-    .replace(/([^()]+)\/\(([^()]+)\)/g, '$1/$2')
+    // collapse double parens and strip simple term parens from fractions without altering operator precedence
+    .replace(/\(\(([^()]+)\)\)/g, '($1)')
+    .replace(/\(([^()+\-*/\s]+)\)\//g, '$1/')
+    .replace(/\/\(([^()+\-*/\s]+)\)/g, '/$1')
     .replace(/⁰/g, '^0').replace(/¹/g, '^1').replace(/²/g, '^2').replace(/³/g, '^3')
     .replace(/⁴/g, '^4').replace(/⁵/g, '^5').replace(/⁶/g, '^6')
     .replace(/⁷/g, '^7').replace(/⁸/g, '^8').replace(/⁹/g, '^9')
