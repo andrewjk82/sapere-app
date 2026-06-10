@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, where, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp, documentId } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, where, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
@@ -297,41 +297,15 @@ const ReportsAdmin = () => {
       }
     }
 
-    // ── Slow fallback: scan the 30 most recent stat docs (bounded — an
-    // unbounded scan over months of history could exhaust the read quota) ──
-    console.warn('Fast-path miss — falling back to bounded stat scan for report', report.id);
-    const SCAN_LIMIT = 30;
-    const attempts = [];
-    for (const root of roots) {
-      for (const statCollection of statCollections) {
-        let snap;
-        try {
-          // Stat doc ids are YYYY-MM-DD date keys, so documentId-desc = newest first.
-          snap = await getDocs(query(
-            collection(db, root, studentId, statCollection),
-            orderBy(documentId(), 'desc'),
-            limit(SCAN_LIMIT),
-          ));
-        } catch (err) {
-          console.warn(`Skipping ${root}/${statCollection} for report match:`, err?.message);
-          continue;
-        }
-        for (const statDoc of snap.docs) {
-          // Skip dates already probed above
-          if (candidateDates.includes(statDoc.id)) continue;
-          const attempt = await probeStatDoc(root, studentId, statCollection, statDoc.id, questionId, fallbackIndex);
-          if (attempt) attempts.push(attempt);
-        }
-      }
-    }
-
-    attempts.sort((a, b) => {
-      const aTime = a.timestamp?.toDate ? a.timestamp.toDate().getTime() : new Date(a.timestamp).getTime();
-      const bTime = b.timestamp?.toDate ? b.timestamp.toDate().getTime() : new Date(b.timestamp).getTime();
-      return (Number.isFinite(bTime) ? bTime : 0) - (Number.isFinite(aTime) ? aTime : 0);
-    });
-
-    return attempts.find(a => a.results[a.resultIndex]?.correct !== true) || attempts[0] || null;
+    // NO scan fallback. Reports created from a scored quiz carry direct stat
+    // pointers (statRoot/statCollection/statId) and are resolved without any
+    // search; the date probe above (report date ±1 day, fixed 12 reads) covers
+    // old pointer-less reports. Anything still unmatched has no locatable
+    // attempt — the caller falls back to the "grant credit directly" prompt.
+    // (A previous version scanned every stat doc here and could exhaust the
+    // Firestore read quota in one click — do not reintroduce it.)
+    console.warn('No attempt matched for report (pointers + date probe both missed):', report.id);
+    return null;
   };
 
   // Core credit-restore logic — no UI, returns true on success, false if attempt not found,
