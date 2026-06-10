@@ -489,6 +489,42 @@ const ReportsAdmin = () => {
     });
   };
 
+  // Secret Note review approval: there are no points to restore (the note is
+  // the student's LOCAL mistake notebook), so approving queues a graduation on
+  // the student's user doc — their app removes the note on next load, exactly
+  // as if they had mastered it.
+  const handleApproveSecretNote = async (report) => {
+    if (processingId) return;
+    const questionId = report.questionId || report.questionData?.id;
+    if (!questionId || !report.studentId) {
+      alert('This report is missing the question or student id, so the note cannot be located.');
+      return;
+    }
+    if (!window.confirm('Approve this Secret Note answer? The note will be removed from the student\'s notebook (marked as mastered).')) return;
+    try {
+      setProcessingId(report.id);
+      await updateDoc(doc(db, 'users', report.studentId), {
+        secretNoteApprovals: arrayUnion({
+          kind: report.noteKind || '',
+          questionId: String(questionId),
+          approvedAt: new Date().toISOString(),
+        }),
+      });
+      await updateDoc(doc(db, 'reports', report.id), {
+        status: 'resolved',
+        approved: true,
+        approvedAt: serverTimestamp(),
+      });
+      setPreviewReport(null);
+      setPreviewQuestion(null);
+    } catch (err) {
+      console.error('Error approving secret note review:', err);
+      alert(`Failed to approve: ${err.message || err}`);
+    } finally {
+      setProcessingId(null);
+    }
+  };
+
   const handleRestoreCredit = async (report) => {
     if (processingId) return;
     if (!isCreditable(report)) {
@@ -598,6 +634,15 @@ const ReportsAdmin = () => {
                     style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #fed7aa', background: '#fff7ed', color: '#c2410c', fontWeight: 800, cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
                   >
                     <Award size={15} /> {processingId === report.id ? 'Restoring...' : 'Restore Credit'}
+                  </button>
+                )}
+                {report.source === 'secret_note' && report.status !== 'resolved' && !report.message?.startsWith('⚠️') && (
+                  <button
+                    onClick={() => handleApproveSecretNote(report)}
+                    disabled={!!processingId}
+                    style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <CheckCircle size={15} /> {processingId === report.id ? 'Approving...' : 'Approve & Graduate Note'}
                   </button>
                 )}
                 {report.status !== 'resolved' && (
@@ -1076,6 +1121,15 @@ const ReportsAdmin = () => {
                         style={{ width: '100%', padding: '16px', borderRadius: '18px', border: 'none', background: 'linear-gradient(135deg, #fb923c, #f97316)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', boxShadow: '0 8px 20px rgba(249,115,22,0.28)' }}
                       >
                         <Award size={18} /> {processingId === previewReport.id ? 'Restoring…' : 'Restore Credit'}
+                      </button>
+                    )}
+                    {previewReport.source === 'secret_note' && previewReport.status !== 'resolved' && !previewReport.message?.startsWith('⚠️') && (
+                      <button
+                        onClick={() => handleApproveSecretNote(previewReport)}
+                        disabled={!!processingId}
+                        style={{ width: '100%', padding: '16px', borderRadius: '18px', border: 'none', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: processingId ? 'wait' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', boxShadow: '0 8px 20px rgba(124,58,237,0.28)' }}
+                      >
+                        <CheckCircle size={18} /> {processingId === previewReport.id ? 'Approving…' : 'Approve & Graduate Note'}
                       </button>
                     )}
                     <button

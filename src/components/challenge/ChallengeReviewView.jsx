@@ -102,6 +102,9 @@ const ChallengeReviewView = ({
         workingOutPages,
         hasSketch: Boolean(sketchDataUrl) || workingOutPages.length > 0,
         source: 'review', // flagged during review, not during quiz
+        // Direct stat pointers — review can happen days after the session, so
+        // without these the admin's report-date probe would miss the attempt.
+        ...(statColName && sessionId ? { statRoot: 'users', statCollection: statColName, statId: sessionId } : {}),
         questionData: {
           id: reportQ.id || '',
           question: reportQ.question || reportQ.text || '',

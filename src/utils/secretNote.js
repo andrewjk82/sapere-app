@@ -251,6 +251,27 @@ export function pruneBlocked(uid, blockedIds) {
   return removed;
 }
 
+// Teacher-driven approvals: when a teacher approves a Secret Note review
+// request, the approval lands on the student's user doc
+// (secretNoteApprovals: [{ kind, questionId }]) and is applied here on the
+// next load — the note graduates (is removed) as if the student mastered it.
+// Returns the number of notes graduated.
+export function applyTeacherApprovals(uid, approvals) {
+  if (!Array.isArray(approvals) || approvals.length === 0) return 0;
+  let graduated = 0;
+  for (const a of approvals) {
+    const qid = String(a?.questionId ?? '');
+    if (!qid) continue;
+    const kinds = a?.kind && ALL_NOTE_KINDS.includes(a.kind) ? [a.kind] : ALL_NOTE_KINDS;
+    for (const kind of kinds) {
+      const items = read(kind, uid);
+      const next = items.filter((it) => String(it.question?.id ?? '') !== qid);
+      if (next.length !== items.length) { graduated += 1; write(kind, uid, next); }
+    }
+  }
+  return graduated;
+}
+
 // Compact summary for piggy-backing onto the end-of-test Firestore save.
 export function getSyncSnapshot(uid) {
   return {

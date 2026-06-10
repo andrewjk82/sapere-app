@@ -74,6 +74,36 @@ const pushHistory = (uid, session) => {
   localStorage.setItem(k(uid, 'history'), JSON.stringify(list));
 };
 
+// ── Teacher approvals ───────────────────────────────────────────────────
+// When a teacher approves a pending exam-prep answer (grading queue), the
+// approval lands on the student's user doc (examPrepApprovals:
+// [{ questionId, topicId, topicTitle }]). Applied here on the next load:
+// the answer counts as correct so the student's accuracy is restored.
+// Pending answers were already counted as attempted-but-not-correct in
+// finishRound, so applying = +1 correct (overall and per-topic).
+export function applyTeacherApprovals(uid, approvals) {
+  if (!Array.isArray(approvals) || approvals.length === 0) return 0;
+  const stats = getStats(uid);
+  let applied = 0;
+  for (const a of approvals) {
+    if (!a || !a.questionId) continue;
+    stats.correct += 1;
+    const topicId = a.topicId || 'unknown';
+    stats.byTopic[topicId] = stats.byTopic[topicId] || { title: a.topicTitle || 'Untitled topic', correct: 0, attempted: 0 };
+    stats.byTopic[topicId].correct += 1;
+    if (stats.byTopic[topicId].attempted < stats.byTopic[topicId].correct) {
+      stats.byTopic[topicId].attempted = stats.byTopic[topicId].correct;
+    }
+    applied += 1;
+  }
+  if (applied > 0) {
+    if (stats.attempted < stats.correct) stats.attempted = stats.correct;
+    localStorage.setItem(k(uid, 'stats'), JSON.stringify(stats));
+    persistStateToServer(uid);
+  }
+  return applied;
+}
+
 // ── Cross-device sync (stats + history persisted to Firestore) ─────────
 // localStorage stays the fast local cache; Firestore is the canonical store so
 // a student's progress follows them across devices/browsers. The doc lives

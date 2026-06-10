@@ -1,6 +1,6 @@
 import {
   doc, deleteDoc, getDoc, updateDoc, runTransaction,
-  increment, serverTimestamp,
+  increment, serverTimestamp, arrayUnion,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 
@@ -51,7 +51,17 @@ export const gradeSubmission = async (item, approved) => {
 
   // Exam prep is unscored practice: approval marks the answer correct for the
   // student's accuracy stats but awards NO XP / points / leaderboard change.
+  // The approval is queued on the student's user doc; their app applies it to
+  // the local exam-prep stats on next load (see examPrepService.applyTeacherApprovals).
   if (type === 'exam_prep') {
+    await updateDoc(doc(db, 'users', userId), {
+      examPrepApprovals: arrayUnion({
+        questionId: item.questionId || '',
+        topicId: item.topicId || '',
+        topicTitle: item.topicTitle || '',
+        approvedAt: new Date().toISOString(),
+      }),
+    });
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
   }

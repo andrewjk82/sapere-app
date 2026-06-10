@@ -69,12 +69,13 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
-import { doc, onSnapshot, query, collection, orderBy, limit, updateDoc } from 'firebase/firestore';
+import { doc, onSnapshot, query, collection, orderBy, limit, updateDoc, deleteField } from 'firebase/firestore';
 import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
 import { getChallengeBootCacheKey } from './utils/challengeUtils';
-import { pruneBlocked } from './utils/secretNote';
+import { pruneBlocked, applyTeacherApprovals as applySecretNoteApprovals } from './utils/secretNote';
+import { applyTeacherApprovals as applyExamPrepApprovals } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -391,6 +392,36 @@ function App() {
       const ids = snap.exists() ? snap.data().ids : null;
       if (Array.isArray(ids) && ids.length) {
         try { pruneBlocked(user.uid, ids); } catch (_) { /* non-fatal */ }
+      }
+    }, () => { /* ignore permission/transient errors */ });
+  }, [user?.uid, isAdmin]);
+
+  // Teacher approvals queued on the student's user doc:
+  //  - secretNoteApprovals → graduate (remove) the approved note locally
+  //  - examPrepApprovals   → count the approved answer as correct in local stats
+  // Applied live, then the queue fields are cleared so they run exactly once.
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return undefined;
+    const ref = doc(db, 'users', user.uid);
+    return onSnapshot(ref, (snap) => {
+      if (!snap.exists()) return;
+      const data = snap.data();
+      const noteApprovals = data.secretNoteApprovals;
+      const examApprovals = data.examPrepApprovals;
+      if (!Array.isArray(noteApprovals) && !Array.isArray(examApprovals)) return;
+      const clear = {};
+      try {
+        if (Array.isArray(noteApprovals) && noteApprovals.length) {
+          applySecretNoteApprovals(user.uid, noteApprovals);
+          clear.secretNoteApprovals = deleteField();
+        }
+        if (Array.isArray(examApprovals) && examApprovals.length) {
+          applyExamPrepApprovals(user.uid, examApprovals);
+          clear.examPrepApprovals = deleteField();
+        }
+      } catch (_) { /* non-fatal — retried on next snapshot */ }
+      if (Object.keys(clear).length) {
+        updateDoc(ref, clear).catch(() => {});
       }
     }, () => { /* ignore permission/transient errors */ });
   }, [user?.uid, isAdmin]);

@@ -224,6 +224,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         status: 'pending',
         submittedAt: serverTimestamp(),
         challengeType: 'exam_prep',
+        topicId: q.topicId || q.chapterId || '',
         topicTitle: q.topicTitle || '',
         chapterTitle: q.chapterTitle || '',
         correctAnswer: q.answer || '',
