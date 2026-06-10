@@ -4,7 +4,9 @@
 
 // Strip LaTeX \text{...} wrappers and common measurement unit suffixes so
 // "9355\text{ m}" matches "9355" and "15m" matches "15".
-const stripUnits = (s) =>
+// Strip LaTeX \text{...} wrappers and common measurement unit suffixes so
+// "9355\text{ m}" matches "9355" and "15m" matches "15".
+const stripUnits = (s, isAlgebraic = false) =>
   s
     // LaTeX \text{ m }, \text{metres}, etc.
     .replace(/\\text\s*\{[^{}]*\}/g, '')
@@ -12,16 +14,19 @@ const stripUnits = (s) =>
     // Order matters: longer words first to avoid partial matches
     .replace(/\b(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?|cm²|m²|km²|cm³|m³)\b/gi, '')
     .replace(/(?<=\d)\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\b/g, '')
-    .replace(/(?<=\d)\s*m\b/g, '')   // trailing "m" after a number
-    .replace(/(?<=\d)\s*g\b/g, '')   // trailing "g"
-    .replace(/(?<=\d)\s*L\b/gi, '')  // trailing "L" / "l"
-    .replace(/(?<=\d)\s*s\b/g, '')   // trailing "s" (seconds)
+    .replace(/(?:\b|(?<=\d))\s*(?:celsius|centigrade|fahrenheit)\b/gi, '')
+    .replace(/(?:(?<=\d)|\b)\s*units?\b/gi, '')
+    // Only strip single-letter unit suffixes if NOT an algebraic context
+    .replace(/(?<=\d)\s*m\b/g, isAlgebraic ? 'm' : '')   // trailing "m" after a number
+    .replace(/(?<=\d)\s*g\b/g, isAlgebraic ? 'g' : '')   // trailing "g"
+    .replace(/(?<=\d)\s*L\b/gi, isAlgebraic ? 'L' : '')  // trailing "L" / "l"
+    .replace(/(?<=\d)\s*s\b/g, isAlgebraic ? 's' : '')   // trailing "s" (seconds)
     // LaTeX percent \% → %
     .replace(/\\%/g, '%');
 
-export const robustNormalize = (str) => {
+export const robustNormalize = (str, isAlgebraic = false) => {
   if (!str) return '';
-  let s = stripUnits(String(str))
+  let s = stripUnits(String(str), isAlgebraic)
     .toLowerCase()
     // Strip units before other processing
     .replace(/\\text\s*\{[^{}]*\}/g, '')
@@ -55,8 +60,10 @@ export const robustNormalize = (str) => {
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
     // nested \frac (one level deep)
     .replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
-    // (a)/(b) → a/b  strip outer parens from fraction UI format
+    // strip outer parens from fraction UI format
     .replace(/\(([^()]+)\)\/\(([^()]+)\)/g, '$1/$2')
+    .replace(/\(([^()]+)\)\/([^()]+)/g, '$1/$2')
+    .replace(/([^()]+)\/\(([^()]+)\)/g, '$1/$2')
     .replace(/⁰/g, '^0').replace(/¹/g, '^1').replace(/²/g, '^2').replace(/³/g, '^3')
     .replace(/⁴/g, '^4').replace(/⁵/g, '^5').replace(/⁶/g, '^6')
     .replace(/⁷/g, '^7').replace(/⁸/g, '^8').replace(/⁹/g, '^9')
@@ -176,19 +183,42 @@ const extractRhs = (s) => {
   return null;
 };
 
+const isAlgebraicStr = (str) => {
+  if (!str) return false;
+  const s = String(str).toLowerCase();
+  // If it has any algebraic variable: a, b, c, d, e, f, h, i, j, k, n, o, p, q, r, t, u, v, w, x, y, z
+  if (/[a-fh-ik-np-rt-uvw-zθαβ]/.test(s)) return true;
+  if (/[\/^*-]/.test(s) && /[a-z]/.test(s)) return true;
+  if (/[a-z]/.test(s) && /[()]/.test(s)) return true;
+  return false;
+};
+
+const isQuestionAlgebraic = (question) => {
+  if (!question) return false;
+  const answerText = String(question.answer || '').toLowerCase();
+  if (isAlgebraicStr(answerText)) return true;
+  const qText = String(question.question || question.text || '').toLowerCase();
+  if (qText.includes('\\frac') || qText.includes('^') || qText.includes('simplify') || qText.includes('expression') || qText.includes('solve')) {
+    return true;
+  }
+  return false;
+};
+
 /**
  * Check if a student answer matches any of the accepted answers.
  * acceptedAnswers can be an array of strings, or a single string.
  * If an array is provided, the student answer is checked against each one.
  */
-export const answersMatchAny = (studentAnswer, acceptedAnswers) => {
+export const answersMatchAny = (studentAnswer, acceptedAnswers, isAlgebraic = false) => {
   if (!Array.isArray(acceptedAnswers) || acceptedAnswers.length === 0) return false;
-  return acceptedAnswers.some((a) => answersMatch(studentAnswer, String(a ?? '')));
+  return acceptedAnswers.some((a) => answersMatch(studentAnswer, String(a ?? ''), isAlgebraic));
 };
 
-export const answersMatch = (studentAnswer, expectedAnswer) => {
+export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false) => {
   // Empty student answer is never correct.
   if (studentAnswer === null || studentAnswer === undefined || String(studentAnswer ?? '').trim() === '') return false;
+
+  const isAlg = isAlgebraic || isAlgebraicStr(expectedAnswer) || isAlgebraicStr(studentAnswer);
 
   // Fraction / mixed-number equivalence: "2 1/2" == "5/2" == "2.5".
   const sFrac = evalFractionValue(studentAnswer);
@@ -207,8 +237,8 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
     }
   }
 
-  const sNorm = robustNormalize(studentAnswer);
-  const eNorm = robustNormalize(expectedAnswer);
+  const sNorm = robustNormalize(studentAnswer, isAlg);
+  const eNorm = robustNormalize(expectedAnswer, isAlg);
   if (sNorm === eNorm) return true;
 
   // Allow "c = 16" to match "16" and vice versa
@@ -218,7 +248,7 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
 
   // student typed just a number, expected is "var = number"
   if (sRhs === null && eRhs !== null) {
-    if (robustNormalize(studentAnswer) === robustNormalize(eRhs)) return true;
+    if (robustNormalize(studentAnswer, isAlg) === robustNormalize(eRhs, isAlg)) return true;
     const sNum = parseNumericAnswer(studentAnswer);
     const eNum = parseNumericAnswer(eRhs);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
@@ -226,7 +256,7 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
 
   // student typed "var = number", expected is just a number
   if (sRhs !== null && eRhs === null) {
-    if (robustNormalize(sRhs) === robustNormalize(expectedAnswer)) return true;
+    if (robustNormalize(sRhs, isAlg) === robustNormalize(expectedAnswer, isAlg)) return true;
     const sNum = parseNumericAnswer(sRhs);
     const eNum = parseNumericAnswer(expectedAnswer);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
@@ -234,7 +264,7 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
 
   // both are "var = value" forms — compare RHS only (different variable names OK)
   if (sRhs !== null && eRhs !== null) {
-    if (robustNormalize(sRhs) === robustNormalize(eRhs)) return true;
+    if (robustNormalize(sRhs, isAlg) === robustNormalize(eRhs, isAlg)) return true;
     const sNum = parseNumericAnswer(sRhs);
     const eNum = parseNumericAnswer(eRhs);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
@@ -250,6 +280,8 @@ export const answersMatch = (studentAnswer, expectedAnswer) => {
 export const gradeQuestion = (question, userAnswer) => {
   if (!question) return { correct: false };
 
+  const isAlgebraic = isQuestionAlgebraic(question);
+
   // Empty answer is always wrong — guards against blank matching blank when
   // a question's answer field is missing, and against accidental submission.
   const isEmptyValue = (v) =>
@@ -258,14 +290,14 @@ export const gradeQuestion = (question, userAnswer) => {
   if (question.type === 'multiple_choice') {
     const optText = typeof userAnswer === 'object' && userAnswer !== null ? userAnswer.text : userAnswer;
     if (isEmptyValue(optText)) return { correct: false };
-    return { correct: answersMatch(optText, question.answer) };
+    return { correct: answersMatch(optText, question.answer, isAlgebraic) };
   }
   if (question.type === 'fill_blank') {
     const blanks = Array.isArray(question.blanks) ? question.blanks : [];
     const arr = Array.isArray(userAnswer) ? userAnswer : [];
     // Any blank left empty → wrong
     if (arr.some((v) => isEmptyValue(v))) return { correct: false, perBlank: blanks.map(() => false) };
-    const perBlank = blanks.map((b, i) => answersMatch(arr[i] || '', b.answer || ''));
+    const perBlank = blanks.map((b, i) => answersMatch(arr[i] || '', b.answer || '', isAlgebraic));
     return { correct: blanks.length > 0 && perBlank.every(Boolean), perBlank };
   }
   // short_answer + anything else stringy
@@ -273,7 +305,7 @@ export const gradeQuestion = (question, userAnswer) => {
 
   // If the question has multiple accepted answers, check against all of them
   if (Array.isArray(question.acceptedAnswers) && question.acceptedAnswers.length > 0) {
-    return { correct: answersMatchAny(userAnswer, question.acceptedAnswers) };
+    return { correct: answersMatchAny(userAnswer, question.acceptedAnswers, isAlgebraic) };
   }
-  return { correct: answersMatch(userAnswer, question.answer) };
+  return { correct: answersMatch(userAnswer, question.answer, isAlgebraic) };
 };
