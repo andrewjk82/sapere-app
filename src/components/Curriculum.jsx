@@ -221,6 +221,7 @@ import { Y10_CH15B_QUESTIONS } from '../constants/seedYear10Ch15BQuestions.js';
 import { Y10_CH15C_QUESTIONS } from '../constants/seedYear10Ch15CQuestions.js';
 import { Y10_CH15D_QUESTIONS } from '../constants/seedYear10Ch15DQuestions.js';
 import { Y10_CH15E_QUESTIONS } from '../constants/seedYear10Ch15EQuestions.js';
+import { Y10_CH16_QUESTIONS } from '../constants/seedYear10Ch16Questions.js';
 import { CARINGBAH_2020_QUESTIONS } from '../constants/seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from '../constants/seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from '../constants/seedAbbotsleigh2020Questions.js';
@@ -502,6 +503,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15c', topicCode: '15C', topicTitle: 'Conditional probability', year: 'Year 10', seed: Y10_CH15C_QUESTIONS, label: 'Y10 Ch15 · 15C Conditional probability' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15d', topicCode: '15D', topicTitle: 'Independent events', year: 'Year 10', seed: Y10_CH15D_QUESTIONS, label: 'Y10 Ch15 · 15D Independent events' },
   { chapterId: 'y10-15', chapterTitle: 'Chapter 15: Probability', topicId: 'y10-15e', topicCode: '15E', topicTitle: 'Sampling with replacement and without replacement', year: 'Year 10', seed: Y10_CH15E_QUESTIONS, label: 'Y10 Ch15 · 15E Sampling with replacement and without replacement' },
+  { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16a', topicCode: '16A', topicTitle: 'Direct proportion', year: 'Year 10', seed: Y10_CH16_QUESTIONS, label: 'Y10 Ch16 · 16A Direct proportion' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
