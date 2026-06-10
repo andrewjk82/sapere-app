@@ -48,6 +48,13 @@ export const gradeSubmission = async (item, approved) => {
   }
 
   const type = item.challengeType || 'daily';
+
+  // Exam prep is unscored practice: approval marks the answer correct for the
+  // student's accuracy stats but awards NO XP / points / leaderboard change.
+  if (type === 'exam_prep') {
+    await deleteDoc(doc(db, 'grading_queue', item.id));
+    return { xpAwarded: 0 };
+  }
   const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
 
   const totalQ = item.totalQuestions || 10;
@@ -99,14 +106,7 @@ export const gradeSubmission = async (item, approved) => {
     }, { merge: true });
   });
 
-  // 2. Update the stats sub-document.
-  // Only daily/calc submissions have a matching stats doc — exam_prep has no
-  // scored stats and must NOT touch daily_stats (a same-day Daily Challenge
-  // record would wrongly gain a point).
-  if (type === 'exam_prep') {
-    await deleteDoc(doc(db, 'grading_queue', item.id));
-    return { xpAwarded: xpPerQuestion };
-  }
+  // 2. Update the stats sub-document (daily/calc only — exam_prep returned above).
   const statId = resolveStatId(item);
   const safeStatId = String(statId).replace(/\//g, '-');
 
