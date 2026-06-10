@@ -19,6 +19,37 @@ const resolveStatId = (item) => {
 };
 
 /**
+ * Mark the pending answer in the student's stat doc as definitively graded
+ * (correct=false on rejection) so it stops showing as "Teacher marking".
+ * Score / XP are untouched.
+ */
+const finalizeStatAnswer = async (item, correct) => {
+  const colName = (item.challengeType === 'calc') ? 'calc_stats' : 'daily_stats';
+  const safeStatId = String(resolveStatId(item)).replace(/\//g, '-');
+
+  let statRef = doc(db, 'users', item.userId, colName, safeStatId);
+  let statSnap = await getDoc(statRef);
+  if (!statSnap.exists()) {
+    statRef = doc(db, 'students', item.userId, colName, safeStatId);
+    statSnap = await getDoc(statRef);
+  }
+  if (!statSnap.exists()) return;
+
+  const statsData = statSnap.data();
+  const updatedResults = [...(statsData.answerResults || [])];
+  const qIndex = updatedResults.findIndex((r) => r.questionId === item.questionId);
+  if (qIndex === -1) return;
+
+  updatedResults[qIndex] = {
+    ...updatedResults[qIndex],
+    correct,
+    isPending: false,
+    gradedAt: new Date().toISOString(),
+  };
+  await updateDoc(statRef, { answerResults: updatedResults });
+};
+
+/**
  * Grade a teacher-review submission.
  *
  * - If approved:
@@ -42,12 +73,27 @@ export const gradeSubmission = async (item, approved) => {
     throw new Error("Invalid grading item: missing userId");
   }
 
+  const type = item.challengeType || 'daily';
+
   if (!approved) {
+    // Rejection finalises the answer as incorrect so it never lingers as
+    // "Teacher marking" on the student's side. No score/XP changes — pending
+    // answers were never counted as correct.
+    if (type === 'exam_prep') {
+      await updateDoc(doc(db, 'users', userId), {
+        examPrepRejections: arrayUnion({
+          questionId: item.questionId || '',
+          topicId: item.topicId || '',
+          topicTitle: item.topicTitle || '',
+          rejectedAt: new Date().toISOString(),
+        }),
+      }).catch(() => {});
+    } else {
+      await finalizeStatAnswer(item, false).catch(() => {});
+    }
     await deleteDoc(doc(db, 'grading_queue', item.id));
     return { xpAwarded: 0 };
   }
-
-  const type = item.challengeType || 'daily';
 
   // Exam prep is unscored practice: approval marks the answer correct for the
   // student's accuracy stats but awards NO XP / points / leaderboard change.

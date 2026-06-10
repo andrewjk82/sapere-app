@@ -81,12 +81,27 @@ const pushHistory = (uid, session) => {
 // the answer counts as correct so the student's accuracy is restored.
 // Pending answers were already counted as attempted-but-not-correct in
 // finishRound, so applying = +1 correct (overall and per-topic).
+// Idempotency ledger: applying an approval is "+1 correct", which is NOT safe
+// to repeat (unlike note removal). If applying succeeds but clearing the
+// user-doc queue field fails (offline, second device), the next snapshot
+// delivers the same entries again — this ledger makes re-application a no-op.
+const appliedLedgerKey = (uid) => k(uid, 'appliedTeacherActions');
+const getAppliedLedger = (uid) => new Set(safeParse(localStorage.getItem(appliedLedgerKey(uid)), []));
+const saveAppliedLedger = (uid, set) => {
+  localStorage.setItem(appliedLedgerKey(uid), JSON.stringify([...set].slice(-300)));
+};
+const actionKey = (prefix, a) => `${prefix}|${a?.questionId ?? ''}|${a?.approvedAt ?? a?.rejectedAt ?? ''}`;
+
 export function applyTeacherApprovals(uid, approvals) {
   if (!Array.isArray(approvals) || approvals.length === 0) return 0;
+  const ledger = getAppliedLedger(uid);
   const stats = getStats(uid);
   let applied = 0;
   for (const a of approvals) {
     if (!a || !a.questionId) continue;
+    const key = actionKey('approve', a);
+    if (ledger.has(key)) continue;
+    ledger.add(key);
     stats.correct += 1;
     const topicId = a.topicId || 'unknown';
     stats.byTopic[topicId] = stats.byTopic[topicId] || { title: a.topicTitle || 'Untitled topic', correct: 0, attempted: 0 };
@@ -99,9 +114,29 @@ export function applyTeacherApprovals(uid, approvals) {
   if (applied > 0) {
     if (stats.attempted < stats.correct) stats.attempted = stats.correct;
     localStorage.setItem(k(uid, 'stats'), JSON.stringify(stats));
+    saveAppliedLedger(uid, ledger);
     persistStateToServer(uid);
   }
   return applied;
+}
+
+// Teacher rejected a pending answer. The answer was already counted as
+// not-correct in finishRound, so stats don't change — this just records the
+// outcome (idempotently) and returns the newly-seen entries so the app can
+// tell the student their answer was confirmed incorrect.
+export function applyTeacherRejections(uid, rejections) {
+  if (!Array.isArray(rejections) || rejections.length === 0) return [];
+  const ledger = getAppliedLedger(uid);
+  const fresh = [];
+  for (const r of rejections) {
+    if (!r || !r.questionId) continue;
+    const key = actionKey('reject', r);
+    if (ledger.has(key)) continue;
+    ledger.add(key);
+    fresh.push(r);
+  }
+  if (fresh.length > 0) saveAppliedLedger(uid, ledger);
+  return fresh;
 }
 
 // ── Cross-device sync (stats + history persisted to Firestore) ─────────

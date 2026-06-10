@@ -75,7 +75,7 @@ import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
 import { getChallengeBootCacheKey } from './utils/challengeUtils';
 import { pruneBlocked, applyTeacherApprovals as applySecretNoteApprovals } from './utils/secretNote';
-import { applyTeacherApprovals as applyExamPrepApprovals } from './services/examPrepService';
+import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -408,23 +408,34 @@ function App() {
       const data = snap.data();
       const noteApprovals = data.secretNoteApprovals;
       const examApprovals = data.examPrepApprovals;
-      if (!Array.isArray(noteApprovals) && !Array.isArray(examApprovals)) return;
+      const examRejections = data.examPrepRejections;
+      if (!Array.isArray(noteApprovals) && !Array.isArray(examApprovals) && !Array.isArray(examRejections)) return;
       const clear = {};
       try {
         if (Array.isArray(noteApprovals) && noteApprovals.length) {
-          applySecretNoteApprovals(user.uid, noteApprovals);
+          const n = applySecretNoteApprovals(user.uid, noteApprovals);
+          if (n > 0) showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
           clear.secretNoteApprovals = deleteField();
         }
         if (Array.isArray(examApprovals) && examApprovals.length) {
-          applyExamPrepApprovals(user.uid, examApprovals);
+          const n = applyExamPrepApprovals(user.uid, examApprovals);
+          // The approved question also sits in the exam-prep Secret Note deck
+          // (wrong/pending answers are auto-added) — graduate it there too.
+          applySecretNoteApprovals(user.uid, examApprovals.map((a) => ({ kind: 'exam_prep', questionId: a.questionId })));
+          if (n > 0) showToast(`Your teacher marked ${n} exam prep answer${n === 1 ? '' : 's'} correct!`, 'success');
           clear.examPrepApprovals = deleteField();
+        }
+        if (Array.isArray(examRejections) && examRejections.length) {
+          const fresh = applyExamPrepRejections(user.uid, examRejections);
+          if (fresh.length > 0) showToast(`Your teacher reviewed ${fresh.length} exam prep answer${fresh.length === 1 ? '' : 's'} — marked incorrect. Check your Secret Note to retry.`, 'info');
+          clear.examPrepRejections = deleteField();
         }
       } catch (_) { /* non-fatal — retried on next snapshot */ }
       if (Object.keys(clear).length) {
         updateDoc(ref, clear).catch(() => {});
       }
     }, () => { /* ignore permission/transient errors */ });
-  }, [user?.uid, isAdmin]);
+  }, [user?.uid, isAdmin, showToast]);
 
   // Real-time Version Check
   useEffect(() => {
