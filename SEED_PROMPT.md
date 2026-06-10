@@ -20,19 +20,19 @@
 
 ```
 학년:        Year 10
-챕터 번호:   1
-chapterId:   y10-1
-서브토픽 ID: y10-e
-토픽 코드:   1E
-서브토픽 제목: Compound depreciation
+챕터 번호:   14
+chapterId:   y10-14
+서브토픽 ID: y10-14c
+토픽 코드:   14C
+서브토픽 제목: Graphs of exponential and logarithm functions
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1 ~ Q6  → easy
-Q7 ~ Q13 → medium
-none → hard
+Q1 ~ Q3  → easy
+Q4 ~ Q6 → medium
+none →  hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
 
@@ -56,7 +56,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1~ Q13
+  Q1, Q2, Q3, Q5, Q6
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
@@ -402,5 +402,7 @@ import { Y9_CH3_QUESTIONS } from '../constants/seedYear9Ch3Questions';
 > 3. **KaTeX 문법 준수**: `\begin{array}` 사용 시 절대 `@` 기호(`c@{\quad}r` 등)를 쓰지 않아야 수식이 깨지지 않습니다.
 
 ---
+
+문제 누락하지 마 특히 어려운 문제들 누락하거나 쉬운 문제로 바꾸지 말고
 
 위 규칙대로 시드 파일을 생성하고 [12]까지 완료하세요.

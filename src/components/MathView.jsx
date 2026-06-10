@@ -51,6 +51,7 @@ const toDisplayText = (value, fallback = '') => {
     return str;
   }
 
+
   // 2. Safety catches for broken data imports (Double backslashes & excessive dollars)
   // Replaces \\ with \ unless it's a structural newline like \\n
   str = str.replace(/\\\\([a-zA-Z0-9])/g, '\\$1');
@@ -209,18 +210,56 @@ const toDisplayText = (value, fallback = '') => {
   return str;
 };
 
+// Convert markdown tables to HTML before line-splitting so the table
+// structure is preserved. Called on the full content string.
+const convertMarkdownTables = (str) => {
+  if (typeof str !== 'string') return str;
+  const tableLineRe = /^\s*\|.+\|\s*$/;
+  const separatorRe = /^\s*\|[\s|:\-]+\|\s*$/;
+  const rawLines = str.split(/\r?\n/);
+  const out = [];
+  let i = 0;
+  while (i < rawLines.length) {
+    const line = rawLines[i];
+    if (tableLineRe.test(line) && i + 1 < rawLines.length && separatorRe.test(rawLines[i + 1])) {
+      const parseCells = (l) => l.replace(/^\s*\||\|\s*$/g, '').split('|').map(c => c.trim());
+      const headers = parseCells(line);
+      i += 2;
+      const rows = [];
+      while (i < rawLines.length && tableLineRe.test(rawLines[i])) {
+        rows.push(parseCells(rawLines[i]));
+        i++;
+      }
+      let html = '<table style="border-collapse:collapse;margin:8px auto;font-family:inherit">';
+      html += '<thead><tr>' + headers.map(h => `<th style="border:1px solid #cbd5e1;padding:6px 12px;background:#f1f5f9;text-align:center">${h}</th>`).join('') + '</tr></thead>';
+      if (rows.length) {
+        html += '<tbody>' + rows.map(r => '<tr>' + r.map(c => `<td style="border:1px solid #cbd5e1;padding:6px 12px;min-width:40px;text-align:center">${c}</td>`).join('') + '</tr>').join('') + '</tbody>';
+      }
+      html += '</table>';
+      out.push(html);
+    } else {
+      out.push(line);
+      i++;
+    }
+  }
+  return out.join('\n');
+};
+
 const MathView = ({ content, graphData: rawGraphData, style }) => {
   const containerRef = useRef(null);
-  
+
+  // Pre-process: convert markdown tables to HTML before line-splitting
+  const processedContent = typeof content === 'string' ? convertMarkdownTables(content) : content;
+
   let lines = [];
-  if (typeof content === 'string') {
+  if (typeof processedContent === 'string') {
     // If it looks like block HTML (contains block tags), don't split by newline, treat as one block
-    if (/<(div|p|ul|ol|table|svg|h[1-6])[>\s]/i.test(content)) {
-      lines = [content];
+    if (/<(div|p|ul|ol|table|svg|h[1-6])[>\s]/i.test(processedContent)) {
+      lines = [processedContent];
     } else {
       // Only split on newlines that are OUTSIDE of math blocks.
       const mathBlockRegex = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
-      const parts = content.split(mathBlockRegex);
+      const parts = processedContent.split(mathBlockRegex);
     let currentLine = "";
     for (let i = 0; i < parts.length; i++) {
       if (i % 2 === 0) {
@@ -241,7 +280,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     lines.push(currentLine);
     }
   } else {
-    lines = [content];
+    lines = [processedContent];
   }
 
   // Auto-split trailing math block at the end of a single-line question to center it

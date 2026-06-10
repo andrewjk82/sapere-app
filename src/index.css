@@ -144,8 +144,12 @@ body {
 }
 
 .opening-intro__line--single {
-  flex-wrap: nowrap;
-  white-space: nowrap;
+  /* Allow a long name to drop onto its own line instead of overflowing off
+     the screen edge. The greeting and name are separate spans, so the line
+     breaks cleanly between them when it can't fit on one line. */
+  flex-wrap: wrap;
+  white-space: normal;
+  max-width: 100%;
 }
 
 .opening-intro__line--greeting {
