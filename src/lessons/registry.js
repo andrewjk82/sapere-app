@@ -1224,7 +1224,12 @@ export const buildClockBasicsLesson = ({ audioBase = null } = {}) => {
     {
       narration: `A clock face has the numbers <b>1 to 12</b> and two hands. The <b>hour hand</b> is short and thick. The <b>minute hand</b> is long.`,
       speech: `A clock face has the numbers one to twelve, and two hands. The hour hand is short and thick. The minute hand is long.`,
-      board: [{ type: 'clock', times: [{ hour: 3, minute: 0 }], label: 'Short hand = hours · Long hand = minutes' }],
+      // highlight `begin` times match the narration mp3 (7.2 s total):
+      // "hour hand" ≈ 3.4 s, "minute hand" ≈ 5.6 s.
+      board: [{ type: 'clock', times: [{ hour: 3, minute: 0 }], label: 'Short hand = hours · Long hand = minutes', highlights: [
+        { hand: 'hour', begin: 3.4, label: 'hour hand' },
+        { hand: 'minute', begin: 5.6, label: 'minute hand' },
+      ] }],
     },
     {
       narration: `When the <b>minute hand</b> points straight up to <b>12</b>, it is an <b>o'clock</b> time. The hour hand tells you which hour: this clock shows <b>3 o'clock</b>.`,

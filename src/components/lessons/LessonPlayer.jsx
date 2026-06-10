@@ -652,7 +652,7 @@ const BoardItem = ({ item }) => {
           <motion.div key={ti}
             initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
             transition={{ type: 'spring', stiffness: 280, damping: 22, delay: ti * 0.25 }}>
-            <div dangerouslySetInnerHTML={{ __html: clockSvg(t.hour, t.minute, { size: item.size || 170 }) }} />
+            <div dangerouslySetInnerHTML={{ __html: clockSvg(t.hour, t.minute, { size: item.size || 170, highlights: t.highlights || item.highlights }) }} />
             {t.label && <div style={{ fontSize: '0.9rem', fontWeight: 700, color: '#7c3aed', fontFamily: FONT, marginTop: '4px' }}>{t.label}</div>}
           </motion.div>
         ))}
