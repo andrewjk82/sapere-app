@@ -21,24 +21,35 @@ const resolveStatId = (item) => {
 /**
  * Grade a teacher-review submission.
  *
- * - Removes the item from `grading_queue`.
  * - If approved:
  *   1. Atomically updates user `totalXP`, `points`, and the `leaderboard` doc.
  *   2. Increments `score` / `xpEarned` in the daily_stats or calc_stats sub-doc
  *      and marks the specific answer result as correct.
+ * - Removes the item from `grading_queue` LAST, so a failure part-way through
+ *   (e.g. quota exhausted) leaves the submission in the queue for a retry
+ *   instead of silently losing the student's work.
  *
  * @param {object} item   - Grading queue document data (must include `.id`).
  * @param {boolean} approved
  * @returns {{ xpAwarded: number }}
  */
 export const gradeSubmission = async (item, approved) => {
-  await deleteDoc(doc(db, 'grading_queue', item.id));
+  if (!item || !item.id) {
+    throw new Error("Invalid grading item: missing document ID");
+  }
+  const userId = item.userId;
+  if (!userId) {
+    throw new Error("Invalid grading item: missing userId");
+  }
 
-  if (!approved) return { xpAwarded: 0 };
+  if (!approved) {
+    await deleteDoc(doc(db, 'grading_queue', item.id));
+    return { xpAwarded: 0 };
+  }
 
   const type = item.challengeType || 'daily';
   const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
-  const userId = item.userId;
+
   const totalQ = item.totalQuestions || 10;
   const maxXP = type === 'calc' ? 50 : 100;
   const xpPerQuestion = Math.round(maxXP / totalQ);
@@ -88,7 +99,14 @@ export const gradeSubmission = async (item, approved) => {
     }, { merge: true });
   });
 
-  // 2. Update the stats sub-document
+  // 2. Update the stats sub-document.
+  // Only daily/calc submissions have a matching stats doc — exam_prep has no
+  // scored stats and must NOT touch daily_stats (a same-day Daily Challenge
+  // record would wrongly gain a point).
+  if (type === 'exam_prep') {
+    await deleteDoc(doc(db, 'grading_queue', item.id));
+    return { xpAwarded: xpPerQuestion };
+  }
   const statId = resolveStatId(item);
   const safeStatId = String(statId).replace(/\//g, '-');
 
@@ -114,6 +132,9 @@ export const gradeSubmission = async (item, approved) => {
       ...(qIndex !== -1 ? { answerResults: updatedResults } : {}),
     });
   }
+
+  // Credit fully applied — now it is safe to remove the queue item.
+  await deleteDoc(doc(db, 'grading_queue', item.id));
 
   return { xpAwarded: xpPerQuestion };
 };

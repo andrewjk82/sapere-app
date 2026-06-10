@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, where, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, where, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp, documentId } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
@@ -10,6 +10,49 @@ import MathView from './MathView';
 import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import { parseSolutionSteps } from '../utils/solutionSteps';
+
+// ── Report provenance ────────────────────────────────────────────────────────
+// Students file reports from several places. Only some of them correspond to a
+// SCORED quiz attempt — for the others "Restore Credit" is meaningless (there
+// are no points to give back) and attempting it used to trigger an unbounded
+// stat-document scan that could exhaust the Firestore read quota.
+//
+//   source            where it comes from                 scored attempt?
+//   (none) / daily    Daily Challenge quiz report          yes (daily_stats)
+//   calc              Calculation sprint quiz report       yes (calc_stats)
+//   review            Challenge review-screen report       yes
+//   secret_note       Secret Note review request / issue   NO (local notebook)
+//   topic_practice    Learning-path topic practice         NO (unscored)
+//   exam_prep         Exam prep practice                   NO (unscored)
+const NON_CREDITABLE_SOURCES = new Set(['secret_note', 'topic_practice', 'exam_prep']);
+const isCreditable = (r) => !NON_CREDITABLE_SOURCES.has(r?.source);
+
+const getReportSource = (r) => {
+  switch (r?.source) {
+    case 'secret_note':
+      return r.message?.startsWith('⚠️')
+        ? { label: 'Secret Note · Issue', bg: '#f5f3ff', color: '#6d28d9' }
+        : { label: 'Secret Note · Review', bg: '#f5f3ff', color: '#6d28d9' };
+    case 'review': return { label: 'Challenge Review', bg: '#eff6ff', color: '#1d4ed8' };
+    case 'topic_practice': return { label: 'Topic Practice', bg: '#f0fdf4', color: '#15803d' };
+    case 'exam_prep': return { label: 'Exam Prep', bg: '#fff7ed', color: '#c2410c' };
+    case 'calc': return { label: 'Calculation Sprint', bg: '#fffbeb', color: '#b45309' };
+    case 'daily': return { label: 'Daily Challenge', bg: '#eef2ff', color: '#4338ca' };
+    default:
+      return r?.statCollection === 'calc_stats'
+        ? { label: 'Calculation Sprint', bg: '#fffbeb', color: '#b45309' }
+        : { label: 'Daily Challenge', bg: '#eef2ff', color: '#4338ca' };
+  }
+};
+
+const SourceBadge = ({ report }) => {
+  const meta = getReportSource(report);
+  return (
+    <span style={{ padding: '2px 10px', background: meta.bg, color: meta.color, borderRadius: '12px', fontWeight: 800, fontSize: '0.75rem' }}>
+      {meta.label}
+    </span>
+  );
+};
 
 const ReportsAdmin = () => {
   const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
@@ -140,7 +183,9 @@ const ReportsAdmin = () => {
           (r.questionData?.id && r.questionData.id === question.id)
         )
       );
-      // Delete question and restore credit for all linked reports concurrently.
+      // Delete question and restore credit for all linked CREDITABLE reports
+      // concurrently (non-creditable sources — Secret Note / practice — are
+      // just resolved; they have no scored attempt to restore).
       // Credit restore is best-effort — failures don't block the delete.
       await Promise.all([
         updateDoc(doc(db, 'questions', question.id), { isActive: false }),
@@ -150,7 +195,7 @@ const ReportsAdmin = () => {
           ids: arrayUnion(String(question.id)),
           updatedAt: serverTimestamp(),
         }, { merge: true }),
-        ...linkedReports.map(r => restoreCreditForReport(r).catch(() =>
+        ...linkedReports.map(r => (isCreditable(r) ? restoreCreditForReport(r) : Promise.reject(new Error('not-creditable'))).catch(() =>
           updateDoc(doc(db, 'reports', r.id), { status: 'resolved', resolvedAt: serverTimestamp() })
         )),
       ]);
@@ -252,14 +297,21 @@ const ReportsAdmin = () => {
       }
     }
 
-    // ── Slow fallback: scan all stat docs (rare; catches old reports with no createdAt) ──
-    console.warn('Fast-path miss — falling back to full stat scan for report', report.id);
+    // ── Slow fallback: scan the 30 most recent stat docs (bounded — an
+    // unbounded scan over months of history could exhaust the read quota) ──
+    console.warn('Fast-path miss — falling back to bounded stat scan for report', report.id);
+    const SCAN_LIMIT = 30;
     const attempts = [];
     for (const root of roots) {
       for (const statCollection of statCollections) {
         let snap;
         try {
-          snap = await getDocs(collection(db, root, studentId, statCollection));
+          // Stat doc ids are YYYY-MM-DD date keys, so documentId-desc = newest first.
+          snap = await getDocs(query(
+            collection(db, root, studentId, statCollection),
+            orderBy(documentId(), 'desc'),
+            limit(SCAN_LIMIT),
+          ));
         } catch (err) {
           console.warn(`Skipping ${root}/${statCollection} for report match:`, err?.message);
           continue;
@@ -465,6 +517,10 @@ const ReportsAdmin = () => {
 
   const handleRestoreCredit = async (report) => {
     if (processingId) return;
+    if (!isCreditable(report)) {
+      alert(`This report came from ${getReportSource(report).label}, which has no scored quiz attempt — there are no points to restore. Use "Mark Resolved" instead.`);
+      return;
+    }
     if (report.creditRestored) {
       alert('Credit has already been restored for this report.');
       return;
@@ -528,7 +584,7 @@ const ReportsAdmin = () => {
       await gradeSubmission(item, approved);
     } catch (err) {
       console.error('Error grading submission:', err);
-      alert('Failed to update grade. Please check your connection.');
+      alert(`Failed to update grade: ${err.message || err}`);
     } finally {
       setProcessingId(null);
     }
@@ -550,6 +606,7 @@ const ReportsAdmin = () => {
                 <h3 style={{ margin: '0 0 4px', fontSize: '1.1rem', fontWeight: 800 }}>{report.studentName || 'Student'}</h3>
                 <div style={{ fontSize: '0.85rem', color: '#94a3b8', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
                   <span>{report.createdAt?.toDate ? report.createdAt.toDate().toLocaleDateString() : 'Just now'}</span>
+                  <SourceBadge report={report} />
                   <span style={{ padding: '2px 8px', background: '#f1f5f9', borderRadius: '12px', fontWeight: 600 }}>{report.questionData?.type || 'Multiple Choice'}</span>
                   {(report.questionId || report.questionData?.id) && (
                     <span style={{ padding: '2px 10px', background: '#ede9fe', color: '#6d28d9', borderRadius: '12px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.78rem' }}>
@@ -560,7 +617,7 @@ const ReportsAdmin = () => {
               </div>
               <div style={{ display: 'flex', gap: '8px' }}>
                 <button onClick={() => handleGoToQuestion(report)} style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #e0e7ff', background: 'white', color: '#6366f1', fontWeight: 700, cursor: 'pointer' }}>Go to Question</button>
-                {!report.creditRestored && (
+                {!report.creditRestored && isCreditable(report) && (
                   <button
                     onClick={() => handleRestoreCredit(report)}
                     disabled={!!processingId}
@@ -629,6 +686,9 @@ const ReportsAdmin = () => {
                 </div>
                 <span style={{ padding: '4px 10px', background: '#e0e7ff', color: '#6366f1', borderRadius: '8px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', marginTop: '4px', display: 'inline-block' }}>
                   {item.requiresManualGrading ? 'Manual Grade Required' : item.type}
+                </span>
+                <span style={{ padding: '4px 10px', background: item.challengeType === 'calc' ? '#fffbeb' : item.challengeType === 'exam_prep' ? '#fff7ed' : '#eef2ff', color: item.challengeType === 'calc' ? '#b45309' : item.challengeType === 'exam_prep' ? '#c2410c' : '#4338ca', borderRadius: '8px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', marginTop: '4px', marginLeft: '6px', display: 'inline-block' }}>
+                  {item.challengeType === 'calc' ? 'Calculation Sprint' : item.challengeType === 'exam_prep' ? 'Exam Prep' : 'Daily Challenge'}
                 </span>
               </div>
             </div>
@@ -843,11 +903,12 @@ const ReportsAdmin = () => {
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                  <SourceBadge report={previewReport} />
                   {previewReport.creditRestored ? (
                     <span style={{ padding: '8px 16px', borderRadius: '999px', background: '#f0fdf4', color: '#166534', fontSize: '0.78rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '6px' }}>
                       <CheckCircle size={15} /> Credit Restored
                     </span>
-                  ) : (
+                  ) : isCreditable(previewReport) && (
                     <button
                       onClick={() => handleRestoreCredit(previewReport)}
                       disabled={!!processingId}
@@ -1034,7 +1095,7 @@ const ReportsAdmin = () => {
 
                   {/* Teacher actions */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    {!previewReport.creditRestored && (
+                    {!previewReport.creditRestored && isCreditable(previewReport) && (
                       <button
                         onClick={() => handleRestoreCredit(previewReport)}
                         disabled={!!processingId}
