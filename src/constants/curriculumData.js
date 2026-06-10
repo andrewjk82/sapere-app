@@ -2129,11 +2129,12 @@ export const CURRICULUM_DATA = {
     {
       id: 'y10-16',
       title: 'Chapter 16: Direct and inverse proportion',
-      modules: 3,
+      modules: 4,
       topics: [
         { id: 'y10-16a', code: '16A', title: 'Direct proportion' },
         { id: 'y10-16b', code: '16B', title: 'Inverse proportion' },
-        { id: 'y10-16c', code: '16C', title: 'Proportionality in several variables' }
+        { id: 'y10-16c', code: '16C', title: 'Proportionality in several variables' },
+        { id: 'y10-16d', code: '16D', title: 'Revision' }
       ]
     },
     {
