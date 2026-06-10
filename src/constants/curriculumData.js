@@ -2040,12 +2040,13 @@ export const CURRICULUM_DATA = {
     {
       id: 'y10-14',
       title: 'Chapter 14: Indices, exponentials and logarithms - part 2',
-      modules: 4,
+      modules: 5,
       topics: [
         { id: 'y10-14a', code: '14A', title: 'Logarithm rules' },
         { id: 'y10-14b', code: '14B', title: 'Change of base' },
         { id: 'y10-14c', code: '14C', title: 'Graphs of exponential and logarithm functions' },
-        { id: 'y10-14d', code: '14D', title: 'Applications to science, population growth and finance' }
+        { id: 'y10-14d', code: '14D', title: 'Applications to science, population growth and finance' },
+        { id: 'y10-14e', code: '14E', title: 'Revision' }
       ]
     },
     {
