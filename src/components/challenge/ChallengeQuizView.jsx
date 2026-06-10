@@ -671,7 +671,7 @@ const ChallengeQuizView = ({
                 </button>
               )}
             </div>
-          ) : (currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review') ? (
+          ) : (currentQuestion?.type === 'graph_sketch' || currentQuestion?.type === 'teacher_review' || (currentQuestion?.requiresManualGrading && /(draw|sketch|construct)/i.test(currentQuestion?.question || ''))) ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {/* Inline canvas for mobile / non-split-screen layouts so the
                   student always has somewhere to draw AND the export captures ink */}
@@ -679,7 +679,7 @@ const ChallengeQuizView = ({
                 <ChallengeSketchBoard
                   placement="tablet"
                   questionId={currentQuestion?.id || currentIdx}
-                  questionType={currentQuestion?.type}
+                  questionType={currentQuestion?.type === 'short_answer' ? 'teacher_review' : currentQuestion?.type}
                   isSubmitted={step === 'feedback'}
                   showSplitScreen={true}
                   ref={canvasRef}

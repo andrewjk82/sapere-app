@@ -155,6 +155,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
 
   const q = questions[idx];
   const total = questions.length;
+  const needsTeacher = q ? (q.type === 'teacher_review' || q.type === 'graph_sketch' || q.requiresManualGrading === true) : false;
 
   useEffect(() => {
     if (!q) return;
@@ -201,7 +202,6 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
 
   const submit = () => {
     const userAnswer = draft;
-    const needsTeacher = q?.type === 'teacher_review' || q?.requiresManualGrading === true;
     const { correct } = needsTeacher ? { correct: null } : gradeQuestion(q, userAnswer);
     const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle, pending: needsTeacher }];
     setAnswers(next);
@@ -264,6 +264,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
   const canSubmit = (() => {
     if (q.type === 'multiple_choice') return draft !== null && draft !== undefined;
     if (q.type === 'fill_blank') return Array.isArray(draft) && draft.every((s) => String(s || '').trim() !== '');
+    if (needsTeacher) return true;
     return String(draft || '').trim() !== '';
   })();
 
@@ -494,9 +495,9 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         ref={mathInputRef}
         value={typeof draft === 'string' ? draft : ''}
         onChange={(latex) => { if (!showFeedback) setDraft(latex); }}
-        onEnter={() => { if (String(draft || '').trim() && !showFeedback) submit(); }}
+        onEnter={() => { if ((needsTeacher || String(draft || '').trim()) && !showFeedback) submit(); }}
         readOnly={showFeedback}
-        placeholder="Type your answer…"
+        placeholder={needsTeacher ? "Optional notes (draw on canvas)..." : "Type your answer…"}
         autoFocus
       />
     </div>

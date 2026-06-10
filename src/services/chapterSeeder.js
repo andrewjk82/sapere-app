@@ -72,9 +72,7 @@ const mapSeedQuestion = (raw, chapter) => {
     question: questionText,
     difficulty: raw.difficulty || 'medium',
     timeLimit: raw.timeLimit || 120,
-    // "teacher_review" open prompts are not a UI-renderable type — store them
-    // as short-answer + manual grading so the challenge shows a text input.
-    type: isMC ? 'multiple_choice' : 'short_answer',
+    type: isMC ? 'multiple_choice' : (raw.type || 'short_answer'),
     requiresManualGrading: isOpenReview,
     options,
     answer,
