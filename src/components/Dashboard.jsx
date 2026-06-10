@@ -191,7 +191,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       }
       setSelectedGradingItem(null);
     } catch (err) {
-      showToast('Failed to update grade', 'error');
+      console.error('Error grading submission:', err);
+      showToast(`Failed to update grade: ${err.message || 'connection error'}`, 'error');
     }
   };
 

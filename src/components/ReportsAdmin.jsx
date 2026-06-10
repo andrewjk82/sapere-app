@@ -570,6 +570,17 @@ const ReportsAdmin = () => {
     }
   };
 
+  const handleDeleteReport = async (reportId) => {
+    const confirmed = window.confirm('Delete this report? This cannot be undone.');
+    if (!confirmed) return;
+
+    try {
+      await deleteDoc(doc(db, 'reports', reportId));
+    } catch (err) {
+      console.error('Error deleting report:', err);
+      alert('Failed to delete report. Please try again.');
+    }
+  };
 
   const handleDeleteAllReports = async () => {
     if (reports.length === 0 || isDeletingAll) return;
@@ -648,6 +659,12 @@ const ReportsAdmin = () => {
                 {report.status !== 'resolved' && (
                   <button onClick={() => handleMarkResolved(report.id)} style={{ padding: '8px 16px', borderRadius: '12px', border: 'none', background: '#10b981', color: 'white', fontWeight: 700, cursor: 'pointer' }}>Mark Resolved</button>
                 )}
+                <button
+                  onClick={() => handleDeleteReport(report.id)}
+                  style={{ padding: '8px 16px', borderRadius: '12px', border: '1px solid #fecdd3', background: '#fff1f2', color: '#e11d48', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+                >
+                  <Trash2 size={15} /> Delete
+                </button>
               </div>
             </div>
             <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '12px', color: '#475569', fontStyle: 'italic', fontSize: '1.05rem' }}>"{report.message}"</div>
@@ -1154,6 +1171,12 @@ const ReportsAdmin = () => {
                         <CheckCircle size={17} /> Mark Resolved
                       </button>
                     )}
+                    <button
+                      onClick={() => { handleDeleteReport(previewReport.id); closePreview(); }}
+                      style={{ width: '100%', padding: '14px', borderRadius: '18px', border: '1.5px solid #fecdd3', background: '#fff1f2', color: '#e11d48', fontWeight: 800, fontSize: '0.9rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                    >
+                      <Trash2 size={17} /> Delete Report
+                    </button>
                     <button onClick={closePreview} style={{ width: '100%', padding: '14px', borderRadius: '18px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}>
                       Close
                     </button>

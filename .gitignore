@@ -35,3 +35,4 @@ scratch/
 /patch_*.js
 /test_regex*.js
 /scratch/
+.env*

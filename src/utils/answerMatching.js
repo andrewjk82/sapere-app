@@ -108,6 +108,10 @@ export const evalFractionValue = (value) => {
     .replace(/^\((-?[\d./]+)\)$/, '$1')
     .replace(/[−–—]/g, '-')
     .replace(/\\\$|\$|,/g, '')
+    // Preserve mixed numbers BEFORE stripping whitespace: "1 13/35" → "1+13/35".
+    // Without this, the global whitespace strip below turns "1 13/35" into
+    // "113/35" and the mixed-number branch can never match.
+    .replace(/^\s*(-?\d+)\s+(\d+\s*\/\s*\d+)\s*$/, '$1+$2')
     .replace(/\s+/g, '')   // strip all whitespace so "- 5/6" → "-5/6"
     .trim();
 

@@ -426,7 +426,7 @@ export const updateSeenQuestions = async (uid, questionIds) => {
 };
 
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
-  const targets = buildDailyTargets(studentProfile);
+  let targets = buildDailyTargets(studentProfile);
   const [manualQuestions, recentlySeen] = await Promise.all([
     fetchManualQuestions(targets),
     fetchRecentlySeenQuestionIds(uid),
@@ -435,12 +435,41 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
   // Prefer unseen questions; fall back to full pool if too few remain.
   const unseenManual = manualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
   const poolToUse = unseenManual.length >= questionCount ? unseenManual : manualQuestions;
-  const selectedManual = pickBalancedManualQuestions(poolToUse, questionCount);
+  let selectedManual = pickBalancedManualQuestions(poolToUse, questionCount);
 
   // For Year 1–6 only: fall back to AI-generated questions when seed pool is insufficient.
   const needsAiFallback = targets.assignedYears.every((yr) => (getYearNumber(yr) ?? 99) <= 6);
-  const numAI = needsAiFallback ? Math.max(0, questionCount - selectedManual.length) : 0;
+  let numAI = needsAiFallback ? Math.max(0, questionCount - selectedManual.length) : 0;
+
+  // --- FALLBACK LOGIC FOR SENIOR STUDENTS ---
+  // If no questions were found for the specifically assigned chapters/topics,
+  // fall back to the entire year's curriculum pool.
+  if (selectedManual.length === 0 && numAI === 0) {
+    console.warn("No questions found for assigned chapters. Falling back to entire year's pool...");
+    const fallbackProfile = {
+      ...studentProfile,
+      assignedChapters: [], // Clear specific chapter assignment to force year-wide target pool
+      dailyPracticeConfig: {
+        ...(studentProfile.dailyPracticeConfig || {}),
+        chapters: [], // Clear daily config chapters as well
+      }
+    };
+    try {
+      const fallbackTargets = buildDailyTargets(fallbackProfile);
+      const fallbackManualQuestions = await fetchManualQuestions(fallbackTargets);
+      const fallbackUnseen = fallbackManualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
+      const fallbackPool = fallbackUnseen.length >= questionCount ? fallbackUnseen : fallbackManualQuestions;
+      selectedManual = pickBalancedManualQuestions(fallbackPool, questionCount);
+      
+      // Update targets reference so the returned source metadata matches the actual source of questions
+      targets = fallbackTargets;
+    } catch (fallbackErr) {
+      console.error("Fallback generation failed:", fallbackErr);
+    }
+  }
+
   const aiQuestions = [];
+
 
   if (numAI > 0) {
     const chapters = targets.assignedChapters.length > 0
