@@ -2215,7 +2215,7 @@ export const CURRICULUM_DATA = {
         topics: [
           { id: 'y11a-1A', code: '1A', title: 'Expanding brackets' },
           { id: 'y11a-1B', code: '1B', title: 'Factoring' },
-          { id: 'y11a-1C', code: '1C', title: 'Algebraic fractions' },
+          { id: 'y11a-1c', code: '1C', title: 'Algebraic fractions' },
           { id: 'y11a-1D', code: '1D', title: 'Solving quadratic equations' },
           { id: 'y11a-1E', code: '1E', title: 'Solving simultaneous equations' }
         ]
