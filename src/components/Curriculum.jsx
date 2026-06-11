@@ -2747,7 +2747,7 @@ const Curriculum = () => {
                             <span className="sync-card-badge" style={{ background: yearColors[year]?.bg, color: yearColors[year]?.label }}>
                               {entry.topicCode || entry.chapterId}
                             </span>
-                            <span className="sync-card-title">{entry.topicTitle || entry.label}</span>
+                            <span className="sync-card-title">{entry.label || entry.topicTitle}</span>
                           </div>
                           <div className="sync-card-actions">
                             {count && <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981', marginRight: '8px' }}>✓ Done</span>}
