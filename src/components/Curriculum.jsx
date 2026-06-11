@@ -43,6 +43,7 @@ import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
+import { Y11_CH1E_QUESTIONS } from '../constants/seedYear11Ch1EQuestions.js';
 import { Y11_CH3B_QUESTIONS } from '../constants/seedYear11Ch3BQuestions.js';
 import { Y11_CH3C_QUESTIONS } from '../constants/seedYear11Ch3CQuestions.js';
 import { Y11_CH3D_QUESTIONS } from '../constants/seedYear11Ch3DQuestions.js';
@@ -551,6 +552,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH1D_QUESTIONS,
     label: 'Y11A Ch1 · 1D Solving quadratic equations'
+  },
+  {
+    chapterId: 'y11a-1',
+    chapterTitle: 'Chapter 1: Algebra review',
+    topicId: 'y11a-1E',
+    topicCode: '1E',
+    topicTitle: 'Solving simultaneous equations',
+    year: 'Year 11',
+    seed: Y11_CH1E_QUESTIONS,
+    label: 'Y11A Ch1 · 1E Solving simultaneous equations'
   },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
