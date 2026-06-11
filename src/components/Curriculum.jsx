@@ -534,7 +534,7 @@ const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y11a-1',
     chapterTitle: 'Chapter 1: Algebra review',
-    topicId: 'y11a-1C',
+    topicId: 'y11a-1c',
     topicCode: '1C',
     topicTitle: 'Algebraic fractions',
     year: 'Year 11',
