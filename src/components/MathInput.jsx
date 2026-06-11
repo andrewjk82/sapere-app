@@ -136,7 +136,11 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
       const mf = mfRef.current;
       if (!mf) return;
       mf.focus();
-      mf.insert(latex, options || { focus: true });
+      // Force math mode before inserting. If the field is in text/latex mode
+      // (smartMode can flip it), the template is inserted as literal characters
+      // and the student sees raw "\frac{#?}{#?}" instead of a fraction.
+      try { mf.executeCommand(['switchMode', 'math']); } catch (_) { /* ignore */ }
+      mf.insert(latex, { focus: true, format: 'latex', mode: 'math', ...(options || {}) });
     },
     focus: () => mfRef.current?.focus(),
     getValue: () => mfRef.current?.value ?? '',
