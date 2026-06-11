@@ -88,7 +88,7 @@ if (typeof window !== 'undefined' && MathfieldElement) {
  *   style        inline styles for the field
  * Ref methods: insert(latex), focus(), getValue()
  */
-const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest, readOnly = false, placeholder = '', autoFocus = false, style }, ref) => {
+const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false, placeholder = '', autoFocus = false, style }, ref) => {
   const mfRef = useRef(null);
   // Capture the initial value so we can seed mf.value on mount without
   // making it a reactive dependency (we do NOT want mount effect to re-run).
@@ -99,8 +99,37 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest
   const onEnterRef  = useRef(onEnter);
   useEffect(() => { onChangeRef.current = onChange; }, [onChange]);
   useEffect(() => { onEnterRef.current  = onEnter;  }, [onEnter]);
-  const onFractionRequestRef = useRef(onFractionRequest);
-  useEffect(() => { onFractionRequestRef.current = onFractionRequest; }, [onFractionRequest]);
+
+  // Built-in fraction builder. Every host view's a/b button (and the virtual
+  // keyboard's own fraction key) used to insert an EMPTY-placeholder template
+  // (\frac{#?}{#?}); MathLive's tap/caret navigation inside placeholders is
+  // broken on Android, freezing the keyboard. Instead, ANY attempt to insert
+  // a fraction template opens this builder: native numeric inputs (OS
+  // keyboard), then the COMPLETE \frac{n}{d} is inserted in one step.
+  const [frac, setFrac] = useState(null); // null | { whole, num, den }
+  const fracNumRef = useRef(null);
+  const fracDenRef = useRef(null);
+  const openFracBuilder = () => {
+    try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
+    try { mfRef.current?.blur(); } catch (_) { /* ignore */ }
+    setFrac({ whole: '', num: '', den: '' });
+    setTimeout(() => fracNumRef.current?.focus(), 80);
+  };
+  const openFracBuilderRef = useRef(openFracBuilder);
+  openFracBuilderRef.current = openFracBuilder;
+  const cancelFrac = () => setFrac(null);
+  const commitFrac = () => {
+    const whole = (frac?.whole || '').trim();
+    const num = (frac?.num || '').trim();
+    const den = (frac?.den || '').trim();
+    setFrac(null);
+    if (!num || !den) return;
+    const mf = mfRef.current;
+    if (!mf) return;
+    mf.focus();
+    try { mf.executeCommand(['switchMode', 'math']); } catch (_) { /* ignore */ }
+    mf.insert(`${whole}\\frac{${num}}{${den}}`, { focus: true, format: 'latex', mode: 'math' });
+  };
 
   // Track whether the current mf.value change originated from the user
   // (input event) so the sync effect doesn't fight MathLive mid-keystroke.
@@ -137,6 +166,11 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest
     insert: (latex, options) => {
       const mf = mfRef.current;
       if (!mf) return;
+      // Fraction templates never go into the field — open the builder instead.
+      if (typeof latex === 'string' && latex.includes('\\frac') && latex.includes('#?')) {
+        openFracBuilderRef.current?.();
+        return;
+      }
       mf.focus();
       // Force math mode before inserting. If the field is in text/latex mode
       // (smartMode can flip it), the template is inserted as literal characters
@@ -249,13 +283,12 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest
         if (sel === 'deleteBackward') { smartBackspace(); return true; }
         // The virtual keyboard's own fraction key inserts an EMPTY-placeholder
         // template (\frac{#@}{#?}) — the exact structure whose tap/caret
-        // navigation is broken on Android and froze the keyboard. When the
-        // host provides a fraction builder, reroute ANY fraction-template
-        // insert to it so no empty placeholder is ever created.
+        // navigation is broken on Android and froze the keyboard. Reroute ANY
+        // fraction-template insert to the built-in builder so no empty
+        // placeholder is ever created.
         if (sel === 'insert' && typeof arr[1] === 'string'
-            && arr[1].includes('\\frac') && arr[1].includes('#?')
-            && onFractionRequestRef.current) {
-          try { onFractionRequestRef.current(); } catch (_) { /* ignore */ }
+            && arr[1].includes('\\frac') && arr[1].includes('#?')) {
+          try { openFracBuilderRef.current?.(); } catch (_) { /* ignore */ }
           return true;
         }
         return orig(command);
@@ -318,6 +351,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest
     if (mf.value !== value) {
       mf.value = value;
     }
+    if (value === '') setFrac(null);   // new question — close the builder too
   }, [value]);
 
   // Placeholder sync.
@@ -344,8 +378,74 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest
     return () => clearTimeout(t);
   }, [autoFocus]);
 
+  // Focus synchronously on pointerdown: tapping the next box while the OS
+  // keyboard is open blurs the current input, the closing keyboard shifts the
+  // layout, and the tap's focus never lands on the box.
+  const grabFocus = (e) => { e.preventDefault(); e.currentTarget.focus(); };
+  const fracBoxStyle = {
+    width: '72px', height: '48px', textAlign: 'center', fontSize: '1.3rem',
+    fontWeight: 700, borderRadius: '12px', border: '2px solid #a78bfa',
+    background: '#fff', color: '#1e293b', outline: 'none',
+  };
+
   return (
     <div style={{ position: 'relative', width: '100%' }}>
+      {frac && !readOnly && (
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '14px', padding: '14px', marginBottom: '10px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
+          <input
+            value={frac.whole}
+            onChange={(e) => setFrac((f) => ({ ...f, whole: e.target.value.replace(/[^0-9-]/g, '') }))}
+            onPointerDown={grabFocus}
+            inputMode="numeric"
+            enterKeyHint="next"
+            placeholder="0"
+            aria-label="Whole number (optional)"
+            style={{ ...fracBoxStyle, width: '56px', borderStyle: 'dashed', opacity: frac.whole ? 1 : 0.7 }}
+          />
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
+            <input
+              ref={fracNumRef}
+              value={frac.num}
+              onChange={(e) => setFrac((f) => ({ ...f, num: e.target.value.replace(/[^0-9-]/g, '') }))}
+              onKeyDown={(e) => { if (e.key === 'Enter') fracDenRef.current?.focus(); }}
+              onPointerDown={grabFocus}
+              inputMode="numeric"
+              enterKeyHint="next"
+              aria-label="Numerator"
+              style={fracBoxStyle}
+            />
+            <div style={{ width: '72px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
+            <input
+              ref={fracDenRef}
+              value={frac.den}
+              onChange={(e) => setFrac((f) => ({ ...f, den: e.target.value.replace(/[^0-9-]/g, '') }))}
+              onKeyDown={(e) => { if (e.key === 'Enter') commitFrac(); }}
+              onPointerDown={grabFocus}
+              inputMode="numeric"
+              enterKeyHint="done"
+              aria-label="Denominator"
+              style={fracBoxStyle}
+            />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <button
+              type="button"
+              onClick={commitFrac}
+              disabled={!frac.num.trim() || !frac.den.trim()}
+              style={{ height: '44px', padding: '0 18px', borderRadius: '12px', border: 'none', background: (!frac.num.trim() || !frac.den.trim()) ? '#c4b5fd' : '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+            >
+              Add ✓
+            </button>
+            <button
+              type="button"
+              onClick={cancelFrac}
+              style={{ height: '36px', padding: '0 18px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
       <math-field
         ref={mfRef}
         style={{

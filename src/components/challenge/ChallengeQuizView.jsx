@@ -207,42 +207,10 @@ const ChallengeQuizView = ({
   // Fullscreen image zoom (for graph-choice options that are hard to see small)
   const [zoomImage, setZoomImage] = useState(null);
 
-  // Fraction input mode: triggered when user types "/"
-  const [fracMode, setFracMode] = useState(false);
-  const [fracWhole, setFracWhole] = useState('');
-  const [fracNum, setFracNum] = useState('');
-  const [fracDen, setFracDen] = useState('');
-  const fracDenRef = useRef(null);
-  const fracNumRef = useRef(null);
-  const fracWholeRef = useRef(null);
+  // Fraction entry is handled by MathInput's built-in fraction builder:
+  // inserting any \frac template (toolbar a/b or the virtual keyboard's own
+  // fraction key) opens native numeric inputs instead of empty placeholders.
   const mathInputRef = useRef(null);
-  useEffect(() => { setFracMode(false); setFracWhole(''); setFracNum(''); setFracDen(''); }, [currentIdx]);
-
-  // Fraction builder: native inputs (OS keyboard) build the whole fraction,
-  // then it is inserted into the math field as one COMPLETE \frac — no empty
-  // placeholder boxes, so none of MathLive's Android tap/caret problems apply.
-  const openFractionBuilder = () => {
-    try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
-    // Blur the mathfield too — under the 'auto' policy a still-focused field
-    // re-opens the MathLive keyboard and fights the native inputs for focus.
-    try { document.activeElement?.blur?.(); } catch (_) { /* ignore */ }
-    setFracWhole(''); setFracNum(''); setFracDen('');
-    setFracMode(true);
-    setTimeout(() => fracNumRef.current?.focus(), 80);
-  };
-  const cancelFraction = () => {
-    setFracMode(false);
-    setFracWhole(''); setFracNum(''); setFracDen('');
-  };
-  const commitFraction = () => {
-    const whole = fracWhole.trim();
-    const num = fracNum.trim();
-    const den = fracDen.trim();
-    if (!num || !den) { cancelFraction(); return; }
-    const latex = `${whole ? `${whole}` : ''}\\frac{${num}}{${den}}`;
-    cancelFraction();
-    mathInputRef.current?.insert(latex);
-  };
 
   const scrollLeftColumnBy = (deltaY) => {
     const node = leftColumnRef.current;
@@ -653,11 +621,7 @@ const ChallengeQuizView = ({
                       // the math field first, so on Android the re-focus from
                       // insert() retriggers the keyboard priming cycle and the
                       // caret gets kicked out of the fraction placeholder.
-                      onPointerDown={(e) => {
-                        e.preventDefault();
-                        if (b.label === 'a/b') { openFractionBuilder(); return; }
-                        mathInputRef.current?.insert(b.latex);
-                      }}
+                      onPointerDown={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
                       title={b.title}
                       style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
                     >
@@ -666,81 +630,11 @@ const ChallengeQuizView = ({
                   ))}
                 </div>
               )}
-              {fracMode && !isFeedback && (() => {
-                // Focus synchronously on pointerdown: tapping the next box while
-                // the OS keyboard is open blurs the current input, the keyboard
-                // starts closing and the layout shifts — so the tap's click/focus
-                // never lands on the box ("can't move to the denominator").
-                const grabFocus = (e) => { e.preventDefault(); e.currentTarget.focus(); };
-                const boxStyle = {
-                  width: '72px', height: '48px', textAlign: 'center', fontSize: '1.3rem',
-                  fontWeight: 700, borderRadius: '12px', border: '2px solid #a78bfa',
-                  background: '#fff', color: '#1e293b', outline: 'none',
-                };
-                return (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '14px', padding: '14px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-                    <input
-                      ref={fracWholeRef}
-                      value={fracWhole}
-                      onChange={(e) => setFracWhole(e.target.value.replace(/[^0-9-]/g, ''))}
-                      onPointerDown={grabFocus}
-                      inputMode="numeric"
-                      enterKeyHint="next"
-                      placeholder="0"
-                      aria-label="Whole number (optional)"
-                      style={{ ...boxStyle, width: '56px', borderStyle: 'dashed', opacity: fracWhole ? 1 : 0.7 }}
-                    />
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
-                      <input
-                        ref={fracNumRef}
-                        value={fracNum}
-                        onChange={(e) => setFracNum(e.target.value.replace(/[^0-9-]/g, ''))}
-                        onKeyDown={(e) => { if (e.key === 'Enter') fracDenRef.current?.focus(); }}
-                        onPointerDown={grabFocus}
-                        inputMode="numeric"
-                        enterKeyHint="next"
-                        aria-label="Numerator"
-                        style={boxStyle}
-                      />
-                      <div style={{ width: '72px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
-                      <input
-                        ref={fracDenRef}
-                        value={fracDen}
-                        onChange={(e) => setFracDen(e.target.value.replace(/[^0-9-]/g, ''))}
-                        onKeyDown={(e) => { if (e.key === 'Enter') commitFraction(); }}
-                        onPointerDown={grabFocus}
-                        inputMode="numeric"
-                        enterKeyHint="done"
-                        aria-label="Denominator"
-                        style={boxStyle}
-                      />
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                      <button
-                        type="button"
-                        onClick={commitFraction}
-                        disabled={!fracNum.trim() || !fracDen.trim()}
-                        style={{ height: '44px', padding: '0 18px', borderRadius: '12px', border: 'none', background: (!fracNum.trim() || !fracDen.trim()) ? '#c4b5fd' : '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
-                      >
-                        Add ✓
-                      </button>
-                      <button
-                        type="button"
-                        onClick={cancelFraction}
-                        style={{ height: '36px', padding: '0 18px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  </div>
-                );
-              })()}
               <MathInput
                 ref={mathInputRef}
                 value={step === 'feedback' ? (userAnswers[currentIdx] || '') : (selectedOption || '')}
                 onChange={(latex) => { if (step !== 'feedback') setSelectedOption(latex); }}
                 onEnter={() => { if (selectedOption) handleAnswer(selectedOption); }}
-                onFractionRequest={openFractionBuilder}
                 readOnly={isFeedback}
                 placeholder="Type your answer…  (use the buttons for √ and fractions)"
                 autoFocus
