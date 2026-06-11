@@ -726,6 +726,7 @@ const ChallengeQuizView = ({
                 value={step === 'feedback' ? (userAnswers[currentIdx] || '') : (selectedOption || '')}
                 onChange={(latex) => { if (step !== 'feedback') setSelectedOption(latex); }}
                 onEnter={() => { if (selectedOption) handleAnswer(selectedOption); }}
+                onFractionRequest={openFractionBuilder}
                 readOnly={isFeedback}
                 placeholder="Type your answer…  (use the buttons for √ and fractions)"
                 autoFocus

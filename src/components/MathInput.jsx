@@ -88,7 +88,7 @@ if (typeof window !== 'undefined' && MathfieldElement) {
  *   style        inline styles for the field
  * Ref methods: insert(latex), focus(), getValue()
  */
-const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false, placeholder = '', autoFocus = false, style }, ref) => {
+const MathInput = forwardRef(({ value = '', onChange, onEnter, onFractionRequest, readOnly = false, placeholder = '', autoFocus = false, style }, ref) => {
   const mfRef = useRef(null);
   // Capture the initial value so we can seed mf.value on mount without
   // making it a reactive dependency (we do NOT want mount effect to re-run).
@@ -99,6 +99,8 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
   const onEnterRef  = useRef(onEnter);
   useEffect(() => { onChangeRef.current = onChange; }, [onChange]);
   useEffect(() => { onEnterRef.current  = onEnter;  }, [onEnter]);
+  const onFractionRequestRef = useRef(onFractionRequest);
+  useEffect(() => { onFractionRequestRef.current = onFractionRequest; }, [onFractionRequest]);
 
   // Track whether the current mf.value change originated from the user
   // (input event) so the sync effect doesn't fight MathLive mid-keystroke.
@@ -238,10 +240,24 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
       const orig = inner.executeCommand.bind(inner);
       rawExecRef.current = orig;
       inner.executeCommand = (command) => {
-        const sel = Array.isArray(command)
-          ? (command[0] === 'performWithFeedback' ? command[1] : command[0])
-          : command;
+        // Normalise the command shape: may be 'cmd', ['cmd', ...args] or
+        // ['performWithFeedback', ['cmd', ...args]] / ['performWithFeedback', 'cmd', ...args].
+        let arr = Array.isArray(command) ? command : [command];
+        if (arr[0] === 'performWithFeedback') arr = arr.slice(1);
+        if (Array.isArray(arr[0])) arr = arr[0];
+        const sel = arr[0];
         if (sel === 'deleteBackward') { smartBackspace(); return true; }
+        // The virtual keyboard's own fraction key inserts an EMPTY-placeholder
+        // template (\frac{#@}{#?}) — the exact structure whose tap/caret
+        // navigation is broken on Android and froze the keyboard. When the
+        // host provides a fraction builder, reroute ANY fraction-template
+        // insert to it so no empty placeholder is ever created.
+        if (sel === 'insert' && typeof arr[1] === 'string'
+            && arr[1].includes('\\frac') && arr[1].includes('#?')
+            && onFractionRequestRef.current) {
+          try { onFractionRequestRef.current(); } catch (_) { /* ignore */ }
+          return true;
+        }
         return orig(command);
       };
       inner.__smartDeleteWrapped = true;
