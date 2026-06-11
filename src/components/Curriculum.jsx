@@ -41,6 +41,7 @@ import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQues
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
+import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH3B_QUESTIONS } from '../constants/seedYear11Ch3BQuestions.js';
 import { Y11_CH3C_QUESTIONS } from '../constants/seedYear11Ch3CQuestions.js';
 import { Y11_CH3D_QUESTIONS } from '../constants/seedYear11Ch3DQuestions.js';
@@ -529,6 +530,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH1B_QUESTIONS,
     label: 'Y11A Ch1 · 1B Factoring'
+  },
+  {
+    chapterId: 'y11a-1',
+    chapterTitle: 'Chapter 1: Algebra review',
+    topicId: 'y11a-1C',
+    topicCode: '1C',
+    topicTitle: 'Algebraic fractions',
+    year: 'Year 11',
+    seed: Y11_CH1C_QUESTIONS,
+    label: 'Y11A Ch1 · 1C Algebraic fractions'
   },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
