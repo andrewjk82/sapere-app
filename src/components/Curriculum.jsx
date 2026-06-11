@@ -40,6 +40,7 @@ import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
+import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH3B_QUESTIONS } from '../constants/seedYear11Ch3BQuestions.js';
 import { Y11_CH3C_QUESTIONS } from '../constants/seedYear11Ch3CQuestions.js';
 import { Y11_CH3D_QUESTIONS } from '../constants/seedYear11Ch3DQuestions.js';
@@ -510,6 +511,16 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16b', topicCode: '16B', topicTitle: 'Inverse proportion', year: 'Year 10', seed: Y10_CH16B_QUESTIONS, label: 'Y10 Ch16 · 16B Inverse proportion' },
   { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16c', topicCode: '16C', topicTitle: 'Proportionality in several variables', year: 'Year 10', seed: Y10_CH16C_QUESTIONS, label: 'Y10 Ch16 · 16C Proportionality in several variables' },
   { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16d', topicCode: '16D', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH16D_QUESTIONS, label: 'Y10 Ch16 · 16D Revision' },
+  {
+    chapterId: 'y11a-1',
+    chapterTitle: 'Chapter 1: Algebra review',
+    topicId: 'y11a-1B',
+    topicCode: '1B',
+    topicTitle: 'Factoring',
+    year: 'Year 11',
+    seed: Y11_CH1B_QUESTIONS,
+    label: 'Y11A Ch1 · 1B Factoring'
+  },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3B', topicCode: '3B', topicTitle: 'Functions, relations, and graphs', year: 'Year 11', seed: Y11_CH3B_QUESTIONS, label: 'Y11A Ch3 · 3B Functions, relations, and graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3C', topicCode: '3C', topicTitle: 'Review of linear graphs', year: 'Year 11', seed: Y11_CH3C_QUESTIONS, label: 'Y11A Ch3 · 3C Review of linear graphs' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3D', topicCode: '3D', topicTitle: 'Quadratic functions — factoring and the graph', year: 'Year 11', seed: Y11_CH3D_QUESTIONS, label: 'Y11A Ch3 · 3D Quadratic functions — factoring and the graph' },
