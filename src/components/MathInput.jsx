@@ -104,16 +104,16 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
   // keyboard's own fraction key) used to insert an EMPTY-placeholder template
   // (\frac{#?}{#?}); MathLive's tap/caret navigation inside placeholders is
   // broken on Android, freezing the keyboard. Instead, ANY attempt to insert
-  // a fraction template opens this builder: native numeric inputs (OS
-  // keyboard), then the COMPLETE \frac{n}{d} is inserted in one step.
+  // a fraction template opens this builder. It uses its OWN compact digit pad
+  // (no focus, no OS keyboard — the OS keyboard covered half the tablet), and
+  // the COMPLETE \frac{n}{d} is inserted in one step.
   const [frac, setFrac] = useState(null); // null | { whole, num, den }
-  const fracNumRef = useRef(null);
-  const fracDenRef = useRef(null);
+  const [fracActive, setFracActive] = useState('num'); // which box digits go to
   const openFracBuilder = () => {
     try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
     try { mfRef.current?.blur(); } catch (_) { /* ignore */ }
     setFrac({ whole: '', num: '', den: '' });
-    setTimeout(() => fracNumRef.current?.focus(), 80);
+    setFracActive('num');
   };
   const openFracBuilderRef = useRef(openFracBuilder);
   openFracBuilderRef.current = openFracBuilder;
@@ -374,68 +374,89 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     return () => clearTimeout(t);
   }, [autoFocus]);
 
-  // Focus synchronously on pointerdown: tapping the next box while the OS
-  // keyboard is open blurs the current input, the closing keyboard shifts the
-  // layout, and the tap's focus never lands on the box.
-  const grabFocus = (e) => { e.preventDefault(); e.currentTarget.focus(); };
-  const fracBoxStyle = {
-    width: '72px', height: '48px', textAlign: 'center', fontSize: '1.3rem',
-    fontWeight: 700, borderRadius: '12px', border: '2px solid #a78bfa',
-    background: '#fff', color: '#1e293b', outline: 'none',
-  };
+  // Builder helpers — its own digit pad writes into the active box, so no
+  // element ever takes focus and no keyboard (OS or MathLive) is involved.
+  const fracTap = (d) => setFrac((f) => {
+    if (!f) return f;
+    const cur = f[fracActive] || '';
+    if (d === '⌫') return { ...f, [fracActive]: cur.slice(0, -1) };
+    if (cur.length >= 4) return f;
+    return { ...f, [fracActive]: cur + d };
+  });
+  const fracBox = (field, extra = {}) => ({
+    width: '64px', height: '44px', display: 'flex', alignItems: 'center',
+    justifyContent: 'center', fontSize: '1.25rem', fontWeight: 700,
+    borderRadius: '10px', background: '#fff', color: '#1e293b',
+    border: fracActive === field ? '3px solid #7c3aed' : '2px solid #c4b5fd',
+    boxShadow: fracActive === field ? '0 0 0 3px rgba(124,58,237,0.18)' : 'none',
+    cursor: 'pointer', userSelect: 'none', ...extra,
+  });
 
   return (
     <div style={{ position: 'relative', width: '100%' }}>
       {frac && !readOnly && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '14px', padding: '14px', marginBottom: '10px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-          <input
-            value={frac.whole}
-            onChange={(e) => setFrac((f) => ({ ...f, whole: e.target.value.replace(/[^0-9-]/g, '') }))}
-            onPointerDown={grabFocus}
-            inputMode="numeric"
-            enterKeyHint="next"
-            placeholder="0"
-            aria-label="Whole number (optional)"
-            style={{ ...fracBoxStyle, width: '56px', borderStyle: 'dashed', opacity: frac.whole ? 1 : 0.7 }}
-          />
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
-            <input
-              ref={fracNumRef}
-              value={frac.num}
-              onChange={(e) => setFrac((f) => ({ ...f, num: e.target.value.replace(/[^0-9-]/g, '') }))}
-              onKeyDown={(e) => { if (e.key === 'Enter') fracDenRef.current?.focus(); }}
-              onPointerDown={grabFocus}
-              inputMode="numeric"
-              enterKeyHint="next"
-              aria-label="Numerator"
-              style={fracBoxStyle}
-            />
-            <div style={{ width: '72px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
-            <input
-              ref={fracDenRef}
-              value={frac.den}
-              onChange={(e) => setFrac((f) => ({ ...f, den: e.target.value.replace(/[^0-9-]/g, '') }))}
-              onKeyDown={(e) => { if (e.key === 'Enter') commitFrac(); }}
-              onPointerDown={grabFocus}
-              inputMode="numeric"
-              enterKeyHint="done"
-              aria-label="Denominator"
-              style={fracBoxStyle}
-            />
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: '16px', padding: '12px', marginBottom: '10px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div
+              role="button"
+              aria-label="Whole number (optional)"
+              onPointerDown={(e) => { e.preventDefault(); setFracActive('whole'); }}
+              style={fracBox('whole', { width: '50px', borderStyle: frac.whole ? 'solid' : 'dashed', opacity: frac.whole || fracActive === 'whole' ? 1 : 0.6 })}
+            >
+              {frac.whole || ''}
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
+              <div
+                role="button"
+                aria-label="Numerator"
+                onPointerDown={(e) => { e.preventDefault(); setFracActive('num'); }}
+                style={fracBox('num')}
+              >
+                {frac.num || ''}
+              </div>
+              <div style={{ width: '64px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
+              <div
+                role="button"
+                aria-label="Denominator"
+                onPointerDown={(e) => { e.preventDefault(); setFracActive('den'); }}
+                style={fracBox('den')}
+              >
+                {frac.den || ''}
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 44px)', gap: '6px' }}>
+            {['1', '2', '3', '4', '5', '6', '7', '8', '9', '⌫', '0', '−'].map((k) => (
+              <button
+                key={k}
+                type="button"
+                onPointerDown={(e) => {
+                  e.preventDefault();
+                  if (k === '−') {
+                    setFrac((f) => f && { ...f, [fracActive]: (f[fracActive] || '').startsWith('-') ? f[fracActive].slice(1) : `-${f[fracActive] || ''}` });
+                  } else {
+                    fracTap(k);
+                  }
+                }}
+                style={{ width: '44px', height: '40px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', padding: 0 }}
+              >
+                {k}
+              </button>
+            ))}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <button
               type="button"
-              onClick={commitFrac}
+              onPointerDown={(e) => { e.preventDefault(); commitFrac(); }}
               disabled={!frac.num.trim() || !frac.den.trim()}
-              style={{ height: '44px', padding: '0 18px', borderRadius: '12px', border: 'none', background: (!frac.num.trim() || !frac.den.trim()) ? '#c4b5fd' : '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
+              style={{ height: '44px', padding: '0 16px', borderRadius: '12px', border: 'none', background: (!frac.num.trim() || !frac.den.trim()) ? '#c4b5fd' : '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
             >
               Add ✓
             </button>
             <button
               type="button"
-              onClick={cancelFrac}
-              style={{ height: '36px', padding: '0 18px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}
+              onPointerDown={(e) => { e.preventDefault(); cancelFrac(); }}
+              style={{ height: '36px', padding: '0 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}
             >
               Cancel
             </button>
