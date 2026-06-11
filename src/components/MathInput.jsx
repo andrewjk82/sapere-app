@@ -266,11 +266,27 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
         onEnterRef.current?.();
       }
     };
+    // Android tap-to-place fails inside fraction placeholder boxes: the student
+    // fills the numerator, taps the empty denominator box, and the caret never
+    // lands there — so every following key is dropped and the keyboard looks
+    // frozen. As long as an EMPTY placeholder remains, route any tap on the
+    // field to the next empty placeholder (and make sure the field is focused
+    // so the virtual keyboard has a target again).
+    const handlePointerUp = () => {
+      if (mf.readOnly) return;
+      try {
+        if (/\\placeholder\{\}/.test(mf.value || '')) {
+          mf.focus();
+          mf.executeCommand('moveToNextPlaceholder');
+        }
+      } catch (_) { /* ignore */ }
+    };
     // Keep our ⌨/✕ button icon in sync with the keyboard's real visibility.
     const kb = typeof window !== 'undefined' ? window.mathVirtualKeyboard : null;
     const handleKbToggle = () => setKbVisible(!!kb?.visible);
     mf.addEventListener('input', handleInput);
     mf.addEventListener('keydown', handleKeydown);
+    mf.addEventListener('pointerup', handlePointerUp);
     mf.addEventListener('focusin', handleFocusIn);
     kb?.addEventListener('virtual-keyboard-toggle', handleKbToggle);
     // Belt-and-suspenders: wrap the inner delete as soon as it materialises,
@@ -279,6 +295,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     return () => {
       mf.removeEventListener('input', handleInput);
       mf.removeEventListener('keydown', handleKeydown);
+      mf.removeEventListener('pointerup', handlePointerUp);
       mf.removeEventListener('focusin', handleFocusIn);
       kb?.removeEventListener('virtual-keyboard-toggle', handleKbToggle);
     };
