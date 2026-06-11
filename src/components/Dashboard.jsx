@@ -201,7 +201,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
   // profile comes from the shared ProfileContext — no per-component listener.
 
-  const userName = profile?.firstName || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
+  // firstName may hold a full name ("Anna de Xavier") — greet with the given name only
+  const userName = profile?.firstName?.trim().split(/\s+/)[0] || user?.displayName?.split(' ')[0] || user?.email?.split('@')[0] || 'Andrew';
 
   const handleGrade = async (status) => {
     if (!selectedGradingItem) return;

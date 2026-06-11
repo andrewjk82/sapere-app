@@ -729,7 +729,9 @@ function App() {
       || user?.displayName?.split(' ')[0]
       || user?.email?.split('@')[0]
       || 'Andrew';
-    return rawName ? rawName.charAt(0).toUpperCase() + rawName.slice(1) : 'Andrew';
+    // firstName may hold a full name ("Anna de Xavier") — greet with the given name only
+    const givenName = String(rawName).trim().split(/\s+/)[0] || 'Andrew';
+    return givenName.charAt(0).toUpperCase() + givenName.slice(1);
   }, [profile?.displayName, profile?.firstName, user?.displayName, user?.email]);
 
   const introGreeting = useMemo(() => getTimeGreeting(), []);
