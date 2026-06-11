@@ -5,7 +5,7 @@ import { MathfieldElement } from 'mathlive';
 if (typeof window !== 'undefined' && MathfieldElement) {
   // Serve KaTeX/MathLive sounds+fonts from the CDN (no local asset copying).
   try {
-    MathfieldElement.fontsDirectory = 'https://cdn.jsdelivr.net/npm/mathlive@0.109.2/dist/fonts';
+    MathfieldElement.fontsDirectory = 'https://cdn.jsdelivr.net/npm/mathlive@0.110.0/dist/fonts';
     MathfieldElement.soundsDirectory = null; // silence keypress sounds
   } catch (_) { /* ignore */ }
 
@@ -213,14 +213,10 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     const isAndroid = typeof navigator !== 'undefined' && /android/i.test(navigator.userAgent);
     const handleFocusIn = () => {
       wrapInnerDelete();   // inner mathfield exists once focused — wrap its delete
-      // Don't yank the caret to the end while the field contains empty
-      // placeholder boxes (a fraction/root just inserted via the a/b or √
-      // button): moving to the end would kick the caret OUT of the numerator
-      // slot, so the next digits would land after the fraction instead of
-      // inside it. Only normalise the caret when there are no placeholders.
-      if (!/\\placeholder/.test(mf.value || '')) {
-        try { mf.executeCommand('moveToMathfieldEnd'); } catch (_) { /* ignore */ }
-      }
+      // NOTE: we deliberately do NOT touch the caret here. focusin also fires
+      // when the student taps the field to position the caret (e.g. tapping
+      // outside a √ to type after it), and any programmatic caret move here
+      // overrides the tap and traps the student inside structures.
       // Android only: the first time the virtual keyboard opens in a session,
       // the field↔keyboard connection isn't ready yet, so the first keystroke
       // is dropped — and the student discovered that closing & reopening fixes
@@ -460,6 +456,43 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
           ...style,
         }}
       />
+      {!readOnly && kbVisible && (() => {
+        // Caret escape hatch: on some Android devices MathLive's tap-to-place
+        // caret does nothing, so once the caret is inside a √ or fraction the
+        // student can never type after it. These arrows ALWAYS move the caret
+        // through/out of structures, independent of tap handling.
+        const navStyle = (right) => ({
+          position: 'absolute', right, bottom: '10px', width: '40px', height: '34px',
+          borderRadius: '9px', border: '1px solid #c7d2fe', background: '#eef2ff',
+          color: '#4f46e5', cursor: 'pointer', display: 'flex', alignItems: 'center',
+          justifyContent: 'center', fontSize: '16px', lineHeight: 1, padding: 0, fontWeight: 800,
+        });
+        const move = (cmd) => {
+          const mf = mfRef.current;
+          if (!mf) return;
+          try { mf.focus(); mf.executeCommand(cmd); } catch (_) { /* ignore */ }
+        };
+        return (
+          <>
+            <button
+              type="button"
+              aria-label="Move cursor left"
+              onPointerDown={(e) => { e.preventDefault(); move('moveToPreviousChar'); }}
+              style={navStyle('100px')}
+            >
+              ◀
+            </button>
+            <button
+              type="button"
+              aria-label="Move cursor right"
+              onPointerDown={(e) => { e.preventDefault(); move('moveToNextChar'); }}
+              style={navStyle('54px')}
+            >
+              ▶
+            </button>
+          </>
+        );
+      })()}
       {!readOnly && (
         <button
           type="button"
