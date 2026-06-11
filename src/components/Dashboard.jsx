@@ -8,8 +8,9 @@ import { useToast } from '../context/ToastContext';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { useProfile } from '../context/ProfileContext';
 import { db } from '../firebase/config';
-import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
+import { doc, onSnapshot, setDoc, updateDoc, deleteDoc, getDoc, getDocs, increment, serverTimestamp, collection, addDoc, query, where, or, orderBy, limit } from 'firebase/firestore';
 import { gradeSubmission } from '../services/gradingService';
+import { localCache } from '../services/localCacheService';
 
 import AvatarPickerModal from './AvatarPickerModal';
 import AdminDashboard from './AdminDashboard';
@@ -43,19 +44,42 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [isSeedingLeaderboard, setIsSeedingLeaderboard] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  // Fetch student daily stats for insights
+  // Fetch student daily stats for insights. Stat docs are heavy (full question
+  // arrays) and insights only change when a new challenge is submitted, so
+  // read once per day per device (date-keyed cache) instead of subscribing.
   useEffect(() => {
-    if (!user?.uid || isAdmin) return;
+    if (!user?.uid || isAdmin) return undefined;
+    const today = new Date().toLocaleDateString('en-CA');
+    const cacheKey = `dashboard-insights-${user.uid}`;
+    const cached = localCache.get(cacheKey);
+    if (cached?.date === today && Array.isArray(cached.stats)) {
+      setDailyStats(cached.stats);
+      return undefined;
+    }
+    let cancelled = false;
     const statsQuery = query(
       collection(db, 'users', user.uid, 'daily_stats'),
       orderBy('timestamp', 'desc'),
       limit(7)
     );
-    const unsub = onSnapshot(statsQuery, (snap) => {
-      const stats = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    getDocs(statsQuery).then((snap) => {
+      if (cancelled) return;
+      // Keep only the fields learningInsights reads — full stat docs carry
+      // question arrays/sketches too large for the localStorage cache.
+      const stats = snap.docs.map((d) => {
+        const data = d.data();
+        return {
+          id: d.id,
+          userAnswers: data.userAnswers,
+          questions: Array.isArray(data.questions)
+            ? data.questions.map((q) => ({ type: q?.type, answer: q?.answer }))
+            : data.questions,
+        };
+      });
       setDailyStats(stats);
-    });
-    return () => unsub();
+      localCache.set(cacheKey, { date: today, stats });
+    }).catch((err) => console.warn('insights stats fetch failed:', err?.code || err));
+    return () => { cancelled = true; };
   }, [user?.uid, isAdmin]);
 
   const learningInsights = useMemo(() => {

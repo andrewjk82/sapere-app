@@ -1220,6 +1220,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
         // saves are best-effort so large payloads never turn completion into a
         // false "Session Ended" state.
         await setDoc(ref, record, { merge: true });
+        // New stat → today's Dashboard insights cache is stale; drop it so the
+        // next Dashboard visit re-reads fresh stats.
+        try { localCache.remove(`dashboard-insights-${user.uid}`); } catch (_) { /* non-fatal */ }
         if (detailSnapshot) {
           try {
             await setDoc(doc(db, 'users', user.uid, statColName, today, 'detail_snapshot', 'main'), detailSnapshot, { merge: true });

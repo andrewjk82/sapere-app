@@ -20,6 +20,7 @@ import {
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { geometryToSvgDataUrl } from '../utils/geometrySvg';
+import { syncQuestionIndexOnSave, removeQuestionFromIndex } from '../services/questionIndexService';
 
 const QUESTION_PAGE_SIZE = 10;
 const questionBankSessionCache = new Map();
@@ -1580,14 +1581,20 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             console.error('Failed to sync local seed file:', err);
           }
         }
-      } else {
+      }
+      let savedQuestionId = editingQuestion;
+      if (!editingQuestion) {
         payload.createdAt = serverTimestamp();
-        await addDoc(collection(db, 'questions'), payload);
+        const newRef = await addDoc(collection(db, 'questions'), payload);
+        savedQuestionId = newRef.id;
       }
       await setDoc(doc(db, 'sync_meta', 'questions'), {
         version: Date.now(),
         updatedAt: serverTimestamp(),
       }, { merge: true });
+      // Keep the per-chapter random-sampling index in sync (non-fatal).
+      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, isActive: true })
+        .catch((err) => console.warn('question index sync failed:', err?.code || err));
 
       questionBankSessionCache.delete(`questions:${chapterId}`);
       await loadQuestionPage({ reset: true });
@@ -1611,6 +1618,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         isActive: false,
         updatedAt: serverTimestamp(),
       });
+      removeQuestionFromIndex(chapterId, id)
+        .catch((err) => console.warn('question index sync failed:', err?.code || err));
       // Resolve all open reports linked to this question.
       // Query both questionId field and questionData.id (some reports store ID only in questionData).
       const [snap1, snap2] = await Promise.all([

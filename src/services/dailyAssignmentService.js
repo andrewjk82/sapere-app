@@ -1,7 +1,9 @@
 import {
   arrayUnion,
+  arrayRemove,
   collection,
   doc,
+  documentId,
   getDoc,
   getDocs,
   limit,
@@ -11,6 +13,7 @@ import {
   deleteDoc,
   where,
 } from "firebase/firestore";
+import { readChapterIndex } from "./questionIndexService";
 import { db } from "../firebase/config";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import {
@@ -207,7 +210,17 @@ const slimQuestion = (data) => ({
   isManual: data.isManual !== false,
 });
 
-const shuffle = (items) => [...items].sort(() => Math.random() - 0.5);
+// Fisher-Yates — the old `sort(() => Math.random() - 0.5)` is biased and
+// leaves much of the input order intact, which (combined with Firestore's
+// deterministic default doc-ID ordering) made low-ID questions repeat.
+const shuffle = (items) => {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
 
 const buildDailyTargets = (studentProfile = {}) => {
   const config = studentProfile.dailyPracticeConfig || {};
@@ -348,60 +361,142 @@ const pickBalancedManualQuestions = (manualQuestions, questionCount) => {
   return selected;
 };
 
-const fetchManualQuestions = async (targets) => {
-  const qRef = collection(db, "questions");
-
-  // Group chapter IDs by year to ensure each assigned year gets queried.
-  // This prevents a student assigned to Year 5 + Year 6 + Year 7 (all chapters)
-  // from only hitting Year 5/6 chapters due to a flat slice limit.
+// Chapters the assignment will draw from today (≤6 per assigned year).
+const pickChaptersToQuery = (targets) => {
   const chaptersByYear = {};
   Array.from(targets.targetChapterIds).forEach((chapterId) => {
     const yr = CHAPTER_YEAR_MAP[chapterId] || "unknown";
     if (!chaptersByYear[yr]) chaptersByYear[yr] = [];
     chaptersByYear[yr].push(chapterId);
   });
-
-  // Pick up to 6 chapters per year (max ~36 total queries across 6 years).
   const MAX_PER_YEAR = 6;
-  const chaptersToQuery = Object.values(chaptersByYear).flatMap((ids) =>
+  return Object.values(chaptersByYear).flatMap((ids) =>
     shuffle([...ids]).slice(0, MAX_PER_YEAR),
   );
-
-  const docs = (await Promise.all(
-    chaptersToQuery.map(async (chapterId) => {
-      const snap = await getDocs(query(qRef, where("chapterId", "==", chapterId), limit(100)));
-      return snap.docs.map((item) => ({ id: item.id, ...item.data() }));
-    }),
-  )).flat();
-
-  return docs
-    .map(slimQuestion)
-    .filter((question) => filterManualQuestion(question, targets));
 };
 
-// ISO week key: "YYYY-WNN" — resets the seen-question list every Monday.
-const getWeekKey = (date = new Date()) => {
-  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  const day = d.getUTCDay() || 7; // Mon=1 … Sun=7
-  d.setUTCDate(d.getUTCDate() + 4 - day); // shift to Thursday of the same week (ISO standard)
-  const year = d.getUTCFullYear();
-  const week = Math.ceil(((d - Date.UTC(year, 0, 1)) / 86400000 + 1) / 7);
-  return `${year}-W${String(week).padStart(2, "0")}`;
+// Legacy path for chapters that have no question_index doc yet: random-window
+// query so even unindexed chapters rotate through their pool instead of
+// always returning the deterministic first 100 docs.
+const fetchChapterQuestionsLegacy = async (chapterId, fetchLimit = 100) => {
+  const qRef = collection(db, "questions");
+  const randomKey = doc(qRef).id; // random auto-ID = uniform random start point
+  const snap = await getDocs(query(
+    qRef,
+    where("chapterId", "==", chapterId),
+    where(documentId(), ">=", randomKey),
+    limit(fetchLimit),
+  ));
+  let docs = snap.docs.map((item) => ({ id: item.id, ...item.data() }));
+  if (docs.length < fetchLimit) {
+    // Wrap around to the start of the ID range for the remainder.
+    const wrapSnap = await getDocs(query(
+      qRef,
+      where("chapterId", "==", chapterId),
+      where(documentId(), "<", randomKey),
+      limit(fetchLimit - docs.length),
+    ));
+    docs = docs.concat(wrapSnap.docs.map((item) => ({ id: item.id, ...item.data() })));
+  }
+  return docs;
+};
+
+// Fetch specific questions by ID (Firestore `in` allows 30 IDs per query).
+const fetchQuestionsByIds = async (ids) => {
+  const qRef = collection(db, "questions");
+  const batches = [];
+  for (let i = 0; i < ids.length; i += 30) {
+    batches.push(ids.slice(i, i + 30));
+  }
+  const snaps = await Promise.all(
+    batches.map((batch) => getDocs(query(qRef, where(documentId(), "in", batch)))),
+  );
+  return snaps.flatMap((snap) => snap.docs.map((item) => ({ id: item.id, ...item.data() })));
+};
+
+/**
+ * Uniform-random, seen-aware question selection.
+ *
+ * Per chapter: read the ID index (1 doc), drop IDs the student has already
+ * seen, and shuffle the remainder. If a chapter's pool is exhausted the
+ * chapter recycles — every ID becomes available again and its seen entries
+ * are queued for pruning so the seen doc stays bounded.
+ *
+ * Candidate IDs are then drawn round-robin across chapters (balanced spread,
+ * like the old pickBalancedManualQuestions) with a small over-sample buffer,
+ * and only those candidates are fetched from Firestore.
+ */
+const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen = new Set() } = {}) => {
+  const chaptersToQuery = pickChaptersToQuery(targets);
+  const pruneIds = [];
+
+  const chapterPools = await Promise.all(chaptersToQuery.map(async (chapterId) => {
+    const index = await readChapterIndex(chapterId);
+    if (!index) return { chapterId, ids: null }; // no index yet → legacy
+    const all = index.ids;
+    let unseen = all.filter((id) => !recentlySeen.has(String(id)));
+    if (unseen.length === 0 && all.length > 0) {
+      // Whole chapter completed — start a new cycle and prune its seen IDs.
+      unseen = all;
+      pruneIds.push(...all.filter((id) => recentlySeen.has(String(id))));
+    }
+    return { chapterId, ids: shuffle(unseen) };
+  }));
+
+  // Round-robin draw across chapters with ~50% over-sample so that questions
+  // failing the year/chapter filter below can be replaced without re-reading.
+  const sampleTarget = Math.min(
+    chapterPools.reduce((sum, p) => sum + (p.ids ? p.ids.length : 0), 0),
+    Math.ceil(questionCount * 1.5) + 2,
+  );
+  const candidateIds = [];
+  let round = 0;
+  let drained = false;
+  while (candidateIds.length < sampleTarget && !drained) {
+    drained = true;
+    for (const pool of shuffle(chapterPools)) {
+      if (pool.ids && pool.ids[round]) {
+        candidateIds.push(pool.ids[round]);
+        drained = false;
+        if (candidateIds.length >= sampleTarget) break;
+      }
+    }
+    round += 1;
+  }
+
+  // Indexed chapters: fetch only the sampled IDs.
+  const indexedDocs = candidateIds.length ? await fetchQuestionsByIds(candidateIds) : [];
+  // Preserve the balanced round-robin order of the sample.
+  const orderById = new Map(candidateIds.map((id, i) => [String(id), i]));
+  indexedDocs.sort((a, b) => (orderById.get(String(a.id)) ?? 0) - (orderById.get(String(b.id)) ?? 0));
+
+  // Unindexed chapters: legacy random-window fallback.
+  const legacyChapters = chapterPools.filter((p) => p.ids === null).map((p) => p.chapterId);
+  const legacyDocs = (await Promise.all(
+    legacyChapters.map((chapterId) => fetchChapterQuestionsLegacy(chapterId)),
+  )).flat();
+
+  const questions = [...indexedDocs, ...legacyDocs]
+    .filter((data) => data.isActive !== false)
+    .map(slimQuestion)
+    .filter((question) => filterManualQuestion(question, targets));
+
+  return { questions, pruneIds };
 };
 
 const seenQuestionsRef = (uid) => doc(db, "users", uid, "seen_questions", "current_week");
 
-// Returns a Set of question IDs the student has seen this week (1 Firestore read).
+// Returns the Set of question IDs the student has seen (1 Firestore read).
+// Cumulative — entries are pruned per chapter only when that chapter's whole
+// pool has been exhausted and recycles, so a student keeps getting NEW
+// questions until they've genuinely run out.
 const fetchRecentlySeenQuestionIds = async (uid) => {
   const seen = new Set();
   if (!uid) return seen;
   try {
     const snap = await getDoc(seenQuestionsRef(uid));
     if (!snap.exists()) return seen;
-    const data = snap.data();
-    // If stored week is different from current week the data is stale — ignore it.
-    if (data.weekKey !== getWeekKey()) return seen;
-    (data.questionIds || []).forEach((id) => seen.add(String(id)));
+    (snap.data().questionIds || []).forEach((id) => seen.add(String(id)));
   } catch {
     // permission denied or network error — skip silently
   }
@@ -413,10 +508,8 @@ export const updateSeenQuestions = async (uid, questionIds) => {
   if (!uid || !Array.isArray(questionIds) || questionIds.length === 0) return;
   const ids = questionIds.filter(Boolean).map(String);
   if (ids.length === 0) return;
-  const weekKey = getWeekKey();
   try {
     await setDoc(seenQuestionsRef(uid), {
-      weekKey,
       questionIds: arrayUnion(...ids),
       updatedAt: serverTimestamp(),
     }, { merge: true });
@@ -425,17 +518,53 @@ export const updateSeenQuestions = async (uid, questionIds) => {
   }
 };
 
+// Removes recycled chapters' IDs so the seen doc stays bounded by the number
+// of active questions the student is currently assigned.
+const pruneSeenQuestions = async (uid, ids) => {
+  if (!uid || !Array.isArray(ids) || ids.length === 0) return;
+  try {
+    await setDoc(seenQuestionsRef(uid), {
+      questionIds: arrayRemove(...ids.map(String)),
+      updatedAt: serverTimestamp(),
+    }, { merge: true });
+  } catch (err) {
+    console.warn("pruneSeenQuestions failed (non-critical):", err?.code || err);
+  }
+};
+
+// Stable content hash for generated questions so they get an ID — enabling
+// seen-tracking and within-quiz de-duplication for the procedural pool too.
+const hashGeneratedQuestion = (question) => {
+  const text = `${question?.question || ""}|${question?.answer ?? ""}`;
+  let h = 5381;
+  for (let i = 0; i < text.length; i += 1) {
+    h = ((h << 5) + h + text.charCodeAt(i)) | 0; // djb2
+  }
+  return `gen-${(h >>> 0).toString(36)}`;
+};
+
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
   let targets = buildDailyTargets(studentProfile);
-  const [manualQuestions, recentlySeen] = await Promise.all([
-    fetchManualQuestions(targets),
-    fetchRecentlySeenQuestionIds(uid),
-  ]);
+  const recentlySeen = await fetchRecentlySeenQuestionIds(uid);
+  const { questions: manualQuestions, pruneIds } = await fetchManualQuestions(
+    targets,
+    { questionCount, recentlySeen },
+  );
 
-  // Prefer unseen questions; fall back to full pool if too few remain.
+  // Recycled chapters: clear their seen entries so the next cycle is tracked
+  // fresh (fire-and-forget — selection already treated them as unseen).
+  if (uid && pruneIds.length) pruneSeenQuestions(uid, pruneIds);
+
+  // The pool is already seen-filtered, uniformly sampled, and chapter-balanced
+  // (legacy-fallback chapters excepted); prefer unseen for those too, then top
+  // up with seen ones instead of the old all-or-nothing fallback.
   const unseenManual = manualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
-  const poolToUse = unseenManual.length >= questionCount ? unseenManual : manualQuestions;
-  let selectedManual = pickBalancedManualQuestions(poolToUse, questionCount);
+  const seenManual = manualQuestions.filter((q) => recentlySeen.has(String(q.id)));
+  const poolToUse = [
+    ...pickBalancedManualQuestions(unseenManual, questionCount),
+    ...pickBalancedManualQuestions(seenManual, questionCount),
+  ];
+  let selectedManual = poolToUse.slice(0, questionCount);
 
   // For Year 1–6 only: fall back to AI-generated questions when seed pool is insufficient.
   const needsAiFallback = targets.assignedYears.every((yr) => (getYearNumber(yr) ?? 99) <= 6);
@@ -456,11 +585,18 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
     };
     try {
       const fallbackTargets = buildDailyTargets(fallbackProfile);
-      const fallbackManualQuestions = await fetchManualQuestions(fallbackTargets);
+      const { questions: fallbackManualQuestions, pruneIds: fallbackPrunes } = await fetchManualQuestions(
+        fallbackTargets,
+        { questionCount, recentlySeen },
+      );
+      if (uid && fallbackPrunes.length) pruneSeenQuestions(uid, fallbackPrunes);
       const fallbackUnseen = fallbackManualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
-      const fallbackPool = fallbackUnseen.length >= questionCount ? fallbackUnseen : fallbackManualQuestions;
-      selectedManual = pickBalancedManualQuestions(fallbackPool, questionCount);
-      
+      const fallbackSeen = fallbackManualQuestions.filter((q) => recentlySeen.has(String(q.id)));
+      selectedManual = [
+        ...pickBalancedManualQuestions(fallbackUnseen, questionCount),
+        ...pickBalancedManualQuestions(fallbackSeen, questionCount),
+      ].slice(0, questionCount);
+
       // Update targets reference so the returned source metadata matches the actual source of questions
       targets = fallbackTargets;
     } catch (fallbackErr) {
@@ -475,6 +611,9 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
     const chapters = targets.assignedChapters.length > 0
       ? targets.assignedChapters
       : Array.from(targets.targetChapterIds);
+    // Track content hashes so the same generated question can't appear twice
+    // in one quiz, and recently-seen generated questions get regenerated.
+    const usedIds = new Set(selectedManual.map((q) => String(q.id)));
     for (let i = 0; i < numAI; i++) {
       const difficulty = (() => {
         const mix = studentProfile?.difficultyMix || DEFAULT_DIFFICULTY_MIX;
@@ -483,13 +622,27 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
         if (rand < (mix.easy ?? 0.3) + (mix.medium ?? 0.5)) return "medium";
         return "hard";
       })();
-      aiQuestions.push(generateQuestion({
-        year: targets.assignedYears,
-        course: targets.assignedCourses,
-        assignedChapters: [chapters[i % chapters.length]],
-        assignedTopics: targets.assignedTopics,
-        difficulty,
-      }));
+      let candidate = null;
+      // A few retries: prefer a question that is neither a duplicate within
+      // this quiz nor one the student has recently seen; accept a duplicate
+      // of "seen" (but never within-quiz) as a last resort.
+      for (let attempt = 0; attempt < 5; attempt += 1) {
+        const generated = generateQuestion({
+          year: targets.assignedYears,
+          course: targets.assignedCourses,
+          assignedChapters: [chapters[(i + attempt) % chapters.length]],
+          assignedTopics: targets.assignedTopics,
+          difficulty,
+        });
+        const id = hashGeneratedQuestion(generated);
+        if (usedIds.has(id)) continue;
+        candidate = { ...generated, id };
+        if (!recentlySeen.has(id)) break; // fresh — done; else keep trying
+      }
+      if (candidate) {
+        usedIds.add(String(candidate.id));
+        aiQuestions.push(candidate);
+      }
     }
   }
 

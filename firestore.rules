@@ -46,6 +46,13 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Per-chapter question ID index (question_index/{chapterId}) — lets the
+    // daily assignment sample uniformly at random without scanning the bank.
+    match /question_index/{chapterId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
     // Reports — students can file (create), admin manages
     match /reports/{reportId} {
       allow read: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
@@ -132,6 +139,13 @@ service cloud.firestore {
       }
 
       match /chapterProgress/{progressId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
+      // Seen-question tracking for daily assignment de-duplication. Without
+      // this match the subcollection was unreachable and the seen filter
+      // silently never worked.
+      match /seen_questions/{docId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 

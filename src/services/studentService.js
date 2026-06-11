@@ -218,8 +218,13 @@ export const studentService = {
         source: 'manual',
         ...doc.data()
       }));
-      localCache.set(getStudentsCacheKey(tutorId, isAdmin), {
-        version: Date.now(),
+      // Preserve the sync_meta-matched version if one is cached — stamping
+      // Date.now() here would defeat the version gate that lets the next tab
+      // open skip the full users collection scan.
+      const cacheKey = getStudentsCacheKey(tutorId, isAdmin);
+      const prevVersion = localCache.get(cacheKey)?.version;
+      localCache.set(cacheKey, {
+        version: prevVersion || Date.now(),
         savedAt: Date.now(),
         students: mergeDuplicateStudentRecords(manualStudents, registeredStudents),
       });
@@ -234,6 +239,23 @@ export const studentService = {
       const fetchRegistered = async () => {
         try {
           const { getDocs } = await import('firebase/firestore');
+          // Version-gated like getStudents(): if the cached roster matches the
+          // sync_meta version, reuse its registered students (1 read) instead
+          // of re-scanning the whole users collection on every tab open.
+          try {
+            const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
+            const remoteVersion = metaVersionOf(metaSnap.data());
+            const cached = localCache.get(getStudentsCacheKey(tutorId, isAdmin));
+            if (remoteVersion > 0 && cached?.version === remoteVersion && Array.isArray(cached?.students)) {
+              const cachedRegistered = cached.students.filter(s => s.source === 'registered');
+              if (cachedRegistered.length) {
+                if (cancelled) return;
+                registeredStudents = cachedRegistered;
+                updateAll();
+                return;
+              }
+            }
+          } catch (_) { /* fall through to full fetch */ }
           const snap = await getDocs(collection(db, "users"));
           if (cancelled) return;
           registeredStudents = snap.docs

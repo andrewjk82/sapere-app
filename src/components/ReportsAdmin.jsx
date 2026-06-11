@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, where, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { collection, query, orderBy, onSnapshot, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { useAdminFeed } from '../context/AdminFeedContext';
+import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
 import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench } from 'lucide-react';
@@ -58,9 +60,11 @@ const SourceBadge = ({ report }) => {
 const ReportsAdmin = () => {
   const [viewMode, setViewMode] = useState('reports'); // 'reports' | 'grading'
   const [reports, setReports] = useState([]);
-  const [gradingQueue, setGradingQueue] = useState([]); // Added missing state
+  // Pending grading items come from the shared AdminFeedContext listener —
+  // opening this screen must not add a second grading_queue subscription.
+  const { pendingGrading: gradingQueue } = useAdminFeed();
   const [reportsLoading, setReportsLoading] = useState(true);
-  const [gradingLoading, setGradingLoading] = useState(true);
+  const gradingLoading = false;
   const [editingQuestion, setEditingQuestion] = useState(null);
   const [previewReport, setPreviewReport] = useState(null);
   const [previewQuestion, setPreviewQuestion] = useState(null);
@@ -110,25 +114,8 @@ const ReportsAdmin = () => {
       setReportsLoading(false);
     });
 
-    // Listen for Grading Queue
-    const qGrading = query(
-      collection(db, 'grading_queue'),
-      where('status', '==', 'pending'),
-      orderBy('submittedAt', 'desc'),
-      limit(ADMIN_REPORT_LIMIT)
-    );
-    const unsubGrading = onSnapshot(qGrading, (snapshot) => {
-      const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
-      setGradingQueue(data);
-      setGradingLoading(false);
-    }, (err) => {
-      console.error("Grading subscription error:", err);
-      setGradingLoading(false);
-    });
-
     return () => {
       unsubReports();
-      unsubGrading();
     };
   }, []);
 
@@ -190,6 +177,7 @@ const ReportsAdmin = () => {
       // Credit restore is best-effort — failures don't block the delete.
       await Promise.all([
         updateDoc(doc(db, 'questions', question.id), { isActive: false }),
+        removeQuestionFromIndex(question.chapterId, question.id).catch(() => {}),
         // Add to the Secret-Note blocklist so students' locally-saved copies of
         // this broken question are purged on their next app load.
         setDoc(doc(db, 'system_config', 'secretNoteBlocklist'), {

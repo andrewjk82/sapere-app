@@ -21,6 +21,7 @@ const QB_QUICK_INSERTS = [
   { label: '( )', latex: '(#?)', title: 'Brackets' },
 ];
 import { useToast } from '../context/ToastContext';
+import { removeQuestionFromIndex } from '../services/questionIndexService';
 
 /**
  * Full-page question-bank browser for a single chapter+topic.
@@ -86,6 +87,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     if (!window.confirm(`Delete this question (${q.id})?`)) return;
     try {
       await updateDoc(doc(db, 'questions', q.id), { isActive: false, updatedAt: serverTimestamp() });
+      removeQuestionFromIndex(q.chapterId || chapter?.id, q.id)
+        .catch((err) => console.warn('question index sync failed:', err?.code || err));
       // Bump the global questions sync_meta so chapter-card counts on the
       // Curriculum page refresh on next visit instead of staying stale.
       await setDoc(doc(db, 'sync_meta', 'questions'), {

@@ -35,7 +35,14 @@ import {
   query,
   where,
   limit,
+  orderBy,
+  documentId,
 } from "firebase/firestore";
+
+// Stat docs are date-keyed (YYYY-MM-DD) and grow by 1-2/day per student, so an
+// unbounded subscription costs more reads every week. 60 recent docs ≈ 2 months
+// of history — enough for every panel; XP recalculation still scans everything.
+const STAT_HISTORY_LIMIT = 60;
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from "../services/leaderboardService";
 import {
   fetchHscResultsIncremental,
@@ -706,7 +713,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     const buildListener = (colPath, statLabel) => {
       const unsubDaily = onSnapshot(
-        collection(db, colPath, "daily_stats"),
+        query(collection(db, colPath, "daily_stats"), orderBy(documentId(), "desc"), limit(STAT_HISTORY_LIMIT)),
         (snap) => {
           snap.docs.forEach((d) => {
             const key = `daily_stats:${d.id}`;
@@ -726,7 +733,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         (err) => console.warn(`daily_stats listener error (${statLabel}):`, err?.code)
       );
       const unsubCalc = onSnapshot(
-        collection(db, colPath, "calc_stats"),
+        query(collection(db, colPath, "calc_stats"), orderBy(documentId(), "desc"), limit(STAT_HISTORY_LIMIT)),
         (snap) => {
           snap.docs.forEach((d) => {
             const key = `calc_stats:${d.id}`;

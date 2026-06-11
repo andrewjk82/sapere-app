@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useAuth } from './context/AuthContext';
 import { useToast } from './context/ToastContext';
+import { useProfile } from './context/ProfileContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -307,6 +308,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = 
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
+  const { profile: sharedProfile } = useProfile();
   const { showToast } = useToast();
 
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
@@ -382,6 +384,16 @@ function App() {
     };
   }, [isAdmin, user, showToast]);
   
+  // Question-index freshness: if the question bank changed outside the
+  // incremental hooks (e.g. legacy import tools that only bump sync_meta),
+  // rebuild the per-chapter sampling indexes once per admin session.
+  useEffect(() => {
+    if (!user?.uid || !isAdmin) return;
+    import('./services/questionIndexService')
+      .then(({ ensureQuestionIndexFresh }) => ensureQuestionIndexFresh())
+      .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
+  }, [user?.uid, isAdmin]);
+
   // Secret-Note blocklist: when a teacher flags a broken question, purge any
   // locally-saved copy from this student's Secret Note(s). Live subscription so
   // it clears immediately even while the student is using the app.
@@ -400,16 +412,17 @@ function App() {
   //  - secretNoteApprovals → graduate (remove) the approved note locally
   //  - examPrepApprovals   → count the approved answer as correct in local stats
   // Applied live, then the queue fields are cleared so they run exactly once.
+  // Reads the shared ProfileContext snapshot instead of opening a second
+  // onSnapshot on the same users/{uid} doc (every profile write was billed 2×).
   useEffect(() => {
-    if (!user?.uid || isAdmin) return undefined;
+    if (!user?.uid || isAdmin || !sharedProfile) return undefined;
     const ref = doc(db, 'users', user.uid);
-    return onSnapshot(ref, (snap) => {
-      if (!snap.exists()) return;
-      const data = snap.data();
+    {
+      const data = sharedProfile;
       const noteApprovals = data.secretNoteApprovals;
       const examApprovals = data.examPrepApprovals;
       const examRejections = data.examPrepRejections;
-      if (!Array.isArray(noteApprovals) && !Array.isArray(examApprovals) && !Array.isArray(examRejections)) return;
+      if (!Array.isArray(noteApprovals) && !Array.isArray(examApprovals) && !Array.isArray(examRejections)) return undefined;
       const clear = {};
       try {
         if (Array.isArray(noteApprovals) && noteApprovals.length) {
@@ -434,8 +447,9 @@ function App() {
       if (Object.keys(clear).length) {
         updateDoc(ref, clear).catch(() => {});
       }
-    }, () => { /* ignore permission/transient errors */ });
-  }, [user?.uid, isAdmin, showToast]);
+    }
+    return undefined;
+  }, [user?.uid, isAdmin, sharedProfile, showToast]);
 
   // Real-time Version Check
   useEffect(() => {

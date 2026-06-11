@@ -12,7 +12,7 @@ import { encodeSvgDataUrl } from '../utils/geometrySvg';
  * NEVER adds, removes, or mutates $ or \( delimiters — 
  * the database already stores correct LaTeX.
  */
-const toDisplayText = (value, fallback = '') => {
+const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   if (value === null || value === undefined) return fallback;
 
   let str = '';
@@ -119,7 +119,10 @@ const toDisplayText = (value, fallback = '') => {
   //   - the trailing (?![\d.,]*[a-zA-Z^]) ensures "$3x^2$" / "$5y$" stay MATH:
   //     a number followed by a letter/caret is algebra, not money.
   const CURRENCY_PLACEHOLDER = '\uE000';
-  str = str.replace(/(?<!\$)\$(?!\$)(\s*\d[\d.,]*)(?=\s+[a-zA-Z]|\s*$|\s*[.,)])/g, CURRENCY_PLACEHOLDER + '$1');
+  // Number must be consumed whole (no backtracking into "$10" + ".75") and a
+  // following arithmetic operator (+ \u2212 = ? etc.) is still money, not algebra:
+  // generator questions like "$10.75 + $7.75 = ?" must keep BOTH dollar signs.
+  str = str.replace(/(?<!\$)\$(?!\$)(\s*\d+(?:[.,]\d+)*)(?![\d.,]?[a-zA-Z^])(?=\s+[a-zA-Z]|\s*$|\s*[.,)?]|\s*[-+\u2212\u2013=<>])/g, CURRENCY_PLACEHOLDER + '$1');
 
   // 4. Tokenize to separate Math Blocks from Plain Text
   // This prevents wrapping commands that are already inside $...$ or \(...\)
@@ -197,15 +200,18 @@ const toDisplayText = (value, fallback = '') => {
   str = parts2.join('');
 
   // 5. Final cleanup: If entire string is equation
-  if (!str.includes('$') && !str.includes('\\(') && !str.includes('\\[') && str.includes('=') && !/[a-zA-Z]{3,}/.test(str)) {
+  if (!str.includes('$') && !str.includes(CURRENCY_PLACEHOLDER) && !str.includes('\\(') && !str.includes('\\[') && str.includes('=') && !/[a-zA-Z]{3,}/.test(str)) {
     str = `$${str.trim()}$`;
   }
 
   // Cleanup potential artifact from messy DB entries: $$$ -> $$
   str = str.replace(/\$\$\$/g, '$$');
 
-  // Restore currency dollar signs protected from the tokenizer.
-  str = str.replace(/\uE000/g, '$');
+  // Restore currency dollar signs protected from the tokenizer. For HTML
+  // consumers, isolate each "$" in its own <span> so KaTeX auto-render
+  // (which has NO currency/escape handling) can never pair two currency
+  // dollars in the same text node into a spurious math block.
+  str = str.replace(/\uE000/g, currencyHtml ? '<span>$</span>' : '$');
 
   return str;
 };
@@ -315,7 +321,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     lines.forEach((line, idx) => {
       const childEl = el.querySelector(`.math-view-line-${idx}`);
       if (childEl) {
-        childEl.innerHTML = toDisplayText(line);
+        childEl.innerHTML = toDisplayText(line, '', { currencyHtml: true });
       }
     });
 
