@@ -173,7 +173,14 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     const isAndroid = typeof navigator !== 'undefined' && /android/i.test(navigator.userAgent);
     const handleFocusIn = () => {
       wrapInnerDelete();   // inner mathfield exists once focused — wrap its delete
-      try { mf.executeCommand('moveToMathfieldEnd'); } catch (_) { /* ignore */ }
+      // Don't yank the caret to the end while the field contains empty
+      // placeholder boxes (a fraction/root just inserted via the a/b or √
+      // button): moving to the end would kick the caret OUT of the numerator
+      // slot, so the next digits would land after the fraction instead of
+      // inside it. Only normalise the caret when there are no placeholders.
+      if (!/\\placeholder/.test(mf.value || '')) {
+        try { mf.executeCommand('moveToMathfieldEnd'); } catch (_) { /* ignore */ }
+      }
       // Android only: the first time the virtual keyboard opens in a session,
       // the field↔keyboard connection isn't ready yet, so the first keystroke
       // is dropped — and the student discovered that closing & reopening fixes

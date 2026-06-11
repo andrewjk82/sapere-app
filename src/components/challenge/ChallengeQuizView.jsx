@@ -641,7 +641,11 @@ const ChallengeQuizView = ({
                     <button
                       key={b.label}
                       type="button"
-                      onClick={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
+                      // pointerdown + preventDefault: onClick lets the tap blur
+                      // the math field first, so on Android the re-focus from
+                      // insert() retriggers the keyboard priming cycle and the
+                      // caret gets kicked out of the fraction placeholder.
+                      onPointerDown={(e) => { e.preventDefault(); mathInputRef.current?.insert(b.latex); }}
                       title={b.title}
                       style={{ minWidth: '48px', height: '44px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', boxShadow: '0 2px 6px rgba(0,0,0,0.03)', fontFamily: '"KaTeX_Main", "Times New Roman", serif' }}
                     >
