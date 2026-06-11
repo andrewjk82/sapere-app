@@ -11,6 +11,7 @@ import {
   ArrowRight,
   BookLock,
   GraduationCap,
+  Play,
 } from 'lucide-react';
 import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
@@ -226,6 +227,9 @@ const TestRow = ({
   onReview,
   note,
   onOpenNote,
+  lessons = [],
+  lessonsLabel = '',
+  onOpenLesson,
 }) => {
   const done = state === 'completed';
   const ended = state === 'abandoned';
@@ -261,6 +265,31 @@ const TestRow = ({
           )}
         </div>
       </div>
+      {lessons.length > 0 && (
+        <div className="cs__lessons">
+          <div className="cs__lessons-head">
+            <GraduationCap size={17} />
+            <span className="cs__lessons-title">Learn the path first</span>
+            {lessonsLabel && <span className="cs__lessons-sub"> · {lessonsLabel}</span>}
+          </div>
+          <div className="cs__lessons-grid">
+            {lessons.map((lesson, idx) => (
+              <button
+                key={lesson.title}
+                type="button"
+                className="cs__lesson-tile"
+                onClick={() => onOpenLesson?.(lesson)}
+              >
+                <div className="cs__lesson-toprow">
+                  <span className="cs__lesson-play"><Play size={18} fill="currentColor" /></span>
+                  <span className="cs__lesson-mins">{4 + idx} min</span>
+                </div>
+                <div className="cs__lesson-name">{lesson.title}</div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
       <SecretNoteStrip kind={kind} note={note} onOpen={onOpenNote} />
     </div>
   );
@@ -452,41 +481,10 @@ const ChallengeStartView = ({
               onReview={() => onViewHistory?.('calc')}
               note={calcNote}
               onOpenNote={onOpenSecretNote}
+              lessons={clockLessons}
+              lessonsLabel="reading a clock"
+              onOpenLesson={setPreviewLesson}
             />
-          )}
-          {calculationEnabled && clockLessons.length > 0 && (
-            <div
-              style={{
-                borderRadius: '18px',
-                border: '1.5px solid #fde68a',
-                background: 'linear-gradient(135deg,#fffbeb,#fef3c7)',
-                padding: '14px 18px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '10px',
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, fontSize: '0.85rem', color: '#92400e' }}>
-                <GraduationCap size={16} /> Learn before you sprint — reading a clock
-              </div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                {clockLessons.map((lesson) => (
-                  <button
-                    key={lesson.title}
-                    onClick={() => setPreviewLesson(lesson)}
-                    style={{
-                      display: 'inline-flex', alignItems: 'center', gap: '6px',
-                      padding: '8px 14px', borderRadius: '100px',
-                      border: '1.5px solid #fbbf24', background: '#fff',
-                      color: '#92400e', fontWeight: 700, fontSize: '0.8rem',
-                      cursor: 'pointer',
-                    }}
-                  >
-                    {lesson.emoji} {lesson.title} <ArrowRight size={13} />
-                  </button>
-                ))}
-              </div>
-            </div>
           )}
         </div>
 
@@ -719,6 +717,48 @@ const challengeStartStyles = `
   }
 
   /* Secret Note footer — gradient CTA, same button size as above */
+  .cs__lessons {
+    padding: 16px 18px 18px;
+    border-top: 1px solid #eef0f6;
+  }
+  .cs__lessons-head {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 12px;
+    color: #6d28d9;
+  }
+  .cs__lessons-title { font-weight: 800; font-size: 0.98rem; color: #1e1b4b; }
+  .cs__lessons-sub { font-weight: 700; font-size: 0.95rem; color: #8b7cc8; }
+  .cs__lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .cs__lesson-tile {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+    padding: 18px;
+    border: 1.5px solid #ece9fb;
+    border-radius: 18px;
+    background: #f7f5fd;
+    cursor: pointer;
+    text-align: left;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .cs__lesson-tile:hover {
+    transform: translateY(-2px);
+    border-color: #c4b5fd;
+    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.12);
+  }
+  .cs__lesson-toprow { display: flex; align-items: center; gap: 12px; }
+  .cs__lesson-play {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 46px; height: 46px; border-radius: 14px;
+    background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(124, 58, 237, 0.3);
+  }
+  .cs__lesson-play svg { margin-left: 2px; }
+  .cs__lesson-mins { font-weight: 800; font-size: 1rem; color: #7c3aed; }
+  .cs__lesson-name { font-weight: 800; font-size: 1.05rem; color: #1e1b4b; line-height: 1.35; }
   .cs__note-strip {
     display: flex; align-items: center; gap: 12px; width: 100%;
     padding: 13px 18px; cursor: pointer; text-align: left;
