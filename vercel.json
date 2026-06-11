@@ -9,6 +9,10 @@
     {
       "path": "/api/cron-unified",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/quota-check",
+      "schedule": "30 10 * * *"
     }
   ],
   "headers": [
