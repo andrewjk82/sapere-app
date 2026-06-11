@@ -223,6 +223,9 @@ const ChallengeQuizView = ({
   // placeholder boxes, so none of MathLive's Android tap/caret problems apply.
   const openFractionBuilder = () => {
     try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
+    // Blur the mathfield too — under the 'auto' policy a still-focused field
+    // re-opens the MathLive keyboard and fights the native inputs for focus.
+    try { document.activeElement?.blur?.(); } catch (_) { /* ignore */ }
     setFracWhole(''); setFracNum(''); setFracDen('');
     setFracMode(true);
     setTimeout(() => fracNumRef.current?.focus(), 80);
@@ -664,6 +667,11 @@ const ChallengeQuizView = ({
                 </div>
               )}
               {fracMode && !isFeedback && (() => {
+                // Focus synchronously on pointerdown: tapping the next box while
+                // the OS keyboard is open blurs the current input, the keyboard
+                // starts closing and the layout shifts — so the tap's click/focus
+                // never lands on the box ("can't move to the denominator").
+                const grabFocus = (e) => { e.preventDefault(); e.currentTarget.focus(); };
                 const boxStyle = {
                   width: '72px', height: '48px', textAlign: 'center', fontSize: '1.3rem',
                   fontWeight: 700, borderRadius: '12px', border: '2px solid #a78bfa',
@@ -675,7 +683,9 @@ const ChallengeQuizView = ({
                       ref={fracWholeRef}
                       value={fracWhole}
                       onChange={(e) => setFracWhole(e.target.value.replace(/[^0-9-]/g, ''))}
+                      onPointerDown={grabFocus}
                       inputMode="numeric"
+                      enterKeyHint="next"
                       placeholder="0"
                       aria-label="Whole number (optional)"
                       style={{ ...boxStyle, width: '56px', borderStyle: 'dashed', opacity: fracWhole ? 1 : 0.7 }}
@@ -686,7 +696,9 @@ const ChallengeQuizView = ({
                         value={fracNum}
                         onChange={(e) => setFracNum(e.target.value.replace(/[^0-9-]/g, ''))}
                         onKeyDown={(e) => { if (e.key === 'Enter') fracDenRef.current?.focus(); }}
+                        onPointerDown={grabFocus}
                         inputMode="numeric"
+                        enterKeyHint="next"
                         aria-label="Numerator"
                         style={boxStyle}
                       />
@@ -696,7 +708,9 @@ const ChallengeQuizView = ({
                         value={fracDen}
                         onChange={(e) => setFracDen(e.target.value.replace(/[^0-9-]/g, ''))}
                         onKeyDown={(e) => { if (e.key === 'Enter') commitFraction(); }}
+                        onPointerDown={grabFocus}
                         inputMode="numeric"
+                        enterKeyHint="done"
                         aria-label="Denominator"
                         style={boxStyle}
                       />
