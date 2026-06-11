@@ -140,6 +140,146 @@ export default async function handler(req, res) {
     }
 
     // ══════════════════════════════════════════════════════════════════════
+    // PART 1.5: Exam Prep D-1 Report
+    // Runs EARLY in the handler so the 30–60s function budget can't be eaten
+    // by the evening wrap-up queue before the report goes out (the cron only
+    // fires once a day, so a timeout here means the report is never sent).
+    //
+    // Targeted per-field equality queries replace the old full `users` scan,
+    // and BOTH collections are covered: registered students (users) and
+    // manual students (students) — exam dates are mirrored onto users only
+    // when a linked registered account exists, so manual-only students were
+    // previously invisible to this report. Linked pairs (date present on
+    // both docs) are de-duplicated by email.
+    // ══════════════════════════════════════════════════════════════════════
+    try {
+      const examTermKeys = [
+        'term1ExamDate', 'term2ExamDate', 'term3ExamDate', 'term4ExamDate',
+        'ext1term1ExamDate', 'ext1term2ExamDate', 'ext1term3ExamDate', 'ext1term4ExamDate',
+      ];
+      const examTermLabels = {
+        term1ExamDate: 'Term 1 Exam', term2ExamDate: 'Term 2 Exam',
+        term3ExamDate: 'Term 3 Exam', term4ExamDate: 'Term 4 Exam',
+        ext1term1ExamDate: 'Ext1 Term 1 Exam', ext1term2ExamDate: 'Ext1 Term 2 Exam',
+        ext1term3ExamDate: 'Ext1 Term 3 Exam', ext1term4ExamDate: 'Ext1 Term 4 Exam',
+      };
+
+      // Gather candidates with cheap equality queries (a handful of reads)
+      // instead of scanning every user document.
+      const d1Candidates = [];
+      for (const col of ['users', 'students']) {
+        const snaps = await Promise.all(examTermKeys.map((dateKey) =>
+          db.collection(col).where(dateKey, '==', tomorrowStr).get()
+            .catch(() => ({ docs: [] }))
+        ));
+        snaps.forEach((snap, i) => {
+          snap.docs.forEach((d) => d1Candidates.push({ col, studentDoc: d, dateKey: examTermKeys[i] }));
+        });
+      }
+
+      const handledD1 = new Set();
+      let d1Sent = 0;
+
+      for (const { col, studentDoc, dateKey } of d1Candidates) {
+        const student = studentDoc.data();
+        if (!isStudentProfile(student)) continue;
+
+        const studentId = studentDoc.id;
+        const studentEmail = normalizeEmail(student.email);
+        const studentName = student.name || student.displayName ||
+          `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
+
+        // One report per student per exam — linked manual/registered pairs
+        // both carry the mirrored date, so dedupe by email when available.
+        const dedupeKey = `${studentEmail || `${col}/${studentId}`}|${dateKey}`;
+        if (handledD1.has(dedupeKey)) continue;
+        handledD1.add(dedupeKey);
+
+        const examLabel = examTermLabels[dateKey] || 'Exam';
+
+        // Already sent? Check the nested map (current format) and the legacy
+        // literal dotted field name (old writes via set+merge created a nested
+        // map the old dotted read never found — fixed here).
+        const sentMap = (student.examPrepD1SentFor && typeof student.examPrepD1SentFor === 'object')
+          ? student.examPrepD1SentFor : {};
+        if (sentMap[dateKey] === tomorrowStr || student[`examPrepD1SentFor.${dateKey}`] === tomorrowStr) continue;
+
+        // Fetch exam prep summary from Firestore
+        let examSummary = null;
+        let examPrepHistory = [];
+        try {
+          const summarySnap = await db.collection('students').doc(studentId).collection('exam_prep').doc('summary').get();
+          if (summarySnap.exists) examSummary = summarySnap.data();
+          const stateSnap = await db.collection('users').doc(studentId).collection('examPrep').doc('state').get();
+          if (stateSnap.exists) {
+            const stateData = stateSnap.data();
+            if (!examSummary && stateData.stats) examSummary = stateData.stats;
+            if (Array.isArray(stateData.history)) examPrepHistory = stateData.history;
+          }
+        } catch (e) {
+          logs.push(`[D-1] Could not fetch exam prep data for ${studentName}: ${e.message}`);
+        }
+
+        const profile = buildProfile(studentName, examSummary, examPrepHistory);
+
+        // Send to student
+        if (studentEmail) {
+          try {
+            const { subject, html } = examPrepD1StudentEmail({ studentName, examLabel, examDate: tomorrowStr, profile, examSummary });
+            await transporter.sendMail({
+              from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+              to: studentEmail,
+              subject: `[Sapere] ${subject}`,
+              html,
+            });
+            logs.push(`[D-1] Student email sent to ${studentName} (${examLabel})`);
+            d1Sent += 1;
+          } catch (e) {
+            logs.push(`[D-1] Student email failed for ${studentName}: ${e.message}`);
+          }
+        } else {
+          logs.push(`[D-1] No email on record for ${studentName} (${col}) — teacher copy only.`);
+        }
+
+        // Send to teacher (admin)
+        try {
+          const { subject, html } = examPrepD1TeacherEmail({ studentName, examLabel, examDate: tomorrowStr, profile, examSummary });
+          await transporter.sendMail({
+            from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+            to: adminEmail,
+            subject: `[Sapere] ${subject}`,
+            html,
+          });
+          logs.push(`[D-1] Teacher email sent for ${studentName} (${examLabel})`);
+        } catch (e) {
+          logs.push(`[D-1] Teacher email failed for ${studentName}: ${e.message}`);
+        }
+
+        // In-app notification (registered students only — manual students
+        // have no app login to read it)
+        if (col === 'users') {
+          try {
+            await db.collection('users').doc(studentId).collection('notifications').add({
+              title: `${examLabel} is tomorrow — check your prep summary`,
+              body: `You've completed ${profile.sessions} exam prep session${profile.sessions !== 1 ? 's' : ''} · ${profile.pct}% accuracy. Good luck tomorrow!`,
+              timestamp: admin.firestore.FieldValue.serverTimestamp(),
+              read: false,
+              type: 'exam_d1_report',
+            });
+          } catch (e) { /* non-fatal */ }
+        }
+
+        // Mark sent (nested map — matches the read above)
+        await studentDoc.ref.set({
+          examPrepD1SentFor: { [dateKey]: tomorrowStr },
+        }, { merge: true });
+      }
+      if (d1Sent > 0) logs.push(`[D-1] ${d1Sent} D-1 report(s) sent.`);
+    } catch (e) {
+      logs.push(`[D-1] Error: ${e.message}`);
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
     // PART 2: Daily Wrap-up (Tasks & Tomorrow's Schedule) - Runs in the evening.
     // Vercel daily crons can drift within the hour, so keep this window forgiving.
     // ══════════════════════════════════════════════════════════════════════
@@ -246,116 +386,9 @@ export default async function handler(req, res) {
       }
     }
 
-    // ══════════════════════════════════════════════════════════════════════
-    // PART 4: Exam Prep D-1 Report
-    // Runs once per day (any hour). Finds students whose exam is tomorrow,
-    // sends a personalised prep-summary email to both student and teacher.
-    // A per-student Firestore flag (examPrepD1SentFor) prevents duplicates.
-    // ══════════════════════════════════════════════════════════════════════
-    try {
-      const examTermKeys = [
-        'term1ExamDate', 'term2ExamDate', 'term3ExamDate', 'term4ExamDate',
-        'ext1term1ExamDate', 'ext1term2ExamDate', 'ext1term3ExamDate', 'ext1term4ExamDate',
-      ];
-      const examTermLabels = {
-        term1ExamDate: 'Term 1 Exam', term2ExamDate: 'Term 2 Exam',
-        term3ExamDate: 'Term 3 Exam', term4ExamDate: 'Term 4 Exam',
-        ext1term1ExamDate: 'Ext1 Term 1 Exam', ext1term2ExamDate: 'Ext1 Term 2 Exam',
-        ext1term3ExamDate: 'Ext1 Term 3 Exam', ext1term4ExamDate: 'Ext1 Term 4 Exam',
-      };
-
-      const allUsersSnap = await db.collection('users').get();
-      let d1Sent = 0;
-
-      for (const userDoc of allUsersSnap.docs) {
-        const student = userDoc.data();
-        if (!isStudentProfile(student)) continue;
-
-        const studentId = userDoc.id;
-        const studentEmail = normalizeEmail(student.email);
-        const studentName = student.name || student.displayName ||
-          `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
-
-        for (const dateKey of examTermKeys) {
-          const examDate = student[dateKey];
-          if (!examDate) continue;
-          if (examDate !== tomorrowStr) continue;
-
-          const examLabel = examTermLabels[dateKey] || 'Exam';
-          const sentFlagKey = `examPrepD1SentFor.${dateKey}`;
-          if (student[sentFlagKey] === tomorrowStr) continue; // already sent
-
-          // Fetch exam prep summary from Firestore
-          let examSummary = null;
-          let examPrepHistory = [];
-          try {
-            const summarySnap = await db.collection('students').doc(studentId).collection('exam_prep').doc('summary').get();
-            if (summarySnap.exists) examSummary = summarySnap.data();
-            // Also check users/{uid}/examPrep/state for history
-            const stateSnap = await db.collection('users').doc(studentId).collection('examPrep').doc('state').get();
-            if (stateSnap.exists) {
-              const stateData = stateSnap.data();
-              if (!examSummary && stateData.stats) examSummary = stateData.stats;
-              if (Array.isArray(stateData.history)) examPrepHistory = stateData.history;
-            }
-          } catch (e) {
-            logs.push(`[D-1] Could not fetch exam prep data for ${studentName}: ${e.message}`);
-          }
-
-          const profile = buildProfile(studentName, examSummary, examPrepHistory);
-
-          // Send to student
-          if (studentEmail) {
-            try {
-              const { subject, html } = examPrepD1StudentEmail({ studentName, examLabel, examDate: tomorrowStr, profile, examSummary });
-              await transporter.sendMail({
-                from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
-                to: studentEmail,
-                subject: `[Sapere] ${subject}`,
-                html,
-              });
-              logs.push(`[D-1] Student email sent to ${studentName} (${examLabel})`);
-              d1Sent += 1;
-            } catch (e) {
-              logs.push(`[D-1] Student email failed for ${studentName}: ${e.message}`);
-            }
-          }
-
-          // Send to teacher (admin)
-          try {
-            const { subject, html } = examPrepD1TeacherEmail({ studentName, examLabel, examDate: tomorrowStr, profile, examSummary });
-            await transporter.sendMail({
-              from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
-              to: adminEmail,
-              subject: `[Sapere] ${subject}`,
-              html,
-            });
-            logs.push(`[D-1] Teacher email sent for ${studentName} (${examLabel})`);
-          } catch (e) {
-            logs.push(`[D-1] Teacher email failed for ${studentName}: ${e.message}`);
-          }
-
-          // In-app notification for student
-          try {
-            await db.collection('users').doc(studentId).collection('notifications').add({
-              title: `${examLabel} is tomorrow — check your prep summary`,
-              body: `You've completed ${profile.sessions} exam prep session${profile.sessions !== 1 ? 's' : ''} · ${profile.pct}% accuracy. Good luck tomorrow!`,
-              timestamp: admin.firestore.FieldValue.serverTimestamp(),
-              read: false,
-              type: 'exam_d1_report',
-            });
-          } catch (e) { /* non-fatal */ }
-
-          // Mark sent so we don't resend on subsequent hourly runs
-          await userDoc.ref.set({
-            [`examPrepD1SentFor.${dateKey}`]: tomorrowStr,
-          }, { merge: true });
-        }
-      }
-      if (d1Sent > 0) logs.push(`[D-1] ${d1Sent} D-1 report(s) sent.`);
-    } catch (e) {
-      logs.push(`[D-1] Error: ${e.message}`);
-    }
+    // (PART 4: Exam Prep D-1 Report moved to PART 1.5 above — it must run
+    // before the evening wrap-up queue so the once-a-day cron can't time out
+    // before sending it.)
 
     // ══════════════════════════════════════════════════════════════════════
     // PART 5: Exam Prep D+1 Cleanup
@@ -395,7 +428,9 @@ export default async function handler(req, res) {
           const userUpdate = {
             examPrepEnabled: false,
             [dateKey]: '',
-            [`examPrepD1SentFor.${dateKey}`]: admin.firestore.FieldValue.delete(),
+            // Clear the D-1 sent flag in its nested-map form (matches the
+            // format PART 1.5 writes).
+            examPrepD1SentFor: { [dateKey]: admin.firestore.FieldValue.delete() },
             [`examPrepCleanedFor.${dateKey}`]: yesterdayStr,
           };
           await userDoc.ref.set(userUpdate, { merge: true });
