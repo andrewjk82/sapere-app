@@ -247,7 +247,16 @@ import { seedChapterQuestions } from '../services/chapterSeeder';
 // ── Chapter seed registry ──────────────────────────────────────────────────
 // Single source of truth for bulk question seeding. To add a new chapter:
 // create its seed file, import the array above, and add ONE entry here — a
-// "Seed" button appears automatically. No new handler function needed.
+const getCourseFromEntry = (entry) => {
+  if (entry.course) return entry.course;
+  const id = (entry.chapterId || '').toLowerCase();
+  if (id.startsWith('y11a-') || id.startsWith('y12a-')) return 'Advanced';
+  if (id.startsWith('y11e1-') || id.startsWith('y12e1-') || id.includes('ext1') || id.includes('ext_1')) return 'Extension 1';
+  if (id.startsWith('y11s-') || id.startsWith('y12s-')) return 'Standard';
+  if (id.startsWith('y12e2-') || id.includes('ext2') || id.includes('ext_2')) return 'Extension 2';
+  return 'Core';
+};
+
 const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y12a-3',
@@ -742,6 +751,7 @@ const Curriculum = () => {
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
   const [expandedSeedYears, setExpandedSeedYears] = useState({});
+  const [selectedSeedCourse, setSelectedSeedCourse] = useState({ 'Year 11': 'Advanced', 'Year 12': 'Advanced' });
   const [seedSubTab, setSeedSubTab] = useState('chapters');
   const [seedSearch, setSeedSearch] = useState('');
   const [searchOpen, setSearchOpen] = useState(false);
@@ -2722,11 +2732,15 @@ const Curriculum = () => {
 
                     // Manual cards keyed by year
                     const manualByYear = {
-                      'Year 11': [
-                        <SeedCard key="y11-1" badge="Y11 CH1" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Algebra (Ch1)" countKey={null} extraCount={(questionCounts['y11a-1'] || 0) + (questionCounts['y11-1'] || 0)} onSeed={handleSeedAlgebraQuestions} />,
-                        <SeedCard key="y11-2" badge="Y11 CH2" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Surds & Indices (Ch2)" countKey={null} extraCount={(questionCounts['y11a-2'] || 0) + (questionCounts['y11-2'] || 0)} onSeed={handleSeedSurdsQuestions} />,
-                        <SeedCard key="y11-5" badge="Y11 CH5" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Transformations (Ch5)" countKey="y11a-5" onSeed={handleSeedY11Ch5Questions} />,
-                      ],
+                      'Year 11': {
+                        'Advanced': [
+                          <SeedCard key="y11-1" badge="Y11 CH1" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Algebra (Ch1)" countKey={null} extraCount={(questionCounts['y11a-1'] || 0) + (questionCounts['y11-1'] || 0)} onSeed={handleSeedAlgebraQuestions} />,
+                          <SeedCard key="y11-2" badge="Y11 CH2" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Surds & Indices (Ch2)" countKey={null} extraCount={(questionCounts['y11a-2'] || 0) + (questionCounts['y11-2'] || 0)} onSeed={handleSeedSurdsQuestions} />,
+                          <SeedCard key="y11-5" badge="Y11 CH5" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Transformations (Ch5)" countKey="y11a-5" onSeed={handleSeedY11Ch5Questions} />,
+                        ],
+                        'Standard': [],
+                        'Extension 1': []
+                      },
                       'Year 9': [
                         <SeedCard key="y9-2" badge="Y9 CH2" badgeStyle={{ background: '#10b981', color: '#fff' }} title="Pythagoras (Ch2)" countKey="y9-2" onSeed={handleSeedY9Ch2Questions} />,
                       ],
@@ -2804,28 +2818,55 @@ const Curriculum = () => {
                               e.topicCode?.toLowerCase().includes(sq) ||
                               e.label?.toLowerCase().includes(sq)
                             );
-                            manualCards = manualCards.filter(e =>
-                              e.label?.toLowerCase().includes(sq) ||
-                              e.chapterTitle?.toLowerCase().includes(sq)
-                            );
+                            if (Array.isArray(manualCards)) {
+                              manualCards = manualCards.filter(e =>
+                                e.label?.toLowerCase().includes(sq) ||
+                                e.chapterTitle?.toLowerCase().includes(sq)
+                              );
+                            } else {
+                              const filteredObj = {};
+                              Object.keys(manualCards).forEach(courseKey => {
+                                filteredObj[courseKey] = manualCards[courseKey].filter(e =>
+                                  e.label?.toLowerCase().includes(sq) ||
+                                  e.chapterTitle?.toLowerCase().includes(sq)
+                                );
+                              });
+                              manualCards = filteredObj;
+                            }
                           }
-                          if (yearEntries.length === 0 && manualCards.length === 0) return null;
 
-                          // Group registry entries by chapterId
-                          const chapterMap = yearEntries.reduce((acc, entry) => {
+                          const totalManualCount = Array.isArray(manualCards)
+                            ? manualCards.length
+                            : Object.values(manualCards).reduce((sum, arr) => sum + (arr?.length || 0), 0);
+                          const totalSets = yearEntries.length + totalManualCount;
+                          const doneCount = yearEntries.filter(e => questionCounts[e.topicId]).length;
+                          const isOpen = sq ? true : (expandedSeedYears[year] ?? false);
+
+                          if (yearEntries.length === 0 && totalManualCount === 0) return null;
+
+                          const selectedCourse = selectedSeedCourse[year] || 'Advanced';
+                          const selectedChapterKey = `sel-${year}`;
+
+                          const isSenior = ['Year 11', 'Year 12'].includes(year);
+                          const filteredYearEntries = isSenior
+                            ? yearEntries.filter(e => getCourseFromEntry(e) === selectedCourse)
+                            : yearEntries;
+
+                          const filteredManualCards = isSenior
+                            ? (Array.isArray(manualCards) ? (selectedCourse === 'Advanced' ? manualCards : []) : (manualCards[selectedCourse] || []))
+                            : manualCards;
+
+                          const chapterMap = filteredYearEntries.reduce((acc, entry) => {
                             if (!acc[entry.chapterId]) acc[entry.chapterId] = { title: entry.chapterTitle, entries: [] };
                             acc[entry.chapterId].entries.push(entry);
                             return acc;
                           }, {});
                           const chapterIds = Object.keys(chapterMap);
 
-                          const totalSets = yearEntries.length + manualCards.length;
-                          const doneCount = yearEntries.filter(e => questionCounts[e.topicId]).length;
-                          const isOpen = sq ? true : (expandedSeedYears[year] ?? false);
-
-                          // Selected chapter within this year
-                          const selectedChapterKey = `sel-${year}`;
-                          const selectedChapterId = expandedSeedYears[selectedChapterKey] ?? chapterIds[0];
+                          let selectedChapterId = expandedSeedYears[selectedChapterKey];
+                          if (!selectedChapterId || !chapterIds.includes(selectedChapterId)) {
+                            selectedChapterId = chapterIds[0];
+                          }
 
                           return (
                             <div key={year} style={{ border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden' }}>
@@ -2849,22 +2890,60 @@ const Curriculum = () => {
 
                               {isOpen && (
                                 <div style={{ padding: '12px 16px 16px' }}>
+                                  {/* Course Tabs inside Year 11 / Year 12 */}
+                                  {isSenior && (
+                                    <div style={{ display: 'flex', gap: '6px', marginBottom: '14px', borderBottom: '1px solid #f1f5f9', paddingBottom: '10px' }}>
+                                      {(year === 'Year 11' ? ['Standard', 'Advanced', 'Extension 1'] : ['Standard', 'Advanced', 'Extension 1', 'Extension 2']).map(c => {
+                                        const isCourseSelected = selectedCourse === c;
+                                        const courseEntries = (byYear[year] || []).filter(e => getCourseFromEntry(e) === c);
+                                        const courseSeededCount = courseEntries.filter(e => questionCounts[e.topicId]).length;
+
+                                        return (
+                                          <button
+                                            key={c}
+                                            type="button"
+                                            onClick={() => {
+                                              setSelectedSeedCourse(prev => ({ ...prev, [year]: c }));
+                                              const newCourseEntries = (byYear[year] || []).filter(e => getCourseFromEntry(e) === c);
+                                              const firstCid = newCourseEntries[0]?.chapterId || '';
+                                              setExpandedSeedYears(prev => ({ ...prev, [selectedChapterKey]: firstCid }));
+                                            }}
+                                            style={{
+                                              padding: '5px 12px', borderRadius: '8px', border: 'none', cursor: 'pointer',
+                                              fontSize: '0.74rem', fontWeight: 800,
+                                              background: isCourseSelected ? yearColors[year]?.bg : '#f1f5f9',
+                                              color: isCourseSelected ? '#fff' : '#64748b',
+                                              display: 'flex', alignItems: 'center', gap: '5px',
+                                              transition: 'all 0.15s'
+                                            }}
+                                          >
+                                            {c}
+                                            {courseSeededCount > 0 && (
+                                              <span style={{ fontSize: '0.62rem', background: isCourseSelected ? 'rgba(255,255,255,0.25)' : '#e2e8f0', color: isCourseSelected ? '#fff' : '#475569', padding: '1px 5px', borderRadius: '999px' }}>
+                                                {courseSeededCount}
+                                              </span>
+                                            )}
+                                          </button>
+                                        );
+                                      })}
+                                    </div>
+                                  )}
+
                                   {/* Manual cards (no chapter grouping) */}
-                                  {manualCards.length > 0 && (
+                                  {filteredManualCards.length > 0 && (
                                     <div className="admin-sync-grid" style={{ marginBottom: chapterIds.length > 0 ? '12px' : 0 }}>
-                                      {manualCards}
+                                      {filteredManualCards}
                                     </div>
                                   )}
 
                                   {/* Chapter pill tabs */}
-                                  {chapterIds.length > 0 && (
+                                  {chapterIds.length > 0 ? (
                                     <>
                                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '12px' }}>
                                         {chapterIds.map(cid => {
                                           const chEntries = chapterMap[cid].entries;
                                           const chDone = chEntries.filter(e => questionCounts[e.topicId]).length;
                                           const isSelected = selectedChapterId === cid;
-                                          // Extract short chapter label e.g. "Ch3" from chapterId "y11a-3"
                                           const shortLabel = chapterMap[cid].title.match(/Chapter\s+(\S+)/i)?.[1]
                                             ? `Ch${chapterMap[cid].title.match(/Chapter\s+(\S+)/i)[1]}`
                                             : cid;
@@ -2906,6 +2985,12 @@ const Curriculum = () => {
                                         {(chapterMap[selectedChapterId]?.entries || []).map(entry => renderTopicCard(entry, year))}
                                       </div>
                                     </>
+                                  ) : (
+                                    isSenior && (
+                                      <div style={{ textAlign: 'center', padding: '24px', color: '#94a3b8', fontSize: '0.8rem', fontWeight: 600 }}>
+                                        No seed templates registered for Year 11 {selectedCourse} chapters yet.
+                                      </div>
+                                    )
                                   )}
                                 </div>
                               )}
