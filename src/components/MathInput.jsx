@@ -291,10 +291,13 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     if (!mf || typeof value !== 'string') return;
     if (userTypingRef.current) {
       userTypingRef.current = false;
-      // User just typed — MathLive already has the right value; skip only if
-      // the field already matches. If value is '' (new question clearing the
-      // field) we must still apply the reset even though the flag is set.
-      if (mf.value === value) return;
+      // User just typed — MathLive already has the right value. Its own
+      // serialisation can differ slightly from what onChange reported (e.g.
+      // placeholder boxes inside a fraction), and reassigning mf.value here
+      // rebuilds the field and destroys the caret, freezing all further
+      // keystrokes. So while typing we NEVER write back; the only exception
+      // is the parent intentionally clearing the field ('' on a new question).
+      if (value !== '') return;
     }
     if (mf.value !== value) {
       mf.value = value;
