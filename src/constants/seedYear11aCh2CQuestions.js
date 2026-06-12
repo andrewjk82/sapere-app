@@ -1,5 +1,955 @@
 export const Y11A_CH2C_QUESTIONS = [
   {
+    "id": "y11a-2C-q1a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\((\\sqrt{3})^2\\)",
+    "a": "3",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "3",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(\\sqrt{2} \\times \\sqrt{3}\\)",
+    "a": "\\sqrt{6}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "\\sqrt{6}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(\\sqrt{7} \\times \\sqrt{7}\\)",
+    "a": "7",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "7",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(\\sqrt{6} \\times \\sqrt{5}\\)",
+    "a": "\\sqrt{30}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "\\sqrt{30}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(2 \\times 3\\sqrt{2}\\)",
+    "a": "6\\sqrt{2}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "6\\sqrt{2}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(2\\sqrt{5} \\times 5\\)",
+    "a": "10\\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "10\\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(2\\sqrt{3} \\times 3\\sqrt{5}\\)",
+    "a": "6\\sqrt{15}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "6\\sqrt{15}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(6\\sqrt{2} \\times 5\\sqrt{7}\\)",
+    "a": "30\\sqrt{14}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "30\\sqrt{14}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1i",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\((2\\sqrt{3})^2\\)",
+    "a": "12",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "12",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1j",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\((3\\sqrt{7})^2\\)",
+    "a": "63",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "63",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1k",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(5\\sqrt{2} \\times 3\\sqrt{2}\\)",
+    "a": "30",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "30",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q1l",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(6\\sqrt{10} \\times 4\\sqrt{10}\\)",
+    "a": "240",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the parts together and simplify if needed.",
+        "workingOut": "240",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(\\sqrt{15} \\div \\sqrt{3}\\)",
+    "a": "\\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "\\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(\\sqrt{42} \\div \\sqrt{6}\\)",
+    "a": "\\sqrt{7}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "\\sqrt{7}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(3\\sqrt{5} \\div 3\\)",
+    "a": "\\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "\\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(2\\sqrt{7} \\div \\sqrt{7}\\)",
+    "a": "2",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "2",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(3\\sqrt{10} \\div \\sqrt{5}\\)",
+    "a": "3\\sqrt{2}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "3\\sqrt{2}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(6\\sqrt{33} \\div 6\\sqrt{11}\\)",
+    "a": "\\sqrt{3}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "\\sqrt{3}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(10\\sqrt{14} \\div 5\\sqrt{2}\\)",
+    "a": "2\\sqrt{7}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "2\\sqrt{7}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q2h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Simplify:\n\n\\(15\\sqrt{35} \\div 3\\sqrt{7}\\)",
+    "a": "5\\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the numbers and the surds.",
+        "workingOut": "5\\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q3a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Expand:\n\n\\(\\sqrt{5}(\\sqrt{5}+1)\\)",
+    "a": "5 + \\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Distribute the term outside the brackets.",
+        "workingOut": "5 + \\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q3b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Expand:\n\n\\(\\sqrt{2}(\\sqrt{3}-1)\\)",
+    "a": "\\sqrt{6} - \\sqrt{2}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Distribute the term outside the brackets.",
+        "workingOut": "\\sqrt{6} - \\sqrt{2}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q3c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Expand:\n\n\\(\\sqrt{3}(2-\\sqrt{3})\\)",
+    "a": "2\\sqrt{3} - 3",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Distribute the term outside the brackets.",
+        "workingOut": "2\\sqrt{3} - 3",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q3d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Expand:\n\n\\(2\\sqrt{2}(\\sqrt{5}-\\sqrt{2})\\)",
+    "a": "2\\sqrt{10} - 4",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Distribute the term outside the brackets.",
+        "workingOut": "2\\sqrt{10} - 4",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q3e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Expand:\n\n\\(\\sqrt{7}(7-2\\sqrt{7})\\)",
+    "a": "7\\sqrt{7} - 14",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Distribute the term outside the brackets.",
+        "workingOut": "7\\sqrt{7} - 14",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q3f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Expand:\n\n\\(\\sqrt{6}(3\\sqrt{6}-2\\sqrt{5})\\)",
+    "a": "18 - 2\\sqrt{30}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Distribute the term outside the brackets.",
+        "workingOut": "18 - 2\\sqrt{30}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q4a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify fully:\n\n\\(\\sqrt{6} \\times \\sqrt{2}\\)",
+    "a": "2\\sqrt{3}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the surds and simplify the result.",
+        "workingOut": "2\\sqrt{3}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q4b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify fully:\n\n\\(\\sqrt{5} \\times \\sqrt{10}\\)",
+    "a": "5\\sqrt{2}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the surds and simplify the result.",
+        "workingOut": "5\\sqrt{2}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q4c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify fully:\n\n\\(\\sqrt{3} \\times \\sqrt{15}\\)",
+    "a": "3\\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the surds and simplify the result.",
+        "workingOut": "3\\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q4d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify fully:\n\n\\(\\sqrt{2} \\times 2\\sqrt{22}\\)",
+    "a": "4\\sqrt{11}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the surds and simplify the result.",
+        "workingOut": "4\\sqrt{11}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q4e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify fully:\n\n\\(4\\sqrt{12} \\times \\sqrt{3}\\)",
+    "a": "24",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the surds and simplify the result.",
+        "workingOut": "24",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q4f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify fully:\n\n\\(3\\sqrt{8} \\times 2\\sqrt{5}\\)",
+    "a": "12\\sqrt{10}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply the surds and simplify the result.",
+        "workingOut": "12\\sqrt{10}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q5a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\(\\sqrt{2}(\\sqrt{10}-\\sqrt{2})\\)",
+    "a": "2\\sqrt{5} - 2",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the expression and then simplify the resulting surds.",
+        "workingOut": "2\\sqrt{5} - 2",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q5b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\(\\sqrt{6}(3+\\sqrt{3})\\)",
+    "a": "3\\sqrt{6} + 3\\sqrt{2}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the expression and then simplify the resulting surds.",
+        "workingOut": "3\\sqrt{6} + 3\\sqrt{2}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q5c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\(\\sqrt{5}(\\sqrt{15}+4)\\)",
+    "a": "5\\sqrt{3} + 4\\sqrt{5}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the expression and then simplify the resulting surds.",
+        "workingOut": "5\\sqrt{3} + 4\\sqrt{5}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q5d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\(\\sqrt{6}(\\sqrt{8}-2)\\)",
+    "a": "4\\sqrt{3} - 2\\sqrt{6}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the expression and then simplify the resulting surds.",
+        "workingOut": "4\\sqrt{3} - 2\\sqrt{6}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q5e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\(3\\sqrt{3}(9-\\sqrt{21})\\)",
+    "a": "27\\sqrt{3} - 9\\sqrt{7}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the expression and then simplify the resulting surds.",
+        "workingOut": "27\\sqrt{3} - 9\\sqrt{7}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q5f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\(3\\sqrt{7}(\\sqrt{14}-2\\sqrt{7})\\)",
+    "a": "21\\sqrt{2} - 42",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand the expression and then simplify the resulting surds.",
+        "workingOut": "21\\sqrt{2} - 42",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q6a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\((\\sqrt{3}+1)(\\sqrt{2}-1)\\)",
+    "a": "\\sqrt{6} - \\sqrt{3} + \\sqrt{2} - 1",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand using FOIL (First, Outer, Inner, Last) and combine like terms.",
+        "workingOut": "\\sqrt{6} - \\sqrt{3} + \\sqrt{2} - 1",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q6b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\((\\sqrt{5}-2)(\\sqrt{7}+3)\\)",
+    "a": "\\sqrt{35} + 3\\sqrt{5} - 2\\sqrt{7} - 6",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand using FOIL (First, Outer, Inner, Last) and combine like terms.",
+        "workingOut": "\\sqrt{35} + 3\\sqrt{5} - 2\\sqrt{7} - 6",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q6c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\((\\sqrt{5}+\\sqrt{2})(\\sqrt{3}+\\sqrt{2})\\)",
+    "a": "\\sqrt{15} + \\sqrt{10} + \\sqrt{6} + 2",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand using FOIL (First, Outer, Inner, Last) and combine like terms.",
+        "workingOut": "\\sqrt{15} + \\sqrt{10} + \\sqrt{6} + 2",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q6d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\((\\sqrt{6}-1)(\\sqrt{6}-2)\\)",
+    "a": "8 - 3\\sqrt{6}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand using FOIL (First, Outer, Inner, Last) and combine like terms.",
+        "workingOut": "8 - 3\\sqrt{6}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q6e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\((\\sqrt{7}-2)(2\\sqrt{7}+5)\\)",
+    "a": "4 + \\sqrt{7}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand using FOIL (First, Outer, Inner, Last) and combine like terms.",
+        "workingOut": "4 + \\sqrt{7}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q6f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Expand and simplify:\n\n\\((3\\sqrt{2}-1)(\\sqrt{6}-\\sqrt{3})\\)",
+    "a": "7\\sqrt{3} - 4\\sqrt{6}",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Expand using FOIL (First, Outer, Inner, Last) and combine like terms.",
+        "workingOut": "7\\sqrt{3} - 4\\sqrt{6}",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q7a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the special expansion \\((a+b)(a-b) = a^2-b^2\\) to expand and simplify:\n\n\\((\\sqrt{5}+1)(\\sqrt{5}-1)\\)",
+    "a": "4",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the difference of two squares formula.",
+        "workingOut": "4",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q7b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the special expansion \\((a+b)(a-b) = a^2-b^2\\) to expand and simplify:\n\n\\((3-\\sqrt{7})(3+\\sqrt{7})\\)",
+    "a": "2",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the difference of two squares formula.",
+        "workingOut": "2",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q7c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the special expansion \\((a+b)(a-b) = a^2-b^2\\) to expand and simplify:\n\n\\((\\sqrt{3}+\\sqrt{2})(\\sqrt{3}-\\sqrt{2})\\)",
+    "a": "1",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the difference of two squares formula.",
+        "workingOut": "1",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q7d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the special expansion \\((a+b)(a-b) = a^2-b^2\\) to expand and simplify:\n\n\\((3\\sqrt{2}-\\sqrt{11})(3\\sqrt{2}+\\sqrt{11})\\)",
+    "a": "7",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the difference of two squares formula.",
+        "workingOut": "7",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q7e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the special expansion \\((a+b)(a-b) = a^2-b^2\\) to expand and simplify:\n\n\\((2\\sqrt{6}+3)(2\\sqrt{6}-3)\\)",
+    "a": "15",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the difference of two squares formula.",
+        "workingOut": "15",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
+    "id": "y11a-2C-q7f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the special expansion \\((a+b)(a-b) = a^2-b^2\\) to expand and simplify:\n\n\\((7-2\\sqrt{5})(7+2\\sqrt{5})\\)",
+    "a": "29",
+    "solution": "",
+    "t": "Further simplification of surds",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Apply the difference of two squares formula.",
+        "workingOut": "29",
+        "graphData": null
+      }
+    ],
+    "graphData": null
+  },
+  {
     "id": "s2bc_1",
     "type": "multiple_choice",
     "difficulty": "medium",
