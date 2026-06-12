@@ -2871,7 +2871,6 @@ const Curriculum = () => {
                       'Year 11': {
                         'Advanced': [
                           <SeedCard key="y11-1" badge="Y11 CH1" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Algebra (Ch1)" countKey={null} extraCount={(questionCounts['y11a-1'] || 0) + (questionCounts['y11-1'] || 0)} onSeed={handleSeedAlgebraQuestions} />,
-                          <SeedCard key="y11-2" badge="Y11 CH2" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Surds & Indices (Ch2)" countKey={null} extraCount={(questionCounts['y11a-2'] || 0) + (questionCounts['y11-2'] || 0)} onSeed={handleSeedSurdsQuestions} />,
                           <SeedCard key="y11-5" badge="Y11 CH5" badgeStyle={{ background: '#6366f1', color: '#fff' }} title="Transformations (Ch5)" countKey="y11a-5" onSeed={handleSeedY11Ch5Questions} />,
                         ],
                         'Standard': [],
