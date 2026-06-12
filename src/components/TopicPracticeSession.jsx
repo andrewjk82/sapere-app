@@ -83,6 +83,8 @@ const QUICK_INSERTS = [
   { label: '±', latex: '\\pm', title: 'Plus or minus' },
   { label: '°', latex: '^{\\circ}', title: 'Degrees' },
   { label: '( )', latex: '(#?)', title: 'Brackets' },
+  { label: '\u2264', latex: '\\le', title: 'Less than or equal to' },
+  { label: '\u2265', latex: '\\ge', title: 'Greater than or equal to' },
 ];
 
 const XP_PER_TOPIC = 15;
