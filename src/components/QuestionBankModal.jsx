@@ -21,6 +21,7 @@ import {
 import { useToast } from '../context/ToastContext';
 import { geometryToSvgDataUrl } from '../utils/geometrySvg';
 import { syncQuestionIndexOnSave, removeQuestionFromIndex } from '../services/questionIndexService';
+import { applyCountDeltas, stampCountsVersion } from '../services/questionCountsService';
 
 const QUESTION_PAGE_SIZE = 10;
 const questionBankSessionCache = new Map();
@@ -1588,10 +1589,22 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         const newRef = await addDoc(collection(db, 'questions'), payload);
         savedQuestionId = newRef.id;
       }
+      const bankVersion = Date.now();
       await setDoc(doc(db, 'sync_meta', 'questions'), {
-        version: Date.now(),
+        version: bankVersion,
         updatedAt: serverTimestamp(),
       }, { merge: true });
+      // Keep the aggregate counts doc in step: new question → +1 per id;
+      // edit → counts unchanged, just stamp the version so admin clients
+      // keep trusting the doc instead of rebuilding all counts.
+      if (!editingQuestion) {
+        applyCountDeltas({
+          ...(payload.chapterId ? { [payload.chapterId]: 1 } : {}),
+          ...(payload.topicId ? { [payload.topicId]: 1 } : {}),
+        }, bankVersion);
+      } else {
+        stampCountsVersion(bankVersion);
+      }
       // Keep the per-chapter random-sampling index in sync (non-fatal).
       syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, isActive: true })
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
@@ -1620,6 +1633,14 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       });
       removeQuestionFromIndex(chapterId, id)
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
+      // Aggregate counts doc: −1 for this question's chapter/topic.
+      {
+        const deleted = questions.find(q => q.id === id);
+        applyCountDeltas({
+          ...(deleted?.chapterId || chapterId ? { [deleted?.chapterId || chapterId]: -1 } : {}),
+          ...(deleted?.topicId ? { [deleted.topicId]: -1 } : {}),
+        }, Date.now());
+      }
       // Resolve all open reports linked to this question.
       // Query both questionId field and questionData.id (some reports store ID only in questionData).
       const [snap1, snap2] = await Promise.all([

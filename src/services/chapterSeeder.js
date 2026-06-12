@@ -1,5 +1,6 @@
 import { db } from '../firebase/config';
 import { collection, writeBatch, doc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
+import { recountIds } from './questionCountsService';
 
 /**
  * Generic chapter question seeder.
@@ -117,6 +118,16 @@ export const seedChapterQuestions = async (chapter) => {
     }
   }
 
+  // Track every chapter/topic id touched by this seed (cleared docs + new
+  // docs) so the aggregate counts doc can be re-counted exactly afterwards.
+  const affectedChapterIds = new Set([chapter.chapterId]);
+  const affectedTopicIds = new Set([chapter.topicId]);
+  snap.docs.forEach((d) => {
+    const data = d.data();
+    if (data.chapterId) affectedChapterIds.add(data.chapterId);
+    if (data.topicId) affectedTopicIds.add(data.topicId);
+  });
+
   // WRITE NEW SEED QUESTIONS
   // FULL OVERWRITE: questions are written by their stable `id` with
   // set({ merge: false }) — a full REPLACE. This ensures stale fields
@@ -127,21 +138,37 @@ export const seedChapterQuestions = async (chapter) => {
   for (let i = 0; i < seed.length; i += CHUNK) {
     const batch = writeBatch(db);
     seed.slice(i, i + CHUNK).forEach((raw) => {
+      const mapped = mapSeedQuestion(raw, chapter);
+      if (mapped.chapterId) affectedChapterIds.add(mapped.chapterId);
+      if (mapped.topicId) affectedTopicIds.add(mapped.topicId);
       const docRef = raw.id ? doc(collRef, raw.id) : doc(collRef);
-      batch.set(docRef, mapSeedQuestion(raw, chapter), { merge: false });
+      batch.set(docRef, mapped, { merge: false });
     });
     await batch.commit();
   }
   // Bump the questions sync_meta so the Curriculum chapter cards know to
   // refetch their per-chapter counts on next mount; without this the cached
   // "N questions" pill stays at its pre-seed value.
+  const seedVersion = Date.now();
   try {
     await setDoc(doc(db, 'sync_meta', 'questions'), {
-      version: Date.now(),
+      version: seedVersion,
       updatedAt: serverTimestamp(),
     }, { merge: true });
   } catch (err) {
     console.warn('sync_meta bump after seed failed (non-fatal):', err);
+  }
+  // Re-count ONLY the touched ids into the aggregate counts doc (a few dozen
+  // aggregation queries) and stamp it with the same version, so admin clients
+  // read 1 doc instead of rebuilding ~1,600 counts after every seed.
+  try {
+    await recountIds({
+      chapterIds: [...affectedChapterIds],
+      topicIds: [...affectedTopicIds],
+      version: seedVersion,
+    });
+  } catch (err) {
+    console.warn('question_counts recount after seed failed (non-fatal):', err);
   }
   // Invalidate all ExamPrep pool caches in localStorage so every student
   // picks up the freshly-seeded questions on their next session start.

@@ -249,6 +249,7 @@ import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
 import { seedChapterQuestions } from '../services/chapterSeeder';
+import { readAggregatedCounts, writeAggregatedCounts } from '../services/questionCountsService';
 
 // ── Chapter seed registry ──────────────────────────────────────────────────
 // Single source of truth for bulk question seeding. To add a new chapter:
@@ -2156,11 +2157,24 @@ const Curriculum = () => {
           && countTopicIds.every((topicId) => cached.counts[topicId] !== undefined);
         if (hasFreshCounts && !isMigrating) return;
 
+        // ── Aggregate doc first: ONE read replaces ~1,600 count queries. ──
+        // Write paths (question bank CRUD, seeder) keep sync_meta/
+        // question_counts in step with sync_meta/questions.version, so when
+        // the versions match we can trust it outright.
+        const agg = await readAggregatedCounts();
+        if (agg && (!remoteVersion || agg.version >= remoteVersion) && !isMigrating) {
+          if (cancelled) return;
+          const merged = { ...cached.counts, ...agg.counts };
+          setQuestionCounts(merged);
+          saveCachedQuestionCounts(merged, remoteVersion || agg.version);
+          return;
+        }
+
         const nextCounts = {};
-        // Bounded concurrency: admins now fetch counts for ALL years (~1,600
-        // aggregation queries), so firing them all at once would swamp the
-        // network. Batch them, and push a progressive UI update after each batch
-        // so the year-tab / chapter numbers fill in as they resolve.
+        // Fallback (aggregate doc missing/stale — e.g. a legacy import tool
+        // bumped sync_meta only): rebuild every count once with bounded
+        // concurrency, then WRITE the result back to the aggregate doc so
+        // every other admin session reads 1 doc instead of repeating this.
         const runBatched = async (ids, field, batchSize = 40) => {
           for (let i = 0; i < ids.length; i += batchSize) {
             if (cancelled) return;
@@ -2184,6 +2198,8 @@ const Curriculum = () => {
         const merged = { ...cached.counts, ...nextCounts };
         setQuestionCounts(merged);
         saveCachedQuestionCounts(merged, remoteVersion);
+        writeAggregatedCounts({ ...(agg?.counts || {}), ...nextCounts }, remoteVersion)
+          .catch((err) => console.warn('question_counts write-back failed (non-fatal):', err?.code || err));
       } catch (err) {
         console.error("Error fetching question counts:", err);
       }

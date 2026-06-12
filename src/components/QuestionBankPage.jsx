@@ -22,6 +22,7 @@ const QB_QUICK_INSERTS = [
 ];
 import { useToast } from '../context/ToastContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
+import { applyCountDeltas } from '../services/questionCountsService';
 
 /**
  * Full-page question-bank browser for a single chapter+topic.
@@ -91,10 +92,17 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
       // Bump the global questions sync_meta so chapter-card counts on the
       // Curriculum page refresh on next visit instead of staying stale.
+      const bankVersion = Date.now();
       await setDoc(doc(db, 'sync_meta', 'questions'), {
-        version: Date.now(),
+        version: bankVersion,
         updatedAt: serverTimestamp(),
       }, { merge: true }).catch(() => {});
+      // Aggregate counts doc: −1 for this question's chapter/topic so admin
+      // clients keep reading 1 doc instead of rebuilding all counts.
+      applyCountDeltas({
+        ...(q.chapterId || chapter?.id ? { [q.chapterId || chapter.id]: -1 } : {}),
+        ...(q.topicId ? { [q.topicId]: -1 } : {}),
+      }, bankVersion);
       showToast('Question deleted', 'success');
       await reload();
     } catch (e) {
