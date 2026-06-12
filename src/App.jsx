@@ -451,6 +451,30 @@ function App() {
     return undefined;
   }, [user?.uid, isAdmin, sharedProfile, showToast]);
 
+  // Auto-disable Exam Prep if all set exam dates have passed (D-Day < 0)
+  useEffect(() => {
+    if (!user?.uid || isAdmin || !sharedProfile || sharedProfile.examPrepEnabled !== true) return undefined;
+
+    const assignedCourses = Array.isArray(sharedProfile.assignedCourse) ? sharedProfile.assignedCourse : [sharedProfile.assignedCourse || 'Advanced'];
+    const isExtension = assignedCourses.some(c => c === 'Extension 1' || c === 'Extension 2');
+    const examEntries = [1, 2, 3, 4].flatMap(t => {
+      const entries = [{ date: sharedProfile[`term${t}ExamDate`] }];
+      if (isExtension) entries.push({ date: sharedProfile[`ext1term${t}ExamDate`] });
+      return entries;
+    }).filter(t => t.date);
+
+    if (examEntries.length > 0) {
+      const allPast = examEntries.every(t => {
+        const dday = Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000);
+        return dday < 0;
+      });
+
+      if (allPast) {
+        updateDoc(doc(db, 'users', user.uid), { examPrepEnabled: false }).catch(() => {});
+      }
+    }
+  }, [user?.uid, isAdmin, sharedProfile]);
+
   // Real-time Version Check
   useEffect(() => {
     const versionRef = doc(db, 'system_config', 'app');

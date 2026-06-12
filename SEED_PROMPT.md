@@ -19,20 +19,20 @@
 ### 기본 정보
 
 ```
-학년:        Year 10
-챕터 번호:   14
-chapterId:   y10-14
-서브토픽 ID: y10-14c
-토픽 코드:   14C
-서브토픽 제목: Graphs of exponential and logarithm functions
+학년:        Year 11
+챕터 번호:   1
+chapterId:   y11a-1
+서브토픽 ID: y11a-1f
+토픽 코드:   1F
+서브토픽 제목: Revision
 ```
 
 ### 난이도 기준 (문제 번호 → difficulty)
 
 ```
-Q1 ~ Q3  → easy
-Q4 ~ Q6 → medium
-none →  hard
+Q1 ~ Q2  → easy
+Q3 ~ Q5 → medium
+Q6 →  hard
 ※ 실제 난이도가 명백히 다르면 판단하여 조정
 ```
 
@@ -56,7 +56,7 @@ SPLIT_MULTI_UNKNOWN = true
   false → 분리 안 함
 
 개별 top-level 문제로 분리할 문제 번호 목록:
-  Q1, Q2, Q3, Q5, Q6
+  Q1 ~ Q8
   (이 문제들은 subQuestions 대신 별개 top-level 문제로 분리)
 ```
 
@@ -403,6 +403,6 @@ import { Y9_CH3_QUESTIONS } from '../constants/seedYear9Ch3Questions';
 
 ---
 
-문제 누락하지 마 특히 어려운 문제들 누락하거나 쉬운 문제로 바꾸지 말고
+문제 누락하지 마 특히 어려운 문제들 누락하거나 쉬운 문제로 바꾸지 말고 푸시 배포까지
 
 위 규칙대로 시드 파일을 생성하고 [12]까지 완료하세요.
