@@ -1,5 +1,271 @@
 export const Y11A_CH2_QUESTIONS = [
   {
+    "id": "s2bc_5",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $5\\sqrt{8} + 2\\sqrt{18}$.",
+    "a": "$16\\sqrt{2}$",
+    "opts": [
+      "$16\\sqrt{2}$",
+      "$7\\sqrt{26}$",
+      "$10\\sqrt{2}$",
+      "$14\\sqrt{2}$"
+    ],
+    "solution": "$5(2\\sqrt{2}) + 2(3\\sqrt{2}) = 10\\sqrt{2} + 6\\sqrt{2} = 16\\sqrt{2}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Simplify each surd first.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_6",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $3\\sqrt{7} \\times 2\\sqrt{5}$.",
+    "a": "$6\\sqrt{35}$",
+    "opts": [
+      "$6\\sqrt{35}$",
+      "$5\\sqrt{12}$",
+      "$6\\sqrt{12}$",
+      "$12\\sqrt{35}$"
+    ],
+    "solution": "$(3 \\times 2)(\\sqrt{7 \\times 5}) = 6\\sqrt{35}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Multiply outer and inner numbers.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{40} \\div \\sqrt{8}$.",
+    "a": "$\\sqrt{5}$",
+    "opts": [
+      "$\\sqrt{5}$",
+      "$5$",
+      "$\\sqrt{32}$",
+      "$2\\sqrt{5}$"
+    ],
+    "solution": "$\\sqrt{40/8} = \\sqrt{5}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Use $\\sqrt{a}/\\sqrt{b} = \\sqrt{a/b}$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_8",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $(4\\sqrt{6})^2$.",
+    "a": "$96$",
+    "opts": [
+      "$96$",
+      "$24$",
+      "$144$",
+      "$36$"
+    ],
+    "solution": "$4^2 \\times 6 = 16 \\times 6 = 96$",
+    "t": "Surds and their arithmetic",
+    "hint": "$a^2 \\times b$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_12",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{20} \\times \\sqrt{5}$.",
+    "a": "$10$",
+    "opts": [
+      "$10$",
+      "$\\sqrt{100}$",
+      "$5\\sqrt{2}$",
+      "$25$"
+    ],
+    "solution": "$10$",
+    "t": "Surds and their arithmetic",
+    "hint": "$\\sqrt{100}$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_13",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $2\\sqrt{6} \\times 4\\sqrt{3}$.",
+    "a": "$24\\sqrt{2}$",
+    "opts": [
+      "$24\\sqrt{2}$",
+      "$8\\sqrt{18}$",
+      "$12\\sqrt{2}$",
+      "$24$"
+    ],
+    "solution": "$24\\sqrt{2}$",
+    "t": "Surds and their arithmetic",
+    "hint": "$8\\sqrt{18} = 8(3\\sqrt{2})$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_16",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{5} + \\sqrt{5}$.",
+    "a": "$2\\sqrt{5}$",
+    "opts": [
+      "$2\\sqrt{5}$",
+      "$\\sqrt{10}$",
+      "$5$",
+      "$\\sqrt{25}$"
+    ],
+    "solution": "$2\\sqrt{5}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Like terms.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_17",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{5} \\times \\sqrt{5}$.",
+    "a": "$5$",
+    "opts": [
+      "$5$",
+      "$\\sqrt{10}$",
+      "$25$",
+      "$\\sqrt{5}$"
+    ],
+    "solution": "$5$",
+    "t": "Surds and their arithmetic",
+    "hint": "Square of a root.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_18",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $2\\sqrt{5} + \\sqrt{7} - 3\\sqrt{5}$.",
+    "a": "$\\sqrt{7} - \\sqrt{5}$",
+    "opts": [
+      "$\\sqrt{7} - \\sqrt{5}$",
+      "$\\sqrt{7} + \\sqrt{5}$",
+      "$-\\sqrt{5}$",
+      "$\\sqrt{2}$"
+    ],
+    "solution": "$(2-3)\\sqrt{5} + \\sqrt{7} = -\\sqrt{5} + \\sqrt{7}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Combine $\\sqrt{5}$ terms.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_19",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{35} \\div \\sqrt{5}$.",
+    "a": "$\\sqrt{7}$",
+    "opts": [
+      "$\\sqrt{7}$",
+      "$7$",
+      "$\\sqrt{30}$",
+      "$30$"
+    ],
+    "solution": "$\\sqrt{35/5} = \\sqrt{7}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Divide inside.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_20",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $6\\sqrt{55} \\div 2\\sqrt{11}$.",
+    "a": "$3\\sqrt{5}$",
+    "opts": [
+      "$3\\sqrt{5}$",
+      "$4\\sqrt{44}$",
+      "$3\\sqrt{11}$",
+      "$3$"
+    ],
+    "solution": "$(6/2)\\sqrt{55/11} = 3\\sqrt{5}$",
+    "t": "Surds and their arithmetic",
+    "hint": "Divide outer and inner.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_21",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{8} \\times \\sqrt{2}$.",
+    "a": "$4$",
+    "opts": [
+      "$4$",
+      "$\\sqrt{16}$",
+      "$2\\sqrt{2}$",
+      "$16$"
+    ],
+    "solution": "$4$",
+    "t": "Surds and their arithmetic",
+    "hint": "$\\sqrt{16}$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_22",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $\\sqrt{10} \\times \\sqrt{2}$.",
+    "a": "$2\\sqrt{5}$",
+    "opts": [
+      "$2\\sqrt{5}$",
+      "$\\sqrt{20}$",
+      "$10\\sqrt{2}$",
+      "$5\\sqrt{2}$"
+    ],
+    "solution": "$2\\sqrt{5}$",
+    "t": "Surds and their arithmetic",
+    "hint": "$\\sqrt{20} = 2\\sqrt{5}$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
+    "id": "s2bc_23",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Simplify $2\\sqrt{6} \\times 4\\sqrt{15}$.",
+    "a": "$24\\sqrt{10}$",
+    "opts": [
+      "$24\\sqrt{10}$",
+      "$8\\sqrt{90}$",
+      "$24\\sqrt{15}$",
+      "$80$"
+    ],
+    "solution": "$24\\sqrt{10}$",
+    "t": "Surds and their arithmetic",
+    "hint": "$8\\sqrt{90} = 8(3\\sqrt{10}) = 24\\sqrt{10}$.",
+    "solutionSteps": [],
+    "graphData": null
+  },
+  {
     "id": "y11a-2b-q1a",
     "type": "short_answer",
     "difficulty": "easy",
