@@ -94,26 +94,31 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
 
     // One summary document replaces 2N per-student daily/calc stat reads.
     const fetchCompletions = async () => {
-      const summarySnap = await getDoc(doc(db, 'admin_daily_summary', todayStr));
-      if (cancelled) return;
-      const summary = summarySnap.exists() ? (summarySnap.data().students || {}) : {};
-      const next = {};
-      students.forEach((student) => {
-        const item = summary[student.id];
-        if (!item) {
-          next[student.id] = 'pending';
-          return;
-        }
-        const calcEnabled = student.calculationEnabled !== false;
-        const dailyDone = item.dailyDone === true;
-        const calcDone = item.calcDone === true;
-        const dailyEnded = item.dailyEnded === true || item.dailyStatus === 'ended';
-        const calcEnded = item.calcEnded === true || item.calcStatus === 'ended';
-        const allRequiredDone = dailyDone && (!calcEnabled || calcDone);
-        const anyEnded = dailyEnded || (calcEnabled && calcEnded);
-        next[student.id] = allRequiredDone ? 'done' : (anyEnded ? 'ended' : 'pending');
-      });
-      setCompletionStates(next);
+      try {
+        const summarySnap = await getDoc(doc(db, 'admin_daily_summary', todayStr));
+        if (cancelled) return;
+        const summary = summarySnap.exists() ? (summarySnap.data().students || {}) : {};
+        const next = {};
+        students.forEach((student) => {
+          const item = summary[student.id];
+          if (!item) {
+            next[student.id] = 'pending';
+            return;
+          }
+          const calcEnabled = student.calculationEnabled !== false;
+          const dailyDone = item.dailyDone === true;
+          const calcDone = item.calcDone === true;
+          const dailyEnded = item.dailyEnded === true || item.dailyStatus === 'ended';
+          const calcEnded = item.calcEnded === true || item.calcStatus === 'ended';
+          const allRequiredDone = dailyDone && (!calcEnabled || calcDone);
+          const anyEnded = dailyEnded || (calcEnabled && calcEnded);
+          next[student.id] = allRequiredDone ? 'done' : (anyEnded ? 'ended' : 'pending');
+        });
+        setCompletionStates(next);
+      } catch (err) {
+        console.error("Failed to fetch admin_daily_summary:", err);
+        // If the query fails (e.g. Quota Exceeded), we log it instead of crashing.
+      }
     };
 
     // Throttle: this is cheap now (1 read), but still avoid focus bounce churn.
