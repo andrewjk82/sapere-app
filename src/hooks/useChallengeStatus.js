@@ -228,6 +228,10 @@ export const useChallengeStatus = (uid) => {
         if (JSON.stringify(patch) !== JSON.stringify(currentCache)) {
           localCache.set(cacheKey, patch);
           applyStatusFromCache();
+          
+          if (hasNewerDailyReset || hasNewerCalcReset) {
+            window.dispatchEvent(new Event('sapere-challenge-reset-applied'));
+          }
         }
       },
       (err) => console.warn('[useChallengeStatus] sync_meta listener failed:', err),

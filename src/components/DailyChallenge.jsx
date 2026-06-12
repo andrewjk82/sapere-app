@@ -372,6 +372,26 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
     const statColName = selectedChallenge.statCollection
       || (selectedChallenge.challengeType === 'calc' ? 'calc_stats' : 'daily_stats');
 
+  // ── Listen for forced resets (from teacher) ──
+  useEffect(() => {
+    const handleReset = () => {
+      // Abort active quiz/review and return to start
+      if (stepRef.current !== 'start') {
+        setStep('start');
+        setCurrentIdx(0);
+        setUserAnswers([]);
+        setAnswerResults([]);
+        setSubAnswers({});
+        setIsFinishing(false);
+        setElapsedSeconds(null);
+        setSelectedChallenge(null);
+        showToast('Challenge was reset by your teacher. Starting over...', 'info');
+      }
+    };
+    window.addEventListener('sapere-challenge-reset-applied', handleReset);
+    return () => window.removeEventListener('sapere-challenge-reset-applied', handleReset);
+  }, []);
+
     let cancelled = false;
     (async () => {
       // Always resolve the loading state so the modal never spins forever
