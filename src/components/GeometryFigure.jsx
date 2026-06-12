@@ -365,7 +365,7 @@ const GeometryFigure = ({
   // --- Vertex name labels (drawn last, on top) -------------------------
   names.forEach((n) => {
     const [vx, vy] = P(n);
-    if (showPointLabels !== false) {
+    if (showPointLabels !== false && !n.startsWith('_')) {
       let lx, ly;
       if (labelOffsets[n]) {
         lx = vx + labelOffsets[n][0];
