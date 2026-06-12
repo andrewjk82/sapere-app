@@ -100,39 +100,26 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
   useEffect(() => { onChangeRef.current = onChange; }, [onChange]);
   useEffect(() => { onEnterRef.current  = onEnter;  }, [onEnter]);
 
-  // Built-in fraction builder. Every host view's a/b button (and the virtual
-  // keyboard's own fraction key) used to insert an EMPTY-placeholder template
-  // (\frac{#?}{#?}); MathLive's tap/caret navigation inside placeholders is
-  // broken on Android, freezing the keyboard. Instead, ANY attempt to insert
-  // a fraction template opens this builder. It uses its OWN compact digit pad
-  // (no focus, no OS keyboard — the OS keyboard covered half the tablet), and
-  // the COMPLETE \frac{n}{d} is inserted in one step.
-  const [frac, setFrac] = useState(null); // null | { whole, num, den }
-  const [fracActive, setFracActive] = useState('num'); // which box digits go to
-  const [fracMode, setFracMode] = useState('digits'); // 'digits' | 'letters'
-  const openFracBuilder = () => {
-    try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
-    try { mfRef.current?.blur(); } catch (_) { /* ignore */ }
-    setFrac({ whole: '', num: '', den: '' });
-    setFracActive('num');
-  };
-  const openFracBuilderRef = useRef(openFracBuilder);
-  openFracBuilderRef.current = openFracBuilder;
-  const cancelFrac = () => setFrac(null);
-  const commitFrac = () => {
-    const whole = (frac?.whole || '').trim();
-    const num = (frac?.num || '').trim();
-    const den = (frac?.den || '').trim();
-    setFrac(null);
-    if (!num || !den) return;
+  // Fraction insertion. Host a/b buttons (and the virtual keyboard's own
+  // fraction key) send templates containing '#?'. Empty double-placeholder
+  // templates (\frac{#?}{#?}) froze some Android tablets because tap/caret
+  // navigation inside placeholders is broken there — that's why a separate
+  // builder panel used to exist. Instead, every fraction template is now
+  // normalised to \frac{#@}{#?}: MathLive's '#@' token captures the
+  // expression to the LEFT of the caret (or the selection) as the numerator,
+  // and the caret lands directly in the denominator placeholder. Natural
+  // flow: type "2x", tap a/b, type "3", tap ▶. No empty numerator box, no
+  // tap navigation needed; the ◀ ▶ escape arrows cover caret movement on
+  // devices where taps fail, and smart backspace removes empty structures.
+  const insertFraction = () => {
     const mf = mfRef.current;
     if (!mf) return;
     mf.focus();
     try { mf.executeCommand(['switchMode', 'math']); } catch (_) { /* ignore */ }
-    // Greek keys are stored as display chars in the boxes — convert to LaTeX.
-    const toLatex = (s) => s.replace(/π/g, '\\pi ').replace(/θ/g, '\\theta ');
-    mf.insert(`${toLatex(whole)}\\frac{${toLatex(num)}}{${toLatex(den)}}`, { focus: true, format: 'latex', mode: 'math' });
+    mf.insert('\\frac{#@}{#?}', { focus: true, format: 'latex', mode: 'math' });
   };
+  const insertFractionRef = useRef(insertFraction);
+  insertFractionRef.current = insertFraction;
 
   // Track whether the current mf.value change originated from the user
   // (input event) so the sync effect doesn't fight MathLive mid-keystroke.
@@ -169,9 +156,10 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     insert: (latex, options) => {
       const mf = mfRef.current;
       if (!mf) return;
-      // Fraction templates never go into the field — open the builder instead.
+      // Fraction templates are normalised to the #@ form (numerator captured
+      // from the expression left of the caret) — no empty double-placeholder.
       if (typeof latex === 'string' && latex.includes('\\frac') && latex.includes('#?')) {
-        openFracBuilderRef.current?.();
+        insertFractionRef.current?.();
         return;
       }
       mf.focus();
@@ -280,15 +268,14 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
         if (Array.isArray(arr[0])) arr = arr[0];
         const sel = arr[0];
         if (sel === 'deleteBackward') { smartBackspace(); return true; }
-        // The virtual keyboard's own fraction key inserts an EMPTY-placeholder
-        // template (\frac{#@}{#?}) — the exact structure whose tap/caret
-        // navigation is broken on Android and froze the keyboard. Reroute ANY
-        // fraction-template insert to the built-in builder so no empty
-        // placeholder is ever created.
+        // Normalise the virtual keyboard's own fraction key to the #@ form:
+        // the numerator is captured from the expression left of the caret and
+        // the caret lands in the denominator — never an empty numerator
+        // placeholder (the structure whose tap navigation froze Android).
         if (sel === 'insert' && typeof arr[1] === 'string'
-            && arr[1].includes('\\frac') && arr[1].includes('#?')) {
-          try { openFracBuilderRef.current?.(); } catch (_) { /* ignore */ }
-          return true;
+            && arr[1].includes('\\frac') && arr[1].includes('#?')
+            && !arr[1].includes('#@')) {
+          return orig(['insert', '\\frac{#@}{#?}']);
         }
         return orig(command);
       };
@@ -350,7 +337,6 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     if (mf.value !== value) {
       mf.value = value;
     }
-    if (value === '') setFrac(null);   // new question — close the builder too
   }, [value]);
 
   // Placeholder sync.
@@ -377,112 +363,8 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     return () => clearTimeout(t);
   }, [autoFocus]);
 
-  // Builder helpers — its own digit pad writes into the active box, so no
-  // element ever takes focus and no keyboard (OS or MathLive) is involved.
-  const fracTap = (d) => setFrac((f) => {
-    if (!f) return f;
-    const cur = f[fracActive] || '';
-    if (d === '⌫') return { ...f, [fracActive]: cur.slice(0, -1) };
-    // Allow short algebraic terms like "2x" or "3y+1", not just numbers.
-    if (cur.length >= 6) return f;
-    return { ...f, [fracActive]: cur + d };
-  });
-  const fracBox = (field, extra = {}) => ({
-    minWidth: '64px', width: 'auto', padding: '0 10px', boxSizing: 'border-box',
-    height: '44px', display: 'flex', alignItems: 'center',
-    justifyContent: 'center', fontSize: '1.25rem', fontWeight: 700,
-    borderRadius: '10px', background: '#fff', color: '#1e293b',
-    border: fracActive === field ? '3px solid #7c3aed' : '2px solid #c4b5fd',
-    boxShadow: fracActive === field ? '0 0 0 3px rgba(124,58,237,0.18)' : 'none',
-    cursor: 'pointer', userSelect: 'none', ...extra,
-  });
-
   return (
     <div style={{ position: 'relative', width: '100%' }}>
-      {frac && !readOnly && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: '16px', padding: '12px', marginBottom: '10px', borderRadius: '18px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div
-              role="button"
-              aria-label="Whole number (optional)"
-              onPointerDown={(e) => { e.preventDefault(); setFracActive('whole'); }}
-              style={fracBox('whole', { width: '50px', borderStyle: frac.whole ? 'solid' : 'dashed', opacity: frac.whole || fracActive === 'whole' ? 1 : 0.6 })}
-            >
-              {frac.whole || ''}
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
-              <div
-                role="button"
-                aria-label="Numerator"
-                onPointerDown={(e) => { e.preventDefault(); setFracActive('num'); }}
-                style={fracBox('num')}
-              >
-                {frac.num || ''}
-              </div>
-              <div style={{ width: '100%', minWidth: '64px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
-              <div
-                role="button"
-                aria-label="Denominator"
-                onPointerDown={(e) => { e.preventDefault(); setFracActive('den'); }}
-                style={fracBox('den')}
-              >
-                {frac.den || ''}
-              </div>
-            </div>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: fracMode === 'digits' ? 'repeat(4, 44px)' : 'repeat(7, 40px)', gap: '6px' }}>
-            {(fracMode === 'digits'
-              ? ['1', '2', '3', 'x', '4', '5', '6', 'y', '7', '8', '9', '+', '⌫', '0', '−', 'abc']
-              : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'θ', 'π', '+', '−', '⌫', '123']
-            ).map((k) => {
-              const isLetter = /^[a-zθπ]$/.test(k);
-              const isToggle = k === 'abc' || k === '123';
-              return (
-                <button
-                  key={k}
-                  type="button"
-                  onPointerDown={(e) => {
-                    e.preventDefault();
-                    if (isToggle) {
-                      setFracMode((m) => (m === 'digits' ? 'letters' : 'digits'));
-                    } else if (k === '−') {
-                      setFrac((f) => f && { ...f, [fracActive]: (f[fracActive] || '').startsWith('-') ? f[fracActive].slice(1) : `-${f[fracActive] || ''}` });
-                    } else {
-                      fracTap(k);
-                    }
-                  }}
-                  style={{
-                    width: fracMode === 'digits' ? '44px' : '40px', height: '40px', borderRadius: '10px',
-                    border: '1px solid #ddd6fe', background: isToggle ? '#ede9fe' : '#fff',
-                    color: isLetter ? '#7c3aed' : '#4f46e5',
-                    fontSize: isToggle ? '0.78rem' : '1.1rem', fontWeight: 800,
-                    fontStyle: isLetter ? 'italic' : 'normal', cursor: 'pointer', padding: 0,
-                  }}
-                >
-                  {k}
-                </button>
-              );
-            })}
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <button
-              type="button"
-              onPointerDown={(e) => { e.preventDefault(); commitFrac(); }}
-              disabled={!frac.num.trim() || !frac.den.trim()}
-              style={{ height: '44px', padding: '0 16px', borderRadius: '12px', border: 'none', background: (!frac.num.trim() || !frac.den.trim()) ? '#c4b5fd' : '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
-            >
-              Add ✓
-            </button>
-            <button
-              type="button"
-              onPointerDown={(e) => { e.preventDefault(); cancelFrac(); }}
-              style={{ height: '36px', padding: '0 16px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      )}
       <math-field
         ref={mfRef}
         style={{
