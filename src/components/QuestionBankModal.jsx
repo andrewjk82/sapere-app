@@ -1606,7 +1606,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         stampCountsVersion(bankVersion);
       }
       // Keep the per-chapter random-sampling index in sync (non-fatal).
-      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, isActive: true })
+      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, isActive: true, version: bankVersion })
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
 
       questionBankSessionCache.delete(`questions:${chapterId}`);
@@ -1631,7 +1631,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         isActive: false,
         updatedAt: serverTimestamp(),
       });
-      removeQuestionFromIndex(chapterId, id)
+      // One shared version across the index stamp and the counts doc — if
+      // they diverge, the counts doc looks stale and triggers a full rebuild.
+      const bankVersion = Date.now();
+      removeQuestionFromIndex(chapterId, id, bankVersion)
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
       // Aggregate counts doc: −1 for this question's chapter/topic.
       {
@@ -1639,7 +1642,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         applyCountDeltas({
           ...(deleted?.chapterId || chapterId ? { [deleted?.chapterId || chapterId]: -1 } : {}),
           ...(deleted?.topicId ? { [deleted.topicId]: -1 } : {}),
-        }, Date.now());
+        }, bankVersion);
       }
       // Resolve all open reports linked to this question.
       // Query both questionId field and questionData.id (some reports store ID only in questionData).

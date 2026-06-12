@@ -88,11 +88,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     if (!window.confirm(`Delete this question (${q.id})?`)) return;
     try {
       await updateDoc(doc(db, 'questions', q.id), { isActive: false, updatedAt: serverTimestamp() });
-      removeQuestionFromIndex(q.chapterId || chapter?.id, q.id)
+      // One shared version across the index stamp, sync_meta and the counts
+      // doc — if they diverge the counts doc looks stale and triggers a full
+      // rebuild on the next admin Curriculum load.
+      const bankVersion = Date.now();
+      removeQuestionFromIndex(q.chapterId || chapter?.id, q.id, bankVersion)
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
       // Bump the global questions sync_meta so chapter-card counts on the
       // Curriculum page refresh on next visit instead of staying stale.
-      const bankVersion = Date.now();
       await setDoc(doc(db, 'sync_meta', 'questions'), {
         version: bankVersion,
         updatedAt: serverTimestamp(),

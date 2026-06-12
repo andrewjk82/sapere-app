@@ -56,40 +56,82 @@ export const readChapterIndex = async (chapterId) => {
   }
 };
 
-/** Stamp both version docs so a freshly-synced index isn't flagged stale. */
-const stampVersions = async () => {
-  const version = Date.now();
+/**
+ * Stamp both version docs so a freshly-synced index isn't flagged stale.
+ * Callers that already bumped sync_meta/questions (and stamped the aggregate
+ * counts doc) pass their version so all three stay equal — a fresher
+ * Date.now() here would make the counts doc look stale and trigger a full
+ * count rebuild on the next admin load.
+ */
+const stampVersions = async (version) => {
+  const v = Number(version) || Date.now();
   await Promise.all([
-    setDoc(questionsVersionRef(), { version, updatedAt: serverTimestamp() }, { merge: true }),
-    setDoc(metaRef(), { builtVersion: version, updatedAt: serverTimestamp() }, { merge: true }),
+    setDoc(questionsVersionRef(), { version: v, updatedAt: serverTimestamp() }, { merge: true }),
+    setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
+  ]);
+};
+
+/**
+ * Bulk incremental update for the chapter seeder: apply all added/removed
+ * question ids per chapter with arrayUnion/arrayRemove (ZERO reads), then
+ * stamp BOTH version docs with the seeder's version so the next admin
+ * session does not trigger a full questions-collection rebuild scan.
+ * added/removed: { [chapterId]: [questionId, ...] }
+ */
+export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) => {
+  const chapterIds = new Set([...Object.keys(added), ...Object.keys(removed)]);
+  const ops = [];
+  chapterIds.forEach((chapterId) => {
+    if (!chapterId) return;
+    const add = [...new Set((added[chapterId] || []).map(String))];
+    // An id being re-seeded appears in both lists — keep it (add wins).
+    const rem = [...new Set((removed[chapterId] || []).map(String))].filter((id) => !add.includes(id));
+    if (rem.length) {
+      ops.push(setDoc(indexRef(chapterId), {
+        ids: arrayRemove(...rem),
+        updatedAt: serverTimestamp(),
+      }, { merge: true }));
+    }
+    if (add.length) {
+      ops.push(setDoc(indexRef(chapterId), {
+        ids: arrayUnion(...add),
+        updatedAt: serverTimestamp(),
+      }, { merge: true }));
+    }
+  });
+  await Promise.all(ops);
+  const v = Number(version) || Date.now();
+  await Promise.all([
+    setDoc(questionsVersionRef(), { version: v, updatedAt: serverTimestamp() }, { merge: true }),
+    setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
   ]);
 };
 
 /** Incremental: a question was created or (re)activated in a chapter. */
-export const addQuestionToIndex = async (chapterId, questionId) => {
+export const addQuestionToIndex = async (chapterId, questionId, version) => {
   if (!chapterId || !questionId) return;
   await setDoc(indexRef(chapterId), {
     ids: arrayUnion(String(questionId)),
     updatedAt: serverTimestamp(),
   }, { merge: true });
-  await stampVersions();
+  await stampVersions(version);
 };
 
 /** Incremental: a question was deleted or deactivated. */
-export const removeQuestionFromIndex = async (chapterId, questionId) => {
+export const removeQuestionFromIndex = async (chapterId, questionId, version) => {
   if (!chapterId || !questionId) return;
   await setDoc(indexRef(chapterId), {
     ids: arrayRemove(String(questionId)),
     updatedAt: serverTimestamp(),
   }, { merge: true });
-  await stampVersions();
+  await stampVersions(version);
 };
 
 /**
  * Incremental: a question was saved. Handles chapter moves (remove from the
  * old chapter's index, add to the new one) and active-flag changes.
  */
-export const syncQuestionIndexOnSave = async ({ questionId, chapterId, prevChapterId, isActive = true }) => {
+export const syncQuestionIndexOnSave = async ({ questionId, chapterId, prevChapterId, isActive = true, version }) => {
   if (!questionId) return;
   const ops = [];
   if (prevChapterId && prevChapterId !== chapterId) {
@@ -106,7 +148,7 @@ export const syncQuestionIndexOnSave = async ({ questionId, chapterId, prevChapt
   }
   if (ops.length) {
     await Promise.all(ops);
-    await stampVersions();
+    await stampVersions(version);
   }
 };
 

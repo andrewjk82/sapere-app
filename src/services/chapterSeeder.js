@@ -1,6 +1,7 @@
 import { db } from '../firebase/config';
 import { collection, writeBatch, doc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
 import { recountIds } from './questionCountsService';
+import { applySeedToIndexes } from './questionIndexService';
 
 /**
  * Generic chapter question seeder.
@@ -119,12 +120,19 @@ export const seedChapterQuestions = async (chapter) => {
   }
 
   // Track every chapter/topic id touched by this seed (cleared docs + new
-  // docs) so the aggregate counts doc can be re-counted exactly afterwards.
+  // docs) so the aggregate counts doc can be re-counted exactly afterwards,
+  // and the per-chapter question indexes can be updated incrementally
+  // (zero reads) instead of forcing a full questions-collection rebuild.
   const affectedChapterIds = new Set([chapter.chapterId]);
   const affectedTopicIds = new Set([chapter.topicId]);
+  const indexRemoved = {}; // { [chapterId]: [questionId, ...] }
+  const indexAdded = {};
   snap.docs.forEach((d) => {
     const data = d.data();
-    if (data.chapterId) affectedChapterIds.add(data.chapterId);
+    if (data.chapterId) {
+      affectedChapterIds.add(data.chapterId);
+      (indexRemoved[data.chapterId] = indexRemoved[data.chapterId] || []).push(d.id);
+    }
     if (data.topicId) affectedTopicIds.add(data.topicId);
   });
 
@@ -139,24 +147,35 @@ export const seedChapterQuestions = async (chapter) => {
     const batch = writeBatch(db);
     seed.slice(i, i + CHUNK).forEach((raw) => {
       const mapped = mapSeedQuestion(raw, chapter);
-      if (mapped.chapterId) affectedChapterIds.add(mapped.chapterId);
       if (mapped.topicId) affectedTopicIds.add(mapped.topicId);
       const docRef = raw.id ? doc(collRef, raw.id) : doc(collRef);
+      if (mapped.chapterId) {
+        affectedChapterIds.add(mapped.chapterId);
+        (indexAdded[mapped.chapterId] = indexAdded[mapped.chapterId] || []).push(docRef.id);
+      }
       batch.set(docRef, mapped, { merge: false });
     });
     await batch.commit();
   }
-  // Bump the questions sync_meta so the Curriculum chapter cards know to
-  // refetch their per-chapter counts on next mount; without this the cached
-  // "N questions" pill stays at its pre-seed value.
+  // Update the per-chapter sampling indexes incrementally (zero reads) and
+  // stamp BOTH sync_meta/questions.version and question_index/_meta.
+  // builtVersion with the same value — this is what prevents the next admin
+  // session from running ensureQuestionIndexFresh's full questions scan
+  // (~1 read per question in the whole bank).
   const seedVersion = Date.now();
   try {
-    await setDoc(doc(db, 'sync_meta', 'questions'), {
-      version: seedVersion,
-      updatedAt: serverTimestamp(),
-    }, { merge: true });
+    await applySeedToIndexes({ added: indexAdded, removed: indexRemoved, version: seedVersion });
   } catch (err) {
-    console.warn('sync_meta bump after seed failed (non-fatal):', err);
+    console.warn('question index update after seed failed (non-fatal):', err);
+    // Fall back to the plain version bump so chapter-card counts still refresh.
+    try {
+      await setDoc(doc(db, 'sync_meta', 'questions'), {
+        version: seedVersion,
+        updatedAt: serverTimestamp(),
+      }, { merge: true });
+    } catch (err2) {
+      console.warn('sync_meta bump after seed failed (non-fatal):', err2);
+    }
   }
   // Re-count ONLY the touched ids into the aggregate counts doc (a few dozen
   // aggregation queries) and stamp it with the same version, so admin clients
