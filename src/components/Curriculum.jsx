@@ -266,6 +266,16 @@ const getCourseFromEntry = (entry) => {
 
 const CHAPTER_SEED_REGISTRY = [
   {
+    chapterId: 'y11a-2',
+    chapterTitle: 'Chapter 2: Surds and Indices',
+    topicId: 'y11a-2b',
+    topicCode: '2B',
+    topicTitle: 'Surds and their arithmetic',
+    year: 'Year 11',
+    seed: Y11A_CH2_QUESTIONS,
+    label: 'Y11 Ch2 · Surds and their arithmetic',
+  },
+  {
     chapterId: 'y12a-3',
     chapterTitle: 'Chapter 3: Curve-sketching using the derivative',
     topicId: 'y12a-3A',
@@ -2172,6 +2182,7 @@ const Curriculum = () => {
 
         const nextCounts = {};
         // Fallback (aggregate doc missing/stale — e.g. a legacy import tool
+import { Y11A_CH2_QUESTIONS } from '../constants/seedYear11aCh2Questions.js';
         // bumped sync_meta only): rebuild every count once with bounded
         // concurrency, then WRITE the result back to the aggregate doc so
         // every other admin session reads 1 doc instead of repeating this.
