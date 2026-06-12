@@ -2229,6 +2229,54 @@ const Curriculum = () => {
     return () => unsub();
   }, []);
 
+  // Admin utility: verify the aggregate counts doc against live Firestore
+  // counts for the selected year only (~150 aggregation reads, on demand).
+  // Reports mismatches and writes the corrected values back.
+  const handleVerifyCounts = async () => {
+    const chapterIds = displayData.map((ch) => ch.id).filter(Boolean);
+    const topicIds = displayData.flatMap((ch) => (ch.topics || []).map((t) => t.id)).filter(Boolean);
+    const totalIds = chapterIds.length + topicIds.length;
+    if (totalIds === 0) return;
+    if (!window.confirm(`Verify ${totalIds} counts for ${selectedYear} against live Firestore? (~${totalIds} reads)`)) return;
+    setIsMigrating(true);
+    try {
+      const agg = await readAggregatedCounts();
+      const live = {};
+      const runLive = async (ids, field) => {
+        for (let i = 0; i < ids.length; i += 40) {
+          await Promise.all(ids.slice(i, i + 40).map(async (id) => {
+            try {
+              const snap = await getCountFromServer(query(collection(db, 'questions'), where(field, '==', id)));
+              live[id] = snap.data().count || 0;
+            } catch { /* skip — reported as unverified */ }
+          }));
+        }
+      };
+      await runLive(chapterIds, 'chapterId');
+      await runLive(topicIds, 'topicId');
+
+      const mismatches = Object.entries(live)
+        .filter(([id, n]) => (Number(agg?.counts?.[id]) || 0) !== n)
+        .map(([id, n]) => ({ id, aggregate: Number(agg?.counts?.[id]) || 0, live: n }));
+
+      if (mismatches.length === 0) {
+        showToast(`✅ ${selectedYear}: all ${Object.keys(live).length} counts match the aggregate doc.`, 'success');
+      } else {
+        console.table(mismatches);
+        // Self-heal: merge the live values into the aggregate doc (keep its
+        // version so we don't invalidate other clients' caches).
+        await writeAggregatedCounts({ ...(agg?.counts || {}), ...live }, agg?.version || Date.now());
+        setQuestionCounts((prev) => ({ ...prev, ...live }));
+        showToast(`⚠️ ${mismatches.length} mismatched counts found and corrected (see console for details).`, 'info');
+      }
+    } catch (err) {
+      console.error('count verification failed:', err);
+      showToast(`Count verification failed: ${err.code || err.message}`, 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const calculateHscBand = (pct) => {
     if (pct >= 90) return { label: 'Band 6', className: 'band-6', color: '#f59e0b' };
     if (pct >= 80) return { label: 'Band 5', className: 'band-5', color: '#6366f1' };
@@ -3164,6 +3212,19 @@ const Curriculum = () => {
                         <div className="sync-card-actions">
                           <button onClick={handleSeedCurveQuestion} disabled={isMigrating} className="sync-btn success">
                             ➕ Add Curve Q
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Verify aggregate question counts vs live Firestore */}
+                      <div className="sync-card">
+                        <div className="sync-card-info">
+                          <span className="sync-card-badge generic">UTILS</span>
+                          <span className="sync-card-title">Verify question counts ({selectedYear})</span>
+                        </div>
+                        <div className="sync-card-actions">
+                          <button onClick={handleVerifyCounts} disabled={isMigrating} className="sync-btn primary-grad">
+                            ✔️ Verify Counts
                           </button>
                         </div>
                       </div>
