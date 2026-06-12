@@ -380,11 +380,13 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     if (!f) return f;
     const cur = f[fracActive] || '';
     if (d === '⌫') return { ...f, [fracActive]: cur.slice(0, -1) };
-    if (cur.length >= 4) return f;
+    // Allow short algebraic terms like "2x" or "3y+1", not just numbers.
+    if (cur.length >= 6) return f;
     return { ...f, [fracActive]: cur + d };
   });
   const fracBox = (field, extra = {}) => ({
-    width: '64px', height: '44px', display: 'flex', alignItems: 'center',
+    minWidth: '64px', width: 'auto', padding: '0 10px', boxSizing: 'border-box',
+    height: '44px', display: 'flex', alignItems: 'center',
     justifyContent: 'center', fontSize: '1.25rem', fontWeight: 700,
     borderRadius: '10px', background: '#fff', color: '#1e293b',
     border: fracActive === field ? '3px solid #7c3aed' : '2px solid #c4b5fd',
@@ -414,7 +416,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
               >
                 {frac.num || ''}
               </div>
-              <div style={{ width: '64px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
+              <div style={{ width: '100%', minWidth: '64px', height: '3px', borderRadius: '2px', background: '#7c3aed' }} />
               <div
                 role="button"
                 aria-label="Denominator"
@@ -426,7 +428,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
             </div>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 44px)', gap: '6px' }}>
-            {['1', '2', '3', '4', '5', '6', '7', '8', '9', '⌫', '0', '−'].map((k) => (
+            {['1', '2', '3', '4', '5', '6', '7', '8', '9', '⌫', '0', '−', 'x', 'y', '+'].map((k) => (
               <button
                 key={k}
                 type="button"
@@ -438,7 +440,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
                     fracTap(k);
                   }
                 }}
-                style={{ width: '44px', height: '40px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: '#4f46e5', fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', padding: 0 }}
+                style={{ width: '44px', height: '40px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: ['x', 'y'].includes(k) ? '#7c3aed' : '#4f46e5', fontSize: '1.1rem', fontWeight: 800, fontStyle: ['x', 'y'].includes(k) ? 'italic' : 'normal', cursor: 'pointer', padding: 0 }}
               >
                 {k}
               </button>
