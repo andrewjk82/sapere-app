@@ -387,11 +387,35 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
           return;
         }
         const data = snap.data();
+        
+        const liveQuestions = await Promise.all(
+          (data.questions || []).map(async (q) => {
+            if (!q.id || q.id.startsWith("gen-")) return q;
+            try {
+              const qSnap = await getDoc(doc(db, "questions", q.id));
+              if (qSnap.exists()) {
+                const liveData = qSnap.data();
+                return {
+                  ...q,
+                  solution: liveData.solution,
+                  solutionSteps: liveData.solutionSteps,
+                  hint: liveData.hint,
+                  graphData: liveData.graphData,
+                  subQuestions: liveData.subQuestions,
+                };
+              }
+            } catch (err) {
+              console.warn("Failed to fetch live question:", q.id, err);
+            }
+            return q;
+          })
+        );
+
         setSelectedChallenge(prev => {
           if (!prev || prev.id !== selectedChallenge.id) return prev;
           return {
             ...prev,
-            questions: data.questions || [],
+            questions: liveQuestions,
             userAnswers: data.userAnswers || [],
             answerResults: data.answerResults || [],
             detailSnapshotLoaded: true,
