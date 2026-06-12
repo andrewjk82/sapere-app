@@ -245,6 +245,7 @@ import { CRANBROOK_2023_SIMILAR_QUESTIONS } from '../constants/seedCranbrook2023
 import { CTHS_2020_QUESTIONS } from '../constants/seedCherrybrookTech2020Questions.js';
 import { CTHS_2020_SIMILAR_QUESTIONS } from '../constants/seedCherrybrookTech2020SimilarQuestions.js';
 import { Y11A_CH2_QUESTIONS } from '../constants/seedYear11aCh2Questions.js';
+import { Y11A_CH2C_QUESTIONS } from '../constants/seedYear11aCh2CQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -2193,7 +2194,6 @@ const Curriculum = () => {
 
         const nextCounts = {};
         // Fallback (aggregate doc missing/stale — e.g. a legacy import tool
-import { Y11A_CH2C_QUESTIONS } from '../constants/seedYear11aCh2CQuestions.js';
         // bumped sync_meta only): rebuild every count once with bounded
         // concurrency, then WRITE the result back to the aggregate doc so
         // every other admin session reads 1 doc instead of repeating this.
