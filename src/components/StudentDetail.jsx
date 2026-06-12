@@ -713,7 +713,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
     const buildListener = (colPath, statLabel) => {
       const unsubDaily = onSnapshot(
-        query(collection(db, colPath, "daily_stats"), orderBy(documentId(), "desc"), limit(STAT_HISTORY_LIMIT)),
+        query(collection(db, colPath, "daily_stats"), orderBy("date", "desc"), limit(STAT_HISTORY_LIMIT)),
         (snap) => {
           snap.docs.forEach((d) => {
             const key = `daily_stats:${d.id}`;
@@ -733,7 +733,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         (err) => console.warn(`daily_stats listener error (${statLabel}):`, err?.code)
       );
       const unsubCalc = onSnapshot(
-        query(collection(db, colPath, "calc_stats"), orderBy(documentId(), "desc"), limit(STAT_HISTORY_LIMIT)),
+        query(collection(db, colPath, "calc_stats"), orderBy("date", "desc"), limit(STAT_HISTORY_LIMIT)),
         (snap) => {
           snap.docs.forEach((d) => {
             const key = `calc_stats:${d.id}`;
