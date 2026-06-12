@@ -269,7 +269,7 @@ const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y11a-2',
     chapterTitle: 'Chapter 2: Surds and Indices',
-    topicId: 'y11a-2b',
+    topicId: 'y11a-2B',
     topicCode: '2B',
     topicTitle: 'Surds and their arithmetic',
     year: 'Year 11',
