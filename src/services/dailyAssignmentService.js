@@ -361,7 +361,9 @@ const pickBalancedManualQuestions = (manualQuestions, questionCount) => {
   return selected;
 };
 
-// Chapters the assignment will draw from today (≤6 per assigned year).
+// Chapters the assignment will draw from today.
+// All assigned chapters are considered so that questions can be found
+// even if they are heavily clustered in only a few chapters.
 const pickChaptersToQuery = (targets) => {
   const chaptersByYear = {};
   Array.from(targets.targetChapterIds).forEach((chapterId) => {
@@ -369,9 +371,8 @@ const pickChaptersToQuery = (targets) => {
     if (!chaptersByYear[yr]) chaptersByYear[yr] = [];
     chaptersByYear[yr].push(chapterId);
   });
-  const MAX_PER_YEAR = 6;
   return Object.values(chaptersByYear).flatMap((ids) =>
-    shuffle([...ids]).slice(0, MAX_PER_YEAR),
+    shuffle([...ids])
   );
 };
 
@@ -472,8 +473,10 @@ const fetchManualQuestions = async (targets, { questionCount = 10, recentlySeen 
 
   // Unindexed chapters: legacy random-window fallback.
   const legacyChapters = chapterPools.filter((p) => p.ids === null).map((p) => p.chapterId);
+  // Cap legacy queries to 6 chapters to prevent burning read quota if indexes are missing
+  const cappedLegacyChapters = shuffle(legacyChapters).slice(0, 6);
   const legacyDocs = (await Promise.all(
-    legacyChapters.map((chapterId) => fetchChapterQuestionsLegacy(chapterId)),
+    cappedLegacyChapters.map((chapterId) => fetchChapterQuestionsLegacy(chapterId)),
   )).flat();
 
   const questions = [...indexedDocs, ...legacyDocs]
