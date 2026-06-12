@@ -109,6 +109,7 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
   // the COMPLETE \frac{n}{d} is inserted in one step.
   const [frac, setFrac] = useState(null); // null | { whole, num, den }
   const [fracActive, setFracActive] = useState('num'); // which box digits go to
+  const [fracMode, setFracMode] = useState('digits'); // 'digits' | 'letters'
   const openFracBuilder = () => {
     try { window.mathVirtualKeyboard?.hide(); } catch (_) { /* ignore */ }
     try { mfRef.current?.blur(); } catch (_) { /* ignore */ }
@@ -128,7 +129,9 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
     if (!mf) return;
     mf.focus();
     try { mf.executeCommand(['switchMode', 'math']); } catch (_) { /* ignore */ }
-    mf.insert(`${whole}\\frac{${num}}{${den}}`, { focus: true, format: 'latex', mode: 'math' });
+    // Greek keys are stored as display chars in the boxes — convert to LaTeX.
+    const toLatex = (s) => s.replace(/π/g, '\\pi ').replace(/θ/g, '\\theta ');
+    mf.insert(`${toLatex(whole)}\\frac{${toLatex(num)}}{${toLatex(den)}}`, { focus: true, format: 'latex', mode: 'math' });
   };
 
   // Track whether the current mf.value change originated from the user
@@ -427,24 +430,39 @@ const MathInput = forwardRef(({ value = '', onChange, onEnter, readOnly = false,
               </div>
             </div>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 44px)', gap: '6px' }}>
-            {['1', '2', '3', '4', '5', '6', '7', '8', '9', '⌫', '0', '−', 'x', 'y', '+'].map((k) => (
-              <button
-                key={k}
-                type="button"
-                onPointerDown={(e) => {
-                  e.preventDefault();
-                  if (k === '−') {
-                    setFrac((f) => f && { ...f, [fracActive]: (f[fracActive] || '').startsWith('-') ? f[fracActive].slice(1) : `-${f[fracActive] || ''}` });
-                  } else {
-                    fracTap(k);
-                  }
-                }}
-                style={{ width: '44px', height: '40px', borderRadius: '10px', border: '1px solid #ddd6fe', background: '#fff', color: ['x', 'y'].includes(k) ? '#7c3aed' : '#4f46e5', fontSize: '1.1rem', fontWeight: 800, fontStyle: ['x', 'y'].includes(k) ? 'italic' : 'normal', cursor: 'pointer', padding: 0 }}
-              >
-                {k}
-              </button>
-            ))}
+          <div style={{ display: 'grid', gridTemplateColumns: fracMode === 'digits' ? 'repeat(4, 44px)' : 'repeat(7, 40px)', gap: '6px' }}>
+            {(fracMode === 'digits'
+              ? ['1', '2', '3', 'x', '4', '5', '6', 'y', '7', '8', '9', '+', '⌫', '0', '−', 'abc']
+              : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'θ', 'π', '+', '−', '⌫', '123']
+            ).map((k) => {
+              const isLetter = /^[a-zθπ]$/.test(k);
+              const isToggle = k === 'abc' || k === '123';
+              return (
+                <button
+                  key={k}
+                  type="button"
+                  onPointerDown={(e) => {
+                    e.preventDefault();
+                    if (isToggle) {
+                      setFracMode((m) => (m === 'digits' ? 'letters' : 'digits'));
+                    } else if (k === '−') {
+                      setFrac((f) => f && { ...f, [fracActive]: (f[fracActive] || '').startsWith('-') ? f[fracActive].slice(1) : `-${f[fracActive] || ''}` });
+                    } else {
+                      fracTap(k);
+                    }
+                  }}
+                  style={{
+                    width: fracMode === 'digits' ? '44px' : '40px', height: '40px', borderRadius: '10px',
+                    border: '1px solid #ddd6fe', background: isToggle ? '#ede9fe' : '#fff',
+                    color: isLetter ? '#7c3aed' : '#4f46e5',
+                    fontSize: isToggle ? '0.78rem' : '1.1rem', fontWeight: 800,
+                    fontStyle: isLetter ? 'italic' : 'normal', cursor: 'pointer', padding: 0,
+                  }}
+                >
+                  {k}
+                </button>
+              );
+            })}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <button
