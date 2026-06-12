@@ -2098,6 +2098,20 @@ const Curriculum = () => {
     return map;
   }, []);
 
+  // Seed 문제를 문제별 topicId 기준으로 집계 — 시험지 seed(chapterId 'exam:…')의
+  // 문제들은 각자 다른 토픽(y12a-4A 등)에 속하므로, 챕터 카드가 Firestore 쿼리
+  // 실패(쿼터 소진) 시에도 토픽 합산으로 정확한 개수를 보여줄 수 있게 한다.
+  const seedCountByTopic = useMemo(() => {
+    const map = {};
+    CHAPTER_SEED_REGISTRY.forEach(({ seed }) => {
+      if (!Array.isArray(seed)) return;
+      seed.forEach((q) => {
+        if (q && q.topicId) map[q.topicId] = (map[q.topicId] || 0) + 1;
+      });
+    });
+    return map;
+  }, []);
+
 
   const countTopicIds = useMemo(() => {
     const ids = new Set();
@@ -2587,7 +2601,7 @@ const Curriculum = () => {
                   {/* Total question count: prefer seed count; fall back to Firestore count for chapters with no seed entry */}
                   {(() => {
                     const total = displayData.reduce((sum, ch) => {
-                      const topicSum = (ch.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
+                      const topicSum = (ch.topics || []).reduce((s, t) => s + Math.max(questionCounts[t.id] || 0, seedCountByTopic[t.id] || 0), 0);
                       const cnt = Math.max(seedCountByChapter[ch.id] || 0, questionCounts[ch.id] || 0, topicSum);
                       return sum + cnt;
                     }, 0);
@@ -2653,7 +2667,7 @@ const Curriculum = () => {
                     fallbackData = Object.values(fallbackData).flat();
                   }
                   const total = fallbackData.reduce((sum, ch) => {
-                    const topicSum = (ch.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
+                    const topicSum = (ch.topics || []).reduce((s, t) => s + Math.max(questionCounts[t.id] || 0, seedCountByTopic[t.id] || 0), 0);
                     const cnt = Math.max(seedCountByChapter[ch.id] || 0, questionCounts[ch.id] || 0, topicSum);
                     return sum + cnt;
                   }, 0);
@@ -3174,7 +3188,7 @@ const Curriculum = () => {
                       <p className="chapter-card__meta">
                         {chapter.topics?.length ? `${chapter.topics.length} topics` : 'Core unit'}
                         {isAdmin && (() => {
-                          const topicSum = (chapter.topics || []).reduce((s, t) => s + (questionCounts[t.id] || 0), 0);
+                          const topicSum = (chapter.topics || []).reduce((s, t) => s + Math.max(questionCounts[t.id] || 0, seedCountByTopic[t.id] || 0), 0);
                           const cnt = Math.max(seedCountByChapter[chapter.id] || 0, questionCounts[chapter.id] || 0, topicSum);
                           return cnt > 0 ? (
                             <span className="chapter-card__meta-pill"> · {cnt} questions</span>
