@@ -293,6 +293,22 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               </div>
             </div>
             <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: isMobile ? '0 20px' : '0' }}>
+              {/* Daily challenge nudge — sits between the greeting and the
+                  Journey Map. Calm pastel-green before 5 PM, escalating toward
+                  urgent red on the mascot as midnight nears. Finished tasks
+                  drop out; both done → nothing renders. */}
+              {todayTasks && (
+                <DailyNudgeCards
+                  tasks={[
+                    { id: 'challenge', label: 'Daily Practice', kind: 'practice', done: todayTasks.dailyDone },
+                    ...(profile?.calculationEnabled !== false
+                      ? [{ id: 'sprint', label: 'Calculation Sprint', kind: 'sprint', done: todayTasks.calcDone }]
+                      : []),
+                  ]}
+                  onOpen={() => setActiveTab('Challenge')}
+                  style={{ gridTemplateColumns: '1fr', gap: isMobile ? '16px' : '20px' }}
+                />
+              )}
               {/* Journey Map snapshot */}
               <JourneyMapSnapshot
                 profile={profile}
@@ -326,24 +342,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem', color: '#cbd5e1' }}>No past lessons.</p>}
               </div>
             </div>
-          </div>
-        )}
-
-        {/* Daily challenge nudge cards — calm pastel-green before 5 PM,
-            escalating to urgent pastel-red with a shaking face toward
-            midnight. One card per unfinished task; finished tasks drop out. */}
-        {!isAdmin && todayTasks && (
-          <div style={{ margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%' }}>
-            <DailyNudgeCards
-              tasks={[
-                { id: 'challenge', label: 'Daily Practice', kind: 'practice', done: todayTasks.dailyDone },
-                ...(profile?.calculationEnabled !== false
-                  ? [{ id: 'sprint', label: 'Calculation Sprint', kind: 'sprint', done: todayTasks.calcDone }]
-                  : []),
-              ]}
-              onOpen={() => setActiveTab('Challenge')}
-              style={isMobile ? { gridTemplateColumns: '1fr' } : undefined}
-            />
           </div>
         )}
 

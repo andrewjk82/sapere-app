@@ -167,7 +167,10 @@ function NudgeCard({ task, t, onOpen }) {
   const { msg, sub } = COPY[kind][stage];
   const watch = WATCH[stage];
   const accent = rampMix(t, 'accent');
-  const ink = rampMix(t, 'ink');
+  // Card chrome stays on-theme (light + indigo); only the mascot tile escalates.
+  const THEME = '#6366f1';
+  const heading = '#1e1b4b';
+  const muted = '#64748b';
   const urgent = t >= 0.5;
   const amp = (1.2 + t * 4.5).toFixed(2);
   const shakeDur = (0.85 - t * 0.45).toFixed(2);
@@ -177,35 +180,39 @@ function NudgeCard({ task, t, onOpen }) {
   return (
     <div className="dn-rise" style={{
       '--dn-accent': accent, position: 'relative', overflow: 'hidden',
-      display: 'flex', alignItems: 'center', gap: 22, padding: '26px 28px',
-      borderRadius: 26, border: `1.5px solid ${rampMix(t, 'border')}`,
-      background: `linear-gradient(135deg, ${rampMix(t, 'bg1')}, ${rampMix(t, 'bg2')})`,
-      boxShadow: `0 14px 34px ${rgba(accent, 0.24)}`,
+      display: 'flex', alignItems: 'center', gap: 16, padding: '16px 18px',
+      borderRadius: 24, border: '1px solid #eceaf6', background: '#fff',
+      boxShadow: '0 12px 30px rgba(99,102,241,0.10)',
       fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
-      transition: 'background .9s ease, border-color .9s ease, box-shadow .9s ease',
     }}>
-      {/* avatar */}
-      <div style={{ position: 'relative', width: 92, height: 92, flexShrink: 0, display: 'grid', placeItems: 'center' }}>
-        <div style={{ position: 'absolute', inset: 0, borderRadius: 26, background: 'rgba(255,255,255,0.66)', border: '1px solid rgba(255,255,255,0.7)', boxShadow: `inset 0 1px 0 rgba(255,255,255,0.8), 0 8px 18px ${rgba(accent, 0.24)}` }} />
+      {/* avatar tile — the part whose colour escalates as the deadline nears */}
+      <div style={{ position: 'relative', width: 68, height: 68, flexShrink: 0, display: 'grid', placeItems: 'center' }}>
+        <div style={{
+          position: 'absolute', inset: 0, borderRadius: 18,
+          background: `linear-gradient(135deg, ${rampMix(t, 'bg1')}, ${rampMix(t, 'bg2')})`,
+          border: `1px solid ${rampMix(t, 'border')}`,
+          boxShadow: `0 6px 14px ${rgba(accent, 0.22)}`,
+          transition: 'background .9s ease, border-color .9s ease, box-shadow .9s ease',
+        }} />
         <Sparkles show={t < 0.2} />
         <Steam show={t >= 0.78} accent={accent} />
         <div className={urgent ? 'dn-face--urgent' : 'dn-face--calm'}
           style={{ position: 'relative', transformOrigin: '50% 70%', '--dn-amp': amp, '--dn-shakedur': shakeDur + 's' }}>
-          <MoodFace t={t} size={66} />
+          <MoodFace t={t} size={46} />
         </div>
       </div>
 
       {/* body */}
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', color: ink, opacity: 0.85, marginBottom: 6 }}>
-          <span style={{ width: 7, height: 7, borderRadius: '50%', background: accent, boxShadow: `0 0 0 3px ${rgba(accent, 0.18)}` }} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 7, fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', color: muted, marginBottom: 4 }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', background: accent, boxShadow: `0 0 0 3px ${rgba(accent, 0.18)}`, transition: 'background .9s ease' }} />
           {task.label} · Not done yet
         </div>
-        <p style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: 'clamp(1.15rem, 1.9vw, 1.5rem)', lineHeight: 1.2, letterSpacing: '-0.01em', color: ink, margin: 0, textWrap: 'pretty' }}>{msg}</p>
-        <p style={{ fontSize: '0.86rem', fontWeight: 600, color: ink, opacity: 0.72, margin: '7px 0 0' }}>{sub}</p>
+        <p style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800, fontSize: '0.98rem', lineHeight: 1.25, letterSpacing: '-0.01em', color: heading, margin: 0, textWrap: 'pretty' }}>{msg}</p>
+        <p style={{ fontSize: '0.76rem', fontWeight: 600, color: muted, margin: '4px 0 0' }}>{sub}</p>
         {watch && (
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 7, marginTop: 11, padding: '6px 12px', borderRadius: 999, background: 'rgba(255,255,255,0.6)', border: `1px solid ${rampMix(t, 'border')}`, fontSize: '0.76rem', fontWeight: 800, color: ink }}>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ animation: 'dn-eyeblink 3.4s steps(1) infinite' }}>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 8, padding: '4px 10px', borderRadius: 999, background: '#f5f3ff', border: '1px solid #ece9fb', fontSize: '0.68rem', fontWeight: 800, color: THEME }}>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ animation: 'dn-eyeblink 3.4s steps(1) infinite' }}>
               <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" /><circle cx="12" cy="12" r="3" />
             </svg>
             {watch}
@@ -215,8 +222,8 @@ function NudgeCard({ task, t, onOpen }) {
 
       {/* action */}
       <button className="dn-go" onClick={open} aria-label={`Open ${task.label}`}
-        style={{ flexShrink: 0, width: 54, height: 54, borderRadius: 16, border: 'none', cursor: 'pointer', display: 'grid', placeItems: 'center', color: '#fff', background: accent, boxShadow: `0 10px 22px ${rgba(accent, 0.24)}`, transition: 'transform .2s' }}>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+        style={{ flexShrink: 0, width: 44, height: 44, borderRadius: 14, border: 'none', cursor: 'pointer', display: 'grid', placeItems: 'center', color: '#fff', background: THEME, boxShadow: '0 8px 18px rgba(99,102,241,0.28)', transition: 'transform .2s' }}>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
           <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
         </svg>
       </button>
