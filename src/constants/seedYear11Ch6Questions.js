@@ -950,6 +950,23 @@ export const Y11_CH6B_QUESTIONS = [
             }
           },
           {
+            "type": "point",
+            "id": "N_S",
+            "coords": [
+              0,
+              5
+            ],
+            "name": "",
+            "label": {
+              "offset": [
+                0,
+                0
+              ]
+            },
+            "color": "none",
+            "size": 0
+          },
+          {
             "type": "segment",
             "from": "S",
             "to": "D"
@@ -976,10 +993,7 @@ export const Y11_CH6B_QUESTIONS = [
           {
             "type": "arrow",
             "from": "S",
-            "to": [
-              0,
-              5
-            ],
+            "to": "N_S",
             "color": "slate"
           },
           {
@@ -1108,6 +1122,17 @@ export const Y11_CH6B_QUESTIONS = [
             }
           },
           {
+            "type": "point",
+            "id": "W_end",
+            "coords": [
+              5,
+              5
+            ],
+            "name": "",
+            "color": "none",
+            "size": 0
+          },
+          {
             "type": "segment",
             "from": "W",
             "to": "B"
@@ -1134,14 +1159,8 @@ export const Y11_CH6B_QUESTIONS = [
           {
             "type": "line",
             "through": [
-              [
-                0,
-                5
-              ],
-              [
-                5,
-                5
-              ]
+              "W",
+              "W_end"
             ],
             "color": "slate",
             "dash": 2
@@ -1551,6 +1570,17 @@ export const Y11_CH6B_QUESTIONS = [
             }
           },
           {
+            "type": "point",
+            "id": "T_end",
+            "coords": [
+              5,
+              3
+            ],
+            "name": "",
+            "color": "none",
+            "size": 0
+          },
+          {
             "type": "segment",
             "from": "T",
             "to": "B"
@@ -1577,14 +1607,8 @@ export const Y11_CH6B_QUESTIONS = [
           {
             "type": "line",
             "through": [
-              [
-                0,
-                3
-              ],
-              [
-                5,
-                3
-              ]
+              "T",
+              "T_end"
             ],
             "color": "slate",
             "dash": 2
@@ -1698,6 +1722,17 @@ export const Y11_CH6B_QUESTIONS = [
             }
           },
           {
+            "type": "point",
+            "id": "N_P",
+            "coords": [
+              0,
+              3
+            ],
+            "name": "",
+            "color": "none",
+            "size": 0
+          },
+          {
             "type": "segment",
             "from": "P",
             "to": "Q"
@@ -1724,10 +1759,7 @@ export const Y11_CH6B_QUESTIONS = [
           {
             "type": "arrow",
             "from": "P",
-            "to": [
-              0,
-              3
-            ],
+            "to": "N_P",
             "color": "slate"
           },
           {
@@ -1886,6 +1918,17 @@ export const Y11_CH6B_QUESTIONS = [
             }
           },
           {
+            "type": "point",
+            "id": "N_X",
+            "coords": [
+              0,
+              1
+            ],
+            "name": "",
+            "color": "none",
+            "size": 0
+          },
+          {
             "type": "segment",
             "from": "X",
             "to": "Y"
@@ -1912,10 +1955,7 @@ export const Y11_CH6B_QUESTIONS = [
           {
             "type": "arrow",
             "from": "X",
-            "to": [
-              0,
-              1
-            ],
+            "to": "N_X",
             "color": "slate"
           },
           {
@@ -2053,6 +2093,28 @@ export const Y11_CH6B_QUESTIONS = [
             }
           },
           {
+            "type": "point",
+            "id": "N_P",
+            "coords": [
+              0,
+              5
+            ],
+            "name": "",
+            "color": "none",
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "N_Q",
+            "coords": [
+              3.46,
+              3.5
+            ],
+            "name": "",
+            "color": "none",
+            "size": 0
+          },
+          {
             "type": "segment",
             "from": "P",
             "to": "Q"
@@ -2079,19 +2141,13 @@ export const Y11_CH6B_QUESTIONS = [
           {
             "type": "arrow",
             "from": "P",
-            "to": [
-              0,
-              5
-            ],
+            "to": "N_P",
             "color": "slate"
           },
           {
             "type": "arrow",
             "from": "Q",
-            "to": [
-              3.46,
-              3.5
-            ],
+            "to": "N_Q",
             "color": "slate"
           }
         ]
