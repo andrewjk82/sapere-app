@@ -222,7 +222,7 @@ const shuffle = (items) => {
   return arr;
 };
 
-const buildDailyTargets = (studentProfile = {}) => {
+export const buildDailyTargets = (studentProfile = {}) => {
   const config = studentProfile.dailyPracticeConfig || {};
   const hasConfigYears = Array.isArray(config.years) && config.years.length > 0;
   const hasConfigChapters = Array.isArray(config.chapters) && config.chapters.length > 0;
@@ -403,7 +403,7 @@ const fetchChapterQuestionsLegacy = async (chapterId, fetchLimit = 100) => {
 };
 
 // Fetch specific questions by ID (Firestore `in` allows 30 IDs per query).
-const fetchQuestionsByIds = async (ids) => {
+export const fetchQuestionsByIds = async (ids) => {
   const qRef = collection(db, "questions");
   const batches = [];
   for (let i = 0; i < ids.length; i += 30) {
@@ -547,123 +547,37 @@ const hashGeneratedQuestion = (question) => {
 };
 
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
-  let targets = buildDailyTargets(studentProfile);
-  const recentlySeen = await fetchRecentlySeenQuestionIds(uid);
-  const { questions: manualQuestions, pruneIds } = await fetchManualQuestions(
-    targets,
-    { questionCount, recentlySeen },
-  );
+  const { ensurePracticePool, selectDailyQuestions } = await import("./practicePoolService");
 
-  // Recycled chapters: clear their seen entries so the next cycle is tracked
-  // fresh (fire-and-forget — selection already treated them as unseen).
-  if (uid && pruneIds.length) pruneSeenQuestions(uid, pruneIds);
+  // 1. 풀 초기화 / 커리큘럼 변경 감지 (이미 최신이면 1 read만 발생)
+  await ensurePracticePool(uid, studentProfile);
 
-  // The pool is already seen-filtered, uniformly sampled, and chapter-balanced
-  // (legacy-fallback chapters excepted); prefer unseen for those too, then top
-  // up with seen ones instead of the old all-or-nothing fallback.
-  const unseenManual = manualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
-  const seenManual = manualQuestions.filter((q) => recentlySeen.has(String(q.id)));
-  const poolToUse = [
-    ...pickBalancedManualQuestions(unseenManual, questionCount),
-    ...pickBalancedManualQuestions(seenManual, questionCount),
-  ];
-  let selectedManual = poolToUse.slice(0, questionCount);
+  // 2. 풀에서 균등+약점 보충 알고리즘으로 ID 선택 (1 read)
+  const { selectedIds, chapterBreakdown } = await selectDailyQuestions(uid, questionCount);
 
-  // For Year 1–6 only: fall back to AI-generated questions when seed pool is insufficient.
-  const needsAiFallback = targets.assignedYears.every((yr) => (getYearNumber(yr) ?? 99) <= 6);
-  let numAI = needsAiFallback ? Math.max(0, questionCount - selectedManual.length) : 0;
+  // 3. 선택된 ID로 실제 문제 내용 fetch (~2 reads)
+  const rawDocs = selectedIds.length ? await fetchQuestionsByIds(selectedIds) : [];
 
-  // --- FALLBACK LOGIC FOR SENIOR STUDENTS ---
-  // If no questions were found for the specifically assigned chapters/topics,
-  // fall back to the entire year's curriculum pool.
-  if (selectedManual.length === 0 && numAI === 0) {
-    console.warn("No questions found for assigned chapters. Falling back to entire year's pool...");
-    const fallbackProfile = {
-      ...studentProfile,
-      assignedChapters: [], // Clear specific chapter assignment to force year-wide target pool
-      dailyPracticeConfig: {
-        ...(studentProfile.dailyPracticeConfig || {}),
-        chapters: [], // Clear daily config chapters as well
-      }
-    };
-    try {
-      const fallbackTargets = buildDailyTargets(fallbackProfile);
-      const { questions: fallbackManualQuestions, pruneIds: fallbackPrunes } = await fetchManualQuestions(
-        fallbackTargets,
-        { questionCount, recentlySeen },
-      );
-      if (uid && fallbackPrunes.length) pruneSeenQuestions(uid, fallbackPrunes);
-      const fallbackUnseen = fallbackManualQuestions.filter((q) => !recentlySeen.has(String(q.id)));
-      const fallbackSeen = fallbackManualQuestions.filter((q) => recentlySeen.has(String(q.id)));
-      selectedManual = [
-        ...pickBalancedManualQuestions(fallbackUnseen, questionCount),
-        ...pickBalancedManualQuestions(fallbackSeen, questionCount),
-      ].slice(0, questionCount);
+  // ID 순서 보존 (selectDailyQuestions가 이미 셔플 완료)
+  const orderById = new Map(selectedIds.map((id, i) => [String(id), i]));
+  rawDocs.sort((a, b) => (orderById.get(String(a.id)) ?? 0) - (orderById.get(String(b.id)) ?? 0));
 
-      // Update targets reference so the returned source metadata matches the actual source of questions
-      targets = fallbackTargets;
-    } catch (fallbackErr) {
-      console.error("Fallback generation failed:", fallbackErr);
-    }
-  }
+  const questions = rawDocs
+    .filter((d) => d.isActive !== false)
+    .map(slimQuestion)
+    .map(correctQuestionAnswer);
 
-  const aiQuestions = [];
-
-
-  if (numAI > 0) {
-    const chapters = targets.assignedChapters.length > 0
-      ? targets.assignedChapters
-      : Array.from(targets.targetChapterIds);
-    // Track content hashes so the same generated question can't appear twice
-    // in one quiz, and recently-seen generated questions get regenerated.
-    const usedIds = new Set(selectedManual.map((q) => String(q.id)));
-    for (let i = 0; i < numAI; i++) {
-      const difficulty = (() => {
-        const mix = studentProfile?.difficultyMix || DEFAULT_DIFFICULTY_MIX;
-        const rand = Math.random();
-        if (rand < (mix.easy ?? 0.3)) return "easy";
-        if (rand < (mix.easy ?? 0.3) + (mix.medium ?? 0.5)) return "medium";
-        return "hard";
-      })();
-      let candidate = null;
-      // A few retries: prefer a question that is neither a duplicate within
-      // this quiz nor one the student has recently seen; accept a duplicate
-      // of "seen" (but never within-quiz) as a last resort.
-      for (let attempt = 0; attempt < 5; attempt += 1) {
-        const generated = generateQuestion({
-          year: targets.assignedYears,
-          course: targets.assignedCourses,
-          assignedChapters: [chapters[(i + attempt) % chapters.length]],
-          assignedTopics: targets.assignedTopics,
-          difficulty,
-        });
-        const id = hashGeneratedQuestion(generated);
-        if (usedIds.has(id)) continue;
-        candidate = { ...generated, id };
-        if (!recentlySeen.has(id)) break; // fresh — done; else keep trying
-      }
-      if (candidate) {
-        usedIds.add(String(candidate.id));
-        aiQuestions.push(candidate);
-      }
-    }
-  }
-
-  const questions = shuffle([
-    ...shuffle(selectedManual),
-    ...shuffle(aiQuestions).map((q) => slimQuestion({ ...q, isManual: false })),
-  ]).slice(0, questionCount).map(correctQuestionAnswer);
-
+  const targets = buildDailyTargets(studentProfile);
   return {
     questions,
     source: {
       years: targets.assignedYears,
       courses: targets.assignedCourses,
-      chapters: Array.from(targets.targetChapterIds),
+      chapters: Object.keys(chapterBreakdown),
       assignedChapters: targets.assignedChapters,
       assignedTopics: targets.assignedTopics,
-      manualQuestionCount: selectedManual.length,
-      generatedQuestionCount: aiQuestions.length,
+      manualQuestionCount: questions.length,
+      generatedQuestionCount: 0,
     },
   };
 };

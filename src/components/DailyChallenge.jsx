@@ -20,8 +20,8 @@ import {
   markDailyAssignmentCompleted,
   markDailyAssignmentStarted,
   getAssignedChapters,
-  updateSeenQuestions,
 } from '../services/dailyAssignmentService';
+import { updatePoolAfterQuiz } from '../services/practicePoolService';
 
 // Sub-components
 import ChallengeStartView from './challenge/ChallengeStartView';
@@ -1382,9 +1382,17 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
         // --- Local State Updates ---
 
-        // Record seen manual question IDs so tomorrow's assignment avoids repeats.
-        const seenIds = questions.map(q => q?.id).filter(Boolean);
-        if (seenIds.length > 0) updateSeenQuestions(user.uid, seenIds).catch(() => {});
+        // Update practice pool: mark shown questions as done, accumulate accuracy.
+        if (challengeType === 'daily' && !isAbandoned) {
+          const poolResults = currentAnswerResults
+            .map((r, i) => ({
+              id: questions[i]?.id,
+              chapterId: r?.chapterId || questions[i]?.chapterId,
+              correct: Boolean(r?.correct),
+            }))
+            .filter((r) => r.id && r.chapterId);
+          updatePoolAfterQuiz(user.uid, poolResults).catch(() => {});
+        }
 
         setChapterProgress(prev => ({
           ...(prev || {}),
