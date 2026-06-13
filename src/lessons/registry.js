@@ -298,7 +298,20 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
     {
       narration: `The rule for vertical shifts: to shift <b>b units up</b>, replace <b>y</b> by <b>y − b</b>, giving <b>y = f(x) + b</b>. To shift <b>down</b>, use <b>y = f(x) − b</b>. It mirrors the horizontal rule exactly.`,
       speech: `The rule for vertical shifts. To shift b units up, replace y by y minus b, giving y equals f of x plus b. To shift down, use y equals f of x minus b. It mirrors the horizontal rule exactly.`,
-      board: [{ type: 'math', content: `$$\\text{up } b:\\; y = f(x) + b \\qquad \\text{down } b:\\; y = f(x) - b$$`, emphasis: true }],
+      board: [
+        { type: 'math', content: `$$\\text{up } b:\\; y = f(x) + b \\qquad \\text{down } b:\\; y = f(x) - b$$`, emphasis: true },
+        { type: 'graph', xMin: -3.5, xMax: 3.5, yMin: -4, yMax: 10,
+          curves: [
+            { fn: sq, color: GREY },
+            { fn: (x) => x * x + 2, color: PURPLE, slideIn: { dyUnits: 2, steps: 1, delay: 2.6, dur: 2.4 } },
+            { fn: (x) => x * x - 2, color: '#2563eb', slideIn: { dyUnits: -2, steps: 1, delay: 2.6, dur: 2.4 } },
+          ],
+          lines: [
+            { from: [0, 0], to: [0, 2], color: PURPLE, label: 'up b', labelAt: [0.7, 1.1], delay: 2.6 },
+            { from: [0, 0], to: [0, -2], color: '#2563eb', label: 'down b', labelAt: [0.9, -1.1], delay: 2.6 },
+          ],
+          points: [{ x: 0, y: 2, label: '+b', pulse: true }, { x: 0, y: -2, label: '−b', pulse: true }] },
+      ],
     },
     {
       narration: `<b>Example 2.</b> Shift <b>y = 2ˣ</b> down 2 units. Replace <b>y</b> by <b>y + 2</b>: <b>y + 2 = 2ˣ</b>, that is <b>y = 2ˣ − 2</b>. The asymptote drops from <b>y = 0</b> to <b>y = −2</b>, so the range becomes <b>y &gt; −2</b>.`,
