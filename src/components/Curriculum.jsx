@@ -279,7 +279,7 @@ const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y11a-5',
     chapterTitle: 'Chapter 5: Transformations and symmetry',
-    topicId: 'y11a-5g',
+    topicId: 'y11a-5G',
     topicCode: '5G',
     topicTitle: 'Combining transformations',
     year: 'Year 11',
