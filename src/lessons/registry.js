@@ -212,6 +212,176 @@ export const buildAsymptotesLesson = ({ audioBase = null } = {}) => {
   return { emoji: '📈', title: 'Two graphs that have asymptotes', steps, glossary: BASE_GLOSSARY };
 };
 
+// ── Lesson: Year 11 Advanced · 5A · Translations of known graphs ───────────
+export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
+  const GREY = '#94a3b8';      // the original (un-shifted) graph
+  const PURPLE = '#7c3aed';    // the translated graph
+  const MID = '#f59e0b';       // an intermediate graph
+
+  // Parabolas
+  const sq = (x) => x * x;
+  const sqR2 = (x) => (x - 2) ** 2;        // y = (x-2)²  — right 2
+  const sqU1 = (x) => x * x + 1;           // y = x²+1    — up 1
+  const sqV = (x) => (x - 2) ** 2 + 1;     // vertex (2,1)
+  const ex4a = (x) => x * x - 4 * x + 5;   // = (x-2)²+1
+  const ex4b = (x) => -2 * x * x - 4 * x;  // = -2(x+1)²+2, vertex (-1,2)
+  // Reciprocal
+  const recip = (x) => 1 / x;
+  const recipL = (x) => 1 / (x + 1);       // shift left 1
+  // Exponential
+  const exp = (x) => Math.pow(2, x);
+  const expD = (x) => Math.pow(2, x) - 2;  // shift down 2
+  // Cubic (Example 3)
+  const cube = (x) => x ** 3;
+  const cubeL = (x) => (x + 2) ** 3;       // left 2
+  const cubeLD = (x) => (x + 2) ** 3 - 4;  // left 2, down 4
+
+  const paraWin = (extra = {}) => ({ type: 'graph', xMin: -3.5, xMax: 5, yMin: -1, yMax: 10, curves: [{ fn: sq, color: GREY }], ...extra });
+
+  const steps = [
+    {
+      narration: `Once a graph is drawn, we can <b>shift</b> it — formally <b>translate</b> it — up, down, left or right to make a whole family of new graphs. This works for <b>every</b> function, so it hugely widens the set of graphs we can sketch at a glance.`,
+      speech: `Once a graph is drawn, we can shift it, formally translate it, up, down, left, or right, to make a whole family of new graphs. This works for every function, so it hugely widens the set of graphs we can sketch at a glance.`,
+      board: [{ type: 'math', content: `$$y = f(x) \\;\\longrightarrow\\; \\text{shift it around the plane}$$`, emphasis: true }, paraWin()],
+    },
+    {
+      narration: `Compare <b>y = x²</b> with <b>y = (x − 2)²</b>. In the table, every value of <b>(x − 2)²</b> is the value of <b>x²</b> shifted <b>2 steps to the right</b>.`,
+      speech: `Compare y equals x squared with y equals, x minus two, squared. In the table, every value of, x minus two squared, is the value of x squared shifted two steps to the right.`,
+      board: [
+        { type: 'valueTable', rows: [
+          ['x', '-2', '-1', '0', '1', '2', '3', '4'],
+          ['x^{2}', '4', '1', '0', '1', '4', '9', '16'],
+          ['(x-2)^{2}', '16', '9', '4', '1', '0', '1', '4'],
+        ] },
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqR2, color: PURPLE }], points: [{ x: 2, y: 0, label: '(2, 0)', pulse: true, guide: true }] }),
+      ],
+    },
+    {
+      narration: `So <b>y = (x − 2)²</b> is just <b>y = x² shifted right 2 units</b>. The rule: to shift a graph <b>a units right</b>, replace <b>x</b> by <b>x − a</b>, giving <b>y = f(x − a)</b>. Shifting <b>left</b> uses <b>x + a</b>.`,
+      speech: `So y equals, x minus two squared, is just y equals x squared shifted right two units. Here is the rule. To shift a graph a units right, replace x by x minus a, giving y equals f of, x minus a. Shifting left instead uses x plus a.`,
+      board: [
+        { type: 'math', content: `$$\\text{right } a:\\; y = f(x-a) \\qquad \\text{left } a:\\; y = f(x+a)$$`, emphasis: true },
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqR2, color: PURPLE }], lines: [{ from: [0, 0], to: [2, 0], color: PURPLE, label: 'right 2', labelAt: [1, 0.7] }] }),
+      ],
+    },
+    {
+      narration: `<b>Example 1.</b> What maps <b>y = 1/x</b> to <b>y = 1/(x + 1)</b>? Since <b>x</b> is replaced by <b>x + 1 = x − (−1)</b>, it is a <b>shift left of 1 unit</b>. The vertical asymptote moves from <b>x = 0</b> to <b>x = −1</b>.`,
+      speech: `Example 1. What transformation maps y equals 1 over x, to y equals 1 over, x plus one? Since x is replaced by x plus one, which is x minus negative one, it is a shift left of one unit. The vertical asymptote moves from x equals zero to x equals negative one.`,
+      board: [
+        { type: 'math', content: `$$y = \\dfrac{1}{x} \\;\\longrightarrow\\; y = \\dfrac{1}{x+1} \\quad(\\text{left } 1)$$`, emphasis: true },
+        { type: 'graph', xMin: -4, xMax: 4, yMin: -4, yMax: 4, curves: [{ fn: recip, color: GREY }, { fn: recipL, color: PURPLE }], asymptotes: [{ type: 'v', x: -1, color: PURPLE }] },
+      ],
+    },
+    {
+      narration: `Now <b>up and down</b>. Compare <b>y = x²</b> with <b>y = x² + 1</b>: each value is <b>1 more</b>, so the graph shifts <b>up 1 unit</b>. Writing it as <b>y − 1 = x²</b> shows we replaced <b>y</b> by <b>y − 1</b>.`,
+      speech: `Now up and down. Compare y equals x squared with y equals x squared plus one. Each value is one more, so the graph shifts up one unit. Writing it as y minus one equals x squared shows that we replaced y by y minus one.`,
+      board: [
+        { type: 'valueTable', rows: [
+          ['x', '-3', '-2', '-1', '0', '1', '2', '3'],
+          ['x^{2}', '9', '4', '1', '0', '1', '4', '9'],
+          ['x^{2}+1', '10', '5', '2', '1', '2', '5', '10'],
+        ] },
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqU1, color: PURPLE }], points: [{ x: 0, y: 1, label: '(0, 1)', pulse: true, guide: true }] }),
+      ],
+    },
+    {
+      narration: `The rule for vertical shifts: to shift <b>b units up</b>, replace <b>y</b> by <b>y − b</b>, giving <b>y = f(x) + b</b>. To shift <b>down</b>, use <b>y = f(x) − b</b>. It mirrors the horizontal rule exactly.`,
+      speech: `The rule for vertical shifts. To shift b units up, replace y by y minus b, giving y equals f of x plus b. To shift down, use y equals f of x minus b. It mirrors the horizontal rule exactly.`,
+      board: [{ type: 'math', content: `$$\\text{up } b:\\; y = f(x) + b \\qquad \\text{down } b:\\; y = f(x) - b$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>Example 2.</b> Shift <b>y = 2ˣ</b> down 2 units. Replace <b>y</b> by <b>y + 2</b>: <b>y + 2 = 2ˣ</b>, that is <b>y = 2ˣ − 2</b>. The asymptote drops from <b>y = 0</b> to <b>y = −2</b>, so the range becomes <b>y &gt; −2</b>.`,
+      speech: `Example 2. Shift y equals 2 to the power x, down two units. Replace y by y plus two. y plus two equals 2 to the power x, that is, y equals 2 to the power x minus two. The asymptote drops from y equals zero to y equals negative two, so the range becomes y greater than negative two.`,
+      board: [
+        { type: 'math', content: `$$y = 2^{x} \\;\\longrightarrow\\; y = 2^{x} - 2 \\quad(\\text{down } 2)$$`, emphasis: true },
+        { type: 'graph', xMin: -3, xMax: 3, yMin: -3, yMax: 9, curves: [{ fn: exp, color: GREY }, { fn: expD, color: PURPLE }], asymptotes: [{ type: 'h', y: -2, color: PURPLE }] },
+      ],
+    },
+    {
+      narration: `<b>Combining both.</b> Build <b>y = (x + 2)³ − 4</b> from <b>y = x³</b>: first shift <b>left 2</b> to get <b>(x + 2)³</b>, then <b>down 4</b>. Watch the grey curve move to amber, then to purple.`,
+      speech: `Combining both. Let's build y equals, x plus two, cubed, minus four, from y equals x cubed. First shift left two to get, x plus two, cubed. Then shift down four. Watch the grey curve move to amber, then to purple.`,
+      board: [
+        { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10, curves: [{ fn: cube, color: GREY }, { fn: cubeL, color: MID }, { fn: cubeLD, color: PURPLE }] },
+        { type: 'math', content: `$$x^{3} \\;\\to\\; (x+2)^{3} \\;\\to\\; (x+2)^{3} - 4$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `The <b>order does not matter</b>. Going down 4 first then left 2 lands on the <b>same graph</b>. Two perpendicular translations always commute.`,
+      speech: `The order does not matter. Going down four first, then left two, lands on exactly the same graph. Two perpendicular translations always commute.`,
+      board: [{ type: 'math', content: `$$y = f(x) \\to y = f(x-a) \\to y - b = f(x-a)$$`, emphasis: true }],
+    },
+    {
+      narration: `This is why <b>completing the square</b> is so useful. A parabola <b>y = a(x − h)² + k</b> is just <b>y = ax²</b> shifted <b>h right</b> and <b>k up</b>, so its <b>vertex is (h, k)</b>.`,
+      speech: `This is why completing the square is so useful. A parabola, y equals a times, x minus h, squared, plus k, is just y equals a x squared, shifted h units right and k units up. So its vertex is the point h, k.`,
+      board: [
+        { type: 'math', content: `$$y = a(x-h)^{2} + k \\quad\\Rightarrow\\quad \\text{vertex } (h, k)$$`, emphasis: true },
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqV, color: PURPLE }], points: [{ x: 2, y: 1, label: 'vertex (2, 1)', pulse: true, guide: true }] }),
+      ],
+    },
+    {
+      narration: `<b>Example 4.</b> Complete the square in <b>y = x² − 4x + 5</b>: it becomes <b>y = (x − 2)² + 1</b>. So it is <b>y = x²</b> shifted <b>right 2, up 1</b> — vertex <b>(2, 1)</b>, and the <b>range is y ≥ 1</b>.`,
+      speech: `Example 4. Complete the square in y equals x squared minus four x plus five. It becomes y equals, x minus two, squared, plus one. So it is y equals x squared shifted right two and up one. The vertex is two, one, and the range is y greater than or equal to one.`,
+      board: [
+        { type: 'math', content: `$$y = (x^{2} - 4x + 4) - 4 + 5 = (x-2)^{2} + 1$$`, emphasis: true },
+        paraWin({ curves: [{ fn: ex4a, color: PURPLE }], points: [{ x: 2, y: 1, label: '(2, 1)', pulse: true, guide: true }] }),
+      ],
+    },
+    {
+      narration: `If <b>a is negative</b> the parabola opens <b>downwards</b>. <b>y = −2x² − 4x = −2(x + 1)² + 2</b> is <b>y = −2x²</b> shifted <b>left 1, up 2</b> — vertex <b>(−1, 2)</b>, with <b>range y ≤ 2</b>.`,
+      speech: `If a is negative the parabola opens downwards. y equals negative two x squared minus four x, equals negative two times, x plus one, squared, plus two. It is y equals negative two x squared, shifted left one and up two. The vertex is negative one, two, and the range is y less than or equal to two.`,
+      board: [
+        { type: 'math', content: `$$y = -2(x+1)^{2} + 2 \\quad\\Rightarrow\\quad \\text{vertex } (-1, 2)$$`, emphasis: true },
+        { type: 'graph', xMin: -4, xMax: 2.5, yMin: -8, yMax: 3, curves: [{ fn: ex4b, color: PURPLE }], points: [{ x: -1, y: 2, label: '(-1, 2)', pulse: true, guide: true }] },
+      ],
+    },
+    {
+      narration: `<b>Circles translate too.</b> Start with <b>x² + y² = 9</b> (centre the origin, radius 3). Translate <b>3 right and 2 up</b> and you get <b>(x − 3)² + (y − 2)² = 9</b>, a circle with <b>centre (3, 2)</b>.`,
+      speech: `Circles translate too. Start with x squared plus y squared equals nine, centre the origin, radius three. Translate three right and two up, and you get, x minus three, squared, plus, y minus two, squared, equals nine. A circle with centre three, two.`,
+      board: [
+        { type: 'math', content: `$$x^{2}+y^{2}=9 \\;\\to\\; (x-3)^{2}+(y-2)^{2}=9$$`, emphasis: true },
+        { type: 'graph', showAxes: true, width: 360, height: 360, xMin: -3.5, xMax: 6.5, yMin: -3.5, yMax: 6.5,
+          circles: [{ cx: 0, cy: 0, r: 3, color: GREY }, { cx: 3, cy: 2, r: 3, color: PURPLE }],
+          points: [{ x: 0, y: 0, label: 'O' }, { x: 3, y: 2, label: '(3, 2)', pulse: true }] },
+      ],
+    },
+    {
+      narration: `<b>Example 5.</b> For <b>x² + y² − 6x + 8y = 0</b>, complete the square in <b>x</b> and <b>y</b>: <b>(x − 3)² + (y + 4)² = 25</b>. So it is <b>x² + y² = 25</b> shifted <b>right 3, down 4</b> — centre <b>(3, −4)</b>, radius <b>5</b>.`,
+      speech: `Example 5. For x squared plus y squared minus six x plus eight y equals zero, complete the square in x and in y. You get, x minus three, squared, plus, y plus four, squared, equals twenty five. So it is x squared plus y squared equals twenty five, shifted right three and down four. The centre is three, negative four, and the radius is five.`,
+      board: [
+        { type: 'math', content: `$$(x-3)^{2}+(y+4)^{2}=25 \\quad\\Rightarrow\\quad \\text{centre } (3,-4),\\; r=5$$`, emphasis: true },
+        { type: 'graph', showAxes: true, width: 320, height: 340, xMin: -7, xMax: 9, yMin: -10, yMax: 7,
+          circles: [{ cx: 0, cy: 0, r: 5, color: GREY }, { cx: 3, cy: -4, r: 5, color: PURPLE }],
+          points: [{ x: 0, y: 0, label: 'O' }, { x: 3, y: -4, label: '(3, -4)', pulse: true }] },
+      ],
+    },
+    {
+      narration: `<b>Recap.</b> Replace <b>x → x − a</b> to move <b>right a</b>; replace <b>y → y − b</b> to move <b>up b</b>; order never matters. Completing the square reveals a parabola's <b>vertex (h, k)</b> and a circle's <b>centre</b> as the translation that produced it.`,
+      speech: `Recap. Replace x by x minus a to move right a. Replace y by y minus b to move up b. The order never matters. Completing the square reveals a parabola's vertex, h k, and a circle's centre, as the translation that produced it.`,
+      board: [{ type: 'mathRow', formulas: [
+        { content: `$$y=f(x-a)$$`, highlightColor: 'rgba(124,58,237,0.12)', borderColor: '#c4b5fd', delay: 0.1 },
+        { content: `$$y=f(x)+b$$`, highlightColor: 'rgba(59,130,246,0.12)', borderColor: '#93c5fd', delay: 0.4 },
+        { content: `$$y=a(x-h)^{2}+k$$`, highlightColor: 'rgba(245,158,11,0.12)', borderColor: '#fcd34d', delay: 0.7 },
+        { content: `$$(x-h)^{2}+(y-k)^{2}=r^{2}$$`, highlightColor: 'rgba(16,185,129,0.12)', borderColor: '#6ee7b7', delay: 1.0 },
+      ] }],
+    },
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return {
+    emoji: '↔️',
+    title: 'Translations of known graphs',
+    steps,
+    glossary: {
+      ...BASE_GLOSSARY,
+      'translate': 'To slide a graph up, down, left or right without changing its shape or size.',
+      'translation': 'A slide of a graph up, down, left or right that keeps its shape and size unchanged.',
+      'vertex': 'The turning point of a parabola — its single highest or lowest point.',
+      'completing the square': 'Rewriting a quadratic as a perfect square plus a constant, e.g. x² − 4x + 5 = (x − 2)² + 1.',
+      'parabola': 'The U-shaped (or ∩-shaped) curve of a quadratic like y = x².',
+    },
+  };
+};
+
 // ── Lesson: Year 11 · 3G · Powers, cubics, and circles ─────────────────────
 export const buildPowersCubicsCirclesLesson = ({ audioBase = null } = {}) => {
   const sqrtFn = (x) => Math.sqrt(x);
@@ -1420,6 +1590,9 @@ export const LESSONS = {
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
   'y7-1g': { ...buildPlaceValueLesson(3721, 'Place value', { audioBase: '/lessons/audio/y7-1g' }), topicId: 'y7-1g' },
+
+  // Year 11 Advanced · 5A · Translations of known graphs.
+  'y11a-5A': { ...buildTranslationsLesson({ audioBase: '/lessons/audio/y11a-5A' }), topicId: 'y11a-5A' },
 
   // Year 11 Advanced · 3H · Two graphs that have asymptotes.
   'y11a-3H': { ...buildAsymptotesLesson({ audioBase: '/lessons/audio/y11a-3H' }), topicId: 'y11a-3H' },
