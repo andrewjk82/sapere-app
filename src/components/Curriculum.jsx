@@ -57,6 +57,8 @@ import { Y11_CH3J_QUESTIONS } from '../constants/seedYear11Ch3JQuestions.js';
 import { Y11_CH4B_QUESTIONS } from '../constants/seedYear11Ch4BQuestions.js';
 import { Y11_CH4C_QUESTIONS } from '../constants/seedYear11Ch4CQuestions.js';
 import { Y11_CH4D_QUESTIONS } from '../constants/seedYear11Ch4DQuestions.js';
+import { Y11A_CH4C_QUESTIONS } from '../constants/seedYear11aCh4CQuestions.js';
+import { Y11A_CH4D_QUESTIONS } from '../constants/seedYear11aCh4DQuestions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y11_EXT1_CH1A_QUESTIONS } from '../constants/seedYear11Ext1Ch1AQuestions.js';
 import { Y11_EXT1_CH1B_QUESTIONS } from '../constants/seedYear11Ext1Ch1BQuestions.js';
@@ -633,11 +635,16 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3H', topicCode: '3H', topicTitle: 'Two graphs that have asymptotes', year: 'Year 11', seed: Y11_CH3H_QUESTIONS, label: 'Y11A Ch3 · 3H Two graphs that have asymptotes' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3I', topicCode: '3I', topicTitle: 'Direct and inverse variation', year: 'Year 11', seed: Y11_CH3I_QUESTIONS, label: 'Y11A Ch3 · 3I Direct and inverse variation' },
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 11', seed: Y11_CH3J_QUESTIONS, label: 'Y11A Ch3 · 3J Revision' },
-  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4B', topicCode: '4B', topicTitle: 'Solving quadratic inequations', year: 'Year 11', seed: Y11_CH4B_QUESTIONS, label: 'Y11A Ch4 · 4B Solving quadratic inequations' },
-  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4C', topicCode: '4C', topicTitle: 'Intercepts and sign', year: 'Year 11', seed: [], label: 'Y11A Ch4 · 4C Intercepts and sign' },
-  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4D', topicCode: '4D', topicTitle: 'Odd and even symmetry', year: 'Year 11', seed: [], label: 'Y11A Ch4 · 4D Odd and even symmetry' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4A', topicCode: '4A', topicTitle: 'Linear equations and inequations', year: 'Year 11', seed: [], label: 'Y11A Ch4 · 4A Linear equations and inequations' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4B', topicCode: '4B', topicTitle: 'Quadratic equations and inequations', year: 'Year 11', seed: Y11_CH4B_QUESTIONS, label: 'Y11A Ch4 · 4B Quadratic equations and inequations' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4C', topicCode: '4C', topicTitle: 'The discriminant', year: 'Year 11', seed: Y11A_CH4C_QUESTIONS, label: 'Y11A Ch4 · 4C The discriminant' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4D', topicCode: '4D', topicTitle: 'Quadratic identities', year: 'Year 11', seed: Y11A_CH4D_QUESTIONS, label: 'Y11A Ch4 · 4D Quadratic identities' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4E', topicCode: '4E', topicTitle: 'Revision', year: 'Year 11', seed: [], label: 'Y11A Ch4 · 4E Revision' },
+  { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4A', topicCode: '4A', topicTitle: 'Linear equations and inequations', year: 'Year 11', seed: [], label: 'Y11 Ext1 Ch4 · 4A Linear equations and inequations' },
+  { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4B', topicCode: '4B', topicTitle: 'Quadratic equations and inequations', year: 'Year 11', seed: Y11_CH4B_QUESTIONS, label: 'Y11 Ext1 Ch4 · 4B Quadratic equations and inequations' },
   { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4C', topicCode: '4C', topicTitle: 'The discriminant', year: 'Year 11', seed: Y11_CH4C_QUESTIONS, label: 'Y11 Ext1 Ch4 · 4C The discriminant' },
   { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4D', topicCode: '4D', topicTitle: 'Quadratic identities', year: 'Year 11', seed: Y11_CH4D_QUESTIONS, label: 'Y11 Ext1 Ch4 · 4D Quadratic identities' },
+  { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4E', topicCode: '4E', topicTitle: 'Revision', year: 'Year 11', seed: [], label: 'Y11 Ext1 Ch4 · 4E Revision' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1A', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1B', topicCode: '1B', topicTitle: 'Factoring', year: 'Year 11', seed: Y11_EXT1_CH1B_QUESTIONS, label: 'Y11 Ext1 Ch1 · Factoring' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1C', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11', seed: Y11_EXT1_CH1C_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebraic fractions' },

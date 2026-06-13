@@ -2253,14 +2253,13 @@ export const CURRICULUM_DATA = {
       {
         id: 'y11a-4',
         title: 'Chapter 4: Equations and inequations',
-        modules: 6,
+        modules: 5,
         topics: [
-          { id: 'y11a-4A', code: '4A', title: 'Inequations and inequalities' },
-          { id: 'y11a-4B', code: '4B', title: 'Solving quadratic inequations' },
-          { id: 'y11a-4C', code: '4C', title: 'Intercepts and sign' },
-          { id: 'y11a-4D', code: '4D', title: 'Odd and even symmetry' },
-          { id: 'y11a-4E', code: '4E', title: 'The absolute value function' },
-          { id: 'y11a-4F', code: '4F', title: 'Regions in the number plane' }
+          { id: 'y11a-4A', code: '4A', title: 'Linear equations and inequations' },
+          { id: 'y11a-4B', code: '4B', title: 'Quadratic equations and inequations' },
+          { id: 'y11a-4C', code: '4C', title: 'The discriminant' },
+          { id: 'y11a-4D', code: '4D', title: 'Quadratic identities' },
+          { id: 'y11a-4E', code: '4E', title: 'Revision' }
         ]
       },
       {
@@ -2443,21 +2442,6 @@ export const CURRICULUM_DATA = {
                         "id": "y11e1-2D",
                         "code": "2D",
                         "title": "Rationalising the denominator"
-                  },
-                  {
-                        "id": "y11e1-2E",
-                        "code": "2E",
-                        "title": "Binomial expansion of surds"
-                  },
-                  {
-                        "id": "y11e1-2F",
-                        "code": "2F",
-                        "title": "Further rationalising the denominator"
-                  },
-                  {
-                        "id": "y11e1-2G",
-                        "code": "2G",
-                        "title": "Surd equations"
                   }
             ]
       },
@@ -2516,7 +2500,7 @@ export const CURRICULUM_DATA = {
       {
             "id": "y11e1-4",
             "title": "Chapter 4: Equations and inequations",
-            "modules": 4,
+            "modules": 5,
             "topics": [
                   {
                         "id": "y11e1-4A",
@@ -2537,6 +2521,11 @@ export const CURRICULUM_DATA = {
                         "id": "y11e1-4D",
                         "code": "4D",
                         "title": "Quadratic identities"
+                  },
+                  {
+                        "id": "y11e1-4E",
+                        "code": "4E",
+                        "title": "Revision"
                   }
             ]
       },
