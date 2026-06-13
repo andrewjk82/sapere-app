@@ -43,6 +43,7 @@ import { CH5_QUESTIONS_Y11A, Y11_CH5_QUESTIONS } from '../constants/seedYear11Ch
 import { Y11_CH5I_QUESTIONS } from '../constants/seedYear11Ch5IQuestions.js';
 import { Y11_CH6B_QUESTIONS } from '../constants/seedYear11Ch6Questions.js';
 import { Y11_CH6C_QUESTIONS } from '../constants/seedYear11Ch6CQuestions.js';
+import { Y11_CH6D_QUESTIONS } from '../constants/seedYear11Ch6DQuestions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
@@ -300,6 +301,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH6C_QUESTIONS,
     label: 'Y11 Ch6 · 6C Trigonometric functions of a general angle',
+  },
+  {
+    chapterId: 'y11a-6',
+    chapterTitle: 'Chapter 6: Trigonometry',
+    topicId: 'y11a-6D',
+    topicCode: '6D',
+    topicTitle: 'Quadrant, sign, and related acute angle',
+    year: 'Year 11',
+    seed: Y11_CH6D_QUESTIONS,
+    label: 'Y11 Ch6 · 6D Quadrant, sign, and related acute angle',
   },
   {
     chapterId: 'y11a-5',
