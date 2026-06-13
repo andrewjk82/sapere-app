@@ -42,6 +42,7 @@ import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.
 import { CH5_QUESTIONS_Y11A, Y11_CH5_QUESTIONS } from '../constants/seedYear11Ch5Questions.js';
 import { Y11_CH5I_QUESTIONS } from '../constants/seedYear11Ch5IQuestions.js';
 import { Y11_CH6B_QUESTIONS } from '../constants/seedYear11Ch6Questions.js';
+import { Y11_CH6C_QUESTIONS } from '../constants/seedYear11Ch6CQuestions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
@@ -289,6 +290,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH6B_QUESTIONS,
     label: 'Y11 Ch6 · 6B Problems involving right-angled triangles',
+  },
+  {
+    chapterId: 'y11a-6',
+    chapterTitle: 'Chapter 6: Trigonometry',
+    topicId: 'y11a-6C',
+    topicCode: '6C',
+    topicTitle: 'Trigonometric functions of a general angle',
+    year: 'Year 11',
+    seed: Y11_CH6C_QUESTIONS,
+    label: 'Y11 Ch6 · 6C Trigonometric functions of a general angle',
   },
   {
     chapterId: 'y11a-5',
