@@ -251,6 +251,8 @@ import { BLACKTOWN_BOYS_2020_QUESTIONS } from '../constants/seedBlacktownBoys202
 import { BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS } from '../constants/seedBlacktownBoys2020SimilarQuestions.js';
 import { CRANBROOK_2023_QUESTIONS } from '../constants/seedCranbrook2023Questions.js';
 import { CRANBROOK_2023_SIMILAR_QUESTIONS } from '../constants/seedCranbrook2023SimilarQuestions.js';
+import { DANEBANK_2020_QUESTIONS } from '../constants/seedDanebank2020Questions.js';
+import { DANEBANK_2020_SIMILAR_QUESTIONS } from '../constants/seedDanebank2020SimilarQuestions.js';
 import { CTHS_2020_QUESTIONS } from '../constants/seedCherrybrookTech2020Questions.js';
 import { CTHS_2020_SIMILAR_QUESTIONS } from '../constants/seedCherrybrookTech2020SimilarQuestions.js';
 import { Y11A_CH2_QUESTIONS } from '../constants/seedYear11aCh2Questions.js';
@@ -809,6 +811,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'exam:baulko-2020', badgeLabel: 'Y12 EXAM', examPaper: 'baulko-2020', chapterTitle: 'Baulkham Hills 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Baulkham Hills 2020 Trial Exam', year: 'Year 12', seed: BAULKHAM_2020_QUESTIONS, label: 'Y12 · Baulkham Hills 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:bbhs-2020', badgeLabel: 'Y12 EXAM', examPaper: 'bbhs-2020', chapterTitle: 'Blacktown Boys 2020 HSC Trial', topicId: 'y12a-exam-bbhs', topicCode: 'EXAM', topicTitle: 'Blacktown Boys 2020 Trial Exam', year: 'Year 12', seed: [...BLACKTOWN_BOYS_2020_QUESTIONS, ...BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS], label: 'Y12 · Blacktown Boys 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:cra-2023', badgeLabel: 'Y12 EXAM', examPaper: 'cra-2023', chapterTitle: 'Cranbrook 2023 HSC Trial', topicId: 'y12a-exam-cra', topicCode: 'EXAM', topicTitle: 'Cranbrook 2023 Trial Exam', year: 'Year 12', seed: [...CRANBROOK_2023_QUESTIONS, ...CRANBROOK_2023_SIMILAR_QUESTIONS], label: 'Y12 · Cranbrook 2023 HSC Trial (Advanced)' },
+  { chapterId: 'exam:dane-2020', badgeLabel: 'Y12 EXAM', examPaper: 'dane-2020', chapterTitle: 'Danebank 2020 HSC Trial', topicId: 'y12a-exam-dane', topicCode: 'EXAM', topicTitle: 'Danebank 2020 Trial Exam', year: 'Year 12', seed: [...DANEBANK_2020_QUESTIONS, ...DANEBANK_2020_SIMILAR_QUESTIONS], label: 'Y12 · Danebank 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:cths-2020', badgeLabel: 'Y12 EXAM', examPaper: 'cths-2020', chapterTitle: 'Cherrybrook Tech 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Cherrybrook Tech 2020 Trial Exam', year: 'Year 12', seed: [...CTHS_2020_QUESTIONS, ...CTHS_2020_SIMILAR_QUESTIONS], label: 'Y12 · Cherrybrook Tech 2020 HSC Trial (Advanced)' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5A', topicCode: '5A', topicTitle: 'Review of exponential functions base e', year: 'Year 12', seed: Y12A_CH5A_QUESTIONS, label: 'Y12 Ch5 · 5A Review of exponential functions base e' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5B', topicCode: '5B', topicTitle: 'Differentiation of exponential functions', year: 'Year 12', seed: Y12A_CH5B_QUESTIONS, label: 'Y12 Ch5 · 5B Differentiation of exponential functions' },

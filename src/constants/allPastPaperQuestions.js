@@ -14,6 +14,7 @@ import { BLACKTOWN_BOYS_2020_QUESTIONS } from './seedBlacktownBoys2020Questions.
 import { CTHS_2020_QUESTIONS }           from './seedCherrybrookTech2020Questions.js';
 import { CTHS_2020_SIMILAR_QUESTIONS }   from './seedCherrybrookTech2020SimilarQuestions.js';
 import { CRANBROOK_2023_QUESTIONS }      from './seedCranbrook2023Questions.js';
+import { DANEBANK_2020_QUESTIONS }       from './seedDanebank2020Questions.js';
 
 // ─── Add new past paper imports above this line ───────────────────────────────
 
@@ -27,5 +28,6 @@ export const ALL_PAST_PAPER_QUESTIONS = [
   ...CTHS_2020_QUESTIONS,
   ...CTHS_2020_SIMILAR_QUESTIONS,
   ...CRANBROOK_2023_QUESTIONS,
+  ...DANEBANK_2020_QUESTIONS,
   // ─── Add new past paper arrays above this line ────────────────────────────
 ];
