@@ -39,7 +39,7 @@ import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
-import { CH5_QUESTIONS_Y11A } from '../constants/seedYear11Ch5Questions.js';
+import { CH5_QUESTIONS_Y11A, Y11_CH5_QUESTIONS } from '../constants/seedYear11Ch5Questions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
@@ -285,6 +285,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH1_QUESTIONS,
     label: 'Y11 Ch5 · 5G Combining transformations',
+  },
+  {
+    chapterId: 'y11a-5',
+    chapterTitle: 'Chapter 5: Transformations and symmetry',
+    topicId: 'y11a-5H',
+    topicCode: '5H',
+    topicTitle: 'Continuity and piecewise-defined functions',
+    year: 'Year 11',
+    seed: Y11_CH5_QUESTIONS,
+    label: 'Y11 Ch5 · 5H Continuity and piecewise-defined functions',
   },
   {
     chapterId: 'y11a-2',
