@@ -259,7 +259,7 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
           ['x^{2}', '4', '1', '0', '1', '4', '9', '16'],
           ['(x-2)^{2}', '16', '9', '4', '1', '0', '1', '4'],
         ] },
-        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqR2, color: PURPLE }], points: [{ x: 2, y: 0, label: '(2, 0)', pulse: true, guide: true }] }),
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqR2, color: PURPLE, slideIn: { dxUnits: 2, steps: 2, delay: 3.4, dur: 3.6 } }], points: [{ x: 2, y: 0, label: '(2, 0)', pulse: true, guide: true }] }),
       ],
     },
     {

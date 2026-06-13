@@ -286,12 +286,38 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
           <motion.path key={i} d={buildPath(c.fn, c.step)} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
             initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.1, ease: 'easeInOut' }} />
         );
+        const pxX = (width - 2 * pad) / (xMax - xMin);
+        const pxY = (height - 2 * pad) / (yMax - yMin);
+        // `slideIn: { dxUnits, dyUnits, steps, delay, dur }` → the curve starts at
+        // the UN-shifted position and slides, one grid step at a time, into its
+        // true position — synced to "shifted N steps" in the narration.
+        if (c.slideIn) {
+          const { dxUnits = 0, dyUnits = 0, steps = 1, delay = 3.2, dur = 3.4 } = c.slideIn;
+          const dx = dxUnits * pxX, dy = dyUnits * pxY;
+          const n = Math.max(1, steps);
+          const xk = [-dx], yk = [-dy], tk = [0];
+          const hop = 1 / (n + 0.5);
+          let t = 0;
+          for (let k = 1; k <= n; k++) {
+            const rest = (n - k) / n;          // remaining offset fraction
+            t += hop * 0.6; xk.push(-dx * rest); yk.push(-dy * rest); tk.push(Math.min(1, t));
+            t += hop * 0.4; xk.push(-dx * rest); yk.push(-dy * rest); tk.push(Math.min(1, t));
+          }
+          tk[tk.length - 1] = 1;
+          return (
+            <motion.g key={i}
+              initial={{ x: -dx, y: -dy }}
+              animate={{ x: xk, y: yk }}
+              transition={{ duration: dur, times: tk, ease: 'easeInOut', delay }}>
+              {path}
+            </motion.g>
+          );
+        }
         // `slide: true` → the curve slides up → down → left → right in a loop,
         // demonstrating a translation in time with the narration.
         if (!c.slide) return path;
         const A = c.slideUnits || 2;
-        const dx = A * (width - 2 * pad) / (xMax - xMin);
-        const dy = A * (height - 2 * pad) / (yMax - yMin);
+        const dx = A * pxX, dy = A * pxY;
         return (
           <motion.g key={i}
             animate={{ x: [0, 0, 0, 0, 0, -dx, 0, dx, 0], y: [0, -dy, 0, dy, 0, 0, 0, 0, 0] }}
