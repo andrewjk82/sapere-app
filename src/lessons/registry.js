@@ -393,7 +393,20 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
     {
       narration: `The <b>order does not matter</b>. Going down 4 first then left 2 lands on the <b>same graph</b>. Two perpendicular translations always commute.`,
       speech: `The order does not matter. Going down four first, then left two, lands on exactly the same graph. Two perpendicular translations always commute.`,
-      board: [{ type: 'math', content: `$$y = f(x) \\to y = f(x-a) \\to y - b = f(x-a)$$`, emphasis: true }],
+      board: [
+        { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10,
+          curves: [{ fn: cube, color: GREY }, { fn: cubeLD, color: PURPLE }],
+          lines: [
+            // Route A — down 4 first, then left 2 (blue)
+            { from: [0, 0], to: [0, -4], color: '#2563eb', arrow: true, label: 'down 4', labelAt: [0.75, -2], delay: 1.0 },
+            { from: [0, -4], to: [-2, -4], color: '#2563eb', arrow: true, label: 'left 2', labelAt: [-1, -4.8], delay: 1.9 },
+            // Route B — left 2 first, then down 4 (amber)
+            { from: [0, 0], to: [-2, 0], color: MID, arrow: true, label: 'left 2', labelAt: [-1, 0.9], delay: 2.8 },
+            { from: [-2, 0], to: [-2, -4], color: MID, arrow: true, label: 'down 4', labelAt: [-3, -2], delay: 3.7 },
+          ],
+          points: [{ x: 0, y: 0, label: 'start (0, 0)' }, { x: -2, y: -4, label: 'same point (−2, −4)', pulse: true }] },
+        { type: 'math', content: `$$y = f(x) \\to y = f(x-a) \\to y - b = f(x-a)$$`, emphasis: true },
+      ],
     },
     {
       narration: `This is why <b>completing the square</b> is so useful. A parabola <b>y = a(x − h)² + k</b> is just <b>y = ax²</b> shifted <b>h right</b> and <b>k up</b>, so its <b>vertex is (h, k)</b>.`,
