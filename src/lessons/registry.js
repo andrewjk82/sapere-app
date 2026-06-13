@@ -271,11 +271,16 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       ],
     },
     {
-      narration: `<b>Example 1.</b> What maps <b>y = 1/x</b> to <b>y = 1/(x + 1)</b>? Since <b>x</b> is replaced by <b>x + 1 = x − (−1)</b>, it is a <b>shift left of 1 unit</b>. The vertical asymptote moves from <b>x = 0</b> to <b>x = −1</b>.`,
-      speech: `Example 1. What transformation maps y equals 1 over x, to y equals 1 over, x plus one? Since x is replaced by x plus one, which is x minus negative one, it is a shift left of one unit. The vertical asymptote moves from x equals zero to x equals negative one.`,
+      narration: `<b>Example 1.</b> What maps $y = \\frac{1}{x}$ to $y = \\frac{1}{x+1}$? Since <b>x</b> is replaced by $x+1 = x-(-1)$, it is a <b>shift left of 1 unit</b>. Watch its <b>vertical asymptote</b> slide from <b>x = 0</b> to <b>x = −1</b>.`,
+      speech: `Example 1. What transformation maps y equals 1 over x, to y equals 1 over, x plus one? Since x is replaced by x plus one, which is x minus negative one, it is a shift left of one unit. Watch its vertical asymptote slide from x equals zero to x equals negative one.`,
       board: [
         { type: 'math', content: `$$y = \\dfrac{1}{x} \\;\\longrightarrow\\; y = \\dfrac{1}{x+1} \\quad(\\text{left } 1)$$`, emphasis: true },
-        { type: 'graph', xMin: -4, xMax: 4, yMin: -4, yMax: 4, curves: [{ fn: recip, color: GREY }, { fn: recipL, color: PURPLE }], asymptotes: [{ type: 'v', x: -1, color: PURPLE }] },
+        { type: 'graph', xMin: -4, xMax: 4, yMin: -4, yMax: 4,
+          curves: [{ fn: recip, color: GREY }, { fn: recipL, color: PURPLE, slideIn: { dxUnits: -1, steps: 1, delay: 3.2, dur: 2.4 } }],
+          asymptotes: [
+            { type: 'v', x: 0, label: 'x = 0' },
+            { type: 'v', x: -1, color: PURPLE, label: 'x = −1', delay: 3.4 },
+          ] },
       ],
     },
     {
@@ -287,7 +292,7 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
           ['x^{2}', '9', '4', '1', '0', '1', '4', '9'],
           ['x^{2}+1', '10', '5', '2', '1', '2', '5', '10'],
         ] },
-        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqU1, color: PURPLE }], points: [{ x: 0, y: 1, label: '(0, 1)', pulse: true, guide: true }] }),
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqU1, color: PURPLE, slideIn: { dyUnits: 1, steps: 1, delay: 3.0, dur: 2.2 } }], lines: [{ from: [0, 0], to: [0, 1], color: PURPLE, label: 'up 1', labelAt: [0.55, 0.5], delay: 3.0 }], points: [{ x: 0, y: 1, label: '(0, 1)', pulse: true, guide: true }] }),
       ],
     },
     {
@@ -300,15 +305,30 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       speech: `Example 2. Shift y equals 2 to the power x, down two units. Replace y by y plus two. y plus two equals 2 to the power x, that is, y equals 2 to the power x minus two. The asymptote drops from y equals zero to y equals negative two, so the range becomes y greater than negative two.`,
       board: [
         { type: 'math', content: `$$y = 2^{x} \\;\\longrightarrow\\; y = 2^{x} - 2 \\quad(\\text{down } 2)$$`, emphasis: true },
-        { type: 'graph', xMin: -3, xMax: 3, yMin: -3, yMax: 9, curves: [{ fn: exp, color: GREY }, { fn: expD, color: PURPLE }], asymptotes: [{ type: 'h', y: -2, color: PURPLE }] },
+        { type: 'graph', xMin: -3, xMax: 3, yMin: -3, yMax: 9,
+          curves: [{ fn: exp, color: GREY }, { fn: expD, color: PURPLE, slideIn: { dyUnits: -2, steps: 2, delay: 3.0, dur: 3.0 } }],
+          asymptotes: [
+            { type: 'h', y: 0, label: 'y = 0' },
+            { type: 'h', y: -2, color: PURPLE, label: 'y = −2', delay: 3.2 },
+          ] },
       ],
     },
     {
       narration: `<b>Combining both.</b> Build <b>y = (x + 2)³ − 4</b> from <b>y = x³</b>: first shift <b>left 2</b> to get <b>(x + 2)³</b>, then <b>down 4</b>. Watch the grey curve move to amber, then to purple.`,
       speech: `Combining both. Let's build y equals, x plus two, cubed, minus four, from y equals x cubed. First shift left two to get, x plus two, cubed. Then shift down four. Watch the grey curve move to amber, then to purple.`,
       board: [
-        { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10, curves: [{ fn: cube, color: GREY }, { fn: cubeL, color: MID }, { fn: cubeLD, color: PURPLE }] },
-        { type: 'math', content: `$$x^{3} \\;\\to\\; (x+2)^{3} \\;\\to\\; (x+2)^{3} - 4$$`, emphasis: true },
+        { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10,
+          curves: [
+            { fn: cube, color: GREY },
+            { fn: cubeL, color: MID },
+            { fn: cubeLD, color: PURPLE, slideIn: { dxUnits: -2, dyUnits: -4, steps: 1, delay: 2.4, dur: 3.2 } },
+          ],
+          texts: [
+            { x: 1.2, y: 6, text: 'y = x³', color: GREY, delay: 0.6 },
+            { x: -4.3, y: 6, text: '(x+2)³', color: MID, delay: 1.0 },
+            { x: 0.4, y: -7.5, text: '(x+2)³ − 4', color: PURPLE, delay: 5.8 },
+          ] },
+        { type: 'math', content: `$$x^{3} \\;\\xrightarrow{\\text{left }2}\\; (x+2)^{3} \\;\\xrightarrow{\\text{down }4}\\; (x+2)^{3} - 4$$`, emphasis: true },
       ],
     },
     {
@@ -321,7 +341,7 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       speech: `This is why completing the square is so useful. A parabola, y equals a times, x minus h, squared, plus k, is just y equals a x squared, shifted h units right and k units up. So its vertex is the point h, k.`,
       board: [
         { type: 'math', content: `$$y = a(x-h)^{2} + k \\quad\\Rightarrow\\quad \\text{vertex } (h, k)$$`, emphasis: true },
-        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqV, color: PURPLE }], points: [{ x: 2, y: 1, label: 'vertex (2, 1)', pulse: true, guide: true }] }),
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqV, color: PURPLE, slideIn: { dxUnits: 2, dyUnits: 1, steps: 1, delay: 3.2, dur: 3.0 } }], points: [{ x: 2, y: 1, label: 'vertex (2, 1)', pulse: true, guide: true }] }),
       ],
     },
     {
@@ -329,7 +349,7 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       speech: `Example 4. Complete the square in y equals x squared minus four x plus five. It becomes y equals, x minus two, squared, plus one. So it is y equals x squared shifted right two and up one. The vertex is two, one, and the range is y greater than or equal to one.`,
       board: [
         { type: 'math', content: `$$y = (x^{2} - 4x + 4) - 4 + 5 = (x-2)^{2} + 1$$`, emphasis: true },
-        paraWin({ curves: [{ fn: ex4a, color: PURPLE }], points: [{ x: 2, y: 1, label: '(2, 1)', pulse: true, guide: true }] }),
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: ex4a, color: PURPLE, slideIn: { dxUnits: 2, dyUnits: 1, steps: 1, delay: 3.6, dur: 3.0 } }], points: [{ x: 2, y: 1, label: 'vertex (2, 1)', pulse: true, guide: true }] }),
       ],
     },
     {
@@ -337,7 +357,9 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       speech: `If a is negative the parabola opens downwards. y equals negative two x squared minus four x, equals negative two times, x plus one, squared, plus two. It is y equals negative two x squared, shifted left one and up two. The vertex is negative one, two, and the range is y less than or equal to two.`,
       board: [
         { type: 'math', content: `$$y = -2(x+1)^{2} + 2 \\quad\\Rightarrow\\quad \\text{vertex } (-1, 2)$$`, emphasis: true },
-        { type: 'graph', xMin: -4, xMax: 2.5, yMin: -8, yMax: 3, curves: [{ fn: ex4b, color: PURPLE }], points: [{ x: -1, y: 2, label: '(-1, 2)', pulse: true, guide: true }] },
+        { type: 'graph', xMin: -4, xMax: 2.5, yMin: -8, yMax: 3,
+          curves: [{ fn: (x) => -2 * x * x, color: GREY }, { fn: ex4b, color: PURPLE, slideIn: { dxUnits: -1, dyUnits: 2, steps: 1, delay: 3.6, dur: 3.0 } }],
+          points: [{ x: -1, y: 2, label: 'vertex (−1, 2)', pulse: true, guide: true }] },
       ],
     },
     {
@@ -346,8 +368,9 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       board: [
         { type: 'math', content: `$$x^{2}+y^{2}=9 \\;\\to\\; (x-3)^{2}+(y-2)^{2}=9$$`, emphasis: true },
         { type: 'graph', showAxes: true, width: 360, height: 360, xMin: -3.5, xMax: 6.5, yMin: -3.5, yMax: 6.5,
-          circles: [{ cx: 0, cy: 0, r: 3, color: GREY }, { cx: 3, cy: 2, r: 3, color: PURPLE }],
-          points: [{ x: 0, y: 0, label: 'O' }, { x: 3, y: 2, label: '(3, 2)', pulse: true }] },
+          circles: [{ cx: 0, cy: 0, r: 3, color: GREY }, { cx: 3, cy: 2, r: 3, color: PURPLE, slideIn: { dxUnits: 3, dyUnits: 2, steps: 1, delay: 3.2, dur: 3.0 } }],
+          lines: [{ from: [0, 0], to: [3, 2], color: PURPLE, dashed: true, label: 'right 3, up 2', labelAt: [1.4, 1.55], delay: 3.2 }],
+          points: [{ x: 0, y: 0, label: 'O' }, { x: 3, y: 2, label: 'centre (3, 2)', pulse: true }] },
       ],
     },
     {
@@ -356,8 +379,9 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       board: [
         { type: 'math', content: `$$(x-3)^{2}+(y+4)^{2}=25 \\quad\\Rightarrow\\quad \\text{centre } (3,-4),\\; r=5$$`, emphasis: true },
         { type: 'graph', showAxes: true, width: 320, height: 340, xMin: -7, xMax: 9, yMin: -10, yMax: 7,
-          circles: [{ cx: 0, cy: 0, r: 5, color: GREY }, { cx: 3, cy: -4, r: 5, color: PURPLE }],
-          points: [{ x: 0, y: 0, label: 'O' }, { x: 3, y: -4, label: '(3, -4)', pulse: true }] },
+          circles: [{ cx: 0, cy: 0, r: 5, color: GREY }, { cx: 3, cy: -4, r: 5, color: PURPLE, slideIn: { dxUnits: 3, dyUnits: -4, steps: 1, delay: 3.4, dur: 3.2 } }],
+          lines: [{ from: [0, 0], to: [3, -4], color: PURPLE, dashed: true, label: 'right 3, down 4', labelAt: [1.7, -1.6], delay: 3.4 }],
+          points: [{ x: 0, y: 0, label: 'O' }, { x: 3, y: -4, label: 'centre (3, −4)', pulse: true }] },
       ],
     },
     {

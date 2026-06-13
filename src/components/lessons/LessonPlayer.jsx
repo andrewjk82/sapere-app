@@ -182,6 +182,27 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
   const sx = (x) => pad + (x - xMin) / (xMax - xMin) * (width - 2 * pad);
   const sy = (y) => height - pad - (y - yMin) / (yMax - yMin) * (height - 2 * pad);
   const x0 = sx(0), y0 = sy(0);
+  const pxX = (width - 2 * pad) / (xMax - xMin);
+  const pxY = (height - 2 * pad) / (yMax - yMin);
+
+  // `slideIn: { dxUnits, dyUnits, steps, delay, dur }` → motion props that start a
+  // shape at its UN-shifted position and slide it, one grid step at a time, into
+  // its true (drawn) position. Shared by curves and circles. Right is +x screen,
+  // UP is −y screen, so a START offset is (−dxUnits·pxX, +dyUnits·pxY).
+  const slideInProps = ({ dxUnits = 0, dyUnits = 0, steps = 1, delay = 3.2, dur = 3.4 }) => {
+    const xStart = -dxUnits * pxX, yStart = dyUnits * pxY;
+    const n = Math.max(1, steps);
+    const xk = [xStart], yk = [yStart], tk = [0];
+    const hop = 1 / (n + 0.5);
+    let t = 0;
+    for (let k = 1; k <= n; k++) {
+      const rest = (n - k) / n;
+      t += hop * 0.6; xk.push(xStart * rest); yk.push(yStart * rest); tk.push(Math.min(1, t));
+      t += hop * 0.4; xk.push(xStart * rest); yk.push(yStart * rest); tk.push(Math.min(1, t));
+    }
+    tk[tk.length - 1] = 1;
+    return { initial: { x: xStart, y: yStart }, animate: { x: xk, y: yk }, transition: { duration: dur, times: tk, ease: 'easeInOut', delay } };
+  };
 
   const buildPath = (fn, step = 0.02, from = xMin, to = xMax) => {
     let d = ''; let pen = false;
@@ -229,13 +250,26 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
         return <motion.rect key={'bd' + i} x={xL} y={pad} width={Math.max(0, xR - xL)} height={height - 2 * pad} fill={b.color} initial={{ opacity: 0 }} animate={{ opacity: 0.1 }} transition={{ duration: 0.6, delay: 0.9 }} />;
       })}
 
-      {/* asymptotes (sweep in) */}
+      {/* asymptotes (sweep in) — always dashed, with an optional equation label */}
       {asymptotes.map((a, i) => {
-        const hot = !!a.color; const col = a.color || '#cbd5e1';
-        const common = { stroke: col, strokeWidth: hot ? 2.6 : 1.4, strokeDasharray: '7 6', initial: { pathLength: 0, opacity: 0 }, animate: { pathLength: 1, opacity: 1 }, transition: { duration: 0.7, delay: 0.5 } };
-        return a.type === 'h'
-          ? <motion.line key={i} x1={pad} x2={width - pad} y1={sy(a.y)} y2={sy(a.y)} {...common} />
-          : <motion.line key={i} y1={pad} y2={height - pad} x1={sx(a.x)} x2={sx(a.x)} {...common} />;
+        const hot = !!a.color; const col = a.color || '#94a3b8';
+        const common = { stroke: col, strokeWidth: hot ? 2.6 : 1.8, strokeDasharray: '9 7', strokeLinecap: 'round', initial: { pathLength: 0, opacity: 0 }, animate: { pathLength: 1, opacity: 1 }, transition: { duration: 0.7, delay: a.delay ?? 0.5 } };
+        const line = a.type === 'h'
+          ? <motion.line x1={pad} x2={width - pad} y1={sy(a.y)} y2={sy(a.y)} {...common} />
+          : <motion.line y1={pad} y2={height - pad} x1={sx(a.x)} x2={sx(a.x)} {...common} />;
+        const lx = a.type === 'h' ? width - pad - 4 : sx(a.x) + 6;
+        const ly = a.type === 'h' ? sy(a.y) - 7 : pad + 12;
+        return (
+          <g key={i}>
+            {line}
+            {a.label && (
+              <motion.text x={lx} y={ly} fontSize="12.5" fontWeight="800" fill={col}
+                textAnchor={a.type === 'h' ? 'end' : 'start'}
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: (a.delay ?? 0.5) + 0.5 }}
+                style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{a.label}</motion.text>
+            )}
+          </g>
+        );
       })}
 
       {/* axes (hidden for pure geometry diagrams via showAxes={false}) */}
@@ -286,33 +320,8 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
           <motion.path key={i} d={buildPath(c.fn, c.step)} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
             initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.1, ease: 'easeInOut' }} />
         );
-        const pxX = (width - 2 * pad) / (xMax - xMin);
-        const pxY = (height - 2 * pad) / (yMax - yMin);
-        // `slideIn: { dxUnits, dyUnits, steps, delay, dur }` → the curve starts at
-        // the UN-shifted position and slides, one grid step at a time, into its
-        // true position — synced to "shifted N steps" in the narration.
-        if (c.slideIn) {
-          const { dxUnits = 0, dyUnits = 0, steps = 1, delay = 3.2, dur = 3.4 } = c.slideIn;
-          const dx = dxUnits * pxX, dy = dyUnits * pxY;
-          const n = Math.max(1, steps);
-          const xk = [-dx], yk = [-dy], tk = [0];
-          const hop = 1 / (n + 0.5);
-          let t = 0;
-          for (let k = 1; k <= n; k++) {
-            const rest = (n - k) / n;          // remaining offset fraction
-            t += hop * 0.6; xk.push(-dx * rest); yk.push(-dy * rest); tk.push(Math.min(1, t));
-            t += hop * 0.4; xk.push(-dx * rest); yk.push(-dy * rest); tk.push(Math.min(1, t));
-          }
-          tk[tk.length - 1] = 1;
-          return (
-            <motion.g key={i}
-              initial={{ x: -dx, y: -dy }}
-              animate={{ x: xk, y: yk }}
-              transition={{ duration: dur, times: tk, ease: 'easeInOut', delay }}>
-              {path}
-            </motion.g>
-          );
-        }
+        // `slideIn` → the curve slides from its un-shifted spot into place.
+        if (c.slideIn) return <motion.g key={i} {...slideInProps(c.slideIn)}>{path}</motion.g>;
         // `slide: true` → the curve slides up → down → left → right in a loop,
         // demonstrating a translation in time with the narration.
         if (!c.slide) return path;
@@ -339,8 +348,10 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
           const X = sx(cx + r * Math.cos(a)), Y = sy(cy + r * Math.sin(a));
           d += (k ? ` L${X.toFixed(1)} ${Y.toFixed(1)}` : `M${X.toFixed(1)} ${Y.toFixed(1)}`);
         }
-        return <motion.path key={'circ' + i} d={d} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
+        const cpath = <motion.path d={d} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
           initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeInOut' }} />;
+        if (c.slideIn) return <motion.g key={'circ' + i} {...slideInProps(c.slideIn)}>{cpath}</motion.g>;
+        return <g key={'circ' + i}>{cpath}</g>;
       })}
 
       {/* coloured segments — highlight a portion of a curve (e.g. positive part
