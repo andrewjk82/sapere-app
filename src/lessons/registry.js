@@ -355,21 +355,39 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       ],
     },
     {
-      narration: `<b>Combining both.</b> Build <b>y = (x + 2)³ − 4</b> from <b>y = x³</b>: first shift <b>left 2</b> to get <b>(x + 2)³</b>, then <b>down 4</b>. Watch the grey curve move to amber, then to purple.`,
-      speech: `Combining both. Let's build y equals, x plus two, cubed, minus four, from y equals x cubed. First shift left two to get, x plus two, cubed. Then shift down four. Watch the grey curve move to amber, then to purple.`,
+      narration: `<b>Combining both</b>, in two moves. <b>Step 1 — shift left 2.</b> Every point moves 2 left, including the <b>point of inflection</b> at the origin. Follow the arrow: the grey <b>y = x³</b> becomes the amber <b>(x + 2)³</b>, with its inflection now at <b>(−2, 0)</b>.`,
+      speech: `Combining both, in two moves. Step one, shift left two. Every point moves two to the left, including the point of inflection at the origin. Follow the arrow. The grey curve y equals x cubed becomes the amber curve, x plus two, cubed, with its point of inflection now at negative two, zero.`,
       board: [
         { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10,
           curves: [
             { fn: cube, color: GREY },
-            { fn: cubeL, color: MID },
-            { fn: cubeLD, color: PURPLE, slideIn: { dxUnits: -2, dyUnits: -4, steps: 1, delay: 2.4, dur: 3.2 } },
+            { fn: cubeL, color: MID, slideIn: { dxUnits: -2, steps: 2, delay: 2.6, dur: 3.0 } },
           ],
+          lines: [{ from: [0, 0], to: [-2, 0], color: MID, arrow: true, label: 'left 2', labelAt: [-1, 0.9], delay: 2.6 }],
+          points: [{ x: 0, y: 0, label: '(0, 0)' }, { x: -2, y: 0, label: 'inflection (−2, 0)', pulse: true }],
           texts: [
-            { x: 1.2, y: 6, text: 'y = x³', color: GREY, delay: 0.6 },
+            { x: 1.4, y: 6, text: 'y = x³', color: GREY, delay: 0.6 },
             { x: -4.3, y: 6, text: '(x+2)³', color: MID, delay: 1.0 },
-            { x: 0.4, y: -7.5, text: '(x+2)³ − 4', color: PURPLE, delay: 5.8 },
           ] },
-        { type: 'math', content: `$$x^{3} \\;\\xrightarrow{\\text{left }2}\\; (x+2)^{3} \\;\\xrightarrow{\\text{down }4}\\; (x+2)^{3} - 4$$`, emphasis: true },
+        { type: 'math', content: `$$x^{3} \\;\\xrightarrow{\\text{left }2}\\; (x+2)^{3}$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `<b>Step 2 — shift down 4.</b> The whole curve drops, carrying the <b>point of inflection</b> from <b>(−2, 0)</b> straight down to <b>(−2, −4)</b>. Follow the arrow: amber becomes the purple <b>y = (x + 2)³ − 4</b>.`,
+      speech: `Step two, shift down four. The whole curve drops, carrying the point of inflection from negative two, zero, straight down to negative two, negative four. Follow the arrow. The amber curve becomes the purple curve, y equals, x plus two, cubed, minus four.`,
+      board: [
+        { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10,
+          curves: [
+            { fn: cubeL, color: MID },
+            { fn: cubeLD, color: PURPLE, slideIn: { dyUnits: -4, steps: 2, delay: 2.6, dur: 3.0 } },
+          ],
+          lines: [{ from: [-2, 0], to: [-2, -4], color: PURPLE, arrow: true, label: 'down 4', labelAt: [-1.1, -2], delay: 2.6 }],
+          points: [{ x: -2, y: 0, label: '(−2, 0)' }, { x: -2, y: -4, label: 'inflection (−2, −4)', pulse: true }],
+          texts: [
+            { x: -4.3, y: 6, text: '(x+2)³', color: MID, delay: 0.6 },
+            { x: 1.1, y: -7.5, text: '(x+2)³ − 4', color: PURPLE, delay: 5.6 },
+          ] },
+        { type: 'math', content: `$$(x+2)^{3} \\;\\xrightarrow{\\text{down }4}\\; (x+2)^{3} - 4$$`, emphasis: true },
       ],
     },
     {
@@ -449,6 +467,7 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       'vertex': 'The turning point of a parabola — its single highest or lowest point.',
       'completing the square': 'Rewriting a quadratic as a perfect square plus a constant, e.g. x² − 4x + 5 = (x − 2)² + 1.',
       'parabola': 'The U-shaped (or ∩-shaped) curve of a quadratic like y = x².',
+      'point of inflection': 'A point where a curve changes the way it bends — e.g. the flat spot at the centre of y = x³.',
     },
   };
 };
