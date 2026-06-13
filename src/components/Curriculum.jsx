@@ -59,6 +59,7 @@ import { Y11_CH4C_QUESTIONS } from '../constants/seedYear11Ch4CQuestions.js';
 import { Y11_CH4D_QUESTIONS } from '../constants/seedYear11Ch4DQuestions.js';
 import { Y11A_CH4C_QUESTIONS } from '../constants/seedYear11aCh4CQuestions.js';
 import { Y11A_CH4D_QUESTIONS } from '../constants/seedYear11aCh4DQuestions.js';
+import { Y11A_CH4E_QUESTIONS } from '../constants/seedYear11aCh4EQuestions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y11_EXT1_CH1A_QUESTIONS } from '../constants/seedYear11Ext1Ch1AQuestions.js';
 import { Y11_EXT1_CH1B_QUESTIONS } from '../constants/seedYear11Ext1Ch1BQuestions.js';
@@ -639,7 +640,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4B', topicCode: '4B', topicTitle: 'Quadratic equations and inequations', year: 'Year 11', seed: Y11_CH4B_QUESTIONS, label: 'Y11A Ch4 · 4B Quadratic equations and inequations' },
   { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4C', topicCode: '4C', topicTitle: 'The discriminant', year: 'Year 11', seed: Y11A_CH4C_QUESTIONS, label: 'Y11A Ch4 · 4C The discriminant' },
   { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4D', topicCode: '4D', topicTitle: 'Quadratic identities', year: 'Year 11', seed: Y11A_CH4D_QUESTIONS, label: 'Y11A Ch4 · 4D Quadratic identities' },
-  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4E', topicCode: '4E', topicTitle: 'Revision', year: 'Year 11', seed: [], label: 'Y11A Ch4 · 4E Revision' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11a-4E', topicCode: '4E', topicTitle: 'Revision', year: 'Year 11', seed: Y11A_CH4E_QUESTIONS, label: 'Y11A Ch4 · 4E Revision' },
   { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4A', topicCode: '4A', topicTitle: 'Linear equations and inequations', year: 'Year 11', seed: [], label: 'Y11 Ext1 Ch4 · 4A Linear equations and inequations' },
   { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4B', topicCode: '4B', topicTitle: 'Quadratic equations and inequations', year: 'Year 11', seed: Y11_CH4B_QUESTIONS, label: 'Y11 Ext1 Ch4 · 4B Quadratic equations and inequations' },
   { chapterId: 'y11e1-4', chapterTitle: 'Chapter 4: Equations and inequations', topicId: 'y11e1-4C', topicCode: '4C', topicTitle: 'The discriminant', year: 'Year 11', seed: Y11_CH4C_QUESTIONS, label: 'Y11 Ext1 Ch4 · 4C The discriminant' },
