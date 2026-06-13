@@ -389,6 +389,23 @@ window.addEventListener('load', () => {
 });
 </script>`;
 
+  // Fixed close button so students can leave the paper view — in the PWA the
+  // paper opens with no browser chrome, leaving no way back to the app.
+  // window.close() works for window.open'd tabs; where the browser refuses
+  // (e.g. standalone PWA windows) fall back to navigating to the app.
+  const closeButton = `
+<style>
+.paper-close-btn {
+  position: fixed; top: 14px; right: 14px; z-index: 9999;
+  display: flex; align-items: center; gap: 6px;
+  background: #4B3F8A; color: #fff; border: none; border-radius: 999px;
+  padding: 10px 18px; font-size: 14px; font-weight: 700; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+@media print { .paper-close-btn { display: none; } }
+</style>
+<button class="paper-close-btn" onclick="window.close(); setTimeout(() => { window.location.href = '/'; }, 300);">✕ Close</button>`;
+
   if (isAnswers) {
     let qNum = 11;
     const sIIsolHtml = sectionII.map(q => renderAnswersSA(q, qNum++)).join('');
@@ -411,6 +428,7 @@ ${mathjaxScript}
 ${printScript}
 </head>
 <body>
+${closeButton}
 <div class="ans-cover">
   <div class="ans-badge">ANSWERS &amp; SOLUTIONS</div>
   <div class="ans-school">Sapere Aude Academia</div>
@@ -476,7 +494,7 @@ ${mathjaxScript}
 ${printScript}
 </head>
 <body>
-
+${closeButton}
 <div class="cover">
   <div class="cover-school">Sapere Aude Academia</div>
   <div class="cover-exam">Practice Paper</div>
