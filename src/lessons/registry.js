@@ -267,7 +267,7 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       speech: `So y equals, x minus two squared, is just y equals x squared shifted right two units. Here is the rule. To shift a graph a units right, replace x by x minus a, giving y equals f of, x minus a. Shifting left instead uses x plus a.`,
       board: [
         { type: 'math', content: `$$\\text{right } a:\\; y = f(x-a) \\qquad \\text{left } a:\\; y = f(x+a)$$`, emphasis: true },
-        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqR2, color: PURPLE }], lines: [{ from: [0, 0], to: [2, 0], color: PURPLE, label: 'right 2', labelAt: [1, 0.7] }] }),
+        paraWin({ curves: [{ fn: sq, color: GREY }, { fn: sqR2, color: PURPLE, slideIn: { dxUnits: 2, steps: 2, delay: 2.4, dur: 3.2 } }], lines: [{ from: [0, 0], to: [2, 0], color: PURPLE, label: 'right 2', labelAt: [1, 0.7], delay: 2.6 }] }),
       ],
     },
     {
