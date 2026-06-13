@@ -1702,6 +1702,19 @@ export const CH5_QUESTIONS_Y11A = [
       {
         "explanation": "Find horizontal asymptote (shift).",
         "workingOut": "y = 4"
+      },
+      {
+        "explanation": "Sketch the hyperbola with vertical asymptote at \\(x = 3\\) and horizontal asymptote at \\(y = 4\\).",
+        "workingOut": "",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [-1, 10, 7, -2],
+            "boardOptions": { "keepaspectratio": true },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[7,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,10]], {strokeColor:'black'});\nboard.create('line', [[3,-2],[3,10]], {strokeColor:'gray', dash:2});\nboard.create('line', [[-1,4],[7,4]], {strokeColor:'gray', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-3)+4; }, -1, 2.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-3)+4; }, 3.1, 7], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
