@@ -39,11 +39,11 @@ const getReportSource = (r) => {
     case 'review': return { label: 'Challenge Review', bg: '#eff6ff', color: '#1d4ed8' };
     case 'topic_practice': return { label: 'Topic Practice', bg: '#f0fdf4', color: '#15803d' };
     case 'exam_prep': return { label: 'Exam Prep', bg: '#fff7ed', color: '#c2410c' };
-    case 'calc': return { label: 'Calculation Sprint', bg: '#fffbeb', color: '#b45309' };
+    case 'calc': return { label: 'Daily Calculation', bg: '#fffbeb', color: '#b45309' };
     case 'daily': return { label: 'Daily Challenge', bg: '#eef2ff', color: '#4338ca' };
     default:
       return r?.statCollection === 'calc_stats'
-        ? { label: 'Calculation Sprint', bg: '#fffbeb', color: '#b45309' }
+        ? { label: 'Daily Calculation', bg: '#fffbeb', color: '#b45309' }
         : { label: 'Daily Challenge', bg: '#eef2ff', color: '#4338ca' };
   }
 };
@@ -713,7 +713,7 @@ const ReportsAdmin = () => {
                   {item.requiresManualGrading ? 'Manual Grade Required' : item.type}
                 </span>
                 <span style={{ padding: '4px 10px', background: item.challengeType === 'calc' ? '#fffbeb' : item.challengeType === 'exam_prep' ? '#fff7ed' : '#eef2ff', color: item.challengeType === 'calc' ? '#b45309' : item.challengeType === 'exam_prep' ? '#c2410c' : '#4338ca', borderRadius: '8px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', marginTop: '4px', marginLeft: '6px', display: 'inline-block' }}>
-                  {item.challengeType === 'calc' ? 'Calculation Sprint' : item.challengeType === 'exam_prep' ? 'Exam Prep' : 'Daily Challenge'}
+                  {item.challengeType === 'calc' ? 'Daily Calculation' : item.challengeType === 'exam_prep' ? 'Exam Prep' : 'Daily Challenge'}
                 </span>
               </div>
             </div>

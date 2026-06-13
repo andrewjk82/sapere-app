@@ -302,7 +302,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   tasks={[
                     { id: 'challenge', label: 'Daily Practice', kind: 'practice', done: todayTasks.dailyDone },
                     ...(profile?.calculationEnabled !== false
-                      ? [{ id: 'sprint', label: 'Calculation Sprint', kind: 'sprint', done: todayTasks.calcDone }]
+                      ? [{ id: 'sprint', label: 'Daily Calculation', kind: 'sprint', done: todayTasks.calcDone }]
                       : []),
                   ]}
                   onOpen={() => setActiveTab('Challenge')}

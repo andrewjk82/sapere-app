@@ -1,5 +1,5 @@
 export const CURRICULUM_DATA = {
-  'Basic Calculation': [
+  'Daily Calculation': [
     {
       id: 'calc-stage-1',
       title: 'Stage 1: Addition (Year 1-6)',

@@ -276,7 +276,7 @@ export default function BasicCalculationPanel({
           gap: "16px",
         }}
       >
-        {(CURRICULUM_DATA["Basic Calculation"] || []).map(
+        {(CURRICULUM_DATA["Daily Calculation"] || []).map(
           (stage) => {
             // Determine if all topics in stage are assigned
             const stageTopicIds = stage.topics.map((t) => t.id);

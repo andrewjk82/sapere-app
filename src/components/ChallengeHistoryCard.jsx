@@ -30,7 +30,7 @@ const ChallengeHistoryCard = ({ stat, onSelect, onReset }) => (
       </div>
       <div>
         <div style={{ fontWeight: 800 }}>
-          {stat.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {stat.id}
+          {stat.challengeType === 'calc' ? 'Daily Calculation' : 'Daily Practice'} • {stat.id}
         </div>
         <div style={{ fontSize: '0.75rem', color: '#64748b', display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px' }}>
           <span>Score: {stat.score}/{stat.total}</span>

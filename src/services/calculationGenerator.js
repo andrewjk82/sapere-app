@@ -474,7 +474,7 @@ const generateClockQuestion = (topicId, timeLimit = 30) => {
     answer: a,
     options,
     hint,
-    chapterTitle: 'Basic Calculation',
+    chapterTitle: 'Daily Calculation',
     topicId,
     generatorType: 'calculation',
     timeLimit,
@@ -2422,7 +2422,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
     question: q,
     answer: a,
     hint: hint,
-    chapterTitle: 'Basic Calculation',
+    chapterTitle: 'Daily Calculation',
     topicId: topicId,
     generatorType: 'calculation',
     timeLimit: timeLimit

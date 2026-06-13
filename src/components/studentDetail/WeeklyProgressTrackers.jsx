@@ -119,7 +119,7 @@ const WeeklyProgressTrackers = ({ dailyStats, calculationEnabled }) => {
         >
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
             <h3 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 800, color: "#1e1b4b", display: "flex", alignItems: "center", gap: "8px" }}>
-              <Target size={18} color="#f59e0b" /> Basic Calculation Progress
+              <Target size={18} color="#f59e0b" /> Daily Calculation Progress
             </h3>
             <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#94a3b8", background: "#fffbeb", padding: "4px 10px", borderRadius: "100px" }}>
               Mental Math

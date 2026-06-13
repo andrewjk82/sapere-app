@@ -160,7 +160,7 @@ const ChallengeResultView = ({
       <div className="cr__title-block">
         <div className="cr__eyebrow">
           {challengeType === 'calc'
-            ? 'Basic Calculation Complete'
+            ? 'Daily Calculation Complete'
             : 'Daily Challenge Complete'}
         </div>
         <h1 className="cr__title">

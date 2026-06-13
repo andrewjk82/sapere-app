@@ -517,7 +517,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const startCalculationQuiz = async () => {
     const today = new Date().toLocaleDateString('en-CA');
     if (calcCompletedToday || calcAbandonedToday) {
-      showToast("Today's Basic Calculation has already been used. Please try again tomorrow.", 'info');
+      showToast("Today's Daily Calculation has already been used. Please try again tomorrow.", 'info');
       return;
     }
 
@@ -1676,7 +1676,7 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             >
               <div>
                 <div style={{ fontSize: '0.9rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '4px' }}>
-                  {item.challengeType === 'calc' ? 'Basic Calculation' : 'Daily Practice'} • {formatHistoryDate(item)}
+                  {item.challengeType === 'calc' ? 'Daily Calculation' : 'Daily Practice'} • {formatHistoryDate(item)}
                 </div>
                 <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8' }}>
                   {item.total || 0} Questions • {item.total ? Math.round(((item.score || 0)/item.total)*100) : 0}% Accuracy

@@ -301,7 +301,7 @@ export const notifyTeacherChallengeCompleted = async ({
   reportCount = 0,
 }) => {
   if (!ADMIN_UID || studentId === ADMIN_UID) return;
-  const label = challengeType === 'calc' ? 'Basic Calculation' : 'Daily Challenge';
+  const label = challengeType === 'calc' ? 'Daily Calculation' : 'Daily Challenge';
   const displayName = studentName || 'A student';
   const attentionLines = [
     reviewCount > 0 ? `Review required: ${reviewCount} answer(s).` : '',
@@ -352,7 +352,7 @@ export const notifyTeacherPendingReview = async ({
   if (!ADMIN_UID || studentId === ADMIN_UID) return;
   const source = challengeType === 'curriculum' ? 'Curriculum'
     : challengeType === 'exam_prep'             ? 'Exam Prep'
-    : challengeType === 'calc'                  ? 'Basic Calculation'
+    : challengeType === 'calc'                  ? 'Daily Calculation'
     :                                             'Daily Challenge';
   const context = [topicTitle, chapterTitle].filter(Boolean).join(' · ');
   const preview = questionText ? questionText.replace(/<[^>]+>/g, '').slice(0, 120) : '(no preview)';

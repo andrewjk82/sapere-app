@@ -474,7 +474,7 @@ const ChallengeStartView = ({
           {calculationEnabled && (
             <TestRow
               kind="calc"
-              title="Calculation sprint"
+              title="Daily Calculation"
               meta={`${calcQ} questions · ~3 minutes · up to ${calcXp} XP`}
               state={calcState}
               onBegin={onStartCalculationQuiz}
@@ -520,7 +520,7 @@ const ChallengeStartView = ({
                     <span className="cs__week-ico cs__week-ico--calc">
                       <Target size={13} />
                     </span>
-                    Calculation sprint
+                    Daily Calculation
                   </span>
                   {calcAvg && (
                     <span className="cs__week-avg">

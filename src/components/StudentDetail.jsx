@@ -1459,8 +1459,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         body: JSON.stringify({
           studentId: syncUid,
           email: student.email || "",
-          subject: `${isDailyReset ? "Daily Challenge" : "Basic Calculation"} reset`,
-          text: `Your teacher has reset your ${isDailyReset ? "Daily Challenge" : "Basic Calculation"} for ${stat.id}.`,
+          subject: `${isDailyReset ? "Daily Challenge" : "Daily Calculation"} reset`,
+          text: `Your teacher has reset your ${isDailyReset ? "Daily Challenge" : "Daily Calculation"} for ${stat.id}.`,
           metadata: {
             type: "challenge_reset",
             challengeType: isDailyReset ? "daily" : "calc",
@@ -1858,7 +1858,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                       textTransform: "uppercase",
                     }}
                   >
-                    Basic Calculation
+                    Daily Calculation
                   </div>
                   <div
                     style={{
@@ -1891,14 +1891,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                       border: "1px dashed #fde68a",
                     }}
                   >
-                    No Basic Calculation history yet.
+                    No Daily Calculation history yet.
                   </div>
                 )}
               </div>
             </CollapsibleSection>
 
             <CollapsibleSection
-              title="Basic calculation"
+              title="Daily Calculation"
               summary={student.calculationEnabled === false ? 'Disabled' : 'Timed calculation rounds'}
               badge={student.calculationEnabled === false ? 'Off' : 'On'}
               badgeTone={student.calculationEnabled === false ? 'amber' : 'green'}
