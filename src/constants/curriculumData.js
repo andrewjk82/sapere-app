@@ -2265,7 +2265,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y11a-5',
         title: 'Chapter 5: Transformations and symmetry',
-        modules: 8,
+        modules: 9,
         topics: [
           { id: 'y11a-5A', code: '5A', title: 'Translations of known graphs' },
           { id: 'y11a-5B', code: '5B', title: 'Reflection in the y-axis and x-axis' },
@@ -2274,7 +2274,8 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-5E', code: '5E', title: 'The absolute value function' },
           { id: 'y11a-5F', code: '5F', title: 'Composite functions' },
           { id: 'y11a-5G', code: '5G', title: 'Combining transformations' },
-          { id: 'y11a-5H', code: '5H', title: 'Continuity and piecewise-defined functions' }
+          { id: 'y11a-5H', code: '5H', title: 'Continuity and piecewise-defined functions' },
+          { id: 'y11a-5I', code: '5I', title: 'Revision' }
         ]
       },
       {
