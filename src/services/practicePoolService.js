@@ -39,6 +39,18 @@ import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentServ
 
 const poolRef = (uid) => doc(db, 'users', uid, 'practice_pool', 'main');
 
+// 세션 내 in-memory 캐시 — 같은 uid/signature 조합은 Firestore를 다시 읽지 않음.
+// prepareNextDailyAssignment 등 퀴즈 완료 후 두 번째 호출에서 reads를 막기 위함.
+const _poolCache = new Map(); // uid → { signature, data }
+
+const getCached = (uid, signature) => {
+  const entry = _poolCache.get(uid);
+  return entry?.signature === signature ? entry.data : null;
+};
+const setCached = (uid, signature, data) => {
+  _poolCache.set(uid, { signature, data });
+};
+
 const shuffle = (arr) => {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -60,11 +72,17 @@ export const ensurePracticePool = async (uid, studentProfile) => {
   if (!uid) throw new Error('uid required');
 
   const newSignature = getCurriculumSignature(studentProfile);
+
+  // 세션 캐시 히트 → Firestore read 없음
+  const cached = getCached(uid, newSignature);
+  if (cached) return cached;
+
   const snap = await getDoc(poolRef(uid));
   const existing = snap.exists() ? snap.data() : null;
 
-  // 시그니처 일치 → 그대로 반환
+  // 시그니처 일치 → 캐시 저장 후 반환
   if (existing && existing.curriculumSignature === newSignature) {
+    setCached(uid, newSignature, existing);
     return existing;
   }
 
@@ -106,6 +124,7 @@ export const ensurePracticePool = async (uid, studentProfile) => {
   };
 
   await setDoc(poolRef(uid), newPool, { merge: false });
+  setCached(uid, newSignature, newPool);
   return newPool;
 };
 
@@ -127,6 +146,8 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   if (!snap.exists()) throw new Error('Practice pool not initialized. Call ensurePracticePool first.');
 
   let data = snap.data();
+  // 세션 캐시 갱신 (selectDailyQuestions는 항상 최신 데이터를 읽으므로 캐시 동기화)
+  if (data.curriculumSignature) setCached(uid, data.curriculumSignature, data);
   let chapter_pools = data.chapter_pools || {};
   const chapter_accuracy = data.chapter_accuracy || {};
   const chapterIds = Object.keys(chapter_pools);
@@ -272,12 +293,10 @@ export const updatePoolAfterQuiz = async (uid, results) => {
       };
     });
 
-    await setDoc(poolRef(uid), {
-      ...data,
-      chapter_pools,
-      chapter_accuracy,
-      updatedAt: serverTimestamp(),
-    }, { merge: false });
+    const updated = { ...data, chapter_pools, chapter_accuracy, updatedAt: serverTimestamp() };
+    await setDoc(poolRef(uid), updated, { merge: false });
+    // 캐시 무효화 — 다음 ensurePracticePool/selectDailyQuestions에서 최신 데이터 사용
+    _poolCache.delete(uid);
   } catch (err) {
     // non-critical: 실패해도 퀴즈 경험에 영향 없음
     console.warn('updatePoolAfterQuiz failed (non-critical):', err?.code || err);
