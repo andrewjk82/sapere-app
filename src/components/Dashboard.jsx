@@ -21,6 +21,7 @@ import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { getDueCount } from '../utils/secretNote';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 import JourneyMapSnapshot from './JourneyMapSnapshot';
+import { DailyNudgeCards } from './DailyNudgeCard';
 
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap }) => {
   const { user, isAdmin } = useAuth();
@@ -45,7 +46,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [isRefreshing, setIsRefreshing] = useState(false);
   // Today's challenge completion — drives the "do your daily!" nudge cards.
   const [todayTasks, setTodayTasks] = useState(null); // { dailyDone, calcDone }
-  const [nudgeTick, setNudgeTick] = useState(() => Date.now());
 
   // ── Today's daily/calc completion (direct doc reads — no scans) ──
   useEffect(() => {
@@ -77,13 +77,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     })();
     return () => { cancelled = true; };
   }, [user?.uid, isAdmin, profile?.calculationEnabled]);
-
-  // Re-render every minute so the nudge colour/face tracks the clock.
-  useEffect(() => {
-    if (isAdmin) return undefined;
-    const id = setInterval(() => setNudgeTick(Date.now()), 60_000);
-    return () => clearInterval(id);
-  }, [isAdmin]);
 
   // Fetch student daily stats for insights. Stat docs are heavy (full question
   // arrays) and insights only change when a new challenge is submitted, so
@@ -336,86 +329,23 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </div>
         )}
 
-        {/* Daily challenge nudge — pastel green smiley until 5 PM, then the
-            background warms toward pastel red and the face gets grumpier as
-            midnight approaches. One box per unfinished task; two tasks share
-            a row, a single task takes the full row. */}
-        {!isAdmin && todayTasks && (() => {
-          const calcEnabled = profile?.calculationEnabled !== false;
-          const pending = [
-            !todayTasks.dailyDone && { key: 'daily', title: 'Daily Practice', icon: '📘' },
-            calcEnabled && !todayTasks.calcDone && { key: 'calc', title: 'Calculation Sprint', icon: '⚡' },
-          ].filter(Boolean);
-          if (pending.length === 0) return null;
-
-          const now = new Date(nudgeTick);
-          const mins = now.getHours() * 60 + now.getMinutes();
-          // 0 until 5 PM, then ramps linearly to 1 at midnight.
-          const t = mins <= 1020 ? 0 : Math.min(1, (mins - 1020) / (1440 - 1020));
-          const lerp = (a, b) => Math.round(a + (b - a) * t);
-          const bg = `rgb(${lerp(209, 254)}, ${lerp(250, 202)}, ${lerp(229, 202)})`;
-          const border = `rgb(${lerp(167, 252)}, ${lerp(243, 165)}, ${lerp(208, 165)})`;
-          const ink = t < 0.5 ? '#065f46' : '#991b1b';
-          const face = t === 0 ? '😊' : t < 0.35 ? '🙂' : t < 0.7 ? '😟' : '😠';
-          const message = t === 0
-            ? "Let's get this done today! You've got this~"
-            : t < 0.35
-              ? 'Still time — shall we start now? 🙂'
-              : t < 0.7
-                ? 'The clock is ticking… better hurry!'
-                : 'Hurry up!! Your teacher is watching 👀 hehe';
-          const angry = t >= 0.7;
-
-          return (
-            <div style={{ display: 'grid', gridTemplateColumns: (!isMobile && pending.length === 2) ? '1fr 1fr' : '1fr', gap: '16px', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%' }}>
-              <style>{`
-                @keyframes nudge-shake {
-                  0%, 100% { transform: rotate(0deg); }
-                  20% { transform: rotate(-12deg) scale(1.08); }
-                  40% { transform: rotate(10deg) scale(1.08); }
-                  60% { transform: rotate(-8deg); }
-                  80% { transform: rotate(8deg); }
-                }
-                @keyframes nudge-pulse {
-                  0%, 100% { box-shadow: 0 10px 26px rgba(153,27,27,0.18); }
-                  50% { box-shadow: 0 10px 32px rgba(153,27,27,0.38); }
-                }
-              `}</style>
-              {pending.map((task) => (
-                <button
-                  key={task.key}
-                  type="button"
-                  onClick={() => setActiveTab('Challenge')}
-                  style={{
-                    display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
-                    padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left',
-                    background: bg, border: `2px solid ${border}`, color: ink,
-                    boxShadow: '0 10px 26px rgba(0,0,0,0.06)',
-                    animation: angry ? 'nudge-pulse 1.6s ease-in-out infinite' : 'none',
-                    transition: 'background 1s linear, border-color 1s linear, color 1s linear',
-                  }}
-                >
-                  <div style={{
-                    width: '48px', height: '48px', borderRadius: '16px', flexShrink: 0,
-                    background: 'rgba(255,255,255,0.65)', display: 'grid', placeItems: 'center', fontSize: '1.7rem',
-                    animation: angry ? 'nudge-shake 0.9s ease-in-out infinite' : 'none',
-                  }}>
-                    {face}
-                  </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.75, marginBottom: '3px' }}>
-                      {task.icon} {task.title} · Not done yet
-                    </div>
-                    <div style={{ fontSize: '0.97rem', fontWeight: 800, lineHeight: 1.4 }}>{message}</div>
-                  </div>
-                  <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'rgba(255,255,255,0.6)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                    <ArrowRight size={18} />
-                  </div>
-                </button>
-              ))}
-            </div>
-          );
-        })()}
+        {/* Daily challenge nudge cards — calm pastel-green before 5 PM,
+            escalating to urgent pastel-red with a shaking face toward
+            midnight. One card per unfinished task; finished tasks drop out. */}
+        {!isAdmin && todayTasks && (
+          <div style={{ margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%' }}>
+            <DailyNudgeCards
+              tasks={[
+                { id: 'challenge', label: 'Daily Practice', kind: 'practice', done: todayTasks.dailyDone },
+                ...(profile?.calculationEnabled !== false
+                  ? [{ id: 'sprint', label: 'Calculation Sprint', kind: 'sprint', done: todayTasks.calcDone }]
+                  : []),
+              ]}
+              onOpen={() => setActiveTab('Challenge')}
+              style={isMobile ? { gridTemplateColumns: '1fr' } : undefined}
+            />
+          </div>
+        )}
 
         {!isAdmin && profile?.examPrepEnabled === true && (() => {
           // D-Day is only useful for students whose teacher has enabled Exam
