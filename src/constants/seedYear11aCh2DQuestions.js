@@ -12,7 +12,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(\\sqrt{3}\\) and \\(1\\).",
-        "workingOut": "\\text{Terms: } a = \\sqrt{3}, b = 1",
+        "workingOut": "a = \\sqrt{3}, \\; b = 1",
         "graphData": null
       },
       {
@@ -22,7 +22,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Change the middle sign from - to its opposite to obtain the conjugate.",
-        "workingOut": "\\text{Conjugate: } \\sqrt{3}+1",
+        "workingOut": "\\sqrt{3}+1",
         "graphData": null
       }
     ],
@@ -42,7 +42,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(2\\sqrt{5}\\) and \\(3\\).",
-        "workingOut": "\\text{Terms: } a = 2\\sqrt{5}, b = 3",
+        "workingOut": "a = 2\\sqrt{5}, \\; b = 3",
         "graphData": null
       },
       {
@@ -52,7 +52,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Change the middle sign from + to its opposite to obtain the conjugate.",
-        "workingOut": "\\text{Conjugate: } 2\\sqrt{5}-3",
+        "workingOut": "2\\sqrt{5}-3",
         "graphData": null
       }
     ],
@@ -72,7 +72,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(\\sqrt{7}\\) and \\(\\sqrt{2}\\).",
-        "workingOut": "\\text{Terms: } a = \\sqrt{7}, b = \\sqrt{2}",
+        "workingOut": "a = \\sqrt{7}, \\; b = \\sqrt{2}",
         "graphData": null
       },
       {
@@ -82,7 +82,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Change the middle sign from - to its opposite to obtain the conjugate.",
-        "workingOut": "\\text{Conjugate: } \\sqrt{7}+\\sqrt{2}",
+        "workingOut": "\\sqrt{7}+\\sqrt{2}",
         "graphData": null
       }
     ],
@@ -102,7 +102,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the two separate terms of the binomial expression: \\(3\\sqrt{11}\\) and \\(4\\sqrt{6}\\).",
-        "workingOut": "\\text{Terms: } a = 3\\sqrt{11}, b = 4\\sqrt{6}",
+        "workingOut": "a = 3\\sqrt{11}, \\; b = 4\\sqrt{6}",
         "graphData": null
       },
       {
@@ -112,7 +112,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Change the middle sign from + to its opposite to obtain the conjugate.",
-        "workingOut": "\\text{Conjugate: } 3\\sqrt{11}-4\\sqrt{6}",
+        "workingOut": "3\\sqrt{11}-4\\sqrt{6}",
         "graphData": null
       }
     ],
@@ -137,7 +137,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Apply the difference of squares identity: \\((a-b)(a+b) = a^2 - b^2\\).",
-        "workingOut": "a^2 = 3, b^2 = 1",
+        "workingOut": "a^2 = 3, \\; b^2 = 1",
         "graphData": null
       },
       {
@@ -167,7 +167,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Apply the difference of squares identity: \\((a-b)(a+b) = a^2 - b^2\\).",
-        "workingOut": "a^2 = 20, b^2 = 9",
+        "workingOut": "a^2 = 20, \\; b^2 = 9",
         "graphData": null
       },
       {
@@ -197,7 +197,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Apply the difference of squares identity: \\((a-b)(a+b) = a^2 - b^2\\).",
-        "workingOut": "a^2 = 7, b^2 = 2",
+        "workingOut": "a^2 = 7, \\; b^2 = 2",
         "graphData": null
       },
       {
@@ -227,7 +227,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Apply the difference of squares identity: \\((a-b)(a+b) = a^2 - b^2\\).",
-        "workingOut": "a^2 = 99, b^2 = 96",
+        "workingOut": "a^2 = 99, \\; b^2 = 96",
         "graphData": null
       },
       {
@@ -252,7 +252,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{3}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -282,7 +282,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{7}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -312,7 +312,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{5}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -342,7 +342,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{2}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -372,7 +372,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{3}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -402,7 +402,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{7}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -432,7 +432,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{5}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -462,7 +462,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the surd in the denominator, which is \\(\\sqrt{2}\\). To rationalize it, we must multiply the numerator and the denominator by this same surd.",
-        "workingOut": "\\text{Multiply numerator/denominator by } \\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -492,7 +492,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{3-1}\\) by changing the middle sign. The conjugate is \\(\\sqrt{3}+1\\).",
-        "workingOut": "\\text{Conjugate of } \\sqrt{3-1} \\text{ is } \\sqrt{3}+1",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -522,7 +522,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{7+2}\\) by changing the middle sign. The conjugate is \\(\\sqrt{7}-2\\).",
-        "workingOut": "\\text{Conjugate of } \\sqrt{7+2} \\text{ is } \\sqrt{7}-2",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -552,7 +552,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(3+\\sqrt{5}\\) by changing the middle sign. The conjugate is \\(3-\\sqrt{5}\\).",
-        "workingOut": "\\text{Conjugate of } 3+\\sqrt{5} \\text{ is } 3-\\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -582,7 +582,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(4-\\sqrt{7}\\) by changing the middle sign. The conjugate is \\(4+\\sqrt{7}\\).",
-        "workingOut": "\\text{Conjugate of } 4-\\sqrt{7} \\text{ is } 4+\\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -612,7 +612,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{5-\\sqrt{2}}\\) by changing the middle sign. The conjugate is \\(\\sqrt{5}+\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate of } \\sqrt{5-\\sqrt{2}} \\text{ is } \\sqrt{5}+\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -642,7 +642,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(\\sqrt{10+\\sqrt{6}}\\) by changing the middle sign. The conjugate is \\(\\sqrt{10}-\\sqrt{6}\\).",
-        "workingOut": "\\text{Conjugate of } \\sqrt{10+\\sqrt{6}} \\text{ is } \\sqrt{10}-\\sqrt{6}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -672,7 +672,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(2\\sqrt{3+1}\\) by changing the middle sign. The conjugate is \\(2\\sqrt{3}-1\\).",
-        "workingOut": "\\text{Conjugate of } 2\\sqrt{3+1} \\text{ is } 2\\sqrt{3}-1",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -702,7 +702,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the conjugate of the binomial denominator \\(5-3\\sqrt{2}\\) by changing the middle sign. The conjugate is \\(5+3\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate of } 5-3\\sqrt{2} \\text{ is } 5+3\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -972,7 +972,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{5}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1002,7 +1002,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{7}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1032,7 +1032,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{2}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1062,7 +1062,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{3}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1092,7 +1092,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{2}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1122,7 +1122,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{3}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1152,7 +1152,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{10}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{10}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1182,7 +1182,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the radical part in the denominator, which is \\(\\sqrt{7}\\). We only need to multiply numerator and denominator by this radical.",
-        "workingOut": "\\text{Multiply top and bottom by } \\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1212,7 +1212,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5+1}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{5}-1\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{5}-1",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1222,7 +1222,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{5+1})(\\sqrt{5}-1) = 5 - 1 = 4",
+        "workingOut": "(\\sqrt{5+1})(\\sqrt{5}-1) = 5 - 1 = 4",
         "graphData": null
       },
       {
@@ -1247,7 +1247,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{2-\\sqrt{3}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(2\\sqrt{2}+\\sqrt{3}\\).",
-        "workingOut": "\\text{Conjugate: } 2\\sqrt{2}+\\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1257,7 +1257,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (2\\sqrt{2-\\sqrt{3}})(2\\sqrt{2}+\\sqrt{3}) = 8 - 3 = 5",
+        "workingOut": "(2\\sqrt{2-\\sqrt{3}})(2\\sqrt{2}+\\sqrt{3}) = 8 - 3 = 5",
         "graphData": null
       },
       {
@@ -1282,7 +1282,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(5-\\sqrt{7}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(5+\\sqrt{7}\\).",
-        "workingOut": "\\text{Conjugate: } 5+\\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1292,7 +1292,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (5-\\sqrt{7})(5+\\sqrt{7}) = 25 - 7 = 18",
+        "workingOut": "(5-\\sqrt{7})(5+\\sqrt{7}) = 25 - 7 = 18",
         "graphData": null
       },
       {
@@ -1317,7 +1317,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5+\\sqrt{3}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{5}-\\sqrt{3}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{5}-\\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1327,7 +1327,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{5+\\sqrt{3}})(\\sqrt{5}-\\sqrt{3}) = 5 - 3 = 2",
+        "workingOut": "(\\sqrt{5+\\sqrt{3}})(\\sqrt{5}-\\sqrt{3}) = 5 - 3 = 2",
         "graphData": null
       },
       {
@@ -1352,7 +1352,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{7-5}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(2\\sqrt{7}+5\\).",
-        "workingOut": "\\text{Conjugate: } 2\\sqrt{7}+5",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1362,7 +1362,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (2\\sqrt{7-5})(2\\sqrt{7}+5) = 28 - 25 = 3",
+        "workingOut": "(2\\sqrt{7-5})(2\\sqrt{7}+5) = 28 - 25 = 3",
         "graphData": null
       },
       {
@@ -1387,7 +1387,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{10-\\sqrt{5}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{10}+\\sqrt{5}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{10}+\\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1397,7 +1397,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{10-\\sqrt{5}})(\\sqrt{10}+\\sqrt{5}) = 10 - 5 = 5",
+        "workingOut": "(\\sqrt{10-\\sqrt{5}})(\\sqrt{10}+\\sqrt{5}) = 10 - 5 = 5",
         "graphData": null
       },
       {
@@ -1422,7 +1422,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{3+1}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{3}-1\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{3}-1",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1432,7 +1432,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{3+1})(\\sqrt{3}-1) = 3 - 1 = 2",
+        "workingOut": "(\\sqrt{3+1})(\\sqrt{3}-1) = 3 - 1 = 2",
         "graphData": null
       },
       {
@@ -1457,7 +1457,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5-\\sqrt{2}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{5}+\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{5}+\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1467,7 +1467,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{5-\\sqrt{2}})(\\sqrt{5}+\\sqrt{2}) = 5 - 2 = 3",
+        "workingOut": "(\\sqrt{5-\\sqrt{2}})(\\sqrt{5}+\\sqrt{2}) = 5 - 2 = 3",
         "graphData": null
       },
       {
@@ -1492,7 +1492,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(3+\\sqrt{7}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(3-\\sqrt{7}\\).",
-        "workingOut": "\\text{Conjugate: } 3-\\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1502,7 +1502,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (3+\\sqrt{7})(3-\\sqrt{7}) = 9 - 7 = 2",
+        "workingOut": "(3+\\sqrt{7})(3-\\sqrt{7}) = 9 - 7 = 2",
         "graphData": null
       },
       {
@@ -1527,7 +1527,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(3\\sqrt{2-\\sqrt{5}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(3\\sqrt{2}+\\sqrt{5}\\).",
-        "workingOut": "\\text{Conjugate: } 3\\sqrt{2}+\\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1537,7 +1537,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (3\\sqrt{2-\\sqrt{5}})(3\\sqrt{2}+\\sqrt{5}) = 18 - 5 = 13",
+        "workingOut": "(3\\sqrt{2-\\sqrt{5}})(3\\sqrt{2}+\\sqrt{5}) = 18 - 5 = 13",
         "graphData": null
       },
       {
@@ -1562,7 +1562,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{10+\\sqrt{6}}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(\\sqrt{10}-\\sqrt{6}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{10}-\\sqrt{6}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1572,7 +1572,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{10+\\sqrt{6}})(\\sqrt{10}-\\sqrt{6}) = 10 - 6 = 4",
+        "workingOut": "(\\sqrt{10+\\sqrt{6}})(\\sqrt{10}-\\sqrt{6}) = 10 - 6 = 4",
         "graphData": null
       },
       {
@@ -1597,7 +1597,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(7-2\\sqrt{11}\\) and determine its conjugate by flipping the operational sign. The conjugate is \\(7+2\\sqrt{11}\\).",
-        "workingOut": "\\text{Conjugate: } 7+2\\sqrt{11}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1607,7 +1607,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by distribution or FOIL) and simplify the denominator using difference of squares: \\(a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (7-2\\sqrt{11})(7+2\\sqrt{11}) = 49 - 44 = 5",
+        "workingOut": "(7-2\\sqrt{11})(7+2\\sqrt{11}) = 49 - 44 = 5",
         "graphData": null
       },
       {
@@ -1637,12 +1637,12 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify the numerator by distributing the terms.",
-        "workingOut": "\\text{Numerator: } (\\sqrt{3}-1)(2+\\sqrt{3}) = 2\\sqrt{3} + 3 - 2 - \\sqrt{3} = \\sqrt{3}+1",
+        "workingOut": "(\\sqrt{3}-1)(2+\\sqrt{3}) = 2\\sqrt{3} + 3 - 2 - \\sqrt{3} = \\sqrt{3}+1",
         "graphData": null
       },
       {
         "explanation": "Simplify the denominator using the difference of squares identity.",
-        "workingOut": "\\text{Denominator: } 4 - 3 = 1",
+        "workingOut": "4 - 3 = 1",
         "graphData": null
       },
       {
@@ -1672,12 +1672,12 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify the numerator by distributing the terms.",
-        "workingOut": "\\text{Numerator: } (2\\sqrt{5}-\\sqrt{2})(\\sqrt{5}-\\sqrt{2}) = 10 - 2\\sqrt{10} - \\sqrt{10} + 2 = 12 - 3\\sqrt{10}",
+        "workingOut": "(2\\sqrt{5}-\\sqrt{2})(\\sqrt{5}-\\sqrt{2}) = 10 - 2\\sqrt{10} - \\sqrt{10} + 2 = 12 - 3\\sqrt{10}",
         "graphData": null
       },
       {
         "explanation": "Simplify the denominator using the difference of squares identity.",
-        "workingOut": "\\text{Denominator: } 5 - 2 = 3",
+        "workingOut": "5 - 2 = 3",
         "graphData": null
       },
       {
@@ -1834,7 +1834,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "If \\(x = \\frac{\\sqrt{5}+1}{2}\\), show that \\(1 + \\frac{1}{x} = x\\.",
+    "question": "If \\(x = \\frac{\\sqrt{5}+1}{2}\\), show that \\(1 + \\frac{1}{x} = x\\).",
     "a": "x",
     "solution": "",
     "t": "Rationalising the denominator",
@@ -1877,22 +1877,22 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the conjugate of the denominator \\(\\sqrt{3}+\\sqrt{2}\\), which is \\(\\sqrt{3}-\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{3}-\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Multiply numerator and denominator of the expression by this conjugate.",
-        "workingOut": "\\frac{(\\sqrt{6}+1)(\\sqrt{3}-\\sqrt{2})}{(\\sqrt{3}+\\sqrt{2})(\\sqrt{3}-\\sqrt{2})}",
+        "workingOut": "\\frac{(5+\\sqrt{6})(\\sqrt{3}-\\sqrt{2})}{(\\sqrt{3}+\\sqrt{2})(\\sqrt{3}-\\sqrt{2})}",
         "graphData": null
       },
       {
         "explanation": "Expand the numerator (FOIL) and simplify the denominator using difference of squares: \\((\\sqrt{3})^2 - (\\sqrt{2})^2 = 3 - 2 = 1\\).",
-        "workingOut": "\\text{Numerator: } \\sqrt{18} - \\sqrt{12} + \\sqrt{3} - \\sqrt{2} = 3\\sqrt{2} - 2\\sqrt{3} + \\sqrt{3} - \\sqrt{2}",
+        "workingOut": "5\\sqrt{3} - 5\\sqrt{2} + \\sqrt{18} - \\sqrt{12} = 5\\sqrt{3} - 5\\sqrt{2} + 3\\sqrt{2} - 2\\sqrt{3}",
         "graphData": null
       },
       {
-        "explanation": "Group and combine like surds (group the terms with \\(\\sqrt{3}\\) and terms with \\(\\sqrt{2}\\)) to write in the form \\(a\\sqrt{3} + b\\sqrt{2}\\). Identify \\(a\\).",
-        "workingOut": "= 3\\sqrt{2} - \\sqrt{3} = -1\\sqrt{3} + 3\\sqrt{2} \\implies a = 3 \\text{ (Note: the original simplified form is } 3\\sqrt{2} - \\sqrt{3}\\text{, which equates to } 3\\sqrt{3} - 2\\sqrt{2}\\text{ or similar depending on arithmetic. Let's write the exact steps: } \\frac{(\\sqrt{6}+1)(\\sqrt{3}-\\sqrt{2})}{1} = \\sqrt{18} - \\sqrt{12} + \\sqrt{3} - \\sqrt{2} = 3\\sqrt{2} - 2\\sqrt{3} + \\sqrt{3} - \\sqrt{2} = 3\\sqrt{2} - 2\\sqrt{3} + 1\\sqrt{3} - 1\\sqrt{2} = 3\\sqrt{3} - 2\\sqrt{2}\\text{? Wait! let's calculate: } \\sqrt{18} = 3\\sqrt{2}\\text{ and } \\sqrt{12} = 2\\sqrt{3}\\text{. So } 3\\sqrt{2} - 2\\sqrt{3} + \\sqrt{3} - \\sqrt{2} = 2\\sqrt{2} - \\sqrt{3}\\text{. Wait! let's verify: } a = 3, b = -2\\text{ was the code. Let's make sure it equals } 3\\sqrt{3} - 2\\sqrt{2}\\text{? Let's check: } \\frac{\\sqrt{6}+1}{\\sqrt{3}+\\sqrt{2}} \\times \\frac{\\sqrt{3}-\\sqrt{2}}{\\sqrt{3}-\\sqrt{2}} = \\sqrt{18}-\\sqrt{12}+\\sqrt{3}-\\sqrt{2} = 3\\sqrt{2}-2\\sqrt{3}+\\sqrt{3}-\\sqrt{2} = 2\\sqrt{2}-\\sqrt{3}\\text{. Wait, then } a = -1, b = 2\\text{. Why did the previous question say } a=3, b=-2\\text{? Ah! The question text is: } \\frac{\\sqrt{6}+1}{\\sqrt{3}+\\sqrt{2}}\\text{? Wait! If } a=3, b=-2\\text{, then the expression is } 3\\sqrt{3}-2\\sqrt{2}\\text{. Let's check: } (3\\sqrt{3}-2\\sqrt{2})(\\sqrt{3}+\\sqrt{2}) = 9 + 3\\sqrt{6} - 2\\sqrt{6} - 4 = 5 + \\sqrt{6}\\text{. Ah! The original question in the textbook was likely } \\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\text{! Let's check the question field in generate_2d.js: } \\frac{\\sqrt{6}+1}{\\sqrt{3}+\\sqrt{2}}\\text{ but the answer was 3 and -2. Let's change the question text to } \\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\text{ to match the answer! } (3\\sqrt{3}-2\\sqrt{2}) \\times (\\sqrt{3}+\\sqrt{2}) = 3(3) + 3\\sqrt{6} - 2\\sqrt{6} - 2(2) = 9 + \\sqrt{6} - 4 = 5+\\sqrt{6}\\text{. Yes! This is a correction to a bug in the original question definition. Let's correct the question text to } \\frac{5+\\sqrt{6}}{\\sqrt{3}+\\sqrt{2}}\\text{ and explain it!})",
+        "explanation": "Combine like surd terms in the numerator to write the expression in the form \\(a\\sqrt{3} + b\\sqrt{2}\\). Identify \\(a\\).",
+        "workingOut": "= 3\\sqrt{3} - 2\\sqrt{2} \\implies a = 3",
         "graphData": null
       }
     ],
@@ -1912,7 +1912,7 @@ export const Y11A_CH2D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the conjugate of the denominator \\(\\sqrt{3}+\\sqrt{2}\\), which is \\(\\sqrt{3}-\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{3}-\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1922,7 +1922,7 @@ export const Y11A_CH2D_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (FOIL) and simplify the denominator using difference of squares: \\((\\sqrt{3})^2 - (\\sqrt{2})^2 = 3 - 2 = 1\\).",
-        "workingOut": "\\text{Numerator: } 5\\sqrt{3} - 5\\sqrt{2} + \\sqrt{18} - \\sqrt{12} = 5\\sqrt{3} - 5\\sqrt{2} + 3\\sqrt{2} - 2\\sqrt{3}",
+        "workingOut": "5\\sqrt{3} - 5\\sqrt{2} + \\sqrt{18} - \\sqrt{12} = 5\\sqrt{3} - 5\\sqrt{2} + 3\\sqrt{2} - 2\\sqrt{3}",
         "graphData": null
       },
       {

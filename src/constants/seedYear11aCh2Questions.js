@@ -501,7 +501,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 16, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 16, is a perfect square that can be written in exponential form.",
         "workingOut": "16 = 4^2"
       },
       {
@@ -527,7 +527,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 36, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 36, is a perfect square that can be written in exponential form.",
         "workingOut": "36 = 6^2"
       },
       {
@@ -553,7 +553,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 81, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 81, is a perfect square that can be written in exponential form.",
         "workingOut": "81 = 9^2"
       },
       {
@@ -579,7 +579,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 121, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 121, is a perfect square that can be written in exponential form.",
         "workingOut": "121 = 11^2"
       },
       {
@@ -605,7 +605,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 144, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 144, is a perfect square that can be written in exponential form.",
         "workingOut": "144 = 12^2"
       },
       {
@@ -631,7 +631,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 400, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 400, is a perfect square that can be written in exponential form.",
         "workingOut": "400 = 20^2"
       },
       {
@@ -657,7 +657,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 2500, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 2500, is a perfect square that can be written in exponential form.",
         "workingOut": "2500 = 50^2"
       },
       {
@@ -683,7 +683,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recognize that the number inside the square root, 10000, is a perfect square.",
+        "explanation": "Recognize that the number inside the square root, 10000, is a perfect square that can be written in exponential form.",
         "workingOut": "10000 = 100^2"
       },
       {
@@ -709,7 +709,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 12, which is 4.",
+        "explanation": "Find the largest perfect square factor of 12, which is 4, and express the number as a product.",
         "workingOut": "\\sqrt{12} = \\sqrt{4 \\times 3}"
       },
       {
@@ -717,7 +717,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{4} \\times \\sqrt{3}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to write the surd in simplest form.",
         "workingOut": "= 2\\sqrt{3}"
       }
     ],
@@ -735,7 +735,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 18, which is 9.",
+        "explanation": "Find the largest perfect square factor of 18, which is 9, and express the number as a product.",
         "workingOut": "\\sqrt{18} = \\sqrt{9 \\times 2}"
       },
       {
@@ -743,7 +743,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{9} \\times \\sqrt{2}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to write the surd in simplest form.",
         "workingOut": "= 3\\sqrt{2}"
       }
     ],
@@ -761,7 +761,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 20, which is 4.",
+        "explanation": "Find the largest perfect square factor of 20, which is 4, and express the number as a product.",
         "workingOut": "\\sqrt{20} = \\sqrt{4 \\times 5}"
       },
       {
@@ -769,7 +769,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to write the surd in simplest form.",
         "workingOut": "= 2\\sqrt{5}"
       }
     ],
@@ -787,7 +787,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 27, which is 9.",
+        "explanation": "Find the largest perfect square factor of 27, which is 9, and express the number as a product.",
         "workingOut": "\\sqrt{27} = \\sqrt{9 \\times 3}"
       },
       {
@@ -795,7 +795,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{9} \\times \\sqrt{3}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to write the surd in simplest form.",
         "workingOut": "= 3\\sqrt{3}"
       }
     ],
@@ -813,7 +813,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 28, which is 4.",
+        "explanation": "Find the largest perfect square factor of 28, which is 4, and express the number as a product.",
         "workingOut": "\\sqrt{28} = \\sqrt{4 \\times 7}"
       },
       {
@@ -821,7 +821,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{4} \\times \\sqrt{7}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to write the surd in simplest form.",
         "workingOut": "= 2\\sqrt{7}"
       }
     ],
@@ -839,7 +839,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 40, which is 4.",
+        "explanation": "Find the largest perfect square factor of 40, which is 4, and express the number as a product.",
         "workingOut": "\\sqrt{40} = \\sqrt{4 \\times 10}"
       },
       {
@@ -847,7 +847,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{4} \\times \\sqrt{10}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to write the surd in simplest form.",
         "workingOut": "= 2\\sqrt{10}"
       }
     ],
@@ -865,7 +865,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 32, which is 16.",
+        "explanation": "Find the largest perfect square factor of 32, which is 16, and express the number as a product.",
         "workingOut": "\\sqrt{32} = \\sqrt{16 \\times 2}"
       },
       {
@@ -873,7 +873,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{16} \\times \\sqrt{2}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{16} = 4\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{16} = 4\\) to write the surd in simplest form.",
         "workingOut": "= 4\\sqrt{2}"
       }
     ],
@@ -891,7 +891,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 99, which is 9.",
+        "explanation": "Find the largest perfect square factor of 99, which is 9, and express the number as a product.",
         "workingOut": "\\sqrt{99} = \\sqrt{9 \\times 11}"
       },
       {
@@ -899,7 +899,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{9} \\times \\sqrt{11}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to write the surd in simplest form.",
         "workingOut": "= 3\\sqrt{11}"
       }
     ],
@@ -917,7 +917,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 54, which is 9.",
+        "explanation": "Find the largest perfect square factor of 54, which is 9, and express the number as a product.",
         "workingOut": "\\sqrt{54} = \\sqrt{9 \\times 6}"
       },
       {
@@ -925,7 +925,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{9} \\times \\sqrt{6}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{9} = 3\\) to write the surd in simplest form.",
         "workingOut": "= 3\\sqrt{6}"
       }
     ],
@@ -943,7 +943,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 200, which is 100.",
+        "explanation": "Find the largest perfect square factor of 200, which is 100, and express the number as a product.",
         "workingOut": "\\sqrt{200} = \\sqrt{100 \\times 2}"
       },
       {
@@ -951,7 +951,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{100} \\times \\sqrt{2}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{100} = 10\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{100} = 10\\) to write the surd in simplest form.",
         "workingOut": "= 10\\sqrt{2}"
       }
     ],
@@ -969,7 +969,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 60, which is 4.",
+        "explanation": "Find the largest perfect square factor of 60, which is 4, and express the number as a product.",
         "workingOut": "\\sqrt{60} = \\sqrt{4 \\times 15}"
       },
       {
@@ -977,7 +977,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{4} \\times \\sqrt{15}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{4} = 2\\) to write the surd in simplest form.",
         "workingOut": "= 2\\sqrt{15}"
       }
     ],
@@ -995,7 +995,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 75, which is 25.",
+        "explanation": "Find the largest perfect square factor of 75, which is 25, and express the number as a product.",
         "workingOut": "\\sqrt{75} = \\sqrt{25 \\times 3}"
       },
       {
@@ -1003,7 +1003,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{25} \\times \\sqrt{3}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{25} = 5\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{25} = 5\\) to write the surd in simplest form.",
         "workingOut": "= 5\\sqrt{3}"
       }
     ],
@@ -1021,7 +1021,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 80, which is 16.",
+        "explanation": "Find the largest perfect square factor of 80, which is 16, and express the number as a product.",
         "workingOut": "\\sqrt{80} = \\sqrt{16 \\times 5}"
       },
       {
@@ -1029,7 +1029,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{16} \\times \\sqrt{5}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{16} = 4\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{16} = 4\\) to write the surd in simplest form.",
         "workingOut": "= 4\\sqrt{5}"
       }
     ],
@@ -1047,7 +1047,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 98, which is 49.",
+        "explanation": "Find the largest perfect square factor of 98, which is 49, and express the number as a product.",
         "workingOut": "\\sqrt{98} = \\sqrt{49 \\times 2}"
       },
       {
@@ -1055,7 +1055,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{49} \\times \\sqrt{2}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{49} = 7\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{49} = 7\\) to write the surd in simplest form.",
         "workingOut": "= 7\\sqrt{2}"
       }
     ],
@@ -1073,7 +1073,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 800, which is 400.",
+        "explanation": "Find the largest perfect square factor of 800, which is 400, and express the number as a product.",
         "workingOut": "\\sqrt{800} = \\sqrt{400 \\times 2}"
       },
       {
@@ -1081,7 +1081,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{400} \\times \\sqrt{2}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{400} = 20\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{400} = 20\\) to write the surd in simplest form.",
         "workingOut": "= 20\\sqrt{2}"
       }
     ],
@@ -1099,7 +1099,7 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Find the largest perfect square factor of 1000, which is 100.",
+        "explanation": "Find the largest perfect square factor of 1000, which is 100, and express the number as a product.",
         "workingOut": "\\sqrt{1000} = \\sqrt{100 \\times 10}"
       },
       {
@@ -1107,7 +1107,7 @@ export const Y11A_CH2_QUESTIONS = [
         "workingOut": "= \\sqrt{100} \\times \\sqrt{10}"
       },
       {
-        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{100} = 10\\) to obtain the simplified form.",
+        "explanation": "Calculate the square root of the perfect square factor \\(\\sqrt{100} = 10\\) to write the surd in simplest form.",
         "workingOut": "= 10\\sqrt{10}"
       }
     ],
@@ -1125,11 +1125,11 @@ export const Y11A_CH2_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Identify if the terms are like surds. Both terms have the radical \\(\\sqrt{3}\\).",
-        "workingOut": "\\text{Like surds with radical } \\sqrt{3}"
+        "explanation": "Identify if the terms are like surds. Both terms contain the radical \\(\\sqrt{3}\\).",
+        "workingOut": ""
       },
       {
-        "explanation": "Factor out the common surd \\(\\sqrt{3}\\) or add their coefficients (1 + 1).",
+        "explanation": "Combine their coefficients by adding them together.",
         "workingOut": "(1 + 1)\\sqrt{3}"
       },
       {
@@ -1152,7 +1152,7 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms as like surds since they share the same radicand and index under the radical \\(\\sqrt{7}\\).",
-        "workingOut": "\\text{Like surds with radical } \\sqrt{7}"
+        "workingOut": ""
       },
       {
         "explanation": "Subtract the coefficient of the second surd from the first.",
@@ -1568,11 +1568,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 2^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{2^2} \\times \\sqrt{{5}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1594,11 +1594,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 5^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{5^2} \\times \\sqrt{{2}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1620,11 +1620,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 8^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{8^2} \\times \\sqrt{{2}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1646,11 +1646,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 6^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{6^2} \\times \\sqrt{{3}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1672,11 +1672,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 5^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{5^2} \\times \\sqrt{{5}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1698,11 +1698,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 4^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{4^2} \\times \\sqrt{{7}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1724,11 +1724,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 2^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{2^2} \\times \\sqrt{{17}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",
@@ -1750,11 +1750,11 @@ export const Y11A_CH2_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "To bring the coefficient under the radical, square the outer coefficient first.",
-        "workingOut": "\\text{Coefficient squared: } 7^2"
+        "workingOut": "2^2 = 4"
       },
       {
         "explanation": "Express the outer coefficient as a square root and write the product with the original radical.",
-        "workingOut": "= \\sqrt{7^2} \\times \\sqrt{{10}}"
+        "workingOut": "= \\sqrt{4} \\times \\sqrt{5}"
       },
       {
         "explanation": "Combine the numbers under the square root by multiplying them: \\(\\sqrt{a} \\times \\sqrt{b} = \\sqrt{a \\times b}\\).",

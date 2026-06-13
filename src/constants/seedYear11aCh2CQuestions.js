@@ -449,7 +449,7 @@ export const Y11A_CH2C_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are:\n\n\\(\\sqrt{2} \\text{ and } \\sqrt{7}\\)",
+    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{2}\\) and \\(\\sqrt{7}\\).",
     "a": "3",
     "solution": "",
     "t": "Further simplification of surds",
@@ -478,7 +478,7 @@ export const Y11A_CH2C_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are:\n\n\\(\\sqrt{5} \\text{ and } 2\\sqrt{5}\\)",
+    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{5}\\) and \\(2\\sqrt{5}\\).",
     "a": "5",
     "solution": "",
     "t": "Further simplification of surds",
@@ -507,7 +507,7 @@ export const Y11A_CH2C_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are:\n\n\\(\\sqrt{7} + 1 \\text{ and } \\sqrt{7} - 1\\)",
+    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(\\sqrt{7} + 1\\) and \\(\\sqrt{7} - 1\\).",
     "a": "4",
     "solution": "",
     "t": "Further simplification of surds",
@@ -536,7 +536,7 @@ export const Y11A_CH2C_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are:\n\n\\(2\\sqrt{3} - \\sqrt{6} \\text{ and } 2\\sqrt{3} + \\sqrt{6}\\)",
+    "question": "Use Pythagoras' theorem to find the hypotenuse of the right-angled triangle in which the lengths of the other two sides are \\(2\\sqrt{3} - \\sqrt{6}\\) and \\(2\\sqrt{3} + \\sqrt{6}\\).",
     "a": "6",
     "solution": "",
     "t": "Further simplification of surds",
@@ -640,7 +640,7 @@ export const Y11A_CH2C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Combine the two middle identical term products (-ab and -ba) to get the final identity expression.",
+        "explanation": "Combine the two middle identical term products to get the final identity expression.",
         "workingOut": "= a^2 - 2ab + b^2",
         "graphData": null
       }

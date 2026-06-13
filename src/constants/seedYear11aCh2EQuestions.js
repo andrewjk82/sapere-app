@@ -11,8 +11,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } 7",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -22,7 +22,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Rational, 7/1",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -41,8 +41,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } -2\\frac{1}{4}",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -52,7 +52,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Rational, -9/4",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -71,8 +71,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } \\sqrt{9}",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -82,7 +82,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Rational, 3/1",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -101,18 +101,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } \\sqrt{10}",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine if the root or number simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
-        "workingOut": "10 \\text{ is not a perfect square}",
+        "explanation": "Determine if the root simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Irrational",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -131,18 +131,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } \\sqrt[3]{15}",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine if the root or number simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
-        "workingOut": "15 \\text{ is not a perfect cube}",
+        "explanation": "Determine if the root simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Irrational",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -161,8 +161,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } \\sqrt[4]{16}",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -172,7 +172,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Rational, 2/1",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -191,8 +191,8 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } -0.16",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -202,7 +202,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Rational, -4/25",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -221,18 +221,18 @@ export const Y11A_CH2E_QUESTIONS = [
     "hint": "",
     "solutionSteps": [
       {
-        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\) of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
-        "workingOut": "\\text{Definition check for } \\pi",
+        "explanation": "Recall that a rational number is any number that can be written as a fraction \\(a/b\\ of two integers where \\(b \\neq 0\\). An irrational number cannot be written as a ratio of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Determine if the root or number simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
-        "workingOut": "\\pi \\approx 3.14159... \\text{ is non-terminating and non-recurring}",
+        "explanation": "Determine if the root simplifies to an integer. Since it does not, it cannot be written as a fraction of integers.",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Conclude the classification based on the fraction definition.",
-        "workingOut": "\\text{Classification: } Irrational",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -252,17 +252,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
-        "workingOut": "\\text{Boundary: } 2",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
-        "workingOut": "\\text{Endpoint at } 2: solid",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
-        "workingOut": "\\text{Result: } Solid circle at 2, arrow to the left.",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -282,17 +282,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
-        "workingOut": "\\text{Boundary: } -1",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
-        "workingOut": "\\text{Endpoint at } -1: open",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
-        "workingOut": "\\text{Result: } Open circle at -1, arrow to the right.",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -312,17 +312,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
-        "workingOut": "\\text{Boundaries: } -2, 5",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the endpoint markers: use a solid circle for included boundaries (brackets like \\([, ]\\) or inequalities with \\(\\le, \\ge\\)), and an open circle for excluded ones.",
-        "workingOut": "\\text{Endpoint at } -2: open, \\text{Endpoint at } 5: solid",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Draw a line connecting the two boundary circles on the number line to represent the interval between them.",
-        "workingOut": "\\text{Result: } Open circle at -2, solid circle at 5, line connecting them.",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -342,17 +342,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
-        "workingOut": "\\text{Boundary: } -2",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
-        "workingOut": "\\text{Endpoint at } -2: solid",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
-        "workingOut": "\\text{Result: } Solid circle at -2, arrow to the right.",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -372,17 +372,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
-        "workingOut": "\\text{Boundary: } 0",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the endpoint marker at the boundary: solid circle if included (\\(\\le, \\ge, [\\)), open circle if excluded (\\(<, >, (\\)).",
-        "workingOut": "\\text{Endpoint at } 0: open",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Draw a line starting from the boundary circle, with an arrow pointing in the direction of the values included in the interval.",
-        "workingOut": "\\text{Result: } Open circle at 0, arrow to the left.",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -402,17 +402,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundary values for the given interval expression.",
-        "workingOut": "\\text{Boundaries: } -3, 3",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the endpoint markers: use a solid circle for included boundaries (brackets like \\([, ]\\) or inequalities with \\(\\le, \\ge\\)), and an open circle for excluded ones.",
-        "workingOut": "\\text{Endpoint at } -3: solid, \\text{Endpoint at } 3: open",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Draw a line connecting the two boundary circles on the number line to represent the interval between them.",
-        "workingOut": "\\text{Result: } Solid circle at -3, open circle at 3, line connecting them.",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -432,17 +432,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
-        "workingOut": "\\text{Boundaries: } -4, 6",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "\\text{Lower bound: } -4 \\implies [",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "\\text{Upper bound: } 6 \\implies ] \\implies [-4, 6]",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -462,17 +462,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
-        "workingOut": "\\text{Boundaries: } -4, 6",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "\\text{Lower bound: } -4 \\implies (",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "\\text{Upper bound: } 6 \\implies ) \\implies (-4, 6)",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -492,17 +492,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
-        "workingOut": "\\text{Boundaries: } -4, 6",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "\\text{Lower bound: } -4 \\implies (",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "\\text{Upper bound: } 6 \\implies ] \\implies (-4, 6]",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -522,17 +522,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
-        "workingOut": "\\text{Boundaries: } -4, 6",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "\\text{Lower bound: } -4 \\implies [",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "\\text{Upper bound: } 6 \\implies ) \\implies [-4, 6)",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -552,17 +552,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
-        "workingOut": "\\text{Boundaries: } -\\infty, 6",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "\\text{Lower bound: } -\\infty \\implies (",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "\\text{Upper bound: } 6 \\implies ] \\implies (-\\infty, 6]",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -582,17 +582,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the lower and upper bounds of the inequality. Use infinity if the inequality is one-sided.",
-        "workingOut": "\\text{Boundaries: } -4, \\infty",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the lower bound: use a square bracket \\([\\) for inclusive (\\(\\ge, \\le\\)) and parenthesis \\((\\) for exclusive (\\(<, >\\)) or infinity.",
-        "workingOut": "\\text{Lower bound: } -4 \\implies (",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Determine the bracket type for the upper bound and combine both to write down the interval notation.",
-        "workingOut": "\\text{Upper bound: } \\infty \\implies ) \\implies (-4, \\infty)",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -612,17 +612,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
-        "workingOut": "\\text{Lower bound: } -5 \\text{ with } (, \\text{ Upper bound: } 3 \\text{ with } )",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
-        "workingOut": "\\text{Signs: } > \\text{ and } <",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "= -5 < x < 3",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -642,17 +642,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
-        "workingOut": "\\text{Lower bound: } -5 \\text{ with } [, \\text{ Upper bound: } 3 \\text{ with } ]",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
-        "workingOut": "\\text{Signs: } \\ge \\text{ and } \\le",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "= -5 \\le x \\le 3",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -672,17 +672,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
-        "workingOut": "\\text{Lower bound: } -5 \\text{ with } [, \\text{ Upper bound: } 3 \\text{ with } )",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
-        "workingOut": "\\text{Signs: } \\ge \\text{ and } <",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "= -5 \\le x < 3",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -702,17 +702,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
-        "workingOut": "\\text{Lower bound: } -5 \\text{ with } (, \\text{ Upper bound: } 3 \\text{ with } ]",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
-        "workingOut": "\\text{Signs: } > \\text{ and } \\le",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "= -5 < x \\le 3",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -732,17 +732,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
-        "workingOut": "\\text{Lower bound: } 3 \\text{ with } (, \\text{ Upper bound: } \\infty \\text{ with } )",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
-        "workingOut": "\\text{Signs: } > \\text{ and } <",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "= x > 3",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -762,17 +762,17 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the boundaries of the interval and the types of brackets enclosing them.",
-        "workingOut": "\\text{Lower bound: } -\\infty \\text{ with } (, \\text{ Upper bound: } -5 \\text{ with } ]",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Convert the bracket types into corresponding inequality signs: square brackets mean \\(\\le\\) or \\(\\ge\\), parenthetical brackets mean \\(<\\) or \\(>\\).",
-        "workingOut": "\\text{Signs: } > \\text{ and } \\le",
+        "workingOut": "",
         "graphData": null
       },
       {
         "explanation": "Write the algebraic inequality statement representing the interval.",
-        "workingOut": "= x \\le -5",
+        "workingOut": "",
         "graphData": null
       }
     ],
@@ -1902,7 +1902,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{5+\\sqrt{2}}\\) and determine its conjugate: \\(\\sqrt{5}-\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{5}-\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1932,7 +1932,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(3-\\sqrt{7}\\) and determine its conjugate: \\(3+\\sqrt{7}\\).",
-        "workingOut": "\\text{Conjugate: } 3+\\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1962,7 +1962,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{6-\\sqrt{3}}\\) and determine its conjugate: \\(2\\sqrt{6}+\\sqrt{3}\\).",
-        "workingOut": "\\text{Conjugate: } 2\\sqrt{6}+\\sqrt{3}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -1992,7 +1992,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{3+1}\\) and determine its conjugate: \\(\\sqrt{3}-1\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{3}-1",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -2022,7 +2022,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(\\sqrt{11+\\sqrt{5}}\\) and determine its conjugate: \\(\\sqrt{11}-\\sqrt{5}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{11}-\\sqrt{5}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -2052,7 +2052,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the binomial denominator \\(2\\sqrt{5-\\sqrt{7}}\\) and determine its conjugate: \\(2\\sqrt{5}+\\sqrt{7}\\).",
-        "workingOut": "\\text{Conjugate: } 2\\sqrt{5}+\\sqrt{7}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -2082,7 +2082,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(\\sqrt{7+\\sqrt{2}}\\) and determine its conjugate: \\(\\sqrt{7}-\\sqrt{2}\\).",
-        "workingOut": "\\text{Conjugate: } \\sqrt{7}-\\sqrt{2}",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -2092,7 +2092,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by perfect square expansion or FOIL) and the denominator (by difference of squares).",
-        "workingOut": "\\text{Numerator: } (\\sqrt{7}-\\sqrt{2})^2 = 7 - 2\\sqrt{14} + 2 = 9-2\\sqrt{14}, \\text{ Denominator: } 7 - 2 = 5",
+        "workingOut": "(\\sqrt{7}-\\sqrt{2})^2 = 7 - 2\\sqrt{14} + 2 = 9-2\\sqrt{14}",
         "graphData": null
       },
       {
@@ -2117,7 +2117,7 @@ export const Y11A_CH2E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the denominator \\(3\\sqrt{3-5}\\) and determine its conjugate: \\(3\\sqrt{3}+5\\).",
-        "workingOut": "\\text{Conjugate: } 3\\sqrt{3}+5",
+        "workingOut": "",
         "graphData": null
       },
       {
@@ -2127,7 +2127,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Expand the numerator (by perfect square expansion or FOIL) and the denominator (by difference of squares).",
-        "workingOut": "\\text{Numerator: } (3\\sqrt{3}+5)^2 = 27 + 30\\sqrt{3} + 25 = 52+30\\sqrt{3}, \\text{ Denominator: } 27 - 25 = 2",
+        "workingOut": "(3\\sqrt{3}+5)^2 = 27 + 30\\sqrt{3} + 25 = 52+30\\sqrt{3}",
         "graphData": null
       },
       {
@@ -2192,12 +2192,12 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Expand the terms in the numerator.",
-        "workingOut": "\\text{Numerator: } 3\\sqrt{5} + 6 + 2\\sqrt{5} - 4",
+        "workingOut": "3\\sqrt{5} + 6 + 2\\sqrt{5} - 4",
         "graphData": null
       },
       {
         "explanation": "Expand the denominator using the difference of squares identity \\((a-b)(a+b) = a^2 - b^2\\).",
-        "workingOut": "\\text{Denominator: } (\\sqrt{5})^2 - 2^2 = 5 - 4 = 1",
+        "workingOut": "(\\sqrt{5})^2 - 2^2 = 5 - 4 = 1",
         "graphData": null
       },
       {
@@ -2227,12 +2227,12 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Expand the denominator using the difference of squares identity.",
-        "workingOut": "\\text{Denominator: } (\\sqrt{5})^2 - 2^2 = 5 - 4 = 1",
+        "workingOut": "(\\sqrt{5})^2 - 2^2 = 5 - 4 = 1",
         "graphData": null
       },
       {
         "explanation": "Expand the numerator terms: distribute \\(\\sqrt{5}\\) across the addition.",
-        "workingOut": "\\text{Numerator: } \\sqrt{5}\\sqrt{5} + 2\\sqrt{5} = 5 + 2\\sqrt{5}",
+        "workingOut": "\\sqrt{5}\\sqrt{5} + 2\\sqrt{5} = 5 + 2\\sqrt{5}",
         "graphData": null
       },
       {
@@ -2262,12 +2262,12 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Expand the denominator using difference of squares to find that it equals 1.",
-        "workingOut": "\\text{Denominator: } 5 - 4 = 1",
+        "workingOut": "5 - 4 = 1",
         "graphData": null
       },
       {
         "explanation": "Expand the numerator by distribution to write the fraction in rationalised form.",
-        "workingOut": "\\text{Numerator: } \\sqrt{5}\\sqrt{5} + 2\\sqrt{5} = 5 + 2\\sqrt{5}",
+        "workingOut": "\\sqrt{5}\\sqrt{5} + 2\\sqrt{5} = 5 + 2\\sqrt{5}",
         "graphData": null
       },
       {
@@ -2307,7 +2307,7 @@ export const Y11A_CH2E_QUESTIONS = [
       },
       {
         "explanation": "Distribute the negative sign, combine like terms, and verify that the surd terms cancel, yielding a rational result.",
-        "workingOut": "= \\frac{4 + 2\\sqrt{3} - 2\\sqrt{3} + 3}{3} = \\frac{7}{3} \\quad (\\text{rational})",
+        "workingOut": "= \\frac{4 + 2\\sqrt{3} - 2\\sqrt{3} + 3}{3} = \\frac{7}{3}",
         "graphData": null
       }
     ],

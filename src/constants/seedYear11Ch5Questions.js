@@ -10557,7 +10557,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "c) State the domain and range from the sketch (a line decreasing to 2, then a parabola increasing from 2).",
-        "workingOut": "\\text{Domain: } u \\in \\mathbb{R} \\\\ \\text{Range: } y \\ge 2"
+        "workingOut": "\\text{Domain: } u \\in \\mathbb{R} \\\\ \\text{Range: } y \\ge 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2 - x; }, -5, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2 + x*x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,2], {name:'(0,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10583,7 +10599,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "c) Identify the domain and range.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 1"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 1",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              6,
+              6,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 1; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,1], {name:'(2,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10798,7 +10830,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "State domain and range.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{0\\} \\\\ \\text{Range: } y \\in \\{-2, 2\\}"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{0\\} \\\\ \\text{Range: } y \\in \\{-2, 2\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              4,
+              5,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -2; }, -5, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2; }, 0.001, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,-2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0,2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10824,7 +10872,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range from the sketch.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 0"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 0",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              12,
+              8,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 12 - x; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,9], {name:'(3,9)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10850,7 +10914,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range. $17 - x^2$ is a downward parabola with vertex at $(0, 17)$, so it has values $< 8$. $2^x$ increases to 8.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 8"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 8",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              18,
+              5,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,18]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(2, x); }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 17 - x*x; }, 3, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,8], {name:'(3,8)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10876,7 +10956,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine range. Left branch goes from $2/3$ to $\\infty$. Right branch goes from $2/3$ down to $-\\infty$.",
-        "workingOut": "\\text{Domain: } x > 0 \\\\ \\text{Range: } \\mathbb{R}"
+        "workingOut": "\\text{Domain: } x > 0 \\\\ \\text{Range: } \\mathbb{R}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              5,
+              8,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2/x; }, 0.4, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1 - x/9; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2/3], {name:'(3, 2/3)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10902,7 +10998,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range. Both branches are lines moving downward away from $y=2$.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 2"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              4,
+              6,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - 1; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 5 - x; }, 3, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2], {name:'(3,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10928,7 +11040,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "c) Evaluate $g(-t)$ to test for odd function.",
-        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}"
+        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              4,
+              6,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x + 4; }, -6, -2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 4; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 2], {name:'(-2,2)', size:3, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, -2], {name:'(2,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10954,7 +11082,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "c) Evaluate $h(-v)$.",
-        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}"
+        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              4,
+              3,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -3*x - 2; }, -3, -1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2*x*x - 1; }, -1, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3*x - 2; }, 1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-1, 1], {name:'(-1,1)', size:3, color:'red', label:{offset:[-15,10]}});\nboard.create('point', [1, 1], {name:'(1,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10976,7 +11120,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Compare to $p(m)$ for $m > 0$.",
-        "workingOut": "p(m) = m^3 - m \\\\ -p(m) = -(m^3 - m) = -m + m^3 = p(-m) \\\\ \\text{Thus, } p(m) \\text{ is odd.}"
+        "workingOut": "p(m) = m^3 - m \\\\ -p(m) = -(m^3 - m) = -m + m^3 = p(-m) \\\\ \\text{Thus, } p(m) \\text{ is odd.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              3,
+              3,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - x*x*x; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x*x - x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11002,7 +11162,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Compare.",
-        "workingOut": "q(-1) \\neq q(1) \\text{ and } q(-1) \\neq -q(1). \\text{ Thus, neither.}"
+        "workingOut": "q(-1) \\neq q(1) \\text{ and } q(-1) \\neq -q(1). \\text{ Thus, neither.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              6,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 2; }, -4, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x - 2; }, 0, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0, -2], {name:'(0,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11028,7 +11204,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range. Graph is a line with a hole at $k = -2, y = 0$.",
-        "workingOut": "\\text{Domain: } k \\in \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } y \\in \\mathbb{R} \\setminus \\{0\\}"
+        "workingOut": "\\text{Domain: } k \\in \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } y \\in \\mathbb{R} \\setminus \\{0\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              4,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x+2; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,0], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11054,7 +11246,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Determine domain and range. Parabola $y=k^2$ with holes at $k=2$ and $k=-2$, where $y=4$.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2, 2\\} \\\\ \\text{Range: } y \\ge 0 \\text{ and } y \\neq 4"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2, 2\\} \\\\ \\text{Range: } y \\ge 0 \\text{ and } y \\neq 4",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              8,
+              4,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -4, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11080,7 +11288,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "State domain and range. Hyperbola with asymptote $k=2$, $y=0$, and a hole at $k=4$, where $y=1/2$.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{2, 4\\} \\\\ \\text{Range: } y \\neq 0, y \\neq \\frac{1}{2}"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{2, 4\\} \\\\ \\text{Range: } y \\neq 0, y \\neq \\frac{1}{2}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              4,
+              8,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('line', [[2,-4],[2,4]], {strokeColor:'red', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, -2, 1.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, 2.1, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [4, 0.5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11106,7 +11330,23 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "State domain and range. Horizontal line with a hole.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } \\{5\\}"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } \\{5\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              7,
+              4,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 5; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11211,7 +11451,6 @@ export const CH5_QUESTIONS_Y11A = [
     ]
   }
 ];
-
 
 export const Y11_CH5_QUESTIONS = [
   {
@@ -11437,7 +11676,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "c) State the domain and range from the sketch (a line decreasing to 2, then a parabola increasing from 2).",
-        "workingOut": "\\text{Domain: } u \\in \\mathbb{R} \\\\ \\text{Range: } y \\ge 2"
+        "workingOut": "\\text{Domain: } u \\in \\mathbb{R} \\\\ \\text{Range: } y \\ge 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2 - x; }, -5, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2 + x*x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,2], {name:'(0,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11463,7 +11718,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "c) Identify the domain and range.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 1"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 1",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              6,
+              6,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 1; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,1], {name:'(2,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11678,7 +11949,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "State domain and range.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{0\\} \\\\ \\text{Range: } y \\in \\{-2, 2\\}"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{0\\} \\\\ \\text{Range: } y \\in \\{-2, 2\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              4,
+              5,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -2; }, -5, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2; }, 0.001, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,-2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0,2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11704,7 +11991,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Determine domain and range from the sketch.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 0"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 0",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              12,
+              8,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 12 - x; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,9], {name:'(3,9)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11730,7 +12033,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Determine domain and range. $17 - x^2$ is a downward parabola with vertex at $(0, 17)$, so it has values $< 8$. $2^x$ increases to 8.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 8"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 8",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              18,
+              5,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,18]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(2, x); }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 17 - x*x; }, 3, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,8], {name:'(3,8)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11756,7 +12075,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Determine range. Left branch goes from $2/3$ to $\\infty$. Right branch goes from $2/3$ down to $-\\infty$.",
-        "workingOut": "\\text{Domain: } x > 0 \\\\ \\text{Range: } \\mathbb{R}"
+        "workingOut": "\\text{Domain: } x > 0 \\\\ \\text{Range: } \\mathbb{R}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              5,
+              8,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2/x; }, 0.4, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1 - x/9; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2/3], {name:'(3, 2/3)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11782,7 +12117,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Determine domain and range. Both branches are lines moving downward away from $y=2$.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 2"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              4,
+              6,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - 1; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 5 - x; }, 3, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2], {name:'(3,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11808,7 +12159,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "c) Evaluate $g(-t)$ to test for odd function.",
-        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}"
+        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              4,
+              6,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x + 4; }, -6, -2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 4; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 2], {name:'(-2,2)', size:3, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, -2], {name:'(2,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11834,7 +12201,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "c) Evaluate $h(-v)$.",
-        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}"
+        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              4,
+              3,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -3*x - 2; }, -3, -1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2*x*x - 1; }, -1, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3*x - 2; }, 1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-1, 1], {name:'(-1,1)', size:3, color:'red', label:{offset:[-15,10]}});\nboard.create('point', [1, 1], {name:'(1,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11856,7 +12239,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Compare to $p(m)$ for $m > 0$.",
-        "workingOut": "p(m) = m^3 - m \\\\ -p(m) = -(m^3 - m) = -m + m^3 = p(-m) \\\\ \\text{Thus, } p(m) \\text{ is odd.}"
+        "workingOut": "p(m) = m^3 - m \\\\ -p(m) = -(m^3 - m) = -m + m^3 = p(-m) \\\\ \\text{Thus, } p(m) \\text{ is odd.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              3,
+              3,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - x*x*x; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x*x - x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11882,7 +12281,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Compare.",
-        "workingOut": "q(-1) \\neq q(1) \\text{ and } q(-1) \\neq -q(1). \\text{ Thus, neither.}"
+        "workingOut": "q(-1) \\neq q(1) \\text{ and } q(-1) \\neq -q(1). \\text{ Thus, neither.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              6,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 2; }, -4, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x - 2; }, 0, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0, -2], {name:'(0,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11908,7 +12323,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Determine domain and range. Graph is a line with a hole at $k = -2, y = 0$.",
-        "workingOut": "\\text{Domain: } k \\in \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } y \\in \\mathbb{R} \\setminus \\{0\\}"
+        "workingOut": "\\text{Domain: } k \\in \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } y \\in \\mathbb{R} \\setminus \\{0\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              4,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x+2; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,0], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11934,7 +12365,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "Determine domain and range. Parabola $y=k^2$ with holes at $k=2$ and $k=-2$, where $y=4$.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2, 2\\} \\\\ \\text{Range: } y \\ge 0 \\text{ and } y \\neq 4"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2, 2\\} \\\\ \\text{Range: } y \\ge 0 \\text{ and } y \\neq 4",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              8,
+              4,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -4, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11960,7 +12407,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "State domain and range. Hyperbola with asymptote $k=2$, $y=0$, and a hole at $k=4$, where $y=1/2$.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{2, 4\\} \\\\ \\text{Range: } y \\neq 0, y \\neq \\frac{1}{2}"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{2, 4\\} \\\\ \\text{Range: } y \\neq 0, y \\neq \\frac{1}{2}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              4,
+              8,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('line', [[2,-4],[2,4]], {strokeColor:'red', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, -2, 1.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, 2.1, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [4, 0.5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -11986,7 +12449,23 @@ export const Y11_CH5_QUESTIONS = [
       },
       {
         "explanation": "State domain and range. Horizontal line with a hole.",
-        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } \\{5\\}"
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } \\{5\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              7,
+              4,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 5; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
