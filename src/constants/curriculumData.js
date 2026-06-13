@@ -2229,7 +2229,8 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-2A', code: '2A', title: 'Real numbers and intervals' },
           { id: 'y11a-2B', code: '2B', title: 'Surds and their arithmetic' },
           { id: 'y11a-2C', code: '2C', title: 'Further simplification of surds' },
-          { id: 'y11a-2D', code: '2D', title: 'Rationalising the denominator' }
+          { id: 'y11a-2D', code: '2D', title: 'Rationalising the denominator' },
+          { id: 'y11a-2E', code: '2E', title: 'Revision' }
         ]
       },
       {
