@@ -884,10 +884,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Eleni drives \\(150\\text{ km}\\) on a bearing of \\(125^{\\circ}\\). She then drives due west until she is due south of her starting point. How far is she from her starting point, correct to the nearest kilometre?",
-    "a": "86",
+    "q": "Eleni drives \\(120\\text{ km}\\) on a bearing of \\(130^{\\circ}\\). She then drives due west until she is due south of her starting point. How far is she from her starting point, correct to the nearest kilometre?",
+    "a": "77",
     "h": "Model the movement as a right-angled triangle. Find the angle between the South direction and the bearing.",
-    "s": "The angle at the starting point between South and \\(125^{\\circ}\\) is \\(180^{\\circ} - 125^{\\circ} = 55^{\\circ}\\). Distance \\(= 150 \\cos 55^{\\circ} \\approx 86\\text{ km}\\).",
+    "s": "The angle at the starting point between South and \\(130^{\\circ}\\) is \\(180^{\\circ} - 130^{\\circ} = 50^{\\circ}\\). Distance \\(= 120 \\cos 50^{\\circ} \\approx 77.13 \\approx 77\\text{ km}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -924,7 +924,7 @@ export const Y11_CH6B_QUESTIONS = [
             "id": "D",
             "coords": [
               0,
-              1.71
+              1.4288495612538425
             ],
             "name": "South Point",
             "label": {
@@ -938,8 +938,8 @@ export const Y11_CH6B_QUESTIONS = [
             "type": "point",
             "id": "T",
             "coords": [
-              3.28,
-              1.71
+              3.064177772475912,
+              1.4288495612538425
             ],
             "name": "Turn",
             "label": {
@@ -1011,7 +1011,7 @@ export const Y11_CH6B_QUESTIONS = [
               "S",
               "D"
             ],
-            "name": "55°",
+            "name": "50°",
             "radius": 0.8,
             "label": {
               "offset": [
@@ -1026,7 +1026,7 @@ export const Y11_CH6B_QUESTIONS = [
               1.8,
               3.1
             ],
-            "content": "150 km"
+            "content": "120 km"
           }
         ]
       }
@@ -1034,17 +1034,17 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the internal angle of the right-angled triangle formed between the starting point, the turning point, and the due south point.",
-        "workingOut": "\\theta = 180^{\\circ} - 125^{\\circ} = 55^{\\circ}",
+        "workingOut": "\\theta = 180^{\\circ} - 130^{\\circ} = 50^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Use the cosine ratio to find the adjacent side (distance due south).",
-        "workingOut": "d = 150 \\cos 55^{\\circ}",
+        "workingOut": "d = 120 \\cos 50^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Calculate the final distance.",
-        "workingOut": "d \\approx 150 \\times 0.5736 = 86.04 \\approx 86",
+        "workingOut": "d \\approx 120 \\times 0.6428 = 77.13 \\approx 77",
         "graphData": null
       }
     ]
@@ -1056,10 +1056,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "John is looking out a window \\(W\\) at a car \\(C\\) parked on the street below. If the angle of depression of \\(C\\) from \\(W\\) is \\(68^{\\circ}\\) and the car is \\(9\\text{ m}\\) from the base \\(B\\) of the building, find the height \\(WB\\) of the window, correct to the nearest metre.",
-    "a": "22",
+    "q": "John is looking out a window \\(W\\) at a car \\(C\\) parked on the street below. If the angle of depression of \\(C\\) from \\(W\\) is \\(73^{\\circ}\\) and the car is \\(7\\text{ m}\\) from the base \\(B\\) of the building, find the height \\(WB\\) of the window, correct to the nearest metre.",
+    "a": "23",
     "h": "Use the tangent ratio: the angle of depression equals the angle of elevation.",
-    "s": "\\(WB = 9 \\tan 68^{\\circ} \\approx 22.27 \\approx 22\\text{ m}\\).",
+    "s": "\\(WB = 7 \\tan 73^{\\circ} \\approx 22.89 \\approx 23\\text{ m}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -1110,7 +1110,7 @@ export const Y11_CH6B_QUESTIONS = [
             "type": "point",
             "id": "C",
             "coords": [
-              4,
+              1.22,
               0
             ],
             "name": "C",
@@ -1171,7 +1171,7 @@ export const Y11_CH6B_QUESTIONS = [
               2,
               0.3
             ],
-            "content": "9 m"
+            "content": "7 m"
           },
           {
             "type": "angle",
@@ -1180,7 +1180,7 @@ export const Y11_CH6B_QUESTIONS = [
               "W",
               "B"
             ],
-            "name": "22°",
+            "name": "73°",
             "radius": 0.8
           }
         ]
@@ -1189,17 +1189,17 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the angle of elevation of the window from the car, which is equal to the angle of depression.",
-        "workingOut": "\\theta = 68^{\\circ}",
+        "workingOut": "\\theta = 73^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Apply the tangent ratio.",
-        "workingOut": "\\tan 68^{\\circ} = \\frac{WB}{9}",
+        "workingOut": "\\tan 73^{\\circ} = \\frac{WB}{7}",
         "graphData": null
       },
       {
         "explanation": "Solve for \\(WB\\).",
-        "workingOut": "WB = 9 \\tan 68^{\\circ} \\approx 22.27 \\approx 22",
+        "workingOut": "WB = 7 \\tan 73^{\\circ} \\approx 22.89 \\approx 23",
         "graphData": null
       }
     ]
@@ -1211,10 +1211,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "A ladder of length \\(6\\text{ m}\\) is placed on level ground against a vertical wall. If the foot of the ladder is \\(2.2\\text{ m}\\) from the base of the wall, find, correct to the nearest degree, the angle at which the ladder is inclined to the ground.",
-    "a": "68°",
+    "q": "A ladder of length \\(5\\text{ m}\\) is placed on level ground against a vertical wall. If the foot of the ladder is \\(1.5\\text{ m}\\) from the base of the wall, find, correct to the nearest degree, the angle at which the ladder is inclined to the ground.",
+    "a": "73°",
     "h": "Use the cosine ratio: \\(\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}\\).",
-    "s": "\\(\\cos \\theta = \\frac{2.2}{6} \\implies \\theta = \\cos^{-1}(0.3667) \\approx 68^{\\circ}\\).",
+    "s": "\\(\\cos \\theta = \\frac{1.5}{5} \\implies \\theta = \\cos^{-1}(0.3) \\approx 72.54^{\\circ} \\approx 73^{\\circ}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -1236,7 +1236,7 @@ export const Y11_CH6B_QUESTIONS = [
             "id": "A",
             "coords": [
               0,
-              5.58
+              4.769696007084728
             ],
             "name": "Wall top",
             "label": {
@@ -1265,7 +1265,7 @@ export const Y11_CH6B_QUESTIONS = [
             "type": "point",
             "id": "C",
             "coords": [
-              2.2,
+              1.5,
               0
             ],
             "name": "Foot",
@@ -1322,7 +1322,7 @@ export const Y11_CH6B_QUESTIONS = [
               1.1,
               -0.4
             ],
-            "content": "2.2 m",
+            "content": "1.5 m",
             "fontSize": 14
           },
           {
@@ -1331,7 +1331,7 @@ export const Y11_CH6B_QUESTIONS = [
               1.3,
               2.99
             ],
-            "content": "6 m",
+            "content": "5 m",
             "fontSize": 14
           }
         ]
@@ -1339,18 +1339,18 @@ export const Y11_CH6B_QUESTIONS = [
     },
     "solutionSteps": [
       {
-        "explanation": "Express the relation using the cosine ratio.",
-        "workingOut": "\\cos \\theta = \\frac{2.2}{6}",
+        "explanation": "Set up the cosine ratio using adjacent side and hypotenuse.",
+        "workingOut": "\\cos \\theta = \\frac{1.5}{5} = 0.3",
         "graphData": null
       },
       {
-        "explanation": "Take the inverse cosine.",
-        "workingOut": "\\theta = \\cos^{-1}\\left(\\frac{11}{30}\\right)",
+        "explanation": "Solve for \\(\\theta\\) using the inverse cosine function.",
+        "workingOut": "\\theta = \\cos^{-1}(0.3)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the angle to the nearest degree.",
-        "workingOut": "\\theta \\approx 68.49^{\\circ} \\approx 68^{\\circ}",
+        "explanation": "Evaluate and round to the nearest degree.",
+        "workingOut": "\\theta \\approx 72.54^{\\circ} \\approx 73^{\\circ}",
         "graphData": null
       }
     ]
@@ -1362,10 +1362,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find, correct to the nearest tenth of a metre, the height of a tower, if the angle of elevation of the top of the tower is \\(58^{\\circ}36'\\) from a point on horizontal ground \\(15\\text{ m}\\) from the base of the tower.",
-    "a": "24.6",
+    "q": "Find, correct to the nearest tenth of a metre, the height of a tower, if the angle of elevation of the top of the tower is \\(64^{\\circ}48'\\) from a point on horizontal ground \\(10\\text{ m}\\) from the base of the tower.",
+    "a": "21.3",
     "h": "Use the tangent ratio: \\(\\tan \\theta = \\frac{h}{d}\\).",
-    "s": "\\(h = 15 \\tan(58^{\\circ}36') \\approx 24.6\\text{ m}\\).",
+    "s": "\\(h = 10 \\tan(64^{\\circ}48') \\approx 21.3\\text{ m}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -1387,7 +1387,7 @@ export const Y11_CH6B_QUESTIONS = [
             "id": "A",
             "coords": [
               0,
-              8.19
+              10.625540865786007
             ],
             "name": "Top",
             "label": {
@@ -1458,7 +1458,7 @@ export const Y11_CH6B_QUESTIONS = [
               "C",
               "B"
             ],
-            "name": "58°36'",
+            "name": "64°48'",
             "radius": 0.8,
             "label": {
               "offset": [
@@ -1473,7 +1473,7 @@ export const Y11_CH6B_QUESTIONS = [
               -2.5,
               -0.4
             ],
-            "content": "15 m",
+            "content": "10 m",
             "fontSize": 14
           }
         ]
@@ -1482,17 +1482,17 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Convert the angle to decimal degrees.",
-        "workingOut": "58^{\\circ}36' = 58.6^{\\circ}",
+        "workingOut": "64^{\\circ}48' = 64.8^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Set up the tangent relation.",
-        "workingOut": "\\tan 58.6^{\\circ} = \\frac{h}{15}",
+        "workingOut": "\\tan 64.8^{\\circ} = \\frac{h}{10}",
         "graphData": null
       },
       {
         "explanation": "Calculate the height \\(h\\).",
-        "workingOut": "h = 15 \\tan 58.6^{\\circ} \\approx 24.57 \\approx 24.6",
+        "workingOut": "h = 10 \\tan 64.8^{\\circ} \\approx 21.25 \\approx 21.3",
         "graphData": null
       }
     ]
@@ -1504,10 +1504,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "A boat is \\(250\\text{ m}\\) out to sea from a vertical cliff of height \\(45\\text{ m}\\). Find, correct to the nearest degree, the angle of depression of the boat from the top of the cliff.",
-    "a": "10°",
+    "q": "A boat is \\(200\\text{ m}\\) out to sea from a vertical cliff of height \\(40\\text{ m}\\). Find, correct to the nearest degree, the angle of depression of the boat from the top of the cliff.",
+    "a": "11°",
     "h": "Use the tangent ratio: \\(\\tan \\theta = \\frac{\\text{Height}}{\\text{Distance}}\\).",
-    "s": "\\(\\tan \\theta = \\frac{45}{250} \\implies \\theta \\approx 10^{\\circ}\\).",
+    "s": "\\(\\tan \\theta = \\frac{40}{200} \\implies \\theta \\approx 11^{\\circ}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -1619,7 +1619,7 @@ export const Y11_CH6B_QUESTIONS = [
               -1.2,
               1.5
             ],
-            "content": "45 m"
+            "content": "40 m"
           },
           {
             "type": "text",
@@ -1627,7 +1627,7 @@ export const Y11_CH6B_QUESTIONS = [
               2.5,
               -0.4
             ],
-            "content": "250 m"
+            "content": "200 m"
           }
         ]
       }
@@ -1635,17 +1635,17 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the tangent ratio of the angle of depression \\(\\theta\\).",
-        "workingOut": "\\tan \\theta = \\frac{45}{250}",
+        "workingOut": "\\tan \\theta = \\frac{40}{200} = 0.2",
         "graphData": null
       },
       {
         "explanation": "Apply the inverse tangent.",
-        "workingOut": "\\theta = \\tan^{-1}(0.18)",
+        "workingOut": "\\theta = \\tan^{-1}(0.2)",
         "graphData": null
       },
       {
         "explanation": "Evaluate the angle.",
-        "workingOut": "\\theta \\approx 10.20^{\\circ} \\approx 10^{\\circ}",
+        "workingOut": "\\theta \\approx 11.31^{\\circ} \\approx 11^{\\circ}",
         "graphData": null
       }
     ]
@@ -1657,8 +1657,8 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Port \\(Q\\) is \\(40\\text{ nautical miles}\\) from port \\(P\\) on a bearing of \\(050^{\\circ}\\). Port \\(R\\) is \\(60\\text{ nautical miles}\\) from port \\(P\\), and \\(\\angle PQR = 90^{\\circ}\\).",
-    "a": "a) 48°. b) 098°.",
+    "q": "Port \\(Q\\) is \\(45\\text{ nautical miles}\\) from port \\(P\\) on a bearing of \\(055^{\\circ}\\). Port \\(R\\) is \\(65\\text{ nautical miles}\\) from port \\(P\\), and \\(\\angle PQR = 90^{\\circ}\\).",
+    "a": "a) 46°. b) 101°.",
     "h": "a) Use the cosine ratio in right triangle \\(PQR\\). b) Add the angle to the initial bearing.",
     "graphData": {
       "jsxGraph": {
@@ -1776,7 +1776,7 @@ export const Y11_CH6B_QUESTIONS = [
               1.1,
               1.5
             ],
-            "content": "40"
+            "content": "45"
           },
           {
             "type": "text",
@@ -1784,7 +1784,7 @@ export const Y11_CH6B_QUESTIONS = [
               2.5,
               0.1
             ],
-            "content": "60"
+            "content": "65"
           }
         ]
       }
@@ -1796,23 +1796,23 @@ export const Y11_CH6B_QUESTIONS = [
         "difficulty": "medium",
         "timeLimit": 90,
         "q": "Find \\(\\angle QPR\\) to the nearest degree.",
-        "a": "48°",
-        "h": "In the right-angled triangle \\(PQR\\), the hypotenuse is \\(PR = 60\\) and the adjacent side is \\(PQ = 40\\).",
-        "s": "\\(\\cos(\\angle QPR) = \\frac{40}{60} \\implies \\angle QPR \\approx 48^{\\circ}\\).",
+        "a": "46°",
+        "h": "In the right-angled triangle \\(PQR\\), the hypotenuse is \\(PR = 65\\) and the adjacent side is \\(PQ = 45\\).",
+        "s": "\\(\\cos(\\angle QPR) = \\frac{45}{65} \\implies \\angle QPR \\approx 46^{\\circ}\\).",
         "solutionSteps": [
           {
             "explanation": "Relate the sides using the cosine ratio.",
-            "workingOut": "\\cos(\\angle QPR) = \\frac{40}{60} = \\frac{2}{3}",
+            "workingOut": "\\cos(\\angle QPR) = \\frac{45}{65} = \\frac{9}{13}",
             "graphData": null
           },
           {
             "explanation": "Solve for the angle.",
-            "workingOut": "\\angle QPR = \\cos^{-1}\\left(\\frac{2}{3}\\right)",
+            "workingOut": "\\angle QPR = \\cos^{-1}\\left(\\frac{9}{13}\\right)",
             "graphData": null
           },
           {
             "explanation": "Round to the nearest degree.",
-            "workingOut": "\\angle QPR \\approx 48.19^{\\circ} \\approx 48^{\\circ}",
+            "workingOut": "\\angle QPR \\approx 46.19^{\\circ} \\approx 46^{\\circ}",
             "graphData": null
           }
         ]
@@ -1823,23 +1823,23 @@ export const Y11_CH6B_QUESTIONS = [
         "difficulty": "medium",
         "timeLimit": 90,
         "q": "Hence find the bearing of \\(R\\) from \\(P\\), correct to the nearest degree.",
-        "a": "098°",
+        "a": "101°",
         "h": "Add the angle \\(\\angle QPR\\) to the bearing of \\(Q\\) from \\(P\\).",
-        "s": "\\(\\text{Bearing} = 050^{\\circ} + 48^{\\circ} = 098^{\\circ}\\).",
+        "s": "\\(\\text{Bearing} = 055^{\\circ} + 46^{\\circ} = 101^{\\circ}\\).",
         "solutionSteps": [
           {
             "explanation": "Find the total angle from North to the line \\(PR\\).",
-            "workingOut": "\\text{Bearing} = 050^{\\circ} + \\angle QPR",
+            "workingOut": "\\text{Bearing} = 055^{\\circ} + \\angle QPR",
             "graphData": null
           },
           {
             "explanation": "Substitute the calculated value.",
-            "workingOut": "\\text{Bearing} = 50^{\\circ} + 48^{\\circ} = 98^{\\circ}",
+            "workingOut": "\\text{Bearing} = 55^{\\circ} + 46^{\\circ} = 101^{\\circ}",
             "graphData": null
           },
           {
             "explanation": "Write as a standard three-digit bearing.",
-            "workingOut": "\\text{Bearing} = 098^{\\circ}",
+            "workingOut": "\\text{Bearing} = 101^{\\circ}",
             "graphData": null
           }
         ]
@@ -1853,8 +1853,8 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "The bearings of towns \\(Y\\) and \\(Z\\) from town \\(X\\) are \\(070^{\\circ}\\) and \\(340^{\\circ}\\) respectively.",
-    "a": "a) Show that angle ZXY = 90 degrees. b) 107 km.",
+    "q": "The bearings of towns \\(Y\\) and \\(Z\\) from town \\(X\\) are \\(060^{\\circ}\\) and \\(330^{\\circ}\\) respectively.",
+    "a": "a) Show that angle ZXY = 90 degrees. b) 67 km.",
     "h": "a) Calculate the difference between the bearings. b) Use the tangent ratio in right triangle \\(ZXY\\).",
     "graphData": {
       "jsxGraph": {
@@ -1976,13 +1976,13 @@ export const Y11_CH6B_QUESTIONS = [
         "difficulty": "medium",
         "timeLimit": 90,
         "q": "Show that \\(\\angle ZXY = 90^{\\circ}\\).",
-        "a": "The angle is the difference of bearings: 340° - 70° = 270° reflex, so the interior angle is 360° - 270° = 90°.",
+        "a": "The angle is the difference of bearings: 330° - 60° = 270° reflex, so the interior angle is 360° - 270° = 90°.",
         "h": "Find the angle between the two bearing vectors.",
-        "s": "\\(\\angle ZXY = 360^{\\circ} - (340^{\\circ} - 70^{\\circ}) = 90^{\\circ}\\).",
+        "s": "\\(\\angle ZXY = 360^{\\circ} - (330^{\\circ} - 60^{\\circ}) = 90^{\\circ}\\).",
         "solutionSteps": [
           {
             "explanation": "Subtract the smaller bearing from the larger bearing to find the outer angle.",
-            "workingOut": "340^{\\circ} - 70^{\\circ} = 270^{\\circ}",
+            "workingOut": "330^{\\circ} - 60^{\\circ} = 270^{\\circ}",
             "graphData": null
           },
           {
@@ -1997,24 +1997,24 @@ export const Y11_CH6B_QUESTIONS = [
         "type": "short_answer",
         "difficulty": "medium",
         "timeLimit": 90,
-        "q": "Given that town \\(Z\\) is \\(90\\text{ km}\\) from town \\(X\\) and that \\(\\angle XYZ = 40^{\\circ}\\), find, correct to the nearest kilometre, how far town \\(Y\\) is from town \\(X\\).",
-        "a": "107",
+        "q": "Given that town \\(Z\\) is \\(80\\text{ km}\\) from town \\(X\\) and that \\(\\angle XYZ = 50^{\\circ}\\), find, correct to the nearest kilometre, how far town \\(Y\\) is from town \\(X\\).",
+        "a": "67",
         "h": "In the right-angled triangle \\(ZXY\\) with the right angle at \\(X\\), use the tangent ratio for \\(\\angle XYZ\\).",
-        "s": "\\(XY = \\frac{90}{\\tan 40^{\\circ}} \\approx 107\\text{ km}\\).",
+        "s": "\\(XY = \\frac{80}{\\tan 50^{\\circ}} \\approx 67\\text{ km}\\).",
         "solutionSteps": [
           {
-            "explanation": "Set up the tangent ratio for the \\(40^{\\circ}\\) angle at \\(Y\\).",
-            "workingOut": "\\tan 40^{\\circ} = \\frac{ZX}{XY} = \\frac{90}{XY}",
+            "explanation": "Set up the tangent ratio for the \\(50^{\\circ}\\) angle at \\(Y\\).",
+            "workingOut": "\\tan 50^{\\circ} = \\frac{ZX}{XY} = \\frac{80}{XY}",
             "graphData": null
           },
           {
             "explanation": "Solve for \\(XY\\).",
-            "workingOut": "XY = \\frac{90}{\\tan 40^{\\circ}}",
+            "workingOut": "XY = \\frac{80}{\\tan 50^{\\circ}}",
             "graphData": null
           },
           {
             "explanation": "Evaluate the value.",
-            "workingOut": "XY \\approx 107.26 \\approx 107",
+            "workingOut": "XY \\approx 67.13 \\approx 67",
             "graphData": null
           }
         ]
@@ -2028,8 +2028,8 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "A ship leaves port \\(P\\) and travels \\(160\\text{ nautical miles}\\) to port \\(Q\\) on a bearing of \\(120^{\\circ}\\). It then travels \\(100\\text{ nautical miles}\\) to port \\(R\\) on a bearing of \\(210^{\\circ}\\).",
-    "a": "a) The difference between the back bearing of P from Q (300°) and the bearing to R (210°) is 90°. b) 152°.",
+    "q": "A ship leaves port \\(P\\) and travels \\(150\\text{ nautical miles}\\) to port \\(Q\\) on a bearing of \\(110^{\\circ}\\). It then travels \\(120\\text{ nautical miles}\\) to port \\(R\\) on a bearing of \\(200^{\\circ}\\).",
+    "a": "a) The difference between the back bearing of P from Q (290°) and the bearing to R (200°) is 90°. b) 149°.",
     "h": "a) Work out the angles at \\(Q\\). b) Find \\(\\angle QPR\\) in the right triangle, then add it to the bearing of \\(Q\\) from \\(P\\).",
     "graphData": {
       "jsxGraph": {
@@ -2160,18 +2160,18 @@ export const Y11_CH6B_QUESTIONS = [
         "difficulty": "medium",
         "timeLimit": 90,
         "q": "Explain why \\(\\angle PQR = 90^{\\circ}\\).",
-        "a": "The bearing of P from Q is 120° + 180° = 300°. The bearing of R from Q is 210°. The angle between them is 300° - 210° = 90°.",
+        "a": "The bearing of P from Q is 110° + 180° = 290°. The bearing of R from Q is 200°. The angle between them is 290° - 200° = 90°.",
         "h": "Calculate the bearing of \\(P\\) from \\(Q\\) and compare it to the bearing of \\(R\\) from \\(Q\\).",
-        "s": "\\(\\text{Bearing of } P \\text{ from } Q = 120^{\\circ} + 180^{\\circ} = 300^{\\circ}\\). The bearing of \\(R\\) from \\(Q\\) is \\(210^{\\circ}\\). Therefore, \\(\\angle PQR = 300^{\\circ} - 210^{\\circ} = 90^{\\circ}\\).",
+        "s": "\\(\\text{Bearing of } P \\text{ from } Q = 110^{\\circ} + 180^{\\circ} = 290^{\\circ}\\). The bearing of \\(R\\) from \\(Q\\) is \\(200^{\\circ}\\). Therefore, \\(\\angle PQR = 290^{\\circ} - 200^{\\circ} = 90^{\\circ}\\).",
         "solutionSteps": [
           {
             "explanation": "Calculate the back bearing of \\(P\\) from \\(Q\\).",
-            "workingOut": "\\text{Back-bearing} = 120^{\\circ} + 180^{\\circ} = 300^{\\circ}",
+            "workingOut": "\\text{Back-bearing} = 110^{\\circ} + 180^{\\circ} = 290^{\\circ}",
             "graphData": null
           },
           {
             "explanation": "Find the angle between the paths \\(QP\\) and \\(QR\\) by subtracting the bearings.",
-            "workingOut": "\\angle PQR = 300^{\\circ} - 210^{\\circ} = 90^{\\circ}",
+            "workingOut": "\\angle PQR = 290^{\\circ} - 200^{\\circ} = 90^{\\circ}",
             "graphData": null
           }
         ]
@@ -2182,23 +2182,23 @@ export const Y11_CH6B_QUESTIONS = [
         "difficulty": "medium",
         "timeLimit": 90,
         "q": "Find, correct to the nearest degree, the bearing of port \\(R\\) from port \\(P\\).",
-        "a": "152°",
+        "a": "149°",
         "h": "Find \\(\\angle QPR\\) using tangent in the right-angled triangle \\(PQR\\).",
-        "s": "\\(\\tan(\\angle QPR) = \\frac{100}{160} \\implies \\angle QPR \\approx 32^{\\circ}\\). Bearing \\(= 120^{\\circ} + 32^{\\circ} = 152^{\\circ}\\).",
+        "s": "\\(\\tan(\\angle QPR) = \\frac{120}{150} \\implies \\angle QPR \\approx 39^{\\circ}\\). Bearing \\(= 110^{\\circ} + 39^{\\circ} = 149^{\\circ}\\).",
         "solutionSteps": [
           {
             "explanation": "Identify the tangent ratio for \\(\\angle QPR\\).",
-            "workingOut": "\\tan(\\angle QPR) = \\frac{QR}{PQ} = \\frac{100}{160} = 0.625",
+            "workingOut": "\\tan(\\angle QPR) = \\frac{QR}{PQ} = \\frac{120}{150} = 0.8",
             "graphData": null
           },
           {
             "explanation": "Solve for the angle.",
-            "workingOut": "\\angle QPR = \\tan^{-1}(0.625) \\approx 32.01^{\\circ} \\approx 32^{\\circ}",
+            "workingOut": "\\angle QPR = \\tan^{-1}(0.8) \\approx 38.66^{\\circ} \\approx 39^{\\circ}",
             "graphData": null
           },
           {
             "explanation": "Add this angle to the bearing of \\(Q\\) from \\(P\\).",
-            "workingOut": "\\text{Bearing} = 120^{\\circ} + 32^{\\circ} = 152^{\\circ}",
+            "workingOut": "\\text{Bearing} = 110^{\\circ} + 39^{\\circ} = 149^{\\circ}",
             "graphData": null
           }
         ]
@@ -2212,10 +2212,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "In the diagram below, \\(CD = 8\\text{ cm}\\), \\(\\angle ADC = 48^{\\circ}\\), \\(\\angle BDC = 28^{\\circ}\\), and \\(\\angle C = 90^{\\circ}\\). Show that \\(AC = 8 \\tan 48^{\\circ}\\) and \\(BC = 8 \\tan 28^{\\circ}\\), and hence find the length \\(AB\\), correct to the nearest millimetre.",
-    "a": "AB = 4.6 cm (or 46 mm)",
+    "q": "In the diagram below, \\(CD = 7\\text{ cm}\\), \\(\\angle ADC = 50^{\\circ}\\), \\(\\angle BDC = 25^{\\circ}\\), and \\(\\angle C = 90^{\\circ}\\). Show that \\(AC = 7 \\tan 50^{\\circ}\\) and \\(BC = 7 \\tan 25^{\\circ}\\), and hence find the length \\(AB\\), correct to the nearest millimetre.",
+    "a": "AB = 5.1 cm (or 51 mm)",
     "h": "Evaluate the height of both triangles using the tangent ratio and subtract them.",
-    "s": "\\(AC = 8 \\tan 48^{\\circ} \\approx 8.89\\text{ cm}\\). \\(BC = 8 \\tan 28^{\\circ} \\approx 4.25\\text{ cm}\\). \\(AB = AC - BC \\approx 4.63\\text{ cm} \\approx 46\\text{ mm}\\).",
+    "s": "\\(AC = 7 \\tan 50^{\\circ} \\approx 8.34\\text{ cm}\\). \\(BC = 7 \\tan 25^{\\circ} \\approx 3.26\\text{ cm}\\). \\(AB = AC - BC \\approx 5.08\\text{ cm} \\approx 51\\text{ mm}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2328,7 +2328,7 @@ export const Y11_CH6B_QUESTIONS = [
               "D",
               "B"
             ],
-            "name": "28°",
+            "name": "25°",
             "radius": 1.2
           },
           {
@@ -2338,7 +2338,7 @@ export const Y11_CH6B_QUESTIONS = [
               "D",
               "A"
             ],
-            "name": "48°",
+            "name": "50°",
             "radius": 2
           },
           {
@@ -2347,7 +2347,7 @@ export const Y11_CH6B_QUESTIONS = [
               3,
               -0.4
             ],
-            "content": "8 cm"
+            "content": "7 cm"
           }
         ]
       }
@@ -2355,22 +2355,22 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the tangent ratio in right-angled triangle \\(ADC\\):",
-        "workingOut": "\\tan 48^{\\circ} = \\frac{AC}{8} \\implies AC = 8 \\tan 48^{\\circ}",
+        "workingOut": "\\tan 50^{\\circ} = \\frac{AC}{7} \\implies AC = 7 \\tan 50^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Apply the tangent ratio in right-angled triangle \\(BDC\\):",
-        "workingOut": "\\tan 28^{\\circ} = \\frac{BC}{8} \\implies BC = 8 \\tan 28^{\\circ}",
+        "workingOut": "\\tan 25^{\\circ} = \\frac{BC}{7} \\implies BC = 7 \\tan 25^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Express \\(AB\\) as the difference between \\(AC\\) and \\(BC\\).",
-        "workingOut": "AB = AC - BC = 8 \\tan 48^{\\circ} - 8 \\tan 28^{\\circ}",
+        "workingOut": "AB = AC - BC = 7 \\tan 50^{\\circ} - 7 \\tan 25^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Calculate the numerical values and convert to millimetres.",
-        "workingOut": "AB \\approx 8.885 - 4.254 = 4.631\\text{ cm} = 46.31\\text{ mm} \\approx 46\\text{ mm}",
+        "workingOut": "AB \\approx 8.342 - 3.264 = 5.078\\text{ cm} = 50.78\\text{ mm} \\approx 51\\text{ mm}",
         "graphData": null
       }
     ]
@@ -2382,10 +2382,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "In the diagram below, \\(AB = 25\\text{ cm}\\), \\(\\angle B = 52^{\\circ}\\), \\(\\angle C = 42^{\\circ}\\), and \\(AP \\perp BC\\). Show that \\(AP = 25 \\sin 52^{\\circ}\\), and hence find the length of \\(PC\\), correct to \\(1\\text{ cm}\\).",
-    "a": "PC = 22 cm",
+    "q": "In the diagram below, \\(AB = 20\\text{ cm}\\), \\(\\angle B = 56^{\\circ}\\), \\(\\angle C = 46^{\\circ}\\), and \\(AP \\perp BC\\). Show that \\(AP = 20 \\sin 56^{\\circ}\\), and hence find the length of \\(PC\\), correct to \\(1\\text{ cm}\\).",
+    "a": "PC = 16 cm",
     "h": "Find the common vertical side \\(AP\\) first, then use it to solve for \\(PC\\) in the adjacent triangle.",
-    "s": "\\(AP = 25 \\sin 52^{\\circ} \\approx 19.70\\text{ cm}\\). \\(PC = \\frac{AP}{\\tan 42^{\\circ}} \\approx 21.88\\text{ cm} \\approx 22\\text{ cm}\\).",
+    "s": "\\(AP = 20 \\sin 56^{\\circ} \\approx 16.58\\text{ cm}\\). \\(PC = \\frac{AP}{\\tan 46^{\\circ}} \\approx 16.01\\text{ cm} \\approx 16\\text{ cm}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2498,7 +2498,7 @@ export const Y11_CH6B_QUESTIONS = [
               "C",
               "A"
             ],
-            "name": "42°",
+            "name": "46°",
             "radius": 0.8
           },
           {
@@ -2508,7 +2508,7 @@ export const Y11_CH6B_QUESTIONS = [
               "B",
               "P"
             ],
-            "name": "52°",
+            "name": "56°",
             "radius": 0.8
           },
           {
@@ -2517,7 +2517,7 @@ export const Y11_CH6B_QUESTIONS = [
               -2,
               2.3
             ],
-            "content": "25 cm"
+            "content": "20 cm"
           }
         ]
       }
@@ -2525,22 +2525,22 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Use right-angled triangle \\(ABP\\) to express the height \\(AP\\):",
-        "workingOut": "\\sin 52^{\\circ} = \\frac{AP}{25} \\implies AP = 25 \\sin 52^{\\circ}",
+        "workingOut": "\\sin 56^{\\circ} = \\frac{AP}{20} \\implies AP = 20 \\sin 56^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Use right-angled triangle \\(APC\\) to relate \\(AP\\) and \\(PC\\) via tangent:",
-        "workingOut": "\\tan 42^{\\circ} = \\frac{AP}{PC} \\implies PC = \\frac{AP}{\\tan 42^{\\circ}}",
+        "workingOut": "\\tan 46^{\\circ} = \\frac{AP}{PC} \\implies PC = \\frac{AP}{\\tan 46^{\\circ}}",
         "graphData": null
       },
       {
         "explanation": "Substitute the expression for \\(AP\\) and calculate.",
-        "workingOut": "PC = \\frac{25 \\sin 52^{\\circ}}{\\tan 42^{\\circ}} \\approx \\frac{19.700}{0.9004} \\approx 21.88\\text{ cm}",
+        "workingOut": "PC = \\frac{20 \\sin 56^{\\circ}}{\\tan 46^{\\circ}} \\approx \\frac{16.581}{1.0355} \\approx 16.01\\text{ cm}",
         "graphData": null
       },
       {
         "explanation": "Round to the nearest centimetre.",
-        "workingOut": "PC \\approx 22\\text{ cm}",
+        "workingOut": "PC \\approx 16\\text{ cm}",
         "graphData": null
       }
     ]
@@ -2552,10 +2552,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "In the diagram below, \\(\\angle P = 90^{\\circ}\\), \\(QR = 20\\text{ cm}\\), \\(\\angle R = 38^{\\circ}\\), and \\(SR = 9\\text{ cm}\\). Show that \\(PR = 20 \\cos 38^{\\circ}\\), find an expression for \\(PQ\\), and hence find the angle \\(\\alpha\\), correct to the nearest minute.",
-    "a": "alpha = 28°46'",
+    "q": "In the diagram below, \\(\\angle P = 90^{\\circ}\\), \\(QR = 18\\text{ cm}\\), \\(\\angle R = 40^{\\circ}\\), and \\(SR = 8\\text{ cm}\\). Show that \\(PR = 18 \\cos 40^{\\circ}\\), find an expression for \\(PQ\\), and hence find the angle \\(\\alpha\\), correct to the nearest minute.",
+    "a": "alpha = 26°35'",
     "h": "Find \\(PR\\) and \\(PQ\\) first, then subtract \\(SR\\) to find \\(PS\\), and finally use the tangent ratio for \\(\\alpha\\).",
-    "s": "\\(PR = 20 \\cos 38^{\\circ} \\approx 15.76\\text{ cm}\\). \\(PQ = 20 \\sin 38^{\\circ} \\approx 12.31\\text{ cm}\\). \\(PS = PR - 9 \\approx 6.76\\text{ cm}\\). \\(\\tan \\alpha = \\frac{PS}{PQ} \\implies \\alpha \\approx 28^{\\circ}46'\\).",
+    "s": "\\(PR = 18 \\cos 40^{\\circ} \\approx 13.79\\text{ cm}\\). \\(PQ = 18 \\sin 40^{\\circ} \\approx 11.57\\text{ cm}\\). \\(PS = PR - 8 \\approx 5.79\\text{ cm}\\). \\(\\tan \\alpha = \\frac{PS}{PQ} \\implies \\alpha \\approx 26^{\\circ}35'\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2678,7 +2678,7 @@ export const Y11_CH6B_QUESTIONS = [
               "R",
               "P"
             ],
-            "name": "38°",
+            "name": "40°",
             "radius": 1.2
           },
           {
@@ -2687,7 +2687,7 @@ export const Y11_CH6B_QUESTIONS = [
               5,
               4.3
             ],
-            "content": "9 cm"
+            "content": "8 cm"
           },
           {
             "type": "text",
@@ -2695,7 +2695,7 @@ export const Y11_CH6B_QUESTIONS = [
               3.5,
               1.6
             ],
-            "content": "20 cm"
+            "content": "18 cm"
           }
         ]
       }
@@ -2703,27 +2703,27 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the cosine ratio in right-angled triangle \\(PQR\\):",
-        "workingOut": "\\cos 38^{\\circ} = \\frac{PR}{20} \\implies PR = 20 \\cos 38^{\\circ}",
+        "workingOut": "\\cos 40^{\\circ} = \\frac{PR}{18} \\implies PR = 18 \\cos 40^{\\circ}",
         "graphData": null
       },
       {
         "explanation": "Find the vertical side \\(PQ\\) using the sine ratio.",
-        "workingOut": "PQ = 20 \\sin 38^{\\circ} \\approx 12.31\\text{ cm}",
+        "workingOut": "PQ = 18 \\sin 40^{\\circ} \\approx 11.57\\text{ cm}",
         "graphData": null
       },
       {
         "explanation": "Find the section \\(PS\\) by subtracting \\(SR\\) from \\(PR\\).",
-        "workingOut": "PS = PR - SR = 20 \\cos 38^{\\circ} - 9 \\approx 6.76\\text{ cm}",
+        "workingOut": "PS = PR - SR = 18 \\cos 40^{\\circ} - 8 \\approx 5.79\\text{ cm}",
         "graphData": null
       },
       {
         "explanation": "Find \\(\\alpha\\) using the tangent ratio in triangle \\(PQS\\).",
-        "workingOut": "\\tan \\alpha = \\frac{PS}{PQ} = \\frac{20 \\cos 38^{\\circ} - 9}{20 \\sin 38^{\\circ}} \\approx \\frac{6.760}{12.313} \\approx 0.5490",
+        "workingOut": "\\tan \\alpha = \\frac{PS}{PQ} = \\frac{18 \\cos 40^{\\circ} - 8}{18 \\sin 40^{\\circ}} \\approx \\frac{5.789}{11.570} \\approx 0.5003",
         "graphData": null
       },
       {
         "explanation": "Calculate the angle in degrees, minutes.",
-        "workingOut": "\\alpha = \\tan^{-1}(0.5490) \\approx 28.767^{\\circ} \\approx 28^{\\circ}46'",
+        "workingOut": "\\alpha = \\tan^{-1}(0.5003) \\approx 26.582^{\\circ} \\approx 26^{\\circ}35'",
         "graphData": null
       }
     ]
@@ -2735,10 +2735,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "In the diagram, a base is \\(12\\text{ units}\\) wide. The smaller angle is \\(30^{\\circ}\\) and the extra upper angle is \\(15^{\\circ}\\) (making a total angle of \\(45^{\\circ}\\)). Show that the height difference \\(x\\) is given by \\(x = 4(3 - \\sqrt{3})\\).",
-    "a": "x = 12 - 4*sqrt(3) = 4(3 - sqrt(3))",
+    "q": "In the diagram, a base is \\(10\\text{ units}\\) wide. The smaller angle is \\(45^{\\circ}\\) and the extra upper angle is \\(15^{\\circ}\\) (making a total angle of \\(60^{\\circ}\\)). Show that the height difference \\(x\\) is given by \\(x = 10(\\sqrt{3} - 1)\\).",
+    "a": "x = 10*sqrt(3) - 10 = 10(sqrt(3) - 1)",
     "h": "Find the total height of the large triangle and subtract the height of the smaller one.",
-    "s": "\\(h_{\\mathrm{large}} = 12 \\tan 45^{\\circ} = 12\\). \\(h_{\\mathrm{small}} = 12 \\tan 30^{\\circ} = \\frac{12}{\\sqrt{3}} = 4\\sqrt{3}\\). \\(x = 12 - 4\\sqrt{3} = 4(3 - \\sqrt{3})\\).",
+    "s": "\\(h_{\\mathrm{large}} = 10 \\tan 60^{\\circ} = 10\\sqrt{3}\\). \\(h_{\\mathrm{small}} = 10 \\tan 45^{\\circ} = 10\\). \\(x = 10\\sqrt{3} - 10 = 10(\\sqrt{3} - 1)\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2791,184 +2791,6 @@ export const Y11_CH6B_QUESTIONS = [
             "coords": [
               10,
               10
-            ],
-            "name": "A",
-            "label": {
-              "offset": [
-                15,
-                10
-              ]
-            }
-          },
-          {
-            "type": "point",
-            "id": "Base",
-            "coords": [
-              10,
-              0
-            ],
-            "name": "",
-            "label": {
-              "offset": [
-                0,
-                0
-              ]
-            }
-          },
-          {
-            "type": "segment",
-            "from": "O",
-            "to": "Base"
-          },
-          {
-            "type": "segment",
-            "from": "Base",
-            "to": "A"
-          },
-          {
-            "type": "segment",
-            "from": "O",
-            "to": "B"
-          },
-          {
-            "type": "segment",
-            "from": "O",
-            "to": "A"
-          },
-          {
-            "type": "rightangle",
-            "points": [
-              "O",
-              "Base",
-              "A"
-            ],
-            "size": 0.3
-          },
-          {
-            "type": "angle",
-            "points": [
-              "Base",
-              "O",
-              "B"
-            ],
-            "name": "30°",
-            "radius": 2
-          },
-          {
-            "type": "angle",
-            "points": [
-              "B",
-              "O",
-              "A"
-            ],
-            "name": "15°",
-            "radius": 3
-          },
-          {
-            "type": "text",
-            "coords": [
-              5,
-              -0.6
-            ],
-            "content": "12"
-          },
-          {
-            "type": "text",
-            "coords": [
-              10.3,
-              7.8
-            ],
-            "content": "x"
-          }
-        ]
-      }
-    },
-    "solutionSteps": [
-      {
-        "explanation": "Find the height of the smaller right-angled triangle using the \\(30^{\\circ}\\) angle.",
-        "workingOut": "h_{\\mathrm{small}} = 12 \\tan 30^{\\circ} = 12 \\times \\frac{1}{\\sqrt{3}} = 4\\sqrt{3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Find the height of the larger right-angled triangle using the total angle of \\(30^{\\circ} + 15^{\\circ} = 45^{\\circ}\\).",
-        "workingOut": "h_{\\mathrm{large}} = 12 \\tan 45^{\\circ} = 12",
-        "graphData": null
-      },
-      {
-        "explanation": "Express \\(x\\) as the difference of the two heights.",
-        "workingOut": "x = h_{\\mathrm{large}} - h_{\\mathrm{small}} = 12 - 4\\sqrt{3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Factor out the common term 4.",
-        "workingOut": "x = 4(3 - \\sqrt{3})",
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y11a-6b-q16b",
-    "c": "6B",
-    "t": "Problems involving right-angled triangles",
-    "type": "teacher_review",
-    "difficulty": "hard",
-    "timeLimit": 120,
-    "q": "In the diagram, a base is \\(15\\text{ units}\\) wide. The smaller angle is \\(45^{\\circ}\\) and the extra upper angle is \\(15^{\\circ}\\) (making a total angle of \\(60^{\\circ}\\)). Show that the height difference \\(x\\) is given by \\(x = 15(\\sqrt{3} - 1)\\).",
-    "a": "x = 15*sqrt(3) - 15 = 15(sqrt(3) - 1)",
-    "h": "Subtract the height of the smaller triangle from the height of the larger triangle.",
-    "s": "\\(h_{\\mathrm{large}} = 15 \\tan 60^{\\circ} = 15\\sqrt{3}\\). \\(h_{\\mathrm{small}} = 15 \\tan 45^{\\circ} = 15\\). \\(x = 15\\sqrt{3} - 15 = 15(\\sqrt{3} - 1)\\).",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -1,
-          20,
-          12,
-          -1
-        ],
-        "boardOptions": {
-          "keepaspectratio": true,
-          "showNavigation": false,
-          "showCopyright": false
-        },
-        "elements": [
-          {
-            "type": "point",
-            "id": "O",
-            "coords": [
-              0,
-              0
-            ],
-            "name": "O",
-            "label": {
-              "offset": [
-                -15,
-                -15
-              ]
-            }
-          },
-          {
-            "type": "point",
-            "id": "B",
-            "coords": [
-              10,
-              10
-            ],
-            "name": "B",
-            "label": {
-              "offset": [
-                15,
-                0
-              ]
-            }
-          },
-          {
-            "type": "point",
-            "id": "A",
-            "coords": [
-              10,
-              17.32
             ],
             "name": "A",
             "label": {
@@ -3048,7 +2870,185 @@ export const Y11_CH6B_QUESTIONS = [
               5,
               -0.6
             ],
-            "content": "15"
+            "content": "10"
+          },
+          {
+            "type": "text",
+            "coords": [
+              10.3,
+              7.8
+            ],
+            "content": "x"
+          }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Find the height of the smaller right-angled triangle using the \\(45^{\\circ}\\) angle.",
+        "workingOut": "h_{\\mathrm{small}} = 10 \\tan 45^{\\circ} = 10",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the height of the larger right-angled triangle using the total angle of \\(45^{\\circ} + 15^{\\circ} = 60^{\\circ}\\).",
+        "workingOut": "h_{\\mathrm{large}} = 10 \\tan 60^{\\circ} = 10\\sqrt{3}",
+        "graphData": null
+      },
+      {
+        "explanation": "Express \\(x\\) as the difference of the two heights.",
+        "workingOut": "x = h_{\\mathrm{large}} - h_{\\mathrm{small}} = 10\\sqrt{3} - 10",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor out the common term 10.",
+        "workingOut": "x = 10(\\sqrt{3} - 1)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6b-q16b",
+    "c": "6B",
+    "t": "Problems involving right-angled triangles",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "q": "In the diagram, a base is \\(10\\text{ units}\\) wide. The smaller angle is \\(30^{\\circ}\\) and the extra upper angle is \\(15^{\\circ}\\) (making a total angle of \\(45^{\\circ}\\)). Show that the height difference \\(x\\) is given by \\(x = \\frac{10}{3}(3 - \\sqrt{3})\\).",
+    "a": "x = 10 - 10/sqrt(3) = 10/3(3 - sqrt(3))",
+    "h": "Subtract the height of the smaller triangle from the height of the larger triangle.",
+    "s": "\\(h_{\\mathrm{large}} = 10 \\tan 45^{\\circ} = 10\\). \\(h_{\\mathrm{small}} = 10 \\tan 30^{\\circ} = \\frac{10}{\\sqrt{3}} = \\frac{10\\sqrt{3}}{3}\\). \\(x = 10 - \\frac{10\\sqrt{3}}{3} = \\frac{10}{3}(3 - \\sqrt{3})\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -1,
+          20,
+          12,
+          -1
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false,
+          "showCopyright": false
+        },
+        "elements": [
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "O",
+            "label": {
+              "offset": [
+                -15,
+                -15
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              10,
+              10
+            ],
+            "name": "B",
+            "label": {
+              "offset": [
+                15,
+                0
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              10,
+              17.32
+            ],
+            "name": "A",
+            "label": {
+              "offset": [
+                15,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "Base",
+            "coords": [
+              10,
+              0
+            ],
+            "name": "",
+            "label": {
+              "offset": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "O",
+            "to": "Base"
+          },
+          {
+            "type": "segment",
+            "from": "Base",
+            "to": "A"
+          },
+          {
+            "type": "segment",
+            "from": "O",
+            "to": "B"
+          },
+          {
+            "type": "segment",
+            "from": "O",
+            "to": "A"
+          },
+          {
+            "type": "rightangle",
+            "points": [
+              "O",
+              "Base",
+              "A"
+            ],
+            "size": 0.3
+          },
+          {
+            "type": "angle",
+            "points": [
+              "Base",
+              "O",
+              "B"
+            ],
+            "name": "30°",
+            "radius": 2
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "O",
+              "A"
+            ],
+            "name": "15°",
+            "radius": 3
+          },
+          {
+            "type": "text",
+            "coords": [
+              5,
+              -0.6
+            ],
+            "content": "10"
           },
           {
             "type": "text",
@@ -3064,22 +3064,22 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the height of the smaller right-angled triangle.",
-        "workingOut": "h_{\\mathrm{small}} = 15 \\tan 45^{\\circ} = 15",
+        "workingOut": "h_{\\mathrm{small}} = 10 \\tan 30^{\\circ} = \\frac{10}{\\sqrt{3}} = \\frac{10\\sqrt{3}}{3}",
         "graphData": null
       },
       {
         "explanation": "Find the height of the larger right-angled triangle.",
-        "workingOut": "h_{\\mathrm{large}} = 15 \\tan 60^{\\circ} = 15\\sqrt{3}",
+        "workingOut": "h_{\\mathrm{large}} = 10 \\tan 45^{\\circ} = 10",
         "graphData": null
       },
       {
         "explanation": "Subtract the smaller height from the larger height.",
-        "workingOut": "x = 15\\sqrt{3} - 15",
+        "workingOut": "x = 10 - \\frac{10\\sqrt{3}}{3}",
         "graphData": null
       },
       {
-        "explanation": "Factor out 15.",
-        "workingOut": "x = 15(\\sqrt{3} - 1)",
+        "explanation": "Factor out 10/3.",
+        "workingOut": "x = \\frac{10}{3}(3 - \\sqrt{3})",
         "graphData": null
       }
     ]
@@ -3091,10 +3091,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "In the diagram, a base is \\(9\\text{ units}\\) wide. The two consecutive angles are both \\(30^{\\circ}\\) (making a total angle of \\(60^{\\circ}\\)). Show that the height difference \\(x\\) is given by \\(x = 6\\sqrt{3}\\).",
-    "a": "x = 9*sqrt(3) - 3*sqrt(3) = 6*sqrt(3)",
+    "q": "In the diagram, a base is \\(10\\text{ units}\\) wide. The two consecutive angles are both \\(30^{\\circ}\\) (making a total angle of \\(60^{\\circ}\\)). Show that the height difference \\(x\\) is given by \\(x = \\frac{20}{3}\\sqrt{3}\\).",
+    "a": "x = 10*sqrt(3) - 10/sqrt(3) = 20/3*sqrt(3)",
     "h": "Find both heights using \\(30^{\\circ}\\) and \\(60^{\\circ}\\) tangent ratios, then subtract.",
-    "s": "\\(h_{\\mathrm{large}} = 9 \\tan 60^{\\circ} = 9\\sqrt{3}\\). \\(h_{\\mathrm{small}} = 9 \\tan 30^{\\circ} = 3\\sqrt{3}\\). \\(x = 9\\sqrt{3} - 3\\sqrt{3} = 6\\sqrt{3}\\).",
+    "s": "\\(h_{\\mathrm{large}} = 10 \\tan 60^{\\circ} = 10\\sqrt{3}\\). \\(h_{\\mathrm{small}} = 10 \\tan 30^{\\circ} = \\frac{10\\sqrt{3}}{3}\\). \\(x = 10\\sqrt{3} - \\frac{10\\sqrt{3}}{3} = \\frac{20}{3}\\sqrt{3}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -3226,7 +3226,7 @@ export const Y11_CH6B_QUESTIONS = [
               5,
               -0.6
             ],
-            "content": "9"
+            "content": "10"
           },
           {
             "type": "text",
@@ -3242,17 +3242,17 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the height of the smaller triangle.",
-        "workingOut": "h_{\\mathrm{small}} = 9 \\tan 30^{\\circ} = \\frac{9}{\\sqrt{3}} = 3\\sqrt{3}",
+        "workingOut": "h_{\\mathrm{small}} = 10 \\tan 30^{\\circ} = \\frac{10}{\\sqrt{3}} = \\frac{10\\sqrt{3}}{3}",
         "graphData": null
       },
       {
         "explanation": "Find the height of the larger triangle.",
-        "workingOut": "h_{\\mathrm{large}} = 9 \\tan 60^{\\circ} = 9\\sqrt{3}",
+        "workingOut": "h_{\\mathrm{large}} = 10 \\tan 60^{\\circ} = 10\\sqrt{3}",
         "graphData": null
       },
       {
         "explanation": "Calculate the difference \\(x\\).",
-        "workingOut": "x = 9\\sqrt{3} - 3\\sqrt{3} = 6\\sqrt{3}",
+        "workingOut": "x = 10\\sqrt{3} - \\frac{10\\sqrt{3}}{3} = \\frac{20}{3}\\sqrt{3}",
         "graphData": null
       }
     ]
@@ -3264,10 +3264,10 @@ export const Y11_CH6B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "From the ends of a straight horizontal road \\(1.5\\text{ km}\\) long, a balloon directly above the road is observed to have angles of elevation of \\(55^{\\circ}\\) and \\(35^{\\circ}\\) respectively. Find, correct to the nearest metre, the height of the balloon above the road.",
-    "a": "705",
+    "q": "From the ends of a straight horizontal road \\(1\\text{ km}\\) long, a balloon directly above the road is observed to have angles of elevation of \\(57^{\\circ}\\) and \\(33^{\\circ}\\) respectively. Find, correct to the nearest metre, the height of the balloon above the road.",
+    "a": "457",
     "h": "Represent the horizontal road as the sum of two adjacent sides of two right-angled triangles: \\(d_1 + d_2 = 1500\\).",
-    "s": "\\(h \\cot 55^{\\circ} + h \\cot 35^{\\circ} = 1500 \\implies h \\approx 705\\text{ m}\\).",
+    "s": "\\(h \\cot 57^{\\circ} + h \\cot 33^{\\circ} = 1000 \\implies h \\approx 457\\text{ m}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -3381,7 +3381,7 @@ export const Y11_CH6B_QUESTIONS = [
               "L",
               "T"
             ],
-            "name": "55°",
+            "name": "57°",
             "radius": 0.8
           },
           {
@@ -3391,7 +3391,7 @@ export const Y11_CH6B_QUESTIONS = [
               "R",
               "P"
             ],
-            "name": "35°",
+            "name": "33°",
             "radius": 0.8
           },
           {
@@ -3400,7 +3400,7 @@ export const Y11_CH6B_QUESTIONS = [
               1.4,
               -0.6
             ],
-            "content": "1.5 km"
+            "content": "1 km"
           }
         ]
       }
@@ -3408,32 +3408,32 @@ export const Y11_CH6B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Let \\(h\\) be the height of the balloon in metres. Convert the road length to metres.",
-        "workingOut": "1.5\\text{ km} = 1500\\text{ m}",
+        "workingOut": "1\\text{ km} = 1000\\text{ m}",
         "graphData": null
       },
       {
         "explanation": "Express the two segments of the road in terms of \\(h\\) and the cotangents of the angles of elevation.",
-        "workingOut": "d_1 = \\frac{h}{\\tan 55^{\\circ}}, \\quad d_2 = \\frac{h}{\\tan 35^{\\circ}}",
+        "workingOut": "d_1 = \\frac{h}{\\tan 57^{\\circ}}, \\quad d_2 = \\frac{h}{\\tan 33^{\\circ}}",
         "graphData": null
       },
       {
         "explanation": "Form the equation for the total distance.",
-        "workingOut": "h \\left(\\frac{1}{\\tan 55^{\\circ}} + \\frac{1}{\\tan 35^{\\circ}}\\right) = 1500",
+        "workingOut": "h \\left(\\frac{1}{\\tan 57^{\\circ}} + \\frac{1}{\\tan 33^{\\circ}}\\right) = 1000",
         "graphData": null
       },
       {
         "explanation": "Evaluate the terms inside the parentheses.",
-        "workingOut": "\\frac{1}{\\tan 55^{\\circ}} \\approx 0.7002, \\quad \\frac{1}{\\tan 35^{\\circ}} \\approx 1.4281",
+        "workingOut": "\\frac{1}{\\tan 57^{\\circ}} \\approx 0.6494, \\quad \\frac{1}{\\tan 33^{\\circ}} \\approx 1.5399",
         "graphData": null
       },
       {
         "explanation": "Solve for the height \\(h\\).",
-        "workingOut": "h (0.7002 + 1.4281) = 1500 \\implies 2.1283h = 1500 \\implies h \\approx 704.78",
+        "workingOut": "h (0.6494 + 1.5399) = 1000 \\implies 2.1893h = 1000 \\implies h \\approx 456.77",
         "graphData": null
       },
       {
         "explanation": "Round to the nearest metre.",
-        "workingOut": "h \\approx 705",
+        "workingOut": "h \\approx 457",
         "graphData": null
       }
     ]
