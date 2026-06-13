@@ -204,7 +204,7 @@ function NudgeCard({ task, t, onOpen }) {
 
       {/* body */}
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 7, fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase', color: muted, marginBottom: 4 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.52rem', fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: muted, marginBottom: 4 }}>
           <span style={{ width: 6, height: 6, borderRadius: '50%', background: accent, boxShadow: `0 0 0 3px ${rgba(accent, 0.18)}`, transition: 'background .9s ease' }} />
           {task.label} · Not done yet
         </div>
