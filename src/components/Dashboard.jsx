@@ -292,7 +292,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 </div>
               </div>
             </div>
-            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: isMobile ? '0 20px' : '0' }}>
+            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: 0 }}>
               {/* Daily challenge nudge — sits between the greeting and the
                   Journey Map. Calm pastel-green before 5 PM, escalating toward
                   urgent red on the mascot as midnight nears. Finished tasks
@@ -370,8 +370,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               onClick={() => setActiveTab('ExamPrep')}
               style={{
                 display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
-                margin: isMobile ? '0 20px 16px' : '0 0 24px',
-                maxWidth: isMobile ? 'calc(100% - 40px)' : '100%',
+                margin: isMobile ? '0 0 16px' : '0 0 24px',
+                maxWidth: '100%',
                 padding: '20px 24px', borderRadius: '28px',
                 background: urgent ? 'linear-gradient(135deg, #f59e0b, #ef4444)' : 'linear-gradient(135deg, #6366f1, #4f46e5)',
                 color: '#fff', border: 'none', cursor: 'pointer', textAlign: 'left',
@@ -411,7 +411,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           const dueTotal = getDueCount('daily', user?.uid) + getDueCount('calc', user?.uid);
           if (dueTotal === 0) return null;
           return (
-            <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 20px 16px' : '0 0 24px', maxWidth: isMobile ? 'calc(100% - 40px)' : '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden' }}>
+            <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
               <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>🧠</div>
               <div style={{ flex: 1, minWidth: 0 }}>
