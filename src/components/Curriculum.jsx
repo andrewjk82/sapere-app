@@ -41,6 +41,7 @@ import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQues
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
 import { CH5_QUESTIONS_Y11A, Y11_CH5_QUESTIONS } from '../constants/seedYear11Ch5Questions.js';
 import { Y11_CH5I_QUESTIONS } from '../constants/seedYear11Ch5IQuestions.js';
+import { Y11_CH6B_QUESTIONS } from '../constants/seedYear11Ch6Questions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
@@ -277,6 +278,16 @@ const getCourseFromEntry = (entry) => {
 };
 
 const CHAPTER_SEED_REGISTRY = [
+  {
+    chapterId: 'y11a-6',
+    chapterTitle: 'Chapter 6: Trigonometry',
+    topicId: 'y11a-6B',
+    topicCode: '6B',
+    topicTitle: 'Problems involving right-angled triangles',
+    year: 'Year 11',
+    seed: Y11_CH6B_QUESTIONS,
+    label: 'Y11 Ch6 · 6B Problems involving right-angled triangles',
+  },
   {
     chapterId: 'y11a-5',
     chapterTitle: 'Chapter 5: Transformations and symmetry',
