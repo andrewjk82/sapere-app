@@ -246,6 +246,7 @@ import { CTHS_2020_QUESTIONS } from '../constants/seedCherrybrookTech2020Questio
 import { CTHS_2020_SIMILAR_QUESTIONS } from '../constants/seedCherrybrookTech2020SimilarQuestions.js';
 import { Y11A_CH2_QUESTIONS } from '../constants/seedYear11aCh2Questions.js';
 import { Y11A_CH2C_QUESTIONS } from '../constants/seedYear11aCh2CQuestions.js';
+import { Y11A_CH2D_QUESTIONS } from '../constants/seedYear11aCh2DQuestions.js';
 import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
@@ -267,6 +268,16 @@ const getCourseFromEntry = (entry) => {
 };
 
 const CHAPTER_SEED_REGISTRY = [
+  {
+    chapterId: 'y11a-2',
+    chapterTitle: 'Chapter 2: Surds and Indices',
+    topicId: 'y11a-2D',
+    topicCode: '2D',
+    topicTitle: 'Rationalising the denominator',
+    year: 'Year 11',
+    seed: Y11A_CH2D_QUESTIONS,
+    label: 'Y11 Ch2 · Rationalising the denominator',
+  },
   {
     chapterId: 'y11a-2',
     chapterTitle: 'Chapter 2: Surds and Indices',
