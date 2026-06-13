@@ -309,7 +309,11 @@ const ChallengeReviewView = ({
             )}
             <MathView
               content={q.question}
-              graphData={q.graphData}
+              graphData={
+                (q.type === 'graph_sketch' || q.type === 'teacher_review' || q.requiresManualGrading)
+                  ? null
+                  : q.graphData
+              }
               style={{ fontSize: '1.15rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7 }}
             />
             {q.questionImage && (

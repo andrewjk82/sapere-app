@@ -722,7 +722,10 @@ const ReportsAdmin = () => {
               <div style={{ marginBottom: '24px' }}>
                 <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Question</span>
                 <div style={{ marginTop: '10px', padding: '16px', background: '#f1f5f9', borderRadius: '16px' }}>
-                  <MathView content={item.questionText} graphData={item.graphData} style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e1b4b' }} />
+                  {(() => {
+                    const isSketchQuestion = item.type === 'graph_sketch' || item.type === 'teacher_review' || (item.requiresManualGrading && /(draw|sketch|construct)/i.test(item.questionText || ''));
+                    return <MathView content={item.questionText} graphData={isSketchQuestion ? null : item.graphData} style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1e1b4b' }} />;
+                  })()}
                   {item.questionImage && (
                     <img src={item.questionImage} alt="Question diagram" style={{ width: '100%', maxHeight: '220px', objectFit: 'contain', marginTop: '12px', borderRadius: '10px', background: '#fff' }} />
                   )}
@@ -821,6 +824,15 @@ const ReportsAdmin = () => {
                         <MathView content={item.solution} style={{ fontSize: '0.9rem', color: '#166534' }} />
                       </div>
                     )}
+                    {(() => {
+                      const isSketchQuestion = item.type === 'graph_sketch' || item.type === 'teacher_review' || (item.requiresManualGrading && /(draw|sketch|construct)/i.test(item.questionText || ''));
+                      return item.graphData && isSketchQuestion && (
+                        <div style={{ marginTop: '12px', borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
+                          <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d', display: 'block', marginBottom: '8px' }}>EXPECTED GRAPH:</span>
+                          <MathView content="" graphData={item.graphData} />
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
               </div>

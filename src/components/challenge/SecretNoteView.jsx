@@ -724,7 +724,7 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
 
         <MathView
           content={activeQ?.question}
-          graphData={activeQ?.type === 'graph_sketch' ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
+          graphData={(activeQ?.type === 'graph_sketch' || activeQ?.type === 'teacher_review') ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
           style={{ fontSize: '1.2rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6 }}
         />
 
