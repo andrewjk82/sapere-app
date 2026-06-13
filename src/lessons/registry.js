@@ -395,14 +395,17 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       speech: `The order does not matter. Going down four first, then left two, lands on exactly the same graph. Two perpendicular translations always commute.`,
       board: [
         { type: 'graph', xMin: -5, xMax: 3, yMin: -10, yMax: 10,
-          curves: [{ fn: cube, color: GREY }, { fn: cubeLD, color: PURPLE }],
-          lines: [
-            // Route A — down 4 first, then left 2 (blue)
-            { from: [0, 0], to: [0, -4], color: '#2563eb', arrow: true, label: 'down 4', labelAt: [0.75, -2], delay: 1.0 },
-            { from: [0, -4], to: [-2, -4], color: '#2563eb', arrow: true, label: 'left 2', labelAt: [-1, -4.8], delay: 1.9 },
-            // Route B — left 2 first, then down 4 (amber)
-            { from: [0, 0], to: [-2, 0], color: MID, arrow: true, label: 'left 2', labelAt: [-1, 0.9], delay: 2.8 },
-            { from: [-2, 0], to: [-2, -4], color: MID, arrow: true, label: 'down 4', labelAt: [-3, -2], delay: 3.7 },
+          curves: [
+            { fn: cube, color: GREY },                                  // start: y = x³
+            { fn: cubeLD, color: '#ddd6fe' },                           // faint target: y = (x+2)³−4
+            // Route ① (blue): down 4, THEN left 2
+            { fn: cubeLD, color: '#2563eb', slidePath: { legs: [{ dyUnits: -4 }, { dxUnits: -2 }], delay: 1.0, legDur: 1.3, hold: 0.6 } },
+            // Route ② (amber): left 2, THEN down 4 — starts after route ① finishes
+            { fn: cubeLD, color: MID, slidePath: { legs: [{ dxUnits: -2 }, { dyUnits: -4 }], delay: 5.4, legDur: 1.3, hold: 0.6 } },
+          ],
+          texts: [
+            { x: 1.6, y: -6, text: '① down → left', color: '#2563eb', delay: 0.8 },
+            { x: -3.6, y: 3, text: '② left → down', color: MID, delay: 5.0 },
           ],
           points: [{ x: 0, y: 0, label: 'start (0, 0)' }, { x: -2, y: -4, label: 'same point (−2, −4)', pulse: true }] },
         { type: 'math', content: `$$y = f(x) \\to y = f(x-a) \\to y - b = f(x-a)$$`, emphasis: true },

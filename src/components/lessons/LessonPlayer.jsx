@@ -204,6 +204,27 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
     return { initial: { x: xStart, y: yStart }, animate: { x: xk, y: yk }, transition: { duration: dur, times: tk, ease: 'easeInOut', delay } };
   };
 
+  // `slidePath: { legs:[{dxUnits,dyUnits}...], delay, legDur, hold }` → a shape
+  // travels through its legs IN ORDER (with a pause at each corner), starting from
+  // its un-shifted position and ending where it is drawn. Used to show that the
+  // order of two perpendicular translations doesn't change the destination.
+  const slidePathProps = ({ legs = [], delay = 1.0, legDur = 1.2, hold = 0.35 }) => {
+    let tdx = 0, tdy = 0;
+    legs.forEach((l) => { tdx += (l.dxUnits || 0); tdy += (l.dyUnits || 0); });
+    const wp = []; let cdx = 0, cdy = 0;
+    wp.push([(cdx - tdx) * pxX, (tdy - cdy) * pxY]);
+    legs.forEach((l) => { cdx += (l.dxUnits || 0); cdy += (l.dyUnits || 0); wp.push([(cdx - tdx) * pxX, (tdy - cdy) * pxY]); });
+    const n = legs.length;
+    const xk = [wp[0][0]], yk = [wp[0][1]], tk = [0];
+    let tt = 0;
+    for (let k = 1; k <= n; k++) {
+      tt += legDur; xk.push(wp[k][0]); yk.push(wp[k][1]); tk.push(tt);
+      if (k < n) { tt += hold; xk.push(wp[k][0]); yk.push(wp[k][1]); tk.push(tt); }
+    }
+    const dur = tt || 1;
+    return { initial: { x: wp[0][0], y: wp[0][1] }, animate: { x: xk, y: yk }, transition: { duration: dur, times: tk.map((t) => t / dur), ease: 'easeInOut', delay } };
+  };
+
   const buildPath = (fn, step = 0.02, from = xMin, to = xMax) => {
     let d = ''; let pen = false;
     for (let x = from; x <= to + 1e-9; x += step) {
@@ -327,6 +348,8 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
           <motion.path key={i} d={buildPath(c.fn, c.step)} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
             initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.1, ease: 'easeInOut' }} />
         );
+        // `slidePath` → travels through ordered legs (down→left, etc.).
+        if (c.slidePath) return <motion.g key={i} {...slidePathProps(c.slidePath)}>{path}</motion.g>;
         // `slideIn` → the curve slides from its un-shifted spot into place.
         if (c.slideIn) return <motion.g key={i} {...slideInProps(c.slideIn)}>{path}</motion.g>;
         // `slide: true` → the curve slides up → down → left → right in a loop,
