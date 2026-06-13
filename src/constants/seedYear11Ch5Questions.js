@@ -1656,8 +1656,40 @@ export const CH5_QUESTIONS_Y11A = [
     "s": "The graph shifts 2 units right and 5 units down. The turning point is $(2, -5)$.",
     "solutionSteps": [
       {
-        "explanation": "Apply shifts to origin.",
-        "workingOut": "(0,0) \\to (2, -5)"
+        "explanation": "Start with the base function \\(y = x^2\\), which has a vertex (turning point) at \\((0, 0)\\).",
+        "workingOut": "y = x^2 \\implies \\text{Vertex: } (0, 0)"
+      },
+      {
+        "explanation": "Identify the horizontal translation. Replacing \\(x\\) with \\(x - 2\\) translates the graph 2 units to the right, shifting the vertex to \\((2, 0)\\).",
+        "workingOut": "y = (x - 2)^2 \\implies \\text{Vertex: } (2, 0)"
+      },
+      {
+        "explanation": "Identify the vertical translation. Subtracting 5 translates the entire graph 5 units downwards, shifting the vertex to \\((2, -5)\\).",
+        "workingOut": "y = (x - 2)^2 - 5 \\implies \\text{Vertex: } (2, -5)"
+      },
+      {
+        "explanation": "Find the y-intercept by setting \\(x = 0\\). This gives \\(y = (0 - 2)^2 - 5 = 4 - 5 = -1\\).",
+        "workingOut": "\\text{y-intercept: } (0, -1)"
+      },
+      {
+        "explanation": "Sketch the upward-opening parabola with vertex at \\((2, -5)\\), passing through \\((0, -1)\\).",
+        "workingOut": "",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              5,
+              6,
+              -7
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-7],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2)-5; }, -2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,-5], {name:'(2,-5)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [0,-1], {name:'(0,-1)', size:3, color:'red', label:{offset:[-15,8]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -1674,12 +1706,40 @@ export const CH5_QUESTIONS_Y11A = [
     "s": "First, replacing $x$ with $x+1$ shifts the graph $1$ unit left. Second, negating the whole function reflects it across the $x$-axis.",
     "solutionSteps": [
       {
-        "explanation": "Identify horizontal shift.",
-        "workingOut": "x \\to x+1 \\implies \\text{left } 1"
+        "explanation": "Start with the base cubic function \\(y = x^3\\), which has a point of inflection at \\((0, 0)\\).",
+        "workingOut": "y = x^3 \\implies \\text{Inflection Point: } (0, 0)"
       },
       {
-        "explanation": "Identify reflection.",
-        "workingOut": "f(x) \\to -f(x) \\implies \\text{reflect in } x\\text{-axis}"
+        "explanation": "Identify the horizontal shift. Replacing \\(x\\) with \\(x + 1\\) translates the graph 1 unit to the left, shifting the inflection point to \\((-1, 0)\\).",
+        "workingOut": "y = (x + 1)^3 \\implies \\text{Inflection Point: } (-1, 0)"
+      },
+      {
+        "explanation": "Identify the reflection. Multiplying by \\(-1\\) reflects the graph across the x-axis, flipping its direction.",
+        "workingOut": "y = -(x + 1)^3"
+      },
+      {
+        "explanation": "Find the y-intercept by substituting \\(x = 0\\): \\(y = -(0 + 1)^3 = -1\\).",
+        "workingOut": "\\text{y-intercept: } (0, -1)"
+      },
+      {
+        "explanation": "Sketch the cubic curve decreasing from top-left to bottom-right, passing through \\((-1, 0)\\) and \\((0, -1)\\).",
+        "workingOut": "",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              6,
+              2,
+              -6
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -Math.pow(x+1, 3); }, -3, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-1,0], {name:'(-1,0)', size:3, color:'red', label:{offset:[-10,12]}});\nboard.create('point', [0,-1], {name:'(0,-1)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -1710,8 +1770,15 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-1, 10, 7, -2],
-            "boardOptions": { "keepaspectratio": true },
+            "boundingbox": [
+              -1,
+              10,
+              7,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[7,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,10]], {strokeColor:'black'});\nboard.create('line', [[3,-2],[3,10]], {strokeColor:'gray', dash:2});\nboard.create('line', [[-1,4],[7,4]], {strokeColor:'gray', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-3)+4; }, -1, 2.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-3)+4; }, 3.1, 7], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
           }
         }
@@ -1753,12 +1820,36 @@ export const CH5_QUESTIONS_Y11A = [
     "s": "The base semi-circle $y = \\sqrt{9 - x^2}$ has domain $[-3, 3]$ and range $[0, 3]$. Shifting $2$ units right changes the domain to $[-3+2, 3+2] = [-1, 5]$. The range is unaffected.",
     "solutionSteps": [
       {
-        "explanation": "Base domain and range.",
-        "workingOut": "D: [-3, 3], R: [0, 3]"
+        "explanation": "Identify the base function \\(y = \\sqrt{9 - x^2}\\), which represents the upper semi-circle of radius 3 centered at the origin \\((0,0)\\).",
+        "workingOut": "x^2 + y^2 = 9 \\quad (y \\ge 0)"
       },
       {
-        "explanation": "Apply horizontal shift of +2.",
-        "workingOut": "D: [-1, 5]"
+        "explanation": "Identify the horizontal shift. Replacing \\(x\\) with \\(x - 2\\) translates the entire semi-circle 2 units to the right.",
+        "workingOut": "y = \\sqrt{9 - (x - 2)^2}"
+      },
+      {
+        "explanation": "Calculate the new center, domain, and endpoints. The center shifts to \\((2, 0)\\). The domain is \\([-1, 5]\\) (shifted from \\([-3, 3]\\)), and the peak of the semi-circle is at \\((2, 3)\\).",
+        "workingOut": "\\text{Domain: } [-1, 5], \\quad \\text{Peak: } (2, 3)"
+      },
+      {
+        "explanation": "Sketch the semi-circle centered at \\((2, 0)\\), passing through \\((-1, 0)\\), \\((5, 0)\\), with its maximum point at \\((2, 3)\\).",
+        "workingOut": "",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              5,
+              6,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,5]], {strokeColor:'black'});\nboard.create('arc', [[2,0], [5,0], [-1,0]], {strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2,0], {name:'(2,0)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [2,3], {name:'(2,3)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -10358,8 +10449,7 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "f(g(x)) = g(x)"
       }
     ]
-  }
-,
+  },
   {
     "id": "y11a-5h-1a",
     "c": "5H",
