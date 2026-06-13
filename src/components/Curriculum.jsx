@@ -45,6 +45,7 @@ import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
 import { Y11_CH1E_QUESTIONS } from '../constants/seedYear11Ch1EQuestions.js';
 import { Y11_CH1F_QUESTIONS } from '../constants/seedYear11Ch1FQuestions.js';
+import { Y11_CH1_QUESTIONS } from '../constants/seedYear11Ch1Questions.js';
 import { Y11_CH3B_QUESTIONS } from '../constants/seedYear11Ch3BQuestions.js';
 import { Y11_CH3C_QUESTIONS } from '../constants/seedYear11Ch3CQuestions.js';
 import { Y11_CH3D_QUESTIONS } from '../constants/seedYear11Ch3DQuestions.js';
@@ -275,6 +276,16 @@ const getCourseFromEntry = (entry) => {
 };
 
 const CHAPTER_SEED_REGISTRY = [
+  {
+    chapterId: 'y11a-5',
+    chapterTitle: 'Chapter 5: Transformations and symmetry',
+    topicId: 'y11a-5g',
+    topicCode: '5G',
+    topicTitle: 'Combining transformations',
+    year: 'Year 11',
+    seed: Y11_CH1_QUESTIONS,
+    label: 'Y11 Ch5 · 5G Combining transformations',
+  },
   {
     chapterId: 'y11a-2',
     chapterTitle: 'Chapter 2: Numbers and surds',
