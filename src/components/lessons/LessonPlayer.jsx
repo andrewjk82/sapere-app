@@ -281,10 +281,25 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
       ))}
 
       {/* curves (draw themselves) */}
-      {curves.map((c, i) => (
-        <motion.path key={i} d={buildPath(c.fn, c.step)} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.1, ease: 'easeInOut' }} />
-      ))}
+      {curves.map((c, i) => {
+        const path = (
+          <motion.path key={i} d={buildPath(c.fn, c.step)} fill="none" stroke={c.color || 'url(#lpCurve)'} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
+            initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.1, ease: 'easeInOut' }} />
+        );
+        // `slide: true` → the curve slides up → down → left → right in a loop,
+        // demonstrating a translation in time with the narration.
+        if (!c.slide) return path;
+        const A = c.slideUnits || 2;
+        const dx = A * (width - 2 * pad) / (xMax - xMin);
+        const dy = A * (height - 2 * pad) / (yMax - yMin);
+        return (
+          <motion.g key={i}
+            animate={{ x: [0, 0, 0, 0, 0, -dx, 0, dx, 0], y: [0, -dy, 0, dy, 0, 0, 0, 0, 0] }}
+            transition={{ duration: c.slideDur || 7.2, times: [0, 0.12, 0.24, 0.36, 0.48, 0.6, 0.72, 0.84, 1], repeat: Infinity, ease: 'easeInOut', delay: 1.0 }}>
+            {path}
+          </motion.g>
+        );
+      })}
 
       {/* circles / arcs — drawn parametrically so they close perfectly.
           from/to in degrees (default a full circle 0→360). */}

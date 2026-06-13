@@ -242,7 +242,13 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
     {
       narration: `Once a graph is drawn, we can <b>shift</b> it — formally <b>translate</b> it — up, down, left or right to make a whole family of new graphs. This works for <b>every</b> function, so it hugely widens the set of graphs we can sketch at a glance.`,
       speech: `Once a graph is drawn, we can shift it, formally translate it, up, down, left, or right, to make a whole family of new graphs. This works for every function, so it hugely widens the set of graphs we can sketch at a glance.`,
-      board: [{ type: 'math', content: `$$y = f(x) \\;\\longrightarrow\\; \\text{shift it around the plane}$$`, emphasis: true }, paraWin()],
+      board: [
+        { type: 'math', content: `$$y = f(x) \\;\\longrightarrow\\; \\text{shift it around the plane}$$`, emphasis: true },
+        paraWin({ curves: [
+          { fn: sq, color: '#e2e8f0' },              // faint ghost in the original position
+          { fn: sq, color: PURPLE, slide: true },    // slides up → down → left → right
+        ] }),
+      ],
     },
     {
       narration: `Compare <b>y = x²</b> with <b>y = (x − 2)²</b>. In the table, every value of <b>(x − 2)²</b> is the value of <b>x²</b> shifted <b>2 steps to the right</b>.`,
