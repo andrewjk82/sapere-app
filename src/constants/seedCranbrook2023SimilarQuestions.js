@@ -45,6 +45,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '9D',
     t: 'Bivariate data',
     source: 'Cranbrook 2023 Trial Q2',
+    graphData: {
+      jsxGraph: {
+        width: 380,
+        height: 320,
+        boundingbox: [-1, 11, 12, -1.5],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[0,0],[12,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,0],[0,11]], {strokeColor:'black'});\nvar pts = [[1.5,2],[2.5,8],[4.5,7],[4.5,9],[5,6.5],[5,5],[6.5,4.5],[5.5,3],[9,9.5],[9,8.5],[11,6]];\nfor (var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:'', size:3, color:'#475569', fixed:true}); }\nboard.create('point', [4,6.5], {name:'Q', size:3, color:'#475569', fixed:true, label:{offset:[-14,2], fontSize:15}});\nboard.create('point', [7,4.5], {name:'P', size:3, color:'#475569', fixed:true, label:{offset:[10,2], fontSize:15}});\nboard.create('text', [4.5, -1.1, 'weight (kg)'], {fontSize:13});\nboard.create('text', [0.2, 10.6, 'height (cm)'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The height and weight of a group of athletes is shown on a scatterplot, with weight (kg) on the horizontal axis and height (cm) on the vertical axis. Athlete P is plotted below and to the right of Athlete Q. Which of the following statements is true?',
@@ -334,6 +343,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '4C',
     t: 'The definite integral and its properties',
     source: 'Cranbrook 2023 Trial Q10',
+    graphData: {
+      jsxGraph: {
+        width: 420,
+        height: 320,
+        boundingbox: [-5, 4.5, 5, -4.5],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4.5],[0,4.5]], {strokeColor:'black'});\nvar f = function(x){ return 0.12*Math.pow(x,4) - 1.2*x*x + 1.4; };\nvar g = function(x){ return -0.09*Math.pow(x,3) + 0.7*x; };\nboard.create('functiongraph', [f, -4.2, 4.2], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('functiongraph', [g, -4.4, 4.4], {strokeColor:'#15803d',strokeWidth:2});\nfor (var k=1;k<=3;k++){ board.create('text',[k,0.15,''+k],{fontSize:11}); board.create('text',[-k,0.15,'-'+k],{fontSize:11}); }\nboard.create('text', [-2.3, -1.1, 'P'], {fontSize:15});\nboard.create('text', [-0.7, 0.7, 'Q'], {fontSize:15});\nboard.create('text', [2.1, -1.4, 'R'], {fontSize:15});\nboard.create('text', [3.9, 3.2, 'y = f(x)'], {fontSize:12});\nboard.create('text', [3.6, -2.6, 'y = g(x)'], {fontSize:12});\nboard.create('text', [0.25, 4.1, 'y'], {fontSize:13});\nboard.create('text', [4.6, 0.4, 'x'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'multiple_choice',
     difficulty: 'hard',
     q: 'The graphs of an even function $f(x)$ and an odd function $g(x)$ are shown on the same axes. Let $P = \\displaystyle\\int_{-1}^{-3} f(x)\\,dx$, $Q = \\displaystyle\\int_{-1}^{0} g(x)\\,dx$ and $R = \\displaystyle\\int_{1}^{3} \\bigl(f(x) - g(x)\\bigr)\\,dx$. Which of the following expressions equals $\\displaystyle\\int_{0}^{3} g(x)\\,dx$?',
@@ -369,6 +387,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '9B',
     t: 'Grouped data and histograms',
     source: 'Cranbrook 2023 Trial Q11',
+    graphData: {
+      jsxGraph: {
+        width: 440,
+        height: 320,
+        boundingbox: [-0.6, 145, 7, -40],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[0,0],[7,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,0],[0,135]], {strokeColor:'black'});\nboard.create('arrow', [[6.6,0],[6.6,135]], {strokeColor:'black'});\nvar freq = [120,95,60,40,25,10];\nvar labels = ['Slow Svc','Wrong','Cold','Rude','Billing','Other'];\nfor (var i=0;i<freq.length;i++){ var xc=i+0.6; board.create('polygon', [[xc-0.32,0],[xc+0.32,0],[xc+0.32,freq[i]],[xc-0.32,freq[i]]], {fillColor:'#94a3b8', fillOpacity:0.7, borders:{strokeColor:'#475569'}, vertices:{visible:false}, fixed:true}); board.create('text', [xc-0.3, -11, labels[i]], {fontSize:9}); }\nvar cum=0, total=350, prev=null;\nfor (var j=0;j<freq.length;j++){ cum+=freq[j]; var y=(cum/total)*130; var xp=j+0.6; var p=board.create('point',[xp,y],{name:'',size:2,color:'#1e293b',fixed:true}); if(prev){ board.create('segment',[prev,p],{strokeColor:'#1e293b',strokeWidth:1.5}); } prev=p; }\nfor (var t=0;t<=100;t+=20){ board.create('text',[6.7,(t/100)*130-3,t+'%'],{fontSize:9}); }\nboard.create('text', [-0.5, 134, 'Frequency'], {fontSize:11});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'short_answer',
     difficulty: 'easy',
     q: 'A café records the type of customer complaints over a period of time. The frequencies shown in the Pareto chart are: Slow Service 120, Wrong Order 95, Cold Food 60, Rude Staff 40, Billing Error 25, Other 10. What percentage of complaints were due to "Wrong Order" or "Cold Food"? Answer to the nearest whole percent.',
@@ -928,6 +955,19 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       {
         explanation: 'Model the expenses: \\$250 in week 1, increasing \\$30 each week — a linear rule with gradient 30 through $(1, 250)$.',
         workingOut: 'E = 250 + 30(n-1) = 30n + 220'
+      },
+      {
+        explanation: 'Draw both lines neatly over Leo\'s five income data points $(1,150), (2,250), (3,250), (4,350), (5,500)$. The income regression line (blue) passes through the mean point $(3, 300)$; the expenses line (green) starts at $(1, 250)$ and rises $\\$30$ each week.',
+        workingOut: '',
+        graphData: {
+          jsxGraph: {
+            width: 400,
+            height: 320,
+            boundingbox: [-0.5, 580, 6, -60],
+            boardOptions: { keepaspectratio: false },
+            script: "board.suspendUpdate();\nboard.create('arrow', [[0,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-60],[0,580]], {strokeColor:'black'});\nvar pts = [[1,150],[2,250],[3,250],[4,350],[5,500]];\nfor (var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:'', size:2.5, color:'#64748b', fixed:true}); }\nboard.create('functiongraph', [function(x){ return 80*x+60; }, 0, 5.5], {strokeColor:'blue',strokeWidth:2,name:'Income',withLabel:true});\nboard.create('functiongraph', [function(x){ return 30*x+220; }, 0, 5.5], {strokeColor:'green',strokeWidth:2,name:'Expenses',withLabel:true});\nboard.create('text', [5.4, 40, 'n (weeks)'], {fontSize:13});\nboard.create('text', [0.2, 560, 'Amount ($)'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -938,6 +978,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '4H',
     t: 'The trapezoidal rule',
     source: 'Cranbrook 2023 Trial Q22(a)',
+    graphData: {
+      jsxGraph: {
+        width: 380,
+        height: 300,
+        boundingbox: [-0.5, 9, 4, -1],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[0,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,9]], {strokeColor:'black'});\nboard.create('functiongraph', [function(t){ return 8*Math.exp(-Math.sqrt(t)); }, 0.0001, 3.6], {strokeColor:'blue',strokeWidth:2});\nvar pts=[[0,8],[1,2.94],[2,1.95],[3,1.42]];\nvar nm=['(0, 8)','(1, 2.94)','(2, 1.95)','(3, 1.42)'];\nvar off=[[8,8],[10,8],[10,8],[10,4]];\nfor(var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:nm[i], size:2.5, color:'red', fixed:true, label:{offset:off[i], fontSize:11}}); }\nboard.create('text', [3.6, 0.35, 't'], {fontSize:14});\nboard.create('text', [0.25, 8.6, 'V'], {fontSize:14});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'short_answer',
     difficulty: 'medium',
     q: 'A deflated hot-air balloon is being inflated such that the rate of air flow is modelled by $V = 8e^{-\\sqrt{t}}$, with flow rates at hourly intervals: $(0, 8), (1, 2.94), (2, 1.95), (3, 1.42)$. Using three applications of the Trapezoidal rule, estimate the volume of air in the balloon at time $t = 3$.',
@@ -971,6 +1020,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '4H',
     t: 'The trapezoidal rule',
     source: 'Cranbrook 2023 Trial Q22(b)',
+    graphData: {
+      jsxGraph: {
+        width: 380,
+        height: 300,
+        boundingbox: [-0.5, 9, 4, -1],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[0,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,9]], {strokeColor:'black'});\nboard.create('functiongraph', [function(t){ return 8*Math.exp(-Math.sqrt(t)); }, 0.0001, 3.6], {strokeColor:'blue',strokeWidth:2});\nvar pts=[[0,8],[1,2.94],[2,1.95],[3,1.42]];\nvar nm=['(0, 8)','(1, 2.94)','(2, 1.95)','(3, 1.42)'];\nvar off=[[8,8],[10,8],[10,8],[10,4]];\nfor(var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:nm[i], size:2.5, color:'red', fixed:true, label:{offset:off[i], fontSize:11}}); }\nboard.create('text', [3.6, 0.35, 't'], {fontSize:14});\nboard.create('text', [0.25, 8.6, 'V'], {fontSize:14});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'short_answer',
     difficulty: 'medium',
     q: 'A safety shutoff valve is programmed to be activated before the hot-air balloon reaches its maximum volume, after which the balloon will burst. The flow-rate curve $V = 8e^{-\\sqrt{t}}$ is concave up. By referring to the graph, or otherwise, explain why the Trapezoidal rule is a valid method of estimation in this context.',
@@ -1099,6 +1157,23 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '6H',
     t: 'The sine rule and the area formula',
     source: 'Cranbrook 2023 Trial Q24(a)',
+    graphData: {
+      geometry: {
+        width: 280,
+        points: { "T": [0, 4.2], "M": [0, 0], "A": [3, 2.0], "B": [3.5, -2.4] },
+        segments: [
+          { from: "M", to: "T" },
+          { from: "M", to: "A" },
+          { from: "M", to: "B" },
+          { from: "T", to: "A" },
+          { from: "T", to: "B" }
+        ],
+        sideLabels: [
+          { between: ["M", "A"], text: "A (050°)" },
+          { between: ["M", "B"], text: "B (130°)" }
+        ]
+      }
+    },
     type: 'short_answer',
     difficulty: 'medium',
     q: 'Sofia installs a vertical flagpole on level ground at $M$. Two pegs are installed on the ground at $A$ and $B$ on bearings of 050° and 130° respectively from $M$. The distance from $A$ to $M$ is 120 m and the area of the triangle $AMB$ is 11 818 m². Find the distance between the base of the flagpole, $M$, and the peg at $B$, to the nearest metre.',
@@ -1132,6 +1207,23 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '6B',
     t: 'Problems with right-angled triangles',
     source: 'Cranbrook 2023 Trial Q24(b)',
+    graphData: {
+      geometry: {
+        width: 280,
+        points: { "T": [0, 4.2], "M": [0, 0], "A": [3, 2.0], "B": [3.5, -2.4] },
+        segments: [
+          { from: "M", to: "T" },
+          { from: "M", to: "A" },
+          { from: "M", to: "B" },
+          { from: "T", to: "A" },
+          { from: "T", to: "B" }
+        ],
+        sideLabels: [
+          { between: ["M", "A"], text: "A (050°)" },
+          { between: ["M", "B"], text: "B (130°)" }
+        ]
+      }
+    },
     type: 'short_answer',
     difficulty: 'hard',
     q: 'Supporting wires are connected from each peg ($A$ and $B$) to the top of the flagpole at $T$, where $MA = 120$ m, $MB = 200$ m, and the pole $MT$ is vertical with height $x$ m. By considering triangle $AMT$ and triangle $BMT$, find the height of the pole, given that the total length of the supporting wires is 350 m. Answer to the nearest metre.',
@@ -1169,7 +1261,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '5G',
     t: 'Combining transformations',
     source: 'Cranbrook 2023 Trial Q25',
-    type: 'short_answer',
+    type: 'teacher_review',
     difficulty: 'hard',
     q: 'Consider the function $g(x) = (x+2)^2$. The following transformations are applied to the graph of $y = g(x)$ in the order shown: (1) horizontal translation right by 6 units; (2) horizontal dilation by a factor of $\\dfrac{3}{2}$; (3) vertical dilation by a factor of $\\dfrac{1}{2}$; (4) vertical translation down by 2 units; (5) reflection in the $x$-axis. Find the equation of the transformed function, and state the vertex and the axis intercepts.',
     a: '$y = 2 - \\dfrac{2}{9}(x-6)^2$; vertex $(6, 2)$; $x$-intercepts $(3, 0)$ and $(9, 0)$; $y$-intercept $(0, -6)$.',
@@ -1200,6 +1292,19 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       {
         explanation: 'Find the intercepts: set $y = 0$ for the $x$-intercepts and $x = 0$ for the $y$-intercept.',
         workingOut: '(x-6)^2 = 9 \\implies x = 3, 9; \\quad x = 0 \\implies y = 2 - \\dfrac{2}{9}(36) = -6'
+      },
+      {
+        explanation: 'Sketch the concave-down parabola $y = 2 - \\dfrac{2}{9}(x-6)^2$ with maximum vertex $(6, 2)$, $x$-intercepts $(3, 0)$ and $(9, 0)$, and $y$-intercept $(0, -6)$.',
+        workingOut: '',
+        graphData: {
+          jsxGraph: {
+            width: 400,
+            height: 300,
+            boundingbox: [-1, 3.5, 10, -7],
+            boardOptions: { keepaspectratio: false },
+            script: "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[10,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-7],[0,3.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2 - (2/9)*Math.pow(x-6,2); }, -1, 10], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [6,2], {name:'(6, 2)', size:3, color:'red', label:{offset:[8,10]}});\nboard.create('point', [3,0], {name:'(3, 0)', size:3, color:'red', label:{offset:[-10,12]}});\nboard.create('point', [9,0], {name:'(9, 0)', size:3, color:'red', label:{offset:[10,12]}});\nboard.create('point', [0,-6], {name:'(0, -6)', size:3, color:'red', label:{offset:[8,-6]}});\nboard.create('text', [9.5, 0.4, 'x'], {fontSize:14});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14});\nboard.create('text', [-0.4, -0.5, 'O'], {fontSize:14});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -1402,6 +1507,19 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       {
         explanation: 'Join smoothly: rising on $\\left(0, \\dfrac{3}{4}\\right)$, falling on $\\left(\\dfrac{3}{4}, 3\\right)$, flattening at $(3,1)$, then falling through the axis to $(5, -1.96)$.',
         workingOut: '(0,1) \\nearrow (0.75, 1.63) \\searrow (3,1) \\searrow (5, -1.96)'
+      },
+      {
+        explanation: 'Sketch $y = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1$ on $[0, 5]$: start at $(0,1)$, rise to the local maximum $\\left(\\tfrac{3}{4}, \\tfrac{209}{128}\\right)$, fall through the horizontal point of inflection $(3, 1)$, then cross the $x$-axis between $4$ and $5$, ending near $(5, -1.96)$.',
+        workingOut: '',
+        graphData: {
+          jsxGraph: {
+            width: 400,
+            height: 300,
+            boundingbox: [-0.6, 2.5, 5.6, -2.6],
+            boardOptions: { keepaspectratio: false },
+            script: "board.suspendUpdate();\nboard.create('arrow', [[-0.6,0],[5.6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.6],[0,2.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2*x*Math.pow(1 - x/3, 3) + 1; }, 0, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,1], {name:'(0, 1)', size:3, color:'red', label:{offset:[-14,8]}});\nboard.create('point', [0.75,1.633], {name:'(3/4, 209/128)', size:3, color:'red', label:{offset:[6,10]}});\nboard.create('point', [3,1], {name:'(3, 1)', size:3, color:'red', label:{offset:[8,12]}});\nboard.create('point', [5,-1.963], {name:'(5, -53/27)', size:3, color:'red', label:{offset:[6,-8]}});\nboard.create('text', [5.45, 0.35, 'x'], {fontSize:14});\nboard.create('text', [0.25, 2.3, 'y'], {fontSize:14});\nboard.create('text', [-0.32, -0.35, 'O'], {fontSize:14});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -1511,6 +1629,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '2I',
     t: 'Trigonometric graphs',
     source: 'Cranbrook 2023 Trial Q29(a)',
+    graphData: {
+      jsxGraph: {
+        width: 420,
+        height: 320,
+        boundingbox: [-0.5, 2.8, 6.9, -2.8],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-0.4,0],[6.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.8],[0,2.8]], {strokeColor:'black'});\nvar PI=Math.PI;\nboard.create('functiongraph', [function(x){ return 2*Math.sin(x); }, 0, 2*PI], {strokeColor:'#1d4ed8',strokeWidth:2});\nvar tan=function(x){ return Math.tan(x); };\nboard.create('functiongraph', [tan, 0, PI/2-0.08], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [tan, PI/2+0.08, 3*PI/2-0.08], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [tan, 3*PI/2+0.08, 2*PI], {strokeColor:'#15803d',strokeWidth:2});\nvar marks=[[PI/2,'π/2'],[PI,'π'],[3*PI/2,'3π/2'],[2*PI,'2π']];\nfor(var i=0;i<marks.length;i++){ board.create('text',[marks[i][0]-0.12,-0.4,marks[i][1]],{fontSize:11}); }\nboard.create('text', [1.7, 2.5, 'y = 2sin x'], {fontSize:12, strokeColor:'#1d4ed8'});\nboard.create('text', [3.4, 2.5, 'y = tan x'], {fontSize:12, strokeColor:'#15803d'});\nboard.create('text', [0.22, 2.6, 'y'], {fontSize:13});\nboard.create('text', [6.6, 0.4, 'x'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'short_answer',
     difficulty: 'easy',
     q: 'The diagram shows the graphs of $y = 2\\sin x$ and $y = \\tan x$ for $0 \\leq x \\leq 2\\pi$. Write down the periods of each of the functions $y = 2\\sin(x)$ and $y = \\tan(x)$.',
@@ -1536,6 +1663,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '11B',
     t: 'Solving trig equations',
     source: 'Cranbrook 2023 Trial Q29(b)',
+    graphData: {
+      jsxGraph: {
+        width: 420,
+        height: 320,
+        boundingbox: [-0.5, 2.8, 6.9, -2.8],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-0.4,0],[6.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.8],[0,2.8]], {strokeColor:'black'});\nvar PI=Math.PI;\nboard.create('functiongraph', [function(x){ return 2*Math.sin(x); }, 0, 2*PI], {strokeColor:'#1d4ed8',strokeWidth:2});\nvar tan=function(x){ return Math.tan(x); };\nboard.create('functiongraph', [tan, 0, PI/2-0.08], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [tan, PI/2+0.08, 3*PI/2-0.08], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [tan, 3*PI/2+0.08, 2*PI], {strokeColor:'#15803d',strokeWidth:2});\nvar marks=[[PI/2,'π/2'],[PI,'π'],[3*PI/2,'3π/2'],[2*PI,'2π']];\nfor(var i=0;i<marks.length;i++){ board.create('text',[marks[i][0]-0.12,-0.4,marks[i][1]],{fontSize:11}); }\nboard.create('text', [1.7, 2.5, 'y = 2sin x'], {fontSize:12, strokeColor:'#1d4ed8'});\nboard.create('text', [3.4, 2.5, 'y = tan x'], {fontSize:12, strokeColor:'#15803d'});\nboard.create('text', [0.22, 2.6, 'y'], {fontSize:13});\nboard.create('text', [6.6, 0.4, 'x'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'short_answer',
     difficulty: 'hard',
     q: 'Show that the $x$-coordinates of the points of intersection of $y = 2\\sin x$ and $y = \\tan x$ are the solutions of the equation $\\sin x\\,(2\\cos x - 1) = 0$ for $0 \\leq x \\leq 2\\pi$, then solve this equation.',
@@ -1577,6 +1713,15 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     c: '6E',
     t: 'Applications of integration of trig',
     source: 'Cranbrook 2023 Trial Q29(c)',
+    graphData: {
+      jsxGraph: {
+        width: 420,
+        height: 320,
+        boundingbox: [-0.5, 2.8, 6.9, -2.8],
+        boardOptions: { keepaspectratio: false },
+        script: "board.suspendUpdate();\nboard.create('arrow', [[-0.4,0],[6.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.8],[0,2.8]], {strokeColor:'black'});\nvar PI=Math.PI;\nboard.create('functiongraph', [function(x){ return 2*Math.sin(x); }, 0, 2*PI], {strokeColor:'#1d4ed8',strokeWidth:2});\nvar tan=function(x){ return Math.tan(x); };\nboard.create('functiongraph', [tan, 0, PI/2-0.08], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [tan, PI/2+0.08, 3*PI/2-0.08], {strokeColor:'#15803d',strokeWidth:2});\nboard.create('functiongraph', [tan, 3*PI/2+0.08, 2*PI], {strokeColor:'#15803d',strokeWidth:2});\nvar marks=[[PI/2,'π/2'],[PI,'π'],[3*PI/2,'3π/2'],[2*PI,'2π']];\nfor(var i=0;i<marks.length;i++){ board.create('text',[marks[i][0]-0.12,-0.4,marks[i][1]],{fontSize:11}); }\nboard.create('text', [1.7, 2.5, 'y = 2sin x'], {fontSize:12, strokeColor:'#1d4ed8'});\nboard.create('text', [3.4, 2.5, 'y = tan x'], {fontSize:12, strokeColor:'#15803d'});\nboard.create('text', [0.22, 2.6, 'y'], {fontSize:13});\nboard.create('text', [6.6, 0.4, 'x'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     type: 'short_answer',
     difficulty: 'hard',
     q: 'Find in simplest exact form the total area of the bounded region enclosed by the curves $y = 2\\sin x$ and $y = \\tan x$ for $0 < x < \\dfrac{\\pi}{2}$.',
