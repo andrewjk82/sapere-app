@@ -56,6 +56,7 @@ import { Y11_CH3I_QUESTIONS } from '../constants/seedYear11Ch3IQuestions.js';
 import { Y11_CH3J_QUESTIONS } from '../constants/seedYear11Ch3JQuestions.js';
 import { Y11_CH4B_QUESTIONS } from '../constants/seedYear11Ch4BQuestions.js';
 import { Y11_CH4C_QUESTIONS } from '../constants/seedYear11Ch4CQuestions.js';
+import { Y11_CH4D_QUESTIONS } from '../constants/seedYear11Ch4DQuestions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y11_EXT1_CH1A_QUESTIONS } from '../constants/seedYear11Ext1Ch1AQuestions.js';
 import { Y11_EXT1_CH1B_QUESTIONS } from '../constants/seedYear11Ext1Ch1BQuestions.js';
@@ -634,6 +635,7 @@ const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y11a-3', chapterTitle: 'Chapter 3: Functions and graphs', topicId: 'y11a-3-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 11', seed: Y11_CH3J_QUESTIONS, label: 'Y11A Ch3 · 3J Revision' },
   { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Quadratic equations and the parabola', topicId: 'y11a-4B', topicCode: '4B', topicTitle: 'Solving quadratic inequations', year: 'Year 11', seed: Y11_CH4B_QUESTIONS, label: 'Y11A Ch4 · 4B Solving quadratic inequations' },
   { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Quadratic equations and the parabola', topicId: 'y11a-4C', topicCode: '4C', topicTitle: 'The discriminant', year: 'Year 11', seed: Y11_CH4C_QUESTIONS, label: 'Y11A Ch4 · 4C The discriminant' },
+  { chapterId: 'y11a-4', chapterTitle: 'Chapter 4: Quadratic equations and the parabola', topicId: 'y11a-4D', topicCode: '4D', topicTitle: 'Quadratic identities', year: 'Year 11', seed: Y11_CH4D_QUESTIONS, label: 'Y11A Ch4 · 4D Quadratic identities' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1A', topicCode: '1A', topicTitle: 'Algebra review', year: 'Year 11', seed: Y11_EXT1_CH1A_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebra review' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1B', topicCode: '1B', topicTitle: 'Factoring', year: 'Year 11', seed: Y11_EXT1_CH1B_QUESTIONS, label: 'Y11 Ext1 Ch1 · Factoring' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1C', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11', seed: Y11_EXT1_CH1C_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebraic fractions' },
