@@ -302,6 +302,13 @@ const FunctionGraph = ({ xMin = -3, xMax = 3, yMin = -1, yMax = 9, curves = [], 
           <g key={'ln' + i}>
             <motion.line x1={X1} y1={Y1} x2={X2} y2={Y2} stroke={ln.color || '#475569'} strokeWidth={ln.width || 2.6} strokeLinecap="round" strokeDasharray={ln.dashed ? '6 5' : undefined}
               initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 0.7, delay: ln.delay ?? 0.5 }} />
+            {ln.arrow && (() => {
+              const ang = Math.atan2(Y2 - Y1, X2 - X1), s = 10;
+              const ax1 = X2 + s * Math.cos(ang + Math.PI - 0.45), ay1 = Y2 + s * Math.sin(ang + Math.PI - 0.45);
+              const ax2 = X2 + s * Math.cos(ang + Math.PI + 0.45), ay2 = Y2 + s * Math.sin(ang + Math.PI + 0.45);
+              return <motion.polygon points={`${X2},${Y2} ${ax1},${ay1} ${ax2},${ay2}`} fill={ln.color || '#475569'}
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: (ln.delay ?? 0.5) + 0.55 }} />;
+            })()}
             {ln.label && <motion.text x={lp[0]} y={lp[1]} fontSize="15" fontWeight="800" fill={ln.color || '#475569'} textAnchor="middle"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: (ln.delay ?? 0.5) + 0.5 }} style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{ln.label}</motion.text>}
           </g>

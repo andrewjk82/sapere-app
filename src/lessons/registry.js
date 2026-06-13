@@ -271,16 +271,44 @@ export const buildTranslationsLesson = ({ audioBase = null } = {}) => {
       ],
     },
     {
-      narration: `<b>Example 1.</b> What maps $y = \\frac{1}{x}$ to $y = \\frac{1}{x+1}$? Since <b>x</b> is replaced by $x+1 = x-(-1)$, it is a <b>shift left of 1 unit</b>. Watch its <b>vertical asymptote</b> slide from <b>x = 0</b> to <b>x = −1</b>.`,
-      speech: `Example 1. What transformation maps y equals 1 over x, to y equals 1 over, x plus one? Since x is replaced by x plus one, which is x minus negative one, it is a shift left of one unit. Watch its vertical asymptote slide from x equals zero to x equals negative one.`,
+      narration: `<b>Example 1.</b> The graph of $y = \\frac{1}{x}$ is a <b>rectangular hyperbola</b> — two curved branches. It has <b>two asymptotes</b>: the <b>y-axis (x = 0)</b> and the <b>x-axis (y = 0)</b>. The branches race towards these lines but never touch them.`,
+      speech: `Example 1. The graph of y equals 1 over x is a rectangular hyperbola, two curved branches. It has two asymptotes. The y axis, where x equals zero, and the x axis, where y equals zero. The branches race towards these lines but never touch them.`,
+      board: [
+        { type: 'math', content: `$$y = \\dfrac{1}{x} \\quad\\text{(rectangular hyperbola)}$$`, emphasis: true },
+        { type: 'graph', xMin: -4, xMax: 4, yMin: -4, yMax: 4,
+          curves: [{ fn: recip, color: PURPLE }],
+          asymptotes: [
+            { type: 'v', x: 0, color: '#ef4444', label: 'x = 0', delay: 0.8 },
+            { type: 'h', y: 0, color: '#ef4444', label: 'y = 0', delay: 1.4 },
+          ] },
+      ],
+    },
+    {
+      narration: `Now map it to $y = \\frac{1}{x+1}$. Since <b>x</b> is replaced by $x+1 = x-(-1)$, it is a <b>shift left of 1 unit</b>. <b>First the vertical asymptote moves</b> — follow the arrow as it slides from <b>x = 0</b> to <b>x = −1</b>.`,
+      speech: `Now map it to y equals 1 over, x plus one. Since x is replaced by x plus one, which is x minus negative one, it is a shift left of one unit. First, watch the vertical asymptote move. Follow the arrow as it slides from x equals zero to x equals negative one.`,
       board: [
         { type: 'math', content: `$$y = \\dfrac{1}{x} \\;\\longrightarrow\\; y = \\dfrac{1}{x+1} \\quad(\\text{left } 1)$$`, emphasis: true },
         { type: 'graph', xMin: -4, xMax: 4, yMin: -4, yMax: 4,
-          curves: [{ fn: recip, color: GREY }, { fn: recipL, color: PURPLE, slideIn: { dxUnits: -1, steps: 1, delay: 3.2, dur: 2.4 } }],
+          curves: [{ fn: recip, color: GREY }],
           asymptotes: [
             { type: 'v', x: 0, label: 'x = 0' },
-            { type: 'v', x: -1, color: PURPLE, label: 'x = −1', delay: 3.4 },
-          ] },
+            { type: 'v', x: -1, color: PURPLE, label: 'x = −1', delay: 2.6 },
+          ],
+          lines: [{ from: [0, 3], to: [-1, 3], color: PURPLE, arrow: true, label: 'left 1', labelAt: [-0.5, 3.5], delay: 2.2 }] },
+      ],
+    },
+    {
+      narration: `<b>Then the whole curve slides left with it</b> — every point moves 1 unit left, so each branch hugs the <b>new</b> asymptote at <b>x = −1</b>. That gives $y = \\frac{1}{x+1}$.`,
+      speech: `Then the whole curve slides left with it. Every point moves one unit to the left, so each branch hugs the new asymptote at x equals negative one. That gives y equals 1 over, x plus one.`,
+      board: [
+        { type: 'math', content: `$$y = \\dfrac{1}{x+1} \\quad(\\text{shifted left } 1)$$`, emphasis: true },
+        { type: 'graph', xMin: -4, xMax: 4, yMin: -4, yMax: 4,
+          curves: [{ fn: recip, color: GREY }, { fn: recipL, color: PURPLE, slideIn: { dxUnits: -1, steps: 1, delay: 2.6, dur: 2.4 } }],
+          asymptotes: [
+            { type: 'v', x: 0, label: 'x = 0' },
+            { type: 'v', x: -1, color: PURPLE, label: 'x = −1' },
+          ],
+          lines: [{ from: [1.5, 1.2], to: [0.5, 1.2], color: PURPLE, arrow: true, label: 'left 1', labelAt: [1, 1.7], delay: 2.4 }] },
       ],
     },
     {
