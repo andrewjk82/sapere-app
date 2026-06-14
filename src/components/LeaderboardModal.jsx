@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, onSnapshot, query, orderBy, limit } from 'firebase/firestore';
 
 const RANK_EMOJI = ['🥇', '🥈', '🥉'];
+
+// 러너 질주 애니메이션 길이(초)와 맞춤 — 결승 환호 타이밍
+const RUN_DURATION_MS = 3200;
 
 /* ── Running keyframe injected once ─────────────────────────────────── */
 const STYLE = `
@@ -30,6 +33,9 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
   const [loading, setLoading]   = useState(true);
   const [ready,   setReady]     = useState(false); // delay runners until modal settled
 
+  const ambienceRef = useRef(null);
+  const cheerRef    = useRef(null);
+
   useEffect(() => {
     if (!open) { setReady(false); return; }
     setLoading(true);
@@ -40,6 +46,42 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
       setTimeout(() => setReady(true), 400);
     }, () => setLoading(false));
     return () => unsub();
+  }, [open]);
+
+  // ── Stadium sound: ambience on open (loop, soft) → cheer at the finish ──
+  // Leaderboard opens from a button tap, so playback is within a user gesture.
+  useEffect(() => {
+    if (!open) return undefined;
+
+    let cheerTimer = null;
+    let fadeTimer = null;
+    try {
+      const ambience = new Audio('/sounds/stadium-ambience.mp3');
+      ambience.loop = true;
+      ambience.volume = 0.22;
+      ambience.play().catch(() => {});
+      ambienceRef.current = ambience;
+
+      // 결승 환호: 러너 출발(0.4s) + 질주(3.2s) 후
+      cheerTimer = setTimeout(() => {
+        try {
+          const cheer = new Audio('/sounds/crowd-cheer.mp3');
+          cheer.volume = 0.55;
+          cheer.play().catch(() => {});
+          cheerRef.current = cheer;
+        } catch { /* noop */ }
+        // 환호가 들어오면 배경음을 살짝 더 줄여 자연스럽게
+        if (ambienceRef.current) ambienceRef.current.volume = 0.12;
+      }, 400 + RUN_DURATION_MS);
+    } catch { /* noop */ }
+
+    return () => {
+      if (cheerTimer) clearTimeout(cheerTimer);
+      if (fadeTimer) clearTimeout(fadeTimer);
+      [ambienceRef, cheerRef].forEach((r) => {
+        if (r.current) { try { r.current.pause(); r.current.src = ''; } catch { /* noop */ } r.current = null; }
+      });
+    };
   }, [open]);
 
   if (!open) return null;
