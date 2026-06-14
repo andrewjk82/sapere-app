@@ -565,7 +565,11 @@ export const Y11_CH6I_QUESTIONS = [
               0,
               0
             ],
-            "name": "L"
+            "name": "L",
+            "size": 0,
+            "label": {
+              "offset": [-15, 5]
+            }
           },
           {
             "type": "point",
@@ -574,7 +578,11 @@ export const Y11_CH6I_QUESTIONS = [
               9.39,
               3.42
             ],
-            "name": "A"
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [10, 10]
+            }
           },
           {
             "type": "point",
@@ -583,7 +591,11 @@ export const Y11_CH6I_QUESTIONS = [
               6.84,
               -9.39
             ],
-            "name": "B"
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [10, -10]
+            }
           },
           {
             "type": "segment",
@@ -608,7 +620,10 @@ export const Y11_CH6I_QUESTIONS = [
               "B"
             ],
             "name": "70°",
-            "radius": 1.5
+            "radius": 1.5,
+            "label": {
+              "offset": [20, 10]
+            }
           }
         ]
       }
@@ -955,7 +970,11 @@ export const Y11_CH6I_QUESTIONS = [
               0,
               0
             ],
-            "name": "A"
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [-15, 10]
+            }
           },
           {
             "type": "point",
@@ -964,7 +983,11 @@ export const Y11_CH6I_QUESTIONS = [
               8,
               0
             ],
-            "name": "B"
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [10, 10]
+            }
           },
           {
             "type": "point",
@@ -973,7 +996,11 @@ export const Y11_CH6I_QUESTIONS = [
               2.5,
               4.3
             ],
-            "name": "C"
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [5, 15]
+            }
           },
           {
             "type": "polygon",
@@ -993,7 +1020,10 @@ export const Y11_CH6I_QUESTIONS = [
               "C"
             ],
             "name": "60°",
-            "radius": 0.8
+            "radius": 0.8,
+            "label": {
+              "offset": [18, 12]
+            }
           },
           {
             "type": "text",
@@ -1105,7 +1135,11 @@ export const Y11_CH6I_QUESTIONS = [
                       0,
                       0
                     ],
-                    "name": "A"
+                    "name": "A",
+                    "size": 0,
+                    "label": {
+                      "offset": [-15, 10]
+                    }
                   },
                   {
                     "type": "point",
@@ -1114,7 +1148,11 @@ export const Y11_CH6I_QUESTIONS = [
                       6,
                       0
                     ],
-                    "name": "B"
+                    "name": "B",
+                    "size": 0,
+                    "label": {
+                      "offset": [0, 15]
+                    }
                   },
                   {
                     "type": "point",
@@ -1123,7 +1161,11 @@ export const Y11_CH6I_QUESTIONS = [
                       7.84,
                       0
                     ],
-                    "name": "C1"
+                    "name": "C1",
+                    "size": 0,
+                    "label": {
+                      "offset": [10, 10]
+                    }
                   },
                   {
                     "type": "point",
@@ -1132,7 +1174,11 @@ export const Y11_CH6I_QUESTIONS = [
                       2.55,
                       0
                     ],
-                    "name": "C2"
+                    "name": "C2",
+                    "size": 0,
+                    "label": {
+                      "offset": [0, -15]
+                    }
                   },
                   {
                     "type": "segment",
@@ -1158,6 +1204,7 @@ export const Y11_CH6I_QUESTIONS = [
                       5.19
                     ],
                     "name": "",
+                    "size": 0,
                     "label": {
                       "offset": [
                         0,
