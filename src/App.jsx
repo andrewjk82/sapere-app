@@ -7,6 +7,13 @@ import { useProfile } from './context/ProfileContext';
 import { studentService } from './services/studentService';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
+import MedalCelebrationModal from './components/MedalCelebrationModal';
+import {
+  evaluateWeeklyProgress,
+  getUnseenMedals,
+  getThisWeekMonday,
+} from './services/calcProgressService';
+import { notifyTeacherCalcStuck } from './utils/challengeUtils';
 // Route-level views are code-split so the main bundle only loads the
 // shell; each view is fetched on first navigation.
 //
@@ -627,6 +634,8 @@ function App() {
 
   const [profile, setProfile] = useState(null);
   const [profileLoaded, setProfileLoaded] = useState(false);
+  const [celebrationMedals, setCelebrationMedals] = useState(null);
+  const medalCheckedRef = useRef(false);
   const [notifications, setNotifications] = useState([]);
   const unreadCount = notifications.filter(n => !n.read).length;
 
@@ -804,6 +813,52 @@ function App() {
     }, messageDuration);
     return () => window.clearTimeout(timer);
   }, [introGreeting, introName, introYearLevel, showOpeningIntro]);
+
+  // ── Daily Calculation 메달 축하 (앱 진입 시 1회) ──────────────────────────
+  // Auto Mode 학생만. 이번 주 평가가 아직이면 evaluateWeeklyProgress 실행
+  // (주 1회 read+가능시 write), 이미 했으면 localStorage 보류 메달로 모달.
+  useEffect(() => {
+    if (isAdmin || !profileLoaded || !user?.uid) return;
+    if (profile?.calcAutoMode !== true) return;
+    if (medalCheckedRef.current) return;
+    medalCheckedRef.current = true;
+
+    const uid = user.uid;
+    const wk = getThisWeekMonday();
+    const guardKey = `calc:wk-eval:${uid}`;
+    const pendKey = `calc:pending-medals:${uid}`;
+
+    (async () => {
+      let unseen = [];
+      try {
+        if (localStorage.getItem(guardKey) !== wk) {
+          const notify = (alert) => notifyTeacherCalcStuck({
+            studentId: uid,
+            studentName: profile?.firstName || profile?.displayName || 'A student',
+            ...alert,
+          });
+          const { data } = await evaluateWeeklyProgress(uid, notify, null);
+          localStorage.setItem(guardKey, wk);
+          unseen = getUnseenMedals(data);
+          localStorage.setItem(pendKey, JSON.stringify(unseen));
+          // 진열장이 추가 read 없이 읽도록 전체 메달도 캐시 (주 1회 갱신)
+          localStorage.setItem(`calc:all-medals:${uid}`, JSON.stringify(data?.medals || []));
+        } else {
+          unseen = JSON.parse(localStorage.getItem(pendKey) || '[]');
+        }
+      } catch {
+        unseen = [];
+      }
+      if (Array.isArray(unseen) && unseen.length > 0) setCelebrationMedals(unseen);
+    })();
+  }, [isAdmin, profileLoaded, user?.uid, profile?.calcAutoMode, profile?.firstName, profile?.displayName]);
+
+  const dismissCelebration = useCallback(() => {
+    if (user?.uid) {
+      try { localStorage.removeItem(`calc:pending-medals:${user.uid}`); } catch { /* noop */ }
+    }
+    setCelebrationMedals(null);
+  }, [user?.uid]);
 
   const hasProfile = Boolean(profile);
   const handleRefreshStudents = useCallback(async (silent = false, forceRefresh = false) => {
@@ -1094,6 +1149,15 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {celebrationMedals && celebrationMedals.length > 0 && createPortal(
+        <MedalCelebrationModal
+          uid={user?.uid}
+          medals={celebrationMedals}
+          onClose={dismissCelebration}
+        />,
+        document.body,
+      )}
 
       <AnimatePresence>
         {showOpeningIntro && openingIntroVisible && (

@@ -22,6 +22,7 @@ import { getDueCount } from '../utils/secretNote';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 import JourneyMapSnapshot from './JourneyMapSnapshot';
 import { DailyNudgeCards } from './DailyNudgeCard';
+import MedalShelf from './MedalShelf';
 
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap }) => {
   const { user, isAdmin } = useAuth();
@@ -314,6 +315,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 profile={profile}
                 onClick={onOpenJourneyMap}
               />
+              {/* Daily Calculation 메달 진열장 (Auto Mode) */}
+              {profile?.calcAutoMode === true && <MedalShelf uid={user?.uid} />}
               <div style={{ flex: 1, background: 'linear-gradient(135deg, #1e1b4b, #312e81)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(30,27,75,0.2)', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden', minHeight: '82px' }}>
                 <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}><Trophy size={100} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Total XP</label>

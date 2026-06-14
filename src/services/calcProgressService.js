@@ -74,6 +74,53 @@ const isFirstStep = (stageId, groupKey, stepId) => {
   return order.length > 0 && order[0] === stepId;
 };
 
+/** stepId가 그룹의 마지막 스텝인지 */
+const isLastStep = (stageId, groupKey, stepId) => {
+  const order = getStepOrder(stageId, groupKey);
+  return order.length > 0 && order[order.length - 1] === stepId;
+};
+
+// ─── 메달 헬퍼 ────────────────────────────────────────────────────────────────
+
+const hasMedal = (medals, pred) => medals.some(pred);
+
+const pushMedal = (medals, medal) => {
+  medals.push({ ...medal, awardedAt: new Date().toISOString(), seen: false });
+};
+
+/** step 메달: 같은 (stage,group,step) 중복 금지 */
+const awardStepMedal = (medals, stageId, groupKey, stepId) => {
+  if (hasMedal(medals, (m) => m.tier === 'step' && m.stageId === stageId
+    && m.groupKey === groupKey && m.stepId === stepId)) return false;
+  pushMedal(medals, { tier: 'step', stageId, groupKey, stepId });
+  return true;
+};
+
+/** phase 메달: 같은 (stage,group) 중복 금지 */
+const awardPhaseMedal = (medals, stageId, groupKey) => {
+  if (hasMedal(medals, (m) => m.tier === 'phase' && m.stageId === stageId
+    && m.groupKey === groupKey)) return false;
+  pushMedal(medals, { tier: 'phase', stageId, groupKey });
+  return true;
+};
+
+/** stage 메달: 같은 stage 중복 금지 */
+const awardStageMedal = (medals, stageId) => {
+  if (hasMedal(medals, (m) => m.tier === 'stage' && m.stageId === stageId)) return false;
+  pushMedal(medals, { tier: 'stage', stageId });
+  return true;
+};
+
+const awardMasteryMedal = (medals) => {
+  if (hasMedal(medals, (m) => m.tier === 'mastery')) return false;
+  pushMedal(medals, { tier: 'mastery' });
+  return true;
+};
+
+/** 그룹이 마스터됐는지 = 그 그룹의 phase 메달 보유 여부 */
+const groupMastered = (medals, stageId, groupKey) =>
+  hasMedal(medals, (m) => m.tier === 'phase' && m.stageId === stageId && m.groupKey === groupKey);
+
 // ─── 날짜 유틸 ────────────────────────────────────────────────────────────────
 
 const toDateKey = (d = new Date()) => d.toLocaleDateString('en-CA'); // YYYY-MM-DD
@@ -93,6 +140,9 @@ const getLastWeekMonday = () => {
   d.setDate(d.getDate() - 7);
   return getMondayOf(toDateKey(d));
 };
+
+/** 이번주 월요일 (YYYY-MM-DD) — 앱 진입 주간 가드용 */
+export const getThisWeekMonday = () => getMondayOf(toDateKey());
 
 /** dateStr이 lastWeekMonday 기준 월~일에 속하는지 */
 const isLastWeek = (dateStr, lastWeekMonday) => {
@@ -194,6 +244,7 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
   const alerts = [];
   let mutated = false; // 실제 변경이 있을 때만 Firestore에 씀 (불필요 쓰기 방지)
   const updatedStages = JSON.parse(JSON.stringify(data.stages || {}));
+  const medals = Array.isArray(data.medals) ? [...data.medals] : [];
 
   Object.entries(updatedStages).forEach(([stageId, stageCfg]) => {
     if (!stageCfg.enabled) return;
@@ -249,6 +300,10 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
         groupData.currentStepId = newStepId;
       }
 
+      // 메달 발급: 스텝업 → step, 마지막 스텝 마스터 → phase
+      if (reason === 'up') awardStepMedal(medals, stageId, groupKey, newStepId);
+      else if (reason === 'top') awardPhaseMedal(medals, stageId, groupKey);
+
       groupData.lastEvaluatedWeek = lastWeekMonday;
       // 14일 이전 데이터 정리
       const cutoff = new Date(lastWeekMonday + 'T00:00:00');
@@ -258,14 +313,28 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
         (s) => s.date >= cutoffStr,
       );
     });
+
+    // stage 메달: 이 stage의 모든 그룹이 마스터됐으면 발급
+    const groupKeys = Object.keys(stageCfg.groups || {});
+    if (groupKeys.length > 0 && groupKeys.every((gk) => groupMastered(medals, stageId, gk))) {
+      awardStageMedal(medals, stageId);
+    }
   });
+
+  // mastery 메달: 켜진 모든 stage가 완주됐으면 발급
+  const enabledStageIds = Object.entries(updatedStages)
+    .filter(([, c]) => c.enabled).map(([id]) => id);
+  if (enabledStageIds.length > 0
+    && enabledStageIds.every((sid) => hasMedal(medals, (m) => m.tier === 'stage' && m.stageId === sid))) {
+    awardMasteryMedal(medals);
+  }
 
   // 변경이 없으면 쓰지 않음 (주 2회차 이후 세션은 read만 발생)
   if (!mutated) return { changes, alerts, data };
 
+  const nextData = { ...data, stages: updatedStages, medals };
   await setDoc(progressRef(uid), {
-    ...data,
-    stages: updatedStages,
+    ...nextData,
     updatedAt: serverTimestamp(),
   }, { merge: false });
 
@@ -274,7 +343,33 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
     alerts.forEach((alert) => notifyFn(alert).catch(() => {}));
   }
 
-  return { changes, alerts, data: { ...data, stages: updatedStages } };
+  return { changes, alerts, data: nextData };
+};
+
+// ─── 메달 조회/확인 ───────────────────────────────────────────────────────────
+
+/** 아직 축하 모달로 안 보여준 메달들 */
+export const getUnseenMedals = (progressData) =>
+  (progressData?.medals || []).filter((m) => m && m.seen === false);
+
+/** 모든 메달 (진열장용, 최신순) */
+export const getAllMedals = (progressData) =>
+  [...(progressData?.medals || [])].sort(
+    (a, b) => String(b.awardedAt || '').localeCompare(String(a.awardedAt || '')),
+  );
+
+/** 축하 모달 표시 후 모든 메달을 seen 처리 (1 read + 1 write) */
+export const markMedalsSeen = async (uid) => {
+  if (!uid) return;
+  try {
+    const snap = await getDoc(progressRef(uid));
+    if (!snap.exists()) return;
+    const data = snap.data();
+    const medals = (data.medals || []).map((m) => ({ ...m, seen: true }));
+    await setDoc(progressRef(uid), { ...data, medals, updatedAt: serverTimestamp() }, { merge: false });
+  } catch (err) {
+    console.warn('markMedalsSeen failed (non-critical):', err?.code || err);
+  }
 };
 
 // ─── 세션 기록 ────────────────────────────────────────────────────────────────
