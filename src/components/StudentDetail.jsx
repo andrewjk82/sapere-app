@@ -1906,6 +1906,7 @@ const StudentDetail = ({ studentId, onBack }) => {
                 <BasicCalculationPanel
                   styles={{ ...styles, card: {} }}
                   student={student}
+                  calcProgressUid={challengeResultsUid}
                   assignedChapters={assignedChapters}
                   completedChapters={completedChapters}
                   onUpdateSetting={handleUpdateCurriculumSetting}

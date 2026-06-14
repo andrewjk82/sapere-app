@@ -22,6 +22,14 @@ import {
   getAssignedChapters,
 } from '../services/dailyAssignmentService';
 import { updatePoolAfterQuiz } from '../services/practicePoolService';
+import {
+  ensureCalcProgress,
+  evaluateWeeklyProgress,
+  getAutoModeStepIds,
+  recordCalcSession,
+  aggregateGroupResults,
+} from '../services/calcProgressService';
+import { notifyTeacherCalcStuck } from '../utils/challengeUtils';
 
 // Sub-components
 import ChallengeStartView from './challenge/ChallengeStartView';
@@ -138,6 +146,9 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
   const stepRef = useRef('idle'); // mirrors `step` so timer interval can read it without stale closure
   const sessionReviewCountRef = useRef(0);
   const sessionReportCountRef = useRef(0);
+  // Auto-mode calc progress snapshot for the active session (so finishQuiz can
+  // aggregate per-group results without an extra Firestore read).
+  const calcAutoProgressRef = useRef(null);
 
   // ── Custom hooks ──
   const { markKeyboardActivity, markViewportKeyboardActivity, hasRecentKeyboardActivity } = useKeyboardActivity();
@@ -523,8 +534,34 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
 
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
-    const calcTopics = (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [])
-      .filter(id => id.startsWith('calc-') || id.startsWith('clock-'));
+
+    // Resolve which calc topics to draw from.
+    // Auto Mode: each group's current step (auto-adjusted weekly).
+    // Manual Mode: the teacher's hand-picked assignedChapters (legacy behaviour).
+    let calcTopics;
+    calcAutoProgressRef.current = null;
+    if (studentProfile?.calcAutoMode === true && user?.uid) {
+      try {
+        let progress = await ensureCalcProgress(user.uid);
+        // On Mondays, evaluate last week and adjust steps before generating.
+        const evalResult = await evaluateWeeklyProgress(user.uid, (alert) =>
+          notifyTeacherCalcStuck({
+            studentId: user.uid,
+            studentName: studentProfile?.name || studentProfile?.firstName || 'A student',
+            ...alert,
+          }), progress);
+        progress = evalResult.data || progress;
+        calcAutoProgressRef.current = progress;
+        calcTopics = getAutoModeStepIds(progress);
+      } catch (e) {
+        console.warn('Auto mode resolution failed, falling back to manual topics:', e);
+        calcTopics = null;
+      }
+    }
+    if (!calcTopics || calcTopics.length === 0) {
+      calcTopics = (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [])
+        .filter(id => id.startsWith('calc-') || id.startsWith('clock-'));
+    }
     const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, studentProfile?.calcTimeLimit || 30);
 
     const sessionMeta = {
@@ -1392,6 +1429,13 @@ const DailyChallenge = ({ onBack, setIsLocked }) => {
             }))
             .filter((r) => r.id && r.chapterId);
           updatePoolAfterQuiz(user.uid, poolResults).catch(() => {});
+        }
+
+        // Auto Mode: record per-group results so the weekly evaluation can
+        // level each row up/down independently.
+        if (challengeType === 'calc' && !isAbandoned && calcAutoProgressRef.current) {
+          const groupResults = aggregateGroupResults(calcAutoProgressRef.current, currentAnswerResults);
+          if (groupResults.length > 0) recordCalcSession(user.uid, groupResults).catch(() => {});
         }
 
         setChapterProgress(prev => ({

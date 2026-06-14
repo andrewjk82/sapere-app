@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Clock, Target, Check } from "lucide-react";
+import { Clock, Target, Check, Zap } from "lucide-react";
 import { CURRICULUM_DATA } from "../../constants/curriculumData";
+import { setCalcAutoMode } from "../../services/calcProgressService";
+import CalcAutoModePanel from "./CalcAutoModePanel";
 
 export default function BasicCalculationPanel({
   styles,
@@ -10,7 +13,18 @@ export default function BasicCalculationPanel({
   onUpdateSetting,
   onToggleChapter,
   onToggleStage,
+  calcProgressUid,
 }) {
+  const [autoMode, setAutoMode] = useState(student?.calcAutoMode === true);
+
+  const toggleAutoMode = () => {
+    const next = !autoMode;
+    setAutoMode(next);
+    // 프로필 플래그(학생 앱이 읽음) + calc_progress 미러 둘 다 갱신
+    onUpdateSetting("calcAutoMode", next);
+    if (calcProgressUid) setCalcAutoMode(calcProgressUid, next).catch(() => {});
+  };
+
   return (
     <div style={styles.card} className="profile-card-mobile">
       <div
@@ -136,6 +150,38 @@ export default function BasicCalculationPanel({
                 : "DISABLED"}
             </span>
           </div>
+
+          {/* AUTO MODE toggle */}
+          {(student?.calculationEnabled ?? true) !== false && (
+            <div
+              onClick={toggleAutoMode}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                cursor: "pointer",
+                padding: "10px 20px",
+                borderRadius: "100px",
+                background: autoMode
+                  ? "linear-gradient(135deg, #f5f3ff, #ede9fe)"
+                  : "#f8fafc",
+                border: `1.5px solid ${autoMode ? "#a78bfa" : "#e2e8f0"}`,
+                transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
+            >
+              <Zap size={15} color={autoMode ? "#7c3aed" : "#94a3b8"} fill={autoMode ? "#7c3aed" : "none"} />
+              <span
+                style={{
+                  fontSize: "0.75rem",
+                  fontWeight: 900,
+                  color: autoMode ? "#6d28d9" : "#64748b",
+                  letterSpacing: "0.02em",
+                }}
+              >
+                AUTO MODE {autoMode ? "ON" : "OFF"}
+              </span>
+            </div>
+          )}
 
           {/* Timer & Count Group */}
           <div
@@ -268,7 +314,11 @@ export default function BasicCalculationPanel({
           </div>
         </div>
       </div>
-      {(student?.calculationEnabled ?? true) !== false && (
+      {(student?.calculationEnabled ?? true) !== false && autoMode && (
+        <CalcAutoModePanel uid={calcProgressUid} />
+      )}
+
+      {(student?.calculationEnabled ?? true) !== false && !autoMode && (
       <div
         style={{
           display: "grid",

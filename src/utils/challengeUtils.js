@@ -338,6 +338,57 @@ export const notifyTeacherChallengeCompleted = async ({
   if (!response.ok) throw new Error(`send-notif failed: ${response.status}`);
 };
 
+// Notify the teacher when an Auto Mode student is stuck at the first step of a
+// group (weekly avg ≤ 50% but cannot drop any lower). Called from the weekly
+// evaluation in startCalculationQuiz.
+export const notifyTeacherCalcStuck = async ({
+  studentId,
+  studentName,
+  stageId,
+  groupKey,
+  stepId,
+  avg,
+}) => {
+  if (!ADMIN_UID || studentId === ADMIN_UID) return;
+
+  // Resolve a human-readable step label from the curriculum.
+  const stage = (CURRICULUM_DATA['Daily Calculation'] || []).find((s) => s.id === stageId);
+  const topic = stage?.topics?.find((t) => t.id === stepId);
+  const stageTitle = stage?.title || stageId;
+  const stepLabel = topic ? `${topic.code} · ${topic.title}` : stepId;
+  const displayName = studentName || 'A student';
+  const pct = Math.round((avg || 0) * 100);
+
+  const body = [
+    `${displayName} is stuck on the first step of a Daily Calculation row.`,
+    `${stageTitle}`,
+    `Step: ${stepLabel} (group ${groupKey})`,
+    `Last week's average: ${pct}% — cannot drop any lower.`,
+    `Consider reviewing this topic with the student.`,
+  ].join('\n');
+
+  const response = await fetch('/api/send-notif', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      studentId: ADMIN_UID,
+      email: ADMIN_EMAIL,
+      subject: `Daily Calculation: ${displayName} needs help`,
+      text: body,
+      metadata: {
+        type: 'calc_stuck',
+        studentId,
+        studentName: displayName,
+        stageId,
+        groupKey,
+        stepId,
+        avg,
+      },
+    }),
+  });
+  if (!response.ok) console.warn('[notifyTeacherCalcStuck] send-notif returned', response.status);
+};
+
 // Notify the teacher whenever a student submits an answer that requires manual marking.
 // Called immediately after writing to grading_queue — never blocks the student flow.
 export const notifyTeacherPendingReview = async ({
