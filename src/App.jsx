@@ -15,6 +15,9 @@ import {
 } from './services/calcProgressService';
 import { notifyTeacherCalcStuck } from './utils/challengeUtils';
 import { playSchoolBell } from './utils/schoolBell';
+
+// 한 페이지 로드당 종소리 1회만 — React StrictMode 이중 마운트/재렌더 방지.
+let bellRungThisLoad = false;
 // Route-level views are code-split so the main bundle only loads the
 // shell; each view is fetched on first navigation.
 //
@@ -798,12 +801,18 @@ function App() {
     introShownOnceRef.current = true;
     sessionStorage.setItem('sapere:intro-shown', '1');
 
-    // 앱 첫 진입 시 한국 학교 종소리(차임벨) 1회 재생
-    playSchoolBell();
-
     setShowOpeningIntro(true);
     setOpeningIntroVisible(true);
   }, [isAdmin, profileLoaded, user?.uid]);
+
+  // 앱 진입(페이지 로드) 시 한국 학교 종소리 1회 재생. 인트로의 1회 가드와
+  // 분리해 새로고침마다 울리도록 한다 (모듈 플래그로 한 로드당 1회만).
+  useEffect(() => {
+    if (!user?.uid || bellRungThisLoad) return undefined;
+    bellRungThisLoad = true;
+    playSchoolBell();
+    return undefined;
+  }, [user?.uid]);
 
   useEffect(() => {
     if (!showOpeningIntro) return undefined;
