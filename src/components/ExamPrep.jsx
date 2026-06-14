@@ -202,15 +202,38 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
 
   if (!q) return null;
 
-  const submit = () => {
+  const submit = async () => {
     const userAnswer = draft;
     const { correct } = needsTeacher ? { correct: null } : gradeQuestion(q, userAnswer);
+
+    // 손글씨 캡처는 setShowFeedback(리렌더로 캔버스 언마운트 가능)보다 먼저.
+    // WorkingOutCanvas는 exportPageImages/exportImage만 제공 (exportImageSync 없음
+    // — 예전 코드가 항상 null을 저장해 선생님 화면에 blank canvas로 보이던 버그).
+    let answerImages = [];
+    // hasContent()가 있으면 실제 필기가 있을 때만 캡처 (빈 캔버스의 빈 PNG 방지).
+    // graph_sketch는 그림 자체가 답이므로 항상 캡처.
+    const hasInk = canvasRef.current?.hasContent ? canvasRef.current.hasContent() : true;
+    const alwaysCapture = q?.type === 'graph_sketch';
+    if (needsTeacher && user?.uid && (hasInk || alwaysCapture)) {
+      try {
+        if (canvasRef.current?.exportPageImages) {
+          answerImages = (await canvasRef.current.exportPageImages({ force: true })) || [];
+        }
+        if (answerImages.length === 0 && canvasRef.current?.exportImage) {
+          const single = await canvasRef.current.exportImage({ force: true });
+          if (single) answerImages = [single];
+        }
+      } catch { /* ignore — 빈 캔버스면 그대로 빈 배열 */ }
+      answerImages = answerImages.filter((u) => u && u.length > 100);
+    }
+
     const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle, pending: needsTeacher }];
     setAnswers(next);
     setShowFeedback(true);
 
     if (needsTeacher && user?.uid) {
-      const canvasDataUrl = (() => { try { return canvasRef.current?.exportImageSync?.() || null; } catch { return null; } })();
+      const canvasDataUrl = answerImages[0] || null;
+
       addDoc(collection(db, 'grading_queue'), {
         userId: user.uid,
         userName: user.displayName || user.email || 'Student',
@@ -222,7 +245,8 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         options: Array.isArray(q.options) ? q.options.map(o => typeof o === 'string' ? o : (o?.text || String(o))) : [],
         answerText: typeof userAnswer === 'string' ? userAnswer.trim() : null,
         answerImage: canvasDataUrl,
-        hasDrawing: Boolean(canvasDataUrl),
+        answerImages,
+        hasDrawing: answerImages.length > 0,
         status: 'pending',
         submittedAt: serverTimestamp(),
         challengeType: 'exam_prep',
