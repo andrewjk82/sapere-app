@@ -48,6 +48,7 @@ import { Y11_CH6E_QUESTIONS } from '../constants/seedYear11Ch6EQuestions.js';
 import { Y11_CH6F_QUESTIONS } from '../constants/seedYear11Ch6FQuestions.js';
 import { Y11_CH6G_QUESTIONS } from '../constants/seedYear11Ch6GQuestions.js';
 import { Y11_CH6H_QUESTIONS } from '../constants/seedYear11Ch6HQuestions.js';
+import { Y11_CH6I_QUESTIONS } from '../constants/seedYear11Ch6IQuestions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
@@ -357,6 +358,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH6H_QUESTIONS,
     label: 'Y11 Ch6 · 6H The sine rule and the area formula',
+  },
+  {
+    chapterId: 'y11a-6',
+    chapterTitle: 'Chapter 6: Trigonometry',
+    topicId: 'y11a-6I',
+    topicCode: '6I',
+    topicTitle: 'The cosine rule',
+    year: 'Year 11',
+    seed: Y11_CH6I_QUESTIONS,
+    label: 'Y11 Ch6 · 6I The cosine rule',
   },
   {
     chapterId: 'y11a-5',
