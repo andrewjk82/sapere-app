@@ -21,28 +21,43 @@ const getCtx = () => {
   return ctx;
 };
 
-/** 짧은 "톡" 클릭음 + 가벼운 진동. */
+/**
+ * 작고 고급스러운 "펠트 두드림(Felt tap)" 클릭음 + 가벼운 진동.
+ * 로우패스로 거른 짧은 노이즈 버스트 — 톤이 거의 없는 부드러운 탭.
+ */
 export const tick = () => {
   // 햅틱 (Android 등 지원 기기만)
-  try { navigator.vibrate && navigator.vibrate(8); } catch { /* noop */ }
+  try { navigator.vibrate && navigator.vibrate(6); } catch { /* noop */ }
 
   const c = getCtx();
   if (!c) return;
   if (c.state === 'suspended') c.resume().catch(() => {});
 
   const now = c.currentTime;
-  const osc = c.createOscillator();
-  const gain = c.createGain();
-  osc.type = 'triangle';
-  // 짧게 떨어지는 피치 → 부드러운 "톡"
-  osc.frequency.setValueAtTime(440, now);
-  osc.frequency.exponentialRampToValueAtTime(190, now + 0.04);
-  gain.gain.setValueAtTime(0.0001, now);
-  gain.gain.exponentialRampToValueAtTime(0.1, now + 0.005); // 작은 볼륨
-  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.06);
-  osc.connect(gain).connect(c.destination);
-  osc.start(now);
-  osc.stop(now + 0.07);
+  const dur = 0.03;
+
+  // 짧은 감쇠 노이즈 버퍼
+  const len = Math.max(1, Math.floor(c.sampleRate * dur));
+  const buf = c.createBuffer(1, len, c.sampleRate);
+  const data = buf.getChannelData(0);
+  for (let i = 0; i < len; i += 1) {
+    data[i] = (Math.random() * 2 - 1) * (1 - i / len);
+  }
+  const src = c.createBufferSource();
+  src.buffer = buf;
+
+  // 로우패스로 부드럽게(700Hz) + 작은 볼륨
+  const lp = c.createBiquadFilter();
+  lp.type = 'lowpass';
+  lp.frequency.value = 700;
+
+  const g = c.createGain();
+  g.gain.setValueAtTime(0.04, now);
+  g.gain.exponentialRampToValueAtTime(0.0001, now + dur);
+
+  src.connect(lp).connect(g).connect(c.destination);
+  src.start(now);
+  src.stop(now + dur + 0.02);
 };
 
 const INTERACTIVE = 'button, a[href], [role="button"], .app-button, [data-press]';
