@@ -52,7 +52,7 @@ export default function MedalShelf({ uid }) {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "14px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           <Trophy size={18} color="#7c3aed" />
-          <span style={{ fontSize: "0.95rem", fontWeight: 800, color: "#1e1b4b" }}>메달 진열장</span>
+          <span style={{ fontSize: "0.95rem", fontWeight: 800, color: "#1e1b4b" }}>Medal Shelf</span>
         </div>
         {/* 티어별 카운트 칩 */}
         <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>

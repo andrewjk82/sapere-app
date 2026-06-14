@@ -110,7 +110,7 @@ export default function MedalCelebrationModal({ uid, medals, onClose }) {
               <Confetti />
               {multi ? (
                 <div style={{ fontSize: "18px", fontWeight: 800, color: "#5b21b6", zIndex: 2 }}>
-                  🎉 메달 {described.length}개 획득!
+                  🎉 You earned {described.length} medals!
                 </div>
               ) : (
                 <motion.div
@@ -168,7 +168,7 @@ export default function MedalCelebrationModal({ uid, medals, onClose }) {
                     {described[0].label}
                   </div>
                   <div style={{ fontSize: "18px", fontWeight: 800, color: "#1e1b4b", marginTop: "6px" }}>
-                    레벨이 올랐어요 🎉
+                    You leveled up! 🎉
                   </div>
                   <div style={{ fontSize: "12px", color: "#64748b", marginTop: "8px", lineHeight: 1.5 }}>
                     {described[0].stageName}<br />
@@ -189,7 +189,7 @@ export default function MedalCelebrationModal({ uid, medals, onClose }) {
                   opacity: flying ? 0.7 : 1,
                 }}
               >
-                {flying ? "받는 중…" : multi ? "모두 받기 🏅" : "받기 🏅"}
+                {flying ? "Claiming…" : multi ? "Claim all 🏅" : "Claim 🏅"}
               </button>
             </div>
           </motion.div>

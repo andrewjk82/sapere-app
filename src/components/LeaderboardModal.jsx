@@ -116,10 +116,10 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
                 fontSize: '0.62rem', fontWeight: 900, color: '#c7d2fe',
                 textTransform: 'uppercase', letterSpacing: '0.08em',
               }}>
-                {currentUserName ? `${currentUserName} ·` : ''} 내 순위
+                {currentUserName ? `${currentUserName} ·` : ''} Your rank
               </span>
               <span style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
-                {myRank ? `#${myRank}` : 'Top 10 밖'}
+                {myRank ? `#${myRank}` : 'Outside top 10'}
               </span>
             </div>
             <div style={{ display: 'flex', alignItems: 'baseline', gap: '5px' }}>
@@ -283,7 +283,7 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
                               padding: '2px 5px', borderRadius: '999px',
                               boxShadow: '0 1px 4px rgba(0,0,0,0.4)',
                             }}>
-                              나
+                              YOU
                             </div>
                           )}
                         </div>
