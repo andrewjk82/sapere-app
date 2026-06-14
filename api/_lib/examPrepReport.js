@@ -322,7 +322,7 @@ export function examPrepD1TeacherEmail({ studentName, examLabel, examDate, profi
         ${row('Recent trend', hasData ? trendLabel : '—', trendColor)}
       </div>
       ${hasData ? scoreBar : ''}
-      ${weakBlock}
+      ${hasData ? weakBlock : ''}
       ${noDataBlock}
       <div style="margin-top:22px;">${button('View Student Profile', APP_URL, '#312e81')}</div>
     </div>`;
