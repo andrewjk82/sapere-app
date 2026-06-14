@@ -14,6 +14,7 @@ import {
   getThisWeekMonday,
 } from './services/calcProgressService';
 import { notifyTeacherCalcStuck } from './utils/challengeUtils';
+import { playSchoolBell } from './utils/schoolBell';
 // Route-level views are code-split so the main bundle only loads the
 // shell; each view is fetched on first navigation.
 //
@@ -796,6 +797,9 @@ function App() {
     if (introShownOnceRef.current) return undefined;
     introShownOnceRef.current = true;
     sessionStorage.setItem('sapere:intro-shown', '1');
+
+    // 앱 첫 진입 시 한국 학교 종소리(차임벨) 1회 재생
+    playSchoolBell();
 
     setShowOpeningIntro(true);
     setOpeningIntroVisible(true);
