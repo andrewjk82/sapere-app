@@ -262,21 +262,33 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
                             <img src={avatarUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                           </div>
 
-                          {/* XP — 캐릭터 오른쪽 */}
+                          {/* XP — 캐릭터 왼쪽, 크고 볼드한 금색 그라데이션 */}
                           <div style={{
-                            position: 'absolute', left: 'calc(100% + 4px)', top: '50%',
+                            position: 'absolute', right: 'calc(100% + 7px)', top: '50%',
                             transform: 'translateY(-50%)', whiteSpace: 'nowrap',
-                            background: 'rgba(0,0,0,0.55)', color: '#fde68a',
-                            fontSize: '0.6rem', fontWeight: 900, lineHeight: 1,
-                            padding: '2px 5px', borderRadius: '999px',
+                            display: 'flex', alignItems: 'baseline', gap: '2px',
                           }}>
-                            {xp.toLocaleString()}
+                            <span style={{
+                              fontFamily: '"Avenir Next", "Segoe UI", system-ui, sans-serif',
+                              fontSize: '0.95rem', fontWeight: 900, lineHeight: 1,
+                              fontStyle: 'italic', letterSpacing: '-0.02em',
+                              background: 'linear-gradient(180deg, #fff7d6, #fbbf24)',
+                              WebkitBackgroundClip: 'text', backgroundClip: 'text',
+                              WebkitTextFillColor: 'transparent',
+                              filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.65))',
+                            }}>
+                              {xp.toLocaleString()}
+                            </span>
+                            <span style={{
+                              fontSize: '0.5rem', fontWeight: 900, color: '#fde68a',
+                              textShadow: '0 1px 2px rgba(0,0,0,0.6)',
+                            }}>XP</span>
                           </div>
 
-                          {/* 본인 표시 */}
+                          {/* 본인 표시 — 캐릭터 오른쪽 */}
                           {isMe && (
                             <div style={{
-                              position: 'absolute', right: 'calc(100% + 4px)', top: '50%',
+                              position: 'absolute', left: 'calc(100% + 5px)', top: '50%',
                               transform: 'translateY(-50%)', whiteSpace: 'nowrap',
                               background: '#818cf8', color: '#fff',
                               fontSize: '0.55rem', fontWeight: 900, lineHeight: 1,
