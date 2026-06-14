@@ -1151,19 +1151,27 @@ export const Y11_CH6I_QUESTIONS = [
                     "dash": 2
                   },
                   {
-                    "type": "line",
-                    "through": [
-                      [
+                    "type": "point",
+                    "id": "rayEnd",
+                    "coords": [
+                      9,
+                      5.19
+                    ],
+                    "name": "",
+                    "label": {
+                      "offset": [
                         0,
                         0
-                      ],
-                      [
-                        9,
-                        5.19
                       ]
+                    }
+                  },
+                  {
+                    "type": "line",
+                    "through": [
+                      "A",
+                      "rayEnd"
                     ],
-                    "strokeColor": "blue",
-                    "name": "ray A"
+                    "strokeColor": "blue"
                   }
                 ]
               }
