@@ -48,41 +48,54 @@ const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, cur
     return () => unsub();
   }, [open]);
 
-  // ── Stadium sound: ambience on open (loop, soft) → cheer at the finish ──
-  // Leaderboard opens from a button tap, so playback is within a user gesture.
+  // ── Stadium ambience on open (loop, soft). Leaderboard opens from a button
+  // tap, so playback is within a user gesture (works on iOS). ──
   useEffect(() => {
     if (!open) return undefined;
-
-    let cheerTimer = null;
-    let fadeTimer = null;
     try {
       const ambience = new Audio('/sounds/stadium-ambience.mp3');
       ambience.loop = true;
-      ambience.volume = 0.22;
+      ambience.volume = 0.2;
       ambience.play().catch(() => {});
       ambienceRef.current = ambience;
-
-      // 결승 환호: 러너 출발(0.4s) + 질주(3.2s) 후
-      cheerTimer = setTimeout(() => {
-        try {
-          const cheer = new Audio('/sounds/crowd-cheer.mp3');
-          cheer.volume = 0.55;
-          cheer.play().catch(() => {});
-          cheerRef.current = cheer;
-        } catch { /* noop */ }
-        // 환호가 들어오면 배경음을 살짝 더 줄여 자연스럽게
-        if (ambienceRef.current) ambienceRef.current.volume = 0.12;
-      }, 400 + RUN_DURATION_MS);
     } catch { /* noop */ }
 
     return () => {
-      if (cheerTimer) clearTimeout(cheerTimer);
-      if (fadeTimer) clearTimeout(fadeTimer);
       [ambienceRef, cheerRef].forEach((r) => {
         if (r.current) { try { r.current.pause(); r.current.src = ''; } catch { /* noop */ } r.current = null; }
       });
     };
   }, [open]);
+
+  // ── Whistle when the runners start, big cheer when 1st place finishes ──
+  const soundCueRef = useRef(false);
+  useEffect(() => {
+    if (!open || !ready || soundCueRef.current) return undefined;
+    soundCueRef.current = true;
+
+    // 출발 호루라기 "삑!"
+    try {
+      const whistle = new Audio('/sounds/whistle.mp3');
+      whistle.volume = 0.5;
+      whistle.play().catch(() => {});
+    } catch { /* noop */ }
+
+    // 1등 도착(질주 종료) → 큰 환호
+    const cheerTimer = setTimeout(() => {
+      try {
+        const cheer = new Audio('/sounds/crowd-cheer.mp3');
+        cheer.volume = 1.0; // 1등 도착 환호는 크게
+        cheer.play().catch(() => {});
+        cheerRef.current = cheer;
+      } catch { /* noop */ }
+      if (ambienceRef.current) ambienceRef.current.volume = 0.1;
+    }, RUN_DURATION_MS);
+
+    return () => clearTimeout(cheerTimer);
+  }, [open, ready]);
+
+  // 모달이 닫히면 사운드 큐 리셋
+  useEffect(() => { if (!open) soundCueRef.current = false; }, [open]);
 
   if (!open) return null;
 
