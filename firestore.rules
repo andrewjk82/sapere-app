@@ -160,6 +160,13 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      // Exam Prep cross-device state (stats + history). Without this match the
+      // subcollection was unreachable, so persistStateToServer silently failed
+      // and the D-1 report always saw zero activity.
+      match /examPrep/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /hsc_results/{resultId} {
         allow read: if isAdmin()
           || (isSignedIn()

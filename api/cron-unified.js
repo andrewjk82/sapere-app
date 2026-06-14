@@ -204,13 +204,23 @@ export default async function handler(req, res) {
           ? student.examPrepD1SentFor : {};
         if (sentMap[dateKey] === tomorrowStr || student[`examPrepD1SentFor.${dateKey}`] === tomorrowStr) continue;
 
-        // Fetch exam prep summary from Firestore
+        // Fetch exam prep data. It is always keyed by the student's registered
+        // auth uid (the student app uses user.uid). When this candidate is a
+        // manual `students` record, resolve the linked registered uid so we
+        // read from the right place; otherwise the doc id IS the auth uid.
         let examSummary = null;
         let examPrepHistory = [];
         try {
-          const summarySnap = await db.collection('students').doc(studentId).collection('exam_prep').doc('summary').get();
+          let dataUid = studentId;
+          if (col === 'students') {
+            const linked = await db.collection('users')
+              .where('linkedManualStudentId', '==', studentId).limit(1).get()
+              .catch(() => ({ empty: true, docs: [] }));
+            if (!linked.empty) dataUid = linked.docs[0].id;
+          }
+          const summarySnap = await db.collection('students').doc(dataUid).collection('exam_prep').doc('summary').get();
           if (summarySnap.exists) examSummary = summarySnap.data();
-          const stateSnap = await db.collection('users').doc(studentId).collection('examPrep').doc('state').get();
+          const stateSnap = await db.collection('users').doc(dataUid).collection('examPrep').doc('state').get();
           if (stateSnap.exists) {
             const stateData = stateSnap.data();
             if (!examSummary && stateData.stats) examSummary = stateData.stats;
