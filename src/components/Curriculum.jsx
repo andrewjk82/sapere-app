@@ -46,6 +46,7 @@ import { Y11_CH6C_QUESTIONS } from '../constants/seedYear11Ch6CQuestions.js';
 import { Y11_CH6D_QUESTIONS } from '../constants/seedYear11Ch6DQuestions.js';
 import { Y11_CH6E_QUESTIONS } from '../constants/seedYear11Ch6EQuestions.js';
 import { Y11_CH6F_QUESTIONS } from '../constants/seedYear11Ch6FQuestions.js';
+import { Y11_CH6G_QUESTIONS } from '../constants/seedYear11Ch6GQuestions.js';
 import { Y11_CH1B_QUESTIONS } from '../constants/seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from '../constants/seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from '../constants/seedYear11Ch1DQuestions.js';
@@ -335,6 +336,16 @@ const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH6F_QUESTIONS,
     label: 'Y11 Ch6 · 6F Trigonometric identities',
+  },
+  {
+    chapterId: 'y11a-6',
+    chapterTitle: 'Chapter 6: Trigonometry',
+    topicId: 'y11a-6g',
+    topicCode: '6G',
+    topicTitle: 'Trigonometric equations',
+    year: 'Year 11',
+    seed: Y11_CH6G_QUESTIONS,
+    label: 'Y11 Ch6 · 6G Trigonometric equations',
   },
   {
     chapterId: 'y11a-5',
