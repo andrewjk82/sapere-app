@@ -4,6 +4,27 @@ import { clockSvg, digital12, digital24, timePhrase } from '../utils/clockSvg.js
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const pick = (arr) => arr[randomInt(0, arr.length - 1)];
 
+// Lookup of each calc/clock step's code + title, so generated questions carry
+// a readable topic label (e.g. "A3 · Commutative property") instead of all
+// collapsing to "Daily Calculation" in the post-quiz Topic breakdown.
+const STEP_META = (() => {
+  const map = {};
+  (CURRICULUM_DATA['Daily Calculation'] || []).forEach((stage) => {
+    (stage.topics || []).forEach((t) => {
+      if (t.id) map[t.id] = { code: t.code || '', title: t.title || '' };
+    });
+  });
+  return map;
+})();
+
+// Merge topicCode/topicTitle into a generated question based on its topicId.
+const withStepMeta = (q) => {
+  if (!q || !q.topicId) return q;
+  const meta = STEP_META[q.topicId];
+  if (!meta) return q;
+  return { ...q, topicCode: meta.code, topicTitle: meta.title };
+};
+
 const gcd = (a, b) => {
   a = Math.abs(a);
   b = Math.abs(b);
@@ -484,7 +505,7 @@ const generateClockQuestion = (topicId, timeLimit = 30) => {
 export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   // Clock Reading topics have their own generator (SVG clock faces + MCQ).
   if (typeof topicId === 'string' && topicId.startsWith('clock-')) {
-    return generateClockQuestion(topicId, timeLimit);
+    return withStepMeta(generateClockQuestion(topicId, timeLimit));
   }
   // Legacy Stage 5 topic ids → representative new step (assignments made
   // before the 28-step fraction curriculum still produce sensible questions).
@@ -2416,7 +2437,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
   }
 
-  return {
+  return withStepMeta({
     id: `calc-${Date.now()}-${randomInt(1000, 9999)}`,
     type: 'short_answer',
     question: q,
@@ -2426,7 +2447,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
     topicId: topicId,
     generatorType: 'calculation',
     timeLimit: timeLimit
-  };
+  });
 };
 
 // ── MCQ distractor generator for Y1-Y4 calc sprint ──────────────────────────
