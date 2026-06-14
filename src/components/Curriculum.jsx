@@ -9,6 +9,7 @@ import { auth, db } from '../firebase/config';
 import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, getDoc, query, where, getCountFromServer, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import { useProfile } from '../context/ProfileContext';
 import { useToast } from '../context/ToastContext';
 import { hasLesson, getLesson } from '../lessons/registry';
 import LessonPlayer from './lessons/LessonPlayer';
@@ -109,7 +110,9 @@ const Curriculum = () => {
   const [selectedYear, setSelectedYear] = useState('Year 11');
   const [selectedCourse, setSelectedCourse] = useState('Advanced');
   const [searchQuery, setSearchQuery] = useState('');
-  const [profile, setProfile] = useState(null);
+  // Profile comes from the single shared ProfileContext listener — no second
+  // onSnapshot on the same users/{uid} doc (was billed an extra time).
+  const { profile } = useProfile();
   const [loading, setLoading] = useState(true);
   const [curriculumRecords, setCurriculumRecords] = useState([]);
   const [isMigrating, setIsMigrating] = useState(false);
@@ -1331,28 +1334,21 @@ const Curriculum = () => {
 
   const handleUpdateHscProfile = async (fields) => {
     if (!user?.uid) return;
+    // ProfileContext's listener reflects the change; no optimistic local set.
     await updateDoc(doc(db, 'users', user.uid), fields);
-    setProfile((prev) => ({ ...prev, ...fields }));
   };
 
+  // Sync the year/course selectors from the shared profile (students only) —
+  // replaces a duplicate users/{uid} onSnapshot that used to live here.
   useEffect(() => {
-    if (!user || isAdmin) return;
-    const unsub = onSnapshot(doc(db, 'users', user.uid), (snap) => {
-      if (snap.exists()) {
-        const data = snap.data();
-        setProfile(data);
-        if (data.assignedYear) {
-          const y = Array.isArray(data.assignedYear) ? data.assignedYear[0] : data.assignedYear;
-          setSelectedYear(y);
-        }
-        if (data.assignedCourse) {
-          const c = Array.isArray(data.assignedCourse) ? data.assignedCourse[0] : data.assignedCourse;
-          setSelectedCourse(c);
-        }
-      }
-    });
-    return unsub;
-  }, [user, isAdmin]);
+    if (!profile || isAdmin) return;
+    if (profile.assignedYear) {
+      setSelectedYear(Array.isArray(profile.assignedYear) ? profile.assignedYear[0] : profile.assignedYear);
+    }
+    if (profile.assignedCourse) {
+      setSelectedCourse(Array.isArray(profile.assignedCourse) ? profile.assignedCourse[0] : profile.assignedCourse);
+    }
+  }, [profile, isAdmin]);
 
   useEffect(() => {
     if (!user?.uid || isAdmin || profile?.showHscGraph !== true) {

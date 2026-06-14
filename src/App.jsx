@@ -323,7 +323,7 @@ const OpeningIntro = ({ name = 'Andrew', greeting = 'Good morning', yearLevel = 
 function App() {
   // Triggering fresh deployment with version 1.1.2
   const { user, isAdmin, logout, refreshUser, resendVerificationEmail } = useAuth();
-  const { profile: sharedProfile } = useProfile();
+  const { profile: sharedProfile, profileLoading: sharedProfileLoading } = useProfile();
   const { showToast } = useToast();
 
   const [newVersionAvailable, setNewVersionAvailable] = useState(false);
@@ -736,24 +736,19 @@ function App() {
     } else {
       setProfileLoaded(false);
     }
-    const ref = doc(db, 'users', user.uid);
-    return onSnapshot(ref, (snap) => {
-      const nextProfile = snap.exists() ? snap.data() : null;
-      setProfile(nextProfile);
-      setProfileLoaded(true);
-      if (nextProfile) {
-        localCache.set(cacheKey, nextProfile);
-      } else {
-        localCache.remove(cacheKey);
-      }
-    }, (err) => {
-      console.error('Profile listener error:', err);
-      if (!cachedProfile) {
-        setProfile(null);
-        setProfileLoaded(true);
-      }
-    });
   }, [user?.uid]);
+
+  // Profile is driven by the single shared ProfileContext listener instead of
+  // a second onSnapshot on the same users/{uid} doc (was billed 2×). We still
+  // hydrate instantly from localCache above; this syncs live updates.
+  useEffect(() => {
+    if (!user?.uid || sharedProfileLoading) return;
+    setProfile(sharedProfile);
+    setProfileLoaded(true);
+    const cacheKey = getProfileCacheKey(user.uid);
+    if (sharedProfile) localCache.set(cacheKey, sharedProfile);
+    else localCache.remove(cacheKey);
+  }, [sharedProfile, sharedProfileLoading, user?.uid]);
 
   const fallbackUrl = useMemo(() => {
     if (user?.photoURL) return user.photoURL;
