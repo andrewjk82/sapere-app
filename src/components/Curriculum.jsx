@@ -340,7 +340,7 @@ const CHAPTER_SEED_REGISTRY = [
   {
     chapterId: 'y11a-6',
     chapterTitle: 'Chapter 6: Trigonometry',
-    topicId: 'y11a-6g',
+    topicId: 'y11a-6G',
     topicCode: '6G',
     topicTitle: 'Trigonometric equations',
     year: 'Year 11',
