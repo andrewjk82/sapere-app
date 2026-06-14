@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
@@ -30,6 +31,8 @@ import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
 import SecretNoteView from './challenge/SecretNoteView';
 import WorkingOutCanvas from './WorkingOutCanvas';
+import LessonPlayer from './lessons/LessonPlayer';
+import { getLesson } from '../lessons/registry';
 import {
   getStats, getTopicAnalysis,
   startRound, finishRound,
@@ -158,6 +161,10 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
   const q = questions[idx];
   const total = questions.length;
   const needsTeacher = q ? (q.type === 'teacher_review' || q.type === 'graph_sketch' || q.requiresManualGrading === true) : false;
+
+  // 현재 문제 토픽에 강의(authored lesson)가 있으면 "강의 보기" 링크를 노출
+  const lesson = getLesson(q?.topicId);
+  const [showLesson, setShowLesson] = useState(false);
 
   useEffect(() => {
     if (!q) return;
@@ -398,6 +405,28 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         )}
       </div>
       <MathView content={q.question} graphData={(q.type === 'graph_sketch' || q.type === 'teacher_review' || (q.requiresManualGrading && /(draw|sketch|construct)/i.test(q.question || ''))) ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '1.1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+
+      {/* Watch the lecture — shown when this topic has an authored lesson */}
+      {lesson && (
+        <button
+          onClick={() => setShowLesson(true)}
+          style={{
+            marginTop: '10px', alignSelf: 'flex-start',
+            display: 'inline-flex', alignItems: 'center', gap: '8px',
+            padding: '8px 14px', borderRadius: '999px',
+            background: '#fff', border: '1.5px solid #ddd6fe',
+            color: '#7c3aed', fontSize: '0.8rem', fontWeight: 800, cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(124,58,237,0.1)',
+          }}
+        >
+          <GraduationCap size={15} /> Watch the lecture
+        </button>
+      )}
+
+      {showLesson && lesson && createPortal(
+        <LessonPlayer lesson={lesson} onClose={() => setShowLesson(false)} />,
+        document.body,
+      )}
       <AnimatePresence>
         {showHint && q.hint && (
           <motion.div
