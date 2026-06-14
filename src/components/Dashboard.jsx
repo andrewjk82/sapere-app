@@ -324,7 +324,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <h4 style={{ margin: 0, fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{profile?.totalXP || 0}</h4>
                 </div>
               </div>
-              <div onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
+              <div data-press onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}><Calendar size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
                 {nextLesson ? (
@@ -334,7 +334,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
               </div>
-              <div onClick={() => lastLesson && setSelectedViewSession(lastLesson)} style={{ flex: 1, background: 'white', borderRadius: '28px', padding: '12px 24px', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden', cursor: lastLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
+              <div data-press onClick={() => lastLesson && setSelectedViewSession(lastLesson)} style={{ flex: 1, background: 'white', borderRadius: '28px', padding: '12px 24px', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden', cursor: lastLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.06, color: '#6366f1' }}><CheckCircle2 size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Previous Lesson</label>
                 {lastLesson ? (

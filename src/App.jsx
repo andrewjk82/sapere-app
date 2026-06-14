@@ -15,9 +15,13 @@ import {
 } from './services/calcProgressService';
 import { notifyTeacherCalcStuck } from './utils/challengeUtils';
 import { playSchoolBell } from './utils/schoolBell';
+import { installButtonFeedback } from './utils/uiFeedback';
 
 // 한 페이지 로드당 종소리 1회만 — React StrictMode 이중 마운트/재렌더 방지.
 let bellRungThisLoad = false;
+
+// 버튼 클릭음/햅틱 전역 설치 (모듈 로드 시 1회, 가드 내장)
+installButtonFeedback();
 // Route-level views are code-split so the main bundle only loads the
 // shell; each view is fetched on first navigation.
 //
