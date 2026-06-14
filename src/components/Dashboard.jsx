@@ -24,6 +24,12 @@ import JourneyMapSnapshot from './JourneyMapSnapshot';
 import { DailyNudgeCards } from './DailyNudgeCard';
 import MedalShelf from './MedalShelf';
 
+// 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
+const liftHover = {
+  onMouseEnter: (e) => { e.currentTarget.style.transform = 'translateY(-3px)'; },
+  onMouseLeave: (e) => { e.currentTarget.style.transform = ''; },
+};
+
 const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent, setActiveTab, onShowLeaderboard, onOpenJourneyMap }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
@@ -317,14 +323,14 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               />
               {/* Daily Calculation 메달 진열장 (Auto Mode) */}
               {profile?.calcAutoMode === true && <MedalShelf uid={user?.uid} />}
-              <div style={{ flex: 1, background: 'linear-gradient(135deg, #1e1b4b, #312e81)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(30,27,75,0.2)', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden', minHeight: '82px' }}>
+              <div {...liftHover} style={{ flex: 1, background: 'linear-gradient(135deg, #1e1b4b, #312e81)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(30,27,75,0.2)', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
                 <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}><Trophy size={100} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Total XP</label>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px' }}>
                   <h4 style={{ margin: 0, fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{profile?.totalXP || 0}</h4>
                 </div>
               </div>
-              <div data-press onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
+              <div data-press {...liftHover} onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}><Calendar size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
                 {nextLesson ? (
@@ -334,7 +340,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
               </div>
-              <div data-press onClick={() => lastLesson && setSelectedViewSession(lastLesson)} style={{ flex: 1, background: 'white', borderRadius: '28px', padding: '12px 24px', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden', cursor: lastLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px' }}>
+              <div data-press {...liftHover} onClick={() => lastLesson && setSelectedViewSession(lastLesson)} style={{ flex: 1, background: 'white', borderRadius: '28px', padding: '12px 24px', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden', cursor: lastLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.06, color: '#6366f1' }}><CheckCircle2 size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Previous Lesson</label>
                 {lastLesson ? (
