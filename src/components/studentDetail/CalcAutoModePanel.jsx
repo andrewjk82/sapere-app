@@ -8,7 +8,7 @@ import {
 } from "../../services/calcProgressService";
 
 const CALC_STAGES = (CURRICULUM_DATA["Daily Calculation"] || []).filter((s) =>
-  s.id.startsWith("calc-stage"),
+  s.id.startsWith("calc-stage") || s.id.startsWith("clock-stage"),
 );
 
 /**
