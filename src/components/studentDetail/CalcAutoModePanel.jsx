@@ -23,6 +23,7 @@ export default function CalcAutoModePanel({ uid }) {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState(null);
+  const [loadError, setLoadError] = useState(null);
 
   // 로컬 편집 상태: { [stageId]: { enabled, groups: { [groupKey]: currentStepId } } }
   const [config, setConfig] = useState({});
@@ -36,24 +37,32 @@ export default function CalcAutoModePanel({ uid }) {
       return;
     }
     (async () => {
-      const data = await ensureCalcProgress(uid);
-      if (cancelled) return;
-      setProgress(data);
-      // 서버 상태 → 로컬 편집 상태로 변환
-      const next = {};
-      CALC_STAGES.forEach((stage) => {
-        const saved = data?.stages?.[stage.id];
-        const groups = getGroupsForStage(stage.id);
-        const groupCfg = {};
-        Object.keys(groups).forEach((groupKey) => {
-          const savedStep = saved?.groups?.[groupKey]?.currentStepId;
-          // 기본값: 그룹의 첫 스텝
-          groupCfg[groupKey] = savedStep || groups[groupKey][0]?.id;
+      try {
+        const data = await ensureCalcProgress(uid);
+        if (cancelled) return;
+        setProgress(data);
+        // 서버 상태 → 로컬 편집 상태로 변환
+        const next = {};
+        CALC_STAGES.forEach((stage) => {
+          const saved = data?.stages?.[stage.id];
+          const groups = getGroupsForStage(stage.id);
+          const groupCfg = {};
+          Object.keys(groups).forEach((groupKey) => {
+            const savedStep = saved?.groups?.[groupKey]?.currentStepId;
+            // 기본값: 그룹의 첫 스텝
+            groupCfg[groupKey] = savedStep || groups[groupKey][0]?.id;
+          });
+          next[stage.id] = { enabled: Boolean(saved?.enabled), groups: groupCfg };
         });
-        next[stage.id] = { enabled: Boolean(saved?.enabled), groups: groupCfg };
-      });
-      setConfig(next);
-      setLoading(false);
+        setConfig(next);
+      } catch (e) {
+        if (!cancelled) {
+          console.error('Auto mode progress load failed:', e);
+          setLoadError(e?.code || e?.message || 'load-failed');
+        }
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
     })();
     return () => {
       cancelled = true;
@@ -116,6 +125,15 @@ export default function CalcAutoModePanel({ uid }) {
     return (
       <div style={{ padding: "20px", color: "#94a3b8", fontSize: "0.85rem" }}>
         Loading auto-mode progress…
+      </div>
+    );
+  }
+
+  if (loadError) {
+    return (
+      <div style={{ padding: "20px", color: "#b91c1c", fontSize: "0.85rem", fontWeight: 600 }}>
+        Could not load auto-mode progress ({loadError}). Please retry — if this
+        persists, the Firestore rules may need to be deployed.
       </div>
     );
   }

@@ -149,6 +149,17 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      // Per-student question pool (chapter-balanced daily selection + accuracy).
+      match /practice_pool/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
+      // Daily Calculation auto-mode progress (per-group adaptive levelling).
+      // Teacher (admin) configures it; the student app reads/writes its own.
+      match /calc_progress/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /hsc_results/{resultId} {
         allow read: if isAdmin()
           || (isSignedIn()
