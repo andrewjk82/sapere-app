@@ -2351,6 +2351,14 @@ const Curriculum = () => {
         if (agg && (!remoteVersion || agg.version >= remoteVersion) && !isMigrating) {
           if (cancelled) return;
           const merged = { ...cached.counts, ...agg.counts };
+          // Default any undefined visible chapter/topic count to 0 so that they are "defined"
+          // in the cache, preventing permanent cache invalidation and infinite fetch storms.
+          countChapterIds.forEach((id) => {
+            if (merged[id] === undefined) merged[id] = 0;
+          });
+          countTopicIds.forEach((id) => {
+            if (merged[id] === undefined) merged[id] = 0;
+          });
           setQuestionCounts(merged);
           saveCachedQuestionCounts(merged, remoteVersion || agg.version);
           return;
@@ -2382,6 +2390,13 @@ const Curriculum = () => {
         await runBatched(countTopicIds, 'topicId');
         if (cancelled) return;
         const merged = { ...cached.counts, ...nextCounts };
+        // Default any undefined visible chapter/topic count to 0 to prevent cache invalidation.
+        countChapterIds.forEach((id) => {
+          if (merged[id] === undefined) merged[id] = 0;
+        });
+        countTopicIds.forEach((id) => {
+          if (merged[id] === undefined) merged[id] = 0;
+        });
         setQuestionCounts(merged);
         saveCachedQuestionCounts(merged, remoteVersion);
         writeAggregatedCounts({ ...(agg?.counts || {}), ...nextCounts }, remoteVersion)
