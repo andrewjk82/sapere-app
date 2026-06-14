@@ -25,7 +25,7 @@ const STYLE = `
 }
 `;
 
-const LeaderboardModal = ({ open, onClose, currentUserId }) => {
+const LeaderboardModal = ({ open, onClose, currentUserId, currentUserXP = 0, currentUserName = '' }) => {
   const [leaders, setLeaders]   = useState([]);
   const [loading, setLoading]   = useState(true);
   const [ready,   setReady]     = useState(false); // delay runners until modal settled
@@ -46,6 +46,12 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
 
   const maxXP  = leaders[0]?.totalXP || 1;
   const count  = leaders.length;
+
+  // 내 순위/점수 (추가 쿼리 없이 — 점수는 프로필값, 순위는 top10 목록에서 계산)
+  const myIndex = leaders.findIndex((s) => s.id === currentUserId);
+  const myInTop = myIndex >= 0;
+  const myRank  = myInTop ? myIndex + 1 : null;
+  const myXP    = myInTop ? (leaders[myIndex].totalXP || 0) : currentUserXP;
 
   // Lane layout — fit all runners vertically
   const TRACK_TOP    = 110; // px from top of track area where lanes start
@@ -96,6 +102,34 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
             <X size={15} />
           </button>
         </div>
+
+        {/* ── My rank/score banner ── */}
+        {currentUserId && !loading && (
+          <div style={{
+            background: 'linear-gradient(135deg, #4338ca, #6366f1)',
+            padding: '10px 20px', flexShrink: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            borderTop: '1px solid rgba(255,255,255,0.12)',
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{
+                fontSize: '0.62rem', fontWeight: 900, color: '#c7d2fe',
+                textTransform: 'uppercase', letterSpacing: '0.08em',
+              }}>
+                {currentUserName ? `${currentUserName} ·` : ''} 내 순위
+              </span>
+              <span style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
+                {myRank ? `#${myRank}` : 'Top 10 밖'}
+              </span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '5px' }}>
+              <span style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fde68a', lineHeight: 1 }}>
+                {(myXP || 0).toLocaleString()}
+              </span>
+              <span style={{ fontSize: '0.62rem', fontWeight: 800, color: '#c7d2fe' }}>XP</span>
+            </div>
+          </div>
+        )}
 
         {/* ── Stadium + Track ── */}
         <div style={{ overflowY: 'auto', flexShrink: 1 }}>
@@ -209,22 +243,49 @@ const LeaderboardModal = ({ open, onClose, currentUserId }) => {
                           {rank <= 3 ? RANK_EMOJI[rank - 1] : rank}
                         </div>
 
-                        {/* Avatar with running animation */}
-                        <div style={{
-                          width:  `${AVATAR_SIZE}px`,
-                          height: `${AVATAR_SIZE}px`,
-                          borderRadius: '50%',
-                          overflow: 'hidden',
-                          border: isMe ? '2.5px solid #818cf8'
-                            : rank === 1 ? '2.5px solid #fbbf24'
-                            : rank === 2 ? '2.5px solid #e2e8f0'
-                            : rank === 3 ? '2.5px solid #f97316'
-                            : '2px solid rgba(255,255,255,0.5)',
-                          boxShadow: '0 3px 10px rgba(0,0,0,0.5)',
-                          background: '#fff',
-                          animation: ready ? `sap-run ${runSpeed}s ease-in-out infinite` : 'none',
-                        }}>
-                          <img src={avatarUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        {/* Avatar with running animation + XP / "나" badge */}
+                        <div style={{ position: 'relative' }}>
+                          <div style={{
+                            width:  `${AVATAR_SIZE}px`,
+                            height: `${AVATAR_SIZE}px`,
+                            borderRadius: '50%',
+                            overflow: 'hidden',
+                            border: isMe ? '3px solid #818cf8'
+                              : rank === 1 ? '2.5px solid #fbbf24'
+                              : rank === 2 ? '2.5px solid #e2e8f0'
+                              : rank === 3 ? '2.5px solid #f97316'
+                              : '2px solid rgba(255,255,255,0.5)',
+                            boxShadow: isMe ? '0 0 0 2px rgba(129,140,248,0.4), 0 3px 10px rgba(0,0,0,0.5)' : '0 3px 10px rgba(0,0,0,0.5)',
+                            background: '#fff',
+                            animation: ready ? `sap-run ${runSpeed}s ease-in-out infinite` : 'none',
+                          }}>
+                            <img src={avatarUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                          </div>
+
+                          {/* XP — 캐릭터 오른쪽 */}
+                          <div style={{
+                            position: 'absolute', left: 'calc(100% + 4px)', top: '50%',
+                            transform: 'translateY(-50%)', whiteSpace: 'nowrap',
+                            background: 'rgba(0,0,0,0.55)', color: '#fde68a',
+                            fontSize: '0.6rem', fontWeight: 900, lineHeight: 1,
+                            padding: '2px 5px', borderRadius: '999px',
+                          }}>
+                            {xp.toLocaleString()}
+                          </div>
+
+                          {/* 본인 표시 */}
+                          {isMe && (
+                            <div style={{
+                              position: 'absolute', right: 'calc(100% + 4px)', top: '50%',
+                              transform: 'translateY(-50%)', whiteSpace: 'nowrap',
+                              background: '#818cf8', color: '#fff',
+                              fontSize: '0.55rem', fontWeight: 900, lineHeight: 1,
+                              padding: '2px 5px', borderRadius: '999px',
+                              boxShadow: '0 1px 4px rgba(0,0,0,0.4)',
+                            }}>
+                              나
+                            </div>
+                          )}
                         </div>
 
                         {/* Shadow on track */}

@@ -1328,10 +1328,12 @@ function App() {
         )}
       </AnimatePresence>
 
-      <LeaderboardModal 
-        open={showLeaderboard} 
-        onClose={() => setShowLeaderboard(false)} 
-        currentUserId={user?.uid} 
+      <LeaderboardModal
+        open={showLeaderboard}
+        onClose={() => setShowLeaderboard(false)}
+        currentUserId={user?.uid}
+        currentUserXP={profile?.totalXP || 0}
+        currentUserName={profile?.firstName || profile?.displayName || ''}
         students={students}
       />
 
