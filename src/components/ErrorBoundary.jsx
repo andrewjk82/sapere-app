@@ -10,6 +10,18 @@ const isChunkLoadError = (msg) =>
   /failed to fetch dynamically imported module|error loading dynamically imported module|importing a module script failed|dynamically imported module|unable to preload|chunkloaderror|loading chunk .* failed/i
     .test(String(msg || ''));
 
+const RELOAD_KEY = 'sapere:eb-chunk-reload';
+
+// 60초 내 이미 자동 리로드했으면 다시 하지 않음(무한 루프 방지).
+// 리로드 후에도 청크가 또 실패하면 false → 사용자에게 Reload 버튼 화면을 보여줌.
+const canAutoReload = () => {
+  try {
+    return Date.now() - Number(sessionStorage.getItem(RELOAD_KEY) || 0) > 60_000;
+  } catch {
+    return false;
+  }
+};
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -18,25 +30,21 @@ class ErrorBoundary extends React.Component {
 
   static getDerivedStateFromError(error) {
     const msg = String(error?.message || error || '');
-    // 청크 로드 에러면 깨진 화면 대신 "업데이트 중" 상태로 표시하고 자동 리로드.
-    return { hasError: true, error, recovering: isChunkLoadError(msg) };
+    // 청크 에러 + 아직 자동 리로드 여력이 있을 때만 "업데이트 중" 화면.
+    // 그 외(또는 리로드 후 재실패)는 일반 에러 화면(Reload 버튼 포함).
+    return { hasError: true, error, recovering: isChunkLoadError(msg) && canAutoReload() };
   }
 
   componentDidCatch(error, info) {
     console.error('UI crash caught by ErrorBoundary:', error, info?.componentStack || info);
 
     // 새 배포로 청크 해시가 바뀌어 옛 빌드가 모듈을 못 받는 경우 → 1회 자동 리로드.
-    // sessionStorage 가드로 무한 루프 방지(60초 내 1회만).
     const msg = String(error?.message || error || '');
-    if (!isChunkLoadError(msg)) return;
+    if (!isChunkLoadError(msg) || !canAutoReload()) return;
     try {
-      const KEY = 'sapere:eb-chunk-reload';
-      const last = Number(sessionStorage.getItem(KEY) || 0);
-      if (Date.now() - last > 60_000) {
-        sessionStorage.setItem(KEY, String(Date.now()));
-        const sep = window.location.search ? '&' : '?';
-        window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
-      }
+      sessionStorage.setItem(RELOAD_KEY, String(Date.now()));
+      const sep = window.location.search ? '&' : '?';
+      window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
     } catch { /* sessionStorage unavailable — fall back to manual Reload */ }
   }
 
