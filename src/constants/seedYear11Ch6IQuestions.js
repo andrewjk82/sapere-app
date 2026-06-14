@@ -1010,7 +1010,7 @@ export const Y11_CH6I_QUESTIONS = [
               "C"
             ],
             "fillColor": "none",
-            "strokeColor": "blue"
+            "strokeColor": "black"
           },
           {
             "type": "angle",

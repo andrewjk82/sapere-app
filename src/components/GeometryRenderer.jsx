@@ -214,8 +214,9 @@ const GeometryRenderer = ({ data, style }) => {
                 visible:      el.visible !== false,
                 withLabel:    !!(el.name),
                 label: {
-                  fontSize:      labelOpts.fontSize ?? 13,
-                  fontFamily:    '"Outfit", "Inter", sans-serif',
+                  fontSize:      labelOpts.fontSize ?? 14,
+                  fontFamily:    labelOpts.fontFamily ?? '"Times New Roman", "Georgia", serif',
+                  fontStyle:     labelOpts.fontStyle ?? 'italic',
                   strokeColor:   resolveColor(labelOpts.color ?? 'black'),
                   offset:        labelOpts.offset ?? [10, 10],
                   autoPosition:  false,
@@ -336,7 +337,8 @@ const GeometryRenderer = ({ data, style }) => {
                 fillOpacity: el.fillOpacity ?? 0,
                 label: {
                   fontSize:     labelOpts.fontSize ?? 14,
-                  fontFamily:   '"Outfit", "Inter", sans-serif',
+                  fontFamily:   labelOpts.fontFamily ?? '"Outfit", "Inter", sans-serif',
+                  fontStyle:    labelOpts.fontStyle ?? 'normal',
                   strokeColor:  resolveColor(labelOpts.color ?? 'black'),
                   offset:       labelOpts.offset ?? [0, 0],
                   autoPosition: false,
@@ -398,10 +400,12 @@ const GeometryRenderer = ({ data, style }) => {
             // ──────────────────────────────────────────────────────────────────
             case 'text': {
               const [tx, ty] = el.coords ?? [0, 0];
+              const isVar = /^[a-zA-Z]$/.test(String(el.content).trim());
               jxgEl = board.create('text', [tx, ty, el.content ?? ''], {
                 fixed:       true,
-                fontSize:    el.fontSize ?? 13,
-                fontFamily:  '"Outfit", "Inter", sans-serif',
+                fontSize:    el.fontSize ?? 14,
+                fontFamily:  el.fontFamily ?? (isVar ? '"Times New Roman", "Georgia", serif' : '"Outfit", "Inter", sans-serif'),
+                fontStyle:   el.fontStyle ?? (isVar ? 'italic' : 'normal'),
                 strokeColor: resolveColor(el.color ?? 'black'),
                 anchorX:     el.anchorX ?? 'middle',
                 anchorY:     el.anchorY ?? 'middle',
@@ -475,7 +479,7 @@ const GeometryRenderer = ({ data, style }) => {
         margin:       '0 auto',
         borderRadius: '16px',
         boxShadow:    'none',
-        border:       '1px solid #e2e8f0',
+        border:       'none',
         background:   '#ffffff',
         overflow:     'hidden',
         ...style,
