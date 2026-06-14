@@ -73,7 +73,7 @@ const stageIndex = (t) => (t < 0.2 ? 0 : t < 0.5 ? 1 : t < 0.78 ? 2 : 3);
 /* ---- one-time stylesheet injection -------------------------------------- */
 const STYLE_ID = 'daily-nudge-styles';
 const KEYFRAMES = `
-.dn-rise { animation: dn-rise .5s cubic-bezier(.22,1,.36,1) both; }
+.dn-rise { animation: dn-rise .5s cubic-bezier(.22,1,.36,1) backwards; }
 @keyframes dn-rise { from { transform: translateY(14px) scale(.98); } to { transform: none; } }
 @keyframes dn-bob { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-5px) rotate(-1.5deg); } }
 @keyframes dn-shake {
@@ -178,13 +178,19 @@ function NudgeCard({ task, t, onOpen }) {
   const open = () => { if (onOpen) onOpen(task); else if (task.href) window.location.assign(task.href); };
 
   return (
-    <div className="dn-rise" style={{
-      '--dn-accent': accent, position: 'relative', overflow: 'hidden',
-      display: 'flex', alignItems: 'center', gap: 16, padding: '16px 18px',
-      borderRadius: 24, border: '1px solid #eceaf6', background: '#fff',
-      boxShadow: '0 12px 30px rgba(99,102,241,0.10)',
-      fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
-    }}>
+    <div
+      className="dn-rise"
+      onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-3px)'; }}
+      onMouseLeave={(e) => { e.currentTarget.style.transform = ''; }}
+      style={{
+        '--dn-accent': accent, position: 'relative', overflow: 'hidden',
+        display: 'flex', alignItems: 'center', gap: 16, padding: '16px 18px',
+        borderRadius: 24, border: '1px solid #eceaf6', background: '#fff',
+        boxShadow: '0 12px 30px rgba(99,102,241,0.10)',
+        fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
+        transition: 'transform 0.2s, box-shadow 0.2s',
+      }}
+    >
       {/* avatar tile — the part whose colour escalates as the deadline nears */}
       <div style={{ position: 'relative', width: 68, height: 68, flexShrink: 0, display: 'grid', placeItems: 'center' }}>
         <div style={{
