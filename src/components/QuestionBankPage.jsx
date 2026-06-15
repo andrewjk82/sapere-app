@@ -273,14 +273,64 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                     </div>
                     {sq.type === 'multiple_choice' ? (
                       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
-                        {(sq.options || []).map((opt, oIdx) => (
-                          <div key={oIdx} style={{ padding: '12px 16px', borderRadius: '12px', border: '2px solid #f1f5f9', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.85rem' }}>
-                            {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
-                          </div>
-                        ))}
+                        {(sq.options || []).map((opt, oIdx) => {
+                          const isCorrectOpt = !Number.isNaN(Number(sq.answer)) && oIdx === Number(sq.answer);
+                          return (
+                            <div key={oIdx} style={{ padding: '12px 16px', borderRadius: '12px', border: `2px solid ${isCorrectOpt ? '#10b981' : '#f1f5f9'}`, background: isCorrectOpt ? '#f0fdf4' : '#fff', color: isCorrectOpt ? '#166534' : '#64748b', fontWeight: 800, fontSize: '0.85rem' }}>
+                              {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                            </div>
+                          );
+                        })}
                       </div>
                     ) : (
                       <input type="text" placeholder="Type answer..." disabled style={{ width: '100%', padding: '12px 16px', borderRadius: '12px', border: '2px solid #f1f5f9', background: '#fff', fontWeight: 700, fontSize: '0.95rem' }} />
+                    )}
+
+                    {/* Part answer (model answer for non-MC parts) */}
+                    {sq.type !== 'multiple_choice' && sq.answer != null && String(sq.answer).trim() !== '' && (
+                      <div style={{ marginTop: '12px', padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
+                        Answer: <MathView content={String(sq.answer)} style={{ display: 'inline', fontWeight: 800 }} />
+                      </div>
+                    )}
+
+                    {/* Part step-by-step solution */}
+                    {Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0 && (
+                      <div style={{ marginTop: '12px', padding: '16px 20px', borderRadius: '16px', background: '#fafaff', border: '1px solid #e0e7ff' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+                          <div style={{ width: '26px', height: '26px', borderRadius: '8px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff' }}>
+                            <Lightbulb size={13} />
+                          </div>
+                          <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.85rem' }}>Step-by-step solution</div>
+                          <span style={{ marginLeft: 'auto', fontSize: '0.68rem', fontWeight: 800, color: '#94a3b8' }}>{sq.solutionSteps.length} steps</span>
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                          {sq.solutionSteps.map((step, si) => (
+                            <div key={si} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.72rem', flexShrink: 0, marginTop: '2px' }}>
+                                {si + 1}
+                              </div>
+                              <div style={{ flex: 1, minWidth: 0 }}>
+                                {step.explanation && (
+                                  <MathView content={step.explanation} style={{ fontSize: '0.88rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6, marginBottom: step.workingOut ? '6px' : 0 }} />
+                                )}
+                                {step.workingOut && (
+                                  <div style={{ padding: '9px 13px', borderRadius: '10px', background: '#fff', border: '1px solid #eef2f7' }}>
+                                    <MathView content={step.workingOut} style={{ fontSize: '0.9rem', color: '#1e1b4b' }} />
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Part solution (only when there are no step-by-step entries) */}
+                    {sq.solution && !(Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0) && (
+                      <div style={{ marginTop: '12px', padding: '16px 20px', borderRadius: '16px', background: '#fafaff', border: '1px solid #e2e8f0' }}>
+                        <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Solution</div>
+                        <MathView content={sq.solution} style={{ color: '#334155', fontSize: '0.9rem', lineHeight: 1.6 }} />
+                      </div>
                     )}
                   </div>
                 ))}
