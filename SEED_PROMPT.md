@@ -108,8 +108,8 @@ export const Y8_CH1_QUESTIONS = [
 | `solution` | string | 풀이 설명문(모범답안). teacher_review는 여기에 모범답안 작성 |
 | `t` | string | 서브토픽 제목 |
 | `hint` | string | 힌트 한 줄 |
-| `solutionSteps` | array | 단계별 working out: `[{ "explanation": "단계 설명", "workingOut": "수식", "graphData": null }, ...]` ★ "Sketch the graph" 류의 문제에서 정답이 되는 그래프(`graphData`)는 절대로 최상위(`question` 객체)에 넣지 말고, 반드시 `solutionSteps`의 마지막 단계에만 넣으세요 (미리 답이 보이는 현상 방지). |
-| `graphData` | object\|null | 문제 본문과 함께 보여져야 할 그림. 없으면 `null`. ★ (중요) 문제의 정답이 되는 그래프(예: "Sketch each graph")는 여기에 넣으면 안 됩니다! 대신 `solutionSteps` 안에 넣으세요. |
+| `solutionSteps` | array | 단계별 working out: `[{ "explanation": "단계 설명", "workingOut": "수식", "graphData": null }, ...]` ★ "Sketch the graph" 류의 문제나 삼각방정식(예: "Solve cos x = 1/2")처럼 그래프가 정답의 힌트를 다 보여주는 문제의 경우, 정답이 되는 그래프(`graphData`)는 절대로 최상위(`question` 객체)에 넣지 말고, 반드시 `solutionSteps`의 마지막 단계에만 넣으세요 (미리 답이 보이는 현상 방지). |
+| `graphData` | object\|null | 문제 본문과 함께 보여져야 할 그림. 없으면 `null`. ★ (중요) 문제의 정답이 되는 그래프나 풀이 힌트가 들어있는 단위원/함수 그래프는 여기에 넣으면 안 됩니다! 대신 `solutionSteps`의 마지막 단계에 넣으세요 (미리 답이 보이는 현상 방지). |
 | `subQuestions` | array | 서브문제 ([4] 참고). `SPLIT_SUB_QUESTIONS = true`일 때만 적용. 없으면 생략 |
 
 ### 중요 텍스트 및 데이터 무결성 규칙 (CRITICAL RULES)
@@ -145,11 +145,11 @@ export const Y8_CH1_QUESTIONS = [
 
 `SPLIT_SUB_QUESTIONS` 설정값에 따라 동작합니다.
 
-- **`true`**: 문제 안에 a), b) 등 서브문제가 있으면 `subQuestions` 배열로 분리합니다.
-  각 서브문제도 동일한 필드 구조(id, type, difficulty, timeLimit, question, a, solutionSteps 등)를 따릅니다.
-- **`false`**: 서브문제를 분리하지 않고 `question` 텍스트 안에 그대로 포함합니다.
-
-설정값에서 지정한 **개별 top-level 문제로 분리할 문제 번호**(예: Q1, Q6, Q8, Q9)는 `subQuestions` 대신 각각을 별개의 top-level 문제로 분리하고 id를 따로 부여합니다 (예: `y9-3a-q1a`, `y9-3a-q1b`).
+- **`true` (항상 권장)**: 문제 안에 a), b) 등 서브문제가 있으면 `subQuestions` 배열에 넣지 말고, **각각을 별개의 top-level 문제로 완벽히 분리**하여 시드 배열에 평탄화(Flatten)하여 추가합니다.
+  - 각각 고유한 id를 부여합니다 (예: `y11a-6k-q5a`, `y11a-6k-q5b`).
+  - **중요**: 각 분리된 개별 문제의 본문(`q`)에는 상위 질문의 전체 상황 설명(예: "헬리콥터가 도로 위를 비행 중이다...")이 누락 없이 접두사(Prefix)로 포함되어 각 문제가 독립적으로 완전해야 합니다.
+  - **중요**: 상위 질문에 있던 기하학적 다이어그램(`graphData`)은 분리된 모든 개별 문제에 **동일하게 복사**되어 누락되지 않아야 합니다.
+- **`false`**: 서브문제를 분리하지 않고 `question` 텍스트 안에 그대로 포함합니다. (단, UX 향상을 위해 가급적 true 방식을 이용해 개별 문제로 분리하세요.)
 
 ---
 
@@ -266,6 +266,11 @@ export const Y8_CH1_QUESTIONS = [
 5. **boundingbox 여백** — 텍스트가 잘리지 않게 20% 이상 여유
 6. **부등식 경계선** — 등호 없으면 `"dash": 2` (점선)
 7. **함수 화살표** — 정의역 경계가 있으면 `firstArrow: false` 또는 `lastArrow: false`
+8. **★ [초민감 규칙] Firestore 2D 중첩 배열 오류 방지**:
+   - Firestore는 객체 내부에 nested array (2차원 배열, 배열 안의 배열)의 저장을 지원하지 않습니다.
+   - 따라서 `"coords": [[0, 0], [1, 0]]` (축(axis)의 좌표 정의) 이나 `"through": [[-4, -4], [4, 4]]` (선(line)의 통과점 좌표 정의) 같은 표현을 **절대로 사용해서는 안 됩니다.**
+   - **해결책**: 항상 flat 1D 배열만 사용하는 helper 점(`point`)을 미리 정의하고(예: `id: "X1", coords: [-4, 0], visible: false`), 이 점들의 ID를 참조하여 세그먼트나 라인을 그리세요 (예: `"from": "X1", "to": "X2"`, 또는 `"through": ["X1", "X2"]`).
+   - 축(`axis`)은 GeometryRenderer가 직접 렌더링하지 않으므로, 축 대신 `visible: false`로 감춘 보조 점 두 개를 잇는 화살표(`arrow`)나 세그먼트(`segment`)를 이용해 좌표축을 커스텀 정의하세요.
 
 ---
 
