@@ -39,6 +39,7 @@ import { Y11_CH6H_QUESTIONS } from './seedYear11Ch6HQuestions.js';
 import { Y11_CH6I_QUESTIONS } from './seedYear11Ch6IQuestions.js';
 import { Y11_CH6J_QUESTIONS } from './seedYear11Ch6JQuestions.js';
 import { Y11_CH6K_QUESTIONS } from './seedYear11Ch6KQuestions.js';
+import { Y11_CH7B_QUESTIONS } from './seedYear11Ch7BQuestions.js';
 import { Y11_CH1B_QUESTIONS } from './seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from './seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from './seedYear11Ch1DQuestions.js';
@@ -359,6 +360,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH6K_QUESTIONS,
     label: 'Y11 Ch6 · 6K Revision',
+  },
+  {
+    chapterId: 'y11a-7',
+    chapterTitle: 'Chapter 7: Lines in the coordinate plane',
+    topicId: 'y11a-7B',
+    topicCode: '7B',
+    topicTitle: 'Gradients of line segments and lines',
+    year: 'Year 11',
+    seed: Y11_CH7B_QUESTIONS,
+    label: 'Y11 Ch7 · 7B Gradients of line segments and lines',
   },
   {
     chapterId: 'y11a-5',
