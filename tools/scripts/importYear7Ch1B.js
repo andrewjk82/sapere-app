@@ -33,12 +33,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the paired numbers.",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 4\n+ 2 6\n-----\n  6 0</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 4\n+ 2 6\n-----\n  6 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining number.\nTherefore, the total sum is \\(117\\).",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    6 0\n+   5 7\n-------\n  1 1 7</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    6 0\n+   5 7\n-------\n  1 1 7</pre>",
         "graphData": null
       }
     ]
@@ -65,12 +65,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the paired numbers.",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 2\n+ 1 8\n-----\n  5 0</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 2\n+ 1 8\n-----\n  5 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining number.\nTherefore, the sum is \\(69\\).",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  5 0\n+ 1 9\n-----\n  6 9</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  5 0\n+ 1 9\n-----\n  6 9</pre>",
         "graphData": null
       }
     ]
@@ -97,12 +97,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the paired numbers.",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    3 4\n+   6 6\n-------\n  1 0 0</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    3 4\n+   6 6\n-------\n  1 0 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining number.\nTherefore, the sum is \\(143\\).",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 0 0\n+   4 3\n-------\n  1 4 3</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 0 0\n+   4 3\n-------\n  1 4 3</pre>",
         "graphData": null
       }
     ]
@@ -129,12 +129,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the pairs.",
-        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  4 8\n+ 1 2\n-----\n  6 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 3\n+ 2 7\n-----\n  4 0</pre>\n</div>\n</div>",
+        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  4 8\n+ 1 2\n-----\n  6 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 3\n+ 2 7\n-----\n  4 0</pre>\n</div>\n</div>",
         "graphData": null
       },
       {
         "explanation": "Find the total sum.\nTherefore, the sum is \\(100\\).",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    6 0\n+   4 0\n-------\n  1 0 0</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    6 0\n+   4 0\n-------\n  1 0 0</pre>",
         "graphData": null
       }
     ]
@@ -161,7 +161,7 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the results of the two pairs.\nTherefore, the sum is \\(170\\).",
-        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  4 7\n+ 2 3\n-----\n  7 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    1 8\n+   8 2\n-------\n  1 0 0</pre>\n</div>\n</div>\n<div style=\"margin-top: 15px;\">\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Total:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    7 0\n+ 1 0 0\n-------\n  1 7 0</pre>\n</div>",
+        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  4 7\n+ 2 3\n-----\n  7 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    1 8\n+   8 2\n-------\n  1 0 0</pre>\n</div>\n</div>\n<div style=\"margin-top: 15px;\">\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Total:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    7 0\n+ 1 0 0\n-------\n  1 7 0</pre>\n</div>",
         "graphData": null
       }
     ]
@@ -188,12 +188,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the pairs.",
-        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    9 8\n+   1 2\n-------\n  1 1 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 6\n+ 4 4\n-----\n  8 0</pre>\n</div>\n</div>",
+        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    9 8\n+   1 2\n-------\n  1 1 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 6\n+ 4 4\n-----\n  8 0</pre>\n</div>\n</div>",
         "graphData": null
       },
       {
         "explanation": "Add the two partial sums.\nTherefore, the sum is \\(190\\).",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 1 0\n+   8 0\n-------\n  1 9 0</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 1 0\n+   8 0\n-------\n  1 9 0</pre>",
         "graphData": null
       }
     ]
@@ -210,12 +210,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using the addition algorithm: \\(784 + 158\\)",
     "answer": "942",
-    "solution": "Step 1: Set up the column addition.\nAlign the numbers by their place values (Units, Tens, Hundreds):\n<pre style=\"font-family: monospace; line-height: 1.2;\">  7 8 4\n+ 1 5 8\n-------</pre>Step 2: Add the Units column.\n\\[4 + 8 = 12\\]\nWrite down \\(2\\) in the Units place and carry over \\(1\\) to the Tens column.\nStep 3: Add the Tens column (including the carry-over).\n\\[8 + 5 + 1\\text{ (carry)} = 14\\]\nWrite down \\(4\\) in the Tens place and carry over \\(1\\) to the Hundreds column.\nStep 4: Add the Hundreds column (including the carry-over).\n\\[7 + 1 + 1\\text{ (carry)} = 9\\]\nWrite down \\(9\\) in the Hundreds place.\n<pre style=\"font-family: monospace; line-height: 1.2;\">  7 8 4\n+ 1 5 8\n-------\n  9 4 2</pre>Therefore, the sum is \\(942\\).",
+    "solution": "Step 1: Set up the column addition.\nAlign the numbers by their place values (Units, Tens, Hundreds):\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  7 8 4\n+ 1 5 8\n-------</pre>Step 2: Add the Units column.\n\\[4 + 8 = 12\\]\nWrite down \\(2\\) in the Units place and carry over \\(1\\) to the Tens column.\nStep 3: Add the Tens column (including the carry-over).\n\\[8 + 5 + 1\\text{ (carry)} = 14\\]\nWrite down \\(4\\) in the Tens place and carry over \\(1\\) to the Hundreds column.\nStep 4: Add the Hundreds column (including the carry-over).\n\\[7 + 1 + 1\\text{ (carry)} = 9\\]\nWrite down \\(9\\) in the Hundreds place.\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  7 8 4\n+ 1 5 8\n-------\n  9 4 2</pre>Therefore, the sum is \\(942\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
         "explanation": "Set up the column addition.",
-        "workingOut": "Align the numbers by their place values (Units, Tens, Hundreds):\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">7 8 4\n+ 1 5 8\n-------</pre>",
+        "workingOut": "Align the numbers by their place values (Units, Tens, Hundreds):\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">7 8 4\n+ 1 5 8\n-------</pre>",
         "graphData": null
       },
       {
@@ -230,7 +230,7 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the Hundreds column (including the carry-over).\nTherefore, the sum is \\(942\\).",
-        "workingOut": "\\[7 + 1 + 1\\text{ (carry)} = 9\\]\nWrite down \\(9\\) in the Hundreds place.\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">7 8 4\n+ 1 5 8\n-------\n  9 4 2</pre>",
+        "workingOut": "\\[7 + 1 + 1\\text{ (carry)} = 9\\]\nWrite down \\(9\\) in the Hundreds place.\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">7 8 4\n+ 1 5 8\n-------\n  9 4 2</pre>",
         "graphData": null
       }
     ]
@@ -247,17 +247,17 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using the addition algorithm: \\(4857 + 4736\\)",
     "answer": "9593",
-    "solution": "Step 1: Set up vertical column addition.\nAlign by place value:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  4 8 5 7\n+ 4 7 3 6\n---------</pre>Step 2: Add column by column from right to left.\n• Units: \\(7 + 6 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• Tens: \\(5 + 3 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n• Hundreds: \\(8 + 7 = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• Thousands: \\(4 + 4 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  4 8 5 7\n+ 4 7 3 6\n---------\n  9 5 9 3</pre>Therefore, the sum is \\(9593\\).",
+    "solution": "Step 1: Set up vertical column addition.\nAlign by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  4 8 5 7\n+ 4 7 3 6\n---------</pre>Step 2: Add column by column from right to left.\n• Units: \\(7 + 6 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• Tens: \\(5 + 3 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n• Hundreds: \\(8 + 7 = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• Thousands: \\(4 + 4 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  4 8 5 7\n+ 4 7 3 6\n---------\n  9 5 9 3</pre>Therefore, the sum is \\(9593\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
         "explanation": "Set up vertical column addition.",
-        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8 5 7\n+ 4 7 3 6\n---------</pre>",
+        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">4 8 5 7\n+ 4 7 3 6\n---------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add column by column from right to left.\nTherefore, the sum is \\(9593\\).",
-        "workingOut": "• <strong>Units</strong>: \\(7 + 6 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(5 + 3 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n• <strong>Hundreds</strong>: \\(8 + 7 = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(4 + 4 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8 5 7\n+ 4 7 3 6\n---------\n  9 5 9 3</pre>",
+        "workingOut": "• <strong>Units</strong>: \\(7 + 6 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(5 + 3 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n• <strong>Hundreds</strong>: \\(8 + 7 = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(4 + 4 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">4 8 5 7\n+ 4 7 3 6\n---------\n  9 5 9 3</pre>",
         "graphData": null
       }
     ]
@@ -274,17 +274,17 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using the addition algorithm: \\(2088 + 3047 + 5679\\)",
     "answer": "10814",
-    "solution": "Step 1: Set up the addition of three numbers.\nAlign by place value:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------</pre>Step 2: Add from right to left.\n• Units: \\(8 + 7 + 9 = 24 \\rightarrow\\) Write \\(4\\), carry \\(2\\).\n• Tens: \\(8 + 4 + 7 + 2\\text{ (carry)} = 21 \\rightarrow\\) Write \\(1\\), carry \\(2\\).\n• Hundreds: \\(0 + 0 + 6 + 2\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n• Thousands: \\(2 + 3 + 5 = 10 \\rightarrow\\) Write \\(10\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------\n 10 8 1 4</pre>Therefore, the sum is \\(10814\\).",
+    "solution": "Step 1: Set up the addition of three numbers.\nAlign by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------</pre>Step 2: Add from right to left.\n• Units: \\(8 + 7 + 9 = 24 \\rightarrow\\) Write \\(4\\), carry \\(2\\).\n• Tens: \\(8 + 4 + 7 + 2\\text{ (carry)} = 21 \\rightarrow\\) Write \\(1\\), carry \\(2\\).\n• Hundreds: \\(0 + 0 + 6 + 2\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n• Thousands: \\(2 + 3 + 5 = 10 \\rightarrow\\) Write \\(10\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------\n 10 8 1 4</pre>Therefore, the sum is \\(10814\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
         "explanation": "Set up the addition of three numbers.",
-        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------</pre>",
+        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add from right to left.\nTherefore, the sum is \\(10814\\).",
-        "workingOut": "• <strong>Units</strong>: \\(8 + 7 + 9 = 24 \\rightarrow\\) Write \\(4\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(8 + 4 + 7 + 2\\text{ (carry)} = 21 \\rightarrow\\) Write \\(1\\), carry \\(2\\).\n• <strong>Hundreds</strong>: \\(0 + 0 + 6 + 2\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n• <strong>Thousands</strong>: \\(2 + 3 + 5 = 10 \\rightarrow\\) Write \\(10\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------\n 10 8 1 4</pre>",
+        "workingOut": "• <strong>Units</strong>: \\(8 + 7 + 9 = 24 \\rightarrow\\) Write \\(4\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(8 + 4 + 7 + 2\\text{ (carry)} = 21 \\rightarrow\\) Write \\(1\\), carry \\(2\\).\n• <strong>Hundreds</strong>: \\(0 + 0 + 6 + 2\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n• <strong>Thousands</strong>: \\(2 + 3 + 5 = 10 \\rightarrow\\) Write \\(10\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------\n 10 8 1 4</pre>",
         "graphData": null
       }
     ]
@@ -301,17 +301,17 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using the addition algorithm: \\(48 + 730 + 95\\)",
     "answer": "873",
-    "solution": "Step 1: Arrange vertically.\nAlign Units under Units, Tens under Tens, etc.:\n<pre style=\"font-family: monospace; line-height: 1.2;\">    4 8\n  7 3 0\n+   9 5\n-------</pre>Step 2: Add columns from right to left.\n• Units: \\(8 + 0 + 5 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• Tens: \\(4 + 3 + 9 + 1\\text{ (carry)} = 17 \\rightarrow\\) Write \\(7\\), carry \\(1\\).\n• Hundreds: \\(7 + 1\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">    4 8\n  7 3 0\n+   9 5\n-------\n  8 7 3</pre>Therefore, the sum is \\(873\\).",
+    "solution": "Step 1: Arrange vertically.\nAlign Units under Units, Tens under Tens, etc.:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    4 8\n  7 3 0\n+   9 5\n-------</pre>Step 2: Add columns from right to left.\n• Units: \\(8 + 0 + 5 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• Tens: \\(4 + 3 + 9 + 1\\text{ (carry)} = 17 \\rightarrow\\) Write \\(7\\), carry \\(1\\).\n• Hundreds: \\(7 + 1\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    4 8\n  7 3 0\n+   9 5\n-------\n  8 7 3</pre>Therefore, the sum is \\(873\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
         "explanation": "Arrange vertically.",
-        "workingOut": "Align Units under Units, Tens under Tens, etc.:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8\n  7 3 0\n+   9 5\n-------</pre>",
+        "workingOut": "Align Units under Units, Tens under Tens, etc.:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">4 8\n  7 3 0\n+   9 5\n-------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add columns from right to left.\nTherefore, the sum is \\(873\\).",
-        "workingOut": "• <strong>Units</strong>: \\(8 + 0 + 5 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(4 + 3 + 9 + 1\\text{ (carry)} = 17 \\rightarrow\\) Write \\(7\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(7 + 1\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8\n  7 3 0\n+   9 5\n-------\n  8 7 3</pre>",
+        "workingOut": "• <strong>Units</strong>: \\(8 + 0 + 5 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(4 + 3 + 9 + 1\\text{ (carry)} = 17 \\rightarrow\\) Write \\(7\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(7 + 1\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">4 8\n  7 3 0\n+   9 5\n-------\n  8 7 3</pre>",
         "graphData": null
       }
     ]
@@ -328,17 +328,17 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using the addition algorithm: \\(207 + 58 + 39965\\)",
     "answer": "40230",
-    "solution": "Step 1: Set up the vertical addition.\nMake sure the place values are aligned correctly:\n<pre style=\"font-family: monospace; line-height: 1.2;\">      2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------</pre>Step 2: Add the columns.\n• Units: \\(7 + 8 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• Tens: \\(0 + 5 + 6 + 2\\text{ (carry)} = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• Hundreds: \\(2 + 9 + 1\\text{ (carry)} = 12 \\rightarrow\\) Write \\(2\\), carry \\(1\\).\n• Thousands: \\(9 + 1\\text{ (carry)} = 10 \\rightarrow\\) Write \\(0\\), carry \\(1\\).\n• Ten Thousands: \\(3 + 1\\text{ (carry)} = 4 \\rightarrow\\) Write \\(4\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">      2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------\n  4 0 2 3 0</pre>Therefore, the sum is \\(40230\\).",
+    "solution": "Step 1: Set up the vertical addition.\nMake sure the place values are aligned correctly:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">      2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------</pre>Step 2: Add the columns.\n• Units: \\(7 + 8 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• Tens: \\(0 + 5 + 6 + 2\\text{ (carry)} = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• Hundreds: \\(2 + 9 + 1\\text{ (carry)} = 12 \\rightarrow\\) Write \\(2\\), carry \\(1\\).\n• Thousands: \\(9 + 1\\text{ (carry)} = 10 \\rightarrow\\) Write \\(0\\), carry \\(1\\).\n• Ten Thousands: \\(3 + 1\\text{ (carry)} = 4 \\rightarrow\\) Write \\(4\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">      2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------\n  4 0 2 3 0</pre>Therefore, the sum is \\(40230\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
         "explanation": "Set up the vertical addition.",
-        "workingOut": "Make sure the place values are aligned correctly:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------</pre>",
+        "workingOut": "Make sure the place values are aligned correctly:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the columns.\nTherefore, the sum is \\(40230\\).",
-        "workingOut": "• <strong>Units</strong>: \\(7 + 8 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(0 + 5 + 6 + 2\\text{ (carry)} = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(2 + 9 + 1\\text{ (carry)} = 12 \\rightarrow\\) Write \\(2\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(9 + 1\\text{ (carry)} = 10 \\rightarrow\\) Write \\(0\\), carry \\(1\\).\n• <strong>Ten Thousands</strong>: \\(3 + 1\\text{ (carry)} = 4 \\rightarrow\\) Write \\(4\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------\n  4 0 2 3 0</pre>",
+        "workingOut": "• <strong>Units</strong>: \\(7 + 8 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(0 + 5 + 6 + 2\\text{ (carry)} = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(2 + 9 + 1\\text{ (carry)} = 12 \\rightarrow\\) Write \\(2\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(9 + 1\\text{ (carry)} = 10 \\rightarrow\\) Write \\(0\\), carry \\(1\\).\n• <strong>Ten Thousands</strong>: \\(3 + 1\\text{ (carry)} = 4 \\rightarrow\\) Write \\(4\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------\n  4 0 2 3 0</pre>",
         "graphData": null
       }
     ]
@@ -355,17 +355,17 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using standard addition algorithm: \\(546 + 999 + 2045\\)",
     "answer": "3590",
-    "solution": "Step 1: Set up vertical column addition.\nAlign by place value:\n<pre style=\"font-family: monospace; line-height: 1.2;\">    5 4 6\n    9 9 9\n+ 2 0 4 5\n---------</pre>Step 2: Add column by column from right to left.\n• Units: \\(6 + 9 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• Tens: \\(4 + 9 + 4 + 2\\text{ (carry)} = 19 \\rightarrow\\) Write \\(9\\), carry \\(1\\).\n• Hundreds: \\(5 + 9 + 0 + 1\\text{ (carry)} = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• Thousands: \\(2 + 1\\text{ (carry)} = 3 \\rightarrow\\) Write \\(3\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">    5 4 6\n    9 9 9\n+ 2 0 4 5\n---------\n  3 5 9 0</pre>Therefore, the sum is \\(3590\\).",
+    "solution": "Step 1: Set up vertical column addition.\nAlign by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    5 4 6\n    9 9 9\n+ 2 0 4 5\n---------</pre>Step 2: Add column by column from right to left.\n• Units: \\(6 + 9 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• Tens: \\(4 + 9 + 4 + 2\\text{ (carry)} = 19 \\rightarrow\\) Write \\(9\\), carry \\(1\\).\n• Hundreds: \\(5 + 9 + 0 + 1\\text{ (carry)} = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• Thousands: \\(2 + 1\\text{ (carry)} = 3 \\rightarrow\\) Write \\(3\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">    5 4 6\n    9 9 9\n+ 2 0 4 5\n---------\n  3 5 9 0</pre>Therefore, the sum is \\(3590\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
         "explanation": "Set up vertical column addition.",
-        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">5 4 6\n    9 9 9\n+ 2 0 4 5\n---------</pre>",
+        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">5 4 6\n    9 9 9\n+ 2 0 4 5\n---------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add column by column from right to left.\nTherefore, the sum is \\(3590\\).",
-        "workingOut": "• <strong>Units</strong>: \\(6 + 9 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(4 + 9 + 4 + 2\\text{ (carry)} = 19 \\rightarrow\\) Write \\(9\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(5 + 9 + 0 + 1\\text{ (carry)} = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(2 + 1\\text{ (carry)} = 3 \\rightarrow\\) Write \\(3\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">5 4 6\n    9 9 9\n+ 2 0 4 5\n---------\n  3 5 9 0</pre>",
+        "workingOut": "• <strong>Units</strong>: \\(6 + 9 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(4 + 9 + 4 + 2\\text{ (carry)} = 19 \\rightarrow\\) Write \\(9\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(5 + 9 + 0 + 1\\text{ (carry)} = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(2 + 1\\text{ (carry)} = 3 \\rightarrow\\) Write \\(3\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">5 4 6\n    9 9 9\n+ 2 0 4 5\n---------\n  3 5 9 0</pre>",
         "graphData": null
       }
     ]
@@ -380,7 +380,7 @@ export const allQuestions = [
     "difficulty": "medium",
     "isManual": true,
     "isActive": true,
-    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  6 ★ 8\n+ ★ 3 9\n-------\n  9 9 7</pre>Choose the correct missing digits in order from top to bottom.",
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  6 ★ 8\n+ ★ 3 9\n-------\n  9 9 7</pre>Choose the correct missing digits in order from top to bottom.",
     "options": [
       "\\(3, 5\\)",
       "\\(5, 3\\)",
@@ -418,7 +418,7 @@ export const allQuestions = [
     "difficulty": "hard",
     "isManual": true,
     "isActive": true,
-    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  8 ★ 4\n+ ★ 9 ★\n-------\n  ★ 0 3</pre>Choose the correct missing digits in order: (top ★, bottom-left ★, bottom-right ★, sum ★).",
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  8 ★ 4\n+ ★ 9 ★\n-------\n  ★ 0 3</pre>Choose the correct missing digits in order: (top ★, bottom-left ★, bottom-right ★, sum ★).",
     "options": [
       "\\(9, 1, 0, 1\\)",
       "\\(1, 0, 9, 1\\)",
@@ -456,7 +456,7 @@ export const allQuestions = [
     "difficulty": "medium",
     "isManual": true,
     "isActive": true,
-    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  9 1 9\n+ 8 9 ★\n-------\n1 ★ 1 8</pre>Choose the correct missing digits in order from top to bottom.",
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  9 1 9\n+ 8 9 ★\n-------\n1 ★ 1 8</pre>Choose the correct missing digits in order from top to bottom.",
     "options": [
       "\\(7, 8\\)",
       "\\(9, 8\\)",
@@ -494,7 +494,7 @@ export const allQuestions = [
     "difficulty": "medium",
     "isManual": true,
     "isActive": true,
-    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  6 ★ 3\n+ ★ 8 9\n-------\n1 2 6 2</pre>Choose the correct missing digits in order from top to bottom.",
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  6 ★ 3\n+ ★ 8 9\n-------\n1 2 6 2</pre>Choose the correct missing digits in order from top to bottom.",
     "options": [
       "\\(5, 7\\)",
       "\\(7, 6\\)",
@@ -532,7 +532,7 @@ export const allQuestions = [
     "difficulty": "hard",
     "isManual": true,
     "isActive": true,
-    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  7 ★ 1\n+ ★ 9 7\n-------\n1 0 9 ★</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  7 ★ 1\n+ ★ 9 7\n-------\n1 0 9 ★</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
     "options": [
       "\\(0, 4, 8\\)",
       "\\(9, 3, 8\\)",
@@ -570,7 +570,7 @@ export const allQuestions = [
     "difficulty": "hard",
     "isManual": true,
     "isActive": true,
-    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  3 ★ 3\n+ 7 7 ★\n-------\n★ 1 1 0</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 ★ 3\n+ 7 7 ★\n-------\n★ 1 1 0</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
     "options": [
       "\\(3, 7, 2\\)",
       "\\(3, 7, 1\\)",
@@ -610,7 +610,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(967 - 403\\)",
     "answer": "564",
-    "solution": "Step 1: Align column subtraction.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  9 6 7\n- 4 0 3\n-------</pre>Step 2: Subtract columns from right to left.\n• Units: \\(7 - 3 = 4\\)\n• Tens: \\(6 - 0 = 6\\)\n• Hundreds: \\(9 - 4 = 5\\)\n<pre style=\"font-family: monospace; line-height: 1.2;\">  9 6 7\n- 4 0 3\n-------\n  5 6 4</pre>Therefore, the difference is \\(564\\).",
+    "solution": "Step 1: Align column subtraction.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  9 6 7\n- 4 0 3\n-------</pre>Step 2: Subtract columns from right to left.\n• Units: \\(7 - 3 = 4\\)\n• Tens: \\(6 - 0 = 6\\)\n• Hundreds: \\(9 - 4 = 5\\)\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  9 6 7\n- 4 0 3\n-------\n  5 6 4</pre>Therefore, the difference is \\(564\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -637,7 +637,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(12986 - 11444\\)",
     "answer": "1542",
-    "solution": "Step 1: Set up vertical subtraction.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 2 9 8 6\n- 1 1 4 4 4\n-----------</pre>Step 2: Subtract from right to left.\n• Units: \\(6 - 4 = 2\\)\n• Tens: \\(8 - 4 = 4\\)\n• Hundreds: \\(9 - 4 = 5\\)\n• Thousands: \\(2 - 1 = 1\\)\n• Ten Thousands: \\(1 - 1 = 0\\)\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 2 9 8 6\n- 1 1 4 4 4\n-----------\n    1 5 4 2</pre>Therefore, the difference is \\(1542\\).",
+    "solution": "Step 1: Set up vertical subtraction.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 2 9 8 6\n- 1 1 4 4 4\n-----------</pre>Step 2: Subtract from right to left.\n• Units: \\(6 - 4 = 2\\)\n• Tens: \\(8 - 4 = 4\\)\n• Hundreds: \\(9 - 4 = 5\\)\n• Thousands: \\(2 - 1 = 1\\)\n• Ten Thousands: \\(1 - 1 = 0\\)\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 2 9 8 6\n- 1 1 4 4 4\n-----------\n    1 5 4 2</pre>Therefore, the difference is \\(1542\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -664,7 +664,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(587 - 485\\)",
     "answer": "102",
-    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  5 8 7\n- 4 8 5\n-------</pre>Step 2: Subtract columns.\n• Units: \\(7 - 5 = 2\\)\n• Tens: \\(8 - 8 = 0\\)\n• Hundreds: \\(5 - 4 = 1\\)\n<pre style=\"font-family: monospace; line-height: 1.2;\">  5 8 7\n- 4 8 5\n-------\n  1 0 2</pre>Therefore, the difference is \\(102\\).",
+    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  5 8 7\n- 4 8 5\n-------</pre>Step 2: Subtract columns.\n• Units: \\(7 - 5 = 2\\)\n• Tens: \\(8 - 8 = 0\\)\n• Hundreds: \\(5 - 4 = 1\\)\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  5 8 7\n- 4 8 5\n-------\n  1 0 2</pre>Therefore, the difference is \\(102\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -691,7 +691,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(345 - 297\\)",
     "answer": "48",
-    "solution": "Step 1: Arrange vertically.\nNote that borrowing is required:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  3 4 5\n- 2 9 7\n-------</pre>Step 2: Subtract columns with borrowing.\n• Units: \\(5 < 7\\). Borrow \\(1\\) from the Tens column (\\(4 \\rightarrow 3\\), making the Units digit \\(15\\)). Now, \\(15 - 7 = 8\\).\n• Tens: We now have \\(3\\) in the Tens column, and \\(3 < 9\\). Borrow \\(1\\) from Hundreds (\\(3 \\rightarrow 2\\), making Tens digit \\(13\\)). Now, \\(13 - 9 = 4\\).\n• Hundreds: \\(2 - 2 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  3 4 5\n- 2 9 7\n-------\n    4 8</pre>Therefore, the difference is \\(48\\).",
+    "solution": "Step 1: Arrange vertically.\nNote that borrowing is required:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 4 5\n- 2 9 7\n-------</pre>Step 2: Subtract columns with borrowing.\n• Units: \\(5 < 7\\). Borrow \\(1\\) from the Tens column (\\(4 \\rightarrow 3\\), making the Units digit \\(15\\)). Now, \\(15 - 7 = 8\\).\n• Tens: We now have \\(3\\) in the Tens column, and \\(3 < 9\\). Borrow \\(1\\) from Hundreds (\\(3 \\rightarrow 2\\), making Tens digit \\(13\\)). Now, \\(13 - 9 = 4\\).\n• Hundreds: \\(2 - 2 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 4 5\n- 2 9 7\n-------\n    4 8</pre>Therefore, the difference is \\(48\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -718,7 +718,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(1504 - 1476\\)",
     "answer": "28",
-    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 5 0 4\n- 1 4 7 6\n---------</pre>Step 2: Subtract columns (borrowing required).\n• Units: \\(4 < 6\\). Borrow \\(1\\) from Tens. Since Tens is \\(0\\), we must first borrow \\(1\\) from Hundreds (\\(5 \\rightarrow 4\\), making Tens \\(10\\)). Now borrow \\(1\\) from Tens (\\(10 \\rightarrow 9\\), making Units \\(14\\)).\n• Units subtraction: \\(14 - 6 = 8\\).\n• Tens subtraction: \\(9 - 7 = 2\\).\n• Hundreds subtraction: \\(4 - 4 = 0\\).\n• Thousands subtraction: \\(1 - 1 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 5 0 4\n- 1 4 7 6\n---------\n      2 8</pre>Therefore, the difference is \\(28\\).",
+    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 5 0 4\n- 1 4 7 6\n---------</pre>Step 2: Subtract columns (borrowing required).\n• Units: \\(4 < 6\\). Borrow \\(1\\) from Tens. Since Tens is \\(0\\), we must first borrow \\(1\\) from Hundreds (\\(5 \\rightarrow 4\\), making Tens \\(10\\)). Now borrow \\(1\\) from Tens (\\(10 \\rightarrow 9\\), making Units \\(14\\)).\n• Units subtraction: \\(14 - 6 = 8\\).\n• Tens subtraction: \\(9 - 7 = 2\\).\n• Hundreds subtraction: \\(4 - 4 = 0\\).\n• Thousands subtraction: \\(1 - 1 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 5 0 4\n- 1 4 7 6\n---------\n      2 8</pre>Therefore, the difference is \\(28\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -745,7 +745,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(19554 - 9867\\)",
     "answer": "9687",
-    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 9 5 5 4\n-   9 8 6 7\n-----------</pre>Step 2: Subtract with borrowing.\n• Units: \\(4 < 7\\). Borrow \\(1\\) from Tens (\\(5 \\rightarrow 4\\)), making Units \\(14\\). \\(14 - 7 = 7\\).\n• Tens: We now have \\(4 < 6\\). Borrow \\(1\\) from Hundreds (\\(5 \\rightarrow 4\\)), making Tens \\(14\\). \\(14 - 6 = 8\\).\n• Hundreds: We now have \\(4 < 8\\). Borrow \\(1\\) from Thousands (\\(9 \\rightarrow 8\\)), making Hundreds \\(14\\). \\(14 - 8 = 6\\).\n• Thousands: We now have \\(8 < 9\\). Borrow \\(1\\) from Ten Thousands (\\(1 \\rightarrow 0\\)), making Thousands \\(18\\). \\(18 - 9 = 9\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 9 5 5 4\n-   9 8 6 7\n-----------\n    9 6 8 7</pre>Therefore, the difference is \\(9687\\).",
+    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 9 5 5 4\n-   9 8 6 7\n-----------</pre>Step 2: Subtract with borrowing.\n• Units: \\(4 < 7\\). Borrow \\(1\\) from Tens (\\(5 \\rightarrow 4\\)), making Units \\(14\\). \\(14 - 7 = 7\\).\n• Tens: We now have \\(4 < 6\\). Borrow \\(1\\) from Hundreds (\\(5 \\rightarrow 4\\)), making Tens \\(14\\). \\(14 - 6 = 8\\).\n• Hundreds: We now have \\(4 < 8\\). Borrow \\(1\\) from Thousands (\\(9 \\rightarrow 8\\)), making Hundreds \\(14\\). \\(14 - 8 = 6\\).\n• Thousands: We now have \\(8 < 9\\). Borrow \\(1\\) from Ten Thousands (\\(1 \\rightarrow 0\\)), making Thousands \\(18\\). \\(18 - 9 = 9\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 9 5 5 4\n-   9 8 6 7\n-----------\n    9 6 8 7</pre>Therefore, the difference is \\(9687\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -772,7 +772,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(1000 - 386\\)",
     "answer": "614",
-    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 0 0 0\n-   3 8 6\n---------</pre>Step 2: Perform across-zero borrowing.\nBorrow \\(1\\) all the way from the Thousands column (\\(1 \\rightarrow 0\\)), which propagates to make the Hundreds \\(9\\), Tens \\(9\\), and Units \\(10\\).\n• Units: \\(10 - 6 = 4\\)\n• Tens: \\(9 - 8 = 1\\)\n• Hundreds: \\(9 - 3 = 6\\)\n<pre style=\"font-family: monospace; line-height: 1.2;\">  1 0 0 0\n-   3 8 6\n---------\n    6 1 4</pre>Therefore, the difference is \\(614\\).",
+    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 0 0 0\n-   3 8 6\n---------</pre>Step 2: Perform across-zero borrowing.\nBorrow \\(1\\) all the way from the Thousands column (\\(1 \\rightarrow 0\\)), which propagates to make the Hundreds \\(9\\), Tens \\(9\\), and Units \\(10\\).\n• Units: \\(10 - 6 = 4\\)\n• Tens: \\(9 - 8 = 1\\)\n• Hundreds: \\(9 - 3 = 6\\)\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 0 0 0\n-   3 8 6\n---------\n    6 1 4</pre>Therefore, the difference is \\(614\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -799,7 +799,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(20015 - 19999\\)",
     "answer": "16",
-    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  2 0 0 1 5\n- 1 9 9 9 9\n-----------</pre>Step 2: Subtract with borrowing.\n• Units: \\(5 < 9\\). Borrow \\(1\\) from Tens (\\(1 \\rightarrow 0\\)), making Units \\(15\\). \\(15 - 9 = 6\\).\n• Tens: We now have \\(0 < 9\\). Borrow \\(1\\) across the Hundreds and Thousands from the Thousands (\\(200 \\rightarrow 199\\)), making Tens \\(10\\). \\(10 - 9 = 1\\).\n• Hundreds: \\(9 - 9 = 0\\).\n• Thousands: \\(9 - 9 = 0\\).\n• Ten Thousands: \\(1 - 1 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  2 0 0 1 5\n- 1 9 9 9 9\n-----------\n          1 6</pre>Alternatively, notice that \\(20015\\) is exactly \\(16\\) greater than \\(19999\\) since \\(19999 + 1 = 20000\\) and \\(20000 + 15 = 20015\\).",
+    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 0 0 1 5\n- 1 9 9 9 9\n-----------</pre>Step 2: Subtract with borrowing.\n• Units: \\(5 < 9\\). Borrow \\(1\\) from Tens (\\(1 \\rightarrow 0\\)), making Units \\(15\\). \\(15 - 9 = 6\\).\n• Tens: We now have \\(0 < 9\\). Borrow \\(1\\) across the Hundreds and Thousands from the Thousands (\\(200 \\rightarrow 199\\)), making Tens \\(10\\). \\(10 - 9 = 1\\).\n• Hundreds: \\(9 - 9 = 0\\).\n• Thousands: \\(9 - 9 = 0\\).\n• Ten Thousands: \\(1 - 1 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 0 0 1 5\n- 1 9 9 9 9\n-----------\n          1 6</pre>Alternatively, notice that \\(20015\\) is exactly \\(16\\) greater than \\(19999\\) since \\(19999 + 1 = 20000\\) and \\(20000 + 15 = 20015\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -826,7 +826,7 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate: \\(20202 - 18306\\)",
     "answer": "1896",
-    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2;\">  2 0 2 0 2\n- 1 8 3 0 6\n-----------</pre>Step 2: Perform column subtraction.\n• Units: \\(2 < 6\\). Borrow \\(1\\) from Tens. Since Tens is \\(0\\), borrow from Hundreds (\\(2 \\rightarrow 1\\), Tens becomes \\(10\\), then borrow to make Tens \\(9\\) and Units \\(12\\)). \\(12 - 6 = 6\\).\n• Tens: \\(9 - 0 = 9\\).\n• Hundreds: We now have \\(1 < 3\\). Borrow \\(1\\) from Thousands. Since Thousands is \\(0\\), borrow from Ten Thousands (\\(2 \\rightarrow 1\\), Thousands becomes \\(10\\), then borrow to make Thousands \\(9\\) and Hundreds \\(11\\)). \\(11 - 3 = 8\\).\n• Thousands: \\(9 - 8 = 1\\).\n• Ten Thousands: \\(1 - 1 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2;\">  2 0 2 0 2\n- 1 8 3 0 6\n-----------\n    1 8 9 6</pre>Therefore, the difference is \\(1896\\).",
+    "solution": "Step 1: Arrange vertically.\n\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 0 2 0 2\n- 1 8 3 0 6\n-----------</pre>Step 2: Perform column subtraction.\n• Units: \\(2 < 6\\). Borrow \\(1\\) from Tens. Since Tens is \\(0\\), borrow from Hundreds (\\(2 \\rightarrow 1\\), Tens becomes \\(10\\), then borrow to make Tens \\(9\\) and Units \\(12\\)). \\(12 - 6 = 6\\).\n• Tens: \\(9 - 0 = 9\\).\n• Hundreds: We now have \\(1 < 3\\). Borrow \\(1\\) from Thousands. Since Thousands is \\(0\\), borrow from Ten Thousands (\\(2 \\rightarrow 1\\), Thousands becomes \\(10\\), then borrow to make Thousands \\(9\\) and Hundreds \\(11\\)). \\(11 - 3 = 8\\).\n• Thousands: \\(9 - 8 = 1\\).\n• Ten Thousands: \\(1 - 1 = 0\\).\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 0 2 0 2\n- 1 8 3 0 6\n-----------\n    1 8 9 6</pre>Therefore, the difference is \\(1896\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
       {
@@ -863,17 +863,17 @@ export const allQuestions = [
       },
       {
         "explanation": "Group friendly numbers to add mentally.",
-        "workingOut": "Notice that the Units digits of \\(138\\) and \\(162\\) add up to \\(10\\) (\\(8 + 2 = 10\\)). Let's pair them:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 3 8\n+ 1 6 2\n-------\n  3 0 0</pre>",
+        "workingOut": "Notice that the Units digits of \\(138\\) and \\(162\\) add up to \\(10\\) (\\(8 + 2 = 10\\)). Let's pair them:\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  1 3 8\n+ 1 6 2\n-------\n  3 0 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining values.",
-        "workingOut": "Now add \\(246\\) and \\(175\\):\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  2 4 6\n+ 1 7 5\n-------\n  4 2 1</pre>",
+        "workingOut": "Now add \\(246\\) and \\(175\\):\n<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  2 4 6\n+ 1 7 5\n-------\n  4 2 1</pre>",
         "graphData": null
       },
       {
         "explanation": "Combine the sums.\nLiam earned a total of \\(\\\\)721\\).",
-        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 0 0\n+ 4 2 1\n-------\n  7 2 1</pre>",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; display: table; margin: 15px auto; text-align: left; font-size: 1.1rem; letter-spacing: 0.05em;\">  3 0 0\n+ 4 2 1\n-------\n  7 2 1</pre>",
         "graphData": null
       }
     ]
