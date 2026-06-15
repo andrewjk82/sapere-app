@@ -260,7 +260,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
   let lines = [];
   if (typeof processedContent === 'string') {
     // If it looks like block HTML (contains block tags), don't split by newline, treat as one block
-    if (/<(div|p|ul|ol|table|svg|h[1-6])[>\s]/i.test(processedContent)) {
+    if (/<(div|p|ul|ol|table|svg|h[1-6]|pre)[>\s]/i.test(processedContent)) {
       lines = [processedContent];
     } else {
       // Only split on newlines that are OUTSIDE of math blocks.
