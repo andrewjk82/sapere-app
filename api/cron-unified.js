@@ -332,14 +332,34 @@ export default async function handler(req, res) {
           logs.push(`[Weekly] Report already complete for week ${week.weekId}.`);
         } else {
           const sentIds = new Set(reportData.sentIds || []);
-          const usersSnap = await db.collection('users').get();
-          const studentDocs = usersSnap.docs.filter((d) => isStudentProfile(d.data()));
-          const pending = studentDocs.filter((sd) => !sentIds.has(sd.id));
-          const batch = pending.slice(0, WEEKLY_REPORT_BATCH_SIZE);
+          // Build the student roster once per week and cache the ids on the
+          // report doc. Later Sunday runs (1/2/3/4 PM) reuse that list and
+          // fetch only the pending batch by id, instead of re-scanning the
+          // whole `users` collection on every run.
+          let rosterIds = Array.isArray(reportData.rosterIds) ? reportData.rosterIds : null;
+          let batchDocs;
+          if (!rosterIds) {
+            const usersSnap = await db.collection('users').get();
+            const studentDocs = usersSnap.docs.filter((d) => isStudentProfile(d.data()));
+            rosterIds = studentDocs.map((d) => d.id);
+            const byId = new Map(studentDocs.map((d) => [d.id, d]));
+            const pendingIds = rosterIds.filter((id) => !sentIds.has(id));
+            batchDocs = pendingIds.slice(0, WEEKLY_REPORT_BATCH_SIZE).map((id) => byId.get(id));
+          } else {
+            const pendingIds = rosterIds.filter((id) => !sentIds.has(id));
+            const batchIds = pendingIds.slice(0, WEEKLY_REPORT_BATCH_SIZE);
+            batchDocs = await Promise.all(
+              batchIds.map((id) => db.collection('users').doc(id).get())
+            );
+          }
           let sent = 0;
           let skipped = 0;
-          const results = await Promise.allSettled(batch.map(async (sd) => {
+          const results = await Promise.allSettled(batchDocs.map(async (sd) => {
             const student = sd.data();
+            // A roster id may point to a user deleted mid-week; the fresh-scan
+            // path never saw it, but the cached-roster path can. Drop it so it
+            // stops being retried and counted as pending forever.
+            if (!student) return { id: sd.id, done: true, skipped: true };
             const email = normalizeEmail(student.email);
             const name = student.name || student.displayName ||
               `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
@@ -379,11 +399,12 @@ export default async function handler(req, res) {
               logs.push(`[Weekly] fail: ${r.reason?.message || r.reason}`);
             }
           });
-          const remaining = studentDocs.filter((sd) => !sentIds.has(sd.id)).length;
+          const remaining = rosterIds.filter((id) => !sentIds.has(id)).length;
           const complete = remaining === 0;
           await reportRef.set({
             weekId: week.weekId,
             status: complete ? 'complete' : 'partial',
+            rosterIds,
             sentIds: Array.from(sentIds),
             sentCount: sentIds.size,
             lastRunAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -405,7 +426,16 @@ export default async function handler(req, res) {
     // The day AFTER an exam: disable examPrepEnabled, clear exam prep stats
     // and history so the student starts fresh for the next exam.
     // The exam date field itself is also cleared so the UI shows a blank date.
+    //
+    // Read-cost note: gated to the early-morning window (1–5 AM Sydney) and uses
+    // indexed `where(dateKey, '==', yesterday)` queries — same pattern as the
+    // D-1 report (PART 1.5) — instead of scanning the whole `users` collection
+    // every hour. The multi-hour window mirrors the 6PM/weekly windows so a
+    // single missed ping doesn't drop that day's cleanup; once a match is
+    // cleaned its exam-date field is set to '' so later runs re-query 0 docs.
+    // Most days this matches 0 students = a handful of reads total.
     // ══════════════════════════════════════════════════════════════════════
+    if (sydTotalMin >= 60 && sydTotalMin < 300) {
     try {
       const examTermKeys = [
         'term1ExamDate', 'term2ExamDate', 'term3ExamDate', 'term4ExamDate',
@@ -415,22 +445,32 @@ export default async function handler(req, res) {
       const yesterdayUTC = new Date(nowUTC.getTime() - 24 * 60 * 60 * 1000);
       const yesterdayStr = getSydneyDateStr(yesterdayUTC);
 
-      const cleanupUsersSnap = await db.collection('users').get();
+      // Only students whose exam was yesterday — indexed query, not a full scan.
+      const cleanupSnaps = await Promise.all(examTermKeys.map((dateKey) =>
+        db.collection('users').where(dateKey, '==', yesterdayStr).get()
+      ));
+      // Dedupe: a student could match more than one key; keep userDoc + its keys.
+      const candidates = new Map(); // studentId -> { userDoc, dateKeys: Set }
+      cleanupSnaps.forEach((snap, i) => {
+        const dateKey = examTermKeys[i];
+        snap.docs.forEach((userDoc) => {
+          if (!isStudentProfile(userDoc.data())) return;
+          if (!candidates.has(userDoc.id)) {
+            candidates.set(userDoc.id, { userDoc, dateKeys: new Set() });
+          }
+          candidates.get(userDoc.id).dateKeys.add(dateKey);
+        });
+      });
+
       let cleanupCount = 0;
 
-      for (const userDoc of cleanupUsersSnap.docs) {
+      for (const { userDoc, dateKeys } of candidates.values()) {
         const student = userDoc.data();
-        if (!isStudentProfile(student)) continue;
-
         const studentId = userDoc.id;
         const studentName = student.name || student.displayName ||
           `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'Student';
 
-        for (const dateKey of examTermKeys) {
-          const examDate = student[dateKey];
-          if (!examDate) continue;
-          // Only clean up if the exam was yesterday (D+1 today)
-          if (examDate !== yesterdayStr) continue;
+        for (const dateKey of dateKeys) {
           // Skip if already cleaned up for this date
           if (student[`examPrepCleanedFor.${dateKey}`] === yesterdayStr) continue;
 
@@ -476,6 +516,7 @@ export default async function handler(req, res) {
     } catch (e) {
       logs.push(`[D+1] Cleanup error: ${e.message}`);
     }
+    } // end D+1 cleanup 2 AM gate
 
     // ── Log Execution to system_logs for Dashboard visibility ────────────
     await db.collection('system_logs').add({
