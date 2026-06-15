@@ -568,6 +568,39 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
     .map(correctQuestionAnswer);
 
   const targets = buildDailyTargets(studentProfile);
+
+  // Top up the shortfall with procedurally-generated questions for the lower
+  // years (Year 1-6), which rely on generation rather than seeded questions.
+  // Year 7-12 stays seed-only (see commit c99114b), so we restrict generation
+  // to the targeted years below 7.
+  const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 7);
+  let generatedCount = 0;
+  if (generationYears.length > 0 && questions.length < questionCount) {
+    const need = questionCount - questions.length;
+    const usedIds = new Set(questions.map((q) => String(q.id)));
+    const difficulties = ["easy", "medium", "hard"];
+    const maxAttempts = need * 6 + 6;
+    for (let attempt = 0; attempt < maxAttempts && generatedCount < need; attempt += 1) {
+      let generated;
+      try {
+        generated = generateQuestion({
+          year: generationYears,
+          course: targets.assignedCourses,
+          assignedChapters: targets.assignedChapters,
+          assignedTopics: targets.assignedTopics,
+        }, difficulties[generatedCount % difficulties.length]);
+      } catch (err) {
+        console.warn("Daily question generation failed:", err?.message || err);
+        break;
+      }
+      const withId = correctQuestionAnswer({ ...generated, id: hashGeneratedQuestion(generated) });
+      if (usedIds.has(String(withId.id))) continue; // skip duplicates
+      usedIds.add(String(withId.id));
+      questions.push(withId);
+      generatedCount += 1;
+    }
+  }
+
   return {
     questions,
     source: {
@@ -576,8 +609,8 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid) => {
       chapters: Object.keys(chapterBreakdown),
       assignedChapters: targets.assignedChapters,
       assignedTopics: targets.assignedTopics,
-      manualQuestionCount: questions.length,
-      generatedQuestionCount: 0,
+      manualQuestionCount: questions.length - generatedCount,
+      generatedQuestionCount: generatedCount,
     },
   };
 };
