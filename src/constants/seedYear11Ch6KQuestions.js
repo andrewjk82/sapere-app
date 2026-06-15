@@ -1,5 +1,4 @@
 export const Y11_CH6K_QUESTIONS = [
-  // Q1 (Original Q14) - Top-level split and Multi-unknown split
   {
     "id": "y11a-6k-q1a-sin",
     "c": "6K",
@@ -220,8 +219,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q2 (Original Q15) - Top-level split
   {
     "id": "y11a-6k-q2a",
     "c": "6K",
@@ -372,8 +369,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q3 (Original Q16) - Top-level split (teacher_review)
   {
     "id": "y11a-6k-q3a",
     "c": "6K",
@@ -549,8 +544,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q4 (Original Q17) - Split into individual top-level questions
   {
     "id": "y11a-6k-q4a",
     "c": "6K",
@@ -566,18 +559,166 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]], "firstArrow": true, "lastArrow": true },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]], "firstArrow": true, "lastArrow": true },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0, "name": "O", "label": { "offset": [-10,-10] } },
-          { "type": "point", "id": "P1", "coords": [2.60, 1.50], "size": 0, "name": "30°", "label": { "offset": [10, 5] } },
-          { "type": "point", "id": "P2", "coords": [2.60, -1.50], "size": 0, "name": "330°", "label": { "offset": [10, -5] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "line", "through": [[2.60, -4], [2.60, 4]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": true,
+            "lastArrow": true
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": true,
+            "lastArrow": true
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0,
+            "name": "O",
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              2.6,
+              1.5
+            ],
+            "size": 0,
+            "name": "30°",
+            "label": {
+              "offset": [
+                10,
+                5
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              2.6,
+              -1.5
+            ],
+            "size": 0,
+            "name": "330°",
+            "label": {
+              "offset": [
+                10,
+                -5
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              2.6,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              2.6,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -614,15 +755,111 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0, "name": "O" },
-          { "type": "point", "id": "P", "coords": [0, -3], "size": 0, "name": "270°", "label": { "offset": [10, -10] } },
-          { "type": "arrow", "from": "O", "to": "P", "color": "blue" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0,
+            "name": "O"
+          },
+          {
+            "type": "point",
+            "id": "P",
+            "coords": [
+              0,
+              -3
+            ],
+            "size": 0,
+            "name": "270°",
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P",
+            "color": "blue"
+          }
         ]
       }
     },
@@ -649,18 +886,159 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [2.12, 2.12], "size": 0, "name": "45°", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "P2", "coords": [-2.12, -2.12], "size": 0, "name": "225°", "label": { "offset": [-15, -15] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "line", "through": [[-4, -4], [4, 4]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              2.12,
+              2.12
+            ],
+            "size": 0,
+            "name": "45°",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              -2.12,
+              -2.12
+            ],
+            "size": 0,
+            "name": "225°",
+            "label": {
+              "offset": [
+                -15,
+                -15
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              -4,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              4,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -697,17 +1075,132 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [3, 0], "size": 0, "name": "0°/360°", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "P2", "coords": [-3, 0], "size": 0, "name": "180°", "label": { "offset": [-25, 10] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              3,
+              0
+            ],
+            "size": 0,
+            "name": "0°/360°",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              -3,
+              0
+            ],
+            "size": 0,
+            "name": "180°",
+            "label": {
+              "offset": [
+                -25,
+                10
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          }
         ]
       }
     },
@@ -734,18 +1227,159 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [1.50, 2.60], "size": 0, "name": "60°", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "P2", "coords": [-1.50, -2.60], "size": 0, "name": "240°", "label": { "offset": [-15, -15] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "line", "through": [[-2, -3.46], [2, 3.46]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              1.5,
+              2.6
+            ],
+            "size": 0,
+            "name": "60°",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              -1.5,
+              -2.6
+            ],
+            "size": 0,
+            "name": "240°",
+            "label": {
+              "offset": [
+                -15,
+                -15
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              -2,
+              -3.46
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              2,
+              3.46
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -782,15 +1416,110 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P", "coords": [3, 0], "size": 0, "name": "0°/360°", "label": { "offset": [10, 10] } },
-          { "type": "arrow", "from": "O", "to": "P", "color": "blue" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P",
+            "coords": [
+              3,
+              0
+            ],
+            "size": 0,
+            "name": "0°/360°",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P",
+            "color": "blue"
+          }
         ]
       }
     },
@@ -817,18 +1546,159 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [-2.60, -1.50], "size": 0, "name": "210°", "label": { "offset": [-25, -5] } },
-          { "type": "point", "id": "P2", "coords": [2.60, -1.50], "size": 0, "name": "330°", "label": { "offset": [10, -5] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "line", "through": [[-4, -1.50], [4, -1.50]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              -2.6,
+              -1.5
+            ],
+            "size": 0,
+            "name": "210°",
+            "label": {
+              "offset": [
+                -25,
+                -5
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              2.6,
+              -1.5
+            ],
+            "size": 0,
+            "name": "330°",
+            "label": {
+              "offset": [
+                10,
+                -5
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              -4,
+              -1.5
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              4,
+              -1.5
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -860,18 +1730,159 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [-2.12, 2.12], "size": 0, "name": "135°", "label": { "offset": [-25, 10] } },
-          { "type": "point", "id": "P2", "coords": [-2.12, -2.12], "size": 0, "name": "225°", "label": { "offset": [-25, -10] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "line", "through": [[-2.12, -4], [-2.12, 4]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              -2.12,
+              2.12
+            ],
+            "size": 0,
+            "name": "135°",
+            "label": {
+              "offset": [
+                -25,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              -2.12,
+              -2.12
+            ],
+            "size": 0,
+            "name": "225°",
+            "label": {
+              "offset": [
+                -25,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              -2.12,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              -2.12,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -903,23 +1914,230 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [1.50, 2.60], "size": 0, "name": "60°", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "P2", "coords": [-1.50, 2.60], "size": 0, "name": "120°", "label": { "offset": [-25, 10] } },
-          { "type": "point", "id": "P3", "coords": [-1.50, -2.60], "size": 0, "name": "240°", "label": { "offset": [-25, -10] } },
-          { "type": "point", "id": "P4", "coords": [1.50, -2.60], "size": 0, "name": "300°", "label": { "offset": [10, -10] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P3", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P4", "color": "blue" },
-          { "type": "line", "through": [[-4, 2.60], [4, 2.60]], "dash": 2, "color": "red" },
-          { "type": "line", "through": [[-4, -2.60], [4, -2.60]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              1.5,
+              2.6
+            ],
+            "size": 0,
+            "name": "60°",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              -1.5,
+              2.6
+            ],
+            "size": 0,
+            "name": "120°",
+            "label": {
+              "offset": [
+                -25,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P3",
+            "coords": [
+              -1.5,
+              -2.6
+            ],
+            "size": 0,
+            "name": "240°",
+            "label": {
+              "offset": [
+                -25,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P4",
+            "coords": [
+              1.5,
+              -2.6
+            ],
+            "size": 0,
+            "name": "300°",
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P3",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P4",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              -4,
+              2.6
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              4,
+              2.6
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          },
+          {
+            "type": "point",
+            "id": "lp_2_a",
+            "coords": [
+              -4,
+              -2.6
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_2_b",
+            "coords": [
+              4,
+              -2.6
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_2_a",
+              "lp_2_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -951,8 +2169,16 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 200,
-        "boundingbox": [-30, 1.5, 390, -1.5],
-        "boardOptions": { "keepaspectratio": false, "showNavigation": false },
+        "boundingbox": [
+          -30,
+          1.5,
+          390,
+          -1.5
+        ],
+        "boardOptions": {
+          "keepaspectratio": false,
+          "showNavigation": false
+        },
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0], [370,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.2], [0,1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.sin(2*x*Math.PI/180); }, 0, 360], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[0, 0.5], [360, 0.5]], {dash: 2, strokeColor: 'red'});\nboard.create('point', [15, 0.5], {name: '15°', size: 2, color: 'red'});\nboard.create('point', [75, 0.5], {name: '75°', size: 2, color: 'red'});\nboard.create('point', [195, 0.5], {name: '195°', size: 2, color: 'red'});\nboard.create('point', [255, 0.5], {name: '255°', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
       }
     },
@@ -989,8 +2215,16 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 200,
-        "boundingbox": [-30, 1.5, 390, -1.5],
-        "boardOptions": { "keepaspectratio": false, "showNavigation": false },
+        "boundingbox": [
+          -30,
+          1.5,
+          390,
+          -1.5
+        ],
+        "boardOptions": {
+          "keepaspectratio": false,
+          "showNavigation": false
+        },
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0], [370,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.2], [0,1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.sin((x-45)*Math.PI/180); }, 0, 360], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[0, 0.5], [360, 0.5]], {dash: 2, strokeColor: 'red'});\nboard.create('point', [75, 0.5], {name: '75°', size: 2, color: 'red'});\nboard.create('point', [195, 0.5], {name: '195°', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
       }
     },
@@ -1027,18 +2261,159 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 300,
-        "boundingbox": [-4, 4, 4, -4],
-        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
         "elements": [
-          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
-          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
-          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
-          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
-          { "type": "point", "id": "P1", "coords": [2.12, 2.12], "size": 0, "name": "45°", "label": { "offset": [10, 10] } },
-          { "type": "point", "id": "P2", "coords": [-2.12, -2.12], "size": 0, "name": "225°", "label": { "offset": [-15, -15] } },
-          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
-          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
-          { "type": "line", "through": [[-4, -4], [4, 4]], "dash": 2, "color": "red" }
+          {
+            "type": "point",
+            "id": "ax_start",
+            "coords": [
+              -4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ax_end",
+            "coords": [
+              4,
+              0
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ax_start",
+            "to": "ax_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "point",
+            "id": "ay_start",
+            "coords": [
+              0,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "ay_end",
+            "coords": [
+              0,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "segment",
+            "from": "ay_start",
+            "to": "ay_end",
+            "color": "slate",
+            "firstArrow": false,
+            "lastArrow": false
+          },
+          {
+            "type": "circle",
+            "id": "uCircle",
+            "center": [
+              0,
+              0
+            ],
+            "radius": 3,
+            "strokeColor": "slate"
+          },
+          {
+            "type": "point",
+            "id": "O",
+            "coords": [
+              0,
+              0
+            ],
+            "size": 0
+          },
+          {
+            "type": "point",
+            "id": "P1",
+            "coords": [
+              2.12,
+              2.12
+            ],
+            "size": 0,
+            "name": "45°",
+            "label": {
+              "offset": [
+                10,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "P2",
+            "coords": [
+              -2.12,
+              -2.12
+            ],
+            "size": 0,
+            "name": "225°",
+            "label": {
+              "offset": [
+                -15,
+                -15
+              ]
+            }
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P1",
+            "color": "blue"
+          },
+          {
+            "type": "arrow",
+            "from": "O",
+            "to": "P2",
+            "color": "blue"
+          },
+          {
+            "type": "point",
+            "id": "lp_1_a",
+            "coords": [
+              -4,
+              -4
+            ],
+            "visible": false
+          },
+          {
+            "type": "point",
+            "id": "lp_1_b",
+            "coords": [
+              4,
+              4
+            ],
+            "visible": false
+          },
+          {
+            "type": "line",
+            "through": [
+              "lp_1_a",
+              "lp_1_b"
+            ],
+            "dash": 2,
+            "color": "red"
+          }
         ]
       }
     },
@@ -1055,8 +2430,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q5 (Original Q18) - Split subQuestions
   {
     "id": "y11a-6k-q5",
     "c": "6K",
@@ -1082,20 +2455,121 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-1, 10, 15, -2],
+            "boundingbox": [
+              -1,
+              10,
+              15,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [11.41, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [4.77, 7.63], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "58°", "radius": 1.2, "label": { "offset": [10, 5] } },
-              { "type": "angle", "points": ["A", "C", "B"], "name": "42°", "radius": 1.2, "label": { "offset": [-5, -20] } },
-              { "type": "text", "coords": [2.0, 4.2], "content": "9" },
-              { "type": "text", "coords": [5.5, -0.8], "content": "x" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  11.41,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  4.77,
+                  7.63
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "58°",
+                "radius": 1.2,
+                "label": {
+                  "offset": [
+                    10,
+                    5
+                  ]
+                }
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "A",
+                  "C",
+                  "B"
+                ],
+                "name": "42°",
+                "radius": 1.2,
+                "label": {
+                  "offset": [
+                    -5,
+                    -20
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  2,
+                  4.2
+                ],
+                "content": "9"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  5.5,
+                  -0.8
+                ],
+                "content": "x"
+              }
             ]
           }
         },
@@ -1130,20 +2604,113 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-1, 9, 10, -2],
+            "boundingbox": [
+              -1,
+              9,
+              10,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [7, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [1.85, 5.71], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "72°", "radius": 1.0, "label": { "offset": [12, 10] } },
-              { "type": "text", "coords": [0.6, 3.0], "content": "6" },
-              { "type": "text", "coords": [3.5, -0.8], "content": "7" },
-              { "type": "text", "coords": [4.5, 3.2], "content": "x" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  7,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  1.85,
+                  5.71
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "72°",
+                "radius": 1,
+                "label": {
+                  "offset": [
+                    12,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  0.6,
+                  3
+                ],
+                "content": "6"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  3.5,
+                  -0.8
+                ],
+                "content": "7"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  4.5,
+                  3.2
+                ],
+                "content": "x"
+              }
             ]
           }
         },
@@ -1167,8 +2734,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q6 (Original Q19) - Area of triangles (split subQuestions)
   {
     "id": "y11a-6k-q6",
     "c": "6K",
@@ -1194,19 +2759,105 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-1, 10, 15, -2],
+            "boundingbox": [
+              -1,
+              10,
+              15,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [12, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [6.25, 6.47], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "46°", "radius": 1.2, "label": { "offset": [15, 8] } },
-              { "type": "text", "coords": [2.5, 3.5], "content": "9 cm" },
-              { "type": "text", "coords": [6.0, -0.8], "content": "12 cm" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  12,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  6.25,
+                  6.47
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "46°",
+                "radius": 1.2,
+                "label": {
+                  "offset": [
+                    15,
+                    8
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  2.5,
+                  3.5
+                ],
+                "content": "9 cm"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  6,
+                  -0.8
+                ],
+                "content": "12 cm"
+              }
             ]
           }
         },
@@ -1241,19 +2892,105 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-5, 9, 10, -2],
+            "boundingbox": [
+              -5,
+              9,
+              10,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [7.5, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [-4.88, 10.08], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "115°48'", "radius": 1.0, "label": { "offset": [-10, 20] } },
-              { "type": "text", "coords": [-2.0, 5.0], "content": "11.2 cm" },
-              { "type": "text", "coords": [3.7, -0.8], "content": "7.5 cm" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  7.5,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  -4.88,
+                  10.08
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "115°48'",
+                "radius": 1,
+                "label": {
+                  "offset": [
+                    -10,
+                    20
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  -2,
+                  5
+                ],
+                "content": "11.2 cm"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  3.7,
+                  -0.8
+                ],
+                "content": "7.5 cm"
+              }
             ]
           }
         },
@@ -1282,8 +3019,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q7 (Original Q20) - Find theta (split subQuestions)
   {
     "id": "y11a-6k-q7",
     "c": "6K",
@@ -1309,20 +3044,113 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-1, 7, 10, -2],
+            "boundingbox": [
+              -1,
+              7,
+              10,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [8, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [2.5, 4.33], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "θ", "radius": 1.0, "label": { "offset": [10, 8] } },
-              { "type": "text", "coords": [1.0, 2.5], "content": "5" },
-              { "type": "text", "coords": [4.0, -0.8], "content": "8" },
-              { "type": "text", "coords": [5.5, 2.5], "content": "7" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  8,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  2.5,
+                  4.33
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "θ",
+                "radius": 1,
+                "label": {
+                  "offset": [
+                    10,
+                    8
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  1,
+                  2.5
+                ],
+                "content": "5"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  4,
+                  -0.8
+                ],
+                "content": "8"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  5.5,
+                  2.5
+                ],
+                "content": "7"
+              }
             ]
           }
         },
@@ -1357,20 +3185,121 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-1, 10, 12, -2],
+            "boundingbox": [
+              -1,
+              10,
+              12,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [10.5, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [2.47, 7.61], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["C", "B", "A"], "name": "74°", "radius": 1.0, "label": { "offset": [-20, 8] } },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "θ", "radius": 1.2, "label": { "offset": [15, 8] } },
-              { "type": "text", "coords": [1.0, 4.0], "content": "8" },
-              { "type": "text", "coords": [6.8, 4.0], "content": "11" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  10.5,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  2.47,
+                  7.61
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "C",
+                  "B",
+                  "A"
+                ],
+                "name": "74°",
+                "radius": 1,
+                "label": {
+                  "offset": [
+                    -20,
+                    8
+                  ]
+                }
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "θ",
+                "radius": 1.2,
+                "label": {
+                  "offset": [
+                    15,
+                    8
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  1,
+                  4
+                ],
+                "content": "8"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  6.8,
+                  4
+                ],
+                "content": "11"
+              }
             ]
           }
         },
@@ -1400,25 +3329,126 @@ export const Y11_CH6K_QUESTIONS = [
         "q": "In an obtuse triangle, an angle is \\(128^{\\circ}32'\\) opposite to a side of length \\(25\\). Angle \\(\\theta\\) is opposite to a side of length \\(14\\). Find \\(\\theta\\).",
         "a": "25° 59'",
         "h": "Use the sine rule: \\(\\frac{\\sin \\theta}{14} = \\frac{\\sin 128^{\\circ}32'}{25}\\).",
-        "s": "\\(\\sin \\theta = \\frac{14 \\sin 128.533^{\\circ}}{25} \\approx 0.4380 \\implies \\theta \\approx 25.976^{\\circ} = 25^{\circ}59'\\).",
+        "s": "\\(\\sin \\theta = \\frac{14 \\sin 128.533^{\\circ}}{25} \\approx 0.4380 \\implies \\theta \\approx 25.976^{\\circ} = 25^{circ}59'\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-6, 12, 10, -2],
+            "boundingbox": [
+              -6,
+              12,
+              10,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [14.3, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [-8.71, 10.95], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "128°32'", "radius": 1.0, "label": { "offset": [-10, 20] } },
-              { "type": "angle", "points": ["A", "B", "C"], "name": "θ", "radius": 1.5, "label": { "offset": [-25, 8] } },
-              { "type": "text", "coords": [-4.5, 6.0], "content": "14" },
-              { "type": "text", "coords": [3.5, 6.5], "content": "25" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  14.3,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  -8.71,
+                  10.95
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "128°32'",
+                "radius": 1,
+                "label": {
+                  "offset": [
+                    -10,
+                    20
+                  ]
+                }
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                "name": "θ",
+                "radius": 1.5,
+                "label": {
+                  "offset": [
+                    -25,
+                    8
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  -4.5,
+                  6
+                ],
+                "content": "14"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  3.5,
+                  6.5
+                ],
+                "content": "25"
+              }
             ]
           }
         },
@@ -1458,20 +3488,113 @@ export const Y11_CH6K_QUESTIONS = [
           "jsxGraph": {
             "width": 300,
             "height": 200,
-            "boundingbox": [-5, 12, 10, -2],
+            "boundingbox": [
+              -5,
+              12,
+              10,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true,
               "showNavigation": false
             },
             "elements": [
-              { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
-              { "type": "point", "id": "B", "coords": [11.8, 0], "name": "B", "size": 0, "label": { "offset": [10, -10] } },
-              { "type": "point", "id": "C", "coords": [-6.78, 10.61], "name": "C", "size": 0, "label": { "offset": [0, 10] } },
-              { "type": "polygon", "points": ["A", "B", "C"] },
-              { "type": "angle", "points": ["B", "A", "C"], "name": "θ", "radius": 1.0, "label": { "offset": [-10, 20] } },
-              { "type": "text", "coords": [-3.5, 5.0], "content": "12.6" },
-              { "type": "text", "coords": [5.9, -0.8], "content": "11.8" },
-              { "type": "text", "coords": [2.5, 6.0], "content": "21.4" }
+              {
+                "type": "point",
+                "id": "A",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "A",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    -10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "B",
+                "coords": [
+                  11.8,
+                  0
+                ],
+                "name": "B",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    10,
+                    -10
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "id": "C",
+                "coords": [
+                  -6.78,
+                  10.61
+                ],
+                "name": "C",
+                "size": 0,
+                "label": {
+                  "offset": [
+                    0,
+                    10
+                  ]
+                }
+              },
+              {
+                "type": "polygon",
+                "points": [
+                  "A",
+                  "B",
+                  "C"
+                ]
+              },
+              {
+                "type": "angle",
+                "points": [
+                  "B",
+                  "A",
+                  "C"
+                ],
+                "name": "θ",
+                "radius": 1,
+                "label": {
+                  "offset": [
+                    -10,
+                    20
+                  ]
+                }
+              },
+              {
+                "type": "text",
+                "coords": [
+                  -3.5,
+                  5
+                ],
+                "content": "12.6"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  5.9,
+                  -0.8
+                ],
+                "content": "11.8"
+              },
+              {
+                "type": "text",
+                "coords": [
+                  2.5,
+                  6
+                ],
+                "content": "21.4"
+              }
             ]
           }
         },
@@ -1500,8 +3623,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q8 (Original Q21) - Non-split
   {
     "id": "y11a-6k-q8",
     "c": "6K",
@@ -1542,8 +3663,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q9 (Original Q22) - Split subQuestions
   {
     "id": "y11a-6k-q9",
     "c": "6K",
@@ -1612,8 +3731,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q10 (Original Q23) - Split subQuestions
   {
     "id": "y11a-6k-q10",
     "c": "6K",
@@ -1628,24 +3745,150 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 180,
-        "boundingbox": [-50, 180, 550, -40],
+        "boundingbox": [
+          -50,
+          180,
+          550,
+          -40
+        ],
         "boardOptions": {
           "keepaspectratio": true,
           "showNavigation": false
         },
         "elements": [
-          { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-15, -10] } },
-          { "type": "point", "id": "B", "coords": [500, 0], "name": "B", "size": 0, "label": { "offset": [15, -10] } },
-          { "type": "point", "id": "C", "coords": [318, 0], "name": "C", "size": 0, "label": { "offset": [0, -10] } },
-          { "type": "point", "id": "H", "coords": [318, 85.2], "name": "H", "size": 0, "label": { "offset": [0, 10] } },
-          { "type": "segment", "from": "A", "to": "B" },
-          { "type": "segment", "from": "A", "to": "H" },
-          { "type": "segment", "from": "B", "to": "H" },
-          { "type": "segment", "from": "C", "to": "H" },
-          { "type": "rightangle", "points": ["H", "C", "B"], "size": 20 },
-          { "type": "angle", "points": ["B", "A", "H"], "name": "9°", "radius": 40, "label": { "offset": [15, 5] } },
-          { "type": "angle", "points": ["H", "B", "A"], "name": "15°", "radius": 40, "label": { "offset": [-25, 5] } },
-          { "type": "text", "coords": [220, -20], "content": "500 m" }
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -15,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              500,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                15,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              318,
+              0
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "H",
+            "coords": [
+              318,
+              85.2
+            ],
+            "name": "H",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "H"
+          },
+          {
+            "type": "segment",
+            "from": "B",
+            "to": "H"
+          },
+          {
+            "type": "segment",
+            "from": "C",
+            "to": "H"
+          },
+          {
+            "type": "rightangle",
+            "points": [
+              "H",
+              "C",
+              "B"
+            ],
+            "size": 20
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "H"
+            ],
+            "name": "9°",
+            "radius": 40,
+            "label": {
+              "offset": [
+                15,
+                5
+              ]
+            }
+          },
+          {
+            "type": "angle",
+            "points": [
+              "H",
+              "B",
+              "A"
+            ],
+            "name": "15°",
+            "radius": 40,
+            "label": {
+              "offset": [
+                -25,
+                5
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              220,
+              -20
+            ],
+            "content": "500 m"
+          }
         ]
       }
     },
@@ -1658,7 +3901,7 @@ export const Y11_CH6K_QUESTIONS = [
         "q": "Use the sine rule to show that \\(HB = \\frac{500 \\sin 9^{\\circ}}{\\sin 156^{\\circ}}\\).",
         "a": "In triangle AHB, the sum of angles is 180 degrees, so angle AHB = 180 - (9 + 15) = 156 degrees. Using the sine rule: HB / sin 9 = 500 / sin 156, which yields HB = 500 sin 9 / sin 156.",
         "h": "Find \\(\\angle AHB\\) first, then apply the sine rule: \\(\\frac{HB}{\\sin(\\angle HAB)} = \\frac{AB}{\\sin(\\angle AHB)}\\).",
-        "s": "\\(\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}\\). By the sine rule in \\(\\triangle AHB\\): \\(\\frac{HB}{\\sin 9^{\circ}} = \\frac{500}{\\sin 156^{\\circ}} \\implies HB = \\frac{500 \\sin 9^{\circ}}{\\sin 156^{\\circ}}\\).",
+        "s": "\\(\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}\\). By the sine rule in \\(\\triangle AHB\\): \\(\\frac{HB}{\\sin 9^{circ}} = \\frac{500}{\\sin 156^{\\circ}} \\implies HB = \\frac{500 \\sin 9^{circ}}{\\sin 156^{\\circ}}\\).",
         "solutionSteps": [
           {
             "explanation": "Find the third angle \\(\\angle AHB\\) in triangle \\(AHB\\).",
@@ -1706,8 +3949,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q11 (Original Q24) - Top-level split
   {
     "id": "y11a-6k-q11a",
     "c": "6K",
@@ -1715,33 +3956,166 @@ export const Y11_CH6K_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "A man is sitting in a boat at \\(P\\), where the angle of elevation of the top \\(T\\) of a vertical cliff \\(BT\\) is \\(12^{\\circ}\\). He then rows \\(60\\text{ metres}\\) directly towards the cliff to \\(Q\\), where the angle of elevation of \\(T\\) is \\(22^{\\circ}\\). Show that \\(TQ = \\frac{60 \\sin 12^{\circ}}{\\sin 10^{\circ}}\\).",
+    "q": "A man is sitting in a boat at \\(P\\), where the angle of elevation of the top \\(T\\) of a vertical cliff \\(BT\\) is \\(12^{\\circ}\\). He then rows \\(60\\text{ metres}\\) directly towards the cliff to \\(Q\\), where the angle of elevation of \\(T\\) is \\(22^{\\circ}\\). Show that \\(TQ = \\frac{60 \\sin 12^{circ}}{\\sin 10^{circ}}\\).",
     "a": "In triangle PTQ, the angle TPQ = 12 degrees. The exterior angle at Q is 22 degrees, so angle PTQ = 22 - 12 = 10 degrees. By the sine rule: TQ / sin 12 = 60 / sin 10, which gives TQ = 60 sin 12 / sin 10.",
     "h": "Work out \\(\\angle TPQ\\) and \\(\\angle PTQ\\) inside triangle \\(PTQ\\) and apply the sine rule.",
-    "s": "\\(\\angle TPQ = 12^{\\circ}\\). The exterior angle \\(\\angle TQB = 22^{\\circ}\\), so the interior angle \\(\\angle TQP = 180^{\\circ} - 22^{\\circ} = 158^{\\circ}\\). Thus, \\(\\angle PTQ = 180^{\\circ} - 12^{\\circ} - 158^{\\circ} = 10^{\\circ}\\). By the sine rule in \\(\\triangle PTQ\\): \\(\\frac{TQ}{\\sin 12^{\circ}} = \\frac{60}{\\sin 10^{\circ}} \\implies TQ = \\frac{60 \\sin 12^{\circ}}{\\sin 10^{\circ}}\\).",
+    "s": "\\(\\angle TPQ = 12^{\\circ}\\). The exterior angle \\(\\angle TQB = 22^{\\circ}\\), so the interior angle \\(\\angle TQP = 180^{\\circ} - 22^{\\circ} = 158^{\\circ}\\). Thus, \\(\\angle PTQ = 180^{\\circ} - 12^{\\circ} - 158^{\\circ} = 10^{\\circ}\\). By the sine rule in \\(\\triangle PTQ\\): \\(\\frac{TQ}{\\sin 12^{circ}} = \\frac{60}{\\sin 10^{circ}} \\implies TQ = \\frac{60 \\sin 12^{circ}}{\\sin 10^{circ}}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
         "height": 180,
-        "boundingbox": [-50, 120, 350, -30],
+        "boundingbox": [
+          -50,
+          120,
+          350,
+          -30
+        ],
         "boardOptions": {
           "keepaspectratio": true,
           "showNavigation": false
         },
         "elements": [
-          { "type": "point", "id": "P", "coords": [0, 0], "name": "P", "size": 0, "label": { "offset": [-15, -10] } },
-          { "type": "point", "id": "Q", "coords": [150, 0], "name": "Q", "size": 0, "label": { "offset": [0, -10] } },
-          { "type": "point", "id": "B", "coords": [300, 0], "name": "B", "size": 0, "label": { "offset": [15, -10] } },
-          { "type": "point", "id": "T", "coords": [300, 60.6], "name": "T", "size": 0, "label": { "offset": [0, 10] } },
-          { "type": "segment", "from": "P", "to": "B" },
-          { "type": "segment", "from": "P", "to": "T" },
-          { "type": "segment", "from": "Q", "to": "T" },
-          { "type": "segment", "from": "B", "to": "T" },
-          { "type": "rightangle", "points": ["T", "B", "P"], "size": 15 },
-          { "type": "angle", "points": ["B", "P", "T"], "name": "12°", "radius": 30, "label": { "offset": [15, 5] } },
-          { "type": "angle", "points": ["B", "Q", "T"], "name": "22°", "radius": 25, "label": { "offset": [15, 5] } },
-          { "type": "text", "coords": [75, -15], "content": "60 m" },
-          { "type": "text", "coords": [310, 30], "content": "h" }
+          {
+            "type": "point",
+            "id": "P",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "P",
+            "size": 0,
+            "label": {
+              "offset": [
+                -15,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "Q",
+            "coords": [
+              150,
+              0
+            ],
+            "name": "Q",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              300,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                15,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "T",
+            "coords": [
+              300,
+              60.6
+            ],
+            "name": "T",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "P",
+            "to": "B"
+          },
+          {
+            "type": "segment",
+            "from": "P",
+            "to": "T"
+          },
+          {
+            "type": "segment",
+            "from": "Q",
+            "to": "T"
+          },
+          {
+            "type": "segment",
+            "from": "B",
+            "to": "T"
+          },
+          {
+            "type": "rightangle",
+            "points": [
+              "T",
+              "B",
+              "P"
+            ],
+            "size": 15
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "P",
+              "T"
+            ],
+            "name": "12°",
+            "radius": 30,
+            "label": {
+              "offset": [
+                15,
+                5
+              ]
+            }
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "Q",
+              "T"
+            ],
+            "name": "22°",
+            "radius": 25,
+            "label": {
+              "offset": [
+                15,
+                5
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              75,
+              -15
+            ],
+            "content": "60 m"
+          },
+          {
+            "type": "text",
+            "coords": [
+              310,
+              30
+            ],
+            "content": "h"
+          }
         ]
       }
     },
@@ -1793,8 +4167,6 @@ export const Y11_CH6K_QUESTIONS = [
       }
     ]
   },
-
-  // Q12 (Original Q25) - Top-level split
   {
     "id": "y11a-6k-q12a",
     "c": "6K",
@@ -1810,24 +4182,132 @@ export const Y11_CH6K_QUESTIONS = [
       "jsxGraph": {
         "width": 300,
         "height": 240,
-        "boundingbox": [-50, 250, 300, -50],
+        "boundingbox": [
+          -50,
+          250,
+          300,
+          -50
+        ],
         "boardOptions": {
           "keepaspectratio": true,
           "showNavigation": false
         },
         "elements": [
-          { "type": "point", "id": "P", "coords": [0, 0], "name": "P", "size": 0, "label": { "offset": [-10, -10] } },
-          { "type": "point", "id": "Q", "coords": [77.1, 91.9], "name": "Q", "size": 0, "label": { "offset": [-15, 10] } },
-          { "type": "point", "id": "R", "coords": [230.3, -36.7], "name": "R", "size": 0, "label": { "offset": [10, -10] } },
-          { "type": "segment", "from": "P", "to": "Q" },
-          { "type": "segment", "from": "Q", "to": "R" },
-          { "type": "segment", "from": "P", "to": "R" },
-          { "type": "arrow", "from": "P", "to": [0, 80], "strokeColor": "gray", "dash": 2 },
-          { "type": "arrow", "from": "Q", "to": [77.1, 171.9], "strokeColor": "gray", "dash": 2 },
-          { "type": "text", "coords": [10, 80], "content": "N" },
-          { "type": "text", "coords": [87.1, 171.9], "content": "N" },
-          { "type": "text", "coords": [25, 55], "content": "120" },
-          { "type": "text", "coords": [160, 45], "content": "200" }
+          {
+            "type": "point",
+            "id": "P",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "P",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "Q",
+            "coords": [
+              77.1,
+              91.9
+            ],
+            "name": "Q",
+            "size": 0,
+            "label": {
+              "offset": [
+                -15,
+                10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "R",
+            "coords": [
+              230.3,
+              -36.7
+            ],
+            "name": "R",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "P",
+            "to": "Q"
+          },
+          {
+            "type": "segment",
+            "from": "Q",
+            "to": "R"
+          },
+          {
+            "type": "segment",
+            "from": "P",
+            "to": "R"
+          },
+          {
+            "type": "arrow",
+            "from": "P",
+            "to": [
+              0,
+              80
+            ],
+            "strokeColor": "gray",
+            "dash": 2
+          },
+          {
+            "type": "arrow",
+            "from": "Q",
+            "to": [
+              77.1,
+              171.9
+            ],
+            "strokeColor": "gray",
+            "dash": 2
+          },
+          {
+            "type": "text",
+            "coords": [
+              10,
+              80
+            ],
+            "content": "N"
+          },
+          {
+            "type": "text",
+            "coords": [
+              87.1,
+              171.9
+            ],
+            "content": "N"
+          },
+          {
+            "type": "text",
+            "coords": [
+              25,
+              55
+            ],
+            "content": "120"
+          },
+          {
+            "type": "text",
+            "coords": [
+              160,
+              45
+            ],
+            "content": "200"
+          }
         ]
       }
     },
