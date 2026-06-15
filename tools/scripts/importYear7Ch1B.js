@@ -372,6 +372,234 @@ export const allQuestions = [
   },
   {
     "chapterId": "y7-1",
+    "topicId": "y7-1c",
+    "topicCode": "1C",
+    "topicTitle": "The standard addition algorithm",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isManual": true,
+    "isActive": true,
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  6 ★ 8\n+ ★ 3 9\n-------\n  9 9 7</pre>Choose the correct missing digits in order from top to bottom.",
+    "options": [
+      "\\(5, 3\\)",
+      "\\(5, 4\\)",
+      "\\(4, 3\\)",
+      "\\(3, 5\\)"
+    ],
+    "answer": 0,
+    "solution": "Step 1: Units column\nAdding Units: \\(8 + 9 = 17\\). Write down \\(7\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 3 = 9 \\rightarrow \\star + 4 = 9 \\rightarrow \\star = 5\\).\nStep 3: Hundreds column\nAdding Hundreds: \\(6 + \\star = 9 \\rightarrow \\star = 3\\).\nThus, the missing digits from top to bottom are \\(5\\) and \\(3\\).",
+    "createdAt": "2026-06-15T14:18:32.096Z",
+    "solutionSteps": [
+      {
+        "explanation": "Add the Units column.",
+        "workingOut": "\\(8 + 9 = 17\\).\nWrite down \\(7\\) in the Units column and carry over \\(1\\) to the Tens column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the missing digit in the Tens column.",
+        "workingOut": "\\(1\\text{ (carry)} + \\star + 3 = 9\\)\n\\(\\star + 4 = 9 \\rightarrow \\star = 5\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the missing digit in the Hundreds column.",
+        "workingOut": "\\(6 + \\star = 9 \\rightarrow \\star = 3\\).\nTherefore, the missing digits from top to bottom are \\(5\\) and \\(3\\).",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "chapterId": "y7-1",
+    "topicId": "y7-1c",
+    "topicCode": "1C",
+    "topicTitle": "The standard addition algorithm",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isManual": true,
+    "isActive": true,
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  8 ★ 4\n+ ★ 9 ★\n-------\n  ★ 0 3</pre>Choose the correct missing digits in order: (top ★, bottom-left ★, bottom-right ★, sum ★).",
+    "options": [
+      "\\(0, 1, 9, 1\\)",
+      "\\(1, 0, 9, 1\\)",
+      "\\(0, 2, 9, 2\\)",
+      "\\(9, 1, 0, 1\\)"
+    ],
+    "answer": 0,
+    "solution": "Step 1: Units column\nAdding Units: \\(4 + \\star = 13 \\rightarrow \\star = 9\\). Write down \\(3\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 9 = 10 \\rightarrow \\star + 10 = 10 \\rightarrow \\star = 0\\). Write down \\(0\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 8 + \\star = \\text{sum } \\star\\). Since sum \\(\\star\\) must be the same digit as bottom-left \\(\\star\\):\nLet bottom-left \\(\\star = 1\\). Then \\(1 + 8 + 1 = 10\\). This matches the sum \\(\\star = 1\\) (representing the thousands place carry) and write \\(0\\) in hundreds place.\nThus, top \\(\\star = 0\\), bottom-left \\(\\star = 1\\), bottom-right \\(\\star = 9\\), sum \\(\\star = 1\\).",
+    "createdAt": "2026-06-15T14:18:32.098Z",
+    "solutionSteps": [
+      {
+        "explanation": "Add the Units column to find the bottom-right missing digit.",
+        "workingOut": "\\(4 + \\star = 13 \\rightarrow \\star = 9\\).\nWrite down \\(3\\) in the Units column and carry over \\(1\\) to the Tens column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Tens column missing digit.",
+        "workingOut": "\\(1\\text{ (carry)} + \\star + 9 = 10 \\rightarrow \\star + 10 = 10 \\rightarrow \\star = 0\\).\nWrite down \\(0\\) in the Tens column and carry over \\(1\\) to the Hundreds column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Hundreds and Thousands column missing digits.",
+        "workingOut": "\\(1\\text{ (carry)} + 8 + \\star_{bottom\\_left} = 10 \\rightarrow \\star_{bottom\\_left} = 1\\).\nThis results in the sum being \\(1003\\), so the sum thousands digit is also \\(1\\).\nThus, the digits are: top \\(\\star = 0\\), bottom-left \\(\\star = 1\\), bottom-right \\(\\star = 9\\), sum \\(\\star = 1\\).",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "chapterId": "y7-1",
+    "topicId": "y7-1c",
+    "topicCode": "1C",
+    "topicTitle": "The standard addition algorithm",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isManual": true,
+    "isActive": true,
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  9 1 9\n+ 8 9 ★\n-------\n1 ★ 1 8</pre>Choose the correct missing digits in order from top to bottom.",
+    "options": [
+      "\\(9, 8\\)",
+      "\\(9, 7\\)",
+      "\\(8, 9\\)",
+      "\\(7, 8\\)"
+    ],
+    "answer": 0,
+    "solution": "Step 1: Units column\nAdding Units: \\(9 + \\star = 18 \\rightarrow \\star = 9\\). Write down \\(8\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + 1 + 9 = 11\\). Write down \\(1\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 9 + 8 = 18\\). Write down \\(8\\) in the Hundreds place and carry \\(1\\) to the Thousands place.\nThus, bottom-right \\(\\star = 9\\) and sum hundreds \\(\\star = 8\\).",
+    "createdAt": "2026-06-15T14:18:32.098Z",
+    "solutionSteps": [
+      {
+        "explanation": "Add the Units column.",
+        "workingOut": "\\(9 + \\star = 18 \\rightarrow \\star = 9\\).\nWrite down \\(8\\) in the Units column and carry over \\(1\\) to the Tens column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Verify the Tens column.",
+        "workingOut": "\\(1\\text{ (carry)} + 1 + 9 = 11\\).\nWrite down \\(1\\) in the Tens column and carry over \\(1\\) to the Hundreds column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Hundreds column missing digit.",
+        "workingOut": "\\(1\\text{ (carry)} + 9 + 8 = 18\\).\nWrite down \\(8\\) in the Hundreds place and carry \\(1\\) to the Thousands place.\nTherefore, the missing digits from top to bottom are \\(9\\) and \\(8\\).",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "chapterId": "y7-1",
+    "topicId": "y7-1c",
+    "topicCode": "1C",
+    "topicTitle": "The standard addition algorithm",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isManual": true,
+    "isActive": true,
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  6 ★ 3\n+ ★ 8 9\n-------\n1 2 6 2</pre>Choose the correct missing digits in order from top to bottom.",
+    "options": [
+      "\\(7, 5\\)",
+      "\\(6, 6\\)",
+      "\\(7, 6\\)",
+      "\\(5, 7\\)"
+    ],
+    "answer": 0,
+    "solution": "Step 1: Units column\nAdding Units: \\(3 + 9 = 12\\). Write down \\(2\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 8 = 16 \\rightarrow \\star + 9 = 16 \\rightarrow \\star = 7\\). Write down \\(6\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 6 + \\star = 12 \\rightarrow 7 + \\star = 12 \\rightarrow \\star = 5\\). Write down \\(12\\).\nThus, the missing digits from top to bottom are \\(7\\) and \\(5\\).",
+    "createdAt": "2026-06-15T14:18:32.098Z",
+    "solutionSteps": [
+      {
+        "explanation": "Add the Units column.",
+        "workingOut": "\\(3 + 9 = 12\\).\nWrite down \\(2\\) in the Units column and carry over \\(1\\) to the Tens column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Tens column missing digit.",
+        "workingOut": "\\(1\\text{ (carry)} + \\star + 8 = 16 \\rightarrow \\star + 9 = 16 \\rightarrow \\star = 7\\).\nWrite down \\(6\\) in the Tens column and carry over \\(1\\) to the Hundreds column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Hundreds column missing digit.",
+        "workingOut": "\\(1\\text{ (carry)} + 6 + \\star = 12 \\rightarrow 7 + \\star = 12 \\rightarrow \\star = 5\\).\nTherefore, the missing digits from top to bottom are \\(7\\) and \\(5\\).",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "chapterId": "y7-1",
+    "topicId": "y7-1c",
+    "topicCode": "1C",
+    "topicTitle": "The standard addition algorithm",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isManual": true,
+    "isActive": true,
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  7 ★ 1\n+ ★ 9 7\n-------\n1 0 9 ★</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
+    "options": [
+      "\\(0, 3, 8\\)",
+      "\\(1, 2, 8\\)",
+      "\\(0, 4, 8\\)",
+      "\\(9, 3, 8\\)"
+    ],
+    "answer": 0,
+    "solution": "Step 1: Units column\nAdding Units: \\(1 + 7 = 8 \\rightarrow \\star = 8\\). No carry.\nStep 2: Tens column\nAdding Tens: \\( \\star + 9 = 9 \\rightarrow \\star = 0\\). No carry.\nStep 3: Hundreds column\nAdding Hundreds: \\(7 + \\star = 10 \\rightarrow \\star = 3\\).\nThus, the missing digits are: top \\(\\star = 0\\), bottom \\(\\star = 3\\), sum \\(\\star = 8\\).",
+    "createdAt": "2026-06-15T14:18:32.098Z",
+    "solutionSteps": [
+      {
+        "explanation": "Add the Units column.",
+        "workingOut": "\\(1 + 7 = 8\\).\nSo the sum units place missing digit \\(\\star = 8\\). No carry.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Tens column missing digit.",
+        "workingOut": "\\(\\star + 9 = 9 \\rightarrow \\star = 0\\).\nNo carry.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Hundreds column missing digit.",
+        "workingOut": "\\(7 + \\star = 10 \\rightarrow \\star = 3\\).\nTherefore, the missing digits are: top \\(\\star = 0\\), bottom \\(\\star = 3\\), sum \\(\\star = 8\\).",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "chapterId": "y7-1",
+    "topicId": "y7-1c",
+    "topicCode": "1C",
+    "topicTitle": "The standard addition algorithm",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "isManual": true,
+    "isActive": true,
+    "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  3 ★ 3\n+ 7 7 ★\n-------\n★ 1 1 0</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
+    "options": [
+      "\\(3, 7, 1\\)",
+      "\\(3, 7, 2\\)",
+      "\\(4, 6, 1\\)",
+      "\\(2, 8, 1\\)"
+    ],
+    "answer": 0,
+    "solution": "Step 1: Units column\nAdding Units: \\(3 + \\star = 10 \\rightarrow \\star = 7\\). Write down \\(0\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 7 = 11 \\rightarrow \\star + 8 = 11 \\rightarrow \\star = 3\\). Write down \\(1\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 3 + 7 = 11\\). Write down \\(1\\), carry \\(1\\) to the Thousands place. This makes the sum thousands place \\(\\star = 1\\).\nThus, the missing digits are: top \\(\\star = 3\\), bottom \\(\\star = 7\\), sum \\(\\star = 1\\).",
+    "createdAt": "2026-06-15T14:18:32.098Z",
+    "solutionSteps": [
+      {
+        "explanation": "Add the Units column to find the bottom missing digit.",
+        "workingOut": "\\(3 + \\star = 10 \\rightarrow \\star = 7\\).\nWrite down \\(0\\) and carry over \\(1\\) to the Tens column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Tens column missing digit.",
+        "workingOut": "\\(1\\text{ (carry)} + \\star + 7 = 11 \\rightarrow \\star + 8 = 11 \\rightarrow \\star = 3\\).\nWrite down \\(1\\) and carry over \\(1\\) to the Hundreds column.",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the Hundreds and Thousands column missing digits.",
+        "workingOut": "\\(1\\text{ (carry)} + 3 + 7 = 11\\).\nWrite down \\(1\\) in the Hundreds place and carry \\(1\\) to the Thousands place, making the sum thousands place \\(\\star = 1\\).\nTherefore, the missing digits are: top \\(\\star = 3\\), bottom \\(\\star = 7\\), sum \\(\\star = 1\\).",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "chapterId": "y7-1",
     "topicId": "y7-1d",
     "topicCode": "1D",
     "topicTitle": "Subtraction",
