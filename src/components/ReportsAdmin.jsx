@@ -89,7 +89,9 @@ const ReportsAdmin = () => {
   const getPreviewStudentAnswer = () => {
     if (!previewReport) return null;
     const reportAnswer = previewReport.studentAnswer;
-    if (reportAnswer !== undefined && reportAnswer !== null && reportAnswer !== '') {
+    // Ignore a stringified object ("[object Object]") that lost its structure at
+    // report-capture time — fall through to the attempt, which keeps the real object.
+    if (reportAnswer !== undefined && reportAnswer !== null && reportAnswer !== '' && String(reportAnswer) !== '[object Object]') {
       return reportAnswer;
     }
     const attemptResult = previewAttempt?.results?.[previewAttempt?.resultIndex];
@@ -926,6 +928,11 @@ const ReportsAdmin = () => {
           const q = previewQuestion || previewReport.questionData || {};
           const studentAnswer = getPreviewStudentAnswer();
           const options = Array.isArray(q.options) ? q.options : [];
+          const hasSubs = Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
+          // For sub-questions the student's answer is an object keyed by sq.id || index.
+          const subAnswerObj = (studentAnswer && typeof studentAnswer === 'object' && !Array.isArray(studentAnswer))
+            ? studentAnswer
+            : null;
           return (
             <motion.div
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
@@ -998,7 +1005,9 @@ const ReportsAdmin = () => {
                     )}
                   </div>
 
-                  {/* Student's answer */}
+                  {/* Student's answer — single-answer questions only.
+                      Sub-question answers are shown per-part in the Sub-questions block below. */}
+                  {!hasSubs && (
                   <div style={{ padding: '20px 22px', borderRadius: '20px', background: '#eef2ff', border: '1px solid #c7d2fe' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
                       <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#4f46e5' }}>Student's Answer</span>
@@ -1021,6 +1030,49 @@ const ReportsAdmin = () => {
                       <MathView content={formatStudentAnswer(studentAnswer) || 'No answer recorded'} style={{ color: '#312e81', fontWeight: 800, fontSize: '1rem', whiteSpace: 'pre-wrap' }} />
                     )}
                   </div>
+                  )}
+
+                  {/* Sub-questions — each part with the student's answer, the correct
+                      answer, and its own step-by-step worked solution. */}
+                  {hasSubs && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                      {q.subQuestions.map((sq, idx) => {
+                        const sAns = subAnswerObj ? subAnswerObj[sq.id ?? idx] : undefined;
+                        const hasAns = sAns !== undefined && sAns !== null && sAns !== '';
+                        const isCorrect = hasAns && answersMatch(sAns, sq.answer);
+                        return (
+                          <div key={sq.id ?? idx} style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)', boxShadow: '0 12px 28px rgba(15,23,42,0.04)' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+                              <span style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#eef2ff', color: '#4f46e5', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.82rem', flexShrink: 0 }}>
+                                {String.fromCharCode(97 + idx)}
+                              </span>
+                              <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontSize: '0.98rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5 }} />
+                            </div>
+
+                            {/* Student's answer for this part */}
+                            <div style={{ padding: '12px 14px', borderRadius: '14px', background: '#eef2ff', border: '1px solid #c7d2fe', marginBottom: '8px' }}>
+                              <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#4f46e5', marginBottom: '4px' }}>Student's Answer</div>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                                {hasAns && isCorrect && <CheckCircle size={16} style={{ color: '#10b981' }} />}
+                                {hasAns && !isCorrect && <X size={16} style={{ color: '#ef4444' }} />}
+                                <MathView content={hasAns ? formatStudentAnswer(sAns) : 'No answer recorded'} style={{ color: '#312e81', fontWeight: 800, fontSize: '0.95rem' }} />
+                              </div>
+                              {hasAns && !isCorrect && (
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px', color: '#64748b', fontWeight: 700, fontSize: '0.85rem' }}>
+                                  Correct: <MathView content={String(sq.answer ?? '')} style={{ color: '#166534', fontWeight: 800 }} />
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Step-by-step solution for this part */}
+                            {(sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0)) && (
+                              <WorkedSolutionSteps question={sq} graphData={sq.graphData} />
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
 
                   {/* Options */}
                   {options.length > 0 && (
@@ -1084,7 +1136,7 @@ const ReportsAdmin = () => {
 
                   {/* Solution — step-by-step when the question has solutionSteps,
                       otherwise a single block. Same renderer the students see. */}
-                  {(q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
+                  {!hasSubs && (q.solution || (Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0)) && (
                     <WorkedSolutionSteps question={q} graphData={q.graphData} />
                   )}
                 </div>
