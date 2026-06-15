@@ -382,12 +382,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  6 ★ 8\n+ ★ 3 9\n-------\n  9 9 7</pre>Choose the correct missing digits in order from top to bottom.",
     "options": [
+      "\\(3, 5\\)",
       "\\(5, 3\\)",
       "\\(5, 4\\)",
-      "\\(4, 3\\)",
-      "\\(3, 5\\)"
+      "\\(4, 3\\)"
     ],
-    "answer": 0,
+    "answer": 1,
     "solution": "Step 1: Units column\nAdding Units: \\(8 + 9 = 17\\). Write down \\(7\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 3 = 9 \\rightarrow \\star + 4 = 9 \\rightarrow \\star = 5\\).\nStep 3: Hundreds column\nAdding Hundreds: \\(6 + \\star = 9 \\rightarrow \\star = 3\\).\nThus, the missing digits from top to bottom are \\(5\\) and \\(3\\).",
     "createdAt": "2026-06-15T14:18:32.096Z",
     "solutionSteps": [
@@ -420,12 +420,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  8 ★ 4\n+ ★ 9 ★\n-------\n  ★ 0 3</pre>Choose the correct missing digits in order: (top ★, bottom-left ★, bottom-right ★, sum ★).",
     "options": [
-      "\\(0, 1, 9, 1\\)",
+      "\\(9, 1, 0, 1\\)",
       "\\(1, 0, 9, 1\\)",
-      "\\(0, 2, 9, 2\\)",
-      "\\(9, 1, 0, 1\\)"
+      "\\(0, 1, 9, 1\\)",
+      "\\(0, 2, 9, 2\\)"
     ],
-    "answer": 0,
+    "answer": 2,
     "solution": "Step 1: Units column\nAdding Units: \\(4 + \\star = 13 \\rightarrow \\star = 9\\). Write down \\(3\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 9 = 10 \\rightarrow \\star + 10 = 10 \\rightarrow \\star = 0\\). Write down \\(0\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 8 + \\star = \\text{sum } \\star\\). Since sum \\(\\star\\) must be the same digit as bottom-left \\(\\star\\):\nLet bottom-left \\(\\star = 1\\). Then \\(1 + 8 + 1 = 10\\). This matches the sum \\(\\star = 1\\) (representing the thousands place carry) and write \\(0\\) in hundreds place.\nThus, top \\(\\star = 0\\), bottom-left \\(\\star = 1\\), bottom-right \\(\\star = 9\\), sum \\(\\star = 1\\).",
     "createdAt": "2026-06-15T14:18:32.098Z",
     "solutionSteps": [
@@ -458,12 +458,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  9 1 9\n+ 8 9 ★\n-------\n1 ★ 1 8</pre>Choose the correct missing digits in order from top to bottom.",
     "options": [
+      "\\(7, 8\\)",
       "\\(9, 8\\)",
       "\\(9, 7\\)",
-      "\\(8, 9\\)",
-      "\\(7, 8\\)"
+      "\\(8, 9\\)"
     ],
-    "answer": 0,
+    "answer": 1,
     "solution": "Step 1: Units column\nAdding Units: \\(9 + \\star = 18 \\rightarrow \\star = 9\\). Write down \\(8\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + 1 + 9 = 11\\). Write down \\(1\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 9 + 8 = 18\\). Write down \\(8\\) in the Hundreds place and carry \\(1\\) to the Thousands place.\nThus, bottom-right \\(\\star = 9\\) and sum hundreds \\(\\star = 8\\).",
     "createdAt": "2026-06-15T14:18:32.098Z",
     "solutionSteps": [
@@ -496,12 +496,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  6 ★ 3\n+ ★ 8 9\n-------\n1 2 6 2</pre>Choose the correct missing digits in order from top to bottom.",
     "options": [
-      "\\(7, 5\\)",
-      "\\(6, 6\\)",
+      "\\(5, 7\\)",
       "\\(7, 6\\)",
-      "\\(5, 7\\)"
+      "\\(6, 6\\)",
+      "\\(7, 5\\)"
     ],
-    "answer": 0,
+    "answer": 3,
     "solution": "Step 1: Units column\nAdding Units: \\(3 + 9 = 12\\). Write down \\(2\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 8 = 16 \\rightarrow \\star + 9 = 16 \\rightarrow \\star = 7\\). Write down \\(6\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 6 + \\star = 12 \\rightarrow 7 + \\star = 12 \\rightarrow \\star = 5\\). Write down \\(12\\).\nThus, the missing digits from top to bottom are \\(7\\) and \\(5\\).",
     "createdAt": "2026-06-15T14:18:32.098Z",
     "solutionSteps": [
@@ -534,12 +534,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  7 ★ 1\n+ ★ 9 7\n-------\n1 0 9 ★</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
     "options": [
-      "\\(0, 3, 8\\)",
-      "\\(1, 2, 8\\)",
       "\\(0, 4, 8\\)",
-      "\\(9, 3, 8\\)"
+      "\\(9, 3, 8\\)",
+      "\\(1, 2, 8\\)",
+      "\\(0, 3, 8\\)"
     ],
-    "answer": 0,
+    "answer": 3,
     "solution": "Step 1: Units column\nAdding Units: \\(1 + 7 = 8 \\rightarrow \\star = 8\\). No carry.\nStep 2: Tens column\nAdding Tens: \\( \\star + 9 = 9 \\rightarrow \\star = 0\\). No carry.\nStep 3: Hundreds column\nAdding Hundreds: \\(7 + \\star = 10 \\rightarrow \\star = 3\\).\nThus, the missing digits are: top \\(\\star = 0\\), bottom \\(\\star = 3\\), sum \\(\\star = 8\\).",
     "createdAt": "2026-06-15T14:18:32.098Z",
     "solutionSteps": [
@@ -572,12 +572,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Find the missing digits (★) to make the addition correct:\n<pre style=\"font-family: monospace; line-height: 1.2;\">  3 ★ 3\n+ 7 7 ★\n-------\n★ 1 1 0</pre>Choose the correct missing digits in order: (top ★, bottom ★, sum ★).",
     "options": [
-      "\\(3, 7, 1\\)",
       "\\(3, 7, 2\\)",
-      "\\(4, 6, 1\\)",
-      "\\(2, 8, 1\\)"
+      "\\(3, 7, 1\\)",
+      "\\(2, 8, 1\\)",
+      "\\(4, 6, 1\\)"
     ],
-    "answer": 0,
+    "answer": 1,
     "solution": "Step 1: Units column\nAdding Units: \\(3 + \\star = 10 \\rightarrow \\star = 7\\). Write down \\(0\\), carry \\(1\\) to the Tens column.\nStep 2: Tens column\nAdding Tens: \\(1\\text{ (carry)} + \\star + 7 = 11 \\rightarrow \\star + 8 = 11 \\rightarrow \\star = 3\\). Write down \\(1\\), carry \\(1\\) to the Hundreds column.\nStep 3: Hundreds column\nAdding Hundreds: \\(1\\text{ (carry)} + 3 + 7 = 11\\). Write down \\(1\\), carry \\(1\\) to the Thousands place. This makes the sum thousands place \\(\\star = 1\\).\nThus, the missing digits are: top \\(\\star = 3\\), bottom \\(\\star = 7\\), sum \\(\\star = 1\\).",
     "createdAt": "2026-06-15T14:18:32.098Z",
     "solutionSteps": [
@@ -1008,8 +1008,8 @@ export const allQuestions = [
     "isActive": true,
     "question": "Choose the correct symbol to make the statement true: \\(54 + 8 \\quad \\square \\quad 31 + 31\\)",
     "options": [
-      "\\(<\\)",
       "\\(>\\)",
+      "\\(<\\)",
       "\\(=\\)"
     ],
     "answer": 2,
@@ -1045,11 +1045,11 @@ export const allQuestions = [
     "isActive": true,
     "question": "Choose the correct symbol to make the statement true: \\(74 - 18 \\quad \\square \\quad 27 + 28\\)",
     "options": [
-      "\\(<\\)",
       "\\(>\\)",
+      "\\(<\\)",
       "\\(=\\)"
     ],
-    "answer": 1,
+    "answer": 0,
     "solution": "Step 1: Calculate the Left-Hand Side (LHS).\n\\[LHS = 74 - 18 = 56\\]\nStep 2: Calculate the Right-Hand Side (RHS).\n\\[RHS = 27 + 28 = 55\\]\nStep 3: Compare the values.\nSince \\(56 > 55\\), the correct symbol is **\\(>\\)**.",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
@@ -1120,10 +1120,10 @@ export const allQuestions = [
     "question": "Choose the correct symbol to make the statement true: \\(397 + 452 \\quad \\square \\quad 1000 - 152\\)",
     "options": [
       "\\(<\\)",
-      "\\(>\\)",
-      "\\(=\\)"
+      "\\(=\\)",
+      "\\(>\\)"
     ],
-    "answer": 1,
+    "answer": 2,
     "solution": "Step 1: Calculate the Left-Hand Side (LHS).\n\\[397 + 452 = 849\\]\nStep 2: Calculate the Right-Hand Side (RHS).\n\\[1000 - 152 = 848\\]\nStep 3: Compare LHS and RHS.\nSince \\(849 > 848\\), the correct symbol is **\\(>\\)**.",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
@@ -2131,12 +2131,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using short division: \\(7849 \\div 5\\)",
     "options": [
-      "\\(1569\\text{ remainder }4\\)",
-      "\\(1569\\text{ remainder }2\\)",
       "\\(1568\\text{ remainder }4\\)",
-      "\\(1570\\text{ remainder }1\\)"
+      "\\(1569\\text{ remainder }4\\)",
+      "\\(1570\\text{ remainder }1\\)",
+      "\\(1569\\text{ remainder }2\\)"
     ],
-    "answer": 0,
+    "answer": 1,
     "solution": "Step 1: Set up short division.\n• \\(7 \\div 5 = 1\\) remainder \\(2\\) (carry \\(2\\) to make \\(28\\)).\n• \\(28 \\div 5 = 5\\) remainder \\(3\\) (carry \\(3\\) to make \\(34\\)).\n• \\(34 \\div 5 = 6\\) remainder \\(4\\) (carry \\(4\\) to make \\(49\\)).\n• \\(49 \\div 5 = 9\\) remainder \\(4\\).\nTherefore, the result is \\(1569\\) with a remainder of \\(4\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
@@ -2161,8 +2161,8 @@ export const allQuestions = [
     "options": [
       "\\(5653\\text{ remainder }1\\)",
       "\\(5653\\text{ remainder }3\\)",
-      "\\(5652\\text{ remainder }1\\)",
-      "\\(5654\\text{ remainder }2\\)"
+      "\\(5654\\text{ remainder }2\\)",
+      "\\(5652\\text{ remainder }1\\)"
     ],
     "answer": 0,
     "solution": "Step 1: Perform short division.\n• \\(39 \\div 7 = 5\\) remainder \\(4\\) (carry \\(4\\) to make \\(45\\)).\n• \\(45 \\div 7 = 6\\) remainder \\(3\\) (carry \\(3\\) to make \\(37\\)).\n• \\(37 \\div 7 = 5\\) remainder \\(2\\) (carry \\(2\\) to make \\(22\\)).\n• \\(22 \\div 7 = 3\\) remainder \\(1\\).\nTherefore, the quotient is \\(5653\\) and the remainder is \\(1\\).",
@@ -2187,12 +2187,12 @@ export const allQuestions = [
     "isActive": true,
     "question": "Evaluate using short division: \\(48398 \\div 5\\)",
     "options": [
-      "\\(9679\\text{ remainder }3\\)",
       "\\(9679\\text{ remainder }1\\)",
-      "\\(9678\\text{ remainder }3\\)",
-      "\\(9680\\text{ remainder }2\\)"
+      "\\(9679\\text{ remainder }3\\)",
+      "\\(9680\\text{ remainder }2\\)",
+      "\\(9678\\text{ remainder }3\\)"
     ],
-    "answer": 0,
+    "answer": 1,
     "solution": "Step 1: Perform short division.\n• \\(48 \\div 5 = 9\\) remainder \\(3\\) (carry \\(3\\) to make \\(33\\)).\n• \\(33 \\div 5 = 6\\) remainder \\(3\\) (carry \\(3\\) to make \\(39\\)).\n• \\(39 \\div 5 = 7\\) remainder \\(4\\) (carry \\(4\\) to make \\(48\\)).\n• \\(48 \\div 5 = 9\\) remainder \\(3\\).\nTherefore, the result is \\(9679\\) with a remainder of \\(3\\).",
     "createdAt": "2026-06-15T14:14:06.009Z",
     "solutionSteps": [
@@ -2301,24 +2301,24 @@ export const allQuestions = [
   }
 ];
 
+
 export const importYear7Ch1B = async (forceReset = false) => {
-  console.log('[Ch1B Year 7 Import] STARTING PHYSICAL SYNC...');
+  console.log('[importYear7Ch1B] STARTING PHYSICAL SYNC...');
   let importedCount = 0;
   try {
     const targetTopics = ['y7-1b', 'y7-1c', 'y7-1d', 'y7-1e', 'y7-1h', 'y7-1i', 'y7-1j', 'y7-1l'];
 
     if (forceReset) {
-      console.log('[Ch1B Year 7 Import] Force Reset requested. Wiping affected topics...');
+      console.log('[importYear7Ch1B] Force Reset requested. Wiping affected topics...');
       for (const topicId of targetTopics) {
         const oldSnap = await db.collection('questions').where('topicId', '==', topicId).get();
         for (const d of oldSnap.docs) { 
           await d.ref.delete(); 
         }
       }
-      console.log('[Ch1B Year 7 Import] Deleted old questions successfully.');
+      console.log('[importYear7Ch1B] Deleted old questions successfully.');
     }
     
-    // Check existing questions to prevent duplicates
     const existingQuestions = new Set();
     if (!forceReset) {
       for (const topicId of targetTopics) {
@@ -2327,7 +2327,6 @@ export const importYear7Ch1B = async (forceReset = false) => {
       }
     }
     
-    // Batch write in chunks of 400 to avoid Firestore limits
     const chunkSize = 400;
     for (let i = 0; i < allQuestions.length; i += chunkSize) {
       const chunk = allQuestions.slice(i, i + chunkSize);
@@ -2345,7 +2344,7 @@ export const importYear7Ch1B = async (forceReset = false) => {
       
       if (batchCount > 0) {
         await batch.commit();
-        console.log(`[Ch1B Year 7 Import] Committed batch of ${batchCount} questions.`);
+        console.log(`[${importedCount} questions synced]`);
       }
     }
   } catch (error) { 
@@ -2354,3 +2353,4 @@ export const importYear7Ch1B = async (forceReset = false) => {
   }
   return importedCount;
 };
+

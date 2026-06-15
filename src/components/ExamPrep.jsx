@@ -40,6 +40,30 @@ import {
   ROUND_SIZE_CONST, EXAM_PREP_NOTE_KIND,
 } from '../services/examPrepService';
 
+// Fisher–Yates shuffle (returns a new array).
+const shuffleArray = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+};
+
+// Shuffle a multiple-choice question's options and remap the answer index so
+// the correct option follows its new position. MC answers in Exam Prep are
+// stored/graded as the option index (see correctMc / gradeQuestion), so we keep
+// `answer` pointing at the correct option after the reorder. Non-MC questions
+// are returned unchanged.
+const shuffleMcOptions = (q) => {
+  if (q?.type !== 'multiple_choice' || !(q.options?.length > 1)) return q;
+  const order = shuffleArray(q.options.map((_, i) => i));
+  const newOptions = order.map((i) => q.options[i]);
+  const correctIdx = Number(q.answer);
+  const newAnswer = Number.isInteger(correctIdx) ? order.indexOf(correctIdx) : q.answer;
+  return { ...q, options: newOptions, answer: newAnswer };
+};
+
 const flattenChapters = (yearKey) => {
   const data = CURRICULUM_DATA[yearKey];
   if (!data) return [];
@@ -1345,7 +1369,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         showToast('No questions found for the chosen topics yet. Ask your teacher to add questions.', 'warning', 6000);
         return;
       }
-      setQuestions(q);
+      setQuestions(q.map(shuffleMcOptions));
       setStage('quiz');
     } catch (err) {
       console.error('[ExamPrep] startRound failed:', err);
