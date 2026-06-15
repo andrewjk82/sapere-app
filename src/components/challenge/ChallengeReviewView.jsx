@@ -1,12 +1,14 @@
 import { useState, useRef, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag, PenLine } from 'lucide-react';
+import { X, CheckCircle2, XCircle, ArrowLeft, ArrowRight, Lightbulb, MessageCircle, Flag, PenLine, GraduationCap } from 'lucide-react';
 import { collection, addDoc, serverTimestamp, doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import MathView from '../MathView';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import WorkedSolutionSteps from './WorkedSolutionSteps';
+import LessonPlayer from '../lessons/LessonPlayer';
+import { getLesson } from '../../lessons/registry';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
 import { answersMatch } from '../../utils/answerMatching';
@@ -136,6 +138,11 @@ const ChallengeReviewView = ({
 
   const total = questions.length;
   const q = questions[idx] || {};
+
+  // Lesson for this question's topic, if one is registered. Lessons are keyed
+  // by topicId, so this surfaces the vetted lesson covering this exact topic.
+  const lesson = getLesson(q.topicId);
+  const [showLesson, setShowLesson] = useState(false);
   const result = answerResults[idx];
   const isCorrect = result?.correct === true;
   const isPending = result?.isPending === true;
@@ -498,6 +505,22 @@ const ChallengeReviewView = ({
             )
           )}
 
+          {/* Watch the step-by-step lesson for this topic, if one is registered. */}
+          {lesson && (
+            <button
+              onClick={() => setShowLesson(true)}
+              style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
+                padding: '14px 22px', borderRadius: '18px', border: 'none',
+                background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)', color: '#fff',
+                fontWeight: 800, fontSize: '0.95rem', cursor: 'pointer',
+                boxShadow: '0 8px 20px rgba(109,40,217,0.28)', alignSelf: 'flex-start',
+              }}
+            >
+              <GraduationCap size={18} /> Watch the lesson
+            </button>
+          )}
+
           {/* Navigation footer */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px', marginTop: '8px', padding: '4px 4px 20px' }}>
             <button
@@ -572,6 +595,11 @@ const ChallengeReviewView = ({
           />
         )}
       </div>
+
+      {/* Step-by-step lesson overlay */}
+      {showLesson && lesson && (
+        <LessonPlayer lesson={lesson} onClose={() => setShowLesson(false)} />
+      )}
 
       {/* Report modal */}
       <AnimatePresence>

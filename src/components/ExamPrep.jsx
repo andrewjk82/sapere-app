@@ -758,17 +758,20 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
 const ReviewView = ({ questions, answers, onDone }) => {
   const [idx, setIdx] = useState(0);
   const [expandedSteps, setExpandedSteps] = useState(true);
+  const [showLesson, setShowLesson] = useState(false);
   const q = questions[idx];
   const ans = answers[idx];
   const total = questions.length;
 
-  useEffect(() => { setExpandedSteps(true); }, [idx]);
+  useEffect(() => { setExpandedSteps(true); setShowLesson(false); }, [idx]);
 
   if (!q) return null;
 
   const isPending = ans?.pending === true;
   const isCorrect = !isPending && ans?.correct;
   const solutionSteps = q.solutionSteps || [];
+  // Lesson for this question's topic, if one is registered.
+  const lesson = getLesson(q.topicId);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -904,6 +907,21 @@ const ReviewView = ({ questions, answers, onDone }) => {
           <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#d97706', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>Hint</div>
           <MathView content={q.hint} style={{ color: '#92400e', fontSize: '0.9rem', fontWeight: 600 }} />
         </div>
+      )}
+
+      {/* Watch the step-by-step lesson for this topic, if one is registered. */}
+      {lesson && (
+        <button
+          onClick={() => setShowLesson(true)}
+          style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '14px 22px', borderRadius: '18px', border: 'none', background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)', color: '#fff', fontWeight: 800, fontSize: '0.95rem', cursor: 'pointer', boxShadow: '0 8px 20px rgba(109,40,217,0.28)', alignSelf: 'flex-start' }}
+        >
+          <GraduationCap size={18} /> Watch the lesson
+        </button>
+      )}
+
+      {showLesson && lesson && createPortal(
+        <LessonPlayer lesson={lesson} onClose={() => setShowLesson(false)} />,
+        document.body
       )}
 
       {/* nav buttons */}
