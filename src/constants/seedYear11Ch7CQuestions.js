@@ -3,7 +3,7 @@ export const Y11_CH7C_QUESTIONS = [
     "id": "y11a-7c-q1a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line: \\(y = 3x - 9\\) (enter 'yes' or 'no').",
@@ -26,13 +26,17 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\text{Answer: } yes",
         "graphData": null
       }
+    ],
+    "opts": [
+      "no",
+      "yes"
     ]
   },
   {
     "id": "y11a-7c-q1b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line: \\(5x + 3y - 1 = 0\\) (enter 'yes' or 'no').",
@@ -55,13 +59,17 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\text{Answer: } yes",
         "graphData": null
       }
+    ],
+    "opts": [
+      "yes",
+      "no"
     ]
   },
   {
     "id": "y11a-7c-q1c",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line: \\(x = 4\\) (enter 'yes' or 'no').",
@@ -84,13 +92,17 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\text{Answer: } no",
         "graphData": null
       }
+    ],
+    "opts": [
+      "yes",
+      "no"
     ]
   },
   {
     "id": "y11a-7c-q2a-xint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the x-intercept of the line \\(2x + 5y = 10\\).",
@@ -108,13 +120,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "2x + 5(0) = 10 \\implies 2x = 10 \\implies x = 5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6",
+      "4",
+      "5",
+      "-5"
     ]
   },
   {
     "id": "y11a-7c-q2a-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the y-intercept of the line \\(2x + 5y = 10\\).",
@@ -132,13 +150,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "2(0) + 5y = 10 \\implies 5y = 10 \\implies y = 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3",
+      "2",
+      "-2",
+      "1"
     ]
   },
   {
     "id": "y11a-7c-q2b-xint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the x-intercept of the line \\(y = 3x - 9\\).",
@@ -156,13 +180,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "0 = 3x - 9 \\implies 3x = 9 \\implies x = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3",
+      "4",
+      "-3",
+      "2"
     ]
   },
   {
     "id": "y11a-7c-q2b-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the y-intercept of the line \\(y = 3x - 9\\).",
@@ -180,13 +210,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = 3(0) - 9 \\implies y = -9",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-9",
+      "-8",
+      "9",
+      "-10"
     ]
   },
   {
     "id": "y11a-7c-q2c-xint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the x-intercept of the line \\(x - 3y = 6\\).",
@@ -204,13 +240,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x - 3(0) = 6 \\implies x = 6",
         "graphData": null
       }
+    ],
+    "opts": [
+      "6",
+      "5",
+      "-6",
+      "7"
     ]
   },
   {
     "id": "y11a-7c-q2c-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the y-intercept of the line \\(x - 3y = 6\\).",
@@ -228,6 +270,12 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "0 - 3y = 6 \\implies -3y = 6 \\implies y = -2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "-2",
+      "-3",
+      "-1"
     ]
   },
   {
@@ -263,7 +311,7 @@ export const Y11_CH7C_QUESTIONS = [
     "id": "y11a-7c-q4a-vert",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the vertical line through the point \\((3, 4)\\).",
@@ -281,13 +329,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x=3 + 1",
+      "x=-3",
+      "x=3",
+      "x=3 + 2"
     ]
   },
   {
     "id": "y11a-7c-q4a-horiz",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the horizontal line through the point \\((3, 4)\\).",
@@ -305,13 +359,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=4",
+      "y=-4",
+      "y=4 + 1",
+      "y=4 + 2"
     ]
   },
   {
     "id": "y11a-7c-q4b-vert",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the vertical line through the point \\((0, -2)\\).",
@@ -329,13 +389,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x=0 + 2",
+      "x=+0",
+      "x=0 + 1",
+      "x=0"
     ]
   },
   {
     "id": "y11a-7c-q4b-horiz",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the horizontal line through the point \\((0, -2)\\).",
@@ -353,13 +419,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = -2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=+2",
+      "y=-2",
+      "y=-2 + 2",
+      "y=-2 + 1"
     ]
   },
   {
     "id": "y11a-7c-q4c-vert",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the vertical line through the point \\((4, 0)\\).",
@@ -377,13 +449,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x = 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x=4 + 1",
+      "x=-4",
+      "x=4",
+      "x=4 + 2"
     ]
   },
   {
     "id": "y11a-7c-q4c-horiz",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the horizontal line through the point \\((4, 0)\\).",
@@ -401,13 +479,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=+0",
+      "y=0 + 1",
+      "y=0 + 2",
+      "y=0"
     ]
   },
   {
     "id": "y11a-7c-q5a-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = 3x - 5\\).",
@@ -420,13 +504,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3",
+      "2",
+      "4",
+      "-3"
     ]
   },
   {
     "id": "y11a-7c-q5a-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the y-intercept of the line \\(y = 3x - 5\\).",
@@ -439,13 +529,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = -5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-6",
+      "-5",
+      "-4",
+      "5"
     ]
   },
   {
     "id": "y11a-7c-q5b-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = \\frac{1}{4}x - 2\\).",
@@ -458,13 +554,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = 1/4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-4/1",
+      "-1/4",
+      "1/4",
+      "2/4"
     ]
   },
   {
     "id": "y11a-7c-q5b-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the y-intercept of the line \\(y = \\frac{1}{4}x - 2\\).",
@@ -477,13 +579,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = -2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "2",
+      "-2",
+      "-3"
     ]
   },
   {
     "id": "y11a-7c-q5c-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = 5 - x\\).",
@@ -496,13 +604,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = -1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1.5",
+      "-1",
+      "1",
+      "-0.5"
     ]
   },
   {
     "id": "y11a-7c-q5c-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the y-intercept of the line \\(y = 5 - x\\).",
@@ -515,13 +629,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = 5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5",
+      "4",
+      "6",
+      "-5"
     ]
   },
   {
     "id": "y11a-7c-q5d-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = -\\frac{3}{8}x\\).",
@@ -534,13 +654,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = -3/8",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3/8",
+      "8/3",
+      "-3/8",
+      "4/8"
     ]
   },
   {
     "id": "y11a-7c-q5d-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the y-intercept of the line \\(y = -\\frac{3}{8}x\\).",
@@ -553,13 +679,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "0",
+      "3",
+      "-1",
+      "1"
     ]
   },
   {
     "id": "y11a-7c-q6a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-4\\) and y-intercept \\(6\\).",
@@ -577,13 +709,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y=-4x+6",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-4x+6",
+      "y=-4x-6",
+      "-y=-4x+6",
+      "y=+4x+6"
     ]
   },
   {
     "id": "y11a-7c-q6b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-4\\) and y-intercept \\(-\\frac{3}{5}\\).",
@@ -601,13 +739,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y=-4x-3/5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-4x-3/-5",
+      "-y=-4x-3/5",
+      "y=-4x-3/5",
+      "y=+4x+3/5"
     ]
   },
   {
     "id": "y11a-7c-q6c",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-4\\) and y-intercept \\(0\\).",
@@ -625,13 +769,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y=-4x",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-y=-4x",
+      "y=-4x + 1",
+      "y=+4x",
+      "y=-4x"
     ]
   },
   {
     "id": "y11a-7c-q7a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(6\\).",
@@ -649,13 +799,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y=6x-5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=6x-5",
+      "y=6x-5 + 1",
+      "-y=6x-5",
+      "y=6x+5"
     ]
   },
   {
     "id": "y11a-7c-q7b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(-\\frac{3}{4}\\).",
@@ -673,13 +829,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y=-3/4x-5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-y=-3/4x-5",
+      "y=-3/4x+5",
+      "y=+3/4x+5",
+      "y=-3/4x-5"
     ]
   },
   {
     "id": "y11a-7c-q7c",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(0\\).",
@@ -697,13 +859,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y=-5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-5 + 1",
+      "y=-5 + 2",
+      "y=-5",
+      "y=+5"
     ]
   },
   {
     "id": "y11a-7c-q8a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(1\\) and y-intercept \\(4\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -721,13 +889,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x - y + 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-y+4=+0",
+      "x-y+4=0",
+      "x-y+4=0 + 1",
+      "x+y+4=0"
     ]
   },
   {
     "id": "y11a-7c-q8b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-3\\) and y-intercept \\(6\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -745,13 +919,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "3x + y - 6 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x+y-6=+0",
+      "3x-y-6=0",
+      "3x+y+6=0",
+      "3x+y-6=0"
     ]
   },
   {
     "id": "y11a-7c-q8c",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(\\frac{1}{4}\\) and y-intercept \\(-2\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -774,13 +954,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x - 4y - 8 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-4y-8=0",
+      "x+4y+8=0",
+      "x-4-y-8=0",
+      "x-4y-8=+0"
     ]
   },
   {
     "id": "y11a-7c-q8d",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-\\frac{1}{3}\\) and y-intercept \\(2\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -803,13 +989,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x + 3y - 6 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+3y+6=0",
+      "x+3-y-6=0",
+      "x+3y-6=0",
+      "x+3y-6=+0"
     ]
   },
   {
     "id": "y11a-7c-q9a-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(x - y + 4 = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
@@ -827,13 +1019,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "1",
+      "1.5",
+      "0.5"
     ]
   },
   {
     "id": "y11a-7c-q9a-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(x - y + 4 = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
@@ -851,13 +1049,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4",
+      "5",
+      "3",
+      "-4"
     ]
   },
   {
     "id": "y11a-7c-q9b-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
@@ -875,13 +1079,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = -1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-0.5",
+      "-1.5",
+      "-1",
+      "1"
     ]
   },
   {
     "id": "y11a-7c-q9b-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
@@ -899,13 +1109,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3",
+      "3",
+      "4",
+      "2"
     ]
   },
   {
     "id": "y11a-7c-q9c-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(x - 2y = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
@@ -923,13 +1139,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = 1/2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1/2",
+      "2/2",
+      "1/2",
+      "-2/1"
     ]
   },
   {
     "id": "y11a-7c-q9c-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(x - 2y = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
@@ -947,13 +1169,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "0",
+      "3",
+      "-1"
     ]
   },
   {
     "id": "y11a-7c-q9d-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(2x + 5y = 4\\) for \\(y\\), and hence write down its gradient \\(m\\).",
@@ -971,13 +1199,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = -2/5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-2/5",
+      "2/5",
+      "5/2",
+      "3/5"
     ]
   },
   {
     "id": "y11a-7c-q9d-yint",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(2x + 5y = 4\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
@@ -995,13 +1229,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "b = 4/5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4/5",
+      "5/5",
+      "-5/4",
+      "-4/5"
     ]
   },
   {
     "id": "y11a-7c-q10a-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = x + 5\\).",
@@ -1019,13 +1259,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\tan \\alpha = 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "1.5",
+      "0.5",
+      "1"
     ]
   },
   {
     "id": "y11a-7c-q10a-angle",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = x + 5\\).",
@@ -1048,13 +1294,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\alpha = 45^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "45°",
+      "45° + 1",
+      "-45°",
+      "45° - 1"
     ]
   },
   {
     "id": "y11a-7c-q10b-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = -x - 12\\).",
@@ -1072,13 +1324,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\tan \\alpha = -1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "-1.5",
+      "-0.5",
+      "-1"
     ]
   },
   {
     "id": "y11a-7c-q10b-angle",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = -x - 12\\).",
@@ -1101,13 +1359,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\alpha = 135^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-135°",
+      "135° - 1",
+      "135° + 1",
+      "135°"
     ]
   },
   {
     "id": "y11a-7c-q10c-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = 3x\\).",
@@ -1125,13 +1389,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\tan \\alpha = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4",
+      "3",
+      "2",
+      "-3"
     ]
   },
   {
     "id": "y11a-7c-q10c-angle",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = 3x\\).",
@@ -1154,13 +1424,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\alpha = \\tan^{-1}(3) \\approx 72^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "72° - 1",
+      "72° + 1",
+      "-72°",
+      "72°"
     ]
   },
   {
     "id": "y11a-7c-q10d-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = -\\frac{1}{2}x\\).",
@@ -1178,13 +1454,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\tan \\alpha = -0.5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1/2",
+      "2/1",
+      "-1/2",
+      "2/2"
     ]
   },
   {
     "id": "y11a-7c-q10d-angle",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = -\\frac{1}{2}x\\).",
@@ -1207,6 +1489,12 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\alpha = 180^{\\circ} - \\tan^{-1}(0.5) \\approx 153^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "153°",
+      "-153°",
+      "153° + 1",
+      "153° - 1"
     ]
   },
   {
@@ -1300,7 +1588,7 @@ export const Y11_CH7C_QUESTIONS = [
     "id": "y11a-7c-q12a-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient of the line through the pair of points \\(A(0, 3)\\) and \\(B(3, 9)\\).",
@@ -1318,13 +1606,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m = \\frac{9-3}{3-0} = \\frac{6}{3} = 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "3",
+      "-2",
+      "1"
     ]
   },
   {
     "id": "y11a-7c-q12a-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line through \\(A(0, 3)\\) and \\(B(3, 9)\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1352,13 +1646,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "2x - y + 3 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x-y+3=+0",
+      "2x-y+3=0 + 1",
+      "2x+y+3=0",
+      "2x-y+3=0"
     ]
   },
   {
     "id": "y11a-7c-q12b-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient of the line through the pair of points \\(A(0, 0)\\) and \\(B(1, -2)\\).",
@@ -1376,13 +1676,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y - 0 = -2(x - 0)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "-3",
+      "-2",
+      "-1"
     ]
   },
   {
     "id": "y11a-7c-q12b-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line through \\(A(0, 0)\\) and \\(B(1, -2)\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1405,13 +1711,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "2x + y = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+y=+0",
+      "2x+y=0",
+      "2x-y=0",
+      "2x+y=0 + 1"
     ]
   },
   {
     "id": "y11a-7c-q12c-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient of the line through the pair of points \\(A(-6, -1)\\) and \\(B(0, -3)\\).",
@@ -1429,13 +1741,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y - (-3) = -\\frac{1}{3}(x - 0)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1/3",
+      "2/3",
+      "3/1",
+      "-1/3"
     ]
   },
   {
     "id": "y11a-7c-q12c-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line through \\(A(-6, -1)\\) and \\(B(0, -3)\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1463,13 +1781,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x + 3y + 9 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-3y-9=0",
+      "x+3y+9=+0",
+      "x+3y+9=0",
+      "x+3-y+9=0"
     ]
   },
   {
     "id": "y11a-7c-q13a-par",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(3x + y + 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: parallel to it (answer in gradient-intercept form, e.g. y = mx + b).",
@@ -1492,13 +1816,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = -3x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-3x-4",
+      "y=+3x+4",
+      "-y=-3x+4",
+      "y=-3x+4"
     ]
   },
   {
     "id": "y11a-7c-q13a-perp",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(3x + y + 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: perpendicular to it (answer in gradient-intercept form, e.g. y = mx + b).",
@@ -1521,13 +1851,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = \\frac{1}{3}x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-y=1/3x+4",
+      "y=1/3x+4",
+      "y=1/3x-4",
+      "y=1/3x+4 + 1"
     ]
   },
   {
     "id": "y11a-7c-q13b-par",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(4x - 3y - 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: parallel to it (answer in gradient-intercept form, e.g. y = mx + b).",
@@ -1545,13 +1881,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = \\frac{4}{3}x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-y=4/3x+4",
+      "y=4/3x+4 + 1",
+      "y=4/3x+4",
+      "y=4/3x-4"
     ]
   },
   {
     "id": "y11a-7c-q13b-perp",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(4x - 3y - 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: perpendicular to it (answer in gradient-intercept form, e.g. y = mx + b).",
@@ -1574,13 +1916,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = -\\frac{3}{4}x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-3/4x+4",
+      "y=+3/4x+4",
+      "y=-3/4x-4",
+      "-y=-3/4x+4"
     ]
   },
   {
     "id": "y11a-7c-q13c-par",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(2x + 5y - 3 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: parallel to it (answer in gradient-intercept form, e.g. y = mx + b).",
@@ -1598,13 +1946,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = -\\frac{2}{5}x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=+2/5x+4",
+      "-y=-2/5x+4",
+      "y=-2/5x-4",
+      "y=-2/5x+4"
     ]
   },
   {
     "id": "y11a-7c-q13c-perp",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(2x + 5y - 3 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: perpendicular to it (answer in gradient-intercept form, e.g. y = mx + b).",
@@ -1627,13 +1981,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = \\frac{5}{2}x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=5/2x-4",
+      "-y=5/2x+4",
+      "y=5/2x+4 + 1",
+      "y=5/2x+4"
     ]
   },
   {
     "id": "y11a-7c-q14a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradients of the four lines: \\(2x + y + 5 = 0\\), \\(x - 3y - 2 = 0\\), \\(2x + y + 9 = 0\\), and \\(x - 3y + 6 = 0\\). Hence state what sort of special quadrilateral they enclose.",
@@ -1656,13 +2016,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "m_1 \\times m_2 = -2 \\times \\frac{1}{3} = -\\frac{2}{3} \\ne -1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "parallelogram",
+      "rhombus",
+      "rectangle",
+      "square"
     ]
   },
   {
     "id": "y11a-7c-q14b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradients of the four lines: \\(3x - 2y + 6 = 0\\), \\(2x + 3y + 4 = 0\\), \\(3x - 2y - 4 = 0\\), and \\(2x + 3y - 2 = 0\\). Hence state what sort of special quadrilateral they enclose.",
@@ -1685,6 +2051,12 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\text{Rectangle}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "rectangle",
+      "square",
+      "parallelogram",
+      "rhombus"
     ]
   },
   {
@@ -1788,7 +2160,7 @@ export const Y11_CH7C_QUESTIONS = [
     "id": "y11a-7c-q17a-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 45^{\\circ}\\) and y-intercept \\(A(0, 4)\\). Find the gradient \\(m\\) of the line.",
@@ -1806,13 +2178,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = x + 4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "1",
+      "0.5",
+      "1.5"
     ]
   },
   {
     "id": "y11a-7c-q17a-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 45^{\\circ}\\) and y-intercept \\(A(0, 4)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1835,13 +2213,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x - y + 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-y+4=+0",
+      "x-y+4=0",
+      "x-y+4=0 + 1",
+      "x+y+4=0"
     ]
   },
   {
     "id": "y11a-7c-q17b-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 60^{\\circ}\\) and y-intercept \\(A(0, -2)\\). Find the gradient \\(m\\) of the line.",
@@ -1859,13 +2243,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = \\sqrt{3}x - 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "\\sqrt{3}",
+      "-\\sqrt{3}",
+      "\\sqrt{3} - 1",
+      "\\sqrt{3} + 1"
     ]
   },
   {
     "id": "y11a-7c-q17b-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 60^{\\circ}\\) and y-intercept \\(A(0, -2)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1888,13 +2278,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\sqrt{3}x - y - 2 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "sqrt(3)x-y-2=0",
+      "sqrt(3)x+y+2=0",
+      "sqrt(3)x+y-2=0",
+      "sqrt(3)x-y-2=+0"
     ]
   },
   {
     "id": "y11a-7c-q17c-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 30^{\\circ}\\) and y-intercept \\(A(0, -3)\\). Find the gradient \\(m\\) of the line.",
@@ -1912,13 +2308,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = \\frac{1}{\\sqrt{3}}x - 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1/\\sqrt{3} - 1",
+      "-1/\\sqrt{3}",
+      "1/\\sqrt{3} + 1",
+      "1/\\sqrt{3}"
     ]
   },
   {
     "id": "y11a-7c-q17c-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 30^{\\circ}\\) and y-intercept \\(A(0, -3)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1946,13 +2348,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x - \\sqrt{3}y - 3\\sqrt{3} = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+sqrt(3)y+3sqrt(3)=0",
+      "x-sqrt(3)y-3sqrt(3)=+0",
+      "x-sqrt(3)y-3sqrt(3)=0",
+      "x-sqrt(3)-y-3sqrt(3)=0"
     ]
   },
   {
     "id": "y11a-7c-q17d-grad",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 135^{\\circ}\\) and y-intercept \\(A(0, 2)\\). Find the gradient \\(m\\) of the line.",
@@ -1970,13 +2378,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "y = -x + 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "1",
+      "-1.5",
+      "-0.5"
     ]
   },
   {
     "id": "y11a-7c-q17d-eq",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "A line has an angle of inclination \\(\\alpha = 135^{\\circ}\\) and y-intercept \\(A(0, 2)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -1999,13 +2413,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "x + y - 2 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+y-2=+0",
+      "x+y-2=0",
+      "x+y+2=0",
+      "x-y-2=0"
     ]
   },
   {
     "id": "y11a-7c-q18a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "A triangle is formed by the x-axis and the lines \\(3y = 4x\\) and \\(3y + 4x = 24\\). Find (correct to the nearest degree) the angles of inclination of the two lines (enter as 'angle1, angle2').",
@@ -2023,13 +2443,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "3y + 4x = 24 \\implies y = -\\frac{4}{3}x + 8 \\implies m = -\\frac{4}{3} \\implies \\alpha_2 \\approx 127^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "53°, 127°",
+      "53°, 127°",
+      "37°, 53°",
+      "127°, 53°"
     ]
   },
   {
     "id": "y11a-7c-q18b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "A triangle is formed by the x-axis and the lines \\(3y = 4x\\) and \\(3y + 4x = 24\\). Knowing their angles of inclination are \\(53^{\\circ}\\) and \\(127^{\\circ}\\), what sort of triangle has been formed?",
@@ -2047,13 +2473,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "\\text{Isosceles triangle}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "right-angled",
+      "equilateral",
+      "isosceles",
+      "scalene"
     ]
   },
   {
     "id": "y11a-7c-q19a",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\). Find the value of \\(k\\) if \\(\\ell_1\\) is parallel to \\(\\ell_2\\) (enter as a fraction or decimal, e.g. -1/2).",
@@ -2076,13 +2508,19 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "2 = -\\frac{1}{k} \\implies k = -\\frac{1}{2}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1/2",
+      "2/2",
+      "2/1",
+      "-1/2"
     ]
   },
   {
     "id": "y11a-7c-q19b",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\). Find the value of \\(k\\) if \\(\\ell_1\\) is perpendicular to \\(\\ell_2\\).",
@@ -2105,6 +2543,12 @@ export const Y11_CH7C_QUESTIONS = [
         "workingOut": "-\\frac{2}{k} = -1 \\implies k = 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "1",
+      "3",
+      "-2"
     ]
   }
 ];

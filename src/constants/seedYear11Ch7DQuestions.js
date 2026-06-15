@@ -3,7 +3,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q1",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\(P(2, 4)\\) with a gradient of \\(4\\). Rearrange your answer into general form (e.g. Ax + By + C = 0 with A > 0).",
@@ -26,13 +26,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "4x - y - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4x-y-4=0",
+      "4x+y-4=0",
+      "4x+y+4=0",
+      "4x-y-4=+0"
     ]
   },
   {
     "id": "y11a-7d-q2a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\(P(-3, 6)\\) with a gradient of \\(5\\). Rearrange your answer into general form.",
@@ -55,13 +61,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "5x - y + 21 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5x-y+21=0 + 1",
+      "5x+y+21=0",
+      "5x-y+21=0",
+      "5x-y+21=+0"
     ]
   },
   {
     "id": "y11a-7d-q2b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\(P(-3, 6)\\) with a gradient of \\(-3\\). Rearrange your answer into general form.",
@@ -84,13 +96,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3x + y + 3 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-y-3=0",
+      "3x+y+3=0",
+      "3x+y+3=+0",
+      "3x-y+3=0"
     ]
   },
   {
     "id": "y11a-7d-q2c",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\(P(-3, 6)\\) with a gradient of \\(\\frac{3}{4}\\). Rearrange your answer into general form.",
@@ -113,13 +131,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3x - 4y + 33 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x+4y+33=0",
+      "3x-4-y+33=0",
+      "3x-4y+33=+0",
+      "3x-4y+33=0"
     ]
   },
   {
     "id": "y11a-7d-q2d",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\(P(-3, 6)\\) with a gradient of \\(-\\frac{5}{2}\\). Rearrange your answer into general form.",
@@ -142,13 +166,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "5x + 2y + 3 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5x+2-y+3=0",
+      "5x-2y-3=0",
+      "5x+2y+3=+0",
+      "5x+2y+3=0"
     ]
   },
   {
     "id": "y11a-7d-q3a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\((2, 3)\\) with gradient \\(-\\frac{2}{5}\\). Rearrange your answer into general form.",
@@ -171,13 +201,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2x + 5y - 19 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+5y-19=0",
+      "2x+5y-19=+0",
+      "2x+5y+19=0",
+      "2x+5-y-19=0"
     ]
   },
   {
     "id": "y11a-7d-q3b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\((5, 0)\\) with gradient \\(-\\frac{2}{5}\\). Rearrange your answer into general form.",
@@ -195,13 +231,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "5y = -2(x - 5) \\implies 5y = -2x + 10 \\implies 2x + 5y - 10 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+5y+10=0",
+      "2x+5y-10=0",
+      "2x+5-y-10=0",
+      "2x+5y-10=+0"
     ]
   },
   {
     "id": "y11a-7d-q3c",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\((-5, 2)\\) with gradient \\(-\\frac{2}{5}\\). Rearrange your answer into general form.",
@@ -224,13 +266,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2x + 5y = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+5-y=0",
+      "2x+5y=+0",
+      "2x+5y=0",
+      "2x-5y=0"
     ]
   },
   {
     "id": "y11a-7d-q3d",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the line through the point \\((0, -5)\\) with gradient \\(-\\frac{2}{5}\\). Rearrange your answer into general form.",
@@ -253,13 +301,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2x + 5y + 25 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+5-y+25=0",
+      "2x+5y+25=0",
+      "2x-5y-25=0",
+      "2x+5y+25=+0"
     ]
   },
   {
     "id": "y11a-7d-q4a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in general form, the equation of the line through the point \\((2, 2)\\) with a gradient of \\(3\\).",
@@ -277,13 +331,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 2 = 3x - 6 \\implies 3x - y - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-y-4=0",
+      "3x+y+4=0",
+      "3x+y-4=0",
+      "3x-y-4=+0"
     ]
   },
   {
     "id": "y11a-7d-q4b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in general form, the equation of the line with a gradient of \\(-1\\) through the point \\((4, 2)\\).",
@@ -301,13 +361,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 2 = -x + 4 \\implies x + y - 6 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+y-6=0",
+      "x-y-6=0",
+      "x+y-6=+0",
+      "x+y+6=0"
     ]
   },
   {
     "id": "y11a-7d-q4c",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in general form, the equation of the line through the point \\((0, 0)\\) with a gradient of \\(-4\\).",
@@ -325,13 +391,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = -4x \\implies 4x + y = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4x-y=0",
+      "4x+y=+0",
+      "4x+y=0 + 1",
+      "4x+y=0"
     ]
   },
   {
     "id": "y11a-7d-q4d",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in general form, the equation of the line through the point \\((-1, 2)\\) with a gradient of \\(\\frac{1}{4}\\).",
@@ -354,13 +426,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x - 4y + 9 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-4-y+9=0",
+      "x-4y+9=0",
+      "x-4y+9=+0",
+      "x+4y+9=0"
     ]
   },
   {
     "id": "y11a-7d-q4e",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in general form, the equation of the line with a gradient of \\(-\\frac{3}{5}\\) through the point \\((2, -3)\\).",
@@ -383,13 +461,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3x + 5y + 9 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x+5-y+9=0",
+      "3x-5y-9=0",
+      "3x+5y+9=0",
+      "3x+5y+9=+0"
     ]
   },
   {
     "id": "y11a-7d-q5a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in gradient-intercept form, the equation of the line through the point \\((3, 6)\\) and parallel to \\(y = 3x + 4\\).",
@@ -412,13 +496,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 6 = 3x - 9 \\implies y = 3x - 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=3x+3",
+      "y=3x-3 + 1",
+      "y=3x-3",
+      "-y=3x-3"
     ]
   },
   {
     "id": "y11a-7d-q5b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in gradient-intercept form, the equation of the line through the point \\((3, 6)\\) and perpendicular to \\(y = 3x + 4\\).",
@@ -441,13 +531,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 6 = -\\frac{1}{3}x + 1 \\implies y = -\\frac{1}{3}x + 7",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=+1/3x+7",
+      "y=-1/3x-7",
+      "-y=-1/3x+7",
+      "y=-1/3x+7"
     ]
   },
   {
     "id": "y11a-7d-q5c",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in gradient-intercept form, the equation of the line through the point \\((4, -6)\\) and perpendicular to \\(y = -4x\\).",
@@ -470,13 +566,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y + 6 = \\frac{1}{4}x - 1 \\implies y = \\frac{1}{4}x - 7",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=1/4x+7",
+      "-y=1/4x-7",
+      "y=1/4x-7",
+      "y=1/4x-7 + 1"
     ]
   },
   {
     "id": "y11a-7d-q5d",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in gradient-intercept form, the equation of the line through the point \\((-5, 4)\\) and parallel to \\(y = \\frac{2}{5}x - 6\\).",
@@ -499,13 +601,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 4 = \\frac{2}{5}x + 2 \\implies y = \\frac{2}{5}x + 6",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=2/5x-6",
+      "y=2/5x+6",
+      "y=2/5x+6 + 1",
+      "-y=2/5x+6"
     ]
   },
   {
     "id": "y11a-7d-q5e",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find, in gradient-intercept form, the equation of the line through the point \\((-3, 0)\\) and perpendicular to \\(y = -\\frac{3}{5}x\\).",
@@ -528,13 +636,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = \\frac{5}{3}x + 5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=5/3x+5",
+      "-y=5/3x+5",
+      "y=5/3x+5 + 1",
+      "y=5/3x-5"
     ]
   },
   {
     "id": "y11a-7d-q6a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the points \\(A(3, 5)\\) and \\(B(5, 11)\\).",
@@ -552,13 +666,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4",
+      "3",
+      "-3",
+      "2"
     ]
   },
   {
     "id": "y11a-7d-q6b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use point-gradient form to find, in general form, the equation of the line through \\(A(3, 5)\\) and \\(B(5, 11)\\).",
@@ -576,13 +696,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3x - y - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-y-4=+0",
+      "3x-y-4=0",
+      "3x+y-4=0",
+      "3x+y+4=0"
     ]
   },
   {
     "id": "y11a-7d-q7a-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the pair of points \\(A(2, 3)\\) and \\(B(4, 7)\\).",
@@ -600,13 +726,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 3 = 2(x - 2)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3",
+      "2",
+      "1",
+      "-2"
     ]
   },
   {
     "id": "y11a-7d-q7a-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line through the pair of points \\(A(2, 3)\\) and \\(B(4, 7)\\) in general form.",
@@ -629,13 +761,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2x - y - 1 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+y-1=0",
+      "2x-y-1=+0",
+      "2x+y+1=0",
+      "2x-y-1=0"
     ]
   },
   {
     "id": "y11a-7d-q7b-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the pair of points \\(A(-2, 4)\\) and \\(B(2, -4)\\).",
@@ -653,13 +791,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 4 = -2(x + 2)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-2",
+      "-1",
+      "-3",
+      "2"
     ]
   },
   {
     "id": "y11a-7d-q7b-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line through the pair of points \\(A(-2, 4)\\) and \\(B(2, -4)\\) in general form.",
@@ -682,13 +826,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2x + y = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+y=+0",
+      "2x+y=0",
+      "2x-y=0",
+      "2x+y=0 + 1"
     ]
   },
   {
     "id": "y11a-7d-q7c-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the pair of points \\(A(4, 5)\\) and \\(B(-2, 3)\\).",
@@ -706,13 +856,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 5 = \\frac{1}{3}(x - 4)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3/1",
+      "1/3",
+      "2/3",
+      "-1/3"
     ]
   },
   {
     "id": "y11a-7d-q7c-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line through the pair of points \\(A(4, 5)\\) and \\(B(-2, 3)\\) in general form.",
@@ -735,13 +891,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3(y - 5) = x - 4 \\implies x - 3y + 11 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-3-y+11=0",
+      "x-3y+11=0",
+      "x+3y+11=0",
+      "x-3y+11=+0"
     ]
   },
   {
     "id": "y11a-7d-q7d-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the pair of points \\(A(-2, 0)\\) and \\(B(0, 3)\\).",
@@ -759,13 +921,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 0 = \\frac{3}{2}(x + 2)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-2/3",
+      "3/2",
+      "4/2",
+      "-3/2"
     ]
   },
   {
     "id": "y11a-7d-q7d-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line through the pair of points \\(A(-2, 0)\\) and \\(B(0, 3)\\) in general form.",
@@ -788,13 +956,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2y = 3x + 6 \\implies 3x - 2y + 6 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-2y+6=0",
+      "3x-2-y+6=0",
+      "3x-2y+6=+0",
+      "3x+2y+6=0"
     ]
   },
   {
     "id": "y11a-7d-q7e-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the pair of points \\(A(0, -2)\\) and \\(B(-3, 0)\\).",
@@ -812,13 +986,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - (-2) = -\\frac{2}{3}(x - 0)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3/2",
+      "3/3",
+      "-2/3",
+      "2/3"
     ]
   },
   {
     "id": "y11a-7d-q7e-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line through the pair of points \\(A(0, -2)\\) and \\(B(-3, 0)\\) in general form.",
@@ -841,13 +1021,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3(y + 2) = -2x \\implies 2x + 3y + 6 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+3y+6=0",
+      "2x+3y+6=+0",
+      "2x-3y-6=0",
+      "2x+3-y+6=0"
     ]
   },
   {
     "id": "y11a-7d-q7f-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the pair of points \\(A(0, -4)\\) and \\(B(4, 0)\\).",
@@ -865,13 +1051,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - (-4) = 1(x - 0)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "0.5",
+      "1.5",
+      "-1"
     ]
   },
   {
     "id": "y11a-7d-q7f-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line through the pair of points \\(A(0, -4)\\) and \\(B(4, 0)\\) in general form.",
@@ -894,13 +1086,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x - y - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+y+4=0",
+      "x-y-4=+0",
+      "x-y-4=0",
+      "x+y-4=0"
     ]
   },
   {
     "id": "y11a-7d-q8a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the points A(2, -3) and B(-2, 5).",
@@ -918,13 +1116,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = -2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3",
+      "-2",
+      "2",
+      "-1"
     ]
   },
   {
     "id": "y11a-7d-q8bi",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Knowing the gradient of \\(AB\\) is \\(-2\\), find in general form the equation of the line \\(AB\\) through A(2, -3) and B(-2, 5).",
@@ -942,13 +1146,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2x + y - 1 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2x+y-1=0",
+      "2x-y-1=0",
+      "2x+y-1=+0",
+      "2x+y+1=0"
     ]
   },
   {
     "id": "y11a-7d-q8bii",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Knowing the gradient of \\(AB\\) is \\(-2\\), find in general form the equation of the line through A(2, -3) and perpendicular to \\(AB\\).",
@@ -971,13 +1181,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2y + 6 = x - 2 \\implies x - 2y - 8 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+2y+8=0",
+      "x-2y-8=+0",
+      "x-2y-8=0",
+      "x-2-y-8=0"
     ]
   },
   {
     "id": "y11a-7d-q9a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line parallel to \\(3x - 4y + 2 = 0\\) and passing through \\((3, 3)\\) (in general form).",
@@ -1000,13 +1216,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "4y - 12 = 3x - 9 \\implies 3x - 4y + 3 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-4-y+3=0",
+      "3x+4y+3=0",
+      "3x-4y+3=0",
+      "3x-4y+3=+0"
     ]
   },
   {
     "id": "y11a-7d-q9b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line parallel to \\(3x - 4y + 2 = 0\\) and passing through \\((4, -1)\\) (in general form).",
@@ -1029,13 +1251,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "4(y + 1) = 3(x - 4) \\implies 4y + 4 = 3x - 12 \\implies 3x - 4y - 16 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-4-y-16=0",
+      "3x+4y+16=0",
+      "3x-4y-16=0",
+      "3x-4y-16=+0"
     ]
   },
   {
     "id": "y11a-7d-q10a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line perpendicular to \\(2x + 3y - 4 = 0\\) and passing through \\((-2, -5)\\) (in general form).",
@@ -1063,13 +1291,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2y + 10 = 3x + 6 \\implies 3x - 2y - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x-2y-4=0",
+      "3x-2y-4=+0",
+      "3x+2y+4=0",
+      "3x-2-y-4=0"
     ]
   },
   {
     "id": "y11a-7d-q10b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the equation of the line perpendicular to \\(2x + 3y - 4 = 0\\) and passing through \\((-3, 2)\\) (in general form).",
@@ -1092,13 +1326,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "2y - 4 = 3x + 9 \\implies 3x - 2y + 13 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3x+2y+13=0",
+      "3x-2y+13=+0",
+      "3x-2y+13=0",
+      "3x-2-y+13=0"
     ]
   },
   {
     "id": "y11a-7d-q11a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the point \\(M(x, y)\\) of intersection of the lines l1: x + y = 3 and l2: 3x - y = 9 (enter as 'x, y').",
@@ -1121,6 +1361,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3 + y = 3 \\implies y = 0 \\implies M(3, 0)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3, 0",
+      "0, 3",
+      "3, 0",
+      "3, -0"
     ]
   },
   {
@@ -1151,7 +1397,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q11ci",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine whether the set of lines \\(2x + y = -2\\), \\(x - 2y = -11\\), and \\(x + 3y = 9\\) are concurrent ('yes' or 'no').",
@@ -1179,13 +1425,17 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "-3 + 3(4) = 9 \\implies 9 = 9 \\implies \\text{Concurrent}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "yes",
+      "no"
     ]
   },
   {
     "id": "y11a-7d-q11cii",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine whether the set of lines \\(5x - y = 21\\), \\(4x - 3y = 8\\), and \\(x + y = 7\\) are concurrent ('yes' or 'no').",
@@ -1213,13 +1463,17 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "4\\left(\\frac{14}{3}\\right) - 3\\left(\\frac{7}{3}\\right) = \\frac{56 - 21}{3} = \\frac{35}{3} \\ne 8 \\implies \\text{Not concurrent}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "no",
+      "yes"
     ]
   },
   {
     "id": "y11a-7d-q12a-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(3x + y + 4 = 0\\): Put the equation into gradient-intercept form, and write down the gradient.",
@@ -1237,13 +1491,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = -3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3",
+      "-2",
+      "3",
+      "-4"
     ]
   },
   {
     "id": "y11a-7d-q12a-par",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(3x + y + 4 = 0\\): Find in gradient-intercept form the equation of the line parallel to it that passes through \\(A(3, -1)\\).",
@@ -1261,13 +1521,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y + 1 = -3x + 9 \\implies y = -3x + 8",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-3x-8",
+      "y=-3x+8",
+      "y=+3x+8",
+      "-y=-3x+8"
     ]
   },
   {
     "id": "y11a-7d-q12a-perp",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(3x + y + 4 = 0\\): Find in gradient-intercept form the equation of the line perpendicular to it that passes through \\(B(-2, 5)\\).",
@@ -1290,13 +1556,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = \\frac{1}{3}x + \\frac{17}{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=1/3x+17/-3",
+      "-y=1/3x+17/3",
+      "y=1/3x+17/3",
+      "y=1/3x-17/3"
     ]
   },
   {
     "id": "y11a-7d-q12b-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(4x - 3y - 3 = 0\\): Put the equation into gradient-intercept form, and write down the gradient.",
@@ -1314,13 +1586,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = \\frac{4}{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3/4",
+      "5/3",
+      "-4/3",
+      "4/3"
     ]
   },
   {
     "id": "y11a-7d-q12b-par",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(4x - 3y - 3 = 0\\): Find in gradient-intercept form the equation of the line parallel to it that passes through \\(A(3, -1)\\).",
@@ -1338,13 +1616,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y + 1 = \\frac{4}{3}x - 4 \\implies y = \\frac{4}{3}x - 5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=4/3x+5",
+      "y=4/3x-5",
+      "-y=4/3x-5",
+      "y=4/3x-5 + 1"
     ]
   },
   {
     "id": "y11a-7d-q12b-perp",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(4x - 3y - 3 = 0\\): Find in gradient-intercept form the equation of the line perpendicular to it that passes through \\(B(-2, 5)\\).",
@@ -1367,13 +1651,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = -\\frac{3}{4}x + \\frac{7}{2}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-y=-3/4x+7/2",
+      "y=-3/4x+7/-2",
+      "y=-3/4x+7/2",
+      "y=+3/4x+7/2"
     ]
   },
   {
     "id": "y11a-7d-q12c-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(2x + 5y - 5 = 0\\): Put the equation into gradient-intercept form, and write down the gradient.",
@@ -1391,13 +1681,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = -\\frac{2}{5}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-2/5",
+      "3/5",
+      "5/2",
+      "2/5"
     ]
   },
   {
     "id": "y11a-7d-q12c-par",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(2x + 5y - 5 = 0\\): Find in gradient-intercept form the equation of the line parallel to it that passes through \\(A(3, -1)\\).",
@@ -1415,13 +1711,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y + 1 = -\\frac{2}{5}x + \\frac{6}{5} \\implies y = -\\frac{2}{5}x + \\frac{1}{5}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=-2/5x+1/5",
+      "y=+2/5x+1/5",
+      "y=-2/5x+1/-5",
+      "-y=-2/5x+1/5"
     ]
   },
   {
     "id": "y11a-7d-q12c-perp",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(2x + 5y - 5 = 0\\): Find in gradient-intercept form the equation of the line perpendicular to it that passes through \\(B(-2, 5)\\).",
@@ -1444,13 +1746,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 5 = \\frac{5}{2}x + 5 \\implies y = \\frac{5}{2}x + 10",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y=5/2x-10",
+      "-y=5/2x+10",
+      "y=5/2x+10 + 1",
+      "y=5/2x+10"
     ]
   },
   {
     "id": "y11a-7d-q13a-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 45^{\\circ}\\) passing through \\(A(2, 0)\\).",
@@ -1463,13 +1771,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = \\tan 45^{\\circ} = 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "1.5",
+      "0.5",
+      "1"
     ]
   },
   {
     "id": "y11a-7d-q13a-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line with inclination \\(\\alpha = 45^{\\circ}\\) passing through \\(A(2, 0)\\) in general form.",
@@ -1487,13 +1801,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y - 0 = 1(x - 2) \\implies x - y - 2 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+y+2=0",
+      "x-y-2=+0",
+      "x+y-2=0",
+      "x-y-2=0"
     ]
   },
   {
     "id": "y11a-7d-q13b-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 120^{\\circ}\\) passing through \\(A(-2, 0)\\).",
@@ -1506,13 +1826,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = \\tan 120^{\\circ} = -\\sqrt{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-\\sqrt{3} - 1",
+      "-\\sqrt{3} + 1",
+      "-\\sqrt{3}",
+      "--\\sqrt{3}"
     ]
   },
   {
     "id": "y11a-7d-q13b-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line with inclination \\(\\alpha = 120^{\\circ}\\) passing through \\(A(-2, 0)\\) in general form.",
@@ -1535,13 +1861,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\sqrt{3}x + y + 2\\sqrt{3} = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "sqrt(3)x+y+2sqrt(3)=0",
+      "sqrt(3)x-y-2sqrt(3)=0",
+      "sqrt(3)x-y+2sqrt(3)=0",
+      "sqrt(3)x+y+2sqrt(3)=+0"
     ]
   },
   {
     "id": "y11a-7d-q13c-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 30^{\\circ}\\) passing through \\(A(3, -2)\\).",
@@ -1554,13 +1886,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = \\tan 30^{\\circ} = \\frac{1}{\\sqrt{3}}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1/\\sqrt{3}",
+      "-1/\\sqrt{3}",
+      "1/\\sqrt{3} - 1",
+      "1/\\sqrt{3} + 1"
     ]
   },
   {
     "id": "y11a-7d-q13c-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line with inclination \\(\\alpha = 30^{\\circ}\\) passing through \\(A(3, -2)\\) in general form.",
@@ -1583,13 +1921,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\sqrt{3}(y + 2) = x - 3 \\implies \\sqrt{3}y + 2\\sqrt{3} = x - 3 \\implies x - \\sqrt{3}y - 2\\sqrt{3} - 3 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-sqrt(3)y-2sqrt(3)-3=+0",
+      "x-sqrt(3)y-2sqrt(3)-3=0",
+      "x-sqrt(3)-y-2sqrt(3)-3=0",
+      "x+sqrt(3)y+2sqrt(3)+3=0"
     ]
   },
   {
     "id": "y11a-7d-q13d-grad",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 150^{\\circ}\\) passing through \\(A(-3, -4)\\).",
@@ -1602,13 +1946,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m = \\tan 150^{\\circ} = -\\frac{1}{\\sqrt{3}}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "--1/\\sqrt{3}",
+      "-1/\\sqrt{3} - 1",
+      "-1/\\sqrt{3}",
+      "-1/\\sqrt{3} + 1"
     ]
   },
   {
     "id": "y11a-7d-q13d-eq",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of the line with inclination \\(\\alpha = 150^{\\circ}\\) passing through \\(A(-3, -4)\\) in general form.",
@@ -1631,13 +1981,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\sqrt{3}(y + 4) = -(x + 3) \\implies \\sqrt{3}y + 4\\sqrt{3} = -x - 3 \\implies x + \\sqrt{3}y + 4\\sqrt{3} + 3 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-sqrt(3)y-4sqrt(3)-3=0",
+      "x+sqrt(3)y+4sqrt(3)+3=0",
+      "x+sqrt(3)y+4sqrt(3)+3=+0",
+      "x+sqrt(3)-y+4sqrt(3)+3=0"
     ]
   },
   {
     "id": "y11a-7d-q14a-i",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine, in general form, the equation of the vertical line (i) sketched through the point \\((4, -2)\\).",
@@ -1650,13 +2006,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x = 4 \\implies x - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-4=0 + 1",
+      "x-4=0",
+      "x-4=+0",
+      "x+4=0"
     ]
   },
   {
     "id": "y11a-7d-q14a-ii",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine, in general form, the equation of the horizontal line (ii) sketched through the point \\((4, -2)\\).",
@@ -1669,13 +2031,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = -2 \\implies y + 2 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "y+2=0 + 1",
+      "y+2=0",
+      "y+2=+0",
+      "y-2=0"
     ]
   },
   {
     "id": "y11a-7d-q14b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine, in general form, the equation of the line passing through x-intercept \\(3\\) and y-intercept \\(4\\).",
@@ -1698,13 +2066,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "4x + 3y - 12 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4x+3y-12=0",
+      "4x+3y-12=+0",
+      "4x+3y+12=0",
+      "4x+3-y-12=0"
     ]
   },
   {
     "id": "y11a-7d-q14c-i",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine, in general form, the equation of the line (i) passing through the y-intercept \\(5\\) with inclination angle \\(45^{\\circ}\\).",
@@ -1722,13 +2096,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = x + 5 \\implies x - y + 5 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x-y+5=+0",
+      "x+y+5=0",
+      "x-y+5=0 + 1",
+      "x-y+5=0"
     ]
   },
   {
     "id": "y11a-7d-q14c-ii",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine, in general form, the equation of the line (ii) passing through the y-intercept \\(5\\) with inclination angle \\(120^{\\circ}\\).",
@@ -1746,13 +2126,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = -\\sqrt{3}x + 5 \\implies \\sqrt{3}x + y - 5 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "sqrt(3)x+y-5=0",
+      "sqrt(3)x-y-5=0",
+      "sqrt(3)x+y-5=+0",
+      "sqrt(3)x+y+5=0"
     ]
   },
   {
     "id": "y11a-7d-q14d",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Determine, in general form, the equation of the line with x-intercept \\(-4\\) and an inclination angle of \\(120^{\\circ}\\).",
@@ -1775,6 +2161,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\sqrt{3}x + y + 4\\sqrt{3} = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "sqrt(3)x-y+4sqrt(3)=0",
+      "sqrt(3)x+y+4sqrt(3)=+0",
+      "sqrt(3)x-y-4sqrt(3)=0",
+      "sqrt(3)x+y+4sqrt(3)=0"
     ]
   },
   {
@@ -1805,7 +2197,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q15b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the vertices of the parallelogram enclosed by l1: y = x + 2, l2: y = x - 4, l3: y = 2x + 6, and l4: y = 2x - 4 (enter as 'pt1, pt2, pt3, pt4' sorted by x-coordinate, e.g. (-10,-14), (-4,-2), (0,-4), (6,8)).",
@@ -1833,6 +2225,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x - 4 = 2x - 4 \\implies x = 0, \\; y = -4 \\implies (0, -4)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-(-10,-14), (-4,-2), (0,-4), (6,8)",
+      "(-10,-14), (-4,-2), (0,-4), (6,8) - 1",
+      "(-10,-14), (-4,-2), (0,-4), (6,8) + 1",
+      "(-10,-14), (-4,-2), (0,-4), (6,8)"
     ]
   },
   {
@@ -1868,7 +2266,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q16b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the equation of each side of the triangle with vertices A(2, 0), B(7, 5) and C(1, 2) (enter as 'AB: eq1, BC: eq2, AC: eq3' in general form, e.g. AB: x-y-2=0, BC: x-2y+3=0, AC: 2x+y-4=0).",
@@ -1891,13 +2289,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "m_{AC} = -2 \\implies y - 0 = -2(x - 2) \\implies 2x + y - 4 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "AB: x+y+2=0, BC: x+2y+3=0, AC: 2x+y+4=0",
+      "AB: x+y-2=0, BC: x-2y+3=0, AC: 2x+y-4=0",
+      "AB: x-y-2=0, BC: x-2y+3=0, AC: 2x+y-4=0",
+      "AB: x-y-2=0, BC: x-2y+3=0, AC: 2x+y-4=+0"
     ]
   },
   {
     "id": "y11a-7d-q17a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Find the gradient of the line segment \\(AC\\) and hence determine \\(\\theta\\) (correct to the nearest degree).",
@@ -1915,13 +2319,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\tan \\theta = 1 \\implies \\theta = 45^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1, -45",
+      "-1, 45",
+      "1, 45",
+      "45, 1"
     ]
   },
   {
     "id": "y11a-7d-q17b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Derive the equation of the line segment \\(AC\\) in general form.",
@@ -1939,13 +2349,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x - y - 1 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x+y-1=0",
+      "x+y+1=0",
+      "x-y-1=+0",
+      "x-y-1=0"
     ]
   },
   {
     "id": "y11a-7d-q17c",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Find the coordinates of the midpoint \\(D\\) of \\(AC\\) (enter as 'x, y').",
@@ -1963,6 +2379,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "D = (3, 2)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "3, 2",
+      "2, 3",
+      "3, -2",
+      "-3, 2"
     ]
   },
   {
@@ -1993,7 +2415,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q17e",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. What type of triangle is \\(ABC\\)?",
@@ -2016,13 +2438,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "AB = BC \\implies \\text{Isosceles}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "isosceles",
+      "equilateral",
+      "right-angled",
+      "scalene"
     ]
   },
   {
     "id": "y11a-7d-q17f",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Find the area of the triangle \\(ABC\\).",
@@ -2045,13 +2473,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\text{Area} = \\frac{1}{2} \\times 4\\sqrt{2} \\times 3\\sqrt{2} = 12",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-12",
+      "11",
+      "13",
+      "12"
     ]
   },
   {
     "id": "y11a-7d-q17g",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Write down the coordinates of a point \\(E\\) such that the quadrilateral \\(ABCE\\) is a rhombus (enter as 'x, y').",
@@ -2074,13 +2508,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\frac{5+y}{2} = 2 \\implies y = -1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1, 6",
+      "-6, -1",
+      "6, -1",
+      "6, --1"
     ]
   },
   {
     "id": "y11a-7d-q18a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "The line \\(\\ell\\) crosses the x- and y-axes at \\(L(-3, 0)\\) and \\(M(0, 4)\\). The point \\(N\\) lies on \\(\\ell\\), and \\(P\\) is the point \\(P(0, 9)\\). Find the equation of \\(\\ell\\) in general form.",
@@ -2098,6 +2538,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "y = \\frac{4}{3}x + 4 \\implies 4x - 3y + 12 = 0",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4x-3-y+12=0",
+      "4x-3y+12=0",
+      "4x-3y+12=+0",
+      "4x+3y+12=0"
     ]
   },
   {
@@ -2133,7 +2579,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q18c",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "The line \\(\\ell\\) crosses the x- and y-axes at \\(L(-3, 0)\\) and \\(M(0, 4)\\). The point \\(N\\) lies on \\(\\ell\\), and \\(P\\) is the point \\(P(0, 9)\\). If \\(M(0, 4)\\) is the midpoint of \\(LN\\) where \\(L(-3, 0)\\), find the coordinates of \\(N\\) (enter as 'x, y').",
@@ -2151,6 +2597,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x = 3, \\quad y = 8 \\implies N(3, 8)",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8, 3",
+      "3, -8",
+      "3, 8",
+      "-3, 8"
     ]
   },
   {
@@ -2186,7 +2638,7 @@ export const Y11_CH7D_QUESTIONS = [
     "id": "y11a-7d-q18e",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "The line \\(\\ell\\) crosses the x- and y-axes at \\(L(-3, 0)\\) and \\(M(0, 4)\\). The point \\(N\\) lies on \\(\\ell\\), and \\(P\\) is the point \\(P(0, 9)\\). Knowing \\(N(3, 8)\\) and \\(\\angle NPL = 90^{\\circ}\\), write down the equation of the circle through \\(N\\), \\(P\\), and \\(L\\).",
@@ -2209,13 +2661,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "x^2 + (y-4)^2 = 25",
         "graphData": null
       }
+    ],
+    "opts": [
+      "x^2+(y-4)^2=-25",
+      "x^2+(-y-4)^2=25",
+      "x^2+(y+4)^2=25",
+      "x^2+(y-4)^2=25"
     ]
   },
   {
     "id": "y11a-7d-q19",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the value of \\(k\\) if the lines \\(\\ell_1: x + 2y + 7 = 0\\), \\(\\ell_2: 3x + y - 4 = 0\\), and \\(\\ell_3: kx - y - 9 = 0\\) are concurrent (enter as a fraction, e.g. 4/3).",
@@ -2238,13 +2696,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "3k - 4 = 0 \\implies k = \\frac{4}{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-4/3",
+      "4/3",
+      "5/3",
+      "-3/4"
     ]
   },
   {
     "id": "y11a-7d-q20a",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x + 3y + 5 = 0\\) and \\(\\ell_2: 4x + \\mu y + \\lambda = 0\\). Find the value of \\(\\mu\\) if \\(\\ell_1\\) is parallel to \\(\\ell_2\\).",
@@ -2262,13 +2726,19 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "-\\frac{2}{3} = -\\frac{4}{\\mu} \\implies \\mu = 6",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5",
+      "-6",
+      "7",
+      "6"
     ]
   },
   {
     "id": "y11a-7d-q20b",
     "c": "7D",
     "t": "Further equations of lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x + 3y + 5 = 0\\) and \\(\\ell_2: 4x + \\mu y + \\lambda = 0\\). Find the value of \\(\\mu\\) if \\(\\ell_1\\) is perpendicular to \\(\\ell_2\\) (enter as a fraction, e.g. -8/3).",
@@ -2291,6 +2761,12 @@ export const Y11_CH7D_QUESTIONS = [
         "workingOut": "\\frac{8}{3\\mu} = -1 \\implies 3\\mu = -8 \\implies \\mu = -\\frac{8}{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8/3",
+      "9/3",
+      "-8/3",
+      "3/8"
     ]
   }
 ];

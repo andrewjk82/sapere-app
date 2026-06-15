@@ -3,7 +3,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q1ai",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of a line parallel to a line with gradient \\(3\\).",
@@ -21,13 +21,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = 3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3",
+      "4",
+      "3",
+      "2"
     ]
   },
   {
     "id": "y11a-7b-q1aii",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of a line parallel to a line with gradient \\(\\frac{2}{5}\\).",
@@ -40,13 +46,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\parallel} = m = \\frac{2}{5}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2/5",
+      "3/5",
+      "-2/5",
+      "-5/2"
     ]
   },
   {
     "id": "y11a-7b-q1aiii",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of a line parallel to a line with gradient \\(-2\\frac{1}{3}\\).",
@@ -64,13 +76,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = -\\frac{7}{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-7/3",
+      "3/7",
+      "8/3",
+      "7/3"
     ]
   },
   {
     "id": "y11a-7b-q1bi",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to a line with gradient \\(3\\).",
@@ -88,13 +106,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_2 = -\\frac{1}{3}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2/3",
+      "3/1",
+      "1/3",
+      "-1/3"
     ]
   },
   {
     "id": "y11a-7b-q1bii",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to a line with gradient \\(\\frac{2}{5}\\).",
@@ -107,13 +131,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{2/5} = -\\frac{5}{2}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5/2",
+      "-5/2",
+      "2/5",
+      "6/2"
     ]
   },
   {
     "id": "y11a-7b-q1biii",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to a line with gradient \\(-2\\frac{1}{3}\\).",
@@ -131,13 +161,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{-7/3} = \\frac{3}{7}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-3/7",
+      "3/7",
+      "4/7",
+      "-7/3"
     ]
   },
   {
     "id": "y11a-7b-q2a-grad",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(2, 5)\\) and \\(B(6, 1)\\).",
@@ -155,13 +191,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = -1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "-1.5",
+      "-0.5",
+      "-1"
     ]
   },
   {
     "id": "y11a-7b-q2a-perp",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(2, 5)\\) and \\(B(6, 1)\\).",
@@ -174,13 +216,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{-1} = 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "1.5",
+      "-1",
+      "0.5"
     ]
   },
   {
     "id": "y11a-7b-q2b-grad",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-3, -8)\\) and \\(B(2, 2)\\).",
@@ -198,13 +246,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "-2",
+      "3",
+      "1"
     ]
   },
   {
     "id": "y11a-7b-q2b-perp",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-3, -8)\\) and \\(B(2, 2)\\).",
@@ -217,13 +271,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{2} = -1/2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2/1",
+      "2/2",
+      "1/2",
+      "-1/2"
     ]
   },
   {
     "id": "y11a-7b-q2c-grad",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-4, -3)\\) and \\(B(4, 1)\\).",
@@ -241,13 +301,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = 1/2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1/2",
+      "1/2",
+      "-2/1",
+      "2/2"
     ]
   },
   {
     "id": "y11a-7b-q2c-perp",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-4, -3)\\) and \\(B(4, 1)\\).",
@@ -260,13 +326,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{1/2} = -2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "-3",
+      "-2",
+      "-1"
     ]
   },
   {
     "id": "y11a-7b-q2d-grad",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(2, 5)\\) and \\(B(4, 4)\\).",
@@ -284,13 +356,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = -1/2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1/2",
+      "2/2",
+      "2/1",
+      "-1/2"
     ]
   },
   {
     "id": "y11a-7b-q2d-perp",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(2, 5)\\) and \\(B(4, 4)\\).",
@@ -303,13 +381,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{-1/2} = 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2",
+      "-2",
+      "3",
+      "1"
     ]
   },
   {
     "id": "y11a-7b-q2e-grad",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-2, -3)\\) and \\(B(2, 5)\\).",
@@ -327,13 +411,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = 2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "-2"
     ]
   },
   {
     "id": "y11a-7b-q2e-perp",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-2, -3)\\) and \\(B(2, 5)\\).",
@@ -346,13 +436,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{2} = -1/2",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1/2",
+      "1/2",
+      "2/2",
+      "2/1"
     ]
   },
   {
     "id": "y11a-7b-q2f-grad",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-4, 6)\\) and \\(B(16, -9)\\).",
@@ -370,13 +466,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m = -3/4",
         "graphData": null
       }
+    ],
+    "opts": [
+      "4/4",
+      "3/4",
+      "4/3",
+      "-3/4"
     ]
   },
   {
     "id": "y11a-7b-q2f-perp",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-4, 6)\\) and \\(B(16, -9)\\).",
@@ -389,13 +491,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{\\perp} = -\\frac{1}{-3/4} = 4/3",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-4/3",
+      "5/3",
+      "-3/4",
+      "4/3"
     ]
   },
   {
     "id": "y11a-7b-q3a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine if the line through \\(A(2, 3)\\) and \\(B(2, 5)\\) is horizontal, vertical, or neither.",
@@ -413,13 +521,18 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "neither",
+      "horizontal",
+      "vertical"
     ]
   },
   {
     "id": "y11a-7b-q3b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine if the line through \\(A(3, 4)\\) and \\(B(8, 4)\\) is horizontal, vertical, or neither.",
@@ -437,13 +550,18 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "neither",
+      "vertical",
+      "horizontal"
     ]
   },
   {
     "id": "y11a-7b-q3c",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine if the line through \\(A(4, 2)\\) and \\(B(3, 6)\\) is horizontal, vertical, or neither.",
@@ -461,13 +579,18 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "horizontal",
+      "vertical",
+      "neither"
     ]
   },
   {
     "id": "y11a-7b-q3d",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine if the line through \\(A(5, -2)\\) and \\(B(2, -2)\\) is horizontal, vertical, or neither.",
@@ -485,13 +608,18 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "vertical",
+      "neither",
+      "horizontal"
     ]
   },
   {
     "id": "y11a-7b-q3e",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine if the line through \\(A(-3, 3)\\) and \\(B(3, -3)\\) is horizontal, vertical, or neither.",
@@ -509,13 +637,18 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "horizontal",
+      "neither",
+      "vertical"
     ]
   },
   {
     "id": "y11a-7b-q3f",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine if the line through \\(A(0, 5)\\) and \\(B(0, -5)\\) is horizontal, vertical, or neither.",
@@ -533,6 +666,11 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "vertical",
+      "neither",
+      "horizontal"
     ]
   },
   {
@@ -597,7 +735,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q4c",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "What type of quadrilateral is \\(ABCD\\) with vertices A(1, 4), B(3, 10), C(11, 14), D(9, 8)?",
@@ -615,6 +753,12 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\text{Parallelogram}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "rhombus",
+      "parallelogram",
+      "square",
+      "rectangle"
     ]
   },
   {
@@ -722,7 +866,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q6a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(m = \\tan \\alpha\\) to find the gradient of a line with angle of inclination \\(30^{\\circ}\\) (correct to two decimal places where necessary).",
@@ -740,13 +884,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 0.58",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1.08",
+      "-0.58",
+      "0.07999999999999996",
+      "0.58"
     ]
   },
   {
     "id": "y11a-7b-q6b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(m = \\tan \\alpha\\) to find the gradient of a line with angle of inclination \\(120^{\\circ}\\) (correct to two decimal places where necessary).",
@@ -764,13 +914,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx -1.73",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-2.23",
+      "-1.23",
+      "-1.73",
+      "1.73"
     ]
   },
   {
     "id": "y11a-7b-q6c",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(m = \\tan \\alpha\\) to find the gradient of a line with angle of inclination \\(45^{\\circ}\\) (correct to two decimal places where necessary).",
@@ -788,13 +944,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1",
+      "1.5",
+      "0.5",
+      "-1"
     ]
   },
   {
     "id": "y11a-7b-q6d",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(m = \\tan \\alpha\\) to find the gradient of a line with angle of inclination \\(60^{\\circ}\\) (correct to two decimal places where necessary).",
@@ -812,13 +974,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 1.73",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1.73",
+      "-1.73",
+      "2.23",
+      "1.23"
     ]
   },
   {
     "id": "y11a-7b-q7a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(\\sqrt{3}\\).",
@@ -836,13 +1004,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\approx 60°",
         "graphData": null
       }
+    ],
+    "opts": [
+      "60° + 1",
+      "60°",
+      "-60°",
+      "60° - 1"
     ]
   },
   {
     "id": "y11a-7b-q7b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(-1\\).",
@@ -860,13 +1034,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\approx 135°",
         "graphData": null
       }
+    ],
+    "opts": [
+      "135° + 1",
+      "135°",
+      "135° - 1",
+      "-135°"
     ]
   },
   {
     "id": "y11a-7b-q7c",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(2\\).",
@@ -884,13 +1064,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\approx 63°",
         "graphData": null
       }
+    ],
+    "opts": [
+      "63° - 1",
+      "63°",
+      "63° + 1",
+      "-63°"
     ]
   },
   {
     "id": "y11a-7b-q7d",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(1\\).",
@@ -908,13 +1094,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\approx 45°",
         "graphData": null
       }
+    ],
+    "opts": [
+      "45° + 1",
+      "45° - 1",
+      "45°",
+      "-45°"
     ]
   },
   {
     "id": "y11a-7b-q8a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the line through \\(A(2, 4)\\) and \\(B(7, 6)\\) is 'less than', 'equal to', or 'more than' \\(45^{\\circ}\\).",
@@ -937,13 +1129,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\text{ is } less than \\; 45^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "less than",
+      "-less than",
+      "less than - 1",
+      "less than + 1"
     ]
   },
   {
     "id": "y11a-7b-q8b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the line through \\(A(3, 2)\\) and \\(B(6, 5)\\) is 'less than', 'equal to', or 'more than' \\(45^{\\circ}\\).",
@@ -966,13 +1164,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\text{ is } equal to \\; 45^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "equal to + 1",
+      "equal to",
+      "-equal to",
+      "equal to - 1"
     ]
   },
   {
     "id": "y11a-7b-q8c",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the line through \\(A(-2, 3)\\) and \\(B(2, 6)\\) is 'less than', 'equal to', or 'more than' \\(45^{\\circ}\\).",
@@ -995,13 +1199,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\text{ is } less than \\; 45^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "less than",
+      "less than + 1",
+      "-less than",
+      "less than - 1"
     ]
   },
   {
     "id": "y11a-7b-q8d",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the line through \\(A(-2, 5)\\) and \\(B(-6, -1)\\) is 'less than', 'equal to', or 'more than' \\(45^{\\circ}\\).",
@@ -1024,6 +1234,12 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\alpha \\text{ is } more than \\; 45^{\\circ}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "more than + 1",
+      "-more than",
+      "more than",
+      "more than - 1"
     ]
   },
   {
@@ -1179,7 +1395,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q11a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradients of \\(PQ\\) and \\(QR\\) to determine whether the points \\(P(-3, 8)\\), \\(Q(0, 2)\\), and \\(R(3, -4)\\) are collinear ('yes' or 'no').",
@@ -1202,13 +1418,17 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{PQ} = m_{QR}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "yes",
+      "no"
     ]
   },
   {
     "id": "y11a-7b-q11b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradients of \\(PQ\\) and \\(QR\\) to determine whether the points \\(P(-4, -3)\\), \\(Q(-1, -1)\\), and \\(R(2, 2)\\) are collinear ('yes' or 'no').",
@@ -1231,6 +1451,10 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m_{PQ} \\ne m_{QR}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "no",
+      "yes"
     ]
   },
   {
@@ -1309,7 +1533,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q14a-len",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the lengths of the two sides enclosing the right angle in the triangle with vertices P(3, -2), Q(4, 2), and R(0, 3) (enter as 'side1, side2' in surd form if necessary).",
@@ -1322,13 +1546,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "\\sqrt{17}, \\sqrt{17}",
+      "\\sqrt{17}, \\sqrt{17} - 1",
+      "\\sqrt{17}, \\sqrt{17} + 1",
+      "-\\sqrt{17}, \\sqrt{17}"
     ]
   },
   {
     "id": "y11a-7b-q14a-area",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the area of the right-angled triangle with vertices P(3, -2), Q(4, 2), and R(0, 3).",
@@ -1341,6 +1571,12 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 8.5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-8.5",
+      "7.5",
+      "9.5",
+      "8.5"
     ]
   },
   {
@@ -1366,7 +1602,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q14b-len",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the lengths of the two sides enclosing the right angle in the triangle with vertices X(-2, -4), Y(1, 3), and Z(-4, 1) (enter as 'side1, side2' in surd form if necessary).",
@@ -1379,13 +1615,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
+    ],
+    "opts": [
+      "\\sqrt{29}, \\sqrt{29} - 1",
+      "-\\sqrt{29}, \\sqrt{29}",
+      "\\sqrt{29}, \\sqrt{29} + 1",
+      "\\sqrt{29}, \\sqrt{29}"
     ]
   },
   {
     "id": "y11a-7b-q14b-area",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the area of the right-angled triangle with vertices X(-2, -4), Y(1, 3), and Z(-4, 1).",
@@ -1398,6 +1640,12 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 14.5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "14.5",
+      "13.5",
+      "-14.5",
+      "15.5"
     ]
   },
   {
@@ -1452,7 +1700,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q16a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The line segment \\(PQ\\) has gradient \\(-2\\). A second line passes through \\(A(-3, 5)\\) and \\(B(2, k)\\). Find \\(k\\) if \\(AB\\) is parallel to \\(PQ\\).",
@@ -1470,13 +1718,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\frac{k-5}{5} = -2 \\implies k - 5 = -10 \\implies k = -5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "5",
+      "-5",
+      "-4",
+      "-6"
     ]
   },
   {
     "id": "y11a-7b-q16b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The line segment \\(PQ\\) has gradient \\(-2\\). A second line passes through \\(A(-3, 5)\\) and \\(B(2, k)\\). Find \\(k\\) if \\(AB\\) is perpendicular to \\(PQ\\).",
@@ -1499,6 +1753,12 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "\\frac{k-5}{5} = \\frac{1}{2} \\implies k - 5 = 2.5 \\implies k = 7.5",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-7.5",
+      "8.5",
+      "6.5",
+      "7.5"
     ]
   },
   {
@@ -1781,7 +2041,7 @@ export const Y11_CH7B_QUESTIONS = [
     "id": "y11a-7b-q20a",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the gradient (correct to two decimal places) of a line sloping upwards, if its acute angle with the y-axis is \\(15^{\\circ}\\).",
@@ -1804,13 +2064,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 3.73",
         "graphData": null
       }
+    ],
+    "opts": [
+      "2.73",
+      "3.73",
+      "-3.73",
+      "4.73"
     ]
   },
   {
     "id": "y11a-7b-q20b",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the gradient (correct to two decimal places) of a line sloping upwards, if its acute angle with the y-axis is \\(45^{\\circ}\\).",
@@ -1833,13 +2099,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-1",
+      "1",
+      "1.5",
+      "0.5"
     ]
   },
   {
     "id": "y11a-7b-q20c",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the gradient (correct to two decimal places) of a line sloping upwards, if its acute angle with the y-axis is \\(30^{\\circ}\\).",
@@ -1862,13 +2134,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 1.73",
         "graphData": null
       }
+    ],
+    "opts": [
+      "1.73",
+      "1.23",
+      "-1.73",
+      "2.23"
     ]
   },
   {
     "id": "y11a-7b-q20d",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the gradient (correct to two decimal places) of a line sloping upwards, if its acute angle with the y-axis is \\(60^{\\circ}\\).",
@@ -1891,13 +2169,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "m \\approx 0.58",
         "graphData": null
       }
+    ],
+    "opts": [
+      "-0.58",
+      "1.08",
+      "0.07999999999999996",
+      "0.58"
     ]
   },
   {
     "id": "y11a-7b-q21",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Given the points \\(X(-2, 0)\\), \\(Y(2, a)\\), and \\(Z(a, 3)\\), find \\(a\\) if \\(\\angle YXZ = 90^{\\circ}\\) (enter as a fraction, e.g. -8/7).",
@@ -1920,13 +2204,19 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "3a = -4a - 8 \\implies 7a = -8 \\implies a = -\\frac{8}{7}",
         "graphData": null
       }
+    ],
+    "opts": [
+      "8/7",
+      "9/7",
+      "-8/7",
+      "7/8"
     ]
   },
   {
     "id": "y11a-7b-q22",
     "c": "7B",
     "t": "Gradients of line segments and lines",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "For the four points \\(P(k, 1)\\), \\(Q(-1, -1)\\), \\(R(2, 2)\\), and \\(S(1, k)\\), it is known that \\(PQ\\) is parallel to \\(RS\\). Find the possible values of \\(k\\) (enter as 'value1, value2').",
@@ -1949,6 +2239,12 @@ export const Y11_CH7B_QUESTIONS = [
         "workingOut": "k(k-1) = 0 \\implies k = 0, \\; 1",
         "graphData": null
       }
+    ],
+    "opts": [
+      "0, 1",
+      "0, -1",
+      "-0, 1",
+      "1, 0"
     ]
   }
 ];
