@@ -41,6 +41,7 @@ import { Y11_CH6J_QUESTIONS } from './seedYear11Ch6JQuestions.js';
 import { Y11_CH6K_QUESTIONS } from './seedYear11Ch6KQuestions.js';
 import { Y11_CH7B_QUESTIONS } from './seedYear11Ch7BQuestions.js';
 import { Y11_CH7C_QUESTIONS } from './seedYear11Ch7CQuestions.js';
+import { Y11_CH7D_QUESTIONS } from './seedYear11Ch7DQuestions.js';
 import { Y11_CH1B_QUESTIONS } from './seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from './seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from './seedYear11Ch1DQuestions.js';
@@ -381,6 +382,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH7C_QUESTIONS,
     label: 'Y11 Ch7 · 7C Equations of lines',
+  },
+  {
+    chapterId: 'y11a-7',
+    chapterTitle: 'Chapter 7: Lines in the coordinate plane',
+    topicId: 'y11a-7D',
+    topicCode: '7D',
+    topicTitle: 'Further equations of lines',
+    year: 'Year 11',
+    seed: Y11_CH7D_QUESTIONS,
+    label: 'Y11 Ch7 · 7D Further equations of lines',
   },
   {
     chapterId: 'y11a-5',
