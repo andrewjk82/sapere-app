@@ -119,13 +119,20 @@ export const playSchoolBell = () => {
   // iOS에서 가장 안정적인 unlock 이벤트는 touchend/click. (touchstart는 불안정)
   const EVENTS = ['touchend', 'click', 'pointerup', 'mousedown', 'keydown'];
   let listening = false;
+  // 동기 잠금 — 첫 제스처에서 여러 이벤트가 동시에 들어와도(resume()이 비동기라
+  // played는 콜백에서야 true가 됨) 멜로디가 중복 스케줄되지 않게 막는다.
+  let starting = false;
 
   const ring = (fromGesture) => {
-    if (played) return;
+    if (played || starting) return;
+    starting = true;
+    // 리스너를 즉시 제거해 같은 제스처의 후속 이벤트가 ring을 다시 호출하지 못하게.
+    removeListeners();
     let ctx;
     try {
       ctx = new AC();
     } catch {
+      starting = false;
       return;
     }
     const go = () => {
@@ -133,12 +140,12 @@ export const playSchoolBell = () => {
       played = true;
       if (fromGesture) unlock(ctx);
       scheduleBell(ctx);
-      removeListeners();
     };
     if (ctx.state === 'suspended') {
       // 제스처 안에서만 resume()이 허용됨
       ctx.resume().then(go).catch(() => {
         try { ctx.close(); } catch { /* noop */ }
+        starting = false;
       });
     } else {
       go();
