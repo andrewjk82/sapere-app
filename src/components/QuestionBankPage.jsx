@@ -187,9 +187,36 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               </div>
             </div>
 
-            {/* Progress bar */}
-            <div style={{ width: '100%', height: '8px', background: '#e2e8f0', borderRadius: '4px', overflow: 'hidden' }}>
-              <div style={{ height: '100%', width: `${((currentIdx + 1) / total) * 100}%`, background: '#6366f1', transition: 'width 0.2s' }} />
+            {/* Clickable dot navigation */}
+            <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', padding: '8px 0' }}>
+              {questions.map((item, i) => {
+                const isActive = i === currentIdx;
+                const difficulty = item.difficulty || 'medium';
+                const dotColor = isActive
+                  ? '#6366f1'
+                  : difficulty === 'easy'
+                    ? '#86efac'
+                    : difficulty === 'hard'
+                      ? '#fca5a5'
+                      : '#fed7aa'; // medium
+                return (
+                  <button
+                    key={item.id || i}
+                    onClick={() => { setCurrentIdx(i); setShowHint(false); setPreviewAnswer(''); }}
+                    style={{
+                      width: isActive ? '24px' : '10px',
+                      height: '10px',
+                      borderRadius: '999px',
+                      background: dotColor,
+                      border: 'none',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
+                      padding: 0,
+                    }}
+                    title={`Question ${i + 1} (${difficulty})`}
+                  />
+                );
+              })}
             </div>
 
             {/* Question card */}
