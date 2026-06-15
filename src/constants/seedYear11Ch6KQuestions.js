@@ -550,292 +550,508 @@ export const Y11_CH6K_QUESTIONS = [
     ]
   },
 
-  // Q4 (Original Q17) - Split subQuestions
+  // Q4 (Original Q17) - Split into individual top-level questions
   {
-    "id": "y11a-6k-q4",
+    "id": "y11a-6k-q4a",
     "c": "6K",
     "t": "Revision",
-    "type": "teacher_review",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Solve each trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\).",
-    "a": "See sub-questions.",
-    "h": "Remember to find all solutions in the given domain by checking multiple quadrants.",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y11a-6k-q4a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\cos x = \\frac{\\sqrt{3}}{2}\\)",
-        "a": "30°, 330°",
-        "h": "Cosine is positive in Quadrants I and IV. Use reference angle \\(30^{\\circ}\\).",
-        "s": "\\(x = 30^{\\circ}, 360^{\\circ} - 30^{\\circ} = 330^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Identify quadrants: cosine is positive in Quadrants I and IV.",
-            "workingOut": "",
-            "graphData": null
-          },
-          {
-            "explanation": "Find reference angle \\(\\theta = \\cos^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right)\\).",
-            "workingOut": "\\theta = 30^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Find the angles in the domain: Quadrant I angle and Quadrant IV angle.",
-            "workingOut": "x = 30^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
-            "graphData": null
-          }
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\cos x = \\frac{\\sqrt{3}}{2}\\)",
+    "a": "30°, 330°",
+    "h": "Cosine is positive in Quadrants I and IV. Use reference angle \\(30^{\\circ}\\).",
+    "s": "\\(x = 30^{\\circ}, 360^{\\circ} - 30^{\\circ} = 330^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]], "firstArrow": true, "lastArrow": true },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]], "firstArrow": true, "lastArrow": true },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0, "name": "O", "label": { "offset": [-10,-10] } },
+          { "type": "point", "id": "P1", "coords": [2.60, 1.50], "size": 0, "name": "30°", "label": { "offset": [10, 5] } },
+          { "type": "point", "id": "P2", "coords": [2.60, -1.50], "size": 0, "name": "330°", "label": { "offset": [10, -5] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "line", "through": [[2.60, -4], [2.60, 4]], "dash": 2, "color": "red" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify quadrants: cosine is positive in Quadrants I and IV.",
+        "workingOut": "",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sin x = -1\\)",
-        "a": "270°",
-        "h": "Look for the boundary angle where sine is \\(-1\\).",
-        "s": "\\(x = 270^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Sine is equal to \\(-1\\) at the bottom of the unit circle.",
-            "workingOut": "x = 270^{\\circ}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Find reference angle \\(\\theta = \\cos^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right)\\).",
+        "workingOut": "\\theta = 30^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4c",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\tan x = 1\\)",
-        "a": "45°, 225°",
-        "h": "Tangent is positive in Quadrants I and III. Use reference angle \\(45^{\\circ}\\).",
-        "s": "\\(x = 45^{\\circ}, 180^{\\circ} + 45^{\\circ} = 225^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Tangent is positive in Quadrants I and III.",
-            "workingOut": "",
-            "graphData": null
-          },
-          {
-            "explanation": "Find the reference angle.",
-            "workingOut": "\\theta = \\tan^{-1}(1) = 45^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Find the solutions in Quadrants I and III.",
-            "workingOut": "x = 45^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
-            "graphData": null
-          }
+        "explanation": "Find the angles in the domain: Quadrant I angle and Quadrant IV angle.",
+        "workingOut": "x = 30^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4b",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sin x = -1\\)",
+    "a": "270°",
+    "h": "Look for the boundary angle where sine is \\(-1\\).",
+    "s": "\\(x = 270^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0, "name": "O" },
+          { "type": "point", "id": "P", "coords": [0, -3], "size": 0, "name": "270°", "label": { "offset": [10, -10] } },
+          { "type": "arrow", "from": "O", "to": "P", "color": "blue" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Sine is equal to \\(-1\\) at the bottom of the unit circle.",
+        "workingOut": "x = 270^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4c",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\tan x = 1\\)",
+    "a": "45°, 225°",
+    "h": "Tangent is positive in Quadrants I and III. Use reference angle \\(45^{\\circ}\\).",
+    "s": "\\(x = 45^{\\circ}, 180^{\\circ} + 45^{\\circ} = 225^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [2.12, 2.12], "size": 0, "name": "45°", "label": { "offset": [10, 10] } },
+          { "type": "point", "id": "P2", "coords": [-2.12, -2.12], "size": 0, "name": "225°", "label": { "offset": [-15, -15] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "line", "through": [[-4, -4], [4, 4]], "dash": 2, "color": "red" }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Tangent is positive in Quadrants I and III.",
+        "workingOut": "",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4d",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sin x = 0\\)",
-        "a": "0°, 180°, 360°",
-        "h": "Identify the angles on the unit circle where the y-coordinate is 0.",
-        "s": "\\(x = 0^{\\circ}, 180^{\\circ}, 360^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Sine is zero at the horizontal axis boundaries within the closed interval \\([0^{\\circ}, 360^{\\circ}]\\).",
-            "workingOut": "x = 0^{\\circ}, 180^{\\circ}, 360^{\\circ}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Find the reference angle.",
+        "workingOut": "\\theta = \\tan^{-1}(1) = 45^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4e",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\tan x = \\sqrt{3}\\)",
-        "a": "60°, 240°",
-        "h": "Tangent is positive in Quadrants I and III. Reference angle is \\(60^{\\circ}\\).",
-        "s": "\\(x = 60^{\\circ}, 180^{\\circ} + 60^{\\circ} = 240^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Identify quadrants: Quadrants I and III.",
-            "workingOut": "",
-            "graphData": null
-          },
-          {
-            "explanation": "Determine the reference angle.",
-            "workingOut": "\\theta = \\tan^{-1}(\\sqrt{3}) = 60^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Compute the values in the domain.",
-            "workingOut": "x = 60^{\\circ}, \\quad 180^{\\circ} + 60^{\\circ} = 240^{\\circ}",
-            "graphData": null
-          }
+        "explanation": "Find the solutions in Quadrants I and III.",
+        "workingOut": "x = 45^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4d",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sin x = 0\\)",
+    "a": "0°, 180°, 360°",
+    "h": "Identify the angles on the unit circle where the y-coordinate is 0.",
+    "s": "\\(x = 0^{\\circ}, 180^{\\circ}, 360^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [3, 0], "size": 0, "name": "0°/360°", "label": { "offset": [10, 10] } },
+          { "type": "point", "id": "P2", "coords": [-3, 0], "size": 0, "name": "180°", "label": { "offset": [-25, 10] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Sine is zero at the horizontal axis boundaries within the closed interval \\([0^{\\circ}, 360^{\\circ}]\\).",
+        "workingOut": "x = 0^{\\circ}, 180^{\\circ}, 360^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4e",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\tan x = \\sqrt{3}\\)",
+    "a": "60°, 240°",
+    "h": "Tangent is positive in Quadrants I and III. Reference angle is \\(60^{\\circ}\\).",
+    "s": "\\(x = 60^{\\circ}, 180^{\\circ} + 60^{\\circ} = 240^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [1.50, 2.60], "size": 0, "name": "60°", "label": { "offset": [10, 10] } },
+          { "type": "point", "id": "P2", "coords": [-1.50, -2.60], "size": 0, "name": "240°", "label": { "offset": [-15, -15] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "line", "through": [[-2, -3.46], [2, 3.46]], "dash": 2, "color": "red" }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify quadrants: Quadrants I and III.",
+        "workingOut": "",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4f",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\cos x = 1\\)",
-        "a": "0°, 360°",
-        "h": "Cosine is 1 at the boundaries of the interval.",
-        "s": "\\(x = 0^{\\circ}, 360^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Cosine equals 1 at the start and end of the unit circle interval.",
-            "workingOut": "x = 0^{\\circ}, 360^{\\circ}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Determine the reference angle.",
+        "workingOut": "\\theta = \\tan^{-1}(\\sqrt{3}) = 60^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4g",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(2\\sin x + 1 = 0\\)",
-        "a": "210°, 330°",
-        "h": "Rearrange to solve for \\(\\sin x\\). Sine is negative in Quadrants III and IV.",
-        "s": "\\(\\sin x = -\\frac{1}{2} \\implies x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Isolate the sine function.",
-            "workingOut": "2\\sin x = -1 \\implies \\sin x = -\\frac{1}{2}",
-            "graphData": null
-          },
-          {
-            "explanation": "Use reference angle \\(30^{\\circ}\\) in Quadrants III and IV.",
-            "workingOut": "x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
-            "graphData": null
-          }
+        "explanation": "Compute the values in the domain.",
+        "workingOut": "x = 60^{\\circ}, \\quad 180^{\\circ} + 60^{\\circ} = 240^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4f",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\cos x = 1\\)",
+    "a": "0°, 360°",
+    "h": "Cosine is 1 at the boundaries of the interval.",
+    "s": "\\(x = 0^{\\circ}, 360^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P", "coords": [3, 0], "size": 0, "name": "0°/360°", "label": { "offset": [10, 10] } },
+          { "type": "arrow", "from": "O", "to": "P", "color": "blue" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Cosine equals 1 at the start and end of the unit circle interval.",
+        "workingOut": "x = 0^{\\circ}, 360^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4g",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(2\\sin x + 1 = 0\\)",
+    "a": "210°, 330°",
+    "h": "Rearrange to solve for \\(\\sin x\\). Sine is negative in Quadrants III and IV.",
+    "s": "\\(\\sin x = -\\frac{1}{2} \\implies x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [-2.60, -1.50], "size": 0, "name": "210°", "label": { "offset": [-25, -5] } },
+          { "type": "point", "id": "P2", "coords": [2.60, -1.50], "size": 0, "name": "330°", "label": { "offset": [10, -5] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "line", "through": [[-4, -1.50], [4, -1.50]], "dash": 2, "color": "red" }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Isolate the sine function.",
+        "workingOut": "2\\sin x = -1 \\implies \\sin x = -\\frac{1}{2}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4h",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sqrt{2}\\cos x + 1 = 0\\)",
-        "a": "135°, 225°",
-        "h": "Isolate \\(\\cos x\\). Cosine is negative in Quadrants II and III.",
-        "s": "\\(\\cos x = -\\frac{1}{\\sqrt{2}} \\implies x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Isolate the cosine function.",
-            "workingOut": "\\sqrt{2}\\cos x = -1 \\implies \\cos x = -\\frac{1}{\\sqrt{2}}",
-            "graphData": null
-          },
-          {
-            "explanation": "Using reference angle \\(45^{\\circ}\\) in Quadrants II and III.",
-            "workingOut": "x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
-            "graphData": null
-          }
+        "explanation": "Use reference angle \\(30^{\\circ}\\) in Quadrants III and IV.",
+        "workingOut": "x = 180^{\\circ} + 30^{\\circ} = 210^{\\circ}, \\quad 360^{\\circ} - 30^{\\circ} = 330^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4h",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sqrt{2}\\cos x + 1 = 0\\)",
+    "a": "135°, 225°",
+    "h": "Isolate \\(\\cos x\\). Cosine is negative in Quadrants II and III.",
+    "s": "\\(\\cos x = -\\frac{1}{\\sqrt{2}} \\implies x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [-2.12, 2.12], "size": 0, "name": "135°", "label": { "offset": [-25, 10] } },
+          { "type": "point", "id": "P2", "coords": [-2.12, -2.12], "size": 0, "name": "225°", "label": { "offset": [-25, -10] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "line", "through": [[-2.12, -4], [-2.12, 4]], "dash": 2, "color": "red" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Isolate the cosine function.",
+        "workingOut": "\\sqrt{2}\\cos x = -1 \\implies \\cos x = -\\frac{1}{\\sqrt{2}}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4i",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sin^2 x = \\frac{3}{4}\\)",
-        "a": "60°, 120°, 240°, 300°",
-        "h": "Take the square root to get \\(\\sin x = \\pm \\frac{\\sqrt{3}}{2}\\). All 4 quadrants are valid.",
-        "s": "\\(\\sin x = \\pm \\frac{\\sqrt{3}}{2} \\implies x = 60^{\\circ}, 120^{\\circ}, 240^{\\circ}, 300^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Take the square root of both sides, remembering both positive and negative options.",
-            "workingOut": "\\sin x = \\pm \\sqrt{\\frac{3}{4}} = \\pm \\frac{\\sqrt{3}}{2}",
-            "graphData": null
-          },
-          {
-            "explanation": "Use reference angle \\(60^{\\circ}\\) in all four quadrants.",
-            "workingOut": "x = 60^{\\circ}, \\, 180^{\\circ} - 60^{\\circ} = 120^{\\circ}, \\, 180^{\\circ} + 60^{\\circ} = 240^{\\circ}, \\, 360^{\\circ} - 60^{\\circ} = 300^{\\circ}",
-            "graphData": null
-          }
+        "explanation": "Using reference angle \\(45^{\\circ}\\) in Quadrants II and III.",
+        "workingOut": "x = 180^{\\circ} - 45^{\\circ} = 135^{\\circ}, \\quad 180^{\\circ} + 45^{\\circ} = 225^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4i",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sin^2 x = \\frac{3}{4}\\)",
+    "a": "60°, 120°, 240°, 300°",
+    "h": "Take the square root to get \\(\\sin x = \\pm \\frac{\\sqrt{3}}{2}\\). All 4 quadrants are valid.",
+    "s": "\\(\\sin x = \\pm \\frac{\\sqrt{3}}{2} \\implies x = 60^{\\circ}, 120^{\\circ}, 240^{\\circ}, 300^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [1.50, 2.60], "size": 0, "name": "60°", "label": { "offset": [10, 10] } },
+          { "type": "point", "id": "P2", "coords": [-1.50, 2.60], "size": 0, "name": "120°", "label": { "offset": [-25, 10] } },
+          { "type": "point", "id": "P3", "coords": [-1.50, -2.60], "size": 0, "name": "240°", "label": { "offset": [-25, -10] } },
+          { "type": "point", "id": "P4", "coords": [1.50, -2.60], "size": 0, "name": "300°", "label": { "offset": [10, -10] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P3", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P4", "color": "blue" },
+          { "type": "line", "through": [[-4, 2.60], [4, 2.60]], "dash": 2, "color": "red" },
+          { "type": "line", "through": [[-4, -2.60], [4, -2.60]], "dash": 2, "color": "red" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Take the square root of both sides, remembering both positive and negative options.",
+        "workingOut": "\\sin x = \\pm \\sqrt{\\frac{3}{4}} = \\pm \\frac{\\sqrt{3}}{2}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4j",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sin 2x = \\frac{1}{2}\\)",
-        "a": "15°, 75°, 195°, 255°",
-        "h": "If \\(0^{\\circ} \\le x \\le 360^{\\circ}\\), then \\(0^{\\circ} \\le 2x \\le 720^{\\circ}\\). Find all angles for \\(2x\\) and divide by 2.",
-        "s": "\\(2x = 30^{\\circ}, 150^{\\circ}, 390^{\\circ}, 510^{\\circ} \\implies x = 15^{\\circ}, 75^{\\circ}, 195^{\\circ}, 255^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Find the domain boundary for the double angle \\(2x\\).",
-            "workingOut": "0^{\\circ} \\le 2x \\le 720^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Solve for the possible values of \\(2x\\) in this range.",
-            "workingOut": "2x = 30^{\\circ}, 150^{\\circ}, 390^{\\circ}, 510^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Divide all values by 2 to find \\(x\\).",
-            "workingOut": "x = 15^{\\circ}, 75^{\\circ}, 195^{\\circ}, 255^{\\circ}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Use reference angle \\(60^{\\circ}\\) in all four quadrants.",
+        "workingOut": "x = 60^{\\circ}, \\, 180^{\\circ} - 60^{\\circ} = 120^{\\circ}, \\, 180^{\\circ} + 60^{\\circ} = 240^{\\circ}, \\, 360^{\\circ} - 60^{\\circ} = 300^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4j",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sin 2x = \\frac{1}{2}\\)",
+    "a": "15°, 75°, 195°, 255°",
+    "h": "If \\(0^{\\circ} \\le x \\le 360^{\\circ}\\), then \\(0^{\\circ} \\le 2x \\le 720^{\\circ}\\). Find all angles for \\(2x\\) and divide by 2.",
+    "s": "\\(2x = 30^{\\circ}, 150^{\\circ}, 390^{\\circ}, 510^{\\circ} \\implies x = 15^{\\circ}, 75^{\\circ}, 195^{\\circ}, 255^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [-30, 1.5, 390, -1.5],
+        "boardOptions": { "keepaspectratio": false, "showNavigation": false },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0], [370,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.2], [0,1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.sin(2*x*Math.PI/180); }, 0, 360], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[0, 0.5], [360, 0.5]], {dash: 2, strokeColor: 'red'});\nboard.create('point', [15, 0.5], {name: '15°', size: 2, color: 'red'});\nboard.create('point', [75, 0.5], {name: '75°', size: 2, color: 'red'});\nboard.create('point', [195, 0.5], {name: '195°', size: 2, color: 'red'});\nboard.create('point', [255, 0.5], {name: '255°', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Find the domain boundary for the double angle \\(2x\\).",
+        "workingOut": "0^{\\circ} \\le 2x \\le 720^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4k",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sin(x - 45^{\\circ}) = \\frac{1}{2}\\)",
-        "a": "75°, 195°",
-        "h": "If \\(0^{\\circ} \\le x \\le 360^{\\circ}\\), then \\(-45^{\\circ} \\le x - 45^{\\circ} \\le 315^{\\circ}\\).",
-        "s": "\\(x - 45^{\\circ} = 30^{\\circ}, 150^{\\circ} \\implies x = 75^{\\circ}, 195^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Adjust the domain for \\(u = x - 45^{\\circ}\\).",
-            "workingOut": "-45^{\\circ} \\le x - 45^{\\circ} \\le 315^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Solve for \\(x - 45^{\\circ}\\) in the adjusted range.",
-            "workingOut": "x - 45^{\\circ} = 30^{\\circ}, 150^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Add \\(45^{\\circ}\\) to find the final values of \\(x\\).",
-            "workingOut": "x = 75^{\\circ}, 195^{\\circ}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Solve for the possible values of \\(2x\\) in this range.",
+        "workingOut": "2x = 30^{\\circ}, 150^{\\circ}, 390^{\\circ}, 510^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q4l",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Solve: \\(\\sin x = \\cos x\\)",
-        "a": "45°, 225°",
-        "h": "Divide both sides by \\(\\cos x\\) to transform it into a tangent equation.",
-        "s": "\\(\\tan x = 1 \\implies x = 45^{\\circ}, 225^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Divide by \\(\\cos x\\) (since \\(\\cos x \\ne 0\\) when \\(\\sin x = \\cos x\\)).",
-            "workingOut": "\\frac{\\sin x}{\\cos x} = 1 \\implies \\tan x = 1",
-            "graphData": null
-          },
-          {
-            "explanation": "Solve the tangent equation in Quadrants I and III.",
-            "workingOut": "x = 45^{\\circ}, 225^{\\circ}",
-            "graphData": null
-          }
+        "explanation": "Divide all values by 2 to find \\(x\\).",
+        "workingOut": "x = 15^{\\circ}, 75^{\\circ}, 195^{\\circ}, 255^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sin(x - 45^{\\circ}) = \\frac{1}{2}\\)",
+    "a": "75°, 195°",
+    "h": "If \\(0^{\\circ} \\le x \\le 360^{\\circ}\\), then \\(-45^{\\circ} \\le x - 45^{\\circ} \\le 315^{\\circ}\\).",
+    "s": "\\(x - 45^{\\circ} = 30^{\\circ}, 150^{\\circ} \\implies x = 75^{\\circ}, 195^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [-30, 1.5, 390, -1.5],
+        "boardOptions": { "keepaspectratio": false, "showNavigation": false },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0], [370,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.2], [0,1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.sin((x-45)*Math.PI/180); }, 0, 360], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[0, 0.5], [360, 0.5]], {dash: 2, strokeColor: 'red'});\nboard.create('point', [75, 0.5], {name: '75°', size: 2, color: 'red'});\nboard.create('point', [195, 0.5], {name: '195°', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Adjust the domain for \\(u = x - 45^{\\circ}\\).",
+        "workingOut": "-45^{\\circ} \\le x - 45^{\\circ} \\le 315^{\\circ}",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for \\(x - 45^{\\circ}\\) in the adjusted range.",
+        "workingOut": "x - 45^{\\circ} = 30^{\\circ}, 150^{\\circ}",
+        "graphData": null
+      },
+      {
+        "explanation": "Add \\(45^{\\circ}\\) to find the final values of \\(x\\).",
+        "workingOut": "x = 75^{\\circ}, 195^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q4l",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Solve the trigonometric equation for \\(0^{\\circ} \\le x \\le 360^{\\circ}\\): \\(\\sin x = \\cos x\\)",
+    "a": "45°, 225°",
+    "h": "Divide both sides by \\(\\cos x\\) to transform it into a tangent equation.",
+    "s": "\\(\\tan x = 1 \\implies x = 45^{\\circ}, 225^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-4, 4, 4, -4],
+        "boardOptions": { "keepaspectratio": true, "showNavigation": false },
+        "elements": [
+          { "type": "axis", "id": "ax", "coords": [[0,0],[1,0]] },
+          { "type": "axis", "id": "ay", "coords": [[0,0],[0,1]] },
+          { "type": "circle", "id": "uCircle", "center": [0,0], "radius": 3, "strokeColor": "slate" },
+          { "type": "point", "id": "O", "coords": [0,0], "size": 0 },
+          { "type": "point", "id": "P1", "coords": [2.12, 2.12], "size": 0, "name": "45°", "label": { "offset": [10, 10] } },
+          { "type": "point", "id": "P2", "coords": [-2.12, -2.12], "size": 0, "name": "225°", "label": { "offset": [-15, -15] } },
+          { "type": "arrow", "from": "O", "to": "P1", "color": "blue" },
+          { "type": "arrow", "from": "O", "to": "P2", "color": "blue" },
+          { "type": "line", "through": [[-4, -4], [4, 4]], "dash": 2, "color": "red" }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Divide by \\(\\cos x\\) (since \\(\\cos x \\ne 0\\) when \\(\\sin x = \\cos x\\)).",
+        "workingOut": "\\frac{\\sin x}{\\cos x} = 1 \\implies \\tan x = 1",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve the tangent equation in Quadrants I and III.",
+        "workingOut": "x = 45^{\\circ}, 225^{\\circ}",
+        "graphData": null
       }
     ]
   },
@@ -981,7 +1197,7 @@ export const Y11_CH6K_QUESTIONS = [
             "boundingbox": [-1, 10, 15, -2],
             "boardOptions": {
               "keepaspectratio": true,
-              "showNavigation: ": false
+              "showNavigation": false
             },
             "elements": [
               { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
@@ -1192,7 +1408,7 @@ export const Y11_CH6K_QUESTIONS = [
             "boundingbox": [-6, 12, 10, -2],
             "boardOptions": {
               "keepaspectratio": true,
-              "showNavigation: ": false
+              "showNavigation": false
             },
             "elements": [
               { "type": "point", "id": "A", "coords": [0, 0], "name": "A", "size": 0, "label": { "offset": [-10, -10] } },
@@ -1442,7 +1658,7 @@ export const Y11_CH6K_QUESTIONS = [
         "q": "Use the sine rule to show that \\(HB = \\frac{500 \\sin 9^{\\circ}}{\\sin 156^{\\circ}}\\).",
         "a": "In triangle AHB, the sum of angles is 180 degrees, so angle AHB = 180 - (9 + 15) = 156 degrees. Using the sine rule: HB / sin 9 = 500 / sin 156, which yields HB = 500 sin 9 / sin 156.",
         "h": "Find \\(\\angle AHB\\) first, then apply the sine rule: \\(\\frac{HB}{\\sin(\\angle HAB)} = \\frac{AB}{\\sin(\\angle AHB)}\\).",
-        "s": "\\(\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}\\). By the sine rule in \\(\\triangle AHB\\): \\(\\frac{HB}{\\sin 9^{\circ}} = \\frac{500}{\\sin 156^{\\circ}} \\implies HB = \\frac{500 \\sin 9^{\circ}}{\\sin 156^{\circ}}\\).",
+        "s": "\\(\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}\\). By the sine rule in \\(\\triangle AHB\\): \\(\\frac{HB}{\\sin 9^{\circ}} = \\frac{500}{\\sin 156^{\\circ}} \\implies HB = \\frac{500 \\sin 9^{\circ}}{\\sin 156^{\\circ}}\\).",
         "solutionSteps": [
           {
             "explanation": "Find the third angle \\(\\angle AHB\\) in triangle \\(AHB\\).",
@@ -1542,7 +1758,7 @@ export const Y11_CH6K_QUESTIONS = [
       },
       {
         "explanation": "Apply the sine rule to triangle \\(PTQ\\) where \\(PQ = 60\\text{ m}\\).",
-        "workingOut": "\\frac{TQ}{\\sin 12^{\\circ}} = \\frac{60}{\\sin 10^{\circ}} \\implies TQ = \\frac{60 \\sin 12^{\\circ}}{\\sin 10^{\circ}}",
+        "workingOut": "\\frac{TQ}{\\sin 12^{\\circ}} = \\frac{60}{\\sin 10^{\\circ}} \\implies TQ = \\frac{60 \\sin 12^{\\circ}}{\\sin 10^{\\circ}}",
         "graphData": null
       }
     ]
