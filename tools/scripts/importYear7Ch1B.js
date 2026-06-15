@@ -215,7 +215,7 @@ export const allQuestions = [
     "solutionSteps": [
       {
         "explanation": "Set up the column addition.",
-        "workingOut": "Align the numbers by their place values (Units, Tens, Hundreds):",
+        "workingOut": "Align the numbers by their place values (Units, Tens, Hundreds):\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">7 8 4\n+ 1 5 8\n-------</pre>",
         "graphData": null
       },
       {
@@ -230,7 +230,7 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the Hundreds column (including the carry-over).\nTherefore, the sum is \\(942\\).",
-        "workingOut": "\\[7 + 1 + 1\\text{ (carry)} = 9\\]\nWrite down \\(9\\) in the Hundreds place.",
+        "workingOut": "\\[7 + 1 + 1\\text{ (carry)} = 9\\]\nWrite down \\(9\\) in the Hundreds place.\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">7 8 4\n+ 1 5 8\n-------\n  9 4 2</pre>",
         "graphData": null
       }
     ]
@@ -252,12 +252,12 @@ export const allQuestions = [
     "solutionSteps": [
       {
         "explanation": "Set up vertical column addition.",
-        "workingOut": "Align by place value:",
+        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8 5 7\n+ 4 7 3 6\n---------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add column by column from right to left.\nTherefore, the sum is \\(9593\\).",
-        "workingOut": "• <strong>Units</strong>: \\(7 + 6 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(5 + 3 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n• <strong>Hundreds</strong>: \\(8 + 7 = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(4 + 4 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).",
+        "workingOut": "• <strong>Units</strong>: \\(7 + 6 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(5 + 3 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n• <strong>Hundreds</strong>: \\(8 + 7 = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(4 + 4 + 1\\text{ (carry)} = 9 \\rightarrow\\) Write \\(9\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8 5 7\n+ 4 7 3 6\n---------\n  9 5 9 3</pre>",
         "graphData": null
       }
     ]
@@ -279,12 +279,12 @@ export const allQuestions = [
     "solutionSteps": [
       {
         "explanation": "Set up the addition of three numbers.",
-        "workingOut": "Align by place value:",
+        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add from right to left.\nTherefore, the sum is \\(10814\\).",
-        "workingOut": "• <strong>Units</strong>: \\(8 + 7 + 9 = 24 \\rightarrow\\) Write \\(4\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(8 + 4 + 7 + 2\\text{ (carry)} = 21 \\rightarrow\\) Write \\(1\\), carry \\(2\\).\n• <strong>Hundreds</strong>: \\(0 + 0 + 6 + 2\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n• <strong>Thousands</strong>: \\(2 + 3 + 5 = 10 \\rightarrow\\) Write \\(10\\).",
+        "workingOut": "• <strong>Units</strong>: \\(8 + 7 + 9 = 24 \\rightarrow\\) Write \\(4\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(8 + 4 + 7 + 2\\text{ (carry)} = 21 \\rightarrow\\) Write \\(1\\), carry \\(2\\).\n• <strong>Hundreds</strong>: \\(0 + 0 + 6 + 2\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n• <strong>Thousands</strong>: \\(2 + 3 + 5 = 10 \\rightarrow\\) Write \\(10\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 8 8\n  3 0 4 7\n+ 5 6 7 9\n---------\n 10 8 1 4</pre>",
         "graphData": null
       }
     ]
@@ -306,12 +306,12 @@ export const allQuestions = [
     "solutionSteps": [
       {
         "explanation": "Arrange vertically.",
-        "workingOut": "Align Units under Units, Tens under Tens, etc.:",
+        "workingOut": "Align Units under Units, Tens under Tens, etc.:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8\n  7 3 0\n+   9 5\n-------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add columns from right to left.\nTherefore, the sum is \\(873\\).",
-        "workingOut": "• <strong>Units</strong>: \\(8 + 0 + 5 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(4 + 3 + 9 + 1\\text{ (carry)} = 17 \\rightarrow\\) Write \\(7\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(7 + 1\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).",
+        "workingOut": "• <strong>Units</strong>: \\(8 + 0 + 5 = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Tens</strong>: \\(4 + 3 + 9 + 1\\text{ (carry)} = 17 \\rightarrow\\) Write \\(7\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(7 + 1\\text{ (carry)} = 8 \\rightarrow\\) Write \\(8\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">4 8\n  7 3 0\n+   9 5\n-------\n  8 7 3</pre>",
         "graphData": null
       }
     ]
@@ -333,12 +333,12 @@ export const allQuestions = [
     "solutionSteps": [
       {
         "explanation": "Set up the vertical addition.",
-        "workingOut": "Make sure the place values are aligned correctly:",
+        "workingOut": "Make sure the place values are aligned correctly:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the columns.\nTherefore, the sum is \\(40230\\).",
-        "workingOut": "• <strong>Units</strong>: \\(7 + 8 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(0 + 5 + 6 + 2\\text{ (carry)} = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(2 + 9 + 1\\text{ (carry)} = 12 \\rightarrow\\) Write \\(2\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(9 + 1\\text{ (carry)} = 10 \\rightarrow\\) Write \\(0\\), carry \\(1\\).\n• <strong>Ten Thousands</strong>: \\(3 + 1\\text{ (carry)} = 4 \\rightarrow\\) Write \\(4\\).",
+        "workingOut": "• <strong>Units</strong>: \\(7 + 8 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(0 + 5 + 6 + 2\\text{ (carry)} = 13 \\rightarrow\\) Write \\(3\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(2 + 9 + 1\\text{ (carry)} = 12 \\rightarrow\\) Write \\(2\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(9 + 1\\text{ (carry)} = 10 \\rightarrow\\) Write \\(0\\), carry \\(1\\).\n• <strong>Ten Thousands</strong>: \\(3 + 1\\text{ (carry)} = 4 \\rightarrow\\) Write \\(4\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">2 0 7\n        5 8\n+ 3 9 9 6 5\n-----------\n  4 0 2 3 0</pre>",
         "graphData": null
       }
     ]
@@ -360,12 +360,12 @@ export const allQuestions = [
     "solutionSteps": [
       {
         "explanation": "Set up vertical column addition.",
-        "workingOut": "Align by place value:",
+        "workingOut": "Align by place value:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">5 4 6\n    9 9 9\n+ 2 0 4 5\n---------</pre>",
         "graphData": null
       },
       {
         "explanation": "Add column by column from right to left.\nTherefore, the sum is \\(3590\\).",
-        "workingOut": "• <strong>Units</strong>: \\(6 + 9 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(4 + 9 + 4 + 2\\text{ (carry)} = 19 \\rightarrow\\) Write \\(9\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(5 + 9 + 0 + 1\\text{ (carry)} = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(2 + 1\\text{ (carry)} = 3 \\rightarrow\\) Write \\(3\\).",
+        "workingOut": "• <strong>Units</strong>: \\(6 + 9 + 5 = 20 \\rightarrow\\) Write \\(0\\), carry \\(2\\).\n• <strong>Tens</strong>: \\(4 + 9 + 4 + 2\\text{ (carry)} = 19 \\rightarrow\\) Write \\(9\\), carry \\(1\\).\n• <strong>Hundreds</strong>: \\(5 + 9 + 0 + 1\\text{ (carry)} = 15 \\rightarrow\\) Write \\(5\\), carry \\(1\\).\n• <strong>Thousands</strong>: \\(2 + 1\\text{ (carry)} = 3 \\rightarrow\\) Write \\(3\\).\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">5 4 6\n    9 9 9\n+ 2 0 4 5\n---------\n  3 5 9 0</pre>",
         "graphData": null
       }
     ]
