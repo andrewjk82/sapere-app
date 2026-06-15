@@ -2431,1195 +2431,1169 @@ export const Y11_CH6K_QUESTIONS = [
     ]
   },
   {
-    "id": "y11a-6k-q5",
+    "id": "y11a-6k-q5a",
     "c": "6K",
     "t": "Revision",
-    "type": "teacher_review",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the sine rule or the cosine rule in each triangle to find \\(x\\), correct to one decimal place.",
-    "a": "See sub-questions.",
-    "h": "Decide whether to use the sine rule or the cosine rule based on the given sides and angles.",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y11a-6k-q5a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle, the bottom-left angle is \\(58^{\\circ}\\), the top-right angle is \\(42^{\\circ}\\), the left side is \\(9\\), and the top side opposite to the \\(58^{\\circ}\\) angle is \\(x\\). Find \\(x\\).",
-        "a": "11.4",
-        "h": "Use the sine rule: \\(\\frac{x}{\\sin 58^{\\circ}} = \\frac{9}{\\sin 42^{\\circ}}\\).",
-        "s": "\\(x = \\frac{9 \\sin 58^{\\circ}}{\\sin 42^{\\circ}} \\approx 11.4\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -1,
-              10,
-              15,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  11.41,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  4.77,
-                  7.63
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "58°",
-                "radius": 1.2,
-                "label": {
-                  "offset": [
-                    10,
-                    5
-                  ]
-                }
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "A",
-                  "C",
-                  "B"
-                ],
-                "name": "42°",
-                "radius": 1.2,
-                "label": {
-                  "offset": [
-                    -5,
-                    -20
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  2,
-                  4.2
-                ],
-                "content": "9"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  5.5,
-                  -0.8
-                ],
-                "content": "x"
-              }
-            ]
-          }
+    "q": "Use the sine/cosine rule to find \\(x\\) (correct to one decimal place) in the triangle below.",
+    "a": "11.4",
+    "h": "Use the sine rule: \\(\\frac{x}{\\sin 58^{\\circ}} = \\frac{9}{\\sin 42^{\\circ}}\\).",
+    "s": "\\(x = \\frac{9 \\sin 58^{\\circ}}{\\sin 42^{\\circ}} \\approx 11.4\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -1,
+          10,
+          15,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
         },
-        "solutionSteps": [
+        "elements": [
           {
-            "explanation": "Write the sine rule relation linking side lengths and opposite angles.",
-            "workingOut": "\\frac{x}{\\sin 58^{\\circ}} = \\frac{9}{\\sin 42^{\\circ}}",
-            "graphData": null
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Isolate \\(x\\).",
-            "workingOut": "x = \\frac{9 \\sin 58^{\\circ}}{\\sin 42^{\\circ}}",
-            "graphData": null
+            "type": "point",
+            "id": "B",
+            "coords": [
+              11.41,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Evaluate the trigonometric values and round to one decimal place.",
-            "workingOut": "x \\approx \\frac{9 \\times 0.8480}{0.6691} \\approx 11.4",
-            "graphData": null
+            "type": "point",
+            "id": "C",
+            "coords": [
+              4.77,
+              7.63
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "58°",
+            "radius": 1.2,
+            "label": {
+              "offset": [
+                10,
+                5
+              ]
+            }
+          },
+          {
+            "type": "angle",
+            "points": [
+              "A",
+              "C",
+              "B"
+            ],
+            "name": "42°",
+            "radius": 1.2,
+            "label": {
+              "offset": [
+                -5,
+                -20
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              2,
+              4.2
+            ],
+            "content": "9"
+          },
+          {
+            "type": "text",
+            "coords": [
+              5.5,
+              -0.8
+            ],
+            "content": "x"
           }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Write the sine rule relation linking side lengths and opposite angles.",
+        "workingOut": "\\frac{x}{\\sin 58^{\\circ}} = \\frac{9}{\\sin 42^{\\circ}}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q5b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle, the left side is \\(6\\), the bottom side is \\(7\\), the angle between them is \\(72^{\\circ}\\), and the opposite side is \\(x\\). Find \\(x\\).",
-        "a": "7.7",
-        "h": "Use the cosine rule: \\(x^2 = a^2 + b^2 - 2ab \\cos C\\).",
-        "s": "\\(x^2 = 6^2 + 7^2 - 2(6)(7)\\cos 72^{\\circ} \\implies x \\approx 7.7\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -1,
-              9,
-              10,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  7,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  1.85,
-                  5.71
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "72°",
-                "radius": 1,
-                "label": {
-                  "offset": [
-                    12,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  0.6,
-                  3
-                ],
-                "content": "6"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  3.5,
-                  -0.8
-                ],
-                "content": "7"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  4.5,
-                  3.2
-                ],
-                "content": "x"
-              }
-            ]
-          }
-        },
-        "solutionSteps": [
-          {
-            "explanation": "Set up the cosine rule formula to find the opposite side \\(x\\).",
-            "workingOut": "x^2 = 6^2 + 7^2 - 2(6)(7) \\cos 72^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Simplify terms.",
-            "workingOut": "x^2 = 36 + 49 - 84 \\cos 72^{\\circ} = 85 - 84(0.3090) = 85 - 25.96 = 59.04",
-            "graphData": null
-          },
-          {
-            "explanation": "Take the square root and round to one decimal place.",
-            "workingOut": "x = \\sqrt{59.04} \\approx 7.7",
-            "graphData": null
-          }
-        ]
+        "explanation": "Isolate \\(x\\).",
+        "workingOut": "x = \\frac{9 \\sin 58^{\\circ}}{\\sin 42^{\\circ}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the trigonometric values and round to one decimal place.",
+        "workingOut": "x \\approx \\frac{9 \\times 0.8480}{0.6691} \\approx 11.4",
+        "graphData": null
       }
     ]
   },
   {
-    "id": "y11a-6k-q6",
+    "id": "y11a-6k-q5b",
     "c": "6K",
     "t": "Revision",
-    "type": "teacher_review",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Calculate the area of each triangle, correct to the nearest \\(\\text{cm}^2\\).",
-    "a": "See sub-questions.",
-    "h": "Use the area formula: \\(\\text{Area} = \\frac{1}{2}ab \\sin C\\).",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y11a-6k-q6a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle, two adjacent sides are \\(9\\text{ cm}\\) and \\(12\\text{ cm}\\), and the angle between them is \\(46^{\\circ}\\). Find its area.",
-        "a": "39",
-        "h": "Apply \\(\\text{Area} = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 46^{\\circ}\\).",
-        "s": "\\(\\text{Area} = \\frac{1}{2}(9)(12)\\sin 46^{\\circ} \\approx 38.8 \\approx 39\\text{ cm}^2\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -1,
-              10,
-              15,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  12,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  6.25,
-                  6.47
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "46°",
-                "radius": 1.2,
-                "label": {
-                  "offset": [
-                    15,
-                    8
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  2.5,
-                  3.5
-                ],
-                "content": "9 cm"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  6,
-                  -0.8
-                ],
-                "content": "12 cm"
-              }
-            ]
-          }
+    "q": "Use the sine/cosine rule to find \\(x\\) (correct to one decimal place) in the triangle below.",
+    "a": "7.7",
+    "h": "Use the cosine rule: \\(x^2 = a^2 + b^2 - 2ab \\cos C\\).",
+    "s": "\\(x^2 = 6^2 + 7^2 - 2(6)(7)\\cos 72^{\\circ} \\implies x \\approx 7.7\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -1,
+          9,
+          10,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
         },
-        "solutionSteps": [
+        "elements": [
           {
-            "explanation": "Apply the trigonometric triangle area formula.",
-            "workingOut": "\\text{Area} = \\frac{1}{2}ab \\sin C = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 46^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Perform the calculation.",
-            "workingOut": "\\text{Area} = 54 \\times \\sin 46^{\\circ} \\approx 54 \\times 0.7193 \\approx 38.84\\text{ cm}^2",
-            "graphData": null
-          },
-          {
-            "explanation": "Round to the nearest whole number.",
-            "workingOut": "\\text{Area} \\approx 39\\text{ cm}^2",
-            "graphData": null
-          }
-        ]
-      },
-      {
-        "id": "y11a-6k-q6b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle, two adjacent sides are \\(7.5\\text{ cm}\\) and \\(11.2\\text{ cm}\\), and the angle between them is \\(115^{\\circ}48'\\). Find its area.",
-        "a": "38",
-        "h": "Convert \\(115^{\\circ}48'\\) to decimal degrees: \\(115.8^{\\circ}\\). Then use the area formula.",
-        "s": "\\(\\text{Area} = \\frac{1}{2}(7.5)(11.2)\\sin 115.8^{\\circ} \\approx 37.8 \\approx 38\\text{ cm}^2\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -5,
-              9,
-              10,
-              -2
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
             ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  7.5,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  -4.88,
-                  10.08
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "115°48'",
-                "radius": 1,
-                "label": {
-                  "offset": [
-                    -10,
-                    20
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  -2,
-                  5
-                ],
-                "content": "11.2 cm"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  3.7,
-                  -0.8
-                ],
-                "content": "7.5 cm"
-              }
-            ]
-          }
-        },
-        "solutionSteps": [
-          {
-            "explanation": "Convert the angle minutes to a decimal form: \\(48' = \\frac{48}{60} = 0.8^{\\circ}\\).",
-            "workingOut": "115^{\\circ}48' = 115.8^{\\circ}",
-            "graphData": null
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Substitute the parameters into the area formula.",
-            "workingOut": "\\text{Area} = \\frac{1}{2}ab \\sin C = \\frac{1}{2} \\times 7.5 \\times 11.2 \\times \\sin 115.8^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluate the terms.",
-            "workingOut": "\\text{Area} = 42 \\times \\sin 115.8^{\\circ} \\approx 42 \\times 0.9003 \\approx 37.81\\text{ cm}^2",
-            "graphData": null
-          },
-          {
-            "explanation": "Round to the nearest integer.",
-            "workingOut": "\\text{Area} \\approx 38\\text{ cm}^2",
-            "graphData": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "y11a-6k-q7",
-    "c": "6K",
-    "t": "Revision",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "q": "Use the sine rule or the cosine rule in each triangle to find \\(\\theta\\), correct to the nearest minute.",
-    "a": "See sub-questions.",
-    "h": "Identify the given parts of each triangle to determine the appropriate trigonometric rule.",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y11a-6k-q7a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle with sides \\(5\\), \\(7\\), and \\(8\\), find \\(\\theta\\) opposite to the side of length \\(7\\).",
-        "a": "60° 00'",
-        "h": "Apply the cosine rule: \\(7^2 = 5^2 + 8^2 - 2(5)(8)\\cos \\theta\\).",
-        "s": "\\(\\cos \\theta = \\frac{5^2 + 8^2 - 7^2}{2(5)(8)} = 0.5 \\implies \\theta = 60^{\\circ}\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -1,
+            "type": "point",
+            "id": "B",
+            "coords": [
               7,
-              10,
-              -2
+              0
             ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  8,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  2.5,
-                  4.33
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "θ",
-                "radius": 1,
-                "label": {
-                  "offset": [
-                    10,
-                    8
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  1,
-                  2.5
-                ],
-                "content": "5"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  4,
-                  -0.8
-                ],
-                "content": "8"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  5.5,
-                  2.5
-                ],
-                "content": "7"
-              }
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              1.85,
+              5.71
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
             ]
-          }
-        },
-        "solutionSteps": [
-          {
-            "explanation": "Set up the cosine rule for the side opposite to \\(\\theta\\).",
-            "workingOut": "7^2 = 5^2 + 8^2 - 2(5)(8) \\cos \\theta",
-            "graphData": null
           },
           {
-            "explanation": "Simplify the equation to solve for \\(\\cos \\theta\\).",
-            "workingOut": "49 = 25 + 64 - 80 \\cos \\theta \\implies 80 \\cos \\theta = 40 \\implies \\cos \\theta = 0.5",
-            "graphData": null
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "72°",
+            "radius": 1,
+            "label": {
+              "offset": [
+                12,
+                10
+              ]
+            }
           },
           {
-            "explanation": "Find the angle and format as degrees and minutes.",
-            "workingOut": "\\theta = 60^{\\circ} = 60^{\\circ} 00'",
-            "graphData": null
+            "type": "text",
+            "coords": [
+              0.6,
+              3
+            ],
+            "content": "6"
+          },
+          {
+            "type": "text",
+            "coords": [
+              3.5,
+              -0.8
+            ],
+            "content": "7"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4.5,
+              3.2
+            ],
+            "content": "x"
           }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Set up the cosine rule formula to find the opposite side \\(x\\).",
+        "workingOut": "x^2 = 6^2 + 7^2 - 2(6)(7) \\cos 72^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q7b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle, the bottom angle is \\(74^{\\circ}\\) opposite to a side of length \\(11\\). Angle \\(\\theta\\) is opposite to a side of length \\(8\\). Find \\(\\theta\\).",
-        "a": "44° 21'",
-        "h": "Apply the sine rule: \\(\\frac{\\sin \\theta}{8} = \\frac{\\sin 74^{\\circ}}{11}\\).",
-        "s": "\\(\\sin \\theta = \\frac{8 \\sin 74^{\\circ}}{11} \\approx 0.6991 \\implies \\theta \\approx 44.356^{\\circ} = 44^{\\circ}21'\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -1,
-              10,
-              12,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  10.5,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  2.47,
-                  7.61
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "C",
-                  "B",
-                  "A"
-                ],
-                "name": "74°",
-                "radius": 1,
-                "label": {
-                  "offset": [
-                    -20,
-                    8
-                  ]
-                }
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "θ",
-                "radius": 1.2,
-                "label": {
-                  "offset": [
-                    15,
-                    8
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  1,
-                  4
-                ],
-                "content": "8"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  6.8,
-                  4
-                ],
-                "content": "11"
-              }
-            ]
-          }
-        },
-        "solutionSteps": [
-          {
-            "explanation": "Apply the sine rule to express the relation between sides and angles.",
-            "workingOut": "\\frac{\\sin \\theta}{8} = \\frac{\\sin 74^{\\circ}}{11}",
-            "graphData": null
-          },
-          {
-            "explanation": "Solve for \\(\\sin \\theta\\).",
-            "workingOut": "\\sin \\theta = \\frac{8 \\sin 74^{\\circ}}{11} \\approx 0.6991",
-            "graphData": null
-          },
-          {
-            "explanation": "Find \\(\\theta\\) and convert the decimal part to minutes.",
-            "workingOut": "\\theta \\approx 44.356^{\\circ} \\implies 0.356 \\times 60 \\approx 21' \\implies \\theta \\approx 44^{\\circ} 21'",
-            "graphData": null
-          }
-        ]
+        "explanation": "Simplify terms.",
+        "workingOut": "x^2 = 36 + 49 - 84 \\cos 72^{\\circ} = 85 - 84(0.3090) = 85 - 25.96 = 59.04",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q7c",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In an obtuse triangle, an angle is \\(128^{\\circ}32'\\) opposite to a side of length \\(25\\). Angle \\(\\theta\\) is opposite to a side of length \\(14\\). Find \\(\\theta\\).",
-        "a": "25° 59'",
-        "h": "Use the sine rule: \\(\\frac{\\sin \\theta}{14} = \\frac{\\sin 128^{\\circ}32'}{25}\\).",
-        "s": "\\(\\sin \\theta = \\frac{14 \\sin 128.533^{\\circ}}{25} \\approx 0.4380 \\implies \\theta \\approx 25.976^{\\circ} = 25^{circ}59'\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -6,
-              12,
-              10,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  14.3,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  -8.71,
-                  10.95
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "128°32'",
-                "radius": 1,
-                "label": {
-                  "offset": [
-                    -10,
-                    20
-                  ]
-                }
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ],
-                "name": "θ",
-                "radius": 1.5,
-                "label": {
-                  "offset": [
-                    -25,
-                    8
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  -4.5,
-                  6
-                ],
-                "content": "14"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  3.5,
-                  6.5
-                ],
-                "content": "25"
-              }
-            ]
-          }
+        "explanation": "Take the square root and round to one decimal place.",
+        "workingOut": "x = \\sqrt{59.04} \\approx 7.7",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q6a",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Calculate the area of the triangle below (correct to the nearest \\(\\text{cm}^2\\)).",
+    "a": "39",
+    "h": "Apply \\(\\text{Area} = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 46^{\\circ}\\).",
+    "s": "\\(\\text{Area} = \\frac{1}{2}(9)(12)\\sin 46^{\\circ} \\approx 38.8 \\approx 39\\text{ cm}^2\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -1,
+          10,
+          15,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
         },
-        "solutionSteps": [
+        "elements": [
           {
-            "explanation": "Convert \\(128^{\\circ}32'\\) to decimal degrees.",
-            "workingOut": "128^{\\circ}32' = 128 + \\frac{32}{60} \\approx 128.5333^{\\circ}",
-            "graphData": null
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Apply the sine rule formula.",
-            "workingOut": "\\frac{\\sin \\theta}{14} = \\frac{\\sin 128.5333^{\\circ}}{25}",
-            "graphData": null
+            "type": "point",
+            "id": "B",
+            "coords": [
+              12,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Solve for \\(\\sin \\theta\\).",
-            "workingOut": "\\sin \\theta = \\frac{14 \\sin 128.5333^{\\circ}}{25} \\approx 0.4380",
-            "graphData": null
+            "type": "point",
+            "id": "C",
+            "coords": [
+              6.25,
+              6.47
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
           },
           {
-            "explanation": "Calculate the angle in degrees and minutes.",
-            "workingOut": "\\theta = \\sin^{-1}(0.4380) \\approx 25.976^{\\circ} \\implies \\theta \\approx 25^{\\circ} 59'",
-            "graphData": null
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "46°",
+            "radius": 1.2,
+            "label": {
+              "offset": [
+                15,
+                8
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.5,
+              3.5
+            ],
+            "content": "9 cm"
+          },
+          {
+            "type": "text",
+            "coords": [
+              6,
+              -0.8
+            ],
+            "content": "12 cm"
           }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Apply the trigonometric triangle area formula.",
+        "workingOut": "\\text{Area} = \\frac{1}{2}ab \\sin C = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 46^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q7d",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "In a triangle with sides \\(12.6\\), \\(21.4\\), and \\(11.8\\), find the angle \\(\\theta\\) opposite to the side of length \\(21.4\\).",
-        "a": "122° 32'",
-        "h": "Apply the cosine rule: \\(21.4^2 = 12.6^2 + 11.8^2 - 2(12.6)(11.8)\\cos \\theta\\).",
-        "s": "\\(\\cos \\theta \\approx -0.5379 \\implies \\theta \\approx 122.541^{\\circ} = 122^{\\circ}32'\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 200,
-            "boundingbox": [
-              -5,
-              12,
-              10,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true,
-              "showNavigation": false
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  11.8,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    -10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  -6.78,
-                  10.61
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    0,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ]
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "θ",
-                "radius": 1,
-                "label": {
-                  "offset": [
-                    -10,
-                    20
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  -3.5,
-                  5
-                ],
-                "content": "12.6"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  5.9,
-                  -0.8
-                ],
-                "content": "11.8"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  2.5,
-                  6
-                ],
-                "content": "21.4"
-              }
-            ]
-          }
+        "explanation": "Perform the calculation.",
+        "workingOut": "\\text{Area} = 54 \\times \\sin 46^{\\circ} \\approx 54 \\times 0.7193 \\approx 38.84\\text{ cm}^2",
+        "graphData": null
+      },
+      {
+        "explanation": "Round to the nearest whole number.",
+        "workingOut": "\\text{Area} \\approx 39\\text{ cm}^2",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q6b",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Calculate the area of the triangle below (correct to the nearest \\(\\text{cm}^2\\)).",
+    "a": "38",
+    "h": "Convert \\(115^{\\circ}48'\\) to decimal degrees: \\(115.8^{\\circ}\\). Then use the area formula.",
+    "s": "\\(\\text{Area} = \\frac{1}{2}(7.5)(11.2)\\sin 115.8^{\\circ} \\approx 37.8 \\approx 38\\text{ cm}^2\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -5,
+          9,
+          10,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
         },
-        "solutionSteps": [
+        "elements": [
           {
-            "explanation": "Set up the cosine rule with the side opposite to \\(\\theta\\) isolated.",
-            "workingOut": "21.4^2 = 12.6^2 + 11.8^2 - 2(12.6)(11.8) \\cos \\theta",
-            "graphData": null
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Simplify the squared numbers.",
-            "workingOut": "457.96 = 158.76 + 139.24 - 297.36 \\cos \\theta",
-            "graphData": null
+            "type": "point",
+            "id": "B",
+            "coords": [
+              7.5,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Rearrange to solve for \\(\\cos \\theta\\).",
-            "workingOut": "457.96 = 298.00 - 297.36 \\cos \\theta \\implies 297.36 \\cos \\theta = -159.96 \\implies \\cos \\theta \\approx -0.5380",
-            "graphData": null
+            "type": "point",
+            "id": "C",
+            "coords": [
+              -4.88,
+              10.08
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
           },
           {
-            "explanation": "Find the obtuse angle in degrees and minutes.",
-            "workingOut": "\\theta = \\cos^{-1}(-0.5380) \\approx 122.541^{\\circ} \\implies \\theta \\approx 122^{\\circ} 32'",
-            "graphData": null
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "115°48'",
+            "radius": 1,
+            "label": {
+              "offset": [
+                -10,
+                20
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              -2,
+              5
+            ],
+            "content": "11.2 cm"
+          },
+          {
+            "type": "text",
+            "coords": [
+              3.7,
+              -0.8
+            ],
+            "content": "7.5 cm"
           }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Convert the angle minutes to a decimal form: \\(48' = \\frac{48}{60} = 0.8^{\\circ}\\).",
+        "workingOut": "115^{\\circ}48' = 115.8^{\\circ}",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the parameters into the area formula.",
+        "workingOut": "\\text{Area} = \\frac{1}{2}ab \\sin C = \\frac{1}{2} \\times 7.5 \\times 11.2 \\times \\sin 115.8^{\\circ}",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the terms.",
+        "workingOut": "\\text{Area} = 42 \\times \\sin 115.8^{\\circ} \\approx 42 \\times 0.9003 \\approx 37.81\\text{ cm}^2",
+        "graphData": null
+      },
+      {
+        "explanation": "Round to the nearest integer.",
+        "workingOut": "\\text{Area} \\approx 38\\text{ cm}^2",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q7a",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Use the sine/cosine rule to find \\(\\theta\\) (correct to the nearest minute) in the triangle below.",
+    "a": "60° 00'",
+    "h": "Apply the cosine rule: \\(7^2 = 5^2 + 8^2 - 2(5)(8)\\cos \\theta\\).",
+    "s": "\\(\\cos \\theta = \\frac{5^2 + 8^2 - 7^2}{2(5)(8)} = 0.5 \\implies \\theta = 60^{\\circ}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -1,
+          7,
+          10,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
+        "elements": [
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              8,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              2.5,
+              4.33
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "θ",
+            "radius": 1,
+            "label": {
+              "offset": [
+                10,
+                8
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              1,
+              2.5
+            ],
+            "content": "5"
+          },
+          {
+            "type": "text",
+            "coords": [
+              4,
+              -0.8
+            ],
+            "content": "8"
+          },
+          {
+            "type": "text",
+            "coords": [
+              5.5,
+              2.5
+            ],
+            "content": "7"
+          }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Set up the cosine rule for the side opposite to \\(\\theta\\).",
+        "workingOut": "7^2 = 5^2 + 8^2 - 2(5)(8) \\cos \\theta",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the equation to solve for \\(\\cos \\theta\\).",
+        "workingOut": "49 = 25 + 64 - 80 \\cos \\theta \\implies 80 \\cos \\theta = 40 \\implies \\cos \\theta = 0.5",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the angle and format as degrees and minutes.",
+        "workingOut": "\\theta = 60^{\\circ} = 60^{\\circ} 00'",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q7b",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Use the sine/cosine rule to find \\(\\theta\\) (correct to the nearest minute) in the triangle below.",
+    "a": "44° 21'",
+    "h": "Apply the sine rule: \\(\\frac{\\sin \\theta}{8} = \\frac{\\sin 74^{\\circ}}{11}\\).",
+    "s": "\\(\\sin \\theta = \\frac{8 \\sin 74^{\\circ}}{11} \\approx 0.6991 \\implies \\theta \\approx 44.356^{\\circ} = 44^{\\circ}21'\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -1,
+          10,
+          12,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
+        "elements": [
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              10.5,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              2.47,
+              7.61
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "C",
+              "B",
+              "A"
+            ],
+            "name": "74°",
+            "radius": 1,
+            "label": {
+              "offset": [
+                -20,
+                8
+              ]
+            }
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "θ",
+            "radius": 1.2,
+            "label": {
+              "offset": [
+                15,
+                8
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              1,
+              4
+            ],
+            "content": "8"
+          },
+          {
+            "type": "text",
+            "coords": [
+              6.8,
+              4
+            ],
+            "content": "11"
+          }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Apply the sine rule to express the relation between sides and angles.",
+        "workingOut": "\\frac{\\sin \\theta}{8} = \\frac{\\sin 74^{\\circ}}{11}",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for \\(\\sin \\theta\\).",
+        "workingOut": "\\sin \\theta = \\frac{8 \\sin 74^{\\circ}}{11} \\approx 0.6991",
+        "graphData": null
+      },
+      {
+        "explanation": "Find \\(\\theta\\) and convert the decimal part to minutes.",
+        "workingOut": "\\theta \\approx 44.356^{\\circ} \\implies 0.356 \\times 60 \\approx 21' \\implies \\theta \\approx 44^{\\circ} 21'",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q7c",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Use the sine/cosine rule to find \\(\\theta\\) (correct to the nearest minute) in the triangle below.",
+    "a": "25° 59'",
+    "h": "Use the sine rule: \\(\\frac{\\sin \\theta}{14} = \\frac{\\sin 128^{\\circ}32'}{25}\\).",
+    "s": "\\(\\sin \\theta = \\frac{14 \\sin 128.533^{\\circ}}{25} \\approx 0.4380 \\implies \\theta \\approx 25.976^{\\circ} = 25^{circ}59'\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -6,
+          12,
+          10,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
+        "elements": [
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              14.3,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              -8.71,
+              10.95
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "128°32'",
+            "radius": 1,
+            "label": {
+              "offset": [
+                -10,
+                20
+              ]
+            }
+          },
+          {
+            "type": "angle",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "name": "θ",
+            "radius": 1.5,
+            "label": {
+              "offset": [
+                -25,
+                8
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              -4.5,
+              6
+            ],
+            "content": "14"
+          },
+          {
+            "type": "text",
+            "coords": [
+              3.5,
+              6.5
+            ],
+            "content": "25"
+          }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Convert \\(128^{\\circ}32'\\) to decimal degrees.",
+        "workingOut": "128^{\\circ}32' = 128 + \\frac{32}{60} \\approx 128.5333^{\\circ}",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the sine rule formula.",
+        "workingOut": "\\frac{\\sin \\theta}{14} = \\frac{\\sin 128.5333^{\\circ}}{25}",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for \\(\\sin \\theta\\).",
+        "workingOut": "\\sin \\theta = \\frac{14 \\sin 128.5333^{\\circ}}{25} \\approx 0.4380",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the angle in degrees and minutes.",
+        "workingOut": "\\theta = \\sin^{-1}(0.4380) \\approx 25.976^{\\circ} \\implies \\theta \\approx 25^{\\circ} 59'",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q7d",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Use the sine/cosine rule to find \\(\\theta\\) (correct to the nearest minute) in the triangle below.",
+    "a": "122° 32'",
+    "h": "Apply the cosine rule: \\(21.4^2 = 12.6^2 + 11.8^2 - 2(12.6)(11.8)\\cos \\theta\\).",
+    "s": "\\(\\cos \\theta \\approx -0.5379 \\implies \\theta \\approx 122.541^{\\circ} = 122^{\\circ}32'\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 200,
+        "boundingbox": [
+          -5,
+          12,
+          10,
+          -2
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
+        "elements": [
+          {
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "B",
+            "coords": [
+              11.8,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                10,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "C",
+            "coords": [
+              -6.78,
+              10.61
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ],
+            "name": "θ",
+            "radius": 1,
+            "label": {
+              "offset": [
+                -10,
+                20
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              -3.5,
+              5
+            ],
+            "content": "12.6"
+          },
+          {
+            "type": "text",
+            "coords": [
+              5.9,
+              -0.8
+            ],
+            "content": "11.8"
+          },
+          {
+            "type": "text",
+            "coords": [
+              2.5,
+              6
+            ],
+            "content": "21.4"
+          }
+        ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Set up the cosine rule with the side opposite to \\(\\theta\\) isolated.",
+        "workingOut": "21.4^2 = 12.6^2 + 11.8^2 - 2(12.6)(11.8) \\cos \\theta",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the squared numbers.",
+        "workingOut": "457.96 = 158.76 + 139.24 - 297.36 \\cos \\theta",
+        "graphData": null
+      },
+      {
+        "explanation": "Rearrange to solve for \\(\\cos \\theta\\).",
+        "workingOut": "457.96 = 298.00 - 297.36 \\cos \\theta \\implies 297.36 \\cos \\theta = -159.96 \\implies \\cos \\theta \\approx -0.5380",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the obtuse angle in degrees and minutes.",
+        "workingOut": "\\theta = \\cos^{-1}(-0.5380) \\approx 122.541^{\\circ} \\implies \\theta \\approx 122^{\\circ} 32'",
+        "graphData": null
       }
     ]
   },
@@ -3664,83 +3638,76 @@ export const Y11_CH6K_QUESTIONS = [
     ]
   },
   {
-    "id": "y11a-6k-q9",
+    "id": "y11a-6k-q9a",
     "c": "6K",
     "t": "Revision",
-    "type": "teacher_review",
+    "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Determine the requested parameters using the area of triangles.",
-    "a": "See sub-questions.",
-    "h": "Apply the formula \\(\\text{Area} = \\frac{1}{2}ab \\sin C\\) to solve for the missing angle or side.",
+    "q": "Determine the requested parameter: Find the side length \\(a\\) (in cm, correct to one decimal place) in \\(\\triangle ABC\\), where \\(\\angle C = 45^{\\circ}\\), \\(b = 16\\text{ cm}\\), and the area is \\(24\\text{ cm}^2\\).",
+    "a": "4.2",
+    "h": "Use \\(24 = \frac{1}{2} \\times a \\times 16 \\times \\sin 45^{\\circ}\\).",
+    "s": "\\(24 = 8 a \\sin 45^{\\circ} \\implies a = \\frac{3}{\\sin 45^{\\circ}} = 3\\sqrt{2} \\approx 4.2\\text{ cm}\\).",
     "graphData": null,
-    "subQuestions": [
+    "solutionSteps": [
       {
-        "id": "y11a-6k-q9a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Find the side length \\(a\\) (in cm, correct to one decimal place) in \\(\\triangle ABC\\), where \\(\\angle C = 45^{\\circ}\\), \\(b = 16\\text{ cm}\\), and the area is \\(24\\text{ cm}^2\\).",
-        "a": "4.2",
-        "h": "Use \\(24 = \frac{1}{2} \\times a \\times 16 \\times \\sin 45^{\\circ}\\).",
-        "s": "\\(24 = 8 a \\sin 45^{\\circ} \\implies a = \\frac{3}{\\sin 45^{\\circ}} = 3\\sqrt{2} \\approx 4.2\\text{ cm}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Set up the area formula equation.",
-            "workingOut": "\\text{Area} = \\frac{1}{2} a b \\sin C \\implies 24 = \\frac{1}{2} \\times a \\times 16 \\times \\sin 45^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Simplify the constants.",
-            "workingOut": "24 = 8 a \\times \\frac{1}{\\sqrt{2}} \\implies 24 = 4\\sqrt{2} a",
-            "graphData": null
-          },
-          {
-            "explanation": "Solve for \\(a\\) and round to one decimal place.",
-            "workingOut": "a = \\frac{24}{4\\sqrt{2}} = \\frac{6}{\\sqrt{2}} = 3\\sqrt{2} \\approx 4.24 \\approx 4.2\\text{ cm}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Set up the area formula equation.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} a b \\sin C \\implies 24 = \\frac{1}{2} \\times a \\times 16 \\times \\sin 45^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q9b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Find the size of \\(\\angle B\\) (in degrees, enter as 'value or supplementary_value' if two solutions exist) in \\(\\triangle ABC\\), where \\(a = 10\\text{ cm}\\), \\(c = 6\\text{ cm}\\), and the area is \\(15\\text{ cm}^2\\).",
-        "a": "30° or 150°",
-        "h": "Use \\(15 = \\frac{1}{2} \\times 10 \\times 6 \\times \\sin B\\). Note that sine is positive in both Quadrants I and II.",
-        "s": "\\(15 = 30 \\sin B \\implies \\sin B = 0.5 \\implies B = 30^{\\circ} \\text{ or } 150^{\\circ}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Write down the equation using the triangle area formula.",
-            "workingOut": "\\text{Area} = \\frac{1}{2} a c \\sin B \\implies 15 = \\frac{1}{2} \\times 10 \\times 6 \\times \\sin B",
-            "graphData": null
-          },
-          {
-            "explanation": "Simplify the expression to find \\(\\sin B\\).",
-            "workingOut": "15 = 30 \\sin B \\implies \\sin B = 0.5",
-            "graphData": null
-          },
-          {
-            "explanation": "Identify both acute and obtuse angles within \\(0^{\\circ} < B < 180^{\\circ}\\) that satisfy the sine equation.",
-            "workingOut": "B = 30^{\\circ} \\quad \\text{or} \\quad 180^{\\circ} - 30^{\\circ} = 150^{\\circ}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Simplify the constants.",
+        "workingOut": "24 = 8 a \\times \\frac{1}{\\sqrt{2}} \\implies 24 = 4\\sqrt{2} a",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for \\(a\\) and round to one decimal place.",
+        "workingOut": "a = \\frac{24}{4\\sqrt{2}} = \\frac{6}{\\sqrt{2}} = 3\\sqrt{2} \\approx 4.24 \\approx 4.2\\text{ cm}",
+        "graphData": null
       }
     ]
   },
   {
-    "id": "y11a-6k-q10",
+    "id": "y11a-6k-q9b",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "Determine the requested parameter: Find the size of \\(\\angle B\\) (in degrees, enter as 'value or supplementary_value' if two solutions exist) in \\(\\triangle ABC\\), where \\(a = 10\\text{ cm}\\), \\(c = 6\\text{ cm}\\), and the area is \\(15\\text{ cm}^2\\).",
+    "a": "30° or 150°",
+    "h": "Use \\(15 = \\frac{1}{2} \\times 10 \\times 6 \\times \\sin B\\). Note that sine is positive in both Quadrants I and II.",
+    "s": "\\(15 = 30 \\sin B \\implies \\sin B = 0.5 \\implies B = 30^{\\circ} \\text{ or } 150^{\\circ}\\).",
+    "graphData": null,
+    "solutionSteps": [
+      {
+        "explanation": "Write down the equation using the triangle area formula.",
+        "workingOut": "\\text{Area} = \\frac{1}{2} a c \\sin B \\implies 15 = \\frac{1}{2} \\times 10 \\times 6 \\times \\sin B",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify the expression to find \\(\\sin B\\).",
+        "workingOut": "15 = 30 \\sin B \\implies \\sin B = 0.5",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify both acute and obtuse angles within \\(0^{\\circ} < B < 180^{\\circ}\\) that satisfy the sine equation.",
+        "workingOut": "B = 30^{\\circ} \\quad \\text{or} \\quad 180^{\\circ} - 30^{\\circ} = 150^{\\circ}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q10a",
     "c": "6K",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "A helicopter \\(H\\) is hovering above a straight, horizontal road \\(AB\\) of length \\(500\\text{ metres}\\). The angles of elevation of \\(H\\) from \\(A\\) and \\(B\\) are \\(9^{\\circ}\\) and \\(15^{\\circ}\\) respectively. The point \\(C\\) lies on the road directly below \\(H\\).",
-    "a": "See sub-questions.",
-    "h": "First analyze triangle AHB to find the third angle, then apply the sine rule.",
+    "q": "A helicopter \\(H\\) is hovering above a straight, horizontal road \\(AB\\) of length \\(500\\text{ metres}\\). The angles of elevation of \\(H\\) from \\(A\\) and \\(B\\) are \\(9^{\\circ}\\) and \\(15^{\\circ}\\) respectively. The point \\(C\\) lies on the road directly below \\(H\\).\n\nUse the sine rule to show that \\(HB = \\frac{500 \\sin 9^{\\circ}}{\\sin 156^{\\circ}}\\).",
+    "a": "In triangle AHB, the sum of angles is 180 degrees, so angle AHB = 180 - (9 + 15) = 156 degrees. Using the sine rule: HB / sin 9 = 500 / sin 156, which yields HB = 500 sin 9 / sin 156.",
+    "h": "Find \\(\\angle AHB\\) first, then apply the sine rule: \\(\\frac{HB}{\\sin(\\angle HAB)} = \\frac{AB}{\\sin(\\angle AHB)}\\).",
+    "s": "\\(\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}\\). By the sine rule in \\(\\triangle AHB\\): \\(\\frac{HB}{\\sin 9^{circ}} = \\frac{500}{\\sin 156^{\\circ}} \\implies HB = \\frac{500 \\sin 9^{circ}}{\\sin 156^{\\circ}}\\).",
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -3892,60 +3859,201 @@ export const Y11_CH6K_QUESTIONS = [
         ]
       }
     },
-    "subQuestions": [
+    "solutionSteps": [
       {
-        "id": "y11a-6k-q10a",
-        "type": "teacher_review",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Use the sine rule to show that \\(HB = \\frac{500 \\sin 9^{\\circ}}{\\sin 156^{\\circ}}\\).",
-        "a": "In triangle AHB, the sum of angles is 180 degrees, so angle AHB = 180 - (9 + 15) = 156 degrees. Using the sine rule: HB / sin 9 = 500 / sin 156, which yields HB = 500 sin 9 / sin 156.",
-        "h": "Find \\(\\angle AHB\\) first, then apply the sine rule: \\(\\frac{HB}{\\sin(\\angle HAB)} = \\frac{AB}{\\sin(\\angle AHB)}\\).",
-        "s": "\\(\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}\\). By the sine rule in \\(\\triangle AHB\\): \\(\\frac{HB}{\\sin 9^{circ}} = \\frac{500}{\\sin 156^{\\circ}} \\implies HB = \\frac{500 \\sin 9^{circ}}{\\sin 156^{\\circ}}\\).",
-        "solutionSteps": [
-          {
-            "explanation": "Find the third angle \\(\\angle AHB\\) in triangle \\(AHB\\).",
-            "workingOut": "\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}",
-            "graphData": null
-          },
-          {
-            "explanation": "Set up the sine rule matching sides with opposite angles.",
-            "workingOut": "\\frac{HB}{\\sin 9^{\\circ}} = \\frac{AB}{\\sin 156^{\\circ}}",
-            "graphData": null
-          },
-          {
-            "explanation": "Substitute \\(AB = 500\\) and solve for \\(HB\\).",
-            "workingOut": "HB = \\frac{500 \\sin 9^{\\circ}}{\\sin 156^{\\circ}}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Find the third angle \\(\\angle AHB\\) in triangle \\(AHB\\).",
+        "workingOut": "\\angle AHB = 180^{\\circ} - (9^{\\circ} + 15^{\\circ}) = 156^{\\circ}",
+        "graphData": null
       },
       {
-        "id": "y11a-6k-q10b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Hence find the height \\(CH\\) of the helicopter above the road, correct to the nearest metre.",
-        "a": "50",
-        "h": "In the right-angled triangle \\(HBC\\), \\(CH = HB \\sin 15^{\\circ}\\). Use the value of \\(HB\\) from part a.",
-        "s": "\\(CH = HB \\sin 15^{\\circ} = \\frac{500 \\sin 9^{\\circ} \\sin 15^{\\circ}}{\\sin 156^{\\circ}} \\approx 50\\text{ m}\\).",
-        "solutionSteps": [
+        "explanation": "Set up the sine rule matching sides with opposite angles.",
+        "workingOut": "\\frac{HB}{\\sin 9^{\\circ}} = \\frac{AB}{\\sin 156^{\\circ}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute \\(AB = 500\\) and solve for \\(HB\\).",
+        "workingOut": "HB = \\frac{500 \\sin 9^{\\circ}}{\\sin 156^{\\circ}}",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y11a-6k-q10b",
+    "c": "6K",
+    "t": "Revision",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "q": "A helicopter \\(H\\) is hovering above a straight, horizontal road \\(AB\\) of length \\(500\\text{ metres}\\). The angles of elevation of \\(H\\) from \\(A\\) and \\(B\\) are \\(9^{\\circ}\\) and \\(15^{\\circ}\\) respectively. The point \\(C\\) lies on the road directly below \\(H\\).\n\nHence find the height \\(CH\\) of the helicopter above the road, correct to the nearest metre.",
+    "a": "50",
+    "h": "In the right-angled triangle \\(HBC\\), \\(CH = HB \\sin 15^{\\circ}\\). Use the value of \\(HB\\) from part a.",
+    "s": "\\(CH = HB \\sin 15^{\\circ} = \\frac{500 \\sin 9^{\\circ} \\sin 15^{\\circ}}{\\sin 156^{\\circ}} \\approx 50\\text{ m}\\).",
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 180,
+        "boundingbox": [
+          -50,
+          180,
+          550,
+          -40
+        ],
+        "boardOptions": {
+          "keepaspectratio": true,
+          "showNavigation": false
+        },
+        "elements": [
           {
-            "explanation": "Identify the right-angled triangle \\(HBC\\) where \\(CH\\) is the opposite side to the \\(15^{\\circ}\\) angle.",
-            "workingOut": "CH = HB \\sin 15^{\\circ}",
-            "graphData": null
+            "type": "point",
+            "id": "A",
+            "coords": [
+              0,
+              0
+            ],
+            "name": "A",
+            "size": 0,
+            "label": {
+              "offset": [
+                -15,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Substitute the expression for \\(HB\\) from part a.",
-            "workingOut": "CH = \\frac{500 \\sin 9^{\\circ} \\sin 15^{\\circ}}{\\sin 156^{\\circ}}",
-            "graphData": null
+            "type": "point",
+            "id": "B",
+            "coords": [
+              500,
+              0
+            ],
+            "name": "B",
+            "size": 0,
+            "label": {
+              "offset": [
+                15,
+                -10
+              ]
+            }
           },
           {
-            "explanation": "Calculate the value numerically and round to the nearest integer.",
-            "workingOut": "CH \\approx \\frac{500 \\times 0.1564 \\times 0.2588}{0.4067} \\approx 49.82 \\approx 50",
-            "graphData": null
+            "type": "point",
+            "id": "C",
+            "coords": [
+              318,
+              0
+            ],
+            "name": "C",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                -10
+              ]
+            }
+          },
+          {
+            "type": "point",
+            "id": "H",
+            "coords": [
+              318,
+              85.2
+            ],
+            "name": "H",
+            "size": 0,
+            "label": {
+              "offset": [
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "type": "segment",
+            "from": "A",
+            "to": "H"
+          },
+          {
+            "type": "segment",
+            "from": "B",
+            "to": "H"
+          },
+          {
+            "type": "segment",
+            "from": "C",
+            "to": "H"
+          },
+          {
+            "type": "rightangle",
+            "points": [
+              "H",
+              "C",
+              "B"
+            ],
+            "size": 20
+          },
+          {
+            "type": "angle",
+            "points": [
+              "B",
+              "A",
+              "H"
+            ],
+            "name": "9°",
+            "radius": 40,
+            "label": {
+              "offset": [
+                15,
+                5
+              ]
+            }
+          },
+          {
+            "type": "angle",
+            "points": [
+              "H",
+              "B",
+              "A"
+            ],
+            "name": "15°",
+            "radius": 40,
+            "label": {
+              "offset": [
+                -25,
+                5
+              ]
+            }
+          },
+          {
+            "type": "text",
+            "coords": [
+              220,
+              -20
+            ],
+            "content": "500 m"
           }
         ]
+      }
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify the right-angled triangle \\(HBC\\) where \\(CH\\) is the opposite side to the \\(15^{\\circ}\\) angle.",
+        "workingOut": "CH = HB \\sin 15^{\\circ}",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the expression for \\(HB\\) from part a.",
+        "workingOut": "CH = \\frac{500 \\sin 9^{\\circ} \\sin 15^{\\circ}}{\\sin 156^{\\circ}}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the value numerically and round to the nearest integer.",
+        "workingOut": "CH \\approx \\frac{500 \\times 0.1564 \\times 0.2588}{0.4067} \\approx 49.82 \\approx 50",
+        "graphData": null
       }
     ]
   },
