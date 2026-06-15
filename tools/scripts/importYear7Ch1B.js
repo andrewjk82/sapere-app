@@ -33,12 +33,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the paired numbers.",
-        "workingOut": "\\[34 + 26 = 60\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 4\n+ 2 6\n-----\n  6 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining number.\nTherefore, the total sum is \\(117\\).",
-        "workingOut": "\\[60 + 57 = 117\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    6 0\n+   5 7\n-------\n  1 1 7</pre>",
         "graphData": null
       }
     ]
@@ -65,12 +65,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the paired numbers.",
-        "workingOut": "\\[32 + 18 = 50\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 2\n+ 1 8\n-----\n  5 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining number.\nTherefore, the sum is \\(69\\).",
-        "workingOut": "\\[50 + 19 = 69\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  5 0\n+ 1 9\n-----\n  6 9</pre>",
         "graphData": null
       }
     ]
@@ -97,12 +97,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the paired numbers.",
-        "workingOut": "\\[34 + 66 = 100\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    3 4\n+   6 6\n-------\n  1 0 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining number.\nTherefore, the sum is \\(143\\).",
-        "workingOut": "\\[100 + 43 = 143\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 0 0\n+   4 3\n-------\n  1 4 3</pre>",
         "graphData": null
       }
     ]
@@ -129,12 +129,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the pairs.",
-        "workingOut": "\\[48 + 12 = 60\\]\n\\[13 + 27 = 40\\]",
+        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  4 8\n+ 1 2\n-----\n  6 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 3\n+ 2 7\n-----\n  4 0</pre>\n</div>\n</div>",
         "graphData": null
       },
       {
         "explanation": "Find the total sum.\nTherefore, the sum is \\(100\\).",
-        "workingOut": "\\[60 + 40 = 100\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    6 0\n+   4 0\n-------\n  1 0 0</pre>",
         "graphData": null
       }
     ]
@@ -161,7 +161,7 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the results of the two pairs.\nTherefore, the sum is \\(170\\).",
-        "workingOut": "\\[70 + 100 = 170\\]",
+        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  4 7\n+ 2 3\n-----\n  7 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    1 8\n+   8 2\n-------\n  1 0 0</pre>\n</div>\n</div>\n<div style=\"margin-top: 15px;\">\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Total:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    7 0\n+ 1 0 0\n-------\n  1 7 0</pre>\n</div>",
         "graphData": null
       }
     ]
@@ -188,12 +188,12 @@ export const allQuestions = [
       },
       {
         "explanation": "Add the pairs.",
-        "workingOut": "\\[98 + 12 = 110\\]\n\\[36 + 44 = 80\\]",
+        "workingOut": "<div style=\"display: flex; gap: 40px; flex-wrap: wrap;\">\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 1:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">    9 8\n+   1 2\n-------\n  1 1 0</pre>\n</div>\n<div>\n  <div style=\"font-size: 0.8rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;\">Pair 2:</div>\n  <pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 6\n+ 4 4\n-----\n  8 0</pre>\n</div>\n</div>",
         "graphData": null
       },
       {
         "explanation": "Add the two partial sums.\nTherefore, the sum is \\(190\\).",
-        "workingOut": "\\[110 + 80 = 190\\]",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 1 0\n+   8 0\n-------\n  1 9 0</pre>",
         "graphData": null
       }
     ]
@@ -863,17 +863,17 @@ export const allQuestions = [
       },
       {
         "explanation": "Group friendly numbers to add mentally.",
-        "workingOut": "Notice that the Units digits of \\(138\\) and \\(162\\) add up to \\(10\\) (\\(8 + 2 = 10\\)). Let's pair them:\n\\[138 + 162 = 300\\]",
+        "workingOut": "Notice that the Units digits of \\(138\\) and \\(162\\) add up to \\(10\\) (\\(8 + 2 = 10\\)). Let's pair them:\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  1 3 8\n+ 1 6 2\n-------\n  3 0 0</pre>",
         "graphData": null
       },
       {
         "explanation": "Add the remaining values.",
-        "workingOut": "Now add \\(246\\) and \\(175\\):\n\\[246 + 175 = 421\\]",
+        "workingOut": "Now add \\(246\\) and \\(175\\):\n<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  2 4 6\n+ 1 7 5\n-------\n  4 2 1</pre>",
         "graphData": null
       },
       {
-        "explanation": "Combine the sums.\nLiam earned a total of \\(\\\\)721$.",
-        "workingOut": "\\[300 + 421 = 721\\]",
+        "explanation": "Combine the sums.\nLiam earned a total of \\(\\\\)721\\).",
+        "workingOut": "<pre style=\"font-family: monospace; line-height: 1.2; font-size: 1.1rem; margin: 10px 0; letter-spacing: 0.05em;\">  3 0 0\n+ 4 2 1\n-------\n  7 2 1</pre>",
         "graphData": null
       }
     ]
