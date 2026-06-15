@@ -2292,7 +2292,8 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-6G', code: '6G', title: 'Trigonometric equations' },
           { id: 'y11a-6H', code: '6H', title: 'The sine rule and the area formula' },
           { id: 'y11a-6I', code: '6I', title: 'The cosine rule' },
-          { id: 'y11a-6J', code: '6J', title: 'Problems involving general triangles' }
+          { id: 'y11a-6J', code: '6J', title: 'Problems involving general triangles' },
+          { id: 'y11a-6k', code: '6K', title: 'Revision' }
         ]
       },
       {

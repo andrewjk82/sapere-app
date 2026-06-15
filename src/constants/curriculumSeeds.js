@@ -38,6 +38,7 @@ import { Y11_CH6G_QUESTIONS } from './seedYear11Ch6GQuestions.js';
 import { Y11_CH6H_QUESTIONS } from './seedYear11Ch6HQuestions.js';
 import { Y11_CH6I_QUESTIONS } from './seedYear11Ch6IQuestions.js';
 import { Y11_CH6J_QUESTIONS } from './seedYear11Ch6JQuestions.js';
+import { Y11_CH6K_QUESTIONS } from './seedYear11Ch6KQuestions.js';
 import { Y11_CH1B_QUESTIONS } from './seedYear11Ch1BQuestions.js';
 import { Y11_CH1C_QUESTIONS } from './seedYear11Ch1CQuestions.js';
 import { Y11_CH1D_QUESTIONS } from './seedYear11Ch1DQuestions.js';
@@ -348,6 +349,16 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 11',
     seed: Y11_CH6J_QUESTIONS,
     label: 'Y11 Ch6 · 6J Problems involving general triangles',
+  },
+  {
+    chapterId: 'y11a-6',
+    chapterTitle: 'Chapter 6: Trigonometry',
+    topicId: 'y11a-6k',
+    topicCode: '6K',
+    topicTitle: 'Revision',
+    year: 'Year 11',
+    seed: Y11_CH6K_QUESTIONS,
+    label: 'Y11 Ch6 · 6K Revision',
   },
   {
     chapterId: 'y11a-5',
