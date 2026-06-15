@@ -2151,6 +2151,37 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                       ))}
                     </div>
                   )}
+
+                  {/* Live preview — mirrors how students see the blanks. */}
+                  {(formData.blanks || []).length > 0 && (
+                    <div style={{ marginTop: '16px' }}>
+                      <span style={{ display: 'block', marginBottom: '8px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>Blank Preview (student view)</span>
+                      {formData.questionText && (
+                        <div style={{ marginBottom: '12px' }}>
+                          <MathPreview content={formData.questionText} graphData={currentGraphData} />
+                        </div>
+                      )}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '20px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0' }}>
+                        {formData.blanks.map((b, i) => (
+                          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            {b.label && (
+                              <div style={{ minWidth: '60px' }}>
+                                <MathPreview content={b.label} style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '1.1rem' }} />
+                              </div>
+                            )}
+                            <div style={{ flex: 1, padding: '14px 16px', borderRadius: '14px', border: '2px solid #e2e8f0', background: (b.answer || '').trim() ? '#f0fdf4' : '#fff', textAlign: 'center' }}>
+                              {(b.answer || '').trim() ? (
+                                <MathPreview content={String(b.answer)} style={{ display: 'inline', fontWeight: 700, color: '#166534', fontSize: '1.05rem' }} />
+                              ) : (
+                                <span style={{ color: '#cbd5e1', fontWeight: 700, fontSize: '1.05rem' }}>—</span>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <p style={{ fontSize: '0.7rem', color: '#94a3b8', margin: '8px 0 0', fontStyle: 'italic' }}>Students see empty boxes; the correct answer is shown here for your reference.</p>
+                    </div>
+                  )}
                 </div>
               ) : formData.subQuestions.length === 0 ? (
                 <div>
