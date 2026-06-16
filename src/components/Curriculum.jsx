@@ -361,18 +361,17 @@ const Curriculum = () => {
   };
 
   const handleSeedAlgebraQuestions = async () => {
-    if (!window.confirm("This will replace all existing questions for Chapter 1 (1A - 1F) with the latest seed files. Continue?")) return;
+    if (!window.confirm("This will ADD missing seed questions for Chapter 1 (1A - 1F) without deleting existing ones. Continue?")) return;
     setIsMigrating(true);
     try {
       const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp, setDoc } = await import('firebase/firestore');
       const collRef = collection(db, 'questions');
-      
-      // 1. Clear existing for chapter y11a-1
+
+      // 1. Fetch existing question IDs from Firestore — we will SKIP any seed question
+      //    whose computed ID already exists, so manual edits are never overwritten.
       const q = query(collRef, where('chapterId', '==', 'y11a-1'));
       const snap = await getDocs(q);
-      const batch = writeBatch(db);
-      snap.docs.forEach(d => batch.delete(d.ref));
-      await batch.commit();
+      const existingIds = new Set(snap.docs.map(d => d.id));
 
       // 2. Load the seed questions from constants dynamically
       const { Y11_CH1A_QUESTIONS } = await import('../constants/seedYear11Ch1AQuestions.js');
@@ -519,29 +518,40 @@ const Curriculum = () => {
 
       const counts = { 'y11a-1': 0 };
       const indexIdsByChapter = {};
+      let skipped = 0;
 
-      // Batch Write questions
+      // Batch Write questions — only add questions not already in Firestore
       const chunkSize = 400;
       for (let i = 0; i < finalQuestions.length; i += chunkSize) {
         const chunk = finalQuestions.slice(i, i + chunkSize);
         const addBatch = writeBatch(db);
+        let batchHasOps = false;
         chunk.forEach(qData => {
+          // Use explicit seed ID if present, otherwise derive from question text hash
+          const hashId = qData.id || getMD5(qData.question);
+
+          // Skip if this question already exists in Firestore
+          if (existingIds.has(hashId)) {
+            skipped++;
+            return;
+          }
+
           counts['y11a-1']++;
           if (qData.topicId) {
             counts[qData.topicId] = (counts[qData.topicId] || 0) + 1;
           }
-          const hashId = getMD5(qData.question);
+          const { id: _id, ...qDataWithoutId } = qData;
           const docRef = doc(collRef, hashId);
-          addBatch.set(docRef, qData, { merge: true });
+          addBatch.set(docRef, qDataWithoutId, { merge: true });
+          batchHasOps = true;
 
           const chapterId = qData.chapterId || 'y11a-1';
-          if (!indexIdsByChapter[chapterId]) {
-            indexIdsByChapter[chapterId] = [];
-          }
+          if (!indexIdsByChapter[chapterId]) indexIdsByChapter[chapterId] = [];
           indexIdsByChapter[chapterId].push(hashId);
         });
-        await addBatch.commit();
+        if (batchHasOps) await addBatch.commit();
       }
+      console.log(`Seed import: ${counts['y11a-1']} added, ${skipped} already existed (skipped).`);
 
       // 3. Update sync_meta and question_index docs in Firestore (zero-read writes)
       const seedVersion = Date.now();
@@ -577,7 +587,7 @@ const Curriculum = () => {
       saveCachedQuestionCounts(cached.counts, seedVersion);
       setQuestionCounts(prev => ({ ...prev, ...counts }));
 
-      showToast(`Successfully seeded all ${finalQuestions.length} Chapter 1 questions (including new MC questions)!`, 'success');
+      showToast(`Seed complete: ${counts['y11a-1']} new questions added, ${skipped} already existed (kept as-is).`, 'success');
     } catch (err) {
       console.error(err);
       showToast("Failed to seed questions.", 'error');
