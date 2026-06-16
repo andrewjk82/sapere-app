@@ -639,10 +639,14 @@ const Curriculum = () => {
         });
       });
       await addBatch.commit();
-      // Bump sync_meta + update count cache
+      // Bump sync_meta + question_index/_meta so ensureQuestionIndexFresh sees no mismatch
       try {
         const { setDoc: sd, doc: d2, serverTimestamp: st2 } = await import('firebase/firestore');
-        await sd(d2(db, 'sync_meta', 'questions'), { version: Date.now(), updatedAt: st2() }, { merge: true });
+        const v2 = Date.now();
+        await Promise.all([
+          sd(d2(db, 'sync_meta', 'questions'), { version: v2, updatedAt: st2() }, { merge: true }),
+          sd(d2(db, 'question_index', '_meta'), { builtVersion: v2, updatedAt: st2() }, { merge: true }),
+        ]);
       } catch (e) { console.warn('sync_meta bump failed:', e); }
       try {
         const { getCountFromServer: gcfs, query: q2, collection: col2, where: w2 } = await import('firebase/firestore');
@@ -926,9 +930,13 @@ const Curriculum = () => {
       
       await addBatch.commit();
 
-      // Bump sync_meta + fetch live count
+      // Bump sync_meta + question_index/_meta so ensureQuestionIndexFresh sees no mismatch
       try {
-        await setDoc(doc(db, 'sync_meta', 'questions'), { version: Date.now(), updatedAt: serverTimestamp() }, { merge: true });
+        const v2 = Date.now();
+        await Promise.all([
+          setDoc(doc(db, 'sync_meta', 'questions'), { version: v2, updatedAt: serverTimestamp() }, { merge: true }),
+          setDoc(doc(db, 'question_index', '_meta'), { builtVersion: v2, updatedAt: serverTimestamp() }, { merge: true }),
+        ]);
       } catch (e) { console.warn('sync_meta bump failed:', e); }
       try {
         const chapSnap = await getCountFromServer(query(collection(db, 'questions'), where('chapterId', '==', 'y11a-5')));
