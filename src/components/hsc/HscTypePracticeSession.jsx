@@ -302,12 +302,10 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
   const [showHint, setShowHint] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [answers, setAnswers] = useState([]);
-  const [timeLeft, setTimeLeft] = useState(120);
+  const [timeLeft, setTimeLeft] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const sketchRef = useRef(null);
   const mathInputRef = useRef(null);
-
-  const DEFAULT_TIME = 120;
 
   // ── Load questions for this type ───────────────────────────────────────────
   useEffect(() => {
@@ -349,7 +347,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
 
   const q = questions[idx];
   const isMC = q && q.options?.length > 0 && q.type !== 'short_answer';
-  const timeLimit = q?.timeLimit || DEFAULT_TIME;
+  const timeLimit = q?.timeLimit || null; // null = no timer for this question
 
   // ── Reset per question ─────────────────────────────────────────────────────
   useEffect(() => {
@@ -358,15 +356,15 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
     setShowHint(false);
     setShowFeedback(false);
     setTimeLeft(timeLimit);
-    setQuestionStartTime(Date.now());
+    setQuestionStartTime(timeLimit ? Date.now() : null);
   }, [idx, q?.id]);
 
-  // ── Countdown timer ────────────────────────────────────────────────────────
+  // ── Countdown timer (only runs when question has a timeLimit) ──────────────
   const showFeedbackRef = useRef(showFeedback);
   useEffect(() => { showFeedbackRef.current = showFeedback; }, [showFeedback]);
 
   useEffect(() => {
-    if (stage !== 'quiz' || !questionStartTime || showFeedback) return;
+    if (stage !== 'quiz' || !questionStartTime || !timeLimit || showFeedback) return;
     const endTime = questionStartTime + timeLimit * 1000;
     const timer = setInterval(() => {
       if (showFeedbackRef.current) { clearInterval(timer); return; }
@@ -493,7 +491,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
           <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{type.label}</div>
           <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Question {idx + 1} of {questions.length}</div>
         </div>
-        {!showFeedback && <TimerBadge seconds={timeLeft} total={timeLimit} />}
+        {!showFeedback && timeLimit && <TimerBadge seconds={timeLeft ?? timeLimit} total={timeLimit} />}
       </div>
 
       {/* progress */}
