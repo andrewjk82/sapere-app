@@ -78,7 +78,7 @@ const HscTab = ({
         ) : (
           <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
             {typeEntries.map(([slug, s]) => {
-              const pct = Math.round((s.correct / s.total) * 100);
+              const pct = Math.round(((s.mastered ?? s.correct ?? 0) / s.total) * 100);
               const barColor = pct >= 90 ? "#22c55e" : pct >= 70 ? "#4ade80" : pct >= 40 ? "#86efac" : "#fbbf24";
               return (
                 <div key={slug}>
@@ -87,7 +87,7 @@ const HscTab = ({
                       {slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())}
                     </span>
                     <span style={{ fontSize: "0.75rem", fontWeight: 900, color: pct >= 70 ? "#16a34a" : "#94a3b8" }}>
-                      {pct}% <span style={{ fontWeight: 600, color: "#94a3b8" }}>({s.correct}/{s.total})</span>
+                      {pct}% <span style={{ fontWeight: 600, color: "#94a3b8" }}>({s.mastered ?? s.correct ?? 0}/{s.total})</span>
                     </span>
                   </div>
                   <div style={{ height: "6px", background: "#f1f5f9", borderRadius: "99px", overflow: "hidden" }}>

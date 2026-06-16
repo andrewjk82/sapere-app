@@ -18,7 +18,7 @@ function accuracyStyle(pct) {
 
 // ─── Single type card ─────────────────────────────────────────────────────────
 const TypeCard = ({ type, stats, onClick }) => {
-  const pct = stats ? Math.round((stats.correct / stats.total) * 100) : null;
+  const pct = stats ? Math.round((stats.mastered / stats.total) * 100) : null;
   const attempted = stats?.total > 0;
   const { bg, border, label } = accuracyStyle(pct);
 
@@ -169,7 +169,7 @@ const HscTypePractice = ({ profile }) => {
 
   // ── Cards grid ─────────────────────────────────────────────────────────────
   const totalAttempted = Object.values(stats).filter(s => s?.total > 0).length;
-  const totalMastered = Object.values(stats).filter(s => s?.total > 0 && (s.correct / s.total) >= 0.7).length;
+  const totalMastered = Object.values(stats).filter(s => s?.total > 0 && s.mastered >= s.total).length;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>

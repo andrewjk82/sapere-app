@@ -296,12 +296,15 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
   const isWide = viewportW >= 980;
 
   const [stage, setStage] = useState('loading'); // loading | quiz | result | review
-  const [questions, setQuestions] = useState([]);
-  const [idx, setIdx] = useState(0);
+  // Mastery queue: correct → removed, wrong → sent to back
+  const [queue, setQueue] = useState([]); // remaining questions to master
+  const [totalQuestions, setTotalQuestions] = useState(0); // fixed total for progress
+  const [mastered, setMastered] = useState(0); // count passed correctly
+  const [answers, setAnswers] = useState([]); // full attempt history for review
   const [draft, setDraft] = useState(null);
   const [showHint, setShowHint] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
-  const [answers, setAnswers] = useState([]);
+  const [lastCorrect, setLastCorrect] = useState(null);
   const [timeLeft, setTimeLeft] = useState(null);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const sketchRef = useRef(null);
@@ -312,30 +315,22 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
     let cancelled = false;
     (async () => {
       try {
-        // Load index doc to get question IDs
         const indexSnap = await getDoc(doc(db, 'question_type_index', type.slug));
-        if (!indexSnap.exists() || !cancelled === false) {
-          // Fallback: query directly
+        let qs = [];
+        if (!indexSnap.exists()) {
           const qSnap = await getDocs(query(collection(db, 'questions'), where('questionType', '==', type.slug)));
           if (cancelled) return;
-          const qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() }))).slice(0, 15).map(shuffleOptions);
-          setQuestions(qs);
-          setStage(qs.length > 0 ? 'quiz' : 'empty');
-          return;
+          qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() }))).slice(0, 15).map(shuffleOptions);
+        } else {
+          const { ids = [] } = indexSnap.data();
+          if (cancelled) return;
+          const sample = shuffleArray(ids).slice(0, 12);
+          const fetched = await Promise.all(sample.map(id => getDoc(doc(db, 'questions', id))));
+          if (cancelled) return;
+          qs = fetched.filter(s => s.exists()).map(s => shuffleOptions({ id: s.id, ...s.data() }));
         }
-        const { ids = [] } = indexSnap.data();
-        if (cancelled) return;
-
-        // Fetch up to 10 random questions from the index
-        const sample = shuffleArray(ids).slice(0, 10);
-        const fetched = await Promise.all(sample.map(id => getDoc(doc(db, 'questions', id))));
-        if (cancelled) return;
-
-        const qs = fetched
-          .filter(s => s.exists())
-          .map(s => shuffleOptions({ id: s.id, ...s.data() }));
-
-        setQuestions(qs);
+        setQueue(qs);
+        setTotalQuestions(qs.length);
         setStage(qs.length > 0 ? 'quiz' : 'empty');
       } catch (e) {
         console.warn('Failed to load questions for type:', e);
@@ -345,21 +340,22 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
     return () => { cancelled = true; };
   }, [type.slug]);
 
-  const q = questions[idx];
+  const q = queue[0]; // always the front of the queue
   const isMC = q && q.options?.length > 0 && q.type !== 'short_answer';
-  const timeLimit = q?.timeLimit || null; // null = no timer for this question
+  const timeLimit = q?.timeLimit || null;
 
-  // ── Reset per question ─────────────────────────────────────────────────────
+  // ── Reset per question (when front of queue changes) ──────────────────────
   useEffect(() => {
     if (!q) return;
     setDraft(isMC ? null : '');
     setShowHint(false);
     setShowFeedback(false);
+    setLastCorrect(null);
     setTimeLeft(timeLimit);
     setQuestionStartTime(timeLimit ? Date.now() : null);
-  }, [idx, q?.id]);
+  }, [q?.id]);
 
-  // ── Countdown timer (only runs when question has a timeLimit) ──────────────
+  // ── Countdown timer ────────────────────────────────────────────────────────
   const showFeedbackRef = useRef(showFeedback);
   useEffect(() => { showFeedbackRef.current = showFeedback; }, [showFeedback]);
 
@@ -370,10 +366,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
       if (showFeedbackRef.current) { clearInterval(timer); return; }
       const rem = Math.max(0, Math.ceil((endTime - Date.now()) / 1000));
       setTimeLeft(rem);
-      if (rem <= 0) {
-        clearInterval(timer);
-        if (!showFeedbackRef.current) submitAnswer('');
-      }
+      if (rem <= 0) { clearInterval(timer); if (!showFeedbackRef.current) submitAnswer(''); }
     }, 200);
     return () => clearInterval(timer);
   }, [questionStartTime, showFeedback, timeLimit, stage]);
@@ -381,52 +374,60 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
   // ── Submit ─────────────────────────────────────────────────────────────────
   const submitAnswer = useCallback((forcedAnswer) => {
     const userAnswer = forcedAnswer !== undefined ? forcedAnswer : draft;
-    if (userAnswer === null || userAnswer === undefined || userAnswer === '') {
-      if (isMC) { showToast('Select an answer first.', 'info'); return; }
+    if ((userAnswer === null || userAnswer === undefined || userAnswer === '') && isMC) {
+      showToast('Select an answer first.', 'info'); return;
     }
     const question = { ...q, question: q.q || q.question, answer: q.a || q.answer };
     const { correct } = gradeQuestion(question, userAnswer);
     const timedOut = forcedAnswer === '';
-    setAnswers(prev => [...prev, { userAnswer, correct, timedOut, questionId: q.id }]);
+    setLastCorrect(correct);
+    setAnswers(prev => [...prev, { userAnswer, correct, timedOut, questionId: q.id, questionText: q.q || q.question }]);
     setShowFeedback(true);
   }, [draft, q, isMC, showToast]);
 
-  // ── Advance ────────────────────────────────────────────────────────────────
+  // ── Advance — mastery queue logic ──────────────────────────────────────────
   const advance = useCallback(async () => {
-    if (idx + 1 < questions.length) {
-      setIdx(i => i + 1);
-    } else {
-      // Session complete — save stats
-      const newAnswers = [...answers];
-      const correct = newAnswers.filter(a => a.correct).length;
-      const total = newAnswers.length;
-      const updatedStats = {
-        correct: (initialStats?.correct || 0) + correct,
-        total: (initialStats?.total || 0) + total,
-        lastPlayedAt: serverTimestamp(),
-      };
-      if (user?.uid) {
-        try {
-          await setDoc(
-            doc(db, 'users', user.uid, 'hsc_type_stats', 'main'),
-            { [type.slug]: updatedStats },
-            { merge: true }
-          );
-        } catch (e) { console.warn('Failed to save hsc type stats:', e); }
+    const wasCorrect = lastCorrect;
+    if (wasCorrect) {
+      // Remove from queue (mastered)
+      const newMastered = mastered + 1;
+      setMastered(newMastered);
+      const newQueue = queue.slice(1);
+      if (newQueue.length === 0) {
+        // All mastered — save stats and finish
+        const updatedStats = {
+          mastered: totalQuestions,
+          total: totalQuestions,
+          lastPlayedAt: serverTimestamp(),
+        };
+        if (user?.uid) {
+          try {
+            await setDoc(
+              doc(db, 'users', user.uid, 'hsc_type_stats', 'main'),
+              { [type.slug]: updatedStats },
+              { merge: true }
+            );
+          } catch (e) { console.warn('Failed to save hsc type stats:', e); }
+        }
+        onBack({ mastered: totalQuestions, total: totalQuestions });
+        return;
       }
-      setStage('result');
+      setQueue(newQueue);
+    } else {
+      // Wrong — move to back of queue
+      setQueue(prev => [...prev.slice(1), prev[0]]);
     }
-  }, [idx, questions.length, answers, initialStats, user?.uid, type.slug]);
+  }, [lastCorrect, mastered, queue, totalQuestions, user?.uid, type.slug, onBack]);
 
   // ── Restart ────────────────────────────────────────────────────────────────
   const restart = useCallback(() => {
-    setIdx(0);
     setAnswers([]);
     setDraft(null);
     setShowFeedback(false);
+    setLastCorrect(null);
+    setMastered(0);
     setStage('loading');
-    // Re-shuffle by re-triggering the load effect
-    setQuestions(prev => shuffleArray(prev).slice(0, 10).map(shuffleOptions));
+    setQueue(prev => shuffleArray([...prev]).map(shuffleOptions));
     setTimeout(() => setStage('quiz'), 50);
   }, []);
 
@@ -452,27 +453,8 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
     );
   }
 
-  if (stage === 'result') {
-    const correct = answers.filter(a => a.correct).length;
-    const total = answers.length;
-    const updatedStats = {
-      correct: (initialStats?.correct || 0) + correct,
-      total: (initialStats?.total || 0) + total,
-    };
-    return (
-      <ResultsScreen
-        questions={questions}
-        answers={answers}
-        typeLabel={type.label}
-        onRestart={restart}
-        onBack={() => onBack(updatedStats)}
-        onReview={() => setStage('review')}
-      />
-    );
-  }
-
   if (stage === 'review') {
-    return <ReviewMode questions={questions} answers={answers} onDone={() => setStage('result')} />;
+    return <ReviewMode questions={queue} answers={answers} onDone={() => onBack({ mastered, total: totalQuestions })} />;
   }
 
   if (!q) return null;
@@ -489,18 +471,23 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
         </button>
         <div style={{ flex: 1 }}>
           <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{type.label}</div>
-          <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Question {idx + 1} of {questions.length}</div>
+          <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>
+            {mastered} / {totalQuestions} mastered
+            {queue.length > 1 && <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', marginLeft: '8px' }}>· {queue.length} remaining</span>}
+          </div>
         </div>
         {!showFeedback && timeLimit && <TimerBadge seconds={timeLeft ?? timeLimit} total={timeLimit} />}
       </div>
 
-      {/* progress */}
-      <div style={{ display: 'flex', gap: '4px' }}>
-        {questions.map((_, i) => {
-          const a = answers[i];
-          const bg = i < answers.length ? (a?.correct ? '#86efac' : '#fca5a5') : i === idx ? '#c4b5fd' : '#e2e8f0';
-          return <div key={i} style={{ flex: 1, height: '6px', borderRadius: '999px', background: bg, transition: 'background 0.2s' }} />;
-        })}
+      {/* mastery progress bar */}
+      <div style={{ height: '8px', background: '#f1f5f9', borderRadius: '99px', overflow: 'hidden' }}>
+        <div style={{
+          height: '100%',
+          width: `${totalQuestions > 0 ? (mastered / totalQuestions) * 100 : 0}%`,
+          background: 'linear-gradient(90deg, #22c55e, #4ade80)',
+          borderRadius: '99px',
+          transition: 'width 0.4s ease',
+        }} />
       </div>
 
       {/* question */}
@@ -575,7 +562,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
             }}>
               {isCorrect ? <CheckCircle2 size={18} color="#16a34a" /> : <XCircle size={18} color={answers[answers.length - 1]?.timedOut ? '#d97706' : '#dc2626'} />}
               <span style={{ fontWeight: 900, color: isCorrect ? '#15803d' : answers[answers.length - 1]?.timedOut ? '#b45309' : '#dc2626' }}>
-                {isCorrect ? 'Correct!' : answers[answers.length - 1]?.timedOut ? "Time's up!" : 'Not quite — check the solution below'}
+                {isCorrect ? 'Correct! ✓ Mastered' : answers[answers.length - 1]?.timedOut ? "Time's up — will retry later" : 'Not quite — sent to back to retry'}
               </span>
             </div>
 
@@ -587,9 +574,9 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
 
             <button
               onClick={advance}
-              style={{ width: '100%', marginTop: '14px', padding: '14px', borderRadius: '16px', border: 'none', background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+              style={{ width: '100%', marginTop: '14px', padding: '14px', borderRadius: '16px', border: 'none', background: isCorrect ? 'linear-gradient(135deg, #16a34a, #22c55e)' : 'linear-gradient(135deg, #7c3aed, #4f46e5)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
             >
-              {idx + 1 < questions.length ? (<>Next question <ArrowRight size={16} /></>) : (<><Trophy size={16} /> See results</>)}
+              {queue.length <= 1 && isCorrect ? (<><Trophy size={16} /> All mastered!</>) : (<>Next question <ArrowRight size={16} /></>)}
             </button>
           </motion.div>
         </AnimatePresence>
