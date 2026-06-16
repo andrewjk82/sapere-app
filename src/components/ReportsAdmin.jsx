@@ -6,7 +6,7 @@ import { useAdminFeed } from '../context/AdminFeedContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
-import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench } from 'lucide-react';
+import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench, Search } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import MathView from './MathView';
 import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
@@ -72,6 +72,7 @@ const ReportsAdmin = () => {
   const [previewAttemptLoading, setPreviewAttemptLoading] = useState(false);
   const [isDeletingAll, setIsDeletingAll] = useState(false);
   const [processingId, setProcessingId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
   const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
@@ -602,16 +603,24 @@ const ReportsAdmin = () => {
     }
   };
 
-  const renderReportsList = () => (
+  const filterBySearch = (name) => {
+    if (!searchQuery.trim()) return true;
+    return (name || '').toLowerCase().includes(searchQuery.trim().toLowerCase());
+  };
+
+  const renderReportsList = () => {
+    const filtered = reports.filter(r => filterBySearch(r.studentName));
+    return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      {reports.length === 0 ? (
+      {filtered.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '60px', background: 'white', borderRadius: '24px', color: '#94a3b8' }}>
           <CheckCircle size={48} style={{ opacity: 0.2, margin: '0 auto 16px' }} />
-          <h3 style={{ margin: 0, fontWeight: 700 }}>No active reports!</h3>
-          <p style={{ margin: '8px 0 0' }}>All issues have been resolved.</p>
+          <h3 style={{ margin: 0, fontWeight: 700 }}>{searchQuery.trim() ? 'No reports found for that student.' : 'No active reports!'}</h3>
+          <p style={{ margin: '8px 0 0' }}>{searchQuery.trim() ? 'Try a different name.' : 'All issues have been resolved.'}</p>
         </div>
       ) : (
-        reports.map(report => (
+        filtered.map(report => (
+
           <div key={report.id} style={{ background: 'white', borderRadius: '24px', padding: '24px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', position: 'relative', borderLeft: report.status === 'resolved' ? '4px solid #10b981' : '4px solid #ef4444', opacity: report.status === 'resolved' ? 0.6 : 1 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
               <div>
@@ -677,17 +686,20 @@ const ReportsAdmin = () => {
       )}
     </div>
   );
+  };
 
-  const renderGradingQueue = () => (
+  const renderGradingQueue = () => {
+    const filtered = gradingQueue.filter(item => filterBySearch(item.userName));
+    return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      {gradingQueue.length === 0 ? (
+      {filtered.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '60px', background: 'white', borderRadius: '24px', color: '#94a3b8' }}>
           <ClipboardCheck size={48} style={{ opacity: 0.2, margin: '0 auto 16px' }} />
-          <h3 style={{ margin: 0, fontWeight: 700 }}>Queue Clear!</h3>
-          <p style={{ margin: '8px 0 0' }}>No pending submissions to review.</p>
+          <h3 style={{ margin: 0, fontWeight: 700 }}>{searchQuery.trim() ? 'No grading items for that student.' : 'Queue Clear!'}</h3>
+          <p style={{ margin: '8px 0 0' }}>{searchQuery.trim() ? 'Try a different name.' : 'No pending submissions to review.'}</p>
         </div>
       ) : (
-        gradingQueue.map(item => (
+        filtered.map(item => (
           <div key={item.id} style={{ background: 'white', borderRadius: '28px', overflow: 'hidden', boxShadow: '0 12px 24px rgba(0,0,0,0.03)', border: '1px solid #e2e8f0' }}>
             <div style={{ padding: '24px', borderBottom: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8fafc' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -861,6 +873,7 @@ const ReportsAdmin = () => {
       )}
     </div>
   );
+  };
 
   return (
     <div className="app-page">
@@ -868,8 +881,19 @@ const ReportsAdmin = () => {
         <div className="app-page__title">
           <h2>Reports & Review</h2>
         </div>
-        
-        <div style={{ display: 'flex', background: '#f1f5f9', padding: '6px', borderRadius: '18px', gap: '4px', marginLeft: 'auto' }}>
+
+        <div style={{ position: 'relative', marginLeft: 'auto' }}>
+          <Search size={16} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: '#94a3b8', pointerEvents: 'none' }} />
+          <input
+            type="text"
+            placeholder="Search student..."
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+            style={{ height: '44px', paddingLeft: '36px', paddingRight: '12px', borderRadius: '14px', border: '1.5px solid #e2e8f0', background: 'white', fontSize: '0.9rem', fontWeight: 600, color: '#1e293b', outline: 'none', width: '180px' }}
+          />
+        </div>
+
+        <div style={{ display: 'flex', background: '#f1f5f9', padding: '6px', borderRadius: '18px', gap: '4px', marginLeft: '12px' }}>
           <button 
             onClick={() => setViewMode('reports')}
             style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'reports' ? 'white' : 'transparent', color: viewMode === 'reports' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'reports' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
