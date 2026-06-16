@@ -1565,14 +1565,24 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       });
 
       if (editingQuestion) {
-        await updateDoc(doc(db, 'questions', editingQuestion), payload);
+        let savePayload = { ...payload };
+        try {
+          await updateDoc(doc(db, 'questions', editingQuestion), payload);
+        } catch (err) {
+          if (err.code === 'not-found') {
+            savePayload.createdAt = serverTimestamp();
+            await setDoc(doc(db, 'questions', editingQuestion), savePayload);
+          } else {
+            throw err;
+          }
+        }
         
         if (import.meta.env.DEV) {
           try {
             const syncRes = await fetch('/__local-api/sync-seed', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ id: editingQuestion, question: payload })
+              body: JSON.stringify({ id: editingQuestion, question: savePayload })
             });
             const syncData = await syncRes.json();
             if (syncData.success) {
