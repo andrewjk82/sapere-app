@@ -624,12 +624,12 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
       {/* sketch board */}
       {isWide && (
         <div style={{ flex: 1, position: 'sticky', top: '16px', minHeight: '500px' }}>
-          <ChallengeSketchBoard ref={sketchRef} key={q?.id} isGraphPaper={false} />
+          <ChallengeSketchBoard ref={sketchRef} key={q?.id} showSplitScreen placement="side" />
         </div>
       )}
       {!isWide && !showFeedback && (
         <div style={{ width: '100%', minHeight: '280px' }}>
-          <ChallengeSketchBoard ref={sketchRef} key={q?.id} isGraphPaper={false} />
+          <ChallengeSketchBoard ref={sketchRef} key={q?.id} showSplitScreen placement="tablet" />
         </div>
       )}
     </div>
