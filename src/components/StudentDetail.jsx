@@ -939,13 +939,13 @@ const StudentDetail = ({ studentId, onBack }) => {
   // hsc_type_stats lives under users/{uid} only — use challengeResultsUid which
   // resolves to the registered uid for both manual and registered students.
   useEffect(() => {
-    if (!student?.examPrepEnabled || !challengeResultsUid || hscTypeStats !== null) return;
+    if (!student?.showHscGraph || !challengeResultsUid || hscTypeStats !== null) return;
     let cancelled = false;
     getDoc(doc(db, 'users', challengeResultsUid, 'hsc_type_stats', 'main'))
       .then(snap => { if (!cancelled) setHscTypeStats(snap.exists() ? snap.data() : {}); })
       .catch(() => { if (!cancelled) setHscTypeStats({}); });
     return () => { cancelled = true; };
-  }, [challengeResultsUid, student?.examPrepEnabled, hscTypeStats]);
+  }, [challengeResultsUid, student?.showHscGraph, hscTypeStats]);
 
   // Fetch homework sessions — must be here, above ALL early returns (loading, !student)
   useEffect(() => {
@@ -1959,53 +1959,6 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
 
-              {/* HSC Practice by Type progress — only when exam prep is on */}
-              {student.examPrepEnabled === true && (() => {
-                const stats = hscTypeStats;
-                if (!stats) return (
-                  <div style={{ marginTop: '16px', padding: '12px', textAlign: 'center', color: '#94a3b8', fontSize: '0.82rem', fontWeight: 700 }}>
-                    Loading type stats…
-                  </div>
-                );
-                const entries = Object.entries(stats).filter(([, s]) => s?.total > 0);
-                if (entries.length === 0) return (
-                  <div style={{ marginTop: '16px', padding: '14px 16px', background: '#f8fafc', borderRadius: '12px', border: '1px dashed #e2e8f0', fontSize: '0.82rem', fontWeight: 700, color: '#94a3b8' }}>
-                    No Practice by Type attempts yet.
-                  </div>
-                );
-                return (
-                  <div style={{ marginTop: '16px' }}>
-                    <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '10px' }}>
-                      Practice by Type Progress
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                      {entries
-                        .sort(([, a], [, b]) => (b.total || 0) - (a.total || 0))
-                        .map(([slug, s]) => {
-                          const pct = Math.round((s.correct / s.total) * 100);
-                          const barColor = pct >= 90 ? '#22c55e' : pct >= 70 ? '#4ade80' : pct >= 40 ? '#86efac' : '#fbbf24';
-                          return (
-                            <div key={slug} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '3px' }}>
-                                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                    {slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
-                                  </span>
-                                  <span style={{ fontSize: '0.72rem', fontWeight: 900, color: pct >= 70 ? '#16a34a' : '#94a3b8', flexShrink: 0, marginLeft: '8px' }}>
-                                    {pct}% ({s.correct}/{s.total})
-                                  </span>
-                                </div>
-                                <div style={{ height: '5px', background: '#f1f5f9', borderRadius: '99px', overflow: 'hidden' }}>
-                                  <div style={{ width: `${pct}%`, height: '100%', background: barColor, borderRadius: '99px', transition: 'width 0.4s ease' }} />
-                                </div>
-                              </div>
-                            </div>
-                          );
-                        })}
-                    </div>
-                  </div>
-                );
-              })()}
             </CollapsibleSection>
           </div>
         );
@@ -2128,6 +2081,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             onDeleteRecord={handleDeleteHscRecord}
             student={student}
             onUpdateModeration={handleUpdateHscModeration}
+            hscTypeStats={hscTypeStats}
           />
         );
       default:

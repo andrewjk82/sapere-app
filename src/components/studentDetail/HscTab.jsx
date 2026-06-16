@@ -13,6 +13,7 @@ const HscTab = ({
   onDeleteRecord,
   student,
   onUpdateModeration,
+  hscTypeStats,
 }) => {
   const [modForm, setModForm] = useState({
     assignedCourse: Array.isArray(student?.assignedCourse) ? student.assignedCourse[0] : (student?.assignedCourse || ""),
@@ -52,9 +53,52 @@ const HscTab = ({
     setModSaving(false);
   };
 
+  const typeEntries = hscTypeStats
+    ? Object.entries(hscTypeStats).filter(([, s]) => s?.total > 0).sort(([, a], [, b]) => (b.total || 0) - (a.total || 0))
+    : null;
+
   return (
     <div style={{ display: "grid", gap: "24px" }}>
       <HscScoreChart hscRecords={hscRecords} student={student} />
+
+      {/* ── Practice by Type Progress ── */}
+      <div style={{ ...styles.card, padding: "20px 24px" }} className="profile-card-mobile">
+        <div style={{ fontSize: "0.75rem", fontWeight: 900, color: "#7c3aed", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "4px" }}>
+          Practice by Type
+        </div>
+        <div style={{ fontSize: "0.8rem", color: "#6d6a85", fontWeight: 600, marginBottom: "16px" }}>
+          Accuracy per question type from HSC past paper practice sessions.
+        </div>
+        {typeEntries === null ? (
+          <div style={{ color: "#94a3b8", fontSize: "0.82rem", fontWeight: 700, textAlign: "center", padding: "12px" }}>Loading…</div>
+        ) : typeEntries.length === 0 ? (
+          <div style={{ padding: "16px", background: "#f8fafc", borderRadius: "12px", border: "1px dashed #e2e8f0", color: "#94a3b8", fontWeight: 700, fontSize: "0.82rem", textAlign: "center" }}>
+            No Practice by Type attempts yet.
+          </div>
+        ) : (
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            {typeEntries.map(([slug, s]) => {
+              const pct = Math.round((s.correct / s.total) * 100);
+              const barColor = pct >= 90 ? "#22c55e" : pct >= 70 ? "#4ade80" : pct >= 40 ? "#86efac" : "#fbbf24";
+              return (
+                <div key={slug}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "4px" }}>
+                    <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#475569" }}>
+                      {slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())}
+                    </span>
+                    <span style={{ fontSize: "0.75rem", fontWeight: 900, color: pct >= 70 ? "#16a34a" : "#94a3b8" }}>
+                      {pct}% <span style={{ fontWeight: 600, color: "#94a3b8" }}>({s.correct}/{s.total})</span>
+                    </span>
+                  </div>
+                  <div style={{ height: "6px", background: "#f1f5f9", borderRadius: "99px", overflow: "hidden" }}>
+                    <div style={{ width: `${pct}%`, height: "100%", background: barColor, borderRadius: "99px", transition: "width 0.4s ease" }} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
 
       {/* ── HSC Moderation Inputs ── */}
       <div style={{ ...styles.card, padding: "20px 24px" }} className="profile-card-mobile">
