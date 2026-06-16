@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TrendingUp, TrendingDown, Award, Target, FileText, Info, X, Search, BookOpen } from 'lucide-react';
+import { TrendingUp, TrendingDown, Award, Target, FileText, Info, X, Search, BookOpen, Layers } from 'lucide-react';
 import { calcProjectedMark, schoolRankToAvg } from '../constants/hscBandData';
 import { NSW_SCHOOL_RANKINGS, findSchoolRank } from '../constants/nswSchoolRankings';
 
@@ -35,7 +35,7 @@ const fmtDate = (s) => {
   return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' });
 };
 
-const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) => {
+const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPracticeByType = null }) => {
   const [view, setView] = useState('papers'); // 'papers' | 'curriculum'
   const [paperSeed, setPaperSeed] = useState(() => Date.now());
   const [showRankModal, setShowRankModal] = useState(false);
@@ -557,6 +557,48 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null }) =>
         <div style={{ flex: '1 1 320px', minWidth: 0 }}>{moderationCard}</div>
       </div>
       {list}
+
+      {/* ── Practice by Type ─────────────────────────────────────────── */}
+      {onPracticeByType && (
+        <div
+          onClick={onPracticeByType}
+          style={{
+            margin: '22px 0 0',
+            padding: '22px',
+            borderRadius: '24px',
+            background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)',
+            border: '1px solid rgba(34,197,94,0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '16px',
+            cursor: 'pointer',
+            transition: 'transform 0.15s, box-shadow 0.15s',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(34,197,94,0.2)'; }}
+          onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}
+        >
+          <div>
+            <div style={{ fontFamily: '"Outfit", sans-serif', fontWeight: 900, color: '#14532d', fontSize: '1.05rem', marginBottom: '4px' }}>
+              Practice by Type
+            </div>
+            <div style={{ fontSize: '0.82rem', color: '#166534', fontWeight: 600 }}>
+              HSC past paper questions grouped by technique · track your accuracy per type
+            </div>
+          </div>
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: '8px',
+            padding: '10px 22px', borderRadius: '999px',
+            background: '#16a34a', color: '#fff',
+            fontFamily: '"Outfit", sans-serif', fontWeight: 800, fontSize: '0.88rem',
+            boxShadow: '0 4px 14px rgba(22,163,74,0.35)',
+          }}>
+            <Layers size={15} />
+            Start Practising
+          </div>
+        </div>
+      )}
 
       {/* ── Generate Practice Paper ──────────────────────────────────── */}
       <div style={{

@@ -105,9 +105,6 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         {!isAdmin && profile?.examPrepEnabled === true && (
           <SidebarItem icon={GraduationCap} label="Exam Prep" active={activeTab === 'ExamPrep'} onClick={() => setActiveTab('ExamPrep')} disabled={isLocked} />
         )}
-        {!isAdmin && profile?.showHscGraph === true && (
-          <SidebarItem icon={FileText} label="HSC" active={activeTab === 'HSC'} onClick={() => setActiveTab('HSC')} disabled={isLocked} />
-        )}
         {isAdmin && (
           <SidebarItem icon={Inbox} label="Reports & Review" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount + gradingCount} />
         )}

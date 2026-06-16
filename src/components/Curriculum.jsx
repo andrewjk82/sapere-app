@@ -31,6 +31,7 @@ import QuestionBankModal from './QuestionBankModal';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
+import HscTypePractice from './hsc/HscTypePractice';
 import { seedChapterQuestions } from '../services/chapterSeeder';
 import { readAggregatedCounts, writeAggregatedCounts } from '../services/questionCountsService';
 
@@ -152,6 +153,8 @@ const Curriculum = () => {
   const [questionTypesLoading, setQuestionTypesLoading] = useState(false);
   // For Past Paper type → questions drill-down
   const [selectedPastPaperType, setSelectedPastPaperType] = useState(null);
+  // Student: show Practice by Type page (via HSC journey button)
+  const [showPracticeByType, setShowPracticeByType] = useState(false);
 
   // Fetch Curriculum from Firestore
   useEffect(() => {
@@ -1943,6 +1946,21 @@ const Curriculum = () => {
     );
   }
 
+  // Student-facing Practice by Type full page (triggered from HSC journey button)
+  if (showPracticeByType) {
+    return (
+      <div className="app-page" style={{ padding: 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px' }}>
+        <button
+          onClick={() => setShowPracticeByType(false)}
+          style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'none', border: 'none', cursor: 'pointer', color: '#7c3aed', fontWeight: 800, fontSize: '0.88rem', marginBottom: '20px', padding: 0 }}
+        >
+          ← Back to Journey
+        </button>
+        <HscTypePractice profile={profile} />
+      </div>
+    );
+  }
+
   // Past Paper type drill-down: uses a synthetic chapter so QuestionBankPage
   // can query question_type_index and filter by typeSlug.
   if (selectedPastPaperType) {
@@ -2033,6 +2051,7 @@ const Curriculum = () => {
             hscRecords={hscRecords}
             profile={profile}
             curriculumSlot={<LearningPath profile={profile} />}
+            onPracticeByType={() => setShowPracticeByType(true)}
           />
         ) : (
           <LearningPath profile={profile} />

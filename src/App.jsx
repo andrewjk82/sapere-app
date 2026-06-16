@@ -79,7 +79,6 @@ const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
-const HscTypePractice = lazyWithReload(() => import('./components/hsc/HscTypePractice'));
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
@@ -1121,8 +1120,6 @@ function App() {
         return <Curriculum />;
       case 'ExamPrep':
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
-      case 'HSC':
-        return <HscTypePractice profile={profile} />;
       case 'Library':
         return <Library />;
       case 'Reports':
