@@ -936,14 +936,16 @@ const StudentDetail = ({ studentId, onBack }) => {
   }, [activeStudentCollection, activeStudentId, student?.id]);
 
   // Load HSC type stats when exam prep is enabled (1 doc read — no scanning)
+  // hsc_type_stats lives under users/{uid} only — use challengeResultsUid which
+  // resolves to the registered uid for both manual and registered students.
   useEffect(() => {
-    if (!student?.examPrepEnabled || !userId || hscTypeStats !== null) return;
+    if (!student?.examPrepEnabled || !challengeResultsUid || hscTypeStats !== null) return;
     let cancelled = false;
-    getDoc(doc(db, 'users', userId, 'hsc_type_stats', 'main'))
+    getDoc(doc(db, 'users', challengeResultsUid, 'hsc_type_stats', 'main'))
       .then(snap => { if (!cancelled) setHscTypeStats(snap.exists() ? snap.data() : {}); })
       .catch(() => { if (!cancelled) setHscTypeStats({}); });
     return () => { cancelled = true; };
-  }, [userId, student?.examPrepEnabled, hscTypeStats]);
+  }, [challengeResultsUid, student?.examPrepEnabled, hscTypeStats]);
 
   // Fetch homework sessions — must be here, above ALL early returns (loading, !student)
   useEffect(() => {
