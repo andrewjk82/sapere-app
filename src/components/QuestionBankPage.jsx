@@ -80,32 +80,30 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
           .filter((q) => q.isActive !== false && (!topic?.id || q.topicId === topic.id));
       }
 
-      // Fallback to local seeds if Firestore read quota is exhausted (serving stale offline cache)
-      if (topic?.id === 'y11a-1c') {
-        try {
-          const { Y11_CH1C_QUESTIONS } = await import('../constants/seedYear11Ch1CQuestions.js');
-          if (all.length < Y11_CH1C_QUESTIONS.length) {
+      // Fallback to local seeds ONLY if Firestore returned nothing (quota exhausted / offline)
+      if (all.length === 0) {
+        if (topic?.id === 'y11a-1c') {
+          try {
+            const { Y11_CH1C_QUESTIONS } = await import('../constants/seedYear11Ch1CQuestions.js');
             all = Y11_CH1C_QUESTIONS.map((q, idx) => ({
               id: q.id || `y11a-1c-q${idx}`,
               ...q,
               type: q.type || 'multiple_choice'
             }));
+          } catch (err) {
+            console.warn('Failed to load local fallback for 1C:', err);
           }
-        } catch (err) {
-          console.warn('Failed to load local fallback for 1C:', err);
-        }
-      } else if (topic?.id === 'y11a-1D') {
-        try {
-          const { Y11_CH1D_QUESTIONS } = await import('../constants/seedYear11Ch1DQuestions.js');
-          if (all.length < Y11_CH1D_QUESTIONS.length) {
+        } else if (topic?.id === 'y11a-1D') {
+          try {
+            const { Y11_CH1D_QUESTIONS } = await import('../constants/seedYear11Ch1DQuestions.js');
             all = Y11_CH1D_QUESTIONS.map((q, idx) => ({
               id: q.id || `y11a-1d-q${idx}`,
               ...q,
               type: q.type || 'multiple_choice'
             }));
+          } catch (err) {
+            console.warn('Failed to load local fallback for 1D:', err);
           }
-        } catch (err) {
-          console.warn('Failed to load local fallback for 1D:', err);
         }
       }
 
