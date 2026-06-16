@@ -51,6 +51,10 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [isSyncingAll, setIsSyncingAll] = useState(false);
 
   const handleSyncAll = async () => {
+    if (!import.meta.env.DEV) {
+      showToast('Seed sync only works in local dev mode. Run: npm run sync-seeds', 'warning');
+      return;
+    }
     if (!window.confirm('This will fetch all questions from the database and overwrite the local seed files. Proceed?')) return;
     setIsSyncingAll(true);
     try {
