@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { doc, getDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
@@ -150,9 +151,14 @@ const HscTypePractice = ({ profile }) => {
     return t.examLevel === filterLevel || t.examLevel === 'Both';
   });
 
-  // ── Session active ─────────────────────────────────────────────────────────
-  if (activeType) {
-    return (
+  // ── Session active — rendered as full-screen portal to hide sidebar ──────────
+  const sessionPortal = activeType ? createPortal(
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: 9999,
+      background: '#f8fafc',
+      overflowY: 'auto',
+      padding: 'clamp(16px, 3vw, 28px)',
+    }}>
       <HscTypePracticeSession
         type={activeType}
         profile={profile}
@@ -164,14 +170,17 @@ const HscTypePractice = ({ profile }) => {
           setActiveType(null);
         }}
       />
-    );
-  }
+    </div>,
+    document.body
+  ) : null;
 
   // ── Cards grid ─────────────────────────────────────────────────────────────
   const totalAttempted = Object.values(stats).filter(s => s?.total > 0).length;
   const totalMastered = Object.values(stats).filter(s => s?.total > 0 && s.mastered >= s.total).length;
 
   return (
+    <>
+    {sessionPortal}
     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
 
       {/* Header */}
@@ -254,6 +263,7 @@ const HscTypePractice = ({ profile }) => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

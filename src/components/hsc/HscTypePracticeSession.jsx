@@ -4,7 +4,7 @@ import {
   ArrowLeft, ArrowRight, CheckCircle2, XCircle, Clock,
   Lightbulb, RotateCcw, Trophy, ChevronDown, ChevronUp, Flag,
 } from 'lucide-react';
-import { collection, doc, getDoc, getDocs, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
+import { addDoc, collection, doc, getDoc, getDocs, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../context/ToastContext';
@@ -309,6 +309,9 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const sketchRef = useRef(null);
   const mathInputRef = useRef(null);
+  const [isReporting, setIsReporting] = useState(false);
+  const [reportMessage, setReportMessage] = useState('');
+  const [isSubmittingReport, setIsSubmittingReport] = useState(false);
 
   // ── Load questions for this type ───────────────────────────────────────────
   useEffect(() => {
@@ -418,6 +421,37 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
       setQueue(prev => [...prev.slice(1), prev[0]]);
     }
   }, [lastCorrect, mastered, queue, totalQuestions, user?.uid, type.slug, onBack]);
+
+  // ── Report ─────────────────────────────────────────────────────────────────
+  const handleReportSubmit = useCallback(async () => {
+    if (!reportMessage.trim()) return;
+    setIsSubmittingReport(true);
+    try {
+      await addDoc(collection(db, 'reports'), {
+        studentId: user?.uid || '',
+        studentName: user?.displayName || user?.email || 'Student',
+        questionId: q?.id || '',
+        source: 'hsc_type_practice',
+        questionData: {
+          id: q?.id || '',
+          question: q?.q || q?.question || '',
+          answer: String(q?.a ?? q?.answer ?? ''),
+          type: type?.slug || '',
+        },
+        message: reportMessage,
+        status: 'open',
+        createdAt: serverTimestamp(),
+      });
+      setIsReporting(false);
+      setReportMessage('');
+      showToast('Report submitted! We will review it.', 'success');
+    } catch (e) {
+      console.error('Report error:', e);
+      showToast('Failed to submit report.', 'error');
+    } finally {
+      setIsSubmittingReport(false);
+    }
+  }, [reportMessage, q, user, type, showToast]);
 
   // ── Restart ────────────────────────────────────────────────────────────────
   const restart = useCallback(() => {
@@ -572,12 +606,52 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
               isCorrect={isCorrect}
             />
 
-            <button
-              onClick={advance}
-              style={{ width: '100%', marginTop: '14px', padding: '14px', borderRadius: '16px', border: 'none', background: isCorrect ? 'linear-gradient(135deg, #16a34a, #22c55e)' : 'linear-gradient(135deg, #7c3aed, #4f46e5)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
-            >
-              {queue.length <= 1 && isCorrect ? (<><Trophy size={16} /> All mastered!</>) : (<>Next question <ArrowRight size={16} /></>)}
-            </button>
+            <div style={{ display: 'flex', gap: '8px', marginTop: '14px' }}>
+              <button
+                onClick={advance}
+                style={{ flex: 1, padding: '14px', borderRadius: '16px', border: 'none', background: isCorrect ? 'linear-gradient(135deg, #16a34a, #22c55e)' : 'linear-gradient(135deg, #7c3aed, #4f46e5)', color: '#fff', fontWeight: 900, fontSize: '0.95rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+              >
+                {queue.length <= 1 && isCorrect ? (<><Trophy size={16} /> All mastered!</>) : (<>Next question <ArrowRight size={16} /></>)}
+              </button>
+              <button
+                onClick={() => { setIsReporting(true); setReportMessage(''); }}
+                title="Report an issue"
+                style={{ padding: '14px 16px', borderRadius: '16px', border: '1.5px solid #fecaca', background: '#fef2f2', color: '#dc2626', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+              >
+                <Flag size={16} />
+              </button>
+            </div>
+
+            {/* Report modal */}
+            {isReporting && (
+              <div style={{ marginTop: '12px', padding: '16px', borderRadius: '16px', border: '1.5px solid #fecaca', background: '#fff5f5', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ fontWeight: 800, fontSize: '0.85rem', color: '#dc2626', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Flag size={13} /> Report an issue with this question
+                </div>
+                <textarea
+                  value={reportMessage}
+                  onChange={e => setReportMessage(e.target.value)}
+                  placeholder="Describe the issue (e.g. wrong answer, unclear question)…"
+                  rows={3}
+                  style={{ width: '100%', padding: '10px', borderRadius: '10px', border: '1px solid #fecaca', fontSize: '0.85rem', fontFamily: 'inherit', resize: 'vertical', outline: 'none', boxSizing: 'border-box' }}
+                />
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <button
+                    onClick={handleReportSubmit}
+                    disabled={!reportMessage.trim() || isSubmittingReport}
+                    style={{ flex: 1, padding: '10px', borderRadius: '10px', border: 'none', background: reportMessage.trim() ? '#dc2626' : '#e2e8f0', color: reportMessage.trim() ? '#fff' : '#94a3b8', fontWeight: 800, fontSize: '0.85rem', cursor: reportMessage.trim() ? 'pointer' : 'not-allowed' }}
+                  >
+                    {isSubmittingReport ? 'Submitting…' : 'Submit report'}
+                  </button>
+                  <button
+                    onClick={() => setIsReporting(false)}
+                    style={{ padding: '10px 16px', borderRadius: '10px', border: '1px solid #e2e8f0', background: '#fff', color: '#64748b', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer' }}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            )}
           </motion.div>
         </AnimatePresence>
       )}
