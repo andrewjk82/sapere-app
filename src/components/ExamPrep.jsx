@@ -30,7 +30,6 @@ import { db } from '../firebase/config';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getNoteCount, getDueCount } from '../utils/secretNote';
 import SecretNoteView from './challenge/SecretNoteView';
-import HscTypePractice from './hsc/HscTypePractice';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import LessonPlayer from './lessons/LessonPlayer';
 import { getLesson } from '../lessons/registry';
@@ -1281,7 +1280,6 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     chapters: Array.isArray(profile?.examPrepSelection?.chapters) ? profile.examPrepSelection.chapters : [],
     examPaperOnly: profile?.examPrepSelection?.examPaperOnly === true,
   }), [profile?.examPrepSelection]);
-  const [examTab, setExamTab] = useState('prep'); // 'prep' | 'type-practice'
   const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'review' | 'secretNote'
   const [lastAnswers, setLastAnswers] = useState([]);
 
@@ -1421,39 +1419,8 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     <div className="app-page" style={{ padding: inQuiz ? 'clamp(8px, 1.5vw, 16px)' : 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px', minHeight: inQuiz ? '100vh' : undefined }}>
       <div style={{ maxWidth: inQuiz ? '100%' : 'min(1080px, 100%)', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
-        {/* ── Tab switcher (only visible on setup screen) ── */}
-        {!inQuiz && stage !== 'secretNote' && (
-          <div style={{ display: 'flex', gap: '8px', borderBottom: '1.5px solid #e2e8f0', paddingBottom: '0' }}>
-            {[
-              { id: 'prep', label: 'Exam Prep' },
-              { id: 'type-practice', label: 'Practice by Type' },
-            ].map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => setExamTab(tab.id)}
-                style={{
-                  padding: '10px 20px', borderRadius: '12px 12px 0 0',
-                  border: 'none', cursor: 'pointer', fontWeight: 800, fontSize: '0.88rem',
-                  background: examTab === tab.id ? '#fff' : 'transparent',
-                  color: examTab === tab.id ? '#7c3aed' : '#94a3b8',
-                  borderBottom: examTab === tab.id ? '2.5px solid #7c3aed' : '2.5px solid transparent',
-                  marginBottom: '-1.5px',
-                  transition: 'all 0.15s',
-                }}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* ── Practice by Type tab ── */}
-        {examTab === 'type-practice' && !inQuiz && (
-          <HscTypePractice profile={profile} />
-        )}
-
-        {/* ── Exam Prep tab ── */}
-        {(examTab === 'prep' || inQuiz || stage === 'secretNote') && (
+        {/* ── Exam Prep content ── */}
+        {true && (
         <>
         {stage === 'setup' && (
           <SetupDashboard
