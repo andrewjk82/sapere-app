@@ -19,7 +19,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(0\\)",
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
         "imageUrl": ""
       },
       {
@@ -27,15 +31,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(-1\\)",
+        "text": "\\(0\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q1b",
@@ -57,15 +57,15 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(7\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
         "imageUrl": ""
       },
       {
@@ -95,11 +95,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-1}{4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{4}{7}\\)",
+        "text": "\\(\\frac{4}{1}\\)",
         "imageUrl": ""
       },
       {
@@ -107,11 +103,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{4}{1}\\)",
+        "text": "\\(\\frac{4}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-1}{4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q1d",
@@ -175,15 +175,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{k}{4r}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{3r}{k}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{-k}{3r}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{k}{4r}\\)",
         "imageUrl": ""
       }
     ],
@@ -209,23 +209,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{x}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{6}{x}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{3}{x}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{-3}{x}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{x}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6}{x}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q2a",
@@ -247,7 +247,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(1\\)",
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0\\)",
         "imageUrl": ""
       },
       {
@@ -255,15 +259,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(2\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0\\)",
+        "text": "\\(1\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q2b",
@@ -290,7 +290,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{1}{2}\\)",
+        "text": "\\(\\frac{-1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{1}\\)",
         "imageUrl": ""
       },
       {
@@ -298,15 +302,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-1}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{2}{1}\\)",
+        "text": "\\(\\frac{1}{2}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q2c",
@@ -370,7 +370,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{a}\\)",
+        "text": "\\(\\frac{a}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -378,7 +378,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{a}{4}\\)",
+        "text": "\\(\\frac{3}{a}\\)",
         "imageUrl": ""
       }
     ],
@@ -409,10 +409,6 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-12}{5p}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{5p}{12}\\)",
         "imageUrl": ""
       },
@@ -423,9 +419,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\(\\frac{12}{5p}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-12}{5p}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q2f",
@@ -455,11 +455,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x}{33}\\)",
+        "text": "\\(\\frac{-x}{32}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-x}{32}\\)",
+        "text": "\\(\\frac{x}{33}\\)",
         "imageUrl": ""
       }
     ],
@@ -528,23 +528,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(7\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(6\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q3a",
@@ -571,23 +571,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{5a}{5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3}{4a}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{-4a}{3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{4a}{3}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5a}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{4a}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q3b",
@@ -614,11 +614,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{x}{4}\\)",
+        "text": "\\(\\frac{2}{x}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{2}{x}\\)",
+        "text": "\\(\\frac{x}{2}\\)",
         "imageUrl": ""
       },
       {
@@ -626,11 +626,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x}{2}\\)",
+        "text": "\\(\\frac{x}{4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q3c",
@@ -661,19 +661,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{-3p}{16}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{16}{3p}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3p}{16}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{-3p}{16}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q3d",
@@ -700,23 +700,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{7k}{22}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{-4k}{21}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{21}{4k}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7k}{22}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{4k}{21}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-4k}{21}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q3e",
@@ -747,11 +747,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{5a - 2b}{30}\\)",
+        "text": "\\(\\frac{30}{5a - 2b}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{30}{5a - 2b}\\)",
+        "text": "\\(\\frac{5a - 2b}{30}\\)",
         "imageUrl": ""
       },
       {
@@ -759,7 +759,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q3f",
@@ -786,11 +786,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{25x}{12}\\)",
+        "text": "\\(\\frac{-25x}{12}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-25x}{12}\\)",
+        "text": "\\(\\frac{12}{25x}\\)",
         "imageUrl": ""
       },
       {
@@ -798,11 +798,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{12}{25x}\\)",
+        "text": "\\(\\frac{25x}{12}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q3g",
@@ -829,23 +829,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{21}{5y}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{5y}{21}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{-5y}{21}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{7y}{23}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{21}{5y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5y}{21}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q3h",
@@ -876,23 +876,23 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{40}{3ab}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(-\\frac{3ab}{40}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(+\\frac{3ab}{40}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{40}{3ab}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{-3ab}{40}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{3ab}{40}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "4"
   },
   {
     "id": "y11a-1c-q4a",
@@ -918,11 +918,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{u}{3}\\)",
+        "text": "\\(\\frac{3}{u}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{u}\\)",
+        "text": "\\(\\frac{u}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -930,7 +930,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q4b",
@@ -952,15 +952,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{3}{y}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(-\\frac{3}{y}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{y}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -970,9 +962,17 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\(+\\frac{3}{y}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{y}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{y}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q4c",
@@ -999,7 +999,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-4}{3b}\\)",
+        "text": "\\(\\frac{7}{5b}\\)",
         "imageUrl": ""
       },
       {
@@ -1007,15 +1007,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7}{5b}\\)",
+        "text": "\\(\\frac{4}{3b}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{4}{3b}\\)",
+        "text": "\\(\\frac{-4}{3b}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q4d",
@@ -1046,7 +1046,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{12m}{1}\\)",
+        "text": "\\(\\frac{1}{12m}\\)",
         "imageUrl": ""
       },
       {
@@ -1054,11 +1054,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{12m}\\)",
+        "text": "\\(\\frac{12m}{1}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q4e",
@@ -1093,7 +1093,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{10p}{11}\\)",
+        "text": "\\(\\frac{-11}{10p}\\)",
         "imageUrl": ""
       },
       {
@@ -1101,7 +1101,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-11}{10p}\\)",
+        "text": "\\(\\frac{10p}{11}\\)",
         "imageUrl": ""
       }
     ],
@@ -1132,11 +1132,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{8a}{5}\\)",
+        "text": "\\(\\frac{-5}{8a}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-5}{8a}\\)",
+        "text": "\\(\\frac{5}{8a}\\)",
         "imageUrl": ""
       },
       {
@@ -1144,11 +1144,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{5}{8a}\\)",
+        "text": "\\(\\frac{8a}{5}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q5a",
@@ -1175,11 +1175,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-7a+17}{12}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{12}{7a+17}\\)",
+        "text": "\\(\\frac{7a+17}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -1187,11 +1183,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7a+17}{12}\\)",
+        "text": "\\(\\frac{-7a+17}{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{12}{7a+17}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q5b",
@@ -1218,23 +1218,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{21y+2}{12}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{21y-2}{12}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{-21y-2}{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{21y+2}{12}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{12}{21y-2}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{21y-2}{12}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q5c",
@@ -1265,7 +1265,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3x-4}{10}\\)",
+        "text": "\\(\\frac{3x+4}{10}\\)",
         "imageUrl": ""
       },
       {
@@ -1273,11 +1273,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3x+4}{10}\\)",
+        "text": "\\(\\frac{3x-4}{10}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q5d",
@@ -1304,7 +1304,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{p}{15}\\)",
+        "text": "\\(\\frac{p}{12}\\)",
         "imageUrl": ""
       },
       {
@@ -1312,15 +1312,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{p}{12}\\)",
+        "text": "\\(\\frac{12}{p}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{12}{p}\\)",
+        "text": "\\(\\frac{p}{15}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q5e",
@@ -1347,23 +1347,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-3x+22}{30}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3x-22}{30}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{30}{3x+22}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3x+22}{30}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{-3x+22}{30}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x-22}{30}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q5f",
@@ -1390,7 +1390,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-3m-6}{8}\\)",
+        "text": "\\(\\frac{3m+6}{8}\\)",
         "imageUrl": ""
       },
       {
@@ -1402,7 +1402,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3m+6}{8}\\)",
+        "text": "\\(\\frac{-3m-6}{8}\\)",
         "imageUrl": ""
       }
     ],
@@ -1433,23 +1433,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(3\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(6\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(4\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q6b",
@@ -1480,7 +1480,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7}{4}\\)",
+        "text": "\\(\\frac{-4}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -1488,7 +1488,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-4}{3}\\)",
+        "text": "\\(\\frac{7}{4}\\)",
         "imageUrl": ""
       }
     ],
@@ -1519,23 +1519,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-y}{4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{y}{5}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y}{4}\\)",
+        "text": "\\(\\frac{-y}{4}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{4}{y}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{y}{4}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q6d",
@@ -1562,10 +1562,6 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{1}{y-z}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{1}{y+z}\\)",
         "imageUrl": ""
       },
@@ -1576,9 +1572,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\(\\frac{y+z}{1}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{y-z}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q6e",
@@ -1605,7 +1605,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{4}{3n}\\)",
+        "text": "\\(\\frac{3n}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -1613,7 +1613,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3n}{4}\\)",
+        "text": "\\(\\frac{4}{3n}\\)",
         "imageUrl": ""
       },
       {
@@ -1621,7 +1621,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q6f",
@@ -1648,11 +1648,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{a}{a-3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{-a}{a-3}\\)",
+        "text": "\\(\\frac{a-3}{a}\\)",
         "imageUrl": ""
       },
       {
@@ -1660,11 +1656,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{a-3}{a}\\)",
+        "text": "\\(\\frac{-a}{a-3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{a}{a-3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q6g",
@@ -1691,7 +1691,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{-x+4}{x+5}\\)",
+        "text": "\\(\\frac{x-4}{x-5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{x+5}{x+4}\\)",
         "imageUrl": ""
       },
       {
@@ -1699,15 +1703,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x-4}{x-5}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{x+5}{x+4}\\)",
+        "text": "\\(\\frac{-x+4}{x+5}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q6h",
@@ -1734,7 +1734,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{y-3}{y+3}\\)",
+        "text": "\\(\\frac{y+3}{y-3}\\)",
         "imageUrl": ""
       },
       {
@@ -1746,11 +1746,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y+3}{y-3}\\)",
+        "text": "\\(\\frac{y-3}{y+3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q6i",
@@ -1785,15 +1785,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+3}{x+4}\\)",
+        "text": "\\(\\frac{x+4}{x+3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+4}{x+3}\\)",
+        "text": "\\(\\frac{x+3}{x+4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q7a",
@@ -1820,7 +1820,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{2y+2}{y(y+2)}\\)",
+        "text": "\\(\\frac{-2y+2}{y(y+2)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2y-2}{y(y-2)}\\)",
         "imageUrl": ""
       },
       {
@@ -1828,15 +1832,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-2y+2}{y(y+2)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{2y-2}{y(y-2)}\\)",
+        "text": "\\(\\frac{2y+2}{y(y+2)}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q7b",
@@ -1863,23 +1863,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{a(a+3)}{3}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3}{a(a+3)}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{-3}{a(a+3)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{a(a+3)}{3}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{3}{a(a-3)}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{a(a+3)}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q7c",
@@ -1906,11 +1906,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{2x}{x^2+4}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{x^2-4}{2x}\\)",
+        "text": "\\(\\frac{-2x}{x^2-4}\\)",
         "imageUrl": ""
       },
       {
@@ -1918,11 +1914,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-2x}{x^2-4}\\)",
+        "text": "\\(\\frac{x^2-4}{2x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x}{x^2+4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q7d",
@@ -1949,11 +1949,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{7x-25}{(x-4)(x-3)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{7x-25}{(x+4)(x+3)}\\)",
+        "text": "\\(\\frac{7x+25}{(x+4)(x+3)}\\)",
         "imageUrl": ""
       },
       {
@@ -1961,15 +1957,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{7x-25}{(x+4)(x+3)}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{-7x-25}{(x-4)(x-3)}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{7x+25}{(x+4)(x+3)}\\)",
+        "text": "\\(\\frac{7x-25}{(x-4)(x-3)}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "4"
   },
   {
     "id": "y11a-1c-q7e",
@@ -1996,7 +1996,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{y-14}{(y+2)(y-2)}\\)",
+        "text": "\\(\\frac{y-14}{(y+2)(y+2)}\\)",
         "imageUrl": ""
       },
       {
@@ -2012,11 +2012,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y-14}{(y+2)(y+2)}\\)",
+        "text": "\\(\\frac{y-14}{(y+2)(y-2)}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "4"
   },
   {
     "id": "y11a-1c-q7f",
@@ -2043,15 +2043,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{21}{(a+3)(a-4)}\\)",
+        "text": "\\(\\frac{21}{(a-3)(a+4)}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{-21}{(a-3)(a+4)}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{21}{(a-3)(a+4)}\\)",
         "imageUrl": ""
       },
       {
@@ -2061,9 +2057,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\(\\frac{(a-3)(a+4)}{21}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{21}{(a+3)(a-4)}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q8a",
@@ -2098,11 +2098,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3(x-1)}{4x}\\)",
+        "text": "\\(\\frac{-4x}{3(x-1)}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{-4x}{3(x-1)}\\)",
+        "text": "\\(\\frac{3(x-1)}{4x}\\)",
         "imageUrl": ""
       }
     ],
@@ -2133,11 +2133,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(y + 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(y + 2\\)",
+        "text": "\\(y\\)",
         "imageUrl": ""
       },
       {
@@ -2145,11 +2141,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(y\\)",
+        "text": "\\(y + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y + 2\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q8c",
@@ -2180,11 +2180,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{a-2}{a-3}\\)",
+        "text": "\\(\\frac{a+3}{a+2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{a+3}{a+2}\\)",
+        "text": "\\(\\frac{a-2}{a-3}\\)",
         "imageUrl": ""
       },
       {
@@ -2262,7 +2262,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(1\\)",
+        "text": "\\(x-y\\)",
         "imageUrl": ""
       },
       {
@@ -2270,11 +2270,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x-y\\)",
+        "text": "\\(y-x\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(y-x\\)",
+        "text": "\\(1\\)",
         "imageUrl": ""
       }
     ],
@@ -2309,19 +2309,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{2}{u-v}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(0\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{2u}{u-v}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{2}{u-v}\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q9c",
@@ -2352,19 +2352,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(-1\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{a+b}{a-b}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q9d",
@@ -2400,19 +2400,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(3-x\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(x-4\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(4-x\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(3-x\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q10a",
@@ -2449,10 +2449,6 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{2a}{a^2-4}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{2}{a^2+4}\\)",
         "imageUrl": ""
       },
@@ -2463,9 +2459,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\(\\frac{2}{a^2-4}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2a}{a^2-4}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q10b",
@@ -2497,11 +2497,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{3u-2v}{u^2-v^2}\\)",
+        "text": "\\(\\frac{3}{u+v}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{u+v}\\)",
+        "text": "\\(\\frac{3u-2v}{u^2-v^2}\\)",
         "imageUrl": ""
       },
       {
@@ -2553,15 +2553,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+31}{(x+5)(x-2)(x+4)}\\)",
+        "text": "\\(\\frac{x+1}{(x+5)(x-2)(x+4)}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+1}{(x+5)(x-2)(x+4)}\\)",
+        "text": "\\(\\frac{x+31}{(x+5)(x-2)(x+4)}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q10d",
@@ -2598,10 +2598,6 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{1}{(x-2)(x-3)(x-4)}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{1}{x^2-6x+8}\\)",
         "imageUrl": ""
       },
@@ -2610,11 +2606,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(\\frac{1}{(x-2)(x-3)(x-4)}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{x-3}{x^2-6x+8}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q11a",
@@ -2641,11 +2641,11 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{2}{3}\\)",
+        "text": "\\(\\frac{1}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{3}{4}\\)",
+        "text": "\\(\\frac{2}{3}\\)",
         "imageUrl": ""
       },
       {
@@ -2653,11 +2653,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{1}{2}\\)",
+        "text": "\\(\\frac{3}{4}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q11b",
@@ -2684,23 +2684,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{15}{14}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{7}{8}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{14}{15}\\)",
+        "text": "\\(\\frac{15}{14}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{13}{15}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{14}{15}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q11c",
@@ -2727,23 +2727,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{1}{14}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{1}{12}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{2}{13}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{1}{13}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{12}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "1"
   },
   {
     "id": "y11a-1c-q11d",
@@ -2770,23 +2770,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{5}{2}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{3}{5}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{2}{5}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\frac{1}{5}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{5}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q11e",
@@ -2813,6 +2813,10 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
+        "text": "\\(y+3\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{1}{y}\\)",
         "imageUrl": ""
       },
@@ -2823,13 +2827,9 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\(\\frac{1}{y+3}\\)",
         "imageUrl": ""
-      },
-      {
-        "text": "\\(y+3\\)",
-        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "3"
   },
   {
     "id": "y11a-1c-q11f",
@@ -2856,6 +2856,10 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\frac{a^2-1}{a^2-1}\\)",
         "imageUrl": ""
       },
@@ -2864,15 +2868,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{a-1}{a+1}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q11g",
@@ -2899,23 +2899,23 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(xy\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\frac{x+y}{xy}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\frac{xy}{x+y}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(x+y\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{x+y}{xy}\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": "0"
   },
   {
     "id": "y11a-1c-q11h",
@@ -2985,7 +2985,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{(x+1)(x+2)}{2x+3}\\)",
+        "text": "\\(\\frac{x+1}{2x+3}\\)",
         "imageUrl": ""
       },
       {
@@ -2993,15 +2993,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{x+1}{2x+3}\\)",
+        "text": "\\(\\frac{(x+1)^2}{2x+3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{(x+1)^2}{2x+3}\\)",
+        "text": "\\(\\frac{(x+1)(x+2)}{2x+3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-q11j",
@@ -3028,7 +3028,7 @@ export const Y11_CH1C_QUESTIONS = [
     "graphData": null,
     "options": [
       {
-        "text": "\\(\\frac{y-1}{y-3}\\)",
+        "text": "\\(\\frac{y-3}{y-1}\\)",
         "imageUrl": ""
       },
       {
@@ -3036,15 +3036,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y-1}{y+3}\\)",
+        "text": "\\(\\frac{y-1}{y-3}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\frac{y-3}{y-1}\\)",
+        "text": "\\(\\frac{y-1}{y+3}\\)",
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": "2"
   },
   {
     "id": "y11a-1c-hard-q1",
@@ -3058,7 +3058,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{2x + 1}",
+        "text": "\\frac{x + 2}{2x + 1}",
         "imageUrl": ""
       },
       {
@@ -3066,11 +3066,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x + 1}",
+        "text": "\\frac{1}{2x + 1}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 1}",
     "t": "Algebraic fractions",
@@ -3101,7 +3101,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 - 2x - 3",
+        "text": "x^2 - 9",
         "imageUrl": ""
       },
       {
@@ -3109,11 +3109,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 - 9",
+        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 3x - 1",
+        "text": "x^2 - 2x - 3",
         "imageUrl": ""
       }
     ],
@@ -3148,11 +3148,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 3} - \\frac{1}{x - 4} \\)",
     "options": [
       {
-        "text": "\\frac{-1}{(x - 3)(x + 4)}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{-1}{x^2 - 7x + 12}",
+        "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
@@ -3160,11 +3156,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
+        "text": "\\frac{-1}{(x - 3)(x + 4)}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{-1}{x^2 - 7x + 12}",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "3",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 7x + 12}",
     "t": "Algebraic fractions",
@@ -3195,11 +3195,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x + 2}{x}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{x + 2}",
+        "text": "\\frac{x}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -3207,11 +3203,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{x + 2}",
+        "text": "\\frac{1}{x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 2}{x}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
     "t": "Algebraic fractions",
@@ -3250,11 +3250,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
+        "text": "\\frac{x^2 + 4}{x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 4}{x + 2}",
+        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
         "imageUrl": ""
       }
     ],
@@ -3289,23 +3289,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 14x - 8}{16x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x - 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{1}{4x + 2}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x - 4}{4x - 2}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x + 4}{4x + 2}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 4}{4x - 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x - 4}{4x - 2}",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 2}",
     "t": "Algebraic fractions",
@@ -3336,23 +3336,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 4}{x + 1} \\times \\frac{x^2 - 1}{x - 2} \\)",
     "options": [
       {
-        "text": "x^2 - 1x - 2",
-        "imageUrl": ""
-      },
-      {
         "text": "x^2 - 4",
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 1x - 2",
+        "text": "x^2 - 1x - 2",
         "imageUrl": ""
       },
       {
         "text": "x^2 + 2x - 1",
         "imageUrl": ""
+      },
+      {
+        "text": "x^2 + 1x - 2",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 1x - 2",
     "t": "Algebraic fractions",
@@ -3477,10 +3477,6 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       },
@@ -3489,11 +3485,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
+        "imageUrl": ""
+      },
+      {
         "text": "x - 1",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
     "t": "Algebraic fractions",
@@ -3524,11 +3524,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{3x^2 + 6x - 9}{9x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x - 3}{3x - 3}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x + 3}{3x - 3}",
+        "text": "\\frac{1}{3x + 3}",
         "imageUrl": ""
       },
       {
@@ -3536,11 +3532,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{3x + 3}",
+        "text": "\\frac{x - 3}{3x - 3}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 3}{3x - 3}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 3}",
     "t": "Algebraic fractions",
@@ -3571,11 +3571,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 16}{x + 1} \\times \\frac{x^2 - 1}{x - 4} \\)",
     "options": [
       {
-        "text": "x^2 - 16",
+        "text": "x^2 + 4x - 1",
         "imageUrl": ""
       },
       {
-        "text": "x^2 - 3x - 4",
+        "text": "x^2 - 16",
         "imageUrl": ""
       },
       {
@@ -3583,7 +3583,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 4x - 1",
+        "text": "x^2 - 3x - 4",
         "imageUrl": ""
       }
     ],
@@ -3618,11 +3618,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 1} - \\frac{1}{x - 2} \\)",
     "options": [
       {
-        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{-1}{x^2 - 3x + 2}",
+        "text": "\\frac{3}{x^2 - 3x + 2}",
         "imageUrl": ""
       },
       {
@@ -3630,11 +3626,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{3}{x^2 - 3x + 2}",
+        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{-1}{x^2 - 3x + 2}",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "3",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 3x + 2}",
     "t": "Algebraic fractions",
@@ -3669,11 +3669,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 3x}",
+        "text": "\\frac{x}{x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{x + 3}",
+        "text": "\\frac{x}{1 + 3x}",
         "imageUrl": ""
       },
       {
@@ -3681,7 +3681,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 3}",
     "t": "Algebraic fractions",
@@ -3716,15 +3716,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
-        "imageUrl": ""
-      },
-      {
         "text": "x - 3",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x^2 + 9}{x + 3}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
         "imageUrl": ""
       }
     ],
@@ -3759,7 +3759,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 0x - 8}{4x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x - 2}{2x - 4}",
+        "text": "\\frac{x + 2}{2x + 4}",
         "imageUrl": ""
       },
       {
@@ -3767,15 +3767,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x - 4}",
+        "text": "\\frac{x - 2}{2x - 4}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x + 4}",
+        "text": "\\frac{x + 2}{2x - 4}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 4}",
     "t": "Algebraic fractions",
@@ -3806,11 +3806,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 + 3x - 1",
+        "text": "x^2 + 2x - 3",
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 2x - 3",
+        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       },
       {
@@ -3822,7 +3822,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 2x - 3",
     "t": "Algebraic fractions",
@@ -3853,23 +3853,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 3} - \\frac{1}{x - 4} \\)",
     "options": [
       {
-        "text": "\\frac{7}{x^2 - 7x + 12}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{-1}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{-1}{(x - 3)(x + 4)}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{7}{x^2 - 7x + 12}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 7x + 12}",
     "t": "Algebraic fractions",
@@ -3900,6 +3900,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
+        "text": "\\frac{1}{x + 2}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x + 2}{x}",
         "imageUrl": ""
       },
@@ -3910,13 +3914,9 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\frac{x}{1 + 2x}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{x + 2}",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
     "t": "Algebraic fractions",
@@ -3947,11 +3947,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
     "options": [
       {
-        "text": "x - 2",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
+        "text": "\\frac{x^2 + 2x + 4}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -3959,11 +3955,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 2x + 4}{x + 2}",
+        "text": "x - 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 2x + 4}{x + 2}",
     "t": "Algebraic fractions",
@@ -3998,11 +3998,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{4x + 1}",
+        "text": "\\frac{x + 4}{4x - 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 4}{4x - 1}",
+        "text": "\\frac{1}{4x + 1}",
         "imageUrl": ""
       },
       {
@@ -4045,7 +4045,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 1x - 2",
+        "text": "x^2 + 2x - 1",
         "imageUrl": ""
       },
       {
@@ -4053,11 +4053,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 2x - 1",
+        "text": "x^2 + 1x - 2",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "3",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 1x - 2",
     "t": "Algebraic fractions",
@@ -4088,11 +4088,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 2} - \\frac{1}{x - 3} \\)",
     "options": [
       {
-        "text": "\\frac{5}{x^2 - 5x + 6}",
+        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
+        "text": "\\frac{5}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
@@ -4135,11 +4135,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{4}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{1}{x + 4}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x + 4}{x}",
+        "text": "\\frac{x}{1 + 4x}",
         "imageUrl": ""
       },
       {
@@ -4147,11 +4143,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 4x}",
+        "text": "\\frac{x + 4}{x}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{x + 4}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
     "t": "Algebraic fractions",
@@ -4182,7 +4182,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 + 1}{x + 1}",
+        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
         "imageUrl": ""
       },
       {
@@ -4190,15 +4190,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
+        "text": "x - 1",
         "imageUrl": ""
       },
       {
-        "text": "x - 1",
+        "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
     "t": "Algebraic fractions",
@@ -4237,11 +4237,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{3x + 2}",
+        "text": "\\frac{x - 3}{3x - 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 3}{3x - 2}",
+        "text": "\\frac{1}{3x + 2}",
         "imageUrl": ""
       }
     ],
@@ -4280,19 +4280,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "x^2 + 3x - 4",
+        "imageUrl": ""
+      },
+      {
         "text": "x^2 - 3x - 4",
         "imageUrl": ""
       },
       {
         "text": "x^2 - 16",
         "imageUrl": ""
-      },
-      {
-        "text": "x^2 + 3x - 4",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 3x - 4",
     "t": "Algebraic fractions",
@@ -4323,11 +4323,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 1} - \\frac{1}{x - 2} \\)",
     "options": [
       {
-        "text": "\\frac{3}{x^2 - 3x + 2}",
+        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
+        "text": "\\frac{-1}{(x - 1)(x + 2)}",
         "imageUrl": ""
       },
       {
@@ -4335,7 +4335,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 1)(x + 2)}",
+        "text": "\\frac{3}{x^2 - 3x + 2}",
         "imageUrl": ""
       }
     ],
@@ -4370,7 +4370,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{3}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x + 3}{x}",
+        "text": "\\frac{x}{1 + 3x}",
         "imageUrl": ""
       },
       {
@@ -4378,7 +4378,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 3x}",
+        "text": "\\frac{x + 3}{x}",
         "imageUrl": ""
       },
       {
@@ -4425,11 +4425,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 9}{x + 3}",
+        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
+        "text": "\\frac{x^2 + 9}{x + 3}",
         "imageUrl": ""
       }
     ],
@@ -4464,23 +4464,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 1x - 6}{4x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{1}{2x + 3}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x + 2}{2x + 3}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x + 2}{2x - 3}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{2x + 3}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x - 2}{2x - 3}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 2}{2x + 3}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "3",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 3}",
     "t": "Algebraic fractions",
@@ -4511,11 +4511,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 + 3x - 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "x^2 - 9",
+        "text": "x^2 + 2x - 3",
         "imageUrl": ""
       },
       {
@@ -4523,11 +4519,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 2x - 3",
+        "text": "x^2 - 9",
+        "imageUrl": ""
+      },
+      {
+        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 2x - 3",
     "t": "Algebraic fractions",
@@ -4558,7 +4558,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 3} - \\frac{1}{x - 4} \\)",
     "options": [
       {
-        "text": "\\frac{-1}{(x - 3)(x + 4)}",
+        "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
@@ -4566,7 +4566,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
+        "text": "\\frac{-1}{(x - 3)(x + 4)}",
         "imageUrl": ""
       },
       {
@@ -4652,23 +4652,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 + 4}{x + 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x^2 + 2x + 4}{x + 2}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
         "imageUrl": ""
       },
       {
         "text": "x - 2",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 + 4}{x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 2x + 4}{x + 2}",
     "t": "Algebraic fractions",
@@ -4699,7 +4699,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 12x - 16}{16x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x - 4}",
+        "text": "\\frac{x + 4}{4x + 4}",
         "imageUrl": ""
       },
       {
@@ -4707,15 +4707,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 4}{4x - 4}",
+        "text": "\\frac{x + 4}{4x - 4}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 4}{4x + 4}",
+        "text": "\\frac{x - 4}{4x - 4}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 4}",
     "t": "Algebraic fractions",
@@ -4746,6 +4746,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 4}{x + 1} \\times \\frac{x^2 - 1}{x - 2} \\)",
     "options": [
       {
+        "text": "x^2 + 1x - 2",
+        "imageUrl": ""
+      },
+      {
         "text": "x^2 - 1x - 2",
         "imageUrl": ""
       },
@@ -4756,13 +4760,9 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "x^2 + 2x - 1",
         "imageUrl": ""
-      },
-      {
-        "text": "x^2 + 1x - 2",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 1x - 2",
     "t": "Algebraic fractions",
@@ -4797,15 +4797,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{5}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{-1}{(x - 2)(x + 3)}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
         "imageUrl": ""
       }
     ],
@@ -4840,11 +4840,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{4}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x}{1 + 4x}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{x + 4}",
+        "text": "\\frac{x + 4}{x}",
         "imageUrl": ""
       },
       {
@@ -4852,11 +4848,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 4}{x}",
+        "text": "\\frac{x}{1 + 4x}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{x + 4}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
     "t": "Algebraic fractions",
@@ -4887,11 +4887,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 + 1}{x + 1}",
+        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
+        "text": "x - 1",
         "imageUrl": ""
       },
       {
@@ -4899,11 +4899,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x - 1",
+        "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
     "t": "Algebraic fractions",
@@ -4934,11 +4934,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{3x^2 + 8x - 3}{9x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{1}{3x + 1}",
+        "text": "\\frac{x - 3}{3x - 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 3}{3x - 1}",
+        "text": "\\frac{1}{3x + 1}",
         "imageUrl": ""
       },
       {
@@ -4946,7 +4946,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 3}{3x - 1}",
+        "text": "\\frac{x + 3}{3x - 1}",
         "imageUrl": ""
       }
     ],
@@ -4985,19 +4985,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 3x - 4",
-        "imageUrl": ""
-      },
-      {
         "text": "x^2 - 3x - 4",
         "imageUrl": ""
       },
       {
         "text": "x^2 + 4x - 1",
         "imageUrl": ""
+      },
+      {
+        "text": "x^2 + 3x - 4",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "3",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 3x - 4",
     "t": "Algebraic fractions",
@@ -5028,23 +5028,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 1} - \\frac{1}{x - 2} \\)",
     "options": [
       {
-        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{-1}{x^2 - 3x + 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{3}{x^2 - 3x + 2}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{-1}{(x - 1)(x + 2)}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{-1}{x^2 - 3x + 2}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "3",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 3x + 2}",
     "t": "Algebraic fractions",
@@ -5075,23 +5075,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{3}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{1}{x + 3}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x}{x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 3x}",
+        "text": "\\frac{1}{x + 3}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x + 3}{x}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x}{1 + 3x}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 3}",
     "t": "Algebraic fractions",
@@ -5126,7 +5126,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
+        "text": "\\frac{x^2 + 3x + 9}{x + 3}",
         "imageUrl": ""
       },
       {
@@ -5134,11 +5134,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 3x + 9}{x + 3}",
+        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 3x + 9}{x + 3}",
     "t": "Algebraic fractions",
@@ -5169,11 +5169,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 2x - 4}{4x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x - 2}{2x - 2}",
+        "text": "\\frac{x + 2}{2x - 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x - 2}",
+        "text": "\\frac{x - 2}{2x - 2}",
         "imageUrl": ""
       },
       {
@@ -5216,11 +5216,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 - 2x - 3",
+        "text": "x^2 + 2x - 3",
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 2x - 3",
+        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       },
       {
@@ -5228,11 +5228,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 3x - 1",
+        "text": "x^2 - 2x - 3",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 2x - 3",
     "t": "Algebraic fractions",
@@ -5267,19 +5267,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\frac{7}{x^2 - 7x + 12}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{2x - 7}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{-1}{x^2 - 7x + 12}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{7}{x^2 - 7x + 12}",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 7x + 12}",
     "t": "Algebraic fractions",
@@ -5310,7 +5310,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{1}{x + 2}",
+        "text": "\\frac{x}{1 + 2x}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -5318,15 +5322,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 2x}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x}{x + 2}",
+        "text": "\\frac{1}{x + 2}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
     "t": "Algebraic fractions",
@@ -5357,11 +5357,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 + 4}{x + 2}",
+        "text": "\\frac{x^2 + 2x + 4}{x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "x - 2",
+        "text": "\\frac{x^2 + 4}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -5369,11 +5369,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 2x + 4}{x + 2}",
+        "text": "x - 2",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 2x + 4}{x + 2}",
     "t": "Algebraic fractions",
@@ -5404,23 +5404,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 13x - 12}{16x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x - 4}{4x - 3}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x + 4}{4x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{4x + 3}",
+        "text": "\\frac{x - 4}{4x - 3}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x + 4}{4x - 3}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{4x + 3}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 3}",
     "t": "Algebraic fractions",
@@ -5451,15 +5451,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 4}{x + 1} \\times \\frac{x^2 - 1}{x - 2} \\)",
     "options": [
       {
+        "text": "x^2 - 1x - 2",
+        "imageUrl": ""
+      },
+      {
         "text": "x^2 - 4",
         "imageUrl": ""
       },
       {
         "text": "x^2 + 2x - 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "x^2 - 1x - 2",
         "imageUrl": ""
       },
       {
@@ -5502,19 +5502,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 2)(x + 3)}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{-1}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{-1}{(x - 2)(x + 3)}",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 5x + 6}",
     "t": "Algebraic fractions",
@@ -5549,19 +5549,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\frac{x}{1 + 4x}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x + 4}{x}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x}{x + 4}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x}{1 + 4x}",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
     "t": "Algebraic fractions",
@@ -5592,15 +5592,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "x - 1",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x^2 - 1x + 1}{x - 1}",
+        "imageUrl": ""
+      },
+      {
+        "text": "x - 1",
         "imageUrl": ""
       },
       {
@@ -5639,11 +5639,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{3x^2 + 5x - 12}{9x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x + 3}{3x - 4}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x - 3}{3x - 4}",
+        "text": "\\frac{1}{3x + 4}",
         "imageUrl": ""
       },
       {
@@ -5651,11 +5647,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{3x + 4}",
+        "text": "\\frac{x - 3}{3x - 4}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 3}{3x - 4}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 4}",
     "t": "Algebraic fractions",
@@ -5737,19 +5737,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\frac{-1}{x^2 - 3x + 2}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{3}{x^2 - 3x + 2}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{-1}{(x - 1)(x + 2)}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{-1}{x^2 - 3x + 2}",
-        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 3x + 2}",
     "t": "Algebraic fractions",
@@ -5780,7 +5780,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{3}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{1}{x + 3}",
+        "text": "\\frac{x + 3}{x}",
         "imageUrl": ""
       },
       {
@@ -5788,11 +5788,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{1 + 3x}",
+        "text": "\\frac{1}{x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 3}{x}",
+        "text": "\\frac{x}{1 + 3x}",
         "imageUrl": ""
       }
     ],
@@ -5831,19 +5831,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x - 3",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x^2 + 3x + 9}{x + 3}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x^2 - 3x + 9}{x - 3}",
         "imageUrl": ""
+      },
+      {
+        "text": "x - 3",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 3x + 9}{x + 3}",
     "t": "Algebraic fractions",
@@ -5874,7 +5874,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 3x - 2}{4x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x + 2}{2x + 1}",
+        "text": "\\frac{x + 2}{2x - 1}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x - 2}{2x - 1}",
         "imageUrl": ""
       },
       {
@@ -5882,15 +5886,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x - 1}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x - 2}{2x - 1}",
+        "text": "\\frac{x + 2}{2x + 1}",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 1}",
     "t": "Algebraic fractions",
@@ -5921,7 +5921,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 - 2x - 3",
+        "text": "x^2 - 9",
         "imageUrl": ""
       },
       {
@@ -5929,11 +5929,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 - 9",
+        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 3x - 1",
+        "text": "x^2 - 2x - 3",
         "imageUrl": ""
       }
     ],
@@ -6015,7 +6015,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x}{1 + 2x}",
+        "text": "\\frac{x}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -6023,7 +6023,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{x + 2}",
+        "text": "\\frac{x}{1 + 2x}",
         "imageUrl": ""
       },
       {
@@ -6031,7 +6031,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
     "t": "Algebraic fractions",
@@ -6062,23 +6062,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
     "options": [
       {
-        "text": "x - 2",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x^2 + 4}{x + 2}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x^2 + 2x + 4}{x + 2}",
         "imageUrl": ""
+      },
+      {
+        "text": "x - 2",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "1",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 2x + 4}{x + 2}",
     "t": "Algebraic fractions",
@@ -6109,23 +6109,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 14x - 8}{16x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x - 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x - 4}{4x - 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{4x + 2}",
+        "text": "\\frac{x + 4}{4x - 2}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x + 4}{4x + 2}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{4x + 2}",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 2}",
     "t": "Algebraic fractions",
@@ -6156,10 +6156,6 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 4}{x + 1} \\times \\frac{x^2 - 1}{x - 2} \\)",
     "options": [
       {
-        "text": "x^2 - 4",
-        "imageUrl": ""
-      },
-      {
         "text": "x^2 + 1x - 2",
         "imageUrl": ""
       },
@@ -6170,9 +6166,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "x^2 - 1x - 2",
         "imageUrl": ""
+      },
+      {
+        "text": "x^2 - 4",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 1x - 2",
     "t": "Algebraic fractions",
@@ -6211,15 +6211,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{x^2 - 5x + 6}",
+        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
+        "text": "\\frac{-1}{x^2 - 5x + 6}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 5x + 6}",
     "t": "Algebraic fractions",
@@ -6250,7 +6250,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{4}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x}{x + 4}",
+        "text": "\\frac{x + 4}{x}",
         "imageUrl": ""
       },
       {
@@ -6258,7 +6258,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 4}{x}",
+        "text": "\\frac{x}{x + 4}",
         "imageUrl": ""
       },
       {
@@ -6266,7 +6266,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "2",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
     "t": "Algebraic fractions",
@@ -6297,7 +6297,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
+        "text": "x - 1",
         "imageUrl": ""
       },
       {
@@ -6305,11 +6305,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 1}{x + 1}",
+        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
         "imageUrl": ""
       },
       {
-        "text": "x - 1",
+        "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       }
     ],
@@ -6352,15 +6352,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 3}{3x + 3}",
+        "text": "\\frac{1}{3x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{1}{3x + 3}",
+        "text": "\\frac{x + 3}{3x + 3}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 3}",
     "t": "Algebraic fractions",
@@ -6391,11 +6391,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 16}{x + 1} \\times \\frac{x^2 - 1}{x - 4} \\)",
     "options": [
       {
-        "text": "x^2 - 16",
-        "imageUrl": ""
-      },
-      {
-        "text": "x^2 - 3x - 4",
+        "text": "x^2 + 3x - 4",
         "imageUrl": ""
       },
       {
@@ -6403,11 +6399,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 3x - 4",
+        "text": "x^2 - 3x - 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "x^2 - 16",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 3x - 4",
     "t": "Algebraic fractions",
@@ -6446,11 +6446,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 1)(x + 2)}",
+        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 3}{x^2 - 3x + 2}",
+        "text": "\\frac{-1}{(x - 1)(x + 2)}",
         "imageUrl": ""
       }
     ],
@@ -6485,23 +6485,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{3}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x + 3}{x}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x}{x + 3}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{x + 3}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x}{1 + 3x}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 3}{x}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{x + 3}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 3}",
     "t": "Algebraic fractions",
@@ -6532,7 +6532,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 27}{x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
+        "text": "x - 3",
         "imageUrl": ""
       },
       {
@@ -6540,7 +6540,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x - 3",
+        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
         "imageUrl": ""
       },
       {
@@ -6579,6 +6579,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 0x - 8}{4x^2 - 16} \\)",
     "options": [
       {
+        "text": "\\frac{x + 2}{2x - 4}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{1}{2x + 4}",
         "imageUrl": ""
       },
@@ -6589,13 +6593,9 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\frac{x - 2}{2x - 4}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x + 2}{2x - 4}",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 4}",
     "t": "Algebraic fractions",
@@ -6626,11 +6626,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 + 3x - 1",
-        "imageUrl": ""
-      },
-      {
-        "text": "x^2 - 2x - 3",
+        "text": "x^2 + 2x - 3",
         "imageUrl": ""
       },
       {
@@ -6638,11 +6634,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 + 2x - 3",
+        "text": "x^2 + 3x - 1",
+        "imageUrl": ""
+      },
+      {
+        "text": "x^2 - 2x - 3",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 2x - 3",
     "t": "Algebraic fractions",
@@ -6677,11 +6677,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 3)(x + 4)}",
+        "text": "\\frac{7}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{7}{x^2 - 7x + 12}",
+        "text": "\\frac{-1}{(x - 3)(x + 4)}",
         "imageUrl": ""
       },
       {
@@ -6720,6 +6720,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
+        "text": "\\frac{1}{x + 2}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x}{1 + 2x}",
         "imageUrl": ""
       },
@@ -6730,13 +6734,9 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\frac{x + 2}{x}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{x + 2}",
-        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "2",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
     "t": "Algebraic fractions",
@@ -6767,11 +6767,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
+        "text": "\\frac{x^2 + 2x + 4}{x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "x - 2",
+        "text": "\\frac{x^2 - 2x + 4}{x - 2}",
         "imageUrl": ""
       },
       {
@@ -6779,11 +6779,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 2x + 4}{x + 2}",
+        "text": "x - 2",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 2x + 4}{x + 2}",
     "t": "Algebraic fractions",
@@ -6814,15 +6814,15 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 15x - 4}{16x^2 - 1} \\)",
     "options": [
       {
+        "text": "\\frac{1}{4x + 1}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x - 4}{4x - 1}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{x + 4}{4x - 1}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{1}{4x + 1}",
         "imageUrl": ""
       },
       {
@@ -6908,6 +6908,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 2} - \\frac{1}{x - 3} \\)",
     "options": [
       {
+        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{-1}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
@@ -6916,15 +6920,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{2x - 5}{x^2 - 5x + 6}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{5}{x^2 - 5x + 6}",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 5x + 6}",
     "t": "Algebraic fractions",
@@ -6955,7 +6955,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{4}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{x}",
+        "text": "\\frac{x}{x + 4}",
         "imageUrl": ""
       },
       {
@@ -6963,7 +6963,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x}{x + 4}",
+        "text": "\\frac{x + 4}{x}",
         "imageUrl": ""
       },
       {
@@ -6971,7 +6971,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "0",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
     "t": "Algebraic fractions",
@@ -7010,15 +7010,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
+        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 1x + 1}{x - 1}",
+        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
     "t": "Algebraic fractions",
@@ -7049,6 +7049,10 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{3x^2 + 7x - 6}{9x^2 - 4} \\)",
     "options": [
       {
+        "text": "\\frac{x - 3}{3x - 2}",
+        "imageUrl": ""
+      },
+      {
         "text": "\\frac{x + 3}{3x - 2}",
         "imageUrl": ""
       },
@@ -7059,13 +7063,9 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\frac{x + 3}{3x + 2}",
         "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x - 3}{3x - 2}",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 3}{3x + 2}",
     "t": "Algebraic fractions",
@@ -7100,19 +7100,19 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "x^2 + 4x - 1",
+        "imageUrl": ""
+      },
+      {
         "text": "x^2 - 16",
         "imageUrl": ""
       },
       {
         "text": "x^2 + 3x - 4",
         "imageUrl": ""
-      },
-      {
-        "text": "x^2 + 4x - 1",
-        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "3",
     "hint": "Factor all quadratic expressions first, then cancel common terms across numerators and denominators.",
     "solution": "x^2 + 3x - 4",
     "t": "Algebraic fractions",
@@ -7143,11 +7143,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 1} - \\frac{1}{x - 2} \\)",
     "options": [
       {
-        "text": "\\frac{3}{x^2 - 3x + 2}",
+        "text": "\\frac{-1}{x^2 - 3x + 2}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{x^2 - 3x + 2}",
+        "text": "\\frac{-1}{(x - 1)(x + 2)}",
         "imageUrl": ""
       },
       {
@@ -7155,11 +7155,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 1)(x + 2)}",
+        "text": "\\frac{3}{x^2 - 3x + 2}",
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 3x + 2}",
     "t": "Algebraic fractions",
@@ -7190,23 +7190,23 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{3}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x}{1 + 3x}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x}{x + 3}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 3}{x}",
+        "text": "\\frac{x}{1 + 3x}",
         "imageUrl": ""
       },
       {
         "text": "\\frac{1}{x + 3}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 3}{x}",
+        "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": "0",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 3}",
     "t": "Algebraic fractions",
@@ -7237,11 +7237,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 27}{x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x^2 + 3x + 9}{x + 3}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x^2 + 9}{x + 3}",
+        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
         "imageUrl": ""
       },
       {
@@ -7249,11 +7245,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 - 3x + 9}{x - 3}",
+        "text": "\\frac{x^2 + 9}{x + 3}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x^2 + 3x + 9}{x + 3}",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 3x + 9}{x + 3}",
     "t": "Algebraic fractions",
@@ -7284,11 +7284,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{2x^2 + 1x - 6}{4x^2 - 9} \\)",
     "options": [
       {
-        "text": "\\frac{x - 2}{2x - 3}",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\frac{x + 2}{2x - 3}",
+        "text": "\\frac{x + 2}{2x + 3}",
         "imageUrl": ""
       },
       {
@@ -7296,11 +7292,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x + 2}{2x + 3}",
+        "text": "\\frac{x - 2}{2x - 3}",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 2}{2x - 3}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 2}{2x + 3}",
     "t": "Algebraic fractions",
@@ -7331,7 +7331,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Expand and simplify: \\( \\frac{x^2 - 9}{x + 1} \\times \\frac{x^2 - 1}{x - 3} \\)",
     "options": [
       {
-        "text": "x^2 + 3x - 1",
+        "text": "x^2 - 2x - 3",
         "imageUrl": ""
       },
       {
@@ -7339,7 +7339,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x^2 - 2x - 3",
+        "text": "x^2 + 3x - 1",
         "imageUrl": ""
       },
       {
@@ -7378,11 +7378,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 3} - \\frac{1}{x - 4} \\)",
     "options": [
       {
-        "text": "\\frac{-1}{x^2 - 7x + 12}",
+        "text": "\\frac{-1}{(x - 3)(x + 4)}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 3)(x + 4)}",
+        "text": "\\frac{-1}{x^2 - 7x + 12}",
         "imageUrl": ""
       },
       {
@@ -7394,7 +7394,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 7x + 12}",
     "t": "Algebraic fractions",
@@ -7425,10 +7425,6 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{2}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{1}{x + 2}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x}{1 + 2x}",
         "imageUrl": ""
       },
@@ -7439,9 +7435,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\frac{x + 2}{x}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{1}{x + 2}",
+        "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": "1",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 2}",
     "t": "Algebraic fractions",
@@ -7476,7 +7476,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "x - 2",
+        "text": "\\frac{x^2 + 4}{x + 2}",
         "imageUrl": ""
       },
       {
@@ -7484,7 +7484,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 4}{x + 2}",
+        "text": "x - 2",
         "imageUrl": ""
       }
     ],
@@ -7519,11 +7519,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the algebraic fraction: \\( \\frac{4x^2 + 12x - 16}{16x^2 - 16} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{4x + 4}",
+        "text": "\\frac{x - 4}{4x - 4}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x - 4}{4x - 4}",
+        "text": "\\frac{x + 4}{4x + 4}",
         "imageUrl": ""
       },
       {
@@ -7535,7 +7535,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "1",
     "hint": "Factor both the quadratic trinomial in the numerator and the difference of squares in the denominator.",
     "solution": "\\frac{x + 4}{4x + 4}",
     "t": "Algebraic fractions",
@@ -7613,7 +7613,7 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify into a single fraction: \\( \\frac{1}{x - 2} - \\frac{1}{x - 3} \\)",
     "options": [
       {
-        "text": "\\frac{-1}{x^2 - 5x + 6}",
+        "text": "\\frac{-1}{(x - 2)(x + 3)}",
         "imageUrl": ""
       },
       {
@@ -7621,15 +7621,15 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{-1}{(x - 2)(x + 3)}",
+        "text": "\\frac{5}{x^2 - 5x + 6}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{5}{x^2 - 5x + 6}",
+        "text": "\\frac{-1}{x^2 - 5x + 6}",
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": "3",
     "hint": "Find a common denominator of \\((x - a)(x - b)\\), combine the numerators, and expand.",
     "solution": "\\frac{-1}{x^2 - 5x + 6}",
     "t": "Algebraic fractions",
@@ -7660,10 +7660,6 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify the nested algebraic fraction: \\( \\frac{1}{1 + \\frac{4}{x}} \\)",
     "options": [
       {
-        "text": "\\frac{x + 4}{x}",
-        "imageUrl": ""
-      },
-      {
         "text": "\\frac{x}{1 + 4x}",
         "imageUrl": ""
       },
@@ -7674,9 +7670,13 @@ export const Y11_CH1C_QUESTIONS = [
       {
         "text": "\\frac{x}{x + 4}",
         "imageUrl": ""
+      },
+      {
+        "text": "\\frac{x + 4}{x}",
+        "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "2",
     "hint": "Express the denominator as a single fraction first, then take the reciprocal.",
     "solution": "\\frac{x}{x + 4}",
     "t": "Algebraic fractions",
@@ -7707,11 +7707,11 @@ export const Y11_CH1C_QUESTIONS = [
     "question": "Simplify: \\( \\frac{x^3 - 1}{x^2 - 1} \\)",
     "options": [
       {
-        "text": "x - 1",
+        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 1}{x + 1}",
+        "text": "x - 1",
         "imageUrl": ""
       },
       {
@@ -7719,11 +7719,11 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\frac{x^2 + 1x + 1}{x + 1}",
+        "text": "\\frac{x^2 + 1}{x + 1}",
         "imageUrl": ""
       }
     ],
-    "answer": "3",
+    "answer": "0",
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
     "t": "Algebraic fractions",
