@@ -79,6 +79,36 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
           .map((d) => ({ id: d.id, ...d.data() }))
           .filter((q) => q.isActive !== false && (!topic?.id || q.topicId === topic.id));
       }
+
+      // Fallback to local seeds if Firestore read quota is exhausted (serving stale offline cache)
+      if (topic?.id === 'y11a-1c') {
+        try {
+          const { Y11_CH1C_QUESTIONS } = await import('../constants/seedYear11Ch1CQuestions.js');
+          if (all.length < Y11_CH1C_QUESTIONS.length) {
+            all = Y11_CH1C_QUESTIONS.map((q, idx) => ({
+              id: q.id || `y11a-1c-q${idx}`,
+              ...q,
+              type: q.type || 'multiple_choice'
+            }));
+          }
+        } catch (err) {
+          console.warn('Failed to load local fallback for 1C:', err);
+        }
+      } else if (topic?.id === 'y11a-1D') {
+        try {
+          const { Y11_CH1D_QUESTIONS } = await import('../constants/seedYear11Ch1DQuestions.js');
+          if (all.length < Y11_CH1D_QUESTIONS.length) {
+            all = Y11_CH1D_QUESTIONS.map((q, idx) => ({
+              id: q.id || `y11a-1d-q${idx}`,
+              ...q,
+              type: q.type || 'multiple_choice'
+            }));
+          }
+        } catch (err) {
+          console.warn('Failed to load local fallback for 1D:', err);
+        }
+      }
+
       all.sort((a, b) => String(a.id).localeCompare(String(b.id)));
       setQuestions(all);
       setCurrentIdx((prev) => (prev >= all.length ? Math.max(0, all.length - 1) : prev));

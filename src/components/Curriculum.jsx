@@ -361,70 +361,226 @@ const Curriculum = () => {
   };
 
   const handleSeedAlgebraQuestions = async () => {
-    if (!window.confirm("This will replace all existing questions for Chapter 1 with the latest 74 questions. Continue?")) return;
+    if (!window.confirm("This will replace all existing questions for Chapter 1 (1A - 1F) with the latest seed files. Continue?")) return;
     setIsMigrating(true);
     try {
-      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp, setDoc } = await import('firebase/firestore');
       const collRef = collection(db, 'questions');
       
-      // 1. Clear existing
+      // 1. Clear existing for chapter y11a-1
       const q = query(collRef, where('chapterId', '==', 'y11a-1'));
       const snap = await getDocs(q);
       const batch = writeBatch(db);
       snap.docs.forEach(d => batch.delete(d.ref));
       await batch.commit();
 
-      // 2. Add new
-      const addBatch = writeBatch(db);
-      
-      ALGEBRA_QUESTIONS_Y11A.forEach(qData => {
-        const docRef = doc(collRef);
-        const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
-        const correctIndex = shuffledOpts.indexOf(qData.a);
+      // 2. Load the seed questions from constants dynamically
+      const { Y11_CH1A_QUESTIONS } = await import('../constants/seedYear11Ch1AQuestions.js');
+      const { Y11_CH1B_QUESTIONS } = await import('../constants/seedYear11Ch1BQuestions.js');
+      const { Y11_CH1C_QUESTIONS } = await import('../constants/seedYear11Ch1CQuestions.js');
+      const { Y11_CH1D_QUESTIONS } = await import('../constants/seedYear11Ch1DQuestions.js');
+      const { Y11_CH1E_QUESTIONS } = await import('../constants/seedYear11Ch1EQuestions.js');
+      const { Y11_CH1F_QUESTIONS } = await import('../constants/seedYear11Ch1FQuestions.js');
 
-        addBatch.set(docRef, {
-          chapterId: 'y11a-1',
-          chapterTitle: 'Chapter 1: Algebra review',
-          topicId: 'y11a-1' + qData.c.slice(-1),
-          topicCode: qData.c,
-          topicTitle: qData.t,
+      const MANUAL_GRADE_KEYWORDS = /(draw|sketch|construct|show that|prove|justify|explain why)/i;
+      const mapSeedQuestion = (raw, chapter) => {
+        const isMC = raw.type === 'multiple_choice';
+        const questionText = raw.q || raw.question || '';
+        const isOpenReview = (raw.requiresManualGrading === true)
+          || (raw.type === 'teacher_review' && MANUAL_GRADE_KEYWORDS.test(questionText));
+
+        let options = [];
+        let answer = raw.a ?? raw.answer ?? raw.solution ?? '';
+
+        if (isMC) {
+          const rawOpts = raw.opts || raw.options || [];
+          const correct = raw.a ?? raw.answer ?? raw.solution;
+          
+          let correctText = '';
+          const isIndex = /^[0-9]$/.test(String(correct).trim());
+          if (isIndex && rawOpts[parseInt(correct)]) {
+            const opt = rawOpts[parseInt(correct)];
+            correctText = typeof opt === 'object' && opt !== null ? opt.text : opt;
+          } else {
+            correctText = String(correct);
+          }
+
+          const shuffled = [...rawOpts].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffled.findIndex((opt) => {
+            const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
+            const clean = (s) => String(s).replace(/\\\(|\\\)/g, '').trim();
+            return clean(text) === clean(correctText);
+          });
+          options = shuffled.map((opt) => (
+            typeof opt === 'object' && opt !== null
+              ? { text: String(opt.text || ''), imageUrl: opt.imageUrl || '' }
+              : { text: String(opt), imageUrl: '' }
+          ));
+          answer = String(correctIndex >= 0 ? correctIndex : 0);
+        }
+
+        const resolvedTopicId = raw.topicId || chapter.topicId;
+        const resolvedTopicCode = raw.c || raw.topicCode || chapter.topicCode || '';
+        const resolvedTopicTitle = raw.t || raw.topicTitle || chapter.topicTitle || '';
+        const resolvedChapterId = raw.chapterId || chapter.chapterId;
+
+        return {
+          chapterId: resolvedChapterId,
+          chapterTitle: chapter.chapterTitle,
+          topicId: resolvedTopicId,
+          topicCode: resolvedTopicCode,
+          topicTitle: resolvedTopicTitle,
+          year: chapter.year,
           isManual: true,
-          title: qData.q.replace(/\$/g, '').slice(0, 30) + '...',
-          question: qData.q,
-          difficulty: 'medium',
-          timeLimit: 120,
-          type: 'multiple_choice',
-          options: shuffledOpts.map(o => ({ text: o, imageUrl: "" })),
-          answer: correctIndex.toString(),
-          hint: qData.h,
-          solution: qData.s,
+          title: `${questionText.replace(/\$/g, '').slice(0, 30)}...`,
+          question: questionText,
+          difficulty: raw.difficulty || 'medium',
+          timeLimit: raw.timeLimit || 120,
+          type: isMC ? 'multiple_choice' : (raw.type || 'short_answer'),
+          requiresManualGrading: isOpenReview,
+          options,
+          answer,
+          hint: raw.h || raw.hint || '',
+          solution: raw.s || raw.solution || raw.a || '',
+          solutionSteps: Array.isArray(raw.solutionSteps) ? raw.solutionSteps : [],
+          questionImage: raw.questionImage || raw.imageUrl || '',
+          subQuestions: Array.isArray(raw.subQuestions) ? raw.subQuestions : [],
+          blanks: Array.isArray(raw.blanks) ? raw.blanks : [],
+          graphData: raw.graphData || null,
+          examPaper: raw.examPaper || chapter.examPaper || '',
           createdAt: serverTimestamp(),
           updatedAt: serverTimestamp()
+        };
+      };
+
+      const finalQuestions = [];
+      Y11_CH1A_QUESTIONS.forEach(q => finalQuestions.push({ ...q, createdAt: serverTimestamp(), updatedAt: serverTimestamp() }));
+      
+      const ch1bInfo = { chapterId: 'y11a-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11a-1B', topicCode: '1B', topicTitle: 'Factoring', year: 'Year 11' };
+      Y11_CH1B_QUESTIONS.forEach(q => finalQuestions.push(mapSeedQuestion(q, ch1bInfo)));
+
+      const ch1cInfo = { chapterId: 'y11a-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11a-1c', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11' };
+      Y11_CH1C_QUESTIONS.forEach(q => finalQuestions.push(mapSeedQuestion(q, ch1cInfo)));
+
+      const ch1dInfo = { chapterId: 'y11a-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11a-1D', topicCode: '1D', topicTitle: 'Solving quadratic equations', year: 'Year 11' };
+      Y11_CH1D_QUESTIONS.forEach(q => finalQuestions.push(mapSeedQuestion(q, ch1dInfo)));
+
+      const ch1eInfo = { chapterId: 'y11a-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11a-1E', topicCode: '1E', topicTitle: 'Solving simultaneous equations', year: 'Year 11' };
+      Y11_CH1E_QUESTIONS.forEach(q => finalQuestions.push(mapSeedQuestion(q, ch1eInfo)));
+
+      const ch1fInfo = { chapterId: 'y11a-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11a-1F', topicCode: '1F', topicTitle: 'Revision', year: 'Year 11' };
+      Y11_CH1F_QUESTIONS.forEach(q => finalQuestions.push(mapSeedQuestion(q, ch1fInfo)));
+
+      // Helper to compute MD5 hash locally using Web Crypto API or simple function
+      // Since MD5 import in browser can be heavy, let's compute MD5 with a lightweight local JS function
+      const getMD5 = (str) => {
+        let k = [], i = 0;
+        for (; i < 64; ) k[i] = Math.sin(++i) * 4294967296 | 0;
+        let md5cycle = function(x, k) {
+          let a = x[0], b = x[1], c = x[2], d = x[3];
+          a = ff(a, b, c, d, k[0], 7, -680876936); d = ff(d, a, b, c, k[1], 12, -389564586); c = ff(c, d, a, b, k[2], 17,  606105819); b = ff(b, c, d, a, k[3], 22, -1044525330);
+          a = ff(a, b, c, d, k[4], 7, -176418897); d = ff(d, a, b, c, k[5], 12, 1200080426); c = ff(c, d, a, b, k[6], 17, -1473231341); b = ff(b, c, d, a, k[7], 22, -45705983);
+          a = ff(a, b, c, d, k[8], 7, 1770035416); d = ff(d, a, b, c, k[9], 12, -1958414417); c = ff(c, d, a, b, k[10], 17, -42063); b = ff(b, c, d, a, k[11], 22, -1990404162);
+          a = ff(a, b, c, d, k[12], 7, 1804603682); d = ff(d, a, b, c, k[13], 12, -40341101); c = ff(c, d, a, b, k[14], 17, -1502002290); b = ff(b, c, d, a, k[15], 22, 1236535329);
+          a = gg(a, b, c, d, k[1], 5, -165796510); d = gg(d, a, b, c, k[6], 9, -1069501632); c = gg(c, d, a, b, k[11], 14,  643717713); b = gg(b, c, d, a, k[0], 20, -373897302);
+          a = gg(a, b, c, d, k[5], 5, -701558691); d = gg(d, a, b, c, k[10], 9, 38016083); c = gg(c, d, a, b, k[15], 14, -660478335); b = gg(b, c, d, a, k[4], 20, -405537848);
+          a = gg(a, b, c, d, k[9], 5, 568446438); d = gg(d, a, b, c, k[14], 9, -1019803690); c = gg(c, d, a, b, k[3], 14, -187363961); b = gg(b, c, d, a, k[8], 20, 1163531501);
+          a = gg(a, b, c, d, k[13], 5, -1444681467); d = gg(d, a, b, c, k[2], 9, -51403784); c = gg(c, d, a, b, k[7], 14, 1735328473); b = gg(b, c, d, a, k[12], 20, -1926607734);
+          a = hh(a, b, c, d, k[5], 4, -378558); d = hh(d, a, b, c, k[8], 11, -2022574463); c = hh(c, d, a, b, k[11], 16, 1839030562); b = hh(b, c, d, a, k[14], 23, -35309556);
+          a = hh(a, b, c, d, k[1], 4, -1530992060); d = hh(d, a, b, c, k[4], 11, 1272893353); c = hh(c, d, a, b, k[7], 16, -155497632); b = hh(b, c, d, a, k[10], 23, -1094730640);
+          a = hh(a, b, c, d, k[13], 4,  681279174); d = hh(d, a, b, c, k[0], 11, -358537222); c = hh(c, d, a, b, k[3], 16, -722521979); b = hh(b, c, d, a, k[6], 23, 76029189);
+          a = hh(a, b, c, d, k[9], 4, -640364487); d = hh(d, a, b, c, k[12], 11, -421815835); c = hh(c, d, a, b, k[15], 16, 530742520); b = hh(b, c, d, a, k[2], 23, -995338651);
+          a = ii(a, b, c, d, k[0], 6, -198630844); d = ii(d, a, b, c, k[7], 10, 1126891415); c = ii(c, d, a, b, k[14], 15, -1416354905); b = ii(b, c, d, a, k[5], 21, -57434055);
+          a = ii(a, b, c, d, k[12], 6, 1700485571); d = ii(d, a, b, c, k[3], 10, -1894986606); c = ii(c, d, a, b, k[10], 15, -1051523); b = ii(b, c, d, a, k[1], 21, -2054922799);
+          a = ii(a, b, c, d, k[8], 6, 1873313359); d = ii(d, a, b, c, k[15], 10, -30611744); c = ii(c, d, a, b, k[6], 15, -1560198380); b = ii(b, c, d, a, k[13], 21, 1309151649);
+          a = ii(a, b, c, d, k[4], 6, -145523070); d = ii(d, a, b, c, k[11], 10, -1120210379); c = ii(c, d, a, b, k[2], 15, 718787259); b = ii(b, c, d, a, k[9], 21, -343485551);
+          x[0] = a + x[0] | 0; x[1] = b + x[1] | 0; x[2] = c + x[2] | 0; x[3] = d + x[3] | 0;
+        };
+        let cmn = (q, a, b, x, s, t) => (a + q + x + t | 0),
+            ff = (a, b, c, d, x, s, t) => (cmn((b & c) | (~b & d), a, b, x, s, t) << s | cmn((b & c) | (~b & d), a, b, x, s, t) >>> (32 - s)) + b | 0,
+            gg = (a, b, c, d, x, s, t) => (cmn((b & d) | (c & ~d), a, b, x, s, t) << s | cmn((b & d) | (c & ~d), a, b, x, s, t) >>> (32 - s)) + b | 0,
+            hh = (a, b, c, d, x, s, t) => (cmn(b ^ c ^ d, a, b, x, s, t) << s | cmn(b ^ c ^ d, a, b, x, s, t) >>> (32 - s)) + b | 0,
+            ii = (a, b, c, d, x, s, t) => (cmn(c ^ (b | ~d), a, b, x, s, t) << s | cmn(c ^ (b | ~d), a, b, x, s, t) >>> (32 - s)) + b | 0;
+        let md5 = (s) => {
+          let txt = '';
+          let n = s.length, state = [1732584193, -271733879, -1732584194, 271733878], i = 64, words = [];
+          for (; i < n - 63; i += 64) md5cycle(state, words);
+          let tail = s.substring(i);
+          let tailWords = [];
+          for (let j = 0; j < 64; j++) {
+            tailWords[j >> 2] |= (tail.charCodeAt(j) || 0) << ((j & 3) << 3);
+          }
+          tailWords[14] = n * 8;
+          md5cycle(state, tailWords);
+          return state.map(x => ('00000000' + (x >>> 0).toString(16)).slice(-8).match(/../g).reverse().join('')).join('');
+        };
+        return md5(str);
+      };
+
+      const counts = { 'y11a-1': 0 };
+      const indexIdsByChapter = {};
+
+      // Batch Write questions
+      const chunkSize = 400;
+      for (let i = 0; i < finalQuestions.length; i += chunkSize) {
+        const chunk = finalQuestions.slice(i, i + chunkSize);
+        const addBatch = writeBatch(db);
+        chunk.forEach(qData => {
+          counts['y11a-1']++;
+          if (qData.topicId) {
+            counts[qData.topicId] = (counts[qData.topicId] || 0) + 1;
+          }
+          const hashId = getMD5(qData.question);
+          const docRef = doc(collRef, hashId);
+          addBatch.set(docRef, qData, { merge: true });
+
+          const chapterId = qData.chapterId || 'y11a-1';
+          if (!indexIdsByChapter[chapterId]) {
+            indexIdsByChapter[chapterId] = [];
+          }
+          indexIdsByChapter[chapterId].push(hashId);
         });
-      });
-      await addBatch.commit();
+        await addBatch.commit();
+      }
 
-      // Bump sync_meta so the hasFreshCounts check detects a new version
-      try {
-        const { setDoc: sd, doc: d2, serverTimestamp: st2 } = await import('firebase/firestore');
-        await sd(d2(db, 'sync_meta', 'questions'), { version: Date.now(), updatedAt: st2() }, { merge: true });
-      } catch (e) { console.warn('sync_meta bump failed:', e); }
+      // 3. Update sync_meta and question_index docs in Firestore (zero-read writes)
+      const seedVersion = Date.now();
+      await setDoc(doc(db, 'sync_meta', 'question_counts'), {
+        counts,
+        version: seedVersion,
+        updatedAt: serverTimestamp()
+      }, { merge: true });
 
-      // Fetch live count and update cache
-      try {
-        const { getCountFromServer: gcfs, query: q2, collection: col2, where: w2 } = await import('firebase/firestore');
-        const snap2 = await gcfs(q2(col2(db, 'questions'), w2('chapterId', '==', 'y11a-1')));
-        const count = snap2.data().count || 0;
-        const cached = loadCachedQuestionCounts();
-        cached.counts['y11a-1'] = count;
-        saveCachedQuestionCounts(cached.counts, Date.now());
-        setQuestionCounts(prev => ({ ...prev, 'y11a-1': count }));
-      } catch (e) { console.warn('Post-seed count fetch failed:', e); }
+      await setDoc(doc(db, 'sync_meta', 'questions'), {
+        version: seedVersion,
+        updatedAt: serverTimestamp()
+      }, { merge: true });
 
-      showToast("Successfully updated 74 Algebra questions!", 'success');
+      // Update question_index docs
+      for (const [chapterId, ids] of Object.entries(indexIdsByChapter)) {
+        await setDoc(doc(db, 'question_index', chapterId), {
+          ids,
+          count: ids.length,
+          updatedAt: serverTimestamp()
+        });
+      }
+
+      // Update question_index/_meta builtVersion
+      await setDoc(doc(db, 'question_index', '_meta'), {
+        builtVersion: seedVersion,
+        updatedAt: serverTimestamp()
+      }, { merge: true });
+
+      // Update local cache counts
+      const cached = loadCachedQuestionCounts();
+      cached.counts = { ...cached.counts, ...counts };
+      saveCachedQuestionCounts(cached.counts, seedVersion);
+      setQuestionCounts(prev => ({ ...prev, ...counts }));
+
+      showToast(`Successfully seeded all ${finalQuestions.length} Chapter 1 questions (including new MC questions)!`, 'success');
     } catch (err) {
       console.error(err);
-      showToast("Failed to update questions.", 'error');
+      showToast("Failed to seed questions.", 'error');
     } finally {
       setIsMigrating(false);
     }

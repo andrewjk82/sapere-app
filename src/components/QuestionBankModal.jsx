@@ -1572,7 +1572,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             const syncRes = await fetch('/__local-api/sync-seed', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ id: editingQuestion, graphData })
+              body: JSON.stringify({ id: editingQuestion, question: payload })
             });
             const syncData = await syncRes.json();
             if (syncData.success) {

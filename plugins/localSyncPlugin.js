@@ -69,23 +69,33 @@ function syncSeedFile(questionData) {
         );
 
         if (idProp) {
-          const graphDataPropIndex = p.node.properties.findIndex(prop => 
-            prop.key && (prop.key.name === 'graphData' || prop.key.value === 'graphData')
-          );
+          // Reconstruct all properties from the new payload
+          const newProps = [];
+          
+          // First add ID
+          newProps.push({
+            type: 'ObjectProperty',
+            key: { type: 'Identifier', name: 'id' },
+            value: { type: 'StringLiteral', value: qId }
+          });
 
-          // We parse the new graphData as an AST node
-          const tempAst = parse(`const a = ${JSON.stringify(questionData.graphData)};`);
-          const newGraphDataNode = tempAst.program.body[0].declarations[0].init;
-
-          if (graphDataPropIndex !== -1) {
-            p.node.properties[graphDataPropIndex].value = newGraphDataNode;
-          } else {
-            p.node.properties.push({
+          // Add all other properties from payload
+          const payload = questionData.question || {};
+          for (const [key, val] of Object.entries(payload)) {
+            if (key === 'id' || key === 'updatedAt' || key === 'createdAt') continue;
+            
+            // Serialize val to AST
+            const tempAst = parse(`const a = ${JSON.stringify(val)};`);
+            const valNode = tempAst.program.body[0].declarations[0].init;
+            
+            newProps.push({
               type: 'ObjectProperty',
-              key: { type: 'Identifier', name: 'graphData' },
-              value: newGraphDataNode
+              key: { type: 'Identifier', name: key },
+              value: valNode
             });
           }
+
+          p.node.properties = newProps;
           updated = true;
           p.stop();
         }
