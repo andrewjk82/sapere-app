@@ -2115,11 +2115,11 @@ export const Y11_CH1A_QUESTIONS = [
     "question": "Expand: \\((x^2 + x + 1)^2\\)",
     "options": [
       {
-        "text": "\\(x^4 + x^2 + 1 + 2x^x + 2x + 2x^\\)",
+        "text": "\\(x^4 + x^2 + 1 + 2x^3 + 2x + 2x^2\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x^4 - x^2 + 1 - 2x^x + 2x - 2x^\\)",
+        "text": "\\(x^4 - x^2 + 1 - 2x^3 + 2x - 2x^2\\)",
         "imageUrl": ""
       },
       {
@@ -2127,14 +2127,14 @@ export const Y11_CH1A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x^4 + x^2 + 1 + 2x^x + 2x + 2x^\\)",
+        "text": "\\(x^4 + 2x^3 + 3x^2 + 2x + 1\\)",
         "imageUrl": ""
       }
     ],
     "answer": "0",
     "blanks": [],
     "hint": "Use the trinomial square identity: \\((A + B + C)^2 = A^2 + B^2 + C^2 + 2AB + 2BC + 2CA\\). Be careful with negative signs.",
-    "solution": "\\((x^2 + x + 1)^2 = x^4 + x^2 + 1 + 2x^x + 2x + 2x^\\)",
+    "solution": "\\((x^2 + x + 1)^2 = x^4 + x^2 + 1 + 2x^3 + 2x + 2x^2\\)",
     "solutionSteps": [
       {
         "explanation": "Group the trinomial and apply the algebraic identity for squaring a trinomial.",
@@ -2148,7 +2148,7 @@ export const Y11_CH1A_QUESTIONS = [
       },
       {
         "explanation": "Expand the remaining products, adjusting the signs appropriately to obtain the simplified expression.",
-        "workingOut": "\\(= x^4 + x^2 + 1 + 2x^x + 2x + 2x^\\)",
+        "workingOut": "\\(= x^4 + x^2 + 1 + 2x^3 + 2x + 2x^2\\)",
         "graphData": null
       }
     ],

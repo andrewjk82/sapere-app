@@ -46,6 +46,22 @@ export default function localSyncPlugin() {
           });
           return;
         }
+
+        if (req.url === '/__local-api/sync-all' && req.method === 'POST') {
+          const { exec } = await import('child_process');
+          exec('npm run sync-seeds', (error, stdout, stderr) => {
+            res.setHeader('Content-Type', 'application/json');
+            if (error) {
+              console.error(`sync-all exec error: ${error}`);
+              res.statusCode = 500;
+              res.end(JSON.stringify({ success: false, error: error.message, stderr }));
+            } else {
+              console.log(`sync-all result: ${stdout}`);
+              res.end(JSON.stringify({ success: true, output: stdout }));
+            }
+          });
+          return;
+        }
         next();
       });
     }

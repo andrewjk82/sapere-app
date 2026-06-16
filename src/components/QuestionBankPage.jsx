@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2,
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
@@ -48,6 +48,26 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [previewAnswer, setPreviewAnswer] = useState(''); // teacher can test-type like a student
   const qbMathRef = useRef(null);
   const [creatingNew, setCreatingNew] = useState(false);
+  const [isSyncingAll, setIsSyncingAll] = useState(false);
+
+  const handleSyncAll = async () => {
+    if (!window.confirm('This will fetch all questions from the database and overwrite the local seed files. Proceed?')) return;
+    setIsSyncingAll(true);
+    try {
+      const res = await fetch('/__local-api/sync-all', { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        showToast('Successfully synced DB to seed files!', 'success');
+      } else {
+        throw new Error(data.error || 'Unknown error');
+      }
+    } catch (e) {
+      console.error(e);
+      showToast('Failed to sync: ' + e.message, 'error');
+    } finally {
+      setIsSyncingAll(false);
+    }
+  };
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -197,6 +217,13 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             <div style={{ fontSize: '1rem', fontWeight: 900, color: '#1e1b4b' }}>{topic?.title || 'All topics'}</div>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
+            <button
+              onClick={handleSyncAll}
+              disabled={isSyncingAll}
+              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', background: isSyncingAll ? '#f1f5f9' : '#fff', color: isSyncingAll ? '#94a3b8' : '#475569', fontWeight: 700, cursor: isSyncingAll ? 'wait' : 'pointer' }}
+            >
+              <DownloadCloud size={16} /> {isSyncingAll ? 'Syncing...' : 'Sync DB to Seeds'}
+            </button>
             <button
               onClick={() => setCreatingNew(true)}
               style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 12px rgba(99,102,241,0.22)' }}
