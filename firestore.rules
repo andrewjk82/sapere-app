@@ -175,6 +175,11 @@ service cloud.firestore {
         allow write: if isAdmin();
       }
 
+      // HSC type practice accuracy stats (per type slug)
+      match /hsc_type_stats/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /notifications/{notifId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
         allow create: if isSignedIn()
@@ -182,6 +187,18 @@ service cloud.firestore {
           && request.resource.data.type == "challenge_completed"
           && request.resource.data.studentId == request.auth.uid;
       }
+    }
+
+    // HSC question type definitions (read by all signed-in students)
+    match /question_types/{typeId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // HSC question type index (ids per type — read by all signed-in students)
+    match /question_type_index/{typeId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
     }
 
     // Leaderboard entries
