@@ -1491,12 +1491,20 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       || (formData.blanks || []).some((b) => (b.answer || '').trim() !== '');
 
     const hasSubQuestions = (formData.subQuestions || []).length > 0;
-    if (!formData.questionText
-      || (!hasSubQuestions && needsAnswer && formData.type === 'short_answer' && !formData.answer)
-      || (!hasSubQuestions && needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx === null)
-      || (!hasSubQuestions && needsAnswer && formData.type === 'fill_blank' && !fillBlankOk)
-    ) {
-      showToast("Question content and answer are required.", 'warning');
+    if (!formData.questionText) {
+      showToast("Question content is required.", 'warning');
+      return;
+    }
+    if (!hasSubQuestions && needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx === null) {
+      showToast("Please select the correct answer option.", 'warning');
+      return;
+    }
+    if (!hasSubQuestions && needsAnswer && formData.type === 'short_answer' && !formData.answer) {
+      showToast("Please enter the correct answer.", 'warning');
+      return;
+    }
+    if (!hasSubQuestions && needsAnswer && formData.type === 'fill_blank' && !fillBlankOk) {
+      showToast("Fill in the Blank questions need at least one blank with an answer. Click \"Add Blank\" to add one.", 'warning');
       return;
     }
 
@@ -2020,7 +2028,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                   ].map(({ id, label }) => (
                     <button
                       key={id}
-                      onClick={() => setFormData({ ...formData, type: id })}
+                      onClick={() => setFormData(prev => ({ ...prev, type: id }))}
                       style={{ flex: 1, padding: '10px', borderRadius: '12px', border: 'none', background: formData.type === id ? 'white' : 'transparent', color: formData.type === id ? '#6366f1' : '#64748b', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', boxShadow: formData.type === id ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
                     >
                       {label}
@@ -2175,13 +2183,13 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                         {formData.blanks.map((b, i) => (
                           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                             {b.label && (
-                              <div style={{ minWidth: '60px' }}>
-                                <MathPreview content={b.label} style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '1.1rem' }} />
+                              <div style={{ minWidth: '60px', flexShrink: 0 }}>
+                                <MathView content={b.label} style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '1.1rem' }} />
                               </div>
                             )}
-                            <div style={{ flex: 1, padding: '14px 16px', borderRadius: '14px', border: '2px solid #e2e8f0', background: (b.answer || '').trim() ? '#f0fdf4' : '#fff', textAlign: 'center' }}>
+                            <div style={{ flex: 1, padding: '14px 16px', borderRadius: '14px', border: '2px solid #e2e8f0', background: (b.answer || '').trim() ? '#f0fdf4' : '#fff', textAlign: 'center', minHeight: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                               {(b.answer || '').trim() ? (
-                                <MathPreview content={String(b.answer)} style={{ display: 'inline', fontWeight: 700, color: '#166534', fontSize: '1.05rem' }} />
+                                <MathView content={String(b.answer)} style={{ fontWeight: 700, color: '#166534', fontSize: '1.05rem' }} />
                               ) : (
                                 <span style={{ color: '#cbd5e1', fontWeight: 700, fontSize: '1.05rem' }}>—</span>
                               )}
