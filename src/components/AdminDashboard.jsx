@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import {
   AlertTriangle,
   Eye,
@@ -12,8 +12,10 @@ import {
   Zap,
   Bell,
   ChevronRight,
+  Upload,
 } from 'lucide-react';
 import { db } from '../firebase/config';
+import taxonomyData from '../../tools/scripts/output/question_types_taxonomy.json';
 
 // ──────────────────────────────────────────────────────────
 // Helpers
@@ -253,6 +255,39 @@ const AdminDashboard = ({
 }) => {
   const buckets = useMemo(() => buildBuckets(students), [students]);
   const [todayCompletionSummary, setTodayCompletionSummary] = useState(null);
+  const [importStatus, setImportStatus] = useState(null); // null | 'running' | 'done' | 'error'
+  const [importMsg, setImportMsg] = useState('');
+
+  const handleImportQuestionTypes = async () => {
+    setImportStatus('running');
+    setImportMsg('Writing question types...');
+    try {
+      const types = taxonomyData.types;
+      for (const t of types) {
+        await setDoc(doc(db, 'question_types', t.slug), {
+          slug: t.slug,
+          label: t.label,
+          description: t.description,
+          chapterIds: t.chapterIds,
+          examLevel: t.examLevel,
+          count: t.count,
+          updatedAt: serverTimestamp(),
+        });
+        await setDoc(doc(db, 'question_type_index', t.slug), {
+          slug: t.slug,
+          label: t.label,
+          ids: t.questionIds,
+          count: t.questionIds.length,
+          updatedAt: serverTimestamp(),
+        });
+      }
+      setImportStatus('done');
+      setImportMsg(`✅ ${types.length} types imported successfully`);
+    } catch (e) {
+      setImportStatus('error');
+      setImportMsg(`Error: ${e.message}`);
+    }
+  };
   const todayKey = useMemo(() => getTodayKey(), []);
 
   // KPI overview metrics
@@ -515,6 +550,23 @@ const AdminDashboard = ({
                         </>
                       )}
                 </span>
+              </span>
+              <ChevronRight size={18} className="ad__send-arr" />
+            </button>
+            <button
+              type="button"
+              className="ad__send"
+              onClick={handleImportQuestionTypes}
+              disabled={importStatus === 'running'}
+              title="Import HSC question type taxonomy to Firestore (one-time setup)"
+              style={{ marginTop: '8px' }}
+            >
+              <span className="ad__send-ic" style={{ color: importStatus === 'done' ? '#16a34a' : importStatus === 'error' ? '#b91c1c' : '#7c3aed' }}>
+                <Upload size={18} />
+              </span>
+              <span className="ad__send-info">
+                <strong>{importStatus === 'running' ? 'Importing...' : importStatus === 'done' ? 'Import Complete' : 'Import Question Types'}</strong>
+                <span>{importMsg || `${taxonomyData.types?.length || 21} HSC types → Firestore (one-time)`}</span>
               </span>
               <ChevronRight size={18} className="ad__send-arr" />
             </button>
