@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "get-inputs": "node scratch/read_last_user_input.js",
-    "gen-5d": "node scratch/generateYear12Ch5DQuestions.js"
+    "gen-5d": "node scratch/generateYear12Ch5DQuestions.js",
+    "sync-seeds": "node scratch/dump_db_to_seeds.js"
   },
   "dependencies": {
     "3d-force-graph": "^1.80.0",
