@@ -25,6 +25,7 @@ const QB_QUICK_INSERTS = [
 import { useToast } from '../context/ToastContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
+import { answersMatch } from '../utils/answerMatching';
 
 /**
  * Full-page question-bank browser for a single chapter+topic.
@@ -420,6 +421,21 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   placeholder="Type your answer…  (same editor students use)"
                   style={{ fontSize: '1.4rem', padding: '22px', borderRadius: '24px' }}
                 />
+                {(() => {
+                  const typed = previewAnswer.trim();
+                  if (!typed || !q.answer) return null;
+                  const isMatch = answersMatch(typed, String(q.answer));
+                  const accepted = (q.acceptedAnswers || []).some(a => answersMatch(typed, String(a)));
+                  const correct = isMatch || accepted;
+                  return (
+                    <div style={{ padding: '14px 18px', borderRadius: '14px', background: correct ? '#f0fdf4' : '#fef2f2', border: `2px solid ${correct ? '#10b981' : '#ef4444'}`, display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <span style={{ fontSize: '1.3rem' }}>{correct ? '✅' : '❌'}</span>
+                      <span style={{ fontWeight: 900, color: correct ? '#166534' : '#991b1b', fontSize: '0.95rem' }}>
+                        {correct ? 'Correct — matches the grading system' : 'Wrong — students typing this would be marked incorrect'}
+                      </span>
+                    </div>
+                  );
+                })()}
                 {q.answer && (
                   <div style={{ padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
                     Answer: <MathView content={String(q.answer)} style={{ display: 'inline', fontWeight: 800 }} />
