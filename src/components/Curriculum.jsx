@@ -56,7 +56,8 @@ import './curriculum.css';
 import './hsc-chart.css';
 
 
-const YEARS = Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`);
+const YEARS = [...Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`), 'Past Paper'];
+const PAST_PAPER_COURSES = ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
 // Bump the cache key suffix to invalidate every client's stored counts once.
 // Pre-existing caches were written before the seeder & delete paths bumped
 // sync_meta, so chapter cards could show pre-seed numbers indefinitely even
@@ -145,6 +146,12 @@ const Curriculum = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
+
+  // Past Paper question types (loaded once when Past Paper tab is selected)
+  const [questionTypes, setQuestionTypes] = useState([]);
+  const [questionTypesLoading, setQuestionTypesLoading] = useState(false);
+  // For Past Paper type → questions drill-down
+  const [selectedPastPaperType, setSelectedPastPaperType] = useState(null);
 
   // Fetch Curriculum from Firestore
   useEffect(() => {
@@ -1371,9 +1378,24 @@ const Curriculum = () => {
     };
   }, [user?.uid, isAdmin, profile?.showHscGraph]);
 
+  useEffect(() => {
+    if (selectedYear !== 'Past Paper' || questionTypes.length > 0) return;
+    let cancelled = false;
+    setQuestionTypesLoading(true);
+    getDocs(collection(db, 'question_types')).then(snap => {
+      if (cancelled) return;
+      const list = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+        .sort((a, b) => (a.label || '').localeCompare(b.label || ''));
+      setQuestionTypes(list);
+      setQuestionTypesLoading(false);
+    }).catch(() => { if (!cancelled) setQuestionTypesLoading(false); });
+    return () => { cancelled = true; };
+  }, [selectedYear, questionTypes.length]);
+
   const courses = useMemo(() => {
     if (selectedYear === 'Year 11') return ['Standard', 'Advanced', 'Extension 1'];
     if (selectedYear === 'Year 12') return ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
+    if (selectedYear === 'Past Paper') return PAST_PAPER_COURSES;
     return null;
   }, [selectedYear]);
 
@@ -1920,6 +1942,18 @@ const Curriculum = () => {
       />
     );
   }
+
+  // Past Paper type drill-down: uses a synthetic chapter so QuestionBankPage
+  // can query question_type_index and filter by typeSlug.
+  if (selectedPastPaperType) {
+    return (
+      <QuestionBankPage
+        chapter={{ id: `type:${selectedPastPaperType.slug}`, title: selectedPastPaperType.label, typeSlug: selectedPastPaperType.slug }}
+        topic={null}
+        onBack={() => setSelectedPastPaperType(null)}
+      />
+    );
+  }
   if (selectedChapterForQuestions) {
     const ch = selectedChapterForQuestions;
     const topics = ch.topics || [];
@@ -2098,7 +2132,7 @@ const Curriculum = () => {
                           key={year}
                           onClick={() => {
                             setSelectedYear(year);
-                            if (year === 'Year 11' || year === 'Year 12') setSelectedCourse('Standard');
+                            if (year === 'Year 11' || year === 'Year 12' || year === 'Past Paper') setSelectedCourse('Advanced');
                           }}
                           className={`curriculum-year-tab${selectedYear === year ? ' curriculum-year-tab--active' : ''}`}
                         >
@@ -2596,7 +2630,85 @@ const Curriculum = () => {
               </div>
             )}
 
-            <div className="chapters-grid">
+            {/* ── Past Paper question types grid ── */}
+            {selectedYear === 'Past Paper' && (() => {
+              const levelMap = {
+                'Standard': 'Standard',
+                'Advanced': 'Advanced',
+                'Extension 1': 'Extension 1',
+                'Extension 2': 'Extension 2',
+              };
+              const filtered = questionTypes.filter(t => {
+                const lvl = t.examLevel || '';
+                if (selectedCourse === 'Standard') return lvl === 'Standard' || lvl === 'Both';
+                if (selectedCourse === 'Advanced') return lvl === 'Advanced' || lvl === 'Both';
+                if (selectedCourse === 'Extension 1') return lvl === 'Extension 1';
+                if (selectedCourse === 'Extension 2') return lvl === 'Extension 2';
+                return true;
+              });
+              if (questionTypesLoading) {
+                return (
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', marginTop: '8px' }}>
+                    {Array.from({ length: 8 }).map((_, i) => (
+                      <div key={i} style={{ height: '110px', borderRadius: '16px', background: '#f1f5f9', animation: 'pulse 1.5s infinite' }} />
+                    ))}
+                  </div>
+                );
+              }
+              if (filtered.length === 0) {
+                return (
+                  <div style={{ padding: '48px', textAlign: 'center', color: '#94a3b8', fontWeight: 700 }}>
+                    No question types found for {selectedCourse}. Run "Import Question Types" from the Admin dashboard first.
+                  </div>
+                );
+              }
+              return (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '16px', marginTop: '8px' }}>
+                  {filtered.map(type => (
+                    <motion.div
+                      key={type.slug}
+                      whileHover={{ y: -3, boxShadow: '0 12px 28px rgba(124,58,237,0.12)' }}
+                      whileTap={{ scale: 0.97 }}
+                      onClick={() => setSelectedPastPaperType(type)}
+                      style={{
+                        background: '#fff',
+                        border: '1.5px solid #e2e8f0',
+                        borderRadius: '16px',
+                        padding: '18px 20px',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '10px',
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px' }}>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#1e1b4b', lineHeight: 1.3, marginBottom: '4px' }}>
+                            {type.label}
+                          </div>
+                          <div style={{ fontSize: '0.75rem', color: '#64748b', lineHeight: 1.4, fontWeight: 600 }}>
+                            {type.description}
+                          </div>
+                        </div>
+                        <span style={{ background: '#f5f3ff', color: '#7c3aed', fontWeight: 800, fontSize: '0.7rem', padding: '3px 10px', borderRadius: '8px', flexShrink: 0 }}>
+                          {type.count || 0} Q
+                        </span>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', background: '#f8fafc', padding: '3px 8px', borderRadius: '6px' }}>
+                          {type.examLevel || 'Both'}
+                        </span>
+                        <span style={{ marginLeft: 'auto', fontSize: '0.72rem', fontWeight: 700, color: '#7c3aed' }}>
+                          Edit questions →
+                        </span>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              );
+            })()}
+
+            <div className="chapters-grid" style={{ display: selectedYear === 'Past Paper' ? 'none' : undefined }}>
               {displayData.length > 0 ? displayData.map((chapter, chapterIndex) => {
                 const p = chapter.modules > 0 ? Math.round(((chapter.completed || 0) / chapter.modules) * 100) : 0;
                 return (

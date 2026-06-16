@@ -4,7 +4,7 @@ import {
   ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2,
 } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import MathView from './MathView';
 import MathInput from './MathInput';
 import QuestionBankModal from './QuestionBankModal';
@@ -52,16 +52,33 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     setLoading(true);
     try {
       // Exam paper chapters use examPaper field; regular chapters use chapterId.
+      const isTypeChapter = chapter.id?.startsWith('type:');
       const isExamChapter = chapter.id?.startsWith('exam:');
-      const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
-      const snap = await getDocs(
-        isExamChapter
-          ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
-          : query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
-      );
-      const all = snap.docs
-        .map((d) => ({ id: d.id, ...d.data() }))
-        .filter((q) => q.isActive !== false && (!topic?.id || q.topicId === topic.id));
+      let all = [];
+      if (isTypeChapter) {
+        // Load question IDs from question_type_index, then fetch each question doc
+        const typeSlug = chapter.typeSlug || chapter.id.replace('type:', '');
+        const indexDoc = await getDoc(doc(db, 'question_type_index', typeSlug));
+        const ids = indexDoc.exists() ? (indexDoc.data().ids || []) : [];
+        // Fetch in batches of 30 (Firestore in-query limit)
+        const chunks = [];
+        for (let i = 0; i < ids.length; i += 30) chunks.push(ids.slice(i, i + 30));
+        const snaps = await Promise.all(
+          chunks.map(chunk => getDocs(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
+        );
+        all = snaps.flatMap(s => s.docs.map(d => ({ id: d.id, ...d.data() })))
+          .filter(q => q.isActive !== false);
+      } else {
+        const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
+        const snap = await getDocs(
+          isExamChapter
+            ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
+            : query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
+        );
+        all = snap.docs
+          .map((d) => ({ id: d.id, ...d.data() }))
+          .filter((q) => q.isActive !== false && (!topic?.id || q.topicId === topic.id));
+      }
       all.sort((a, b) => String(a.id).localeCompare(String(b.id)));
       setQuestions(all);
       setCurrentIdx((prev) => (prev >= all.length ? Math.max(0, all.length - 1) : prev));
