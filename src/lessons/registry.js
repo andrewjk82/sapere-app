@@ -1680,15 +1680,15 @@ export const buildOneQuantityAsPercentLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 0 — The big idea ────────────────────────────────────────────────
     {
-      narration: `To express <b>one quantity as a percentage of another</b>, write the first as a <b>fraction</b> of the second, then <b>multiply by 100%</b>. Since $100\\% = 1$, this never changes the value — it just rewrites it as a percentage.`,
-      speech: `To express one quantity as a percentage of another, write the first as a fraction of the second, then multiply by 100 percent. Since 100 percent equals 1, this never changes the value — it just rewrites it as a percentage.`,
+      narration: `To express <b>one quantity as a percentage of another</b>, follow <b>3 steps</b>: write as a fraction, multiply by $100\\%$, then simplify. Watch the bar below scale from "35 out of 50" all the way to <b>70%</b>.`,
+      speech: `To express one quantity as a percentage of another, follow 3 steps: write as a fraction, multiply by 100 percent, then simplify. Watch the bar below scale from 35 out of 50, all the way to 70 percent.`,
       board: [
-        { type: 'math', content: `$$\\text{percentage} = \\dfrac{\\text{part}}{\\text{whole}} \\times 100\\%$$`, emphasis: true },
-        { type: 'workingOut', align: 'center', lines: [
-          { math: `$$\\text{Write the part as a fraction of the whole}$$`,    delay: 0.7 },
-          { math: `$$\\text{Multiply by } 100\\% \\text{ to convert}$$`,      delay: 1.4 },
-          { math: `$$\\text{Simplify — the answer is a percentage}$$`,        delay: 2.1 },
+        { type: 'stepCards', cards: [
+          { title: 'Write as a fraction',  math: `$$\\dfrac{\\text{part}}{\\text{whole}}$$`, color: PRP, delay: 0.1 },
+          { title: 'Multiply by 100%',     math: `$$\\times\\; 100\\%$$`,                    color: GRN, delay: 0.55 },
+          { title: 'Simplify',             math: `$$= \\text{percentage}$$`,                 color: AMB, delay: 1.0  },
         ]},
+        { type: 'partWholeBar', part: 35, whole: 50, color: PRP, delay: 1.3 },
       ],
     },
 

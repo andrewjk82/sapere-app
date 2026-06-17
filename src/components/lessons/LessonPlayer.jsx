@@ -830,6 +830,101 @@ const WorkingOut = ({ lines = [], align = 'left' }) => (
   </div>
 );
 
+// ── Step Cards ────────────────────────────────────────────────────────────
+// Numbered flow cards (①→②→③) for recipe/process explanations.
+const StepCards = ({ cards = [] }) => (
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, flexWrap: 'wrap', fontFamily: FONT }}>
+    {cards.map((c, i) => (
+      <React.Fragment key={i}>
+        <motion.div
+          initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: c.delay ?? i * 0.45, type: 'spring', stiffness: 260, damping: 22 }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 18, padding: '18px 22px', boxShadow: `0 6px 24px ${c.color || '#7c3aed'}22`, border: `2px solid ${c.color || '#7c3aed'}33`, minWidth: 140 }}>
+          <div style={{ width: 38, height: 38, borderRadius: '50%', background: `linear-gradient(135deg, ${c.color || '#7c3aed'}cc, ${c.color || '#7c3aed'})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.15rem', fontWeight: 900, color: '#fff', boxShadow: `0 3px 10px ${c.color || '#7c3aed'}55` }}>
+            {i + 1}
+          </div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#374151', textAlign: 'center', lineHeight: 1.35 }}>{c.title}</div>
+          {c.math && <MathView content={c.math} style={{ fontSize: '1.15rem', fontWeight: 700, color: c.color || '#7c3aed', textAlign: 'center' }} />}
+        </motion.div>
+        {i < cards.length - 1 && (
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: (c.delay ?? i * 0.45) + 0.3, type: 'spring', stiffness: 400 }}
+            style={{ fontSize: '1.6rem', color: '#c4b5fd', lineHeight: 1 }}>→</motion.div>
+        )}
+      </React.Fragment>
+    ))}
+  </div>
+);
+
+// ── Part-Whole Bar ─────────────────────────────────────────────────────────
+// Shows "part out of whole" as a coloured bar, then scales it to /100 so
+// students can see WHY we multiply by 100% — it just rescales the bar.
+const PartWholeBar = ({ part, whole, color = '#7c3aed', delay = 0.2 }) => {
+  const pct = Math.round((part / whole) * 100);
+  const scaleFactor = 100 / whole;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 18, fontFamily: FONT, padding: '0 12px' }}>
+      {/* Row 1: part out of whole */}
+      <motion.div initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }}
+        transition={{ delay, duration: 0.35, ease: 'easeOut' }}
+        style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div style={{ width: 56, textAlign: 'right', fontSize: '0.85rem', fontWeight: 700, color: '#6b7280', whiteSpace: 'nowrap' }}>
+          {part} / {whole}
+        </div>
+        <div style={{ flex: 1, height: 28, background: '#ede9fe', borderRadius: 8, overflow: 'hidden', position: 'relative' }}>
+          <motion.div initial={{ width: 0 }} animate={{ width: `${(part / whole) * 100}%` }}
+            transition={{ delay: delay + 0.2, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ height: '100%', background: `linear-gradient(90deg, ${color}bb, ${color})`, borderRadius: 8, position: 'absolute' }} />
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            transition={{ delay: delay + 1.1 }}
+            style={{ position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)', fontSize: '0.75rem', fontWeight: 700, color: '#9ca3af' }}>
+            {whole} total
+          </motion.span>
+        </div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+          transition={{ delay: delay + 1.0 }}
+          style={{ width: 50, fontSize: '0.85rem', fontWeight: 800, color }}>
+          {part}/{whole}
+        </motion.div>
+      </motion.div>
+
+      {/* Scale arrow */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+        transition={{ delay: delay + 1.3 }}
+        style={{ display: 'flex', alignItems: 'center', gap: 8, paddingLeft: 70 }}>
+        <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#9333ea', background: '#f5f3ff', border: '1.5px solid #c4b5fd', borderRadius: 8, padding: '3px 10px', whiteSpace: 'nowrap' }}>
+          × {scaleFactor} to make /100
+        </div>
+        <span style={{ fontSize: '1rem', color: '#c4b5fd' }}>↓</span>
+      </motion.div>
+
+      {/* Row 2: scaled to /100 */}
+      <motion.div initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: delay + 1.5, duration: 0.35, ease: 'easeOut' }}
+        style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div style={{ width: 56, textAlign: 'right', fontSize: '0.85rem', fontWeight: 700, color, whiteSpace: 'nowrap' }}>
+          {pct} / 100
+        </div>
+        <div style={{ flex: 1, height: 28, background: '#ede9fe', borderRadius: 8, overflow: 'hidden', position: 'relative' }}>
+          <motion.div initial={{ width: 0 }} animate={{ width: `${pct}%` }}
+            transition={{ delay: delay + 1.7, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ height: '100%', background: `linear-gradient(90deg, ${color}bb, ${color})`, borderRadius: 8, position: 'absolute' }} />
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            transition={{ delay: delay + 2.6 }}
+            style={{ position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)', fontSize: '0.75rem', fontWeight: 700, color: '#9ca3af' }}>
+            100 total
+          </motion.span>
+        </div>
+        <motion.div initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: delay + 2.5, type: 'spring', stiffness: 320 }}
+          style={{ width: 50, fontSize: '1.05rem', fontWeight: 900, color, background: `${color}14`, border: `2px solid ${color}55`, borderRadius: 8, padding: '2px 6px', textAlign: 'center' }}>
+          {pct}%
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+};
+
 // ── Conversion Triangle ───────────────────────────────────────────────────
 // Beautiful animated diagram showing % ↔ Fraction ↔ Decimal conversions.
 const ConversionTriangle = () => {
@@ -1063,6 +1158,8 @@ const BoardItem = ({ item }) => {
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
   else if (item.type === 'conversionTriangle') inner = <ConversionTriangle />;
+  else if (item.type === 'stepCards') inner = <StepCards {...item} />;
+  else if (item.type === 'partWholeBar') inner = <PartWholeBar {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
