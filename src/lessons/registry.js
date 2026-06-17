@@ -1672,6 +1672,122 @@ export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
   return { topicId: null, emoji: '🕒', title: 'Exact minutes, am/pm & 24-hour time', steps, glossary: { ...BASE_GLOSSARY, ...CLOCK_GLOSSARY } };
 };
 
+// ── Year 7 · 14B · One Quantity as a Percentage of Another ──────────────────
+export const buildOneQuantityAsPercentLesson = ({ audioBase = null } = {}) => {
+  const PRP = '#7c3aed', GRN = '#059669', RED = '#ef4444', AMB = '#f59e0b', BLU = '#0ea5e9';
+
+  const steps = [
+
+    // ── Step 0 — The big idea ────────────────────────────────────────────────
+    {
+      narration: `To express <b>one quantity as a percentage of another</b>, write the first as a <b>fraction</b> of the second, then <b>multiply by 100%</b>. Since $100\\% = 1$, this never changes the value — it just rewrites it as a percentage.`,
+      speech: `To express one quantity as a percentage of another, write the first as a fraction of the second, then multiply by 100 percent. Since 100 percent equals 1, this never changes the value — it just rewrites it as a percentage.`,
+      board: [
+        { type: 'math', content: `$$\\text{percentage} = \\dfrac{\\text{part}}{\\text{whole}} \\times 100\\%$$`, emphasis: true },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\text{Write the part as a fraction of the whole}$$`,    delay: 0.7 },
+          { math: `$$\\text{Multiply by } 100\\% \\text{ to convert}$$`,      delay: 1.4 },
+          { math: `$$\\text{Simplify — the answer is a percentage}$$`,        delay: 2.1 },
+        ]},
+      ],
+    },
+
+    // ── Step 1 — Swimming club (35 out of 50 = 70%) ──────────────────────────
+    {
+      narration: `<b>Example:</b> A swimming club has 50 members. 35 go to squad training. What percentage go to squad? Write $\\dfrac{35}{50}$, then multiply by $100\\%$. Watch <b>70 boxes</b> fill in — that's 70%.`,
+      speech: `Example: A swimming club has 50 members. 35 go to squad training. We write 35 over 50, then multiply by 100 percent. Watch 70 boxes fill in. That is 70 percent.`,
+      board: [
+        { type: 'percentGrid', count: 70, color: PRP, label: '70 out of 100 = 70%' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\dfrac{35}{50} \\times 100\\% = \\dfrac{35 \\times 100}{50}\\% = \\dfrac{3500}{50}\\% = 70\\%$$`, delay: 0.6, color: PRP },
+        ]},
+      ],
+    },
+
+    // ── Step 2 — Two methods: 30 out of 50 ──────────────────────────────────
+    {
+      narration: `There are <b>two methods</b>. For 30 out of 50: <b>Method 1</b> — scale the fraction so the denominator becomes 100 (multiply top and bottom by 2). <b>Method 2</b> — multiply by $100\\%$ directly. Both give <b>60%</b>.`,
+      speech: `There are two methods. For 30 out of 50. Method 1: scale the fraction so the denominator becomes 100 — multiply top and bottom by 2. Method 2: multiply by 100 percent directly. Both give 60 percent.`,
+      board: [
+        { type: 'percentGrid', count: 60, color: GRN, label: '60 out of 100 = 60%' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\textbf{Method 1:}\\quad \\dfrac{30}{50} = \\dfrac{30 \\times 2}{50 \\times 2} = \\dfrac{60}{100} = 60\\%$$`, delay: 0.5, color: GRN },
+          { math: `$$\\textbf{Method 2:}\\quad \\dfrac{30}{50} \\times 100\\% = \\dfrac{30 \\times 100}{50}\\% = 60\\%$$`,         delay: 1.5, color: PRP },
+        ]},
+      ],
+    },
+
+    // ── Step 3 — Trickier: 35 out of 40 = 87½% ──────────────────────────────
+    {
+      narration: `When the fraction doesn't simplify neatly to a denominator of 100, just use <b>Method 2</b>. For 35 out of 40: $\\dfrac{35}{40} \\times 100\\%$. Cancel first — $\\dfrac{35}{40} = \\dfrac{7}{8}$ — then $\\dfrac{7 \\times 100}{8}\\% = \\dfrac{175}{2}\\% = 87\\tfrac{1}{2}\\%$.`,
+      speech: `When the fraction does not simplify neatly to a denominator of 100, use Method 2. For 35 out of 40: multiply by 100 percent. Simplify 35 over 40 to 7 over 8 first, then 7 times 100 over 8 gives 175 over 2, which is 87 and a half percent.`,
+      board: [
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\dfrac{35}{40} \\times 100\\% = \\dfrac{\\cancel{35}^{\\,7}}{\\cancel{40}^{\\,8}} \\times 100\\% = \\dfrac{7 \\times 100}{8}\\% = \\dfrac{175}{2}\\% = 87\\tfrac{1}{2}\\%$$`, delay: 0.5, color: RED },
+        ]},
+        { type: 'math', content: `$$87\\tfrac{1}{2}\\% = 87.5\\%$$`, emphasis: true },
+      ],
+    },
+
+    // ── Step 4 — Units must match first ─────────────────────────────────────
+    {
+      narration: `⚠️ When the two quantities have <b>different units</b>, you must <b>convert to the same unit first</b> before writing the fraction. For example, 70 cents out of $1: convert $1 to 100 cents, then $\\dfrac{70}{100} = 70\\%$.`,
+      speech: `Warning: when the two quantities have different units, you must convert to the same unit first before writing the fraction. For example, 70 cents out of 1 dollar: convert 1 dollar to 100 cents, then 70 over 100 is 70 percent.`,
+      board: [
+        { type: 'math', content: `$$\\textbf{Rule: convert to the same unit first!}$$`, emphasis: true },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\$1 = 100 \\text{ cents} \\quad \\Rightarrow \\quad \\dfrac{70 \\text{ c}}{\\$1} = \\dfrac{70}{100} = 70\\%$$`, delay: 0.8, color: AMB, note: 'same unit' },
+        ]},
+      ],
+    },
+
+    // ── Step 5 — Three unit-conversion examples ──────────────────────────────
+    {
+      narration: `Three more examples — each needs a unit conversion first. <b>350 m out of 1 km</b>: 1 km = 1000 m → $\\dfrac{350}{1000} = 35\\%$. <b>340 g out of 2 kg</b>: 2 kg = 2000 g → $\\dfrac{340}{2000} = 17\\%$. Watch each grid fill.`,
+      speech: `Three more examples — each needs a unit conversion first. 350 metres out of 1 kilometre: 1 kilometre equals 1000 metres, so 350 over 1000 is 35 percent. 340 grams out of 2 kilograms: 2 kilograms equals 2000 grams, so 340 over 2000 is 17 percent. Watch each grid fill.`,
+      board: [
+        { type: 'percentGridRow', grids: [
+          { count: 70, fillDelay: 0.85, color: AMB,
+            equation: `$$\\dfrac{70\\text{c}}{100\\text{c}} = 70\\%$$`, note: '\\$1 = 100c' },
+          { count: 35, fillDelay: 2.4,  color: GRN,
+            equation: `$$\\dfrac{350}{1000} = 35\\%$$`, note: '1 km = 1000 m' },
+          { count: 17, fillDelay: 3.8,  color: BLU,
+            equation: `$$\\dfrac{340}{2000} = 17\\%$$`, note: '2 kg = 2000 g' },
+        ]},
+      ],
+    },
+
+    // ── Step 6 — Summary: the 3-step recipe ─────────────────────────────────
+    {
+      narration: `<b>Summary — 3 steps every time:</b> ① Convert to the <b>same unit</b> if needed. ② Write the <b>part over the whole</b> as a fraction. ③ Multiply by <b>100%</b> and simplify. That's it — you can always find a percentage this way.`,
+      speech: `Summary — 3 steps every time. Step 1: convert to the same unit if needed. Step 2: write the part over the whole as a fraction. Step 3: multiply by 100 percent and simplify. That is it — you can always find a percentage this way.`,
+      board: [
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\text{① Same unit}$$`,                                           delay: 0.4,  color: AMB },
+          { math: `$$\\text{② Fraction} = \\dfrac{\\text{part}}{\\text{whole}}$$`,    delay: 1.0,  color: PRP },
+          { math: `$$\\text{③ } \\times 100\\% \\text{ and simplify}$$`,              delay: 1.6,  color: GRN },
+        ]},
+        { type: 'math', content: `$$\\dfrac{\\text{part}}{\\text{whole}} \\times 100\\%$$`, emphasis: true },
+      ],
+    },
+
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return {
+    emoji: '%',
+    title: 'One quantity as a percentage of another',
+    steps,
+    glossary: {
+      ...BASE_GLOSSARY,
+      'percentage': 'A fraction with denominator 100, written using the % symbol.',
+      'fraction': 'A way of writing part of a whole — numerator (top) over denominator (bottom).',
+      'denominator': 'The bottom number of a fraction — tells you how many equal parts the whole is split into.',
+      'convert': 'Change a measurement into equivalent units (e.g. km → m) so two quantities can be compared.',
+    },
+  };
+};
+
 // ── Year 7 · 14A · Percentages, Fractions and Decimals ──────────────────────
 export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
   const PRP = '#7c3aed', LPRP = '#c4b5fd', GRN = '#059669', RED = '#ef4444', AMB = '#f59e0b';
@@ -1840,6 +1956,9 @@ export const LESSONS = {
 
   // Year 7 · 14A · Percentages, fractions and decimals.
   'y7-14a': { ...buildPercentagesLesson({ audioBase: '/lessons/audio/y7-14a' }), topicId: 'y7-14a' },
+
+  // Year 7 · 14B · One quantity as a percentage of another.
+  'y7-14b': { ...buildOneQuantityAsPercentLesson({ audioBase: '/lessons/audio/y7-14b' }), topicId: 'y7-14b' },
 
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
