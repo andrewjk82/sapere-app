@@ -1963,9 +1963,9 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
       speech: `In Chapter 5 we found fractions of a quantity. Here we do the same with percentages. The key rule: X percent of Y equals X over 100, times Y. Because percent literally means per hundred, we swap the percent sign for divide by 100 and multiply.`,
       audio: audio(0),
       board: [
-        { type: 'percentGrid', count: 25, color: PRP, label: '25 out of 100 shaded = 25%' },
+        { type: 'percentOfBar', percent: 25, whole: 100, color: PRP, label: 'The bar represents the whole quantity — 25% is shaded.' },
         { type: 'workingOut', align: 'center', lines: [
-          { math: `$$25\\% \\text{ of } Y = \\dfrac{25}{100} \\times Y = \\dfrac{1}{4} \\times Y$$`, delay: 0.5, color: PRP },
+          { math: `$$X\\% \\text{ of } Y = \\dfrac{X}{100} \\times Y$$`, delay: 0.5, color: PRP },
           { text: 'Convert the % to a fraction, then multiply by the whole.', delay: 1.2, color: '#374151' },
         ]},
       ],
@@ -1973,16 +1973,15 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 1 — Example 9: 25% of 3220 ─────────────────────────────────────
     {
-      narration: `<b>Example 9:</b> 25% of the 3220 people in a small town watched the tennis final. How many is that? Write $25\\% = \\dfrac{25}{100} = \\dfrac{1}{4}$, then multiply by 3220. $\\dfrac{1}{4} \\times 3220 = \\mathbf{805}$.`,
-      speech: `Example 9: 25 percent of the 3220 people in a small town watched the tennis final. How many is that? Write 25 percent as 25 over 100, which simplifies to 1 quarter, then multiply by 3220. 1 quarter times 3220 equals 805.`,
+      narration: `<b>Example 9:</b> 25% of the 3220 people in a small town watched the tennis final. How many is that? The bar below shows 3220 people — watch 25% of them (805) light up. Write $25\\% = \\dfrac{1}{4}$, then multiply by 3220.`,
+      speech: `Example 9: 25 percent of the 3220 people in a small town watched the tennis final. How many is that? Write 25 percent as 1 quarter, then multiply by 3220. 1 quarter times 3220 equals 805.`,
       audio: audio(1),
       board: [
-        { type: 'percentGrid', count: 25, color: PRP, label: '25% of the town' },
+        { type: 'percentOfBar', percent: 25, whole: 3220, color: PRP, label: '3220 people in town — 25% watched the tennis final' },
         { type: 'workingOut', align: 'center', lines: [
           { text: 'Number watching = 25% of 3220', delay: 0.5, color: '#374151' },
-          { math: `$$= \\dfrac{25}{100} \\times 3220$$`, delay: 0.9, color: PRP },
-          { math: `$$= \\dfrac{1}{4} \\times 3220$$`, delay: 1.4, color: PRP },
-          { math: `$$= \\mathbf{805}$$`, delay: 1.9, color: PRP, emphasis: true },
+          { math: `$$= \\dfrac{25}{100} \\times 3220 = \\dfrac{1}{4} \\times 3220$$`, delay: 0.9, color: PRP },
+          { math: `$$= \\mathbf{805}$$`, delay: 1.5, color: PRP, emphasis: true },
         ]},
       ],
     },
@@ -1993,26 +1992,24 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
       speech: `Example 10 a: Calculate 20 percent of 415. 20 percent equals 1 fifth. So 1 fifth times 415 equals 83.`,
       audio: audio(2),
       board: [
-        { type: 'percentGrid', count: 20, color: AMB, label: '20% shaded' },
+        { type: 'percentOfBar', percent: 20, whole: 415, color: AMB, label: '415 total — 20% of it is 83' },
         { type: 'workingOut', align: 'center', lines: [
-          { math: `$$20\\% \\text{ of } 415 = \\dfrac{20}{100} \\times \\dfrac{415}{1}$$`, delay: 0.6, color: AMB },
-          { math: `$$= \\dfrac{1}{5} \\times \\dfrac{415}{1}$$`, delay: 1.2, color: AMB },
-          { math: `$$= \\mathbf{83}$$`, delay: 1.7, color: AMB, emphasis: true },
+          { math: `$$20\\% \\text{ of } 415 = \\dfrac{20}{100} \\times 415 = \\dfrac{1}{5} \\times 415$$`, delay: 0.6, color: AMB },
+          { math: `$$= \\mathbf{83}$$`, delay: 1.3, color: AMB, emphasis: true },
         ]},
       ],
     },
 
     // ── Step 3 — Example 10b: 63% of 200 ────────────────────────────────────
     {
-      narration: `<b>Example 10b:</b> 63% of 200. This time 63 and 100 share a common factor with 200 — cancel the 100 with the 200 first. $\\dfrac{63}{100} \\times \\dfrac{200}{1} = 63 \\times 2 = \\mathbf{126}$.`,
+      narration: `<b>Example 10b:</b> 63% of 200. Cancel the 100 with the 200 first. $\\dfrac{63}{100} \\times \\dfrac{200}{1} = 63 \\times 2 = \\mathbf{126}$.`,
       speech: `Example 10 b: 63 percent of 200. Cancel the 100 with the 200 first. 63 over 100 times 200 over 1, cancel 100 and 200 to get 63 times 2, which equals 126.`,
       audio: audio(3),
       board: [
-        { type: 'percentGrid', count: 63, color: GRN, label: '63% shaded' },
+        { type: 'percentOfBar', percent: 63, whole: 200, color: GRN, label: '200 total — 63% of it is 126' },
         { type: 'workingOut', align: 'center', lines: [
-          { math: `$$63\\% \\text{ of } 200 = \\dfrac{63}{100} \\times \\dfrac{200}{1}$$`, delay: 0.6, color: GRN },
-          { math: `$$= \\dfrac{63}{\\cancel{100}} \\times \\dfrac{\\cancelto{2}{200}}{1}$$`, delay: 1.2, color: GRN },
-          { math: `$$= 63 \\times 2 = \\mathbf{126}$$`, delay: 1.8, color: GRN, emphasis: true },
+          { math: `$$63\\% \\text{ of } 200 = \\dfrac{63}{\\cancel{100}} \\times \\dfrac{\\cancelto{2}{200}}{1}$$`, delay: 0.6, color: GRN },
+          { math: `$$= 63 \\times 2 = \\mathbf{126}$$`, delay: 1.3, color: GRN, emphasis: true },
         ]},
       ],
     },

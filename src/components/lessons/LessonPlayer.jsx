@@ -1191,6 +1191,64 @@ const PercentGridRow = ({ grids = [], cellSize = 17, gap = 2 }) => (
   </div>
 );
 
+// ── Percentage-of-Quantity Bar ────────────────────────────────────────────
+// Shows a proportional bar: the shaded portion = percent% of the whole.
+// Labels both the part value and whole value so students see the real numbers.
+const PercentOfBar = ({ percent = 25, whole = 100, color = '#7c3aed', label }) => {
+  const pct   = Math.min(150, Math.max(0, percent));
+  const part  = Math.round((pct / 100) * whole);
+  // For >100% we allow the bar to overflow; cap display width at 100% visually
+  const fillW = Math.min(100, pct);
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 18, fontFamily: FONT, width: '100%', maxWidth: 480, margin: '0 auto' }}>
+      {label && (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
+          style={{ textAlign: 'center', fontSize: '0.95rem', fontWeight: 700, color: '#374151' }}>
+          {label}
+        </motion.div>
+      )}
+      {/* Whole bar */}
+      <div style={{ position: 'relative', height: 52, background: '#ede9fe', borderRadius: 10, overflow: 'hidden' }}>
+        <motion.div
+          initial={{ width: '0%' }}
+          animate={{ width: `${fillW}%` }}
+          transition={{ delay: 0.5, duration: 0.9, ease: 'easeOut' }}
+          style={{ position: 'absolute', left: 0, top: 0, height: '100%', background: color, borderRadius: 10 }}
+        />
+        {/* Part label inside bar */}
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}
+          style={{ position: 'absolute', left: `${fillW / 2}%`, top: '50%', transform: 'translate(-50%,-50%)',
+            fontWeight: 800, fontSize: '1.05rem', color: '#fff', whiteSpace: 'nowrap', textShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>
+          {part.toLocaleString()}
+        </motion.div>
+        {/* Rest label */}
+        {pct < 95 && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.7 }}
+            style={{ position: 'absolute', left: `${fillW + (100 - fillW) / 2}%`, top: '50%',
+              transform: 'translate(-50%,-50%)', fontWeight: 700, fontSize: '0.85rem', color: '#a78bfa', whiteSpace: 'nowrap' }}>
+            {(whole - part).toLocaleString()}
+          </motion.div>
+        )}
+      </div>
+      {/* Axis labels */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.6 }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 2 }}>
+          <div style={{ width: 2, height: 8, background: color, margin: '0 0 2px 0' }} />
+          <span style={{ fontSize: '0.8rem', fontWeight: 800, color }}>{pct}%</span>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#6b7280' }}>{part.toLocaleString()}</span>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.7 }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 2 }}>
+          <div style={{ width: 2, height: 8, background: '#a78bfa', margin: '0 0 2px 0' }} />
+          <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#6d28d9' }}>100%</span>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#6b7280' }}>{whole.toLocaleString()}</span>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
 // ── Percentage Grid ────────────────────────────────────────────────────────
 // 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
 // top-to-bottom so students can literally watch "X out of 100" being coloured.
@@ -1269,6 +1327,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'stepCards') inner = <StepCards {...item} />;
   else if (item.type === 'partWholeBar') inner = <PartWholeBar {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
+  else if (item.type === 'percentOfBar') inner = <PercentOfBar {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
   else if (item.type === 'workingOut') inner = <WorkingOut {...item} />;
