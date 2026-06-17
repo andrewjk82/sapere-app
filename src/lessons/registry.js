@@ -2008,8 +2008,9 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
       board: [
         { type: 'percentOfBar', percent: 63, whole: 200, color: GRN, label: '200 total — 63% of it is 126' },
         { type: 'workingOut', align: 'center', lines: [
-          { math: `$$63\\% \\text{ of } 200 = \\dfrac{63}{\\cancel{100}} \\times \\dfrac{\\cancelto{2}{200}}{1}$$`, delay: 0.6, color: GRN },
-          { math: `$$= 63 \\times 2 = \\mathbf{126}$$`, delay: 1.3, color: GRN, emphasis: true },
+          { math: `$$63\\% \\text{ of } 200 = \\dfrac{63}{100} \\times 200$$`, delay: 0.6, color: GRN },
+          { math: `$$= \\dfrac{63 \\times 200}{100} = \\dfrac{12600}{100}$$`, delay: 1.1, color: GRN },
+          { math: `$$= \\mathbf{126}$$`, delay: 1.6, color: GRN, emphasis: true },
         ]},
       ],
     },
