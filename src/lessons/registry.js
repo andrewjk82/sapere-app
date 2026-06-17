@@ -1733,14 +1733,25 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 4 — Fraction → % via equivalent fractions ──────────────────────
     {
-      narration: `To turn a <b>fraction into a percentage</b>, scale it so the <b>denominator becomes 100</b>. $\\frac{2}{10}$: multiply top and bottom by 10 → $\\frac{20}{100}$. Watch 20 boxes fill in — that's the same amount as 2 out of 10 parts!`,
-      speech: `To turn a fraction into a percentage, scale it so the denominator becomes 100. Take 2 over 10: multiply top and bottom by 10 to get 20 over 100. Watch 20 boxes fill in. That is the same amount as 2 out of 10 parts.`,
+      narration: `To turn a <b>fraction into a percentage</b>, scale it so the <b>denominator becomes 100</b>. Watch each grid fill as we convert — $\\frac{2}{10}$ becomes 20 boxes, $\\frac{3}{5}$ becomes 60 boxes, $\\frac{3}{20}$ becomes 15 boxes.`,
+      speech: `To turn a fraction into a percentage, scale it so the denominator becomes 100. Watch each grid fill as we convert. Two-tenths becomes 20 boxes. Three-fifths becomes 60 boxes. And three-twentieths becomes 15 boxes.`,
       board: [
-        { type: 'percentGrid', count: 20, label: '2/10  =  20/100  =  20%  (same amount, different denominator)' },
-        { type: 'workingOut', align: 'center', lines: [
-          { math: `$$\\dfrac{2}{10}  = \\dfrac{2 \\times 10}{10 \\times 10}  = \\dfrac{20}{100}  = 20\\%$$`,  delay: 1.6 },
-          { math: `$$\\dfrac{3}{5}   = \\dfrac{3 \\times 20}{5 \\times 20}   = \\dfrac{60}{100}  = 60\\%$$`,  delay: 2.5 },
-          { math: `$$\\dfrac{3}{20}  = \\dfrac{3 \\times 5}{20 \\times 5}    = \\dfrac{15}{100}  = 15\\%$$`,  delay: 3.4 },
+        { type: 'percentGridRow', grids: [
+          {
+            count: 20, fillDelay: 0.85, color: '#7c3aed',
+            equation: `$$\\dfrac{2}{10} = \\dfrac{2{\\times}10}{10{\\times}10} = \\dfrac{20}{100} = 20\\%$$`,
+            note: '×10 both',
+          },
+          {
+            count: 60, fillDelay: 2.1, color: '#059669',
+            equation: `$$\\dfrac{3}{5} = \\dfrac{3{\\times}20}{5{\\times}20} = \\dfrac{60}{100} = 60\\%$$`,
+            note: '×20 both',
+          },
+          {
+            count: 15, fillDelay: 4.5, color: '#f59e0b',
+            equation: `$$\\dfrac{3}{20} = \\dfrac{3{\\times}5}{20{\\times}5} = \\dfrac{15}{100} = 15\\%$$`,
+            note: '×5 both',
+          },
         ]},
       ],
     },

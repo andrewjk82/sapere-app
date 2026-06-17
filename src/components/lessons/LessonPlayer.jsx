@@ -731,6 +731,61 @@ const WorkingOut = ({ lines = [], align = 'left' }) => (
   </div>
 );
 
+// ── Percentage Grid Row ────────────────────────────────────────────────────
+// Shows multiple 10×10 grids side-by-side. Each grid fills sequentially
+// (controlled by `fillDelay`), and the equation under each appears only
+// after that grid's fill animation completes — so explanation and visual
+// are always in sync.
+const PercentGridRow = ({ grids = [], cellSize = 17, gap = 2 }) => (
+  <div style={{ display: 'flex', gap: 24, justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap', fontFamily: FONT }}>
+    {grids.map((g, gi) => {
+      const shaded = Math.round(Math.min(100, Math.max(0, g.count)));
+      const color   = g.color || '#7c3aed';
+      const fd      = g.fillDelay ?? (gi * 2.2 + 0.85);
+      const eqDelay = fd + shaded * 0.02 + 0.35;
+      return (
+        <div key={gi} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+          {/* 10 × 10 grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: `repeat(10, ${cellSize}px)`, gap: `${gap}px` }}>
+            {Array.from({ length: 100 }, (_, i) => {
+              const filled = i < shaded;
+              const row    = Math.floor(i / 10);
+              return (
+                <motion.div key={i}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1, background: filled ? color : '#ede9fe' }}
+                  transition={{
+                    opacity:    { delay: 0.08 + row * 0.06, duration: 0.14 },
+                    scale:      { delay: 0.08 + row * 0.06, duration: 0.14, type: 'spring', stiffness: 420 },
+                    background: { delay: filled ? fd + i * 0.02 : 0, duration: 0.14 },
+                  }}
+                  style={{ width: cellSize, height: cellSize, borderRadius: 2 }}
+                />
+              );
+            })}
+          </div>
+          {/* Equation — appears after grid fill finishes */}
+          {g.equation && (
+            <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: eqDelay, duration: 0.35, ease: 'easeOut' }}
+              style={{ textAlign: 'center' }}>
+              <MathView content={g.equation} style={{ fontSize: '0.95rem', fontWeight: 700, color }} />
+            </motion.div>
+          )}
+          {/* Optional note chip below equation */}
+          {g.note && (
+            <motion.span initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: eqDelay + 0.2, type: 'spring', stiffness: 300, damping: 22 }}
+              style={{ fontSize: '0.75rem', fontWeight: 800, color: '#b45309', background: 'rgba(245,158,11,0.12)', padding: '3px 10px', borderRadius: 7, border: '1.5px solid #fcd34d' }}>
+              {g.note}
+            </motion.span>
+          )}
+        </div>
+      );
+    })}
+  </div>
+);
+
 // ── Percentage Grid ────────────────────────────────────────────────────────
 // 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
 // top-to-bottom so students can literally watch "X out of 100" being coloured.
@@ -805,6 +860,7 @@ const BoardItem = ({ item }) => {
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
+  else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'workingOut') inner = <WorkingOut {...item} />;
   else if (item.type === 'clock') inner = (
     <div style={{ textAlign: 'center' }}>
