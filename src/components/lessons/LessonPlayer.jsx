@@ -513,14 +513,30 @@ const PercentTableInteractive = ({ pairs = [], defaultIndex = 0, cellSize = 24, 
   const color = pairColor || '#7c3aed';
   const shaded = Math.round(Math.min(100, Math.max(0, count ?? 0)));
 
+  const [hinted, setHinted] = useState(false);
+
   const handleSelect = (idx) => {
+    if (!hinted) setHinted(true);
     if (idx === sel) return;
     setSel(idx);
     setGridKey(k => k + 1);
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18, fontFamily: FONT }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, fontFamily: FONT }}>
+      {/* Tap-hint banner — bounces until the student taps once */}
+      <AnimatePresence>
+        {!hinted && (
+          <motion.div
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: [0, -5, 0, -5, 0] }}
+            exit={{ opacity: 0, scale: 0.85 }}
+            transition={{ duration: 1.2, repeat: Infinity, repeatDelay: 1.6, ease: 'easeInOut' }}
+            style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'linear-gradient(90deg,#f5f3ff,#ede9fe)', border: '1.5px solid #a78bfa', borderRadius: 12, padding: '7px 16px', fontSize: '0.88rem', fontWeight: 700, color: '#6d28d9', userSelect: 'none', pointerEvents: 'none' }}>
+            <span style={{ fontSize: '1.1rem' }}>👆</span> Tap any fraction in the table above to see it on the grid!
+          </motion.div>
+        )}
+      </AnimatePresence>
       {/* Table */}
       <div style={{ overflowX: 'auto', maxWidth: '100%' }}>
         <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: 14, overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
