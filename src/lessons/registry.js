@@ -1698,22 +1698,17 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       ],
     },
 
-    // ── Step 2 — Percentage → fraction ──────────────────────────────────────
+    // ── Step 3 — Percentage → fraction ──────────────────────────────────────
     {
       narration: `To convert a <b>percentage to a fraction</b>: write it over 100, then simplify. For $65\\%$: write $\\frac{65}{100}$, then divide top and bottom by 5 to get $\\frac{13}{20}$. Watch 65 boxes fill in — that's 65 out of 100.`,
       speech: `To convert a percentage to a fraction, write it over 100 then simplify. For 65 percent: write 65 over 100, then divide top and bottom by 5 to get 13 over 20. Watch 65 boxes fill in — that is 65 out of 100.`,
       board: [
         { type: 'percentGrid', count: 65, label: '65 out of 100  →  simplify  →  13/20' },
-        { type: 'mathRow', formulas: [
-          { content: `$$65\\%$$`,               highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:0.5 },
-          { content: `$$= \\frac{65}{100}$$`,   highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:1.0 },
-          { content: `$$\\div 5$$`,             highlightColor:'rgba(245,158,11,0.10)',  borderColor:AMB,  delay:1.5 },
-          { content: `$$= \\frac{13}{20}$$`,    highlightColor:'rgba(124,58,237,0.10)', borderColor:PRP,  delay:2.0 },
-        ]},
-        { type: 'mathRow', formulas: [
-          { content: `$$150\\%$$`,              highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:2.6 },
-          { content: `$$= \\frac{150}{100}$$`,  highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:3.1 },
-          { content: `$$= 1\\tfrac{1}{2}$$`,    highlightColor:'rgba(124,58,237,0.10)', borderColor:PRP,  delay:3.6 },
+        { type: 'workingOut', lines: [
+          { math: `$$65\\% = \\frac{65}{100}$$`,                      delay: 0.5 },
+          { math: `$$\\phantom{65\\%} = \\frac{13}{20}$$`,            delay: 1.2, note: '÷ 5 top & bottom' },
+          { math: `$$150\\% = \\frac{150}{100}$$`,                    delay: 2.2 },
+          { math: `$$\\phantom{150\\%} = 1\\tfrac{1}{2}$$`,           delay: 2.9, note: '÷ 100' },
         ]},
       ],
     },
@@ -1730,10 +1725,10 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
             { n: 1.5,   label: '150% = 1.5',    color: RED, delay: 1.4,  pulse: true, labelPos: 'below' },
           ],
         },
-        { type: 'mathRow', formulas: [
-          { content: `$$65\\% = \\frac{65}{100} = 0.65$$`,     highlightColor:'rgba(5,150,105,0.08)',  borderColor:GRN, delay:0.5 },
-          { content: `$$37.5\\% = \\frac{37.5}{100} = 0.375$$`,highlightColor:'rgba(245,158,11,0.08)', borderColor:AMB, delay:1.1 },
-          { content: `$$150\\% = \\frac{150}{100} = 1.5$$`,    highlightColor:'rgba(239,68,68,0.08)',  borderColor:RED, delay:1.7 },
+        { type: 'workingOut', align: 'left', lines: [
+          { math: `$$65\\%   = \\frac{65}{100}   = 0.65$$`,   delay: 0.5,  result: '65 ÷ 100' },
+          { math: `$$37.5\\% = \\frac{37.5}{100} = 0.375$$`,  delay: 1.2,  result: '37.5 ÷ 100' },
+          { math: `$$150\\%  = \\frac{150}{100}  = 1.5$$`,    delay: 1.9,  result: '150 ÷ 100' },
         ]},
       ],
     },
@@ -1744,10 +1739,10 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       speech: `To turn a fraction into a percentage, scale it so the denominator becomes 100. Take 2 over 10: multiply top and bottom by 10 to get 20 over 100. Watch 20 boxes fill in. That is the same amount as 2 out of 10 parts.`,
       board: [
         { type: 'percentGrid', count: 20, label: '2/10  =  20/100  =  20%  (same amount, different denominator)' },
-        { type: 'mathRow', formulas: [
-          { content:`$$\\frac{2}{10} \\xrightarrow{\\times 10} \\frac{20}{100} = 20\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:1.6 },
-          { content:`$$\\frac{3}{5}  \\xrightarrow{\\times 20} \\frac{60}{100} = 60\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.2 },
-          { content:`$$\\frac{3}{20} \\xrightarrow{\\times 5}  \\frac{15}{100} = 15\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.8 },
+        { type: 'workingOut', lines: [
+          { math: `$$\\frac{2}{10}  = \\frac{20}{100}  = 20\\%$$`,  delay: 1.6, note: '× 10' },
+          { math: `$$\\frac{3}{5}   = \\frac{60}{100}  = 60\\%$$`,  delay: 2.3, note: '× 20' },
+          { math: `$$\\frac{3}{20}  = \\frac{15}{100}  = 15\\%$$`,  delay: 3.0, note: '× 5'  },
         ]},
       ],
     },
@@ -1758,11 +1753,11 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       speech: `A quicker method: multiply by 100 percent. Since 100 percent equals 1, this never changes the value. For 2 over 5: multiply by 100 percent to get 40 percent. For a decimal like 0.6: multiply by 100 percent to get 60 percent. The cards below reveal one at a time.`,
       board: [
         { type: 'math', content: `$$\\text{fraction or decimal} \\;\\times\\; 100\\% = \\text{percentage}$$`, emphasis: true },
-        { type: 'mathRow', formulas: [
-          { content:`$$\\frac{2}{5} \\times 100\\% = 40\\%$$`,          highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:0.5 },
-          { content:`$$\\frac{1}{3} \\times 100\\% = 33\\tfrac{1}{3}\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:1.1 },
-          { content:`$$0.6 \\times 100\\% = 60\\%$$`,                   highlightColor:'rgba(5,150,105,0.08)', borderColor:GRN, delay:1.7 },
-          { content:`$$3.2 \\times 100\\% = 320\\%$$`,                  highlightColor:'rgba(239,68,68,0.08)', borderColor:RED, delay:2.3 },
+        { type: 'workingOut', lines: [
+          { math: `$$\\tfrac{2}{5} \\times 100\\% = 40\\%$$`,              delay: 0.5 },
+          { math: `$$\\tfrac{1}{3} \\times 100\\% = 33\\tfrac{1}{3}\\%$$`, delay: 1.1 },
+          { math: `$$0.6 \\times 100\\% = 60\\%$$`,                        delay: 1.7 },
+          { math: `$$3.2 \\times 100\\% = 320\\%$$`,                       delay: 2.3 },
         ]},
       ],
     },

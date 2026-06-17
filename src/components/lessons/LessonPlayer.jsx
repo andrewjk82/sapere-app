@@ -692,6 +692,42 @@ const NumberLineBoard = ({
   );
 };
 
+// ── Working-out steps ─────────────────────────────────────────────────────
+// Renders a maths "working out" — lines of equations that appear one by one,
+// each optionally annotated with a small side-note (e.g. "÷5 both sides").
+// `align: 'left' | 'center'` (default 'left') controls equation alignment.
+const WorkingOut = ({ lines = [], align = 'left' }) => (
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, alignItems: align === 'center' ? 'center' : 'flex-start', padding: '8px 20px', fontFamily: FONT }}>
+    {lines.map((line, i) => (
+      <motion.div key={i}
+        initial={{ opacity: 0, x: align === 'center' ? 0 : -14 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: line.delay ?? i * 0.65, duration: 0.35, ease: 'easeOut' }}
+        style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        {line.math && <MathView content={line.math} style={{ fontSize: '1.35rem', fontWeight: 600, color: '#1e1b4b' }} />}
+        {line.note && (
+          <motion.span
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: (line.delay ?? i * 0.65) + 0.28, type: 'spring', stiffness: 320, damping: 22 }}
+            style={{ fontSize: '0.8rem', fontWeight: 800, color: '#b45309', background: 'rgba(245,158,11,0.12)', padding: '4px 11px', borderRadius: 8, border: '1.5px solid #fcd34d', whiteSpace: 'nowrap' }}>
+            {line.note}
+          </motion.span>
+        )}
+        {line.result && (
+          <motion.span
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: (line.delay ?? i * 0.65) + 0.28, type: 'spring', stiffness: 320, damping: 22 }}
+            style={{ fontSize: '0.8rem', fontWeight: 800, color: '#059669', background: 'rgba(5,150,105,0.10)', padding: '4px 11px', borderRadius: 8, border: '1.5px solid #6ee7b7', whiteSpace: 'nowrap' }}>
+            {line.result}
+          </motion.span>
+        )}
+      </motion.div>
+    ))}
+  </div>
+);
+
 // ── Percentage Grid ────────────────────────────────────────────────────────
 // 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
 // top-to-bottom so students can literally watch "X out of 100" being coloured.
@@ -766,6 +802,7 @@ const BoardItem = ({ item }) => {
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
+  else if (item.type === 'workingOut') inner = <WorkingOut {...item} />;
   else if (item.type === 'clock') inner = (
     <div style={{ textAlign: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', flexWrap: 'wrap' }}>
