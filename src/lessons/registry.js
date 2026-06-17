@@ -1672,6 +1672,225 @@ export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
   return { topicId: null, emoji: '🕒', title: 'Exact minutes, am/pm & 24-hour time', steps, glossary: { ...BASE_GLOSSARY, ...CLOCK_GLOSSARY } };
 };
 
+// ── Year 7 · 14A · Percentages, Fractions and Decimals ──────────────────────
+const buildPercentagesLesson = ({ audioBase = null } = {}) => {
+  const PRP = '#7c3aed', LPRP = '#c4b5fd', GRN = '#059669', RED = '#ef4444', AMB = '#f59e0b';
+
+  // Animated horizontal percentage bar. `pct` = the shaded percentage (0–100).
+  // Tick marks appear every 10 units; the shaded region animates in after.
+  const pctBar = (pct, { extraTexts = [], extraLines = [], extraPolygons = [] } = {}) => ({
+    type: 'graph', showAxes: false,
+    xMin: -5, xMax: 105, yMin: -0.9, yMax: 1.8,
+    width: 460, height: 95,
+    polygons: [
+      // Background bar (unshaded)
+      { vertices: [[0,0],[100,0],[100,1],[0,1]], color: 'rgba(237,233,254,0.55)', stroke: LPRP, strokeWidth: 2, delay: 0 },
+      // Shaded region — animates in with a slight delay
+      ...(pct > 0 ? [{ vertices: [[0,0],[pct,0],[pct,1],[0,1]], color: 'rgba(124,58,237,0.72)', stroke: PRP, strokeWidth: 1.5, delay: 0.55 }] : []),
+      ...extraPolygons,
+    ],
+    lines: [
+      // Tick marks every 10%
+      ...[10,20,30,40,50,60,70,80,90].map((x, i) => ({ from:[x,-0.1], to:[x,0], color:'#94a3b8', width:1.5, delay:0.3 + i*0.03 })),
+      ...extraLines,
+    ],
+    texts: [
+      { x:0,   y:-0.55, text:'0%',    color:'#94a3b8', size:10, delay:0.32 },
+      { x:50,  y:-0.55, text:'50%',   color:'#94a3b8', size:10, delay:0.36 },
+      { x:100, y:-0.55, text:'100%',  color:'#94a3b8', size:10, delay:0.40 },
+      // Label inside the shaded region (only if wide enough)
+      ...(pct >= 8 ? [{ x: pct/2, y: 0.5, text: `${pct}%`, color:'#fff', size:12, delay:0.85 }] : []),
+      ...extraTexts,
+    ],
+  });
+
+  const steps = [
+    // ── Step 1 — What is a percentage? ──────────────────────────────────────
+    {
+      narration: `The word <b>percent</b> means <i>"out of a hundred"</i>. Picture a row of 100 boxes — shade in <b>50</b> and you have <b>50%</b>. The shaded half is exactly $\\frac{1}{2}$. Shade in 3 boxes and you have just <b>3%</b>.`,
+      speech: `The word percent means "out of a hundred". Picture a row of 100 boxes. Shade in 50 and you have 50 percent. The shaded half is exactly one-half. Shade in only 3 boxes and you have just 3 percent.`,
+      board: [
+        pctBar(50),
+        { type: 'math', content: `$$50\\% = \\frac{50}{100} = \\frac{1}{2} \\qquad\\qquad 3\\% = \\frac{3}{100}$$`, emphasis: true },
+        { type: 'math', content: `$$\\text{A percentage is a fraction whose denominator is 100.}$$` },
+      ],
+    },
+
+    // ── Step 2 — Percentage → fraction ──────────────────────────────────────
+    {
+      narration: `To convert a <b>percentage to a fraction</b>: write it over 100, then simplify. For $65\\%$: write $\\frac{65}{100}$, then divide top and bottom by 5 to get $\\frac{13}{20}$. Watch the bar — 65 out of 100 is shaded.`,
+      speech: `To convert a percentage to a fraction, write it over 100 then simplify. For 65 percent: write 65 over 100, then divide top and bottom by 5 to get 13 over 20. Watch the bar — 65 out of 100 is shaded.`,
+      board: [
+        pctBar(65),
+        { type: 'mathRow', formulas: [
+          { content: `$$65\\%$$`,               highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:0.5 },
+          { content: `$$= \\frac{65}{100}$$`,   highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:1.0 },
+          { content: `$$\\div 5$$`,             highlightColor:'rgba(245,158,11,0.10)',  borderColor:AMB,  delay:1.5 },
+          { content: `$$= \\frac{13}{20}$$`,    highlightColor:'rgba(124,58,237,0.10)', borderColor:PRP,  delay:2.0 },
+        ]},
+        { type: 'mathRow', formulas: [
+          { content: `$$150\\%$$`,              highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:2.6 },
+          { content: `$$= \\frac{150}{100}$$`,  highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:3.1 },
+          { content: `$$= 1\\tfrac{1}{2}$$`,    highlightColor:'rgba(124,58,237,0.10)', borderColor:PRP,  delay:3.6 },
+        ]},
+      ],
+    },
+
+    // ── Step 3 — Percentage → decimal ───────────────────────────────────────
+    {
+      narration: `To convert a <b>percentage to a decimal</b>: just <b>divide by 100</b>. So $65\\% = 0.65$, $37.5\\% = 0.375$, and $150\\% = 1.5$. Notice that $150\\%$ lands <i>past</i> 1 on the number line — percentages can be greater than 100!`,
+      speech: `To convert a percentage to a decimal, just divide by 100. So 65 percent equals 0.65, 37.5 percent equals 0.375, and 150 percent equals 1.5. Notice that 150 percent lands past 1 on the number line. Percentages can be greater than 100.`,
+      board: [
+        { type: 'numberLine', min: 0, max: 2,
+          marks: [
+            { n: 0.375, label: '37.5% = 0.375', color: AMB, delay: 0.5,  pulse: true, labelPos: 'below' },
+            { n: 0.65,  label: '65% = 0.65',    color: GRN, delay: 0.95, pulse: true },
+            { n: 1.5,   label: '150% = 1.5',    color: RED, delay: 1.4,  pulse: true, labelPos: 'below' },
+          ],
+        },
+        { type: 'mathRow', formulas: [
+          { content: `$$65\\% = \\frac{65}{100} = 0.65$$`,     highlightColor:'rgba(5,150,105,0.08)',  borderColor:GRN, delay:0.5 },
+          { content: `$$37.5\\% = \\frac{37.5}{100} = 0.375$$`,highlightColor:'rgba(245,158,11,0.08)', borderColor:AMB, delay:1.1 },
+          { content: `$$150\\% = \\frac{150}{100} = 1.5$$`,    highlightColor:'rgba(239,68,68,0.08)',  borderColor:RED, delay:1.7 },
+        ]},
+      ],
+    },
+
+    // ── Step 4 — Fraction → % via equivalent fractions ──────────────────────
+    {
+      narration: `To go from a <b>fraction to a percentage</b>, scale the fraction so the <b>denominator becomes 100</b>. The two bars below shade the same amount — but one is split into 10 parts, the other into 100. They look the same because $\\frac{2}{10} = \\frac{20}{100}$.`,
+      speech: `To go from a fraction to a percentage, scale it so the denominator becomes 100. The two bars shade the same amount: one split into 10 parts, the other into 100. They look the same because 2 over 10 equals 20 over 100.`,
+      board: [
+        {
+          type: 'graph', showAxes: false,
+          xMin: -5, xMax: 105, yMin: -0.4, yMax: 3.2,
+          width: 460, height: 175,
+          polygons: [
+            // Top bar — tenths outline
+            { vertices:[[0,1.9],[100,1.9],[100,2.7],[0,2.7]], color:'rgba(237,233,254,0.55)', stroke:LPRP, strokeWidth:2, delay:0 },
+            // Top bar — 2/10 shaded (= 20%)
+            { vertices:[[0,1.9],[20,1.9],[20,2.7],[0,2.7]], color:'rgba(124,58,237,0.72)', delay:0.55 },
+            // Bottom bar — hundredths outline
+            { vertices:[[0,0.4],[100,0.4],[100,1.2],[0,1.2]], color:'rgba(237,233,254,0.55)', stroke:LPRP, strokeWidth:2, delay:0.9 },
+            // Bottom bar — 20/100 shaded (= 20%)
+            { vertices:[[0,0.4],[20,0.4],[20,1.2],[0,1.2]], color:'rgba(124,58,237,0.72)', delay:1.35 },
+          ],
+          lines: [
+            // 10 dividers on top bar
+            ...[10,20,30,40,50,60,70,80,90].map((x,i) => ({ from:[x,1.9], to:[x,2.7], color:'#c4b5fd', width:1.5, delay:0.3+i*0.04 })),
+            // 10 dividers on bottom bar (same visual, but represents hundredths)
+            ...[10,20,30,40,50,60,70,80,90].map((x,i) => ({ from:[x,0.4], to:[x,1.2], color:'#c4b5fd', width:1.0, delay:1.1+i*0.04 })),
+          ],
+          texts: [
+            { x:50, y:3.0,  text:'÷ 10   →   tenths bar    (2 of 10 parts)',   color:'#64748b', size:10, delay:0.2 },
+            { x:50, y:1.55, text:'÷ 100  →   hundredths bar (20 of 100 parts)', color:'#64748b', size:10, delay:1.0 },
+            { x:10, y:2.3,  text:'2/10',  color:'#fff', size:10, delay:0.75 },
+            { x:10, y:0.8,  text:'20/100',color:'#fff', size:9,  delay:1.55 },
+            { x:10, y:-0.1, text:'= 20%', color:PRP, size:12, delay:1.8 },
+          ],
+        },
+        { type: 'mathRow', formulas: [
+          { content:`$$\\frac{2}{10} = \\frac{20}{100} = 20\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.0 },
+          { content:`$$\\frac{3}{5}  = \\frac{60}{100} = 60\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.5 },
+          { content:`$$\\frac{3}{20} = \\frac{15}{100} = 15\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:3.0 },
+        ]},
+      ],
+    },
+
+    // ── Step 5 — Fraction/decimal → % via ×100% ─────────────────────────────
+    {
+      narration: `A quicker method: <b>multiply by 100%</b>. Since $100\\% = 1$, this never changes the value. For $\\frac{2}{5}$: $\\frac{2}{5} \\times 100\\% = 40\\%$. For a decimal like $0.6$: $0.6 \\times 100\\% = 60\\%$. The cards below reveal one at a time.`,
+      speech: `A quicker method: multiply by 100 percent. Since 100 percent equals 1, this never changes the value. For 2 over 5: multiply by 100 percent to get 40 percent. For a decimal like 0.6: multiply by 100 percent to get 60 percent. The cards below reveal one at a time.`,
+      board: [
+        { type: 'math', content: `$$\\text{fraction or decimal} \\;\\times\\; 100\\% = \\text{percentage}$$`, emphasis: true },
+        { type: 'mathRow', formulas: [
+          { content:`$$\\frac{2}{5} \\times 100\\% = 40\\%$$`,          highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:0.5 },
+          { content:`$$\\frac{1}{3} \\times 100\\% = 33\\tfrac{1}{3}\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:1.1 },
+          { content:`$$0.6 \\times 100\\% = 60\\%$$`,                   highlightColor:'rgba(5,150,105,0.08)', borderColor:GRN, delay:1.7 },
+          { content:`$$3.2 \\times 100\\% = 320\\%$$`,                  highlightColor:'rgba(239,68,68,0.08)', borderColor:RED, delay:2.3 },
+        ]},
+      ],
+    },
+
+    // ── Step 6 — Key fraction–percentage pairs ───────────────────────────────
+    {
+      narration: `<b>Memorise</b> these 9 pairs — they come up constantly. The bar shows how $\\frac{1}{4}$, $\\frac{1}{2}$, and $\\frac{3}{4}$ split the 100-unit bar into neat quarters. Can you spot the pattern for fifths?`,
+      speech: `Memorise these 9 pairs. They come up constantly. The bar shows how one-quarter, one-half, and three-quarters split the 100-unit bar into neat quarters. Can you spot the pattern for fifths?`,
+      board: [
+        { type: 'valueTable', rows: [
+          ['Fraction', '\\frac{1}{2}','\\frac{1}{4}','\\frac{1}{3}','\\frac{3}{4}','\\frac{1}{5}','\\frac{1}{10}','\\frac{2}{5}','\\frac{3}{5}','\\frac{4}{5}'],
+          ['\\%',      '50\\%','25\\%','33\\tfrac{1}{3}\\%','75\\%','20\\%','10\\%','40\\%','60\\%','80\\%'],
+        ]},
+        // Bar with quarter markers highlighted
+        pctBar(75, {
+          extraPolygons: [
+            { vertices:[[0,0],[25,0],[25,1],[0,1]],  color:'rgba(245,158,11,0.45)', delay:1.0 },
+            { vertices:[[25,0],[50,0],[50,1],[25,1]], color:'rgba(245,158,11,0.30)', delay:1.2 },
+            { vertices:[[50,0],[75,0],[75,1],[50,1]], color:'rgba(245,158,11,0.20)', delay:1.4 },
+          ],
+          extraTexts: [
+            { x:12.5, y:0.5, text:'¼', color:'#fff', size:12, delay:1.1 },
+            { x:37.5, y:0.5, text:'½', color:'#fff', size:12, delay:1.3 },
+            { x:62.5, y:0.5, text:'¾', color:'#fff', size:12, delay:1.5 },
+          ],
+        }),
+      ],
+    },
+
+    // ── Step 7 — Summary ─────────────────────────────────────────────────────
+    {
+      narration: `<b>Summary</b>: the three forms — <b>%</b>, <b>fraction</b>, <b>decimal</b> — are always interchangeable. From a percentage: divide by 100 (→ decimal) or write over 100 and simplify (→ fraction). To reach a percentage: multiply by 100%.`,
+      speech: `Summary: the three forms — percent, fraction, and decimal — are always interchangeable. From a percentage, divide by 100 to get a decimal, or write over 100 and simplify to get a fraction. To reach a percentage, multiply by 100 percent.`,
+      board: [
+        // Conversion-triangle diagram
+        {
+          type:'graph', showAxes:false,
+          xMin:0, xMax:10, yMin:0, yMax:5,
+          width:460, height:210,
+          polygons:[
+            { vertices:[[3.8,3.4],[6.2,3.4],[6.2,4.6],[3.8,4.6]], color:'rgba(124,58,237,0.10)', stroke:PRP, strokeWidth:2.5, delay:0 },
+            { vertices:[[0.0,0.4],[3.2,0.4],[3.2,1.6],[0.0,1.6]], color:'rgba(5,150,105,0.10)',  stroke:GRN, strokeWidth:2,   delay:0.3 },
+            { vertices:[[6.8,0.4],[10.0,0.4],[10.0,1.6],[6.8,1.6]], color:'rgba(239,68,68,0.10)', stroke:RED, strokeWidth:2,   delay:0.3 },
+          ],
+          texts:[
+            { x:5,   y:4.0, text:'%',        color:PRP, size:20, delay:0.1 },
+            { x:1.6, y:1.0, text:'Fraction',  color:GRN, size:13, delay:0.45 },
+            { x:8.4, y:1.0, text:'Decimal',   color:RED, size:13, delay:0.45 },
+            { x:2.6, y:3.1, text:'÷100,',     color:GRN, size: 9, delay:0.75 },
+            { x:2.6, y:2.7, text:'simplify',  color:GRN, size: 9, delay:0.80 },
+            { x:7.4, y:2.9, text:'÷ 100',     color:RED, size:10, delay:1.05 },
+            { x:5,   y:0.1, text:'× 100%',    color:PRP, size:11, delay:1.35 },
+          ],
+          lines:[
+            // % → Fraction arrow
+            { from:[4.2,3.4], to:[2.6,1.6], color:GRN, width:2.5, arrow:true, delay:0.65 },
+            // % → Decimal arrow
+            { from:[5.8,3.4], to:[7.4,1.6], color:RED, width:2.5, arrow:true, delay:0.95 },
+            // Fraction → % and Decimal → % (both → %) via bottom arrow
+            { from:[3.2,1.0], to:[6.8,1.0], color:PRP, width:2.5, arrow:true, delay:1.25 },
+          ],
+        },
+        { type:'math', content:`$$\\frac{13}{20} \\;=\\; 0.65 \\;=\\; 65\\%$$`, emphasis:true },
+      ],
+    },
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  return {
+    emoji: '%',
+    title: 'Percentages, fractions and decimals',
+    steps,
+    glossary: {
+      ...BASE_GLOSSARY,
+      'percent': 'A number out of 100 — "per cent" means "per hundred". Written with the % symbol.',
+      'percentage': 'A fraction with denominator 100, written using the % symbol.',
+      'equivalent fraction': 'A fraction equal in value but written with a different numerator and denominator (e.g. 1/2 = 50/100).',
+      'denominator': 'The bottom number of a fraction — tells you how many equal parts the whole is split into.',
+      'simplify': 'Divide the top and bottom of a fraction by their common factor to write it in its lowest terms.',
+    },
+  };
+};
+
 // ── Registered lessons (topicId → spec) ────────────────────────────────────
 
 // Register one lesson spec under every topic of a clock stage so the
@@ -1692,6 +1911,9 @@ const CLOCK_LESSONS = {};
 export const LESSONS = {
   // Clock Reading (Basic Calculation clock stages 1–5).
   ...CLOCK_LESSONS,
+
+  // Year 7 · 14A · Percentages, fractions and decimals.
+  'y7-14a': { ...buildPercentagesLesson(), topicId: 'y7-14a' },
 
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
