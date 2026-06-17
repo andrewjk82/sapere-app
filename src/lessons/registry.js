@@ -1744,7 +1744,7 @@ export const buildOneQuantityAsPercentLesson = ({ audioBase = null } = {}) => {
       board: [
         { type: 'percentGridRow', grids: [
           { count: 70, fillDelay: 0.85, color: AMB,
-            equation: `$$\\dfrac{70\\text{c}}{100\\text{c}} = 70\\%$$`, note: '\\$1 = 100c' },
+            equation: `$$\\dfrac{70\\text{c}}{100\\text{c}} = 70\\%$$`, note: '$1 = 100c' },
           { count: 35, fillDelay: 2.4,  color: GRN,
             equation: `$$\\dfrac{350}{1000} = 35\\%$$`, note: '1 km = 1000 m' },
           { count: 17, fillDelay: 3.8,  color: BLU,

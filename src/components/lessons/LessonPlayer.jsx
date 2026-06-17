@@ -1181,7 +1181,7 @@ const PercentGridRow = ({ grids = [], cellSize = 17, gap = 2 }) => (
           {g.note && (
             <motion.span initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: eqDelay + 0.2, type: 'spring', stiffness: 300, damping: 22 }}
-              style={{ fontSize: '0.75rem', fontWeight: 800, color: '#b45309', background: 'rgba(245,158,11,0.12)', padding: '3px 10px', borderRadius: 7, border: '1.5px solid #fcd34d' }}>
+              style={{ fontSize: '0.75rem', fontWeight: 800, color, background: 'rgba(245,158,11,0.08)', padding: '3px 10px', borderRadius: 7, border: `1.5px solid ${color}` }}>
               {g.note}
             </motion.span>
           )}
