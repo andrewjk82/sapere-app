@@ -1946,6 +1946,121 @@ const CLOCK_LESSONS = {};
  'clock-5-s1', 'clock-5-s2', 'clock-5-s3', 'clock-5-s4', 'clock-5-s5', 'clock-5-s6']
   .forEach((id) => { CLOCK_LESSONS[id] = { ...clockPrecise, topicId: id }; });
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Year 7 · Chapter 14C · Percentage of a Quantity
+// Textbook: Example 9 (25% of 3220 = 805), Example 10 (a–d)
+// ─────────────────────────────────────────────────────────────────────────────
+export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
+  const PRP = '#7c3aed', GRN = '#059669', AMB = '#f59e0b', BLU = '#0ea5e9', RED = '#ef4444';
+
+  const audio = (i) => audioBase ? `${audioBase}/step-${i}.mp3` : null;
+
+  const steps = [
+
+    // ── Step 0 — Big idea ────────────────────────────────────────────────────
+    {
+      narration: `In Chapter 5 we found <b>fractions of a quantity</b>. Here we do the same with <b>percentages</b>. The key rule: $X\\%$ of $Y = \\dfrac{X}{100} \\times Y$. Because percent literally means "per hundred", we swap the $\\%$ sign for $\\div 100$ and multiply.`,
+      speech: `In Chapter 5 we found fractions of a quantity. Here we do the same with percentages. The key rule: X percent of Y equals X over 100, times Y. Because percent literally means per hundred, we swap the percent sign for divide by 100 and multiply.`,
+      audio: audio(0),
+      board: [
+        { type: 'percentGrid', count: 25, color: PRP, label: '25 out of 100 shaded = 25%' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$25\\% \\text{ of } Y = \\dfrac{25}{100} \\times Y = \\dfrac{1}{4} \\times Y$$`, delay: 0.5, color: PRP },
+          { text: 'Convert the % to a fraction, then multiply by the whole.', delay: 1.2, color: '#374151' },
+        ]},
+      ],
+    },
+
+    // ── Step 1 — Example 9: 25% of 3220 ─────────────────────────────────────
+    {
+      narration: `<b>Example 9:</b> 25% of the 3220 people in a small town watched the tennis final. How many is that? Write $25\\% = \\dfrac{25}{100} = \\dfrac{1}{4}$, then multiply by 3220. $\\dfrac{1}{4} \\times 3220 = \\mathbf{805}$.`,
+      speech: `Example 9: 25 percent of the 3220 people in a small town watched the tennis final. How many is that? Write 25 percent as 25 over 100, which simplifies to 1 quarter, then multiply by 3220. 1 quarter times 3220 equals 805.`,
+      audio: audio(1),
+      board: [
+        { type: 'percentGrid', count: 25, color: PRP, label: '25% of the town' },
+        { type: 'workingOut', align: 'center', lines: [
+          { text: 'Number watching = 25% of 3220', delay: 0.5, color: '#374151' },
+          { math: `$$= \\dfrac{25}{100} \\times 3220$$`, delay: 0.9, color: PRP },
+          { math: `$$= \\dfrac{1}{4} \\times 3220$$`, delay: 1.4, color: PRP },
+          { math: `$$= \\mathbf{805}$$`, delay: 1.9, color: PRP, emphasis: true },
+        ]},
+      ],
+    },
+
+    // ── Step 2 — Example 10a: 20% of 415 ────────────────────────────────────
+    {
+      narration: `<b>Example 10a:</b> Calculate 20% of 415. $20\\% = \\dfrac{20}{100} = \\dfrac{1}{5}$. So $\\dfrac{1}{5} \\times 415 = \\mathbf{83}$.`,
+      speech: `Example 10 a: Calculate 20 percent of 415. 20 percent equals 1 fifth. So 1 fifth times 415 equals 83.`,
+      audio: audio(2),
+      board: [
+        { type: 'percentGrid', count: 20, color: AMB, label: '20% shaded' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$20\\% \\text{ of } 415 = \\dfrac{20}{100} \\times \\dfrac{415}{1}$$`, delay: 0.6, color: AMB },
+          { math: `$$= \\dfrac{1}{5} \\times \\dfrac{415}{1}$$`, delay: 1.2, color: AMB },
+          { math: `$$= \\mathbf{83}$$`, delay: 1.7, color: AMB, emphasis: true },
+        ]},
+      ],
+    },
+
+    // ── Step 3 — Example 10b: 63% of 200 ────────────────────────────────────
+    {
+      narration: `<b>Example 10b:</b> 63% of 200. This time 63 and 100 share a common factor with 200 — cancel the 100 with the 200 first. $\\dfrac{63}{100} \\times \\dfrac{200}{1} = 63 \\times 2 = \\mathbf{126}$.`,
+      speech: `Example 10 b: 63 percent of 200. Cancel the 100 with the 200 first. 63 over 100 times 200 over 1, cancel 100 and 200 to get 63 times 2, which equals 126.`,
+      audio: audio(3),
+      board: [
+        { type: 'percentGrid', count: 63, color: GRN, label: '63% shaded' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$63\\% \\text{ of } 200 = \\dfrac{63}{100} \\times \\dfrac{200}{1}$$`, delay: 0.6, color: GRN },
+          { math: `$$= \\dfrac{63}{\\cancel{100}} \\times \\dfrac{\\cancelto{2}{200}}{1}$$`, delay: 1.2, color: GRN },
+          { math: `$$= 63 \\times 2 = \\mathbf{126}$$`, delay: 1.8, color: GRN, emphasis: true },
+        ]},
+      ],
+    },
+
+    // ── Step 4 — Example 10c & 10d: over 100% ───────────────────────────────
+    {
+      narration: `Percentages can be <b>greater than 100%</b>! <b>10c:</b> $150\\%$ of $600 = \\dfrac{150}{100} \\times 600 = \\dfrac{3}{2} \\times 600 = \\mathbf{900}$ — bigger than the original. <b>10d:</b> $200\\%$ of $5.2 = 2 \\times 5.2 = \\mathbf{10.4}$ — exactly double.`,
+      speech: `Percentages can be greater than 100 percent! Example 10 c: 150 percent of 600 equals 3 halves times 600, which equals 900 — bigger than the original. Example 10 d: 200 percent of 5.2 equals 2 times 5.2, which equals 10.4 — exactly double.`,
+      audio: audio(4),
+      board: [
+        { type: 'workingOut', align: 'left', lines: [
+          { text: 'c  150% of 600', delay: 0.3, color: BLU, bold: true },
+          { math: `$$= \\dfrac{150}{100} \\times 600 = \\dfrac{3}{2} \\times 600 = \\mathbf{900}$$`, delay: 0.7, color: BLU },
+          { text: '> 100% means the result is LARGER than the original.', delay: 1.3, color: '#6b7280' },
+        ]},
+        { type: 'workingOut', align: 'left', lines: [
+          { text: 'd  200% of 5.2', delay: 1.6, color: RED, bold: true },
+          { math: `$$= \\dfrac{200}{100} \\times 5.2 = 2 \\times 5.2 = \\mathbf{10.4}$$`, delay: 2.0, color: RED },
+          { text: '200% = double the amount.', delay: 2.5, color: '#6b7280' },
+        ]},
+      ],
+    },
+
+    // ── Step 5 — Summary recipe ──────────────────────────────────────────────
+    {
+      narration: `Here's the <b>3-step recipe</b> for every "percentage of a quantity" question. ① Write the percentage as a fraction over 100. ② Cancel any common factors. ③ Multiply by the quantity. Done — same method every time.`,
+      speech: `Here's the 3-step recipe for every percentage of a quantity question. Step 1: write the percentage as a fraction over 100. Step 2: cancel any common factors. Step 3: multiply by the quantity. Done — same method every time.`,
+      audio: audio(5),
+      board: [
+        { type: 'workingOut', align: 'center', lines: [
+          { text: '① Write % as a fraction over 100', delay: 0.4, color: PRP, bold: true },
+          { math: `$$X\\% = \\dfrac{X}{100}$$`, delay: 0.8, color: PRP },
+          { text: '② Cancel common factors if possible', delay: 1.3, color: GRN, bold: true },
+          { text: '③ Multiply by the quantity', delay: 1.8, color: AMB, bold: true },
+          { math: `$$\\dfrac{X}{100} \\times \\text{quantity} = \\text{answer}$$`, delay: 2.2, color: AMB },
+        ]},
+      ],
+    },
+
+  ];
+
+  return {
+    title: 'Percentage of a Quantity',
+    subject: 'maths',
+    steps,
+  };
+};
+
 export const LESSONS = {
   // Clock Reading (Basic Calculation clock stages 1–5).
   ...CLOCK_LESSONS,
@@ -1955,6 +2070,9 @@ export const LESSONS = {
 
   // Year 7 · 14B · One quantity as a percentage of another.
   'y7-14b': { ...buildOneQuantityAsPercentLesson({ audioBase: '/lessons/audio/y7-14b' }), topicId: 'y7-14b' },
+
+  // Year 7 · 14C · Percentage of a quantity.
+  'y7-14c': { ...buildPercentOfQuantityLesson({ audioBase: '/lessons/audio/y7-14c' }), topicId: 'y7-14c' },
 
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
