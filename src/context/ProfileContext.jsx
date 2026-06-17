@@ -1,7 +1,8 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAuth } from './AuthContext';
+import { recoverMissingXP } from '../services/xpRecoveryService';
 
 /**
  * Single shared realtime listener for the signed-in user's own
@@ -18,11 +19,21 @@ export const ProfileProvider = ({ children }) => {
   const { user } = useAuth();
   const [profile, setProfile] = useState(null);
   const [profileLoading, setProfileLoading] = useState(true);
+  const recoveryRanRef = useRef(false);
+
+  // Run XP recovery once per session after sign-in.
+  // Probes last 7 days by direct doc ID — no collection scans.
+  useEffect(() => {
+    if (!user?.uid || recoveryRanRef.current) return;
+    recoveryRanRef.current = true;
+    recoverMissingXP(user.uid).catch(() => {});
+  }, [user?.uid]);
 
   useEffect(() => {
     if (!user?.uid) {
       setProfile(null);
       setProfileLoading(false);
+      recoveryRanRef.current = false;
       return undefined;
     }
     setProfileLoading(true);
