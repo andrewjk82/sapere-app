@@ -830,6 +830,109 @@ const WorkingOut = ({ lines = [], align = 'left' }) => (
   </div>
 );
 
+// ── Percent Flow ──────────────────────────────────────────────────────────
+// Shows ONE concrete example flowing through the formula:
+//   [ people bar ] → part/whole → ×100% → result%
+// Each token appears in sync with the narration so the abstract formula
+// and the real numbers are always on screen together.
+const PercentFlow = ({ part, whole, color = '#7c3aed', label }) => {
+  const pct = Math.round((part / whole) * 100);
+  const PRP = '#7c3aed', GRN = '#059669', AMB = '#f59e0b';
+
+  // Dot grid: `whole` dots, first `part` coloured
+  const COLS = 10;
+  const dots = Array.from({ length: whole }, (_, i) => i < part);
+
+  const Token = ({ children, bg, border, delay: d, style: s = {} }) => (
+    <motion.div initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: d, type: 'spring', stiffness: 320, damping: 22 }}
+      style={{ background: bg, border: `2px solid ${border}`, borderRadius: 12, padding: '8px 16px', textAlign: 'center', ...s }}>
+      {children}
+    </motion.div>
+  );
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 20, fontFamily: FONT, padding: '0 8px' }}>
+
+      {/* ① People dot grid */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}
+          style={{ fontSize: '0.78rem', fontWeight: 700, color: '#6b7280' }}>
+          {label || `${whole} people total — ${part} go to squad`}
+        </motion.div>
+        <div style={{ display: 'grid', gridTemplateColumns: `repeat(${COLS}, 22px)`, gap: 4 }}>
+          {dots.map((filled, i) => (
+            <motion.div key={i}
+              initial={{ opacity: 0, scale: 0.4 }}
+              animate={{ opacity: 1, scale: 1, background: filled ? color : '#e2e8f0' }}
+              transition={{ delay: 0.15 + i * 0.02, type: 'spring', stiffness: 400, damping: 18 }}
+              style={{ width: 22, height: 22, borderRadius: '50%' }}
+            />
+          ))}
+        </div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 + whole * 0.02 + 0.1 }}
+          style={{ display: 'flex', gap: 16, fontSize: '0.75rem', fontWeight: 700 }}>
+          <span style={{ color }}> {part} shaded = part</span>
+          <span style={{ color: '#9ca3af' }}>◻ {whole - part} unshaded</span>
+        </motion.div>
+      </div>
+
+      {/* ② Formula flow: part/whole → ×100% → =pct% */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, flexWrap: 'wrap' }}>
+
+        {/* percentage = */}
+        <Token bg="#f5f3ff" border="#c4b5fd" delay={0.8}>
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>percentage</div>
+          <div style={{ fontSize: '1rem', fontWeight: 800, color: PRP }}>=</div>
+        </Token>
+
+        <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.05 }}
+          style={{ fontSize: '1.3rem', color: '#c4b5fd' }}>→</motion.span>
+
+        {/* part/whole fraction */}
+        <Token bg="#f5f3ff" border={color} delay={1.1}>
+          <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>part ÷ whole</div>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1.1 }}>
+            <span style={{ fontSize: '1.1rem', fontWeight: 900, color }}>{part}</span>
+            <div style={{ width: 28, height: 2, background: color, margin: '2px 0' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 900, color }}>{whole}</span>
+          </div>
+        </Token>
+
+        {/* ×100% */}
+        <Token bg="#f0fdf4" border={GRN} delay={1.55}>
+          <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>multiply</div>
+          <div style={{ fontSize: '1.05rem', fontWeight: 900, color: GRN }}>× 100%</div>
+        </Token>
+
+        <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.0 }}
+          style={{ fontSize: '1.3rem', color: '#86efac' }}>→</motion.span>
+
+        {/* result */}
+        <Token bg={`${color}10`} border={color} delay={2.05}
+          style={{ minWidth: 72, boxShadow: `0 4px 16px ${color}30` }}>
+          <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#9ca3af', marginBottom: 4 }}>answer</div>
+          <div style={{ fontSize: '1.6rem', fontWeight: 900, color }}>{pct}%</div>
+        </Token>
+      </div>
+
+      {/* ③ Result bar */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.3 }}
+          style={{ fontSize: '0.82rem', fontWeight: 700, color, whiteSpace: 'nowrap', width: 36 }}>{pct}%</motion.div>
+        <div style={{ flex: 1, height: 22, background: '#ede9fe', borderRadius: 6, overflow: 'hidden' }}>
+          <motion.div initial={{ width: 0 }} animate={{ width: `${pct}%` }}
+            transition={{ delay: 2.4, duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ height: '100%', background: `linear-gradient(90deg, ${color}99, ${color})`, borderRadius: 6 }} />
+        </div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }}
+          style={{ fontSize: '0.75rem', color: '#9ca3af' }}>out of 100</motion.div>
+      </div>
+
+    </div>
+  );
+};
+
 // ── Step Cards ────────────────────────────────────────────────────────────
 // Numbered flow cards (①→②→③) for recipe/process explanations.
 const StepCards = ({ cards = [] }) => (
@@ -1158,6 +1261,7 @@ const BoardItem = ({ item }) => {
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
   else if (item.type === 'conversionTriangle') inner = <ConversionTriangle />;
+  else if (item.type === 'percentFlow') inner = <PercentFlow {...item} />;
   else if (item.type === 'stepCards') inner = <StepCards {...item} />;
   else if (item.type === 'partWholeBar') inner = <PartWholeBar {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;

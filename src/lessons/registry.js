@@ -1680,15 +1680,11 @@ export const buildOneQuantityAsPercentLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 0 — The big idea ────────────────────────────────────────────────
     {
-      narration: `To express <b>one quantity as a percentage of another</b>, follow <b>3 steps</b>: write as a fraction, multiply by $100\\%$, then simplify. Watch the bar below scale from "35 out of 50" all the way to <b>70%</b>.`,
-      speech: `To express one quantity as a percentage of another, follow 3 steps: write as a fraction, multiply by 100 percent, then simplify. Watch the bar below scale from 35 out of 50, all the way to 70 percent.`,
+      narration: `To express <b>one quantity as a percentage of another</b>: write the first as a <b>fraction</b> of the second, then <b>multiply by 100%</b>. Watch how "35 out of 50 people" becomes $\\dfrac{35}{50} \\times 100\\% = 70\\%$ — step by step.`,
+      speech: `To express one quantity as a percentage of another: write the first as a fraction of the second, then multiply by 100 percent. Watch how 35 out of 50 people becomes 35 over 50, times 100 percent, which equals 70 percent.`,
       board: [
-        { type: 'stepCards', cards: [
-          { title: 'Write as a fraction',  math: `$$\\dfrac{\\text{part}}{\\text{whole}}$$`, color: PRP, delay: 0.1 },
-          { title: 'Multiply by 100%',     math: `$$\\times\\; 100\\%$$`,                    color: GRN, delay: 0.55 },
-          { title: 'Simplify',             math: `$$= \\text{percentage}$$`,                 color: AMB, delay: 1.0  },
-        ]},
-        { type: 'partWholeBar', part: 35, whole: 50, color: PRP, delay: 1.3 },
+        { type: 'percentFlow', part: 35, whole: 50, color: PRP,
+          label: '50 swimming club members — 35 go to squad training' },
       ],
     },
 
