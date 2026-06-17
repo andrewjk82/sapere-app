@@ -1206,7 +1206,7 @@ const PercentGrid = ({ count = 50, color = '#7c3aed', label, cellSize = 25, gap 
           const row = Math.floor(i / 10);
           return (
             <motion.div key={i}
-              initial={{ opacity: 0, scale: 0.5 }}
+              initial={{ opacity: 0, scale: 0.5, background: '#ede9fe' }}
               animate={{ opacity: 1, scale: 1, background: filled ? color : '#ede9fe' }}
               transition={{
                 opacity:    { delay: 0.08 + row * 0.07, duration: 0.16 },
