@@ -860,34 +860,48 @@ const ConversionTriangle = () => {
     { id: 'dec',  cx: dec.x,  cy: dec.y,  label: 'Decimal',  bg: 'linear-gradient(135deg,#f87171,#ef4444)', shadow: 'rgba(239,68,68,0.30)',  delay: 0.2 },
   ];
 
+  // Label pill helper — renders a rounded rect + centred text (no overlap with arrow)
+  const Pill = ({ x, y, text, color, delay }) => {
+    const pw = text.length * 7.4 + 20, ph = 22;
+    return (
+      <motion.g initial={{ opacity: 0, scale: 0.75 }} animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay, type: 'spring', stiffness: 300, damping: 22 }}
+        style={{ transformOrigin: `${x}px ${y}px` }}>
+        <rect x={x - pw/2} y={y - ph/2} width={pw} height={ph} rx={ph/2}
+          fill="#fff" stroke={color} strokeWidth="1.8" />
+        <text x={x} y={y + 4.5} textAnchor="middle"
+          fill={color} fontSize="11" fontWeight="800" fontFamily={FONT}>{text}</text>
+      </motion.g>
+    );
+  };
+
   const arrows = [
-    { path: edge(pct, frac),  color: '#059669', label: '÷ 100 & simplify', lx: 148, ly: 118, anchor: 'middle', delay: 0.55 },
-    { path: edge(pct, dec),   color: '#ef4444', label: '÷ 100',             lx: 374, ly: 118, anchor: 'middle', delay: 0.8  },
-    { path: edge(frac, dec),  color: '#7c3aed', label: '× 100%',            lx: W/2, ly: H - 14, anchor: 'middle', delay: 1.05 },
+    { path: edge(pct, frac),  color: '#059669', markerKey: 'grn', label: '÷ 100, simplify', lx: 126, ly: 130, delay: 0.55 },
+    { path: edge(pct, dec),   color: '#ef4444', markerKey: 'red', label: '÷ 100',            lx: 394, ly: 130, delay: 0.8  },
+    { path: edge(frac, dec),  color: '#7c3aed', markerKey: 'prp', label: '× 100%',           lx: W/2, ly: H + 2, delay: 1.05 },
   ];
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', fontFamily: FONT }}>
-      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ overflow: 'visible' }}>
+      <svg width={W} height={H + 20} viewBox={`0 0 ${W} ${H + 20}`} style={{ overflow: 'visible' }}>
         <defs>
-          {['grn','red','prp'].map((id, i) => (
-            <marker key={id} id={`arr-${id}`} markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-              <path d="M0,0 L0,6 L8,3 z" fill={['#059669','#ef4444','#7c3aed'][i]} />
+          {[['grn','#059669'],['red','#ef4444'],['prp','#7c3aed']].map(([id, fill]) => (
+            <marker key={id} id={`arr-${id}`} markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+              <path d="M0,0 L0,7 L9,3.5 z" fill={fill} />
             </marker>
           ))}
         </defs>
 
         {/* Arrows */}
         {arrows.map((a, i) => (
-          <motion.g key={i} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: a.delay, duration: 0.4 }}>
+          <motion.g key={i} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: a.delay, duration: 0.35 }}>
             <path d={a.path} fill="none" stroke={a.color} strokeWidth={2.8}
-              markerEnd={`url(#arr-${['grn','red','prp'][i]})`}
-              strokeLinecap="round" />
-            <text x={a.lx} y={a.ly} textAnchor={a.anchor}
-              fill={a.color} fontSize="11.5" fontWeight="700" fontFamily={FONT}>
-              {a.label}
-            </text>
+              markerEnd={`url(#arr-${a.markerKey})`} strokeLinecap="round" />
           </motion.g>
+        ))}
+        {/* Arrow labels as pills — rendered after arrows so they sit on top */}
+        {arrows.map((a, i) => (
+          <Pill key={`lbl-${i}`} x={a.lx} y={a.ly} text={a.label} color={a.color} delay={a.delay + 0.1} />
         ))}
 
         {/* Node boxes */}
