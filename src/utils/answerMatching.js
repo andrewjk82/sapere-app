@@ -41,6 +41,11 @@ export const robustNormalize = (str, isAlgebraic = false) => {
     // compare equal: collapse every form to "sqrt".
     .replace(/√/g, 'sqrt')
     .replace(/\\sqrt/g, 'sqrt')
+    // Strip braces from sqrt{...} BEFORE \frac expansion so that
+    // \frac{3sqrt{2}}{2} can be parsed by [^{}]* — without this,
+    // the inner {2} causes the \frac regex to bail and the answer
+    // ends up as "\frac3sqrt22" which never matches "3sqrt2/2".
+    .replace(/sqrt\{([^{}]*)\}/g, 'sqrt$1')
     // Normalise ratio colons so "1\Colon4", "1\colon4", "1\ratio4" match "1:4"
     .replace(/\\[Cc]olon/g, ':')
     // Strip any leftover "unit"/"units" word, even when concatenated to a
