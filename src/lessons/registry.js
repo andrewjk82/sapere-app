@@ -1704,11 +1704,9 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       speech: `To convert a percentage to a fraction, write it over 100 then simplify. For 65 percent: write 65 over 100, then divide top and bottom by 5 to get 13 over 20. Watch 65 boxes fill in — that is 65 out of 100.`,
       board: [
         { type: 'percentGrid', count: 65, label: '65 out of 100  →  simplify  →  13/20' },
-        { type: 'workingOut', lines: [
-          { math: `$$65\\% = \\frac{65}{100}$$`,                      delay: 0.5 },
-          { math: `$$\\phantom{65\\%} = \\frac{13}{20}$$`,            delay: 1.2, note: '÷ 5 top & bottom' },
-          { math: `$$150\\% = \\frac{150}{100}$$`,                    delay: 2.2 },
-          { math: `$$\\phantom{150\\%} = 1\\tfrac{1}{2}$$`,           delay: 2.9, note: '÷ 100' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$65\\% = \\dfrac{65 \\div 5}{100 \\div 5} = \\dfrac{13}{20}$$`,                         delay: 0.5 },
+          { math: `$$150\\% = \\dfrac{150 \\div 50}{100 \\div 50} = \\dfrac{3}{2} = 1\\dfrac{1}{2}$$`,     delay: 1.6 },
         ]},
       ],
     },
@@ -1739,10 +1737,10 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       speech: `To turn a fraction into a percentage, scale it so the denominator becomes 100. Take 2 over 10: multiply top and bottom by 10 to get 20 over 100. Watch 20 boxes fill in. That is the same amount as 2 out of 10 parts.`,
       board: [
         { type: 'percentGrid', count: 20, label: '2/10  =  20/100  =  20%  (same amount, different denominator)' },
-        { type: 'workingOut', lines: [
-          { math: `$$\\frac{2}{10}  = \\frac{20}{100}  = 20\\%$$`,  delay: 1.6, note: '× 10' },
-          { math: `$$\\frac{3}{5}   = \\frac{60}{100}  = 60\\%$$`,  delay: 2.3, note: '× 20' },
-          { math: `$$\\frac{3}{20}  = \\frac{15}{100}  = 15\\%$$`,  delay: 3.0, note: '× 5'  },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\dfrac{2}{10}  = \\dfrac{2 \\times 10}{10 \\times 10}  = \\dfrac{20}{100}  = 20\\%$$`,  delay: 1.6 },
+          { math: `$$\\dfrac{3}{5}   = \\dfrac{3 \\times 20}{5 \\times 20}   = \\dfrac{60}{100}  = 60\\%$$`,  delay: 2.5 },
+          { math: `$$\\dfrac{3}{20}  = \\dfrac{3 \\times 5}{20 \\times 5}    = \\dfrac{15}{100}  = 15\\%$$`,  delay: 3.4 },
         ]},
       ],
     },
