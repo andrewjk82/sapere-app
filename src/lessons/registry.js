@@ -1677,13 +1677,23 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
   const PRP = '#7c3aed', LPRP = '#c4b5fd', GRN = '#059669', RED = '#ef4444', AMB = '#f59e0b';
 
   const steps = [
-    // ── Step 1 — What is a percentage? ──────────────────────────────────────
+    // ── Step 1 — What is a percentage? (50%) ────────────────────────────────
     {
-      narration: `The word <b>percent</b> means <i>"out of a hundred"</i>. Picture 100 boxes — watch as <b>50</b> are shaded one by one. That's <b>50%</b>, exactly one-half. Shade only 3 boxes and you get just <b>3%</b>.`,
-      speech: `The word percent means "out of a hundred". Picture 100 boxes — watch as 50 are shaded one by one. That is 50 percent, exactly one-half. Shade only 3 boxes and you get just 3 percent.`,
+      narration: `The word <b>percent</b> means <i>"out of a hundred"</i>. Picture 100 boxes — watch as <b>50</b> are shaded one by one. That's <b>50%</b>, exactly one-half: $50\\% = \\dfrac{50}{100} = \\dfrac{1}{2}$.`,
+      speech: `The word percent means "out of a hundred". Picture 100 boxes — watch as 50 are shaded one by one. That is 50 percent, exactly one-half.`,
       board: [
         { type: 'percentGrid', count: 50, label: '50 out of 100 boxes shaded  =  50%' },
-        { type: 'math', content: `$$50\\% = \\frac{50}{100} = \\frac{1}{2} \\qquad\\qquad 3\\% = \\frac{3}{100}$$`, emphasis: true },
+        { type: 'math', content: `$$50\\% = \\frac{50}{100} = \\frac{1}{2}$$`, emphasis: true },
+      ],
+    },
+
+    // ── Step 2 — What is a percentage? (3%) ─────────────────────────────────
+    {
+      narration: `Now watch just <b>3</b> boxes get shaded. That's <b>3%</b> — only 3 out of every 100. A <b>percentage</b> is always a fraction whose denominator is 100.`,
+      speech: `Now watch just 3 boxes get shaded. That is 3 percent — only 3 out of every 100. A percentage is always a fraction whose denominator is 100.`,
+      board: [
+        { type: 'percentGrid', count: 3, label: '3 out of 100 boxes shaded  =  3%' },
+        { type: 'math', content: `$$3\\% = \\frac{3}{100} \\qquad\\qquad 100\\% = \\frac{100}{100} = 1$$`, emphasis: true },
         { type: 'math', content: `$$\\text{A percentage is a fraction whose denominator is 100.}$$` },
       ],
     },
