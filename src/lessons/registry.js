@@ -1771,16 +1771,22 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       ],
     },
 
-    // ── Step 6 — Key fraction–percentage pairs ───────────────────────────────
+    // ── Step 6 — Key fraction–percentage pairs (interactive) ─────────────────
     {
-      narration: `<b>Memorise</b> these 9 pairs — they appear constantly. Watch 75 boxes fill in to show $\\frac{3}{4}$. Can you picture $\\frac{1}{4}$ (25 boxes), $\\frac{1}{2}$ (50 boxes), $\\frac{1}{5}$ (20 boxes)?`,
-      speech: `Memorise these 9 pairs. They appear constantly. Watch 75 boxes fill in to show three-quarters. Can you picture one-quarter at 25 boxes, one-half at 50 boxes, one-fifth at 20 boxes?`,
+      narration: `<b>Memorise</b> these 9 pairs — they appear constantly. The grid starts at $\\frac{3}{4}$ = 75 boxes. <b>Tap any fraction in the table</b> to watch the grid update — try them all!`,
+      speech: `Memorise these 9 pairs. They appear constantly. The grid starts at three-quarters, which is 75 boxes. Now try tapping any fraction in the table above — watch the grid update to match each one!`,
       board: [
-        { type: 'valueTable', rows: [
-          ['Fraction', '\\frac{1}{2}','\\frac{1}{4}','\\frac{1}{3}','\\frac{3}{4}','\\frac{1}{5}','\\frac{1}{10}','\\frac{2}{5}','\\frac{3}{5}','\\frac{4}{5}'],
-          ['\\%',      '50\\%','25\\%','33\\tfrac{1}{3}\\%','75\\%','20\\%','10\\%','40\\%','60\\%','80\\%'],
+        { type: 'percentTableInteractive', defaultIndex: 3, pairs: [
+          { fraction: '\\tfrac{1}{2}',  percent: '50\\%',              count: 50, color: '#7c3aed', label: '½ = 50 boxes = 50%'          },
+          { fraction: '\\tfrac{1}{4}',  percent: '25\\%',              count: 25, color: '#0ea5e9', label: '¼ = 25 boxes = 25%'          },
+          { fraction: '\\tfrac{1}{3}',  percent: '33\\tfrac{1}{3}\\%', count: 33, color: '#f59e0b', label: '⅓ ≈ 33 boxes = 33⅓%'        },
+          { fraction: '\\tfrac{3}{4}',  percent: '75\\%',              count: 75, color: '#059669', label: '¾ = 75 boxes = 75%'          },
+          { fraction: '\\tfrac{1}{5}',  percent: '20\\%',              count: 20, color: '#ec4899', label: '⅕ = 20 boxes = 20%'          },
+          { fraction: '\\tfrac{1}{10}', percent: '10\\%',              count: 10, color: '#6366f1', label: '1/10 = 10 boxes = 10%'        },
+          { fraction: '\\tfrac{2}{5}',  percent: '40\\%',              count: 40, color: '#ef4444', label: '⅖ = 40 boxes = 40%'          },
+          { fraction: '\\tfrac{3}{5}',  percent: '60\\%',              count: 60, color: '#10b981', label: '⅗ = 60 boxes = 60%'          },
+          { fraction: '\\tfrac{4}{5}',  percent: '80\\%',              count: 80, color: '#8b5cf6', label: '⅘ = 80 boxes = 80%'          },
         ]},
-        { type: 'percentGrid', count: 75, label: '75 boxes = 75% = ¾ of 100' },
       ],
     },
 

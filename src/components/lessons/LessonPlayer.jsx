@@ -503,6 +503,89 @@ const ValueTable = ({ rows = [] }) => {
   );
 };
 
+// ── Interactive Percent Table ─────────────────────────────────────────────────
+// Clickable fraction/percent table linked to a live PercentGrid below.
+// Clicking a column highlights it and re-animates the grid to that count.
+const PercentTableInteractive = ({ pairs = [], defaultIndex = 0, cellSize = 24, gap = 3 }) => {
+  const [sel, setSel] = useState(defaultIndex);
+  const [gridKey, setGridKey] = useState(0);
+  const { fraction, percent, count, label, color: pairColor } = pairs[sel] || {};
+  const color = pairColor || '#7c3aed';
+  const shaded = Math.round(Math.min(100, Math.max(0, count ?? 0)));
+
+  const handleSelect = (idx) => {
+    if (idx === sel) return;
+    setSel(idx);
+    setGridKey(k => k + 1);
+  };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18, fontFamily: FONT }}>
+      {/* Table */}
+      <div style={{ overflowX: 'auto', maxWidth: '100%' }}>
+        <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: 14, overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
+          <tbody>
+            {/* Fraction row */}
+            <tr>
+              <td style={{ padding: '9px 16px', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', textAlign: 'center', whiteSpace: 'nowrap' }}>
+                <MathView content="$\\textit{Fraction}$" style={{ fontSize: '1rem', fontWeight: 800, color: '#fff' }} />
+              </td>
+              {pairs.map((p, i) => (
+                <td key={i} onClick={() => handleSelect(i)}
+                  style={{ padding: '9px 14px', textAlign: 'center', borderBottom: '1px solid #ece9fb', borderRight: i < pairs.length - 1 ? '1px solid #ece9fb' : 'none', cursor: 'pointer', background: i === sel ? `${p.color || '#7c3aed'}14` : '#fff', transition: 'background 0.2s', position: 'relative' }}>
+                  {i === sel && <motion.div layoutId="sel-pill" style={{ position: 'absolute', inset: 0, background: `${p.color || '#7c3aed'}18`, borderBottom: `3px solid ${p.color || '#7c3aed'}`, borderRadius: 0 }} />}
+                  <MathView content={`$${p.fraction}$`} style={{ fontSize: '1rem', fontWeight: 600, color: i === sel ? (p.color || '#7c3aed') : '#1e1b4b', position: 'relative' }} />
+                </td>
+              ))}
+            </tr>
+            {/* % row */}
+            <tr>
+              <td style={{ padding: '9px 16px', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', textAlign: 'center' }}>
+                <MathView content="$\\%$" style={{ fontSize: '1rem', fontWeight: 800, color: '#fff' }} />
+              </td>
+              {pairs.map((p, i) => (
+                <td key={i} onClick={() => handleSelect(i)}
+                  style={{ padding: '9px 14px', textAlign: 'center', cursor: 'pointer', background: i === sel ? `${p.color || '#7c3aed'}14` : '#fff', transition: 'background 0.2s', position: 'relative' }}>
+                  <MathView content={`$${p.percent}$`} style={{ fontSize: '1rem', fontWeight: i === sel ? 800 : 600, color: i === sel ? (p.color || '#7c3aed') : '#1e1b4b' }} />
+                </td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Live grid — re-key on selection change to replay animation */}
+      <div key={gridKey} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: `repeat(10, ${cellSize}px)`, gap: `${gap}px` }}>
+          {Array.from({ length: 100 }, (_, i) => {
+            const filled = i < shaded;
+            const row = Math.floor(i / 10);
+            return (
+              <motion.div key={i}
+                initial={{ background: '#ede9fe', scale: 0.7, opacity: 0 }}
+                animate={{ background: filled ? color : '#ede9fe', scale: 1, opacity: 1 }}
+                transition={{
+                  scale:      { delay: 0.04 + row * 0.04, duration: 0.12, type: 'spring', stiffness: 480 },
+                  opacity:    { delay: 0.04 + row * 0.04, duration: 0.12 },
+                  background: { delay: filled ? 0.55 + i * 0.016 : 0, duration: 0.15 },
+                }}
+                style={{ width: cellSize, height: cellSize, borderRadius: 4 }}
+              />
+            );
+          })}
+        </div>
+        {label && (
+          <motion.div key={`lbl-${gridKey}`} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.55 + shaded * 0.016 + 0.2, duration: 0.3 }}
+            style={{ fontSize: '0.9rem', fontWeight: 700, color, textAlign: 'center' }}>
+            {label}
+          </motion.div>
+        )}
+      </div>
+    </div>
+  );
+};
+
 // ── Number Line ─────────────────────────────────────────────────────────────
 // marks   — array of numbers OR objects { n, label?, labelPos?('above'|'below'),
 //            color?, delay?, pulse? }
@@ -861,6 +944,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
+  else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
   else if (item.type === 'workingOut') inner = <WorkingOut {...item} />;
   else if (item.type === 'clock') inner = (
     <div style={{ textAlign: 'center' }}>
