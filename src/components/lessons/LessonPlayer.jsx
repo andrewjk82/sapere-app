@@ -692,6 +692,44 @@ const NumberLineBoard = ({
   );
 };
 
+// ── Percentage Grid ────────────────────────────────────────────────────────
+// 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
+// top-to-bottom so students can literally watch "X out of 100" being coloured.
+// Phase 1 (0.08–0.78s): all rows pop in sequentially as empty (light purple).
+// Phase 2 (0.85s+):     the first `count` squares change to `color`, staggered.
+const PercentGrid = ({ count = 50, color = '#7c3aed', label, cellSize = 25, gap = 3 }) => {
+  const shaded = Math.round(Math.min(100, Math.max(0, count)));
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, fontFamily: FONT }}>
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(10, ${cellSize}px)`, gap: `${gap}px` }}>
+        {Array.from({ length: 100 }, (_, i) => {
+          const filled = i < shaded;
+          const row = Math.floor(i / 10);
+          return (
+            <motion.div key={i}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1, background: filled ? color : '#ede9fe' }}
+              transition={{
+                opacity:    { delay: 0.08 + row * 0.07, duration: 0.16 },
+                scale:      { delay: 0.08 + row * 0.07, duration: 0.16, type: 'spring', stiffness: 420 },
+                background: { delay: filled ? 0.85 + i * 0.022 : 0, duration: 0.16 },
+              }}
+              style={{ width: cellSize, height: cellSize, borderRadius: 3 }}
+            />
+          );
+        })}
+      </div>
+      {label && (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+          transition={{ delay: 0.85 + shaded * 0.022 + 0.25 }}
+          style={{ fontSize: '0.88rem', fontWeight: 700, color: '#5b21b6', textAlign: 'center', fontFamily: FONT }}>
+          {label}
+        </motion.div>
+      )}
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -727,6 +765,7 @@ const BoardItem = ({ item }) => {
     </div>
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
+  else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
   else if (item.type === 'clock') inner = (
     <div style={{ textAlign: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', flexWrap: 'wrap' }}>

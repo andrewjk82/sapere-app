@@ -1676,41 +1676,13 @@ export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
 const buildPercentagesLesson = ({ audioBase = null } = {}) => {
   const PRP = '#7c3aed', LPRP = '#c4b5fd', GRN = '#059669', RED = '#ef4444', AMB = '#f59e0b';
 
-  // Animated horizontal percentage bar. `pct` = the shaded percentage (0–100).
-  // Tick marks appear every 10 units; the shaded region animates in after.
-  const pctBar = (pct, { extraTexts = [], extraLines = [], extraPolygons = [] } = {}) => ({
-    type: 'graph', showAxes: false,
-    xMin: -5, xMax: 105, yMin: -0.9, yMax: 1.8,
-    width: 460, height: 95,
-    polygons: [
-      // Background bar (unshaded)
-      { vertices: [[0,0],[100,0],[100,1],[0,1]], color: 'rgba(237,233,254,0.55)', stroke: LPRP, strokeWidth: 2, delay: 0 },
-      // Shaded region — animates in with a slight delay
-      ...(pct > 0 ? [{ vertices: [[0,0],[pct,0],[pct,1],[0,1]], color: 'rgba(124,58,237,0.72)', stroke: PRP, strokeWidth: 1.5, delay: 0.55 }] : []),
-      ...extraPolygons,
-    ],
-    lines: [
-      // Tick marks every 10%
-      ...[10,20,30,40,50,60,70,80,90].map((x, i) => ({ from:[x,-0.1], to:[x,0], color:'#94a3b8', width:1.5, delay:0.3 + i*0.03 })),
-      ...extraLines,
-    ],
-    texts: [
-      { x:0,   y:-0.55, text:'0%',    color:'#94a3b8', size:10, delay:0.32 },
-      { x:50,  y:-0.55, text:'50%',   color:'#94a3b8', size:10, delay:0.36 },
-      { x:100, y:-0.55, text:'100%',  color:'#94a3b8', size:10, delay:0.40 },
-      // Label inside the shaded region (only if wide enough)
-      ...(pct >= 8 ? [{ x: pct/2, y: 0.5, text: `${pct}%`, color:'#fff', size:12, delay:0.85 }] : []),
-      ...extraTexts,
-    ],
-  });
-
   const steps = [
     // ── Step 1 — What is a percentage? ──────────────────────────────────────
     {
-      narration: `The word <b>percent</b> means <i>"out of a hundred"</i>. Picture a row of 100 boxes — shade in <b>50</b> and you have <b>50%</b>. The shaded half is exactly $\\frac{1}{2}$. Shade in 3 boxes and you have just <b>3%</b>.`,
-      speech: `The word percent means "out of a hundred". Picture a row of 100 boxes. Shade in 50 and you have 50 percent. The shaded half is exactly one-half. Shade in only 3 boxes and you have just 3 percent.`,
+      narration: `The word <b>percent</b> means <i>"out of a hundred"</i>. Picture 100 boxes — watch as <b>50</b> are shaded one by one. That's <b>50%</b>, exactly one-half. Shade only 3 boxes and you get just <b>3%</b>.`,
+      speech: `The word percent means "out of a hundred". Picture 100 boxes — watch as 50 are shaded one by one. That is 50 percent, exactly one-half. Shade only 3 boxes and you get just 3 percent.`,
       board: [
-        pctBar(50),
+        { type: 'percentGrid', count: 50, label: '50 out of 100 boxes shaded  =  50%' },
         { type: 'math', content: `$$50\\% = \\frac{50}{100} = \\frac{1}{2} \\qquad\\qquad 3\\% = \\frac{3}{100}$$`, emphasis: true },
         { type: 'math', content: `$$\\text{A percentage is a fraction whose denominator is 100.}$$` },
       ],
@@ -1718,10 +1690,10 @@ const buildPercentagesLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 2 — Percentage → fraction ──────────────────────────────────────
     {
-      narration: `To convert a <b>percentage to a fraction</b>: write it over 100, then simplify. For $65\\%$: write $\\frac{65}{100}$, then divide top and bottom by 5 to get $\\frac{13}{20}$. Watch the bar — 65 out of 100 is shaded.`,
-      speech: `To convert a percentage to a fraction, write it over 100 then simplify. For 65 percent: write 65 over 100, then divide top and bottom by 5 to get 13 over 20. Watch the bar — 65 out of 100 is shaded.`,
+      narration: `To convert a <b>percentage to a fraction</b>: write it over 100, then simplify. For $65\\%$: write $\\frac{65}{100}$, then divide top and bottom by 5 to get $\\frac{13}{20}$. Watch 65 boxes fill in — that's 65 out of 100.`,
+      speech: `To convert a percentage to a fraction, write it over 100 then simplify. For 65 percent: write 65 over 100, then divide top and bottom by 5 to get 13 over 20. Watch 65 boxes fill in — that is 65 out of 100.`,
       board: [
-        pctBar(65),
+        { type: 'percentGrid', count: 65, label: '65 out of 100  →  simplify  →  13/20' },
         { type: 'mathRow', formulas: [
           { content: `$$65\\%$$`,               highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:0.5 },
           { content: `$$= \\frac{65}{100}$$`,   highlightColor:'rgba(237,233,254,0.7)', borderColor:LPRP, delay:1.0 },
@@ -1758,41 +1730,14 @@ const buildPercentagesLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 4 — Fraction → % via equivalent fractions ──────────────────────
     {
-      narration: `To go from a <b>fraction to a percentage</b>, scale the fraction so the <b>denominator becomes 100</b>. The two bars below shade the same amount — but one is split into 10 parts, the other into 100. They look the same because $\\frac{2}{10} = \\frac{20}{100}$.`,
-      speech: `To go from a fraction to a percentage, scale it so the denominator becomes 100. The two bars shade the same amount: one split into 10 parts, the other into 100. They look the same because 2 over 10 equals 20 over 100.`,
+      narration: `To turn a <b>fraction into a percentage</b>, scale it so the <b>denominator becomes 100</b>. $\\frac{2}{10}$: multiply top and bottom by 10 → $\\frac{20}{100}$. Watch 20 boxes fill in — that's the same amount as 2 out of 10 parts!`,
+      speech: `To turn a fraction into a percentage, scale it so the denominator becomes 100. Take 2 over 10: multiply top and bottom by 10 to get 20 over 100. Watch 20 boxes fill in. That is the same amount as 2 out of 10 parts.`,
       board: [
-        {
-          type: 'graph', showAxes: false,
-          xMin: -5, xMax: 105, yMin: -0.4, yMax: 3.2,
-          width: 460, height: 175,
-          polygons: [
-            // Top bar — tenths outline
-            { vertices:[[0,1.9],[100,1.9],[100,2.7],[0,2.7]], color:'rgba(237,233,254,0.55)', stroke:LPRP, strokeWidth:2, delay:0 },
-            // Top bar — 2/10 shaded (= 20%)
-            { vertices:[[0,1.9],[20,1.9],[20,2.7],[0,2.7]], color:'rgba(124,58,237,0.72)', delay:0.55 },
-            // Bottom bar — hundredths outline
-            { vertices:[[0,0.4],[100,0.4],[100,1.2],[0,1.2]], color:'rgba(237,233,254,0.55)', stroke:LPRP, strokeWidth:2, delay:0.9 },
-            // Bottom bar — 20/100 shaded (= 20%)
-            { vertices:[[0,0.4],[20,0.4],[20,1.2],[0,1.2]], color:'rgba(124,58,237,0.72)', delay:1.35 },
-          ],
-          lines: [
-            // 10 dividers on top bar
-            ...[10,20,30,40,50,60,70,80,90].map((x,i) => ({ from:[x,1.9], to:[x,2.7], color:'#c4b5fd', width:1.5, delay:0.3+i*0.04 })),
-            // 10 dividers on bottom bar (same visual, but represents hundredths)
-            ...[10,20,30,40,50,60,70,80,90].map((x,i) => ({ from:[x,0.4], to:[x,1.2], color:'#c4b5fd', width:1.0, delay:1.1+i*0.04 })),
-          ],
-          texts: [
-            { x:50, y:3.0,  text:'÷ 10   →   tenths bar    (2 of 10 parts)',   color:'#64748b', size:10, delay:0.2 },
-            { x:50, y:1.55, text:'÷ 100  →   hundredths bar (20 of 100 parts)', color:'#64748b', size:10, delay:1.0 },
-            { x:10, y:2.3,  text:'2/10',  color:'#fff', size:10, delay:0.75 },
-            { x:10, y:0.8,  text:'20/100',color:'#fff', size:9,  delay:1.55 },
-            { x:10, y:-0.1, text:'= 20%', color:PRP, size:12, delay:1.8 },
-          ],
-        },
+        { type: 'percentGrid', count: 20, label: '2/10  =  20/100  =  20%  (same amount, different denominator)' },
         { type: 'mathRow', formulas: [
-          { content:`$$\\frac{2}{10} = \\frac{20}{100} = 20\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.0 },
-          { content:`$$\\frac{3}{5}  = \\frac{60}{100} = 60\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.5 },
-          { content:`$$\\frac{3}{20} = \\frac{15}{100} = 15\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:3.0 },
+          { content:`$$\\frac{2}{10} \\xrightarrow{\\times 10} \\frac{20}{100} = 20\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:1.6 },
+          { content:`$$\\frac{3}{5}  \\xrightarrow{\\times 20} \\frac{60}{100} = 60\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.2 },
+          { content:`$$\\frac{3}{20} \\xrightarrow{\\times 5}  \\frac{15}{100} = 15\\%$$`, highlightColor:'rgba(124,58,237,0.08)', borderColor:PRP, delay:2.8 },
         ]},
       ],
     },
@@ -1814,26 +1759,14 @@ const buildPercentagesLesson = ({ audioBase = null } = {}) => {
 
     // ── Step 6 — Key fraction–percentage pairs ───────────────────────────────
     {
-      narration: `<b>Memorise</b> these 9 pairs — they come up constantly. The bar shows how $\\frac{1}{4}$, $\\frac{1}{2}$, and $\\frac{3}{4}$ split the 100-unit bar into neat quarters. Can you spot the pattern for fifths?`,
-      speech: `Memorise these 9 pairs. They come up constantly. The bar shows how one-quarter, one-half, and three-quarters split the 100-unit bar into neat quarters. Can you spot the pattern for fifths?`,
+      narration: `<b>Memorise</b> these 9 pairs — they appear constantly. Watch 75 boxes fill in to show $\\frac{3}{4}$. Can you picture $\\frac{1}{4}$ (25 boxes), $\\frac{1}{2}$ (50 boxes), $\\frac{1}{5}$ (20 boxes)?`,
+      speech: `Memorise these 9 pairs. They appear constantly. Watch 75 boxes fill in to show three-quarters. Can you picture one-quarter at 25 boxes, one-half at 50 boxes, one-fifth at 20 boxes?`,
       board: [
         { type: 'valueTable', rows: [
           ['Fraction', '\\frac{1}{2}','\\frac{1}{4}','\\frac{1}{3}','\\frac{3}{4}','\\frac{1}{5}','\\frac{1}{10}','\\frac{2}{5}','\\frac{3}{5}','\\frac{4}{5}'],
           ['\\%',      '50\\%','25\\%','33\\tfrac{1}{3}\\%','75\\%','20\\%','10\\%','40\\%','60\\%','80\\%'],
         ]},
-        // Bar with quarter markers highlighted
-        pctBar(75, {
-          extraPolygons: [
-            { vertices:[[0,0],[25,0],[25,1],[0,1]],  color:'rgba(245,158,11,0.45)', delay:1.0 },
-            { vertices:[[25,0],[50,0],[50,1],[25,1]], color:'rgba(245,158,11,0.30)', delay:1.2 },
-            { vertices:[[50,0],[75,0],[75,1],[50,1]], color:'rgba(245,158,11,0.20)', delay:1.4 },
-          ],
-          extraTexts: [
-            { x:12.5, y:0.5, text:'¼', color:'#fff', size:12, delay:1.1 },
-            { x:37.5, y:0.5, text:'½', color:'#fff', size:12, delay:1.3 },
-            { x:62.5, y:0.5, text:'¾', color:'#fff', size:12, delay:1.5 },
-          ],
-        }),
+        { type: 'percentGrid', count: 75, label: '75 boxes = 75% = ¾ of 100' },
       ],
     },
 
