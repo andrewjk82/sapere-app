@@ -752,12 +752,12 @@ const PercentGridRow = ({ grids = [], cellSize = 17, gap = 2 }) => (
               const row    = Math.floor(i / 10);
               return (
                 <motion.div key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
+                  initial={{ opacity: 0, scale: 0.5, background: '#ede9fe' }}
                   animate={{ opacity: 1, scale: 1, background: filled ? color : '#ede9fe' }}
                   transition={{
                     opacity:    { delay: 0.08 + row * 0.06, duration: 0.14 },
                     scale:      { delay: 0.08 + row * 0.06, duration: 0.14, type: 'spring', stiffness: 420 },
-                    background: { delay: filled ? fd + i * 0.02 : 0, duration: 0.14 },
+                    background: { delay: filled ? fd + i * 0.02 : 0, duration: 0.18 },
                   }}
                   style={{ width: cellSize, height: cellSize, borderRadius: 2 }}
                 />
