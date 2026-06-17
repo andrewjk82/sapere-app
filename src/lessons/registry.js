@@ -1795,34 +1795,7 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
       narration: `<b>Summary</b>: the three forms — <b>%</b>, <b>fraction</b>, <b>decimal</b> — are always interchangeable. From a percentage: divide by 100 (→ decimal) or write over 100 and simplify (→ fraction). To reach a percentage: multiply by 100%.`,
       speech: `Summary: the three forms — percent, fraction, and decimal — are always interchangeable. From a percentage, divide by 100 to get a decimal, or write over 100 and simplify to get a fraction. To reach a percentage, multiply by 100 percent.`,
       board: [
-        // Conversion-triangle diagram
-        {
-          type:'graph', showAxes:false,
-          xMin:0, xMax:10, yMin:0, yMax:5,
-          width:460, height:210,
-          polygons:[
-            { vertices:[[3.8,3.4],[6.2,3.4],[6.2,4.6],[3.8,4.6]], color:'rgba(124,58,237,0.10)', stroke:PRP, strokeWidth:2.5, delay:0 },
-            { vertices:[[0.0,0.4],[3.2,0.4],[3.2,1.6],[0.0,1.6]], color:'rgba(5,150,105,0.10)',  stroke:GRN, strokeWidth:2,   delay:0.3 },
-            { vertices:[[6.8,0.4],[10.0,0.4],[10.0,1.6],[6.8,1.6]], color:'rgba(239,68,68,0.10)', stroke:RED, strokeWidth:2,   delay:0.3 },
-          ],
-          texts:[
-            { x:5,   y:4.0, text:'%',        color:PRP, size:20, delay:0.1 },
-            { x:1.6, y:1.0, text:'Fraction',  color:GRN, size:13, delay:0.45 },
-            { x:8.4, y:1.0, text:'Decimal',   color:RED, size:13, delay:0.45 },
-            { x:2.6, y:3.1, text:'÷100,',     color:GRN, size: 9, delay:0.75 },
-            { x:2.6, y:2.7, text:'simplify',  color:GRN, size: 9, delay:0.80 },
-            { x:7.4, y:2.9, text:'÷ 100',     color:RED, size:10, delay:1.05 },
-            { x:5,   y:0.1, text:'× 100%',    color:PRP, size:11, delay:1.35 },
-          ],
-          lines:[
-            // % → Fraction arrow
-            { from:[4.2,3.4], to:[2.6,1.6], color:GRN, width:2.5, arrow:true, delay:0.65 },
-            // % → Decimal arrow
-            { from:[5.8,3.4], to:[7.4,1.6], color:RED, width:2.5, arrow:true, delay:0.95 },
-            // Fraction → % and Decimal → % (both → %) via bottom arrow
-            { from:[3.2,1.0], to:[6.8,1.0], color:PRP, width:2.5, arrow:true, delay:1.25 },
-          ],
-        },
+        { type: 'conversionTriangle' },
         { type:'math', content:`$$\\frac{13}{20} \\;=\\; 0.65 \\;=\\; 65\\%$$`, emphasis:true },
       ],
     },

@@ -830,6 +830,96 @@ const WorkingOut = ({ lines = [], align = 'left' }) => (
   </div>
 );
 
+// ── Conversion Triangle ───────────────────────────────────────────────────
+// Beautiful animated diagram showing % ↔ Fraction ↔ Decimal conversions.
+const ConversionTriangle = () => {
+  const NODE = { w: 148, h: 54, r: 16 };
+  const W = 520, H = 230;
+  // Node centres
+  const pct  = { x: W / 2,       y: 44 };
+  const frac = { x: 78,          y: H - 40 };
+  const dec  = { x: W - 78,      y: H - 40 };
+
+  // Arrow helper: returns SVG path from edge of source box to edge of target box
+  const edge = (from, to, offX = 0, offY = 0) => {
+    const dx = to.x - from.x, dy = to.y - from.y;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    const ux = dx / len, uy = dy / len;
+    const hx = NODE.w / 2, hy = NODE.h / 2;
+    const tScaleX = Math.abs(ux) > 0.001 ? hx / Math.abs(ux) : Infinity;
+    const tScaleY = Math.abs(uy) > 0.001 ? hy / Math.abs(uy) : Infinity;
+    const t0 = Math.min(tScaleX, tScaleY) + 6;
+    const x1 = from.x + ux * t0 + offX, y1 = from.y + uy * t0 + offY;
+    const x2 = to.x   - ux * t0 + offX, y2 = to.y   - uy * t0 + offY;
+    return `M${x1},${y1} L${x2},${y2}`;
+  };
+
+  const nodes = [
+    { id: 'pct',  cx: pct.x,  cy: pct.y,  label: '%',        bg: 'linear-gradient(135deg,#a78bfa,#7c3aed)', shadow: 'rgba(124,58,237,0.35)', delay: 0   },
+    { id: 'frac', cx: frac.x, cy: frac.y, label: 'Fraction', bg: 'linear-gradient(135deg,#34d399,#059669)', shadow: 'rgba(5,150,105,0.30)',  delay: 0.2 },
+    { id: 'dec',  cx: dec.x,  cy: dec.y,  label: 'Decimal',  bg: 'linear-gradient(135deg,#f87171,#ef4444)', shadow: 'rgba(239,68,68,0.30)',  delay: 0.2 },
+  ];
+
+  const arrows = [
+    { path: edge(pct, frac),  color: '#059669', label: '÷ 100 & simplify', lx: 148, ly: 118, anchor: 'middle', delay: 0.55 },
+    { path: edge(pct, dec),   color: '#ef4444', label: '÷ 100',             lx: 374, ly: 118, anchor: 'middle', delay: 0.8  },
+    { path: edge(frac, dec),  color: '#7c3aed', label: '× 100%',            lx: W/2, ly: H - 14, anchor: 'middle', delay: 1.05 },
+  ];
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', fontFamily: FONT }}>
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ overflow: 'visible' }}>
+        <defs>
+          {['grn','red','prp'].map((id, i) => (
+            <marker key={id} id={`arr-${id}`} markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L8,3 z" fill={['#059669','#ef4444','#7c3aed'][i]} />
+            </marker>
+          ))}
+        </defs>
+
+        {/* Arrows */}
+        {arrows.map((a, i) => (
+          <motion.g key={i} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: a.delay, duration: 0.4 }}>
+            <path d={a.path} fill="none" stroke={a.color} strokeWidth={2.8}
+              markerEnd={`url(#arr-${['grn','red','prp'][i]})`}
+              strokeLinecap="round" />
+            <text x={a.lx} y={a.ly} textAnchor={a.anchor}
+              fill={a.color} fontSize="11.5" fontWeight="700" fontFamily={FONT}>
+              {a.label}
+            </text>
+          </motion.g>
+        ))}
+
+        {/* Node boxes */}
+        {nodes.map((n) => (
+          <motion.g key={n.id}
+            initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: n.delay, type: 'spring', stiffness: 320, damping: 22 }}
+            style={{ transformOrigin: `${n.cx}px ${n.cy}px` }}>
+            <defs>
+              <filter id={`sh-${n.id}`} x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="4" stdDeviation="6" floodColor={n.shadow} floodOpacity="0.6" />
+              </filter>
+              <linearGradient id={`g-${n.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                {n.id === 'pct'  && <><stop offset="0%" stopColor="#a78bfa"/><stop offset="100%" stopColor="#7c3aed"/></>}
+                {n.id === 'frac' && <><stop offset="0%" stopColor="#34d399"/><stop offset="100%" stopColor="#059669"/></>}
+                {n.id === 'dec'  && <><stop offset="0%" stopColor="#f87171"/><stop offset="100%" stopColor="#ef4444"/></>}
+              </linearGradient>
+            </defs>
+            <rect x={n.cx - NODE.w/2} y={n.cy - NODE.h/2} width={NODE.w} height={NODE.h}
+              rx={NODE.r} fill={`url(#g-${n.id})`} filter={`url(#sh-${n.id})`} />
+            <text x={n.cx} y={n.cy + 5.5} textAnchor="middle"
+              fill="#fff" fontSize={n.id === 'pct' ? 22 : 15} fontWeight="800" fontFamily={FONT}
+              letterSpacing={n.id === 'pct' ? 1 : 0.3}>
+              {n.label}
+            </text>
+          </motion.g>
+        ))}
+      </svg>
+    </div>
+  );
+};
+
 // ── Percentage Grid Row ────────────────────────────────────────────────────
 // Shows multiple 10×10 grids side-by-side. Each grid fills sequentially
 // (controlled by `fillDelay`), and the equation under each appears only
@@ -958,6 +1048,7 @@ const BoardItem = ({ item }) => {
     </div>
   );
   else if (item.type === 'numberLine') inner = <NumberLineBoard {...item} />;
+  else if (item.type === 'conversionTriangle') inner = <ConversionTriangle />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
