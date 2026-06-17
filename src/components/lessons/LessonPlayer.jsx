@@ -863,9 +863,13 @@ const PercentFlow = ({ part, whole, color = '#7c3aed', label }) => {
         <div style={{ display: 'grid', gridTemplateColumns: `repeat(${COLS}, 22px)`, gap: 4 }}>
           {dots.map((filled, i) => (
             <motion.div key={i}
-              initial={{ opacity: 0, scale: 0.4 }}
-              animate={{ opacity: 1, scale: 1, background: filled ? color : '#e2e8f0' }}
-              transition={{ delay: 0.15 + i * 0.02, type: 'spring', stiffness: 400, damping: 18 }}
+              initial={{ opacity: 0, scale: 0.4, background: '#ede9fe' }}
+              animate={{ opacity: 1, scale: 1, background: filled ? color : '#ede9fe' }}
+              transition={{
+                opacity:    { delay: 0.15 + i * 0.02, duration: 0.14 },
+                scale:      { delay: 0.15 + i * 0.02, type: 'spring', stiffness: 400, damping: 18 },
+                background: { delay: filled ? 0.15 + whole * 0.02 + 0.3 + i * 0.02 : 0, duration: 0.16 },
+              }}
               style={{ width: 22, height: 22, borderRadius: '50%' }}
             />
           ))}
