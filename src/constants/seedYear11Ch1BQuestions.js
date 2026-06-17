@@ -1,19 +1,37 @@
 export const Y11_CH1B_QUESTIONS = [
   {
     "id": "00a5dbf8d941de3e98b1eca07ea15062",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Factor by taking out the common factors: \\( 8b^2 + 2b^3 \\)",
-    "options": [],
-    "answer": "2b^2(4 + b)",
+    "options": [
+      {
+        "text": "b^2(4 -b)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2b^2(4 + b)",
+        "imageUrl": ""
+      },
+      {
+        "text": "2b^3(b-4)",
+        "imageUrl": ""
+      },
+      {
+        "text": "3b^2(4 + b)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
     "blanks": [],
     "hint": "",
     "solution": "2b^2(4 + b)",
     "solutionSteps": [
       {
         "explanation": "Identify the greatest common divisor of coefficients (2) and variables (b^2).",
-        "workingOut": "2b^2(4 + b)"
+        "workingOut": "2b^2(4 + b)",
+        "graphData": null
       }
     ],
     "graphData": null,
@@ -330,12 +348,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(3j^2 + 10j + 8\\)",
     "options": [
-      "\\((3j + 8)(j + 1)\\)",
-      "\\((3j + 2)(j + 4)\\)",
-      "\\((j + 8)(3j + 1)\\)",
-      "\\((3j + 4)(j + 2)\\)"
+      {
+        "text": "\\((3j + 2)(j + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3j + 8)(j + 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3j + 4)(j + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((j + 8)(3j + 1)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "3",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping (AC method).",
     "solution": "\\(3j^2 + 6j + 4j + 8 = 3j(j+2) + 4(j+2) = (3j+4)(j+2)\\)",
@@ -441,10 +471,22 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(64 - 9g^2\\)",
     "options": [
-      "\\((3g - 8)(3g + 8)\\)",
-      "\\((8 - 3g)(8 + 3g)\\)",
-      "\\((8 - 3g)^2\\)",
-      "\\((8 + 3g)^2\\)"
+      {
+        "text": "\\((8 - 3g)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((8 - 3g)(8 + 3g)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((8 + 3g)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3g - 8)(3g + 8)\\)",
+        "imageUrl": ""
+      }
     ],
     "answer": "1",
     "blanks": [],
@@ -608,10 +650,22 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(f^2 - 14f + 49\\)",
     "options": [
-      "\\((f - 49)(f + 1)\\)",
-      "\\((f - 7)(f + 7)\\)",
-      "\\((f - 7)^2\\)",
-      "\\((f + 7)^2\\)"
+      {
+        "text": "\\((f + 7)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((f - 7)(f + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((f - 7)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((f - 49)(f + 1)\\)",
+        "imageUrl": ""
+      }
     ],
     "answer": "2",
     "blanks": [],
@@ -791,12 +845,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(a^2 - b^2 + 5a - 5b\\)",
     "options": [
-      "\\((a - b)^2 + 5\\)",
-      "\\((a - b)(a + b + 5)\\)",
-      "\\((a + b)(a - b + 5)\\)",
-      "\\((a - b)(a + b - 5)\\)"
+      {
+        "text": "\\((a - b)(a + b - 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(a - b + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(a + b + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)^2 + 5\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor the difference of squares then factor out 5.",
     "solution": "\\((a-b)(a+b) + 5(a-b) = (a-b)(a+b+5)\\)",
@@ -842,12 +908,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(x^2z + yz - x^2w - yw\\)",
     "options": [
-      "\\((x^2 + y)(z - w)\\)",
-      "\\((x^2 - y)(z + w)\\)",
-      "\\((x^2 + z)(y - w)\\)",
-      "\\((xz + y)(x - w)\\)"
+      {
+        "text": "\\((xz + y)(x - w)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x^2 - y)(z + w)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x^2 + y)(z - w)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x^2 + z)(y - w)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping in pairs.",
     "solution": "\\(z(x^2+y) - w(x^2+y) = (x^2+y)(z-w)\\)",
@@ -1213,10 +1291,22 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(p^3 + 5p^2 + 3p + 15\\)",
     "options": [
-      "\\((p^2 + 5)(p + 3)\\)",
-      "\\((p + 1)(p^2 + 15)\\)",
-      "\\(p(p^2 + 5p + 3) + 15\\)",
-      "\\((p^2 + 3)(p + 5)\\)"
+      {
+        "text": "\\((p^2 + 5)(p + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(p(p^2 + 5p + 3) + 15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p + 1)(p^2 + 15)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((p^2 + 3)(p + 5)\\)",
+        "imageUrl": ""
+      }
     ],
     "answer": "3",
     "blanks": [],
@@ -1932,10 +2022,22 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(12c^2 + 48c\\)",
     "options": [
-      "\\(12(c^2 + 4c)\\)",
-      "\\(12c(c + 4)\\)",
-      "\\(12c(c + 48)\\)",
-      "\\(c(12c + 48)\\)"
+      {
+        "text": "\\(12(c^2 + 4c)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12c(c + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(c(12c + 48)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12c(c + 48)\\)",
+        "imageUrl": ""
+      }
     ],
     "answer": "1",
     "blanks": [],
@@ -2067,12 +2169,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(6m^2 + m - 12\\)",
     "options": [
-      "\\((6m + 4)(m - 3)\\)",
-      "\\((2m + 3)(3m - 4)\\)",
-      "\\((2m - 3)(3m + 4)\\)",
-      "\\((3m + 4)(2m - 3)\\)"
+      {
+        "text": "\\((6m + 4)(m - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3m + 4)(2m - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2m + 3)(3m - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2m - 3)(3m + 4)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\(6m^2 - 8m + 9m - 12 = 2m(3m-4) + 3(3m-4) = (2m+3)(3m-4)\\)",
@@ -2122,12 +2236,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(2k^2 - 9k - 5\\)",
     "options": [
-      "\\((2k + 1)(k - 5)\\)",
-      "\\((2k + 5)(k - 1)\\)",
-      "\\((k - 5)(2k - 1)\\)",
-      "\\((2k - 1)(k + 5)\\)"
+      {
+        "text": "\\((2k - 1)(k + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((k - 5)(2k - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2k + 5)(k - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2k + 1)(k - 5)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\(2k^2 - 10k + k - 5 = 2k(k-5) + 1(k-5) = (2k+1)(k-5)\\)",
@@ -2153,12 +2279,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(4l^2 - 11l + 6\\)",
     "options": [
-      "\\((2l - 3)(2l - 2)\\)",
-      "\\((l - 6)(4l - 1)\\)",
-      "\\((4l - 3)(l - 2)\\)",
-      "\\((4l - 2)(l - 3)\\)"
+      {
+        "text": "\\((4l - 2)(l - 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4l - 3)(l - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((l - 6)(4l - 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2l - 3)(2l - 2)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Factor by grouping.",
     "solution": "\\(4l^2 - 8l - 3l + 6 = 4l(l-2) - 3(l-2) = (4l-3)(l-2)\\)",
@@ -2248,10 +2386,22 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(ax - bx - 4a + 4b\\)",
     "options": [
-      "\\((a - b)(x + 4)\\)",
-      "\\((a + b)(x - 4)\\)",
-      "\\((a - b)(x - 4)\\)",
-      "\\((ax - 4)(b - 1)\\)"
+      {
+        "text": "\\((a - b)(x + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a + b)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((a - b)(x - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((ax - 4)(b - 1)\\)",
+        "imageUrl": ""
+      }
     ],
     "answer": "2",
     "blanks": [],
@@ -2715,12 +2865,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(h^2 - 2h - 48\\)",
     "options": [
-      "\\((h - 12)(h + 4)\\)",
-      "\\((h - 8)^2\\)",
-      "\\((h - 8)(h + 6)\\)",
-      "\\((h + 8)(h - 6)\\)"
+      {
+        "text": "\\((h - 12)(h + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((h - 8)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((h + 8)(h - 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((h - 8)(h + 6)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "2",
+    "answer": "3",
     "blanks": [],
     "hint": "Find numbers that multiply to -48 and add to -2.",
     "solution": "\\(-8 \\times 6 = -48, -8 + 6 = -2 \\rightarrow (h-8)(h+6)\\)",
@@ -2830,12 +2992,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(x^2 - 81\\)",
     "options": [
-      "\\((x - 27)(x + 27)\\)",
-      "\\((x - 9)(x + 9)\\)",
-      "\\((x - 9)^2\\)",
-      "\\((x + 9)^2\\)"
+      {
+        "text": "\\((x + 9)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 9)^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 9)(x + 9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x - 27)(x + 27)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Difference of squares: $x^2 - 9^2$.",
     "solution": "\\((x-9)(x+9)\\)",
@@ -2901,12 +3075,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(35b - 49\\)",
     "options": [
-      "\\(7(5b + 7)\\)",
-      "\\(5(7b - 7)\\)",
-      "\\(7(5b - 7)\\)",
-      "\\(7b(5 - 7)\\)"
+      {
+        "text": "\\(7(5b - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5(7b - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7(5b + 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7b(5 - 7)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "2",
+    "answer": "0",
     "blanks": [],
     "hint": "Find the HCF of 35 and 49.",
     "solution": "\\(7(5b) - 7(7) = 7(5b - 7)\\)",
@@ -3156,12 +3342,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(e^2 + 11e + 24\\)",
     "options": [
-      "\\((e + 3)(e + 8)\\)",
-      "\\((e + 4)(e + 6)\\)",
-      "\\((e - 3)(e - 8)\\)",
-      "\\((e + 2)(e + 12)\\)"
+      {
+        "text": "\\((e + 2)(e + 12)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((e - 3)(e - 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((e + 4)(e + 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((e + 3)(e + 8)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Find numbers that multiply to 24 and add to 11.",
     "solution": "\\(3 \\times 8 = 24, 3 + 8 = 11 \\rightarrow (e+3)(e+8)\\)",
@@ -3363,12 +3561,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(i^2 + 3i - 40\\)",
     "options": [
-      "\\((i + 8)(i - 5)\\)",
-      "\\((i + 10)(i - 4)\\)",
-      "\\((i - 8)(i + 5)\\)",
-      "\\((i + 20)(i - 2)\\)"
+      {
+        "text": "\\((i + 20)(i - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((i - 8)(i + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((i + 10)(i - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((i + 8)(i - 5)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "0",
+    "answer": "3",
     "blanks": [],
     "hint": "Find numbers that multiply to -40 and add to 3.",
     "solution": "\\(8 \\times -5 = -40, 8 - 5 = 3 \\rightarrow (i+8)(i-5)\\)",
@@ -3434,12 +3644,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(24a + 60\\)",
     "options": [
-      "\\(12(2a + 5)\\)",
-      "\\(6(4a + 10)\\)",
-      "\\(12a(2 + 5)\\)",
-      "\\(12(a + 5)\\)"
+      {
+        "text": "\\(12(a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12a(2 + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12(2a + 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6(4a + 10)\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Find the HCF of 24 and 60.",
     "solution": "\\(12(2a) + 12(5) = 12(2a + 5)\\)",
@@ -3533,12 +3755,24 @@ export const Y11_CH1B_QUESTIONS = [
     "timeLimit": 120,
     "question": "\\(xy + 2x + 3y + 6\\)",
     "options": [
-      "\\((x + 3)(y + 2)\\)",
-      "\\((x + 2)(y + 3)\\)",
-      "\\((x + y)(2 + 3)\\)",
-      "\\(x(y + 2) + 3\\)"
+      {
+        "text": "\\((x + y)(2 + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 2)(y + 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((x + 3)(y + 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x(y + 2) + 3\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "0",
+    "answer": "2",
     "blanks": [],
     "hint": "Factor by grouping in pairs.",
     "solution": "\\(x(y+2) + 3(y+2) = (x+3)(y+2)\\)",

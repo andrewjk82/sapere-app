@@ -185,7 +185,22 @@ const extractRhs = (s) => {
 
 const isAlgebraicStr = (str) => {
   if (!str) return false;
-  const s = String(str).toLowerCase();
+  const s = String(str).toLowerCase().trim();
+  // If the entire string is a number followed only by measurement units, it's NOT algebraic.
+  // e.g. "15m", "120m", "9355 m", "45°", "30cm²" — these are numeric answers with units.
+  // Strip known units and see if only a number remains.
+  const unitStripped = s
+    .replace(/\\text\s*\{[^{}]*\}/g, '')
+    .replace(/\s*(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?)\s*/gi, '')
+    .replace(/\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|mj|kj)\s*/gi, '')
+    .replace(/(\d)\s*m\b/g, '$1')
+    .replace(/(\d)\s*g\b/g, '$1')
+    .replace(/(\d)\s*[Ll]\b/g, '$1')
+    .replace(/(\d)\s*s\b/g, '$1')
+    .replace(/[°%]/g, '')
+    .trim();
+  if (/^-?\d+(?:[.,]\d+)?(?:\/\d+)?$/.test(unitStripped)) return false;
+
   // If it has any algebraic variable: a, b, c, d, e, f, h, i, j, k, n, o, p, q, r, t, u, v, w, x, y, z
   if (/[a-fh-ik-np-rt-uvw-zθαβ]/.test(s)) return true;
   if (/[\/^*-]/.test(s) && /[a-z]/.test(s)) return true;

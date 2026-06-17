@@ -263,12 +263,24 @@ export const Y11_CH1F_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\(x^2 + 12x + 10 = 0\\) by completing the square.",
     "options": [
-      "\\(6 \\pm \\sqrt{26}\\)",
-      "\\(-6 \\pm \\sqrt{10}\\)",
-      "\\(-6 \\pm \\sqrt{26}\\)",
-      "\\(-12 \\pm \\sqrt{26}\\)"
+      {
+        "text": "\\(-6 \\pm \\sqrt{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6 \\pm \\sqrt{26}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6 \\pm \\sqrt{26}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12 \\pm \\sqrt{26}\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "2",
+    "answer": "1",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 36$.",
     "solution": "\\(x^2 + 12x + 36 = 26 \\Rightarrow (x+6)^2 = 26 \\Rightarrow x = -6 \\pm \\sqrt{26}\\)",
@@ -795,12 +807,24 @@ export const Y11_CH1F_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\(x^2 - 4x = 11\\) by completing the square.",
     "options": [
-      "\\(2 \\pm \\sqrt{11}\\)",
-      "\\(4 \\pm \\sqrt{15}\\)",
-      "\\(-2 \\pm \\sqrt{15}\\)",
-      "\\(2 \\pm \\sqrt{15}\\)"
+      {
+        "text": "\\(2 \\pm \\sqrt{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2 \\pm \\sqrt{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\pm \\sqrt{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2 \\pm \\sqrt{11}\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "3",
+    "answer": "0",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 4$.",
     "solution": "\\(x^2 - 4x + 4 = 15 \\Rightarrow (x-2)^2 = 15 \\Rightarrow x = 2 \\pm \\sqrt{15}\\)",
@@ -883,12 +907,24 @@ export const Y11_CH1F_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\(x^2 + 6x = 5\\) by completing the square.",
     "options": [
-      "\\(-3 \\pm \\sqrt{5}\\)",
-      "\\(-3 \\pm \\sqrt{14}\\)",
-      "\\(-6 \\pm \\sqrt{14}\\)",
-      "\\(3 \\pm \\sqrt{14}\\)"
+      {
+        "text": "\\(3 \\pm \\sqrt{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6 \\pm \\sqrt{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3 \\pm \\sqrt{14}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3 \\pm \\sqrt{5}\\)",
+        "imageUrl": ""
+      }
     ],
-    "answer": "1",
+    "answer": "2",
     "blanks": [],
     "hint": "Add $(b/2)^2 = 9$ to both sides.",
     "solution": "\\(x^2 + 6x + 9 = 14 \\Rightarrow (x+3)^2 = 14 \\Rightarrow x = -3 \\pm \\sqrt{14}\\)",
@@ -971,10 +1007,22 @@ export const Y11_CH1F_QUESTIONS = [
     "timeLimit": 120,
     "question": "Solve \\(x^2 - 8x + 4 = 0\\) by completing the square.",
     "options": [
-      "\\(4 \\pm 2\\sqrt{3}\\)",
-      "\\(4 \\pm \\sqrt{12}\\)",
-      "\\(8 \\pm 2\\sqrt{3}\\)",
-      "\\(-4 \\pm 2\\sqrt{3}\\)"
+      {
+        "text": "\\(4 \\pm 2\\sqrt{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4 \\pm 2\\sqrt{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4 \\pm \\sqrt{12}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8 \\pm 2\\sqrt{3}\\)",
+        "imageUrl": ""
+      }
     ],
     "answer": "0",
     "blanks": [],

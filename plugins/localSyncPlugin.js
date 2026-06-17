@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { exec } from 'child_process';
 import { parse } from '@babel/parser';
 import _traverse from '@babel/traverse';
 import _generate from '@babel/generator';
@@ -48,7 +49,6 @@ export default function localSyncPlugin() {
         }
 
         if (req.url === '/__local-api/sync-all' && req.method === 'POST') {
-          const { exec } = await import('child_process');
           exec('npm run sync-seeds', (error, stdout, stderr) => {
             res.setHeader('Content-Type', 'application/json');
             if (error) {

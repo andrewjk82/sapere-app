@@ -122,7 +122,7 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   // Number must be consumed whole (no backtracking into "$10" + ".75") and a
   // following arithmetic operator (+ \u2212 = ? etc.) is still money, not algebra:
   // generator questions like "$10.75 + $7.75 = ?" must keep BOTH dollar signs.
-  str = str.replace(/(?<!\$)\$(?!\$)(\s*\d+(?:[.,]\d+)*)(?![\d.,]?[a-zA-Z^])(?=\s+[a-zA-Z]|\s*$|\s*[.,)?]|\s*[-+\u2212\u2013=<>])/g, CURRENCY_PLACEHOLDER + '$1');
+  str = str.replace(/(?<![\$\\])\$(?!\$)(\s*\d+(?:[.,]\d+)*)(?![\d.,]?[a-zA-Z^])(?=\s+[a-zA-Z]|\s*$|\s*[.,)?]|\s*[-+\u2212\u2013=<>])/g, CURRENCY_PLACEHOLDER + '$1');
 
   // 4. Tokenize to separate Math Blocks from Plain Text
   // This prevents wrapping commands that are already inside $...$ or \(...\)
