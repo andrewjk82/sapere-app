@@ -13,14 +13,14 @@ const stripUnits = (s, isAlgebraic = false) =>
     // Standalone unit words / abbreviations at the end or after a digit
     // Order matters: longer words first to avoid partial matches
     .replace(/\b(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?|cm²|m²|km²|cm³|m³)\b/gi, '')
-    .replace(/(?<=\d)\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\b/g, '')
-    .replace(/(?:\b|(?<=\d))\s*(?:celsius|centigrade|fahrenheit)\b/gi, '')
-    .replace(/(?:(?<=\d)|\b)\s*units?\b/gi, '')
+    .replace(/(\d)\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\b/g, '$1')
+    .replace(/(\d)?\s*(?:celsius|centigrade|fahrenheit)\b/gi, (match, d) => d ? d : '')
+    .replace(/(\d)?\s*units?\b/gi, (match, d) => d ? d : '')
     // Only strip single-letter unit suffixes if NOT an algebraic context
-    .replace(/(?<=\d)\s*m\b/g, isAlgebraic ? 'm' : '')   // trailing "m" after a number
-    .replace(/(?<=\d)\s*g\b/g, isAlgebraic ? 'g' : '')   // trailing "g"
-    .replace(/(?<=\d)\s*L\b/gi, isAlgebraic ? 'L' : '')  // trailing "L" / "l"
-    .replace(/(?<=\d)\s*s\b/g, isAlgebraic ? 's' : '')   // trailing "s" (seconds)
+    .replace(/(\d)\s*m\b/g, (match, d) => isAlgebraic ? d + 'm' : d)   // trailing "m" after a number
+    .replace(/(\d)\s*g\b/g, (match, d) => isAlgebraic ? d + 'g' : d)   // trailing "g"
+    .replace(/(\d)\s*L\b/gi, (match, d) => isAlgebraic ? d + (match.trim() === 'l' ? 'l' : 'L') : d)  // trailing "L" / "l"
+    .replace(/(\d)\s*s\b/g, (match, d) => isAlgebraic ? d + 's' : d)   // trailing "s" (seconds)
     // LaTeX percent \% → %
     .replace(/\\%/g, '%');
 

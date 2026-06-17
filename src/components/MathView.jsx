@@ -66,12 +66,19 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   // 3a. Wrap LaTeX environments (aligned/cases/matrix/…) in display math so
   // KaTeX renders them. They often arrive as raw LaTeX without $ delimiters
   // (e.g. solution "workingOut" fields), which would otherwise show literally.
-  // The lookbehind/ahead avoid double-wrapping an already-delimited block.
-  // Also skip environments already inside \(...\) or \[...\] delimiters.
-  str = str.replace(
-    /(?<!\$|\\\(|\\\[)\\begin\{(aligned|aligned\*|align|align\*|alignedat|array|cases|matrix|pmatrix|bmatrix|vmatrix|Bmatrix|gathered|gather|split)\}[\s\S]*?\\end\{\1\}(?!\$|\\\)|\\\])/g,
-    (m) => `$$${m}$$`,
-  );
+  // We match them and check the preceding and succeeding characters manually to avoid lookbehinds/lookaheads.
+  const envRegex = /\\begin\{(aligned|aligned\*|align|align\*|alignedat|array|cases|matrix|pmatrix|bmatrix|vmatrix|Bmatrix|gathered|gather|split)\}[\s\S]*?\\end\{\1\}/g;
+  str = str.replace(envRegex, (match, envName, offset, fullStr) => {
+    const before = fullStr.slice(Math.max(0, offset - 3), offset);
+    if (before.endsWith('$') || before.endsWith('\\(') || before.endsWith('\\[')) {
+      return match;
+    }
+    const after = fullStr.slice(offset + match.length, offset + match.length + 3);
+    if (after.startsWith('$') || after.startsWith('\\)') || after.startsWith('\\]')) {
+      return match;
+    }
+    return `$$${match}$$`;
+  });
 
   // 3c. Pure-LaTeX expression with NO delimiters (typical of solution
   // "workingOut" fields). Piecemeal command-wrapping cannot handle
@@ -115,14 +122,32 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   // Left as-is it would open a spurious math block and swallow the text + $.
   // We swap currency dollars for a private-use placeholder so the tokenizer
   // ignores them, then restore literal "$" before returning.
-  //   - lookbehind/ahead keep real "$$...$$" display-math untouched
+  //   - we inspect the surrounding characters manually to avoid regex lookbehinds/lookaheads
   //   - the trailing (?![\d.,]*[a-zA-Z^]) ensures "$3x^2$" / "$5y$" stay MATH:
   //     a number followed by a letter/caret is algebra, not money.
   const CURRENCY_PLACEHOLDER = '\uE000';
   // Number must be consumed whole (no backtracking into "$10" + ".75") and a
   // following arithmetic operator (+ \u2212 = ? etc.) is still money, not algebra:
   // generator questions like "$10.75 + $7.75 = ?" must keep BOTH dollar signs.
-  str = str.replace(/(?<![\$\\])\$(?!\$)(\s*\d+(?:[.,]\d+)*)(?![\d.,]?[a-zA-Z^])(?=\s+[a-zA-Z]|\s*$|\s*[.,)?]|\s*[-+\u2212\u2013=<>])/g, CURRENCY_PLACEHOLDER + '$1');
+  str = str.replace(/\$(\s*\d+(?:[.,]\d+)*)/g, (match, numGroup, offset, fullStr) => {
+    const beforeChar = offset > 0 ? fullStr[offset - 1] : '';
+    if (beforeChar === '$' || beforeChar === '\\') {
+      return match;
+    }
+    const afterIndex = offset + match.length;
+    const afterChar = afterIndex < fullStr.length ? fullStr[afterIndex] : '';
+    if (afterChar === '$') {
+      return match;
+    }
+    const rest = fullStr.slice(afterIndex);
+    if (/^[\d.,]?[a-zA-Z^]/.test(rest)) {
+      return match;
+    }
+    if (!/^(?:\s+[a-zA-Z]|\s*$|\s*[.,)?]|\s*[-+\u2212\u2013=<>])/.test(rest)) {
+      return match;
+    }
+    return CURRENCY_PLACEHOLDER + numGroup;
+  });
 
   // 4. Tokenize to separate Math Blocks from Plain Text
   // This prevents wrapping commands that are already inside $...$ or \(...\)
