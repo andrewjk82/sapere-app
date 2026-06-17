@@ -258,7 +258,138 @@ For pure geometry (circles, radii, triangles, sectors) rather than function plot
   angle marks (30°, 60°, 1 radian, ∠AOB) anywhere on the diagram.
 - For a round circle keep the graph **square** with symmetric ranges (see `circles`).
 
-### 3.4 `placeValueTable` — number place columns (arithmetic lessons)
+### 3.4 `workingOut` — step-by-step equation reveal ⭐
+Lines of working that **slide in one at a time**, each at its own `delay`.
+Use instead of `mathRow` whenever the narration walks through calculation steps
+rather than comparing multiple separate formulas.
+
+```js
+{ type: 'workingOut', align: 'center', lines: [
+  { math: `$$\\dfrac{65}{100} = 0.65$$`,  delay: 0.5,  color: '#059669', result: '65 ÷ 100' },
+  { math: `$$\\dfrac{37.5}{100} = 0.375$$`, delay: 1.2, color: '#f59e0b', result: '37.5 ÷ 100' },
+  { math: `$$\\dfrac{150}{100} = 1.5$$`,  delay: 1.9,  color: '#ef4444', result: '150 ÷ 100' },
+]}
+```
+
+- `align: 'center'` — all lines centred (default `'left'`, left-to-right slide).
+- `line.math` — LaTeX wrapped in `$$…$$`. Use `\dfrac` for tall fractions.
+- `line.delay` — seconds before this line appears. Stagger to match narration pace.
+- `line.color` — **match the colour of the corresponding graph element** (e.g. if the
+  number-line dot is green, the equation for that value is green too). Colours both
+  the math text and the result chip.
+- `line.result` — amber chip (e.g. `'65 ÷ 100'`). Use for a concise operation label.
+- `line.note` — operation note chip (e.g. `'÷5 both sides'`). Always amber.
+
+**Show the full working, not just the answer.** When rationalising a denominator
+or simplifying a fraction, show **both numerator AND denominator** with the
+operation applied:
+```js
+// ✅ CORRECT — student sees what ÷5 does to both parts
+{ math: `$$\\dfrac{65 \\div 5}{100 \\div 5} = \\dfrac{13}{20}$$` }
+
+// ❌ WRONG — student has to guess where the 13 came from
+{ math: `$$\\dfrac{65}{100} = \\dfrac{13}{20}$$` }
+```
+
+### 3.5 `percentGrid` — 10 × 10 animated percentage grid
+100 squares that **fill row-by-row (Phase 1)** then **first N squares change
+colour (Phase 2)**, so students literally watch a percentage being built.
+
+```js
+{ type: 'percentGrid', count: 65, color: '#7c3aed',
+  label: '65 out of 100 = 65%', cellSize: 25, gap: 3 }
+```
+
+- `count` — how many squares to shade (0–100). Mirrors the percentage.
+- `color` — accent colour for shaded squares. Unfilled squares are always `#ede9fe`
+  (light purple). **Do not make unfilled squares transparent / white** — they must
+  start filled with `#ede9fe` so students see the grid before the colour wave hits.
+- `cellSize` — square side in px (default 25). Use 24 or smaller when the grid must
+  share space with other board items.
+- `label` — caption below the grid; appears after Phase 2 completes.
+
+**Animation rule:** Phase 1 (rows appear) takes ~0.8 s. Phase 2 (colour fill)
+starts at 0.85 s and flows left-to-right, top-to-bottom at 0.022 s per cell.
+A `count: 50` grid finishes filling at ≈ 1.95 s; `count: 100` at ≈ 3.05 s.
+
+### 3.6 `percentGridRow` — multiple grids side-by-side ⭐
+Shows 2–3 grids in a horizontal row, each filling sequentially. Use when the
+narration compares multiple fractions/percentages at once.
+
+```js
+{ type: 'percentGridRow', grids: [
+  { count: 20, fillDelay: 0.85, color: '#7c3aed',
+    equation: `$$\\dfrac{2}{10} = \\dfrac{20}{100} = 20\\%$$`,
+    note: '×10 both' },
+  { count: 60, fillDelay: 2.1,  color: '#059669',
+    equation: `$$\\dfrac{3}{5}  = \\dfrac{60}{100} = 60\\%$$`,
+    note: '×20 both' },
+  { count: 15, fillDelay: 4.5,  color: '#f59e0b',
+    equation: `$$\\dfrac{3}{20} = \\dfrac{15}{100} = 15\\%$$`,
+    note: '×5 both'  },
+]}
+```
+
+- `grids[i].fillDelay` — absolute seconds when this grid's Phase 2 (colour fill)
+  starts. **Stagger so grids fill one after another**, not simultaneously.
+  Rule of thumb: `fillDelay[i+1] ≈ fillDelay[i] + count[i] * 0.02 + 0.8`.
+- `grids[i].equation` — LaTeX shown below the grid, appearing only after *this*
+  grid's fill completes. Use `\dfrac` for readability. Keep it tight — the equation
+  sits under a ~170 px wide grid.
+- `grids[i].note` — small amber pill below the equation (e.g. `'×10 both'`).
+- `grids[i].color` — use **a distinct colour per grid** so students can tell them
+  apart at a glance even before the equations appear.
+
+**Three grids at cellSize 17 (default) fit comfortably on a 860 px board.** For
+two grids use cellSize 24.
+
+### 3.7 `percentTableInteractive` — clickable fraction → grid ⭐ (interactive)
+A table of fraction/percent pairs where tapping a column **re-animates the grid
+below** to show that value. Use on *memorise* or *recap* steps so students actively
+engage rather than passively watch.
+
+```js
+{ type: 'percentTableInteractive', defaultIndex: 3, pairs: [
+  { fraction: '\\tfrac{1}{2}',  percent: '50\\%',              count: 50,  color: '#7c3aed', label: '½ = 50%'  },
+  { fraction: '\\tfrac{1}{4}',  percent: '25\\%',              count: 25,  color: '#0ea5e9', label: '¼ = 25%'  },
+  { fraction: '\\tfrac{3}{4}',  percent: '75\\%',              count: 75,  color: '#059669', label: '¾ = 75%'  },
+  // … up to ~9 pairs
+]}
+```
+
+- `defaultIndex` — which pair is selected on load (zero-based).
+- `pairs[i].fraction` — LaTeX; use `\tfrac` (text-size) to keep cells compact.
+- `pairs[i].percent` — LaTeX for the % value (e.g. `'33\\tfrac{1}{3}\\%'`).
+- `pairs[i].count` — integer 0–100; drives the grid fill.
+- `pairs[i].color` — **unique colour per pair**; used for the column highlight, the
+  grid fill, and the label text.
+- `pairs[i].label` — caption below the grid after fill completes.
+
+**A bouncing "👆 Tap any fraction…" hint banner** appears automatically above the
+table until the student taps once, then fades out. No config needed.
+
+**Narration:** phrase the speech to invite interaction explicitly:
+```
+speech: 'Now try tapping any fraction in the table — watch the grid update!'
+```
+
+### 3.8 `conversionTriangle` — animated % ↔ Fraction ↔ Decimal diagram
+A purpose-built SVG diagram with three gradient pill nodes and three animated
+arrows. Use only on the **summary step** of a percentages/fractions lesson.
+
+```js
+{ type: 'conversionTriangle' }
+```
+
+No props — the layout, colours, labels, and animation timings are all fixed.
+If you need a different triangle for another lesson, create a new dedicated
+component rather than trying to parameterise this one.
+
+**Arrow labels must not overlap arrows.** Labels are rendered as white pill
+badges that appear 0.1 s after their arrow, sitting clear of the line. Do not
+use SVG `<text>` directly on top of a diagonal path — it becomes unreadable.
+
+### 3.9 `placeValueTable` — number place columns (arithmetic lessons)
 Used by `buildPlaceValueLesson`. Columns `{ name, digit, value, power,
 showDigit, showValue, showPower, active }`; `active` lifts/highlights the column.
 
@@ -343,6 +474,12 @@ return { emoji: '📐', title: '…', steps, glossary: { ...BASE_GLOSSARY, /* to
 | "here is a table of values" | `valueTable` then the `graph` |
 | "the result / limit is …" | `math` with `emphasis: true` |
 | recap step: mentions 5 formulas in order | `mathRow` with one coloured card per formula, `delay` matching narration order |
+| "shade in 50 boxes" | `percentGrid` with `count:50` — grid must visually fill to *exactly* 50 |
+| "shade only 3 boxes" | **separate step** with `count:3` — never combine with the 50-box step; the animation must *show* 3, not jump past it |
+| "watch each one fill in" — comparing 3 fractions | `percentGridRow` with 3 grids, staggered `fillDelay`; each equation appears only after its own grid finishes |
+| "try them all / tap to explore" | `percentTableInteractive`; narration must explicitly invite tapping |
+| "these three forms are interchangeable" (% / fraction / decimal summary) | `conversionTriangle` |
+| working-out steps with a colour-coded graph above | `workingOut` with `line.color` **matching** the graph colours (e.g. green dot → green equation) |
 
 Pace the lesson **one idea per step**. Re-show the same graph across steps but
 change *only* the highlight/point/trace that the current sentence is about — so
@@ -447,6 +584,16 @@ character (e.g. a caricature of the teacher):
 - **`buildAsymptotesLesson`** (`y11a-3H`) — uses `graph` with `curves`,
   highlighted `asymptotes`, pulsing `points`, and **`traces` that run to the
   limits**. This is the model for any graphing lesson.
+- **`buildPercentagesLesson`** (`y7-14a`) — the richest template for arithmetic
+  lessons. Uses `percentGrid`, `percentGridRow`, `workingOut`, `numberLine`,
+  `percentTableInteractive`, and `conversionTriangle`. Study this lesson for:
+  - How to split a concept into individual steps (50% step ≠ 3% step — they are
+    different steps because the animations must show *different* counts).
+  - How to colour-match `workingOut` lines to `numberLine` dots.
+  - How to build a clickable interactive component (`percentTableInteractive`)
+    with a hint banner that disappears on first interaction.
+  - How to make a custom SVG diagram (`conversionTriangle`) look polished with
+    gradient nodes, drop shadows, and pill-badge arrow labels.
 
 ---
 
@@ -469,6 +616,20 @@ character (e.g. a caricature of the teacher):
       `\color{}` in the matching formula.
 - [ ] Recap steps use `mathRow` with one coloured card per formula, delays ordered
       to match the narration.
+- [ ] `workingOut` lines show **full working on both sides** of an operation
+      (e.g. `(65÷5)/(100÷5)`, never just the before and after).
+- [ ] `workingOut` line colours **match** any related graph/numberLine colours
+      on the same step — student's eye maps equation ↔ visual at a glance.
+- [ ] `percentGrid` squares start as `#ede9fe` (light purple filled), **not transparent**.
+      The colour wave changes filled squares — do not make the grid appear empty first.
+- [ ] When narration says "shade N boxes", there is a dedicated step with `count:N`.
+      Never combine different counts in one step hoping the animation "implies" both.
+- [ ] Multiple percentage comparisons use `percentGridRow`, not a single grid.
+      Each grid has a unique colour and a staggered `fillDelay`.
+- [ ] "Memorise / explore" steps use `percentTableInteractive`; narration invites tapping.
+- [ ] Summary triangle step uses `conversionTriangle` (not the generic `graph` type).
+- [ ] Arrow labels in custom SVG diagrams are pill badges (white rect + border),
+      never raw `<text>` overlaid on a diagonal line.
 - [ ] One idea per step; graphs reuse the same window so motion is comparable.
 - [ ] `topicId` matches `curriculumData.js`.
 - [ ] **`audioBase` is set** in the `LESSONS` registration — never `null` or omitted.
