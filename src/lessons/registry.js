@@ -1723,10 +1723,10 @@ export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
             { n: 1.5,   label: '150% = 1.5',    color: RED, delay: 1.4,  pulse: true, labelPos: 'below' },
           ],
         },
-        { type: 'workingOut', align: 'left', lines: [
-          { math: `$$65\\%   = \\frac{65}{100}   = 0.65$$`,   delay: 0.5,  result: '65 ÷ 100' },
-          { math: `$$37.5\\% = \\frac{37.5}{100} = 0.375$$`,  delay: 1.2,  result: '37.5 ÷ 100' },
-          { math: `$$150\\%  = \\frac{150}{100}  = 1.5$$`,    delay: 1.9,  result: '150 ÷ 100' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$65\\%   = \\dfrac{65}{100}   = 0.65$$`,   delay: 0.5,  color: GRN, result: '65 ÷ 100' },
+          { math: `$$37.5\\% = \\dfrac{37.5}{100} = 0.375$$`,  delay: 1.2,  color: AMB, result: '37.5 ÷ 100' },
+          { math: `$$150\\%  = \\dfrac{150}{100}  = 1.5$$`,    delay: 1.9,  color: RED, result: '150 ÷ 100' },
         ]},
       ],
     },

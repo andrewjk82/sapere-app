@@ -704,7 +704,7 @@ const WorkingOut = ({ lines = [], align = 'left' }) => (
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: line.delay ?? i * 0.65, duration: 0.35, ease: 'easeOut' }}
         style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-        {line.math && <MathView content={line.math} style={{ fontSize: '1.35rem', fontWeight: 600, color: '#1e1b4b' }} />}
+        {line.math && <MathView content={line.math} style={{ fontSize: '1.35rem', fontWeight: 600, color: line.color || '#1e1b4b' }} />}
         {line.note && (
           <motion.span
             initial={{ opacity: 0, scale: 0.85 }}
@@ -714,15 +714,18 @@ const WorkingOut = ({ lines = [], align = 'left' }) => (
             {line.note}
           </motion.span>
         )}
-        {line.result && (
-          <motion.span
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: (line.delay ?? i * 0.65) + 0.28, type: 'spring', stiffness: 320, damping: 22 }}
-            style={{ fontSize: '0.8rem', fontWeight: 800, color: '#059669', background: 'rgba(5,150,105,0.10)', padding: '4px 11px', borderRadius: 8, border: '1.5px solid #6ee7b7', whiteSpace: 'nowrap' }}>
-            {line.result}
-          </motion.span>
-        )}
+        {line.result && (() => {
+          const c = line.color || '#059669';
+          return (
+            <motion.span
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: (line.delay ?? i * 0.65) + 0.28, type: 'spring', stiffness: 320, damping: 22 }}
+              style={{ fontSize: '0.8rem', fontWeight: 800, color: c, background: `${c}18`, padding: '4px 11px', borderRadius: 8, border: `1.5px solid ${c}70`, whiteSpace: 'nowrap' }}>
+              {line.result}
+            </motion.span>
+          );
+        })()}
       </motion.div>
     ))}
   </div>
