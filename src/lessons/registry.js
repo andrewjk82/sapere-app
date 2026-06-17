@@ -1673,7 +1673,7 @@ export const buildClockPreciseLesson = ({ audioBase = null } = {}) => {
 };
 
 // ── Year 7 · 14A · Percentages, Fractions and Decimals ──────────────────────
-const buildPercentagesLesson = ({ audioBase = null } = {}) => {
+export const buildPercentagesLesson = ({ audioBase = null } = {}) => {
   const PRP = '#7c3aed', LPRP = '#c4b5fd', GRN = '#059669', RED = '#ef4444', AMB = '#f59e0b';
 
   const steps = [
@@ -1846,7 +1846,7 @@ export const LESSONS = {
   ...CLOCK_LESSONS,
 
   // Year 7 · 14A · Percentages, fractions and decimals.
-  'y7-14a': { ...buildPercentagesLesson(), topicId: 'y7-14a' },
+  'y7-14a': { ...buildPercentagesLesson({ audioBase: '/lessons/audio/y7-14a' }), topicId: 'y7-14a' },
 
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
