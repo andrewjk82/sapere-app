@@ -6,7 +6,7 @@
  * Usage:  node scripts/generateLessonAudio.mjs
  */
 import { KokoroTTS } from 'kokoro-js';
-import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson, buildPolyhedraLesson, buildNumberLineLesson, buildClockBasicsLesson, buildClockQuartersLesson, buildClockPreciseLesson, buildTranslationsLesson, buildPercentagesLesson, buildOneQuantityAsPercentLesson, buildPercentOfQuantityLesson, buildRatiosLesson } from '../src/lessons/registry.js';
+import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson, buildPolyhedraLesson, buildNumberLineLesson, buildClockBasicsLesson, buildClockQuartersLesson, buildClockPreciseLesson, buildTranslationsLesson, buildPercentagesLesson, buildOneQuantityAsPercentLesson, buildPercentOfQuantityLesson, buildRatiosLesson, buildRatioProblemsLesson } from '../src/lessons/registry.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
@@ -15,7 +15,7 @@ const VOICE = 'bf_emma'; // British female, teacher-like
 
 // To regenerate only one lesson, comment out the others.
 const JOBS = [
-  { id: 'y7-14c', steps: buildPercentOfQuantityLesson({ audioBase: '/lessons/audio/y7-14c' }).steps, only: [4] },
+  { id: 'y7-14e', steps: buildRatioProblemsLesson({ audioBase: '/lessons/audio/y7-14e' }).steps },
 ];
 
 const main = async () => {

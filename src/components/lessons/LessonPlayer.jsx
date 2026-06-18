@@ -1644,6 +1644,141 @@ const RatioSimplifySteps = ({
   );
 };
 
+// ── Ratio Unitary Method Chain ─────────────────────────────────────────────
+// Animates the 4-step "language of parts" method:
+//   ratio bar → total parts → 1 part value → target quantity
+// Props:
+//   ratioA / ratioB  — the ratio numbers
+//   labelA / labelB  — names
+//   colorA / colorB
+//   knownSide        — 'total' | 'a' | 'b'  (what we know)
+//   knownValue       — the number we know (total or one side)
+//   findSide         — 'a' | 'b' | 'total'  (what we want to find)
+const RatioUnitaryChain = ({
+  ratioA = 3, ratioB = 5,
+  labelA = 'Red', labelB = 'Blue',
+  colorA = '#ef4444', colorB = '#3b82f6',
+  knownSide = 'total', knownValue = 48,
+  findSide = 'b',
+}) => {
+  const totalParts = ratioA + ratioB;
+  const onePart = knownSide === 'total'
+    ? knownValue / totalParts
+    : knownSide === 'a'
+      ? knownValue / ratioA
+      : knownValue / ratioB;
+
+  const ansA = ratioA * onePart;
+  const ansB = ratioB * onePart;
+  const ansTotal = totalParts * onePart;
+
+  const steps = [
+    {
+      label: 'Ratio bar',
+      content: null, // rendered as bar
+      delay: 0.1,
+    },
+    {
+      label: 'Total parts',
+      math: `${ratioA} + ${ratioB} = ${totalParts} \\text{ parts}`,
+      color: '#7c3aed',
+      delay: 0.55,
+    },
+    {
+      label: knownSide === 'total'
+        ? `${totalParts} parts = ${knownValue}`
+        : knownSide === 'a'
+          ? `${ratioA} parts = ${knownValue} ${labelA}`
+          : `${ratioB} parts = ${knownValue} ${labelB}`,
+      math: `1 \\text{ part} = ${onePart}`,
+      color: '#059669',
+      delay: 1.1,
+    },
+    {
+      label: findSide === 'a'
+        ? `${labelA}: ${ratioA} parts`
+        : findSide === 'b'
+          ? `${labelB}: ${ratioB} parts`
+          : 'Total',
+      math: findSide === 'a'
+        ? `${ratioA} \\times ${onePart} = ${ansA}`
+        : findSide === 'b'
+          ? `${ratioB} \\times ${onePart} = ${ansB}`
+          : `${totalParts} \\times ${onePart} = ${ansTotal}`,
+      color: findSide === 'a' ? colorA : findSide === 'b' ? colorB : '#f59e0b',
+      delay: 1.65,
+      highlight: true,
+    },
+  ];
+
+  return (
+    <div style={{ fontFamily: FONT, display: 'flex', flexDirection: 'column', gap: 14, width: '100%', maxWidth: 480, margin: '0 auto' }}>
+
+      {/* Ratio bar */}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }}>
+        <div style={{ height: 52, borderRadius: 12, overflow: 'hidden', display: 'flex', gap: 3 }}>
+          <motion.div initial={{ flex: 0 }} animate={{ flex: ratioA }}
+            transition={{ delay: 0.25, duration: 0.6, ease: 'easeOut' }}
+            style={{ background: colorA, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
+            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9 }}
+              style={{ color: '#fff', fontWeight: 900, fontSize: '1rem' }}>{ratioA}</motion.span>
+          </motion.div>
+          <motion.div initial={{ flex: 0 }} animate={{ flex: ratioB }}
+            transition={{ delay: 0.35, duration: 0.6, ease: 'easeOut' }}
+            style={{ background: colorB, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
+            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0 }}
+              style={{ color: '#fff', fontWeight: 900, fontSize: '1rem' }}>{ratioB}</motion.span>
+          </motion.div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 6 }}>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: colorA }}>{labelA}</span>
+          <span style={{ fontSize: '0.82rem', fontWeight: 900, color: '#374151', letterSpacing: 3 }}>{ratioA} : {ratioB}</span>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: colorB }}>{labelB}</span>
+        </div>
+      </motion.div>
+
+      {/* Step chain */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        {steps.slice(1).map((step, i) => (
+          <motion.div key={i}
+            initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: step.delay, type: 'spring', stiffness: 280, damping: 24 }}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 14,
+              background: step.highlight
+                ? `linear-gradient(135deg, ${step.color}18, ${step.color}28)`
+                : '#f8fafc',
+              border: `1.5px solid ${step.highlight ? step.color + '55' : '#e2e8f0'}`,
+              borderRadius: 14, padding: '11px 16px',
+              boxShadow: step.highlight ? `0 6px 20px ${step.color}22` : 'none',
+            }}>
+            <div style={{
+              width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
+              background: step.highlight
+                ? `linear-gradient(135deg, ${step.color}cc, ${step.color})`
+                : `linear-gradient(135deg, #7c3aedcc, #7c3aed)`,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: '#fff', fontWeight: 900, fontSize: '0.75rem',
+              boxShadow: `0 3px 10px ${step.color || '#7c3aed'}44`,
+            }}>
+              {i + 2}
+            </div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#9ca3af', marginBottom: 2 }}>{step.label}</div>
+              <MathView content={`$${step.math}$`} style={{ fontSize: step.highlight ? '1.2rem' : '1rem', fontWeight: step.highlight ? 900 : 700, color: step.color || '#1e1b4b' }} />
+            </div>
+            {step.highlight && (
+              <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
+                transition={{ delay: step.delay + 0.3, type: 'spring', stiffness: 400 }}
+                style={{ fontSize: '1.3rem' }}>✓</motion.div>
+            )}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 // ── Percentage Grid ────────────────────────────────────────────────────────
 // 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
 // top-to-bottom so students can literally watch "X out of 100" being coloured.
@@ -1731,6 +1866,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'ratioFamilyInteractive') inner = <RatioFamilyInteractive {...item} />;
   else if (item.type === 'ratioSimplifier') inner = <RatioSimplifier {...item} />;
   else if (item.type === 'ratioFractionVisual') inner = <RatioFractionVisual {...item} />;
+  else if (item.type === 'ratioUnitaryChain') inner = <RatioUnitaryChain {...item} />;
   else if (item.type === 'ratioSimplifySteps') inner = <RatioSimplifySteps {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;

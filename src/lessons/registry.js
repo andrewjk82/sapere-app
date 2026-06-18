@@ -2181,6 +2181,121 @@ export const buildRatiosLesson = ({ audioBase = null } = {}) => {
   };
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Year 7 · Chapter 15E · Solving problems with ratios
+// Textbook Ch15E: unitary method via language of parts
+// Example 15 (total known, find each part), Example 16 (one part known, find other + total)
+// ─────────────────────────────────────────────────────────────────────────────
+export const buildRatioProblemsLesson = ({ audioBase = null } = {}) => {
+  const PRP = '#7c3aed', RED = '#ef4444', BLU = '#3b82f6', GRN = '#059669', AMB = '#f59e0b', PNK = '#ec4899';
+  const audio = (i) => audioBase ? `${audioBase}/step-${i}.mp3` : null;
+
+  const steps = [
+
+    // ── Step 0 — Language of parts ───────────────────────────────────────────
+    {
+      narration: `Ratio problems are best solved using the <b>language of parts</b>. Every ratio tells you how many equal parts each group gets. If the ratio is $3:5$, there are $3+5=8$ parts in total. Once you know what <b>one part equals</b>, you can find any quantity.`,
+      speech: `Ratio problems are best solved using the language of parts. Every ratio tells you how many equal parts each group gets. If the ratio is 3 to 5, there are 3 plus 5 equals 8 parts in total. Once you know what one part equals, you can find any quantity.`,
+      audioUrl: audio(0),
+      board: [
+        { type: 'stepCards', cards: [
+          { title: 'Add the ratio', math: `$$a + b = \\text{total parts}$$`, color: PRP, delay: 0.0 },
+          { title: 'Find 1 part', math: `$$\\frac{\\text{known quantity}}{\\text{total parts}}$$`, color: GRN, delay: 0.45 },
+          { title: 'Scale to answer', math: `$$\\text{parts} \\times \\text{1 part value}$$`, color: AMB, delay: 0.9 },
+        ]},
+      ],
+    },
+
+    // ── Step 1 — Example 15 (total known → find each quantity) ──────────────
+    {
+      narration: `<b>Example 15:</b> There are 48 blue and red marbles. The ratio of red to blue is $3:5$. How many blue marbles are there? <br><br>We know the <b>total is 48</b>. Divide by the total number of parts to find what one part equals, then scale up.`,
+      speech: `Example 15: There are 48 blue and red marbles. The ratio of red to blue is 3 to 5. How many blue marbles are there? We know the total is 48. Divide by the total number of parts to find what one part equals, then scale up.`,
+      audioUrl: audio(1),
+      board: [
+        { type: 'ratioUnitaryChain',
+          ratioA: 3, ratioB: 5,
+          labelA: 'Red', labelB: 'Blue',
+          colorA: RED, colorB: BLU,
+          knownSide: 'total', knownValue: 48,
+          findSide: 'b',
+        },
+      ],
+    },
+
+    // ── Step 2 — Example 15 full working ────────────────────────────────────
+    {
+      narration: `Let's check both answers. $3 + 5 = 8$ parts. $48 ÷ 8 = 6$ marbles per part. So <b>red = 3 × 6 = 18</b> and <b>blue = 5 × 6 = 30</b>. Check: $18 + 30 = 48$ ✓`,
+      speech: `Let's check both answers. 3 plus 5 equals 8 parts. 48 divided by 8 equals 6 marbles per part. So red equals 3 times 6 equals 18, and blue equals 5 times 6 equals 30. Check: 18 plus 30 equals 48. Correct!`,
+      audioUrl: audio(2),
+      board: [
+        { type: 'ratioBar', a: 3, b: 5, labelA: 'Red (18)', labelB: 'Blue (30)', colorA: RED, colorB: BLU, note: '48 marbles total — 8 equal parts of 6 each' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$3 + 5 = 8 \\text{ parts}$$`, delay: 0.4, color: PRP },
+          { math: `$$48 \\div 8 = 6 \\text{ marbles per part}$$`, delay: 0.9, color: GRN },
+          { math: `$$\\text{red} = 3 \\times 6 = 18 \\qquad \\text{blue} = 5 \\times 6 = 30$$`, delay: 1.4, color: BLU, emphasis: true },
+          { text: 'Check: 18 + 30 = 48 ✓', delay: 2.0, color: '#6b7280' },
+        ]},
+      ],
+    },
+
+    // ── Step 3 — Example 16 (one quantity known → find other + total) ────────
+    {
+      narration: `<b>Example 16:</b> Sheep to goats is $7:3$. There are <b>24 goats</b>. <br>(a) How many sheep? &nbsp; (b) How many total? <br><br>This time we know <b>one part</b> — the goats. Use it to find the value of 1 part, then multiply for each answer.`,
+      speech: `Example 16: The ratio of sheep to goats is 7 to 3. There are 24 goats. Part a: how many sheep? Part b: how many total? This time we know one part — the goats. Use it to find the value of 1 part, then multiply for each answer.`,
+      audioUrl: audio(3),
+      board: [
+        { type: 'ratioUnitaryChain',
+          ratioA: 7, ratioB: 3,
+          labelA: 'Sheep', labelB: 'Goats',
+          colorA: AMB, colorB: PNK,
+          knownSide: 'b', knownValue: 24,
+          findSide: 'a',
+        },
+      ],
+    },
+
+    // ── Step 4 — Example 16 full working ────────────────────────────────────
+    {
+      narration: `$7 + 3 = 10$ parts total. Goats = 3 parts = 24, so <b>1 part = 8</b>. <br>(a) Sheep = $7 × 8 = $ <b>56</b>. &nbsp; (b) Total = $10 × 8 = $ <b>80</b>.`,
+      speech: `7 plus 3 equals 10 parts total. Goats equals 3 parts equals 24, so 1 part equals 8. Part a: sheep equals 7 times 8 equals 56. Part b: total equals 10 times 8 equals 80.`,
+      audioUrl: audio(4),
+      board: [
+        { type: 'ratioBar', a: 7, b: 3, labelA: 'Sheep (56)', labelB: 'Goats (24)', colorA: AMB, colorB: PNK, note: '80 animals total — 10 equal parts of 8 each' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$7 + 3 = 10 \\text{ parts}$$`, delay: 0.3, color: PRP },
+          { math: `$$3 \\text{ parts} = 24 \\implies 1 \\text{ part} = 8$$`, delay: 0.8, color: GRN },
+          { math: `$$\\textbf{a)} \\quad 7 \\times 8 = 56 \\text{ sheep}$$`, delay: 1.3, color: AMB, emphasis: true },
+          { math: `$$\\textbf{b)} \\quad 10 \\times 8 = 80 \\text{ total}$$`, delay: 1.8, color: '#374151', emphasis: true },
+        ]},
+      ],
+    },
+
+    // ── Step 5 — Summary ─────────────────────────────────────────────────────
+    {
+      narration: `<b>Two types of ratio problems — one method.</b> If the <b>total is known</b>: divide total by total parts to get 1 part value. If <b>one quantity is known</b>: divide it by its ratio number to get 1 part value. Then multiply each ratio number by the 1-part value.`,
+      speech: `Two types of ratio problems — one method. If the total is known: divide total by total parts to get 1 part value. If one quantity is known: divide it by its ratio number to get 1 part value. Then multiply each ratio number by the 1-part value.`,
+      audioUrl: audio(5),
+      board: [
+        { type: 'stepCards', cards: [
+          { title: 'Total known → ÷ total parts', math: `$$\\frac{\\text{total}}{a+b}$$`, color: BLU, delay: 0.0 },
+          { title: 'Part known → ÷ its ratio', math: `$$\\frac{\\text{part}}{a} \\text{ or } \\frac{\\text{part}}{b}$$`, color: PNK, delay: 0.45 },
+        ]},
+        { type: 'workingOut', align: 'center', lines: [
+          { text: 'Either way → 1 part value found → multiply to answer', delay: 1.1, color: '#374151' },
+          { math: `$$\\text{answer} = \\text{ratio number} \\times \\text{1 part value}$$`, delay: 1.6, color: PRP, emphasis: true },
+        ]},
+      ],
+    },
+
+  ];
+
+  return {
+    title: 'Solving Problems with Ratios',
+    subject: 'maths',
+    steps,
+  };
+};
+
 export const LESSONS = {
   // Clock Reading (Basic Calculation clock stages 1–5).
   ...CLOCK_LESSONS,
@@ -2196,6 +2311,9 @@ export const LESSONS = {
 
   // Year 7 · 14D · Ratios.
   'y7-14d': { ...buildRatiosLesson({ audioBase: '/lessons/audio/y7-14d' }), topicId: 'y7-14d' },
+
+  // Year 7 · 14E · Solving problems with ratios (textbook Ch15E).
+  'y7-14e': { ...buildRatioProblemsLesson({ audioBase: '/lessons/audio/y7-14e' }), topicId: 'y7-14e' },
 
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.
