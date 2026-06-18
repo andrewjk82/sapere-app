@@ -2059,6 +2059,122 @@ export const buildPercentOfQuantityLesson = ({ audioBase = null } = {}) => {
   };
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Year 7 · Chapter 14D · Ratios
+// Textbook Ch15D: intro, Example 11 (family 3M 7F), Example 12 (juice/water parts),
+// Example 13 (ratios & fractions), Example 14 (simplest form 625:575 → 25:23)
+// ─────────────────────────────────────────────────────────────────────────────
+export const buildRatiosLesson = ({ audioBase = null } = {}) => {
+  const PRP = '#7c3aed', GRN = '#059669', AMB = '#f59e0b', BLU = '#0ea5e9', PNK = '#ec4899';
+
+  const audio = (i) => audioBase ? `${audioBase}/step-${i}.mp3` : null;
+
+  const steps = [
+
+    // ── Step 0 — What is a ratio? ────────────────────────────────────────────
+    {
+      narration: `A <b>ratio</b> compares two or more related quantities. If there are 4 red jelly beans and 11 yellow ones, we write the ratio of red to yellow as <b>4 : 11</b> (read "4 to 11"). The <b>order matters</b> — 4 : 11 is different from 11 : 4.`,
+      speech: `A ratio compares two or more related quantities. If there are 4 red jelly beans and 11 yellow ones, we write the ratio of red to yellow as 4 to 11. The order matters — 4 to 11 is different from 11 to 4.`,
+      audio: audio(0),
+      board: [
+        { type: 'ratioBar', a: 4, b: 11, labelA: 'red', labelB: 'yellow',
+          colorA: '#ef4444', colorB: '#f59e0b',
+          note: '4 red jelly beans and 11 yellow jelly beans' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\text{red} : \\text{yellow} = 4 : 11$$`, delay: 0.6, color: '#ef4444' },
+          { text: 'The colon (:) means "to". Order matters!', delay: 1.3, color: '#6b7280' },
+        ]},
+      ],
+    },
+
+    // ── Step 1 — Example 11: family ratios (interactive) ─────────────────────
+    {
+      narration: `<b>Example 11:</b> A family has 3 males and 7 females. Tap each button below to see the three different ratios. Notice how swapping the order changes the ratio — and how <b>part to total</b> uses the sum 3 + 7 = 10.`,
+      speech: `Example 11: A family has 3 males and 7 females. Part a: males to females is 3 to 7. Part b: females to males is 7 to 3. Part c: females to total is 7 to 10, because 3 plus 7 equals 10. Tap each button to see the bar change.`,
+      audio: audio(1),
+      board: [
+        { type: 'ratioFamilyInteractive', males: 3, females: 7, colorM: PRP, colorF: PNK },
+        { type: 'workingOut', align: 'left', lines: [
+          { text: 'a)  males : females = 3 : 7', delay: 0.4, color: PRP },
+          { text: 'b)  females : males = 7 : 3', delay: 0.8, color: PNK },
+          { text: 'c)  females : total = 7 : 10', delay: 1.2, color: '#374151' },
+        ]},
+      ],
+    },
+
+    // ── Step 2 — Example 12: parts concept (30L juice, 50L water) ────────────
+    {
+      narration: `<b>Example 12:</b> A mixture has 30 litres of fruit juice and 50 litres of water. We use the <b>language of parts</b>: take 10 litres as 1 part. Then 30 L = 3 parts and 50 L = 5 parts. So juice : water = <b>3 : 5</b>.`,
+      speech: `Example 12: A mixture has 30 litres of fruit juice and 50 litres of water. Take 10 litres as 1 part. Then 30 litres equals 3 parts, and 50 litres equals 5 parts. So the ratio of fruit juice to water is 3 to 5.`,
+      audio: audio(2),
+      board: [
+        { type: 'ratioBar', a: 30, b: 50, labelA: 'juice (30 L)', labelB: 'water (50 L)',
+          colorA: GRN, colorB: BLU, note: '80 litres total' },
+        { type: 'workingOut', align: 'center', lines: [
+          { text: 'Take 10 litres = 1 part', delay: 0.5, color: '#374151' },
+          { math: `$$30 \\text{ L} = 3 \\text{ parts} \\qquad 50 \\text{ L} = 5 \\text{ parts}$$`, delay: 0.9, color: GRN },
+          { math: `$$\\text{juice} : \\text{water} = 3 : 5$$`, delay: 1.4, color: GRN, emphasis: true },
+        ]},
+      ],
+    },
+
+    // ── Step 3 — Example 13: ratios and fractions ────────────────────────────
+    {
+      narration: `<b>Ratios and fractions are linked.</b> Example 13: butter : flour = 2 : 7 in biscuit dough. There are $2 + 7 = 9$ equal parts in total, and 7 of them are flour. So the fraction of flour is $\\dfrac{7}{9}$.`,
+      speech: `Ratios and fractions are linked. Example 13: the ratio of butter to flour is 2 to 7. There are 2 plus 7 equals 9 equal parts in total, and 7 of them are flour. So the fraction of the dough that is flour is 7 ninths.`,
+      audio: audio(3),
+      board: [
+        { type: 'ratioBar', a: 2, b: 7, labelA: 'butter', labelB: 'flour',
+          colorA: AMB, colorB: '#a16207', note: 'biscuit dough — 9 parts total' },
+        { type: 'workingOut', align: 'center', lines: [
+          { math: `$$\\text{butter} : \\text{flour} = 2 : 7$$`, delay: 0.5, color: AMB },
+          { text: 'Total parts = 2 + 7 = 9', delay: 1.0, color: '#374151' },
+          { math: `$$\\text{fraction that is flour} = \\dfrac{7}{9}$$`, delay: 1.5, color: '#a16207', emphasis: true },
+        ]},
+      ],
+    },
+
+    // ── Step 4 — Example 14: simplest form (interactive) ─────────────────────
+    {
+      narration: `<b>Reducing a ratio to simplest form</b> works just like simplifying a fraction — divide both terms by their <b>HCF</b>. Example 14: 625 males out of 1200 students → 575 females. Tap <b>÷5</b> twice to reach simplest form 25 : 23.`,
+      speech: `Reducing a ratio to simplest form works just like simplifying a fraction — divide both terms by their highest common factor. Example 14: there are 625 males and 575 females. Tap divide by 5 twice to reach the simplest form of 25 to 23.`,
+      audio: audio(4),
+      board: [
+        { type: 'ratioSimplifier', a: 625, b: 575, colorA: PRP, colorB: PNK,
+          labelA: 'males', labelB: 'females' },
+        { type: 'workingOut', align: 'center', lines: [
+          { text: 'males = 625,  females = 1200 − 625 = 575', delay: 0.4, color: '#374151' },
+          { math: `$$625 : 575 \\xrightarrow{\\div 5} 125 : 115 \\xrightarrow{\\div 5} 25 : 23$$`, delay: 0.9, color: PRP },
+          { text: 'HCF of 625 and 575 is 25 — could divide directly by 25.', delay: 1.5, color: '#6b7280' },
+        ]},
+      ],
+    },
+
+    // ── Step 5 — Summary ─────────────────────────────────────────────────────
+    {
+      narration: `<b>Summary — ratios in 3 rules.</b> ① Write quantities in the given order, separated by a colon. ② To find a fraction from a ratio $a:b$, the total is $a+b$ parts. ③ Simplify by dividing both terms by their HCF — just like a fraction.`,
+      speech: `Summary — three rules for ratios. Rule 1: write quantities in the given order, separated by a colon. Rule 2: to find a fraction from a ratio a to b, add the parts to get a plus b total. Rule 3: simplify by dividing both terms by their highest common factor — just like a fraction.`,
+      audio: audio(5),
+      board: [
+        { type: 'workingOut', align: 'left', lines: [
+          { text: '① Order matters:  a : b  ≠  b : a', delay: 0.3, color: PRP, bold: true },
+          { text: '② Fraction from ratio  a : b  →  total = a + b parts', delay: 0.9, color: GRN, bold: true },
+          { math: `$$a : b \\implies \\text{fraction of } b = \\dfrac{b}{a+b}$$`, delay: 1.3, color: GRN },
+          { text: '③ Simplest form: divide both by HCF', delay: 1.9, color: AMB, bold: true },
+          { math: `$$625 : 575 \\div 25 = 25 : 23$$`, delay: 2.3, color: AMB },
+        ]},
+      ],
+    },
+
+  ];
+
+  return {
+    title: 'Ratios',
+    subject: 'maths',
+    steps,
+  };
+};
+
 export const LESSONS = {
   // Clock Reading (Basic Calculation clock stages 1–5).
   ...CLOCK_LESSONS,
@@ -2071,6 +2187,9 @@ export const LESSONS = {
 
   // Year 7 · 14C · Percentage of a quantity.
   'y7-14c': { ...buildPercentOfQuantityLesson({ audioBase: '/lessons/audio/y7-14c' }), topicId: 'y7-14c' },
+
+  // Year 7 · 14D · Ratios.
+  'y7-14d': { ...buildRatiosLesson({ audioBase: '/lessons/audio/y7-14d' }), topicId: 'y7-14d' },
 
   // Year 7 · 1G · Place value (textbook example uses 3721).
   // Voice is pre-generated (Kokoro) into /public/lessons/audio/y7-1g/.

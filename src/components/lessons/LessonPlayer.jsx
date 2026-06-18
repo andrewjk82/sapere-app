@@ -1249,6 +1249,174 @@ const PercentOfBar = ({ percent = 25, whole = 100, color = '#7c3aed', label }) =
   );
 };
 
+// ── Ratio Bar ─────────────────────────────────────────────────────────────
+// Proportional split bar showing A : B. Animates in two phases:
+// Phase 1: full bar expands. Phase 2: dividing line + labels appear.
+const RatioBar = ({ a = 1, b = 1, labelA = 'A', labelB = 'B', colorA = '#7c3aed', colorB = '#059669', note }) => {
+  const total = a + b;
+  const pctA = (a / total) * 100;
+  const pctB = (b / total) * 100;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 14, fontFamily: FONT, width: '100%', maxWidth: 500, margin: '0 auto' }}>
+      {note && (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
+          style={{ textAlign: 'center', fontSize: '0.88rem', color: '#6b7280', fontWeight: 600 }}>
+          {note}
+        </motion.div>
+      )}
+      {/* Bar */}
+      <div style={{ display: 'flex', height: 52, borderRadius: 10, overflow: 'hidden', gap: 2 }}>
+        <motion.div initial={{ width: 0 }} animate={{ width: `${pctA}%` }}
+          transition={{ delay: 0.4, duration: 0.7, ease: 'easeOut' }}
+          style={{ background: colorA, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}
+            style={{ color: '#fff', fontWeight: 800, fontSize: '1rem', whiteSpace: 'nowrap' }}>{a}</motion.span>
+        </motion.div>
+        <motion.div initial={{ width: 0 }} animate={{ width: `${pctB}%` }}
+          transition={{ delay: 0.5, duration: 0.7, ease: 'easeOut' }}
+          style={{ background: colorB, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3 }}
+            style={{ color: '#fff', fontWeight: 800, fontSize: '1rem', whiteSpace: 'nowrap' }}>{b}</motion.span>
+        </motion.div>
+      </div>
+      {/* Labels */}
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <motion.span initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.3 }}
+          style={{ fontSize: '0.82rem', fontWeight: 800, color: colorA }}>{labelA}</motion.span>
+        <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1.5, type: 'spring', stiffness: 300 }}
+          style={{ fontSize: '1.05rem', fontWeight: 900, color: '#374151', letterSpacing: 2 }}>{a} : {b}</motion.span>
+        <motion.span initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.3 }}
+          style={{ fontSize: '0.82rem', fontWeight: 800, color: colorB }}>{labelB}</motion.span>
+      </div>
+    </div>
+  );
+};
+
+// ── Ratio Family Interactive ───────────────────────────────────────────────
+// Three buttons (a/b/c) each showing a different ratio of the same group.
+// Bar + label update live on click.
+const RatioFamilyInteractive = ({ males = 3, females = 7, colorM = '#7c3aed', colorF = '#ec4899' }) => {
+  const total = males + females;
+  const options = [
+    { key: 'a', label: `a) males : females`, a: males, b: females, la: 'males', lb: 'females', ca: colorM, cb: colorF },
+    { key: 'b', label: `b) females : males`, a: females, b: males, la: 'females', lb: 'males', ca: colorF, cb: colorM },
+    { key: 'c', label: `c) females : total`, a: females, b: total, la: 'females', lb: 'total', ca: colorF, cb: '#6b7280' },
+  ];
+  const [sel, setSel] = useState('a');
+  const [barKey, setBarKey] = useState(0);
+  const cur = options.find(o => o.key === sel);
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16, fontFamily: FONT, width: '100%', maxWidth: 500, margin: '0 auto' }}>
+      {/* Buttons */}
+      <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
+        {options.map(o => (
+          <motion.button key={o.key} onClick={() => { setSel(o.key); setBarKey(k => k + 1); }}
+            whileTap={{ scale: 0.93 }}
+            style={{ padding: '8px 18px', borderRadius: 20, border: `2px solid ${sel === o.key ? cur.ca : '#e5e7eb'}`,
+              background: sel === o.key ? cur.ca : '#f9fafb', color: sel === o.key ? '#fff' : '#6b7280',
+              fontWeight: 800, fontSize: '0.88rem', cursor: 'pointer', transition: 'all 0.2s', fontFamily: FONT }}>
+            {o.key}
+          </motion.button>
+        ))}
+      </div>
+      {/* Question label */}
+      <motion.div key={`lbl-${sel}`} initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }}
+        style={{ textAlign: 'center', fontSize: '0.9rem', fontWeight: 700, color: '#374151' }}>
+        {cur.label}
+      </motion.div>
+      {/* Bar */}
+      <div key={barKey} style={{ display: 'flex', height: 52, borderRadius: 10, overflow: 'hidden', gap: 2 }}>
+        {[{ v: cur.a, c: cur.ca }, { v: cur.b, c: cur.cb }].map(({ v, c }, i) => {
+          const pct = (v / (cur.a + cur.b)) * 100;
+          return (
+            <motion.div key={i} initial={{ width: 0 }} animate={{ width: `${pct}%` }}
+              transition={{ delay: i * 0.1, duration: 0.55, ease: 'easeOut' }}
+              style={{ background: c, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}>
+              <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 + i * 0.1 }}
+                style={{ color: '#fff', fontWeight: 800, fontSize: '1rem' }}>{v}</motion.span>
+            </motion.div>
+          );
+        })}
+      </div>
+      {/* Ratio label */}
+      <motion.div key={`ratio-${barKey}`} initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.7, type: 'spring', stiffness: 280 }}
+        style={{ textAlign: 'center', fontSize: '1.3rem', fontWeight: 900, color: '#374151', letterSpacing: 3 }}>
+        {cur.a} <span style={{ color: '#9ca3af' }}>:</span> {cur.b}
+      </motion.div>
+      <div style={{ textAlign: 'center', fontSize: '0.75rem', color: '#9ca3af', fontWeight: 600 }}>
+        Tap a · b · c to switch
+      </div>
+    </div>
+  );
+};
+
+// ── Ratio Simplifier (Interactive) ────────────────────────────────────────
+// Shows a ratio and lets students click divisor buttons to simplify step
+// by step. Each click records the step in a history trail.
+const RatioSimplifier = ({ a: initA = 625, b: initB = 575, colorA = '#7c3aed', colorB = '#059669', labelA = 'A', labelB = 'B' }) => {
+  const [steps, setSteps] = useState([{ a: initA, b: initB }]);
+  const cur = steps[steps.length - 1];
+  const gcd = (x, y) => (y === 0 ? x : gcd(y, x % y));
+  const g = gcd(cur.a, cur.b);
+  const divisors = [2, 3, 5, 7, 11, 13].filter(f => cur.a % f === 0 && cur.b % f === 0);
+  const done = g === 1;
+  const divide = (f) => setSteps(s => [...s, { a: s[s.length - 1].a / f, b: s[s.length - 1].b / f }]);
+  const reset = () => setSteps([{ a: initA, b: initB }]);
+  const total = cur.a + cur.b;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 14, fontFamily: FONT, width: '100%', maxWidth: 500, margin: '0 auto' }}>
+      {/* Current bar */}
+      <div style={{ display: 'flex', height: 48, borderRadius: 10, overflow: 'hidden', gap: 2 }}>
+        {[{ v: cur.a, c: colorA, l: labelA }, { v: cur.b, c: colorB, l: labelB }].map(({ v, c, l }, i) => (
+          <motion.div key={`${v}-${i}`} layout
+            style={{ width: `${(v / total) * 100}%`, background: c, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 0 }}
+            transition={{ duration: 0.45, ease: 'easeOut' }}>
+            <span style={{ color: '#fff', fontWeight: 800, fontSize: '0.95rem', whiteSpace: 'nowrap' }}>{v}</span>
+          </motion.div>
+        ))}
+      </div>
+      {/* Current ratio */}
+      <div style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 900, color: done ? '#059669' : '#374151', letterSpacing: 4, transition: 'color 0.3s' }}>
+        {cur.a} <span style={{ color: '#9ca3af' }}>:</span> {cur.b}
+        {done && <span style={{ fontSize: '0.85rem', marginLeft: 10, color: '#059669' }}>Simplest form ✓</span>}
+      </div>
+      {/* Divisor buttons */}
+      {!done && (
+        <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.85rem', color: '#6b7280', fontWeight: 600, alignSelf: 'center' }}>Divide both by:</span>
+          {divisors.map(f => (
+            <motion.button key={f} onClick={() => divide(f)} whileTap={{ scale: 0.9 }}
+              style={{ padding: '7px 18px', borderRadius: 20, border: '2px solid #7c3aed', background: '#f5f3ff',
+                color: '#7c3aed', fontWeight: 800, fontSize: '0.95rem', cursor: 'pointer', fontFamily: FONT }}>
+              ÷ {f}
+            </motion.button>
+          ))}
+          {divisors.length === 0 && (
+            <span style={{ color: '#6b7280', fontSize: '0.85rem' }}>No simple factors — already in simplest form!</span>
+          )}
+        </div>
+      )}
+      {/* Step history */}
+      {steps.length > 1 && (
+        <div style={{ borderTop: '1px solid #e5e7eb', paddingTop: 10, display: 'flex', flexDirection: 'column', gap: 4 }}>
+          {steps.map((s, i) => (
+            <div key={i} style={{ fontSize: '0.82rem', color: i === steps.length - 1 ? '#059669' : '#9ca3af',
+              fontWeight: i === steps.length - 1 ? 800 : 600, textAlign: 'center', letterSpacing: 2 }}>
+              {i === 0 ? `Start: ${s.a} : ${s.b}` : `÷${steps[i - 1].a / s.a}  →  ${s.a} : ${s.b}`}
+            </div>
+          ))}
+        </div>
+      )}
+      {steps.length > 1 && (
+        <button onClick={reset} style={{ alignSelf: 'center', background: 'none', border: 'none', color: '#9ca3af', fontSize: '0.78rem', cursor: 'pointer', textDecoration: 'underline' }}>
+          Reset
+        </button>
+      )}
+    </div>
+  );
+};
+
 // ── Percentage Grid ────────────────────────────────────────────────────────
 // 10×10 grid of 100 squares. The first `count` squares fill in left-to-right,
 // top-to-bottom so students can literally watch "X out of 100" being coloured.
@@ -1328,6 +1496,9 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'partWholeBar') inner = <PartWholeBar {...item} />;
   else if (item.type === 'percentGrid') inner = <PercentGrid {...item} />;
   else if (item.type === 'percentOfBar') inner = <PercentOfBar {...item} />;
+  else if (item.type === 'ratioBar') inner = <RatioBar {...item} />;
+  else if (item.type === 'ratioFamilyInteractive') inner = <RatioFamilyInteractive {...item} />;
+  else if (item.type === 'ratioSimplifier') inner = <RatioSimplifier {...item} />;
   else if (item.type === 'percentGridRow') inner = <PercentGridRow {...item} />;
   else if (item.type === 'percentTableInteractive') inner = <PercentTableInteractive {...item} />;
   else if (item.type === 'workingOut') inner = <WorkingOut {...item} />;
